@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LingoAudio - Post Interativo</title>
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --bg: #F3F4F6;
+      --card-bg: #FFFFFF;
+      --text: #1F2937;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .app-card {
+      background: var(--card-bg);
+      max-width: 600px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      padding: 30px;
+    }
+
+    .post-header {
+      border-bottom: 2px solid #F3F4F6;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    .post-title {
+      margin: 0 0 10px 0;
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    .post-content {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background-color: #F9FAFB;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+      margin-bottom: 25px;
+    }
+
+    .controls-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #EEF2FF;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .audio-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--primary);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #4338CA;
+    }
+
+    button.secondary {
+      background-color: #9CA3AF;
+    }
+
+    button.secondary:hover {
+      background-color: #6B7280;
+    }
+
+    .settings {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    select, input[type="range"] {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #CBD5E1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-card">
+    <div class="post-header">
+      <h2 class="post-title">🇬🇧 Lesson #1: Ordering Coffee in London</h2>
+      <small>Nível: Iniciante | Idioma: Inglês</small>
+    </div>
+
+    <!-- Conteúdo do Post -->
+    <div class="post-content" id="postText">
+      Hello! I would like to order a large cappuccino with oat milk, please. Can I also get a chocolate croissant to go? Thank you so much!
+    </div>
+
+    <!-- Painel do Player de Áudio -->
+    <div class="controls-panel">
+      <div class="audio-buttons">
+        <button onclick="playAudio()">▶ Reproduzir</button>
+        <button class="secondary" onclick="pauseAudio()">⏸ Pausar</button>
+        <button class="secondary" onclick="stopAudio()">⏹ Parar</button>
+      </div>
+
+      <div class="settings">
+        <div class="input-group">
+          <label for="voiceSelect">Voz / Idioma:</label>
+          <select id="voiceSelect"></select>
+        </div>
+
+        <div class="input-group">
+          <label for="rate">Velocidade: <span id="rateValue">1x</span></label>
+          <input type="range" id="rate" min="0.5" max="1.5" step="0.1" value="1" oninput="updateRateLabel(this.value)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const synth = window.speechSynthesis;
+    const postText = document.getElementById('postText').innerText;
+    const voiceSelect = document.getElementById('voiceSelect');
+    let utterance = null;
+
+    // Carrega as vozes disponíveis no navegador
+    function populateVoices() {
+      const voices = synth.getVoices();
+      voiceSelect.innerHTML = '';
+
+      voices.forEach((voice) => {
+        const option = document.createElement('option');
+        option.textContent = `${voice.name} (${voice.lang})`;
+        option.setAttribute('data-lang', voice.lang);
+        option.setAttribute('data-name', voice.name);
+        
+        // Seleciona voz em inglês por padrão se disponível
+        if (voice.lang.includes('en')) {
+          option.selected = true;
+        }
+
+        voiceSelect.appendChild(option);
+      });
+    }
+
+    populateVoices();
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = populateVoices;
+    }
+
+    function playAudio() {
+      if (synth.speaking && synth.paused) {
+        synth.resume();
+        return;
+      }
+
+      if (synth.speaking) {
+        synth.cancel(); // Reinicia se já estiver tocando
+      }
+
+      utterance = new SpeechSynthesisUtterance(postText);
+      
+      // Define a voz selecionada
+      const selectedOption = voiceSelect.selectedOptions[0]?.getAttribute('data-name');
+      const voices = synth.getVoices();
+      utterance.voice = voices.find(v => v.name === selectedOption);
+
+      // Define a velocidade
+      utterance.rate = parseFloat(document.getElementById('rate').value);
+
+      synth.speak(utterance);
+    }
+
+    function pauseAudio() {
+      if (synth.speaking) synth.pause();
+    }
+
+    function stopAudio() {
+      if (synth.speaking) synth.cancel();
+    }
+
+    function updateRateLabel(val) {
+      document.getElementById('rateValue').innerText = `${val}x`;
+    }
+  </script>
+</body>
+</html>
