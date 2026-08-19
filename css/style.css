@@ -1,3 +1,8 @@
+/* ========================================
+   SIYAYO ACADEMY
+   Story Interface - Base v0.1
+   ======================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -5,36 +10,150 @@
 html,
 body {
   margin: 0;
+  width: 100%;
   min-height: 100%;
 }
 
 body {
   min-height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+
+  padding: 20px;
 
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
 
   background:
-    radial-gradient(circle at top, #202020 0%, #080808 55%, #000000 100%);
-  color: #ffffff;
+    radial-gradient(
+      circle at top,
+      #202020 0%,
+      #080808 55%,
+      #000000 100%
+    );
+
+  color: white;
 }
 
-main {
-  width: min(92vw, 720px);
+
+/* ========================================
+   STORY CONTAINER
+   ======================================== */
+
+.story {
+  position: relative;
+
+  width: min(100%, 480px);
+
+  aspect-ratio: 9 / 16;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  margin: 0 0 14px;
-  font-size: clamp(2rem, 8vw, 4.5rem);
+
+/* ========================================
+   SIYAYO IMAGE
+   ======================================== */
+
+.siyayo-logo {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 1;
+}
+
+
+/* ========================================
+   FRONT CONTENT
+   ======================================== */
+
+.academy-title {
+  position: relative;
+
+  z-index: 2;
+
+  width: 88%;
+
+  padding: 24px;
+
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.30);
+
+  backdrop-filter: blur(4px);
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.academy-title h1 {
+  margin: 0 0 12px;
+
+  font-size: clamp(
+    1.8rem,
+    7vw,
+    3.4rem
+  );
+
   letter-spacing: 0.08em;
+
+  text-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.8);
 }
 
-p {
+
+.academy-title p {
   margin: 0;
-  font-size: clamp(1rem, 4vw, 1.6rem);
-  opacity: 0.82;
+
+  font-size: clamp(
+    1rem,
+    4vw,
+    1.5rem
+  );
+
+  opacity: 0.9;
+
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 0;
+    background: #000;
+  }
+
+  .story {
+    width: 100vw;
+    height: 100vh;
+
+    aspect-ratio: auto;
+
+    border-radius: 0;
+  }
+
 }
