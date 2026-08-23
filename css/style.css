@@ -896,3 +896,201 @@ body {
   }
 
 }
+/* =========================================================
+   GLOBAL NAVIGATION
+   Lionsgate / Home + Share
+   ========================================================= */
+
+.global-nav {
+  position: fixed;
+
+  top: clamp(14px, 2.5vw, 24px);
+  right: clamp(14px, 2.5vw, 24px);
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   GLOBAL NAV BUTTON
+   --------------------------------------------------------- */
+
+.nav-button {
+  width: clamp(42px, 5vw, 50px);
+  height: clamp(42px, 5vw, 50px);
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(242, 216, 138, 0.52);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(215, 179, 90, 0.18),
+      rgba(3, 18, 43, 0.72)
+    );
+
+  color: var(--siyayo-gold-light);
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.12),
+
+    0 6px 18px
+      rgba(0, 0, 0, 0.42),
+
+    0 0 14px
+      rgba(215, 179, 90, 0.10);
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    color var(--transition-fast);
+}
+
+
+/* ---------------------------------------------------------
+   ICON
+   --------------------------------------------------------- */
+
+.nav-icon {
+  display: block;
+
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER / KEYBOARD FOCUS
+   --------------------------------------------------------- */
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  transform:
+    translateY(-2px)
+    scale(1.06);
+
+  color: #fff4c5;
+
+  border-color:
+    var(--siyayo-gold-light);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(242, 216, 138, 0.30),
+      rgba(6, 36, 77, 0.82)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.16),
+
+    0 8px 22px
+      rgba(0, 0, 0, 0.48),
+
+    0 0 20px
+      rgba(215, 179, 90, 0.30);
+
+  outline: none;
+}
+
+
+/* ---------------------------------------------------------
+   CLICK
+   --------------------------------------------------------- */
+
+.nav-button:active {
+  transform: scale(0.94);
+}
+
+
+/* ---------------------------------------------------------
+   LIONSGATE
+   Slight visual emphasis for Home
+   --------------------------------------------------------- */
+
+.lionsgate-button {
+  border-color:
+    rgba(242, 216, 138, 0.72);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.14),
+
+    0 6px 18px
+      rgba(0, 0, 0, 0.42),
+
+    0 0 18px
+      rgba(215, 179, 90, 0.18);
+}
+
+
+/* ---------------------------------------------------------
+   SMALL SMARTPHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .global-nav {
+    top: 12px;
+    right: 12px;
+
+    gap: 8px;
+  }
+
+  .nav-button {
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   SMALL LANDSCAPE
+   --------------------------------------------------------- */
+
+@media
+  (max-height: 500px)
+  and
+  (orientation: landscape) {
+
+  .global-nav {
+    top: 9px;
+    right: 12px;
+
+    gap: 7px;
+  }
+
+  .nav-button {
+    width: 38px;
+    height: 38px;
+  }
+
+}
