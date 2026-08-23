@@ -1,7 +1,7 @@
 /* ========================================
    SIYAYO ACADEMY
-   Content Engine - v0.4B
-   Smart Slide Renderer
+   Content Engine - v0.5
+   Smart Slides + Speech Engine
    ======================================== */
 
 const ACADEMY_MANIFEST = "data/academy.json";
@@ -10,6 +10,11 @@ let currentChapterData = null;
 let currentSlides = [];
 let currentSlideIndex = 0;
 
+/* Speech state */
+let isSpeaking = false;
+let isPaused = false;
+let currentUtterances = [];
+
 
 /* ========================================
    LOAD ACADEMY MANIFEST
@@ -17,7 +22,6 @@ let currentSlideIndex = 0;
 
 async function loadAcademyManifest() {
   try {
-
     const response = await fetch(ACADEMY_MANIFEST);
 
     if (!response.ok) {
@@ -60,7 +64,6 @@ async function loadAcademyManifest() {
     return academy;
 
   } catch (error) {
-
     console.error(
       "SIYAYO ACADEMY loader error:",
       error
@@ -114,7 +117,6 @@ function findActiveChapter(academy) {
   );
 
   if (!activeChapter) {
-
     console.warn(
       "No active chapter was found."
     );
@@ -144,7 +146,6 @@ function findActiveChapter(academy) {
 async function loadChapter(chapterReference) {
 
   if (!chapterReference?.path) {
-
     console.error(
       "Chapter reference does not contain a valid path."
     );
@@ -153,12 +154,10 @@ async function loadChapter(chapterReference) {
   }
 
   try {
-
     const response =
       await fetch(chapterReference.path);
 
     if (!response.ok) {
-
       throw new Error(
         `Erro ao carregar ${chapterReference.path}: ${response.status}`
       );
@@ -196,7 +195,6 @@ async function loadChapter(chapterReference) {
     return chapterData;
 
   } catch (error) {
-
     console.error(
       "SIYAYO Chapter Loader error:",
       error
@@ -252,7 +250,6 @@ function escapeHtml(text = "") {
 
 /* ========================================
    TARGET WORD FORMATTER
-   Bold + Italic
    ======================================== */
 
 function formatTargetSentence(
@@ -264,11 +261,8 @@ function formatTargetSentence(
     return escapeHtml(sentence);
   }
 
-  const source =
-    String(sentence);
-
-  const target =
-    String(targetWord);
+  const source = String(sentence);
+  const target = String(targetWord);
 
   const index =
     source.toLowerCase().indexOf(
@@ -373,9 +367,7 @@ function buildSlides(chapterData) {
     switch (section.type) {
 
 
-      /* ------------------------------
-         PARAGRAPH
-         ------------------------------ */
+      /* PARAGRAPH */
 
       case "paragraph": {
 
@@ -396,9 +388,7 @@ function buildSlides(chapterData) {
       }
 
 
-      /* ------------------------------
-         GRAMMAR
-         ------------------------------ */
+      /* GRAMMAR */
 
       case "grammar": {
 
@@ -416,10 +406,7 @@ function buildSlides(chapterData) {
       }
 
 
-      /* ------------------------------
-         EXAMPLES
-         Each item becomes one slide
-         ------------------------------ */
+      /* EXAMPLES */
 
       case "examples": {
 
@@ -440,12 +427,8 @@ function buildSlides(chapterData) {
 
             slides.push({
               type: "example",
-
-              sectionId:
-                section.id,
-
+              sectionId: section.id,
               itemIndex,
-
               title:
                 classification ||
                 section.title,
@@ -463,10 +446,7 @@ function buildSlides(chapterData) {
       }
 
 
-      /* ------------------------------
-         CONVERSATION
-         Each item becomes one slide
-         ------------------------------ */
+      /* CONVERSATION */
 
       case "conversation": {
 
@@ -478,14 +458,9 @@ function buildSlides(chapterData) {
 
             slides.push({
               type: "conversation",
-
-              sectionId:
-                section.id,
-
+              sectionId: section.id,
               itemIndex,
-
-              title:
-                section.title,
+              title: section.title,
 
               lines:
                 createLanguageLines(
@@ -498,10 +473,6 @@ function buildSlides(chapterData) {
         break;
       }
 
-
-      /* ------------------------------
-         UNKNOWN TYPE
-         ------------------------------ */
 
       default:
 
@@ -569,11 +540,6 @@ function renderSlideContent(slide) {
 
   switch (slide.type) {
 
-
-    /* ------------------------------
-       PARAGRAPH
-       ------------------------------ */
-
     case "paragraph":
 
       return `
@@ -599,10 +565,6 @@ function renderSlideContent(slide) {
         </article>
       `;
 
-
-    /* ------------------------------
-       GRAMMAR
-       ------------------------------ */
 
     case "grammar":
 
@@ -630,10 +592,6 @@ function renderSlideContent(slide) {
       `;
 
 
-    /* ------------------------------
-       EXAMPLE
-       ------------------------------ */
-
     case "example":
 
       return `
@@ -659,10 +617,6 @@ function renderSlideContent(slide) {
         </article>
       `;
 
-
-    /* ------------------------------
-       CONVERSATION
-       ------------------------------ */
 
     case "conversation":
 
@@ -707,6 +661,8 @@ function renderSlideContent(slide) {
 
 function renderCurrentSlide() {
 
+  stopSpeech();
+
   if (
     !currentChapterData ||
     currentSlides.length === 0
@@ -718,7 +674,6 @@ function renderCurrentSlide() {
     document.querySelector("main");
 
   if (!main) {
-
     console.error(
       "Elemento <main> não encontrado."
     );
@@ -808,7 +763,6 @@ function renderCurrentSlide() {
             id="playPauseButton"
             class="slider-button"
             type="button"
-            disabled
             aria-label="Play or pause"
           >
             ▶
@@ -861,6 +815,11 @@ function attachSliderEvents() {
       "nextButton"
     );
 
+  const playPauseButton =
+    document.getElementById(
+      "playPauseButton"
+    );
+
 
   previousButton?.addEventListener(
     "click",
@@ -871,6 +830,12 @@ function attachSliderEvents() {
   nextButton?.addEventListener(
     "click",
     showNextSlide
+  );
+
+
+  playPauseButton?.addEventListener(
+    "click",
+    toggleSpeech
   );
 }
 
@@ -905,6 +870,368 @@ function showNextSlide() {
 
     renderCurrentSlide();
   }
+}
+
+
+/* ========================================
+   SPEECH SUPPORT
+   ======================================== */
+
+function speechIsSupported() {
+
+  return (
+    "speechSynthesis" in window &&
+    "SpeechSynthesisUtterance" in window
+  );
+}
+
+
+/* ========================================
+   LANGUAGE TO LOCALE
+   ======================================== */
+
+function getLocale(language) {
+
+  const locales = {
+    en: "en-US",
+    es: "es-ES",
+    pt: "pt-BR"
+  };
+
+  return (
+    locales[language] ??
+    "pt-BR"
+  );
+}
+
+
+/* ========================================
+   BUILD SPEECH QUEUE
+   ======================================== */
+
+function buildSpeechQueue(slide) {
+
+  const queue = [];
+
+  if (!slide) {
+    return queue;
+  }
+
+
+  /* Paragraph */
+
+  if (
+    slide.type === "paragraph"
+  ) {
+
+    if (slide.title) {
+      queue.push({
+        text: slide.title,
+        language: "pt"
+      });
+    }
+
+    if (slide.content) {
+      queue.push({
+        text: slide.content,
+        language: "pt"
+      });
+    }
+
+    return queue;
+  }
+
+
+  /* Trilingual slides */
+
+  if (
+    Array.isArray(slide.lines)
+  ) {
+
+    slide.lines.forEach(line => {
+
+      if (!line.text) {
+        return;
+      }
+
+      queue.push({
+        text: line.text,
+        language: line.language
+      });
+    });
+  }
+
+
+  return queue;
+}
+
+
+/* ========================================
+   CREATE UTTERANCE
+   ======================================== */
+
+function createUtterance(item) {
+
+  const utterance =
+    new SpeechSynthesisUtterance(
+      item.text
+    );
+
+  utterance.lang =
+    getLocale(item.language);
+
+  utterance.rate = 0.92;
+  utterance.pitch = 1;
+  utterance.volume = 1;
+
+  return utterance;
+}
+
+
+/* ========================================
+   START SPEECH
+   ======================================== */
+
+function startSpeech() {
+
+  if (!speechIsSupported()) {
+
+    console.warn(
+      "Speech Synthesis is not supported by this browser."
+    );
+
+    return;
+  }
+
+  const slide =
+    currentSlides[
+      currentSlideIndex
+    ];
+
+  const queue =
+    buildSpeechQueue(slide);
+
+  if (queue.length === 0) {
+
+    console.warn(
+      "No text available for speech."
+    );
+
+    return;
+  }
+
+
+  stopSpeech();
+
+
+  currentUtterances =
+    queue.map(
+      createUtterance
+    );
+
+
+  currentUtterances.forEach(
+    (utterance, index) => {
+
+      if (
+        index ===
+        currentUtterances.length - 1
+      ) {
+
+        utterance.onend = () => {
+
+          isSpeaking = false;
+          isPaused = false;
+
+          updatePlayPauseButton();
+
+          console.log(
+            "Slide speech completed."
+          );
+        };
+      }
+
+
+      utterance.onerror = event => {
+
+        console.error(
+          "Speech error:",
+          event.error
+        );
+
+        isSpeaking = false;
+        isPaused = false;
+
+        updatePlayPauseButton();
+      };
+
+
+      window.speechSynthesis.speak(
+        utterance
+      );
+    }
+  );
+
+
+  isSpeaking = true;
+  isPaused = false;
+
+  updatePlayPauseButton();
+
+
+  console.log(
+    "Speech started."
+  );
+}
+
+
+/* ========================================
+   PAUSE SPEECH
+   ======================================== */
+
+function pauseSpeech() {
+
+  if (
+    !speechIsSupported() ||
+    !isSpeaking
+  ) {
+    return;
+  }
+
+
+  window.speechSynthesis.pause();
+
+  isPaused = true;
+
+  updatePlayPauseButton();
+
+
+  console.log(
+    "Speech paused."
+  );
+}
+
+
+/* ========================================
+   RESUME SPEECH
+   ======================================== */
+
+function resumeSpeech() {
+
+  if (
+    !speechIsSupported() ||
+    !isPaused
+  ) {
+    return;
+  }
+
+
+  window.speechSynthesis.resume();
+
+  isPaused = false;
+
+  updatePlayPauseButton();
+
+
+  console.log(
+    "Speech resumed."
+  );
+}
+
+
+/* ========================================
+   STOP SPEECH
+   ======================================== */
+
+function stopSpeech() {
+
+  if (!speechIsSupported()) {
+    return;
+  }
+
+
+  window.speechSynthesis.cancel();
+
+  isSpeaking = false;
+  isPaused = false;
+
+  currentUtterances = [];
+
+  updatePlayPauseButton();
+}
+
+
+/* ========================================
+   PLAY / PAUSE TOGGLE
+   ======================================== */
+
+function toggleSpeech() {
+
+  if (!isSpeaking) {
+
+    startSpeech();
+
+    return;
+  }
+
+
+  if (isPaused) {
+
+    resumeSpeech();
+
+    return;
+  }
+
+
+  pauseSpeech();
+}
+
+
+/* ========================================
+   UPDATE PLAY BUTTON
+   ======================================== */
+
+function updatePlayPauseButton() {
+
+  const button =
+    document.getElementById(
+      "playPauseButton"
+    );
+
+  if (!button) {
+    return;
+  }
+
+
+  if (!isSpeaking) {
+
+    button.textContent = "▶";
+    button.setAttribute(
+      "aria-label",
+      "Play"
+    );
+
+    return;
+  }
+
+
+  if (isPaused) {
+
+    button.textContent = "▶";
+    button.setAttribute(
+      "aria-label",
+      "Resume"
+    );
+
+    return;
+  }
+
+
+  button.textContent = "Ⅱ";
+  button.setAttribute(
+    "aria-label",
+    "Pause"
+  );
 }
 
 
@@ -990,7 +1317,17 @@ document.addEventListener(
 
 
     console.log(
-      "SIYAYO Content Engine v0.4B ready."
+      "SIYAYO Content Engine v0.5 ready."
     );
   }
+);
+
+
+/* ========================================
+   SAFETY: STOP SPEECH WHEN LEAVING PAGE
+   ======================================== */
+
+window.addEventListener(
+  "beforeunload",
+  stopSpeech
 );
