@@ -140,14 +140,17 @@
       }
     }
   ]
-}  "carousel": {
-    "defaultMode": "story",
-    "languageOrder": ["en", "es", "pt"],
-    "exampleLinesPerSlide": 3,
-    "controls": {
-      "previous": true,
-      "playPause": true,
-      "next": true
-    }
+}
+]
+},
+"carousel": {
+  "defaultMode": "story",
+  "languageOrder": ["en", "es", "pt"],
+  "exampleLinesPerSlide": 3,
+  "controls": {
+    "previous": true,
+    "playPause": true,
+    "next": true
   }
+}
 }
