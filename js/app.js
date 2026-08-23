@@ -1282,7 +1282,156 @@ function updatePlayPauseButton() {
     "Pause"
   );
 }
+/* ========================================
+   GLOBAL NAVIGATION
+   SHARE ENGINE
+   ======================================== */
 
+function initializeShareButton() {
+
+  const shareButton =
+    document.getElementById("shareButton");
+
+  if (!shareButton) {
+    console.warn(
+      "Share button was not found."
+    );
+
+    return;
+  }
+
+
+  shareButton.addEventListener(
+    "click",
+    async () => {
+
+      const shareData = {
+        title:
+          document.title ||
+          "SIYAYO ACADEMY",
+
+        text:
+          "SIYAYO ACADEMY — The Ten Kinds of Words",
+
+        url:
+          window.location.href
+      };
+
+
+      /* Native Share:
+         smartphones and compatible browsers */
+
+      if (navigator.share) {
+
+        try {
+
+          await navigator.share(
+            shareData
+          );
+
+          console.log(
+            "Page shared successfully."
+          );
+
+          return;
+
+        } catch (error) {
+
+          /*
+             AbortError means the user simply
+             closed the Share window.
+          */
+
+          if (
+            error.name === "AbortError"
+          ) {
+
+            console.log(
+              "Share cancelled."
+            );
+
+            return;
+          }
+
+          console.warn(
+            "Native Share failed:",
+            error
+          );
+        }
+      }
+
+
+      /* Fallback:
+         copy current URL */
+
+      try {
+
+        await navigator.clipboard.writeText(
+          window.location.href
+        );
+
+        showShareFeedback(
+          shareButton,
+          "✓"
+        );
+
+        console.log(
+          "Page link copied to clipboard."
+        );
+
+      } catch (error) {
+
+        console.error(
+          "Unable to copy page link:",
+          error
+        );
+
+        showShareFeedback(
+          shareButton,
+          "!"
+        );
+      }
+
+    }
+  );
+}
+
+
+/* ========================================
+   SHARE VISUAL FEEDBACK
+   ======================================== */
+
+function showShareFeedback(
+  button,
+  symbol
+) {
+
+  const icon =
+    button.querySelector(
+      ".nav-icon"
+    );
+
+  if (!icon) {
+    return;
+  }
+
+  const originalIcon =
+    icon.textContent;
+
+  icon.textContent =
+    symbol;
+
+
+  window.setTimeout(
+    () => {
+
+      icon.textContent =
+        originalIcon;
+
+    },
+    1400
+  );
+}
 
 /* ========================================
    START CONTENT ENGINE
@@ -1295,7 +1444,10 @@ document.addEventListener(
     console.log(
       "Starting SIYAYO Content Engine..."
     );
+     
+    /* Global Navigation */
 
+    initializeShareButton();
 
     /* 1. Academy Manifest */
 
