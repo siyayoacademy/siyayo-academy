@@ -829,7 +829,54 @@ body {
   }
 
 }
+/* =========================================================
+   SPEECH ACTIVE LANGUAGE
+   ========================================================= */
 
+.language-line {
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+
+.language-line.is-speaking {
+  transform: scale(1.018);
+
+  border-color:
+    rgba(242, 216, 138, 0.88);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(215, 179, 90, 0.20),
+      rgba(6, 35, 77, 0.42)
+    );
+
+  box-shadow:
+    0 0 22px
+      rgba(215, 179, 90, 0.30),
+
+    inset 0 0 16px
+      rgba(242, 216, 138, 0.05);
+}
+
+
+.language-line.is-speaking .language-label {
+  color: #fff1b0;
+}
+
+
+.language-line.is-speaking .language-text {
+  text-shadow:
+    0 0 8px
+      rgba(242, 216, 138, 0.22),
+
+    0 2px 8px
+      rgba(0, 0, 0, 0.85);
+}
 
 /* =========================================================
    ACCESSIBILITY
