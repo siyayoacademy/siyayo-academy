@@ -1,7 +1,7 @@
 /* ========================================
    SIYAYO ACADEMY
-   Content Engine - v0.2
-   Academy + Chapter Loader
+   Content Engine - v0.3
+   Academy + Chapter Loader + DOM Renderer
    ======================================== */
 
 const ACADEMY_MANIFEST = "data/academy.json";
@@ -232,6 +232,89 @@ function validateChapter(chapterData) {
 
 
 /* ========================================
+   RENDER ACTIVE CHAPTER
+   ======================================== */
+
+function renderActiveChapter(chapterData) {
+
+  const main = document.querySelector("main");
+
+  if (!main) {
+    console.error(
+      "Elemento <main> não encontrado."
+    );
+
+    return;
+  }
+
+  const chapter = chapterData.chapter;
+  const sections = chapter.sections ?? [];
+
+  if (sections.length === 0) {
+    console.warn(
+      "O capítulo não possui seções para exibir."
+    );
+
+    return;
+  }
+
+  const firstSection = sections[0];
+
+  const chapterTitle = `
+    ${chapter.title?.en ?? ""} ·
+    ${chapter.title?.es ?? ""} ·
+    ${chapter.title?.pt ?? ""}
+  `;
+
+  let sectionContent = "";
+
+  if (firstSection.content?.pt) {
+    sectionContent = firstSection.content.pt;
+  } else if (firstSection.content?.en) {
+    sectionContent = firstSection.content.en;
+  } else if (firstSection.content?.es) {
+    sectionContent = firstSection.content.es;
+  }
+
+  main.innerHTML = `
+    <section class="chapter-view">
+
+      <header class="chapter-header">
+        <p class="chapter-number">
+          Chapter ${chapter.number}
+        </p>
+
+        <h1 class="chapter-title">
+          ${chapterTitle}
+        </h1>
+      </header>
+
+      <article class="chapter-section">
+
+        <h2 class="section-title">
+          ${firstSection.title ?? ""}
+        </h2>
+
+        <p class="section-content">
+          ${sectionContent}
+        </p>
+
+      </article>
+
+      <footer class="chapter-progress">
+        1 / ${sections.length}
+      </footer>
+
+    </section>
+  `;
+
+  console.log(
+    "First chapter section rendered successfully."
+  );
+}
+
+
+/* ========================================
    START SIYAYO CONTENT ENGINE
    ======================================== */
 
@@ -267,9 +350,12 @@ document.addEventListener(
       return;
     }
 
-    // 4. Content Engine ready
+    // 4. Render first section
+    renderActiveChapter(chapterData);
+
+    // 5. Content Engine ready
     console.log(
-      "SIYAYO Content Engine v0.2 ready."
+      "SIYAYO Content Engine v0.3 ready."
     );
 
     console.log(
