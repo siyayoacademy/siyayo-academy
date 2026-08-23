@@ -1,13 +1,14 @@
 /* ========================================
    SIYAYO ACADEMY
-   Content Engine - v0.4A
-   Chapter Slider: Previous / Next
+   Content Engine - v0.4B
+   Smart Slide Renderer
    ======================================== */
 
 const ACADEMY_MANIFEST = "data/academy.json";
 
 let currentChapterData = null;
-let currentSectionIndex = 0;
+let currentSlides = [];
+let currentSlideIndex = 0;
 
 
 /* ========================================
@@ -16,6 +17,7 @@ let currentSectionIndex = 0;
 
 async function loadAcademyManifest() {
   try {
+
     const response = await fetch(ACADEMY_MANIFEST);
 
     if (!response.ok) {
@@ -28,12 +30,29 @@ async function loadAcademyManifest() {
 
     validateAcademyManifest(academy);
 
-    console.log("SIYAYO ACADEMY manifest loaded successfully.");
-    console.log("Project:", academy.project?.name);
-    console.log("Product:", academy.project?.product);
-    console.log("Languages:", academy.project?.languageOrder);
+    console.log(
+      "SIYAYO ACADEMY manifest loaded successfully."
+    );
 
-    console.log(`${academy.chapters.length} chapters loaded.`);
+    console.log(
+      "Project:",
+      academy.project?.name
+    );
+
+    console.log(
+      "Product:",
+      academy.project?.product
+    );
+
+    console.log(
+      "Languages:",
+      academy.project?.languageOrder
+    );
+
+    console.log(
+      `${academy.chapters.length} chapters loaded.`
+    );
+
     console.log(
       `${academy.extraModules.length} extra module(s) loaded.`
     );
@@ -41,20 +60,27 @@ async function loadAcademyManifest() {
     return academy;
 
   } catch (error) {
-    console.error("SIYAYO ACADEMY loader error:", error);
+
+    console.error(
+      "SIYAYO ACADEMY loader error:",
+      error
+    );
+
     return null;
   }
 }
 
 
 /* ========================================
-   VALIDATE ACADEMY MANIFEST
+   VALIDATE ACADEMY
    ======================================== */
 
 function validateAcademyManifest(academy) {
 
   if (!academy) {
-    throw new Error("academy.json está vazio ou inválido.");
+    throw new Error(
+      "academy.json está vazio ou inválido."
+    );
   }
 
   if (!academy.project) {
@@ -65,13 +91,13 @@ function validateAcademyManifest(academy) {
 
   if (!Array.isArray(academy.chapters)) {
     throw new Error(
-      "academy.json não possui uma lista válida de capítulos."
+      "academy.json não possui capítulos válidos."
     );
   }
 
   if (!Array.isArray(academy.extraModules)) {
     throw new Error(
-      "academy.json não possui uma lista válida de módulos extras."
+      "academy.json não possui módulos extras válidos."
     );
   }
 }
@@ -88,7 +114,11 @@ function findActiveChapter(academy) {
   );
 
   if (!activeChapter) {
-    console.warn("No active chapter was found.");
+
+    console.warn(
+      "No active chapter was found."
+    );
+
     return null;
   }
 
@@ -114,29 +144,50 @@ function findActiveChapter(academy) {
 async function loadChapter(chapterReference) {
 
   if (!chapterReference?.path) {
+
     console.error(
       "Chapter reference does not contain a valid path."
     );
+
     return null;
   }
 
   try {
-    const response = await fetch(chapterReference.path);
+
+    const response =
+      await fetch(chapterReference.path);
 
     if (!response.ok) {
+
       throw new Error(
         `Erro ao carregar ${chapterReference.path}: ${response.status}`
       );
     }
 
-    const chapterData = await response.json();
+    const chapterData =
+      await response.json();
 
     validateChapter(chapterData);
 
-    console.log("Chapter JSON loaded successfully.");
-    console.log("Chapter number:", chapterData.chapter?.number);
-    console.log("Chapter slug:", chapterData.chapter?.slug);
-    console.log("Chapter title:", chapterData.chapter?.title);
+    console.log(
+      "Chapter JSON loaded successfully."
+    );
+
+    console.log(
+      "Chapter number:",
+      chapterData.chapter?.number
+    );
+
+    console.log(
+      "Chapter slug:",
+      chapterData.chapter?.slug
+    );
+
+    console.log(
+      "Chapter title:",
+      chapterData.chapter?.title
+    );
+
     console.log(
       "Sections:",
       chapterData.chapter?.sections?.length
@@ -145,7 +196,12 @@ async function loadChapter(chapterReference) {
     return chapterData;
 
   } catch (error) {
-    console.error("SIYAYO Chapter Loader error:", error);
+
+    console.error(
+      "SIYAYO Chapter Loader error:",
+      error
+    );
+
     return null;
   }
 }
@@ -158,48 +214,490 @@ async function loadChapter(chapterReference) {
 function validateChapter(chapterData) {
 
   if (!chapterData) {
-    throw new Error("chapter.json está vazio ou inválido.");
+    throw new Error(
+      "chapter.json está vazio ou inválido."
+    );
   }
 
   if (!chapterData.chapter) {
     throw new Error(
-      "chapter.json não possui o objeto 'chapter'."
+      "chapter.json não possui objeto chapter."
     );
   }
 
-  if (!Array.isArray(chapterData.chapter.sections)) {
+  if (!Array.isArray(
+    chapterData.chapter.sections
+  )) {
     throw new Error(
-      "chapter.json não possui uma lista válida de sections."
+      "chapter.json não possui sections válidas."
     );
   }
 }
 
 
 /* ========================================
-   GET SECTION CONTENT
+   ESCAPE HTML
    ======================================== */
 
-function getSectionContent(section) {
+function escapeHtml(text = "") {
 
-  if (!section?.content) {
-    return "";
+  return String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+
+/* ========================================
+   TARGET WORD FORMATTER
+   Bold + Italic
+   ======================================== */
+
+function formatTargetSentence(
+  sentence = "",
+  targetWord = ""
+) {
+
+  if (!targetWord) {
+    return escapeHtml(sentence);
   }
 
-  /*
-    Nesta primeira versão:
-    PT é usado como conteúdo principal para os
-    parágrafos explicativos.
+  const source =
+    String(sentence);
 
-    Mais adiante o seletor EN / ES / PT
-    controlará esta escolha.
-  */
+  const target =
+    String(targetWord);
 
-  return (
-    section.content.pt ??
-    section.content.en ??
-    section.content.es ??
-    ""
+  const index =
+    source.toLowerCase().indexOf(
+      target.toLowerCase()
+    );
+
+  if (index === -1) {
+    return escapeHtml(source);
+  }
+
+  const before =
+    source.slice(0, index);
+
+  const match =
+    source.slice(
+      index,
+      index + target.length
+    );
+
+  const after =
+    source.slice(
+      index + target.length
+    );
+
+  return `
+    ${escapeHtml(before)}
+    <strong>
+      <em class="target-word">
+        ${escapeHtml(match)}
+      </em>
+    </strong>
+    ${escapeHtml(after)}
+  `;
+}
+
+
+/* ========================================
+   TRILINGUAL LINES
+   ======================================== */
+
+function createLanguageLines(
+  content,
+  targetWords = {}
+) {
+
+  const order = [
+    {
+      code: "en",
+      label: "EN"
+    },
+    {
+      code: "es",
+      label: "ES"
+    },
+    {
+      code: "pt",
+      label: "PT"
+    }
+  ];
+
+  return order
+    .filter(
+      language =>
+        content?.[language.code]
+    )
+    .map(
+      language => ({
+        language:
+          language.code,
+
+        label:
+          language.label,
+
+        text:
+          content[
+            language.code
+          ],
+
+        target:
+          targetWords?.[
+            language.code
+          ] ?? ""
+      })
+    );
+}
+
+
+/* ========================================
+   BUILD SMART SLIDES
+   ======================================== */
+
+function buildSlides(chapterData) {
+
+  const sections =
+    chapterData.chapter.sections ?? [];
+
+  const slides = [];
+
+
+  sections.forEach(section => {
+
+    switch (section.type) {
+
+
+      /* ------------------------------
+         PARAGRAPH
+         ------------------------------ */
+
+      case "paragraph": {
+
+        const content =
+          section.content?.pt ??
+          section.content?.en ??
+          section.content?.es ??
+          "";
+
+        slides.push({
+          type: "paragraph",
+          sectionId: section.id,
+          title: section.title,
+          content
+        });
+
+        break;
+      }
+
+
+      /* ------------------------------
+         GRAMMAR
+         ------------------------------ */
+
+      case "grammar": {
+
+        slides.push({
+          type: "grammar",
+          sectionId: section.id,
+          title: section.title,
+          lines:
+            createLanguageLines(
+              section.content
+            )
+        });
+
+        break;
+      }
+
+
+      /* ------------------------------
+         EXAMPLES
+         Each item becomes one slide
+         ------------------------------ */
+
+      case "examples": {
+
+        const items =
+          section.items ?? [];
+
+        items.forEach(
+          (item, itemIndex) => {
+
+            const classification =
+              [
+                item.classification?.en,
+                item.classification?.es,
+                item.classification?.pt
+              ]
+                .filter(Boolean)
+                .join(" · ");
+
+            slides.push({
+              type: "example",
+
+              sectionId:
+                section.id,
+
+              itemIndex,
+
+              title:
+                classification ||
+                section.title,
+
+              lines:
+                createLanguageLines(
+                  item.sentences,
+                  item.targetWords
+                )
+            });
+          }
+        );
+
+        break;
+      }
+
+
+      /* ------------------------------
+         CONVERSATION
+         Each item becomes one slide
+         ------------------------------ */
+
+      case "conversation": {
+
+        const items =
+          section.items ?? [];
+
+        items.forEach(
+          (item, itemIndex) => {
+
+            slides.push({
+              type: "conversation",
+
+              sectionId:
+                section.id,
+
+              itemIndex,
+
+              title:
+                section.title,
+
+              lines:
+                createLanguageLines(
+                  item
+                )
+            });
+          }
+        );
+
+        break;
+      }
+
+
+      /* ------------------------------
+         UNKNOWN TYPE
+         ------------------------------ */
+
+      default:
+
+        console.warn(
+          "Unknown section type:",
+          section.type,
+          section
+        );
+    }
+  });
+
+
+  console.log(
+    `${slides.length} smart slides generated.`
   );
+
+  return slides;
+}
+
+
+/* ========================================
+   RENDER LANGUAGE LINES
+   ======================================== */
+
+function renderLanguageLines(lines = []) {
+
+  return lines
+    .map(line => {
+
+      const formattedText =
+        formatTargetSentence(
+          line.text,
+          line.target
+        );
+
+      return `
+        <div
+          class="
+            language-line
+            language-${line.language}
+          "
+          data-language="${line.language}"
+        >
+
+          <span class="language-label">
+            ${line.label}
+          </span>
+
+          <p class="language-text">
+            ${formattedText}
+          </p>
+
+        </div>
+      `;
+    })
+    .join("");
+}
+
+
+/* ========================================
+   RENDER SLIDE CONTENT
+   ======================================== */
+
+function renderSlideContent(slide) {
+
+  switch (slide.type) {
+
+
+    /* ------------------------------
+       PARAGRAPH
+       ------------------------------ */
+
+    case "paragraph":
+
+      return `
+        <article
+          class="
+            slide-content
+            slide-paragraph
+          "
+        >
+
+          <h2 class="section-title">
+            ${escapeHtml(
+              slide.title ?? ""
+            )}
+          </h2>
+
+          <p class="section-content">
+            ${escapeHtml(
+              slide.content ?? ""
+            )}
+          </p>
+
+        </article>
+      `;
+
+
+    /* ------------------------------
+       GRAMMAR
+       ------------------------------ */
+
+    case "grammar":
+
+      return `
+        <article
+          class="
+            slide-content
+            slide-grammar
+          "
+        >
+
+          <h2 class="section-title">
+            ${escapeHtml(
+              slide.title ?? ""
+            )}
+          </h2>
+
+          <div class="trilingual-content">
+            ${renderLanguageLines(
+              slide.lines
+            )}
+          </div>
+
+        </article>
+      `;
+
+
+    /* ------------------------------
+       EXAMPLE
+       ------------------------------ */
+
+    case "example":
+
+      return `
+        <article
+          class="
+            slide-content
+            slide-example
+          "
+        >
+
+          <h2 class="section-title">
+            ${escapeHtml(
+              slide.title ?? ""
+            )}
+          </h2>
+
+          <div class="trilingual-content">
+            ${renderLanguageLines(
+              slide.lines
+            )}
+          </div>
+
+        </article>
+      `;
+
+
+    /* ------------------------------
+       CONVERSATION
+       ------------------------------ */
+
+    case "conversation":
+
+      return `
+        <article
+          class="
+            slide-content
+            slide-conversation
+          "
+        >
+
+          <h2 class="section-title">
+            ${escapeHtml(
+              slide.title ?? ""
+            )}
+          </h2>
+
+          <div class="trilingual-content">
+            ${renderLanguageLines(
+              slide.lines
+            )}
+          </div>
+
+        </article>
+      `;
+
+
+    default:
+
+      return `
+        <p>
+          Unsupported slide type.
+        </p>
+      `;
+  }
 }
 
 
@@ -209,47 +707,57 @@ function getSectionContent(section) {
 
 function renderCurrentSlide() {
 
-  if (!currentChapterData) {
+  if (
+    !currentChapterData ||
+    currentSlides.length === 0
+  ) {
     return;
   }
 
-  const main = document.querySelector("main");
+  const main =
+    document.querySelector("main");
 
   if (!main) {
-    console.error("Elemento <main> não encontrado.");
+
+    console.error(
+      "Elemento <main> não encontrado."
+    );
+
     return;
   }
 
-  const chapter = currentChapterData.chapter;
-  const sections = chapter.sections ?? [];
+  const chapter =
+    currentChapterData.chapter;
 
-  if (sections.length === 0) {
-    console.warn("O capítulo não possui seções.");
-    return;
-  }
+  const slide =
+    currentSlides[
+      currentSlideIndex
+    ];
 
-  const section = sections[currentSectionIndex];
-
-  const chapterTitle = [
-    chapter.title?.en,
-    chapter.title?.es,
-    chapter.title?.pt
-  ]
-    .filter(Boolean)
-    .join(" · ");
-
-  const sectionContent =
-    getSectionContent(section);
+  const chapterTitle =
+    [
+      chapter.title?.en,
+      chapter.title?.es,
+      chapter.title?.pt
+    ]
+      .filter(Boolean)
+      .join(" · ");
 
   const isFirst =
-    currentSectionIndex === 0;
+    currentSlideIndex === 0;
 
   const isLast =
-    currentSectionIndex === sections.length - 1;
+    currentSlideIndex ===
+    currentSlides.length - 1;
 
 
   main.innerHTML = `
-    <section class="chapter-view">
+    <section
+      class="
+        chapter-view
+        current-${slide.type}
+      "
+    >
 
       <header class="chapter-header">
 
@@ -258,30 +766,27 @@ function renderCurrentSlide() {
         </p>
 
         <h1 class="chapter-title">
-          ${chapterTitle}
+          ${escapeHtml(
+            chapterTitle
+          )}
         </h1>
 
       </header>
 
 
-      <article class="chapter-section">
-
-        <h2 class="section-title">
-          ${section.title ?? ""}
-        </h2>
-
-        <p class="section-content">
-          ${sectionContent}
-        </p>
-
-      </article>
+      ${renderSlideContent(slide)}
 
 
       <footer class="chapter-footer">
 
         <div class="chapter-progress">
-          ${currentSectionIndex + 1} / ${sections.length}
+
+          ${currentSlideIndex + 1}
+          /
+          ${currentSlides.length}
+
         </div>
+
 
         <nav
           class="slider-controls"
@@ -303,8 +808,8 @@ function renderCurrentSlide() {
             id="playPauseButton"
             class="slider-button"
             type="button"
-            aria-label="Play or pause"
             disabled
+            aria-label="Play or pause"
           >
             ▶
           </button>
@@ -327,11 +832,15 @@ function renderCurrentSlide() {
     </section>
   `;
 
+
   attachSliderEvents();
 
+
   console.log(
-    `Rendered section ${currentSectionIndex + 1}/${sections.length}:`,
-    section.id
+    `Rendered smart slide ${
+      currentSlideIndex + 1
+    }/${currentSlides.length}`,
+    slide
   );
 }
 
@@ -343,21 +852,25 @@ function renderCurrentSlide() {
 function attachSliderEvents() {
 
   const previousButton =
-    document.getElementById("previousButton");
+    document.getElementById(
+      "previousButton"
+    );
 
   const nextButton =
-    document.getElementById("nextButton");
+    document.getElementById(
+      "nextButton"
+    );
 
 
   previousButton?.addEventListener(
     "click",
-    showPreviousSection
+    showPreviousSlide
   );
 
 
   nextButton?.addEventListener(
     "click",
-    showNextSection
+    showNextSlide
   );
 }
 
@@ -366,15 +879,11 @@ function attachSliderEvents() {
    PREVIOUS
    ======================================== */
 
-function showPreviousSection() {
+function showPreviousSlide() {
 
-  if (!currentChapterData) {
-    return;
-  }
+  if (currentSlideIndex > 0) {
 
-  if (currentSectionIndex > 0) {
-
-    currentSectionIndex--;
+    currentSlideIndex--;
 
     renderCurrentSlide();
   }
@@ -385,21 +894,14 @@ function showPreviousSection() {
    NEXT
    ======================================== */
 
-function showNextSection() {
-
-  if (!currentChapterData) {
-    return;
-  }
-
-  const sections =
-    currentChapterData.chapter.sections;
+function showNextSlide() {
 
   if (
-    currentSectionIndex <
-    sections.length - 1
+    currentSlideIndex <
+    currentSlides.length - 1
   ) {
 
-    currentSectionIndex++;
+    currentSlideIndex++;
 
     renderCurrentSlide();
   }
@@ -419,7 +921,8 @@ document.addEventListener(
     );
 
 
-    // 1. Load Academy
+    /* 1. Academy Manifest */
+
     const academy =
       await loadAcademyManifest();
 
@@ -428,7 +931,8 @@ document.addEventListener(
     }
 
 
-    // 2. Find active chapter
+    /* 2. Active Chapter */
+
     const activeChapter =
       findActiveChapter(academy);
 
@@ -437,26 +941,56 @@ document.addEventListener(
     }
 
 
-    // 3. Load chapter
+    /* 3. Chapter JSON */
+
     const chapterData =
-      await loadChapter(activeChapter);
+      await loadChapter(
+        activeChapter
+      );
 
     if (!chapterData) {
       return;
     }
 
 
-    // 4. Store application state
-    currentChapterData = chapterData;
-    currentSectionIndex = 0;
+    /* 4. Store Chapter */
+
+    currentChapterData =
+      chapterData;
 
 
-    // 5. Render first slide
+    /* 5. Generate Smart Slides */
+
+    currentSlides =
+      buildSlides(
+        chapterData
+      );
+
+
+    if (
+      currentSlides.length === 0
+    ) {
+
+      console.warn(
+        "No slides were generated."
+      );
+
+      return;
+    }
+
+
+    /* 6. Start at Slide 1 */
+
+    currentSlideIndex = 0;
+
+
+    /* 7. Render */
+
     renderCurrentSlide();
 
 
     console.log(
-      "SIYAYO Content Engine v0.4A ready."
+      "SIYAYO Content Engine v0.4B ready."
     );
   }
 );
