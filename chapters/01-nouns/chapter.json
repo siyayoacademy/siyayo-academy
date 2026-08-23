@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 1,
+    "slug": "nouns",
+    "title": {
+      "en": "NOUN",
+      "es": "SUSTANTIVO",
+      "pt": "SUBSTANTIVO"
+    },
+    "languageOrder": ["en", "es", "pt"],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim substantivum, derivado de substancia (essência/substância). Significa aquilo que subsiste por si mesmo, que dá nome à matéria ou ao pensamento."
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Classe de palavras que nomeia seres, objetos, lugares, sentimentos, estados, qualidades e fenômenos da nossa realidade real ou imaginária."
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "Atua primariamente como núcleo dos termos nominais da frase, exercendo papéis como sujeito, objeto direto, objeto indireto, complemento nominal e predicativo."
+        }
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "content": {
+          "en": "Flexiona-se em número (singular/plural) e gênero gramatical em casos específicos (mencionados via pronomes ou sufixos).",
+          "es": "Flexiona-se em gênero (masculino/femenino) e número (singular/plural).",
+          "pt": "Flexiona-se em gênero (masculino/feminino), número (singular/plural) e grau (aumentativo/diminutivo)."
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Subtipos ou Classificações",
+        "items": [
+          {
+            "classification": {
+              "en": "Concrete",
+              "es": "Concreto",
+              "pt": "Concreto"
+            },
+            "sentences": {
+              "en": "The cat sleeps on the sofa.",
+              "es": "El gato duerme en el sofá.",
+              "pt": "O gato dorme no sofá."
+            },
+            "targetWords": {
+              "en": "cat",
+              "es": "gato",
+              "pt": "gato"
+            }
+          },
+          {
+            "classification": {
+              "en": "Abstract",
+              "es": "Abstracto",
+              "pt": "Abstrato"
+            },
+            "sentences": {
+              "en": "Love can change the world.",
+              "es": "El amor puede cambiar el mundo.",
+              "pt": "O amor pode mudar o mundo."
+            },
+            "targetWords": {
+              "en": "Love",
+              "es": "amor",
+              "pt": "amor"
+            }
+          },
+          {
+            "classification": {
+              "en": "Proper",
+              "es": "Propio",
+              "pt": "Próprio"
+            },
+            "sentences": {
+              "en": "London is a beautiful city.",
+              "es": "Londres es una ciudad hermosa.",
+              "pt": "Londres é uma cidade linda."
+            },
+            "targetWords": {
+              "en": "London",
+              "es": "Londres",
+              "pt": "Londres"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Where is the hotel?",
+            "es": "¿Dónde está el hotel?",
+            "pt": "Onde fica o hotel?"
+          },
+          {
+            "en": "I need water, please.",
+            "es": "Necesito agua, por favor.",
+            "pt": "Eu preciso de água, por favor."
+          },
+          {
+            "en": "This teacher is great.",
+            "es": "Este profesor es genial.",
+            "pt": "Este professor é ótimo."
+          }
+        ]
+      }
+    ]
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": ["en", "es", "pt"],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
