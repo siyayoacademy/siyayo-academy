@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "0.1",
+  "project": {
+    "name": "SIYAYO ACADEMY",
+    "product": "The Ten Kinds of Words",
+    "type": "trilingual-learning-webapp",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ]
+  },
+
+  "interface": {
+    "defaultView": "story",
+    "orientation": "auto",
+    "supportedOrientations": [
+      "portrait",
+      "landscape"
+    ],
+    "carousel": {
+      "enabled": true,
+      "defaultMode": "story",
+      "exampleLinesPerSlide": 3
+    }
+  },
+
+  "languages": {
+    "en": {
+      "label": "English",
+      "locale": "en-US"
+    },
+    "es": {
+      "label": "Español",
+      "locale": "es-ES"
+    },
+    "pt": {
+      "label": "Português",
+      "locale": "pt-BR"
+    }
+  },
+
+  "chapters": [
+    {
+      "number": 1,
+      "slug": "nouns",
+      "title": {
+        "en": "NOUN",
+        "es": "SUSTANTIVO",
+        "pt": "SUBSTANTIVO"
+      },
+      "path": "chapters/01-nouns/chapter.json",
+      "status": "active"
+    },
+
+    {
+      "number": 2,
+      "slug": "pronouns",
+      "title": {
+        "en": "PRONOUN",
+        "es": "PRONOMBRE",
+        "pt": "PRONOME"
+      },
+      "path": "chapters/02-pronouns/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 3,
+      "slug": "verbs",
+      "title": {
+        "en": "VERB",
+        "es": "VERBO",
+        "pt": "VERBO"
+      },
+      "path": "chapters/03-verbs/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 4,
+      "slug": "adjectives",
+      "title": {
+        "en": "ADJECTIVE",
+        "es": "ADJETIVO",
+        "pt": "ADJETIVO"
+      },
+      "path": "chapters/04-adjectives/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 5,
+      "slug": "adverbs",
+      "title": {
+        "en": "ADVERB",
+        "es": "ADVERBIO",
+        "pt": "ADVÉRBIO"
+      },
+      "path": "chapters/05-adverbs/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 6,
+      "slug": "articles",
+      "title": {
+        "en": "ARTICLE",
+        "es": "ARTÍCULO",
+        "pt": "ARTIGO"
+      },
+      "path": "chapters/06-articles/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 7,
+      "slug": "prepositions",
+      "title": {
+        "en": "PREPOSITION",
+        "es": "PREPOSICIÓN",
+        "pt": "PREPOSIÇÃO"
+      },
+      "path": "chapters/07-prepositions/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 8,
+      "slug": "conjunctions",
+      "title": {
+        "en": "CONJUNCTION",
+        "es": "CONJUNCIÓN",
+        "pt": "CONJUNÇÃO"
+      },
+      "path": "chapters/08-conjunctions/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 9,
+      "slug": "interjections",
+      "title": {
+        "en": "INTERJECTION",
+        "es": "INTERJECCIÓN",
+        "pt": "INTERJEIÇÃO"
+      },
+      "path": "chapters/09-interjections/chapter.json",
+      "status": "planned"
+    },
+
+    {
+      "number": 10,
+      "slug": "numerals",
+      "title": {
+        "en": "NUMERAL",
+        "es": "NUMERAL",
+        "pt": "NUMERAL"
+      },
+      "path": "chapters/10-numerals/chapter.json",
+      "status": "planned"
+    }
+  ],
+
+  "extraModules": [
+    {
+      "id": "interrogative-words",
+      "slug": "interrogative-words",
+      "title": {
+        "en": "INTERROGATIVE WORDS",
+        "es": "PALABRAS INTERROGATIVAS",
+        "pt": "PALAVRAS INTERROGATIVAS"
+      },
+      "path": "chapters/11-interrogative-words/chapter.json",
+      "status": "planned"
+    }
+  ],
+
+  "navigation": {
+    "chapterMenu": true,
+    "treeMenu": true,
+    "previous": true,
+    "next": true,
+    "playPause": true,
+    "share": true
+  },
+
+  "contentEngine": {
+    "chapterManifest": "chapter.json",
+    "supportedContentTypes": [
+      "paragraph",
+      "grammar",
+      "examples",
+      "conversation"
+    ]
+  }
+}
