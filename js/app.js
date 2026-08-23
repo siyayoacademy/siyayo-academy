@@ -1,10 +1,13 @@
 /* ========================================
    SIYAYO ACADEMY
-   Content Engine - v0.3
-   Academy + Chapter Loader + DOM Renderer
+   Content Engine - v0.4A
+   Chapter Slider: Previous / Next
    ======================================== */
 
 const ACADEMY_MANIFEST = "data/academy.json";
+
+let currentChapterData = null;
+let currentSectionIndex = 0;
 
 
 /* ========================================
@@ -13,7 +16,6 @@ const ACADEMY_MANIFEST = "data/academy.json";
 
 async function loadAcademyManifest() {
   try {
-
     const response = await fetch(ACADEMY_MANIFEST);
 
     if (!response.ok) {
@@ -26,45 +28,20 @@ async function loadAcademyManifest() {
 
     validateAcademyManifest(academy);
 
-    console.log(
-      "SIYAYO ACADEMY manifest loaded successfully."
-    );
+    console.log("SIYAYO ACADEMY manifest loaded successfully.");
+    console.log("Project:", academy.project?.name);
+    console.log("Product:", academy.project?.product);
+    console.log("Languages:", academy.project?.languageOrder);
 
+    console.log(`${academy.chapters.length} chapters loaded.`);
     console.log(
-      "Project:",
-      academy.project?.name
-    );
-
-    console.log(
-      "Product:",
-      academy.project?.product
-    );
-
-    console.log(
-      "Languages:",
-      academy.project?.languageOrder
-    );
-
-    const chapters = academy.chapters ?? [];
-    const extraModules = academy.extraModules ?? [];
-
-    console.log(
-      `${chapters.length} chapters loaded.`
-    );
-
-    console.log(
-      `${extraModules.length} extra module(s) loaded.`
+      `${academy.extraModules.length} extra module(s) loaded.`
     );
 
     return academy;
 
   } catch (error) {
-
-    console.error(
-      "SIYAYO ACADEMY loader error:",
-      error
-    );
-
+    console.error("SIYAYO ACADEMY loader error:", error);
     return null;
   }
 }
@@ -77,9 +54,7 @@ async function loadAcademyManifest() {
 function validateAcademyManifest(academy) {
 
   if (!academy) {
-    throw new Error(
-      "academy.json está vazio ou inválido."
-    );
+    throw new Error("academy.json está vazio ou inválido.");
   }
 
   if (!academy.project) {
@@ -113,11 +88,7 @@ function findActiveChapter(academy) {
   );
 
   if (!activeChapter) {
-
-    console.warn(
-      "No active chapter was found."
-    );
-
+    console.warn("No active chapter was found.");
     return null;
   }
 
@@ -143,19 +114,14 @@ function findActiveChapter(academy) {
 async function loadChapter(chapterReference) {
 
   if (!chapterReference?.path) {
-
     console.error(
       "Chapter reference does not contain a valid path."
     );
-
     return null;
   }
 
   try {
-
-    const response = await fetch(
-      chapterReference.path
-    );
+    const response = await fetch(chapterReference.path);
 
     if (!response.ok) {
       throw new Error(
@@ -167,25 +133,10 @@ async function loadChapter(chapterReference) {
 
     validateChapter(chapterData);
 
-    console.log(
-      "Chapter JSON loaded successfully."
-    );
-
-    console.log(
-      "Chapter number:",
-      chapterData.chapter?.number
-    );
-
-    console.log(
-      "Chapter slug:",
-      chapterData.chapter?.slug
-    );
-
-    console.log(
-      "Chapter title:",
-      chapterData.chapter?.title
-    );
-
+    console.log("Chapter JSON loaded successfully.");
+    console.log("Chapter number:", chapterData.chapter?.number);
+    console.log("Chapter slug:", chapterData.chapter?.slug);
+    console.log("Chapter title:", chapterData.chapter?.title);
     console.log(
       "Sections:",
       chapterData.chapter?.sections?.length
@@ -194,12 +145,7 @@ async function loadChapter(chapterReference) {
     return chapterData;
 
   } catch (error) {
-
-    console.error(
-      "SIYAYO Chapter Loader error:",
-      error
-    );
-
+    console.error("SIYAYO Chapter Loader error:", error);
     return null;
   }
 }
@@ -212,9 +158,7 @@ async function loadChapter(chapterReference) {
 function validateChapter(chapterData) {
 
   if (!chapterData) {
-    throw new Error(
-      "chapter.json está vazio ou inválido."
-    );
+    throw new Error("chapter.json está vazio ou inválido.");
   }
 
   if (!chapterData.chapter) {
@@ -232,54 +176,83 @@ function validateChapter(chapterData) {
 
 
 /* ========================================
-   RENDER ACTIVE CHAPTER
+   GET SECTION CONTENT
    ======================================== */
 
-function renderActiveChapter(chapterData) {
+function getSectionContent(section) {
+
+  if (!section?.content) {
+    return "";
+  }
+
+  /*
+    Nesta primeira versão:
+    PT é usado como conteúdo principal para os
+    parágrafos explicativos.
+
+    Mais adiante o seletor EN / ES / PT
+    controlará esta escolha.
+  */
+
+  return (
+    section.content.pt ??
+    section.content.en ??
+    section.content.es ??
+    ""
+  );
+}
+
+
+/* ========================================
+   RENDER CURRENT SLIDE
+   ======================================== */
+
+function renderCurrentSlide() {
+
+  if (!currentChapterData) {
+    return;
+  }
 
   const main = document.querySelector("main");
 
   if (!main) {
-    console.error(
-      "Elemento <main> não encontrado."
-    );
-
+    console.error("Elemento <main> não encontrado.");
     return;
   }
 
-  const chapter = chapterData.chapter;
+  const chapter = currentChapterData.chapter;
   const sections = chapter.sections ?? [];
 
   if (sections.length === 0) {
-    console.warn(
-      "O capítulo não possui seções para exibir."
-    );
-
+    console.warn("O capítulo não possui seções.");
     return;
   }
 
-  const firstSection = sections[0];
+  const section = sections[currentSectionIndex];
 
-  const chapterTitle = `
-    ${chapter.title?.en ?? ""} ·
-    ${chapter.title?.es ?? ""} ·
-    ${chapter.title?.pt ?? ""}
-  `;
+  const chapterTitle = [
+    chapter.title?.en,
+    chapter.title?.es,
+    chapter.title?.pt
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
-  let sectionContent = "";
+  const sectionContent =
+    getSectionContent(section);
 
-  if (firstSection.content?.pt) {
-    sectionContent = firstSection.content.pt;
-  } else if (firstSection.content?.en) {
-    sectionContent = firstSection.content.en;
-  } else if (firstSection.content?.es) {
-    sectionContent = firstSection.content.es;
-  }
+  const isFirst =
+    currentSectionIndex === 0;
+
+  const isLast =
+    currentSectionIndex === sections.length - 1;
+
 
   main.innerHTML = `
     <section class="chapter-view">
 
       <header class="chapter-header">
+
         <p class="chapter-number">
           Chapter ${chapter.number}
         </p>
@@ -287,12 +260,14 @@ function renderActiveChapter(chapterData) {
         <h1 class="chapter-title">
           ${chapterTitle}
         </h1>
+
       </header>
+
 
       <article class="chapter-section">
 
         <h2 class="section-title">
-          ${firstSection.title ?? ""}
+          ${section.title ?? ""}
         </h2>
 
         <p class="section-content">
@@ -301,21 +276,138 @@ function renderActiveChapter(chapterData) {
 
       </article>
 
-      <footer class="chapter-progress">
-        1 / ${sections.length}
+
+      <footer class="chapter-footer">
+
+        <div class="chapter-progress">
+          ${currentSectionIndex + 1} / ${sections.length}
+        </div>
+
+        <nav
+          class="slider-controls"
+          aria-label="Carousel controls"
+        >
+
+          <button
+            id="previousButton"
+            class="slider-button"
+            type="button"
+            ${isFirst ? "disabled" : ""}
+            aria-label="Previous"
+          >
+            ◀
+          </button>
+
+
+          <button
+            id="playPauseButton"
+            class="slider-button"
+            type="button"
+            aria-label="Play or pause"
+            disabled
+          >
+            ▶
+          </button>
+
+
+          <button
+            id="nextButton"
+            class="slider-button"
+            type="button"
+            ${isLast ? "disabled" : ""}
+            aria-label="Next"
+          >
+            ▶
+          </button>
+
+        </nav>
+
       </footer>
 
     </section>
   `;
 
+  attachSliderEvents();
+
   console.log(
-    "First chapter section rendered successfully."
+    `Rendered section ${currentSectionIndex + 1}/${sections.length}:`,
+    section.id
   );
 }
 
 
 /* ========================================
-   START SIYAYO CONTENT ENGINE
+   SLIDER EVENTS
+   ======================================== */
+
+function attachSliderEvents() {
+
+  const previousButton =
+    document.getElementById("previousButton");
+
+  const nextButton =
+    document.getElementById("nextButton");
+
+
+  previousButton?.addEventListener(
+    "click",
+    showPreviousSection
+  );
+
+
+  nextButton?.addEventListener(
+    "click",
+    showNextSection
+  );
+}
+
+
+/* ========================================
+   PREVIOUS
+   ======================================== */
+
+function showPreviousSection() {
+
+  if (!currentChapterData) {
+    return;
+  }
+
+  if (currentSectionIndex > 0) {
+
+    currentSectionIndex--;
+
+    renderCurrentSlide();
+  }
+}
+
+
+/* ========================================
+   NEXT
+   ======================================== */
+
+function showNextSection() {
+
+  if (!currentChapterData) {
+    return;
+  }
+
+  const sections =
+    currentChapterData.chapter.sections;
+
+  if (
+    currentSectionIndex <
+    sections.length - 1
+  ) {
+
+    currentSectionIndex++;
+
+    renderCurrentSlide();
+  }
+}
+
+
+/* ========================================
+   START CONTENT ENGINE
    ======================================== */
 
 document.addEventListener(
@@ -326,7 +418,8 @@ document.addEventListener(
       "Starting SIYAYO Content Engine..."
     );
 
-    // 1. Load master manifest
+
+    // 1. Load Academy
     const academy =
       await loadAcademyManifest();
 
@@ -334,7 +427,8 @@ document.addEventListener(
       return;
     }
 
-    // 2. Discover active chapter
+
+    // 2. Find active chapter
     const activeChapter =
       findActiveChapter(academy);
 
@@ -342,7 +436,8 @@ document.addEventListener(
       return;
     }
 
-    // 3. Load active chapter JSON
+
+    // 3. Load chapter
     const chapterData =
       await loadChapter(activeChapter);
 
@@ -350,17 +445,18 @@ document.addEventListener(
       return;
     }
 
-    // 4. Render first section
-    renderActiveChapter(chapterData);
 
-    // 5. Content Engine ready
-    console.log(
-      "SIYAYO Content Engine v0.3 ready."
-    );
+    // 4. Store application state
+    currentChapterData = chapterData;
+    currentSectionIndex = 0;
+
+
+    // 5. Render first slide
+    renderCurrentSlide();
+
 
     console.log(
-      "Active content:",
-      chapterData
+      "SIYAYO Content Engine v0.4A ready."
     );
   }
 );
