@@ -105,30 +105,42 @@
         ]
       },
       {
-        "id": "conversation",
-        "type": "conversation",
-        "title": "Aplicação em Conversação",
-        "items": [
-          {
-            "en": "Where is the hotel?",
-            "es": "¿Dónde está el hotel?",
-            "pt": "Onde fica o hotel?"
-          },
-          {
-            "en": "I need water, please.",
-            "es": "Necesito agua, por favor.",
-            "pt": "Eu preciso de água, por favor."
-          },
-          {
-            "en": "This teacher is great.",
-            "es": "Este profesor es genial.",
-            "pt": "Este professor é ótimo."
-          }
-        ]
+  "id": "conversation",
+  "type": "conversation",
+  "title": "Aplicação em Conversação",
+  "items": [
+    {
+      "en": "Where is the hotel?",
+      "es": "¿Dónde está el hotel?",
+      "pt": "Onde fica o hotel?",
+      "targetWords": {
+        "en": "hotel",
+        "es": "hotel",
+        "pt": "hotel"
       }
-    ]
-  },
-  "carousel": {
+    },
+    {
+      "en": "I need water, please.",
+      "es": "Necesito agua, por favor.",
+      "pt": "Eu preciso de água, por favor.",
+      "targetWords": {
+        "en": "water",
+        "es": "agua",
+        "pt": "água"
+      }
+    },
+    {
+      "en": "This teacher is great.",
+      "es": "Este profesor es genial.",
+      "pt": "Este professor é ótimo.",
+      "targetWords": {
+        "en": "teacher",
+        "es": "profesor",
+        "pt": "professor"
+      }
+    }
+  ]
+}  "carousel": {
     "defaultMode": "story",
     "languageOrder": ["en", "es", "pt"],
     "exampleLinesPerSlide": 3,
