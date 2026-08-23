@@ -463,9 +463,10 @@ function buildSlides(chapterData) {
               title: section.title,
 
               lines:
-                createLanguageLines(
-                  item
-                )
+                 createLanguageLines(
+                   item,
+                   item.targetWords ?? {}
+              )
             });
           }
         );
