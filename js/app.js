@@ -965,6 +965,34 @@ function buildSpeechQueue(slide) {
 
   return queue;
 }
+/* ========================================
+   SPEECH VISUAL HIGHLIGHT
+   ======================================== */
+
+function highlightSpeakingLanguage(language) {
+
+  clearSpeechHighlight();
+
+  const line = document.querySelector(
+    `.language-line[data-language="${language}"]`
+  );
+
+  if (line) {
+    line.classList.add("is-speaking");
+  }
+}
+
+
+function clearSpeechHighlight() {
+
+  document
+    .querySelectorAll(".language-line.is-speaking")
+    .forEach(line => {
+      line.classList.remove("is-speaking");
+    });
+}
+
+
 
 
 /* ========================================
@@ -1005,9 +1033,7 @@ function startSpeech() {
   }
 
   const slide =
-    currentSlides[
-      currentSlideIndex
-    ];
+    currentSlides[currentSlideIndex];
 
   const queue =
     buildSpeechQueue(slide);
@@ -1024,61 +1050,82 @@ function startSpeech() {
 
   stopSpeech();
 
-
-  currentUtterances =
-    queue.map(
-      createUtterance
-    );
+  currentUtterances = [];
 
 
-  currentUtterances.forEach(
-    (utterance, index) => {
+  queue.forEach((item, index) => {
 
-      if (
-        index ===
-        currentUtterances.length - 1
-      ) {
-
-        utterance.onend = () => {
-
-          isSpeaking = false;
-          isPaused = false;
-
-          updatePlayPauseButton();
-
-          console.log(
-            "Slide speech completed."
-          );
-        };
-      }
+    const utterance =
+      createUtterance(item);
 
 
-      utterance.onerror = event => {
+    /* Highlight language currently spoken */
 
-        console.error(
-          "Speech error:",
-          event.error
-        );
+    utterance.onstart = () => {
+
+      highlightSpeakingLanguage(
+        item.language
+      );
+
+      console.log(
+        `Speaking language: ${item.language}`
+      );
+    };
+
+
+    /* End of each spoken block */
+
+    utterance.onend = () => {
+
+      clearSpeechHighlight();
+
+      const isLast =
+        index === queue.length - 1;
+
+      if (isLast) {
 
         isSpeaking = false;
         isPaused = false;
 
         updatePlayPauseButton();
-      };
+
+        console.log(
+          "Slide speech completed."
+        );
+      }
+    };
 
 
-      window.speechSynthesis.speak(
-        utterance
+    utterance.onerror = event => {
+
+      clearSpeechHighlight();
+
+      console.error(
+        "Speech error:",
+        event.error
       );
-    }
-  );
+
+      isSpeaking = false;
+      isPaused = false;
+
+      updatePlayPauseButton();
+    };
+
+
+    currentUtterances.push(
+      utterance
+    );
+
+    window.speechSynthesis.speak(
+      utterance
+    );
+  });
 
 
   isSpeaking = true;
   isPaused = false;
 
   updatePlayPauseButton();
-
 
   console.log(
     "Speech started."
@@ -1150,13 +1197,14 @@ function stopSpeech() {
     return;
   }
 
-
   window.speechSynthesis.cancel();
 
   isSpeaking = false;
   isPaused = false;
 
   currentUtterances = [];
+
+  clearSpeechHighlight();
 
   updatePlayPauseButton();
 }
