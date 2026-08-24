@@ -206,7 +206,7 @@ async function loadChapter(chapterReference) {
 
 
 /* ========================================
-   VALIDATE CHAPTER
+   VALIDATE CHAPTER=[
    ======================================== */
 
 function validateChapter(chapterData) {
@@ -988,12 +988,15 @@ function buildSpeechQueue(slide) {
       }
 
       queue.push({
-        text: line.text,
+  text: line.text,
 
-        language:
-          line.speechLanguage ??
-          line.language
-      });
+  language:
+    line.speechLanguage ??
+    line.language,
+
+  displayLanguage:
+    line.language
+});
     });
   }
 
@@ -1100,8 +1103,9 @@ function startSpeech() {
     utterance.onstart = () => {
 
       highlightSpeakingLanguage(
-        item.language
-      );
+  item.displayLanguage ??
+  item.language
+);
 
       console.log(
         `Speaking language: ${item.language}`
