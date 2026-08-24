@@ -305,23 +305,42 @@ function formatTargetSentence(
 
 function createLanguageLines(
   content,
-  targetWords = {}
+  targetWords = {},
+  options = {}
 ) {
+
+  const defaultLabels = {
+    en: "IN ENGLISH",
+    es: "EN ESPAÑOL",
+    pt: "EM PORTUGUÊS"
+  };
+
+
+  const labels = {
+    ...defaultLabels,
+    ...(options.labels ?? {})
+  };
+
+
+  const speechLanguage =
+    options.speechLanguage ?? null;
+
 
   const order = [
     {
       code: "en",
-      label: "EN"
+      label: labels.en
     },
     {
       code: "es",
-      label: "ES"
+      label: labels.es
     },
     {
       code: "pt",
-      label: "PT"
+      label: labels.pt
     }
   ];
+
 
   return order
     .filter(
@@ -344,7 +363,11 @@ function createLanguageLines(
         target:
           targetWords?.[
             language.code
-          ] ?? ""
+          ] ?? "",
+
+        speechLanguage:
+          speechLanguage ??
+          language.code
       })
     );
 }
@@ -392,18 +415,27 @@ function buildSlides(chapterData) {
 
       case "grammar": {
 
-        slides.push({
-          type: "grammar",
-          sectionId: section.id,
-          title: section.title,
-          lines:
-            createLanguageLines(
-              section.content
-            )
-        });
+  slides.push({
+    type: "grammar",
+    sectionId: section.id,
+    title: section.title,
 
-        break;
-      }
+    lines:
+      createLanguageLines(
+        section.content,
+        {},
+        {
+          labels:
+            section.labels,
+
+          speechLanguage:
+            section.speechLanguage
+        }
+      )
+  });
+
+  break;
+}
 
 
       /* EXAMPLES */
@@ -910,13 +942,13 @@ function getLocale(language) {
    BUILD SPEECH QUEUE
    ======================================== */
 
-function buildSpeechQueue(slide) {
+queue.push({
+  text: line.text,
 
-  const queue = [];
-
-  if (!slide) {
-    return queue;
-  }
+  language:
+    line.speechLanguage ??
+    line.language
+});
 
 
   /* Paragraph */
