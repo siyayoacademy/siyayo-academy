@@ -36,16 +36,25 @@
           "pt": "Atua primariamente como núcleo dos termos nominais da frase, exercendo papéis como sujeito, objeto direto, objeto indireto, complemento nominal e predicativo."
         }
       },
-      {
-        "id": "grammar",
-        "type": "grammar",
-        "title": "Características Gramaticais",
-        "content": {
-          "en": "Flexiona-se em número (singular/plural) e gênero gramatical em casos específicos (mencionados via pronomes ou sufixos).",
-          "es": "Flexiona-se em gênero (masculino/femenino) e número (singular/plural).",
-          "pt": "Flexiona-se em gênero (masculino/feminino), número (singular/plural) e grau (aumentativo/diminutivo)."
-        }
-      },
+{
+  "id": "grammar",
+  "type": "grammar",
+  "title": "Características Gramaticais",
+
+  "labels": {
+    "en": "PARA INGLÊS",
+    "es": "PARA ESPANHOL",
+    "pt": "EM PORTUGUÊS"
+  },
+
+  "speechLanguage": "pt",
+
+  "content": {
+    "en": "Flexiona-se em número (singular/plural) e gênero gramatical em casos específicos (mencionados via pronomes ou sufixos).",
+    "es": "Flexiona-se em gênero (masculino/femenino) e número (singular/plural).",
+    "pt": "Flexiona-se em gênero (masculino/feminino), número (singular/plural) e grau (aumentativo/diminutivo)."
+  }
+},
       {
         "id": "classifications",
         "type": "examples",
