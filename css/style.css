@@ -834,17 +834,93 @@ body {
    ========================================================= */
 
 .language-line {
+  position: relative;
+
   transition:
     transform 220ms ease,
     border-color 220ms ease,
     background 220ms ease,
     box-shadow 220ms ease;
+
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------
+   LANGUAGE LINE INTERACTION
+   Hover / Focus / Touch hint
+   --------------------------------------------------------- */
+
+.language-line::after {
+  content: "◖";
+
+  position: absolute;
+
+  top: 10px;
+  right: 12px;
+
+  font-size: 0.95rem;
+  line-height: 1;
+
+  color:
+    var(--siyayo-gold-light);
+
+  opacity: 0;
+
+  transform:
+    translateY(-2px)
+    scale(0.88);
+
+  text-shadow:
+    0 0 8px
+      rgba(242, 216, 138, 0.35);
+
+  pointer-events: none;
+
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    text-shadow 180ms ease;
 }
 
 
-.language-line.is-speaking {
-  transform: scale(1.018);
+.language-line:hover,
+.language-line:focus-visible {
+  transform:
+    translateY(-1px);
 
+  border-color:
+    rgba(242, 216, 138, 0.58);
+
+  box-shadow:
+    0 0 18px
+      rgba(215, 179, 90, 0.18),
+
+    inset 0 0 12px
+      rgba(242, 216, 138, 0.04);
+
+  outline: none;
+}
+
+
+.language-line:hover::after,
+.language-line:focus-visible::after,
+.language-line.is-speaking::after {
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+
+  text-shadow:
+    0 0 12px
+      rgba(242, 216, 138, 0.58);
+}
+
+.language-line.is-speaking {
+   transform:
+     translateY(-1px)
+     scale(1.018);
+   
   border-color:
     rgba(242, 216, 138, 0.88);
 
@@ -862,6 +938,7 @@ body {
     inset 0 0 16px
       rgba(242, 216, 138, 0.05);
 }
+
 
 
 .language-line.is-speaking .language-label {
