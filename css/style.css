@@ -1160,12 +1160,12 @@ body {
 @media (max-width: 900px) {
 
   .lionsgate-button {
-    width: 88px;
-    height: 88px;
+    width: 104px;
+    height: 104px;
   }
 
   .lionsgate-button .nav-icon {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
 }
@@ -1178,15 +1178,15 @@ body {
 @media (max-width: 600px) {
 
   .lionsgate-button {
-    top: 10px;
-    left: 10px;
+    top: 6px;
+    left: 6px;
 
-    width: 72px;
-    height: 72px;
+    width: 92px;
+    height: 92px;
   }
 
   .lionsgate-button .nav-icon {
-    font-size: 2.15rem;
+    font-size: 2.7rem;
   }
 
   .share-button {
@@ -1225,15 +1225,15 @@ body {
   (orientation: landscape) {
 
   .lionsgate-button {
-    top: 8px;
-    left: 8px;
+    top: 5px;
+    left: 6px;
 
-    width: 58px;
-    height: 58px;
+    width: 72px;
+    height: 72px;
   }
 
   .lionsgate-button .nav-icon {
-    font-size: 1.8rem;
+    font-size: 2.15em;
   }
 
   .share-button {
