@@ -942,13 +942,13 @@ function getLocale(language) {
    BUILD SPEECH QUEUE
    ======================================== */
 
-queue.push({
-  text: line.text,
+function buildSpeechQueue(slide) {
 
-  language:
-    line.speechLanguage ??
-    line.language
-});
+  const queue = [];
+
+  if (!slide) {
+    return queue;
+  }
 
 
   /* Paragraph */
@@ -975,7 +975,7 @@ queue.push({
   }
 
 
-  /* Trilingual slides */
+  /* Grammar / Examples / Conversation */
 
   if (
     Array.isArray(slide.lines)
@@ -989,7 +989,10 @@ queue.push({
 
       queue.push({
         text: line.text,
-        language: line.language
+
+        language:
+          line.speechLanguage ??
+          line.language
       });
     });
   }
@@ -997,6 +1000,7 @@ queue.push({
 
   return queue;
 }
+
 /* ========================================
    SPEECH VISUAL HIGHLIGHT
    ======================================== */
