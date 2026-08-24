@@ -855,15 +855,15 @@ body {
 
   position: absolute;
 
-  left: 12px;
-  top: 50%;
+   left: 10px;
+   top: 8px;
 
   width: 18px;
   height: 18px;
 
-  transform:
-    translateY(-50%)
-    scale(0.88);
+   transform:
+     translateY(-2px)
+     scale(0.88);
 
   background:
     var(--siyayo-gold-light);
@@ -924,9 +924,9 @@ body {
 .language-line.is-speaking::after {
   opacity: 1;
 
-  transform:
-    translateY(-50%)
-    scale(1);
+transform:
+  translateY(0)
+  scale(1);
 
   filter:
     drop-shadow(
