@@ -543,12 +543,15 @@ function renderLanguageLines(lines = []) {
 
       return `
         <div
-          class="
-            language-line
-            language-${line.language}
-          "
-          data-language="${line.language}"
-        >
+           class="
+              language-line
+             language-${line.language}
+              "
+              data-language="${line.language}"
+              role="button"
+              tabindex="0"
+           aria-label="Ouvir ${escapeHtml(line.label)}"
+         >
 
           <span class="language-label">
             ${line.label}
@@ -870,6 +873,77 @@ function attachSliderEvents() {
     "click",
     toggleSpeech
   );
+
+     const languageLines =
+    document.querySelectorAll(
+      ".language-line"
+    );
+
+
+  languageLines.forEach(line => {
+
+    line.addEventListener(
+      "click",
+      event => {
+
+        /*
+           Future Target Word navigation:
+           clicking the highlighted target word
+           must not trigger line speech.
+        */
+
+        if (
+          event.target.closest(
+            ".target-word"
+          )
+        ) {
+          return;
+        }
+
+
+        const language =
+          line.dataset.language;
+
+        speakLanguageLine(
+          language
+        );
+      }
+    );
+
+
+    line.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key !== "Enter" &&
+          event.key !== " "
+        ) {
+          return;
+        }
+
+
+        if (
+          event.target.closest(
+            ".target-word"
+          )
+        ) {
+          return;
+        }
+
+
+        event.preventDefault();
+
+        const language =
+          line.dataset.language;
+
+        speakLanguageLine(
+          language
+        );
+      }
+    );
+  });
+
 }
 
 
@@ -1055,6 +1129,108 @@ function createUtterance(item) {
   return utterance;
 }
 
+
+/* ========================================
+   SPEAK SINGLE LANGUAGE LINE
+   ======================================== */
+
+
+function speakLanguageLine(language) {
+
+  if (!speechIsSupported()) {
+    console.warn(
+      "Speech Synthesis is not supported by this browser."
+    );
+
+    return;
+  }
+
+  const slide =
+    currentSlides[currentSlideIndex];
+
+  if (
+    !slide ||
+    !Array.isArray(slide.lines)
+  ) {
+    return;
+  }
+
+  const line =
+    slide.lines.find(
+      item =>
+        item.language === language
+    );
+
+  if (!line?.text) {
+    return;
+  }
+
+  stopSpeech();
+
+  const item = {
+    text:
+      line.text,
+
+    language:
+      line.speechLanguage ??
+      line.language,
+
+    displayLanguage:
+      line.language
+  };
+
+  const utterance =
+    createUtterance(item);
+
+  utterance.onstart = () => {
+
+    isSpeaking = true;
+    isPaused = false;
+
+    highlightSpeakingLanguage(
+      item.displayLanguage
+    );
+
+    updatePlayPauseButton();
+  };
+
+  utterance.onend = () => {
+
+    clearSpeechHighlight();
+
+    isSpeaking = false;
+    isPaused = false;
+
+    currentUtterances = [];
+
+    updatePlayPauseButton();
+  };
+
+  utterance.onerror = event => {
+
+    clearSpeechHighlight();
+
+    isSpeaking = false;
+    isPaused = false;
+
+    currentUtterances = [];
+
+    updatePlayPauseButton();
+
+    console.error(
+      "Selected line speech error:",
+      event.error
+    );
+  };
+
+  currentUtterances = [
+    utterance
+  ];
+
+  window.speechSynthesis.speak(
+    utterance
+  );
+}
 
 /* ========================================
    START SPEECH
