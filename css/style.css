@@ -972,24 +972,28 @@ body {
    --------------------------------------------------------- */
 
 .lionsgate-button {
-  top: 18px;
-  left: 18px;
+  top: 14px;
+  left: 14px;
 
-  width: 108px;
-  height: 108px;
+  width: 122px;
+  height: 122px;
 
-  border-color:
-    rgba(242, 216, 138, 0.78);
+  border: none;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(215, 179, 90, 0.10) 0%,
+      rgba(3, 18, 43, 0.22) 46%,
+      transparent 74%
+    );
 
   box-shadow:
-    inset 0 1px 0
-      rgba(255, 255, 255, 0.16),
+    0 0 28px
+      rgba(215, 179, 90, 0.22);
 
-    0 8px 24px
-      rgba(0, 0, 0, 0.48),
-
-    0 0 26px
-      rgba(215, 179, 90, 0.24);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 
@@ -1083,7 +1087,17 @@ body {
 /* Larger Lionsgate icon */
 
 .lionsgate-button .nav-icon {
-  font-size: 3.2rem;
+  font-size: 3.7rem;
+
+  filter:
+    drop-shadow(
+      0 4px 6px
+      rgba(0, 0, 0, 0.52)
+    )
+    drop-shadow(
+      0 0 12px
+      rgba(215, 179, 90, 0.28)
+    );
 }
 
 
