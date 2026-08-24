@@ -851,37 +851,54 @@ body {
    --------------------------------------------------------- */
 
 .language-line::after {
-  content: "◖";
+  content: "";
 
   position: absolute;
 
-  top: 10px;
-  right: 12px;
+  left: 12px;
+  top: 50%;
 
-  font-size: 0.95rem;
-  line-height: 1;
+  width: 18px;
+  height: 18px;
 
-  color:
+  transform:
+    translateY(-50%)
+    scale(0.88);
+
+  background:
     var(--siyayo-gold-light);
+
+  /*
+     Golden speaker icon.
+     SVG mask keeps the icon
+     independent from system emojis.
+  */
+
+  -webkit-mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E")
+    center / contain
+    no-repeat;
+
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E")
+    center / contain
+    no-repeat;
 
   opacity: 0;
 
-  transform:
-    translateY(-2px)
-    scale(0.88);
-
-  text-shadow:
-    0 0 8px
-      rgba(242, 216, 138, 0.35);
+  filter:
+    drop-shadow(
+      0 0 5px
+      rgba(242, 216, 138, 0.45)
+    );
 
   pointer-events: none;
 
   transition:
     opacity 180ms ease,
     transform 180ms ease,
-    text-shadow 180ms ease;
+    filter 180ms ease;
 }
-
 
 .language-line:hover,
 .language-line:focus-visible {
@@ -908,12 +925,14 @@ body {
   opacity: 1;
 
   transform:
-    translateY(0)
+    translateY(-50%)
     scale(1);
 
-  text-shadow:
-    0 0 12px
-      rgba(242, 216, 138, 0.58);
+  filter:
+    drop-shadow(
+      0 0 8px
+      rgba(242, 216, 138, 0.58)
+    );
 }
 
 .language-line.is-speaking {
