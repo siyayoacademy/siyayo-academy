@@ -897,9 +897,349 @@ body {
 
 }
 /* =========================================================
-   GLOBAL NAVIGATION
-   Lionsgate / Home + Share
+   GLOBAL NAVIGATION v1.1
+   Lionsgate LEFT / Navigator CENTER / Share RIGHT
    ========================================================= */
+
+.global-nav {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   SHARED BUTTON
+   --------------------------------------------------------- */
+
+.nav-button {
+  position: fixed;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(242, 216, 138, 0.52);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(215, 179, 90, 0.18),
+      rgba(3, 18, 43, 0.72)
+    );
+
+  color: var(--siyayo-gold-light);
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  pointer-events: auto;
+
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.12),
+
+    0 6px 18px
+      rgba(0, 0, 0, 0.42),
+
+    0 0 14px
+      rgba(215, 179, 90, 0.10);
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    color var(--transition-fast);
+}
+
+
+/* ---------------------------------------------------------
+   LIONSGATE / HOME
+   --------------------------------------------------------- */
+
+.lionsgate-button {
+  top: 18px;
+  left: 18px;
+
+  width: 108px;
+  height: 108px;
+
+  border-color:
+    rgba(242, 216, 138, 0.78);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.16),
+
+    0 8px 24px
+      rgba(0, 0, 0, 0.48),
+
+    0 0 26px
+      rgba(215, 179, 90, 0.24);
+}
+
+
+/* ---------------------------------------------------------
+   SHARE
+   --------------------------------------------------------- */
+
+.share-button {
+  top: 22px;
+  right: 22px;
+
+  width: 50px;
+  height: 50px;
+}
+
+
+/* ---------------------------------------------------------
+   TOP NAVIGATOR
+   --------------------------------------------------------- */
+
+.top-navigator {
+  position: fixed;
+
+  top: 22px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    10px 20px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid
+    rgba(242, 216, 138, 0.30);
+
+  background:
+    rgba(2, 12, 30, 0.46);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 8px 24px
+      rgba(0, 0, 0, 0.34);
+
+  pointer-events: auto;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATOR PLACEHOLDER
+   --------------------------------------------------------- */
+
+.navigator-placeholder {
+  font-size:
+    clamp(0.72rem, 1.6vw, 0.9rem);
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  color:
+    var(--siyayo-gold-light);
+
+  white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------
+   ICON
+   --------------------------------------------------------- */
+
+.nav-icon {
+  display: block;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* Larger Lionsgate icon */
+
+.lionsgate-button .nav-icon {
+  font-size: 3.2rem;
+}
+
+
+/* Share icon */
+
+.share-button .nav-icon {
+  font-size: 1.25rem;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER / FOCUS
+   --------------------------------------------------------- */
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  transform:
+    translateY(-2px)
+    scale(1.06);
+
+  color: #fff4c5;
+
+  border-color:
+    var(--siyayo-gold-light);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(242, 216, 138, 0.30),
+      rgba(6, 36, 77, 0.82)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.16),
+
+    0 8px 22px
+      rgba(0, 0, 0, 0.48),
+
+    0 0 20px
+      rgba(215, 179, 90, 0.30);
+
+  outline: none;
+}
+
+
+/* ---------------------------------------------------------
+   CLICK
+   --------------------------------------------------------- */
+
+.nav-button:active {
+  transform: scale(0.94);
+}
+
+
+/* ---------------------------------------------------------
+   TABLETS / SMALL SCREENS
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .lionsgate-button {
+    width: 88px;
+    height: 88px;
+  }
+
+  .lionsgate-button .nav-icon {
+    font-size: 2.6rem;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   SMALL SMARTPHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .lionsgate-button {
+    top: 10px;
+    left: 10px;
+
+    width: 72px;
+    height: 72px;
+  }
+
+  .lionsgate-button .nav-icon {
+    font-size: 2.15rem;
+  }
+
+  .share-button {
+    top: 14px;
+    right: 12px;
+
+    width: 42px;
+    height: 42px;
+  }
+
+  .top-navigator {
+    top: 14px;
+
+    min-height: 42px;
+
+    padding:
+      8px 14px;
+  }
+
+  .navigator-placeholder {
+    font-size: 0.68rem;
+
+    letter-spacing: 0.11em;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   SMALL LANDSCAPE
+   --------------------------------------------------------- */
+
+@media
+  (max-height: 500px)
+  and
+  (orientation: landscape) {
+
+  .lionsgate-button {
+    top: 8px;
+    left: 8px;
+
+    width: 58px;
+    height: 58px;
+  }
+
+  .lionsgate-button .nav-icon {
+    font-size: 1.8rem;
+  }
+
+  .share-button {
+    top: 9px;
+    right: 10px;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .top-navigator {
+    top: 9px;
+
+    min-height: 38px;
+
+    padding:
+      6px 12px;
+  }
+
+}
 
 .global-nav {
   position: fixed;
