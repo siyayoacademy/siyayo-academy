@@ -16,9 +16,9 @@
   },
 
   "description": {
-    "en": "Verb-function concept for expressing actions, habits, routines and events performed or experienced by a subject.",
-    "es": "Concepto de función verbal para expresar acciones, hábitos, rutinas y acontecimientos realizados o experimentados por un sujeto.",
-    "pt": "Conceito de função verbal para expressar ações, hábitos, rotinas e acontecimentos realizados ou vivenciados por um sujeito."
+    "en": "Verb-function concept for expressing what a subject does, including actions, habits and routines, through lexical verbs organized across sentence structures and time references.",
+    "es": "Concepto de función verbal para expresar lo que hace un sujeto, incluyendo acciones, hábitos y rutinas, mediante verbos léxicos organizados a través de estructuras oracionales y referencias temporales.",
+    "pt": "Conceito de função verbal para expressar o que um sujeito faz, incluindo ações, hábitos e rotinas, por meio de verbos lexicais organizados através das estruturas da oração e das referências temporais."
   },
 
   "relations": [
@@ -112,6 +112,6 @@
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats Action as a distinct verb-function concept strongly connected to auxiliaries, sentence order, tense organization and affirmative, negative and interrogative practice. Boundaries remain intentionally permeable with Movement, Routine and broader verbal systems."
+    "notes": "v0.1 treats Action as the Master verb-function associated with what a subject does. Routine and habit are treated as applications of Action rather than independent verb-functions. Lexical regular and irregular verbs will be managed through a separate verb lexicon instead of becoming child knowledge nodes."
   }
 }
