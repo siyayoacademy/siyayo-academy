@@ -1,0 +1,117 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "action",
+
+  "type": "concept",
+
+  "role": "verb-function",
+
+  "label": {
+    "en": "ACTION",
+    "es": "ACCIÓN",
+    "pt": "AÇÃO"
+  },
+
+  "description": {
+    "en": "Verb-function concept for expressing actions, habits, routines and events performed or experienced by a subject.",
+    "es": "Concepto de función verbal para expresar acciones, hábitos, rutinas y acontecimientos realizados o experimentados por un sujeto.",
+    "pt": "Conceito de função verbal para expressar ações, hábitos, rotinas e acontecimentos realizados ou vivenciados por um sujeito."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "verb-functions"
+    },
+
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "timelines"
+    },
+    {
+      "type": "related",
+      "target": "words"
+    },
+    {
+      "type": "related",
+      "target": "tools"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "verbs"
+    },
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "action-leaf"
+    },
+    {
+      "type": "smart-slide",
+      "target": "action-introduction"
+    },
+    {
+      "type": "checklist",
+      "target": "action-checklist"
+    },
+    {
+      "type": "timeline",
+      "target": "action-timeline"
+    },
+    {
+      "type": "exercise",
+      "target": "action-practice"
+    },
+    {
+      "type": "conversation",
+      "target": "action-conversation"
+    },
+    {
+      "type": "reference",
+      "target": "master-action"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 3,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "v0.1 treats Action as a distinct verb-function concept strongly connected to auxiliaries, sentence order, tense organization and affirmative, negative and interrogative practice. Boundaries remain intentionally permeable with Movement, Routine and broader verbal systems."
+  }
+}
