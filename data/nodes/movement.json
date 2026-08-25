@@ -16,9 +16,9 @@
   },
 
   "description": {
-    "en": "Verb-function concept for expressing movement, displacement, direction or transition of a subject from one place or position to another.",
-    "es": "Concepto de función verbal para expresar movimiento, desplazamiento, dirección o transición de un sujeto de un lugar o posición a otro.",
-    "pt": "Conceito de função verbal para expressar movimento, deslocamento, direção ou transição de um sujeito de um lugar ou posição para outro."
+    "en": "Verb-function concept for expressing an action or process in progress at a reference moment, structured in the Master through TO BE + verb-ING.",
+    "es": "Concepto de función verbal para expresar una acción o proceso en desarrollo en un momento de referencia, estructurado en la Master mediante TO BE + verbo-ING.",
+    "pt": "Conceito de função verbal para expressar uma ação ou processo em andamento em um momento de referência, estruturado na Master por TO BE + verbo-ING."
   },
 
   "relations": [
@@ -116,6 +116,6 @@
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats Movement as a distinct verb-function concept centered on displacement, direction and transition. Its boundaries remain intentionally permeable with spatial relations, timelines, sentence structure, questions and practical communication."
+    "notes": "v0.1 treats Movement as a distinct verb-function concept centered on an action or process in progress, structured through TO BE + verb-ING. Spatial displacement and direction may appear as applications, but they do not define the concept. Boundaries remain intentionally permeable with prepositions, timelines, sentence structure, questions and practical communication."
   }
 }
