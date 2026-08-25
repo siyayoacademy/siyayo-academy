@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "$id": "https://siyayo-academy.pages.dev/data/schemas/node.schema.json",
+
+  "title": "SIYAYO Academy Knowledge Node Schema",
+
+  "description": "Validation schema for concept-based knowledge nodes in the SIYAYO Academy pedagogical network.",
+
+  "type": "object",
+
+  "required": [
+    "version",
+    "id",
+    "type",
+    "role",
+    "label",
+    "relations",
+    "representations"
+  ],
+
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "minLength": 1
+    },
+
+    "type": {
+      "type": "string",
+      "enum": [
+        "hub",
+        "concept",
+        "category",
+        "tool",
+        "practice",
+        "reference"
+      ]
+    },
+
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "label": {
+      "$ref": "#/$defs/multilingualText"
+    },
+
+    "description": {
+      "$ref": "#/$defs/multilingualText"
+    },
+
+    "relations": {
+      "type": "array",
+
+      "items": {
+        "$ref": "#/$defs/relation"
+      },
+
+      "uniqueItems": true
+    },
+
+    "representations": {
+      "type": "array",
+
+      "items": {
+        "$ref": "#/$defs/representation"
+      },
+
+      "uniqueItems": true
+    },
+
+    "pedagogy": {
+      "$ref": "#/$defs/pedagogy"
+    },
+
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    }
+  },
+
+  "$defs": {
+    "multilingualText": {
+      "type": "object",
+
+      "required": [
+        "en",
+        "es",
+        "pt"
+      ],
+
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "es": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "pt": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "relation": {
+      "type": "object",
+
+      "required": [
+        "type",
+        "target"
+      ],
+
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "parent",
+            "child",
+            "related",
+            "requires",
+            "supports",
+            "example-of",
+            "practice-of",
+            "returns-to"
+          ]
+        },
+
+        "target": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 1
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "representation": {
+      "type": "object",
+
+      "required": [
+        "type"
+      ],
+
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "smart-slide",
+            "chapter",
+            "subslide",
+            "checklist",
+            "exercise",
+            "conversation",
+            "visual-index",
+            "image",
+            "timeline",
+            "master",
+            "reference"
+          ]
+        },
+
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "target": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "pedagogy": {
+      "type": "object",
+
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": [
+            "foundation",
+            "core",
+            "practice",
+            "advanced"
+          ]
+        },
+
+        "sequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+
+        "speechEnabled": {
+          "type": "boolean"
+        },
+
+        "interactive": {
+          "type": "boolean"
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "metadata": {
+      "type": "object",
+
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "planned",
+            "prototype",
+            "active",
+            "review",
+            "master"
+          ]
+        },
+
+        "source": {
+          "type": "string"
+        },
+
+        "notes": {
+          "type": "string"
+        }
+      },
+
+      "additionalProperties": false
+    }
+  },
+
+  "additionalProperties": false
+}
