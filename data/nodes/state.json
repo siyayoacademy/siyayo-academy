@@ -1,0 +1,117 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "state",
+
+  "type": "concept",
+
+  "role": "verb-function",
+
+  "label": {
+    "en": "STATE",
+    "es": "ESTADO",
+    "pt": "ESTADO"
+  },
+
+  "description": {
+    "en": "Verb-function concept for expressing a state, condition or situation associated with a subject.",
+    "es": "Concepto de función verbal para expresar un estado, condición o situación asociada a un sujeto.",
+    "pt": "Conceito de função verbal para expressar um estado, condição ou situação associada a um sujeito."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "verb-functions"
+    },
+
+    {
+      "type": "related",
+      "target": "quality"
+    },
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "timelines"
+    },
+    {
+      "type": "related",
+      "target": "words"
+    },
+    {
+      "type": "related",
+      "target": "tools"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "verbs"
+    },
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "state-leaf"
+    },
+    {
+      "type": "smart-slide",
+      "target": "state-introduction"
+    },
+    {
+      "type": "checklist",
+      "target": "state-checklist"
+    },
+    {
+      "type": "timeline",
+      "target": "state-timeline"
+    },
+    {
+      "type": "exercise",
+      "target": "state-practice"
+    },
+    {
+      "type": "reference",
+      "target": "master-state"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 1,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "v0.1 treats State as a distinct verb-function concept for condition, situation or state. It remains intentionally permeable with Quality and with temporal structures when a state is located or developed across time."
+  }
+}
