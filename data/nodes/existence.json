@@ -1,0 +1,117 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "existence",
+
+  "type": "concept",
+
+  "role": "verb-function",
+
+  "label": {
+    "en": "EXISTENCE",
+    "es": "EXISTENCIA",
+    "pt": "EXISTÊNCIA"
+  },
+
+  "description": {
+    "en": "Verb-function concept for expressing the existence, presence or occurrence of someone, something or a fact, commonly structured through THERE + TO BE.",
+    "es": "Concepto de función verbal para expresar la existencia, presencia u ocurrencia de alguien, algo o un hecho, comúnmente estructurado mediante THERE + TO BE.",
+    "pt": "Conceito de função verbal para expressar a existência, presença ou ocorrência de alguém, algo ou um fato, normalmente estruturado por THERE + TO BE."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "verb-functions"
+    },
+
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "timelines"
+    },
+    {
+      "type": "related",
+      "target": "words"
+    },
+    {
+      "type": "related",
+      "target": "tools"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "verbs"
+    },
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "existence-leaf"
+    },
+    {
+      "type": "smart-slide",
+      "target": "existence-introduction"
+    },
+    {
+      "type": "checklist",
+      "target": "existence-checklist"
+    },
+    {
+      "type": "timeline",
+      "target": "existence-timeline"
+    },
+    {
+      "type": "exercise",
+      "target": "existence-practice"
+    },
+    {
+      "type": "conversation",
+      "target": "existence-conversation"
+    },
+    {
+      "type": "reference",
+      "target": "master-existence"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 4,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "v0.1 treats Existence as the verb-function concept for expressing existence or presence, strongly associated in the Master with THERE + TO BE and its temporal, affirmative, negative and interrogative forms. Boundaries remain intentionally permeable with sentence structure, questions, timelines and other word classes."
+  }
+}
