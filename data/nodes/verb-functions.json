@@ -1,0 +1,118 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "verb-functions",
+
+  "type": "category",
+
+  "role": "verb-functions",
+
+  "label": {
+    "en": "VERB FUNCTIONS",
+    "es": "FUNCIONES DEL VERBO",
+    "pt": "FUNÇÕES DO VERBO"
+  },
+
+  "description": {
+    "en": "Organizing node for the five fundamental verb functions in the SIYAYO Academy method: Quality, State, Movement, Action and Existence.",
+    "es": "Nodo organizador de las cinco funciones fundamentales del verbo en el método SIYAYO Academy: Cualidad, Estado, Movimiento, Acción y Existencia.",
+    "pt": "Nó organizador das cinco funções fundamentais do verbo no método SIYAYO Academy: Qualidade, Estado, Movimento, Ação e Existência."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "verbs"
+    },
+
+    {
+      "type": "child",
+      "target": "quality"
+    },
+    {
+      "type": "child",
+      "target": "state"
+    },
+    {
+      "type": "child",
+      "target": "movement"
+    },
+    {
+      "type": "child",
+      "target": "action"
+    },
+    {
+      "type": "child",
+      "target": "existence"
+    },
+
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "timelines"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "verbs"
+    },
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "verb-functions-branch"
+    },
+    {
+      "type": "smart-slide",
+      "target": "verb-functions-introduction"
+    },
+    {
+      "type": "checklist",
+      "target": "verb-functions-checklist"
+    },
+    {
+      "type": "exercise",
+      "target": "verb-functions-practice"
+    },
+    {
+      "type": "reference",
+      "target": "master-verb-functions"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 1,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "Organizing category for the five fundamental verb functions. Detailed definitions, examples and cross-links belong to the individual function nodes."
+  }
+}
