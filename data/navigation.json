@@ -1,0 +1,139 @@
+{
+  "version": "0.1.0",
+
+  "home": {
+    "id": "home",
+    "label": "SIYAYO ACADEMY",
+    "role": "lionsgate",
+    "url": "/"
+  },
+
+  "ring": [
+    {
+      "id": "roots",
+      "type": "hub",
+      "role": "roots",
+      "label": {
+        "en": "ROOTS",
+        "es": "RAÍCES",
+        "pt": "RAÍZES"
+      },
+      "target": "roots"
+    },
+
+    {
+      "id": "verbs",
+      "type": "hub",
+      "role": "trunk",
+      "label": {
+        "en": "VERBS",
+        "es": "VERBOS",
+        "pt": "VERBOS"
+      },
+      "target": "verbs"
+    },
+
+    {
+      "id": "words",
+      "type": "hub",
+      "role": "branches",
+      "label": {
+        "en": "WORDS",
+        "es": "PALABRAS",
+        "pt": "PALAVRAS"
+      },
+      "target": "words"
+    },
+
+    {
+      "id": "questions",
+      "type": "hub",
+      "role": "thinking-mind",
+      "label": {
+        "en": "QUESTIONS",
+        "es": "PREGUNTAS",
+        "pt": "PERGUNTAS"
+      },
+      "target": "questions"
+    },
+
+    {
+      "id": "tools",
+      "type": "hub",
+      "role": "useful-hand",
+      "label": {
+        "en": "TOOLS",
+        "es": "HERRAMIENTAS",
+        "pt": "FERRAMENTAS"
+      },
+      "target": "tools"
+    },
+
+    {
+      "id": "tree",
+      "type": "visual-index",
+      "role": "knowledge-tree",
+      "label": {
+        "en": "TREE",
+        "es": "ÁRBOL",
+        "pt": "ÁRVORE"
+      },
+      "target": "tree"
+    },
+
+    {
+      "id": "practice",
+      "type": "hub",
+      "role": "practice",
+      "label": {
+        "en": "PRACTICE",
+        "es": "PRÁCTICA",
+        "pt": "PRÁTICA"
+      },
+      "target": "practice"
+    },
+
+    {
+      "id": "checklist",
+      "type": "index",
+      "role": "matrix",
+      "label": {
+        "en": "CHECKLIST",
+        "es": "CHECKLIST",
+        "pt": "CHECKLIST"
+      },
+      "target": "checklist"
+    },
+
+    {
+      "id": "examples",
+      "type": "index",
+      "role": "leaves",
+      "label": {
+        "en": "EXAMPLES",
+        "es": "EJEMPLOS",
+        "pt": "EXEMPLOS"
+      },
+      "target": "examples"
+    },
+
+    {
+      "id": "master",
+      "type": "hub",
+      "role": "master",
+      "label": {
+        "en": "MASTER",
+        "es": "MASTER",
+        "pt": "MASTER"
+      },
+      "target": "master"
+    }
+  ],
+
+  "behavior": {
+    "loop": true,
+    "autoRotate": false,
+    "centerActive": true,
+    "navigationMode": "concept"
+  }
+}
