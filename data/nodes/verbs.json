@@ -1,0 +1,114 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "verbs",
+
+  "type": "hub",
+
+  "role": "trunk",
+
+  "label": {
+    "en": "VERBS",
+    "es": "VERBOS",
+    "pt": "VERBOS"
+  },
+
+  "description": {
+    "en": "Central verbal structure of the SIYAYO Academy learning network, connecting verb functions, verbal systems, sentence construction, timelines, practice and the other kinds of words.",
+    "es": "Estructura verbal central de la red de aprendizaje de SIYAYO Academy, conectando las funciones del verbo, los sistemas verbales, la construcción de oraciones, las líneas de tiempo, la práctica y los demás tipos de palabras.",
+    "pt": "Estrutura verbal central da rede de aprendizagem da SIYAYO Academy, conectando as funções do verbo, os sistemas verbais, a construção das orações, as linhas do tempo, a prática e os demais tipos de palavras."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "roots"
+    },
+
+    {
+      "type": "child",
+      "target": "verb-functions"
+    },
+    {
+      "type": "child",
+      "target": "verb-systems"
+    },
+
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "timelines"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "words"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "smart-slide",
+      "target": "verbs-introduction"
+    },
+    {
+      "type": "visual-index",
+      "target": "verb-trunk"
+    },
+    {
+      "type": "checklist",
+      "target": "verbs-checklist"
+    },
+    {
+      "type": "timeline",
+      "target": "verb-timelines"
+    },
+    {
+      "type": "exercise",
+      "target": "verbs-practice"
+    },
+    {
+      "type": "reference",
+      "target": "master-verbs"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 1,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "Central trunk node. Verb functions and broader verbal systems remain separated so that the original pedagogical structure can expand without flattening different concepts into a single hierarchy."
+  }
+}
