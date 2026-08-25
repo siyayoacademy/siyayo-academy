@@ -1,0 +1,105 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "quality",
+
+  "type": "concept",
+
+  "role": "verb-function",
+
+  "label": {
+    "en": "QUALITY",
+    "es": "CUALIDAD",
+    "pt": "QUALIDADE"
+  },
+
+  "description": {
+    "en": "Verb-function concept for expressing qualities, properties, characteristics and identities attributed to a subject.",
+    "es": "Concepto de función verbal para expresar cualidades, propiedades, características e identidades atribuidas a un sujeto.",
+    "pt": "Conceito de função verbal para expressar qualidades, propriedades, características e identidades atribuídas a um sujeito."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "verb-functions"
+    },
+
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "words"
+    },
+    {
+      "type": "related",
+      "target": "tools"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "verbs"
+    },
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "quality-leaf"
+    },
+    {
+      "type": "smart-slide",
+      "target": "quality-introduction"
+    },
+    {
+      "type": "checklist",
+      "target": "quality-checklist"
+    },
+    {
+      "type": "exercise",
+      "target": "quality-practice"
+    },
+    {
+      "type": "reference",
+      "target": "master-quality"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 0,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "v0.1 treats Quality as property, characteristic and identity predication, with strong pedagogical links to linking verbs and adjectives. Boundaries remain intentionally permeable with State and other verb functions."
+  }
+}
