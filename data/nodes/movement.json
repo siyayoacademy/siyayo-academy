@@ -1,0 +1,121 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "movement",
+
+  "type": "concept",
+
+  "role": "verb-function",
+
+  "label": {
+    "en": "MOVEMENT",
+    "es": "MOVIMIENTO",
+    "pt": "MOVIMENTO"
+  },
+
+  "description": {
+    "en": "Verb-function concept for expressing movement, displacement, direction or transition of a subject from one place or position to another.",
+    "es": "Concepto de función verbal para expresar movimiento, desplazamiento, dirección o transición de un sujeto de un lugar o posición a otro.",
+    "pt": "Conceito de função verbal para expressar movimento, deslocamento, direção ou transição de um sujeito de um lugar ou posição para outro."
+  },
+
+  "relations": [
+    {
+      "type": "parent",
+      "target": "verb-functions"
+    },
+
+    {
+      "type": "related",
+      "target": "prepositions"
+    },
+    {
+      "type": "related",
+      "target": "sentence-order"
+    },
+    {
+      "type": "related",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "timelines"
+    },
+    {
+      "type": "related",
+      "target": "words"
+    },
+    {
+      "type": "related",
+      "target": "tools"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    },
+    {
+      "type": "supports",
+      "target": "examples"
+    },
+
+    {
+      "type": "returns-to",
+      "target": "verbs"
+    },
+    {
+      "type": "returns-to",
+      "target": "roots"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "movement-leaf"
+    },
+    {
+      "type": "smart-slide",
+      "target": "movement-introduction"
+    },
+    {
+      "type": "checklist",
+      "target": "movement-checklist"
+    },
+    {
+      "type": "timeline",
+      "target": "movement-timeline"
+    },
+    {
+      "type": "exercise",
+      "target": "movement-practice"
+    },
+    {
+      "type": "conversation",
+      "target": "movement-conversation"
+    },
+    {
+      "type": "reference",
+      "target": "master-movement"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "core",
+    "sequence": 2,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "v0.1 treats Movement as a distinct verb-function concept centered on displacement, direction and transition. Its boundaries remain intentionally permeable with spatial relations, timelines, sentence structure, questions and practical communication."
+  }
+}
