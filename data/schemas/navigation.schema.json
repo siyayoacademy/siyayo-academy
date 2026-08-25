@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "$id": "https://siyayo-academy.pages.dev/data/schemas/navigation.schema.json",
+
+  "title": "SIYAYO Academy Navigation Schema",
+
+  "description": "Validation schema for the concept-based circular navigation architecture of SIYAYO Academy.",
+
+  "type": "object",
+
+  "required": [
+    "version",
+    "home",
+    "ring",
+    "behavior"
+  ],
+
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+
+    "home": {
+      "type": "object",
+
+      "required": [
+        "id",
+        "label",
+        "role",
+        "url"
+      ],
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "url": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "ring": {
+      "type": "array",
+      "minItems": 1,
+
+      "items": {
+        "$ref": "#/$defs/navigationNode"
+      }
+    },
+
+    "behavior": {
+      "type": "object",
+
+      "required": [
+        "loop",
+        "autoRotate",
+        "centerActive",
+        "navigationMode"
+      ],
+
+      "properties": {
+        "loop": {
+          "type": "boolean"
+        },
+
+        "autoRotate": {
+          "type": "boolean"
+        },
+
+        "centerActive": {
+          "type": "boolean"
+        },
+
+        "navigationMode": {
+          "type": "string",
+          "enum": [
+            "concept"
+          ]
+        }
+      },
+
+      "additionalProperties": false
+    }
+  },
+
+  "$defs": {
+    "navigationNode": {
+      "type": "object",
+
+      "required": [
+        "id",
+        "type",
+        "role",
+        "label",
+        "target"
+      ],
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 1
+        },
+
+        "type": {
+          "type": "string",
+          "enum": [
+            "hub",
+            "index",
+            "visual-index"
+          ]
+        },
+
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "label": {
+          "$ref": "#/$defs/multilingualLabel"
+        },
+
+        "target": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 1
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "multilingualLabel": {
+      "type": "object",
+
+      "required": [
+        "en",
+        "es",
+        "pt"
+      ],
+
+      "properties": {
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "es": {
+          "type": "string",
+          "minLength": 1
+        },
+
+        "pt": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+
+      "additionalProperties": false
+    }
+  },
+
+  "additionalProperties": false
+}
