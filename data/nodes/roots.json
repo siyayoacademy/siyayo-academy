@@ -1,0 +1,92 @@
+{
+  "$schema": "../schemas/node.schema.json",
+
+  "version": "0.1.0",
+
+  "id": "roots",
+
+  "type": "hub",
+
+  "role": "foundation",
+
+  "label": {
+    "en": "ROOTS",
+    "es": "RAÍCES",
+    "pt": "RAÍZES"
+  },
+
+  "description": {
+    "en": "Foundational structures that support sentence construction and connect the kinds of words in the SIYAYO Academy learning network.",
+    "es": "Estructuras fundamentales que sostienen la construcción de oraciones y conectan los tipos de palabras en la red de aprendizaje de SIYAYO Academy.",
+    "pt": "Estruturas fundamentais que sustentam a construção das orações e conectam os tipos de palavras na rede de aprendizagem da SIYAYO Academy."
+  },
+
+  "relations": [
+    {
+      "type": "child",
+      "target": "sentence-order"
+    },
+    {
+      "type": "child",
+      "target": "subject"
+    },
+    {
+      "type": "child",
+      "target": "auxiliaries"
+    },
+    {
+      "type": "child",
+      "target": "question-words"
+    },
+    {
+      "type": "child",
+      "target": "verbs"
+    },
+
+    {
+      "type": "related",
+      "target": "words"
+    },
+    {
+      "type": "related",
+      "target": "questions"
+    },
+    {
+      "type": "related",
+      "target": "tools"
+    },
+
+    {
+      "type": "supports",
+      "target": "practice"
+    }
+  ],
+
+  "representations": [
+    {
+      "type": "visual-index",
+      "target": "tree-roots"
+    },
+    {
+      "type": "smart-slide",
+      "target": "roots-introduction"
+    },
+    {
+      "type": "reference",
+      "target": "master-foundations"
+    }
+  ],
+
+  "pedagogy": {
+    "level": "foundation",
+    "sequence": 0,
+    "speechEnabled": true,
+    "interactive": true
+  },
+
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE - KIND OF WORDS Master",
+    "notes": "Foundation hub for sentence structure, auxiliaries, question formation and connections between the kinds of words."
+  }
+}
