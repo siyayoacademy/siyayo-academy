@@ -5,120 +5,124 @@
 
   "title": "SIYAYO Academy Verb Schema",
 
-  "description": "Schema for lexical verbs used by the SIYAYO Academy Built-in Actions system.",
+  "description": "Schema for lexical verb corpora used by the SIYAYO Academy Built-in Actions system.",
 
-  "type": "object",
+  "type": "array",
 
-  "required": [
-    "id",
-    "lemma",
-    "translations",
-    "verbClass"
-  ],
+  "items": {
+    "type": "object",
 
-  "properties": {
+    "required": [
+      "id",
+      "lemma",
+      "translations",
+      "verbClass"
+    ],
 
-    "id": {
-      "type": "string",
-      "description": "Unique identifier for the verb."
-    },
+    "properties": {
 
-    "lemma": {
-      "type": "string",
-      "description": "Base form of the English verb."
-    },
-
-    "translations": {
-      "type": "object",
-
-      "required": [
-        "en",
-        "es",
-        "pt"
-      ],
-
-      "properties": {
-
-        "en": {
-          "type": "string"
-        },
-
-        "es": {
-          "type": "string"
-        },
-
-        "pt": {
-          "type": "string"
-        }
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the verb."
       },
 
-      "additionalProperties": false
-    },
+      "lemma": {
+        "type": "string",
+        "description": "Base form of the English verb."
+      },
 
-    "verbClass": {
-      "type": "array",
+      "translations": {
+        "type": "object",
 
-      "items": {
+        "required": [
+          "en",
+          "es",
+          "pt"
+        ],
+
+        "properties": {
+
+          "en": {
+            "type": "string"
+          },
+
+          "es": {
+            "type": "string"
+          },
+
+          "pt": {
+            "type": "string"
+          }
+        },
+
+        "additionalProperties": false
+      },
+
+      "verbClass": {
+        "type": "array",
+
+        "items": {
+          "type": "string",
+          "enum": [
+            "quality",
+            "state",
+            "movement",
+            "existential",
+            "routine",
+            "modal",
+            "conditional",
+            "action"
+          ]
+        },
+
+        "minItems": 1,
+        "uniqueItems": true
+      },
+
+      "regularity": {
         "type": "string",
         "enum": [
-          "quality",
-          "state",
-          "movement",
-          "existential",
-          "routine",
-          "modal",
-          "conditional",
-          "action"
+          "regular",
+          "irregular"
         ]
       },
 
-      "minItems": 1,
-      "uniqueItems": true
-    },
+      "forms": {
+        "type": "object",
 
-    "regularity": {
-      "type": "string",
-      "enum": [
-        "regular",
-        "irregular"
-      ]
-    },
+        "properties": {
 
-    "forms": {
-      "type": "object",
+          "thirdPersonSingular": {
+            "type": "string"
+          },
 
-      "properties": {
+          "past": {
+            "type": "string"
+          },
 
-        "thirdPersonSingular": {
-          "type": "string"
+          "pastParticiple": {
+            "type": "string"
+          },
+
+          "gerund": {
+            "type": "string"
+          }
         },
 
-        "past": {
-          "type": "string"
-        },
-
-        "pastParticiple": {
-          "type": "string"
-        },
-
-        "gerund": {
-          "type": "string"
-        }
+        "additionalProperties": false
       },
 
-      "additionalProperties": false
+      "tags": {
+        "type": "array",
+
+        "items": {
+          "type": "string"
+        },
+
+        "uniqueItems": true
+      }
     },
 
-    "tags": {
-      "type": "array",
-
-      "items": {
-        "type": "string"
-      },
-
-      "uniqueItems": true
-    }
-  },
-
-  "additionalProperties": false
+    "additionalProperties": false
+  }
 }
