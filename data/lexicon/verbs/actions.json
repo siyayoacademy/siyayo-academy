@@ -2,133 +2,191 @@
   {
     "id": "work",
     "lemma": "work",
-    "translations": {
-      "en": "work",
-      "es": "trabajar",
-      "pt": "trabalhar"
-    },
-    "verbFunction": [
-      "action"
-    ],
-    "verbClass": [
-      "routine"
-    ],
+    "translations": { "en": "work", "es": "trabajar", "pt": "trabalhar" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
     "regularity": "regular",
-    "forms": {
-      "thirdPersonSingular": "works",
-      "past": "worked",
-      "pastParticiple": "worked",
-      "gerund": "working"
-    },
-    "tags": [
-      "daily-life",
-      "work"
-    ]
+    "forms": { "thirdPersonSingular": "works", "past": "worked", "pastParticiple": "worked", "gerund": "working" },
+    "tags": ["daily-life", "work"]
   },
-
   {
     "id": "study",
     "lemma": "study",
-    "translations": {
-      "en": "study",
-      "es": "estudiar",
-      "pt": "estudar"
-    },
-    "verbFunction": [
-      "action"
-    ],
-    "verbClass": [
-      "routine"
-    ],
+    "translations": { "en": "study", "es": "estudiar", "pt": "estudar" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
     "regularity": "regular",
-    "forms": {
-      "thirdPersonSingular": "studies",
-      "past": "studied",
-      "pastParticiple": "studied",
-      "gerund": "studying"
-    },
-    "tags": [
-      "education",
-      "daily-life"
-    ]
+    "forms": { "thirdPersonSingular": "studies", "past": "studied", "pastParticiple": "studied", "gerund": "studying" },
+    "tags": ["education", "daily-life"]
   },
-
   {
     "id": "play",
     "lemma": "play",
-    "translations": {
-      "en": "play",
-      "es": "jugar",
-      "pt": "jogar"
-    },
-    "verbFunction": [
-      "action"
-    ],
-    "verbClass": [
-      "routine"
-    ],
+    "translations": { "en": "play", "es": "jugar", "pt": "jogar" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
     "regularity": "regular",
-    "forms": {
-      "thirdPersonSingular": "plays",
-      "past": "played",
-      "pastParticiple": "played",
-      "gerund": "playing"
-    },
-    "tags": [
-      "leisure",
-      "daily-life"
-    ]
+    "forms": { "thirdPersonSingular": "plays", "past": "played", "pastParticiple": "played", "gerund": "playing" },
+    "tags": ["leisure", "daily-life"]
   },
-
   {
     "id": "walk",
     "lemma": "walk",
-    "translations": {
-      "en": "walk",
-      "es": "caminar",
-      "pt": "caminhar"
-    },
-    "verbFunction": [
-      "action",
-      "movement"
-    ],
-    "verbClass": [
-      "routine"
-    ],
+    "translations": { "en": "walk", "es": "caminar", "pt": "caminhar" },
+    "verbFunction": ["action", "movement"],
+    "verbClass": ["routine"],
     "regularity": "regular",
-    "forms": {
-      "thirdPersonSingular": "walks",
-      "past": "walked",
-      "pastParticiple": "walked",
-      "gerund": "walking"
-    },
-    "tags": [
-      "movement",
-      "daily-life"
-    ]
+    "forms": { "thirdPersonSingular": "walks", "past": "walked", "pastParticiple": "walked", "gerund": "walking" },
+    "tags": ["movement", "daily-life"]
   },
-
   {
     "id": "talk",
     "lemma": "talk",
-    "translations": {
-      "en": "talk",
-      "es": "hablar",
-      "pt": "falar"
-    },
-    "verbFunction": [
-      "action"
-    ],
+    "translations": { "en": "talk", "es": "hablar", "pt": "falar" },
+    "verbFunction": ["action"],
     "regularity": "regular",
-    "forms": {
-      "thirdPersonSingular": "talks",
-      "past": "talked",
-      "pastParticiple": "talked",
-      "gerund": "talking"
-    },
-    "tags": [
-      "communication",
-      "daily-life"
-    ]
+    "forms": { "thirdPersonSingular": "talks", "past": "talked", "pastParticiple": "talked", "gerund": "talking" },
+    "tags": ["communication", "daily-life"]
+  },
+  {
+    "id": "eat",
+    "lemma": "eat",
+    "translations": { "en": "eat", "es": "comer", "pt": "comer" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "eats", "past": "ate", "pastParticiple": "eaten", "gerund": "eating" },
+    "tags": ["food", "daily-life"]
+  },
+  {
+    "id": "drink",
+    "lemma": "drink",
+    "translations": { "en": "drink", "es": "beber", "pt": "beber" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "drinks", "past": "drank", "pastParticiple": "drunk", "gerund": "drinking" },
+    "tags": ["food", "daily-life"]
+  },
+  {
+    "id": "sleep",
+    "lemma": "sleep",
+    "translations": { "en": "sleep", "es": "dormir", "pt": "dormir" },
+    "verbFunction": ["action", "state"],
+    "verbClass": ["routine"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "sleeps", "past": "slept", "pastParticiple": "slept", "gerund": "sleeping" },
+    "tags": ["rest", "daily-life"]
+  },
+  {
+    "id": "wake",
+    "lemma": "wake",
+    "translations": { "en": "wake", "es": "despertar", "pt": "acordar" },
+    "verbFunction": ["action", "state"],
+    "verbClass": ["routine"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "wakes", "past": "woke", "pastParticiple": "woken", "gerund": "waking" },
+    "tags": ["morning", "daily-life"]
+  },
+  {
+    "id": "read",
+    "lemma": "read",
+    "translations": { "en": "read", "es": "leer", "pt": "ler" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "reads", "past": "read", "pastParticiple": "read", "gerund": "reading" },
+    "tags": ["education", "communication"]
+  },
+  {
+    "id": "write",
+    "lemma": "write",
+    "translations": { "en": "write", "es": "escribir", "pt": "escrever" },
+    "verbFunction": ["action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "writes", "past": "wrote", "pastParticiple": "written", "gerund": "writing" },
+    "tags": ["education", "communication"]
+  },
+  {
+    "id": "listen",
+    "lemma": "listen",
+    "translations": { "en": "listen", "es": "escuchar", "pt": "escutar" },
+    "verbFunction": ["action"],
+    "regularity": "regular",
+    "forms": { "thirdPersonSingular": "listens", "past": "listened", "pastParticiple": "listened", "gerund": "listening" },
+    "tags": ["communication", "daily-life"]
+  },
+  {
+    "id": "speak",
+    "lemma": "speak",
+    "translations": { "en": "speak", "es": "hablar", "pt": "falar" },
+    "verbFunction": ["action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "speaks", "past": "spoke", "pastParticiple": "spoken", "gerund": "speaking" },
+    "tags": ["communication", "language"]
+  },
+  {
+    "id": "go",
+    "lemma": "go",
+    "translations": { "en": "go", "es": "ir", "pt": "ir" },
+    "verbFunction": ["movement", "action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "goes", "past": "went", "pastParticiple": "gone", "gerund": "going" },
+    "tags": ["movement", "daily-life"]
+  },
+  {
+    "id": "come",
+    "lemma": "come",
+    "translations": { "en": "come", "es": "venir", "pt": "vir" },
+    "verbFunction": ["movement", "action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "comes", "past": "came", "pastParticiple": "come", "gerund": "coming" },
+    "tags": ["movement", "daily-life"]
+  },
+  {
+    "id": "run",
+    "lemma": "run",
+    "translations": { "en": "run", "es": "correr", "pt": "correr" },
+    "verbFunction": ["movement", "action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "runs", "past": "ran", "pastParticiple": "run", "gerund": "running" },
+    "tags": ["movement", "daily-life"]
+  },
+  {
+    "id": "buy",
+    "lemma": "buy",
+    "translations": { "en": "buy", "es": "comprar", "pt": "comprar" },
+    "verbFunction": ["action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "buys", "past": "bought", "pastParticiple": "bought", "gerund": "buying" },
+    "tags": ["shopping", "daily-life"]
+  },
+  {
+    "id": "cook",
+    "lemma": "cook",
+    "translations": { "en": "cook", "es": "cocinar", "pt": "cozinhar" },
+    "verbFunction": ["action"],
+    "verbClass": ["routine"],
+    "regularity": "regular",
+    "forms": { "thirdPersonSingular": "cooks", "past": "cooked", "pastParticiple": "cooked", "gerund": "cooking" },
+    "tags": ["food", "daily-life"]
+  },
+  {
+    "id": "open",
+    "lemma": "open",
+    "translations": { "en": "open", "es": "abrir", "pt": "abrir" },
+    "verbFunction": ["action"],
+    "regularity": "regular",
+    "forms": { "thirdPersonSingular": "opens", "past": "opened", "pastParticiple": "opened", "gerund": "opening" },
+    "tags": ["daily-life", "interaction"]
+  },
+  {
+    "id": "close",
+    "lemma": "close",
+    "translations": { "en": "close", "es": "cerrar", "pt": "fechar" },
+    "verbFunction": ["action"],
+    "regularity": "regular",
+    "forms": { "thirdPersonSingular": "closes", "past": "closed", "pastParticiple": "closed", "gerund": "closing" },
+    "tags": ["daily-life", "interaction"]
   }
 ]
