@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIYAYO — Tri-Language Verb Explorer</title>
+  <link rel="stylesheet" href="css/verb-explorer.css">
+</head>
+<body>
+  <main class="verb-explorer" aria-labelledby="explorerTitle">
+    <header class="explorer-header">
+      <a class="home-link" href="index.html" aria-label="Return to SIYAYO Academy Home">🦁</a>
+      <div>
+        <p class="gold-kicker">SIYAYO ACADEMY · GOLD CONNECTION</p>
+        <h1 id="explorerTitle">Tri-Language Verb Explorer</h1>
+      </div>
+    </header>
+
+    <section class="concept-panel" aria-live="polite">
+      <div class="gold-node">
+        <span class="gold-label">CONCEPT</span>
+        <strong id="verbLemma">Loading…</strong>
+        <span id="verbMeta"></span>
+      </div>
+
+      <div class="language-branches">
+        <button class="language-card language-en" data-language="en" type="button">
+          <span>ENGLISH</span>
+          <strong id="wordEn"></strong>
+          <p id="exampleEn"></p>
+        </button>
+        <button class="language-card language-es" data-language="es" type="button">
+          <span>ESPAÑOL</span>
+          <strong id="wordEs"></strong>
+          <p id="exampleEs"></p>
+        </button>
+        <button class="language-card language-pt" data-language="pt" type="button">
+          <span>PORTUGUÊS</span>
+          <strong id="wordPt"></strong>
+          <p id="examplePt"></p>
+        </button>
+      </div>
+    </section>
+
+    <nav class="verb-controls" aria-label="Verb navigation">
+      <button id="previousVerb" type="button" aria-label="Previous verb">◀</button>
+      <span id="verbProgress">—</span>
+      <button id="nextVerb" type="button" aria-label="Next verb">▶</button>
+    </nav>
+
+    <div id="verbList" class="verb-list" aria-label="Choose a verb"></div>
+  </main>
+
+  <script src="js/verb-explorer.js"></script>
+</body>
+</html>
