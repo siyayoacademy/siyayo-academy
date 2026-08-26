@@ -4,26 +4,40 @@ body { margin: 0; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; 
 .explorer-header { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; }
 .home-link { display: grid; place-items: center; width: 58px; height: 58px; border: 1px solid #d7b35a; border-radius: 50%; text-decoration: none; font-size: 1.8rem; background: rgba(0,0,0,.35); }
 .gold-kicker { margin: 0 0 5px; color: #f2d88a; letter-spacing: .18em; font-size: .72rem; }
-h1 { margin: 0; font-size: clamp(1.55rem, 4vw, 2.7rem); }
+h1 { margin: 0; font-size: clamp(2.6rem, 4vw, 3rem); font-weight: 800; color: #f2d88a; text-shadow: 0 0 18px rgba(215,179,90,.18); }
 .concept-panel { padding: clamp(18px, 4vw, 36px); border: 1px solid rgba(242,216,138,.45); border-radius: 28px; background: rgba(3,14,34,.72); box-shadow: 0 24px 70px rgba(0,0,0,.55); }
 .gold-node { width: min(420px, 100%); margin: 0 auto 28px; padding: 20px; text-align: center; border: 2px solid #d7b35a; border-radius: 22px; }
-.gold-label { display: block; color: #f2d88a; font-size: .72rem; letter-spacing: .2em; }
-.gold-node strong { display: block; margin: 7px 0; font-size: clamp(2rem, 6vw, 3.6rem); text-transform: uppercase; }
-.gold-node #verbMeta { color: rgba(255,255,255,.72); font-size: .86rem; }
+.gold-label { display: block; color: #f2d88a; font-size: 1rem; font-weight: 700; letter-spacing: .2em; }
+.gold-node strong { display: block; margin: 7px 0; font-size: clamp(3rem, 6vw, 3.6rem); font-weight: 800; font-style: italic; color: #f5c542; text-transform: uppercase; }
+.gold-node #verbMeta { color: #f2d88a; font-size: 1.15rem; font-weight: 700; }
 .language-branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.language-card { min-height: 210px; padding: 20px; border-radius: 20px; color: white; background: rgba(0,0,0,.24); text-align: left; cursor: pointer; transition: transform 180ms ease; }
+.language-card { min-height: 210px; padding: 20px; border-radius: 20px; color: white; background: rgba(0,0,0,.24); text-align: center; cursor: pointer; transition: transform 180ms ease; }
 .language-card:hover, .language-card:focus-visible { transform: translateY(-3px); outline: none; }
-.language-card span { display: block; font-size: .72rem; letter-spacing: .18em; margin-bottom: 12px; }
-.language-card strong { display: block; font-size: 1.55rem; margin-bottom: 18px; }
-.language-card p { margin: 0; line-height: 1.55; color: rgba(255,255,255,.9); }
+.language-card span { display: block; font-size: 1.08rem; font-weight: 700; letter-spacing: .18em; margin-bottom: 12px; }
+.language-card strong { display: block; font-size: 2rem; font-weight: 700; font-style: italic; margin-bottom: 18px; }
+.language-card p { margin: 0; line-height: 1.5; font-size: 1.7rem; font-weight: 600; font-style: italic; color: rgba(255,255,255,.94); text-align: center; }
+.language-card .target-word { color: #f5c542; font-weight: 800; font-style: italic; }
 .language-en { border: 2px solid #43c66f; }
+.language-en span, .language-en strong { color: #65e58b; }
 .language-es { border: 2px solid #4b8fe8; }
+.language-es span, .language-es strong { color: #63a7f5; }
 .language-pt { border: 2px solid #fff; }
+.language-pt span, .language-pt strong { color: #fff; }
 .verb-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 24px 0; }
 .verb-controls button, .verb-list button { border: 1px solid rgba(242,216,138,.5); border-radius: 999px; background: rgba(3,14,34,.72); color: white; cursor: pointer; }
 .verb-controls button { width: 48px; height: 48px; }
-#verbProgress { color: #f2d88a; min-width: 70px; text-align: center; }
+#verbProgress { color: #f2d88a; min-width: 70px; text-align: center; font-size: 1.15rem; font-weight: 700; }
 .verb-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
-.verb-list button { padding: 9px 14px; }
-.verb-list button.active { border-color: #d7b35a; color: #f2d88a; }
-@media (max-width: 720px) { .language-branches { grid-template-columns: 1fr; } .language-card { min-height: 150px; } .explorer-header { align-items: flex-start; } }
+.verb-list button { padding: 9px 14px; font-size: .95rem; }
+.verb-list button.active { border-color: #d7b35a; color: #f5c542; font-weight: 700; box-shadow: 0 0 14px rgba(215,179,90,.18); }
+@media (max-width: 720px) {
+  .verb-explorer { width: min(94vw, 620px); padding-top: 14px; }
+  .language-branches { grid-template-columns: 1fr; }
+  .language-card { min-height: 170px; padding: 24px 18px; }
+  .language-card p { font-size: clamp(1.3rem, 5.4vw, 1.5rem); }
+  .language-card strong { font-size: clamp(1.75rem, 7vw, 2rem); }
+  .language-card span { font-size: clamp(.92rem, 3.8vw, 1.05rem); }
+  .explorer-header { align-items: center; }
+  h1 { font-size: clamp(1.5rem, 6.5vw, 1.75rem); }
+  .gold-node strong { font-size: clamp(2.4rem, 11vw, 3rem); }
+}
