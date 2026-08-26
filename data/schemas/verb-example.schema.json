@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verb-example.schema.json",
+  "title": "SIYAYO Academy Verb Example Schema",
+  "description": "Schema for trilingual examples linked to SIYAYO Academy lexical verbs.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "verb",
+      "examples"
+    ],
+    "properties": {
+      "verb": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Identifier of the lexical verb referenced by this example unit."
+      },
+      "examples": {
+        "type": "object",
+        "required": [
+          "en",
+          "es",
+          "pt"
+        ],
+        "properties": {
+          "en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "es": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pt": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  }
+}
