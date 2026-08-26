@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verb-sentence-forms.schema.json",
+  "title": "SIYAYO Academy Verb Sentence Forms Schema",
+  "description": "Schema for trilingual affirmative, negative and interrogative sentence forms linked to lexical verbs.",
+  "type": "object",
+  "required": ["$schema", "items"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "../../schemas/verb-sentence-forms.schema.json"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["verb", "tense", "forms"],
+        "properties": {
+          "verb": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tense": {
+            "type": "string",
+            "enum": ["present", "past", "future", "present-period", "past-period", "future-period"]
+          },
+          "forms": {
+            "type": "object",
+            "required": ["affirmative", "negative", "interrogative"],
+            "properties": {
+              "affirmative": { "$ref": "#/$defs/formUnit" },
+              "negative": { "$ref": "#/$defs/formUnit" },
+              "interrogative": { "$ref": "#/$defs/formUnit" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "formUnit": {
+      "type": "object",
+      "required": ["sentences", "targetWords"],
+      "properties": {
+        "sentences": { "$ref": "#/$defs/trilingualText" },
+        "targetWords": { "$ref": "#/$defs/trilingualText" }
+      },
+      "additionalProperties": false
+    },
+    "trilingualText": {
+      "type": "object",
+      "required": ["en", "es", "pt"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "es": { "type": "string", "minLength": 1 },
+        "pt": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
