@@ -1,162 +1,25 @@
-[
-  {
-    "verb": "work",
-    "examples": {
-      "en": "I work every day.",
-      "es": "Yo trabajo todos los días.",
-      "pt": "Eu trabalho todos os dias."
-    }
-  },
-  {
-    "verb": "study",
-    "examples": {
-      "en": "I study English every day.",
-      "es": "Yo estudio inglés todos los días.",
-      "pt": "Eu estudo inglês todos os dias."
-    }
-  },
-  {
-    "verb": "play",
-    "examples": {
-      "en": "The children play in the park.",
-      "es": "Los niños juegan en el parque.",
-      "pt": "As crianças brincam no parque."
-    }
-  },
-  {
-    "verb": "walk",
-    "examples": {
-      "en": "We walk to school.",
-      "es": "Caminamos a la escuela.",
-      "pt": "Caminhamos até a escola."
-    }
-  },
-  {
-    "verb": "talk",
-    "examples": {
-      "en": "They talk every morning.",
-      "es": "Ellos hablan todas las mañanas.",
-      "pt": "Eles conversam todas as manhãs."
-    }
-  },
-  {
-    "verb": "eat",
-    "examples": {
-      "en": "We eat breakfast together.",
-      "es": "Desayunamos juntos.",
-      "pt": "Tomamos café da manhã juntos."
-    }
-  },
-  {
-    "verb": "drink",
-    "examples": {
-      "en": "She drinks water in the morning.",
-      "es": "Ella bebe agua por la mañana.",
-      "pt": "Ela bebe água pela manhã."
-    }
-  },
-  {
-    "verb": "sleep",
-    "examples": {
-      "en": "The baby sleeps at night.",
-      "es": "El bebé duerme por la noche.",
-      "pt": "O bebê dorme à noite."
-    }
-  },
-  {
-    "verb": "wake",
-    "examples": {
-      "en": "I wake up early.",
-      "es": "Me despierto temprano.",
-      "pt": "Eu acordo cedo."
-    }
-  },
-  {
-    "verb": "read",
-    "examples": {
-      "en": "She reads a book every night.",
-      "es": "Ella lee un libro todas las noches.",
-      "pt": "Ela lê um livro todas as noites."
-    }
-  },
-  {
-    "verb": "write",
-    "examples": {
-      "en": "He writes a message.",
-      "es": "Él escribe un mensaje.",
-      "pt": "Ele escreve uma mensagem."
-    }
-  },
-  {
-    "verb": "listen",
-    "examples": {
-      "en": "We listen to music.",
-      "es": "Escuchamos música.",
-      "pt": "Escutamos música."
-    }
-  },
-  {
-    "verb": "speak",
-    "examples": {
-      "en": "They speak three languages.",
-      "es": "Ellos hablan tres idiomas.",
-      "pt": "Eles falam três idiomas."
-    }
-  },
-  {
-    "verb": "go",
-    "examples": {
-      "en": "I go to work by bus.",
-      "es": "Voy al trabajo en autobús.",
-      "pt": "Eu vou ao trabalho de ônibus."
-    }
-  },
-  {
-    "verb": "come",
-    "examples": {
-      "en": "She comes home in the evening.",
-      "es": "Ella viene a casa por la tarde.",
-      "pt": "Ela vem para casa à tarde."
-    }
-  },
-  {
-    "verb": "run",
-    "examples": {
-      "en": "He runs in the park.",
-      "es": "Él corre en el parque.",
-      "pt": "Ele corre no parque."
-    }
-  },
-  {
-    "verb": "buy",
-    "examples": {
-      "en": "We buy fresh fruit at the market.",
-      "es": "Compramos fruta fresca en el mercado.",
-      "pt": "Compramos frutas frescas no mercado."
-    }
-  },
-  {
-    "verb": "cook",
-    "examples": {
-      "en": "I cook dinner at home.",
-      "es": "Cocino la cena en casa.",
-      "pt": "Eu preparo o jantar em casa."
-    }
-  },
-  {
-    "verb": "open",
-    "examples": {
-      "en": "Please open the window.",
-      "es": "Por favor, abre la ventana.",
-      "pt": "Por favor, abra a janela."
-    }
-  },
-  {
-    "verb": "close",
-    "examples": {
-      "en": "Please close the door.",
-      "es": "Por favor, cierra la puerta.",
-      "pt": "Por favor, feche a porta."
-    }
-  }
-]
+{
+  "$schema": "../../schemas/verb-example.schema.json",
+  "items": [
+    { "verb": "work", "examples": { "en": "I work every day.", "es": "Yo trabajo todos los días.", "pt": "Eu trabalho todos os dias." } },
+    { "verb": "study", "examples": { "en": "I study English every day.", "es": "Yo estudio inglés todos los días.", "pt": "Eu estudo inglês todos os dias." } },
+    { "verb": "play", "examples": { "en": "The children play in the park.", "es": "Los niños juegan en el parque.", "pt": "As crianças brincam no parque." } },
+    { "verb": "walk", "examples": { "en": "We walk to school.", "es": "Caminamos a la escuela.", "pt": "Caminhamos até a escola." } },
+    { "verb": "talk", "examples": { "en": "They talk every morning.", "es": "Ellos hablan todas las mañanas.", "pt": "Eles conversam todas as manhãs." } },
+    { "verb": "eat", "examples": { "en": "We eat breakfast together.", "es": "Desayunamos juntos.", "pt": "Tomamos café da manhã juntos." } },
+    { "verb": "drink", "examples": { "en": "She drinks water in the morning.", "es": "Ella bebe agua por la mañana.", "pt": "Ela bebe água pela manhã." } },
+    { "verb": "sleep", "examples": { "en": "The baby sleeps at night.", "es": "El bebé duerme por la noche.", "pt": "O bebê dorme à noite." } },
+    { "verb": "wake", "examples": { "en": "I wake up early.", "es": "Me despierto temprano.", "pt": "Eu acordo cedo." } },
+    { "verb": "read", "examples": { "en": "She reads a book every night.", "es": "Ella lee un libro todas las noches.", "pt": "Ela lê um livro todas as noites." } },
+    { "verb": "write", "examples": { "en": "He writes a message.", "es": "Él escribe un mensaje.", "pt": "Ele escreve uma mensagem." } },
+    { "verb": "listen", "examples": { "en": "We listen to music.", "es": "Escuchamos música.", "pt": "Escutamos música." } },
+    { "verb": "speak", "examples": { "en": "They speak three languages.", "es": "Ellos hablan tres idiomas.", "pt": "Eles falam três idiomas." } },
+    { "verb": "go", "examples": { "en": "I go to work by bus.", "es": "Voy al trabajo en autobús.", "pt": "Eu vou ao trabalho de ônibus." } },
+    { "verb": "come", "examples": { "en": "She comes home in the evening.", "es": "Ella viene a casa por la tarde.", "pt": "Ela vem para casa à tarde." } },
+    { "verb": "run", "examples": { "en": "He runs in the park.", "es": "Él corre en el parque.", "pt": "Ele corre no parque." } },
+    { "verb": "buy", "examples": { "en": "We buy fresh fruit at the market.", "es": "Compramos fruta fresca en el mercado.", "pt": "Compramos frutas frescas no mercado." } },
+    { "verb": "cook", "examples": { "en": "I cook dinner at home.", "es": "Cocino la cena en casa.", "pt": "Eu preparo o jantar em casa." } },
+    { "verb": "open", "examples": { "en": "Please open the window.", "es": "Por favor, abre la ventana.", "pt": "Por favor, abra a janela." } },
+    { "verb": "close", "examples": { "en": "Please close the door.", "es": "Por favor, cierra la puerta.", "pt": "Por favor, feche a porta." } }
+  ]
+}
