@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "study",
+      "tense": "present",
+      "forms": {
+        "affirmative": { "sentences": { "en": "I study English every day.", "es": "Yo estudio inglés todos los días.", "pt": "Eu estudo inglês todos os dias." }, "targetWords": { "en": "study", "es": "estudio", "pt": "estudo" } },
+        "negative": { "sentences": { "en": "I do not study English every day.", "es": "Yo no estudio inglés todos los días.", "pt": "Eu não estudo inglês todos os dias." }, "targetWords": { "en": "study", "es": "estudio", "pt": "estudo" } },
+        "interrogative": { "sentences": { "en": "Do I study English every day?", "es": "¿Estudio yo inglés todos los días?", "pt": "Eu estudo inglês todos os dias?" }, "targetWords": { "en": "study", "es": "Estudio", "pt": "estudo" } }
+      }
+    },
+    {
+      "verb": "study",
+      "tense": "past",
+      "forms": {
+        "affirmative": { "sentences": { "en": "I studied English yesterday.", "es": "Yo estudié inglés ayer.", "pt": "Eu estudei inglês ontem." }, "targetWords": { "en": "studied", "es": "estudié", "pt": "estudei" } },
+        "negative": { "sentences": { "en": "I did not study English yesterday.", "es": "Yo no estudié inglés ayer.", "pt": "Eu não estudei inglês ontem." }, "targetWords": { "en": "study", "es": "estudié", "pt": "estudei" } },
+        "interrogative": { "sentences": { "en": "Did I study English yesterday?", "es": "¿Estudié yo inglés ayer?", "pt": "Eu estudei inglês ontem?" }, "targetWords": { "en": "study", "es": "Estudié", "pt": "estudei" } }
+      }
+    },
+    {
+      "verb": "study",
+      "tense": "future",
+      "forms": {
+        "affirmative": { "sentences": { "en": "I will study English tomorrow.", "es": "Yo estudiaré inglés mañana.", "pt": "Eu estudarei inglês amanhã." }, "targetWords": { "en": "study", "es": "estudiaré", "pt": "estudarei" } },
+        "negative": { "sentences": { "en": "I will not study English tomorrow.", "es": "Yo no estudiaré inglés mañana.", "pt": "Eu não estudarei inglês amanhã." }, "targetWords": { "en": "study", "es": "estudiaré", "pt": "estudarei" } },
+        "interrogative": { "sentences": { "en": "Will I study English tomorrow?", "es": "¿Estudiaré yo inglés mañana?", "pt": "Eu estudarei inglês amanhã?" }, "targetWords": { "en": "study", "es": "Estudiaré", "pt": "estudarei" } }
+      }
+    }
+  ]
+}
