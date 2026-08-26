@@ -4,10 +4,7 @@
   "title": "SIYAYO Academy Verb Example Corpus Schema",
   "description": "Schema for trilingual example corpora linked to SIYAYO Academy lexical verbs.",
   "type": "object",
-  "required": [
-    "$schema",
-    "items"
-  ],
+  "required": ["$schema", "items"],
   "properties": {
     "$schema": {
       "type": "string",
@@ -17,10 +14,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "verb",
-          "examples"
-        ],
+        "required": ["verb", "examples", "targetWords"],
         "properties": {
           "verb": {
             "type": "string",
@@ -29,24 +23,21 @@
           },
           "examples": {
             "type": "object",
-            "required": [
-              "en",
-              "es",
-              "pt"
-            ],
+            "required": ["en", "es", "pt"],
             "properties": {
-              "en": {
-                "type": "string",
-                "minLength": 1
-              },
-              "es": {
-                "type": "string",
-                "minLength": 1
-              },
-              "pt": {
-                "type": "string",
-                "minLength": 1
-              }
+              "en": { "type": "string", "minLength": 1 },
+              "es": { "type": "string", "minLength": 1 },
+              "pt": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          },
+          "targetWords": {
+            "type": "object",
+            "required": ["en", "es", "pt"],
+            "properties": {
+              "en": { "type": "string", "minLength": 1 },
+              "es": { "type": "string", "minLength": 1 },
+              "pt": { "type": "string", "minLength": 1 }
             },
             "additionalProperties": false
           }
