@@ -14,16 +14,19 @@ h1 { margin: 0; font-size: clamp(2.2rem, 3.5vw, 2.65rem); font-weight: 600; colo
 .language-branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .language-card { min-height: 210px; padding: 20px; border-radius: 20px; color: white; background: rgba(0,0,0,.24); text-align: center; cursor: pointer; transition: transform 180ms ease; }
 .language-card:hover, .language-card:focus-visible { transform: translateY(-3px); outline: none; }
-.language-card span { display: block; font-size: .86rem; font-weight: 700; letter-spacing: 0; margin-bottom: 8px; }
-.language-card strong { display: block; font-size: .86rem; font-weight: 800; font-style: italic; color: #f5c542 !important; margin-bottom: 18px; }
-.language-card p { margin: 0; line-height: 1.5; font-size: 1.7rem; font-weight: 600; font-style: italic; color: rgba(255,255,255,.94); text-align: center; }
-.language-card p .target-word { color: #f5c542 !important; font-weight: 800; font-style: italic; }
+.language-card > span { display: block; font-size: .86rem; font-weight: 700; letter-spacing: 0; margin-bottom: 8px; }
+.language-card > strong { display: block; font-size: .86rem; font-weight: 800; font-style: italic; color: #f5c542 !important; margin-bottom: 16px; }
+.language-card > p { margin: 0; padding-top: 18px; border-top: 1px solid currentColor; line-height: 1.5; font-size: 1.7rem; font-weight: 600; font-style: italic; color: rgba(255,255,255,.94); text-align: center; }
+.language-card > p .target-word { display: inline; font-size: inherit; line-height: inherit; color: #f5c542 !important; font-weight: 800; font-style: italic; }
 .language-en { border: 2px solid #43c66f; }
-.language-en span { color: #43c66f; }
+.language-en > span { color: #43c66f; }
+.language-en > p { border-top-color: rgba(67,198,111,.42); }
 .language-es { border: 2px solid #4b8fe8; }
-.language-es span { color: #4b8fe8; }
+.language-es > span { color: #4b8fe8; }
+.language-es > p { border-top-color: rgba(75,143,232,.42); }
 .language-pt { border: 2px solid #fff; }
-.language-pt span { color: #fff; }
+.language-pt > span { color: #fff; }
+.language-pt > p { border-top-color: rgba(255,255,255,.42); }
 .verb-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 24px 0; }
 .verb-controls button, .verb-list button { border: 1px solid rgba(242,216,138,.5); border-radius: 999px; background: rgba(3,14,34,.72); color: white; cursor: pointer; }
 .verb-controls button { width: 48px; height: 48px; }
@@ -37,9 +40,9 @@ h1 { margin: 0; font-size: clamp(2.2rem, 3.5vw, 2.65rem); font-weight: 600; colo
   .home-link { width: 52px; height: 52px; }
   .language-branches { grid-template-columns: 1fr; }
   .language-card { min-height: 170px; padding: 24px 18px; }
-  .language-card p { font-size: clamp(1.3rem, 5.4vw, 1.5rem); }
-  .language-card strong { font-size: clamp(.72rem, 3vw, .84rem); }
-  .language-card span { font-size: clamp(.72rem, 3vw, .84rem); letter-spacing: 0; }
+  .language-card > p { font-size: clamp(1.3rem, 5.4vw, 1.5rem); padding-top: 16px; }
+  .language-card > strong { font-size: clamp(.72rem, 3vw, .84rem); }
+  .language-card > span { font-size: clamp(.72rem, 3vw, .84rem); letter-spacing: 0; }
   h1 { font-size: clamp(1.35rem, 5.8vw, 1.6rem); font-weight: 600; }
   .gold-node strong { font-size: clamp(2rem, 8.8vw, 2.4rem); }
 }
