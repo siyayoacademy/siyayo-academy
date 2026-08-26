@@ -7,8 +7,10 @@
       "es": "trabajar",
       "pt": "trabalhar"
     },
+    "verbFunction": [
+      "action"
+    ],
     "verbClass": [
-      "action",
       "routine"
     ],
     "regularity": "regular",
@@ -32,8 +34,10 @@
       "es": "estudiar",
       "pt": "estudar"
     },
+    "verbFunction": [
+      "action"
+    ],
     "verbClass": [
-      "action",
       "routine"
     ],
     "regularity": "regular",
@@ -57,8 +61,10 @@
       "es": "jugar",
       "pt": "jogar"
     },
+    "verbFunction": [
+      "action"
+    ],
     "verbClass": [
-      "action",
       "routine"
     ],
     "regularity": "regular",
@@ -82,9 +88,11 @@
       "es": "caminar",
       "pt": "caminhar"
     },
-    "verbClass": [
+    "verbFunction": [
       "action",
-      "movement",
+      "movement"
+    ],
+    "verbClass": [
       "routine"
     ],
     "regularity": "regular",
@@ -108,7 +116,7 @@
       "es": "hablar",
       "pt": "falar"
     },
-    "verbClass": [
+    "verbFunction": [
       "action"
     ],
     "regularity": "regular",
