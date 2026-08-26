@@ -1,45 +1,59 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "verb-example.schema.json",
-  "title": "SIYAYO Academy Verb Example Schema",
-  "description": "Schema for trilingual examples linked to SIYAYO Academy lexical verbs.",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "required": [
-      "verb",
-      "examples"
-    ],
-    "properties": {
-      "verb": {
-        "type": "string",
-        "minLength": 1,
-        "description": "Identifier of the lexical verb referenced by this example unit."
-      },
-      "examples": {
+  "title": "SIYAYO Academy Verb Example Corpus Schema",
+  "description": "Schema for trilingual example corpora linked to SIYAYO Academy lexical verbs.",
+  "type": "object",
+  "required": [
+    "$schema",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "../../schemas/verb-example.schema.json"
+    },
+    "items": {
+      "type": "array",
+      "items": {
         "type": "object",
         "required": [
-          "en",
-          "es",
-          "pt"
+          "verb",
+          "examples"
         ],
         "properties": {
-          "en": {
+          "verb": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "description": "Identifier of the lexical verb referenced by this example unit."
           },
-          "es": {
-            "type": "string",
-            "minLength": 1
-          },
-          "pt": {
-            "type": "string",
-            "minLength": 1
+          "examples": {
+            "type": "object",
+            "required": [
+              "en",
+              "es",
+              "pt"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "es": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pt": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
           }
         },
         "additionalProperties": false
       }
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }
