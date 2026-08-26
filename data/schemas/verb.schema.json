@@ -16,7 +16,7 @@
       "id",
       "lemma",
       "translations",
-      "verbClass"
+      "verbFunction"
     ],
 
     "properties": {
@@ -58,7 +58,7 @@
         "additionalProperties": false
       },
 
-      "verbClass": {
+      "verbFunction": {
         "type": "array",
 
         "items": {
@@ -67,11 +67,24 @@
             "quality",
             "state",
             "movement",
-            "existential",
+            "action",
+            "existence"
+          ]
+        },
+
+        "minItems": 1,
+        "uniqueItems": true
+      },
+
+      "verbClass": {
+        "type": "array",
+
+        "items": {
+          "type": "string",
+          "enum": [
             "routine",
             "modal",
-            "conditional",
-            "action"
+            "conditional"
           ]
         },
 
