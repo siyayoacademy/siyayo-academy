@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+
+  "$id": "verb.schema.json",
+
+  "title": "SIYAYO Academy Verb Schema",
+
+  "description": "Schema for lexical verbs used by the SIYAYO Academy Built-in Actions system.",
+
+  "type": "object",
+
+  "required": [
+    "id",
+    "lemma",
+    "translations",
+    "verbClass"
+  ],
+
+  "properties": {
+
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the verb."
+    },
+
+    "lemma": {
+      "type": "string",
+      "description": "Base form of the English verb."
+    },
+
+    "translations": {
+      "type": "object",
+
+      "required": [
+        "en",
+        "es",
+        "pt"
+      ],
+
+      "properties": {
+
+        "en": {
+          "type": "string"
+        },
+
+        "es": {
+          "type": "string"
+        },
+
+        "pt": {
+          "type": "string"
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "verbClass": {
+      "type": "array",
+
+      "items": {
+        "type": "string",
+        "enum": [
+          "quality",
+          "state",
+          "movement",
+          "existential",
+          "routine",
+          "modal",
+          "conditional",
+          "action"
+        ]
+      },
+
+      "minItems": 1,
+      "uniqueItems": true
+    },
+
+    "regularity": {
+      "type": "string",
+      "enum": [
+        "regular",
+        "irregular"
+      ]
+    },
+
+    "forms": {
+      "type": "object",
+
+      "properties": {
+
+        "thirdPersonSingular": {
+          "type": "string"
+        },
+
+        "past": {
+          "type": "string"
+        },
+
+        "pastParticiple": {
+          "type": "string"
+        },
+
+        "gerund": {
+          "type": "string"
+        }
+      },
+
+      "additionalProperties": false
+    },
+
+    "tags": {
+      "type": "array",
+
+      "items": {
+        "type": "string"
+      },
+
+      "uniqueItems": true
+    }
+  },
+
+  "additionalProperties": false
+}
