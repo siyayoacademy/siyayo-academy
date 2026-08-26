@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "work",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I work every day.",
+            "es": "Yo trabajo todos los días.",
+            "pt": "Eu trabalho todos os dias."
+          },
+          "targetWords": {
+            "en": "work",
+            "es": "trabajo",
+            "pt": "trabalho"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not work every day.",
+            "es": "Yo no trabajo todos los días.",
+            "pt": "Eu não trabalho todos os dias."
+          },
+          "targetWords": {
+            "en": "work",
+            "es": "trabajo",
+            "pt": "trabalho"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do I work every day?",
+            "es": "¿Trabajo yo todos los días?",
+            "pt": "Eu trabalho todos os dias?"
+          },
+          "targetWords": {
+            "en": "work",
+            "es": "Trabajo",
+            "pt": "trabalho"
+          }
+        }
+      }
+    }
+  ]
+}
