@@ -25,20 +25,31 @@
 
       <div class="language-branches">
         <button class="language-card language-en" data-language="en" type="button">
-          <span>ENGLISH</span>
-          <strong id="wordEn"></strong>
-          <p id="exampleEn"></p>
+          <span>ENGLISH</span><strong id="wordEn"></strong><p id="exampleEn"></p>
         </button>
         <button class="language-card language-es" data-language="es" type="button">
-          <span>ESPAÑOL</span>
-          <strong id="wordEs"></strong>
-          <p id="exampleEs"></p>
+          <span>ESPAÑOL</span><strong id="wordEs"></strong><p id="exampleEs"></p>
         </button>
         <button class="language-card language-pt" data-language="pt" type="button">
-          <span>PORTUGUÊS</span>
-          <strong id="wordPt"></strong>
-          <p id="examplePt"></p>
+          <span>PORTUGUÊS</span><strong id="wordPt"></strong><p id="examplePt"></p>
         </button>
+      </div>
+    </section>
+
+    <section id="sentenceFormsPanel" class="sentence-forms-panel" hidden aria-labelledby="sentenceFormsTitle">
+      <div class="sentence-forms-heading">
+        <span class="gold-label">VERB · TENSE · FORM</span>
+        <h2 id="sentenceFormsTitle">WORK · PRESENT</h2>
+      </div>
+      <div class="form-tabs" role="tablist" aria-label="Sentence form">
+        <button class="form-tab active" type="button" data-form="affirmative">＋ AFFIRMATIVE</button>
+        <button class="form-tab" type="button" data-form="negative">− NEGATIVE</button>
+        <button class="form-tab" type="button" data-form="interrogative">？ INTERROGATIVE</button>
+      </div>
+      <div class="form-sentences">
+        <button class="form-sentence language-en" data-form-language="en" type="button"><span>ENGLISH</span><p id="formEn"></p></button>
+        <button class="form-sentence language-es" data-form-language="es" type="button"><span>ESPAÑOL</span><p id="formEs"></p></button>
+        <button class="form-sentence language-pt" data-form-language="pt" type="button"><span>PORTUGUÊS</span><p id="formPt"></p></button>
       </div>
     </section>
 
@@ -47,10 +58,8 @@
       <span id="verbProgress">—</span>
       <button id="nextVerb" type="button" aria-label="Next verb">▶</button>
     </nav>
-
     <div id="verbList" class="verb-list" aria-label="Choose a verb"></div>
   </main>
-
   <script src="js/verb-explorer.js"></script>
 </body>
 </html>
