@@ -1,0 +1,126 @@
+[
+  {
+    "id": "work",
+    "lemma": "work",
+    "translations": {
+      "en": "work",
+      "es": "trabajar",
+      "pt": "trabalhar"
+    },
+    "verbClass": [
+      "action",
+      "routine"
+    ],
+    "regularity": "regular",
+    "forms": {
+      "thirdPersonSingular": "works",
+      "past": "worked",
+      "pastParticiple": "worked",
+      "gerund": "working"
+    },
+    "tags": [
+      "daily-life",
+      "work"
+    ]
+  },
+
+  {
+    "id": "study",
+    "lemma": "study",
+    "translations": {
+      "en": "study",
+      "es": "estudiar",
+      "pt": "estudar"
+    },
+    "verbClass": [
+      "action",
+      "routine"
+    ],
+    "regularity": "regular",
+    "forms": {
+      "thirdPersonSingular": "studies",
+      "past": "studied",
+      "pastParticiple": "studied",
+      "gerund": "studying"
+    },
+    "tags": [
+      "education",
+      "daily-life"
+    ]
+  },
+
+  {
+    "id": "play",
+    "lemma": "play",
+    "translations": {
+      "en": "play",
+      "es": "jugar",
+      "pt": "jogar"
+    },
+    "verbClass": [
+      "action",
+      "routine"
+    ],
+    "regularity": "regular",
+    "forms": {
+      "thirdPersonSingular": "plays",
+      "past": "played",
+      "pastParticiple": "played",
+      "gerund": "playing"
+    },
+    "tags": [
+      "leisure",
+      "daily-life"
+    ]
+  },
+
+  {
+    "id": "walk",
+    "lemma": "walk",
+    "translations": {
+      "en": "walk",
+      "es": "caminar",
+      "pt": "caminhar"
+    },
+    "verbClass": [
+      "action",
+      "movement",
+      "routine"
+    ],
+    "regularity": "regular",
+    "forms": {
+      "thirdPersonSingular": "walks",
+      "past": "walked",
+      "pastParticiple": "walked",
+      "gerund": "walking"
+    },
+    "tags": [
+      "movement",
+      "daily-life"
+    ]
+  },
+
+  {
+    "id": "talk",
+    "lemma": "talk",
+    "translations": {
+      "en": "talk",
+      "es": "hablar",
+      "pt": "falar"
+    },
+    "verbClass": [
+      "action"
+    ],
+    "regularity": "regular",
+    "forms": {
+      "thirdPersonSingular": "talks",
+      "past": "talked",
+      "pastParticiple": "talked",
+      "gerund": "talking"
+    },
+    "tags": [
+      "communication",
+      "daily-life"
+    ]
+  }
+]
