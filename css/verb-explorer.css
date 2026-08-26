@@ -24,11 +24,14 @@ h1 { margin: 0; font-size: clamp(2.2rem, 3.5vw, 2.65rem); font-weight: 600; colo
 .language-pt { border:2px solid #fff; }.language-pt > span { color:#fff; }.language-pt > p { border-top-color:rgba(255,255,255,.42); }
 .sentence-forms-panel { margin-top:22px; }
 .sentence-forms-panel[hidden] { display:none; }
-.sentence-forms-heading { text-align:center; margin-bottom:20px; }
+.sentence-forms-heading { text-align:center; margin-bottom:16px; }
 .sentence-forms-heading h2 { margin:7px 0 0; color:#f5c542; font-size:clamp(1.55rem,3vw,2rem); font-style:italic; }
-.form-tabs { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-bottom:20px; }
-.form-tab { padding:10px 16px; border:1px solid rgba(215,179,90,.45); border-radius:999px; background:rgba(0,0,0,.24); color:rgba(255,255,255,.8); font-weight:700; cursor:pointer; }
-.form-tab.active { color:#f5c542; border-color:#d7b35a; box-shadow:0 0 16px rgba(215,179,90,.15); }
+.tense-tabs,.form-tabs { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
+.tense-tabs { margin: 0 auto 12px; }
+.form-tabs { margin-bottom:20px; }
+.tense-tab,.form-tab { padding:10px 16px; border:1px solid rgba(215,179,90,.45); border-radius:999px; background:rgba(0,0,0,.24); color:rgba(255,255,255,.8); font-weight:700; cursor:pointer; }
+.tense-tab { min-width:96px; color:#d7b35a; }
+.tense-tab.active,.form-tab.active { color:#f5c542; border-color:#d7b35a; box-shadow:0 0 16px rgba(215,179,90,.15); }
 .form-sentence { min-height:150px; }
 .verb-controls { display:flex; align-items:center; justify-content:center; gap:18px; margin:24px 0; }
 .verb-controls button,.verb-list button { border:1px solid rgba(242,216,138,.5); border-radius:999px; background:rgba(3,14,34,.72); color:white; cursor:pointer; }
@@ -36,5 +39,5 @@ h1 { margin: 0; font-size: clamp(2.2rem, 3.5vw, 2.65rem); font-weight: 600; colo
 #verbProgress { color:#d7b35a; min-width:70px; text-align:center; font-size:1.15rem; font-weight:700; }
 .verb-list { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; }.verb-list button { padding:9px 14px; font-size:.95rem; }.verb-list button.active { border-color:#d7b35a; color:#f5c542; font-weight:700; }
 @media(max-width:720px){
- .verb-explorer{width:min(94vw,620px);padding-top:14px}.explorer-header{grid-template-columns:52px 1fr 52px;gap:10px}.home-link{width:52px;height:52px}.language-branches,.form-sentences{grid-template-columns:1fr}.language-card{min-height:170px;padding:24px 18px}.form-sentence{min-height:130px;padding:20px 18px}.language-card>p,.form-sentence>p{font-size:clamp(1.3rem,5.4vw,1.5rem);padding-top:16px}.language-card>strong,.language-card>span,.form-sentence>span{font-size:clamp(.72rem,3vw,.84rem)}h1{font-size:clamp(1.35rem,5.8vw,1.6rem)}.gold-node strong{font-size:clamp(2rem,8.8vw,2.4rem)}.form-tabs{gap:7px}.form-tab{padding:9px 11px;font-size:.72rem}
+ .verb-explorer{width:min(94vw,620px);padding-top:14px}.explorer-header{grid-template-columns:52px 1fr 52px;gap:10px}.home-link{width:52px;height:52px}.language-branches,.form-sentences{grid-template-columns:1fr}.language-card{min-height:170px;padding:24px 18px}.form-sentence{min-height:130px;padding:20px 18px}.language-card>p,.form-sentence>p{font-size:clamp(1.3rem,5.4vw,1.5rem);padding-top:16px}.language-card>strong,.language-card>span,.form-sentence>span{font-size:clamp(.72rem,3vw,.84rem)}h1{font-size:clamp(1.35rem,5.8vw,1.6rem)}.gold-node strong{font-size:clamp(2rem,8.8vw,2.4rem)}.tense-tabs,.form-tabs{gap:7px}.tense-tab,.form-tab{padding:9px 11px;font-size:.72rem}.tense-tab{min-width:78px}
 }
