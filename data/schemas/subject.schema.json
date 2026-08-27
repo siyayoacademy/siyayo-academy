@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subject.schema.json",
+  "title": "SIYAYO Academy Grammatical Subject Schema",
+  "description": "Language-independent grammatical subject concepts with language-specific realizations. Language, script and speech locale remain separate dimensions so the model can grow beyond the initial Latin-script trilingual corpus.",
+  "type": "object",
+  "required": ["$schema", "version", "items"],
+  "properties": {
+    "$schema": { "type": "string", "const": "../../schemas/subject.schema.json" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/subject" }
+    }
+  },
+  "$defs": {
+    "subject": {
+      "type": "object",
+      "required": ["id", "role", "person", "number", "realizations"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "role": { "type": "string", "const": "subject" },
+        "person": { "type": "string", "enum": ["first", "second", "third"] },
+        "number": { "type": "string", "enum": ["singular", "plural"] },
+        "semanticGender": { "type": "string", "enum": ["masculine", "feminine", "neuter", "unspecified"] },
+        "realizations": {
+          "type": "object",
+          "required": ["en", "es", "pt"],
+          "properties": {
+            "en": { "$ref": "#/$defs/realization" },
+            "es": { "$ref": "#/$defs/realization" },
+            "pt": { "$ref": "#/$defs/realization" }
+          },
+          "additionalProperties": { "$ref": "#/$defs/realization" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "realization": {
+      "type": "object",
+      "required": ["display", "languageTag", "script", "speechLocale"],
+      "properties": {
+        "display": { "type": "string", "minLength": 1 },
+        "alternatives": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "languageTag": { "type": "string", "minLength": 2 },
+        "script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "speechLocale": { "type": "string", "minLength": 2 },
+        "register": { "type": "string", "enum": ["neutral", "informal", "formal", "regional"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
