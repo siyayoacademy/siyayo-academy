@@ -4,14 +4,25 @@
   "title": "SIYAYO Academy Verb Subject Forms Schema",
   "description": "Schema for crossing a lexical verb with tense, sentence form and grammatical subjects while preserving trilingual realizations.",
   "type": "object",
-  "required": ["$schema", "version", "verb", "tense", "form", "subjects"],
+  "required": ["$schema", "version", "verb", "tense", "forms"],
   "properties": {
     "$schema": { "type": "string", "const": "../../schemas/verb-subject-forms.schema.json" },
     "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
     "verb": { "type": "string", "minLength": 1 },
     "tense": { "type": "string", "enum": ["present", "past", "future", "present-period", "past-period", "future-period"] },
-    "form": { "type": "string", "enum": ["affirmative", "negative", "interrogative"] },
-    "subjects": {
+    "forms": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "affirmative": { "$ref": "#/$defs/subjectList" },
+        "negative": { "$ref": "#/$defs/subjectList" },
+        "interrogative": { "$ref": "#/$defs/subjectList" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "subjectList": {
       "type": "array",
       "minItems": 1,
       "items": {
@@ -24,9 +35,7 @@
         },
         "additionalProperties": false
       }
-    }
-  },
-  "$defs": {
+    },
     "trilingualText": {
       "type": "object",
       "required": ["en", "es", "pt"],
