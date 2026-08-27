@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "write",
+  "tenses": {
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I write every day.","es":"Yo escribo todos los días.","pt":"Eu escrevo todos os dias."},"targetWords":{"en":"write","es":"escribo","pt":"escrevo"}},
+        {"subject":"second-singular","sentences":{"en":"You write every day.","es":"Tú escribes todos los días.","pt":"Você escreve todos os dias."},"targetWords":{"en":"write","es":"escribes","pt":"escreve"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He writes every day.","es":"Él escribe todos los días.","pt":"Ele escreve todos os dias."},"targetWords":{"en":"writes","es":"escribe","pt":"escreve"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She writes every day.","es":"Ella escribe todos los días.","pt":"Ela escreve todos os dias."},"targetWords":{"en":"writes","es":"escribe","pt":"escreve"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It writes the data to memory every day.","es":"Escribe los datos en la memoria todos los días.","pt":"Grava os dados na memória todos os dias."},"targetWords":{"en":"writes","es":"Escribe","pt":"Grava"}},
+        {"subject":"first-plural","sentences":{"en":"We write every day.","es":"Nosotros escribimos todos los días.","pt":"Nós escrevemos todos os dias."},"targetWords":{"en":"write","es":"escribimos","pt":"escrevemos"}},
+        {"subject":"second-plural","sentences":{"en":"You write every day.","es":"Ustedes escriben todos los días.","pt":"Vocês escrevem todos os dias."},"targetWords":{"en":"write","es":"escriben","pt":"escrevem"}},
+        {"subject":"third-plural","sentences":{"en":"They write every day.","es":"Ellos escriben todos los días.","pt":"Eles escrevem todos os dias."},"targetWords":{"en":"write","es":"escriben","pt":"escrevem"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not write every day.","es":"Yo no escribo todos los días.","pt":"Eu não escrevo todos os dias."},"targetWords":{"en":"write","es":"escribo","pt":"escrevo"}},
+        {"subject":"second-singular","sentences":{"en":"You do not write every day.","es":"Tú no escribes todos los días.","pt":"Você não escreve todos os dias."},"targetWords":{"en":"write","es":"escribes","pt":"escreve"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not write every day.","es":"Él no escribe todos los días.","pt":"Ele não escreve todos os dias."},"targetWords":{"en":"write","es":"escribe","pt":"escreve"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not write every day.","es":"Ella no escribe todos los días.","pt":"Ela não escreve todos os dias."},"targetWords":{"en":"write","es":"escribe","pt":"escreve"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not write the data to memory every day.","es":"No escribe los datos en la memoria todos los días.","pt":"Não grava os dados na memória todos os dias."},"targetWords":{"en":"write","es":"escribe","pt":"grava"}},
+        {"subject":"first-plural","sentences":{"en":"We do not write every day.","es":"Nosotros no escribimos todos los días.","pt":"Nós não escrevemos todos os dias."},"targetWords":{"en":"write","es":"escribimos","pt":"escrevemos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not write every day.","es":"Ustedes no escriben todos los días.","pt":"Vocês não escrevem todos os dias."},"targetWords":{"en":"write","es":"escriben","pt":"escrevem"}},
+        {"subject":"third-plural","sentences":{"en":"They do not write every day.","es":"Ellos no escriben todos los días.","pt":"Eles não escrevem todos os dias."},"targetWords":{"en":"write","es":"escriben","pt":"escrevem"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I write every day?","es":"¿Escribo yo todos los días?","pt":"Eu escrevo todos os dias?"},"targetWords":{"en":"write","es":"Escribo","pt":"escrevo"}},
+        {"subject":"second-singular","sentences":{"en":"Do you write every day?","es":"¿Escribes tú todos los días?","pt":"Você escreve todos os dias?"},"targetWords":{"en":"write","es":"Escribes","pt":"escreve"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he write every day?","es":"¿Escribe él todos los días?","pt":"Ele escreve todos os dias?"},"targetWords":{"en":"write","es":"Escribe","pt":"escreve"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she write every day?","es":"¿Escribe ella todos los días?","pt":"Ela escreve todos os dias?"},"targetWords":{"en":"write","es":"Escribe","pt":"escreve"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it write the data to memory every day?","es":"¿Escribe los datos en la memoria todos los días?","pt":"Grava os dados na memória todos os dias?"},"targetWords":{"en":"write","es":"Escribe","pt":"Grava"}},
+        {"subject":"first-plural","sentences":{"en":"Do we write every day?","es":"¿Escribimos nosotros todos los días?","pt":"Nós escrevemos todos os dias?"},"targetWords":{"en":"write","es":"Escribimos","pt":"escrevemos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you write every day?","es":"¿Escriben ustedes todos los días?","pt":"Vocês escrevem todos os dias?"},"targetWords":{"en":"write","es":"Escriben","pt":"escrevem"}},
+        {"subject":"third-plural","sentences":{"en":"Do they write every day?","es":"¿Escriben ellos todos los días?","pt":"Eles escrevem todos os dias?"},"targetWords":{"en":"write","es":"Escriben","pt":"escrevem"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I wrote yesterday.","es":"Yo escribí ayer.","pt":"Eu escrevi ontem."},"targetWords":{"en":"wrote","es":"escribí","pt":"escrevi"}},
+        {"subject":"second-singular","sentences":{"en":"You wrote yesterday.","es":"Tú escribiste ayer.","pt":"Você escreveu ontem."},"targetWords":{"en":"wrote","es":"escribiste","pt":"escreveu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He wrote yesterday.","es":"Él escribió ayer.","pt":"Ele escreveu ontem."},"targetWords":{"en":"wrote","es":"escribió","pt":"escreveu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She wrote yesterday.","es":"Ella escribió ayer.","pt":"Ela escreveu ontem."},"targetWords":{"en":"wrote","es":"escribió","pt":"escreveu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It wrote the data to memory yesterday.","es":"Escribió los datos en la memoria ayer.","pt":"Gravou os dados na memória ontem."},"targetWords":{"en":"wrote","es":"Escribió","pt":"Gravou"}},
+        {"subject":"first-plural","sentences":{"en":"We wrote yesterday.","es":"Nosotros escribimos ayer.","pt":"Nós escrevemos ontem."},"targetWords":{"en":"wrote","es":"escribimos","pt":"escrevemos"}},
+        {"subject":"second-plural","sentences":{"en":"You wrote yesterday.","es":"Ustedes escribieron ayer.","pt":"Vocês escreveram ontem."},"targetWords":{"en":"wrote","es":"escribieron","pt":"escreveram"}},
+        {"subject":"third-plural","sentences":{"en":"They wrote yesterday.","es":"Ellos escribieron ayer.","pt":"Eles escreveram ontem."},"targetWords":{"en":"wrote","es":"escribieron","pt":"escreveram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not write yesterday.","es":"Yo no escribí ayer.","pt":"Eu não escrevi ontem."},"targetWords":{"en":"write","es":"escribí","pt":"escrevi"}},
+        {"subject":"second-singular","sentences":{"en":"You did not write yesterday.","es":"Tú no escribiste ayer.","pt":"Você não escreveu ontem."},"targetWords":{"en":"write","es":"escribiste","pt":"escreveu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not write yesterday.","es":"Él no escribió ayer.","pt":"Ele não escreveu ontem."},"targetWords":{"en":"write","es":"escribió","pt":"escreveu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not write yesterday.","es":"Ella no escribió ayer.","pt":"Ela não escreveu ontem."},"targetWords":{"en":"write","es":"escribió","pt":"escreveu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not write the data to memory yesterday.","es":"No escribió los datos en la memoria ayer.","pt":"Não gravou os dados na memória ontem."},"targetWords":{"en":"write","es":"escribió","pt":"gravou"}},
+        {"subject":"first-plural","sentences":{"en":"We did not write yesterday.","es":"Nosotros no escribimos ayer.","pt":"Nós não escrevemos ontem."},"targetWords":{"en":"write","es":"escribimos","pt":"escrevemos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not write yesterday.","es":"Ustedes no escribieron ayer.","pt":"Vocês não escreveram ontem."},"targetWords":{"en":"write","es":"escribieron","pt":"escreveram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not write yesterday.","es":"Ellos no escribieron ayer.","pt":"Eles não escreveram ontem."},"targetWords":{"en":"write","es":"escribieron","pt":"escreveram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I write yesterday?","es":"¿Escribí yo ayer?","pt":"Eu escrevi ontem?"},"targetWords":{"en":"write","es":"Escribí","pt":"escrevi"}},
+        {"subject":"second-singular","sentences":{"en":"Did you write yesterday?","es":"¿Escribiste tú ayer?","pt":"Você escreveu ontem?"},"targetWords":{"en":"write","es":"Escribiste","pt":"escreveu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he write yesterday?","es":"¿Escribió él ayer?","pt":"Ele escreveu ontem?"},"targetWords":{"en":"write","es":"Escribió","pt":"escreveu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she write yesterday?","es":"¿Escribió ella ayer?","pt":"Ela escreveu ontem?"},"targetWords":{"en":"write","es":"Escribió","pt":"escreveu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it write the data to memory yesterday?","es":"¿Escribió los datos en la memoria ayer?","pt":"Gravou os dados na memória ontem?"},"targetWords":{"en":"write","es":"Escribió","pt":"Gravou"}},
+        {"subject":"first-plural","sentences":{"en":"Did we write yesterday?","es":"¿Escribimos nosotros ayer?","pt":"Nós escrevemos ontem?"},"targetWords":{"en":"write","es":"Escribimos","pt":"escrevemos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you write yesterday?","es":"¿Escribieron ustedes ayer?","pt":"Vocês escreveram ontem?"},"targetWords":{"en":"write","es":"Escribieron","pt":"escreveram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they write yesterday?","es":"¿Escribieron ellos ayer?","pt":"Eles escreveram ontem?"},"targetWords":{"en":"write","es":"Escribieron","pt":"escreveram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will write tomorrow.","es":"Yo escribiré mañana.","pt":"Eu escreverei amanhã."},"targetWords":{"en":"write","es":"escribiré","pt":"escreverei"}},
+        {"subject":"second-singular","sentences":{"en":"You will write tomorrow.","es":"Tú escribirás mañana.","pt":"Você escreverá amanhã."},"targetWords":{"en":"write","es":"escribirás","pt":"escreverá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will write tomorrow.","es":"Él escribirá mañana.","pt":"Ele escreverá amanhã."},"targetWords":{"en":"write","es":"escribirá","pt":"escreverá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will write tomorrow.","es":"Ella escribirá mañana.","pt":"Ela escreverá amanhã."},"targetWords":{"en":"write","es":"escribirá","pt":"escreverá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will write the data to memory tomorrow.","es":"Escribirá los datos en la memoria mañana.","pt":"Gravará os dados na memória amanhã."},"targetWords":{"en":"write","es":"Escribirá","pt":"Gravará"}},
+        {"subject":"first-plural","sentences":{"en":"We will write tomorrow.","es":"Nosotros escribiremos mañana.","pt":"Nós escreveremos amanhã."},"targetWords":{"en":"write","es":"escribiremos","pt":"escreveremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will write tomorrow.","es":"Ustedes escribirán mañana.","pt":"Vocês escreverão amanhã."},"targetWords":{"en":"write","es":"escribirán","pt":"escreverão"}},
+        {"subject":"third-plural","sentences":{"en":"They will write tomorrow.","es":"Ellos escribirán mañana.","pt":"Eles escreverão amanhã."},"targetWords":{"en":"write","es":"escribirán","pt":"escreverão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not write tomorrow.","es":"Yo no escribiré mañana.","pt":"Eu não escreverei amanhã."},"targetWords":{"en":"write","es":"escribiré","pt":"escreverei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not write tomorrow.","es":"Tú no escribirás mañana.","pt":"Você não escreverá amanhã."},"targetWords":{"en":"write","es":"escribirás","pt":"escreverá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not write tomorrow.","es":"Él no escribirá mañana.","pt":"Ele não escreverá amanhã."},"targetWords":{"en":"write","es":"escribirá","pt":"escreverá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not write tomorrow.","es":"Ella no escribirá mañana.","pt":"Ela não escreverá amanhã."},"targetWords":{"en":"write","es":"escribirá","pt":"escreverá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not write the data to memory tomorrow.","es":"No escribirá los datos en la memoria mañana.","pt":"Não gravará os dados na memória amanhã."},"targetWords":{"en":"write","es":"escribirá","pt":"gravará"}},
+        {"subject":"first-plural","sentences":{"en":"We will not write tomorrow.","es":"Nosotros no escribiremos mañana.","pt":"Nós não escreveremos amanhã."},"targetWords":{"en":"write","es":"escribiremos","pt":"escreveremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not write tomorrow.","es":"Ustedes no escribirán mañana.","pt":"Vocês não escreverão amanhã."},"targetWords":{"en":"write","es":"escribirán","pt":"escreverão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not write tomorrow.","es":"Ellos no escribirán mañana.","pt":"Eles não escreverão amanhã."},"targetWords":{"en":"write","es":"escribirán","pt":"escreverão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I write tomorrow?","es":"¿Escribiré yo mañana?","pt":"Eu escreverei amanhã?"},"targetWords":{"en":"write","es":"Escribiré","pt":"escreverei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you write tomorrow?","es":"¿Escribirás tú mañana?","pt":"Você escreverá amanhã?"},"targetWords":{"en":"write","es":"Escribirás","pt":"escreverá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he write tomorrow?","es":"¿Escribirá él mañana?","pt":"Ele escreverá amanhã?"},"targetWords":{"en":"write","es":"Escribirá","pt":"escreverá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she write tomorrow?","es":"¿Escribirá ella mañana?","pt":"Ela escreverá amanhã?"},"targetWords":{"en":"write","es":"Escribirá","pt":"escreverá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it write the data to memory tomorrow?","es":"¿Escribirá los datos en la memoria mañana?","pt":"Gravará os dados na memória amanhã?"},"targetWords":{"en":"write","es":"Escribirá","pt":"Gravará"}},
+        {"subject":"first-plural","sentences":{"en":"Will we write tomorrow?","es":"¿Escribiremos nosotros mañana?","pt":"Nós escreveremos amanhã?"},"targetWords":{"en":"write","es":"Escribiremos","pt":"escreveremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you write tomorrow?","es":"¿Escribirán ustedes mañana?","pt":"Vocês escreverão amanhã?"},"targetWords":{"en":"write","es":"Escribirán","pt":"escreverão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they write tomorrow?","es":"¿Escribirán ellos mañana?","pt":"Eles escreverão amanhã?"},"targetWords":{"en":"write","es":"Escribirán","pt":"escreverão"}}]}}
+  }
+}
