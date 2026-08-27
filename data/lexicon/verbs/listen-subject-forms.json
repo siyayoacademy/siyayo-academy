@@ -1,0 +1,88 @@
+{
+  "$schema":"../../schemas/verb-subject-forms.schema.json","version":"0.1.0","verb":"listen","tenses":{
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I listen to music every day.","es":"Yo escucho música todos los días.","pt":"Eu escuto música todos os dias."},"targetWords":{"en":"listen","es":"escucho","pt":"escuto"}},
+        {"subject":"second-singular","sentences":{"en":"You listen to music every day.","es":"Tú escuchas música todos los días.","pt":"Você escuta música todos os dias."},"targetWords":{"en":"listen","es":"escuchas","pt":"escuta"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He listens to music every day.","es":"Él escucha música todos los días.","pt":"Ele escuta música todos os dias."},"targetWords":{"en":"listens","es":"escucha","pt":"escuta"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She listens to music every day.","es":"Ella escucha música todos los días.","pt":"Ela escuta música todos os dias."},"targetWords":{"en":"listens","es":"escucha","pt":"escuta"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It listens for signals every day.","es":"Escucha señales todos los días.","pt":"Escuta sinais todos os dias."},"targetWords":{"en":"listens","es":"Escucha","pt":"Escuta"}},
+        {"subject":"first-plural","sentences":{"en":"We listen to music every day.","es":"Nosotros escuchamos música todos los días.","pt":"Nós escutamos música todos os dias."},"targetWords":{"en":"listen","es":"escuchamos","pt":"escutamos"}},
+        {"subject":"second-plural","sentences":{"en":"You listen to music every day.","es":"Ustedes escuchan música todos los días.","pt":"Vocês escutam música todos os dias."},"targetWords":{"en":"listen","es":"escuchan","pt":"escutam"}},
+        {"subject":"third-plural","sentences":{"en":"They listen to music every day.","es":"Ellos escuchan música todos los días.","pt":"Eles escutam música todos os dias."},"targetWords":{"en":"listen","es":"escuchan","pt":"escutam"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not listen to music every day.","es":"Yo no escucho música todos los días.","pt":"Eu não escuto música todos os dias."},"targetWords":{"en":"listen","es":"escucho","pt":"escuto"}},
+        {"subject":"second-singular","sentences":{"en":"You do not listen to music every day.","es":"Tú no escuchas música todos los días.","pt":"Você não escuta música todos os dias."},"targetWords":{"en":"listen","es":"escuchas","pt":"escuta"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not listen to music every day.","es":"Él no escucha música todos los días.","pt":"Ele não escuta música todos os dias."},"targetWords":{"en":"listen","es":"escucha","pt":"escuta"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not listen to music every day.","es":"Ella no escucha música todos los días.","pt":"Ela não escuta música todos os dias."},"targetWords":{"en":"listen","es":"escucha","pt":"escuta"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not listen for signals every day.","es":"No escucha señales todos los días.","pt":"Não escuta sinais todos os dias."},"targetWords":{"en":"listen","es":"escucha","pt":"escuta"}},
+        {"subject":"first-plural","sentences":{"en":"We do not listen to music every day.","es":"Nosotros no escuchamos música todos los días.","pt":"Nós não escutamos música todos os dias."},"targetWords":{"en":"listen","es":"escuchamos","pt":"escutamos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not listen to music every day.","es":"Ustedes no escuchan música todos los días.","pt":"Vocês não escutam música todos os dias."},"targetWords":{"en":"listen","es":"escuchan","pt":"escutam"}},
+        {"subject":"third-plural","sentences":{"en":"They do not listen to music every day.","es":"Ellos no escuchan música todos los días.","pt":"Eles não escutam música todos os dias."},"targetWords":{"en":"listen","es":"escuchan","pt":"escutam"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I listen to music every day?","es":"¿Escucho yo música todos los días?","pt":"Eu escuto música todos os dias?"},"targetWords":{"en":"listen","es":"Escucho","pt":"escuto"}},
+        {"subject":"second-singular","sentences":{"en":"Do you listen to music every day?","es":"¿Escuchas tú música todos los días?","pt":"Você escuta música todos os dias?"},"targetWords":{"en":"listen","es":"Escuchas","pt":"escuta"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he listen to music every day?","es":"¿Escucha él música todos los días?","pt":"Ele escuta música todos os dias?"},"targetWords":{"en":"listen","es":"Escucha","pt":"escuta"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she listen to music every day?","es":"¿Escucha ella música todos los días?","pt":"Ela escuta música todos os dias?"},"targetWords":{"en":"listen","es":"Escucha","pt":"escuta"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it listen for signals every day?","es":"¿Escucha señales todos los días?","pt":"Escuta sinais todos os dias?"},"targetWords":{"en":"listen","es":"Escucha","pt":"Escuta"}},
+        {"subject":"first-plural","sentences":{"en":"Do we listen to music every day?","es":"¿Escuchamos nosotros música todos los días?","pt":"Nós escutamos música todos os dias?"},"targetWords":{"en":"listen","es":"Escuchamos","pt":"escutamos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you listen to music every day?","es":"¿Escuchan ustedes música todos los días?","pt":"Vocês escutam música todos os dias?"},"targetWords":{"en":"listen","es":"Escuchan","pt":"escutam"}},
+        {"subject":"third-plural","sentences":{"en":"Do they listen to music every day?","es":"¿Escuchan ellos música todos los días?","pt":"Eles escutam música todos os dias?"},"targetWords":{"en":"listen","es":"Escuchan","pt":"escutam"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I listened to music yesterday.","es":"Yo escuché música ayer.","pt":"Eu escutei música ontem."},"targetWords":{"en":"listened","es":"escuché","pt":"escutei"}},
+        {"subject":"second-singular","sentences":{"en":"You listened to music yesterday.","es":"Tú escuchaste música ayer.","pt":"Você escutou música ontem."},"targetWords":{"en":"listened","es":"escuchaste","pt":"escutou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He listened to music yesterday.","es":"Él escuchó música ayer.","pt":"Ele escutou música ontem."},"targetWords":{"en":"listened","es":"escuchó","pt":"escutou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She listened to music yesterday.","es":"Ella escuchó música ayer.","pt":"Ela escutou música ontem."},"targetWords":{"en":"listened","es":"escuchó","pt":"escutou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It listened for signals yesterday.","es":"Escuchó señales ayer.","pt":"Escutou sinais ontem."},"targetWords":{"en":"listened","es":"Escuchó","pt":"Escutou"}},
+        {"subject":"first-plural","sentences":{"en":"We listened to music yesterday.","es":"Nosotros escuchamos música ayer.","pt":"Nós escutamos música ontem."},"targetWords":{"en":"listened","es":"escuchamos","pt":"escutamos"}},
+        {"subject":"second-plural","sentences":{"en":"You listened to music yesterday.","es":"Ustedes escucharon música ayer.","pt":"Vocês escutaram música ontem."},"targetWords":{"en":"listened","es":"escucharon","pt":"escutaram"}},
+        {"subject":"third-plural","sentences":{"en":"They listened to music yesterday.","es":"Ellos escucharon música ayer.","pt":"Eles escutaram música ontem."},"targetWords":{"en":"listened","es":"escucharon","pt":"escutaram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not listen to music yesterday.","es":"Yo no escuché música ayer.","pt":"Eu não escutei música ontem."},"targetWords":{"en":"listen","es":"escuché","pt":"escutei"}},
+        {"subject":"second-singular","sentences":{"en":"You did not listen to music yesterday.","es":"Tú no escuchaste música ayer.","pt":"Você não escutou música ontem."},"targetWords":{"en":"listen","es":"escuchaste","pt":"escutou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not listen to music yesterday.","es":"Él no escuchó música ayer.","pt":"Ele não escutou música ontem."},"targetWords":{"en":"listen","es":"escuchó","pt":"escutou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not listen to music yesterday.","es":"Ella no escuchó música ayer.","pt":"Ela não escutou música ontem."},"targetWords":{"en":"listen","es":"escuchó","pt":"escutou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not listen for signals yesterday.","es":"No escuchó señales ayer.","pt":"Não escutou sinais ontem."},"targetWords":{"en":"listen","es":"escuchó","pt":"escutou"}},
+        {"subject":"first-plural","sentences":{"en":"We did not listen to music yesterday.","es":"Nosotros no escuchamos música ayer.","pt":"Nós não escutamos música ontem."},"targetWords":{"en":"listen","es":"escuchamos","pt":"escutamos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not listen to music yesterday.","es":"Ustedes no escucharon música ayer.","pt":"Vocês não escutaram música ontem."},"targetWords":{"en":"listen","es":"escucharon","pt":"escutaram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not listen to music yesterday.","es":"Ellos no escucharon música ayer.","pt":"Eles não escutaram música ontem."},"targetWords":{"en":"listen","es":"escucharon","pt":"escutaram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I listen to music yesterday?","es":"¿Escuché yo música ayer?","pt":"Eu escutei música ontem?"},"targetWords":{"en":"listen","es":"Escuché","pt":"escutei"}},
+        {"subject":"second-singular","sentences":{"en":"Did you listen to music yesterday?","es":"¿Escuchaste tú música ayer?","pt":"Você escutou música ontem?"},"targetWords":{"en":"listen","es":"Escuchaste","pt":"escutou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he listen to music yesterday?","es":"¿Escuchó él música ayer?","pt":"Ele escutou música ontem?"},"targetWords":{"en":"listen","es":"Escuchó","pt":"escutou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she listen to music yesterday?","es":"¿Escuchó ella música ayer?","pt":"Ela escutou música ontem?"},"targetWords":{"en":"listen","es":"Escuchó","pt":"escutou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it listen for signals yesterday?","es":"¿Escuchó señales ayer?","pt":"Escutou sinais ontem?"},"targetWords":{"en":"listen","es":"Escuchó","pt":"Escutou"}},
+        {"subject":"first-plural","sentences":{"en":"Did we listen to music yesterday?","es":"¿Escuchamos nosotros música ayer?","pt":"Nós escutamos música ontem?"},"targetWords":{"en":"listen","es":"Escuchamos","pt":"escutamos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you listen to music yesterday?","es":"¿Escucharon ustedes música ayer?","pt":"Vocês escutaram música ontem?"},"targetWords":{"en":"listen","es":"Escucharon","pt":"escutaram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they listen to music yesterday?","es":"¿Escucharon ellos música ayer?","pt":"Eles escutaram música ontem?"},"targetWords":{"en":"listen","es":"Escucharon","pt":"escutaram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will listen to music tomorrow.","es":"Yo escucharé música mañana.","pt":"Eu escutarei música amanhã."},"targetWords":{"en":"listen","es":"escucharé","pt":"escutarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will listen to music tomorrow.","es":"Tú escucharás música mañana.","pt":"Você escutará música amanhã."},"targetWords":{"en":"listen","es":"escucharás","pt":"escutará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will listen to music tomorrow.","es":"Él escuchará música mañana.","pt":"Ele escutará música amanhã."},"targetWords":{"en":"listen","es":"escuchará","pt":"escutará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will listen to music tomorrow.","es":"Ella escuchará música mañana.","pt":"Ela escutará música amanhã."},"targetWords":{"en":"listen","es":"escuchará","pt":"escutará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will listen for signals tomorrow.","es":"Escuchará señales mañana.","pt":"Escutará sinais amanhã."},"targetWords":{"en":"listen","es":"Escuchará","pt":"Escutará"}},
+        {"subject":"first-plural","sentences":{"en":"We will listen to music tomorrow.","es":"Nosotros escucharemos música mañana.","pt":"Nós escutaremos música amanhã."},"targetWords":{"en":"listen","es":"escucharemos","pt":"escutaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will listen to music tomorrow.","es":"Ustedes escucharán música mañana.","pt":"Vocês escutarão música amanhã."},"targetWords":{"en":"listen","es":"escucharán","pt":"escutarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will listen to music tomorrow.","es":"Ellos escucharán música mañana.","pt":"Eles escutarão música amanhã."},"targetWords":{"en":"listen","es":"escucharán","pt":"escutarão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not listen to music tomorrow.","es":"Yo no escucharé música mañana.","pt":"Eu não escutarei música amanhã."},"targetWords":{"en":"listen","es":"escucharé","pt":"escutarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not listen to music tomorrow.","es":"Tú no escucharás música mañana.","pt":"Você não escutará música amanhã."},"targetWords":{"en":"listen","es":"escucharás","pt":"escutará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not listen to music tomorrow.","es":"Él no escuchará música mañana.","pt":"Ele não escutará música amanhã."},"targetWords":{"en":"listen","es":"escuchará","pt":"escutará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not listen to music tomorrow.","es":"Ella no escuchará música mañana.","pt":"Ela não escutará música amanhã."},"targetWords":{"en":"listen","es":"escuchará","pt":"escutará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not listen for signals tomorrow.","es":"No escuchará señales mañana.","pt":"Não escutará sinais amanhã."},"targetWords":{"en":"listen","es":"escuchará","pt":"escutará"}},
+        {"subject":"first-plural","sentences":{"en":"We will not listen to music tomorrow.","es":"Nosotros no escucharemos música mañana.","pt":"Nós não escutaremos música amanhã."},"targetWords":{"en":"listen","es":"escucharemos","pt":"escutaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not listen to music tomorrow.","es":"Ustedes no escucharán música mañana.","pt":"Vocês não escutarão música amanhã."},"targetWords":{"en":"listen","es":"escucharán","pt":"escutarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not listen to music tomorrow.","es":"Ellos no escucharán música mañana.","pt":"Eles não escutarão música amanhã."},"targetWords":{"en":"listen","es":"escucharán","pt":"escutarão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I listen to music tomorrow?","es":"¿Escucharé yo música mañana?","pt":"Eu escutarei música amanhã?"},"targetWords":{"en":"listen","es":"Escucharé","pt":"escutarei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you listen to music tomorrow?","es":"¿Escucharás tú música mañana?","pt":"Você escutará música amanhã?"},"targetWords":{"en":"listen","es":"Escucharás","pt":"escutará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he listen to music tomorrow?","es":"¿Escuchará él música mañana?","pt":"Ele escutará música amanhã?"},"targetWords":{"en":"listen","es":"Escuchará","pt":"escutará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she listen to music tomorrow?","es":"¿Escuchará ella música mañana?","pt":"Ela escutará música amanhã?"},"targetWords":{"en":"listen","es":"Escuchará","pt":"escutará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it listen for signals tomorrow?","es":"¿Escuchará señales mañana?","pt":"Escutará sinais amanhã?"},"targetWords":{"en":"listen","es":"Escuchará","pt":"Escutará"}},
+        {"subject":"first-plural","sentences":{"en":"Will we listen to music tomorrow?","es":"¿Escucharemos nosotros música mañana?","pt":"Nós escutaremos música amanhã?"},"targetWords":{"en":"listen","es":"Escucharemos","pt":"escutaremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you listen to music tomorrow?","es":"¿Escucharán ustedes música mañana?","pt":"Vocês escutarão música amanhã?"},"targetWords":{"en":"listen","es":"Escucharán","pt":"escutarão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they listen to music tomorrow?","es":"¿Escucharán ellos música mañana?","pt":"Eles escutarão música amanhã?"},"targetWords":{"en":"listen","es":"Escucharán","pt":"escutarão"}}]}}
+  }
+}
