@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "read",
+  "tenses": {
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I read every morning.","es":"Yo leo todas las mañanas.","pt":"Eu leio todas as manhãs."},"targetWords":{"en":"read","es":"leo","pt":"leio"}},
+        {"subject":"second-singular","sentences":{"en":"You read every morning.","es":"Tú lees todas las mañanas.","pt":"Você lê todas as manhãs."},"targetWords":{"en":"read","es":"lees","pt":"lê"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He reads every morning.","es":"Él lee todas las mañanas.","pt":"Ele lê todas as manhãs."},"targetWords":{"en":"reads","es":"lee","pt":"lê"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She reads every morning.","es":"Ella lee todas las mañanas.","pt":"Ela lê todas as manhãs."},"targetWords":{"en":"reads","es":"lee","pt":"lê"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It reads the sensor data every morning.","es":"Lee los datos del sensor todas las mañanas.","pt":"Lê os dados do sensor todas as manhãs."},"targetWords":{"en":"reads","es":"Lee","pt":"Lê"}},
+        {"subject":"first-plural","sentences":{"en":"We read every morning.","es":"Nosotros leemos todas las mañanas.","pt":"Nós lemos todas as manhãs."},"targetWords":{"en":"read","es":"leemos","pt":"lemos"}},
+        {"subject":"second-plural","sentences":{"en":"You read every morning.","es":"Ustedes leen todas las mañanas.","pt":"Vocês leem todas as manhãs."},"targetWords":{"en":"read","es":"leen","pt":"leem"}},
+        {"subject":"third-plural","sentences":{"en":"They read every morning.","es":"Ellos leen todas las mañanas.","pt":"Eles leem todas as manhãs."},"targetWords":{"en":"read","es":"leen","pt":"leem"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not read every morning.","es":"Yo no leo todas las mañanas.","pt":"Eu não leio todas as manhãs."},"targetWords":{"en":"read","es":"leo","pt":"leio"}},
+        {"subject":"second-singular","sentences":{"en":"You do not read every morning.","es":"Tú no lees todas las mañanas.","pt":"Você não lê todas as manhãs."},"targetWords":{"en":"read","es":"lees","pt":"lê"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not read every morning.","es":"Él no lee todas las mañanas.","pt":"Ele não lê todas as manhãs."},"targetWords":{"en":"read","es":"lee","pt":"lê"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not read every morning.","es":"Ella no lee todas las mañanas.","pt":"Ela não lê todas as manhãs."},"targetWords":{"en":"read","es":"lee","pt":"lê"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not read the sensor data every morning.","es":"No lee los datos del sensor todas las mañanas.","pt":"Não lê os dados do sensor todas as manhãs."},"targetWords":{"en":"read","es":"lee","pt":"lê"}},
+        {"subject":"first-plural","sentences":{"en":"We do not read every morning.","es":"Nosotros no leemos todas las mañanas.","pt":"Nós não lemos todas as manhãs."},"targetWords":{"en":"read","es":"leemos","pt":"lemos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not read every morning.","es":"Ustedes no leen todas las mañanas.","pt":"Vocês não leem todas as manhãs."},"targetWords":{"en":"read","es":"leen","pt":"leem"}},
+        {"subject":"third-plural","sentences":{"en":"They do not read every morning.","es":"Ellos no leen todas las mañanas.","pt":"Eles não leem todas as manhãs."},"targetWords":{"en":"read","es":"leen","pt":"leem"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I read every morning?","es":"¿Leo yo todas las mañanas?","pt":"Eu leio todas as manhãs?"},"targetWords":{"en":"read","es":"Leo","pt":"leio"}},
+        {"subject":"second-singular","sentences":{"en":"Do you read every morning?","es":"¿Lees tú todas las mañanas?","pt":"Você lê todas as manhãs?"},"targetWords":{"en":"read","es":"Lees","pt":"lê"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he read every morning?","es":"¿Lee él todas las mañanas?","pt":"Ele lê todas as manhãs?"},"targetWords":{"en":"read","es":"Lee","pt":"lê"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she read every morning?","es":"¿Lee ella todas las mañanas?","pt":"Ela lê todas as manhãs?"},"targetWords":{"en":"read","es":"Lee","pt":"lê"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it read the sensor data every morning?","es":"¿Lee los datos del sensor todas las mañanas?","pt":"Lê os dados do sensor todas as manhãs?"},"targetWords":{"en":"read","es":"Lee","pt":"Lê"}},
+        {"subject":"first-plural","sentences":{"en":"Do we read every morning?","es":"¿Leemos nosotros todas las mañanas?","pt":"Nós lemos todas as manhãs?"},"targetWords":{"en":"read","es":"Leemos","pt":"lemos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you read every morning?","es":"¿Leen ustedes todas las mañanas?","pt":"Vocês leem todas as manhãs?"},"targetWords":{"en":"read","es":"Leen","pt":"leem"}},
+        {"subject":"third-plural","sentences":{"en":"Do they read every morning?","es":"¿Leen ellos todas las mañanas?","pt":"Eles leem todas as manhãs?"},"targetWords":{"en":"read","es":"Leen","pt":"leem"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I read yesterday.","es":"Yo leí ayer.","pt":"Eu li ontem."},"targetWords":{"en":"read","es":"leí","pt":"li"}},
+        {"subject":"second-singular","sentences":{"en":"You read yesterday.","es":"Tú leíste ayer.","pt":"Você leu ontem."},"targetWords":{"en":"read","es":"leíste","pt":"leu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He read yesterday.","es":"Él leyó ayer.","pt":"Ele leu ontem."},"targetWords":{"en":"read","es":"leyó","pt":"leu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She read yesterday.","es":"Ella leyó ayer.","pt":"Ela leu ontem."},"targetWords":{"en":"read","es":"leyó","pt":"leu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It read the sensor data yesterday.","es":"Leyó los datos del sensor ayer.","pt":"Leu os dados do sensor ontem."},"targetWords":{"en":"read","es":"Leyó","pt":"Leu"}},
+        {"subject":"first-plural","sentences":{"en":"We read yesterday.","es":"Nosotros leímos ayer.","pt":"Nós lemos ontem."},"targetWords":{"en":"read","es":"leímos","pt":"lemos"}},
+        {"subject":"second-plural","sentences":{"en":"You read yesterday.","es":"Ustedes leyeron ayer.","pt":"Vocês leram ontem."},"targetWords":{"en":"read","es":"leyeron","pt":"leram"}},
+        {"subject":"third-plural","sentences":{"en":"They read yesterday.","es":"Ellos leyeron ayer.","pt":"Eles leram ontem."},"targetWords":{"en":"read","es":"leyeron","pt":"leram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not read yesterday.","es":"Yo no leí ayer.","pt":"Eu não li ontem."},"targetWords":{"en":"read","es":"leí","pt":"li"}},
+        {"subject":"second-singular","sentences":{"en":"You did not read yesterday.","es":"Tú no leíste ayer.","pt":"Você não leu ontem."},"targetWords":{"en":"read","es":"leíste","pt":"leu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not read yesterday.","es":"Él no leyó ayer.","pt":"Ele não leu ontem."},"targetWords":{"en":"read","es":"leyó","pt":"leu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not read yesterday.","es":"Ella no leyó ayer.","pt":"Ela não leu ontem."},"targetWords":{"en":"read","es":"leyó","pt":"leu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not read the sensor data yesterday.","es":"No leyó los datos del sensor ayer.","pt":"Não leu os dados do sensor ontem."},"targetWords":{"en":"read","es":"leyó","pt":"leu"}},
+        {"subject":"first-plural","sentences":{"en":"We did not read yesterday.","es":"Nosotros no leímos ayer.","pt":"Nós não lemos ontem."},"targetWords":{"en":"read","es":"leímos","pt":"lemos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not read yesterday.","es":"Ustedes no leyeron ayer.","pt":"Vocês não leram ontem."},"targetWords":{"en":"read","es":"leyeron","pt":"leram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not read yesterday.","es":"Ellos no leyeron ayer.","pt":"Eles não leram ontem."},"targetWords":{"en":"read","es":"leyeron","pt":"leram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I read yesterday?","es":"¿Leí yo ayer?","pt":"Eu li ontem?"},"targetWords":{"en":"read","es":"Leí","pt":"li"}},
+        {"subject":"second-singular","sentences":{"en":"Did you read yesterday?","es":"¿Leíste tú ayer?","pt":"Você leu ontem?"},"targetWords":{"en":"read","es":"Leíste","pt":"leu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he read yesterday?","es":"¿Leyó él ayer?","pt":"Ele leu ontem?"},"targetWords":{"en":"read","es":"Leyó","pt":"leu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she read yesterday?","es":"¿Leyó ella ayer?","pt":"Ela leu ontem?"},"targetWords":{"en":"read","es":"Leyó","pt":"leu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it read the sensor data yesterday?","es":"¿Leyó los datos del sensor ayer?","pt":"Leu os dados do sensor ontem?"},"targetWords":{"en":"read","es":"Leyó","pt":"Leu"}},
+        {"subject":"first-plural","sentences":{"en":"Did we read yesterday?","es":"¿Leímos nosotros ayer?","pt":"Nós lemos ontem?"},"targetWords":{"en":"read","es":"Leímos","pt":"lemos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you read yesterday?","es":"¿Leyeron ustedes ayer?","pt":"Vocês leram ontem?"},"targetWords":{"en":"read","es":"Leyeron","pt":"leram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they read yesterday?","es":"¿Leyeron ellos ayer?","pt":"Eles leram ontem?"},"targetWords":{"en":"read","es":"Leyeron","pt":"leram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will read tomorrow.","es":"Yo leeré mañana.","pt":"Eu lerei amanhã."},"targetWords":{"en":"read","es":"leeré","pt":"lerei"}},
+        {"subject":"second-singular","sentences":{"en":"You will read tomorrow.","es":"Tú leerás mañana.","pt":"Você lerá amanhã."},"targetWords":{"en":"read","es":"leerás","pt":"lerá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will read tomorrow.","es":"Él leerá mañana.","pt":"Ele lerá amanhã."},"targetWords":{"en":"read","es":"leerá","pt":"lerá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will read tomorrow.","es":"Ella leerá mañana.","pt":"Ela lerá amanhã."},"targetWords":{"en":"read","es":"leerá","pt":"lerá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will read the sensor data tomorrow.","es":"Leerá los datos del sensor mañana.","pt":"Lerá os dados do sensor amanhã."},"targetWords":{"en":"read","es":"Leerá","pt":"Lerá"}},
+        {"subject":"first-plural","sentences":{"en":"We will read tomorrow.","es":"Nosotros leeremos mañana.","pt":"Nós leremos amanhã."},"targetWords":{"en":"read","es":"leeremos","pt":"leremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will read tomorrow.","es":"Ustedes leerán mañana.","pt":"Vocês lerão amanhã."},"targetWords":{"en":"read","es":"leerán","pt":"lerão"}},
+        {"subject":"third-plural","sentences":{"en":"They will read tomorrow.","es":"Ellos leerán mañana.","pt":"Eles lerão amanhã."},"targetWords":{"en":"read","es":"leerán","pt":"lerão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not read tomorrow.","es":"Yo no leeré mañana.","pt":"Eu não lerei amanhã."},"targetWords":{"en":"read","es":"leeré","pt":"lerei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not read tomorrow.","es":"Tú no leerás mañana.","pt":"Você não lerá amanhã."},"targetWords":{"en":"read","es":"leerás","pt":"lerá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not read tomorrow.","es":"Él no leerá mañana.","pt":"Ele não lerá amanhã."},"targetWords":{"en":"read","es":"leerá","pt":"lerá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not read tomorrow.","es":"Ella no leerá mañana.","pt":"Ela não lerá amanhã."},"targetWords":{"en":"read","es":"leerá","pt":"lerá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not read the sensor data tomorrow.","es":"No leerá los datos del sensor mañana.","pt":"Não lerá os dados do sensor amanhã."},"targetWords":{"en":"read","es":"leerá","pt":"lerá"}},
+        {"subject":"first-plural","sentences":{"en":"We will not read tomorrow.","es":"Nosotros no leeremos mañana.","pt":"Nós não leremos amanhã."},"targetWords":{"en":"read","es":"leeremos","pt":"leremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not read tomorrow.","es":"Ustedes no leerán mañana.","pt":"Vocês não lerão amanhã."},"targetWords":{"en":"read","es":"leerán","pt":"lerão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not read tomorrow.","es":"Ellos no leerán mañana.","pt":"Eles não lerão amanhã."},"targetWords":{"en":"read","es":"leerán","pt":"lerão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I read tomorrow?","es":"¿Leeré yo mañana?","pt":"Eu lerei amanhã?"},"targetWords":{"en":"read","es":"Leeré","pt":"lerei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you read tomorrow?","es":"¿Leerás tú mañana?","pt":"Você lerá amanhã?"},"targetWords":{"en":"read","es":"Leerás","pt":"lerá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he read tomorrow?","es":"¿Leerá él mañana?","pt":"Ele lerá amanhã?"},"targetWords":{"en":"read","es":"Leerá","pt":"lerá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she read tomorrow?","es":"¿Leerá ella mañana?","pt":"Ela lerá amanhã?"},"targetWords":{"en":"read","es":"Leerá","pt":"lerá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it read the sensor data tomorrow?","es":"¿Leerá los datos del sensor mañana?","pt":"Lerá os dados do sensor amanhã?"},"targetWords":{"en":"read","es":"Leerá","pt":"Lerá"}},
+        {"subject":"first-plural","sentences":{"en":"Will we read tomorrow?","es":"¿Leeremos nosotros mañana?","pt":"Nós leremos amanhã?"},"targetWords":{"en":"read","es":"Leeremos","pt":"leremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you read tomorrow?","es":"¿Leerán ustedes mañana?","pt":"Vocês lerão amanhã?"},"targetWords":{"en":"read","es":"Leerán","pt":"lerão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they read tomorrow?","es":"¿Leerán ellos mañana?","pt":"Eles lerão amanhã?"},"targetWords":{"en":"read","es":"Leerán","pt":"lerão"}}]}}
+  }
+}
