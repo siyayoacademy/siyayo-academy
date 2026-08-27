@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {"verb":"read","tense":"present","forms":{"affirmative":{"sentences":{"en":"I read every morning.","es":"Yo leo todas las mañanas.","pt":"Eu leio todas as manhãs."},"targetWords":{"en":"read","es":"leo","pt":"leio"}},"negative":{"sentences":{"en":"I do not read every morning.","es":"Yo no leo todas las mañanas.","pt":"Eu não leio todas as manhãs."},"targetWords":{"en":"read","es":"leo","pt":"leio"}},"interrogative":{"sentences":{"en":"Do I read every morning?","es":"¿Leo yo todas las mañanas?","pt":"Eu leio todas as manhãs?"},"targetWords":{"en":"read","es":"Leo","pt":"leio"}}}},
+    {"verb":"read","tense":"past","forms":{"affirmative":{"sentences":{"en":"I read yesterday.","es":"Yo leí ayer.","pt":"Eu li ontem."},"targetWords":{"en":"read","es":"leí","pt":"li"}},"negative":{"sentences":{"en":"I did not read yesterday.","es":"Yo no leí ayer.","pt":"Eu não li ontem."},"targetWords":{"en":"read","es":"leí","pt":"li"}},"interrogative":{"sentences":{"en":"Did I read yesterday?","es":"¿Leí yo ayer?","pt":"Eu li ontem?"},"targetWords":{"en":"read","es":"Leí","pt":"li"}}}},
+    {"verb":"read","tense":"future","forms":{"affirmative":{"sentences":{"en":"I will read tomorrow.","es":"Yo leeré mañana.","pt":"Eu lerei amanhã."},"targetWords":{"en":"read","es":"leeré","pt":"lerei"}},"negative":{"sentences":{"en":"I will not read tomorrow.","es":"Yo no leeré mañana.","pt":"Eu não lerei amanhã."},"targetWords":{"en":"read","es":"leeré","pt":"lerei"}},"interrogative":{"sentences":{"en":"Will I read tomorrow?","es":"¿Leeré yo mañana?","pt":"Eu lerei amanhã?"},"targetWords":{"en":"read","es":"Leeré","pt":"lerei"}}}}
+  ]
+}
