@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "drink",
+  "tenses": {
+    "present": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I drink every day.","es":"Yo bebo todos los días.","pt":"Eu bebo todos os dias."},"targetWords":{"en":"drink","es":"bebo","pt":"bebo"}},
+        {"subject":"second-singular","sentences":{"en":"You drink every day.","es":"Tú bebes todos los días.","pt":"Você bebe todos os dias."},"targetWords":{"en":"drink","es":"bebes","pt":"bebe"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He drinks every day.","es":"Él bebe todos los días.","pt":"Ele bebe todos os dias."},"targetWords":{"en":"drinks","es":"bebe","pt":"bebe"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She drinks every day.","es":"Ella bebe todos los días.","pt":"Ela bebe todos os dias."},"targetWords":{"en":"drinks","es":"bebe","pt":"bebe"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It drinks water every day.","es":"Bebe agua todos los días.","pt":"Bebe água todos os dias."},"targetWords":{"en":"drinks","es":"Bebe","pt":"Bebe"}},
+        {"subject":"first-plural","sentences":{"en":"We drink every day.","es":"Nosotros bebemos todos los días.","pt":"Nós bebemos todos os dias."},"targetWords":{"en":"drink","es":"bebemos","pt":"bebemos"}},
+        {"subject":"second-plural","sentences":{"en":"You drink every day.","es":"Ustedes beben todos los días.","pt":"Vocês bebem todos os dias."},"targetWords":{"en":"drink","es":"beben","pt":"bebem"}},
+        {"subject":"third-plural","sentences":{"en":"They drink every day.","es":"Ellos beben todos los días.","pt":"Eles bebem todos os dias."},"targetWords":{"en":"drink","es":"beben","pt":"bebem"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I do not drink every day.","es":"Yo no bebo todos los días.","pt":"Eu não bebo todos os dias."},"targetWords":{"en":"drink","es":"bebo","pt":"bebo"}},
+        {"subject":"second-singular","sentences":{"en":"You do not drink every day.","es":"Tú no bebes todos los días.","pt":"Você não bebe todos os dias."},"targetWords":{"en":"drink","es":"bebes","pt":"bebe"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not drink every day.","es":"Él no bebe todos los días.","pt":"Ele não bebe todos os dias."},"targetWords":{"en":"drink","es":"bebe","pt":"bebe"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not drink every day.","es":"Ella no bebe todos los días.","pt":"Ela não bebe todos os dias."},"targetWords":{"en":"drink","es":"bebe","pt":"bebe"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not drink water every day.","es":"No bebe agua todos los días.","pt":"Não bebe água todos os dias."},"targetWords":{"en":"drink","es":"bebe","pt":"bebe"}},
+        {"subject":"first-plural","sentences":{"en":"We do not drink every day.","es":"Nosotros no bebemos todos los días.","pt":"Nós não bebemos todos os dias."},"targetWords":{"en":"drink","es":"bebemos","pt":"bebemos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not drink every day.","es":"Ustedes no beben todos los días.","pt":"Vocês não bebem todos os dias."},"targetWords":{"en":"drink","es":"beben","pt":"bebem"}},
+        {"subject":"third-plural","sentences":{"en":"They do not drink every day.","es":"Ellos no beben todos los días.","pt":"Eles não bebem todos os dias."},"targetWords":{"en":"drink","es":"beben","pt":"bebem"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Do I drink every day?","es":"¿Bebo yo todos los días?","pt":"Eu bebo todos os dias?"},"targetWords":{"en":"drink","es":"Bebo","pt":"bebo"}},
+        {"subject":"second-singular","sentences":{"en":"Do you drink every day?","es":"¿Bebes tú todos los días?","pt":"Você bebe todos os dias?"},"targetWords":{"en":"drink","es":"Bebes","pt":"bebe"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he drink every day?","es":"¿Bebe él todos los días?","pt":"Ele bebe todos os dias?"},"targetWords":{"en":"drink","es":"Bebe","pt":"bebe"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she drink every day?","es":"¿Bebe ella todos los días?","pt":"Ela bebe todos os dias?"},"targetWords":{"en":"drink","es":"Bebe","pt":"bebe"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it drink water every day?","es":"¿Bebe agua todos los días?","pt":"Bebe água todos os dias?"},"targetWords":{"en":"drink","es":"Bebe","pt":"Bebe"}},
+        {"subject":"first-plural","sentences":{"en":"Do we drink every day?","es":"¿Bebemos nosotros todos los días?","pt":"Nós bebemos todos os dias?"},"targetWords":{"en":"drink","es":"Bebemos","pt":"bebemos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you drink every day?","es":"¿Beben ustedes todos los días?","pt":"Vocês bebem todos os dias?"},"targetWords":{"en":"drink","es":"Beben","pt":"bebem"}},
+        {"subject":"third-plural","sentences":{"en":"Do they drink every day?","es":"¿Beben ellos todos los días?","pt":"Eles bebem todos os dias?"},"targetWords":{"en":"drink","es":"Beben","pt":"bebem"}}
+      ]
+    }},
+    "past": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I drank yesterday.","es":"Yo bebí ayer.","pt":"Eu bebi ontem."},"targetWords":{"en":"drank","es":"bebí","pt":"bebi"}},
+        {"subject":"second-singular","sentences":{"en":"You drank yesterday.","es":"Tú bebiste ayer.","pt":"Você bebeu ontem."},"targetWords":{"en":"drank","es":"bebiste","pt":"bebeu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He drank yesterday.","es":"Él bebió ayer.","pt":"Ele bebeu ontem."},"targetWords":{"en":"drank","es":"bebió","pt":"bebeu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She drank yesterday.","es":"Ella bebió ayer.","pt":"Ela bebeu ontem."},"targetWords":{"en":"drank","es":"bebió","pt":"bebeu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It drank water yesterday.","es":"Bebió agua ayer.","pt":"Bebeu água ontem."},"targetWords":{"en":"drank","es":"Bebió","pt":"Bebeu"}},
+        {"subject":"first-plural","sentences":{"en":"We drank yesterday.","es":"Nosotros bebimos ayer.","pt":"Nós bebemos ontem."},"targetWords":{"en":"drank","es":"bebimos","pt":"bebemos"}},
+        {"subject":"second-plural","sentences":{"en":"You drank yesterday.","es":"Ustedes bebieron ayer.","pt":"Vocês beberam ontem."},"targetWords":{"en":"drank","es":"bebieron","pt":"beberam"}},
+        {"subject":"third-plural","sentences":{"en":"They drank yesterday.","es":"Ellos bebieron ayer.","pt":"Eles beberam ontem."},"targetWords":{"en":"drank","es":"bebieron","pt":"beberam"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I did not drink yesterday.","es":"Yo no bebí ayer.","pt":"Eu não bebi ontem."},"targetWords":{"en":"drink","es":"bebí","pt":"bebi"}},
+        {"subject":"second-singular","sentences":{"en":"You did not drink yesterday.","es":"Tú no bebiste ayer.","pt":"Você não bebeu ontem."},"targetWords":{"en":"drink","es":"bebiste","pt":"bebeu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not drink yesterday.","es":"Él no bebió ayer.","pt":"Ele não bebeu ontem."},"targetWords":{"en":"drink","es":"bebió","pt":"bebeu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not drink yesterday.","es":"Ella no bebió ayer.","pt":"Ela não bebeu ontem."},"targetWords":{"en":"drink","es":"bebió","pt":"bebeu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not drink water yesterday.","es":"No bebió agua ayer.","pt":"Não bebeu água ontem."},"targetWords":{"en":"drink","es":"bebió","pt":"bebeu"}},
+        {"subject":"first-plural","sentences":{"en":"We did not drink yesterday.","es":"Nosotros no bebimos ayer.","pt":"Nós não bebemos ontem."},"targetWords":{"en":"drink","es":"bebimos","pt":"bebemos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not drink yesterday.","es":"Ustedes no bebieron ayer.","pt":"Vocês não beberam ontem."},"targetWords":{"en":"drink","es":"bebieron","pt":"beberam"}},
+        {"subject":"third-plural","sentences":{"en":"They did not drink yesterday.","es":"Ellos no bebieron ayer.","pt":"Eles não beberam ontem."},"targetWords":{"en":"drink","es":"bebieron","pt":"beberam"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Did I drink yesterday?","es":"¿Bebí yo ayer?","pt":"Eu bebi ontem?"},"targetWords":{"en":"drink","es":"Bebí","pt":"bebi"}},
+        {"subject":"second-singular","sentences":{"en":"Did you drink yesterday?","es":"¿Bebiste tú ayer?","pt":"Você bebeu ontem?"},"targetWords":{"en":"drink","es":"Bebiste","pt":"bebeu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he drink yesterday?","es":"¿Bebió él ayer?","pt":"Ele bebeu ontem?"},"targetWords":{"en":"drink","es":"Bebió","pt":"bebeu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she drink yesterday?","es":"¿Bebió ella ayer?","pt":"Ela bebeu ontem?"},"targetWords":{"en":"drink","es":"Bebió","pt":"bebeu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it drink water yesterday?","es":"¿Bebió agua ayer?","pt":"Bebeu água ontem?"},"targetWords":{"en":"drink","es":"Bebió","pt":"Bebeu"}},
+        {"subject":"first-plural","sentences":{"en":"Did we drink yesterday?","es":"¿Bebimos nosotros ayer?","pt":"Nós bebemos ontem?"},"targetWords":{"en":"drink","es":"Bebimos","pt":"bebemos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you drink yesterday?","es":"¿Bebieron ustedes ayer?","pt":"Vocês beberam ontem?"},"targetWords":{"en":"drink","es":"Bebieron","pt":"beberam"}},
+        {"subject":"third-plural","sentences":{"en":"Did they drink yesterday?","es":"¿Bebieron ellos ayer?","pt":"Eles beberam ontem?"},"targetWords":{"en":"drink","es":"Bebieron","pt":"beberam"}}
+      ]
+    }},
+    "future": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I will drink tomorrow.","es":"Yo beberé mañana.","pt":"Eu beberei amanhã."},"targetWords":{"en":"drink","es":"beberé","pt":"beberei"}},
+        {"subject":"second-singular","sentences":{"en":"You will drink tomorrow.","es":"Tú beberás mañana.","pt":"Você beberá amanhã."},"targetWords":{"en":"drink","es":"beberás","pt":"beberá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will drink tomorrow.","es":"Él beberá mañana.","pt":"Ele beberá amanhã."},"targetWords":{"en":"drink","es":"beberá","pt":"beberá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will drink tomorrow.","es":"Ella beberá mañana.","pt":"Ela beberá amanhã."},"targetWords":{"en":"drink","es":"beberá","pt":"beberá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will drink water tomorrow.","es":"Beberá agua mañana.","pt":"Beberá água amanhã."},"targetWords":{"en":"drink","es":"Beberá","pt":"Beberá"}},
+        {"subject":"first-plural","sentences":{"en":"We will drink tomorrow.","es":"Nosotros beberemos mañana.","pt":"Nós beberemos amanhã."},"targetWords":{"en":"drink","es":"beberemos","pt":"beberemos"}},
+        {"subject":"second-plural","sentences":{"en":"You will drink tomorrow.","es":"Ustedes beberán mañana.","pt":"Vocês beberão amanhã."},"targetWords":{"en":"drink","es":"beberán","pt":"beberão"}},
+        {"subject":"third-plural","sentences":{"en":"They will drink tomorrow.","es":"Ellos beberán mañana.","pt":"Eles beberão amanhã."},"targetWords":{"en":"drink","es":"beberán","pt":"beberão"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I will not drink tomorrow.","es":"Yo no beberé mañana.","pt":"Eu não beberei amanhã."},"targetWords":{"en":"drink","es":"beberé","pt":"beberei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not drink tomorrow.","es":"Tú no beberás mañana.","pt":"Você não beberá amanhã."},"targetWords":{"en":"drink","es":"beberás","pt":"beberá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not drink tomorrow.","es":"Él no beberá mañana.","pt":"Ele não beberá amanhã."},"targetWords":{"en":"drink","es":"beberá","pt":"beberá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not drink tomorrow.","es":"Ella no beberá mañana.","pt":"Ela não beberá amanhã."},"targetWords":{"en":"drink","es":"beberá","pt":"beberá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not drink water tomorrow.","es":"No beberá agua mañana.","pt":"Não beberá água amanhã."},"targetWords":{"en":"drink","es":"beberá","pt":"beberá"}},
+        {"subject":"first-plural","sentences":{"en":"We will not drink tomorrow.","es":"Nosotros no beberemos mañana.","pt":"Nós não beberemos amanhã."},"targetWords":{"en":"drink","es":"beberemos","pt":"beberemos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not drink tomorrow.","es":"Ustedes no beberán mañana.","pt":"Vocês não beberão amanhã."},"targetWords":{"en":"drink","es":"beberán","pt":"beberão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not drink tomorrow.","es":"Ellos no beberán mañana.","pt":"Eles não beberão amanhã."},"targetWords":{"en":"drink","es":"beberán","pt":"beberão"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Will I drink tomorrow?","es":"¿Beberé yo mañana?","pt":"Eu beberei amanhã?"},"targetWords":{"en":"drink","es":"Beberé","pt":"beberei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you drink tomorrow?","es":"¿Beberás tú mañana?","pt":"Você beberá amanhã?"},"targetWords":{"en":"drink","es":"Beberás","pt":"beberá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he drink tomorrow?","es":"¿Beberá él mañana?","pt":"Ele beberá amanhã?"},"targetWords":{"en":"drink","es":"Beberá","pt":"beberá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she drink tomorrow?","es":"¿Beberá ella mañana?","pt":"Ela beberá amanhã?"},"targetWords":{"en":"drink","es":"Beberá","pt":"beberá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it drink water tomorrow?","es":"¿Beberá agua mañana?","pt":"Beberá água amanhã?"},"targetWords":{"en":"drink","es":"Beberá","pt":"Beberá"}},
+        {"subject":"first-plural","sentences":{"en":"Will we drink tomorrow?","es":"¿Beberemos nosotros mañana?","pt":"Nós beberemos amanhã?"},"targetWords":{"en":"drink","es":"Beberemos","pt":"beberemos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you drink tomorrow?","es":"¿Beberán ustedes mañana?","pt":"Vocês beberão amanhã?"},"targetWords":{"en":"drink","es":"Beberán","pt":"beberão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they drink tomorrow?","es":"¿Beberán ellos mañana?","pt":"Eles beberão amanhã?"},"targetWords":{"en":"drink","es":"Beberán","pt":"beberão"}}
+      ]
+    }}
+  }
+}
