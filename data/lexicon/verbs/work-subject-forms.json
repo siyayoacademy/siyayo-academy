@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "work",
+  "tense": "present",
+  "form": "affirmative",
+  "subjects": [
+    { "subject": "first-singular", "sentences": { "en": "I work every day.", "es": "Yo trabajo todos los días.", "pt": "Eu trabalho todos os dias." }, "targetWords": { "en": "work", "es": "trabajo", "pt": "trabalho" } },
+    { "subject": "second-singular", "sentences": { "en": "You work every day.", "es": "Tú trabajas todos los días.", "pt": "Você trabalha todos os dias." }, "targetWords": { "en": "work", "es": "trabajas", "pt": "trabalha" } },
+    { "subject": "third-singular-masculine", "sentences": { "en": "He works every day.", "es": "Él trabaja todos los días.", "pt": "Ele trabalha todos os dias." }, "targetWords": { "en": "works", "es": "trabaja", "pt": "trabalha" } },
+    { "subject": "third-singular-feminine", "sentences": { "en": "She works every day.", "es": "Ella trabaja todos los días.", "pt": "Ela trabalha todos os dias." }, "targetWords": { "en": "works", "es": "trabaja", "pt": "trabalha" } },
+    { "subject": "third-singular-neuter", "sentences": { "en": "It works every day.", "es": "Esto funciona todos los días.", "pt": "Isto funciona todos os dias." }, "targetWords": { "en": "works", "es": "funciona", "pt": "funciona" } },
+    { "subject": "first-plural", "sentences": { "en": "We work every day.", "es": "Nosotros trabajamos todos los días.", "pt": "Nós trabalhamos todos os dias." }, "targetWords": { "en": "work", "es": "trabajamos", "pt": "trabalhamos" } },
+    { "subject": "second-plural", "sentences": { "en": "You work every day.", "es": "Ustedes trabajan todos los días.", "pt": "Vocês trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } },
+    { "subject": "third-plural", "sentences": { "en": "They work every day.", "es": "Ellos trabajan todos los días.", "pt": "Eles trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } }
+  ]
+}
