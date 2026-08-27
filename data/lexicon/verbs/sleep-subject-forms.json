@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "sleep",
+  "tenses": {
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I sleep every night.","es":"Yo duermo todas las noches.","pt":"Eu durmo todas as noites."},"targetWords":{"en":"sleep","es":"duermo","pt":"durmo"}},
+        {"subject":"second-singular","sentences":{"en":"You sleep every night.","es":"Tú duermes todas las noches.","pt":"Você dorme todas as noites."},"targetWords":{"en":"sleep","es":"duermes","pt":"dorme"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He sleeps every night.","es":"Él duerme todas las noches.","pt":"Ele dorme todas as noites."},"targetWords":{"en":"sleeps","es":"duerme","pt":"dorme"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She sleeps every night.","es":"Ella duerme todas las noches.","pt":"Ela dorme todas as noites."},"targetWords":{"en":"sleeps","es":"duerme","pt":"dorme"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It sleeps near the window every night.","es":"Duerme cerca de la ventana todas las noches.","pt":"Dorme perto da janela todas as noites."},"targetWords":{"en":"sleeps","es":"Duerme","pt":"Dorme"}},
+        {"subject":"first-plural","sentences":{"en":"We sleep every night.","es":"Nosotros dormimos todas las noches.","pt":"Nós dormimos todas as noites."},"targetWords":{"en":"sleep","es":"dormimos","pt":"dormimos"}},
+        {"subject":"second-plural","sentences":{"en":"You sleep every night.","es":"Ustedes duermen todas las noches.","pt":"Vocês dormem todas as noites."},"targetWords":{"en":"sleep","es":"duermen","pt":"dormem"}},
+        {"subject":"third-plural","sentences":{"en":"They sleep every night.","es":"Ellos duermen todas las noches.","pt":"Eles dormem todas as noites."},"targetWords":{"en":"sleep","es":"duermen","pt":"dormem"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not sleep every night.","es":"Yo no duermo todas las noches.","pt":"Eu não durmo todas as noites."},"targetWords":{"en":"sleep","es":"duermo","pt":"durmo"}},
+        {"subject":"second-singular","sentences":{"en":"You do not sleep every night.","es":"Tú no duermes todas las noches.","pt":"Você não dorme todas as noites."},"targetWords":{"en":"sleep","es":"duermes","pt":"dorme"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not sleep every night.","es":"Él no duerme todas las noches.","pt":"Ele não dorme todas as noites."},"targetWords":{"en":"sleep","es":"duerme","pt":"dorme"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not sleep every night.","es":"Ella no duerme todas las noches.","pt":"Ela não dorme todas as noites."},"targetWords":{"en":"sleep","es":"duerme","pt":"dorme"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not sleep near the window every night.","es":"No duerme cerca de la ventana todas las noches.","pt":"Não dorme perto da janela todas as noites."},"targetWords":{"en":"sleep","es":"duerme","pt":"dorme"}},
+        {"subject":"first-plural","sentences":{"en":"We do not sleep every night.","es":"Nosotros no dormimos todas las noches.","pt":"Nós não dormimos todas as noites."},"targetWords":{"en":"sleep","es":"dormimos","pt":"dormimos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not sleep every night.","es":"Ustedes no duermen todas las noches.","pt":"Vocês não dormem todas as noites."},"targetWords":{"en":"sleep","es":"duermen","pt":"dormem"}},
+        {"subject":"third-plural","sentences":{"en":"They do not sleep every night.","es":"Ellos no duermen todas las noches.","pt":"Eles não dormem todas as noites."},"targetWords":{"en":"sleep","es":"duermen","pt":"dormem"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I sleep every night?","es":"¿Duermo yo todas las noches?","pt":"Eu durmo todas as noites?"},"targetWords":{"en":"sleep","es":"Duermo","pt":"durmo"}},
+        {"subject":"second-singular","sentences":{"en":"Do you sleep every night?","es":"¿Duermes tú todas las noches?","pt":"Você dorme todas as noites?"},"targetWords":{"en":"sleep","es":"Duermes","pt":"dorme"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he sleep every night?","es":"¿Duerme él todas las noches?","pt":"Ele dorme todas as noites?"},"targetWords":{"en":"sleep","es":"Duerme","pt":"dorme"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she sleep every night?","es":"¿Duerme ella todas las noches?","pt":"Ela dorme todas as noites?"},"targetWords":{"en":"sleep","es":"Duerme","pt":"dorme"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it sleep near the window every night?","es":"¿Duerme cerca de la ventana todas las noches?","pt":"Dorme perto da janela todas as noites?"},"targetWords":{"en":"sleep","es":"Duerme","pt":"Dorme"}},
+        {"subject":"first-plural","sentences":{"en":"Do we sleep every night?","es":"¿Dormimos nosotros todas las noches?","pt":"Nós dormimos todas as noites?"},"targetWords":{"en":"sleep","es":"Dormimos","pt":"dormimos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you sleep every night?","es":"¿Duermen ustedes todas las noches?","pt":"Vocês dormem todas as noites?"},"targetWords":{"en":"sleep","es":"Duermen","pt":"dormem"}},
+        {"subject":"third-plural","sentences":{"en":"Do they sleep every night?","es":"¿Duermen ellos todas las noches?","pt":"Eles dormem todas as noites?"},"targetWords":{"en":"sleep","es":"Duermen","pt":"dormem"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I slept last night.","es":"Yo dormí anoche.","pt":"Eu dormi ontem à noite."},"targetWords":{"en":"slept","es":"dormí","pt":"dormi"}},
+        {"subject":"second-singular","sentences":{"en":"You slept last night.","es":"Tú dormiste anoche.","pt":"Você dormiu ontem à noite."},"targetWords":{"en":"slept","es":"dormiste","pt":"dormiu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He slept last night.","es":"Él durmió anoche.","pt":"Ele dormiu ontem à noite."},"targetWords":{"en":"slept","es":"durmió","pt":"dormiu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She slept last night.","es":"Ella durmió anoche.","pt":"Ela dormiu ontem à noite."},"targetWords":{"en":"slept","es":"durmió","pt":"dormiu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It slept near the window last night.","es":"Durmió cerca de la ventana anoche.","pt":"Dormiu perto da janela ontem à noite."},"targetWords":{"en":"slept","es":"Durmió","pt":"Dormiu"}},
+        {"subject":"first-plural","sentences":{"en":"We slept last night.","es":"Nosotros dormimos anoche.","pt":"Nós dormimos ontem à noite."},"targetWords":{"en":"slept","es":"dormimos","pt":"dormimos"}},
+        {"subject":"second-plural","sentences":{"en":"You slept last night.","es":"Ustedes durmieron anoche.","pt":"Vocês dormiram ontem à noite."},"targetWords":{"en":"slept","es":"durmieron","pt":"dormiram"}},
+        {"subject":"third-plural","sentences":{"en":"They slept last night.","es":"Ellos durmieron anoche.","pt":"Eles dormiram ontem à noite."},"targetWords":{"en":"slept","es":"durmieron","pt":"dormiram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not sleep last night.","es":"Yo no dormí anoche.","pt":"Eu não dormi ontem à noite."},"targetWords":{"en":"sleep","es":"dormí","pt":"dormi"}},
+        {"subject":"second-singular","sentences":{"en":"You did not sleep last night.","es":"Tú no dormiste anoche.","pt":"Você não dormiu ontem à noite."},"targetWords":{"en":"sleep","es":"dormiste","pt":"dormiu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not sleep last night.","es":"Él no durmió anoche.","pt":"Ele não dormiu ontem à noite."},"targetWords":{"en":"sleep","es":"durmió","pt":"dormiu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not sleep last night.","es":"Ella no durmió anoche.","pt":"Ela não dormiu ontem à noite."},"targetWords":{"en":"sleep","es":"durmió","pt":"dormiu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not sleep near the window last night.","es":"No durmió cerca de la ventana anoche.","pt":"Não dormiu perto da janela ontem à noite."},"targetWords":{"en":"sleep","es":"durmió","pt":"dormiu"}},
+        {"subject":"first-plural","sentences":{"en":"We did not sleep last night.","es":"Nosotros no dormimos anoche.","pt":"Nós não dormimos ontem à noite."},"targetWords":{"en":"sleep","es":"dormimos","pt":"dormimos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not sleep last night.","es":"Ustedes no durmieron anoche.","pt":"Vocês não dormiram ontem à noite."},"targetWords":{"en":"sleep","es":"durmieron","pt":"dormiram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not sleep last night.","es":"Ellos no durmieron anoche.","pt":"Eles não dormiram ontem à noite."},"targetWords":{"en":"sleep","es":"durmieron","pt":"dormiram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I sleep last night?","es":"¿Dormí yo anoche?","pt":"Eu dormi ontem à noite?"},"targetWords":{"en":"sleep","es":"Dormí","pt":"dormi"}},
+        {"subject":"second-singular","sentences":{"en":"Did you sleep last night?","es":"¿Dormiste tú anoche?","pt":"Você dormiu ontem à noite?"},"targetWords":{"en":"sleep","es":"Dormiste","pt":"dormiu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he sleep last night?","es":"¿Durmió él anoche?","pt":"Ele dormiu ontem à noite?"},"targetWords":{"en":"sleep","es":"Durmió","pt":"dormiu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she sleep last night?","es":"¿Durmió ella anoche?","pt":"Ela dormiu ontem à noite?"},"targetWords":{"en":"sleep","es":"Durmió","pt":"dormiu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it sleep near the window last night?","es":"¿Durmió cerca de la ventana anoche?","pt":"Dormiu perto da janela ontem à noite?"},"targetWords":{"en":"sleep","es":"Durmió","pt":"Dormiu"}},
+        {"subject":"first-plural","sentences":{"en":"Did we sleep last night?","es":"¿Dormimos nosotros anoche?","pt":"Nós dormimos ontem à noite?"},"targetWords":{"en":"sleep","es":"Dormimos","pt":"dormimos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you sleep last night?","es":"¿Durmieron ustedes anoche?","pt":"Vocês dormiram ontem à noite?"},"targetWords":{"en":"sleep","es":"Durmieron","pt":"dormiram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they sleep last night?","es":"¿Durmieron ellos anoche?","pt":"Eles dormiram ontem à noite?"},"targetWords":{"en":"sleep","es":"Durmieron","pt":"dormiram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will sleep tonight.","es":"Yo dormiré esta noche.","pt":"Eu dormirei esta noite."},"targetWords":{"en":"sleep","es":"dormiré","pt":"dormirei"}},
+        {"subject":"second-singular","sentences":{"en":"You will sleep tonight.","es":"Tú dormirás esta noche.","pt":"Você dormirá esta noite."},"targetWords":{"en":"sleep","es":"dormirás","pt":"dormirá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will sleep tonight.","es":"Él dormirá esta noche.","pt":"Ele dormirá esta noite."},"targetWords":{"en":"sleep","es":"dormirá","pt":"dormirá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will sleep tonight.","es":"Ella dormirá esta noche.","pt":"Ela dormirá esta noite."},"targetWords":{"en":"sleep","es":"dormirá","pt":"dormirá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will sleep near the window tonight.","es":"Dormirá cerca de la ventana esta noche.","pt":"Dormirá perto da janela esta noite."},"targetWords":{"en":"sleep","es":"Dormirá","pt":"Dormirá"}},
+        {"subject":"first-plural","sentences":{"en":"We will sleep tonight.","es":"Nosotros dormiremos esta noche.","pt":"Nós dormiremos esta noite."},"targetWords":{"en":"sleep","es":"dormiremos","pt":"dormiremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will sleep tonight.","es":"Ustedes dormirán esta noche.","pt":"Vocês dormirão esta noite."},"targetWords":{"en":"sleep","es":"dormirán","pt":"dormirão"}},
+        {"subject":"third-plural","sentences":{"en":"They will sleep tonight.","es":"Ellos dormirán esta noche.","pt":"Eles dormirão esta noite."},"targetWords":{"en":"sleep","es":"dormirán","pt":"dormirão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not sleep tonight.","es":"Yo no dormiré esta noche.","pt":"Eu não dormirei esta noite."},"targetWords":{"en":"sleep","es":"dormiré","pt":"dormirei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not sleep tonight.","es":"Tú no dormirás esta noche.","pt":"Você não dormirá esta noite."},"targetWords":{"en":"sleep","es":"dormirás","pt":"dormirá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not sleep tonight.","es":"Él no dormirá esta noche.","pt":"Ele não dormirá esta noite."},"targetWords":{"en":"sleep","es":"dormirá","pt":"dormirá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not sleep tonight.","es":"Ella no dormirá esta noche.","pt":"Ela não dormirá esta noite."},"targetWords":{"en":"sleep","es":"dormirá","pt":"dormirá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not sleep near the window tonight.","es":"No dormirá cerca de la ventana esta noche.","pt":"Não dormirá perto da janela esta noite."},"targetWords":{"en":"sleep","es":"dormirá","pt":"dormirá"}},
+        {"subject":"first-plural","sentences":{"en":"We will not sleep tonight.","es":"Nosotros no dormiremos esta noche.","pt":"Nós não dormiremos esta noite."},"targetWords":{"en":"sleep","es":"dormiremos","pt":"dormiremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not sleep tonight.","es":"Ustedes no dormirán esta noche.","pt":"Vocês não dormirão esta noite."},"targetWords":{"en":"sleep","es":"dormirán","pt":"dormirão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not sleep tonight.","es":"Ellos no dormirán esta noche.","pt":"Eles não dormirão esta noite."},"targetWords":{"en":"sleep","es":"dormirán","pt":"dormirão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I sleep tonight?","es":"¿Dormiré yo esta noche?","pt":"Eu dormirei esta noite?"},"targetWords":{"en":"sleep","es":"Dormiré","pt":"dormirei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you sleep tonight?","es":"¿Dormirás tú esta noche?","pt":"Você dormirá esta noite?"},"targetWords":{"en":"sleep","es":"Dormirás","pt":"dormirá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he sleep tonight?","es":"¿Dormirá él esta noche?","pt":"Ele dormirá esta noite?"},"targetWords":{"en":"sleep","es":"Dormirá","pt":"dormirá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she sleep tonight?","es":"¿Dormirá ella esta noche?","pt":"Ela dormirá esta noite?"},"targetWords":{"en":"sleep","es":"Dormirá","pt":"dormirá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it sleep near the window tonight?","es":"¿Dormirá cerca de la ventana esta noche?","pt":"Dormirá perto da janela esta noite?"},"targetWords":{"en":"sleep","es":"Dormirá","pt":"Dormirá"}},
+        {"subject":"first-plural","sentences":{"en":"Will we sleep tonight?","es":"¿Dormiremos nosotros esta noche?","pt":"Nós dormiremos esta noite?"},"targetWords":{"en":"sleep","es":"Dormiremos","pt":"dormiremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you sleep tonight?","es":"¿Dormirán ustedes esta noche?","pt":"Vocês dormirão esta noite?"},"targetWords":{"en":"sleep","es":"Dormirán","pt":"dormirão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they sleep tonight?","es":"¿Dormirán ellos esta noche?","pt":"Eles dormirão esta noite?"},"targetWords":{"en":"sleep","es":"Dormirán","pt":"dormirão"}}]}}
+  }
+}
