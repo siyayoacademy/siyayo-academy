@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "talk",
+  "tenses": {
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I talk every day.","es":"Yo hablo todos los días.","pt":"Eu falo todos os dias."},"targetWords":{"en":"talk","es":"hablo","pt":"falo"}},
+        {"subject":"second-singular","sentences":{"en":"You talk every day.","es":"Tú hablas todos los días.","pt":"Você fala todos os dias."},"targetWords":{"en":"talk","es":"hablas","pt":"fala"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He talks every day.","es":"Él habla todos los días.","pt":"Ele fala todos os dias."},"targetWords":{"en":"talks","es":"habla","pt":"fala"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She talks every day.","es":"Ella habla todos los días.","pt":"Ela fala todos os dias."},"targetWords":{"en":"talks","es":"habla","pt":"fala"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It talks to the user every day.","es":"Habla con el usuario todos los días.","pt":"Fala com o usuário todos os dias."},"targetWords":{"en":"talks","es":"Habla","pt":"Fala"}},
+        {"subject":"first-plural","sentences":{"en":"We talk every day.","es":"Nosotros hablamos todos los días.","pt":"Nós falamos todos os dias."},"targetWords":{"en":"talk","es":"hablamos","pt":"falamos"}},
+        {"subject":"second-plural","sentences":{"en":"You talk every day.","es":"Ustedes hablan todos los días.","pt":"Vocês falam todos os dias."},"targetWords":{"en":"talk","es":"hablan","pt":"falam"}},
+        {"subject":"third-plural","sentences":{"en":"They talk every day.","es":"Ellos hablan todos los días.","pt":"Eles falam todos os dias."},"targetWords":{"en":"talk","es":"hablan","pt":"falam"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not talk every day.","es":"Yo no hablo todos los días.","pt":"Eu não falo todos os dias."},"targetWords":{"en":"talk","es":"hablo","pt":"falo"}},
+        {"subject":"second-singular","sentences":{"en":"You do not talk every day.","es":"Tú no hablas todos los días.","pt":"Você não fala todos os dias."},"targetWords":{"en":"talk","es":"hablas","pt":"fala"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not talk every day.","es":"Él no habla todos los días.","pt":"Ele não fala todos os dias."},"targetWords":{"en":"talk","es":"habla","pt":"fala"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not talk every day.","es":"Ella no habla todos los días.","pt":"Ela não fala todos os dias."},"targetWords":{"en":"talk","es":"habla","pt":"fala"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not talk to the user every day.","es":"No habla con el usuario todos los días.","pt":"Não fala com o usuário todos os dias."},"targetWords":{"en":"talk","es":"habla","pt":"fala"}},
+        {"subject":"first-plural","sentences":{"en":"We do not talk every day.","es":"Nosotros no hablamos todos los días.","pt":"Nós não falamos todos os dias."},"targetWords":{"en":"talk","es":"hablamos","pt":"falamos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not talk every day.","es":"Ustedes no hablan todos los días.","pt":"Vocês não falam todos os dias."},"targetWords":{"en":"talk","es":"hablan","pt":"falam"}},
+        {"subject":"third-plural","sentences":{"en":"They do not talk every day.","es":"Ellos no hablan todos los días.","pt":"Eles não falam todos os dias."},"targetWords":{"en":"talk","es":"hablan","pt":"falam"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I talk every day?","es":"¿Hablo yo todos los días?","pt":"Eu falo todos os dias?"},"targetWords":{"en":"talk","es":"Hablo","pt":"falo"}},
+        {"subject":"second-singular","sentences":{"en":"Do you talk every day?","es":"¿Hablas tú todos los días?","pt":"Você fala todos os dias?"},"targetWords":{"en":"talk","es":"Hablas","pt":"fala"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he talk every day?","es":"¿Habla él todos los días?","pt":"Ele fala todos os dias?"},"targetWords":{"en":"talk","es":"Habla","pt":"fala"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she talk every day?","es":"¿Habla ella todos los días?","pt":"Ela fala todos os dias?"},"targetWords":{"en":"talk","es":"Habla","pt":"fala"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it talk to the user every day?","es":"¿Habla con el usuario todos los días?","pt":"Fala com o usuário todos os dias?"},"targetWords":{"en":"talk","es":"Habla","pt":"Fala"}},
+        {"subject":"first-plural","sentences":{"en":"Do we talk every day?","es":"¿Hablamos nosotros todos los días?","pt":"Nós falamos todos os dias?"},"targetWords":{"en":"talk","es":"Hablamos","pt":"falamos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you talk every day?","es":"¿Hablan ustedes todos los días?","pt":"Vocês falam todos os dias?"},"targetWords":{"en":"talk","es":"Hablan","pt":"falam"}},
+        {"subject":"third-plural","sentences":{"en":"Do they talk every day?","es":"¿Hablan ellos todos los días?","pt":"Eles falam todos os dias?"},"targetWords":{"en":"talk","es":"Hablan","pt":"falam"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I talked yesterday.","es":"Yo hablé ayer.","pt":"Eu falei ontem."},"targetWords":{"en":"talked","es":"hablé","pt":"falei"}},
+        {"subject":"second-singular","sentences":{"en":"You talked yesterday.","es":"Tú hablaste ayer.","pt":"Você falou ontem."},"targetWords":{"en":"talked","es":"hablaste","pt":"falou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He talked yesterday.","es":"Él habló ayer.","pt":"Ele falou ontem."},"targetWords":{"en":"talked","es":"habló","pt":"falou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She talked yesterday.","es":"Ella habló ayer.","pt":"Ela falou ontem."},"targetWords":{"en":"talked","es":"habló","pt":"falou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It talked to the user yesterday.","es":"Habló con el usuario ayer.","pt":"Falou com o usuário ontem."},"targetWords":{"en":"talked","es":"Habló","pt":"Falou"}},
+        {"subject":"first-plural","sentences":{"en":"We talked yesterday.","es":"Nosotros hablamos ayer.","pt":"Nós falamos ontem."},"targetWords":{"en":"talked","es":"hablamos","pt":"falamos"}},
+        {"subject":"second-plural","sentences":{"en":"You talked yesterday.","es":"Ustedes hablaron ayer.","pt":"Vocês falaram ontem."},"targetWords":{"en":"talked","es":"hablaron","pt":"falaram"}},
+        {"subject":"third-plural","sentences":{"en":"They talked yesterday.","es":"Ellos hablaron ayer.","pt":"Eles falaram ontem."},"targetWords":{"en":"talked","es":"hablaron","pt":"falaram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not talk yesterday.","es":"Yo no hablé ayer.","pt":"Eu não falei ontem."},"targetWords":{"en":"talk","es":"hablé","pt":"falei"}},
+        {"subject":"second-singular","sentences":{"en":"You did not talk yesterday.","es":"Tú no hablaste ayer.","pt":"Você não falou ontem."},"targetWords":{"en":"talk","es":"hablaste","pt":"falou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not talk yesterday.","es":"Él no habló ayer.","pt":"Ele não falou ontem."},"targetWords":{"en":"talk","es":"habló","pt":"falou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not talk yesterday.","es":"Ella no habló ayer.","pt":"Ela não falou ontem."},"targetWords":{"en":"talk","es":"habló","pt":"falou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not talk to the user yesterday.","es":"No habló con el usuario ayer.","pt":"Não falou com o usuário ontem."},"targetWords":{"en":"talk","es":"habló","pt":"falou"}},
+        {"subject":"first-plural","sentences":{"en":"We did not talk yesterday.","es":"Nosotros no hablamos ayer.","pt":"Nós não falamos ontem."},"targetWords":{"en":"talk","es":"hablamos","pt":"falamos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not talk yesterday.","es":"Ustedes no hablaron ayer.","pt":"Vocês não falaram ontem."},"targetWords":{"en":"talk","es":"hablaron","pt":"falaram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not talk yesterday.","es":"Ellos no hablaron ayer.","pt":"Eles não falaram ontem."},"targetWords":{"en":"talk","es":"hablaron","pt":"falaram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I talk yesterday?","es":"¿Hablé yo ayer?","pt":"Eu falei ontem?"},"targetWords":{"en":"talk","es":"Hablé","pt":"falei"}},
+        {"subject":"second-singular","sentences":{"en":"Did you talk yesterday?","es":"¿Hablaste tú ayer?","pt":"Você falou ontem?"},"targetWords":{"en":"talk","es":"Hablaste","pt":"falou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he talk yesterday?","es":"¿Habló él ayer?","pt":"Ele falou ontem?"},"targetWords":{"en":"talk","es":"Habló","pt":"falou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she talk yesterday?","es":"¿Habló ella ayer?","pt":"Ela falou ontem?"},"targetWords":{"en":"talk","es":"Habló","pt":"falou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it talk to the user yesterday?","es":"¿Habló con el usuario ayer?","pt":"Falou com o usuário ontem?"},"targetWords":{"en":"talk","es":"Habló","pt":"Falou"}},
+        {"subject":"first-plural","sentences":{"en":"Did we talk yesterday?","es":"¿Hablamos nosotros ayer?","pt":"Nós falamos ontem?"},"targetWords":{"en":"talk","es":"Hablamos","pt":"falamos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you talk yesterday?","es":"¿Hablaron ustedes ayer?","pt":"Vocês falaram ontem?"},"targetWords":{"en":"talk","es":"Hablaron","pt":"falaram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they talk yesterday?","es":"¿Hablaron ellos ayer?","pt":"Eles falaram ontem?"},"targetWords":{"en":"talk","es":"Hablaron","pt":"falaram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will talk tomorrow.","es":"Yo hablaré mañana.","pt":"Eu falarei amanhã."},"targetWords":{"en":"talk","es":"hablaré","pt":"falarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will talk tomorrow.","es":"Tú hablarás mañana.","pt":"Você falará amanhã."},"targetWords":{"en":"talk","es":"hablarás","pt":"falará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will talk tomorrow.","es":"Él hablará mañana.","pt":"Ele falará amanhã."},"targetWords":{"en":"talk","es":"hablará","pt":"falará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will talk tomorrow.","es":"Ella hablará mañana.","pt":"Ela falará amanhã."},"targetWords":{"en":"talk","es":"hablará","pt":"falará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will talk to the user tomorrow.","es":"Hablará con el usuario mañana.","pt":"Falará com o usuário amanhã."},"targetWords":{"en":"talk","es":"Hablará","pt":"Falará"}},
+        {"subject":"first-plural","sentences":{"en":"We will talk tomorrow.","es":"Nosotros hablaremos mañana.","pt":"Nós falaremos amanhã."},"targetWords":{"en":"talk","es":"hablaremos","pt":"falaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will talk tomorrow.","es":"Ustedes hablarán mañana.","pt":"Vocês falarão amanhã."},"targetWords":{"en":"talk","es":"hablarán","pt":"falarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will talk tomorrow.","es":"Ellos hablarán mañana.","pt":"Eles falarão amanhã."},"targetWords":{"en":"talk","es":"hablarán","pt":"falarão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not talk tomorrow.","es":"Yo no hablaré mañana.","pt":"Eu não falarei amanhã."},"targetWords":{"en":"talk","es":"hablaré","pt":"falarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not talk tomorrow.","es":"Tú no hablarás mañana.","pt":"Você não falará amanhã."},"targetWords":{"en":"talk","es":"hablarás","pt":"falará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not talk tomorrow.","es":"Él no hablará mañana.","pt":"Ele não falará amanhã."},"targetWords":{"en":"talk","es":"hablará","pt":"falará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not talk tomorrow.","es":"Ella no hablará mañana.","pt":"Ela não falará amanhã."},"targetWords":{"en":"talk","es":"hablará","pt":"falará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not talk to the user tomorrow.","es":"No hablará con el usuario mañana.","pt":"Não falará com o usuário amanhã."},"targetWords":{"en":"talk","es":"hablará","pt":"falará"}},
+        {"subject":"first-plural","sentences":{"en":"We will not talk tomorrow.","es":"Nosotros no hablaremos mañana.","pt":"Nós não falaremos amanhã."},"targetWords":{"en":"talk","es":"hablaremos","pt":"falaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not talk tomorrow.","es":"Ustedes no hablarán mañana.","pt":"Vocês não falarão amanhã."},"targetWords":{"en":"talk","es":"hablarán","pt":"falarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not talk tomorrow.","es":"Ellos no hablarán mañana.","pt":"Eles não falarão amanhã."},"targetWords":{"en":"talk","es":"hablarán","pt":"falarão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I talk tomorrow?","es":"¿Hablaré yo mañana?","pt":"Eu falarei amanhã?"},"targetWords":{"en":"talk","es":"Hablaré","pt":"falarei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you talk tomorrow?","es":"¿Hablarás tú mañana?","pt":"Você falará amanhã?"},"targetWords":{"en":"talk","es":"Hablarás","pt":"falará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he talk tomorrow?","es":"¿Hablará él mañana?","pt":"Ele falará amanhã?"},"targetWords":{"en":"talk","es":"Hablará","pt":"falará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she talk tomorrow?","es":"¿Hablará ella mañana?","pt":"Ela falará amanhã?"},"targetWords":{"en":"talk","es":"Hablará","pt":"falará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it talk to the user tomorrow?","es":"¿Hablará con el usuario mañana?","pt":"Falará com o usuário amanhã?"},"targetWords":{"en":"talk","es":"Hablará","pt":"Falará"}},
+        {"subject":"first-plural","sentences":{"en":"Will we talk tomorrow?","es":"¿Hablaremos nosotros mañana?","pt":"Nós falaremos amanhã?"},"targetWords":{"en":"talk","es":"Hablaremos","pt":"falaremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you talk tomorrow?","es":"¿Hablarán ustedes mañana?","pt":"Vocês falarão amanhã?"},"targetWords":{"en":"talk","es":"Hablarán","pt":"falarão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they talk tomorrow?","es":"¿Hablarán ellos mañana?","pt":"Eles falarão amanhã?"},"targetWords":{"en":"talk","es":"Hablarán","pt":"falarão"}}]}}
+  }
+}
