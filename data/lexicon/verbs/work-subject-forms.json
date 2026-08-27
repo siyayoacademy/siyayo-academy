@@ -1,38 +1,75 @@
 {
   "$schema": "../../schemas/verb-subject-forms.schema.json",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "verb": "work",
-  "tense": "present",
-  "forms": {
-    "affirmative": [
-      { "subject": "first-singular", "sentences": { "en": "I work every day.", "es": "Yo trabajo todos los días.", "pt": "Eu trabalho todos os dias." }, "targetWords": { "en": "work", "es": "trabajo", "pt": "trabalho" } },
-      { "subject": "second-singular", "sentences": { "en": "You work every day.", "es": "Tú trabajas todos los días.", "pt": "Você trabalha todos os dias." }, "targetWords": { "en": "work", "es": "trabajas", "pt": "trabalha" } },
-      { "subject": "third-singular-masculine", "sentences": { "en": "He works every day.", "es": "Él trabaja todos los días.", "pt": "Ele trabalha todos os dias." }, "targetWords": { "en": "works", "es": "trabaja", "pt": "trabalha" } },
-      { "subject": "third-singular-feminine", "sentences": { "en": "She works every day.", "es": "Ella trabaja todos los días.", "pt": "Ela trabalha todos os dias." }, "targetWords": { "en": "works", "es": "trabaja", "pt": "trabalha" } },
-      { "subject": "third-singular-neuter", "sentences": { "en": "It works every day.", "es": "Esto funciona todos los días.", "pt": "Isto funciona todos os dias." }, "targetWords": { "en": "works", "es": "funciona", "pt": "funciona" } },
-      { "subject": "first-plural", "sentences": { "en": "We work every day.", "es": "Nosotros trabajamos todos los días.", "pt": "Nós trabalhamos todos os dias." }, "targetWords": { "en": "work", "es": "trabajamos", "pt": "trabalhamos" } },
-      { "subject": "second-plural", "sentences": { "en": "You work every day.", "es": "Ustedes trabajan todos los días.", "pt": "Vocês trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } },
-      { "subject": "third-plural", "sentences": { "en": "They work every day.", "es": "Ellos trabajan todos los días.", "pt": "Eles trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } }
-    ],
-    "negative": [
-      { "subject": "first-singular", "sentences": { "en": "I do not work every day.", "es": "Yo no trabajo todos los días.", "pt": "Eu não trabalho todos os dias." }, "targetWords": { "en": "work", "es": "trabajo", "pt": "trabalho" } },
-      { "subject": "second-singular", "sentences": { "en": "You do not work every day.", "es": "Tú no trabajas todos los días.", "pt": "Você não trabalha todos os dias." }, "targetWords": { "en": "work", "es": "trabajas", "pt": "trabalha" } },
-      { "subject": "third-singular-masculine", "sentences": { "en": "He does not work every day.", "es": "Él no trabaja todos los días.", "pt": "Ele não trabalha todos os dias." }, "targetWords": { "en": "work", "es": "trabaja", "pt": "trabalha" } },
-      { "subject": "third-singular-feminine", "sentences": { "en": "She does not work every day.", "es": "Ella no trabaja todos los días.", "pt": "Ela não trabalha todos os dias." }, "targetWords": { "en": "work", "es": "trabaja", "pt": "trabalha" } },
-      { "subject": "third-singular-neuter", "sentences": { "en": "It does not work every day.", "es": "Esto no funciona todos los días.", "pt": "Isto não funciona todos os dias." }, "targetWords": { "en": "work", "es": "funciona", "pt": "funciona" } },
-      { "subject": "first-plural", "sentences": { "en": "We do not work every day.", "es": "Nosotros no trabajamos todos los días.", "pt": "Nós não trabalhamos todos os dias." }, "targetWords": { "en": "work", "es": "trabajamos", "pt": "trabalhamos" } },
-      { "subject": "second-plural", "sentences": { "en": "You do not work every day.", "es": "Ustedes no trabajan todos los días.", "pt": "Vocês não trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } },
-      { "subject": "third-plural", "sentences": { "en": "They do not work every day.", "es": "Ellos no trabajan todos los días.", "pt": "Eles não trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } }
-    ],
-    "interrogative": [
-      { "subject": "first-singular", "sentences": { "en": "Do I work every day?", "es": "¿Trabajo yo todos los días?", "pt": "Eu trabalho todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajo", "pt": "trabalho" } },
-      { "subject": "second-singular", "sentences": { "en": "Do you work every day?", "es": "¿Trabajas tú todos los días?", "pt": "Você trabalha todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajas", "pt": "trabalha" } },
-      { "subject": "third-singular-masculine", "sentences": { "en": "Does he work every day?", "es": "¿Trabaja él todos los días?", "pt": "Ele trabalha todos os dias?" }, "targetWords": { "en": "work", "es": "Trabaja", "pt": "trabalha" } },
-      { "subject": "third-singular-feminine", "sentences": { "en": "Does she work every day?", "es": "¿Trabaja ella todos los días?", "pt": "Ela trabalha todos os dias?" }, "targetWords": { "en": "work", "es": "Trabaja", "pt": "trabalha" } },
-      { "subject": "third-singular-neuter", "sentences": { "en": "Does it work every day?", "es": "¿Funciona esto todos los días?", "pt": "Isto funciona todos os dias?" }, "targetWords": { "en": "work", "es": "Funciona", "pt": "funciona" } },
-      { "subject": "first-plural", "sentences": { "en": "Do we work every day?", "es": "¿Trabajamos nosotros todos los días?", "pt": "Nós trabalhamos todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajamos", "pt": "trabalhamos" } },
-      { "subject": "second-plural", "sentences": { "en": "Do you work every day?", "es": "¿Trabajan ustedes todos los días?", "pt": "Vocês trabalham todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajan", "pt": "trabalham" } },
-      { "subject": "third-plural", "sentences": { "en": "Do they work every day?", "es": "¿Trabajan ellos todos los días?", "pt": "Eles trabalham todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajan", "pt": "trabalham" } }
-    ]
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {"subject":"first-singular","sentences":{"en":"I work every day.","es":"Yo trabajo todos los días.","pt":"Eu trabalho todos os dias."},"targetWords":{"en":"work","es":"trabajo","pt":"trabalho"}},
+          {"subject":"second-singular","sentences":{"en":"You work every day.","es":"Tú trabajas todos los días.","pt":"Você trabalha todos os dias."},"targetWords":{"en":"work","es":"trabajas","pt":"trabalha"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"He works every day.","es":"Él trabaja todos los días.","pt":"Ele trabalha todos os dias."},"targetWords":{"en":"works","es":"trabaja","pt":"trabalha"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"She works every day.","es":"Ella trabaja todos los días.","pt":"Ela trabalha todos os dias."},"targetWords":{"en":"works","es":"trabaja","pt":"trabalha"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"It works every day.","es":"Esto funciona todos los días.","pt":"Isto funciona todos os dias."},"targetWords":{"en":"works","es":"funciona","pt":"funciona"}},
+          {"subject":"first-plural","sentences":{"en":"We work every day.","es":"Nosotros trabajamos todos los días.","pt":"Nós trabalhamos todos os dias."},"targetWords":{"en":"work","es":"trabajamos","pt":"trabalhamos"}},
+          {"subject":"second-plural","sentences":{"en":"You work every day.","es":"Ustedes trabajan todos los días.","pt":"Vocês trabalham todos os dias."},"targetWords":{"en":"work","es":"trabajan","pt":"trabalham"}},
+          {"subject":"third-plural","sentences":{"en":"They work every day.","es":"Ellos trabajan todos los días.","pt":"Eles trabalham todos os dias."},"targetWords":{"en":"work","es":"trabajan","pt":"trabalham"}}
+        ],
+        "negative": [
+          {"subject":"first-singular","sentences":{"en":"I do not work every day.","es":"Yo no trabajo todos los días.","pt":"Eu não trabalho todos os dias."},"targetWords":{"en":"work","es":"trabajo","pt":"trabalho"}},
+          {"subject":"second-singular","sentences":{"en":"You do not work every day.","es":"Tú no trabajas todos los días.","pt":"Você não trabalha todos os dias."},"targetWords":{"en":"work","es":"trabajas","pt":"trabalha"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"He does not work every day.","es":"Él no trabaja todos los días.","pt":"Ele não trabalha todos os dias."},"targetWords":{"en":"work","es":"trabaja","pt":"trabalha"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"She does not work every day.","es":"Ella no trabaja todos los días.","pt":"Ela não trabalha todos os dias."},"targetWords":{"en":"work","es":"trabaja","pt":"trabalha"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"It does not work every day.","es":"Esto no funciona todos los días.","pt":"Isto não funciona todos os dias."},"targetWords":{"en":"work","es":"funciona","pt":"funciona"}},
+          {"subject":"first-plural","sentences":{"en":"We do not work every day.","es":"Nosotros no trabajamos todos los días.","pt":"Nós não trabalhamos todos os dias."},"targetWords":{"en":"work","es":"trabajamos","pt":"trabalhamos"}},
+          {"subject":"second-plural","sentences":{"en":"You do not work every day.","es":"Ustedes no trabajan todos los días.","pt":"Vocês não trabalham todos os dias."},"targetWords":{"en":"work","es":"trabajan","pt":"trabalham"}},
+          {"subject":"third-plural","sentences":{"en":"They do not work every day.","es":"Ellos no trabajan todos los días.","pt":"Eles não trabalham todos os dias."},"targetWords":{"en":"work","es":"trabajan","pt":"trabalham"}}
+        ],
+        "interrogative": [
+          {"subject":"first-singular","sentences":{"en":"Do I work every day?","es":"¿Trabajo yo todos los días?","pt":"Eu trabalho todos os dias?"},"targetWords":{"en":"work","es":"Trabajo","pt":"trabalho"}},
+          {"subject":"second-singular","sentences":{"en":"Do you work every day?","es":"¿Trabajas tú todos los días?","pt":"Você trabalha todos os dias?"},"targetWords":{"en":"work","es":"Trabajas","pt":"trabalha"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"Does he work every day?","es":"¿Trabaja él todos los días?","pt":"Ele trabalha todos os dias?"},"targetWords":{"en":"work","es":"Trabaja","pt":"trabalha"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"Does she work every day?","es":"¿Trabaja ella todos los días?","pt":"Ela trabalha todos os dias?"},"targetWords":{"en":"work","es":"Trabaja","pt":"trabalha"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"Does it work every day?","es":"¿Funciona esto todos los días?","pt":"Isto funciona todos os dias?"},"targetWords":{"en":"work","es":"Funciona","pt":"funciona"}},
+          {"subject":"first-plural","sentences":{"en":"Do we work every day?","es":"¿Trabajamos nosotros todos los días?","pt":"Nós trabalhamos todos os dias?"},"targetWords":{"en":"work","es":"Trabajamos","pt":"trabalhamos"}},
+          {"subject":"second-plural","sentences":{"en":"Do you work every day?","es":"¿Trabajan ustedes todos los días?","pt":"Vocês trabalham todos os dias?"},"targetWords":{"en":"work","es":"Trabajan","pt":"trabalham"}},
+          {"subject":"third-plural","sentences":{"en":"Do they work every day?","es":"¿Trabajan ellos todos los días?","pt":"Eles trabalham todos os dias?"},"targetWords":{"en":"work","es":"Trabajan","pt":"trabalham"}}
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {"subject":"first-singular","sentences":{"en":"I worked yesterday.","es":"Yo trabajé ayer.","pt":"Eu trabalhei ontem."},"targetWords":{"en":"worked","es":"trabajé","pt":"trabalhei"}},
+          {"subject":"second-singular","sentences":{"en":"You worked yesterday.","es":"Tú trabajaste ayer.","pt":"Você trabalhou ontem."},"targetWords":{"en":"worked","es":"trabajaste","pt":"trabalhou"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"He worked yesterday.","es":"Él trabajó ayer.","pt":"Ele trabalhou ontem."},"targetWords":{"en":"worked","es":"trabajó","pt":"trabalhou"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"She worked yesterday.","es":"Ella trabajó ayer.","pt":"Ela trabalhou ontem."},"targetWords":{"en":"worked","es":"trabajó","pt":"trabalhou"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"It worked yesterday.","es":"Esto funcionó ayer.","pt":"Isto funcionou ontem."},"targetWords":{"en":"worked","es":"funcionó","pt":"funcionou"}},
+          {"subject":"first-plural","sentences":{"en":"We worked yesterday.","es":"Nosotros trabajamos ayer.","pt":"Nós trabalhamos ontem."},"targetWords":{"en":"worked","es":"trabajamos","pt":"trabalhamos"}},
+          {"subject":"second-plural","sentences":{"en":"You worked yesterday.","es":"Ustedes trabajaron ayer.","pt":"Vocês trabalharam ontem."},"targetWords":{"en":"worked","es":"trabajaron","pt":"trabalharam"}},
+          {"subject":"third-plural","sentences":{"en":"They worked yesterday.","es":"Ellos trabajaron ayer.","pt":"Eles trabalharam ontem."},"targetWords":{"en":"worked","es":"trabajaron","pt":"trabalharam"}}
+        ],
+        "negative": [
+          {"subject":"first-singular","sentences":{"en":"I did not work yesterday.","es":"Yo no trabajé ayer.","pt":"Eu não trabalhei ontem."},"targetWords":{"en":"work","es":"trabajé","pt":"trabalhei"}},
+          {"subject":"second-singular","sentences":{"en":"You did not work yesterday.","es":"Tú no trabajaste ayer.","pt":"Você não trabalhou ontem."},"targetWords":{"en":"work","es":"trabajaste","pt":"trabalhou"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"He did not work yesterday.","es":"Él no trabajó ayer.","pt":"Ele não trabalhou ontem."},"targetWords":{"en":"work","es":"trabajó","pt":"trabalhou"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"She did not work yesterday.","es":"Ella no trabajó ayer.","pt":"Ela não trabalhou ontem."},"targetWords":{"en":"work","es":"trabajó","pt":"trabalhou"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"It did not work yesterday.","es":"Esto no funcionó ayer.","pt":"Isto não funcionou ontem."},"targetWords":{"en":"work","es":"funcionó","pt":"funcionou"}},
+          {"subject":"first-plural","sentences":{"en":"We did not work yesterday.","es":"Nosotros no trabajamos ayer.","pt":"Nós não trabalhamos ontem."},"targetWords":{"en":"work","es":"trabajamos","pt":"trabalhamos"}},
+          {"subject":"second-plural","sentences":{"en":"You did not work yesterday.","es":"Ustedes no trabajaron ayer.","pt":"Vocês não trabalharam ontem."},"targetWords":{"en":"work","es":"trabajaron","pt":"trabalharam"}},
+          {"subject":"third-plural","sentences":{"en":"They did not work yesterday.","es":"Ellos no trabajaron ayer.","pt":"Eles não trabalharam ontem."},"targetWords":{"en":"work","es":"trabajaron","pt":"trabalharam"}}
+        ],
+        "interrogative": [
+          {"subject":"first-singular","sentences":{"en":"Did I work yesterday?","es":"¿Trabajé yo ayer?","pt":"Eu trabalhei ontem?"},"targetWords":{"en":"work","es":"Trabajé","pt":"trabalhei"}},
+          {"subject":"second-singular","sentences":{"en":"Did you work yesterday?","es":"¿Trabajaste tú ayer?","pt":"Você trabalhou ontem?"},"targetWords":{"en":"work","es":"Trabajaste","pt":"trabalhou"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"Did he work yesterday?","es":"¿Trabajó él ayer?","pt":"Ele trabalhou ontem?"},"targetWords":{"en":"work","es":"Trabajó","pt":"trabalhou"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"Did she work yesterday?","es":"¿Trabajó ella ayer?","pt":"Ela trabalhou ontem?"},"targetWords":{"en":"work","es":"Trabajó","pt":"trabalhou"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"Did it work yesterday?","es":"¿Funcionó esto ayer?","pt":"Isto funcionou ontem?"},"targetWords":{"en":"work","es":"Funcionó","pt":"funcionou"}},
+          {"subject":"first-plural","sentences":{"en":"Did we work yesterday?","es":"¿Trabajamos nosotros ayer?","pt":"Nós trabalhamos ontem?"},"targetWords":{"en":"work","es":"Trabajamos","pt":"trabalhamos"}},
+          {"subject":"second-plural","sentences":{"en":"Did you work yesterday?","es":"¿Trabajaron ustedes ayer?","pt":"Vocês trabalharam ontem?"},"targetWords":{"en":"work","es":"Trabajaron","pt":"trabalharam"}},
+          {"subject":"third-plural","sentences":{"en":"Did they work yesterday?","es":"¿Trabajaron ellos ayer?","pt":"Eles trabalharam ontem?"},"targetWords":{"en":"work","es":"Trabajaron","pt":"trabalharam"}}
+        ]
+      }
+    }
   }
 }
