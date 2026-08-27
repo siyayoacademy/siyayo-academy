@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "wake",
+  "tenses": {
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I wake early every morning.","es":"Yo despierto temprano todas las mañanas.","pt":"Eu acordo cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despierto","pt":"acordo"}},
+        {"subject":"second-singular","sentences":{"en":"You wake early every morning.","es":"Tú despiertas temprano todas las mañanas.","pt":"Você acorda cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despiertas","pt":"acorda"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He wakes early every morning.","es":"Él despierta temprano todas las mañanas.","pt":"Ele acorda cedo todas as manhãs."},"targetWords":{"en":"wakes","es":"despierta","pt":"acorda"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She wakes early every morning.","es":"Ella despierta temprano todas las mañanas.","pt":"Ela acorda cedo todas as manhãs."},"targetWords":{"en":"wakes","es":"despierta","pt":"acorda"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It wakes when the light turns on every morning.","es":"Despierta cuando se enciende la luz cada mañana.","pt":"Acorda quando a luz acende todas as manhãs."},"targetWords":{"en":"wakes","es":"Despierta","pt":"Acorda"}},
+        {"subject":"first-plural","sentences":{"en":"We wake early every morning.","es":"Nosotros despertamos temprano todas las mañanas.","pt":"Nós acordamos cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despertamos","pt":"acordamos"}},
+        {"subject":"second-plural","sentences":{"en":"You wake early every morning.","es":"Ustedes despiertan temprano todas las mañanas.","pt":"Vocês acordam cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despiertan","pt":"acordam"}},
+        {"subject":"third-plural","sentences":{"en":"They wake early every morning.","es":"Ellos despiertan temprano todas las mañanas.","pt":"Eles acordam cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despiertan","pt":"acordam"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not wake early every morning.","es":"Yo no despierto temprano todas las mañanas.","pt":"Eu não acordo cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despierto","pt":"acordo"}},
+        {"subject":"second-singular","sentences":{"en":"You do not wake early every morning.","es":"Tú no despiertas temprano todas las mañanas.","pt":"Você não acorda cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despiertas","pt":"acorda"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not wake early every morning.","es":"Él no despierta temprano todas las mañanas.","pt":"Ele não acorda cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despierta","pt":"acorda"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not wake early every morning.","es":"Ella no despierta temprano todas las mañanas.","pt":"Ela não acorda cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despierta","pt":"acorda"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not wake when the light turns on every morning.","es":"No despierta cuando se enciende la luz cada mañana.","pt":"Não acorda quando a luz acende todas as manhãs."},"targetWords":{"en":"wake","es":"despierta","pt":"acorda"}},
+        {"subject":"first-plural","sentences":{"en":"We do not wake early every morning.","es":"Nosotros no despertamos temprano todas las mañanas.","pt":"Nós não acordamos cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despertamos","pt":"acordamos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not wake early every morning.","es":"Ustedes no despiertan temprano todas las mañanas.","pt":"Vocês não acordam cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despiertan","pt":"acordam"}},
+        {"subject":"third-plural","sentences":{"en":"They do not wake early every morning.","es":"Ellos no despiertan temprano todas las mañanas.","pt":"Eles não acordam cedo todas as manhãs."},"targetWords":{"en":"wake","es":"despiertan","pt":"acordam"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I wake early every morning?","es":"¿Despierto yo temprano todas las mañanas?","pt":"Eu acordo cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despierto","pt":"acordo"}},
+        {"subject":"second-singular","sentences":{"en":"Do you wake early every morning?","es":"¿Despiertas tú temprano todas las mañanas?","pt":"Você acorda cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despiertas","pt":"acorda"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he wake early every morning?","es":"¿Despierta él temprano todas las mañanas?","pt":"Ele acorda cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despierta","pt":"acorda"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she wake early every morning?","es":"¿Despierta ella temprano todas las mañanas?","pt":"Ela acorda cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despierta","pt":"acorda"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it wake when the light turns on every morning?","es":"¿Despierta cuando se enciende la luz cada mañana?","pt":"Acorda quando a luz acende todas as manhãs?"},"targetWords":{"en":"wake","es":"Despierta","pt":"Acorda"}},
+        {"subject":"first-plural","sentences":{"en":"Do we wake early every morning?","es":"¿Despertamos nosotros temprano todas las mañanas?","pt":"Nós acordamos cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despertamos","pt":"acordamos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you wake early every morning?","es":"¿Despiertan ustedes temprano todas las mañanas?","pt":"Vocês acordam cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despiertan","pt":"acordam"}},
+        {"subject":"third-plural","sentences":{"en":"Do they wake early every morning?","es":"¿Despiertan ellos temprano todas las mañanas?","pt":"Eles acordam cedo todas as manhãs?"},"targetWords":{"en":"wake","es":"Despiertan","pt":"acordam"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I woke early yesterday.","es":"Yo desperté temprano ayer.","pt":"Eu acordei cedo ontem."},"targetWords":{"en":"woke","es":"desperté","pt":"acordei"}},
+        {"subject":"second-singular","sentences":{"en":"You woke early yesterday.","es":"Tú despertaste temprano ayer.","pt":"Você acordou cedo ontem."},"targetWords":{"en":"woke","es":"despertaste","pt":"acordou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He woke early yesterday.","es":"Él despertó temprano ayer.","pt":"Ele acordou cedo ontem."},"targetWords":{"en":"woke","es":"despertó","pt":"acordou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She woke early yesterday.","es":"Ella despertó temprano ayer.","pt":"Ela acordou cedo ontem."},"targetWords":{"en":"woke","es":"despertó","pt":"acordou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It woke when the light turned on yesterday.","es":"Despertó cuando se encendió la luz ayer.","pt":"Acordou quando a luz acendeu ontem."},"targetWords":{"en":"woke","es":"Despertó","pt":"Acordou"}},
+        {"subject":"first-plural","sentences":{"en":"We woke early yesterday.","es":"Nosotros despertamos temprano ayer.","pt":"Nós acordamos cedo ontem."},"targetWords":{"en":"woke","es":"despertamos","pt":"acordamos"}},
+        {"subject":"second-plural","sentences":{"en":"You woke early yesterday.","es":"Ustedes despertaron temprano ayer.","pt":"Vocês acordaram cedo ontem."},"targetWords":{"en":"woke","es":"despertaron","pt":"acordaram"}},
+        {"subject":"third-plural","sentences":{"en":"They woke early yesterday.","es":"Ellos despertaron temprano ayer.","pt":"Eles acordaram cedo ontem."},"targetWords":{"en":"woke","es":"despertaron","pt":"acordaram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not wake early yesterday.","es":"Yo no desperté temprano ayer.","pt":"Eu não acordei cedo ontem."},"targetWords":{"en":"wake","es":"desperté","pt":"acordei"}},
+        {"subject":"second-singular","sentences":{"en":"You did not wake early yesterday.","es":"Tú no despertaste temprano ayer.","pt":"Você não acordou cedo ontem."},"targetWords":{"en":"wake","es":"despertaste","pt":"acordou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not wake early yesterday.","es":"Él no despertó temprano ayer.","pt":"Ele não acordou cedo ontem."},"targetWords":{"en":"wake","es":"despertó","pt":"acordou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not wake early yesterday.","es":"Ella no despertó temprano ayer.","pt":"Ela não acordou cedo ontem."},"targetWords":{"en":"wake","es":"despertó","pt":"acordou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not wake when the light turned on yesterday.","es":"No despertó cuando se encendió la luz ayer.","pt":"Não acordou quando a luz acendeu ontem."},"targetWords":{"en":"wake","es":"despertó","pt":"acordou"}},
+        {"subject":"first-plural","sentences":{"en":"We did not wake early yesterday.","es":"Nosotros no despertamos temprano ayer.","pt":"Nós não acordamos cedo ontem."},"targetWords":{"en":"wake","es":"despertamos","pt":"acordamos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not wake early yesterday.","es":"Ustedes no despertaron temprano ayer.","pt":"Vocês não acordaram cedo ontem."},"targetWords":{"en":"wake","es":"despertaron","pt":"acordaram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not wake early yesterday.","es":"Ellos no despertaron temprano ayer.","pt":"Eles não acordaram cedo ontem."},"targetWords":{"en":"wake","es":"despertaron","pt":"acordaram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I wake early yesterday?","es":"¿Desperté yo temprano ayer?","pt":"Eu acordei cedo ontem?"},"targetWords":{"en":"wake","es":"Desperté","pt":"acordei"}},
+        {"subject":"second-singular","sentences":{"en":"Did you wake early yesterday?","es":"¿Despertaste tú temprano ayer?","pt":"Você acordou cedo ontem?"},"targetWords":{"en":"wake","es":"Despertaste","pt":"acordou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he wake early yesterday?","es":"¿Despertó él temprano ayer?","pt":"Ele acordou cedo ontem?"},"targetWords":{"en":"wake","es":"Despertó","pt":"acordou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she wake early yesterday?","es":"¿Despertó ella temprano ayer?","pt":"Ela acordou cedo ontem?"},"targetWords":{"en":"wake","es":"Despertó","pt":"acordou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it wake when the light turned on yesterday?","es":"¿Despertó cuando se encendió la luz ayer?","pt":"Acordou quando a luz acendeu ontem?"},"targetWords":{"en":"wake","es":"Despertó","pt":"Acordou"}},
+        {"subject":"first-plural","sentences":{"en":"Did we wake early yesterday?","es":"¿Despertamos nosotros temprano ayer?","pt":"Nós acordamos cedo ontem?"},"targetWords":{"en":"wake","es":"Despertamos","pt":"acordamos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you wake early yesterday?","es":"¿Despertaron ustedes temprano ayer?","pt":"Vocês acordaram cedo ontem?"},"targetWords":{"en":"wake","es":"Despertaron","pt":"acordaram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they wake early yesterday?","es":"¿Despertaron ellos temprano ayer?","pt":"Eles acordaram cedo ontem?"},"targetWords":{"en":"wake","es":"Despertaron","pt":"acordaram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will wake early tomorrow.","es":"Yo despertaré temprano mañana.","pt":"Eu acordarei cedo amanhã."},"targetWords":{"en":"wake","es":"despertaré","pt":"acordarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will wake early tomorrow.","es":"Tú despertarás temprano mañana.","pt":"Você acordará cedo amanhã."},"targetWords":{"en":"wake","es":"despertarás","pt":"acordará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will wake early tomorrow.","es":"Él despertará temprano mañana.","pt":"Ele acordará cedo amanhã."},"targetWords":{"en":"wake","es":"despertará","pt":"acordará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will wake early tomorrow.","es":"Ella despertará temprano mañana.","pt":"Ela acordará cedo amanhã."},"targetWords":{"en":"wake","es":"despertará","pt":"acordará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will wake when the light turns on tomorrow.","es":"Despertará cuando se encienda la luz mañana.","pt":"Acordará quando a luz acender amanhã."},"targetWords":{"en":"wake","es":"Despertará","pt":"Acordará"}},
+        {"subject":"first-plural","sentences":{"en":"We will wake early tomorrow.","es":"Nosotros despertaremos temprano mañana.","pt":"Nós acordaremos cedo amanhã."},"targetWords":{"en":"wake","es":"despertaremos","pt":"acordaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will wake early tomorrow.","es":"Ustedes despertarán temprano mañana.","pt":"Vocês acordarão cedo amanhã."},"targetWords":{"en":"wake","es":"despertarán","pt":"acordarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will wake early tomorrow.","es":"Ellos despertarán temprano mañana.","pt":"Eles acordarão cedo amanhã."},"targetWords":{"en":"wake","es":"despertarán","pt":"acordarão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not wake early tomorrow.","es":"Yo no despertaré temprano mañana.","pt":"Eu não acordarei cedo amanhã."},"targetWords":{"en":"wake","es":"despertaré","pt":"acordarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not wake early tomorrow.","es":"Tú no despertarás temprano mañana.","pt":"Você não acordará cedo amanhã."},"targetWords":{"en":"wake","es":"despertarás","pt":"acordará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not wake early tomorrow.","es":"Él no despertará temprano mañana.","pt":"Ele não acordará cedo amanhã."},"targetWords":{"en":"wake","es":"despertará","pt":"acordará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not wake early tomorrow.","es":"Ella no despertará temprano mañana.","pt":"Ela não acordará cedo amanhã."},"targetWords":{"en":"wake","es":"despertará","pt":"acordará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not wake when the light turns on tomorrow.","es":"No despertará cuando se encienda la luz mañana.","pt":"Não acordará quando a luz acender amanhã."},"targetWords":{"en":"wake","es":"despertará","pt":"acordará"}},
+        {"subject":"first-plural","sentences":{"en":"We will not wake early tomorrow.","es":"Nosotros no despertaremos temprano mañana.","pt":"Nós não acordaremos cedo amanhã."},"targetWords":{"en":"wake","es":"despertaremos","pt":"acordaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not wake early tomorrow.","es":"Ustedes no despertarán temprano mañana.","pt":"Vocês não acordarão cedo amanhã."},"targetWords":{"en":"wake","es":"despertarán","pt":"acordarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not wake early tomorrow.","es":"Ellos no despertarán temprano mañana.","pt":"Eles não acordarão cedo amanhã."},"targetWords":{"en":"wake","es":"despertarán","pt":"acordarão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I wake early tomorrow?","es":"¿Despertaré yo temprano mañana?","pt":"Eu acordarei cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertaré","pt":"acordarei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you wake early tomorrow?","es":"¿Despertarás tú temprano mañana?","pt":"Você acordará cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertarás","pt":"acordará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he wake early tomorrow?","es":"¿Despertará él temprano mañana?","pt":"Ele acordará cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertará","pt":"acordará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she wake early tomorrow?","es":"¿Despertará ella temprano mañana?","pt":"Ela acordará cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertará","pt":"acordará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it wake when the light turns on tomorrow?","es":"¿Despertará cuando se encienda la luz mañana?","pt":"Acordará quando a luz acender amanhã?"},"targetWords":{"en":"wake","es":"Despertará","pt":"Acordará"}},
+        {"subject":"first-plural","sentences":{"en":"Will we wake early tomorrow?","es":"¿Despertaremos nosotros temprano mañana?","pt":"Nós acordaremos cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertaremos","pt":"acordaremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you wake early tomorrow?","es":"¿Despertarán ustedes temprano mañana?","pt":"Vocês acordarão cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertarán","pt":"acordarão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they wake early tomorrow?","es":"¿Despertarán ellos temprano mañana?","pt":"Eles acordarão cedo amanhã?"},"targetWords":{"en":"wake","es":"Despertarán","pt":"acordarão"}}]}}
+  }
+}
