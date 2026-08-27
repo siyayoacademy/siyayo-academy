@@ -1,0 +1,102 @@
+{
+  "$schema": "../schemas/subject.schema.json",
+  "version": "0.1.0",
+  "items": [
+    {
+      "id": "first-singular",
+      "role": "subject",
+      "person": "first",
+      "number": "singular",
+      "semanticGender": "unspecified",
+      "realizations": {
+        "en": { "display": "I", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "yo", "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "eu", "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "second-singular",
+      "role": "subject",
+      "person": "second",
+      "number": "singular",
+      "semanticGender": "unspecified",
+      "realizations": {
+        "en": { "display": "you", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "tú", "alternatives": ["usted", "vos"], "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "informal" },
+        "pt": { "display": "você", "alternatives": ["tu"], "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "third-singular-masculine",
+      "role": "subject",
+      "person": "third",
+      "number": "singular",
+      "semanticGender": "masculine",
+      "realizations": {
+        "en": { "display": "he", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "él", "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "ele", "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "third-singular-feminine",
+      "role": "subject",
+      "person": "third",
+      "number": "singular",
+      "semanticGender": "feminine",
+      "realizations": {
+        "en": { "display": "she", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "ella", "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "ela", "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "third-singular-neuter",
+      "role": "subject",
+      "person": "third",
+      "number": "singular",
+      "semanticGender": "neuter",
+      "realizations": {
+        "en": { "display": "it", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "ello", "alternatives": ["este", "esta"], "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "isso", "alternatives": ["isto", "ele", "ela"], "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "first-plural",
+      "role": "subject",
+      "person": "first",
+      "number": "plural",
+      "semanticGender": "unspecified",
+      "realizations": {
+        "en": { "display": "we", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "nosotros", "alternatives": ["nosotras"], "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "nós", "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "second-plural",
+      "role": "subject",
+      "person": "second",
+      "number": "plural",
+      "semanticGender": "unspecified",
+      "realizations": {
+        "en": { "display": "you", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "ustedes", "alternatives": ["vosotros", "vosotras"], "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "vocês", "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    },
+    {
+      "id": "third-plural",
+      "role": "subject",
+      "person": "third",
+      "number": "plural",
+      "semanticGender": "unspecified",
+      "realizations": {
+        "en": { "display": "they", "languageTag": "en", "script": "Latn", "speechLocale": "en-US", "register": "neutral" },
+        "es": { "display": "ellos", "alternatives": ["ellas"], "languageTag": "es", "script": "Latn", "speechLocale": "es-ES", "register": "neutral" },
+        "pt": { "display": "eles", "alternatives": ["elas"], "languageTag": "pt", "script": "Latn", "speechLocale": "pt-BR", "register": "neutral" }
+      }
+    }
+  ]
+}
