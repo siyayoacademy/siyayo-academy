@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/verb-subject-forms.schema.json",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "verb": "work",
   "tense": "present",
   "forms": {
@@ -23,6 +23,16 @@
       { "subject": "first-plural", "sentences": { "en": "We do not work every day.", "es": "Nosotros no trabajamos todos los días.", "pt": "Nós não trabalhamos todos os dias." }, "targetWords": { "en": "work", "es": "trabajamos", "pt": "trabalhamos" } },
       { "subject": "second-plural", "sentences": { "en": "You do not work every day.", "es": "Ustedes no trabajan todos los días.", "pt": "Vocês não trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } },
       { "subject": "third-plural", "sentences": { "en": "They do not work every day.", "es": "Ellos no trabajan todos los días.", "pt": "Eles não trabalham todos os dias." }, "targetWords": { "en": "work", "es": "trabajan", "pt": "trabalham" } }
+    ],
+    "interrogative": [
+      { "subject": "first-singular", "sentences": { "en": "Do I work every day?", "es": "¿Trabajo yo todos los días?", "pt": "Eu trabalho todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajo", "pt": "trabalho" } },
+      { "subject": "second-singular", "sentences": { "en": "Do you work every day?", "es": "¿Trabajas tú todos los días?", "pt": "Você trabalha todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajas", "pt": "trabalha" } },
+      { "subject": "third-singular-masculine", "sentences": { "en": "Does he work every day?", "es": "¿Trabaja él todos los días?", "pt": "Ele trabalha todos os dias?" }, "targetWords": { "en": "work", "es": "Trabaja", "pt": "trabalha" } },
+      { "subject": "third-singular-feminine", "sentences": { "en": "Does she work every day?", "es": "¿Trabaja ella todos los días?", "pt": "Ela trabalha todos os dias?" }, "targetWords": { "en": "work", "es": "Trabaja", "pt": "trabalha" } },
+      { "subject": "third-singular-neuter", "sentences": { "en": "Does it work every day?", "es": "¿Funciona esto todos los días?", "pt": "Isto funciona todos os dias?" }, "targetWords": { "en": "work", "es": "Funciona", "pt": "funciona" } },
+      { "subject": "first-plural", "sentences": { "en": "Do we work every day?", "es": "¿Trabajamos nosotros todos los días?", "pt": "Nós trabalhamos todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajamos", "pt": "trabalhamos" } },
+      { "subject": "second-plural", "sentences": { "en": "Do you work every day?", "es": "¿Trabajan ustedes todos los días?", "pt": "Vocês trabalham todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajan", "pt": "trabalham" } },
+      { "subject": "third-plural", "sentences": { "en": "Do they work every day?", "es": "¿Trabajan ellos todos los días?", "pt": "Eles trabalham todos os dias?" }, "targetWords": { "en": "work", "es": "Trabajan", "pt": "trabalham" } }
     ]
   }
 }
