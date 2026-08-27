@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "walk",
+  "tenses": {
+    "present": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I walk every day.","es":"Yo camino todos los días.","pt":"Eu caminho todos os dias."},"targetWords":{"en":"walk","es":"camino","pt":"caminho"}},
+        {"subject":"second-singular","sentences":{"en":"You walk every day.","es":"Tú caminas todos los días.","pt":"Você caminha todos os dias."},"targetWords":{"en":"walk","es":"caminas","pt":"caminha"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He walks every day.","es":"Él camina todos los días.","pt":"Ele caminha todos os dias."},"targetWords":{"en":"walks","es":"camina","pt":"caminha"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She walks every day.","es":"Ella camina todos los días.","pt":"Ela caminha todos os dias."},"targetWords":{"en":"walks","es":"camina","pt":"caminha"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It walks through the lab every day.","es":"Camina por el laboratorio todos los días.","pt":"Caminha pelo laboratório todos os dias."},"targetWords":{"en":"walks","es":"Camina","pt":"Caminha"}},
+        {"subject":"first-plural","sentences":{"en":"We walk every day.","es":"Nosotros caminamos todos los días.","pt":"Nós caminhamos todos os dias."},"targetWords":{"en":"walk","es":"caminamos","pt":"caminhamos"}},
+        {"subject":"second-plural","sentences":{"en":"You walk every day.","es":"Ustedes caminan todos los días.","pt":"Vocês caminham todos os dias."},"targetWords":{"en":"walk","es":"caminan","pt":"caminham"}},
+        {"subject":"third-plural","sentences":{"en":"They walk every day.","es":"Ellos caminan todos los días.","pt":"Eles caminham todos os dias."},"targetWords":{"en":"walk","es":"caminan","pt":"caminham"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I do not walk every day.","es":"Yo no camino todos los días.","pt":"Eu não caminho todos os dias."},"targetWords":{"en":"walk","es":"camino","pt":"caminho"}},
+        {"subject":"second-singular","sentences":{"en":"You do not walk every day.","es":"Tú no caminas todos los días.","pt":"Você não caminha todos os dias."},"targetWords":{"en":"walk","es":"caminas","pt":"caminha"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not walk every day.","es":"Él no camina todos los días.","pt":"Ele não caminha todos os dias."},"targetWords":{"en":"walk","es":"camina","pt":"caminha"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not walk every day.","es":"Ella no camina todos los días.","pt":"Ela não caminha todos os dias."},"targetWords":{"en":"walk","es":"camina","pt":"caminha"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not walk through the lab every day.","es":"No camina por el laboratorio todos los días.","pt":"Não caminha pelo laboratório todos os dias."},"targetWords":{"en":"walk","es":"camina","pt":"caminha"}},
+        {"subject":"first-plural","sentences":{"en":"We do not walk every day.","es":"Nosotros no caminamos todos los días.","pt":"Nós não caminhamos todos os dias."},"targetWords":{"en":"walk","es":"caminamos","pt":"caminhamos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not walk every day.","es":"Ustedes no caminan todos los días.","pt":"Vocês não caminham todos os dias."},"targetWords":{"en":"walk","es":"caminan","pt":"caminham"}},
+        {"subject":"third-plural","sentences":{"en":"They do not walk every day.","es":"Ellos no caminan todos los días.","pt":"Eles não caminham todos os dias."},"targetWords":{"en":"walk","es":"caminan","pt":"caminham"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Do I walk every day?","es":"¿Camino yo todos los días?","pt":"Eu caminho todos os dias?"},"targetWords":{"en":"walk","es":"Camino","pt":"caminho"}},
+        {"subject":"second-singular","sentences":{"en":"Do you walk every day?","es":"¿Caminas tú todos los días?","pt":"Você caminha todos os dias?"},"targetWords":{"en":"walk","es":"Caminas","pt":"caminha"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he walk every day?","es":"¿Camina él todos los días?","pt":"Ele caminha todos os dias?"},"targetWords":{"en":"walk","es":"Camina","pt":"caminha"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she walk every day?","es":"¿Camina ella todos los días?","pt":"Ela caminha todos os dias?"},"targetWords":{"en":"walk","es":"Camina","pt":"caminha"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it walk through the lab every day?","es":"¿Camina por el laboratorio todos los días?","pt":"Caminha pelo laboratório todos os dias?"},"targetWords":{"en":"walk","es":"Camina","pt":"Caminha"}},
+        {"subject":"first-plural","sentences":{"en":"Do we walk every day?","es":"¿Caminamos nosotros todos los días?","pt":"Nós caminhamos todos os dias?"},"targetWords":{"en":"walk","es":"Caminamos","pt":"caminhamos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you walk every day?","es":"¿Caminan ustedes todos los días?","pt":"Vocês caminham todos os dias?"},"targetWords":{"en":"walk","es":"Caminan","pt":"caminham"}},
+        {"subject":"third-plural","sentences":{"en":"Do they walk every day?","es":"¿Caminan ellos todos los días?","pt":"Eles caminham todos os dias?"},"targetWords":{"en":"walk","es":"Caminan","pt":"caminham"}}
+      ]
+    }},
+    "past": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I walked yesterday.","es":"Yo caminé ayer.","pt":"Eu caminhei ontem."},"targetWords":{"en":"walked","es":"caminé","pt":"caminhei"}},
+        {"subject":"second-singular","sentences":{"en":"You walked yesterday.","es":"Tú caminaste ayer.","pt":"Você caminhou ontem."},"targetWords":{"en":"walked","es":"caminaste","pt":"caminhou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He walked yesterday.","es":"Él caminó ayer.","pt":"Ele caminhou ontem."},"targetWords":{"en":"walked","es":"caminó","pt":"caminhou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She walked yesterday.","es":"Ella caminó ayer.","pt":"Ela caminhou ontem."},"targetWords":{"en":"walked","es":"caminó","pt":"caminhou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It walked through the lab yesterday.","es":"Caminó por el laboratorio ayer.","pt":"Caminhou pelo laboratório ontem."},"targetWords":{"en":"walked","es":"Caminó","pt":"Caminhou"}},
+        {"subject":"first-plural","sentences":{"en":"We walked yesterday.","es":"Nosotros caminamos ayer.","pt":"Nós caminhamos ontem."},"targetWords":{"en":"walked","es":"caminamos","pt":"caminhamos"}},
+        {"subject":"second-plural","sentences":{"en":"You walked yesterday.","es":"Ustedes caminaron ayer.","pt":"Vocês caminharam ontem."},"targetWords":{"en":"walked","es":"caminaron","pt":"caminharam"}},
+        {"subject":"third-plural","sentences":{"en":"They walked yesterday.","es":"Ellos caminaron ayer.","pt":"Eles caminharam ontem."},"targetWords":{"en":"walked","es":"caminaron","pt":"caminharam"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I did not walk yesterday.","es":"Yo no caminé ayer.","pt":"Eu não caminhei ontem."},"targetWords":{"en":"walk","es":"caminé","pt":"caminhei"}},
+        {"subject":"second-singular","sentences":{"en":"You did not walk yesterday.","es":"Tú no caminaste ayer.","pt":"Você não caminhou ontem."},"targetWords":{"en":"walk","es":"caminaste","pt":"caminhou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not walk yesterday.","es":"Él no caminó ayer.","pt":"Ele não caminhou ontem."},"targetWords":{"en":"walk","es":"caminó","pt":"caminhou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not walk yesterday.","es":"Ella no caminó ayer.","pt":"Ela não caminhou ontem."},"targetWords":{"en":"walk","es":"caminó","pt":"caminhou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not walk through the lab yesterday.","es":"No caminó por el laboratorio ayer.","pt":"Não caminhou pelo laboratório ontem."},"targetWords":{"en":"walk","es":"caminó","pt":"caminhou"}},
+        {"subject":"first-plural","sentences":{"en":"We did not walk yesterday.","es":"Nosotros no caminamos ayer.","pt":"Nós não caminhamos ontem."},"targetWords":{"en":"walk","es":"caminamos","pt":"caminhamos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not walk yesterday.","es":"Ustedes no caminaron ayer.","pt":"Vocês não caminharam ontem."},"targetWords":{"en":"walk","es":"caminaron","pt":"caminharam"}},
+        {"subject":"third-plural","sentences":{"en":"They did not walk yesterday.","es":"Ellos no caminaron ayer.","pt":"Eles não caminharam ontem."},"targetWords":{"en":"walk","es":"caminaron","pt":"caminharam"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Did I walk yesterday?","es":"¿Caminé yo ayer?","pt":"Eu caminhei ontem?"},"targetWords":{"en":"walk","es":"Caminé","pt":"caminhei"}},
+        {"subject":"second-singular","sentences":{"en":"Did you walk yesterday?","es":"¿Caminaste tú ayer?","pt":"Você caminhou ontem?"},"targetWords":{"en":"walk","es":"Caminaste","pt":"caminhou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he walk yesterday?","es":"¿Caminó él ayer?","pt":"Ele caminhou ontem?"},"targetWords":{"en":"walk","es":"Caminó","pt":"caminhou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she walk yesterday?","es":"¿Caminó ella ayer?","pt":"Ela caminhou ontem?"},"targetWords":{"en":"walk","es":"Caminó","pt":"caminhou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it walk through the lab yesterday?","es":"¿Caminó por el laboratorio ayer?","pt":"Caminhou pelo laboratório ontem?"},"targetWords":{"en":"walk","es":"Caminó","pt":"Caminhou"}},
+        {"subject":"first-plural","sentences":{"en":"Did we walk yesterday?","es":"¿Caminamos nosotros ayer?","pt":"Nós caminhamos ontem?"},"targetWords":{"en":"walk","es":"Caminamos","pt":"caminhamos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you walk yesterday?","es":"¿Caminaron ustedes ayer?","pt":"Vocês caminharam ontem?"},"targetWords":{"en":"walk","es":"Caminaron","pt":"caminharam"}},
+        {"subject":"third-plural","sentences":{"en":"Did they walk yesterday?","es":"¿Caminaron ellos ayer?","pt":"Eles caminharam ontem?"},"targetWords":{"en":"walk","es":"Caminaron","pt":"caminharam"}}
+      ]
+    }},
+    "future": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I will walk tomorrow.","es":"Yo caminaré mañana.","pt":"Eu caminharei amanhã."},"targetWords":{"en":"walk","es":"caminaré","pt":"caminharei"}},
+        {"subject":"second-singular","sentences":{"en":"You will walk tomorrow.","es":"Tú caminarás mañana.","pt":"Você caminhará amanhã."},"targetWords":{"en":"walk","es":"caminarás","pt":"caminhará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will walk tomorrow.","es":"Él caminará mañana.","pt":"Ele caminhará amanhã."},"targetWords":{"en":"walk","es":"caminará","pt":"caminhará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will walk tomorrow.","es":"Ella caminará mañana.","pt":"Ela caminhará amanhã."},"targetWords":{"en":"walk","es":"caminará","pt":"caminhará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will walk through the lab tomorrow.","es":"Caminará por el laboratorio mañana.","pt":"Caminhará pelo laboratório amanhã."},"targetWords":{"en":"walk","es":"Caminará","pt":"Caminhará"}},
+        {"subject":"first-plural","sentences":{"en":"We will walk tomorrow.","es":"Nosotros caminaremos mañana.","pt":"Nós caminharemos amanhã."},"targetWords":{"en":"walk","es":"caminaremos","pt":"caminharemos"}},
+        {"subject":"second-plural","sentences":{"en":"You will walk tomorrow.","es":"Ustedes caminarán mañana.","pt":"Vocês caminharão amanhã."},"targetWords":{"en":"walk","es":"caminarán","pt":"caminharão"}},
+        {"subject":"third-plural","sentences":{"en":"They will walk tomorrow.","es":"Ellos caminarán mañana.","pt":"Eles caminharão amanhã."},"targetWords":{"en":"walk","es":"caminarán","pt":"caminharão"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I will not walk tomorrow.","es":"Yo no caminaré mañana.","pt":"Eu não caminharei amanhã."},"targetWords":{"en":"walk","es":"caminaré","pt":"caminharei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not walk tomorrow.","es":"Tú no caminarás mañana.","pt":"Você não caminhará amanhã."},"targetWords":{"en":"walk","es":"caminarás","pt":"caminhará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not walk tomorrow.","es":"Él no caminará mañana.","pt":"Ele não caminhará amanhã."},"targetWords":{"en":"walk","es":"caminará","pt":"caminhará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not walk tomorrow.","es":"Ella no caminará mañana.","pt":"Ela não caminhará amanhã."},"targetWords":{"en":"walk","es":"caminará","pt":"caminhará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not walk through the lab tomorrow.","es":"No caminará por el laboratorio mañana.","pt":"Não caminhará pelo laboratório amanhã."},"targetWords":{"en":"walk","es":"caminará","pt":"caminhará"}},
+        {"subject":"first-plural","sentences":{"en":"We will not walk tomorrow.","es":"Nosotros no caminaremos mañana.","pt":"Nós não caminharemos amanhã."},"targetWords":{"en":"walk","es":"caminaremos","pt":"caminharemos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not walk tomorrow.","es":"Ustedes no caminarán mañana.","pt":"Vocês não caminharão amanhã."},"targetWords":{"en":"walk","es":"caminarán","pt":"caminharão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not walk tomorrow.","es":"Ellos no caminarán mañana.","pt":"Eles não caminharão amanhã."},"targetWords":{"en":"walk","es":"caminarán","pt":"caminharão"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Will I walk tomorrow?","es":"¿Caminaré yo mañana?","pt":"Eu caminharei amanhã?"},"targetWords":{"en":"walk","es":"Caminaré","pt":"caminharei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you walk tomorrow?","es":"¿Caminarás tú mañana?","pt":"Você caminhará amanhã?"},"targetWords":{"en":"walk","es":"Caminarás","pt":"caminhará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he walk tomorrow?","es":"¿Caminará él mañana?","pt":"Ele caminhará amanhã?"},"targetWords":{"en":"walk","es":"Caminará","pt":"caminhará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she walk tomorrow?","es":"¿Caminará ella mañana?","pt":"Ela caminhará amanhã?"},"targetWords":{"en":"walk","es":"Caminará","pt":"caminhará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it walk through the lab tomorrow?","es":"¿Caminará por el laboratorio mañana?","pt":"Caminhará pelo laboratório amanhã?"},"targetWords":{"en":"walk","es":"Caminará","pt":"Caminhará"}},
+        {"subject":"first-plural","sentences":{"en":"Will we walk tomorrow?","es":"¿Caminaremos nosotros mañana?","pt":"Nós caminharemos amanhã?"},"targetWords":{"en":"walk","es":"Caminaremos","pt":"caminharemos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you walk tomorrow?","es":"¿Caminarán ustedes mañana?","pt":"Vocês caminharão amanhã?"},"targetWords":{"en":"walk","es":"Caminarán","pt":"caminharão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they walk tomorrow?","es":"¿Caminarán ellos mañana?","pt":"Eles caminharão amanhã?"},"targetWords":{"en":"walk","es":"Caminarán","pt":"caminharão"}}
+      ]
+    }}
+  }
+}
