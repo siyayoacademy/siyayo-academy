@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "eat",
+  "tenses": {
+    "present":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I eat every day.","es":"Yo como todos los días.","pt":"Eu como todos os dias."},"targetWords":{"en":"eat","es":"como","pt":"como"}},
+        {"subject":"second-singular","sentences":{"en":"You eat every day.","es":"Tú comes todos los días.","pt":"Você come todos os dias."},"targetWords":{"en":"eat","es":"comes","pt":"come"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He eats every day.","es":"Él come todos los días.","pt":"Ele come todos os dias."},"targetWords":{"en":"eats","es":"come","pt":"come"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She eats every day.","es":"Ella come todos los días.","pt":"Ela come todos os dias."},"targetWords":{"en":"eats","es":"come","pt":"come"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It eats leaves every day.","es":"Come hojas todos los días.","pt":"Come folhas todos os dias."},"targetWords":{"en":"eats","es":"Come","pt":"Come"}},
+        {"subject":"first-plural","sentences":{"en":"We eat every day.","es":"Nosotros comemos todos los días.","pt":"Nós comemos todos os dias."},"targetWords":{"en":"eat","es":"comemos","pt":"comemos"}},
+        {"subject":"second-plural","sentences":{"en":"You eat every day.","es":"Ustedes comen todos los días.","pt":"Vocês comem todos os dias."},"targetWords":{"en":"eat","es":"comen","pt":"comem"}},
+        {"subject":"third-plural","sentences":{"en":"They eat every day.","es":"Ellos comen todos los días.","pt":"Eles comem todos os dias."},"targetWords":{"en":"eat","es":"comen","pt":"comem"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I do not eat every day.","es":"Yo no como todos los días.","pt":"Eu não como todos os dias."},"targetWords":{"en":"eat","es":"como","pt":"como"}},
+        {"subject":"second-singular","sentences":{"en":"You do not eat every day.","es":"Tú no comes todos los días.","pt":"Você não come todos os dias."},"targetWords":{"en":"eat","es":"comes","pt":"come"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not eat every day.","es":"Él no come todos los días.","pt":"Ele não come todos os dias."},"targetWords":{"en":"eat","es":"come","pt":"come"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not eat every day.","es":"Ella no come todos los días.","pt":"Ela não come todos os dias."},"targetWords":{"en":"eat","es":"come","pt":"come"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not eat leaves every day.","es":"No come hojas todos los días.","pt":"Não come folhas todos os dias."},"targetWords":{"en":"eat","es":"come","pt":"come"}},
+        {"subject":"first-plural","sentences":{"en":"We do not eat every day.","es":"Nosotros no comemos todos los días.","pt":"Nós não comemos todos os dias."},"targetWords":{"en":"eat","es":"comemos","pt":"comemos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not eat every day.","es":"Ustedes no comen todos los días.","pt":"Vocês não comem todos os dias."},"targetWords":{"en":"eat","es":"comen","pt":"comem"}},
+        {"subject":"third-plural","sentences":{"en":"They do not eat every day.","es":"Ellos no comen todos los días.","pt":"Eles não comem todos os dias."},"targetWords":{"en":"eat","es":"comen","pt":"comem"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Do I eat every day?","es":"¿Como yo todos los días?","pt":"Eu como todos os dias?"},"targetWords":{"en":"eat","es":"Como","pt":"como"}},
+        {"subject":"second-singular","sentences":{"en":"Do you eat every day?","es":"¿Comes tú todos los días?","pt":"Você come todos os dias?"},"targetWords":{"en":"eat","es":"Comes","pt":"come"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he eat every day?","es":"¿Come él todos los días?","pt":"Ele come todos os dias?"},"targetWords":{"en":"eat","es":"Come","pt":"come"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she eat every day?","es":"¿Come ella todos los días?","pt":"Ela come todos os dias?"},"targetWords":{"en":"eat","es":"Come","pt":"come"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it eat leaves every day?","es":"¿Come hojas todos los días?","pt":"Come folhas todos os dias?"},"targetWords":{"en":"eat","es":"Come","pt":"Come"}},
+        {"subject":"first-plural","sentences":{"en":"Do we eat every day?","es":"¿Comemos nosotros todos los días?","pt":"Nós comemos todos os dias?"},"targetWords":{"en":"eat","es":"Comemos","pt":"comemos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you eat every day?","es":"¿Comen ustedes todos los días?","pt":"Vocês comem todos os dias?"},"targetWords":{"en":"eat","es":"Comen","pt":"comem"}},
+        {"subject":"third-plural","sentences":{"en":"Do they eat every day?","es":"¿Comen ellos todos los días?","pt":"Eles comem todos os dias?"},"targetWords":{"en":"eat","es":"Comen","pt":"comem"}}]}},
+    "past":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I ate yesterday.","es":"Yo comí ayer.","pt":"Eu comi ontem."},"targetWords":{"en":"ate","es":"comí","pt":"comi"}},
+        {"subject":"second-singular","sentences":{"en":"You ate yesterday.","es":"Tú comiste ayer.","pt":"Você comeu ontem."},"targetWords":{"en":"ate","es":"comiste","pt":"comeu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He ate yesterday.","es":"Él comió ayer.","pt":"Ele comeu ontem."},"targetWords":{"en":"ate","es":"comió","pt":"comeu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She ate yesterday.","es":"Ella comió ayer.","pt":"Ela comeu ontem."},"targetWords":{"en":"ate","es":"comió","pt":"comeu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It ate leaves yesterday.","es":"Comió hojas ayer.","pt":"Comeu folhas ontem."},"targetWords":{"en":"ate","es":"Comió","pt":"Comeu"}},
+        {"subject":"first-plural","sentences":{"en":"We ate yesterday.","es":"Nosotros comimos ayer.","pt":"Nós comemos ontem."},"targetWords":{"en":"ate","es":"comimos","pt":"comemos"}},
+        {"subject":"second-plural","sentences":{"en":"You ate yesterday.","es":"Ustedes comieron ayer.","pt":"Vocês comeram ontem."},"targetWords":{"en":"ate","es":"comieron","pt":"comeram"}},
+        {"subject":"third-plural","sentences":{"en":"They ate yesterday.","es":"Ellos comieron ayer.","pt":"Eles comeram ontem."},"targetWords":{"en":"ate","es":"comieron","pt":"comeram"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I did not eat yesterday.","es":"Yo no comí ayer.","pt":"Eu não comi ontem."},"targetWords":{"en":"eat","es":"comí","pt":"comi"}},
+        {"subject":"second-singular","sentences":{"en":"You did not eat yesterday.","es":"Tú no comiste ayer.","pt":"Você não comeu ontem."},"targetWords":{"en":"eat","es":"comiste","pt":"comeu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not eat yesterday.","es":"Él no comió ayer.","pt":"Ele não comeu ontem."},"targetWords":{"en":"eat","es":"comió","pt":"comeu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not eat yesterday.","es":"Ella no comió ayer.","pt":"Ela não comeu ontem."},"targetWords":{"en":"eat","es":"comió","pt":"comeu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not eat leaves yesterday.","es":"No comió hojas ayer.","pt":"Não comeu folhas ontem."},"targetWords":{"en":"eat","es":"comió","pt":"comeu"}},
+        {"subject":"first-plural","sentences":{"en":"We did not eat yesterday.","es":"Nosotros no comimos ayer.","pt":"Nós não comemos ontem."},"targetWords":{"en":"eat","es":"comimos","pt":"comemos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not eat yesterday.","es":"Ustedes no comieron ayer.","pt":"Vocês não comeram ontem."},"targetWords":{"en":"eat","es":"comieron","pt":"comeram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not eat yesterday.","es":"Ellos no comieron ayer.","pt":"Eles não comeram ontem."},"targetWords":{"en":"eat","es":"comieron","pt":"comeram"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Did I eat yesterday?","es":"¿Comí yo ayer?","pt":"Eu comi ontem?"},"targetWords":{"en":"eat","es":"Comí","pt":"comi"}},
+        {"subject":"second-singular","sentences":{"en":"Did you eat yesterday?","es":"¿Comiste tú ayer?","pt":"Você comeu ontem?"},"targetWords":{"en":"eat","es":"Comiste","pt":"comeu"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he eat yesterday?","es":"¿Comió él ayer?","pt":"Ele comeu ontem?"},"targetWords":{"en":"eat","es":"Comió","pt":"comeu"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she eat yesterday?","es":"¿Comió ella ayer?","pt":"Ela comeu ontem?"},"targetWords":{"en":"eat","es":"Comió","pt":"comeu"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it eat leaves yesterday?","es":"¿Comió hojas ayer?","pt":"Comeu folhas ontem?"},"targetWords":{"en":"eat","es":"Comió","pt":"Comeu"}},
+        {"subject":"first-plural","sentences":{"en":"Did we eat yesterday?","es":"¿Comimos nosotros ayer?","pt":"Nós comemos ontem?"},"targetWords":{"en":"eat","es":"Comimos","pt":"comemos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you eat yesterday?","es":"¿Comieron ustedes ayer?","pt":"Vocês comeram ontem?"},"targetWords":{"en":"eat","es":"Comieron","pt":"comeram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they eat yesterday?","es":"¿Comieron ellos ayer?","pt":"Eles comeram ontem?"},"targetWords":{"en":"eat","es":"Comieron","pt":"comeram"}}]}},
+    "future":{"forms":{
+      "affirmative":[
+        {"subject":"first-singular","sentences":{"en":"I will eat tomorrow.","es":"Yo comeré mañana.","pt":"Eu comerei amanhã."},"targetWords":{"en":"eat","es":"comeré","pt":"comerei"}},
+        {"subject":"second-singular","sentences":{"en":"You will eat tomorrow.","es":"Tú comerás mañana.","pt":"Você comerá amanhã."},"targetWords":{"en":"eat","es":"comerás","pt":"comerá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will eat tomorrow.","es":"Él comerá mañana.","pt":"Ele comerá amanhã."},"targetWords":{"en":"eat","es":"comerá","pt":"comerá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will eat tomorrow.","es":"Ella comerá mañana.","pt":"Ela comerá amanhã."},"targetWords":{"en":"eat","es":"comerá","pt":"comerá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will eat leaves tomorrow.","es":"Comerá hojas mañana.","pt":"Comerá folhas amanhã."},"targetWords":{"en":"eat","es":"Comerá","pt":"Comerá"}},
+        {"subject":"first-plural","sentences":{"en":"We will eat tomorrow.","es":"Nosotros comeremos mañana.","pt":"Nós comeremos amanhã."},"targetWords":{"en":"eat","es":"comeremos","pt":"comeremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will eat tomorrow.","es":"Ustedes comerán mañana.","pt":"Vocês comerão amanhã."},"targetWords":{"en":"eat","es":"comerán","pt":"comerão"}},
+        {"subject":"third-plural","sentences":{"en":"They will eat tomorrow.","es":"Ellos comerán mañana.","pt":"Eles comerão amanhã."},"targetWords":{"en":"eat","es":"comerán","pt":"comerão"}}],
+      "negative":[
+        {"subject":"first-singular","sentences":{"en":"I will not eat tomorrow.","es":"Yo no comeré mañana.","pt":"Eu não comerei amanhã."},"targetWords":{"en":"eat","es":"comeré","pt":"comerei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not eat tomorrow.","es":"Tú no comerás mañana.","pt":"Você não comerá amanhã."},"targetWords":{"en":"eat","es":"comerás","pt":"comerá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not eat tomorrow.","es":"Él no comerá mañana.","pt":"Ele não comerá amanhã."},"targetWords":{"en":"eat","es":"comerá","pt":"comerá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not eat tomorrow.","es":"Ella no comerá mañana.","pt":"Ela não comerá amanhã."},"targetWords":{"en":"eat","es":"comerá","pt":"comerá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not eat leaves tomorrow.","es":"No comerá hojas mañana.","pt":"Não comerá folhas amanhã."},"targetWords":{"en":"eat","es":"comerá","pt":"comerá"}},
+        {"subject":"first-plural","sentences":{"en":"We will not eat tomorrow.","es":"Nosotros no comeremos mañana.","pt":"Nós não comeremos amanhã."},"targetWords":{"en":"eat","es":"comeremos","pt":"comeremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not eat tomorrow.","es":"Ustedes no comerán mañana.","pt":"Vocês não comerão amanhã."},"targetWords":{"en":"eat","es":"comerán","pt":"comerão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not eat tomorrow.","es":"Ellos no comerán mañana.","pt":"Eles não comerão amanhã."},"targetWords":{"en":"eat","es":"comerán","pt":"comerão"}}],
+      "interrogative":[
+        {"subject":"first-singular","sentences":{"en":"Will I eat tomorrow?","es":"¿Comeré yo mañana?","pt":"Eu comerei amanhã?"},"targetWords":{"en":"eat","es":"Comeré","pt":"comerei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you eat tomorrow?","es":"¿Comerás tú mañana?","pt":"Você comerá amanhã?"},"targetWords":{"en":"eat","es":"Comerás","pt":"comerá"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he eat tomorrow?","es":"¿Comerá él mañana?","pt":"Ele comerá amanhã?"},"targetWords":{"en":"eat","es":"Comerá","pt":"comerá"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she eat tomorrow?","es":"¿Comerá ella mañana?","pt":"Ela comerá amanhã?"},"targetWords":{"en":"eat","es":"Comerá","pt":"comerá"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it eat leaves tomorrow?","es":"¿Comerá hojas mañana?","pt":"Comerá folhas amanhã?"},"targetWords":{"en":"eat","es":"Comerá","pt":"Comerá"}},
+        {"subject":"first-plural","sentences":{"en":"Will we eat tomorrow?","es":"¿Comeremos nosotros mañana?","pt":"Nós comeremos amanhã?"},"targetWords":{"en":"eat","es":"Comeremos","pt":"comeremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you eat tomorrow?","es":"¿Comerán ustedes mañana?","pt":"Vocês comerão amanhã?"},"targetWords":{"en":"eat","es":"Comerán","pt":"comerão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they eat tomorrow?","es":"¿Comerán ellos mañana?","pt":"Eles comerão amanhã?"},"targetWords":{"en":"eat","es":"Comerán","pt":"comerão"}}]}}
+  }
+}
