@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "study",
+  "tenses": {
+    "present": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I study English every day.","es":"Yo estudio inglés todos los días.","pt":"Eu estudo inglês todos os dias."},"targetWords":{"en":"study","es":"estudio","pt":"estudo"}},
+        {"subject":"second-singular","sentences":{"en":"You study English every day.","es":"Tú estudias inglés todos los días.","pt":"Você estuda inglês todos os dias."},"targetWords":{"en":"study","es":"estudias","pt":"estuda"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He studies English every day.","es":"Él estudia inglés todos los días.","pt":"Ele estuda inglês todos os dias."},"targetWords":{"en":"studies","es":"estudia","pt":"estuda"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She studies English every day.","es":"Ella estudia inglés todos los días.","pt":"Ela estuda inglês todos os dias."},"targetWords":{"en":"studies","es":"estudia","pt":"estuda"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It studies the environment every day.","es":"Esto estudia el ambiente todos los días.","pt":"Isto estuda o ambiente todos os dias."},"targetWords":{"en":"studies","es":"estudia","pt":"estuda"}},
+        {"subject":"first-plural","sentences":{"en":"We study English every day.","es":"Nosotros estudiamos inglés todos los días.","pt":"Nós estudamos inglês todos os dias."},"targetWords":{"en":"study","es":"estudiamos","pt":"estudamos"}},
+        {"subject":"second-plural","sentences":{"en":"You study English every day.","es":"Ustedes estudian inglés todos los días.","pt":"Vocês estudam inglês todos os dias."},"targetWords":{"en":"study","es":"estudian","pt":"estudam"}},
+        {"subject":"third-plural","sentences":{"en":"They study English every day.","es":"Ellos estudian inglés todos los días.","pt":"Eles estudam inglês todos os dias."},"targetWords":{"en":"study","es":"estudian","pt":"estudam"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I do not study English every day.","es":"Yo no estudio inglés todos los días.","pt":"Eu não estudo inglês todos os dias."},"targetWords":{"en":"study","es":"estudio","pt":"estudo"}},
+        {"subject":"second-singular","sentences":{"en":"You do not study English every day.","es":"Tú no estudias inglés todos los días.","pt":"Você não estuda inglês todos os dias."},"targetWords":{"en":"study","es":"estudias","pt":"estuda"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He does not study English every day.","es":"Él no estudia inglés todos los días.","pt":"Ele não estuda inglês todos os dias."},"targetWords":{"en":"study","es":"estudia","pt":"estuda"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She does not study English every day.","es":"Ella no estudia inglés todos los días.","pt":"Ela não estuda inglês todos os dias."},"targetWords":{"en":"study","es":"estudia","pt":"estuda"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It does not study the environment every day.","es":"Esto no estudia el ambiente todos los días.","pt":"Isto não estuda o ambiente todos os dias."},"targetWords":{"en":"study","es":"estudia","pt":"estuda"}},
+        {"subject":"first-plural","sentences":{"en":"We do not study English every day.","es":"Nosotros no estudiamos inglés todos los días.","pt":"Nós não estudamos inglês todos os dias."},"targetWords":{"en":"study","es":"estudiamos","pt":"estudamos"}},
+        {"subject":"second-plural","sentences":{"en":"You do not study English every day.","es":"Ustedes no estudian inglés todos los días.","pt":"Vocês não estudam inglês todos os dias."},"targetWords":{"en":"study","es":"estudian","pt":"estudam"}},
+        {"subject":"third-plural","sentences":{"en":"They do not study English every day.","es":"Ellos no estudian inglés todos los días.","pt":"Eles não estudam inglês todos os dias."},"targetWords":{"en":"study","es":"estudian","pt":"estudam"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Do I study English every day?","es":"¿Estudio yo inglés todos los días?","pt":"Eu estudo inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudio","pt":"estudo"}},
+        {"subject":"second-singular","sentences":{"en":"Do you study English every day?","es":"¿Estudias tú inglés todos los días?","pt":"Você estuda inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudias","pt":"estuda"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Does he study English every day?","es":"¿Estudia él inglés todos los días?","pt":"Ele estuda inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudia","pt":"estuda"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Does she study English every day?","es":"¿Estudia ella inglés todos los días?","pt":"Ela estuda inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudia","pt":"estuda"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Does it study the environment every day?","es":"¿Estudia esto el ambiente todos los días?","pt":"Isto estuda o ambiente todos os dias?"},"targetWords":{"en":"study","es":"Estudia","pt":"estuda"}},
+        {"subject":"first-plural","sentences":{"en":"Do we study English every day?","es":"¿Estudiamos nosotros inglés todos los días?","pt":"Nós estudamos inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudiamos","pt":"estudamos"}},
+        {"subject":"second-plural","sentences":{"en":"Do you study English every day?","es":"¿Estudian ustedes inglés todos los días?","pt":"Vocês estudam inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudian","pt":"estudam"}},
+        {"subject":"third-plural","sentences":{"en":"Do they study English every day?","es":"¿Estudian ellos inglés todos los días?","pt":"Eles estudam inglês todos os dias?"},"targetWords":{"en":"study","es":"Estudian","pt":"estudam"}}
+      ]}},
+    "past": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I studied English yesterday.","es":"Yo estudié inglés ayer.","pt":"Eu estudei inglês ontem."},"targetWords":{"en":"studied","es":"estudié","pt":"estudei"}},
+        {"subject":"second-singular","sentences":{"en":"You studied English yesterday.","es":"Tú estudiaste inglés ayer.","pt":"Você estudou inglês ontem."},"targetWords":{"en":"studied","es":"estudiaste","pt":"estudou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He studied English yesterday.","es":"Él estudió inglés ayer.","pt":"Ele estudou inglês ontem."},"targetWords":{"en":"studied","es":"estudió","pt":"estudou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She studied English yesterday.","es":"Ella estudió inglés ayer.","pt":"Ela estudou inglês ontem."},"targetWords":{"en":"studied","es":"estudió","pt":"estudou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It studied the environment yesterday.","es":"Esto estudió el ambiente ayer.","pt":"Isto estudou o ambiente ontem."},"targetWords":{"en":"studied","es":"estudió","pt":"estudou"}},
+        {"subject":"first-plural","sentences":{"en":"We studied English yesterday.","es":"Nosotros estudiamos inglés ayer.","pt":"Nós estudamos inglês ontem."},"targetWords":{"en":"studied","es":"estudiamos","pt":"estudamos"}},
+        {"subject":"second-plural","sentences":{"en":"You studied English yesterday.","es":"Ustedes estudiaron inglés ayer.","pt":"Vocês estudaram inglês ontem."},"targetWords":{"en":"studied","es":"estudiaron","pt":"estudaram"}},
+        {"subject":"third-plural","sentences":{"en":"They studied English yesterday.","es":"Ellos estudiaron inglés ayer.","pt":"Eles estudaram inglês ontem."},"targetWords":{"en":"studied","es":"estudiaron","pt":"estudaram"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I did not study English yesterday.","es":"Yo no estudié inglés ayer.","pt":"Eu não estudei inglês ontem."},"targetWords":{"en":"study","es":"estudié","pt":"estudei"}},
+        {"subject":"second-singular","sentences":{"en":"You did not study English yesterday.","es":"Tú no estudiaste inglés ayer.","pt":"Você não estudou inglês ontem."},"targetWords":{"en":"study","es":"estudiaste","pt":"estudou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He did not study English yesterday.","es":"Él no estudió inglés ayer.","pt":"Ele não estudou inglês ontem."},"targetWords":{"en":"study","es":"estudió","pt":"estudou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She did not study English yesterday.","es":"Ella no estudió inglés ayer.","pt":"Ela não estudou inglês ontem."},"targetWords":{"en":"study","es":"estudió","pt":"estudou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It did not study the environment yesterday.","es":"Esto no estudió el ambiente ayer.","pt":"Isto não estudou o ambiente ontem."},"targetWords":{"en":"study","es":"estudió","pt":"estudou"}},
+        {"subject":"first-plural","sentences":{"en":"We did not study English yesterday.","es":"Nosotros no estudiamos inglés ayer.","pt":"Nós não estudamos inglês ontem."},"targetWords":{"en":"study","es":"estudiamos","pt":"estudamos"}},
+        {"subject":"second-plural","sentences":{"en":"You did not study English yesterday.","es":"Ustedes no estudiaron inglés ayer.","pt":"Vocês não estudaram inglês ontem."},"targetWords":{"en":"study","es":"estudiaron","pt":"estudaram"}},
+        {"subject":"third-plural","sentences":{"en":"They did not study English yesterday.","es":"Ellos no estudiaron inglés ayer.","pt":"Eles não estudaram inglês ontem."},"targetWords":{"en":"study","es":"estudiaron","pt":"estudaram"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Did I study English yesterday?","es":"¿Estudié yo inglés ayer?","pt":"Eu estudei inglês ontem?"},"targetWords":{"en":"study","es":"Estudié","pt":"estudei"}},
+        {"subject":"second-singular","sentences":{"en":"Did you study English yesterday?","es":"¿Estudiaste tú inglés ayer?","pt":"Você estudou inglês ontem?"},"targetWords":{"en":"study","es":"Estudiaste","pt":"estudou"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Did he study English yesterday?","es":"¿Estudió él inglés ayer?","pt":"Ele estudou inglês ontem?"},"targetWords":{"en":"study","es":"Estudió","pt":"estudou"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Did she study English yesterday?","es":"¿Estudió ella inglés ayer?","pt":"Ela estudou inglês ontem?"},"targetWords":{"en":"study","es":"Estudió","pt":"estudou"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Did it study the environment yesterday?","es":"¿Estudió esto el ambiente ayer?","pt":"Isto estudou o ambiente ontem?"},"targetWords":{"en":"study","es":"Estudió","pt":"estudou"}},
+        {"subject":"first-plural","sentences":{"en":"Did we study English yesterday?","es":"¿Estudiamos nosotros inglés ayer?","pt":"Nós estudamos inglês ontem?"},"targetWords":{"en":"study","es":"Estudiamos","pt":"estudamos"}},
+        {"subject":"second-plural","sentences":{"en":"Did you study English yesterday?","es":"¿Estudiaron ustedes inglés ayer?","pt":"Vocês estudaram inglês ontem?"},"targetWords":{"en":"study","es":"Estudiaron","pt":"estudaram"}},
+        {"subject":"third-plural","sentences":{"en":"Did they study English yesterday?","es":"¿Estudiaron ellos inglés ayer?","pt":"Eles estudaram inglês ontem?"},"targetWords":{"en":"study","es":"Estudiaron","pt":"estudaram"}}
+      ]}},
+    "future": {"forms": {
+      "affirmative": [
+        {"subject":"first-singular","sentences":{"en":"I will study English tomorrow.","es":"Yo estudiaré inglés mañana.","pt":"Eu estudarei inglês amanhã."},"targetWords":{"en":"study","es":"estudiaré","pt":"estudarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will study English tomorrow.","es":"Tú estudiarás inglés mañana.","pt":"Você estudará inglês amanhã."},"targetWords":{"en":"study","es":"estudiarás","pt":"estudará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will study English tomorrow.","es":"Él estudiará inglés mañana.","pt":"Ele estudará inglês amanhã."},"targetWords":{"en":"study","es":"estudiará","pt":"estudará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will study English tomorrow.","es":"Ella estudiará inglés mañana.","pt":"Ela estudará inglês amanhã."},"targetWords":{"en":"study","es":"estudiará","pt":"estudará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will study the environment tomorrow.","es":"Esto estudiará el ambiente mañana.","pt":"Isto estudará o ambiente amanhã."},"targetWords":{"en":"study","es":"estudiará","pt":"estudará"}},
+        {"subject":"first-plural","sentences":{"en":"We will study English tomorrow.","es":"Nosotros estudiaremos inglés mañana.","pt":"Nós estudaremos inglês amanhã."},"targetWords":{"en":"study","es":"estudiaremos","pt":"estudaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will study English tomorrow.","es":"Ustedes estudiarán inglés mañana.","pt":"Vocês estudarão inglês amanhã."},"targetWords":{"en":"study","es":"estudiarán","pt":"estudarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will study English tomorrow.","es":"Ellos estudiarán inglés mañana.","pt":"Eles estudarão inglês amanhã."},"targetWords":{"en":"study","es":"estudiarán","pt":"estudarão"}}
+      ],
+      "negative": [
+        {"subject":"first-singular","sentences":{"en":"I will not study English tomorrow.","es":"Yo no estudiaré inglés mañana.","pt":"Eu não estudarei inglês amanhã."},"targetWords":{"en":"study","es":"estudiaré","pt":"estudarei"}},
+        {"subject":"second-singular","sentences":{"en":"You will not study English tomorrow.","es":"Tú no estudiarás inglés mañana.","pt":"Você não estudará inglês amanhã."},"targetWords":{"en":"study","es":"estudiarás","pt":"estudará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"He will not study English tomorrow.","es":"Él no estudiará inglés mañana.","pt":"Ele não estudará inglês amanhã."},"targetWords":{"en":"study","es":"estudiará","pt":"estudará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"She will not study English tomorrow.","es":"Ella no estudiará inglés mañana.","pt":"Ela não estudará inglês amanhã."},"targetWords":{"en":"study","es":"estudiará","pt":"estudará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"It will not study the environment tomorrow.","es":"Esto no estudiará el ambiente mañana.","pt":"Isto não estudará o ambiente amanhã."},"targetWords":{"en":"study","es":"estudiará","pt":"estudará"}},
+        {"subject":"first-plural","sentences":{"en":"We will not study English tomorrow.","es":"Nosotros no estudiaremos inglés mañana.","pt":"Nós não estudaremos inglês amanhã."},"targetWords":{"en":"study","es":"estudiaremos","pt":"estudaremos"}},
+        {"subject":"second-plural","sentences":{"en":"You will not study English tomorrow.","es":"Ustedes no estudiarán inglés mañana.","pt":"Vocês não estudarão inglês amanhã."},"targetWords":{"en":"study","es":"estudiarán","pt":"estudarão"}},
+        {"subject":"third-plural","sentences":{"en":"They will not study English tomorrow.","es":"Ellos no estudiarán inglés mañana.","pt":"Eles não estudarão inglês amanhã."},"targetWords":{"en":"study","es":"estudiarán","pt":"estudarão"}}
+      ],
+      "interrogative": [
+        {"subject":"first-singular","sentences":{"en":"Will I study English tomorrow?","es":"¿Estudiaré yo inglés mañana?","pt":"Eu estudarei inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiaré","pt":"estudarei"}},
+        {"subject":"second-singular","sentences":{"en":"Will you study English tomorrow?","es":"¿Estudiarás tú inglés mañana?","pt":"Você estudará inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiarás","pt":"estudará"}},
+        {"subject":"third-singular-masculine","sentences":{"en":"Will he study English tomorrow?","es":"¿Estudiará él inglés mañana?","pt":"Ele estudará inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiará","pt":"estudará"}},
+        {"subject":"third-singular-feminine","sentences":{"en":"Will she study English tomorrow?","es":"¿Estudiará ella inglés mañana?","pt":"Ela estudará inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiará","pt":"estudará"}},
+        {"subject":"third-singular-neuter","sentences":{"en":"Will it study the environment tomorrow?","es":"¿Estudiará esto el ambiente mañana?","pt":"Isto estudará o ambiente amanhã?"},"targetWords":{"en":"study","es":"Estudiará","pt":"estudará"}},
+        {"subject":"first-plural","sentences":{"en":"Will we study English tomorrow?","es":"¿Estudiaremos nosotros inglés mañana?","pt":"Nós estudaremos inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiaremos","pt":"estudaremos"}},
+        {"subject":"second-plural","sentences":{"en":"Will you study English tomorrow?","es":"¿Estudiarán ustedes inglés mañana?","pt":"Vocês estudarão inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiarán","pt":"estudarão"}},
+        {"subject":"third-plural","sentences":{"en":"Will they study English tomorrow?","es":"¿Estudiarán ellos inglés mañana?","pt":"Eles estudarão inglês amanhã?"},"targetWords":{"en":"study","es":"Estudiarán","pt":"estudarão"}}
+      ]}}
+  }
+}
