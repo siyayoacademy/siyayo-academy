@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/verb-subject-forms.schema.json",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "verb": "work",
   "tenses": {
     "present": {
@@ -68,6 +68,40 @@
           {"subject":"first-plural","sentences":{"en":"Did we work yesterday?","es":"¿Trabajamos nosotros ayer?","pt":"Nós trabalhamos ontem?"},"targetWords":{"en":"work","es":"Trabajamos","pt":"trabalhamos"}},
           {"subject":"second-plural","sentences":{"en":"Did you work yesterday?","es":"¿Trabajaron ustedes ayer?","pt":"Vocês trabalharam ontem?"},"targetWords":{"en":"work","es":"Trabajaron","pt":"trabalharam"}},
           {"subject":"third-plural","sentences":{"en":"Did they work yesterday?","es":"¿Trabajaron ellos ayer?","pt":"Eles trabalharam ontem?"},"targetWords":{"en":"work","es":"Trabajaron","pt":"trabalharam"}}
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {"subject":"first-singular","sentences":{"en":"I will work tomorrow.","es":"Yo trabajaré mañana.","pt":"Eu trabalharei amanhã."},"targetWords":{"en":"work","es":"trabajaré","pt":"trabalharei"}},
+          {"subject":"second-singular","sentences":{"en":"You will work tomorrow.","es":"Tú trabajarás mañana.","pt":"Você trabalhará amanhã."},"targetWords":{"en":"work","es":"trabajarás","pt":"trabalhará"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"He will work tomorrow.","es":"Él trabajará mañana.","pt":"Ele trabalhará amanhã."},"targetWords":{"en":"work","es":"trabajará","pt":"trabalhará"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"She will work tomorrow.","es":"Ella trabajará mañana.","pt":"Ela trabalhará amanhã."},"targetWords":{"en":"work","es":"trabajará","pt":"trabalhará"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"It will work tomorrow.","es":"Esto funcionará mañana.","pt":"Isto funcionará amanhã."},"targetWords":{"en":"work","es":"funcionará","pt":"funcionará"}},
+          {"subject":"first-plural","sentences":{"en":"We will work tomorrow.","es":"Nosotros trabajaremos mañana.","pt":"Nós trabalharemos amanhã."},"targetWords":{"en":"work","es":"trabajaremos","pt":"trabalharemos"}},
+          {"subject":"second-plural","sentences":{"en":"You will work tomorrow.","es":"Ustedes trabajarán mañana.","pt":"Vocês trabalharão amanhã."},"targetWords":{"en":"work","es":"trabajarán","pt":"trabalharão"}},
+          {"subject":"third-plural","sentences":{"en":"They will work tomorrow.","es":"Ellos trabajarán mañana.","pt":"Eles trabalharão amanhã."},"targetWords":{"en":"work","es":"trabajarán","pt":"trabalharão"}}
+        ],
+        "negative": [
+          {"subject":"first-singular","sentences":{"en":"I will not work tomorrow.","es":"Yo no trabajaré mañana.","pt":"Eu não trabalharei amanhã."},"targetWords":{"en":"work","es":"trabajaré","pt":"trabalharei"}},
+          {"subject":"second-singular","sentences":{"en":"You will not work tomorrow.","es":"Tú no trabajarás mañana.","pt":"Você não trabalhará amanhã."},"targetWords":{"en":"work","es":"trabajarás","pt":"trabalhará"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"He will not work tomorrow.","es":"Él no trabajará mañana.","pt":"Ele não trabalhará amanhã."},"targetWords":{"en":"work","es":"trabajará","pt":"trabalhará"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"She will not work tomorrow.","es":"Ella no trabajará mañana.","pt":"Ela não trabalhará amanhã."},"targetWords":{"en":"work","es":"trabajará","pt":"trabalhará"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"It will not work tomorrow.","es":"Esto no funcionará mañana.","pt":"Isto não funcionará amanhã."},"targetWords":{"en":"work","es":"funcionará","pt":"funcionará"}},
+          {"subject":"first-plural","sentences":{"en":"We will not work tomorrow.","es":"Nosotros no trabajaremos mañana.","pt":"Nós não trabalharemos amanhã."},"targetWords":{"en":"work","es":"trabajaremos","pt":"trabalharemos"}},
+          {"subject":"second-plural","sentences":{"en":"You will not work tomorrow.","es":"Ustedes no trabajarán mañana.","pt":"Vocês não trabalharão amanhã."},"targetWords":{"en":"work","es":"trabajarán","pt":"trabalharão"}},
+          {"subject":"third-plural","sentences":{"en":"They will not work tomorrow.","es":"Ellos no trabajarán mañana.","pt":"Eles não trabalharão amanhã."},"targetWords":{"en":"work","es":"trabajarán","pt":"trabalharão"}}
+        ],
+        "interrogative": [
+          {"subject":"first-singular","sentences":{"en":"Will I work tomorrow?","es":"¿Trabajaré yo mañana?","pt":"Eu trabalharei amanhã?"},"targetWords":{"en":"work","es":"Trabajaré","pt":"trabalharei"}},
+          {"subject":"second-singular","sentences":{"en":"Will you work tomorrow?","es":"¿Trabajarás tú mañana?","pt":"Você trabalhará amanhã?"},"targetWords":{"en":"work","es":"Trabajarás","pt":"trabalhará"}},
+          {"subject":"third-singular-masculine","sentences":{"en":"Will he work tomorrow?","es":"¿Trabajará él mañana?","pt":"Ele trabalhará amanhã?"},"targetWords":{"en":"work","es":"Trabajará","pt":"trabalhará"}},
+          {"subject":"third-singular-feminine","sentences":{"en":"Will she work tomorrow?","es":"¿Trabajará ella mañana?","pt":"Ela trabalhará amanhã?"},"targetWords":{"en":"work","es":"Trabajará","pt":"trabalhará"}},
+          {"subject":"third-singular-neuter","sentences":{"en":"Will it work tomorrow?","es":"¿Funcionará esto mañana?","pt":"Isto funcionará amanhã?"},"targetWords":{"en":"work","es":"Funcionará","pt":"funcionará"}},
+          {"subject":"first-plural","sentences":{"en":"Will we work tomorrow?","es":"¿Trabajaremos nosotros mañana?","pt":"Nós trabalharemos amanhã?"},"targetWords":{"en":"work","es":"Trabajaremos","pt":"trabalharemos"}},
+          {"subject":"second-plural","sentences":{"en":"Will you work tomorrow?","es":"¿Trabajarán ustedes mañana?","pt":"Vocês trabalharão amanhã?"},"targetWords":{"en":"work","es":"Trabajarán","pt":"trabalharão"}},
+          {"subject":"third-plural","sentences":{"en":"Will they work tomorrow?","es":"¿Trabajarán ellos mañana?","pt":"Eles trabalharão amanhã?"},"targetWords":{"en":"work","es":"Trabajarán","pt":"trabalharão"}}
         ]
       }
     }
