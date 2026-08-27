@@ -2,26 +2,45 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "verb-subject-forms.schema.json",
   "title": "SIYAYO Academy Verb Subject Forms Schema",
-  "description": "Schema for crossing a lexical verb with tense, sentence form and grammatical subjects while preserving trilingual realizations.",
+  "description": "Schema for crossing a lexical verb with tenses, sentence forms and grammatical subjects while preserving trilingual realizations.",
   "type": "object",
-  "required": ["$schema", "version", "verb", "tense", "forms"],
+  "required": ["$schema", "version", "verb", "tenses"],
   "properties": {
     "$schema": { "type": "string", "const": "../../schemas/verb-subject-forms.schema.json" },
     "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
     "verb": { "type": "string", "minLength": 1 },
-    "tense": { "type": "string", "enum": ["present", "past", "future", "present-period", "past-period", "future-period"] },
-    "forms": {
+    "tenses": {
       "type": "object",
       "minProperties": 1,
       "properties": {
-        "affirmative": { "$ref": "#/$defs/subjectList" },
-        "negative": { "$ref": "#/$defs/subjectList" },
-        "interrogative": { "$ref": "#/$defs/subjectList" }
+        "present": { "$ref": "#/$defs/tenseUnit" },
+        "past": { "$ref": "#/$defs/tenseUnit" },
+        "future": { "$ref": "#/$defs/tenseUnit" },
+        "present-period": { "$ref": "#/$defs/tenseUnit" },
+        "past-period": { "$ref": "#/$defs/tenseUnit" },
+        "future-period": { "$ref": "#/$defs/tenseUnit" }
       },
       "additionalProperties": false
     }
   },
   "$defs": {
+    "tenseUnit": {
+      "type": "object",
+      "required": ["forms"],
+      "properties": {
+        "forms": {
+          "type": "object",
+          "minProperties": 1,
+          "properties": {
+            "affirmative": { "$ref": "#/$defs/subjectList" },
+            "negative": { "$ref": "#/$defs/subjectList" },
+            "interrogative": { "$ref": "#/$defs/subjectList" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "subjectList": {
       "type": "array",
       "minItems": 1,
