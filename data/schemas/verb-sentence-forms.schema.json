@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "verb-sentence-forms.schema.json",
   "title": "SIYAYO Academy Verb Sentence Forms Schema",
-  "description": "Schema for trilingual affirmative, negative and interrogative sentence forms linked to lexical verbs.",
+  "description": "Schema for the canonical Built-in Actions sentence matrix: one lexical verb across present, past and future, with affirmative, negative and interrogative trilingual realizations.",
   "type": "object",
   "required": ["$schema", "items"],
   "properties": {
@@ -12,34 +12,36 @@
     },
     "items": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["verb", "tense", "forms"],
-        "properties": {
-          "verb": {
-            "type": "string",
-            "minLength": 1
-          },
-          "tense": {
-            "type": "string",
-            "enum": ["present", "past", "future", "present-period", "past-period", "future-period"]
-          },
-          "forms": {
-            "type": "object",
-            "required": ["affirmative", "negative", "interrogative"],
-            "properties": {
-              "affirmative": { "$ref": "#/$defs/formUnit" },
-              "negative": { "$ref": "#/$defs/formUnit" },
-              "interrogative": { "$ref": "#/$defs/formUnit" }
-            },
-            "additionalProperties": false
-          }
-        },
-        "additionalProperties": false
-      }
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "$ref": "#/$defs/tenseItem" },
+      "allOf": [
+        { "contains": { "properties": { "tense": { "const": "present" } }, "required": ["tense"] }, "minContains": 1, "maxContains": 1 },
+        { "contains": { "properties": { "tense": { "const": "past" } }, "required": ["tense"] }, "minContains": 1, "maxContains": 1 },
+        { "contains": { "properties": { "tense": { "const": "future" } }, "required": ["tense"] }, "minContains": 1, "maxContains": 1 }
+      ]
     }
   },
   "$defs": {
+    "tenseItem": {
+      "type": "object",
+      "required": ["verb", "tense", "forms"],
+      "properties": {
+        "verb": { "type": "string", "minLength": 1 },
+        "tense": { "type": "string", "enum": ["present", "past", "future"] },
+        "forms": {
+          "type": "object",
+          "required": ["affirmative", "negative", "interrogative"],
+          "properties": {
+            "affirmative": { "$ref": "#/$defs/formUnit" },
+            "negative": { "$ref": "#/$defs/formUnit" },
+            "interrogative": { "$ref": "#/$defs/formUnit" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "formUnit": {
       "type": "object",
       "required": ["sentences", "targetWords"],
