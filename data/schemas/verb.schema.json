@@ -1,141 +1,73 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-
   "$id": "verb.schema.json",
-
   "title": "SIYAYO Academy Verb Schema",
-
   "description": "Schema for lexical verb corpora used by the SIYAYO Academy Built-in Actions system.",
-
   "type": "array",
-
   "items": {
     "type": "object",
-
-    "required": [
-      "id",
-      "lemma",
-      "translations",
-      "verbFunction"
-    ],
-
+    "required": ["id", "lemma", "translations", "verbFunction"],
     "properties": {
-
       "id": {
         "type": "string",
         "description": "Unique identifier for the verb."
       },
-
       "lemma": {
         "type": "string",
-        "description": "Base form of the English verb."
+        "description": "Base form of the English lexical verb."
       },
-
       "translations": {
         "type": "object",
-
-        "required": [
-          "en",
-          "es",
-          "pt"
-        ],
-
+        "required": ["en", "es", "pt"],
         "properties": {
-
-          "en": {
-            "type": "string"
-          },
-
-          "es": {
-            "type": "string"
-          },
-
-          "pt": {
-            "type": "string"
-          }
+          "en": { "type": "string" },
+          "es": { "type": "string" },
+          "pt": { "type": "string" }
         },
-
         "additionalProperties": false
       },
-
       "verbFunction": {
         "type": "array",
-
+        "description": "Semantic function or functions expressed by the verb. This axis is independent from morphological regularity.",
         "items": {
           "type": "string",
-          "enum": [
-            "quality",
-            "state",
-            "movement",
-            "action",
-            "existence"
-          ]
+          "enum": ["quality", "state", "movement", "action", "existence"]
         },
-
         "minItems": 1,
         "uniqueItems": true
       },
-
       "verbClass": {
         "type": "array",
-
+        "description": "Optional pedagogical usage/system labels. Do not use this field as a substitute for verbFunction or regularity.",
         "items": {
           "type": "string",
-          "enum": [
-            "routine",
-            "modal",
-            "conditional"
-          ]
+          "enum": ["routine", "modal", "conditional"]
         },
-
         "minItems": 1,
         "uniqueItems": true
       },
-
       "regularity": {
         "type": "string",
-        "enum": [
-          "regular",
-          "irregular"
-        ]
+        "enum": ["regular", "irregular"],
+        "description": "English lexical morphology classification used by the current Built-in Actions corpus. In the Simple Past affirmative, regular verbs normally use an -ed form while irregular verbs use a stored irregular past form. This value must not be treated as a universal EN/ES/PT classification; morphology is language-specific. With English DID in negative and interrogative Simple Past forms, the lexical verb returns to its base form regardless of this classification."
       },
-
       "forms": {
         "type": "object",
-
+        "description": "Stored English lexical forms. These forms describe the English lemma and do not define Spanish or Portuguese morphology.",
         "properties": {
-
-          "thirdPersonSingular": {
-            "type": "string"
-          },
-
-          "past": {
-            "type": "string"
-          },
-
-          "pastParticiple": {
-            "type": "string"
-          },
-
-          "gerund": {
-            "type": "string"
-          }
+          "thirdPersonSingular": { "type": "string" },
+          "past": { "type": "string" },
+          "pastParticiple": { "type": "string" },
+          "gerund": { "type": "string" }
         },
-
         "additionalProperties": false
       },
-
       "tags": {
         "type": "array",
-
-        "items": {
-          "type": "string"
-        },
-
+        "items": { "type": "string" },
         "uniqueItems": true
       }
     },
-
     "additionalProperties": false
   }
 }
