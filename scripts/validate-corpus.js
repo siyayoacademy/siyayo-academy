@@ -37,10 +37,15 @@ function validateTrilingual(node, where) {
   if (extras.length) fail(`Unexpected language keys: ${extras.join(', ')}`, where);
 }
 function explorerUrls(source, name) {
-  const match = source.match(new RegExp(`const\\s+${name}\\s*=\\s*\\[([\\s\\S]*?)\\]`, 'm'));
+  const match = source.match(new RegExp(`\\b${name}\\s*=\\s*\\[([\\s\\S]*?)\\]`, 'm'));
   return match ? [...match[1].matchAll(/["'`]([^"'`]+)["'`]/g)].map(m => m[1]) : null;
 }
 function collectionItems(data) { return Array.isArray(data) ? data : data?.items; }
+function escapeRegExp(value) { return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+function willCarriesBase(sentence, base) {
+  const s = normalize(sentence);
+  return new RegExp(`\\bwill\\b[\\s\\S]*\\b${escapeRegExp(base)}\\b`).test(s);
+}
 
 function validateSentenceFile(verbId, filePath) {
   const data = readJson(filePath), items = collectionItems(data);
@@ -115,7 +120,7 @@ function validateEnglishAuxiliaries(action, filePath, subjectMode) {
     const s = normalize(sentence), where = `${action.id}/morphology/${tense}/${formName}`;
     if (tense === 'past' && formName === 'negative' && s.includes('did not ') && !s.includes(`did not ${base}`)) fail(`English DID negative should use base form '${base}'`, `${where}: ${sentence}`);
     if (tense === 'past' && formName === 'interrogative' && s.startsWith('did ') && !s.includes(` ${base}`)) fail(`English DID interrogative should use base form '${base}'`, `${where}: ${sentence}`);
-    if (tense === 'future' && s.includes('will ') && !s.includes(`will ${base}`) && !s.includes(`will not ${base}`)) fail(`English WILL should use base form '${base}'`, `${where}: ${sentence}`);
+    if (tense === 'future' && s.includes('will ') && !willCarriesBase(sentence, base)) fail(`English WILL should use base form '${base}'`, `${where}: ${sentence}`);
   }
 }
 
