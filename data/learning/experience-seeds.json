@@ -1,0 +1,137 @@
+{
+  "$schema": "../schemas/experience-seed.schema.json",
+  "version": "0.1.0",
+  "items": [
+    {
+      "id": "shopping-for-dinner",
+      "title": {
+        "en": "Shopping for a Nice Dinner",
+        "es": "Compras para una linda cena",
+        "pt": "Compras para um belo jantar"
+      },
+      "entryVerb": "buy",
+      "situation": {
+        "en": "We are shopping for tonight's dinner.",
+        "es": "Estamos haciendo las compras para la cena de esta noche.",
+        "pt": "Estamos fazendo as compras para o jantar desta noite."
+      },
+      "circumstances": {
+        "time": "tonight",
+        "place": "supermarket",
+        "weather": "warm-evening",
+        "company": "together",
+        "purpose": "prepare-a-special-dinner"
+      },
+      "links": {
+        "verbs": ["buy", "go", "come", "eat", "drink", "cook", "open", "close", "talk", "listen"],
+        "conversationSeeds": ["buy-groceries"],
+        "vocabulary": ["salmon", "tomatoes", "red-onion", "parsley", "cilantro", "leek", "lemon-pepper", "olive-oil", "brown-rice", "carrots", "sweet-potatoes", "cassava", "green-beans", "cheese", "strawberries", "grapes"],
+        "positiveAdjectives": ["fresh", "delicious", "beautiful", "pleasant", "excellent", "wonderful"]
+      },
+      "thinkingMind": [
+        {
+          "intention": "thing-or-action",
+          "questionWord": "what",
+          "question": {
+            "en": "What are we going to cook?",
+            "es": "¿Qué vamos a cocinar?",
+            "pt": "O que vamos cozinhar?"
+          }
+        },
+        {
+          "intention": "place",
+          "questionWord": "where",
+          "question": {
+            "en": "Where can we find the salmon?",
+            "es": "¿Dónde podemos encontrar el salmón?",
+            "pt": "Onde podemos encontrar o salmão?"
+          }
+        },
+        {
+          "intention": "quantity",
+          "questionWord": "how-much",
+          "question": {
+            "en": "How much salmon do we need?",
+            "es": "¿Cuánto salmón necesitamos?",
+            "pt": "Quanto salmão precisamos?"
+          }
+        },
+        {
+          "intention": "choice",
+          "questionWord": "which",
+          "question": {
+            "en": "Which cheese should we choose?",
+            "es": "¿Qué queso deberíamos elegir?",
+            "pt": "Qual queijo devemos escolher?"
+          }
+        },
+        {
+          "intention": "reason",
+          "questionWord": "why",
+          "question": {
+            "en": "Why do you prefer this one?",
+            "es": "¿Por qué prefieres este?",
+            "pt": "Por que você prefere este?"
+          }
+        },
+        {
+          "intention": "person",
+          "questionWord": "who",
+          "question": {
+            "en": "Who is coming to dinner?",
+            "es": "¿Quién viene a cenar?",
+            "pt": "Quem vem para o jantar?"
+          }
+        }
+      ],
+      "perspectives": {
+        "describing": {
+          "line": "red",
+          "examples": {
+            "en": ["The salmon looks fresh.", "The strawberries are beautiful."],
+            "es": ["El salmón se ve fresco.", "Las fresas están hermosas."],
+            "pt": ["O salmão parece fresco.", "Os morangos estão lindos."]
+          }
+        },
+        "narrating": {
+          "line": "yellow",
+          "examples": {
+            "en": ["We went to the supermarket, bought the ingredients and came home."],
+            "es": ["Fuimos al supermercado, compramos los ingredientes y volvimos a casa."],
+            "pt": ["Fomos ao supermercado, compramos os ingredientes e voltamos para casa."]
+          }
+        },
+        "debating": {
+          "line": "green",
+          "examples": {
+            "en": ["Should we buy this salmon or the other one?", "I think this one is better because it looks fresher."],
+            "es": ["¿Deberíamos comprar este salmón o el otro?", "Creo que este es mejor porque parece más fresco."],
+            "pt": ["Devemos comprar este salmão ou o outro?", "Acho que este é melhor porque parece mais fresco."]
+          }
+        },
+        "concluding": {
+          "line": "blue",
+          "examples": {
+            "en": ["Great. We have everything we need."],
+            "es": ["Muy bien. Tenemos todo lo que necesitamos."],
+            "pt": ["Ótimo. Temos tudo o que precisamos."]
+          }
+        }
+      },
+      "toroidalNext": {
+        "prompt": {
+          "en": "Where are you going next?",
+          "es": "¿Adónde vas ahora?",
+          "pt": "Para onde você vai agora?"
+        },
+        "answer": {
+          "en": "We're going home to prepare dinner.",
+          "es": "Vamos a casa a preparar la cena.",
+          "pt": "Vamos para casa preparar o jantar."
+        },
+        "nextExperience": "preparing-dinner"
+      },
+      "tags": ["shopping", "dinner", "questions", "perspective", "toroidal", "nice-party"]
+    }
+  ]
+}
