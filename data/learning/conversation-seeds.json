@@ -1,0 +1,99 @@
+{
+  "$schema": "../schemas/conversation-seed.schema.json",
+  "version": "0.1.0",
+  "items": [
+    {
+      "id": "buy-groceries",
+      "verb": "buy",
+      "situation": {
+        "en": "Shopping for groceries.",
+        "es": "Comprar alimentos.",
+        "pt": "Fazer compras de alimentos."
+      },
+      "intention": "ask-about-routine",
+      "question": {
+        "en": "Where do you buy your groceries?",
+        "es": "¿Dónde compras tus alimentos?",
+        "pt": "Onde você compra seus alimentos?"
+      },
+      "answer": {
+        "en": "I buy my groceries at the supermarket.",
+        "es": "Compro mis alimentos en el supermercado.",
+        "pt": "Eu compro meus alimentos no supermercado."
+      },
+      "followUp": {
+        "en": "What do you usually buy?",
+        "es": "¿Qué compras normalmente?",
+        "pt": "O que você costuma comprar?"
+      },
+      "naturalSpoken": {
+        "en": "Do you wanna go shopping?",
+        "es": "¿Quieres ir de compras?",
+        "pt": "Quer ir fazer compras?"
+      },
+      "tags": ["shopping", "routine", "conversation"]
+    },
+    {
+      "id": "listen-dreams",
+      "verb": "listen",
+      "situation": {
+        "en": "Listening and describing a personal experience.",
+        "es": "Escuchar y describir una experiencia personal.",
+        "pt": "Escutar e descrever uma experiência pessoal."
+      },
+      "intention": "ask-about-experience",
+      "question": {
+        "en": "What do you listen to at night?",
+        "es": "¿Qué escuchas por la noche?",
+        "pt": "O que você escuta à noite?"
+      },
+      "answer": {
+        "en": "I listen to the sounds around me.",
+        "es": "Escucho los sonidos a mi alrededor.",
+        "pt": "Eu escuto os sons ao meu redor."
+      },
+      "followUp": {
+        "en": "How do those sounds make you feel?",
+        "es": "¿Cómo te hacen sentir esos sonidos?",
+        "pt": "Como esses sons fazem você se sentir?"
+      },
+      "naturalSpoken": {
+        "en": "What are you listening to?",
+        "es": "¿Qué estás escuchando?",
+        "pt": "O que você está escutando?"
+      },
+      "tags": ["listening", "experience", "feelings", "conversation"]
+    },
+    {
+      "id": "go-next-destination",
+      "verb": "go",
+      "situation": {
+        "en": "Talking about a destination and the next plan.",
+        "es": "Hablar sobre un destino y el próximo plan.",
+        "pt": "Falar sobre um destino e o próximo plano."
+      },
+      "intention": "ask-about-destination",
+      "question": {
+        "en": "Where are you going?",
+        "es": "¿Adónde vas?",
+        "pt": "Aonde você vai?"
+      },
+      "answer": {
+        "en": "I'm going to meet my friends.",
+        "es": "Voy a encontrarme con mis amigos.",
+        "pt": "Vou encontrar meus amigos."
+      },
+      "followUp": {
+        "en": "What are you going to do there?",
+        "es": "¿Qué vas a hacer allí?",
+        "pt": "O que você vai fazer lá?"
+      },
+      "naturalSpoken": {
+        "en": "Where are you headed?",
+        "es": "¿Para dónde vas?",
+        "pt": "Para onde você está indo?"
+      },
+      "tags": ["movement", "destination", "plans", "conversation"]
+    }
+  ]
+}
