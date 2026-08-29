@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conversation-seed.schema.json",
+  "title": "SIYAYO Conversation Seed",
+  "description": "Linked learning layer for turning canonical verb corpus entries into situation, intention, questions and natural conversation practice without overloading verb-form files.",
+  "type": "object",
+  "required": ["version", "items"],
+  "properties": {
+    "version": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "verb", "situation", "intention", "question", "answer", "followUp"],
+        "properties": {
+          "id": { "type": "string" },
+          "verb": { "type": "string" },
+          "situation": {
+            "type": "object",
+            "required": ["en", "es", "pt"],
+            "additionalProperties": false,
+            "properties": {
+              "en": { "type": "string" },
+              "es": { "type": "string" },
+              "pt": { "type": "string" }
+            }
+          },
+          "intention": { "type": "string" },
+          "question": { "$ref": "#/$defs/trilingual" },
+          "answer": { "$ref": "#/$defs/trilingual" },
+          "followUp": { "$ref": "#/$defs/trilingual" },
+          "naturalSpoken": { "$ref": "#/$defs/trilingual" },
+          "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "trilingual": {
+      "type": "object",
+      "required": ["en", "es", "pt"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string" },
+        "es": { "type": "string" },
+        "pt": { "type": "string" }
+      }
+    }
+  }
+}

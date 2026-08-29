@@ -1,0 +1,31 @@
+name: Corpus Integrity
+
+on:
+  push:
+    branches:
+      - corpus-integrity-run
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-corpus:
+    name: Validate Built-in Actions corpus
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run SIYAYO Corpus Integrity Validator
+        run: node scripts/validate-corpus.js
