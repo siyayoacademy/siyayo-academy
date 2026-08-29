@@ -40,10 +40,10 @@ function explorerUrls(source, name) {
   const match = source.match(new RegExp(`const\\s+${name}\\s*=\\s*\\[([\\s\\S]*?)\\]`, 'm'));
   return match ? [...match[1].matchAll(/["'`]([^"'`]+)["'`]/g)].map(m => m[1]) : null;
 }
-function sentenceItems(data) { return Array.isArray(data) ? data : data?.items; }
+function collectionItems(data) { return Array.isArray(data) ? data : data?.items; }
 
 function validateSentenceFile(verbId, filePath) {
-  const data = readJson(filePath), items = sentenceItems(data);
+  const data = readJson(filePath), items = collectionItems(data);
   if (!Array.isArray(items)) { fail('Sentence forms must be an array or contain items[]', path.relative(ROOT, filePath)); return; }
   if (items.length !== 3) fail(`Expected exactly 3 tense items, found ${items.length}`, verbId);
   const seen = new Set();
@@ -60,8 +60,7 @@ function validateSentenceFile(verbId, filePath) {
       validateTrilingual(form.sentences, `${where}/${formName}/sentences`);
       validateTrilingual(form.targetWords, `${where}/${formName}/targetWords`);
       for (const lang of EXPECTED_LANGS) {
-        if (typeof form.sentences?.[lang] === 'string' && typeof form.targetWords?.[lang] === 'string' &&
-            !targetAppears(form.sentences[lang], form.targetWords[lang])) {
+        if (typeof form.sentences?.[lang] === 'string' && typeof form.targetWords?.[lang] === 'string' && !targetAppears(form.sentences[lang], form.targetWords[lang])) {
           fail(`targetWords.${lang} '${form.targetWords[lang]}' not found in sentence`, `${where}/${formName}`);
         }
       }
@@ -90,8 +89,7 @@ function validateSubjectFile(verbId, filePath, subjectIds) {
         validateTrilingual(entry.sentences, `${where}/${entry.subject}/sentences`);
         validateTrilingual(entry.targetWords, `${where}/${entry.subject}/targetWords`);
         for (const lang of EXPECTED_LANGS) {
-          if (typeof entry.sentences?.[lang] === 'string' && typeof entry.targetWords?.[lang] === 'string' &&
-              !targetAppears(entry.sentences[lang], entry.targetWords[lang])) {
+          if (typeof entry.sentences?.[lang] === 'string' && typeof entry.targetWords?.[lang] === 'string' && !targetAppears(entry.sentences[lang], entry.targetWords[lang])) {
             fail(`targetWords.${lang} '${entry.targetWords[lang]}' not found in sentence`, `${where}/${entry.subject}`);
           }
         }
@@ -105,7 +103,7 @@ function validateEnglishAuxiliaries(action, filePath, subjectMode) {
   const base = normalize(action.lemma);
   const checks = [];
   if (!subjectMode) {
-    for (const item of sentenceItems(data) ?? []) for (const formName of EXPECTED_FORMS) {
+    for (const item of collectionItems(data) ?? []) for (const formName of EXPECTED_FORMS) {
       const sentence = item.forms?.[formName]?.sentences?.en;
       if (sentence) checks.push([item.tense, formName, sentence]);
     }
@@ -115,18 +113,19 @@ function validateEnglishAuxiliaries(action, filePath, subjectMode) {
   }
   for (const [tense, formName, sentence] of checks) {
     const s = normalize(sentence), where = `${action.id}/morphology/${tense}/${formName}`;
-    if (tense === 'past' && formName === 'negative' && s.includes('did not ') && !s.includes(`did not ${base}`))
-      fail(`English DID negative should use base form '${base}'`, `${where}: ${sentence}`);
-    if (tense === 'past' && formName === 'interrogative' && s.startsWith('did ') && !s.includes(` ${base}`))
-      fail(`English DID interrogative should use base form '${base}'`, `${where}: ${sentence}`);
-    if (tense === 'future' && s.includes('will ') && !s.includes(`will ${base}`) && !s.includes(`will not ${base}`))
-      fail(`English WILL should use base form '${base}'`, `${where}: ${sentence}`);
+    if (tense === 'past' && formName === 'negative' && s.includes('did not ') && !s.includes(`did not ${base}`)) fail(`English DID negative should use base form '${base}'`, `${where}: ${sentence}`);
+    if (tense === 'past' && formName === 'interrogative' && s.startsWith('did ') && !s.includes(` ${base}`)) fail(`English DID interrogative should use base form '${base}'`, `${where}: ${sentence}`);
+    if (tense === 'future' && s.includes('will ') && !s.includes(`will ${base}`) && !s.includes(`will not ${base}`)) fail(`English WILL should use base form '${base}'`, `${where}: ${sentence}`);
   }
 }
 
-const actions = readJson(ACTIONS_PATH), subjects = readJson(SUBJECTS_PATH);
-if (!Array.isArray(actions)) fail('actions.json must contain an array', 'actions.json');
-if (!Array.isArray(subjects)) fail('subjects.json must contain an array', 'subjects.json');
+const actionsData = readJson(ACTIONS_PATH);
+const subjectsData = readJson(SUBJECTS_PATH);
+const actions = collectionItems(actionsData);
+const subjects = collectionItems(subjectsData);
+
+if (!Array.isArray(actions)) fail('actions.json must contain an array or items[]', 'actions.json');
+if (!Array.isArray(subjects)) fail('subjects.json must contain an array or items[]', 'subjects.json');
 
 if (Array.isArray(actions) && Array.isArray(subjects)) {
   const actionIds = actions.map(v => v.id), subjectIds = subjects.map(s => s.id);
