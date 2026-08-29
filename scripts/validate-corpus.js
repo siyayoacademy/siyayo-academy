@@ -6,6 +6,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const ACTIONS_PATH = path.join(ROOT, 'data/lexicon/verbs/actions.json');
 const SUBJECTS_PATH = path.join(ROOT, 'data/grammar/subjects.json');
+const CONVERSATION_PATH = path.join(ROOT, 'data/learning/conversation-seeds.json');
 const VERB_DIR = path.join(ROOT, 'data/lexicon/verbs');
 const EXPLORER_PATH = path.join(ROOT, 'js/verb-explorer.js');
 
@@ -29,7 +30,7 @@ function targetAppears(sentence, target) {
   return Boolean(s && t && s.includes(t));
 }
 function validateTrilingual(node, where) {
-  if (!node || typeof node !== 'object') { fail('Expected trilingual object', where); return; }
+  if (!node || typeof node !== 'object' || Array.isArray(node)) { fail('Expected trilingual object', where); return; }
   for (const lang of EXPECTED_LANGS) {
     if (typeof node[lang] !== 'string' || !node[lang].trim()) fail(`Missing/non-string ${lang}`, where);
   }
@@ -124,10 +125,34 @@ function validateEnglishAuxiliaries(action, filePath, subjectMode) {
   }
 }
 
+function validateConversationSeeds(actionIds) {
+  if (!fs.existsSync(CONVERSATION_PATH)) { fail('Missing conversation seeds file', path.relative(ROOT, CONVERSATION_PATH)); return 0; }
+  const data = readJson(CONVERSATION_PATH), items = collectionItems(data);
+  if (!Array.isArray(items)) { fail('conversation-seeds.json must contain items[]', 'conversation-seeds.json'); return 0; }
+  const ids = new Set();
+  for (const seed of items) {
+    const where = `conversation/${seed?.id ?? 'unknown'}`;
+    if (!seed || typeof seed !== 'object') { fail('Invalid conversation seed', where); continue; }
+    if (typeof seed.id !== 'string' || !seed.id.trim()) fail('Missing conversation seed id', where);
+    else if (ids.has(seed.id)) fail(`Duplicate conversation seed id '${seed.id}'`, where);
+    else ids.add(seed.id);
+    if (!actionIds.includes(seed.verb)) fail(`Conversation seed references unknown action verb '${seed.verb}'`, where);
+    if (typeof seed.intention !== 'string' || !seed.intention.trim()) fail('Missing intention', where);
+    for (const field of ['situation', 'question', 'answer', 'followUp']) validateTrilingual(seed[field], `${where}/${field}`);
+    if (seed.naturalSpoken !== undefined) validateTrilingual(seed.naturalSpoken, `${where}/naturalSpoken`);
+    if (seed.tags !== undefined) {
+      if (!Array.isArray(seed.tags) || seed.tags.some(tag => typeof tag !== 'string' || !tag.trim())) fail('tags must be non-empty strings', `${where}/tags`);
+      else if (new Set(seed.tags).size !== seed.tags.length) fail('Duplicate conversation tags', `${where}/tags`);
+    }
+  }
+  return items.length;
+}
+
 const actionsData = readJson(ACTIONS_PATH);
 const subjectsData = readJson(SUBJECTS_PATH);
 const actions = collectionItems(actionsData);
 const subjects = collectionItems(subjectsData);
+let conversationSeeds = 0;
 
 if (!Array.isArray(actions)) fail('actions.json must contain an array or items[]', 'actions.json');
 if (!Array.isArray(subjects)) fail('subjects.json must contain an array or items[]', 'subjects.json');
@@ -147,6 +172,8 @@ if (Array.isArray(actions) && Array.isArray(subjects)) {
     else { validateSubjectFile(action.id, subjectPath, subjectIds); validateEnglishAuxiliaries(action, subjectPath, true); }
   }
 
+  conversationSeeds = validateConversationSeeds(actionIds);
+
   if (fs.existsSync(EXPLORER_PATH)) {
     const source = fs.readFileSync(EXPLORER_PATH, 'utf8');
     const sentenceUrls = explorerUrls(source, 'SENTENCE_FORM_URLS');
@@ -164,9 +191,10 @@ console.log('SIYAYO Corpus Integrity Validator');
 console.log('================================');
 console.log(`Verbs discovered: ${Array.isArray(actions) ? actions.length : 0}`);
 console.log(`Canonical subjects: ${Array.isArray(subjects) ? subjects.length : 0}`);
-console.log('Checks: files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules');
+console.log(`Conversation seeds: ${conversationSeeds}`);
+console.log('Checks: corpus files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules, conversation seed IDs/verbs/trilingual fields');
 console.log('');
-if (!failures.length) console.log('PASS — canonical Built-in Actions corpus integrity checks passed.');
+if (!failures.length) console.log('PASS — canonical Built-in Actions corpus and conversation seed integrity checks passed.');
 else {
   console.log(`FIX — ${failures.length} issue(s) found:`);
   failures.forEach((item, i) => console.log(`${i + 1}. ${item.message}${item.context ? ` — ${item.context}` : ''}`));
