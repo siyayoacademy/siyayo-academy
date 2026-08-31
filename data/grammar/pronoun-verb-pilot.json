@@ -1,21 +1,23 @@
 {
-  "version": "0.2.0",
-  "purpose": "Minimal SIYAYO concordance pilot: shared meaning selects a canonical subject concept; each language independently realizes the verb from grammatical features.",
+  "version": "0.3.0",
+  "purpose": "Minimal SIYAYO concordance pilot: a shared identity meaning is realized independently in EN, ES and PT, while semantic person remains separate from language-specific morphological agreement.",
   "meaningState": {
-    "intent": "self-identification",
+    "intent": "identity-attribution",
     "speechAct": "statement",
-    "person": "first",
-    "number": "singular",
     "tense": "present",
     "verbConcept": "be-identity"
   },
-  "subjectRef": "first-singular",
   "verbConcept": {
     "id": "be-identity",
     "realizations": {
       "en": {
         "lemma": "be",
         "subjectRequired": true,
+        "agreementProfile": {
+          "first-singular": "first-singular",
+          "second-singular": "second-singular",
+          "third-singular-masculine": "third-singular"
+        },
         "present": {
           "first-singular": "am",
           "second-singular": "are",
@@ -26,6 +28,11 @@
       "es": {
         "lemma": "ser",
         "subjectRequired": false,
+        "agreementProfile": {
+          "first-singular": "first-singular",
+          "second-singular": "second-singular",
+          "third-singular-masculine": "third-singular"
+        },
         "present": {
           "first-singular": "soy",
           "second-singular": "eres",
@@ -36,21 +43,34 @@
       "pt": {
         "lemma": "ser",
         "subjectRequired": false,
+        "agreementProfile": {
+          "first-singular": "first-singular",
+          "second-singular": "third-singular",
+          "third-singular-masculine": "third-singular"
+        },
         "present": {
           "first-singular": "sou",
-          "second-singular": "é",
           "third-singular": "é"
         },
         "candidateForms": ["sou", "é"]
       }
     }
   },
-  "tests": {
-    "expected": { "en": "I am", "es": "yo soy", "pt": "eu sou" },
-    "invalid": {
-      "en": ["I is", "I are"],
-      "es": ["yo eres", "yo es"],
-      "pt": ["eu é"]
+  "testCases": [
+    {
+      "id": "first-singular",
+      "subjectRef": "first-singular",
+      "expected": { "en": "I am", "es": "yo soy", "pt": "eu sou" }
+    },
+    {
+      "id": "second-singular",
+      "subjectRef": "second-singular",
+      "expected": { "en": "you are", "es": "tú eres", "pt": "você é" }
+    },
+    {
+      "id": "third-singular-masculine",
+      "subjectRef": "third-singular-masculine",
+      "expected": { "en": "he is", "es": "él es", "pt": "ele é" }
     }
-  }
+  ]
 }
