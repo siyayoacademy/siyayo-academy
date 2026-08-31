@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "purpose": "Minimal SIYAYO pilot for testing a shared meaning state with independent EN, ES and PT realizations.",
+  "version": "0.2.0",
+  "purpose": "Minimal SIYAYO concordance pilot: shared meaning selects a canonical subject concept; each language independently realizes the verb from grammatical features.",
   "meaningState": {
     "intent": "self-identification",
     "speechAct": "statement",
@@ -10,40 +10,47 @@
     "verbConcept": "be-identity"
   },
   "subjectRef": "first-singular",
-  "realizations": {
-    "en": {
-      "subject": "I",
-      "verb": "am",
-      "tokens": ["I", "am"],
-      "subjectRequired": true
-    },
-    "es": {
-      "subject": "yo",
-      "verb": "soy",
-      "tokens": ["yo", "soy"],
-      "subjectRequired": false,
-      "naturalAlternatives": ["soy"]
-    },
-    "pt": {
-      "subject": "eu",
-      "verb": "sou",
-      "tokens": ["eu", "sou"],
-      "subjectRequired": false,
-      "naturalAlternatives": ["sou"]
-    }
-  },
-  "tests": [
-    {
-      "id": "first-singular-statement",
-      "expected": { "en": "I am", "es": "yo soy", "pt": "eu sou" }
-    },
-    {
-      "id": "reject-wrong-agreement",
-      "invalid": {
-        "en": ["I is", "I are"],
-        "es": ["yo eres", "yo es"],
-        "pt": ["eu és", "eu é"]
+  "verbConcept": {
+    "id": "be-identity",
+    "realizations": {
+      "en": {
+        "lemma": "be",
+        "subjectRequired": true,
+        "present": {
+          "first-singular": "am",
+          "second-singular": "are",
+          "third-singular": "is"
+        },
+        "candidateForms": ["am", "are", "is"]
+      },
+      "es": {
+        "lemma": "ser",
+        "subjectRequired": false,
+        "present": {
+          "first-singular": "soy",
+          "second-singular": "eres",
+          "third-singular": "es"
+        },
+        "candidateForms": ["soy", "eres", "es"]
+      },
+      "pt": {
+        "lemma": "ser",
+        "subjectRequired": false,
+        "present": {
+          "first-singular": "sou",
+          "second-singular": "é",
+          "third-singular": "é"
+        },
+        "candidateForms": ["sou", "é"]
       }
     }
-  ]
+  },
+  "tests": {
+    "expected": { "en": "I am", "es": "yo soy", "pt": "eu sou" },
+    "invalid": {
+      "en": ["I is", "I are"],
+      "es": ["yo eres", "yo es"],
+      "pt": ["eu é"]
+    }
+  }
 }
