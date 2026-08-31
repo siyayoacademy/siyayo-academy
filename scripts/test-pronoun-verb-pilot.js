@@ -18,9 +18,14 @@ function licensedAgreementKeys(languageRule, tense, candidate) {
     .map(([agreementKey]) => agreementKey);
 }
 
+function semanticAgreementKey(subject) {
+  return `${subject.person}-${subject.number}`;
+}
+
 function realize(pilot, subject, lang) {
   const subjectSurface = subject?.realizations?.[lang]?.display;
   const languageRule = pilot.verbConcept?.realizations?.[lang];
+  const semanticKey = semanticAgreementKey(subject);
   const agreementKey = languageRule?.agreementProfile?.[subject.id];
   const verbSurface = languageRule?.[pilot.meaningState.tense]?.[agreementKey];
 
@@ -32,7 +37,9 @@ function realize(pilot, subject, lang) {
     sentence: `${subjectSurface} ${verbSurface}`,
     semanticPerson: subject.person,
     semanticNumber: subject.number,
-    agreementKey
+    semanticAgreementKey: semanticKey,
+    agreementKey,
+    agreementMappingType: semanticKey === agreementKey ? 'DIRECT' : 'REMAPPED'
   };
 }
 
@@ -57,7 +64,10 @@ function validateCandidate(pilot, subject, lang, candidate) {
         person: result.semanticPerson,
         number: result.semanticNumber
       },
+      semanticAgreement: result.semanticAgreementKey,
       requiredAgreement: result.agreementKey,
+      agreementMappingType: result.agreementMappingType,
+      isAgreementRemapped: result.agreementMappingType === 'REMAPPED',
       candidateAgreement: candidateAgreementKeys,
       isSyncretic: candidateAgreementKeys.length > 1,
       expectedForm: result.verb,
@@ -72,19 +82,23 @@ function explain(reason) {
     ? reason.candidateAgreement.join(', ')
     : 'no agreement pattern in the current rule set';
 
+  const remapping = reason.isAgreementRemapped
+    ? ` Semantic agreement is ${reason.semanticAgreement}, but this language maps it to morphological ${reason.requiredAgreement}.`
+    : '';
+
   if (reason.code === 'AGREEMENT_MATCH') {
     const syncretism = reason.isSyncretic
       ? ` The form '${reason.candidate}' is syncretic: it is licensed for ${licensed}; here '${reason.subject}' selects ${reason.requiredAgreement}.`
       : '';
 
-    return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for that agreement.${syncretism}`;
+    return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for that agreement.${remapping}${syncretism}`;
   }
 
   const syncretism = reason.isSyncretic
     ? ` The form '${reason.candidate}' is syncretic across ${licensed}, but none matches the required agreement here.`
     : '';
 
-  return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for ${licensed}. Expected '${reason.expectedForm}'.${syncretism}`;
+  return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for ${licensed}. Expected '${reason.expectedForm}'.${remapping}${syncretism}`;
 }
 
 const pilot = readJson(PILOT_PATH);
@@ -129,7 +143,7 @@ for (const testCase of pilot.testCases) {
       console.log(`    WHY: ${explain(evaluation.reason)}`);
     }
 
-    console.log(`  ${lang.toUpperCase()} RESULT: ${result.sentence} [semantic=${result.semanticPerson}-${result.semanticNumber}; agreement=${result.agreementKey}]`);
+    console.log(`  ${lang.toUpperCase()} RESULT: ${result.sentence} [semantic=${result.semanticAgreementKey}; agreement=${result.agreementKey}; mapping=${result.agreementMappingType}]`);
   }
 
   console.log('');
@@ -141,4 +155,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('PASS — singular/plural concordance decisions carry structured WHY evidence, including syncretic forms, for EN/ES/PT.');
+console.log('PASS — concordance WHY distinguishes direct agreement, semantic-to-morphological remapping and surface syncretism for EN/ES/PT.');
