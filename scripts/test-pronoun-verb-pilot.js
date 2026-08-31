@@ -213,7 +213,6 @@ if (pilot.orderPilot) {
 if (pilot.predicativePilot) {
   const predicativeSubject = subjects.find(item => item.id === pilot.predicativePilot.subjectRef);
   const complement = pilot.predicativePilot.complement;
-  const lang = 'en';
 
   if (!predicativeSubject) {
     fail(`predicativePilot: unknown subjectRef '${pilot.predicativePilot.subjectRef}'`);
@@ -224,34 +223,47 @@ if (pilot.predicativePilot) {
   } else if (complement.function !== 'subject-predicative') {
     fail(`predicativePilot: expected complement function 'subject-predicative', found '${complement.function}'`);
   } else {
-    const base = realize(pilot, predicativeSubject, lang);
-    const statementRule = pilot.predicativePilot.statement?.[lang];
-    const complementSurface = complement.realizations?.[lang];
+    console.log('PREDICATIVE PILOT:');
+    console.log(`  RELATION: ${pilot.predicativePilot.relation}`);
 
-    if (!base) {
-      fail('predicativePilot/en: could not derive subject-copula realization');
-    } else if (!statementRule || !complementSurface) {
-      fail('predicativePilot/en: statement rule or complement realization is missing');
-    } else {
+    for (const lang of LANGS) {
+      const base = realize(pilot, predicativeSubject, lang);
+      const statementRule = pilot.predicativePilot.statement?.[lang];
+      const complementSurface = complement.realizations?.[lang];
+
+      if (!base) {
+        fail(`predicativePilot/${lang}: could not derive subject-copula realization`);
+        continue;
+      }
+
+      if (!statementRule || !complementSurface) {
+        fail(`predicativePilot/${lang}: statement rule or complement realization is missing`);
+        continue;
+      }
+
       const sentence = realizeOrder(base, statementRule.order, '', {
         complement: complementSurface
       });
 
       if (!sentence) {
-        fail('predicativePilot/en: could not realize three-disc sentence');
-      } else if (sentence !== statementRule.expected) {
-        fail(`predicativePilot/en: expected '${statementRule.expected}', derived '${sentence}'`);
-      } else {
-        console.log('PREDICATIVE PILOT:');
-        console.log(`  RELATION: ${pilot.predicativePilot.relation}`);
-        console.log(`  SENTENCE: ${sentence}`);
-        console.log(`  DISC 1: ${base.subject} [pronoun / subject]`);
-        console.log(`  DISC 2: ${base.verb} [verb / copula]`);
-        console.log(`  DISC 3: ${complementSurface} [${complement.kind} / ${complement.function}]`);
-        console.log('  PRINCIPLE: WORD KIND ≠ SYNTACTIC FUNCTION');
-        console.log('');
+        fail(`predicativePilot/${lang}: could not realize three-disc sentence`);
+        continue;
       }
+
+      if (sentence !== statementRule.expected) {
+        fail(`predicativePilot/${lang}: expected '${statementRule.expected}', derived '${sentence}'`);
+        continue;
+      }
+
+      console.log(`  ${lang.toUpperCase()} SENTENCE: ${sentence}`);
+      console.log(`    DISC 1: ${base.subject} [pronoun / subject]`);
+      console.log(`    DISC 2: ${base.verb} [verb / copula; agreement=${base.agreementKey}; mapping=${base.agreementMappingType}]`);
+      console.log(`    DISC 3: ${complementSurface} [${complement.kind} / ${complement.function}]`);
     }
+
+    console.log('  PRINCIPLE: SHARED RELATION ≠ LANGUAGE-SPECIFIC REALIZATION');
+    console.log('  PRINCIPLE: WORD KIND ≠ SYNTACTIC FUNCTION');
+    console.log('');
   }
 }
 
@@ -261,4 +273,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('PASS — concordance WHY, EN order and the first three-disc predicative pilot are structurally consistent.');
+console.log('PASS — concordance WHY, EN order and the trilingual three-disc predicative pilot are structurally consistent.');
