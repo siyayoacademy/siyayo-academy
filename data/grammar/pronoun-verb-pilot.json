@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0",
-  "purpose": "Minimal SIYAYO concordance pilot: a shared identity meaning is realized independently in EN, ES and PT, while semantic person remains separate from language-specific morphological agreement.",
+  "version": "0.4.0",
+  "purpose": "Minimal SIYAYO concordance pilot: a shared identity meaning is realized independently in EN, ES and PT, while semantic person remains separate from language-specific morphological agreement across singular and plural subjects.",
   "meaningState": {
     "intent": "identity-attribution",
     "speechAct": "statement",
@@ -16,12 +16,18 @@
         "agreementProfile": {
           "first-singular": "first-singular",
           "second-singular": "second-singular",
-          "third-singular-masculine": "third-singular"
+          "third-singular-masculine": "third-singular",
+          "first-plural": "first-plural",
+          "second-plural": "second-plural",
+          "third-plural": "third-plural"
         },
         "present": {
           "first-singular": "am",
           "second-singular": "are",
-          "third-singular": "is"
+          "third-singular": "is",
+          "first-plural": "are",
+          "second-plural": "are",
+          "third-plural": "are"
         },
         "candidateForms": ["am", "are", "is"]
       },
@@ -31,14 +37,19 @@
         "agreementProfile": {
           "first-singular": "first-singular",
           "second-singular": "second-singular",
-          "third-singular-masculine": "third-singular"
+          "third-singular-masculine": "third-singular",
+          "first-plural": "first-plural",
+          "second-plural": "third-plural",
+          "third-plural": "third-plural"
         },
         "present": {
           "first-singular": "soy",
           "second-singular": "eres",
-          "third-singular": "es"
+          "third-singular": "es",
+          "first-plural": "somos",
+          "third-plural": "son"
         },
-        "candidateForms": ["soy", "eres", "es"]
+        "candidateForms": ["soy", "eres", "es", "somos", "son"]
       },
       "pt": {
         "lemma": "ser",
@@ -46,13 +57,18 @@
         "agreementProfile": {
           "first-singular": "first-singular",
           "second-singular": "third-singular",
-          "third-singular-masculine": "third-singular"
+          "third-singular-masculine": "third-singular",
+          "first-plural": "first-plural",
+          "second-plural": "third-plural",
+          "third-plural": "third-plural"
         },
         "present": {
           "first-singular": "sou",
-          "third-singular": "é"
+          "third-singular": "é",
+          "first-plural": "somos",
+          "third-plural": "são"
         },
-        "candidateForms": ["sou", "é"]
+        "candidateForms": ["sou", "é", "somos", "são"]
       }
     }
   },
@@ -71,6 +87,21 @@
       "id": "third-singular-masculine",
       "subjectRef": "third-singular-masculine",
       "expected": { "en": "he is", "es": "él es", "pt": "ele é" }
+    },
+    {
+      "id": "first-plural",
+      "subjectRef": "first-plural",
+      "expected": { "en": "we are", "es": "nosotros somos", "pt": "nós somos" }
+    },
+    {
+      "id": "second-plural",
+      "subjectRef": "second-plural",
+      "expected": { "en": "you are", "es": "ustedes son", "pt": "vocês são" }
+    },
+    {
+      "id": "third-plural",
+      "subjectRef": "third-plural",
+      "expected": { "en": "they are", "es": "ellos son", "pt": "eles são" }
     }
   ]
 }
