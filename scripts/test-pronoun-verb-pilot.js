@@ -59,6 +59,7 @@ function validateCandidate(pilot, subject, lang, candidate) {
       },
       requiredAgreement: result.agreementKey,
       candidateAgreement: candidateAgreementKeys,
+      isSyncretic: candidateAgreementKeys.length > 1,
       expectedForm: result.verb,
       tense,
       verbConcept: pilot.verbConcept.id
@@ -67,15 +68,23 @@ function validateCandidate(pilot, subject, lang, candidate) {
 }
 
 function explain(reason) {
-  if (reason.code === 'AGREEMENT_MATCH') {
-    return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for that agreement.`;
-  }
-
   const licensed = reason.candidateAgreement.length
-    ? reason.candidateAgreement.join(' or ')
+    ? reason.candidateAgreement.join(', ')
     : 'no agreement pattern in the current rule set';
 
-  return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for ${licensed}. Expected '${reason.expectedForm}'.`;
+  if (reason.code === 'AGREEMENT_MATCH') {
+    const syncretism = reason.isSyncretic
+      ? ` The form '${reason.candidate}' is syncretic: it is licensed for ${licensed}; here '${reason.subject}' selects ${reason.requiredAgreement}.`
+      : '';
+
+    return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for that agreement.${syncretism}`;
+  }
+
+  const syncretism = reason.isSyncretic
+    ? ` The form '${reason.candidate}' is syncretic across ${licensed}, but none matches the required agreement here.`
+    : '';
+
+  return `${reason.subject} requires ${reason.requiredAgreement}; '${reason.candidate}' is licensed for ${licensed}. Expected '${reason.expectedForm}'.${syncretism}`;
 }
 
 const pilot = readJson(PILOT_PATH);
@@ -132,4 +141,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('PASS — concordance decisions now carry structured WHY evidence for EN/ES/PT singular subjects.');
+console.log('PASS — singular/plural concordance decisions carry structured WHY evidence, including syncretic forms, for EN/ES/PT.');
