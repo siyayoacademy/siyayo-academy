@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "purpose": "Minimal SIYAYO three-disc pilot: preserve pronoun-verb concordance and order while introducing a predicative adjective as an independently classified complement.",
   "meaningState": {
     "intent": "quality-attribution",
@@ -103,6 +103,14 @@
       "en": {
         "order": ["subject", "verb", "complement"],
         "expected": "you are intelligent"
+      },
+      "es": {
+        "order": ["subject", "verb", "complement"],
+        "expected": "tú eres inteligente"
+      },
+      "pt": {
+        "order": ["subject", "verb", "complement"],
+        "expected": "você é inteligente"
       }
     }
   },
