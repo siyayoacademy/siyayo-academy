@@ -43,10 +43,11 @@ function realize(pilot, subject, lang) {
   };
 }
 
-function realizeOrder(baseRealization, order, punctuation = '') {
+function realizeOrder(baseRealization, order, punctuation = '', extraSlots = {}) {
   const slots = {
     subject: baseRealization.subject,
-    verb: baseRealization.verb
+    verb: baseRealization.verb,
+    ...extraSlots
   };
 
   const tokens = order.map(slot => slots[slot]);
@@ -209,10 +210,55 @@ if (pilot.orderPilot) {
   }
 }
 
+if (pilot.predicativePilot) {
+  const predicativeSubject = subjects.find(item => item.id === pilot.predicativePilot.subjectRef);
+  const complement = pilot.predicativePilot.complement;
+  const lang = 'en';
+
+  if (!predicativeSubject) {
+    fail(`predicativePilot: unknown subjectRef '${pilot.predicativePilot.subjectRef}'`);
+  } else if (!complement) {
+    fail('predicativePilot: complement is missing');
+  } else if (complement.kind !== 'adjective') {
+    fail(`predicativePilot: expected complement kind 'adjective', found '${complement.kind}'`);
+  } else if (complement.function !== 'subject-predicative') {
+    fail(`predicativePilot: expected complement function 'subject-predicative', found '${complement.function}'`);
+  } else {
+    const base = realize(pilot, predicativeSubject, lang);
+    const statementRule = pilot.predicativePilot.statement?.[lang];
+    const complementSurface = complement.realizations?.[lang];
+
+    if (!base) {
+      fail('predicativePilot/en: could not derive subject-copula realization');
+    } else if (!statementRule || !complementSurface) {
+      fail('predicativePilot/en: statement rule or complement realization is missing');
+    } else {
+      const sentence = realizeOrder(base, statementRule.order, '', {
+        complement: complementSurface
+      });
+
+      if (!sentence) {
+        fail('predicativePilot/en: could not realize three-disc sentence');
+      } else if (sentence !== statementRule.expected) {
+        fail(`predicativePilot/en: expected '${statementRule.expected}', derived '${sentence}'`);
+      } else {
+        console.log('PREDICATIVE PILOT:');
+        console.log(`  RELATION: ${pilot.predicativePilot.relation}`);
+        console.log(`  SENTENCE: ${sentence}`);
+        console.log(`  DISC 1: ${base.subject} [pronoun / subject]`);
+        console.log(`  DISC 2: ${base.verb} [verb / copula]`);
+        console.log(`  DISC 3: ${complementSurface} [${complement.kind} / ${complement.function}]`);
+        console.log('  PRINCIPLE: WORD KIND ≠ SYNTACTIC FUNCTION');
+        console.log('');
+      }
+    }
+  }
+}
+
 if (failures.length) {
   console.log(`FIX — ${failures.length} issue(s):`);
   failures.forEach((message, index) => console.log(`${index + 1}. ${message}`));
   process.exit(1);
 }
 
-console.log('PASS — concordance WHY and the EN order pilot confirm that grammatical relation can remain stable while speech act changes surface order.');
+console.log('PASS — concordance WHY, EN order and the first three-disc predicative pilot are structurally consistent.');
