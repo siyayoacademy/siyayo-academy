@@ -1,6 +1,6 @@
 {
-  "version": "0.4.0",
-  "purpose": "Minimal SIYAYO concordance pilot: a shared identity meaning is realized independently in EN, ES and PT, while semantic person remains separate from language-specific morphological agreement across singular and plural subjects.",
+  "version": "0.5.0",
+  "purpose": "Minimal SIYAYO concordance and order pilot: grammatical relation remains stable while speech act can change language-specific surface order.",
   "meaningState": {
     "intent": "identity-attribution",
     "speechAct": "statement",
@@ -70,6 +70,18 @@
         },
         "candidateForms": ["sou", "é", "somos", "são"]
       }
+    }
+  },
+  "orderPilot": {
+    "subjectRef": "second-singular",
+    "relation": "subject-copula",
+    "statement": {
+      "speechAct": "statement",
+      "en": { "order": ["subject", "verb"], "expected": "you are" }
+    },
+    "question": {
+      "speechAct": "yes-no-question",
+      "en": { "order": ["verb", "subject"], "expected": "are you?" }
     }
   },
   "testCases": [
