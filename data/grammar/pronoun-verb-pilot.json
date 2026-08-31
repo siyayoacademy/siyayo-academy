@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "purpose": "Minimal SIYAYO pilot for testing a shared meaning state with independent EN, ES and PT realizations.",
+  "meaningState": {
+    "intent": "self-identification",
+    "speechAct": "statement",
+    "person": "first",
+    "number": "singular",
+    "tense": "present",
+    "verbConcept": "be-identity"
+  },
+  "subjectRef": "first-singular",
+  "realizations": {
+    "en": {
+      "subject": "I",
+      "verb": "am",
+      "tokens": ["I", "am"],
+      "subjectRequired": true
+    },
+    "es": {
+      "subject": "yo",
+      "verb": "soy",
+      "tokens": ["yo", "soy"],
+      "subjectRequired": false,
+      "naturalAlternatives": ["soy"]
+    },
+    "pt": {
+      "subject": "eu",
+      "verb": "sou",
+      "tokens": ["eu", "sou"],
+      "subjectRequired": false,
+      "naturalAlternatives": ["sou"]
+    }
+  },
+  "tests": [
+    {
+      "id": "first-singular-statement",
+      "expected": { "en": "I am", "es": "yo soy", "pt": "eu sou" }
+    },
+    {
+      "id": "reject-wrong-agreement",
+      "invalid": {
+        "en": ["I is", "I are"],
+        "es": ["yo eres", "yo es"],
+        "pt": ["eu és", "eu é"]
+      }
+    }
+  ]
+}
