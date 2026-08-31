@@ -43,6 +43,18 @@ function realize(pilot, subject, lang) {
   };
 }
 
+function realizeOrder(baseRealization, order, punctuation = '') {
+  const slots = {
+    subject: baseRealization.subject,
+    verb: baseRealization.verb
+  };
+
+  const tokens = order.map(slot => slots[slot]);
+  if (tokens.some(token => !token)) return null;
+
+  return `${tokens.join(' ')}${punctuation}`;
+}
+
 function validateCandidate(pilot, subject, lang, candidate) {
   const result = realize(pilot, subject, lang);
   if (!result) return null;
@@ -149,10 +161,58 @@ for (const testCase of pilot.testCases) {
   console.log('');
 }
 
+if (pilot.orderPilot) {
+  const orderSubject = subjects.find(item => item.id === pilot.orderPilot.subjectRef);
+
+  if (!orderSubject) {
+    fail(`orderPilot: unknown subjectRef '${pilot.orderPilot.subjectRef}'`);
+  } else {
+    const lang = 'en';
+    const base = realize(pilot, orderSubject, lang);
+
+    if (!base) {
+      fail('orderPilot/en: could not derive base realization');
+    } else {
+      const statementRule = pilot.orderPilot.statement?.[lang];
+      const questionRule = pilot.orderPilot.question?.[lang];
+
+      const statement = statementRule
+        ? realizeOrder(base, statementRule.order)
+        : null;
+
+      const question = questionRule
+        ? realizeOrder(base, questionRule.order, '?')
+        : null;
+
+      if (!statementRule || !statement) {
+        fail('orderPilot/en: statement order could not be realized');
+      } else if (statement !== statementRule.expected) {
+        fail(`orderPilot/en statement: expected '${statementRule.expected}', derived '${statement}'`);
+      }
+
+      if (!questionRule || !question) {
+        fail('orderPilot/en: question order could not be realized');
+      } else if (question !== questionRule.expected) {
+        fail(`orderPilot/en question: expected '${questionRule.expected}', derived '${question}'`);
+      }
+
+      if (statement && question) {
+        console.log('ORDER PILOT:');
+        console.log(`  RELATION: ${pilot.orderPilot.relation}`);
+        console.log(`  STATEMENT (${pilot.orderPilot.statement.speechAct}): ${statement}`);
+        console.log(`  QUESTION (${pilot.orderPilot.question.speechAct}): ${question}`);
+        console.log(`  AGREEMENT STAYS: ${base.subject} ↔ ${base.verb} [${base.agreementKey}]`);
+        console.log('  PRINCIPLE: RELATION ≠ ORDER');
+        console.log('');
+      }
+    }
+  }
+}
+
 if (failures.length) {
   console.log(`FIX — ${failures.length} issue(s):`);
   failures.forEach((message, index) => console.log(`${index + 1}. ${message}`));
   process.exit(1);
 }
 
-console.log('PASS — concordance WHY distinguishes direct agreement, semantic-to-morphological remapping and surface syncretism for EN/ES/PT.');
+console.log('PASS — concordance WHY and the EN order pilot confirm that grammatical relation can remain stable while speech act changes surface order.');
