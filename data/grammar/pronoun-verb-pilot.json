@@ -1,8 +1,8 @@
 {
-  "version": "0.5.0",
-  "purpose": "Minimal SIYAYO concordance and order pilot: grammatical relation remains stable while speech act can change language-specific surface order.",
+  "version": "0.6.0",
+  "purpose": "Minimal SIYAYO three-disc pilot: preserve pronoun-verb concordance and order while introducing a predicative adjective as an independently classified complement.",
   "meaningState": {
-    "intent": "identity-attribution",
+    "intent": "quality-attribution",
     "speechAct": "statement",
     "tense": "present",
     "verbConcept": "be-identity"
@@ -82,6 +82,28 @@
     "question": {
       "speechAct": "yes-no-question",
       "en": { "order": ["verb", "subject"], "expected": "are you?" }
+    }
+  },
+  "predicativePilot": {
+    "subjectRef": "second-singular",
+    "relation": "subject-copula-predicative",
+    "complement": {
+      "id": "intelligent",
+      "kind": "adjective",
+      "function": "subject-predicative",
+      "meaning": "intelligence-quality",
+      "realizations": {
+        "en": "intelligent",
+        "es": "inteligente",
+        "pt": "inteligente"
+      }
+    },
+    "statement": {
+      "speechAct": "statement",
+      "en": {
+        "order": ["subject", "verb", "complement"],
+        "expected": "you are intelligent"
+      }
     }
   },
   "testCases": [
