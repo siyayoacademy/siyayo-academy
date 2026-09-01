@@ -132,6 +132,137 @@
         "nextExperience": "preparing-dinner"
       },
       "tags": ["shopping", "dinner", "questions", "perspective", "toroidal", "nice-party"]
+    },
+    {
+      "id": "preparing-dinner",
+      "title": {
+        "en": "Preparing a Nice Dinner",
+        "es": "Preparando una linda cena",
+        "pt": "Preparando um belo jantar"
+      },
+      "entryVerb": "cook",
+      "situation": {
+        "en": "We are home preparing tonight's dinner.",
+        "es": "Estamos en casa preparando la cena de esta noche.",
+        "pt": "Estamos em casa preparando o jantar desta noite."
+      },
+      "circumstances": {
+        "time": "tonight",
+        "place": "home-kitchen",
+        "weather": "warm-evening",
+        "company": "together",
+        "purpose": "prepare-a-special-dinner"
+      },
+      "links": {
+        "verbs": ["cook", "open", "close", "eat", "drink", "talk", "listen", "come"],
+        "conversationSeeds": [],
+        "vocabulary": ["salmon", "tomatoes", "red-onion", "parsley", "cilantro", "leek", "lemon-pepper", "olive-oil", "brown-rice", "carrots", "sweet-potatoes", "cassava", "green-beans", "cheese", "strawberries", "grapes"],
+        "positiveAdjectives": ["fresh", "delicious", "beautiful", "pleasant", "excellent", "wonderful"]
+      },
+      "thinkingMind": [
+        {
+          "intention": "thing-or-action",
+          "questionWord": "what",
+          "question": {
+            "en": "What are we preparing first?",
+            "es": "¿Qué estamos preparando primero?",
+            "pt": "O que estamos preparando primeiro?"
+          }
+        },
+        {
+          "intention": "place",
+          "questionWord": "where",
+          "question": {
+            "en": "Where should we put the vegetables?",
+            "es": "¿Dónde debemos poner las verduras?",
+            "pt": "Onde devemos colocar os legumes?"
+          }
+        },
+        {
+          "intention": "time",
+          "questionWord": "when",
+          "question": {
+            "en": "When should we cook the salmon?",
+            "es": "¿Cuándo debemos cocinar el salmón?",
+            "pt": "Quando devemos cozinhar o salmão?"
+          }
+        },
+        {
+          "intention": "manner",
+          "questionWord": "how",
+          "question": {
+            "en": "How are we going to prepare the rice?",
+            "es": "¿Cómo vamos a preparar el arroz?",
+            "pt": "Como vamos preparar o arroz?"
+          }
+        },
+        {
+          "intention": "reason",
+          "questionWord": "why",
+          "question": {
+            "en": "Why are we preparing this dinner together?",
+            "es": "¿Por qué estamos preparando esta cena juntos?",
+            "pt": "Por que estamos preparando este jantar juntos?"
+          }
+        },
+        {
+          "intention": "person",
+          "questionWord": "who",
+          "question": {
+            "en": "Who is preparing the salad?",
+            "es": "¿Quién está preparando la ensalada?",
+            "pt": "Quem está preparando a salada?"
+          }
+        }
+      ],
+      "perspectives": {
+        "describing": {
+          "line": "red",
+          "examples": {
+            "en": ["The vegetables look fresh.", "The kitchen smells wonderful."],
+            "es": ["Las verduras se ven frescas.", "La cocina huele de maravilla."],
+            "pt": ["Os legumes parecem frescos.", "A cozinha está com um aroma maravilhoso."]
+          }
+        },
+        "narrating": {
+          "line": "yellow",
+          "examples": {
+            "en": ["We came home, opened the groceries and started preparing dinner."],
+            "es": ["Llegamos a casa, abrimos las compras y empezamos a preparar la cena."],
+            "pt": ["Chegamos em casa, abrimos as compras e começamos a preparar o jantar."]
+          }
+        },
+        "debating": {
+          "line": "green",
+          "examples": {
+            "en": ["Should we cook the salmon now or prepare the vegetables first?", "I think we should prepare the vegetables first."],
+            "es": ["¿Cocinamos el salmón ahora o preparamos primero las verduras?", "Creo que debemos preparar primero las verduras."],
+            "pt": ["Devemos cozinhar o salmão agora ou preparar primeiro os legumes?", "Acho que devemos preparar primeiro os legumes."]
+          }
+        },
+        "concluding": {
+          "line": "blue",
+          "examples": {
+            "en": ["Excellent. Dinner is almost ready."],
+            "es": ["Excelente. La cena está casi lista."],
+            "pt": ["Excelente. O jantar está quase pronto."]
+          }
+        }
+      },
+      "toroidalNext": {
+        "prompt": {
+          "en": "What happens next?",
+          "es": "¿Qué sucede ahora?",
+          "pt": "O que acontece agora?"
+        },
+        "answer": {
+          "en": "We're ready to enjoy dinner together.",
+          "es": "Estamos listos para disfrutar la cena juntos.",
+          "pt": "Estamos prontos para aproveitar o jantar juntos."
+        },
+        "nextExperience": "having-dinner"
+      },
+      "tags": ["home", "cooking", "dinner", "questions", "perspective", "toroidal", "nice-party"]
     }
   ]
 }
