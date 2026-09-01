@@ -50,7 +50,8 @@
       "properties": {
         "intention": { "type": "string" },
         "questionWord": { "type": "string" },
-        "question": { "$ref": "#/$defs/trilingual" }
+        "question": { "$ref": "#/$defs/trilingual" },
+        "responses": { "$ref": "#/$defs/trilingual" }
       }
     },
     "experienceSeed": {
