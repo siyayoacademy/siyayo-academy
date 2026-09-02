@@ -27,12 +27,19 @@ for (const label of [
 ]) {
   assert.ok(runtime.includes(label), `missing trilingual lock label: ${label}`);
 }
-for (const role of ['CANONICAL CHOICE', 'REVIEW']) {
-  assert.ok(runtime.includes(`role:"${role}"`), `missing contextual learning line: ${role}`);
+for (const role of [
+  'CANONICAL CHOICE', 'REVIEW',
+  'ELECCIÓN CANÓNICA', 'REVISIÓN',
+  'ESCOLHA CANÔNICA', 'REVISÃO'
+]) {
+  assert.ok(runtime.includes(role), `missing localized contextual learning role: ${role}`);
 }
+assert.ok(runtime.includes('contextualRoleLabels(language)'), 'contextual role labels must be centralized');
 assert.ok(css.includes('.gear-lock'), 'grammar lock must have a visible style');
 assert.ok(css.includes('.gear-option:disabled'), 'locked gears must have a disabled style');
+assert.ok(css.includes('scrollbar-color:#8f6a1e'), 'horizontal controls must use the SIYAYO gold scrollbar');
+assert.ok(css.includes('::-webkit-scrollbar{height:6px}'), 'WebKit scrollbar must remain visually discreet');
 
 console.log('PASS — 3C pauses TENSE/MODE during contextual choice resolution.');
 console.log('PASS — the unrelated generic verb response is not rendered for WHICH.');
-console.log('PASS — lock state and guidance are explicit in EN/ES/PT.');
+console.log('PASS — lock state, contextual roles and gold scrollbars are explicit in EN/ES/PT.');
