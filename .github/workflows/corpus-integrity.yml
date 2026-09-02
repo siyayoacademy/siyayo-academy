@@ -76,3 +76,6 @@ jobs:
         run: |
           node --check js/verb-explorer.js
           node scripts/test-adjective-ui-integration.js
+
+      - name: Run 6.1 lexical composition UI tests
+        run: node scripts/test-lexical-composition-ui.js
