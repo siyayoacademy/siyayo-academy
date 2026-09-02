@@ -48,3 +48,6 @@ jobs:
 
       - name: Run 3C TENSE MODE safety tests
         run: node scripts/test-experience-grammar-lock.js
+
+      - name: Run 3C.2 independent choice audio tests
+        run: node scripts/test-choice-audio.js
