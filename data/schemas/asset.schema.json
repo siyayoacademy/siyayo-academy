@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "asset.schema.json",
+  "title": "SIYAYO Academy Canonical Digital Asset Schema",
+  "description": "Metadata schema for stable, versioned and verifiable SIYAYO learning assets. This layer is independent from lexical and pedagogical source schemas and does not require blockchain anchoring or tokenization.",
+  "type": "object",
+  "required": [
+    "assetId",
+    "canonicalId",
+    "assetType",
+    "version",
+    "schemaVersion",
+    "languages",
+    "integrity",
+    "provenance"
+  ],
+  "properties": {
+    "assetId": {
+      "type": "string",
+      "pattern": "^siyayo:[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9-]*(?::v[0-9]+)?$",
+      "description": "Stable SIYAYO asset identifier, for example siyayo:verb:choose:v1."
+    },
+    "canonicalId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonical identifier of the source learning object, such as the id from a lexical corpus."
+    },
+    "assetType": {
+      "type": "string",
+      "enum": [
+        "lexical-learning-object",
+        "grammar-learning-object",
+        "lesson",
+        "learning-experience",
+        "collection",
+        "credential-definition",
+        "visual-archetype",
+        "media-asset"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the asset metadata/content release."
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["en", "es", "pt"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "schema": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target"],
+        "properties": {
+          "type": { "type": "string" },
+          "target": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "contentHash"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["sha256"]
+        },
+        "contentHash": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$",
+          "description": "SHA-256 digest of the canonicalized source content."
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["project"],
+      "properties": {
+        "project": {
+          "type": "string",
+          "const": "SIYAYO Academy"
+        },
+        "method": { "type": "string" },
+        "creator": { "type": "string" },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "license": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "blockchain": {
+      "type": "object",
+      "description": "Optional anchoring metadata. Presence does not imply tokenization.",
+      "required": ["anchored"],
+      "properties": {
+        "anchored": { "type": "boolean" },
+        "network": { "type": "string" },
+        "transactionId": { "type": "string" },
+        "blockHeight": { "type": "integer", "minimum": 0 },
+        "anchoredAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "token": {
+      "type": "object",
+      "description": "Optional token metadata. Omit unless a concrete educational, licensing or ownership use case exists.",
+      "required": ["tokenized"],
+      "properties": {
+        "tokenized": { "type": "boolean" },
+        "standard": { "type": "string" },
+        "contract": { "type": "string" },
+        "tokenId": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
