@@ -84,3 +84,6 @@ jobs:
         run: |
           node --check js/verb-explorer.js
           node scripts/test-contextual-sentence-bridge.js
+
+      - name: Run 6.3 sentence axis navigation tests
+        run: node scripts/test-sentence-axis-navigation.js
