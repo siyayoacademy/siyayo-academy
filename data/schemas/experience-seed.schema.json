@@ -311,6 +311,7 @@
       "type": "object",
       "required": [
         "focusVocabulary",
+        "sentenceBridge",
         "preferredTraits",
         "canonicalCandidates"
       ],
@@ -318,6 +319,15 @@
       "properties": {
         "focusVocabulary": {
           "type": "string"
+        },
+        "sentenceBridge": {
+          "type": "object",
+          "required": ["action", "structure"],
+          "additionalProperties": false,
+          "properties": {
+            "action": { "$ref": "#/$defs/trilingual" },
+            "structure": { "$ref": "#/$defs/trilingual" }
+          }
         },
         "preferredTraits": {
           "type": "array",

@@ -166,6 +166,8 @@ function validateChoiceContext(choiceContext, vocabularyIds, where) {
   if (!vocabularyIds.has(choiceContext.focusVocabulary)) {
     fail(`focusVocabulary '${choiceContext.focusVocabulary}' is not linked by the experience`, where);
   }
+  validateTrilingual(choiceContext.sentenceBridge?.action, `${where}/sentenceBridge/action`);
+  validateTrilingual(choiceContext.sentenceBridge?.structure, `${where}/sentenceBridge/structure`);
   const preferredTraits = choiceContext.preferredTraits;
   if (!Array.isArray(preferredTraits) || !preferredTraits.length) {
     fail('preferredTraits must contain at least one trait', where);

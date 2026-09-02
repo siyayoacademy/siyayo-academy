@@ -79,3 +79,8 @@ jobs:
 
       - name: Run 6.1 lexical composition UI tests
         run: node scripts/test-lexical-composition-ui.js
+
+      - name: Run 6.2 contextual sentence bridge tests
+        run: |
+          node --check js/verb-explorer.js
+          node scripts/test-contextual-sentence-bridge.js

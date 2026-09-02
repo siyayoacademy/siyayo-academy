@@ -103,6 +103,18 @@
           },
           "choiceContext": {
             "focusVocabulary": "cheese",
+            "sentenceBridge": {
+              "action": {
+                "en": "choose",
+                "es": "elegir",
+                "pt": "escolher"
+              },
+              "structure": {
+                "en": "subject + modal + verb + noun phrase",
+                "es": "sujeto implícito + perífrasis modal + sintagma nominal",
+                "pt": "sujeito implícito + locução modal + sintagma nominal"
+              }
+            },
             "preferredTraits": [
               "fresh",
               "mild",
