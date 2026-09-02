@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "archetype.schema.json",
+  "title": "SIYAYO Academy Archetype Schema",
+  "description": "Schema for semantic and visual archetypes used across SIYAYO Academy learning experiences.",
+  "type": "object",
+  "required": ["id", "name", "status", "role", "visual"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "object",
+      "required": ["en", "es", "pt"],
+      "properties": {
+        "en": { "type": "string" },
+        "es": { "type": "string" },
+        "pt": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "homologated", "narrative-character"]
+    },
+    "role": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "meaning": {
+      "type": "object",
+      "properties": {
+        "en": { "type": "string" },
+        "es": { "type": "string" },
+        "pt": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "visual": {
+      "type": "object",
+      "required": ["canonicalImage"],
+      "properties": {
+        "canonicalImage": { "type": "boolean" },
+        "imagePath": { "type": "string" },
+        "model3dPath": { "type": "string" },
+        "iconPath": { "type": "string" },
+        "paletteId": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "pedagogy": {
+      "type": "object",
+      "properties": {
+        "functions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "interactionModes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target"],
+        "properties": {
+          "type": { "type": "string" },
+          "target": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}
