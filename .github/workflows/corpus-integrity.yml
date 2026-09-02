@@ -45,3 +45,6 @@ jobs:
           node --check js/contextual-choice-resolver.js
           node --check js/verb-explorer.js
           node scripts/test-choice-ui-integration.js
+
+      - name: Run 3C TENSE MODE safety tests
+        run: node scripts/test-experience-grammar-lock.js
