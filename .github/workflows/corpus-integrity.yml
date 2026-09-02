@@ -60,3 +60,8 @@ jobs:
 
       - name: Run portrait layout containment tests
         run: node scripts/test-portrait-layout.js
+
+      - name: Run 4.2 controlled noun UI tests
+        run: |
+          node --check js/verb-explorer.js
+          node scripts/test-noun-ui-integration.js
