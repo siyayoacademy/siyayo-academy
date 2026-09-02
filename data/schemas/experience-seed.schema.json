@@ -5,11 +5,16 @@
   "description": "Integration layer that links a living situation to corpus verbs, circumstances, vocabulary, thinking questions, discourse perspectives and a toroidal next experience without duplicating canonical corpus data.",
   "type": "object",
   "required": [
+    "$schema",
     "version",
     "items"
   ],
   "additionalProperties": false,
   "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "../schemas/experience-seed.schema.json"
+    },
     "version": {
       "type": "string",
       "const": "0.2.0"
