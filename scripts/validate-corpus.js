@@ -7,6 +7,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ACTIONS_PATH = path.join(ROOT, 'data/lexicon/verbs/actions.json');
 const SUBJECTS_PATH = path.join(ROOT, 'data/grammar/subjects.json');
 const CONVERSATION_PATH = path.join(ROOT, 'data/learning/conversation-seeds.json');
+const EXPERIENCE_PATH = path.join(ROOT, 'data/learning/experience-seeds.json');
 const VERB_DIR = path.join(ROOT, 'data/lexicon/verbs');
 const EXPLORER_PATH = path.join(ROOT, 'js/verb-explorer.js');
 
@@ -148,11 +149,85 @@ function validateConversationSeeds(actionIds) {
   return items.length;
 }
 
+
+function validateChoiceContext(choiceContext, vocabularyIds, where) {
+  if (!choiceContext || typeof choiceContext !== 'object' || Array.isArray(choiceContext)) {
+    fail('choiceContext must be an object', where);
+    return;
+  }
+  if (!vocabularyIds.has(choiceContext.focusVocabulary)) {
+    fail(`focusVocabulary '${choiceContext.focusVocabulary}' is not linked by the experience`, where);
+  }
+  const preferredTraits = choiceContext.preferredTraits;
+  if (!Array.isArray(preferredTraits) || !preferredTraits.length) {
+    fail('preferredTraits must contain at least one trait', where);
+  } else if (new Set(preferredTraits).size !== preferredTraits.length) {
+    fail('Duplicate preferredTraits', where);
+  }
+  const candidates = choiceContext.canonicalCandidates;
+  if (!Array.isArray(candidates) || candidates.length < 2) {
+    fail('canonicalCandidates must contain at least two alternatives', where);
+    return;
+  }
+  const candidateIds = new Set();
+  const fitScores = [];
+  for (const candidate of candidates) {
+    const candidateWhere = `${where}/canonicalCandidates/${candidate?.id ?? 'unknown'}`;
+    if (typeof candidate?.id !== 'string' || !candidate.id.trim()) fail('Missing candidate id', candidateWhere);
+    else if (candidateIds.has(candidate.id)) fail(`Duplicate candidate id '${candidate.id}'`, candidateWhere);
+    else candidateIds.add(candidate.id);
+    validateTrilingual(candidate?.response, `${candidateWhere}/response`);
+    if (!Array.isArray(candidate?.contextTraits) || !candidate.contextTraits.length) {
+      fail('contextTraits must contain at least one trait', candidateWhere);
+      fitScores.push(0);
+    } else {
+      if (new Set(candidate.contextTraits).size !== candidate.contextTraits.length) fail('Duplicate contextTraits', candidateWhere);
+      fitScores.push(candidate.contextTraits.filter(trait => preferredTraits?.includes(trait)).length);
+    }
+  }
+  if (fitScores.length > 1 && new Set(fitScores).size < 2) {
+    fail('Candidates must provide different contextual fit evidence', where);
+  }
+}
+
+function validateExperienceSeeds() {
+  if (!fs.existsSync(EXPERIENCE_PATH)) {
+    fail('Missing experience seeds file', path.relative(ROOT, EXPERIENCE_PATH));
+    return 0;
+  }
+  const data = readJson(EXPERIENCE_PATH), items = collectionItems(data);
+  if (!Array.isArray(items)) {
+    fail('experience-seeds.json must contain items[]', 'experience-seeds.json');
+    return 0;
+  }
+  const experienceIds = new Set();
+  let choiceContexts = 0;
+  for (const experience of items) {
+    const where = `experience/${experience?.id ?? 'unknown'}`;
+    if (typeof experience?.id !== 'string' || !experience.id.trim()) fail('Missing experience id', where);
+    else if (experienceIds.has(experience.id)) fail(`Duplicate experience id '${experience.id}'`, where);
+    else experienceIds.add(experience.id);
+    const vocabularyIds = new Set(experience?.links?.vocabulary ?? []);
+    for (const [index, question] of (experience?.thinkingMind ?? []).entries()) {
+      if (question?.choiceContext !== undefined) {
+        choiceContexts += 1;
+        if (question.intention !== 'choice' || question.questionWord !== 'which') {
+          fail('choiceContext requires intention=choice and questionWord=which', `${where}/thinkingMind[${index}]`);
+        }
+        validateChoiceContext(question.choiceContext, vocabularyIds, `${where}/thinkingMind[${index}]/choiceContext`);
+      }
+    }
+  }
+  if (!choiceContexts) fail('Expected at least one contextual choice seed', 'experience-seeds.json');
+  return { experiences: items.length, choiceContexts };
+}
+
 const actionsData = readJson(ACTIONS_PATH);
 const subjectsData = readJson(SUBJECTS_PATH);
 const actions = collectionItems(actionsData);
 const subjects = collectionItems(subjectsData);
 let conversationSeeds = 0;
+let experienceSeeds = { experiences: 0, choiceContexts: 0 };
 
 if (!Array.isArray(actions)) fail('actions.json must contain an array or items[]', 'actions.json');
 if (!Array.isArray(subjects)) fail('subjects.json must contain an array or items[]', 'subjects.json');
@@ -173,6 +248,7 @@ if (Array.isArray(actions) && Array.isArray(subjects)) {
   }
 
   conversationSeeds = validateConversationSeeds(actionIds);
+  experienceSeeds = validateExperienceSeeds();
 
   if (fs.existsSync(EXPLORER_PATH)) {
     const source = fs.readFileSync(EXPLORER_PATH, 'utf8');
@@ -192,9 +268,11 @@ console.log('================================');
 console.log(`Verbs discovered: ${Array.isArray(actions) ? actions.length : 0}`);
 console.log(`Canonical subjects: ${Array.isArray(subjects) ? subjects.length : 0}`);
 console.log(`Conversation seeds: ${conversationSeeds}`);
-console.log('Checks: corpus files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules, conversation seed IDs/verbs/trilingual fields');
+console.log(`Experience seeds: ${experienceSeeds.experiences}`);
+console.log(`Contextual choices: ${experienceSeeds.choiceContexts}`);
+console.log('Checks: corpus files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules, conversation seeds, experience IDs and contextual choice references/contrast');
 console.log('');
-if (!failures.length) console.log('PASS — canonical Built-in Actions corpus and conversation seed integrity checks passed.');
+if (!failures.length) console.log('PASS — canonical corpus, conversation seeds and contextual experience metadata integrity checks passed.');
 else {
   console.log(`FIX — ${failures.length} issue(s) found:`);
   failures.forEach((item, i) => console.log(`${i + 1}. ${item.message}${item.context ? ` — ${item.context}` : ''}`));
