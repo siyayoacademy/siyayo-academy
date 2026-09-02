@@ -36,3 +36,6 @@ jobs:
 
       - name: Run 3A.3 controlled negative tests
         run: node scripts/test-contextual-choice-negative.js
+
+      - name: Run 3B contextual and canonical resolver tests
+        run: node scripts/test-contextual-choice-resolver.js
