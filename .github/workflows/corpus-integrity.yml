@@ -71,3 +71,8 @@ jobs:
 
       - name: Run 5.1 canonical adjective negative tests
         run: node scripts/test-adjective-corpus-negative.js
+
+      - name: Run 5.2 controlled adjective UI tests
+        run: |
+          node --check js/verb-explorer.js
+          node scripts/test-adjective-ui-integration.js
