@@ -4,111 +4,331 @@
   "title": "SIYAYO Experience Seed",
   "description": "Integration layer that links a living situation to corpus verbs, circumstances, vocabulary, thinking questions, discourse perspectives and a toroidal next experience without duplicating canonical corpus data.",
   "type": "object",
-  "required": ["version", "items"],
+  "required": [
+    "version",
+    "items"
+  ],
   "additionalProperties": false,
   "properties": {
-    "version": { "type": "string" },
+    "version": {
+      "type": "string",
+      "const": "0.2.0"
+    },
     "items": {
       "type": "array",
-      "items": { "$ref": "#/$defs/experienceSeed" }
+      "items": {
+        "$ref": "#/$defs/experienceSeed"
+      }
     }
   },
   "$defs": {
     "trilingual": {
       "type": "object",
-      "required": ["en", "es", "pt"],
+      "required": [
+        "en",
+        "es",
+        "pt"
+      ],
       "additionalProperties": false,
       "properties": {
-        "en": { "type": "string" },
-        "es": { "type": "string" },
-        "pt": { "type": "string" }
+        "en": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "pt": {
+          "type": "string"
+        }
       }
     },
     "trilingualLists": {
       "type": "object",
-      "required": ["en", "es", "pt"],
+      "required": [
+        "en",
+        "es",
+        "pt"
+      ],
       "additionalProperties": false,
       "properties": {
-        "en": { "type": "array", "minItems": 1, "items": { "type": "string" } },
-        "es": { "type": "array", "minItems": 1, "items": { "type": "string" } },
-        "pt": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+        "en": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "es": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "pt": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "perspective": {
       "type": "object",
-      "required": ["line", "examples"],
+      "required": [
+        "line",
+        "examples"
+      ],
       "additionalProperties": false,
       "properties": {
-        "line": { "enum": ["red", "yellow", "green", "blue"] },
-        "examples": { "$ref": "#/$defs/trilingualLists" }
+        "line": {
+          "enum": [
+            "red",
+            "yellow",
+            "green",
+            "blue"
+          ]
+        },
+        "examples": {
+          "$ref": "#/$defs/trilingualLists"
+        }
       }
     },
     "thinkingQuestion": {
       "type": "object",
-      "required": ["intention", "questionWord", "question"],
+      "required": [
+        "intention",
+        "questionWord",
+        "question"
+      ],
       "additionalProperties": false,
       "properties": {
-        "intention": { "type": "string" },
-        "questionWord": { "type": "string" },
-        "question": { "$ref": "#/$defs/trilingual" },
-        "responses": { "$ref": "#/$defs/trilingual" }
+        "intention": {
+          "type": "string"
+        },
+        "questionWord": {
+          "type": "string"
+        },
+        "question": {
+          "$ref": "#/$defs/trilingual"
+        },
+        "responses": {
+          "$ref": "#/$defs/trilingual"
+        },
+        "choiceContext": {
+          "$ref": "#/$defs/choiceContext"
+        }
       }
     },
     "experienceSeed": {
       "type": "object",
-      "required": ["id", "title", "entryVerb", "situation", "circumstances", "links", "thinkingMind", "perspectives", "toroidalNext"],
+      "required": [
+        "id",
+        "title",
+        "entryVerb",
+        "situation",
+        "circumstances",
+        "links",
+        "thinkingMind",
+        "perspectives",
+        "toroidalNext"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "string" },
-        "title": { "$ref": "#/$defs/trilingual" },
-        "entryVerb": { "type": "string" },
-        "situation": { "$ref": "#/$defs/trilingual" },
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/trilingual"
+        },
+        "entryVerb": {
+          "type": "string"
+        },
+        "situation": {
+          "$ref": "#/$defs/trilingual"
+        },
         "circumstances": {
           "type": "object",
-          "required": ["time", "place", "weather", "company", "purpose"],
+          "required": [
+            "time",
+            "place",
+            "weather",
+            "company",
+            "purpose"
+          ],
           "additionalProperties": false,
           "properties": {
-            "time": { "type": "string" },
-            "place": { "type": "string" },
-            "weather": { "type": "string" },
-            "company": { "type": "string" },
-            "purpose": { "type": "string" }
+            "time": {
+              "type": "string"
+            },
+            "place": {
+              "type": "string"
+            },
+            "weather": {
+              "type": "string"
+            },
+            "company": {
+              "type": "string"
+            },
+            "purpose": {
+              "type": "string"
+            }
           }
         },
         "links": {
           "type": "object",
-          "required": ["verbs", "conversationSeeds", "vocabulary", "positiveAdjectives"],
+          "required": [
+            "verbs",
+            "conversationSeeds",
+            "vocabulary",
+            "positiveAdjectives"
+          ],
           "additionalProperties": false,
           "properties": {
-            "verbs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
-            "conversationSeeds": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
-            "vocabulary": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
-            "positiveAdjectives": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+            "verbs": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "conversationSeeds": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "vocabulary": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "positiveAdjectives": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
           }
         },
-        "thinkingMind": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/thinkingQuestion" } },
+        "thinkingMind": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/thinkingQuestion"
+          }
+        },
         "perspectives": {
           "type": "object",
-          "required": ["describing", "narrating", "debating", "concluding"],
+          "required": [
+            "describing",
+            "narrating",
+            "debating",
+            "concluding"
+          ],
           "additionalProperties": false,
           "properties": {
-            "describing": { "$ref": "#/$defs/perspective" },
-            "narrating": { "$ref": "#/$defs/perspective" },
-            "debating": { "$ref": "#/$defs/perspective" },
-            "concluding": { "$ref": "#/$defs/perspective" }
+            "describing": {
+              "$ref": "#/$defs/perspective"
+            },
+            "narrating": {
+              "$ref": "#/$defs/perspective"
+            },
+            "debating": {
+              "$ref": "#/$defs/perspective"
+            },
+            "concluding": {
+              "$ref": "#/$defs/perspective"
+            }
           }
         },
         "toroidalNext": {
           "type": "object",
-          "required": ["prompt", "answer", "nextExperience"],
+          "required": [
+            "prompt",
+            "answer",
+            "nextExperience"
+          ],
           "additionalProperties": false,
           "properties": {
-            "prompt": { "$ref": "#/$defs/trilingual" },
-            "answer": { "$ref": "#/$defs/trilingual" },
-            "nextExperience": { "type": "string" }
+            "prompt": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "answer": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "nextExperience": {
+              "type": "string"
+            }
           }
         },
-        "tags": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+        "tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "choiceCandidate": {
+      "type": "object",
+      "required": [
+        "id",
+        "response",
+        "contextTraits"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "response": {
+          "$ref": "#/$defs/trilingual"
+        },
+        "contextTraits": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "choiceContext": {
+      "type": "object",
+      "required": [
+        "focusVocabulary",
+        "preferredTraits",
+        "canonicalCandidates"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "focusVocabulary": {
+          "type": "string"
+        },
+        "preferredTraits": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "canonicalCandidates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/choiceCandidate"
+          }
+        }
       }
     }
   }
