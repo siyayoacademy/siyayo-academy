@@ -21,4 +21,9 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 @media(max-width:520px){.choice-options,.choice-feedback{grid-template-columns:1fr}.choice-feedback-card{min-height:96px}}
 .gear-lock{display:block;margin-top:8px;color:#f5c542;font-size:.61rem;font-weight:900;letter-spacing:.08em;line-height:1.35}
 .gear-options .gear-option:disabled{opacity:.38;border-style:dashed;box-shadow:none}
+.gear-options,.perspective-options{scrollbar-width:thin;scrollbar-color:#8f6a1e rgba(2,9,24,.72);overscroll-behavior-inline:contain}
+.gear-options::-webkit-scrollbar,.perspective-options::-webkit-scrollbar{height:6px}
+.gear-options::-webkit-scrollbar-track,.perspective-options::-webkit-scrollbar-track{border-radius:999px;background:rgba(2,9,24,.72)}
+.gear-options::-webkit-scrollbar-thumb,.perspective-options::-webkit-scrollbar-thumb{border-radius:999px;background:linear-gradient(90deg,#8f6a1e,#d7b35a,#f2d88a)}
+.gear-options::-webkit-scrollbar-thumb:hover,.perspective-options::-webkit-scrollbar-thumb:hover{background:#f2d88a}
 
