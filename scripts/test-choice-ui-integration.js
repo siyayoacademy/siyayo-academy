@@ -21,7 +21,8 @@ for (const id of ['choiceResolverPanel', 'choiceOptions', 'choiceFeedback']) {
 for (const hook of [
   'renderChoiceResolver(x)',
   'window.SIYAYOChoiceResolver',
-  'data-choice-candidate',
+  'data-choice-select',
+  'data-choice-audio',
   'experienceChoiceCandidate=null'
 ]) {
   assert.ok(runtime.includes(hook), `missing runtime integration hook: ${hook}`);
@@ -42,5 +43,5 @@ assert.ok(
 );
 
 console.log('PASS — 3B.2 loads the resolver before the experience runtime.');
-console.log('PASS — choice controls and dual feedback panels are wired.');
+console.log('PASS — independent selection/audio controls and dual feedback panels are wired.');
 console.log('PASS — responsive styles and centralized labels are preserved.');
