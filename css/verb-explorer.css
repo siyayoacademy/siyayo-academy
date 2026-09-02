@@ -26,4 +26,13 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .gear-options::-webkit-scrollbar-track,.perspective-options::-webkit-scrollbar-track{border-radius:999px;background:rgba(2,9,24,.72)}
 .gear-options::-webkit-scrollbar-thumb,.perspective-options::-webkit-scrollbar-thumb{border-radius:999px;background:linear-gradient(90deg,#8f6a1e,#d7b35a,#f2d88a)}
 .gear-options::-webkit-scrollbar-thumb:hover,.perspective-options::-webkit-scrollbar-thumb:hover{background:#f2d88a}
+.choice-option{display:grid;grid-template-columns:minmax(0,1fr) 48px;padding:0;overflow:hidden;cursor:default}
+.choice-select,.choice-audio{border:0;background:transparent;color:#eaf1fb;cursor:pointer}
+.choice-select{min-width:0;padding:11px 8px 11px 16px;text-align:left}
+.choice-audio{display:grid;place-items:center;min-width:48px;font-size:1rem;border-left:1px solid rgba(215,179,90,.2)}
+.choice-select:focus-visible,.choice-audio:focus-visible{outline:2px solid #f2d88a;outline-offset:-3px}
+.choice-audio:hover{color:#f5c542;background:rgba(245,197,66,.08)}
+.choice-option.is-speaking{border-color:#f2d88a;box-shadow:0 0 22px rgba(245,197,66,.32),inset 0 0 18px rgba(245,197,66,.08)}
+.choice-option.is-speaking .choice-audio{color:#f5c542;text-shadow:0 0 10px rgba(245,197,66,.9)}
+@media(max-width:520px){.choice-option{grid-template-columns:minmax(0,1fr) 52px}.choice-audio{min-width:52px}}
 
