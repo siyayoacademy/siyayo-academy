@@ -1,6 +1,6 @@
 {
   "$schema": "../schemas/experience-seed.schema.json",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "items": [
     {
       "id": "shopping-for-dinner",
@@ -23,10 +23,47 @@
         "purpose": "prepare-a-special-dinner"
       },
       "links": {
-        "verbs": ["buy", "go", "come", "eat", "drink", "cook", "open", "close", "talk", "listen"],
-        "conversationSeeds": ["buy-groceries"],
-        "vocabulary": ["salmon", "tomatoes", "red-onion", "parsley", "cilantro", "leek", "lemon-pepper", "olive-oil", "brown-rice", "carrots", "sweet-potatoes", "cassava", "green-beans", "cheese", "strawberries", "grapes"],
-        "positiveAdjectives": ["fresh", "delicious", "beautiful", "pleasant", "excellent", "wonderful"]
+        "verbs": [
+          "buy",
+          "go",
+          "come",
+          "eat",
+          "drink",
+          "cook",
+          "open",
+          "close",
+          "talk",
+          "listen"
+        ],
+        "conversationSeeds": [
+          "buy-groceries"
+        ],
+        "vocabulary": [
+          "salmon",
+          "tomatoes",
+          "red-onion",
+          "parsley",
+          "cilantro",
+          "leek",
+          "lemon-pepper",
+          "olive-oil",
+          "brown-rice",
+          "carrots",
+          "sweet-potatoes",
+          "cassava",
+          "green-beans",
+          "cheese",
+          "strawberries",
+          "grapes"
+        ],
+        "positiveAdjectives": [
+          "fresh",
+          "delicious",
+          "beautiful",
+          "pleasant",
+          "excellent",
+          "wonderful"
+        ]
       },
       "thinkingMind": [
         {
@@ -63,6 +100,45 @@
             "en": "Which cheese should we choose?",
             "es": "¿Qué queso deberíamos elegir?",
             "pt": "Qual queijo devemos escolher?"
+          },
+          "choiceContext": {
+            "focusVocabulary": "cheese",
+            "preferredTraits": [
+              "fresh",
+              "mild",
+              "pairs-with-salmon",
+              "suitable-for-special-dinner"
+            ],
+            "canonicalCandidates": [
+              {
+                "id": "fresh-mild-cheese",
+                "response": {
+                  "en": "We should choose the fresh, mild cheese.",
+                  "es": "Deberíamos elegir el queso fresco y suave.",
+                  "pt": "Devemos escolher o queijo fresco e suave."
+                },
+                "contextTraits": [
+                  "fresh",
+                  "mild",
+                  "pairs-with-salmon",
+                  "suitable-for-special-dinner"
+                ]
+              },
+              {
+                "id": "aged-strong-cheese",
+                "response": {
+                  "en": "We should choose the aged, strong cheese.",
+                  "es": "Deberíamos elegir el queso curado y fuerte.",
+                  "pt": "Devemos escolher o queijo maturado e forte."
+                },
+                "contextTraits": [
+                  "aged",
+                  "strong",
+                  "overpowers-salmon",
+                  "suitable-for-cheese-board"
+                ]
+              }
+            ]
           }
         },
         {
@@ -88,33 +164,63 @@
         "describing": {
           "line": "red",
           "examples": {
-            "en": ["The salmon looks fresh.", "The strawberries are beautiful."],
-            "es": ["El salmón se ve fresco.", "Las fresas están hermosas."],
-            "pt": ["O salmão parece fresco.", "Os morangos estão lindos."]
+            "en": [
+              "The salmon looks fresh.",
+              "The strawberries are beautiful."
+            ],
+            "es": [
+              "El salmón se ve fresco.",
+              "Las fresas están hermosas."
+            ],
+            "pt": [
+              "O salmão parece fresco.",
+              "Os morangos estão lindos."
+            ]
           }
         },
         "narrating": {
           "line": "yellow",
           "examples": {
-            "en": ["We went to the supermarket, bought the ingredients and came home."],
-            "es": ["Fuimos al supermercado, compramos los ingredientes y volvimos a casa."],
-            "pt": ["Fomos ao supermercado, compramos os ingredientes e voltamos para casa."]
+            "en": [
+              "We went to the supermarket, bought the ingredients and came home."
+            ],
+            "es": [
+              "Fuimos al supermercado, compramos los ingredientes y volvimos a casa."
+            ],
+            "pt": [
+              "Fomos ao supermercado, compramos os ingredientes e voltamos para casa."
+            ]
           }
         },
         "debating": {
           "line": "green",
           "examples": {
-            "en": ["Should we buy this salmon or the other one?", "I think this one is better because it looks fresher."],
-            "es": ["¿Deberíamos comprar este salmón o el otro?", "Creo que este es mejor porque parece más fresco."],
-            "pt": ["Devemos comprar este salmão ou o outro?", "Acho que este é melhor porque parece mais fresco."]
+            "en": [
+              "Should we buy this salmon or the other one?",
+              "I think this one is better because it looks fresher."
+            ],
+            "es": [
+              "¿Deberíamos comprar este salmón o el otro?",
+              "Creo que este es mejor porque parece más fresco."
+            ],
+            "pt": [
+              "Devemos comprar este salmão ou o outro?",
+              "Acho que este é melhor porque parece mais fresco."
+            ]
           }
         },
         "concluding": {
           "line": "blue",
           "examples": {
-            "en": ["Great. We have everything we need."],
-            "es": ["Muy bien. Tenemos todo lo que necesitamos."],
-            "pt": ["Ótimo. Temos tudo o que precisamos."]
+            "en": [
+              "Great. We have everything we need."
+            ],
+            "es": [
+              "Muy bien. Tenemos todo lo que necesitamos."
+            ],
+            "pt": [
+              "Ótimo. Temos tudo o que precisamos."
+            ]
           }
         }
       },
@@ -131,7 +237,14 @@
         },
         "nextExperience": "preparing-dinner"
       },
-      "tags": ["shopping", "dinner", "questions", "perspective", "toroidal", "nice-party"]
+      "tags": [
+        "shopping",
+        "dinner",
+        "questions",
+        "perspective",
+        "toroidal",
+        "nice-party"
+      ]
     },
     {
       "id": "preparing-dinner",
@@ -154,10 +267,43 @@
         "purpose": "prepare-a-special-dinner"
       },
       "links": {
-        "verbs": ["cook", "open", "close", "eat", "drink", "talk", "listen", "come"],
+        "verbs": [
+          "cook",
+          "open",
+          "close",
+          "eat",
+          "drink",
+          "talk",
+          "listen",
+          "come"
+        ],
         "conversationSeeds": [],
-        "vocabulary": ["salmon", "tomatoes", "red-onion", "parsley", "cilantro", "leek", "lemon-pepper", "olive-oil", "brown-rice", "carrots", "sweet-potatoes", "cassava", "green-beans", "cheese", "strawberries", "grapes"],
-        "positiveAdjectives": ["fresh", "delicious", "beautiful", "pleasant", "excellent", "wonderful"]
+        "vocabulary": [
+          "salmon",
+          "tomatoes",
+          "red-onion",
+          "parsley",
+          "cilantro",
+          "leek",
+          "lemon-pepper",
+          "olive-oil",
+          "brown-rice",
+          "carrots",
+          "sweet-potatoes",
+          "cassava",
+          "green-beans",
+          "cheese",
+          "strawberries",
+          "grapes"
+        ],
+        "positiveAdjectives": [
+          "fresh",
+          "delicious",
+          "beautiful",
+          "pleasant",
+          "excellent",
+          "wonderful"
+        ]
       },
       "thinkingMind": [
         {
@@ -219,33 +365,63 @@
         "describing": {
           "line": "red",
           "examples": {
-            "en": ["The vegetables look fresh.", "The kitchen smells wonderful."],
-            "es": ["Las verduras se ven frescas.", "La cocina huele de maravilla."],
-            "pt": ["Os legumes parecem frescos.", "A cozinha está com um aroma maravilhoso."]
+            "en": [
+              "The vegetables look fresh.",
+              "The kitchen smells wonderful."
+            ],
+            "es": [
+              "Las verduras se ven frescas.",
+              "La cocina huele de maravilla."
+            ],
+            "pt": [
+              "Os legumes parecem frescos.",
+              "A cozinha está com um aroma maravilhoso."
+            ]
           }
         },
         "narrating": {
           "line": "yellow",
           "examples": {
-            "en": ["We came home, opened the groceries and started preparing dinner."],
-            "es": ["Llegamos a casa, abrimos las compras y empezamos a preparar la cena."],
-            "pt": ["Chegamos em casa, abrimos as compras e começamos a preparar o jantar."]
+            "en": [
+              "We came home, opened the groceries and started preparing dinner."
+            ],
+            "es": [
+              "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+            ],
+            "pt": [
+              "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+            ]
           }
         },
         "debating": {
           "line": "green",
           "examples": {
-            "en": ["Should we cook the salmon now or prepare the vegetables first?", "I think we should prepare the vegetables first."],
-            "es": ["¿Cocinamos el salmón ahora o preparamos primero las verduras?", "Creo que debemos preparar primero las verduras."],
-            "pt": ["Devemos cozinhar o salmão agora ou preparar primeiro os legumes?", "Acho que devemos preparar primeiro os legumes."]
+            "en": [
+              "Should we cook the salmon now or prepare the vegetables first?",
+              "I think we should prepare the vegetables first."
+            ],
+            "es": [
+              "¿Cocinamos el salmón ahora o preparamos primero las verduras?",
+              "Creo que debemos preparar primero las verduras."
+            ],
+            "pt": [
+              "Devemos cozinhar o salmão agora ou preparar primeiro os legumes?",
+              "Acho que devemos preparar primeiro os legumes."
+            ]
           }
         },
         "concluding": {
           "line": "blue",
           "examples": {
-            "en": ["Excellent. Dinner is almost ready."],
-            "es": ["Excelente. La cena está casi lista."],
-            "pt": ["Excelente. O jantar está quase pronto."]
+            "en": [
+              "Excellent. Dinner is almost ready."
+            ],
+            "es": [
+              "Excelente. La cena está casi lista."
+            ],
+            "pt": [
+              "Excelente. O jantar está quase pronto."
+            ]
           }
         }
       },
@@ -262,7 +438,15 @@
         },
         "nextExperience": "having-dinner"
       },
-      "tags": ["home", "cooking", "dinner", "questions", "perspective", "toroidal", "nice-party"]
+      "tags": [
+        "home",
+        "cooking",
+        "dinner",
+        "questions",
+        "perspective",
+        "toroidal",
+        "nice-party"
+      ]
     }
   ]
 }
