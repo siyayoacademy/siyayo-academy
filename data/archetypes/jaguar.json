@@ -1,0 +1,45 @@
+{
+  "id": "jaguar",
+  "name": {
+    "en": "Jaguar",
+    "es": "Jaguar",
+    "pt": "Jaguar"
+  },
+  "status": "candidate",
+  "role": [
+    "exploration",
+    "progression",
+    "execution"
+  ],
+  "meaning": {
+    "en": "Archetype of precise movement, exploration and progressive learning through small validated steps.",
+    "es": "Arquetipo de movimiento preciso, exploración y aprendizaje progresivo mediante pequeños pasos validados.",
+    "pt": "Arquétipo de movimento preciso, exploração e aprendizagem progressiva por meio de pequenos passos validados."
+  },
+  "visual": {
+    "canonicalImage": false,
+    "paletteId": "jaguar-candidate-v0.1"
+  },
+  "pedagogy": {
+    "functions": [
+      "guide-progress",
+      "encourage-exploration",
+      "validate-small-steps"
+    ],
+    "interactionModes": [
+      "guide",
+      "challenge",
+      "progress-marker"
+    ]
+  },
+  "relations": [
+    {
+      "type": "belongs-to",
+      "target": "siyayo-academy"
+    },
+    {
+      "type": "supports",
+      "target": "learning-experience"
+    }
+  ]
+}
