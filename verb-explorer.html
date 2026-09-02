@@ -28,9 +28,13 @@
     <div class="living-window">
       <div class="living-window-head"><span>LINES / POSSIBLE RESPONSES</span><strong id="lineCounter">03 / 03</strong></div>
       <div id="livingLines" class="living-lines"></div>
+      <section id="choiceResolverPanel" class="choice-resolver-panel" hidden aria-live="polite">
+        <div id="choiceOptions" class="choice-options" aria-label="Canonical choice candidates"></div>
+        <div id="choiceFeedback" class="choice-feedback"></div>
+      </section>
       <div class="line-controls"><button id="lineUp" type="button" aria-label="Previous lines">↑</button><span>QUESTION · RESPONSE · FOLLOW-UP</span><button id="lineDown" type="button" aria-label="Next lines">↓</button></div>
       <div class="toroidal-next"><span>🌀 NEXT?</span><strong id="nextPrompt"></strong><p id="nextAnswer"></p><small id="nextExperience"></small></div>
     </div>
   </div>
 </section>
-</main><script src="js/verb-explorer.js"></script></body></html>
+</main><script src="js/contextual-choice-resolver.js"></script><script src="js/verb-explorer.js"></script></body></html>
