@@ -7,7 +7,9 @@ const ROOT = path.resolve(__dirname, '..');
 const ACTIONS_PATH = path.join(ROOT, 'data/lexicon/verbs/actions.json');
 const SUBJECTS_PATH = path.join(ROOT, 'data/grammar/subjects.json');
 const CONVERSATION_PATH = path.join(ROOT, 'data/learning/conversation-seeds.json');
-const EXPERIENCE_PATH = path.join(ROOT, 'data/learning/experience-seeds.json');
+const EXPERIENCE_PATH = process.env.SIYAYO_EXPERIENCE_PATH
+  ? path.resolve(process.env.SIYAYO_EXPERIENCE_PATH)
+  : path.join(ROOT, 'data/learning/experience-seeds.json');
 const VERB_DIR = path.join(ROOT, 'data/lexicon/verbs');
 const EXPLORER_PATH = path.join(ROOT, 'js/verb-explorer.js');
 
