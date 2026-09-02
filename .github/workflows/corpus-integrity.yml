@@ -37,6 +37,12 @@ jobs:
       - name: Validate canonical adjectives against JSON Schema
         run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/adjective.schema.json -d data/lexicon/adjectives/adjectives.json
 
+      - name: Validate SIYAYO archetypes against JSON Schema
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/archetype.schema.json -d 'data/archetypes/*.json'
+
+      - name: Run SIYAYO archetype semantic validator
+        run: node scripts/validate-archetypes.mjs
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
