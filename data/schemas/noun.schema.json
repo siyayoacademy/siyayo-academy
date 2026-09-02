@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "noun.schema.json",
+  "title": "SIYAYO Noun Corpus",
+  "type": "object",
+  "required": ["$schema", "version", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "const": "../../schemas/noun.schema.json" },
+    "version": { "type": "string", "const": "0.1.0" },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/noun" }
+    }
+  },
+  "$defs": {
+    "trilingual": {
+      "type": "object",
+      "required": ["en", "es", "pt"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "es": { "type": "string", "minLength": 1 },
+        "pt": { "type": "string", "minLength": 1 }
+      }
+    },
+    "noun": {
+      "type": "object",
+      "required": ["id", "wordType", "translations", "nounClass", "semanticTags"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "wordType": { "const": "noun" },
+        "translations": { "$ref": "#/$defs/trilingual" },
+        "nounClass": { "enum": ["concrete", "abstract", "proper"] },
+        "semanticTags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/noun.schema.json",
+  "version": "0.1.0",
+  "items": [
+    { "id": "salmon", "wordType": "noun", "translations": { "en": "salmon", "es": "salmón", "pt": "salmão" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "fish"] },
+    { "id": "tomatoes", "wordType": "noun", "translations": { "en": "tomatoes", "es": "tomates", "pt": "tomates" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "red-onion", "wordType": "noun", "translations": { "en": "red onion", "es": "cebolla roja", "pt": "cebola roxa" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "parsley", "wordType": "noun", "translations": { "en": "parsley", "es": "perejil", "pt": "salsa" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "herb"] },
+    { "id": "cilantro", "wordType": "noun", "translations": { "en": "cilantro", "es": "cilantro", "pt": "coentro" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "herb"] },
+    { "id": "leek", "wordType": "noun", "translations": { "en": "leek", "es": "puerro", "pt": "alho-poró" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "lemon-pepper", "wordType": "noun", "translations": { "en": "lemon pepper", "es": "pimienta con limón", "pt": "lemon pepper" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "seasoning"] },
+    { "id": "olive-oil", "wordType": "noun", "translations": { "en": "olive oil", "es": "aceite de oliva", "pt": "azeite de oliva" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "oil"] },
+    { "id": "brown-rice", "wordType": "noun", "translations": { "en": "brown rice", "es": "arroz integral", "pt": "arroz integral" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "grain"] },
+    { "id": "carrots", "wordType": "noun", "translations": { "en": "carrots", "es": "zanahorias", "pt": "cenouras" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "sweet-potatoes", "wordType": "noun", "translations": { "en": "sweet potatoes", "es": "batatas", "pt": "batatas-doces" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "cassava", "wordType": "noun", "translations": { "en": "cassava", "es": "yuca", "pt": "mandioca" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "green-beans", "wordType": "noun", "translations": { "en": "green beans", "es": "judías verdes", "pt": "vagens" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "vegetable"] },
+    { "id": "cheese", "wordType": "noun", "translations": { "en": "cheese", "es": "queso", "pt": "queijo" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "dairy"] },
+    { "id": "strawberries", "wordType": "noun", "translations": { "en": "strawberries", "es": "fresas", "pt": "morangos" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "fruit"] },
+    { "id": "grapes", "wordType": "noun", "translations": { "en": "grapes", "es": "uvas", "pt": "uvas" }, "nounClass": "concrete", "semanticTags": ["food", "ingredient", "fruit"] }
+  ]
+}

@@ -10,6 +10,9 @@ const CONVERSATION_PATH = path.join(ROOT, 'data/learning/conversation-seeds.json
 const EXPERIENCE_PATH = process.env.SIYAYO_EXPERIENCE_PATH
   ? path.resolve(process.env.SIYAYO_EXPERIENCE_PATH)
   : path.join(ROOT, 'data/learning/experience-seeds.json');
+const NOUN_PATH = process.env.SIYAYO_NOUN_PATH
+  ? path.resolve(process.env.SIYAYO_NOUN_PATH)
+  : path.join(ROOT, 'data/lexicon/nouns/nouns.json');
 const VERB_DIR = path.join(ROOT, 'data/lexicon/verbs');
 const EXPLORER_PATH = path.join(ROOT, 'js/verb-explorer.js');
 
@@ -192,7 +195,32 @@ function validateChoiceContext(choiceContext, vocabularyIds, where) {
   }
 }
 
-function validateExperienceSeeds() {
+function validateNouns() {
+  if (!fs.existsSync(NOUN_PATH)) {
+    fail('Missing noun corpus file', path.relative(ROOT, NOUN_PATH));
+    return { count: 0, ids: new Set() };
+  }
+  const data = readJson(NOUN_PATH), items = collectionItems(data);
+  if (!Array.isArray(items)) {
+    fail('nouns.json must contain items[]', 'nouns.json');
+    return { count: 0, ids: new Set() };
+  }
+  const ids = new Set();
+  for (const noun of items) {
+    const where = `noun/${noun?.id ?? 'unknown'}`;
+    if (typeof noun?.id !== 'string' || !noun.id.trim()) fail('Missing noun id', where);
+    else if (ids.has(noun.id)) fail(`Duplicate noun id '${noun.id}'`, where);
+    else ids.add(noun.id);
+    if (noun?.wordType !== 'noun') fail("wordType must be 'noun'", where);
+    validateTrilingual(noun?.translations, `${where}/translations`);
+    if (!['concrete', 'abstract', 'proper'].includes(noun?.nounClass)) fail('Invalid nounClass', where);
+    if (!Array.isArray(noun?.semanticTags) || !noun.semanticTags.length) fail('semanticTags must contain at least one tag', where);
+    else if (new Set(noun.semanticTags).size !== noun.semanticTags.length) fail('Duplicate semanticTags', where);
+  }
+  return { count: items.length, ids };
+}
+
+function validateExperienceSeeds(nounIds) {
   if (!fs.existsSync(EXPERIENCE_PATH)) {
     fail('Missing experience seeds file', path.relative(ROOT, EXPERIENCE_PATH));
     return 0;
@@ -210,6 +238,9 @@ function validateExperienceSeeds() {
     else if (experienceIds.has(experience.id)) fail(`Duplicate experience id '${experience.id}'`, where);
     else experienceIds.add(experience.id);
     const vocabularyIds = new Set(experience?.links?.vocabulary ?? []);
+    for (const vocabularyId of vocabularyIds) {
+      if (!nounIds.has(vocabularyId)) fail(`Vocabulary '${vocabularyId}' does not resolve to the noun corpus`, `${where}/links/vocabulary`);
+    }
     for (const [index, question] of (experience?.thinkingMind ?? []).entries()) {
       if (question?.choiceContext !== undefined) {
         choiceContexts += 1;
@@ -230,6 +261,7 @@ const actions = collectionItems(actionsData);
 const subjects = collectionItems(subjectsData);
 let conversationSeeds = 0;
 let experienceSeeds = { experiences: 0, choiceContexts: 0 };
+let nounCorpus = { count: 0, ids: new Set() };
 
 if (!Array.isArray(actions)) fail('actions.json must contain an array or items[]', 'actions.json');
 if (!Array.isArray(subjects)) fail('subjects.json must contain an array or items[]', 'subjects.json');
@@ -249,8 +281,9 @@ if (Array.isArray(actions) && Array.isArray(subjects)) {
     else { validateSubjectFile(action.id, subjectPath, subjectIds); validateEnglishAuxiliaries(action, subjectPath, true); }
   }
 
+  nounCorpus = validateNouns();
   conversationSeeds = validateConversationSeeds(actionIds);
-  experienceSeeds = validateExperienceSeeds();
+  experienceSeeds = validateExperienceSeeds(nounCorpus.ids);
 
   if (fs.existsSync(EXPLORER_PATH)) {
     const source = fs.readFileSync(EXPLORER_PATH, 'utf8');
@@ -272,6 +305,7 @@ console.log(`Canonical subjects: ${Array.isArray(subjects) ? subjects.length : 0
 console.log(`Conversation seeds: ${conversationSeeds}`);
 console.log(`Experience seeds: ${experienceSeeds.experiences}`);
 console.log(`Contextual choices: ${experienceSeeds.choiceContexts}`);
+console.log(`Canonical nouns: ${nounCorpus.count}`);
 console.log('Checks: corpus files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules, conversation seeds, experience IDs and contextual choice references/contrast');
 console.log('');
 if (!failures.length) console.log('PASS — canonical corpus, conversation seeds and contextual experience metadata integrity checks passed.');
