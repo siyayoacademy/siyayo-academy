@@ -39,3 +39,9 @@ jobs:
 
       - name: Run 3B contextual and canonical resolver tests
         run: node scripts/test-contextual-choice-resolver.js
+
+      - name: Run 3B.2 MENTE PENSANTE UI integration tests
+        run: |
+          node --check js/contextual-choice-resolver.js
+          node --check js/verb-explorer.js
+          node scripts/test-choice-ui-integration.js
