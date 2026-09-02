@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adjective.schema.json",
+  "title": "SIYAYO Adjective Corpus",
+  "type": "object",
+  "required": ["$schema", "version", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "const": "../../schemas/adjective.schema.json" },
+    "version": { "type": "string", "const": "0.1.0" },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/adjective" }
+    }
+  },
+  "$defs": {
+    "trilingual": {
+      "type": "object",
+      "required": ["en", "es", "pt"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "es": { "type": "string", "minLength": 1 },
+        "pt": { "type": "string", "minLength": 1 }
+      }
+    },
+    "adjective": {
+      "type": "object",
+      "required": ["id", "wordType", "translations", "adjectiveClass", "polarity", "semanticTags"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "wordType": { "const": "adjective" },
+        "translations": { "$ref": "#/$defs/trilingual" },
+        "adjectiveClass": { "enum": ["qualitative", "relational", "classifying"] },
+        "polarity": { "enum": ["positive", "neutral", "negative"] },
+        "semanticTags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+        }
+      }
+    }
+  }
+}

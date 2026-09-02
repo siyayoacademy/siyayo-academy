@@ -13,6 +13,9 @@ const EXPERIENCE_PATH = process.env.SIYAYO_EXPERIENCE_PATH
 const NOUN_PATH = process.env.SIYAYO_NOUN_PATH
   ? path.resolve(process.env.SIYAYO_NOUN_PATH)
   : path.join(ROOT, 'data/lexicon/nouns/nouns.json');
+const ADJECTIVE_PATH = process.env.SIYAYO_ADJECTIVE_PATH
+  ? path.resolve(process.env.SIYAYO_ADJECTIVE_PATH)
+  : path.join(ROOT, 'data/lexicon/adjectives/adjectives.json');
 const VERB_DIR = path.join(ROOT, 'data/lexicon/verbs');
 const EXPLORER_PATH = path.join(ROOT, 'js/verb-explorer.js');
 
@@ -220,7 +223,33 @@ function validateNouns() {
   return { count: items.length, ids };
 }
 
-function validateExperienceSeeds(nounIds) {
+function validateAdjectives() {
+  if (!fs.existsSync(ADJECTIVE_PATH)) {
+    fail('Missing adjective corpus file', path.relative(ROOT, ADJECTIVE_PATH));
+    return { count: 0, ids: new Set() };
+  }
+  const data = readJson(ADJECTIVE_PATH), items = collectionItems(data);
+  if (!Array.isArray(items)) {
+    fail('adjectives.json must contain items[]', 'adjectives.json');
+    return { count: 0, ids: new Set() };
+  }
+  const ids = new Set();
+  for (const adjective of items) {
+    const where = `adjective/${adjective?.id ?? 'unknown'}`;
+    if (typeof adjective?.id !== 'string' || !adjective.id.trim()) fail('Missing adjective id', where);
+    else if (ids.has(adjective.id)) fail(`Duplicate adjective id '${adjective.id}'`, where);
+    else ids.add(adjective.id);
+    if (adjective?.wordType !== 'adjective') fail("wordType must be 'adjective'", where);
+    validateTrilingual(adjective?.translations, `${where}/translations`);
+    if (!['qualitative', 'relational', 'classifying'].includes(adjective?.adjectiveClass)) fail('Invalid adjectiveClass', where);
+    if (!['positive', 'neutral', 'negative'].includes(adjective?.polarity)) fail('Invalid adjective polarity', where);
+    if (!Array.isArray(adjective?.semanticTags) || !adjective.semanticTags.length) fail('semanticTags must contain at least one tag', where);
+    else if (new Set(adjective.semanticTags).size !== adjective.semanticTags.length) fail('Duplicate semanticTags', where);
+  }
+  return { count: items.length, ids };
+}
+
+function validateExperienceSeeds(nounIds, adjectiveIds) {
   if (!fs.existsSync(EXPERIENCE_PATH)) {
     fail('Missing experience seeds file', path.relative(ROOT, EXPERIENCE_PATH));
     return 0;
@@ -240,6 +269,10 @@ function validateExperienceSeeds(nounIds) {
     const vocabularyIds = new Set(experience?.links?.vocabulary ?? []);
     for (const vocabularyId of vocabularyIds) {
       if (!nounIds.has(vocabularyId)) fail(`Vocabulary '${vocabularyId}' does not resolve to the noun corpus`, `${where}/links/vocabulary`);
+    }
+    for (const adjectiveId of (experience?.links?.positiveAdjectives ?? [])) {
+      if (!adjectiveIds.has(adjectiveId)) fail(`Positive adjective '${adjectiveId}' does not resolve to the adjective corpus`, `${where}/links/positiveAdjectives`);
+      else if (readJson(ADJECTIVE_PATH)?.items?.find(item => item.id === adjectiveId)?.polarity !== 'positive') fail(`Linked positive adjective '${adjectiveId}' must have positive polarity`, `${where}/links/positiveAdjectives`);
     }
     for (const [index, question] of (experience?.thinkingMind ?? []).entries()) {
       if (question?.choiceContext !== undefined) {
@@ -262,6 +295,7 @@ const subjects = collectionItems(subjectsData);
 let conversationSeeds = 0;
 let experienceSeeds = { experiences: 0, choiceContexts: 0 };
 let nounCorpus = { count: 0, ids: new Set() };
+let adjectiveCorpus = { count: 0, ids: new Set() };
 
 if (!Array.isArray(actions)) fail('actions.json must contain an array or items[]', 'actions.json');
 if (!Array.isArray(subjects)) fail('subjects.json must contain an array or items[]', 'subjects.json');
@@ -282,8 +316,9 @@ if (Array.isArray(actions) && Array.isArray(subjects)) {
   }
 
   nounCorpus = validateNouns();
+  adjectiveCorpus = validateAdjectives();
   conversationSeeds = validateConversationSeeds(actionIds);
-  experienceSeeds = validateExperienceSeeds(nounCorpus.ids);
+  experienceSeeds = validateExperienceSeeds(nounCorpus.ids, adjectiveCorpus.ids);
 
   if (fs.existsSync(EXPLORER_PATH)) {
     const source = fs.readFileSync(EXPLORER_PATH, 'utf8');
@@ -306,6 +341,7 @@ console.log(`Conversation seeds: ${conversationSeeds}`);
 console.log(`Experience seeds: ${experienceSeeds.experiences}`);
 console.log(`Contextual choices: ${experienceSeeds.choiceContexts}`);
 console.log(`Canonical nouns: ${nounCorpus.count}`);
+console.log(`Canonical adjectives: ${adjectiveCorpus.count}`);
 console.log('Checks: corpus files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules, conversation seeds, experience IDs and contextual choice references/contrast');
 console.log('');
 if (!failures.length) console.log('PASS — canonical corpus, conversation seeds and contextual experience metadata integrity checks passed.');

@@ -34,6 +34,9 @@ jobs:
       - name: Validate canonical nouns against JSON Schema
         run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/noun.schema.json -d data/lexicon/nouns/nouns.json
 
+      - name: Validate canonical adjectives against JSON Schema
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/adjective.schema.json -d data/lexicon/adjectives/adjectives.json
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
@@ -65,3 +68,6 @@ jobs:
         run: |
           node --check js/verb-explorer.js
           node scripts/test-noun-ui-integration.js
+
+      - name: Run 5.1 canonical adjective negative tests
+        run: node scripts/test-adjective-corpus-negative.js

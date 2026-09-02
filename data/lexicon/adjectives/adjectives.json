@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/adjective.schema.json",
+  "version": "0.1.0",
+  "items": [
+    { "id": "fresh", "wordType": "adjective", "translations": { "en": "fresh", "es": "fresco", "pt": "fresco" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "food", "condition"] },
+    { "id": "delicious", "wordType": "adjective", "translations": { "en": "delicious", "es": "delicioso", "pt": "delicioso" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "food", "taste"] },
+    { "id": "beautiful", "wordType": "adjective", "translations": { "en": "beautiful", "es": "hermoso", "pt": "bonito" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "appearance", "appreciation"] },
+    { "id": "pleasant", "wordType": "adjective", "translations": { "en": "pleasant", "es": "agradable", "pt": "agradável" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "experience", "appreciation"] },
+    { "id": "excellent", "wordType": "adjective", "translations": { "en": "excellent", "es": "excelente", "pt": "excelente" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "evaluation", "appreciation"] },
+    { "id": "wonderful", "wordType": "adjective", "translations": { "en": "wonderful", "es": "maravilloso", "pt": "maravilhoso" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "evaluation", "appreciation"] }
+  ]
+}
