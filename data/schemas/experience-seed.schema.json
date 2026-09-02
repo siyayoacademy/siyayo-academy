@@ -322,9 +322,10 @@
         },
         "sentenceBridge": {
           "type": "object",
-          "required": ["action", "structure"],
+          "required": ["verbId", "action", "structure"],
           "additionalProperties": false,
           "properties": {
+            "verbId": { "type": "string", "minLength": 1 },
             "action": { "$ref": "#/$defs/trilingual" },
             "structure": { "$ref": "#/$defs/trilingual" }
           }

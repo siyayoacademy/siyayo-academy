@@ -87,3 +87,8 @@ jobs:
 
       - name: Run 6.3 sentence axis navigation tests
         run: node scripts/test-sentence-axis-navigation.js
+
+      - name: Run 6.4 blue verb DNA navigation tests
+        run: |
+          node --check js/verb-explorer.js
+          node scripts/test-blue-verb-navigation.js

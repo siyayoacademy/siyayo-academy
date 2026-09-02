@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "choose",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I choose the fresh cheese today.",
+            "es": "Yo elijo el queso fresco hoy.",
+            "pt": "Eu escolho o queijo fresco hoje."
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "elijo",
+            "pt": "escolho"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not choose the fresh cheese today.",
+            "es": "Yo no elijo el queso fresco hoy.",
+            "pt": "Eu não escolho o queijo fresco hoje."
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "elijo",
+            "pt": "escolho"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do I choose the fresh cheese today?",
+            "es": "¿Elijo yo el queso fresco hoy?",
+            "pt": "Eu escolho o queijo fresco hoje?"
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "Elijo",
+            "pt": "Escolho"
+          }
+        }
+      }
+    },
+    {
+      "verb": "choose",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I chose the fresh cheese yesterday.",
+            "es": "Yo elegí el queso fresco ayer.",
+            "pt": "Eu escolhi o queijo fresco ontem."
+          },
+          "targetWords": {
+            "en": "chose",
+            "es": "elegí",
+            "pt": "escolhi"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not choose the fresh cheese yesterday.",
+            "es": "Yo no elegí el queso fresco ayer.",
+            "pt": "Eu não escolhi o queijo fresco ontem."
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "elegí",
+            "pt": "escolhi"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did I choose the fresh cheese yesterday?",
+            "es": "¿Elegí yo el queso fresco ayer?",
+            "pt": "Eu escolhi o queijo fresco ontem?"
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "Elegí",
+            "pt": "Escolhi"
+          }
+        }
+      }
+    },
+    {
+      "verb": "choose",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will choose the fresh cheese tomorrow.",
+            "es": "Yo elegiré el queso fresco mañana.",
+            "pt": "Eu escolherei o queijo fresco amanhã."
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "elegiré",
+            "pt": "escolherei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not choose the fresh cheese tomorrow.",
+            "es": "Yo no elegiré el queso fresco mañana.",
+            "pt": "Eu não escolherei o queijo fresco amanhã."
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "elegiré",
+            "pt": "escolherei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will I choose the fresh cheese tomorrow?",
+            "es": "¿Elegiré yo el queso fresco mañana?",
+            "pt": "Eu escolherei o queijo fresco amanhã?"
+          },
+          "targetWords": {
+            "en": "choose",
+            "es": "Elegiré",
+            "pt": "Escolherei"
+          }
+        }
+      }
+    }
+  ]
+}

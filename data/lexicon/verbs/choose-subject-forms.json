@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.1.0",
+  "verb": "choose",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I choose the fresh cheese today.",
+              "es": "Yo elijo el queso fresco hoy.",
+              "pt": "Eu escolho o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elijo",
+              "pt": "escolho"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You choose the fresh cheese today.",
+              "es": "Tú eliges el queso fresco hoy.",
+              "pt": "Você escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eliges",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He chooses the fresh cheese today.",
+              "es": "Él elige el queso fresco hoy.",
+              "pt": "Ele escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "chooses",
+              "es": "elige",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She chooses the fresh cheese today.",
+              "es": "Ella elige el queso fresco hoy.",
+              "pt": "Ela escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "chooses",
+              "es": "elige",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It chooses the fresh cheese today.",
+              "es": "Elige el queso fresco hoy.",
+              "pt": "Escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "chooses",
+              "es": "elige",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We choose the fresh cheese today.",
+              "es": "Nosotros elegimos el queso fresco hoy.",
+              "pt": "Nós escolhemos o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegimos",
+              "pt": "escolhemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You choose the fresh cheese today.",
+              "es": "Ustedes eligen el queso fresco hoy.",
+              "pt": "Vocês escolhem o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligen",
+              "pt": "escolhem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They choose the fresh cheese today.",
+              "es": "Ellos eligen el queso fresco hoy.",
+              "pt": "Eles escolhem o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligen",
+              "pt": "escolhem"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not choose the fresh cheese today.",
+              "es": "Yo no elijo el queso fresco hoy.",
+              "pt": "Eu não escolho o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elijo",
+              "pt": "escolho"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not choose the fresh cheese today.",
+              "es": "Tú no eliges el queso fresco hoy.",
+              "pt": "Você não escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eliges",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not choose the fresh cheese today.",
+              "es": "Él no elige el queso fresco hoy.",
+              "pt": "Ele não escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elige",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not choose the fresh cheese today.",
+              "es": "Ella no elige el queso fresco hoy.",
+              "pt": "Ela não escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elige",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not choose the fresh cheese today.",
+              "es": "No elige el queso fresco hoy.",
+              "pt": "Não escolhe o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elige",
+              "pt": "escolhe"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not choose the fresh cheese today.",
+              "es": "Nosotros no elegimos el queso fresco hoy.",
+              "pt": "Nós não escolhemos o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegimos",
+              "pt": "escolhemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not choose the fresh cheese today.",
+              "es": "Ustedes no eligen el queso fresco hoy.",
+              "pt": "Vocês não escolhem o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligen",
+              "pt": "escolhem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not choose the fresh cheese today.",
+              "es": "Ellos no eligen el queso fresco hoy.",
+              "pt": "Eles não escolhem o queijo fresco hoje."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligen",
+              "pt": "escolhem"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do I choose the fresh cheese today?",
+              "es": "¿Elijo yo el queso fresco hoy?",
+              "pt": "Eu escolho o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elijo",
+              "pt": "Escolho"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you choose the fresh cheese today?",
+              "es": "¿Eliges tú el queso fresco hoy?",
+              "pt": "Você escolhe o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eliges",
+              "pt": "Escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he choose the fresh cheese today?",
+              "es": "¿Elige él el queso fresco hoy?",
+              "pt": "Ele escolhe o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elige",
+              "pt": "Escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she choose the fresh cheese today?",
+              "es": "¿Elige ella el queso fresco hoy?",
+              "pt": "Ela escolhe o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elige",
+              "pt": "Escolhe"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it choose the fresh cheese today?",
+              "es": "¿Elige el queso fresco hoy?",
+              "pt": "Escolhe o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elige",
+              "pt": "Escolhe"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we choose the fresh cheese today?",
+              "es": "¿Elegimos nosotros el queso fresco hoy?",
+              "pt": "Nós escolhemos o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegimos",
+              "pt": "Escolhemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you choose the fresh cheese today?",
+              "es": "¿Eligen ustedes el queso fresco hoy?",
+              "pt": "Vocês escolhem o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligen",
+              "pt": "Escolhem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they choose the fresh cheese today?",
+              "es": "¿Eligen ellos el queso fresco hoy?",
+              "pt": "Eles escolhem o queijo fresco hoje?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligen",
+              "pt": "Escolhem"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I chose the fresh cheese yesterday.",
+              "es": "Yo elegí el queso fresco ayer.",
+              "pt": "Eu escolhi o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "elegí",
+              "pt": "escolhi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You chose the fresh cheese yesterday.",
+              "es": "Tú elegiste el queso fresco ayer.",
+              "pt": "Você escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "elegiste",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He chose the fresh cheese yesterday.",
+              "es": "Él eligió el queso fresco ayer.",
+              "pt": "Ele escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "eligió",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She chose the fresh cheese yesterday.",
+              "es": "Ella eligió el queso fresco ayer.",
+              "pt": "Ela escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "eligió",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It chose the fresh cheese yesterday.",
+              "es": "Eligió el queso fresco ayer.",
+              "pt": "Escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "eligió",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We chose the fresh cheese yesterday.",
+              "es": "Nosotros elegimos el queso fresco ayer.",
+              "pt": "Nós escolhemos o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "elegimos",
+              "pt": "escolhemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You chose the fresh cheese yesterday.",
+              "es": "Ustedes eligieron el queso fresco ayer.",
+              "pt": "Vocês escolheram o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "eligieron",
+              "pt": "escolheram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They chose the fresh cheese yesterday.",
+              "es": "Ellos eligieron el queso fresco ayer.",
+              "pt": "Eles escolheram o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "chose",
+              "es": "eligieron",
+              "pt": "escolheram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not choose the fresh cheese yesterday.",
+              "es": "Yo no elegí el queso fresco ayer.",
+              "pt": "Eu não escolhi o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegí",
+              "pt": "escolhi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not choose the fresh cheese yesterday.",
+              "es": "Tú no elegiste el queso fresco ayer.",
+              "pt": "Você não escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegiste",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not choose the fresh cheese yesterday.",
+              "es": "Él no eligió el queso fresco ayer.",
+              "pt": "Ele não escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligió",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not choose the fresh cheese yesterday.",
+              "es": "Ella no eligió el queso fresco ayer.",
+              "pt": "Ela não escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligió",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not choose the fresh cheese yesterday.",
+              "es": "No eligió el queso fresco ayer.",
+              "pt": "Não escolheu o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligió",
+              "pt": "escolheu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not choose the fresh cheese yesterday.",
+              "es": "Nosotros no elegimos el queso fresco ayer.",
+              "pt": "Nós não escolhemos o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegimos",
+              "pt": "escolhemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not choose the fresh cheese yesterday.",
+              "es": "Ustedes no eligieron el queso fresco ayer.",
+              "pt": "Vocês não escolheram o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligieron",
+              "pt": "escolheram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not choose the fresh cheese yesterday.",
+              "es": "Ellos no eligieron el queso fresco ayer.",
+              "pt": "Eles não escolheram o queijo fresco ontem."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "eligieron",
+              "pt": "escolheram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did I choose the fresh cheese yesterday?",
+              "es": "¿Elegí yo el queso fresco ayer?",
+              "pt": "Eu escolhi o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegí",
+              "pt": "Escolhi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you choose the fresh cheese yesterday?",
+              "es": "¿Elegiste tú el queso fresco ayer?",
+              "pt": "Você escolheu o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegiste",
+              "pt": "Escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he choose the fresh cheese yesterday?",
+              "es": "¿Eligió él el queso fresco ayer?",
+              "pt": "Ele escolheu o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligió",
+              "pt": "Escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she choose the fresh cheese yesterday?",
+              "es": "¿Eligió ella el queso fresco ayer?",
+              "pt": "Ela escolheu o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligió",
+              "pt": "Escolheu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it choose the fresh cheese yesterday?",
+              "es": "¿Eligió el queso fresco ayer?",
+              "pt": "Escolheu o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligió",
+              "pt": "Escolheu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we choose the fresh cheese yesterday?",
+              "es": "¿Elegimos nosotros el queso fresco ayer?",
+              "pt": "Nós escolhemos o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegimos",
+              "pt": "Escolhemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you choose the fresh cheese yesterday?",
+              "es": "¿Eligieron ustedes el queso fresco ayer?",
+              "pt": "Vocês escolheram o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligieron",
+              "pt": "Escolheram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they choose the fresh cheese yesterday?",
+              "es": "¿Eligieron ellos el queso fresco ayer?",
+              "pt": "Eles escolheram o queijo fresco ontem?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Eligieron",
+              "pt": "Escolheram"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will choose the fresh cheese tomorrow.",
+              "es": "Yo elegiré el queso fresco mañana.",
+              "pt": "Eu escolherei o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegiré",
+              "pt": "escolherei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will choose the fresh cheese tomorrow.",
+              "es": "Tú elegirás el queso fresco mañana.",
+              "pt": "Você escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirás",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will choose the fresh cheese tomorrow.",
+              "es": "Él elegirá el queso fresco mañana.",
+              "pt": "Ele escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirá",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will choose the fresh cheese tomorrow.",
+              "es": "Ella elegirá el queso fresco mañana.",
+              "pt": "Ela escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirá",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will choose the fresh cheese tomorrow.",
+              "es": "Elegirá el queso fresco mañana.",
+              "pt": "Escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirá",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will choose the fresh cheese tomorrow.",
+              "es": "Nosotros elegiremos el queso fresco mañana.",
+              "pt": "Nós escolheremos o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegiremos",
+              "pt": "escolheremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will choose the fresh cheese tomorrow.",
+              "es": "Ustedes elegirán el queso fresco mañana.",
+              "pt": "Vocês escolherão o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirán",
+              "pt": "escolherão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will choose the fresh cheese tomorrow.",
+              "es": "Ellos elegirán el queso fresco mañana.",
+              "pt": "Eles escolherão o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirán",
+              "pt": "escolherão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not choose the fresh cheese tomorrow.",
+              "es": "Yo no elegiré el queso fresco mañana.",
+              "pt": "Eu não escolherei o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegiré",
+              "pt": "escolherei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not choose the fresh cheese tomorrow.",
+              "es": "Tú no elegirás el queso fresco mañana.",
+              "pt": "Você não escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirás",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not choose the fresh cheese tomorrow.",
+              "es": "Él no elegirá el queso fresco mañana.",
+              "pt": "Ele não escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirá",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not choose the fresh cheese tomorrow.",
+              "es": "Ella no elegirá el queso fresco mañana.",
+              "pt": "Ela não escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirá",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not choose the fresh cheese tomorrow.",
+              "es": "No elegirá el queso fresco mañana.",
+              "pt": "Não escolherá o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirá",
+              "pt": "escolherá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not choose the fresh cheese tomorrow.",
+              "es": "Nosotros no elegiremos el queso fresco mañana.",
+              "pt": "Nós não escolheremos o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegiremos",
+              "pt": "escolheremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not choose the fresh cheese tomorrow.",
+              "es": "Ustedes no elegirán el queso fresco mañana.",
+              "pt": "Vocês não escolherão o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirán",
+              "pt": "escolherão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not choose the fresh cheese tomorrow.",
+              "es": "Ellos no elegirán el queso fresco mañana.",
+              "pt": "Eles não escolherão o queijo fresco amanhã."
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "elegirán",
+              "pt": "escolherão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will I choose the fresh cheese tomorrow?",
+              "es": "¿Elegiré yo el queso fresco mañana?",
+              "pt": "Eu escolherei o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegiré",
+              "pt": "Escolherei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you choose the fresh cheese tomorrow?",
+              "es": "¿Elegirás tú el queso fresco mañana?",
+              "pt": "Você escolherá o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegirás",
+              "pt": "Escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he choose the fresh cheese tomorrow?",
+              "es": "¿Elegirá él el queso fresco mañana?",
+              "pt": "Ele escolherá o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegirá",
+              "pt": "Escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she choose the fresh cheese tomorrow?",
+              "es": "¿Elegirá ella el queso fresco mañana?",
+              "pt": "Ela escolherá o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegirá",
+              "pt": "Escolherá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it choose the fresh cheese tomorrow?",
+              "es": "¿Elegirá el queso fresco mañana?",
+              "pt": "Escolherá o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegirá",
+              "pt": "Escolherá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we choose the fresh cheese tomorrow?",
+              "es": "¿Elegiremos nosotros el queso fresco mañana?",
+              "pt": "Nós escolheremos o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegiremos",
+              "pt": "Escolheremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you choose the fresh cheese tomorrow?",
+              "es": "¿Elegirán ustedes el queso fresco mañana?",
+              "pt": "Vocês escolherão o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegirán",
+              "pt": "Escolherão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they choose the fresh cheese tomorrow?",
+              "es": "¿Elegirán ellos el queso fresco mañana?",
+              "pt": "Eles escolherão o queijo fresco amanhã?"
+            },
+            "targetWords": {
+              "en": "choose",
+              "es": "Elegirán",
+              "pt": "Escolherão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -18,6 +18,7 @@
     { "verb": "come", "examples": { "en": "She comes home in the evening.", "es": "Ella viene a casa por la tarde.", "pt": "Ela vem para casa à tarde." }, "targetWords": { "en": "comes", "es": "viene", "pt": "vem" } },
     { "verb": "run", "examples": { "en": "He runs in the park.", "es": "Él corre en el parque.", "pt": "Ele corre no parque." }, "targetWords": { "en": "runs", "es": "corre", "pt": "corre" } },
     { "verb": "buy", "examples": { "en": "We buy fresh fruit at the market.", "es": "Compramos fruta fresca en el mercado.", "pt": "Compramos frutas frescas no mercado." }, "targetWords": { "en": "buy", "es": "Compramos", "pt": "Compramos" } },
+    { "verb": "choose", "examples": { "en": "We choose the fresh cheese.", "es": "Elegimos el queso fresco.", "pt": "Escolhemos o queijo fresco." }, "targetWords": { "en": "choose", "es": "Elegimos", "pt": "Escolhemos" } },
     { "verb": "cook", "examples": { "en": "I cook dinner at home.", "es": "Cocino la cena en casa.", "pt": "Eu preparo o jantar em casa." }, "targetWords": { "en": "cook", "es": "Cocino", "pt": "preparo" } },
     { "verb": "open", "examples": { "en": "Please open the window.", "es": "Por favor, abre la ventana.", "pt": "Por favor, abra a janela." }, "targetWords": { "en": "open", "es": "abre", "pt": "abra" } },
     { "verb": "close", "examples": { "en": "Please close the door.", "es": "Por favor, cierra la puerta.", "pt": "Por favor, feche a porta." }, "targetWords": { "en": "close", "es": "cierra", "pt": "feche" } }

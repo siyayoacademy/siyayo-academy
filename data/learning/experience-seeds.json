@@ -104,6 +104,7 @@
           "choiceContext": {
             "focusVocabulary": "cheese",
             "sentenceBridge": {
+              "verbId": "choose",
               "action": {
                 "en": "choose",
                 "es": "elegir",

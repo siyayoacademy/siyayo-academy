@@ -32,7 +32,7 @@ for (const lang of ['en', 'es', 'pt']) assert.ok(which.choiceContext.sentenceBri
 
 const bridgeSchema = schema.$defs.choiceContext.properties.sentenceBridge;
 assert.equal(bridgeSchema.additionalProperties, false);
-assert.deepEqual(bridgeSchema.required, ['action', 'structure']);
+assert.deepEqual(bridgeSchema.required, ['verbId', 'action', 'structure']);
 
 assert.equal((runtime.match(/loadVerbExplorer\(\);/g) || []).length, 1, 'Explorer must initialize exactly once');
 

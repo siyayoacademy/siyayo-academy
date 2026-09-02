@@ -158,7 +158,7 @@ function validateConversationSeeds(actionIds) {
 }
 
 
-function validateChoiceContext(choiceContext, vocabularyIds, where) {
+function validateChoiceContext(choiceContext, vocabularyIds, verbIds, where) {
   if (!choiceContext || typeof choiceContext !== 'object' || Array.isArray(choiceContext)) {
     fail('choiceContext must be an object', where);
     return;
@@ -168,6 +168,7 @@ function validateChoiceContext(choiceContext, vocabularyIds, where) {
   }
   validateTrilingual(choiceContext.sentenceBridge?.action, `${where}/sentenceBridge/action`);
   validateTrilingual(choiceContext.sentenceBridge?.structure, `${where}/sentenceBridge/structure`);
+  if (!verbIds.has(choiceContext.sentenceBridge?.verbId)) fail(`sentenceBridge verbId '${choiceContext.sentenceBridge?.verbId}' does not resolve to the verb corpus`, `${where}/sentenceBridge/verbId`);
   const preferredTraits = choiceContext.preferredTraits;
   if (!Array.isArray(preferredTraits) || !preferredTraits.length) {
     fail('preferredTraits must contain at least one trait', where);
@@ -251,7 +252,7 @@ function validateAdjectives() {
   return { count: items.length, ids };
 }
 
-function validateExperienceSeeds(nounIds, adjectiveIds) {
+function validateExperienceSeeds(nounIds, adjectiveIds, verbIds) {
   if (!fs.existsSync(EXPERIENCE_PATH)) {
     fail('Missing experience seeds file', path.relative(ROOT, EXPERIENCE_PATH));
     return 0;
@@ -282,7 +283,7 @@ function validateExperienceSeeds(nounIds, adjectiveIds) {
         if (question.intention !== 'choice' || question.questionWord !== 'which') {
           fail('choiceContext requires intention=choice and questionWord=which', `${where}/thinkingMind[${index}]`);
         }
-        validateChoiceContext(question.choiceContext, vocabularyIds, `${where}/thinkingMind[${index}]/choiceContext`);
+        validateChoiceContext(question.choiceContext, vocabularyIds, verbIds, `${where}/thinkingMind[${index}]/choiceContext`);
       }
     }
   }
@@ -320,7 +321,7 @@ if (Array.isArray(actions) && Array.isArray(subjects)) {
   nounCorpus = validateNouns();
   adjectiveCorpus = validateAdjectives();
   conversationSeeds = validateConversationSeeds(actionIds);
-  experienceSeeds = validateExperienceSeeds(nounCorpus.ids, adjectiveCorpus.ids);
+  experienceSeeds = validateExperienceSeeds(nounCorpus.ids, adjectiveCorpus.ids, new Set(actionIds));
 
   if (fs.existsSync(EXPLORER_PATH)) {
     const source = fs.readFileSync(EXPLORER_PATH, 'utf8');

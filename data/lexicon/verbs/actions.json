@@ -153,6 +153,15 @@
     "tags": ["shopping", "daily-life"]
   },
   {
+    "id": "choose",
+    "lemma": "choose",
+    "translations": { "en": "choose", "es": "elegir", "pt": "escolher" },
+    "verbFunction": ["action"],
+    "regularity": "irregular",
+    "forms": { "thirdPersonSingular": "chooses", "past": "chose", "pastParticiple": "chosen", "gerund": "choosing" },
+    "tags": ["choice", "decision", "daily-life"]
+  },
+  {
     "id": "cook",
     "lemma": "cook",
     "translations": { "en": "cook", "es": "cocinar", "pt": "cozinhar" },

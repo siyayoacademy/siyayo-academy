@@ -13,7 +13,7 @@ for (const hook of [
   'kind:"noun",axis:"noun"',
   'data-sentence-axis=',
   'sentenceAxisTitle(match.axis,experienceLanguage)',
-  'e.target.closest("[data-sentence-axis]")?.dataset.sentenceAxis',
+  'e.target.closest("[data-sentence-axis]")',
   'experienceWordType=axis',
   'if(axis){experienceWordType=axis;lineOffset=0;renderExperience();return}'
 ]) assert.ok(runtime.includes(hook), `missing 6.3 axis navigation hook: ${hook}`);
@@ -28,4 +28,4 @@ assert.ok(css.includes('cursor:pointer'), 'interactive sentence parts must signa
 console.log('PASS — 6.3 makes canonical NOUN and ADJECTIVE sentence parts navigable.');
 console.log('PASS — selections remain in state while returning to their source axes.');
 console.log('PASS — non-target sentence clicks preserve complete-line audio.');
-console.log('PASS — the data-backed verb remains highlighted without a false axis link.');
+console.log('PASS — data-backed sentence axes remain available for canonical navigation.');

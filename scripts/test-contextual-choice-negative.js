@@ -65,7 +65,19 @@ try {
   });
   expectRejected('Reference guard (unlinked focusVocabulary)', referenceResult, "is not linked by the experience");
 
-  console.log('PASS — 3A.3 negative controls rejected both invalid metadata mutations.');
+  const brokenVerbReference = clone(source);
+  const brokenVerbShopping = brokenVerbReference.items.find(item => item.id === 'shopping-for-dinner');
+  const brokenVerbWhich = brokenVerbShopping?.thinkingMind?.find(question => question.questionWord === 'which');
+  brokenVerbWhich.choiceContext.sentenceBridge.verbId = 'unlinked-verb';
+  const brokenVerbPath = writeFixture('broken-verb-reference.json', brokenVerbReference);
+  const brokenVerbResult = spawnSync(process.execPath, [VALIDATOR_PATH], {
+    cwd: ROOT,
+    encoding: 'utf8',
+    env: { ...process.env, SIYAYO_EXPERIENCE_PATH: brokenVerbPath }
+  });
+  expectRejected('Reference guard (unknown sentenceBridge verbId)', brokenVerbResult, "does not resolve to the verb corpus");
+
+  console.log('PASS — negative controls reject invalid metadata and canonical references.');
 } catch (error) {
   console.error(`FIX — 3A.3 negative control failed: ${error.message}`);
   process.exitCode = 1;
