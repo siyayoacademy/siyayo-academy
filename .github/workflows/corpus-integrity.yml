@@ -86,6 +86,11 @@ jobs:
           node --check js/xespirito-green-pass-bridge.js
           node scripts/test-xespirito-green-pass-bridge.js
 
+      - name: Run pedagogical resonance selector tests
+        run: |
+          node --check js/pedagogical-resonance.js
+          node scripts/test-pedagogical-resonance.js
+
       - name: Run adaptive learning route selector tests
         run: |
           node --check js/adaptive-learning-router.js
