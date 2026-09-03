@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sound.schema.json",
+  "title": "SIYAYO Academy Sound Schema",
+  "description": "Schema for intentional, optional and accessibility-aware SIYAYO sound assets, including short navigation soundscapes, semantic sound events and future phonetic associations.",
+  "type": "object",
+  "required": ["id", "type", "status", "version", "name", "behavior"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*(?:-v[0-9]+(?:\\.[0-9]+)*)?$"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["navigation-intro", "semantic-event", "feedback", "soundscape", "phonetic-reference"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "homologated", "retired"]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "name": {
+      "type": "object",
+      "required": ["en", "es", "pt"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "es": { "type": "string", "minLength": 1 },
+        "pt": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "purpose": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["orientation", "attention", "focus", "transition", "confirmation", "ambient-introduction", "pronunciation", "phonetic-study"]
+      },
+      "uniqueItems": true
+    },
+    "behavior": {
+      "type": "object",
+      "required": ["optional", "loop", "speechPolicy"],
+      "properties": {
+        "optional": { "type": "boolean" },
+        "loop": { "type": "boolean" },
+        "durationMs": { "type": "integer", "minimum": 1 },
+        "gain": { "type": "number", "minimum": 0, "maximum": 1 },
+        "fadeInMs": { "type": "integer", "minimum": 0 },
+        "fadeOutMs": { "type": "integer", "minimum": 0 },
+        "trigger": {
+          "type": "string",
+          "enum": ["area-enter", "experience-start", "exercise-start", "navigation", "interaction", "manual"]
+        },
+        "speechPolicy": {
+          "type": "string",
+          "enum": ["stop-on-speech", "duck-on-speech", "never-overlap-speech"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "audio": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "format": { "type": "string" },
+        "sampleRateHz": { "type": "integer", "minimum": 1 },
+        "channels": { "type": "integer", "minimum": 1 },
+        "integratedLoudnessLufs": { "type": "number" },
+        "truePeakDbtp": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "phonetics": {
+      "type": "object",
+      "description": "Optional metadata for future linguistic and phonetic study. Musical frequency claims must not be used as substitutes for evidence-based phonetics or health claims.",
+      "properties": {
+        "language": { "type": "string", "enum": ["en", "es", "pt"] },
+        "ipa": { "type": "string" },
+        "syllables": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "stress": { "type": "string" },
+        "phonemeTargets": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "accessibility": {
+      "type": "object",
+      "properties": {
+        "userCanDisable": { "type": "boolean" },
+        "essentialInformation": { "type": "boolean" },
+        "visualEquivalent": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target"],
+        "properties": {
+          "type": { "type": "string" },
+          "target": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}
