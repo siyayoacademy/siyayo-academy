@@ -4,21 +4,14 @@
   "title": "SIYAYO Academy Verb Grid Schema",
   "description": "Functional grammar grid for auxiliary, modal and lexical verb roles used to explain sentence construction and detect functional conflicts.",
   "type": "object",
-  "required": ["$schema", "version", "id", "functions", "rules"],
+  "required": ["$schema", "version", "id", "functions", "chains", "rules"],
   "properties": {
     "$schema": { "type": "string", "const": "../schemas/verb-grid.schema.json" },
     "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
     "id": { "type": "string", "const": "verb-grid" },
-    "functions": {
-      "type": "array",
-      "minItems": 1,
-      "items": { "$ref": "#/$defs/function" }
-    },
-    "rules": {
-      "type": "array",
-      "minItems": 1,
-      "items": { "$ref": "#/$defs/rule" }
-    }
+    "functions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/function" } },
+    "chains": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/chain" } },
+    "rules": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/rule" } }
   },
   "$defs": {
     "function": {
@@ -27,12 +20,7 @@
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
         "category": { "type": "string", "enum": ["auxiliary", "modal", "lexical"] },
-        "examples": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "type": "string", "minLength": 1 },
-          "uniqueItems": true
-        },
+        "examples": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
         "purpose": {
           "type": "object",
           "required": ["en", "es", "pt"],
@@ -56,19 +44,22 @@
           "type": "object",
           "required": ["allowsAfter", "blocksBefore"],
           "properties": {
-            "allowsAfter": {
-              "type": "array",
-              "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-              "uniqueItems": true
-            },
-            "blocksBefore": {
-              "type": "array",
-              "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-              "uniqueItems": true
-            }
+            "allowsAfter": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }, "uniqueItems": true },
+            "blocksBefore": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }, "uniqueItems": true }
           },
           "additionalProperties": false
         }
+      },
+      "additionalProperties": false
+    },
+    "chain": {
+      "type": "object",
+      "required": ["id", "sequence", "formRequirements", "example"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "sequence": { "type": "array", "minItems": 2, "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+        "formRequirements": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "example": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false
     },
