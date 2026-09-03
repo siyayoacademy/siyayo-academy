@@ -43,6 +43,12 @@ jobs:
       - name: Run SIYAYO archetype semantic validator
         run: node scripts/validate-archetypes.mjs
 
+      - name: Validate SIYAYO palettes against JSON Schema
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/palette.schema.json -d 'data/palettes/*.json'
+
+      - name: Validate archetype palette references
+        run: node scripts/validate-archetype-palettes.mjs
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
