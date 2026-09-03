@@ -31,6 +31,31 @@ for (const [input, ruleId, responsiblePiece, correction] of cases) {
   if (!result.reason) throw new Error(`${input}: diagnostic reason must not be empty.`);
 }
 
+const compositionalCases = [
+  ['She will had studied.', 'future-carrier-requires-base-next', 'auxiliary-have', 'She will have studied.'],
+  ['She will is studying.', 'future-carrier-requires-base-next', 'auxiliary-be', 'She will be studying.'],
+  ['She will did study.', 'future-carrier-requires-base-next', 'auxiliary-do', 'She will do study.'],
+  ['She will can do go?', 'single-core-modal', 'modal-core', 'She will be able to go.']
+];
+
+for (const [input, ruleId, responsiblePiece, correction] of compositionalCases) {
+  const result = diagnose(input, grid);
+  if (!result.matched) throw new Error(`Expected compositional diagnostic match for: ${input}`);
+  if (result.matchMode !== 'functional-pattern') throw new Error(`${input}: expected functional-pattern match.`);
+  if (result.ruleId !== ruleId) throw new Error(`${input}: expected rule ${ruleId}, got ${result.ruleId}`);
+  if (result.responsiblePiece !== responsiblePiece) {
+    throw new Error(`${input}: expected responsible piece ${responsiblePiece}, got ${result.responsiblePiece}`);
+  }
+  if (result.correction !== correction) {
+    throw new Error(`${input}: expected correction ${correction}, got ${result.correction}`);
+  }
+}
+
+const multi = diagnose('She will can do go?', grid);
+if (!multi.conflicts.includes('single-core-modal') || !multi.conflicts.includes('modal-blocks-do-support')) {
+  throw new Error('Multi-conflict sentence must expose both modal stacking and DO-support conflict signals.');
+}
+
 const unknown = diagnose('She studies every day.', grid);
 if (unknown.matched || unknown.status !== 'no-canonical-diagnostic') {
   throw new Error('Unknown/correct sentence must not invent a diagnostic.');
@@ -41,4 +66,4 @@ if (empty.matched || empty.status !== 'empty-input') {
   throw new Error('Empty input must be handled safely.');
 }
 
-console.log(`Xespirito diagnostics passed: ${cases.length} canonical conflicts + safe fallback behavior.`);
+console.log(`Xespirito diagnostics passed: ${cases.length} canonical conflicts + ${compositionalCases.length} compositional conflicts + safe fallback behavior.`);
