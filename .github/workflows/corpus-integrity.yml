@@ -76,6 +76,11 @@ jobs:
           node --check js/xespirito-evidence-interpreter.js
           node scripts/test-xespirito-evidence-interpreter.js
 
+      - name: Run Green Pass learner profile tests
+        run: |
+          node --check js/green-pass-profile.js
+          node scripts/test-green-pass-profile.js
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
