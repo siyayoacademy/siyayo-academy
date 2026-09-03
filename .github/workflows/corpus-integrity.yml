@@ -109,6 +109,11 @@ jobs:
           node --check js/adaptive-pedagogical-orchestrator.js
           node scripts/test-adaptive-pedagogical-orchestrator.js
 
+      - name: Run adaptive experience attempt loop tests
+        run: |
+          node --check js/adaptive-attempt-loop.js
+          node scripts/test-adaptive-attempt-loop.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
