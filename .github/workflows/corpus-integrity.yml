@@ -114,6 +114,11 @@ jobs:
           node --check js/adaptive-attempt-loop.js
           node scripts/test-adaptive-attempt-loop.js
 
+      - name: Run closed adaptive learning cycle tests
+        run: |
+          node --check js/adaptive-learning-cycle.js
+          node scripts/test-adaptive-learning-cycle.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
