@@ -1,8 +1,10 @@
 (function (root, factory) {
-  const api = factory();
+  const api = factory(
+    typeof module === 'object' && module.exports ? require('./pedagogical-resonance.js') : root.PedagogicalResonance
+  );
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.AdaptiveLearningRouter = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (PedagogicalResonance) {
   const routes = {
     'modal-core': { experienceId: 'shopping-for-dinner', focus: 'debating', questionWord: 'which' },
     'auxiliary-have': { experienceId: 'after-dinner-conversation', focus: 'narrating', questionWord: 'what' },
@@ -28,13 +30,21 @@
     if (recommendation.action !== 'reinforce') {
       return { action: 'continue-assessment', experienceId: context.currentExperience || 'shopping-for-dinner', focus: 'assessment' };
     }
+
     const parsed = parseSkill(recommendation.skill);
+    const fallback = routes[parsed.skill] || routes['verb-function'];
+    const resonance = Array.isArray(context.experiences) && PedagogicalResonance
+      ? PedagogicalResonance.select(context.experiences, parsed.skill)
+      : null;
+
     return {
       action: 'reinforce',
       skill: parsed.skill,
       language: parsed.language || context.language || 'en',
       chapter: parsed.chapter || context.chapter || 'verbs',
-      ...(routes[parsed.skill] || routes['verb-function'])
+      ...fallback,
+      experienceId: resonance?.experienceId || fallback.experienceId,
+      resonance: resonance ? { score: resonance.score, reasons: resonance.reasons } : null
     };
   }
 
