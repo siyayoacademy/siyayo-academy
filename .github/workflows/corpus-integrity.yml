@@ -110,3 +110,6 @@ jobs:
 
       - name: Run 6.5 context-preserving return tests
         run: node scripts/test-context-preserving-return.js
+
+      - name: Run 6.6 repeatable Blue Verb round-trip tests
+        run: node scripts/test-blue-verb-round-trip.js
