@@ -5,19 +5,16 @@ const path = require('path');
 const assert = require('assert/strict');
 
 const ROOT = path.resolve(__dirname, '..');
-const college = JSON.parse(
-  fs.readFileSync(path.join(ROOT, 'data/learning/college-experience-seeds.json'), 'utf8')
-);
-const verbs = JSON.parse(
-  fs.readFileSync(path.join(ROOT, 'data/lexicon/verbs/actions.json'), 'utf8')
-);
-
+const college = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/learning/college-experience-seeds.json'), 'utf8'));
+const verbs = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/lexicon/verbs/actions.json'), 'utf8'));
 const items = college.items || [];
+
 const expectedCycle = [
   ['going-to-college', 'go', 'studying-in-class'],
   ['studying-in-class', 'study', 'reading-class-material'],
   ['reading-class-material', 'read', 'writing-class-notes'],
-  ['writing-class-notes', 'write', 'going-to-college']
+  ['writing-class-notes', 'write', 'talking-with-classmates'],
+  ['talking-with-classmates', 'talk', 'going-to-college']
 ];
 
 for (const [id, entryVerb, nextId] of expectedCycle) {
@@ -25,11 +22,9 @@ for (const [id, entryVerb, nextId] of expectedCycle) {
   assert.ok(experience, `${id} experience is required`);
   assert.equal(experience.entryVerb, entryVerb, `${id} must enter through canonical ${entryVerb}`);
   assert.equal(experience.toroidalNext?.nextExperience, nextId, `${id} must hand off to ${nextId}`);
-
   const verb = verbs.find(item => item.id === entryVerb);
   assert.ok(verb, `${entryVerb} must resolve to the canonical verb corpus`);
   assert.ok(verb.verbFunction?.includes('action'), `${entryVerb} must preserve canonical ACTION semantics`);
-
   for (const language of ['en', 'es', 'pt']) {
     assert.ok(experience.title?.[language], `${id} requires ${language} title`);
     assert.ok(experience.situation?.[language], `${id} requires ${language} situation`);
@@ -52,12 +47,17 @@ for (let step = 0; step < expectedCycle.length; step += 1) {
   assert.ok(experience, `${cursor} must resolve while traversing the College toroid`);
   cursor = experience.toroidalNext.nextExperience;
 }
+assert.deepEqual(visited, expectedCycle.map(([id]) => id), '6.15 College communication traversal order must remain canonical');
+assert.equal(cursor, expectedCycle[0][0], '6.15 College communication ring must return to going-to-college');
 
-assert.deepEqual(visited, expectedCycle.map(([id]) => id), '6.14 College classroom traversal order must remain canonical');
-assert.equal(cursor, expectedCycle[0][0], '6.14 College classroom branch must return to going-to-college');
+const communication = items.find(item => item.id === 'talking-with-classmates');
+assert.ok(communication.links.verbs.includes('listen'), 'communication experience must expose canonical listen');
+assert.ok(communication.links.verbs.includes('speak'), 'communication experience must expose canonical speak');
+assert.ok(communication.links.verbs.includes('talk'), 'communication experience must expose canonical talk');
+for (const verbId of ['talk', 'listen', 'speak']) {
+  const verb = verbs.find(item => item.id === verbId);
+  assert.ok(verb?.verbFunction?.includes('action'), `${verbId} must preserve ACTION semantics in the communication branch`);
+}
 
-assert.ok(items.find(item => item.id === 'reading-class-material')?.links.verbs.includes('write'), 'reading must expose write as a canonical continuation');
-assert.ok(items.find(item => item.id === 'writing-class-notes')?.links.verbs.includes('read'), 'writing must preserve the read relationship for contextual reuse');
-
-console.log('PASS — 6.14 protects the expanded College classroom learning ring.');
-console.log('PASS — go → study → read → write → go preserves canonical ACTION semantics, EN/ES/PT continuity and return to origin.');
+console.log('PASS — 6.15 protects the expanded College communication learning ring.');
+console.log('PASS — go → study → read → write → talk → go preserves ACTION semantics, EN/ES/PT continuity and exposes listen/speak for oral interaction.');
