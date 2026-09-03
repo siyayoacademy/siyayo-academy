@@ -32,14 +32,14 @@ assert.ok(html.includes('id="experienceView"'), 'missing experienceView');
 assert.ok(runtime.includes('button.dataset.mode==="dna"'), 'missing DNA mode branch');
 assert.ok(runtime.includes('document.getElementById("dnaView").hidden=false'), 'DNA branch must reveal dnaView');
 assert.ok(runtime.includes('document.getElementById("experienceView").hidden=true'), 'DNA branch must hide experienceView');
-assert.ok(runtime.includes('document.getElementById("dnaView").hidden=true'), 'EXPERIENCE branch must hide dnaView');
-assert.ok(runtime.includes('document.getElementById("experienceView").hidden=false'), 'EXPERIENCE branch must reveal experienceView');
-assert.ok(runtime.includes('renderExperience()'), 'EXPERIENCE return must render from retained state');
 
-const modeHandlerStart = runtime.indexOf('document.querySelectorAll(".explorer-mode")');
+const modeHandlerStart = runtime.indexOf('document.querySelectorAll(".explorer-mode").forEach(b=>b.onclick=');
 assert.notEqual(modeHandlerStart, -1, 'missing explorer mode handler');
-const modeHandler = runtime.slice(modeHandlerStart, modeHandlerStart + 1200);
-assert.ok(modeHandler.includes('dataset.mode'), 'mode handler must inspect the requested mode');
+const modeHandler = runtime.slice(modeHandlerStart, modeHandlerStart + 900);
+assert.ok(modeHandler.includes('const exp=b.dataset.mode==="experience"'), 'mode handler must derive EXPERIENCE state');
+assert.ok(modeHandler.includes('document.getElementById("dnaView").hidden=exp'), 'EXPERIENCE branch must hide dnaView');
+assert.ok(modeHandler.includes('document.getElementById("experienceView").hidden=!exp'), 'EXPERIENCE branch must reveal experienceView');
+assert.ok(modeHandler.includes('if(exp)renderExperience()'), 'EXPERIENCE return must render from retained state');
 assert.ok(!modeHandler.includes('goToExperience('), 'mode return must not reset the active experience');
 
 console.log('PASS — 6.5 closes EXPERIENCE → VERB DNA → EXPERIENCE.');
