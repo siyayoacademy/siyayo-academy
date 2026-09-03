@@ -81,6 +81,11 @@ jobs:
           node --check js/green-pass-profile.js
           node scripts/test-green-pass-profile.js
 
+      - name: Run Xespirito Green Pass bridge tests
+        run: |
+          node --check js/xespirito-green-pass-bridge.js
+          node scripts/test-xespirito-green-pass-bridge.js
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
