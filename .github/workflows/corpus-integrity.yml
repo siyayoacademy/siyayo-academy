@@ -76,6 +76,11 @@ jobs:
           node --check js/xespirito-evidence-interpreter.js
           node scripts/test-xespirito-evidence-interpreter.js
 
+      - name: Run Xespirito multilingual interference bridge tests
+        run: |
+          node --check js/xespirito-interference-bridge.js
+          node scripts/test-xespirito-interference-bridge.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
