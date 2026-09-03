@@ -15,8 +15,7 @@
   async function diagnose(sentence) {
     const engine = root.XespiritoDiagnostics;
     if (!engine || typeof engine.diagnose !== 'function') throw new Error('Xespirito diagnostic engine is unavailable.');
-    const grid = await loadGrid();
-    return engine.diagnose(sentence, grid);
+    return engine.diagnose(sentence, await loadGrid());
   }
 
   function escapeHtml(value = '') {
@@ -33,11 +32,11 @@
     if (!target) return;
     if (!result.matched) {
       target.className = 'xespirito-result is-neutral';
-      target.innerHTML = `<span>NO CANONICAL CONFLICT</span><p>${escapeHtml(result.input || '—')}</p><small>Xespirito found no matching diagnostic rule in the current Verb Grid.</small>`;
+      target.innerHTML = `<span>FUNCTIONAL PATH CLEAR</span><p>${escapeHtml(result.input || '—')}</p><small>No conflict recognized by the current canonical Verb Grid.</small>`;
       return;
     }
     target.className = 'xespirito-result is-conflict';
-    target.innerHTML = `<span>FUNCTIONAL CONFLICT · ${escapeHtml(result.ruleId)}</span><p class="xespirito-input">${escapeHtml(result.input)}</p><dl><div><dt>PIECE</dt><dd>${escapeHtml(result.responsiblePiece)}</dd></div><div><dt>WHY?</dt><dd>${escapeHtml(result.reason)}</dd></div>${renderConflictSignals(result)}<div class="xespirito-correction"><dt>✓ FIRST REPAIR</dt><dd>${escapeHtml(result.correction)}</dd></div></dl>`;
+    target.innerHTML = `<span>FUNCTIONAL CONFLICT · ${escapeHtml(result.ruleId)}</span><p class="xespirito-input">${escapeHtml(result.input)}</p><dl><div><dt>PIECE</dt><dd>${escapeHtml(result.responsiblePiece)}</dd></div><div><dt>WHY?</dt><dd>${escapeHtml(result.reason)}</dd></div>${renderConflictSignals(result)}<div class="xespirito-correction"><dt>✓ FIRST REPAIR</dt><dd>${escapeHtml(result.correction)}</dd></div></dl><button class="xespirito-apply-repair" type="button" data-repair="${escapeHtml(result.correction)}">APPLY REPAIR → DIAGNOSE AGAIN</button>`;
   }
 
   async function diagnoseFromPanel() {
@@ -55,15 +54,28 @@
     } finally { button.disabled = false; }
   }
 
+  async function applyRepairAndDiagnose(button) {
+    const input = document.getElementById('xespiritoInput');
+    if (!input || !button?.dataset?.repair) return;
+    input.value = button.dataset.repair;
+    input.focus();
+    await diagnoseFromPanel();
+  }
+
   function attachPanel() {
     const button = document.getElementById('xespiritoDiagnose');
     const input = document.getElementById('xespiritoInput');
-    if (!button || !input) return;
+    const result = document.getElementById('xespiritoResult');
+    if (!button || !input || !result) return;
     button.addEventListener('click', diagnoseFromPanel);
     input.addEventListener('keydown', event => { if (event.key === 'Enter') diagnoseFromPanel(); });
+    result.addEventListener('click', event => {
+      const repairButton = event.target.closest?.('.xespirito-apply-repair');
+      if (repairButton) applyRepairAndDiagnose(repairButton);
+    });
   }
 
-  root.SIYAYOXespiritoBridge = { diagnose, loadGrid, renderResult, renderConflictSignals, source: VERB_GRID_URL, archetype: 'xespirito' };
+  root.SIYAYOXespiritoBridge = { diagnose, loadGrid, renderResult, renderConflictSignals, applyRepairAndDiagnose, source: VERB_GRID_URL, archetype: 'xespirito' };
 
   if (typeof document !== 'undefined') {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', attachPanel);
