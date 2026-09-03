@@ -119,3 +119,6 @@ jobs:
 
       - name: Run 6.8 toroidal experience handoff tests
         run: node scripts/test-toroidal-experience-handoff.js
+
+      - name: Run 6.10 second toroidal handoff tests
+        run: node scripts/test-second-toroidal-handoff.js
