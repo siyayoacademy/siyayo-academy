@@ -23,7 +23,7 @@
   "$defs": {
     "function": {
       "type": "object",
-      "required": ["id", "category", "examples", "purpose"],
+      "required": ["id", "category", "examples", "purpose", "position", "compatibility"],
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
         "category": { "type": "string", "enum": ["auxiliary", "modal", "lexical"] },
@@ -40,6 +40,32 @@
             "en": { "type": "string", "minLength": 1 },
             "es": { "type": "string", "minLength": 1 },
             "pt": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "position": {
+          "type": "object",
+          "required": ["declarative", "interrogative"],
+          "properties": {
+            "declarative": { "type": "string", "minLength": 1 },
+            "interrogative": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "compatibility": {
+          "type": "object",
+          "required": ["allowsAfter", "blocksBefore"],
+          "properties": {
+            "allowsAfter": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+              "uniqueItems": true
+            },
+            "blocksBefore": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+              "uniqueItems": true
+            }
           },
           "additionalProperties": false
         }
