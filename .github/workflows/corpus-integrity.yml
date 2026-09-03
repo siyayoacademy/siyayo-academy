@@ -31,6 +31,9 @@ jobs:
       - name: Validate experience seeds against JSON Schema
         run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/experience-seed.schema.json -d data/learning/experience-seeds.json
 
+      - name: Validate College experience seeds against JSON Schema
+        run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/experience-seed.schema.json -d data/learning/college-experience-seeds.json
+
       - name: Validate canonical nouns against JSON Schema
         run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/noun.schema.json -d data/lexicon/nouns/nouns.json
 
@@ -125,3 +128,6 @@ jobs:
 
       - name: Run 6.12 complete toroidal cycle tests
         run: node scripts/test-complete-toroidal-cycle.js
+
+      - name: Run 6.13 College toroidal cycle tests
+        run: node scripts/test-college-toroidal-cycle.js
