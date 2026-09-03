@@ -49,6 +49,9 @@ jobs:
       - name: Validate archetype palette references
         run: node scripts/validate-archetype-palettes.mjs
 
+      - name: Compile SIYAYO sound schema
+        run: npx --yes ajv-cli@5 compile --spec=draft2020 --strict=true -s data/schemas/sound.schema.json
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
