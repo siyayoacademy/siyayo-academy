@@ -1,0 +1,85 @@
+{
+  "id": "xespirito-candidate-v0.1",
+  "type": "archetype",
+  "status": "candidate",
+  "version": "0.1.0",
+  "name": {
+    "en": "Xespirito Candidate Palette",
+    "es": "Paleta Candidata Xespirito",
+    "pt": "Paleta Candidata Xespirito"
+  },
+  "description": {
+    "en": "Experimental palette for the Xespirito archetype, emphasizing functional awareness, diagnosis, clarity and guided sentence repair.",
+    "es": "Paleta experimental para el arquetipo Xespirito, con énfasis en conciencia funcional, diagnóstico, claridad y reparación guiada de oraciones.",
+    "pt": "Paleta experimental para o arquétipo Xespirito, enfatizando consciência funcional, diagnóstico, clareza e reparo guiado de sentenças."
+  },
+  "colors": [
+    {
+      "id": "diagnostic-blue",
+      "hex": "#00AEEF",
+      "role": ["functional-awareness", "diagnosis", "active-analysis"],
+      "name": {
+        "en": "Diagnostic Blue",
+        "es": "Azul Diagnóstico",
+        "pt": "Azul Diagnóstico"
+      }
+    },
+    {
+      "id": "clarity-white",
+      "hex": "#FFFFFF",
+      "role": ["clarity", "readability", "correct-form"],
+      "name": {
+        "en": "Clarity White",
+        "es": "Blanco Claridad",
+        "pt": "Branco Clareza"
+      }
+    },
+    {
+      "id": "guidance-gold",
+      "hex": "#D4AF37",
+      "role": ["guidance", "repair", "validated-relationship"],
+      "name": {
+        "en": "Guidance Gold",
+        "es": "Dorado Guía",
+        "pt": "Dourado Guia"
+      }
+    },
+    {
+      "id": "deep-charcoal",
+      "hex": "#15181C",
+      "role": ["grounding", "contrast", "focus"],
+      "name": {
+        "en": "Deep Charcoal",
+        "es": "Carbón Profundo",
+        "pt": "Carvão Profundo"
+      }
+    },
+    {
+      "id": "attention-amber",
+      "hex": "#C98224",
+      "role": ["functional-conflict", "attention", "warning"],
+      "name": {
+        "en": "Attention Amber",
+        "es": "Ámbar Atención",
+        "pt": "Âmbar Atenção"
+      }
+    }
+  ],
+  "usage": {
+    "recommended": [
+      "Use blue to indicate active functional analysis and diagnosis.",
+      "Use gold to mark guided repair and validated grammatical relationships.",
+      "Use amber selectively to signal functional conflict without visual overload."
+    ],
+    "avoid": [
+      "Do not use this palette to replace established pedagogical word-class colors.",
+      "Do not treat candidate colors as canonical until visual homologation."
+    ]
+  },
+  "relations": [
+    {
+      "type": "palette-for",
+      "target": "xespirito"
+    }
+  ]
+}
