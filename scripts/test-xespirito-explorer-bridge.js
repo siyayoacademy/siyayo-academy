@@ -9,10 +9,7 @@ const engineSource = fs.readFileSync(path.join(ROOT, 'js/xespirito-diagnostics.j
 const bridgeSource = fs.readFileSync(path.join(ROOT, 'js/xespirito-explorer-bridge.js'), 'utf8');
 const grid = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/grammar/verb-grid.json'), 'utf8'));
 
-for (const script of ['js/contextual-choice-resolver.js', 'js/xespirito-diagnostics.js', 'js/xespirito-explorer-bridge.js', 'js/verb-explorer.js']) {
-  assert.ok(html.includes(`<script src="${script}"></script>`), `Verb Explorer must load ${script}`);
-}
-
+for (const script of ['js/contextual-choice-resolver.js', 'js/xespirito-diagnostics.js', 'js/xespirito-explorer-bridge.js', 'js/verb-explorer.js']) assert.ok(html.includes(`<script src="${script}"></script>`), `Verb Explorer must load ${script}`);
 const order = ['js/contextual-choice-resolver.js', 'js/xespirito-diagnostics.js', 'js/xespirito-explorer-bridge.js', 'js/verb-explorer.js'].map(script => html.indexOf(`<script src="${script}"></script>`));
 assert.deepEqual([...order].sort((a, b) => a - b), order, 'Xespirito scripts must load before verb-explorer.js');
 
@@ -24,6 +21,7 @@ vm.runInContext(bridgeSource, context);
 
 assert.equal(context.SIYAYOXespiritoBridge.source, 'data/grammar/verb-grid.json');
 assert.equal(context.SIYAYOXespiritoBridge.archetype, 'xespirito');
+assert.equal(typeof context.SIYAYOXespiritoBridge.applyRepairAndDiagnose, 'function');
 
 (async () => {
   const result = await context.SIYAYOXespiritoBridge.diagnose('She will has studied.');
@@ -39,14 +37,18 @@ assert.equal(context.SIYAYOXespiritoBridge.archetype, 'xespirito');
   assert.match(multiHtml, /CONFLICT SIGNALS · 2/);
   assert.match(multiHtml, /1\. single-core-modal/);
   assert.match(multiHtml, /2\. modal-blocks-do-support/);
-  assert.match(multiHtml, /highest-priority conflict first/);
 
-  const singleHtml = context.SIYAYOXespiritoBridge.renderConflictSignals(result);
-  assert.equal(singleHtml, '', 'Single-conflict diagnostics must not add visual noise.');
+  const target = { className: '', innerHTML: '' };
+  context.SIYAYOXespiritoBridge.renderResult(multi, target);
+  assert.match(target.innerHTML, /FIRST REPAIR/);
+  assert.match(target.innerHTML, /APPLY REPAIR → DIAGNOSE AGAIN/);
+  assert.match(target.innerHTML, /data-repair="She will be able to go\./);
 
-  const unknown = await context.SIYAYOXespiritoBridge.diagnose('She studies every day.');
-  assert.equal(unknown.matched, false);
-  assert.equal(unknown.status, 'no-canonical-diagnostic');
+  const clean = await context.SIYAYOXespiritoBridge.diagnose('She might have been studying.');
+  assert.equal(clean.matched, false);
+  context.SIYAYOXespiritoBridge.renderResult(clean, target);
+  assert.match(target.innerHTML, /FUNCTIONAL PATH CLEAR/);
+  assert.doesNotMatch(target.innerHTML, /APPLY REPAIR/);
 
-  console.log('Xespirito Verb Explorer bridge tests passed, including multi-conflict rendering.');
+  console.log('Xespirito bridge tests passed, including iterative repair-cycle controls.');
 })().catch(error => { console.error(error); process.exit(1); });
