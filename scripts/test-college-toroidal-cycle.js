@@ -15,7 +15,9 @@ const verbs = JSON.parse(
 const items = college.items || [];
 const expectedCycle = [
   ['going-to-college', 'go', 'studying-in-class'],
-  ['studying-in-class', 'study', 'going-to-college']
+  ['studying-in-class', 'study', 'reading-class-material'],
+  ['reading-class-material', 'read', 'writing-class-notes'],
+  ['writing-class-notes', 'write', 'going-to-college']
 ];
 
 for (const [id, entryVerb, nextId] of expectedCycle) {
@@ -41,7 +43,7 @@ for (const verbId of linkedVerbIds) {
   assert.ok(verbs.some(verb => verb.id === verbId), `${verbId} must resolve from College links to the canonical verb corpus`);
 }
 
-let cursor = 'going-to-college';
+let cursor = expectedCycle[0][0];
 const visited = [];
 for (let step = 0; step < expectedCycle.length; step += 1) {
   assert.ok(!visited.includes(cursor), `College cycle repeated ${cursor} before completing the expected ring`);
@@ -51,8 +53,11 @@ for (let step = 0; step < expectedCycle.length; step += 1) {
   cursor = experience.toroidalNext.nextExperience;
 }
 
-assert.deepEqual(visited, expectedCycle.map(([id]) => id), 'College toroidal traversal order must remain canonical');
-assert.equal(cursor, 'going-to-college', 'College toroid must return to going-to-college');
+assert.deepEqual(visited, expectedCycle.map(([id]) => id), '6.14 College classroom traversal order must remain canonical');
+assert.equal(cursor, expectedCycle[0][0], '6.14 College classroom branch must return to going-to-college');
 
-console.log('PASS — 6.13 protects the College toroidal cycle.');
-console.log('PASS — go → study preserves canonical verbs, ACTION semantics, linked verb resolution, EN/ES/PT continuity and return to origin.');
+assert.ok(items.find(item => item.id === 'reading-class-material')?.links.verbs.includes('write'), 'reading must expose write as a canonical continuation');
+assert.ok(items.find(item => item.id === 'writing-class-notes')?.links.verbs.includes('read'), 'writing must preserve the read relationship for contextual reuse');
+
+console.log('PASS — 6.14 protects the expanded College classroom learning ring.');
+console.log('PASS — go → study → read → write → go preserves canonical ACTION semantics, EN/ES/PT continuity and return to origin.');
