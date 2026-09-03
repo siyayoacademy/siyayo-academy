@@ -116,3 +116,6 @@ jobs:
 
       - name: Run 6.7 ACTION semantic bridge tests
         run: node scripts/test-action-bridge.js
+
+      - name: Run 6.8 toroidal experience handoff tests
+        run: node scripts/test-toroidal-experience-handoff.js
