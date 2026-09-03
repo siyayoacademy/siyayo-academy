@@ -119,6 +119,11 @@ jobs:
           node --check js/adaptive-learning-cycle.js
           node scripts/test-adaptive-learning-cycle.js
 
+      - name: Run Green Pass advance experience selection tests
+        run: |
+          node --check js/adaptive-advance-selector.js
+          node scripts/test-adaptive-advance-selector.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
