@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verb-grid.schema.json",
+  "title": "SIYAYO Academy Verb Grid Schema",
+  "description": "Functional grammar grid for auxiliary, modal and lexical verb roles used to explain sentence construction and detect functional conflicts.",
+  "type": "object",
+  "required": ["$schema", "version", "id", "functions", "rules"],
+  "properties": {
+    "$schema": { "type": "string", "const": "../schemas/verb-grid.schema.json" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "id": { "type": "string", "const": "verb-grid" },
+    "functions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/function" }
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/rule" }
+    }
+  },
+  "$defs": {
+    "function": {
+      "type": "object",
+      "required": ["id", "category", "examples", "purpose"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "category": { "type": "string", "enum": ["auxiliary", "modal", "lexical"] },
+        "examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "purpose": {
+          "type": "object",
+          "required": ["en", "es", "pt"],
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "es": { "type": "string", "minLength": 1 },
+            "pt": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "rule": {
+      "type": "object",
+      "required": ["id", "pattern", "diagnosis", "archetype"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "pattern": { "type": "string", "minLength": 1 },
+        "diagnosis": { "type": "string", "minLength": 1 },
+        "archetype": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "example": {
+          "type": "object",
+          "required": ["input", "output"],
+          "properties": {
+            "input": { "type": "string", "minLength": 1 },
+            "output": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
