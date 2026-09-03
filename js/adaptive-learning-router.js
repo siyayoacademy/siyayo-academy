@@ -34,8 +34,9 @@
     const parsed = parseSkill(recommendation.skill);
     const fallback = routes[parsed.skill] || routes['verb-function'];
     const resonance = Array.isArray(context.experiences) && PedagogicalResonance
-      ? PedagogicalResonance.select(context.experiences, parsed.skill)
+      ? PedagogicalResonance.select(context.experiences, parsed.skill, { minimumScore: context.minimumResonanceScore })
       : null;
+    const matchedResonance = resonance?.status === 'matched';
 
     return {
       action: 'reinforce',
@@ -43,8 +44,15 @@
       language: parsed.language || context.language || 'en',
       chapter: parsed.chapter || context.chapter || 'verbs',
       ...fallback,
-      experienceId: resonance?.experienceId || fallback.experienceId,
-      resonance: resonance ? { score: resonance.score, reasons: resonance.reasons } : null
+      experienceId: matchedResonance ? resonance.experienceId : fallback.experienceId,
+      resonance: resonance ? {
+        status: resonance.status,
+        score: resonance.score ?? resonance.bestCandidate?.score ?? 0,
+        evidenceStrength: resonance.evidenceStrength || resonance.bestCandidate?.evidenceStrength || 'none',
+        matched: resonance.matched || resonance.bestCandidate?.matched || null,
+        contributions: resonance.contributions || resonance.bestCandidate?.contributions || null,
+        minimumScore: resonance.minimumScore ?? context.minimumResonanceScore ?? 1
+      } : null
     };
   }
 
