@@ -1,139 +1,65 @@
 {
   "$schema": "../schemas/verb-grid.schema.json",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "id": "verb-grid",
   "functions": [
     {
       "id": "auxiliary-do",
       "category": "auxiliary",
       "examples": ["do", "does", "did"],
-      "purpose": {
-        "en": "Supports simple-tense questions, negatives and emphasis when no other auxiliary or modal is carrying that function.",
-        "es": "Apoya preguntas, negaciones y énfasis en tiempos simples cuando ningún otro auxiliar o modal cumple esa función.",
-        "pt": "Dá suporte a perguntas, negativas e ênfase em tempos simples quando nenhum outro auxiliar ou modal cumpre essa função."
-      },
-      "position": {
-        "declarative": "subject + DO + lexical-verb, chiefly for emphasis",
-        "interrogative": "question-word? + DO + subject + lexical-verb"
-      },
-      "compatibility": {
-        "allowsAfter": ["lexical-verb"],
-        "blocksBefore": ["modal-core", "auxiliary-be", "auxiliary-have"]
-      }
+      "purpose": { "en": "Supports simple-tense questions, negatives and emphasis when no other auxiliary or modal is carrying that function.", "es": "Apoya preguntas, negaciones y énfasis en tiempos simples cuando ningún otro auxiliar o modal cumple esa función.", "pt": "Dá suporte a perguntas, negativas e ênfase em tempos simples quando nenhum outro auxiliar ou modal cumpre essa função." },
+      "position": { "declarative": "subject + DO + lexical-verb, chiefly for emphasis", "interrogative": "question-word? + DO + subject + lexical-verb" },
+      "compatibility": { "allowsAfter": ["lexical-verb"], "blocksBefore": ["modal-core", "auxiliary-be", "auxiliary-have"] }
     },
     {
       "id": "auxiliary-be",
       "category": "auxiliary",
       "examples": ["am", "is", "are", "was", "were", "be", "been", "being"],
-      "purpose": {
-        "en": "Builds progressive and passive constructions and can itself invert with the subject in questions.",
-        "es": "Construye estructuras progresivas y pasivas y puede invertir directamente con el sujeto en preguntas.",
-        "pt": "Constrói estruturas progressivas e passivas e pode inverter diretamente com o sujeito em perguntas."
-      },
-      "position": {
-        "declarative": "subject + BE + complement or participle",
-        "interrogative": "question-word? + BE + subject + complement or participle"
-      },
-      "compatibility": {
-        "allowsAfter": ["lexical-verb"],
-        "blocksBefore": ["auxiliary-do"]
-      }
+      "purpose": { "en": "Builds progressive and passive constructions and can itself invert with the subject in questions.", "es": "Construye estructuras progresivas y pasivas y puede invertir directamente con el sujeto en preguntas.", "pt": "Constrói estruturas progressivas e passivas e pode inverter diretamente com o sujeito em perguntas." },
+      "position": { "declarative": "subject + BE + complement or participle", "interrogative": "question-word? + BE + subject + complement or participle" },
+      "compatibility": { "allowsAfter": ["lexical-verb"], "blocksBefore": ["auxiliary-do"] }
     },
     {
       "id": "auxiliary-have",
       "category": "auxiliary",
       "examples": ["have", "has", "had"],
-      "purpose": {
-        "en": "Builds perfect constructions and carries auxiliary behavior when functioning as the perfect auxiliary.",
-        "es": "Construye estructuras perfectas y se comporta como auxiliar cuando cumple la función de auxiliar perfecto.",
-        "pt": "Constrói estruturas perfeitas e se comporta como auxiliar quando cumpre a função de auxiliar do perfeito."
-      },
-      "position": {
-        "declarative": "subject + HAVE + past-participle",
-        "interrogative": "question-word? + HAVE + subject + past-participle"
-      },
-      "compatibility": {
-        "allowsAfter": ["auxiliary-be", "lexical-verb"],
-        "blocksBefore": ["auxiliary-do"]
-      }
+      "purpose": { "en": "Builds perfect constructions and carries auxiliary behavior when functioning as the perfect auxiliary.", "es": "Construye estructuras perfectas y se comporta como auxiliar cuando cumple la función de auxiliar perfecto.", "pt": "Constrói estruturas perfeitas e se comporta como auxiliar quando cumpre a função de auxiliar do perfeito." },
+      "position": { "declarative": "subject + HAVE + past-participle", "interrogative": "question-word? + HAVE + subject + past-participle" },
+      "compatibility": { "allowsAfter": ["auxiliary-be", "lexical-verb"], "blocksBefore": ["auxiliary-do"] }
     },
     {
       "id": "modal-core",
       "category": "modal",
       "examples": ["can", "could", "may", "might", "must", "shall", "should", "will", "would"],
-      "purpose": {
-        "en": "Expresses modality such as ability, possibility, permission, obligation, prediction or willingness and directly carries interrogative and negative auxiliary behavior.",
-        "es": "Expresa modalidad como capacidad, posibilidad, permiso, obligación, predicción o voluntad y asume directamente el comportamiento auxiliar interrogativo y negativo.",
-        "pt": "Expressa modalidade como capacidade, possibilidade, permissão, obrigação, previsão ou vontade e assume diretamente o comportamento auxiliar interrogativo e negativo."
-      },
-      "position": {
-        "declarative": "subject + MODAL + base-verb",
-        "interrogative": "question-word? + MODAL + subject + base-verb"
-      },
-      "compatibility": {
-        "allowsAfter": ["auxiliary-have", "auxiliary-be", "lexical-verb"],
-        "blocksBefore": ["auxiliary-do", "modal-core"]
-      }
+      "purpose": { "en": "Expresses modality such as ability, possibility, permission, obligation, prediction or willingness and directly carries interrogative and negative auxiliary behavior.", "es": "Expresa modalidad como capacidad, posibilidad, permiso, obligación, predicción o voluntad y asume directamente el comportamiento auxiliar interrogativo y negativo.", "pt": "Expressa modalidade como capacidade, possibilidade, permissão, obrigação, previsão ou vontade e assume diretamente o comportamento auxiliar interrogativo e negativo." },
+      "position": { "declarative": "subject + MODAL + base-verb", "interrogative": "question-word? + MODAL + subject + base-verb" },
+      "compatibility": { "allowsAfter": ["auxiliary-have", "auxiliary-be", "lexical-verb"], "blocksBefore": ["auxiliary-do", "modal-core"] }
     },
     {
       "id": "lexical-verb",
       "category": "lexical",
       "examples": ["go", "work", "study", "choose"],
-      "purpose": {
-        "en": "Carries the central lexical meaning of the action, state or event.",
-        "es": "Lleva el significado léxico central de la acción, estado o evento.",
-        "pt": "Carrega o significado lexical central da ação, estado ou evento."
-      },
-      "position": {
-        "declarative": "after the subject or after the auxiliary chain",
-        "interrogative": "after the subject when an auxiliary or modal has moved before the subject"
-      },
-      "compatibility": {
-        "allowsAfter": [],
-        "blocksBefore": []
-      }
+      "purpose": { "en": "Carries the central lexical meaning of the action, state or event.", "es": "Lleva el significado léxico central de la acción, estado o evento.", "pt": "Carrega o significado lexical central da ação, estado ou evento." },
+      "position": { "declarative": "after the subject or after the auxiliary chain", "interrogative": "after the subject when an auxiliary or modal has moved before the subject" },
+      "compatibility": { "allowsAfter": [], "blocksBefore": [] }
     }
   ],
+  "chains": [
+    { "id": "modal-lexical", "sequence": ["modal-core", "lexical-verb"], "formRequirements": ["MODAL requires the following lexical verb in base form."], "example": "She might study." },
+    { "id": "perfect-lexical", "sequence": ["auxiliary-have", "lexical-verb"], "formRequirements": ["Perfect HAVE requires the following lexical verb in past-participle form."], "example": "She has studied." },
+    { "id": "progressive-lexical", "sequence": ["auxiliary-be", "lexical-verb"], "formRequirements": ["Progressive BE requires the following lexical verb in present-participle -ing form."], "example": "She is studying." },
+    { "id": "modal-perfect", "sequence": ["modal-core", "auxiliary-have", "lexical-verb"], "formRequirements": ["MODAL is followed by base HAVE.", "Perfect HAVE requires the lexical verb in past-participle form."], "example": "She might have studied." },
+    { "id": "perfect-progressive", "sequence": ["auxiliary-have", "auxiliary-be", "lexical-verb"], "formRequirements": ["Perfect HAVE requires BE in past-participle form: been.", "Progressive BE requires the lexical verb in present-participle -ing form."], "example": "She has been studying." },
+    { "id": "modal-perfect-progressive", "sequence": ["modal-core", "auxiliary-have", "auxiliary-be", "lexical-verb"], "formRequirements": ["MODAL requires base HAVE.", "Perfect HAVE requires BE as been.", "Progressive BE requires the lexical verb in present-participle -ing form."], "example": "She might have been studying." }
+  ],
   "rules": [
-    {
-      "id": "modal-blocks-do-support",
-      "pattern": "question-word + DO + subject + MODAL + lexical-verb",
-      "diagnosis": "A modal already carries the auxiliary function in this interrogative structure, so DO support must not be added.",
-      "archetype": "xespirito",
-      "example": {
-        "input": "Where do you can go?",
-        "output": "Where can you go?"
-      }
-    },
-    {
-      "id": "be-blocks-do-support",
-      "pattern": "DO + subject + BE + complement",
-      "diagnosis": "When BE is the finite verb or auxiliary, it forms the question by inversion and does not require DO support.",
-      "archetype": "xespirito",
-      "example": {
-        "input": "Do you are ready?",
-        "output": "Are you ready?"
-      }
-    },
-    {
-      "id": "modal-requires-base-form",
-      "pattern": "subject + MODAL + inflected-lexical-verb",
-      "diagnosis": "A core modal is followed by the base form of the next verb, not a third-person or past inflection.",
-      "archetype": "xespirito",
-      "example": {
-        "input": "She can goes.",
-        "output": "She can go."
-      }
-    },
-    {
-      "id": "single-core-modal",
-      "pattern": "subject + MODAL + MODAL + lexical-verb",
-      "diagnosis": "Standard English does not normally stack two core modal auxiliaries in the same modal slot.",
-      "archetype": "xespirito",
-      "example": {
-        "input": "She will can go.",
-        "output": "She will be able to go."
-      }
-    }
+    { "id": "modal-blocks-do-support", "pattern": "question-word + DO + subject + MODAL + lexical-verb", "diagnosis": "A modal already carries the auxiliary function in this interrogative structure, so DO support must not be added.", "archetype": "xespirito", "example": { "input": "Where do you can go?", "output": "Where can you go?" } },
+    { "id": "be-blocks-do-support", "pattern": "DO + subject + BE + complement", "diagnosis": "When BE is the finite verb or auxiliary, it forms the question by inversion and does not require DO support.", "archetype": "xespirito", "example": { "input": "Do you are ready?", "output": "Are you ready?" } },
+    { "id": "modal-requires-base-form", "pattern": "subject + MODAL + inflected-lexical-verb", "diagnosis": "A core modal is followed by the base form of the next verb, not a third-person or past inflection.", "archetype": "xespirito", "example": { "input": "She can goes.", "output": "She can go." } },
+    { "id": "single-core-modal", "pattern": "subject + MODAL + MODAL + lexical-verb", "diagnosis": "Standard English does not normally stack two core modal auxiliaries in the same modal slot.", "archetype": "xespirito", "example": { "input": "She will can go.", "output": "She will be able to go." } },
+    { "id": "perfect-requires-past-participle", "pattern": "HAVE + non-past-participle lexical verb", "diagnosis": "Perfect HAVE selects a past participle, so the following lexical verb must use its past-participle form.", "archetype": "xespirito", "example": { "input": "She has study.", "output": "She has studied." } },
+    { "id": "progressive-requires-ing", "pattern": "progressive BE + non-ing lexical verb", "diagnosis": "Progressive BE selects a present participle, so the following lexical verb must use its -ing form.", "archetype": "xespirito", "example": { "input": "She is study.", "output": "She is studying." } },
+    { "id": "perfect-progressive-requires-been", "pattern": "perfect HAVE + BE not in past-participle form + lexical verb", "diagnosis": "Inside a perfect-progressive chain, HAVE selects the past participle BEEN before the progressive -ing lexical verb.", "archetype": "xespirito", "example": { "input": "She has be studying.", "output": "She has been studying." } },
+    { "id": "auxiliary-chain-order", "pattern": "auxiliary chain outside MODAL + HAVE + BE + lexical-verb order", "diagnosis": "Auxiliary functions occupy an ordered chain. For modal perfect progressive constructions, the functional order is MODAL + HAVE + BEEN + lexical verb in -ing form.", "archetype": "xespirito", "example": { "input": "She has might been studying.", "output": "She might have been studying." } }
   ]
 }
