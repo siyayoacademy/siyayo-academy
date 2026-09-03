@@ -34,7 +34,6 @@
     const lang = normalize(language);
     for (const entry of falseFriends) {
       for (const [candidateLanguage, form] of Object.entries(entry.forms)) {
-        if (candidateLanguage === 'en') continue;
         if (token === normalize(form)) {
           return {
             status: candidateLanguage === lang ? 'canonical' : 'cross-language-transfer',
