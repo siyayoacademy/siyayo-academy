@@ -63,6 +63,32 @@
           "type": "array",
           "items": { "type": "string" },
           "uniqueItems": true
+        },
+        "coreQuestion": {
+          "type": "object",
+          "required": ["en", "es", "pt"],
+          "properties": {
+            "en": { "type": "string", "minLength": 1 },
+            "es": { "type": "string", "minLength": 1 },
+            "pt": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "firstCase": {
+          "type": "object",
+          "required": ["input", "output", "diagnosis", "focus"],
+          "properties": {
+            "input": { "type": "string", "minLength": 1 },
+            "output": { "type": "string", "minLength": 1 },
+            "diagnosis": { "type": "string", "minLength": 1 },
+            "focus": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "minLength": 1 },
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
