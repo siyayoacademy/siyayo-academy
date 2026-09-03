@@ -89,6 +89,11 @@ jobs:
           node --check js/xespirito-interference-evidence-gate.js
           node scripts/test-xespirito-interference-evidence-gate.js
 
+      - name: Run adaptive non-punitive evidence profile tests
+        run: |
+          node --check js/adaptive-evidence-profile.js
+          node scripts/test-adaptive-evidence-profile.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
