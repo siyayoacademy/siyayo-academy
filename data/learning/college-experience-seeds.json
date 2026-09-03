@@ -1,0 +1,232 @@
+{
+  "$schema": "../schemas/experience-seed.schema.json",
+  "version": "0.2.0",
+  "items": [
+    {
+      "id": "going-to-college",
+      "title": {
+        "en": "Going to College",
+        "es": "Yendo a la universidad",
+        "pt": "Indo para a faculdade"
+      },
+      "entryVerb": "go",
+      "situation": {
+        "en": "We are going to college for a day of learning.",
+        "es": "Vamos a la universidad para un día de aprendizaje.",
+        "pt": "Estamos indo para a faculdade para um dia de aprendizado."
+      },
+      "circumstances": {
+        "time": "morning",
+        "place": "college-campus",
+        "weather": "daytime",
+        "company": "classmates",
+        "purpose": "study-and-learn"
+      },
+      "links": {
+        "verbs": ["go", "study", "read", "write", "listen", "speak", "talk"],
+        "conversationSeeds": [],
+        "vocabulary": [],
+        "positiveAdjectives": []
+      },
+      "thinkingMind": [
+        {
+          "intention": "place",
+          "questionWord": "where",
+          "question": {
+            "en": "Where are you going?",
+            "es": "¿Adónde vas?",
+            "pt": "Para onde você está indo?"
+          }
+        },
+        {
+          "intention": "thing-or-action",
+          "questionWord": "what",
+          "question": {
+            "en": "What are you going to study today?",
+            "es": "¿Qué vas a estudiar hoy?",
+            "pt": "O que você vai estudar hoje?"
+          }
+        },
+        {
+          "intention": "person",
+          "questionWord": "who",
+          "question": {
+            "en": "Who are you going to study with?",
+            "es": "¿Con quién vas a estudiar?",
+            "pt": "Com quem você vai estudar?"
+          }
+        },
+        {
+          "intention": "reason",
+          "questionWord": "why",
+          "question": {
+            "en": "Why are you going to college?",
+            "es": "¿Por qué vas a la universidad?",
+            "pt": "Por que você está indo para a faculdade?"
+          }
+        }
+      ],
+      "perspectives": {
+        "describing": {
+          "line": "red",
+          "examples": {
+            "en": ["The campus is busy this morning."],
+            "es": ["El campus está concurrido esta mañana."],
+            "pt": ["O campus está movimentado nesta manhã."]
+          }
+        },
+        "narrating": {
+          "line": "yellow",
+          "examples": {
+            "en": ["We went to college and entered the classroom."],
+            "es": ["Fuimos a la universidad y entramos al aula."],
+            "pt": ["Fomos para a faculdade e entramos na sala de aula."]
+          }
+        },
+        "debating": {
+          "line": "green",
+          "examples": {
+            "en": ["Should we study first or talk about today's project?"],
+            "es": ["¿Estudiamos primero o hablamos sobre el proyecto de hoy?"],
+            "pt": ["Devemos estudar primeiro ou conversar sobre o projeto de hoje?"]
+          }
+        },
+        "concluding": {
+          "line": "blue",
+          "examples": {
+            "en": ["Great. We are ready to start learning."],
+            "es": ["Muy bien. Estamos listos para empezar a aprender."],
+            "pt": ["Ótimo. Estamos prontos para começar a aprender."]
+          }
+        }
+      },
+      "toroidalNext": {
+        "prompt": {
+          "en": "What happens when we arrive in class?",
+          "es": "¿Qué sucede cuando llegamos a clase?",
+          "pt": "O que acontece quando chegamos à aula?"
+        },
+        "answer": {
+          "en": "We begin studying together.",
+          "es": "Empezamos a estudiar juntos.",
+          "pt": "Começamos a estudar juntos."
+        },
+        "nextExperience": "studying-in-class"
+      },
+      "tags": ["college", "education", "study", "questions", "perspective", "toroidal"]
+    },
+    {
+      "id": "studying-in-class",
+      "title": {
+        "en": "Studying in Class",
+        "es": "Estudiando en clase",
+        "pt": "Estudando em sala de aula"
+      },
+      "entryVerb": "study",
+      "situation": {
+        "en": "We are in class studying and participating together.",
+        "es": "Estamos en clase estudiando y participando juntos.",
+        "pt": "Estamos em sala de aula estudando e participando juntos."
+      },
+      "circumstances": {
+        "time": "morning",
+        "place": "college-classroom",
+        "weather": "indoors",
+        "company": "classmates-and-teacher",
+        "purpose": "study-and-communicate"
+      },
+      "links": {
+        "verbs": ["study", "read", "write", "listen", "speak", "talk"],
+        "conversationSeeds": [],
+        "vocabulary": [],
+        "positiveAdjectives": []
+      },
+      "thinkingMind": [
+        {
+          "intention": "thing-or-action",
+          "questionWord": "what",
+          "question": {
+            "en": "What are we studying?",
+            "es": "¿Qué estamos estudiando?",
+            "pt": "O que estamos estudando?"
+          }
+        },
+        {
+          "intention": "manner",
+          "questionWord": "how",
+          "question": {
+            "en": "How can we understand this lesson better?",
+            "es": "¿Cómo podemos entender mejor esta lección?",
+            "pt": "Como podemos entender melhor esta aula?"
+          }
+        },
+        {
+          "intention": "person",
+          "questionWord": "who",
+          "question": {
+            "en": "Who would like to speak first?",
+            "es": "¿Quién quiere hablar primero?",
+            "pt": "Quem gostaria de falar primeiro?"
+          }
+        },
+        {
+          "intention": "reason",
+          "questionWord": "why",
+          "question": {
+            "en": "Why is this lesson important?",
+            "es": "¿Por qué es importante esta lección?",
+            "pt": "Por que esta aula é importante?"
+          }
+        }
+      ],
+      "perspectives": {
+        "describing": {
+          "line": "red",
+          "examples": {
+            "en": ["The lesson is interesting."],
+            "es": ["La lección es interesante."],
+            "pt": ["A aula é interessante."]
+          }
+        },
+        "narrating": {
+          "line": "yellow",
+          "examples": {
+            "en": ["We arrived, listened to the teacher and started studying."],
+            "es": ["Llegamos, escuchamos al profesor y empezamos a estudiar."],
+            "pt": ["Chegamos, escutamos o professor e começamos a estudar."]
+          }
+        },
+        "debating": {
+          "line": "green",
+          "examples": {
+            "en": ["Should we read the text or discuss the question first?"],
+            "es": ["¿Leemos el texto o discutimos primero la pregunta?"],
+            "pt": ["Devemos ler o texto ou discutir primeiro a pergunta?"]
+          }
+        },
+        "concluding": {
+          "line": "blue",
+          "examples": {
+            "en": ["Excellent. We learned something new together."],
+            "es": ["Excelente. Aprendimos algo nuevo juntos."],
+            "pt": ["Excelente. Aprendemos algo novo juntos."]
+          }
+        }
+      },
+      "toroidalNext": {
+        "prompt": {
+          "en": "Where do we go after this class?",
+          "es": "¿Adónde vamos después de esta clase?",
+          "pt": "Para onde vamos depois desta aula?"
+        },
+        "answer": {
+          "en": "We continue to the next college experience.",
+          "es": "Continuamos hacia la próxima experiencia universitaria.",
+          "pt": "Continuamos para a próxima experiência na faculdade."
+        },
+        "nextExperience": "going-to-college"
+      },
+      "tags": ["college", "classroom", "education", "study", "communication", "questions", "perspective", "toroidal"]
+    }
+  ]
+}
