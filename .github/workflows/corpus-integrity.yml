@@ -104,6 +104,11 @@ jobs:
           node --check js/interference-adaptive-bridge.js
           node scripts/test-interference-adaptive-bridge.js
 
+      - name: Run adaptive pedagogical orchestration tests
+        run: |
+          node --check js/adaptive-pedagogical-orchestrator.js
+          node scripts/test-adaptive-pedagogical-orchestrator.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
