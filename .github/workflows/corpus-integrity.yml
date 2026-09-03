@@ -104,6 +104,9 @@ jobs:
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
+      - name: Run Nice Party accessory and social identity tests
+        run: node scripts/test-nice-party-accessories.js
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
