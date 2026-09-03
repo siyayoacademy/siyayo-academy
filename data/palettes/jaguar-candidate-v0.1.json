@@ -1,0 +1,85 @@
+{
+  "id": "jaguar-candidate-v0.1",
+  "type": "archetype",
+  "status": "candidate",
+  "version": "0.1.0",
+  "name": {
+    "en": "Jaguar Candidate Palette",
+    "es": "Paleta Candidata Jaguar",
+    "pt": "Paleta Candidata Jaguar"
+  },
+  "description": {
+    "en": "Experimental visual palette for the Jaguar archetype, emphasizing precision, movement, focus and validated progression.",
+    "es": "Paleta visual experimental para el arquetipo Jaguar, con énfasis en precisión, movimiento, enfoque y progresión validada.",
+    "pt": "Paleta visual experimental para o arquétipo Jaguar, enfatizando precisão, movimento, foco e progressão validada."
+  },
+  "colors": [
+    {
+      "id": "jaguar-gold",
+      "hex": "#D4AF37",
+      "role": ["guidance", "validated-progress", "highlight"],
+      "name": {
+        "en": "Jaguar Gold",
+        "es": "Dorado Jaguar",
+        "pt": "Dourado Jaguar"
+      }
+    },
+    {
+      "id": "deep-black",
+      "hex": "#0B0B0B",
+      "role": ["grounding", "contrast", "depth"],
+      "name": {
+        "en": "Deep Black",
+        "es": "Negro Profundo",
+        "pt": "Preto Profundo"
+      }
+    },
+    {
+      "id": "warm-amber",
+      "hex": "#C98224",
+      "role": ["movement", "energy", "attention"],
+      "name": {
+        "en": "Warm Amber",
+        "es": "Ámbar Cálido",
+        "pt": "Âmbar Quente"
+      }
+    },
+    {
+      "id": "forest-shadow",
+      "hex": "#26352A",
+      "role": ["exploration", "environment", "balance"],
+      "name": {
+        "en": "Forest Shadow",
+        "es": "Sombra del Bosque",
+        "pt": "Sombra da Floresta"
+      }
+    },
+    {
+      "id": "clarity-white",
+      "hex": "#FFFFFF",
+      "role": ["clarity", "readability", "signal"],
+      "name": {
+        "en": "Clarity White",
+        "es": "Blanco Claridad",
+        "pt": "Branco Clareza"
+      }
+    }
+  ],
+  "usage": {
+    "recommended": [
+      "Use gold for validated progress, guidance and controlled highlights.",
+      "Use dark tones to preserve visual focus and contrast.",
+      "Use amber selectively for movement and active states."
+    ],
+    "avoid": [
+      "Do not use this palette to redefine pedagogical word-class colors.",
+      "Do not treat candidate colors as canonical until visual homologation."
+    ]
+  },
+  "relations": [
+    {
+      "type": "palette-for",
+      "target": "jaguar"
+    }
+  ]
+}
