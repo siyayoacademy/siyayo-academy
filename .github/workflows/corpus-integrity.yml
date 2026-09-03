@@ -66,6 +66,11 @@ jobs:
           node --check js/xespirito-diagnostics.js
           node scripts/test-xespirito-diagnostics.js
 
+      - name: Run Xespirito Verb Explorer bridge tests
+        run: |
+          node --check js/xespirito-explorer-bridge.js
+          node scripts/test-xespirito-explorer-bridge.js
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
