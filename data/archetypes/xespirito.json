@@ -1,0 +1,67 @@
+{
+  "id": "xespirito",
+  "name": {
+    "en": "Xespirito",
+    "es": "Xespirito",
+    "pt": "Xespirito"
+  },
+  "status": "candidate",
+  "role": [
+    "functional-awareness",
+    "grammar-diagnosis",
+    "sentence-repair"
+  ],
+  "meaning": {
+    "en": "Archetype of functional awareness that helps learners recognize what each word is doing in a sentence, especially auxiliary and modal verbs.",
+    "es": "Arquetipo de conciencia funcional que ayuda al alumno a reconocer qué función cumple cada palabra en una oración, especialmente los verbos auxiliares y modales.",
+    "pt": "Arquétipo de consciência funcional que ajuda o aluno a reconhecer o que cada palavra está fazendo na sentença, especialmente os verbos auxiliares e modais."
+  },
+  "visual": {
+    "canonicalImage": false,
+    "paletteId": "xespirito-candidate-v0.1"
+  },
+  "pedagogy": {
+    "functions": [
+      "detect-functional-conflict",
+      "identify-active-auxiliary",
+      "explain-verb-function",
+      "guide-sentence-repair"
+    ],
+    "interactionModes": [
+      "diagnose",
+      "question",
+      "guide",
+      "repair"
+    ],
+    "coreQuestion": {
+      "en": "Who is already working here?",
+      "es": "¿Quién ya está trabajando aquí?",
+      "pt": "Quem já está trabalhando aqui?"
+    },
+    "firstCase": {
+      "input": "Where do you can go?",
+      "output": "Where can you go?",
+      "diagnosis": "CAN already performs the modal auxiliary function; DO is not required in this interrogative structure.",
+      "focus": [
+        "auxiliary-verbs",
+        "modal-verbs",
+        "sentence-order",
+        "functional-conflict"
+      ]
+    }
+  },
+  "relations": [
+    {
+      "type": "belongs-to",
+      "target": "siyayo-academy"
+    },
+    {
+      "type": "supports",
+      "target": "verb-grid"
+    },
+    {
+      "type": "supports",
+      "target": "sentence-order"
+    }
+  ]
+}
