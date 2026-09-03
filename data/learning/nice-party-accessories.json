@@ -1,0 +1,63 @@
+{
+  "version": "0.1.0",
+  "experienceTag": "nice-party",
+  "categories": [
+    {
+      "id": "table-setting",
+      "stage": "preparing-dinner",
+      "items": [
+        { "id": "tablecloth", "en": "tablecloth", "es": "mantel", "pt": "toalha de mesa" },
+        { "id": "napkin", "en": "napkin", "es": "servilleta", "pt": "guardanapo" },
+        { "id": "glass", "en": "glass", "es": "vaso", "pt": "copo" },
+        { "id": "plate", "en": "plate", "es": "plato", "pt": "prato" },
+        { "id": "cutlery", "en": "cutlery", "es": "cubiertos", "pt": "talheres" }
+      ]
+    },
+    {
+      "id": "decoration",
+      "stage": "preparing-dinner",
+      "items": [
+        { "id": "candle", "en": "candle", "es": "vela", "pt": "vela" },
+        { "id": "flower", "en": "flower", "es": "flor", "pt": "flor" },
+        { "id": "vase", "en": "vase", "es": "florero", "pt": "vaso de flores" }
+      ]
+    },
+    {
+      "id": "music",
+      "stage": "after-dinner-conversation",
+      "items": [
+        { "id": "music", "en": "music", "es": "música", "pt": "música" },
+        { "id": "song", "en": "song", "es": "canción", "pt": "canção" },
+        { "id": "speaker", "en": "speaker", "es": "altavoz", "pt": "caixa de som" }
+      ]
+    },
+    {
+      "id": "clothing-accessories",
+      "stage": "shopping-for-dinner",
+      "items": [
+        { "id": "shirt", "en": "shirt", "es": "camisa", "pt": "camisa" },
+        { "id": "dress", "en": "dress", "es": "vestido", "pt": "vestido" },
+        { "id": "shoes", "en": "shoes", "es": "zapatos", "pt": "sapatos" },
+        { "id": "watch", "en": "watch", "es": "reloj", "pt": "relógio" }
+      ]
+    },
+    {
+      "id": "invitation-and-gifts",
+      "stage": "shopping-for-dinner",
+      "items": [
+        { "id": "invitation", "en": "invitation", "es": "invitación", "pt": "convite" },
+        { "id": "gift", "en": "gift", "es": "regalo", "pt": "presente" },
+        { "id": "card", "en": "card", "es": "tarjeta", "pt": "cartão" }
+      ]
+    },
+    {
+      "id": "drinks",
+      "stage": "having-dinner",
+      "items": [
+        { "id": "water", "en": "water", "es": "agua", "pt": "água" },
+        { "id": "juice", "en": "juice", "es": "jugo", "pt": "suco" },
+        { "id": "tea", "en": "tea", "es": "té", "pt": "chá" }
+      ]
+    }
+  ]
+}
