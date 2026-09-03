@@ -22,7 +22,7 @@ assert.ok(!choose.verbClass?.includes('action'), 'choose must not encode ACTION 
 const items = experiences.items || [];
 const shopping = items.find(item => item.id === 'shopping-for-dinner');
 assert.ok(shopping, 'shopping-for-dinner experience is required');
-const which = (shopping.thinkingMind || []).find(question => question.id === 'which');
+const which = (shopping.thinkingMind || []).find(question => question.questionWord === 'which');
 assert.ok(which?.choiceContext, 'WHICH contextual choice is required');
 assert.equal(which.choiceContext.sentenceBridge?.verbId, 'choose', 'experience sentence bridge must resolve canonical choose');
 
