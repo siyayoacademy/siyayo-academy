@@ -58,6 +58,9 @@ jobs:
       - name: Validate Verb Grid against JSON Schema
         run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/verb-grid.schema.json -d data/grammar/verb-grid.json
 
+      - name: Run Verb Grid semantic integrity tests
+        run: node scripts/test-verb-grid-semantics.js
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
