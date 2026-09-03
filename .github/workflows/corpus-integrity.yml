@@ -94,6 +94,11 @@ jobs:
           node --check js/adaptive-evidence-profile.js
           node scripts/test-adaptive-evidence-profile.js
 
+      - name: Run multilingual contrast verification probe tests
+        run: |
+          node --check js/interference-contrast-verifier.js
+          node scripts/test-interference-contrast-verifier.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
