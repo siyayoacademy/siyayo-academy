@@ -86,6 +86,11 @@ jobs:
           node --check js/xespirito-green-pass-bridge.js
           node scripts/test-xespirito-green-pass-bridge.js
 
+      - name: Run adaptive learning route selector tests
+        run: |
+          node --check js/adaptive-learning-router.js
+          node scripts/test-adaptive-learning-router.js
+
       - name: Run SIYAYO Corpus Integrity Validator
         run: node scripts/validate-corpus.js
 
