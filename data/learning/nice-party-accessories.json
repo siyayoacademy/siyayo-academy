@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "experienceTag": "nice-party",
   "categories": [
     {
@@ -57,6 +57,45 @@
         { "id": "water", "en": "water", "es": "agua", "pt": "água" },
         { "id": "juice", "en": "juice", "es": "jugo", "pt": "suco" },
         { "id": "tea", "en": "tea", "es": "té", "pt": "chá" }
+      ]
+    },
+    {
+      "id": "social-identity",
+      "stage": "after-dinner-conversation",
+      "source": "master-vip-class",
+      "prompts": [
+        {
+          "id": "country",
+          "questionWord": "where",
+          "en": "Where are you from?",
+          "es": "¿De dónde eres?",
+          "pt": "De onde você é?",
+          "answerPattern": { "en": "I am from ...", "es": "Soy de ...", "pt": "Eu sou de ..." }
+        },
+        {
+          "id": "nationality",
+          "questionWord": "what",
+          "en": "What is your nationality?",
+          "es": "¿Cuál es tu nacionalidad?",
+          "pt": "Qual é a sua nacionalidade?",
+          "answerPattern": { "en": "I am ...", "es": "Soy ...", "pt": "Eu sou ..." }
+        },
+        {
+          "id": "profession",
+          "questionWord": "what",
+          "en": "What do you do?",
+          "es": "¿A qué te dedicas?",
+          "pt": "O que você faz?",
+          "answerPattern": { "en": "I am a/an ...", "es": "Soy ...", "pt": "Eu sou ..." }
+        },
+        {
+          "id": "workplace",
+          "questionWord": "where",
+          "en": "Where do you work?",
+          "es": "¿Dónde trabajas?",
+          "pt": "Onde você trabalha?",
+          "answerPattern": { "en": "I work at/in ...", "es": "Trabajo en ...", "pt": "Eu trabalho em ..." }
+        }
       ]
     }
   ]
