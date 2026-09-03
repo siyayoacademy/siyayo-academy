@@ -129,5 +129,8 @@ jobs:
       - name: Run 6.12 complete toroidal cycle tests
         run: node scripts/test-complete-toroidal-cycle.js
 
-      - name: Run 6.13 College toroidal cycle tests
+      - name: Run 6.15 College communication ring tests
         run: node scripts/test-college-toroidal-cycle.js
+
+      - name: Run 6.16 Patita story trace tests
+        run: node scripts/test-patita-story-trace.js
