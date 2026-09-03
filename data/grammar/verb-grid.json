@@ -1,0 +1,49 @@
+{
+  "$schema": "../schemas/verb-grid.schema.json",
+  "version": "0.1.0",
+  "id": "verb-grid",
+  "functions": [
+    {
+      "id": "do-support",
+      "category": "auxiliary",
+      "examples": ["do", "does", "did"],
+      "purpose": {
+        "en": "Supports questions, negatives and emphasis when no other auxiliary or modal is already carrying that function.",
+        "es": "Apoya preguntas, negaciones y énfasis cuando ningún otro auxiliar o modal ya está cumpliendo esa función.",
+        "pt": "Dá suporte a perguntas, negativas e ênfase quando nenhum outro auxiliar ou modal já está cumprindo essa função."
+      }
+    },
+    {
+      "id": "modal-can",
+      "category": "modal",
+      "examples": ["can", "could"],
+      "purpose": {
+        "en": "Expresses modality and can directly form interrogative structure by moving before the subject.",
+        "es": "Expresa modalidad y puede formar directamente la estructura interrogativa colocándose antes del sujeto.",
+        "pt": "Expressa modalidade e pode formar diretamente a estrutura interrogativa posicionando-se antes do sujeito."
+      }
+    },
+    {
+      "id": "lexical-verb",
+      "category": "lexical",
+      "examples": ["go", "work", "study", "choose"],
+      "purpose": {
+        "en": "Carries the central lexical meaning of the action, state or event.",
+        "es": "Lleva el significado léxico central de la acción, estado o evento.",
+        "pt": "Carrega o significado lexical central da ação, estado ou evento."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "modal-blocks-do-support",
+      "pattern": "question-word + do-support + subject + modal + lexical-verb",
+      "diagnosis": "A modal already carries the auxiliary function in this interrogative structure, so DO support must not be added.",
+      "archetype": "xespirito",
+      "example": {
+        "input": "Where do you can go?",
+        "output": "Where can you go?"
+      }
+    }
+  ]
+}
