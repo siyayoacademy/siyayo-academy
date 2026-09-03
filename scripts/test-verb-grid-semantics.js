@@ -7,13 +7,13 @@ const errors = [];
 const fail = message => errors.push(message);
 
 const functionIds = new Set(grid.functions.map(item => item.id));
-const allIds = [];
 for (const section of ['functions', 'chains', 'timeAspect', 'rules']) {
-  for (const item of grid[section]) allIds.push(`${section}:${item.id}`);
+  const ids = grid[section].map(item => item.id);
+  const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
+  if (duplicates.length) {
+    fail(`Duplicate IDs inside ${section}: ${[...new Set(duplicates)].join(', ')}`);
+  }
 }
-const rawIds = allIds.map(value => value.split(':').slice(1).join(':'));
-const duplicates = rawIds.filter((id, index) => rawIds.indexOf(id) !== index);
-if (duplicates.length) fail(`Duplicate IDs across Verb Grid sections: ${[...new Set(duplicates)].join(', ')}`);
 
 for (const chain of grid.chains) {
   for (const ref of chain.sequence) {
