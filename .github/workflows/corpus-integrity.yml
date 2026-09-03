@@ -91,6 +91,11 @@ jobs:
           node --check js/pedagogical-resonance.js
           node scripts/test-pedagogical-resonance.js
 
+      - name: Run multilingual interference tests
+        run: |
+          node --check js/multilingual-interference.js
+          node scripts/test-multilingual-interference.js
+
       - name: Run adaptive learning route selector tests
         run: |
           node --check js/adaptive-learning-router.js
