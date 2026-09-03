@@ -99,6 +99,11 @@ jobs:
           node --check js/interference-contrast-verifier.js
           node scripts/test-interference-contrast-verifier.js
 
+      - name: Run verified interference adaptive bridge tests
+        run: |
+          node --check js/interference-adaptive-bridge.js
+          node scripts/test-interference-adaptive-bridge.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
