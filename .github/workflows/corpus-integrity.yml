@@ -84,6 +84,11 @@ jobs:
       - name: Run Xespirito PortuSpanGlish evidence tests
         run: node scripts/test-xespirito-portuspanglish.js
 
+      - name: Run conservative interference evidence gate tests
+        run: |
+          node --check js/xespirito-interference-evidence-gate.js
+          node scripts/test-xespirito-interference-evidence-gate.js
+
       - name: Run Green Pass learner profile tests
         run: |
           node --check js/green-pass-profile.js
