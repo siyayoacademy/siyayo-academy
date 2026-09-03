@@ -9,9 +9,18 @@ const spanish = Interference.inspect('exquisito', 'es');
 assert.equal(spanish.status, 'canonical');
 assert.equal(spanish.meanings.es, 'excellent, refined or delicious');
 
+const english = Interference.inspect('weird', 'en');
+assert.equal(english.status, 'canonical');
+assert.equal(english.matchedLanguage, 'en');
+assert.equal(english.meanings.en, 'strange or odd');
+
 const transfer = Interference.inspect('exquisito', 'pt');
 assert.equal(transfer.status, 'cross-language-transfer');
 assert.equal(transfer.matchedLanguage, 'es');
+
+const englishTransfer = Interference.inspect('weird', 'pt');
+assert.equal(englishTransfer.status, 'cross-language-transfer');
+assert.equal(englishTransfer.matchedLanguage, 'en');
 
 const hybrid = Interference.inspect('esquesito', 'pt');
 assert.equal(hybrid.status, 'possible-hybrid-interference');
@@ -24,4 +33,4 @@ assert.equal(unrelated.status, 'no-known-interference');
 
 assert.equal(Interference.levenshtein('esquisito', 'exquisito'), 1);
 
-console.log('Multilingual interference tests passed.');
+console.log('Multilingual interference trilingual tests passed.');
