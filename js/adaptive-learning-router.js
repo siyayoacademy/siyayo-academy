@@ -23,6 +23,23 @@
     };
   }
 
+  function resonanceSummary(resonance, context = {}) {
+    return resonance ? {
+      status: resonance.status,
+      score: resonance.score ?? resonance.bestCandidate?.score ?? 0,
+      evidenceStrength: resonance.evidenceStrength || resonance.bestCandidate?.evidenceStrength || 'none',
+      matched: resonance.matched || resonance.bestCandidate?.matched || null,
+      contributions: resonance.contributions || resonance.bestCandidate?.contributions || null,
+      minimumScore: resonance.minimumScore ?? context.minimumResonanceScore ?? 1
+    } : null;
+  }
+
+  function inspectResonance(experiences, skill, context = {}) {
+    return Array.isArray(experiences) && PedagogicalResonance
+      ? PedagogicalResonance.select(experiences, skill, { minimumScore: context.minimumResonanceScore })
+      : null;
+  }
+
   function route(recommendation = {}, context = {}) {
     const contractEligible = context.contractEligible === true;
 
@@ -30,20 +47,26 @@
       return { action: 'advance', experienceId: context.nextExperience || null, focus: null, contractEligible };
     }
     if (recommendation.action !== 'reinforce') {
+      const parsed = parseSkill(recommendation.skill || context.skill);
+      const resonance = contractEligible
+        ? inspectResonance(context.experiences, parsed.skill, context)
+        : null;
+      const matchedResonance = resonance?.status === 'matched';
       return {
         action: 'continue-assessment',
         experienceId: context.currentExperience || 'shopping-for-dinner',
-        focus: contractEligible ? 'eligible-opportunity' : 'assessment',
+        focus: matchedResonance ? 'eligible-opportunity' : (contractEligible ? 'eligible-opportunity' : 'assessment'),
         contractEligible,
-        reason: contractEligible ? 'green-pass-eligible-awaiting-opportunity' : recommendation.reason
+        reason: matchedResonance
+          ? 'green-pass-eligible-opportunity-found'
+          : (contractEligible ? 'green-pass-eligible-awaiting-opportunity' : recommendation.reason),
+        resonance: resonanceSummary(resonance, context)
       };
     }
 
     const parsed = parseSkill(recommendation.skill);
     const fallback = routes[parsed.skill] || routes['verb-function'];
-    const resonance = Array.isArray(context.experiences) && PedagogicalResonance
-      ? PedagogicalResonance.select(context.experiences, parsed.skill, { minimumScore: context.minimumResonanceScore })
-      : null;
+    const resonance = inspectResonance(context.experiences, parsed.skill, context);
     const matchedResonance = resonance?.status === 'matched';
 
     return {
@@ -54,14 +77,7 @@
       ...fallback,
       experienceId: matchedResonance ? resonance.experienceId : fallback.experienceId,
       contractEligible,
-      resonance: resonance ? {
-        status: resonance.status,
-        score: resonance.score ?? resonance.bestCandidate?.score ?? 0,
-        evidenceStrength: resonance.evidenceStrength || resonance.bestCandidate?.evidenceStrength || 'none',
-        matched: resonance.matched || resonance.bestCandidate?.matched || null,
-        contributions: resonance.contributions || resonance.bestCandidate?.contributions || null,
-        minimumScore: resonance.minimumScore ?? context.minimumResonanceScore ?? 1
-      } : null
+      resonance: resonanceSummary(resonance, context)
     };
   }
 
