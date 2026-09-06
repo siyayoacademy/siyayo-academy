@@ -51,5 +51,24 @@
     };
   }
 
-  return { begin, recordAttempt, toGreenPassAttempt };
+  function toEvidencePacket(session = {}, attempt = {}) {
+    if (!session.decision) throw new TypeError('Adaptive attempt decision is required.');
+
+    const requiredFields = ['dimension', 'result', 'mode', 'support'];
+    const missingFields = requiredFields.filter(field => typeof attempt[field] !== 'string' || !attempt[field].trim());
+    if (missingFields.length) {
+      throw new TypeError(`Evidence packet requires explicit ${missingFields.join(', ')}.`);
+    }
+
+    return {
+      skill: attempt.skill || session.decision.skill || null,
+      dimension: attempt.dimension,
+      result: attempt.result,
+      mode: attempt.mode,
+      support: attempt.support,
+      context: attempt.context || session.decision.experienceId || null
+    };
+  }
+
+  return { begin, recordAttempt, toGreenPassAttempt, toEvidencePacket };
 });
