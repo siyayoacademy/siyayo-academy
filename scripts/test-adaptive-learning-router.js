@@ -113,6 +113,26 @@ const preparingOnly = Router.currentExperienceScope(corpus.items, 'preparing-din
 assert.equal(preparingOnly.length, 1);
 assert.equal(preparingOnly[0].id, 'preparing-dinner');
 
+// 08.18e: a declared current Experience that is absent from the corpus means
+// inspection was unavailable, not that a valid inspection found no resonance.
+const missingCurrentScope = Router.currentExperienceScope(corpus.items, 'missing-experience');
+assert.equal(missingCurrentScope, null);
+const eligibleUnknownCurrent = Router.route(
+  { action: 'continue-assessment', skill: 'which.use.determiner', reason: 'green-pass-eligible-awaiting-route' },
+  {
+    currentExperience: 'missing-experience',
+    contractEligible: true,
+    experiences: corpus.items,
+    minimumResonanceScore: 1
+  }
+);
+assert.equal(eligibleUnknownCurrent.action, 'continue-assessment');
+assert.equal(eligibleUnknownCurrent.experienceId, 'missing-experience', 'Safe Uncertainty must preserve the declared trajectory');
+assert.equal(eligibleUnknownCurrent.focus, 'eligible-opportunity');
+assert.equal(eligibleUnknownCurrent.reason, 'green-pass-eligible-awaiting-opportunity');
+assert.equal(eligibleUnknownCurrent.resonance, null, 'unknown current Experience must remain unknown, not become negative resonance');
+assert.notEqual(eligibleUnknownCurrent.action, 'advance', 'unknown current Experience must never manufacture NEXT');
+
 const eligibleWhichGuarded = Router.route(
   { action: 'continue-assessment', skill: 'which.use.determiner' },
   {
@@ -134,3 +154,4 @@ console.log('Adaptive learning router tests passed.');
 console.log('Jaguar eligibility context: PASS — eligible changes decision context without forcing advance.');
 console.log('Jaguar WHICH opportunity inspection: PASS — resonance can expose an existing opportunity while preserving the current Experience.');
 console.log('Current Experience boundary: PASS — stronger resonance elsewhere cannot masquerade as a meaningful internal opportunity.');
+console.log('Unknown current Experience: PASS — unavailable inspection remains null and preserves the trajectory.');
