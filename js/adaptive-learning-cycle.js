@@ -2,14 +2,20 @@
   const api = factory(
     typeof module === 'object' && module.exports ? require('./adaptive-attempt-loop.js') : root.AdaptiveAttemptLoop,
     typeof module === 'object' && module.exports ? require('./green-pass-profile.js') : root.GreenPassProfile,
-    typeof module === 'object' && module.exports ? require('./adaptive-advance-selector.js') : root.AdaptiveAdvanceSelector
+    typeof module === 'object' && module.exports ? require('./adaptive-advance-selector.js') : root.AdaptiveAdvanceSelector,
+    typeof module === 'object' && module.exports ? require('../data/learning/green-pass-authority.json') : root.GreenPassAuthorityPolicy
   );
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.AdaptiveLearningCycle = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector) {
-  function resolveAuthority(context = {}) {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy) {
+  function resolveAuthority(context = {}, skill = null) {
     if (!context.passContract) return 'legacy';
-    return context.greenPassAuthority === 'contract' ? 'contract' : 'legacy';
+    if (context.greenPassAuthority === 'contract') return 'contract';
+
+    const policy = context.greenPassAuthorityPolicy || GreenPassAuthorityPolicy;
+    if (!policy || !Array.isArray(policy.contractAuthoritySkills)) return 'legacy';
+    const skillId = skill || context.skill || null;
+    return skillId && policy.contractAuthoritySkills.includes(skillId) ? 'contract' : (policy.fallbackAuthority || policy.defaultAuthority || 'legacy');
   }
 
   function submit(greenProfile, session, attempt = {}, context = {}) {
@@ -20,7 +26,7 @@
     const nextGreenProfile = GreenPassProfile.recordAttempt(greenProfile, greenAttempt);
     const legacyRecommendation = GreenPassProfile.recommendNext(nextGreenProfile);
     const currentExperience = session.decision.experienceId || context.currentExperience || null;
-    const operationalAuthority = resolveAuthority(context);
+    const operationalAuthority = resolveAuthority(context, greenAttempt.skill);
 
     let evidencePacket = null;
     let contractEvaluation = null;
