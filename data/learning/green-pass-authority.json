@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "defaultAuthority": "legacy",
+  "contractAuthoritySkills": [
+    "which.use.determiner"
+  ],
+  "policy": {
+    "requiresPassContract": true,
+    "fallbackAuthority": "legacy",
+    "description": "Contract authority is enabled only for explicitly adopted skills that provide a Pass Contract. All other skills remain on the legacy authority path."
+  }
+}
