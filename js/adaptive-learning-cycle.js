@@ -50,7 +50,7 @@
     if (operationalAuthority === 'contract') {
       recommendation = contractEvaluation.status === 'GREEN_PASS'
         ? { ...legacyRecommendation, action: 'advance', authority: 'contract' }
-        : { ...legacyRecommendation, action: 'reinforce', authority: 'contract', reason: 'waiting-for-contract-evidence' };
+        : { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'waiting-for-contract-evidence' };
     }
 
     session.trace.push({ archetype: 'patita', event: 'green-pass-evaluated', experienceId: currentExperience, skill: greenAttempt.skill, status: nextGreenProfile.bySkill[GreenPassProfile.skillKey(greenAttempt)]?.status || 'observing', greenPass: nextGreenProfile.greenPass, nextAction: recommendation.action, operationalAuthority });
