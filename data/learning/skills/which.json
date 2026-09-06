@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "id": "which.use.determiner",
+  "language": "en",
+  "family": "question-word",
+  "form": "which",
+  "grammarRole": "interrogative-determiner",
+  "depth": "experience",
+  "function": {
+    "communicativeIntention": "choice",
+    "meaning": "select among contextually delimited possibilities"
+  },
+  "observes": [
+    "choice-function",
+    "determiner-use"
+  ],
+  "passContract": {
+    "requires": [
+      {
+        "dimension": "choice-function",
+        "result": "pass"
+      },
+      {
+        "dimension": "determiner-use",
+        "result": "pass",
+        "support": "none"
+      },
+      {
+        "dimension": "determiner-use",
+        "result": "pass",
+        "mode": "transfer",
+        "support": "none"
+      }
+    ],
+    "doesNotClaim": [
+      "long-term-retention",
+      "pronoun-use",
+      "auditory-recognition",
+      "pronunciation",
+      "cross-language-equivalence"
+    ]
+  }
+}
