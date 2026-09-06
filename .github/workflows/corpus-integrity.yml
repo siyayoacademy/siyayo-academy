@@ -132,6 +132,9 @@ jobs:
           node --check js/green-pass-profile.js
           node scripts/test-green-pass-profile.js
 
+      - name: Run Green Pass contract evaluator tests
+        run: node scripts/test-green-pass-contract.js
+
       - name: Run Xespirito Green Pass bridge tests
         run: |
           node --check js/xespirito-green-pass-bridge.js
