@@ -3,11 +3,12 @@
     typeof module === 'object' && module.exports ? require('./adaptive-attempt-loop.js') : root.AdaptiveAttemptLoop,
     typeof module === 'object' && module.exports ? require('./green-pass-profile.js') : root.GreenPassProfile,
     typeof module === 'object' && module.exports ? require('./adaptive-advance-selector.js') : root.AdaptiveAdvanceSelector,
-    typeof module === 'object' && module.exports ? require('../data/learning/green-pass-authority.json') : root.GreenPassAuthorityPolicy
+    typeof module === 'object' && module.exports ? require('../data/learning/green-pass-authority.json') : root.GreenPassAuthorityPolicy,
+    typeof module === 'object' && module.exports ? require('./adaptive-learning-router.js') : root.AdaptiveLearningRouter
   );
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.AdaptiveLearningCycle = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy) {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy, AdaptiveLearningRouter) {
   function resolveAuthority(context = {}, skill = null) {
     if (!context.passContract) return 'legacy';
     if (context.greenPassAuthority === 'contract') return 'contract';
@@ -46,11 +47,35 @@
     let recommendation = legacyRecommendation;
     if (operationalAuthority === 'contract') {
       recommendation = contractEligible
-        ? { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'green-pass-eligible-awaiting-route' }
-        : { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'waiting-for-contract-evidence' };
+        ? { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'green-pass-eligible-awaiting-route', skill: greenAttempt.skill }
+        : { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'waiting-for-contract-evidence', skill: greenAttempt.skill };
     }
 
     session.trace.push({ archetype: 'patita', event: 'green-pass-evaluated', experienceId: currentExperience, skill: greenAttempt.skill, status: nextGreenProfile.bySkill[GreenPassProfile.skillKey(greenAttempt)]?.status || 'observing', greenPass: nextGreenProfile.greenPass, contractEligible, nextAction: recommendation.action, operationalAuthority });
+
+    let routeInspection = null;
+    if (operationalAuthority === 'contract') {
+      if (!AdaptiveLearningRouter || typeof AdaptiveLearningRouter.route !== 'function') throw new TypeError('Adaptive learning router API is required for contract route inspection.');
+      routeInspection = AdaptiveLearningRouter.route(recommendation, {
+        ...context,
+        currentExperience,
+        contractEligible,
+        skill: greenAttempt.skill,
+        language: greenAttempt.language,
+        chapter: greenAttempt.chapter
+      });
+      session.trace.push({
+        archetype: 'jaguar',
+        event: 'adaptive-route-inspected',
+        experienceId: currentExperience,
+        skill: greenAttempt.skill,
+        contractEligible,
+        action: routeInspection.action,
+        focus: routeInspection.focus || null,
+        reason: routeInspection.reason || null,
+        resonanceStatus: routeInspection.resonance?.status || null
+      });
+    }
 
     let advanceSelection = null;
     if (recommendation.action === 'advance') {
@@ -67,6 +92,7 @@
       legacyRecommendation,
       operationalAuthority,
       contractEligible,
+      routeInspection,
       advanceSelection,
       evidencePacket,
       contractEvaluation,
