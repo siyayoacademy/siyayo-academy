@@ -45,7 +45,8 @@ assert.deepEqual(observing, {
   experienceId: 'preparing-dinner',
   focus: 'assessment',
   contractEligible: false,
-  reason: undefined
+  reason: undefined,
+  resonance: null
 });
 
 const eligibleWaiting = Router.route(
@@ -57,12 +58,49 @@ assert.deepEqual(eligibleWaiting, {
   experienceId: 'shopping-for-dinner',
   focus: 'eligible-opportunity',
   contractEligible: true,
-  reason: 'green-pass-eligible-awaiting-opportunity'
+  reason: 'green-pass-eligible-awaiting-opportunity',
+  resonance: null
 });
 assert.notEqual(eligibleWaiting.action, 'advance', 'eligibility alone must never manufacture an advance');
+
+const eligibleWhich = Router.route(
+  { action: 'continue-assessment', skill: 'which.use.determiner', reason: 'green-pass-eligible-awaiting-route' },
+  {
+    currentExperience: 'shopping-for-dinner',
+    contractEligible: true,
+    experiences: corpus.items,
+    minimumResonanceScore: 1
+  }
+);
+assert.equal(eligibleWhich.action, 'continue-assessment');
+assert.equal(eligibleWhich.experienceId, 'shopping-for-dinner', 'resonance must not manufacture an inter-Experience move');
+assert.equal(eligibleWhich.focus, 'eligible-opportunity');
+assert.equal(eligibleWhich.contractEligible, true);
+assert.equal(eligibleWhich.reason, 'green-pass-eligible-opportunity-found');
+assert.equal(eligibleWhich.resonance.status, 'matched');
+assert.equal(eligibleWhich.resonance.score, 5);
+assert.deepEqual(eligibleWhich.resonance.matched.questionWords, ['which']);
+assert.deepEqual(eligibleWhich.resonance.matched.languagePatterns, ['choose']);
+assert.deepEqual(eligibleWhich.resonance.matched.perspectives, ['debating']);
+assert.notEqual(eligibleWhich.action, 'advance', 'a meaningful opportunity is not an advance order');
+
+const eligibleWhichGuarded = Router.route(
+  { action: 'continue-assessment', skill: 'which.use.determiner' },
+  {
+    currentExperience: 'shopping-for-dinner',
+    contractEligible: true,
+    experiences: corpus.items,
+    minimumResonanceScore: 99
+  }
+);
+assert.equal(eligibleWhichGuarded.action, 'continue-assessment');
+assert.equal(eligibleWhichGuarded.reason, 'green-pass-eligible-awaiting-opportunity');
+assert.equal(eligibleWhichGuarded.resonance.status, 'no-resonance');
+assert.notEqual(eligibleWhichGuarded.action, 'advance');
 
 const advance = Router.route({ action: 'advance' }, { nextExperience: 'having-dinner', contractEligible: true });
 assert.deepEqual(advance, { action: 'advance', experienceId: 'having-dinner', focus: null, contractEligible: true });
 
 console.log('Adaptive learning router tests passed.');
 console.log('Jaguar eligibility context: PASS — eligible changes decision context without forcing advance.');
+console.log('Jaguar WHICH opportunity inspection: PASS — resonance can expose an existing opportunity while preserving the current Experience.');
