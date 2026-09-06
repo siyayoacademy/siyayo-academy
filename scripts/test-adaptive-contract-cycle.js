@@ -66,17 +66,45 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.greenPassComparison.agreement, true);
 }
 
-// A non-adopted skill with a syntactically valid contract remains safely on Legacy.
+// HOW MUCH genericity probe: the same runtime cycle evaluates a second skill without skill-specific engine logic.
 {
-  const syntheticSkill = 'how-much.use.uncountable';
-  const syntheticContract = { requires: [{ dimension: 'quantity-function', result: 'pass' }] };
-  const session = createSession('authority-policy-fallback', syntheticSkill);
-  const profile = GreenPassProfile.createProfile('authority-policy-fallback');
-  const attempt = { language: 'en', chapter: 'question-words', skill: syntheticSkill, correct: true, confidence: 0.95, dimension: 'quantity-function', result: 'pass', mode: 'controlled-production', support: 'none', context: 'preparing-dinner' };
-  const result = AdaptiveLearningCycle.submit(profile, session, attempt, { passContract: syntheticContract, evidencePackets: [] });
-  assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
+  const skill = 'how-much.use.uncountable';
+  const passContract = {
+    requires: [
+      { dimension: 'quantity-function', result: 'pass' },
+      { dimension: 'uncountable-use', result: 'pass', support: 'none' },
+      { dimension: 'uncountable-use', result: 'pass', mode: 'transfer', support: 'none' }
+    ]
+  };
+  const session = createSession('how-much-cycle-genericity', skill);
+  let profile = GreenPassProfile.createProfile('how-much-cycle-genericity');
+  let context = { passContract, evidencePackets: [] };
+  const common = { language: 'en', chapter: 'question-words', skill, correct: true, confidence: 0.95 };
+
+  function submit(attempt) {
+    const result = AdaptiveLearningCycle.submit(profile, session, attempt, context);
+    profile = result.greenProfile; context = result.nextContext;
+    return result;
+  }
+
+  let result = submit({ ...common, dimension: 'quantity-function', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'preparing-dinner' });
   assert.equal(result.operationalAuthority, 'legacy');
-  assert.deepEqual(result.recommendation, result.legacyRecommendation);
+  assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
+
+  result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' });
+  assert.equal(result.operationalAuthority, 'legacy');
+  assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
+  assert.equal(result.contractEvaluation.missing.length, 1);
+  assert.equal(result.contractEvaluation.missing[0].mode, 'transfer');
+
+  result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'transfer', support: 'none', context: 'shopping-drinks' });
+  assert.equal(result.operationalAuthority, 'legacy');
+  assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
+  assert.equal(result.evidencePacket.skill, skill);
+
+  const contractTrace = session.trace.filter(entry => entry.event === 'green-pass-contract-evaluated');
+  assert.equal(contractTrace.length, 3);
+  assert.equal(contractTrace.at(-1).status, 'GREEN_PASS');
 }
 
 // Policy source, not hidden skill branching, controls adoption.
@@ -88,3 +116,4 @@ assert.equal(AdaptiveLearningCycle.resolveAuthority({ passContract: { requires: 
 
 console.log('Adaptive contract cycle integration: PASS');
 console.log('Declarative authority adoption: WHICH -> contract; non-adopted skill -> legacy fallback.');
+console.log('Runtime genericity probe: synthetic HOW MUCH reaches GREEN_PASS through the same adaptive cycle.');
