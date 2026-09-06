@@ -40,6 +40,11 @@
       : null;
   }
 
+  function currentExperienceScope(experiences, currentExperience) {
+    if (!Array.isArray(experiences) || !currentExperience) return [];
+    return experiences.filter(experience => experience?.id === currentExperience);
+  }
+
   function route(recommendation = {}, context = {}) {
     const contractEligible = context.contractEligible === true;
 
@@ -49,13 +54,13 @@
     if (recommendation.action !== 'reinforce') {
       const parsed = parseSkill(recommendation.skill || context.skill);
       const resonance = contractEligible
-        ? inspectResonance(context.experiences, parsed.skill, context)
+        ? inspectResonance(currentExperienceScope(context.experiences, context.currentExperience), parsed.skill, context)
         : null;
       const matchedResonance = resonance?.status === 'matched';
       return {
         action: 'continue-assessment',
         experienceId: context.currentExperience || 'shopping-for-dinner',
-        focus: matchedResonance ? 'eligible-opportunity' : (contractEligible ? 'eligible-opportunity' : 'assessment'),
+        focus: contractEligible ? 'eligible-opportunity' : 'assessment',
         contractEligible,
         reason: matchedResonance
           ? 'green-pass-eligible-opportunity-found'
@@ -81,5 +86,5 @@
     };
   }
 
-  return { route, parseSkill, routes };
+  return { route, parseSkill, routes, currentExperienceScope };
 });
