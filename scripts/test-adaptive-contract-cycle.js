@@ -7,6 +7,7 @@ const AdaptiveLearningCycle = require('../js/adaptive-learning-cycle.js');
 const GreenPassProfile = require('../js/green-pass-profile.js');
 const which = require('../data/learning/skills/which.json');
 const authorityPolicy = require('../data/learning/green-pass-authority.json');
+const experienceCorpus = require('../data/learning/experience-seeds.json');
 
 function createSession(id, skill = 'which.use.determiner') {
   const evidenceProfile = AdaptiveEvidenceProfile.createProfile(id);
@@ -29,14 +30,15 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   const result = AdaptiveLearningCycle.submit(profile, session, baseAttempt, {});
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation, null);
+  assert.equal(result.routeInspection, null);
   assert.deepEqual(result.recommendation, result.legacyRecommendation);
 }
 
-// Contract authority evaluates eligibility only. It does not choose a route.
+// Contract authority evaluates eligibility and lets Jaguar inspect opportunity without choosing navigation.
 {
   const session = createSession('authority-policy-which');
   let profile = GreenPassProfile.createProfile('authority-policy-which');
-  let context = { passContract: which.passContract, evidencePackets: [] };
+  let context = { passContract: which.passContract, evidencePackets: [], experiences: experienceCorpus.items };
   function submit(attempt) {
     const result = AdaptiveLearningCycle.submit(profile, session, attempt, context);
     profile = result.greenProfile; context = result.nextContext;
@@ -49,6 +51,8 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.contractEligible, false);
   assert.equal(result.recommendation.action, 'continue-assessment');
   assert.equal(result.recommendation.reason, 'waiting-for-contract-evidence');
+  assert.equal(result.routeInspection.action, 'continue-assessment');
+  assert.equal(result.routeInspection.focus, 'assessment');
   assert.equal(result.advanceSelection, null);
 
   result = submit(determinerAssisted);
@@ -56,6 +60,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
   assert.equal(result.contractEligible, false);
   assert.equal(result.recommendation.action, 'continue-assessment');
+  assert.equal(result.routeInspection.action, 'continue-assessment');
   assert.equal(result.advanceSelection, null);
 
   result = submit(determinerIndependent);
@@ -64,6 +69,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.contractEvaluation.missing[0].mode, 'transfer');
   assert.equal(result.contractEligible, false);
   assert.equal(result.recommendation.action, 'continue-assessment');
+  assert.equal(result.routeInspection.action, 'continue-assessment');
 
   result = submit(determinerTransfer);
   assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
@@ -71,6 +77,15 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.recommendation.action, 'continue-assessment');
   assert.equal(result.recommendation.reason, 'green-pass-eligible-awaiting-route');
   assert.equal(result.recommendation.authority, 'contract');
+  assert.equal(result.routeInspection.action, 'continue-assessment');
+  assert.equal(result.routeInspection.experienceId, 'shopping-for-dinner');
+  assert.equal(result.routeInspection.focus, 'eligible-opportunity');
+  assert.equal(result.routeInspection.reason, 'green-pass-eligible-opportunity-found');
+  assert.equal(result.routeInspection.resonance.status, 'matched');
+  assert.equal(result.routeInspection.resonance.score, 5);
+  assert.deepEqual(result.routeInspection.resonance.matched.questionWords, ['which']);
+  assert.deepEqual(result.routeInspection.resonance.matched.languagePatterns, ['choose']);
+  assert.deepEqual(result.routeInspection.resonance.matched.perspectives, ['debating']);
   assert.equal(result.advanceSelection, null);
   assert.equal(result.nextContext.currentExperience, 'shopping-for-dinner');
   assert.equal(result.greenPassComparison.agreement, true);
@@ -78,6 +93,11 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   const evaluationTrace = session.trace.filter(entry => entry.event === 'green-pass-evaluated');
   assert.equal(evaluationTrace.at(-1).contractEligible, true);
   assert.equal(evaluationTrace.at(-1).nextAction, 'continue-assessment');
+  const routeTrace = session.trace.filter(entry => entry.event === 'adaptive-route-inspected');
+  assert.equal(routeTrace.at(-1).contractEligible, true);
+  assert.equal(routeTrace.at(-1).action, 'continue-assessment');
+  assert.equal(routeTrace.at(-1).reason, 'green-pass-eligible-opportunity-found');
+  assert.equal(routeTrace.at(-1).resonanceStatus, 'matched');
   assert.equal(session.trace.filter(entry => entry.event === 'adaptive-next-selected').length, 0);
 }
 
@@ -101,6 +121,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   let result = submit({ ...common, dimension: 'quantity-function', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'preparing-dinner' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
+  assert.equal(result.routeInspection, null);
   result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
@@ -109,6 +130,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
   assert.equal(result.evidencePacket.skill, skill);
+  assert.equal(result.routeInspection, null);
 }
 
 assert.equal(authorityPolicy.contractAuthoritySkills.includes('which.use.determiner'), true);
@@ -118,5 +140,6 @@ assert.equal(AdaptiveLearningCycle.resolveAuthority({ passContract: which.passCo
 
 console.log('Adaptive contract cycle integration: PASS');
 console.log('Green Pass separation: eligibility is observable without automatic routing.');
+console.log('Cycle → Jaguar bridge: PASS — eligible WHICH exposes an existing opportunity without selecting NEXT.');
 console.log('Evidence humility: WAITING_FOR_EVIDENCE remains continue-assessment.');
 console.log('Runtime genericity probe: synthetic HOW MUCH still reaches GREEN_PASS through the same adaptive cycle.');
