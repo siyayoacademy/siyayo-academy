@@ -114,6 +114,9 @@ jobs:
           node --check js/adaptive-attempt-loop.js
           node scripts/test-adaptive-attempt-loop.js
 
+      - name: Run adaptive evidence bridge tests
+        run: node scripts/test-adaptive-evidence-bridge.js
+
       - name: Run closed adaptive learning cycle tests
         run: |
           node --check js/adaptive-learning-cycle.js
