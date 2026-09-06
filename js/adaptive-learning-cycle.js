@@ -18,6 +18,32 @@
     const recommendation = GreenPassProfile.recommendNext(nextGreenProfile);
     const currentExperience = session.decision.experienceId || context.currentExperience || null;
 
+    let evidencePacket = null;
+    let contractEvaluation = null;
+    if (context.passContract) {
+      if (!AdaptiveAttemptLoop || typeof AdaptiveAttemptLoop.toEvidencePacket !== 'function') {
+        throw new TypeError('Adaptive evidence packet bridge is required for Pass Contract evaluation.');
+      }
+      if (!GreenPassProfile || typeof GreenPassProfile.evaluateContract !== 'function') {
+        throw new TypeError('Green Pass contract evaluator API is required.');
+      }
+
+      evidencePacket = AdaptiveAttemptLoop.toEvidencePacket(session, attempt);
+      const evidencePackets = Array.isArray(context.evidencePackets)
+        ? context.evidencePackets.concat(evidencePacket)
+        : [evidencePacket];
+      contractEvaluation = GreenPassProfile.evaluateContract(context.passContract, evidencePackets);
+
+      session.trace.push({
+        archetype: 'patita',
+        event: 'green-pass-contract-evaluated',
+        experienceId: currentExperience,
+        skill: evidencePacket.skill,
+        status: contractEvaluation.status,
+        satisfied: contractEvaluation.satisfied
+      });
+    }
+
     session.trace.push({
       archetype: 'patita',
       event: 'green-pass-evaluated',
@@ -55,8 +81,13 @@
       traceEntry,
       recommendation,
       advanceSelection,
+      evidencePacket,
+      contractEvaluation,
       nextContext: {
         ...context,
+        evidencePackets: evidencePacket
+          ? (Array.isArray(context.evidencePackets) ? context.evidencePackets.concat(evidencePacket) : [evidencePacket])
+          : context.evidencePackets,
         language: greenAttempt.language,
         chapter: greenAttempt.chapter,
         skill: greenAttempt.skill,
