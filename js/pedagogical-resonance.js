@@ -10,7 +10,8 @@
     'auxiliary-be': { verbs: ['be'], perspectives: ['describing'], questionWords: ['what', 'how'] },
     'finite-carrier': { verbs: ['do', 'be', 'have'], perspectives: ['debating'], questionWords: ['when', 'why', 'which'] },
     'auxiliary-chain': { verbs: ['be', 'have'], perspectives: ['narrating'], questionWords: ['how', 'what'] },
-    'verb-function': { verbs: [], perspectives: ['describing', 'narrating'], questionWords: ['what', 'how'] }
+    'verb-function': { verbs: [], perspectives: ['describing', 'narrating'], questionWords: ['what', 'how'] },
+    'which.use.determiner': { verbs: ['choose'], perspectives: ['debating'], questionWords: ['which'] }
   };
 
   const normalize = value => String(value || '').trim().toLowerCase();
