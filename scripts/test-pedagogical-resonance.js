@@ -20,6 +20,29 @@ const auxiliaryBe = Resonance.select(experiences, 'auxiliary-be');
 assert.equal(auxiliaryBe.status, 'matched');
 assert.ok(auxiliaryBe.score > 0);
 
+const which = Resonance.select(experiences, 'which.use.determiner');
+assert.equal(which.status, 'matched');
+assert.equal(which.experienceId, 'shopping-for-dinner');
+assert.equal(which.skill, 'which.use.determiner');
+assert.deepEqual(which.matched.questionWords, ['which']);
+assert.deepEqual(which.matched.languagePatterns, ['choose']);
+assert.deepEqual(which.matched.perspectives, ['debating']);
+assert.equal(which.matched.linkedVerbs.length, 0, 'choose may be present in the sentence bridge without being a linked verb');
+assert.equal(which.score, 5);
+assert.equal(which.evidenceStrength, 'moderate');
+
+const noWhichOpportunity = Resonance.scoreExperience({
+  id: 'no-which-opportunity',
+  links: { verbs: ['buy'] },
+  thinkingMind: [{ questionWord: 'what' }],
+  perspectives: { describing: {} },
+  note: 'We buy fresh cheese.'
+}, 'which.use.determiner');
+assert.equal(noWhichOpportunity.score, 0);
+assert.deepEqual(noWhichOpportunity.matched.questionWords, []);
+assert.deepEqual(noWhichOpportunity.matched.languagePatterns, []);
+assert.deepEqual(noWhichOpportunity.matched.perspectives, []);
+
 const unknown = Resonance.select(experiences, 'unknown-skill');
 assert.equal(unknown.status, 'matched');
 assert.equal(unknown.skill, 'unknown-skill');
@@ -38,3 +61,4 @@ const exactToken = Resonance.scoreExperience({ id: 'token-test', links: { verbs:
 assert.equal(exactToken.contributions.languagePattern, 0, 'should must not match shoulder');
 
 console.log('Pedagogical resonance explainability tests passed.');
+console.log('WHICH opportunity resonance: PASS — Shopping for a Nice Dinner exposes which + choose + debating without fabricating learner evidence.');
