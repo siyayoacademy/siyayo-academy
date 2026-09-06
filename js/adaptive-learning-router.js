@@ -41,7 +41,7 @@
   }
 
   function currentExperienceScope(experiences, currentExperience) {
-    if (!Array.isArray(experiences) || !currentExperience) return [];
+    if (!Array.isArray(experiences) || !currentExperience) return null;
     return experiences.filter(experience => experience?.id === currentExperience);
   }
 
@@ -53,8 +53,9 @@
     }
     if (recommendation.action !== 'reinforce') {
       const parsed = parseSkill(recommendation.skill || context.skill);
-      const resonance = contractEligible
-        ? inspectResonance(currentExperienceScope(context.experiences, context.currentExperience), parsed.skill, context)
+      const currentScope = currentExperienceScope(context.experiences, context.currentExperience);
+      const resonance = contractEligible && currentScope
+        ? inspectResonance(currentScope, parsed.skill, context)
         : null;
       const matchedResonance = resonance?.status === 'matched';
       return {
