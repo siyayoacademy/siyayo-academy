@@ -32,7 +32,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.deepEqual(result.recommendation, result.legacyRecommendation);
 }
 
-// Missing Contract evidence is observational uncertainty, not automatic reinforcement.
+// Contract authority evaluates eligibility only. It does not choose a route.
 {
   const session = createSession('authority-policy-which');
   let profile = GreenPassProfile.createProfile('authority-policy-which');
@@ -46,6 +46,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   let result = submit(choiceAssisted);
   assert.equal(result.operationalAuthority, 'contract');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
+  assert.equal(result.contractEligible, false);
   assert.equal(result.recommendation.action, 'continue-assessment');
   assert.equal(result.recommendation.reason, 'waiting-for-contract-evidence');
   assert.equal(result.advanceSelection, null);
@@ -53,21 +54,31 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   result = submit(determinerAssisted);
   assert.equal(result.legacyRecommendation.action, 'advance');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
+  assert.equal(result.contractEligible, false);
   assert.equal(result.recommendation.action, 'continue-assessment');
-  assert.equal(result.recommendation.authority, 'contract');
   assert.equal(result.advanceSelection, null);
 
   result = submit(determinerIndependent);
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
   assert.equal(result.contractEvaluation.missing.length, 1);
   assert.equal(result.contractEvaluation.missing[0].mode, 'transfer');
+  assert.equal(result.contractEligible, false);
   assert.equal(result.recommendation.action, 'continue-assessment');
 
   result = submit(determinerTransfer);
   assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
-  assert.equal(result.recommendation.action, 'advance');
+  assert.equal(result.contractEligible, true);
+  assert.equal(result.recommendation.action, 'continue-assessment');
+  assert.equal(result.recommendation.reason, 'green-pass-eligible-awaiting-route');
   assert.equal(result.recommendation.authority, 'contract');
+  assert.equal(result.advanceSelection, null);
+  assert.equal(result.nextContext.currentExperience, 'shopping-for-dinner');
   assert.equal(result.greenPassComparison.agreement, true);
+
+  const evaluationTrace = session.trace.filter(entry => entry.event === 'green-pass-evaluated');
+  assert.equal(evaluationTrace.at(-1).contractEligible, true);
+  assert.equal(evaluationTrace.at(-1).nextAction, 'continue-assessment');
+  assert.equal(session.trace.filter(entry => entry.event === 'adaptive-next-selected').length, 0);
 }
 
 // HOW MUCH genericity remains on legacy authority while using the same Contract evaluator.
@@ -87,16 +98,13 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
     profile = result.greenProfile; context = result.nextContext;
     return result;
   }
-
   let result = submit({ ...common, dimension: 'quantity-function', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'preparing-dinner' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
-
   result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
   assert.equal(result.contractEvaluation.missing[0].mode, 'transfer');
-
   result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'transfer', support: 'none', context: 'shopping-drinks' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
@@ -109,5 +117,6 @@ assert.equal(AdaptiveLearningCycle.resolveAuthority({}, 'which.use.determiner'),
 assert.equal(AdaptiveLearningCycle.resolveAuthority({ passContract: which.passContract }, 'which.use.determiner'), 'contract');
 
 console.log('Adaptive contract cycle integration: PASS');
-console.log('Evidence humility: WAITING_FOR_EVIDENCE -> continue-assessment, not forced reinforcement.');
+console.log('Green Pass separation: eligibility is observable without automatic routing.');
+console.log('Evidence humility: WAITING_FOR_EVIDENCE remains continue-assessment.');
 console.log('Runtime genericity probe: synthetic HOW MUCH still reaches GREEN_PASS through the same adaptive cycle.');
