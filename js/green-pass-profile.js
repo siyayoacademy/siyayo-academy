@@ -65,6 +65,35 @@
     return next;
   }
 
+  function evidenceMatchesRequirement(evidence, requirement) {
+    if (!evidence || typeof evidence !== 'object') return false;
+    if (!requirement || typeof requirement !== 'object') return false;
+    return Object.entries(requirement).every(([field, expected]) => evidence[field] === expected);
+  }
+
+  function evaluateContract(contract, evidencePackets = []) {
+    const requires = contract?.requires;
+    if (!Array.isArray(requires) || requires.length === 0) {
+      throw new TypeError('A Green Pass contract with at least one requirement is required.');
+    }
+    if (!Array.isArray(evidencePackets)) {
+      throw new TypeError('Evidence packets must be an array.');
+    }
+
+    const requirements = requires.map(requirement => {
+      const satisfied = evidencePackets.some(evidence => evidenceMatchesRequirement(evidence, requirement));
+      return { requirement: { ...requirement }, satisfied };
+    });
+
+    const satisfied = requirements.every(item => item.satisfied);
+    return {
+      status: satisfied ? 'GREEN_PASS' : 'WAITING_FOR_EVIDENCE',
+      satisfied,
+      requirements,
+      missing: requirements.filter(item => !item.satisfied).map(item => item.requirement)
+    };
+  }
+
   function recommendNext(profile) {
     const reinforcement = profile?.reinforcement || [];
     if (reinforcement.length) return { action: 'reinforce', skill: reinforcement[0] };
@@ -72,5 +101,13 @@
     return { action: 'continue-assessment' };
   }
 
-  return { createProfile, recordAttempt, recommendNext, classifySkill, skillKey };
+  return {
+    createProfile,
+    recordAttempt,
+    recommendNext,
+    classifySkill,
+    skillKey,
+    evidenceMatchesRequirement,
+    evaluateContract
+  };
 });
