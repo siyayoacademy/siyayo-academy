@@ -24,11 +24,19 @@
   }
 
   function route(recommendation = {}, context = {}) {
+    const contractEligible = context.contractEligible === true;
+
     if (recommendation.action === 'advance') {
-      return { action: 'advance', experienceId: context.nextExperience || null, focus: null };
+      return { action: 'advance', experienceId: context.nextExperience || null, focus: null, contractEligible };
     }
     if (recommendation.action !== 'reinforce') {
-      return { action: 'continue-assessment', experienceId: context.currentExperience || 'shopping-for-dinner', focus: 'assessment' };
+      return {
+        action: 'continue-assessment',
+        experienceId: context.currentExperience || 'shopping-for-dinner',
+        focus: contractEligible ? 'eligible-opportunity' : 'assessment',
+        contractEligible,
+        reason: contractEligible ? 'green-pass-eligible-awaiting-opportunity' : recommendation.reason
+      };
     }
 
     const parsed = parseSkill(recommendation.skill);
@@ -45,6 +53,7 @@
       chapter: parsed.chapter || context.chapter || 'verbs',
       ...fallback,
       experienceId: matchedResonance ? resonance.experienceId : fallback.experienceId,
+      contractEligible,
       resonance: resonance ? {
         status: resonance.status,
         score: resonance.score ?? resonance.bestCandidate?.score ?? 0,
