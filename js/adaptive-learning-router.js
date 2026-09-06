@@ -42,7 +42,8 @@
 
   function currentExperienceScope(experiences, currentExperience) {
     if (!Array.isArray(experiences) || !currentExperience) return null;
-    return experiences.filter(experience => experience?.id === currentExperience);
+    const scoped = experiences.filter(experience => experience?.id === currentExperience);
+    return scoped.length ? scoped : null;
   }
 
   function route(recommendation = {}, context = {}) {
