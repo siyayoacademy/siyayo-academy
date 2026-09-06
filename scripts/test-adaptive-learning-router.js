@@ -9,6 +9,7 @@ assert.equal(modal.language, 'en');
 assert.equal(modal.experienceId, 'shopping-for-dinner');
 assert.equal(modal.focus, 'debating');
 assert.equal(modal.questionWord, 'which');
+assert.equal(modal.contractEligible, false);
 
 const auxiliaryBe = Router.route({ action: 'reinforce', skill: 'pt:verbs:auxiliary-be' });
 assert.equal(auxiliaryBe.language, 'pt');
@@ -39,9 +40,29 @@ assert.equal(guardedModal.experienceId, 'shopping-for-dinner', 'insufficient res
 assert.equal(guardedModal.resonance.minimumScore, 99);
 
 const observing = Router.route({ action: 'continue-assessment' }, { currentExperience: 'preparing-dinner' });
-assert.deepEqual(observing, { action: 'continue-assessment', experienceId: 'preparing-dinner', focus: 'assessment' });
+assert.deepEqual(observing, {
+  action: 'continue-assessment',
+  experienceId: 'preparing-dinner',
+  focus: 'assessment',
+  contractEligible: false,
+  reason: undefined
+});
 
-const advance = Router.route({ action: 'advance' }, { nextExperience: 'having-dinner' });
-assert.deepEqual(advance, { action: 'advance', experienceId: 'having-dinner', focus: null });
+const eligibleWaiting = Router.route(
+  { action: 'continue-assessment', reason: 'green-pass-eligible-awaiting-route' },
+  { currentExperience: 'shopping-for-dinner', contractEligible: true }
+);
+assert.deepEqual(eligibleWaiting, {
+  action: 'continue-assessment',
+  experienceId: 'shopping-for-dinner',
+  focus: 'eligible-opportunity',
+  contractEligible: true,
+  reason: 'green-pass-eligible-awaiting-opportunity'
+});
+assert.notEqual(eligibleWaiting.action, 'advance', 'eligibility alone must never manufacture an advance');
+
+const advance = Router.route({ action: 'advance' }, { nextExperience: 'having-dinner', contractEligible: true });
+assert.deepEqual(advance, { action: 'advance', experienceId: 'having-dinner', focus: null, contractEligible: true });
 
 console.log('Adaptive learning router tests passed.');
+console.log('Jaguar eligibility context: PASS — eligible changes decision context without forcing advance.');
