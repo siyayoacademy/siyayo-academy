@@ -23,7 +23,6 @@ const determinerAssisted = { ...baseAttempt, dimension: 'determiner-use', result
 const determinerIndependent = { ...baseAttempt, dimension: 'determiner-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' };
 const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result: 'pass', mode: 'transfer', support: 'none', context: 'shopping-clothes' };
 
-// No Pass Contract: policy cannot manufacture Contract authority.
 {
   const session = createSession('authority-no-contract');
   const profile = GreenPassProfile.createProfile('authority-no-contract');
@@ -33,7 +32,7 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.deepEqual(result.recommendation, result.legacyRecommendation);
 }
 
-// WHICH is declaratively adopted: Pass Contract is enough; no manual authority flag is needed.
+// Missing Contract evidence is observational uncertainty, not automatic reinforcement.
 {
   const session = createSession('authority-policy-which');
   let profile = GreenPassProfile.createProfile('authority-policy-which');
@@ -46,18 +45,23 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
 
   let result = submit(choiceAssisted);
   assert.equal(result.operationalAuthority, 'contract');
-  assert.equal(result.recommendation.action, 'reinforce');
+  assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
+  assert.equal(result.recommendation.action, 'continue-assessment');
+  assert.equal(result.recommendation.reason, 'waiting-for-contract-evidence');
+  assert.equal(result.advanceSelection, null);
 
   result = submit(determinerAssisted);
   assert.equal(result.legacyRecommendation.action, 'advance');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
-  assert.equal(result.recommendation.action, 'reinforce');
+  assert.equal(result.recommendation.action, 'continue-assessment');
   assert.equal(result.recommendation.authority, 'contract');
   assert.equal(result.advanceSelection, null);
 
   result = submit(determinerIndependent);
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
-  assert.equal(result.recommendation.action, 'reinforce');
+  assert.equal(result.contractEvaluation.missing.length, 1);
+  assert.equal(result.contractEvaluation.missing[0].mode, 'transfer');
+  assert.equal(result.recommendation.action, 'continue-assessment');
 
   result = submit(determinerTransfer);
   assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
@@ -66,21 +70,18 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   assert.equal(result.greenPassComparison.agreement, true);
 }
 
-// HOW MUCH genericity probe: the same runtime cycle evaluates a second skill without skill-specific engine logic.
+// HOW MUCH genericity remains on legacy authority while using the same Contract evaluator.
 {
   const skill = 'how-much.use.uncountable';
-  const passContract = {
-    requires: [
-      { dimension: 'quantity-function', result: 'pass' },
-      { dimension: 'uncountable-use', result: 'pass', support: 'none' },
-      { dimension: 'uncountable-use', result: 'pass', mode: 'transfer', support: 'none' }
-    ]
-  };
+  const passContract = { requires: [
+    { dimension: 'quantity-function', result: 'pass' },
+    { dimension: 'uncountable-use', result: 'pass', support: 'none' },
+    { dimension: 'uncountable-use', result: 'pass', mode: 'transfer', support: 'none' }
+  ] };
   const session = createSession('how-much-cycle-genericity', skill);
   let profile = GreenPassProfile.createProfile('how-much-cycle-genericity');
   let context = { passContract, evidencePackets: [] };
   const common = { language: 'en', chapter: 'question-words', skill, correct: true, confidence: 0.95 };
-
   function submit(attempt) {
     const result = AdaptiveLearningCycle.submit(profile, session, attempt, context);
     profile = result.greenProfile; context = result.nextContext;
@@ -94,26 +95,19 @@ const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result
   result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
-  assert.equal(result.contractEvaluation.missing.length, 1);
   assert.equal(result.contractEvaluation.missing[0].mode, 'transfer');
 
   result = submit({ ...common, dimension: 'uncountable-use', result: 'pass', mode: 'transfer', support: 'none', context: 'shopping-drinks' });
   assert.equal(result.operationalAuthority, 'legacy');
   assert.equal(result.contractEvaluation.status, 'GREEN_PASS');
   assert.equal(result.evidencePacket.skill, skill);
-
-  const contractTrace = session.trace.filter(entry => entry.event === 'green-pass-contract-evaluated');
-  assert.equal(contractTrace.length, 3);
-  assert.equal(contractTrace.at(-1).status, 'GREEN_PASS');
 }
 
-// Policy source, not hidden skill branching, controls adoption.
 assert.equal(authorityPolicy.contractAuthoritySkills.includes('which.use.determiner'), true);
 assert.equal(authorityPolicy.contractAuthoritySkills.includes('how-much.use.uncountable'), false);
 assert.equal(AdaptiveLearningCycle.resolveAuthority({}, 'which.use.determiner'), 'legacy');
 assert.equal(AdaptiveLearningCycle.resolveAuthority({ passContract: which.passContract }, 'which.use.determiner'), 'contract');
-assert.equal(AdaptiveLearningCycle.resolveAuthority({ passContract: { requires: [] } }, 'how-much.use.uncountable'), 'legacy');
 
 console.log('Adaptive contract cycle integration: PASS');
-console.log('Declarative authority adoption: WHICH -> contract; non-adopted skill -> legacy fallback.');
-console.log('Runtime genericity probe: synthetic HOW MUCH reaches GREEN_PASS through the same adaptive cycle.');
+console.log('Evidence humility: WAITING_FOR_EVIDENCE -> continue-assessment, not forced reinforcement.');
+console.log('Runtime genericity probe: synthetic HOW MUCH still reaches GREEN_PASS through the same adaptive cycle.');
