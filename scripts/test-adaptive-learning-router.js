@@ -85,15 +85,16 @@ assert.deepEqual(eligibleWhich.resonance.matched.perspectives, ['debating']);
 assert.notEqual(eligibleWhich.action, 'advance', 'a meaningful opportunity is not an advance order');
 
 // 08.18d: eligible internal opportunity inspection is bounded to the current Experience.
-// Shopping contains the canonical WHICH + choose opportunity; Preparing Dinner does not.
-// A strong match elsewhere must not leak across the Experience boundary.
+// Shopping has the canonical WHICH + choose + debating resonance (score 5).
+// Preparing Dinner has only a weak partial resonance, so a threshold of 2 distinguishes
+// a meaningful current opportunity from a stronger opportunity that exists elsewhere.
 const eligibleWhichOutsideCurrent = Router.route(
   { action: 'continue-assessment', skill: 'which.use.determiner', reason: 'green-pass-eligible-awaiting-route' },
   {
     currentExperience: 'preparing-dinner',
     contractEligible: true,
     experiences: corpus.items,
-    minimumResonanceScore: 1
+    minimumResonanceScore: 2
   }
 );
 assert.equal(eligibleWhichOutsideCurrent.action, 'continue-assessment');
@@ -101,7 +102,8 @@ assert.equal(eligibleWhichOutsideCurrent.experienceId, 'preparing-dinner');
 assert.equal(eligibleWhichOutsideCurrent.focus, 'eligible-opportunity');
 assert.equal(eligibleWhichOutsideCurrent.reason, 'green-pass-eligible-awaiting-opportunity');
 assert.equal(eligibleWhichOutsideCurrent.resonance.status, 'no-resonance');
-assert.equal(eligibleWhichOutsideCurrent.resonance.score, 0);
+assert.ok(eligibleWhichOutsideCurrent.resonance.score < 2, 'current Experience must stay below the meaningful-opportunity threshold');
+assert.equal(eligibleWhichOutsideCurrent.resonance.minimumScore, 2);
 assert.notEqual(eligibleWhichOutsideCurrent.action, 'advance');
 
 const shoppingOnly = Router.currentExperienceScope(corpus.items, 'shopping-for-dinner');
@@ -131,4 +133,4 @@ assert.deepEqual(advance, { action: 'advance', experienceId: 'having-dinner', fo
 console.log('Adaptive learning router tests passed.');
 console.log('Jaguar eligibility context: PASS — eligible changes decision context without forcing advance.');
 console.log('Jaguar WHICH opportunity inspection: PASS — resonance can expose an existing opportunity while preserving the current Experience.');
-console.log('Current Experience boundary: PASS — resonance elsewhere cannot masquerade as an internal opportunity.');
+console.log('Current Experience boundary: PASS — stronger resonance elsewhere cannot masquerade as a meaningful internal opportunity.');
