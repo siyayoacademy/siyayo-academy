@@ -20,6 +20,7 @@
 
     let evidencePacket = null;
     let contractEvaluation = null;
+    let greenPassComparison = null;
     if (context.passContract) {
       if (!AdaptiveAttemptLoop || typeof AdaptiveAttemptLoop.toEvidencePacket !== 'function') {
         throw new TypeError('Adaptive evidence packet bridge is required for Pass Contract evaluation.');
@@ -33,6 +34,14 @@
         ? context.evidencePackets.concat(evidencePacket)
         : [evidencePacket];
       contractEvaluation = GreenPassProfile.evaluateContract(context.passContract, evidencePackets);
+      const legacyGreenPass = nextGreenProfile.greenPass === true;
+      const contractGreenPass = contractEvaluation.status === 'GREEN_PASS';
+      greenPassComparison = {
+        legacyGreenPass,
+        contractGreenPass,
+        agreement: legacyGreenPass === contractGreenPass,
+        operationalAuthority: 'legacy'
+      };
 
       session.trace.push({
         archetype: 'patita',
@@ -41,6 +50,17 @@
         skill: evidencePacket.skill,
         status: contractEvaluation.status,
         satisfied: contractEvaluation.satisfied
+      });
+
+      session.trace.push({
+        archetype: 'patita',
+        event: 'green-pass-comparison',
+        experienceId: currentExperience,
+        skill: evidencePacket.skill,
+        legacyGreenPass,
+        contractGreenPass,
+        agreement: greenPassComparison.agreement,
+        operationalAuthority: greenPassComparison.operationalAuthority
       });
     }
 
@@ -83,6 +103,7 @@
       advanceSelection,
       evidencePacket,
       contractEvaluation,
+      greenPassComparison,
       nextContext: {
         ...context,
         evidencePackets: evidencePacket
