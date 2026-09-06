@@ -11,7 +11,6 @@
   function resolveAuthority(context = {}, skill = null) {
     if (!context.passContract) return 'legacy';
     if (context.greenPassAuthority === 'contract') return 'contract';
-
     const policy = context.greenPassAuthorityPolicy || GreenPassAuthorityPolicy;
     if (!policy || !Array.isArray(policy.contractAuthoritySkills)) return 'legacy';
     const skillId = skill || context.skill || null;
@@ -20,7 +19,6 @@
 
   function submit(greenProfile, session, attempt = {}, context = {}) {
     if (!GreenPassProfile || typeof GreenPassProfile.recordAttempt !== 'function') throw new TypeError('Green Pass profile API is required.');
-
     const traceEntry = AdaptiveAttemptLoop.recordAttempt(session, attempt);
     const greenAttempt = AdaptiveAttemptLoop.toGreenPassAttempt(session, attempt);
     const nextGreenProfile = GreenPassProfile.recordAttempt(greenProfile, greenAttempt);
@@ -34,26 +32,25 @@
     if (context.passContract) {
       if (!AdaptiveAttemptLoop || typeof AdaptiveAttemptLoop.toEvidencePacket !== 'function') throw new TypeError('Adaptive evidence packet bridge is required for Pass Contract evaluation.');
       if (!GreenPassProfile || typeof GreenPassProfile.evaluateContract !== 'function') throw new TypeError('Green Pass contract evaluator API is required.');
-
       evidencePacket = AdaptiveAttemptLoop.toEvidencePacket(session, attempt);
       const evidencePackets = Array.isArray(context.evidencePackets) ? context.evidencePackets.concat(evidencePacket) : [evidencePacket];
       contractEvaluation = GreenPassProfile.evaluateContract(context.passContract, evidencePackets);
       const legacyGreenPass = nextGreenProfile.greenPass === true;
       const contractGreenPass = contractEvaluation.status === 'GREEN_PASS';
       greenPassComparison = { legacyGreenPass, contractGreenPass, agreement: legacyGreenPass === contractGreenPass, operationalAuthority };
-
       session.trace.push({ archetype: 'patita', event: 'green-pass-contract-evaluated', experienceId: currentExperience, skill: evidencePacket.skill, status: contractEvaluation.status, satisfied: contractEvaluation.satisfied });
       session.trace.push({ archetype: 'patita', event: 'green-pass-comparison', experienceId: currentExperience, skill: evidencePacket.skill, legacyGreenPass, contractGreenPass, agreement: greenPassComparison.agreement, operationalAuthority });
     }
 
+    const contractEligible = operationalAuthority === 'contract' && contractEvaluation?.status === 'GREEN_PASS';
     let recommendation = legacyRecommendation;
     if (operationalAuthority === 'contract') {
-      recommendation = contractEvaluation.status === 'GREEN_PASS'
-        ? { ...legacyRecommendation, action: 'advance', authority: 'contract' }
+      recommendation = contractEligible
+        ? { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'green-pass-eligible-awaiting-route' }
         : { ...legacyRecommendation, action: 'continue-assessment', authority: 'contract', reason: 'waiting-for-contract-evidence' };
     }
 
-    session.trace.push({ archetype: 'patita', event: 'green-pass-evaluated', experienceId: currentExperience, skill: greenAttempt.skill, status: nextGreenProfile.bySkill[GreenPassProfile.skillKey(greenAttempt)]?.status || 'observing', greenPass: nextGreenProfile.greenPass, nextAction: recommendation.action, operationalAuthority });
+    session.trace.push({ archetype: 'patita', event: 'green-pass-evaluated', experienceId: currentExperience, skill: greenAttempt.skill, status: nextGreenProfile.bySkill[GreenPassProfile.skillKey(greenAttempt)]?.status || 'observing', greenPass: nextGreenProfile.greenPass, contractEligible, nextAction: recommendation.action, operationalAuthority });
 
     let advanceSelection = null;
     if (recommendation.action === 'advance') {
@@ -69,6 +66,7 @@
       recommendation,
       legacyRecommendation,
       operationalAuthority,
+      contractEligible,
       advanceSelection,
       evidencePacket,
       contractEvaluation,
