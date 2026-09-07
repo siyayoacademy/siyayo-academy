@@ -8,29 +8,23 @@
     RELEASE_ELIGIBLE: 'RELEASE_ELIGIBLE'
   });
 
-  function evaluateRelease(waitClassification = null, releaseEvent = null) {
+  function evaluateRelease(waitClassification = null, releaseAuthorization = null) {
     if (!waitClassification || !waitClassification.state) return null;
 
-    // 08.18g starts only from the WAIT state already proven by runtime evidence.
     if (waitClassification.state !== 'OPPORTUNITY_FOUND_AWAITING_EVENT') return {
       status: statuses.WAIT_PRESERVED,
       reason: 'release-rule-not-defined-for-wait-state'
     };
 
-    if (!releaseEvent || releaseEvent.observed !== true) return {
+    if (!releaseAuthorization || releaseAuthorization.status !== 'RESUME_AUTHORIZATION_ELIGIBLE') return {
       status: statuses.WAIT_PRESERVED,
-      reason: 'release-event-not-observed'
-    };
-
-    if (releaseEvent.authorizesResume !== true) return {
-      status: statuses.WAIT_PRESERVED,
-      reason: 'release-event-does-not-authorize-resume'
+      reason: 'grounded-resume-authorization-not-eligible'
     };
 
     return {
       status: statuses.RELEASE_ELIGIBLE,
-      reason: 'observed-event-authorizes-resume',
-      eventType: releaseEvent.type || null
+      reason: 'grounded-resume-authorization-eligible',
+      eventType: releaseAuthorization.eventType || null
     };
   }
 
