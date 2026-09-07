@@ -198,6 +198,11 @@ jobs:
           node --check js/adaptive-agency-resume-context.js
           node scripts/test-adaptive-agency-resume-context.js
 
+      - name: Run conservative resume executor tests
+        run: |
+          node --check js/adaptive-resume-executor.js
+          node scripts/test-adaptive-resume-executor.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
