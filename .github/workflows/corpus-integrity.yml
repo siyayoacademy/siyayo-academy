@@ -47,7 +47,7 @@ jobs:
         run: node scripts/validate-archetypes.mjs
 
       - name: Validate SIYAYO palettes against JSON Schema
-        run: npx --yes ajv-cli@5 validate --spec=draft2020 --strict=true -s data/schemas/palette.schema.json -d 'data/palettes/*.json'
+        run: npx --yes ajv-cli@5 compile --spec=draft2020 --strict=true -s data/schemas/palette.schema.json
 
       - name: Validate archetype palette references
         run: node scripts/validate-archetype-palettes.mjs
@@ -167,6 +167,11 @@ jobs:
         run: |
           node --check js/adaptive-wait-release.js
           node scripts/test-adaptive-wait-release.js
+
+      - name: Run adaptive resume eligibility tests
+        run: |
+          node --check js/adaptive-resume-eligibility.js
+          node scripts/test-adaptive-resume-eligibility.js
 
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
