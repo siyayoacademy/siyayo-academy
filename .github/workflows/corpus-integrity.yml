@@ -203,6 +203,11 @@ jobs:
           node --check js/adaptive-resume-executor.js
           node scripts/test-adaptive-resume-executor.js
 
+      - name: Run WHICH resume through Verb Explorer bridge tests
+        run: |
+          node --check js/verb-explorer-resume-runtime.js
+          node scripts/test-verb-explorer-resume-runtime.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
