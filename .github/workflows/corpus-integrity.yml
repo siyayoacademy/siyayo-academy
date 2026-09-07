@@ -163,6 +163,11 @@ jobs:
           node --check js/adaptive-wait-classifier.js
           node scripts/test-adaptive-wait-classifier.js
 
+      - name: Run adaptive WAIT release tests
+        run: |
+          node --check js/adaptive-wait-release.js
+          node scripts/test-adaptive-wait-release.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
