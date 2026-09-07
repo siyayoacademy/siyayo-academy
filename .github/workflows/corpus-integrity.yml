@@ -173,6 +173,11 @@ jobs:
           node --check js/adaptive-resume-eligibility.js
           node scripts/test-adaptive-resume-eligibility.js
 
+      - name: Run learner agency authorization tests
+        run: |
+          node --check js/adaptive-learner-agency.js
+          node scripts/test-adaptive-learner-agency.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
