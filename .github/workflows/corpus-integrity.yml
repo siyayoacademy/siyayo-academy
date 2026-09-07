@@ -188,6 +188,11 @@ jobs:
           node --check js/adaptive-agency-resume.js
           node scripts/test-adaptive-agency-resume.js
 
+      - name: Run resume context snapshot tests
+        run: |
+          node --check js/adaptive-resume-context.js
+          node scripts/test-adaptive-resume-context.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
