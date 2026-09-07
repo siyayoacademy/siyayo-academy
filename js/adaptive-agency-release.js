@@ -12,24 +12,11 @@
 
     const agencyEvaluation = AdaptiveLearnerAgency.evaluateAgency(waitClassification, learnerEvent);
 
-    if (!agencyEvaluation || agencyEvaluation.status !== 'RESUME_AUTHORIZATION_ELIGIBLE') {
-      return {
-        agencyEvaluation,
-        releaseEvaluation: waitClassification && waitClassification.state
-          ? AdaptiveWaitRelease.evaluateRelease(waitClassification, null)
-          : null
-      };
-    }
-
-    const groundedReleaseEvent = {
-      observed: true,
-      authorizesResume: true,
-      type: agencyEvaluation.eventType || learnerEvent?.type || null
-    };
-
     return {
       agencyEvaluation,
-      releaseEvaluation: AdaptiveWaitRelease.evaluateRelease(waitClassification, groundedReleaseEvent)
+      releaseEvaluation: waitClassification && waitClassification.state
+        ? AdaptiveWaitRelease.evaluateRelease(waitClassification, agencyEvaluation)
+        : null
     };
   }
 
