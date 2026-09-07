@@ -183,6 +183,11 @@ jobs:
           node --check js/adaptive-agency-release.js
           node scripts/test-adaptive-agency-release.js
 
+      - name: Run grounded agency resume eligibility tests
+        run: |
+          node --check js/adaptive-agency-resume.js
+          node scripts/test-adaptive-agency-resume.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
