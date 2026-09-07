@@ -158,6 +158,11 @@ jobs:
           node --check js/adaptive-learning-router.js
           node scripts/test-adaptive-learning-router.js
 
+      - name: Run adaptive WAIT classifier tests
+        run: |
+          node --check js/adaptive-wait-classifier.js
+          node scripts/test-adaptive-wait-classifier.js
+
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
 
