@@ -12,36 +12,43 @@ assert.equal(Release.evaluateRelease(null, null), null);
 
 assert.deepEqual(Release.evaluateRelease(wait, null), {
   status: 'WAIT_PRESERVED',
-  reason: 'release-event-not-observed'
+  reason: 'grounded-resume-authorization-not-eligible'
 });
 
-assert.deepEqual(Release.evaluateRelease(wait, {
-  observed: true,
-  type: 'learner-response',
-  authorizesResume: false
-}), {
-  status: 'WAIT_PRESERVED',
-  reason: 'release-event-does-not-authorize-resume'
-});
-
+// A caller-provided boolean is no longer release authority.
 assert.deepEqual(Release.evaluateRelease(wait, {
   observed: true,
   type: 'learner-response',
   authorizesResume: true
 }), {
+  status: 'WAIT_PRESERVED',
+  reason: 'grounded-resume-authorization-not-eligible'
+});
+
+assert.deepEqual(Release.evaluateRelease(wait, {
+  status: 'AGENCY_AMBIGUOUS',
+  eventType: 'learner-response'
+}), {
+  status: 'WAIT_PRESERVED',
+  reason: 'grounded-resume-authorization-not-eligible'
+});
+
+assert.deepEqual(Release.evaluateRelease(wait, {
+  status: 'RESUME_AUTHORIZATION_ELIGIBLE',
+  eventType: 'learner-response'
+}), {
   status: 'RELEASE_ELIGIBLE',
-  reason: 'observed-event-authorizes-resume',
+  reason: 'grounded-resume-authorization-eligible',
   eventType: 'learner-response'
 });
 
 assert.deepEqual(Release.evaluateRelease({ state: 'INSPECTION_UNAVAILABLE' }, {
-  observed: true,
-  type: 'learner-response',
-  authorizesResume: true
+  status: 'RESUME_AUTHORIZATION_ELIGIBLE',
+  eventType: 'learner-response'
 }), {
   status: 'WAIT_PRESERVED',
   reason: 'release-rule-not-defined-for-wait-state'
 });
 
 console.log('Adaptive WAIT release tests passed.');
-console.log('Release contract: PASS — observed authorization can make resume eligible without selecting NEXT.');
+console.log('Release authority: PASS — naked authorizesResume booleans cannot release WAIT; grounded resume authorization eligibility is required.');
