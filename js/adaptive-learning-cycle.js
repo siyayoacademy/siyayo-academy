@@ -5,11 +5,12 @@
     typeof module === 'object' && module.exports ? require('./adaptive-advance-selector.js') : root.AdaptiveAdvanceSelector,
     typeof module === 'object' && module.exports ? require('../data/learning/green-pass-authority.json') : root.GreenPassAuthorityPolicy,
     typeof module === 'object' && module.exports ? require('./adaptive-learning-router.js') : root.AdaptiveLearningRouter,
-    typeof module === 'object' && module.exports ? require('./adaptive-wait-classifier.js') : root.AdaptiveWaitClassifier
+    typeof module === 'object' && module.exports ? require('./adaptive-wait-classifier.js') : root.AdaptiveWaitClassifier,
+    typeof module === 'object' && module.exports ? require('./adaptive-agency-resume-context.js') : root.AdaptiveAgencyResumeContext
   );
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.AdaptiveLearningCycle = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy, AdaptiveLearningRouter, AdaptiveWaitClassifier) {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy, AdaptiveLearningRouter, AdaptiveWaitClassifier, AdaptiveAgencyResumeContext) {
   function resolveAuthority(context = {}, skill = null) {
     if (!context.passContract) return 'legacy';
     if (context.greenPassAuthority === 'contract') return 'contract';
@@ -56,6 +57,7 @@
 
     let routeInspection = null;
     let waitClassification = null;
+    let resumeEvaluation = null;
     if (operationalAuthority === 'contract') {
       if (!AdaptiveLearningRouter || typeof AdaptiveLearningRouter.route !== 'function') throw new TypeError('Adaptive learning router API is required for contract route inspection.');
       routeInspection = AdaptiveLearningRouter.route(recommendation, {
@@ -95,6 +97,25 @@
           });
         }
       }
+
+      if (waitClassification && context.learnerEvent && context.resumeState && AdaptiveAgencyResumeContext && typeof AdaptiveAgencyResumeContext.evaluateAgencyResumeContext === 'function') {
+        resumeEvaluation = AdaptiveAgencyResumeContext.evaluateAgencyResumeContext(
+          waitClassification,
+          context.learnerEvent,
+          { currentExperience },
+          context.resumeState
+        );
+        session.trace.push({
+          archetype: 'patita',
+          event: 'adaptive-resume-evaluated',
+          experienceId: currentExperience,
+          skill: greenAttempt.skill,
+          agencyStatus: resumeEvaluation?.agencyEvaluation?.status || null,
+          releaseStatus: resumeEvaluation?.releaseEvaluation?.status || null,
+          resumeStatus: resumeEvaluation?.resumeEligibility?.status || null,
+          resumeContextStatus: resumeEvaluation?.resumeContext?.status || null
+        });
+      }
     }
 
     let advanceSelection = null;
@@ -114,6 +135,7 @@
       contractEligible,
       routeInspection,
       waitClassification,
+      resumeEvaluation,
       advanceSelection,
       evidencePacket,
       contractEvaluation,
