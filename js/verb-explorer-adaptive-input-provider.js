@@ -14,13 +14,19 @@
     if(!current)return null;
     var state=typeof current.getState==='function'?current.getState(choice,target):current.state;
     if(!state)return null;
+    var attempt=typeof current.getAttempt==='function'?current.getAttempt(choice,state,target):current.attempt;
+    if(!attempt)return null;
+    var context=typeof current.getContext==='function'?current.getContext(choice,state,target):current.context;
+    if(!context)return null;
+    var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
+    if(!resumeState)return null;
     return {
       profile:current.profile,
       session:current.session,
-      attempt:typeof current.getAttempt==='function'?current.getAttempt(choice,state,target):current.attempt,
-      context:typeof current.getContext==='function'?current.getContext(choice,state,target):current.context,
+      attempt:attempt,
+      context:context,
       state:state,
-      resumeState:typeof current.getResumeState==='function'?current.getResumeState(state,target):state
+      resumeState:resumeState
     };
   }
 
