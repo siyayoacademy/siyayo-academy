@@ -51,6 +51,7 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
       'js/verb-explorer-learner-event.js',
       'js/verb-explorer-adaptive-controller.js',
       'js/verb-explorer-adaptive-input-provider.js',
+      'js/verb-explorer-adaptive-state-bridge.js',
       'js/verb-explorer-adaptive-coordinator.js',
       'js/verb-explorer-choice-adaptive-wire.js'
     ];
@@ -62,6 +63,8 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveInputProvider, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveInputProvider.configure, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveInputProvider.clear, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveStateBridge.getState, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveStateBridge.getResumeState, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveCoordinator.submitChoice, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install, 'function');
     assert.strictEqual(clickListeners.length, 1, 'bootstrap should install adaptive choice wire exactly once');
@@ -69,7 +72,7 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
       assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
       assert.strictEqual(clickListeners.length, 1, 'second bootstrap must not duplicate the choice wire listener');
-      console.log('Verb Explorer adaptive browser bootstrap: PASS — Cycle available, live learner-event/controller/callable-input-provider/coordinator/wire loaded in order, wire installed once, and repeated bootstrap is idempotent.');
+      console.log('Verb Explorer adaptive browser bootstrap: PASS — Cycle available, live learner-event/controller/input-provider/state-bridge/coordinator/wire loaded in order, wire installed once, and repeated bootstrap is idempotent.');
     });
   })
   .catch(function(error) {
