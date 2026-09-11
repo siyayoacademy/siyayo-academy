@@ -58,7 +58,15 @@ const document = {
 };
 function dispatchClick(target) { for (const handler of listeners.click) handler({ target }); }
 
-const sandbox = vm.createContext({ document, Promise, Object, AdaptiveLearningCycle });
+let cycleResult = null;
+const realCycleFacade = Object.freeze({
+  submit(profileArg, sessionArg, attemptArg, contextArg) {
+    cycleResult = AdaptiveLearningCycle.submit(profileArg, sessionArg, attemptArg, contextArg);
+    return cycleResult;
+  }
+});
+
+const sandbox = vm.createContext({ document, Promise, Object, AdaptiveLearningCycle: realCycleFacade });
 sandbox.globalThis = sandbox;
 for (const file of [
   'js/verb-explorer-learner-event.js',
@@ -85,13 +93,6 @@ sandbox.SIYAYOVerbExplorerAdaptiveInputProvider.configure({
 });
 
 vm.runInContext(fs.readFileSync('js/verb-explorer-choice-adaptive-wire.js', 'utf8'), sandbox, { filename: 'js/verb-explorer-choice-adaptive-wire.js' });
-
-let cycleResult = null;
-const originalSubmitChoice = sandbox.SIYAYOVerbExplorerAdaptiveController.submitChoice;
-sandbox.SIYAYOVerbExplorerAdaptiveController.submitChoice = function(input) {
-  cycleResult = originalSubmitChoice(input);
-  return cycleResult;
-};
 
 assert.equal(sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install(), true);
 const choiceTarget = {
