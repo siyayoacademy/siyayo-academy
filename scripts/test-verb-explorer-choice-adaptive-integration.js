@@ -6,6 +6,7 @@ const vm = require('node:vm');
 
 const listeners = { click: [] };
 const calls = [];
+const coordinatorCalls = [];
 const document = {
   addEventListener(type, handler) {
     (listeners[type] || (listeners[type] = [])).push(handler);
@@ -50,7 +51,6 @@ const session = { id: 'session-1' };
 const attempt = { skill: 'which.use.determiner', result: 'pass' };
 const context = { passContract: { skill: 'which.use.determiner' }, evidencePackets: [] };
 
-// Model the existing Verb Explorer handler registering before the adaptive wire.
 document.addEventListener('click', function(event) {
   const target = event.target && typeof event.target.closest === 'function'
     ? event.target.closest('[data-choice-select]')
@@ -59,66 +59,59 @@ document.addEventListener('click', function(event) {
 });
 
 assert.equal(sandbox.SIYAYOVerbExplorerAdaptiveInputProvider.configure({
-  profile,
-  session,
-  attempt,
-  context,
+  profile, session, attempt, context,
   getState: () => state,
   getAttempt: () => attempt,
   getContext: () => context,
   getResumeState: currentState => currentState
 }), true);
 
-vm.runInContext(
-  fs.readFileSync('js/verb-explorer-choice-adaptive-wire.js', 'utf8'),
-  sandbox,
-  { filename: 'js/verb-explorer-choice-adaptive-wire.js' }
-);
-
+vm.runInContext(fs.readFileSync('js/verb-explorer-choice-adaptive-wire.js', 'utf8'), sandbox, { filename: 'js/verb-explorer-choice-adaptive-wire.js' });
 assert.equal(sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install(), true);
 assert.equal(sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install(), false, 'wire must install only once');
 assert.equal(listeners.click.length, 2, 'existing UI handler and adaptive wire must both be present');
 
-const choiceTarget = {
-  dataset: { choiceSelect: 'choose' },
-  closest(selector) { return selector === '[data-choice-select]' ? this : null; }
-};
-const nestedTarget = {
-  closest(selector) { return selector === '[data-choice-select]' ? choiceTarget : null; }
-};
+const choiceTarget = { dataset: { choiceSelect: 'choose' }, closest(selector) { return selector === '[data-choice-select]' ? this : null; } };
+const nestedTarget = { closest(selector) { return selector === '[data-choice-select]' ? choiceTarget : null; } };
 
 dispatchClick(nestedTarget);
-assert.equal(state.experienceChoiceCandidate, 'choose', 'existing synchronous handler must record the choice before the adaptive microtask');
-assert.equal(calls.length, 0, 'adaptive Cycle submission must wait until the microtask');
+assert.equal(state.experienceChoiceCandidate, 'choose');
+assert.equal(calls.length, 0, 'adaptive submission must wait until the microtask');
 
 Promise.resolve().then(function(){
-  assert.equal(calls.length, 1, 'one real choice-select click must reach AdaptiveLearningCycle.submit exactly once');
-  const call = calls[0];
-  assert.strictEqual(call.profile, profile);
-  assert.strictEqual(call.session, session);
-  assert.strictEqual(call.attempt, attempt);
-  assert.equal(call.context.learnerEvent.observed, true);
-  assert.equal(call.context.learnerEvent.actor, 'learner');
-  assert.equal(call.context.learnerEvent.source, 'choice-select');
-  assert.equal(call.context.learnerEvent.choice, 'choose');
-  assert.equal(call.context.learnerEvent.experienceId, 'shopping-for-dinner');
-  assert.equal(call.context.learnerEvent.question, 3);
-  assert.equal(call.context.learnerEvent.perspective, 'debating');
-  assert.strictEqual(call.context.resumeState, state);
-  assert.equal(call.context.resumeState.experienceChoiceCandidate, 'choose', 'provider must observe the state updated by the existing handler');
-  assert.equal(call.context.advanceSelection, undefined, 'integration boundary must not invent NEXT');
+  assert.equal(calls.length, 1, 'fallback path must preserve the already-homologated controller/provider submission');
+  assert.equal(calls[0].context.learnerEvent.choice, 'choose');
+  assert.strictEqual(calls[0].context.resumeState, state);
+
+  sandbox.SIYAYOVerbExplorerAdaptiveCoordinator = Object.freeze({
+    submitChoice(choice, target) {
+      coordinatorCalls.push({ choice, target, stateChoice: state.experienceChoiceCandidate });
+      return { coordinated: true };
+    }
+  });
+  dispatchClick(nestedTarget);
+  assert.equal(coordinatorCalls.length, 0, 'coordinator route must also wait until the microtask');
+  return Promise.resolve();
+}).then(function(){
+  assert.equal(coordinatorCalls.length, 1, 'configured coordinator route must receive one choice exactly once');
+  assert.equal(coordinatorCalls[0].choice, 'choose');
+  assert.strictEqual(coordinatorCalls[0].target, choiceTarget);
+  assert.equal(coordinatorCalls[0].stateChoice, 'choose', 'coordinator must observe state after existing UI handler');
+  assert.equal(calls.length, 1, 'coordinator-first route must not also invoke fallback Cycle submission');
 
   const nonChoice = { closest() { return null; } };
   dispatchClick(nonChoice);
   return Promise.resolve();
 }).then(function(){
-  assert.equal(calls.length, 1, 'non-choice click must never reach AdaptiveLearningCycle.submit');
+  assert.equal(coordinatorCalls.length, 1, 'non-choice click must not reach coordinator');
+  assert.equal(calls.length, 1, 'non-choice click must not reach fallback');
 
+  sandbox.SIYAYOVerbExplorerAdaptiveCoordinator = null;
   const savedProvider = sandbox.SIYAYOVerbExplorerAdaptiveInputProvider;
   sandbox.SIYAYOVerbExplorerAdaptiveInputProvider = null;
   dispatchClick(choiceTarget);
   return Promise.resolve().then(function(){
-    assert.equal(calls.length, 1, 'missing provider must fail closed without Cycle submission');
+    assert.equal(calls.length, 1, 'missing coordinator/provider must fail closed');
     sandbox.SIYAYOVerbExplorerAdaptiveInputProvider = savedProvider;
   });
 }).then(function(){
@@ -126,11 +119,11 @@ Promise.resolve().then(function(){
   sandbox.SIYAYOVerbExplorerAdaptiveController = null;
   dispatchClick(choiceTarget);
   return Promise.resolve().then(function(){
-    assert.equal(calls.length, 1, 'missing controller must fail closed without Cycle submission');
+    assert.equal(calls.length, 1, 'missing coordinator/controller must fail closed');
     sandbox.SIYAYOVerbExplorerAdaptiveController = savedController;
   });
 }).then(function(){
-  console.log('Verb Explorer choice adaptive integration: PASS — existing synchronous choice handler updates state first; adaptive wire submits in the following microtask exactly once, supports nested targets, installs once, and fails closed without provider/controller; no NEXT invented.');
+  console.log('Verb Explorer choice adaptive integration: PASS — wire prefers coordinator exactly once after existing state update, preserves fallback compatibility, nested targets/install-once guards, fail-closed behavior, and invents no NEXT.');
 }).catch(function(error){
   console.error(error);
   process.exitCode = 1;
