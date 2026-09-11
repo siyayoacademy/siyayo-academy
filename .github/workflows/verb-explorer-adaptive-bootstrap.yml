@@ -13,6 +13,7 @@ on:
       - 'js/verb-explorer-adaptive-input-provider.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-learner-event.js'
+      - 'scripts/test-verb-explorer-learner-event-agency.js'
       - 'scripts/test-verb-explorer-adaptive-controller.js'
       - 'scripts/test-verb-explorer-adaptive-input-provider.js'
       - 'scripts/test-verb-explorer-choice-adaptive-integration.js'
@@ -37,6 +38,7 @@ jobs:
           node --check js/verb-explorer-adaptive-input-provider.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
+          node --check scripts/test-verb-explorer-learner-event-agency.js
           node --check scripts/test-verb-explorer-adaptive-controller.js
           node --check scripts/test-verb-explorer-adaptive-input-provider.js
           node --check scripts/test-verb-explorer-choice-adaptive-integration.js
@@ -44,6 +46,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
         run: node scripts/test-verb-explorer-learner-event.js
+      - name: Test learner event agency semantics
+        run: node scripts/test-verb-explorer-learner-event-agency.js
       - name: Test adaptive controller
         run: node scripts/test-verb-explorer-adaptive-controller.js
       - name: Test adaptive input provider
