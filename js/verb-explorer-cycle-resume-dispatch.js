@@ -1,0 +1,1 @@
+(function(root){function run(result){var d=root.AdaptiveResumeRuntimeDispatch;var r=root.SIYAYOVerbExplorerResumeRuntime;if(!d||!r||typeof d.dispatch!=='function')return null;return d.dispatch(result,r);}root.SIYAYOVerbExplorerCycleResumeDispatch=Object.freeze({run:run});})(typeof globalThis!=='undefined'?globalThis:this);

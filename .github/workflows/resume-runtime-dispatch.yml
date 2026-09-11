@@ -1,0 +1,32 @@
+name: Resume Runtime Dispatch
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  resume-runtime-dispatch:
+    name: Validate Cycle resume runtime dispatch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check resume dispatch syntax
+        run: |
+          node --check js/adaptive-resume-runtime-dispatch.js
+          node --check js/verb-explorer-cycle-resume-dispatch.js
+
+      - name: Run resume dispatch suite
+        run: node scripts/resume-dispatch-suite.js
