@@ -15,12 +15,20 @@
 
       // Run after the existing Verb Explorer click handler has recorded the choice.
       Promise.resolve().then(function(){
+        var choice=target.dataset.choiceSelect;
+        var coordinator=options.coordinator||root.SIYAYOVerbExplorerAdaptiveCoordinator;
+        if(coordinator&&typeof coordinator.submitChoice==='function'){
+          coordinator.submitChoice(choice,target);
+          return;
+        }
+
+        // Conservative compatibility path while the live coordinator is not configured/loaded.
         var controller=root.SIYAYOVerbExplorerAdaptiveController;
         var provider=options.getInput||root.SIYAYOVerbExplorerAdaptiveInputProvider;
         if(!controller||typeof controller.submitChoice!=='function'||typeof provider!=='function')return;
-        var input=provider(target.dataset.choiceSelect,target);
+        var input=provider(choice,target);
         if(!input)return;
-        controller.submitChoice(Object.assign({},input,{choice:target.dataset.choiceSelect}));
+        controller.submitChoice(Object.assign({},input,{choice:choice}));
       });
     });
     return true;
