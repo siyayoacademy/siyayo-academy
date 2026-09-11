@@ -8,8 +8,10 @@ on:
       - 'js/verb-explorer-cycle-resume-dispatch.js'
       - 'js/green-pass-authority-policy.js'
       - 'js/verb-explorer-learner-event.js'
+      - 'js/verb-explorer-adaptive-controller.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-learner-event.js'
+      - 'scripts/test-verb-explorer-adaptive-controller.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -26,9 +28,13 @@ jobs:
           node --check js/verb-explorer-adaptive-bootstrap.js
           node --check js/verb-explorer-cycle-resume-dispatch.js
           node --check js/verb-explorer-learner-event.js
+          node --check js/verb-explorer-adaptive-controller.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
+          node --check scripts/test-verb-explorer-adaptive-controller.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
         run: node scripts/test-verb-explorer-learner-event.js
+      - name: Test adaptive controller
+        run: node scripts/test-verb-explorer-adaptive-controller.js
