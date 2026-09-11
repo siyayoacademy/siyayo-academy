@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+const assert = require('node:assert/strict');
+const Dispatch = require('../js/adaptive-resume-runtime-dispatch.js');
+const snapshot = { currentExperienceId: 'shopping-for-dinner', experienceChoiceCandidate: 'choose', experiencePerspective: 'debating', lineOffset: 6 };
+const eligible = { resumeEvaluation: { resumeContext: { status: 'RESUME_CONTEXT_ELIGIBLE', snapshot } } };
+let calls = 0;
+const runtime = { execute(context) { calls += 1; assert.equal(context, eligible.resumeEvaluation.resumeContext); return { status: 'RESUME_EXECUTED', experienceId: 'shopping-for-dinner' }; } };
+const result = Dispatch.dispatch(eligible, runtime);
+assert.equal(result.status, 'RESUME_DISPATCHED');
+assert.equal(result.experienceId, 'shopping-for-dinner');
+assert.equal(calls, 1);
+assert.equal(Object.prototype.hasOwnProperty.call(result, 'nextExperience'), false);
+const waiting = Dispatch.dispatch({ resumeEvaluation: { resumeContext: { status: 'RESUME_CONTEXT_PRESERVED', snapshot } } }, runtime);
+assert.equal(waiting.status, 'RESUME_NOT_DISPATCHED');
+assert.equal(calls, 1);
+const absent = Dispatch.dispatch({ resumeEvaluation: null }, runtime);
+assert.equal(absent.status, 'RESUME_NOT_DISPATCHED');
+assert.equal(calls, 1);
+const noRuntime = Dispatch.dispatch(eligible, null);
+assert.equal(noRuntime.status, 'RESUME_NOT_DISPATCHED');
+assert.equal(noRuntime.reason, 'resume-runtime-unavailable');
+console.log('Adaptive resume runtime dispatch: PASS');
