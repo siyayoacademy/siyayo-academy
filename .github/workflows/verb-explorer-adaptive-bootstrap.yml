@@ -41,6 +41,7 @@ jobs:
           node --check js/verb-explorer-choice-adaptive-wire.js
           node --check js/verb-explorer-adaptive-input-provider.js
           node --check js/verb-explorer-adaptive-coordinator.js
+          node --check js/verb-explorer-adaptive-state-bridge.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
