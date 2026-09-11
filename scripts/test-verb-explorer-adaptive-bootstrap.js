@@ -33,7 +33,7 @@ function load(path) {
 load('js/adaptive-resume-runtime-dispatch.js');
 load('js/verb-explorer-cycle-resume-dispatch.js');
 
-Promise.resolve(sandbox.SIYAYOVerbExplorerAdaptiveReady)
+Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
   .then(function(cycle) {
     assert(cycle, 'adaptive Cycle should resolve');
     assert.strictEqual(typeof cycle.submit, 'function', 'AdaptiveLearningCycle.submit should be available');
