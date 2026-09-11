@@ -1,0 +1,28 @@
+name: Verb Explorer Adaptive Bootstrap
+
+on:
+  pull_request:
+    paths:
+      - 'js/adaptive-browser-runtime.js'
+      - 'js/verb-explorer-adaptive-bootstrap.js'
+      - 'js/verb-explorer-cycle-resume-dispatch.js'
+      - 'js/green-pass-authority-policy.js'
+      - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
+      - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax check
+        run: |
+          node --check js/adaptive-browser-runtime.js
+          node --check js/verb-explorer-adaptive-bootstrap.js
+          node --check js/verb-explorer-cycle-resume-dispatch.js
+          node --check scripts/test-verb-explorer-adaptive-bootstrap.js
+      - name: Test browser bootstrap
+        run: node scripts/test-verb-explorer-adaptive-bootstrap.js
