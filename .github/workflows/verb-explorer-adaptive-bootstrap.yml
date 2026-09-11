@@ -21,6 +21,7 @@ on:
       - 'scripts/test-verb-explorer-choice-adaptive-integration.js'
       - 'scripts/test-verb-explorer-choice-real-cycle.js'
       - 'scripts/test-verb-explorer-adaptive-coordinator.js'
+      - 'scripts/test-verb-explorer-adaptive-state-bridge.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -50,6 +51,7 @@ jobs:
           node --check scripts/test-verb-explorer-choice-adaptive-integration.js
           node --check scripts/test-verb-explorer-choice-real-cycle.js
           node --check scripts/test-verb-explorer-adaptive-coordinator.js
+          node --check scripts/test-verb-explorer-adaptive-state-bridge.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
@@ -66,3 +68,5 @@ jobs:
         run: node scripts/test-verb-explorer-choice-real-cycle.js
       - name: Test live adaptive coordinator
         run: node scripts/test-verb-explorer-adaptive-coordinator.js
+      - name: Test grounded adaptive state bridge
+        run: node scripts/test-verb-explorer-adaptive-state-bridge.js
