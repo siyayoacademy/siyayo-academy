@@ -3,6 +3,7 @@
   const scripts = Object.freeze([
     'js/pedagogical-resonance.js',
     'js/adaptive-learning-router.js',
+    'js/adaptive-evidence-profile.js',
     'js/adaptive-pedagogical-orchestrator.js',
     'js/adaptive-attempt-loop.js',
     'js/green-pass-profile.js',
