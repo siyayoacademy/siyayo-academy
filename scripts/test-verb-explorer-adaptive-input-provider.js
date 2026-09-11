@@ -37,6 +37,18 @@ const state = {
 };
 
 assert.equal(provider.configure({}), false, 'incomplete configuration must be rejected');
+assert.equal(provider.configure({ profile, session, attempt: baseAttempt, context: baseContext, getState: () => null }), true);
+assert.equal(provider('choose'), null, 'missing grounded state must fail closed');
+
+assert.equal(provider.configure({ profile, session, attempt: baseAttempt, context: baseContext, state, getAttempt: () => null }), true);
+assert.equal(provider('choose'), null, 'missing grounded attempt must fail closed');
+
+assert.equal(provider.configure({ profile, session, attempt: baseAttempt, context: baseContext, state, getContext: () => null }), true);
+assert.equal(provider('choose'), null, 'missing grounded context must fail closed');
+
+assert.equal(provider.configure({ profile, session, attempt: baseAttempt, context: baseContext, state, getResumeState: () => null }), true);
+assert.equal(provider('choose'), null, 'missing resume state must fail closed');
+
 assert.equal(provider.configure({
   profile,
   session,
@@ -69,4 +81,4 @@ assert.equal(input.state.lineOffset, 6);
 provider.clear();
 assert.equal(provider('choose'), null, 'cleared provider must produce no adaptive input');
 
-console.log('Verb Explorer adaptive input provider: PASS — unconfigured/cleared states produce no input; configured state preserves grounded Cycle inputs and resume snapshot.');
+console.log('Verb Explorer adaptive input provider: PASS — missing state/attempt/context/resumeState fail closed; complete grounded inputs preserve the Cycle package and resume snapshot.');
