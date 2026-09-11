@@ -11,6 +11,7 @@ on:
       - 'js/verb-explorer-adaptive-controller.js'
       - 'js/verb-explorer-choice-adaptive-wire.js'
       - 'js/verb-explorer-adaptive-input-provider.js'
+      - 'js/verb-explorer-adaptive-coordinator.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
@@ -18,6 +19,7 @@ on:
       - 'scripts/test-verb-explorer-adaptive-input-provider.js'
       - 'scripts/test-verb-explorer-choice-adaptive-integration.js'
       - 'scripts/test-verb-explorer-choice-real-cycle.js'
+      - 'scripts/test-verb-explorer-adaptive-coordinator.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -37,6 +39,7 @@ jobs:
           node --check js/verb-explorer-adaptive-controller.js
           node --check js/verb-explorer-choice-adaptive-wire.js
           node --check js/verb-explorer-adaptive-input-provider.js
+          node --check js/verb-explorer-adaptive-coordinator.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
@@ -44,6 +47,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-input-provider.js
           node --check scripts/test-verb-explorer-choice-adaptive-integration.js
           node --check scripts/test-verb-explorer-choice-real-cycle.js
+          node --check scripts/test-verb-explorer-adaptive-coordinator.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
@@ -58,3 +62,5 @@ jobs:
         run: node scripts/test-verb-explorer-choice-adaptive-integration.js
       - name: Test choice boundary with real Cycle
         run: node scripts/test-verb-explorer-choice-real-cycle.js
+      - name: Test live adaptive coordinator
+        run: node scripts/test-verb-explorer-adaptive-coordinator.js
