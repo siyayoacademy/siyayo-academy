@@ -69,10 +69,42 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install, 'function');
     assert.strictEqual(clickListeners.length, 1, 'bootstrap should install adaptive choice wire exactly once');
 
-    return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
-      assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
-      assert.strictEqual(clickListeners.length, 1, 'second bootstrap must not duplicate the choice wire listener');
-      console.log('Verb Explorer adaptive browser bootstrap: PASS — Cycle available, live learner-event/controller/input-provider/state-bridge/coordinator/wire loaded in order, wire installed once, and repeated bootstrap is idempotent.');
+    // Exercise the sentence-built observer on this already-executed CI route without
+    // claiming that production bootstrap installs it yet.
+    load('js/verb-explorer-sentence-built-observer.js');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerSentenceBuiltObserver.install, 'function');
+    let observed = null;
+    const groundedState = Object.freeze({
+      currentExperienceId: 'shopping-for-dinner',
+      experienceLanguage: 'en',
+      experienceQuestion: 2,
+      experienceChoiceCandidate: 'fresh-mild-cheese',
+      experienceWordType: 'sentence'
+    });
+    const installed = sandbox.SIYAYOVerbExplorerSentenceBuiltObserver.install({
+      events: sandbox.SIYAYOVerbExplorerLearnerEvent,
+      stateBridge: { capture: function(){ return groundedState; } },
+      onObserved: function(value){ observed = value; }
+    });
+    assert.strictEqual(installed, true, 'sentence observer should install on the executed bootstrap test route');
+    assert.strictEqual(clickListeners.length, 2, 'sentence observer should add exactly one isolated listener');
+    clickListeners[1]({target:{closest:function(selector){return selector==='#buildSentence'?{}:null;}}});
+    assert.strictEqual(observed, null, 'sentence observer must wait for the existing BUILD SENTENCE handler');
+
+    return Promise.resolve().then(function(){
+      assert(observed, 'grounded BUILD SENTENCE should create an observation');
+      assert.strictEqual(observed.type, 'sentence-built');
+      assert.strictEqual(observed.currentExperienceId, 'shopping-for-dinner');
+      assert.strictEqual(observed.experienceLanguage, 'en');
+      assert.strictEqual(observed.experienceQuestion, 2);
+      assert.strictEqual(observed.experienceChoiceCandidate, 'fresh-mild-cheese');
+      assert.strictEqual(Object.isFrozen(observed), true);
+
+      return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
+        assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
+        assert.strictEqual(clickListeners.length, 2, 'second bootstrap must not duplicate either already-installed listener');
+        console.log('Verb Explorer adaptive browser bootstrap: PASS — Cycle available, live choice bridge loaded once, and grounded sentence observer exercised on the executed CI route without production bootstrap installation.');
+      });
     });
   })
   .catch(function(error) {
