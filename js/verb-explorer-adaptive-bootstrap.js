@@ -1,4 +1,4 @@
-// Verb Explorer bootstrap: make the adaptive Cycle available, then load the live choice bridge modules in order.
+// Verb Explorer bootstrap: make the adaptive Cycle available, then load the live observation/choice bridge modules in order.
 (function(root){
   const runtime = root.SIYAYOAdaptiveBrowserRuntime;
   if (!runtime || typeof runtime.load !== 'function') return;
@@ -8,7 +8,7 @@
       var s=document.createElement('script');
       s.src=src;
       s.onload=resolve;
-      s.onerror=function(){reject(new Error('Verb Explorer adaptive choice bridge failed: '+src));};
+      s.onerror=function(){reject(new Error('Verb Explorer adaptive bridge failed: '+src));};
       document.head.appendChild(s);
     });
   }
@@ -28,6 +28,10 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
         if(wire&&typeof wire.install==='function')wire.install();
+        return ensureGlobal('SIYAYOVerbExplorerSentenceBuiltObserver','js/verb-explorer-sentence-built-observer.js');
+      })
+      .then(function(observer){
+        if(observer&&typeof observer.install==='function')observer.install();
         return cycle;
       });
   });
