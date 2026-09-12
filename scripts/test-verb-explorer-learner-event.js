@@ -15,6 +15,7 @@ vm.runInContext(
 const boundary = sandbox.SIYAYOVerbExplorerLearnerEvent;
 assert(boundary, 'learner-event boundary should be exposed');
 assert.equal(typeof boundary.fromChoiceSelect, 'function');
+assert.equal(typeof boundary.fromSentenceBuilt, 'function');
 
 const state = {
   currentExperienceId: 'shopping-for-dinner',
@@ -55,4 +56,35 @@ assert.equal(minimal.question, null);
 assert.equal(minimal.perspective, null);
 assert.equal(minimal.wordType, null);
 
+const sentenceState = {
+  currentExperienceId: 'shopping-for-dinner',
+  experienceLanguage: 'en',
+  experienceQuestion: 2,
+  experienceChoiceCandidate: 'fresh-mild-cheese'
+};
+const sentenceBuilt = boundary.fromSentenceBuilt({
+  canonicalCandidate: true,
+  systemStructure: true
+}, sentenceState);
+
+assert(sentenceBuilt, 'grounded canonical BUILD SENTENCE should create an observation');
+assert.equal(sentenceBuilt.observed, true);
+assert.equal(sentenceBuilt.actor, 'learner');
+assert.equal(sentenceBuilt.type, 'sentence-built');
+assert.equal(sentenceBuilt.source, 'build-sentence');
+assert.equal(sentenceBuilt.canonicalCandidate, true);
+assert.equal(sentenceBuilt.systemStructure, true);
+assert.equal(sentenceBuilt.currentExperienceId, 'shopping-for-dinner');
+assert.equal(sentenceBuilt.experienceLanguage, 'en');
+assert.equal(sentenceBuilt.experienceQuestion, 2);
+assert.equal(sentenceBuilt.experienceChoiceCandidate, 'fresh-mild-cheese');
+assert.equal(Object.isFrozen(sentenceBuilt), true, 'sentence-built observation should be immutable');
+assert.equal(boundary.fromSentenceBuilt({canonicalCandidate:true,systemStructure:true}, {
+  currentExperienceId:'shopping-for-dinner',
+  experienceLanguage:'',
+  experienceQuestion:2,
+  experienceChoiceCandidate:'fresh-mild-cheese'
+}), null, 'ungrounded sentence-built observation must fail closed');
+
 console.log('Verb Explorer learner event: PASS — immutable choice events carry distinct occurrence identity; empty choices create none.');
+console.log('Sentence-built learner event: PASS — grounded canonical system composition is observed immutably and ungrounded composition fails closed.');
