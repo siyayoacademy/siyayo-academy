@@ -20,4 +20,7 @@ assert.equal(profile.observations[0].status,'pattern-observed');
 assert.equal(profile.observations[0].requiresReinforcement,true);
 assert.equal(profile.confirmedReinforcements.length,0);
 assert.equal(sandbox.AdaptiveEvidenceProfile.recommend(profile).action,'observe');
-console.log('Verb Explorer adaptive Evidence source: PASS — repeated evidence is recorded without inventing confirmation.');
+sandbox.SIYAYOVerbExplorerXespiritoEvidenceBridge.interpret=()=>({signals:[],conflictEvidenceCount:0,hasReinforcementSignal:false});
+assert.equal(sandbox.SIYAYOVerbExplorerAdaptiveEvidenceSource.record(profile,{}),null);
+assert.equal(profile.observations.length,1);
+console.log('Verb Explorer adaptive Evidence source: PASS — repeated evidence is recorded without invented confirmation; empty evidence preserves WAIT.');
