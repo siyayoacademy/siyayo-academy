@@ -17,4 +17,5 @@ assert.equal(session.decision.focus,'assessment');
 assert.equal(session.trace[0].event,'experience-selected');
 assert.equal(session.trace[0].experienceId,'shopping-for-dinner');
 assert.equal(sandbox.SIYAYOVerbExplorerAdaptiveSessionSource.begin(null,context),null);
-console.log('Verb Explorer adaptive Session source: PASS — canonical AttemptLoop.begin creates S without manual decision mutation; missing Profile preserves WAIT.');
+assert.equal(sandbox.SIYAYOVerbExplorerAdaptiveSessionSource.begin(profile,null),null);
+console.log('Verb Explorer adaptive Session source: PASS — canonical AttemptLoop.begin creates S without manual decision mutation; missing Profile or Context preserves WAIT.');
