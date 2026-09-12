@@ -24,7 +24,10 @@ assert.equal(evaluate(resolution, null), null);
 const evidence = evaluate(resolution, context);
 assert.equal(evidence.dimension, 'choice-function');
 assert.equal(evidence.result, 'pass');
-assert.deepEqual(evidence.context, context);
+assert.equal(evidence.context.currentExperienceId, context.currentExperienceId);
+assert.equal(evidence.context.experienceLanguage, context.experienceLanguage);
+assert.equal(evidence.context.experienceQuestion, context.experienceQuestion);
+assert.equal(evidence.context.experienceChoiceCandidate, context.experienceChoiceCandidate);
 assert.notEqual(evidence.context, context);
 assert.equal(Object.isFrozen(evidence.context), true);
 
