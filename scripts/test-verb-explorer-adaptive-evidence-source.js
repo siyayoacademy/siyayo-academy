@@ -23,4 +23,8 @@ assert.equal(sandbox.AdaptiveEvidenceProfile.recommend(profile).action,'observe'
 sandbox.SIYAYOVerbExplorerXespiritoEvidenceBridge.interpret=()=>({signals:[],conflictEvidenceCount:0,hasReinforcementSignal:false});
 assert.equal(sandbox.SIYAYOVerbExplorerAdaptiveEvidenceSource.record(profile,{}),null);
 assert.equal(profile.observations.length,1);
-console.log('Verb Explorer adaptive Evidence source: PASS — repeated evidence is recorded without invented confirmation; empty evidence preserves WAIT.');
+const noProfileApi={SIYAYOVerbExplorerXespiritoEvidenceBridge:sandbox.SIYAYOVerbExplorerXespiritoEvidenceBridge};
+vm.createContext(noProfileApi);
+vm.runInContext(sourceCode,noProfileApi);
+assert.equal(noProfileApi.SIYAYOVerbExplorerAdaptiveEvidenceSource.record(profile,{}),null);
+console.log('Verb Explorer adaptive Evidence source: PASS — repeated evidence is recorded without invented confirmation; empty or missing Profile API preserves WAIT.');
