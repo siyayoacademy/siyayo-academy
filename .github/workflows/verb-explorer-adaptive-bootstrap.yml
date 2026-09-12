@@ -35,6 +35,7 @@ on:
       - 'scripts/test-verb-explorer-adaptive-evidence-source.js'
       - 'scripts/test-choice-evidence-evaluator.js'
       - 'scripts/test-choice-support-sensor.js'
+      - 'scripts/test-choice-support-context-scope.js'
       - 'scripts/test-choice-mode-sensor.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
@@ -79,6 +80,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-evidence-source.js
           node --check scripts/test-choice-evidence-evaluator.js
           node --check scripts/test-choice-support-sensor.js
+          node --check scripts/test-choice-support-context-scope.js
           node --check scripts/test-choice-mode-sensor.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
@@ -110,5 +112,7 @@ jobs:
         run: node scripts/test-choice-evidence-evaluator.js
       - name: Test Choice support sensor
         run: node scripts/test-choice-support-sensor.js
+      - name: Test Choice support contextual scope
+        run: node scripts/test-choice-support-context-scope.js
       - name: Test Choice mode sensor
         run: node scripts/test-choice-mode-sensor.js
