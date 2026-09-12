@@ -14,6 +14,7 @@ on:
       - 'js/verb-explorer-adaptive-coordinator.js'
       - 'js/verb-explorer-adaptive-state-bridge.js'
       - 'js/verb-explorer-adaptive-psac-boundary.js'
+      - 'js/verb-explorer-adaptive-profile-source.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
@@ -24,6 +25,7 @@ on:
       - 'scripts/test-verb-explorer-adaptive-coordinator.js'
       - 'scripts/test-verb-explorer-adaptive-state-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
+      - 'scripts/test-verb-explorer-adaptive-profile-source.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -46,6 +48,7 @@ jobs:
           node --check js/verb-explorer-adaptive-coordinator.js
           node --check js/verb-explorer-adaptive-state-bridge.js
           node --check js/verb-explorer-adaptive-psac-boundary.js
+          node --check js/verb-explorer-adaptive-profile-source.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
@@ -56,6 +59,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-coordinator.js
           node --check scripts/test-verb-explorer-adaptive-state-bridge.js
           node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
+          node --check scripts/test-verb-explorer-adaptive-profile-source.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
@@ -76,3 +80,5 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-state-bridge.js
       - name: Test fail-closed adaptive PSAC boundary
         run: node scripts/test-verb-explorer-adaptive-psac-boundary.js
+      - name: Test grounded adaptive Profile source
+        run: node scripts/test-verb-explorer-adaptive-profile-source.js
