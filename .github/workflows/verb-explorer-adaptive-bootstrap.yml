@@ -34,6 +34,7 @@ on:
       - 'scripts/test-verb-explorer-xespirito-evidence-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-evidence-source.js'
       - 'scripts/test-choice-evidence-evaluator.js'
+      - 'scripts/test-choice-evidence-context-scope.js'
       - 'scripts/test-choice-support-sensor.js'
       - 'scripts/test-choice-support-context-scope.js'
       - 'scripts/test-choice-mode-sensor.js'
@@ -80,6 +81,7 @@ jobs:
           node --check scripts/test-verb-explorer-xespirito-evidence-bridge.js
           node --check scripts/test-verb-explorer-adaptive-evidence-source.js
           node --check scripts/test-choice-evidence-evaluator.js
+          node --check scripts/test-choice-evidence-context-scope.js
           node --check scripts/test-choice-support-sensor.js
           node --check scripts/test-choice-support-context-scope.js
           node --check scripts/test-choice-mode-sensor.js
@@ -112,6 +114,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-evidence-source.js
       - name: Test Choice evidence evaluator
         run: node scripts/test-choice-evidence-evaluator.js
+      - name: Test Choice evidence contextual scope
+        run: node scripts/test-choice-evidence-context-scope.js
       - name: Test Choice support sensor
         run: node scripts/test-choice-support-sensor.js
       - name: Test Choice support contextual scope
