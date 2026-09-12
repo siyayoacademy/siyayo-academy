@@ -16,6 +16,7 @@ on:
       - 'js/verb-explorer-adaptive-psac-boundary.js'
       - 'js/verb-explorer-adaptive-profile-source.js'
       - 'js/verb-explorer-xespirito-evidence-bridge.js'
+      - 'js/verb-explorer-adaptive-evidence-source.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
@@ -28,6 +29,7 @@ on:
       - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
       - 'scripts/test-verb-explorer-adaptive-profile-source.js'
       - 'scripts/test-verb-explorer-xespirito-evidence-bridge.js'
+      - 'scripts/test-verb-explorer-adaptive-evidence-source.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -52,6 +54,7 @@ jobs:
           node --check js/verb-explorer-adaptive-psac-boundary.js
           node --check js/verb-explorer-adaptive-profile-source.js
           node --check js/verb-explorer-xespirito-evidence-bridge.js
+          node --check js/verb-explorer-adaptive-evidence-source.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
@@ -64,6 +67,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
           node --check scripts/test-verb-explorer-adaptive-profile-source.js
           node --check scripts/test-verb-explorer-xespirito-evidence-bridge.js
+          node --check scripts/test-verb-explorer-adaptive-evidence-source.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
@@ -88,3 +92,5 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-profile-source.js
       - name: Test grounded Xespirito evidence bridge
         run: node scripts/test-verb-explorer-xespirito-evidence-bridge.js
+      - name: Test grounded adaptive Evidence source
+        run: node scripts/test-verb-explorer-adaptive-evidence-source.js
