@@ -1,13 +1,28 @@
-const assert = require('node:assert/strict');
+#!/usr/bin/env node
 
-// Contract-first specification for the missing learner-occurrence identity.
-// Context coordinates tell us WHERE an action happened; occurrence identity
-// must additionally distinguish repeated actions in that exact same context.
-const sameContext = Object.freeze({
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+
+const sandbox = vm.createContext({});
+sandbox.globalThis = sandbox;
+vm.runInContext(
+  fs.readFileSync('js/verb-explorer-learner-event.js', 'utf8'),
+  sandbox,
+  { filename: 'js/verb-explorer-learner-event.js' }
+);
+
+const boundary = sandbox.SIYAYOVerbExplorerLearnerEvent;
+assert(boundary, 'learner-event boundary should be exposed');
+assert.equal(typeof boundary.fromChoiceSelect, 'function');
+
+const sameState = Object.freeze({
   currentExperienceId: 'shopping-for-dinner',
   experienceLanguage: 'en',
   experienceQuestion: 'Which cheese should we choose?',
-  experienceChoiceCandidate: 'fresh-mild-cheese'
+  experienceChoiceCandidate: 'fresh-mild-cheese',
+  experiencePerspective: 'debating',
+  experienceWordType: 'verb'
 });
 
 function requireOccurrenceIdentity(event) {
@@ -16,23 +31,34 @@ function requireOccurrenceIdentity(event) {
     : null;
 }
 
-const firstChoice = Object.assign({ type: 'choice-select' }, sameContext);
-const secondChoice = Object.assign({ type: 'choice-select' }, sameContext);
+// Exercise the real producer twice with the same learner action in the same
+// contextual coordinates. The two records must still represent two distinct
+// occurrences.
+const firstChoice = boundary.fromChoiceSelect('fresh-mild-cheese', sameState);
+const secondChoice = boundary.fromChoiceSelect('fresh-mild-cheese', sameState);
 
-// Current production events have no occurrence identity yet. This assertion is
-// intentionally RED until a real producer creates a stable identity per action.
+assert(firstChoice, 'first real learner event should be created');
+assert(secondChoice, 'second real learner event should be created');
+assert.equal(Object.isFrozen(firstChoice), true, 'first learner event should remain immutable');
+assert.equal(Object.isFrozen(secondChoice), true, 'second learner event should remain immutable');
+
+// Intentionally RED against current production: the real producer does not yet
+// expose a grounded occurrence identity.
 assert.ok(requireOccurrenceIdentity(firstChoice),
-  'first repeated choice must carry a grounded occurrence identity');
+  'first repeated real choice must carry a grounded occurrence identity');
 assert.ok(requireOccurrenceIdentity(secondChoice),
-  'second repeated choice must carry a grounded occurrence identity');
+  'second repeated real choice must carry a grounded occurrence identity');
 assert.notEqual(firstChoice.occurrenceId, secondChoice.occurrenceId,
-  'two identical actions in the same context must remain distinguishable');
+  'two identical real actions in the same context must remain distinguishable');
 
-// Evidence emitted from one occurrence must be correlatable without relying on
-// timestamps or mutable current state.
-const support = Object.assign({ type: 'choice-audio', occurrenceId: firstChoice.occurrenceId }, sameContext);
-const evidence = Object.assign({ dimension: 'choice-function', result: 'pass', occurrenceId: firstChoice.occurrenceId }, sameContext);
-assert.equal(support.occurrenceId, evidence.occurrenceId,
-  'components from the same learner occurrence must share identity');
+// The identity must be reusable by evidence from that exact occurrence rather
+// than inferred later from timestamps or mutable current state.
+const firstOccurrenceEvidence = Object.freeze({
+  occurrenceId: firstChoice.occurrenceId,
+  dimension: 'choice-function',
+  result: 'pass'
+});
+assert.equal(firstOccurrenceEvidence.occurrenceId, firstChoice.occurrenceId,
+  'evidence from one learner occurrence must be correlatable to that event');
 
 console.log('Choice occurrence identity contract: GREEN');
