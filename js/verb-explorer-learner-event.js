@@ -25,5 +25,28 @@
       wordType:state.experienceWordType||null
     });
   }
-  root.SIYAYOVerbExplorerLearnerEvent=Object.freeze({fromChoiceSelect:fromChoiceSelect});
+
+  function fromSentenceBuilt(composition, state){
+    composition=composition||{};
+    state=state||{};
+    if(composition.canonicalCandidate!==true||composition.systemStructure!==true) return null;
+    if(!state.currentExperienceId||!state.experienceLanguage||state.experienceQuestion==null||!state.experienceChoiceCandidate) return null;
+    return Object.freeze({
+      observed:true,
+      actor:'learner',
+      type:'sentence-built',
+      source:'build-sentence',
+      canonicalCandidate:true,
+      systemStructure:true,
+      currentExperienceId:String(state.currentExperienceId),
+      experienceLanguage:String(state.experienceLanguage),
+      experienceQuestion:state.experienceQuestion,
+      experienceChoiceCandidate:String(state.experienceChoiceCandidate)
+    });
+  }
+
+  root.SIYAYOVerbExplorerLearnerEvent=Object.freeze({
+    fromChoiceSelect:fromChoiceSelect,
+    fromSentenceBuilt:fromSentenceBuilt
+  });
 })(typeof globalThis!=='undefined'?globalThis:this);
