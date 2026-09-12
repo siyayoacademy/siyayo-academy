@@ -4,13 +4,14 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 
+const profileSourceCode = fs.readFileSync('js/verb-explorer-adaptive-profile-source.js', 'utf8');
 const sandbox = vm.createContext({ console });
 sandbox.globalThis = sandbox;
 
 vm.runInContext(fs.readFileSync('js/green-pass-profile.js', 'utf8'), sandbox, {
   filename: 'js/green-pass-profile.js'
 });
-vm.runInContext(fs.readFileSync('js/verb-explorer-adaptive-profile-source.js', 'utf8'), sandbox, {
+vm.runInContext(profileSourceCode, sandbox, {
   filename: 'js/verb-explorer-adaptive-profile-source.js'
 });
 
@@ -42,11 +43,15 @@ assert.strictEqual(source.getProfile(), evolved, 'adopt must preserve the exact 
 assert.equal(source.adopt(null), false, 'missing profile must WAIT');
 assert.strictEqual(source.getProfile(), evolved, 'failed adopt must not erase existing P');
 
-source.clear();
-const savedApi = sandbox.GreenPassProfile;
-delete sandbox.GreenPassProfile;
-assert.equal(source.begin('learner-2'), null, 'missing canonical GreenPassProfile API must WAIT');
-assert.equal(source.getProfile(), null);
-sandbox.GreenPassProfile = savedApi;
+// Use a fresh realm that never loads GreenPassProfile. This tests the real
+// missing-API condition instead of trying to delete a VM global binding.
+const noApiSandbox = vm.createContext({ console });
+noApiSandbox.globalThis = noApiSandbox;
+vm.runInContext(profileSourceCode, noApiSandbox, {
+  filename: 'js/verb-explorer-adaptive-profile-source.js'
+});
+const noApiSource = noApiSandbox.SIYAYOVerbExplorerAdaptiveProfileSource;
+assert.equal(noApiSource.begin('learner-2'), null, 'missing canonical GreenPassProfile API must WAIT');
+assert.equal(noApiSource.getProfile(), null);
 
 console.log('Verb Explorer adaptive Profile source: PASS — canonical GreenPassProfile creates P; blank identity or missing API preserves WAIT; evolved P is adopted without reset.');
