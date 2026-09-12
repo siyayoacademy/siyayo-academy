@@ -15,4 +15,8 @@ assert.equal(result.signals[0].occurrences,2);
 assert.equal(result.signals[0].status,'requires-reinforcement');
 sandbox.SIYAYOXespiritoBridge.getRepairTrace=()=>[];
 assert.equal(sandbox.SIYAYOVerbExplorerXespiritoEvidenceBridge.interpret(),null);
+const wait={SIYAYOXespiritoBridge:{getRepairTrace:()=>[{status:'conflict',responsiblePiece:'auxiliary-have'}]}};
+vm.createContext(wait);
+vm.runInContext(bridge,wait);
+assert.equal(wait.SIYAYOVerbExplorerXespiritoEvidenceBridge.interpret(),null);
 console.log('Verb Explorer Xespirito evidence bridge: PASS');
