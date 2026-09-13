@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'js/adaptive-browser-runtime.js'
+      - 'js/adaptive-attempt-loop.js'
       - 'js/verb-explorer-adaptive-bootstrap.js'
       - 'js/verb-explorer-cycle-resume-dispatch.js'
       - 'js/green-pass-authority-policy.js'
@@ -48,6 +49,7 @@ on:
       - 'scripts/test-choice-attempt-ownership.js'
       - 'scripts/test-choice-attempt-boundary.js'
       - 'scripts/test-verb-explorer-choice-attempt-factory.js'
+      - 'scripts/test-adaptive-evidence-mode-boundary.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -61,6 +63,7 @@ jobs:
       - name: Syntax check
         run: |
           node --check js/adaptive-browser-runtime.js
+          node --check js/adaptive-attempt-loop.js
           node --check js/verb-explorer-adaptive-bootstrap.js
           node --check js/verb-explorer-cycle-resume-dispatch.js
           node --check js/verb-explorer-learner-event.js
@@ -104,6 +107,7 @@ jobs:
           node --check scripts/test-choice-attempt-ownership.js
           node --check scripts/test-choice-attempt-boundary.js
           node --check scripts/test-verb-explorer-choice-attempt-factory.js
+          node --check scripts/test-adaptive-evidence-mode-boundary.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
@@ -152,3 +156,5 @@ jobs:
         run: node scripts/test-choice-attempt-boundary.js
       - name: Test event-aware Choice attempt factory
         run: node scripts/test-verb-explorer-choice-attempt-factory.js
+      - name: Test explicit evidence mode boundary
+        run: node scripts/test-adaptive-evidence-mode-boundary.js
