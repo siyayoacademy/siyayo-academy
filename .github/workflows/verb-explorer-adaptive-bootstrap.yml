@@ -13,6 +13,9 @@ on:
       - 'js/verb-explorer-choice-adaptive-wire.js'
       - 'js/verb-explorer-adaptive-input-provider.js'
       - 'js/verb-explorer-adaptive-coordinator.js'
+      - 'js/verb-explorer-adaptive-coordinator-config.js'
+      - 'js/verb-explorer-adaptive-context-source.js'
+      - 'js/verb-explorer-session-state-boundary.js'
       - 'js/verb-explorer-adaptive-state-bridge.js'
       - 'js/verb-explorer-adaptive-psac-boundary.js'
       - 'js/verb-explorer-adaptive-profile-source.js'
@@ -33,6 +36,7 @@ on:
       - 'scripts/test-verb-explorer-choice-adaptive-integration.js'
       - 'scripts/test-verb-explorer-choice-real-cycle.js'
       - 'scripts/test-verb-explorer-adaptive-coordinator.js'
+      - 'scripts/test-verb-explorer-adaptive-coordinator-config.js'
       - 'scripts/test-verb-explorer-adaptive-state-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
       - 'scripts/test-verb-explorer-adaptive-profile-source.js'
@@ -71,6 +75,9 @@ jobs:
           node --check js/verb-explorer-choice-adaptive-wire.js
           node --check js/verb-explorer-adaptive-input-provider.js
           node --check js/verb-explorer-adaptive-coordinator.js
+          node --check js/verb-explorer-adaptive-coordinator-config.js
+          node --check js/verb-explorer-adaptive-context-source.js
+          node --check js/verb-explorer-session-state-boundary.js
           node --check js/verb-explorer-adaptive-state-bridge.js
           node --check js/verb-explorer-adaptive-psac-boundary.js
           node --check js/verb-explorer-adaptive-profile-source.js
@@ -91,6 +98,7 @@ jobs:
           node --check scripts/test-verb-explorer-choice-adaptive-integration.js
           node --check scripts/test-verb-explorer-choice-real-cycle.js
           node --check scripts/test-verb-explorer-adaptive-coordinator.js
+          node --check scripts/test-verb-explorer-adaptive-coordinator-config.js
           node --check scripts/test-verb-explorer-adaptive-state-bridge.js
           node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
           node --check scripts/test-verb-explorer-adaptive-profile-source.js
@@ -124,6 +132,8 @@ jobs:
         run: node scripts/test-verb-explorer-choice-real-cycle.js
       - name: Test live adaptive coordinator
         run: node scripts/test-verb-explorer-adaptive-coordinator.js
+      - name: Test grounded Coordinator configuration seam
+        run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive state bridge
         run: node scripts/test-verb-explorer-adaptive-state-bridge.js
       - name: Test fail-closed adaptive PSAC boundary
