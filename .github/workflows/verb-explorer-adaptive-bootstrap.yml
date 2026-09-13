@@ -21,6 +21,7 @@ on:
       - 'js/verb-explorer-adaptive-profile-source.js'
       - 'js/verb-explorer-xespirito-evidence-bridge.js'
       - 'js/verb-explorer-adaptive-evidence-source.js'
+      - 'js/verb-explorer-choice-attempt-provider.js'
       - 'js/choice-evidence-evaluator.js'
       - 'js/choice-support-sensor.js'
       - 'js/verb-explorer-choice-support-observer.js'
@@ -37,6 +38,7 @@ on:
       - 'scripts/test-verb-explorer-choice-real-cycle.js'
       - 'scripts/test-verb-explorer-adaptive-coordinator.js'
       - 'scripts/test-verb-explorer-adaptive-coordinator-config.js'
+      - 'scripts/test-verb-explorer-choice-attempt-provider.js'
       - 'scripts/test-verb-explorer-adaptive-state-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
       - 'scripts/test-verb-explorer-adaptive-profile-source.js'
@@ -83,6 +85,7 @@ jobs:
           node --check js/verb-explorer-adaptive-profile-source.js
           node --check js/verb-explorer-xespirito-evidence-bridge.js
           node --check js/verb-explorer-adaptive-evidence-source.js
+          node --check js/verb-explorer-choice-attempt-provider.js
           node --check js/choice-evidence-evaluator.js
           node --check js/choice-support-sensor.js
           node --check js/verb-explorer-choice-support-observer.js
@@ -99,6 +102,7 @@ jobs:
           node --check scripts/test-verb-explorer-choice-real-cycle.js
           node --check scripts/test-verb-explorer-adaptive-coordinator.js
           node --check scripts/test-verb-explorer-adaptive-coordinator-config.js
+          node --check scripts/test-verb-explorer-choice-attempt-provider.js
           node --check scripts/test-verb-explorer-adaptive-state-bridge.js
           node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
           node --check scripts/test-verb-explorer-adaptive-profile-source.js
@@ -134,6 +138,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-coordinator.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
+      - name: Test grounded Choice Attempt provider
+        run: node scripts/test-verb-explorer-choice-attempt-provider.js
       - name: Test grounded adaptive state bridge
         run: node scripts/test-verb-explorer-adaptive-state-bridge.js
       - name: Test fail-closed adaptive PSAC boundary
