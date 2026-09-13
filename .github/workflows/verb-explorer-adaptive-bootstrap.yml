@@ -20,6 +20,7 @@ on:
       - 'js/choice-evidence-evaluator.js'
       - 'js/choice-support-sensor.js'
       - 'js/choice-mode-sensor.js'
+      - 'js/choice-attempt-ownership.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
@@ -39,6 +40,7 @@ on:
       - 'scripts/test-choice-support-context-scope.js'
       - 'scripts/test-choice-mode-sensor.js'
       - 'scripts/test-choice-mode-context-scope.js'
+      - 'scripts/test-choice-attempt-ownership.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -67,6 +69,7 @@ jobs:
           node --check js/choice-evidence-evaluator.js
           node --check js/choice-support-sensor.js
           node --check js/choice-mode-sensor.js
+          node --check js/choice-attempt-ownership.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
@@ -86,6 +89,7 @@ jobs:
           node --check scripts/test-choice-support-context-scope.js
           node --check scripts/test-choice-mode-sensor.js
           node --check scripts/test-choice-mode-context-scope.js
+          node --check scripts/test-choice-attempt-ownership.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test learner event boundary
@@ -124,3 +128,5 @@ jobs:
         run: node scripts/test-choice-mode-sensor.js
       - name: Test Choice mode contextual scope
         run: node scripts/test-choice-mode-context-scope.js
+      - name: Test Choice attempt ownership
+        run: node scripts/test-choice-attempt-ownership.js
