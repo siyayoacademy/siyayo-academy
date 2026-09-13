@@ -1,4 +1,4 @@
-// Surgical controller: submit a grounded Verb Explorer learner event to the adaptive Cycle.
+// Surgical controller: submit one grounded Verb Explorer learner event to the adaptive Cycle.
 (function(root){
   function submitChoice(input){
     input=input||{};
@@ -6,8 +6,9 @@
     var cycle=input.cycle||root.AdaptiveLearningCycle;
     if(!events||typeof events.fromChoiceSelect!=='function'||!cycle||typeof cycle.submit!=='function')return null;
 
-    var learnerEvent=events.fromChoiceSelect(input.choice,input.state);
-    if(!learnerEvent)return null;
+    var learnerEvent=input.learnerEvent||events.fromChoiceSelect(input.choice,input.state);
+    if(!learnerEvent||learnerEvent.source!=='choice-select'||!learnerEvent.occurrenceId)return null;
+    if(String(learnerEvent.choice)!==String(input.choice))return null;
 
     var context=Object.assign({},input.context||{}, {
       learnerEvent:learnerEvent,
