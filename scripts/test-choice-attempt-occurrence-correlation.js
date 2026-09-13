@@ -5,11 +5,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 
 const sourcePath = 'js/choice-attempt-source.js';
-assert.equal(
-  fs.existsSync(sourcePath),
-  true,
-  'Choice Attempt Source must exist before occurrence correlation can be claimed.'
-);
+assert.equal(fs.existsSync(sourcePath), true, 'Choice Attempt Source must exist before correlation can be claimed.');
 
 const sandbox = vm.createContext({});
 sandbox.globalThis = sandbox;
@@ -26,6 +22,8 @@ const context = Object.freeze({
   experienceChoiceCandidate: 'fresh-mild-cheese'
 });
 
+// occurrenceId belongs to the observed learner footprint. Sensors are correlated
+// by the same grounded E/L/Q/C context and must not invent occurrence identity.
 const learnerEvent = Object.freeze({
   observed: true,
   actor: 'learner',
@@ -34,52 +32,40 @@ const learnerEvent = Object.freeze({
   occurrenceId: 'choice-select:21',
   choice: 'fresh-mild-cheese'
 });
-
-const evidence = Object.freeze({
-  occurrenceId: 'choice-select:21',
-  dimension: 'choice-function',
-  result: 'pass',
-  context
-});
-
-const support = Object.freeze({
-  occurrenceId: 'choice-select:21',
-  value: 'none',
-  context
-});
-
-const mode = Object.freeze({
-  occurrenceId: 'choice-select:21',
-  value: 'controlled-production',
-  context
-});
+const evidence = Object.freeze({ dimension: 'choice-function', result: 'pass', context });
+const support = Object.freeze({ value: 'none', context });
+const mode = Object.freeze({ value: 'controlled-production', context });
 
 const attempt = source.assemble({ learnerEvent, evidence, support, mode, context });
-assert(attempt, 'matching occurrence signals should assemble one Attempt');
-assert.equal(attempt.occurrenceId, 'choice-select:21');
+assert(attempt, 'matching grounded signals should assemble one Attempt');
+assert.equal(attempt.occurrenceId, learnerEvent.occurrenceId, 'Attempt identity must come from LearnerEvent');
 assert.equal(attempt.dimension, 'choice-function');
 assert.equal(attempt.result, 'pass');
 assert.equal(attempt.support, 'none');
-assert.equal(attempt.mode, 'controlled-production');
+assert.equal(attempt.mode, 'controlled-production', 'observed mode must be preserved; transfer must not be invented');
 assert.notEqual(attempt.context, context, 'Attempt context must be detached from live state');
 assert.equal(Object.isFrozen(attempt.context), true, 'Attempt context should be immutable');
 assert.equal(Object.isFrozen(attempt), true, 'assembled Attempt should be immutable');
 
-const wrongOccurrence = Object.freeze({
-  occurrenceId: 'choice-select:22',
-  value: 'audio',
-  context
+const changedLanguage = Object.freeze({
+  currentExperienceId: 'shopping-for-dinner',
+  experienceLanguage: 'es',
+  experienceQuestion: 'Which cheese should we choose?',
+  experienceChoiceCandidate: 'fresh-mild-cheese'
 });
 assert.equal(
-  source.assemble({ learnerEvent, evidence, support: wrongOccurrence, mode, context }),
+  source.assemble({ learnerEvent, evidence, support: Object.freeze({ value: 'none', context: changedLanguage }), mode, context }),
   null,
-  'signals from different occurrences must fail closed rather than being combined'
+  'signals from a different grounded context must fail closed rather than being combined'
 );
 
+assert.equal(source.assemble({ learnerEvent, evidence, support, mode: null, context }), null, 'incomplete Attempt evidence must fail closed');
+
+const conflictingTaggedSupport = Object.freeze({ occurrenceId: 'choice-select:22', value: 'audio', context });
 assert.equal(
-  source.assemble({ learnerEvent, evidence, support, mode: null, context }),
+  source.assemble({ learnerEvent, evidence, support: conflictingTaggedSupport, mode, context }),
   null,
-  'incomplete Attempt evidence must fail closed'
+  'if a signal explicitly carries occurrence identity, a conflict must fail closed'
 );
 
-console.log('Choice Attempt occurrence correlation: PASS — one Attempt contains only signals from one grounded occurrence.');
+console.log('Choice Attempt correlation: PASS — occurrence identity comes from the learner footprint; sensor signals correlate by grounded E/L/Q/C and fail closed on conflict.');
