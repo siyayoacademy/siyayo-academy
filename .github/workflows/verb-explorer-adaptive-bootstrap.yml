@@ -19,6 +19,7 @@ on:
       - 'js/verb-explorer-adaptive-evidence-source.js'
       - 'js/choice-evidence-evaluator.js'
       - 'js/choice-support-sensor.js'
+      - 'js/verb-explorer-choice-support-observer.js'
       - 'js/choice-mode-sensor.js'
       - 'js/choice-attempt-ownership.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
@@ -38,6 +39,7 @@ on:
       - 'scripts/test-choice-evidence-context-scope.js'
       - 'scripts/test-choice-support-sensor.js'
       - 'scripts/test-choice-support-context-scope.js'
+      - 'scripts/test-choice-support-observer.js'
       - 'scripts/test-choice-mode-sensor.js'
       - 'scripts/test-choice-mode-context-scope.js'
       - 'scripts/test-choice-attempt-ownership.js'
@@ -68,6 +70,7 @@ jobs:
           node --check js/verb-explorer-adaptive-evidence-source.js
           node --check js/choice-evidence-evaluator.js
           node --check js/choice-support-sensor.js
+          node --check js/verb-explorer-choice-support-observer.js
           node --check js/choice-mode-sensor.js
           node --check js/choice-attempt-ownership.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
@@ -87,6 +90,7 @@ jobs:
           node --check scripts/test-choice-evidence-context-scope.js
           node --check scripts/test-choice-support-sensor.js
           node --check scripts/test-choice-support-context-scope.js
+          node --check scripts/test-choice-support-observer.js
           node --check scripts/test-choice-mode-sensor.js
           node --check scripts/test-choice-mode-context-scope.js
           node --check scripts/test-choice-attempt-ownership.js
@@ -124,6 +128,8 @@ jobs:
         run: node scripts/test-choice-support-sensor.js
       - name: Test Choice support contextual scope
         run: node scripts/test-choice-support-context-scope.js
+      - name: Test live Choice audio support observer
+        run: node scripts/test-choice-support-observer.js
       - name: Test Choice mode sensor
         run: node scripts/test-choice-mode-sensor.js
       - name: Test Choice mode contextual scope
