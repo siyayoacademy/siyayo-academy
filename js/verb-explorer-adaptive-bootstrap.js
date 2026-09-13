@@ -24,6 +24,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveController','js/verb-explorer-adaptive-controller.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveInputProvider','js/verb-explorer-adaptive-input-provider.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveStateBridge','js/verb-explorer-adaptive-state-bridge.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceResolutionReader','js/verb-explorer-choice-resolution-reader.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinator','js/verb-explorer-adaptive-coordinator.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
