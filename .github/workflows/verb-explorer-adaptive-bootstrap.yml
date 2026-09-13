@@ -19,6 +19,7 @@ on:
       - 'js/verb-explorer-adaptive-state-bridge.js'
       - 'js/verb-explorer-adaptive-psac-boundary.js'
       - 'js/verb-explorer-adaptive-profile-source.js'
+      - 'js/verb-explorer-adaptive-evidence-profile-source.js'
       - 'js/verb-explorer-xespirito-evidence-bridge.js'
       - 'js/verb-explorer-adaptive-evidence-source.js'
       - 'js/verb-explorer-choice-attempt-provider.js'
@@ -42,6 +43,7 @@ on:
       - 'scripts/test-verb-explorer-adaptive-state-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
       - 'scripts/test-verb-explorer-adaptive-profile-source.js'
+      - 'scripts/test-verb-explorer-adaptive-evidence-profile-source.js'
       - 'scripts/test-verb-explorer-xespirito-evidence-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-evidence-source.js'
       - 'scripts/test-choice-evidence-evaluator.js'
@@ -83,6 +85,7 @@ jobs:
           node --check js/verb-explorer-adaptive-state-bridge.js
           node --check js/verb-explorer-adaptive-psac-boundary.js
           node --check js/verb-explorer-adaptive-profile-source.js
+          node --check js/verb-explorer-adaptive-evidence-profile-source.js
           node --check js/verb-explorer-xespirito-evidence-bridge.js
           node --check js/verb-explorer-adaptive-evidence-source.js
           node --check js/verb-explorer-choice-attempt-provider.js
@@ -106,6 +109,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-state-bridge.js
           node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
           node --check scripts/test-verb-explorer-adaptive-profile-source.js
+          node --check scripts/test-verb-explorer-adaptive-evidence-profile-source.js
           node --check scripts/test-verb-explorer-xespirito-evidence-bridge.js
           node --check scripts/test-verb-explorer-adaptive-evidence-source.js
           node --check scripts/test-choice-evidence-evaluator.js
@@ -146,6 +150,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-psac-boundary.js
       - name: Test grounded adaptive Profile source
         run: node scripts/test-verb-explorer-adaptive-profile-source.js
+      - name: Test grounded adaptive Evidence Profile source
+        run: node scripts/test-verb-explorer-adaptive-evidence-profile-source.js
       - name: Test grounded Xespirito evidence bridge
         run: node scripts/test-verb-explorer-xespirito-evidence-bridge.js
       - name: Test grounded adaptive Evidence source
