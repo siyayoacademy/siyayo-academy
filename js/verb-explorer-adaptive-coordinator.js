@@ -21,10 +21,13 @@
   function submitChoice(choice,target){
     if(!current)return null;
     var controller=root.SIYAYOVerbExplorerAdaptiveController;
-    if(!controller||typeof controller.submitChoice!=='function')return null;
+    var events=root.SIYAYOVerbExplorerLearnerEvent;
+    if(!controller||typeof controller.submitChoice!=='function'||!events||typeof events.fromChoiceSelect!=='function')return null;
     var state=typeof current.getState==='function'?current.getState(choice,target):null;
     if(!state)return null;
-    var attempt=typeof current.getAttempt==='function'?current.getAttempt(choice,state,target):null;
+    var learnerEvent=events.fromChoiceSelect(choice,state);
+    if(!learnerEvent)return null;
+    var attempt=typeof current.getAttempt==='function'?current.getAttempt(choice,state,target,learnerEvent):null;
     if(!attempt)return null;
     var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
     if(!resumeState)return null;
@@ -36,6 +39,7 @@
       attempt:attempt,
       context:current.context,
       state:state,
+      learnerEvent:learnerEvent,
       resumeState:resumeState
     });
     if(!result)return null;
