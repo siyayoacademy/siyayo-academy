@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const box=vm.createContext({}); box.globalThis=box;
+vm.runInContext(fs.readFileSync('js/choice-attempt-ownership.js','utf8'),box);
+const api=box.SIYAYOChoiceAttemptOwnership;
+const state=Object.freeze({currentExperienceId:'shopping-for-dinner',experienceLanguage:'en',experienceQuestion:'Which cheese should we choose?',experienceChoiceCandidate:'fresh-mild-cheese'});
+const event=Object.freeze({observed:true,actor:'learner',source:'choice-select',occurrenceId:'choice-select:31',experienceId:state.currentExperienceId,question:state.experienceQuestion,choice:state.experienceChoiceCandidate});
+const owner=api.contextFromChoice(event,state);
+assert(owner);
+assert.equal(owner.occurrenceId,'choice-select:31');
+assert(Object.isFrozen(owner)); assert(Object.isFrozen(owner.context));
+const evidence=Object.freeze({dimension:'choice-function',result:'pass',context:state});
+assert.equal(api.ownsEvidence(owner,evidence),true);
+assert.equal(api.ownsEvidence(owner,Object.freeze({...evidence,occurrenceId:'choice-select:99'})),false);
+assert.equal(api.ownsEvidence(owner,Object.freeze({...evidence,dimension:'determiner-use'})),false);
+assert.equal(api.ownsEvidence(owner,Object.freeze({...evidence,context:Object.freeze({...state,experienceLanguage:'es'})})),false);
+assert.equal(api.ownsEvidence(owner,Object.freeze({...evidence,context:Object.freeze({...state,experienceQuestion:'Which wine should we choose?'})})),false);
+assert.equal(api.ownsEvidence(owner,Object.freeze({...evidence,context:Object.freeze({...state,experienceChoiceCandidate:'aged-strong-cheese'})})),false);
+assert.equal(api.contextFromChoice(Object.freeze({...event,choice:'aged-strong-cheese'}),state),null);
+assert.equal(api.contextFromChoice(Object.freeze({...event,source:'build-sentence'}),state),null);
+console.log('Choice attempt ownership: PASS');
