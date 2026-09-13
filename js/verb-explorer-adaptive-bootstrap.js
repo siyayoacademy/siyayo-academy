@@ -28,10 +28,20 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
         if(wire&&typeof wire.install==='function')wire.install();
-        return ensureGlobal('SIYAYOVerbExplorerSentenceBuiltObserver','js/verb-explorer-sentence-built-observer.js');
+        return ensureGlobal('SIYAYOChoiceModeSensor','js/choice-mode-sensor.js');
       })
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceModeBridge','js/verb-explorer-choice-mode-bridge.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerSentenceBuiltObserver','js/verb-explorer-sentence-built-observer.js');})
       .then(function(observer){
-        if(observer&&typeof observer.install==='function')observer.install();
+        if(observer&&typeof observer.install==='function'){
+          observer.install({
+            onObserved:function(observation){
+              var bridge=root.SIYAYOVerbExplorerChoiceModeBridge;
+              if(!bridge||typeof bridge.fromObservation!=='function')return null;
+              return bridge.fromObservation(observation);
+            }
+          });
+        }
         return cycle;
       });
   });
