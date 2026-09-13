@@ -72,10 +72,31 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerSentenceBuiltObserver.install, 'function');
     assert.strictEqual(clickListeners.length, 2, 'bootstrap should install one choice listener and one sentence-built listener');
 
+    // Exercise the grounded Attempt Source on this CI-routed test without wiring it live yet.
+    load('js/choice-attempt-source.js');
+    const attemptSource=sandbox.SIYAYOChoiceAttemptSource;
+    assert(attemptSource&&typeof attemptSource.assemble==='function','Choice Attempt Source should expose assemble');
+    const grounded=Object.freeze({currentExperienceId:'shopping-for-dinner',experienceLanguage:'en',experienceQuestion:'Which cheese should we choose?',experienceChoiceCandidate:'fresh-mild-cheese'});
+    const learnerEvent=Object.freeze({occurrenceId:'choice-select:21'});
+    const evidence=Object.freeze({dimension:'choice-function',result:'pass',context:grounded});
+    const support=Object.freeze({value:'none',context:grounded});
+    const mode=Object.freeze({value:'controlled-production',context:grounded});
+    const attempt=attemptSource.assemble({learnerEvent:learnerEvent,evidence:evidence,support:support,mode:mode,context:grounded});
+    assert(attempt,'matching grounded signals should assemble an Attempt');
+    assert.strictEqual(attempt.occurrenceId,'choice-select:21');
+    assert.strictEqual(attempt.dimension,'choice-function');
+    assert.strictEqual(attempt.result,'pass');
+    assert.strictEqual(attempt.support,'none');
+    assert.strictEqual(attempt.mode,'controlled-production','Attempt Source must preserve observed mode rather than invent transfer');
+    assert.strictEqual(Object.isFrozen(attempt),true);
+    assert.strictEqual(Object.isFrozen(attempt.context),true);
+    const changedLanguage=Object.freeze({currentExperienceId:'shopping-for-dinner',experienceLanguage:'es',experienceQuestion:'Which cheese should we choose?',experienceChoiceCandidate:'fresh-mild-cheese'});
+    assert.strictEqual(attemptSource.assemble({learnerEvent:learnerEvent,evidence:evidence,support:Object.freeze({value:'none',context:changedLanguage}),mode:mode,context:grounded}),null,'mixed contextual signals must fail closed');
+
     return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
       assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
       assert.strictEqual(clickListeners.length, 2, 'second bootstrap must not duplicate either adaptive listener');
-      console.log('Verb Explorer adaptive browser bootstrap: PASS — Cycle available, choice wire and sentence-built observer loaded in order, both installed once, and repeated bootstrap is idempotent.');
+      console.log('Verb Explorer adaptive browser bootstrap: PASS — live bridges remain idempotent and grounded Choice Attempt assembly is CI exercised without inventing transfer.');
     });
   })
   .catch(function(error) {
