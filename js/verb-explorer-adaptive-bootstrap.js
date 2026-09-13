@@ -28,6 +28,14 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
         if(wire&&typeof wire.install==='function')wire.install();
+        return ensureGlobal('SIYAYOChoiceSupportSensor','js/choice-support-sensor.js');
+      })
+      .then(function(sensorApi){
+        if(sensorApi&&typeof sensorApi.create==='function')root.SIYAYOChoiceSupportSensor=sensorApi.create();
+        return ensureGlobal('SIYAYOVerbExplorerChoiceSupportObserver','js/verb-explorer-choice-support-observer.js');
+      })
+      .then(function(supportObserver){
+        if(supportObserver&&typeof supportObserver.install==='function')supportObserver.install();
         return ensureGlobal('SIYAYOChoiceModeSensor','js/choice-mode-sensor.js');
       })
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceModeBridge','js/verb-explorer-choice-mode-bridge.js');})
