@@ -42,6 +42,7 @@ on:
       - 'scripts/test-choice-support-observer.js'
       - 'scripts/test-choice-mode-sensor.js'
       - 'scripts/test-choice-mode-context-scope.js'
+      - 'scripts/test-choice-mode-bridge.js'
       - 'scripts/test-choice-attempt-ownership.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
@@ -93,6 +94,7 @@ jobs:
           node --check scripts/test-choice-support-observer.js
           node --check scripts/test-choice-mode-sensor.js
           node --check scripts/test-choice-mode-context-scope.js
+          node --check scripts/test-choice-mode-bridge.js
           node --check scripts/test-choice-attempt-ownership.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
@@ -134,5 +136,7 @@ jobs:
         run: node scripts/test-choice-mode-sensor.js
       - name: Test Choice mode contextual scope
         run: node scripts/test-choice-mode-context-scope.js
+      - name: Test Choice mode bridge
+        run: node scripts/test-choice-mode-bridge.js
       - name: Test Choice attempt ownership
         run: node scripts/test-choice-attempt-ownership.js
