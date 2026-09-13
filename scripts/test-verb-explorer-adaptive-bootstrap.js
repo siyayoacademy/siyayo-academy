@@ -54,6 +54,10 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
       'js/verb-explorer-adaptive-state-bridge.js',
       'js/verb-explorer-adaptive-coordinator.js',
       'js/verb-explorer-choice-adaptive-wire.js',
+      'js/choice-support-sensor.js',
+      'js/verb-explorer-choice-support-observer.js',
+      'js/choice-mode-sensor.js',
+      'js/verb-explorer-choice-mode-bridge.js',
       'js/verb-explorer-sentence-built-observer.js'
     ];
     for (const src of liveOrder) assert(appended.includes(src), src + ' should be loaded by adaptive bootstrap');
@@ -69,8 +73,10 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveStateBridge.getResumeState, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveCoordinator.submitChoice, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceSupportObserver.install, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOChoiceSupportSensor.observe, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerSentenceBuiltObserver.install, 'function');
-    assert.strictEqual(clickListeners.length, 2, 'bootstrap should install one choice listener and one sentence-built listener');
+    assert.strictEqual(clickListeners.length, 3, 'bootstrap should install one choice, one support-audio, and one sentence-built listener');
 
     // Exercise the grounded Attempt Source on this CI-routed test without wiring it live yet.
     load('js/choice-attempt-source.js');
@@ -95,8 +101,8 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
 
     return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
       assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
-      assert.strictEqual(clickListeners.length, 2, 'second bootstrap must not duplicate either adaptive listener');
-      console.log('Verb Explorer adaptive browser bootstrap: PASS — live bridges remain idempotent and grounded Choice Attempt assembly is CI exercised without inventing transfer.');
+      assert.strictEqual(clickListeners.length, 3, 'second bootstrap must not duplicate adaptive listeners');
+      console.log('Verb Explorer adaptive browser bootstrap: PASS — Choice, grounded support-audio, and sentence-built bridges remain ordered and idempotent.');
     });
   })
   .catch(function(error) {
