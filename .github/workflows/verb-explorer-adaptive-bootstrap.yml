@@ -44,6 +44,12 @@ on:
       - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
       - 'scripts/test-verb-explorer-adaptive-profile-source.js'
       - 'scripts/test-verb-explorer-adaptive-evidence-profile-source.js'
+      - 'scripts/test-verb-explorer-evidence-session-chain.js'
+      - 'js/adaptive-evidence-profile.js'
+      - 'js/adaptive-pedagogical-orchestrator.js'
+      - 'js/adaptive-learning-router.js'
+      - 'js/xespirito-evidence-interpreter.js'
+      - 'js/verb-explorer-adaptive-session-source.js'
       - 'scripts/test-verb-explorer-xespirito-evidence-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-evidence-source.js'
       - 'scripts/test-choice-evidence-evaluator.js'
@@ -110,6 +116,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
           node --check scripts/test-verb-explorer-adaptive-profile-source.js
           node --check scripts/test-verb-explorer-adaptive-evidence-profile-source.js
+          node --check scripts/test-verb-explorer-evidence-session-chain.js
           node --check scripts/test-verb-explorer-xespirito-evidence-bridge.js
           node --check scripts/test-verb-explorer-adaptive-evidence-source.js
           node --check scripts/test-choice-evidence-evaluator.js
@@ -152,6 +159,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-profile-source.js
       - name: Test grounded adaptive Evidence Profile source
         run: node scripts/test-verb-explorer-adaptive-evidence-profile-source.js
+      - name: Test Evidence Profile to Session chain
+        run: node scripts/test-verb-explorer-evidence-session-chain.js
       - name: Test grounded Xespirito evidence bridge
         run: node scripts/test-verb-explorer-xespirito-evidence-bridge.js
       - name: Test grounded adaptive Evidence source
