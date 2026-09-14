@@ -11,6 +11,7 @@ on:
       - 'js/verb-explorer-canonical-skill-loader.js'
       - 'js/verb-explorer-learner-identity-provider.js'
       - 'js/leaf-assessment-target-authority.js'
+      - 'js/leaf-canonical-skill-bridge.js'
       - 'js/verb-explorer-learner-event.js'
       - 'js/verb-explorer-adaptive-controller.js'
       - 'js/verb-explorer-choice-adaptive-wire.js'
@@ -38,6 +39,7 @@ on:
       - 'scripts/test-verb-explorer-canonical-skill-loader.js'
       - 'scripts/test-verb-explorer-learner-identity-provider.js'
       - 'scripts/test-leaf-assessment-target-authority.js'
+      - 'scripts/test-leaf-canonical-skill-bridge.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
       - 'scripts/test-verb-explorer-adaptive-controller.js'
@@ -91,6 +93,7 @@ jobs:
           node --check js/verb-explorer-canonical-skill-loader.js
           node --check js/verb-explorer-learner-identity-provider.js
           node --check js/leaf-assessment-target-authority.js
+          node --check js/leaf-canonical-skill-bridge.js
           node --check js/verb-explorer-learner-event.js
           node --check js/verb-explorer-adaptive-controller.js
           node --check js/verb-explorer-choice-adaptive-wire.js
@@ -118,6 +121,7 @@ jobs:
           node --check scripts/test-verb-explorer-canonical-skill-loader.js
           node --check scripts/test-verb-explorer-learner-identity-provider.js
           node --check scripts/test-leaf-assessment-target-authority.js
+          node --check scripts/test-leaf-canonical-skill-bridge.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
           node --check scripts/test-verb-explorer-adaptive-controller.js
@@ -155,6 +159,8 @@ jobs:
         run: node scripts/test-verb-explorer-learner-identity-provider.js
       - name: Test Leaf assessment target authority
         run: node scripts/test-leaf-assessment-target-authority.js
+      - name: Test Leaf canonical Skill bridge
+        run: node scripts/test-leaf-canonical-skill-bridge.js
       - name: Test learner event boundary
         run: node scripts/test-verb-explorer-learner-event.js
       - name: Test learner event agency semantics
