@@ -5,6 +5,13 @@
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.AdaptivePedagogicalOrchestrator = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveLearningRouter) {
+  function preserveContextSkill(decision, context = {}) {
+    if (typeof context.skill === 'string' && context.skill.trim()) {
+      decision.skill = context.skill.trim();
+    }
+    return decision;
+  }
+
   function decide(profileApi, profile, context = {}) {
     if (!profileApi || typeof profileApi.recommend !== 'function') {
       throw new TypeError('Adaptive evidence profile API is required.');
@@ -29,20 +36,20 @@
     }
 
     if (recommendation.action === 'review-pattern') {
-      return {
+      return preserveContextSkill({
         action: 'continue-assessment',
         experienceId: context.currentExperience || 'shopping-for-dinner',
         focus: 'contrast-review',
         reason: recommendation.reason
-      };
+      }, context);
     }
 
-    return {
+    return preserveContextSkill({
       action: 'continue-assessment',
       experienceId: context.currentExperience || 'shopping-for-dinner',
       focus: 'assessment',
       reason: recommendation.reason
-    };
+    }, context);
   }
 
   return { decide };
