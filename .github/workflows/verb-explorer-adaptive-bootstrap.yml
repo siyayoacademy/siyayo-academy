@@ -10,6 +10,7 @@ on:
       - 'js/green-pass-authority-policy.js'
       - 'js/verb-explorer-canonical-skill-loader.js'
       - 'js/verb-explorer-learner-identity-provider.js'
+      - 'js/leaf-assessment-target-authority.js'
       - 'js/verb-explorer-learner-event.js'
       - 'js/verb-explorer-adaptive-controller.js'
       - 'js/verb-explorer-choice-adaptive-wire.js'
@@ -36,6 +37,7 @@ on:
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-canonical-skill-loader.js'
       - 'scripts/test-verb-explorer-learner-identity-provider.js'
+      - 'scripts/test-leaf-assessment-target-authority.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
       - 'scripts/test-verb-explorer-adaptive-controller.js'
@@ -88,6 +90,7 @@ jobs:
           node --check js/verb-explorer-cycle-resume-dispatch.js
           node --check js/verb-explorer-canonical-skill-loader.js
           node --check js/verb-explorer-learner-identity-provider.js
+          node --check js/leaf-assessment-target-authority.js
           node --check js/verb-explorer-learner-event.js
           node --check js/verb-explorer-adaptive-controller.js
           node --check js/verb-explorer-choice-adaptive-wire.js
@@ -114,6 +117,7 @@ jobs:
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-canonical-skill-loader.js
           node --check scripts/test-verb-explorer-learner-identity-provider.js
+          node --check scripts/test-leaf-assessment-target-authority.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
           node --check scripts/test-verb-explorer-adaptive-controller.js
@@ -149,6 +153,8 @@ jobs:
         run: node scripts/test-verb-explorer-canonical-skill-loader.js
       - name: Test explicit learner identity provider
         run: node scripts/test-verb-explorer-learner-identity-provider.js
+      - name: Test Leaf assessment target authority
+        run: node scripts/test-leaf-assessment-target-authority.js
       - name: Test learner event boundary
         run: node scripts/test-verb-explorer-learner-event.js
       - name: Test learner event agency semantics
