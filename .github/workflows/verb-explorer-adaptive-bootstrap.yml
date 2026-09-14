@@ -8,6 +8,7 @@ on:
       - 'js/verb-explorer-adaptive-bootstrap.js'
       - 'js/verb-explorer-cycle-resume-dispatch.js'
       - 'js/green-pass-authority-policy.js'
+      - 'js/verb-explorer-canonical-skill-loader.js'
       - 'js/verb-explorer-learner-event.js'
       - 'js/verb-explorer-adaptive-controller.js'
       - 'js/verb-explorer-choice-adaptive-wire.js'
@@ -32,6 +33,7 @@ on:
       - 'js/choice-attempt-boundary.js'
       - 'js/verb-explorer-choice-attempt-factory.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
+      - 'scripts/test-verb-explorer-canonical-skill-loader.js'
       - 'scripts/test-verb-explorer-learner-event.js'
       - 'scripts/test-verb-explorer-learner-event-agency.js'
       - 'scripts/test-verb-explorer-adaptive-controller.js'
@@ -82,6 +84,7 @@ jobs:
           node --check js/adaptive-attempt-loop.js
           node --check js/verb-explorer-adaptive-bootstrap.js
           node --check js/verb-explorer-cycle-resume-dispatch.js
+          node --check js/verb-explorer-canonical-skill-loader.js
           node --check js/verb-explorer-learner-event.js
           node --check js/verb-explorer-adaptive-controller.js
           node --check js/verb-explorer-choice-adaptive-wire.js
@@ -106,6 +109,7 @@ jobs:
           node --check js/choice-attempt-boundary.js
           node --check js/verb-explorer-choice-attempt-factory.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
+          node --check scripts/test-verb-explorer-canonical-skill-loader.js
           node --check scripts/test-verb-explorer-learner-event.js
           node --check scripts/test-verb-explorer-learner-event-agency.js
           node --check scripts/test-verb-explorer-adaptive-controller.js
@@ -137,6 +141,8 @@ jobs:
           node --check scripts/test-adaptive-evidence-mode-boundary.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
+      - name: Test canonical Skill definition loader
+        run: node scripts/test-verb-explorer-canonical-skill-loader.js
       - name: Test learner event boundary
         run: node scripts/test-verb-explorer-learner-event.js
       - name: Test learner event agency semantics
