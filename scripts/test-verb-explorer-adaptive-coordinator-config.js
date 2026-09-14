@@ -12,8 +12,9 @@ const learnerEvent=Object.freeze({choice:'fresh-mild-cheese'});
 const documentRef=Object.freeze({id:'doc'});
 let received=null;
 
-const sandbox=vm.createContext({Object});
+const sandbox=vm.createContext({Object,Array});
 sandbox.globalThis=sandbox;
+sandbox.GreenPassAuthorityPolicy=Object.freeze({contractAuthoritySkills:Object.freeze(['which.use.determiner'])});
 sandbox.SIYAYOVerbExplorerAdaptiveCoordinator=Object.freeze({
   configure(input){calls.coordinator+=1;received=input;return true;}
 });
