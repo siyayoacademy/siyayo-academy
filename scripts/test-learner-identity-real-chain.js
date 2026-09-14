@@ -47,8 +47,8 @@ function boot(){
   const ctx=boot();
   assert.strictEqual(ctx.SIYAYOVerbExplorerLearnerIdentitySource.adopt('learner-01'),true);
   assert.strictEqual(ctx.SIYAYOLearnerIdentityAuthority.establish({learnerId:'learner-02'}),true);
-  assert.strictEqual(ctx.SIYAYOLearnerIdentityProviderBridge.provideEstablished(),true);
-  assert.strictEqual(ctx.SIYAYOVerbExplorerLearnerIdentitySource.getId(),'learner-02');
+  assert.strictEqual(ctx.SIYAYOLearnerIdentityProviderBridge.provideEstablished(),false,'conflicting authority identity must WAIT');
+  assert.strictEqual(ctx.SIYAYOVerbExplorerLearnerIdentitySource.getId(),'learner-01','conflict must preserve retained Source identity');
 }
 
-console.log('PASS real learner identity authority -> provider -> source chain');
+console.log('PASS real learner identity chain — missing identity WAIT; matching identity flows; conflicting identity fails closed without switch');
