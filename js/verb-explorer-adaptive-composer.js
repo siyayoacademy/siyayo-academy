@@ -3,7 +3,8 @@
 (function(root){
 'use strict';
 
-function compose(){
+function compose(input){
+  input=input||{};
   var identitySource=root.SIYAYOVerbExplorerLearnerIdentitySource;
   var skillSource=root.SIYAYOVerbExplorerCanonicalSkillSource;
   var greenProfileSource=root.SIYAYOVerbExplorerAdaptiveProfileSource;
@@ -25,6 +26,7 @@ function compose(){
   var passContract=skillSource.getPassContract();
   var state=stateBridge.getState();
   if(typeof learnerId!=='string'||!learnerId.trim())return false;
+  learnerId=learnerId.trim();
   if(typeof skill!=='string'||!skill.trim()||!passContract)return false;
   if(!state||typeof state.currentExperienceId!=='string'||!state.currentExperienceId.trim())return false;
 
@@ -36,12 +38,14 @@ function compose(){
   });
 
   var greenProfile=greenProfileSource.getProfile&&greenProfileSource.getProfile();
+  if(greenProfile&&greenProfile.id!==learnerId)return false;
   if(!greenProfile)greenProfile=greenProfileSource.begin(learnerId);
-  if(!greenProfile)return false;
+  if(!greenProfile||greenProfile.id!==learnerId)return false;
 
   var evidenceProfile=evidenceProfileSource.getProfile&&evidenceProfileSource.getProfile();
+  if(evidenceProfile&&evidenceProfile.id!==learnerId)return false;
   if(!evidenceProfile)evidenceProfile=evidenceProfileSource.begin(learnerId);
-  if(!evidenceProfile)return false;
+  if(!evidenceProfile||evidenceProfile.id!==learnerId)return false;
 
   var session=sessionSource.begin(evidenceProfile,context);
   if(!session||!session.decision)return false;
@@ -51,7 +55,8 @@ function compose(){
     session:session,
     context:context,
     getState:stateBridge.getState,
-    getResumeState:stateBridge.getResumeState
+    getResumeState:stateBridge.getResumeState,
+    document:input.document
   });
 }
 
