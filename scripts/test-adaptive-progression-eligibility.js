@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Progression = require('../js/adaptive-progression-eligibility.js');
+const CandidateGrounding = require('../js/adaptive-progression-eligibility.js');
 
 const session = {
   decision: {
@@ -8,40 +8,42 @@ const session = {
   }
 };
 
-function evaluate(pedagogicalResult) {
-  return Progression.evaluateProgressionEligibility({ session, pedagogicalResult });
+function evaluate(candidate) {
+  return CandidateGrounding.evaluateCandidateGrounding({ session, candidate });
 }
 
-assert.strictEqual(Progression.evaluateProgressionEligibility({}).status, 'PROGRESSION_NOT_ELIGIBLE');
-assert.strictEqual(evaluate(null).status, 'PROGRESSION_NOT_ELIGIBLE');
+assert.strictEqual(CandidateGrounding.evaluateCandidateGrounding({}).status, 'CANDIDATE_UNGROUNDED');
+assert.strictEqual(evaluate(null).status, 'CANDIDATE_UNGROUNDED');
 assert.strictEqual(evaluate({
-  status: 'GREEN_PASS',
-  experienceId: 'shopping-for-dinner',
-  skill: 'which.use.determiner'
-}).status, 'PROGRESSION_NOT_ELIGIBLE', 'Green Pass alone must not offer progression');
-assert.strictEqual(evaluate({
-  status: 'RESUME_EXECUTED',
-  experienceId: 'shopping-for-dinner',
-  skill: 'which.use.determiner'
-}).status, 'PROGRESSION_NOT_ELIGIBLE', 'Resume must preserve S1 rather than imply progression');
-assert.strictEqual(evaluate({
-  status: 'PEDAGOGICAL_WORK_COMPLETE',
+  status: 'selected',
   experienceId: 'preparing-dinner',
-  skill: 'which.use.determiner'
-}).status, 'PROGRESSION_NOT_ELIGIBLE', 'completion from another Experience cannot release active S');
+  fromExperience: 'shopping-for-dinner'
+}).status, 'CANDIDATE_UNGROUNDED', 'legacy advance selection must not masquerade as read-only candidate grounding');
 assert.strictEqual(evaluate({
-  status: 'PEDAGOGICAL_WORK_COMPLETE',
+  status: 'candidate-resolved',
+  experienceId: 'preparing-dinner',
+  fromExperience: 'having-dinner'
+}).status, 'CANDIDATE_UNGROUNDED', 'candidate from another Experience cannot be grounded in active S1');
+assert.strictEqual(evaluate({
+  status: 'candidate-resolved',
   experienceId: 'shopping-for-dinner',
-  skill: 'another.skill'
-}).status, 'PROGRESSION_NOT_ELIGIBLE', 'completion from another skill cannot release active S');
+  fromExperience: 'shopping-for-dinner'
+}).status, 'CANDIDATE_UNGROUNDED', 'candidate destination must differ from active Experience');
 
-const eligible = evaluate({
-  status: 'PEDAGOGICAL_WORK_COMPLETE',
-  experienceId: 'shopping-for-dinner',
-  skill: 'which.use.determiner'
+const grounded = evaluate({
+  status: 'candidate-resolved',
+  experienceId: 'preparing-dinner',
+  fromExperience: 'shopping-for-dinner',
+  entryVerb: 'cook',
+  title: { en: 'Preparing Dinner' }
 });
-assert.strictEqual(eligible.status, 'PROGRESSION_ELIGIBLE');
-assert.strictEqual(eligible.experienceId, 'shopping-for-dinner');
-assert.strictEqual(eligible.skill, 'which.use.determiner');
+assert.strictEqual(grounded.status, 'CANDIDATE_GROUNDED');
+assert.strictEqual(grounded.experienceId, 'shopping-for-dinner');
+assert.strictEqual(grounded.skill, 'which.use.determiner');
+assert.strictEqual(grounded.candidate.experienceId, 'preparing-dinner');
+assert.strictEqual(grounded.candidate.fromExperience, 'shopping-for-dinner');
+assert.strictEqual(grounded.candidate.entryVerb, 'cook');
+assert.strictEqual(Object.prototype.hasOwnProperty.call(grounded, 'action'), false, 'grounding must not authorize advance');
+assert.strictEqual(Object.prototype.hasOwnProperty.call(grounded, 'nextDecision'), false, 'grounding must not fabricate Decision2');
 
-console.log('PASS adaptive progression eligibility is fail-closed: Green Pass/Resume do not imply progression; only grounded pedagogical completion can make progression eligible.');
+console.log('PASS adaptive candidate grounding is fail-closed: a resolved toroidal candidate may be grounded in S1 without completion, NEXT, progression, Decision2, or Session release.');
