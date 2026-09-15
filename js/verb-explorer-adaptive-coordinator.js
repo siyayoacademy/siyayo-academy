@@ -18,12 +18,13 @@
 
   function clear(){current=null;}
 
-  function releaseTransition(nextDecision){
+  function releaseTransition(advanceSelection,nextDecision){
     if(!current||!current.session)return false;
     var boundary=root.AdaptiveSessionTransitionBoundary;
     if(!boundary||typeof boundary.authorize!=='function')return false;
     var authorization=boundary.authorize({
       currentSession:current.session,
+      advanceSelection:advanceSelection,
       nextDecision:nextDecision
     });
     if(!authorization||authorization.status!=='transition-authorized')return false;
