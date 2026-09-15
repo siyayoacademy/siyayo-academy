@@ -11,6 +11,7 @@ function compose(input){
   var evidenceProfileSource=root.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource;
   var sessionSource=root.SIYAYOVerbExplorerAdaptiveSessionSource;
   var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+  var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var coordinatorConfig=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
 
   if(!identitySource||typeof identitySource.getId!=='function')return false;
@@ -19,7 +20,13 @@ function compose(input){
   if(!evidenceProfileSource||typeof evidenceProfileSource.begin!=='function')return false;
   if(!sessionSource||typeof sessionSource.begin!=='function')return false;
   if(!stateBridge||typeof stateBridge.getState!=='function')return false;
+  if(!coordinator||typeof coordinator.snapshot!=='function')return false;
   if(!coordinatorConfig||typeof coordinatorConfig.configure!=='function')return false;
+
+  // Coordinator owns an active pedagogical Session once configured.
+  // Recomposition must not silently replace S; a new S requires an explicit lifecycle clear first.
+  var active=coordinator.snapshot();
+  if(active&&active.session)return false;
 
   var learnerId=identitySource.getId();
   var skill=skillSource.getSkill();
