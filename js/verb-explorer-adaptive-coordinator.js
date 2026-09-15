@@ -32,6 +32,30 @@
     return authorization;
   }
 
+  function resolveConvergence(session,sourceContext,result){
+    var selector=root.AdaptiveAdvanceSelector;
+    var grounding=root.AdaptiveProgressionEligibility;
+    var pedagogicalState=root.AdaptivePedagogicalCompletion;
+    var convergence=root.AdaptiveConvergenceResolver;
+    if(!selector||typeof selector.resolveCandidate!=='function'||
+       !grounding||typeof grounding.evaluateCandidateGrounding!=='function'||
+       !pedagogicalState||typeof pedagogicalState.evaluatePedagogicalState!=='function'||
+       !convergence||typeof convergence.resolve!=='function')return null;
+
+    var candidate=selector.resolveCandidate(Object.assign({},sourceContext||{}, {
+      currentExperience:session&&session.decision?session.decision.experienceId:null
+    }));
+    var candidateGrounding=grounding.evaluateCandidateGrounding({session:session,candidate:candidate});
+    var observedState=pedagogicalState.evaluatePedagogicalState({
+      session:session,
+      contractResult:result.contractEvaluation,
+      pedagogicalDisposition:result.routeInspection||result.recommendation||null,
+      waitState:result.waitClassification,
+      resumeState:result.resumeEvaluation
+    });
+    return convergence.resolve({candidateGrounding:candidateGrounding,pedagogicalState:observedState});
+  }
+
   function submitChoice(choice,target){
     if(!current)return null;
     var controller=root.SIYAYOVerbExplorerAdaptiveController;
@@ -45,25 +69,28 @@
     if(!attempt)return null;
     var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
     if(!resumeState)return null;
+    var sourceContext=current.context;
 
     var result=controller.submitChoice({
       choice:choice,
       profile:current.profile,
       session:current.session,
       attempt:attempt,
-      context:current.context,
+      context:sourceContext,
       state:state,
       learnerEvent:learnerEvent,
       resumeState:resumeState
     });
     if(!result)return null;
 
+    var convergenceResult=resolveConvergence(current.session,sourceContext,result);
+
     if(result.greenProfile)current.profile=result.greenProfile;
     if(result.nextContext)current.context=result.nextContext;
 
     var dispatch=root.SIYAYOVerbExplorerCycleResumeDispatch;
     var dispatchResult=dispatch&&typeof dispatch.run==='function'?dispatch.run(result):null;
-    return {cycleResult:result,dispatchResult:dispatchResult};
+    return {cycleResult:result,convergenceResult:convergenceResult,dispatchResult:dispatchResult};
   }
 
   function snapshot(){
