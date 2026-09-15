@@ -9,8 +9,6 @@ on:
       - 'js/verb-explorer-cycle-resume-dispatch.js'
       - 'js/green-pass-authority-policy.js'
       - 'js/verb-explorer-canonical-skill-loader.js'
-      - 'js/learner-identity-authority.js'
-      - 'js/learner-identity-provider-bridge.js'
       - 'js/verb-explorer-learner-identity-provider.js'
       - 'js/leaf-assessment-target-authority.js'
       - 'js/leaf-canonical-skill-bridge.js'
@@ -37,8 +35,6 @@ on:
       - 'js/choice-attempt-ownership.js'
       - 'js/choice-attempt-boundary.js'
       - 'js/verb-explorer-choice-attempt-factory.js'
-      - 'scripts/test-learner-identity-authority.js'
-      - 'scripts/test-learner-identity-provider-bridge.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
       - 'scripts/test-verb-explorer-canonical-skill-loader.js'
       - 'scripts/test-verb-explorer-learner-identity-provider.js'
@@ -95,8 +91,6 @@ jobs:
           node --check js/verb-explorer-adaptive-bootstrap.js
           node --check js/verb-explorer-cycle-resume-dispatch.js
           node --check js/verb-explorer-canonical-skill-loader.js
-          node --check js/learner-identity-authority.js
-          node --check js/learner-identity-provider-bridge.js
           node --check js/verb-explorer-learner-identity-provider.js
           node --check js/leaf-assessment-target-authority.js
           node --check js/leaf-canonical-skill-bridge.js
@@ -123,8 +117,6 @@ jobs:
           node --check js/choice-attempt-ownership.js
           node --check js/choice-attempt-boundary.js
           node --check js/verb-explorer-choice-attempt-factory.js
-          node --check scripts/test-learner-identity-authority.js
-          node --check scripts/test-learner-identity-provider-bridge.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
           node --check scripts/test-verb-explorer-canonical-skill-loader.js
           node --check scripts/test-verb-explorer-learner-identity-provider.js
@@ -163,10 +155,6 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test canonical Skill definition loader
         run: node scripts/test-verb-explorer-canonical-skill-loader.js
-      - name: Test learner identity authority
-        run: node scripts/test-learner-identity-authority.js
-      - name: Test learner identity authority to provider bridge
-        run: node scripts/test-learner-identity-provider-bridge.js
       - name: Test explicit learner identity provider
         run: node scripts/test-verb-explorer-learner-identity-provider.js
       - name: Test Leaf assessment target authority
