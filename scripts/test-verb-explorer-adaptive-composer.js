@@ -13,6 +13,7 @@ function buildSandbox(options={}){
   let greenProfile=options.greenProfile===undefined?null:options.greenProfile;
   let evidenceProfile=options.evidenceProfile===undefined?null:options.evidenceProfile;
   let received=null;
+  let active=null;
 
   const sandbox=vm.createContext({Object,Array});
   sandbox.globalThis=sandbox;
@@ -44,23 +45,28 @@ function buildSandbox(options={}){
       assert.equal(context.skill,'which.use.determiner');
       assert.equal(context.currentExperience,'shopping-for-dinner');
       assert.equal(context.passContract,passContract);
-      return Object.freeze({decision:Object.freeze({skill:context.skill,experienceId:context.currentExperience})});
+      return {decision:Object.freeze({skill:context.skill,experienceId:context.currentExperience}),trace:[]};
     }
   });
   sandbox.SIYAYOVerbExplorerAdaptiveStateBridge=Object.freeze({
     getState:()=>state,
     getResumeState:()=>state
   });
+  sandbox.SIYAYOVerbExplorerAdaptiveCoordinator=Object.freeze({
+    snapshot:()=>active,
+    clear:()=>{active=null;}
+  });
   sandbox.SIYAYOVerbExplorerAdaptiveCoordinatorConfig=Object.freeze({
     configure(input){
       calls.configure+=1;
       received=input;
+      active={profile:input.profile,session:input.session,context:input.context};
       return true;
     }
   });
 
   vm.runInContext(fs.readFileSync('js/verb-explorer-adaptive-composer.js','utf8'),sandbox,{filename:'js/verb-explorer-adaptive-composer.js'});
-  return {sandbox,calls,state,documentRef,getReceived:()=>received};
+  return {sandbox,calls,state,documentRef,getReceived:()=>received,getActive:()=>active,clearActive:()=>{active=null;}};
 }
 
 {
@@ -76,6 +82,20 @@ function buildSandbox(options={}){
   assert.equal(t.getReceived().context.currentExperience,'shopping-for-dinner');
   assert.equal(t.getReceived().document,t.documentRef,'document must be preserved for event-time Attempt resolution');
   assert.equal('attempt' in t.getReceived(),false,'Composer must not pre-create Attempt A');
+
+  const firstSession=t.getActive().session;
+  firstSession.trace.push({event:'learner-attempt'});
+  assert.equal(composer.compose({document:t.documentRef}),false,'active Session must block silent recomposition');
+  assert.equal(t.calls.sessionBegin,1,'active Session must not be recreated');
+  assert.equal(t.calls.configure,1,'active Coordinator must not be reconfigured');
+  assert.equal(t.getActive().session,firstSession,'Coordinator must retain the same Session reference');
+  assert.equal(t.getActive().session.trace.length,1,'active Session trace must be preserved');
+
+  t.clearActive();
+  assert.equal(composer.compose({document:t.documentRef}),true,'explicit lifecycle clear permits a new Session');
+  assert.equal(t.calls.sessionBegin,2,'new Session may begin only after active lifecycle is cleared');
+  assert.equal(t.calls.configure,2);
+  assert.notEqual(t.getActive().session,firstSession,'cleared lifecycle must receive a new Session reference');
 }
 
 {
@@ -107,4 +127,4 @@ function buildSandbox(options={}){
   assert.equal(t.calls.configure,0);
 }
 
-console.log('Adaptive Composer: PASS — grounded identity-bound P/S/C compose once, document is preserved, mismatches WAIT, and A is not pre-created.');
+console.log('Adaptive Composer: PASS — identity-bound P/S/C; active S is preserved until explicit lifecycle clear; mismatches WAIT; A remains event-time only.');
