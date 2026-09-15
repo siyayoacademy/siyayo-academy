@@ -114,26 +114,37 @@ assert.notEqual(after.profile, before.profile);
 assert.equal(after.profile, output.cycleResult.greenProfile);
 assert.equal(after.context, output.cycleResult.nextContext);
 
-assert.equal(coordinator.releaseTransition(null), false);
-assert.equal(coordinator.snapshot().session, session, 'missing next Decision must preserve S1');
-assert.equal(coordinator.releaseTransition({ experienceId: 'shopping-for-dinner', skill: 'which.use.determiner' }), false);
-assert.equal(coordinator.snapshot().session, session, 'same Experience must preserve S1');
+const selectedAdvance = {
+  action: 'advance',
+  status: 'selected',
+  experienceId: 'preparing-dinner',
+  fromExperience: 'shopping-for-dinner',
+  entryVerb: 'prepare',
+  title: 'Preparing Dinner'
+};
+assert.equal(coordinator.releaseTransition(null, null), false);
+assert.equal(coordinator.snapshot().session, session, 'missing advance/Decision must preserve S1');
+assert.equal(coordinator.releaseTransition(selectedAdvance, {
+  action: 'continue-assessment', experienceId: 'preparing-dinner', skill: 'which.use.determiner'
+}), false);
+assert.equal(coordinator.snapshot().session, session, 'continue-assessment must preserve S1');
 
 const nextDecision = {
-  action: 'continue-assessment',
+  action: 'advance',
   experienceId: 'preparing-dinner',
   skill: 'which.use.determiner',
   focus: 'assessment'
 };
-const authorization = coordinator.releaseTransition(nextDecision);
+const authorization = coordinator.releaseTransition(selectedAdvance, nextDecision);
 assert.ok(authorization);
 assert.equal(authorization.status, 'transition-authorized');
 assert.equal(authorization.fromExperience, 'shopping-for-dinner');
 assert.equal(authorization.toExperience, 'preparing-dinner');
+assert.equal(authorization.advanceSelection, selectedAdvance);
 assert.equal(authorization.nextDecision, nextDecision);
-assert.equal(coordinator.snapshot(), null, 'authorized explicit transition releases S1');
+assert.equal(coordinator.snapshot(), null, 'selected advance + grounded advance Decision releases S1');
 assert.equal(session.decision.experienceId, 'shopping-for-dinner', 'release must not mutate S1 Decision');
 assert.equal(coordinator.submitChoice('choose', null), null);
 assert.equal(dispatchCalls, 1, 'released coordinator must not dispatch');
 
-console.log('Verb Explorer adaptive coordinator: PASS — submitChoice preserves S1 through Green/Resume; only explicit grounded transition authority releases S1; no NEXT/S2 is invented.');
+console.log('Verb Explorer adaptive coordinator: PASS — Green/Resume preserves S1; continue-assessment cannot release it; selected advance + grounded advance Decision can release S1 without inventing S2.');
