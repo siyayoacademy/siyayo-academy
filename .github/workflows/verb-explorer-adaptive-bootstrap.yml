@@ -6,6 +6,9 @@ on:
       - 'js/adaptive-browser-runtime.js'
       - 'js/adaptive-attempt-loop.js'
       - 'js/adaptive-session-transition-boundary.js'
+      - 'js/adaptive-progression-eligibility.js'
+      - 'js/adaptive-pedagogical-completion.js'
+      - 'js/adaptive-convergence-resolver.js'
       - 'js/verb-explorer-adaptive-bootstrap.js'
       - 'js/verb-explorer-cycle-resume-dispatch.js'
       - 'js/green-pass-authority-policy.js'
@@ -37,7 +40,11 @@ on:
       - 'js/choice-attempt-boundary.js'
       - 'js/verb-explorer-choice-attempt-factory.js'
       - 'scripts/test-adaptive-session-transition-boundary.js'
+      - 'scripts/test-adaptive-progression-eligibility.js'
+      - 'scripts/test-adaptive-pedagogical-completion.js'
+      - 'scripts/test-adaptive-convergence-resolver.js'
       - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
+      - 'scripts/test-verb-explorer-adaptive-bootstrap-convergence-order.js'
       - 'scripts/test-verb-explorer-canonical-skill-loader.js'
       - 'scripts/test-verb-explorer-learner-identity-provider.js'
       - 'scripts/test-leaf-assessment-target-authority.js'
@@ -91,6 +98,9 @@ jobs:
           node --check js/adaptive-browser-runtime.js
           node --check js/adaptive-attempt-loop.js
           node --check js/adaptive-session-transition-boundary.js
+          node --check js/adaptive-progression-eligibility.js
+          node --check js/adaptive-pedagogical-completion.js
+          node --check js/adaptive-convergence-resolver.js
           node --check js/verb-explorer-adaptive-bootstrap.js
           node --check js/verb-explorer-cycle-resume-dispatch.js
           node --check js/verb-explorer-canonical-skill-loader.js
@@ -121,7 +131,11 @@ jobs:
           node --check js/choice-attempt-boundary.js
           node --check js/verb-explorer-choice-attempt-factory.js
           node --check scripts/test-adaptive-session-transition-boundary.js
+          node --check scripts/test-adaptive-progression-eligibility.js
+          node --check scripts/test-adaptive-pedagogical-completion.js
+          node --check scripts/test-adaptive-convergence-resolver.js
           node --check scripts/test-verb-explorer-adaptive-bootstrap.js
+          node --check scripts/test-verb-explorer-adaptive-bootstrap-convergence-order.js
           node --check scripts/test-verb-explorer-canonical-skill-loader.js
           node --check scripts/test-verb-explorer-learner-identity-provider.js
           node --check scripts/test-leaf-assessment-target-authority.js
@@ -157,8 +171,16 @@ jobs:
           node --check scripts/test-adaptive-evidence-mode-boundary.js
       - name: Test adaptive session transition boundary
         run: node scripts/test-adaptive-session-transition-boundary.js
+      - name: Test adaptive candidate grounding
+        run: node scripts/test-adaptive-progression-eligibility.js
+      - name: Test adaptive pedagogical state observation
+        run: node scripts/test-adaptive-pedagogical-completion.js
+      - name: Test adaptive convergence resolver
+        run: node scripts/test-adaptive-convergence-resolver.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
+      - name: Test browser bootstrap convergence dependency order
+        run: node scripts/test-verb-explorer-adaptive-bootstrap-convergence-order.js
       - name: Test canonical Skill definition loader
         run: node scripts/test-verb-explorer-canonical-skill-loader.js
       - name: Test explicit learner identity provider
