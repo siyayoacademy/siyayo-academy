@@ -25,6 +25,9 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveInputProvider','js/verb-explorer-adaptive-input-provider.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveStateBridge','js/verb-explorer-adaptive-state-bridge.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceResolutionReader','js/verb-explorer-choice-resolution-reader.js');})
+      .then(function(){return ensureGlobal('AdaptiveProgressionEligibility','js/adaptive-progression-eligibility.js');})
+      .then(function(){return ensureGlobal('AdaptivePedagogicalCompletion','js/adaptive-pedagogical-completion.js');})
+      .then(function(){return ensureGlobal('AdaptiveConvergenceResolver','js/adaptive-convergence-resolver.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinator','js/verb-explorer-adaptive-coordinator.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
