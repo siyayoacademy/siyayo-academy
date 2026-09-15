@@ -7,6 +7,10 @@ const AdaptiveEvidenceProfile = require('../js/adaptive-evidence-profile.js');
 const AdaptiveAttemptLoop = require('../js/adaptive-attempt-loop.js');
 const AdaptiveLearningCycle = require('../js/adaptive-learning-cycle.js');
 const AdaptiveSessionTransitionBoundary = require('../js/adaptive-session-transition-boundary.js');
+const AdaptiveAdvanceSelector = require('../js/adaptive-advance-selector.js');
+const AdaptiveProgressionEligibility = require('../js/adaptive-progression-eligibility.js');
+const AdaptivePedagogicalCompletion = require('../js/adaptive-pedagogical-completion.js');
+const AdaptiveConvergenceResolver = require('../js/adaptive-convergence-resolver.js');
 const GreenPassProfile = require('../js/green-pass-profile.js');
 const AdaptiveResumeExecutor = require('../js/adaptive-resume-executor.js');
 const AdaptiveResumeRuntimeDispatch = require('../js/adaptive-resume-runtime-dispatch.js');
@@ -73,6 +77,10 @@ const sandbox = vm.createContext({
   Object,
   AdaptiveLearningCycle,
   AdaptiveSessionTransitionBoundary,
+  AdaptiveAdvanceSelector,
+  AdaptiveProgressionEligibility,
+  AdaptivePedagogicalCompletion,
+  AdaptiveConvergenceResolver,
   SIYAYOVerbExplorerCycleResumeDispatch: dispatch
 });
 sandbox.globalThis = sandbox;
@@ -91,6 +99,7 @@ assert.equal(coordinator.configure({
 }), true);
 
 const before = coordinator.snapshot();
+const sourceContext = before.context;
 const output = coordinator.submitChoice('choose', null);
 assert.ok(output);
 assert.equal(output.cycleResult.waitClassification.state, 'OPPORTUNITY_FOUND_AWAITING_EVENT');
@@ -99,6 +108,16 @@ assert.equal(output.cycleResult.advanceSelection, null);
 assert.equal(output.cycleResult.nextContext.currentExperience, 'shopping-for-dinner');
 assert.equal(Object.prototype.hasOwnProperty.call(output.cycleResult, 'resumeExecuted'), false);
 assert.equal(session.trace.filter(entry => entry.event === 'adaptive-next-selected').length, 0);
+assert.ok(output.convergenceResult, 'Coordinator must expose derived convergence without mutating Cycle result');
+assert.equal(output.convergenceResult.status, 'CONVERGENCE_UNRESOLVED');
+assert.equal(output.convergenceResult.candidate.experienceId, 'preparing-dinner');
+assert.equal(output.convergenceResult.experienceId, 'shopping-for-dinner');
+assert.equal(output.convergenceResult.skill, 'which.use.determiner');
+assert.equal(Object.prototype.hasOwnProperty.call(output.convergenceResult, 'action'), false);
+assert.equal(Object.prototype.hasOwnProperty.call(output.convergenceResult, 'nextDecision'), false);
+assert.equal(Object.prototype.hasOwnProperty.call(output.convergenceResult, 'transition'), false);
+assert.equal(Object.prototype.hasOwnProperty.call(output.cycleResult, 'convergenceResult'), false, 'Cycle result must remain unchanged');
+assert.equal(before.context, sourceContext, 'source S1 context reference must remain available to convergence composition');
 assert.equal(dispatchCalls, 1);
 assert.equal(output.dispatchResult.status, 'RESUME_DISPATCHED');
 assert.equal(output.dispatchResult.execution.status, 'RESUME_EXECUTED');
@@ -115,12 +134,8 @@ assert.equal(after.profile, output.cycleResult.greenProfile);
 assert.equal(after.context, output.cycleResult.nextContext);
 
 const selectedAdvance = {
-  action: 'advance',
-  status: 'selected',
-  experienceId: 'preparing-dinner',
-  fromExperience: 'shopping-for-dinner',
-  entryVerb: 'prepare',
-  title: 'Preparing Dinner'
+  action: 'advance', status: 'selected', experienceId: 'preparing-dinner',
+  fromExperience: 'shopping-for-dinner', entryVerb: 'prepare', title: 'Preparing Dinner'
 };
 assert.equal(coordinator.releaseTransition(null, null), false);
 assert.equal(coordinator.snapshot().session, session, 'missing advance/Decision must preserve S1');
@@ -129,12 +144,7 @@ assert.equal(coordinator.releaseTransition(selectedAdvance, {
 }), false);
 assert.equal(coordinator.snapshot().session, session, 'continue-assessment must preserve S1');
 
-const nextDecision = {
-  action: 'advance',
-  experienceId: 'preparing-dinner',
-  skill: 'which.use.determiner',
-  focus: 'assessment'
-};
+const nextDecision = { action: 'advance', experienceId: 'preparing-dinner', skill: 'which.use.determiner', focus: 'assessment' };
 const authorization = coordinator.releaseTransition(selectedAdvance, nextDecision);
 assert.ok(authorization);
 assert.equal(authorization.status, 'transition-authorized');
@@ -147,4 +157,4 @@ assert.equal(session.decision.experienceId, 'shopping-for-dinner', 'release must
 assert.equal(coordinator.submitChoice('choose', null), null);
 assert.equal(dispatchCalls, 1, 'released coordinator must not dispatch');
 
-console.log('Verb Explorer adaptive coordinator: PASS — Green/Resume preserves S1; continue-assessment cannot release it; selected advance + grounded advance Decision can release S1 without inventing S2.');
+console.log('Verb Explorer adaptive coordinator: PASS — convergence is read-only in the Coordinator envelope; Green/Resume preserves S1; transition remains separately authorized.');
