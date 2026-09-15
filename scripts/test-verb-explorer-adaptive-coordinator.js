@@ -6,6 +6,7 @@ const vm = require('node:vm');
 const AdaptiveEvidenceProfile = require('../js/adaptive-evidence-profile.js');
 const AdaptiveAttemptLoop = require('../js/adaptive-attempt-loop.js');
 const AdaptiveLearningCycle = require('../js/adaptive-learning-cycle.js');
+const AdaptiveSessionTransitionBoundary = require('../js/adaptive-session-transition-boundary.js');
 const GreenPassProfile = require('../js/green-pass-profile.js');
 const AdaptiveResumeExecutor = require('../js/adaptive-resume-executor.js');
 const AdaptiveResumeRuntimeDispatch = require('../js/adaptive-resume-runtime-dispatch.js');
@@ -68,7 +69,12 @@ const dispatch = Object.freeze({
   }
 });
 
-const sandbox = vm.createContext({ Object, AdaptiveLearningCycle, SIYAYOVerbExplorerCycleResumeDispatch: dispatch });
+const sandbox = vm.createContext({
+  Object,
+  AdaptiveLearningCycle,
+  AdaptiveSessionTransitionBoundary,
+  SIYAYOVerbExplorerCycleResumeDispatch: dispatch
+});
 sandbox.globalThis = sandbox;
 for (const file of [
   'js/verb-explorer-learner-event.js',
@@ -108,8 +114,26 @@ assert.notEqual(after.profile, before.profile);
 assert.equal(after.profile, output.cycleResult.greenProfile);
 assert.equal(after.context, output.cycleResult.nextContext);
 
-coordinator.clear();
-assert.equal(coordinator.submitChoice('choose', null), null);
-assert.equal(dispatchCalls, 1, 'cleared coordinator must not dispatch');
+assert.equal(coordinator.releaseTransition(null), false);
+assert.equal(coordinator.snapshot().session, session, 'missing next Decision must preserve S1');
+assert.equal(coordinator.releaseTransition({ experienceId: 'shopping-for-dinner', skill: 'which.use.determiner' }), false);
+assert.equal(coordinator.snapshot().session, session, 'same Experience must preserve S1');
 
-console.log('Verb Explorer adaptive coordinator: PASS — owns evolving profile/context, reaches real Cycle, dispatches one eligible resume execution, restores WHICH snapshot, and invents no NEXT/restart.');
+const nextDecision = {
+  action: 'continue-assessment',
+  experienceId: 'preparing-dinner',
+  skill: 'which.use.determiner',
+  focus: 'assessment'
+};
+const authorization = coordinator.releaseTransition(nextDecision);
+assert.ok(authorization);
+assert.equal(authorization.status, 'transition-authorized');
+assert.equal(authorization.fromExperience, 'shopping-for-dinner');
+assert.equal(authorization.toExperience, 'preparing-dinner');
+assert.equal(authorization.nextDecision, nextDecision);
+assert.equal(coordinator.snapshot(), null, 'authorized explicit transition releases S1');
+assert.equal(session.decision.experienceId, 'shopping-for-dinner', 'release must not mutate S1 Decision');
+assert.equal(coordinator.submitChoice('choose', null), null);
+assert.equal(dispatchCalls, 1, 'released coordinator must not dispatch');
+
+console.log('Verb Explorer adaptive coordinator: PASS — submitChoice preserves S1 through Green/Resume; only explicit grounded transition authority releases S1; no NEXT/S2 is invented.');
