@@ -18,6 +18,19 @@
 
   function clear(){current=null;}
 
+  function releaseTransition(nextDecision){
+    if(!current||!current.session)return false;
+    var boundary=root.AdaptiveSessionTransitionBoundary;
+    if(!boundary||typeof boundary.authorize!=='function')return false;
+    var authorization=boundary.authorize({
+      currentSession:current.session,
+      nextDecision:nextDecision
+    });
+    if(!authorization||authorization.status!=='transition-authorized')return false;
+    current=null;
+    return authorization;
+  }
+
   function submitChoice(choice,target){
     if(!current)return null;
     var controller=root.SIYAYOVerbExplorerAdaptiveController;
@@ -59,6 +72,7 @@
   root.SIYAYOVerbExplorerAdaptiveCoordinator=Object.freeze({
     configure:configure,
     clear:clear,
+    releaseTransition:releaseTransition,
     submitChoice:submitChoice,
     snapshot:snapshot
   });
