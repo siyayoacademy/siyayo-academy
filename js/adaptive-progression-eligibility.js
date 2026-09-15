@@ -4,52 +4,58 @@
   else root.AdaptiveProgressionEligibility = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const statuses = Object.freeze({
-    PROGRESSION_NOT_ELIGIBLE: 'PROGRESSION_NOT_ELIGIBLE',
-    PROGRESSION_ELIGIBLE: 'PROGRESSION_ELIGIBLE'
+    CANDIDATE_UNGROUNDED: 'CANDIDATE_UNGROUNDED',
+    CANDIDATE_GROUNDED: 'CANDIDATE_GROUNDED'
   });
 
-  function notEligible(reason, experienceId, skill) {
+  function result(status, reason, experienceId, skill, candidate) {
     return Object.freeze({
-      status: statuses.PROGRESSION_NOT_ELIGIBLE,
+      status,
       reason,
       experienceId: experienceId || null,
-      skill: skill || null
+      skill: skill || null,
+      candidate: candidate || null
     });
   }
 
-  function evaluateProgressionEligibility(input = {}) {
+  // This boundary proves only that a read-only toroidal candidate belongs to
+  // the active pedagogical Session. It does not complete work, offer NEXT,
+  // authorize progression, create Decision2, or release the Session.
+  function evaluateCandidateGrounding(input = {}) {
     const session = input.session;
-    const pedagogicalResult = input.pedagogicalResult;
+    const candidate = input.candidate;
     const experienceId = session?.decision?.experienceId || null;
     const skill = session?.decision?.skill || null;
 
     if (!session || !session.decision || !experienceId) {
-      return notEligible('active-session-decision-unavailable', experienceId, skill);
+      return result(statuses.CANDIDATE_UNGROUNDED, 'active-session-decision-unavailable', experienceId, skill, null);
     }
 
-    if (!pedagogicalResult || typeof pedagogicalResult !== 'object') {
-      return notEligible('pedagogical-result-unavailable', experienceId, skill);
+    if (!candidate || typeof candidate !== 'object' || candidate.status !== 'candidate-resolved') {
+      return result(statuses.CANDIDATE_UNGROUNDED, 'resolved-candidate-unavailable', experienceId, skill, null);
     }
 
-    if (pedagogicalResult.experienceId !== experienceId) {
-      return notEligible('pedagogical-result-not-grounded-in-active-experience', experienceId, skill);
+    if (!candidate.fromExperience || candidate.fromExperience !== experienceId) {
+      return result(statuses.CANDIDATE_UNGROUNDED, 'candidate-not-grounded-in-active-experience', experienceId, skill, null);
     }
 
-    if (skill && pedagogicalResult.skill !== skill) {
-      return notEligible('pedagogical-result-not-grounded-in-active-skill', experienceId, skill);
+    if (!candidate.experienceId || candidate.experienceId === experienceId) {
+      return result(statuses.CANDIDATE_UNGROUNDED, 'candidate-destination-not-distinct', experienceId, skill, null);
     }
 
-    if (pedagogicalResult.status !== 'PEDAGOGICAL_WORK_COMPLETE') {
-      return notEligible('pedagogical-work-not-complete', experienceId, skill);
-    }
-
-    return Object.freeze({
-      status: statuses.PROGRESSION_ELIGIBLE,
-      reason: 'grounded-pedagogical-work-complete',
+    return result(
+      statuses.CANDIDATE_GROUNDED,
+      'resolved-candidate-grounded-in-active-session',
       experienceId,
-      skill
-    });
+      skill,
+      Object.freeze({
+        experienceId: candidate.experienceId,
+        fromExperience: candidate.fromExperience,
+        entryVerb: candidate.entryVerb || null,
+        title: candidate.title || null
+      })
+    );
   }
 
-  return { statuses, evaluateProgressionEligibility };
+  return { statuses, evaluateCandidateGrounding };
 });
