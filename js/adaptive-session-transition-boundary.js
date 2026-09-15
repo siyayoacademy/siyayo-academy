@@ -9,14 +9,21 @@
 
   function authorize(input = {}) {
     const currentSession = input.currentSession;
+    const advanceSelection = input.advanceSelection;
     const nextDecision = input.nextDecision;
 
     if (!currentSession || !currentSession.decision) return null;
-    if (!nextDecision || typeof nextDecision !== 'object') return null;
+    if (!advanceSelection || typeof advanceSelection !== 'object') return null;
+    if (advanceSelection.action !== 'advance' || advanceSelection.status !== 'selected') return null;
+    if (!nextDecision || typeof nextDecision !== 'object' || nextDecision.action !== 'advance') return null;
 
     const fromExperience = text(currentSession.decision.experienceId);
+    const selectedFrom = text(advanceSelection.fromExperience);
+    const selectedTo = text(advanceSelection.experienceId);
     const toExperience = text(nextDecision.experienceId);
-    if (!fromExperience || !toExperience || fromExperience === toExperience) return null;
+    if (!fromExperience || !selectedFrom || !selectedTo || !toExperience) return null;
+    if (selectedFrom !== fromExperience) return null;
+    if (selectedTo !== toExperience || fromExperience === toExperience) return null;
 
     const currentSkill = text(currentSession.decision.skill);
     const nextSkill = text(nextDecision.skill);
@@ -26,6 +33,7 @@
       status: 'transition-authorized',
       fromExperience,
       toExperience,
+      advanceSelection,
       nextDecision
     });
   }
