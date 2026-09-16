@@ -17,6 +17,18 @@
     });
   }
 
+  function isWaitActive(waitState) {
+    const state = waitState?.state || null;
+    return state === 'INSPECTION_UNAVAILABLE' ||
+      state === 'INSPECTED_AWAITING_OPPORTUNITY' ||
+      state === 'OPPORTUNITY_FOUND_AWAITING_EVENT';
+  }
+
+  function isResumeActive(resumeState) {
+    const eligibility = resumeState?.resumeEligibility || resumeState;
+    return eligibility?.status === 'RESUME_ELIGIBLE';
+  }
+
   function evaluatePedagogicalState(input = {}) {
     const session = input.session;
     const contractResult = input.contractResult || null;
@@ -47,8 +59,8 @@
 
     const openConditions = Object.freeze({
       contractEvidencePending: !(contractResult?.status === 'GREEN_PASS' && contractResult?.satisfied === true),
-      waitActive: !!waitState,
-      resumeActive: !!resumeState
+      waitActive: isWaitActive(waitState),
+      resumeActive: isResumeActive(resumeState)
     });
 
     return Object.freeze({
