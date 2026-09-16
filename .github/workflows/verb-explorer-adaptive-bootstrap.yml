@@ -3,86 +3,8 @@ name: Verb Explorer Adaptive Bootstrap
 on:
   pull_request:
     paths:
-      - 'js/adaptive-browser-runtime.js'
-      - 'js/adaptive-attempt-loop.js'
-      - 'js/adaptive-session-transition-boundary.js'
-      - 'js/adaptive-progression-eligibility.js'
-      - 'js/adaptive-pedagogical-completion.js'
-      - 'js/adaptive-convergence-resolver.js'
-      - 'js/verb-explorer-adaptive-bootstrap.js'
-      - 'js/verb-explorer-cycle-resume-dispatch.js'
-      - 'js/green-pass-authority-policy.js'
-      - 'js/verb-explorer-canonical-skill-loader.js'
-      - 'js/verb-explorer-learner-identity-provider.js'
-      - 'js/leaf-assessment-target-authority.js'
-      - 'js/leaf-canonical-skill-bridge.js'
-      - 'js/verb-explorer-learner-event.js'
-      - 'js/verb-explorer-adaptive-controller.js'
-      - 'js/verb-explorer-choice-adaptive-wire.js'
-      - 'js/verb-explorer-adaptive-input-provider.js'
-      - 'js/verb-explorer-adaptive-coordinator.js'
-      - 'js/verb-explorer-adaptive-coordinator-config.js'
-      - 'js/verb-explorer-adaptive-composer.js'
-      - 'js/verb-explorer-adaptive-context-source.js'
-      - 'js/verb-explorer-session-state-boundary.js'
-      - 'js/verb-explorer-adaptive-state-bridge.js'
-      - 'js/verb-explorer-adaptive-psac-boundary.js'
-      - 'js/verb-explorer-adaptive-profile-source.js'
-      - 'js/verb-explorer-adaptive-evidence-profile-source.js'
-      - 'js/verb-explorer-xespirito-evidence-bridge.js'
-      - 'js/verb-explorer-adaptive-evidence-source.js'
-      - 'js/verb-explorer-choice-attempt-provider.js'
-      - 'js/choice-evidence-evaluator.js'
-      - 'js/choice-support-sensor.js'
-      - 'js/verb-explorer-choice-support-observer.js'
-      - 'js/choice-mode-sensor.js'
-      - 'js/choice-attempt-ownership.js'
-      - 'js/choice-attempt-boundary.js'
-      - 'js/verb-explorer-choice-attempt-factory.js'
-      - 'scripts/test-adaptive-session-transition-boundary.js'
-      - 'scripts/test-adaptive-progression-eligibility.js'
-      - 'scripts/test-adaptive-pedagogical-completion.js'
-      - 'scripts/test-adaptive-convergence-resolver.js'
-      - 'scripts/test-verb-explorer-adaptive-bootstrap.js'
-      - 'scripts/test-verb-explorer-adaptive-bootstrap-convergence-order.js'
-      - 'scripts/test-verb-explorer-canonical-skill-loader.js'
-      - 'scripts/test-verb-explorer-learner-identity-provider.js'
-      - 'scripts/test-leaf-assessment-target-authority.js'
-      - 'scripts/test-leaf-canonical-skill-bridge.js'
-      - 'scripts/test-verb-explorer-learner-event.js'
-      - 'scripts/test-verb-explorer-learner-event-agency.js'
-      - 'scripts/test-verb-explorer-adaptive-controller.js'
-      - 'scripts/test-verb-explorer-adaptive-input-provider.js'
-      - 'scripts/test-verb-explorer-choice-adaptive-integration.js'
-      - 'scripts/test-verb-explorer-choice-real-cycle.js'
-      - 'scripts/test-verb-explorer-adaptive-coordinator.js'
-      - 'scripts/test-verb-explorer-adaptive-coordinator-config.js'
-      - 'scripts/test-verb-explorer-adaptive-composer.js'
-      - 'scripts/test-verb-explorer-choice-attempt-provider.js'
-      - 'scripts/test-verb-explorer-adaptive-state-bridge.js'
-      - 'scripts/test-verb-explorer-adaptive-psac-boundary.js'
-      - 'scripts/test-verb-explorer-adaptive-profile-source.js'
-      - 'scripts/test-verb-explorer-adaptive-evidence-profile-source.js'
-      - 'scripts/test-verb-explorer-evidence-session-chain.js'
-      - 'js/adaptive-evidence-profile.js'
-      - 'js/adaptive-pedagogical-orchestrator.js'
-      - 'js/adaptive-learning-router.js'
-      - 'js/xespirito-evidence-interpreter.js'
-      - 'js/verb-explorer-adaptive-session-source.js'
-      - 'scripts/test-verb-explorer-xespirito-evidence-bridge.js'
-      - 'scripts/test-verb-explorer-adaptive-evidence-source.js'
-      - 'scripts/test-choice-evidence-evaluator.js'
-      - 'scripts/test-choice-evidence-context-scope.js'
-      - 'scripts/test-choice-support-sensor.js'
-      - 'scripts/test-choice-support-context-scope.js'
-      - 'scripts/test-choice-support-observer.js'
-      - 'scripts/test-choice-mode-sensor.js'
-      - 'scripts/test-choice-mode-context-scope.js'
-      - 'scripts/test-choice-mode-bridge.js'
-      - 'scripts/test-choice-attempt-ownership.js'
-      - 'scripts/test-choice-attempt-boundary.js'
-      - 'scripts/test-verb-explorer-choice-attempt-factory.js'
-      - 'scripts/test-adaptive-evidence-mode-boundary.js'
+      - 'js/**'
+      - 'scripts/test-*.js'
       - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
 
 jobs:
@@ -93,82 +15,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Syntax check
+      - name: Syntax check adaptive JavaScript
         run: |
-          node --check js/adaptive-browser-runtime.js
-          node --check js/adaptive-attempt-loop.js
-          node --check js/adaptive-session-transition-boundary.js
-          node --check js/adaptive-progression-eligibility.js
-          node --check js/adaptive-pedagogical-completion.js
-          node --check js/adaptive-convergence-resolver.js
-          node --check js/verb-explorer-adaptive-bootstrap.js
-          node --check js/verb-explorer-cycle-resume-dispatch.js
-          node --check js/verb-explorer-canonical-skill-loader.js
-          node --check js/verb-explorer-learner-identity-provider.js
-          node --check js/leaf-assessment-target-authority.js
-          node --check js/leaf-canonical-skill-bridge.js
-          node --check js/verb-explorer-learner-event.js
-          node --check js/verb-explorer-adaptive-controller.js
-          node --check js/verb-explorer-choice-adaptive-wire.js
-          node --check js/verb-explorer-adaptive-input-provider.js
-          node --check js/verb-explorer-adaptive-coordinator.js
-          node --check js/verb-explorer-adaptive-coordinator-config.js
-          node --check js/verb-explorer-adaptive-composer.js
-          node --check js/verb-explorer-adaptive-context-source.js
-          node --check js/verb-explorer-session-state-boundary.js
-          node --check js/verb-explorer-adaptive-state-bridge.js
-          node --check js/verb-explorer-adaptive-psac-boundary.js
-          node --check js/verb-explorer-adaptive-profile-source.js
-          node --check js/verb-explorer-adaptive-evidence-profile-source.js
-          node --check js/verb-explorer-xespirito-evidence-bridge.js
-          node --check js/verb-explorer-adaptive-evidence-source.js
-          node --check js/verb-explorer-choice-attempt-provider.js
-          node --check js/choice-evidence-evaluator.js
-          node --check js/choice-support-sensor.js
-          node --check js/verb-explorer-choice-support-observer.js
-          node --check js/choice-mode-sensor.js
-          node --check js/choice-attempt-ownership.js
-          node --check js/choice-attempt-boundary.js
-          node --check js/verb-explorer-choice-attempt-factory.js
-          node --check scripts/test-adaptive-session-transition-boundary.js
-          node --check scripts/test-adaptive-progression-eligibility.js
-          node --check scripts/test-adaptive-pedagogical-completion.js
-          node --check scripts/test-adaptive-convergence-resolver.js
-          node --check scripts/test-verb-explorer-adaptive-bootstrap.js
-          node --check scripts/test-verb-explorer-adaptive-bootstrap-convergence-order.js
-          node --check scripts/test-verb-explorer-canonical-skill-loader.js
-          node --check scripts/test-verb-explorer-learner-identity-provider.js
-          node --check scripts/test-leaf-assessment-target-authority.js
-          node --check scripts/test-leaf-canonical-skill-bridge.js
-          node --check scripts/test-verb-explorer-learner-event.js
-          node --check scripts/test-verb-explorer-learner-event-agency.js
-          node --check scripts/test-verb-explorer-adaptive-controller.js
-          node --check scripts/test-verb-explorer-adaptive-input-provider.js
-          node --check scripts/test-verb-explorer-choice-adaptive-integration.js
-          node --check scripts/test-verb-explorer-choice-real-cycle.js
-          node --check scripts/test-verb-explorer-adaptive-coordinator.js
-          node --check scripts/test-verb-explorer-adaptive-coordinator-config.js
-          node --check scripts/test-verb-explorer-adaptive-composer.js
-          node --check scripts/test-verb-explorer-choice-attempt-provider.js
-          node --check scripts/test-verb-explorer-adaptive-state-bridge.js
-          node --check scripts/test-verb-explorer-adaptive-psac-boundary.js
-          node --check scripts/test-verb-explorer-adaptive-profile-source.js
-          node --check scripts/test-verb-explorer-adaptive-evidence-profile-source.js
-          node --check scripts/test-verb-explorer-evidence-session-chain.js
-          node --check scripts/test-verb-explorer-xespirito-evidence-bridge.js
-          node --check scripts/test-verb-explorer-adaptive-evidence-source.js
-          node --check scripts/test-choice-evidence-evaluator.js
-          node --check scripts/test-choice-evidence-context-scope.js
-          node --check scripts/test-choice-support-sensor.js
-          node --check scripts/test-choice-support-context-scope.js
-          node --check scripts/test-choice-support-observer.js
-          node --check scripts/test-choice-mode-sensor.js
-          node --check scripts/test-choice-mode-context-scope.js
-          node --check scripts/test-choice-mode-bridge.js
-          node --check scripts/test-choice-attempt-ownership.js
-          node --check scripts/test-choice-attempt-boundary.js
-          node --check scripts/test-verb-explorer-choice-attempt-factory.js
-          node --check scripts/test-adaptive-evidence-mode-boundary.js
+          find js -maxdepth 1 -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+          find scripts -maxdepth 1 -type f -name 'test-*.js' -print0 | xargs -0 -n1 node --check
       - name: Test adaptive session transition boundary
         run: node scripts/test-adaptive-session-transition-boundary.js
       - name: Test adaptive candidate grounding
@@ -247,3 +97,15 @@ jobs:
         run: node scripts/test-verb-explorer-choice-attempt-factory.js
       - name: Test explicit evidence mode boundary
         run: node scripts/test-adaptive-evidence-mode-boundary.js
+      - name: Test fail-closed contrast review boundary
+        run: node scripts/test-adaptive-contrast-review-boundary.js
+      - name: Test contrast probe definition authority
+        run: node scripts/test-adaptive-contrast-probe-definition.js
+      - name: Test grounded contrast probe result
+        run: node scripts/test-adaptive-contrast-probe-result.js
+      - name: Test adaptive evidence longitudinal recommendation
+        run: node scripts/test-adaptive-evidence-profile.js
+      - name: Test interference longitudinal cycle
+        run: node scripts/test-interference-longitudinal-cycle.js
+      - name: Test grounded contrast probe longitudinal closure
+        run: node scripts/test-contrast-probe-longitudinal-cycle.js
