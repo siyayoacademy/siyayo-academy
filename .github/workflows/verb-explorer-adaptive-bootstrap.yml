@@ -41,6 +41,8 @@ jobs:
         run: node scripts/test-leaf-canonical-skill-bridge.js
       - name: Test adaptive live start WAIT and idempotence
         run: node scripts/test-verb-explorer-adaptive-live-start.js
+      - name: Test live bootstrap late authority Session start
+        run: node scripts/test-verb-explorer-adaptive-bootstrap-late-authority.js
       - name: Test learner event boundary
         run: node scripts/test-verb-explorer-learner-event.js
       - name: Test learner event agency semantics
