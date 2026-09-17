@@ -71,7 +71,9 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveComposer','js/verb-explorer-adaptive-composer.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveLiveStart','js/verb-explorer-adaptive-live-start.js');})
-      .then(function(liveStart){
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveReadinessTrigger','js/verb-explorer-adaptive-readiness-trigger.js');})
+      .then(function(){
+        var liveStart=root.SIYAYOVerbExplorerAdaptiveLiveStart;
         if(!liveStart||typeof liveStart.tryCompose!=='function')return cycle;
         return Promise.resolve(liveStart.tryCompose({document:document})).then(function(){return cycle;});
       });
