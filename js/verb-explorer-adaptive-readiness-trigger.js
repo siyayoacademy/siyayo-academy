@@ -1,0 +1,32 @@
+// Authority-neutral readiness signal for re-entering grounded Verb Explorer Session startup.
+// It does not decide readiness, invent Identity/Target/Skill/Experience, or poll state;
+// it only coalesces concurrent signals and delegates the decision to AdaptiveLiveStart.
+(function(root){
+'use strict';
+
+var pending=null;
+
+function signal(options){
+  options=options||{};
+  if(pending)return pending;
+
+  var liveStart=options.liveStart||root.SIYAYOVerbExplorerAdaptiveLiveStart;
+  var documentRef=Object.prototype.hasOwnProperty.call(options,'document')?options.document:root.document;
+
+  if(!liveStart||typeof liveStart.tryCompose!=='function')return Promise.resolve(false);
+
+  pending=Promise.resolve().then(function(){
+    return liveStart.tryCompose({document:documentRef});
+  }).then(function(result){
+    pending=null;
+    return result===true;
+  },function(){
+    pending=null;
+    return false;
+  });
+
+  return pending;
+}
+
+root.SIYAYOVerbExplorerAdaptiveReadinessTrigger=Object.freeze({signal:signal});
+})(typeof globalThis!=='undefined'?globalThis:this);
