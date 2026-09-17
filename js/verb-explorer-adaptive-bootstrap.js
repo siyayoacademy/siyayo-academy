@@ -65,6 +65,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveProfileSource','js/verb-explorer-adaptive-profile-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveEvidenceProfileSource','js/verb-explorer-adaptive-evidence-profile-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveSessionSource','js/verb-explorer-adaptive-session-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerSessionStateBoundary','js/verb-explorer-session-state-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveContextSource','js/verb-explorer-adaptive-context-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptProvider','js/verb-explorer-choice-attempt-provider.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
