@@ -15,6 +15,7 @@ vm.runInContext(
 const boundary = sandbox.SIYAYOVerbExplorerLearnerEvent;
 assert(boundary, 'learner-event boundary should be exposed');
 assert.equal(typeof boundary.fromChoiceSelect, 'function');
+assert.equal(typeof boundary.fromContrastProbeSelect, 'function');
 assert.equal(typeof boundary.fromSentenceBuilt, 'function');
 
 const state = {
@@ -56,6 +57,24 @@ assert.equal(minimal.question, null);
 assert.equal(minimal.perspective, null);
 assert.equal(minimal.wordType, null);
 
+const contrast = boundary.fromContrastProbeSelect('pt-esquisito', state);
+assert.equal(contrast.observed, true);
+assert.equal(contrast.actor, 'learner');
+assert.equal(contrast.relevantToWait, true);
+assert.equal(contrast.intent, 'continue');
+assert.equal(contrast.type, 'learner-response');
+assert.equal(contrast.source, 'contrast-probe-select');
+assert.equal(contrast.choice, 'pt-esquisito');
+assert.equal(contrast.experienceId, 'shopping-for-dinner');
+assert.equal(contrast.occurrenceId, 'contrast-probe-select:1');
+assert.equal(contrast.selectedLanguage, undefined, 'selectedLanguage is derived later from ProbeDefinition by ProbeResult');
+assert.equal(Object.isFrozen(contrast), true, 'contrast-probe event history record should be immutable');
+const contrastRepeated = boundary.fromContrastProbeSelect('pt-esquisito', state);
+assert.equal(contrastRepeated.occurrenceId, 'contrast-probe-select:2');
+assert.notEqual(contrastRepeated.occurrenceId, contrast.occurrenceId);
+assert.equal(boundary.fromContrastProbeSelect('', state), null);
+assert.equal(boundary.fromContrastProbeSelect(null, state), null);
+
 const sentenceState = {
   currentExperienceId: 'shopping-for-dinner',
   experienceLanguage: 'en',
@@ -86,5 +105,5 @@ assert.equal(boundary.fromSentenceBuilt({canonicalCandidate:true,systemStructure
   experienceChoiceCandidate:'fresh-mild-cheese'
 }), null, 'ungrounded sentence-built observation must fail closed');
 
-console.log('Verb Explorer learner event: PASS — immutable choice events carry distinct occurrence identity; empty choices create none.');
+console.log('Verb Explorer learner event: PASS — Choice and contrast-probe observations own distinct immutable occurrence identities; empty choices create none.');
 console.log('Sentence-built learner event: PASS — grounded canonical system composition is observed immutably and ungrounded composition fails closed.');
