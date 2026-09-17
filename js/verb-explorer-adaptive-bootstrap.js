@@ -54,7 +54,25 @@
             }
           });
         }
-        return cycle;
+      })
+      // Grounded Session startup authorities. Loading them does not create Identity,
+      // choose a Leaf Target, infer Skill from Experience, or force a Session.
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerIdentitySource','js/verb-explorer-learner-identity-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOLeafAssessmentTargetAuthority','js/leaf-assessment-target-authority.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerCanonicalSkillSource','js/verb-explorer-canonical-skill-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerCanonicalSkillLoader','js/verb-explorer-canonical-skill-loader.js');})
+      .then(function(){return ensureGlobal('SIYAYOLeafCanonicalSkillBridge','js/leaf-canonical-skill-bridge.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveProfileSource','js/verb-explorer-adaptive-profile-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveEvidenceProfileSource','js/verb-explorer-adaptive-evidence-profile-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveSessionSource','js/verb-explorer-adaptive-session-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveContextSource','js/verb-explorer-adaptive-context-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptProvider','js/verb-explorer-choice-attempt-provider.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveComposer','js/verb-explorer-adaptive-composer.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveLiveStart','js/verb-explorer-adaptive-live-start.js');})
+      .then(function(liveStart){
+        if(!liveStart||typeof liveStart.tryCompose!=='function')return cycle;
+        return Promise.resolve(liveStart.tryCompose({document:document})).then(function(){return cycle;});
       });
   });
 })(typeof globalThis !== 'undefined' ? globalThis : this);
