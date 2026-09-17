@@ -15,9 +15,14 @@ function signal(options){
 
   if(!liveStart||typeof liveStart.tryCompose!=='function')return Promise.resolve(false);
 
-  pending=Promise.resolve().then(function(){
-    return liveStart.tryCompose({document:documentRef});
-  }).then(function(result){
+  var attempt;
+  try{
+    attempt=liveStart.tryCompose({document:documentRef});
+  }catch(error){
+    return Promise.resolve(false);
+  }
+
+  pending=Promise.resolve(attempt).then(function(result){
     pending=null;
     return result===true;
   },function(){
