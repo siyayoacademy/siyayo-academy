@@ -1,12 +1,11 @@
 // Browser-only interaction boundary for an already-presented contrast probe.
-// It renders no correctness signal and creates no pedagogical authority.
+// It renders no correctness signal and delegates observed learner-event identity
+// to the Verb Explorer learner-event boundary at actual click time.
 (function(root,factory){
   var api=factory(root);
   if(typeof module==='object'&&module.exports)module.exports=api;
   root.SIYAYOAdaptiveContrastProbeBrowserWire=api;
 })(typeof globalThis!=='undefined'?globalThis:this,function(root){
-  var occurrenceSequence=0;
-
   function text(value){return typeof value==='string'?value.trim():'';}
   function escapeHtml(value){return String(value).replace(/[&<>"']/g,function(ch){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];});}
 
@@ -26,45 +25,35 @@
     var container=options.container;
     if(!validPresentation(view)||!container)return false;
     container.innerHTML=view.alternatives.map(function(item){
-      return '<button type="button" data-contrast-probe-select="'+escapeHtml(item.id)+'" data-contrast-probe-language="'+escapeHtml(item.language)+'">'+escapeHtml(item.form)+'</button>';
+      return '<button type="button" data-contrast-probe-select="'+escapeHtml(item.id)+'">'+escapeHtml(item.form)+'</button>';
     }).join('');
     return true;
   }
 
-  function eventFromTarget(target,view){
+  function selectedChoice(target,view){
     if(!target||!target.dataset||!validPresentation(view))return null;
     var choice=text(target.dataset.contrastProbeSelect);
-    var alternative=view.alternatives.find(function(item){return item.id===choice;});
-    if(!alternative)return null;
-    occurrenceSequence+=1;
-    return Object.freeze({
-      observed:true,
-      actor:'learner',
-      relevantToWait:true,
-      intent:'continue',
-      type:'learner-response',
-      source:'contrast-probe-select',
-      occurrenceId:'contrast-probe-select:'+occurrenceSequence,
-      choice:alternative.id,
-      selectedLanguage:alternative.language,
-      experienceId:view.experienceId||null
-    });
+    return view.alternatives.some(function(item){return item.id===choice;})?choice:null;
   }
 
   function install(view,options){
     options=options||{};
     var container=options.container;
     var onEvent=options.onEvent;
+    var learnerEvents=options.learnerEvents||root.SIYAYOVerbExplorerLearnerEvent;
     if(!container||typeof container.addEventListener!=='function'||typeof onEvent!=='function')return false;
+    if(!learnerEvents||typeof learnerEvents.fromContrastProbeSelect!=='function')return false;
     if(!render(view,{container:container}))return false;
     container.addEventListener('click',function(event){
       var target=event.target&&typeof event.target.closest==='function'?event.target.closest('[data-contrast-probe-select]'):null;
       if(!target)return;
-      var observed=eventFromTarget(target,view);
+      var choice=selectedChoice(target,view);
+      if(!choice)return;
+      var observed=learnerEvents.fromContrastProbeSelect(choice,{currentExperienceId:view.experienceId||null});
       if(observed)onEvent(observed,target);
     });
     return true;
   }
 
-  return Object.freeze({render:render,eventFromTarget:eventFromTarget,install:install});
+  return Object.freeze({render:render,install:install});
 });
