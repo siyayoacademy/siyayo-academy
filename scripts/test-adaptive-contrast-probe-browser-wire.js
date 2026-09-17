@@ -27,11 +27,23 @@ assert.doesNotMatch(container.innerHTML,/data-contrast-probe-language=/,'selecte
 assert.equal(Wire.eventFromTarget,undefined,'BrowserWire must not expose a programmable observed-event minting function');
 
 let delivered=null;
-const installContainer={innerHTML:'',listener:null,addEventListener(type,fn){if(type==='click')this.listener=fn;}};
-assert.equal(Wire.install(view,{container:installContainer,learnerEvents:LearnerEvents,onEvent:event=>{delivered=event;}}),true);
+let deliveredCount=0;
+const installContainer={
+  innerHTML:'',
+  listeners:[],
+  addEventListener(type,fn){if(type==='click')this.listeners.push(fn);}
+};
+function dispatchClick(target){installContainer.listeners.forEach(fn=>fn({target}));}
+function receive(event){delivered=event;deliveredCount+=1;}
+
+assert.equal(Wire.install(view,{container:installContainer,learnerEvents:LearnerEvents,onEvent:receive}),true);
+assert.equal(Wire.install(view,{container:installContainer,learnerEvents:LearnerEvents,onEvent:receive}),true,'re-installation may refresh the same authorized surface');
+assert.equal(installContainer.listeners.length,1,'re-installation must preserve exactly one physical click listener');
+
 const clickable={dataset:{contrastProbeSelect:'es-exquisito'},closest(selector){return selector==='[data-contrast-probe-select]'?this:null;}};
-installContainer.listener({target:clickable});
+dispatchClick(clickable);
 assert.ok(delivered);
+assert.equal(deliveredCount,1,'one physical learner click must produce exactly one learner event after repeated installation');
 assert.equal(delivered.observed,true);
 assert.equal(delivered.actor,'learner');
 assert.equal(delivered.source,'contrast-probe-select');
@@ -42,12 +54,14 @@ assert.equal(delivered.selectedLanguage,undefined,'LearnerEvent must not duplica
 assert.ok(Object.isFrozen(delivered));
 
 const before=delivered;
+const beforeCount=deliveredCount;
 const missing={dataset:{contrastProbeSelect:'missing'},closest(selector){return selector==='[data-contrast-probe-select]'?this:null;}};
-installContainer.listener({target:missing});
+dispatchClick(missing);
 assert.equal(delivered,before,'unknown alternatives must not create learner events');
+assert.equal(deliveredCount,beforeCount,'unknown alternatives must not increment delivered event count');
 
 assert.equal(Wire.render(null,{container}),false);
 assert.equal(Wire.install(view,{container:installContainer,onEvent(){}}),false,'BrowserWire must fail closed without learner-event authority');
 assert.equal(Wire.install(view,{container:installContainer,learnerEvents:LearnerEvents}),false);
 
-console.log('Adaptive contrast probe browser wire: PASS — surface renders authorized alternatives and delegates observed event identity to LearnerEvent only at click time.');
+console.log('Adaptive contrast probe browser wire: PASS — repeated installation remains idempotent and one physical click produces exactly one observed learner event.');
