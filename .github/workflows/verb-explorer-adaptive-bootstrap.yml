@@ -105,6 +105,8 @@ jobs:
         run: node scripts/test-adaptive-contrast-probe-specification-source.js
       - name: Test contrast probe presentation boundary
         run: node scripts/test-adaptive-contrast-probe-presenter.js
+      - name: Test contrast probe browser wire
+        run: node scripts/test-adaptive-contrast-probe-browser-wire.js
       - name: Test grounded contrast probe result
         run: node scripts/test-adaptive-contrast-probe-result.js
       - name: Test adaptive evidence longitudinal recommendation
