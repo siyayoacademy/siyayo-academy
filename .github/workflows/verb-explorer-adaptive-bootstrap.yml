@@ -101,6 +101,8 @@ jobs:
         run: node scripts/test-adaptive-contrast-review-boundary.js
       - name: Test contrast probe definition authority
         run: node scripts/test-adaptive-contrast-probe-definition.js
+      - name: Test exact contrast probe specification authority
+        run: node scripts/test-adaptive-contrast-probe-specification-source.js
       - name: Test grounded contrast probe result
         run: node scripts/test-adaptive-contrast-probe-result.js
       - name: Test adaptive evidence longitudinal recommendation
