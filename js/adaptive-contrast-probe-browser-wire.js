@@ -44,14 +44,23 @@
     if(!container||typeof container.addEventListener!=='function'||typeof onEvent!=='function')return false;
     if(!learnerEvents||typeof learnerEvents.fromContrastProbeSelect!=='function')return false;
     if(!render(view,{container:container}))return false;
-    container.addEventListener('click',function(event){
-      var target=event.target&&typeof event.target.closest==='function'?event.target.closest('[data-contrast-probe-select]'):null;
-      if(!target)return;
-      var choice=selectedChoice(target,view);
-      if(!choice)return;
-      var observed=learnerEvents.fromContrastProbeSelect(choice,{currentExperienceId:view.experienceId||null});
-      if(observed)onEvent(observed,target);
-    });
+
+    // Keep one physical click boundary per container. Re-installation may update
+    // the authorized presentation/callback, but it must not multiply listeners.
+    container.__siyayoContrastProbeBinding={view:view,onEvent:onEvent,learnerEvents:learnerEvents};
+    if(container.__siyayoContrastProbeClickInstalled!==true){
+      container.addEventListener('click',function(event){
+        var binding=container.__siyayoContrastProbeBinding;
+        if(!binding)return;
+        var target=event.target&&typeof event.target.closest==='function'?event.target.closest('[data-contrast-probe-select]'):null;
+        if(!target)return;
+        var choice=selectedChoice(target,binding.view);
+        if(!choice)return;
+        var observed=binding.learnerEvents.fromContrastProbeSelect(choice,{currentExperienceId:binding.view.experienceId||null});
+        if(observed)binding.onEvent(observed,target);
+      });
+      container.__siyayoContrastProbeClickInstalled=true;
+    }
     return true;
   }
 
