@@ -4,6 +4,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 
 const appended=[];
+let resumeContext=null;
 const context={
   console,Promise,setTimeout,clearTimeout,
   fetch(url){
@@ -22,7 +23,7 @@ const context={
       vm.runInContext(code,sandbox,{filename:script.src});
       if(typeof script.onload==='function')script.onload();
     }},
-    createElement(tag){assert.equal(tag,'script');return {src:'',onload:null,onerror:null};},
+    createElement(tag){assert.equal(tag,'script');return {src:'',async:true,onload:null,onerror:null};},
     addEventListener(){},
     getElementById(){return null;},
     querySelector(){return null;}
@@ -33,15 +34,21 @@ const sandbox=vm.createContext(context);
 
 function load(path){vm.runInContext(fs.readFileSync(path,'utf8'),sandbox,{filename:path});}
 
-// The real bootstrap only requires the browser runtime contract here; this test
-// isolates the temporal authority seam rather than re-testing the Cycle loader.
-sandbox.SIYAYOAdaptiveBrowserRuntime={load:()=>Promise.resolve({submit(){}})};
+// Use the production dependency loader so contract authorities such as
+// GreenPassAuthorityPolicy are present exactly as they are in the browser.
+load('js/adaptive-browser-runtime.js');
+
+// StateBridge remains read-only. This controlled ResumeRuntime is its live state authority.
+sandbox.SIYAYOVerbExplorerResumeRuntime={
+  captureContext(){return resumeContext;}
+};
 
 load('js/verb-explorer-adaptive-bootstrap.js');
 
 Promise.resolve(sandbox.SIYAYOVerbExplorerAdaptiveReady)
   .then(async function(cycle){
     assert(cycle&&typeof cycle.submit==='function','bootstrap must remain alive while authorities are absent');
+    assert(appended.includes('js/green-pass-authority-policy.js'),'real adaptive runtime must load Green Pass authority policy');
     assert(appended.includes('js/verb-explorer-adaptive-live-start.js'),'LIVE bootstrap must load LiveStart');
 
     const live=sandbox.SIYAYOVerbExplorerAdaptiveLiveStart;
@@ -61,10 +68,9 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerAdaptiveReady)
     });
     assert(adopted,'explicit late Leaf Target should be adopted');
 
-    // The state authority can also become ready after page bootstrap. No Experience→Skill inference occurs.
-    sandbox.SIYAYOVerbExplorerAdaptiveStateBridge.configure(function(){
-      return {currentExperienceId:'shopping-for-dinner'};
-    });
+    // The Explorer state may also become ready after page bootstrap. StateBridge reads it;
+    // no Experience→Skill inference or writable StateBridge seam is introduced.
+    resumeContext={currentExperienceId:'shopping-for-dinner'};
 
     assert.equal(await live.tryCompose({document:sandbox.document}),true,'late explicit authorities must ground one live Session');
     const first=coordinator.snapshot();
@@ -76,6 +82,6 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerAdaptiveReady)
     const second=coordinator.snapshot();
     assert.strictEqual(second.session,first.session,'active Session identity must be preserved');
 
-    console.log('Adaptive browser late authority: PASS — initial WAIT survives; late explicit Identity + Leaf Target + state ground one Session; re-entry preserves it.');
+    console.log('Adaptive browser late authority: PASS — real runtime preserves initial WAIT; late explicit Identity + Leaf Target + Resume state ground one Session; re-entry preserves it.');
   })
   .catch(function(error){console.error(error);process.exitCode=1;});
