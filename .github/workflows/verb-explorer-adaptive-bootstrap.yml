@@ -37,6 +37,8 @@ jobs:
         run: node scripts/test-verb-explorer-learner-identity-provider.js
       - name: Test Leaf assessment target authority
         run: node scripts/test-leaf-assessment-target-authority.js
+      - name: Test Leaf assessment target readiness
+        run: node scripts/test-leaf-assessment-target-readiness.js
       - name: Test Leaf canonical Skill bridge
         run: node scripts/test-leaf-canonical-skill-bridge.js
       - name: Test adaptive live start WAIT and idempotence
