@@ -41,6 +41,8 @@ jobs:
         run: node scripts/test-leaf-assessment-target-readiness.js
       - name: Test canonical Leaf assessment target provider
         run: node scripts/test-leaf-assessment-target-provider.js
+      - name: Test Story assessment Leaf contract
+        run: node scripts/test-story-assessment-leaf.js
       - name: Test Leaf readiness bootstrap order
         run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
       - name: Test Leaf canonical Skill bridge
