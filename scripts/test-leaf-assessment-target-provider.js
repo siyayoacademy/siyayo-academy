@@ -34,10 +34,9 @@ function load(options={}){
       story:{role:'guide'}
     };
     assert.equal(await provider.select(leaf),false,'producer must preserve downstream WAIT');
-    assert.deepEqual(calls,[{
-      skill:'which.use.determiner',
-      definitionPath:'data/learning/skills/which.json'
-    }],'explicit Leaf Target must be forwarded unchanged to readiness');
+    assert.equal(calls.length,1,'explicit Leaf Target must be forwarded exactly once');
+    assert.equal(calls[0].skill,'which.use.determiner','explicit Leaf skill must be forwarded unchanged');
+    assert.equal(calls[0].definitionPath,'data/learning/skills/which.json','explicit Leaf definitionPath must be forwarded unchanged');
   }
 
   for(const leaf of [
