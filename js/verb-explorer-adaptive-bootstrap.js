@@ -72,6 +72,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveComposer','js/verb-explorer-adaptive-composer.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveLiveStart','js/verb-explorer-adaptive-live-start.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveReadinessTrigger','js/verb-explorer-adaptive-readiness-trigger.js');})
+      .then(function(){return ensureGlobal('SIYAYOLeafAssessmentTargetReadiness','js/leaf-assessment-target-readiness.js');})
       .then(function(){
         var liveStart=root.SIYAYOVerbExplorerAdaptiveLiveStart;
         if(!liveStart||typeof liveStart.tryCompose!=='function')return cycle;
