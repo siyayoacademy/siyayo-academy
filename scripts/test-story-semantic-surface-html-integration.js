@@ -12,6 +12,7 @@ function load(){
     speechSynthesis:{cancel(){},speak(){}},
     SpeechSynthesisUtterance:function(){},
     document:{
+      addEventListener(){},
       querySelector(){return null;},
       querySelectorAll(){return[];},
       getElementById(){return null;}
