@@ -470,6 +470,7 @@ function buildSlides(chapterData) {
                   item.sentences,
                   item.targetWords
                 ),
+              ...(item.surfaces ? { surfaces: item.surfaces } : {}),
               ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
           }
@@ -500,6 +501,7 @@ function buildSlides(chapterData) {
                    item,
                    item.targetWords ?? {}
               ),
+              ...(item.surfaces ? { surfaces: item.surfaces } : {}),
               ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
           }
