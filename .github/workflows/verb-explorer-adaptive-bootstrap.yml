@@ -53,6 +53,9 @@ jobs:
 
       - name: Test Story Assessment Leaf semantic surface binding
         run: node scripts/test-story-assessment-leaf-surface.js
+
+      - name: Test Story semantic surface Smart Slide propagation
+        run: node scripts/test-story-semantic-surface-slide-propagation.js
       - name: Test Leaf readiness bootstrap order
         run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
       - name: Test Leaf canonical Skill bridge
