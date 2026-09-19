@@ -12,6 +12,7 @@ function build(chapter){
     document:{addEventListener(){}}
   });
   sandbox.globalThis=sandbox;
+  sandbox.window={addEventListener(){}};
   vm.runInContext(code,sandbox,{filename:'js/app.js'});
   return sandbox.buildSlides({chapter});
 }
