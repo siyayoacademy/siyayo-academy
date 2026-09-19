@@ -62,6 +62,9 @@ jobs:
 
       - name: Test Story semantic surface DOM materialization
         run: node scripts/test-story-semantic-surface-dom-materialization.js
+
+      - name: Test Story semantic surface HTML integration
+        run: node scripts/test-story-semantic-surface-html-integration.js
       - name: Test Leaf readiness bootstrap order
         run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
       - name: Test Leaf canonical Skill bridge
