@@ -469,7 +469,8 @@ function buildSlides(chapterData) {
                 createLanguageLines(
                   item.sentences,
                   item.targetWords
-                )
+                ),
+              ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
           }
         );
@@ -498,7 +499,8 @@ function buildSlides(chapterData) {
                  createLanguageLines(
                    item,
                    item.targetWords ?? {}
-              )
+              ),
+              ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
           }
         );
