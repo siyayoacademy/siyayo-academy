@@ -299,6 +299,97 @@ function formatTargetSentence(
 }
 
 
+function formatSemanticSurfaceSentence(
+  sentence = "",
+  line = {},
+  surfaces = []
+) {
+
+  const realizationReader =
+    globalThis
+      .SIYAYOStorySemanticSurfaceRealization;
+
+  const domMaterialization =
+    globalThis
+      .SIYAYOStorySemanticSurfaceDOMMaterialization;
+
+  if (
+    !realizationReader ||
+    typeof realizationReader.read !== "function" ||
+    !domMaterialization ||
+    typeof domMaterialization.describe !== "function" ||
+    !Array.isArray(surfaces)
+  ) {
+    return formatTargetSentence(
+      sentence,
+      line.target
+    );
+  }
+
+  for (const surface of surfaces) {
+
+    const realization =
+      realizationReader.read(
+        surface,
+        line.language
+      );
+
+    if (!realization) {
+      continue;
+    }
+
+    const descriptor =
+      domMaterialization.describe(
+        realization
+      );
+
+    if (!descriptor) {
+      continue;
+    }
+
+    const source = String(sentence);
+    const index =
+      source.toLowerCase().indexOf(
+        descriptor.text.toLowerCase()
+      );
+
+    if (index === -1) {
+      continue;
+    }
+
+    const before =
+      source.slice(0, index);
+
+    const match =
+      source.slice(
+        index,
+        index + descriptor.text.length
+      );
+
+    const after =
+      source.slice(
+        index + descriptor.text.length
+      );
+
+    return `
+      ${escapeHtml(before)}
+      <span
+        data-surface-id="${escapeHtml(descriptor.surfaceId)}"
+        data-surface-language="${escapeHtml(descriptor.language)}"
+      >
+        ${escapeHtml(match)}
+      </span>
+      ${escapeHtml(after)}
+    `;
+  }
+
+  return formatTargetSentence(
+    sentence,
+    line.target
+  );
+}
+
+
 /* ========================================
    TRILINGUAL LINES
    ======================================== */
@@ -534,15 +625,19 @@ function buildSlides(chapterData) {
    RENDER LANGUAGE LINES
    ======================================== */
 
-function renderLanguageLines(lines = []) {
+function renderLanguageLines(
+  lines = [],
+  surfaces = []
+) {
 
   return lines
     .map(line => {
 
       const formattedText =
-        formatTargetSentence(
+        formatSemanticSurfaceSentence(
           line.text,
-          line.target
+          line,
+          surfaces
         );
 
       return `
@@ -624,7 +719,8 @@ function renderSlideContent(slide) {
 
           <div class="trilingual-content">
             ${renderLanguageLines(
-              slide.lines
+              slide.lines,
+              slide.surfaces ?? []
             )}
           </div>
 
@@ -650,7 +746,8 @@ function renderSlideContent(slide) {
 
           <div class="trilingual-content">
             ${renderLanguageLines(
-              slide.lines
+              slide.lines,
+              slide.surfaces ?? []
             )}
           </div>
 
@@ -676,7 +773,8 @@ function renderSlideContent(slide) {
 
           <div class="trilingual-content">
             ${renderLanguageLines(
-              slide.lines
+              slide.lines,
+              slide.surfaces ?? []
             )}
           </div>
 
