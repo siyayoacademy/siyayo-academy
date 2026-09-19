@@ -469,7 +469,9 @@ function buildSlides(chapterData) {
                 createLanguageLines(
                   item.sentences,
                   item.targetWords
-                )
+                ),
+              ...(item.surfaces ? { surfaces: item.surfaces } : {}),
+              ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
           }
         );
@@ -498,7 +500,9 @@ function buildSlides(chapterData) {
                  createLanguageLines(
                    item,
                    item.targetWords ?? {}
-              )
+              ),
+              ...(item.surfaces ? { surfaces: item.surfaces } : {}),
+              ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
           }
         );

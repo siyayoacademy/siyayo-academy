@@ -1,0 +1,153 @@
+name: Verb Explorer Adaptive Bootstrap
+
+on:
+  pull_request:
+    paths:
+      - 'js/**'
+      - 'scripts/test-*.js'
+      - '.github/workflows/verb-explorer-adaptive-bootstrap.yml'
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax check adaptive JavaScript
+        run: |
+          find js -maxdepth 1 -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+          find scripts -maxdepth 1 -type f -name 'test-*.js' -print0 | xargs -0 -n1 node --check
+      - name: Test adaptive session transition boundary
+        run: node scripts/test-adaptive-session-transition-boundary.js
+      - name: Test adaptive candidate grounding
+        run: node scripts/test-adaptive-progression-eligibility.js
+      - name: Test adaptive pedagogical state observation
+        run: node scripts/test-adaptive-pedagogical-completion.js
+      - name: Test adaptive convergence resolver
+        run: node scripts/test-adaptive-convergence-resolver.js
+      - name: Test browser bootstrap
+        run: node scripts/test-verb-explorer-adaptive-bootstrap.js
+      - name: Test browser bootstrap convergence dependency order
+        run: node scripts/test-verb-explorer-adaptive-bootstrap-convergence-order.js
+      - name: Test canonical Skill definition loader
+        run: node scripts/test-verb-explorer-canonical-skill-loader.js
+      - name: Test explicit learner identity provider
+        run: node scripts/test-verb-explorer-learner-identity-provider.js
+      - name: Test Leaf assessment target authority
+        run: node scripts/test-leaf-assessment-target-authority.js
+      - name: Test Leaf assessment target readiness
+        run: node scripts/test-leaf-assessment-target-readiness.js
+      - name: Test canonical Leaf assessment target provider
+        run: node scripts/test-leaf-assessment-target-provider.js
+      - name: Test Story assessment Leaf contract
+        run: node scripts/test-story-assessment-leaf.js
+      - name: Test Story assessment Leaf Smart Slide propagation
+        run: node scripts/test-story-assessment-leaf-slide-propagation.js
+      - name: Test human Story assessment Leaf selection
+        run: node scripts/test-story-assessment-leaf-selection.js
+
+      - name: Test explicit Story semantic surface
+        run: node scripts/test-story-semantic-surface.js
+
+      - name: Test Story Assessment Leaf semantic surface binding
+        run: node scripts/test-story-assessment-leaf-surface.js
+
+      - name: Test Story semantic surface Smart Slide propagation
+        run: node scripts/test-story-semantic-surface-slide-propagation.js
+
+      - name: Test Story semantic surface language realization
+        run: node scripts/test-story-semantic-surface-realization.js
+      - name: Test Leaf readiness bootstrap order
+        run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
+      - name: Test Leaf canonical Skill bridge
+        run: node scripts/test-leaf-canonical-skill-bridge.js
+      - name: Test adaptive live start WAIT and idempotence
+        run: node scripts/test-verb-explorer-adaptive-live-start.js
+      - name: Test adaptive readiness trigger
+        run: node scripts/test-verb-explorer-adaptive-readiness-trigger.js
+      - name: Test live bootstrap late authority Session start
+        run: node scripts/test-verb-explorer-adaptive-bootstrap-late-authority.js
+      - name: Test learner event boundary
+        run: node scripts/test-verb-explorer-learner-event.js
+      - name: Test learner event agency semantics
+        run: node scripts/test-verb-explorer-learner-event-agency.js
+      - name: Test adaptive controller
+        run: node scripts/test-verb-explorer-adaptive-controller.js
+      - name: Test adaptive input provider
+        run: node scripts/test-verb-explorer-adaptive-input-provider.js
+      - name: Test choice adaptive integration
+        run: node scripts/test-verb-explorer-choice-adaptive-integration.js
+      - name: Test choice boundary with real Cycle
+        run: node scripts/test-verb-explorer-choice-real-cycle.js
+      - name: Test live adaptive coordinator
+        run: node scripts/test-verb-explorer-adaptive-coordinator.js
+      - name: Test grounded Coordinator configuration seam
+        run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
+      - name: Test grounded adaptive Composer
+        run: node scripts/test-verb-explorer-adaptive-composer.js
+      - name: Test grounded Choice Attempt provider
+        run: node scripts/test-verb-explorer-choice-attempt-provider.js
+      - name: Test grounded adaptive state bridge
+        run: node scripts/test-verb-explorer-adaptive-state-bridge.js
+      - name: Test fail-closed adaptive PSAC boundary
+        run: node scripts/test-verb-explorer-adaptive-psac-boundary.js
+      - name: Test grounded adaptive Profile source
+        run: node scripts/test-verb-explorer-adaptive-profile-source.js
+      - name: Test grounded adaptive Evidence Profile source
+        run: node scripts/test-verb-explorer-adaptive-evidence-profile-source.js
+      - name: Test Evidence Profile to Session chain
+        run: node scripts/test-verb-explorer-evidence-session-chain.js
+      - name: Test grounded Xespirito evidence bridge
+        run: node scripts/test-verb-explorer-xespirito-evidence-bridge.js
+      - name: Test grounded adaptive Evidence source
+        run: node scripts/test-verb-explorer-adaptive-evidence-source.js
+      - name: Test Choice evidence evaluator
+        run: node scripts/test-choice-evidence-evaluator.js
+      - name: Test Choice evidence contextual scope
+        run: node scripts/test-choice-evidence-context-scope.js
+      - name: Test Choice support sensor
+        run: node scripts/test-choice-support-sensor.js
+      - name: Test Choice support contextual scope
+        run: node scripts/test-choice-support-context-scope.js
+      - name: Test live Choice audio support observer
+        run: node scripts/test-choice-support-observer.js
+      - name: Test Choice mode sensor
+        run: node scripts/test-choice-mode-sensor.js
+      - name: Test Choice mode contextual scope
+        run: node scripts/test-choice-mode-context-scope.js
+      - name: Test Choice mode bridge
+        run: node scripts/test-choice-mode-bridge.js
+      - name: Test Choice attempt ownership
+        run: node scripts/test-choice-attempt-ownership.js
+      - name: Test separated Choice attempt boundary
+        run: node scripts/test-choice-attempt-boundary.js
+      - name: Test event-aware Choice attempt factory
+        run: node scripts/test-verb-explorer-choice-attempt-factory.js
+      - name: Test explicit evidence mode boundary
+        run: node scripts/test-adaptive-evidence-mode-boundary.js
+      - name: Test fail-closed contrast review boundary
+        run: node scripts/test-adaptive-contrast-review-boundary.js
+      - name: Test longitudinal contrast review candidate seam
+        run: node scripts/test-adaptive-contrast-review-candidate-seam.js
+      - name: Test contrast probe definition authority
+        run: node scripts/test-adaptive-contrast-probe-definition.js
+      - name: Test exact contrast probe specification authority
+        run: node scripts/test-adaptive-contrast-probe-specification-source.js
+      - name: Test fail-closed contrast probe catalog source
+        run: node scripts/test-adaptive-contrast-probe-catalog-source.js
+      - name: Test contrast probe presentation boundary
+        run: node scripts/test-adaptive-contrast-probe-presenter.js
+      - name: Test contrast probe browser wire
+        run: node scripts/test-adaptive-contrast-probe-browser-wire.js
+      - name: Test contrast probe surface controller
+        run: node scripts/test-adaptive-contrast-probe-surface-controller.js
+      - name: Test grounded contrast probe result
+        run: node scripts/test-adaptive-contrast-probe-result.js
+      - name: Test adaptive evidence longitudinal recommendation
+        run: node scripts/test-adaptive-evidence-profile.js
+      - name: Test interference longitudinal cycle
+        run: node scripts/test-interference-longitudinal-cycle.js
+      - name: Test grounded contrast probe longitudinal closure
+        run: node scripts/test-contrast-probe-longitudinal-cycle.js
