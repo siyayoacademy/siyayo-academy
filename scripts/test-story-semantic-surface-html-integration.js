@@ -3,6 +3,8 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 
+const realizationCode=fs.readFileSync('js/story-semantic-surface-realization.js','utf8');
+const materializationCode=fs.readFileSync('js/story-semantic-surface-dom-materialization.js','utf8');
 const appCode=fs.readFileSync('js/app.js','utf8');
 
 function load(){
@@ -20,6 +22,8 @@ function load(){
     window:{addEventListener(){}}
   });
   sandbox.globalThis=sandbox;
+  vm.runInContext(realizationCode,sandbox,{filename:'js/story-semantic-surface-realization.js'});
+  vm.runInContext(materializationCode,sandbox,{filename:'js/story-semantic-surface-dom-materialization.js'});
   vm.runInContext(appCode,sandbox,{filename:'js/app.js'});
   return sandbox;
 }
