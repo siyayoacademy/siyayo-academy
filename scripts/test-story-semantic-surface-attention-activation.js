@@ -16,6 +16,18 @@ const surface = {
   }
 };
 
+const languageLine = {
+  dataset: { language: "en" },
+  addEventListener(type, handler) {
+    if (type === "click") {
+      this.clickHandler = handler;
+    }
+    if (type === "keydown") {
+      this.keyHandler = handler;
+    }
+  }
+};
+
 const sandbox = {
   console,
   speechSynthesis: {
@@ -28,17 +40,7 @@ const sandbox = {
     addEventListener() {},
     querySelectorAll(selector) {
       if (selector === ".language-line") {
-        return [{
-          dataset: { language: "en" },
-          addEventListener(type, handler) {
-            if (type === "click") {
-              this.clickHandler = handler;
-            }
-            if (type === "keydown") {
-              this.keyHandler = handler;
-            }
-          }
-        }];
+        return [languageLine];
       }
       return [];
     },
