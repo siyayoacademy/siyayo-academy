@@ -126,11 +126,11 @@ const functionCode =
   );
 
 assert.strictEqual(
-  /StoryAssessmentLeafSelection|LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(
+  /LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(
     functionCode
   ),
   false,
-  "Action button activation must not yet own Assessment or readiness"
+  "Action button activation may delegate explicit Select to Leaf Selection but must not own Target or readiness"
 );
 
 console.log(
