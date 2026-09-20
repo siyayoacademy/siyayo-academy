@@ -81,6 +81,8 @@ jobs:
         run: node scripts/test-story-semantic-surface-attention-intent-browser-load-order.js
       - name: Test Story semantic surface action choice
         run: node scripts/test-story-semantic-surface-action-choice.js
+      - name: Test Story action choice DOM materialization
+        run: node scripts/test-story-semantic-surface-action-choice-dom-materialization.js
       - name: Test Leaf readiness bootstrap order
         run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
       - name: Test Leaf canonical Skill bridge
