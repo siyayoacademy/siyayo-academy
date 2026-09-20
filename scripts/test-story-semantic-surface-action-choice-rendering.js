@@ -9,6 +9,7 @@ const appCode = fs.readFileSync(
 
 const materializedChoices = [];
 const rendered = [];
+const visibleMenus = [];
 
 const languageLine = {
   dataset: { language: "en" },
@@ -22,6 +23,35 @@ const languageLine = {
   },
   insertAdjacentHTML(position, html) {
     rendered.push({ position, html });
+
+    const match =
+      html.match(
+        /data-action-choice-for="([^"]+)"/
+      );
+
+    const menu = {
+      surfaceId:
+        match
+          ? match[1]
+          : null,
+      remove() {
+        const index =
+          visibleMenus.indexOf(
+            this
+          );
+
+        if (index >= 0) {
+          visibleMenus.splice(
+            index,
+            1
+          );
+        }
+      }
+    };
+
+    visibleMenus.push(
+      menu
+    );
   }
 };
 
@@ -55,7 +85,24 @@ const sandbox = {
       return [];
     },
     getElementById() { return null; },
-    querySelector() { return null; }
+    querySelector(selector) {
+      const match =
+        selector &&
+        selector.match(
+          /^\[data-action-choice-for="([^"]+)"\]$/
+        );
+
+      if (!match) {
+        return null;
+      }
+
+      return (
+        visibleMenus.find(
+          menu =>
+            menu.surfaceId === match[1]
+        ) || null
+      );
+    }
   }
 };
 
@@ -116,9 +163,19 @@ assert.deepStrictEqual(
 );
 
 assert.strictEqual(
-  rendered.length,
+  visibleMenus.length,
   1,
   "Action Choice must render exactly one visible menu"
+);
+
+languageLine.clickHandler({
+  target: surface
+});
+
+assert.strictEqual(
+  visibleMenus.length,
+  1,
+  "repeated activation of the same Surface must keep exactly one visible Action Choice"
 );
 
 assert.strictEqual(
