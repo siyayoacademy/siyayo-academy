@@ -75,6 +75,8 @@ jobs:
         run: node scripts/test-story-semantic-surface-interaction-intent.js
       - name: Test Story semantic surface attention boundary
         run: node scripts/test-story-semantic-surface-attention.js
+      - name: Test Story semantic surface attention activation
+        run: node scripts/test-story-semantic-surface-attention-activation.js
       - name: Test Leaf readiness bootstrap order
         run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
       - name: Test Leaf canonical Skill bridge
