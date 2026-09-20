@@ -67,7 +67,7 @@ const line = sandbox.document.querySelectorAll(".language-line")[0];
 
 line.clickHandler({ target: surface });
 assert.deepStrictEqual(
-  focused,
+  JSON.parse(JSON.stringify(focused)),
   [{ surfaceId: "question-choice" }],
   "Surface click must focus the explicit semantic Surface"
 );
@@ -80,14 +80,14 @@ line.keyHandler({
   preventDefault() { prevented = true; }
 });
 assert.deepStrictEqual(
-  focused,
+  JSON.parse(JSON.stringify(focused)),
   [{ surfaceId: "question-choice" }],
   "Surface Enter must focus the same explicit semantic Surface"
 );
 assert.strictEqual(
   prevented,
-  true,
-  "handled Surface keyboard activation must prevent default"
+  false,
+  "Surface attention must not consume keyboard activation before intent owns it"
 );
 
 assert.strictEqual(
