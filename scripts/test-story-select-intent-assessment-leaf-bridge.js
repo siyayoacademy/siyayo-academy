@@ -123,8 +123,13 @@ sandbox.SIYAYOStoryAssessmentLeafSelection = {
 vm.createContext(sandbox);
 vm.runInContext(appCode, sandbox);
 
-sandbox.currentSlides = [slide];
-sandbox.currentSlideIndex = 0;
+vm.runInContext(
+  `
+    currentSlides = [{"type":"example","surfaces":[{"id":"question-choice","realizations":{"en":"Which"}},{"id":"decision-agent","realizations":{"en":"we"}}],"assessmentLeaf":{"anchorSurfaceId":"question-choice","assessmentTarget":{"skill":"which.use.determiner","definitionPath":"data/learning/skills/which.json"}}}];
+    currentSlideIndex = 0;
+  `,
+  sandbox
+);
 
 sandbox.initializeSemanticSurfaceActionChoiceEvents();
 
