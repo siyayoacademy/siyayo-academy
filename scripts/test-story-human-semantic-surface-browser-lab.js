@@ -51,6 +51,9 @@ for (const src of [
   "../../js/story-semantic-surface-action-choice-dom-materialization.js",
   "../../js/story-assessment-leaf-surface.js",
   "../../js/story-assessment-leaf.js",
+  "../../js/leaf-assessment-target-authority.js",
+  "../../js/verb-explorer-adaptive-readiness-trigger.js",
+  "../../js/leaf-assessment-target-readiness.js",
   "../../js/leaf-assessment-target-provider.js",
   "../../js/story-assessment-leaf-selection.js",
   "../../js/app.js"
@@ -88,6 +91,21 @@ const leafReaderIndex =
     'src="../../js/story-assessment-leaf.js"'
   );
 
+const targetAuthorityIndex =
+  html.indexOf(
+    'src="../../js/leaf-assessment-target-authority.js"'
+  );
+
+const readinessTriggerIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-readiness-trigger.js"'
+  );
+
+const targetReadinessIndex =
+  html.indexOf(
+    'src="../../js/leaf-assessment-target-readiness.js"'
+  );
+
 const targetProviderIndex =
   html.indexOf(
     'src="../../js/leaf-assessment-target-provider.js"'
@@ -114,8 +132,38 @@ assert.ok(
 );
 
 assert.ok(
+  targetAuthorityIndex >= 0,
+  "human lab must load Leaf Assessment Target Authority"
+);
+
+assert.ok(
+  readinessTriggerIndex >= 0,
+  "human lab must load adaptive Readiness Trigger"
+);
+
+assert.ok(
+  targetReadinessIndex >= 0,
+  "human lab must load Leaf Assessment Target Readiness"
+);
+
+assert.ok(
   targetProviderIndex >= 0,
   "human lab must load Leaf Assessment Target Provider"
+);
+
+assert.ok(
+  targetReadinessIndex > targetAuthorityIndex,
+  "Leaf Assessment Target Readiness must load after Target Authority"
+);
+
+assert.ok(
+  targetReadinessIndex > readinessTriggerIndex,
+  "Leaf Assessment Target Readiness must load after adaptive Readiness Trigger"
+);
+
+assert.ok(
+  targetProviderIndex > targetReadinessIndex,
+  "Leaf Assessment Target Provider must load after Target Readiness"
 );
 
 assert.ok(
@@ -136,6 +184,9 @@ assert.ok(
 for (const specialistIndex of [
   leafSurfaceIndex,
   leafReaderIndex,
+  targetAuthorityIndex,
+  readinessTriggerIndex,
+  targetReadinessIndex,
   targetProviderIndex,
   leafSelectionIndex
 ]) {
