@@ -376,6 +376,8 @@ function formatSemanticSurfaceSentence(
       <span
         data-surface-id="${escapeHtml(descriptor.surfaceId)}"
         data-surface-language="${escapeHtml(descriptor.language)}"
+        role="button"
+        tabindex="0"
       >
         ${escapeHtml(match)}
       </span>
@@ -640,6 +642,20 @@ function renderLanguageLines(
           surfaces
         );
 
+      const hasSemanticSurface =
+        formattedText.includes(
+          "data-surface-id="
+        );
+
+      const interactionAttributes =
+        hasSemanticSurface
+          ? ""
+          : `
+              role="button"
+              tabindex="0"
+              aria-label="Ouvir ${escapeHtml(line.label)}"
+            `;
+
       return `
         <div
            class="
@@ -647,9 +663,7 @@ function renderLanguageLines(
              language-${line.language}
               "
               data-language="${line.language}"
-              role="button"
-              tabindex="0"
-           aria-label="Ouvir ${escapeHtml(line.label)}"
+              ${interactionAttributes}
          >
 
           <span class="language-label">
