@@ -470,6 +470,12 @@ assert.strictEqual(
   "human lab Assessment Leaf must remain anchored only to question-choice"
 );
 
+assert.strictEqual(
+  item.assessmentLeaf.assessmentTarget.definitionPath,
+  "/data/learning/skills/which.json",
+  "human lab Assessment Leaf must use a root-absolute canonical Skill definition path so nested lab routes fetch the one production definition"
+);
+
 console.log(
   "Human Semantic Surface browser lab route: OK"
 );
