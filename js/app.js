@@ -952,6 +952,48 @@ function renderCurrentSlide() {
 
 
 /* ========================================
+   ASSESSMENT LEAF SELECT AVAILABILITY
+   ======================================== */
+
+function semanticSurfaceSelectIsAvailable(
+  surfaceId
+) {
+
+  const leafSurface =
+    globalThis
+      .SIYAYOStoryAssessmentLeafSurface;
+
+  const slide =
+    currentSlides[
+      currentSlideIndex
+    ];
+
+  if (
+    !surfaceId ||
+    !slide ||
+    !leafSurface ||
+    typeof leafSurface.read !== "function"
+  ) {
+    return false;
+  }
+
+  try {
+    const binding =
+      leafSurface.read(
+        slide
+      );
+
+    return Boolean(
+      binding &&
+      binding.surfaceId === surfaceId
+    );
+  } catch (error) {
+    return false;
+  }
+}
+
+
+/* ========================================
    SURFACE ACTION CHOICE RENDERING
    ======================================== */
 
@@ -1176,7 +1218,11 @@ function attachSliderEvents() {
               const choice =
                 actionChoice.describe({
                   surfaceId:
-                    focusedSurface.surfaceId
+                    focusedSurface.surfaceId,
+                  selectAvailable:
+                    semanticSurfaceSelectIsAvailable(
+                      focusedSurface.surfaceId
+                    )
                 });
 
               renderSemanticSurfaceActionChoice(
@@ -1253,7 +1299,11 @@ function attachSliderEvents() {
               const choice =
                 actionChoice.describe({
                   surfaceId:
-                    focusedSurface.surfaceId
+                    focusedSurface.surfaceId,
+                  selectAvailable:
+                    semanticSurfaceSelectIsAvailable(
+                      focusedSurface.surfaceId
+                    )
                 });
 
               renderSemanticSurfaceActionChoice(
