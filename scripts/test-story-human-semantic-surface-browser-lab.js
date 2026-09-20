@@ -41,6 +41,7 @@ for (const src of [
   "../../js/story-semantic-surface-interaction-intent.js",
   "../../js/story-semantic-surface-action-choice.js",
   "../../js/story-semantic-surface-action-choice-dom-materialization.js",
+  "../../js/story-assessment-leaf-surface.js",
   "../../js/app.js"
 ]) {
   assert.ok(
@@ -57,6 +58,28 @@ assert.ok(
   ),
   "human lab must reuse production styling"
 );
+
+
+const leafSurfaceIndex =
+  html.indexOf(
+    'src="../../js/story-assessment-leaf-surface.js"'
+  );
+
+const appIndex =
+  html.indexOf(
+    'src="../../js/app.js"'
+  );
+
+assert.ok(
+  leafSurfaceIndex >= 0,
+  "human lab must load Story Assessment Leaf Surface"
+);
+
+assert.ok(
+  appIndex > leafSurfaceIndex,
+  "Story Assessment Leaf Surface must load before app.js in the human lab"
+);
+
 
 const academy =
   JSON.parse(
