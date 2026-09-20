@@ -8,6 +8,13 @@ const appCode = fs.readFileSync(
 );
 
 const intents = [];
+let delegatedClickHandler = null;
+
+const actionChoiceMenu = {
+  dataset: {
+    actionChoiceFor: "question-choice"
+  }
+};
 
 const exploreButton = {
   dataset: {
@@ -17,24 +24,12 @@ const exploreButton = {
     if (selector === "[data-surface-action]") {
       return this;
     }
+
     if (selector === "[data-action-choice-for]") {
       return actionChoiceMenu;
     }
-    return null;
-  }
-};
 
-const actionChoiceMenu = {
-  dataset: {
-    actionChoiceFor: "question-choice"
-  },
-  addEventListener(type, handler) {
-    if (type === "click") {
-      this.clickHandler = handler;
-    }
-    if (type === "keydown") {
-      this.keyHandler = handler;
-    }
+    return null;
   }
 };
 
@@ -47,17 +42,12 @@ const sandbox = {
   SpeechSynthesisUtterance: function() {},
   fetch: async () => ({ ok: false }),
   document: {
-    addEventListener() {},
-    querySelectorAll(selector) {
-      if (selector === ".language-line") {
-        return [];
+    addEventListener(type, handler) {
+      if (type === "click") {
+        delegatedClickHandler = handler;
       }
-      if (
-        selector ===
-        ".semantic-surface-action-choice"
-      ) {
-        return [actionChoiceMenu];
-      }
+    },
+    querySelectorAll() {
       return [];
     },
     getElementById() {
@@ -89,9 +79,21 @@ sandbox
 vm.createContext(sandbox);
 vm.runInContext(appCode, sandbox);
 
-sandbox.attachSliderEvents();
+assert.strictEqual(
+  typeof sandbox.initializeSemanticSurfaceActionChoiceEvents,
+  "function",
+  "explicit Action Choice activation must use a stable delegated event boundary"
+);
 
-actionChoiceMenu.clickHandler({
+sandbox.initializeSemanticSurfaceActionChoiceEvents();
+
+assert.strictEqual(
+  typeof delegatedClickHandler,
+  "function",
+  "Action Choice event boundary must listen for delegated button activation"
+);
+
+delegatedClickHandler({
   target: exploreButton
 });
 
@@ -106,13 +108,26 @@ assert.deepStrictEqual(
   "explicit Explore button activation must create Explore intent for the owning Surface"
 );
 
+const functionStart =
+  appCode.indexOf(
+    "function initializeSemanticSurfaceActionChoiceEvents"
+  );
+
+const functionEnd =
+  appCode.indexOf(
+    "/* ========================================",
+    functionStart + 1
+  );
+
+const functionCode =
+  appCode.slice(
+    functionStart,
+    functionEnd
+  );
+
 assert.strictEqual(
   /StoryAssessmentLeafSelection|LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(
-    appCode.slice(
-      appCode.indexOf(
-        "function attachSliderEvents"
-      )
-    )
+    functionCode
   ),
   false,
   "Action button activation must not yet own Assessment or readiness"
