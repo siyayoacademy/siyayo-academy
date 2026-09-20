@@ -63,6 +63,7 @@ for (const src of [
   "../../js/leaf-assessment-target-authority.js",
   "../../js/verb-explorer-learner-identity-source.js",
   "../../js/verb-explorer-learner-identity-provider.js",
+  "../../js/verb-explorer-canonical-skill-loader.js",
   "../../js/leaf-canonical-skill-bridge.js",
   "../../js/verb-explorer-adaptive-composer.js",
   "../../js/verb-explorer-adaptive-live-start.js",
@@ -128,6 +129,11 @@ const learnerIdentityProviderIndex =
 const labLearnerIdentityIndex =
   html.indexOf(
     'src="lab-learner-identity.js"'
+  );
+
+const canonicalSkillLoaderIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-canonical-skill-loader.js"'
   );
 
 const leafCanonicalSkillBridgeIndex =
@@ -221,8 +227,18 @@ assert.ok(
 );
 
 assert.ok(
+  canonicalSkillLoaderIndex >= 0,
+  "human lab must load Canonical Skill Loader"
+);
+
+assert.ok(
   leafCanonicalSkillBridgeIndex >= 0,
   "human lab must load Leaf Canonical Skill Bridge"
+);
+
+assert.ok(
+  leafCanonicalSkillBridgeIndex > canonicalSkillLoaderIndex,
+  "Leaf Canonical Skill Bridge must load after Canonical Skill Loader"
 );
 
 assert.ok(
@@ -313,6 +329,7 @@ for (const specialistIndex of [
   learnerIdentitySourceIndex,
   learnerIdentityProviderIndex,
   labLearnerIdentityIndex,
+  canonicalSkillLoaderIndex,
   leafCanonicalSkillBridgeIndex,
   adaptiveComposerIndex,
   adaptiveLiveStartIndex,
