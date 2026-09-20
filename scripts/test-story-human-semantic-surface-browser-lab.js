@@ -52,6 +52,7 @@ for (const src of [
   "../../js/story-assessment-leaf-surface.js",
   "../../js/story-assessment-leaf.js",
   "../../js/leaf-assessment-target-authority.js",
+  "../../js/verb-explorer-learner-identity-source.js",
   "../../js/verb-explorer-adaptive-live-start.js",
   "../../js/verb-explorer-adaptive-readiness-trigger.js",
   "../../js/leaf-assessment-target-readiness.js",
@@ -95,6 +96,11 @@ const leafReaderIndex =
 const targetAuthorityIndex =
   html.indexOf(
     'src="../../js/leaf-assessment-target-authority.js"'
+  );
+
+const learnerIdentitySourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-learner-identity-source.js"'
   );
 
 const adaptiveLiveStartIndex =
@@ -143,8 +149,18 @@ assert.ok(
 );
 
 assert.ok(
+  learnerIdentitySourceIndex >= 0,
+  "human lab must load Verb Explorer Learner Identity Source"
+);
+
+assert.ok(
   adaptiveLiveStartIndex >= 0,
   "human lab must load adaptive LiveStart"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex > learnerIdentitySourceIndex,
+  "Adaptive LiveStart must load after Learner Identity Source"
 );
 
 assert.ok(
@@ -201,6 +217,7 @@ for (const specialistIndex of [
   leafSurfaceIndex,
   leafReaderIndex,
   targetAuthorityIndex,
+  learnerIdentitySourceIndex,
   adaptiveLiveStartIndex,
   readinessTriggerIndex,
   targetReadinessIndex,
