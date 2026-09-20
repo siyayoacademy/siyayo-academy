@@ -20,17 +20,45 @@ const api =
 assert.ok(api, "Semantic Surface Action Choice API must exist");
 assert.strictEqual(typeof api.describe, "function");
 
-const choice = api.describe({
-  surfaceId: "question-choice"
+const selectableChoice = api.describe({
+  surfaceId: "question-choice",
+  selectAvailable: true
 });
 
 assert.deepStrictEqual(
-  JSON.parse(JSON.stringify(choice)),
+  JSON.parse(JSON.stringify(selectableChoice)),
   {
     surfaceId: "question-choice",
     actions: ["explore", "select"]
   },
-  "focused Surface must expose explicit Explore and Select choices"
+  "Leaf-bound Surface may expose explicit Explore and Select choices"
+);
+
+const exploreOnlyChoice = api.describe({
+  surfaceId: "decision-agent",
+  selectAvailable: false
+});
+
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(exploreOnlyChoice)),
+  {
+    surfaceId: "decision-agent",
+    actions: ["explore"]
+  },
+  "ordinary Surface must expose Explore without Select"
+);
+
+const missingSelectionAuthority = api.describe({
+  surfaceId: "question-choice"
+});
+
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(missingSelectionAuthority)),
+  {
+    surfaceId: "question-choice",
+    actions: ["explore"]
+  },
+  "missing explicit selection availability must fail closed to Explore only"
 );
 
 assert.strictEqual(
@@ -46,9 +74,9 @@ assert.strictEqual(
 );
 
 assert.strictEqual(
-  /InteractionIntent|StoryAssessmentLeafSelection|LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(code),
+  /InteractionIntent|StoryAssessmentLeafSurface|StoryAssessmentLeafSelection|LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(code),
   false,
-  "Action Choice must describe choices without creating intent, Assessment, or readiness"
+  "Action Choice must not inspect Leaves, create intent, Assessment, or readiness"
 );
 
 console.log(
