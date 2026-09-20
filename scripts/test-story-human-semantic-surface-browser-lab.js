@@ -52,6 +52,7 @@ for (const src of [
   "../../js/story-assessment-leaf-surface.js",
   "../../js/story-assessment-leaf.js",
   "../../js/leaf-assessment-target-authority.js",
+  "../../js/verb-explorer-adaptive-live-start.js",
   "../../js/verb-explorer-adaptive-readiness-trigger.js",
   "../../js/leaf-assessment-target-readiness.js",
   "../../js/leaf-assessment-target-provider.js",
@@ -96,6 +97,11 @@ const targetAuthorityIndex =
     'src="../../js/leaf-assessment-target-authority.js"'
   );
 
+const adaptiveLiveStartIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-live-start.js"'
+  );
+
 const readinessTriggerIndex =
   html.indexOf(
     'src="../../js/verb-explorer-adaptive-readiness-trigger.js"'
@@ -137,8 +143,18 @@ assert.ok(
 );
 
 assert.ok(
+  adaptiveLiveStartIndex >= 0,
+  "human lab must load adaptive LiveStart"
+);
+
+assert.ok(
   readinessTriggerIndex >= 0,
   "human lab must load adaptive Readiness Trigger"
+);
+
+assert.ok(
+  readinessTriggerIndex > adaptiveLiveStartIndex,
+  "adaptive Readiness Trigger must load after adaptive LiveStart"
 );
 
 assert.ok(
@@ -185,6 +201,7 @@ for (const specialistIndex of [
   leafSurfaceIndex,
   leafReaderIndex,
   targetAuthorityIndex,
+  adaptiveLiveStartIndex,
   readinessTriggerIndex,
   targetReadinessIndex,
   targetProviderIndex,
