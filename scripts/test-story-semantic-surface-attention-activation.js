@@ -83,8 +83,13 @@ assert.deepStrictEqual(
 );
 assert.deepStrictEqual(
   JSON.parse(JSON.stringify(describedChoices)),
-  [{ surfaceId: "question-choice" }],
-  "Focused Surface must request its explicit Action Choice"
+  [
+    {
+      surfaceId: "question-choice",
+      selectAvailable: false
+    }
+  ],
+  "Focused Surface without a proven Leaf binding must request Explore-only Action Choice"
 );
 
 focused.length = 0;
@@ -102,8 +107,13 @@ assert.deepStrictEqual(
 );
 assert.deepStrictEqual(
   JSON.parse(JSON.stringify(describedChoices)),
-  [{ surfaceId: "question-choice" }],
-  "Surface Enter must request the same explicit Action Choice"
+  [
+    {
+      surfaceId: "question-choice",
+      selectAvailable: false
+    }
+  ],
+  "Surface Enter without a proven Leaf binding must request the same Explore-only Action Choice"
 );
 assert.strictEqual(
   prevented,
