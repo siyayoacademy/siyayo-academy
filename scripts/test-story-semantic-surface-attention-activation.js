@@ -9,6 +9,7 @@ const attentionCode = fs.readFileSync(
 const appCode = fs.readFileSync("js/app.js", "utf8");
 
 const focused = [];
+const describedChoices = [];
 const surface = {
   dataset: { surfaceId: "question-choice" },
   closest(selector) {
@@ -60,6 +61,15 @@ sandbox.SIYAYOStorySemanticSurfaceAttention = {
     return { surfaceId: input.surfaceId };
   }
 };
+sandbox.SIYAYOStorySemanticSurfaceActionChoice = {
+  describe(input) {
+    describedChoices.push(input);
+    return {
+      surfaceId: input.surfaceId,
+      actions: ["explore", "select"]
+    };
+  }
+};
 vm.runInContext(appCode, sandbox);
 
 sandbox.attachSliderEvents();
@@ -71,8 +81,14 @@ assert.deepStrictEqual(
   [{ surfaceId: "question-choice" }],
   "Surface click must focus the explicit semantic Surface"
 );
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(describedChoices)),
+  [{ surfaceId: "question-choice" }],
+  "Focused Surface must request its explicit Action Choice"
+);
 
 focused.length = 0;
+describedChoices.length = 0;
 let prevented = false;
 line.keyHandler({
   key: "Enter",
@@ -83,6 +99,11 @@ assert.deepStrictEqual(
   JSON.parse(JSON.stringify(focused)),
   [{ surfaceId: "question-choice" }],
   "Surface Enter must focus the same explicit semantic Surface"
+);
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(describedChoices)),
+  [{ surfaceId: "question-choice" }],
+  "Surface Enter must request the same explicit Action Choice"
 );
 assert.strictEqual(
   prevented,
