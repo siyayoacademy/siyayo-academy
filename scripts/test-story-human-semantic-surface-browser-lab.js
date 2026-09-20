@@ -42,6 +42,9 @@ for (const src of [
   "../../js/story-semantic-surface-action-choice.js",
   "../../js/story-semantic-surface-action-choice-dom-materialization.js",
   "../../js/story-assessment-leaf-surface.js",
+  "../../js/story-assessment-leaf.js",
+  "../../js/leaf-assessment-target-provider.js",
+  "../../js/story-assessment-leaf-selection.js",
   "../../js/app.js"
 ]) {
   assert.ok(
@@ -65,6 +68,21 @@ const leafSurfaceIndex =
     'src="../../js/story-assessment-leaf-surface.js"'
   );
 
+const leafReaderIndex =
+  html.indexOf(
+    'src="../../js/story-assessment-leaf.js"'
+  );
+
+const targetProviderIndex =
+  html.indexOf(
+    'src="../../js/leaf-assessment-target-provider.js"'
+  );
+
+const leafSelectionIndex =
+  html.indexOf(
+    'src="../../js/story-assessment-leaf-selection.js"'
+  );
+
 const appIndex =
   html.indexOf(
     'src="../../js/app.js"'
@@ -76,9 +94,41 @@ assert.ok(
 );
 
 assert.ok(
-  appIndex > leafSurfaceIndex,
-  "Story Assessment Leaf Surface must load before app.js in the human lab"
+  leafReaderIndex >= 0,
+  "human lab must load Story Assessment Leaf reader"
 );
+
+assert.ok(
+  targetProviderIndex >= 0,
+  "human lab must load Leaf Assessment Target Provider"
+);
+
+assert.ok(
+  leafSelectionIndex >= 0,
+  "human lab must load Story Assessment Leaf Selection"
+);
+
+assert.ok(
+  leafSelectionIndex > leafReaderIndex,
+  "Story Assessment Leaf Selection must load after the Leaf reader"
+);
+
+assert.ok(
+  leafSelectionIndex > targetProviderIndex,
+  "Story Assessment Leaf Selection must load after the Target provider"
+);
+
+for (const specialistIndex of [
+  leafSurfaceIndex,
+  leafReaderIndex,
+  targetProviderIndex,
+  leafSelectionIndex
+]) {
+  assert.ok(
+    appIndex > specialistIndex,
+    "Assessment Leaf browser specialists must load before app.js in the human lab"
+  );
+}
 
 
 const academy =
