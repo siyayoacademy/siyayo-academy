@@ -16,6 +16,9 @@ const chapterPath =
 const labStylePath =
   labRoot + "/lab.css";
 
+const labIdentityPath =
+  labRoot + "/lab-learner-identity.js";
+
 assert.ok(
   fs.existsSync(htmlPath),
   "human Semantic Surface lab route must exist"
@@ -36,6 +39,11 @@ assert.ok(
   "human lab must own scoped visual refinements"
 );
 
+assert.ok(
+  fs.existsSync(labIdentityPath),
+  "human lab must own an explicit lab-only learner identity fixture"
+);
+
 const html =
   fs.readFileSync(
     htmlPath,
@@ -54,6 +62,7 @@ for (const src of [
   "../../js/green-pass-authority-policy.js",
   "../../js/leaf-assessment-target-authority.js",
   "../../js/verb-explorer-learner-identity-source.js",
+  "../../js/verb-explorer-learner-identity-provider.js",
   "../../js/leaf-canonical-skill-bridge.js",
   "../../js/verb-explorer-adaptive-composer.js",
   "../../js/verb-explorer-adaptive-live-start.js",
@@ -109,6 +118,16 @@ const targetAuthorityIndex =
 const learnerIdentitySourceIndex =
   html.indexOf(
     'src="../../js/verb-explorer-learner-identity-source.js"'
+  );
+
+const learnerIdentityProviderIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-learner-identity-provider.js"'
+  );
+
+const labLearnerIdentityIndex =
+  html.indexOf(
+    'src="lab-learner-identity.js"'
   );
 
 const leafCanonicalSkillBridgeIndex =
@@ -182,6 +201,26 @@ assert.ok(
 );
 
 assert.ok(
+  learnerIdentityProviderIndex >= 0,
+  "human lab must load Verb Explorer Learner Identity Provider"
+);
+
+assert.ok(
+  learnerIdentityProviderIndex > learnerIdentitySourceIndex,
+  "Learner Identity Provider must load after Learner Identity Source"
+);
+
+assert.ok(
+  labLearnerIdentityIndex >= 0,
+  "human lab must load its explicit lab-only learner identity fixture"
+);
+
+assert.ok(
+  labLearnerIdentityIndex > learnerIdentityProviderIndex,
+  "lab-only learner identity fixture must load after Learner Identity Provider"
+);
+
+assert.ok(
   leafCanonicalSkillBridgeIndex >= 0,
   "human lab must load Leaf Canonical Skill Bridge"
 );
@@ -204,6 +243,11 @@ assert.ok(
 assert.ok(
   adaptiveLiveStartIndex > learnerIdentitySourceIndex,
   "Adaptive LiveStart must load after Learner Identity Source"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex > labLearnerIdentityIndex,
+  "Adaptive LiveStart must load after the lab-only learner identity fixture"
 );
 
 assert.ok(
@@ -267,6 +311,8 @@ for (const specialistIndex of [
   greenPassAuthorityPolicyIndex,
   targetAuthorityIndex,
   learnerIdentitySourceIndex,
+  learnerIdentityProviderIndex,
+  labLearnerIdentityIndex,
   leafCanonicalSkillBridgeIndex,
   adaptiveComposerIndex,
   adaptiveLiveStartIndex,
@@ -281,6 +327,34 @@ for (const specialistIndex of [
   );
 }
 
+
+const labIdentity =
+  fs.readFileSync(
+    labIdentityPath,
+    "utf8"
+  );
+
+assert.ok(
+  labIdentity.includes(
+    'SIYAYOVerbExplorerLearnerIdentityProvider'
+  ),
+  "lab identity fixture must use the canonical Learner Identity Provider"
+);
+
+assert.ok(
+  labIdentity.includes(
+    'human-lab-learner-01'
+  ),
+  "lab identity fixture must declare an explicit controlled learner id"
+);
+
+assert.equal(
+  /localStorage|sessionStorage|document\.cookie|URLSearchParams/.test(
+    labIdentity
+  ),
+  false,
+  "lab identity fixture must not become persistence, login, cookie, or URL identity authority"
+);
 
 const labStyle =
   fs.readFileSync(
