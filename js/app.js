@@ -997,6 +997,9 @@ function attachSliderEvents() {
         if (
           event.target.closest(
             ".target-word"
+          ) ||
+          event.target.closest(
+            "[data-surface-id]"
           )
         ) {
           return;
@@ -1028,6 +1031,9 @@ function attachSliderEvents() {
         if (
           event.target.closest(
             ".target-word"
+          ) ||
+          event.target.closest(
+            "[data-surface-id]"
           )
         ) {
           return;
