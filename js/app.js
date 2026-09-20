@@ -1069,8 +1069,6 @@ function attachSliderEvents() {
           );
 
         if (semanticSurface) {
-          event.preventDefault();
-
           const attention =
             globalThis
               .SIYAYOStorySemanticSurfaceAttention;
