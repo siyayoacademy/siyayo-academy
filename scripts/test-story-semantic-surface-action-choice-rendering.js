@@ -176,7 +176,7 @@ const renderFunctionStart =
   );
 const renderFunctionEnd =
   appCode.indexOf(
-    "/* ========================================\n   SLIDER EVENTS",
+    "/* ========================================\n   SURFACE ACTION CHOICE EVENTS",
     renderFunctionStart
   );
 const renderFunctionCode =
