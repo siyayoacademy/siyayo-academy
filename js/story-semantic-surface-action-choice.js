@@ -22,12 +22,23 @@
       return null;
     }
 
+    var actions = [
+      "explore"
+    ];
+
+    if (
+      input.selectAvailable === true
+    ) {
+      actions.push(
+        "select"
+      );
+    }
+
     return Object.freeze({
       surfaceId: surfaceId,
-      actions: Object.freeze([
-        "explore",
-        "select"
-      ])
+      actions: Object.freeze(
+        actions
+      )
     });
   }
 
