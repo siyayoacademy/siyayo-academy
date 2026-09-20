@@ -1024,6 +1024,69 @@ function renderSemanticSurfaceActionChoice(
 
 
 /* ========================================
+   SURFACE ACTION CHOICE EVENTS
+   ======================================== */
+
+function initializeSemanticSurfaceActionChoiceEvents() {
+
+  document.addEventListener(
+    "click",
+    event => {
+
+      const target =
+        event &&
+        event.target;
+
+      if (
+        !target ||
+        typeof target.closest !== "function"
+      ) {
+        return;
+      }
+
+      const actionButton =
+        target.closest(
+          "[data-surface-action]"
+        );
+
+      if (!actionButton) {
+        return;
+      }
+
+      const actionChoice =
+        actionButton.closest(
+          "[data-action-choice-for]"
+        );
+
+      if (!actionChoice) {
+        return;
+      }
+
+      const interactionIntent =
+        globalThis
+          .SIYAYOStorySemanticSurfaceInteractionIntent;
+
+      if (
+        !interactionIntent ||
+        typeof interactionIntent.create !== "function"
+      ) {
+        return;
+      }
+
+      interactionIntent.create({
+        surfaceId:
+          actionChoice.dataset
+            .actionChoiceFor,
+        action:
+          actionButton.dataset
+            .surfaceAction
+      });
+    }
+  );
+}
+
+
+/* ========================================
    SLIDER EVENTS
    ======================================== */
 
@@ -1944,6 +2007,10 @@ document.addEventListener(
     /* Global Navigation */
 
     initializeShareButton();
+
+    /* Semantic Surface Action Choice */
+
+    initializeSemanticSurfaceActionChoiceEvents();
 
     /* 1. Academy Manifest */
 
