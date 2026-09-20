@@ -51,6 +51,7 @@ for (const src of [
   "../../js/story-semantic-surface-action-choice-dom-materialization.js",
   "../../js/story-assessment-leaf-surface.js",
   "../../js/story-assessment-leaf.js",
+  "../../js/green-pass-authority-policy.js",
   "../../js/leaf-assessment-target-authority.js",
   "../../js/verb-explorer-learner-identity-source.js",
   "../../js/leaf-canonical-skill-bridge.js",
@@ -93,6 +94,11 @@ const leafSurfaceIndex =
 const leafReaderIndex =
   html.indexOf(
     'src="../../js/story-assessment-leaf.js"'
+  );
+
+const greenPassAuthorityPolicyIndex =
+  html.indexOf(
+    'src="../../js/green-pass-authority-policy.js"'
   );
 
 const targetAuthorityIndex =
@@ -156,8 +162,18 @@ assert.ok(
 );
 
 assert.ok(
+  greenPassAuthorityPolicyIndex >= 0,
+  "human lab must load Green Pass Authority Policy"
+);
+
+assert.ok(
   targetAuthorityIndex >= 0,
   "human lab must load Leaf Assessment Target Authority"
+);
+
+assert.ok(
+  targetAuthorityIndex > greenPassAuthorityPolicyIndex,
+  "Leaf Assessment Target Authority must load after Green Pass Authority Policy"
 );
 
 assert.ok(
@@ -248,6 +264,7 @@ assert.ok(
 for (const specialistIndex of [
   leafSurfaceIndex,
   leafReaderIndex,
+  greenPassAuthorityPolicyIndex,
   targetAuthorityIndex,
   learnerIdentitySourceIndex,
   leafCanonicalSkillBridgeIndex,
