@@ -47,6 +47,9 @@ const sandbox = {
   }
 };
 sandbox.globalThis = sandbox;
+sandbox.window = {
+  addEventListener() {}
+};
 vm.createContext(sandbox);
 vm.runInContext(attentionCode, sandbox);
 sandbox.SIYAYOStorySemanticSurfaceAttention = {
