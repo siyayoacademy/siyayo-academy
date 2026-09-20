@@ -46,7 +46,7 @@
               "anchorSurfaceId": "question-choice",
               "assessmentTarget": {
                 "skill": "which.use.determiner",
-                "definitionPath": "data/learning/skills/which.json"
+                "definitionPath": "/data/learning/skills/which.json"
               }
             }
           }
