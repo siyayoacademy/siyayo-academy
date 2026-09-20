@@ -25,6 +25,7 @@ const sandbox = {
   SpeechSynthesisUtterance: function() {},
   fetch: async () => ({ ok: false }),
   document: {
+    addEventListener() {},
     querySelectorAll(selector) {
       if (selector === ".language-line") {
         return [{
