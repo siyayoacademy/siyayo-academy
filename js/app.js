@@ -1008,12 +1008,33 @@ function attachSliderEvents() {
            must not trigger line speech.
         */
 
+        const semanticSurface =
+          event.target.closest(
+            "[data-surface-id]"
+          );
+
+        if (semanticSurface) {
+          const attention =
+            globalThis
+              .SIYAYOStorySemanticSurfaceAttention;
+
+          if (
+            attention &&
+            typeof attention.focus === "function"
+          ) {
+            attention.focus({
+              surfaceId:
+                semanticSurface.dataset
+                  .surfaceId
+            });
+          }
+
+          return;
+        }
+
         if (
           event.target.closest(
             ".target-word"
-          ) ||
-          event.target.closest(
-            "[data-surface-id]"
           )
         ) {
           return;
@@ -1042,12 +1063,35 @@ function attachSliderEvents() {
         }
 
 
+        const semanticSurface =
+          event.target.closest(
+            "[data-surface-id]"
+          );
+
+        if (semanticSurface) {
+          event.preventDefault();
+
+          const attention =
+            globalThis
+              .SIYAYOStorySemanticSurfaceAttention;
+
+          if (
+            attention &&
+            typeof attention.focus === "function"
+          ) {
+            attention.focus({
+              surfaceId:
+                semanticSurface.dataset
+                  .surfaceId
+            });
+          }
+
+          return;
+        }
+
         if (
           event.target.closest(
             ".target-word"
-          ) ||
-          event.target.closest(
-            "[data-surface-id]"
           )
         ) {
           return;
