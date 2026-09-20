@@ -23,6 +23,10 @@ const actionChoice =
   html.indexOf(
     'src="js/story-semantic-surface-action-choice.js"'
   );
+const actionChoiceDOM =
+  html.indexOf(
+    'src="js/story-semantic-surface-action-choice-dom-materialization.js"'
+  );
 const app =
   html.indexOf('src="js/app.js"');
 
@@ -31,8 +35,9 @@ assert.ok(dom > realization, "DOM materialization must load after realization");
 assert.ok(attention > dom, "Surface attention must load after DOM materialization");
 assert.ok(intent > attention, "Interaction Intent must load after Surface attention");
 assert.ok(actionChoice > intent, "Action Choice must load after Interaction Intent");
-assert.ok(app > actionChoice, "app.js must load after Story Surface specialists");
+assert.ok(actionChoiceDOM > actionChoice, "Action Choice DOM Materialization must load after Action Choice");
+assert.ok(app > actionChoiceDOM, "app.js must load after Story Surface specialists");
 
 console.log(
-  "Story Surface attention / intent / action choice browser load order: OK"
+  "Story Surface attention / intent / action choice / DOM materialization browser load order: OK"
 );
