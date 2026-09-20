@@ -1022,11 +1022,27 @@ function attachSliderEvents() {
             attention &&
             typeof attention.focus === "function"
           ) {
-            attention.focus({
-              surfaceId:
-                semanticSurface.dataset
-                  .surfaceId
-            });
+            const focusedSurface =
+              attention.focus({
+                surfaceId:
+                  semanticSurface.dataset
+                    .surfaceId
+              });
+
+            const actionChoice =
+              globalThis
+                .SIYAYOStorySemanticSurfaceActionChoice;
+
+            if (
+              focusedSurface &&
+              actionChoice &&
+              typeof actionChoice.describe === "function"
+            ) {
+              actionChoice.describe({
+                surfaceId:
+                  focusedSurface.surfaceId
+              });
+            }
           }
 
           return;
@@ -1077,11 +1093,27 @@ function attachSliderEvents() {
             attention &&
             typeof attention.focus === "function"
           ) {
-            attention.focus({
-              surfaceId:
-                semanticSurface.dataset
-                  .surfaceId
-            });
+            const focusedSurface =
+              attention.focus({
+                surfaceId:
+                  semanticSurface.dataset
+                    .surfaceId
+              });
+
+            const actionChoice =
+              globalThis
+                .SIYAYOStorySemanticSurfaceActionChoice;
+
+            if (
+              focusedSurface &&
+              actionChoice &&
+              typeof actionChoice.describe === "function"
+            ) {
+              actionChoice.describe({
+                surfaceId:
+                  focusedSurface.surfaceId
+              });
+            }
           }
 
           return;
