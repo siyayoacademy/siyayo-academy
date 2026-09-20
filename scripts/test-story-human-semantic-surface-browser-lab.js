@@ -66,6 +66,7 @@ for (const src of [
   "../../js/verb-explorer-canonical-skill-source.js",
   "../../js/verb-explorer-canonical-skill-loader.js",
   "../../js/leaf-canonical-skill-bridge.js",
+  "../../js/verb-explorer-adaptive-profile-source.js",
   "../../js/verb-explorer-adaptive-composer.js",
   "../../js/verb-explorer-adaptive-live-start.js",
   "../../js/verb-explorer-adaptive-readiness-trigger.js",
@@ -145,6 +146,11 @@ const canonicalSkillLoaderIndex =
 const leafCanonicalSkillBridgeIndex =
   html.indexOf(
     'src="../../js/leaf-canonical-skill-bridge.js"'
+  );
+
+const adaptiveProfileSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-profile-source.js"'
   );
 
 const adaptiveComposerIndex =
@@ -258,8 +264,18 @@ assert.ok(
 );
 
 assert.ok(
+  adaptiveProfileSourceIndex >= 0,
+  "human lab must load Adaptive Profile Source"
+);
+
+assert.ok(
   adaptiveComposerIndex >= 0,
   "human lab must load Adaptive Composer"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveProfileSourceIndex,
+  "Adaptive Composer must load after Adaptive Profile Source"
 );
 
 assert.ok(
@@ -348,6 +364,7 @@ for (const specialistIndex of [
   canonicalSkillSourceIndex,
   canonicalSkillLoaderIndex,
   leafCanonicalSkillBridgeIndex,
+  adaptiveProfileSourceIndex,
   adaptiveComposerIndex,
   adaptiveLiveStartIndex,
   readinessTriggerIndex,
