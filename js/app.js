@@ -1115,14 +1115,76 @@ function initializeSemanticSurfaceActionChoiceEvents() {
         return;
       }
 
-      interactionIntent.create({
-        surfaceId:
-          actionChoice.dataset
-            .actionChoiceFor,
-        action:
-          actionButton.dataset
-            .surfaceAction
-      });
+      const intent =
+        interactionIntent.create({
+          surfaceId:
+            actionChoice.dataset
+              .actionChoiceFor,
+          action:
+            actionButton.dataset
+              .surfaceAction
+        });
+
+      if (
+        !intent ||
+        intent.action !== "select"
+      ) {
+        return;
+      }
+
+      const slide =
+        currentSlides[
+          currentSlideIndex
+        ];
+
+      const leafSurface =
+        globalThis
+          .SIYAYOStoryAssessmentLeafSurface;
+
+      if (
+        !slide ||
+        !leafSurface ||
+        typeof leafSurface.read !== "function"
+      ) {
+        return;
+      }
+
+      let binding = null;
+
+      try {
+        binding =
+          leafSurface.read(
+            slide
+          );
+      } catch (error) {
+        return;
+      }
+
+      if (
+        !binding ||
+        binding.surfaceId !== intent.surfaceId
+      ) {
+        return;
+      }
+
+      const leafSelection =
+        globalThis
+          .SIYAYOStoryAssessmentLeafSelection;
+
+      if (
+        !leafSelection ||
+        typeof leafSelection.select !== "function"
+      ) {
+        return;
+      }
+
+      try {
+        leafSelection.select(
+          slide
+        );
+      } catch (error) {
+        return;
+      }
     }
   );
 }
