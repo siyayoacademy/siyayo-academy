@@ -952,6 +952,78 @@ function renderCurrentSlide() {
 
 
 /* ========================================
+   SURFACE ACTION CHOICE RENDERING
+   ======================================== */
+
+function renderSemanticSurfaceActionChoice(
+  line,
+  choice
+) {
+
+  const domMaterialization =
+    globalThis
+      .SIYAYOStorySemanticSurfaceActionChoiceDOMMaterialization;
+
+  if (
+    !line ||
+    typeof line.insertAdjacentHTML !== "function" ||
+    !domMaterialization ||
+    typeof domMaterialization.describe !== "function"
+  ) {
+    return;
+  }
+
+  const descriptor =
+    domMaterialization.describe(
+      choice
+    );
+
+  if (
+    !descriptor ||
+    !Array.isArray(descriptor.actions) ||
+    descriptor.actions.length === 0
+  ) {
+    return;
+  }
+
+  const actions =
+    descriptor.actions
+      .map(action => {
+        const label =
+          action.action === "explore"
+            ? "Explore"
+            : action.action === "select"
+              ? "Select"
+              : action.action;
+
+        return `
+          <button
+            type="${escapeHtml(action.type)}"
+            data-surface-action="${escapeHtml(action.action)}"
+          >
+            ${escapeHtml(label)}
+          </button>
+        `;
+      })
+      .join("");
+
+  line.insertAdjacentHTML(
+    "afterend",
+    `
+      <div
+        class="semantic-surface-action-choice"
+        data-action-choice-for="${escapeHtml(descriptor.surfaceId)}"
+        role="group"
+        aria-label="Surface actions"
+      >
+        ${actions}
+      </div>
+    `
+  );
+}
+
+
+/* ========================================
    SLIDER EVENTS
    ======================================== */
 
@@ -1038,10 +1110,16 @@ function attachSliderEvents() {
               actionChoice &&
               typeof actionChoice.describe === "function"
             ) {
-              actionChoice.describe({
-                surfaceId:
-                  focusedSurface.surfaceId
-              });
+              const choice =
+                actionChoice.describe({
+                  surfaceId:
+                    focusedSurface.surfaceId
+                });
+
+              renderSemanticSurfaceActionChoice(
+                line,
+                choice
+              );
             }
           }
 
@@ -1109,10 +1187,16 @@ function attachSliderEvents() {
               actionChoice &&
               typeof actionChoice.describe === "function"
             ) {
-              actionChoice.describe({
-                surfaceId:
-                  focusedSurface.surfaceId
-              });
+              const choice =
+                actionChoice.describe({
+                  surfaceId:
+                    focusedSurface.surfaceId
+                });
+
+              renderSemanticSurfaceActionChoice(
+                line,
+                choice
+              );
             }
           }
 
