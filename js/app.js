@@ -1049,6 +1049,23 @@ function renderSemanticSurfaceActionChoice(
       })
       .join("");
 
+  const surfaceSelectorValue =
+    descriptor.surfaceId
+      .replace(/\\/g, "\\\\")
+      .replace(/"/g, '\\"');
+
+  const existingChoice =
+    document.querySelector(
+      `[data-action-choice-for="${surfaceSelectorValue}"]`
+    );
+
+  if (
+    existingChoice &&
+    typeof existingChoice.remove === "function"
+  ) {
+    existingChoice.remove();
+  }
+
   line.insertAdjacentHTML(
     "afterend",
     `
