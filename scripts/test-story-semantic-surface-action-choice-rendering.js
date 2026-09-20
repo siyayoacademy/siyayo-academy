@@ -170,12 +170,27 @@ assert.strictEqual(
   "rendered Action Choice must remain inert"
 );
 
+const renderFunctionStart =
+  appCode.indexOf(
+    "function renderSemanticSurfaceActionChoice"
+  );
+const renderFunctionEnd =
+  appCode.indexOf(
+    "/* ========================================\n   SLIDER EVENTS",
+    renderFunctionStart
+  );
+const renderFunctionCode =
+  appCode.slice(
+    renderFunctionStart,
+    renderFunctionEnd
+  );
+
 assert.strictEqual(
   /SIYAYOStorySemanticSurfaceInteractionIntent|StoryAssessmentLeafSelection|LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(
-    appCode
+    renderFunctionCode
   ),
   false,
-  "visual Action Choice must not yet create intent, Assessment, or readiness"
+  "rendering itself must not create intent, Assessment, or readiness"
 );
 
 console.log(
