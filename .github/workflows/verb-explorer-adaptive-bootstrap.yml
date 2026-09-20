@@ -69,6 +69,8 @@ jobs:
         run: node scripts/test-story-semantic-surface-browser-load-order.js
       - name: Test Story semantic surface human interaction boundary
         run: node scripts/test-story-semantic-surface-human-interaction-boundary.js
+      - name: Test Story semantic surface accessible activation
+        run: node scripts/test-story-semantic-surface-accessible-activation.js
       - name: Test Leaf readiness bootstrap order
         run: node scripts/test-verb-explorer-leaf-readiness-bootstrap-order.js
       - name: Test Leaf canonical Skill bridge
