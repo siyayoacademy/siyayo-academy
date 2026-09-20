@@ -13,6 +13,9 @@ const academyPath =
 const chapterPath =
   labRoot + "/data/chapter.json";
 
+const labStylePath =
+  labRoot + "/lab.css";
+
 assert.ok(
   fs.existsSync(htmlPath),
   "human Semantic Surface lab route must exist"
@@ -26,6 +29,11 @@ assert.ok(
 assert.ok(
   fs.existsSync(chapterPath),
   "human lab must own isolated controlled scene data"
+);
+
+assert.ok(
+  fs.existsSync(labStylePath),
+  "human lab must own scoped visual refinements"
 );
 
 const html =
@@ -60,6 +68,13 @@ assert.ok(
     'href="../../css/style.css"'
   ),
   "human lab must reuse production styling"
+);
+
+assert.ok(
+  html.includes(
+    'href="lab.css"'
+  ),
+  "human lab must load its scoped visual refinements after production styling"
 );
 
 
@@ -130,6 +145,26 @@ for (const specialistIndex of [
   );
 }
 
+
+const labStyle =
+  fs.readFileSync(
+    labStylePath,
+    "utf8"
+  );
+
+assert.ok(
+  /\.human-semantic-surface-lab\s+\.chapter-title/.test(
+    labStyle
+  ),
+  "human lab title refinement must remain scoped to the lab"
+);
+
+assert.ok(
+  /\.human-semantic-surface-lab\s+\.section-title/.test(
+    labStyle
+  ),
+  "human lab subtitle refinement must remain scoped to the lab"
+);
 
 const academy =
   JSON.parse(
