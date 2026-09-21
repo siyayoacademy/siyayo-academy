@@ -11,7 +11,8 @@
       context:input.context,
       getState:input.getState,
       getAttempt:input.getAttempt,
-      getResumeState:input.getResumeState
+      getResumeState:input.getResumeState,
+      lastConvergenceResult:null
     };
     return true;
   }
@@ -106,6 +107,7 @@
     if(!result)return null;
 
     var convergenceResult=resolveConvergence(current.session,sourceContext,result);
+    current.lastConvergenceResult=convergenceResult;
 
     if(result.greenProfile)current.profile=result.greenProfile;
     if(result.nextContext)current.context=result.nextContext;
@@ -116,7 +118,12 @@
   }
 
   function snapshot(){
-    return current?{profile:current.profile,session:current.session,context:current.context}:null;
+    return current?{
+      profile:current.profile,
+      session:current.session,
+      context:current.context,
+      lastConvergenceResult:current.lastConvergenceResult
+    }:null;
   }
 
   root.SIYAYOVerbExplorerAdaptiveCoordinator=Object.freeze({
