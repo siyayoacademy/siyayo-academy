@@ -105,6 +105,8 @@ for (const src of [
   "../../js/story-assessment-leaf-selection.js",
   "../../js/adaptive-choice-context-source.js",
   "../../js/adaptive-choice-presenter.js",
+  "../../js/contextual-choice-resolver.js",
+  "../../js/adaptive-choice-resolution-presenter.js",
   "../../js/verb-explorer-learner-event.js",
   "../../js/adaptive-choice-browser-wire.js",
   "lab-adaptive-choice-surface.js",
@@ -296,6 +298,16 @@ const adaptiveChoiceContextSourceIndex =
 const adaptiveChoicePresenterIndex =
   html.indexOf(
     'src="../../js/adaptive-choice-presenter.js"'
+  );
+
+const contextualChoiceResolverIndex =
+  html.indexOf(
+    'src="../../js/contextual-choice-resolver.js"'
+  );
+
+const adaptiveChoiceResolutionPresenterIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-resolution-presenter.js"'
   );
 
 const learnerEventIndex =
@@ -634,6 +646,16 @@ assert.ok(
 );
 
 assert.ok(
+  contextualChoiceResolverIndex >= 0,
+  "human lab must load canonical Contextual Choice Resolver"
+);
+
+assert.ok(
+  adaptiveChoiceResolutionPresenterIndex > contextualChoiceResolverIndex,
+  "Adaptive Choice Resolution Presenter must load after canonical Contextual Choice Resolver"
+);
+
+assert.ok(
   learnerEventIndex >= 0,
   "human lab must load canonical Verb Explorer LearnerEvent boundary"
 );
@@ -651,6 +673,11 @@ assert.ok(
 assert.ok(
   labAdaptiveChoiceSurfaceIndex > adaptiveChoicePresenterIndex,
   "lab Adaptive Choice surface wrapper must load after Adaptive Choice Presenter"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > adaptiveChoiceResolutionPresenterIndex,
+  "lab Adaptive Choice surface wrapper must load after Adaptive Choice Resolution Presenter"
 );
 
 assert.ok(
@@ -692,6 +719,8 @@ for (const specialistIndex of [
   leafSelectionIndex,
   adaptiveChoiceContextSourceIndex,
   adaptiveChoicePresenterIndex,
+  contextualChoiceResolverIndex,
+  adaptiveChoiceResolutionPresenterIndex,
   learnerEventIndex,
   adaptiveChoiceBrowserWireIndex,
   labAdaptiveChoiceSurfaceIndex
