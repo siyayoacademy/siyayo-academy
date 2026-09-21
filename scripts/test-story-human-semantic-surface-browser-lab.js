@@ -78,6 +78,7 @@ for (const src of [
   "../../js/verb-explorer-adaptive-profile-source.js",
   "../../js/adaptive-evidence-profile.js",
   "../../js/verb-explorer-adaptive-evidence-profile-source.js",
+  "../../js/adaptive-pedagogical-orchestrator.js",
   "../../js/adaptive-attempt-loop.js",
   "../../js/verb-explorer-adaptive-session-source.js",
   "lab-experience-runtime.js",
@@ -183,6 +184,11 @@ const adaptiveEvidenceProfileIndex =
 const adaptiveEvidenceProfileSourceIndex =
   html.indexOf(
     'src="../../js/verb-explorer-adaptive-evidence-profile-source.js"'
+  );
+
+const adaptivePedagogicalOrchestratorIndex =
+  html.indexOf(
+    'src="../../js/adaptive-pedagogical-orchestrator.js"'
   );
 
 const adaptiveAttemptLoopIndex =
@@ -346,6 +352,11 @@ assert.ok(
 );
 
 assert.ok(
+  adaptivePedagogicalOrchestratorIndex >= 0,
+  "human lab must load canonical Adaptive Pedagogical Orchestrator"
+);
+
+assert.ok(
   adaptiveAttemptLoopIndex >= 0,
   "human lab must load canonical Adaptive Attempt Loop API"
 );
@@ -398,6 +409,11 @@ assert.ok(
 assert.ok(
   adaptiveComposerIndex > adaptiveEvidenceProfileSourceIndex,
   "Adaptive Composer must load after Adaptive Evidence Profile Source"
+);
+
+assert.ok(
+  adaptiveAttemptLoopIndex > adaptivePedagogicalOrchestratorIndex,
+  "Adaptive Attempt Loop must load after canonical Adaptive Pedagogical Orchestrator"
 );
 
 assert.ok(
@@ -520,6 +536,7 @@ for (const specialistIndex of [
   adaptiveProfileSourceIndex,
   adaptiveEvidenceProfileIndex,
   adaptiveEvidenceProfileSourceIndex,
+  adaptivePedagogicalOrchestratorIndex,
   adaptiveAttemptLoopIndex,
   adaptiveSessionSourceIndex,
   labExperienceRuntimeIndex,
