@@ -5,10 +5,14 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 
 const listeners = [];
+const clickListeners = [];
 const mounted = [];
 let submitCalls = 0;
 
 const document = {
+  addEventListener(type, handler) {
+    if (type === 'click') clickListeners.push(handler);
+  },
   querySelector(selector) {
     if (selector === '[data-action-choice-for="question-choice"]') {
       return {
@@ -124,6 +128,17 @@ sandbox.AdaptiveChoicePresenter = Object.freeze({
 });
 
 vm.runInContext(
+  fs.readFileSync('js/verb-explorer-learner-event.js', 'utf8'),
+  sandbox,
+  { filename: 'js/verb-explorer-learner-event.js' }
+);
+vm.runInContext(
+  fs.readFileSync('js/adaptive-choice-browser-wire.js', 'utf8'),
+  sandbox,
+  { filename: 'js/adaptive-choice-browser-wire.js' }
+);
+
+vm.runInContext(
   fs.readFileSync('labs/human-semantic-surface/lab-adaptive-choice-surface.js', 'utf8'),
   sandbox,
   { filename: 'labs/human-semantic-surface/lab-adaptive-choice-surface.js' }
@@ -154,8 +169,28 @@ wrapped.select(slide).then(result => {
     'surface must not expose ranking or correctness authority'
   );
 
+  assert.equal(clickListeners.length, 1, 'mounted Choice surface must install exactly one learner click boundary');
+
+  const target = {
+    dataset: { choiceSelect: 'fresh-mild-cheese' },
+    closest(selector) {
+      return selector === '[data-choice-select]' ? this : null;
+    }
+  };
+
+  clickListeners[0]({ target });
+
+  const observed = sandbox.SIYAYOHumanLabAdaptiveChoiceSurface.getLastObservedEvent();
+  assert.ok(observed, 'authorized human click must become an observed LearnerEvent');
+  assert.equal(observed.source, 'choice-select');
+  assert.equal(observed.choice, 'fresh-mild-cheese');
+  assert.equal(observed.experienceId, 'shopping-for-dinner');
+  assert.equal(observed.question, 'Which cheese should we choose?');
+  assert.match(observed.occurrenceId, /^choice-select:\\d+$/);
+  assert.equal(submitCalls, 0, 'LearnerEvent observation must still stop before Coordinator submission');
+
   console.log(
-    'Human Lab adaptive Choice surface: PASS — only successful Session start mounts canonical data-choice-select alternatives; mounting creates no Attempt, submission, correctness, or NEXT.'
+    'Human Lab adaptive Choice surface: PASS — Session-backed candidates mount, one real click becomes one observable LearnerEvent, and the Lab still stops before Attempt/Coordinator/Cycle.'
   );
 }).catch(error => {
   console.error(error);
