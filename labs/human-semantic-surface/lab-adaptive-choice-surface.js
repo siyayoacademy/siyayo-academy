@@ -1,14 +1,16 @@
 // Human Semantic Surface Lab fixture only.
 // After an explicit Assessment Leaf Select has grounded one adaptive Session,
 // project that Session into canonical Choice alternatives for human response.
-// This wrapper does not create Attempt, evaluate correctness, submit to Coordinator/Cycle,
-// grant Green Pass, authorize progression, or infer Skill/Experience.
+// This wrapper projects the authorized Choice, grounds the observed learner event,
+// renders semantic resolution, and hands that same event to the configured Coordinator.
+// It does not call the Cycle/Green Pass directly, authorize progression, or infer Skill/Experience.
 (function(root){
 'use strict';
 
 var original=root.SIYAYOStoryAssessmentLeafSelection;
 var catalogPromise=null;
 var lastObservedEvent=null;
+var lastCycleResult=null;
 
 function text(value){
   return typeof value==='string'?value.trim():'';
@@ -151,6 +153,11 @@ function mount(slide){
         ].join('');
 
         lastObservedEvent=event;
+
+        if(!coordinator||typeof coordinator.submitChoice!=='function')return;
+        var coordinated=coordinator.submitChoice(event.choice,target,event);
+        if(!coordinated)return;
+        lastCycleResult=coordinated;
       }
     });
 
@@ -183,6 +190,9 @@ function select(slide,options){
 root.SIYAYOHumanLabAdaptiveChoiceSurface=Object.freeze({
   getLastObservedEvent:function(){
     return lastObservedEvent;
+  },
+  getLastCycleResult:function(){
+    return lastCycleResult;
   }
 });
 
