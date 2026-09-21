@@ -27,6 +27,8 @@ jobs:
         run: node scripts/test-adaptive-pedagogical-completion.js
       - name: Test adaptive convergence resolver
         run: node scripts/test-adaptive-convergence-resolver.js
+      - name: Test explicit learner progression decision
+        run: node scripts/test-adaptive-progression-decision.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test browser bootstrap convergence dependency order
