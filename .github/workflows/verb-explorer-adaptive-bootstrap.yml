@@ -99,6 +99,8 @@ jobs:
         run: node scripts/test-adaptive-choice-presenter.js
       - name: Test Adaptive Choice Browser Wire
         run: node scripts/test-adaptive-choice-browser-wire.js
+      - name: Test Adaptive Choice Resolution Presenter
+        run: node scripts/test-adaptive-choice-resolution-presenter.js
       - name: Test Human Lab adaptive Choice surface
         run: node scripts/test-human-lab-adaptive-choice-surface.js
       - name: Test Human Lab observed Choice state
