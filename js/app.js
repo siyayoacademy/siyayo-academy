@@ -14,6 +14,7 @@ let currentSlideIndex = 0;
 let isSpeaking = false;
 let isPaused = false;
 let currentUtterances = [];
+let pendingSpeechTimer = null;
 
 
 /* ========================================
@@ -1881,6 +1882,14 @@ function resumeSpeech() {
 
 function stopSpeech() {
 
+  if (pendingSpeechTimer !== null) {
+    window.clearTimeout(
+      pendingSpeechTimer
+    );
+
+    pendingSpeechTimer = null;
+  }
+
   if (!speechIsSupported()) {
     return;
   }
@@ -1896,6 +1905,104 @@ function stopSpeech() {
 
   updatePlayPauseButton();
 }
+
+
+/* ========================================
+   SHARED SPEECH ENGINE API
+   ======================================== */
+
+function speakText(
+  text,
+  language = "en",
+  options = {}
+) {
+
+  const content =
+    typeof text === "string"
+      ? text.trim()
+      : "";
+
+  if (
+    !content ||
+    !speechIsSupported()
+  ) {
+    return false;
+  }
+
+  const delay =
+    Number.isFinite(
+      Number(options.delay)
+    )
+      ? Math.max(
+          0,
+          Number(options.delay)
+        )
+      : 0;
+
+  stopSpeech();
+
+  const start = () => {
+
+    pendingSpeechTimer = null;
+
+    const utterance =
+      createUtterance({
+        text: content,
+        language
+      });
+
+    utterance.onstart = () => {
+      isSpeaking = true;
+      isPaused = false;
+      updatePlayPauseButton();
+    };
+
+    utterance.onend = () => {
+      isSpeaking = false;
+      isPaused = false;
+      currentUtterances = [];
+      updatePlayPauseButton();
+    };
+
+    utterance.onerror = event => {
+      isSpeaking = false;
+      isPaused = false;
+      currentUtterances = [];
+      updatePlayPauseButton();
+
+      console.error(
+        "Shared speech error:",
+        event.error
+      );
+    };
+
+    currentUtterances = [
+      utterance
+    ];
+
+    window.speechSynthesis.speak(
+      utterance
+    );
+  };
+
+  if (delay > 0) {
+    pendingSpeechTimer =
+      window.setTimeout(
+        start,
+        delay
+      );
+  } else {
+    start();
+  }
+
+  return true;
+}
+
+
+globalThis.SIYAYOSpeechEngine =
+  Object.freeze({
+    speakText
+  });
 
 
 /* ========================================
