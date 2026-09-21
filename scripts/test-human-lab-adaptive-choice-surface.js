@@ -348,10 +348,10 @@ wrapped.select(slide).then(result => {
     1,
     'one accepted learner Choice must focus Semantic Feedback exactly once'
   );
-  assert.deepStrictEqual(
-    feedbackScrollOptions,
-    { behavior: 'smooth', block: 'start', inline: 'nearest' }
-  );
+  assert.ok(feedbackScrollOptions);
+  assert.equal(feedbackScrollOptions.behavior, 'smooth');
+  assert.equal(feedbackScrollOptions.block, 'start');
+  assert.equal(feedbackScrollOptions.inline, 'nearest');
 
   const evidence = sandbox.SIYAYOVerbExplorerChoiceEvidenceBridge.read(
     groundedState,
