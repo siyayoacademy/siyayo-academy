@@ -107,6 +107,7 @@ function mount(slide){
       '<div class="human-lab-adaptive-choice-options">',
       alternatives,
       '</div>',
+      '<div id="choiceFeedback" class="choice-feedback" aria-live="polite"></div>',
       '</section>'
     ].join(''));
 
@@ -117,6 +118,38 @@ function mount(slide){
         var runtime=root.SIYAYOVerbExplorerResumeRuntime;
         if(!runtime||typeof runtime.observeChoice!=='function')return;
         if(runtime.observeChoice(event)!==true)return;
+
+        var resolutionPresenter=root.AdaptiveChoiceResolutionPresenter;
+        var resolver=root.SIYAYOChoiceResolver;
+        var feedback=root.document&&typeof root.document.getElementById==='function'
+          ? root.document.getElementById('choiceFeedback')
+          : null;
+
+        if(!resolutionPresenter||typeof resolutionPresenter.present!=='function')return;
+        if(!resolver||typeof resolver.resolveChoice!=='function')return;
+        if(!feedback)return;
+
+        var resolution=resolutionPresenter.present(
+          resolved.choiceContext,
+          event.choice,
+          'en',
+          resolver
+        );
+        if(!resolution)return;
+
+        feedback.innerHTML=[
+          '<div class="choice-feedback-card ',resolution.canonicalForm.valid?'is-valid':'is-invalid','">',
+          '<span>Canonical Form</span>',
+          '<strong>',escapeHtml(resolution.canonicalForm.status||''),'</strong>',
+          '<p>',escapeHtml(resolution.canonicalForm.response||''),'</p>',
+          '</div>',
+          '<div class="choice-feedback-card is-contextual">',
+          '<span>Contextual Response</span>',
+          '<strong>',escapeHtml(resolution.contextualResponse.status||''),'</strong>',
+          '<p>',escapeHtml(resolution.contextualResponse.score),' / ',escapeHtml(resolution.contextualResponse.possibleScore),'</p>',
+          '</div>'
+        ].join('');
+
         lastObservedEvent=event;
       }
     });
