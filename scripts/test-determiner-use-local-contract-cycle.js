@@ -44,7 +44,7 @@ const before = GreenPassProfile.evaluateContract(
   which.passContract,
   context.evidencePackets
 );
-assert.equal(before.status, 'INCOMPLETE');
+assert.equal(before.status, 'WAITING_FOR_EVIDENCE');
 assert.equal(before.satisfied, false);
 assert.equal(before.requirements[0].satisfied, true);
 assert.equal(before.requirements[1].satisfied, false);
@@ -82,7 +82,7 @@ assert.equal(
   'local determiner-use evidence must remain non-transfer'
 );
 
-assert.equal(result.contractEvaluation.status, 'INCOMPLETE');
+assert.equal(result.contractEvaluation.status, 'WAITING_FOR_EVIDENCE');
 assert.equal(result.contractEvaluation.satisfied, false);
 assert.equal(result.contractEvaluation.requirements[0].satisfied, true);
 assert.equal(result.contractEvaluation.requirements[1].satisfied, true);
