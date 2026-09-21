@@ -99,6 +99,8 @@ jobs:
         run: node scripts/test-adaptive-determiner-use-transfer-probe-specification-source.js
       - name: Test determiner-use transfer probe presentation boundary
         run: node scripts/test-adaptive-determiner-use-transfer-probe-presenter.js
+      - name: Test determiner-use transfer probe browser click boundary
+        run: node scripts/test-adaptive-determiner-use-transfer-probe-browser-wire.js
       - name: Test determiner-use probe presentation boundary
         run: node scripts/test-adaptive-determiner-use-probe-presenter.js
       - name: Test determiner-use probe browser click boundary
