@@ -76,6 +76,17 @@
     if(!learnerEvent)return null;
     if(learnerEvent.source!=='choice-select'||!learnerEvent.occurrenceId)return null;
     if(String(learnerEvent.choice)!==String(choice))return null;
+
+    var sessionExperience=current.session&&current.session.decision
+      ? current.session.decision.experienceId
+      : null;
+    var stateExperience=state.currentExperienceId||null;
+    var eventExperience=learnerEvent.experienceId||null;
+
+    if(sessionExperience&&stateExperience&&String(sessionExperience)!==String(stateExperience))return null;
+    if(sessionExperience&&eventExperience&&String(sessionExperience)!==String(eventExperience))return null;
+    if(stateExperience&&eventExperience&&String(stateExperience)!==String(eventExperience))return null;
+
     var attempt=typeof current.getAttempt==='function'?current.getAttempt(choice,state,target,learnerEvent):null;
     if(!attempt)return null;
     var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
