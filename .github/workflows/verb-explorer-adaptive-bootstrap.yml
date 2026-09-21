@@ -91,6 +91,8 @@ jobs:
         run: node scripts/test-story-human-semantic-surface-scene.js
       - name: Test human Semantic Surface browser lab route
         run: node scripts/test-story-human-semantic-surface-browser-lab.js
+      - name: Test Human Semantic Surface adaptive Session runtime
+        run: node scripts/test-story-human-semantic-surface-adaptive-session.js
       - name: Test Story Assessment Leaf action choice bridge
         run: node scripts/test-story-assessment-leaf-action-choice-bridge.js
       - name: Test Story Select Intent Assessment Leaf bridge
