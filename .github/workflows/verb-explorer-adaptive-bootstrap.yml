@@ -121,6 +121,8 @@ jobs:
         run: node scripts/test-verb-explorer-next-session-source.js
       - name: Test transition-authorized live Experience movement
         run: node scripts/test-verb-explorer-transition-runtime.js
+      - name: Test grounded S2 runtime activation
+        run: node scripts/test-verb-explorer-next-session-activation.js
       - name: Test determiner-use probe presentation boundary
         run: node scripts/test-adaptive-determiner-use-probe-presenter.js
       - name: Test determiner-use probe browser click boundary
