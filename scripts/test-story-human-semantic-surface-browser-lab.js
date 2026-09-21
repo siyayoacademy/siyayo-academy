@@ -78,6 +78,7 @@ for (const src of [
   "../../js/verb-explorer-adaptive-profile-source.js",
   "../../js/adaptive-evidence-profile.js",
   "../../js/verb-explorer-adaptive-evidence-profile-source.js",
+  "../../js/adaptive-attempt-loop.js",
   "../../js/verb-explorer-adaptive-session-source.js",
   "lab-experience-runtime.js",
   "../../js/verb-explorer-adaptive-state-bridge.js",
@@ -182,6 +183,11 @@ const adaptiveEvidenceProfileIndex =
 const adaptiveEvidenceProfileSourceIndex =
   html.indexOf(
     'src="../../js/verb-explorer-adaptive-evidence-profile-source.js"'
+  );
+
+const adaptiveAttemptLoopIndex =
+  html.indexOf(
+    'src="../../js/adaptive-attempt-loop.js"'
   );
 
 const adaptiveSessionSourceIndex =
@@ -340,6 +346,11 @@ assert.ok(
 );
 
 assert.ok(
+  adaptiveAttemptLoopIndex >= 0,
+  "human lab must load canonical Adaptive Attempt Loop API"
+);
+
+assert.ok(
   adaptiveSessionSourceIndex >= 0,
   "human lab must load Adaptive Session Source"
 );
@@ -387,6 +398,11 @@ assert.ok(
 assert.ok(
   adaptiveComposerIndex > adaptiveEvidenceProfileSourceIndex,
   "Adaptive Composer must load after Adaptive Evidence Profile Source"
+);
+
+assert.ok(
+  adaptiveSessionSourceIndex > adaptiveAttemptLoopIndex,
+  "Adaptive Session Source must load after canonical Adaptive Attempt Loop API"
 );
 
 assert.ok(
@@ -504,6 +520,7 @@ for (const specialistIndex of [
   adaptiveProfileSourceIndex,
   adaptiveEvidenceProfileIndex,
   adaptiveEvidenceProfileSourceIndex,
+  adaptiveAttemptLoopIndex,
   adaptiveSessionSourceIndex,
   labExperienceRuntimeIndex,
   adaptiveStateBridgeIndex,
