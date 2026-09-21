@@ -56,15 +56,17 @@
     return convergence.resolve({candidateGrounding:candidateGrounding,pedagogicalState:observedState});
   }
 
-  function submitChoice(choice,target){
+  function submitChoice(choice,target,observedLearnerEvent){
     if(!current)return null;
     var controller=root.SIYAYOVerbExplorerAdaptiveController;
     var events=root.SIYAYOVerbExplorerLearnerEvent;
     if(!controller||typeof controller.submitChoice!=='function'||!events||typeof events.fromChoiceSelect!=='function')return null;
     var state=typeof current.getState==='function'?current.getState(choice,target):null;
     if(!state)return null;
-    var learnerEvent=events.fromChoiceSelect(choice,state);
+    var learnerEvent=observedLearnerEvent||events.fromChoiceSelect(choice,state);
     if(!learnerEvent)return null;
+    if(learnerEvent.source!=='choice-select'||!learnerEvent.occurrenceId)return null;
+    if(String(learnerEvent.choice)!==String(choice))return null;
     var attempt=typeof current.getAttempt==='function'?current.getAttempt(choice,state,target,learnerEvent):null;
     if(!attempt)return null;
     var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
