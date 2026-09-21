@@ -4,6 +4,7 @@
   var contrastProbeOccurrenceSequence=0;
   var determinerUseProbeOccurrenceSequence=0;
   var determinerUseTransferProbeOccurrenceSequence=0;
+  var toroidalNextOccurrenceSequence=0;
 
   function nextChoiceOccurrenceId(){
     choiceOccurrenceSequence+=1;
@@ -23,6 +24,11 @@
   function nextDeterminerUseTransferProbeOccurrenceId(){
     determinerUseTransferProbeOccurrenceSequence+=1;
     return 'determiner-use-transfer-probe-select:'+determinerUseTransferProbeOccurrenceSequence;
+  }
+
+  function nextToroidalNextOccurrenceId(){
+    toroidalNextOccurrenceSequence+=1;
+    return 'toroidal-next-select:'+toroidalNextOccurrenceSequence;
   }
 
   function fromChoiceSelect(choice, state){
@@ -117,6 +123,27 @@
     });
   }
 
+  function fromToroidalNextSelect(toExperienceId, state){
+    state=state||{};
+    var fromExperienceId=state.currentExperienceId||state.experienceId||null;
+    if(!fromExperienceId||!toExperienceId)return null;
+    fromExperienceId=String(fromExperienceId).trim();
+    toExperienceId=String(toExperienceId).trim();
+    if(!fromExperienceId||!toExperienceId||fromExperienceId===toExperienceId)return null;
+    return Object.freeze({
+      observed:true,
+      actor:'learner',
+      relevantToWait:false,
+      relevantToProgression:true,
+      intent:'advance',
+      type:'learner-progression',
+      source:'toroidal-next-select',
+      occurrenceId:nextToroidalNextOccurrenceId(),
+      fromExperienceId:fromExperienceId,
+      toExperienceId:toExperienceId
+    });
+  }
+
   function fromSentenceBuilt(composition, state){
     composition=composition||{};
     state=state||{};
@@ -141,6 +168,7 @@
     fromContrastProbeSelect:fromContrastProbeSelect,
     fromDeterminerUseProbeSelect:fromDeterminerUseProbeSelect,
     fromDeterminerUseTransferProbeSelect:fromDeterminerUseTransferProbeSelect,
+    fromToroidalNextSelect:fromToroidalNextSelect,
     fromSentenceBuilt:fromSentenceBuilt
   });
 })(typeof globalThis!=='undefined'?globalThis:this);
