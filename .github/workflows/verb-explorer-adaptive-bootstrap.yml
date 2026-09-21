@@ -93,6 +93,8 @@ jobs:
         run: node scripts/test-story-human-semantic-surface-browser-lab.js
       - name: Test Human Semantic Surface adaptive Session runtime
         run: node scripts/test-story-human-semantic-surface-adaptive-session.js
+      - name: Test determiner-use probe specification source
+        run: node scripts/test-adaptive-determiner-use-probe-specification-source.js
       - name: Test Adaptive Choice Context Source
         run: node scripts/test-adaptive-choice-context-source.js
       - name: Test Adaptive Choice Presenter
