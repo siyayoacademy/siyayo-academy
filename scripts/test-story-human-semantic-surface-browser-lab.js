@@ -71,6 +71,7 @@ for (const src of [
   "../../js/verb-explorer-adaptive-session-source.js",
   "../../js/verb-explorer-adaptive-state-bridge.js",
   "../../js/verb-explorer-adaptive-coordinator.js",
+  "../../js/verb-explorer-adaptive-coordinator-config.js",
   "../../js/verb-explorer-adaptive-composer.js",
   "../../js/verb-explorer-adaptive-live-start.js",
   "../../js/verb-explorer-adaptive-readiness-trigger.js",
@@ -175,6 +176,11 @@ const adaptiveStateBridgeIndex =
 const adaptiveCoordinatorIndex =
   html.indexOf(
     'src="../../js/verb-explorer-adaptive-coordinator.js"'
+  );
+
+const adaptiveCoordinatorConfigIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-coordinator-config.js"'
   );
 
 const adaptiveComposerIndex =
@@ -313,6 +319,11 @@ assert.ok(
 );
 
 assert.ok(
+  adaptiveCoordinatorConfigIndex >= 0,
+  "human lab must load Adaptive Coordinator Config"
+);
+
+assert.ok(
   adaptiveComposerIndex >= 0,
   "human lab must load Adaptive Composer"
 );
@@ -340,6 +351,11 @@ assert.ok(
 assert.ok(
   adaptiveComposerIndex > adaptiveCoordinatorIndex,
   "Adaptive Composer must load after Adaptive Coordinator"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveCoordinatorConfigIndex,
+  "Adaptive Composer must load after Adaptive Coordinator Config"
 );
 
 assert.ok(
@@ -433,6 +449,7 @@ for (const specialistIndex of [
   adaptiveSessionSourceIndex,
   adaptiveStateBridgeIndex,
   adaptiveCoordinatorIndex,
+  adaptiveCoordinatorConfigIndex,
   adaptiveComposerIndex,
   adaptiveLiveStartIndex,
   readinessTriggerIndex,
