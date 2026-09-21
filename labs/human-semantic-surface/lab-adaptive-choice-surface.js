@@ -8,6 +8,7 @@
 
 var original=root.SIYAYOStoryAssessmentLeafSelection;
 var catalogPromise=null;
+var lastObservedEvent=null;
 
 function text(value){
   return typeof value==='string'?value.trim():'';
@@ -89,6 +90,11 @@ function mount(slide){
     var alternatives=presentation.alternatives.map(renderAlternative).join('');
     if(!alternatives)return false;
 
+    var browserWire=root.SIYAYOAdaptiveChoiceBrowserWire;
+    var learnerEvents=root.SIYAYOVerbExplorerLearnerEvent;
+    if(!browserWire||typeof browserWire.install!=='function')return false;
+    if(!learnerEvents||typeof learnerEvents.fromChoiceSelect!=='function')return false;
+
     actionChoice.insertAdjacentHTML('afterend',[
       '<section class="human-lab-adaptive-choice-surface" ',
       'data-human-lab-adaptive-choice-for="',escapeHtml(anchorSurfaceId),'" ',
@@ -104,7 +110,15 @@ function mount(slide){
       '</section>'
     ].join(''));
 
-    return true;
+    var installed=browserWire.install(presentation,{
+      document:root.document,
+      learnerEvents:learnerEvents,
+      onEvent:function(event){
+        lastObservedEvent=event;
+      }
+    });
+
+    return installed===true;
   }).catch(function(){return false;});
 }
 
@@ -129,6 +143,12 @@ function select(slide,options){
     return false;
   });
 }
+
+root.SIYAYOHumanLabAdaptiveChoiceSurface=Object.freeze({
+  getLastObservedEvent:function(){
+    return lastObservedEvent;
+  }
+});
 
 root.SIYAYOStoryAssessmentLeafSelection=Object.freeze({select:select});
 })(typeof globalThis!=='undefined'?globalThis:this);
