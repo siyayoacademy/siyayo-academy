@@ -7,8 +7,14 @@ const vm = require('node:vm');
 const listeners = [];
 const clickListeners = [];
 const mounted = [];
+let feedbackScrollCalls = 0;
+let feedbackScrollOptions = null;
 const feedback = {
   innerHTML: '',
+  scrollIntoView(options) {
+    feedbackScrollCalls += 1;
+    feedbackScrollOptions = options;
+  },
   querySelector(selector) {
     if (selector.includes('is-valid') || selector.includes('is-invalid')) {
       if (!/choice-feedback-card[^"]*is-(?:valid|invalid)/.test(this.innerHTML)) return null;
@@ -277,7 +283,16 @@ wrapped.select(slide).then(result => {
   assert.match(mounted[0].html, /data-human-lab-adaptive-choice-for="question-choice"/);
   assert.match(mounted[0].html, /data-choice-select="fresh-mild-cheese"/);
   assert.match(mounted[0].html, /data-choice-select="aged-strong-cheese"/);
-  assert.match(mounted[0].html, /Which cheese should we choose\?/);
+  assert.doesNotMatch(
+    mounted[0].html,
+    /human-lab-adaptive-choice-question/,
+    'adaptive Choice surface must not duplicate the Story question block'
+  );
+  assert.doesNotMatch(
+    mounted[0].html,
+    /Which cheese should we choose\?/,
+    'Story-owned question must not be repeated inside the adaptive Choice surface'
+  );
   assert.match(mounted[0].html, /human-lab-choice-line-en/);
   assert.match(mounted[0].html, /human-lab-choice-line-es/);
   assert.match(mounted[0].html, /human-lab-choice-line-pt/);
@@ -328,6 +343,15 @@ wrapped.select(slide).then(result => {
   assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>Contextual Response</);
   assert.match(feedback.innerHTML, /choice-feedback-score-ring/);
   assert.match(feedback.innerHTML, /--score-angle:360deg/);
+  assert.equal(
+    feedbackScrollCalls,
+    1,
+    'one accepted learner Choice must focus Semantic Feedback exactly once'
+  );
+  assert.deepStrictEqual(
+    feedbackScrollOptions,
+    { behavior: 'smooth', block: 'start', inline: 'nearest' }
+  );
 
   const evidence = sandbox.SIYAYOVerbExplorerChoiceEvidenceBridge.read(
     groundedState,
