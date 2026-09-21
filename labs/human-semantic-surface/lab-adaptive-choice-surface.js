@@ -97,7 +97,6 @@ function mount(slide){
     );
     if(!actionChoice||typeof actionChoice.insertAdjacentHTML!=='function')return false;
 
-    var question=presentation.question||{};
     var alternatives=presentation.alternatives.map(renderAlternative).join('');
     if(!alternatives)return false;
 
@@ -110,11 +109,6 @@ function mount(slide){
       '<section class="human-lab-adaptive-choice-surface" ',
       'data-human-lab-adaptive-choice-for="',escapeHtml(anchorSurfaceId),'" ',
       'aria-label="Adaptive choice">',
-      '<div class="human-lab-adaptive-choice-question">',
-      '<p>',escapeHtml(question.en||''),'</p>',
-      '<p>',escapeHtml(question.es||''),'</p>',
-      '<p>',escapeHtml(question.pt||''),'</p>',
-      '</div>',
       '<div class="human-lab-adaptive-choice-options">',
       alternatives,
       '</div>',
@@ -172,6 +166,14 @@ function mount(slide){
           '</div>',
           '</section>'
         ].join('');
+
+        if(typeof feedback.scrollIntoView==='function'){
+          feedback.scrollIntoView({
+            behavior:'smooth',
+            block:'start',
+            inline:'nearest'
+          });
+        }
 
         lastObservedEvent=event;
 
