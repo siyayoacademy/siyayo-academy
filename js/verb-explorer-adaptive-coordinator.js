@@ -32,6 +32,15 @@
     return authorization;
   }
 
+  function releaseProgression(progressionDecision){
+    if(!current||!current.session)return false;
+    if(!progressionDecision||progressionDecision.status!=='PROGRESSION_DECISION_READY')return false;
+    return releaseTransition(
+      progressionDecision.advanceSelection,
+      progressionDecision.nextDecision
+    );
+  }
+
   function resolveConvergence(session,sourceContext,result){
     var selector=root.AdaptiveAdvanceSelector;
     var grounding=root.AdaptiveProgressionEligibility;
@@ -103,6 +112,7 @@
     configure:configure,
     clear:clear,
     releaseTransition:releaseTransition,
+    releaseProgression:releaseProgression,
     submitChoice:submitChoice,
     snapshot:snapshot
   });
