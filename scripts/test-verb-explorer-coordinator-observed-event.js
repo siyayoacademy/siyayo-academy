@@ -6,6 +6,7 @@ const vm = require('node:vm');
 
 let minted = 0;
 let controllerInput = null;
+const attemptEvents = [];
 
 const observedEvent = Object.freeze({
   observed: true,
@@ -90,7 +91,7 @@ assert.equal(
     getAttempt(choice, receivedState, target, learnerEvent) {
       assert.equal(choice, 'fresh-mild-cheese');
       assert.strictEqual(receivedState, state);
-      assert.strictEqual(learnerEvent, observedEvent);
+      attemptEvents.push(learnerEvent);
       return attempt;
     },
     getResumeState(receivedState) {
@@ -108,6 +109,8 @@ const output = coordinator.submitChoice(
 
 assert.ok(output);
 assert.equal(minted, 0, 'Coordinator must not mint a second LearnerEvent when one observed event is supplied');
+assert.equal(attemptEvents.length, 1);
+assert.strictEqual(attemptEvents[0], observedEvent);
 assert.ok(controllerInput);
 assert.strictEqual(controllerInput.learnerEvent, observedEvent);
 assert.strictEqual(controllerInput.attempt, attempt);
@@ -117,6 +120,8 @@ controllerInput = null;
 const fallbackOutput = coordinator.submitChoice('fresh-mild-cheese', null);
 assert.ok(fallbackOutput);
 assert.equal(minted, 1, 'legacy caller without an observed event must keep the existing minting behavior');
+assert.equal(attemptEvents.length, 2);
+assert.equal(attemptEvents[1].occurrenceId, 'choice-select:legacy');
 assert.ok(controllerInput);
 assert.equal(controllerInput.learnerEvent.occurrenceId, 'choice-select:legacy');
 
