@@ -369,6 +369,18 @@ wrapped.select(slide).then(result => {
   assert.match(labCss, /conic-gradient\(/);
   assert.match(labCss, /:focus-visible/);
   assert.match(labCss, /@media\s*\(max-width:\s*720px\)/);
+  assert.match(
+    labCss,
+    /@media[\s\S]*max-width:\s*720px[\s\S]*orientation:\s*portrait[\s\S]*\.human-semantic-surface-lab\s+\.slide-content\s*\{[\s\S]*justify-content:\s*flex-start[\s\S]*padding-bottom:[\s\S]*scroll-padding-bottom:/
+  );
+  assert.match(
+    labCss,
+    /@media[\s\S]*max-width:\s*720px[\s\S]*orientation:\s*portrait[\s\S]*\.human-semantic-surface-lab\s+\.semantic-feedback-shell\s*\{[\s\S]*padding:/
+  );
+  assert.match(
+    labCss,
+    /@media[\s\S]*max-width:\s*720px[\s\S]*orientation:\s*portrait[\s\S]*\.human-semantic-surface-lab\s+\.choice-feedback-score-ring\s*\{[\s\S]*width:/
+  );
   assert.match(labCss, /@media\s*\(prefers-reduced-motion:\s*reduce\)/);
   assert.match(labCss, /@keyframes\s+semanticReveal/);
 
