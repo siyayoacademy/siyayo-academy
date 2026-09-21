@@ -34,6 +34,7 @@ const document = {
 
 let timerId = 0;
 const window = {
+  SpeechSynthesisUtterance,
   speechSynthesis: {
     speak(utterance) {
       spoken.push(utterance);
