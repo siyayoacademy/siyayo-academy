@@ -484,3 +484,204 @@
     font-size: clamp(0.95rem, 4.8vw, 1.08rem);
   }
 }
+
+
+/* ========================================
+   PENTE FINO CSS 4 — LEARNER-FRIENDLY CONTEXT
+   ======================================== */
+
+.human-semantic-surface-lab .semantic-feedback-heading {
+  display: grid;
+  justify-items: center;
+  gap: 0.18rem;
+}
+
+.human-semantic-surface-lab .semantic-feedback-heading-main {
+  color: var(--human-lab-gold);
+  font-size: clamp(0.76rem, 1.35vw, 0.9rem);
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.human-semantic-surface-lab .semantic-feedback-heading-local {
+  color: var(--human-lab-muted);
+  font-size: clamp(0.68rem, 1.15vw, 0.78rem);
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+.human-semantic-surface-lab .choice-feedback-kicker-local {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: -0.42rem;
+  margin-bottom: 0.85rem;
+  color: rgba(255,255,255,0.58);
+  font-size: clamp(0.68rem, 1.15vw, 0.78rem);
+  line-height: 1.35;
+}
+
+.human-semantic-surface-lab .choice-feedback-target {
+  position: relative;
+  z-index: 1;
+  margin: 0.15rem 0 1rem;
+  color: var(--human-lab-ink);
+  font-size: clamp(1.16rem, 2.35vw, 1.52rem);
+  font-weight: 800;
+  line-height: 1.35;
+  text-wrap: balance;
+  animation: semanticReveal 340ms 260ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-status--secondary {
+  color: rgba(255,255,255,0.68);
+  font-size: clamp(0.82rem, 1.45vw, 0.96rem);
+  font-weight: 650;
+  animation-delay: 420ms;
+}
+
+.human-semantic-surface-lab .choice-feedback-card--contextual {
+  min-height: 0;
+}
+
+.human-semantic-surface-lab .context-criteria {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.48rem;
+  margin-top: 1rem;
+}
+
+.human-semantic-surface-lab .context-criterion {
+  display: flex;
+  align-items: center;
+  gap: 0.42rem;
+  min-width: 0;
+  padding: 0.5rem 0.62rem;
+  border: 1px solid rgba(212,175,55,0.20);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.028);
+  color: rgba(255,255,255,0.77);
+  font-size: clamp(0.72rem, 1.25vw, 0.84rem);
+  line-height: 1.25;
+}
+
+.human-semantic-surface-lab .context-criterion-mark {
+  flex: 0 0 auto;
+  color: var(--human-lab-gold);
+  font-size: 0.62em;
+}
+
+.human-semantic-surface-lab .context-options {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.58rem;
+  margin-top: 1rem;
+}
+
+.human-semantic-surface-lab .context-option {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto auto;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.72rem 0.78rem;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.025);
+}
+
+.human-semantic-surface-lab .context-option.is-best {
+  border-color: rgba(212,175,55,0.36);
+}
+
+.human-semantic-surface-lab .context-option.is-selected {
+  box-shadow:
+    inset 0 0 0 1px rgba(212,175,55,0.12),
+    0 0 18px rgba(212,175,55,0.05);
+}
+
+.human-semantic-surface-lab .context-option-main {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.human-semantic-surface-lab .context-option-name {
+  color: var(--human-lab-ink);
+  font-size: clamp(0.84rem, 1.5vw, 0.98rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.human-semantic-surface-lab .context-option-selected {
+  color: var(--human-lab-gold);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.human-semantic-surface-lab .context-option-markers {
+  display: inline-flex;
+  gap: 0.22rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.human-semantic-surface-lab .context-option-marker {
+  display: inline-grid;
+  place-items: center;
+  width: 1.15rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.16);
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.human-semantic-surface-lab .context-option-marker.is-match {
+  color: var(--human-lab-gold);
+  border-color: rgba(212,175,55,0.45);
+  background: rgba(212,175,55,0.08);
+}
+
+.human-semantic-surface-lab .context-option-marker.is-miss {
+  color: rgba(255,255,255,0.34);
+}
+
+.human-semantic-surface-lab .context-option-score {
+  min-width: 2.8rem;
+  color: var(--human-lab-ink);
+  font-size: clamp(0.78rem, 1.25vw, 0.9rem);
+  font-weight: 800;
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .human-semantic-surface-lab .choice-feedback-target {
+    font-size: clamp(1.15rem, 5.1vw, 1.36rem);
+    margin-bottom: 0.78rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-status--secondary {
+    font-size: clamp(0.78rem, 3.6vw, 0.9rem);
+  }
+
+  .human-semantic-surface-lab .context-criteria {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .human-semantic-surface-lab .context-option {
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 0.5rem 0.65rem;
+  }
+
+  .human-semantic-surface-lab .context-option-markers {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}
