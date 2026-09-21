@@ -114,6 +114,9 @@ function mount(slide){
       document:root.document,
       learnerEvents:learnerEvents,
       onEvent:function(event){
+        var runtime=root.SIYAYOVerbExplorerResumeRuntime;
+        if(!runtime||typeof runtime.observeChoice!=='function')return;
+        if(runtime.observeChoice(event)!==true)return;
         lastObservedEvent=event;
       }
     });
