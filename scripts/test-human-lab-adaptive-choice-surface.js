@@ -107,6 +107,27 @@ sandbox.SIYAYOVerbExplorerAdaptiveCoordinator = Object.freeze({
     submitCalls += 1;
   }
 });
+let observedState = {
+  currentExperienceId: 'shopping-for-dinner',
+  experienceLanguage: 'en',
+  experienceQuestion: null,
+  experienceChoiceCandidate: null
+};
+sandbox.SIYAYOVerbExplorerResumeRuntime = Object.freeze({
+  observeChoice(event) {
+    if (!event || event.source !== 'choice-select') return false;
+    observedState = {
+      currentExperienceId: event.experienceId,
+      experienceLanguage: 'en',
+      experienceQuestion: event.question,
+      experienceChoiceCandidate: event.choice
+    };
+    return true;
+  },
+  captureContext() {
+    return { ...observedState };
+  }
+});
 sandbox.SIYAYOVerbExplorerCanonicalSkillSource = Object.freeze({
   getDefinition() {
     return definition;
@@ -187,6 +208,11 @@ wrapped.select(slide).then(result => {
   assert.equal(observed.experienceId, 'shopping-for-dinner');
   assert.equal(observed.question, 'Which cheese should we choose?');
   assert.match(observed.occurrenceId, /^choice-select:\d+$/);
+  const groundedState = sandbox.SIYAYOVerbExplorerResumeRuntime.captureContext();
+  assert.equal(groundedState.currentExperienceId, 'shopping-for-dinner');
+  assert.equal(groundedState.experienceLanguage, 'en');
+  assert.equal(groundedState.experienceQuestion, 'Which cheese should we choose?');
+  assert.equal(groundedState.experienceChoiceCandidate, 'fresh-mild-cheese');
   assert.equal(submitCalls, 0, 'LearnerEvent observation must still stop before Coordinator submission');
 
   console.log(
