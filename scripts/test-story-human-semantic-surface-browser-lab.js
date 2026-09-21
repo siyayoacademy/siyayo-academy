@@ -19,6 +19,9 @@ const labStylePath =
 const labIdentityPath =
   labRoot + "/lab-learner-identity.js";
 
+const labExperienceRuntimePath =
+  labRoot + "/lab-experience-runtime.js";
+
 assert.ok(
   fs.existsSync(htmlPath),
   "human Semantic Surface lab route must exist"
@@ -42,6 +45,11 @@ assert.ok(
 assert.ok(
   fs.existsSync(labIdentityPath),
   "human lab must own an explicit lab-only learner identity fixture"
+);
+
+assert.ok(
+  fs.existsSync(labExperienceRuntimePath),
+  "human lab must own an explicit lab-only Experience runtime fixture"
 );
 
 const html =
@@ -69,6 +77,7 @@ for (const src of [
   "../../js/verb-explorer-adaptive-profile-source.js",
   "../../js/verb-explorer-adaptive-evidence-profile-source.js",
   "../../js/verb-explorer-adaptive-session-source.js",
+  "lab-experience-runtime.js",
   "../../js/verb-explorer-adaptive-state-bridge.js",
   "../../js/verb-explorer-adaptive-coordinator.js",
   "../../js/verb-explorer-adaptive-coordinator-config.js",
@@ -166,6 +175,11 @@ const adaptiveEvidenceProfileSourceIndex =
 const adaptiveSessionSourceIndex =
   html.indexOf(
     'src="../../js/verb-explorer-adaptive-session-source.js"'
+  );
+
+const labExperienceRuntimeIndex =
+  html.indexOf(
+    'src="lab-experience-runtime.js"'
   );
 
 const adaptiveStateBridgeIndex =
@@ -309,6 +323,11 @@ assert.ok(
 );
 
 assert.ok(
+  labExperienceRuntimeIndex >= 0,
+  "human lab must load its explicit lab-only Experience runtime fixture"
+);
+
+assert.ok(
   adaptiveStateBridgeIndex >= 0,
   "human lab must load Adaptive State Bridge"
 );
@@ -341,6 +360,11 @@ assert.ok(
 assert.ok(
   adaptiveComposerIndex > adaptiveSessionSourceIndex,
   "Adaptive Composer must load after Adaptive Session Source"
+);
+
+assert.ok(
+  adaptiveStateBridgeIndex > labExperienceRuntimeIndex,
+  "Adaptive State Bridge must load after the lab-only Experience runtime fixture"
 );
 
 assert.ok(
@@ -447,6 +471,7 @@ for (const specialistIndex of [
   adaptiveProfileSourceIndex,
   adaptiveEvidenceProfileSourceIndex,
   adaptiveSessionSourceIndex,
+  labExperienceRuntimeIndex,
   adaptiveStateBridgeIndex,
   adaptiveCoordinatorIndex,
   adaptiveCoordinatorConfigIndex,
@@ -490,6 +515,44 @@ assert.equal(
   ),
   false,
   "lab identity fixture must not become persistence, login, cookie, or URL identity authority"
+);
+
+const labExperienceRuntime =
+  fs.readFileSync(
+    labExperienceRuntimePath,
+    "utf8"
+  );
+
+assert.ok(
+  labExperienceRuntime.includes(
+    "SIYAYOVerbExplorerResumeRuntime"
+  ),
+  "lab Experience runtime fixture must satisfy only the existing ResumeRuntime boundary"
+);
+
+assert.ok(
+  labExperienceRuntime.includes(
+    "captureContext"
+  ),
+  "lab Experience runtime fixture must expose captureContext for the Adaptive State Bridge"
+);
+
+assert.ok(
+  labExperienceRuntime.includes(
+    "currentExperienceId"
+  ) &&
+  labExperienceRuntime.includes(
+    "shopping-for-dinner"
+  ),
+  "lab Experience runtime fixture must explicitly declare the controlled shopping-for-dinner state"
+);
+
+assert.equal(
+  /StoryAssessmentLeaf|assessmentLeaf|assessmentTarget|SemanticSurface|surfaceId|targetWords|fetch\s*\(|chapter\.json/.test(
+    labExperienceRuntime
+  ),
+  false,
+  "lab Experience runtime fixture must not infer Experience from Story, Leaf, Surface, target words, or chapter data"
 );
 
 const labStyle =
