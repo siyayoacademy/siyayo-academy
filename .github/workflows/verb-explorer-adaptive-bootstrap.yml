@@ -115,6 +115,8 @@ jobs:
         run: node scripts/test-adaptive-determiner-use-transfer-probe-attempt-boundary.js
       - name: Test determiner-use transfer Green Pass contract Cycle
         run: node scripts/test-determiner-use-transfer-contract-cycle.js
+      - name: Test longitudinal Green Pass contract closure evidence
+        run: node scripts/test-adaptive-contract-closure-evidence-source.js
       - name: Test determiner-use probe presentation boundary
         run: node scripts/test-adaptive-determiner-use-probe-presenter.js
       - name: Test determiner-use probe browser click boundary
