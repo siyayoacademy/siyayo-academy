@@ -105,6 +105,8 @@ jobs:
         run: node scripts/test-adaptive-determiner-use-transfer-probe-result.js
       - name: Test determiner-use transfer support authority
         run: node scripts/test-adaptive-determiner-use-transfer-probe-support-sensor.js
+      - name: Test determiner-use transfer Evidence bridge
+        run: node scripts/test-adaptive-determiner-use-transfer-probe-evidence-bridge.js
       - name: Test determiner-use probe presentation boundary
         run: node scripts/test-adaptive-determiner-use-probe-presenter.js
       - name: Test determiner-use probe browser click boundary
