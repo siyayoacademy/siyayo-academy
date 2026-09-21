@@ -153,7 +153,12 @@ sandbox.AdaptiveChoicePresenter = Object.freeze({
     return presentation;
   }
 });
-const resolver = Object.freeze({ id: 'canonical-choice-resolver' });
+const resolver = Object.freeze({
+  id: 'canonical-choice-resolver',
+  resolveChoice() {
+    throw new Error('stub resolver must be delegated through the Resolution Presenter');
+  }
+});
 sandbox.SIYAYOChoiceResolver = resolver;
 sandbox.AdaptiveChoiceResolutionPresenter = Object.freeze({
   present(receivedContext, candidateId, language, receivedResolver) {
