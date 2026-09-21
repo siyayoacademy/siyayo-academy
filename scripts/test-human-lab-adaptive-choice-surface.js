@@ -46,6 +46,16 @@ const feedback = {
   }
 };
 let submitCalls = 0;
+let submitted = null;
+const coordinatedResult = Object.freeze({
+  cycleResult: Object.freeze({
+    recommendation: Object.freeze({ action: 'continue-assessment' }),
+    advanceSelection: null,
+    nextContext: Object.freeze({ currentExperience: 'shopping-for-dinner' })
+  }),
+  convergenceResult: null,
+  dispatchResult: null
+});
 
 const document = {
   addEventListener(type, handler) {
@@ -145,8 +155,10 @@ sandbox.SIYAYOVerbExplorerAdaptiveCoordinator = Object.freeze({
   snapshot() {
     return { session };
   },
-  submitChoice() {
+  submitChoice(choice, target, learnerEvent) {
     submitCalls += 1;
+    submitted = { choice, target, learnerEvent };
+    return coordinatedResult;
   }
 });
 let observedState = {
@@ -267,7 +279,7 @@ wrapped.select(slide).then(result => {
   assert.match(mounted[0].html, /data-choice-select="aged-strong-cheese"/);
   assert.match(mounted[0].html, /Which cheese should we choose\?/);
   assert.match(mounted[0].html, /id="choiceFeedback"/);
-  assert.equal(submitCalls, 0, 'surface mounting must not submit to Coordinator or Cycle');
+  assert.equal(submitCalls, 0, 'surface mounting must not submit before a learner click');
   assert.equal(
     /preferredTraits|contextTraits|correctAlternativeId/.test(mounted[0].html),
     false,
@@ -319,10 +331,22 @@ wrapped.select(slide).then(result => {
     false,
     'Evidence must not contain or fabricate Attempt'
   );
-  assert.equal(submitCalls, 0, 'Evidence observation must still stop before Coordinator submission');
+  assert.equal(submitCalls, 1, 'one learner click must reach the configured Coordinator exactly once');
+  assert.ok(submitted);
+  assert.equal(submitted.choice, 'fresh-mild-cheese');
+  assert.strictEqual(submitted.target, target);
+  assert.strictEqual(submitted.learnerEvent, observed, 'the already-observed LearnerEvent must be reused');
+  assert.strictEqual(
+    sandbox.SIYAYOHumanLabAdaptiveChoiceSurface.getLastCycleResult(),
+    coordinatedResult,
+    'Human Lab must expose the Coordinator envelope for inspection'
+  );
+  assert.equal(coordinatedResult.cycleResult.recommendation.action, 'continue-assessment');
+  assert.equal(coordinatedResult.cycleResult.advanceSelection, null);
+  assert.equal(coordinatedResult.cycleResult.nextContext.currentExperience, 'shopping-for-dinner');
 
   console.log(
-    'Human Lab adaptive Choice surface: PASS — real click grounds E/L/Q/C, renders semantic resolution, and yields grounded choice-function Evidence while the Lab still stops before Attempt/Coordinator/Cycle.'
+    'Human Lab adaptive Choice surface: PASS — one real click grounds E/L/Q/C, renders Evidence, reuses one LearnerEvent through Coordinator, exposes one Cycle result, and authorizes no NEXT.'
   );
 }).catch(error => {
   console.error(error);
