@@ -116,7 +116,7 @@ function mount(slide){
     var installed=browserWire.install(presentation,{
       document:root.document,
       learnerEvents:learnerEvents,
-      onEvent:function(event){
+      onEvent:function(event,target){
         var runtime=root.SIYAYOVerbExplorerResumeRuntime;
         if(!runtime||typeof runtime.observeChoice!=='function')return;
         if(runtime.observeChoice(event)!==true)return;
