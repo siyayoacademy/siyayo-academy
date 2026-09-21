@@ -76,6 +76,7 @@ for (const src of [
   "../../js/leaf-canonical-skill-bridge.js",
   "../../js/green-pass-profile.js",
   "../../js/verb-explorer-adaptive-profile-source.js",
+  "../../js/adaptive-evidence-profile.js",
   "../../js/verb-explorer-adaptive-evidence-profile-source.js",
   "../../js/verb-explorer-adaptive-session-source.js",
   "lab-experience-runtime.js",
@@ -171,6 +172,11 @@ const greenPassProfileIndex =
 const adaptiveProfileSourceIndex =
   html.indexOf(
     'src="../../js/verb-explorer-adaptive-profile-source.js"'
+  );
+
+const adaptiveEvidenceProfileIndex =
+  html.indexOf(
+    'src="../../js/adaptive-evidence-profile.js"'
   );
 
 const adaptiveEvidenceProfileSourceIndex =
@@ -324,6 +330,11 @@ assert.ok(
 );
 
 assert.ok(
+  adaptiveEvidenceProfileIndex >= 0,
+  "human lab must load canonical Adaptive Evidence Profile API"
+);
+
+assert.ok(
   adaptiveEvidenceProfileSourceIndex >= 0,
   "human lab must load Adaptive Evidence Profile Source"
 );
@@ -366,6 +377,11 @@ assert.ok(
 assert.ok(
   adaptiveComposerIndex > adaptiveProfileSourceIndex,
   "Adaptive Composer must load after Adaptive Profile Source"
+);
+
+assert.ok(
+  adaptiveEvidenceProfileSourceIndex > adaptiveEvidenceProfileIndex,
+  "Adaptive Evidence Profile Source must load after canonical Adaptive Evidence Profile API"
 );
 
 assert.ok(
@@ -486,6 +502,7 @@ for (const specialistIndex of [
   leafCanonicalSkillBridgeIndex,
   greenPassProfileIndex,
   adaptiveProfileSourceIndex,
+  adaptiveEvidenceProfileIndex,
   adaptiveEvidenceProfileSourceIndex,
   adaptiveSessionSourceIndex,
   labExperienceRuntimeIndex,
