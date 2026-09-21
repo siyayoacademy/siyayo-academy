@@ -1,5 +1,6 @@
 const assert = require('node:assert/strict');
 const Router = require('../js/adaptive-learning-router.js');
+const PedagogicalResonance = require('../js/pedagogical-resonance.js');
 const corpus = require('../data/learning/experience-seeds.json');
 
 const modal = Router.route({ action: 'reinforce', skill: 'en:verbs:modal-core' });
@@ -85,16 +86,29 @@ assert.deepEqual(eligibleWhich.resonance.matched.perspectives, ['debating']);
 assert.notEqual(eligibleWhich.action, 'advance', 'a meaningful opportunity is not an advance order');
 
 // 08.18d: eligible internal opportunity inspection is bounded to the current Experience.
-// Shopping has the canonical WHICH + choose + debating resonance (score 5).
-// Preparing Dinner has only a weak partial resonance, so a threshold of 2 distinguishes
-// a meaningful current opportunity from a stronger opportunity that exists elsewhere.
+// Derive the boundary from the live corpus instead of freezing a historical score.
+// The stronger Shopping resonance must not leak into Preparing Dinner.
+const shoppingExperience = corpus.items.find(item => item.id === 'shopping-for-dinner');
+const preparingExperience = corpus.items.find(item => item.id === 'preparing-dinner');
+const shoppingWhichScore = PedagogicalResonance.scoreExperience(shoppingExperience, 'which.use.determiner').score;
+const preparingWhichScore = PedagogicalResonance.scoreExperience(preparingExperience, 'which.use.determiner').score;
+assert.ok(
+  shoppingWhichScore > preparingWhichScore,
+  'fixture must preserve a stronger WHICH opportunity in Shopping than in Preparing Dinner'
+);
+const currentBoundaryThreshold = preparingWhichScore + 1;
+assert.ok(
+  shoppingWhichScore >= currentBoundaryThreshold,
+  'derived threshold must still admit the stronger outside-current opportunity'
+);
+
 const eligibleWhichOutsideCurrent = Router.route(
   { action: 'continue-assessment', skill: 'which.use.determiner', reason: 'green-pass-eligible-awaiting-route' },
   {
     currentExperience: 'preparing-dinner',
     contractEligible: true,
     experiences: corpus.items,
-    minimumResonanceScore: 2
+    minimumResonanceScore: currentBoundaryThreshold
   }
 );
 assert.equal(eligibleWhichOutsideCurrent.action, 'continue-assessment');
@@ -102,8 +116,12 @@ assert.equal(eligibleWhichOutsideCurrent.experienceId, 'preparing-dinner');
 assert.equal(eligibleWhichOutsideCurrent.focus, 'eligible-opportunity');
 assert.equal(eligibleWhichOutsideCurrent.reason, 'green-pass-eligible-awaiting-opportunity');
 assert.equal(eligibleWhichOutsideCurrent.resonance.status, 'no-resonance');
-assert.ok(eligibleWhichOutsideCurrent.resonance.score < 2, 'current Experience must stay below the meaningful-opportunity threshold');
-assert.equal(eligibleWhichOutsideCurrent.resonance.minimumScore, 2);
+assert.equal(eligibleWhichOutsideCurrent.resonance.score, preparingWhichScore);
+assert.ok(
+  eligibleWhichOutsideCurrent.resonance.score < currentBoundaryThreshold,
+  'current Experience must stay below the meaningful-opportunity threshold'
+);
+assert.equal(eligibleWhichOutsideCurrent.resonance.minimumScore, currentBoundaryThreshold);
 assert.notEqual(eligibleWhichOutsideCurrent.action, 'advance');
 
 const shoppingOnly = Router.currentExperienceScope(corpus.items, 'shopping-for-dinner');
