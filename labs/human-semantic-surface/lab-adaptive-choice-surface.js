@@ -2,7 +2,7 @@
 // After an explicit Assessment Leaf Select has grounded one adaptive Session,
 // project that Session into canonical Choice alternatives for human response.
 // This wrapper does not create Attempt, evaluate correctness, submit to Coordinator/Cycle,
-// grant Green Pass, authorize NEXT, or infer Skill/Experience.
+// grant Green Pass, authorize progression, or infer Skill/Experience.
 (function(root){
 'use strict';
 
