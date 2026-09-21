@@ -27,7 +27,7 @@ const feedback = {
 
     if (selector.includes('is-contextual')) {
       if (!/choice-feedback-card[^"]*is-contextual/.test(this.innerHTML)) return null;
-      const match = this.innerHTML.match(/<p>\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*<\/p>/);
+      const match = this.innerHTML.match(/<p[^>]*>\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*<\/p>/);
       return {
         classList: {
           contains(name) {
