@@ -110,6 +110,22 @@ for (const src of [
   "../../js/verb-explorer-choice-resolution-reader.js",
   "../../js/choice-evidence-evaluator.js",
   "../../js/verb-explorer-choice-evidence-bridge.js",
+  "../../js/choice-support-sensor.js",
+  "lab-choice-support-runtime.js",
+  "../../js/choice-attempt-ownership.js",
+  "../../js/choice-attempt-boundary.js",
+  "../../js/verb-explorer-choice-attempt-factory.js",
+  "../../js/adaptive-advance-selector.js",
+  "../../js/adaptive-wait-classifier.js",
+  "../../js/adaptive-learner-agency.js",
+  "../../js/adaptive-wait-release.js",
+  "../../js/adaptive-resume-eligibility.js",
+  "../../js/adaptive-agency-release.js",
+  "../../js/adaptive-agency-resume.js",
+  "../../js/adaptive-resume-context.js",
+  "../../js/adaptive-agency-resume-context.js",
+  "../../js/adaptive-learning-cycle.js",
+  "../../js/verb-explorer-adaptive-controller.js",
   "../../js/verb-explorer-learner-event.js",
   "../../js/adaptive-choice-browser-wire.js",
   "lab-adaptive-choice-surface.js",
@@ -326,6 +342,86 @@ const choiceEvidenceEvaluatorIndex =
 const choiceEvidenceBridgeIndex =
   html.indexOf(
     'src="../../js/verb-explorer-choice-evidence-bridge.js"'
+  );
+
+const choiceSupportSensorIndex =
+  html.indexOf(
+    'src="../../js/choice-support-sensor.js"'
+  );
+
+const labChoiceSupportRuntimeIndex =
+  html.indexOf(
+    'src="lab-choice-support-runtime.js"'
+  );
+
+const choiceAttemptOwnershipIndex =
+  html.indexOf(
+    'src="../../js/choice-attempt-ownership.js"'
+  );
+
+const choiceAttemptBoundaryIndex =
+  html.indexOf(
+    'src="../../js/choice-attempt-boundary.js"'
+  );
+
+const choiceAttemptFactoryIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-choice-attempt-factory.js"'
+  );
+
+const adaptiveAdvanceSelectorIndex =
+  html.indexOf(
+    'src="../../js/adaptive-advance-selector.js"'
+  );
+
+const adaptiveWaitClassifierIndex =
+  html.indexOf(
+    'src="../../js/adaptive-wait-classifier.js"'
+  );
+
+const adaptiveLearnerAgencyIndex =
+  html.indexOf(
+    'src="../../js/adaptive-learner-agency.js"'
+  );
+
+const adaptiveWaitReleaseIndex =
+  html.indexOf(
+    'src="../../js/adaptive-wait-release.js"'
+  );
+
+const adaptiveResumeEligibilityIndex =
+  html.indexOf(
+    'src="../../js/adaptive-resume-eligibility.js"'
+  );
+
+const adaptiveAgencyReleaseIndex =
+  html.indexOf(
+    'src="../../js/adaptive-agency-release.js"'
+  );
+
+const adaptiveAgencyResumeIndex =
+  html.indexOf(
+    'src="../../js/adaptive-agency-resume.js"'
+  );
+
+const adaptiveResumeContextIndex =
+  html.indexOf(
+    'src="../../js/adaptive-resume-context.js"'
+  );
+
+const adaptiveAgencyResumeContextIndex =
+  html.indexOf(
+    'src="../../js/adaptive-agency-resume-context.js"'
+  );
+
+const adaptiveLearningCycleIndex =
+  html.indexOf(
+    'src="../../js/adaptive-learning-cycle.js"'
+  );
+
+const adaptiveControllerIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-controller.js"'
   );
 
 const learnerEventIndex =
@@ -689,6 +785,69 @@ assert.ok(
 );
 
 assert.ok(
+  choiceSupportSensorIndex >= 0,
+  "human lab must load canonical Choice Support Sensor"
+);
+
+assert.ok(
+  labChoiceSupportRuntimeIndex > choiceSupportSensorIndex,
+  "Human Lab support runtime must instantiate after Choice Support Sensor factory"
+);
+
+assert.ok(
+  choiceAttemptOwnershipIndex > choiceEvidenceBridgeIndex,
+  "Choice Attempt Ownership must load after Choice Evidence Bridge"
+);
+
+assert.ok(
+  choiceAttemptBoundaryIndex > choiceAttemptOwnershipIndex,
+  "Choice Attempt Boundary must load after Choice Attempt Ownership"
+);
+
+assert.ok(
+  choiceAttemptFactoryIndex > choiceAttemptBoundaryIndex,
+  "Choice Attempt Factory must load after Choice Attempt Boundary"
+);
+
+assert.ok(
+  adaptiveWaitClassifierIndex > adaptiveAdvanceSelectorIndex,
+  "Adaptive Wait Classifier must load after Adaptive Advance Selector"
+);
+
+assert.ok(
+  adaptiveWaitReleaseIndex > adaptiveLearnerAgencyIndex,
+  "Adaptive Wait Release must load after Adaptive Learner Agency"
+);
+
+assert.ok(
+  adaptiveAgencyReleaseIndex > adaptiveWaitReleaseIndex,
+  "Adaptive Agency Release must load after learner agency/wait release"
+);
+
+assert.ok(
+  adaptiveAgencyResumeIndex > adaptiveResumeEligibilityIndex &&
+  adaptiveAgencyResumeIndex > adaptiveAgencyReleaseIndex,
+  "Adaptive Agency Resume must load after release and resume eligibility"
+);
+
+assert.ok(
+  adaptiveAgencyResumeContextIndex > adaptiveAgencyResumeIndex &&
+  adaptiveAgencyResumeContextIndex > adaptiveResumeContextIndex,
+  "Adaptive Agency Resume Context must load after agency resume and resume context"
+);
+
+assert.ok(
+  adaptiveLearningCycleIndex > adaptiveAgencyResumeContextIndex &&
+  adaptiveLearningCycleIndex > adaptiveWaitClassifierIndex,
+  "Adaptive Learning Cycle must load after its runtime dependencies"
+);
+
+assert.ok(
+  adaptiveControllerIndex > adaptiveLearningCycleIndex,
+  "Adaptive Controller must load after Adaptive Learning Cycle"
+);
+
+assert.ok(
   learnerEventIndex >= 0,
   "human lab must load canonical Verb Explorer LearnerEvent boundary"
 );
@@ -757,6 +916,22 @@ for (const specialistIndex of [
   choiceResolutionReaderIndex,
   choiceEvidenceEvaluatorIndex,
   choiceEvidenceBridgeIndex,
+  choiceSupportSensorIndex,
+  labChoiceSupportRuntimeIndex,
+  choiceAttemptOwnershipIndex,
+  choiceAttemptBoundaryIndex,
+  choiceAttemptFactoryIndex,
+  adaptiveAdvanceSelectorIndex,
+  adaptiveWaitClassifierIndex,
+  adaptiveLearnerAgencyIndex,
+  adaptiveWaitReleaseIndex,
+  adaptiveResumeEligibilityIndex,
+  adaptiveAgencyReleaseIndex,
+  adaptiveAgencyResumeIndex,
+  adaptiveResumeContextIndex,
+  adaptiveAgencyResumeContextIndex,
+  adaptiveLearningCycleIndex,
+  adaptiveControllerIndex,
   learnerEventIndex,
   adaptiveChoiceBrowserWireIndex,
   labAdaptiveChoiceSurfaceIndex
@@ -845,12 +1020,17 @@ assert.ok(
   "lab Adaptive Choice surface must materialize the canonical response hook"
 );
 
+assert.ok(
+  labAdaptiveChoiceSurface.includes("coordinator.submitChoice"),
+  "lab Adaptive Choice surface must hand the observed event to the configured Coordinator"
+);
+
 assert.equal(
-  /submitChoice|AdaptiveLearningCycle|greenPass|NEXT/.test(
+  /AdaptiveLearningCycle|greenPass|NEXT/.test(
     labAdaptiveChoiceSurface
   ),
   false,
-  "lab Adaptive Choice surface mounting must remain presentation-only"
+  "lab Adaptive Choice surface must not call Cycle/Green Pass/progression directly"
 );
 
 const labStyle =
