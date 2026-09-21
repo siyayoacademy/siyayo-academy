@@ -2,6 +2,7 @@
 (function(root){
   var choiceOccurrenceSequence=0;
   var contrastProbeOccurrenceSequence=0;
+  var determinerUseProbeOccurrenceSequence=0;
 
   function nextChoiceOccurrenceId(){
     choiceOccurrenceSequence+=1;
@@ -11,6 +12,11 @@
   function nextContrastProbeOccurrenceId(){
     contrastProbeOccurrenceSequence+=1;
     return 'contrast-probe-select:'+contrastProbeOccurrenceSequence;
+  }
+
+  function nextDeterminerUseProbeOccurrenceId(){
+    determinerUseProbeOccurrenceSequence+=1;
+    return 'determiner-use-probe-select:'+determinerUseProbeOccurrenceSequence;
   }
 
   function fromChoiceSelect(choice, state){
@@ -48,6 +54,32 @@
     });
   }
 
+  function fromDeterminerUseProbeSelect(choice, state){
+    if(!choice) return null;
+    state=state||{};
+    if(
+      !state.currentExperienceId||
+      state.dimension!=='determiner-use'||
+      state.targetForm!=='which'||
+      !state.targetNoun
+    ) return null;
+
+    return Object.freeze({
+      observed:true,
+      actor:'learner',
+      relevantToWait:true,
+      intent:'continue',
+      type:'learner-response',
+      source:'determiner-use-probe-select',
+      occurrenceId:nextDeterminerUseProbeOccurrenceId(),
+      choice:String(choice),
+      experienceId:String(state.currentExperienceId),
+      dimension:'determiner-use',
+      targetForm:'which',
+      targetNoun:String(state.targetNoun)
+    });
+  }
+
   function fromSentenceBuilt(composition, state){
     composition=composition||{};
     state=state||{};
@@ -70,6 +102,7 @@
   root.SIYAYOVerbExplorerLearnerEvent=Object.freeze({
     fromChoiceSelect:fromChoiceSelect,
     fromContrastProbeSelect:fromContrastProbeSelect,
+    fromDeterminerUseProbeSelect:fromDeterminerUseProbeSelect,
     fromSentenceBuilt:fromSentenceBuilt
   });
 })(typeof globalThis!=='undefined'?globalThis:this);
