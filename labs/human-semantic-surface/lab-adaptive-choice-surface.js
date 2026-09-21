@@ -46,9 +46,18 @@ function renderAlternative(alternative){
     '<button class="human-lab-adaptive-choice" type="button" data-choice-select="',
     escapeHtml(alternative.id),
     '">',
-    '<span class="human-lab-adaptive-choice-en">',escapeHtml(alternative.response.en||''),'</span>',
-    '<span class="human-lab-adaptive-choice-es">',escapeHtml(alternative.response.es||''),'</span>',
-    '<span class="human-lab-adaptive-choice-pt">',escapeHtml(alternative.response.pt||''),'</span>',
+    '<span class="human-lab-choice-line human-lab-choice-line-en">',
+    '<span class="human-lab-choice-lang-code">EN</span>',
+    '<span class="human-lab-choice-copy">',escapeHtml(alternative.response.en||''),'</span>',
+    '</span>',
+    '<span class="human-lab-choice-line human-lab-choice-line-es">',
+    '<span class="human-lab-choice-lang-code">ES</span>',
+    '<span class="human-lab-choice-copy">',escapeHtml(alternative.response.es||''),'</span>',
+    '</span>',
+    '<span class="human-lab-choice-line human-lab-choice-line-pt">',
+    '<span class="human-lab-choice-lang-code">PT</span>',
+    '<span class="human-lab-choice-copy">',escapeHtml(alternative.response.pt||''),'</span>',
+    '</span>',
     '</button>'
   ].join('');
 }
@@ -139,17 +148,29 @@ function mount(slide){
         );
         if(!resolution)return;
 
+        var score=Number(resolution.contextualResponse.score);
+        var possibleScore=Number(resolution.contextualResponse.possibleScore);
+        var ratio=possibleScore>0?Math.max(0,Math.min(1,score/possibleScore)):0;
+        var scoreAngle=Math.round(ratio*360);
+
         feedback.innerHTML=[
-          '<div class="choice-feedback-card ',resolution.canonicalForm.valid?'is-valid':'is-invalid','">',
-          '<span>Canonical Form</span>',
-          '<strong>',escapeHtml(resolution.canonicalForm.status||''),'</strong>',
-          '<p>',escapeHtml(resolution.canonicalForm.response||''),'</p>',
+          '<section class="semantic-feedback-shell" aria-label="Semantic feedback">',
+          '<div class="semantic-feedback-heading">Semantic Feedback</div>',
+          '<div class="semantic-feedback-grid">',
+          '<article class="choice-feedback-card choice-feedback-card--canonical ',resolution.canonicalForm.valid?'is-valid':'is-invalid','">',
+          '<span class="choice-feedback-kicker">Canonical Form</span>',
+          '<strong class="choice-feedback-status"><span class="choice-feedback-status-mark" aria-hidden="true">✓</span>',escapeHtml(resolution.canonicalForm.status||''),'</strong>',
+          '<p class="choice-feedback-copy">',escapeHtml(resolution.canonicalForm.response||''),'</p>',
+          '</article>',
+          '<article class="choice-feedback-card choice-feedback-card--contextual is-contextual">',
+          '<span class="choice-feedback-kicker">Contextual Response</span>',
+          '<strong class="choice-feedback-status"><span class="choice-feedback-status-mark" aria-hidden="true">◎</span>',escapeHtml(resolution.contextualResponse.status||''),'</strong>',
+          '<div class="choice-feedback-score-ring" style="--score-angle:',escapeHtml(scoreAngle),'deg" aria-label="Context score ',escapeHtml(score),' of ',escapeHtml(possibleScore),'">',
+          '<span class="choice-feedback-score-value">',escapeHtml(score),' / ',escapeHtml(possibleScore),'</span>',
           '</div>',
-          '<div class="choice-feedback-card is-contextual">',
-          '<span>Contextual Response</span>',
-          '<strong>',escapeHtml(resolution.contextualResponse.status||''),'</strong>',
-          '<p>',escapeHtml(resolution.contextualResponse.score),' / ',escapeHtml(resolution.contextualResponse.possibleScore),'</p>',
-          '</div>'
+          '</article>',
+          '</div>',
+          '</section>'
         ].join('');
 
         lastObservedEvent=event;
