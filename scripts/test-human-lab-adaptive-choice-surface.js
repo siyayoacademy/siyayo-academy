@@ -278,6 +278,12 @@ wrapped.select(slide).then(result => {
   assert.match(mounted[0].html, /data-choice-select="fresh-mild-cheese"/);
   assert.match(mounted[0].html, /data-choice-select="aged-strong-cheese"/);
   assert.match(mounted[0].html, /Which cheese should we choose\?/);
+  assert.match(mounted[0].html, /human-lab-choice-line-en/);
+  assert.match(mounted[0].html, /human-lab-choice-line-es/);
+  assert.match(mounted[0].html, /human-lab-choice-line-pt/);
+  assert.match(mounted[0].html, /human-lab-choice-lang-code[^>]*>EN</);
+  assert.match(mounted[0].html, /human-lab-choice-lang-code[^>]*>ES</);
+  assert.match(mounted[0].html, /human-lab-choice-lang-code[^>]*>PT</);
   assert.match(mounted[0].html, /id="choiceFeedback"/);
   assert.equal(submitCalls, 0, 'surface mounting must not submit before a learner click');
   assert.equal(
@@ -314,6 +320,14 @@ wrapped.select(slide).then(result => {
   assert.match(feedback.innerHTML, /4 \/ 4/);
   assert.match(feedback.innerHTML, /Valid canonical candidate/);
   assert.match(feedback.innerHTML, /Best contextual fit/);
+  assert.match(feedback.innerHTML, /semantic-feedback-shell/);
+  assert.match(feedback.innerHTML, /semantic-feedback-grid/);
+  assert.match(feedback.innerHTML, /choice-feedback-card--canonical/);
+  assert.match(feedback.innerHTML, /choice-feedback-card--contextual/);
+  assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>Canonical Form</);
+  assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>Contextual Response</);
+  assert.match(feedback.innerHTML, /choice-feedback-score-ring/);
+  assert.match(feedback.innerHTML, /--score-angle:360deg/);
 
   const evidence = sandbox.SIYAYOVerbExplorerChoiceEvidenceBridge.read(
     groundedState,
@@ -345,8 +359,21 @@ wrapped.select(slide).then(result => {
   assert.equal(coordinatedResult.cycleResult.advanceSelection, null);
   assert.equal(coordinatedResult.cycleResult.nextContext.currentExperience, 'shopping-for-dinner');
 
+  const labCss = fs.readFileSync(
+    'labs/human-semantic-surface/lab.css',
+    'utf8'
+  );
+  assert.match(labCss, /\.human-lab-adaptive-choice-options\s*\{[\s\S]*display:\s*grid/);
+  assert.match(labCss, /\.semantic-feedback-grid\s*\{[\s\S]*grid-template-columns/);
+  assert.match(labCss, /backdrop-filter:/);
+  assert.match(labCss, /conic-gradient\(/);
+  assert.match(labCss, /:focus-visible/);
+  assert.match(labCss, /@media\s*\(max-width:\s*720px\)/);
+  assert.match(labCss, /@media\s*\(prefers-reduced-motion:\s*reduce\)/);
+  assert.match(labCss, /@keyframes\s+semanticReveal/);
+
   console.log(
-    'Human Lab adaptive Choice surface: PASS — one real click grounds E/L/Q/C, renders Evidence, reuses one LearnerEvent through Coordinator, exposes one Cycle result, and authorizes no NEXT.'
+    'Human Lab adaptive Choice surface: PASS — one real click keeps the homologated adaptive path and renders trilingual Choice plates plus responsive dual semantic feedback with circular score and reduced-motion support.'
   );
 }).catch(error => {
   console.error(error);
