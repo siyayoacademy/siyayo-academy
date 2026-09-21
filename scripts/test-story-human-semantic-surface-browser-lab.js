@@ -86,6 +86,7 @@ for (const src of [
   "../../js/verb-explorer-adaptive-state-bridge.js",
   "../../js/verb-explorer-adaptive-coordinator.js",
   "../../js/verb-explorer-choice-attempt-provider.js",
+  "../../js/verb-explorer-adaptive-context-source.js",
   "../../js/verb-explorer-adaptive-coordinator-config.js",
   "../../js/verb-explorer-adaptive-composer.js",
   "../../js/verb-explorer-adaptive-live-start.js",
@@ -226,6 +227,11 @@ const adaptiveCoordinatorIndex =
 const choiceAttemptProviderIndex =
   html.indexOf(
     'src="../../js/verb-explorer-choice-attempt-provider.js"'
+  );
+
+const adaptiveContextSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-context-source.js"'
   );
 
 const adaptiveCoordinatorConfigIndex =
@@ -404,6 +410,11 @@ assert.ok(
 );
 
 assert.ok(
+  adaptiveContextSourceIndex >= 0,
+  "human lab must load grounded Adaptive Context Source"
+);
+
+assert.ok(
   adaptiveCoordinatorConfigIndex >= 0,
   "human lab must load Adaptive Coordinator Config"
 );
@@ -469,8 +480,13 @@ assert.ok(
 );
 
 assert.ok(
-  adaptiveCoordinatorConfigIndex > choiceAttemptProviderIndex,
-  "Adaptive Coordinator Config must load after grounded Choice Attempt Provider"
+  adaptiveContextSourceIndex > choiceAttemptProviderIndex,
+  "Adaptive Context Source must load after grounded Choice Attempt Provider"
+);
+
+assert.ok(
+  adaptiveCoordinatorConfigIndex > adaptiveContextSourceIndex,
+  "Adaptive Coordinator Config must load after grounded Adaptive Context Source"
 );
 
 assert.ok(
@@ -576,6 +592,7 @@ for (const specialistIndex of [
   adaptiveStateBridgeIndex,
   adaptiveCoordinatorIndex,
   choiceAttemptProviderIndex,
+  adaptiveContextSourceIndex,
   adaptiveCoordinatorConfigIndex,
   adaptiveComposerIndex,
   adaptiveLiveStartIndex,
