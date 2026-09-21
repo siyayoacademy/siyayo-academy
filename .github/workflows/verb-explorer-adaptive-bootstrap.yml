@@ -125,6 +125,8 @@ jobs:
         run: node scripts/test-verb-explorer-next-session-activation.js
       - name: Test post-transition Session event ownership
         run: node scripts/test-verb-explorer-post-transition-session-ownership.js
+      - name: Test live learner-owned NEXT wire
+        run: node scripts/test-verb-explorer-live-next-wire.js
       - name: Test determiner-use probe presentation boundary
         run: node scripts/test-adaptive-determiner-use-probe-presenter.js
       - name: Test determiner-use probe browser click boundary
