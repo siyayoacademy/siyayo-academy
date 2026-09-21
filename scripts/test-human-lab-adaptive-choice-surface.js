@@ -132,7 +132,36 @@ const definition = Object.freeze({
   function: Object.freeze({ communicativeIntention: 'choice' })
 });
 
-const choiceContext = Object.freeze({ id: 'choice-context' });
+const choiceContext = Object.freeze({
+  preferredTraits: Object.freeze([
+    'fresh',
+    'mild',
+    'pairs-with-salmon',
+    'suitable-for-special-dinner'
+  ]),
+  canonicalCandidates: Object.freeze([
+    Object.freeze({
+      id: 'fresh-mild-cheese',
+      response: presentation.alternatives[0].response,
+      contextTraits: Object.freeze([
+        'fresh',
+        'mild',
+        'pairs-with-salmon',
+        'suitable-for-special-dinner'
+      ])
+    }),
+    Object.freeze({
+      id: 'aged-strong-cheese',
+      response: presentation.alternatives[1].response,
+      contextTraits: Object.freeze([
+        'aged',
+        'strong',
+        'overpowers-salmon',
+        'suitable-for-cheese-board'
+      ])
+    })
+  ])
+});
 const experiences = Object.freeze([{ id: 'shopping-for-dinner' }]);
 
 const originalSelection = Object.freeze({
@@ -225,6 +254,27 @@ const resolver = Object.freeze({
   id: 'canonical-choice-resolver',
   resolveChoice() {
     throw new Error('stub resolver must be delegated through the Resolution Presenter');
+  },
+  rankCandidates(receivedContext) {
+    assert.strictEqual(receivedContext, choiceContext);
+    return [
+      Object.freeze({
+        id: 'fresh-mild-cheese',
+        response: presentation.alternatives[0].response,
+        contextTraits: choiceContext.canonicalCandidates[0].contextTraits,
+        matchedTraits: choiceContext.preferredTraits,
+        score: 4,
+        possibleScore: 4
+      }),
+      Object.freeze({
+        id: 'aged-strong-cheese',
+        response: presentation.alternatives[1].response,
+        contextTraits: choiceContext.canonicalCandidates[1].contextTraits,
+        matchedTraits: Object.freeze([]),
+        score: 0,
+        possibleScore: 4
+      })
+    ];
   }
 });
 sandbox.SIYAYOChoiceResolver = resolver;
@@ -346,14 +396,35 @@ wrapped.select(slide).then(result => {
   assert.match(feedback.innerHTML, /choice-feedback-card[^"]*is-valid/);
   assert.match(feedback.innerHTML, /choice-feedback-card[^"]*is-contextual/);
   assert.match(feedback.innerHTML, /4 \/ 4/);
-  assert.match(feedback.innerHTML, /Valid canonical candidate/);
-  assert.match(feedback.innerHTML, /Best contextual fit/);
   assert.match(feedback.innerHTML, /semantic-feedback-shell/);
   assert.match(feedback.innerHTML, /semantic-feedback-grid/);
   assert.match(feedback.innerHTML, /choice-feedback-card--canonical/);
   assert.match(feedback.innerHTML, /choice-feedback-card--contextual/);
-  assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>Canonical Form</);
-  assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>Contextual Response</);
+  assert.match(feedback.innerHTML, /semantic-feedback-heading-main[^>]*>Your Choice</i);
+  assert.match(feedback.innerHTML, /Tu elección/);
+  assert.match(feedback.innerHTML, /Sua escolha/);
+  assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>English Form</i);
+  assert.match(feedback.innerHTML, /Forma en inglés/);
+  assert.match(feedback.innerHTML, /Forma em inglês/);
+  assert.match(feedback.innerHTML, /choice-feedback-target[^>]*>We should choose the fresh, mild cheese\.</);
+  assert.ok(
+    feedback.innerHTML.indexOf('choice-feedback-target') <
+      feedback.innerHTML.indexOf('This sentence works'),
+    'target sentence must visually precede the explanatory canonical status'
+  );
+  assert.match(feedback.innerHTML, /This sentence works/);
+  assert.match(feedback.innerHTML, /choice-feedback-kicker[^>]*>Best Contextual Options</i);
+  assert.match(feedback.innerHTML, /Mejores opciones contextuales/);
+  assert.match(feedback.innerHTML, /Melhores opções contextuais/);
+  assert.match(feedback.innerHTML, /context-criterion[^>]*>[\s\S]*Fresh/i);
+  assert.match(feedback.innerHTML, /Mild/);
+  assert.match(feedback.innerHTML, /Goes well with salmon/);
+  assert.match(feedback.innerHTML, /Good for a special dinner/);
+  assert.match(feedback.innerHTML, /context-option[^"]*is-selected[^"]*is-best/);
+  assert.match(feedback.innerHTML, /Fresh, mild cheese/);
+  assert.match(feedback.innerHTML, /Aged, strong cheese/);
+  assert.match(feedback.innerHTML, /context-option-score[^>]*>4 \/ 4</);
+  assert.match(feedback.innerHTML, /context-option-score[^>]*>0 \/ 4</);
   assert.match(feedback.innerHTML, /choice-feedback-score-ring/);
   assert.match(feedback.innerHTML, /--score-angle:360deg/);
   assert.equal(
@@ -377,7 +448,7 @@ wrapped.select(slide).then(result => {
   );
   assert.equal(spokenLanguage, 'en');
   assert.ok(spokenOptions);
-  assert.equal(spokenOptions.delay, 320);
+  assert.equal(spokenOptions.delay, 400);
 
   const evidence = sandbox.SIYAYOVerbExplorerChoiceEvidenceBridge.read(
     groundedState,
