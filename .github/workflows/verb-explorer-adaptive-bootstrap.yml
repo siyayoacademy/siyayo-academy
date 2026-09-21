@@ -109,6 +109,8 @@ jobs:
         run: node scripts/test-human-lab-choice-attempt.js
       - name: Test Human Lab Choice Cycle result
         run: node scripts/test-human-lab-choice-cycle-result.js
+      - name: Test Coordinator observed LearnerEvent reuse
+        run: node scripts/test-verb-explorer-coordinator-observed-event.js
       - name: Test Story Assessment Leaf action choice bridge
         run: node scripts/test-story-assessment-leaf-action-choice-bridge.js
       - name: Test Story Select Intent Assessment Leaf bridge
