@@ -11,8 +11,8 @@ const feedback = {
   innerHTML: '',
   querySelector(selector) {
     if (selector.includes('is-valid') || selector.includes('is-invalid')) {
-      if (!/choice-feedback-card is-(?:valid|invalid)/.test(this.innerHTML)) return null;
-      const valid = /choice-feedback-card is-valid/.test(this.innerHTML);
+      if (!/choice-feedback-card[^"]*is-(?:valid|invalid)/.test(this.innerHTML)) return null;
+      const valid = /choice-feedback-card[^"]*is-valid/.test(this.innerHTML);
       return {
         classList: {
           contains(name) {
@@ -26,7 +26,7 @@ const feedback = {
     }
 
     if (selector.includes('is-contextual')) {
-      if (!/choice-feedback-card is-contextual/.test(this.innerHTML)) return null;
+      if (!/choice-feedback-card[^"]*is-contextual/.test(this.innerHTML)) return null;
       const match = this.innerHTML.match(/<p>\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*<\/p>/);
       return {
         classList: {
@@ -315,8 +315,8 @@ wrapped.select(slide).then(result => {
   assert.equal(groundedState.experienceLanguage, 'en');
   assert.equal(groundedState.experienceQuestion, 'Which cheese should we choose?');
   assert.equal(groundedState.experienceChoiceCandidate, 'fresh-mild-cheese');
-  assert.match(feedback.innerHTML, /choice-feedback-card is-valid/);
-  assert.match(feedback.innerHTML, /choice-feedback-card is-contextual/);
+  assert.match(feedback.innerHTML, /choice-feedback-card[^"]*is-valid/);
+  assert.match(feedback.innerHTML, /choice-feedback-card[^"]*is-contextual/);
   assert.match(feedback.innerHTML, /4 \/ 4/);
   assert.match(feedback.innerHTML, /Valid canonical candidate/);
   assert.match(feedback.innerHTML, /Best contextual fit/);
