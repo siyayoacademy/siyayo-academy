@@ -7,11 +7,15 @@ const vm = require('node:vm');
 const listeners = [];
 const clickListeners = [];
 const mounted = [];
+const feedback = { innerHTML: '' };
 let submitCalls = 0;
 
 const document = {
   addEventListener(type, handler) {
     if (type === 'click') clickListeners.push(handler);
+  },
+  getElementById(id) {
+    return id === 'choiceFeedback' ? feedback : null;
   },
   querySelector(selector) {
     if (selector === '[data-action-choice-for="question-choice"]') {
@@ -71,6 +75,7 @@ const definition = Object.freeze({
   function: Object.freeze({ communicativeIntention: 'choice' })
 });
 
+const choiceContext = Object.freeze({ id: 'choice-context' });
 const experiences = Object.freeze([{ id: 'shopping-for-dinner' }]);
 
 const originalSelection = Object.freeze({
@@ -138,13 +143,38 @@ sandbox.AdaptiveChoiceContextSource = Object.freeze({
     assert.strictEqual(receivedSession, session);
     assert.strictEqual(receivedDefinition, definition);
     assert.strictEqual(receivedExperiences, experiences);
-    return Object.freeze({ resolved: true });
+    return Object.freeze({ resolved: true, choiceContext });
   }
 });
 sandbox.AdaptiveChoicePresenter = Object.freeze({
   present(resolved) {
     assert.equal(resolved.resolved, true);
+    assert.strictEqual(resolved.choiceContext, choiceContext);
     return presentation;
+  }
+});
+const resolver = Object.freeze({ id: 'canonical-choice-resolver' });
+sandbox.SIYAYOChoiceResolver = resolver;
+sandbox.AdaptiveChoiceResolutionPresenter = Object.freeze({
+  present(receivedContext, candidateId, language, receivedResolver) {
+    assert.strictEqual(receivedContext, choiceContext);
+    assert.equal(candidateId, 'fresh-mild-cheese');
+    assert.equal(language, 'en');
+    assert.strictEqual(receivedResolver, resolver);
+    return Object.freeze({
+      candidateId,
+      language,
+      canonicalForm: Object.freeze({
+        valid: true,
+        status: 'Valid canonical candidate',
+        response: 'We should choose the fresh, mild cheese.'
+      }),
+      contextualResponse: Object.freeze({
+        status: 'Best contextual fit',
+        score: 4,
+        possibleScore: 4
+      })
+    });
   }
 });
 
@@ -183,6 +213,7 @@ wrapped.select(slide).then(result => {
   assert.match(mounted[0].html, /data-choice-select="fresh-mild-cheese"/);
   assert.match(mounted[0].html, /data-choice-select="aged-strong-cheese"/);
   assert.match(mounted[0].html, /Which cheese should we choose\?/);
+  assert.match(mounted[0].html, /id="choiceFeedback"/);
   assert.equal(submitCalls, 0, 'surface mounting must not submit to Coordinator or Cycle');
   assert.equal(
     /preferredTraits|contextTraits|correctAlternativeId/.test(mounted[0].html),
@@ -213,10 +244,15 @@ wrapped.select(slide).then(result => {
   assert.equal(groundedState.experienceLanguage, 'en');
   assert.equal(groundedState.experienceQuestion, 'Which cheese should we choose?');
   assert.equal(groundedState.experienceChoiceCandidate, 'fresh-mild-cheese');
-  assert.equal(submitCalls, 0, 'LearnerEvent observation must still stop before Coordinator submission');
+  assert.match(feedback.innerHTML, /choice-feedback-card is-valid/);
+  assert.match(feedback.innerHTML, /choice-feedback-card is-contextual/);
+  assert.match(feedback.innerHTML, /4 \/ 4/);
+  assert.match(feedback.innerHTML, /Valid canonical candidate/);
+  assert.match(feedback.innerHTML, /Best contextual fit/);
+  assert.equal(submitCalls, 0, 'rendered semantic resolution must still stop before Coordinator submission');
 
   console.log(
-    'Human Lab adaptive Choice surface: PASS — Session-backed candidates mount, one real click becomes one observable LearnerEvent, and the Lab still stops before Attempt/Coordinator/Cycle.'
+    'Human Lab adaptive Choice surface: PASS — Session-backed candidates mount, one real click grounds E/L/Q/C and renders semantic Choice resolution, while the Lab still stops before Evidence/Attempt/Coordinator/Cycle.'
   );
 }).catch(error => {
   console.error(error);
