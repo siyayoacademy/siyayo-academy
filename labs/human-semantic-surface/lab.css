@@ -400,3 +400,87 @@
     transition: none;
   }
 }
+
+
+/* ========================================
+   PENTE FINO CSS 2 — PORTRAIT SAFE SPACE
+   ======================================== */
+
+@media (max-width: 720px) and (orientation: portrait) {
+  .human-semantic-surface-lab .slide-content {
+    justify-content: flex-start;
+    padding-top: 0.35rem;
+    padding-bottom: clamp(7.5rem, 18dvh, 10rem);
+    scroll-padding-top: 0.5rem;
+    scroll-padding-bottom: clamp(7.5rem, 18dvh, 10rem);
+    overscroll-behavior: contain;
+  }
+
+  .human-semantic-surface-lab .human-lab-adaptive-choice-surface {
+    margin-top: 0.75rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-adaptive-choice-question {
+    margin-bottom: 0.65rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-choice-line {
+    grid-template-columns: 2.15rem minmax(0, 1fr);
+    gap: 0.55rem;
+    padding: 0.68rem 0.78rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-choice-line-en {
+    padding-top: 0.78rem;
+    padding-bottom: 0.78rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-choice-lang-code {
+    min-width: 1.9rem;
+    min-height: 1.4rem;
+    font-size: 0.62rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback {
+    margin-top: 0.8rem;
+  }
+
+  .human-semantic-surface-lab .semantic-feedback-shell {
+    padding: 0.85rem;
+    border-radius: 20px;
+  }
+
+  .human-semantic-surface-lab .semantic-feedback-heading {
+    margin-bottom: 0.75rem;
+  }
+
+  .human-semantic-surface-lab .semantic-feedback-grid {
+    gap: 0.72rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-card {
+    padding: 0.9rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-kicker {
+    margin-bottom: 0.55rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-copy {
+    margin-top: 0.72rem;
+    line-height: 1.45;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-score-ring {
+    width: clamp(68px, 22vw, 86px);
+    margin-top: 0.9rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-score-ring::before {
+    inset: 6px;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-score-value {
+    font-size: clamp(0.95rem, 4.8vw, 1.08rem);
+  }
+}
