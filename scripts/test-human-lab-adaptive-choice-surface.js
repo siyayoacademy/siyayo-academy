@@ -51,6 +51,10 @@ const feedback = {
     return null;
   }
 };
+let speechCalls = 0;
+let spokenText = null;
+let spokenLanguage = null;
+let spokenOptions = null;
 let submitCalls = 0;
 let submitted = null;
 const coordinatedResult = Object.freeze({
@@ -157,6 +161,15 @@ const sandbox = vm.createContext({
 
 sandbox.globalThis = sandbox;
 sandbox.SIYAYOStoryAssessmentLeafSelection = originalSelection;
+sandbox.SIYAYOSpeechEngine = Object.freeze({
+  speakText(text, language, options) {
+    speechCalls += 1;
+    spokenText = text;
+    spokenLanguage = language;
+    spokenOptions = options;
+    return true;
+  }
+});
 sandbox.SIYAYOVerbExplorerAdaptiveCoordinator = Object.freeze({
   snapshot() {
     return { session };
@@ -352,6 +365,19 @@ wrapped.select(slide).then(result => {
   assert.equal(feedbackScrollOptions.behavior, 'smooth');
   assert.equal(feedbackScrollOptions.block, 'start');
   assert.equal(feedbackScrollOptions.inline, 'nearest');
+
+  assert.equal(
+    speechCalls,
+    1,
+    'one accepted learner Choice must request one synchronized pronunciation'
+  );
+  assert.equal(
+    spokenText,
+    'We should choose the fresh, mild cheese.'
+  );
+  assert.equal(spokenLanguage, 'en');
+  assert.ok(spokenOptions);
+  assert.equal(spokenOptions.delay, 320);
 
   const evidence = sandbox.SIYAYOVerbExplorerChoiceEvidenceBridge.read(
     groundedState,
