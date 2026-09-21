@@ -28,6 +28,8 @@
       .then(function(){return ensureGlobal('AdaptiveProgressionEligibility','js/adaptive-progression-eligibility.js');})
       .then(function(){return ensureGlobal('AdaptivePedagogicalCompletion','js/adaptive-pedagogical-completion.js');})
       .then(function(){return ensureGlobal('AdaptiveConvergenceResolver','js/adaptive-convergence-resolver.js');})
+      .then(function(){return ensureGlobal('AdaptiveProgressionDecision','js/adaptive-progression-decision.js');})
+      .then(function(){return ensureGlobal('AdaptiveSessionTransitionBoundary','js/adaptive-session-transition-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinator','js/verb-explorer-adaptive-coordinator.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
@@ -65,10 +67,14 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveProfileSource','js/verb-explorer-adaptive-profile-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveEvidenceProfileSource','js/verb-explorer-adaptive-evidence-profile-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveSessionSource','js/verb-explorer-adaptive-session-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerNextSessionSource','js/verb-explorer-next-session-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerSessionStateBoundary','js/verb-explorer-session-state-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveContextSource','js/verb-explorer-adaptive-context-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptProvider','js/verb-explorer-choice-attempt-provider.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerTransitionRuntime','js/verb-explorer-transition-runtime.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerNextSessionActivation','js/verb-explorer-next-session-activation.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerLiveNextWire','js/verb-explorer-live-next-wire.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveComposer','js/verb-explorer-adaptive-composer.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveLiveStart','js/verb-explorer-adaptive-live-start.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveReadinessTrigger','js/verb-explorer-adaptive-readiness-trigger.js');})
@@ -76,7 +82,11 @@
       .then(function(){
         var liveStart=root.SIYAYOVerbExplorerAdaptiveLiveStart;
         if(!liveStart||typeof liveStart.tryCompose!=='function')return cycle;
-        return Promise.resolve(liveStart.tryCompose({document:document})).then(function(){return cycle;});
+        return Promise.resolve(liveStart.tryCompose({document:document})).then(function(){
+          var nextWire=root.SIYAYOVerbExplorerLiveNextWire;
+          if(nextWire&&typeof nextWire.install==='function')nextWire.install({document:document});
+          return cycle;
+        });
       });
   });
 })(typeof globalThis !== 'undefined' ? globalThis : this);
