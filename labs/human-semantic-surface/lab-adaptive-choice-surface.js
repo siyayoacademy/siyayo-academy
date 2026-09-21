@@ -49,7 +49,7 @@ function shortChoiceLabel(candidate){
   var response=candidate&&candidate.response&&text(candidate.response.en);
   if(!response)return text(candidate&&candidate.id);
   var compact=response
-    .replace(/^We should choose\s+/i,'')
+    .replace(/^We should choose\s+(?:the\s+)?/i,'')
     .replace(/[.!?]+$/,'')
     .trim();
   return compact
