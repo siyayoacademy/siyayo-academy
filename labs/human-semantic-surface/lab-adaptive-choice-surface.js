@@ -166,7 +166,7 @@ function mount(slide){
           '<span class="choice-feedback-kicker">Contextual Response</span>',
           '<strong class="choice-feedback-status"><span class="choice-feedback-status-mark" aria-hidden="true">◎</span>',escapeHtml(resolution.contextualResponse.status||''),'</strong>',
           '<div class="choice-feedback-score-ring" style="--score-angle:',escapeHtml(scoreAngle),'deg" aria-label="Context score ',escapeHtml(score),' of ',escapeHtml(possibleScore),'">',
-          '<span class="choice-feedback-score-value">',escapeHtml(score),' / ',escapeHtml(possibleScore),'</span>',
+          '<p class="choice-feedback-score-value">',escapeHtml(score),' / ',escapeHtml(possibleScore),'</p>',
           '</div>',
           '</article>',
           '</div>',
