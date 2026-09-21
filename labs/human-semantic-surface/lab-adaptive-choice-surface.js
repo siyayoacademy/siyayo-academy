@@ -167,6 +167,21 @@ function mount(slide){
           '</section>'
         ].join('');
 
+        var speechEngine=root.SIYAYOSpeechEngine;
+        if(
+          speechEngine&&
+          typeof speechEngine.speakText==='function'&&
+          resolution.canonicalForm&&
+          typeof resolution.canonicalForm.response==='string'&&
+          resolution.canonicalForm.response.trim()
+        ){
+          speechEngine.speakText(
+            resolution.canonicalForm.response.trim(),
+            'en',
+            {delay:320}
+          );
+        }
+
         if(typeof feedback.scrollIntoView==='function'){
           feedback.scrollIntoView({
             behavior:'smooth',
