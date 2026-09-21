@@ -7,7 +7,44 @@ const vm = require('node:vm');
 const listeners = [];
 const clickListeners = [];
 const mounted = [];
-const feedback = { innerHTML: '' };
+const feedback = {
+  innerHTML: '',
+  querySelector(selector) {
+    if (selector.includes('is-valid') || selector.includes('is-invalid')) {
+      if (!/choice-feedback-card is-(?:valid|invalid)/.test(this.innerHTML)) return null;
+      const valid = /choice-feedback-card is-valid/.test(this.innerHTML);
+      return {
+        classList: {
+          contains(name) {
+            return name === 'is-valid' ? valid : name === 'is-invalid' ? !valid : false;
+          }
+        },
+        querySelector() {
+          return null;
+        }
+      };
+    }
+
+    if (selector.includes('is-contextual')) {
+      if (!/choice-feedback-card is-contextual/.test(this.innerHTML)) return null;
+      const match = this.innerHTML.match(/<p>\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*<\/p>/);
+      return {
+        classList: {
+          contains(name) {
+            return name === 'is-contextual';
+          }
+        },
+        querySelector(query) {
+          return query === 'p' && match
+            ? { textContent: match[1] + ' / ' + match[2] }
+            : null;
+        }
+      };
+    }
+
+    return null;
+  }
+};
 let submitCalls = 0;
 
 const document = {
@@ -193,6 +230,17 @@ vm.runInContext(
   sandbox,
   { filename: 'js/adaptive-choice-browser-wire.js' }
 );
+for (const file of [
+  'js/choice-evidence-evaluator.js',
+  'js/verb-explorer-choice-resolution-reader.js',
+  'js/verb-explorer-choice-evidence-bridge.js'
+]) {
+  vm.runInContext(
+    fs.readFileSync(file, 'utf8'),
+    sandbox,
+    { filename: file }
+  );
+}
 
 vm.runInContext(
   fs.readFileSync('labs/human-semantic-surface/lab-adaptive-choice-surface.js', 'utf8'),
@@ -254,10 +302,27 @@ wrapped.select(slide).then(result => {
   assert.match(feedback.innerHTML, /4 \/ 4/);
   assert.match(feedback.innerHTML, /Valid canonical candidate/);
   assert.match(feedback.innerHTML, /Best contextual fit/);
-  assert.equal(submitCalls, 0, 'rendered semantic resolution must still stop before Coordinator submission');
+
+  const evidence = sandbox.SIYAYOVerbExplorerChoiceEvidenceBridge.read(
+    groundedState,
+    document
+  );
+  assert.ok(evidence, 'rendered semantic resolution must be readable as grounded Choice Evidence');
+  assert.equal(evidence.dimension, 'choice-function');
+  assert.equal(evidence.result, 'pass');
+  assert.equal(evidence.context.currentExperienceId, 'shopping-for-dinner');
+  assert.equal(evidence.context.experienceLanguage, 'en');
+  assert.equal(evidence.context.experienceQuestion, 'Which cheese should we choose?');
+  assert.equal(evidence.context.experienceChoiceCandidate, 'fresh-mild-cheese');
+  assert.equal(
+    Object.prototype.hasOwnProperty.call(evidence, 'attempt'),
+    false,
+    'Evidence must not contain or fabricate Attempt'
+  );
+  assert.equal(submitCalls, 0, 'Evidence observation must still stop before Coordinator submission');
 
   console.log(
-    'Human Lab adaptive Choice surface: PASS — Session-backed candidates mount, one real click grounds E/L/Q/C and renders semantic Choice resolution, while the Lab still stops before Evidence/Attempt/Coordinator/Cycle.'
+    'Human Lab adaptive Choice surface: PASS — real click grounds E/L/Q/C, renders semantic resolution, and yields grounded choice-function Evidence while the Lab still stops before Attempt/Coordinator/Cycle.'
   );
 }).catch(error => {
   console.error(error);
