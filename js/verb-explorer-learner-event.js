@@ -3,6 +3,7 @@
   var choiceOccurrenceSequence=0;
   var contrastProbeOccurrenceSequence=0;
   var determinerUseProbeOccurrenceSequence=0;
+  var determinerUseTransferProbeOccurrenceSequence=0;
 
   function nextChoiceOccurrenceId(){
     choiceOccurrenceSequence+=1;
@@ -17,6 +18,11 @@
   function nextDeterminerUseProbeOccurrenceId(){
     determinerUseProbeOccurrenceSequence+=1;
     return 'determiner-use-probe-select:'+determinerUseProbeOccurrenceSequence;
+  }
+
+  function nextDeterminerUseTransferProbeOccurrenceId(){
+    determinerUseTransferProbeOccurrenceSequence+=1;
+    return 'determiner-use-transfer-probe-select:'+determinerUseTransferProbeOccurrenceSequence;
   }
 
   function fromChoiceSelect(choice, state){
@@ -80,6 +86,37 @@
     });
   }
 
+  function fromDeterminerUseTransferProbeSelect(choice, state){
+    if(!choice) return null;
+    state=state||{};
+    if(
+      !state.fromExperienceId||
+      !state.currentExperienceId||
+      state.fromExperienceId===state.currentExperienceId||
+      state.dimension!=='determiner-use'||
+      state.mode!=='transfer'||
+      state.targetForm!=='which'||
+      !state.targetNoun
+    ) return null;
+
+    return Object.freeze({
+      observed:true,
+      actor:'learner',
+      relevantToWait:true,
+      intent:'continue',
+      type:'learner-response',
+      source:'determiner-use-transfer-probe-select',
+      occurrenceId:nextDeterminerUseTransferProbeOccurrenceId(),
+      choice:String(choice),
+      fromExperienceId:String(state.fromExperienceId),
+      experienceId:String(state.currentExperienceId),
+      dimension:'determiner-use',
+      mode:'transfer',
+      targetForm:'which',
+      targetNoun:String(state.targetNoun)
+    });
+  }
+
   function fromSentenceBuilt(composition, state){
     composition=composition||{};
     state=state||{};
@@ -103,6 +140,7 @@
     fromChoiceSelect:fromChoiceSelect,
     fromContrastProbeSelect:fromContrastProbeSelect,
     fromDeterminerUseProbeSelect:fromDeterminerUseProbeSelect,
+    fromDeterminerUseTransferProbeSelect:fromDeterminerUseTransferProbeSelect,
     fromSentenceBuilt:fromSentenceBuilt
   });
 })(typeof globalThis!=='undefined'?globalThis:this);
