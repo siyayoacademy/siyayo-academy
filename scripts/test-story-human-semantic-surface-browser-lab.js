@@ -22,6 +22,9 @@ const labIdentityPath =
 const labExperienceRuntimePath =
   labRoot + "/lab-experience-runtime.js";
 
+const labAdaptiveChoiceSurfacePath =
+  labRoot + "/lab-adaptive-choice-surface.js";
+
 assert.ok(
   fs.existsSync(htmlPath),
   "human Semantic Surface lab route must exist"
@@ -50,6 +53,11 @@ assert.ok(
 assert.ok(
   fs.existsSync(labExperienceRuntimePath),
   "human lab must own an explicit lab-only Experience runtime fixture"
+);
+
+assert.ok(
+  fs.existsSync(labAdaptiveChoiceSurfacePath),
+  "human lab must own its lab-only Adaptive Choice surface wrapper"
 );
 
 const html =
@@ -95,6 +103,9 @@ for (const src of [
   "../../js/leaf-assessment-target-readiness.js",
   "../../js/leaf-assessment-target-provider.js",
   "../../js/story-assessment-leaf-selection.js",
+  "../../js/adaptive-choice-context-source.js",
+  "../../js/adaptive-choice-presenter.js",
+  "lab-adaptive-choice-surface.js",
   "../../js/app.js"
 ]) {
   assert.ok(
@@ -273,6 +284,21 @@ const targetProviderIndex =
 const leafSelectionIndex =
   html.indexOf(
     'src="../../js/story-assessment-leaf-selection.js"'
+  );
+
+const adaptiveChoiceContextSourceIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-context-source.js"'
+  );
+
+const adaptiveChoicePresenterIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-presenter.js"'
+  );
+
+const labAdaptiveChoiceSurfaceIndex =
+  html.indexOf(
+    'src="lab-adaptive-choice-surface.js"'
   );
 
 const appIndex =
@@ -585,6 +611,26 @@ assert.ok(
   "Story Assessment Leaf Selection must load after the Target provider"
 );
 
+assert.ok(
+  adaptiveChoiceContextSourceIndex >= 0,
+  "human lab must load Adaptive Choice Context Source"
+);
+
+assert.ok(
+  adaptiveChoicePresenterIndex > adaptiveChoiceContextSourceIndex,
+  "Adaptive Choice Presenter must load after Adaptive Choice Context Source"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > leafSelectionIndex,
+  "lab Adaptive Choice surface wrapper must load after Story Assessment Leaf Selection"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > adaptiveChoicePresenterIndex,
+  "lab Adaptive Choice surface wrapper must load after Adaptive Choice Presenter"
+);
+
 for (const specialistIndex of [
   leafSurfaceIndex,
   leafReaderIndex,
@@ -616,7 +662,10 @@ for (const specialistIndex of [
   readinessTriggerIndex,
   targetReadinessIndex,
   targetProviderIndex,
-  leafSelectionIndex
+  leafSelectionIndex,
+  adaptiveChoiceContextSourceIndex,
+  adaptiveChoicePresenterIndex,
+  labAdaptiveChoiceSurfaceIndex
 ]) {
   assert.ok(
     appIndex > specialistIndex,
@@ -689,6 +738,25 @@ assert.equal(
   ),
   false,
   "lab Experience runtime fixture must not infer Experience from Story, Leaf, Surface, target words, or chapter data"
+);
+
+const labAdaptiveChoiceSurface =
+  fs.readFileSync(
+    labAdaptiveChoiceSurfacePath,
+    "utf8"
+  );
+
+assert.ok(
+  labAdaptiveChoiceSurface.includes("data-choice-select"),
+  "lab Adaptive Choice surface must materialize the canonical response hook"
+);
+
+assert.equal(
+  /submitChoice|AdaptiveLearningCycle|greenPass|NEXT/.test(
+    labAdaptiveChoiceSurface
+  ),
+  false,
+  "lab Adaptive Choice surface mounting must remain presentation-only"
 );
 
 const labStyle =
