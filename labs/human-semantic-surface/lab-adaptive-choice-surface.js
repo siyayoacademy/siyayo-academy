@@ -25,6 +25,83 @@ function escapeHtml(value){
     .replace(/'/g,'&#039;');
 }
 
+function traitLabel(value){
+  var labels={
+    'fresh':'Fresh',
+    'mild':'Mild',
+    'pairs-with-salmon':'Goes well with salmon',
+    'suitable-for-special-dinner':'Good for a special dinner'
+  };
+  var key=text(value);
+  if(labels[key])return labels[key];
+  if(!key)return '';
+  return key
+    .split('-')
+    .map(function(part,index){
+      return index===0
+        ? part.charAt(0).toUpperCase()+part.slice(1)
+        : part;
+    })
+    .join(' ');
+}
+
+function shortChoiceLabel(candidate){
+  var response=candidate&&candidate.response&&text(candidate.response.en);
+  if(!response)return text(candidate&&candidate.id);
+  var compact=response
+    .replace(/^We should choose\s+/i,'')
+    .replace(/[.!?]+$/,'')
+    .trim();
+  return compact
+    ? compact.charAt(0).toUpperCase()+compact.slice(1)
+    : response;
+}
+
+function renderContextCriteria(preferredTraits){
+  return preferredTraits.map(function(trait){
+    return [
+      '<span class="context-criterion">',
+      '<span class="context-criterion-mark" aria-hidden="true">◆</span>',
+      '<span>',escapeHtml(traitLabel(trait)),'</span>',
+      '</span>'
+    ].join('');
+  }).join('');
+}
+
+function renderContextOption(candidate,preferredTraits,selectedId,bestScore){
+  var matched=Array.isArray(candidate&&candidate.matchedTraits)
+    ? candidate.matchedTraits
+    : [];
+  var score=Number(candidate&&candidate.score);
+  var possibleScore=Number(candidate&&candidate.possibleScore);
+  var selected=String(candidate&&candidate.id)===String(selectedId);
+  var best=Number.isFinite(score)&&score===bestScore;
+
+  var markers=preferredTraits.map(function(trait){
+    var hit=matched.includes(trait);
+    return [
+      '<span class="context-option-marker ',hit?'is-match':'is-miss','" ',
+      'aria-label="',escapeHtml(traitLabel(trait)),': ',hit?'match':'no match','">',
+      hit?'✓':'○',
+      '</span>'
+    ].join('');
+  }).join('');
+
+  return [
+    '<div class="context-option ',
+    selected?'is-selected ':'',
+    best?'is-best':'',
+    '">',
+    '<div class="context-option-main">',
+    '<span class="context-option-name">',escapeHtml(shortChoiceLabel(candidate)),'</span>',
+    selected?'<span class="context-option-selected">Your choice</span>':'',
+    '</div>',
+    '<div class="context-option-markers">',markers,'</div>',
+    '<span class="context-option-score">',escapeHtml(score),' / ',escapeHtml(possibleScore),'</span>',
+    '</div>'
+  ].join('');
+}
+
 function catalog(){
   if(catalogPromise)return catalogPromise;
   if(typeof root.fetch!=='function')return Promise.resolve(null);
@@ -146,22 +223,41 @@ function mount(slide){
         var possibleScore=Number(resolution.contextualResponse.possibleScore);
         var ratio=possibleScore>0?Math.max(0,Math.min(1,score/possibleScore)):0;
         var scoreAngle=Math.round(ratio*360);
+        var preferredTraits=Array.isArray(resolved.choiceContext&&resolved.choiceContext.preferredTraits)
+          ? resolved.choiceContext.preferredTraits
+          : [];
+        var ranking=resolver&&typeof resolver.rankCandidates==='function'
+          ? resolver.rankCandidates(resolved.choiceContext)
+          : [];
+        var bestScore=ranking.length
+          ? Math.max.apply(null,ranking.map(function(candidate){return Number(candidate.score)||0;}))
+          : score;
+        var contextCriteria=renderContextCriteria(preferredTraits);
+        var contextOptions=ranking.map(function(candidate){
+          return renderContextOption(candidate,preferredTraits,event.choice,bestScore);
+        }).join('');
 
         feedback.innerHTML=[
           '<section class="semantic-feedback-shell" aria-label="Semantic feedback">',
-          '<div class="semantic-feedback-heading">Semantic Feedback</div>',
+          '<div class="semantic-feedback-heading">',
+          '<span class="semantic-feedback-heading-main">Your Choice</span>',
+          '<span class="semantic-feedback-heading-local">Tu elección · Sua escolha</span>',
+          '</div>',
           '<div class="semantic-feedback-grid">',
           '<article class="choice-feedback-card choice-feedback-card--canonical ',resolution.canonicalForm.valid?'is-valid':'is-invalid','">',
-          '<span class="choice-feedback-kicker">Canonical Form</span>',
-          '<strong class="choice-feedback-status"><span class="choice-feedback-status-mark" aria-hidden="true">✓</span>',escapeHtml(resolution.canonicalForm.status||''),'</strong>',
-          '<p class="choice-feedback-copy">',escapeHtml(resolution.canonicalForm.response||''),'</p>',
+          '<span class="choice-feedback-kicker">English Form</span>',
+          '<span class="choice-feedback-kicker-local">Forma en inglés · Forma em inglês</span>',
+          '<p class="choice-feedback-target">',escapeHtml(resolution.canonicalForm.response||''),'</p>',
+          '<strong class="choice-feedback-status choice-feedback-status--secondary"><span class="choice-feedback-status-mark" aria-hidden="true">✓</span>This sentence works.</strong>',
           '</article>',
           '<article class="choice-feedback-card choice-feedback-card--contextual is-contextual">',
-          '<span class="choice-feedback-kicker">Contextual Response</span>',
-          '<strong class="choice-feedback-status"><span class="choice-feedback-status-mark" aria-hidden="true">◎</span>',escapeHtml(resolution.contextualResponse.status||''),'</strong>',
+          '<span class="choice-feedback-kicker">Best Contextual Options</span>',
+          '<span class="choice-feedback-kicker-local">Mejores opciones contextuales · Melhores opções contextuais</span>',
           '<div class="choice-feedback-score-ring" style="--score-angle:',escapeHtml(scoreAngle),'deg" aria-label="Context score ',escapeHtml(score),' of ',escapeHtml(possibleScore),'">',
           '<p class="choice-feedback-score-value">',escapeHtml(score),' / ',escapeHtml(possibleScore),'</p>',
           '</div>',
+          '<div class="context-criteria" aria-label="Context criteria">',contextCriteria,'</div>',
+          '<div class="context-options">',contextOptions,'</div>',
           '</article>',
           '</div>',
           '</section>'
@@ -178,7 +274,7 @@ function mount(slide){
           speechEngine.speakText(
             resolution.canonicalForm.response.trim(),
             'en',
-            {delay:320}
+            {delay:400}
           );
         }
 
