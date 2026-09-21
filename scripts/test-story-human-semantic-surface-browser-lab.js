@@ -105,6 +105,8 @@ for (const src of [
   "../../js/story-assessment-leaf-selection.js",
   "../../js/adaptive-choice-context-source.js",
   "../../js/adaptive-choice-presenter.js",
+  "../../js/verb-explorer-learner-event.js",
+  "../../js/adaptive-choice-browser-wire.js",
   "lab-adaptive-choice-surface.js",
   "../../js/app.js"
 ]) {
@@ -294,6 +296,16 @@ const adaptiveChoiceContextSourceIndex =
 const adaptiveChoicePresenterIndex =
   html.indexOf(
     'src="../../js/adaptive-choice-presenter.js"'
+  );
+
+const learnerEventIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-learner-event.js"'
+  );
+
+const adaptiveChoiceBrowserWireIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-browser-wire.js"'
   );
 
 const labAdaptiveChoiceSurfaceIndex =
@@ -622,6 +634,16 @@ assert.ok(
 );
 
 assert.ok(
+  learnerEventIndex >= 0,
+  "human lab must load canonical Verb Explorer LearnerEvent boundary"
+);
+
+assert.ok(
+  adaptiveChoiceBrowserWireIndex > learnerEventIndex,
+  "Adaptive Choice Browser Wire must load after canonical LearnerEvent boundary"
+);
+
+assert.ok(
   labAdaptiveChoiceSurfaceIndex > leafSelectionIndex,
   "lab Adaptive Choice surface wrapper must load after Story Assessment Leaf Selection"
 );
@@ -629,6 +651,11 @@ assert.ok(
 assert.ok(
   labAdaptiveChoiceSurfaceIndex > adaptiveChoicePresenterIndex,
   "lab Adaptive Choice surface wrapper must load after Adaptive Choice Presenter"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > adaptiveChoiceBrowserWireIndex,
+  "lab Adaptive Choice surface wrapper must load after Adaptive Choice Browser Wire"
 );
 
 for (const specialistIndex of [
@@ -665,6 +692,8 @@ for (const specialistIndex of [
   leafSelectionIndex,
   adaptiveChoiceContextSourceIndex,
   adaptiveChoicePresenterIndex,
+  learnerEventIndex,
+  adaptiveChoiceBrowserWireIndex,
   labAdaptiveChoiceSurfaceIndex
 ]) {
   assert.ok(
