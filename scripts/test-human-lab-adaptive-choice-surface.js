@@ -186,7 +186,7 @@ wrapped.select(slide).then(result => {
   assert.equal(observed.choice, 'fresh-mild-cheese');
   assert.equal(observed.experienceId, 'shopping-for-dinner');
   assert.equal(observed.question, 'Which cheese should we choose?');
-  assert.match(observed.occurrenceId, /^choice-select:\\d+$/);
+  assert.match(observed.occurrenceId, /^choice-select:\d+$/);
   assert.equal(submitCalls, 0, 'LearnerEvent observation must still stop before Coordinator submission');
 
   console.log(
