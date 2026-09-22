@@ -109,7 +109,13 @@
     var convergenceResult=resolveConvergence(current.session,sourceContext,result);
     current.lastConvergenceResult=convergenceResult;
 
-    if(result.greenProfile)current.profile=result.greenProfile;
+    if(result.greenProfile){
+      current.profile=result.greenProfile;
+      var profileSource=root.SIYAYOVerbExplorerAdaptiveProfileSource;
+      if(profileSource&&typeof profileSource.adopt==='function'){
+        if(profileSource.adopt(result.greenProfile)!==true)return null;
+      }
+    }
     if(result.nextContext)current.context=result.nextContext;
 
     var dispatch=root.SIYAYOVerbExplorerCycleResumeDispatch;
