@@ -35,6 +35,7 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
 
   {
     let calls=0;
+    let renders=0;
     let resolveAttempt;
     const sandbox=vm.createContext({Object,Promise});
     sandbox.globalThis=sandbox;
@@ -44,6 +45,9 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
         return new Promise(resolve=>{resolveAttempt=resolve;});
       }
     };
+    sandbox.SIYAYOVerbExplorerDependencyHeadProbeRuntime={
+      render(){renders+=1;return true;}
+    };
     vm.runInContext(code,sandbox,{filename:'js/verb-explorer-adaptive-readiness-trigger.js'});
     const trigger=sandbox.SIYAYOVerbExplorerAdaptiveReadinessTrigger;
     const first=trigger.signal();
@@ -52,8 +56,10 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
     assert.equal(calls,1,'concurrent readiness signals must not duplicate LiveStart attempts');
     resolveAttempt(true);
     assert.equal(await first,true,'grounded LiveStart success must pass through unchanged');
+    assert.equal(renders,1,'grounded Session readiness must refresh the live Dependency Head Probe once');
     assert.equal(await trigger.signal(),true,'a later readiness signal may request a fresh re-entrant attempt');
     assert.equal(calls,2,'later signal after settlement must be allowed exactly once');
+    assert.equal(renders,2,'each later successful readiness transition may refresh the live probe once');
   }
 
   {
