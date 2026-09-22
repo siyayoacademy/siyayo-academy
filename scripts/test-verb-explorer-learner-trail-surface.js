@@ -43,7 +43,27 @@ const sandbox = vm.createContext({
     getProfile() { return profile; }
   }),
   SIYAYOVerbExplorerCanonicalSkillSource: Object.freeze({
-    getSkill() { return 'which.use.determiner'; }
+    getSkill() { return 'which.use.determiner'; },
+    getDefinition() {
+      return Object.freeze({
+        id: 'which.use.determiner',
+        form: 'which',
+        family: 'question-word',
+        grammarRole: 'interrogative-determiner'
+      });
+    }
+  }),
+  AdaptiveLearnerTrailLabel: Object.freeze({
+    project(definition) {
+      assert.equal(definition.id, 'which.use.determiner');
+      return Object.freeze({
+        status: 'TRAIL_LABEL_READY',
+        skill: 'which.use.determiner',
+        form: 'WHICH',
+        family: 'QUESTION WORD',
+        grammarRole: 'INTERROGATIVE DETERMINER'
+      });
+    }
   }),
   AdaptiveLearnerTrailView: Object.freeze({
     project(receivedProfile, skill) {
@@ -148,7 +168,10 @@ assert.equal(container.hidden, false);
 assert.equal(container.dataset.marker, 'EMPTY_DOT');
 assert.equal(container.dataset.state, 'UNOBSERVED');
 assert.match(container.innerHTML, /○/);
-assert.match(container.innerHTML, /which\.use\.determiner/);
+assert.match(container.innerHTML, /WHICH/);
+assert.match(container.innerHTML, /QUESTION WORD/);
+assert.match(container.innerHTML, /INTERROGATIVE DETERMINER/);
+assert.doesNotMatch(container.innerHTML, /which\.use\.determiner/);
 assert.doesNotMatch(container.innerHTML, /<button/i);
 assert.doesNotMatch(container.innerHTML, /onclick=/i);
 assert.doesNotMatch(container.innerHTML, /audio/i);
