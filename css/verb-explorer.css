@@ -88,3 +88,10 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-token-focus{border-color:#f5c542;box-shadow:0 0 16px rgba(245,197,66,.16)}
 .dependency-token-head{border-color:#50c878}
 .dependency-token-dependent{border-color:rgba(80,200,120,.55)}
+
+.dependency-token-stage{position:relative;padding-top:56px}
+.dependency-token-row{position:relative;z-index:2}
+.dependency-connector-overlay{position:absolute;inset:0 0 auto 0;width:100%;height:100%;z-index:1;overflow:visible;pointer-events:none}
+.dependency-connector-path{fill:none;stroke:#50c878;stroke-width:2.4;vector-effect:non-scaling-stroke}
+.dependency-connector-overlay marker path{fill:#50c878}
+.dependency-connector-label{fill:#d7f4df;font-size:10px;font-weight:900;letter-spacing:.04em}
