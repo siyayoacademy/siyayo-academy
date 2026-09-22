@@ -29,6 +29,7 @@
       .then(function(){return ensureGlobal('AdaptivePedagogicalCompletion','js/adaptive-pedagogical-completion.js');})
       .then(function(){return ensureGlobal('AdaptiveConvergenceResolver','js/adaptive-convergence-resolver.js');})
       .then(function(){return ensureGlobal('AdaptiveContractClosureEvidenceSource','js/adaptive-contract-closure-evidence-source.js');})
+      .then(function(){return ensureGlobal('AdaptiveLearnerTrailView','js/adaptive-learner-trail-view.js');})
       .then(function(){return ensureGlobal('AdaptiveProgressionDecision','js/adaptive-progression-decision.js');})
       .then(function(){return ensureGlobal('AdaptiveSessionTransitionBoundary','js/adaptive-session-transition-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinator','js/verb-explorer-adaptive-coordinator.js');})
