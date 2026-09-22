@@ -82,7 +82,7 @@ assert.equal(
 
 assert.equal(overlay.attrs.viewBox, '0 0 440 120');
 assert.match(overlay.innerHTML, /<marker[^>]+id="dependencyArrow"/);
-assert.equal((overlay.innerHTML.match(/<path /g) || []).length, 3);
+assert.equal((overlay.innerHTML.match(/<path class="dependency-connector-path"/g) || []).length, 3);
 assert.match(overlay.innerHTML, /marker-end="url\(#dependencyArrow\)"/);
 assert.match(overlay.innerHTML, />det<\/text>/);
 assert.match(overlay.innerHTML, />nummod<\/text>/);
