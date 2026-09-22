@@ -61,6 +61,49 @@ const sandbox = vm.createContext({
       });
     }
   }),
+  AdaptiveLearnerTrailSequence: Object.freeze({
+    project(trail) {
+      assert.equal(trail.skill, 'which.use.determiner');
+      if (marker.state === 'UNOBSERVED') {
+        return Object.freeze({
+          status: 'TRAIL_SEQUENCE_EMPTY',
+          skill: trail.skill,
+          segments: Object.freeze([])
+        });
+      }
+      const segments = marker.state === 'CONSOLIDATED_EVIDENCE'
+        ? [
+            Object.freeze({
+              experienceId: 'shopping-for-dinner',
+              state: 'CONFIRMED',
+              marker: 'FILLED_DOT',
+              footprints: 1,
+              greenPassClosures: 1
+            }),
+            Object.freeze({
+              experienceId: 'preparing-dinner',
+              state: 'CONFIRMED',
+              marker: 'FILLED_DOT',
+              footprints: 1,
+              greenPassClosures: 1
+            })
+          ]
+        : [
+            Object.freeze({
+              experienceId: 'shopping-for-dinner',
+              state: marker.state === 'CONFIRMED' ? 'CONFIRMED' : 'IN_PROGRESS',
+              marker: marker.state === 'CONFIRMED' ? 'FILLED_DOT' : 'PARTIAL_DOT',
+              footprints: 1,
+              greenPassClosures: marker.state === 'CONFIRMED' ? 1 : 0
+            })
+          ];
+      return Object.freeze({
+        status: 'TRAIL_SEQUENCE_AVAILABLE',
+        skill: trail.skill,
+        segments: Object.freeze(segments)
+      });
+    }
+  }),
   AdaptiveLearnerProgressMarker: Object.freeze({
     resolve() { return marker; }
   })
@@ -124,6 +167,8 @@ Promise.resolve().then(function(){
   assert.equal(container.dataset.state, 'CONSOLIDATED_EVIDENCE');
   assert.match(container.innerHTML, /★/);
   assert.match(container.innerHTML, /2 CONTEXTS/);
+  assert.match(container.innerHTML, /shopping-for-dinner/);
+  assert.match(container.innerHTML, /preparing-dinner/);
   assert.doesNotMatch(container.innerHTML, /<button/i);
 
   console.log(
