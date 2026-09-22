@@ -24,7 +24,14 @@ function signal(options){
 
   pending=Promise.resolve(attempt).then(function(result){
     pending=null;
-    return result===true;
+    var ready=result===true;
+    if(ready){
+      var headProbeRuntime=root.SIYAYOVerbExplorerDependencyHeadProbeRuntime;
+      if(headProbeRuntime&&typeof headProbeRuntime.render==='function'){
+        headProbeRuntime.render();
+      }
+    }
+    return ready;
   },function(){
     pending=null;
     return false;
