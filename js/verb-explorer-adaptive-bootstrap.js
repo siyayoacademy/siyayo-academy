@@ -31,6 +31,7 @@
       .then(function(){return ensureGlobal('AdaptiveContractClosureEvidenceSource','js/adaptive-contract-closure-evidence-source.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailView','js/adaptive-learner-trail-view.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerProgressMarker','js/adaptive-learner-progress-marker.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerTrailSurface','js/verb-explorer-learner-trail-surface.js');})
       .then(function(){return ensureGlobal('AdaptiveProgressionDecision','js/adaptive-progression-decision.js');})
       .then(function(){return ensureGlobal('AdaptiveSessionTransitionBoundary','js/adaptive-session-transition-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinator','js/verb-explorer-adaptive-coordinator.js');})
@@ -88,6 +89,8 @@
         return Promise.resolve(liveStart.tryCompose({document:document})).then(function(){
           var nextWire=root.SIYAYOVerbExplorerLiveNextWire;
           if(nextWire&&typeof nextWire.install==='function')nextWire.install({document:document});
+          var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
+          if(trailSurface&&typeof trailSurface.install==='function')trailSurface.install({document:document});
           return cycle;
         });
       });
