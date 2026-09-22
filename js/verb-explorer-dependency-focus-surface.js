@@ -50,7 +50,7 @@
 
       var relation=relationByToken[id]||'';
       return '<span class="dependency-token dependency-token-'+escapeHtml(role)+'"'+
-        ' data-token-id="'+escapeHtml(id)+'" data-role="'+escapeHtml(role)+'">'+
+        ' data-token-id="'+escapeHtml(id)+'" data-dependency-token="'+escapeHtml(id)+'" data-role="'+escapeHtml(role)+'" tabindex="0">'+
           '<b>'+escapeHtml(token&&token.form||id)+'</b>'+
           '<small>'+escapeHtml(token&&token.wordClass||'')+'</small>'+
           (relation?'<em>'+escapeHtml(relation)+'</em>':'')+
