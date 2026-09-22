@@ -149,6 +149,61 @@
     return {cycleResult:result,convergenceResult:convergenceResult,dispatchResult:dispatchResult};
   }
 
+  function submitObservedAttempt(attempt,learnerEvent,target){
+    if(!current||!attempt||!learnerEvent)return null;
+    if(learnerEvent.observed!==true||learnerEvent.actor!=='learner')return null;
+    if(!learnerEvent.occurrenceId||String(learnerEvent.occurrenceId)!==String(attempt.occurrenceId))return null;
+    if(!current.session||!current.session.decision||!current.session.decision.skill)return null;
+    if(String(current.session.decision.skill)!==String(attempt.skill))return null;
+
+    var sessionExperience=current.session.decision.experienceId||null;
+    var eventExperience=learnerEvent.experienceId||null;
+    var attemptExperience=attempt.context&&attempt.context.experienceId||null;
+    if(sessionExperience&&eventExperience&&String(sessionExperience)!==String(eventExperience))return null;
+    if(sessionExperience&&attemptExperience&&String(sessionExperience)!==String(attemptExperience))return null;
+    if(eventExperience&&attemptExperience&&String(eventExperience)!==String(attemptExperience))return null;
+
+    var cycle=root.AdaptiveLearningCycle;
+    if(!cycle||typeof cycle.submit!=='function')return null;
+
+    var state=typeof current.getState==='function'
+      ? current.getState(learnerEvent.choice||null,target||null)
+      : null;
+    var resumeState=typeof current.getResumeState==='function'
+      ? current.getResumeState(state,target||null)
+      : state;
+    var sourceContext=current.context;
+    var context=Object.assign({},sourceContext||{}, {
+      learnerEvent:learnerEvent,
+      resumeState:resumeState||state||null
+    });
+
+    var result;
+    try{
+      result=cycle.submit(current.profile,current.session,attempt,context);
+    }catch(error){
+      return null;
+    }
+    if(!result)return null;
+    if(retainContractClosure(current.session,sourceContext,result)!==true)return null;
+
+    var convergenceResult=resolveConvergence(current.session,sourceContext,result);
+    current.lastConvergenceResult=convergenceResult;
+
+    if(result.greenProfile){
+      current.profile=result.greenProfile;
+      var profileSource=root.SIYAYOVerbExplorerAdaptiveProfileSource;
+      if(profileSource&&typeof profileSource.adopt==='function'){
+        if(profileSource.adopt(result.greenProfile)!==true)return null;
+      }
+    }
+    if(result.nextContext)current.context=result.nextContext;
+
+    var dispatch=root.SIYAYOVerbExplorerCycleResumeDispatch;
+    var dispatchResult=dispatch&&typeof dispatch.run==='function'?dispatch.run(result):null;
+    return {cycleResult:result,convergenceResult:convergenceResult,dispatchResult:dispatchResult};
+  }
+
   function snapshot(){
     return current?{
       profile:current.profile,
@@ -164,6 +219,7 @@
     releaseTransition:releaseTransition,
     releaseProgression:releaseProgression,
     submitChoice:submitChoice,
+    submitObservedAttempt:submitObservedAttempt,
     snapshot:snapshot
   });
 })(typeof globalThis!=='undefined'?globalThis:this);
