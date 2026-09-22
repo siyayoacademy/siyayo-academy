@@ -73,3 +73,5 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-trail-segment[data-current="true"] em{color:#fff}
 .learner-trail-current-unvisited{border-style:dashed}
 .learner-trail-current-unvisited b{color:#f5c542}
+
+.learner-trail-meta{color:#8ea3bc;font-size:.61rem;font-weight:800;letter-spacing:.05em}
