@@ -60,3 +60,11 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-trail-surface[data-marker="FILLED_DOT"] .learner-trail-mark{color:#f5c542;border-color:#d7b35a;box-shadow:0 0 16px rgba(245,197,66,.16)}
 .learner-trail-surface[data-marker="MILESTONE"] .learner-trail-mark{color:#f5c542;border-color:#f5c542;box-shadow:0 0 22px rgba(245,197,66,.22)}
 @media(max-width:480px){.learner-trail-surface{padding:10px 12px}.learner-trail-mark{flex-basis:38px;width:38px;height:38px;font-size:1.35rem}.learner-trail-copy strong{font-size:.82rem}}
+
+.learner-trail-sequence{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.learner-trail-segment{display:inline-flex;align-items:center;gap:5px;max-width:100%;padding:4px 7px;border:1px solid rgba(215,179,90,.2);border-radius:999px;background:rgba(0,0,0,.18);font-size:.62rem}
+.learner-trail-segment b{font-size:.82rem;line-height:1;color:#c98224}
+.learner-trail-segment em{min-width:0;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#cdd7e5;font-style:normal}
+.learner-trail-segment[data-state="CONFIRMED"]{border-color:rgba(215,179,90,.42)}
+.learner-trail-segment[data-state="CONFIRMED"] b{color:#f5c542}
+@media(max-width:480px){.learner-trail-segment em{max-width:170px}}
