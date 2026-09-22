@@ -253,6 +253,15 @@
             }
           }
         },
+        "dependencyFocus": {
+          "type": "object",
+          "required": ["structureId", "defaultFocus"],
+          "additionalProperties": false,
+          "properties": {
+            "structureId": { "type": "string" },
+            "defaultFocus": { "type": "string" }
+          }
+        },
         "toroidalNext": {
           "type": "object",
           "required": [
