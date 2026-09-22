@@ -32,6 +32,7 @@
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailView','js/adaptive-learner-trail-view.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailSequence','js/adaptive-learner-trail-sequence.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailPosition','js/adaptive-learner-trail-position.js');})
+      .then(function(){return ensureGlobal('AdaptiveLearnerTrailLabel','js/adaptive-learner-trail-label.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerProgressMarker','js/adaptive-learner-progress-marker.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerTrailSurface','js/verb-explorer-learner-trail-surface.js');})
       .then(function(){return ensureGlobal('AdaptiveProgressionDecision','js/adaptive-progression-decision.js');})
