@@ -191,6 +191,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-coordinator.js
       - name: Test evolved Green Pass profile retention
         run: node scripts/test-verb-explorer-coordinator-profile-retention.js
+      - name: Test live longitudinal Evidence Profile continuity
+        run: node scripts/test-verb-explorer-live-evidence-profile-continuity.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
