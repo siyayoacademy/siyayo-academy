@@ -201,6 +201,8 @@ jobs:
         run: node scripts/test-verb-explorer-learner-trail-surface.js
       - name: Test chronological learner Trail sequence
         run: node scripts/test-adaptive-learner-trail-sequence.js
+      - name: Test learner Trail current-position illumination
+        run: node scripts/test-adaptive-learner-trail-position.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
