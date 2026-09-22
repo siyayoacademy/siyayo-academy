@@ -27,7 +27,9 @@
     var structure=options.structure;
     var focusId=text(options.focusId);
     var focusView=options.focusView||root.AdaptiveDependencyFocusView;
+    var connectorView=options.connectorView||root.AdaptiveDependencyConnectorView;
     if(!structure||!focusId||!focusView||typeof focusView.resolve!=='function')return false;
+    if(!connectorView||typeof connectorView.draw!=='function')return false;
 
     var resolved=focusView.resolve(structure,focusId);
     if(!resolved)return false;
@@ -64,9 +66,15 @@
         '<span>DEPENDENCY FOCUS</span>'+
         '<strong>'+escapeHtml(resolved.focus.form)+' / '+escapeHtml(resolved.focus.wordClass)+'</strong>'+
       '</div>'+
-      '<div class="dependency-token-row" aria-label="Canonical dependency focus">'+tokenHtml+'</div>';
+      '<div class="dependency-token-stage">'+
+        '<svg class="dependency-connector-overlay" data-dependency-connectors aria-hidden="true"></svg>'+
+        '<div class="dependency-token-row" aria-label="Canonical dependency focus">'+tokenHtml+'</div>'+
+      '</div>';
 
-    return true;
+    return connectorView.draw({
+      surface:surface,
+      resolved:resolved
+    });
   }
 
   root.SIYAYOVerbExplorerDependencyFocusSurface=Object.freeze({
