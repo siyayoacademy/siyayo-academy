@@ -29,7 +29,15 @@ const documentRef = {
 const sandbox = vm.createContext({
   Object,
   document: documentRef,
-  AdaptiveDependencyFocusView: require('../js/adaptive-dependency-focus-view.js')
+  AdaptiveDependencyFocusView: require('../js/adaptive-dependency-focus-view.js'),
+  AdaptiveDependencyConnectorView: Object.freeze({
+    draw(input) {
+      assert.ok(input.surface);
+      assert.ok(input.resolved);
+      assert.equal(input.resolved.status, 'DEPENDENCY_FOCUS_READY');
+      return true;
+    }
+  })
 });
 sandbox.globalThis = sandbox;
 
