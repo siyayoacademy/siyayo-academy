@@ -14,7 +14,7 @@ const structure = JSON.parse(
   fs.readFileSync('data/learning/dependencies/all-these-three-books.json','utf8')
 );
 
-const listeners = { click: [] };
+const listeners = Object.create(null);
 const documentRef = {
   addEventListener(type, handler) {
     (listeners[type] || (listeners[type] = [])).push(handler);
@@ -63,7 +63,9 @@ assert.equal(
   false,
   'Dependency Focus interaction installs once'
 );
-assert.equal(listeners.click.length, 1);
+for (const type of ['pointerover','pointerup','focusin','keydown']) {
+  assert.equal(Array.isArray(listeners[type]) && listeners[type].length, 1);
+}
 
 function clickToken(id) {
   const token = {
@@ -72,7 +74,7 @@ function clickToken(id) {
       return selector === '[data-dependency-token]' ? this : null;
     }
   };
-  listeners.click[0]({ target: token });
+  listeners.pointerup[0]({ target: token, pointerType: 'mouse' });
 }
 
 clickToken('books');
@@ -90,7 +92,7 @@ const unrelated = {
   dataset: {},
   closest() { return null; }
 };
-listeners.click[0]({ target: unrelated });
+listeners.pointerup[0]({ target: unrelated, pointerType: 'mouse' });
 assert.equal(renders.length, 2, 'unrelated clicks must not change syntactic focus');
 
 for (const input of renders) {
