@@ -21,8 +21,9 @@ assert.ok(experienceProperties.dependencyFocus, 'Experience schema must allow de
 for (const hook of [
   'DEPENDENCY_FOCUS_URL',
   'dependencyStructuresById',
-  'x?.dependencyFocus?.structureId',
-  'x?.dependencyFocus?.defaultFocus',
+  'x?.dependencyFocus',
+  'meta?.structureId',
+  'meta?.defaultFocus',
   'SIYAYOVerbExplorerDependencyFocusSurface',
   'SIYAYOVerbExplorerDependencyFocusInteraction',
   'updateStructure'
