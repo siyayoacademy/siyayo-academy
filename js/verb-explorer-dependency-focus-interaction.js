@@ -19,8 +19,8 @@
 
     var structure=options.structure;
     var surface=options.surface||root.SIYAYOVerbExplorerDependencyFocusSurface;
-    if(!structure||!surface||typeof surface.render!=='function')return false;
-    if(updateStructure(structure)!==true)return false;
+    if(!surface||typeof surface.render!=='function')return false;
+    if(structure&&updateStructure(structure)!==true)return false;
     activeSurface=surface;
     activeDocument=doc;
 
