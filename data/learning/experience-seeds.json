@@ -261,6 +261,20 @@
       "dependencyFocus": {
         "structureId": "all-these-three-books",
         "defaultFocus": "books"
+      },
+      "dependencyHeadProbe": {
+        "structureId": "all-these-three-books",
+        "targetTokenId": "three",
+        "prompt": {
+          "en": "Which word is the head of “three”?",
+          "es": "¿Qué palabra es el núcleo de “three”?",
+          "pt": "Qual palavra é o núcleo de “three”?"
+        },
+        "alternativeTokenIds": [
+          "all",
+          "these",
+          "books"
+        ]
       }
     },
     {
