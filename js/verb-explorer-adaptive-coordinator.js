@@ -66,6 +66,31 @@
     return convergence.resolve({candidateGrounding:candidateGrounding,pedagogicalState:observedState});
   }
 
+  function retainContractClosure(session,sourceContext,result){
+    if(!result||result.contractEligible!==true)return true;
+    var contract=result.contractEvaluation;
+    if(!contract||contract.status!=='GREEN_PASS'||contract.satisfied!==true)return true;
+
+    var authority=root.AdaptiveContractClosureEvidenceSource;
+    var profileSource=root.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource;
+    var profileApi=root.AdaptiveEvidenceProfile;
+
+    // Compatibility: older/non-live consumers may not load the longitudinal authority.
+    // The browser bootstrap does, so the live path records before learner NEXT.
+    if(!authority||typeof authority.record!=='function')return true;
+    if(!profileSource||typeof profileSource.getProfile!=='function')return false;
+    if(!profileApi||typeof profileApi.record!=='function')return false;
+
+    var evidenceProfile=profileSource.getProfile();
+    if(!evidenceProfile)return false;
+
+    return authority.record(profileApi,evidenceProfile,{
+      cycleResult:result,
+      session:session,
+      context:sourceContext||{}
+    })===evidenceProfile;
+  }
+
   function submitChoice(choice,target,observedLearnerEvent){
     if(!current)return null;
     var controller=root.SIYAYOVerbExplorerAdaptiveController;
@@ -105,6 +130,7 @@
       resumeState:resumeState
     });
     if(!result)return null;
+    if(retainContractClosure(current.session,sourceContext,result)!==true)return null;
 
     var convergenceResult=resolveConvergence(current.session,sourceContext,result);
     current.lastConvergenceResult=convergenceResult;
