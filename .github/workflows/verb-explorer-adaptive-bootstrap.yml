@@ -207,6 +207,8 @@ jobs:
         run: node scripts/test-adaptive-learner-trail-label.js
       - name: Test canonical Dependency Focus View
         run: node scripts/test-adaptive-dependency-focus-view.js
+      - name: Test read-only Dependency Focus Surface
+        run: node scripts/test-verb-explorer-dependency-focus-surface.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
