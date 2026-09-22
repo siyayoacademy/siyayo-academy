@@ -37,6 +37,17 @@
       .then(function(){return ensureGlobal('AdaptiveDependencyConnectorView','js/adaptive-dependency-connector-view.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerDependencyFocusSurface','js/verb-explorer-dependency-focus-surface.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerDependencyFocusInteraction','js/verb-explorer-dependency-focus-interaction.js');})
+      .then(function(){return ensureGlobal('AdaptiveDependencyHeadProbeDefinition','js/adaptive-dependency-head-probe-definition.js');})
+      .then(function(){return ensureGlobal('AdaptiveDependencyHeadProbePresenter','js/adaptive-dependency-head-probe-presenter.js');})
+      .then(function(){return ensureGlobal('SIYAYOAdaptiveDependencyHeadProbeBrowserWire','js/adaptive-dependency-head-probe-browser-wire.js');})
+      .then(function(){return ensureGlobal('AdaptiveDependencyHeadProbeResult','js/adaptive-dependency-head-probe-result.js');})
+      .then(function(){return ensureGlobal('AdaptiveDependencyHeadProbeSupportSensor','js/adaptive-dependency-head-probe-support-sensor.js');})
+      .then(function(sensorApi){
+        if(sensorApi&&typeof sensorApi.create==='function')root.SIYAYODependencyHeadProbeSupportSensor=sensorApi.create();
+        return ensureGlobal('AdaptiveDependencyHeadProbeEvidenceBridge','js/adaptive-dependency-head-probe-evidence-bridge.js');
+      })
+      .then(function(){return ensureGlobal('AdaptiveDependencyHeadProbeAttemptBoundary','js/adaptive-dependency-head-probe-attempt-boundary.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerDependencyHeadProbeLive','js/verb-explorer-dependency-head-probe-live.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerProgressMarker','js/adaptive-learner-progress-marker.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerTrailSurface','js/verb-explorer-learner-trail-surface.js');})
       .then(function(){return ensureGlobal('AdaptiveProgressionDecision','js/adaptive-progression-decision.js');})
@@ -105,6 +116,8 @@
               surface:root.SIYAYOVerbExplorerDependencyFocusSurface
             });
           }
+          var headProbeRuntime=root.SIYAYOVerbExplorerDependencyHeadProbeRuntime;
+          if(headProbeRuntime&&typeof headProbeRuntime.render==='function')headProbeRuntime.render();
           return cycle;
         });
       });
