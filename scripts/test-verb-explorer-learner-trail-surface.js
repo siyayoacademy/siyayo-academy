@@ -104,6 +104,28 @@ const sandbox = vm.createContext({
       });
     }
   }),
+  AdaptiveLearnerTrailPosition: Object.freeze({
+    resolve(sequence, currentExperienceId) {
+      const index = sequence.segments.findIndex(item => item.experienceId === currentExperienceId);
+      return Object.freeze({
+        status: 'TRAIL_POSITION_READY',
+        skill: sequence.skill,
+        currentExperienceId,
+        visited: index >= 0,
+        segmentIndex: index
+      });
+    }
+  }),
+  SIYAYOVerbExplorerAdaptiveStateBridge: Object.freeze({
+    getState() {
+      return Object.freeze({
+        currentExperienceId:
+          marker.state === 'CONSOLIDATED_EVIDENCE'
+            ? 'preparing-dinner'
+            : 'shopping-for-dinner'
+      });
+    }
+  }),
   AdaptiveLearnerProgressMarker: Object.freeze({
     resolve() { return marker; }
   })
@@ -169,6 +191,8 @@ Promise.resolve().then(function(){
   assert.match(container.innerHTML, /2 CONTEXTS/);
   assert.match(container.innerHTML, /shopping-for-dinner/);
   assert.match(container.innerHTML, /preparing-dinner/);
+  assert.match(container.innerHTML, /aria-current="step"/);
+  assert.match(container.innerHTML, /data-current="true"/);
   assert.doesNotMatch(container.innerHTML, /<button/i);
 
   console.log(
