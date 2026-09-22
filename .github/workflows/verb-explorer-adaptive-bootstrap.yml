@@ -193,6 +193,8 @@ jobs:
         run: node scripts/test-verb-explorer-coordinator-profile-retention.js
       - name: Test live longitudinal Evidence Profile continuity
         run: node scripts/test-verb-explorer-live-evidence-profile-continuity.js
+      - name: Test read-only learner trail projection
+        run: node scripts/test-adaptive-learner-trail-view.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
