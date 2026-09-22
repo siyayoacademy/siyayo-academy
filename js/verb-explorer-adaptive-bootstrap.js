@@ -98,6 +98,13 @@
           if(nextWire&&typeof nextWire.install==='function')nextWire.install({document:document});
           var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
           if(trailSurface&&typeof trailSurface.install==='function')trailSurface.install({document:document});
+          var dependencyInteraction=root.SIYAYOVerbExplorerDependencyFocusInteraction;
+          if(dependencyInteraction&&typeof dependencyInteraction.install==='function'){
+            dependencyInteraction.install({
+              document:document,
+              surface:root.SIYAYOVerbExplorerDependencyFocusSurface
+            });
+          }
           return cycle;
         });
       });
