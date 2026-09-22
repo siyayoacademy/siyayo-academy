@@ -79,11 +79,13 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert(appended.includes('js/adaptive-learner-trail-view.js'), 'learner Trail projection should be loaded by adaptive bootstrap');
     assert(appended.includes('js/adaptive-learner-trail-sequence.js'), 'chronological learner Trail sequence should be loaded by adaptive bootstrap');
     assert(appended.includes('js/adaptive-learner-trail-position.js'), 'learner Trail current-position projection should be loaded by adaptive bootstrap');
+    assert(appended.includes('js/adaptive-learner-trail-label.js'), 'learner-facing Trail word label should be loaded by adaptive bootstrap');
     assert(appended.includes('js/adaptive-learner-progress-marker.js'), 'learner progress marker semantics should be loaded by adaptive bootstrap');
     assert(appended.includes('js/verb-explorer-learner-trail-surface.js'), 'learner Trail surface should be loaded by adaptive bootstrap');
     assert.strictEqual(typeof sandbox.AdaptiveLearnerTrailView.project, 'function');
     assert.strictEqual(typeof sandbox.AdaptiveLearnerTrailSequence.project, 'function');
     assert.strictEqual(typeof sandbox.AdaptiveLearnerTrailPosition.resolve, 'function');
+    assert.strictEqual(typeof sandbox.AdaptiveLearnerTrailLabel.project, 'function');
     assert.strictEqual(typeof sandbox.AdaptiveLearnerProgressMarker.resolve, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerLearnerTrailSurface.install, 'function');
     assert.strictEqual(clickListeners.length, 4, 'bootstrap should install choice, support-audio, sentence-built, and read-only Trail refresh listeners');
