@@ -25,6 +25,7 @@
     if(!el)return false;
     el.panel.hidden=true;
     el.container.innerHTML='';
+    delete el.container.__siyayoDependencyHeadProbeBinding;
     el.feedback.hidden=true;
     el.feedback.textContent='';
     delete el.feedback.dataset.result;
