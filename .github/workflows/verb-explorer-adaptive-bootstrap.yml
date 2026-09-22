@@ -225,6 +225,8 @@ jobs:
         run: node scripts/test-adaptive-dependency-head-probe-browser-wire.js
       - name: Test Dependency Head Probe result
         run: node scripts/test-adaptive-dependency-head-probe-result.js
+      - name: Test Dependency Head Probe evidence bridge
+        run: node scripts/test-adaptive-dependency-head-probe-evidence-bridge.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
