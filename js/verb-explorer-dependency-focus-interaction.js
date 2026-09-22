@@ -2,6 +2,15 @@
   'use strict';
 
   var installed=false;
+  var activeStructure=null;
+  var activeSurface=null;
+  var activeDocument=null;
+
+  function updateStructure(structure){
+    if(!structure||!Array.isArray(structure.tokens)||!Array.isArray(structure.relations))return false;
+    activeStructure=structure;
+    return true;
+  }
 
   function install(options){
     options=options||{};
@@ -11,6 +20,9 @@
     var structure=options.structure;
     var surface=options.surface||root.SIYAYOVerbExplorerDependencyFocusSurface;
     if(!structure||!surface||typeof surface.render!=='function')return false;
+    if(updateStructure(structure)!==true)return false;
+    activeSurface=surface;
+    activeDocument=doc;
 
     var lastFocusId=null;
 
@@ -26,9 +38,10 @@
       if(typeof focusId!=='string'||!focusId.trim())return false;
       focusId=focusId.trim();
       if(focusId===lastFocusId)return true;
-      var rendered=surface.render({
-        document:doc,
-        structure:structure,
+      if(!activeStructure||!activeSurface||!activeDocument)return false;
+      var rendered=activeSurface.render({
+        document:activeDocument,
+        structure:activeStructure,
         focusId:focusId
       });
       if(rendered===true)lastFocusId=focusId;
@@ -61,6 +74,7 @@
   }
 
   root.SIYAYOVerbExplorerDependencyFocusInteraction=Object.freeze({
-    install:install
+    install:install,
+    updateStructure:updateStructure
   });
 })(typeof globalThis!=='undefined'?globalThis:this);
