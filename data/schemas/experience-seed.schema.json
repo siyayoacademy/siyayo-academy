@@ -262,6 +262,22 @@
             "defaultFocus": { "type": "string" }
           }
         },
+        "dependencyHeadProbe": {
+          "type": "object",
+          "required": ["structureId", "targetTokenId", "prompt", "alternativeTokenIds"],
+          "additionalProperties": false,
+          "properties": {
+            "structureId": { "type": "string" },
+            "targetTokenId": { "type": "string" },
+            "prompt": { "$ref": "#/$defs/trilingual" },
+            "alternativeTokenIds": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": { "type": "string" }
+            }
+          }
+        },
         "toroidalNext": {
           "type": "object",
           "required": [
