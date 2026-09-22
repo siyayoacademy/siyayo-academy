@@ -113,6 +113,7 @@ const coordinator={
 
 const wire={
   render(view){
+    delete container.binding;
     container.innerHTML=view.alternatives.map(item=>
       '<button data-dependency-head-probe-select="'+item.id+'">'+item.form+'</button>'
     ).join('');
