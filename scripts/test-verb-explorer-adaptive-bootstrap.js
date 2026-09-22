@@ -91,7 +91,16 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.AdaptiveDependencyConnectorView.plan, 'function');
     assert.strictEqual(typeof sandbox.AdaptiveDependencyConnectorView.draw, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerLearnerTrailSurface.install, 'function');
-    assert.strictEqual(clickListeners.length, 4, 'bootstrap should install choice, support-audio, sentence-built, and read-only Trail refresh listeners');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerDependencyFocusInteraction.install, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerDependencyFocusInteraction.updateStructure, 'function');
+    for (const type of ['pointerover','pointerup','focusin','keydown']) {
+      assert.strictEqual(
+        (eventListeners[type] || []).length,
+        1,
+        'dependency focus pointer/focus/key listeners must install once: '+type
+      );
+    }
+    assert.strictEqual(clickListeners.length, 4, 'bootstrap click listeners should remain choice, support-audio, sentence-built, and read-only Trail refresh only');
 
     // Exercise the grounded Attempt Source on this CI-routed test without wiring it live yet.
     load('js/choice-attempt-source.js');
@@ -116,7 +125,10 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
 
     return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
       assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
-      assert.strictEqual(clickListeners.length, 4, 'second bootstrap must not duplicate adaptive listeners');
+      assert.strictEqual(clickListeners.length, 4, 'second bootstrap must not duplicate adaptive click listeners');
+      for (const type of ['pointerover','pointerup','focusin','keydown']) {
+        assert.strictEqual((eventListeners[type] || []).length, 1, 'second bootstrap must not duplicate '+type+' listener');
+      }
       console.log('Verb Explorer adaptive browser bootstrap: PASS — Choice, grounded support-audio, sentence-built, and read-only learner Trail bridges remain ordered and idempotent.');
     });
   })
