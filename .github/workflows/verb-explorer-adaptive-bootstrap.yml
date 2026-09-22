@@ -227,6 +227,10 @@ jobs:
         run: node scripts/test-adaptive-dependency-head-probe-result.js
       - name: Test Dependency Head Probe evidence bridge
         run: node scripts/test-adaptive-dependency-head-probe-evidence-bridge.js
+      - name: Test Dependency Head Probe attempt ownership
+        run: node scripts/test-adaptive-dependency-head-probe-attempt-boundary.js
+      - name: Test Dependency Head Probe Cycle integration
+        run: node scripts/test-dependency-head-probe-cycle.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
