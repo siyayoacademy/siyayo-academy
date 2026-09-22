@@ -1,0 +1,68 @@
+{
+  "version": "0.1.0",
+  "id": "all-these-three-books",
+  "language": "en",
+  "sentence": "All these three books.",
+  "tokens": [
+    {
+      "id": "all",
+      "index": 1,
+      "form": "All",
+      "wordClass": "DET"
+    },
+    {
+      "id": "these",
+      "index": 2,
+      "form": "these",
+      "wordClass": "DET"
+    },
+    {
+      "id": "three",
+      "index": 3,
+      "form": "three",
+      "wordClass": "NUM"
+    },
+    {
+      "id": "books",
+      "index": 4,
+      "form": "books",
+      "wordClass": "NOUN"
+    }
+  ],
+  "relations": [
+    {
+      "head": "books",
+      "dependent": "all",
+      "relation": "det"
+    },
+    {
+      "head": "books",
+      "dependent": "these",
+      "relation": "det"
+    },
+    {
+      "head": "books",
+      "dependent": "three",
+      "relation": "nummod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "Universal Dependencies v2",
+    "example": "All these three books",
+    "relations": [
+      "det(books, All)",
+      "det(books, these)",
+      "nummod(books, three)"
+    ]
+  }
+}
