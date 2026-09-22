@@ -35,6 +35,7 @@
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailLabel','js/adaptive-learner-trail-label.js');})
       .then(function(){return ensureGlobal('AdaptiveDependencyFocusView','js/adaptive-dependency-focus-view.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerDependencyFocusSurface','js/verb-explorer-dependency-focus-surface.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerDependencyFocusInteraction','js/verb-explorer-dependency-focus-interaction.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerProgressMarker','js/adaptive-learner-progress-marker.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerTrailSurface','js/verb-explorer-learner-trail-surface.js');})
       .then(function(){return ensureGlobal('AdaptiveProgressionDecision','js/adaptive-progression-decision.js');})
