@@ -112,10 +112,14 @@ const coordinator={
 };
 
 const wire={
-  install(view,options){
+  render(view){
     container.innerHTML=view.alternatives.map(item=>
       '<button data-dependency-head-probe-select="'+item.id+'">'+item.form+'</button>'
     ).join('');
+    return true;
+  },
+  install(view,options){
+    this.render(view);
     container.binding=options;
     return true;
   }
@@ -180,9 +184,12 @@ assert.equal(Live.mount({
   structure,
   language:'en',
   coordinator:noSkillCoordinator
-}),false);
-assert.equal(panel.hidden,true,'missing canonical Session skill must preserve hidden WAIT');
+}),true);
+assert.equal(panel.hidden,false,'canonical probe presentation remains visible during Session WAIT');
+assert.equal(panel.dataset.assessmentState,'waiting');
+assert.match(container.innerHTML,/books/);
+assert.equal(container.binding,undefined,'WAIT presentation must not install assessed learner-event binding');
 
 console.log(
-  'Verb Explorer live Dependency Head Probe: PASS — canonical Experience metadata mounts one centered assessed surface only for a grounded Session; BOOKS click flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
+  'Verb Explorer live Dependency Head Probe: PASS — canonical probe stays centered and visible through Session WAIT, activates only with grounded Session authority, and BOOKS selection flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
 );
