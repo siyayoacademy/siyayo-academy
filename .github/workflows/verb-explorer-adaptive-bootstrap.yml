@@ -203,6 +203,8 @@ jobs:
         run: node scripts/test-adaptive-learner-trail-sequence.js
       - name: Test learner Trail current-position illumination
         run: node scripts/test-adaptive-learner-trail-position.js
+      - name: Test learner-facing Trail word label
+        run: node scripts/test-adaptive-learner-trail-label.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
