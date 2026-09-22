@@ -95,3 +95,15 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-connector-path{fill:none;stroke:#50c878;stroke-width:2.4;vector-effect:non-scaling-stroke}
 .dependency-connector-overlay marker path{fill:#50c878}
 .dependency-connector-label{fill:#d7f4df;font-size:10px;font-weight:900;letter-spacing:.04em}
+
+
+.dependency-head-probe-panel{margin:0 auto 18px;padding:14px 16px;border:1px solid rgba(215,179,90,.38);border-radius:16px;background:rgba(4,14,28,.62);text-align:center}
+.dependency-head-probe{display:grid;gap:12px;justify-items:center}
+.dependency-head-probe-prompt{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2vw,1.2rem);font-weight:800;text-align:center}
+.dependency-head-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.dependency-head-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font-weight:900;letter-spacing:.06em;cursor:pointer}
+.dependency-head-probe-options button:hover,.dependency-head-probe-options button:focus-visible{border-color:#f5c542;color:#f5c542;outline:none;box-shadow:0 0 16px rgba(245,197,66,.16)}
+.dependency-head-probe-feedback{margin-top:12px;padding:9px 12px;border-radius:10px;font-size:.78rem;font-weight:900;letter-spacing:.08em}
+.dependency-head-probe-feedback[data-result="pass"]{color:#d7f4df;border:1px solid rgba(80,200,120,.55);background:rgba(80,200,120,.08)}
+.dependency-head-probe-feedback[data-result="fail"]{color:#f6d7a9;border:1px solid rgba(215,179,90,.45);background:rgba(215,179,90,.08)}
+@media(max-width:480px){.dependency-head-probe-panel{padding:12px}.dependency-head-probe-options button{min-width:82px;padding:9px 12px;font-size:.75rem}}
