@@ -4,6 +4,7 @@ const vm = require('vm');
 
 const appended = [];
 const clickListeners = [];
+const eventListeners = Object.create(null);
 const context = {
   console,
   Promise,
@@ -24,6 +25,7 @@ const context = {
     },
     addEventListener(type, handler) {
       if (type === 'click') clickListeners.push(handler);
+      (eventListeners[type] || (eventListeners[type] = [])).push(handler);
     }
   }
 };
