@@ -81,6 +81,39 @@ for (const result of [books, three]) {
   }
 }
 
+
+const tenKinds = Object.freeze({
+  tokens: Object.freeze([
+    Object.freeze({ id:'pronoun', index:1, form:'we', wordClass:'PRONOUN' }),
+    Object.freeze({ id:'verb', index:2, form:'see', wordClass:'VERB' }),
+    Object.freeze({ id:'adjective', index:3, form:'bright', wordClass:'ADJECTIVE' }),
+    Object.freeze({ id:'conjunction', index:4, form:'and', wordClass:'CONJUNCTION' }),
+    Object.freeze({ id:'article', index:5, form:'the', wordClass:'ARTICLE' }),
+    Object.freeze({ id:'adverb', index:6, form:'clearly', wordClass:'ADVERB' }),
+    Object.freeze({ id:'preposition', index:7, form:'with', wordClass:'PREPOSITION' }),
+    Object.freeze({ id:'interjection', index:8, form:'wow', wordClass:'INTERJECTION' }),
+    Object.freeze({ id:'noun', index:9, form:'pattern', wordClass:'NOUN' }),
+    Object.freeze({ id:'numeral', index:10, form:'two', wordClass:'NUMERAL' })
+  ]),
+  relations: Object.freeze([
+    Object.freeze({ head:'verb', dependent:'pronoun', relation:'subject' }),
+    Object.freeze({ head:'noun', dependent:'adjective', relation:'modifier' }),
+    Object.freeze({ head:'verb', dependent:'conjunction', relation:'connector' }),
+    Object.freeze({ head:'noun', dependent:'article', relation:'determiner' }),
+    Object.freeze({ head:'verb', dependent:'adverb', relation:'modifier' }),
+    Object.freeze({ head:'noun', dependent:'preposition', relation:'relation-marker' }),
+    Object.freeze({ head:'verb', dependent:'interjection', relation:'discourse' }),
+    Object.freeze({ head:'verb', dependent:'noun', relation:'object' }),
+    Object.freeze({ head:'noun', dependent:'numeral', relation:'numeric-modifier' })
+  ])
+});
+
+for (const token of tenKinds.tokens) {
+  const result = Focus.resolve(tenKinds, token.id);
+  assert.ok(result, 'TEN KINDS genericity: '+token.wordClass+' must be focusable');
+  assert.equal(result.focus.wordClass, token.wordClass);
+}
+
 assert.equal(
   JSON.stringify(fixture),
   JSON.stringify(JSON.parse(fs.readFileSync('data/learning/dependencies/all-these-three-books.json','utf8'))),
@@ -88,5 +121,5 @@ assert.equal(
 );
 
 console.log(
-  'Adaptive Dependency Focus View: PASS — BOOKS exposes ALL/THESE/THREE as grounded dependents and THREE resolves back to BOOKS through nummod, with no parser inference or pedagogical authority.'
+  'Adaptive Dependency Focus View: PASS — grounded head/dependent resolution is word-class agnostic across the TEN KINDS; BOOKS exposes ALL/THESE/THREE and THREE resolves back to BOOKS through nummod, with no parser inference or pedagogical authority.'
 );
