@@ -97,7 +97,7 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-connector-label{fill:#d7f4df;font-size:10px;font-weight:900;letter-spacing:.04em}
 
 
-.dependency-head-probe-panel{margin:0 auto 18px;padding:14px 16px;border:1px solid rgba(215,179,90,.38);border-radius:16px;background:rgba(4,14,28,.62);text-align:center}
+.dependency-head-probe-panel{width:min(760px,100%);margin:0 auto 20px;padding:16px 18px;border:1px solid rgba(215,179,90,.38);border-radius:16px;background:rgba(4,14,28,.62);text-align:center}
 .dependency-head-probe{display:grid;gap:12px;justify-items:center}
 .dependency-head-probe-prompt{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2vw,1.2rem);font-weight:800;text-align:center}
 .dependency-head-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
@@ -107,3 +107,5 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-head-probe-feedback[data-result="pass"]{color:#d7f4df;border:1px solid rgba(80,200,120,.55);background:rgba(80,200,120,.08)}
 .dependency-head-probe-feedback[data-result="fail"]{color:#f6d7a9;border:1px solid rgba(215,179,90,.45);background:rgba(215,179,90,.08)}
 @media(max-width:480px){.dependency-head-probe-panel{padding:12px}.dependency-head-probe-options button{min-width:82px;padding:9px 12px;font-size:.75rem}}
+
+.dependency-head-probe-panel[data-assessment-state="waiting"] .dependency-head-probe-options button{opacity:.62;cursor:wait}
