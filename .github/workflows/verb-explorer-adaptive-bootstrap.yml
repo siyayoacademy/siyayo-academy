@@ -219,6 +219,8 @@ jobs:
         run: node scripts/test-adaptive-dependency-connector-view.js
       - name: Test Dependency Head Probe definition
         run: node scripts/test-adaptive-dependency-head-probe-definition.js
+      - name: Test Dependency Head Probe presenter
+        run: node scripts/test-adaptive-dependency-head-probe-presenter.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
