@@ -195,6 +195,8 @@ jobs:
         run: node scripts/test-verb-explorer-live-evidence-profile-continuity.js
       - name: Test read-only learner trail projection
         run: node scripts/test-adaptive-learner-trail-view.js
+      - name: Test evidence-grounded progress marker semantics
+        run: node scripts/test-adaptive-learner-progress-marker.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
