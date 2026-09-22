@@ -75,3 +75,16 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-trail-current-unvisited b{color:#f5c542}
 
 .learner-trail-meta{color:#8ea3bc;font-size:.61rem;font-weight:800;letter-spacing:.05em}
+
+.dependency-focus-surface{margin:0 0 18px;padding:12px 14px;border:1px solid rgba(122,162,255,.28);border-radius:14px;background:rgba(4,14,28,.46)}
+.dependency-focus-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+.dependency-focus-heading span{color:#8ea3bc;font-size:.62rem;font-weight:900;letter-spacing:.12em}
+.dependency-focus-heading strong{color:#f5c542;font-size:.78rem}
+.dependency-token-row{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.dependency-token{display:grid;gap:2px;min-width:76px;padding:8px 10px;border:1px solid rgba(122,162,255,.28);border-radius:10px;background:rgba(0,0,0,.18)}
+.dependency-token b{font-size:.9rem;color:#eef4ff}
+.dependency-token small{font-size:.61rem;font-weight:900;letter-spacing:.08em;color:#8ea3bc}
+.dependency-token em{font-size:.6rem;font-style:normal;color:#50c878}
+.dependency-token-focus{border-color:#f5c542;box-shadow:0 0 16px rgba(245,197,66,.16)}
+.dependency-token-head{border-color:#50c878}
+.dependency-token-dependent{border-color:rgba(80,200,120,.55)}
