@@ -18,7 +18,142 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-00
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-01
+
+**Status:** ACTIVE  
+**Recorded:** 2026-09-22  
+**Repository:** `siyayoacademy/siyayo-academy`  
+**Active branch:** `jaguar/verb-explorer-resume-live-wire`  
+**Base:** `main`  
+**Checkpoint source HEAD before this documentation commit:** `3d4a71802d393f56d9417be5f3f5f81e4624a387`  
+**CI at source HEAD:** GREEN — Resume Runtime Dispatch, Corpus Integrity, Verb Explorer Adaptive Bootstrap.  
+**Cloudflare:** deploy successful for `3d4a718`; laptop visual validation completed by the user.
+
+## DONE — live learner progression + longitudinal Trail
+
+The browser runtime now preserves the adaptive chain through learner-owned progression:
+
+```text
+Choice / observed learner action
+  -> Cycle
+  -> GREEN_PASS / longitudinal closure
+  -> AdaptiveEvidenceProfile
+  -> Convergence
+  -> explicit learner NEXT
+  -> ProgressionDecision
+  -> SessionTransitionBoundary
+  -> S1 release
+  -> S2 activation with prior evidence
+```
+
+The learner-facing Trail is read-only and evidence-grounded:
+
+```text
+AdaptiveEvidenceProfile
+  -> LearnerTrailView
+  -> LearnerProgressMarker
+  -> chronological Experience sequence
+  -> current-position illumination
+  -> learner-facing canonical word label
+```
+
+Semantic markers:
+
+```text
+○ UNOBSERVED
+◐ IN_PROGRESS
+● CONFIRMED
+★ CONSOLIDATED_EVIDENCE
+```
+
+Current position never becomes evidence merely because the learner is there.
+
+## DONE — Dependency Focus visual syntax
+
+Canonical fixture:
+
+`data/learning/dependencies/all-these-three-books.json`
+
+Grounded example:
+
+```text
+All    -> books   det
+these  -> books   det
+three  -> books   nummod
+```
+
+Live architecture:
+
+```text
+Experience.dependencyFocus
+  -> AdaptiveDependencyFocusView
+  -> AdaptiveDependencyConnectorView
+  -> SIYAYOVerbExplorerDependencyFocusSurface
+  -> SIYAYOVerbExplorerDependencyFocusInteraction
+```
+
+Capabilities proven by tests and laptop visual validation:
+
+- word-class-agnostic focus across the Ten Kinds;
+- head ↔ dependent resolution from canonical data only;
+- responsive SVG curves and relation labels;
+- mouse / pen / touch / keyboard focus boundaries;
+- Enter / Space accessible activation;
+- focus migration BOOKS ↔ ALL / THESE / THREE;
+- no parser inference;
+- no LearnerEvent, Evidence, score, mastery, Green Pass or progression produced by exploratory focus;
+- live `shopping-for-dinner` Experience binding;
+- pleasant green connector layer and gold current-focus layer validated visually on laptop.
+
+Manual smartphone validation remains pending because the user's current network connection is unstable during heavy rain; do not classify that as a runtime defect without reproduction.
+
+## WAIT / PERAÍ — Dependency Focus invariants
+
+- Pointing / hover / focus is exploratory navigation, not assessment evidence.
+- Do not emit a pedagogical LearnerEvent merely because a token is highlighted.
+- Do not infer a missing syntactic relation; canonical dependency data is authoritative.
+- Keep dependency visualization separate from Green Pass authority.
+- Keep Trail state separate from dependency relation state.
+- SVG/color/presentation may vary, but canonical relation identity must remain stable.
+- Smartphone validation is pending external network recovery; preserve the current working laptop behavior.
+
+## NOW — next pedagogical layer
+
+The visual relation substrate is complete enough to support an explicit learner task such as:
+
+```text
+"Which word is the head?"
+```
+
+Unlike hover/focus, an explicit answer may legitimately become an observed LearnerEvent if and only if a dedicated probe/presentation/result contract defines that modality.
+
+## NEXT GO
+
+READ-ONLY audit before any write:
+
+1. inspect existing determiner-use / transfer / contrast probe presentation and browser-wire contracts;
+2. identify the smallest reusable authority pattern for a Dependency Head Probe;
+3. define the exact boundary between exploratory `DependencyFocusInteraction` and explicit assessed answer;
+4. only then open the first RED for a learner-owned head-identification event.
+
+Expected conceptual chain:
+
+```text
+canonical dependency structure
+  -> HeadProbeDefinition
+  -> explicit learner answer
+  -> LearnerEvent (single observed occurrence)
+  -> HeadProbeResult
+  -> Evidence
+  -> adaptive Cycle
+```
+
+No parser magic. No evidence from hover. No automatic Green Pass.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-00
+
 
 **Status:** ACTIVE  
 **Recorded:** 2026-09-16  
