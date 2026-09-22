@@ -47,6 +47,7 @@
 
     var profileSource=options.profileSource||root.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource;
     var skillSource=options.skillSource||root.SIYAYOVerbExplorerCanonicalSkillSource;
+    var labelView=options.labelView||root.AdaptiveLearnerTrailLabel;
     var trailView=options.trailView||root.AdaptiveLearnerTrailView;
     var sequenceView=options.sequenceView||root.AdaptiveLearnerTrailSequence;
     var positionView=options.positionView||root.AdaptiveLearnerTrailPosition;
@@ -54,7 +55,8 @@
     var stateBridge=options.stateBridge||root.SIYAYOVerbExplorerAdaptiveStateBridge;
 
     if(!profileSource||typeof profileSource.getProfile!=='function')return false;
-    if(!skillSource||typeof skillSource.getSkill!=='function')return false;
+    if(!skillSource||typeof skillSource.getSkill!=='function'||typeof skillSource.getDefinition!=='function')return false;
+    if(!labelView||typeof labelView.project!=='function')return false;
     if(!trailView||typeof trailView.project!=='function')return false;
     if(!sequenceView||typeof sequenceView.project!=='function')return false;
     if(!positionView||typeof positionView.resolve!=='function')return false;
@@ -62,8 +64,10 @@
     if(!stateBridge||typeof stateBridge.getState!=='function')return false;
 
     var profile=profileSource.getProfile();
+    var definition=skillSource.getDefinition();
     var skill=text(skillSource.getSkill());
-    if(!profile||!skill)return false;
+    var label=labelView.project(definition);
+    if(!profile||!skill||!label||label.skill!==skill)return false;
 
     var trail=trailView.project(profile,skill);
     if(!trail)return false;
@@ -100,7 +104,8 @@
       '<div class="learner-trail-mark" aria-hidden="true">'+escapeHtml(markerGlyph)+'</div>'+
       '<div class="learner-trail-copy">'+
         '<span class="learner-trail-label">LEARNING TRAIL</span>'+
-        '<strong>'+escapeHtml(skill)+'</strong>'+
+        '<strong>'+escapeHtml(label.form)+'</strong>'+
+        '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
         '<small>'+escapeHtml(stateLabel(marker.state))+' · '+escapeHtml(contexts)+'</small>'+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
       '</div>';
