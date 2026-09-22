@@ -76,7 +76,13 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceSupportObserver.install, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOChoiceSupportSensor.observe, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerSentenceBuiltObserver.install, 'function');
-    assert.strictEqual(clickListeners.length, 3, 'bootstrap should install one choice, one support-audio, and one sentence-built listener');
+    assert(appended.includes('js/adaptive-learner-trail-view.js'), 'learner Trail projection should be loaded by adaptive bootstrap');
+    assert(appended.includes('js/adaptive-learner-progress-marker.js'), 'learner progress marker semantics should be loaded by adaptive bootstrap');
+    assert(appended.includes('js/verb-explorer-learner-trail-surface.js'), 'learner Trail surface should be loaded by adaptive bootstrap');
+    assert.strictEqual(typeof sandbox.AdaptiveLearnerTrailView.project, 'function');
+    assert.strictEqual(typeof sandbox.AdaptiveLearnerProgressMarker.resolve, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerLearnerTrailSurface.install, 'function');
+    assert.strictEqual(clickListeners.length, 4, 'bootstrap should install choice, support-audio, sentence-built, and read-only Trail refresh listeners');
 
     // Exercise the grounded Attempt Source on this CI-routed test without wiring it live yet.
     load('js/choice-attempt-source.js');
@@ -101,8 +107,8 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
 
     return sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap().then(function(secondCycle){
       assert.strictEqual(secondCycle, cycle, 'second bootstrap should reuse the same Cycle');
-      assert.strictEqual(clickListeners.length, 3, 'second bootstrap must not duplicate adaptive listeners');
-      console.log('Verb Explorer adaptive browser bootstrap: PASS — Choice, grounded support-audio, and sentence-built bridges remain ordered and idempotent.');
+      assert.strictEqual(clickListeners.length, 4, 'second bootstrap must not duplicate adaptive listeners');
+      console.log('Verb Explorer adaptive browser bootstrap: PASS — Choice, grounded support-audio, sentence-built, and read-only learner Trail bridges remain ordered and idempotent.');
     });
   })
   .catch(function(error) {
