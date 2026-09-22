@@ -231,6 +231,8 @@ jobs:
         run: node scripts/test-adaptive-dependency-head-probe-attempt-boundary.js
       - name: Test Dependency Head Probe Cycle integration
         run: node scripts/test-dependency-head-probe-cycle.js
+      - name: Test live Dependency Head Probe integration
+        run: node scripts/test-verb-explorer-dependency-head-probe-live.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
