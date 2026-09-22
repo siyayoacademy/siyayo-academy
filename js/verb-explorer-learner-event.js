@@ -4,6 +4,7 @@
   var contrastProbeOccurrenceSequence=0;
   var determinerUseProbeOccurrenceSequence=0;
   var determinerUseTransferProbeOccurrenceSequence=0;
+  var dependencyHeadProbeOccurrenceSequence=0;
   var toroidalNextOccurrenceSequence=0;
 
   function nextChoiceOccurrenceId(){
@@ -24,6 +25,11 @@
   function nextDeterminerUseTransferProbeOccurrenceId(){
     determinerUseTransferProbeOccurrenceSequence+=1;
     return 'determiner-use-transfer-probe-select:'+determinerUseTransferProbeOccurrenceSequence;
+  }
+
+  function nextDependencyHeadProbeOccurrenceId(){
+    dependencyHeadProbeOccurrenceSequence+=1;
+    return 'dependency-head-probe-select:'+dependencyHeadProbeOccurrenceSequence;
   }
 
   function nextToroidalNextOccurrenceId(){
@@ -123,6 +129,34 @@
     });
   }
 
+  function fromDependencyHeadProbeSelect(choice, state){
+    if(!choice)return null;
+    state=state||{};
+    if(
+      !state.currentExperienceId||
+      !state.structureId||
+      !state.language||
+      state.dimension!=='head-identification'||
+      !state.targetTokenId
+    )return null;
+
+    return Object.freeze({
+      observed:true,
+      actor:'learner',
+      relevantToWait:true,
+      intent:'continue',
+      type:'learner-response',
+      source:'dependency-head-probe-select',
+      occurrenceId:nextDependencyHeadProbeOccurrenceId(),
+      choice:String(choice),
+      experienceId:String(state.currentExperienceId),
+      structureId:String(state.structureId),
+      language:String(state.language),
+      dimension:'head-identification',
+      targetTokenId:String(state.targetTokenId)
+    });
+  }
+
   function fromToroidalNextSelect(toExperienceId, state){
     state=state||{};
     var fromExperienceId=state.currentExperienceId||state.experienceId||null;
@@ -168,6 +202,7 @@
     fromContrastProbeSelect:fromContrastProbeSelect,
     fromDeterminerUseProbeSelect:fromDeterminerUseProbeSelect,
     fromDeterminerUseTransferProbeSelect:fromDeterminerUseTransferProbeSelect,
+    fromDependencyHeadProbeSelect:fromDependencyHeadProbeSelect,
     fromToroidalNextSelect:fromToroidalNextSelect,
     fromSentenceBuilt:fromSentenceBuilt
   });
