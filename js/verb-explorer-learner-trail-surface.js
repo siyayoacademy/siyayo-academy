@@ -49,13 +49,17 @@
     var skillSource=options.skillSource||root.SIYAYOVerbExplorerCanonicalSkillSource;
     var trailView=options.trailView||root.AdaptiveLearnerTrailView;
     var sequenceView=options.sequenceView||root.AdaptiveLearnerTrailSequence;
+    var positionView=options.positionView||root.AdaptiveLearnerTrailPosition;
     var markerAuthority=options.markerAuthority||root.AdaptiveLearnerProgressMarker;
+    var stateBridge=options.stateBridge||root.SIYAYOVerbExplorerAdaptiveStateBridge;
 
     if(!profileSource||typeof profileSource.getProfile!=='function')return false;
     if(!skillSource||typeof skillSource.getSkill!=='function')return false;
     if(!trailView||typeof trailView.project!=='function')return false;
     if(!sequenceView||typeof sequenceView.project!=='function')return false;
+    if(!positionView||typeof positionView.resolve!=='function')return false;
     if(!markerAuthority||typeof markerAuthority.resolve!=='function')return false;
+    if(!stateBridge||typeof stateBridge.getState!=='function')return false;
 
     var profile=profileSource.getProfile();
     var skill=text(skillSource.getSkill());
@@ -65,17 +69,29 @@
     if(!trail)return false;
     var marker=markerAuthority.resolve(trail);
     var sequence=sequenceView.project(trail);
-    if(!marker||!sequence)return false;
+    var liveState=stateBridge.getState();
+    if(!marker||!sequence||!liveState)return false;
+    var position=positionView.resolve(sequence,liveState.currentExperienceId);
+    if(!position)return false;
 
     var confirmed=Number(marker.confirmedExperiences)||0;
     var contexts=confirmed===1?'1 CONTEXT':confirmed+' CONTEXTS';
     var markerGlyph=glyph(marker.marker);
-    var segmentHtml=sequence.segments.map(function(segment){
-      return '<span class="learner-trail-segment" data-state="'+escapeHtml(segment.state)+'">'+
+    var segmentHtml=sequence.segments.map(function(segment,index){
+      var current=index===position.segmentIndex;
+      return '<span class="learner-trail-segment" data-state="'+escapeHtml(segment.state)+'"'+
+        (current?' data-current="true" aria-current="step"':'')+'>'+
         '<b aria-hidden="true">'+escapeHtml(glyph(segment.marker))+'</b>'+
         '<em>'+escapeHtml(segment.experienceId)+'</em>'+
       '</span>';
     }).join('');
+
+    if(position.visited===false){
+      segmentHtml+='<span class="learner-trail-segment learner-trail-current-unvisited" data-current="true" aria-current="step">'+
+        '<b aria-hidden="true">◌</b>'+
+        '<em>'+escapeHtml(position.currentExperienceId)+'</em>'+
+      '</span>';
+    }
 
     surface.dataset.marker=marker.marker;
     surface.dataset.state=marker.state;
