@@ -197,6 +197,8 @@ jobs:
         run: node scripts/test-adaptive-learner-trail-view.js
       - name: Test evidence-grounded progress marker semantics
         run: node scripts/test-adaptive-learner-progress-marker.js
+      - name: Test read-only learner trail surface
+        run: node scripts/test-verb-explorer-learner-trail-surface.js
       - name: Test grounded Coordinator configuration seam
         run: node scripts/test-verb-explorer-adaptive-coordinator-config.js
       - name: Test grounded adaptive Composer
