@@ -39,6 +39,8 @@ jobs:
         run: node scripts/test-verb-explorer-canonical-skill-loader.js
       - name: Test explicit learner identity provider
         run: node scripts/test-verb-explorer-learner-identity-provider.js
+      - name: Test explicit learner identity surface
+        run: node scripts/test-verb-explorer-learner-identity-surface.js
       - name: Test Leaf assessment target authority
         run: node scripts/test-leaf-assessment-target-authority.js
       - name: Test Leaf assessment target readiness
