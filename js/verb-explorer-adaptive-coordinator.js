@@ -66,6 +66,31 @@
     return convergence.resolve({candidateGrounding:candidateGrounding,pedagogicalState:observedState});
   }
 
+  function retainObservedAttempt(session,sourceContext,result,attempt,learnerEvent){
+    if(!result||!result.evidencePacket)return false;
+
+    var authority=root.AdaptiveObservedAttemptEvidenceSource;
+    var profileSource=root.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource;
+    var profileApi=root.AdaptiveEvidenceProfile;
+
+    // Compatibility: older/non-live consumers may not load longitudinal attempt authority.
+    // The live bootstrap does, so accepted learner Attempts leave a non-confirmatory footprint.
+    if(!authority||typeof authority.record!=='function')return true;
+    if(!profileSource||typeof profileSource.getProfile!=='function')return false;
+    if(!profileApi||typeof profileApi.record!=='function')return false;
+
+    var evidenceProfile=profileSource.getProfile();
+    if(!evidenceProfile)return false;
+
+    return authority.record(profileApi,evidenceProfile,{
+      cycleResult:result,
+      session:session,
+      attempt:attempt,
+      learnerEvent:learnerEvent,
+      context:sourceContext||{}
+    })===evidenceProfile;
+  }
+
   function retainContractClosure(session,sourceContext,result){
     if(!result||result.contractEligible!==true)return true;
     var contract=result.contractEvaluation;
@@ -130,6 +155,7 @@
       resumeState:resumeState
     });
     if(!result)return null;
+    if(retainObservedAttempt(current.session,sourceContext,result,attempt,learnerEvent)!==true)return null;
     if(retainContractClosure(current.session,sourceContext,result)!==true)return null;
 
     var convergenceResult=resolveConvergence(current.session,sourceContext,result);
@@ -185,6 +211,7 @@
       return null;
     }
     if(!result)return null;
+    if(retainObservedAttempt(current.session,sourceContext,result,attempt,learnerEvent)!==true)return null;
     if(retainContractClosure(current.session,sourceContext,result)!==true)return null;
 
     var convergenceResult=resolveConvergence(current.session,sourceContext,result);
