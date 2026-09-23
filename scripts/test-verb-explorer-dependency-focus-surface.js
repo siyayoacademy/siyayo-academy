@@ -63,8 +63,8 @@ assert.match(surface.innerHTML, /data-token-id="all"[^>]*data-role="dependent"/)
 assert.match(surface.innerHTML, /data-token-id="these"[^>]*data-role="dependent"/);
 assert.match(surface.innerHTML, /data-token-id="three"[^>]*data-role="dependent"/);
 assert.match(surface.innerHTML, />NOUN</);
-assert.match(surface.innerHTML, />DET</);
-assert.match(surface.innerHTML, />NUM</);
+assert.match(surface.innerHTML, />DETERMINER</);
+assert.match(surface.innerHTML, />NUMERAL</);
 assert.match(surface.innerHTML, />det</);
 assert.match(surface.innerHTML, />nummod</);
 
