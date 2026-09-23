@@ -18,6 +18,60 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
+# GLOBAL CONTRACT — SIYAYO TRI-LANGUAGE DNA
+
+**Status:** HOMOLOGATED — mandatory across the whole web/app.  
+**Scope:** every chapter, every Kind of Word, Question Word, verb function, modal function, tense, Experience, Dependency Focus, Thinking Mind, probe, audio surface, Green Pass, Learning Trail and future SIYAYO surface.
+
+## Three canonical language DNAs
+
+English, Español and Português are three first-class canonical linguistic systems. They are **not** generated as translations of one another and no language is the linguistic source of truth for the other two.
+
+```text
+ENGLISH DNA <-> ESPAÑOL DNA <-> PORTUGUÊS DNA
+```
+
+Each language preserves its own canonical form, function, syntax, semantics, usage, pronunciation/audio, contextual relations and pedagogical realization. English may act as a pedagogical guide or "lantern" when useful, but Español and Português remain independent canonical realizations rather than translated derivatives of English.
+
+## Cross-language interaction is a first-class priority
+
+The SIYAYO differential is not only the integrity of each language DNA; it is also the learner's ability to **move freely among the three DNAs and compare/contrast them without integration gaps**.
+
+Therefore every applicable navigation surface, contextual link and cross-language relationship must preserve a continuous path among English, Español and Português. A feature is not considered fully integrated merely because three labels or three translated strings exist. Where the concept exists in the three languages, the learner must be able to reach, inspect and relate each language's own canonical realization.
+
+```text
+canonical English realization
+          <-> compare / contrast <->
+canonical Español realization
+          <-> compare / contrast <->
+canonical Português realization
+```
+
+Forbidden architectural shortcut:
+
+```text
+English -> automatic translation -> Español -> automatic translation -> Português
+```
+
+Cross-language navigation must remain learner-owned and must not be blocked by nickname/identity, Session, Evidence, Green Pass, mastery state or pedagogical recommendation. Assessment may observe and characterize learning; it must not become an access authority for language exploration.
+
+## Human labels versus internal codes
+
+Human-facing language names should prefer **ENGLISH / ESPAÑOL / PORTUGUÊS** in full whenever the interface has adequate space and the name carries pedagogical meaning. Internal identifiers such as `en`, `es` and `pt` remain valid implementation codes and must not be confused with the human-facing pedagogical layer.
+
+Likewise, technical grammar/dependency codes may remain compact where they function as map notation, while learner-facing explanations prefer complete human-readable terminology.
+
+## Integrity rule for all future development
+
+Any new chapter, Experience, word type, grammatical function or interaction must be reviewed in two dimensions before it is considered integrated:
+
+1. **intra-language integrity** — the implementation respects the independent canonical DNA of the language being studied;
+2. **inter-language continuity** — applicable links and interactions permit coherent free navigation/comparison across English, Español and Português without silently deriving one language from another.
+
+A missing cross-language path is an integration gap to be resolved, not an intentional consequence of the adaptive assessment system.
+
+---
+
 # ACTIVE CHECKPOINT — JAGUAR-LIVE-02
 
 **Status:** ACTIVE  
