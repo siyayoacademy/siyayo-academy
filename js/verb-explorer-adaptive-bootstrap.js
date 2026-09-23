@@ -82,6 +82,8 @@
       // Grounded Session startup authorities. Loading them does not create Identity,
       // choose a Leaf Target, infer Skill from Experience, or force a Session.
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerIdentitySource','js/verb-explorer-learner-identity-source.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerIdentityProvider','js/verb-explorer-learner-identity-provider.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerLearnerIdentitySurface','js/verb-explorer-learner-identity-surface.js');})
       .then(function(){return ensureGlobal('SIYAYOLeafAssessmentTargetAuthority','js/leaf-assessment-target-authority.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerCanonicalSkillSource','js/verb-explorer-canonical-skill-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerCanonicalSkillLoader','js/verb-explorer-canonical-skill-loader.js');})
@@ -107,6 +109,8 @@
         var liveStart=root.SIYAYOVerbExplorerAdaptiveLiveStart;
         if(!liveStart||typeof liveStart.tryCompose!=='function')return cycle;
         return Promise.resolve(liveStart.tryCompose({document:document})).then(function(){
+          var identitySurface=root.SIYAYOVerbExplorerLearnerIdentitySurface;
+          if(identitySurface&&typeof identitySurface.install==='function')identitySurface.install({document:document});
           var nextWire=root.SIYAYOVerbExplorerLiveNextWire;
           if(nextWire&&typeof nextWire.install==='function')nextWire.install({document:document});
           var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
