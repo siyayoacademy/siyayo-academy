@@ -107,6 +107,33 @@ function validateAcademyManifest(academy) {
 }
 
 
+function renderAcademyChapterStack(academy) {
+  const stack = document.getElementById("academyChapterStack");
+  if (!stack || !academy) return;
+
+  const entries = [
+    ...(academy.chapters ?? []).map(chapter => ({
+      number: String(chapter.number).padStart(2, "0"),
+      title: chapter.title,
+      status: chapter.status,
+      slug: chapter.slug
+    })),
+    ...(academy.extraModules ?? []).map(module => ({
+      number: "QW",
+      title: module.title,
+      status: module.status,
+      slug: module.slug
+    }))
+  ];
+
+  stack.innerHTML = entries.map(entry => {
+    const title = [entry.title?.en, entry.title?.es, entry.title?.pt].filter(Boolean).join(" · ");
+    const active = entry.status === "active";
+    return `<button class="academy-chapter-link${active ? " is-active" : ""}" type="button" data-academy-chapter="${escapeHtml(entry.slug || "")}" data-status="${escapeHtml(entry.status || "")}" aria-disabled="${active ? "false" : "true"}"><span>${escapeHtml(entry.number)}</span><strong>${escapeHtml(title)}</strong></button>`;
+  }).join("");
+}
+
+
 /* ========================================
    FIND ACTIVE CHAPTER
    ======================================== */
@@ -2256,6 +2283,8 @@ document.addEventListener(
     if (!academy) {
       return;
     }
+
+    renderAcademyChapterStack(academy);
 
 
     /* 2. Active Chapter */
