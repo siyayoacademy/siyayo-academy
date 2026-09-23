@@ -18,12 +18,11 @@ const Focus = require('../js/adaptive-dependency-focus-view.js');
 const books = Focus.resolve(fixture, 'books');
 assert.ok(books);
 assert.equal(books.status, 'DEPENDENCY_FOCUS_READY');
-assert.deepEqual(books.focus, {
-  id: 'books',
-  index: 4,
-  form: 'books',
-  wordClass: 'NOUN'
-});
+assert.equal(books.focus.id, 'books');
+assert.equal(books.focus.index, 4);
+assert.equal(books.focus.form, 'books');
+assert.equal(books.focus.wordClass, 'NOUN');
+assert.deepEqual(books.focus.pedagogy, fixture.tokens.find(item => item.id === 'books').pedagogy);
 assert.deepEqual(
   books.dependents.map(item => item.id),
   ['all','these','three']
@@ -40,18 +39,16 @@ assert.deepEqual(
 const three = Focus.resolve(fixture, 'three');
 assert.ok(three);
 assert.equal(three.status, 'DEPENDENCY_FOCUS_READY');
-assert.deepEqual(three.focus, {
-  id: 'three',
-  index: 3,
-  form: 'three',
-  wordClass: 'NUM'
-});
-assert.deepEqual(three.head, {
-  id: 'books',
-  index: 4,
-  form: 'books',
-  wordClass: 'NOUN'
-});
+assert.equal(three.focus.id, 'three');
+assert.equal(three.focus.index, 3);
+assert.equal(three.focus.form, 'three');
+assert.equal(three.focus.wordClass, 'NUM');
+assert.deepEqual(three.focus.pedagogy, fixture.tokens.find(item => item.id === 'three').pedagogy);
+assert.equal(three.head.id, 'books');
+assert.equal(three.head.index, 4);
+assert.equal(three.head.form, 'books');
+assert.equal(three.head.wordClass, 'NOUN');
+assert.deepEqual(three.head.pedagogy, fixture.tokens.find(item => item.id === 'books').pedagogy);
 assert.deepEqual(three.dependents, []);
 assert.deepEqual(three.relations, [
   {
