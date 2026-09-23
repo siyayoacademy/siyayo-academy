@@ -33,10 +33,7 @@ function runCase(label, adaptiveState) {
     document: {
       getElementById(id) { return id === 'nextExperience' ? nextCard : null; }
     },
-    goToExperience(id) {
-      navigationCalls += 1;
-      assert.equal(id, 'preparing-dinner');
-    },
+    SIYAYOVerbExplorerExperienceNavigation: Object.freeze({\n      goToExperience(id) {\n        navigationCalls += 1;\n        assert.equal(id, 'preparing-dinner');\n        return true;\n      }\n    }),
     AdaptiveProgressionDecision: Object.freeze({
       resolve() { progressionCalls += 1; throw new Error('navigation must not ask progression authority'); }
     }),
