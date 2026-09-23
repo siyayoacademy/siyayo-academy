@@ -30,6 +30,11 @@ function signal(options){
       if(headProbeRuntime&&typeof headProbeRuntime.render==='function'){
         headProbeRuntime.render();
       }
+
+      var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
+      if(trailSurface&&typeof trailSurface.refresh==='function'){
+        trailSurface.refresh({document:documentRef});
+      }
     }
     return ready;
   },function(){
