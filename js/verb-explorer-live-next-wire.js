@@ -29,7 +29,7 @@
       var toExperienceId=text(nextElement&&nextElement.dataset?nextElement.dataset.nextExperience:null);
       if(!toExperienceId)return null;
 
-      var navigate=options.goToExperience||root.goToExperience;
+      var navigation=options.navigation||root.SIYAYOVerbExplorerExperienceNavigation;\n      var navigate=options.goToExperience||(navigation&&navigation.goToExperience);
       if(typeof navigate!=='function')return null;
 
       // Navigation is intentionally independent from Identity, Session,
