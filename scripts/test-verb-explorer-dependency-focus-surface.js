@@ -84,6 +84,40 @@ assert.match(surface.innerHTML, /data-token-id="three"[^>]*data-role="focus"/);
 assert.match(surface.innerHTML, /data-token-id="books"[^>]*data-role="head"/);
 assert.match(surface.innerHTML, />nummod</);
 
+
+assert.equal(
+  Surface.render({ document: documentRef, structure, focusId: 'all', language: 'en' }),
+  true
+);
+assert.match(surface.innerHTML, /ALL \/ DETERMINER/i);
+assert.match(surface.innerHTML, /Quantifying Determiner/);
+assert.match(surface.innerHTML, />det</);
+
+assert.equal(
+  Surface.render({ document: documentRef, structure, focusId: 'these', language: 'es' }),
+  true
+);
+assert.match(surface.innerHTML, /these \/ DETERMINANTE/i);
+assert.match(surface.innerHTML, /Determinante demostrativo/);
+assert.match(surface.innerHTML, />det</);
+
+assert.equal(
+  Surface.render({ document: documentRef, structure, focusId: 'three', language: 'pt' }),
+  true
+);
+assert.match(surface.innerHTML, /three \/ NUMERAL/i);
+assert.match(surface.innerHTML, /Numeral cardinal/);
+assert.match(surface.innerHTML, />nummod</);
+
+assert.equal(
+  Surface.render({ document: documentRef, structure, focusId: 'books', language: 'pt' }),
+  true
+);
+assert.match(surface.innerHTML, /books \/ SUBSTANTIVO/i);
+assert.match(surface.innerHTML, /Núcleo da frase/);
+assert.match(surface.innerHTML, />det</);
+assert.match(surface.innerHTML, />nummod</);
+
 assert.equal(
   Surface.render({ document: documentRef, structure, focusId: 'missing-token' }),
   false,
@@ -91,5 +125,5 @@ assert.equal(
 );
 
 console.log(
-  'Verb Explorer Dependency Focus Surface: PASS — canonical BOOKS/THREE focus renders read-only HEAD/dependent roles and grounded relation labels without interaction, parser inference, evidence, score, mastery, or Green Pass.'
+  'Verb Explorer Dependency Focus Surface: PASS — canonical focus renders trilingual full human terminology while preserving compact grounded relation labels without interaction, parser inference, evidence, score, mastery, or Green Pass.'
 );
