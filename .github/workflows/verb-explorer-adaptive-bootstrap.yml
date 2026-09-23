@@ -223,6 +223,8 @@ jobs:
         run: node scripts/test-verb-explorer-dependency-focus-live-experience.js
       - name: Test tri-language Dependency DNA
         run: node scripts/test-verb-explorer-trilanguage-dependency-dna.js
+      - name: Test tri-language Thinking Mind labels
+        run: node scripts/test-verb-explorer-thinking-mind-trilanguage.js
       - name: Test SVG Dependency Connector View
         run: node scripts/test-adaptive-dependency-connector-view.js
       - name: Test explicit Thinking Mind assessment Target selection
