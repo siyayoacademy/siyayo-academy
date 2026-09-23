@@ -105,6 +105,7 @@
       "required": [
         "intention",
         "questionWord",
+        "questionWordLabel",
         "question"
       ],
       "additionalProperties": false,
@@ -114,6 +115,9 @@
         },
         "questionWord": {
           "type": "string"
+        },
+        "questionWordLabel": {
+          "$ref": "#/$defs/trilingual"
         },
         "question": {
           "$ref": "#/$defs/trilingual"
