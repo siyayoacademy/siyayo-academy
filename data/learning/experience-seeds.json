@@ -263,22 +263,30 @@
         "nice-party"
       ],
       "dependencyFocus": {
-        "structureId": "all-these-three-books",
+        "structureIds": {
+          "en": "all-these-three-books",
+          "es": "todos-estos-tres-libros",
+          "pt": "todos-estes-tres-livros"
+        },
         "defaultFocus": "books"
       },
       "dependencyHeadProbe": {
-        "structureId": "all-these-three-books",
         "targetTokenId": "three",
         "prompt": {
           "en": "Which word is the head of “three”?",
-          "es": "¿Qué palabra es el núcleo de “three”?",
-          "pt": "Qual palavra é o núcleo de “three”?"
+          "es": "¿Qué palabra es el núcleo de “tres”?",
+          "pt": "Qual palavra é o núcleo de “três”?"
         },
         "alternativeTokenIds": [
           "all",
           "these",
           "books"
-        ]
+        ],
+        "structureIds": {
+          "en": "all-these-three-books",
+          "es": "todos-estos-tres-libros",
+          "pt": "todos-estes-tres-livros"
+        }
       }
     },
     {
