@@ -24,7 +24,10 @@
     var surface=doc.getElementById('dependencyFocusSurface');
     if(!surface)return false;
 
-    var structure=options.structure;\n    var focusId=text(options.focusId);\n    var language=text(options.language)||'en';\n    if(!/^(en|es|pt)$/.test(language))language='en';
+    var structure=options.structure;
+    var focusId=text(options.focusId);
+    var language=text(options.language)||'en';
+    if(!/^(en|es|pt)$/.test(language))language='en';
     var focusView=options.focusView||root.AdaptiveDependencyFocusView;
     var connectorView=options.connectorView||root.AdaptiveDependencyConnectorView;
     if(!structure||!focusId||!focusView||typeof focusView.resolve!=='function')return false;
@@ -58,11 +61,18 @@
         '</span>';
     }).join('');
 
-    var focusPedagogy=resolved.focus&&resolved.focus.pedagogy||null;\n    var focusType=focusPedagogy&&focusPedagogy.wordType&&text(focusPedagogy.wordType[language])||text(resolved.focus.wordClass);\n    var focusRole=focusPedagogy&&focusPedagogy.role&&text(focusPedagogy.role[language])||'';\n\n    surface.dataset.focusToken=focusId;\n    surface.dataset.language=language;\n    surface.hidden=false;
+    var focusPedagogy=resolved.focus&&resolved.focus.pedagogy||null;
+    var focusType=focusPedagogy&&focusPedagogy.wordType&&text(focusPedagogy.wordType[language])||text(resolved.focus.wordClass);
+    var focusRole=focusPedagogy&&focusPedagogy.role&&text(focusPedagogy.role[language])||'';
+
+    surface.dataset.focusToken=focusId;
+    surface.dataset.language=language;
+    surface.hidden=false;
     surface.innerHTML=
       '<div class="dependency-focus-heading">'+
         '<span>DEPENDENCY FOCUS</span>'+
-        '<strong>'+escapeHtml(resolved.focus.form)+' / '+escapeHtml(focusType)+'</strong>'+\n        (focusRole?'<small class="dependency-focus-role">'+escapeHtml(focusRole)+'</small>':'')+
+        '<strong>'+escapeHtml(resolved.focus.form)+' / '+escapeHtml(focusType)+'</strong>'+
+        (focusRole?'<small class="dependency-focus-role">'+escapeHtml(focusRole)+'</small>':'')+
       '</div>'+
       '<div class="dependency-token-stage">'+
         '<svg class="dependency-connector-overlay" data-dependency-connectors aria-hidden="true"></svg>'+
