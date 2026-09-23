@@ -16,11 +16,13 @@
     var wordClass=text(token.wordClass);
     var index=Number(token.index);
     if(!id||!form||!wordClass||!Number.isFinite(index))return null;
+    var pedagogy=token.pedagogy&&typeof token.pedagogy==='object'?token.pedagogy:null;
     return Object.freeze({
       id:id,
       index:index,
       form:form,
-      wordClass:wordClass
+      wordClass:wordClass,
+      pedagogy:pedagogy
     });
   }
 
