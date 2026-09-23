@@ -18,7 +18,97 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-01
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-02
+
+**Status:** ACTIVE  
+**Recorded:** 2026-09-22  
+**Repository:** `siyayoacademy/siyayo-academy`  
+**Active branch:** `jaguar/verb-explorer-resume-live-wire`  
+**Base:** `main`  
+**Checkpoint source HEAD before this documentation commit:** `eb41c1f2b307fb0af98173a992369455a6f45c05`  
+**CI at source HEAD:** GREEN — Resume Runtime Dispatch, Corpus Integrity, Verb Explorer Adaptive Bootstrap.  
+**Cloudflare:** deploy successful; laptop end-to-end validation completed by the user.
+
+## DONE — explicit Dependency Head Probe + learner identity gate
+
+Grounded live chain:
+
+```text
+human-entered learner name/nickname
+  -> LearnerIdentityProvider
+  -> IdentitySource
+  -> explicit WHICH selection
+  -> declared assessmentTarget
+  -> canonical Skill
+  -> grounded Session
+  -> Dependency Head Probe
+  -> LearnerEvent
+  -> HeadProbeResult
+  -> Evidence
+  -> Attempt
+  -> adaptive Cycle
+```
+
+Validated behavior:
+
+- Head Probe remains hidden before grounded Session authority;
+- learner identity is explicit, non-persisted and never silently invented;
+- WHICH carries an explicit `assessmentTarget`; Skill is not inferred from Experience/questionWord;
+- `ALL` / `THESE` -> `TRY ANOTHER WORD`;
+- `BOOKS` -> `HEAD IDENTIFIED`;
+- Head Probe interaction does not drive Dependency Focus;
+- Dependency Focus remains independently exploratory and its SVG redraws with focus migration;
+- head-identification Evidence does not automatically grant Green Pass or NEXT;
+- laptop end-to-end behavior validated without page reload.
+
+## WAIT / PERAÍ — invariants
+
+- Learner profile metadata is not pedagogical Evidence by itself.
+- A display name/nickname identifies the learner-facing Session owner; it does not prove Skill.
+- Exploratory Dependency Focus remains non-assessment.
+- One accepted learner Attempt may create a longitudinal observation footprint, but that footprint must not be represented as mastery or contract closure.
+- `IN_PROGRESS` is not `CONFIRMED`.
+- Only canonical Green Pass contract closure may produce the confirmed Trail marker for an Experience.
+- Do not infer Skill from Experience, questionWord, profile attributes, nationality, profession, age or other personalization metadata.
+- Do not authorize NEXT from a single Head Probe pass.
+
+## NOW — longitudinal observed-attempt footprint
+
+The live Cycle already accepts real learner Attempts, but the learner-facing Trail reads `AdaptiveEvidenceProfile`. At present the live Coordinator writes longitudinal history only for confirmed Green Pass contract closure. Therefore a real accepted Head Probe attempt can leave the Trail at:
+
+```text
+○ UNOBSERVED · 0 CONTEXTS
+```
+
+even though the learner has already produced observed Evidence.
+
+## NEXT GO
+
+Create the smallest fail-closed authority that records one idempotent **observed-attempt footprint** into `AdaptiveEvidenceProfile` only after the adaptive Cycle accepts that Attempt.
+
+Expected semantic transition:
+
+```text
+accepted learner Attempt
+  -> longitudinal observed footprint
+  -> LearnerTrailView
+  -> ◐ IN_PROGRESS
+```
+
+A later canonical Green Pass closure remains independently authoritative:
+
+```text
+GREEN_PASS contract closure
+  -> confirmed longitudinal closure
+  -> ● CONFIRMED
+```
+
+No score inflation. No mastery inference. No automatic NEXT. No duplicate footprint for the same occurrenceId.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-01
+
 
 **Status:** ACTIVE  
 **Recorded:** 2026-09-22  
