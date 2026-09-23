@@ -73,6 +73,11 @@
             "en": "What are we going to cook?",
             "es": "¿Qué vamos a cocinar?",
             "pt": "O que vamos cozinhar?"
+          },
+          "questionWordLabel": {
+            "en": "WHAT",
+            "es": "QUÉ",
+            "pt": "O QUE"
           }
         },
         {
@@ -82,6 +87,11 @@
             "en": "Where can we find the salmon?",
             "es": "¿Dónde podemos encontrar el salmón?",
             "pt": "Onde podemos encontrar o salmão?"
+          },
+          "questionWordLabel": {
+            "en": "WHERE",
+            "es": "DÓNDE",
+            "pt": "ONDE"
           }
         },
         {
@@ -91,6 +101,11 @@
             "en": "How much salmon do we need?",
             "es": "¿Cuánto salmón necesitamos?",
             "pt": "Quanto salmão precisamos?"
+          },
+          "questionWordLabel": {
+            "en": "HOW MUCH",
+            "es": "CUÁNTO",
+            "pt": "QUANTO"
           }
         },
         {
@@ -156,6 +171,11 @@
                 ]
               }
             ]
+          },
+          "questionWordLabel": {
+            "en": "WHICH",
+            "es": "QUÉ",
+            "pt": "QUAL"
           }
         },
         {
@@ -165,6 +185,11 @@
             "en": "Why do you prefer this one?",
             "es": "¿Por qué prefieres este?",
             "pt": "Por que você prefere este?"
+          },
+          "questionWordLabel": {
+            "en": "WHY",
+            "es": "POR QUÉ",
+            "pt": "POR QUE"
           }
         },
         {
@@ -174,6 +199,11 @@
             "en": "Who is coming to dinner?",
             "es": "¿Quién viene a cenar?",
             "pt": "Quem vem para o jantar?"
+          },
+          "questionWordLabel": {
+            "en": "WHO",
+            "es": "QUIÉN",
+            "pt": "QUEM"
           }
         }
       ],
@@ -356,6 +386,11 @@
             "en": "What are we preparing first?",
             "es": "¿Qué estamos preparando primero?",
             "pt": "O que estamos preparando primeiro?"
+          },
+          "questionWordLabel": {
+            "en": "WHAT",
+            "es": "QUÉ",
+            "pt": "O QUE"
           }
         },
         {
@@ -365,6 +400,11 @@
             "en": "Where should we put the vegetables?",
             "es": "¿Dónde debemos poner las verduras?",
             "pt": "Onde devemos colocar os legumes?"
+          },
+          "questionWordLabel": {
+            "en": "WHERE",
+            "es": "DÓNDE",
+            "pt": "ONDE"
           }
         },
         {
@@ -374,6 +414,11 @@
             "en": "When should we cook the salmon?",
             "es": "¿Cuándo debemos cocinar el salmón?",
             "pt": "Quando devemos cozinhar o salmão?"
+          },
+          "questionWordLabel": {
+            "en": "WHEN",
+            "es": "CUÁNDO",
+            "pt": "QUANDO"
           }
         },
         {
@@ -383,6 +428,11 @@
             "en": "How are we going to prepare the rice?",
             "es": "¿Cómo vamos a preparar el arroz?",
             "pt": "Como vamos preparar o arroz?"
+          },
+          "questionWordLabel": {
+            "en": "HOW",
+            "es": "CÓMO",
+            "pt": "COMO"
           }
         },
         {
@@ -392,6 +442,11 @@
             "en": "Which carrots should we cook first?",
             "es": "¿Qué zanahorias deberíamos cocinar primero?",
             "pt": "Quais cenouras devemos cozinhar primeiro?"
+          },
+          "questionWordLabel": {
+            "en": "WHICH",
+            "es": "QUÉ",
+            "pt": "QUAIS"
           }
         },
         {
@@ -401,6 +456,11 @@
             "en": "Why are we preparing this dinner together?",
             "es": "¿Por qué estamos preparando esta cena juntos?",
             "pt": "Por que estamos preparando este jantar juntos?"
+          },
+          "questionWordLabel": {
+            "en": "WHY",
+            "es": "POR QUÉ",
+            "pt": "POR QUE"
           }
         },
         {
@@ -410,6 +470,11 @@
             "en": "Who is preparing the salad?",
             "es": "¿Quién está preparando la ensalada?",
             "pt": "Quem está preparando a salada?"
+          },
+          "questionWordLabel": {
+            "en": "WHO",
+            "es": "QUIÉN",
+            "pt": "QUEM"
           }
         }
       ],
@@ -554,6 +619,11 @@
             "en": "What are we eating first?",
             "es": "¿Qué estamos comiendo primero?",
             "pt": "O que estamos comendo primeiro?"
+          },
+          "questionWordLabel": {
+            "en": "WHAT",
+            "es": "QUÉ",
+            "pt": "O QUE"
           }
         },
         {
@@ -563,6 +633,11 @@
             "en": "Who would like some salmon?",
             "es": "¿Quién quiere un poco de salmón?",
             "pt": "Quem gostaria de um pouco de salmão?"
+          },
+          "questionWordLabel": {
+            "en": "WHO",
+            "es": "QUIÉN",
+            "pt": "QUEM"
           }
         },
         {
@@ -572,6 +647,11 @@
             "en": "How does the dinner taste?",
             "es": "¿Cómo está la cena?",
             "pt": "Como está o jantar?"
+          },
+          "questionWordLabel": {
+            "en": "HOW",
+            "es": "CÓMO",
+            "pt": "COMO"
           }
         },
         {
@@ -581,6 +661,11 @@
             "en": "Why is this dinner special?",
             "es": "¿Por qué esta cena es especial?",
             "pt": "Por que este jantar é especial?"
+          },
+          "questionWordLabel": {
+            "en": "WHY",
+            "es": "POR QUÉ",
+            "pt": "POR QUE"
           }
         }
       ],
@@ -714,6 +799,11 @@
             "en": "What would you like to talk about?",
             "es": "¿De qué te gustaría hablar?",
             "pt": "Sobre o que você gostaria de conversar?"
+          },
+          "questionWordLabel": {
+            "en": "WHAT",
+            "es": "QUÉ",
+            "pt": "O QUE"
           }
         },
         {
@@ -723,6 +813,11 @@
             "en": "Who would you like to listen to?",
             "es": "¿A quién te gustaría escuchar?",
             "pt": "Quem você gostaria de escutar?"
+          },
+          "questionWordLabel": {
+            "en": "WHO",
+            "es": "QUIÉN",
+            "pt": "QUEM"
           }
         },
         {
@@ -732,6 +827,11 @@
             "en": "Why do you enjoy this conversation?",
             "es": "¿Por qué disfrutas esta conversación?",
             "pt": "Por que você gosta desta conversa?"
+          },
+          "questionWordLabel": {
+            "en": "WHY",
+            "es": "POR QUÉ",
+            "pt": "POR QUE"
           }
         },
         {
@@ -741,6 +841,11 @@
             "en": "How can we keep the conversation pleasant?",
             "es": "¿Cómo podemos mantener agradable la conversación?",
             "pt": "Como podemos manter a conversa agradável?"
+          },
+          "questionWordLabel": {
+            "en": "HOW",
+            "es": "CÓMO",
+            "pt": "COMO"
           }
         }
       ],
