@@ -30,18 +30,22 @@ assert.ok(shopping.toroidalNext?.answer?.pt, 'toroidal handoff requires a Portug
 console.log('PASS — 6.8 resolves shopping-for-dinner → preparing-dinner as a valid toroidal handoff.');
 console.log('PASS — the next experience preserves trilingual continuity and enters through cook.');
 
-
-const runtime = fs.readFileSync(path.join(ROOT, 'js/verb-explorer.js'), 'utf8');
+const liveNextWire = fs.readFileSync(path.join(ROOT, 'js/verb-explorer-live-next-wire.js'), 'utf8');
 
 for (const hook of [
-  'nextEl.closest(".toroidal-next")',
-  'nextCard.tabIndex=exists?0:-1',
-  'nextCard.setAttribute("role",exists?"button":"group")',
-  'nextCard.onclick=activateNext',
-  'e.key==="Enter"||e.key===" "',
-  'goToExperience(id)'
+  "nextElement.closest('.toroidal-next')",
+  "var interactiveTarget=nextCard||nextElement",
+  "interactiveTarget.onclick=activate",
+  "interactiveTarget.onkeydown=function(event)",
+  "nextCard.dataset.nextState='gated'",
+  "nextCard.classList.add('next-gated')"
 ]) {
-  assert.ok(runtime.includes(hook), 'missing interactive NEXT handoff hook: '+hook);
+  assert.ok(liveNextWire.includes(hook), 'missing gated full-card NEXT hook: '+hook);
 }
 
-console.log('PASS — the full NEXT card is clickable/tappable and keyboard-activatable.');
+assert.ok(
+  !fs.readFileSync(path.join(ROOT, 'js/verb-explorer.js'), 'utf8').includes('nextCard.onclick=activateNext'),
+  'Verb Explorer base runtime must not bypass adaptive NEXT with direct card navigation'
+);
+
+console.log('PASS — the full NEXT card delegates to LiveNextWire and no pre-bootstrap direct-navigation bypass remains.');
