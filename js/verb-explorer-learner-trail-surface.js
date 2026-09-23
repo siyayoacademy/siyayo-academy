@@ -62,7 +62,9 @@
     if(!markerAuthority||typeof markerAuthority.resolve!=='function')return false;
     if(!stateBridge||typeof stateBridge.getState!=='function')return false;
 
-    var language=text(options.language)||'en';
+    var experienceRuntime=root.SIYAYOVerbExplorerExperienceRuntime;
+    var liveLanguage=experienceRuntime&&typeof experienceRuntime.activeLanguage==='function'?experienceRuntime.activeLanguage():'';
+    var language=text(options.language)||text(liveLanguage)||'en';
     var copy=surfaceLabels(language);
     var profile=profileSource.getProfile();
     var definition=skillSource.getDefinition();
@@ -121,7 +123,11 @@
     if(!doc||typeof doc.addEventListener!=='function')return false;
 
     doc.addEventListener('click',function(){
-      Promise.resolve().then(function(){refresh(options);});
+      Promise.resolve().then(function(){
+        var nextOptions=Object.assign({},options);
+        delete nextOptions.language;
+        refresh(nextOptions);
+      });
     });
 
     refresh(options);
