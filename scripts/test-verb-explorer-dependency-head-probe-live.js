@@ -121,7 +121,7 @@ const wire={
   },
   install(view,options){
     this.render(view);
-    container.binding=options;
+    container.__siyayoDependencyHeadProbeBinding=options;
     return true;
   }
 };
@@ -163,7 +163,7 @@ const event=LearnerEvents.fromDependencyHeadProbeSelect('books',{
   dimension:'head-identification',
   targetTokenId:'three'
 });
-container.binding.onEvent(event,{dataset:{dependencyHeadProbeSelect:'books'}});
+container.__siyayoDependencyHeadProbeBinding.onEvent(event,{dataset:{dependencyHeadProbeSelect:'books'}});
 
 assert.ok(submitted);
 assert.equal(submitted.event,event);
@@ -183,7 +183,7 @@ const failEvent=LearnerEvents.fromDependencyHeadProbeSelect('these',{
   dimension:'head-identification',
   targetTokenId:'three'
 });
-container.binding.onEvent(failEvent,{dataset:{dependencyHeadProbeSelect:'these'}});
+container.__siyayoDependencyHeadProbeBinding.onEvent(failEvent,{dataset:{dependencyHeadProbeSelect:'these'}});
 assert.equal(submitted.attempt.result,'fail');
 assert.equal(submitted.attempt.context.selectedAlternativeId,'these');
 assert.equal(feedback.hidden,false);
@@ -201,7 +201,7 @@ assert.equal(Live.mount({
   coordinator:noSkillCoordinator
 }),false);
 assert.equal(panel.hidden,true,'missing canonical Session authority must keep assessed Head Probe hidden');
-assert.equal(container.binding,undefined,'WAIT must not install assessed learner-event binding');
+assert.equal(container.__siyayoDependencyHeadProbeBinding,undefined,'WAIT must not retain assessed learner-event binding');
 
 console.log(
   'Verb Explorer live Dependency Head Probe: PASS — canonical probe stays hidden through Session WAIT, activates only with grounded Session authority, and BOOKS selection flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
