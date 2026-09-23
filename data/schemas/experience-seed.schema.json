@@ -264,19 +264,19 @@
         },
         "dependencyFocus": {
           "type": "object",
-          "required": ["structureId", "defaultFocus"],
+          "required": ["structureIds", "defaultFocus"],
           "additionalProperties": false,
           "properties": {
-            "structureId": { "type": "string" },
+            "structureIds": { "$ref": "#/$defs/trilingual" },
             "defaultFocus": { "type": "string" }
           }
         },
         "dependencyHeadProbe": {
           "type": "object",
-          "required": ["structureId", "targetTokenId", "prompt", "alternativeTokenIds"],
+          "required": ["structureIds", "targetTokenId", "prompt", "alternativeTokenIds"],
           "additionalProperties": false,
           "properties": {
-            "structureId": { "type": "string" },
+            "structureIds": { "$ref": "#/$defs/trilingual" },
             "targetTokenId": { "type": "string" },
             "prompt": { "$ref": "#/$defs/trilingual" },
             "alternativeTokenIds": {
