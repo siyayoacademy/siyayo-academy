@@ -108,7 +108,8 @@ window.SIYAYOVerbExplorerDependencyHeadProbeRuntime=Object.freeze({
 });
 window.SIYAYOVerbExplorerExperienceRuntime=Object.freeze({
   render:()=>renderExperience(),
-  activeExperienceId:()=>currentExperienceId
+  activeExperienceId:()=>currentExperienceId,
+  activeLanguage:()=>experienceLanguage
 });
 window.addEventListener("popstate",applyInitialRoute);
 loadVerbExplorer();
