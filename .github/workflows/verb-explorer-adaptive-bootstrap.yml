@@ -217,6 +217,8 @@ jobs:
         run: node scripts/test-verb-explorer-dependency-focus-live-experience.js
       - name: Test SVG Dependency Connector View
         run: node scripts/test-adaptive-dependency-connector-view.js
+      - name: Test explicit Thinking Mind assessment Target selection
+        run: node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
       - name: Test Dependency Head Probe definition
         run: node scripts/test-adaptive-dependency-head-probe-definition.js
       - name: Test Dependency Head Probe presenter
