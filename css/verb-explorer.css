@@ -79,7 +79,7 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-focus-surface{margin:0 0 18px;padding:14px 14px 16px;border:1px solid rgba(122,162,255,.28);border-radius:14px;background:rgba(4,14,28,.46);text-align:center}
 .dependency-focus-heading{display:grid;justify-items:center;align-items:center;gap:12px;margin:0 auto 8px;text-align:center}
 .dependency-focus-heading span{color:#8ea3bc;font-size:.62rem;font-weight:900;letter-spacing:.12em}
-.dependency-focus-heading strong{color:#f5c542;font-size:.78rem}
+.dependency-focus-heading strong{color:#f5c542;font-size:.78rem}\n.dependency-focus-role{display:block;color:#d7f4df;font-size:.68rem;font-weight:800;letter-spacing:.03em;line-height:1.25}
 .dependency-token-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;align-items:flex-end}
 .dependency-token{display:grid;gap:2px;min-width:76px;padding:8px 10px;border:1px solid rgba(122,162,255,.28);border-radius:10px;background:rgba(0,0,0,.18)}
 .dependency-token b{font-size:.9rem;color:#eef4ff}
@@ -138,9 +138,9 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 
   .dependency-focus-surface{padding:10px 6px 12px}
   .dependency-focus-heading{width:100%;gap:5px;margin-bottom:5px;text-align:center}
-  .dependency-focus-heading span,.dependency-focus-heading strong{width:100%;text-align:center}
+  .dependency-focus-heading span,.dependency-focus-heading strong,.dependency-focus-role{width:100%;text-align:center}
   .dependency-focus-heading span{font-size:.58rem}
-  .dependency-focus-heading strong{font-size:.72rem}
+  .dependency-focus-heading strong{font-size:.72rem}\n  .dependency-focus-role{font-size:.62rem}
   .dependency-token-stage{width:100%;padding-top:46px}
   .dependency-token-row{flex-wrap:nowrap;justify-content:center;align-items:stretch;gap:5px}
   .dependency-token{flex:1 1 0;min-width:0;padding:7px 3px}
