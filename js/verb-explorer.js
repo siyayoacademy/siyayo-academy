@@ -61,7 +61,7 @@ function renderDependencyFocus(x){
   if(!structure||!focusId){surface.hidden=true;surface.innerHTML="";return}
   const view=window.SIYAYOVerbExplorerDependencyFocusSurface,interaction=window.SIYAYOVerbExplorerDependencyFocusInteraction;
   if(!view||typeof view.render!=="function"||!interaction||typeof interaction.updateStructure!=="function"){surface.hidden=true;return}
-  const rendered=view.render({document,structure,focusId});
+  const rendered=view.render({document,structure,focusId,language:experienceLanguage});
   if(rendered===true)interaction.updateStructure(structure);
 }
 function renderDependencyHeadProbe(x){
