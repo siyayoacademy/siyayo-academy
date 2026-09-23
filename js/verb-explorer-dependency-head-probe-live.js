@@ -81,42 +81,28 @@
     var presentation=presenter.present(definition);
     if(!presentation)return false;
 
-    // Presentation and assessment authority are intentionally separate.
-    // The canonical task remains visible and centered while adaptive Session
-    // authority is still WAIT. No listener/event/evidence path is installed.
-    function presentWaiting(){
-      if(wire.render(presentation,{container:el.container})!==true)return false;
-      if(typeof el.container.querySelectorAll==='function'){
-        Array.prototype.forEach.call(
-          el.container.querySelectorAll('[data-dependency-head-probe-select]'),
-          function(button){
-            button.disabled=true;
-            button.setAttribute('aria-disabled','true');
-          }
-        );
-      }
-      el.panel.dataset.assessmentState='waiting';
-      el.panel.hidden=false;
-      return true;
-    }
-
+    // Assessment presentation is authority-gated. Before a grounded Session
+    // exists, the Head Probe remains hidden: exploratory Dependency Focus may
+    // still be used, but no assessed task is presented or bound.
     if(!coordinator||typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'){
-      return presentWaiting();
+      hide(doc);
+      return false;
     }
 
     var active=coordinator.snapshot();
     var session=active&&active.session;
     var decision=session&&session.decision;
     if(!decision||!text(decision.skill)||text(decision.experienceId)!==text(experience.id)){
-      return presentWaiting();
+      hide(doc);
+      return false;
     }
 
-    if(!resultApi||typeof resultApi.evaluate!=='function')return presentWaiting();
-    if(!evidenceBridge||typeof evidenceBridge.fromResult!=='function')return presentWaiting();
-    if(!attemptBoundary||typeof attemptBoundary.assemble!=='function')return presentWaiting();
-    if(!learnerEvents||typeof learnerEvents.fromDependencyHeadProbeSelect!=='function')return presentWaiting();
-    if(!attemptLoop||typeof attemptLoop.toEvidencePacket!=='function')return presentWaiting();
-    if(!supportSensor||typeof supportSensor.support!=='function')return presentWaiting();
+    if(!resultApi||typeof resultApi.evaluate!=='function')return false;
+    if(!evidenceBridge||typeof evidenceBridge.fromResult!=='function')return false;
+    if(!attemptBoundary||typeof attemptBoundary.assemble!=='function')return false;
+    if(!learnerEvents||typeof learnerEvents.fromDependencyHeadProbeSelect!=='function')return false;
+    if(!attemptLoop||typeof attemptLoop.toEvidencePacket!=='function')return false;
+    if(!supportSensor||typeof supportSensor.support!=='function')return false;
 
     var installed=wire.install(presentation,{
       container:el.container,
