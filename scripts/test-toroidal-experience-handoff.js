@@ -37,7 +37,8 @@ for (const hook of [
   "var interactiveTarget=nextCard||nextElement",
   "interactiveTarget.onclick=activate",
   "interactiveTarget.onkeydown=function(event)",
-  "nextCard.dataset.nextState='available'",\n  "nextCard.classList.remove('next-gated')"
+  "nextCard.dataset.nextState='available'",
+  "nextCard.classList.remove('next-gated')"
 ]) {
   assert.ok(liveNextWire.includes(hook), 'missing learner-owned full-card NEXT hook: '+hook);
 }
@@ -47,4 +48,14 @@ assert.ok(
   'Verb Explorer base runtime must not bypass adaptive NEXT with direct card navigation'
 );
 
-assert.ok(\n  liveNextWire.includes('SIYAYOVerbExplorerExperienceNavigation'),\n  'NEXT must delegate to the canonical Experience navigation boundary'\n);\nassert.ok(\n  !liveNextWire.includes('AdaptiveProgressionDecision') &&\n  !liveNextWire.includes('releaseProgression'),\n  'NEXT navigation must not be gated by pedagogical progression authorities'\n);\n\nconsole.log('PASS — the full NEXT card remains learner-owned and delegates to canonical Experience navigation without Green Pass gating.');
+assert.ok(
+  liveNextWire.includes('SIYAYOVerbExplorerExperienceNavigation'),
+  'NEXT must delegate to the canonical Experience navigation boundary'
+);
+assert.ok(
+  !liveNextWire.includes('AdaptiveProgressionDecision') &&
+  !liveNextWire.includes('releaseProgression'),
+  'NEXT navigation must not be gated by pedagogical progression authorities'
+);
+
+console.log('PASS — the full NEXT card remains learner-owned and delegates to canonical Experience navigation without Green Pass gating.');
