@@ -1,6 +1,7 @@
-// Live learner-owned NEXT boundary for Verb Explorer.
-// Consumes only the convergence already produced by the adaptive Choice Cycle.
-// It never authorizes progression itself and never calls goToExperience directly.
+// Live learner-owned NEXT navigation boundary for Verb Explorer.
+// Canonical content navigation is learner-owned and must never be gated by
+// pedagogical progression, Green Pass, identity, Session, or Coordinator state.
+// Adaptive authorities may observe/evaluate learning separately; they do not own access.
 (function(root){
   'use strict';
 
@@ -28,56 +29,16 @@
       var toExperienceId=text(nextElement&&nextElement.dataset?nextElement.dataset.nextExperience:null);
       if(!toExperienceId)return null;
 
-      var coordinator=options.coordinator||root.SIYAYOVerbExplorerAdaptiveCoordinator;
-      var events=options.events||root.SIYAYOVerbExplorerLearnerEvent;
-      var progressionAuthority=options.progressionDecision||root.AdaptiveProgressionDecision;
-      var activation=options.nextSessionActivation||root.SIYAYOVerbExplorerNextSessionActivation;
+      var navigate=options.goToExperience||root.goToExperience;
+      if(typeof navigate!=='function')return null;
 
-      if(!coordinator||typeof coordinator.snapshot!=='function'||typeof coordinator.releaseProgression!=='function')return null;
-      if(!events||typeof events.fromToroidalNextSelect!=='function')return null;
-      if(!progressionAuthority||typeof progressionAuthority.resolve!=='function')return null;
-      if(!activation||typeof activation.activate!=='function')return null;
-
-      var snapshot=coordinator.snapshot();
-      if(!snapshot||!snapshot.session||!snapshot.context)return null;
-
-      var convergence=snapshot.lastConvergenceResult;
-      if(!convergence||convergence.status!=='CANDIDATE_SUPPORTED_FOR_CONSIDERATION')return null;
-
-      var fromExperienceId=snapshot.session&&snapshot.session.decision
-        ? text(snapshot.session.decision.experienceId)
-        : '';
-      if(!fromExperienceId)return null;
-
-      var learnerEvent=events.fromToroidalNextSelect(toExperienceId,{
-        currentExperienceId:fromExperienceId
-      });
-      if(!learnerEvent)return null;
-
-      var progression=progressionAuthority.resolve({
-        convergence:convergence,
-        learnerEvent:learnerEvent
-      });
-      if(!progression||progression.status!=='PROGRESSION_DECISION_READY')return null;
-
-      var authorization=coordinator.releaseProgression(progression);
-      if(!authorization||authorization.status!=='transition-authorized')return null;
-
-      var activationResult=activation.activate({
-        transitionAuthorization:authorization,
-        previousSession:snapshot.session,
-        passContract:snapshot.context.passContract,
-        language:snapshot.context.language,
-        chapter:snapshot.context.chapter,
-        document:doc
-      });
-      if(!activationResult||activationResult.status!=='S2_ACTIVE')return null;
+      // Navigation is intentionally independent from Identity, Session,
+      // convergence, Pass Contract and Green Pass.
+      navigate(toExperienceId);
 
       return Object.freeze({
-        learnerEvent:learnerEvent,
-        progressionDecision:progression,
-        transitionAuthorization:authorization,
-        activation:activationResult
+        status:'NAVIGATED',
+        toExperienceId:toExperienceId
       });
     }
 
@@ -87,12 +48,13 @@
       if(typeof event.preventDefault==='function')event.preventDefault();
       activate();
     };
+
     if(nextCard){
       nextCard.tabIndex=0;
       nextCard.setAttribute('role','button');
-      nextCard.setAttribute('aria-label','Continue to the next Experience when progression is authorized');
-      nextCard.dataset.nextState='gated';
-      nextCard.classList.add('next-gated');
+      nextCard.setAttribute('aria-label','Continue to the next Experience');
+      nextCard.dataset.nextState='available';
+      nextCard.classList.remove('next-gated');
     }
 
     installed=true;
