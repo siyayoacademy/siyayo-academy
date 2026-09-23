@@ -19,7 +19,12 @@ for (const path of [
 
 const corpus = JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','utf8'));
 const schema = JSON.parse(fs.readFileSync('data/schemas/experience-seed.schema.json','utf8'));
-const structure = JSON.parse(fs.readFileSync('data/learning/dependencies/all-these-three-books.json','utf8'));
+const structures = {
+  en: JSON.parse(fs.readFileSync('data/learning/dependencies/all-these-three-books.json','utf8')),
+  es: JSON.parse(fs.readFileSync('data/learning/dependencies/todos-estos-tres-libros.json','utf8')),
+  pt: JSON.parse(fs.readFileSync('data/learning/dependencies/todos-estes-tres-livros.json','utf8'))
+};
+const structure = structures.en;
 const html = fs.readFileSync('verb-explorer.html','utf8');
 const runtime = fs.readFileSync('js/verb-explorer.js','utf8');
 const bootstrap = fs.readFileSync('js/verb-explorer-adaptive-bootstrap.js','utf8');
@@ -27,14 +32,14 @@ const bootstrap = fs.readFileSync('js/verb-explorer-adaptive-bootstrap.js','utf8
 const shopping = corpus.items.find(item=>item.id==='shopping-for-dinner');
 assert.ok(shopping);
 assert.deepEqual(shopping.dependencyHeadProbe,{
-  structureId:'all-these-three-books',
   targetTokenId:'three',
   prompt:{
     en:'Which word is the head of “three”?',
-    es:'¿Qué palabra es el núcleo de “three”?',
-    pt:'Qual palavra é o núcleo de “three”?'
+    es:'¿Qué palabra es el núcleo de “tres”?',
+    pt:'Qual palavra é o núcleo de “três”?'
   },
-  alternativeTokenIds:['all','these','books']
+  alternativeTokenIds:['all','these','books'],
+  structureIds:{en:'all-these-three-books',es:'todos-estos-tres-libros',pt:'todos-estes-tres-livros'}
 });
 
 const props=schema.$defs?.experienceSeed?.properties||{};
@@ -155,6 +160,20 @@ assert.equal(Live.mount({
 assert.equal(panel.hidden,false);
 assert.match(container.innerHTML,/books/);
 assert.equal(feedback.hidden,true);
+for (const [language,expected] of Object.entries({
+  es:{target:'tres',head:'libros'},
+  pt:{target:'três',head:'livros'}
+})) {
+  assert.equal(Live.mount({
+    document:documentRef,
+    experience:shopping,
+    structure:structures[language],
+    language
+  }),true);
+  assert.match(container.innerHTML,new RegExp(expected.head,'i'));
+  assert.match(shopping.dependencyHeadProbe.prompt[language],new RegExp(expected.target,'i'));
+}
+assert.equal(Live.mount({document:documentRef,experience:shopping,structure,language:'en'}),true);
 
 const event=LearnerEvents.fromDependencyHeadProbeSelect('books',{
   currentExperienceId:'shopping-for-dinner',
@@ -204,5 +223,5 @@ assert.equal(panel.hidden,true,'missing canonical Session authority must keep as
 assert.equal(container.__siyayoDependencyHeadProbeBinding,undefined,'WAIT must not retain assessed learner-event binding');
 
 console.log(
-  'Verb Explorer live Dependency Head Probe: PASS — canonical probe stays hidden through Session WAIT, activates only with grounded Session authority, and BOOKS selection flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
+  'Verb Explorer live Dependency Head Probe: PASS — canonical EN/ES/PT probe stays hidden through Session WAIT, activates only with grounded Session authority, preserves the language-owned target/head forms, and BOOKS selection flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
 );
