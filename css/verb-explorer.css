@@ -122,3 +122,35 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-identity-panel[data-identity-state="ready"] small{color:#43c66f}
 .learner-identity-panel[data-identity-state="ready"] input,.learner-identity-panel[data-identity-state="ready"] button{opacity:.48;cursor:default}
 @media(max-width:520px){.learner-identity-controls{flex-direction:column}.learner-identity-controls button{width:100%}}
+
+
+/* MOBILE FINE PASS · compact Experience geometry */
+@media(max-width:480px){
+  .experience-heading{margin-bottom:14px}
+  .experience-heading .gold-label{display:none}
+  .experience-heading h2{margin:2px auto 7px;font-size:clamp(1.42rem,7vw,1.7rem);line-height:1.08;max-width:18ch}
+  .experience-heading p{font-size:.92rem;line-height:1.3}
+
+  .circumstance-strip{gap:6px;margin-bottom:12px;align-items:stretch}
+  .circumstance-strip div{flex:0 0 104px;min-height:64px;padding:7px 6px;border-radius:11px;display:grid;align-content:center}
+  .circumstance-strip span{font-size:.59rem;line-height:1.1}
+  .circumstance-strip strong{margin-top:4px;font-size:.67rem;line-height:1.15}
+
+  .dependency-focus-surface{padding:10px 6px 12px}
+  .dependency-focus-heading{width:100%;gap:5px;margin-bottom:5px;text-align:center}
+  .dependency-focus-heading span,.dependency-focus-heading strong{width:100%;text-align:center}
+  .dependency-focus-heading span{font-size:.58rem}
+  .dependency-focus-heading strong{font-size:.72rem}
+  .dependency-token-stage{width:100%;padding-top:46px}
+  .dependency-token-row{flex-wrap:nowrap;justify-content:center;align-items:stretch;gap:5px}
+  .dependency-token{flex:1 1 0;min-width:0;padding:7px 3px}
+  .dependency-token b{font-size:.8rem;line-height:1.08}
+  .dependency-token small{font-size:.53rem;letter-spacing:.05em}
+  .dependency-token em{font-size:.52rem}
+
+  .dependency-head-probe-panel{padding:11px 8px 10px;text-align:center}
+  .dependency-head-probe{gap:10px;justify-items:center;text-align:center}
+  .dependency-head-probe-prompt{width:100%;font-size:.92rem;line-height:1.25;text-align:center}
+  .dependency-head-probe-options{width:100%;justify-content:center;gap:6px}
+  .dependency-head-probe-options button{min-width:76px;padding:8px 10px;font-size:.71rem}
+}
