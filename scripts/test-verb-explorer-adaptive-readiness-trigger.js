@@ -36,6 +36,7 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
   {
     let calls=0;
     let renders=0;
+    let trailRefreshes=0;
     let resolveAttempt;
     const sandbox=vm.createContext({Object,Promise});
     sandbox.globalThis=sandbox;
@@ -48,6 +49,13 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
     sandbox.SIYAYOVerbExplorerDependencyHeadProbeRuntime={
       render(){renders+=1;return true;}
     };
+    sandbox.SIYAYOVerbExplorerLearnerTrailSurface={
+      refresh(options){
+        trailRefreshes+=1;
+        assert.equal(options.document,undefined,'Trail refresh must receive the same live document reference');
+        return true;
+      }
+    };
     vm.runInContext(code,sandbox,{filename:'js/verb-explorer-adaptive-readiness-trigger.js'});
     const trigger=sandbox.SIYAYOVerbExplorerAdaptiveReadinessTrigger;
     const first=trigger.signal();
@@ -57,9 +65,11 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
     resolveAttempt(true);
     assert.equal(await first,true,'grounded LiveStart success must pass through unchanged');
     assert.equal(renders,1,'grounded Session readiness must refresh the live Dependency Head Probe once');
+    assert.equal(trailRefreshes,1,'grounded Session readiness must render the initial Learner Trail immediately');
     assert.equal(await trigger.signal(),true,'a later readiness signal may request a fresh re-entrant attempt');
     assert.equal(calls,2,'later signal after settlement must be allowed exactly once');
     assert.equal(renders,2,'each later successful readiness transition may refresh the live probe once');
+    assert.equal(trailRefreshes,2,'each later successful readiness transition may refresh the Learner Trail once');
   }
 
   {
@@ -79,5 +89,5 @@ const code=fs.readFileSync('js/verb-explorer-adaptive-readiness-trigger.js','utf
     assert.equal(calls,1);
   }
 
-  console.log('Adaptive Readiness Trigger: PASS — signal is authority-neutral, fail-closed, coalesced, and delegates readiness exclusively to LiveStart.');
+  console.log('Adaptive Readiness Trigger: PASS — signal is authority-neutral, fail-closed, coalesced, delegates readiness exclusively to LiveStart, and refreshes Head Probe + Learner Trail only after grounded Session readiness.');
 })().catch(error=>{console.error(error);process.exit(1);});
