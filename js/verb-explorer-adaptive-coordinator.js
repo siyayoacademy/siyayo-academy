@@ -67,8 +67,6 @@
   }
 
   function retainObservedAttempt(session,sourceContext,result,attempt,learnerEvent){
-    if(!result||!result.evidencePacket)return false;
-
     var authority=root.AdaptiveObservedAttemptEvidenceSource;
     var profileSource=root.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource;
     var profileApi=root.AdaptiveEvidenceProfile;
@@ -76,6 +74,7 @@
     // Compatibility: older/non-live consumers may not load longitudinal attempt authority.
     // The live bootstrap does, so accepted learner Attempts leave a non-confirmatory footprint.
     if(!authority||typeof authority.record!=='function')return true;
+    if(!result||!result.evidencePacket)return false;
     if(!profileSource||typeof profileSource.getProfile!=='function')return false;
     if(!profileApi||typeof profileApi.record!=='function')return false;
 
