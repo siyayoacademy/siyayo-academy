@@ -50,6 +50,7 @@ assert.equal(
   Interaction.install({
     document: documentRef,
     structure,
+    language: 'en',
     surface
   }),
   true
@@ -87,6 +88,8 @@ assert.equal(renders[0].focusId, 'books');
 assert.equal(renders[1].focusId, 'three');
 assert.strictEqual(renders[0].document, documentRef);
 assert.strictEqual(renders[1].document, documentRef);
+assert.equal(renders[0].language, 'en');
+assert.equal(renders[1].language, 'en');
 
 const unrelated = {
   dataset: {},
