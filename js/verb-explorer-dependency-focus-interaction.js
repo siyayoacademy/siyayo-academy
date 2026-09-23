@@ -5,10 +5,14 @@
   var activeStructure=null;
   var activeSurface=null;
   var activeDocument=null;
+  var activeLanguage=null;
 
-  function updateStructure(structure){
+  function updateStructure(structure,language){
     if(!structure||!Array.isArray(structure.tokens)||!Array.isArray(structure.relations))return false;
+    var nextLanguage=typeof language==='string'&&language.trim()?language.trim():structure.language;
+    if(!/^(en|es|pt)$/.test(nextLanguage)||structure.language!==nextLanguage)return false;
     activeStructure=structure;
+    activeLanguage=nextLanguage;
     return true;
   }
 
@@ -20,7 +24,7 @@
     var structure=options.structure;
     var surface=options.surface||root.SIYAYOVerbExplorerDependencyFocusSurface;
     if(!surface||typeof surface.render!=='function')return false;
-    if(structure&&updateStructure(structure)!==true)return false;
+    if(structure&&updateStructure(structure,options.language)!==true)return false;
     activeSurface=surface;
     activeDocument=doc;
 
@@ -42,7 +46,8 @@
       var rendered=activeSurface.render({
         document:activeDocument,
         structure:activeStructure,
-        focusId:focusId
+        focusId:focusId,
+        language:activeLanguage
       });
       if(rendered===true)lastFocusId=focusId;
       return rendered===true;
