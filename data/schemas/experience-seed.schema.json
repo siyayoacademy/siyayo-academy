@@ -123,6 +123,15 @@
         },
         "choiceContext": {
           "$ref": "#/$defs/choiceContext"
+        },
+        "assessmentTarget": {
+          "type": "object",
+          "required": ["skill", "definitionPath"],
+          "additionalProperties": false,
+          "properties": {
+            "skill": { "type": "string", "minLength": 1 },
+            "definitionPath": { "type": "string", "minLength": 1 }
+          }
         }
       }
     },
