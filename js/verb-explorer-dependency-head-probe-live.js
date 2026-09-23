@@ -64,7 +64,8 @@
     var supportSensor=options.supportSensor||root.SIYAYODependencyHeadProbeSupportSensor;
 
     if(!experience||!text(experience.id)||!meta||!structure)return false;
-    if(text(meta.structureId)!==text(structure.id))return false;
+    var structureIds=meta.structureIds;
+    if(!structureIds||text(structureIds[language])!==text(structure.id)||text(structure.language)!==language)return false;
     if(!definitionApi||typeof definitionApi.create!=='function')return false;
     if(!presenter||typeof presenter.present!=='function')return false;
     if(!wire||typeof wire.render!=='function'||typeof wire.install!=='function')return false;
