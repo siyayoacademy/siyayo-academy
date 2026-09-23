@@ -125,6 +125,14 @@
           }
           var headProbeRuntime=root.SIYAYOVerbExplorerDependencyHeadProbeRuntime;
           if(headProbeRuntime&&typeof headProbeRuntime.render==='function')headProbeRuntime.render();
+          var experienceRuntime=root.SIYAYOVerbExplorerExperienceRuntime;
+          if(experienceRuntime&&typeof experienceRuntime.render==='function')experienceRuntime.render();
+          var nextEl=document.getElementById('nextExperience');
+          var nextCard=nextEl&&nextEl.closest?nextEl.closest('.toroidal-next'):null;
+          if(nextCard){
+            nextCard.dataset.nextState='gated';
+            nextCard.classList.add('next-gated');
+          }
           return cycle;
         });
       });
