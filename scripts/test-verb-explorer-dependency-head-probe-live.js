@@ -176,6 +176,20 @@ assert.equal(feedback.dataset.result,'pass');
 assert.match(feedback.textContent,/HEAD IDENTIFIED/);
 assert.equal(panel.dataset.cycleStatus,'observed');
 
+const failEvent=LearnerEvents.fromDependencyHeadProbeSelect('these',{
+  currentExperienceId:'shopping-for-dinner',
+  structureId:'all-these-three-books',
+  language:'en',
+  dimension:'head-identification',
+  targetTokenId:'three'
+});
+container.binding.onEvent(failEvent,{dataset:{dependencyHeadProbeSelect:'these'}});
+assert.equal(submitted.attempt.result,'fail');
+assert.equal(submitted.attempt.context.selectedAlternativeId,'these');
+assert.equal(feedback.hidden,false);
+assert.equal(feedback.dataset.result,'fail');
+assert.match(feedback.textContent,/TRY ANOTHER WORD/);
+
 const noSkillCoordinator={
   snapshot(){return {profile,session:{decision:{experienceId:'shopping-for-dinner'}},context};}
 };
@@ -185,12 +199,10 @@ assert.equal(Live.mount({
   structure,
   language:'en',
   coordinator:noSkillCoordinator
-}),true);
-assert.equal(panel.hidden,false,'canonical probe presentation remains visible during Session WAIT');
-assert.equal(panel.dataset.assessmentState,'waiting');
-assert.match(container.innerHTML,/books/);
-assert.equal(container.binding,undefined,'WAIT presentation must not install assessed learner-event binding');
+}),false);
+assert.equal(panel.hidden,true,'missing canonical Session authority must keep assessed Head Probe hidden');
+assert.equal(container.binding,undefined,'WAIT must not install assessed learner-event binding');
 
 console.log(
-  'Verb Explorer live Dependency Head Probe: PASS — canonical probe stays centered and visible through Session WAIT, activates only with grounded Session authority, and BOOKS selection flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
+  'Verb Explorer live Dependency Head Probe: PASS — canonical probe stays hidden through Session WAIT, activates only with grounded Session authority, and BOOKS selection flows Event → Result → Evidence → Attempt → Coordinator without automatic Green Pass or NEXT.'
 );
