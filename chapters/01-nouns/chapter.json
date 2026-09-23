@@ -10,14 +10,18 @@
       "es": "SUSTANTIVO",
       "pt": "SUBSTANTIVO"
     },
-    "languageOrder": ["en", "es", "pt"],
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
     "sections": [
       {
         "id": "etymology",
         "type": "paragraph",
         "title": "Origem / Etimologia Resumida",
         "content": {
-          "pt": "Do latim substantivum, derivado de substancia (essência/substância). Significa aquilo que subsiste por si mesmo, que dá nome à matéria ou ao pensamento."
+          "pt": "Do latim nomen substantivum, expressão tradicionalmente associada ao nome que designa aquilo que possui existência ou identidade própria. Relaciona-se à família de substantia, origem de “substância”."
         }
       },
       {
@@ -25,7 +29,7 @@
         "type": "paragraph",
         "title": "Definição",
         "content": {
-          "pt": "Classe de palavras que nomeia seres, objetos, lugares, sentimentos, estados, qualidades e fenômenos da nossa realidade real ou imaginária."
+          "pt": "Substantivo é a classe de palavras que nomeia ou identifica seres, pessoas, animais, objetos, lugares, ideias, sentimentos, estados, qualidades, eventos e fenômenos, reais ou imaginários."
         }
       },
       {
@@ -33,28 +37,41 @@
         "type": "paragraph",
         "title": "Função na Oração",
         "content": {
-          "pt": "Atua primariamente como núcleo dos termos nominais da frase, exercendo papéis como sujeito, objeto direto, objeto indireto, complemento nominal e predicativo."
+          "pt": "O substantivo atua principalmente como núcleo de grupos nominais. Esses grupos podem exercer diferentes funções na oração, como sujeito, objeto e complemento."
         }
       },
-{
-  "id": "grammar",
-  "type": "grammar",
-  "title": "Características Gramaticais",
-
-  "labels": {
-    "en": "PARA INGLÊS",
-    "es": "PARA ESPANHOL",
-    "pt": "EM PORTUGUÊS"
-  },
-
-  "speechLanguage": "pt",
-
-  "content": {
-    "en": "Flexiona-se em número (singular/plural) e gênero gramatical em casos específicos (mencionados via pronomes ou sufixos).",
-    "es": "Flexiona-se em gênero (masculino/femenino) e número (singular/plural).",
-    "pt": "Flexiona-se em gênero (masculino/feminino), número (singular/plural) e grau (aumentativo/diminutivo)."
-  }
-},
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Os substantivos em inglês geralmente variam em número (singular/plural). Não apresentam normalmente um sistema produtivo de gênero gramatical comparável ao espanhol e ao português. Algumas distinções de sexo ou gênero são expressas lexicalmente ou por outros elementos da oração.",
+          "es": "Os substantivos em espanhol apresentam gênero gramatical (masculino/feminino) e número (singular/plural). O gênero também participa da concordância com determinantes e adjetivos.",
+          "pt": "Os substantivos em português apresentam gênero gramatical (masculino/feminino) e número (singular/plural). Também podem participar de formações tradicionalmente descritas como grau, como aumentativos e diminutivos."
+        },
+        "examples": {
+          "en": [
+            "book → books",
+            "child → children",
+            "woman → women"
+          ],
+          "es": [
+            "el libro nuevo → los libros nuevos",
+            "la casa nueva → las casas nuevas"
+          ],
+          "pt": [
+            "o livro novo → os livros novos",
+            "a casa nova → as casas novas",
+            "casa → casinha · livro → livrinho"
+          ]
+        }
+      },
       {
         "id": "classifications",
         "type": "examples",
@@ -75,6 +92,29 @@
               "en": "cat",
               "es": "gato",
               "pt": "gato"
+            },
+            "definition": {
+              "pt": "Nomeia seres, objetos, lugares ou entidades concebidas como existentes independentemente de outro ser."
+            },
+            "relatedVocabulary": {
+              "en": [
+                "teacher",
+                "cat",
+                "book",
+                "hotel"
+              ],
+              "es": [
+                "profesor",
+                "gato",
+                "libro",
+                "hotel"
+              ],
+              "pt": [
+                "professor",
+                "gato",
+                "livro",
+                "hotel"
+              ]
             }
           },
           {
@@ -92,6 +132,32 @@
               "en": "Love",
               "es": "amor",
               "pt": "amor"
+            },
+            "definition": {
+              "pt": "Nomeia ideias, sentimentos, qualidades, estados, ações ou conceitos que concebemos mentalmente, em vez de entidades independentes concretas."
+            },
+            "relatedVocabulary": {
+              "en": [
+                "love",
+                "happiness",
+                "freedom",
+                "decision",
+                "idea"
+              ],
+              "es": [
+                "amor",
+                "felicidad",
+                "libertad",
+                "decisión",
+                "idea"
+              ],
+              "pt": [
+                "amor",
+                "felicidade",
+                "liberdade",
+                "decisão",
+                "ideia"
+              ]
             }
           },
           {
@@ -109,57 +175,125 @@
               "en": "London",
               "es": "Londres",
               "pt": "Londres"
-            }
+            },
+            "definition": {
+              "pt": "Nomeia individualmente uma pessoa, animal, lugar, instituição ou outra entidade particular, distinguindo-a dentro de uma classe."
+            },
+            "relatedExamples": [
+              {
+                "en": "Agatha and Crystal are cats.",
+                "es": "Agatha y Crystal son gatas.",
+                "pt": "Agatha e Crystal são gatas."
+              },
+              {
+                "en": "London is a beautiful city.",
+                "es": "Londres es una ciudad hermosa.",
+                "pt": "Londres é uma cidade linda."
+              }
+            ]
           }
         ]
       },
       {
-  "id": "conversation",
-  "type": "conversation",
-  "title": "Aplicação em Conversação",
-  "items": [
-    {
-      "en": "Where is the hotel?",
-      "es": "¿Dónde está el hotel?",
-      "pt": "Onde fica o hotel?",
-      "targetWords": {
-        "en": "hotel",
-        "es": "hotel",
-        "pt": "hotel"
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Where is the hotel?",
+            "es": "¿Dónde está el hotel?",
+            "pt": "Onde fica o hotel?",
+            "targetWords": {
+              "en": "hotel",
+              "es": "hotel",
+              "pt": "hotel"
+            },
+            "intent": "LOCATE",
+            "extension": {
+              "en": "The hotel is near the station.",
+              "es": "El hotel está cerca de la estación.",
+              "pt": "O hotel fica perto da estação."
+            }
+          },
+          {
+            "en": "I need water, please.",
+            "es": "Necesito agua, por favor.",
+            "pt": "Eu preciso de água, por favor.",
+            "targetWords": {
+              "en": "water",
+              "es": "agua",
+              "pt": "água"
+            },
+            "intent": "NEED / REQUEST",
+            "extension": {
+              "en": "How much water do we need?",
+              "es": "¿Cuánta agua necesitamos?",
+              "pt": "De quanta água precisamos?"
+            }
+          },
+          {
+            "en": "This teacher is great.",
+            "es": "Este profesor es genial.",
+            "pt": "Este professor é ótimo.",
+            "targetWords": {
+              "en": "teacher",
+              "es": "profesor",
+              "pt": "professor"
+            },
+            "intent": "DESCRIBE",
+            "extension": {
+              "en": "Which teacher helped you?",
+              "es": "¿Qué profesor te ayudó?",
+              "pt": "Qual professor ajudou você?"
+            }
+          }
+        ]
       }
-    },
-    {
-      "en": "I need water, please.",
-      "es": "Necesito agua, por favor.",
-      "pt": "Eu preciso de água, por favor.",
-      "targetWords": {
-        "en": "water",
-        "es": "agua",
-        "pt": "água"
-      }
-    },
-    {
-      "en": "This teacher is great.",
-      "es": "Este profesor es genial.",
-      "pt": "Este professor é ótimo.",
-      "targetWords": {
-        "en": "teacher",
-        "es": "profesor",
-        "pt": "professor"
-      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; DNA discrimina; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "toroidalLinks": [
+        {
+          "concept": "núcleo",
+          "target": "dependency-focus",
+          "status": "candidate"
+        },
+        {
+          "concept": "book / libro / livro",
+          "target": "dependency-focus",
+          "status": "candidate"
+        },
+        {
+          "concept": "Question Words",
+          "target": "question-words",
+          "status": "candidate"
+        },
+        {
+          "concept": "verbs",
+          "target": "verb-dna",
+          "status": "candidate"
+        },
+        {
+          "concept": "positive adjectives",
+          "target": "positive-adjectives",
+          "status": "reserved"
+        }
+      ]
     }
-  ]
-}
-]
-},
-"carousel": {
-  "defaultMode": "story",
-  "languageOrder": ["en", "es", "pt"],
-  "exampleLinesPerSlide": 3,
-  "controls": {
-    "previous": true,
-    "playPause": true,
-    "next": true
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
   }
-}
 }
