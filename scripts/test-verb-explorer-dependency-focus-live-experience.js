@@ -11,7 +11,11 @@ const shopping = corpus.items.find(item => item.id === 'shopping-for-dinner');
 assert.ok(shopping, 'shopping-for-dinner Experience must exist');
 
 assert.deepEqual(shopping.dependencyFocus, {
-  structureId: 'all-these-three-books',
+  structureIds: {
+    en: 'all-these-three-books',
+    es: 'todos-estos-tres-libros',
+    pt: 'todos-estes-tres-livros'
+  },
   defaultFocus: 'books'
 });
 
@@ -19,14 +23,14 @@ const experienceProperties = schema.$defs?.experienceSeed?.properties || {};
 assert.ok(experienceProperties.dependencyFocus, 'Experience schema must allow dependencyFocus metadata');
 
 for (const hook of [
-  'DEPENDENCY_FOCUS_URL',
+  'DEPENDENCY_FOCUS_URLS',
   'dependencyStructuresById',
   'x?.dependencyFocus',
-  'meta?.structureId',
+  'activeDependencyStructure(meta)',
   'meta?.defaultFocus',
   'SIYAYOVerbExplorerDependencyFocusSurface',
   'SIYAYOVerbExplorerDependencyFocusInteraction',
-  'updateStructure'
+  'updateStructure(structure,experienceLanguage)'
 ]) {
   assert.ok(runtime.includes(hook), 'missing live Dependency Focus hook: '+hook);
 }
@@ -37,5 +41,5 @@ assert.ok(
 );
 
 console.log(
-  'Verb Explorer live Dependency Focus Experience: PASS — shopping-for-dinner declares a canonical dependency structure and live runtime resolves, renders, and updates its read-only focus surface without parser inference.'
+  'Verb Explorer live Dependency Focus Experience: PASS — shopping-for-dinner declares canonical EN/ES/PT dependency structures and live runtime resolves the language that is ON, renders, and updates its read-only focus surface without parser inference or English fallback.'
 );
