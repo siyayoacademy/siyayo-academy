@@ -127,7 +127,9 @@
           if(headProbeRuntime&&typeof headProbeRuntime.render==='function')headProbeRuntime.render();
           var experienceRuntime=root.SIYAYOVerbExplorerExperienceRuntime;
           if(experienceRuntime&&typeof experienceRuntime.render==='function')experienceRuntime.render();
-          var nextEl=document.getElementById('nextExperience');
+          var nextEl=document&&typeof document.getElementById==='function'
+            ? document.getElementById('nextExperience')
+            : null;
           var nextCard=nextEl&&nextEl.closest?nextEl.closest('.toroidal-next'):null;
           if(nextCard){
             nextCard.dataset.nextState='gated';
