@@ -8,25 +8,73 @@
       "id": "all",
       "index": 1,
       "form": "All",
-      "wordClass": "DET"
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER",
+          "es": "DETERMINANTE",
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "en": "Quantifying Determiner",
+          "es": "Determinante cuantificador",
+          "pt": "Determinante quantificador"
+        }
+      }
     },
     {
       "id": "these",
       "index": 2,
       "form": "these",
-      "wordClass": "DET"
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER",
+          "es": "DETERMINANTE",
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "en": "Demonstrative Determiner",
+          "es": "Determinante demostrativo",
+          "pt": "Determinante demonstrativo"
+        }
+      }
     },
     {
       "id": "three",
       "index": 3,
       "form": "three",
-      "wordClass": "NUM"
+      "wordClass": "NUM",
+      "pedagogy": {
+        "wordType": {
+          "en": "NUMERAL",
+          "es": "NUMERAL",
+          "pt": "NUMERAL"
+        },
+        "role": {
+          "en": "Cardinal Numeral",
+          "es": "Numeral cardinal",
+          "pt": "Numeral cardinal"
+        }
+      }
     },
     {
       "id": "books",
       "index": 4,
       "form": "books",
-      "wordClass": "NOUN"
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN",
+          "es": "SUSTANTIVO",
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "en": "Head of the phrase",
+          "es": "Núcleo de la frase",
+          "pt": "Núcleo da frase"
+        }
+      }
     }
   ],
   "relations": [
