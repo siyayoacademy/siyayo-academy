@@ -1067,6 +1067,15 @@ transform:
    LIONSGATE / HOME
    --------------------------------------------------------- */
 
+.lionsgate-logo {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 .lionsgate-button {
   top: 14px;
   left: 14px;
