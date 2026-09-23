@@ -101,6 +101,10 @@
             "es": "¿Qué queso deberíamos elegir?",
             "pt": "Qual queijo devemos escolher?"
           },
+          "assessmentTarget": {
+            "skill": "which.use.determiner",
+            "definitionPath": "data/learning/skills/which.json"
+          },
           "choiceContext": {
             "focusVocabulary": "cheese",
             "sentenceBridge": {
