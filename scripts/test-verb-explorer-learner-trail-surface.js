@@ -49,13 +49,19 @@ const sandbox = vm.createContext({
         id: 'which.use.determiner',
         form: 'which',
         family: 'question-word',
-        grammarRole: 'interrogative-determiner'
+        grammarRole: 'interrogative-determiner',
+        realizations: {
+          en: { form: 'which', family: 'question-word', grammarRole: 'interrogative-determiner' },
+          es: { form: 'qué', family: 'palabra-interrogativa', grammarRole: 'determinante-interrogativo' },
+          pt: { form: 'qual', family: 'palavra-interrogativa', grammarRole: 'determinante-interrogativo' }
+        }
       });
     }
   }),
   AdaptiveLearnerTrailLabel: Object.freeze({
-    project(definition) {
+    project(definition, language) {
       assert.equal(definition.id, 'which.use.determiner');
+      assert.ok(['en','es','pt'].includes(language));
       return Object.freeze({
         status: 'TRAIL_LABEL_READY',
         skill: 'which.use.determiner',
@@ -171,6 +177,12 @@ assert.match(container.innerHTML, /○/);
 assert.match(container.innerHTML, /WHICH/);
 assert.match(container.innerHTML, /QUESTION WORD/);
 assert.match(container.innerHTML, /INTERROGATIVE DETERMINER/);
+
+assert.equal(Surface.refresh({ document: documentRef, language: 'es' }), true);
+assert.match(container.innerHTML, /RUTA DE APRENDIZAJE/);
+assert.equal(Surface.refresh({ document: documentRef, language: 'pt' }), true);
+assert.match(container.innerHTML, /TRILHA DE APRENDIZAGEM/);
+assert.equal(Surface.refresh({ document: documentRef, language: 'en' }), true);
 assert.doesNotMatch(container.innerHTML, /which\.use\.determiner/);
 assert.doesNotMatch(container.innerHTML, /<button/i);
 assert.doesNotMatch(container.innerHTML, /onclick=/i);
