@@ -19,10 +19,13 @@
 
     var nextElement=doc.getElementById('nextExperience');
     if(!nextElement)return false;
+    var nextCard=typeof nextElement.closest==='function'
+      ? nextElement.closest('.toroidal-next')
+      : null;
+    var interactiveTarget=nextCard||nextElement;
 
-    nextElement.onclick=function(event){
-      var target=event&&event.currentTarget?event.currentTarget:nextElement;
-      var toExperienceId=text(target&&target.dataset?target.dataset.nextExperience:null);
+    function activate(){
+      var toExperienceId=text(nextElement&&nextElement.dataset?nextElement.dataset.nextExperience:null);
       if(!toExperienceId)return null;
 
       var coordinator=options.coordinator||root.SIYAYOVerbExplorerAdaptiveCoordinator;
@@ -76,7 +79,21 @@
         transitionAuthorization:authorization,
         activation:activationResult
       });
+    }
+
+    interactiveTarget.onclick=activate;
+    interactiveTarget.onkeydown=function(event){
+      if(!event||!(event.key==='Enter'||event.key===' '))return;
+      if(typeof event.preventDefault==='function')event.preventDefault();
+      activate();
     };
+    if(nextCard){
+      nextCard.tabIndex=0;
+      nextCard.setAttribute('role','button');
+      nextCard.setAttribute('aria-label','Continue to the next Experience when progression is authorized');
+      nextCard.dataset.nextState='gated';
+      nextCard.classList.add('next-gated');
+    }
 
     installed=true;
     return true;
