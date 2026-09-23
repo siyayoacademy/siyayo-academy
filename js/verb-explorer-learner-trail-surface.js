@@ -28,13 +28,12 @@
     }[marker]||'○';
   }
 
-  function stateLabel(state){
-    return {
-      UNOBSERVED:'UNOBSERVED',
-      IN_PROGRESS:'IN PROGRESS',
-      CONFIRMED:'CONFIRMED',
-      CONSOLIDATED_EVIDENCE:'CONSOLIDATED EVIDENCE'
-    }[state]||state||'UNOBSERVED';
+  function stateLabel(state,language){
+    var labels={en:{UNOBSERVED:'UNOBSERVED',IN_PROGRESS:'IN PROGRESS',CONFIRMED:'CONFIRMED',CONSOLIDATED_EVIDENCE:'CONSOLIDATED EVIDENCE'},es:{UNOBSERVED:'NO OBSERVADO',IN_PROGRESS:'EN PROGRESO',CONFIRMED:'CONFIRMADO',CONSOLIDATED_EVIDENCE:'EVIDENCIA CONSOLIDADA'},pt:{UNOBSERVED:'NÃO OBSERVADO',IN_PROGRESS:'EM PROGRESSO',CONFIRMED:'CONFIRMADO',CONSOLIDATED_EVIDENCE:'EVIDÊNCIA CONSOLIDADA'}};
+    return (labels[language]||labels.en)[state]||state||(labels[language]||labels.en).UNOBSERVED;
+  }
+  function surfaceLabels(language){
+    return {en:{title:'LEARNING TRAIL',context:'CONTEXT',contexts:'CONTEXTS'},es:{title:'RUTA DE APRENDIZAJE',context:'CONTEXTO',contexts:'CONTEXTOS'},pt:{title:'TRILHA DE APRENDIZAGEM',context:'CONTEXTO',contexts:'CONTEXTOS'}}[language]||{title:'LEARNING TRAIL',context:'CONTEXT',contexts:'CONTEXTS'};
   }
 
   function refresh(options){
@@ -63,10 +62,12 @@
     if(!markerAuthority||typeof markerAuthority.resolve!=='function')return false;
     if(!stateBridge||typeof stateBridge.getState!=='function')return false;
 
+    var language=text(options.language)||'en';
+    var copy=surfaceLabels(language);
     var profile=profileSource.getProfile();
     var definition=skillSource.getDefinition();
     var skill=text(skillSource.getSkill());
-    var label=labelView.project(definition);
+    var label=labelView.project(definition,language);
     if(!profile||!skill||!label||label.skill!==skill)return false;
 
     var trail=trailView.project(profile,skill);
@@ -79,7 +80,7 @@
     if(!position)return false;
 
     var confirmed=Number(marker.confirmedExperiences)||0;
-    var contexts=confirmed===1?'1 CONTEXT':confirmed+' CONTEXTS';
+    var contexts=confirmed===1?'1 '+copy.context:confirmed+' '+copy.contexts;
     var markerGlyph=glyph(marker.marker);
     var segmentHtml=sequence.segments.map(function(segment,index){
       var current=index===position.segmentIndex;
@@ -103,10 +104,10 @@
     surface.innerHTML=
       '<div class="learner-trail-mark" aria-hidden="true">'+escapeHtml(markerGlyph)+'</div>'+
       '<div class="learner-trail-copy">'+
-        '<span class="learner-trail-label">LEARNING TRAIL</span>'+
+        '<span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
         '<strong>'+escapeHtml(label.form)+'</strong>'+
         '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
-        '<small>'+escapeHtml(stateLabel(marker.state))+' · '+escapeHtml(contexts)+'</small>'+
+        '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
       '</div>';
 
