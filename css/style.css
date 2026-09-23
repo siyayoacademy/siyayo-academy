@@ -1351,3 +1351,99 @@ transform:
 
 }
 
+
+/* =========================================================
+   ACADEMY HOME · CHAPTER STACK + PROTOTYPE ENTRY POINTS
+   ========================================================= */
+.academy-title {
+  position: absolute;
+  z-index: 3;
+  top: clamp(70px, 12%, 110px);
+  left: 8%;
+  right: 8%;
+  text-align: center;
+}
+.academy-chapter-stack {
+  position: relative;
+  z-index: 3;
+  width: min(86%, 390px);
+  max-height: 52%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+  margin-top: 8%;
+  padding: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215,179,90,.55) transparent;
+}
+.academy-chapter-link {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid rgba(242,216,138,.24);
+  border-radius: 12px;
+  background: rgba(2,12,30,.58);
+  color: rgba(255,255,255,.72);
+  text-align: left;
+}
+.academy-chapter-link span {
+  color: var(--siyayo-gold-light);
+  font-size: .72rem;
+  letter-spacing: .12em;
+}
+.academy-chapter-link strong {
+  font-size: clamp(.66rem, 2.2vw, .82rem);
+  letter-spacing: .035em;
+}
+.academy-chapter-link.is-active {
+  border-color: rgba(242,216,138,.72);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(215,179,90,.12);
+}
+.academy-chapter-link:not(.is-active) {
+  cursor: default;
+}
+.academy-quick-links {
+  position: absolute;
+  z-index: 4;
+  left: 6%;
+  right: 6%;
+  bottom: clamp(22px, 5%, 44px);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.academy-quick-link {
+  padding: 9px 13px;
+  border: 1px solid rgba(242,216,138,.45);
+  border-radius: 999px;
+  background: rgba(2,12,30,.78);
+  color: var(--siyayo-gold-light);
+  font-size: clamp(.62rem, 2vw, .76rem);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+.academy-quick-link-primary {
+  border-color: rgba(242,216,138,.8);
+  color: #fff4c5;
+}
+@media (orientation: landscape) {
+  .academy-title { top: 58px; }
+  .academy-chapter-stack {
+    width: min(72%, 680px);
+    max-height: 48%;
+    margin-top: 5%;
+  }
+  .academy-chapter-link {
+    grid-template-columns: 42px 1fr;
+    padding: 5px 12px;
+  }
+  .academy-quick-links { bottom: 18px; }
+}
