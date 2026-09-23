@@ -552,7 +552,8 @@ function buildSlides(chapterData) {
           speechLanguage:
             section.speechLanguage
         }
-      )
+      ),
+    ...(section.examples ? { examples: section.examples } : {})
   });
 
   break;
@@ -591,6 +592,9 @@ function buildSlides(chapterData) {
                   item.sentences,
                   item.targetWords
                 ),
+              ...(item.definition ? { definition: item.definition } : {}),
+              ...(item.relatedVocabulary ? { relatedVocabulary: item.relatedVocabulary } : {}),
+              ...(item.relatedExamples ? { relatedExamples: item.relatedExamples } : {}),
               ...(item.surfaces ? { surfaces: item.surfaces } : {}),
               ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
@@ -615,13 +619,19 @@ function buildSlides(chapterData) {
               type: "conversation",
               sectionId: section.id,
               itemIndex,
-              title: section.title,
+              title: item.intent
+                ? `${section.title} · ${item.intent}`
+                : section.title,
 
               lines:
                  createLanguageLines(
                    item,
                    item.targetWords ?? {}
               ),
+              ...(item.intent ? { intent: item.intent } : {}),
+              ...(item.extension ? {
+                extensionLines: createLanguageLines(item.extension)
+              } : {}),
               ...(item.surfaces ? { surfaces: item.surfaces } : {}),
               ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
@@ -709,6 +719,39 @@ function renderLanguageLines(
 }
 
 
+
+function renderCompactTrilingualExamples(content = {}) {
+  const lines = createLanguageLines(content);
+  if (lines.length === 0) return "";
+  return `
+    <div class="slide-related-content">
+      ${renderLanguageLines(lines)}
+    </div>
+  `;
+}
+
+function renderVocabularyRows(vocabulary = {}) {
+  const lines = ["en", "es", "pt"]
+    .filter(language => Array.isArray(vocabulary?.[language]) && vocabulary[language].length)
+    .map(language => {
+      const labels = { en: "IN ENGLISH", es: "EN ESPAÑOL", pt: "EM PORTUGUÊS" };
+      return `<p class="slide-vocabulary-row"><strong>${labels[language]}</strong> · ${escapeHtml(vocabulary[language].join(" · "))}</p>`;
+    })
+    .join("");
+  return lines ? `<div class="slide-related-content">${lines}</div>` : "";
+}
+
+function renderGrammarExamples(examples = {}) {
+  const blocks = ["en", "es", "pt"]
+    .filter(language => Array.isArray(examples?.[language]) && examples[language].length)
+    .map(language => {
+      const labels = { en: "IN ENGLISH", es: "EN ESPAÑOL", pt: "EM PORTUGUÊS" };
+      return `<div class="slide-example-block"><strong>${labels[language]}</strong><p>${examples[language].map(escapeHtml).join("<br>")}</p></div>`;
+    })
+    .join("");
+  return blocks ? `<div class="slide-related-content">${blocks}</div>` : "";
+}
+
 /* ========================================
    RENDER SLIDE CONTENT
    ======================================== */
@@ -766,6 +809,8 @@ function renderSlideContent(slide) {
             )}
           </div>
 
+          ${renderGrammarExamples(slide.examples)}
+
         </article>
       `;
 
@@ -786,12 +831,20 @@ function renderSlideContent(slide) {
             )}
           </h2>
 
+          ${slide.definition?.pt ? `<p class="section-content slide-definition">${escapeHtml(slide.definition.pt)}</p>` : ""}
+
           <div class="trilingual-content">
             ${renderLanguageLines(
               slide.lines,
               slide.surfaces ?? []
             )}
           </div>
+
+          ${renderVocabularyRows(slide.relatedVocabulary)}
+
+          ${Array.isArray(slide.relatedExamples)
+            ? slide.relatedExamples.map(renderCompactTrilingualExamples).join("")
+            : ""}
 
         </article>
       `;
@@ -819,6 +872,10 @@ function renderSlideContent(slide) {
               slide.surfaces ?? []
             )}
           </div>
+
+          ${Array.isArray(slide.extensionLines) && slide.extensionLines.length
+            ? `<div class="slide-extension"><p class="slide-extension-label">CONNECTION</p>${renderLanguageLines(slide.extensionLines)}</div>`
+            : ""}
 
         </article>
       `;
