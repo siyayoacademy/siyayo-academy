@@ -14,18 +14,21 @@
     return value?value.replaceAll('-',' ').replaceAll('_',' ').toUpperCase():null;
   }
 
-  function project(definition){
+  function project(definition,language){
     if(!definition||typeof definition!=='object')return null;
     var skill=text(definition.id);
-    var form=display(definition.form);
+    language=text(language)||text(definition.language)||'en';
+    var realization=definition.realizations&&definition.realizations[language];
+    var form=display(realization&&realization.form||definition.form);
     if(!skill||!form)return null;
 
     return Object.freeze({
       status:'TRAIL_LABEL_READY',
       skill:skill,
       form:form,
-      family:display(definition.family),
-      grammarRole:display(definition.grammarRole)
+      language:language,
+      family:display(realization&&realization.family||definition.family),
+      grammarRole:display(realization&&realization.grammarRole||definition.grammarRole)
     });
   }
 
