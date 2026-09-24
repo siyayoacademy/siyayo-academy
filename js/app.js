@@ -6,9 +6,11 @@
 
 const ACADEMY_MANIFEST = "data/academy.json";
 
+let currentAcademyData = null;
 let currentChapterData = null;
 let currentSlides = [];
 let currentSlideIndex = 0;
+let currentChapterIndex = 0;
 
 /* Speech state */
 let isSpeaking = false;
@@ -1007,6 +1009,148 @@ function renderSlideContent(slide) {
 
 
 /* ========================================
+   CHAPTER ENGINE / VERTICAL FLOORS
+   ======================================== */
+
+function academyChapterEntries() {
+  return currentAcademyData?.chapters ?? [];
+}
+
+function chapterIsAvailable(chapterReference) {
+  return ["active", "ready"].includes(chapterReference?.status);
+}
+
+function renderPlannedChapter(chapterReference) {
+  stopSpeech();
+
+  const main = document.querySelector("main");
+  if (!main || !chapterReference) return;
+
+  const title = [
+    chapterReference.title?.en,
+    chapterReference.title?.es,
+    chapterReference.title?.pt
+  ].filter(Boolean).join(" · ");
+
+  const chapters = academyChapterEntries();
+
+  main.innerHTML = `
+    <section class="chapter-view chapter-floor-placeholder">
+      <header class="chapter-header">
+        <p class="chapter-number">Chapter ${chapterReference.number}</p>
+        <h1 class="chapter-title">${escapeHtml(title)}</h1>
+      </header>
+
+      <div class="chapter-floor-wait" role="status">
+        <strong>NEXT FLOOR</strong>
+        <p>Chapter content is being prepared.</p>
+      </div>
+
+      <footer class="chapter-footer">
+        <div class="chapter-floor-progress">
+          ${String(currentChapterIndex + 1).padStart(2, "0")} / ${String(chapters.length).padStart(2, "0")}
+        </div>
+        ${renderChapterFloorControls()}
+      </footer>
+    </section>
+  `;
+
+  attachChapterFloorEvents();
+}
+
+function renderChapterFloorControls() {
+  const chapters = academyChapterEntries();
+  const previousDisabled = currentChapterIndex <= 0;
+  const nextDisabled = currentChapterIndex >= chapters.length - 1;
+
+  return `
+    <nav class="chapter-floor-controls" aria-label="Chapter floors">
+      <button type="button" data-chapter-floor="previous" ${previousDisabled ? "disabled" : ""} aria-label="Previous chapter">↑</button>
+      <span>CHAPTERS</span>
+      <button type="button" data-chapter-floor="next" ${nextDisabled ? "disabled" : ""} aria-label="Next chapter">↓</button>
+    </nav>
+  `;
+}
+
+async function openChapterAtIndex(index, options = {}) {
+  const chapters = academyChapterEntries();
+  if (!chapters.length) return;
+
+  const boundedIndex = Math.max(0, Math.min(index, chapters.length - 1));
+  const chapterReference = chapters[boundedIndex];
+
+  currentChapterIndex = boundedIndex;
+  currentSlideIndex = 0;
+
+  if (!chapterIsAvailable(chapterReference)) {
+    currentChapterData = null;
+    currentSlides = [];
+    renderPlannedChapter(chapterReference);
+    return;
+  }
+
+  const chapterData = await loadChapter(chapterReference);
+  if (!chapterData) {
+    currentChapterData = null;
+    currentSlides = [];
+    renderPlannedChapter(chapterReference);
+    return;
+  }
+
+  currentChapterData = chapterData;
+  currentSlides = buildSlides(chapterData);
+
+  if (!currentSlides.length) {
+    renderPlannedChapter(chapterReference);
+    return;
+  }
+
+  renderCurrentSlide();
+}
+
+function attachChapterFloorEvents() {
+  const root = document.querySelector(".chapter-view");
+  if (!root) return;
+
+  root.querySelectorAll("[data-chapter-floor]").forEach(button => {
+    button.addEventListener("click", () => {
+      const delta = button.dataset.chapterFloor === "next" ? 1 : -1;
+      openChapterAtIndex(currentChapterIndex + delta);
+    });
+  });
+
+  let startX = null;
+  let startY = null;
+
+  root.addEventListener("touchstart", event => {
+    const touch = event.touches?.[0];
+    startX = touch?.clientX ?? null;
+    startY = touch?.clientY ?? null;
+  }, { passive: true });
+
+  root.addEventListener("touchend", event => {
+    if (startX === null || startY === null) return;
+
+    const touch = event.changedTouches?.[0];
+    const dx = (touch?.clientX ?? startX) - startX;
+    const dy = (touch?.clientY ?? startY) - startY;
+
+    startX = null;
+    startY = null;
+
+    if (Math.abs(dy) < 64 || Math.abs(dy) <= Math.abs(dx)) return;
+
+    const interactive = event.target?.closest?.(
+      "[data-grammar-carousel], details, button, input, textarea, select"
+    );
+    if (interactive) return;
+
+    const delta = dy < 0 ? 1 : -1;
+    openChapterAtIndex(currentChapterIndex + delta);
+  }, { passive: true });
+}
+
+/* ========================================
    RENDER CURRENT SLIDE
    ======================================== */
 
@@ -1093,6 +1237,13 @@ function renderCurrentSlide() {
 
         </div>
 
+        <div class="chapter-floor-progress">
+          ${String(currentChapterIndex + 1).padStart(2, "0")}
+          /
+          ${String(academyChapterEntries().length).padStart(2, "0")}
+        </div>
+
+        ${renderChapterFloorControls()}
 
         <nav
           class="slider-controls"
@@ -1139,6 +1290,7 @@ function renderCurrentSlide() {
 
 
   attachSliderEvents();
+  attachChapterFloorEvents();
 
 
   console.log(
@@ -2568,67 +2720,21 @@ document.addEventListener(
 
     renderAcademyChapterStack(academy);
 
+    currentAcademyData = academy;
 
-    /* 2. Active Chapter */
+    const activeChapter = findActiveChapter(academy);
+    if (!activeChapter) return;
 
-    const activeChapter =
-      findActiveChapter(academy);
+    const activeIndex = academy.chapters.findIndex(
+      chapter => chapter.slug === activeChapter.slug
+    );
 
-    if (!activeChapter) {
-      return;
-    }
-
-
-    /* 3. Chapter JSON */
-
-    const chapterData =
-      await loadChapter(
-        activeChapter
-      );
-
-    if (!chapterData) {
-      return;
-    }
-
-
-    /* 4. Store Chapter */
-
-    currentChapterData =
-      chapterData;
-
-
-    /* 5. Generate Smart Slides */
-
-    currentSlides =
-      buildSlides(
-        chapterData
-      );
-
-
-    if (
-      currentSlides.length === 0
-    ) {
-
-      console.warn(
-        "No slides were generated."
-      );
-
-      return;
-    }
-
-
-    /* 6. Start at Slide 1 */
-
-    currentSlideIndex = 0;
-
-
-    /* 7. Render */
-
-    renderCurrentSlide();
-
+    await openChapterAtIndex(
+      activeIndex >= 0 ? activeIndex : 0
+    );
 
     console.log(
-      "SIYAYO Content Engine v0.5 ready."
+      "SIYAYO Content Engine v0.6 Chapter Engine ready."
     );
   }
 );
