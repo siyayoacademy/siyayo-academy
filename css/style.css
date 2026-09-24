@@ -1786,3 +1786,18 @@ transform:
   text-shadow:
     0 0 7px rgba(242, 216, 138, 0.32);
 }
+
+
+/* A5 example visual contract (slides 5–7).
+   Match the homologated slide 8 horizontal container width. */
+.current-example .example-definition,
+.current-example .example-language-lines,
+.current-example .slide-vocabulary-disclosure,
+.current-example .slide-related-content {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.current-example .noun-vocabulary-groups {
+  width: 100%;
+}
