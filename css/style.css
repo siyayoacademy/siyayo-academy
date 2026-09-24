@@ -2045,3 +2045,22 @@ transform:
 .chapter-3.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   CHAPTER 4 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+/* Adjective examples grow downward to preserve calm reading rhythm. */
+.chapter-4 .slide-content {
+  justify-content: flex-start;
+}
+
+/* Keep grammar panels visually consistent with the homologated Chapters. */
+.chapter-4.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-4.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
