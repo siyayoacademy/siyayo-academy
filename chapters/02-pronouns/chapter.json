@@ -29,7 +29,7 @@
         "type": "paragraph",
         "title": "Definição",
         "content": {
-          "pt": "Pronome é a classe de palavras que pode representar, retomar, identificar, apontar ou situar participantes e referentes no discurso, evitando repetições e estabelecendo relações de pessoa, referência, posse, demonstração, quantidade ou indefinição."
+          "pt": "Pronome é uma classe de palavras que pode representar ou retomar participantes e referentes no discurso, estabelecendo relações como pessoa, referência, posse, demonstração, indefinição ou interrogação. A classificação exata varia entre as línguas: formas que a tradição do espanhol e do português aproxima dos pronomes podem corresponder a determinantes em análises modernas do inglês."
         }
       },
       {
@@ -37,11 +37,16 @@
         "type": "paragraph",
         "title": "Função na Oração",
         "content": {
-          "pt": "Os pronomes podem ocupar posições normalmente associadas a grupos nominais ou atuar junto de substantivos. Conforme o tipo e a língua, podem funcionar como sujeito, objeto, complemento, marcador de posse, elemento demonstrativo ou referência discursiva."
+          "pt": "Os pronomes podem ocupar posições de grupos nominais, por exemplo como sujeito, objeto ou complemento. Algumas formas também se relacionam com posse e demonstração. Quando acompanham um substantivo, a análise depende da língua e da tradição gramatical: em inglês moderno, por exemplo, my em “my book” e this em “this book” são normalmente tratados como determinantes, enquanto mine e this usado sem substantivo podem funcionar pronominalmente."
         },
         "toroConnections": [
           {
-            "concept": "pronoun reference",
+            "concept": "pronoun as nominal reference",
+            "target": "subject",
+            "status": "candidate"
+          },
+          {
+            "concept": "subject / object dependency",
             "target": "dependency-focus",
             "status": "candidate"
           }
@@ -58,9 +63,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, muitos pronomes marcam pessoa, número e caso ou função: I/me, he/him, she/her, we/us, they/them. A forma também pode indicar posse, demonstração ou reflexividade.",
-          "es": "Em espanhol, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Há formas tônicas e átonas, além de sistemas de demonstrativos, possessivos, relativos e indefinidos.",
-          "pt": "Em português, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Incluem formas pessoais, possessivas, demonstrativas, relativas, interrogativas, indefinidas e de tratamento."
+          "en": "Em inglês, os pronomes pessoais distinguem pessoa, número e, em várias formas, caso ou função: I/me, he/him, she/her, we/us, they/them. Também há pronomes possessivos, demonstrativos, reflexivos, relativos, interrogativos e indefinidos. Formas como my e this antes de um substantivo são normalmente analisadas como determinantes, não como pronomes.",
+          "es": "Em espanhol, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Há formas pessoais tônicas e átonas, além de possessivos, demonstrativos, relativos, interrogativos e indefinidos. Algumas formas tradicionalmente relacionadas aos pronomes funcionam como determinantes quando acompanham um substantivo.",
+          "pt": "Em português, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. A tradição gramatical inclui pronomes pessoais, possessivos, demonstrativos, relativos, interrogativos, indefinidos e de tratamento; algumas dessas formas podem atuar de modo substantivo ou acompanhar um nome."
         },
         "examples": {
           "en": [
@@ -136,12 +141,17 @@
         "toroConnections": [
           {
             "concept": "person / persona / pessoa",
-            "target": "pronoun-person",
+            "target": "subject",
             "status": "candidate"
           },
           {
             "concept": "subject / object",
             "target": "dependency-focus",
+            "status": "candidate"
+          },
+          {
+            "concept": "interrogative pronouns",
+            "target": "question-words",
             "status": "candidate"
           }
         ]
@@ -168,12 +178,17 @@
               "pt": "Ela"
             },
             "definition": {
-              "pt": "Indica participantes do discurso ou seres e entidades referidos em relação às pessoas gramaticais."
+              "pt": "Representa participantes do discurso ou outros referentes em relação às pessoas gramaticais, podendo assumir funções como sujeito ou objeto."
             },
             "toroConnections": [
               {
                 "concept": "She / Ella / Ela",
-                "target": "pronoun-person",
+                "target": "subject",
+                "status": "candidate"
+              },
+              {
+                "concept": "personal reference",
+                "target": "after-dinner-conversation",
                 "status": "candidate"
               }
             ]
@@ -185,9 +200,9 @@
               "pt": "Demonstrativo"
             },
             "sentences": {
-              "en": "This is the book I want.",
-              "es": "Este es el libro que quiero.",
-              "pt": "Este é o livro que eu quero."
+              "en": "This is the one I want.",
+              "es": "Este es el que quiero.",
+              "pt": "Este é o que eu quero."
             },
             "targetWords": {
               "en": "This",
@@ -195,12 +210,17 @@
               "pt": "Este"
             },
             "definition": {
-              "pt": "Aponta ou situa referentes em relação ao contexto, à distância discursiva ou à perspectiva dos participantes."
+              "pt": "Aponta ou situa um referente sem repetir o substantivo já recuperável pelo contexto. Quando a mesma forma acompanha explicitamente um nome, sua análise pode ser determinante, conforme a língua."
             },
             "toroConnections": [
               {
                 "concept": "This / Este / Este",
-                "target": "determiner-demonstrative",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              },
+              {
+                "concept": "demonstrative reference",
+                "target": "dependency-focus",
                 "status": "candidate"
               }
             ]
@@ -222,12 +242,12 @@
               "pt": "meu"
             },
             "definition": {
-              "pt": "Expressa uma relação de posse, pertencimento ou associação entre participantes e referentes."
+              "pt": "Expressa posse, pertencimento ou associação substituindo ou retomando um grupo nominal já identificável no contexto."
             },
             "toroConnections": [
               {
                 "concept": "mine / mío / meu",
-                "target": "pronoun-possession",
+                "target": "after-dinner-conversation",
                 "status": "candidate"
               }
             ]
@@ -267,41 +287,46 @@
               },
               {
                 "concept": "she / ella / ela",
-                "target": "pronoun-person",
+                "target": "subject",
+                "status": "candidate"
+              },
+              {
+                "concept": "social identification",
+                "target": "after-dinner-conversation",
                 "status": "candidate"
               }
             ]
           },
           {
-            "en": "Which one do you prefer?",
-            "es": "¿Cuál prefieres?",
-            "pt": "Qual você prefere?",
+            "en": "Do you prefer this one?",
+            "es": "¿Prefieres este?",
+            "pt": "Você prefere este?",
             "targetWords": {
-              "en": "you",
-              "es": "prefieres",
-              "pt": "você"
+              "en": "this one",
+              "es": "este",
+              "pt": "este"
             },
             "intent": "CHOOSE",
             "extension": {
-              "en": "I prefer this one.",
-              "es": "Yo prefiero este.",
-              "pt": "Eu prefiro este."
+              "en": "Yes, I prefer this one.",
+              "es": "Sí, prefiero este.",
+              "pt": "Sim, eu prefiro este."
             },
             "extensionTargetWords": {
-              "en": "I",
-              "es": "Yo",
-              "pt": "Eu"
+              "en": "this one",
+              "es": "este",
+              "pt": "este"
             },
             "toroConnections": [
               {
-                "concept": "Which / Cuál / Qual",
-                "target": "question-words",
+                "concept": "this one / este / este",
+                "target": "shopping-for-dinner",
                 "status": "candidate"
               },
               {
-                "concept": "I / Yo / Eu",
-                "target": "pronoun-person",
-                "status": "candidate"
+                "concept": "choice in context",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
               }
             ]
           },
@@ -328,7 +353,12 @@
             "toroConnections": [
               {
                 "concept": "yours / tuyo / seu",
-                "target": "pronoun-possession",
+                "target": "after-dinner-conversation",
+                "status": "candidate"
+              },
+              {
+                "concept": "possessive reference",
+                "target": "shopping-for-dinner",
                 "status": "candidate"
               }
             ]
@@ -339,25 +369,35 @@
     "integration": {
       "principle": "A5 mostra; Master aprofunda; DNA discrimina; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
       "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Distinguir pronome de determinante quando a função e a tradição gramatical da língua exigirem.",
+        "Manter equivalência funcional entre EN, ES e PT sem forçar identidade de categorias.",
+        "Usar Experiences existentes como contexto de aplicação; links conceituais permanecem candidatos até existir uma fonte Master canônica específica para pronomes."
+      ],
       "toroidalLinks": [
         {
-          "concept": "personal pronouns",
-          "target": "pronoun-person",
+          "concept": "personal reference",
+          "target": "subject",
           "status": "candidate"
         },
         {
-          "concept": "demonstratives",
-          "target": "determiner-demonstrative",
+          "concept": "demonstrative reference",
+          "target": "dependency-focus",
           "status": "candidate"
         },
         {
-          "concept": "possession",
-          "target": "pronoun-possession",
-          "status": "candidate"
-        },
-        {
-          "concept": "Question Words",
+          "concept": "interrogative reference",
           "target": "question-words",
+          "status": "candidate"
+        },
+        {
+          "concept": "choice with demonstratives",
+          "target": "shopping-for-dinner",
+          "status": "candidate"
+        },
+        {
+          "concept": "social identity and possession",
+          "target": "after-dinner-conversation",
           "status": "candidate"
         }
       ]
