@@ -1628,3 +1628,39 @@ transform:
 .slide-vocabulary-disclosure .slide-related-content {
   margin-top: 10px;
 }
+
+
+/* Related NOUN micro-layer: native speech groups, explicit chapter targets. */
+.example-language-lines .language-label {
+  display: none;
+}
+.noun-vocabulary-groups {
+  display: grid;
+  gap: 8px;
+  width: min(100%, 760px);
+  margin: 10px auto 0;
+}
+.noun-vocabulary-language {
+  width: 100%;
+  padding: 9px 14px;
+  border: 1px solid rgba(242, 216, 138, 0.32);
+  border-radius: 12px;
+  background: rgba(2, 12, 30, 0.26);
+  color: var(--text-main);
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.noun-vocabulary-language:hover,
+.noun-vocabulary-language:focus-visible {
+  border-color: rgba(242, 216, 138, 0.68);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.12);
+  outline: none;
+}
+.noun-vocabulary-target {
+  font-style: normal;
+}
+.noun-vocabulary-separator {
+  color: rgba(255,255,255,0.64);
+}
