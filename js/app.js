@@ -2503,6 +2503,20 @@ function updatePlayPauseButton() {
     return;
   }
 
+  const isOn =
+    isSpeaking &&
+    !isPaused;
+
+  button.classList.toggle(
+    "is-on",
+    isOn
+  );
+
+  button.setAttribute(
+    "aria-pressed",
+    isOn ? "true" : "false"
+  );
+
 
   if (!isSpeaking) {
 
