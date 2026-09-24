@@ -1,0 +1,270 @@
+{
+  "$schema": "../../schemas/adverb.schema.json",
+  "version": "0.1.0",
+  "items": [
+    {
+      "id": "now",
+      "wordType": "adverb",
+      "translations": {
+        "en": "now",
+        "es": "ahora",
+        "pt": "agora"
+      },
+      "adverbClass": "time",
+      "semanticTags": [
+        "time",
+        "present-reference"
+      ],
+      "glosses": {
+        "en": "at the present time",
+        "es": "en el momento presente",
+        "pt": "no momento presente"
+      },
+      "selfExamples": {
+        "en": "We are cooking now.",
+        "es": "Estamos cocinando ahora.",
+        "pt": "Estamos cozinhando agora."
+      }
+    },
+    {
+      "id": "yesterday",
+      "wordType": "adverb",
+      "translations": {
+        "en": "yesterday",
+        "es": "ayer",
+        "pt": "ontem"
+      },
+      "adverbClass": "time",
+      "semanticTags": [
+        "time",
+        "past-reference"
+      ],
+      "glosses": {
+        "en": "on the day before today",
+        "es": "en el día anterior a hoy",
+        "pt": "no dia anterior a hoje"
+      },
+      "selfExamples": {
+        "en": "We cooked yesterday.",
+        "es": "Cocinamos ayer.",
+        "pt": "Cozinhamos ontem."
+      }
+    },
+    {
+      "id": "here",
+      "wordType": "adverb",
+      "translations": {
+        "en": "here",
+        "es": "aquí",
+        "pt": "aqui"
+      },
+      "adverbClass": "place",
+      "semanticTags": [
+        "place",
+        "proximity"
+      ],
+      "glosses": {
+        "en": "in or at this place",
+        "es": "en este lugar",
+        "pt": "neste lugar"
+      },
+      "selfExamples": {
+        "en": "Come here.",
+        "es": "Ven aquí.",
+        "pt": "Venha aqui."
+      }
+    },
+    {
+      "id": "outside",
+      "wordType": "adverb",
+      "translations": {
+        "en": "outside",
+        "es": "afuera",
+        "pt": "lá fora"
+      },
+      "adverbClass": "place",
+      "semanticTags": [
+        "place",
+        "external-location"
+      ],
+      "glosses": {
+        "en": "in or to an external place",
+        "es": "en o hacia un lugar exterior",
+        "pt": "em ou para um lugar exterior"
+      },
+      "selfExamples": {
+        "en": "The guests are outside.",
+        "es": "Los invitados están afuera.",
+        "pt": "Os convidados estão lá fora."
+      }
+    },
+    {
+      "id": "carefully",
+      "wordType": "adverb",
+      "translations": {
+        "en": "carefully",
+        "es": "cuidadosamente",
+        "pt": "cuidadosamente"
+      },
+      "adverbClass": "manner",
+      "semanticTags": [
+        "manner",
+        "care"
+      ],
+      "glosses": {
+        "en": "in a careful way",
+        "es": "de manera cuidadosa",
+        "pt": "de maneira cuidadosa"
+      },
+      "selfExamples": {
+        "en": "She works carefully.",
+        "es": "Ella trabaja cuidadosamente.",
+        "pt": "Ela trabalha cuidadosamente."
+      }
+    },
+    {
+      "id": "clearly",
+      "wordType": "adverb",
+      "translations": {
+        "en": "clearly",
+        "es": "claramente",
+        "pt": "claramente"
+      },
+      "adverbClass": "manner",
+      "semanticTags": [
+        "manner",
+        "communication"
+      ],
+      "glosses": {
+        "en": "in a clear and easy-to-understand way",
+        "es": "de manera clara y fácil de entender",
+        "pt": "de maneira clara e fácil de entender"
+      },
+      "selfExamples": {
+        "en": "She speaks clearly.",
+        "es": "Ella habla claramente.",
+        "pt": "Ela fala claramente."
+      }
+    },
+    {
+      "id": "quickly",
+      "wordType": "adverb",
+      "translations": {
+        "en": "quickly",
+        "es": "rápidamente",
+        "pt": "rapidamente"
+      },
+      "adverbClass": "manner",
+      "semanticTags": [
+        "manner",
+        "speed"
+      ],
+      "glosses": {
+        "en": "at a fast speed",
+        "es": "a gran velocidad",
+        "pt": "com rapidez"
+      },
+      "selfExamples": {
+        "en": "He answered quickly.",
+        "es": "Respondió rápidamente.",
+        "pt": "Ele respondeu rapidamente."
+      }
+    },
+    {
+      "id": "often",
+      "wordType": "adverb",
+      "translations": {
+        "en": "often",
+        "es": "a menudo",
+        "pt": "frequentemente"
+      },
+      "adverbClass": "frequency",
+      "semanticTags": [
+        "frequency",
+        "routine"
+      ],
+      "glosses": {
+        "en": "many times or frequently",
+        "es": "muchas veces o con frecuencia",
+        "pt": "muitas vezes ou com frequência"
+      },
+      "selfExamples": {
+        "en": "We often cook together.",
+        "es": "Cocinamos juntos a menudo.",
+        "pt": "Frequentemente cozinhamos juntos."
+      }
+    },
+    {
+      "id": "never",
+      "wordType": "adverb",
+      "translations": {
+        "en": "never",
+        "es": "nunca",
+        "pt": "nunca"
+      },
+      "adverbClass": "frequency",
+      "semanticTags": [
+        "frequency",
+        "zero-occurrence"
+      ],
+      "glosses": {
+        "en": "not at any time",
+        "es": "en ningún momento",
+        "pt": "em nenhum momento"
+      },
+      "selfExamples": {
+        "en": "She never arrives late.",
+        "es": "Ella nunca llega tarde.",
+        "pt": "Ela nunca chega atrasada."
+      }
+    },
+    {
+      "id": "usually",
+      "wordType": "adverb",
+      "translations": {
+        "en": "usually",
+        "es": "normalmente",
+        "pt": "normalmente"
+      },
+      "adverbClass": "frequency",
+      "semanticTags": [
+        "frequency",
+        "routine"
+      ],
+      "glosses": {
+        "en": "in most situations or on most occasions",
+        "es": "en la mayoría de las ocasiones",
+        "pt": "na maioria das ocasiões"
+      },
+      "selfExamples": {
+        "en": "We usually cook here.",
+        "es": "Normalmente cocinamos aquí.",
+        "pt": "Normalmente cozinhamos aqui."
+      }
+    },
+    {
+      "id": "very",
+      "wordType": "adverb",
+      "translations": {
+        "en": "very",
+        "es": "muy",
+        "pt": "muito"
+      },
+      "adverbClass": "degree",
+      "semanticTags": [
+        "degree",
+        "intensity"
+      ],
+      "glosses": {
+        "en": "to a high degree",
+        "es": "en un grado alto",
+        "pt": "em grau elevado"
+      },
+      "selfExamples": {
+        "en": "The dinner is very good.",
+        "es": "La cena está muy buena.",
+        "pt": "O jantar está muito bom."
+      }
+    }
+  ]
+}
