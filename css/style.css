@@ -1720,3 +1720,18 @@ transform:
 .slide-related-content .language-label:empty {
   display: none;
 }
+
+
+/* A5 hierarchy: slightly smaller chapter title + slide subtitle across slides 1–10. */
+.chapter-title {
+  font-size: clamp(1.22rem, 4.35vw, 2.08rem);
+}
+.section-title {
+  font-size: clamp(1rem, 3.75vw, 1.52rem);
+}
+
+/* One speech affordance only: remove the legacy blue emoji replica.
+   Speech remains available on the whole interactive language row. */
+.slide-related-content .language-line::before {
+  content: none;
+}
