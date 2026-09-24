@@ -792,57 +792,53 @@ function renderMasterConnections(connections = []) {
 }
 
 function renderGrammarExample(example, language) {
-  const item = typeof example === "string" ? { text: example, targets: [] } : example;
-  const sourceText = String(item.text ?? "");
-  const targets = (item.targets ?? [])
-    .map(target => String(target))
-    .filter(Boolean)
-    .sort((left, right) => right.length - left.length);
+  const item =
+    typeof example === "string"
+      ? { text: example, targets: [] }
+      : example;
 
-  let html = escapeHtml(sourceText);
+  const sourceText =
+    String(item.text ?? "");
+
+  const targets =
+    (item.targets ?? [])
+      .map(target => String(target))
+      .filter(Boolean)
+      .sort(
+        (left, right) =>
+          right.length - left.length
+      );
+
+  const targetSet =
+    new Set(targets);
+
+  let html =
+    escapeHtml(sourceText);
 
   if (targets.length) {
-    const escapeRegExp = value =>
-      value.replace(/[.*+?^\${}()|[\]\\]/g, "\\function renderGrammarExample(example, language) {
-  const item = typeof example === "string" ? { text: example, targets: [] } : example;
-  let html = escapeHtml(item.text ?? "");
+    const escapedTargets =
+      targets.map(target =>
+        target.replace(
+          /[.*+?^${}()|[\]\\]/g,
+          "\\$&"
+        )
+      );
 
-  (item.targets ?? [])
-    .slice()
-    .sort((left, right) => String(right).length - String(left).length)
-    .forEach(target => {
-      const escapedTarget = escapeHtml(target);
-      html = html.split(escapedTarget).join(`<span class="word-type-target">${escapedTarget}</span>`);
-    });
+    const targetPattern =
+      new RegExp(
+        `(${escapedTargets.join("|")})`,
+        "gu"
+      );
 
-  return `
-    <button
-      type="button"
-      class="grammar-example"
-      data-speech-language="${language}"
-      data-speech-text="${escapeHtml(item.text ?? "")}"
-      aria-label="Ouvir exemplo em ${language === "en" ? "inglês" : language === "es" ? "espanhol" : "português"}"
-    >
-      <span class="grammar-example-speaker" aria-hidden="true">🔊</span>
-      <span class="grammar-example-text">${html}</span>
-    </button>
-  `;
-}");
-
-    const targetSet = new Set(targets);
-    const targetPattern = new RegExp(
-      `(${targets.map(escapeRegExp).join("|")})`,
-      "gu"
-    );
-
-    html = sourceText
-      .split(targetPattern)
-      .map(part =>
-        targetSet.has(part)
-          ? `<span class="word-type-target">${escapeHtml(part)}</span>`
-          : escapeHtml(part)
-      )
-      .join("");
+    html =
+      sourceText
+        .split(targetPattern)
+        .map(part =>
+          targetSet.has(part)
+            ? `<span class="word-type-target">${escapeHtml(part)}</span>`
+            : escapeHtml(part)
+        )
+        .join("");
   }
 
   return `
