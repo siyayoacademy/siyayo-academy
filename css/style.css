@@ -1456,3 +1456,62 @@ transform:
   }
   .academy-quick-links { bottom: 18px; }
 }
+
+
+/* Slide 4 laboratory: independent language context, text and speech. */
+.grammar-language-carousel {
+  width: 100%;
+  min-height: 0;
+}
+.grammar-language-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.grammar-language-tab {
+  border: 1px solid rgba(242, 216, 138, 0.3);
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: rgba(2, 12, 30, 0.42);
+  color: var(--text-main);
+  font: inherit;
+  cursor: pointer;
+}
+.grammar-language-tab.is-active {
+  color: var(--siyayo-gold-light);
+  border-color: rgba(242, 216, 138, 0.75);
+}
+.grammar-language-panel {
+  display: none;
+  width: 100%;
+}
+.grammar-language-panel.is-active {
+  display: block;
+}
+.grammar-definition .language-line {
+  width: 100%;
+}
+.grammar-examples {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+  text-align: center;
+}
+.grammar-examples-label {
+  color: var(--siyayo-gold-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.grammar-example {
+  width: min(100%, 620px);
+  margin: 0 auto;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: rgba(2,12,30,0.22);
+  color: var(--text-main);
+  font: inherit;
+  cursor: pointer;
+}
