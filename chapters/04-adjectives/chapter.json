@@ -220,7 +220,7 @@
               "pt": "fresco"
             },
             "definition": {
-              "pt": "Expressa qualidade, propriedade, aparência, avaliação ou outra característica atribuída ao substantivo ou referente. O corpus atual da SIYAYO está efetivamente povoado com adjetivos qualitativos como fresh, delicious, beautiful, pleasant, excellent e wonderful."
+              "pt": "Expressa qualidade, propriedade, aparência, avaliação, caráter, estado ou outra característica atribuída a um substantivo ou referente. No Chapter, observamos apenas alguns domínios; o corpus e as páginas internas aprofundam como a mesma palavra pode atravessar diferentes contextos."
             },
             "toroConnections": [
               {
@@ -236,9 +236,19 @@
             ],
             "relatedExamples": [
               {
-                "en": "The dinner is delicious.",
-                "es": "La cena está deliciosa.",
-                "pt": "O jantar está delicioso."
+                "en": "She is reliable.",
+                "es": "Ella es confiable.",
+                "pt": "Ela é confiável."
+              },
+              {
+                "en": "She feels enthusiastic today.",
+                "es": "Ella se siente entusiasmada hoy.",
+                "pt": "Ela se sente entusiasmada hoje."
+              },
+              {
+                "en": "The experience was wonderful.",
+                "es": "La experiencia fue maravillosa.",
+                "pt": "A experiência foi maravilhosa."
               }
             ]
           },
@@ -515,7 +525,9 @@
         "Tratar concordância como propriedade morfossintática produtiva em espanhol e português; o inglês normalmente não marca gênero ou número no adjetivo.",
         "Aplicar comparação e intensidade apenas a adjetivos graduáveis; não assumir que todo adjetivo aceita very/muy/muito, comparativo ou superlativo natural.",
         "Usar contraste trilingue alinhado como princípio SIYAYO: manter a intenção semântica estável e observar como EN, ES e PT realizam posição, concordância, predicação e comparação de modos diferentes.",
-        "Usar um léxico autoexplicativo: cada adjetivo canônico pode carregar glosses e selfExamples EN/ES/PT, permitindo que a própria palavra ensine significado e uso sem transformar o Chapter em uma lista extensa."
+        "Usar um léxico autoexplicativo: cada adjetivo canônico pode carregar glosses e selfExamples EN/ES/PT, permitindo que a própria palavra ensine significado e uso sem transformar o Chapter em uma lista extensa.",
+        "Apresentar PERSON/CHARACTER, MOOD/EMOTION e EXPERIENCE/THING como domínios semânticos introdutórios, não como novas adjectiveClass; uma palavra pode participar de mais de um domínio conforme o contexto.",
+        "One adjective, many contexts. One context, many connections."
       ],
       "chapterScope": {
         "role": "introductory-canonical",
@@ -524,6 +536,7 @@
           "basic EN-ES-PT position contrast",
           "basic agreement contrast",
           "qualitative adjectives",
+          "introductory semantic domains: person/character, mood/emotion, experience/thing",
           "introductory relational and classifying distinction",
           "attributive and predicative use",
           "introductory comparison and intensity",
@@ -601,6 +614,58 @@
           "linking-verb differences across the three languages"
         ],
         "rule": "The Chapter should use aligned EN/ES/PT examples whenever a contrast adds pedagogical value, while MASTER keeps the exhaustive paradigms and exceptions."
+      },
+      "semanticDomainScope": {
+        "role": "introductory-context-map",
+        "domains": [
+          {
+            "id": "person-character",
+            "label": {
+              "en": "PERSON / CHARACTER",
+              "es": "PERSONA / CARÁCTER",
+              "pt": "PESSOA / CARÁTER"
+            },
+            "examples": [
+              "reliable",
+              "kind",
+              "generous",
+              "diligent",
+              "adaptable"
+            ]
+          },
+          {
+            "id": "mood-emotion",
+            "label": {
+              "en": "MOOD / EMOTION",
+              "es": "ESTADO DE ÁNIMO / EMOCIÓN",
+              "pt": "HUMOR / EMOÇÃO"
+            },
+            "examples": [
+              "enthusiastic"
+            ]
+          },
+          {
+            "id": "experience-thing",
+            "label": {
+              "en": "EXPERIENCE / THING",
+              "es": "EXPERIENCIA / COSA",
+              "pt": "EXPERIÊNCIA / COISA"
+            },
+            "examples": [
+              "wonderful",
+              "excellent",
+              "beautiful",
+              "pleasant",
+              "fresh"
+            ]
+          }
+        ],
+        "principle": {
+          "en": "One adjective, many contexts. One context, many connections.",
+          "es": "Un adjetivo, muchos contextos. Un contexto, muchas conexiones.",
+          "pt": "Um adjetivo, muitos contextos. Um contexto, muitas conexões."
+        },
+        "rule": "Chapter 4 introduces semantic domains as a map, while corpus and internal adjective pages keep the lexical depth, polysemy, usage constraints and broader A-Z expansion."
       }
     }
   },
