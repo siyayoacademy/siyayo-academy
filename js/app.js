@@ -741,15 +741,52 @@ function renderVocabularyRows(vocabulary = {}) {
   return lines ? `<div class="slide-related-content">${lines}</div>` : "";
 }
 
-function renderGrammarExamples(examples = {}) {
-  const blocks = ["en", "es", "pt"]
-    .filter(language => Array.isArray(examples?.[language]) && examples[language].length)
-    .map(language => {
-      const labels = { en: "IN ENGLISH", es: "EN ESPAÑOL", pt: "EM PORTUGUÊS" };
-      return `<div class="slide-example-block"><strong>${labels[language]}</strong><p>${examples[language].map(escapeHtml).join("<br>")}</p></div>`;
-    })
-    .join("");
-  return blocks ? `<div class="slide-related-content">${blocks}</div>` : "";
+function renderGrammarLanguagePanels(lines = [], examples = {}) {
+  const panels = lines.map((line, index) => {
+    const exampleItems = Array.isArray(examples?.[line.language])
+      ? examples[line.language]
+      : [];
+
+    return `
+      <section
+        class="grammar-language-panel${index === 0 ? " is-active" : ""}"
+        data-grammar-language="${line.language}"
+        aria-hidden="${index === 0 ? "false" : "true"}"
+      >
+        <div class="grammar-definition">
+          ${renderLanguageLines([line])}
+        </div>
+        ${exampleItems.length ? `
+          <div class="grammar-examples" data-example-language="${line.language}">
+            <span class="grammar-examples-label">EXAMPLES</span>
+            ${exampleItems.map(example => `
+              <button
+                type="button"
+                class="grammar-example"
+                data-speech-language="${line.language}"
+                data-speech-text="${escapeHtml(example)}"
+              >${escapeHtml(example)}</button>
+            `).join("")}
+          </div>
+        ` : ""}
+      </section>
+    `;
+  }).join("");
+
+  return `
+    <div class="grammar-language-carousel" data-grammar-carousel>
+      <div class="grammar-language-tabs" role="tablist" aria-label="Language">
+        ${lines.map((line, index) => `
+          <button
+            type="button"
+            class="grammar-language-tab${index === 0 ? " is-active" : ""}"
+            data-grammar-tab="${line.language}"
+          >${line.language === "en" ? "ENGLISH" : line.language === "es" ? "ESPAÑOL" : "PORTUGUÊS"}</button>
+        `).join("")}
+      </div>
+      <div class="grammar-language-track">${panels}</div>
+    </div>
+  `;
 }
 
 /* ========================================
@@ -802,14 +839,10 @@ function renderSlideContent(slide) {
             )}
           </h2>
 
-          <div class="trilingual-content">
-            ${renderLanguageLines(
-              slide.lines,
-              slide.surfaces ?? []
-            )}
-          </div>
-
-          ${renderGrammarExamples(slide.examples)}
+          ${renderGrammarLanguagePanels(
+            slide.lines,
+            slide.examples
+          )}
 
         </article>
       `;
@@ -1296,6 +1329,71 @@ function initializeSemanticSurfaceActionChoiceEvents() {
    SLIDER EVENTS
    ======================================== */
 
+function setGrammarLanguage(language) {
+  const carousel = document.querySelector("[data-grammar-carousel]");
+  if (!carousel) return;
+
+  carousel.querySelectorAll("[data-grammar-language]").forEach(panel => {
+    const active = panel.dataset.grammarLanguage === language;
+    panel.classList.toggle("is-active", active);
+    panel.setAttribute("aria-hidden", active ? "false" : "true");
+  });
+
+  carousel.querySelectorAll("[data-grammar-tab]").forEach(tab => {
+    tab.classList.toggle("is-active", tab.dataset.grammarTab === language);
+  });
+}
+
+function attachGrammarCarouselEvents() {
+  const carousel = document.querySelector("[data-grammar-carousel]");
+  if (!carousel) return;
+
+  const languages = Array.from(carousel.querySelectorAll("[data-grammar-language]"))
+    .map(panel => panel.dataset.grammarLanguage);
+
+  carousel.querySelectorAll("[data-grammar-tab]").forEach(tab => {
+    tab.addEventListener("click", () => setGrammarLanguage(tab.dataset.grammarTab));
+  });
+
+  carousel.querySelectorAll(".grammar-example").forEach(example => {
+    example.addEventListener("click", event => {
+      event.stopPropagation();
+      speakText(
+        example.dataset.speechText ?? "",
+        example.dataset.speechLanguage ?? "en"
+      );
+    });
+  });
+
+  let startX = null;
+  let startY = null;
+
+  carousel.addEventListener("touchstart", event => {
+    const touch = event.touches[0];
+    startX = touch?.clientX ?? null;
+    startY = touch?.clientY ?? null;
+  }, { passive: true });
+
+  carousel.addEventListener("touchend", event => {
+    if (startX === null || startY === null) return;
+    const touch = event.changedTouches[0];
+    const dx = (touch?.clientX ?? startX) - startX;
+    const dy = (touch?.clientY ?? startY) - startY;
+    startX = null;
+    startY = null;
+
+    if (Math.abs(dx) < 48 || Math.abs(dx) <= Math.abs(dy)) return;
+
+    const active = carousel.querySelector("[data-grammar-language].is-active");
+    const index = Math.max(0, languages.indexOf(active?.dataset.grammarLanguage));
+    const nextIndex = dx < 0
+      ? Math.min(languages.length - 1, index + 1)
+      : Math.max(0, index - 1);
+
+    if (nextIndex !== index) setGrammarLanguage(languages[nextIndex]);
+  }, { passive: true });
+}
+
 function attachSliderEvents() {
 
   const previousButton =
@@ -1312,6 +1410,8 @@ function attachSliderEvents() {
     document.getElementById(
       "playPauseButton"
     );
+
+  attachGrammarCarouselEvents();
 
 
   previousButton?.addEventListener(
