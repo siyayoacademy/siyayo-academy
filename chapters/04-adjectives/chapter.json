@@ -514,7 +514,8 @@
         "Tratar a posição do adjetivo como tendência dependente da língua e do contexto, não como regra absoluta de pré- ou pós-nominalidade.",
         "Tratar concordância como propriedade morfossintática produtiva em espanhol e português; o inglês normalmente não marca gênero ou número no adjetivo.",
         "Aplicar comparação e intensidade apenas a adjetivos graduáveis; não assumir que todo adjetivo aceita very/muy/muito, comparativo ou superlativo natural.",
-        "Usar contraste trilingue alinhado como princípio SIYAYO: manter a intenção semântica estável e observar como EN, ES e PT realizam posição, concordância, predicação e comparação de modos diferentes."
+        "Usar contraste trilingue alinhado como princípio SIYAYO: manter a intenção semântica estável e observar como EN, ES e PT realizam posição, concordância, predicação e comparação de modos diferentes.",
+        "Usar um léxico autoexplicativo: cada adjetivo canônico pode carregar glosses e selfExamples EN/ES/PT, permitindo que a própria palavra ensine significado e uso sem transformar o Chapter em uma lista extensa."
       ],
       "chapterScope": {
         "role": "introductory-canonical",
@@ -548,7 +549,20 @@
       "corpusScope": {
         "role": "canonical-lexicon",
         "source": "data/lexicon/adjectives/adjectives.json",
-        "rule": "The adjective corpus provides canonical trilingual lexical items, operational adjectiveClass values, polarity and semantic tags."
+        "rule": "The adjective corpus provides canonical trilingual lexical items, operational adjectiveClass values, polarity, semantic tags, short glosses and self-examples. The Chapter samples this lexicon; it does not reproduce the full corpus.",
+        "selfExplainingLexicon": {
+          "principle": "An adjective should be able to explain itself through a concise trilingual gloss and a natural trilingual example.",
+          "fields": [
+            "translations",
+            "glosses",
+            "selfExamples",
+            "adjectiveClass",
+            "polarity",
+            "semanticTags"
+          ],
+          "firstCollection": "positive-human-descriptors",
+          "rule": "Keep lexical depth in the corpus and surface selected items contextually in Chapters and Experiences."
+        }
       },
       "experienceScope": {
         "role": "contextual-application",
