@@ -1,32 +1,24 @@
 {
   "$schema": "../schemas/node.schema.json",
-
-  "version": "0.1.0",
-
+  "version": "0.2.0",
   "id": "action",
-
   "type": "concept",
-
   "role": "verb-function",
-
   "label": {
     "en": "ACTION",
     "es": "ACCIÓN",
     "pt": "AÇÃO"
   },
-
   "description": {
-    "en": "Verb-function concept for expressing what a subject does, including actions, habits and routines, through lexical verbs organized across sentence structures and time references.",
-    "es": "Concepto de función verbal para expresar lo que hace un sujeto, incluyendo acciones, hábitos y rutinas, mediante verbos léxicos organizados a través de estructuras oracionales y referencias temporales.",
-    "pt": "Conceito de função verbal para expressar o que um sujeito faz, incluindo ações, hábitos e rotinas, por meio de verbos lexicais organizados através das estruturas da oração e das referências temporais."
+    "en": "Verb-function concept for expressing what a subject does through lexical actions, activities, habits and routines. Action may overlap with Movement when the lexical event itself involves displacement.",
+    "es": "Concepto de función verbal para expresar lo que hace un sujeto mediante acciones léxicas, actividades, hábitos y rutinas. Acción puede superponerse con Movimiento cuando el evento léxico implica desplazamiento.",
+    "pt": "Conceito de função verbal para expressar o que o sujeito faz por meio de ações lexicais, atividades, hábitos e rotinas. Ação pode sobrepor-se a Movimento quando o próprio evento lexical envolve deslocamento."
   },
-
   "relations": [
     {
       "type": "parent",
       "target": "verb-functions"
     },
-
     {
       "type": "related",
       "target": "auxiliaries"
@@ -51,7 +43,6 @@
       "type": "related",
       "target": "tools"
     },
-
     {
       "type": "supports",
       "target": "practice"
@@ -60,7 +51,6 @@
       "type": "supports",
       "target": "examples"
     },
-
     {
       "type": "returns-to",
       "target": "verbs"
@@ -70,7 +60,6 @@
       "target": "roots"
     }
   ],
-
   "representations": [
     {
       "type": "visual-index",
@@ -101,17 +90,15 @@
       "target": "master-action"
     }
   ],
-
   "pedagogy": {
     "level": "core",
     "sequence": 3,
     "speechEnabled": true,
     "interactive": true
   },
-
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats Action as the Master verb-function associated with what a subject does. Routine and habit are treated as applications of Action rather than independent verb-functions. Lexical regular and irregular verbs will be managed through a separate verb lexicon instead of becoming child knowledge nodes."
+    "notes": "v0.2 keeps Action centered on lexical doing: activities, habits and routines. Routine remains an application of Action rather than an independent verb-function. Action may overlap with Movement for verbs such as go, come, walk and run. Tense, aspect, negation, interrogation and modality are grammatical layers that can operate over Action without redefining it."
   }
 }
