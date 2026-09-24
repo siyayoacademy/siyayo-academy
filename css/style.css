@@ -1664,3 +1664,14 @@ transform:
 .noun-vocabulary-separator {
   color: rgba(255,255,255,0.64);
 }
+
+
+/* Proper noun → Master bridge */
+.master-connections-disclosure { margin-top: 0.65rem; }
+.master-connections-disclosure > summary { cursor: pointer; }
+.master-connection-language { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.35rem; }
+.master-connection-pair { white-space: nowrap; }
+.master-common { color: inherit; }
+.master-arrow { opacity: 0.72; }
+.master-proper { color: var(--gold, #e7c766); font-weight: 700; }
+.master-pair-separator { opacity: 0.55; }
