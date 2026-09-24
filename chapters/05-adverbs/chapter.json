@@ -78,9 +78,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, muitos advérbios de modo terminam em -ly, mas nem todo advérbio usa essa terminação. A posição varia conforme a função: frequência costuma aparecer perto do verbo; tempo e lugar podem mover-se pela oração.",
-          "es": "Em espanhol, muitos advérbios de modo terminam em -mente, mas há muitos advérbios simples. A posição é relativamente flexível e depende do foco, da função e do ritmo da oração.",
-          "pt": "Em português, muitos advérbios de modo terminam em -mente, mas há muitos advérbios simples. A posição também é flexível e pode alterar foco, ênfase e naturalidade."
+          "en": "Em inglês, muitos advérbios de modo terminam em -ly, mas advérbio não é uma classe definida por essa terminação. A posição depende da função e do escopo: frequência costuma ficar próxima do verbo; tempo e lugar são mais móveis; advérbios de grau aparecem junto ao elemento que intensificam.",
+          "es": "Em espanhol, muitos advérbios de modo terminam em -mente, mas há numerosos advérbios simples e locuções adverbiais. A posição depende de função, escopo e foco: tempo e lugar são relativamente móveis; frequência e grau tendem a ficar próximos do elemento que modificam.",
+          "pt": "Em português, muitos advérbios de modo terminam em -mente, mas há numerosos advérbios simples e locuções adverbiais. A posição depende de função, escopo e foco: tempo e lugar são relativamente móveis; frequência e grau tendem a ficar próximos do elemento que modificam."
         },
         "examples": {
           "en": [
@@ -205,13 +205,18 @@
               "pt": "agora"
             },
             "definition": {
-              "pt": "Localiza um acontecimento ou estado no tempo: agora, ontem, amanhã, cedo, tarde, depois. Conecta-se naturalmente a WHEN / CUÁNDO / QUANDO."
+              "pt": "Localiza um acontecimento, processo ou estado no tempo: agora, ontem, amanhã, cedo, tarde, depois. O advérbio temporal acrescenta uma referência de tempo à oração, mas não é o mesmo que tempo verbal: a forma verbal e o advérbio podem cooperar ou até contrastar. Conecta-se naturalmente a WHEN / CUÁNDO / QUANDO."
             },
             "relatedExamples": [
               {
                 "en": "We cooked yesterday.",
                 "es": "Cocinamos ayer.",
                 "pt": "Cozinhamos ontem."
+              },
+              {
+                "en": "Tomorrow we will cook together.",
+                "es": "Mañana cocinaremos juntos.",
+                "pt": "Amanhã cozinharemos juntos."
               }
             ],
             "toroConnections": [
@@ -269,13 +274,18 @@
               "pt": "lá fora"
             },
             "definition": {
-              "pt": "Localiza alguém, algo ou um acontecimento no espaço: aqui, ali, perto, longe, dentro, fora. Conecta-se naturalmente a WHERE / DÓNDE / ONDE."
+              "pt": "Localiza alguém, algo ou um acontecimento no espaço: aqui, ali, perto, longe, dentro, fora. Advérbios de lugar podem ocupar posições diferentes na oração. Eles se relacionam com preposições e expressões espaciais, mas não são a mesma categoria gramatical. Conecta-se naturalmente a WHERE / DÓNDE / ONDE."
             },
             "relatedExamples": [
               {
                 "en": "Come here.",
                 "es": "Ven aquí.",
                 "pt": "Venha aqui."
+              },
+              {
+                "en": "They are waiting outside.",
+                "es": "Están esperando afuera.",
+                "pt": "Eles estão esperando lá fora."
               }
             ],
             "toroConnections": [
@@ -324,13 +334,18 @@
               "pt": "claramente"
             },
             "definition": {
-              "pt": "Descreve a maneira como uma ação ou processo acontece: claramente, cuidadosamente, rapidamente, bem. Conecta-se naturalmente a HOW / CÓMO / COMO."
+              "pt": "Descreve a maneira como uma ação, atividade ou processo acontece: claramente, cuidadosamente, rapidamente, bem. Pode ser uma palavra simples, uma forma em -ly/-mente ou uma locução. Conecta-se naturalmente a HOW / CÓMO / COMO e conversa diretamente com verbos de ACTION."
             },
             "relatedExamples": [
               {
                 "en": "He answered calmly.",
                 "es": "Respondió con calma.",
                 "pt": "Ele respondeu calmamente."
+              },
+              {
+                "en": "She speaks very clearly.",
+                "es": "Ella habla muy claramente.",
+                "pt": "Ela fala muito claramente."
               }
             ],
             "toroConnections": [
@@ -392,13 +407,18 @@
               "pt": "Frequentemente"
             },
             "definition": {
-              "pt": "Indica com que frequência algo acontece: sempre, frequentemente, às vezes, raramente, nunca. Conecta-se a HOW OFTEN / CON QUÉ FRECUENCIA / COM QUE FREQUÊNCIA."
+              "pt": "Indica com que frequência algo acontece: sempre, frequentemente, às vezes, raramente, nunca. É especialmente útil para hábitos e rotinas, mas frequência não é a própria função verbal ACTION. Em inglês, sua posição pode depender do verbo e da presença de auxiliares. Conecta-se a HOW OFTEN / CON QUÉ FRECUENCIA / COM QUE FREQUÊNCIA."
             },
             "relatedExamples": [
               {
                 "en": "She never arrives late.",
                 "es": "Ella nunca llega tarde.",
                 "pt": "Ela nunca chega atrasada."
+              },
+              {
+                "en": "We usually cook at home.",
+                "es": "Normalmente cocinamos en casa.",
+                "pt": "Normalmente cozinhamos em casa."
               }
             ],
             "toroConnections": [
@@ -453,9 +473,14 @@
               "pt": "muito"
             },
             "definition": {
-              "pt": "Modifica o grau ou a intensidade de uma qualidade, de outro advérbio ou de uma expressão: very/muy/muito, quite/bastante, too/demasiado. Nem todo adjetivo ou advérbio aceita a mesma gradação naturalmente."
+              "pt": "Modifica o grau ou a intensidade de uma qualidade, de outro advérbio ou de certas expressões: very/muy/muito, quite/bastante, too/demasiado. O advérbio de grau atua perto do elemento que modifica. Nem todo adjetivo ou advérbio aceita a mesma gradação naturalmente."
             },
             "relatedExamples": [
+              {
+                "en": "The dinner is very good.",
+                "es": "La cena está muy buena.",
+                "pt": "O jantar está muito bom."
+              },
               {
                 "en": "She speaks very clearly.",
                 "es": "Ella habla muy claramente.",
@@ -529,17 +554,22 @@
                 "status": "candidate"
               },
               {
-                "concept": "frequency",
-                "target": "verbs",
+                "concept": "usually / normalmente / normalmente",
+                "target": "words",
                 "status": "candidate"
               },
               {
-                "concept": "place",
+                "concept": "here / aquí / aqui",
                 "target": "prepositions",
                 "status": "candidate"
               },
               {
-                "concept": "manner",
+                "concept": "evening / noche / noite",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "carefully / con cuidado / com cuidado",
                 "target": "action",
                 "status": "candidate"
               },
@@ -567,7 +597,13 @@
         "Conectar PLACE a circumstances.place e ao futuro Chapter de Prepositions, mas manter a distinção entre advérbio de lugar e relação preposicional.",
         "Conectar MANNER às perguntas HOW já existentes na Mente Pensante das Experiences e College Experiences.",
         "Conectar FREQUENCY à rotina/hábito do node Action, sem redefinir frequência como função verbal.",
-        "Usar data/lexicon/adverbs/adverbs.json como fonte canônica lexical para exemplos, glosses e futura navegação interna."
+        "Usar data/lexicon/adverbs/adverbs.json como fonte canônica lexical para exemplos, glosses e futura navegação interna.",
+        "Distinguir posição de escopo: mover um advérbio pode mudar foco ou interpretação, não apenas estilo.",
+        "Não equiparar TIME a tense/aspect: advérbio temporal é conteúdo circunstancial; tense/aspect pertence à organização verbal.",
+        "Não equiparar PLACE a preposição: ambos podem expressar relações espaciais, mas pertencem a categorias diferentes.",
+        "Não equiparar MANNER a sufixos -ly/-mente: formas simples e locuções também realizam a mesma função.",
+        "Não equiparar FREQUENCY a rotina: frequência modifica a recorrência de uma ação, enquanto rotina pertence à interpretação do evento/hábito.",
+        "Tratar DEGREE como operador sobre adjetivo, advérbio ou expressão graduável, mantendo a conexão direta com Chapter 4."
       ],
       "trilingualContrastScope": {
         "role": "toroidal-cross-language-comparison",
@@ -686,6 +722,36 @@
         ],
         "principle": "Chapter 5 should reuse canonical information already present in the Academy whenever the semantic function is the same, instead of duplicating isolated definitions.",
         "rule": "Connections expose source relationships without collapsing distinct layers: adverbial time is not tense/aspect, place is not preposition, and frequency is not the Action function itself."
+      },
+      "boundaryMap": {
+        "role": "semantic-boundary-audit",
+        "contrasts": [
+          {
+            "left": "adverbial-time",
+            "right": "tense-aspect",
+            "rule": "time expressions locate the event; tense/aspect organizes verbal grammar"
+          },
+          {
+            "left": "adverbial-place",
+            "right": "preposition",
+            "rule": "both can express spatial relations, but they are different word-class or phrase structures"
+          },
+          {
+            "left": "manner",
+            "right": "word-formation",
+            "rule": "manner is a semantic function; -ly/-mente is only one possible form"
+          },
+          {
+            "left": "frequency",
+            "right": "routine-action",
+            "rule": "frequency modifies recurrence; Action describes what the subject does"
+          },
+          {
+            "left": "degree",
+            "right": "adjective-quality",
+            "rule": "degree modifies intensity; the adjective contributes the quality itself"
+          }
+        ]
       }
     }
   },
