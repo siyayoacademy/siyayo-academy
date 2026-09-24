@@ -68,9 +68,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, os verbos variam menos por pessoa do que em espanhol e português e usam amplamente auxiliares. Tempo e aspecto aparecem em combinações como work, worked, will work e is working.",
-          "es": "Em espanhol, os verbos apresentam flexão rica de pessoa, número, tempo e modo. As terminações verbais frequentemente identificam o sujeito, e perífrases podem marcar aspecto e modalidade.",
-          "pt": "Em português, os verbos apresentam flexão de pessoa, número, tempo e modo. As terminações podem identificar o sujeito, e locuções verbais combinam auxiliares e formas principais para expressar tempo, aspecto e modalidade."
+          "en": "Em inglês, os verbos variam menos por pessoa do que em espanhol e português e usam amplamente auxiliares. O mesmo verbo pode aparecer em presente, passado, futuro, afirmativa, negativa, interrogativa, aspecto progressivo e construções modais.",
+          "es": "Em espanhol, os verbos apresentam flexão rica de pessoa, número, tempo e modo. A afirmativa, a negativa e a interrogativa preservam o verbo como núcleo, enquanto perífrases e verbos modais acrescentam aspecto, intenção, possibilidade ou obrigação.",
+          "pt": "Em português, os verbos apresentam flexão de pessoa, número, tempo e modo. A afirmativa, a negativa e a interrogativa organizam-se em torno do verbo; locuções e verbos modais acrescentam aspecto, possibilidade, capacidade, obrigação e outras relações."
         },
         "examples": {
           "en": [
@@ -81,15 +81,52 @@
               ]
             },
             {
-              "text": "She worked yesterday.",
+              "text": "She did not work yesterday.",
               "targets": [
-                "worked"
+                "did",
+                "work"
+              ]
+            },
+            {
+              "text": "Did she work yesterday?",
+              "targets": [
+                "Did",
+                "work"
+              ]
+            },
+            {
+              "text": "She will work tomorrow.",
+              "targets": [
+                "will",
+                "work"
+              ]
+            },
+            {
+              "text": "Will she work tomorrow?",
+              "targets": [
+                "Will",
+                "work"
+              ]
+            },
+            {
+              "text": "She can work today.",
+              "targets": [
+                "can",
+                "work"
+              ]
+            },
+            {
+              "text": "Can she work today?",
+              "targets": [
+                "Can",
+                "work"
               ]
             },
             {
               "text": "She is working now.",
               "targets": [
-                "is working"
+                "is",
+                "working"
               ]
             }
           ],
@@ -101,15 +138,48 @@
               ]
             },
             {
-              "text": "Ella trabajó ayer.",
+              "text": "Ella no trabajó ayer.",
               "targets": [
                 "trabajó"
               ]
             },
             {
+              "text": "¿Trabajó ella ayer?",
+              "targets": [
+                "Trabajó"
+              ]
+            },
+            {
+              "text": "Ella trabajará mañana.",
+              "targets": [
+                "trabajará"
+              ]
+            },
+            {
+              "text": "¿Trabajará ella mañana?",
+              "targets": [
+                "Trabajará"
+              ]
+            },
+            {
+              "text": "Ella puede trabajar hoy.",
+              "targets": [
+                "puede",
+                "trabajar"
+              ]
+            },
+            {
+              "text": "¿Puede trabajar hoy?",
+              "targets": [
+                "Puede",
+                "trabajar"
+              ]
+            },
+            {
               "text": "Ella está trabajando ahora.",
               "targets": [
-                "está trabajando"
+                "está",
+                "trabajando"
               ]
             }
           ],
@@ -121,15 +191,48 @@
               ]
             },
             {
-              "text": "Ela trabalhou ontem.",
+              "text": "Ela não trabalhou ontem.",
               "targets": [
                 "trabalhou"
               ]
             },
             {
+              "text": "Ela trabalhou ontem?",
+              "targets": [
+                "trabalhou"
+              ]
+            },
+            {
+              "text": "Ela trabalhará amanhã.",
+              "targets": [
+                "trabalhará"
+              ]
+            },
+            {
+              "text": "Ela trabalhará amanhã?",
+              "targets": [
+                "trabalhará"
+              ]
+            },
+            {
+              "text": "Ela pode trabalhar hoje.",
+              "targets": [
+                "pode",
+                "trabalhar"
+              ]
+            },
+            {
+              "text": "Ela pode trabalhar hoje?",
+              "targets": [
+                "pode",
+                "trabalhar"
+              ]
+            },
+            {
               "text": "Ela está trabalhando agora.",
               "targets": [
-                "está trabalhando"
+                "está",
+                "trabalhando"
               ]
             }
           ]
@@ -197,6 +300,18 @@
                 "target": "words",
                 "status": "candidate"
               }
+            ],
+            "relatedExamples": [
+              {
+                "en": "She is not a doctor.",
+                "es": "Ella no es médica.",
+                "pt": "Ela não é médica."
+              },
+              {
+                "en": "Is she kind?",
+                "es": "¿Es amable?",
+                "pt": "Ela é gentil?"
+              }
             ]
           },
           {
@@ -233,6 +348,18 @@
                 "concept": "Quality / State contrast",
                 "target": "quality",
                 "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "She was tired yesterday.",
+                "es": "Ella estaba cansada ayer.",
+                "pt": "Ela estava cansada ontem."
+              },
+              {
+                "en": "Is she tired now?",
+                "es": "¿Está cansada ahora?",
+                "pt": "Ela está cansada agora?"
               }
             ]
           },
@@ -276,6 +403,23 @@
                 "target": "verbs",
                 "status": "candidate"
               }
+            ],
+            "relatedExamples": [
+              {
+                "en": "They went home yesterday.",
+                "es": "Ellos fueron a casa ayer.",
+                "pt": "Eles foram para casa ontem."
+              },
+              {
+                "en": "Will you go tomorrow?",
+                "es": "¿Irás mañana?",
+                "pt": "Você irá amanhã?"
+              },
+              {
+                "en": "We can walk there.",
+                "es": "Podemos caminar hasta allí.",
+                "pt": "Podemos caminhar até lá."
+              }
             ]
           },
           {
@@ -295,7 +439,7 @@
               "pt": "Cozinhamos"
             },
             "definition": {
-              "pt": "Expressa o que o sujeito faz, incluindo ações, hábitos e rotinas. No modelo atual, rotina é uma aplicação da função Ação, não uma função verbal separada."
+              "pt": "Expressa o que o sujeito faz por meio de ações lexicais, atividades, hábitos e rotinas. Tempo, aspecto, negativa, interrogativa e modalidade podem modificar a construção sem mudar a função Action; ela também pode sobrepor-se a Movement."
             },
             "toroConnections": [
               {
@@ -309,9 +453,36 @@
                 "status": "candidate"
               },
               {
+                "concept": "auxiliary DO",
+                "target": "auxiliaries",
+                "status": "candidate"
+              },
+              {
+                "concept": "modal layer",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
                 "concept": "having dinner",
                 "target": "having-dinner",
                 "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "We did not cook yesterday.",
+                "es": "No cocinamos ayer.",
+                "pt": "Não cozinhamos ontem."
+              },
+              {
+                "en": "Do you cook at home?",
+                "es": "¿Cocinas en casa?",
+                "pt": "Você cozinha em casa?"
+              },
+              {
+                "en": "We can cook together.",
+                "es": "Podemos cocinar juntos.",
+                "pt": "Podemos cozinhar juntos."
               }
             ]
           },
@@ -332,7 +503,7 @@
               "pt": "Há"
             },
             "definition": {
-              "pt": "Expressa existência, presença ou ocorrência de alguém, algo ou um fato. Em inglês, uma construção central é THERE + TO BE."
+              "pt": "Expressa existência, presença, disponibilidade ou ocorrência. Em inglês, THERE + BE é uma construção central; em espanhol, HAY é central; em português, HÁ é neutro-formal e TER é muito frequente na fala brasileira. Negação, pergunta, tempo e modalidade podem operar sobre essa função."
             },
             "toroConnections": [
               {
@@ -341,9 +512,46 @@
                 "status": "candidate"
               },
               {
-                "concept": "there + to be",
+                "concept": "there + be",
                 "target": "master-existence",
                 "status": "candidate"
+              },
+              {
+                "concept": "hay / há / ter",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "time and modality",
+                "target": "timelines",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "There are two books on the table.",
+                "es": "Hay dos libros sobre la mesa.",
+                "pt": "Há dois livros sobre a mesa."
+              },
+              {
+                "en": "There is not enough time.",
+                "es": "No hay suficiente tiempo.",
+                "pt": "Não há tempo suficiente."
+              },
+              {
+                "en": "Is there a hotel nearby?",
+                "es": "¿Hay un hotel cerca?",
+                "pt": "Há um hotel por perto?"
+              },
+              {
+                "en": "There will be a meeting tomorrow.",
+                "es": "Habrá una reunión mañana.",
+                "pt": "Haverá uma reunião amanhã."
+              },
+              {
+                "en": "There may be another option.",
+                "es": "Puede haber otra opción.",
+                "pt": "Pode haver outra opção."
               }
             ]
           }
@@ -414,13 +622,20 @@
         "Distinguir Quality e State pela função semântica, não apenas pela forma verbal: o inglês usa BE em ambos; espanhol e português frequentemente contrastam SER e ESTAR, mas sem equivalência mecânica um-para-um.",
         "Definir Movement por deslocamento, direção, mudança de posição ou movimento físico; tratar o progressive (BE + verbo-ING) como camada de aspecto transversal, não como definição da função Movement.",
         "Permitir sobreposição semântica entre Movement e Action para verbos como go, come, walk e run.",
-        "Reservar paradigmas completos, auxiliares, tempos, modos, aspectos, regulares e irregulares para MASTER e DNA VERBS."
+        "Reservar paradigmas completos, auxiliares, tempos, modos, aspectos, regulares e irregulares para MASTER e DNA VERBS.",
+        "Tratar affirmative, negative e interrogative como formas estruturais aplicáveis às funções verbais, não como novas funções semânticas.",
+        "Tratar present, past e future como referências temporais e progressive/perfect como camadas de aspecto, separadas de Quality, State, Movement, Action e Existence.",
+        "Tratar modais como camada de modalidade que pode combinar-se com diferentes funções verbais sem redefini-las."
       ],
       "chapterScope": {
         "role": "introductory-canonical",
         "includes": [
           "verb as predicate nucleus",
           "basic EN-ES-PT inflection contrast",
+          "affirmative, negative and interrogative forms",
+          "present, past and future reference",
+          "introductory modal examples",
+          "introductory progressive example",
           "Quality",
           "State",
           "Movement",
@@ -428,7 +643,7 @@
           "Existence",
           "one integrated conversational application"
         ],
-        "rule": "The Chapter introduces the canonical verb map without exhausting conjugation systems."
+        "rule": "The Chapter introduces the canonical verb map and representative tense/form/modal contrasts without exhausting conjugation systems or auxiliary-chain theory."
       },
       "masterScope": {
         "role": "deepening",
