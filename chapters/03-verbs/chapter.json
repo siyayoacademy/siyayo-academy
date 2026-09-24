@@ -37,7 +37,7 @@
         "type": "paragraph",
         "title": "Função na Oração",
         "content": {
-          "pt": "O verbo funciona como núcleo do predicado verbal ou participa de construções que atribuem uma qualidade, indicam um estado, apresentam um processo em andamento, expressam uma ação ou estabelecem existência. Verbos auxiliares podem combinar-se com o verbo principal para construir tempo, aspecto, modalidade, negação e perguntas."
+          "pt": "O verbo funciona como núcleo do predicado verbal ou participa de construções que atribuem uma qualidade, indicam um estado, expressam movimento, realizam uma ação ou estabelecem existência. Verbos auxiliares podem combinar-se com o verbo principal para construir tempo, aspecto, modalidade, negação e perguntas."
         },
         "toroConnections": [
           {
@@ -179,7 +179,7 @@
               "pt": "é"
             },
             "definition": {
-              "pt": "Expressa uma qualidade, propriedade, característica ou identidade atribuída ao sujeito."
+              "pt": "Atribui identidade, classificação, qualidade, propriedade ou característica ao sujeito. Em inglês, BE pode realizar essa relação; em espanhol e português, SER aparece frequentemente em identidades e características, sem formar uma regra mecânica de tradução."
             },
             "toroConnections": [
               {
@@ -188,8 +188,13 @@
                 "status": "candidate"
               },
               {
-                "concept": "linking relation",
+                "concept": "copular / linking relation",
                 "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective relation",
+                "target": "words",
                 "status": "candidate"
               }
             ]
@@ -211,7 +216,7 @@
               "pt": "está"
             },
             "definition": {
-              "pt": "Expressa um estado, condição ou situação associada ao sujeito em determinado contexto."
+              "pt": "Expressa a condição, situação ou estado em que o sujeito se encontra ou é apresentado no contexto. O inglês também usa BE; espanhol e português frequentemente usam ESTAR para estados contextuais, mas SER/ESTAR dependem do significado e do uso de cada língua."
             },
             "toroConnections": [
               {
@@ -220,8 +225,13 @@
                 "status": "candidate"
               },
               {
-                "concept": "state across time",
+                "concept": "state in context",
                 "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "Quality / State contrast",
+                "target": "quality",
                 "status": "candidate"
               }
             ]
@@ -401,6 +411,7 @@
       "canonicalNotes": [
         "Preservar as cinco funções verbais canônicas atualmente registradas no repositório: Quality, State, Movement, Action e Existence.",
         "Tratar Routine como aplicação de Action no contrato atual.",
+        "Distinguir Quality e State pela função semântica, não apenas pela forma verbal: o inglês usa BE em ambos; espanhol e português frequentemente contrastam SER e ESTAR, mas sem equivalência mecânica um-para-um.",
         "Definir Movement por deslocamento, direção, mudança de posição ou movimento físico; tratar o progressive (BE + verbo-ING) como camada de aspecto transversal, não como definição da função Movement.",
         "Permitir sobreposição semântica entre Movement e Action para verbos como go, come, walk e run.",
         "Reservar paradigmas completos, auxiliares, tempos, modos, aspectos, regulares e irregulares para MASTER e DNA VERBS."
