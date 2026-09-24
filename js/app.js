@@ -741,6 +741,32 @@ function renderVocabularyRows(vocabulary = {}) {
   return lines ? `<div class="slide-related-content">${lines}</div>` : "";
 }
 
+function renderGrammarExample(example, language) {
+  const item = typeof example === "string" ? { text: example, targets: [] } : example;
+  let html = escapeHtml(item.text ?? "");
+
+  (item.targets ?? [])
+    .slice()
+    .sort((left, right) => String(right).length - String(left).length)
+    .forEach(target => {
+      const escapedTarget = escapeHtml(target);
+      html = html.split(escapedTarget).join(`<span class="word-type-target">${escapedTarget}</span>`);
+    });
+
+  return `
+    <button
+      type="button"
+      class="grammar-example"
+      data-speech-language="${language}"
+      data-speech-text="${escapeHtml(item.text ?? "")}"
+      aria-label="Ouvir exemplo em ${language === "en" ? "inglês" : language === "es" ? "espanhol" : "português"}"
+    >
+      <span class="grammar-example-speaker" aria-hidden="true">🔊</span>
+      <span class="grammar-example-text">${html}</span>
+    </button>
+  `;
+}
+
 function renderGrammarLanguagePanels(lines = [], examples = {}) {
   const panels = lines.map((line, index) => {
     const exampleItems = Array.isArray(examples?.[line.language])
@@ -754,19 +780,12 @@ function renderGrammarLanguagePanels(lines = [], examples = {}) {
         aria-hidden="${index === 0 ? "false" : "true"}"
       >
         <div class="grammar-definition">
-          ${renderLanguageLines([line])}
+          <p class="grammar-definition-text">${escapeHtml(line.text ?? "")}</p>
         </div>
         ${exampleItems.length ? `
           <div class="grammar-examples" data-example-language="${line.language}">
             <span class="grammar-examples-label">EXAMPLES</span>
-            ${exampleItems.map(example => `
-              <button
-                type="button"
-                class="grammar-example"
-                data-speech-language="${line.language}"
-                data-speech-text="${escapeHtml(example)}"
-              >${escapeHtml(example)}</button>
-            `).join("")}
+            ${exampleItems.map(example => renderGrammarExample(example, line.language)).join("")}
           </div>
         ` : ""}
       </section>
@@ -788,6 +807,7 @@ function renderGrammarLanguagePanels(lines = [], examples = {}) {
     </div>
   `;
 }
+
 
 /* ========================================
    RENDER SLIDE CONTENT
