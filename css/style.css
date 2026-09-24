@@ -1801,3 +1801,42 @@ transform:
 .current-example .noun-vocabulary-groups {
   width: 100%;
 }
+
+
+/* A5 example width correction:
+   explanatory definition stays full width; example rows use the 80% visual standard. */
+.current-example .example-definition {
+  width: 100%;
+  margin-inline: 0;
+}
+
+.current-example .example-language-lines,
+.current-example .slide-vocabulary-disclosure,
+.current-example .slide-related-content {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Example cards: transparent interior + subtle gold contour only. */
+.current-example .language-line,
+.current-example .noun-vocabulary-language,
+.current-example .slide-related-content .language-line {
+  background: transparent;
+  border: 1px solid rgba(215, 179, 90, 0.22);
+}
+
+.current-example .language-line:hover,
+.current-example .language-line:focus-visible,
+.current-example .noun-vocabulary-language:hover,
+.current-example .noun-vocabulary-language:focus-visible,
+.current-example .slide-related-content .language-line:hover,
+.current-example .slide-related-content .language-line:focus-visible {
+  border-color: rgba(242, 216, 138, 0.52);
+  box-shadow: none;
+}
+
+/* Definition keeps its own explanatory container; no example-card treatment. */
+.current-example .example-definition {
+  background: transparent;
+  border-color: rgba(215, 179, 90, 0.22);
+}
