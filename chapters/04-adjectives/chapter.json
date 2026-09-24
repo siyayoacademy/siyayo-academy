@@ -202,7 +202,7 @@
               "pt": "fresco"
             },
             "definition": {
-              "pt": "Expressa uma qualidade, propriedade ou apreciação atribuída ao substantivo ou referente. É a classe já usada pelo corpus atual da SIYAYO em palavras como fresh, delicious, beautiful, pleasant, excellent e wonderful."
+              "pt": "Expressa qualidade, propriedade, aparência, avaliação ou outra característica atribuída ao substantivo ou referente. O corpus atual da SIYAYO está efetivamente povoado com adjetivos qualitativos como fresh, delicious, beautiful, pleasant, excellent e wonderful."
             },
             "toroConnections": [
               {
@@ -215,13 +215,20 @@
                 "target": "shopping-for-dinner",
                 "status": "candidate"
               }
+            ],
+            "relatedExamples": [
+              {
+                "en": "The dinner is delicious.",
+                "es": "La cena está deliciosa.",
+                "pt": "O jantar está delicioso."
+              }
             ]
           },
           {
             "classification": {
-              "en": "Relational",
-              "es": "Relacional",
-              "pt": "Relacional"
+              "en": "Relational & Classifying",
+              "es": "Relacional y Clasificador",
+              "pt": "Relacional e Classificador"
             },
             "sentences": {
               "en": "She studies medical terminology.",
@@ -234,8 +241,20 @@
               "pt": "médica"
             },
             "definition": {
-              "pt": "Relaciona o substantivo a uma área, domínio, origem, finalidade ou outro conceito. Adjetivos relacionais tendem a classificar por relação e, em muitos usos, não aceitam gradação natural como very/muy/muito."
+              "pt": "Adjetivos relacionais ligam o substantivo a uma área, origem, finalidade ou domínio; usos classificadores colocam o substantivo em uma categoria ou subtipo. Na prática, essas funções podem se sobrepor. O schema da SIYAYO mantém os rótulos relational e classifying separados para permitir discriminação futura, mas o Chapter apresenta primeiro o contraste funcional sem forçar uma fronteira absoluta."
             },
+            "relatedExamples": [
+              {
+                "en": "a digital course",
+                "es": "un curso digital",
+                "pt": "um curso digital"
+              },
+              {
+                "en": "a Brazilian company",
+                "es": "una empresa brasileña",
+                "pt": "uma empresa brasileira"
+              }
+            ],
             "toroConnections": [
               {
                 "concept": "relational adjective",
@@ -243,7 +262,12 @@
                 "status": "candidate"
               },
               {
-                "concept": "classification by domain",
+                "concept": "classifying adjective",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "category and domain relation",
                 "target": "words",
                 "status": "candidate"
               }
@@ -251,32 +275,49 @@
           },
           {
             "classification": {
-              "en": "Classifying",
-              "es": "Clasificador",
-              "pt": "Classificador"
+              "en": "Attributive & Predicative",
+              "es": "Atributivo y Predicativo",
+              "pt": "Atributivo e Predicativo"
             },
             "sentences": {
-              "en": "This is a digital course.",
-              "es": "Este es un curso digital.",
-              "pt": "Este é um curso digital."
+              "en": "The fresh salmon looks delicious.",
+              "es": "El salmón fresco parece delicioso.",
+              "pt": "O salmão fresco parece delicioso."
             },
             "targetWords": {
-              "en": "digital",
-              "es": "digital",
-              "pt": "digital"
+              "en": "fresh",
+              "es": "fresco",
+              "pt": "fresco"
             },
             "definition": {
-              "pt": "Coloca o substantivo dentro de uma categoria ou subtipo. Na arquitetura atual da SIYAYO, Classifying é mantido separado de Relational para permitir discriminação pedagógica, embora as fronteiras possam se sobrepor conforme o contexto."
+              "pt": "No uso atributivo, o adjetivo integra o grupo nominal e modifica diretamente o substantivo; no uso predicativo, a propriedade é atribuída ao referente por uma relação verbal. O mesmo adjetivo pode participar dos dois usos, conforme a língua e o contexto."
             },
+            "relatedExamples": [
+              {
+                "en": "fresh salmon",
+                "es": "salmón fresco",
+                "pt": "salmão fresco"
+              },
+              {
+                "en": "The salmon is fresh.",
+                "es": "El salmón está fresco.",
+                "pt": "O salmão está fresco."
+              }
+            ],
             "toroConnections": [
               {
-                "concept": "classifying adjective",
+                "concept": "noun phrase",
                 "target": "words",
                 "status": "candidate"
               },
               {
-                "concept": "category distinction",
-                "target": "words",
+                "concept": "quality predication",
+                "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "state predication",
+                "target": "state",
                 "status": "candidate"
               }
             ]
@@ -426,7 +467,8 @@
       "principle": "A5 mostra; Master aprofunda; corpus discrimina; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
       "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
       "canonicalNotes": [
-        "Usar como taxonomia operacional vigente as classes qualitative, relational e classifying definidas no schema do corpus de adjetivos.",
+        "O schema do corpus permite adjectiveClass = qualitative, relational ou classifying; o corpus atual está efetivamente povoado apenas com itens qualitative.",
+        "Apresentar Relational e Classifying como funções distinguíveis porém permeáveis no A5; reservar fronteiras lexicais finas e casos ambíguos para a MASTER.",
         "Não tratar polarity (positive, neutral, negative) como classe gramatical do adjetivo; polarity é metadado semântico/avaliativo do corpus e da Experience.",
         "Distinguir uso atributivo e predicativo sem reduzir o adjetivo a uma posição fixa.",
         "Preservar as diferenças EN/ES/PT de posição e concordância sem convertê-las em regras absolutas.",
@@ -439,8 +481,7 @@
           "basic EN-ES-PT position contrast",
           "basic agreement contrast",
           "qualitative adjectives",
-          "relational adjectives",
-          "classifying adjectives",
+          "introductory relational and classifying distinction",
           "attributive and predicative use",
           "introductory comparison and intensity",
           "one contextual adjective application"
@@ -484,13 +525,13 @@
           "3 sentence-function",
           "4 grammar",
           "5 qualitative",
-          "6 relational",
-          "7 classifying",
+          "6 relational-classifying",
+          "7 attributive-predicative",
           "8 position-agreement",
           "9 comparison-intensity",
           "10 integrated conversation"
         ],
-        "rule": "The chapter moves from definition to grammatical behavior, then to the three operational adjective classes, and finally to position, comparison and contextual use."
+        "rule": "The chapter prioritizes observable adjective behavior: quality, relation/classification, attributive/predicative use, position/agreement and comparison. Fine lexical boundaries remain in MASTER."
       }
     }
   },
