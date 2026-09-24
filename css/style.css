@@ -1750,3 +1750,39 @@ transform:
     font-size: 1.30rem;
   }
 }
+
+
+/* A5 conversation visual contract (slides 8–10).
+   Keep the language in the sentence itself; labels are redundant here.
+   Rows use 80% of the available content width for a calmer hierarchy. */
+.current-conversation .language-label,
+.current-conversation .slide-extension-label {
+  display: none;
+}
+
+.current-conversation .trilingual-content,
+.current-conversation .slide-extension {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.current-conversation .slide-extension {
+  margin-top: 0.75rem;
+}
+
+.current-conversation .slide-extension .trilingual-content {
+  width: 100%;
+}
+
+/* Reuse the subtle golden focus language already present on target words. */
+.chapter-title,
+.section-title {
+  text-shadow:
+    0 2px 9px rgba(0, 0, 0, 0.78),
+    0 0 12px rgba(242, 216, 138, 0.10);
+}
+
+.current-conversation .target-word {
+  text-shadow:
+    0 0 7px rgba(242, 216, 138, 0.32);
+}
