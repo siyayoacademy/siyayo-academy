@@ -230,6 +230,26 @@
                 "target": "verbs",
                 "status": "candidate"
               }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "now",
+                  "yesterday"
+                ]
+              },
+              {
+                "source": "data/learning/experience-seeds.json",
+                "fields": [
+                  "circumstances.time",
+                  "thinkingMind.questionWord=when"
+                ]
+              },
+              {
+                "source": "data/grammar/verb-grid.json",
+                "field": "timeAspect"
+              }
             ]
           },
           {
@@ -268,6 +288,22 @@
                 "concept": "place relation",
                 "target": "prepositions",
                 "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "here",
+                  "outside"
+                ]
+              },
+              {
+                "source": "data/learning/experience-seeds.json",
+                "fields": [
+                  "circumstances.place",
+                  "thinkingMind.questionWord=where"
+                ]
               }
             ]
           },
@@ -313,6 +349,30 @@
                 "target": "verbs",
                 "status": "candidate"
               }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "carefully",
+                  "clearly",
+                  "quickly"
+                ]
+              },
+              {
+                "source": "data/learning/experience-seeds.json",
+                "fields": [
+                  "thinkingMind.intention=manner",
+                  "thinkingMind.questionWord=how"
+                ]
+              },
+              {
+                "source": "data/learning/college-experience-seeds.json",
+                "fields": [
+                  "thinkingMind.intention=manner",
+                  "thinkingMind.questionWord=how"
+                ]
+              }
             ]
           },
           {
@@ -357,6 +417,23 @@
                 "target": "timelines",
                 "status": "candidate"
               }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "often",
+                  "never",
+                  "usually"
+                ]
+              },
+              {
+                "source": "data/nodes/action.json",
+                "fields": [
+                  "description",
+                  "metadata.notes"
+                ]
+              }
             ]
           },
           {
@@ -400,6 +477,21 @@
                 "concept": "comparison and degree",
                 "target": "words",
                 "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "very"
+                ]
+              },
+              {
+                "source": "chapters/04-adjectives/chapter.json",
+                "fields": [
+                  "comparison-intensity",
+                  "semanticDomainScope"
+                ]
               }
             ]
           }
@@ -470,7 +562,12 @@
         "Não reduzir advérbio a terminações -ly ou -mente; muitos advérbios são formas simples e algumas expressões adverbiais têm mais de uma palavra.",
         "Distinguir função adverbial de forma lexical: uma mesma função pode ser realizada por uma palavra ou por uma expressão.",
         "Usar contraste trilingue alinhado para revelar diferenças de posição, forma e naturalidade entre EN, ES e PT.",
-        "Reservar foco discursivo, advérbios sentenciais, ordem avançada, escopo, irregularidades e locuções complexas para a MASTER."
+        "Reservar foco discursivo, advérbios sentenciais, ordem avançada, escopo, irregularidades e locuções complexas para a MASTER.",
+        "Conectar TIME a circumstances.time das Experiences e ao Verb Grid, mas manter a distinção: advérbio temporal localiza o evento; tense/aspect organiza a gramática verbal.",
+        "Conectar PLACE a circumstances.place e ao futuro Chapter de Prepositions, mas manter a distinção entre advérbio de lugar e relação preposicional.",
+        "Conectar MANNER às perguntas HOW já existentes na Mente Pensante das Experiences e College Experiences.",
+        "Conectar FREQUENCY à rotina/hábito do node Action, sem redefinir frequência como função verbal.",
+        "Usar data/lexicon/adverbs/adverbs.json como fonte canônica lexical para exemplos, glosses e futura navegação interna."
       ],
       "trilingualContrastScope": {
         "role": "toroidal-cross-language-comparison",
@@ -529,6 +626,66 @@
           "10 integrated conversation"
         ],
         "rule": "The Chapter moves from the adverb's modifying role to the core SIYAYO dimensions Time, Place and Manner, then adds Frequency and Degree before contextual integration."
+      },
+      "sourceConnections": {
+        "role": "canonical-source-integration",
+        "sources": [
+          {
+            "id": "adverb-corpus",
+            "path": "data/lexicon/adverbs/adverbs.json",
+            "contributes": [
+              "translations",
+              "adverbClass",
+              "semanticTags",
+              "glosses",
+              "selfExamples"
+            ]
+          },
+          {
+            "id": "experience-seeds",
+            "path": "data/learning/experience-seeds.json",
+            "contributes": [
+              "circumstances.time",
+              "circumstances.place",
+              "thinkingMind.when",
+              "thinkingMind.where",
+              "thinkingMind.how",
+              "contextual application"
+            ]
+          },
+          {
+            "id": "college-experience-seeds",
+            "path": "data/learning/college-experience-seeds.json",
+            "contributes": [
+              "thinkingMind.how",
+              "circumstances.time",
+              "circumstances.place",
+              "study contexts"
+            ]
+          },
+          {
+            "id": "verb-grid",
+            "path": "data/grammar/verb-grid.json",
+            "contributes": [
+              "time reference",
+              "aspect contrast",
+              "finite carrier",
+              "verb-adverb temporal compatibility"
+            ]
+          },
+          {
+            "id": "verb-action-node",
+            "path": "data/nodes/action.json",
+            "contributes": [
+              "routine",
+              "habit",
+              "action",
+              "frequency connection"
+            ]
+          }
+        ],
+        "principle": "Chapter 5 should reuse canonical information already present in the Academy whenever the semantic function is the same, instead of duplicating isolated definitions.",
+        "rule": "Connections expose source relationships without collapsing distinct layers: adverbial time is not tense/aspect, place is not preposition, and frequency is not the Action function itself."
       }
     }
   },
