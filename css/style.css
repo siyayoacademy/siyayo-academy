@@ -1563,3 +1563,20 @@ transform:
   color: var(--siyayo-gold-light);
   font-weight: 700;
 }
+
+.grammar-definition {
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.grammar-definition:hover,
+.grammar-definition:focus-visible {
+  border-color: rgba(242, 216, 138, 0.62);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.12);
+  outline: none;
+}
+.grammar-example-speaker {
+  display: none;
+}
+.grammar-example {
+  padding-left: 12px;
+}
