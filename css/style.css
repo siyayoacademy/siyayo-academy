@@ -1887,3 +1887,71 @@ transform:
 .chapter-number {
   text-shadow: none;
 }
+
+
+/* Chapter Engine: vertical floors across The Ten Kinds of Words. */
+.chapter-floor-progress {
+  font-size: 0.70rem;
+  letter-spacing: 0.16em;
+  color: var(--siyayo-gold-light);
+}
+
+.chapter-floor-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chapter-floor-controls span {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,.64);
+}
+
+.chapter-floor-controls button {
+  width: 34px;
+  height: 30px;
+  border: 1px solid rgba(242,216,138,.34);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--siyayo-gold-light);
+  cursor: pointer;
+}
+
+.chapter-floor-controls button:hover:not(:disabled),
+.chapter-floor-controls button:focus-visible:not(:disabled) {
+  border-color: rgba(242,216,138,.62);
+  outline: none;
+}
+
+.chapter-floor-controls button:disabled {
+  opacity: .28;
+  cursor: default;
+}
+
+.chapter-floor-placeholder {
+  justify-content: space-between;
+}
+
+.chapter-floor-wait {
+  width: 80%;
+  margin: auto;
+  padding: 22px;
+  border: 1px solid rgba(242,216,138,.22);
+  border-radius: 16px;
+  background: transparent;
+  text-align: center;
+}
+
+.chapter-floor-wait strong {
+  display: block;
+  color: var(--siyayo-gold-light);
+  letter-spacing: .14em;
+  margin-bottom: 8px;
+}
+
+.chapter-floor-wait p {
+  margin: 0;
+  color: var(--text-soft);
+}
