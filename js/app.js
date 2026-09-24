@@ -702,6 +702,8 @@ function renderLanguageLines(
              language-${line.language}
               "
               data-language="${line.language}"
+              data-line-speech-language="${escapeHtml(line.speechLanguage ?? line.language)}"
+              data-line-speech-text="${escapeHtml(line.text ?? "")}"
               ${interactionAttributes}
          >
 
@@ -722,7 +724,8 @@ function renderLanguageLines(
 
 
 function renderCompactTrilingualExamples(content = {}) {
-  const lines = createLanguageLines(content);
+  const lines = createLanguageLines(content)
+    .map(line => ({ ...line, label: "" }));
   if (lines.length === 0) return "";
   return `
     <div class="slide-related-content">
@@ -1640,11 +1643,9 @@ function attachSliderEvents() {
         }
 
 
-        const language =
-          line.dataset.language;
-
-        speakLanguageLine(
-          language
+        speakText(
+          line.dataset.lineSpeechText ?? "",
+          line.dataset.lineSpeechLanguage ?? line.dataset.language ?? "en"
         );
       }
     );
@@ -1723,11 +1724,9 @@ function attachSliderEvents() {
 
         event.preventDefault();
 
-        const language =
-          line.dataset.language;
-
-        speakLanguageLine(
-          language
+        speakText(
+          line.dataset.lineSpeechText ?? "",
+          line.dataset.lineSpeechLanguage ?? line.dataset.language ?? "en"
         );
       }
     );
