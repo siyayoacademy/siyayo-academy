@@ -73,9 +73,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, o adjetivo normalmente não varia em gênero ou número e costuma aparecer antes do substantivo ou depois de verbos de ligação. A comparação pode usar -er/-est ou more/most.",
-          "es": "Em espanhol, muitos adjetivos concordam com o substantivo em gênero e número. A posição pode variar e, em certos casos, altera foco, estilo ou significado. A comparação usa estruturas como más... que e el/la más....",
-          "pt": "Em português, muitos adjetivos concordam com o substantivo em gênero e número. A posição pode variar e, em alguns casos, modifica nuance ou significado. A comparação usa estruturas como mais... que/do que e o/a mais...."
+          "en": "Em inglês, o adjetivo atributivo costuma vir antes do substantivo e normalmente não varia em gênero ou número. Depois de verbos de ligação, aparece em uso predicativo. A comparação pode usar -er/-est ou more/most, quando o adjetivo é graduável.",
+          "es": "Em espanhol, muitos adjetivos concordam com o substantivo em gênero e número. A posição pode vir antes ou depois do substantivo e, em certos casos, muda foco, estilo ou significado. A comparação normalmente usa más... que e el/la más..., quando o adjetivo é graduável.",
+          "pt": "Em português, muitos adjetivos concordam com o substantivo em gênero e número. A posição pode vir antes ou depois do substantivo e, em alguns casos, muda nuance, foco ou significado. A comparação normalmente usa mais... que/do que e o/a mais..., quando o adjetivo é graduável."
         },
         "examples": {
           "en": [
@@ -95,6 +95,12 @@
               "text": "The tomato is fresh.",
               "targets": [
                 "fresh"
+              ]
+            },
+            {
+              "text": "a great friend",
+              "targets": [
+                "great"
               ]
             },
             {
@@ -124,6 +130,12 @@
               ]
             },
             {
+              "text": "un gran amigo",
+              "targets": [
+                "gran"
+              ]
+            },
+            {
               "text": "Este tomate está más fresco.",
               "targets": [
                 "más fresco"
@@ -147,6 +159,12 @@
               "text": "O tomate está fresco.",
               "targets": [
                 "fresco"
+              ]
+            },
+            {
+              "text": "um grande amigo",
+              "targets": [
+                "grande"
               ]
             },
             {
@@ -339,18 +357,23 @@
               "pt": "bonito"
             },
             "definition": {
-              "pt": "O inglês tende a usar o adjetivo antes do substantivo e não marca gênero ou número. Espanhol e português frequentemente colocam o adjetivo depois do substantivo e apresentam concordância, embora a posição possa variar."
+              "pt": "A posição do adjetivo é uma tendência de cada língua, não uma regra absoluta. Em inglês, adjetivos atributivos aparecem frequentemente antes do substantivo e normalmente não marcam gênero ou número. Em espanhol e português, muitos adjetivos aparecem depois do substantivo e frequentemente concordam em gênero e número, mas a anteposição também existe e pode mudar foco, estilo ou significado."
             },
             "relatedExamples": [
+              {
+                "en": "a beautiful dinner",
+                "es": "una cena hermosa",
+                "pt": "um jantar bonito"
+              },
               {
                 "en": "beautiful dinners",
                 "es": "cenas hermosas",
                 "pt": "jantares bonitos"
               },
               {
-                "en": "The dinner is beautiful.",
-                "es": "La cena es hermosa.",
-                "pt": "O jantar é bonito."
+                "en": "a great friend",
+                "es": "un gran amigo",
+                "pt": "um grande amigo"
               }
             ],
             "toroConnections": [
@@ -388,13 +411,23 @@
               "pt": "mais fresco"
             },
             "definition": {
-              "pt": "Adjetivos graduáveis podem expressar intensidade e comparação. O inglês usa formas como fresher ou more beautiful; espanhol e português usam estruturas como más/mais. Paradigmas completos e formas irregulares ficam para a MASTER."
+              "pt": "A comparação e a intensidade dependem de o adjetivo ser graduável. Em inglês, formas curtas podem usar -er/-est e formas maiores usam more/most; espanhol e português usam normalmente más/mais e estruturas equivalentes. Nem todo adjetivo aceita gradação natural, e formas irregulares ou restrições lexicais ficam para a MASTER."
             },
             "relatedExamples": [
+              {
+                "en": "This cheese is fresher.",
+                "es": "Este queso está más fresco.",
+                "pt": "Este queijo está mais fresco."
+              },
               {
                 "en": "This is the freshest cheese.",
                 "es": "Este es el queso más fresco.",
                 "pt": "Este é o queijo mais fresco."
+              },
+              {
+                "en": "This dinner is more beautiful.",
+                "es": "Esta cena es más hermosa.",
+                "pt": "Este jantar é mais bonito."
               }
             ],
             "toroConnections": [
@@ -472,7 +505,10 @@
         "Não tratar polarity (positive, neutral, negative) como classe gramatical do adjetivo; polarity é metadado semântico/avaliativo do corpus e da Experience.",
         "Distinguir uso atributivo e predicativo sem reduzir o adjetivo a uma posição fixa.",
         "Preservar as diferenças EN/ES/PT de posição e concordância sem convertê-las em regras absolutas.",
-        "Reservar paradigmas completos de comparação, irregularidades, posição estilística e mudanças finas de significado para a MASTER."
+        "Reservar paradigmas completos de comparação, irregularidades, posição estilística e mudanças finas de significado para a MASTER.",
+        "Tratar a posição do adjetivo como tendência dependente da língua e do contexto, não como regra absoluta de pré- ou pós-nominalidade.",
+        "Tratar concordância como propriedade morfossintática produtiva em espanhol e português; o inglês normalmente não marca gênero ou número no adjetivo.",
+        "Aplicar comparação e intensidade apenas a adjetivos graduáveis; não assumir que todo adjetivo aceita very/muy/muito, comparativo ou superlativo natural."
       ],
       "chapterScope": {
         "role": "introductory-canonical",
@@ -498,6 +534,7 @@
           "participial adjectives",
           "adjective complementation",
           "register and stylistic placement",
+          "lexical restrictions on comparison and intensification",
           "advanced EN-ES-PT contrastive grammar"
         ],
         "rule": "MASTER expands paradigms, exceptions, lexical restrictions and contrastive grammar."
