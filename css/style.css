@@ -1840,3 +1840,34 @@ transform:
   background: transparent;
   border-color: rgba(215, 179, 90, 0.22);
 }
+
+
+/* A5 explanatory panels: slides 1–4 use full relative width with subtle gold contour. */
+.current-paragraph .explanatory-text,
+.current-grammar .grammar-definition {
+  width: 100%;
+  margin-inline: 0;
+  background: transparent;
+  border: 1px solid rgba(215, 179, 90, 0.22);
+  border-radius: 14px;
+  padding: 10px 12px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.current-paragraph .explanatory-text:hover,
+.current-paragraph .explanatory-text:focus-visible,
+.current-grammar .grammar-definition:hover,
+.current-grammar .grammar-definition:focus-visible {
+  border-color: rgba(242, 216, 138, 0.52);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.10);
+  outline: none;
+}
+
+/* Discreet SIYAYO gold glow on chapter titles and slide subtitles. */
+.chapter-number,
+.chapter-title,
+.section-title {
+  text-shadow:
+    0 2px 9px rgba(0, 0, 0, 0.78),
+    0 0 10px rgba(242, 216, 138, 0.16);
+}
