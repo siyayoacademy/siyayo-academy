@@ -1675,3 +1675,48 @@ transform:
 .master-arrow { opacity: 0.72; }
 .master-proper { color: var(--gold, #e7c766); font-weight: 700; }
 .master-pair-separator { opacity: 0.55; }
+
+
+/* Proper noun slide: top-anchored overflow and compact speech rows. */
+.current-example .slide-content {
+  justify-content: flex-start;
+}
+
+.slide-related-content {
+  width: min(100%, 800px);
+  margin-inline: auto;
+}
+
+.slide-related-content .language-line {
+  display: grid;
+  grid-template-columns: 1.35rem minmax(0, 1fr);
+  align-items: center;
+  column-gap: 0.55rem;
+  min-height: 3rem;
+  padding: 8px 16px;
+}
+
+.slide-related-content .language-line::before {
+  content: "🔊";
+  grid-column: 1;
+  grid-row: 1;
+  color: var(--siyayo-gold-light);
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0;
+}
+
+.slide-related-content .language-line:hover::before,
+.slide-related-content .language-line:focus-visible::before {
+  opacity: 1;
+}
+
+.slide-related-content .language-text {
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 1.25;
+}
+
+.slide-related-content .language-label:empty {
+  display: none;
+}
