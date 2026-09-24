@@ -738,7 +738,15 @@ function renderVocabularyRows(vocabulary = {}) {
       return `<p class="slide-vocabulary-row"><strong>${labels[language]}</strong> · ${escapeHtml(vocabulary[language].join(" · "))}</p>`;
     })
     .join("");
-  return lines ? `<div class="slide-related-content">${lines}</div>` : "";
+
+  if (!lines) return "";
+
+  return `
+    <details class="slide-vocabulary-disclosure">
+      <summary>+ NOUNS</summary>
+      <div class="slide-related-content">${lines}</div>
+    </details>
+  `;
 }
 
 function renderGrammarExample(example, language) {
@@ -892,7 +900,7 @@ function renderSlideContent(slide) {
             )}
           </h2>
 
-          ${slide.definition?.pt ? `<p class="section-content slide-definition">${escapeHtml(slide.definition.pt)}</p>` : ""}
+          ${slide.definition?.pt ? `<div class="example-definition" role="button" tabindex="0" data-example-definition-speech-language="pt" data-example-definition-speech-text="${escapeHtml(slide.definition.pt)}" aria-label="Ouvir explicação"><p class="section-content slide-definition">${escapeHtml(slide.definition.pt)}</p></div>` : ""}
 
           <div class="trilingual-content">
             ${renderLanguageLines(
@@ -1460,6 +1468,24 @@ function attachSliderEvents() {
     );
 
   attachGrammarCarouselEvents();
+
+  document.querySelectorAll(".example-definition").forEach(definition => {
+    const speakDefinition = () => {
+      speakText(
+        definition.dataset.exampleDefinitionSpeechText ?? "",
+        definition.dataset.exampleDefinitionSpeechLanguage ?? "pt"
+      );
+    };
+    definition.addEventListener("click", event => {
+      event.stopPropagation();
+      speakDefinition();
+    });
+    definition.addEventListener("keydown", event => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      speakDefinition();
+    });
+  });
 
 
   previousButton?.addEventListener(
