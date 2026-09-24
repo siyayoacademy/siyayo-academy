@@ -595,6 +595,7 @@ function buildSlides(chapterData) {
               ...(item.definition ? { definition: item.definition } : {}),
               ...(item.relatedVocabulary ? { relatedVocabulary: item.relatedVocabulary } : {}),
               ...(item.relatedExamples ? { relatedExamples: item.relatedExamples } : {}),
+              ...(item.masterConnections ? { masterConnections: item.masterConnections } : {}),
               ...(item.surfaces ? { surfaces: item.surfaces } : {}),
               ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
             });
@@ -755,6 +756,43 @@ function renderVocabularyRows(vocabulary = {}) {
       <div class="noun-vocabulary-groups">${groups}</div>
     </details>
   `;
+}
+
+function renderMasterConnections(connections = []) {
+  if (!Array.isArray(connections) || connections.length === 0) return "";
+
+  const languageNames = { en: "ENGLISH", es: "ESPAÑOL", pt: "PORTUGUÊS" };
+  const rows = ["en", "es", "pt"].map(language => {
+    const pairs = connections
+      .map(connection => {
+        const common = connection.common?.[language];
+        const proper = connection.proper?.[language];
+        if (!common || !proper) return "";
+        return `<span class="master-connection-pair"><span class="master-common">\${escapeHtml(common)}</span><span class="master-arrow" aria-hidden="true"> → </span><span class="word-type-target master-proper">\${escapeHtml(proper)}</span></span>`;
+      })
+      .filter(Boolean)
+      .join('<span class="master-pair-separator" aria-hidden="true"> · </span>');
+
+    if (!pairs) return "";
+    const speech = connections
+      .map(connection => connection.proper?.[language])
+      .filter(Boolean)
+      .join(", ");
+
+    return `
+      <button type="button" class="noun-vocabulary-language master-connection-language"
+        data-vocabulary-language="\${language}"
+        data-vocabulary-speech-text="\${escapeHtml(speech)}"
+        aria-label="Ouvir nomes próprios em \${languageNames[language]}">
+        \${pairs}
+      </button>`;
+  }).filter(Boolean).join("");
+
+  return `
+    <details class="slide-vocabulary-disclosure master-connections-disclosure">
+      <summary>+ MASTER</summary>
+      <div class="noun-vocabulary-groups master-connection-groups">\${rows}</div>
+    </details>`;
 }
 
 function renderGrammarExample(example, language) {
@@ -918,6 +956,8 @@ function renderSlideContent(slide) {
           </div>
 
           ${renderVocabularyRows(slide.relatedVocabulary)}
+
+          ${renderMasterConnections(slide.masterConnections)}
 
           ${Array.isArray(slide.relatedExamples)
             ? slide.relatedExamples.map(renderCompactTrilingualExamples).join("")
