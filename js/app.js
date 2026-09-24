@@ -731,20 +731,28 @@ function renderCompactTrilingualExamples(content = {}) {
 }
 
 function renderVocabularyRows(vocabulary = {}) {
-  const lines = ["en", "es", "pt"]
+  const languageNames = { en: "inglês", es: "espanhol", pt: "português" };
+  const groups = ["en", "es", "pt"]
     .filter(language => Array.isArray(vocabulary?.[language]) && vocabulary[language].length)
-    .map(language => {
-      const labels = { en: "IN ENGLISH", es: "EN ESPAÑOL", pt: "EM PORTUGUÊS" };
-      return `<p class="slide-vocabulary-row"><strong>${labels[language]}</strong> · ${escapeHtml(vocabulary[language].join(" · "))}</p>`;
-    })
+    .map(language => `
+      <button
+        type="button"
+        class="noun-vocabulary-language"
+        data-vocabulary-language="${language}"
+        data-vocabulary-speech-text="${escapeHtml(vocabulary[language].join(", "))}"
+        aria-label="Ouvir substantivos em ${languageNames[language]}"
+      >
+        ${vocabulary[language].map(word => `<span class="word-type-target noun-vocabulary-target" data-vocabulary-word="${escapeHtml(word)}">${escapeHtml(word)}</span>`).join('<span class="noun-vocabulary-separator" aria-hidden="true"> · </span>')}
+      </button>
+    `)
     .join("");
 
-  if (!lines) return "";
+  if (!groups) return "";
 
   return `
     <details class="slide-vocabulary-disclosure">
       <summary>+ NOUNS</summary>
-      <div class="slide-related-content">${lines}</div>
+      <div class="noun-vocabulary-groups">${groups}</div>
     </details>
   `;
 }
@@ -902,9 +910,9 @@ function renderSlideContent(slide) {
 
           ${slide.definition?.pt ? `<div class="example-definition" role="button" tabindex="0" data-example-definition-speech-language="pt" data-example-definition-speech-text="${escapeHtml(slide.definition.pt)}" aria-label="Ouvir explicação"><p class="section-content slide-definition">${escapeHtml(slide.definition.pt)}</p></div>` : ""}
 
-          <div class="trilingual-content">
+          <div class="trilingual-content example-language-lines">
             ${renderLanguageLines(
-              slide.lines,
+              slide.lines.map(line => ({ ...line, label: "" })),
               slide.surfaces ?? []
             )}
           </div>
@@ -1468,6 +1476,16 @@ function attachSliderEvents() {
     );
 
   attachGrammarCarouselEvents();
+
+  document.querySelectorAll(".noun-vocabulary-language").forEach(group => {
+    group.addEventListener("click", event => {
+      event.stopPropagation();
+      speakText(
+        group.dataset.vocabularySpeechText ?? "",
+        group.dataset.vocabularyLanguage ?? "en"
+      );
+    });
+  });
 
   document.querySelectorAll(".example-definition").forEach(definition => {
     const speakDefinition = () => {
