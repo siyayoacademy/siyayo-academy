@@ -752,6 +752,16 @@ body {
     background: #000;
   }
 
+  .academy-quick-links {
+    width: calc(100vw - 24px);
+    bottom: 10px;
+  }
+
+  .academy-quick-link {
+    padding: 8px 11px;
+    font-size: 0.62rem;
+  }
+
   .story {
     width: 100vw;
 
@@ -1436,15 +1446,17 @@ transform:
   cursor: default;
 }
 .academy-quick-links {
-  position: absolute;
-  z-index: 4;
-  left: 6%;
-  right: 6%;
-  bottom: clamp(22px, 5%, 44px);
+  position: fixed;
+  z-index: 900;
+  left: 50%;
+  bottom: clamp(12px, 2.5vh, 24px);
+  transform: translateX(-50%);
+  width: min(88vw, 760px);
   display: flex;
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
+  pointer-events: auto;
 }
 .academy-quick-link {
   padding: 9px 13px;
@@ -1472,7 +1484,7 @@ transform:
     grid-template-columns: 42px 1fr;
     padding: 5px 12px;
   }
-  .academy-quick-links { bottom: 18px; }
+  .academy-quick-links { bottom: 12px; }
 }
 
 
