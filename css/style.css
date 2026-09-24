@@ -1735,3 +1735,18 @@ transform:
 .slide-related-content .language-line::before {
   content: none;
 }
+
+
+/* A5 visual hierarchy correction.
+   Fixed desktop ceiling values make the reduction visible on laptop;
+   viewport clamps had kept resolving to nearly the previous size. */
+@media (min-width: 601px) {
+  .chapter-title {
+    font-size: 1.72rem;
+  }
+
+  .section-title,
+  .current-grammar .section-title {
+    font-size: 1.30rem;
+  }
+}
