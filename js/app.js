@@ -1243,6 +1243,7 @@ function renderCurrentSlide() {
     <section
       class="
         chapter-view
+        chapter-${chapter.number}
         current-${slide.type}
       "
     >
