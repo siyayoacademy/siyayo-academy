@@ -994,7 +994,7 @@ function renderSlideContent(slide) {
           </div>
 
           ${Array.isArray(slide.extensionLines) && slide.extensionLines.length
-            ? `<div class="slide-extension"><p class="slide-extension-label">CONNECTION</p>${renderLanguageLines(slide.extensionLines)}</div>`
+            ? `<div class="slide-extension">${renderLanguageLines(slide.extensionLines)}</div>`
             : ""}
 
         </article>
