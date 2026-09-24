@@ -1048,7 +1048,7 @@ function renderPlannedChapter(chapterReference) {
 
       <footer class="chapter-footer">
         <div class="chapter-floor-progress">
-          ${String(currentChapterIndex + 1).padStart(2, "0")} / ${String(chapters.length).padStart(2, "0")}
+          ${String(currentChapterIndex + 1).padStart(2, "0")} de ${String(chapters.length).padStart(2, "0")}
         </div>
         ${renderChapterFloorControls()}
       </footer>
@@ -1230,20 +1230,10 @@ function renderCurrentSlide() {
       <footer class="chapter-footer">
 
         <div class="chapter-progress">
-
           ${currentSlideIndex + 1}
-          /
+          de
           ${currentSlides.length}
-
         </div>
-
-        <div class="chapter-floor-progress">
-          ${String(currentChapterIndex + 1).padStart(2, "0")}
-          /
-          ${String(academyChapterEntries().length).padStart(2, "0")}
-        </div>
-
-        ${renderChapterFloorControls()}
 
         <nav
           class="slider-controls"
@@ -1260,7 +1250,6 @@ function renderCurrentSlide() {
             ◀
           </button>
 
-
           <button
             id="playPauseButton"
             class="slider-button"
@@ -1269,7 +1258,6 @@ function renderCurrentSlide() {
           >
             ▶
           </button>
-
 
           <button
             id="nextButton"
@@ -1282,6 +1270,14 @@ function renderCurrentSlide() {
           </button>
 
         </nav>
+
+        <div class="chapter-floor-progress">
+          ${String(currentChapterIndex + 1).padStart(2, "0")}
+          de
+          ${String(academyChapterEntries().length).padStart(2, "0")}
+        </div>
+
+        ${renderChapterFloorControls()}
 
       </footer>
 
