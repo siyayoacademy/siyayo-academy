@@ -340,7 +340,34 @@
               "en": "How much water do we need?",
               "es": "¿Cuánta agua necesitamos?",
               "pt": "De quanta água precisamos?"
-            }
+            },
+            "extensionTargetWords": {
+              "en": "water",
+              "es": "agua",
+              "pt": "água"
+            },
+            "toroConnections": [
+              {
+                "concept": "How much / Cuánta / Quanta",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "water / agua / água",
+                "target": "quantity-countability",
+                "status": "candidate"
+              },
+              {
+                "concept": "need / necesitar / precisar",
+                "target": "verb-dna",
+                "status": "candidate"
+              },
+              {
+                "concept": "requesting quantities",
+                "target": "preparing-dinner-experience",
+                "status": "candidate"
+              }
+            ]
           },
           {
             "en": "This teacher is great.",
