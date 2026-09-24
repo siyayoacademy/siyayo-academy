@@ -622,7 +622,7 @@ function buildSlides(chapterData) {
               ),
               ...(item.intent ? { intent: item.intent } : {}),
               ...(item.extension ? {
-                extensionLines: createLanguageLines(item.extension)
+                extensionLines: createLanguageLines(item.extension, item.extensionTargetWords ?? {})
               } : {}),
               ...(item.surfaces ? { surfaces: item.surfaces } : {}),
               ...(item.assessmentLeaf ? { assessmentLeaf: item.assessmentLeaf } : {})
