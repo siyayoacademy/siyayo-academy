@@ -383,7 +383,44 @@
               "en": "Which teacher helped you?",
               "es": "¿Qué profesor te ayudó?",
               "pt": "Qual professor ajudou você?"
-            }
+            },
+            "extensionTargetWords": {
+              "en": "teacher",
+              "es": "profesor",
+              "pt": "professor"
+            },
+            "toroConnections": [
+              {
+                "concept": "Which / Qué / Qual",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "teacher / profesor / professor",
+                "target": "noun-helpers",
+                "status": "candidate"
+              },
+              {
+                "concept": "this / este / este",
+                "target": "determiner-demonstrative",
+                "status": "candidate"
+              },
+              {
+                "concept": "great / genial / ótimo",
+                "target": "positive-adjectives",
+                "status": "reserved"
+              },
+              {
+                "concept": "helped / ayudó / ajudou",
+                "target": "verb-dna",
+                "status": "candidate"
+              },
+              {
+                "concept": "describing people",
+                "target": "describe-experience",
+                "status": "candidate"
+              }
+            ]
           }
         ]
       }
