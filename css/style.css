@@ -2025,3 +2025,23 @@ transform:
 .chapter-2.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   CHAPTER 3 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+/* Verb content grows downward so expanded grammar examples and function
+   examples remain readable instead of centering around the middle. */
+.chapter-3 .slide-content {
+  justify-content: flex-start;
+}
+
+/* Keep the grammar slide visually clean, matching the homologated Chapter 2. */
+.chapter-3.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-3.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
