@@ -2004,3 +2004,24 @@ transform:
   margin: 0;
   color: var(--text-soft);
 }
+
+
+/* =========================================================
+   CHAPTER 2 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+/* Keep Chapter 2 slide content top-anchored so long content grows downward
+   instead of being vertically centered and clipped around the middle. */
+.chapter-2 .slide-content {
+  justify-content: flex-start;
+}
+
+/* Slide 4: examples remain visible, but the redundant EXAMPLES label is hidden. */
+.chapter-2.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+/* Preserve comfortable spacing after removing the label. */
+.chapter-2.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
