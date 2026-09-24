@@ -102,23 +102,9 @@
               ]
             },
             {
-              "text": "Will she work tomorrow?",
-              "targets": [
-                "Will",
-                "work"
-              ]
-            },
-            {
               "text": "She can work today.",
               "targets": [
                 "can",
-                "work"
-              ]
-            },
-            {
-              "text": "Can she work today?",
-              "targets": [
-                "Can",
                 "work"
               ]
             },
@@ -156,22 +142,9 @@
               ]
             },
             {
-              "text": "¿Trabajará ella mañana?",
-              "targets": [
-                "Trabajará"
-              ]
-            },
-            {
               "text": "Ella puede trabajar hoy.",
               "targets": [
                 "puede",
-                "trabajar"
-              ]
-            },
-            {
-              "text": "¿Puede trabajar hoy?",
-              "targets": [
-                "Puede",
                 "trabajar"
               ]
             },
@@ -209,20 +182,7 @@
               ]
             },
             {
-              "text": "Ela trabalhará amanhã?",
-              "targets": [
-                "trabalhará"
-              ]
-            },
-            {
               "text": "Ela pode trabalhar hoje.",
-              "targets": [
-                "pode",
-                "trabalhar"
-              ]
-            },
-            {
-              "text": "Ela pode trabalhar hoje?",
               "targets": [
                 "pode",
                 "trabalhar"
@@ -306,11 +266,6 @@
                 "en": "She is not a doctor.",
                 "es": "Ella no es médica.",
                 "pt": "Ela não é médica."
-              },
-              {
-                "en": "Is she kind?",
-                "es": "¿Es amable?",
-                "pt": "Ela é gentil?"
               }
             ]
           },
@@ -355,11 +310,6 @@
                 "en": "She was tired yesterday.",
                 "es": "Ella estaba cansada ayer.",
                 "pt": "Ela estava cansada ontem."
-              },
-              {
-                "en": "Is she tired now?",
-                "es": "¿Está cansada ahora?",
-                "pt": "Ela está cansada agora?"
               }
             ]
           },
@@ -405,16 +355,6 @@
               }
             ],
             "relatedExamples": [
-              {
-                "en": "They went home yesterday.",
-                "es": "Ellos fueron a casa ayer.",
-                "pt": "Eles foram para casa ontem."
-              },
-              {
-                "en": "Will you go tomorrow?",
-                "es": "¿Irás mañana?",
-                "pt": "Você irá amanhã?"
-              },
               {
                 "en": "We can walk there.",
                 "es": "Podemos caminar hasta allí.",
@@ -470,19 +410,9 @@
             ],
             "relatedExamples": [
               {
-                "en": "We did not cook yesterday.",
-                "es": "No cocinamos ayer.",
-                "pt": "Não cozinhamos ontem."
-              },
-              {
                 "en": "Do you cook at home?",
                 "es": "¿Cocinas en casa?",
                 "pt": "Você cozinha em casa?"
-              },
-              {
-                "en": "We can cook together.",
-                "es": "Podemos cocinar juntos.",
-                "pt": "Podemos cozinhar juntos."
               }
             ]
           },
@@ -529,29 +459,9 @@
             ],
             "relatedExamples": [
               {
-                "en": "There are two books on the table.",
-                "es": "Hay dos libros sobre la mesa.",
-                "pt": "Há dois livros sobre a mesa."
-              },
-              {
-                "en": "There is not enough time.",
-                "es": "No hay suficiente tiempo.",
-                "pt": "Não há tempo suficiente."
-              },
-              {
-                "en": "Is there a hotel nearby?",
-                "es": "¿Hay un hotel cerca?",
-                "pt": "Há um hotel por perto?"
-              },
-              {
                 "en": "There will be a meeting tomorrow.",
                 "es": "Habrá una reunión mañana.",
                 "pt": "Haverá uma reunião amanhã."
-              },
-              {
-                "en": "There may be another option.",
-                "es": "Puede haber otra opción.",
-                "pt": "Pode haver outra opção."
               }
             ]
           }
@@ -733,7 +643,7 @@
           "9 Existence",
           "10 integrated conversation"
         ],
-        "rule": "The five canonical verb functions each receive one dedicated introductory slide."
+        "rule": "The five canonical verb functions each receive one dedicated introductory slide. Global tense, polarity, interrogation, modality and aspect appear representatively without turning the A5 Chapter into a full paradigm reference."
       }
     }
   },
