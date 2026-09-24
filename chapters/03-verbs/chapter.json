@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 3,
+    "slug": "verbs",
+    "title": {
+      "en": "VERB",
+      "es": "VERBO",
+      "pt": "VERBO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim verbum, “palavra”. Na tradição gramatical, o verbo tornou-se a classe associada à expressão de acontecimentos, ações, estados, qualidades, processos e existência, organizando relações fundamentais da oração."
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Verbo é a classe de palavras que organiza o predicado e expressa, conforme o contexto, ação, processo, estado, qualidade, existência ou outras relações verbais. Suas formas também podem marcar tempo, pessoa, número, modo e aspecto, de maneiras diferentes em inglês, espanhol e português."
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "O verbo funciona como núcleo do predicado verbal ou participa de construções que atribuem uma qualidade, indicam um estado, apresentam um processo em andamento, expressam uma ação ou estabelecem existência. Verbos auxiliares podem combinar-se com o verbo principal para construir tempo, aspecto, modalidade, negação e perguntas."
+        },
+        "toroConnections": [
+          {
+            "concept": "verb as predicate nucleus",
+            "target": "verbs",
+            "status": "candidate"
+          },
+          {
+            "concept": "verb and sentence structure",
+            "target": "sentence-order",
+            "status": "candidate"
+          },
+          {
+            "concept": "auxiliary support",
+            "target": "auxiliaries",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, os verbos variam menos por pessoa do que em espanhol e português e usam amplamente auxiliares. Tempo e aspecto aparecem em combinações como work, worked, will work e is working.",
+          "es": "Em espanhol, os verbos apresentam flexão rica de pessoa, número, tempo e modo. As terminações verbais frequentemente identificam o sujeito, e perífrases podem marcar aspecto e modalidade.",
+          "pt": "Em português, os verbos apresentam flexão de pessoa, número, tempo e modo. As terminações podem identificar o sujeito, e locuções verbais combinam auxiliares e formas principais para expressar tempo, aspecto e modalidade."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "She works every day.",
+              "targets": [
+                "works"
+              ]
+            },
+            {
+              "text": "She worked yesterday.",
+              "targets": [
+                "worked"
+              ]
+            },
+            {
+              "text": "She is working now.",
+              "targets": [
+                "is working"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Ella trabaja todos los días.",
+              "targets": [
+                "trabaja"
+              ]
+            },
+            {
+              "text": "Ella trabajó ayer.",
+              "targets": [
+                "trabajó"
+              ]
+            },
+            {
+              "text": "Ella está trabajando ahora.",
+              "targets": [
+                "está trabajando"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Ela trabalha todos os dias.",
+              "targets": [
+                "trabalha"
+              ]
+            },
+            {
+              "text": "Ela trabalhou ontem.",
+              "targets": [
+                "trabalhou"
+              ]
+            },
+            {
+              "text": "Ela está trabalhando agora.",
+              "targets": [
+                "está trabalhando"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "verb functions",
+            "target": "verb-functions",
+            "status": "candidate"
+          },
+          {
+            "concept": "auxiliaries",
+            "target": "auxiliaries",
+            "status": "candidate"
+          },
+          {
+            "concept": "timelines",
+            "target": "timelines",
+            "status": "candidate"
+          },
+          {
+            "concept": "DNA VERBS",
+            "target": "verbs",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Funções Verbais Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Quality",
+              "es": "Cualidad",
+              "pt": "Qualidade"
+            },
+            "sentences": {
+              "en": "She is kind.",
+              "es": "Ella es amable.",
+              "pt": "Ela é gentil."
+            },
+            "targetWords": {
+              "en": "is",
+              "es": "es",
+              "pt": "é"
+            },
+            "definition": {
+              "pt": "Expressa uma qualidade, propriedade, característica ou identidade atribuída ao sujeito."
+            },
+            "toroConnections": [
+              {
+                "concept": "quality",
+                "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "linking relation",
+                "target": "verbs",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "State",
+              "es": "Estado",
+              "pt": "Estado"
+            },
+            "sentences": {
+              "en": "She is tired.",
+              "es": "Ella está cansada.",
+              "pt": "Ela está cansada."
+            },
+            "targetWords": {
+              "en": "is",
+              "es": "está",
+              "pt": "está"
+            },
+            "definition": {
+              "pt": "Expressa um estado, condição ou situação associada ao sujeito em determinado contexto."
+            },
+            "toroConnections": [
+              {
+                "concept": "state",
+                "target": "state",
+                "status": "candidate"
+              },
+              {
+                "concept": "state across time",
+                "target": "timelines",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Movement",
+              "es": "Movimiento",
+              "pt": "Movimento"
+            },
+            "sentences": {
+              "en": "We are preparing dinner.",
+              "es": "Estamos preparando la cena.",
+              "pt": "Estamos preparando o jantar."
+            },
+            "targetWords": {
+              "en": "are preparing",
+              "es": "Estamos preparando",
+              "pt": "Estamos preparando"
+            },
+            "definition": {
+              "pt": "No modelo canônico atual da SIYAYO, Movimento representa uma ação ou processo em andamento em um momento de referência, normalmente construído no inglês por TO BE + verbo-ING."
+            },
+            "toroConnections": [
+              {
+                "concept": "movement",
+                "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "progressive process",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "preparing dinner",
+                "target": "preparing-dinner",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Action",
+              "es": "Acción",
+              "pt": "Ação"
+            },
+            "sentences": {
+              "en": "We cook dinner every Friday.",
+              "es": "Cocinamos la cena todos los viernes.",
+              "pt": "Cozinhamos o jantar toda sexta-feira."
+            },
+            "targetWords": {
+              "en": "cook",
+              "es": "Cocinamos",
+              "pt": "Cozinhamos"
+            },
+            "definition": {
+              "pt": "Expressa o que o sujeito faz, incluindo ações, hábitos e rotinas. No modelo atual, rotina é uma aplicação da função Ação, não uma função verbal separada."
+            },
+            "toroConnections": [
+              {
+                "concept": "action",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "habit and routine",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "having dinner",
+                "target": "having-dinner",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Existence",
+              "es": "Existencia",
+              "pt": "Existência"
+            },
+            "sentences": {
+              "en": "There is a book on the table.",
+              "es": "Hay un libro sobre la mesa.",
+              "pt": "Há um livro sobre a mesa."
+            },
+            "targetWords": {
+              "en": "There is",
+              "es": "Hay",
+              "pt": "Há"
+            },
+            "definition": {
+              "pt": "Expressa existência, presença ou ocorrência de alguém, algo ou um fato. Em inglês, uma construção central é THERE + TO BE."
+            },
+            "toroConnections": [
+              {
+                "concept": "existence",
+                "target": "existence",
+                "status": "candidate"
+              },
+              {
+                "concept": "there + to be",
+                "target": "master-existence",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "What is happening?",
+            "es": "¿Qué está pasando?",
+            "pt": "O que está acontecendo?",
+            "targetWords": {
+              "en": "is happening",
+              "es": "está pasando",
+              "pt": "está acontecendo"
+            },
+            "intent": "OBSERVE",
+            "extension": {
+              "en": "We are preparing dinner, and there is food on the table.",
+              "es": "Estamos preparando la cena y hay comida sobre la mesa.",
+              "pt": "Estamos preparando o jantar e há comida sobre a mesa."
+            },
+            "extensionTargetWords": {
+              "en": "are preparing",
+              "es": "Estamos preparando",
+              "pt": "Estamos preparando"
+            },
+            "toroConnections": [
+              {
+                "concept": "What / Qué / O que",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "process in progress",
+                "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "existence in context",
+                "target": "existence",
+                "status": "candidate"
+              },
+              {
+                "concept": "preparing-dinner",
+                "target": "preparing-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; DNA VERBS discrimina e organiza; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Preservar as cinco funções verbais canônicas atualmente registradas no repositório: Quality, State, Movement, Action e Existence.",
+        "Tratar Routine como aplicação de Action no contrato atual.",
+        "Não confundir Movement com deslocamento espacial: no contrato vigente, Movement representa ação ou processo em andamento.",
+        "Reservar paradigmas completos, auxiliares, tempos, modos, aspectos, regulares e irregulares para MASTER e DNA VERBS."
+      ],
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "verb as predicate nucleus",
+          "basic EN-ES-PT inflection contrast",
+          "Quality",
+          "State",
+          "Movement",
+          "Action",
+          "Existence",
+          "one integrated conversational application"
+        ],
+        "rule": "The Chapter introduces the canonical verb map without exhausting conjugation systems."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full tense and mood paradigms",
+          "aspect systems",
+          "regular and irregular verb morphology",
+          "auxiliary systems",
+          "modal constructions",
+          "conditional constructions",
+          "phrasal verbs",
+          "voice",
+          "agreement and subject omission",
+          "advanced EN-ES-PT contrastive grammar"
+        ],
+        "rule": "MASTER expands forms, paradigms, exceptions and contrastive grammar."
+      },
+      "dnaScope": {
+        "role": "functional-exploration",
+        "target": "verbs",
+        "rule": "DNA VERBS is the dedicated exploration surface for canonical verb functions, forms and discriminations."
+      },
+      "experienceScope": {
+        "role": "contextual-application",
+        "preferredContexts": [
+          "shopping-for-dinner",
+          "preparing-dinner",
+          "having-dinner",
+          "after-dinner-conversation",
+          "college experiences"
+        ],
+        "rule": "Experiences apply verb functions in real situations rather than isolated conjugation drills."
+      },
+      "toroidalLinks": [
+        {
+          "concept": "verb functions",
+          "target": "verb-functions",
+          "status": "candidate"
+        },
+        {
+          "concept": "Quality",
+          "target": "quality",
+          "status": "candidate"
+        },
+        {
+          "concept": "State",
+          "target": "state",
+          "status": "candidate"
+        },
+        {
+          "concept": "Movement",
+          "target": "movement",
+          "status": "candidate"
+        },
+        {
+          "concept": "Action",
+          "target": "action",
+          "status": "candidate"
+        },
+        {
+          "concept": "Existence",
+          "target": "existence",
+          "status": "candidate"
+        },
+        {
+          "concept": "DNA VERBS",
+          "target": "verbs",
+          "status": "candidate"
+        },
+        {
+          "concept": "Experience",
+          "target": "preparing-dinner",
+          "status": "candidate"
+        }
+      ],
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 Quality",
+          "6 State",
+          "7 Movement",
+          "8 Action",
+          "9 Existence",
+          "10 integrated conversation"
+        ],
+        "rule": "The five canonical verb functions each receive one dedicated introductory slide."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
