@@ -38,7 +38,14 @@
         "title": "Função na Oração",
         "content": {
           "pt": "O substantivo atua principalmente como núcleo de grupos nominais. Esses grupos podem exercer diferentes funções na oração, como sujeito, objeto e complemento."
-        }
+        },
+        "toroConnections": [
+          {
+            "concept": "núcleo / head",
+            "target": "dependency-focus",
+            "status": "candidate"
+          }
+        ]
       },
       {
         "id": "grammar",
@@ -120,7 +127,24 @@
               ]
             }
           ]
-        }
+        },
+        "toroConnections": [
+          {
+            "concept": "book / libro / livro",
+            "target": "dependency-focus",
+            "status": "candidate"
+          },
+          {
+            "concept": "singular / plural",
+            "target": "noun-morphology",
+            "status": "candidate"
+          },
+          {
+            "concept": "gender / género / gênero",
+            "target": "noun-morphology",
+            "status": "candidate"
+          }
+        ]
       },
       {
         "id": "classifications",
@@ -165,7 +189,24 @@
                 "livro",
                 "hotel"
               ]
-            }
+            },
+            "toroConnections": [
+              {
+                "concept": "cat / gato / gato",
+                "target": "noun-helpers",
+                "status": "candidate"
+              },
+              {
+                "concept": "book / libro / livro",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "hotel",
+                "target": "locate-conversation",
+                "status": "candidate"
+              }
+            ]
           },
           {
             "classification": {
@@ -208,7 +249,24 @@
                 "decisão",
                 "ideia"
               ]
-            }
+            },
+            "toroConnections": [
+              {
+                "concept": "Love / amor / amor",
+                "target": "abstract-noun-master",
+                "status": "candidate"
+              },
+              {
+                "concept": "can / puede / pode",
+                "target": "verb-dna",
+                "status": "candidate"
+              },
+              {
+                "concept": "change / cambiar / mudar",
+                "target": "verb-dna",
+                "status": "candidate"
+              }
+            ]
           },
           {
             "classification": {
@@ -301,6 +359,23 @@
                   "pt": "Brasil"
                 }
               }
+            ],
+            "toroConnections": [
+              {
+                "concept": "Susan / Paul / London / Brazil",
+                "target": "proper-noun-master",
+                "status": "candidate"
+              },
+              {
+                "concept": "teacher / profesor / professor",
+                "target": "noun-helpers",
+                "status": "candidate"
+              },
+              {
+                "concept": "city / ciudad / cidade",
+                "target": "noun-helpers",
+                "status": "candidate"
+              }
             ]
           }
         ]
@@ -324,7 +399,39 @@
               "en": "The hotel is near the station.",
               "es": "El hotel está cerca de la estación.",
               "pt": "O hotel fica perto da estação."
-            }
+            },
+            "extensionTargetWords": {
+              "en": "hotel",
+              "es": "hotel",
+              "pt": "hotel"
+            },
+            "toroConnections": [
+              {
+                "concept": "Where / Dónde / Onde",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "hotel",
+                "target": "noun-helpers",
+                "status": "candidate"
+              },
+              {
+                "concept": "is / está / fica",
+                "target": "verb-dna",
+                "status": "candidate"
+              },
+              {
+                "concept": "near / cerca de / perto de",
+                "target": "preposition-location",
+                "status": "candidate"
+              },
+              {
+                "concept": "locating a place",
+                "target": "travel-experience",
+                "status": "candidate"
+              }
+            ]
           },
           {
             "en": "I need water, please.",
