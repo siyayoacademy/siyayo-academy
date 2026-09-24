@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 2,
+    "slug": "pronouns",
+    "title": {
+      "en": "PRONOUN",
+      "es": "PRONOMBRE",
+      "pt": "PRONOME"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim pronomen, formado por pro (“em lugar de”) + nomen (“nome”). Tradicionalmente, o pronome é relacionado à função de representar, retomar, apontar ou acompanhar referentes no discurso."
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Pronome é a classe de palavras que pode representar, retomar, identificar, apontar ou situar participantes e referentes no discurso, evitando repetições e estabelecendo relações de pessoa, referência, posse, demonstração, quantidade ou indefinição."
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "Os pronomes podem ocupar posições normalmente associadas a grupos nominais ou atuar junto de substantivos. Conforme o tipo e a língua, podem funcionar como sujeito, objeto, complemento, marcador de posse, elemento demonstrativo ou referência discursiva."
+        },
+        "toroConnections": [
+          {
+            "concept": "pronoun reference",
+            "target": "dependency-focus",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, muitos pronomes marcam pessoa, número e caso ou função: I/me, he/him, she/her, we/us, they/them. A forma também pode indicar posse, demonstração ou reflexividade.",
+          "es": "Em espanhol, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Há formas tônicas e átonas, além de sistemas de demonstrativos, possessivos, relativos e indefinidos.",
+          "pt": "Em português, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Incluem formas pessoais, possessivas, demonstrativas, relativas, interrogativas, indefinidas e de tratamento."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "I see her.",
+              "targets": [
+                "I",
+                "her"
+              ]
+            },
+            {
+              "text": "This is mine.",
+              "targets": [
+                "This",
+                "mine"
+              ]
+            },
+            {
+              "text": "They helped themselves.",
+              "targets": [
+                "They",
+                "themselves"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Yo la veo.",
+              "targets": [
+                "Yo",
+                "la"
+              ]
+            },
+            {
+              "text": "Este es mío.",
+              "targets": [
+                "Este",
+                "mío"
+              ]
+            },
+            {
+              "text": "Ellos se ayudaron.",
+              "targets": [
+                "Ellos",
+                "se"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Eu a vejo.",
+              "targets": [
+                "Eu",
+                "a"
+              ]
+            },
+            {
+              "text": "Este é meu.",
+              "targets": [
+                "Este",
+                "meu"
+              ]
+            },
+            {
+              "text": "Eles se ajudaram.",
+              "targets": [
+                "Eles",
+                "se"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "person / persona / pessoa",
+            "target": "pronoun-person",
+            "status": "candidate"
+          },
+          {
+            "concept": "subject / object",
+            "target": "dependency-focus",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Subtipos ou Classificações",
+        "items": [
+          {
+            "classification": {
+              "en": "Personal",
+              "es": "Personal",
+              "pt": "Pessoal"
+            },
+            "sentences": {
+              "en": "She teaches English.",
+              "es": "Ella enseña inglés.",
+              "pt": "Ela ensina inglês."
+            },
+            "targetWords": {
+              "en": "She",
+              "es": "Ella",
+              "pt": "Ela"
+            },
+            "definition": {
+              "pt": "Indica participantes do discurso ou seres e entidades referidos em relação às pessoas gramaticais."
+            },
+            "toroConnections": [
+              {
+                "concept": "She / Ella / Ela",
+                "target": "pronoun-person",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Demonstrative",
+              "es": "Demostrativo",
+              "pt": "Demonstrativo"
+            },
+            "sentences": {
+              "en": "This is the book I want.",
+              "es": "Este es el libro que quiero.",
+              "pt": "Este é o livro que eu quero."
+            },
+            "targetWords": {
+              "en": "This",
+              "es": "Este",
+              "pt": "Este"
+            },
+            "definition": {
+              "pt": "Aponta ou situa referentes em relação ao contexto, à distância discursiva ou à perspectiva dos participantes."
+            },
+            "toroConnections": [
+              {
+                "concept": "This / Este / Este",
+                "target": "determiner-demonstrative",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Possessive",
+              "es": "Posesivo",
+              "pt": "Possessivo"
+            },
+            "sentences": {
+              "en": "This book is mine.",
+              "es": "Este libro es mío.",
+              "pt": "Este livro é meu."
+            },
+            "targetWords": {
+              "en": "mine",
+              "es": "mío",
+              "pt": "meu"
+            },
+            "definition": {
+              "pt": "Expressa uma relação de posse, pertencimento ou associação entre participantes e referentes."
+            },
+            "toroConnections": [
+              {
+                "concept": "mine / mío / meu",
+                "target": "pronoun-possession",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Who is she?",
+            "es": "¿Quién es ella?",
+            "pt": "Quem é ela?",
+            "targetWords": {
+              "en": "she",
+              "es": "ella",
+              "pt": "ela"
+            },
+            "intent": "IDENTIFY",
+            "extension": {
+              "en": "She is my teacher.",
+              "es": "Ella es mi profesora.",
+              "pt": "Ela é minha professora."
+            },
+            "extensionTargetWords": {
+              "en": "She",
+              "es": "Ella",
+              "pt": "Ela"
+            },
+            "toroConnections": [
+              {
+                "concept": "Who / Quién / Quem",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "she / ella / ela",
+                "target": "pronoun-person",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "en": "Which one do you prefer?",
+            "es": "¿Cuál prefieres?",
+            "pt": "Qual você prefere?",
+            "targetWords": {
+              "en": "you",
+              "es": "prefieres",
+              "pt": "você"
+            },
+            "intent": "CHOOSE",
+            "extension": {
+              "en": "I prefer this one.",
+              "es": "Yo prefiero este.",
+              "pt": "Eu prefiro este."
+            },
+            "extensionTargetWords": {
+              "en": "I",
+              "es": "Yo",
+              "pt": "Eu"
+            },
+            "toroConnections": [
+              {
+                "concept": "Which / Cuál / Qual",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "I / Yo / Eu",
+                "target": "pronoun-person",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "en": "Is this yours?",
+            "es": "¿Esto es tuyo?",
+            "pt": "Isto é seu?",
+            "targetWords": {
+              "en": "yours",
+              "es": "tuyo",
+              "pt": "seu"
+            },
+            "intent": "POSSESSION",
+            "extension": {
+              "en": "Yes, it is mine.",
+              "es": "Sí, es mío.",
+              "pt": "Sim, é meu."
+            },
+            "extensionTargetWords": {
+              "en": "mine",
+              "es": "mío",
+              "pt": "meu"
+            },
+            "toroConnections": [
+              {
+                "concept": "yours / tuyo / seu",
+                "target": "pronoun-possession",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; DNA discrimina; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "toroidalLinks": [
+        {
+          "concept": "personal pronouns",
+          "target": "pronoun-person",
+          "status": "candidate"
+        },
+        {
+          "concept": "demonstratives",
+          "target": "determiner-demonstrative",
+          "status": "candidate"
+        },
+        {
+          "concept": "possession",
+          "target": "pronoun-possession",
+          "status": "candidate"
+        },
+        {
+          "concept": "Question Words",
+          "target": "question-words",
+          "status": "candidate"
+        }
+      ]
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
