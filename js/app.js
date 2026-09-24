@@ -779,7 +779,15 @@ function renderGrammarLanguagePanels(lines = [], examples = {}) {
         data-grammar-language="${line.language}"
         aria-hidden="${index === 0 ? "false" : "true"}"
       >
-        <div class="grammar-definition">
+        <div
+          class="grammar-definition"
+          role="button"
+          tabindex="0"
+          data-definition-language="${line.language}"
+          data-definition-speech-language="${line.speechLanguage ?? "pt"}"
+          data-definition-speech-text="${escapeHtml(line.text ?? "")}"
+          aria-label="Ouvir explicação"
+        >
           <p class="grammar-definition-text">${escapeHtml(line.text ?? "")}</p>
         </div>
         ${exampleItems.length ? `
@@ -1373,6 +1381,26 @@ function attachGrammarCarouselEvents() {
 
   carousel.querySelectorAll("[data-grammar-tab]").forEach(tab => {
     tab.addEventListener("click", () => setGrammarLanguage(tab.dataset.grammarTab));
+  });
+
+  carousel.querySelectorAll(".grammar-definition").forEach(definition => {
+    const speakDefinition = () => {
+      speakText(
+        definition.dataset.definitionSpeechText ?? "",
+        definition.dataset.definitionSpeechLanguage ?? "pt"
+      );
+    };
+
+    definition.addEventListener("click", event => {
+      event.stopPropagation();
+      speakDefinition();
+    });
+
+    definition.addEventListener("keydown", event => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      speakDefinition();
+    });
   });
 
   carousel.querySelectorAll(".grammar-example").forEach(example => {
