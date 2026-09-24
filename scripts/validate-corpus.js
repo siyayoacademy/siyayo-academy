@@ -244,6 +244,8 @@ function validateAdjectives() {
     else ids.add(adjective.id);
     if (adjective?.wordType !== 'adjective') fail("wordType must be 'adjective'", where);
     validateTrilingual(adjective?.translations, `${where}/translations`);
+    validateTrilingual(adjective?.glosses, `${where}/glosses`);
+    validateTrilingual(adjective?.selfExamples, `${where}/selfExamples`);
     if (!['qualitative', 'relational', 'classifying'].includes(adjective?.adjectiveClass)) fail('Invalid adjectiveClass', where);
     if (!['positive', 'neutral', 'negative'].includes(adjective?.polarity)) fail('Invalid adjective polarity', where);
     if (!Array.isArray(adjective?.semanticTags) || !adjective.semanticTags.length) fail('semanticTags must contain at least one tag', where);
