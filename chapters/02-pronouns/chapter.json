@@ -21,7 +21,7 @@
         "type": "paragraph",
         "title": "Origem / Etimologia Resumida",
         "content": {
-          "pt": "Do latim pronomen, formado por pro (“em lugar de”) + nomen (“nome”). Tradicionalmente, o pronome é relacionado à função de representar, retomar, apontar ou acompanhar referentes no discurso."
+          "pt": "Do latim pronomen, formado por pro (“em lugar de”) + nomen (“nome”). A origem do termo ajuda a entender sua função tradicional: representar, retomar ou apontar participantes e referentes no discurso."
         }
       },
       {
@@ -29,7 +29,7 @@
         "type": "paragraph",
         "title": "Definição",
         "content": {
-          "pt": "Pronome é uma classe de palavras que pode representar ou retomar participantes e referentes no discurso, estabelecendo relações como pessoa, referência, posse, demonstração, indefinição ou interrogação. A classificação exata varia entre as línguas: formas que a tradição do espanhol e do português aproxima dos pronomes podem corresponder a determinantes em análises modernas do inglês."
+          "pt": "Pronome é uma classe de palavras usada para representar, retomar ou apontar participantes e referentes no discurso. Pode expressar relações como pessoa, posse, demonstração, indefinição ou interrogação, conforme a língua e o contexto."
         }
       },
       {
@@ -37,7 +37,7 @@
         "type": "paragraph",
         "title": "Função na Oração",
         "content": {
-          "pt": "Os pronomes podem ocupar posições de grupos nominais, por exemplo como sujeito, objeto ou complemento. Algumas formas também se relacionam com posse e demonstração. Quando acompanham um substantivo, a análise depende da língua e da tradição gramatical: em inglês moderno, por exemplo, my em “my book” e this em “this book” são normalmente tratados como determinantes, enquanto mine e this usado sem substantivo podem funcionar pronominalmente."
+          "pt": "Os pronomes podem ocupar posições normalmente preenchidas por grupos nominais, por exemplo como sujeito, objeto ou complemento. Também podem estabelecer relações de posse e demonstração. Quando uma forma acompanha diretamente um substantivo, sua classificação pode mudar conforme a língua e a tradição gramatical."
         },
         "toroConnections": [
           {
@@ -63,9 +63,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, os pronomes pessoais distinguem pessoa, número e, em várias formas, caso ou função: I/me, he/him, she/her, we/us, they/them. Também há pronomes possessivos, demonstrativos, reflexivos, relativos, interrogativos e indefinidos. Formas como my e this antes de um substantivo são normalmente analisadas como determinantes, não como pronomes.",
-          "es": "Em espanhol, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Há formas pessoais tônicas e átonas, além de possessivos, demonstrativos, relativos, interrogativos e indefinidos. Algumas formas tradicionalmente relacionadas aos pronomes funcionam como determinantes quando acompanham um substantivo.",
-          "pt": "Em português, os pronomes podem marcar pessoa, número, gênero em vários paradigmas e função sintática. A tradição gramatical inclui pronomes pessoais, possessivos, demonstrativos, relativos, interrogativos, indefinidos e de tratamento; algumas dessas formas podem atuar de modo substantivo ou acompanhar um nome."
+          "en": "Em inglês, os pronomes pessoais distinguem pessoa, número e, em várias formas, caso ou função: I/me, he/him, she/her, we/us, they/them. Há também formas possessivas e demonstrativas. Antes de um substantivo, formas como my e this são normalmente analisadas como determinantes.",
+          "es": "Em espanhol, os pronomes pessoais podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Há formas tônicas e átonas, além de usos possessivos e demonstrativos. Algumas formas relacionadas aos pronomes funcionam como determinantes quando acompanham um substantivo.",
+          "pt": "Em português, os pronomes pessoais podem marcar pessoa, número, gênero em vários paradigmas e função sintática. A tradição gramatical também inclui usos possessivos e demonstrativos, que podem atuar de modo substantivo ou acompanhar um nome."
         },
         "examples": {
           "en": [
@@ -84,10 +84,10 @@
               ]
             },
             {
-              "text": "They helped themselves.",
+              "text": "They see us.",
               "targets": [
                 "They",
-                "themselves"
+                "us"
               ]
             }
           ],
@@ -107,10 +107,10 @@
               ]
             },
             {
-              "text": "Ellos se ayudaron.",
+              "text": "Ellos nos ven.",
               "targets": [
                 "Ellos",
-                "se"
+                "nos"
               ]
             }
           ],
@@ -130,10 +130,10 @@
               ]
             },
             {
-              "text": "Eles se ajudaram.",
+              "text": "Eles nos veem.",
               "targets": [
                 "Eles",
-                "se"
+                "nos"
               ]
             }
           ]
@@ -298,33 +298,33 @@
             ]
           },
           {
-            "en": "Do you prefer this one?",
+            "en": "Do you prefer this?",
             "es": "¿Prefieres este?",
             "pt": "Você prefere este?",
             "targetWords": {
-              "en": "this one",
+              "en": "this",
               "es": "este",
               "pt": "este"
             },
             "intent": "CHOOSE",
             "extension": {
-              "en": "Yes, I prefer this one.",
+              "en": "Yes, I prefer this.",
               "es": "Sí, prefiero este.",
               "pt": "Sim, eu prefiro este."
             },
             "extensionTargetWords": {
-              "en": "this one",
+              "en": "this",
               "es": "este",
               "pt": "este"
             },
             "toroConnections": [
               {
-                "concept": "this one / este / este",
+                "concept": "this / este / este",
                 "target": "shopping-for-dinner",
                 "status": "candidate"
               },
               {
-                "concept": "choice in context",
+                "concept": "demonstrative choice versus which + noun",
                 "target": "which.use.determiner",
                 "status": "contrast-review"
               }
@@ -446,6 +446,22 @@
           "demonstrative reference inside noun phrases versus independent pronominal use"
         ],
         "rule": "Dependency views should visualize actual sentence function and must not classify a word as a pronoun only from its surface form."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology — activate the origin of the term",
+          "2 definition — establish the core referential idea",
+          "3 sentence-function — show where pronouns operate",
+          "4 grammar — compare the three languages safely",
+          "5 personal — identify participants",
+          "6 demonstrative — point to a contextual referent",
+          "7 possessive — express possession or association",
+          "8 IDENTIFY — apply personal reference",
+          "9 CHOOSE — apply demonstrative reference",
+          "10 POSSESSION — apply possessive reference"
+        ],
+        "rule": "Each slide adds one conceptual layer; advanced paradigms remain in MASTER."
       }
     }
   },
