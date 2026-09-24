@@ -33,7 +33,7 @@
 
   --transition-fast: 180ms ease;
 
-  --control-bg-off: #061b3d;
+  --control-bg-off: #030b1e;
   --control-bg-on: #1c8e3e;
 }
 
@@ -563,11 +563,7 @@ body {
     rgba(242, 216, 138, 0.52);
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(11, 59, 120, 0.52),
-      var(--control-bg-off)
-    );
+    var(--control-bg-off);
 
   color:
     #fff;
@@ -600,20 +596,12 @@ body {
     var(--siyayo-gold-light);
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(11, 59, 120, 0.72),
-      var(--control-bg-off)
-    );
+    var(--control-bg-on);
 }
 
 .slider-button.is-on:not(:disabled) {
   background:
-    linear-gradient(
-      145deg,
-      rgba(43, 166, 78, 0.92),
-      var(--control-bg-on)
-    );
+    var(--control-bg-on);
 
   border-color:
     rgba(242, 216, 138, 0.68);
@@ -631,11 +619,7 @@ body {
 
 .slider-button.is-on:hover:not(:disabled) {
   background:
-    linear-gradient(
-      145deg,
-      rgba(49, 178, 86, 0.96),
-      var(--control-bg-on)
-    );
+    var(--control-bg-on);
 }
 
 .slider-button:active:not(:disabled) {
@@ -1948,14 +1932,33 @@ transform:
   height: 30px;
   border: 1px solid rgba(242,216,138,.34);
   border-radius: 9px;
-  background: transparent;
+  background: var(--control-bg-off);
   color: var(--siyayo-gold-light);
   cursor: pointer;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 4px 12px rgba(0,0,0,.26);
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
 }
 
 .chapter-floor-controls button:hover:not(:disabled),
 .chapter-floor-controls button:focus-visible:not(:disabled) {
+  background: var(--control-bg-on);
   border-color: rgba(242,216,138,.62);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 4px 12px rgba(0,0,0,.26),
+    0 0 14px rgba(28,142,62,.20);
+
+  transform: translateY(-1px);
   outline: none;
 }
 
