@@ -240,6 +240,67 @@
                 "es": "Londres es una ciudad hermosa.",
                 "pt": "Londres é uma cidade linda."
               }
+            ],
+            "relatedVocabulary": {
+              "en": [
+                "Susan",
+                "Paul",
+                "London",
+                "Brazil"
+              ],
+              "es": [
+                "Susan",
+                "Paul",
+                "Londres",
+                "Brasil"
+              ],
+              "pt": [
+                "Susan",
+                "Paul",
+                "Londres",
+                "Brasil"
+              ]
+            },
+            "masterConnections": [
+              {
+                "id": "proper-name-person",
+                "common": {
+                  "en": "teacher",
+                  "es": "profesor",
+                  "pt": "professor"
+                },
+                "proper": {
+                  "en": "Susan",
+                  "es": "Susan",
+                  "pt": "Susan"
+                }
+              },
+              {
+                "id": "proper-name-place",
+                "common": {
+                  "en": "city",
+                  "es": "ciudad",
+                  "pt": "cidade"
+                },
+                "proper": {
+                  "en": "London",
+                  "es": "Londres",
+                  "pt": "Londres"
+                }
+              },
+              {
+                "id": "proper-name-country",
+                "common": {
+                  "en": "country",
+                  "es": "país",
+                  "pt": "país"
+                },
+                "proper": {
+                  "en": "Brazil",
+                  "es": "Brasil",
+                  "pt": "Brasil"
+                }
+              }
             ]
           }
         ]
