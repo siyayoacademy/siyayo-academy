@@ -1515,3 +1515,51 @@ transform:
   font: inherit;
   cursor: pointer;
 }
+
+
+/* Chapter target hierarchy + grammar example affordance. */
+.chapter-title {
+  font-size: clamp(1.22rem, 4.45vw, 2.08rem);
+  color: var(--siyayo-gold-light);
+}
+.current-grammar .section-title {
+  font-size: clamp(1.02rem, 3.75vw, 1.52rem);
+  color: #fff;
+}
+.grammar-definition {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(2, 12, 30, 0.28);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.grammar-definition-text {
+  margin: 0;
+  color: var(--text-main);
+  font-size: clamp(0.96rem, 3.1vw, 1.18rem);
+  line-height: 1.48;
+  text-align: center;
+}
+.grammar-example {
+  position: relative;
+  border-color: rgba(242, 216, 138, 0.34);
+  padding-left: 42px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.grammar-example:hover,
+.grammar-example:focus-visible {
+  border-color: rgba(242, 216, 138, 0.72);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.16);
+}
+.grammar-example-speaker {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--siyayo-gold-light);
+  font-size: 0.92rem;
+}
+.word-type-target {
+  color: var(--siyayo-gold-light);
+  font-weight: 700;
+}
