@@ -1580,3 +1580,51 @@ transform:
 .grammar-example {
   padding-left: 12px;
 }
+
+
+/* Example-slide contract: spoken definition + optional vocabulary layer. */
+.example-definition {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: clamp(10px, 1.6vh, 16px);
+  border: 1px solid rgba(242, 216, 138, 0.24);
+  border-radius: 14px;
+  background: rgba(2, 12, 30, 0.22);
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.example-definition:hover,
+.example-definition:focus-visible {
+  border-color: rgba(242, 216, 138, 0.62);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.12);
+  outline: none;
+}
+.example-definition .slide-definition {
+  margin: 0;
+}
+.slide-vocabulary-disclosure {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.slide-vocabulary-disclosure summary {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 14px;
+  border: 1px solid rgba(242, 216, 138, 0.30);
+  border-radius: 999px;
+  color: var(--siyayo-gold-light);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  list-style: none;
+}
+.slide-vocabulary-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+.slide-vocabulary-disclosure[open] summary {
+  border-color: rgba(242, 216, 138, 0.62);
+}
+.slide-vocabulary-disclosure .slide-related-content {
+  margin-top: 10px;
+}
