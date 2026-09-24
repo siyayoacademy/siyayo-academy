@@ -233,17 +233,17 @@
               "pt": "Movimento"
             },
             "sentences": {
-              "en": "We are preparing dinner.",
-              "es": "Estamos preparando la cena.",
-              "pt": "Estamos preparando o jantar."
+              "en": "We walk to school.",
+              "es": "Caminamos a la escuela.",
+              "pt": "Caminhamos até a escola."
             },
             "targetWords": {
-              "en": "are preparing",
-              "es": "Estamos preparando",
-              "pt": "Estamos preparando"
+              "en": "walk",
+              "es": "Caminamos",
+              "pt": "Caminhamos"
             },
             "definition": {
-              "pt": "No modelo canônico atual da SIYAYO, Movimento representa uma ação ou processo em andamento em um momento de referência, normalmente construído no inglês por TO BE + verbo-ING."
+              "pt": "Expressa deslocamento, direção, mudança de posição ou movimento físico. Verbos como go, come, walk e run podem pertencer simultaneamente aos eixos Movement e Action. O progressive (BE + verbo-ING) pode mostrar esse movimento em andamento, mas é uma camada de aspecto, não a definição de Movement."
             },
             "toroConnections": [
               {
@@ -252,13 +252,18 @@
                 "status": "candidate"
               },
               {
-                "concept": "progressive process",
-                "target": "timelines",
+                "concept": "action overlap",
+                "target": "action",
                 "status": "candidate"
               },
               {
-                "concept": "preparing dinner",
-                "target": "preparing-dinner",
+                "concept": "direction and spatial relation",
+                "target": "prepositions",
+                "status": "candidate"
+              },
+              {
+                "concept": "DNA VERBS",
+                "target": "verbs",
                 "status": "candidate"
               }
             ]
@@ -340,34 +345,39 @@
         "title": "Aplicação em Conversação",
         "items": [
           {
-            "en": "What is happening?",
-            "es": "¿Qué está pasando?",
-            "pt": "O que está acontecendo?",
+            "en": "Where are you going?",
+            "es": "¿Adónde vas?",
+            "pt": "Aonde você vai?",
             "targetWords": {
-              "en": "is happening",
-              "es": "está pasando",
-              "pt": "está acontecendo"
+              "en": "are you going",
+              "es": "vas",
+              "pt": "vai"
             },
-            "intent": "OBSERVE",
+            "intent": "CONNECT",
             "extension": {
-              "en": "We are preparing dinner, and there is food on the table.",
-              "es": "Estamos preparando la cena y hay comida sobre la mesa.",
-              "pt": "Estamos preparando o jantar e há comida sobre a mesa."
+              "en": "We are going to the market, and there is food there.",
+              "es": "Vamos al mercado y hay comida allí.",
+              "pt": "Vamos ao mercado e há comida lá."
             },
             "extensionTargetWords": {
-              "en": "are preparing",
-              "es": "Estamos preparando",
-              "pt": "Estamos preparando"
+              "en": "are going",
+              "es": "Vamos",
+              "pt": "Vamos"
             },
             "toroConnections": [
               {
-                "concept": "What / Qué / O que",
+                "concept": "Where / Adónde / Aonde",
                 "target": "question-words",
                 "status": "candidate"
               },
               {
-                "concept": "process in progress",
+                "concept": "movement in context",
                 "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "action overlap",
+                "target": "action",
                 "status": "candidate"
               },
               {
@@ -376,8 +386,8 @@
                 "status": "candidate"
               },
               {
-                "concept": "preparing-dinner",
-                "target": "preparing-dinner",
+                "concept": "shopping-for-dinner",
+                "target": "shopping-for-dinner",
                 "status": "candidate"
               }
             ]
@@ -391,7 +401,8 @@
       "canonicalNotes": [
         "Preservar as cinco funções verbais canônicas atualmente registradas no repositório: Quality, State, Movement, Action e Existence.",
         "Tratar Routine como aplicação de Action no contrato atual.",
-        "Não confundir Movement com deslocamento espacial: no contrato vigente, Movement representa ação ou processo em andamento.",
+        "Definir Movement por deslocamento, direção, mudança de posição ou movimento físico; tratar o progressive (BE + verbo-ING) como camada de aspecto transversal, não como definição da função Movement.",
+        "Permitir sobreposição semântica entre Movement e Action para verbos como go, come, walk e run.",
         "Reservar paradigmas completos, auxiliares, tempos, modos, aspectos, regulares e irregulares para MASTER e DNA VERBS."
       ],
       "chapterScope": {
