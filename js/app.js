@@ -889,7 +889,10 @@ function renderSlideContent(slide) {
             )}
           </h2>
 
-          <p class="section-content">
+          <p
+            class="section-content explanatory-text"
+            tabindex="0"
+          >
             ${escapeHtml(
               slide.content ?? ""
             )}
