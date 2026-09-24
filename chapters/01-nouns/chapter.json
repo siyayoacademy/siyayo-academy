@@ -57,18 +57,68 @@
         },
         "examples": {
           "en": [
-            "book → books",
-            "child → children",
-            "woman → women"
+            {
+              "text": "book → books",
+              "targets": [
+                "book",
+                "books"
+              ]
+            },
+            {
+              "text": "child → children",
+              "targets": [
+                "child",
+                "children"
+              ]
+            },
+            {
+              "text": "woman → women",
+              "targets": [
+                "woman",
+                "women"
+              ]
+            }
           ],
           "es": [
-            "el libro nuevo → los libros nuevos",
-            "la casa nueva → las casas nuevas"
+            {
+              "text": "el libro nuevo → los libros nuevos",
+              "targets": [
+                "libro",
+                "libros"
+              ]
+            },
+            {
+              "text": "la casa nueva → las casas nuevas",
+              "targets": [
+                "casa",
+                "casas"
+              ]
+            }
           ],
           "pt": [
-            "o livro novo → os livros novos",
-            "a casa nova → as casas novas",
-            "casa → casinha · livro → livrinho"
+            {
+              "text": "o livro novo → os livros novos",
+              "targets": [
+                "livro",
+                "livros"
+              ]
+            },
+            {
+              "text": "a casa nova → as casas novas",
+              "targets": [
+                "casa",
+                "casas"
+              ]
+            },
+            {
+              "text": "casa → casinha · livro → livrinho",
+              "targets": [
+                "casa",
+                "casinha",
+                "livro",
+                "livrinho"
+              ]
+            }
           ]
         }
       },
