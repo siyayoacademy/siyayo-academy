@@ -1,32 +1,24 @@
 {
   "$schema": "../schemas/node.schema.json",
-
-  "version": "0.1.0",
-
+  "version": "0.2.0",
   "id": "state",
-
   "type": "concept",
-
   "role": "verb-function",
-
   "label": {
     "en": "STATE",
     "es": "ESTADO",
     "pt": "ESTADO"
   },
-
   "description": {
-    "en": "Verb-function concept for expressing a state, condition or situation associated with a subject.",
-    "es": "Concepto de función verbal para expresar un estado, condición o situación asociada a un sujeto.",
-    "pt": "Conceito de função verbal para expressar um estado, condição ou situação associada a um sujeito."
+    "en": "Verb-function concept for expressing a condition, situation or state in which a subject is found or is presented in context.",
+    "es": "Concepto de función verbal para expresar una condición, situación o estado en que se encuentra o se presenta un sujeto en contexto.",
+    "pt": "Conceito de função verbal para expressar uma condição, situação ou estado em que o sujeito se encontra ou é apresentado no contexto."
   },
-
   "relations": [
     {
       "type": "parent",
       "target": "verb-functions"
     },
-
     {
       "type": "related",
       "target": "quality"
@@ -55,7 +47,6 @@
       "type": "related",
       "target": "tools"
     },
-
     {
       "type": "supports",
       "target": "practice"
@@ -64,7 +55,6 @@
       "type": "supports",
       "target": "examples"
     },
-
     {
       "type": "returns-to",
       "target": "verbs"
@@ -74,7 +64,6 @@
       "target": "roots"
     }
   ],
-
   "representations": [
     {
       "type": "visual-index",
@@ -101,17 +90,15 @@
       "target": "master-state"
     }
   ],
-
   "pedagogy": {
     "level": "core",
     "sequence": 1,
     "speechEnabled": true,
     "interactive": true
   },
-
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats State as a distinct verb-function concept for condition, situation or state. It remains intentionally permeable with Quality and with temporal structures when a state is located or developed across time."
+    "notes": "v0.2 distinguishes State from Quality by treating State as condition or situation in context. English BE may realize both State and Quality; Spanish and Portuguese frequently use ESTAR for contextual states and SER for identity or characteristic, but actual usage depends on lexical meaning, discourse and language-specific conventions."
   }
 }
