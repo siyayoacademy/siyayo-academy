@@ -159,7 +159,7 @@
       {
         "id": "classifications",
         "type": "examples",
-        "title": "Subtipos ou Classificações",
+        "title": "Subtipos Essenciais / Classificações",
         "items": [
           {
             "classification": {
@@ -400,7 +400,53 @@
           "target": "after-dinner-conversation",
           "status": "candidate"
         }
-      ]
+      ],
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "personal pronouns as participant reference",
+          "demonstrative pronouns as contextual reference",
+          "possessive pronouns as possession or association",
+          "basic subject/object awareness",
+          "basic EN-ES-PT contrast when form and function diverge"
+        ],
+        "rule": "The Chapter introduces representative functions and safe contrasts; it does not attempt to exhaust every pronoun paradigm."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full personal-pronoun paradigms by person, number, gender and case or syntactic function",
+          "subject versus object forms and clitic systems",
+          "reflexive and reciprocal pronouns",
+          "relative pronouns",
+          "interrogative pronouns in full contrast with Question Words",
+          "indefinite pronouns",
+          "forms of address and treatment pronouns",
+          "possessive pronoun versus possessive determiner contrasts",
+          "demonstrative pronoun versus demonstrative determiner contrasts",
+          "language-specific placement, agreement, omission and register",
+          "advanced EN-ES-PT false equivalences and form-versus-function contrasts"
+        ],
+        "rule": "MASTER expands paradigms, exceptions, distribution and contrastive grammar without changing the Chapter's introductory definitions."
+      },
+      "experienceScope": {
+        "role": "contextual-application",
+        "preferredContexts": [
+          "shopping-for-dinner",
+          "after-dinner-conversation",
+          "college experiences when participant reference is naturally present"
+        ],
+        "rule": "Experiences should surface pronouns through real participant, choice, possession and reference needs rather than isolated paradigm drills."
+      },
+      "dependencyScope": {
+        "role": "structural-visualization",
+        "preferredFocus": [
+          "subject reference",
+          "object or complement reference",
+          "demonstrative reference inside noun phrases versus independent pronominal use"
+        ],
+        "rule": "Dependency views should visualize actual sentence function and must not classify a word as a pronoun only from its surface form."
+      }
     }
   },
   "carousel": {
