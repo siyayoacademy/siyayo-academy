@@ -308,7 +308,7 @@
               "pt": "fresco"
             },
             "definition": {
-              "pt": "No uso atributivo, o adjetivo integra o grupo nominal e modifica diretamente o substantivo; no uso predicativo, a propriedade é atribuída ao referente por uma relação verbal. O mesmo adjetivo pode participar dos dois usos, conforme a língua e o contexto."
+              "pt": "No uso atributivo, o adjetivo integra o grupo nominal e modifica diretamente o substantivo; no uso predicativo, a propriedade é atribuída ao referente por uma relação verbal. A SIYAYO compara o mesmo significado nas três línguas para tornar visíveis as diferenças de posição e estrutura sem perder a unidade semântica."
             },
             "relatedExamples": [
               {
@@ -357,18 +357,18 @@
               "pt": "bonito"
             },
             "definition": {
-              "pt": "A posição do adjetivo é uma tendência de cada língua, não uma regra absoluta. Em inglês, adjetivos atributivos aparecem frequentemente antes do substantivo e normalmente não marcam gênero ou número. Em espanhol e português, muitos adjetivos aparecem depois do substantivo e frequentemente concordam em gênero e número, mas a anteposição também existe e pode mudar foco, estilo ou significado."
+              "pt": "A posição do adjetivo é uma tendência de cada língua, não uma regra absoluta. A comparação simultânea EN/ES/PT permite observar o mesmo significado atravessando três sistemas: o inglês frequentemente antepõe o adjetivo; espanhol e português frequentemente o pospõem e marcam concordância, embora todos admitam variações contextuais."
             },
             "relatedExamples": [
               {
-                "en": "a beautiful dinner",
-                "es": "una cena hermosa",
-                "pt": "um jantar bonito"
+                "en": "a fresh tomato",
+                "es": "un tomate fresco",
+                "pt": "um tomate fresco"
               },
               {
-                "en": "beautiful dinners",
-                "es": "cenas hermosas",
-                "pt": "jantares bonitos"
+                "en": "fresh tomatoes",
+                "es": "tomates frescos",
+                "pt": "tomates frescos"
               },
               {
                 "en": "a great friend",
@@ -411,7 +411,7 @@
               "pt": "mais fresco"
             },
             "definition": {
-              "pt": "A comparação e a intensidade dependem de o adjetivo ser graduável. Em inglês, formas curtas podem usar -er/-est e formas maiores usam more/most; espanhol e português usam normalmente más/mais e estruturas equivalentes. Nem todo adjetivo aceita gradação natural, e formas irregulares ou restrições lexicais ficam para a MASTER."
+              "pt": "A comparação e a intensidade dependem de o adjetivo ser graduável. O contraste paralelo EN/ES/PT evidencia estratégias diferentes para a mesma relação: inglês pode flexionar (-er/-est) ou usar more/most; espanhol e português usam normalmente más/mais e estruturas equivalentes. Formas irregulares e restrições lexicais ficam para a MASTER."
             },
             "relatedExamples": [
               {
@@ -451,19 +451,19 @@
         "title": "Aplicação em Conversação",
         "items": [
           {
-            "en": "Which cheese looks fresh?",
-            "es": "¿Qué queso se ve fresco?",
-            "pt": "Qual queijo parece fresco?",
+            "en": "Which cheese looks fresher?",
+            "es": "¿Qué queso se ve más fresco?",
+            "pt": "Qual queijo parece mais fresco?",
             "targetWords": {
-              "en": "fresh",
-              "es": "fresco",
-              "pt": "fresco"
+              "en": "fresher",
+              "es": "más fresco",
+              "pt": "mais fresco"
             },
             "intent": "DESCRIBE",
             "extension": {
-              "en": "The fresh cheese looks excellent for tonight's dinner.",
-              "es": "El queso fresco parece excelente para la cena de esta noche.",
-              "pt": "O queijo fresco parece excelente para o jantar desta noite."
+              "en": "This fresh cheese looks excellent for tonight's dinner.",
+              "es": "Este queso fresco parece excelente para la cena de esta noche.",
+              "pt": "Este queijo fresco parece excelente para o jantar desta noite."
             },
             "extensionTargetWords": {
               "en": "fresh",
@@ -477,13 +477,18 @@
                 "status": "candidate"
               },
               {
-                "concept": "fresh adjective",
-                "target": "shopping-for-dinner",
+                "concept": "adjective + noun",
+                "target": "words",
                 "status": "candidate"
               },
               {
-                "concept": "quality",
+                "concept": "quality / linking relation",
                 "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "comparison",
+                "target": "words",
                 "status": "candidate"
               },
               {
@@ -497,7 +502,7 @@
       }
     ],
     "integration": {
-      "principle": "A5 mostra; Master aprofunda; corpus discrimina; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "principle": "A5 mostra; Master aprofunda; corpus discrimina; Experience aplica; o contraste EN/ES/PT revela a forma; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
       "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
       "canonicalNotes": [
         "O schema do corpus permite adjectiveClass = qualitative, relational ou classifying; o corpus atual está efetivamente povoado apenas com itens qualitative.",
@@ -508,7 +513,8 @@
         "Reservar paradigmas completos de comparação, irregularidades, posição estilística e mudanças finas de significado para a MASTER.",
         "Tratar a posição do adjetivo como tendência dependente da língua e do contexto, não como regra absoluta de pré- ou pós-nominalidade.",
         "Tratar concordância como propriedade morfossintática produtiva em espanhol e português; o inglês normalmente não marca gênero ou número no adjetivo.",
-        "Aplicar comparação e intensidade apenas a adjetivos graduáveis; não assumir que todo adjetivo aceita very/muy/muito, comparativo ou superlativo natural."
+        "Aplicar comparação e intensidade apenas a adjetivos graduáveis; não assumir que todo adjetivo aceita very/muy/muito, comparativo ou superlativo natural.",
+        "Usar contraste trilingue alinhado como princípio SIYAYO: manter a intenção semântica estável e observar como EN, ES e PT realizam posição, concordância, predicação e comparação de modos diferentes."
       ],
       "chapterScope": {
         "role": "introductory-canonical",
@@ -569,6 +575,18 @@
           "10 integrated conversation"
         ],
         "rule": "The chapter prioritizes observable adjective behavior: quality, relation/classification, attributive/predicative use, position/agreement and comparison. Fine lexical boundaries remain in MASTER."
+      },
+      "trilingualContrastScope": {
+        "role": "toroidal-cross-language-comparison",
+        "principle": "Keep one semantic intention stable while EN, ES and PT expose different grammatical realizations.",
+        "observe": [
+          "adjective position around the noun",
+          "gender and number agreement",
+          "attributive versus predicative realization",
+          "comparison and intensity strategies",
+          "linking-verb differences across the three languages"
+        ],
+        "rule": "The Chapter should use aligned EN/ES/PT examples whenever a contrast adds pedagogical value, while MASTER keeps the exhaustive paradigms and exceptions."
       }
     }
   },
