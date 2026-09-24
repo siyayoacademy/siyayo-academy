@@ -315,15 +315,11 @@ function formatTargetSentence(
       index + target.length
     );
 
-  return `
-    ${escapeHtml(before)}
-    <strong>
-      <em class="target-word">
-        ${escapeHtml(match)}
-      </em>
-    </strong>
-    ${escapeHtml(after)}
-  `;
+  return escapeHtml(before)
+    + '<strong><em class="target-word">'
+    + escapeHtml(match)
+    + '</em></strong>'
+    + escapeHtml(after);
 }
 
 
@@ -399,18 +395,13 @@ function formatSemanticSurfaceSentence(
         index + descriptor.text.length
       );
 
-    return `
-      ${escapeHtml(before)}
-      <span
-        data-surface-id="${escapeHtml(descriptor.surfaceId)}"
-        data-surface-language="${escapeHtml(descriptor.language)}"
-        role="button"
-        tabindex="0"
-      >
-        ${escapeHtml(match)}
-      </span>
-      ${escapeHtml(after)}
-    `;
+    return escapeHtml(before)
+      + '<span data-surface-id="' + escapeHtml(descriptor.surfaceId)
+      + '" data-surface-language="' + escapeHtml(descriptor.language)
+      + '" role="button" tabindex="0">'
+      + escapeHtml(match)
+      + '</span>'
+      + escapeHtml(after);
   }
 
   return formatTargetSentence(
