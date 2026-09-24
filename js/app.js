@@ -768,7 +768,7 @@ function renderMasterConnections(connections = []) {
         const common = connection.common?.[language];
         const proper = connection.proper?.[language];
         if (!common || !proper) return "";
-        return `<span class="master-connection-pair"><span class="master-common">\${escapeHtml(common)}</span><span class="master-arrow" aria-hidden="true"> → </span><span class="word-type-target master-proper">\${escapeHtml(proper)}</span></span>`;
+        return `<span class="master-connection-pair"><span class="master-common">${escapeHtml(common)}</span><span class="master-arrow" aria-hidden="true"> → </span><span class="word-type-target master-proper">${escapeHtml(proper)}</span></span>`;
       })
       .filter(Boolean)
       .join('<span class="master-pair-separator" aria-hidden="true"> · </span>');
@@ -781,17 +781,17 @@ function renderMasterConnections(connections = []) {
 
     return `
       <button type="button" class="noun-vocabulary-language master-connection-language"
-        data-vocabulary-language="\${language}"
-        data-vocabulary-speech-text="\${escapeHtml(speech)}"
-        aria-label="Ouvir nomes próprios em \${languageNames[language]}">
-        \${pairs}
+        data-vocabulary-language="${language}"
+        data-vocabulary-speech-text="${escapeHtml(speech)}"
+        aria-label="Ouvir nomes próprios em ${languageNames[language]}">
+        ${pairs}
       </button>`;
   }).filter(Boolean).join("");
 
   return `
     <details class="slide-vocabulary-disclosure master-connections-disclosure">
       <summary>+ MASTER</summary>
-      <div class="noun-vocabulary-groups master-connection-groups">\${rows}</div>
+      <div class="noun-vocabulary-groups master-connection-groups">${rows}</div>
     </details>`;
 }
 
