@@ -1,0 +1,579 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 6,
+    "slug": "articles",
+    "title": {
+      "en": "ARTICLE",
+      "es": "ARTÍCULO",
+      "pt": "ARTIGO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim articulus, diminutivo de artus, com a ideia de “pequena articulação” ou “parte que liga”. Na gramática, o artigo acompanha o substantivo e ajuda a indicar como o referente é apresentado no discurso."
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Artigo é uma palavra que acompanha um substantivo e contribui para indicar referência definida ou indefinida. Na SIYAYO ACADEMY, o foco inicial é observar como inglês, espanhol e português apresentam um referente como conhecido/específico, não identificado ou genérico."
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "O artigo integra o grupo nominal e ajuda a organizar a relação entre o substantivo e o contexto. Ele não substitui o nome: trabalha com ele. Em espanhol e português, muitos artigos também marcam gênero e número; em inglês, the é invariável e a/an distinguem principalmente o contexto fonológico inicial."
+        },
+        "toroConnections": [
+          {
+            "concept": "article + noun",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "noun phrase",
+            "target": "dependency-focus",
+            "status": "candidate"
+          },
+          {
+            "concept": "reference and choice",
+            "target": "which.use.determiner",
+            "status": "candidate"
+          },
+          {
+            "concept": "known versus new referent",
+            "target": "shopping-for-dinner",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, the marca referência definida e é invariável. A/an marca referência indefinida singular; a escolha entre a e an depende do som inicial seguinte, não simplesmente da letra. Em vários contextos genéricos ou incontáveis, o inglês pode usar artigo zero.",
+          "es": "Em espanhol, os artigos definidos e indefinidos normalmente concordam em gênero e número com o substantivo: el/la/los/las e un/una/unos/unas. O uso do artigo pode divergir do inglês em referências genéricas, nomes próprios e outras construções.",
+          "pt": "Em português, os artigos definidos e indefinidos normalmente concordam em gênero e número com o substantivo: o/a/os/as e um/uma/uns/umas. O uso pode variar conforme referência, construção e variedade, inclusive em certos nomes próprios."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "the book",
+              "targets": [
+                "the"
+              ]
+            },
+            {
+              "text": "a book",
+              "targets": [
+                "a"
+              ]
+            },
+            {
+              "text": "an apple",
+              "targets": [
+                "an"
+              ]
+            },
+            {
+              "text": "Books are useful.",
+              "targets": [
+                "Books"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "el libro",
+              "targets": [
+                "el"
+              ]
+            },
+            {
+              "text": "un libro",
+              "targets": [
+                "un"
+              ]
+            },
+            {
+              "text": "una manzana",
+              "targets": [
+                "una"
+              ]
+            },
+            {
+              "text": "Los libros son útiles.",
+              "targets": [
+                "Los"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "o livro",
+              "targets": [
+                "o"
+              ]
+            },
+            {
+              "text": "um livro",
+              "targets": [
+                "um"
+              ]
+            },
+            {
+              "text": "uma maçã",
+              "targets": [
+                "uma"
+              ]
+            },
+            {
+              "text": "Os livros são úteis.",
+              "targets": [
+                "Os"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "article system EN-ES-PT",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "agreement",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "generic reference",
+            "target": "nouns",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Funções Essenciais do Artigo",
+        "items": [
+          {
+            "classification": {
+              "en": "Definite",
+              "es": "Definido",
+              "pt": "Definido"
+            },
+            "sentences": {
+              "en": "The cheese is on the table.",
+              "es": "El queso está sobre la mesa.",
+              "pt": "O queijo está sobre a mesa."
+            },
+            "targetWords": {
+              "en": "The",
+              "es": "El",
+              "pt": "O"
+            },
+            "definition": {
+              "pt": "Apresenta um referente como identificável, conhecido ou recuperável no contexto. O valor de “definido” depende da relação entre expressão e contexto, não apenas de o objeto existir fisicamente."
+            },
+            "relatedExamples": [
+              {
+                "en": "Open the window.",
+                "es": "Abre la ventana.",
+                "pt": "Abra a janela."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "known referent",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "noun phrase",
+                "target": "nouns",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Indefinite",
+              "es": "Indefinido",
+              "pt": "Indefinido"
+            },
+            "sentences": {
+              "en": "We need a table.",
+              "es": "Necesitamos una mesa.",
+              "pt": "Precisamos de uma mesa."
+            },
+            "targetWords": {
+              "en": "a",
+              "es": "una",
+              "pt": "uma"
+            },
+            "definition": {
+              "pt": "Introduz um referente sem pressupor que o interlocutor já saiba exatamente qual é. Em inglês, a/an é singular; espanhol e português também possuem formas indefinidas plurais."
+            },
+            "relatedExamples": [
+              {
+                "en": "She bought an apple.",
+                "es": "Ella compró una manzana.",
+                "pt": "Ela comprou uma maçã."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "new referent",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              },
+              {
+                "concept": "noun introduction",
+                "target": "nouns",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Agreement",
+              "es": "Concordancia",
+              "pt": "Concordância"
+            },
+            "sentences": {
+              "en": "the beautiful books",
+              "es": "los libros hermosos",
+              "pt": "os livros bonitos"
+            },
+            "targetWords": {
+              "en": "the",
+              "es": "los",
+              "pt": "os"
+            },
+            "definition": {
+              "pt": "Em espanhol e português, o artigo participa da concordância de gênero e número do grupo nominal. Em inglês, the não varia, e a/an não codificam gênero; a/an alternam conforme o som inicial da palavra seguinte."
+            },
+            "relatedExamples": [
+              {
+                "en": "the beautiful book",
+                "es": "el libro hermoso",
+                "pt": "o livro bonito"
+              },
+              {
+                "en": "the beautiful books",
+                "es": "los libros hermosos",
+                "pt": "os livros bonitos"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "article + noun + adjective",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "agreement",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective",
+                "target": "adjectives",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Generic & Zero Article",
+              "es": "Referencia Genérica",
+              "pt": "Referência Genérica"
+            },
+            "sentences": {
+              "en": "Books are useful.",
+              "es": "Los libros son útiles.",
+              "pt": "Os livros são úteis."
+            },
+            "targetWords": {
+              "en": "Books",
+              "es": "Los",
+              "pt": "Os"
+            },
+            "definition": {
+              "pt": "As três línguas não distribuem artigos da mesma maneira em referências genéricas. O inglês frequentemente usa artigo zero com plurais ou incontáveis em sentido geral; espanhol e português usam com frequência artigo definido em contextos equivalentes. É uma diferença de sistema, não uma tradução palavra por palavra."
+            },
+            "relatedExamples": [
+              {
+                "en": "Music is important.",
+                "es": "La música es importante.",
+                "pt": "A música é importante."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "generic reference",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "cross-language contrast",
+                "target": "words",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Article & Determiner Boundary",
+              "es": "Artículo y Determinante",
+              "pt": "Artigo e Determinante"
+            },
+            "sentences": {
+              "en": "Which book do you prefer?",
+              "es": "¿Qué libro prefieres?",
+              "pt": "Qual livro você prefere?"
+            },
+            "targetWords": {
+              "en": "Which",
+              "es": "Qué",
+              "pt": "Qual"
+            },
+            "definition": {
+              "pt": "Artigos pertencem ao sistema mais amplo de elementos que organizam o grupo nominal. Formas como which/qué/qual, this/este e my/mi/meu podem ocupar posições determinativas, mas não devem ser reclassificadas automaticamente como artigos. A SIYAYO preserva a diferença entre forma lexical, função e tradição gramatical de cada língua."
+            },
+            "relatedExamples": [
+              {
+                "en": "the book / this book / which book",
+                "es": "el libro / este libro / qué libro",
+                "pt": "o livro / este livro / qual livro"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "which determiner",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              },
+              {
+                "concept": "demonstrative determiner",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "pronoun versus determiner",
+                "target": "pronouns",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Which cheese should we choose, the fresh one or an aged one?",
+            "es": "¿Qué queso deberíamos elegir, el fresco o uno curado?",
+            "pt": "Qual queijo devemos escolher, o fresco ou um maturado?",
+            "targetWords": {
+              "en": "the",
+              "es": "el",
+              "pt": "o"
+            },
+            "intent": "REFERENCE_AND_CHOICE",
+            "extension": {
+              "en": "Let's choose the fresh cheese for the dinner.",
+              "es": "Elijamos el queso fresco para la cena.",
+              "pt": "Vamos escolher o queijo fresco para o jantar."
+            },
+            "extensionTargetWords": {
+              "en": "the",
+              "es": "el",
+              "pt": "o"
+            },
+            "toroConnections": [
+              {
+                "concept": "Which / Qué / Qual",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              },
+              {
+                "concept": "article + noun",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "fresh adjective",
+                "target": "adjectives",
+                "status": "candidate"
+              },
+              {
+                "concept": "choose verb",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "shopping Experience",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; EN/ES/PT contrastam a referência; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Tratar artigo como elemento do grupo nominal e não como substituto do substantivo.",
+        "Distinguir artigo de outros determinantes: demonstrativos, possessivos e interrogativos podem compartilhar posição funcional sem pertencer à classe ARTICLE.",
+        "Manter equivalência funcional entre EN, ES e PT sem forçar identidade de categorias ou distribuição.",
+        "Ensinar a/an pela realização sonora inicial seguinte, não por uma regra puramente ortográfica de vogal versus consoante.",
+        "Apresentar artigo zero como contraste estrutural especialmente relevante em inglês, sem assumir ausência universal de artigo nas outras línguas.",
+        "Reservar contrações com preposições, nomes próprios, usos institucionais, geográficos, genéricos finos e variação regional para a MASTER."
+      ],
+      "sourceConnections": {
+        "role": "canonical-source-integration",
+        "sources": [
+          {
+            "id": "pronoun-chapter",
+            "path": "chapters/02-pronouns/chapter.json",
+            "contributes": [
+              "pronoun versus determiner boundary",
+              "demonstrative and possessive contrast"
+            ]
+          },
+          {
+            "id": "which-skill",
+            "path": "data/learning/skills/which.json",
+            "contributes": [
+              "interrogative-determiner role",
+              "choice function",
+              "determiner use"
+            ]
+          },
+          {
+            "id": "experience-seeds",
+            "path": "data/learning/experience-seeds.json",
+            "contributes": [
+              "shopping context",
+              "choice",
+              "noun phrases",
+              "known versus new referents"
+            ]
+          },
+          {
+            "id": "adjective-chapter",
+            "path": "chapters/04-adjectives/chapter.json",
+            "contributes": [
+              "adjective agreement",
+              "noun phrase composition",
+              "EN-ES-PT word order"
+            ]
+          }
+        ],
+        "principle": "Reuse canonical Academy distinctions when ARTICLE touches PRONOUN, ADJECTIVE, QUESTION WORD or Experience behavior.",
+        "rule": "Shared noun-phrase positions do not erase word-class boundaries."
+      },
+      "trilingualContrastScope": {
+        "role": "toroidal-cross-language-comparison",
+        "principle": "Keep the referential intention stable while EN, ES and PT reveal different article systems.",
+        "observe": [
+          "definite versus indefinite reference",
+          "gender and number agreement",
+          "a versus an phonological selection",
+          "generic reference and zero article",
+          "article versus determiner boundaries"
+        ],
+        "rule": "Prefer aligned EN/ES/PT examples whenever the same referential intention exposes a meaningful system difference."
+      },
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "definition and noun-phrase function",
+          "definite articles",
+          "indefinite articles",
+          "basic agreement",
+          "a/an phonological contrast",
+          "introductory generic and zero-article contrast",
+          "article versus determiner boundary",
+          "one contextual application"
+        ],
+        "rule": "The Chapter introduces the article system without exhausting all language-specific omissions, contractions or lexical restrictions."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full definite and indefinite paradigms",
+          "article plus preposition contractions",
+          "articles with proper names",
+          "geographical names and institutions",
+          "generic reference in fine semantic contrast",
+          "count versus mass noun article behavior",
+          "fixed expressions",
+          "regional and register variation",
+          "advanced zero-article environments",
+          "advanced EN-ES-PT contrastive grammar"
+        ],
+        "rule": "MASTER expands distribution, exceptions, contractions, lexical restrictions and regional variation."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 definite",
+          "6 indefinite",
+          "7 agreement",
+          "8 generic-zero",
+          "9 article-determiner boundary",
+          "10 integrated conversation"
+        ],
+        "rule": "The Chapter moves from reference to article type, agreement and cross-language distribution before reconnecting ARTICLE to the broader determiner system and Experience."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
