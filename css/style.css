@@ -2132,3 +2132,20 @@ transform:
 .chapter-8.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   CHAPTER 9 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-9 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-9.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-9.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
