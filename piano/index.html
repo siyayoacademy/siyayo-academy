@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano SIYAYO Stage</title>
+  <link rel="stylesheet" href="./piano.css">
+</head>
+<body>
+  <main class="piano-stage" id="pianoStage" data-theme="sound">
+    <header class="stage-header">
+      <a class="home-link" href="../index.html" aria-label="Back to SIYAYO Academy">🦁</a>
+      <div>
+        <p class="eyebrow">SIYAYO ACADEMY</p>
+        <h1>Piano SIYAYO Stage</h1>
+        <p class="subtitle">Music • Language • Resonance</p>
+      </div>
+    </header>
+
+    <section class="avatar-stage" aria-label="Reserved stage for Pianinho Mágico">
+      <div class="avatar-reserve">
+        <span class="avatar-note">♪</span>
+        <span>Pianinho Mágico — reserved layer</span>
+      </div>
+    </section>
+
+    <section class="mode-panel" aria-label="Piano modes">
+      <button type="button" class="mode-button is-active" data-mode="sound">Sound</button>
+      <button type="button" class="mode-button" data-mode="solfege">Solfege</button>
+      <button type="button" class="mode-button" data-mode="en">EN</button>
+      <button type="button" class="mode-button" data-mode="es">ES</button>
+      <button type="button" class="mode-button" data-mode="pt">PT</button>
+      <button type="button" class="mode-button" data-mode="tripiano">Tripiano</button>
+    </section>
+
+    <section class="status-panel" aria-live="polite">
+      <span id="modeStatus">SOUND</span>
+      <strong id="noteStatus">Touch a key</strong>
+      <span id="wordStatus">DÓ → DÓ↑</span>
+    </section>
+
+    <section class="keyboard-shell" aria-label="Piano Plano SIYAYO">
+      <div class="keyboard-scroll">
+        <div class="keyboard" id="keyboard" role="group" aria-label="Diatonic piano keyboard"></div>
+      </div>
+    </section>
+
+    <footer class="stage-footer">
+      <span>v0.1 • Diatonic mapping</span>
+      <span>Animation layers reserved per key</span>
+    </footer>
+  </main>
+  <script src="./piano.js"></script>
+</body>
+</html>
