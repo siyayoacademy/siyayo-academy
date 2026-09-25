@@ -22,6 +22,13 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim pronomen, formado por pro (“em lugar de”) + nomen (“nome”). A origem do termo ajuda a entender sua função tradicional: representar, retomar ou apontar participantes e referentes no discurso."
+        },
+        "focusWords": {
+          "pt": [
+            "pronomen",
+            "pro",
+            "nomen"
+          ]
         }
       },
       {
@@ -30,6 +37,14 @@
         "title": "Definição",
         "content": {
           "pt": "Pronome é uma classe de palavras usada para representar, retomar ou apontar participantes e referentes no discurso. Pode expressar relações como pessoa, posse, demonstração, indefinição ou interrogação, conforme a língua e o contexto."
+        },
+        "focusWords": {
+          "pt": [
+            "Pronome",
+            "representar",
+            "retomar",
+            "apontar"
+          ]
         }
       },
       {
@@ -50,7 +65,16 @@
             "target": "dependency-focus",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "sujeito",
+            "objeto",
+            "complemento",
+            "posse",
+            "demonstração"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -154,7 +178,33 @@
             "target": "question-words",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "pessoa",
+            "número",
+            "caso",
+            "função",
+            "possessivas",
+            "demonstrativas"
+          ],
+          "es": [
+            "pessoa",
+            "número",
+            "gênero",
+            "função sintática",
+            "possessivos",
+            "demonstrativos"
+          ],
+          "pt": [
+            "pessoa",
+            "número",
+            "gênero",
+            "função sintática",
+            "possessivos",
+            "demonstrativos"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -191,7 +241,15 @@
                 "target": "after-dinner-conversation",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "participantes do discurso",
+                "pessoas gramaticais",
+                "sujeito",
+                "objeto"
+              ]
+            }
           },
           {
             "classification": {
@@ -223,7 +281,14 @@
                 "target": "dependency-focus",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Aponta",
+                "referente",
+                "determinante"
+              ]
+            }
           },
           {
             "classification": {
@@ -250,7 +315,14 @@
                 "target": "after-dinner-conversation",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "posse",
+                "pertencimento",
+                "associação"
+              ]
+            }
           }
         ]
       },
