@@ -341,3 +341,143 @@ h1 {
     transition-duration:.001ms !important;
   }
 }
+
+
+/* =========================================================
+   FRONDOSA DUET — shared musical event visualization
+   ========================================================= */
+.duet-stage {
+  position:relative;
+  min-height:250px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid rgba(215,179,90,.24);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(11,59,120,.48), transparent 42%),
+    linear-gradient(180deg, rgba(2,9,24,.7), rgba(2,9,24,.28));
+}
+
+.frondosa {
+  position:relative;
+  width:min(100%,520px);
+  height:230px;
+}
+
+.tree-crown {
+  position:absolute;
+  left:50%;
+  top:6px;
+  width:320px;
+  height:155px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(24,95,46,.33), rgba(4,35,23,.12) 65%, transparent 72%);
+}
+
+.tree-trunk {
+  position:absolute;
+  left:50%;
+  top:118px;
+  width:44px;
+  height:92px;
+  transform:translateX(-50%);
+  border-radius:50% 50% 16px 16px;
+  background:linear-gradient(90deg,#59361f,#8a5a32 52%,#4b2d1b);
+  box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+}
+
+.tree-ground {
+  position:absolute;
+  left:50%;
+  bottom:12px;
+  width:240px;
+  height:28px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at center,#7c3527,rgba(124,53,39,.15) 72%,transparent);
+}
+
+.branch {
+  position:absolute;
+  left:50%;
+  top:98px;
+  height:8px;
+  transform-origin:left center;
+  border-radius:999px;
+  background:linear-gradient(90deg,#6f4729,#8b6038);
+  z-index:1;
+}
+
+.branch-a { width:118px; transform:rotate(-26deg); }
+.branch-b { width:118px; transform:rotate(206deg); }
+.branch-c { width:92px; transform:rotate(-63deg); }
+
+.leaf {
+  position:absolute;
+  width:66px;
+  min-height:42px;
+  padding:4px 6px;
+  border:1px solid rgba(242,216,138,.22);
+  border-radius:70% 25% 70% 25%;
+  background:linear-gradient(145deg,#2f8a47,#105127);
+  color:white;
+  display:grid;
+  place-items:center;
+  z-index:3;
+  cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,.28);
+  transition:transform 180ms ease, filter 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.leaf span {
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:.68rem;
+  font-weight:700;
+  text-shadow:0 1px 3px rgba(0,0,0,.75);
+}
+
+.leaf-1 { left:24px;  top:72px;  transform:rotate(-20deg); }
+.leaf-2 { left:74px;  top:20px;  transform:rotate(12deg); }
+.leaf-3 { left:132px; top:57px;  transform:rotate(-8deg); }
+.leaf-4 { left:188px; top:14px;  transform:rotate(16deg); }
+.leaf-5 { left:238px; top:64px;  transform:rotate(22deg); }
+.leaf-6 { left:44px;  top:116px; transform:rotate(10deg); }
+.leaf-7 { left:132px; top:108px; transform:rotate(-16deg); }
+.leaf-8 { left:222px; top:112px; transform:rotate(12deg); }
+
+.leaf.is-resonating {
+  background:linear-gradient(145deg,#88b93c,#d7b35a);
+  filter:brightness(1.22);
+  box-shadow:0 0 12px rgba(242,216,138,.85),0 0 30px rgba(66,165,90,.55);
+  animation:leafBloom 620ms ease-out;
+}
+
+.frondosa.is-resonating .tree-trunk {
+  box-shadow:inset 0 0 10px rgba(0,0,0,.38),0 0 18px rgba(215,179,90,.33);
+}
+
+.duet-caption {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin:0;
+  text-align:center;
+  color:rgba(255,255,255,.62);
+  font-size:.76rem;
+}
+
+@keyframes leafBloom {
+  0% { transform:scale(.92) rotate(var(--leaf-rotation,0deg)); }
+  45% { transform:scale(1.16) rotate(var(--leaf-rotation,0deg)); }
+  100% { transform:scale(1) rotate(var(--leaf-rotation,0deg)); }
+}
+
+@media (max-width:600px) {
+  .duet-stage { min-height:220px; }
+  .frondosa { transform:scale(.88); transform-origin:center center; }
+}
