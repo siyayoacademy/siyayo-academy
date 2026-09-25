@@ -493,24 +493,42 @@
         "title": "Aplicação em Conversação",
         "items": [
           {
-            "en": "Hi! Welcome to the Nice Party. This is my friend Ana. Wow! Which cheese should we choose?",
-            "es": "¡Hola! Bienvenido a la Nice Party. Ella es mi amiga Ana. ¡Vaya! ¿Qué queso deberíamos elegir?",
-            "pt": "Olá! Bem-vindo à Nice Party. Esta é minha amiga Ana. Uau! Qual queijo devemos escolher?",
+            "en": "Hi! Welcome to the Nice Party. This is my friend Ana.\nWow! Which cheese should we choose?",
+            "es": "¡Hola! Bienvenido a la Nice Party. Ella es mi amiga Ana.\n¡Vaya! ¿Qué queso deberíamos elegir?",
+            "pt": "Olá! Bem-vindo à Nice Party. Esta é minha amiga Ana.\nUau! Qual queijo devemos escolher?",
             "targetWords": {
-              "en": "Hi",
-              "es": "Hola",
-              "pt": "Olá"
+              "en": [
+                "Hi",
+                "Wow"
+              ],
+              "es": [
+                "Hola",
+                "Vaya"
+              ],
+              "pt": [
+                "Olá",
+                "Uau"
+              ]
             },
             "intent": "GREETING_INTRODUCTION_REACTION_AND_CHOICE",
             "extension": {
-              "en": "Nice to meet you! Hmm... let's choose the fresh one. Oh, and don't forget the bread!",
-              "es": "¡Mucho gusto! Mmm... elijamos el fresco. Ah, ¡y no olvides el pan!",
-              "pt": "Prazer em conhecer você! Hum... vamos escolher o fresco. Ah, e não esqueça o pão!"
+              "en": "Nice to meet you! Hmm... let's choose the fresh one.\nOh, and don't forget the bread!",
+              "es": "¡Mucho gusto! Mmm... elijamos el fresco.\nAh, ¡y no olvides el pan!",
+              "pt": "Prazer em conhecer você! Hum... vamos escolher o fresco.\nAh, e não esqueça o pão!"
             },
             "extensionTargetWords": {
-              "en": "Hmm",
-              "es": "Mmm",
-              "pt": "Hum"
+              "en": [
+                "Hmm",
+                "Oh"
+              ],
+              "es": [
+                "Mmm",
+                "Ah"
+              ],
+              "pt": [
+                "Hum",
+                "Ah"
+              ]
             },
             "toroConnections": [
               {
@@ -543,7 +561,8 @@
                 "target": "shopping-for-dinner",
                 "status": "candidate"
               }
-            ]
+            ],
+            "intentLabel": "GREETING INTRODUCTION REACTION AND CHOICE"
           }
         ]
       }
