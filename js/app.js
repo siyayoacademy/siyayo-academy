@@ -282,6 +282,50 @@ function escapeHtml(text = "") {
    TARGET WORD FORMATTER
    ======================================== */
 
+function isStandaloneBoundaryCharacter(character = "") {
+  return !character || !/[\p{L}\p{N}_]/u.test(character);
+}
+
+function findStandaloneTargetIndex(
+  sentence = "",
+  targetWord = ""
+) {
+  const source = String(sentence);
+  const target = String(targetWord);
+
+  if (!target) {
+    return -1;
+  }
+
+  const sourceLower = source.toLocaleLowerCase();
+  const targetLower = target.toLocaleLowerCase();
+
+  let searchFrom = 0;
+
+  while (searchFrom <= source.length - target.length) {
+    const index = sourceLower.indexOf(targetLower, searchFrom);
+
+    if (index === -1) {
+      return -1;
+    }
+
+    const before = index > 0 ? source[index - 1] : "";
+    const afterIndex = index + target.length;
+    const after = afterIndex < source.length ? source[afterIndex] : "";
+
+    if (
+      isStandaloneBoundaryCharacter(before) &&
+      isStandaloneBoundaryCharacter(after)
+    ) {
+      return index;
+    }
+
+    searchFrom = index + 1;
+  }
+
+  return -1;
+}
+
 function formatTargetSentence(
   sentence = "",
   targetWord = ""
@@ -295,8 +339,9 @@ function formatTargetSentence(
   const target = String(targetWord);
 
   const index =
-    source.toLowerCase().indexOf(
-      target.toLowerCase()
+    findStandaloneTargetIndex(
+      source,
+      target
     );
 
   if (index === -1) {
@@ -826,19 +871,17 @@ function renderGrammarExample(example, language) {
 
     const targetPattern =
       new RegExp(
-        `(${escapedTargets.join("|")})`,
+        `(^|[^\\p{L}\\p{N}_])(${escapedTargets.join("|")})(?=$|[^\\p{L}\\p{N}_])`,
         "gu"
       );
 
     html =
-      sourceText
-        .split(targetPattern)
-        .map(part =>
-          targetSet.has(part)
-            ? `<span class="word-type-target">${escapeHtml(part)}</span>`
-            : escapeHtml(part)
-        )
-        .join("");
+      escapeHtml(sourceText).replace(
+        targetPattern,
+        (_match, prefix, target) =>
+          escapeHtml(prefix) +
+          `<span class="word-type-target">${escapeHtml(target)}</span>`
+      );
   }
 
   return `
