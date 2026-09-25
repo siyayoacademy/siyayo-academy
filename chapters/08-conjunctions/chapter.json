@@ -529,7 +529,10 @@
         "Evitar regras absolutas como 'because although é sempre impossível': combinações de subordinação podem existir em estruturas encaixadas; o A5 deve ensinar primeiro uma relação por vez e deixar encaixamentos para a MASTER.",
         "Aproveitar erros de aprendiz como evidência de relação lógica pretendida antes de corrigir ordem, sujeito, verbo, tempo ou modo.",
         "Usar BECAUSE / BECAUSE OF / DUE TO como contraste de arquitetura causal: mesma relação semântica geral, categorias e estruturas diferentes.",
-        "Classificar DUE TO e BECAUSE OF como expressões prepositivas causais no modelo introdutório da SIYAYO, preservando BECAUSE como conjunção que introduz oração."
+        "Classificar DUE TO e BECAUSE OF como expressões prepositivas causais no modelo introdutório da SIYAYO, preservando BECAUSE como conjunção que introduz oração.",
+        "Fechar o A5 como resumo canônico de 10 slides; exemplos adicionais e achados ricos ficam preservados para uma camada suplementar posterior.",
+        "Tratar exemplos descobertos durante o percurso do Jaguar como sementes reutilizáveis: seu DNA semântico e estrutural pode alimentar Master, Experiences, microdesafios ou módulos extras.",
+        "A existência de um módulo extra de Question Words serve como precedente arquitetural para futuros módulos de exemplos sem obrigar cada Chapter A5 a crescer indefinidamente."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -754,6 +757,19 @@
         ],
         "principle": "The same causal meaning can be realized by different grammatical architectures; semantic similarity does not imply identical word class.",
         "rule": "Keep BECAUSE in the conjunction system and use BECAUSE OF / DUE TO as bridges back to PREPOSITION rather than reclassifying them as conjunctions."
+      },
+      "futureExpansionScope": {
+        "role": "supplemental-example-layer",
+        "status": "reserved-for-later",
+        "principle": "Keep the A5 Chapter concise and canonical. Preserve richer examples, contrasts and discoveries as reusable 'golden seeds' whose DNA can later feed supplemental practice, Master depth, Experiences, archetypes and dedicated extra modules.",
+        "possibleFormats": [
+          "extra example banks by conjunction relation",
+          "Question-Word-style supplemental chapters or modules",
+          "contrast-review microchallenges",
+          "travel, dinner, college and daily-life contextual sets",
+          "Toro-linked examples that reuse existing skills and archetypes"
+        ],
+        "rule": "Do not overload the 10-slide A5 summary. Expansion must reuse canonical relations and preserve category boundaries established in the Chapter."
       }
     }
   },
