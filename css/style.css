@@ -2191,3 +2191,20 @@ transform:
 .chapter-10.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   QUESTION WORDS EXTRA · VISUAL HOMOLOGATION
+   ========================================================= */
+
+.chapter-11 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-11.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-11.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
