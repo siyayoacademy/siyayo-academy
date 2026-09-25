@@ -777,7 +777,7 @@ function buildSlides(chapterData) {
               sectionId: section.id,
               itemIndex,
               title: item.intent
-                ? `${section.title} · ${item.intentLabel ?? item.intent.replaceAll("_", " ")}`
+                ? `${section.title}\n· ${item.intentLabel ?? item.intent.replaceAll("_", " ")}`
                 : section.title,
 
               lines:
@@ -1177,7 +1177,7 @@ function renderSlideContent(slide) {
         >
 
           <h2 class="section-title">
-            ${escapeHtml(
+            ${escapeHtmlWithLineBreaks(
               slide.title ?? ""
             )}
           </h2>
