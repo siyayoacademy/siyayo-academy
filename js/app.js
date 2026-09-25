@@ -900,7 +900,7 @@ function renderCompactTrilingualExamples(content = {}) {
     .map(line => ({ ...line, label: "" }));
   if (lines.length === 0) return "";
   return `
-    <div class="slide-related-content">
+    <div class="slide-related-content related-example-group">
       ${renderLanguageLines(lines)}
     </div>
   `;
