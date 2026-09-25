@@ -22,6 +22,12 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim nomen substantivum, expressão tradicionalmente associada ao nome que designa aquilo que possui existência ou identidade própria. Relaciona-se à família de substantia, origem de “substância”."
+        },
+        "focusWords": {
+          "pt": [
+            "nomen substantivum",
+            "substantia"
+          ]
         }
       },
       {
@@ -30,6 +36,13 @@
         "title": "Definição",
         "content": {
           "pt": "Substantivo é a classe de palavras que nomeia ou identifica seres, pessoas, animais, objetos, lugares, ideias, sentimentos, estados, qualidades, eventos e fenômenos, reais ou imaginários."
+        },
+        "focusWords": {
+          "pt": [
+            "Substantivo",
+            "nomeia",
+            "identifica"
+          ]
         }
       },
       {
@@ -45,7 +58,15 @@
             "target": "dependency-focus",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "núcleo",
+            "sujeito",
+            "objeto",
+            "complemento"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -144,7 +165,26 @@
             "target": "noun-morphology",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "número",
+            "singular",
+            "plural",
+            "gênero gramatical"
+          ],
+          "es": [
+            "gênero gramatical",
+            "número",
+            "concordância"
+          ],
+          "pt": [
+            "gênero gramatical",
+            "número",
+            "aumentativos",
+            "diminutivos"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -206,7 +246,15 @@
                 "target": "locate-conversation",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "seres",
+                "objetos",
+                "lugares",
+                "entidades"
+              ]
+            }
           },
           {
             "classification": {
@@ -266,7 +314,16 @@
                 "target": "verb-dna",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "ideias",
+                "sentimentos",
+                "qualidades",
+                "estados",
+                "conceitos"
+              ]
+            }
           },
           {
             "classification": {
@@ -376,7 +433,14 @@
                 "target": "noun-helpers",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "individualmente",
+                "entidade particular",
+                "classe"
+              ]
+            }
           }
         ]
       },
