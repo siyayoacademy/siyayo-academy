@@ -101,9 +101,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, cardinal e ordinal são as formas numéricas centrais: one, two, three; first, second, third. O sistema não marca gênero gramatical nos numerais cardinais, mas apresenta formas e grafias próprias em ordinais e números compostos.",
-          "es": "Em espanhol, os numerais podem apresentar variação em contextos específicos: uno / una, primero / primera, doscientos / doscientas. A forma depende da relação numérica e, em alguns casos, do substantivo que acompanha.",
-          "pt": "Em português, também existem variações em formas específicas: um / uma, dois / duas, primeiro / primeira, duzentos / duzentas. Quantidade e ordem se realizam de forma diferente e devem ser observadas no contexto."
+          "en": "Em inglês, cardinal e ordinal são as formas numéricas centrais: one, two, three; first, second, third. O sistema não marca gênero gramatical nos numerais cardinais, mas apresenta formas e grafias próprias em ordinais e números compostos. Também é útil reconhecer palavras que relacionam números em operações e medidas: plus, minus, times, divided by, equals, point, percent, dollars e cents.",
+          "es": "Em espanhol, os numerais podem apresentar variação em contextos específicos: uno / una, primero / primera, doscientos / doscientas. A forma depende da relação numérica e, em alguns casos, do substantivo que acompanha. También es útil reconocer palabras que relacionan números en operaciones y medidas: más, menos, por, dividido entre, igual a, coma o punto decimal, por ciento, dólares y centavos.",
+          "pt": "Em português, também existem variações em formas específicas: um / uma, dois / duas, primeiro / primeira, duzentos / duzentas. Quantidade e ordem se realizam de forma diferente e devem ser observadas no contexto. Também é útil reconhecer palavras que relacionam números em operações e medidas: mais, menos, vezes, dividido por, igual a, ponto ou vírgula decimal, por cento, dólares e centavos."
         },
         "focusWords": {
           "en": [
@@ -112,7 +112,16 @@
             "three",
             "first",
             "second",
-            "third"
+            "third",
+            "plus",
+            "minus",
+            "times",
+            "divided by",
+            "equals",
+            "point",
+            "percent",
+            "dollars",
+            "cents"
           ],
           "es": [
             "uno",
@@ -120,7 +129,17 @@
             "primero",
             "primera",
             "doscientos",
-            "doscientas"
+            "doscientas",
+            "más",
+            "menos",
+            "por",
+            "dividido entre",
+            "igual a",
+            "coma",
+            "punto decimal",
+            "por ciento",
+            "dólares",
+            "centavos"
           ],
           "pt": [
             "um",
@@ -130,7 +149,17 @@
             "primeiro",
             "primeira",
             "duzentos",
-            "duzentas"
+            "duzentas",
+            "mais",
+            "menos",
+            "vezes",
+            "dividido por",
+            "igual a",
+            "ponto",
+            "vírgula decimal",
+            "por cento",
+            "dólares",
+            "centavos"
           ]
         },
         "examples": {
@@ -158,6 +187,46 @@
               "targets": [
                 "half"
               ]
+            },
+            {
+              "text": "1 + 2 = 3 → one plus two equals three.",
+              "targets": [
+                "plus",
+                "equals"
+              ]
+            },
+            {
+              "text": "2026 − 20 → two thousand twenty-six minus twenty.",
+              "targets": [
+                "minus"
+              ]
+            },
+            {
+              "text": "3 × 4 = 12 → three times four equals twelve.",
+              "targets": [
+                "times",
+                "equals"
+              ]
+            },
+            {
+              "text": "20 ÷ 4 = 5 → twenty divided by four equals five.",
+              "targets": [
+                "divided by",
+                "equals"
+              ]
+            },
+            {
+              "text": "0.010 → zero point zero one zero.",
+              "targets": [
+                "point"
+              ]
+            },
+            {
+              "text": "$10.25 → ten dollars and twenty-five cents.",
+              "targets": [
+                "dollars",
+                "cents"
+              ]
             }
           ],
           "es": [
@@ -184,6 +253,46 @@
               "targets": [
                 "mitad"
               ]
+            },
+            {
+              "text": "1 + 2 = 3 → uno más dos es igual a tres.",
+              "targets": [
+                "más",
+                "igual a"
+              ]
+            },
+            {
+              "text": "2026 − 20 → dos mil veintiséis menos veinte.",
+              "targets": [
+                "menos"
+              ]
+            },
+            {
+              "text": "3 × 4 = 12 → tres por cuatro es igual a doce.",
+              "targets": [
+                "por",
+                "igual a"
+              ]
+            },
+            {
+              "text": "20 ÷ 4 = 5 → veinte dividido entre cuatro es igual a cinco.",
+              "targets": [
+                "dividido entre",
+                "igual a"
+              ]
+            },
+            {
+              "text": "0,010 → cero coma cero uno cero.",
+              "targets": [
+                "coma"
+              ]
+            },
+            {
+              "text": "US$ 10,25 → diez dólares con veinticinco centavos.",
+              "targets": [
+                "dólares",
+                "centavos"
+              ]
             }
           ],
           "pt": [
@@ -209,6 +318,46 @@
               "text": "Comi metade do bolo.",
               "targets": [
                 "metade"
+              ]
+            },
+            {
+              "text": "1 + 2 = 3 → um mais dois é igual a três.",
+              "targets": [
+                "mais",
+                "igual a"
+              ]
+            },
+            {
+              "text": "2026 − 20 → dois mil e vinte e seis menos vinte.",
+              "targets": [
+                "menos"
+              ]
+            },
+            {
+              "text": "3 × 4 = 12 → três vezes quatro é igual a doze.",
+              "targets": [
+                "vezes",
+                "igual a"
+              ]
+            },
+            {
+              "text": "20 ÷ 4 = 5 → vinte dividido por quatro é igual a cinco.",
+              "targets": [
+                "dividido por",
+                "igual a"
+              ]
+            },
+            {
+              "text": "0,010 → zero vírgula zero um zero.",
+              "targets": [
+                "vírgula"
+              ]
+            },
+            {
+              "text": "US$ 10,25 → dez dólares e vinte e cinco centavos.",
+              "targets": [
+                "dólares",
+                "centavos"
               ]
             }
           ]
@@ -572,7 +721,11 @@
         "Não forçar que toda realização numérica pertença à mesma classe lexical em todas as gramáticas; formas como double, half e dozen podem assumir categorias diferentes conforme língua e contexto.",
         "Conectar numerais com HOW MANY / HOW MUCH sem confundir numeral com Question Word.",
         "Usar datas, horários, restaurante, receita, compras e posições como contextos naturais para numerais.",
-        "Recuperar da apostila MASTER listas cardinais/ordinais, datas e telling time como sementes para expansão futura, sem sobrecarregar os 10 slides."
+        "Recuperar da apostila MASTER listas cardinais/ordinais, datas e telling time como sementes para expansão futura, sem sobrecarregar os 10 slides.",
+        "Apresentar palavras-operadoras como PLUS, MINUS, TIMES, DIVIDED BY e EQUALS como chaves relacionais dos numerais, sem reclassificá-las como numerais.",
+        "Distinguir leitura decimal de leitura monetária: 10.25 pode ser ten point two five, enquanto $10.25 é naturalmente ten dollars and twenty-five cents.",
+        "Chamar atenção para convenções de ponto e vírgula em EN/ES/PT, pois a escrita numérica muda entre contextos linguísticos e culturais.",
+        "Preservar operações, decimals, percentages, currency and measurement como uma camada expansiva futura do universo NUMBERS IN ACTION."
       ],
       "masterSourceReview": {
         "role": "legacy-master-cross-reference",
@@ -692,6 +845,95 @@
           "10 integrated quantity-order-fraction conversation"
         ],
         "rule": "Move from the general numerical relation to five representative functions and finish in a familiar social Experience."
+      },
+      "numbersInAction": {
+        "role": "numerical-relation-language-bridge",
+        "principle": "Numerals become especially useful when learners can hear and say the words that connect them in calculations, prices, decimals, percentages and measurements.",
+        "keys": [
+          {
+            "symbol": "+",
+            "en": "plus",
+            "es": "más",
+            "pt": "mais"
+          },
+          {
+            "symbol": "−",
+            "en": "minus",
+            "es": "menos",
+            "pt": "menos"
+          },
+          {
+            "symbol": "×",
+            "en": "times / multiplied by",
+            "es": "por / multiplicado por",
+            "pt": "vezes / multiplicado por"
+          },
+          {
+            "symbol": "÷",
+            "en": "divided by",
+            "es": "dividido entre / por",
+            "pt": "dividido por"
+          },
+          {
+            "symbol": "=",
+            "en": "equals / is",
+            "es": "igual a / es",
+            "pt": "igual a / é"
+          },
+          {
+            "symbol": ".",
+            "en": "point",
+            "es": "punto decimal",
+            "pt": "ponto decimal"
+          },
+          {
+            "symbol": ",",
+            "en": "comma",
+            "es": "coma",
+            "pt": "vírgula"
+          },
+          {
+            "symbol": "%",
+            "en": "percent",
+            "es": "por ciento",
+            "pt": "por cento"
+          },
+          {
+            "symbol": "$",
+            "en": "dollar(s)",
+            "es": "dólar(es)",
+            "pt": "dólar(es)"
+          },
+          {
+            "symbol": "¢",
+            "en": "cent(s)",
+            "es": "centavo(s)",
+            "pt": "centavo(s)"
+          }
+        ],
+        "contrastExamples": [
+          {
+            "written": "10.25",
+            "en": "ten point two five",
+            "meaning": "decimal-number-reading"
+          },
+          {
+            "written": "$10.25",
+            "en": "ten dollars and twenty-five cents",
+            "meaning": "money-reading"
+          },
+          {
+            "written": "1,000",
+            "en": "one thousand",
+            "note": "In common English notation, comma separates thousands."
+          },
+          {
+            "written": "0.010",
+            "en": "zero point zero one zero",
+            "note": "Trailing zero may be relevant when precision or representation matters."
+          }
+        ],
+        "rule": "PLUS, MINUS, TIMES, DIVIDED BY, EQUALS, POINT, PERCENT and currency words are not numerals themselves; they are relational and measurement language that lets numerals operate in real contexts."
       }
     }
   },
