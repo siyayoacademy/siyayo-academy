@@ -22,6 +22,15 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim articulus, diminutivo de artus, com a ideia de “pequena articulação” ou “parte que liga”. Na gramática, o artigo acompanha o substantivo e ajuda a indicar como o referente é apresentado no discurso."
+        },
+        "focusWords": {
+          "pt": [
+            "articulus",
+            "pequena articulação",
+            "artigo",
+            "substantivo",
+            "referente"
+          ]
         }
       },
       {
@@ -30,6 +39,15 @@
         "title": "Definição",
         "content": {
           "pt": "Artigo é uma palavra que acompanha um substantivo e contribui para indicar referência definida ou indefinida. Na SIYAYO ACADEMY, o foco inicial é observar como inglês, espanhol e português apresentam um referente como conhecido/específico, não identificado ou genérico."
+        },
+        "focusWords": {
+          "pt": [
+            "Artigo",
+            "substantivo",
+            "referência definida",
+            "indefinida",
+            "genérico"
+          ]
         }
       },
       {
@@ -60,7 +78,17 @@
             "target": "shopping-for-dinner",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "grupo nominal",
+            "substantivo",
+            "gênero",
+            "número",
+            "the",
+            "a/an"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -173,7 +201,33 @@
             "target": "nouns",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "the",
+            "referência definida",
+            "A/an",
+            "referência indefinida",
+            "som inicial",
+            "artigo zero"
+          ],
+          "es": [
+            "gênero",
+            "número",
+            "el/la/los/las",
+            "un/una/unos/unas",
+            "referência genérica",
+            "artigo definido"
+          ],
+          "pt": [
+            "gênero",
+            "número",
+            "o/a/os/as",
+            "um/uma/uns/umas",
+            "referência genérica",
+            "artigo"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -217,7 +271,14 @@
                 "target": "nouns",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "identificável",
+                "contexto discursivo",
+                "conhecimento compartilhado"
+              ]
+            }
           },
           {
             "classification": {
@@ -256,7 +317,15 @@
                 "target": "nouns",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "referente",
+                "identificar",
+                "a/an",
+                "indefinidas plurais"
+              ]
+            }
           },
           {
             "classification": {
@@ -305,7 +374,17 @@
                 "target": "adjectives",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "concordância",
+                "gênero",
+                "número",
+                "the",
+                "a/an",
+                "som inicial"
+              ]
+            }
           },
           {
             "classification": {
@@ -349,7 +428,15 @@
                 "target": "words",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "referência genérica",
+                "artigo zero",
+                "artigo definido",
+                "sem artigo"
+              ]
+            }
           },
           {
             "classification": {
@@ -418,7 +505,17 @@
                 "target": "travel",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "ARTICLE",
+                "determiner",
+                "determinante",
+                "forma",
+                "função",
+                "tradição gramatical"
+              ]
+            }
           }
         ]
       },
