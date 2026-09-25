@@ -2149,3 +2149,28 @@ transform:
 .chapter-9.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   GOLDEN SEMANTIC ANCHORS
+   Canonical focus words across definitions, origins and grammar
+   ========================================================= */
+
+.golden-semantic-anchor {
+  display: inline-block;
+  padding-inline: 0.08em;
+  color: var(--siyayo-gold-light);
+  font-weight: 800;
+  font-style: italic;
+  text-shadow:
+    0 0 8px rgba(242, 216, 138, 0.34),
+    0 0 14px rgba(242, 216, 138, 0.10);
+}
+
+@media (max-width: 600px) {
+  .golden-semantic-anchor {
+    padding-inline: 0.04em;
+    text-shadow:
+      0 0 6px rgba(242, 216, 138, 0.30);
+  }
+}
