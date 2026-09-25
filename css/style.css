@@ -2208,3 +2208,68 @@ transform:
 .chapter-11.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   GLOBAL HOMOLOGATION PASS 1 · TYPOGRAPHY AND EXAMPLE RHYTHM
+   ========================================================= */
+
+/* Each related example is one semantic unit rendered in EN / ES / PT.
+   Preserve proximity inside the trio and add breathing room between trios. */
+.related-example-group {
+  margin-top: clamp(14px, 2.2vh, 22px);
+}
+
+.related-example-group + .related-example-group {
+  margin-top: clamp(22px, 3.3vh, 34px);
+}
+
+/* A subtle divider marks the next trilingual semantic unit without adding noise. */
+.related-example-group + .related-example-group::before {
+  content: "";
+  display: block;
+  width: min(32%, 120px);
+  height: 1px;
+  margin: 0 auto clamp(12px, 1.8vh, 18px);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(242, 216, 138, 0.28),
+    transparent
+  );
+}
+
+/* Global subtitle hierarchy: present, elegant, never louder than the chapter title. */
+.section-title,
+.current-grammar .section-title {
+  font-size: clamp(0.98rem, 3.35vw, 1.34rem);
+  line-height: 1.18;
+  letter-spacing: 0.025em;
+  text-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.72),
+    0 0 5px rgba(242, 216, 138, 0.08);
+}
+
+/* Long semantic-family titles (notably Question Words slide 9) need extra restraint. */
+.chapter-11 .section-title {
+  font-size: clamp(0.90rem, 3.0vw, 1.20rem);
+  line-height: 1.16;
+}
+
+/* Golden anchors stay luminous, but the global pass removes the 'cheguei!' halo. */
+.golden-semantic-anchor {
+  text-shadow:
+    0 0 6px rgba(242, 216, 138, 0.26),
+    0 0 10px rgba(242, 216, 138, 0.07);
+}
+
+@media (min-width: 601px) {
+  .section-title,
+  .current-grammar .section-title {
+    font-size: 1.22rem;
+  }
+
+  .chapter-11 .section-title {
+    font-size: 1.10rem;
+  }
+}
