@@ -246,7 +246,7 @@
               "pt": "para"
             },
             "definition": {
-              "pt": "Expressa origem, destino, percurso ou direção associados ao movimento: to/from, a/de, para/de e outras construções. A preposição organiza a relação espacial; o verbo lexical continua carregando o evento de MOVEMENT."
+              "pt": "Expressa origem, destino, percurso ou direção associados ao movimento: to/from, a/de, para/de e outras construções. A preposição organiza a relação espacial; o verbo lexical continua carregando o evento de MOVEMENT. Na SIYAYO ACADEMY, esse contraste é importante para que o aluno reconheça o que cada palavra está fazendo na sentença."
             },
             "relatedExamples": [
               {
@@ -269,6 +269,16 @@
               {
                 "concept": "where / where to",
                 "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "functional awareness",
+                "target": "xespirito",
+                "status": "candidate"
+              },
+              {
+                "concept": "progressive exploration",
+                "target": "jaguar",
                 "status": "candidate"
               },
               {
@@ -403,7 +413,7 @@
               "pt": "em"
             },
             "definition": {
-              "pt": "Muitas escolhas preposicionais fazem parte de combinações lexicais recorrentes com verbos, substantivos ou adjetivos. Por isso, aprender apenas equivalências isoladas como in = em ou for = para é insuficiente; a combinação inteira precisa ser observada no contexto."
+              "pt": "Muitas escolhas preposicionais fazem parte de combinações lexicais recorrentes com verbos, substantivos ou adjetivos. Por isso, aprender apenas equivalências isoladas como in = em ou for = para é insuficiente; a combinação inteira precisa ser observada no contexto. Essas combinações são um bom ponto para a Mente Pensante comparar forma, função e contexto antes de qualquer avaliação."
             },
             "relatedExamples": [
               {
@@ -441,6 +451,16 @@
               {
                 "concept": "cross-language non-equivalence",
                 "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "functional-awareness diagnosis",
+                "target": "xespirito",
+                "status": "candidate"
+              },
+              {
+                "concept": "small validated exploration",
+                "target": "jaguar",
                 "status": "candidate"
               }
             ]
@@ -494,6 +514,16 @@
                 "status": "candidate"
               },
               {
+                "concept": "functional-awareness",
+                "target": "xespirito",
+                "status": "candidate"
+              },
+              {
+                "concept": "progressive learning step",
+                "target": "jaguar",
+                "status": "candidate"
+              },
+              {
                 "concept": "travel context",
                 "target": "travel",
                 "status": "candidate"
@@ -512,7 +542,10 @@
         "Distinguir preposição de advérbio: ambos podem expressar lugar ou tempo, mas sua função estrutural e seu comportamento são diferentes.",
         "Reconhecer que espanhol e português apresentam contrações frequentes entre preposição e artigo; aprofundar paradigmas completos na MASTER.",
         "Tratar verb + preposition, noun + preposition e adjective + preposition como combinações lexicais relevantes, evitando equivalência mecânica EN-ES-PT.",
-        "Reservar phrasal verbs, regência avançada, contrações completas, locuções prepositivas, idiomatismos e variação regional para a MASTER."
+        "Reservar phrasal verbs, regência avançada, contrações completas, locuções prepositivas, idiomatismos e variação regional para a MASTER.",
+        "Usar Jaguar como guia de exploração progressiva e Xespirito como apoio de consciência funcional apenas onde suas funções canônicas realmente ajudam; não transformar arquétipos em novas classes gramaticais.",
+        "A Mente Pensante pode revelar relações preposicionais por WHERE, WHEN e HOW antes da nomenclatura explícita, aproveitando perguntas já presentes nas Experiences.",
+        "Não conceder Green Pass contratual a PREPOSITION enquanto não existir uma skill canônica de preposição com Pass Contract explícito; até lá, exemplos e interações são aprendizagem/observação, não autoridade de domínio."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -553,6 +586,32 @@
               "circumstances.time",
               "travel-like movement",
               "WHERE questions"
+            ]
+          },
+          {
+            "id": "jaguar-archetype",
+            "path": "data/archetypes/jaguar.json",
+            "contributes": [
+              "exploration",
+              "progression",
+              "small validated steps"
+            ]
+          },
+          {
+            "id": "xespirito-archetype",
+            "path": "data/archetypes/xespirito.json",
+            "contributes": [
+              "functional awareness",
+              "sentence diagnosis",
+              "recognizing what each word is doing"
+            ]
+          },
+          {
+            "id": "green-pass-authority",
+            "path": "data/learning/green-pass-authority.json",
+            "contributes": [
+              "contract authority boundary",
+              "skill adoption rule"
             ]
           }
         ],
@@ -618,6 +677,35 @@
           "10 integrated travel conversation"
         ],
         "rule": "The Chapter moves from relational structure to spatial, directional, temporal and abstract relations before showing lexical combinations and contextual integration."
+      },
+      "archetypeAndSkillIntegration": {
+        "role": "toroidal-pedagogical-orchestration",
+        "archetypes": [
+          {
+            "id": "jaguar",
+            "source": "data/archetypes/jaguar.json",
+            "use": "guide exploration through small validated contrasts such as static place versus movement/direction and EN-ES-PT preposition choices",
+            "boundary": "Jaguar guides progression; it does not define grammatical correctness by itself."
+          },
+          {
+            "id": "xespirito",
+            "source": "data/archetypes/xespirito.json",
+            "use": "support functional awareness by asking what each element is doing in the sentence when prepositions interact with verbs, nouns, adjectives and complements",
+            "boundary": "Xespirito remains canonically centered on functional awareness and verb/sentence diagnosis; Chapter 7 uses that awareness as a candidate bridge, not as a new preposition authority."
+          }
+        ],
+        "thinkingMind": {
+          "use": "Reuse WHERE, WHEN and HOW questions from existing Experiences to expose place, time and relational meaning before naming the grammar.",
+          "principle": "Question first when context makes the relation observable; terminology can follow the learner's recognition."
+        },
+        "skills": {
+          "existingCanonical": [
+            "which.use.determiner"
+          ],
+          "prepositionSkillStatus": "not-yet-canonical",
+          "assessmentRule": "Do not assign Green Pass contract authority to preposition knowledge until an explicit canonical preposition skill and Pass Contract exist."
+        },
+        "principle": "Toro integration connects archetypes, Question Words, Experiences and canonical sources without allowing one pedagogical layer to impersonate another."
       }
     }
   },
