@@ -582,10 +582,81 @@
         "title": "Aplicação em Conversação",
         "items": [
           {
-            "en": "Hi! Welcome to the Nice Party.\nAna is from Brazil. Brazil's flag has twenty-seven stars.\nKen is from Japan. Japan's flag has two main colors.\nWhich flag has more stars?",
-            "es": "¡Hola! Bienvenido a la Nice Party.\nAna es de Brasil. La bandera de Brasil tiene veintisiete estrellas.\nKen es de Japón. La bandera de Japón tiene dos colores principales.\n¿Qué bandera tiene más estrellas?",
-            "pt": "Olá! Bem-vindo à Nice Party.\nAna é do Brasil. A bandeira do Brasil tem vinte e sete estrelas.\nKen é do Japão. A bandeira do Japão tem duas cores principais.\nQual bandeira tem mais estrelas?",
+            "en": "Hi! Table for two, please.\nIt is our second visit, and we would like half a portion of the starter.",
+            "es": "¡Hola! Mesa para dos, por favor.\nEs nuestra segunda visita y queremos media porción de la entrada.",
+            "pt": "Olá! Mesa para dois, por favor.\nÉ nossa segunda visita e queremos meia porção da entrada.",
             "targetWords": {
+              "en": [
+                "two",
+                "second",
+                "half"
+              ],
+              "es": [
+                "dos",
+                "segunda",
+                "media"
+              ],
+              "pt": [
+                "dois",
+                "segunda",
+                "meia"
+              ]
+            },
+            "intent": "QUANTITY ORDER FRACTION AND WORLD NUMBERS",
+            "intentLabel": "QUANTITY ORDER FRACTION AND WORLD NUMBERS",
+            "toroConnections": [
+              {
+                "concept": "greeting",
+                "target": "interjections",
+                "status": "candidate"
+              },
+              {
+                "concept": "cardinal quantity",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "ordinal sequence",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "fraction",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "country introduction",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "colors",
+                "target": "adjectives",
+                "status": "candidate"
+              },
+              {
+                "concept": "which / comparison",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "and / addition",
+                "target": "conjunctions",
+                "status": "candidate"
+              },
+              {
+                "concept": "Nice Party international guests",
+                "target": "experience",
+                "status": "candidate"
+              }
+            ],
+            "extension": {
+              "en": "Hi! Welcome to the Nice Party.\nAna is from Brazil. Brazil's flag has twenty-seven stars.\nKen is from Japan. Japan's flag has two main colors.\nWhich flag has more stars?",
+              "es": "¡Hola! Bienvenido a la Nice Party.\nAna es de Brasil. La bandera de Brasil tiene veintisiete estrellas.\nKen es de Japón. La bandera de Japón tiene dos colores principales.\n¿Qué bandera tiene más estrellas?",
+              "pt": "Olá! Bem-vindo à Nice Party.\nAna é do Brasil. A bandeira do Brasil tem vinte e sete estrelas.\nKen é do Japão. A bandeira do Japão tem duas cores principais.\nQual bandeira tem mais estrelas?"
+            },
+            "extensionTargetWords": {
               "en": [
                 "twenty-seven",
                 "two",
@@ -601,41 +672,7 @@
                 "duas",
                 "mais"
               ]
-            },
-            "intent": "INTERNATIONAL NUMBERS SCENE",
-            "intentLabel": "INTERNATIONAL NUMBERS SCENE",
-            "toroConnections": [
-              {
-                "concept": "greeting",
-                "target": "interjections",
-                "status": "candidate"
-              },
-              {
-                "concept": "country introduction",
-                "target": "pronouns",
-                "status": "candidate"
-              },
-              {
-                "concept": "cardinal numbers",
-                "target": "numerals",
-                "status": "candidate"
-              },
-              {
-                "concept": "colors",
-                "target": "adjectives",
-                "status": "candidate"
-              },
-              {
-                "concept": "which / comparison",
-                "target": "question-words",
-                "status": "candidate"
-              },
-              {
-                "concept": "Nice Party international guests",
-                "target": "experience",
-                "status": "candidate"
-              }
-            ]
+            }
           }
         ]
       }
