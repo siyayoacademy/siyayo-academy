@@ -278,6 +278,11 @@ function escapeHtml(text = "") {
 }
 
 
+function escapeHtmlWithLineBreaks(text = "") {
+  return escapeHtml(text).replaceAll("\n", "<br>");
+}
+
+
 /* ========================================
    TARGET WORD FORMATTER
    ======================================== */
@@ -404,43 +409,73 @@ function formatTargetSentence(
   sentence = "",
   targetWord = ""
 ) {
-
-  if (!targetWord) {
-    return escapeHtml(sentence);
-  }
-
   const source = String(sentence);
-  const target = String(targetWord);
+  const targets = Array.isArray(targetWord)
+    ? targetWord.map(item => String(item)).filter(Boolean)
+    : targetWord
+      ? [String(targetWord)]
+      : [];
 
-  const index =
-    findStandaloneTargetIndex(
-      source,
-      target
-    );
-
-  if (index === -1) {
-    return escapeHtml(source);
+  if (!targets.length) {
+    return escapeHtmlWithLineBreaks(source);
   }
 
-  const before =
-    source.slice(0, index);
+  const matches = [];
 
-  const match =
-    source.slice(
-      index,
-      index + target.length
+  targets.forEach(target => {
+    let searchFrom = 0;
+
+    while (searchFrom <= source.length - target.length) {
+      const relativeIndex = findStandaloneTargetIndex(
+        source.slice(searchFrom),
+        target
+      );
+
+      if (relativeIndex === -1) {
+        break;
+      }
+
+      const index = searchFrom + relativeIndex;
+      matches.push({ index, target });
+      searchFrom = index + target.length;
+    }
+  });
+
+  if (!matches.length) {
+    return escapeHtmlWithLineBreaks(source);
+  }
+
+  matches.sort((left, right) =>
+    left.index - right.index || right.target.length - left.target.length
+  );
+
+  let cursor = 0;
+  let html = "";
+
+  for (const matchInfo of matches) {
+    if (matchInfo.index < cursor) {
+      continue;
+    }
+
+    html += escapeHtmlWithLineBreaks(
+      source.slice(cursor, matchInfo.index)
     );
 
-  const after =
-    source.slice(
-      index + target.length
-    );
+    html += '<strong><em class="target-word">'
+      + escapeHtml(
+          source.slice(
+            matchInfo.index,
+            matchInfo.index + matchInfo.target.length
+          )
+        )
+      + '</em></strong>';
 
-  return escapeHtml(before)
-    + '<strong><em class="target-word">'
-    + escapeHtml(match)
-    + '</em></strong>'
-    + escapeHtml(after);
+    cursor = matchInfo.index + matchInfo.target.length;
+  }
+
+  html += escapeHtmlWithLineBreaks(source.slice(cursor));
+
+  return html;
 }
 
 function formatSemanticSurfaceSentence(
@@ -742,7 +777,7 @@ function buildSlides(chapterData) {
               sectionId: section.id,
               itemIndex,
               title: item.intent
-                ? `${section.title} · ${item.intent}`
+                ? `${section.title} · ${item.intentLabel ?? item.intent.replaceAll("_", " ")}`
                 : section.title,
 
               lines:
