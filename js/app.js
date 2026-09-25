@@ -1291,6 +1291,58 @@ function renderChapterFloorControls() {
   `;
 }
 
+function renderNextChapterInvitation() {
+  const chapters = academyChapterEntries();
+  const nextChapter = chapters[currentChapterIndex + 1];
+
+  if (nextChapter) {
+    const titleEn = nextChapter.title?.en ?? "NEXT CHAPTER";
+    const titleEs = nextChapter.title?.es ?? "PRÓXIMO CAPÍTULO";
+    const titlePt = nextChapter.title?.pt ?? "PRÓXIMO CAPÍTULO";
+    const buttonLabel =
+      nextChapter.slug === "interrogative-words"
+        ? "QUESTION WORDS →"
+        : `${titleEn} →`;
+
+    return `
+      <aside class="next-chapter-invitation" aria-label="Continue to the next chapter">
+        <p><strong>EN</strong> Ready for the next discovery? Continue to ${escapeHtml(titleEn)}.</p>
+        <p><strong>ES</strong> ¿Listo para el próximo descubrimiento? Continúa con ${escapeHtml(titleEs)}.</p>
+        <p><strong>PT</strong> Pronto para a próxima descoberta? Continue para ${escapeHtml(titlePt)}.</p>
+        <button type="button" class="next-chapter-invitation-button" data-next-chapter-invitation="next">
+          ${escapeHtml(buttonLabel)}
+        </button>
+      </aside>
+    `;
+  }
+
+  return `
+    <aside class="next-chapter-invitation next-chapter-invitation-complete" aria-label="Learning path completed">
+      <p><strong>EN</strong> You completed this path. Explore the Academy again.</p>
+      <p><strong>ES</strong> Completaste este recorrido. Explora nuevamente la Academy.</p>
+      <p><strong>PT</strong> Você completou este percurso. Explore novamente a Academy.</p>
+      <button type="button" class="next-chapter-invitation-button" data-next-chapter-invitation="tree">
+        RETURN TO WORD TREE ↑
+      </button>
+    </aside>
+  `;
+}
+
+function attachNextChapterInvitationEvents() {
+  const button = document.querySelector("[data-next-chapter-invitation]");
+  if (!button) return;
+
+  button.addEventListener("click", () => {
+    if (button.dataset.nextChapterInvitation === "next") {
+      openChapterAtIndex(currentChapterIndex + 1);
+      return;
+    }
+
+    openChapterAtIndex(0);
+  });
+}
+
+
 async function openChapterAtIndex(index, options = {}) {
   const chapters = academyChapterEntries();
   if (!chapters.length) return;
@@ -1453,6 +1505,7 @@ function renderCurrentSlide() {
 
       ${renderSlideContent(slide)}
 
+      ${isLast ? renderNextChapterInvitation() : ""}
 
       <footer class="chapter-footer">
 
@@ -1513,6 +1566,7 @@ function renderCurrentSlide() {
 
 
   attachSliderEvents();
+  attachNextChapterInvitationEvents();
   attachChapterFloorEvents();
 
 
