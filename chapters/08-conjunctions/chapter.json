@@ -1,0 +1,681 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 8,
+    "slug": "conjunctions",
+    "title": {
+      "en": "CONJUNCTION",
+      "es": "CONJUNCIÓN",
+      "pt": "CONJUNÇÃO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim coniunctio, de coniungere: “unir”, “ligar”, “juntar”. A origem do termo revela a ideia central: a conjunção conecta palavras, grupos ou orações e mostra que tipo de relação existe entre elas."
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Conjunção é a classe de palavras que conecta elementos e explicita relações como adição, contraste, alternativa, causa, resultado, condição ou concessão. Na SIYAYO ACADEMY, o foco inicial não é decorar listas: é perceber qual relação lógica a conexão cria."
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "A conjunção funciona como uma ponte lógica. Ela pode ligar palavras ou estruturas equivalentes, ou introduzir uma oração que depende semanticamente de outra. A Mente Pensante observa primeiro a relação entre as ideias: elas somam, contrastam, explicam, oferecem uma escolha, estabelecem uma condição ou admitem uma exceção?"
+        },
+        "toroConnections": [
+          {
+            "concept": "logical relation",
+            "target": "thinking-mind",
+            "status": "candidate"
+          },
+          {
+            "concept": "clause connection",
+            "target": "dependency-focus",
+            "status": "candidate"
+          },
+          {
+            "concept": "because / why",
+            "target": "question-words",
+            "status": "candidate"
+          },
+          {
+            "concept": "if / condition",
+            "target": "conditional",
+            "status": "candidate"
+          },
+          {
+            "concept": "sentence order",
+            "target": "sentence-order",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, conjunctions como and, but, or, because, if e although conectam elementos ou orações e expressam relações lógicas diferentes. A posição, a pontuação e a estrutura da oração dependente variam conforme a construção.",
+          "es": "Em espanhol, conjunciones como y, pero, o, porque, si e aunque conectam elementos e orações. Algumas subordinadas interagem com modo verbal e ordem da oração, especialmente em condição, finalidade, concessão e outras relações.",
+          "pt": "Em português, conjunções como e, mas, ou, porque, se e embora conectam elementos e orações. A relação lógica deve ser separada do tempo ou modo verbal que aparece na oração: a conjunção conecta; o verbo realiza sua própria gramática."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "I like coffee, but I don't drink it at night.",
+              "targets": [
+                "but"
+              ]
+            },
+            {
+              "text": "We can cook or order dinner.",
+              "targets": [
+                "or"
+              ]
+            },
+            {
+              "text": "We stayed home because it was raining.",
+              "targets": [
+                "because"
+              ]
+            },
+            {
+              "text": "If it is sunny tomorrow, we will go to the beach.",
+              "targets": [
+                "If"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Me gusta el café, pero no lo tomo por la noche.",
+              "targets": [
+                "pero"
+              ]
+            },
+            {
+              "text": "Podemos cocinar o pedir la cena.",
+              "targets": [
+                "o"
+              ]
+            },
+            {
+              "text": "Nos quedamos en casa porque estaba lloviendo.",
+              "targets": [
+                "porque"
+              ]
+            },
+            {
+              "text": "Si mañana hace sol, iremos a la playa.",
+              "targets": [
+                "Si"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Eu gosto de café, mas não o tomo à noite.",
+              "targets": [
+                "mas"
+              ]
+            },
+            {
+              "text": "Podemos cozinhar ou pedir o jantar.",
+              "targets": [
+                "ou"
+              ]
+            },
+            {
+              "text": "Ficamos em casa porque estava chovendo.",
+              "targets": [
+                "porque"
+              ]
+            },
+            {
+              "text": "Se amanhã fizer sol, iremos à praia.",
+              "targets": [
+                "Se"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "contrast",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "cause and why",
+            "target": "question-words",
+            "status": "candidate"
+          },
+          {
+            "concept": "condition",
+            "target": "conditional",
+            "status": "candidate"
+          },
+          {
+            "concept": "verb grammar remains separate",
+            "target": "verbs",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Relações Conjuntivas Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Addition",
+              "es": "Adición",
+              "pt": "Adição"
+            },
+            "sentences": {
+              "en": "We bought cheese and bread.",
+              "es": "Compramos queso y pan.",
+              "pt": "Compramos queijo e pão."
+            },
+            "targetWords": {
+              "en": "and",
+              "es": "y",
+              "pt": "e"
+            },
+            "definition": {
+              "pt": "Soma elementos ou ideias. A relação é aditiva: uma informação é acrescentada à outra sem que isso, por si só, indique causa, contraste ou condição."
+            },
+            "relatedExamples": [
+              {
+                "en": "She cooks and he sets the table.",
+                "es": "Ella cocina y él pone la mesa.",
+                "pt": "Ela cozinha e ele põe a mesa."
+              },
+              {
+                "en": "fresh and delicious",
+                "es": "fresco y delicioso",
+                "pt": "fresco e delicioso"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "coordination",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "noun/adjective coordination",
+                "target": "words",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Contrast & Concession",
+              "es": "Contraste y Concesión",
+              "pt": "Contraste e Concessão"
+            },
+            "sentences": {
+              "en": "I like coffee, but I don't drink it at night.",
+              "es": "Me gusta el café, pero no lo tomo por la noche.",
+              "pt": "Eu gosto de café, mas não o tomo à noite."
+            },
+            "targetWords": {
+              "en": "but",
+              "es": "pero",
+              "pt": "mas"
+            },
+            "definition": {
+              "pt": "Contraste coloca duas ideias em oposição ou tensão; concessão admite uma ideia que poderia levar a outra expectativa, mas não impede o resultado principal. BUT / PERO / MAS e ALTHOUGH / AUNQUE / EMBORA não são simplesmente intercambiáveis: a estrutura que introduzem é diferente."
+            },
+            "relatedExamples": [
+              {
+                "en": "Although I am tired, I will cook.",
+                "es": "Aunque estoy cansado, cocinaré.",
+                "pt": "Embora eu esteja cansado, vou cozinhar."
+              },
+              {
+                "en": "The room is small, but it is comfortable.",
+                "es": "La habitación es pequeña, pero es cómoda.",
+                "pt": "O quarto é pequeno, mas é confortável."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "contrast",
+                "target": "thinking-mind",
+                "status": "candidate"
+              },
+              {
+                "concept": "although concession",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective contrast",
+                "target": "adjectives",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Alternative / Choice",
+              "es": "Alternativa / Elección",
+              "pt": "Alternativa / Escolha"
+            },
+            "sentences": {
+              "en": "Do you want tea or coffee?",
+              "es": "¿Quieres té o café?",
+              "pt": "Você quer chá ou café?"
+            },
+            "targetWords": {
+              "en": "or",
+              "es": "o",
+              "pt": "ou"
+            },
+            "definition": {
+              "pt": "Apresenta alternativas ou possibilidades. Essa relação conversa naturalmente com a habilidade de escolha e com WHICH / QUÉ / QUAL, mas a conjunção OR / O / OU conecta as alternativas; a Question Word solicita a escolha."
+            },
+            "relatedExamples": [
+              {
+                "en": "Which cheese should we choose, the fresh one or an aged one?",
+                "es": "¿Qué queso deberíamos elegir, el fresco o uno curado?",
+                "pt": "Qual queijo devemos escolher, o fresco ou um maturado?"
+              },
+              {
+                "en": "We can cook or book a table.",
+                "es": "Podemos cocinar o reservar una mesa.",
+                "pt": "Podemos cozinhar ou reservar uma mesa."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "choice",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              },
+              {
+                "concept": "alternative coordination",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel and dinner experience",
+                "target": "experience",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Cause & Result",
+              "es": "Causa y Resultado",
+              "pt": "Causa e Resultado"
+            },
+            "sentences": {
+              "en": "We stayed home because it was raining.",
+              "es": "Nos quedamos en casa porque estaba lloviendo.",
+              "pt": "Ficamos em casa porque estava chovendo."
+            },
+            "targetWords": {
+              "en": "because",
+              "es": "porque",
+              "pt": "porque"
+            },
+            "definition": {
+              "pt": "Causa explica o motivo de uma situação; resultado apresenta a consequência. BECAUSE / PORQUE conecta uma causa à oração principal e conversa diretamente com WHY / POR QUÉ / POR QUÊ. O vínculo causal é semântico; o tempo verbal continua sendo uma camada distinta."
+            },
+            "relatedExamples": [
+              {
+                "en": "Why did you stay home? Because it was raining.",
+                "es": "¿Por qué te quedaste en casa? Porque estaba lloviendo.",
+                "pt": "Por que você ficou em casa? Porque estava chovendo."
+              },
+              {
+                "en": "It was raining, so we stayed home.",
+                "es": "Estaba lloviendo, así que nos quedamos en casa.",
+                "pt": "Estava chovendo, então ficamos em casa."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "why / because",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "cause-result relation",
+                "target": "thinking-mind",
+                "status": "candidate"
+              },
+              {
+                "concept": "time/tense separate layer",
+                "target": "timelines",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Condition",
+              "es": "Condición",
+              "pt": "Condição"
+            },
+            "sentences": {
+              "en": "If it is sunny tomorrow, we will go to the beach.",
+              "es": "Si mañana hace sol, iremos a la playa.",
+              "pt": "Se amanhã fizer sol, iremos à praia."
+            },
+            "targetWords": {
+              "en": "If",
+              "es": "Si",
+              "pt": "Se"
+            },
+            "definition": {
+              "pt": "Estabelece uma condição para a realização, interpretação ou consequência de outra ideia. IF / SI / SE cria a relação condicional; os tempos e modos verbais usados em cada língua realizam a gramática da condição e não devem ser confundidos com a própria conjunção."
+            },
+            "relatedExamples": [
+              {
+                "en": "If you book a room today, we can travel tomorrow.",
+                "es": "Si reservas una habitación hoy, podemos viajar mañana.",
+                "pt": "Se você reservar um quarto hoje, podemos viajar amanhã."
+              },
+              {
+                "en": "If we have time, we will prepare dinner together.",
+                "es": "Si tenemos tiempo, prepararemos la cena juntos.",
+                "pt": "Se tivermos tempo, prepararemos o jantar juntos."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "condition logic",
+                "target": "conditional",
+                "status": "candidate"
+              },
+              {
+                "concept": "future and modal realization",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel bridge",
+                "target": "travel",
+                "status": "candidate"
+              },
+              {
+                "concept": "time adverbs",
+                "target": "adverbs",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Which cheese should we choose, the fresh one or an aged one?",
+            "es": "¿Qué queso deberíamos elegir, el fresco o uno curado?",
+            "pt": "Qual queijo devemos escolher, o fresco ou um maturado?",
+            "targetWords": {
+              "en": "or",
+              "es": "o",
+              "pt": "ou"
+            },
+            "intent": "CHOICE_CONNECTION",
+            "extension": {
+              "en": "Let's choose the fresh one because it pairs well with the salmon, but we can buy the aged one if we prepare a cheese board.",
+              "es": "Elijamos el fresco porque combina bien con el salmón, pero podemos comprar el curado si preparamos una tabla de quesos.",
+              "pt": "Vamos escolher o fresco porque combina bem com o salmão, mas podemos comprar o maturado se prepararmos uma tábua de queijos."
+            },
+            "extensionTargetWords": {
+              "en": "because",
+              "es": "porque",
+              "pt": "porque"
+            },
+            "toroConnections": [
+              {
+                "concept": "which / choice",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              },
+              {
+                "concept": "or / alternative",
+                "target": "dependency-focus",
+                "status": "candidate"
+              },
+              {
+                "concept": "because / cause",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "but / contrast",
+                "target": "thinking-mind",
+                "status": "candidate"
+              },
+              {
+                "concept": "if / condition",
+                "target": "conditional",
+                "status": "candidate"
+              },
+              {
+                "concept": "shopping experience",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; a Mente Pensante reconhece a relação; Toro conecta; Experience aplica; Dependency visualiza; avaliação só decide quando houver skill e contrato canônicos.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Ensinar conjunção como relação lógica entre elementos e orações, não como uma lista isolada de palavras.",
+        "Distinguir coordenação de subordinação sem exigir terminologia avançada no A5; MASTER aprofunda classificação e estrutura.",
+        "Separar relação conjuntiva de gramática verbal: IF cria condição, mas não é o tempo ou modo verbal da oração.",
+        "Distinguir BUT/PERO/MAS de ALTHOUGH/AUNQUE/EMBORA: podem expressar contraste/concessão, mas introduzem estruturas diferentes.",
+        "Conectar BECAUSE/PORQUE a WHY/POR QUÉ/POR QUÊ sem confundir Question Word com conjunção causal.",
+        "Conectar OR/O/OU à intenção de escolha sem confundir a conjunção com WHICH/QUÉ/QUAL.",
+        "Usar exemplos já reconhecíveis da SIYAYO — coffee, dinner, cheese, travel, booking — para fazer a lógica aparecer dentro de contextos reais."
+      ],
+      "sourceConnections": {
+        "role": "canonical-source-integration",
+        "sources": [
+          {
+            "id": "which-skill",
+            "path": "data/learning/skills/which.json",
+            "contributes": [
+              "choice function",
+              "interrogative determiner boundary",
+              "canonical skill contract"
+            ]
+          },
+          {
+            "id": "experience-seeds",
+            "path": "data/learning/experience-seeds.json",
+            "contributes": [
+              "which cheese choice",
+              "why questions",
+              "dinner context",
+              "travel/movement continuation"
+            ]
+          },
+          {
+            "id": "verb-chapter",
+            "path": "chapters/03-verbs/chapter.json",
+            "contributes": [
+              "modal and tense layers",
+              "conditional verbal realization",
+              "verb function boundary"
+            ]
+          },
+          {
+            "id": "adverb-chapter",
+            "path": "chapters/05-adverbs/chapter.json",
+            "contributes": [
+              "time circumstances",
+              "tomorrow",
+              "logical context without category collapse"
+            ]
+          },
+          {
+            "id": "article-chapter",
+            "path": "chapters/06-articles/chapter.json",
+            "contributes": [
+              "the fresh one / an aged one",
+              "book a room travel bridge"
+            ]
+          },
+          {
+            "id": "preposition-chapter",
+            "path": "chapters/07-prepositions/chapter.json",
+            "contributes": [
+              "relation-first pedagogy",
+              "cross-language non-equivalence",
+              "travel context"
+            ]
+          }
+        ],
+        "principle": "Reuse canonical SIYAYO contexts and skills so conjunctions reveal relations among already-known structures rather than becoming an isolated island.",
+        "rule": "Connection does not erase category boundaries: question words ask, conjunctions connect, verbs realize tense/modality, and Experiences provide context."
+      },
+      "thinkingMindIntegration": {
+        "role": "logical-relation-detection",
+        "questions": [
+          "Are the ideas being added?",
+          "Do they contrast?",
+          "Is there a choice?",
+          "Does one explain why?",
+          "Does one result from another?",
+          "Does one depend on a condition?",
+          "Is an expected result being conceded or overridden?"
+        ],
+        "principle": "Observe the relation before naming the conjunction.",
+        "rule": "The learner should be able to explain the connection in meaning even before recalling the grammatical label."
+      },
+      "boundaryMap": {
+        "role": "semantic-and-structural-boundary-audit",
+        "contrasts": [
+          {
+            "left": "conjunction",
+            "right": "question-word",
+            "rule": "WHY/POR QUÉ/POR QUÊ asks for a reason; BECAUSE/PORQUE can introduce the reason. WHICH/QUÉ/QUAL asks for a choice; OR/O/OU connects alternatives."
+          },
+          {
+            "left": "conjunction",
+            "right": "verb-tense-or-mood",
+            "rule": "IF/SI/SE establishes a conditional relation; verb tense and mood realize the clause grammar separately."
+          },
+          {
+            "left": "contrast",
+            "right": "concession",
+            "rule": "BUT/PERO/MAS typically coordinates contrasting clauses; ALTHOUGH/AUNQUE/EMBORA subordinates a concessive clause."
+          },
+          {
+            "left": "cause",
+            "right": "result",
+            "rule": "BECAUSE/PORQUE introduces cause; SO/ASÍ QUE/ENTÃO typically presents a result or consequence."
+          },
+          {
+            "left": "logical-relation",
+            "right": "word-for-word-equivalence",
+            "rule": "EN, ES and PT may realize the same discourse relation with different conjunctions, clause patterns, punctuation or verbal grammar."
+          }
+        ]
+      },
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "addition",
+          "contrast and introductory concession",
+          "alternative/choice",
+          "cause and result",
+          "condition",
+          "basic clause connection",
+          "Question Word versus conjunction contrasts",
+          "one integrated Experience conversation"
+        ],
+        "rule": "The Chapter introduces logical relations and representative forms without exhausting conjunction inventories or subordinate-clause systems."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full coordinating conjunction systems",
+          "full subordinating conjunction systems",
+          "correlative conjunctions",
+          "conjunctive adverbs and discourse markers",
+          "punctuation and clause-order variation",
+          "subjunctive and mood selection",
+          "advanced conditional systems",
+          "concession and counterexpectation",
+          "causal and resultative nuance",
+          "register and regional variation",
+          "advanced EN-ES-PT contrastive syntax"
+        ],
+        "rule": "MASTER expands structure, distribution, mood interaction, punctuation, discourse relations and exceptions."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function / logical bridge",
+          "4 grammar",
+          "5 addition",
+          "6 contrast-concession",
+          "7 alternative-choice",
+          "8 cause-result",
+          "9 condition",
+          "10 integrated choice-cause-contrast-condition conversation"
+        ],
+        "rule": "The Chapter moves from connection to logical relation and finishes by combining several relations inside one familiar SIYAYO Experience."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
