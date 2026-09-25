@@ -1,0 +1,638 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 7,
+    "slug": "prepositions",
+    "title": {
+      "en": "PREPOSITION",
+      "es": "PREPOSICIÓN",
+      "pt": "PREPOSIÇÃO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim praepositio, de prae (“antes”) + ponere (“colocar”). O nome histórico reflete a posição frequente antes de um complemento, mas a função essencial da preposição é estabelecer uma relação entre elementos."
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Preposição é a classe de palavras que estabelece relações como lugar, direção, tempo, origem, destino, companhia, meio, finalidade ou outras conexões entre elementos da oração. Na SIYAYO ACADEMY, o foco inicial é observar a relação criada, não memorizar traduções isoladas."
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "A preposição introduz um complemento e forma com ele uma unidade relacional: in the kitchen, to the airport, after dinner, with friends. Essa unidade pode conectar-se a verbos, substantivos, adjetivos ou à oração. A mesma preposição pode assumir sentidos diferentes conforme o contexto."
+        },
+        "toroConnections": [
+          {
+            "concept": "preposition + complement",
+            "target": "dependency-focus",
+            "status": "candidate"
+          },
+          {
+            "concept": "movement and direction",
+            "target": "movement",
+            "status": "candidate"
+          },
+          {
+            "concept": "place and time",
+            "target": "adverbs",
+            "status": "candidate"
+          },
+          {
+            "concept": "noun phrase",
+            "target": "nouns",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, preposições como in, on, at, to, from, with e for introduzem relações diversas. Não existe correspondência fixa palavra por palavra com espanhol ou português; a escolha depende do sentido, da construção e frequentemente da expressão lexical.",
+          "es": "Em espanhol, preposições como a, de, en, con, por e para participam de relações espaciais, temporais e abstratas. Algumas combinam-se com artigos em formas contraídas, como al e del.",
+          "pt": "Em português, preposições como a, de, em, com, por e para também expressam relações espaciais, temporais e abstratas. Muitas se combinam com artigos ou outros determinantes, produzindo formas como do, da, no, na, pelo e pela."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "We are in the kitchen.",
+              "targets": [
+                "in"
+              ]
+            },
+            {
+              "text": "We are going to the airport.",
+              "targets": [
+                "to"
+              ]
+            },
+            {
+              "text": "We arrived after dinner.",
+              "targets": [
+                "after"
+              ]
+            },
+            {
+              "text": "She is talking with her friend.",
+              "targets": [
+                "with"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Estamos en la cocina.",
+              "targets": [
+                "en"
+              ]
+            },
+            {
+              "text": "Vamos al aeropuerto.",
+              "targets": [
+                "al"
+              ]
+            },
+            {
+              "text": "Llegamos después de la cena.",
+              "targets": [
+                "después de"
+              ]
+            },
+            {
+              "text": "Ella está hablando con su amiga.",
+              "targets": [
+                "con"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Estamos na cozinha.",
+              "targets": [
+                "na"
+              ]
+            },
+            {
+              "text": "Vamos para o aeroporto.",
+              "targets": [
+                "para"
+              ]
+            },
+            {
+              "text": "Chegamos depois do jantar.",
+              "targets": [
+                "depois de"
+              ]
+            },
+            {
+              "text": "Ela está conversando com a amiga.",
+              "targets": [
+                "com"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "EN-ES-PT relational contrast",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "contractions",
+            "target": "articles",
+            "status": "candidate"
+          },
+          {
+            "concept": "prepositional complement",
+            "target": "dependency-focus",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Relações Preposicionais Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Static / Location",
+              "es": "Estática / Lugar",
+              "pt": "Estática / Lugar"
+            },
+            "sentences": {
+              "en": "The dinner is on the table.",
+              "es": "La cena está sobre la mesa.",
+              "pt": "O jantar está sobre a mesa."
+            },
+            "targetWords": {
+              "en": "on",
+              "es": "sobre",
+              "pt": "sobre"
+            },
+            "definition": {
+              "pt": "Expressa uma relação espacial sem destacar deslocamento: em, sobre, sob, entre, perto de e outras relações de localização. Conecta-se a WHERE / DÓNDE / ONDE, mas preposição e advérbio de lugar continuam sendo categorias diferentes."
+            },
+            "relatedExamples": [
+              {
+                "en": "We are in the kitchen.",
+                "es": "Estamos en la cocina.",
+                "pt": "Estamos na cozinha."
+              },
+              {
+                "en": "The keys are under the book.",
+                "es": "Las llaves están debajo del libro.",
+                "pt": "As chaves estão debaixo do livro."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "where",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "place adverbs",
+                "target": "adverbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "state",
+                "target": "state",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Movement / Direction",
+              "es": "Movimiento / Dirección",
+              "pt": "Movimento / Direção"
+            },
+            "sentences": {
+              "en": "We are going to the airport.",
+              "es": "Vamos al aeropuerto.",
+              "pt": "Estamos indo para o aeroporto."
+            },
+            "targetWords": {
+              "en": "to",
+              "es": "al",
+              "pt": "para"
+            },
+            "definition": {
+              "pt": "Expressa origem, destino, percurso ou direção associados ao movimento: to/from, a/de, para/de e outras construções. A preposição organiza a relação espacial; o verbo lexical continua carregando o evento de MOVEMENT."
+            },
+            "relatedExamples": [
+              {
+                "en": "She came from the hotel.",
+                "es": "Ella vino del hotel.",
+                "pt": "Ela veio do hotel."
+              },
+              {
+                "en": "Walk through the park.",
+                "es": "Camina por el parque.",
+                "pt": "Caminhe pelo parque."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "movement verb function",
+                "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "where / where to",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel",
+                "target": "travel",
+                "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/nodes/movement.json",
+                "fields": [
+                  "description",
+                  "relations",
+                  "metadata.notes"
+                ]
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Time",
+              "es": "Tiempo",
+              "pt": "Tempo"
+            },
+            "sentences": {
+              "en": "We will meet after dinner.",
+              "es": "Nos encontraremos después de la cena.",
+              "pt": "Vamos nos encontrar depois do jantar."
+            },
+            "targetWords": {
+              "en": "after",
+              "es": "después de",
+              "pt": "depois de"
+            },
+            "definition": {
+              "pt": "Relaciona um acontecimento a um ponto, período ou sequência temporal: at, on, in, before, after; a, en, antes de, después de; a, em, antes de, depois de. Essa relação conversa com advérbios e timelines, mas não é tempo verbal."
+            },
+            "relatedExamples": [
+              {
+                "en": "The flight leaves at six.",
+                "es": "El vuelo sale a las seis.",
+                "pt": "O voo sai às seis."
+              },
+              {
+                "en": "We travel in July.",
+                "es": "Viajamos en julio.",
+                "pt": "Viajamos em julho."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "when",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "time adverbs",
+                "target": "adverbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "timelines",
+                "target": "timelines",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Relation / Company / Means",
+              "es": "Relación / Compañía / Medio",
+              "pt": "Relação / Companhia / Meio"
+            },
+            "sentences": {
+              "en": "She is traveling with her family.",
+              "es": "Ella viaja con su familia.",
+              "pt": "Ela está viajando com a família."
+            },
+            "targetWords": {
+              "en": "with",
+              "es": "con",
+              "pt": "com"
+            },
+            "definition": {
+              "pt": "Preposições também expressam relações não puramente espaciais: companhia, instrumento, meio, finalidade, causa e outras conexões. O significado nasce da relação completa, não de uma tradução única da preposição."
+            },
+            "relatedExamples": [
+              {
+                "en": "We paid by card.",
+                "es": "Pagamos con tarjeta.",
+                "pt": "Pagamos com cartão."
+              },
+              {
+                "en": "This gift is for you.",
+                "es": "Este regalo es para ti.",
+                "pt": "Este presente é para você."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "company",
+                "target": "experience",
+                "status": "candidate"
+              },
+              {
+                "concept": "purpose",
+                "target": "experience",
+                "status": "candidate"
+              },
+              {
+                "concept": "pronoun complement",
+                "target": "pronouns",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Lexical Combinations",
+              "es": "Combinaciones Léxicas",
+              "pt": "Combinações Lexicais"
+            },
+            "sentences": {
+              "en": "We are interested in languages.",
+              "es": "Estamos interesados en los idiomas.",
+              "pt": "Estamos interessados em idiomas."
+            },
+            "targetWords": {
+              "en": "in",
+              "es": "en",
+              "pt": "em"
+            },
+            "definition": {
+              "pt": "Muitas escolhas preposicionais fazem parte de combinações lexicais recorrentes com verbos, substantivos ou adjetivos. Por isso, aprender apenas equivalências isoladas como in = em ou for = para é insuficiente; a combinação inteira precisa ser observada no contexto."
+            },
+            "relatedExamples": [
+              {
+                "en": "listen to music",
+                "es": "escuchar música",
+                "pt": "ouvir música"
+              },
+              {
+                "en": "a reason for the trip",
+                "es": "una razón para el viaje",
+                "pt": "um motivo para a viagem"
+              },
+              {
+                "en": "good at languages",
+                "es": "bueno para los idiomas",
+                "pt": "bom em idiomas"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "verb + preposition",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "noun + preposition",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective + preposition",
+                "target": "adjectives",
+                "status": "candidate"
+              },
+              {
+                "concept": "cross-language non-equivalence",
+                "target": "words",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Where are you going after dinner?",
+            "es": "¿Adónde vas después de la cena?",
+            "pt": "Para onde você vai depois do jantar?",
+            "targetWords": {
+              "en": "after",
+              "es": "después de",
+              "pt": "depois do"
+            },
+            "intent": "PLACE_AND_TIME_RELATION",
+            "extension": {
+              "en": "I'm going from the restaurant to the hotel with my friends.",
+              "es": "Voy del restaurante al hotel con mis amigos.",
+              "pt": "Vou do restaurante para o hotel com meus amigos."
+            },
+            "extensionTargetWords": {
+              "en": "to",
+              "es": "al",
+              "pt": "para"
+            },
+            "toroConnections": [
+              {
+                "concept": "Where / Adónde / Para onde",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "after dinner",
+                "target": "adverbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "from / to movement relation",
+                "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "with + people",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel context",
+                "target": "travel",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; EN/ES/PT contrastam as relações; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Ensinar preposição como relação, não como lista de traduções isoladas.",
+        "Distinguir relação estática de lugar e relação de movimento/direção sem confundir PREPOSITION com a função verbal MOVEMENT.",
+        "Distinguir preposição de advérbio: ambos podem expressar lugar ou tempo, mas sua função estrutural e seu comportamento são diferentes.",
+        "Reconhecer que espanhol e português apresentam contrações frequentes entre preposição e artigo; aprofundar paradigmas completos na MASTER.",
+        "Tratar verb + preposition, noun + preposition e adjective + preposition como combinações lexicais relevantes, evitando equivalência mecânica EN-ES-PT.",
+        "Reservar phrasal verbs, regência avançada, contrações completas, locuções prepositivas, idiomatismos e variação regional para a MASTER."
+      ],
+      "sourceConnections": {
+        "role": "canonical-source-integration",
+        "sources": [
+          {
+            "id": "movement-node",
+            "path": "data/nodes/movement.json",
+            "contributes": [
+              "movement",
+              "direction",
+              "displacement",
+              "preposition relation"
+            ]
+          },
+          {
+            "id": "adverb-chapter",
+            "path": "chapters/05-adverbs/chapter.json",
+            "contributes": [
+              "place/time boundary",
+              "WHERE/WHEN links",
+              "adverb versus preposition contrast"
+            ]
+          },
+          {
+            "id": "article-chapter",
+            "path": "chapters/06-articles/chapter.json",
+            "contributes": [
+              "article contractions",
+              "noun phrase",
+              "EN-ES-PT article system"
+            ]
+          },
+          {
+            "id": "experience-seeds",
+            "path": "data/learning/experience-seeds.json",
+            "contributes": [
+              "circumstances.place",
+              "circumstances.time",
+              "travel-like movement",
+              "WHERE questions"
+            ]
+          }
+        ],
+        "principle": "Reuse canonical Academy relations where PREPOSITION intersects MOVEMENT, ADVERB, ARTICLE, NOUN, VERB and Experience.",
+        "rule": "A shared meaning such as place or time does not erase word-class or structural boundaries."
+      },
+      "trilingualContrastScope": {
+        "role": "toroidal-cross-language-comparison",
+        "principle": "Keep the relational intention stable while EN, ES and PT reveal different prepositional choices and contractions.",
+        "observe": [
+          "static location",
+          "origin and destination",
+          "time relations",
+          "company, means and purpose",
+          "preposition + article contractions",
+          "lexical combinations"
+        ],
+        "rule": "Prefer aligned EN/ES/PT examples while avoiding word-for-word equivalence claims."
+      },
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "definition and relational function",
+          "static location",
+          "movement and direction",
+          "time relations",
+          "company, means and purpose",
+          "basic contractions with articles",
+          "introductory verb/noun/adjective + preposition combinations",
+          "one integrated travel conversation"
+        ],
+        "rule": "The Chapter introduces the relational map without exhausting regency, idioms, phrasal verbs or full contraction paradigms."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full spatial preposition systems",
+          "full temporal preposition systems",
+          "preposition plus article contraction paradigms",
+          "verb government and complementation",
+          "noun plus preposition patterns",
+          "adjective plus preposition patterns",
+          "phrasal verbs versus prepositional verbs",
+          "complex prepositional phrases",
+          "idiomatic combinations",
+          "regional and register variation",
+          "advanced EN-ES-PT contrastive grammar"
+        ],
+        "rule": "MASTER expands lexical selection, regency, idioms, contractions, exceptions and fine contrastive grammar."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 static-location",
+          "6 movement-direction",
+          "7 time",
+          "8 relation-company-means",
+          "9 lexical-combinations",
+          "10 integrated travel conversation"
+        ],
+        "rule": "The Chapter moves from relational structure to spatial, directional, temporal and abstract relations before showing lexical combinations and contextual integration."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
