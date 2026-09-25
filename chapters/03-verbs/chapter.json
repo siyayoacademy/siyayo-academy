@@ -22,6 +22,17 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim verbum, “palavra”. Na tradição gramatical, o verbo tornou-se a classe associada à expressão de acontecimentos, ações, estados, qualidades, processos e existência, organizando relações fundamentais da oração."
+        },
+        "focusWords": {
+          "pt": [
+            "verbum",
+            "palavra",
+            "ações",
+            "estados",
+            "qualidades",
+            "processos",
+            "existência"
+          ]
         }
       },
       {
@@ -30,6 +41,17 @@
         "title": "Definição",
         "content": {
           "pt": "Verbo é a classe de palavras que organiza o predicado e expressa, conforme o contexto, ação, processo, estado, qualidade, existência ou outras relações verbais. Suas formas também podem marcar tempo, pessoa, número, modo e aspecto, de maneiras diferentes em inglês, espanhol e português."
+        },
+        "focusWords": {
+          "pt": [
+            "Verbo",
+            "predicado",
+            "ação",
+            "processo",
+            "estado",
+            "qualidade",
+            "existência"
+          ]
         }
       },
       {
@@ -55,7 +77,18 @@
             "target": "auxiliaries",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "núcleo",
+            "qualidade",
+            "estado",
+            "movimento",
+            "ação",
+            "existência",
+            "auxiliares"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -218,7 +251,38 @@
             "target": "verbs",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "presente",
+            "passado",
+            "futuro",
+            "afirmativa",
+            "negativa",
+            "interrogativa",
+            "aspecto progressivo",
+            "modais"
+          ],
+          "es": [
+            "pessoa",
+            "número",
+            "tempo",
+            "modo",
+            "afirmativa",
+            "negativa",
+            "interrogativa"
+          ],
+          "pt": [
+            "pessoa",
+            "número",
+            "tempo",
+            "modo",
+            "afirmativa",
+            "negativa",
+            "interrogativa",
+            "modais"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -267,7 +331,17 @@
                 "es": "Ella no es médica.",
                 "pt": "Ela não é médica."
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "identidade",
+                "classificação",
+                "qualidade",
+                "característica",
+                "BE",
+                "SER"
+              ]
+            }
           },
           {
             "classification": {
@@ -311,7 +385,16 @@
                 "es": "Ella estaba cansada ayer.",
                 "pt": "Ela estava cansada ontem."
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "condição",
+                "situação",
+                "estado",
+                "BE",
+                "ESTAR"
+              ]
+            }
           },
           {
             "classification": {
@@ -360,7 +443,17 @@
                 "es": "Podemos caminar hasta allí.",
                 "pt": "Podemos caminhar até lá."
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "deslocamento",
+                "direção",
+                "movimento físico",
+                "Movement",
+                "Action",
+                "progressive"
+              ]
+            }
           },
           {
             "classification": {
@@ -414,7 +507,17 @@
                 "es": "¿Cocinas en casa?",
                 "pt": "Você cozinha em casa?"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "ações lexicais",
+                "atividades",
+                "hábitos",
+                "rotinas",
+                "Action",
+                "Movement"
+              ]
+            }
           },
           {
             "classification": {
@@ -463,7 +566,18 @@
                 "es": "Habrá una reunión mañana.",
                 "pt": "Haverá uma reunião amanhã."
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "existência",
+                "presença",
+                "disponibilidade",
+                "ocorrência",
+                "THERE + BE",
+                "HAY",
+                "HÁ"
+              ]
+            }
           }
         ]
       },
