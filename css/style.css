@@ -2273,3 +2273,70 @@ transform:
     font-size: 1.10rem;
   }
 }
+
+
+/* =========================================================
+   NEXT CHAPTER INVITATION · TRILINGUAL CONTINUITY
+   ========================================================= */
+
+.next-chapter-invitation {
+  width: min(100%, 820px);
+  margin: clamp(10px, 1.8vh, 18px) auto 0;
+  padding: clamp(12px, 2vh, 18px);
+  border: 1px solid rgba(242, 216, 138, 0.30);
+  border-radius: 16px;
+  background: rgba(2, 12, 30, 0.30);
+  text-align: center;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 8px 24px rgba(0,0,0,0.18);
+}
+
+.next-chapter-invitation p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: clamp(0.82rem, 2.5vw, 0.98rem);
+  line-height: 1.42;
+}
+
+.next-chapter-invitation p + p {
+  margin-top: 5px;
+}
+
+.next-chapter-invitation p strong {
+  color: var(--siyayo-gold-light);
+  font-size: 0.76em;
+  letter-spacing: 0.12em;
+  margin-right: 0.35em;
+}
+
+.next-chapter-invitation-button {
+  margin-top: 11px;
+  padding: 8px 16px;
+  border: 1px solid rgba(242, 216, 138, 0.52);
+  border-radius: 999px;
+  background: rgba(3, 11, 30, 0.68);
+  color: var(--siyayo-gold-light);
+  font: inherit;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.next-chapter-invitation-button:hover,
+.next-chapter-invitation-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--siyayo-gold-light);
+  background: rgba(12, 39, 76, 0.72);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.10);
+  outline: none;
+}
+
+.next-chapter-invitation-complete {
+  border-color: rgba(242, 216, 138, 0.42);
+}
