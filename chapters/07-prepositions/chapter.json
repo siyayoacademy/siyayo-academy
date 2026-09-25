@@ -73,9 +73,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, preposições como in, on, at, to, from, with e for introduzem relações diversas. Não existe correspondência fixa palavra por palavra com espanhol ou português; a escolha depende do sentido, da construção e frequentemente da expressão lexical.",
-          "es": "Em espanhol, preposições como a, de, en, con, por e para participam de relações espaciais, temporais e abstratas. Algumas combinam-se com artigos em formas contraídas, como al e del.",
-          "pt": "Em português, preposições como a, de, em, com, por e para também expressam relações espaciais, temporais e abstratas. Muitas se combinam com artigos ou outros determinantes, produzindo formas como do, da, no, na, pelo e pela."
+          "en": "Em inglês, preposições como in, on, at, to, from, with e for introduzem complementos e expressam relações diversas. Algumas formas também podem funcionar como partículas ou advérbios em outros contextos, por isso a função estrutural importa. Não existe correspondência fixa palavra por palavra com espanhol ou português.",
+          "es": "Em espanhol, preposições como a, de, en, con, por e para expressam relações espaciais, temporais e abstratas. Algumas relações são realizadas por locuções, como después de. Preposição + artigo pode formar contrações como al e del; a escolha não corresponde mecanicamente ao inglês.",
+          "pt": "Em português, preposições como a, de, em, com, por e para expressam relações espaciais, temporais e abstratas. Locuções como depois de e perto de também realizam função preposicional. Muitas preposições se combinam com artigos ou outros determinantes, produzindo formas como do, da, no, na, pelo e pela."
         },
         "examples": {
           "en": [
@@ -197,7 +197,7 @@
               "pt": "sobre"
             },
             "definition": {
-              "pt": "Expressa uma relação espacial sem destacar deslocamento: em, sobre, sob, entre, perto de e outras relações de localização. Conecta-se a WHERE / DÓNDE / ONDE, mas preposição e advérbio de lugar continuam sendo categorias diferentes."
+              "pt": "Expressa uma relação espacial sem destacar deslocamento: em, sobre, sob, entre, perto de e outras relações de localização. A preposição introduz um complemento; um advérbio de lugar pode aparecer sem complemento explícito. Compare in the kitchen com here. Ambos expressam lugar, mas não têm a mesma estrutura nem pertencem necessariamente à mesma classe."
             },
             "relatedExamples": [
               {
@@ -246,7 +246,7 @@
               "pt": "para"
             },
             "definition": {
-              "pt": "Expressa origem, destino, percurso ou direção associados ao movimento: to/from, a/de, para/de e outras construções. A preposição organiza a relação espacial; o verbo lexical continua carregando o evento de MOVEMENT. Na SIYAYO ACADEMY, esse contraste é importante para que o aluno reconheça o que cada palavra está fazendo na sentença."
+              "pt": "Expressa origem, destino, percurso ou direção associados ao movimento: to/from, a/de, para/de e outras construções. A preposição organiza a relação espacial; o verbo lexical continua carregando o evento de MOVEMENT. Compare go to the airport com go there: to the airport é uma expressão preposicional; there é um advérbio de lugar."
             },
             "relatedExamples": [
               {
@@ -315,7 +315,7 @@
               "pt": "depois de"
             },
             "definition": {
-              "pt": "Relaciona um acontecimento a um ponto, período ou sequência temporal: at, on, in, before, after; a, en, antes de, después de; a, em, antes de, depois de. Essa relação conversa com advérbios e timelines, mas não é tempo verbal."
+              "pt": "Relaciona um acontecimento a um ponto, período ou sequência temporal: at, on, in, before, after; a, en, antes de, después de; a, em, antes de, depois de. A expressão preposicional acrescenta localização temporal à oração, mas não cria o tempo verbal. Compare after dinner com later: ambos podem situar no tempo, porém por estruturas diferentes."
             },
             "relatedExamples": [
               {
@@ -364,7 +364,7 @@
               "pt": "com"
             },
             "definition": {
-              "pt": "Preposições também expressam relações não puramente espaciais: companhia, instrumento, meio, finalidade, causa e outras conexões. O significado nasce da relação completa, não de uma tradução única da preposição."
+              "pt": "Preposições também expressam relações não puramente espaciais: companhia, instrumento, meio, finalidade, causa e outras conexões. A mesma intenção comunicativa pode escolher preposições diferentes nas três línguas: by card / con tarjeta / com cartão. O significado nasce da construção completa, não de uma equivalência isolada."
             },
             "relatedExamples": [
               {
@@ -413,7 +413,7 @@
               "pt": "em"
             },
             "definition": {
-              "pt": "Muitas escolhas preposicionais fazem parte de combinações lexicais recorrentes com verbos, substantivos ou adjetivos. Por isso, aprender apenas equivalências isoladas como in = em ou for = para é insuficiente; a combinação inteira precisa ser observada no contexto. Essas combinações são um bom ponto para a Mente Pensante comparar forma, função e contexto antes de qualquer avaliação."
+              "pt": "Muitas escolhas preposicionais fazem parte de combinações lexicais recorrentes com verbos, substantivos ou adjetivos. Por isso, aprender apenas equivalências isoladas como in = em ou for = para é insuficiente. A SIYAYO observa a combinação inteira e também quando uma língua exige preposição e outra não."
             },
             "relatedExamples": [
               {
@@ -428,7 +428,7 @@
               },
               {
                 "en": "good at languages",
-                "es": "bueno para los idiomas",
+                "es": "bueno con los idiomas",
                 "pt": "bom em idiomas"
               }
             ],
@@ -545,7 +545,11 @@
         "Reservar phrasal verbs, regência avançada, contrações completas, locuções prepositivas, idiomatismos e variação regional para a MASTER.",
         "Usar Jaguar como guia de exploração progressiva e Xespirito como apoio de consciência funcional apenas onde suas funções canônicas realmente ajudam; não transformar arquétipos em novas classes gramaticais.",
         "A Mente Pensante pode revelar relações preposicionais por WHERE, WHEN e HOW antes da nomenclatura explícita, aproveitando perguntas já presentes nas Experiences.",
-        "Não conceder Green Pass contratual a PREPOSITION enquanto não existir uma skill canônica de preposição com Pass Contract explícito; até lá, exemplos e interações são aprendizagem/observação, não autoridade de domínio."
+        "Não conceder Green Pass contratual a PREPOSITION enquanto não existir uma skill canônica de preposição com Pass Contract explícito; até lá, exemplos e interações são aprendizagem/observação, não autoridade de domínio.",
+        "Usar pares mínimos como in the kitchen / here e after dinner / later para separar significado circunstancial de classe gramatical.",
+        "Quando a mesma forma puder funcionar como preposição, advérbio ou partícula em construções diferentes, classificar pela estrutura observável; phrasal verbs permanecem na MASTER.",
+        "Distinguir palavra prepositiva de expressão prepositiva: después de / depois de realizam uma relação preposicional por mais de uma palavra.",
+        "Em combinações lexicais, registrar também a ausência de preposição em outra língua, como listen to music / escuchar música / ouvir música."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -706,6 +710,116 @@
           "assessmentRule": "Do not assign Green Pass contract authority to preposition knowledge until an explicit canonical preposition skill and Pass Contract exist."
         },
         "principle": "Toro integration connects archetypes, Question Words, Experiences and canonical sources without allowing one pedagogical layer to impersonate another."
+      },
+      "boundaryMap": {
+        "role": "semantic-and-structural-boundary-audit",
+        "contrasts": [
+          {
+            "left": "preposition",
+            "right": "adverb",
+            "rule": "A preposition canonically introduces a complement in the Chapter model; an adverb may express a similar circumstance without that complement. Compare in the kitchen vs here, after dinner vs later."
+          },
+          {
+            "left": "prepositional-relation",
+            "right": "verb-MOVEMENT",
+            "rule": "The preposition encodes a spatial or relational link such as destination or origin; the lexical verb encodes the movement event itself."
+          },
+          {
+            "left": "preposition",
+            "right": "particle",
+            "rule": "The same surface form may behave differently across constructions. Phrasal-verb particle analysis remains reserved for MASTER."
+          },
+          {
+            "left": "preposition-word",
+            "right": "prepositional-expression",
+            "rule": "A relation may be expressed by one word or by a multiword locution such as después de / depois de; lexical form and grammatical function must not be collapsed."
+          },
+          {
+            "left": "time-preposition",
+            "right": "verb-tense",
+            "rule": "A temporal prepositional phrase locates an event in time but does not itself create grammatical tense or aspect."
+          },
+          {
+            "left": "cross-language-equivalence",
+            "right": "relational-equivalence",
+            "rule": "Equivalent communicative relations may use different prepositions, no overt preposition, or different constructions across EN, ES and PT."
+          },
+          {
+            "left": "preposition+article",
+            "right": "single-lexeme-assumption",
+            "rule": "Forms such as al, del, no, na, do and da reflect contraction/fusion patterns and should not be treated as simple one-to-one lexical translations."
+          }
+        ]
+      },
+      "fineStudyExamples": {
+        "role": "minimal-pair-study",
+        "examples": [
+          {
+            "focus": "place: preposition vs adverb",
+            "en": [
+              "We are in the kitchen.",
+              "We are here."
+            ],
+            "es": [
+              "Estamos en la cocina.",
+              "Estamos aquí."
+            ],
+            "pt": [
+              "Estamos na cozinha.",
+              "Estamos aqui."
+            ],
+            "observation": "Same broad PLACE meaning, different grammatical realization."
+          },
+          {
+            "focus": "movement: relation vs event",
+            "en": [
+              "We go to the airport.",
+              "We go there."
+            ],
+            "es": [
+              "Vamos al aeropuerto.",
+              "Vamos allí."
+            ],
+            "pt": [
+              "Vamos para o aeroporto.",
+              "Vamos para lá."
+            ],
+            "observation": "The movement verb carries the event; destination can be realized by a prepositional phrase or an adverbial form."
+          },
+          {
+            "focus": "time: preposition vs adverb",
+            "en": [
+              "We will meet after dinner.",
+              "We will meet later."
+            ],
+            "es": [
+              "Nos encontraremos después de la cena.",
+              "Nos encontraremos más tarde."
+            ],
+            "pt": [
+              "Vamos nos encontrar depois do jantar.",
+              "Vamos nos encontrar mais tarde."
+            ],
+            "observation": "Temporal meaning does not determine a single word class."
+          },
+          {
+            "focus": "lexical government across languages",
+            "en": [
+              "listen to music",
+              "good at languages"
+            ],
+            "es": [
+              "escuchar música",
+              "bueno con los idiomas"
+            ],
+            "pt": [
+              "ouvir música",
+              "bom em idiomas"
+            ],
+            "observation": "A preposition required in one language may disappear or change in another."
+          }
+        ],
+        "principle": "Use minimal contrasts to make function visible before asking the learner to memorize labels."
       }
     }
   },
