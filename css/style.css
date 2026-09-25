@@ -2395,3 +2395,13 @@ transform:
     letter-spacing: 0;
   }
 }
+
+
+/* =========================================================
+   GLOBAL VERTICAL ALIGNMENT HOMOLOGATION
+   All Chapter slide content grows from the top for a stable reading axis.
+   ========================================================= */
+
+.chapter-view .slide-content {
+  justify-content: flex-start;
+}
