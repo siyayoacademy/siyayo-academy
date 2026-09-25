@@ -1505,8 +1505,6 @@ function renderCurrentSlide() {
 
       ${renderSlideContent(slide)}
 
-      ${isLast ? renderNextChapterInvitation() : ""}
-
       <footer class="chapter-footer">
 
         <div class="chapter-progress">
@@ -1564,6 +1562,16 @@ function renderCurrentSlide() {
     </section>
   `;
 
+
+  if (isLast) {
+    const slideContent = main.querySelector(".slide-content");
+    if (slideContent) {
+      slideContent.insertAdjacentHTML(
+        "beforeend",
+        renderNextChapterInvitation()
+      );
+    }
+  }
 
   attachSliderEvents();
   attachNextChapterInvitationEvents();
