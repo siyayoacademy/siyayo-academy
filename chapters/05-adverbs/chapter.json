@@ -22,6 +22,16 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim adverbium, literalmente “junto ao verbo”. Historicamente o nome destaca sua relação com o verbo, mas o advérbio também pode modificar adjetivos, outros advérbios e até a oração inteira."
+        },
+        "focusWords": {
+          "pt": [
+            "adverbium",
+            "junto ao verbo",
+            "advérbio",
+            "adjetivos",
+            "outros advérbios",
+            "oração inteira"
+          ]
         }
       },
       {
@@ -30,6 +40,18 @@
         "title": "Definição",
         "content": {
           "pt": "Advérbio é a classe de palavras que acrescenta circunstância, intensidade, frequência, avaliação ou outra informação ao verbo, ao adjetivo, a outro advérbio ou à oração. Na SIYAYO ACADEMY, Tempo, Lugar e Modo formam o núcleo introdutório, ampliado por Frequência e Grau."
+        },
+        "focusWords": {
+          "pt": [
+            "Advérbio",
+            "circunstância",
+            "intensidade",
+            "frequência",
+            "Tempo",
+            "Lugar",
+            "Modo",
+            "Grau"
+          ]
         }
       },
       {
@@ -65,7 +87,18 @@
             "target": "words",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "quando",
+            "onde",
+            "como",
+            "frequência",
+            "grau",
+            "tempo",
+            "espaço"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -181,7 +214,39 @@
             "target": "question-words",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "-ly",
+            "posição",
+            "função",
+            "escopo",
+            "frequência",
+            "tempo",
+            "lugar",
+            "grau"
+          ],
+          "es": [
+            "-mente",
+            "locuções adverbiais",
+            "posição",
+            "função",
+            "escopo",
+            "foco",
+            "frequência",
+            "grau"
+          ],
+          "pt": [
+            "-mente",
+            "locuções adverbiais",
+            "posição",
+            "função",
+            "escopo",
+            "foco",
+            "frequência",
+            "grau"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -255,7 +320,16 @@
                 "source": "data/grammar/verb-grid.json",
                 "field": "timeAspect"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "tempo",
+                "tempo verbal",
+                "WHEN",
+                "CUÁNDO",
+                "QUANDO"
+              ]
+            }
           },
           {
             "classification": {
@@ -315,7 +389,17 @@
                   "thinkingMind.questionWord=where"
                 ]
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "espaço",
+                "Advérbios de lugar",
+                "preposições",
+                "WHERE",
+                "DÓNDE",
+                "ONDE"
+              ]
+            }
           },
           {
             "classification": {
@@ -388,7 +472,17 @@
                   "thinkingMind.questionWord=how"
                 ]
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "maneira",
+                "-ly/-mente",
+                "HOW",
+                "CÓMO",
+                "COMO",
+                "ACTION"
+              ]
+            }
           },
           {
             "classification": {
@@ -454,7 +548,17 @@
                   "metadata.notes"
                 ]
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "frequência",
+                "hábitos",
+                "rotinas",
+                "HOW OFTEN",
+                "CON QUÉ FRECUENCIA",
+                "COM QUE FREQUÊNCIA"
+              ]
+            }
           },
           {
             "classification": {
@@ -518,7 +622,16 @@
                   "semanticDomainScope"
                 ]
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "grau",
+                "intensidade",
+                "very/muy/muito",
+                "quite/bastante",
+                "too/demasiado"
+              ]
+            }
           }
         ]
       },
