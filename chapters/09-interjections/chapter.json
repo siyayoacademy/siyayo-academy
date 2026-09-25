@@ -511,7 +511,11 @@
         "Cruzar o legado MASTER com o A5 sem copiar listas mecanicamente: recuperar funções pragmáticas e transformar exemplos em cenas trilingues contextualizadas.",
         "Usar a NICE PARTY como laboratório social para greetings, introductions, welcoming, attention calls, reactions, hesitation and farewell.",
         "Distinguir greeting interjections de fórmulas sociais completas: Hello/Hi podem funcionar interjetivamente; Nice to meet you / Mucho gusto / Prazer em conhecer você são fórmulas de interação, não precisam ser reclassificadas como uma única interjeição.",
-        "Preservar formas multifuncionais do MASTER — hello, hey, oh, well — como sementes para futuro estudo de entonação e pragmática."
+        "Preservar formas multifuncionais do MASTER — hello, hey, oh, well — como sementes para futuro estudo de entonação e pragmática.",
+        "Mesma forma não implica mesma função: HELLO, HEY, OH e WELL podem mudar de valor com entonação e contexto.",
+        "Saudação, apresentação e acolhimento pertencem à mesma cena social, mas não necessariamente à mesma classe gramatical.",
+        "A NICE PARTY funciona como laboratório social onde interjeições podem conviver com fórmulas completas, Question Words, pronomes, verbos e conjunctions sem apagar suas fronteiras.",
+        "No A5, priorizar função pragmática observável; na MASTER, aprofundar prosódia, discourse markers, response tokens, vocatives e variação regional."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -755,6 +759,59 @@
         ],
         "principle": "Use the legacy MASTER as a seed bank: recover pragmatic distinctions and social situations, then normalize them into the trilingual SIYAYO architecture rather than copying the old material mechanically.",
         "nicePartyBridge": "Greetings, introductions, reactions, attention calls and hesitation naturally form the social entrance layer of the Nice Party Experience."
+      },
+      "fineStudyExamples": {
+        "role": "pragmatic-and-prosodic-boundary-audit",
+        "examples": [
+          {
+            "focus": "same form, different pragmatic function",
+            "examples": [
+              "Hello, John. How are you today? → greeting",
+              "Hello! My car's gone! → surprise",
+              "Hey! Look at that! → attention",
+              "Hey! What a good idea! → surprise / enthusiasm"
+            ],
+            "insight": "The surface form alone does not determine the function; intonation, position and context matter."
+          },
+          {
+            "focus": "interjection versus social formula",
+            "examples": [
+              "Hi! → greeting interjection / greeting token",
+              "Nice to meet you. → complete social formula",
+              "Welcome to the Nice Party. → complete welcoming expression"
+            ],
+            "insight": "Expressions that perform a social act are not automatically single interjections; preserve the difference between interjection and larger formula."
+          },
+          {
+            "focus": "interjection versus discourse management",
+            "examples": [
+              "Uh... I need a moment. → hesitation",
+              "Hmm... I'm not so sure. → hesitation / doubt",
+              "Well... what did he say? → discourse management / remark introduction"
+            ],
+            "insight": "Some forms sit on the boundary between interjection and discourse marker; the A5 recognizes communicative function first and leaves framework-dependent classification to MASTER."
+          },
+          {
+            "focus": "interjection versus sentence grammar",
+            "examples": [
+              "Wow! The view is beautiful.",
+              "Ouch! The pan is hot.",
+              "Hey, where are you going?"
+            ],
+            "insight": "The interjection can stand alone or sit at the margin of the clause; the rest of the sentence keeps its own noun, verb, adjective and question-word grammar."
+          },
+          {
+            "focus": "Nice Party social entrance",
+            "examples": [
+              "Hi! Welcome to the Nice Party.",
+              "This is my friend Ana.",
+              "Nice to meet you!",
+              "Wow! Which cheese should we choose?"
+            ],
+            "insight": "Greeting, introduction, social formula, reaction and choice can coexist in one scene without collapsing into one grammatical category."
+          }
+        ],
+        "principle": "Interpret pragmatic effect and prosody before assigning a rigid label; then preserve the grammatical boundary of the surrounding sentence."
       }
     }
   },
