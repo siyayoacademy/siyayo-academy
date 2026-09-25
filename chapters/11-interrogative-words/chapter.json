@@ -124,9 +124,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "English often combines a Question Word with an auxiliary or with BE: What do you need? Where did they go? How old is she? WHO can itself be the subject, so an auxiliary is not always required: Who called you? WHOM survives mainly in formal object uses; everyday English often uses WHO instead.",
-          "es": "En español, qué, quién, cuál, cuándo, dónde, por qué, cómo y cuánto llevan tilde cuando tienen valor interrogativo o exclamativo. La concordancia aparece en formas como cuánto / cuánta / cuántos / cuántas.",
-          "pt": "Em português, as formas variam entre estruturas como o que, quem, qual, onde, quando, por que, como, quanto e expressões compostas. QUANTO pode variar em gênero e número; QUAL varia em número. O contexto decide a construção mais natural."
+          "en": "Em inglês, as Question Words costumam combinar-se com um verbo auxiliar ou com o verbo BE. Por exemplo: What do you need? Where did they go? How old is she? WHO também pode funcionar como sujeito da pergunta; nesse caso, nem sempre é necessário usar DO: Who called you? WHOM permanece principalmente em usos formais como objeto, enquanto no inglês cotidiano WHO é frequentemente usado em seu lugar.",
+          "es": "Em espanhol, formas interrogativas como qué, quién, cuál, cuándo, dónde, por qué, cómo e cuánto recebem acento gráfico quando têm valor interrogativo ou exclamativo. Algumas também apresentam concordância, como cuánto, cuánta, cuántos e cuántas. A forma escolhida depende do foco da pergunta e da estrutura que a acompanha.",
+          "pt": "Em português, as palavras interrogativas aparecem em estruturas como o que, quem, qual, onde, quando, por que, como e quanto. QUANTO pode variar em gênero e número, e QUAL varia em número. A construção mais natural depende do tipo de informação procurada e do contexto da pergunta."
         },
         "focusWords": {
           "en": [
@@ -1168,7 +1168,8 @@
         "WHERE não é sinônimo automático de movimento; verbo e preposição determinam se há posição, origem ou destino.",
         "WHEN pergunta pelo tempo, mas não é tempo verbal.",
         "WHY pergunta pela causa; BECAUSE introduz uma resposta causal e pertence a outra função.",
-        "Os containers de exemplos podem crescer quando cada exemplo acrescenta contraste, contexto, tempo verbal, função ou ponte pedagógica real."
+        "Os containers de exemplos podem crescer quando cada exemplo acrescenta contraste, contexto, tempo verbal, função ou ponte pedagógica real.",
+        "No Slide 4, as três abas explicam em português como cada idioma organiza as Question Words; exemplos internos permanecem no idioma estudado, e o speech da explicação permanece em português."
       ],
       "masterSourceReview": {
         "role": "legacy-master-cross-reference",
