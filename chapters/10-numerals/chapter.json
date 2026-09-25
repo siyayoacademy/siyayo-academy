@@ -725,7 +725,11 @@
         "Apresentar palavras-operadoras como PLUS, MINUS, TIMES, DIVIDED BY e EQUALS como chaves relacionais dos numerais, sem reclassificá-las como numerais.",
         "Distinguir leitura decimal de leitura monetária: 10.25 pode ser ten point two five, enquanto $10.25 é naturalmente ten dollars and twenty-five cents.",
         "Chamar atenção para convenções de ponto e vírgula em EN/ES/PT, pois a escrita numérica muda entre contextos linguísticos e culturais.",
-        "Preservar operações, decimals, percentages, currency and measurement como uma camada expansiva futura do universo NUMBERS IN ACTION."
+        "Preservar operações, decimals, percentages, currency and measurement como uma camada expansiva futura do universo NUMBERS IN ACTION.",
+        "Reservar educação financeira como uma expansão natural do Chapter 10: preços, orçamento, porcentagens, juros, risco, probabilidade, moedas e registros de transação.",
+        "Tratar blockchain e ledger como contextos futuros de numeracy/digital literacy, não como subtipos de numeral.",
+        "Em materiais futuros, separar conceitos de registro, verificação e histórico de transações de recomendações financeiras, investimento ou especulação.",
+        "Usar números como portas para experiências práticas: comparar, medir, calcular, planejar, economizar, estimar e interpretar informação."
       ],
       "masterSourceReview": {
         "role": "legacy-master-cross-reference",
@@ -826,7 +830,12 @@
           "recipe fractions and quantities",
           "shopping and currency",
           "ordinal routes/floors/positions",
-          "cardinal pronunciation and spelling"
+          "cardinal pronunciation and spelling",
+          "financial-literacy pack: prices, budgets, discounts, taxes and interest",
+          "probability and risk language pack",
+          "currency and exchange-rate practice",
+          "transaction-ledger reading activity",
+          "introductory blockchain / distributed-ledger literacy module"
         ],
         "rule": "Do not overload the Chapter summary; expansion should reuse canonical numerical relations."
       },
@@ -934,6 +943,39 @@
           }
         ],
         "rule": "PLUS, MINUS, TIMES, DIVIDED BY, EQUALS, POINT, PERCENT and currency words are not numerals themselves; they are relational and measurement language that lets numerals operate in real contexts."
+      },
+      "financialLiteracyBridge": {
+        "role": "future-real-life-numeracy-bridge",
+        "status": "reserved-for-later",
+        "principle": "Numeracy is a gateway to practical financial literacy. The Chapter should preserve seeds for later experiences involving prices, change, percentages, interest, budgets, comparison, risk, probability, digital money and ledger concepts without overloading the introductory numeral summary.",
+        "futureTopics": [
+          "prices, bills, tips and change",
+          "income, expenses and budgeting",
+          "percentages, discounts and taxes",
+          "simple and compound interest",
+          "rates, ratios and comparisons",
+          "probability and uncertainty",
+          "currency and exchange-rate language",
+          "digital payments and transaction records",
+          "ledger concepts: entries, balances and verification",
+          "introductory blockchain vocabulary and distributed-ledger concepts"
+        ],
+        "blockchainBoundary": {
+          "rule": "Treat blockchain as a later financial/digital-literacy context, not as a numeral subtype.",
+          "introductoryMetaphor": "A ledger records transactions in an ordered history; blockchain-related systems can be introduced later by comparing how records are grouped, linked, verified and shared across participants.",
+          "caution": "Future materials should distinguish general ledger concepts from specific blockchain implementations, cryptocurrencies, investment claims or financial recommendations."
+        },
+        "experienceIdeas": [
+          "restaurant bill and tip",
+          "shopping budget",
+          "compare two prices or discounts",
+          "monthly savings target",
+          "interest-growth timeline",
+          "probability game",
+          "currency conversion",
+          "read a simple transaction ledger",
+          "trace a simplified chain of verified records"
+        ]
       }
     }
   },
