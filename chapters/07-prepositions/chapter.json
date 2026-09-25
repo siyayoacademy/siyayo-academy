@@ -22,6 +22,15 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim praepositio, de prae (“antes”) + ponere (“colocar”). O nome histórico reflete a posição frequente antes de um complemento, mas a função essencial da preposição é estabelecer uma relação entre elementos."
+        },
+        "focusWords": {
+          "pt": [
+            "praepositio",
+            "prae",
+            "ponere",
+            "preposição",
+            "relação"
+          ]
         }
       },
       {
@@ -30,6 +39,20 @@
         "title": "Definição",
         "content": {
           "pt": "Preposição é a classe de palavras que estabelece relações como lugar, direção, tempo, origem, destino, companhia, meio, finalidade ou outras conexões entre elementos da oração. Na SIYAYO ACADEMY, o foco inicial é observar a relação criada, não memorizar traduções isoladas."
+        },
+        "focusWords": {
+          "pt": [
+            "Preposição",
+            "lugar",
+            "direção",
+            "tempo",
+            "origem",
+            "destino",
+            "companhia",
+            "meio",
+            "finalidade",
+            "relação"
+          ]
         }
       },
       {
@@ -60,7 +83,17 @@
             "target": "nouns",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "complemento",
+            "unidade relacional",
+            "verbos",
+            "substantivos",
+            "adjetivos",
+            "contexto"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -173,7 +206,45 @@
             "target": "dependency-focus",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "in",
+            "on",
+            "at",
+            "to",
+            "from",
+            "with",
+            "for",
+            "função estrutural"
+          ],
+          "es": [
+            "a",
+            "de",
+            "en",
+            "con",
+            "por",
+            "para",
+            "locuções",
+            "al",
+            "del"
+          ],
+          "pt": [
+            "a",
+            "de",
+            "em",
+            "com",
+            "por",
+            "para",
+            "Locuções",
+            "do",
+            "da",
+            "no",
+            "na",
+            "pelo",
+            "pela"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -227,7 +298,15 @@
                 "target": "state",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "relação espacial",
+                "localização",
+                "complemento",
+                "advérbio de lugar"
+              ]
+            }
           },
           {
             "classification": {
@@ -296,7 +375,18 @@
                   "metadata.notes"
                 ]
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "origem",
+                "destino",
+                "percurso",
+                "direção",
+                "MOVEMENT",
+                "expressão preposicional",
+                "advérbio de lugar"
+              ]
+            }
           },
           {
             "classification": {
@@ -345,7 +435,15 @@
                 "target": "timelines",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "ponto",
+                "período",
+                "sequência temporal",
+                "tempo verbal"
+              ]
+            }
           },
           {
             "classification": {
@@ -394,7 +492,17 @@
                 "target": "pronouns",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "companhia",
+                "instrumento",
+                "meio",
+                "finalidade",
+                "causa",
+                "construção completa"
+              ]
+            }
           },
           {
             "classification": {
@@ -463,7 +571,16 @@
                 "target": "jaguar",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "combinações lexicais",
+                "verbos",
+                "substantivos",
+                "adjetivos",
+                "combinação inteira"
+              ]
+            }
           }
         ]
       },
