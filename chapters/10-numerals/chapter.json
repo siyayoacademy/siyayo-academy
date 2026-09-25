@@ -1,0 +1,712 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 10,
+    "slug": "numerals",
+    "title": {
+      "en": "NUMERAL",
+      "es": "NUMERAL",
+      "pt": "NUMERAL"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim numeralis, “relativo aos números”, derivado de numerus, “número”. Os numerais dão forma linguística a quantidades, ordem, multiplicação, fração e agrupamento."
+        },
+        "focusWords": {
+          "pt": [
+            "numeralis",
+            "numerus",
+            "número"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Numeral é a palavra ou expressão que representa uma relação numérica. Pode indicar quantidade, posição em uma série, multiplicação, parte de um todo ou agrupamento. Na SIYAYO ACADEMY, observamos primeiro qual relação numérica está sendo construída."
+        },
+        "focusWords": {
+          "pt": [
+            "Numeral",
+            "quantidade",
+            "posição",
+            "multiplicação",
+            "parte",
+            "agrupamento"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "O numeral pode acompanhar um substantivo — three apples / tres manzanas / três maçãs — ou assumir valor substantivado em determinados contextos — the first / el primero / o primeiro. Sua função depende da estrutura da frase e da relação numérica que expressa."
+        },
+        "focusWords": {
+          "pt": [
+            "numeral",
+            "three apples",
+            "tres manzanas",
+            "três maçãs",
+            "the first",
+            "el primero",
+            "o primeiro"
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "quantity",
+            "target": "nouns",
+            "status": "candidate"
+          },
+          {
+            "concept": "order",
+            "target": "sequence",
+            "status": "candidate"
+          },
+          {
+            "concept": "how many / how much",
+            "target": "question-words",
+            "status": "candidate"
+          },
+          {
+            "concept": "dates and time",
+            "target": "adverbs",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, cardinal e ordinal são as formas numéricas centrais: one, two, three; first, second, third. O sistema não marca gênero gramatical nos numerais cardinais, mas apresenta formas e grafias próprias em ordinais e números compostos.",
+          "es": "Em espanhol, os numerais podem apresentar variação em contextos específicos: uno / una, primero / primera, doscientos / doscientas. A forma depende da relação numérica e, em alguns casos, do substantivo que acompanha.",
+          "pt": "Em português, também existem variações em formas específicas: um / uma, dois / duas, primeiro / primeira, duzentos / duzentas. Quantidade e ordem se realizam de forma diferente e devem ser observadas no contexto."
+        },
+        "focusWords": {
+          "en": [
+            "one",
+            "two",
+            "three",
+            "first",
+            "second",
+            "third"
+          ],
+          "es": [
+            "uno",
+            "una",
+            "primero",
+            "primera",
+            "doscientos",
+            "doscientas"
+          ],
+          "pt": [
+            "um",
+            "uma",
+            "dois",
+            "duas",
+            "primeiro",
+            "primeira",
+            "duzentos",
+            "duzentas"
+          ]
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "I bought three apples.",
+              "targets": [
+                "three"
+              ]
+            },
+            {
+              "text": "She finished first.",
+              "targets": [
+                "first"
+              ]
+            },
+            {
+              "text": "We need double the amount.",
+              "targets": [
+                "double"
+              ]
+            },
+            {
+              "text": "I ate half of the cake.",
+              "targets": [
+                "half"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Compré tres manzanas.",
+              "targets": [
+                "tres"
+              ]
+            },
+            {
+              "text": "Ella terminó primera.",
+              "targets": [
+                "primera"
+              ]
+            },
+            {
+              "text": "Necesitamos el doble de la cantidad.",
+              "targets": [
+                "doble"
+              ]
+            },
+            {
+              "text": "Comí la mitad del pastel.",
+              "targets": [
+                "mitad"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Comprei três maçãs.",
+              "targets": [
+                "três"
+              ]
+            },
+            {
+              "text": "Ela terminou em primeiro lugar.",
+              "targets": [
+                "primeiro"
+              ]
+            },
+            {
+              "text": "Precisamos do dobro da quantidade.",
+              "targets": [
+                "dobro"
+              ]
+            },
+            {
+              "text": "Comi metade do bolo.",
+              "targets": [
+                "metade"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Relações Numéricas Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Cardinal",
+              "es": "Cardinal",
+              "pt": "Cardinal"
+            },
+            "sentences": {
+              "en": "I bought three apples.",
+              "es": "Compré tres manzanas.",
+              "pt": "Comprei três maçãs."
+            },
+            "targetWords": {
+              "en": "three",
+              "es": "tres",
+              "pt": "três"
+            },
+            "definition": {
+              "pt": "Indica quantidade numérica: one, two, three / uno, dos, tres / um, dois, três. Responde naturalmente a perguntas de quantidade como HOW MANY? quando contamos elementos discretos."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "quantidade",
+                "HOW MANY"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "Table for two, please.",
+                "es": "Mesa para dos, por favor.",
+                "pt": "Mesa para dois, por favor."
+              },
+              {
+                "en": "I have one question.",
+                "es": "Tengo una pregunta.",
+                "pt": "Tenho uma pergunta."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "how many",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "noun quantity",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "Nice Party table",
+                "target": "experience",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Ordinal",
+              "es": "Ordinal",
+              "pt": "Ordinal"
+            },
+            "sentences": {
+              "en": "It is the second time.",
+              "es": "Es la segunda vez.",
+              "pt": "É a segunda vez."
+            },
+            "targetWords": {
+              "en": "second",
+              "es": "segunda",
+              "pt": "segunda"
+            },
+            "definition": {
+              "pt": "Indica posição ou ordem em uma sequência: first, second, third / primero, segundo, tercero / primeiro, segundo, terceiro. Não expressa simplesmente quantidade; localiza um elemento dentro de uma série ordenada."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "posição",
+                "ordem",
+                "first",
+                "second",
+                "third",
+                "primero",
+                "segundo",
+                "tercero",
+                "primeiro",
+                "segundo",
+                "terceiro"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "She won first place.",
+                "es": "Ella ganó el primer lugar.",
+                "pt": "Ela ganhou o primeiro lugar."
+              },
+              {
+                "en": "Our table is on the second floor.",
+                "es": "Nuestra mesa está en el segundo piso.",
+                "pt": "Nossa mesa fica no segundo andar."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "sequence",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "dates",
+                "target": "time",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Multiplicative",
+              "es": "Multiplicativo",
+              "pt": "Multiplicativo"
+            },
+            "sentences": {
+              "en": "We need double the amount.",
+              "es": "Necesitamos el doble de la cantidad.",
+              "pt": "Precisamos do dobro da quantidade."
+            },
+            "targetWords": {
+              "en": "double",
+              "es": "doble",
+              "pt": "dobro"
+            },
+            "definition": {
+              "pt": "Expressa multiplicação ou aumento proporcional: double / doble / dobro; triple / triple / triplo. A forma gramatical concreta pode variar entre adjetivo, substantivo, advérbio ou construção lexical conforme a língua e o contexto."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "multiplicação",
+                "double",
+                "doble",
+                "dobro",
+                "triple",
+                "triplo"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "We ordered a double portion.",
+                "es": "Pedimos una porción doble.",
+                "pt": "Pedimos uma porção dupla."
+              },
+              {
+                "en": "The recipe makes twice as much.",
+                "es": "La receta rinde el doble.",
+                "pt": "A receita rende o dobro."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "quantity transformation",
+                "target": "thinking-mind",
+                "status": "candidate"
+              },
+              {
+                "concept": "food amount",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Fractional",
+              "es": "Fraccionario",
+              "pt": "Fracionário"
+            },
+            "sentences": {
+              "en": "I ate half of the cake.",
+              "es": "Comí la mitad del pastel.",
+              "pt": "Comi metade do bolo."
+            },
+            "targetWords": {
+              "en": "half",
+              "es": "mitad",
+              "pt": "metade"
+            },
+            "definition": {
+              "pt": "Expressa uma parte de um todo: half / mitad / metade; one third / un tercio / um terço; one quarter / un cuarto / um quarto. A realização lexical e sintática varia bastante entre as três línguas."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "parte de um todo",
+                "half",
+                "mitad",
+                "metade",
+                "one third",
+                "un tercio",
+                "um terço"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "Add half a cup of milk.",
+                "es": "Añade media taza de leche.",
+                "pt": "Adicione meia xícara de leite."
+              },
+              {
+                "en": "We used one third of the cheese.",
+                "es": "Usamos un tercio del queso.",
+                "pt": "Usamos um terço do queijo."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "how much",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "recipe quantity",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Collective / Grouping",
+              "es": "Colectivo / Agrupación",
+              "pt": "Coletivo / Agrupamento"
+            },
+            "sentences": {
+              "en": "We bought a dozen eggs.",
+              "es": "Compramos una docena de huevos.",
+              "pt": "Compramos uma dúzia de ovos."
+            },
+            "targetWords": {
+              "en": "dozen",
+              "es": "docena",
+              "pt": "dúzia"
+            },
+            "definition": {
+              "pt": "Expressa uma quantidade concebida como grupo ou conjunto: dozen / docena / dúzia, pair / par / par. Algumas gramáticas tratam essas formas como substantivos coletivos ou expressões de quantidade; na SIYAYO, preservamos a relação numérica sem apagar a categoria lexical concreta."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "grupo",
+                "conjunto",
+                "dozen",
+                "docena",
+                "dúzia",
+                "pair",
+                "par"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "We need a pair of glasses.",
+                "es": "Necesitamos un par de vasos.",
+                "pt": "Precisamos de um par de copos."
+              },
+              {
+                "en": "A dozen eggs are enough for the recipe.",
+                "es": "Una docena de huevos es suficiente para la receta.",
+                "pt": "Uma dúzia de ovos é suficiente para a receita."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "group quantity",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "shopping quantity",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Hi! Table for two, please.\nIt is our second visit, and we would like half a portion of the starter.",
+            "es": "¡Hola! Mesa para dos, por favor.\nEs nuestra segunda visita y queremos media porción de la entrada.",
+            "pt": "Olá! Mesa para dois, por favor.\nÉ nossa segunda visita e queremos meia porção da entrada.",
+            "targetWords": {
+              "en": [
+                "two",
+                "second",
+                "half"
+              ],
+              "es": [
+                "dos",
+                "segunda",
+                "media"
+              ],
+              "pt": [
+                "dois",
+                "segunda",
+                "meia"
+              ]
+            },
+            "intent": "QUANTITY ORDER AND FRACTION",
+            "intentLabel": "QUANTITY ORDER AND FRACTION",
+            "toroConnections": [
+              {
+                "concept": "greeting",
+                "target": "interjections",
+                "status": "candidate"
+              },
+              {
+                "concept": "cardinal quantity",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "ordinal sequence",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "fraction",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "and / addition",
+                "target": "conjunctions",
+                "status": "candidate"
+              },
+              {
+                "concept": "restaurant / Nice Party",
+                "target": "experience",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "Resumo canônico mostra; Master aprofunda; Mente Pensante identifica a relação numérica; Toro conecta quantidade, ordem e contexto; Experience aplica.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Distinguir quantidade de ordem: THREE conta; THIRD posiciona.",
+        "Preservar cinco relações pedagógicas SIYAYO: cardinal, ordinal, multiplicative, fractional e collective/grouping.",
+        "Não forçar que toda realização numérica pertença à mesma classe lexical em todas as gramáticas; formas como double, half e dozen podem assumir categorias diferentes conforme língua e contexto.",
+        "Conectar numerais com HOW MANY / HOW MUCH sem confundir numeral com Question Word.",
+        "Usar datas, horários, restaurante, receita, compras e posições como contextos naturais para numerais.",
+        "Recuperar da apostila MASTER listas cardinais/ordinais, datas e telling time como sementes para expansão futura, sem sobrecarregar os 10 slides."
+      ],
+      "masterSourceReview": {
+        "role": "legacy-master-cross-reference",
+        "sources": [
+          {
+            "title": "THE TEN KINDS OF WORDS SIYAYO ACADEMY A5.docx",
+            "contributes": [
+              "cardinal",
+              "ordinal",
+              "multiplicative",
+              "Table for two",
+              "second time",
+              "one question"
+            ]
+          },
+          {
+            "title": "STRUCTURE- KIND OF WORDS.docx",
+            "contributes": [
+              "cardinal/ordinal tables",
+              "dates",
+              "telling time",
+              "number spelling"
+            ]
+          }
+        ],
+        "principle": "Use legacy numeral material as a seed bank and normalize it into the current trilingual, relation-first SIYAYO architecture."
+      },
+      "boundaryMap": {
+        "role": "semantic-and-structural-boundary-audit",
+        "contrasts": [
+          {
+            "left": "cardinal",
+            "right": "ordinal",
+            "rule": "Cardinals answer how many; ordinals identify position in an ordered series."
+          },
+          {
+            "left": "numeral relation",
+            "right": "lexical category",
+            "rule": "A numerical meaning does not force one universal part-of-speech analysis across EN, ES and PT."
+          },
+          {
+            "left": "fraction",
+            "right": "quantity",
+            "rule": "Fractions represent a part-whole relation rather than a simple whole-number count."
+          },
+          {
+            "left": "collective/grouping",
+            "right": "collective noun",
+            "rule": "Forms such as dozen/docena/dúzia can lexicalize grouped quantity and may behave noun-like; preserve both numerical meaning and lexical behavior."
+          },
+          {
+            "left": "numeral",
+            "right": "question-word",
+            "rule": "HOW MANY / HOW MUCH ask for quantity; numerals supply a possible numerical answer."
+          }
+        ]
+      },
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "cardinal",
+          "ordinal",
+          "multiplicative",
+          "fractional",
+          "collective/grouping",
+          "basic EN-ES-PT variation",
+          "one integrated restaurant/Nice Party conversation"
+        ],
+        "rule": "The Chapter introduces five numerical relations without attempting to teach full number spelling, dates, time, currencies, decimals or mathematical notation."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full cardinal tables",
+          "full ordinal tables",
+          "number spelling and hyphenation",
+          "dates",
+          "telling time",
+          "decimals and percentages",
+          "money and currencies",
+          "measurements",
+          "large numbers and scale systems",
+          "fractions and mixed numbers",
+          "distributive and iterative expressions",
+          "regional conventions",
+          "advanced EN-ES-PT contrasts"
+        ],
+        "rule": "MASTER expands the numerical system and its real-world conventions."
+      },
+      "futureExpansionScope": {
+        "role": "supplemental-example-layer",
+        "status": "reserved-for-later",
+        "principle": "Keep the 10-slide Chapter concise and preserve numerical seeds for dedicated practice packs.",
+        "possibleFormats": [
+          "dates and calendar pack",
+          "telling-time pack",
+          "restaurant prices and bills",
+          "recipe fractions and quantities",
+          "shopping and currency",
+          "ordinal routes/floors/positions",
+          "cardinal pronunciation and spelling"
+        ],
+        "rule": "Do not overload the Chapter summary; expansion should reuse canonical numerical relations."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 cardinal",
+          "6 ordinal",
+          "7 multiplicative",
+          "8 fractional",
+          "9 collective/grouping",
+          "10 integrated quantity-order-fraction conversation"
+        ],
+        "rule": "Move from the general numerical relation to five representative functions and finish in a familiar social Experience."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
