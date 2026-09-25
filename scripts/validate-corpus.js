@@ -16,6 +16,9 @@ const NOUN_PATH = process.env.SIYAYO_NOUN_PATH
 const ADJECTIVE_PATH = process.env.SIYAYO_ADJECTIVE_PATH
   ? path.resolve(process.env.SIYAYO_ADJECTIVE_PATH)
   : path.join(ROOT, 'data/lexicon/adjectives/adjectives.json');
+const ADVERB_PATH = process.env.SIYAYO_ADVERB_PATH
+  ? path.resolve(process.env.SIYAYO_ADVERB_PATH)
+  : path.join(ROOT, 'data/lexicon/adverbs/adverbs.json');
 const VERB_DIR = path.join(ROOT, 'data/lexicon/verbs');
 const EXPLORER_PATH = path.join(ROOT, 'js/verb-explorer.js');
 
@@ -254,6 +257,33 @@ function validateAdjectives() {
   return { count: items.length, ids };
 }
 
+function validateAdverbs() {
+  if (!fs.existsSync(ADVERB_PATH)) {
+    fail('Missing adverb corpus file', path.relative(ROOT, ADVERB_PATH));
+    return { count: 0, ids: new Set() };
+  }
+  const data = readJson(ADVERB_PATH), items = collectionItems(data);
+  if (!Array.isArray(items)) {
+    fail('adverbs.json must contain items[]', 'adverbs.json');
+    return { count: 0, ids: new Set() };
+  }
+  const ids = new Set();
+  for (const adverb of items) {
+    const where = `adverb/${adverb?.id ?? 'unknown'}`;
+    if (typeof adverb?.id !== 'string' || !adverb.id.trim()) fail('Missing adverb id', where);
+    else if (ids.has(adverb.id)) fail(`Duplicate adverb id '${adverb.id}'`, where);
+    else ids.add(adverb.id);
+    if (adverb?.wordType !== 'adverb') fail("wordType must be 'adverb'", where);
+    validateTrilingual(adverb?.translations, `${where}/translations`);
+    validateTrilingual(adverb?.glosses, `${where}/glosses`);
+    validateTrilingual(adverb?.selfExamples, `${where}/selfExamples`);
+    if (!['time', 'place', 'manner', 'frequency', 'degree'].includes(adverb?.adverbClass)) fail('Invalid adverbClass', where);
+    if (!Array.isArray(adverb?.semanticTags) || !adverb.semanticTags.length) fail('semanticTags must contain at least one tag', where);
+    else if (new Set(adverb.semanticTags).size !== adverb.semanticTags.length) fail('Duplicate semanticTags', where);
+  }
+  return { count: items.length, ids };
+}
+
 function validateExperienceSeeds(nounIds, adjectiveIds, verbIds) {
   if (!fs.existsSync(EXPERIENCE_PATH)) {
     fail('Missing experience seeds file', path.relative(ROOT, EXPERIENCE_PATH));
@@ -301,6 +331,7 @@ let conversationSeeds = 0;
 let experienceSeeds = { experiences: 0, choiceContexts: 0 };
 let nounCorpus = { count: 0, ids: new Set() };
 let adjectiveCorpus = { count: 0, ids: new Set() };
+let adverbCorpus = { count: 0, ids: new Set() };
 
 if (!Array.isArray(actions)) fail('actions.json must contain an array or items[]', 'actions.json');
 if (!Array.isArray(subjects)) fail('subjects.json must contain an array or items[]', 'subjects.json');
@@ -322,6 +353,7 @@ if (Array.isArray(actions) && Array.isArray(subjects)) {
 
   nounCorpus = validateNouns();
   adjectiveCorpus = validateAdjectives();
+  adverbCorpus = validateAdverbs();
   conversationSeeds = validateConversationSeeds(actionIds);
   experienceSeeds = validateExperienceSeeds(nounCorpus.ids, adjectiveCorpus.ids, new Set(actionIds));
 
@@ -347,6 +379,7 @@ console.log(`Experience seeds: ${experienceSeeds.experiences}`);
 console.log(`Contextual choices: ${experienceSeeds.choiceContexts}`);
 console.log(`Canonical nouns: ${nounCorpus.count}`);
 console.log(`Canonical adjectives: ${adjectiveCorpus.count}`);
+console.log(`Canonical adverbs: ${adverbCorpus.count}`);
 console.log('Checks: corpus files, PRESENT/PAST/FUTURE, A/N/I, 8-subject order, EN/ES/PT, targetWords, Explorer wiring, English DID/WILL base-form rules, conversation seeds, experience IDs and contextual choice references/contrast');
 console.log('');
 if (!failures.length) console.log('PASS — canonical corpus, conversation seeds and contextual experience metadata integrity checks passed.');
