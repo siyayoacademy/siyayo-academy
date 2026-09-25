@@ -332,17 +332,75 @@ function formatGoldenSemanticAnchors(
 ) {
   const source = String(text);
   const targets = Array.isArray(focusWords)
-    ? focusWords.map(item => String(item)).filter(Boolean)
+    ? focusWords
+        .map(item => String(item))
+        .filter(Boolean)
+        .sort((left, right) => right.length - left.length)
     : [];
 
   if (!targets.length) {
     return escapeHtml(source);
   }
 
-  const escapedTargets = targets
-    .sort((left, right) => right.length - left.length)
-    .map(target =>
-      target.replace(/[.*+?^${}()|[\]\\]/g, "\\      target.replace(/[.*+?^${}()|[\]\\]/g, "\\function formatTargetSentence(
+  let cursor = 0;
+  let html = "";
+
+  while (cursor < source.length) {
+    let bestIndex = -1;
+    let bestTarget = "";
+
+    for (const target of targets) {
+      const sourceLower = source.toLocaleLowerCase();
+      const targetLower = target.toLocaleLowerCase();
+      let searchFrom = cursor;
+
+      while (searchFrom <= source.length - target.length) {
+        const index = sourceLower.indexOf(targetLower, searchFrom);
+
+        if (index === -1) {
+          break;
+        }
+
+        const before = index > 0 ? source[index - 1] : "";
+        const afterIndex = index + target.length;
+        const after = afterIndex < source.length ? source[afterIndex] : "";
+
+        if (
+          isStandaloneBoundaryCharacter(before) &&
+          isStandaloneBoundaryCharacter(after)
+        ) {
+          if (
+            bestIndex === -1 ||
+            index < bestIndex ||
+            (index === bestIndex && target.length > bestTarget.length)
+          ) {
+            bestIndex = index;
+            bestTarget = target;
+          }
+          break;
+        }
+
+        searchFrom = index + 1;
+      }
+    }
+
+    if (bestIndex === -1) {
+      html += escapeHtml(source.slice(cursor));
+      break;
+    }
+
+    html += escapeHtml(source.slice(cursor, bestIndex));
+    html += '<strong><em class="golden-semantic-anchor">' +
+      escapeHtml(source.slice(bestIndex, bestIndex + bestTarget.length)) +
+      '</em></strong>';
+
+    cursor = bestIndex + bestTarget.length;
+  }
+
+  return html;
+}
+
+function formatTargetSentence(
 ")")
     );
 
