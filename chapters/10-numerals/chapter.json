@@ -165,30 +165,6 @@
         "examples": {
           "en": [
             {
-              "text": "I bought three apples.",
-              "targets": [
-                "three"
-              ]
-            },
-            {
-              "text": "She finished first.",
-              "targets": [
-                "first"
-              ]
-            },
-            {
-              "text": "We need double the amount.",
-              "targets": [
-                "double"
-              ]
-            },
-            {
-              "text": "I ate half of the cake.",
-              "targets": [
-                "half"
-              ]
-            },
-            {
               "text": "1 + 2 = 3 → one plus two equals three.",
               "targets": [
                 "plus",
@@ -231,30 +207,6 @@
           ],
           "es": [
             {
-              "text": "Compré tres manzanas.",
-              "targets": [
-                "tres"
-              ]
-            },
-            {
-              "text": "Ella terminó primera.",
-              "targets": [
-                "primera"
-              ]
-            },
-            {
-              "text": "Necesitamos el doble de la cantidad.",
-              "targets": [
-                "doble"
-              ]
-            },
-            {
-              "text": "Comí la mitad del pastel.",
-              "targets": [
-                "mitad"
-              ]
-            },
-            {
               "text": "1 + 2 = 3 → uno más dos es igual a tres.",
               "targets": [
                 "más",
@@ -296,30 +248,6 @@
             }
           ],
           "pt": [
-            {
-              "text": "Comprei três maçãs.",
-              "targets": [
-                "três"
-              ]
-            },
-            {
-              "text": "Ela terminou em primeiro lugar.",
-              "targets": [
-                "primeiro"
-              ]
-            },
-            {
-              "text": "Precisamos do dobro da quantidade.",
-              "targets": [
-                "dobro"
-              ]
-            },
-            {
-              "text": "Comi metade do bolo.",
-              "targets": [
-                "metade"
-              ]
-            },
             {
               "text": "1 + 2 = 3 → um mais dois é igual a três.",
               "targets": [
@@ -729,7 +657,10 @@
         "Reservar educação financeira como uma expansão natural do Chapter 10: preços, orçamento, porcentagens, juros, risco, probabilidade, moedas e registros de transação.",
         "Tratar blockchain e ledger como contextos futuros de numeracy/digital literacy, não como subtipos de numeral.",
         "Em materiais futuros, separar conceitos de registro, verificação e histórico de transações de recomendações financeiras, investimento ou especulação.",
-        "Usar números como portas para experiências práticas: comparar, medir, calcular, planejar, economizar, estimar e interpretar informação."
+        "Usar números como portas para experiências práticas: comparar, medir, calcular, planejar, economizar, estimar e interpretar informação.",
+        "No Slide 4, concentrar os exemplos visíveis em NUMBERS IN ACTION; os exemplos de Cardinal, Ordinal, Multiplicative e Fractional já aparecem em seus próprios slides.",
+        "Distinguir dígito, numeral, símbolo matemático e palavra-operadora: 2 é uma representação gráfica; TWO é realização linguística; + é símbolo; PLUS nomeia a relação.",
+        "Tratar convenções decimais e monetárias como dependentes de contexto e locale, evitando uma única leitura universal."
       ],
       "masterSourceReview": {
         "role": "legacy-master-cross-reference",
@@ -976,6 +907,37 @@
           "read a simple transaction ledger",
           "trace a simplified chain of verified records"
         ]
+      },
+      "fineStudyExamples": {
+        "role": "numeral-and-notation-boundary-audit",
+        "examples": [
+          {
+            "focus": "number versus operation word",
+            "observe": "1 + 2 = 3 → one plus two equals three.",
+            "insight": "ONE, TWO and THREE are numerals; PLUS and EQUALS express the mathematical relation."
+          },
+          {
+            "focus": "decimal versus money reading",
+            "observe": "10.25 → ten point two five / $10.25 → ten dollars and twenty-five cents.",
+            "insight": "The same digits can be read differently when the context changes from decimal notation to currency."
+          },
+          {
+            "focus": "decimal separator conventions",
+            "observe": "0.010 in English notation / 0,010 in common Portuguese and Spanish notation.",
+            "insight": "Point and comma conventions vary by language and locale; learners should identify context before reading the number."
+          },
+          {
+            "focus": "cardinal versus ordinal",
+            "observe": "two guests / the second visit",
+            "insight": "TWO counts; SECOND orders."
+          },
+          {
+            "focus": "numeric meaning versus lexical category",
+            "observe": "double / half / dozen",
+            "insight": "These forms express numerical relations, but their grammatical category can vary with construction and language."
+          }
+        ],
+        "principle": "Read the numerical relation first, then identify how language encodes number, operation, order, fraction, grouping, money or measurement."
       }
     }
   },
