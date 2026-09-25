@@ -22,6 +22,12 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim interiectio, de intericere: “lançar entre”, “interpor”. O nome sugere algo inserido no fluxo da fala. Interjeições costumam aparecer como unidades relativamente independentes que expressam reação, chamamento, contato social ou atitude do falante."
+        },
+        "focusWords": {
+          "pt": [
+            "lançar entre",
+            "interpor"
+          ]
         }
       },
       {
@@ -30,6 +36,11 @@
         "title": "Definição",
         "content": {
           "pt": "Interjeição é uma palavra ou expressão curta usada para manifestar reação, emoção, chamamento, saudação, hesitação ou outra atitude comunicativa. Na SIYAYO ACADEMY, o foco inicial é perceber o efeito pragmático e a entonação, sem reduzir a categoria a uma lista fixa de sons."
+        },
+        "focusWords": {
+          "pt": [
+            "Interjeição"
+          ]
         }
       },
       {
@@ -60,7 +71,16 @@
             "target": "sentence-order",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "interjeição",
+            "Wow",
+            "Ay",
+            "Uau",
+            "Oh"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -173,7 +193,30 @@
             "target": "words",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "wow",
+            "oh",
+            "hey",
+            "ouch",
+            "uh"
+          ],
+          "es": [
+            "vaya",
+            "ay",
+            "oye",
+            "hola",
+            "eh"
+          ],
+          "pt": [
+            "uau",
+            "ai",
+            "ei",
+            "olá",
+            "ah"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -271,7 +314,14 @@
                 "target": "words",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Ouch",
+                "Ay",
+                "Ai"
+              ]
+            }
           },
           {
             "classification": {
@@ -339,7 +389,7 @@
               "pt": "Olá"
             },
             "definition": {
-              "pt": "Inicia, mantém ou encerra contato social. Saudações podem aparecer como interjeições, fórmulas discursivas ou expressões sociais conforme a gramática adotada. Na SIYAYO ACADEMY, o A5 observa primeiro a função: abrir contato, reconhecer alguém, apresentar uma pessoa, acolher ou despedir-se."
+              "pt": "Inicia, mantém ou encerra contato social. Saudações podem aparecer como interjeições, fórmulas discursivas ou expressões sociais conforme a gramática adotada. Na SIYAYO ACADEMY, observamos primeiro a função: abrir contato, reconhecer alguém, apresentar uma pessoa, acolher ou despedir-se."
             },
             "relatedExamples": [
               {
@@ -398,7 +448,7 @@
               "pt": "Ah"
             },
             "definition": {
-              "pt": "Pode sinalizar hesitação, busca de palavra, planejamento da fala ou manutenção do turno conversacional. Nem toda pausa vocalizada precisa ser tratada como interjeição em análises linguísticas finas; no A5, observamos sua função comunicativa antes de aprofundar a classificação."
+              "pt": "Pode sinalizar hesitação, busca de palavra, planejamento da fala ou manutenção do turno conversacional. Nem toda pausa vocalizada precisa ser tratada como interjeição em análises linguísticas finas; em nosso estudo fino, observamos primeiro sua função comunicativa antes de aprofundar a classificação."
             },
             "relatedExamples": [
               {
