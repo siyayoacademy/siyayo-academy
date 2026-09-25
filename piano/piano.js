@@ -118,6 +118,18 @@
   function activateKey(button, key) {
     playTone(key.frequency);
 
+    window.dispatchEvent(new CustomEvent("siyayo:musical-event", {
+      detail: {
+        type: "note",
+        source: "piano-flat",
+        note: key.id,
+        solfege: key.solfege,
+        mode,
+        word: currentLabel(key),
+        payload: { en:key.en, es:key.es, pt:key.pt }
+      }
+    }));
+
     button.classList.remove("is-active");
     void button.offsetWidth;
     button.classList.add("is-active", "has-memory");
@@ -161,5 +173,52 @@
     button.addEventListener("click", () => setMode(button.dataset.mode));
   });
 
+  const frondosa = document.getElementById("frondosa");
+  const leaves = [...document.querySelectorAll(".leaf")];
+
+  function leafLabelForMode(key) {
+    if (mode === "sound" || mode === "solfege") return key.solfege;
+    if (mode === "tripiano") return key.en + " · " + key.es + " · " + key.pt;
+    return key[mode];
+  }
+
+  function refreshFrondosaLabels() {
+    leaves.forEach((leaf, index) => {
+      const label = leaf.querySelector("span");
+      if (label) label.textContent = leafLabelForMode(keys[index]);
+    });
+  }
+
+  window.addEventListener("siyayo:musical-event", event => {
+    const detail = event.detail || {};
+    if (detail.type !== "note" || !detail.note) return;
+    const leaf = leaves.find(item => item.dataset.note === detail.note);
+    if (!leaf) return;
+
+    leaf.classList.remove("is-resonating");
+    if (frondosa) frondosa.classList.remove("is-resonating");
+    void leaf.offsetWidth;
+    leaf.classList.add("is-resonating");
+    if (frondosa) frondosa.classList.add("is-resonating");
+
+    window.setTimeout(() => {
+      leaf.classList.remove("is-resonating");
+      if (frondosa) frondosa.classList.remove("is-resonating");
+    }, 660);
+  });
+
+  leaves.forEach((leaf, index) => {
+    leaf.addEventListener("click", () => {
+      const key = keys[index];
+      const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+      if (pianoKey) activateKey(pianoKey, key);
+    });
+  });
+
+  modeButtons.forEach(button => {
+    button.addEventListener("click", refreshFrondosaLabels);
+  });
+
   refreshLabels();
+  refreshFrondosaLabels();
 })();
