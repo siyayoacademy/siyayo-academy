@@ -342,8 +342,8 @@ function formatGoldenSemanticAnchors(
   const escapedTargets = targets
     .sort((left, right) => right.length - left.length)
     .map(target =>
-      target.replace(/[.*+?^${}()|[\]\\]/g, "\\function formatTargetSentence(
-")
+      target.replace(/[.*+?^${}()|[\]\\]/g, "\\      target.replace(/[.*+?^${}()|[\]\\]/g, "\\function formatTargetSentence(
+")")
     );
 
   const pattern = new RegExp(
