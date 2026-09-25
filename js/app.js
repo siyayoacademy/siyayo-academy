@@ -326,6 +326,40 @@ function findStandaloneTargetIndex(
   return -1;
 }
 
+function formatGoldenSemanticAnchors(
+  text = "",
+  focusWords = []
+) {
+  const source = String(text);
+  const targets = Array.isArray(focusWords)
+    ? focusWords.map(item => String(item)).filter(Boolean)
+    : [];
+
+  if (!targets.length) {
+    return escapeHtml(source);
+  }
+
+  const escapedTargets = targets
+    .sort((left, right) => right.length - left.length)
+    .map(target =>
+      target.replace(/[.*+?^${}()|[\]\\]/g, "\\function formatTargetSentence(
+")
+    );
+
+  const pattern = new RegExp(
+    "(^|[^\\p{L}\\p{N}_])(" + escapedTargets.join("|") + ")(?=$|[^\\p{L}\\p{N}_])",
+    "giu"
+  );
+
+  return escapeHtml(source).replace(
+    pattern,
+    (_match, prefix, target) =>
+      escapeHtml(prefix) +
+      '<strong><em class="golden-semantic-anchor">' + escapeHtml(target) + '</em></strong>'
+  );
+}
+
+
 function formatTargetSentence(
   sentence = "",
   targetWord = ""
@@ -526,7 +560,12 @@ function createLanguageLines(
 
         speechLanguage:
           speechLanguage ??
-          language.code
+          language.code,
+
+        focusWords:
+          options.focusWords?.[
+            language.code
+          ] ?? []
       })
     );
 }
@@ -563,7 +602,8 @@ function buildSlides(chapterData) {
           type: "paragraph",
           sectionId: section.id,
           title: section.title,
-          content
+          content,
+          ...(section.focusWords ? { focusWords: section.focusWords } : {})
         });
 
         break;
@@ -588,7 +628,10 @@ function buildSlides(chapterData) {
             section.labels,
 
           speechLanguage:
-            section.speechLanguage
+            section.speechLanguage,
+
+          focusWords:
+            section.focusWords
         }
       ),
     ...(section.examples ? { examples: section.examples } : {})
@@ -631,6 +674,7 @@ function buildSlides(chapterData) {
                   item.targetWords
                 ),
               ...(item.definition ? { definition: item.definition } : {}),
+              ...(item.definitionFocusWords ? { definitionFocusWords: item.definitionFocusWords } : {}),
               ...(item.relatedVocabulary ? { relatedVocabulary: item.relatedVocabulary } : {}),
               ...(item.relatedExamples ? { relatedExamples: item.relatedExamples } : {}),
               ...(item.masterConnections ? { masterConnections: item.masterConnections } : {}),
@@ -919,7 +963,7 @@ function renderGrammarLanguagePanels(lines = [], examples = {}) {
           data-definition-speech-text="${escapeHtml(line.text ?? "")}"
           aria-label="Ouvir explicação"
         >
-          <p class="grammar-definition-text">${escapeHtml(line.text ?? "")}</p>
+          <p class="grammar-definition-text">${formatGoldenSemanticAnchors(line.text ?? "", line.focusWords ?? [])}</p>
         </div>
         ${exampleItems.length ? `
           <div class="grammar-examples" data-example-language="${line.language}">
@@ -976,8 +1020,9 @@ function renderSlideContent(slide) {
             class="section-content explanatory-text"
             tabindex="0"
           >
-            ${escapeHtml(
-              slide.content ?? ""
+            ${formatGoldenSemanticAnchors(
+              slide.content ?? "",
+              slide.focusWords?.pt ?? slide.focusWords ?? []
             )}
           </p>
 
@@ -1026,7 +1071,7 @@ function renderSlideContent(slide) {
             )}
           </h2>
 
-          ${slide.definition?.pt ? `<div class="example-definition" role="button" tabindex="0" data-example-definition-speech-language="pt" data-example-definition-speech-text="${escapeHtml(slide.definition.pt)}" aria-label="Ouvir explicação"><p class="section-content slide-definition">${escapeHtml(slide.definition.pt)}</p></div>` : ""}
+          ${slide.definition?.pt ? `<div class="example-definition" role="button" tabindex="0" data-example-definition-speech-language="pt" data-example-definition-speech-text="${escapeHtml(slide.definition.pt)}" aria-label="Ouvir explicação"><p class="section-content slide-definition">${formatGoldenSemanticAnchors(slide.definition.pt, slide.definitionFocusWords?.pt ?? slide.definitionFocusWords ?? [])}</p></div>` : ""}
 
           <div class="trilingual-content example-language-lines">
             ${renderLanguageLines(
