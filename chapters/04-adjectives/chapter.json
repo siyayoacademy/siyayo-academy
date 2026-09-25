@@ -22,6 +22,14 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim adiectivum, “aquilo que é acrescentado”. O adjetivo acrescenta uma propriedade, característica, classificação, relação ou avaliação a um substantivo ou a um referente."
+        },
+        "focusWords": {
+          "pt": [
+            "adiectivum",
+            "adjetivo",
+            "propriedade",
+            "característica"
+          ]
         }
       },
       {
@@ -30,6 +38,16 @@
         "title": "Definição",
         "content": {
           "pt": "Adjetivo é a classe de palavras que caracteriza, qualifica, classifica ou relaciona um substantivo ou referente. Pode aparecer junto ao substantivo ou ligado a ele por verbos como BE, SER, ESTAR, parecer, look, seem e outros verbos de ligação."
+        },
+        "focusWords": {
+          "pt": [
+            "Adjetivo",
+            "caracteriza",
+            "qualifica",
+            "classifica",
+            "relaciona",
+            "verbos de ligação"
+          ]
         }
       },
       {
@@ -60,7 +78,18 @@
             "target": "verbs",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "grupo nominal",
+            "predicativo",
+            "propriedade",
+            "estado",
+            "posição",
+            "concordância",
+            "comparação"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -196,7 +225,36 @@
             "target": "shopping-for-dinner",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "adjetivo atributivo",
+            "gênero",
+            "número",
+            "predicativo",
+            "-er/-est",
+            "more/most",
+            "graduável"
+          ],
+          "es": [
+            "concordam",
+            "gênero",
+            "número",
+            "posição",
+            "comparação",
+            "más... que",
+            "graduável"
+          ],
+          "pt": [
+            "concordam",
+            "gênero",
+            "número",
+            "posição",
+            "comparação",
+            "mais... que/do que",
+            "graduável"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -250,7 +308,15 @@
                 "es": "La experiencia fue maravillosa.",
                 "pt": "A experiência foi maravilhosa."
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "qualidade",
+                "propriedade",
+                "avaliação",
+                "característica"
+              ]
+            }
           },
           {
             "classification": {
@@ -299,7 +365,15 @@
                 "target": "words",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "relacionais",
+                "classificadores",
+                "categoria",
+                "subtipo"
+              ]
+            }
           },
           {
             "classification": {
@@ -348,7 +422,15 @@
                 "target": "state",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "atributivo",
+                "grupo nominal",
+                "predicativo",
+                "relação verbal"
+              ]
+            }
           },
           {
             "classification": {
@@ -402,7 +484,16 @@
                 "target": "quality",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "posição",
+                "inglês",
+                "espanhol",
+                "português",
+                "concordância"
+              ]
+            }
           },
           {
             "classification": {
@@ -451,7 +542,17 @@
                 "target": "words",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "comparação",
+                "intensidade",
+                "graduável",
+                "-er/-est",
+                "more/most",
+                "más/mais"
+              ]
+            }
           }
         ]
       },
