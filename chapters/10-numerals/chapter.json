@@ -582,28 +582,28 @@
         "title": "Aplicação em Conversação",
         "items": [
           {
-            "en": "Hi! Table for two, please.\nIt is our second visit, and we would like half a portion of the starter.",
-            "es": "¡Hola! Mesa para dos, por favor.\nEs nuestra segunda visita y queremos media porción de la entrada.",
-            "pt": "Olá! Mesa para dois, por favor.\nÉ nossa segunda visita e queremos meia porção da entrada.",
+            "en": "Hi! Welcome to the Nice Party.\nAna is from Brazil. Brazil's flag has twenty-seven stars.\nKen is from Japan. Japan's flag has two main colors.\nWhich flag has more stars?",
+            "es": "¡Hola! Bienvenido a la Nice Party.\nAna es de Brasil. La bandera de Brasil tiene veintisiete estrellas.\nKen es de Japón. La bandera de Japón tiene dos colores principales.\n¿Qué bandera tiene más estrellas?",
+            "pt": "Olá! Bem-vindo à Nice Party.\nAna é do Brasil. A bandeira do Brasil tem vinte e sete estrelas.\nKen é do Japão. A bandeira do Japão tem duas cores principais.\nQual bandeira tem mais estrelas?",
             "targetWords": {
               "en": [
+                "twenty-seven",
                 "two",
-                "second",
-                "half"
+                "more"
               ],
               "es": [
+                "veintisiete",
                 "dos",
-                "segunda",
-                "media"
+                "más"
               ],
               "pt": [
-                "dois",
-                "segunda",
-                "meia"
+                "vinte e sete",
+                "duas",
+                "mais"
               ]
             },
-            "intent": "QUANTITY ORDER AND FRACTION",
-            "intentLabel": "QUANTITY ORDER AND FRACTION",
+            "intent": "INTERNATIONAL NUMBERS SCENE",
+            "intentLabel": "INTERNATIONAL NUMBERS SCENE",
             "toroConnections": [
               {
                 "concept": "greeting",
@@ -611,27 +611,27 @@
                 "status": "candidate"
               },
               {
-                "concept": "cardinal quantity",
+                "concept": "country introduction",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "cardinal numbers",
                 "target": "numerals",
                 "status": "candidate"
               },
               {
-                "concept": "ordinal sequence",
-                "target": "numerals",
+                "concept": "colors",
+                "target": "adjectives",
                 "status": "candidate"
               },
               {
-                "concept": "fraction",
-                "target": "numerals",
+                "concept": "which / comparison",
+                "target": "question-words",
                 "status": "candidate"
               },
               {
-                "concept": "and / addition",
-                "target": "conjunctions",
-                "status": "candidate"
-              },
-              {
-                "concept": "restaurant / Nice Party",
+                "concept": "Nice Party international guests",
                 "target": "experience",
                 "status": "candidate"
               }
@@ -660,7 +660,10 @@
         "Usar números como portas para experiências práticas: comparar, medir, calcular, planejar, economizar, estimar e interpretar informação.",
         "No Slide 4, concentrar os exemplos visíveis em NUMBERS IN ACTION; os exemplos de Cardinal, Ordinal, Multiplicative e Fractional já aparecem em seus próprios slides.",
         "Distinguir dígito, numeral, símbolo matemático e palavra-operadora: 2 é uma representação gráfica; TWO é realização linguística; + é símbolo; PLUS nomeia a relação.",
-        "Tratar convenções decimais e monetárias como dependentes de contexto e locale, evitando uma única leitura universal."
+        "Tratar convenções decimais e monetárias como dependentes de contexto e locale, evitando uma única leitura universal.",
+        "Usar bandeiras e países como contexto introdutório para cardinais, comparação e Question Words.",
+        "A NICE PARTY pode receber convidados internacionais para conectar números, cores, países e apresentações sociais.",
+        "Reservar WORLD NUMBERS / NÚMEROS DEL MUNDO / NÚMEROS DO MUNDO como módulo futuro de expansão internacional."
       ],
       "masterSourceReview": {
         "role": "legacy-master-cross-reference",
@@ -938,6 +941,35 @@
           }
         ],
         "principle": "Read the numerical relation first, then identify how language encodes number, operation, order, fraction, grouping, money or measurement."
+      },
+      "worldNumbersBridge": {
+        "role": "international-numeracy-bridge",
+        "status": "reserved-for-expansion",
+        "principle": "Use countries, flags, colors, stars, currencies, populations and languages as real-world contexts for numerals and Question Words without turning the Chapter into an encyclopedia.",
+        "starterContexts": [
+          "Brazil: flag stars and colors",
+          "Japan: flag colors",
+          "international guests at the Nice Party",
+          "country comparisons using how many / which / more / fewer"
+        ],
+        "futureModule": {
+          "title": {
+            "en": "WORLD NUMBERS",
+            "es": "NÚMEROS DEL MUNDO",
+            "pt": "NÚMEROS DO MUNDO"
+          },
+          "ideas": [
+            "flags and colors",
+            "countries and regions",
+            "population",
+            "languages",
+            "currencies",
+            "distances",
+            "time zones",
+            "international prices and measurements"
+          ],
+          "rule": "Use sourced, current data for population, language counts and other changing or classification-sensitive facts."
+        }
       }
     }
   },
