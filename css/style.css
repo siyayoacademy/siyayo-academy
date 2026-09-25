@@ -2174,3 +2174,20 @@ transform:
       0 0 6px rgba(242, 216, 138, 0.30);
   }
 }
+
+
+/* =========================================================
+   CHAPTER 10 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-10 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-10.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-10.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
