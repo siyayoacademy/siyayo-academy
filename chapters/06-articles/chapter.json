@@ -73,9 +73,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, the marca referência definida e é invariável. A/an marca referência indefinida singular; a escolha entre a e an depende do som inicial seguinte, não simplesmente da letra. Em vários contextos genéricos ou incontáveis, o inglês pode usar artigo zero.",
-          "es": "Em espanhol, os artigos definidos e indefinidos normalmente concordam em gênero e número com o substantivo: el/la/los/las e un/una/unos/unas. O uso do artigo pode divergir do inglês em referências genéricas, nomes próprios e outras construções.",
-          "pt": "Em português, os artigos definidos e indefinidos normalmente concordam em gênero e número com o substantivo: o/a/os/as e um/uma/uns/umas. O uso pode variar conforme referência, construção e variedade, inclusive em certos nomes próprios."
+          "en": "Em inglês, the marca referência definida e é invariável. A/an marca referência indefinida singular; a escolha entre a e an depende do som inicial do elemento seguinte, não simplesmente da letra. Em referências genéricas, especialmente com plurais e nomes incontáveis, o inglês frequentemente usa artigo zero.",
+          "es": "Em espanhol, os artigos definidos e indefinidos normalmente concordam em gênero e número com o substantivo: el/la/los/las e un/una/unos/unas. Em referência genérica, o artigo definido é frequente em contextos em que o inglês usa artigo zero.",
+          "pt": "Em português, os artigos definidos e indefinidos normalmente concordam em gênero e número com o substantivo: o/a/os/as e um/uma/uns/umas. Em referência genérica, o definido é frequente, mas o artigo também pode ser omitido conforme construção, variedade e efeito discursivo."
         },
         "examples": {
           "en": [
@@ -197,7 +197,7 @@
               "pt": "O"
             },
             "definition": {
-              "pt": "Apresenta um referente como identificável, conhecido ou recuperável no contexto. O valor de “definido” depende da relação entre expressão e contexto, não apenas de o objeto existir fisicamente."
+              "pt": "Apresenta o referente como identificável no contexto discursivo — por já ter sido mencionado, ser único na situação ou ser recuperável pelo conhecimento compartilhado. Definido não significa simplesmente “específico” nem “existente”; a interpretação depende da relação entre expressão, contexto e interlocutores."
             },
             "relatedExamples": [
               {
@@ -236,7 +236,7 @@
               "pt": "uma"
             },
             "definition": {
-              "pt": "Introduz um referente sem pressupor que o interlocutor já saiba exatamente qual é. Em inglês, a/an é singular; espanhol e português também possuem formas indefinidas plurais."
+              "pt": "Introduz um referente sem pressupor que o interlocutor consiga identificar exatamente qual indivíduo está em foco. Esse referente pode ser específico para quem fala ou apenas um membro qualquer de uma classe. Em inglês, a/an é singular; espanhol e português também possuem formas indefinidas plurais."
             },
             "relatedExamples": [
               {
@@ -275,7 +275,7 @@
               "pt": "os"
             },
             "definition": {
-              "pt": "Em espanhol e português, o artigo participa da concordância de gênero e número do grupo nominal. Em inglês, the não varia, e a/an não codificam gênero; a/an alternam conforme o som inicial da palavra seguinte."
+              "pt": "Em espanhol e português, os artigos normalmente participam da concordância de gênero e número do grupo nominal. Em inglês, the é invariável e a/an não codificam gênero; a alternância a/an depende do som inicial do elemento seguinte, não simplesmente da letra escrita."
             },
             "relatedExamples": [
               {
@@ -324,9 +324,14 @@
               "pt": "Os"
             },
             "definition": {
-              "pt": "As três línguas não distribuem artigos da mesma maneira em referências genéricas. O inglês frequentemente usa artigo zero com plurais ou incontáveis em sentido geral; espanhol e português usam com frequência artigo definido em contextos equivalentes. É uma diferença de sistema, não uma tradução palavra por palavra."
+              "pt": "A referência genérica mostra diferenças importantes entre as três línguas. O inglês frequentemente usa artigo zero com plurais e nomes incontáveis em sentido geral; o espanhol normalmente usa artigo definido em muitos desses contextos; o português admite com frequência artigo definido, mas também pode ocorrer sem artigo conforme construção, variedade e efeito discursivo. Não é uma tradução palavra por palavra."
             },
             "relatedExamples": [
+              {
+                "en": "Books are useful.",
+                "es": "Los libros son útiles.",
+                "pt": "Os livros são úteis."
+              },
               {
                 "en": "Music is important.",
                 "es": "La música es importante.",
@@ -363,7 +368,7 @@
               "pt": "Qual"
             },
             "definition": {
-              "pt": "Artigos pertencem ao sistema mais amplo de elementos que organizam o grupo nominal. Formas como which/qué/qual, this/este e my/mi/meu podem ocupar posições determinativas, mas não devem ser reclassificadas automaticamente como artigos. A SIYAYO preserva a diferença entre forma lexical, função e tradição gramatical de cada língua."
+              "pt": "Na SIYAYO ACADEMY, ARTICLE é tratado como classe lexical introdutória, enquanto “determiner” descreve uma posição/função mais ampla no grupo nominal. Em análises linguísticas modernas, artigos podem ser tratados como um tipo de determinante; demonstrativos, possessivos e interrogativos também podem ocupar funções determinativas sem se tornarem artigos. Preservamos forma, função e tradição gramatical sem achatá-las."
             },
             "relatedExamples": [
               {
@@ -494,7 +499,12 @@
         "Apresentar artigo zero como contraste estrutural especialmente relevante em inglês, sem assumir ausência universal de artigo nas outras línguas.",
         "Reservar contrações com preposições, nomes próprios, usos institucionais, geográficos, genéricos finos e variação regional para a MASTER.",
         "Usar Book a room como microintegração: book funciona como VERB, a como ARTICLE e room como NOUN; a mesma forma book também pode ser NOUN em outro contexto.",
-        "Usar booking como exemplo de mudança funcional e lexical no contexto de viagem, sem transformar o Chapter 6 em uma lição de derivação ou polissemia."
+        "Usar booking como exemplo de mudança funcional e lexical no contexto de viagem, sem transformar o Chapter 6 em uma lição de derivação ou polissemia.",
+        "Não equiparar definite a specific: um indefinido pode ter referente específico para quem fala, enquanto definite pressupõe identificabilidade no contexto.",
+        "Tratar a/an como alternância fonológica: an hour e a university mostram que a escolha depende do som inicial, não da letra.",
+        "Tratar zero article como ausência de artigo em determinado contexto, não como uma forma lexical adicional da classe ARTICLE.",
+        "No contraste genérico, evitar a regra absoluta de que português sempre exige artigo definido; a distribuição varia por construção e uso.",
+        "Preservar a diferença entre classe lexical e função determinativa: artigos podem integrar o sistema de determinantes sem tornar demonstrativos, possessivos ou interrogativos em artigos."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -614,6 +624,36 @@
         ],
         "principle": "A short travel expression can expose ARTICLE, VERB and NOUN simultaneously while showing that similar forms may change grammatical function by context.",
         "rule": "Keep the travel bridge compact in Chapter 6; deeper book/booking polysemy and derivation belong to internal lexical pages and VERB/NOUN study."
+      },
+      "boundaryMap": {
+        "role": "semantic-boundary-audit",
+        "contrasts": [
+          {
+            "left": "definite",
+            "right": "specific",
+            "rule": "definiteness concerns contextual identifiability; specificity concerns whether a particular referent is intended"
+          },
+          {
+            "left": "a-an",
+            "right": "orthography",
+            "rule": "selection follows the next pronounced sound, not simply the written first letter"
+          },
+          {
+            "left": "zero-article",
+            "right": "article-form",
+            "rule": "zero article is contextual absence of an overt article, not a lexical article token"
+          },
+          {
+            "left": "article",
+            "right": "determiner",
+            "rule": "ARTICLE is a lexical category in the Chapter; determiner is a broader grammatical function/system"
+          },
+          {
+            "left": "generic-reference",
+            "right": "word-for-word-translation",
+            "rule": "EN, ES and PT distribute overt articles differently in generic noun phrases"
+          }
+        ]
       }
     }
   },
