@@ -2064,3 +2064,20 @@ transform:
 .chapter-4.current-grammar .grammar-examples {
   margin-top: 10px;
 }
+
+
+/* =========================================================
+   CHAPTER 5 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-5 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-5.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-5.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
