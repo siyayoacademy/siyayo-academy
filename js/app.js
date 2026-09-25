@@ -131,8 +131,24 @@ function renderAcademyChapterStack(academy) {
   stack.innerHTML = entries.map(entry => {
     const title = [entry.title?.en, entry.title?.es, entry.title?.pt].filter(Boolean).join(" · ");
     const active = entry.status === "active";
-    return `<button class="academy-chapter-link${active ? " is-active" : ""}" type="button" data-academy-chapter="${escapeHtml(entry.slug || "")}" data-status="${escapeHtml(entry.status || "")}" aria-disabled="${active ? "false" : "true"}"><span>${escapeHtml(entry.number)}</span><strong>${escapeHtml(title)}</strong></button>`;
+    const available = ["active", "ready"].includes(entry.status);
+    return `<button class="academy-chapter-link${active ? " is-active" : ""}" type="button" data-academy-chapter="${escapeHtml(entry.slug || "")}" data-status="${escapeHtml(entry.status || "")}" aria-disabled="${available ? "false" : "true"}"><span>${escapeHtml(entry.number)}</span><strong>${escapeHtml(title)}</strong></button>`;
   }).join("");
+
+  stack.querySelectorAll("[data-academy-chapter]").forEach(button => {
+    button.addEventListener("click", () => {
+      if (button.getAttribute("aria-disabled") === "true") return;
+
+      const entries = academyChapterEntries();
+      const index = entries.findIndex(
+        entry => entry.slug === button.dataset.academyChapter
+      );
+
+      if (index >= 0) {
+        openChapterAtIndex(index);
+      }
+    });
+  });
 }
 
 
@@ -1213,7 +1229,10 @@ function renderSlideContent(slide) {
    ======================================== */
 
 function academyChapterEntries() {
-  return currentAcademyData?.chapters ?? [];
+  return [
+    ...(currentAcademyData?.chapters ?? []),
+    ...(currentAcademyData?.extraModules ?? [])
+  ];
 }
 
 function chapterIsAvailable(chapterReference) {
@@ -1281,6 +1300,13 @@ async function openChapterAtIndex(index, options = {}) {
 
   currentChapterIndex = boundedIndex;
   currentSlideIndex = 0;
+
+  document.querySelectorAll("[data-academy-chapter]").forEach(button => {
+    button.classList.toggle(
+      "is-active",
+      button.dataset.academyChapter === chapterReference.slug
+    );
+  });
 
   if (!chapterIsAvailable(chapterReference)) {
     currentChapterData = null;
@@ -1413,7 +1439,7 @@ function renderCurrentSlide() {
       <header class="chapter-header">
 
         <p class="chapter-number">
-          Chapter ${chapter.number}
+          ${chapter.slug === "interrogative-words" ? "EXTRA · QW" : `Chapter ${chapter.number}`}
         </p>
 
         <h1 class="chapter-title">
