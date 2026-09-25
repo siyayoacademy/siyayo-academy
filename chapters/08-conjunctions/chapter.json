@@ -349,7 +349,7 @@
               "pt": "porque"
             },
             "definition": {
-              "pt": "Causa explica o motivo de uma situação; resultado apresenta a consequência. BECAUSE / PORQUE introduz causa, enquanto SO / ASÍ QUE / ENTÃO apresenta resultado em construções típicas. WHY / POR QUÉ / POR QUÊ pergunta pela razão; a conjunção causal conecta a resposta à oração."
+              "pt": "Causa explica o motivo de uma situação; resultado apresenta a consequência. BECAUSE / PORQUE introduz uma oração causal. Outras estruturas também podem expressar causa sem serem conjunções, como BECAUSE OF e DUE TO, que funcionam como expressões prepositivas antes de um nome ou grupo nominal. WHY / POR QUÉ / POR QUÊ pergunta pela razão; a forma escolhida para responder depende da estrutura."
             },
             "relatedExamples": [
               {
@@ -358,9 +358,14 @@
                 "pt": "Por que você ficou em casa? Porque estava chovendo."
               },
               {
-                "en": "It was raining, so we stayed home.",
-                "es": "Estaba lloviendo, así que nos quedamos en casa.",
-                "pt": "Estava chovendo, então ficamos em casa."
+                "en": "We stayed home because of the rain.",
+                "es": "Nos quedamos en casa por la lluvia.",
+                "pt": "Ficamos em casa por causa da chuva."
+              },
+              {
+                "en": "The flight was delayed due to bad weather.",
+                "es": "El vuelo se retrasó debido al mal tiempo.",
+                "pt": "O voo atrasou devido ao mau tempo."
               }
             ],
             "toroConnections": [
@@ -370,6 +375,11 @@
                 "status": "candidate"
               },
               {
+                "concept": "because vs because of vs due to",
+                "target": "prepositions",
+                "status": "contrast-review"
+              },
+              {
                 "concept": "cause-result relation",
                 "target": "thinking-mind",
                 "status": "candidate"
@@ -377,6 +387,11 @@
               {
                 "concept": "time/tense separate layer",
                 "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel delay context",
+                "target": "travel",
                 "status": "candidate"
               }
             ]
@@ -512,7 +527,9 @@
         "Não ensinar que a conjunção 'carrega' toda a estrutura: IF, BECAUSE e ALTHOUGH conectam relações, mas a oração ainda precisa de seus próprios constituintes.",
         "Usar pares de relação como BECAUSE versus ALTHOUGH para mostrar que trocar a conjunção muda a lógica, mesmo quando o restante das palavras permanece parecido.",
         "Evitar regras absolutas como 'because although é sempre impossível': combinações de subordinação podem existir em estruturas encaixadas; o A5 deve ensinar primeiro uma relação por vez e deixar encaixamentos para a MASTER.",
-        "Aproveitar erros de aprendiz como evidência de relação lógica pretendida antes de corrigir ordem, sujeito, verbo, tempo ou modo."
+        "Aproveitar erros de aprendiz como evidência de relação lógica pretendida antes de corrigir ordem, sujeito, verbo, tempo ou modo.",
+        "Usar BECAUSE / BECAUSE OF / DUE TO como contraste de arquitetura causal: mesma relação semântica geral, categorias e estruturas diferentes.",
+        "Classificar DUE TO e BECAUSE OF como expressões prepositivas causais no modelo introdutório da SIYAYO, preservando BECAUSE como conjunção que introduz oração."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -626,6 +643,11 @@
             "left": "logical-relation",
             "right": "word-for-word-equivalence",
             "rule": "Equivalent discourse relations may use different conjunctions, punctuation and verb grammar across EN, ES and PT."
+          },
+          {
+            "left": "because",
+            "right": "because-of/due-to",
+            "rule": "BECAUSE introduces a clause; BECAUSE OF and DUE TO introduce a nominal complement in the introductory SIYAYO model. Similar causal meaning does not make them the same grammatical category."
           }
         ]
       },
@@ -704,6 +726,34 @@
           }
         ],
         "principle": "Use learner-like contrasts to identify the intended relation first, then repair structure without confusing the conjunction with the rest of the clause."
+      },
+      "causeExpressionBridge": {
+        "role": "cross-category-cause-bridge",
+        "examples": [
+          {
+            "en": "We stayed home because it was raining.",
+            "es": "Nos quedamos en casa porque estaba lloviendo.",
+            "pt": "Ficamos em casa porque estava chovendo.",
+            "structure": "because + clause",
+            "category": "conjunction"
+          },
+          {
+            "en": "We stayed home because of the rain.",
+            "es": "Nos quedamos en casa por la lluvia.",
+            "pt": "Ficamos em casa por causa da chuva.",
+            "structure": "because of + noun phrase",
+            "category": "prepositional-expression"
+          },
+          {
+            "en": "The flight was delayed due to bad weather.",
+            "es": "El vuelo se retrasó debido al mal tiempo.",
+            "pt": "O voo atrasou devido ao mau tempo.",
+            "structure": "due to + noun phrase",
+            "category": "prepositional-expression"
+          }
+        ],
+        "principle": "The same causal meaning can be realized by different grammatical architectures; semantic similarity does not imply identical word class.",
+        "rule": "Keep BECAUSE in the conjunction system and use BECAUSE OF / DUE TO as bridges back to PREPOSITION rather than reclassifying them as conjunctions."
       }
     }
   },
