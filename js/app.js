@@ -401,24 +401,6 @@ function formatGoldenSemanticAnchors(
 }
 
 function formatTargetSentence(
-")")
-    );
-
-  const pattern = new RegExp(
-    "(^|[^\\p{L}\\p{N}_])(" + escapedTargets.join("|") + ")(?=$|[^\\p{L}\\p{N}_])",
-    "giu"
-  );
-
-  return escapeHtml(source).replace(
-    pattern,
-    (_match, prefix, target) =>
-      escapeHtml(prefix) +
-      '<strong><em class="golden-semantic-anchor">' + escapeHtml(target) + '</em></strong>'
-  );
-}
-
-
-function formatTargetSentence(
   sentence = "",
   targetWord = ""
 ) {
@@ -460,7 +442,6 @@ function formatTargetSentence(
     + '</em></strong>'
     + escapeHtml(after);
 }
-
 
 function formatSemanticSurfaceSentence(
   sentence = "",
