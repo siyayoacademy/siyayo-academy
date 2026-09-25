@@ -22,6 +22,17 @@
         "title": "Origem / Etimologia Resumida",
         "content": {
           "pt": "Do latim coniunctio, de coniungere: “unir”, “ligar”, “juntar”. A origem do termo revela a ideia central: a conjunção conecta palavras, grupos ou orações e mostra que tipo de relação existe entre elas."
+        },
+        "focusWords": {
+          "pt": [
+            "coniunctio",
+            "coniungere",
+            "unir",
+            "ligar",
+            "juntar",
+            "conjunção",
+            "conecta"
+          ]
         }
       },
       {
@@ -30,6 +41,19 @@
         "title": "Definição",
         "content": {
           "pt": "Conjunção é a classe de palavras que conecta elementos e explicita relações como adição, contraste, alternativa, causa, resultado, condição ou concessão. Na SIYAYO ACADEMY, o foco inicial não é decorar listas: é perceber qual relação lógica a conexão cria."
+        },
+        "focusWords": {
+          "pt": [
+            "Conjunção",
+            "conecta",
+            "adição",
+            "contraste",
+            "alternativa",
+            "causa",
+            "resultado",
+            "condição",
+            "concessão"
+          ]
         }
       },
       {
@@ -65,7 +89,18 @@
             "target": "sentence-order",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "pt": [
+            "ponte lógica",
+            "somam",
+            "contrastam",
+            "explicam",
+            "escolha",
+            "condição",
+            "exceção"
+          ]
+        }
       },
       {
         "id": "grammar",
@@ -183,7 +218,42 @@
             "target": "verbs",
             "status": "candidate"
           }
-        ]
+        ],
+        "focusWords": {
+          "en": [
+            "and",
+            "but",
+            "or",
+            "because",
+            "if",
+            "although",
+            "coordena",
+            "subordinadas"
+          ],
+          "es": [
+            "y",
+            "pero",
+            "o",
+            "porque",
+            "si",
+            "aunque",
+            "coordenam",
+            "subordinadas",
+            "subjuntivo"
+          ],
+          "pt": [
+            "e",
+            "mas",
+            "ou",
+            "porque",
+            "se",
+            "embora",
+            "coordenam",
+            "subordinadas",
+            "condicionais",
+            "concessivas"
+          ]
+        }
       },
       {
         "id": "classifications",
@@ -232,7 +302,16 @@
                 "target": "words",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Soma",
+                "aditiva",
+                "causa",
+                "contraste",
+                "condição"
+              ]
+            }
           },
           {
             "classification": {
@@ -281,7 +360,19 @@
                 "target": "adjectives",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Contraste",
+                "concessão",
+                "BUT",
+                "PERO",
+                "MAS",
+                "ALTHOUGH",
+                "AUNQUE",
+                "EMBORA"
+              ]
+            }
           },
           {
             "classification": {
@@ -330,7 +421,19 @@
                 "target": "experience",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "alternativas",
+                "possibilidades",
+                "WHICH",
+                "QUÉ",
+                "QUAL",
+                "OR",
+                "O",
+                "OU"
+              ]
+            }
           },
           {
             "classification": {
@@ -394,7 +497,20 @@
                 "target": "travel",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Causa",
+                "resultado",
+                "BECAUSE",
+                "PORQUE",
+                "BECAUSE OF",
+                "DUE TO",
+                "WHY",
+                "POR QUÉ",
+                "POR QUÊ"
+              ]
+            }
           },
           {
             "classification": {
@@ -448,7 +564,19 @@
                 "target": "adverbs",
                 "status": "candidate"
               }
-            ]
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "condição",
+                "IF",
+                "SI",
+                "SE",
+                "sujeito",
+                "verbo",
+                "tempo",
+                "modo"
+              ]
+            }
           }
         ]
       },
