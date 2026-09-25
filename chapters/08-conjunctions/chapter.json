@@ -78,9 +78,9 @@
         },
         "speechLanguage": "pt",
         "content": {
-          "en": "Em inglês, conjunctions como and, but, or, because, if e although conectam elementos ou orações e expressam relações lógicas diferentes. A posição, a pontuação e a estrutura da oração dependente variam conforme a construção.",
-          "es": "Em espanhol, conjunciones como y, pero, o, porque, si e aunque conectam elementos e orações. Algumas subordinadas interagem com modo verbal e ordem da oração, especialmente em condição, finalidade, concessão e outras relações.",
-          "pt": "Em português, conjunções como e, mas, ou, porque, se e embora conectam elementos e orações. A relação lógica deve ser separada do tempo ou modo verbal que aparece na oração: a conjunção conecta; o verbo realiza sua própria gramática."
+          "en": "Em inglês, and, but e or normalmente coordenam elementos ou orações; because, if e although tipicamente introduzem relações subordinadas. A conjunção conecta, mas não substitui sujeito, verbo ou outros constituintes exigidos pela oração. Estrutura, posição e pontuação dependem da construção.",
+          "es": "Em espanhol, y, pero e o coordenam; porque, si e aunque frequentemente introduzem orações subordinadas. A conjunção estabelece a relação lógica, enquanto sujeito implícito ou explícito, verbo e modo verbal pertencem à estrutura da oração. Algumas subordinadas interagem fortemente com o subjuntivo.",
+          "pt": "Em português, e, mas e ou coordenam; porque, se e embora frequentemente introduzem orações subordinadas. A conjunção conecta as ideias, mas não substitui os elementos necessários da oração. Em estruturas condicionais e concessivas, tempo e modo verbal continuam sendo uma camada distinta."
         },
         "examples": {
           "en": [
@@ -251,13 +251,13 @@
               "pt": "mas"
             },
             "definition": {
-              "pt": "Contraste coloca duas ideias em oposição ou tensão; concessão admite uma ideia que poderia levar a outra expectativa, mas não impede o resultado principal. BUT / PERO / MAS e ALTHOUGH / AUNQUE / EMBORA não são simplesmente intercambiáveis: a estrutura que introduzem é diferente."
+              "pt": "Contraste coloca duas ideias em oposição ou tensão; concessão introduz uma ideia que poderia criar uma expectativa, mas não impede o resultado principal. BUT / PERO / MAS normalmente coordenam; ALTHOUGH / AUNQUE / EMBORA introduzem uma oração concessiva. A relação pode ser parecida, mas a arquitetura da sentença não é a mesma."
             },
             "relatedExamples": [
               {
-                "en": "Although I am tired, I will cook.",
-                "es": "Aunque estoy cansado, cocinaré.",
-                "pt": "Embora eu esteja cansado, vou cozinhar."
+                "en": "Although I was very tired, I still cooked dinner.",
+                "es": "Aunque estaba muy cansado, aun así preparé la cena.",
+                "pt": "Embora eu estivesse muito cansado, ainda assim preparei o jantar."
               },
               {
                 "en": "The room is small, but it is comfortable.",
@@ -349,7 +349,7 @@
               "pt": "porque"
             },
             "definition": {
-              "pt": "Causa explica o motivo de uma situação; resultado apresenta a consequência. BECAUSE / PORQUE conecta uma causa à oração principal e conversa diretamente com WHY / POR QUÉ / POR QUÊ. O vínculo causal é semântico; o tempo verbal continua sendo uma camada distinta."
+              "pt": "Causa explica o motivo de uma situação; resultado apresenta a consequência. BECAUSE / PORQUE introduz causa, enquanto SO / ASÍ QUE / ENTÃO apresenta resultado em construções típicas. WHY / POR QUÉ / POR QUÊ pergunta pela razão; a conjunção causal conecta a resposta à oração."
             },
             "relatedExamples": [
               {
@@ -398,18 +398,18 @@
               "pt": "Se"
             },
             "definition": {
-              "pt": "Estabelece uma condição para a realização, interpretação ou consequência de outra ideia. IF / SI / SE cria a relação condicional; os tempos e modos verbais usados em cada língua realizam a gramática da condição e não devem ser confundidos com a própria conjunção."
+              "pt": "Estabelece uma condição para a realização, interpretação ou consequência de outra ideia. IF / SI / SE cria a relação condicional; sujeito, verbo, tempo e modo continuam pertencendo à gramática da oração. A conjunção não substitui os elementos que a oração ainda precisa."
             },
             "relatedExamples": [
+              {
+                "en": "If it stays sunny tomorrow, we will go to the beach.",
+                "es": "Si mañana sigue haciendo sol, iremos a la playa.",
+                "pt": "Se amanhã continuar ensolarado, iremos à praia."
+              },
               {
                 "en": "If you book a room today, we can travel tomorrow.",
                 "es": "Si reservas una habitación hoy, podemos viajar mañana.",
                 "pt": "Se você reservar um quarto hoje, podemos viajar amanhã."
-              },
-              {
-                "en": "If we have time, we will prepare dinner together.",
-                "es": "Si tenemos tiempo, prepararemos la cena juntos.",
-                "pt": "Se tivermos tempo, prepararemos o jantar juntos."
               }
             ],
             "toroConnections": [
@@ -508,7 +508,11 @@
         "Distinguir BUT/PERO/MAS de ALTHOUGH/AUNQUE/EMBORA: podem expressar contraste/concessão, mas introduzem estruturas diferentes.",
         "Conectar BECAUSE/PORQUE a WHY/POR QUÉ/POR QUÊ sem confundir Question Word com conjunção causal.",
         "Conectar OR/O/OU à intenção de escolha sem confundir a conjunção com WHICH/QUÉ/QUAL.",
-        "Usar exemplos já reconhecíveis da SIYAYO — coffee, dinner, cheese, travel, booking — para fazer a lógica aparecer dentro de contextos reais."
+        "Usar exemplos já reconhecíveis da SIYAYO — coffee, dinner, cheese, travel, booking — para fazer a lógica aparecer dentro de contextos reais.",
+        "Não ensinar que a conjunção 'carrega' toda a estrutura: IF, BECAUSE e ALTHOUGH conectam relações, mas a oração ainda precisa de seus próprios constituintes.",
+        "Usar pares de relação como BECAUSE versus ALTHOUGH para mostrar que trocar a conjunção muda a lógica, mesmo quando o restante das palavras permanece parecido.",
+        "Evitar regras absolutas como 'because although é sempre impossível': combinações de subordinação podem existir em estruturas encaixadas; o A5 deve ensinar primeiro uma relação por vez e deixar encaixamentos para a MASTER.",
+        "Aproveitar erros de aprendiz como evidência de relação lógica pretendida antes de corrigir ordem, sujeito, verbo, tempo ou modo."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -594,14 +598,24 @@
             "rule": "WHY/POR QUÉ/POR QUÊ asks for a reason; BECAUSE/PORQUE can introduce the reason. WHICH/QUÉ/QUAL asks for a choice; OR/O/OU connects alternatives."
           },
           {
+            "left": "coordination",
+            "right": "subordination",
+            "rule": "AND/BUT/OR typically coordinate comparable elements; BECAUSE/IF/ALTHOUGH typically introduce a clause whose interpretation depends on another clause."
+          },
+          {
             "left": "conjunction",
+            "right": "clause-completeness",
+            "rule": "A conjunction creates a relation but does not replace the subject, verb or other structure required by the clause."
+          },
+          {
+            "left": "condition",
             "right": "verb-tense-or-mood",
-            "rule": "IF/SI/SE establishes a conditional relation; verb tense and mood realize the clause grammar separately."
+            "rule": "IF/SI/SE establishes the conditional relation; tense and mood belong to the verb system and vary across EN, ES and PT."
           },
           {
             "left": "contrast",
             "right": "concession",
-            "rule": "BUT/PERO/MAS typically coordinates contrasting clauses; ALTHOUGH/AUNQUE/EMBORA subordinates a concessive clause."
+            "rule": "BUT/PERO/MAS usually coordinates contrast; ALTHOUGH/AUNQUE/EMBORA introduces concession. Similar discourse effect does not imply identical syntax."
           },
           {
             "left": "cause",
@@ -611,7 +625,7 @@
           {
             "left": "logical-relation",
             "right": "word-for-word-equivalence",
-            "rule": "EN, ES and PT may realize the same discourse relation with different conjunctions, clause patterns, punctuation or verbal grammar."
+            "rule": "Equivalent discourse relations may use different conjunctions, punctuation and verb grammar across EN, ES and PT."
           }
         ]
       },
@@ -642,7 +656,9 @@
           "concession and counterexpectation",
           "causal and resultative nuance",
           "register and regional variation",
-          "advanced EN-ES-PT contrastive syntax"
+          "advanced EN-ES-PT contrastive syntax",
+          "nested subordination such as causal clauses containing concessive clauses",
+          "conjunction stacking and clause embedding"
         ],
         "rule": "MASTER expands structure, distribution, mood interaction, punctuation, discourse relations and exceptions."
       },
@@ -661,6 +677,33 @@
           "10 integrated choice-cause-contrast-condition conversation"
         ],
         "rule": "The Chapter moves from connection to logical relation and finishes by combining several relations inside one familiar SIYAYO Experience."
+      },
+      "fineStudyExamples": {
+        "role": "diagnostic-and-repair-bridge",
+        "examples": [
+          {
+            "focus": "contrast with complete clauses",
+            "observe": "I like coffee, but I don't drink it at night.",
+            "insight": "BUT connects two complete propositions; the contrast is semantic, not merely positional."
+          },
+          {
+            "focus": "concession versus cause",
+            "observe": "Although I was very tired, I still cooked dinner.",
+            "compare": "Because I was very tired, I rested.",
+            "insight": "ALTHOUGH concedes an expectation; BECAUSE supplies a cause. Replacing one with the other changes the logical relation."
+          },
+          {
+            "focus": "condition still needs a clause",
+            "observe": "If it stays sunny tomorrow, we will go to the beach.",
+            "insight": "IF marks the condition, but the conditional clause still needs its own grammatical structure."
+          },
+          {
+            "focus": "choice and connection",
+            "observe": "Which cheese should we choose, the fresh one or an aged one?",
+            "insight": "WHICH asks for the choice; OR connects the alternatives."
+          }
+        ],
+        "principle": "Use learner-like contrasts to identify the intended relation first, then repair structure without confusing the conjunction with the rest of the clause."
       }
     }
   },
