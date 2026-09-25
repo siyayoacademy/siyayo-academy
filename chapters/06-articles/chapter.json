@@ -370,6 +370,16 @@
                 "en": "the book / this book / which book",
                 "es": "el libro / este libro / qué libro",
                 "pt": "o livro / este livro / qual livro"
+              },
+              {
+                "en": "Book a room.",
+                "es": "Reserva una habitación.",
+                "pt": "Reserve um quarto."
+              },
+              {
+                "en": "I have a booking.",
+                "es": "Tengo una reserva.",
+                "pt": "Tenho uma reserva."
               }
             ],
             "toroConnections": [
@@ -386,6 +396,21 @@
               {
                 "concept": "pronoun versus determiner",
                 "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "book as verb versus book as noun",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "booking as noun",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel context",
+                "target": "travel",
                 "status": "candidate"
               }
             ]
@@ -408,14 +433,14 @@
             },
             "intent": "REFERENCE_AND_CHOICE",
             "extension": {
-              "en": "Let's choose the fresh cheese for the dinner.",
-              "es": "Elijamos el queso fresco para la cena.",
-              "pt": "Vamos escolher o queijo fresco para o jantar."
+              "en": "Let's book a room for the trip and keep the booking confirmation.",
+              "es": "Reservemos una habitación para el viaje y guardemos la confirmación de la reserva.",
+              "pt": "Vamos reservar um quarto para a viagem e guardar a confirmação da reserva."
             },
             "extensionTargetWords": {
-              "en": "the",
-              "es": "el",
-              "pt": "o"
+              "en": "a",
+              "es": "una",
+              "pt": "um"
             },
             "toroConnections": [
               {
@@ -442,6 +467,16 @@
                 "concept": "shopping Experience",
                 "target": "shopping-for-dinner",
                 "status": "candidate"
+              },
+              {
+                "concept": "book a room / booking",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "travel-English bridge",
+                "target": "travel",
+                "status": "candidate"
               }
             ]
           }
@@ -457,7 +492,9 @@
         "Manter equivalência funcional entre EN, ES e PT sem forçar identidade de categorias ou distribuição.",
         "Ensinar a/an pela realização sonora inicial seguinte, não por uma regra puramente ortográfica de vogal versus consoante.",
         "Apresentar artigo zero como contraste estrutural especialmente relevante em inglês, sem assumir ausência universal de artigo nas outras línguas.",
-        "Reservar contrações com preposições, nomes próprios, usos institucionais, geográficos, genéricos finos e variação regional para a MASTER."
+        "Reservar contrações com preposições, nomes próprios, usos institucionais, geográficos, genéricos finos e variação regional para a MASTER.",
+        "Usar Book a room como microintegração: book funciona como VERB, a como ARTICLE e room como NOUN; a mesma forma book também pode ser NOUN em outro contexto.",
+        "Usar booking como exemplo de mudança funcional e lexical no contexto de viagem, sem transformar o Chapter 6 em uma lição de derivação ou polissemia."
       ],
       "sourceConnections": {
         "role": "canonical-source-integration",
@@ -559,6 +596,24 @@
           "10 integrated conversation"
         ],
         "rule": "The Chapter moves from reference to article type, agreement and cross-language distribution before reconnecting ARTICLE to the broader determiner system and Experience."
+      },
+      "travelBridge": {
+        "role": "cross-chapter-contextual-bridge",
+        "context": "travel",
+        "examples": [
+          {
+            "en": "Book a room.",
+            "es": "Reserva una habitación.",
+            "pt": "Reserve um quarto."
+          },
+          {
+            "en": "I have a booking.",
+            "es": "Tengo una reserva.",
+            "pt": "Tenho uma reserva."
+          }
+        ],
+        "principle": "A short travel expression can expose ARTICLE, VERB and NOUN simultaneously while showing that similar forms may change grammatical function by context.",
+        "rule": "Keep the travel bridge compact in Chapter 6; deeper book/booking polysemy and derivation belong to internal lexical pages and VERB/NOUN study."
       }
     }
   },
