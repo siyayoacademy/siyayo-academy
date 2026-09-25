@@ -1,0 +1,30 @@
+{
+  "id": "piano-plano-siyayo-v0.1",
+  "status": "experimental-permanent-stage",
+  "mapping": "diatonic",
+  "animation_layers_reserved": [
+    "key-tint-layer",
+    "key-glow-layer",
+    "key-ripple-layer",
+    "key-memory-layer",
+    "key-label-layer"
+  ],
+  "keys": [
+    { "id": "C4", "solfege": "DÓ", "frequency_hz": 261.63, "slot": 1 },
+    { "id": "D4", "solfege": "RÉ", "frequency_hz": 293.66, "slot": 2 },
+    { "id": "E4", "solfege": "MI", "frequency_hz": 329.63, "slot": 3 },
+    { "id": "F4", "solfege": "FÁ", "frequency_hz": 349.23, "slot": 4 },
+    { "id": "G4", "solfege": "SOL", "frequency_hz": 392.00, "slot": 5 },
+    { "id": "A4", "solfege": "LÁ", "frequency_hz": 440.00, "slot": 6 },
+    { "id": "B4", "solfege": "SI", "frequency_hz": 493.88, "slot": 7 },
+    { "id": "C5", "solfege": "DÓ↑", "frequency_hz": 523.25, "slot": 8 }
+  ],
+  "reserved_future_layers": {
+    "chromatic_black_keys": true,
+    "score_reader": true,
+    "magic_pianinho_avatar": true,
+    "body_hotspots": true,
+    "shared_musical_event_bus": true,
+    "canonical_lexicon_binding": true
+  }
+}
