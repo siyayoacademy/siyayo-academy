@@ -1439,7 +1439,7 @@ function renderCurrentSlide() {
       <header class="chapter-header">
 
         <p class="chapter-number">
-          ${chapter.slug === "interrogative-words" ? "QUESTIONS WORDS" : `Chapter ${chapter.number}`}
+          ${chapter.slug === "interrogative-words" ? "QUESTION WORDS" : `Chapter ${chapter.number}`}
         </p>
 
         <h1 class="chapter-title">
