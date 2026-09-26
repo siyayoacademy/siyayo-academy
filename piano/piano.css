@@ -506,3 +506,83 @@ h1 {
   .duet-stage { min-height:220px; }
   .frondosa { transform:scale(.88); transform-origin:center center; }
 }
+
+
+/* =========================================================
+   FRONDOSA VISUAL LAYER v1
+   Real visual actor + independent interaction hotspots.
+   Background remains transparent by contract.
+   ========================================================= */
+.duet-stage {
+  min-height:360px;
+  background:
+    radial-gradient(circle at 50% 18%,rgba(11,59,120,.50),transparent 38%),
+    radial-gradient(circle at 50% 72%,rgba(215,179,90,.08),transparent 42%),
+    linear-gradient(180deg,rgba(2,9,24,.78),rgba(2,9,24,.30));
+}
+
+.frondosa {
+  width:min(100%,980px);
+  height:330px;
+}
+
+.frondosa-visual {
+  position:absolute;
+  inset:0 1% 22px;
+  width:98%;
+  height:calc(100% - 22px);
+  object-fit:contain;
+  object-position:center bottom;
+  pointer-events:none;
+  user-select:none;
+  filter:drop-shadow(0 18px 24px rgba(0,0,0,.42));
+  transform-origin:50% 78%;
+  transition:
+    filter var(--motion-fast) var(--motion-ease),
+    transform var(--motion-resonance) var(--motion-ease);
+}
+
+.frondosa.is-resonating .frondosa-visual {
+  filter:
+    drop-shadow(0 18px 24px rgba(0,0,0,.42))
+    drop-shadow(0 0 13px rgba(242,216,138,.34));
+  transform:scale(1.008);
+}
+
+.frondosa-hotspots {
+  position:absolute;
+  inset:0 4% 28px;
+  z-index:4;
+}
+
+.frondosa-hotspots .leaf {
+  width:76px;
+  min-height:45px;
+  background:rgba(17,81,42,.74);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+
+.frondosa-hotspots .leaf-1 { left:10%; top:49%; transform:rotate(-18deg); }
+.frondosa-hotspots .leaf-2 { left:23%; top:25%; transform:rotate(10deg); }
+.frondosa-hotspots .leaf-3 { left:38%; top:37%; transform:rotate(-7deg); }
+.frondosa-hotspots .leaf-4 { left:48%; top:15%; transform:rotate(10deg); }
+.frondosa-hotspots .leaf-5 { left:62%; top:37%; transform:rotate(16deg); }
+.frondosa-hotspots .leaf-6 { left:24%; top:58%; transform:rotate(9deg); }
+.frondosa-hotspots .leaf-7 { left:72%; top:56%; transform:rotate(-12deg); }
+.frondosa-hotspots .leaf-8 { left:82%; top:45%; transform:rotate(11deg); }
+
+.frondosa-hotspots .leaf.is-resonating {
+  background:linear-gradient(145deg,rgba(136,185,60,.95),rgba(215,179,90,.96));
+}
+
+@media (max-width:600px) {
+  .duet-stage { min-height:280px; }
+  .frondosa { width:100%; height:270px; transform:none; }
+  .frondosa-hotspots .leaf {
+    width:58px;
+    min-height:38px;
+    padding:3px 4px;
+  }
+  .frondosa-hotspots .leaf span { font-size:.58rem; }
+}
