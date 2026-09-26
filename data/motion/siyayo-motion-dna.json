@@ -1,0 +1,66 @@
+{
+  "id": "siyayo-motion-dna",
+  "version": "1.0-alignment",
+  "status": "shared-foundation",
+  "principles": [
+    "visual-clarity",
+    "focus-on-essential",
+    "smooth-transitions",
+    "well-defined-layers",
+    "universe-coherence",
+    "emotion-and-meaning"
+  ],
+  "timing": {
+    "fast_ms": 180,
+    "key_response_ms": 520,
+    "resonance_ms": 660,
+    "reveal_default_ms": 900,
+    "first_movement_ranges_ms": {
+      "T0_W1": [
+        800,
+        1200
+      ],
+      "T1_W2": [
+        600,
+        1000
+      ]
+    }
+  },
+  "easing": {
+    "canonical": "cubic-bezier(0.25, 0.8, 0.25, 1)"
+  },
+  "effects": {
+    "glow": "subtle",
+    "motion_blur": "soft",
+    "parallax": {
+      "horizon_percent": [
+        10,
+        20
+      ],
+      "star_percent": [
+        5,
+        10
+      ]
+    }
+  },
+  "event_phases": [
+    "touch-or-swipe",
+    "event",
+    "motion",
+    "reveal",
+    "resonance",
+    "wait-or-next"
+  ],
+  "actors": [
+    "piano-siyayo",
+    "pianinho-magico",
+    "frondosa",
+    "leaf",
+    "branch",
+    "golden-seed",
+    "golden-eagle",
+    "jaguar",
+    "patita"
+  ],
+  "implementation_note": "Components may override timing locally, but should inherit the same motion vocabulary and easing unless an experience explicitly requires otherwise."
+}
