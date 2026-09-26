@@ -2689,3 +2689,37 @@ transform:
     scroll-behavior: auto;
   }
 }
+
+
+/* =========================================================
+   ACADEMY HOME · PORTRAIT QUICK-LINK SAFE ZONE
+   Persistent learning paths must never cover scrollable content.
+   ========================================================= */
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .academy-home-content {
+    /* Two wrapped quick links + breathing room above the fixed control layer. */
+    padding-bottom: 168px;
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    margin-bottom: 22px;
+  }
+
+  .academy-quick-links {
+    bottom: max(12px, env(safe-area-inset-bottom));
+    width: min(calc(100vw - 32px), 430px);
+    padding: 8px 10px;
+    gap: 8px;
+    border: 1px solid rgba(242, 216, 138, 0.18);
+    border-radius: 24px;
+    background: rgba(1, 7, 20, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .academy-quick-link {
+    flex: 0 1 auto;
+    max-width: 100%;
+  }
+}
