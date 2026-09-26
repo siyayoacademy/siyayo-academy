@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano SIYAYO Stage</title>
+  <link rel="stylesheet" href="./piano.css">
+</head>
+<body>
+  <div class="dev-preview-toolbar" id="devPreviewToolbar" aria-label="Responsive preview tools">
+    <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
+    <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
+    <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
+  </div>
+
+  <div class="stage-viewport" id="stageViewport" data-preview="auto">
+  <main class="piano-stage" id="pianoStage" data-theme="sound">
+    <header class="stage-header">
+      <a class="home-link" href="../index.html" aria-label="Back to SIYAYO Academy">🦁</a>
+      <div>
+        <p class="eyebrow">SIYAYO ACADEMY</p>
+        <h1>Piano SIYAYO Stage</h1>
+        <p class="subtitle">Music • Language • Resonance</p>
+      </div>
+    </header>
+
+    <section class="avatar-stage" aria-label="Pianinho Mágico stage">
+      <div class="pianinho" id="pianinho" aria-label="Pianinho Mágico SIYAYO">
+        <img class="pianinho-visual" src="./assets/pianinho-magico.svg" alt="" aria-hidden="true">
+        <div class="pianinho-hotspots" aria-label="Pianinho musical hotspots">
+          <button type="button" class="pianinho-hotspot hotspot-do" data-note="C4" aria-label="Pianinho DÓ"><span>DÓ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-mi" data-note="E4" aria-label="Pianinho MI"><span>MI</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-sol" data-note="G4" aria-label="Pianinho SOL"><span>SOL</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-do-high" data-note="C5" aria-label="Pianinho DÓ agudo"><span>DÓ↑</span></button>
+        </div>
+        <p class="avatar-caption">Pianinho Mágico • DÓ–MI–SOL–DÓ↑ <span class="sequence-status" id="pianinhoSequenceStatus" aria-live="polite">0/4</span></p>
+      </div>
+    </section>
+
+    <section class="experience-box tree-box" aria-label="Frondosa visual box">
+    <section class="duet-stage" aria-label="Piano and Frondosa duet">
+      <div class="frondosa" id="frondosa" aria-label="Árvore Frondosa">
+        <img class="frondosa-visual" src="./assets/frondosa-sombreira.svg" alt="" aria-hidden="true">
+        <div class="frondosa-hotspots" aria-label="Frondosa interactive leaves">
+          <button type="button" class="leaf leaf-1" data-note="C4" aria-label="Frondosa leaf 1"><span></span></button>
+          <button type="button" class="leaf leaf-2" data-note="D4" aria-label="Frondosa leaf 2"><span></span></button>
+          <button type="button" class="leaf leaf-3" data-note="E4" aria-label="Frondosa leaf 3"><span></span></button>
+          <button type="button" class="leaf leaf-4" data-note="F4" aria-label="Frondosa leaf 4"><span></span></button>
+          <button type="button" class="leaf leaf-5" data-note="G4" aria-label="Frondosa leaf 5"><span></span></button>
+          <button type="button" class="leaf leaf-6" data-note="A4" aria-label="Frondosa leaf 6"><span></span></button>
+          <button type="button" class="leaf leaf-7" data-note="B4" aria-label="Frondosa leaf 7"><span></span></button>
+          <button type="button" class="leaf leaf-8" data-note="C5" aria-label="Frondosa leaf 8"><span></span></button>
+        </div>
+        <p class="duet-caption">Frondosa listens and blooms with the Piano</p>
+      </div>
+    </section>
+    </section>
+
+    <section class="experience-box controls-box" aria-label="Piano controls and status">
+    <section class="mode-panel" aria-label="Piano modes">
+      <button type="button" class="mode-button is-active" data-mode="sound">Sound</button>
+      <button type="button" class="mode-button" data-mode="solfege">Solfege</button>
+      <button type="button" class="mode-button" data-mode="en">EN</button>
+      <button type="button" class="mode-button" data-mode="es">ES</button>
+      <button type="button" class="mode-button" data-mode="pt">PT</button>
+      <button type="button" class="mode-button" data-mode="tripiano">Tripiano</button>
+    </section>
+
+    <section class="status-panel" aria-live="polite">
+      <span id="modeStatus">SOUND</span>
+      <strong id="noteStatus">Touch a key</strong>
+      <span id="wordStatus">DÓ → DÓ↑</span>
+    </section>
+
+    </section>
+
+    <section class="experience-box keyboard-box" aria-label="Piano keyboard box">
+    <section class="keyboard-shell" aria-label="Piano Plano SIYAYO">
+      <div class="keyboard-scroll">
+        <div class="keyboard" id="keyboard" role="group" aria-label="Diatonic piano keyboard"></div>
+      </div>
+    </section>
+    </section>
+
+    <footer class="stage-footer">
+      <span>v0.1 • Diatonic mapping • Frondosa Duet</span>
+      <span>Animation layers reserved per key</span>
+    </footer>
+  </main>
+  </div>
+  <script src="./piano.js"></script>
+</body>
+</html>
