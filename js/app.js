@@ -117,6 +117,47 @@ function setInterfaceLanguage(language) {
 }
 
 
+function localizedInterfaceText(collection, language = currentInterfaceLanguage) {
+  return collection?.[language] ?? collection?.pt ?? collection?.en ?? null;
+}
+
+function renderLocalizedWelcome() {
+  const welcome = localizedInterfaceText(
+    currentAcademyData?.localization?.welcome
+  );
+  const root = document.getElementById("academyWelcome");
+  if (!root || !welcome) return;
+
+  const fields = {
+    academyWelcomeHeading: welcome.heading,
+    academyWelcomeBody: welcome.body,
+    academyWelcomeInvitation: welcome.invitation,
+    academyWelcomeReassurance: welcome.reassurance,
+    academyWelcomeQuestion: welcome.question
+  };
+
+  Object.entries(fields).forEach(([id, value]) => {
+    const node = document.getElementById(id);
+    if (node) node.textContent = value || "";
+  });
+
+  root.querySelectorAll("[data-interface-language]").forEach(button => {
+    const selected = button.dataset.interfaceLanguage === currentInterfaceLanguage;
+    button.classList.toggle("is-active", selected);
+    button.setAttribute("aria-pressed", selected ? "true" : "false");
+  });
+}
+
+function initializeInterfaceLanguageSwitcher() {
+  document.querySelectorAll("[data-interface-language]").forEach(button => {
+    button.addEventListener("click", () => {
+      if (!setInterfaceLanguage(button.dataset.interfaceLanguage)) return;
+      renderLocalizedWelcome();
+    });
+  });
+}
+
+
 /* ========================================
    LOAD ACADEMY MANIFEST
    ======================================== */
@@ -3131,6 +3172,8 @@ document.addEventListener(
       interfaceLocale
     );
 
+    renderLocalizedWelcome();
+    initializeInterfaceLanguageSwitcher();
     renderAcademyChapterStack(academy);
 
     const activeChapter = findActiveChapter(academy);
