@@ -435,19 +435,22 @@
     if (detail.source === "pianinho-magico") {
       trackPianinhoChord(detail.note);
     }
-    const leaf = leaves.find(item => item.dataset.note === detail.note);
-    if (!leaf) return;
+    const matchingLeaves = leaves.filter(item => item.dataset.note === detail.note);
 
-    leaf.classList.remove("is-resonating");
-    if (frondosa) frondosa.classList.remove("is-resonating");
-    void leaf.offsetWidth;
-    leaf.classList.add("is-resonating");
-    if (frondosa) frondosa.classList.add("is-resonating");
+    if (matchingLeaves.length) {
+      matchingLeaves.forEach(leaf => {
+        leaf.classList.remove("is-resonating");
+        void leaf.offsetWidth;
+        leaf.classList.add("is-resonating");
+      });
 
-    window.setTimeout(() => {
-      leaf.classList.remove("is-resonating");
-      if (frondosa) frondosa.classList.remove("is-resonating");
-    }, 660);
+      if (frondosa) frondosa.classList.add("is-resonating");
+
+      window.setTimeout(() => {
+        matchingLeaves.forEach(leaf => leaf.classList.remove("is-resonating"));
+        if (frondosa) frondosa.classList.remove("is-resonating");
+      }, 660);
+    }
 
     const avatarZone = pianinhoHotspots.find(item => item.dataset.note === detail.note);
     if (avatarZone) {
