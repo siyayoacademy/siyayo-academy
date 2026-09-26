@@ -20,6 +20,104 @@ let pendingSpeechTimer = null;
 
 
 /* ========================================
+   INTERFACE LOCALE CONTEXT
+   ======================================== */
+
+let currentInterfaceLanguage = "pt";
+let currentRegionalLocale = "pt-BR";
+
+function normalizeLanguageFamily(locale = "") {
+  return String(locale).trim().toLowerCase().split("-")[0];
+}
+
+function resolveInterfaceLocale(academy) {
+  const config = academy?.localization ?? {};
+  const supported = Array.isArray(config.supportedInterfaceLanguages)
+    ? config.supportedInterfaceLanguages
+    : ["en", "es", "pt"];
+  const fallback = supported.includes(config.defaultInterfaceLanguage)
+    ? config.defaultInterfaceLanguage
+    : "pt";
+  const storageKey = config.storageKey || "siyayo.interfaceLanguage";
+
+  let savedLanguage = "";
+  try {
+    savedLanguage = localStorage.getItem(storageKey) || "";
+  } catch (error) {
+    console.warn("SIYAYO locale preference is not available.", error);
+  }
+
+  const browserLocales = Array.isArray(navigator.languages) && navigator.languages.length
+    ? navigator.languages
+    : [navigator.language].filter(Boolean);
+
+  const candidates = [
+    ...(savedLanguage ? [savedLanguage] : []),
+    ...browserLocales
+  ];
+
+  const matchedLocale = candidates.find(locale =>
+    supported.includes(normalizeLanguageFamily(locale))
+  );
+
+  const language = matchedLocale
+    ? normalizeLanguageFamily(matchedLocale)
+    : fallback;
+
+  const regionalLocale =
+    browserLocales.find(locale => normalizeLanguageFamily(locale) === language) ||
+    academy?.languages?.[language]?.locale ||
+    language;
+
+  return {
+    language,
+    regionalLocale,
+    source: savedLanguage && normalizeLanguageFamily(savedLanguage) === language
+      ? "saved-preference"
+      : matchedLocale
+        ? "browser-languages"
+        : "default"
+  };
+}
+
+function applyInterfaceLocale(localeContext) {
+  currentInterfaceLanguage = localeContext?.language || "pt";
+  currentRegionalLocale = localeContext?.regionalLocale || currentInterfaceLanguage;
+
+  document.documentElement.lang = currentRegionalLocale;
+  document.documentElement.dataset.interfaceLanguage = currentInterfaceLanguage;
+  document.documentElement.dataset.regionalLocale = currentRegionalLocale;
+}
+
+function setInterfaceLanguage(language) {
+  const config = currentAcademyData?.localization ?? {};
+  const supported = config.supportedInterfaceLanguages ?? ["en", "es", "pt"];
+  if (!supported.includes(language)) return false;
+
+  try {
+    localStorage.setItem(
+      config.storageKey || "siyayo.interfaceLanguage",
+      language
+    );
+  } catch (error) {
+    console.warn("SIYAYO locale preference could not be saved.", error);
+  }
+
+  applyInterfaceLocale({
+    language,
+    regionalLocale:
+      currentRegionalLocale &&
+      normalizeLanguageFamily(currentRegionalLocale) === language
+        ? currentRegionalLocale
+        : currentAcademyData?.languages?.[language]?.locale || language,
+    source: "saved-preference"
+  });
+
+  return true;
+}
+
+
+/* ========================================
    LOAD ACADEMY MANIFEST
    ======================================== */
 
@@ -3023,9 +3121,17 @@ document.addEventListener(
       return;
     }
 
-    renderAcademyChapterStack(academy);
-
     currentAcademyData = academy;
+
+    const interfaceLocale = resolveInterfaceLocale(academy);
+    applyInterfaceLocale(interfaceLocale);
+
+    console.log(
+      "Interface locale:",
+      interfaceLocale
+    );
+
+    renderAcademyChapterStack(academy);
 
     const activeChapter = findActiveChapter(academy);
     if (!activeChapter) return;
