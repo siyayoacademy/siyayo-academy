@@ -39,40 +39,144 @@
     return audioContext;
   }
 
-  function playTone(frequency) {
+  function playPianoLow(frequency, when = 0) {
     const ctx = ensureAudio();
-    const now = ctx.currentTime;
+    const now = ctx.currentTime + when;
+    const base = frequency * 0.5;
 
     const master = ctx.createGain();
     const body = ctx.createOscillator();
-    const shimmer = ctx.createOscillator();
+    const octave = ctx.createOscillator();
     const bodyGain = ctx.createGain();
-    const shimmerGain = ctx.createGain();
+    const octaveGain = ctx.createGain();
+    const filter = ctx.createBiquadFilter();
 
     body.type = "triangle";
-    shimmer.type = "sine";
-    body.frequency.setValueAtTime(frequency, now);
-    shimmer.frequency.setValueAtTime(frequency * 2, now);
+    octave.type = "sine";
+    body.frequency.setValueAtTime(base, now);
+    octave.frequency.setValueAtTime(base * 2, now);
+
+    filter.type = "lowpass";
+    filter.frequency.setValueAtTime(1500, now);
+    filter.Q.setValueAtTime(0.7, now);
 
     bodyGain.gain.setValueAtTime(0.0001, now);
-    bodyGain.gain.exponentialRampToValueAtTime(0.42, now + 0.012);
-    bodyGain.gain.exponentialRampToValueAtTime(0.12, now + 0.34);
-    bodyGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.25);
+    bodyGain.gain.exponentialRampToValueAtTime(0.48, now + 0.014);
+    bodyGain.gain.exponentialRampToValueAtTime(0.17, now + 0.34);
+    bodyGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.55);
 
-    shimmerGain.gain.setValueAtTime(0.0001, now);
-    shimmerGain.gain.exponentialRampToValueAtTime(0.085, now + 0.008);
-    shimmerGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.36);
+    octaveGain.gain.setValueAtTime(0.0001, now);
+    octaveGain.gain.exponentialRampToValueAtTime(0.10, now + 0.012);
+    octaveGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.62);
 
     master.gain.value = 0.72;
 
+    body.connect(bodyGain).connect(filter);
+    octave.connect(octaveGain).connect(filter);
+    filter.connect(master).connect(ctx.destination);
+
+    body.start(now);
+    octave.start(now);
+    body.stop(now + 1.6);
+    octave.stop(now + 0.7);
+  }
+
+  function playPianinhoHigh(frequency, when = 0) {
+    const ctx = ensureAudio();
+    const now = ctx.currentTime + when;
+    const base = frequency * 2;
+
+    const master = ctx.createGain();
+    const body = ctx.createOscillator();
+    const sparkle = ctx.createOscillator();
+    const bodyGain = ctx.createGain();
+    const sparkleGain = ctx.createGain();
+
+    body.type = "triangle";
+    sparkle.type = "sine";
+    body.frequency.setValueAtTime(base, now);
+    sparkle.frequency.setValueAtTime(base * 2.01, now);
+
+    bodyGain.gain.setValueAtTime(0.0001, now);
+    bodyGain.gain.exponentialRampToValueAtTime(0.28, now + 0.006);
+    bodyGain.gain.exponentialRampToValueAtTime(0.055, now + 0.20);
+    bodyGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.78);
+
+    sparkleGain.gain.setValueAtTime(0.0001, now);
+    sparkleGain.gain.exponentialRampToValueAtTime(0.12, now + 0.004);
+    sparkleGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.32);
+
+    master.gain.value = 0.64;
+
     body.connect(bodyGain).connect(master);
-    shimmer.connect(shimmerGain).connect(master);
+    sparkle.connect(sparkleGain).connect(master);
     master.connect(ctx.destination);
 
     body.start(now);
-    shimmer.start(now);
-    body.stop(now + 1.3);
-    shimmer.stop(now + 0.4);
+    sparkle.start(now);
+    body.stop(now + 0.82);
+    sparkle.stop(now + 0.36);
+  }
+
+  function playFrondosaHarp(frequency, when = 0) {
+    const ctx = ensureAudio();
+    const now = ctx.currentTime + when;
+
+    const master = ctx.createGain();
+    const string = ctx.createOscillator();
+    const chime = ctx.createOscillator();
+    const stringGain = ctx.createGain();
+    const chimeGain = ctx.createGain();
+    const filter = ctx.createBiquadFilter();
+
+    string.type = "triangle";
+    chime.type = "sine";
+    string.frequency.setValueAtTime(frequency, now);
+    chime.frequency.setValueAtTime(frequency * 3, now);
+
+    filter.type = "bandpass";
+    filter.frequency.setValueAtTime(Math.min(2400, frequency * 4), now);
+    filter.Q.setValueAtTime(0.9, now);
+
+    stringGain.gain.setValueAtTime(0.0001, now);
+    stringGain.gain.exponentialRampToValueAtTime(0.30, now + 0.005);
+    stringGain.gain.exponentialRampToValueAtTime(0.08, now + 0.28);
+    stringGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.15);
+
+    chimeGain.gain.setValueAtTime(0.0001, now);
+    chimeGain.gain.exponentialRampToValueAtTime(0.07, now + 0.003);
+    chimeGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.52);
+
+    master.gain.value = 0.62;
+
+    string.connect(stringGain).connect(filter);
+    chime.connect(chimeGain).connect(filter);
+    filter.connect(master).connect(ctx.destination);
+
+    string.start(now);
+    chime.start(now);
+    string.stop(now + 1.2);
+    chime.stop(now + 0.56);
+  }
+
+  function playInstrument(source, frequency, when = 0) {
+    if (source === "pianinho-magico") {
+      playPianinhoHigh(frequency, when);
+      return;
+    }
+
+    if (source === "frondosa") {
+      playFrondosaHarp(frequency, when);
+      return;
+    }
+
+    playPianoLow(frequency, when);
+  }
+
+  function playTrioAccent(frequency, when = 0) {
+    playPianoLow(frequency, when);
+    playFrondosaHarp(frequency, when + 0.02);
+    playPianinhoHigh(frequency, when + 0.04);
   }
 
   function speak(text, lang) {
@@ -125,7 +229,7 @@
   }
 
   function activateKey(button, key, source = "piano-flat") {
-    playTone(key.frequency);
+    playInstrument(source, key.frequency);
 
     window.dispatchEvent(new CustomEvent("siyayo:musical-event", {
       detail: {
@@ -219,9 +323,10 @@
       .map(note => keys.find(key => key.id === note))
       .filter(Boolean);
 
-    chordKeys.forEach((key, index) => {
-      window.setTimeout(() => playTone(key.frequency), index * 120);
-    });
+    if (chordKeys[0]) playPianoLow(chordKeys[0].frequency, 0.00);
+    if (chordKeys[1]) playPianinhoHigh(chordKeys[1].frequency, 0.14);
+    if (chordKeys[2]) playFrondosaHarp(chordKeys[2].frequency, 0.28);
+    if (chordKeys[3]) playTrioAccent(chordKeys[3].frequency, 0.44);
   }
 
   function completePianinhoChord() {
