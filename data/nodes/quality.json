@@ -1,32 +1,24 @@
 {
   "$schema": "../schemas/node.schema.json",
-
-  "version": "0.1.0",
-
+  "version": "0.2.0",
   "id": "quality",
-
   "type": "concept",
-
   "role": "verb-function",
-
   "label": {
     "en": "QUALITY",
     "es": "CUALIDAD",
     "pt": "QUALIDADE"
   },
-
   "description": {
-    "en": "Verb-function concept for expressing qualities, properties, characteristics and identities attributed to a subject.",
-    "es": "Concepto de función verbal para expresar cualidades, propiedades, características e identidades atribuidas a un sujeto.",
-    "pt": "Conceito de função verbal para expressar qualidades, propriedades, características e identidades atribuídas a um sujeito."
+    "en": "Verb-function concept for attributing identity, classification, quality, property or characteristic to a subject, commonly through copular/linking structures.",
+    "es": "Concepto de función verbal para atribuir identidad, clasificación, cualidad, propiedad o característica a un sujeto, normalmente mediante estructuras copulativas o de enlace.",
+    "pt": "Conceito de função verbal para atribuir identidade, classificação, qualidade, propriedade ou característica a um sujeito, normalmente por meio de estruturas copulativas ou de ligação."
   },
-
   "relations": [
     {
       "type": "parent",
       "target": "verb-functions"
     },
-
     {
       "type": "related",
       "target": "sentence-order"
@@ -47,7 +39,6 @@
       "type": "related",
       "target": "tools"
     },
-
     {
       "type": "supports",
       "target": "practice"
@@ -56,7 +47,6 @@
       "type": "supports",
       "target": "examples"
     },
-
     {
       "type": "returns-to",
       "target": "verbs"
@@ -66,7 +56,6 @@
       "target": "roots"
     }
   ],
-
   "representations": [
     {
       "type": "visual-index",
@@ -89,17 +78,15 @@
       "target": "master-quality"
     }
   ],
-
   "pedagogy": {
     "level": "core",
     "sequence": 0,
     "speechEnabled": true,
     "interactive": true
   },
-
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats Quality as property, characteristic and identity predication, with strong pedagogical links to linking verbs and adjectives. Boundaries remain intentionally permeable with State and other verb functions."
+    "notes": "v0.2 distinguishes Quality from State by treating Quality as attribution of identity, classification, property or characteristic. English BE may realize both Quality and State, while Spanish and Portuguese often distribute these meanings across SER and ESTAR; this contrast is pedagogically useful but not a mechanical one-to-one rule."
   }
 }

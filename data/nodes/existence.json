@@ -1,32 +1,24 @@
 {
   "$schema": "../schemas/node.schema.json",
-
-  "version": "0.1.0",
-
+  "version": "0.2.0",
   "id": "existence",
-
   "type": "concept",
-
   "role": "verb-function",
-
   "label": {
     "en": "EXISTENCE",
     "es": "EXISTENCIA",
     "pt": "EXISTÊNCIA"
   },
-
   "description": {
-    "en": "Verb-function concept for expressing the existence, presence or occurrence of someone, something or a fact, commonly structured through THERE + TO BE.",
-    "es": "Concepto de función verbal para expresar la existencia, presencia u ocurrencia de alguien, algo o un hecho, comúnmente estructurado mediante THERE + TO BE.",
-    "pt": "Conceito de função verbal para expressar a existência, presença ou ocorrência de alguém, algo ou um fato, normalmente estruturado por THERE + TO BE."
+    "en": "Verb-function concept for presenting the existence, presence, availability or occurrence of someone, something or a fact. English commonly uses existential THERE + BE, while Spanish and Portuguese frequently use HAY and HÁ/TEM according to variety and register.",
+    "es": "Concepto de función verbal para presentar la existencia, presencia, disponibilidad u ocurrencia de alguien, algo o un hecho. El inglés usa normalmente THERE + BE, mientras que el español y el portugués recurren con frecuencia a HAY y HÁ/TEM según la variedad y el registro.",
+    "pt": "Conceito de função verbal para apresentar a existência, presença, disponibilidade ou ocorrência de alguém, algo ou um fato. O inglês usa com frequência THERE + BE, enquanto espanhol e português recorrem frequentemente a HAY e HÁ/TEM conforme variedade e registro."
   },
-
   "relations": [
     {
       "type": "parent",
       "target": "verb-functions"
     },
-
     {
       "type": "related",
       "target": "auxiliaries"
@@ -51,7 +43,6 @@
       "type": "related",
       "target": "tools"
     },
-
     {
       "type": "supports",
       "target": "practice"
@@ -60,7 +51,6 @@
       "type": "supports",
       "target": "examples"
     },
-
     {
       "type": "returns-to",
       "target": "verbs"
@@ -70,7 +60,6 @@
       "target": "roots"
     }
   ],
-
   "representations": [
     {
       "type": "visual-index",
@@ -101,17 +90,15 @@
       "target": "master-existence"
     }
   ],
-
   "pedagogy": {
     "level": "core",
     "sequence": 4,
     "speechEnabled": true,
     "interactive": true
   },
-
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats Existence as the verb-function concept for expressing existence or presence, strongly associated in the Master with THERE + TO BE and its temporal, affirmative, negative and interrogative forms. Boundaries remain intentionally permeable with sentence structure, questions, timelines and other word classes."
+    "notes": "v0.2 distinguishes the semantic function Existence from any single surface form. THERE + BE is a central English construction, HAY is central in Spanish, and Portuguese commonly uses HÁ in formal-neutral registers while TER is widespread in Brazilian speech. Time, negation, interrogation and modality can operate over existential constructions without changing the core existence function."
   }
 }

@@ -1,0 +1,57 @@
+{
+  "chapter": {
+    "number": 0,
+    "slug": "human-semantic-surface-lab",
+    "title": {
+      "en": "HUMAN SURFACE LAB",
+      "es": "LABORATORIO DE SUPERFICIES",
+      "pt": "LABORATÓRIO DE SUPERFÍCIES"
+    },
+    "sections": [
+      {
+        "id": "which-cheese-human-probe",
+        "type": "examples",
+        "title": "Controlled human semantic-surface probe",
+        "items": [
+          {
+            "classification": {
+              "en": "Question choice",
+              "es": "Elección interrogativa",
+              "pt": "Escolha interrogativa"
+            },
+            "sentences": {
+              "en": "Which cheese should we choose?",
+              "es": "¿Cuál queso deberíamos elegir?",
+              "pt": "Qual queijo deveríamos escolher?"
+            },
+            "surfaces": [
+              {
+                "id": "question-choice",
+                "realizations": {
+                  "en": "Which",
+                  "es": "Cuál",
+                  "pt": "Qual"
+                }
+              },
+              {
+                "id": "decision-agent",
+                "realizations": {
+                  "en": "we",
+                  "es": "nosotros",
+                  "pt": "nós"
+                }
+              }
+            ],
+            "assessmentLeaf": {
+              "anchorSurfaceId": "question-choice",
+              "assessmentTarget": {
+                "skill": "which.use.determiner",
+                "definitionPath": "/data/learning/skills/which.json"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

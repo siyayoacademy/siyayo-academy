@@ -29,3 +29,33 @@ assert.ok(shopping.toroidalNext?.answer?.pt, 'toroidal handoff requires a Portug
 
 console.log('PASS — 6.8 resolves shopping-for-dinner → preparing-dinner as a valid toroidal handoff.');
 console.log('PASS — the next experience preserves trilingual continuity and enters through cook.');
+
+const liveNextWire = fs.readFileSync(path.join(ROOT, 'js/verb-explorer-live-next-wire.js'), 'utf8');
+
+for (const hook of [
+  "nextElement.closest('.toroidal-next')",
+  "var interactiveTarget=nextCard||nextElement",
+  "interactiveTarget.onclick=activate",
+  "interactiveTarget.onkeydown=function(event)",
+  "nextCard.dataset.nextState='available'",
+  "nextCard.classList.remove('next-gated')"
+]) {
+  assert.ok(liveNextWire.includes(hook), 'missing learner-owned full-card NEXT hook: '+hook);
+}
+
+assert.ok(
+  !fs.readFileSync(path.join(ROOT, 'js/verb-explorer.js'), 'utf8').includes('nextCard.onclick=activateNext'),
+  'Verb Explorer base runtime must not bypass adaptive NEXT with direct card navigation'
+);
+
+assert.ok(
+  liveNextWire.includes('SIYAYOVerbExplorerExperienceNavigation'),
+  'NEXT must delegate to the canonical Experience navigation boundary'
+);
+assert.ok(
+  !liveNextWire.includes('AdaptiveProgressionDecision') &&
+  !liveNextWire.includes('releaseProgression'),
+  'NEXT navigation must not be gated by pedagogical progression authorities'
+);
+
+console.log('PASS — the full NEXT card remains learner-owned and delegates to canonical Experience navigation without Green Pass gating.');

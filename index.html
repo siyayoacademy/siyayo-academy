@@ -14,18 +14,37 @@
 
   <main class="story">
 
-    <img
-      src="assets/images/siyayo-logo-story.jpeg"
-      alt="SIYAYO"
-      class="siyayo-logo"
-    >
+    <div class="academy-home-background" aria-hidden="true"></div>
 
+    <div class="academy-home-content">
     <section class="academy-title">
       <h1>SIYAYO ACADEMY</h1>
       <p>The Ten Kinds of Words</p>
     </section>
 
+    <section class="academy-welcome" id="academyWelcome" aria-live="polite">
+      <div class="academy-language-switcher" role="group" aria-label="Interface language">
+        <button type="button" data-interface-language="en">English</button>
+        <button type="button" data-interface-language="es">Español</button>
+        <button type="button" data-interface-language="pt">Português</button>
+      </div>
+      <h2 id="academyWelcomeHeading"></h2>
+      <p id="academyWelcomeBody"></p>
+      <p class="academy-welcome-invitation" id="academyWelcomeInvitation"></p>
+      <p id="academyWelcomeReassurance"></p>
+      <p class="academy-welcome-question" id="academyWelcomeQuestion"></p>
+    </section>
+
+    <nav class="academy-chapter-stack" id="academyChapterStack" aria-label="The Ten Kinds of Words chapters"></nav>
+    </div>
+
   </main>
+
+  <!-- PERSISTENT LEARNING PATHS -->
+  <nav class="academy-quick-links" aria-label="Persistent learning paths">
+    <a href="verb-explorer.html?mode=dna" class="academy-quick-link">DNA VERBS</a>
+    <a href="verb-explorer.html?mode=experience" class="academy-quick-link academy-quick-link-primary">EXPERIENCE · VERB EXPLORER</a>
+  </nav>
 
 <!-- GLOBAL TOP NAVIGATION -->
 <nav class="global-nav" aria-label="Global navigation">
@@ -37,7 +56,7 @@
     aria-label="Return to SIYAYO Academy Home"
     title="LIONSGATE — Home"
   >
-    <span class="nav-icon">🦁</span>
+    <img src="assets/images/siyayo-logo-story.jpeg" alt="" class="lionsgate-logo">
   </a>
 
 
@@ -66,6 +85,12 @@
 
 </nav>
 
+  <script src="js/story-semantic-surface-realization.js"></script>
+  <script src="js/story-semantic-surface-dom-materialization.js"></script>
+  <script src="js/story-semantic-surface-attention.js"></script>
+  <script src="js/story-semantic-surface-interaction-intent.js"></script>
+  <script src="js/story-semantic-surface-action-choice.js"></script>
+  <script src="js/story-semantic-surface-action-choice-dom-materialization.js"></script>
   <script src="js/app.js"></script>
   
 </body>

@@ -6,11 +6,14 @@
   function toAdaptiveEvidence(verification = {}, context = {}) {
     const confirmed = verification.reinforcementConfirmed === true &&
       verification.requiresReinforcement === true;
+    const repeated = Array.isArray(verification.repeated) && verification.repeated.length
+      ? verification.repeated
+      : (Array.isArray(context.repeated) ? context.repeated : []);
 
     return {
       source: verification.source || 'multilingual-contrast-verifier',
       status: verification.status || 'unknown',
-      repeated: Array.isArray(context.repeated) ? context.repeated : [],
+      repeated,
       requiresReview: verification.status === 'review-required' ||
         verification.status === 'contrast-unresolved',
       conflict: false,

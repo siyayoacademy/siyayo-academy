@@ -1,0 +1,100 @@
+{
+  "version": "0.1.0",
+  "id": "todos-estos-tres-libros",
+  "language": "es",
+  "sentence": "Todos estos tres libros.",
+  "tokens": [
+    {
+      "id": "all",
+      "index": 1,
+      "form": "Todos",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante cuantificador"
+        }
+      }
+    },
+    {
+      "id": "these",
+      "index": 2,
+      "form": "estos",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante demostrativo"
+        }
+      }
+    },
+    {
+      "id": "three",
+      "index": 3,
+      "form": "tres",
+      "wordClass": "NUM",
+      "pedagogy": {
+        "wordType": {
+          "es": "NUMERAL"
+        },
+        "role": {
+          "es": "Numeral cardinal"
+        }
+      }
+    },
+    {
+      "id": "books",
+      "index": 4,
+      "form": "libros",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Núcleo de la frase"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "books",
+      "dependent": "all",
+      "relation": "det"
+    },
+    {
+      "head": "books",
+      "dependent": "these",
+      "relation": "det"
+    },
+    {
+      "head": "books",
+      "dependent": "three",
+      "relation": "nummod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical Spanish dependency realization",
+    "example": "Todos estos tres libros",
+    "relations": [
+      "det(libros, Todos)",
+      "det(libros, estos)",
+      "nummod(libros, tres)"
+    ]
+  }
+}

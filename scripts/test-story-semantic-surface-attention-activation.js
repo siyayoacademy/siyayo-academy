@@ -1,0 +1,132 @@
+const fs = require("fs");
+const vm = require("vm");
+const assert = require("assert");
+
+const attentionCode = fs.readFileSync(
+  "js/story-semantic-surface-attention.js",
+  "utf8"
+);
+const appCode = fs.readFileSync("js/app.js", "utf8");
+
+const focused = [];
+const describedChoices = [];
+const surface = {
+  dataset: { surfaceId: "question-choice" },
+  closest(selector) {
+    return selector === "[data-surface-id]" ? this : null;
+  }
+};
+
+const languageLine = {
+  dataset: { language: "en" },
+  addEventListener(type, handler) {
+    if (type === "click") {
+      this.clickHandler = handler;
+    }
+    if (type === "keydown") {
+      this.keyHandler = handler;
+    }
+  }
+};
+
+const sandbox = {
+  console,
+  speechSynthesis: {
+    cancel() {},
+    speak() {}
+  },
+  SpeechSynthesisUtterance: function() {},
+  fetch: async () => ({ ok: false }),
+  document: {
+    addEventListener() {},
+    querySelectorAll(selector) {
+      if (selector === ".language-line") {
+        return [languageLine];
+      }
+      return [];
+    },
+    getElementById() { return null; },
+    querySelector() { return null; }
+  }
+};
+sandbox.globalThis = sandbox;
+sandbox.window = {
+  addEventListener() {}
+};
+vm.createContext(sandbox);
+vm.runInContext(attentionCode, sandbox);
+sandbox.SIYAYOStorySemanticSurfaceAttention = {
+  focus(input) {
+    focused.push(input);
+    return { surfaceId: input.surfaceId };
+  }
+};
+sandbox.SIYAYOStorySemanticSurfaceActionChoice = {
+  describe(input) {
+    describedChoices.push(input);
+    return {
+      surfaceId: input.surfaceId,
+      actions: ["explore", "select"]
+    };
+  }
+};
+vm.runInContext(appCode, sandbox);
+
+sandbox.attachSliderEvents();
+const line = sandbox.document.querySelectorAll(".language-line")[0];
+
+line.clickHandler({ target: surface });
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(focused)),
+  [{ surfaceId: "question-choice" }],
+  "Surface click must focus the explicit semantic Surface"
+);
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(describedChoices)),
+  [
+    {
+      surfaceId: "question-choice",
+      selectAvailable: false
+    }
+  ],
+  "Focused Surface without a proven Leaf binding must request Explore-only Action Choice"
+);
+
+focused.length = 0;
+describedChoices.length = 0;
+let prevented = false;
+line.keyHandler({
+  key: "Enter",
+  target: surface,
+  preventDefault() { prevented = true; }
+});
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(focused)),
+  [{ surfaceId: "question-choice" }],
+  "Surface Enter must focus the same explicit semantic Surface"
+);
+assert.deepStrictEqual(
+  JSON.parse(JSON.stringify(describedChoices)),
+  [
+    {
+      surfaceId: "question-choice",
+      selectAvailable: false
+    }
+  ],
+  "Surface Enter without a proven Leaf binding must request the same Explore-only Action Choice"
+);
+assert.strictEqual(
+  prevented,
+  false,
+  "Surface attention must not consume keyboard activation before intent owns it"
+);
+
+assert.strictEqual(
+  /InteractionIntent\.create|StoryAssessmentLeafSelection|LeafAssessmentTargetProvider|ReadinessTrigger|LiveStart/.test(
+    appCode.slice(appCode.indexOf("function attachSliderEvents"))
+  ),
+  false,
+  "Surface activation must not choose intent, Assessment, or readiness"
+);
+
+console.log("Story semantic Surface attention activation: OK");

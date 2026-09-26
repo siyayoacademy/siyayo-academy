@@ -1,0 +1,554 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 2,
+    "slug": "pronouns",
+    "title": {
+      "en": "PRONOUN",
+      "es": "PRONOMBRE",
+      "pt": "PRONOME"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim pronomen, formado por pro (“em lugar de”) + nomen (“nome”). A origem do termo ajuda a entender sua função tradicional: representar, retomar ou apontar participantes e referentes no discurso."
+        },
+        "focusWords": {
+          "pt": [
+            "pronomen",
+            "pro",
+            "nomen"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Pronome é uma classe de palavras usada para representar, retomar ou apontar participantes e referentes no discurso. Pode expressar relações como pessoa, posse, demonstração, indefinição ou interrogação, conforme a língua e o contexto."
+        },
+        "focusWords": {
+          "pt": [
+            "Pronome",
+            "representar",
+            "retomar",
+            "apontar"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "Os pronomes podem ocupar posições normalmente preenchidas por grupos nominais, por exemplo como sujeito, objeto ou complemento. Também podem estabelecer relações de posse e demonstração. Quando uma forma acompanha diretamente um substantivo, sua classificação pode mudar conforme a língua e a tradição gramatical."
+        },
+        "toroConnections": [
+          {
+            "concept": "pronoun as nominal reference",
+            "target": "subject",
+            "status": "candidate"
+          },
+          {
+            "concept": "subject / object dependency",
+            "target": "dependency-focus",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "pt": [
+            "sujeito",
+            "objeto",
+            "complemento",
+            "posse",
+            "demonstração"
+          ]
+        }
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, os pronomes pessoais distinguem pessoa, número e, em várias formas, caso ou função: I/me, he/him, she/her, we/us, they/them. Há também formas possessivas e demonstrativas. Antes de um substantivo, formas como my e this são normalmente analisadas como determinantes.",
+          "es": "Em espanhol, os pronomes pessoais podem marcar pessoa, número, gênero em vários paradigmas e função sintática. Há formas tônicas e átonas, além de usos possessivos e demonstrativos. Algumas formas relacionadas aos pronomes funcionam como determinantes quando acompanham um substantivo.",
+          "pt": "Em português, os pronomes pessoais podem marcar pessoa, número, gênero em vários paradigmas e função sintática. A tradição gramatical também inclui usos possessivos e demonstrativos, que podem atuar de modo substantivo ou acompanhar um nome."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "I see her.",
+              "targets": [
+                "I",
+                "her"
+              ]
+            },
+            {
+              "text": "This is mine.",
+              "targets": [
+                "This",
+                "mine"
+              ]
+            },
+            {
+              "text": "They see us.",
+              "targets": [
+                "They",
+                "us"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Yo la veo.",
+              "targets": [
+                "Yo",
+                "la"
+              ]
+            },
+            {
+              "text": "Este es mío.",
+              "targets": [
+                "Este",
+                "mío"
+              ]
+            },
+            {
+              "text": "Ellos nos ven.",
+              "targets": [
+                "Ellos",
+                "nos"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Eu a vejo.",
+              "targets": [
+                "Eu",
+                "a"
+              ]
+            },
+            {
+              "text": "Este é meu.",
+              "targets": [
+                "Este",
+                "meu"
+              ]
+            },
+            {
+              "text": "Eles nos veem.",
+              "targets": [
+                "Eles",
+                "nos"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "person / persona / pessoa",
+            "target": "subject",
+            "status": "candidate"
+          },
+          {
+            "concept": "subject / object",
+            "target": "dependency-focus",
+            "status": "candidate"
+          },
+          {
+            "concept": "interrogative pronouns",
+            "target": "question-words",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "en": [
+            "pessoa",
+            "número",
+            "caso",
+            "função",
+            "possessivas",
+            "demonstrativas"
+          ],
+          "es": [
+            "pessoa",
+            "número",
+            "gênero",
+            "função sintática",
+            "possessivos",
+            "demonstrativos"
+          ],
+          "pt": [
+            "pessoa",
+            "número",
+            "gênero",
+            "função sintática",
+            "possessivos",
+            "demonstrativos"
+          ]
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Subtipos Essenciais / Classificações",
+        "items": [
+          {
+            "classification": {
+              "en": "Personal",
+              "es": "Personal",
+              "pt": "Pessoal"
+            },
+            "sentences": {
+              "en": "She teaches English.",
+              "es": "Ella enseña inglés.",
+              "pt": "Ela ensina inglês."
+            },
+            "targetWords": {
+              "en": "She",
+              "es": "Ella",
+              "pt": "Ela"
+            },
+            "definition": {
+              "pt": "Representa participantes do discurso ou outros referentes em relação às pessoas gramaticais, podendo assumir funções como sujeito ou objeto."
+            },
+            "toroConnections": [
+              {
+                "concept": "She / Ella / Ela",
+                "target": "subject",
+                "status": "candidate"
+              },
+              {
+                "concept": "personal reference",
+                "target": "after-dinner-conversation",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "participantes do discurso",
+                "pessoas gramaticais",
+                "sujeito",
+                "objeto"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Demonstrative",
+              "es": "Demostrativo",
+              "pt": "Demonstrativo"
+            },
+            "sentences": {
+              "en": "This is the one I want.",
+              "es": "Este es el que quiero.",
+              "pt": "Este é o que eu quero."
+            },
+            "targetWords": {
+              "en": "This",
+              "es": "Este",
+              "pt": "Este"
+            },
+            "definition": {
+              "pt": "Aponta ou situa um referente sem repetir o substantivo já recuperável pelo contexto. Quando a mesma forma acompanha explicitamente um nome, sua análise pode ser determinante, conforme a língua."
+            },
+            "toroConnections": [
+              {
+                "concept": "This / Este / Este",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              },
+              {
+                "concept": "demonstrative reference",
+                "target": "dependency-focus",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Aponta",
+                "referente",
+                "determinante"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Possessive",
+              "es": "Posesivo",
+              "pt": "Possessivo"
+            },
+            "sentences": {
+              "en": "This book is mine.",
+              "es": "Este libro es mío.",
+              "pt": "Este livro é meu."
+            },
+            "targetWords": {
+              "en": "mine",
+              "es": "mío",
+              "pt": "meu"
+            },
+            "definition": {
+              "pt": "Expressa posse, pertencimento ou associação substituindo ou retomando um grupo nominal já identificável no contexto."
+            },
+            "toroConnections": [
+              {
+                "concept": "mine / mío / meu",
+                "target": "after-dinner-conversation",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "posse",
+                "pertencimento",
+                "associação"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Who is she?",
+            "es": "¿Quién es ella?",
+            "pt": "Quem é ela?",
+            "targetWords": {
+              "en": "she",
+              "es": "ella",
+              "pt": "ela"
+            },
+            "intent": "IDENTIFY",
+            "extension": {
+              "en": "She is my teacher.",
+              "es": "Ella es mi profesora.",
+              "pt": "Ela é minha professora."
+            },
+            "extensionTargetWords": {
+              "en": "She",
+              "es": "Ella",
+              "pt": "Ela"
+            },
+            "toroConnections": [
+              {
+                "concept": "Who / Quién / Quem",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "she / ella / ela",
+                "target": "subject",
+                "status": "candidate"
+              },
+              {
+                "concept": "social identification",
+                "target": "after-dinner-conversation",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "en": "Do you prefer this?",
+            "es": "¿Prefieres este?",
+            "pt": "Você prefere este?",
+            "targetWords": {
+              "en": "this",
+              "es": "este",
+              "pt": "este"
+            },
+            "intent": "CHOOSE",
+            "extension": {
+              "en": "Yes, I prefer this.",
+              "es": "Sí, prefiero este.",
+              "pt": "Sim, eu prefiro este."
+            },
+            "extensionTargetWords": {
+              "en": "this",
+              "es": "este",
+              "pt": "este"
+            },
+            "toroConnections": [
+              {
+                "concept": "this / este / este",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              },
+              {
+                "concept": "demonstrative choice versus which + noun",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              }
+            ]
+          },
+          {
+            "en": "Is this yours?",
+            "es": "¿Esto es tuyo?",
+            "pt": "Isto é seu?",
+            "targetWords": {
+              "en": "yours",
+              "es": "tuyo",
+              "pt": "seu"
+            },
+            "intent": "POSSESSION",
+            "extension": {
+              "en": "Yes, it is mine.",
+              "es": "Sí, es mío.",
+              "pt": "Sim, é meu."
+            },
+            "extensionTargetWords": {
+              "en": "mine",
+              "es": "mío",
+              "pt": "meu"
+            },
+            "toroConnections": [
+              {
+                "concept": "yours / tuyo / seu",
+                "target": "after-dinner-conversation",
+                "status": "candidate"
+              },
+              {
+                "concept": "possessive reference",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; DNA discrimina; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Distinguir pronome de determinante quando a função e a tradição gramatical da língua exigirem.",
+        "Manter equivalência funcional entre EN, ES e PT sem forçar identidade de categorias.",
+        "Usar Experiences existentes como contexto de aplicação; links conceituais permanecem candidatos até existir uma fonte Master canônica específica para pronomes."
+      ],
+      "toroidalLinks": [
+        {
+          "concept": "personal reference",
+          "target": "subject",
+          "status": "candidate"
+        },
+        {
+          "concept": "demonstrative reference",
+          "target": "dependency-focus",
+          "status": "candidate"
+        },
+        {
+          "concept": "interrogative reference",
+          "target": "question-words",
+          "status": "candidate"
+        },
+        {
+          "concept": "choice with demonstratives",
+          "target": "shopping-for-dinner",
+          "status": "candidate"
+        },
+        {
+          "concept": "social identity and possession",
+          "target": "after-dinner-conversation",
+          "status": "candidate"
+        }
+      ],
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "personal pronouns as participant reference",
+          "demonstrative pronouns as contextual reference",
+          "possessive pronouns as possession or association",
+          "basic subject/object awareness",
+          "basic EN-ES-PT contrast when form and function diverge"
+        ],
+        "rule": "The Chapter introduces representative functions and safe contrasts; it does not attempt to exhaust every pronoun paradigm."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full personal-pronoun paradigms by person, number, gender and case or syntactic function",
+          "subject versus object forms and clitic systems",
+          "reflexive and reciprocal pronouns",
+          "relative pronouns",
+          "interrogative pronouns in full contrast with Question Words",
+          "indefinite pronouns",
+          "forms of address and treatment pronouns",
+          "possessive pronoun versus possessive determiner contrasts",
+          "demonstrative pronoun versus demonstrative determiner contrasts",
+          "language-specific placement, agreement, omission and register",
+          "advanced EN-ES-PT false equivalences and form-versus-function contrasts"
+        ],
+        "rule": "MASTER expands paradigms, exceptions, distribution and contrastive grammar without changing the Chapter's introductory definitions."
+      },
+      "experienceScope": {
+        "role": "contextual-application",
+        "preferredContexts": [
+          "shopping-for-dinner",
+          "after-dinner-conversation",
+          "college experiences when participant reference is naturally present"
+        ],
+        "rule": "Experiences should surface pronouns through real participant, choice, possession and reference needs rather than isolated paradigm drills."
+      },
+      "dependencyScope": {
+        "role": "structural-visualization",
+        "preferredFocus": [
+          "subject reference",
+          "object or complement reference",
+          "demonstrative reference inside noun phrases versus independent pronominal use"
+        ],
+        "rule": "Dependency views should visualize actual sentence function and must not classify a word as a pronoun only from its surface form."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology — activate the origin of the term",
+          "2 definition — establish the core referential idea",
+          "3 sentence-function — show where pronouns operate",
+          "4 grammar — compare the three languages safely",
+          "5 personal — identify participants",
+          "6 demonstrative — point to a contextual referent",
+          "7 possessive — express possession or association",
+          "8 IDENTIFY — apply personal reference",
+          "9 CHOOSE — apply demonstrative reference",
+          "10 POSSESSION — apply possessive reference"
+        ],
+        "rule": "Each slide adds one conceptual layer; advanced paradigms remain in MASTER."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}

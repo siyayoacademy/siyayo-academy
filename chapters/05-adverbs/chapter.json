@@ -1,0 +1,885 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 5,
+    "slug": "adverbs",
+    "title": {
+      "en": "ADVERB",
+      "es": "ADVERBIO",
+      "pt": "ADVÉRBIO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim adverbium, literalmente “junto ao verbo”. Historicamente o nome destaca sua relação com o verbo, mas o advérbio também pode modificar adjetivos, outros advérbios e até a oração inteira."
+        },
+        "focusWords": {
+          "pt": [
+            "adverbium",
+            "junto ao verbo",
+            "advérbio",
+            "adjetivos",
+            "outros advérbios",
+            "oração inteira"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Advérbio é a classe de palavras que acrescenta circunstância, intensidade, frequência, avaliação ou outra informação ao verbo, ao adjetivo, a outro advérbio ou à oração. Na SIYAYO ACADEMY, Tempo, Lugar e Modo formam o núcleo introdutório, ampliado por Frequência e Grau."
+        },
+        "focusWords": {
+          "pt": [
+            "Advérbio",
+            "circunstância",
+            "intensidade",
+            "frequência",
+            "Tempo",
+            "Lugar",
+            "Modo",
+            "Grau"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "O advérbio responde a relações como quando, onde, como, com que frequência e em que grau. Ele pode localizar uma ação no tempo e no espaço, descrever a maneira como algo acontece, graduar uma qualidade ou modificar o sentido global da oração."
+        },
+        "toroConnections": [
+          {
+            "concept": "when / time",
+            "target": "question-words",
+            "status": "candidate"
+          },
+          {
+            "concept": "where / place",
+            "target": "question-words",
+            "status": "candidate"
+          },
+          {
+            "concept": "how / manner",
+            "target": "question-words",
+            "status": "candidate"
+          },
+          {
+            "concept": "verb modification",
+            "target": "verbs",
+            "status": "candidate"
+          },
+          {
+            "concept": "adjective intensity",
+            "target": "words",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "pt": [
+            "quando",
+            "onde",
+            "como",
+            "frequência",
+            "grau",
+            "tempo",
+            "espaço"
+          ]
+        }
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, muitos advérbios de modo terminam em -ly, mas advérbio não é uma classe definida por essa terminação. A posição depende da função e do escopo: frequência costuma ficar próxima do verbo; tempo e lugar são mais móveis; advérbios de grau aparecem junto ao elemento que intensificam.",
+          "es": "Em espanhol, muitos advérbios de modo terminam em -mente, mas há numerosos advérbios simples e locuções adverbiais. A posição depende de função, escopo e foco: tempo e lugar são relativamente móveis; frequência e grau tendem a ficar próximos do elemento que modificam.",
+          "pt": "Em português, muitos advérbios de modo terminam em -mente, mas há numerosos advérbios simples e locuções adverbiais. A posição depende de função, escopo e foco: tempo e lugar são relativamente móveis; frequência e grau tendem a ficar próximos do elemento que modificam."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "She works carefully.",
+              "targets": [
+                "carefully"
+              ]
+            },
+            {
+              "text": "She is here now.",
+              "targets": [
+                "here",
+                "now"
+              ]
+            },
+            {
+              "text": "She often studies at night.",
+              "targets": [
+                "often"
+              ]
+            },
+            {
+              "text": "The dinner is very good.",
+              "targets": [
+                "very"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Ella trabaja cuidadosamente.",
+              "targets": [
+                "cuidadosamente"
+              ]
+            },
+            {
+              "text": "Ella está aquí ahora.",
+              "targets": [
+                "aquí",
+                "ahora"
+              ]
+            },
+            {
+              "text": "Ella estudia a menudo por la noche.",
+              "targets": [
+                "a menudo"
+              ]
+            },
+            {
+              "text": "La cena está muy buena.",
+              "targets": [
+                "muy"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Ela trabalha cuidadosamente.",
+              "targets": [
+                "cuidadosamente"
+              ]
+            },
+            {
+              "text": "Ela está aqui agora.",
+              "targets": [
+                "aqui",
+                "agora"
+              ]
+            },
+            {
+              "text": "Ela estuda frequentemente à noite.",
+              "targets": [
+                "frequentemente"
+              ]
+            },
+            {
+              "text": "O jantar está muito bom.",
+              "targets": [
+                "muito"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "adverb and verb",
+            "target": "verbs",
+            "status": "candidate"
+          },
+          {
+            "concept": "adverb and adjective",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "time / place / manner",
+            "target": "question-words",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "en": [
+            "-ly",
+            "posição",
+            "função",
+            "escopo",
+            "frequência",
+            "tempo",
+            "lugar",
+            "grau"
+          ],
+          "es": [
+            "-mente",
+            "locuções adverbiais",
+            "posição",
+            "função",
+            "escopo",
+            "foco",
+            "frequência",
+            "grau"
+          ],
+          "pt": [
+            "-mente",
+            "locuções adverbiais",
+            "posição",
+            "função",
+            "escopo",
+            "foco",
+            "frequência",
+            "grau"
+          ]
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Funções Adverbiais Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Time",
+              "es": "Tiempo",
+              "pt": "Tempo"
+            },
+            "sentences": {
+              "en": "We are cooking now.",
+              "es": "Estamos cocinando ahora.",
+              "pt": "Estamos cozinhando agora."
+            },
+            "targetWords": {
+              "en": "now",
+              "es": "ahora",
+              "pt": "agora"
+            },
+            "definition": {
+              "pt": "Localiza um acontecimento, processo ou estado no tempo: agora, ontem, amanhã, cedo, tarde, depois. O advérbio temporal acrescenta uma referência de tempo à oração, mas não é o mesmo que tempo verbal: a forma verbal e o advérbio podem cooperar ou até contrastar. Conecta-se naturalmente a WHEN / CUÁNDO / QUANDO."
+            },
+            "relatedExamples": [
+              {
+                "en": "We cooked yesterday.",
+                "es": "Cocinamos ayer.",
+                "pt": "Cozinhamos ontem."
+              },
+              {
+                "en": "Tomorrow we will cook together.",
+                "es": "Mañana cocinaremos juntos.",
+                "pt": "Amanhã cozinharemos juntos."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "when",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "timelines",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "verbs",
+                "target": "verbs",
+                "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "now",
+                  "yesterday"
+                ]
+              },
+              {
+                "source": "data/learning/experience-seeds.json",
+                "fields": [
+                  "circumstances.time",
+                  "thinkingMind.questionWord=when"
+                ]
+              },
+              {
+                "source": "data/grammar/verb-grid.json",
+                "field": "timeAspect"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "tempo",
+                "tempo verbal",
+                "WHEN",
+                "CUÁNDO",
+                "QUANDO"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Place",
+              "es": "Lugar",
+              "pt": "Lugar"
+            },
+            "sentences": {
+              "en": "The guests are outside.",
+              "es": "Los invitados están afuera.",
+              "pt": "Os convidados estão lá fora."
+            },
+            "targetWords": {
+              "en": "outside",
+              "es": "afuera",
+              "pt": "lá fora"
+            },
+            "definition": {
+              "pt": "Localiza alguém, algo ou um acontecimento no espaço: aqui, ali, perto, longe, dentro, fora. Advérbios de lugar podem ocupar posições diferentes na oração. Eles se relacionam com preposições e expressões espaciais, mas não são a mesma categoria gramatical. Conecta-se naturalmente a WHERE / DÓNDE / ONDE."
+            },
+            "relatedExamples": [
+              {
+                "en": "Come here.",
+                "es": "Ven aquí.",
+                "pt": "Venha aqui."
+              },
+              {
+                "en": "They are waiting outside.",
+                "es": "Están esperando afuera.",
+                "pt": "Eles estão esperando lá fora."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "where",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "place relation",
+                "target": "prepositions",
+                "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "here",
+                  "outside"
+                ]
+              },
+              {
+                "source": "data/learning/experience-seeds.json",
+                "fields": [
+                  "circumstances.place",
+                  "thinkingMind.questionWord=where"
+                ]
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "espaço",
+                "Advérbios de lugar",
+                "preposições",
+                "WHERE",
+                "DÓNDE",
+                "ONDE"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Manner",
+              "es": "Modo",
+              "pt": "Modo"
+            },
+            "sentences": {
+              "en": "She speaks clearly.",
+              "es": "Ella habla claramente.",
+              "pt": "Ela fala claramente."
+            },
+            "targetWords": {
+              "en": "clearly",
+              "es": "claramente",
+              "pt": "claramente"
+            },
+            "definition": {
+              "pt": "Descreve a maneira como uma ação, atividade ou processo acontece: claramente, cuidadosamente, rapidamente, bem. Pode ser uma palavra simples, uma forma em -ly/-mente ou uma locução. Conecta-se naturalmente a HOW / CÓMO / COMO e conversa diretamente com verbos de ACTION."
+            },
+            "relatedExamples": [
+              {
+                "en": "He answered calmly.",
+                "es": "Respondió con calma.",
+                "pt": "Ele respondeu calmamente."
+              },
+              {
+                "en": "She speaks very clearly.",
+                "es": "Ella habla muy claramente.",
+                "pt": "Ela fala muito claramente."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "how",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "action",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "verbs",
+                "target": "verbs",
+                "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "carefully",
+                  "clearly",
+                  "quickly"
+                ]
+              },
+              {
+                "source": "data/learning/experience-seeds.json",
+                "fields": [
+                  "thinkingMind.intention=manner",
+                  "thinkingMind.questionWord=how"
+                ]
+              },
+              {
+                "source": "data/learning/college-experience-seeds.json",
+                "fields": [
+                  "thinkingMind.intention=manner",
+                  "thinkingMind.questionWord=how"
+                ]
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "maneira",
+                "-ly/-mente",
+                "HOW",
+                "CÓMO",
+                "COMO",
+                "ACTION"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Frequency",
+              "es": "Frecuencia",
+              "pt": "Frequência"
+            },
+            "sentences": {
+              "en": "We often cook together.",
+              "es": "Cocinamos juntos a menudo.",
+              "pt": "Frequentemente cozinhamos juntos."
+            },
+            "targetWords": {
+              "en": "often",
+              "es": "a menudo",
+              "pt": "Frequentemente"
+            },
+            "definition": {
+              "pt": "Indica com que frequência algo acontece: sempre, frequentemente, às vezes, raramente, nunca. É especialmente útil para hábitos e rotinas, mas frequência não é a própria função verbal ACTION. Em inglês, sua posição pode depender do verbo e da presença de auxiliares. Conecta-se a HOW OFTEN / CON QUÉ FRECUENCIA / COM QUE FREQUÊNCIA."
+            },
+            "relatedExamples": [
+              {
+                "en": "She never arrives late.",
+                "es": "Ella nunca llega tarde.",
+                "pt": "Ela nunca chega atrasada."
+              },
+              {
+                "en": "We usually cook at home.",
+                "es": "Normalmente cocinamos en casa.",
+                "pt": "Normalmente cozinhamos em casa."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "how often",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "routine",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "timelines",
+                "target": "timelines",
+                "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "often",
+                  "never",
+                  "usually"
+                ]
+              },
+              {
+                "source": "data/nodes/action.json",
+                "fields": [
+                  "description",
+                  "metadata.notes"
+                ]
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "frequência",
+                "hábitos",
+                "rotinas",
+                "HOW OFTEN",
+                "CON QUÉ FRECUENCIA",
+                "COM QUE FREQUÊNCIA"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Degree & Intensity",
+              "es": "Grado e Intensidad",
+              "pt": "Grau e Intensidade"
+            },
+            "sentences": {
+              "en": "The dinner is very good.",
+              "es": "La cena está muy buena.",
+              "pt": "O jantar está muito bom."
+            },
+            "targetWords": {
+              "en": "very",
+              "es": "muy",
+              "pt": "muito"
+            },
+            "definition": {
+              "pt": "Modifica o grau ou a intensidade de uma qualidade, de outro advérbio ou de certas expressões: very/muy/muito, quite/bastante, too/demasiado. O advérbio de grau atua perto do elemento que modifica. Nem todo adjetivo ou advérbio aceita a mesma gradação naturalmente."
+            },
+            "relatedExamples": [
+              {
+                "en": "The dinner is very good.",
+                "es": "La cena está muy buena.",
+                "pt": "O jantar está muito bom."
+              },
+              {
+                "en": "She speaks very clearly.",
+                "es": "Ella habla muy claramente.",
+                "pt": "Ela fala muito claramente."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "adjective intensity",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "adverb modifying adverb",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "comparison and degree",
+                "target": "words",
+                "status": "candidate"
+              }
+            ],
+            "sourceLinks": [
+              {
+                "source": "data/lexicon/adverbs/adverbs.json",
+                "ids": [
+                  "very"
+                ]
+              },
+              {
+                "source": "chapters/04-adjectives/chapter.json",
+                "fields": [
+                  "comparison-intensity",
+                  "semanticDomainScope"
+                ]
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "grau",
+                "intensidade",
+                "very/muy/muito",
+                "quite/bastante",
+                "too/demasiado"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "How often do you cook here?",
+            "es": "¿Con qué frecuencia cocinas aquí?",
+            "pt": "Com que frequência você cozinha aqui?",
+            "targetWords": {
+              "en": "often",
+              "es": "frecuencia",
+              "pt": "frequência"
+            },
+            "intent": "LOCATE_AND_DESCRIBE",
+            "extension": {
+              "en": "We usually cook here in the evening, and we work very carefully.",
+              "es": "Normalmente cocinamos aquí por la noche y trabajamos con mucho cuidado.",
+              "pt": "Normalmente cozinhamos aqui à noite e trabalhamos com muito cuidado."
+            },
+            "extensionTargetWords": {
+              "en": "usually",
+              "es": "Normalmente",
+              "pt": "Normalmente"
+            },
+            "toroConnections": [
+              {
+                "concept": "How often / Con qué frecuencia / Com que frequência",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "usually / normalmente / normalmente",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "here / aquí / aqui",
+                "target": "prepositions",
+                "status": "candidate"
+              },
+              {
+                "concept": "evening / noche / noite",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "carefully / con cuidado / com cuidado",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "Experience",
+                "target": "preparing-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; EN/ES/PT contrastam a forma; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Tratar Time, Place e Manner como núcleo introdutório do mapa adverbial SIYAYO.",
+        "Adicionar Frequency e Degree/Intensity como extensões de alto valor pedagógico sem transformar o Chapter em inventário exaustivo.",
+        "Não reduzir advérbio a terminações -ly ou -mente; muitos advérbios são formas simples e algumas expressões adverbiais têm mais de uma palavra.",
+        "Distinguir função adverbial de forma lexical: uma mesma função pode ser realizada por uma palavra ou por uma expressão.",
+        "Usar contraste trilingue alinhado para revelar diferenças de posição, forma e naturalidade entre EN, ES e PT.",
+        "Reservar foco discursivo, advérbios sentenciais, ordem avançada, escopo, irregularidades e locuções complexas para a MASTER.",
+        "Conectar TIME a circumstances.time das Experiences e ao Verb Grid, mas manter a distinção: advérbio temporal localiza o evento; tense/aspect organiza a gramática verbal.",
+        "Conectar PLACE a circumstances.place e ao futuro Chapter de Prepositions, mas manter a distinção entre advérbio de lugar e relação preposicional.",
+        "Conectar MANNER às perguntas HOW já existentes na Mente Pensante das Experiences e College Experiences.",
+        "Conectar FREQUENCY à rotina/hábito do node Action, sem redefinir frequência como função verbal.",
+        "Usar data/lexicon/adverbs/adverbs.json como fonte canônica lexical para exemplos, glosses e futura navegação interna.",
+        "Distinguir posição de escopo: mover um advérbio pode mudar foco ou interpretação, não apenas estilo.",
+        "Não equiparar TIME a tense/aspect: advérbio temporal é conteúdo circunstancial; tense/aspect pertence à organização verbal.",
+        "Não equiparar PLACE a preposição: ambos podem expressar relações espaciais, mas pertencem a categorias diferentes.",
+        "Não equiparar MANNER a sufixos -ly/-mente: formas simples e locuções também realizam a mesma função.",
+        "Não equiparar FREQUENCY a rotina: frequência modifica a recorrência de uma ação, enquanto rotina pertence à interpretação do evento/hábito.",
+        "Tratar DEGREE como operador sobre adjetivo, advérbio ou expressão graduável, mantendo a conexão direta com Chapter 4."
+      ],
+      "trilingualContrastScope": {
+        "role": "toroidal-cross-language-comparison",
+        "principle": "Keep one semantic intention stable while EN, ES and PT expose different adverbial realizations.",
+        "observe": [
+          "time expressions",
+          "place expressions",
+          "manner formation and lexical alternatives",
+          "frequency position",
+          "degree and intensity strategies"
+        ],
+        "rule": "Prefer aligned EN/ES/PT examples whenever the contrast reveals how the same meaning is organized differently."
+      },
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "definition and sentence function",
+          "basic EN-ES-PT formation and position contrast",
+          "Time",
+          "Place",
+          "Manner",
+          "Frequency",
+          "Degree and Intensity",
+          "adverb modifying verb, adjective and adverb",
+          "one integrated conversational application"
+        ],
+        "rule": "The Chapter introduces the adverbial map without exhausting discourse scope, advanced word order or the full inventory of adverbial expressions."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "sentence adverbs and discourse markers",
+          "adverb scope and ambiguity",
+          "fine-grained word order",
+          "adverb versus adjective contrasts",
+          "irregular adverb formation",
+          "complex adverbial phrases",
+          "comparative and superlative adverbs",
+          "register and stylistic placement",
+          "advanced EN-ES-PT contrastive grammar"
+        ],
+        "rule": "MASTER expands semantic scope, distribution, exceptions and contrastive grammar."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 time",
+          "6 place",
+          "7 manner",
+          "8 frequency",
+          "9 degree-intensity",
+          "10 integrated conversation"
+        ],
+        "rule": "The Chapter moves from the adverb's modifying role to the core SIYAYO dimensions Time, Place and Manner, then adds Frequency and Degree before contextual integration."
+      },
+      "sourceConnections": {
+        "role": "canonical-source-integration",
+        "sources": [
+          {
+            "id": "adverb-corpus",
+            "path": "data/lexicon/adverbs/adverbs.json",
+            "contributes": [
+              "translations",
+              "adverbClass",
+              "semanticTags",
+              "glosses",
+              "selfExamples"
+            ]
+          },
+          {
+            "id": "experience-seeds",
+            "path": "data/learning/experience-seeds.json",
+            "contributes": [
+              "circumstances.time",
+              "circumstances.place",
+              "thinkingMind.when",
+              "thinkingMind.where",
+              "thinkingMind.how",
+              "contextual application"
+            ]
+          },
+          {
+            "id": "college-experience-seeds",
+            "path": "data/learning/college-experience-seeds.json",
+            "contributes": [
+              "thinkingMind.how",
+              "circumstances.time",
+              "circumstances.place",
+              "study contexts"
+            ]
+          },
+          {
+            "id": "verb-grid",
+            "path": "data/grammar/verb-grid.json",
+            "contributes": [
+              "time reference",
+              "aspect contrast",
+              "finite carrier",
+              "verb-adverb temporal compatibility"
+            ]
+          },
+          {
+            "id": "verb-action-node",
+            "path": "data/nodes/action.json",
+            "contributes": [
+              "routine",
+              "habit",
+              "action",
+              "frequency connection"
+            ]
+          }
+        ],
+        "principle": "Chapter 5 should reuse canonical information already present in the Academy whenever the semantic function is the same, instead of duplicating isolated definitions.",
+        "rule": "Connections expose source relationships without collapsing distinct layers: adverbial time is not tense/aspect, place is not preposition, and frequency is not the Action function itself."
+      },
+      "boundaryMap": {
+        "role": "semantic-boundary-audit",
+        "contrasts": [
+          {
+            "left": "adverbial-time",
+            "right": "tense-aspect",
+            "rule": "time expressions locate the event; tense/aspect organizes verbal grammar"
+          },
+          {
+            "left": "adverbial-place",
+            "right": "preposition",
+            "rule": "both can express spatial relations, but they are different word-class or phrase structures"
+          },
+          {
+            "left": "manner",
+            "right": "word-formation",
+            "rule": "manner is a semantic function; -ly/-mente is only one possible form"
+          },
+          {
+            "left": "frequency",
+            "right": "routine-action",
+            "rule": "frequency modifies recurrence; Action describes what the subject does"
+          },
+          {
+            "left": "degree",
+            "right": "adjective-quality",
+            "rule": "degree modifies intensity; the adjective contributes the quality itself"
+          }
+        ]
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}

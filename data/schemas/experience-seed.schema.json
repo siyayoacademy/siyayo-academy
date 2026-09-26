@@ -105,6 +105,7 @@
       "required": [
         "intention",
         "questionWord",
+        "questionWordLabel",
         "question"
       ],
       "additionalProperties": false,
@@ -115,6 +116,9 @@
         "questionWord": {
           "type": "string"
         },
+        "questionWordLabel": {
+          "$ref": "#/$defs/trilingual"
+        },
         "question": {
           "$ref": "#/$defs/trilingual"
         },
@@ -123,6 +127,15 @@
         },
         "choiceContext": {
           "$ref": "#/$defs/choiceContext"
+        },
+        "assessmentTarget": {
+          "type": "object",
+          "required": ["skill", "definitionPath"],
+          "additionalProperties": false,
+          "properties": {
+            "skill": { "type": "string", "minLength": 1 },
+            "definitionPath": { "type": "string", "minLength": 1 }
+          }
         }
       }
     },
@@ -250,6 +263,31 @@
             },
             "concluding": {
               "$ref": "#/$defs/perspective"
+            }
+          }
+        },
+        "dependencyFocus": {
+          "type": "object",
+          "required": ["structureIds", "defaultFocus"],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": { "$ref": "#/$defs/trilingual" },
+            "defaultFocus": { "type": "string" }
+          }
+        },
+        "dependencyHeadProbe": {
+          "type": "object",
+          "required": ["structureIds", "targetTokenId", "prompt", "alternativeTokenIds"],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": { "$ref": "#/$defs/trilingual" },
+            "targetTokenId": { "type": "string" },
+            "prompt": { "$ref": "#/$defs/trilingual" },
+            "alternativeTokenIds": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": { "type": "string" }
             }
           }
         },

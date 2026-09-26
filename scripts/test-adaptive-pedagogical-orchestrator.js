@@ -7,6 +7,15 @@ let decision = Orchestrator.decide(Profile, observing, { currentExperience: 'hav
 assert.strictEqual(decision.action, 'continue-assessment');
 assert.strictEqual(decision.experienceId, 'having-dinner');
 assert.strictEqual(decision.focus, 'assessment');
+assert.strictEqual(decision.skill, undefined, 'general assessment without resolved skill must remain skill-less');
+
+decision = Orchestrator.decide(Profile, observing, {
+  currentExperience: 'shopping-for-dinner',
+  skill: 'which.use.determiner'
+});
+assert.strictEqual(decision.action, 'continue-assessment');
+assert.strictEqual(decision.experienceId, 'shopping-for-dinner');
+assert.strictEqual(decision.skill, 'which.use.determiner', 'explicitly resolved context skill must propagate into assessment decision');
 
 const reviewing = Profile.createProfile('reviewing');
 Profile.record(reviewing, {
@@ -15,10 +24,14 @@ Profile.record(reviewing, {
   requiresReview: true,
   requiresReinforcement: false
 });
-decision = Orchestrator.decide(Profile, reviewing, { currentExperience: 'after-dinner-conversation' });
+decision = Orchestrator.decide(Profile, reviewing, {
+  currentExperience: 'after-dinner-conversation',
+  skill: 'which.use.determiner'
+});
 assert.strictEqual(decision.action, 'continue-assessment');
 assert.strictEqual(decision.focus, 'contrast-review');
 assert.strictEqual(decision.experienceId, 'after-dinner-conversation');
+assert.strictEqual(decision.skill, 'which.use.determiner', 'resolved context skill must survive review decisions');
 
 const reinforcing = Profile.createProfile('reinforcing');
 Profile.record(reinforcing, {

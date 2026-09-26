@@ -1,0 +1,778 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 3,
+    "slug": "verbs",
+    "title": {
+      "en": "VERB",
+      "es": "VERBO",
+      "pt": "VERBO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim verbum, “palavra”. Na tradição gramatical, o verbo tornou-se a classe associada à expressão de acontecimentos, ações, estados, qualidades, processos e existência, organizando relações fundamentais da oração."
+        },
+        "focusWords": {
+          "pt": [
+            "verbum",
+            "palavra",
+            "ações",
+            "estados",
+            "qualidades",
+            "processos",
+            "existência"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Verbo é a classe de palavras que organiza o predicado e expressa, conforme o contexto, ação, processo, estado, qualidade, existência ou outras relações verbais. Suas formas também podem marcar tempo, pessoa, número, modo e aspecto, de maneiras diferentes em inglês, espanhol e português."
+        },
+        "focusWords": {
+          "pt": [
+            "Verbo",
+            "predicado",
+            "ação",
+            "processo",
+            "estado",
+            "qualidade",
+            "existência"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "O verbo funciona como núcleo do predicado verbal ou participa de construções que atribuem uma qualidade, indicam um estado, expressam movimento, realizam uma ação ou estabelecem existência. Verbos auxiliares podem combinar-se com o verbo principal para construir tempo, aspecto, modalidade, negação e perguntas."
+        },
+        "toroConnections": [
+          {
+            "concept": "verb as predicate nucleus",
+            "target": "verbs",
+            "status": "candidate"
+          },
+          {
+            "concept": "verb and sentence structure",
+            "target": "sentence-order",
+            "status": "candidate"
+          },
+          {
+            "concept": "auxiliary support",
+            "target": "auxiliaries",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "pt": [
+            "núcleo",
+            "qualidade",
+            "estado",
+            "movimento",
+            "ação",
+            "existência",
+            "auxiliares"
+          ]
+        }
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, os verbos variam menos por pessoa do que em espanhol e português e usam amplamente auxiliares. O mesmo verbo pode aparecer em presente, passado, futuro, afirmativa, negativa, interrogativa, aspecto progressivo e construções modais.",
+          "es": "Em espanhol, os verbos apresentam flexão rica de pessoa, número, tempo e modo. A afirmativa, a negativa e a interrogativa preservam o verbo como núcleo, enquanto perífrases e verbos modais acrescentam aspecto, intenção, possibilidade ou obrigação.",
+          "pt": "Em português, os verbos apresentam flexão de pessoa, número, tempo e modo. A afirmativa, a negativa e a interrogativa organizam-se em torno do verbo; locuções e verbos modais acrescentam aspecto, possibilidade, capacidade, obrigação e outras relações."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "She works every day.",
+              "targets": [
+                "works"
+              ]
+            },
+            {
+              "text": "She did not work yesterday.",
+              "targets": [
+                "did",
+                "work"
+              ]
+            },
+            {
+              "text": "Did she work yesterday?",
+              "targets": [
+                "Did",
+                "work"
+              ]
+            },
+            {
+              "text": "She will work tomorrow.",
+              "targets": [
+                "will",
+                "work"
+              ]
+            },
+            {
+              "text": "She can work today.",
+              "targets": [
+                "can",
+                "work"
+              ]
+            },
+            {
+              "text": "She is working now.",
+              "targets": [
+                "is",
+                "working"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "Ella trabaja todos los días.",
+              "targets": [
+                "trabaja"
+              ]
+            },
+            {
+              "text": "Ella no trabajó ayer.",
+              "targets": [
+                "trabajó"
+              ]
+            },
+            {
+              "text": "¿Trabajó ella ayer?",
+              "targets": [
+                "Trabajó"
+              ]
+            },
+            {
+              "text": "Ella trabajará mañana.",
+              "targets": [
+                "trabajará"
+              ]
+            },
+            {
+              "text": "Ella puede trabajar hoy.",
+              "targets": [
+                "puede",
+                "trabajar"
+              ]
+            },
+            {
+              "text": "Ella está trabajando ahora.",
+              "targets": [
+                "está",
+                "trabajando"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Ela trabalha todos os dias.",
+              "targets": [
+                "trabalha"
+              ]
+            },
+            {
+              "text": "Ela não trabalhou ontem.",
+              "targets": [
+                "trabalhou"
+              ]
+            },
+            {
+              "text": "Ela trabalhou ontem?",
+              "targets": [
+                "trabalhou"
+              ]
+            },
+            {
+              "text": "Ela trabalhará amanhã.",
+              "targets": [
+                "trabalhará"
+              ]
+            },
+            {
+              "text": "Ela pode trabalhar hoje.",
+              "targets": [
+                "pode",
+                "trabalhar"
+              ]
+            },
+            {
+              "text": "Ela está trabalhando agora.",
+              "targets": [
+                "está",
+                "trabalhando"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "verb functions",
+            "target": "verb-functions",
+            "status": "candidate"
+          },
+          {
+            "concept": "auxiliaries",
+            "target": "auxiliaries",
+            "status": "candidate"
+          },
+          {
+            "concept": "timelines",
+            "target": "timelines",
+            "status": "candidate"
+          },
+          {
+            "concept": "DNA VERBS",
+            "target": "verbs",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "en": [
+            "presente",
+            "passado",
+            "futuro",
+            "afirmativa",
+            "negativa",
+            "interrogativa",
+            "aspecto progressivo",
+            "modais"
+          ],
+          "es": [
+            "pessoa",
+            "número",
+            "tempo",
+            "modo",
+            "afirmativa",
+            "negativa",
+            "interrogativa"
+          ],
+          "pt": [
+            "pessoa",
+            "número",
+            "tempo",
+            "modo",
+            "afirmativa",
+            "negativa",
+            "interrogativa",
+            "modais"
+          ]
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Funções Verbais Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Quality",
+              "es": "Cualidad",
+              "pt": "Qualidade"
+            },
+            "sentences": {
+              "en": "She is kind.",
+              "es": "Ella es amable.",
+              "pt": "Ela é gentil."
+            },
+            "targetWords": {
+              "en": "is",
+              "es": "es",
+              "pt": "é"
+            },
+            "definition": {
+              "pt": "Atribui identidade, classificação, qualidade, propriedade ou característica ao sujeito. Em inglês, BE pode realizar essa relação; em espanhol e português, SER aparece frequentemente em identidades e características, sem formar uma regra mecânica de tradução."
+            },
+            "toroConnections": [
+              {
+                "concept": "quality",
+                "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "copular / linking relation",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective relation",
+                "target": "words",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "She is not a doctor.",
+                "es": "Ella no es médica.",
+                "pt": "Ela não é médica."
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "identidade",
+                "classificação",
+                "qualidade",
+                "característica",
+                "BE",
+                "SER"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "State",
+              "es": "Estado",
+              "pt": "Estado"
+            },
+            "sentences": {
+              "en": "She is tired.",
+              "es": "Ella está cansada.",
+              "pt": "Ela está cansada."
+            },
+            "targetWords": {
+              "en": "is",
+              "es": "está",
+              "pt": "está"
+            },
+            "definition": {
+              "pt": "Expressa a condição, situação ou estado em que o sujeito se encontra ou é apresentado no contexto. O inglês também usa BE; espanhol e português frequentemente usam ESTAR para estados contextuais, mas SER/ESTAR dependem do significado e do uso de cada língua."
+            },
+            "toroConnections": [
+              {
+                "concept": "state",
+                "target": "state",
+                "status": "candidate"
+              },
+              {
+                "concept": "state in context",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "Quality / State contrast",
+                "target": "quality",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "She was tired yesterday.",
+                "es": "Ella estaba cansada ayer.",
+                "pt": "Ela estava cansada ontem."
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "condição",
+                "situação",
+                "estado",
+                "BE",
+                "ESTAR"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Movement",
+              "es": "Movimiento",
+              "pt": "Movimento"
+            },
+            "sentences": {
+              "en": "We walk to school.",
+              "es": "Caminamos a la escuela.",
+              "pt": "Caminhamos até a escola."
+            },
+            "targetWords": {
+              "en": "walk",
+              "es": "Caminamos",
+              "pt": "Caminhamos"
+            },
+            "definition": {
+              "pt": "Expressa deslocamento, direção, mudança de posição ou movimento físico. Verbos como go, come, walk e run podem pertencer simultaneamente aos eixos Movement e Action. O progressive (BE + verbo-ING) pode mostrar esse movimento em andamento, mas é uma camada de aspecto, não a definição de Movement."
+            },
+            "toroConnections": [
+              {
+                "concept": "movement",
+                "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "action overlap",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "direction and spatial relation",
+                "target": "prepositions",
+                "status": "candidate"
+              },
+              {
+                "concept": "DNA VERBS",
+                "target": "verbs",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "We can walk there.",
+                "es": "Podemos caminar hasta allí.",
+                "pt": "Podemos caminhar até lá."
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "deslocamento",
+                "direção",
+                "movimento físico",
+                "Movement",
+                "Action",
+                "progressive"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Action",
+              "es": "Acción",
+              "pt": "Ação"
+            },
+            "sentences": {
+              "en": "We cook dinner every Friday.",
+              "es": "Cocinamos la cena todos los viernes.",
+              "pt": "Cozinhamos o jantar toda sexta-feira."
+            },
+            "targetWords": {
+              "en": "cook",
+              "es": "Cocinamos",
+              "pt": "Cozinhamos"
+            },
+            "definition": {
+              "pt": "Expressa o que o sujeito faz por meio de ações lexicais, atividades, hábitos e rotinas. Tempo, aspecto, negativa, interrogativa e modalidade podem modificar a construção sem mudar a função Action; ela também pode sobrepor-se a Movement."
+            },
+            "toroConnections": [
+              {
+                "concept": "action",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "habit and routine",
+                "target": "timelines",
+                "status": "candidate"
+              },
+              {
+                "concept": "auxiliary DO",
+                "target": "auxiliaries",
+                "status": "candidate"
+              },
+              {
+                "concept": "modal layer",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "having dinner",
+                "target": "having-dinner",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "Do you cook at home?",
+                "es": "¿Cocinas en casa?",
+                "pt": "Você cozinha em casa?"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "ações lexicais",
+                "atividades",
+                "hábitos",
+                "rotinas",
+                "Action",
+                "Movement"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Existence",
+              "es": "Existencia",
+              "pt": "Existência"
+            },
+            "sentences": {
+              "en": "There is a book on the table.",
+              "es": "Hay un libro sobre la mesa.",
+              "pt": "Há um livro sobre a mesa."
+            },
+            "targetWords": {
+              "en": "There is",
+              "es": "Hay",
+              "pt": "Há"
+            },
+            "definition": {
+              "pt": "Expressa existência, presença, disponibilidade ou ocorrência. Em inglês, THERE + BE é uma construção central; em espanhol, HAY é central; em português, HÁ é neutro-formal e TER é muito frequente na fala brasileira. Negação, pergunta, tempo e modalidade podem operar sobre essa função."
+            },
+            "toroConnections": [
+              {
+                "concept": "existence",
+                "target": "existence",
+                "status": "candidate"
+              },
+              {
+                "concept": "there + be",
+                "target": "master-existence",
+                "status": "candidate"
+              },
+              {
+                "concept": "hay / há / ter",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "time and modality",
+                "target": "timelines",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "There will be a meeting tomorrow.",
+                "es": "Habrá una reunión mañana.",
+                "pt": "Haverá uma reunião amanhã."
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "existência",
+                "presença",
+                "disponibilidade",
+                "ocorrência",
+                "THERE + BE",
+                "HAY",
+                "HÁ"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Where are you going?",
+            "es": "¿Adónde vas?",
+            "pt": "Aonde você vai?",
+            "targetWords": {
+              "en": "are you going",
+              "es": "vas",
+              "pt": "vai"
+            },
+            "intent": "CONNECT",
+            "extension": {
+              "en": "We are going to the market, and there is food there.",
+              "es": "Vamos al mercado y hay comida allí.",
+              "pt": "Vamos ao mercado e há comida lá."
+            },
+            "extensionTargetWords": {
+              "en": "are going",
+              "es": "Vamos",
+              "pt": "Vamos"
+            },
+            "toroConnections": [
+              {
+                "concept": "Where / Adónde / Aonde",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "movement in context",
+                "target": "movement",
+                "status": "candidate"
+              },
+              {
+                "concept": "action overlap",
+                "target": "action",
+                "status": "candidate"
+              },
+              {
+                "concept": "existence in context",
+                "target": "existence",
+                "status": "candidate"
+              },
+              {
+                "concept": "shopping-for-dinner",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; DNA VERBS discrimina e organiza; Experience aplica; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Preservar as cinco funções verbais canônicas atualmente registradas no repositório: Quality, State, Movement, Action e Existence.",
+        "Tratar Routine como aplicação de Action no contrato atual.",
+        "Distinguir Quality e State pela função semântica, não apenas pela forma verbal: o inglês usa BE em ambos; espanhol e português frequentemente contrastam SER e ESTAR, mas sem equivalência mecânica um-para-um.",
+        "Definir Movement por deslocamento, direção, mudança de posição ou movimento físico; tratar o progressive (BE + verbo-ING) como camada de aspecto transversal, não como definição da função Movement.",
+        "Permitir sobreposição semântica entre Movement e Action para verbos como go, come, walk e run.",
+        "Reservar paradigmas completos, auxiliares, tempos, modos, aspectos, regulares e irregulares para MASTER e DNA VERBS.",
+        "Tratar affirmative, negative e interrogative como formas estruturais aplicáveis às funções verbais, não como novas funções semânticas.",
+        "Tratar present, past e future como referências temporais e progressive/perfect como camadas de aspecto, separadas de Quality, State, Movement, Action e Existence.",
+        "Tratar modais como camada de modalidade que pode combinar-se com diferentes funções verbais sem redefini-las."
+      ],
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "verb as predicate nucleus",
+          "basic EN-ES-PT inflection contrast",
+          "affirmative, negative and interrogative forms",
+          "present, past and future reference",
+          "introductory modal examples",
+          "introductory progressive example",
+          "Quality",
+          "State",
+          "Movement",
+          "Action",
+          "Existence",
+          "one integrated conversational application"
+        ],
+        "rule": "The Chapter introduces the canonical verb map and representative tense/form/modal contrasts without exhausting conjugation systems or auxiliary-chain theory."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full tense and mood paradigms",
+          "aspect systems",
+          "regular and irregular verb morphology",
+          "auxiliary systems",
+          "modal constructions",
+          "conditional constructions",
+          "phrasal verbs",
+          "voice",
+          "agreement and subject omission",
+          "advanced EN-ES-PT contrastive grammar"
+        ],
+        "rule": "MASTER expands forms, paradigms, exceptions and contrastive grammar."
+      },
+      "dnaScope": {
+        "role": "functional-exploration",
+        "target": "verbs",
+        "rule": "DNA VERBS is the dedicated exploration surface for canonical verb functions, forms and discriminations."
+      },
+      "experienceScope": {
+        "role": "contextual-application",
+        "preferredContexts": [
+          "shopping-for-dinner",
+          "preparing-dinner",
+          "having-dinner",
+          "after-dinner-conversation",
+          "college experiences"
+        ],
+        "rule": "Experiences apply verb functions in real situations rather than isolated conjugation drills."
+      },
+      "toroidalLinks": [
+        {
+          "concept": "verb functions",
+          "target": "verb-functions",
+          "status": "candidate"
+        },
+        {
+          "concept": "Quality",
+          "target": "quality",
+          "status": "candidate"
+        },
+        {
+          "concept": "State",
+          "target": "state",
+          "status": "candidate"
+        },
+        {
+          "concept": "Movement",
+          "target": "movement",
+          "status": "candidate"
+        },
+        {
+          "concept": "Action",
+          "target": "action",
+          "status": "candidate"
+        },
+        {
+          "concept": "Existence",
+          "target": "existence",
+          "status": "candidate"
+        },
+        {
+          "concept": "DNA VERBS",
+          "target": "verbs",
+          "status": "candidate"
+        },
+        {
+          "concept": "Experience",
+          "target": "preparing-dinner",
+          "status": "candidate"
+        }
+      ],
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 Quality",
+          "6 State",
+          "7 Movement",
+          "8 Action",
+          "9 Existence",
+          "10 integrated conversation"
+        ],
+        "rule": "The five canonical verb functions each receive one dedicated introductory slide. Global tense, polarity, interrogation, modality and aspect appear representatively without turning the A5 Chapter into a full paradigm reference."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}

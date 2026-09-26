@@ -10,7 +10,6 @@
       "pt"
     ]
   },
-
   "interface": {
     "defaultView": "story",
     "orientation": "auto",
@@ -24,7 +23,6 @@
       "exampleLinesPerSlide": 3
     }
   },
-
   "languages": {
     "en": {
       "label": "English",
@@ -39,7 +37,6 @@
       "locale": "pt-BR"
     }
   },
-
   "chapters": [
     {
       "number": 1,
@@ -52,7 +49,6 @@
       "path": "chapters/01-nouns/chapter.json",
       "status": "active"
     },
-
     {
       "number": 2,
       "slug": "pronouns",
@@ -62,9 +58,8 @@
         "pt": "PRONOME"
       },
       "path": "chapters/02-pronouns/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 3,
       "slug": "verbs",
@@ -74,9 +69,8 @@
         "pt": "VERBO"
       },
       "path": "chapters/03-verbs/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 4,
       "slug": "adjectives",
@@ -86,9 +80,8 @@
         "pt": "ADJETIVO"
       },
       "path": "chapters/04-adjectives/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 5,
       "slug": "adverbs",
@@ -98,9 +91,8 @@
         "pt": "ADVÉRBIO"
       },
       "path": "chapters/05-adverbs/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 6,
       "slug": "articles",
@@ -110,9 +102,8 @@
         "pt": "ARTIGO"
       },
       "path": "chapters/06-articles/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 7,
       "slug": "prepositions",
@@ -122,9 +113,8 @@
         "pt": "PREPOSIÇÃO"
       },
       "path": "chapters/07-prepositions/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 8,
       "slug": "conjunctions",
@@ -134,9 +124,8 @@
         "pt": "CONJUNÇÃO"
       },
       "path": "chapters/08-conjunctions/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 9,
       "slug": "interjections",
@@ -146,9 +135,8 @@
         "pt": "INTERJEIÇÃO"
       },
       "path": "chapters/09-interjections/chapter.json",
-      "status": "planned"
+      "status": "ready"
     },
-
     {
       "number": 10,
       "slug": "numerals",
@@ -158,10 +146,9 @@
         "pt": "NUMERAL"
       },
       "path": "chapters/10-numerals/chapter.json",
-      "status": "planned"
+      "status": "ready"
     }
   ],
-
   "extraModules": [
     {
       "id": "interrogative-words",
@@ -172,10 +159,9 @@
         "pt": "PALAVRAS INTERROGATIVAS"
       },
       "path": "chapters/11-interrogative-words/chapter.json",
-      "status": "planned"
+      "status": "ready"
     }
   ],
-
   "navigation": {
     "chapterMenu": true,
     "treeMenu": true,
@@ -184,7 +170,6 @@
     "playPause": true,
     "share": true
   },
-
   "contentEngine": {
     "chapterManifest": "chapter.json",
     "supportedContentTypes": [
@@ -193,5 +178,54 @@
       "examples",
       "conversation"
     ]
+  },
+  "localization": {
+    "supportedInterfaceLanguages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "defaultInterfaceLanguage": "pt",
+    "resolutionOrder": [
+      "saved-preference",
+      "browser-languages",
+      "default"
+    ],
+    "preserveRegionalLocale": true,
+    "storageKey": "siyayo.interfaceLanguage",
+    "languageFamilies": {
+      "en": [
+        "en"
+      ],
+      "es": [
+        "es"
+      ],
+      "pt": [
+        "pt"
+      ]
+    },
+    "welcome": {
+      "en": {
+        "heading": "Welcome to SIYAYO Academy",
+        "body": "Discover how words live, connect, and change function across English, Spanish, and Portuguese.",
+        "invitation": "Observe. Compare. Listen. Experience.",
+        "reassurance": "You do not need to choose a level to begin. Choose a word, follow a discovery, and let the path reveal the next step.",
+        "question": "Where are you going?"
+      },
+      "es": {
+        "heading": "Bienvenido a SIYAYO Academy",
+        "body": "Descubre cómo viven las palabras, cómo se relacionan y cómo cambian de función en inglés, español y portugués.",
+        "invitation": "Observa. Compara. Escucha. Experimenta.",
+        "reassurance": "No necesitas elegir un nivel para comenzar. Elige una palabra, sigue un descubrimiento y deja que el camino revele el próximo paso.",
+        "question": "¿Adónde vas?"
+      },
+      "pt": {
+        "heading": "Bem-vindo à SIYAYO Academy",
+        "body": "Descubra como as palavras vivem, se relacionam e mudam de função em inglês, espanhol e português.",
+        "invitation": "Observe. Compare. Escute. Experimente.",
+        "reassurance": "Você não precisa escolher um nível para começar. Escolha uma palavra, siga uma descoberta e deixe que o caminho revele o próximo passo.",
+        "question": "Aonde você vai?"
+      }
+    }
   }
 }

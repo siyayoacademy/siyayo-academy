@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Quicksand:wght@500;600;700&display=swap');
+
 /* =========================================================
    SIYAYO ACADEMY
    Visual Engine - v0.6
@@ -32,6 +34,21 @@
   --story-radius: 24px;
 
   --transition-fast: 180ms ease;
+
+  --control-bg-off: #030b1e;
+  --control-bg-on: #1c8e3e;
+
+  --font-display:
+    "Quicksand",
+    "Trebuchet MS",
+    Arial,
+    sans-serif;
+
+  --font-body:
+    "Nunito Sans",
+    "Segoe UI",
+    Arial,
+    sans-serif;
 }
 
 
@@ -64,9 +81,7 @@ body {
   padding: 18px;
 
   font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    var(--font-body);
 
   color: var(--text-main);
 
@@ -560,11 +575,7 @@ body {
     rgba(242, 216, 138, 0.52);
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(215, 179, 90, 0.19),
-      rgba(3, 18, 43, 0.55)
-    );
+    var(--control-bg-off);
 
   color:
     #fff;
@@ -597,11 +608,30 @@ body {
     var(--siyayo-gold-light);
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(242, 216, 138, 0.31),
-      rgba(6, 36, 77, 0.68)
-    );
+    var(--control-bg-on);
+}
+
+.slider-button.is-on:not(:disabled) {
+  background:
+    var(--control-bg-on);
+
+  border-color:
+    rgba(242, 216, 138, 0.68);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.14),
+
+    0 6px 16px
+      rgba(0, 0, 0, 0.32),
+
+    0 0 16px
+      rgba(28, 142, 62, 0.20);
+}
+
+.slider-button.is-on:hover:not(:disabled) {
+  background:
+    var(--control-bg-on);
 }
 
 .slider-button:active:not(:disabled) {
@@ -732,6 +762,16 @@ body {
     padding: 0;
 
     background: #000;
+  }
+
+  .academy-quick-links {
+    width: calc(100vw - 24px);
+    bottom: 10px;
+  }
+
+  .academy-quick-link {
+    padding: 8px 11px;
+    font-size: 0.62rem;
   }
 
   .story {
@@ -1067,6 +1107,15 @@ transform:
    LIONSGATE / HOME
    --------------------------------------------------------- */
 
+.lionsgate-logo {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 .lionsgate-button {
   top: 14px;
   left: 14px;
@@ -1351,3 +1400,1292 @@ transform:
 
 }
 
+
+/* =========================================================
+   ACADEMY HOME · CHAPTER STACK + PROTOTYPE ENTRY POINTS
+   ========================================================= */
+.academy-title {
+  position: absolute;
+  z-index: 3;
+  top: clamp(70px, 12%, 110px);
+  left: 8%;
+  right: 8%;
+  text-align: center;
+}
+.academy-chapter-stack {
+  position: relative;
+  z-index: 3;
+  width: min(86%, 390px);
+  max-height: 52%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+  margin-top: 8%;
+  padding: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215,179,90,.55) transparent;
+}
+.academy-chapter-link {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid rgba(242,216,138,.24);
+  border-radius: 12px;
+  background: rgba(2,12,30,.58);
+  color: rgba(255,255,255,.72);
+  text-align: left;
+}
+.academy-chapter-link span {
+  color: var(--siyayo-gold-light);
+  font-size: .72rem;
+  letter-spacing: .12em;
+}
+.academy-chapter-link strong {
+  font-size: clamp(.66rem, 2.2vw, .82rem);
+  letter-spacing: .035em;
+}
+.academy-chapter-link.is-active {
+  border-color: rgba(242,216,138,.72);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(215,179,90,.12);
+}
+.academy-chapter-link:not(.is-active) {
+  cursor: default;
+}
+.academy-quick-links {
+  position: fixed;
+  z-index: 900;
+  left: 50%;
+  bottom: clamp(12px, 2.5vh, 24px);
+  transform: translateX(-50%);
+  width: min(88vw, 760px);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  pointer-events: auto;
+}
+.academy-quick-link {
+  padding: 9px 13px;
+  border: 1px solid rgba(242,216,138,.45);
+  border-radius: 999px;
+  background: rgba(2,12,30,.78);
+  color: var(--siyayo-gold-light);
+  font-size: clamp(.62rem, 2vw, .76rem);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+.academy-quick-link-primary {
+  border-color: rgba(242,216,138,.8);
+  color: #fff4c5;
+}
+@media (orientation: landscape) {
+  .academy-title { top: 58px; }
+  .academy-chapter-stack {
+    width: min(72%, 680px);
+    max-height: 48%;
+    margin-top: 5%;
+  }
+  .academy-chapter-link {
+    grid-template-columns: 42px 1fr;
+    padding: 5px 12px;
+  }
+  .academy-quick-links { bottom: 12px; }
+}
+
+
+/* Slide 4 laboratory: independent language context, text and speech. */
+.grammar-language-carousel {
+  width: 100%;
+  min-height: 0;
+}
+.grammar-language-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.grammar-language-tab {
+  border: 1px solid rgba(242, 216, 138, 0.3);
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: rgba(2, 12, 30, 0.42);
+  color: var(--text-main);
+  font: inherit;
+  cursor: pointer;
+}
+.grammar-language-tab.is-active {
+  color: var(--siyayo-gold-light);
+  border-color: rgba(242, 216, 138, 0.75);
+}
+.grammar-language-panel {
+  display: none;
+  width: 100%;
+}
+.grammar-language-panel.is-active {
+  display: block;
+}
+.grammar-definition .language-line {
+  width: 100%;
+}
+.grammar-examples {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+  text-align: center;
+}
+.grammar-examples-label {
+  color: var(--siyayo-gold-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.grammar-example {
+  width: min(100%, 620px);
+  margin: 0 auto;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: rgba(2,12,30,0.22);
+  color: var(--text-main);
+  font: inherit;
+  cursor: pointer;
+}
+
+
+/* Chapter target hierarchy + grammar example affordance. */
+.chapter-title {
+  font-size: clamp(1.22rem, 4.45vw, 2.08rem);
+  color: var(--siyayo-gold-light);
+}
+.current-grammar .section-title {
+  font-size: clamp(1.02rem, 3.75vw, 1.52rem);
+  color: #fff;
+}
+.grammar-definition {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(2, 12, 30, 0.28);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.grammar-definition-text {
+  margin: 0;
+  color: var(--text-main);
+  font-size: clamp(0.96rem, 3.1vw, 1.18rem);
+  line-height: 1.48;
+  text-align: center;
+}
+.grammar-example {
+  position: relative;
+  border-color: rgba(242, 216, 138, 0.34);
+  padding-left: 42px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.grammar-example:hover,
+.grammar-example:focus-visible {
+  border-color: rgba(242, 216, 138, 0.72);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.16);
+}
+.grammar-example-speaker {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--siyayo-gold-light);
+  font-size: 0.92rem;
+}
+.word-type-target {
+  color: var(--siyayo-gold-light);
+  font-weight: 700;
+}
+
+.grammar-definition {
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.grammar-definition:hover,
+.grammar-definition:focus-visible {
+  border-color: rgba(242, 216, 138, 0.62);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.12);
+  outline: none;
+}
+.grammar-example-speaker {
+  display: none;
+}
+.grammar-example {
+  padding-left: 12px;
+}
+
+
+/* Example-slide contract: spoken definition + optional vocabulary layer. */
+.example-definition {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: clamp(10px, 1.6vh, 16px);
+  border: 1px solid rgba(242, 216, 138, 0.24);
+  border-radius: 14px;
+  background: rgba(2, 12, 30, 0.22);
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.example-definition:hover,
+.example-definition:focus-visible {
+  border-color: rgba(242, 216, 138, 0.62);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.12);
+  outline: none;
+}
+.example-definition .slide-definition {
+  margin: 0;
+}
+.slide-vocabulary-disclosure {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.slide-vocabulary-disclosure summary {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 14px;
+  border: 1px solid rgba(242, 216, 138, 0.30);
+  border-radius: 999px;
+  color: var(--siyayo-gold-light);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  list-style: none;
+}
+.slide-vocabulary-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+.slide-vocabulary-disclosure[open] summary {
+  border-color: rgba(242, 216, 138, 0.62);
+}
+.slide-vocabulary-disclosure .slide-related-content {
+  margin-top: 10px;
+}
+
+
+/* Related NOUN micro-layer: native speech groups, explicit chapter targets. */
+.example-language-lines .language-label {
+  display: none;
+}
+.noun-vocabulary-groups {
+  display: grid;
+  gap: 8px;
+  width: min(100%, 760px);
+  margin: 10px auto 0;
+}
+.noun-vocabulary-language {
+  width: 100%;
+  padding: 9px 14px;
+  border: 1px solid rgba(242, 216, 138, 0.32);
+  border-radius: 12px;
+  background: rgba(2, 12, 30, 0.26);
+  color: var(--text-main);
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+.noun-vocabulary-language:hover,
+.noun-vocabulary-language:focus-visible {
+  border-color: rgba(242, 216, 138, 0.68);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.12);
+  outline: none;
+}
+.noun-vocabulary-target {
+  font-style: normal;
+}
+.noun-vocabulary-separator {
+  color: rgba(255,255,255,0.64);
+}
+
+
+/* Proper noun → Master bridge */
+.master-connections-disclosure { margin-top: 0.65rem; }
+.master-connections-disclosure > summary { cursor: pointer; }
+.master-connection-language { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.35rem; }
+.master-connection-pair { white-space: nowrap; }
+.master-common { color: inherit; }
+.master-arrow { opacity: 0.72; }
+.master-proper { color: var(--gold, #e7c766); font-weight: 700; }
+.master-pair-separator { opacity: 0.55; }
+
+
+/* Proper noun slide: top-anchored overflow and compact speech rows. */
+.current-example .slide-content {
+  justify-content: flex-start;
+}
+
+.slide-related-content {
+  width: min(100%, 800px);
+  margin-inline: auto;
+}
+
+.slide-related-content .language-line {
+  display: grid;
+  grid-template-columns: 1.35rem minmax(0, 1fr);
+  align-items: center;
+  column-gap: 0.55rem;
+  min-height: 3rem;
+  padding: 8px 16px;
+}
+
+.slide-related-content .language-line::before {
+  content: "🔊";
+  grid-column: 1;
+  grid-row: 1;
+  color: var(--siyayo-gold-light);
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0;
+}
+
+.slide-related-content .language-line:hover::before,
+.slide-related-content .language-line:focus-visible::before {
+  opacity: 1;
+}
+
+.slide-related-content .language-text {
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 1.25;
+}
+
+.slide-related-content .language-label:empty {
+  display: none;
+}
+
+
+/* A5 hierarchy: slightly smaller chapter title + slide subtitle across slides 1–10. */
+.chapter-title {
+  font-size: clamp(1.22rem, 4.35vw, 2.08rem);
+}
+.section-title {
+  font-size: clamp(1rem, 3.75vw, 1.52rem);
+}
+
+/* One speech affordance only: remove the legacy blue emoji replica.
+   Speech remains available on the whole interactive language row. */
+.slide-related-content .language-line::before {
+  content: none;
+}
+
+
+/* A5 visual hierarchy correction.
+   Fixed desktop ceiling values make the reduction visible on laptop;
+   viewport clamps had kept resolving to nearly the previous size. */
+@media (min-width: 601px) {
+  .chapter-title {
+    font-size: 1.72rem;
+  }
+
+  .section-title,
+  .current-grammar .section-title {
+    font-size: 1.30rem;
+  }
+}
+
+
+/* A5 conversation visual contract (slides 8–10).
+   Keep the language in the sentence itself; labels are redundant here.
+   Rows use 80% of the available content width for a calmer hierarchy. */
+.current-conversation .language-label,
+.current-conversation .slide-extension-label {
+  display: none;
+}
+
+.current-conversation .trilingual-content,
+.current-conversation .slide-extension {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.current-conversation .slide-extension {
+  margin-top: 0.75rem;
+}
+
+.current-conversation .slide-extension .trilingual-content {
+  width: 100%;
+}
+
+/* Reuse the subtle golden focus language already present on target words. */
+.chapter-title,
+.section-title {
+  text-shadow:
+    0 2px 9px rgba(0, 0, 0, 0.78),
+    0 0 12px rgba(242, 216, 138, 0.10);
+}
+
+.current-conversation .target-word {
+  text-shadow:
+    0 0 7px rgba(242, 216, 138, 0.32);
+}
+
+
+/* A5 example visual contract (slides 5–7).
+   Match the homologated slide 8 horizontal container width. */
+.current-example .example-definition,
+.current-example .example-language-lines,
+.current-example .slide-vocabulary-disclosure,
+.current-example .slide-related-content {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.current-example .noun-vocabulary-groups {
+  width: 100%;
+}
+
+
+/* A5 example width correction:
+   explanatory definition stays full width; example rows use the 80% visual standard. */
+.current-example .example-definition {
+  width: 100%;
+  margin-inline: 0;
+}
+
+.current-example .example-language-lines,
+.current-example .slide-vocabulary-disclosure,
+.current-example .slide-related-content {
+  width: 80%;
+  margin-inline: auto;
+}
+
+/* Example cards: transparent interior + subtle gold contour only. */
+.current-example .language-line,
+.current-example .noun-vocabulary-language,
+.current-example .slide-related-content .language-line {
+  background: transparent;
+  border: 1px solid rgba(215, 179, 90, 0.22);
+}
+
+.current-example .language-line:hover,
+.current-example .language-line:focus-visible,
+.current-example .noun-vocabulary-language:hover,
+.current-example .noun-vocabulary-language:focus-visible,
+.current-example .slide-related-content .language-line:hover,
+.current-example .slide-related-content .language-line:focus-visible {
+  border-color: rgba(242, 216, 138, 0.52);
+  box-shadow: none;
+}
+
+/* Definition keeps its own explanatory container; no example-card treatment. */
+.current-example .example-definition {
+  background: transparent;
+  border-color: rgba(215, 179, 90, 0.22);
+}
+
+
+/* A5 explanatory panels: slides 1–4 use full relative width with subtle gold contour. */
+.current-paragraph .explanatory-text,
+.current-grammar .grammar-definition {
+  width: 100%;
+  margin-inline: 0;
+  background: transparent;
+  border: 1px solid rgba(215, 179, 90, 0.22);
+  border-radius: 14px;
+  padding: 10px 12px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.current-paragraph .explanatory-text:hover,
+.current-paragraph .explanatory-text:focus-visible,
+.current-grammar .grammar-definition:hover,
+.current-grammar .grammar-definition:focus-visible {
+  border-color: rgba(242, 216, 138, 0.52);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.10);
+  outline: none;
+}
+
+/* Discreet SIYAYO gold glow on chapter titles and slide subtitles. */
+.chapter-number,
+.chapter-title,
+.section-title {
+  text-shadow:
+    0 2px 9px rgba(0, 0, 0, 0.78),
+    0 0 10px rgba(242, 216, 138, 0.16);
+}
+
+
+/* A5 title glow canonical override.
+   One authoritative glow rule avoids ambiguity from earlier text-shadow declarations. */
+.chapter-title,
+.section-title {
+  text-shadow:
+    0 2px 9px rgba(0, 0, 0, 0.78),
+    0 0 6px rgba(242, 216, 138, 0.28),
+    0 0 14px rgba(242, 216, 138, 0.14);
+}
+
+/* Chapter number keeps its original clean gold treatment without glow. */
+.chapter-number {
+  text-shadow: none;
+}
+
+
+/* Chapter Engine: vertical floors across The Ten Kinds of Words. */
+.chapter-floor-progress {
+  font-size: 0.70rem;
+  letter-spacing: 0.16em;
+  color: var(--siyayo-gold-light);
+}
+
+.chapter-floor-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chapter-floor-controls span {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,.64);
+}
+
+.chapter-floor-controls button {
+  width: 34px;
+  height: 30px;
+  border: 1px solid rgba(242,216,138,.34);
+  border-radius: 9px;
+  background: var(--control-bg-off);
+  color: var(--siyayo-gold-light);
+  cursor: pointer;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 4px 12px rgba(0,0,0,.26);
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.chapter-floor-controls button:hover:not(:disabled),
+.chapter-floor-controls button:focus-visible:not(:disabled) {
+  background: var(--control-bg-on);
+  border-color: rgba(242,216,138,.62);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 4px 12px rgba(0,0,0,.26),
+    0 0 14px rgba(28,142,62,.20);
+
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.chapter-floor-controls button:disabled {
+  opacity: .28;
+  cursor: default;
+}
+
+.chapter-floor-placeholder {
+  justify-content: space-between;
+}
+
+.chapter-floor-wait {
+  width: 80%;
+  margin: auto;
+  padding: 22px;
+  border: 1px solid rgba(242,216,138,.22);
+  border-radius: 16px;
+  background: transparent;
+  text-align: center;
+}
+
+.chapter-floor-wait strong {
+  display: block;
+  color: var(--siyayo-gold-light);
+  letter-spacing: .14em;
+  margin-bottom: 8px;
+}
+
+.chapter-floor-wait p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+
+/* =========================================================
+   CHAPTER 2 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+/* Keep Chapter 2 slide content top-anchored so long content grows downward
+   instead of being vertically centered and clipped around the middle. */
+.chapter-2 .slide-content {
+  justify-content: flex-start;
+}
+
+/* Slide 4: examples remain visible, but the redundant EXAMPLES label is hidden. */
+.chapter-2.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+/* Preserve comfortable spacing after removing the label. */
+.chapter-2.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 3 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+/* Verb content grows downward so expanded grammar examples and function
+   examples remain readable instead of centering around the middle. */
+.chapter-3 .slide-content {
+  justify-content: flex-start;
+}
+
+/* Keep the grammar slide visually clean, matching the homologated Chapter 2. */
+.chapter-3.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-3.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 4 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+/* Adjective examples grow downward to preserve calm reading rhythm. */
+.chapter-4 .slide-content {
+  justify-content: flex-start;
+}
+
+/* Keep grammar panels visually consistent with the homologated Chapters. */
+.chapter-4.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-4.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 5 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-5 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-5.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-5.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 6 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-6 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-6.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-6.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 7 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-7 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-7.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-7.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 8 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-8 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-8.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-8.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   CHAPTER 9 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-9 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-9.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-9.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   GOLDEN SEMANTIC ANCHORS
+   Canonical focus words across definitions, origins and grammar
+   ========================================================= */
+
+.golden-semantic-anchor {
+  display: inline-block;
+  padding-inline: 0.08em;
+  color: var(--siyayo-gold-light);
+  font-weight: 800;
+  font-style: italic;
+  text-shadow:
+    0 0 8px rgba(242, 216, 138, 0.34),
+    0 0 14px rgba(242, 216, 138, 0.10);
+}
+
+@media (max-width: 600px) {
+  .golden-semantic-anchor {
+    padding-inline: 0.04em;
+    text-shadow:
+      0 0 6px rgba(242, 216, 138, 0.30);
+  }
+}
+
+
+/* =========================================================
+   CHAPTER 10 · VISUAL HOMOLOGATION REFINEMENTS
+   ========================================================= */
+
+.chapter-10 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-10.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-10.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   QUESTION WORDS EXTRA · VISUAL HOMOLOGATION
+   ========================================================= */
+
+.chapter-11 .slide-content {
+  justify-content: flex-start;
+}
+
+.chapter-11.current-grammar .grammar-examples-label {
+  display: none;
+}
+
+.chapter-11.current-grammar .grammar-examples {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   GLOBAL HOMOLOGATION PASS 1 · TYPOGRAPHY AND EXAMPLE RHYTHM
+   ========================================================= */
+
+/* Each related example is one semantic unit rendered in EN / ES / PT.
+   Preserve proximity inside the trio and add breathing room between trios. */
+.related-example-group {
+  margin-top: clamp(14px, 2.2vh, 22px);
+}
+
+.related-example-group + .related-example-group {
+  margin-top: clamp(22px, 3.3vh, 34px);
+}
+
+/* A subtle divider marks the next trilingual semantic unit without adding noise. */
+.related-example-group + .related-example-group::before {
+  content: "";
+  display: block;
+  width: min(32%, 120px);
+  height: 1px;
+  margin: 0 auto clamp(12px, 1.8vh, 18px);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(242, 216, 138, 0.28),
+    transparent
+  );
+}
+
+/* Global subtitle hierarchy: present, elegant, never louder than the chapter title. */
+.section-title,
+.current-grammar .section-title {
+  font-size: clamp(0.98rem, 3.35vw, 1.34rem);
+  line-height: 1.18;
+  letter-spacing: 0.025em;
+  text-shadow:
+    0 2px 7px rgba(0, 0, 0, 0.72),
+    0 0 5px rgba(242, 216, 138, 0.08);
+}
+
+/* Long semantic-family titles (notably Question Words slide 9) need extra restraint. */
+.chapter-11 .section-title {
+  font-size: clamp(0.90rem, 3.0vw, 1.20rem);
+  line-height: 1.16;
+}
+
+/* Golden anchors stay luminous, but the global pass removes the 'cheguei!' halo. */
+.golden-semantic-anchor {
+  text-shadow:
+    0 0 6px rgba(242, 216, 138, 0.26),
+    0 0 10px rgba(242, 216, 138, 0.07);
+}
+
+@media (min-width: 601px) {
+  .section-title,
+  .current-grammar .section-title {
+    font-size: 1.22rem;
+  }
+
+  .chapter-11 .section-title {
+    font-size: 1.10rem;
+  }
+}
+
+
+/* =========================================================
+   NEXT CHAPTER INVITATION · TRILINGUAL CONTINUITY
+   ========================================================= */
+
+.next-chapter-invitation {
+  width: min(100%, 820px);
+  margin: clamp(10px, 1.8vh, 18px) auto 0;
+  padding: clamp(12px, 2vh, 18px);
+  border: 1px solid rgba(242, 216, 138, 0.30);
+  border-radius: 16px;
+  background: rgba(2, 12, 30, 0.30);
+  text-align: center;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 8px 24px rgba(0,0,0,0.18);
+}
+
+.next-chapter-invitation p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: clamp(0.82rem, 2.5vw, 0.98rem);
+  line-height: 1.42;
+}
+
+.next-chapter-invitation p + p {
+  margin-top: 5px;
+}
+
+.next-chapter-invitation p strong {
+  color: var(--siyayo-gold-light);
+  font-size: 0.76em;
+  letter-spacing: 0.12em;
+  margin-right: 0.35em;
+}
+
+.next-chapter-invitation-button {
+  margin-top: 11px;
+  padding: 8px 16px;
+  border: 1px solid rgba(242, 216, 138, 0.52);
+  border-radius: 999px;
+  background: rgba(3, 11, 30, 0.68);
+  color: var(--siyayo-gold-light);
+  font: inherit;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.next-chapter-invitation-button:hover,
+.next-chapter-invitation-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--siyayo-gold-light);
+  background: rgba(12, 39, 76, 0.72);
+  box-shadow: 0 0 0 1px rgba(242, 216, 138, 0.10);
+  outline: none;
+}
+
+.next-chapter-invitation-complete {
+  border-color: rgba(242, 216, 138, 0.42);
+}
+
+
+/* =========================================================
+   FINAL TYPOGRAPHY SYSTEM · QUICKSAND + NUNITO SANS
+   Display: Quicksand · Reading: Nunito Sans
+   ========================================================= */
+
+.chapter-number,
+.chapter-title,
+.section-title,
+.academy-title,
+.academy-chapter-link,
+.grammar-language-tab,
+.slider-button,
+.chapter-floor-controls,
+.next-chapter-invitation-button {
+  font-family: var(--font-display);
+}
+
+.slide-paragraph .section-content,
+.grammar-definition-text,
+.example-definition .slide-definition,
+.language-text,
+.next-chapter-invitation p {
+  font-family: var(--font-body);
+}
+
+/* Preserve the already-approved example size.
+   Explanatory prose is intentionally one quiet step below it on laptop. */
+@media (min-width: 601px) {
+  .slide-paragraph .section-content,
+  .grammar-definition-text,
+  .example-definition .slide-definition {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    letter-spacing: 0.005em;
+  }
+
+  .language-text {
+    /* Size intentionally inherited from the existing example system. */
+    letter-spacing: 0;
+  }
+}
+
+
+/* =========================================================
+   GLOBAL VERTICAL ALIGNMENT HOMOLOGATION
+   All Chapter slide content grows from the top for a stable reading axis.
+   ========================================================= */
+
+.chapter-view .slide-content {
+  justify-content: flex-start;
+}
+
+
+/* =========================================================
+   SIYAYO WELCOME · LOCALIZED ENTRY SURFACE
+   ========================================================= */
+
+.academy-welcome {
+  width: min(88%, 760px);
+  margin: clamp(16px, 3vh, 28px) auto;
+  padding: clamp(16px, 2.6vh, 24px);
+  border: 1px solid rgba(242, 216, 138, 0.28);
+  border-radius: 18px;
+  background: rgba(2, 12, 30, 0.24);
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.academy-welcome h2 {
+  margin: 14px 0 10px;
+  color: var(--siyayo-gold-light);
+  font-family: var(--font-display);
+  font-size: clamp(1.08rem, 3.5vw, 1.48rem);
+  line-height: 1.2;
+}
+
+.academy-welcome p {
+  margin: 8px auto 0;
+  max-width: 650px;
+  color: var(--text-soft);
+  font-family: var(--font-body);
+  font-size: clamp(0.88rem, 2.5vw, 1rem);
+  line-height: 1.5;
+}
+
+.academy-welcome .academy-welcome-invitation {
+  color: rgba(255,255,255,0.92);
+  font-weight: 700;
+}
+
+.academy-welcome .academy-welcome-question {
+  margin-top: 14px;
+  color: var(--siyayo-gold-light);
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.academy-language-switcher {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.academy-language-switcher button {
+  padding: 6px 11px;
+  border: 1px solid rgba(242,216,138,0.28);
+  border-radius: 999px;
+  background: rgba(3,11,30,0.52);
+  color: rgba(255,255,255,0.70);
+  font-family: var(--font-display);
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+
+.academy-language-switcher button.is-active,
+.academy-language-switcher button:hover,
+.academy-language-switcher button:focus-visible {
+  border-color: rgba(242,216,138,0.68);
+  color: var(--siyayo-gold-light);
+  background: rgba(12,39,76,0.62);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .academy-welcome {
+    width: 92%;
+    padding: 14px;
+  }
+}
+
+
+/* =========================================================
+   ACADEMY HOME · MULTI-LAYER ENTRY ARCHITECTURE
+   L0 background · L2 content · L3 interaction
+   ========================================================= */
+
+.academy-home-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      rgba(1, 7, 20, 0.46),
+      rgba(1, 7, 20, 0.72)
+    ),
+    url("../assets/images/siyayo-logo-story.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.academy-home-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: clamp(68px, 11vh, 92px) clamp(16px, 4vw, 38px) clamp(54px, 8vh, 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.8vh, 18px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215,179,90,.55) transparent;
+}
+
+.academy-home-content .academy-title {
+  position: relative;
+  inset: auto;
+  flex: 0 0 auto;
+  width: min(92%, 760px);
+  margin: 0;
+  text-align: center;
+}
+
+.academy-home-content .academy-welcome {
+  position: relative;
+  flex: 0 0 auto;
+  width: min(92%, 760px);
+  margin: 0 auto;
+}
+
+.academy-home-content .academy-chapter-stack {
+  position: relative;
+  flex: 0 0 auto;
+  width: min(92%, 680px);
+  max-height: none;
+  margin: 0 auto;
+}
+
+@media (orientation: landscape) {
+  .academy-home-background {
+    background-position: center 38%;
+  }
+
+  .academy-home-content {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    gap: 10px;
+  }
+
+  .academy-home-content .academy-title {
+    position: relative;
+    top: auto;
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    width: min(88%, 680px);
+    max-height: none;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .academy-home-content {
+    padding: 62px 12px 72px;
+  }
+
+  .academy-home-content .academy-welcome,
+  .academy-home-content .academy-chapter-stack {
+    width: 94%;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .academy-home-content {
+    padding: 52px 20px 56px;
+  }
+}
+
+
+/* =========================================================
+   ACADEMY HOME · VISUAL FINE PASS
+   Quiet glass, stable reading axis, background remains present.
+   ========================================================= */
+
+.academy-home-content {
+  scroll-padding-block: 58px;
+}
+
+.academy-home-content .academy-title h1 {
+  margin-bottom: 8px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.34);
+}
+
+.academy-home-content .academy-title p {
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
+}
+
+.academy-home-content .academy-welcome {
+  padding: clamp(14px, 2.2vh, 20px) clamp(18px, 3vw, 28px);
+  border-color: rgba(242, 216, 138, 0.24);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(2, 12, 30, 0.48),
+      rgba(2, 12, 30, 0.34)
+    );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.035),
+    0 10px 28px rgba(0,0,0,0.12);
+}
+
+.academy-home-content .academy-welcome h2 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+
+.academy-home-content .academy-welcome p {
+  text-shadow: 0 1px 8px rgba(0,0,0,0.34);
+}
+
+.academy-home-content .academy-welcome-question {
+  margin-top: 12px;
+}
+
+.academy-home-content .academy-chapter-stack {
+  gap: 6px;
+  padding: 8px 6px 12px;
+}
+
+.academy-home-content .academy-chapter-link {
+  background: rgba(2, 12, 30, 0.66);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+}
+
+@media (orientation: landscape) {
+  .academy-home-content {
+    padding-top: 64px;
+    gap: 14px;
+  }
+
+  .academy-home-content .academy-welcome {
+    width: min(86%, 780px);
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    width: min(78%, 700px);
+  }
+}
+
+@media (max-width: 600px) {
+  .academy-home-content {
+    gap: 12px;
+    scroll-padding-block: 62px;
+  }
+
+  .academy-home-content .academy-welcome {
+    padding: 14px 13px 16px;
+    background: rgba(2, 12, 30, 0.46);
+  }
+
+  .academy-home-content .academy-welcome p {
+    font-size: clamp(0.86rem, 4vw, 0.98rem);
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    padding-inline: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .academy-home-content {
+    scroll-behavior: auto;
+  }
+}
