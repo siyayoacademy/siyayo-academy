@@ -1306,9 +1306,9 @@ function renderNextChapterInvitation() {
 
     return `
       <aside class="next-chapter-invitation" aria-label="Continue to the next chapter">
-        <p><strong>EN</strong> Ready for the next discovery? Continue to ${escapeHtml(titleEn)}.</p>
-        <p><strong>ES</strong> ¿Listo para el próximo descubrimiento? Continúa con ${escapeHtml(titleEs)}.</p>
-        <p><strong>PT</strong> Pronto para a próxima descoberta? Continue para ${escapeHtml(titlePt)}.</p>
+        <p>Ready for the next discovery? Continue to ${escapeHtml(titleEn)}.</p>
+        <p>¿Listo para el próximo descubrimiento? Continúa con ${escapeHtml(titleEs)}.</p>
+        <p>Pronto para a próxima descoberta? Continue para ${escapeHtml(titlePt)}.</p>
         <button type="button" class="next-chapter-invitation-button" data-next-chapter-invitation="next">
           ${escapeHtml(buttonLabel)}
         </button>
@@ -1318,9 +1318,9 @@ function renderNextChapterInvitation() {
 
   return `
     <aside class="next-chapter-invitation next-chapter-invitation-complete" aria-label="Learning path completed">
-      <p><strong>EN</strong> You completed this path. Explore the Academy again.</p>
-      <p><strong>ES</strong> Completaste este recorrido. Explora nuevamente la Academy.</p>
-      <p><strong>PT</strong> Você completou este percurso. Explore novamente a Academy.</p>
+      <p>You completed this path. Explore the Academy again.</p>
+      <p>Completaste este recorrido. Explora nuevamente la Academy.</p>
+      <p>Você completou este percurso. Explore novamente a Academy.</p>
       <button type="button" class="next-chapter-invitation-button" data-next-chapter-invitation="tree">
         RETURN TO WORD TREE ↑
       </button>
