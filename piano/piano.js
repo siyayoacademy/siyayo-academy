@@ -7,6 +7,8 @@
   const wordStatus = document.getElementById("wordStatus");
   const modeStatus = document.getElementById("modeStatus");
   const modeButtons = [...document.querySelectorAll(".mode-button")];
+  const pianinho = document.getElementById("pianinho");
+  const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
   const stageViewport = document.getElementById("stageViewport");
   const previewButtons = [...document.querySelectorAll(".preview-button")];
 
@@ -207,11 +209,33 @@
       leaf.classList.remove("is-resonating");
       if (frondosa) frondosa.classList.remove("is-resonating");
     }, 660);
+
+    const avatarZone = pianinhoHotspots.find(item => item.dataset.note === detail.note);
+    if (avatarZone) {
+      avatarZone.classList.remove("is-resonating");
+      if (pianinho) pianinho.classList.remove("is-resonating");
+      void avatarZone.offsetWidth;
+      avatarZone.classList.add("is-resonating");
+      if (pianinho) pianinho.classList.add("is-resonating");
+      window.setTimeout(() => {
+        avatarZone.classList.remove("is-resonating");
+        if (pianinho) pianinho.classList.remove("is-resonating");
+      }, 660);
+    }
   });
 
   leaves.forEach((leaf, index) => {
     leaf.addEventListener("click", () => {
       const key = keys[index];
+      const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+      if (pianoKey) activateKey(pianoKey, key);
+    });
+  });
+
+  pianinhoHotspots.forEach(zone => {
+    zone.addEventListener("click", () => {
+      const key = keys.find(item => item.id === zone.dataset.note);
+      if (!key) return;
       const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
       if (pianoKey) activateKey(pianoKey, key);
     });
