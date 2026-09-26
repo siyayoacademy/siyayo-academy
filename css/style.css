@@ -2723,3 +2723,77 @@ transform:
     max-width: 100%;
   }
 }
+
+
+/* =========================================================
+   PORTRAIT · NON-OVERLAPPING NAVIGATION AND READING
+   A real layout zone replaces the fixed quick-link overlay.
+   ========================================================= */
+@media (max-width: 600px) and (orientation: portrait) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .story {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+  }
+
+  .academy-quick-links {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 auto;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: min(calc(100vw - 20px), 430px);
+    margin: 7px auto max(9px, env(safe-area-inset-bottom));
+    padding: 6px 8px;
+    gap: 6px;
+  }
+
+  .academy-home-content {
+    padding-bottom: 36px;
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    margin-bottom: 10px;
+  }
+
+  /* LionsGate stays accessible without covering the chapter headings. */
+  .lionsgate-button {
+    top: 7px;
+    left: 7px;
+    width: 58px;
+    height: 58px;
+    box-shadow: 0 0 12px rgba(215,179,90,.14);
+  }
+
+  .lionsgate-logo {
+    width: 49px;
+    height: 49px;
+  }
+
+  .top-navigator {
+    top: 12px;
+    min-height: 40px;
+    padding: 7px 13px;
+  }
+
+  /* The chapter title and reading surface stay below global navigation. */
+  .chapter-view {
+    padding-top: 54px;
+  }
+
+  .chapter-view .slide-content {
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+}
