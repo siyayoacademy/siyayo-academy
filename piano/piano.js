@@ -9,6 +9,7 @@
   const modeButtons = [...document.querySelectorAll(".mode-button")];
   const pianinho = document.getElementById("pianinho");
   const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
+  const pianinhoSequenceStatus = document.getElementById("pianinhoSequenceStatus");
   const stageViewport = document.getElementById("stageViewport");
   const previewButtons = [...document.querySelectorAll(".preview-button")];
 
@@ -25,6 +26,10 @@
 
   let mode = "sound";
   let audioContext = null;
+
+  const pianinhoChord = ["C4","E4","G4","C5"];
+  let pianinhoChordProgress = 0;
+  let pianinhoChordTimer = null;
 
   function ensureAudio() {
     if (!audioContext) {
@@ -119,13 +124,13 @@
     refreshLabels();
   }
 
-  function activateKey(button, key) {
+  function activateKey(button, key, source = "piano-flat") {
     playTone(key.frequency);
 
     window.dispatchEvent(new CustomEvent("siyayo:musical-event", {
       detail: {
         type: "note",
-        source: "piano-flat",
+        source,
         note: key.id,
         solfege: key.solfege,
         mode,
@@ -167,7 +172,7 @@
 
     button.addEventListener("pointerdown", event => {
       event.preventDefault();
-      activateKey(button, key);
+      activateKey(button, key, "piano-flat");
     });
 
     keyboard.appendChild(button);
@@ -193,9 +198,101 @@
     });
   }
 
+
+  function updatePianinhoSequenceStatus() {
+    if (pianinhoSequenceStatus) {
+      pianinhoSequenceStatus.textContent = pianinhoChordProgress + "/4";
+    }
+  }
+
+  function resetPianinhoChord() {
+    pianinhoChordProgress = 0;
+    if (pianinhoChordTimer) {
+      window.clearTimeout(pianinhoChordTimer);
+      pianinhoChordTimer = null;
+    }
+    updatePianinhoSequenceStatus();
+  }
+
+  function playGreenCI() {
+    const chordKeys = pianinhoChord
+      .map(note => keys.find(key => key.id === note))
+      .filter(Boolean);
+
+    chordKeys.forEach((key, index) => {
+      window.setTimeout(() => playTone(key.frequency), index * 120);
+    });
+  }
+
+  function completePianinhoChord() {
+    if (pianinho) {
+      pianinho.classList.remove("is-chord-complete");
+      void pianinho.offsetWidth;
+      pianinho.classList.add("is-chord-complete");
+    }
+
+    if (frondosa) {
+      frondosa.classList.remove("is-chord-complete");
+      void frondosa.offsetWidth;
+      frondosa.classList.add("is-chord-complete");
+    }
+
+    if (pianinhoSequenceStatus) {
+      pianinhoSequenceStatus.textContent = "CI ✓";
+    }
+
+    playGreenCI();
+
+    window.dispatchEvent(new CustomEvent("siyayo:resonance-event", {
+      detail: {
+        type: "chord-complete",
+        id: "do-mi-sol-do",
+        source: "pianinho-magico",
+        notes: [...pianinhoChord]
+      }
+    }));
+
+    window.setTimeout(() => {
+      if (pianinho) pianinho.classList.remove("is-chord-complete");
+      if (frondosa) frondosa.classList.remove("is-chord-complete");
+      resetPianinhoChord();
+    }, 1100);
+  }
+
+  function trackPianinhoChord(note) {
+    const expected = pianinhoChord[pianinhoChordProgress];
+
+    if (note === expected) {
+      pianinhoChordProgress += 1;
+      updatePianinhoSequenceStatus();
+
+      if (pianinhoChordTimer) window.clearTimeout(pianinhoChordTimer);
+      pianinhoChordTimer = window.setTimeout(resetPianinhoChord, 2600);
+
+      if (pianinhoChordProgress === pianinhoChord.length) {
+        if (pianinhoChordTimer) window.clearTimeout(pianinhoChordTimer);
+        pianinhoChordTimer = null;
+        completePianinhoChord();
+      }
+      return;
+    }
+
+    pianinhoChordProgress = note === pianinhoChord[0] ? 1 : 0;
+    updatePianinhoSequenceStatus();
+
+    if (pianinhoChordTimer) window.clearTimeout(pianinhoChordTimer);
+    pianinhoChordTimer = pianinhoChordProgress
+      ? window.setTimeout(resetPianinhoChord, 2600)
+      : null;
+  }
+
   window.addEventListener("siyayo:musical-event", event => {
     const detail = event.detail || {};
     if (detail.type !== "note" || !detail.note) return;
+
+    if (detail.source === "pianinho-magico") {
+      trackPianinhoChord(detail.note);
+    }
     const leaf = leaves.find(item => item.dataset.note === detail.note);
     if (!leaf) return;
 
@@ -228,7 +325,7 @@
     leaf.addEventListener("click", () => {
       const key = keys[index];
       const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
-      if (pianoKey) activateKey(pianoKey, key);
+      if (pianoKey) activateKey(pianoKey, key, "frondosa");
     });
   });
 
@@ -237,7 +334,7 @@
       const key = keys.find(item => item.id === zone.dataset.note);
       if (!key) return;
       const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
-      if (pianoKey) activateKey(pianoKey, key);
+      if (pianoKey) activateKey(pianoKey, key, "pianinho-magico");
     });
   });
 
@@ -267,6 +364,7 @@
     }
   } catch (error) {}
 
+  updatePianinhoSequenceStatus();
   refreshLabels();
   refreshFrondosaLabels();
 })();
