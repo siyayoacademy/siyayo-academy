@@ -3176,19 +3176,8 @@ document.addEventListener(
     initializeInterfaceLanguageSwitcher();
     renderAcademyChapterStack(academy);
 
-    const activeChapter = findActiveChapter(academy);
-    if (!activeChapter) return;
-
-    const activeIndex = academy.chapters.findIndex(
-      chapter => chapter.slug === activeChapter.slug
-    );
-
-    await openChapterAtIndex(
-      activeIndex >= 0 ? activeIndex : 0
-    );
-
     console.log(
-      "SIYAYO Content Engine v0.6 Chapter Engine ready."
+      "SIYAYO Content Engine v0.6 Academy Home ready."
     );
   }
 );
