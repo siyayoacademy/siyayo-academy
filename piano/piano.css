@@ -1086,3 +1086,36 @@ h1 {
   .pianinho { width:min(100%,420px); }
   .pianinho-hotspot { width:40px; height:40px; }
 }
+
+
+/* =========================================================
+   PIANINHO HOTSPOT GEOMETRY FIX v1.4
+   Keep the interaction plane on the exact same 5:3 geometry
+   as the SVG in every responsive mode.
+   ========================================================= */
+@media (max-width:600px) {
+  .pianinho {
+    width:min(100%,360px);
+    height:auto;
+    aspect-ratio:5/3;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho {
+  width:min(100%,360px);
+  height:auto;
+  aspect-ratio:5/3;
+}
+
+.stage-viewport[data-preview="landscape"] .pianinho {
+  height:auto;
+  aspect-ratio:5/3;
+}
+
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  .pianinho {
+    width:min(100%,420px);
+    height:auto;
+    aspect-ratio:5/3;
+  }
+}
