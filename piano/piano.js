@@ -14,14 +14,39 @@
   const previewButtons = [...document.querySelectorAll(".preview-button")];
 
   const keys = [
-    { id:"C4", frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde" },
-    { id:"D4", frequency:293.66, solfege:"RÉ",  en:"blue",   es:"azul",     pt:"azul" },
-    { id:"E4", frequency:329.63, solfege:"MI",  en:"white",  es:"blanco",   pt:"branco" },
-    { id:"F4", frequency:349.23, solfege:"FÁ",  en:"yellow", es:"amarillo", pt:"amarelo" },
-    { id:"G4", frequency:392.00, solfege:"SOL", en:"brown",  es:"marrón",   pt:"marrom" },
-    { id:"A4", frequency:440.00, solfege:"LÁ",  en:"red",    es:"rojo",     pt:"vermelho" },
-    { id:"B4", frequency:493.88, solfege:"SI",  en:"gold",   es:"dorado",   pt:"dourado" },
-    { id:"C5", frequency:523.25, solfege:"DÓ↑", en:"black",  es:"negro",    pt:"preto" }
+    { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
+    { id:"C#4", frequency:277.18, solfege:"DÓ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"D4",  frequency:293.66, solfege:"RÉ",  en:"blue",   es:"azul",     pt:"azul",     kind:"white" },
+    { id:"D#4", frequency:311.13, solfege:"RÉ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"E4",  frequency:329.63, solfege:"MI",  en:"white",  es:"blanco",   pt:"branco",   kind:"white" },
+    { id:"F4",  frequency:349.23, solfege:"FÁ",  en:"yellow", es:"amarillo", pt:"amarelo",  kind:"white" },
+    { id:"F#4", frequency:369.99, solfege:"FÁ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"G4",  frequency:392.00, solfege:"SOL", en:"brown",  es:"marrón",   pt:"marrom",   kind:"white" },
+    { id:"G#4", frequency:415.30, solfege:"SOL♯",en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"A4",  frequency:440.00, solfege:"LÁ",  en:"red",    es:"rojo",     pt:"vermelho", kind:"white" },
+    { id:"A#4", frequency:466.16, solfege:"LÁ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"B4",  frequency:493.88, solfege:"SI",  en:"gold",   es:"dorado",   pt:"dourado",  kind:"white" },
+    { id:"C5",  frequency:523.25, solfege:"DÓ↑", en:"black",  es:"negro",    pt:"preto",    kind:"white" }
+  ];
+
+  const whiteKeys = keys.filter(key => key.kind === "white");
+  const blackKeys = keys.filter(key => key.kind === "black");
+
+  const questionWords = [
+    { id:"what",      en:"What",      es:"Qué",          pt:"O que" },
+    { id:"where",     en:"Where",     es:"Dónde",        pt:"Onde" },
+    { id:"when",      en:"When",      es:"Cuándo",       pt:"Quando" },
+    { id:"who",       en:"Who",       es:"Quién",        pt:"Quem" },
+    { id:"which",     en:"Which",     es:"Cuál",         pt:"Qual" },
+    { id:"why",       en:"Why",       es:"Por qué",      pt:"Por quê" },
+    { id:"how",       en:"How",       es:"Cómo",         pt:"Como" },
+    { id:"how-much",  en:"How much",  es:"Cuánto",       pt:"Quanto" },
+    { id:"how-many",  en:"How many",  es:"Cuántos",      pt:"Quantos" },
+    { id:"whose",     en:"Whose",     es:"De quién",     pt:"De quem" },
+    { id:"whom",      en:"Whom",      es:"A quién",      pt:"A quem" },
+    { id:"how-long",  en:"How long",  es:"Cuánto tiempo",pt:"Quanto tempo" },
+    { id:"how-far",   en:"How far",   es:"Qué tan lejos",pt:"Quão longe" },
+    { id:"how-often", en:"How often", es:"Con qué frecuencia", pt:"Com que frequência" }
   ];
 
   let mode = "sound";
@@ -204,14 +229,15 @@
   }
 
   function currentLabel(key) {
-    if (mode === "solfege" || mode === "sound") return key.solfege;
+    if (mode === "solfege" || mode === "sound" || mode === "questions") return key.solfege;
     if (mode === "tripiano") return key.en + " · " + key.es + " · " + key.pt;
     return key[mode];
   }
 
   function refreshLabels() {
-    keyboard.querySelectorAll(".piano-key").forEach((button, index) => {
-      button.querySelector(".key-word").textContent = currentLabel(keys[index]);
+    keyboard.querySelectorAll(".piano-key").forEach(button => {
+      const key = keys.find(item => item.id === button.dataset.note);
+      if (key) button.querySelector(".key-word").textContent = currentLabel(key);
     });
   }
 
@@ -219,11 +245,12 @@
     mode = nextMode;
     modeButtons.forEach(btn => btn.classList.toggle("is-active", btn.dataset.mode === mode));
     modeStatus.textContent = mode.toUpperCase();
-    stage.dataset.theme = ["en","es","pt"].includes(mode) ? mode : "sound";
+    stage.dataset.theme = ["en","es","pt","questions"].includes(mode) ? mode : "sound";
     wordStatus.textContent =
       mode === "sound" ? "DÓ → DÓ↑" :
       mode === "solfege" ? "Solfege" :
       mode === "tripiano" ? "EN → ES → PT" :
+      mode === "questions" ? "14 Question Words" :
       "Colors";
     refreshLabels();
   }
@@ -258,10 +285,10 @@
     if (mode === "tripiano") speakTripiano(key);
   }
 
-  keys.forEach((key, index) => {
+  function createPianoKey(key) {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = "piano-key";
+    button.className = "piano-key" + (key.kind === "black" ? " black-key" : "");
     button.dataset.note = key.id;
     button.setAttribute("aria-label", key.solfege + " " + key.id);
     button.innerHTML =
@@ -280,7 +307,10 @@
     });
 
     keyboard.appendChild(button);
-  });
+  }
+
+  whiteKeys.forEach(createPianoKey);
+  blackKeys.forEach(createPianoKey);
 
   modeButtons.forEach(button => {
     button.addEventListener("click", () => setMode(button.dataset.mode));
@@ -289,16 +319,23 @@
   const frondosa = document.getElementById("frondosa");
   const leaves = [...document.querySelectorAll(".leaf")];
 
-  function leafLabelForMode(key) {
-    if (mode === "sound" || mode === "solfege") return key.solfege;
-    if (mode === "tripiano") return key.en + " · " + key.es + " · " + key.pt;
-    return key[mode];
+  function questionWordForLeaf(leaf) {
+    return questionWords.find(item => item.id === leaf.dataset.qw);
+  }
+
+  function leafLabelForMode(leaf) {
+    const qw = questionWordForLeaf(leaf);
+    if (!qw) return "";
+    if (mode === "es") return qw.es;
+    if (mode === "pt") return qw.pt;
+    if (mode === "tripiano") return qw.en + " · " + qw.es + " · " + qw.pt;
+    return qw.en;
   }
 
   function refreshFrondosaLabels() {
-    leaves.forEach((leaf, index) => {
+    leaves.forEach(leaf => {
       const label = leaf.querySelector("span");
-      if (label) label.textContent = leafLabelForMode(keys[index]);
+      if (label) label.textContent = leafLabelForMode(leaf);
     });
   }
 
@@ -426,11 +463,17 @@
     }
   });
 
-  leaves.forEach((leaf, index) => {
+  leaves.forEach(leaf => {
     leaf.addEventListener("click", () => {
-      const key = keys[index];
+      const key = keys.find(item => item.id === leaf.dataset.note);
+      if (!key) return;
       const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
       if (pianoKey) activateKey(pianoKey, key, "frondosa");
+
+      const qw = questionWordForLeaf(leaf);
+      if (qw && mode === "questions") {
+        window.setTimeout(() => speak(qw.en, "en-US"), 180);
+      }
     });
   });
 
