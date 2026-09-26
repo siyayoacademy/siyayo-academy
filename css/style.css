@@ -2896,3 +2896,74 @@ transform:
     margin: 0;
   }
 }
+
+
+/* =========================================================
+   PORTRAIT · HOME/CHAPTER SURFACE CONTRACT (CORRECTED)
+   The previous :has(.chapter-view) gate was attached to body.
+   .chapter-view replaces main.story content at runtime, so main itself
+   is the reliable state boundary.
+   ========================================================= */
+@media (max-width: 600px) and (orientation: portrait) {
+  /* HOME: one bounded reading surface between the global controls. */
+  main.story:has(> .academy-home-content) {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+
+  main.story:has(> .academy-home-content) > .academy-home-content {
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 0;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 132px;
+    padding-bottom: 150px;
+    scroll-padding-top: 132px;
+    scroll-padding-bottom: 150px;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  main.story:has(> .academy-home-content) > .academy-quick-links {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  /* CHAPTER: keep the already-homologated single internal scroller. */
+  main.story:has(> .chapter-view) {
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+
+  /* Grammar language controls: compact, balanced, no edge collision. */
+  .chapter-view .grammar-language-tabs {
+    width: 100%;
+    gap: 5px;
+    padding-inline: 2px;
+    box-sizing: border-box;
+  }
+
+  .chapter-view .grammar-language-tab {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 5px 9px;
+    font-size: clamp(0.78rem, 3.6vw, 0.92rem);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+}
