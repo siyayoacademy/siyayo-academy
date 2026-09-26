@@ -936,3 +936,34 @@ h1 {
     height:230px;
   }
 }
+
+
+/* =========================================================
+   PIANINHO MÁGICO — THIRD ACTOR
+   ========================================================= */
+.avatar-stage { min-height:240px; padding:10px; overflow:hidden; }
+.pianinho { position:relative; width:min(100%,560px); height:220px; margin:auto; }
+.pianinho-visual { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; pointer-events:none; user-select:none; filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)); transition:transform var(--motion-resonance) var(--motion-ease),filter var(--motion-fast) var(--motion-ease); }
+.pianinho-hotspots { position:absolute; inset:0; z-index:4; }
+.pianinho-hotspot { position:absolute; width:54px; height:54px; border-radius:50%; border:1px solid rgba(242,216,138,.44); background:rgba(46,24,14,.72); color:#ffe98d; font-family:var(--font-display); font-size:.68rem; font-weight:700; cursor:pointer; display:grid; place-items:center; box-shadow:0 0 0 1px rgba(215,179,90,.14); transition:transform var(--motion-fast) var(--motion-ease),background var(--motion-fast) var(--motion-ease),box-shadow var(--motion-fast) var(--motion-ease); }
+.pianinho-hotspot span { pointer-events:none; }
+.hotspot-do { left:7%; top:14%; }
+.hotspot-mi { left:8%; bottom:6%; }
+.hotspot-sol { right:8%; bottom:17%; }
+.hotspot-do-high { right:7%; top:14%; }
+.pianinho-hotspot.is-resonating { background:linear-gradient(145deg,#8f6417,#e2b94c); color:#171006; box-shadow:0 0 18px rgba(242,216,138,.88),0 0 36px rgba(215,179,90,.34); transform:scale(1.12); }
+.pianinho.is-resonating .pianinho-visual { transform:scale(1.025); filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)) drop-shadow(0 0 14px rgba(242,216,138,.32)); }
+.avatar-caption { position:absolute; left:0; right:0; bottom:0; margin:0; text-align:center; color:rgba(242,216,138,.72); font-size:.72rem; }
+
+@media (max-width:600px) {
+  .avatar-stage { min-height:205px; }
+  .pianinho { height:188px; }
+  .pianinho-hotspot { width:46px; height:46px; font-size:.60rem; }
+}
+.stage-viewport[data-preview="portrait"] .avatar-stage { min-height:205px; }
+.stage-viewport[data-preview="portrait"] .pianinho { height:188px; }
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  .avatar-stage { min-height:175px; }
+  .pianinho { height:158px; }
+  .pianinho-hotspot { width:42px; height:42px; font-size:.56rem; }
+}
