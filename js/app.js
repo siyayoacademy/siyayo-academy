@@ -1338,6 +1338,12 @@ function attachNextChapterInvitationEvents() {
       return;
     }
 
+    const homeButton = document.querySelector(".lionsgate-button");
+    if (homeButton) {
+      homeButton.click();
+      return;
+    }
+
     openChapterAtIndex(0);
   });
 }
