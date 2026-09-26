@@ -2485,3 +2485,106 @@ transform:
     padding: 14px;
   }
 }
+
+
+/* =========================================================
+   ACADEMY HOME · MULTI-LAYER ENTRY ARCHITECTURE
+   L0 background · L2 content · L3 interaction
+   ========================================================= */
+
+.academy-home-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      rgba(1, 7, 20, 0.46),
+      rgba(1, 7, 20, 0.72)
+    ),
+    url("../assets/images/siyayo-logo-story.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.academy-home-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding: clamp(68px, 11vh, 92px) clamp(16px, 4vw, 38px) clamp(54px, 8vh, 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(10px, 1.8vh, 18px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(215,179,90,.55) transparent;
+}
+
+.academy-home-content .academy-title {
+  position: relative;
+  inset: auto;
+  flex: 0 0 auto;
+  width: min(92%, 760px);
+  margin: 0;
+  text-align: center;
+}
+
+.academy-home-content .academy-welcome {
+  position: relative;
+  flex: 0 0 auto;
+  width: min(92%, 760px);
+  margin: 0 auto;
+}
+
+.academy-home-content .academy-chapter-stack {
+  position: relative;
+  flex: 0 0 auto;
+  width: min(92%, 680px);
+  max-height: none;
+  margin: 0 auto;
+}
+
+@media (orientation: landscape) {
+  .academy-home-background {
+    background-position: center 38%;
+  }
+
+  .academy-home-content {
+    padding-top: 58px;
+    padding-bottom: 58px;
+    gap: 10px;
+  }
+
+  .academy-home-content .academy-title {
+    position: relative;
+    top: auto;
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    width: min(88%, 680px);
+    max-height: none;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .academy-home-content {
+    padding: 62px 12px 72px;
+  }
+
+  .academy-home-content .academy-welcome,
+  .academy-home-content .academy-chapter-stack {
+    width: 94%;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .academy-home-content {
+    padding: 52px 20px 56px;
+  }
+}
