@@ -2731,18 +2731,19 @@ transform:
    ========================================================= */
 @media (max-width: 600px) and (orientation: portrait) {
   body {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0;
-    overflow: hidden;
+    display: block;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .story {
-    flex: 1 1 auto;
-    min-height: 0;
+    width: 100vw;
     height: auto;
+    min-height: 100dvh;
     max-height: none;
+    overflow: visible;
   }
 
   .academy-quick-links {
