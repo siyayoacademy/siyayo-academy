@@ -2588,3 +2588,104 @@ transform:
     padding: 52px 20px 56px;
   }
 }
+
+
+/* =========================================================
+   ACADEMY HOME · VISUAL FINE PASS
+   Quiet glass, stable reading axis, background remains present.
+   ========================================================= */
+
+.academy-home-content {
+  scroll-padding-block: 58px;
+}
+
+.academy-home-content .academy-title h1 {
+  margin-bottom: 8px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.34);
+}
+
+.academy-home-content .academy-title p {
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
+}
+
+.academy-home-content .academy-welcome {
+  padding: clamp(14px, 2.2vh, 20px) clamp(18px, 3vw, 28px);
+  border-color: rgba(242, 216, 138, 0.24);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(2, 12, 30, 0.48),
+      rgba(2, 12, 30, 0.34)
+    );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.035),
+    0 10px 28px rgba(0,0,0,0.12);
+}
+
+.academy-home-content .academy-welcome h2 {
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+
+.academy-home-content .academy-welcome p {
+  text-shadow: 0 1px 8px rgba(0,0,0,0.34);
+}
+
+.academy-home-content .academy-welcome-question {
+  margin-top: 12px;
+}
+
+.academy-home-content .academy-chapter-stack {
+  gap: 6px;
+  padding: 8px 6px 12px;
+}
+
+.academy-home-content .academy-chapter-link {
+  background: rgba(2, 12, 30, 0.66);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+}
+
+@media (orientation: landscape) {
+  .academy-home-content {
+    padding-top: 64px;
+    gap: 14px;
+  }
+
+  .academy-home-content .academy-welcome {
+    width: min(86%, 780px);
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    width: min(78%, 700px);
+  }
+}
+
+@media (max-width: 600px) {
+  .academy-home-content {
+    gap: 12px;
+    scroll-padding-block: 62px;
+  }
+
+  .academy-home-content .academy-welcome {
+    padding: 14px 13px 16px;
+    background: rgba(2, 12, 30, 0.46);
+  }
+
+  .academy-home-content .academy-welcome p {
+    font-size: clamp(0.86rem, 4vw, 0.98rem);
+  }
+
+  .academy-home-content .academy-chapter-stack {
+    padding-inline: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .academy-home-content {
+    scroll-behavior: auto;
+  }
+}
