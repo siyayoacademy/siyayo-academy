@@ -178,5 +178,31 @@
       "examples",
       "conversation"
     ]
+  },
+  "localization": {
+    "supportedInterfaceLanguages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "defaultInterfaceLanguage": "pt",
+    "resolutionOrder": [
+      "saved-preference",
+      "browser-languages",
+      "default"
+    ],
+    "preserveRegionalLocale": true,
+    "storageKey": "siyayo.interfaceLanguage",
+    "languageFamilies": {
+      "en": [
+        "en"
+      ],
+      "es": [
+        "es"
+      ],
+      "pt": [
+        "pt"
+      ]
+    }
   }
 }
