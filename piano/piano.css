@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Quicksand:wght@500;600;700&display=swap');
+
 :root {
   --blue-deep:#020918;
   --blue:#061b3d;
@@ -8,6 +10,17 @@
   --muted:rgba(255,255,255,.72);
   --panel:rgba(3,14,34,.72);
   --key-border:#1a2230;
+
+  /* SIYAYO GLOBAL TYPOGRAPHY — homologated */
+  --font-display:"Quicksand","Trebuchet MS",Arial,sans-serif;
+  --font-body:"Nunito Sans","Segoe UI",Arial,sans-serif;
+
+  /* SIYAYO SHARED MOTION DNA */
+  --motion-fast:180ms;
+  --motion-key:520ms;
+  --motion-resonance:660ms;
+  --motion-reveal:900ms;
+  --motion-ease:cubic-bezier(0.25,0.8,0.25,1);
 }
 
 * { box-sizing:border-box; }
@@ -17,7 +30,7 @@ html,body {
   min-height:100%;
   background:#000;
   color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:var(--font-body);
 }
 
 body {
@@ -57,6 +70,7 @@ body {
 }
 
 .eyebrow {
+  font-family:var(--font-display);
   margin:0 0 4px;
   color:var(--gold-light);
   letter-spacing:.22em;
@@ -65,11 +79,13 @@ body {
 }
 
 h1 {
+  font-family:var(--font-display);
   margin:0;
   font-size:clamp(1.4rem,4vw,2.3rem);
 }
 
 .subtitle {
+  font-family:var(--font-body);
   margin:5px 0 0;
   color:var(--muted);
   font-size:.9rem;
@@ -108,6 +124,7 @@ h1 {
 }
 
 .mode-button {
+  font-family:var(--font-display);
   min-height:44px;
   padding:0 16px;
   border-radius:999px;
@@ -139,6 +156,7 @@ h1 {
 }
 
 #modeStatus {
+  font-family:var(--font-display);
   justify-self:start;
   color:var(--gold-light);
   font-size:.76rem;
@@ -152,6 +170,7 @@ h1 {
 }
 
 #noteStatus {
+  font-family:var(--font-display);
   font-size:1.05rem;
 }
 
@@ -217,7 +236,7 @@ h1 {
   z-index:1;
   opacity:0;
   background:linear-gradient(180deg,rgba(11,59,120,.1),rgba(6,27,61,.36));
-  transition:opacity 160ms ease;
+  transition:opacity var(--motion-fast) var(--motion-ease);
 }
 
 .key-glow-layer {
@@ -259,6 +278,7 @@ h1 {
 }
 
 .key-word {
+  font-family:var(--font-display);
   max-width:100%;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -267,6 +287,7 @@ h1 {
 }
 
 .key-note {
+  font-family:var(--font-body);
   font-size:.72rem;
   color:rgba(8,16,29,.64);
 }
@@ -274,11 +295,11 @@ h1 {
 .piano-key.is-active .key-tint-layer { opacity:1; }
 
 .piano-key.is-active .key-glow-layer {
-  animation:keyGlow 520ms ease-out;
+  animation:keyGlow var(--motion-key) var(--motion-ease);
 }
 
 .piano-key.is-active .key-ripple-layer {
-  animation:keyRipple 520ms ease-out;
+  animation:keyRipple var(--motion-key) var(--motion-ease);
 }
 
 .piano-key.has-memory .key-memory-layer { opacity:.9; }
@@ -428,7 +449,11 @@ h1 {
   z-index:3;
   cursor:pointer;
   box-shadow:0 6px 18px rgba(0,0,0,.28);
-  transition:transform 180ms ease, filter 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  transition:
+    transform var(--motion-fast) var(--motion-ease),
+    filter var(--motion-fast) var(--motion-ease),
+    box-shadow var(--motion-fast) var(--motion-ease),
+    background var(--motion-fast) var(--motion-ease);
 }
 
 .leaf span {
@@ -454,7 +479,7 @@ h1 {
   background:linear-gradient(145deg,#88b93c,#d7b35a);
   filter:brightness(1.22);
   box-shadow:0 0 12px rgba(242,216,138,.85),0 0 30px rgba(66,165,90,.55);
-  animation:leafBloom 620ms ease-out;
+  animation:leafBloom var(--motion-resonance) var(--motion-ease);
 }
 
 .frondosa.is-resonating .tree-trunk {
