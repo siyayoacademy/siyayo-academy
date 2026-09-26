@@ -29,8 +29,12 @@
         <img class="pianinho-visual" src="./assets/pianinho-magico.svg" alt="" aria-hidden="true">
         <div class="pianinho-hotspots" aria-label="Pianinho musical hotspots">
           <button type="button" class="pianinho-hotspot hotspot-do" data-note="C4" aria-label="Pianinho DÓ"><span>DÓ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-re is-secondary" data-note="D4" aria-label="Pianinho RÉ"><span>RÉ</span></button>
           <button type="button" class="pianinho-hotspot hotspot-mi" data-note="E4" aria-label="Pianinho MI"><span>MI</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-fa is-secondary" data-note="F4" aria-label="Pianinho FÁ"><span>FÁ</span></button>
           <button type="button" class="pianinho-hotspot hotspot-sol" data-note="G4" aria-label="Pianinho SOL"><span>SOL</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-la is-secondary" data-note="A4" aria-label="Pianinho LÁ"><span>LÁ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-si is-secondary" data-note="B4" aria-label="Pianinho SI"><span>SI</span></button>
           <button type="button" class="pianinho-hotspot hotspot-do-high" data-note="C5" aria-label="Pianinho DÓ agudo"><span>DÓ↑</span></button>
         </div>
         <p class="avatar-caption">Pianinho Mágico • DÓ–MI–SOL–DÓ↑ <span class="sequence-status" id="pianinhoSequenceStatus" aria-live="polite">0/4</span></p>
@@ -42,14 +46,20 @@
       <div class="frondosa" id="frondosa" aria-label="Árvore Frondosa">
         <img class="frondosa-visual" src="./assets/frondosa-sombreira.svg" alt="" aria-hidden="true">
         <div class="frondosa-hotspots" aria-label="Frondosa interactive leaves">
-          <button type="button" class="leaf leaf-1" data-note="C4" aria-label="Frondosa leaf 1"><span></span></button>
-          <button type="button" class="leaf leaf-2" data-note="D4" aria-label="Frondosa leaf 2"><span></span></button>
-          <button type="button" class="leaf leaf-3" data-note="E4" aria-label="Frondosa leaf 3"><span></span></button>
-          <button type="button" class="leaf leaf-4" data-note="F4" aria-label="Frondosa leaf 4"><span></span></button>
-          <button type="button" class="leaf leaf-5" data-note="G4" aria-label="Frondosa leaf 5"><span></span></button>
-          <button type="button" class="leaf leaf-6" data-note="A4" aria-label="Frondosa leaf 6"><span></span></button>
-          <button type="button" class="leaf leaf-7" data-note="B4" aria-label="Frondosa leaf 7"><span></span></button>
-          <button type="button" class="leaf leaf-8" data-note="C5" aria-label="Frondosa leaf 8"><span></span></button>
+          <button type="button" class="leaf leaf-1" data-qw="what" data-note="C4" aria-label="What"><span>What</span></button>
+          <button type="button" class="leaf leaf-2" data-qw="where" data-note="D4" aria-label="Where"><span>Where</span></button>
+          <button type="button" class="leaf leaf-3" data-qw="when" data-note="E4" aria-label="When"><span>When</span></button>
+          <button type="button" class="leaf leaf-4" data-qw="who" data-note="F4" aria-label="Who"><span>Who</span></button>
+          <button type="button" class="leaf leaf-5" data-qw="which" data-note="G4" aria-label="Which"><span>Which</span></button>
+          <button type="button" class="leaf leaf-6" data-qw="why" data-note="A4" aria-label="Why"><span>Why</span></button>
+          <button type="button" class="leaf leaf-7" data-qw="how" data-note="B4" aria-label="How"><span>How</span></button>
+          <button type="button" class="leaf leaf-8" data-qw="how-much" data-note="C5" aria-label="How much"><span>How much</span></button>
+          <button type="button" class="leaf leaf-9" data-qw="how-many" data-note="C4" aria-label="How many"><span>How many</span></button>
+          <button type="button" class="leaf leaf-10" data-qw="whose" data-note="D4" aria-label="Whose"><span>Whose</span></button>
+          <button type="button" class="leaf leaf-11" data-qw="whom" data-note="E4" aria-label="Whom"><span>Whom</span></button>
+          <button type="button" class="leaf leaf-12" data-qw="how-long" data-note="F4" aria-label="How long"><span>How long</span></button>
+          <button type="button" class="leaf leaf-13" data-qw="how-far" data-note="G4" aria-label="How far"><span>How far</span></button>
+          <button type="button" class="leaf leaf-14" data-qw="how-often" data-note="A4" aria-label="How often"><span>How often</span></button>
         </div>
         <p class="duet-caption">Frondosa listens and blooms with the Piano</p>
       </div>
@@ -64,6 +74,7 @@
       <button type="button" class="mode-button" data-mode="es">ES</button>
       <button type="button" class="mode-button" data-mode="pt">PT</button>
       <button type="button" class="mode-button" data-mode="tripiano">Tripiano</button>
+      <button type="button" class="mode-button" data-mode="questions">14 Questions</button>
     </section>
 
     <section class="status-panel" aria-live="polite">
@@ -77,13 +88,13 @@
     <section class="experience-box keyboard-box" aria-label="Piano keyboard box">
     <section class="keyboard-shell" aria-label="Piano Plano SIYAYO">
       <div class="keyboard-scroll">
-        <div class="keyboard" id="keyboard" role="group" aria-label="Diatonic piano keyboard"></div>
+        <div class="keyboard" id="keyboard" role="group" aria-label="Chromatic piano keyboard"></div>
       </div>
     </section>
     </section>
 
     <footer class="stage-footer">
-      <span>v0.1 • Diatonic mapping • Frondosa Duet</span>
+      <span>v0.2 • Chromatic mapping • 14 Question Words • Trio Actors</span>
       <span>Animation layers reserved per key</span>
     </footer>
   </main>
