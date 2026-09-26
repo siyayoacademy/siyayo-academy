@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="./piano.css">
 </head>
 <body>
+  <div class="dev-preview-toolbar" id="devPreviewToolbar" aria-label="Responsive preview tools">
+    <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
+    <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
+    <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
+  </div>
+
+  <div class="stage-viewport" id="stageViewport" data-preview="auto">
   <main class="piano-stage" id="pianoStage" data-theme="sound">
     <header class="stage-header">
       <a class="home-link" href="../index.html" aria-label="Back to SIYAYO Academy">🦁</a>
@@ -24,6 +31,7 @@
       </div>
     </section>
 
+    <section class="experience-box tree-box" aria-label="Frondosa visual box">
     <section class="duet-stage" aria-label="Piano and Frondosa duet">
       <div class="frondosa" id="frondosa" aria-label="Árvore Frondosa">
         <img class="frondosa-visual" src="./assets/frondosa-sombreira.svg" alt="" aria-hidden="true">
@@ -40,7 +48,9 @@
         <p class="duet-caption">Frondosa listens and blooms with the Piano</p>
       </div>
     </section>
+    </section>
 
+    <section class="experience-box controls-box" aria-label="Piano controls and status">
     <section class="mode-panel" aria-label="Piano modes">
       <button type="button" class="mode-button is-active" data-mode="sound">Sound</button>
       <button type="button" class="mode-button" data-mode="solfege">Solfege</button>
@@ -56,10 +66,14 @@
       <span id="wordStatus">DÓ → DÓ↑</span>
     </section>
 
+    </section>
+
+    <section class="experience-box keyboard-box" aria-label="Piano keyboard box">
     <section class="keyboard-shell" aria-label="Piano Plano SIYAYO">
       <div class="keyboard-scroll">
         <div class="keyboard" id="keyboard" role="group" aria-label="Diatonic piano keyboard"></div>
       </div>
+    </section>
     </section>
 
     <footer class="stage-footer">
@@ -67,6 +81,7 @@
       <span>Animation layers reserved per key</span>
     </footer>
   </main>
+  </div>
   <script src="./piano.js"></script>
 </body>
 </html>
