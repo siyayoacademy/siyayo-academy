@@ -2843,3 +2843,56 @@ transform:
     touch-action: pan-y;
   }
 }
+
+
+/* =========================================================
+   ACADEMY HOME PORTRAIT · INDEPENDENT READING SURFACE
+   Global navigation stays still; the Academy knowledge moves.
+   ========================================================= */
+@media (max-width: 600px) and (orientation: portrait) {
+  body:not(:has(.chapter-view)) {
+    overflow: hidden;
+  }
+
+  body:not(:has(.chapter-view)) .story {
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+
+  body:not(:has(.chapter-view)) .academy-home-content {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 132px;
+    padding-bottom: 142px;
+    scroll-padding-top: 132px;
+    scroll-padding-bottom: 142px;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  body:not(:has(.chapter-view)) .academy-home-content .academy-title {
+    flex: 0 0 auto;
+  }
+
+  body:not(:has(.chapter-view)) .academy-home-content .academy-chapter-stack {
+    flex: 0 0 auto;
+    margin-bottom: 18px;
+  }
+
+  body:not(:has(.chapter-view)) .academy-quick-links {
+    position: fixed;
+    z-index: 6;
+    left: 50%;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    margin: 0;
+  }
+}
