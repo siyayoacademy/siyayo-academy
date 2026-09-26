@@ -203,6 +203,29 @@
       "pt": [
         "pt"
       ]
+    },
+    "welcome": {
+      "en": {
+        "heading": "Welcome to SIYAYO Academy",
+        "body": "Discover how words live, connect, and change function across English, Spanish, and Portuguese.",
+        "invitation": "Observe. Compare. Listen. Experience.",
+        "reassurance": "You do not need to choose a level to begin. Choose a word, follow a discovery, and let the path reveal the next step.",
+        "question": "Where are you going?"
+      },
+      "es": {
+        "heading": "Bienvenido a SIYAYO Academy",
+        "body": "Descubre cómo viven las palabras, cómo se relacionan y cómo cambian de función en inglés, español y portugués.",
+        "invitation": "Observa. Compara. Escucha. Experimenta.",
+        "reassurance": "No necesitas elegir un nivel para comenzar. Elige una palabra, sigue un descubrimiento y deja que el camino revele el próximo paso.",
+        "question": "¿Adónde vas?"
+      },
+      "pt": {
+        "heading": "Bem-vindo à SIYAYO Academy",
+        "body": "Descubra como as palavras vivem, se relacionam e mudam de função em inglês, espanhol e português.",
+        "invitation": "Observe. Compare. Escute. Experimente.",
+        "reassurance": "Você não precisa escolher um nível para começar. Escolha uma palavra, siga uma descoberta e deixe que o caminho revele o próximo passo.",
+        "question": "Aonde você vai?"
+      }
     }
   }
 }
