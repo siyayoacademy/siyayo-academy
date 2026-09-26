@@ -7,6 +7,8 @@
   const wordStatus = document.getElementById("wordStatus");
   const modeStatus = document.getElementById("modeStatus");
   const modeButtons = [...document.querySelectorAll(".mode-button")];
+  const stageViewport = document.getElementById("stageViewport");
+  const previewButtons = [...document.querySelectorAll(".preview-button")];
 
   const keys = [
     { id:"C4", frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde" },
@@ -218,6 +220,28 @@
   modeButtons.forEach(button => {
     button.addEventListener("click", refreshFrondosaLabels);
   });
+
+  function setPreviewMode(nextMode) {
+    if (!stageViewport) return;
+    stageViewport.dataset.preview = nextMode;
+    previewButtons.forEach(button => {
+      button.classList.toggle("is-active", button.dataset.preview === nextMode);
+    });
+    try {
+      localStorage.setItem("siyayo-piano-preview-mode", nextMode);
+    } catch (error) {}
+  }
+
+  previewButtons.forEach(button => {
+    button.addEventListener("click", () => setPreviewMode(button.dataset.preview || "auto"));
+  });
+
+  try {
+    const savedPreview = localStorage.getItem("siyayo-piano-preview-mode");
+    if (savedPreview && ["auto","portrait","landscape"].includes(savedPreview)) {
+      setPreviewMode(savedPreview);
+    }
+  } catch (error) {}
 
   refreshLabels();
   refreshFrondosaLabels();
