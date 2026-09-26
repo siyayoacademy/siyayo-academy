@@ -102,7 +102,7 @@
         "speechLanguage": "pt",
         "content": {
           "en": "Em inglês, cardinal e ordinal são as formas numéricas centrais: one, two, three; first, second, third. O sistema não marca gênero gramatical nos numerais cardinais, mas apresenta formas e grafias próprias em ordinais e números compostos. Também é útil reconhecer palavras que relacionam números em operações e medidas: plus, minus, times, divided by, equals, point, percent, dollars e cents.",
-          "es": "Em espanhol, os numerais podem apresentar variação em contextos específicos: uno / una, primero / primera, doscientos / doscientas. A forma depende da relação numérica e, em alguns casos, do substantivo que acompanha. También es útil reconocer palabras que relacionan números en operaciones y medidas: más, menos, por, dividido entre, igual a, coma o punto decimal, por ciento, dólares y centavos.",
+          "es": "Em espanhol, os numerais podem apresentar variação em contextos específicos: uno / una, primero / primera, doscientos / doscientas. A forma depende da relação numérica e, em alguns casos, do substantivo que acompanha. Também é útil reconhecer palavras que relacionam números em operações e medidas: más, menos, por, dividido entre, igual a, coma o punto decimal, por ciento, dólares y centavos.",
           "pt": "Em português, também existem variações em formas específicas: um / uma, dois / duas, primeiro / primeira, duzentos / duzentas. Quantidade e ordem se realizam de forma diferente e devem ser observadas no contexto. Também é útil reconhecer palavras que relacionam números em operações e medidas: mais, menos, vezes, dividido por, igual a, ponto ou vírgula decimal, por cento, dólares e centavos."
         },
         "focusWords": {
