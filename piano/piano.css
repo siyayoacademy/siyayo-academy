@@ -1119,3 +1119,164 @@ h1 {
     aspect-ratio:5/3;
   }
 }
+
+
+/* =========================================================
+   POWER EXPANSION PASS v0.2
+   14 Question Words • 8 Pianinho hotspots • chromatic Piano
+   ========================================================= */
+
+.frondosa {
+  width:min(100%,620px);
+  height:300px;
+}
+
+.frondosa-hotspots .leaf {
+  width:72px;
+  min-height:40px;
+  padding:4px 7px;
+}
+
+.frondosa-hotspots .leaf span {
+  font-size:.64rem;
+  line-height:1.05;
+  white-space:normal;
+  text-align:center;
+}
+
+/* Fourteen question-word leaves distributed through the canopy. */
+.frondosa-hotspots .leaf-1  { left:9%;  top:49%; }
+.frondosa-hotspots .leaf-2  { left:18%; top:30%; }
+.frondosa-hotspots .leaf-3  { left:29%; top:42%; }
+.frondosa-hotspots .leaf-4  { left:39%; top:22%; }
+.frondosa-hotspots .leaf-5  { left:50%; top:37%; }
+.frondosa-hotspots .leaf-6  { left:61%; top:22%; }
+.frondosa-hotspots .leaf-7  { left:71%; top:40%; }
+.frondosa-hotspots .leaf-8  { left:82%; top:28%; }
+.frondosa-hotspots .leaf-9  { left:14%; top:61%; }
+.frondosa-hotspots .leaf-10 { left:28%; top:60%; }
+.frondosa-hotspots .leaf-11 { left:42%; top:59%; }
+.frondosa-hotspots .leaf-12 { left:57%; top:58%; }
+.frondosa-hotspots .leaf-13 { left:70%; top:60%; }
+.frondosa-hotspots .leaf-14 { left:82%; top:55%; }
+
+/* Additional Pianinho powers: the original four remain primary. */
+.pianinho-hotspot.is-secondary {
+  width:42px;
+  height:42px;
+  font-size:.58rem;
+  background:rgba(6,27,61,.76);
+  border-color:rgba(242,216,138,.26);
+}
+
+.hotspot-re { left:34%; top:17%; }
+.hotspot-fa { left:35%; top:72%; }
+.hotspot-la { left:66%; top:72%; }
+.hotspot-si { left:66%; top:17%; }
+
+/* Chromatic black-key layer. */
+.keyboard {
+  display:flex;
+  overflow:visible;
+}
+
+.piano-key {
+  flex:1 1 0;
+  z-index:1;
+}
+
+.piano-key.black-key {
+  position:absolute;
+  top:0;
+  width:8.5%;
+  height:62%;
+  min-width:28px;
+  max-width:68px;
+  z-index:8;
+  transform:translateX(-50%);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:0 0 8px 8px;
+  background:linear-gradient(180deg,#15171d 0%,#050608 76%,#1b1d23 100%);
+  color:#f7f1df;
+  box-shadow:0 8px 15px rgba(0,0,0,.52);
+}
+
+.piano-key.black-key .key-note {
+  color:rgba(255,255,255,.72);
+}
+
+.piano-key.black-key .key-label-layer {
+  inset:auto 3px 10px;
+}
+
+.piano-key.black-key .key-word {
+  font-size:.57rem;
+  color:#f8f4e8;
+}
+
+/* Black-key positions relative to 8 white keys. */
+.black-key[data-note="C#4"] { left:12.5%; }
+.black-key[data-note="D#4"] { left:25%; }
+.black-key[data-note="F#4"] { left:50%; }
+.black-key[data-note="G#4"] { left:62.5%; }
+.black-key[data-note="A#4"] { left:75%; }
+
+.piano-stage[data-theme="questions"] .tree-box {
+  box-shadow:inset 0 0 40px rgba(215,179,90,.08);
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa {
+    width:min(100%,430px);
+    height:330px;
+  }
+  .frondosa-hotspots .leaf {
+    width:62px;
+    min-height:38px;
+  }
+  .frondosa-hotspots .leaf span {
+    font-size:.57rem;
+  }
+
+  .frondosa-hotspots .leaf-1  { left:7%;  top:49%; }
+  .frondosa-hotspots .leaf-2  { left:17%; top:34%; }
+  .frondosa-hotspots .leaf-3  { left:30%; top:44%; }
+  .frondosa-hotspots .leaf-4  { left:42%; top:31%; }
+  .frondosa-hotspots .leaf-5  { left:54%; top:43%; }
+  .frondosa-hotspots .leaf-6  { left:66%; top:31%; }
+  .frondosa-hotspots .leaf-7  { left:77%; top:44%; }
+  .frondosa-hotspots .leaf-8  { left:83%; top:34%; }
+  .frondosa-hotspots .leaf-9  { left:10%; top:62%; }
+  .frondosa-hotspots .leaf-10 { left:24%; top:61%; }
+  .frondosa-hotspots .leaf-11 { left:38%; top:60%; }
+  .frondosa-hotspots .leaf-12 { left:53%; top:60%; }
+  .frondosa-hotspots .leaf-13 { left:67%; top:61%; }
+  .frondosa-hotspots .leaf-14 { left:79%; top:58%; }
+
+  .pianinho-hotspot.is-secondary {
+    width:36px;
+    height:36px;
+    font-size:.50rem;
+  }
+
+  .keyboard {
+    min-width:0;
+    width:100%;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa {
+  width:min(100%,430px);
+  height:330px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf {
+  width:62px;
+  min-height:38px;
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho-hotspot.is-secondary {
+  width:36px;
+  height:36px;
+  font-size:.50rem;
+}
