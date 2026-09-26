@@ -1542,37 +1542,13 @@ function attachChapterFloorEvents() {
     });
   });
 
-  let startX = null;
-  let startY = null;
-
-  root.addEventListener("touchstart", event => {
-    const touch = event.touches?.[0];
-    startX = touch?.clientX ?? null;
-    startY = touch?.clientY ?? null;
-  }, { passive: true });
-
-  root.addEventListener("touchend", event => {
-    if (startX === null || startY === null) return;
-
-    const touch = event.changedTouches?.[0];
-    const dx = (touch?.clientX ?? startX) - startX;
-    const dy = (touch?.clientY ?? startY) - startY;
-
-    startX = null;
-    startY = null;
-
-    if (Math.abs(dy) < 64 || Math.abs(dy) <= Math.abs(dx)) return;
-
-    const interactive = event.target?.closest?.(
-      "[data-grammar-carousel], details, button, input, textarea, select"
-    );
-    if (interactive) return;
-
-    const delta = dy < 0 ? 1 : -1;
-    openChapterAtIndex(currentChapterIndex + delta);
-  }, { passive: true });
+  /*
+    Vertical touch movement belongs to reading/scrolling.
+    Chapter changes stay explicit through chapter-floor controls so a
+    portrait reader can reach the end of long explanations without a
+    swipe being interpreted as navigation.
+  */
 }
-
 /* ========================================
    RENDER CURRENT SLIDE
    ======================================== */
