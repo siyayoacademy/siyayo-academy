@@ -860,3 +860,79 @@ h1 {
 .frondosa-hotspots .leaf-6 { left:25%; top:59%; }
 .frondosa-hotspots .leaf-7 { left:72%; top:57%; }
 .frondosa-hotspots .leaf-8 { left:81%; top:46%; }
+
+
+/* =========================================================
+   REAL DEVICE PASS v1.2
+   Keep development preview tools on desktop, never over real
+   touch-first smartphone/tablet views.
+   ========================================================= */
+@media (hover:none) and (pointer:coarse) {
+  .dev-preview-toolbar {
+    display:none !important;
+  }
+}
+
+/* Portrait hotspot calibration against the real Frondosa canopy. */
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa-hotspots .leaf-1 { left:13%; top:48%; }
+  .frondosa-hotspots .leaf-2 { left:25%; top:33%; }
+  .frondosa-hotspots .leaf-3 { left:40%; top:43%; }
+  .frondosa-hotspots .leaf-4 { left:50%; top:29%; }
+  .frondosa-hotspots .leaf-5 { left:63%; top:43%; }
+  .frondosa-hotspots .leaf-6 { left:27%; top:57%; }
+  .frondosa-hotspots .leaf-7 { left:71%; top:55%; }
+  .frondosa-hotspots .leaf-8 { left:80%; top:46%; }
+}
+
+/* Physical-phone landscape: compact vertical rhythm while preserving
+   the full-width instrument and continuous downward navigation. */
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  body { padding:0; }
+  .piano-stage {
+    width:100%;
+    gap:10px;
+    padding:8px 12px 14px;
+  }
+  .stage-header {
+    grid-template-columns:44px 1fr 44px;
+  }
+  .home-link {
+    width:42px;
+    height:42px;
+  }
+  .eyebrow { font-size:.62rem; }
+  h1 { font-size:clamp(1.35rem,4.2vw,2rem); }
+  .subtitle { font-size:.76rem; }
+  .avatar-stage {
+    min-height:62px;
+  }
+  .avatar-reserve {
+    font-size:.72rem;
+  }
+  .duet-stage {
+    min-height:270px;
+  }
+  .frondosa {
+    height:255px;
+  }
+  .mode-panel {
+    gap:6px;
+  }
+  .mode-button {
+    min-height:40px;
+    padding:0 13px;
+  }
+  .status-panel {
+    min-height:60px;
+    padding:8px 12px;
+  }
+  .keyboard-shell {
+    padding:8px;
+  }
+  .keyboard {
+    min-width:0;
+    width:100%;
+    height:230px;
+  }
+}
