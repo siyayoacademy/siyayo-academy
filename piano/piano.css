@@ -967,3 +967,122 @@ h1 {
   .pianinho { height:158px; }
   .pianinho-hotspot { width:42px; height:42px; font-size:.56rem; }
 }
+
+
+/* =========================================================
+   FINE PASS v1.3 — FRONDOSA + PIANINHO HOTSPOTS
+   ========================================================= */
+
+/* Better canopy integration on wide layouts */
+.frondosa-hotspots .leaf-1 { left:14%; top:50%; }
+.frondosa-hotspots .leaf-2 { left:25%; top:29%; }
+.frondosa-hotspots .leaf-3 { left:40%; top:41%; }
+.frondosa-hotspots .leaf-4 { left:50%; top:19%; }
+.frondosa-hotspots .leaf-5 { left:64%; top:40%; }
+.frondosa-hotspots .leaf-6 { left:28%; top:60%; }
+.frondosa-hotspots .leaf-7 { left:72%; top:59%; }
+.frondosa-hotspots .leaf-8 { left:80%; top:50%; }
+
+/* Align Pianinho interactive zones to the circles drawn in the SVG. */
+.pianinho {
+  width:min(100%,520px);
+  aspect-ratio:5/3;
+  height:auto;
+}
+
+.pianinho-hotspot {
+  transform:translate(-50%,-50%);
+}
+
+.hotspot-do {
+  left:16.3%;
+  top:25%;
+}
+.hotspot-mi {
+  left:17%;
+  top:82.2%;
+  bottom:auto;
+}
+.hotspot-sol {
+  left:83%;
+  top:72.2%;
+  right:auto;
+  bottom:auto;
+}
+.hotspot-do-high {
+  left:83.7%;
+  top:25%;
+  right:auto;
+}
+
+.pianinho-hotspot.is-resonating {
+  transform:translate(-50%,-50%) scale(1.12);
+}
+
+.sequence-status {
+  display:inline-grid;
+  min-width:34px;
+  height:22px;
+  padding:0 7px;
+  margin-left:7px;
+  place-items:center;
+  border:1px solid rgba(242,216,138,.32);
+  border-radius:999px;
+  background:rgba(6,27,61,.62);
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-size:.64rem;
+  vertical-align:middle;
+}
+
+.pianinho.is-chord-complete .pianinho-visual {
+  animation:pianinhoChord 920ms var(--motion-ease);
+}
+
+.frondosa.is-chord-complete .frondosa-visual {
+  animation:frondosaChord 920ms var(--motion-ease);
+}
+
+@keyframes pianinhoChord {
+  0% { transform:scale(1); filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)); }
+  38% { transform:scale(1.055) rotate(-1deg); filter:drop-shadow(0 0 24px rgba(242,216,138,.78)); }
+  68% { transform:scale(1.045) rotate(1deg); filter:drop-shadow(0 0 30px rgba(242,216,138,.68)); }
+  100% { transform:scale(1); filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)); }
+}
+
+@keyframes frondosaChord {
+  0% { transform:scale(1); }
+  45% { transform:scale(1.018); filter:drop-shadow(0 0 22px rgba(242,216,138,.52)); }
+  100% { transform:scale(1); }
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa-hotspots .leaf-1 { left:15%; top:52%; }
+  .frondosa-hotspots .leaf-2 { left:27%; top:38%; }
+  .frondosa-hotspots .leaf-3 { left:41%; top:46%; }
+  .frondosa-hotspots .leaf-4 { left:51%; top:34%; }
+  .frondosa-hotspots .leaf-5 { left:64%; top:46%; }
+  .frondosa-hotspots .leaf-6 { left:29%; top:59%; }
+  .frondosa-hotspots .leaf-7 { left:72%; top:57%; }
+  .frondosa-hotspots .leaf-8 { left:80%; top:48%; }
+
+  .pianinho { width:min(100%,360px); }
+  .pianinho-hotspot {
+    width:44px;
+    height:44px;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho {
+  width:min(100%,360px);
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho-hotspot {
+  width:44px;
+  height:44px;
+}
+
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  .pianinho { width:min(100%,420px); }
+  .pianinho-hotspot { width:40px; height:40px; }
+}
