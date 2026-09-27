@@ -95,6 +95,11 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerNextSessionSource','js/verb-explorer-next-session-source.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerSessionStateBoundary','js/verb-explorer-session-state-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveContextSource','js/verb-explorer-adaptive-context-source.js');})
+      // Choice Attempt is event-time only: these authorities assemble A from the real learner click.
+      .then(function(){return ensureGlobal('SIYAYOChoiceAttemptOwnership','js/choice-attempt-ownership.js');})
+      .then(function(){return ensureGlobal('SIYAYOChoiceAttemptBoundary','js/choice-attempt-boundary.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceEvidenceBridge','js/verb-explorer-choice-evidence-bridge.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptFactory','js/verb-explorer-choice-attempt-factory.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptProvider','js/verb-explorer-choice-attempt-provider.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerTransitionRuntime','js/verb-explorer-transition-runtime.js');})
