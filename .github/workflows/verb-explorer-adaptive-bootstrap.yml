@@ -31,6 +31,8 @@ jobs:
         run: node scripts/test-adaptive-progression-decision.js
       - name: Test Coordinator progression transition bridge
         run: node scripts/test-verb-explorer-progression-transition.js
+      - name: Test cross-Experience transfer visit contract
+        run: node scripts/test-verb-explorer-transfer-visit-contract.js
       - name: Test browser bootstrap
         run: node scripts/test-verb-explorer-adaptive-bootstrap.js
       - name: Test browser bootstrap convergence dependency order
