@@ -1,0 +1,109 @@
+{
+  "id": "siyayo-canonical-development-map",
+  "version": "1.0",
+  "status": "canonical-development-map",
+  "baselines": {
+    "academy": {
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "commit": "c46310b1a9ebf41f542a58ba665ce8523580c100"
+    },
+    "pianoMotion": {
+      "branch": "jaguar/piano-stage-v0.1",
+      "commit": "cda3edcce567a2bcbb2d52b27c26a055cabac239"
+    }
+  },
+  "protocol": [
+    "what-exists",
+    "what-is-missing",
+    "what-connects",
+    "where-next"
+  ],
+  "animatedJourney": {
+    "role": "optional-interactive-academy-entrance",
+    "inputMotor": "swipe",
+    "phaseGrammar": [
+      "touch-or-swipe",
+      "event",
+      "motion",
+      "reveal",
+      "resonance",
+      "wait-or-next"
+    ],
+    "continuityObject": "golden-seed",
+    "scenes": [
+      {
+        "id": "iris-celestial-opening",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "golden-eagle",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "golden-branch",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "golden-seed-release",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "frondosa-entry",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "leaf-branch-resonance",
+        "status": "actors-reserved-in-motion-dna"
+      },
+      {
+        "id": "dimensional-portals",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "trunk-descent",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "open-clearing",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "jaguar-footprint",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "patita-seed-recognition",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "brilliant-dna-recognition",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "nice-party-encounter",
+        "status": "canonical-requirement"
+      }
+    ],
+    "rules": {
+      "learnerControlledAdvance": true,
+      "autoplayRequired": false,
+      "meaningfulWaits": true,
+      "animationIsEvidence": false,
+      "canonicalNavigationAuthority": true,
+      "directAcademyAccessRemainsAvailable": true,
+      "reducedMotionEquivalentRequired": true,
+      "responsiveSurfaceContract": "L0 environment; L1 persistent navigation when appropriate; L2 semantic scene; L3 contextual interaction"
+    },
+    "currentImplementationEvidence": {
+      "motionDna": "data/motion/siyayo-motion-dna.json",
+      "pianoStage": [
+        "piano/index.html",
+        "piano/piano.js",
+        "piano/piano.css"
+      ],
+      "frondosaAsset": "piano/assets/frondosa-sombreira.svg",
+      "note": "Motion DNA reserves golden-seed, golden-eagle, frondosa, leaf, branch, jaguar and patita. The current Piano runtime does not yet implement the full swipe journey."
+    }
+  },
+  "nextPass": "corpus-experience-capability-mapping"
+}
