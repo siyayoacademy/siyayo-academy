@@ -18,6 +18,9 @@
   const semanticAnswer = document.getElementById("semanticAnswer");
   const learnerResponseForm = document.getElementById("learnerResponseForm");
   const learnerResponseInput = document.getElementById("learnerResponseInput");
+  const waitArchetypeIndicator = document.getElementById("waitArchetypeIndicator");
+  const waitFace = document.getElementById("waitFace");
+  const waitCopy = document.getElementById("waitCopy");
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -346,10 +349,70 @@
 
   let semanticSequenceTimer = null;
   let activeQuestionWord = null;
+  let activeWaitArchetype = null;
+
+  const waitArchetypes = Object.freeze({
+    "thinking": {
+      face: "🤔",
+      copy: "PERAÍ… thinking",
+      className: "wait-thinking"
+    },
+    "confused": {
+      face: "😕",
+      copy: "Hmm… clarification may be needed",
+      className: "wait-confused"
+    },
+    "insufficient-context": {
+      face: "🧩",
+      copy: "Context gap • more information is needed",
+      className: "wait-context-gap"
+    }
+  });
+
+  function clearWaitArchetype() {
+    activeWaitArchetype = null;
+    Object.values(waitArchetypes).forEach(item => {
+      if (pianinho) pianinho.classList.remove(item.className);
+      if (frondosa) frondosa.classList.remove(item.className);
+    });
+    if (waitArchetypeIndicator) waitArchetypeIndicator.hidden = true;
+  }
+
+  function setWaitArchetype(nextState, source = "frondosa-semantic-lab") {
+    const config = waitArchetypes[nextState];
+    if (!config) return;
+
+    clearWaitArchetype();
+    activeWaitArchetype = nextState;
+
+    if (pianinho) pianinho.classList.add(config.className);
+    if (frondosa) frondosa.classList.add(config.className);
+
+    if (waitFace) waitFace.textContent = config.face;
+    if (waitCopy) waitCopy.textContent = config.copy;
+    if (waitArchetypeIndicator) waitArchetypeIndicator.hidden = false;
+
+    window.dispatchEvent(new CustomEvent("siyayo:wait-state-event", {
+      detail: {
+        type: "wait-archetype-state",
+        state: nextState,
+        source,
+        questionWordId: activeQuestionWord ? activeQuestionWord.id : null,
+        evaluated: false,
+        evidenceProduced: false
+      }
+    }));
+  }
+
+  window.addEventListener("siyayo:set-wait-state", event => {
+    const requestedState = event.detail && event.detail.state;
+    setWaitArchetype(requestedState, (event.detail && event.detail.source) || "external-request");
+  });
 
   function resetSemanticSequence() {
     if (!semanticSequence) return;
     activeQuestionWord = null;
+    clearWaitArchetype();
     semanticSequence.dataset.phase = "idle";
     if (semanticPhase) semanticPhase.textContent = "READY";
     if (semanticCue) semanticCue.textContent = "Touch a Question Word leaf";
@@ -380,6 +443,7 @@
 
     semanticSequenceTimer = window.setTimeout(() => {
       semanticSequence.dataset.phase = "wait";
+      setWaitArchetype("thinking");
       if (semanticPhase) semanticPhase.textContent = "WAIT";
       if (semanticCue) semanticCue.textContent = "Learner action is still required";
       if (semanticAnswer) semanticAnswer.textContent = "No evidence yet";
@@ -614,6 +678,7 @@
         }
       }));
 
+      clearWaitArchetype();
       semanticSequence.dataset.phase = "observed";
       if (semanticPhase) semanticPhase.textContent = "OBSERVED";
       if (semanticCue) semanticCue.textContent = "Learner response received";
