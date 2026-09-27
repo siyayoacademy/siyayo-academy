@@ -713,6 +713,37 @@
       if (semanticCue) semanticCue.textContent = "Learner response received";
       if (semanticAnswer) semanticAnswer.textContent = "Not evaluated yet • no GREEN • no Evidence";
       learnerResponseForm.hidden = true;
+
+      if (pianinho) {
+        pianinho.classList.remove("is-neutral-feedback");
+        void pianinho.offsetWidth;
+        pianinho.classList.add("is-neutral-feedback");
+      }
+      if (frondosa) {
+        frondosa.classList.remove("is-neutral-feedback");
+        void frondosa.offsetWidth;
+        frondosa.classList.add("is-neutral-feedback");
+      }
+
+      window.dispatchEvent(new CustomEvent("siyayo:feedback-event", {
+        detail: {
+          type: "neutral-acknowledgement",
+          source: "frondosa-semantic-lab",
+          questionWordId: activeQuestionWord.id,
+          evaluated: false,
+          evidenceProduced: false,
+          green: false
+        }
+      }));
+
+      window.setTimeout(() => {
+        speak("Response received.", "en-US");
+      }, 140);
+
+      window.setTimeout(() => {
+        if (pianinho) pianinho.classList.remove("is-neutral-feedback");
+        if (frondosa) frondosa.classList.remove("is-neutral-feedback");
+      }, 700);
     });
   }
 
