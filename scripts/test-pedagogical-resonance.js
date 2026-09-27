@@ -73,7 +73,8 @@ const canonicalQuestionWordSkills = {
   'whom.identify.object-person': 'whom',
   'how-long.identify.duration-length': 'how-long',
   'how-far.identify.distance': 'how-far',
-  'how-often.identify.frequency': 'how-often'
+  'how-often.identify.frequency': 'how-often',
+  'how-old.identify.age': 'how-old' // explicitly declared practical extension
 };
 assert.deepEqual(Resonance.questionWordSkillSignals, canonicalQuestionWordSkills);
 for (const [skill, questionWord] of Object.entries(canonicalQuestionWordSkills)) {
