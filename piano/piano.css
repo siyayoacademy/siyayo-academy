@@ -1616,3 +1616,38 @@ h1 {
     animation:none;
   }
 }
+
+
+/* =========================================================
+   EXTERNAL EVALUATION RESONANCE BRIDGE v0.1
+   The stage can request evaluation from the canonical/adaptive
+   authority, but never evaluates locally.
+   ========================================================= */
+.semantic-sequence[data-phase="external-evaluation"] {
+  box-shadow:inset 0 0 30px rgba(82,122,198,.18);
+}
+
+.pianinho.is-external-evaluation .pianinho-visual {
+  animation:externalEvaluationPulse 880ms var(--motion-ease) infinite alternate;
+}
+
+.frondosa.is-external-evaluation .frondosa-visual {
+  animation:externalEvaluationGlow 880ms var(--motion-ease) infinite alternate;
+}
+
+@keyframes externalEvaluationPulse {
+  from { transform:scale(1); filter:drop-shadow(0 0 8px rgba(104,150,235,.18)); }
+  to   { transform:scale(1.018); filter:drop-shadow(0 0 22px rgba(104,150,235,.34)); }
+}
+
+@keyframes externalEvaluationGlow {
+  from { filter:drop-shadow(0 0 8px rgba(104,150,235,.14)); }
+  to   { filter:drop-shadow(0 0 24px rgba(104,150,235,.32)); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.is-external-evaluation .pianinho-visual,
+  .frondosa.is-external-evaluation .frondosa-visual {
+    animation:none;
+  }
+}
