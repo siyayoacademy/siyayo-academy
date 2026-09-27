@@ -66,8 +66,12 @@ function install(options){
         document:doc,
         learnerEvent:learnerEvent
       });
-      if(result&&result.status==='S2_ACTIVE'&&ready.pending){
-        root.SIYAYOVerbExplorerPendingTransitionAuthority.clear(ready.pending.occurrenceId);
+      if(result&&result.status==='S2_ACTIVE'){
+        if(ready.pending)root.SIYAYOVerbExplorerPendingTransitionAuthority.clear(ready.pending.occurrenceId);
+        var transferPanel=root.SIYAYOVerbExplorerDeterminerUseAssessmentLive;
+        if(transferPanel&&typeof transferPanel.hide==='function')transferPanel.hide(doc);
+        var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
+        if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:ready.language});
       }
       refresh();
     });
