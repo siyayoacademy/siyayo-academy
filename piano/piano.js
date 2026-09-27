@@ -24,6 +24,9 @@
   const learnerWaitButtons = [...document.querySelectorAll("[data-wait-request]")];
   const microSupportActions = document.getElementById("microSupportActions");
   const microSupportButtons = [...document.querySelectorAll("[data-support-action]")];
+  const canonicalNavigationOpportunity = document.getElementById("canonicalNavigationOpportunity");
+  const canonicalNavigationCopy = document.getElementById("canonicalNavigationCopy");
+  const canonicalNavigationButton = document.getElementById("canonicalNavigationButton");
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -354,6 +357,7 @@
   let activeQuestionWord = null;
   let activeWaitArchetype = null;
   let activeSupportTrace = [];
+  let activeCanonicalNavigation = null;
 
   const waitArchetypes = Object.freeze({
     "thinking": {
@@ -432,6 +436,7 @@
     activeQuestionWord = qw;
     activeSupportTrace = [];
     clearCanonicalRouteResonance();
+    clearCanonicalNavigationOpportunity();
     const model = questionWordPromptModels[qw.id] || { gap:"information", prompt:"Which information is missing?" };
 
     if (semanticSequenceTimer) {
@@ -866,6 +871,12 @@
     });
   }
 
+  function clearCanonicalNavigationOpportunity() {
+    activeCanonicalNavigation = null;
+    if (canonicalNavigationOpportunity) canonicalNavigationOpportunity.hidden = true;
+    if (canonicalNavigationButton) canonicalNavigationButton.disabled = false;
+  }
+
   function clearCanonicalRouteResonance() {
     leaves.forEach(leaf => leaf.classList.remove("is-canonical-resonance"));
   }
@@ -960,6 +971,35 @@
     if (semanticCue) semanticCue.textContent = cue;
     if (semanticAnswer) semanticAnswer.textContent = answer;
 
+    const advanceSelection = detail.advanceSelection || null;
+    const resumeContext = resumeEvaluation && resumeEvaluation.resumeContext
+      ? resumeEvaluation.resumeContext
+      : null;
+
+    if (advanceSelection && advanceSelection.status === "selected" && advanceSelection.experienceId) {
+      activeCanonicalNavigation = {
+        kind: "advance",
+        experienceId: advanceSelection.experienceId,
+        fromExperience: advanceSelection.fromExperience || null,
+        entryVerb: advanceSelection.entryVerb || null
+      };
+      if (canonicalNavigationCopy) canonicalNavigationCopy.textContent =
+        "Canonical next Experience available: " + advanceSelection.experienceId;
+      if (canonicalNavigationOpportunity) canonicalNavigationOpportunity.hidden = false;
+    } else if (resumeStatus === "RESUME_ELIGIBLE" && resumeContext && resumeContext.status === "RESUME_CONTEXT_ELIGIBLE") {
+      const snapshot = resumeContext.snapshot || {};
+      activeCanonicalNavigation = {
+        kind: "resume",
+        experienceId: snapshot.currentExperienceId || null,
+        resumeContext
+      };
+      if (canonicalNavigationCopy) canonicalNavigationCopy.textContent =
+        "Canonical resume available" + (activeCanonicalNavigation.experienceId ? ": " + activeCanonicalNavigation.experienceId : "");
+      if (canonicalNavigationOpportunity) canonicalNavigationOpportunity.hidden = false;
+    } else {
+      clearCanonicalNavigationOpportunity();
+    }
+
     window.dispatchEvent(new CustomEvent("siyayo:canonical-result-presented", {
       detail: {
         source: "piano-stage",
@@ -981,6 +1021,28 @@
 
     presentCanonicalResult(detail);
   });
+
+  if (canonicalNavigationButton) {
+    canonicalNavigationButton.addEventListener("click", () => {
+      if (!activeCanonicalNavigation) return;
+
+      canonicalNavigationButton.disabled = true;
+
+      window.dispatchEvent(new CustomEvent("siyayo:canonical-navigation-request", {
+        detail: {
+          type: "learner-confirmed-canonical-navigation",
+          source: "piano-stage",
+          navigation: { ...activeCanonicalNavigation },
+          learnerConfirmed: true,
+          localRouting: false
+        }
+      }));
+
+      if (semanticPhase) semanticPhase.textContent = "NAVIGATION REQUEST";
+      if (semanticCue) semanticCue.textContent = "Learner confirmed canonical continuation";
+      if (semanticAnswer) semanticAnswer.textContent = "Awaiting external runtime dispatch";
+    });
+  }
 
   function setPreviewMode(nextMode) {
     if (!stageViewport) return;
