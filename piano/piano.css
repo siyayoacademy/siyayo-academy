@@ -1743,3 +1743,31 @@ h1 {
 .semantic-sequence[data-support-used="true"] .semantic-answer {
   text-decoration-thickness:1px;
 }
+
+
+/* =========================================================
+   CANONICAL RESONANCE PROJECTION v0.1
+   External route resonance may illuminate matching semantic
+   actors. The stage never calculates the match locally.
+   ========================================================= */
+.frondosa-hotspots .leaf.is-canonical-resonance {
+  box-shadow:
+    0 0 0 2px rgba(116,166,255,.38),
+    0 0 24px rgba(116,166,255,.34);
+  transform:translate(-50%,-50%) scale(1.06);
+}
+
+.frondosa-hotspots .leaf.is-canonical-resonance::after {
+  content:"";
+  position:absolute;
+  inset:-5px;
+  border:1px solid rgba(116,166,255,.30);
+  border-radius:inherit;
+  pointer-events:none;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .frondosa-hotspots .leaf.is-canonical-resonance {
+    transform:translate(-50%,-50%);
+  }
+}
