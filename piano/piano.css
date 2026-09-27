@@ -1733,3 +1733,13 @@ h1 {
     grid-template-columns:1fr;
   }
 }
+
+
+/* =========================================================
+   SUPPORT PROVENANCE v0.1
+   The UI keeps no score here; support use only travels as
+   provenance for the external canonical evaluator.
+   ========================================================= */
+.semantic-sequence[data-support-used="true"] .semantic-answer {
+  text-decoration-thickness:1px;
+}
