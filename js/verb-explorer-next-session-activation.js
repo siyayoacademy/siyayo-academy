@@ -1,6 +1,6 @@
 // Grounded activation boundary for a transition-authorized next Session.
 // It composes existing authorities: retained Green Profile, canonical S2 birth,
-// live Experience movement, grounded State, and Coordinator configuration.
+// learner-owned arrival in S2, grounded State, and Coordinator configuration.
 // S1 operational evidence packets never cross this boundary.
 (function(root){
   'use strict';
@@ -19,17 +19,19 @@
     if(!previousSession||!previousSession.decision)return null;
     if(!passContract||typeof passContract!=='object')return null;
 
-    var transitionRuntime=root.SIYAYOVerbExplorerTransitionRuntime;
     var nextSessionSource=root.SIYAYOVerbExplorerNextSessionSource;
     var profileSource=root.SIYAYOVerbExplorerAdaptiveProfileSource;
     var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
     var coordinatorConfig=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
 
-    if(!transitionRuntime||typeof transitionRuntime.execute!=='function')return null;
     if(!nextSessionSource||typeof nextSessionSource.begin!=='function')return null;
     if(!profileSource||typeof profileSource.getProfile!=='function')return null;
     if(!stateBridge||typeof stateBridge.getState!=='function')return null;
     if(!coordinatorConfig||typeof coordinatorConfig.configure!=='function')return null;
+
+    // The learner has already navigated. Adoption never moves the Experience.
+    var state=stateBridge.getState();
+    if(!state||text(state.currentExperienceId)!==text(authorization.toExperience))return null;
 
     var greenProfile=profileSource.getProfile();
     if(!greenProfile||typeof greenProfile!=='object')return null;
@@ -47,11 +49,7 @@
     if(!skill||!experienceId)return null;
     if(experienceId!==text(authorization.toExperience))return null;
 
-    var execution=transitionRuntime.execute(authorization);
-    if(!execution||execution.status!=='TRANSITION_EXECUTED')return null;
-
-    var state=stateBridge.getState();
-    if(!state||text(state.currentExperienceId)!==experienceId)return null;
+    if(text(state.currentExperienceId)!==experienceId)return null;
 
     var evidencePackets=Object.freeze([]);
     var context=Object.freeze({
@@ -78,7 +76,7 @@
       session:session,
       experienceId:experienceId,
       skill:skill,
-      state:execution.state||state,
+      state:state,
       context:context
     });
   }
