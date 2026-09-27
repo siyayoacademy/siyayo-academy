@@ -20,7 +20,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 # ACTIVE CHECKPOINT — JAGUAR-LIVE-03
 
-**Status:** AUDIT COMPLETE — integration OPEN  
+**Status:** AUDIT COMPLETE — CI GREEN; pedagogical integration OPEN  
 **Recorded:** 2026-09-27  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **Audited HEAD:** `72b3ecc906ebfcfcecc82bb1e76719114a53bb21`  
@@ -41,7 +41,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 - A lifecycle contract for retaining S1 assessment authority across free navigation into S2 so that a genuine cross-Experience Attempt can be evaluated without pretending S2 was already activated.
 - A valid moment for `transition-authorized` and S2 pedagogical adoption after cross-Experience transfer. Requiring full Green Pass before leaving S1 conflicts with the transfer requirement in S2.
 - A canonical receiver for Piano navigation requests and a verified generic advance executor. An `advanceSelection` with `status: selected` is a selected destination, not an executed transition.
-- Green CI for this branch. The two failing suites need independently grounded fixes; unrelated expectations must not be altered to conceal failures.
+- Full learner-owned S1 → S2 transfer flow and the Piano canonical event cable are not yet demonstrated end to end.
 
 ## WHAT CONNECTS
 
@@ -64,9 +64,13 @@ This is an intended sequence to verify, not a claim that the live runtime alread
 - Do not duplicate `AdaptiveLearningRouter`, `AdaptiveAdvanceSelector`, or routing inside Piano.
 - Unknown receiver/executor/evidence provenance remains OPEN and fail-closed.
 
+## CI recovery after audited baseline
+
+At commit `575a2518695fc1e8a3dc7e45eede883506bcdc98`, all three pull-request workflows passed: Verb Explorer Adaptive Bootstrap, Resume Runtime Dispatch and Corpus Integrity. Repairs aligned stale Story speech, HOW OLD resonance fixture and S2 activation test expectations with their existing runtime contracts. This CI result verifies the current code and tests, **not** the missing S2 transfer path or Piano cable. The earlier RED statement above describes only the audited `72b3ecc` baseline.
+
 ## NEXT GO
 
-Trace the complete transfer-probe presentation-to-Attempt chain in the live browser. Identify the smallest canonical S1-across-S2 Session boundary, write a failing end-to-end contract test for the actual learner visit and transfer event, then connect the minimal runtime. Independently reproduce and resolve the two current CI failures before homologation.
+Trace the complete transfer-probe presentation-to-Attempt chain in the live browser. Identify the smallest canonical S1-across-S2 Session boundary, write a failing end-to-end contract test for the actual learner visit and transfer event, then connect the minimal runtime. Keep the three CI workflows green and test the actual transfer path before homologation.
 
 ---
 
