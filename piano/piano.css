@@ -1354,3 +1354,63 @@ h1 {
 .stage-viewport[data-preview="portrait"] .semantic-answer {
   text-align:center;
 }
+
+
+/* =========================================================
+   FRONDOSA PORTRAIT BREATHING PASS v0.3
+   Spread 14 semantic leaves into clearer rows without changing
+   their canonical/question identities.
+   ========================================================= */
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa {
+    width:min(100%,430px);
+    height:350px;
+  }
+
+  .frondosa-hotspots .leaf {
+    width:58px;
+    min-height:38px;
+    padding:4px 5px;
+  }
+
+  .frondosa-hotspots .leaf-1  { left:9%;  top:50%; }  /* What */
+  .frondosa-hotspots .leaf-2  { left:16%; top:31%; }  /* Where */
+  .frondosa-hotspots .leaf-3  { left:35%; top:39%; }  /* When */
+  .frondosa-hotspots .leaf-4  { left:40%; top:18%; }  /* Who */
+  .frondosa-hotspots .leaf-5  { left:53%; top:31%; }  /* Which */
+  .frondosa-hotspots .leaf-6  { left:61%; top:18%; }  /* Why */
+  .frondosa-hotspots .leaf-7  { left:73%; top:39%; }  /* How */
+  .frondosa-hotspots .leaf-8  { left:81%; top:27%; }  /* How much */
+  .frondosa-hotspots .leaf-9  { left:15%; top:64%; }  /* How many */
+  .frondosa-hotspots .leaf-10 { left:33%; top:58%; }  /* Whose */
+  .frondosa-hotspots .leaf-11 { left:49%; top:61%; }  /* Whom */
+  .frondosa-hotspots .leaf-12 { left:64%; top:58%; }  /* How long */
+  .frondosa-hotspots .leaf-13 { left:79%; top:64%; }  /* How far */
+  .frondosa-hotspots .leaf-14 { left:82%; top:49%; }  /* How often */
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa {
+  width:min(100%,430px);
+  height:350px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf {
+  width:58px;
+  min-height:38px;
+  padding:4px 5px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-1  { left:9%;  top:50%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-2  { left:16%; top:31%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-3  { left:35%; top:39%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-4  { left:40%; top:18%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-5  { left:53%; top:31%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-6  { left:61%; top:18%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-7  { left:73%; top:39%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-8  { left:81%; top:27%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-9  { left:15%; top:64%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-10 { left:33%; top:58%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-11 { left:49%; top:61%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-12 { left:64%; top:58%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-13 { left:79%; top:64%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-14 { left:82%; top:49%; }
