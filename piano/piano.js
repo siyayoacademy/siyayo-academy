@@ -366,6 +366,11 @@
     if (semanticCue) semanticCue.textContent = qw.en.toUpperCase() + " · " + model.prompt;
     if (semanticAnswer) semanticAnswer.textContent = "Information gap: " + model.gap;
 
+    // Speech role: question-word + prompt. WAIT itself remains intentionally silent.
+    window.setTimeout(() => {
+      speak(qw.en + ". " + model.prompt, "en-US");
+    }, 120);
+
     semanticSequenceTimer = window.setTimeout(() => {
       semanticSequence.dataset.phase = "wait";
       if (semanticPhase) semanticPhase.textContent = "WAIT";
