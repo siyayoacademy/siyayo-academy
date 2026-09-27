@@ -133,6 +133,7 @@
       // Choice Attempt is event-time only: these authorities assemble A from the real learner click.
       .then(function(){return ensureGlobal('SIYAYOChoiceAttemptOwnership','js/choice-attempt-ownership.js');})
       .then(function(){return ensureGlobal('SIYAYOChoiceAttemptBoundary','js/choice-attempt-boundary.js');})
+      .then(function(){return ensureGlobal('SIYAYOChoiceEvidenceEvaluator','js/choice-evidence-evaluator.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceEvidenceBridge','js/verb-explorer-choice-evidence-bridge.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptFactory','js/verb-explorer-choice-attempt-factory.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptProvider','js/verb-explorer-choice-attempt-provider.js');})
