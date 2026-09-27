@@ -63,17 +63,31 @@
       .then(function(){return ensureGlobal('AdaptiveSessionTransitionBoundary','js/adaptive-session-transition-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinator','js/verb-explorer-adaptive-coordinator.js');})
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseProbeSpecificationSource','js/adaptive-determiner-use-probe-specification-source.js');})
+      .then(function(){return ensureGlobal('AdaptiveDeterminerUseProbePresenter','js/adaptive-determiner-use-probe-presenter.js');})
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseProbeResult','js/adaptive-determiner-use-probe-result.js');})
-      .then(function(){return ensureGlobal('AdaptiveDeterminerUseProbeSupportSensor','js/adaptive-determiner-use-probe-support-sensor.js');})
+      .then(function(sensorApi){
+        return ensureGlobal('AdaptiveDeterminerUseProbeSupportSensor','js/adaptive-determiner-use-probe-support-sensor.js').then(function(sensor){
+          if(sensor&&typeof sensor.create==='function')root.SIYAYODeterminerUseProbeSupportSensor=sensor.create();
+          return sensor;
+        });
+      })
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseProbeEvidenceBridge','js/adaptive-determiner-use-probe-evidence-bridge.js');})
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseProbeAttemptBoundary','js/adaptive-determiner-use-probe-attempt-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOAdaptiveDeterminerUseProbeBrowserWire','js/adaptive-determiner-use-probe-browser-wire.js');})
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseTransferProbeSpecificationSource','js/adaptive-determiner-use-transfer-probe-specification-source.js');})
+      .then(function(){return ensureGlobal('AdaptiveDeterminerUseTransferProbePresenter','js/adaptive-determiner-use-transfer-probe-presenter.js');})
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseTransferProbeResult','js/adaptive-determiner-use-transfer-probe-result.js');})
-      .then(function(){return ensureGlobal('AdaptiveDeterminerUseTransferProbeSupportSensor','js/adaptive-determiner-use-transfer-probe-support-sensor.js');})
+      .then(function(){
+        return ensureGlobal('AdaptiveDeterminerUseTransferProbeSupportSensor','js/adaptive-determiner-use-transfer-probe-support-sensor.js').then(function(sensor){
+          if(sensor&&typeof sensor.create==='function')root.SIYAYODeterminerUseTransferProbeSupportSensor=sensor.create();
+          return sensor;
+        });
+      })
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseTransferProbeEvidenceBridge','js/adaptive-determiner-use-transfer-probe-evidence-bridge.js');})
       .then(function(){return ensureGlobal('AdaptiveDeterminerUseTransferProbeAttemptBoundary','js/adaptive-determiner-use-transfer-probe-attempt-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOAdaptiveDeterminerUseTransferProbeBrowserWire','js/adaptive-determiner-use-transfer-probe-browser-wire.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerTransferAttemptAuthority','js/verb-explorer-transfer-attempt-authority.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerDeterminerUseAssessmentLive','js/verb-explorer-determiner-use-assessment-live.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
         if(wire&&typeof wire.install==='function')wire.install();
