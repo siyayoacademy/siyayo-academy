@@ -135,6 +135,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceEvidenceBridge','js/verb-explorer-choice-evidence-bridge.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptFactory','js/verb-explorer-choice-attempt-factory.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAttemptProvider','js/verb-explorer-choice-attempt-provider.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceEvidencePacketBridge','js/verb-explorer-choice-evidence-packet-bridge.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerTransitionRuntime','js/verb-explorer-transition-runtime.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerNextSessionActivation','js/verb-explorer-next-session-activation.js');})
