@@ -1771,3 +1771,48 @@ h1 {
     transform:translate(-50%,-50%);
   }
 }
+
+
+/* =========================================================
+   CANONICAL NAVIGATION OPPORTUNITY v0.1
+   External authority may expose a destination or resume action.
+   The stage never routes on its own; learner confirms first.
+   ========================================================= */
+.canonical-navigation-opportunity {
+  grid-column:1 / -1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:4px;
+  padding:8px 10px;
+  border:1px solid rgba(72,150,91,.28);
+  border-radius:14px;
+  background:rgba(18,66,40,.18);
+  color:#d9f3df;
+  font-family:var(--font-display);
+  font-size:.72rem;
+}
+
+.canonical-navigation-opportunity[hidden] {
+  display:none;
+}
+
+.canonical-navigation-opportunity button {
+  min-height:36px;
+  padding:0 14px;
+  border:1px solid rgba(98,178,116,.42);
+  border-radius:999px;
+  background:rgba(72,150,91,.16);
+  color:#e7f8eb;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+@media (max-width:600px) {
+  .canonical-navigation-opportunity {
+    flex-direction:column;
+    text-align:center;
+  }
+}
