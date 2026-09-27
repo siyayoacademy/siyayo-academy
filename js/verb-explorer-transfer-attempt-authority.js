@@ -14,14 +14,14 @@
     var attempt=input.attempt;
     var event=input.learnerEvent;
     var state=input.state;
-    var items=input.context&&input.context.experiences;
-    if(!decision||id(decision.skill)!=='which.use.determiner'||!Array.isArray(items))return false;
+    var catalog=input.catalog;
+    if(!decision||id(decision.skill)!=='which.use.determiner'||!catalog||typeof catalog.getExperience!=='function')return false;
     if(!attempt||!event||!state||event.observed!==true||event.actor!=='learner')return false;
     if(id(event.source)!=='determiner-use-transfer-probe-select'||id(event.mode)!=='transfer'||id(attempt.mode)!=='transfer')return false;
     var from=id(decision.experienceId),to=id(state.currentExperienceId);
     if(!from||!to||from===to)return false;
-    var origin=items.find(function(item){return item&&id(item.id)===from;});
-    var destination=items.find(function(item){return item&&id(item.id)===to;});
+    var origin=catalog.getExperience(from);
+    var destination=catalog.getExperience(to);
     if(!origin||!destination||id(origin.toroidalNext&&origin.toroidalNext.nextExperience)!==to)return false;
     if(id(event.fromExperienceId)!==from||id(attempt.context&&attempt.context.fromExperienceId)!==from)return false;
     if(id(event.experienceId)!==to||id(attempt.context&&attempt.context.experienceId)!==to)return false;
