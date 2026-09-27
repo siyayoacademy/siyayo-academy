@@ -18,6 +18,10 @@ function receive(decision){
     nextDecision:decision.nextDecision
   });
   if(!authorization)return null;
+  var pending=root.SIYAYOVerbExplorerPendingTransitionAuthority;
+  if(pending&&typeof pending.remember==='function'){
+    try{pending.remember(authorization,decision.occurrenceId);}catch(_error){}
+  }
   var trailSink=root.SIYAYOVerbExplorerTransitionTrailSink;
   if(typeof trailSink==='function'){
     try{trailSink(Object.freeze({
