@@ -124,6 +124,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveCoordinatorConfig','js/verb-explorer-adaptive-coordinator-config.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerTransitionRuntime','js/verb-explorer-transition-runtime.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerNextSessionActivation','js/verb-explorer-next-session-activation.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerPedagogicalSessionAdoption','js/verb-explorer-pedagogical-session-adoption.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerProgressionDecisionSink','js/verb-explorer-progression-decision-sink.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerToroidalNextObserver','js/verb-explorer-toroidal-next-observer.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLiveNextWire','js/verb-explorer-live-next-wire.js');})
