@@ -625,7 +625,63 @@
           "target": "positive-adjectives",
           "status": "reserved"
         }
-      ]
+      ],
+      "canonicalNotes": [
+        "NOUN names or identifies entities, beings, places, objects, substances, events, ideas or other conceptual referents according to language and context.",
+        "Keep noun class, syntactic function and semantic role distinct: a concrete/abstract classification does not by itself determine subject, object or complement function.",
+        "Treat number, gender, countability and article/determiner behavior as language-specific systems rather than mechanical EN-ES-PT equivalences.",
+        "Use the canonical noun lexicon as reusable structured knowledge for Experiences; do not make the dinner vocabulary the definition of the NOUN capability.",
+        "Keep Question Words as information-need/navigation keys: WHAT/WHO/WHICH may point toward noun referents without collapsing Question Words into the NOUN word type."
+      ],
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "definition and naming/reference function",
+          "basic common and proper noun contrast",
+          "introductory concrete and abstract classification",
+          "basic count and mass/countable and uncountable awareness",
+          "basic number and gender awareness across EN-ES-PT",
+          "introductory noun role inside the noun phrase and sentence",
+          "one integrated contextual application"
+        ],
+        "rule": "The Chapter introduces the canonical noun map and representative EN-ES-PT contrasts without exhausting nominal morphology, determination, derivation or lexical-semantic classification."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full common/proper and concrete/abstract classification systems",
+          "countability and mass/count behavior",
+          "number formation and irregular plurals",
+          "grammatical gender and natural-gender contrasts",
+          "collective nouns",
+          "compound nouns",
+          "derived and deverbal nouns",
+          "noun phrase structure",
+          "determination and article interaction",
+          "possessive constructions",
+          "noun complementation and noun plus preposition patterns",
+          "semantic domains and lexical relations",
+          "advanced EN-ES-PT false equivalences and contrastive grammar"
+        ],
+        "rule": "MASTER expands nominal systems, exceptions, lexical relations and contrastive grammar while the reusable noun corpus supplies structured items to Experiences."
+      },
+      "experienceScope": {
+        "role": "contextual-application",
+        "preferredContexts": [
+          "shopping-for-dinner",
+          "preparing-dinner",
+          "having-dinner",
+          "after-dinner-conversation",
+          "college experiences"
+        ],
+        "currentCorpus": "data/lexicon/nouns/nouns.json",
+        "rule": "Experiences select nouns because the situation needs participants, objects, places, substances or concepts; the corpus must be reusable beyond the dinner pilot."
+      },
+      "evidenceScope": {
+        "role": "reserved-for-grounded-expansion",
+        "status": "open",
+        "rule": "Do not infer noun mastery from exposure or animation. Add noun evidence skills only when an explicit learner action discriminates, selects, composes or uses a noun in context."
+      }
     }
   },
   "carousel": {
