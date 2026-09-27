@@ -1545,3 +1545,42 @@ h1 {
     animation:none;
   }
 }
+
+
+/* =========================================================
+   LEARNER-DECLARED WAIT REASONS v0.1
+   Agency first: the learner may explicitly request more time,
+   clarification, or more context. These are NOT evaluations.
+   ========================================================= */
+.learner-wait-actions {
+  grid-column:1 / -1;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+}
+
+.learner-wait-actions button {
+  min-height:34px;
+  padding:0 10px;
+  border:1px solid rgba(242,216,138,.22);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:var(--muted);
+  font-family:var(--font-body);
+  font-size:.68rem;
+  font-weight:600;
+}
+
+.learner-wait-actions button:hover,
+.learner-wait-actions button:focus-visible {
+  color:var(--gold-light);
+  border-color:rgba(242,216,138,.52);
+}
+
+@media (max-width:600px) {
+  .learner-wait-actions {
+    display:grid;
+    grid-template-columns:1fr;
+  }
+}
