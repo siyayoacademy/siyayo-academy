@@ -431,6 +431,7 @@
     if (!semanticSequence || !qw) return;
     activeQuestionWord = qw;
     activeSupportTrace = [];
+    clearCanonicalRouteResonance();
     const model = questionWordPromptModels[qw.id] || { gap:"information", prompt:"Which information is missing?" };
 
     if (semanticSequenceTimer) {
@@ -865,11 +866,47 @@
     });
   }
 
+  function clearCanonicalRouteResonance() {
+    leaves.forEach(leaf => leaf.classList.remove("is-canonical-resonance"));
+  }
+
+  function projectCanonicalRouteResonance(routeInspection = null) {
+    clearCanonicalRouteResonance();
+    const resonance = routeInspection && routeInspection.resonance;
+    const matched = resonance && resonance.matched;
+    const questionWords = matched && Array.isArray(matched.questionWords)
+      ? matched.questionWords
+      : [];
+
+    if (!resonance || resonance.status !== "matched" || questionWords.length === 0) return;
+
+    const normalized = new Set(questionWords.map(value => String(value).trim().toLowerCase()));
+    leaves.forEach(leaf => {
+      if (normalized.has(String(leaf.dataset.qw || "").toLowerCase())) {
+        leaf.classList.add("is-canonical-resonance");
+      }
+    });
+
+    window.dispatchEvent(new CustomEvent("siyayo:canonical-resonance-presented", {
+      detail: {
+        source: "piano-stage",
+        status: resonance.status,
+        score: Number.isFinite(resonance.score) ? resonance.score : null,
+        questionWords: [...normalized],
+        languagePatterns: matched && Array.isArray(matched.languagePatterns)
+          ? [...matched.languagePatterns]
+          : []
+      }
+    }));
+  }
+
   function presentCanonicalResult(detail = {}) {
     clearCanonicalResultResonance();
+    projectCanonicalRouteResonance(detail.routeInspection || null);
 
     const contractStatus = detail.contractEvaluation && detail.contractEvaluation.status;
     const recommendation = detail.recommendation || {};
+    const routeInspection = detail.routeInspection || null;
     const waitClassification = detail.waitClassification || null;
     const resumeEvaluation = detail.resumeEvaluation || null;
     const resumeStatus = resumeEvaluation && resumeEvaluation.resumeEligibility
