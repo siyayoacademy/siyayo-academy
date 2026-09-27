@@ -174,6 +174,14 @@
           if(headProbeRuntime&&typeof headProbeRuntime.render==='function')headProbeRuntime.render();
           var experienceRuntime=root.SIYAYOVerbExplorerExperienceRuntime;
           if(experienceRuntime&&typeof experienceRuntime.render==='function')experienceRuntime.render();
+          var determiner=root.SIYAYOVerbExplorerDeterminerUseAssessmentLive;
+          var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+          var bridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+          var state=bridge&&bridge.getState&&bridge.getState();
+          var experience=state&&catalog&&catalog.getExperience&&catalog.getExperience(state.currentExperienceId);
+          if(determiner&&typeof determiner.mount==='function'&&experience){
+            determiner.mount({document:document,experience:experience,language:state.experienceLanguage});
+          }
           var nextEl=document&&typeof document.getElementById==='function'
             ? document.getElementById('nextExperience')
             : null;
