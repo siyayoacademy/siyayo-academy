@@ -1280,3 +1280,77 @@ h1 {
   height:36px;
   font-size:.50rem;
 }
+
+
+/* =========================================================
+   FRONDOSA SEMANTIC SEQUENCE v0.1
+   Perceptual Question → WAIT → Response surface.
+   This surface never manufactures learner evidence.
+   ========================================================= */
+.semantic-sequence-box {
+  padding:10px 12px;
+}
+
+.semantic-sequence {
+  min-height:72px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:12px;
+  align-items:center;
+  padding:12px 14px;
+  border:1px solid rgba(242,216,138,.18);
+  border-radius:16px;
+  background:rgba(6,27,61,.58);
+}
+
+.semantic-phase {
+  font-family:var(--font-display);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  color:var(--gold-light);
+}
+
+.semantic-cue {
+  text-align:center;
+  font-family:var(--font-display);
+  font-size:.96rem;
+}
+
+.semantic-answer {
+  color:var(--muted);
+  font-size:.76rem;
+  text-align:right;
+}
+
+.semantic-sequence[data-phase="question"] {
+  box-shadow:inset 0 0 24px rgba(39,74,143,.14);
+}
+
+.semantic-sequence[data-phase="wait"] {
+  box-shadow:inset 0 0 26px rgba(215,179,90,.14);
+}
+
+.semantic-sequence[data-phase="response"] {
+  box-shadow:inset 0 0 26px rgba(27,102,46,.14);
+}
+
+@media (max-width:600px) {
+  .semantic-sequence {
+    grid-template-columns:1fr;
+    gap:5px;
+    text-align:center;
+  }
+  .semantic-answer {
+    text-align:center;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .semantic-sequence {
+  grid-template-columns:1fr;
+  gap:5px;
+  text-align:center;
+}
+
+.stage-viewport[data-preview="portrait"] .semantic-answer {
+  text-align:center;
+}
