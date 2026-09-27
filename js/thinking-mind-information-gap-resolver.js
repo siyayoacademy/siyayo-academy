@@ -37,7 +37,7 @@ function normalize(value){
 
 function capabilityList(source){
   if(Array.isArray(source))return source;
-  if(Array.isArray(source?.canonical))return source.canonical;
+  if(source&&Array.isArray(source.canonical))return source.canonical;
   return [];
 }
 
@@ -48,7 +48,7 @@ function resolve(question,capabilities){
   if(!questionWord||!intention)return null;
 
   var capability=capabilityList(capabilities).find(function(item){
-    return normalize(item?.questionWord)===questionWord;
+    return normalize(item&&item.questionWord)===questionWord;
   });
   if(!capability)return null;
 
@@ -68,7 +68,7 @@ function resolve(question,capabilities){
 }
 
 function resolveExperience(experience,capabilities){
-  return (experience?.thinkingMind||[]).map(function(question,index){
+  return ((experience&&experience.thinkingMind)||[]).map(function(question,index){
     var resolution=resolve(question,capabilities);
     return resolution?Object.freeze({index:index,resolution:resolution}):null;
   }).filter(Boolean);
