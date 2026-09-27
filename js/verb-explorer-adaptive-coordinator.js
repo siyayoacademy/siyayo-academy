@@ -139,6 +139,12 @@
 
     var attempt=typeof current.getAttempt==='function'?current.getAttempt(choice,state,target,learnerEvent):null;
     if(!attempt)return null;
+    var choiceEvidenceBridge=root.SIYAYOVerbExplorerChoiceEvidencePacketBridge;
+    if(!choiceEvidenceBridge||typeof choiceEvidenceBridge.groundObservedAttempt!=='function')return null;
+    attempt=choiceEvidenceBridge.groundObservedAttempt({
+      attempt:attempt,session:current.session,learnerEvent:learnerEvent
+    });
+    if(!attempt)return null;
     var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
     if(!resumeState)return null;
     var sourceContext=current.context;
