@@ -207,6 +207,8 @@ jobs:
         run: node scripts/test-adaptive-learner-trail-view.js
       - name: Test evidence-grounded progress marker semantics
         run: node scripts/test-adaptive-learner-progress-marker.js
+      - name: Test canonical Pass Contract evidence marks
+        run: node scripts/test-adaptive-pass-contract-progress-view.js
       - name: Test read-only learner trail surface
         run: node scripts/test-verb-explorer-learner-trail-surface.js
       - name: Test chronological learner Trail sequence
