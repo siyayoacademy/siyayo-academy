@@ -78,6 +78,11 @@
         <form class="learner-response-form" id="learnerResponseForm" hidden>
           <input id="learnerResponseInput" type="text" autocomplete="off" placeholder="Type your response…" aria-label="Learner response">
           <button type="submit">Submit response</button>
+          <div class="learner-wait-actions" aria-label="Learner-declared WAIT states">
+            <button type="button" data-wait-request="thinking">Need more time</button>
+            <button type="button" data-wait-request="confused">Need clarification</button>
+            <button type="button" data-wait-request="insufficient-context">Context is missing</button>
+          </div>
         </form>
       </div>
     </section>
