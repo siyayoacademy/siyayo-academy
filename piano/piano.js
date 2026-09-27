@@ -696,12 +696,21 @@
       const responseText = learnerResponseInput ? learnerResponseInput.value.trim() : "";
       if (!responseText || !activeQuestionWord) return;
 
+      const learnerEvent = {
+        observed: true,
+        actor: "learner",
+        relevantToWait: true,
+        intent: "answer",
+        type: "learner-response"
+      };
+
       window.dispatchEvent(new CustomEvent("siyayo:learner-action-event", {
         detail: {
           type: "response-submitted",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
           responseText,
+          learnerEvent,
           evaluated: false,
           evidenceProduced: false
         }
@@ -744,8 +753,51 @@
         if (pianinho) pianinho.classList.remove("is-neutral-feedback");
         if (frondosa) frondosa.classList.remove("is-neutral-feedback");
       }, 700);
+
+      window.setTimeout(() => {
+        if (!activeQuestionWord) return;
+
+        if (pianinho) pianinho.classList.add("is-external-evaluation");
+        if (frondosa) frondosa.classList.add("is-external-evaluation");
+
+        semanticSequence.dataset.phase = "external-evaluation";
+        if (semanticPhase) semanticPhase.textContent = "EXTERNAL EVALUATION";
+        if (semanticCue) semanticCue.textContent = "Canonical evaluator requested";
+        if (semanticAnswer) semanticAnswer.textContent = "Awaiting external authority • no local judgement";
+
+        window.dispatchEvent(new CustomEvent("siyayo:external-evaluation-request", {
+          detail: {
+            type: "learner-response-evaluation-request",
+            source: "frondosa-semantic-lab",
+            questionWordId: activeQuestionWord.id,
+            responseText,
+            learnerEvent,
+            semantic: {
+              kind: "question-word",
+              id: activeQuestionWord.id
+            },
+            localEvaluation: false,
+            evidenceProduced: false,
+            green: false
+          }
+        }));
+      }, 760);
     });
   }
+
+  window.addEventListener("siyayo:external-evaluation-complete", event => {
+    const detail = event.detail || {};
+    if (detail.source !== "canonical-adaptive-authority") return;
+
+    if (pianinho) pianinho.classList.remove("is-external-evaluation");
+    if (frondosa) frondosa.classList.remove("is-external-evaluation");
+
+    semanticSequence.dataset.phase = "observed";
+    if (semanticPhase) semanticPhase.textContent = "EXTERNAL RESULT";
+    if (semanticCue) semanticCue.textContent = detail.label || "External evaluation returned";
+    if (semanticAnswer) semanticAnswer.textContent =
+      detail.message || "Result supplied by canonical adaptive authority";
+  });
 
   function setPreviewMode(nextMode) {
     if (!stageViewport) return;
