@@ -32,6 +32,7 @@
   const whiteKeys = keys.filter(key => key.kind === "white");
   const blackKeys = keys.filter(key => key.kind === "black");
 
+  // Perceptual labels only. Canonical QW capability/skill/evidence authority lives outside this stage.
   const questionWords = [
     { id:"what",      en:"What",      es:"Qué",          pt:"O que" },
     { id:"where",     en:"Where",     es:"Dónde",        pt:"Onde" },
@@ -255,7 +256,7 @@
     refreshLabels();
   }
 
-  function activateKey(button, key, source = "piano-flat") {
+  function activateKey(button, key, source = "piano-flat", semantic = null) {
     playInstrument(source, key.frequency);
 
     window.dispatchEvent(new CustomEvent("siyayo:musical-event", {
@@ -266,6 +267,7 @@
         solfege: key.solfege,
         mode,
         word: currentLabel(key),
+        semantic,
         payload: { en:key.en, es:key.es, pt:key.pt }
       }
     }));
@@ -435,7 +437,18 @@
     if (detail.source === "pianinho-magico") {
       trackPianinhoChord(detail.note);
     }
-    const matchingLeaves = leaves.filter(item => item.dataset.note === detail.note);
+    const semanticQuestionWord =
+      detail.semantic &&
+      detail.semantic.kind === "question-word" &&
+      detail.semantic.id
+        ? detail.semantic.id
+        : null;
+
+    const matchingLeaves = semanticQuestionWord
+      ? leaves.filter(item => item.dataset.qw === semanticQuestionWord)
+      : mode === "questions"
+        ? []
+        : leaves.filter(item => item.dataset.note === detail.note);
 
     if (matchingLeaves.length) {
       matchingLeaves.forEach(leaf => {
@@ -469,12 +482,29 @@
   leaves.forEach(leaf => {
     leaf.addEventListener("click", () => {
       const key = keys.find(item => item.id === leaf.dataset.note);
-      if (!key) return;
-      const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
-      if (pianoKey) activateKey(pianoKey, key, "frondosa");
-
       const qw = questionWordForLeaf(leaf);
-      if (qw && mode === "questions") {
+      if (!key || !qw) return;
+
+      const semanticIdentity = {
+        kind: "question-word",
+        id: qw.id,
+        evidence: "none"
+      };
+
+      const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+      if (pianoKey) activateKey(pianoKey, key, "frondosa", semanticIdentity);
+
+      window.dispatchEvent(new CustomEvent("siyayo:semantic-event", {
+        detail: {
+          type: "question-word-opportunity",
+          source: "frondosa",
+          questionWordId: qw.id,
+          mode,
+          evidence: "none"
+        }
+      }));
+
+      if (mode === "questions") {
         window.setTimeout(() => speak(qw.en, "en-US"), 180);
       }
     });
