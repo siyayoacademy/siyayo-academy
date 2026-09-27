@@ -57,6 +57,10 @@
 
       // Navigation remains intentionally independent from adaptive authorities.
       navigate(toExperienceId);
+      var adoptionSurface=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
+      if(adoptionSurface&&typeof adoptionSurface.install==='function'){
+        try{adoptionSurface.install({document:doc});}catch(_error){}
+      }
 
       return Object.freeze({
         status:'NAVIGATED',
