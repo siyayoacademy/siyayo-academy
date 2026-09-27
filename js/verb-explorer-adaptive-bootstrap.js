@@ -128,6 +128,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerPendingTransitionAuthority','js/verb-explorer-pending-transition-authority.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerActiveSessionSource','js/verb-explorer-progression-live-sources.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerProgressionDecisionSink','js/verb-explorer-progression-decision-sink.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface','js/verb-explorer-pedagogical-session-adoption-surface.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerToroidalNextObserver','js/verb-explorer-toroidal-next-observer.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLiveNextWire','js/verb-explorer-live-next-wire.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveComposer','js/verb-explorer-adaptive-composer.js');})
@@ -144,6 +145,8 @@
           if(identitySurface&&typeof identitySurface.install==='function')identitySurface.install({document:document});
           var nextWire=root.SIYAYOVerbExplorerLiveNextWire;
           if(nextWire&&typeof nextWire.install==='function')nextWire.install({document:document});
+          var adoptionSurface=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
+          if(adoptionSurface&&typeof adoptionSurface.install==='function')adoptionSurface.install({document:document});
           var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
           if(trailSurface&&typeof trailSurface.install==='function')trailSurface.install({document:document});
           var dependencyInteraction=root.SIYAYOVerbExplorerDependencyFocusInteraction;
