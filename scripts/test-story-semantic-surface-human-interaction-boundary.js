@@ -23,7 +23,7 @@ function createHarness() {
   const speechCalls = [];
 
   const line = {
-    dataset: { language: "en" },
+    dataset: { language: "en", lineSpeechText: "Ordinary line" },
     addEventListener(type, handler) {
       listeners[type] = handler;
     }
@@ -45,9 +45,12 @@ function createHarness() {
     navigator: {},
     window: {
       addEventListener() {},
+      SpeechSynthesisUtterance: function (text) { this.text = text; },
+      setTimeout,
+      clearTimeout,
       speechSynthesis: {
         cancel() {},
-        speak() {}
+        speak(utterance) { speechCalls.push(utterance.lang); }
       }
     },
     SpeechSynthesisUtterance: function () {},
@@ -58,10 +61,6 @@ function createHarness() {
   sandbox.globalThis = sandbox;
   vm.createContext(sandbox);
   vm.runInContext(appCode, sandbox, { filename: "js/app.js" });
-
-  sandbox.speakLanguageLine = language => {
-    speechCalls.push(language);
-  };
 
   sandbox.attachSliderEvents();
 
@@ -114,7 +113,7 @@ for (const key of ["Enter", " "]) {
 
   assert.deepStrictEqual(
     speechCalls,
-    ["en"],
+    ["en-US"],
     "ordinary language-line click must retain speech behavior"
   );
 }
