@@ -255,6 +255,8 @@ jobs:
         run: node scripts/test-verb-explorer-adaptive-composer.js
       - name: Test grounded Choice Attempt provider
         run: node scripts/test-verb-explorer-choice-attempt-provider.js
+      - name: Test Choice Session footprint and contract progress
+        run: node scripts/test-verb-explorer-choice-session-footprint.js
       - name: Test grounded adaptive state bridge
         run: node scripts/test-verb-explorer-adaptive-state-bridge.js
       - name: Test fail-closed adaptive PSAC boundary
