@@ -200,3 +200,8 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
     0 0 6px rgba(var(--siyayo-gold-rgb),.28),
     0 0 14px rgba(var(--siyayo-gold-rgb),.14);
 }
+
+/* Explicit S2 assessment choice, shown only after an authorized arrival. */
+.continue-assessment-here{display:block;margin:0 0 14px;padding:11px 16px;min-height:44px;border:1px solid rgba(242,216,138,.55);border-radius:10px;background:#07162a;color:var(--siyayo-gold-primary);font:inherit;font-weight:800;cursor:pointer}
+.continue-assessment-here[hidden]{display:none}
+.continue-assessment-here:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
