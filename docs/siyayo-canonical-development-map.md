@@ -1,6 +1,6 @@
 # SIYAYO CANONICAL DEVELOPMENT MAP
 
-Version: 1.0  
+Version: 1.1  
 Status: canonical-development-map  
 Audit baseline: `jaguar/verb-explorer-resume-live-wire@c46310b`  
 Parallel motion/piano baseline: `jaguar/piano-stage-v0.1@cda3edc`
@@ -176,3 +176,9 @@ If one of these is unknown, mark it **OPEN** rather than silently inventing a pa
 Build the **Corpus ↔ Experience Capability Mapping** for the Ten Kinds + Question Words. For each kind, locate Chapter coverage, MASTER scope, corpus source, runtime surface, Experience usage, evidence/skill coverage, visual/dependency representation and responsive state.
 
 The Animated SIYAYO Journey remains visible in every 360° audit as a top-level access/navigation capability while that mapping proceeds.
+
+## Canonical audit artifacts
+
+- `docs/siyayo-corpus-experience-capability-matrix.md` — Ten Kinds + Question Words audit connecting A5, MASTER depth, reusable corpus, Experience/Toro, evidence maturity and the next canonical action.
+
+Current first executable gap discovered by that matrix: **Chapter 01 NOUN lacks the explicit `chapterScope` / `masterScope` metadata contract already present in Chapters 02–10.**
