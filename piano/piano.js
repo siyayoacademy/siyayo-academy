@@ -353,6 +353,7 @@
   let semanticSequenceTimer = null;
   let activeQuestionWord = null;
   let activeWaitArchetype = null;
+  let activeSupportTrace = [];
 
   const waitArchetypes = Object.freeze({
     "thinking": {
@@ -415,6 +416,7 @@
   function resetSemanticSequence() {
     if (!semanticSequence) return;
     activeQuestionWord = null;
+    activeSupportTrace = [];
     clearWaitArchetype();
     semanticSequence.dataset.phase = "idle";
     if (semanticPhase) semanticPhase.textContent = "READY";
@@ -428,6 +430,7 @@
   function runSemanticSequence(qw) {
     if (!semanticSequence || !qw) return;
     activeQuestionWord = qw;
+    activeSupportTrace = [];
     const model = questionWordPromptModels[qw.id] || { gap:"information", prompt:"Which information is missing?" };
 
     if (semanticSequenceTimer) {
@@ -731,12 +734,18 @@
         if (semanticAnswer) semanticAnswer.textContent = "Information gap: " + model.gap;
       }
 
+      activeSupportTrace.push({
+        action,
+        source: "frondosa-semantic-lab"
+      });
+
       window.dispatchEvent(new CustomEvent("siyayo:support-action-event", {
         detail: {
           type: "support-action-used",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
           action,
+          supportTrace: activeSupportTrace.map(item => ({ ...item })),
           evaluated: false,
           evidenceProduced: false
         }
@@ -765,12 +774,15 @@
           questionWordId: activeQuestionWord.id,
           responseText,
           learnerEvent,
+          supportTrace: activeSupportTrace.map(item => ({ ...item })),
+          supportUsed: activeSupportTrace.length > 0,
           evaluated: false,
           evidenceProduced: false
         }
       }));
 
       clearWaitArchetype();
+      semanticSequence.dataset.supportUsed = activeSupportTrace.length > 0 ? "true" : "false";
       semanticSequence.dataset.phase = "observed";
       if (semanticPhase) semanticPhase.textContent = "OBSERVED";
       if (semanticCue) semanticCue.textContent = "Learner response received";
@@ -826,6 +838,12 @@
             questionWordId: activeQuestionWord.id,
             responseText,
             learnerEvent,
+            support: {
+              used: activeSupportTrace.length > 0,
+              actions: activeSupportTrace.map(item => item.action),
+              provenance: activeSupportTrace.map(item => ({ ...item })),
+              canonicalSupportValue: null
+            },
             semantic: {
               kind: "question-word",
               id: activeQuestionWord.id
