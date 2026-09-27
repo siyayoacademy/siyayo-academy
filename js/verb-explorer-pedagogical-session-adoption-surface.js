@@ -30,11 +30,17 @@ function install(options){
     var current=coordinator.snapshot&&coordinator.snapshot();
     var skill=skillSource.getSkill&&skillSource.getSkill();
     var contract=skillSource.getPassContract&&skillSource.getPassContract();
-    if(!pending||pending.status!=='S2_ACTIVATION_PENDING'||pending.activationAuthorized!==false)return null;
-    if(!state||text(state.currentExperienceId)!==pending.toExperience)return null;
-    if(!current||!current.session||!current.session.decision||text(current.session.decision.experienceId)!==pending.fromExperience)return null;
-    if(!contract||!skill||skill!==text(pending.authorization.nextDecision&&pending.authorization.nextDecision.skill))return null;
-    return {pending:pending,session:current.session,contract:contract,language:state.experienceLanguage};
+    if(!state||!current||!current.session||!current.session.decision||!contract||!skill)return null;
+    if(pending&&pending.status==='S2_ACTIVATION_PENDING'&&pending.activationAuthorized===false&&
+      text(state.currentExperienceId)===pending.toExperience&&
+      text(current.session.decision.experienceId)===pending.fromExperience&&
+      skill===text(pending.authorization.nextDecision&&pending.authorization.nextDecision.skill)){
+      return {pending:pending,toExperience:pending.toExperience,session:current.session,contract:contract,language:state.experienceLanguage};
+    }
+    var visited=root.SIYAYOVerbExplorerVisitedSessionAdoptionAuthority;
+    var readiness=visited&&typeof visited.inspect==='function'?visited.inspect():null;
+    if(!readiness||readiness.session!==current.session||skill!==readiness.skill)return null;
+    return {pending:null,toExperience:readiness.toExperience,session:current.session,contract:contract,language:state.experienceLanguage};
   }
   function refresh(){button.hidden=!eligible();return !button.hidden;}
   if(button.__siyayoAssessmentAdoptionInstalled!==true){
@@ -43,20 +49,24 @@ function install(options){
       if(!ready){refresh();return;}
       var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoption;
       if(!adoption||typeof adoption.activate!=='function')return;
+      var learnerEvent=Object.freeze({
+        observed:true,actor:'learner',intent:'continue-assessment',
+        source:'pedagogical-session-adopt',experienceId:ready.toExperience,
+        occurrenceId:ready.pending?ready.pending.occurrenceId:'pedagogical-session-adopt:'+Date.now()
+      });
+      var authority=root.SIYAYOVerbExplorerVisitedSessionAdoptionAuthority;
+      var authorization=ready.pending?ready.pending.authorization:
+        authority&&typeof authority.authorize==='function'?authority.authorize(learnerEvent):null;
+      if(!authorization)return;
       var result=adoption.activate({
-        transitionAuthorization:ready.pending.authorization,
+        transitionAuthorization:authorization,
         previousSession:ready.session,
         passContract:ready.contract,
         language:ready.language,
         document:doc,
-        learnerEvent:Object.freeze({
-          observed:true,actor:'learner',intent:'continue-assessment',
-          source:'pedagogical-session-adopt',
-          experienceId:ready.pending.toExperience,
-          occurrenceId:ready.pending.occurrenceId
-        })
+        learnerEvent:learnerEvent
       });
-      if(result&&result.status==='S2_ACTIVE'){
+      if(result&&result.status==='S2_ACTIVE'&&ready.pending){
         root.SIYAYOVerbExplorerPendingTransitionAuthority.clear(ready.pending.occurrenceId);
       }
       refresh();
