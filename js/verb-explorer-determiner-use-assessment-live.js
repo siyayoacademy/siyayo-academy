@@ -95,6 +95,8 @@ function mount(input){
       feedback.hidden=false;
       var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
+      var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
+      if(adoption&&typeof adoption.install==='function')adoption.install({document:doc});
       return coordinated;
     }
   });
