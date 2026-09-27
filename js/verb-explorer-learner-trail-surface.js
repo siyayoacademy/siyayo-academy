@@ -98,7 +98,17 @@
     var progressHtml=progress?'<small class="learner-trail-contract-progress" aria-label="'+
       escapeHtml(evidenceLabel+': '+progress.completed+' / '+progress.total)+
       '">'+escapeHtml(evidenceLabel+' · ')+
-      progress.satisfied.map(function(done){return done?'●':'○';}).join(' ')+
+      progress.satisfied.map(function(done,index){
+        var requirement=snapshot.context.passContract.requires[index]||{};
+        var labels={
+          en:{choice:'CHOICE',use:'USE',transfer:'TRANSFER'},
+          es:{choice:'ELECCIÓN',use:'USO',transfer:'TRANSFERENCIA'},
+          pt:{choice:'ESCOLHA',use:'USO',transfer:'TRANSFERÊNCIA'}
+        }[language]||{choice:'CHOICE',use:'USE',transfer:'TRANSFER'};
+        var key=requirement.mode==='transfer'?'transfer':
+          requirement.dimension==='choice-function'?'choice':'use';
+        return escapeHtml(labels[key]+' '+(done?'●':'○'));
+      }).join(' · ')+
       ' · '+escapeHtml(progress.completed+'/'+progress.total)+'</small>':'';
     var segmentHtml=sequence.segments.map(function(segment,index){
       var current=index===position.segmentIndex;
