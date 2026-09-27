@@ -571,7 +571,6 @@
 
       if (mode === "questions") {
         runSemanticSequence(qw);
-        window.setTimeout(() => speak(qw.en, "en-US"), 180);
       }
     });
   });
