@@ -52,10 +52,14 @@
     if(text(state.currentExperienceId)!==experienceId)return null;
 
     var evidencePackets=Object.freeze([]);
+    var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+    var experiences=catalog&&typeof catalog.getExperiences==='function'
+      ?catalog.getExperiences():Object.freeze([]);
     var context=Object.freeze({
       skill:skill,
       currentExperience:experienceId,
       passContract:passContract,
+      experiences:experiences,
       evidencePackets:evidencePackets
     });
 
