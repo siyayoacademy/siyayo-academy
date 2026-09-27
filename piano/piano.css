@@ -1584,3 +1584,35 @@ h1 {
     grid-template-columns:1fr;
   }
 }
+
+
+/* =========================================================
+   NEUTRAL FEEDBACK ACKNOWLEDGEMENT v0.1
+   Confirms receipt of learner action without judging it.
+   ========================================================= */
+.pianinho.is-neutral-feedback .pianinho-visual {
+  animation:neutralFeedbackPulse 620ms var(--motion-ease);
+}
+
+.frondosa.is-neutral-feedback .frondosa-visual {
+  animation:neutralFeedbackGlow 620ms var(--motion-ease);
+}
+
+@keyframes neutralFeedbackPulse {
+  0%   { transform:scale(1); }
+  45%  { transform:scale(1.025); }
+  100% { transform:scale(1); }
+}
+
+@keyframes neutralFeedbackGlow {
+  0%   { filter:drop-shadow(0 0 0 rgba(242,216,138,0)); }
+  50%  { filter:drop-shadow(0 0 18px rgba(242,216,138,.32)); }
+  100% { filter:drop-shadow(0 0 0 rgba(242,216,138,0)); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.is-neutral-feedback .pianinho-visual,
+  .frondosa.is-neutral-feedback .frondosa-visual {
+    animation:none;
+  }
+}
