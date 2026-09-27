@@ -94,9 +94,10 @@
       snapshot.session.decision.skill===skill&&progressView&&typeof progressView.project==='function'
       ?progressView.project(snapshot.context&&snapshot.context.passContract,
         snapshot.context&&snapshot.context.evidencePackets,evaluator):null;
+    var evidenceLabel={en:'CONTRACT EVIDENCE',es:'EVIDENCIA DEL CONTRATO',pt:'EVIDÊNCIA DO CONTRATO'}[language]||'CONTRACT EVIDENCE';
     var progressHtml=progress?'<small class="learner-trail-contract-progress" aria-label="'+
-      escapeHtml('Contract evidence: '+progress.completed+' of '+progress.total)+
-      '">'+escapeHtml('CONTRACT EVIDENCE · ')+
+      escapeHtml(evidenceLabel+': '+progress.completed+' / '+progress.total)+
+      '">'+escapeHtml(evidenceLabel+' · ')+
       progress.satisfied.map(function(done){return done?'●':'○';}).join(' ')+
       ' · '+escapeHtml(progress.completed+'/'+progress.total)+'</small>':'';
     var segmentHtml=sequence.segments.map(function(segment,index){
