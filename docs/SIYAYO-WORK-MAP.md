@@ -124,9 +124,9 @@ A missing cross-language path is an integration gap to be resolved, not an inten
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-02
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-02
 
-**Status:** ACTIVE  
+**Status:** HISTORICAL  
 **Recorded:** 2026-09-22  
 **Repository:** `siyayoacademy/siyayo-academy`  
 **Active branch:** `jaguar/verb-explorer-resume-live-wire`  
