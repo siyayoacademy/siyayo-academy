@@ -98,6 +98,13 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-connector-label{fill:#d7f4df;font-size:10px;font-weight:900;letter-spacing:.04em}
 
 
+.determiner-use-probe,.determiner-use-transfer-probe{display:grid;gap:12px;justify-items:center}
+.determiner-use-probe-prompt,.determiner-use-transfer-probe-prompt{margin:0;color:#eef4ff;font-weight:800;font-size:clamp(1rem,2.2vw,1.2rem)}
+.determiner-use-probe-options,.determiner-use-transfer-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.determiner-use-probe-options button,.determiner-use-transfer-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font-weight:900;cursor:pointer}
+.determiner-use-probe-options button:hover,.determiner-use-probe-options button:focus-visible,.determiner-use-transfer-probe-options button:hover,.determiner-use-transfer-probe-options button:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:none}
+#determinerUseAssessmentPanel h3{margin:0 0 12px;color:var(--siyayo-gold-primary);font-size:.84rem;letter-spacing:.08em}
+#determinerUseAssessmentFeedback{margin:12px 0 0;color:#d7f4df;font-weight:800}
 .dependency-head-probe-panel{width:min(760px,100%);margin:0 auto 20px;padding:16px 18px;border:1px solid rgba(242,216,138,.38);border-radius:16px;background:rgba(4,14,28,.62);text-align:center}
 .dependency-head-probe{display:grid;gap:12px;justify-items:center}
 .dependency-head-probe-prompt{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2vw,1.2rem);font-weight:800;text-align:center}
