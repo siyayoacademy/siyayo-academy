@@ -39,6 +39,7 @@
       .then(function(){return ensureGlobal('AdaptiveObservedAttemptEvidenceSource','js/adaptive-observed-attempt-evidence-source.js');})
       .then(function(){return ensureGlobal('AdaptiveContractClosureEvidenceSource','js/adaptive-contract-closure-evidence-source.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailView','js/adaptive-learner-trail-view.js');})
+      .then(function(){return ensureGlobal('AdaptivePassContractProgressView','js/adaptive-pass-contract-progress-view.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailSequence','js/adaptive-learner-trail-sequence.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailPosition','js/adaptive-learner-trail-position.js');})
       .then(function(){return ensureGlobal('AdaptiveLearnerTrailLabel','js/adaptive-learner-trail-label.js');})
