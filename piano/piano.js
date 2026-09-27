@@ -785,6 +785,84 @@
     });
   }
 
+  function clearCanonicalResultResonance() {
+    if (semanticSequence) delete semanticSequence.dataset.canonicalState;
+    ["canonical-wait","canonical-eligible","canonical-resume"].forEach(className => {
+      if (pianinho) pianinho.classList.remove(className);
+      if (frondosa) frondosa.classList.remove(className);
+    });
+  }
+
+  function presentCanonicalResult(detail = {}) {
+    clearCanonicalResultResonance();
+
+    const contractStatus = detail.contractEvaluation && detail.contractEvaluation.status;
+    const recommendation = detail.recommendation || {};
+    const waitClassification = detail.waitClassification || null;
+    const resumeEvaluation = detail.resumeEvaluation || null;
+    const resumeStatus = resumeEvaluation && resumeEvaluation.resumeEligibility
+      ? resumeEvaluation.resumeEligibility.status
+      : null;
+
+    let state = "neutral";
+    let phase = "EXTERNAL RESULT";
+    let cue = detail.label || "Canonical result received";
+    let answer = detail.message || "Presented from external authority";
+
+    if (contractStatus === "WAITING_FOR_EVIDENCE") {
+      state = "waiting";
+      phase = "CANONICAL WAIT";
+      cue = "More grounded learner evidence is required";
+      answer = recommendation.reason || "continue-assessment";
+      if (pianinho) pianinho.classList.add("canonical-wait");
+      if (frondosa) frondosa.classList.add("canonical-wait");
+    } else if (contractStatus === "GREEN_PASS") {
+      state = "eligible";
+      phase = "GREEN ELIGIBLE";
+      cue = "Pass Contract satisfied";
+      answer = recommendation.reason || "Awaiting canonical route authority";
+      if (pianinho) pianinho.classList.add("canonical-eligible");
+      if (frondosa) frondosa.classList.add("canonical-eligible");
+    }
+
+    if (waitClassification && waitClassification.state === "OPPORTUNITY_FOUND_AWAITING_EVENT") {
+      state = "waiting";
+      phase = "CANONICAL WAIT";
+      cue = "Opportunity found • learner movement still awaited";
+      answer = waitClassification.cause || answer;
+      if (pianinho) pianinho.classList.add("canonical-wait");
+      if (frondosa) frondosa.classList.add("canonical-wait");
+    }
+
+    if (resumeStatus === "RESUME_ELIGIBLE") {
+      state = "resume";
+      phase = "RESUME ELIGIBLE";
+      cue = "Learner agency authorizes resume";
+      answer = "Runtime dispatch remains external";
+      if (pianinho) pianinho.classList.add("canonical-resume");
+      if (frondosa) frondosa.classList.add("canonical-resume");
+    }
+
+    if (semanticSequence) {
+      semanticSequence.dataset.phase = "observed";
+      semanticSequence.dataset.canonicalState = state;
+    }
+    if (semanticPhase) semanticPhase.textContent = phase;
+    if (semanticCue) semanticCue.textContent = cue;
+    if (semanticAnswer) semanticAnswer.textContent = answer;
+
+    window.dispatchEvent(new CustomEvent("siyayo:canonical-result-presented", {
+      detail: {
+        source: "piano-stage",
+        questionWordId: activeQuestionWord ? activeQuestionWord.id : null,
+        canonicalState: state,
+        contractStatus: contractStatus || null,
+        waitState: waitClassification ? waitClassification.state || null : null,
+        resumeStatus
+      }
+    }));
+  }
+
   window.addEventListener("siyayo:external-evaluation-complete", event => {
     const detail = event.detail || {};
     if (detail.source !== "canonical-adaptive-authority") return;
@@ -792,11 +870,7 @@
     if (pianinho) pianinho.classList.remove("is-external-evaluation");
     if (frondosa) frondosa.classList.remove("is-external-evaluation");
 
-    semanticSequence.dataset.phase = "observed";
-    if (semanticPhase) semanticPhase.textContent = "EXTERNAL RESULT";
-    if (semanticCue) semanticCue.textContent = detail.label || "External evaluation returned";
-    if (semanticAnswer) semanticAnswer.textContent =
-      detail.message || "Result supplied by canonical adaptive authority";
+    presentCanonicalResult(detail);
   });
 
   function setPreviewMode(nextMode) {
