@@ -31,6 +31,15 @@ function signal(options){
         headProbeRuntime.render();
       }
 
+      var determiner=root.SIYAYOVerbExplorerDeterminerUseAssessmentLive;
+      var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+      var bridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+      var state=bridge&&bridge.getState&&bridge.getState();
+      var experience=state&&catalog&&catalog.getExperience&&catalog.getExperience(state.currentExperienceId);
+      if(determiner&&typeof determiner.mount==='function'&&experience){
+        determiner.mount({document:documentRef,experience:experience,language:state.experienceLanguage});
+      }
+
       var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trailSurface&&typeof trailSurface.refresh==='function'){
         trailSurface.refresh({document:documentRef});
