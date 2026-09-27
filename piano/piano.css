@@ -1474,3 +1474,74 @@ h1 {
 .stage-viewport[data-preview="portrait"] .learner-response-form {
   grid-template-columns:1fr;
 }
+
+
+/* =========================================================
+   WAIT ARCHETYPE STATE v0.1
+   Perceptual only: thinking / confused / insufficient-context.
+   Never evidence, never GREEN.
+   ========================================================= */
+.wait-archetype-indicator {
+  grid-column:1 / -1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  min-height:34px;
+  margin-top:2px;
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.02em;
+}
+
+.wait-archetype-indicator[hidden] {
+  display:none;
+}
+
+.wait-face {
+  font-size:1.15rem;
+  line-height:1;
+}
+
+.pianinho.wait-thinking .pianinho-visual {
+  animation:waitThinking 1200ms var(--motion-ease) infinite alternate;
+}
+
+.pianinho.wait-confused .pianinho-visual {
+  animation:waitConfused 900ms var(--motion-ease) infinite alternate;
+}
+
+.pianinho.wait-context-gap .pianinho-visual {
+  animation:waitContextGap 1500ms var(--motion-ease) infinite alternate;
+}
+
+.frondosa.wait-thinking .frondosa-visual,
+.frondosa.wait-confused .frondosa-visual,
+.frondosa.wait-context-gap .frondosa-visual {
+  filter:drop-shadow(0 0 14px rgba(242,216,138,.22));
+}
+
+@keyframes waitThinking {
+  from { transform:translateY(0) rotate(-.4deg); }
+  to   { transform:translateY(-2px) rotate(.4deg); }
+}
+
+@keyframes waitConfused {
+  from { transform:rotate(-1.4deg) scale(.998); }
+  to   { transform:rotate(1.4deg) scale(1.004); }
+}
+
+@keyframes waitContextGap {
+  0%   { transform:scale(1); }
+  55%  { transform:scale(1.018); }
+  100% { transform:scale(1); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.wait-thinking .pianinho-visual,
+  .pianinho.wait-confused .pianinho-visual,
+  .pianinho.wait-context-gap .pianinho-visual {
+    animation:none;
+  }
+}
