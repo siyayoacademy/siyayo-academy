@@ -18,7 +18,34 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-03
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-04
+
+**Status:** S1 → visited S2 transfer wired; CI and visual verification in progress
+**Recorded:** 2026-09-27
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Implementation HEAD before checkpoint:** `c07ea5a08015166f1d147402658fffb2c447ebd5`
+
+## WHAT EXISTS
+
+- S1 explicit WHICH selection and canonical Choice preserve their existing Session. A visible local determiner-use probe is mounted only for a grounded WHICH Session in S1.
+- Learner-owned NEXT visits S2 without starting an S2 pedagogical Session. A visible transfer probe is grounded in the canonical S2 WHICH question and noun corpus while S1 remains the assessment Session.
+- Only a transfer Attempt from the Session's canonical next Experience, matching the observed learner event, may enter the existing Coordinator and Cycle. The destination footprint remains non-confirmatory; canonical Pass Contract closure records S1 confirmed Green and fills its Trail marker.
+- The S2 visit and transfer submission never dispatch Resume or navigation. Following canonical Green and a confirmed cross-Experience packet, an explicit `continue-assessment` learner gesture may use the existing AdvanceSelector and SessionTransitionBoundary to authorize S2 adoption. NextSessionActivation creates S2 only then; S1 packets do not become S2 Attempts.
+- Browser click and Cycle/adoption contract tests are included in Verb Explorer Adaptive Bootstrap CI.
+
+## WAIT / PERAÍ
+
+- **Visual homologation pending:** inspect the deployed branch in a real browser, including local S1 prompt, S2 transfer prompt, Trail filling and learner-owned adoption.
+- The Piano Stage branch still emits external evaluation/navigation requests but has no verified canonical receiver cable here. Resume dispatch exists; generic advance dispatch is still unconfirmed. Do not claim Piano integration or executed advance.
+- No Evidence from mere visits, support interactions, animation, or GREEN display. No automatic NEXT or S2 Session from a visit.
+
+## NEXT GO
+
+Verify three workflows on this checkpoint, perform a real browser walkthrough for S1 Choice + local probe → free S2 visit → transfer probe → canonical Green Trail → explicit S2 adoption. Only after visual verification classify the path as homologated. Separately design the canonical Piano event receiver while keeping advance fail-closed until an executor is verified.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-03
 
 **Status:** AUDIT COMPLETE — CI GREEN; pedagogical integration OPEN  
 **Recorded:** 2026-09-27  
