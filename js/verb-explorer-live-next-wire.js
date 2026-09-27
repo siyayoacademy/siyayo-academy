@@ -33,13 +33,35 @@
       var navigate=options.goToExperience||(navigation&&navigation.goToExperience);
       if(typeof navigate!=='function')return null;
 
-      // Navigation is intentionally independent from Identity, Session,
-      // convergence, Pass Contract and Green Pass.
+      // Observation is parallel and advisory. It must never gate learner-owned navigation.
+      var fromExperienceId=null;
+      var resumeRuntime=root.SIYAYOVerbExplorerResumeRuntime;
+      if(resumeRuntime&&typeof resumeRuntime.captureContext==='function'){
+        var before=resumeRuntime.captureContext();
+        fromExperienceId=text(before&&before.currentExperienceId);
+      }
+      var learnerEvent=Object.freeze({
+        observed:true,
+        actor:'learner',
+        relevantToProgression:true,
+        intent:'advance',
+        source:'toroidal-next-select',
+        occurrenceId:'toroidal-next-select:'+Date.now(),
+        fromExperienceId:fromExperienceId||null,
+        toExperienceId:toExperienceId
+      });
+      var observe=options.onObserved||root.SIYAYOVerbExplorerToroidalNextObserver;
+      if(typeof observe==='function'){
+        try{observe(learnerEvent);}catch(_error){}
+      }
+
+      // Navigation remains intentionally independent from adaptive authorities.
       navigate(toExperienceId);
 
       return Object.freeze({
         status:'NAVIGATED',
-        toExperienceId:toExperienceId
+        toExperienceId:toExperienceId,
+        learnerEvent:learnerEvent
       });
     }
 
