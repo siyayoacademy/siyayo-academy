@@ -84,6 +84,21 @@
     var confirmed=Number(marker.confirmedExperiences)||0;
     var contexts=confirmed===1?'1 '+copy.context:confirmed+' '+copy.contexts;
     var markerGlyph=glyph(marker.marker);
+    // The three small marks show accepted contract evidence; the large marker
+    // remains under canonical longitudinal Green Pass closure authority.
+    var progressView=options.progressView||root.AdaptivePassContractProgressView;
+    var coordinator=options.coordinator||root.SIYAYOVerbExplorerAdaptiveCoordinator;
+    var evaluator=options.contractEvaluator||root.GreenPassProfile;
+    var snapshot=coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
+    var progress=snapshot&&snapshot.session&&snapshot.session.decision&&
+      snapshot.session.decision.skill===skill&&progressView&&typeof progressView.project==='function'
+      ?progressView.project(snapshot.context&&snapshot.context.passContract,
+        snapshot.context&&snapshot.context.evidencePackets,evaluator):null;
+    var progressHtml=progress?'<small class="learner-trail-contract-progress" aria-label="'+
+      escapeHtml('Contract evidence: '+progress.completed+' of '+progress.total)+
+      '">'+escapeHtml('CONTRACT EVIDENCE · ')+
+      progress.satisfied.map(function(done){return done?'●':'○';}).join(' ')+
+      ' · '+escapeHtml(progress.completed+'/'+progress.total)+'</small>':'';
     var segmentHtml=sequence.segments.map(function(segment,index){
       var current=index===position.segmentIndex;
       return '<span class="learner-trail-segment" data-state="'+escapeHtml(segment.state)+'"'+
@@ -109,7 +124,7 @@
         '<span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
         '<strong>'+escapeHtml(label.form)+'</strong>'+
         '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
-        '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
+        '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+progressHtml+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
       '</div>';
 
