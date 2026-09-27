@@ -53,9 +53,19 @@
     var attemptExperience=text(attempt&&attempt.context&&attempt.context.experienceId);
     var eventExperience=text(learnerEvent.experienceId);
     var packetExperience=text(packet&&packet.context&&packet.context.experienceId);
-    if(attemptExperience&&attemptExperience!==experienceId)return null;
-    if(eventExperience&&eventExperience!==experienceId)return null;
-    if(packetExperience&&packetExperience!==experienceId)return null;
+    var transfer=attempt.mode==='transfer'&&packet.mode==='transfer'&&
+      text(learnerEvent.source)==='determiner-use-transfer-probe-select'&&
+      dimension==='determiner-use'&&
+      text(learnerEvent.fromExperienceId)===experienceId&&
+      text(attempt&&attempt.context&&attempt.context.fromExperienceId)===experienceId&&
+      text(packet&&packet.context&&packet.context.fromExperienceId)===experienceId&&
+      attemptExperience&&attemptExperience!==experienceId&&
+      attemptExperience===eventExperience&&attemptExperience===packetExperience;
+    if(!transfer){
+      if(attemptExperience&&attemptExperience!==experienceId)return null;
+      if(eventExperience&&eventExperience!==experienceId)return null;
+      if(packetExperience&&packetExperience!==experienceId)return null;
+    }
 
     if(isDuplicate(profile,skill,occurrenceId))return profile;
 
@@ -71,7 +81,8 @@
       language:text(packet&&packet.context&&packet.context.language)||text(sourceContext.language)||'en',
       chapter:text(sourceContext.chapter)||'question-words',
       confirmed:false,
-      experienceId:experienceId,
+      experienceId:transfer?attemptExperience:experienceId,
+      fromExperienceId:transfer?experienceId:null,
       occurrenceId:occurrenceId,
       dimension:dimension,
       result:result,
