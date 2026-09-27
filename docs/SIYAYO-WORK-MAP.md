@@ -20,10 +20,11 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 # ACTIVE CHECKPOINT — JAGUAR-LIVE-04
 
-**Status:** S1 → visited S2 transfer wired; CI and visual verification in progress
+**Status:** S1 → visited S2 transfer wired; three CI workflows GREEN; visual verification pending
 **Recorded:** 2026-09-27
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
-**Implementation HEAD before checkpoint:** `c07ea5a08015166f1d147402658fffb2c447ebd5`
+**Implementation HEAD before checkpoint:** `c07ea5a08015166f1d147402658fffb2c447ebd5`  
+**CI at implementation HEAD:** GREEN — Verb Explorer Adaptive Bootstrap, Resume Runtime Dispatch, Corpus Integrity.
 
 ## WHAT EXISTS
 
@@ -41,7 +42,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ## NEXT GO
 
-Verify three workflows on this checkpoint, perform a real browser walkthrough for S1 Choice + local probe → free S2 visit → transfer probe → canonical Green Trail → explicit S2 adoption. Only after visual verification classify the path as homologated. Separately design the canonical Piano event receiver while keeping advance fail-closed until an executor is verified.
+Perform a real browser walkthrough for S1 Choice + local probe → free S2 visit → transfer probe → canonical Green Trail → explicit S2 adoption. Only after visual verification classify the path as homologated. Separately design the canonical Piano event receiver while keeping advance fail-closed until an executor is verified.
 
 ---
 
