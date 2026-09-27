@@ -22,7 +22,7 @@ const observedSource=require('../js/adaptive-observed-attempt-evidence-source.js
 const closureSource=require('../js/adaptive-contract-closure-evidence-source.js');
 const shopping=corpus.items.find(item=>item.id==='shopping-for-dinner');
 const preparing=corpus.items.find(item=>item.id==='preparing-dinner');
-const catalog={getExperience:id=>corpus.items.find(item=>item.id===id)||null,getNouns:()=>nouns};
+const catalog={getExperience:id=>corpus.items.find(item=>item.id===id)||null,getExperiences:()=>corpus.items,getNouns:()=>nouns};
 const spec=transferSource.resolve(which,localSource.resolve(which,shopping,'en'),preparing,nouns,'en');
 assert.ok(spec);
 const env=vm.createContext({
