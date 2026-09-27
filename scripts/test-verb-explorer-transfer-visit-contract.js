@@ -104,4 +104,29 @@ assert.equal(authorization.status,'transition-authorized');
 assert.equal(authorization.fromExperience,'shopping-for-dinner');
 assert.equal(authorization.toExperience,'preparing-dinner');
 assert.equal(coordinator.snapshot().session,session,'authorization alone never activates S2');
+for(const path of ['js/verb-explorer-next-session-activation.js','js/verb-explorer-pedagogical-session-adoption.js']){
+  vm.runInContext(fs.readFileSync(path,'utf8'),env,{filename:path});
+}
+env.SIYAYOVerbExplorerNextSessionSource={begin:input=>{
+  assert.equal(input.previousSession,session);
+  assert.equal(input.transitionAuthorization,authorization);
+  return {decision:{skill:'which.use.determiner',experienceId:'preparing-dinner'},trace:[]};
+}};
+env.SIYAYOVerbExplorerAdaptiveProfileSource={getProfile:()=>output.cycleResult.greenProfile};
+env.SIYAYOVerbExplorerAdaptiveCoordinatorConfig={configure:input=>coordinator.configure({
+  profile:input.profile,session:input.session,context:input.context,
+  getState:input.getState,getResumeState:input.getResumeState
+})};
+assert.equal(coordinator.snapshot().session,session,'visiting and Green must keep S1 assessment authority');
+const adopted=env.SIYAYOVerbExplorerPedagogicalSessionAdoption.activate({
+  transitionAuthorization:authorization,previousSession:session,
+  passContract:which.passContract,language:'en',
+  learnerEvent:{observed:true,actor:'learner',intent:'continue-assessment',
+    source:'pedagogical-session-adopt',experienceId:'preparing-dinner',occurrenceId:'adopt:1'}
+});
+assert.equal(adopted.status,'S2_ACTIVE');
+assert.equal(coordinator.snapshot().session,adopted.session);
+assert.equal(coordinator.snapshot().session.decision.experienceId,'preparing-dinner');
+assert.equal(coordinator.snapshot().context.evidencePackets.length,0,'S1 operational packets do not become S2 Attempts');
+assert.equal(dispatches,0,'adoption never navigates or dispatches Resume');
 console.log('Transfer visit: PASS — S2 observed response closes S1 canonical contract; visit, spoofed origin and duplicate cannot replace Session or navigate.');
