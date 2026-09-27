@@ -184,19 +184,30 @@
     var sessionExperience=current.session.decision.experienceId||null;
     var eventExperience=learnerEvent.experienceId||null;
     var attemptExperience=attempt.context&&attempt.context.experienceId||null;
-    if(sessionExperience&&eventExperience&&String(sessionExperience)!==String(eventExperience))return null;
-    if(sessionExperience&&attemptExperience&&String(sessionExperience)!==String(attemptExperience))return null;
+    var state=typeof current.getState==='function'
+      ? current.getState(learnerEvent.choice||null,target||null)
+      : null;
+    if(!state||!state.currentExperienceId||String(state.currentExperienceId)!==String(eventExperience))return null;
     if(eventExperience&&attemptExperience&&String(eventExperience)!==String(attemptExperience))return null;
+    var crossExperience=sessionExperience&&String(sessionExperience)!==String(eventExperience);
+    if(crossExperience){
+      var transferAuthority=root.SIYAYOVerbExplorerTransferAttemptAuthority;
+      if(!transferAuthority||typeof transferAuthority.accepts!=='function'||!transferAuthority.accepts({
+        session:current.session,attempt:attempt,learnerEvent:learnerEvent,state:state,
+        catalog:root.SIYAYOVerbExplorerExperienceNavigation
+      }))return null;
+    }else if(sessionExperience&&attemptExperience&&String(sessionExperience)!==String(attemptExperience))return null;
+    var priorPackets=current.context&&current.context.evidencePackets;
+    if(Array.isArray(priorPackets)&&priorPackets.some(function(packet){
+      return packet&&packet.context&&String(packet.context.occurrenceId)===String(learnerEvent.occurrenceId);
+    }))return null;
 
     var cycle=root.AdaptiveLearningCycle;
     if(!cycle||typeof cycle.submit!=='function')return null;
 
-    var state=typeof current.getState==='function'
-      ? current.getState(learnerEvent.choice||null,target||null)
-      : null;
-    var resumeState=typeof current.getResumeState==='function'
+    var resumeState=crossExperience?null:(typeof current.getResumeState==='function'
       ? current.getResumeState(state,target||null)
-      : state;
+      : state);
     var sourceContext=current.context;
     var context=Object.assign({},sourceContext||{}, {
       learnerEvent:learnerEvent,
@@ -225,8 +236,10 @@
     }
     if(result.nextContext)current.context=result.nextContext;
 
+    // A transfer response in the freely visited destination must never resume
+    // the origin Experience or trigger navigation as a side effect.
     var dispatch=root.SIYAYOVerbExplorerCycleResumeDispatch;
-    var dispatchResult=dispatch&&typeof dispatch.run==='function'?dispatch.run(result):null;
+    var dispatchResult=!crossExperience&&dispatch&&typeof dispatch.run==='function'?dispatch.run(result):null;
     return {cycleResult:result,convergenceResult:convergenceResult,dispatchResult:dispatchResult};
   }
 
