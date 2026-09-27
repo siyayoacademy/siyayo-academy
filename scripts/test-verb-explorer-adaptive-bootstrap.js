@@ -74,6 +74,13 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveStateBridge.getState, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveStateBridge.getResumeState, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveCoordinator.submitChoice, 'function');
+    const evaluatorIndex=appended.indexOf('js/choice-evidence-evaluator.js');
+    const evidenceBridgeIndex=appended.indexOf('js/verb-explorer-choice-evidence-bridge.js');
+    const packetBridgeIndex=appended.indexOf('js/verb-explorer-choice-evidence-packet-bridge.js');
+    assert(evaluatorIndex>=0&&evidenceBridgeIndex>evaluatorIndex&&packetBridgeIndex>evidenceBridgeIndex,
+      'live Choice evaluator must load before the evidence bridges');
+    assert.strictEqual(typeof sandbox.SIYAYOChoiceEvidenceEvaluator.evaluate,'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceEvidencePacketBridge.groundObservedAttempt,'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceAdaptiveWire.install, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerChoiceSupportObserver.install, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOChoiceSupportSensor.observe, 'function');
