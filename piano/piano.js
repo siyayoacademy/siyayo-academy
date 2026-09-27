@@ -21,6 +21,7 @@
   const waitArchetypeIndicator = document.getElementById("waitArchetypeIndicator");
   const waitFace = document.getElementById("waitFace");
   const waitCopy = document.getElementById("waitCopy");
+  const learnerWaitButtons = [...document.querySelectorAll("[data-wait-request]")];
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -659,6 +660,34 @@
 
   modeButtons.forEach(button => {
     button.addEventListener("click", refreshFrondosaLabels);
+  });
+
+  learnerWaitButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      if (!activeQuestionWord) return;
+
+      const requestedState = button.dataset.waitRequest;
+      setWaitArchetype(requestedState, "learner-declared");
+
+      semanticSequence.dataset.phase = "wait";
+      if (semanticPhase) semanticPhase.textContent = "WAIT";
+      if (semanticCue) semanticCue.textContent =
+        requestedState === "thinking" ? "Learner requested more time" :
+        requestedState === "confused" ? "Learner requested clarification" :
+        "Learner reports missing context";
+      if (semanticAnswer) semanticAnswer.textContent = "Explicit learner action • not evaluated • no Evidence";
+
+      window.dispatchEvent(new CustomEvent("siyayo:learner-action-event", {
+        detail: {
+          type: "wait-requested",
+          source: "frondosa-semantic-lab",
+          questionWordId: activeQuestionWord.id,
+          waitState: requestedState,
+          evaluated: false,
+          evidenceProduced: false
+        }
+      }));
+    });
   });
 
   if (learnerResponseForm) {
