@@ -37,10 +37,14 @@ function compose(input){
   if(typeof skill!=='string'||!skill.trim()||!passContract)return false;
   if(!state||typeof state.currentExperienceId!=='string'||!state.currentExperienceId.trim())return false;
 
+  var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+  var canonicalExperiences=catalog&&typeof catalog.getExperiences==='function'
+    ?catalog.getExperiences():null;
   var context=Object.freeze({
     skill:skill,
     currentExperience:state.currentExperienceId,
     passContract:passContract,
+    experiences:Array.isArray(canonicalExperiences)?canonicalExperiences:Object.freeze([]),
     evidencePackets:Object.freeze([])
   });
 
