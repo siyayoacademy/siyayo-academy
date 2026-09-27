@@ -1689,3 +1689,47 @@ h1 {
 .frondosa.canonical-eligible .frondosa-visual {
   filter:drop-shadow(0 0 22px rgba(72,150,91,.26));
 }
+
+
+/* =========================================================
+   MINIMUM SUPPORT OPPORTUNITY v0.1
+   Contextual help appears only after learner-declared need.
+   These actions are presentation support, never Evidence.
+   ========================================================= */
+.micro-support-actions {
+  grid-column:1 / -1;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+  margin-top:2px;
+}
+
+.micro-support-actions[hidden] {
+  display:none;
+}
+
+.micro-support-actions button {
+  min-height:34px;
+  padding:0 10px;
+  border:1px solid rgba(104,150,235,.30);
+  border-radius:999px;
+  background:rgba(20,42,78,.66);
+  color:#dce8ff;
+  font-family:var(--font-body);
+  font-size:.68rem;
+  font-weight:600;
+}
+
+.micro-support-actions button:hover,
+.micro-support-actions button:focus-visible {
+  border-color:rgba(134,174,246,.64);
+  color:#fff;
+}
+
+@media (max-width:600px) {
+  .micro-support-actions {
+    display:grid;
+    grid-template-columns:1fr;
+  }
+}
