@@ -16,6 +16,8 @@
   const semanticPhase = document.getElementById("semanticPhase");
   const semanticCue = document.getElementById("semanticCue");
   const semanticAnswer = document.getElementById("semanticAnswer");
+  const learnerResponseForm = document.getElementById("learnerResponseForm");
+  const learnerResponseInput = document.getElementById("learnerResponseInput");
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -343,17 +345,22 @@
   });
 
   let semanticSequenceTimer = null;
+  let activeQuestionWord = null;
 
   function resetSemanticSequence() {
     if (!semanticSequence) return;
+    activeQuestionWord = null;
     semanticSequence.dataset.phase = "idle";
     if (semanticPhase) semanticPhase.textContent = "READY";
     if (semanticCue) semanticCue.textContent = "Touch a Question Word leaf";
     if (semanticAnswer) semanticAnswer.textContent = "Question → WAIT → learner response";
+    if (learnerResponseForm) learnerResponseForm.hidden = true;
+    if (learnerResponseInput) learnerResponseInput.value = "";
   }
 
   function runSemanticSequence(qw) {
     if (!semanticSequence || !qw) return;
+    activeQuestionWord = qw;
     const model = questionWordPromptModels[qw.id] || { gap:"information", prompt:"Which information is missing?" };
 
     if (semanticSequenceTimer) {
@@ -382,6 +389,8 @@
         if (semanticPhase) semanticPhase.textContent = "RESPONSE";
         if (semanticCue) semanticCue.textContent = qw.en + " remains the active opportunity";
         if (semanticAnswer) semanticAnswer.textContent = "Awaiting an explicit learner response";
+        if (learnerResponseForm) learnerResponseForm.hidden = false;
+        if (learnerResponseInput) learnerResponseInput.focus();
       }, 850);
     }, 700);
   }
@@ -587,6 +596,31 @@
   modeButtons.forEach(button => {
     button.addEventListener("click", refreshFrondosaLabels);
   });
+
+  if (learnerResponseForm) {
+    learnerResponseForm.addEventListener("submit", event => {
+      event.preventDefault();
+      const responseText = learnerResponseInput ? learnerResponseInput.value.trim() : "";
+      if (!responseText || !activeQuestionWord) return;
+
+      window.dispatchEvent(new CustomEvent("siyayo:learner-action-event", {
+        detail: {
+          type: "response-submitted",
+          source: "frondosa-semantic-lab",
+          questionWordId: activeQuestionWord.id,
+          responseText,
+          evaluated: false,
+          evidenceProduced: false
+        }
+      }));
+
+      semanticSequence.dataset.phase = "observed";
+      if (semanticPhase) semanticPhase.textContent = "OBSERVED";
+      if (semanticCue) semanticCue.textContent = "Learner response received";
+      if (semanticAnswer) semanticAnswer.textContent = "Not evaluated yet • no GREEN • no Evidence";
+      learnerResponseForm.hidden = true;
+    });
+  }
 
   function setPreviewMode(nextMode) {
     if (!stageViewport) return;
