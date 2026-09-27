@@ -22,6 +22,8 @@
   const waitFace = document.getElementById("waitFace");
   const waitCopy = document.getElementById("waitCopy");
   const learnerWaitButtons = [...document.querySelectorAll("[data-wait-request]")];
+  const microSupportActions = document.getElementById("microSupportActions");
+  const microSupportButtons = [...document.querySelectorAll("[data-support-action]")];
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -420,6 +422,7 @@
     if (semanticAnswer) semanticAnswer.textContent = "Question → WAIT → learner response";
     if (learnerResponseForm) learnerResponseForm.hidden = true;
     if (learnerResponseInput) learnerResponseInput.value = "";
+    if (microSupportActions) microSupportActions.hidden = true;
   }
 
   function runSemanticSequence(qw) {
@@ -677,12 +680,63 @@
         "Learner reports missing context";
       if (semanticAnswer) semanticAnswer.textContent = "Explicit learner action • not evaluated • no Evidence";
 
+      if (microSupportActions) {
+        microSupportActions.hidden = requestedState === "thinking";
+      }
+
+      window.dispatchEvent(new CustomEvent("siyayo:support-opportunity-event", {
+        detail: {
+          type: "support-opportunity",
+          source: "frondosa-semantic-lab",
+          questionWordId: activeQuestionWord.id,
+          reason: requestedState,
+          actions: requestedState === "thinking"
+            ? []
+            : ["repeat-question","hear-qw","show-gap"],
+          evaluated: false,
+          evidenceProduced: false
+        }
+      }));
+
       window.dispatchEvent(new CustomEvent("siyayo:learner-action-event", {
         detail: {
           type: "wait-requested",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
           waitState: requestedState,
+          evaluated: false,
+          evidenceProduced: false
+        }
+      }));
+    });
+  });
+
+  microSupportButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      if (!activeQuestionWord) return;
+
+      const action = button.dataset.supportAction;
+      const model = questionWordPromptModels[activeQuestionWord.id] || {
+        gap: "information",
+        prompt: "Which information is missing?"
+      };
+
+      if (action === "repeat-question") {
+        speak(activeQuestionWord.en + ". " + model.prompt, "en-US");
+        if (semanticCue) semanticCue.textContent = activeQuestionWord.en.toUpperCase() + " · " + model.prompt;
+      } else if (action === "hear-qw") {
+        speak(activeQuestionWord.en, "en-US");
+        if (semanticCue) semanticCue.textContent = activeQuestionWord.en.toUpperCase();
+      } else if (action === "show-gap") {
+        if (semanticAnswer) semanticAnswer.textContent = "Information gap: " + model.gap;
+      }
+
+      window.dispatchEvent(new CustomEvent("siyayo:support-action-event", {
+        detail: {
+          type: "support-action-used",
+          source: "frondosa-semantic-lab",
+          questionWordId: activeQuestionWord.id,
+          action,
           evaluated: false,
           evidenceProduced: false
         }
