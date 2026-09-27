@@ -1651,3 +1651,41 @@ h1 {
     animation:none;
   }
 }
+
+
+/* =========================================================
+   CANONICAL RESULT RESONANCE v0.1
+   Pure presentation of externally supplied adaptive status.
+   No local evaluation or routing authority.
+   ========================================================= */
+.semantic-sequence[data-canonical-state="waiting"] {
+  box-shadow:inset 0 0 30px rgba(215,179,90,.16);
+}
+
+.semantic-sequence[data-canonical-state="eligible"] {
+  box-shadow:inset 0 0 30px rgba(72,150,91,.18);
+}
+
+.semantic-sequence[data-canonical-state="resume"] {
+  box-shadow:inset 0 0 30px rgba(88,128,205,.18);
+}
+
+.semantic-sequence[data-canonical-state="neutral"] {
+  box-shadow:inset 0 0 24px rgba(160,160,160,.10);
+}
+
+.pianinho.canonical-wait .pianinho-visual {
+  filter:drop-shadow(0 0 18px rgba(215,179,90,.28));
+}
+
+.pianinho.canonical-eligible .pianinho-visual {
+  filter:drop-shadow(0 0 20px rgba(72,150,91,.30));
+}
+
+.frondosa.canonical-wait .frondosa-visual {
+  filter:drop-shadow(0 0 18px rgba(215,179,90,.22));
+}
+
+.frondosa.canonical-eligible .frondosa-visual {
+  filter:drop-shadow(0 0 22px rgba(72,150,91,.26));
+}
