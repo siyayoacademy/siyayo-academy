@@ -75,7 +75,7 @@ sandbox.globalThis = sandbox;
 sandbox.SIYAYOVerbExplorerTransitionRuntime = Object.freeze({
   execute(input) {
     transitionCalls += 1;
-    assert.strictEqual(input, authorization);
+    throw new Error('S2 adoption must not navigate');
     liveState = Object.freeze({
       currentExperienceId: 'preparing-dinner',
       experienceQuestion: 0,
@@ -136,6 +136,14 @@ const Activation = sandbox.SIYAYOVerbExplorerNextSessionActivation;
 assert.ok(Activation);
 assert.equal(typeof Activation.activate, 'function');
 
+assert.equal(Activation.activate({
+  transitionAuthorization: authorization,
+  previousSession: s1,
+  passContract
+}), null, 'S2 cannot activate while learner is still in S1');
+assert.equal(nextSessionCalls, 0);
+liveState = Object.freeze({ currentExperienceId: 'preparing-dinner' }); // learner-owned NEXT already ran
+
 const result = Activation.activate({
   transitionAuthorization: authorization,
   previousSession: s1,
@@ -156,7 +164,7 @@ assert.equal(result.context.currentExperience, 'preparing-dinner');
 assert.equal(result.context.skill, 'which.use.determiner');
 
 assert.equal(nextSessionCalls, 1);
-assert.equal(transitionCalls, 1);
+assert.equal(transitionCalls, 0);
 assert.equal(configureCalls, 1);
 assert.ok(configured);
 
@@ -196,5 +204,5 @@ assert.equal(
 );
 
 console.log(
-  'Verb Explorer next Session activation: PASS — S2 is born from transition authority, live state moves to the new Experience, Coordinator receives a fresh contract context, priorEvidence stays informational, and S1 operational packets do not leak.'
+  'Verb Explorer next Session activation: PASS — S2 is born from transition authority, learner-owned navigation has already reached the new Experience, Coordinator receives a fresh contract context, priorEvidence stays informational, and S1 operational packets do not leak.'
 );
