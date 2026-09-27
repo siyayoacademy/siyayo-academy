@@ -12,6 +12,10 @@
   const pianinhoSequenceStatus = document.getElementById("pianinhoSequenceStatus");
   const stageViewport = document.getElementById("stageViewport");
   const previewButtons = [...document.querySelectorAll(".preview-button")];
+  const semanticSequence = document.getElementById("semanticSequence");
+  const semanticPhase = document.getElementById("semanticPhase");
+  const semanticCue = document.getElementById("semanticCue");
+  const semanticAnswer = document.getElementById("semanticAnswer");
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -321,6 +325,62 @@
   const frondosa = document.getElementById("frondosa");
   const leaves = [...document.querySelectorAll(".leaf")];
 
+  const questionWordPromptModels = Object.freeze({
+    "what":      { gap:"thing / information", prompt:"What information is missing?" },
+    "where":     { gap:"place", prompt:"Which place is missing?" },
+    "when":      { gap:"time", prompt:"Which time is missing?" },
+    "who":       { gap:"person", prompt:"Which person is missing?" },
+    "which":     { gap:"delimited choice", prompt:"Which option must be chosen?" },
+    "why":       { gap:"reason", prompt:"Which reason is missing?" },
+    "how":       { gap:"manner / method", prompt:"Which manner or method is missing?" },
+    "how-much":  { gap:"amount / price", prompt:"Which amount or price is missing?" },
+    "how-many":  { gap:"countable quantity", prompt:"Which countable quantity is missing?" },
+    "whose":     { gap:"possession", prompt:"Whose possession is missing?" },
+    "whom":      { gap:"object-person", prompt:"Which object-person relation is missing?" },
+    "how-long":  { gap:"duration / length", prompt:"Which duration or length is missing?" },
+    "how-far":   { gap:"distance", prompt:"Which distance is missing?" },
+    "how-often": { gap:"frequency", prompt:"Which frequency is missing?" }
+  });
+
+  let semanticSequenceTimer = null;
+
+  function resetSemanticSequence() {
+    if (!semanticSequence) return;
+    semanticSequence.dataset.phase = "idle";
+    if (semanticPhase) semanticPhase.textContent = "READY";
+    if (semanticCue) semanticCue.textContent = "Touch a Question Word leaf";
+    if (semanticAnswer) semanticAnswer.textContent = "Question → WAIT → learner response";
+  }
+
+  function runSemanticSequence(qw) {
+    if (!semanticSequence || !qw) return;
+    const model = questionWordPromptModels[qw.id] || { gap:"information", prompt:"Which information is missing?" };
+
+    if (semanticSequenceTimer) {
+      window.clearTimeout(semanticSequenceTimer);
+      semanticSequenceTimer = null;
+    }
+
+    semanticSequence.dataset.phase = "question";
+    if (semanticPhase) semanticPhase.textContent = "QUESTION";
+    if (semanticCue) semanticCue.textContent = qw.en.toUpperCase() + " · " + model.prompt;
+    if (semanticAnswer) semanticAnswer.textContent = "Information gap: " + model.gap;
+
+    semanticSequenceTimer = window.setTimeout(() => {
+      semanticSequence.dataset.phase = "wait";
+      if (semanticPhase) semanticPhase.textContent = "WAIT";
+      if (semanticCue) semanticCue.textContent = "Learner action is still required";
+      if (semanticAnswer) semanticAnswer.textContent = "No evidence yet";
+
+      semanticSequenceTimer = window.setTimeout(() => {
+        semanticSequence.dataset.phase = "response";
+        if (semanticPhase) semanticPhase.textContent = "RESPONSE";
+        if (semanticCue) semanticCue.textContent = qw.en + " remains the active opportunity";
+        if (semanticAnswer) semanticAnswer.textContent = "Awaiting an explicit learner response";
+      }, 850);
+    }, 700);
+  }
+
   function questionWordForLeaf(leaf) {
     return questionWords.find(item => item.id === leaf.dataset.qw);
   }
@@ -505,6 +565,7 @@
       }));
 
       if (mode === "questions") {
+        runSemanticSequence(qw);
         window.setTimeout(() => speak(qw.en, "en-US"), 180);
       }
     });
@@ -545,6 +606,7 @@
     }
   } catch (error) {}
 
+  resetSemanticSequence();
   updatePianinhoSequenceStatus();
   refreshLabels();
   refreshFrondosaLabels();
