@@ -27,6 +27,7 @@
   const canonicalNavigationOpportunity = document.getElementById("canonicalNavigationOpportunity");
   const canonicalNavigationCopy = document.getElementById("canonicalNavigationCopy");
   const canonicalNavigationButton = document.getElementById("canonicalNavigationButton");
+  const semanticCadenceButton = document.getElementById("semanticCadenceButton");
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -220,6 +221,134 @@
     playPianinhoHigh(frequency, when + 0.04);
   }
 
+  const semanticCadenceExample = Object.freeze({
+    id: "which-cheese-should-we-choose",
+    language: "en",
+    locale: "en-US",
+    evidence: "none",
+    cells: [
+      { note:"C4", speech:"Which" },
+      { note:"E4", speech:"cheese" },
+      { note:"G4", speech:"should we" },
+      { note:"C5", speech:"choose?" }
+    ]
+  });
+
+  let semanticCadenceRunning = false;
+
+  function pulseCadenceActors(noteId) {
+    const pianoKey = keyboard.querySelector('[data-note="' + noteId + '"]');
+    const avatarZone = pianinhoHotspots.find(item => item.dataset.note === noteId);
+
+    if (pianoKey) {
+      pianoKey.classList.remove("is-cadence-pulse");
+      void pianoKey.offsetWidth;
+      pianoKey.classList.add("is-cadence-pulse");
+      window.setTimeout(() => pianoKey.classList.remove("is-cadence-pulse"), 520);
+    }
+
+    if (avatarZone) {
+      avatarZone.classList.remove("is-cadence-pulse");
+      void avatarZone.offsetWidth;
+      avatarZone.classList.add("is-cadence-pulse");
+      window.setTimeout(() => avatarZone.classList.remove("is-cadence-pulse"), 520);
+    }
+
+    if (frondosa) {
+      frondosa.classList.remove("is-semantic-cadence");
+      void frondosa.offsetWidth;
+      frondosa.classList.add("is-semantic-cadence");
+      window.setTimeout(() => frondosa.classList.remove("is-semantic-cadence"), 540);
+    }
+  }
+
+  function runSemanticCadence(definition = semanticCadenceExample) {
+    if (semanticCadenceRunning || !definition || !Array.isArray(definition.cells)) return;
+    semanticCadenceRunning = true;
+    if (semanticCadenceButton) semanticCadenceButton.disabled = true;
+
+    let index = 0;
+    const waitMs = 220;
+
+    function finish() {
+      semanticCadenceRunning = false;
+      if (semanticCadenceButton) semanticCadenceButton.disabled = false;
+      if (noteStatus) noteStatus.textContent = "DÓ → MI → SOL → DÓ↑";
+      if (wordStatus) wordStatus.textContent = "Which cheese should we choose?";
+
+      window.dispatchEvent(new CustomEvent("siyayo:semantic-cadence-complete", {
+        detail: {
+          type: "semantic-musical-cadence-complete",
+          source: "trio-actors",
+          cadenceId: definition.id,
+          language: definition.language,
+          cells: definition.cells.map(cell => ({ ...cell })),
+          evaluated: false,
+          evidenceProduced: false
+        }
+      }));
+    }
+
+    function nextCell() {
+      if (index >= definition.cells.length) {
+        finish();
+        return;
+      }
+
+      const cell = definition.cells[index];
+      const key = keys.find(item => item.id === cell.note);
+      if (!key) {
+        index += 1;
+        window.setTimeout(nextCell, waitMs);
+        return;
+      }
+
+      // Piano Plano = grounded voice; Pianinho = octave-bright companion.
+      playPianoLow(key.frequency);
+      playPianinhoHigh(key.frequency, 0.035);
+      pulseCadenceActors(key.id);
+
+      if (noteStatus) noteStatus.textContent = key.solfege + " · " + key.id;
+      if (wordStatus) wordStatus.textContent = cell.speech;
+
+      window.dispatchEvent(new CustomEvent("siyayo:semantic-cadence-cell", {
+        detail: {
+          type: "semantic-musical-cadence-cell",
+          source: "trio-actors",
+          cadenceId: definition.id,
+          index,
+          note: key.id,
+          speech: cell.speech,
+          language: definition.language,
+          evaluated: false,
+          evidenceProduced: false
+        }
+      }));
+
+      if (!("speechSynthesis" in window)) {
+        index += 1;
+        window.setTimeout(nextCell, 520 + waitMs);
+        return;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(cell.speech);
+      utterance.lang = definition.locale || "en-US";
+      utterance.rate = 0.84;
+      utterance.onend = () => {
+        index += 1;
+        window.setTimeout(nextCell, waitMs);
+      };
+      utterance.onerror = () => {
+        index += 1;
+        window.setTimeout(nextCell, waitMs);
+      };
+      window.speechSynthesis.speak(utterance);
+    }
+
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    nextCell();
+  }
+
   function speak(text, lang) {
     if (!("speechSynthesis" in window) || !text) return;
     const utterance = new SpeechSynthesisUtterance(text);
@@ -332,6 +461,12 @@
   modeButtons.forEach(button => {
     button.addEventListener("click", () => setMode(button.dataset.mode));
   });
+
+  if (semanticCadenceButton) {
+    semanticCadenceButton.addEventListener("click", () => {
+      runSemanticCadence(semanticCadenceExample);
+    });
+  }
 
   const frondosa = document.getElementById("frondosa");
   const leaves = [...document.querySelectorAll(".leaf")];
