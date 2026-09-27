@@ -18,6 +18,58 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-03
+
+**Status:** AUDIT COMPLETE — integration OPEN  
+**Recorded:** 2026-09-27  
+**Branch:** `jaguar/verb-explorer-resume-live-wire`  
+**Audited HEAD:** `72b3ecc906ebfcfcecc82bb1e76719114a53bb21`  
+**CI at audited HEAD:** Resume Runtime Dispatch GREEN; Verb Explorer Adaptive Bootstrap RED (Story language-line speech assertion); Corpus Integrity RED (Pedagogical Resonance HOW OLD expectation). Do not classify this HEAD as GREEN.
+
+## WHAT EXISTS
+
+- S1 learner Choice and Dependency Head Probe produce observed Attempts and non-confirmatory longitudinal footprints.
+- The WHICH Pass Contract requires choice-function pass, unassisted determiner-use pass, and unassisted transfer-mode determiner-use pass.
+- Learner-owned NEXT visits S2 independently of Session/Evidence/Green Pass.
+- Transfer probe specification, presenter, browser wire, result, support sensor, evidence bridge and attempt boundary exist as separate canonical components.
+- `AdaptiveResumeRuntimeDispatch` owns eligible resume execution. `AdaptiveAdvanceSelector` selects a destination but does not execute navigation.
+- Piano Stage emits `siyayo:external-evaluation-request` and learner-confirmed `siyayo:canonical-navigation-request`; it does not evaluate or route locally.
+
+## WHAT IS MISSING / OPEN
+
+- A confirmed live S2 mounting and submission path for the transfer probe. Loaded modules and unit tests do not prove that the learner can perform the probe in S2.
+- A lifecycle contract for retaining S1 assessment authority across free navigation into S2 so that a genuine cross-Experience Attempt can be evaluated without pretending S2 was already activated.
+- A valid moment for `transition-authorized` and S2 pedagogical adoption after cross-Experience transfer. Requiring full Green Pass before leaving S1 conflicts with the transfer requirement in S2.
+- A canonical receiver for Piano navigation requests and a verified generic advance executor. An `advanceSelection` with `status: selected` is a selected destination, not an executed transition.
+- Green CI for this branch. The two failing suites need independently grounded fixes; unrelated expectations must not be altered to conceal failures.
+
+## WHAT CONNECTS
+
+```text
+S1 observed Attempts → longitudinal IN_PROGRESS
+learner NEXT → free visit to S2
+S2 explicit transfer Attempt → canonical Cycle / Pass Contract
+contract closure → confirmed Trail + grounded progression authority
+learner adoption → S2 pedagogical Session
+```
+
+This is an intended sequence to verify, not a claim that the live runtime already implements every arrow. The Piano request is a separate external cable: Piano event → canonical receiver → canonical runtime result → Piano projection. Piano must not become a second evidence or routing authority.
+
+## WAIT / PERAÍ
+
+- No Evidence from mere visit, support click, animation, score display, or identity.
+- No Green Pass from one Choice result or Head Probe.
+- No automatic NEXT, Session replacement, or S2 activation from navigation.
+- Do not execute a selected advance without a confirmed canonical runtime executor.
+- Do not duplicate `AdaptiveLearningRouter`, `AdaptiveAdvanceSelector`, or routing inside Piano.
+- Unknown receiver/executor/evidence provenance remains OPEN and fail-closed.
+
+## NEXT GO
+
+Trace the complete transfer-probe presentation-to-Attempt chain in the live browser. Identify the smallest canonical S1-across-S2 Session boundary, write a failing end-to-end contract test for the actual learner visit and transfer event, then connect the minimal runtime. Independently reproduce and resolve the two current CI failures before homologation.
+
+---
+
 # GLOBAL CONTRACT — SIYAYO TRI-LANGUAGE DNA
 
 **Status:** HOMOLOGATED — mandatory across the whole web/app.  
