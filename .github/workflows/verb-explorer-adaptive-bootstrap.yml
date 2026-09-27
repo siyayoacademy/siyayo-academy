@@ -31,6 +31,8 @@ jobs:
         run: node scripts/test-adaptive-progression-decision.js
       - name: Test Coordinator progression transition bridge
         run: node scripts/test-verb-explorer-progression-transition.js
+      - name: Test live WHICH determiner probe presentation
+        run: node scripts/test-verb-explorer-determiner-use-assessment-live.js
       - name: Test cross-Experience transfer visit contract
         run: node scripts/test-verb-explorer-transfer-visit-contract.js
       - name: Test browser bootstrap
