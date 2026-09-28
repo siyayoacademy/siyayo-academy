@@ -117,6 +117,17 @@
         return escapeHtml(labels[key]+' '+(done?'●':'○'));
       }).join(' · ')+
       ' · '+escapeHtml(progress.completed+'/'+progress.total)+'</small>':'';
+    // A fresh Session has its own empty contract; confirmed earlier stages remain in the Trail.
+    var previousConfirmed=sequence.segments.some(function(segment){
+      return segment.state==='CONFIRMED'&&segment.experienceId!==liveState.currentExperienceId;
+    });
+    var freshStage=!!(previousConfirmed&&progress&&progress.completed===0&&progress.total===3&&
+      snapshot.session.decision.experienceId===liveState.currentExperienceId);
+    var freshStageLabel={
+      en:'S1 ● completed → S2 ○ new assessment · 0/3',
+      es:'S1 ● completada → S2 ○ nueva evaluación · 0/3',
+      pt:'S1 ● concluída → S2 ○ nova avaliação · 0/3'
+    }[language]||'S1 ● completed → S2 ○ new assessment · 0/3';
     var segmentHtml=sequence.segments.map(function(segment,index){
       var current=index===position.segmentIndex;
       return '<span class="learner-trail-segment" data-state="'+escapeHtml(segment.state)+'"'+
@@ -162,6 +173,7 @@
         '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
         '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
         (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
+        (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
         progressHtml+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
       '</div>';
