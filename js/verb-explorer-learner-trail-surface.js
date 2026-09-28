@@ -124,9 +124,9 @@
     var freshStage=!!(previousConfirmed&&progress&&progress.completed===0&&progress.total===3&&
       snapshot.session.decision.experienceId===liveState.currentExperienceId);
     var freshStageLabel={
-      en:'S1 ● completed → S2 ○ new assessment · 0/3',
-      es:'S1 ● completada → S2 ○ nueva evaluación · 0/3',
-      pt:'S1 ● concluída → S2 ○ nova avaliação · 0/3'
+      en:'S1 ● completed → S2 ◐ visited · new assessment ○ 0/3',
+      es:'S1 ● completada → S2 ◐ visitada · nueva evaluación ○ 0/3',
+      pt:'S1 ● concluída → S2 ◐ visitada · nova avaliação ○ 0/3'
     }[language]||'S1 ● completed → S2 ○ new assessment · 0/3';
     var segmentHtml=sequence.segments.map(function(segment,index){
       var current=index===position.segmentIndex;
