@@ -962,11 +962,27 @@
         ? detail.semantic.id
         : null;
 
+    const semanticContentItem =
+      detail.semantic &&
+      detail.semantic.kind === "content-item" &&
+      detail.semantic.collectionId &&
+      detail.semantic.id
+        ? {
+            collectionId: detail.semantic.collectionId,
+            id: detail.semantic.id
+          }
+        : null;
+
     const matchingLeaves = semanticQuestionWord
       ? leaves.filter(item => item.dataset.qw === semanticQuestionWord)
-      : mode === "questions"
-        ? []
-        : leaves.filter(item => item.dataset.note === detail.note);
+      : semanticContentItem && semanticContentItem.collectionId === "nouns"
+        ? leaves.filter(item => {
+            const noun = nounForLeaf(item);
+            return noun && noun.id === semanticContentItem.id;
+          })
+        : mode === "questions"
+          ? []
+          : leaves.filter(item => item.dataset.note === detail.note);
 
     if (matchingLeaves.length) {
       matchingLeaves.forEach(leaf => {
