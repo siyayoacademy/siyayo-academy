@@ -35,7 +35,13 @@ function what(entry) {
     assert.ok(noun, `${id} absent from canonical nouns`);
     for (const language of ['en', 'es', 'pt']) assert.ok(noun.translations[language]);
   }
-  assert.equal(question.assessmentTarget, undefined, 'grounding does not authorize a live assessment');
+  if (entry.id === 'preparing-dinner') {
+    assert.deepEqual(question.assessmentTarget, {
+      skill: 'what.use.object-question', definitionPath: 'data/learning/skills/what.json'
+    });
+  } else {
+    assert.equal(question.assessmentTarget, undefined, 'S3 transfer cannot start a new WHAT session');
+  }
   return acceptedVocabularyIds;
 }
 
