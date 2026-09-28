@@ -4,6 +4,7 @@
   var contrastProbeOccurrenceSequence=0;
   var determinerUseProbeOccurrenceSequence=0;
   var determinerUseTransferProbeOccurrenceSequence=0;
+  var whatObjectQuestionProbeOccurrenceSequence=0;
   var dependencyHeadProbeOccurrenceSequence=0;
   var toroidalNextOccurrenceSequence=0;
 
@@ -30,6 +31,28 @@
   function nextDependencyHeadProbeOccurrenceId(){
     dependencyHeadProbeOccurrenceSequence+=1;
     return 'dependency-head-probe-select:'+dependencyHeadProbeOccurrenceSequence;
+  }
+
+  function fromWhatObjectQuestionProbeSelect(choice,state){
+    state=state||{};
+    if(typeof choice!=='string'||!choice.trim()||
+      state.skill!=='what.use.object-question'||
+      !['question-function','object-answer'].includes(state.dimension)||
+      !['local','transfer'].includes(state.mode)||
+      !['en','es','pt'].includes(state.language)||
+      !state.currentExperienceId)return null;
+    var from=state.fromExperienceId||null;
+    if(state.mode==='transfer'&&(!from||from===state.currentExperienceId||state.dimension!=='object-answer'))return null;
+    if(state.mode==='local'&&from)return null;
+    whatObjectQuestionProbeOccurrenceSequence+=1;
+    return Object.freeze({
+      observed:true,actor:'learner',intent:'answer',type:'learner-response',
+      relevantToWait:true,source:'what-object-question-probe-select',
+      occurrenceId:'what-object-question-probe-select:'+whatObjectQuestionProbeOccurrenceSequence,
+      skill:'what.use.object-question',dimension:state.dimension,mode:state.mode,
+      language:state.language,choice:choice.trim(),
+      fromExperienceId:from,experienceId:state.currentExperienceId
+    });
   }
 
   function nextToroidalNextOccurrenceId(){
@@ -202,6 +225,7 @@
     fromContrastProbeSelect:fromContrastProbeSelect,
     fromDeterminerUseProbeSelect:fromDeterminerUseProbeSelect,
     fromDeterminerUseTransferProbeSelect:fromDeterminerUseTransferProbeSelect,
+    fromWhatObjectQuestionProbeSelect:fromWhatObjectQuestionProbeSelect,
     fromDependencyHeadProbeSelect:fromDependencyHeadProbeSelect,
     fromToroidalNextSelect:fromToroidalNextSelect,
     fromSentenceBuilt:fromSentenceBuilt
