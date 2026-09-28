@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "siyayo-actor-capabilities-v1",
+  "version": "1.0",
+  "principle": "Roles are tendencies, not prisons. Experience bindings decide which capabilities are active.",
+  "actors": {
+    "piano-flat": {
+      "primaryRole": "accompaniment",
+      "secondaryRoles": [
+        "instrument"
+      ],
+      "capabilities": [
+        "play-note",
+        "play-chord",
+        "play-chromatic-note",
+        "visual-resonance",
+        "semantic-cadence",
+        "score-left-hand",
+        "score-melody-when-bound"
+      ]
+    },
+    "pianinho-magico": {
+      "primaryRole": "melody",
+      "secondaryRoles": [
+        "interactive-agent"
+      ],
+      "capabilities": [
+        "play-note",
+        "play-chromatic-note",
+        "visual-resonance",
+        "semantic-cadence",
+        "call-response",
+        "score-right-hand",
+        "accompaniment-when-bound"
+      ]
+    },
+    "frondosa": {
+      "primaryRole": "perceptual-guide",
+      "secondaryRoles": [
+        "semantic-surface"
+      ],
+      "capabilities": [
+        "speak-note",
+        "speak-chord",
+        "speak-word",
+        "speak-example",
+        "mark-pulse",
+        "semantic-hint",
+        "visual-resonance",
+        "silent-resonance",
+        "language-sequence",
+        "content-collection-surface",
+        "portal-when-bound"
+      ]
+    }
+  },
+  "interactionModes": [
+    "solo-source",
+    "call-response",
+    "ensemble",
+    "accompaniment-melody",
+    "language-sequence",
+    "semantic-cadence"
+  ],
+  "boundaries": {
+    "presentationDoesNotCreateEvidence": true,
+    "experienceSelectsCapabilities": true,
+    "canonicalAuthorityOwnsEvaluation": true
+  }
+}
