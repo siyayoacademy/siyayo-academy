@@ -478,6 +478,19 @@
     window.speechSynthesis.speak(utterance);
   }
 
+  function speakSequence(parts = []) {
+    if (!("speechSynthesis" in window)) return;
+    const queue = parts.filter(part => part && part.text);
+    if (!queue.length) return;
+    window.speechSynthesis.cancel();
+    queue.forEach(part => {
+      const utterance = new SpeechSynthesisUtterance(part.text);
+      utterance.lang = part.lang || "en-US";
+      utterance.rate = Number.isFinite(part.rate) ? part.rate : 0.86;
+      window.speechSynthesis.speak(utterance);
+    });
+  }
+
   function speakTripiano(key) {
     if (!("speechSynthesis" in window)) return;
     window.speechSynthesis.cancel();
@@ -554,6 +567,8 @@
         btn.classList.toggle("is-active", isActive);
       });
       stage.dataset.theme = pedagogicalLanguage;
+      modeStatus.textContent = "QUESTIONS · " + pedagogicalLanguage.toUpperCase();
+      wordStatus.textContent = "14 Question Words · " + pedagogicalLanguage.toUpperCase();
       refreshLabels();
       refreshFrondosaLabels();
       localizeQuestionFlowSurface();
@@ -860,6 +875,10 @@
       requestedTime:"Learner requested more time",
       requestedClarification:"Learner requested clarification",
       reportedContext:"Learner reports missing context",
+      speakMoreTime:"You asked for more time. Take the time you need.",
+      speakClarification:"You asked for clarification. How would you like me to clarify?",
+      speakMissingContext:"You said context is missing. I will show the available context.",
+      speakGapPrefix:"The missing information is: ",
       explicitAction:"Explicit learner action • not evaluated • no Evidence",
       observed:"OBSERVED",
       responseReceived:"Learner response received",
@@ -899,6 +918,10 @@
       requestedTime:"El estudiante pidió más tiempo",
       requestedClarification:"El estudiante pidió una aclaración",
       reportedContext:"El estudiante informa que falta contexto",
+      speakMoreTime:"Pediste más tiempo. Tómate el tiempo que necesites.",
+      speakClarification:"Pediste una aclaración. ¿Cómo deseas que lo aclare?",
+      speakMissingContext:"Indicaste que falta contexto. Voy a mostrar el contexto disponible.",
+      speakGapPrefix:"La información que falta es: ",
       explicitAction:"Acción explícita del estudiante • no evaluada • sin Evidence",
       observed:"OBSERVADO",
       responseReceived:"Respuesta del estudiante recibida",
@@ -938,6 +961,10 @@
       requestedTime:"O aluno pediu mais tempo",
       requestedClarification:"O aluno pediu esclarecimento",
       reportedContext:"O aluno informa que falta contexto",
+      speakMoreTime:"Você pediu mais tempo. Use o tempo que precisar.",
+      speakClarification:"Você pediu esclarecimento. Como deseja esclarecer?",
+      speakMissingContext:"Você informou que falta contexto. Vou mostrar o contexto disponível.",
+      speakGapPrefix:"A informação que falta é: ",
       explicitAction:"Ação explícita do aluno • não avaliada • sem Evidence",
       observed:"OBSERVADO",
       responseReceived:"Resposta do aluno recebida",
@@ -1550,8 +1577,26 @@
         microSupportActions.hidden = requestedState === "thinking";
       }
 
-      if (requestedState === "insufficient-context") {
-        showContextSupport({ speakIt: true });
+      // WAIT Performance Layer: learner agency gets an audible response,
+      // but still produces no evaluation, GREEN or Evidence.
+      if (requestedState === "thinking") {
+        playPianinhoHigh(523.25);
+        speak(copy.speakMoreTime, copy.locale);
+      } else if (requestedState === "confused") {
+        playPianinhoHigh(392.00);
+        speak(copy.speakClarification, copy.locale);
+      } else if (requestedState === "insufficient-context") {
+        playPianinhoHigh(329.63);
+        const context = currentQuestionContext(activeQuestionWord);
+        if (context) {
+          speakSequence([
+            { text: copy.speakMissingContext, lang: copy.locale },
+            { text: context.situation + " " + context.question, lang: copy.locale }
+          ]);
+          showContextSupport({ speakIt: false });
+        } else {
+          speak(copy.speakMissingContext, copy.locale);
+        }
       }
 
       window.dispatchEvent(new CustomEvent("siyayo:support-opportunity-event", {
@@ -1576,6 +1621,10 @@
           questionWordId: activeQuestionWord.id,
           language: pedagogicalLanguage,
           waitState: requestedState,
+          performance: {
+            speech: true,
+            pianinhoAccent: true
+          },
           evaluated: false,
           evidenceProduced: false
         }
@@ -1600,6 +1649,7 @@
         if (semanticCue) semanticCue.textContent = qwLabel.toUpperCase();
       } else if (action === "show-gap") {
         if (semanticAnswer) semanticAnswer.textContent = copy.gapPrefix + model.gap;
+        speak(copy.speakGapPrefix + model.gap, copy.locale);
       } else if (action === "show-context") {
         showContextSupport({ speakIt: true });
         if (semanticCue) semanticCue.textContent = copy.contextAvailable;
