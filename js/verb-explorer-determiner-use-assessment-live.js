@@ -104,7 +104,8 @@ function mount(input){
   });
   if(installed!==true)return false;
   el.hidden=false;
-  el.querySelector('h3').textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':'WHICH · DETERMINER USE';
+  var title=typeof el.querySelector==='function'?el.querySelector('h3'):null;
+  if(title)title.textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':'WHICH · DETERMINER USE';
   el.dataset.assessmentMode=transfer?'transfer':'local';
   return true;
 }
