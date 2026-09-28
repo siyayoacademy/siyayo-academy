@@ -1868,3 +1868,12 @@ h1 {
     animation:none;
   }
 }
+
+
+/* Enharmonic identity: keep dual black-key names readable in Solfege. */
+.piano-key.black-key .key-word {
+  max-width:100%;
+  line-height:1.05;
+  text-align:center;
+  white-space:normal;
+}
