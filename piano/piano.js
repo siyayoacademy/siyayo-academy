@@ -31,16 +31,16 @@
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
-    { id:"C#4", frequency:277.18, solfege:"DÓ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"C#4", frequency:277.18, solfege:"DÓ♯", solfegeSharp:"DÓ♯", solfegeFlat:"RÉ♭", speechSharp:"Dó sustenido", speechFlat:"Ré bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
     { id:"D4",  frequency:293.66, solfege:"RÉ",  en:"blue",   es:"azul",     pt:"azul",     kind:"white" },
-    { id:"D#4", frequency:311.13, solfege:"RÉ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"D#4", frequency:311.13, solfege:"RÉ♯", solfegeSharp:"RÉ♯", solfegeFlat:"MI♭", speechSharp:"Ré sustenido", speechFlat:"Mi bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
     { id:"E4",  frequency:329.63, solfege:"MI",  en:"white",  es:"blanco",   pt:"branco",   kind:"white" },
     { id:"F4",  frequency:349.23, solfege:"FÁ",  en:"yellow", es:"amarillo", pt:"amarelo",  kind:"white" },
-    { id:"F#4", frequency:369.99, solfege:"FÁ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"F#4", frequency:369.99, solfege:"FÁ♯", solfegeSharp:"FÁ♯", solfegeFlat:"SOL♭", speechSharp:"Fá sustenido", speechFlat:"Sol bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
     { id:"G4",  frequency:392.00, solfege:"SOL", en:"brown",  es:"marrón",   pt:"marrom",   kind:"white" },
-    { id:"G#4", frequency:415.30, solfege:"SOL♯",en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"G#4", frequency:415.30, solfege:"SOL♯",solfegeSharp:"SOL♯",solfegeFlat:"LÁ♭", speechSharp:"Sol sustenido", speechFlat:"Lá bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
     { id:"A4",  frequency:440.00, solfege:"LÁ",  en:"red",    es:"rojo",     pt:"vermelho", kind:"white" },
-    { id:"A#4", frequency:466.16, solfege:"LÁ♯", en:"sharp",  es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"A#4", frequency:466.16, solfege:"LÁ♯", solfegeSharp:"LÁ♯", solfegeFlat:"SI♭", speechSharp:"Lá sustenido", speechFlat:"Si bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
     { id:"B4",  frequency:493.88, solfege:"SI",  en:"gold",   es:"dorado",   pt:"dourado",  kind:"white" },
     { id:"C5",  frequency:523.25, solfege:"DÓ↑", en:"black",  es:"negro",    pt:"preto",    kind:"white" }
   ];
@@ -373,8 +373,44 @@
     });
   }
 
+  let enharmonicMode = "auto";
+
+  function pitchIdentityForKey(key) {
+    if (!key || key.kind !== "black") {
+      return {
+        physicalNote: key ? key.id : null,
+        display: key ? key.solfege : "",
+        sharp: null,
+        flat: null,
+        selected: key ? key.solfege : ""
+      };
+    }
+
+    const selected =
+      enharmonicMode === "flat" ? key.solfegeFlat :
+      enharmonicMode === "sharp" ? key.solfegeSharp :
+      null;
+
+    return {
+      physicalNote: key.id,
+      display: selected || (key.solfegeSharp + " / " + key.solfegeFlat),
+      sharp: key.solfegeSharp,
+      flat: key.solfegeFlat,
+      selected,
+      mode: enharmonicMode
+    };
+  }
+
+  function solfegeSpeechForKey(key) {
+    if (!key || key.kind !== "black") return key ? key.solfege.replace("↑", "") : "";
+    if (enharmonicMode === "flat") return key.speechFlat;
+    // auto/contextual remains non-authoritative until an Experience supplies function.
+    return key.speechSharp;
+  }
+
   function currentLabel(key) {
-    if (mode === "solfege" || mode === "sound" || mode === "questions") return key.solfege;
+    if (mode === "solfege") return pitchIdentityForKey(key).display;
+    if (mode === "sound" || mode === "questions") return key.solfege;
     if (mode === "tripiano") return key.en + " · " + key.es + " · " + key.pt;
     return key[mode];
   }
@@ -409,6 +445,7 @@
         source,
         note: key.id,
         solfege: key.solfege,
+        pitch: pitchIdentityForKey(key),
         mode,
         word: currentLabel(key),
         semantic,
@@ -421,10 +458,11 @@
     button.classList.add("is-active", "has-memory");
     window.setTimeout(() => button.classList.remove("is-active"), 560);
 
-    noteStatus.textContent = key.solfege + " · " + key.id;
+    const pitchIdentity = pitchIdentityForKey(key);
+    noteStatus.textContent = (key.kind === "black" ? pitchIdentity.display : key.solfege) + " · " + key.id;
     wordStatus.textContent = currentLabel(key);
 
-    if (mode === "solfege") speak(key.solfege.replace("↑", ""), "pt-BR");
+    if (mode === "solfege") speak(solfegeSpeechForKey(key), "pt-BR");
     if (mode === "en") speak(key.en, "en-US");
     if (mode === "es") speak(key.es, "es-ES");
     if (mode === "pt") speak(key.pt, "pt-BR");
@@ -436,7 +474,8 @@
     button.type = "button";
     button.className = "piano-key" + (key.kind === "black" ? " black-key" : "");
     button.dataset.note = key.id;
-    button.setAttribute("aria-label", key.solfege + " " + key.id);
+    const pitchIdentity = pitchIdentityForKey(key);
+    button.setAttribute("aria-label", (key.kind === "black" ? pitchIdentity.display : key.solfege) + " " + key.id);
     button.innerHTML =
       '<span class="key-tint-layer"></span>' +
       '<span class="key-glow-layer"></span>' +
@@ -762,6 +801,17 @@
         avatarZone.classList.remove("is-resonating");
         if (pianinho) pianinho.classList.remove("is-resonating");
       }, 660);
+    } else {
+      const playedKey = keys.find(item => item.id === detail.note);
+      if (playedKey && playedKey.kind === "black" && pianinho) {
+        // Pianinho's visible hotspots are still the eight white-note anchors.
+        // Chromatic notes nevertheless belong to the same melodic scale, so
+        // the whole actor resonates without inventing black-key geometry.
+        pianinho.classList.remove("is-resonating");
+        void pianinho.offsetWidth;
+        pianinho.classList.add("is-resonating");
+        window.setTimeout(() => pianinho.classList.remove("is-resonating"), 660);
+      }
     }
   });
 
@@ -807,6 +857,21 @@
 
   modeButtons.forEach(button => {
     button.addEventListener("click", refreshFrondosaLabels);
+  });
+
+  window.addEventListener("siyayo:set-enharmonic-mode", event => {
+    const requested = event.detail && event.detail.mode;
+    if (!["sharp","flat","auto","contextual"].includes(requested)) return;
+    enharmonicMode = requested === "contextual" ? "auto" : requested;
+    refreshLabels();
+
+    window.dispatchEvent(new CustomEvent("siyayo:enharmonic-mode-changed", {
+      detail: {
+        mode: requested,
+        effectiveMode: enharmonicMode,
+        authority: requested === "contextual" ? "experience-required" : "local-presentation"
+      }
+    }));
   });
 
   learnerWaitButtons.forEach(button => {
