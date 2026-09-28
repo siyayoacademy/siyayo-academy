@@ -20,17 +20,16 @@
     }));
   }
 
-  function canonicalNounId(question,nouns,targetVocabulary,language){
+  function canonicalNounId(question,nouns,targetVocabulary,language,prefix){
     var items=nouns&&Array.isArray(nouns.items)?nouns.items:[];
     var vocabulary=Array.isArray(targetVocabulary)?targetVocabulary:[];
     var lower=text(question).toLowerCase();
-    var prefix=language==='es'?'¿qué ':'which ';
-    if(!lower.startsWith(prefix))return null;
+    if(!lower.startsWith(prefix.toLowerCase()))return null;
 
     var matches=items.filter(function(noun){
       var id=text(noun&&noun.id);
       var word=text(noun&&noun.translations&&noun.translations[language]);
-      return id&&word&&vocabulary.includes(id)&&lower.startsWith(prefix+word.toLowerCase()+' ');
+      return id&&word&&vocabulary.includes(id)&&lower.startsWith(prefix.toLowerCase()+word.toLowerCase()+' ');
     });
 
     return matches.length===1?matches[0].id:null;
@@ -38,7 +37,7 @@
 
   function resolve(skillDefinition,localSpecification,targetExperience,nouns,language){
     if(!skillDefinition||!localSpecification||!targetExperience||!nouns)return null;
-    if(!['en','es'].includes(text(language)))return null;
+    if(!['en','es','pt'].includes(text(language)))return null;
     if(text(skillDefinition.id)!=='which.use.determiner')return null;
     if(text(skillDefinition.form)!=='which')return null;
     if(text(skillDefinition.grammarRole)!=='interrogative-determiner')return null;
@@ -63,12 +62,16 @@
 
     var question=text(entries[0].question[language]);
     if(!question)return null;
+    var form=language==='pt'?text(entries[0].questionWordLabel&&entries[0].questionWordLabel.pt):'';
+    if(language==='pt'&&!(text(skillDefinition.realizations&&skillDefinition.realizations.pt&&skillDefinition.realizations.pt.form)==='qual'&&form==='QUAIS'))return null;
+    var prefix=language==='es'?'¿Qué ':language==='pt'?'Quais ':'Which ';
 
     var nounId=canonicalNounId(
       question,
       nouns,
       targetExperience.links&&targetExperience.links.vocabulary,
-      language
+      language,
+      prefix
     );
     if(!nounId||nounId===localTargetNoun)return null;
 
@@ -76,7 +79,7 @@
     var nounText=text(noun&&noun.translations&&noun.translations[language]);
     if(!nounText)return null;
 
-    var expectedPrefix=language==='es'?'¿Qué '+nounText+' ':'Which '+nounText+' ';
+    var expectedPrefix=prefix+nounText+' ';
     if(question.indexOf(expectedPrefix)!==0)return null;
 
     var remainder=question.slice(expectedPrefix.length);
@@ -108,7 +111,7 @@
       targetForm:'which',
       targetNoun:nounId,
       question:question,
-      prompt:(language==='es'?'¿Qué ___ ':'Which ___ ')+remainder,
+      prompt:prefix+'___ '+remainder,
       expectedAlternativeId:nounId,
       alternatives:freezeAlternatives([
         {id:nounId,label:nounText},
