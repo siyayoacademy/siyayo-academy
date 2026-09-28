@@ -128,6 +128,20 @@
         "choiceContext": {
           "$ref": "#/$defs/choiceContext"
         },
+        "answerGrounding": {
+          "type": "object",
+          "required": ["context", "acceptedVocabularyIds"],
+          "additionalProperties": false,
+          "properties": {
+            "context": { "$ref": "#/$defs/trilingual" },
+            "acceptedVocabularyIds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
         "assessmentTarget": {
           "type": "object",
           "required": ["skill", "definitionPath"],
