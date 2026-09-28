@@ -36,7 +36,7 @@
 
   function feedbackText(result,language){
     if(result==='pass'){
-      return {en:'HEAD IDENTIFIED',es:'NÚCLEO IDENTIFICADO',pt:'NÚCLEO IDENTIFICADO'}[language]||'HEAD IDENTIFIED';
+      return {en:'✓ HEAD IDENTIFIED · correct answer observed (separate from the 0/3 contract)',es:'✓ NÚCLEO IDENTIFICADO · respuesta correcta observada (fuera del contrato 0/3)',pt:'✓ NÚCLEO IDENTIFICADO · resposta correta observada (fora do contrato 0/3)'}[language]||'✓ HEAD IDENTIFIED · correct answer observed (separate from the 0/3 contract)';
     }
     return {en:'TRY ANOTHER WORD',es:'PRUEBA OTRA PALABRA',pt:'TENTE OUTRA PALAVRA'}[language]||'TRY ANOTHER WORD';
   }
