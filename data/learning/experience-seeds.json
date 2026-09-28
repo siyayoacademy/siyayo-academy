@@ -387,14 +387,18 @@
             "es": "¿Qué estamos preparando primero?",
             "pt": "O que estamos preparando primeiro?"
           },
-      "answerGrounding": {
-        "context": {
-          "en": "We should prepare the vegetables first.",
-          "es": "Deberíamos preparar las verduras primero.",
-          "pt": "Devemos preparar os legumes primeiro."
-        },
-        "acceptedVocabularyIds": ["tomatoes", "red-onion", "leek", "carrots", "sweet-potatoes", "cassava", "green-beans"]
-      },
+      "assessmentTarget": {
+            "skill": "what.use.object-question",
+            "definitionPath": "data/learning/skills/what.json"
+          },
+          "answerGrounding": {
+            "context": {
+              "en": "We should prepare the vegetables first.",
+              "es": "Deberíamos preparar las verduras primero.",
+              "pt": "Devemos preparar os legumes primeiro."
+            },
+            "acceptedVocabularyIds": ["tomatoes", "red-onion", "leek", "carrots", "sweet-potatoes", "cassava", "green-beans"]
+          },
           "questionWordLabel": {
             "en": "WHAT",
             "es": "QUÉ",
@@ -629,13 +633,13 @@
             "pt": "O que estamos comendo primeiro?"
           },
       "answerGrounding": {
-        "context": {
-          "en": "We are eating the salmon first.",
-          "es": "Estamos comiendo el salmón primero.",
-          "pt": "Estamos comendo o salmão primeiro."
-        },
-        "acceptedVocabularyIds": ["salmon"]
-      },
+            "context": {
+              "en": "We are eating the salmon first.",
+              "es": "Estamos comiendo el salmón primero.",
+              "pt": "Estamos comendo o salmão primeiro."
+            },
+            "acceptedVocabularyIds": ["salmon"]
+          },
           "questionWordLabel": {
             "en": "WHAT",
             "es": "QUÉ",
