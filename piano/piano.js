@@ -549,7 +549,7 @@
     refreshLabels();
   }
 
-  function activateKey(button, key, source = "piano-flat", semantic = null) {
+  function activateKey(button, key, source = "piano-flat", semantic = null, suppressSpeech = false) {
     playInstrument(source, key.frequency);
 
     window.dispatchEvent(new CustomEvent("siyayo:musical-event", {
@@ -575,11 +575,13 @@
     noteStatus.textContent = (key.kind === "black" ? pitchIdentity.display : key.solfege) + " · " + key.id;
     wordStatus.textContent = currentLabel(key);
 
-    if (mode === "solfege") speak(solfegeSpeechForKey(key), "pt-BR");
-    if (mode === "en") speak(key.en, "en-US");
-    if (mode === "es") speak(key.es, "es-ES");
-    if (mode === "pt") speak(key.pt, "pt-BR");
-    if (mode === "tripiano") speakTripiano(key);
+    if (!suppressSpeech) {
+      if (mode === "solfege") speak(solfegeSpeechForKey(key), "pt-BR");
+      if (mode === "en") speak(key.en, "en-US");
+      if (mode === "es") speak(key.es, "es-ES");
+      if (mode === "pt") speak(key.pt, "pt-BR");
+      if (mode === "tripiano") speakTripiano(key);
+    }
   }
 
   function createPianoKey(key) {
@@ -1038,9 +1040,9 @@
           collectionId: "nouns",
           id: contentItem.id,
           evidence: "none"
-        });
+        }, mode !== "solfege");
 
-        speakContentItem(contentItem);
+        if (mode !== "solfege") speakContentItem(contentItem);
         if (semanticSequence) semanticSequence.dataset.phase = "observed";
         if (semanticPhase) semanticPhase.textContent = "NOUN";
         if (semanticCue) semanticCue.textContent = contentLabelForMode(contentItem);
@@ -1068,7 +1070,17 @@
       };
 
       const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
-      if (pianoKey) activateKey(pianoKey, key, "frondosa", semanticIdentity);
+      if (pianoKey) activateKey(
+        pianoKey,
+        key,
+        "frondosa",
+        semanticIdentity,
+        mode !== "solfege"
+      );
+
+      if (mode !== "questions" && mode !== "solfege") {
+        speakContentItem(qw);
+      }
 
       window.dispatchEvent(new CustomEvent("siyayo:semantic-event", {
         detail: {
