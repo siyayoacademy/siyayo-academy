@@ -29,6 +29,9 @@
   const canonicalNavigationCopy = document.getElementById("canonicalNavigationCopy");
   const canonicalNavigationButton = document.getElementById("canonicalNavigationButton");
   const semanticCadenceButton = document.getElementById("semanticCadenceButton");
+  const learnerSubmitButton = learnerResponseForm
+    ? learnerResponseForm.querySelector('button[type="submit"]')
+    : null;
 
   const keys = [
     { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
@@ -180,6 +183,7 @@
   });
 
   let mode = "sound";
+  let pedagogicalLanguage = "en";
   let audioContext = null;
 
   const pianinhoChord = ["C4","E4","G4","C5"];
@@ -536,17 +540,50 @@
   }
 
   function setMode(nextMode) {
+    const isLanguage = ["en","es","pt"].includes(nextMode);
+
+    // In 14 Questions the language is an independent lens: switching EN/ES/PT
+    // keeps the pedagogical activity active instead of leaving Questions mode.
+    if (mode === "questions" && isLanguage && activeCollectionId === "question-words") {
+      pedagogicalLanguage = nextMode;
+      modeButtons.forEach(btn => {
+        const isActive = btn.dataset.mode === "questions" || btn.dataset.mode === pedagogicalLanguage;
+        btn.classList.toggle("is-active", isActive);
+      });
+      stage.dataset.theme = pedagogicalLanguage;
+      refreshLabels();
+      refreshFrondosaLabels();
+      localizeQuestionFlowSurface();
+      return;
+    }
+
+    if (isLanguage) pedagogicalLanguage = nextMode;
     mode = nextMode;
-    modeButtons.forEach(btn => btn.classList.toggle("is-active", btn.dataset.mode === mode));
-    modeStatus.textContent = mode.toUpperCase();
-    stage.dataset.theme = ["en","es","pt","questions"].includes(mode) ? mode : "sound";
+
+    modeButtons.forEach(btn => {
+      const isActive = mode === "questions"
+        ? btn.dataset.mode === "questions" || btn.dataset.mode === pedagogicalLanguage
+        : btn.dataset.mode === mode;
+      btn.classList.toggle("is-active", isActive);
+    });
+
+    modeStatus.textContent = mode === "questions"
+      ? "QUESTIONS · " + pedagogicalLanguage.toUpperCase()
+      : mode.toUpperCase();
+
+    stage.dataset.theme = mode === "questions"
+      ? pedagogicalLanguage
+      : ["en","es","pt"].includes(mode) ? mode : "sound";
+
     wordStatus.textContent =
       mode === "sound" ? "DÓ → DÓ↑" :
       mode === "solfege" ? "Solfege" :
       mode === "tripiano" ? "EN → ES → PT" :
-      mode === "questions" ? "14 Question Words" :
+      mode === "questions" ? "14 Question Words · " + pedagogicalLanguage.toUpperCase() :
       "Colors";
     refreshLabels();
+    refreshFrondosaLabels();
+    if (mode === "questions") localizeQuestionFlowSurface();
   }
 
   function activateKey(button, key, source = "piano-flat", semantic = null, suppressSpeech = false) {
@@ -630,21 +667,234 @@
   const leaves = [...document.querySelectorAll(".leaf")];
 
   const questionWordPromptModels = Object.freeze({
-    "what":      { gap:"thing / information", prompt:"What information is missing?" },
-    "where":     { gap:"place", prompt:"Which place is missing?" },
-    "when":      { gap:"time", prompt:"Which time is missing?" },
-    "who":       { gap:"person", prompt:"Which person is missing?" },
-    "which":     { gap:"delimited choice", prompt:"Which option must be chosen?" },
-    "why":       { gap:"reason", prompt:"Which reason is missing?" },
-    "how":       { gap:"manner / method", prompt:"Which manner or method is missing?" },
-    "how-much":  { gap:"amount / price", prompt:"Which amount or price is missing?" },
-    "how-many":  { gap:"countable quantity", prompt:"Which countable quantity is missing?" },
-    "whose":     { gap:"possession", prompt:"Whose possession is missing?" },
-    "whom":      { gap:"object-person", prompt:"Which object-person relation is missing?" },
-    "how-long":  { gap:"duration / length", prompt:"Which duration or length is missing?" },
-    "how-far":   { gap:"distance", prompt:"Which distance is missing?" },
-    "how-often": { gap:"frequency", prompt:"Which frequency is missing?" }
+    "what": {
+      en:{ gap:"thing / information", prompt:"What information is missing?" },
+      es:{ gap:"cosa / información", prompt:"¿Qué información falta?" },
+      pt:{ gap:"coisa / informação", prompt:"Que informação está faltando?" }
+    },
+    "where": {
+      en:{ gap:"place", prompt:"Which place is missing?" },
+      es:{ gap:"lugar", prompt:"¿Qué lugar falta?" },
+      pt:{ gap:"lugar", prompt:"Que lugar está faltando?" }
+    },
+    "when": {
+      en:{ gap:"time", prompt:"Which time is missing?" },
+      es:{ gap:"momento / tiempo", prompt:"¿Qué momento falta?" },
+      pt:{ gap:"momento / tempo", prompt:"Que momento está faltando?" }
+    },
+    "who": {
+      en:{ gap:"person", prompt:"Which person is missing?" },
+      es:{ gap:"persona", prompt:"¿Qué persona falta?" },
+      pt:{ gap:"pessoa", prompt:"Qual pessoa está faltando?" }
+    },
+    "which": {
+      en:{ gap:"delimited choice", prompt:"Which option must be chosen?" },
+      es:{ gap:"elección delimitada", prompt:"¿Qué opción debe elegirse?" },
+      pt:{ gap:"escolha delimitada", prompt:"Qual opção deve ser escolhida?" }
+    },
+    "why": {
+      en:{ gap:"reason", prompt:"Which reason is missing?" },
+      es:{ gap:"razón", prompt:"¿Qué razón falta?" },
+      pt:{ gap:"razão", prompt:"Qual razão está faltando?" }
+    },
+    "how": {
+      en:{ gap:"manner / method", prompt:"Which manner or method is missing?" },
+      es:{ gap:"manera / método", prompt:"¿Qué manera o método falta?" },
+      pt:{ gap:"maneira / método", prompt:"Que maneira ou método está faltando?" }
+    },
+    "how-much": {
+      en:{ gap:"amount / price", prompt:"Which amount or price is missing?" },
+      es:{ gap:"cantidad / precio", prompt:"¿Qué cantidad o precio falta?" },
+      pt:{ gap:"quantidade / preço", prompt:"Que quantidade ou preço está faltando?" }
+    },
+    "how-many": {
+      en:{ gap:"countable quantity", prompt:"Which countable quantity is missing?" },
+      es:{ gap:"cantidad contable", prompt:"¿Qué cantidad contable falta?" },
+      pt:{ gap:"quantidade contável", prompt:"Que quantidade contável está faltando?" }
+    },
+    "whose": {
+      en:{ gap:"possession", prompt:"Whose possession is missing?" },
+      es:{ gap:"posesión", prompt:"¿Qué relación de posesión falta identificar?" },
+      pt:{ gap:"posse", prompt:"Que relação de posse falta identificar?" }
+    },
+    "whom": {
+      en:{ gap:"object-person", prompt:"Which object-person relation is missing?" },
+      es:{ gap:"persona como objeto", prompt:"¿Qué persona como objeto falta identificar?" },
+      pt:{ gap:"pessoa como objeto", prompt:"Que pessoa como objeto precisa ser identificada?" }
+    },
+    "how-long": {
+      en:{ gap:"duration / length", prompt:"Which duration or length is missing?" },
+      es:{ gap:"duración / longitud", prompt:"¿Qué duración o longitud falta?" },
+      pt:{ gap:"duração / comprimento", prompt:"Que duração ou comprimento está faltando?" }
+    },
+    "how-far": {
+      en:{ gap:"distance", prompt:"Which distance is missing?" },
+      es:{ gap:"distancia", prompt:"¿Qué distancia falta?" },
+      pt:{ gap:"distância", prompt:"Que distância está faltando?" }
+    },
+    "how-often": {
+      en:{ gap:"frequency", prompt:"Which frequency is missing?" },
+      es:{ gap:"frecuencia", prompt:"¿Qué frecuencia falta?" },
+      pt:{ gap:"frequência", prompt:"Que frequência está faltando?" }
+    }
   });
+
+  const questionFlowCopy = Object.freeze({
+    en: {
+      locale:"en-US",
+      ready:"READY",
+      readyCue:"Touch a Question Word leaf",
+      readyAnswer:"Question → WAIT → learner response",
+      question:"QUESTION",
+      gapPrefix:"Information gap: ",
+      wait:"WAIT",
+      waitCue:"Learner action is still required",
+      noEvidence:"No evidence yet",
+      response:"RESPONSE",
+      remains:" remains the active opportunity",
+      awaitingResponse:"Awaiting an explicit learner response",
+      waitThinking:"HOLD ON… thinking",
+      waitConfused:"Hmm… clarification may be needed",
+      waitContext:"Context gap • more information is needed",
+      moreTime:"Need more time",
+      clarification:"Need clarification",
+      missingContext:"Context is missing",
+      repeatQuestion:"Repeat question",
+      hearQw:"Hear QW again",
+      showGap:"Show information gap",
+      placeholder:"Type your response…",
+      submit:"Submit response",
+      requestedTime:"Learner requested more time",
+      requestedClarification:"Learner requested clarification",
+      reportedContext:"Learner reports missing context",
+      explicitAction:"Explicit learner action • not evaluated • no Evidence",
+      observed:"OBSERVED",
+      responseReceived:"Learner response received",
+      notEvaluated:"Not evaluated yet • no GREEN • no Evidence",
+      responseSpeech:"Response received.",
+      externalPhase:"EXTERNAL EVALUATION",
+      externalCue:"Canonical evaluator requested",
+      externalAnswer:"Awaiting external authority • no local judgement"
+    },
+    es: {
+      locale:"es-ES",
+      ready:"LISTO",
+      readyCue:"Toca una hoja de palabra interrogativa",
+      readyAnswer:"Pregunta → WAIT → respuesta del estudiante",
+      question:"PREGUNTA",
+      gapPrefix:"Información faltante: ",
+      wait:"WAIT",
+      waitCue:"Todavía se requiere una acción del estudiante",
+      noEvidence:"Aún no hay evidencia",
+      response:"RESPUESTA",
+      remains:" sigue siendo la oportunidad activa",
+      awaitingResponse:"Esperando una respuesta explícita del estudiante",
+      waitThinking:"ESPERA… pensando",
+      waitConfused:"Hmm… puede ser necesaria una aclaración",
+      waitContext:"Falta contexto • se necesita más información",
+      moreTime:"Necesito más tiempo",
+      clarification:"Necesito aclaración",
+      missingContext:"Falta contexto",
+      repeatQuestion:"Repetir pregunta",
+      hearQw:"Oír la palabra interrogativa otra vez",
+      showGap:"Mostrar información faltante",
+      placeholder:"Escribe tu respuesta…",
+      submit:"Enviar respuesta",
+      requestedTime:"El estudiante pidió más tiempo",
+      requestedClarification:"El estudiante pidió una aclaración",
+      reportedContext:"El estudiante informa que falta contexto",
+      explicitAction:"Acción explícita del estudiante • no evaluada • sin Evidence",
+      observed:"OBSERVADO",
+      responseReceived:"Respuesta del estudiante recibida",
+      notEvaluated:"Aún no evaluado • sin GREEN • sin Evidence",
+      responseSpeech:"Respuesta recibida.",
+      externalPhase:"EVALUACIÓN EXTERNA",
+      externalCue:"Evaluador canónico solicitado",
+      externalAnswer:"Esperando autoridad externa • sin juicio local"
+    },
+    pt: {
+      locale:"pt-BR",
+      ready:"PRONTO",
+      readyCue:"Toque uma folha de palavra interrogativa",
+      readyAnswer:"Pergunta → WAIT → resposta do aluno",
+      question:"PERGUNTA",
+      gapPrefix:"Informação faltante: ",
+      wait:"WAIT",
+      waitCue:"Ainda é necessária uma ação do aluno",
+      noEvidence:"Ainda não há evidência",
+      response:"RESPOSTA",
+      remains:" continua sendo a oportunidade ativa",
+      awaitingResponse:"Aguardando uma resposta explícita do aluno",
+      waitThinking:"PERAÍ… pensando",
+      waitConfused:"Hmm… pode ser necessário um esclarecimento",
+      waitContext:"Falta contexto • é necessária mais informação",
+      moreTime:"Preciso de mais tempo",
+      clarification:"Preciso de esclarecimento",
+      missingContext:"Falta contexto",
+      repeatQuestion:"Repetir pergunta",
+      hearQw:"Ouvir a palavra interrogativa novamente",
+      showGap:"Mostrar informação faltante",
+      placeholder:"Digite sua resposta…",
+      submit:"Enviar resposta",
+      requestedTime:"O aluno pediu mais tempo",
+      requestedClarification:"O aluno pediu esclarecimento",
+      reportedContext:"O aluno informa que falta contexto",
+      explicitAction:"Ação explícita do aluno • não avaliada • sem Evidence",
+      observed:"OBSERVADO",
+      responseReceived:"Resposta do aluno recebida",
+      notEvaluated:"Ainda não avaliado • sem GREEN • sem Evidence",
+      responseSpeech:"Resposta recebida.",
+      externalPhase:"AVALIAÇÃO EXTERNA",
+      externalCue:"Avaliador canônico solicitado",
+      externalAnswer:"Aguardando autoridade externa • sem julgamento local"
+    }
+  });
+
+  function currentQuestionCopy() {
+    return questionFlowCopy[pedagogicalLanguage] || questionFlowCopy.en;
+  }
+
+  function currentQuestionModel(qw) {
+    const family = questionWordPromptModels[qw && qw.id];
+    return family && family[pedagogicalLanguage]
+      ? family[pedagogicalLanguage]
+      : { gap:"information", prompt:"Which information is missing?" };
+  }
+
+  function currentQuestionWordLabel(qw) {
+    return qw && (qw[pedagogicalLanguage] || qw.en) || "";
+  }
+
+  function localizeQuestionFlowSurface() {
+    const copy = currentQuestionCopy();
+    if (learnerResponseInput) {
+      learnerResponseInput.placeholder = copy.placeholder;
+      learnerResponseInput.setAttribute("aria-label", copy.placeholder);
+    }
+    if (learnerSubmitButton) learnerSubmitButton.textContent = copy.submit;
+    learnerWaitButtons.forEach(button => {
+      const state = button.dataset.waitRequest;
+      button.textContent =
+        state === "thinking" ? copy.moreTime :
+        state === "confused" ? copy.clarification :
+        copy.missingContext;
+    });
+    microSupportButtons.forEach(button => {
+      const action = button.dataset.supportAction;
+      button.textContent =
+        action === "repeat-question" ? copy.repeatQuestion :
+        action === "hear-qw" ? copy.hearQw :
+        copy.showGap;
+    });
+
+    if (!activeQuestionWord && semanticSequence) {
+      semanticPhase.textContent = copy.ready;
+      semanticCue.textContent = copy.readyCue;
+      semanticAnswer.textContent = copy.readyAnswer;
+    }
+
+    if (activeWaitArchetype) setWaitArchetype(activeWaitArchetype, "language-lens-change");
+  }
 
   let semanticSequenceTimer = null;
   let activeQuestionWord = null;
@@ -653,21 +903,9 @@
   let activeCanonicalNavigation = null;
 
   const waitArchetypes = Object.freeze({
-    "thinking": {
-      face: "🤔",
-      copy: "PERAÍ… thinking",
-      className: "wait-thinking"
-    },
-    "confused": {
-      face: "😕",
-      copy: "Hmm… clarification may be needed",
-      className: "wait-confused"
-    },
-    "insufficient-context": {
-      face: "🧩",
-      copy: "Context gap • more information is needed",
-      className: "wait-context-gap"
-    }
+    "thinking": { face:"🤔", copyKey:"waitThinking", className:"wait-thinking" },
+    "confused": { face:"😕", copyKey:"waitConfused", className:"wait-confused" },
+    "insufficient-context": { face:"🧩", copyKey:"waitContext", className:"wait-context-gap" }
   });
 
   function clearWaitArchetype() {
@@ -690,7 +928,7 @@
     if (frondosa) frondosa.classList.add(config.className);
 
     if (waitFace) waitFace.textContent = config.face;
-    if (waitCopy) waitCopy.textContent = config.copy;
+    if (waitCopy) waitCopy.textContent = currentQuestionCopy()[config.copyKey];
     if (waitArchetypeIndicator) waitArchetypeIndicator.hidden = false;
 
     window.dispatchEvent(new CustomEvent("siyayo:wait-state-event", {
@@ -712,16 +950,18 @@
 
   function resetSemanticSequence() {
     if (!semanticSequence) return;
+    const copy = currentQuestionCopy();
     activeQuestionWord = null;
     activeSupportTrace = [];
     clearWaitArchetype();
     semanticSequence.dataset.phase = "idle";
-    if (semanticPhase) semanticPhase.textContent = "READY";
-    if (semanticCue) semanticCue.textContent = "Touch a Question Word leaf";
-    if (semanticAnswer) semanticAnswer.textContent = "Question → WAIT → learner response";
+    if (semanticPhase) semanticPhase.textContent = copy.ready;
+    if (semanticCue) semanticCue.textContent = copy.readyCue;
+    if (semanticAnswer) semanticAnswer.textContent = copy.readyAnswer;
     if (learnerResponseForm) learnerResponseForm.hidden = true;
     if (learnerResponseInput) learnerResponseInput.value = "";
     if (microSupportActions) microSupportActions.hidden = true;
+    localizeQuestionFlowSurface();
   }
 
   function runSemanticSequence(qw) {
@@ -730,7 +970,10 @@
     activeSupportTrace = [];
     clearCanonicalRouteResonance();
     clearCanonicalNavigationOpportunity();
-    const model = questionWordPromptModels[qw.id] || { gap:"information", prompt:"Which information is missing?" };
+
+    const copy = currentQuestionCopy();
+    const model = currentQuestionModel(qw);
+    const qwLabel = currentQuestionWordLabel(qw);
 
     if (semanticSequenceTimer) {
       window.clearTimeout(semanticSequenceTimer);
@@ -738,27 +981,27 @@
     }
 
     semanticSequence.dataset.phase = "question";
-    if (semanticPhase) semanticPhase.textContent = "QUESTION";
-    if (semanticCue) semanticCue.textContent = qw.en.toUpperCase() + " · " + model.prompt;
-    if (semanticAnswer) semanticAnswer.textContent = "Information gap: " + model.gap;
+    if (semanticPhase) semanticPhase.textContent = copy.question;
+    if (semanticCue) semanticCue.textContent = qwLabel.toUpperCase() + " · " + model.prompt;
+    if (semanticAnswer) semanticAnswer.textContent = copy.gapPrefix + model.gap;
 
-    // Speech role: question-word + prompt. WAIT itself remains intentionally silent.
+    // Speech follows the selected pedagogical language. WAIT remains silent.
     window.setTimeout(() => {
-      speak(qw.en + ". " + model.prompt, "en-US");
+      speak(qwLabel + ". " + model.prompt, copy.locale);
     }, 120);
 
     semanticSequenceTimer = window.setTimeout(() => {
       semanticSequence.dataset.phase = "wait";
       setWaitArchetype("thinking");
-      if (semanticPhase) semanticPhase.textContent = "WAIT";
-      if (semanticCue) semanticCue.textContent = "Learner action is still required";
-      if (semanticAnswer) semanticAnswer.textContent = "No evidence yet";
+      if (semanticPhase) semanticPhase.textContent = copy.wait;
+      if (semanticCue) semanticCue.textContent = copy.waitCue;
+      if (semanticAnswer) semanticAnswer.textContent = copy.noEvidence;
 
       semanticSequenceTimer = window.setTimeout(() => {
         semanticSequence.dataset.phase = "response";
-        if (semanticPhase) semanticPhase.textContent = "RESPONSE";
-        if (semanticCue) semanticCue.textContent = qw.en + " remains the active opportunity";
-        if (semanticAnswer) semanticAnswer.textContent = "Awaiting an explicit learner response";
+        if (semanticPhase) semanticPhase.textContent = copy.response;
+        if (semanticCue) semanticCue.textContent = qwLabel + copy.remains;
+        if (semanticAnswer) semanticAnswer.textContent = copy.awaitingResponse;
         if (learnerResponseForm) learnerResponseForm.hidden = false;
         if (learnerResponseInput) learnerResponseInput.focus();
       }, 850);
@@ -780,6 +1023,7 @@
 
   function contentLabelForMode(item) {
     if (!item) return "";
+    if (mode === "questions") return item[pedagogicalLanguage] || item.en;
     if (mode === "es") return item.es;
     if (mode === "pt") return item.pt;
     if (mode === "tripiano") return item.en + " · " + item.es + " · " + item.pt;
@@ -872,6 +1116,7 @@
       window.clearTimeout(pianinhoChordTimer);
       pianinhoChordTimer = null;
     }
+    localizeQuestionFlowSurface();
     updatePianinhoSequenceStatus();
   }
 
@@ -1149,13 +1394,14 @@
       const requestedState = button.dataset.waitRequest;
       setWaitArchetype(requestedState, "learner-declared");
 
+      const copy = currentQuestionCopy();
       semanticSequence.dataset.phase = "wait";
-      if (semanticPhase) semanticPhase.textContent = "WAIT";
+      if (semanticPhase) semanticPhase.textContent = copy.wait;
       if (semanticCue) semanticCue.textContent =
-        requestedState === "thinking" ? "Learner requested more time" :
-        requestedState === "confused" ? "Learner requested clarification" :
-        "Learner reports missing context";
-      if (semanticAnswer) semanticAnswer.textContent = "Explicit learner action • not evaluated • no Evidence";
+        requestedState === "thinking" ? copy.requestedTime :
+        requestedState === "confused" ? copy.requestedClarification :
+        copy.reportedContext;
+      if (semanticAnswer) semanticAnswer.textContent = copy.explicitAction;
 
       if (microSupportActions) {
         microSupportActions.hidden = requestedState === "thinking";
@@ -1166,6 +1412,7 @@
           type: "support-opportunity",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
+          language: pedagogicalLanguage,
           reason: requestedState,
           actions: requestedState === "thinking"
             ? []
@@ -1180,6 +1427,7 @@
           type: "wait-requested",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
+          language: pedagogicalLanguage,
           waitState: requestedState,
           evaluated: false,
           evidenceProduced: false
@@ -1193,19 +1441,18 @@
       if (!activeQuestionWord) return;
 
       const action = button.dataset.supportAction;
-      const model = questionWordPromptModels[activeQuestionWord.id] || {
-        gap: "information",
-        prompt: "Which information is missing?"
-      };
+      const copy = currentQuestionCopy();
+      const model = currentQuestionModel(activeQuestionWord);
+      const qwLabel = currentQuestionWordLabel(activeQuestionWord);
 
       if (action === "repeat-question") {
-        speak(activeQuestionWord.en + ". " + model.prompt, "en-US");
-        if (semanticCue) semanticCue.textContent = activeQuestionWord.en.toUpperCase() + " · " + model.prompt;
+        speak(qwLabel + ". " + model.prompt, copy.locale);
+        if (semanticCue) semanticCue.textContent = qwLabel.toUpperCase() + " · " + model.prompt;
       } else if (action === "hear-qw") {
-        speak(activeQuestionWord.en, "en-US");
-        if (semanticCue) semanticCue.textContent = activeQuestionWord.en.toUpperCase();
+        speak(qwLabel, copy.locale);
+        if (semanticCue) semanticCue.textContent = qwLabel.toUpperCase();
       } else if (action === "show-gap") {
-        if (semanticAnswer) semanticAnswer.textContent = "Information gap: " + model.gap;
+        if (semanticAnswer) semanticAnswer.textContent = copy.gapPrefix + model.gap;
       }
 
       activeSupportTrace.push({
@@ -1218,6 +1465,7 @@
           type: "support-action-used",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
+          language: pedagogicalLanguage,
           action,
           supportTrace: activeSupportTrace.map(item => ({ ...item })),
           evaluated: false,
@@ -1246,6 +1494,7 @@
           type: "response-submitted",
           source: "frondosa-semantic-lab",
           questionWordId: activeQuestionWord.id,
+          language: pedagogicalLanguage,
           responseText,
           learnerEvent,
           supportTrace: activeSupportTrace.map(item => ({ ...item })),
@@ -1255,12 +1504,13 @@
         }
       }));
 
+      const copy = currentQuestionCopy();
       clearWaitArchetype();
       semanticSequence.dataset.supportUsed = activeSupportTrace.length > 0 ? "true" : "false";
       semanticSequence.dataset.phase = "observed";
-      if (semanticPhase) semanticPhase.textContent = "OBSERVED";
-      if (semanticCue) semanticCue.textContent = "Learner response received";
-      if (semanticAnswer) semanticAnswer.textContent = "Not evaluated yet • no GREEN • no Evidence";
+      if (semanticPhase) semanticPhase.textContent = copy.observed;
+      if (semanticCue) semanticCue.textContent = copy.responseReceived;
+      if (semanticAnswer) semanticAnswer.textContent = copy.notEvaluated;
       learnerResponseForm.hidden = true;
 
       if (pianinho) {
@@ -1286,7 +1536,7 @@
       }));
 
       window.setTimeout(() => {
-        speak("Response received.", "en-US");
+        speak(copy.responseSpeech, copy.locale);
       }, 140);
 
       window.setTimeout(() => {
@@ -1301,15 +1551,16 @@
         if (frondosa) frondosa.classList.add("is-external-evaluation");
 
         semanticSequence.dataset.phase = "external-evaluation";
-        if (semanticPhase) semanticPhase.textContent = "EXTERNAL EVALUATION";
-        if (semanticCue) semanticCue.textContent = "Canonical evaluator requested";
-        if (semanticAnswer) semanticAnswer.textContent = "Awaiting external authority • no local judgement";
+        if (semanticPhase) semanticPhase.textContent = copy.externalPhase;
+        if (semanticCue) semanticCue.textContent = copy.externalCue;
+        if (semanticAnswer) semanticAnswer.textContent = copy.externalAnswer;
 
         window.dispatchEvent(new CustomEvent("siyayo:external-evaluation-request", {
           detail: {
             type: "learner-response-evaluation-request",
             source: "frondosa-semantic-lab",
             questionWordId: activeQuestionWord.id,
+            language: pedagogicalLanguage,
             responseText,
             learnerEvent,
             support: {
