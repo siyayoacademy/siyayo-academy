@@ -42,7 +42,7 @@ function mount(input){
   var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
   var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
   var loop=root.AdaptiveAttemptLoop;
-  if(!experience||!id(experience.id)||language!=='en'||!coordinator||!skills||!catalog||!loop)return false;
+  if(!experience||!id(experience.id)||!['en','es'].includes(language)||!coordinator||!skills||!catalog||!loop)return false;
   if(typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function')return false;
   if(typeof skills.getDefinition!=='function'||typeof catalog.getExperience!=='function')return false;
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
@@ -63,8 +63,8 @@ function mount(input){
   if(!source||!presenter||!resultApi||!evidenceBridge||!attemptBoundary||!wire||!support)return false;
   if(typeof source.resolve!=='function'||typeof presenter.present!=='function'||typeof loop.toEvidencePacket!=='function')return false;
   var specification=transfer
-    ?source.resolve(definition,root.AdaptiveDeterminerUseProbeSpecificationSource.resolve(definition,origin,'en'),experience,catalog.getNouns&&catalog.getNouns(),'en')
-    :source.resolve(definition,experience,'en');
+    ?source.resolve(definition,root.AdaptiveDeterminerUseProbeSpecificationSource.resolve(definition,origin,language,catalog.getNouns&&catalog.getNouns()),experience,catalog.getNouns&&catalog.getNouns(),language)
+    :source.resolve(definition,experience,language,catalog.getNouns&&catalog.getNouns());
   var presentation=presenter.present(specification);
   if(!specification||!presentation)return false;
   var container=doc.getElementById('determinerUseAssessmentOptions');
@@ -90,8 +90,10 @@ function mount(input){
       if(!coordinated)return null;
       var closure=coordinated.cycleResult&&coordinated.cycleResult.contractEvaluation;
       feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
-        ?'GREEN PASS · WHICH confirmed'
-        :result.result==='pass'?'Response recorded · assessment in progress':'Try another word';
+        ?(language==='es'?'GREEN PASS · QUÉ confirmado':'GREEN PASS · WHICH confirmed')
+        :result.result==='pass'
+          ?(language==='es'?'Respuesta registrada · evaluación en curso':'Response recorded · assessment in progress')
+          :(language==='es'?'Prueba otra palabra':'Try another word');
       feedback.hidden=false;
       var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
@@ -102,6 +104,7 @@ function mount(input){
   });
   if(installed!==true)return false;
   el.hidden=false;
+  el.querySelector('h3').textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':'WHICH · DETERMINER USE';
   el.dataset.assessmentMode=transfer?'transfer':'local';
   return true;
 }
