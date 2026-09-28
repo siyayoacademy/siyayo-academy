@@ -245,7 +245,7 @@ Promise.resolve().then(function(){
     sequenceView: { project: () => ({ skill: 'which.use.determiner', segments: s2Segments }) },
     stateBridge: { getState: () => ({ currentExperienceId: 'preparing-dinner' }) }
   }), true);
-  assert.match(container.innerHTML, /S1 ● concluída → S2 ○ nova avaliação · 0\/3/);
+  assert.match(container.innerHTML, /S1 ● concluída → S2 ◐ visitada · nova avaliação ○ 0\/3/);
   assert.match(container.innerHTML, /ESCOLHA ○ · USO ○ · TRANSFERÊNCIA ○ · 0\/3/);
   assert.match(container.innerHTML, /shopping-for-dinner/);
   assert.match(container.innerHTML, /preparing-dinner/);
