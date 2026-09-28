@@ -227,6 +227,29 @@ Promise.resolve().then(function(){
   assert.match(container.innerHTML, /●/);
   assert.match(container.innerHTML, /CONFIRMED/);
 
+  const s2Session = { decision: { skill: 'which.use.determiner', experienceId: 'preparing-dinner' } };
+  const s2Segments = [
+    { experienceId: 'shopping-for-dinner', state: 'CONFIRMED', marker: 'FILLED_DOT' },
+    { experienceId: 'preparing-dinner', state: 'IN_PROGRESS', marker: 'PARTIAL_DOT' }
+  ];
+  assert.equal(Surface.refresh({
+    document: documentRef,
+    language: 'pt',
+    coordinator: { snapshot: () => ({
+      session: s2Session,
+      context: { passContract: { requires: [
+        { dimension: 'choice-function' }, { dimension: 'determiner-use' }, { mode: 'transfer' }
+      ] }, evidencePackets: [] }
+    }) },
+    progressView: { project: () => ({ completed: 0, total: 3, satisfied: [false, false, false] }) },
+    sequenceView: { project: () => ({ skill: 'which.use.determiner', segments: s2Segments }) },
+    stateBridge: { getState: () => ({ currentExperienceId: 'preparing-dinner' }) }
+  }), true);
+  assert.match(container.innerHTML, /S1 ● concluída → S2 ○ nova avaliação · 0\/3/);
+  assert.match(container.innerHTML, /ESCOLHA ○ · USO ○ · TRANSFERÊNCIA ○ · 0\/3/);
+  assert.match(container.innerHTML, /shopping-for-dinner/);
+  assert.match(container.innerHTML, /preparing-dinner/);
+
   marker = Object.freeze({
     status: 'PROGRESS_MARKER_READY',
     skill: 'which.use.determiner',
