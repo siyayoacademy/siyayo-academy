@@ -49,6 +49,8 @@
   const blackKeys = keys.filter(key => key.kind === "black");
 
   // Perceptual labels only. Canonical QW capability/skill/evidence authority lives outside this stage.
+  const contentCollectionEngine = window.SIYAYOContentCollectionEngine || null;
+
   const questionWords = [
     { id:"what",      en:"What",      es:"Qué",          pt:"O que" },
     { id:"where",     en:"Where",     es:"Dónde",        pt:"Onde" },
@@ -65,6 +67,22 @@
     { id:"how-far",   en:"How far",   es:"Qué tan lejos",pt:"Quão longe" },
     { id:"how-often", en:"How often", es:"Con qué frecuencia", pt:"Com que frequência" }
   ];
+
+  if (contentCollectionEngine) {
+    contentCollectionEngine.register({
+      id: "question-words",
+      label: "Question Words",
+      status: "active-prototype",
+      items: questionWords.map(item => ({ ...item }))
+    });
+    contentCollectionEngine.activate("question-words", "piano-stage-bootstrap");
+  }
+
+  window.addEventListener("siyayo:activate-content-collection", event => {
+    if (!contentCollectionEngine) return;
+    const detail = event.detail || {};
+    contentCollectionEngine.activate(detail.id, detail.source || "external-experience");
+  });
 
   let mode = "sound";
   let audioContext = null;
