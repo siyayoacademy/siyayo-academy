@@ -42,7 +42,7 @@ function mount(input){
   var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
   var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
   var loop=root.AdaptiveAttemptLoop;
-  if(!experience||!id(experience.id)||!['en','es'].includes(language)||!coordinator||!skills||!catalog||!loop)return false;
+  if(!experience||!id(experience.id)||!['en','es','pt'].includes(language)||!coordinator||!skills||!catalog||!loop)return false;
   if(typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function')return false;
   if(typeof skills.getDefinition!=='function'||typeof catalog.getExperience!=='function')return false;
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
@@ -90,10 +90,10 @@ function mount(input){
       if(!coordinated)return null;
       var closure=coordinated.cycleResult&&coordinated.cycleResult.contractEvaluation;
       feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
-        ?(language==='es'?'GREEN PASS · QUÉ confirmado':'GREEN PASS · WHICH confirmed')
+        ?(language==='es'?'GREEN PASS · QUÉ confirmado':language==='pt'?'GREEN PASS · QUAL confirmado':'GREEN PASS · WHICH confirmed')
         :result.result==='pass'
-          ?(language==='es'?'Respuesta registrada · evaluación en curso':'Response recorded · assessment in progress')
-          :(language==='es'?'Prueba otra palabra':'Try another word');
+          ?(language==='es'?'Respuesta registrada · evaluación en curso':language==='pt'?'Resposta registrada · avaliação em andamento':'Response recorded · assessment in progress')
+          :(language==='es'?'Prueba otra palabra':language==='pt'?'Tente outra palavra':'Try another word');
       feedback.hidden=false;
       var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
@@ -105,7 +105,7 @@ function mount(input){
   if(installed!==true)return false;
   el.hidden=false;
   var title=typeof el.querySelector==='function'?el.querySelector('h3'):null;
-  if(title)title.textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':'WHICH · DETERMINER USE';
+  if(title)title.textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':language==='pt'?'QUAL · USO DO DETERMINANTE':'WHICH · DETERMINER USE';
   el.dataset.assessmentMode=transfer?'transfer':'local';
   return true;
 }
