@@ -309,3 +309,8 @@ jobs:
 
       - name: Verify grounded S2 and S3 WHAT answers
         run: node scripts/test-dinner-what-answer-grounding.js
+
+      - name: Verify read-only S2 WHAT probe specifications
+        run: |
+          node --check js/adaptive-what-object-question-probe-specification-source.js
+          node scripts/test-what-object-question-probe-specification-source.js
