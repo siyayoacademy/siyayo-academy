@@ -27,5 +27,14 @@ assert.equal(TransferResult.evaluate(transfer,{...transferEvent,mode:undefined})
 assert.equal(Local.resolve(skills,shopping,'es'),null,'missing canonical noun translation fails closed');
 assert.equal(Transfer.resolve(skills,local,shopping,nouns,'es'),null,'same Experience cannot claim transfer');
 assert.equal(Transfer.resolve(skills,local,{...preparing, links:{...preparing.links,vocabulary:[]}},nouns,'es'),null,'target noun must belong to destination');
-assert.equal(Local.resolve(skills,shopping,'pt',nouns),null,'PT remains outside this authored assessment');
-console.log('Spanish local and transfer WHICH specifications: PASS');
+const portugueseLocal=Local.resolve(skills,shopping,'pt',nouns);
+assert.equal(portugueseLocal.prompt,'Qual ___ devemos escolher?');
+assert.deepEqual(portugueseLocal.alternatives.map(item=>item.label),['queijo','devemos','escolher']);
+const portugueseTransfer=Transfer.resolve(skills,portugueseLocal,preparing,nouns,'pt');
+assert.equal(portugueseTransfer.prompt,'Quais ___ devemos cozinhar primeiro?');
+assert.deepEqual(portugueseTransfer.alternatives.map(item=>item.label),['cenouras','devemos','cozinhar','primeiro']);
+assert.equal(LocalResult.evaluate(portugueseLocal,{...localEvent,choice:'cheese'}).result,'pass');
+assert.equal(TransferResult.evaluate(portugueseTransfer,{...transferEvent,choice:'carrots'}).result,'pass');
+assert.equal(Local.resolve(skills,shopping,'pt'),null,'PT without canonical lexicon fails closed');
+assert.equal(Transfer.resolve(skills,portugueseLocal,{...preparing,thinkingMind:preparing.thinkingMind.map(entry=>entry.questionWord==='which'?{...entry,questionWordLabel:{...entry.questionWordLabel,pt:'QUAL'}}:entry)},nouns,'pt'),null,'plural form must agree with authored destination');
+console.log('Spanish and Portuguese local and transfer WHICH specifications: PASS');
