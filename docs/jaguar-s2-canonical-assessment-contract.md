@@ -26,7 +26,7 @@ As três provas exigem respostas observadas do aluno e proveniência de Session,
 ## Ordem mínima da próxima costura
 
 1. **CONCLUÍDO NO CORPUS:** ancorar respostas S2 em vegetais canônicos e S3 em `salmon`, com as três línguas; a distinção WHAT versus WHERE ainda precisa de probe avaliado. O teste `scripts/test-dinner-what-answer-grounding.js` verifica os vínculos e protege a transferência WHICH de S1.
-2. Declarar a nova skill e seu Pass Contract na autoridade de skills e na política de Green; estabelecer seleção da **próxima** skill no destino sem alterar a decisão de S1 nem a navegação. Se faltar configuração válida, permanecer em WAIT, sem 0/3 de habilidade fictícia.
+2. **DEFINIÇÃO DECLARADA; AUTORIDADE EM WAIT:** `data/learning/skills/what.json` contém o Pass Contract WHAT; a política Green ainda autoriza somente WHICH. A próxima ligação deve selecionar a skill WHAT no destino, validar a definição pela autoridade e instalar probes observados antes de incluí-la na política de Green. Não alterar decisão S1 ou navegação; sem configuração válida, permanecer em WAIT, sem 0/3 de habilidade fictícia.
 3. Conectar provas de função e resposta situada à Session S2 após adoção; apresentar feedback de cada observação separado da contagem do contrato. Verificar três idiomas e falhas de proveniência.
 4. Habilitar a prova de transferência S2→S3 sem adoção automática de S3; só Evidence canônica fecha Green de S2. Testar S1 Green preservado, S2 iniciada vazia, S2 1/3→2/3→3/3, e navegação por todo o anel independente da avaliação.
 5. Somente após esses testes, redesenhar estados visuais da Thinking Mind e da trilha para mostrar qual Session está ativa e distinguir “acertou esta questão”, progresso de habilidade e Green Pass.
