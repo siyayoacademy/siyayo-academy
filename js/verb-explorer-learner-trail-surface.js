@@ -126,6 +126,24 @@
       '</span>';
     }
 
+    // A visual invitation is derived from canonical contract progress; NEXT stays learner-owned.
+    var next=doc.getElementById('nextExperience');
+    var nextCard=next&&typeof next.closest==='function'?next.closest('.toroidal-next'):null;
+    if(nextCard){
+      var ready=!!(progress&&progress.completed===2&&progress.total===3&&
+        progress.satisfied[0]&&progress.satisfied[1]&&!progress.satisfied[2]&&
+        snapshot.session.decision.experienceId===liveState.currentExperienceId&&
+        text(next&&next.dataset&&next.dataset.nextExperience));
+      nextCard.classList.toggle('next-transfer-invitation',ready);
+      nextCard.style.boxShadow=ready?'0 0 0 2px #e3b856, 0 0 24px rgba(227,184,86,.45)':'';
+      var hint=doc.getElementById('nextTransferInvitation');
+      if(ready){
+        if(!hint){hint=doc.createElement('p');hint.id='nextTransferInvitation';nextCard.appendChild(hint);}
+        hint.textContent={en:'TRANSFER READY · Visit the next Experience to answer the final question.',es:'TRANSFERENCIA PENDIENTE · Visita la siguiente experiencia para responder la última pregunta.',pt:'TRANSFERÊNCIA PENDENTE · Visite a próxima experiência para responder à última pergunta.'}[language]||'TRANSFER READY · Visit the next Experience to answer the final question.';
+        hint.style.color='#f6cf73';
+      }else if(hint){hint.remove();}
+    }
+
     surface.dataset.marker=marker.marker;
     surface.dataset.state=marker.state;
     surface.hidden=false;
