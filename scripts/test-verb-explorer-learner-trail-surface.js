@@ -190,6 +190,23 @@ assert.doesNotMatch(container.innerHTML, /audio/i);
 assert.doesNotMatch(container.innerHTML, /mastery/i);
 assert.doesNotMatch(container.innerHTML, /score/i);
 
+marker = Object.freeze({
+  status: 'PROGRESS_MARKER_READY',
+  skill: 'which.use.determiner',
+  state: 'IN_PROGRESS',
+  marker: 'PARTIAL_DOT',
+  confirmedExperiences: 0
+});
+for (const [language, explanation] of Object.entries({
+  en: /OBSERVED RESPONSE.*contract checks are counted separately/,
+  es: /RESPUESTA OBSERVADA.*contrato se cuentan por separado/,
+  pt: /RESPOSTA OBSERVADA.*contrato são contadas separadamente/
+})) {
+  assert.equal(Surface.refresh({ document: documentRef, language }), true);
+  assert.equal(container.dataset.marker, 'PARTIAL_DOT');
+  assert.match(container.innerHTML, explanation);
+}
+
 assert.equal(Surface.install({ document: documentRef }), true);
 assert.equal(Surface.install({ document: documentRef }), false, 'surface wire installs once');
 assert.equal(listeners.click.length, 1);
