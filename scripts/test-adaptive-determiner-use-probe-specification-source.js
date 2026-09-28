@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const Source = require('../js/adaptive-determiner-use-probe-specification-source.js');
 const which = require('../data/learning/skills/which.json');
 const experiences = require('../data/learning/experience-seeds.json');
+const nouns = require('../data/lexicon/nouns/nouns.json');
 
 const shopping = experiences.items.find(item => item.id === 'shopping-for-dinner');
 assert.ok(shopping);
@@ -32,7 +33,8 @@ assert.ok(Object.isFrozen(specification.alternatives));
 
 assert.equal(Source.resolve(null, shopping, 'en'), null);
 assert.equal(Source.resolve(which, null, 'en'), null);
-assert.equal(Source.resolve(which, shopping, 'es'), null, 'first probe is explicitly target-language English');
+assert.equal(Source.resolve(which, shopping, 'es'), null, 'Spanish requires canonical noun lexicon');
+assert.equal(Source.resolve(which, shopping, 'es', nouns).prompt, '¿Qué ___ deberíamos elegir?');
 assert.equal(
   Source.resolve({ ...which, grammarRole: 'interrogative-pronoun' }, shopping, 'en'),
   null,
