@@ -306,3 +306,6 @@ jobs:
 
       - name: Run 6.16 Patita story trace tests
         run: node scripts/test-patita-story-trace.js
+
+      - name: Verify grounded S2 and S3 WHAT answers
+        run: node scripts/test-dinner-what-answer-grounding.js
