@@ -42,7 +42,35 @@ function install(options){
     if(!readiness||readiness.session!==current.session||skill!==readiness.skill)return null;
     return {pending:null,toExperience:readiness.toExperience,session:current.session,contract:contract,language:state.experienceLanguage};
   }
-  function refresh(){button.hidden=!eligible();return !button.hidden;}
+  var note=doc.getElementById('assessmentAdoptionStatus');
+  if(!note){
+    note=doc.createElement('p');
+    note.id='assessmentAdoptionStatus';
+    note.className='assessment-adoption-status';
+    note.setAttribute('aria-live','polite');
+    note.hidden=true;
+    view.insertBefore(note,button);
+  }
+  function refresh(){
+    var ready=eligible();
+    var bridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+    var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+    var state=bridge&&bridge.getState&&bridge.getState();
+    var snapshot=coordinator&&coordinator.snapshot&&coordinator.snapshot();
+    var origin=text(snapshot&&snapshot.session&&snapshot.session.decision&&snapshot.session.decision.experienceId);
+    var visited=origin==='shopping-for-dinner'&&state&&text(state.currentExperienceId)==='preparing-dinner';
+    var language=text(state&&state.experienceLanguage)||'en';
+    var labels={
+      en:{button:'START MY PROGRESS HERE',ready:'S1 ● completed → S2 ○ free exploration. Choose when to start a new assessment here.',visiting:'S2 ○ free exploration. Visiting does not start a new assessment.'},
+      es:{button:'COMENZAR MI PROGRESO AQUÍ',ready:'S1 ● completada → S2 ○ exploración libre. Tú eliges cuándo iniciar una nueva evaluación aquí.',visiting:'S2 ○ exploración libre. Visitar no inicia una nueva evaluación.'},
+      pt:{button:'COMEÇAR MEU PROGRESSO AQUI',ready:'S1 ● concluída → S2 ○ exploração livre. Você escolhe quando iniciar uma nova avaliação aqui.',visiting:'S2 ○ exploração livre. A visita não inicia uma nova avaliação.'}
+    }[language]||{button:'START MY PROGRESS HERE',ready:'S1 ● completed → S2 ○ free exploration. Choose when to start a new assessment here.',visiting:'S2 ○ free exploration. Visiting does not start a new assessment.'};
+    button.textContent=labels.button;
+    button.hidden=!ready;
+    note.hidden=!visited;
+    note.textContent=visited?(ready?labels.ready:labels.visiting):'';
+    return !button.hidden;
+  }
   if(button.__siyayoAssessmentAdoptionInstalled!==true){
     button.addEventListener('click',function(){
       var ready=eligible();
