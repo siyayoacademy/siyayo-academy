@@ -25,6 +25,9 @@
   const learnerWaitButtons = [...document.querySelectorAll("[data-wait-request]")];
   const microSupportActions = document.getElementById("microSupportActions");
   const microSupportButtons = [...document.querySelectorAll("[data-support-action]")];
+  const contextSupportPanel = document.getElementById("contextSupportPanel");
+  const contextSupportTitle = document.getElementById("contextSupportTitle");
+  const contextSupportText = document.getElementById("contextSupportText");
   const canonicalNavigationOpportunity = document.getElementById("canonicalNavigationOpportunity");
   const canonicalNavigationCopy = document.getElementById("canonicalNavigationCopy");
   const canonicalNavigationButton = document.getElementById("canonicalNavigationButton");
@@ -739,6 +742,93 @@
     }
   });
 
+  const questionContextModels = Object.freeze({
+    "what": {
+      sourceExperience:"shopping-for-dinner",
+      en:{ situation:"You are shopping for tonight's dinner.", question:"What are you going to cook?" },
+      es:{ situation:"Estás haciendo las compras para la cena de esta noche.", question:"¿Qué vas a cocinar?" },
+      pt:{ situation:"Você está fazendo as compras para o jantar desta noite.", question:"O que você vai cozinhar?" }
+    },
+    "where": {
+      sourceExperience:"shopping-for-dinner",
+      en:{ situation:"You are in the supermarket looking for the salmon.", question:"Where can you find the salmon?" },
+      es:{ situation:"Estás en el supermercado buscando el salmón.", question:"¿Dónde puedes encontrar el salmón?" },
+      pt:{ situation:"Você está no supermercado procurando o salmão.", question:"Onde você pode encontrar o salmão?" }
+    },
+    "when": {
+      sourceExperience:"preparing-dinner",
+      en:{ situation:"You are preparing dinner at home and deciding the cooking order.", question:"When should you cook the salmon?" },
+      es:{ situation:"Estás preparando la cena en casa y decidiendo el orden de cocción.", question:"¿Cuándo deberías cocinar el salmón?" },
+      pt:{ situation:"Você está preparando o jantar em casa e decidindo a ordem do preparo.", question:"Quando você deveria cozinhar o salmão?" }
+    },
+    "who": {
+      sourceExperience:"having-dinner",
+      en:{ situation:"Dinner is ready and everyone is at the table.", question:"Who would like some salmon?" },
+      es:{ situation:"La cena está lista y todos están en la mesa.", question:"¿Quién quiere un poco de salmón?" },
+      pt:{ situation:"O jantar está pronto e todos estão à mesa.", question:"Quem gostaria de um pouco de salmão?" }
+    },
+    "which": {
+      sourceExperience:"shopping-for-dinner",
+      en:{ situation:"There are two cheeses in front of you: one fresh and one aged.", question:"Which cheese should you choose?" },
+      es:{ situation:"Hay dos quesos frente a ti: uno fresco y uno curado.", question:"¿Qué queso deberías elegir?" },
+      pt:{ situation:"Há dois queijos diante de você: um fresco e um maturado.", question:"Qual queijo você deveria escolher?" }
+    },
+    "why": {
+      sourceExperience:"having-dinner",
+      en:{ situation:"You are enjoying the dinner you prepared together.", question:"Why is this dinner special?" },
+      es:{ situation:"Estás disfrutando la cena que prepararon juntos.", question:"¿Por qué esta cena es especial?" },
+      pt:{ situation:"Você está desfrutando o jantar que prepararam juntos.", question:"Por que este jantar é especial?" }
+    },
+    "how": {
+      sourceExperience:"preparing-dinner",
+      en:{ situation:"The rice is ready to be prepared.", question:"How are you going to prepare the rice?" },
+      es:{ situation:"El arroz está listo para ser preparado.", question:"¿Cómo vas a preparar el arroz?" },
+      pt:{ situation:"O arroz está pronto para ser preparado.", question:"Como você vai preparar o arroz?" }
+    },
+    "how-much": {
+      sourceExperience:"shopping-for-dinner",
+      en:{ situation:"You are choosing the amount of salmon for dinner.", question:"How much salmon do you need?" },
+      es:{ situation:"Estás eligiendo la cantidad de salmón para la cena.", question:"¿Cuánto salmón necesitas?" },
+      pt:{ situation:"Você está escolhendo a quantidade de salmão para o jantar.", question:"Quanto salmão você precisa?" }
+    },
+    "how-many": {
+      sourceExperience:"stage-context-prototype",
+      en:{ situation:"You are setting the table for four people.", question:"How many plates do you need?" },
+      es:{ situation:"Estás poniendo la mesa para cuatro personas.", question:"¿Cuántos platos necesitas?" },
+      pt:{ situation:"Você está arrumando a mesa para quatro pessoas.", question:"Quantos pratos você precisa?" }
+    },
+    "whose": {
+      sourceExperience:"stage-context-prototype",
+      en:{ situation:"There are several jackets near the table and one belongs to your friend.", question:"Whose jacket is this?" },
+      es:{ situation:"Hay varias chaquetas cerca de la mesa y una pertenece a tu amigo.", question:"¿De quién es esta chaqueta?" },
+      pt:{ situation:"Há várias jaquetas perto da mesa e uma pertence ao seu amigo.", question:"De quem é esta jaqueta?" }
+    },
+    "whom": {
+      sourceExperience:"after-dinner-conversation",
+      en:{ situation:"After dinner, you are deciding which person you would like to listen to.", question:"Whom would you like to listen to?" },
+      es:{ situation:"Después de la cena, estás decidiendo a qué persona te gustaría escuchar.", question:"¿A quién te gustaría escuchar?" },
+      pt:{ situation:"Depois do jantar, você está decidindo qual pessoa gostaria de escutar.", question:"A quem você gostaria de escutar?" }
+    },
+    "how-long": {
+      sourceExperience:"stage-context-prototype",
+      en:{ situation:"Dinner is cooking and you need to decide the cooking time.", question:"How long should the vegetables cook?" },
+      es:{ situation:"La cena se está cocinando y necesitas decidir el tiempo de cocción.", question:"¿Cuánto tiempo deben cocinarse las verduras?" },
+      pt:{ situation:"O jantar está sendo preparado e você precisa decidir o tempo de cozimento.", question:"Quanto tempo os legumes devem cozinhar?" }
+    },
+    "how-far": {
+      sourceExperience:"stage-context-prototype",
+      en:{ situation:"You are leaving home and going to the market.", question:"How far is the market from your home?" },
+      es:{ situation:"Estás saliendo de casa y yendo al mercado.", question:"¿Qué tan lejos está el mercado de tu casa?" },
+      pt:{ situation:"Você está saindo de casa e indo ao mercado.", question:"Quão longe fica o mercado da sua casa?" }
+    },
+    "how-often": {
+      sourceExperience:"stage-context-prototype",
+      en:{ situation:"You are talking about your weekly routine.", question:"How often do you cook at home?" },
+      es:{ situation:"Estás hablando de tu rutina semanal.", question:"¿Con qué frecuencia cocinas en casa?" },
+      pt:{ situation:"Você está falando sobre sua rotina semanal.", question:"Com que frequência você cozinha em casa?" }
+    }
+  });
+
   const questionFlowCopy = Object.freeze({
     en: {
       locale:"en-US",
@@ -762,6 +852,9 @@
       repeatQuestion:"Repeat question",
       hearQw:"Hear QW again",
       showGap:"Show information gap",
+      showContext:"Show context",
+      contextTitle:"CONTEXT",
+      contextAvailable:"Context available",
       placeholder:"Type your response…",
       submit:"Submit response",
       requestedTime:"Learner requested more time",
@@ -798,6 +891,9 @@
       repeatQuestion:"Repetir pregunta",
       hearQw:"Oír la palabra interrogativa otra vez",
       showGap:"Mostrar información faltante",
+      showContext:"Mostrar contexto",
+      contextTitle:"CONTEXTO",
+      contextAvailable:"Contexto disponible",
       placeholder:"Escribe tu respuesta…",
       submit:"Enviar respuesta",
       requestedTime:"El estudiante pidió más tiempo",
@@ -834,6 +930,9 @@
       repeatQuestion:"Repetir pergunta",
       hearQw:"Ouvir a palavra interrogativa novamente",
       showGap:"Mostrar informação faltante",
+      showContext:"Mostrar contexto",
+      contextTitle:"CONTEXTO",
+      contextAvailable:"Contexto disponível",
       placeholder:"Digite sua resposta…",
       submit:"Enviar resposta",
       requestedTime:"O aluno pediu mais tempo",
@@ -865,6 +964,47 @@
     return qw && (qw[pedagogicalLanguage] || qw.en) || "";
   }
 
+  function currentQuestionContext(qw) {
+    const family = questionContextModels[qw && qw.id];
+    return family && family[pedagogicalLanguage]
+      ? { ...family[pedagogicalLanguage], sourceExperience: family.sourceExperience || null }
+      : null;
+  }
+
+  function hideContextSupport() {
+    if (contextSupportPanel) contextSupportPanel.hidden = true;
+    if (contextSupportText) contextSupportText.textContent = "";
+  }
+
+  function showContextSupport({ speakIt = true } = {}) {
+    if (!activeQuestionWord) return false;
+    const copy = currentQuestionCopy();
+    const context = currentQuestionContext(activeQuestionWord);
+    if (!context) return false;
+
+    if (contextSupportTitle) contextSupportTitle.textContent = copy.contextTitle;
+    if (contextSupportText) {
+      contextSupportText.textContent = context.situation + " " + context.question;
+    }
+    if (contextSupportPanel) contextSupportPanel.hidden = false;
+
+    if (speakIt) speak(context.situation + " " + context.question, copy.locale);
+
+    window.dispatchEvent(new CustomEvent("siyayo:context-support-event", {
+      detail: {
+        type: "context-support-presented",
+        source: "frondosa-semantic-lab",
+        questionWordId: activeQuestionWord.id,
+        language: pedagogicalLanguage,
+        sourceExperience: context.sourceExperience,
+        evaluated: false,
+        evidenceProduced: false
+      }
+    }));
+
+    return true;
+  }
+
   function localizeQuestionFlowSurface() {
     const copy = currentQuestionCopy();
     if (learnerResponseInput) {
@@ -884,7 +1024,8 @@
       button.textContent =
         action === "repeat-question" ? copy.repeatQuestion :
         action === "hear-qw" ? copy.hearQw :
-        copy.showGap;
+        action === "show-gap" ? copy.showGap :
+        copy.showContext;
     });
 
     if (!activeQuestionWord && semanticSequence) {
@@ -961,6 +1102,7 @@
     if (learnerResponseForm) learnerResponseForm.hidden = true;
     if (learnerResponseInput) learnerResponseInput.value = "";
     if (microSupportActions) microSupportActions.hidden = true;
+    hideContextSupport();
     localizeQuestionFlowSurface();
   }
 
@@ -970,6 +1112,7 @@
     activeSupportTrace = [];
     clearCanonicalRouteResonance();
     clearCanonicalNavigationOpportunity();
+    hideContextSupport();
 
     const copy = currentQuestionCopy();
     const model = currentQuestionModel(qw);
@@ -1407,6 +1550,10 @@
         microSupportActions.hidden = requestedState === "thinking";
       }
 
+      if (requestedState === "insufficient-context") {
+        showContextSupport({ speakIt: true });
+      }
+
       window.dispatchEvent(new CustomEvent("siyayo:support-opportunity-event", {
         detail: {
           type: "support-opportunity",
@@ -1416,7 +1563,7 @@
           reason: requestedState,
           actions: requestedState === "thinking"
             ? []
-            : ["repeat-question","hear-qw","show-gap"],
+            : ["repeat-question","hear-qw","show-gap","show-context"],
           evaluated: false,
           evidenceProduced: false
         }
@@ -1453,6 +1600,9 @@
         if (semanticCue) semanticCue.textContent = qwLabel.toUpperCase();
       } else if (action === "show-gap") {
         if (semanticAnswer) semanticAnswer.textContent = copy.gapPrefix + model.gap;
+      } else if (action === "show-context") {
+        showContextSupport({ speakIt: true });
+        if (semanticCue) semanticCue.textContent = copy.contextAvailable;
       }
 
       activeSupportTrace.push({
