@@ -821,14 +821,32 @@
       }, 660);
     } else {
       const playedKey = keys.find(item => item.id === detail.note);
-      if (playedKey && playedKey.kind === "black" && pianinho) {
-        // Pianinho's visible hotspots are still the eight white-note anchors.
-        // Chromatic notes nevertheless belong to the same melodic scale, so
-        // the whole actor resonates without inventing black-key geometry.
-        pianinho.classList.remove("is-resonating");
-        void pianinho.offsetWidth;
-        pianinho.classList.add("is-resonating");
-        window.setTimeout(() => pianinho.classList.remove("is-resonating"), 660);
+      if (playedKey && playedKey.kind === "black") {
+        // Chromatic notes are musical identities, not Question Word leaves.
+        // The actors therefore answer globally instead of inventing semantic hotspots.
+        [pianinho, frondosa].forEach(actor => {
+          if (!actor) return;
+          actor.classList.remove("is-chromatic-resonance");
+          void actor.offsetWidth;
+          actor.classList.add("is-chromatic-resonance");
+        });
+
+        window.dispatchEvent(new CustomEvent("siyayo:chromatic-resonance", {
+          detail: {
+            type: "chromatic-note-resonance",
+            source: detail.source || "unknown",
+            note: playedKey.id,
+            pitch: pitchIdentityForKey(playedKey),
+            semanticActivation: false,
+            evaluated: false,
+            evidenceProduced: false
+          }
+        }));
+
+        window.setTimeout(() => {
+          if (pianinho) pianinho.classList.remove("is-chromatic-resonance");
+          if (frondosa) frondosa.classList.remove("is-chromatic-resonance");
+        }, 720);
       }
     }
   });
