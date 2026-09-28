@@ -36,6 +36,13 @@
     return {en:{title:'LEARNING TRAIL',context:'CONTEXT',contexts:'CONTEXTS'},es:{title:'RUTA DE APRENDIZAJE',context:'CONTEXTO',contexts:'CONTEXTOS'},pt:{title:'TRILHA DE APRENDIZAGEM',context:'CONTEXTO',contexts:'CONTEXTOS'}}[language]||{title:'LEARNING TRAIL',context:'CONTEXT',contexts:'CONTEXTS'};
   }
 
+  function observationLabel(language){
+    return {en:'◐ OBSERVED RESPONSE · the contract checks are counted separately',
+      es:'◐ RESPUESTA OBSERVADA · las pruebas del contrato se cuentan por separado',
+      pt:'◐ RESPOSTA OBSERVADA · as provas do contrato são contadas separadamente'}[language]||
+      '◐ OBSERVED RESPONSE · the contract checks are counted separately';
+  }
+
   function refresh(options){
     options=options||{};
     var doc=options.document||root.document;
@@ -153,7 +160,9 @@
         '<span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
         '<strong>'+escapeHtml(label.form)+'</strong>'+
         '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
-        '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+progressHtml+
+        '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
+        (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
+        progressHtml+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
       '</div>';
 
