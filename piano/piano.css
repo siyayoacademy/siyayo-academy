@@ -1877,3 +1877,34 @@ h1 {
   text-align:center;
   white-space:normal;
 }
+
+
+/* =========================================================
+   CHROMATIC RESONANCE PASS
+   Black-key notes are perceived globally by the partner actors
+   without pretending that a chromatic pitch is a semantic leaf.
+   ========================================================= */
+.pianinho.is-chromatic-resonance .pianinho-visual {
+  animation:chromaticActorPulse 720ms var(--motion-ease);
+  filter:drop-shadow(0 0 14px rgba(226,233,244,.46))
+         drop-shadow(0 0 24px rgba(242,216,138,.18));
+}
+
+.frondosa.is-chromatic-resonance .frondosa-visual {
+  animation:chromaticActorPulse 720ms var(--motion-ease);
+  filter:drop-shadow(0 0 16px rgba(226,233,244,.38))
+         drop-shadow(0 0 28px rgba(242,216,138,.16));
+}
+
+@keyframes chromaticActorPulse {
+  0% { transform:scale(1); opacity:1; }
+  45% { transform:scale(1.018); opacity:.92; }
+  100% { transform:scale(1); opacity:1; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.is-chromatic-resonance .pianinho-visual,
+  .frondosa.is-chromatic-resonance .frondosa-visual {
+    animation:none;
+  }
+}
