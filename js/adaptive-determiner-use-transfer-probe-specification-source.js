@@ -20,16 +20,17 @@
     }));
   }
 
-  function canonicalNounId(question,nouns,targetVocabulary){
+  function canonicalNounId(question,nouns,targetVocabulary,language){
     var items=nouns&&Array.isArray(nouns.items)?nouns.items:[];
     var vocabulary=Array.isArray(targetVocabulary)?targetVocabulary:[];
     var lower=text(question).toLowerCase();
-    if(!lower.startsWith('which '))return null;
+    var prefix=language==='es'?'¿qué ':'which ';
+    if(!lower.startsWith(prefix))return null;
 
     var matches=items.filter(function(noun){
       var id=text(noun&&noun.id);
-      var en=text(noun&&noun.translations&&noun.translations.en);
-      return id&&en&&vocabulary.includes(id)&&lower.startsWith('which '+en.toLowerCase()+' ');
+      var word=text(noun&&noun.translations&&noun.translations[language]);
+      return id&&word&&vocabulary.includes(id)&&lower.startsWith(prefix+word.toLowerCase()+' ');
     });
 
     return matches.length===1?matches[0].id:null;
@@ -37,7 +38,7 @@
 
   function resolve(skillDefinition,localSpecification,targetExperience,nouns,language){
     if(!skillDefinition||!localSpecification||!targetExperience||!nouns)return null;
-    if(text(language)!=='en')return null;
+    if(!['en','es'].includes(text(language)))return null;
     if(text(skillDefinition.id)!=='which.use.determiner')return null;
     if(text(skillDefinition.form)!=='which')return null;
     if(text(skillDefinition.grammarRole)!=='interrogative-determiner')return null;
@@ -60,21 +61,22 @@
       : [];
     if(entries.length!==1)return null;
 
-    var question=text(entries[0].question.en);
+    var question=text(entries[0].question[language]);
     if(!question)return null;
 
     var nounId=canonicalNounId(
       question,
       nouns,
-      targetExperience.links&&targetExperience.links.vocabulary
+      targetExperience.links&&targetExperience.links.vocabulary,
+      language
     );
     if(!nounId||nounId===localTargetNoun)return null;
 
     var noun=(nouns.items||[]).find(function(item){return text(item&&item.id)===nounId;});
-    var nounText=text(noun&&noun.translations&&noun.translations.en);
+    var nounText=text(noun&&noun.translations&&noun.translations[language]);
     if(!nounText)return null;
 
-    var expectedPrefix='Which '+nounText+' ';
+    var expectedPrefix=language==='es'?'¿Qué '+nounText+' ':'Which '+nounText+' ';
     if(question.indexOf(expectedPrefix)!==0)return null;
 
     var remainder=question.slice(expectedPrefix.length);
@@ -106,7 +108,7 @@
       targetForm:'which',
       targetNoun:nounId,
       question:question,
-      prompt:'Which ___ '+remainder,
+      prompt:(language==='es'?'¿Qué ___ ':'Which ___ ')+remainder,
       expectedAlternativeId:nounId,
       alternatives:freezeAlternatives([
         {id:nounId,label:nounText},
