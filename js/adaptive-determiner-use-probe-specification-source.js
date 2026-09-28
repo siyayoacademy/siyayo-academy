@@ -22,9 +22,9 @@
     }));
   }
 
-  function resolve(skillDefinition,experience,language){
+  function resolve(skillDefinition,experience,language,nouns){
     if(!skillDefinition||!experience)return null;
-    if(text(language)!=='en')return null;
+    if(!['en','es'].includes(text(language)))return null;
     if(text(skillDefinition.id)!=='which.use.determiner')return null;
     if(text(skillDefinition.form)!=='which')return null;
     if(text(skillDefinition.grammarRole)!=='interrogative-determiner')return null;
@@ -46,11 +46,14 @@
 
     var entry=entries[0];
     var context=entry.choiceContext;
-    var question=text(entry.question.en);
-    var noun=text(context.focusVocabulary);
+    var question=text(entry.question[language]);
+    var nounId=text(context.focusVocabulary);
+    var noun=language==='es'
+      ?text(((nouns&&nouns.items)||[]).find(function(item){return text(item&&item.id)===nounId;})?.translations?.es)
+      :nounId;
     if(!question||!noun)return null;
 
-    var expectedPrefix='Which '+noun+' ';
+    var expectedPrefix=language==='es'?'¿Qué '+noun+' ':'Which '+noun+' ';
     if(question.indexOf(expectedPrefix)!==0)return null;
 
     var remainder=question.slice(expectedPrefix.length);
@@ -62,33 +65,32 @@
       .map(text)
       .filter(Boolean);
 
-    if(tokens.length<3)return null;
+    if(tokens.length<(language==='es'?2:3))return null;
 
     var distractors=[];
-    for(var i=0;i<tokens.length&&distractors.length<3;i+=1){
+    for(var i=0;i<tokens.length&&distractors.length<(language==='es'?2:3);i+=1){
       var token=tokens[i].toLowerCase();
       if(token!==noun.toLowerCase()&&!distractors.includes(token)){
         distractors.push(token);
       }
     }
 
-    if(distractors.length!==3)return null;
+    if(distractors.length!==(language==='es'?2:3))return null;
 
     return Object.freeze({
       skill:'which.use.determiner',
       experienceId:text(experience.id),
       dimension:'determiner-use',
       targetForm:'which',
-      targetNoun:noun,
+      targetNoun:nounId,
       question:question,
-      prompt:'Which ___ '+remainder,
-      expectedAlternativeId:noun,
+      prompt:(language==='es'?'¿Qué ___ ':'Which ___ ')+remainder,
+      expectedAlternativeId:nounId,
       alternatives:freezeAlternatives([
-        {id:noun,label:noun},
+        {id:nounId,label:noun},
         {id:distractors[0],label:distractors[0]},
-        {id:distractors[1],label:distractors[1]},
-        {id:distractors[2],label:distractors[2]}
-      ])
+        {id:distractors[1],label:distractors[1]}
+      ].concat(language==='en'?[{id:distractors[2],label:distractors[2]}]:[]))
     });
   }
 
