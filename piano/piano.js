@@ -7,6 +7,7 @@
   const wordStatus = document.getElementById("wordStatus");
   const modeStatus = document.getElementById("modeStatus");
   const modeButtons = [...document.querySelectorAll(".mode-button")];
+  const collectionButtons = [...document.querySelectorAll(".collection-button")];
   const pianinho = document.getElementById("pianinho");
   const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
   const pianinhoSequenceStatus = document.getElementById("pianinhoSequenceStatus");
@@ -68,12 +69,106 @@
     { id:"how-often", en:"How often", es:"Con qué frecuencia", pt:"Com que frequência" }
   ];
 
+  const nounItems = [
+      {
+          "id": "cheese",
+          "en": "Cheese",
+          "es": "Queso",
+          "pt": "Queijo"
+      },
+      {
+          "id": "bread",
+          "en": "Bread",
+          "es": "Pan",
+          "pt": "Pão"
+      },
+      {
+          "id": "market",
+          "en": "Market",
+          "es": "Mercado",
+          "pt": "Mercado"
+      },
+      {
+          "id": "hotel",
+          "en": "Hotel",
+          "es": "Hotel",
+          "pt": "Hotel"
+      },
+      {
+          "id": "airport",
+          "en": "Airport",
+          "es": "Aeropuerto",
+          "pt": "Aeroporto"
+      },
+      {
+          "id": "book",
+          "en": "Book",
+          "es": "Libro",
+          "pt": "Livro"
+      },
+      {
+          "id": "teacher",
+          "en": "Teacher",
+          "es": "Profesor",
+          "pt": "Professor"
+      },
+      {
+          "id": "student",
+          "en": "Student",
+          "es": "Estudiante",
+          "pt": "Estudante"
+      },
+      {
+          "id": "music",
+          "en": "Music",
+          "es": "Música",
+          "pt": "Música"
+      },
+      {
+          "id": "tree",
+          "en": "Tree",
+          "es": "Árbol",
+          "pt": "Árvore"
+      },
+      {
+          "id": "dinner",
+          "en": "Dinner",
+          "es": "Cena",
+          "pt": "Jantar"
+      },
+      {
+          "id": "water",
+          "en": "Water",
+          "es": "Agua",
+          "pt": "Água"
+      },
+      {
+          "id": "city",
+          "en": "City",
+          "es": "Ciudad",
+          "pt": "Cidade"
+      },
+      {
+          "id": "friend",
+          "en": "Friend",
+          "es": "Amigo",
+          "pt": "Amigo"
+      }
+  ];
+  let activeCollectionId = "question-words";
+
   if (contentCollectionEngine) {
     contentCollectionEngine.register({
       id: "question-words",
       label: "Question Words",
       status: "active-prototype",
       items: questionWords.map(item => ({ ...item }))
+    });
+    contentCollectionEngine.register({
+      id: "nouns",
+      label: "Nouns",
+      status: "visual-prototype",
+      items: nounItems.map(item => ({ ...item }))
     });
     contentCollectionEngine.activate("question-words", "piano-stage-bootstrap");
   }
@@ -519,6 +614,10 @@
     button.addEventListener("click", () => setMode(button.dataset.mode));
   });
 
+  collectionButtons.forEach(button => {
+    button.addEventListener("click", () => setActiveCollection(button.dataset.collection));
+  });
+
   if (semanticCadenceButton) {
     semanticCadenceButton.addEventListener("click", () => {
       runSemanticCadence(semanticCadenceExample);
@@ -668,13 +767,25 @@
     return questionWords.find(item => item.id === leaf.dataset.qw);
   }
 
+  function nounForLeaf(leaf) {
+    const index = leaves.indexOf(leaf);
+    return index >= 0 ? nounItems[index] || null : null;
+  }
+
+  function activeContentItemForLeaf(leaf) {
+    return activeCollectionId === "nouns" ? nounForLeaf(leaf) : questionWordForLeaf(leaf);
+  }
+
+  function contentLabelForMode(item) {
+    if (!item) return "";
+    if (mode === "es") return item.es;
+    if (mode === "pt") return item.pt;
+    if (mode === "tripiano") return item.en + " · " + item.es + " · " + item.pt;
+    return item.en;
+  }
+
   function leafLabelForMode(leaf) {
-    const qw = questionWordForLeaf(leaf);
-    if (!qw) return "";
-    if (mode === "es") return qw.es;
-    if (mode === "pt") return qw.pt;
-    if (mode === "tripiano") return qw.en + " · " + qw.es + " · " + qw.pt;
-    return qw.en;
+    return contentLabelForMode(activeContentItemForLeaf(leaf));
   }
 
   function refreshFrondosaLabels() {
@@ -682,6 +793,68 @@
       const label = leaf.querySelector("span");
       if (label) label.textContent = leafLabelForMode(leaf);
     });
+  }
+
+  function speakContentItem(item) {
+    if (!item) return;
+    if (mode === "es") speak(item.es, "es-ES");
+    else if (mode === "pt") speak(item.pt, "pt-BR");
+    else if (mode === "tripiano") {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      [
+        [item.en, "en-US"],
+        [item.es, "es-ES"],
+        [item.pt, "pt-BR"]
+      ].forEach(([text, lang]) => {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = lang;
+        u.rate = 0.86;
+        window.speechSynthesis.speak(u);
+      });
+    } else {
+      speak(item.en, "en-US");
+    }
+  }
+
+  function setActiveCollection(nextId) {
+    if (!["question-words","nouns"].includes(nextId)) return;
+    activeCollectionId = nextId;
+    if (contentCollectionEngine) {
+      contentCollectionEngine.activate(nextId, "piano-stage-collection-control");
+    }
+
+    collectionButtons.forEach(button => {
+      button.classList.toggle("is-active", button.dataset.collection === activeCollectionId);
+    });
+
+    const questionsButton = modeButtons.find(button => button.dataset.mode === "questions");
+    if (questionsButton) questionsButton.disabled = activeCollectionId !== "question-words";
+
+    if (activeCollectionId === "nouns" && mode === "questions") {
+      setMode("en");
+    }
+
+    if (semanticSequence) semanticSequence.dataset.phase = "idle";
+    if (semanticPhase) semanticPhase.textContent = activeCollectionId === "nouns" ? "NOUNS" : "READY";
+    if (semanticCue) semanticCue.textContent = activeCollectionId === "nouns"
+      ? "Touch a noun leaf"
+      : "Touch a Question Word leaf";
+    if (semanticAnswer) semanticAnswer.textContent = activeCollectionId === "nouns"
+      ? "Explore collection • no evaluation"
+      : "Question → WAIT → learner response";
+    if (learnerResponseForm) learnerResponseForm.hidden = true;
+    clearWaitArchetype();
+    refreshFrondosaLabels();
+
+    window.dispatchEvent(new CustomEvent("siyayo:content-surface-presented", {
+      detail: {
+        collectionId: activeCollectionId,
+        source: "frondosa",
+        evaluated: false,
+        evidenceProduced: false
+      }
+    }));
   }
 
 
@@ -855,8 +1028,39 @@
     leaf.addEventListener("click", () => {
       const key = keys.find(item => item.id === leaf.dataset.note);
       const qw = questionWordForLeaf(leaf);
-      if (!key || !qw) return;
+      const contentItem = activeContentItemForLeaf(leaf);
+      if (!key || !contentItem) return;
 
+      if (activeCollectionId === "nouns") {
+        const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+        if (pianoKey) activateKey(pianoKey, key, "frondosa", {
+          kind: "content-item",
+          collectionId: "nouns",
+          id: contentItem.id,
+          evidence: "none"
+        });
+
+        speakContentItem(contentItem);
+        if (semanticSequence) semanticSequence.dataset.phase = "observed";
+        if (semanticPhase) semanticPhase.textContent = "NOUN";
+        if (semanticCue) semanticCue.textContent = contentLabelForMode(contentItem);
+        if (semanticAnswer) semanticAnswer.textContent = "Collection item explored • no evaluation";
+
+        window.dispatchEvent(new CustomEvent("siyayo:content-item-event", {
+          detail: {
+            type: "content-item-explored",
+            source: "frondosa",
+            collectionId: "nouns",
+            itemId: contentItem.id,
+            mode,
+            evaluated: false,
+            evidenceProduced: false
+          }
+        }));
+        return;
+      }
+
+      if (!qw) return;
       const semanticIdentity = {
         kind: "question-word",
         id: qw.id,
