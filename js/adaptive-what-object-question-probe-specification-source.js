@@ -45,7 +45,7 @@
           (mode==='local'?!item.semanticTags.includes('vegetable'):item.id!=='salmon');});
       if(!distractor)return null;
       if(mode==='local'&&accepted.some(function(item){return !item.semanticTags.includes('vegetable');}))return null;
-      return Object.freeze({skill:skill.id,experienceId:experience.id,fromExperienceId:mode==='transfer'?local.id:null,
+      return Object.freeze({skill:skill.id,language:language,experienceId:experience.id,fromExperienceId:mode==='transfer'?local.id:null,
         dimension:'object-answer',mode:mode,question:question.question[language],context:grounding.context[language],
         expectedAlternativeIds:Object.freeze(grounding.acceptedVocabularyIds.slice()),
         alternatives:freezeOptions(accepted.concat([distractor]).map(function(item){return {id:item.id,label:item.translations[language]};}))});
@@ -53,7 +53,7 @@
     var situated=answer(what,local,'local'),cross=answer(later,transfer,'transfer');
     if(!situated||!cross)return null;
     return Object.freeze({
-      functionProbe:Object.freeze({skill:skill.id,experienceId:local.id,dimension:'question-function',
+      functionProbe:Object.freeze({skill:skill.id,language:language,experienceId:local.id,dimension:'question-function',mode:'local',
         question:what.question[language],expectedAlternativeId:'what',
         alternatives:freezeOptions([{id:'what',label:what.questionWordLabel[language]},
           {id:'where',label:where.questionWordLabel[language]}])}),
