@@ -321,3 +321,10 @@ jobs:
         run: node scripts/test-interference-longitudinal-cycle.js
       - name: Test grounded contrast probe longitudinal closure
         run: node scripts/test-contrast-probe-longitudinal-cycle.js
+
+      - name: Test observed S2 WHAT Evidence provenance
+        run: |
+          node --check js/adaptive-what-object-question-probe-result.js
+          node --check js/adaptive-what-object-question-probe-evidence-bridge.js
+          node --check js/adaptive-what-object-question-probe-attempt-boundary.js
+          node scripts/test-what-object-question-observed-evidence.js
