@@ -7,6 +7,8 @@ const root = path.join(__dirname, '..');
 const items = JSON.parse(fs.readFileSync(path.join(root, 'data/learning/experience-seeds.json'), 'utf8')).items;
 const nouns = JSON.parse(fs.readFileSync(path.join(root, 'data/lexicon/nouns/nouns.json'), 'utf8')).items;
 const nounById = new Map(nouns.map(noun => [noun.id, noun]));
+const whatSkill = JSON.parse(fs.readFileSync(path.join(root, 'data/learning/skills/what.json'), 'utf8'));
+const greenPolicy = fs.readFileSync(path.join(root, 'js/green-pass-authority-policy.js'), 'utf8');
 const byId = new Map(items.map(item => [item.id, item]));
 const shopping = byId.get('shopping-for-dinner');
 const preparing = byId.get('preparing-dinner');
@@ -50,5 +52,13 @@ assert.deepEqual(transfer[0].question, {
   pt: 'Quais cenouras devemos cozinhar primeiro?'
 });
 assert.equal(transfer[0].answerGrounding, undefined, 'S1 transfer remains a separate assessment');
+
+assert.equal(whatSkill.id, 'what.use.object-question');
+assert.deepEqual(whatSkill.passContract.requires, [
+  {dimension: 'question-function', result: 'pass'},
+  {dimension: 'object-answer', result: 'pass', support: 'none'},
+  {dimension: 'object-answer', result: 'pass', mode: 'transfer', support: 'none'}
+]);
+assert.ok(!greenPolicy.includes("'what.use.object-question'"), 'WHAT cannot become a Green authority without observed probes');
 
 console.log('PASS — S2 and S3 WHAT answer grounding is trilingual, canonical and separate from S1 WHICH transfer.');
