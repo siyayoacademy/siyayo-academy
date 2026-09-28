@@ -24,7 +24,7 @@
 
   function resolve(skillDefinition,experience,language,nouns){
     if(!skillDefinition||!experience)return null;
-    if(!['en','es'].includes(text(language)))return null;
+    if(!['en','es','pt'].includes(text(language)))return null;
     if(text(skillDefinition.id)!=='which.use.determiner')return null;
     if(text(skillDefinition.form)!=='which')return null;
     if(text(skillDefinition.grammarRole)!=='interrogative-determiner')return null;
@@ -48,12 +48,14 @@
     var context=entry.choiceContext;
     var question=text(entry.question[language]);
     var nounId=text(context.focusVocabulary);
-    var noun=language==='es'
-      ?text(((nouns&&nouns.items)||[]).find(function(item){return text(item&&item.id)===nounId;})?.translations?.es)
+    var noun=language!=='en'
+      ?text(((nouns&&nouns.items)||[]).find(function(item){return text(item&&item.id)===nounId;})?.translations?.[language])
       :nounId;
     if(!question||!noun)return null;
 
-    var expectedPrefix=language==='es'?'¿Qué '+noun+' ':'Which '+noun+' ';
+    var form=language==='pt'?text(entry.questionWordLabel&&entry.questionWordLabel.pt):'';
+    if(language==='pt'&&form.toLowerCase()!==text(skillDefinition.realizations&&skillDefinition.realizations.pt&&skillDefinition.realizations.pt.form))return null;
+    var expectedPrefix=language==='es'?'¿Qué '+noun+' ':language==='pt'?form.charAt(0)+form.slice(1).toLowerCase()+' '+noun+' ':'Which '+noun+' ';
     if(question.indexOf(expectedPrefix)!==0)return null;
 
     var remainder=question.slice(expectedPrefix.length);
@@ -65,17 +67,17 @@
       .map(text)
       .filter(Boolean);
 
-    if(tokens.length<(language==='es'?2:3))return null;
+    if(tokens.length<(language==='en'?3:2))return null;
 
     var distractors=[];
-    for(var i=0;i<tokens.length&&distractors.length<(language==='es'?2:3);i+=1){
+    for(var i=0;i<tokens.length&&distractors.length<(language==='en'?3:2);i+=1){
       var token=tokens[i].toLowerCase();
       if(token!==noun.toLowerCase()&&!distractors.includes(token)){
         distractors.push(token);
       }
     }
 
-    if(distractors.length!==(language==='es'?2:3))return null;
+    if(distractors.length!==(language==='en'?3:2))return null;
 
     return Object.freeze({
       skill:'which.use.determiner',
@@ -84,7 +86,7 @@
       targetForm:'which',
       targetNoun:nounId,
       question:question,
-      prompt:(language==='es'?'¿Qué ___ ':'Which ___ ')+remainder,
+      prompt:expectedPrefix.replace(noun+' ','___ ')+remainder,
       expectedAlternativeId:nounId,
       alternatives:freezeAlternatives([
         {id:nounId,label:noun},
