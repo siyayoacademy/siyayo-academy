@@ -10,7 +10,93 @@
         "es": "Sustantivos",
         "pt": "Substantivos"
       },
-      "status": "registered"
+      "status": "visual-prototype",
+      "items": [
+        {
+          "id": "cheese",
+          "en": "Cheese",
+          "es": "Queso",
+          "pt": "Queijo"
+        },
+        {
+          "id": "bread",
+          "en": "Bread",
+          "es": "Pan",
+          "pt": "Pão"
+        },
+        {
+          "id": "market",
+          "en": "Market",
+          "es": "Mercado",
+          "pt": "Mercado"
+        },
+        {
+          "id": "hotel",
+          "en": "Hotel",
+          "es": "Hotel",
+          "pt": "Hotel"
+        },
+        {
+          "id": "airport",
+          "en": "Airport",
+          "es": "Aeropuerto",
+          "pt": "Aeroporto"
+        },
+        {
+          "id": "book",
+          "en": "Book",
+          "es": "Libro",
+          "pt": "Livro"
+        },
+        {
+          "id": "teacher",
+          "en": "Teacher",
+          "es": "Profesor",
+          "pt": "Professor"
+        },
+        {
+          "id": "student",
+          "en": "Student",
+          "es": "Estudiante",
+          "pt": "Estudante"
+        },
+        {
+          "id": "music",
+          "en": "Music",
+          "es": "Música",
+          "pt": "Música"
+        },
+        {
+          "id": "tree",
+          "en": "Tree",
+          "es": "Árbol",
+          "pt": "Árvore"
+        },
+        {
+          "id": "dinner",
+          "en": "Dinner",
+          "es": "Cena",
+          "pt": "Jantar"
+        },
+        {
+          "id": "water",
+          "en": "Water",
+          "es": "Agua",
+          "pt": "Água"
+        },
+        {
+          "id": "city",
+          "en": "City",
+          "es": "Ciudad",
+          "pt": "Cidade"
+        },
+        {
+          "id": "friend",
+          "en": "Friend",
+          "es": "Amigo",
+          "pt": "Amigo"
+        }
+      ]
     },
     {
       "id": "pronouns",
