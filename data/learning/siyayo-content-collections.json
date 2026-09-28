@@ -1,0 +1,123 @@
+{
+  "id": "siyayo-content-collections-v1",
+  "version": "1.0",
+  "activePrototype": "question-words",
+  "collections": [
+    {
+      "id": "nouns",
+      "label": {
+        "en": "Nouns",
+        "es": "Sustantivos",
+        "pt": "Substantivos"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "pronouns",
+      "label": {
+        "en": "Pronouns",
+        "es": "Pronombres",
+        "pt": "Pronomes"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "verbs",
+      "label": {
+        "en": "Verbs",
+        "es": "Verbos",
+        "pt": "Verbos"
+      },
+      "status": "registered",
+      "layers": [
+        "meaning-function",
+        "tense",
+        "form",
+        "mode"
+      ]
+    },
+    {
+      "id": "adjectives",
+      "label": {
+        "en": "Adjectives",
+        "es": "Adjetivos",
+        "pt": "Adjetivos"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "conjunctions",
+      "label": {
+        "en": "Conjunctions",
+        "es": "Conjunciones",
+        "pt": "Conjunções"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "articles",
+      "label": {
+        "en": "Articles",
+        "es": "Artículos",
+        "pt": "Artigos"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "adverbs",
+      "label": {
+        "en": "Adverbs",
+        "es": "Adverbios",
+        "pt": "Advérbios"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "prepositions",
+      "label": {
+        "en": "Prepositions",
+        "es": "Preposiciones",
+        "pt": "Preposições"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "interjections",
+      "label": {
+        "en": "Interjections",
+        "es": "Interjecciones",
+        "pt": "Interjeições"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "numerals",
+      "label": {
+        "en": "Numerals",
+        "es": "Numerales",
+        "pt": "Numerais"
+      },
+      "status": "registered"
+    },
+    {
+      "id": "question-words",
+      "label": {
+        "en": "Question Words",
+        "es": "Palabras interrogativas",
+        "pt": "Palavras interrogativas"
+      },
+      "status": "active-prototype",
+      "itemSource": "piano-runtime-question-words"
+    }
+  ],
+  "activities": [
+    "explore-collection",
+    "explore-examples",
+    "semantic-opportunity"
+  ],
+  "principles": {
+    "sameActorsDifferentCollections": true,
+    "collectionDoesNotOwnEvaluation": true,
+    "languageLensOrthogonal": true
+  }
+}
