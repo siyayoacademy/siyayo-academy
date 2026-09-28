@@ -86,7 +86,8 @@ assert.equal(
   'transfer noun must exist in canonical noun lexicon'
 );
 
-assert.equal(TransferSource.resolve(which, local, preparing, nouns, 'es'), null);
+const spanishLocal = LocalSource.resolve(which, shopping, 'es', nouns);
+assert.equal(TransferSource.resolve(which, spanishLocal, preparing, nouns, 'es').prompt, '¿Qué ___ deberíamos cocinar primero?');
 assert.equal(TransferSource.resolve(which, null, preparing, nouns, 'en'), null);
 
 console.log(
