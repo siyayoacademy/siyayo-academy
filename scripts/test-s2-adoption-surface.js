@@ -2,14 +2,15 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
-let location='shopping-for-dinner',activations=0,clears=0;
+let location='shopping-for-dinner',sessionOrigin='shopping-for-dinner',language='pt',activations=0,clears=0;
 const button={hidden:true,addEventListener(type,handler){if(type==='click')this.click=handler;}};
+const note={hidden:true,textContent:'',setAttribute(){}};
 const heading={nextSibling:null};
 const view={firstChild:null,insertBefore(){}};
 const doc={
-  getElementById(id){return id==='experienceView'?view:id==='continueAssessmentHere'?this.button:null;},
+  getElementById(id){return id==='experienceView'?view:id==='continueAssessmentHere'?this.button:id==='assessmentAdoptionStatus'?this.note:null;},
   querySelector(){return heading;},
-  createElement(){this.button=button;return button;}
+  createElement(){if(!this.button){this.button=button;return button;}this.note=note;return note;}
 };
 const authorization={
   status:'transition-authorized',fromExperience:'shopping-for-dinner',toExperience:'preparing-dinner',
@@ -19,25 +20,29 @@ let pending={status:'S2_ACTIVATION_PENDING',activationAuthorized:false,occurrenc
 const root={
   document:doc,
   SIYAYOVerbExplorerPendingTransitionAuthority:{get:()=>pending,clear(id){assert.equal(id,'next-1');clears++;pending=null;return true;}},
-  SIYAYOVerbExplorerAdaptiveStateBridge:{getState:()=>({currentExperienceId:location,experienceLanguage:'en'})},
-  SIYAYOVerbExplorerAdaptiveCoordinator:{snapshot:()=>({session:{decision:{experienceId:'shopping-for-dinner'}}})},
+  SIYAYOVerbExplorerAdaptiveStateBridge:{getState:()=>({currentExperienceId:location,experienceLanguage:language})},
+  SIYAYOVerbExplorerAdaptiveCoordinator:{snapshot:()=>({session:{decision:{experienceId:sessionOrigin}}})},
   SIYAYOVerbExplorerCanonicalSkillSource:{getSkill:()=> 'which.use.determiner',getPassContract:()=>({requiredEvidence:[]})},
   SIYAYOVerbExplorerPedagogicalSessionAdoption:{activate(input){
     assert.equal(input.learnerEvent.source,'pedagogical-session-adopt');
     assert.equal(input.learnerEvent.experienceId,'preparing-dinner');
-    activations++;return {status:'S2_ACTIVE'};
+    activations++;sessionOrigin='preparing-dinner';return {status:'S2_ACTIVE'};
   }}
 };
 vm.runInNewContext(fs.readFileSync('js/verb-explorer-pedagogical-session-adoption-surface.js','utf8'),{globalThis:root,Object});
 const surface=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
 assert.equal(surface.install({document:doc}),true);
 assert.equal(button.hidden,true);
+assert.equal(note.hidden,true);
 location='preparing-dinner';
 assert.equal(activations,0,'arrival alone must not adopt');
 surface.install({document:doc});
 assert.equal(button.hidden,false);
+assert.match(note.textContent,/S1 ● concluída → S2 ○ exploração livre/);
+assert.match(button.textContent,/COMEÇAR MEU PROGRESSO AQUI/);
 button.click();
 assert.equal(activations,1);
 assert.equal(clears,1);
 assert.equal(button.hidden,true);
+assert.equal(note.hidden,true);
 console.log('S2 adoption surface: PASS');
