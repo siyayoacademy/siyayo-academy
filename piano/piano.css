@@ -1953,3 +1953,38 @@ h1 {
   opacity:.38;
   cursor:not-allowed;
 }
+
+
+/* =========================================================
+   CONTEXT SUPPORT v0.1
+   Gives the learner enough situation to think without giving
+   away an answer. Frondosa may speak the context.
+   ========================================================= */
+.context-support-panel {
+  display:grid;
+  gap:4px;
+  margin-top:10px;
+  padding:10px 12px;
+  border:1px solid rgba(242,216,138,.26);
+  border-radius:12px;
+  background:rgba(6,27,61,.68);
+  text-align:left;
+}
+
+.context-support-panel[hidden] {
+  display:none;
+}
+
+.context-support-title {
+  font-family:var(--font-display);
+  font-size:.66rem;
+  font-weight:800;
+  letter-spacing:.10em;
+  color:var(--gold-light);
+}
+
+.context-support-text {
+  font-size:.82rem;
+  line-height:1.35;
+  color:rgba(255,255,255,.84);
+}
