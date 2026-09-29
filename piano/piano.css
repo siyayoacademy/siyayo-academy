@@ -2018,3 +2018,37 @@ h1 {
 .micro-support-actions {
   margin-top:10px;
 }
+
+
+/* =========================================================
+   LEARNER RESPONSE ALIGNMENT v0.2
+   Keep the submit action visually inside the same response row.
+   ========================================================= */
+.learner-response-form {
+  grid-template-columns:minmax(0, 1fr) minmax(132px, auto);
+  align-items:stretch;
+}
+
+.learner-response-form > button[type="submit"] {
+  align-self:stretch;
+  justify-self:stretch;
+  white-space:nowrap;
+}
+
+@media (max-width:760px) {
+  .learner-response-form {
+    grid-template-columns:1fr;
+  }
+
+  .learner-response-form > button[type="submit"] {
+    width:100%;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form {
+  grid-template-columns:1fr;
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form > button[type="submit"] {
+  width:100%;
+}
