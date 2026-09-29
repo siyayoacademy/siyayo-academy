@@ -571,14 +571,42 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate exact semantic resonance for Nouns",
-    "localize 14 Questions full pedagogical flow EN/ES/PT",
+    "homologate Stage Routing: Collection → Activity → Listen/Language",
     "replace temporary Nouns deck with canonical noun classifications/examples",
     "admit Verb Actions from trilingual corpus",
+    "bind Semantic Cadence contextually where an Experience actually needs it",
     "admit Nice Party contextual vocabulary/accessories",
     "prototype Perspective Shift",
     "prototype Social Identity bridge on stage",
     "audit remaining Ten Kinds item-by-item",
     "only then consider external research for additional game patterns"
-  ]
+  ],
+  "stageRouting": {
+    "version": "1.0",
+    "order": [
+      "collection",
+      "activity",
+      "language-lens",
+      "actors",
+      "learner-action",
+      "pedagogical-result"
+    ],
+    "rules": [
+      "Activities are contextual capabilities, not permanent stage buttons.",
+      "14 Questions belongs to the Question Words collection.",
+      "Semantic Cadence remains a reusable capability and is invoked only by an Experience/activity binding.",
+      "Language lens never changes pedagogical authority.",
+      "Presentation remains non-evaluative unless an explicit learner action is forwarded to canonical authority."
+    ],
+    "currentBindings": {
+      "question-words": [
+        "explore",
+        "questions"
+      ],
+      "nouns": [
+        "explore"
+      ],
+      "semantic-cadence": "contextual-only"
+    }
+  }
 }
