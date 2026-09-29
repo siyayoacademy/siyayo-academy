@@ -341,18 +341,56 @@
     playPianinhoHigh(frequency, when + 0.04);
   }
 
-  const semanticCadenceExample = Object.freeze({
-    id: "which-cheese-should-we-choose",
-    language: "en",
-    locale: "en-US",
-    evidence: "none",
-    cells: [
-      { note:"C4", speech:"Which" },
-      { note:"E4", speech:"cheese" },
-      { note:"G4", speech:"should we" },
-      { note:"C5", speech:"choose?" }
-    ]
+  const semanticCadenceExamples = Object.freeze({
+    en: {
+      id: "which-cheese-should-we-choose",
+      language: "en",
+      locale: "en-US",
+      fullPhrase: "Which cheese should we choose?",
+      evidence: "none",
+      cells: [
+        { note:"C4", speech:"Which" },
+        { note:"E4", speech:"cheese" },
+        { note:"G4", speech:"should we" },
+        { note:"C5", speech:"choose?" }
+      ]
+    },
+    es: {
+      id: "que-queso-deberiamos-elegir",
+      language: "es",
+      locale: "es-ES",
+      fullPhrase: "¿Qué queso deberíamos elegir?",
+      evidence: "none",
+      cells: [
+        { note:"C4", speech:"Qué" },
+        { note:"E4", speech:"queso" },
+        { note:"G4", speech:"deberíamos" },
+        { note:"C5", speech:"elegir?" }
+      ]
+    },
+    pt: {
+      id: "qual-queijo-devemos-escolher",
+      language: "pt",
+      locale: "pt-BR",
+      fullPhrase: "Qual queijo devemos escolher?",
+      evidence: "none",
+      cells: [
+        { note:"C4", speech:"Qual" },
+        { note:"E4", speech:"queijo" },
+        { note:"G4", speech:"devemos" },
+        { note:"C5", speech:"escolher?" }
+      ]
+    }
   });
+
+  function currentSemanticCadenceDefinition() {
+    const language = mode === "questions"
+      ? pedagogicalLanguage
+      : ["en","es","pt"].includes(mode)
+        ? mode
+        : "en";
+    return semanticCadenceExamples[language] || semanticCadenceExamples.en;
+  }
 
   let semanticCadenceRunning = false;
 
@@ -382,7 +420,7 @@
     }
   }
 
-  function runSemanticCadence(definition = semanticCadenceExample) {
+  function runSemanticCadence(definition = currentSemanticCadenceDefinition()) {
     if (semanticCadenceRunning || !definition || !Array.isArray(definition.cells)) return;
     semanticCadenceRunning = true;
     if (semanticCadenceButton) semanticCadenceButton.disabled = true;
@@ -394,7 +432,7 @@
       semanticCadenceRunning = false;
       if (semanticCadenceButton) semanticCadenceButton.disabled = false;
       if (noteStatus) noteStatus.textContent = "DÓ → MI → SOL → DÓ↑";
-      if (wordStatus) wordStatus.textContent = "Which cheese should we choose?";
+      if (wordStatus) wordStatus.textContent = definition.fullPhrase || "";
 
       window.dispatchEvent(new CustomEvent("siyayo:semantic-cadence-complete", {
         detail: {
@@ -568,7 +606,7 @@
       });
       stage.dataset.theme = pedagogicalLanguage;
       modeStatus.textContent = "QUESTIONS · " + pedagogicalLanguage.toUpperCase();
-      wordStatus.textContent = "14 Question Words · " + pedagogicalLanguage.toUpperCase();
+      wordStatus.textContent = currentSemanticCadenceDefinition().fullPhrase;
       refreshLabels();
       refreshFrondosaLabels();
       localizeQuestionFlowSurface();
@@ -597,7 +635,7 @@
       mode === "sound" ? "DÓ → DÓ↑" :
       mode === "solfege" ? "Solfege" :
       mode === "tripiano" ? "EN → ES → PT" :
-      mode === "questions" ? "14 Question Words · " + pedagogicalLanguage.toUpperCase() :
+      mode === "questions" ? currentSemanticCadenceDefinition().fullPhrase :
       "Colors";
     refreshLabels();
     refreshFrondosaLabels();
@@ -677,7 +715,7 @@
 
   if (semanticCadenceButton) {
     semanticCadenceButton.addEventListener("click", () => {
-      runSemanticCadence(semanticCadenceExample);
+      runSemanticCadence(currentSemanticCadenceDefinition());
     });
   }
 
