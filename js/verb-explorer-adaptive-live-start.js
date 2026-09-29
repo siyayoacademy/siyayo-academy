@@ -14,12 +14,19 @@ function tryCompose(options){
   var targetAuthority=options.targetAuthority||root.SIYAYOLeafAssessmentTargetAuthority;
   var skillBridge=options.skillBridge||root.SIYAYOLeafCanonicalSkillBridge;
   var composer=options.composer||root.SIYAYOVerbExplorerAdaptiveComposer;
+  var coordinator=options.coordinator||root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var documentRef=Object.prototype.hasOwnProperty.call(options,'document')?options.document:root.document;
 
   if(!identitySource||typeof identitySource.getId!=='function')return Promise.resolve(false);
   if(!targetAuthority||typeof targetAuthority.getTarget!=='function')return Promise.resolve(false);
   if(!skillBridge||typeof skillBridge.loadTarget!=='function')return Promise.resolve(false);
   if(!composer||typeof composer.compose!=='function')return Promise.resolve(false);
+  if(!coordinator||typeof coordinator.snapshot!=='function')return Promise.resolve(false);
+
+  // Check before loadTarget: the loader adopts the definition into a singleton.
+  // A selected Thinking Mind question must not change that singleton while S is active.
+  var active=coordinator.snapshot();
+  if(active&&active.session)return Promise.resolve(false);
 
   var learnerId=identitySource.getId();
   var target=targetAuthority.getTarget();
