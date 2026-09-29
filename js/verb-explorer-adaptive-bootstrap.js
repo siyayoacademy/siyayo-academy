@@ -94,6 +94,11 @@
       .then(function(){return ensureGlobal('AdaptiveWhatObjectQuestionProbeEvidenceBridge','js/adaptive-what-object-question-probe-evidence-bridge.js');})
       .then(function(){return ensureGlobal('AdaptiveWhatObjectQuestionProbeAttemptBoundary','js/adaptive-what-object-question-probe-attempt-boundary.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerWhatAssessmentLive','js/verb-explorer-what-assessment-live.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhyContextualReasonProbeSpecificationSource','js/adaptive-why-contextual-reason-probe-specification-source.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhyContextualReasonProbeResult','js/adaptive-why-contextual-reason-probe-result.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhyContextualReasonProbeEvidenceBridge','js/adaptive-why-contextual-reason-probe-evidence-bridge.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhyContextualReasonProbeAttemptBoundary','js/adaptive-why-contextual-reason-probe-attempt-boundary.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerWhyAssessmentLive','js/verb-explorer-why-assessment-live.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
         if(wire&&typeof wire.install==='function')wire.install();
@@ -195,6 +200,10 @@
           var what=root.SIYAYOVerbExplorerWhatAssessmentLive;
           if(what&&typeof what.mount==='function'&&experience){
             what.mount({document:document,experience:experience,language:state.experienceLanguage});
+          }
+          var why=root.SIYAYOVerbExplorerWhyAssessmentLive;
+          if(why&&typeof why.mount==='function'&&experience){
+            why.mount({document:document,experience:experience,language:state.experienceLanguage});
           }
           var nextEl=document&&typeof document.getElementById==='function'
             ? document.getElementById('nextExperience')
