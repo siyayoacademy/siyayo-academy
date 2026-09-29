@@ -239,6 +239,9 @@ jobs:
           node --check js/verb-explorer.js
           node scripts/test-choice-ui-integration.js
 
+      - name: Verify exploratory S1 WHY dialogue forms
+        run: node scripts/test-s1-exploratory-dialogue-forms.js
+
       - name: Run 3C TENSE MODE safety tests
         run: node scripts/test-experience-grammar-lock.js
 
