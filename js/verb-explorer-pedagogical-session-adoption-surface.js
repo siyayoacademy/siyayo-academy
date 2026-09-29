@@ -73,6 +73,12 @@ function install(options){
       labels.visiting=labels.visiting.replace('S2 ○','S3 ○');
     }
     button.textContent=labels.button;
+    var preceding=level==="S1"?doc.getElementById("determinerUseAssessmentPanel"):
+      level==="S2"?doc.getElementById("whatAssessmentPanel"):null;
+    if(preceding&&preceding.parentNode===view){
+      view.insertBefore(note,preceding.nextSibling);
+      view.insertBefore(button,note.nextSibling);
+    }
     button.hidden=!ready;
     note.hidden=!visited;
     note.textContent=visited?(ready?labels.ready:labels.visiting):'';
@@ -132,6 +138,8 @@ function install(options){
         if(live&&experience&&typeof live.mount==='function')live.mount({document:doc,experience:experience,language:ready.language});
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:ready.language});
+        var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+        if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
       }).catch(function(){
         var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
         if(preparedTarget&&skills&&typeof skills.adopt==='function')skills.adopt(preparedTarget.previousDefinition);
