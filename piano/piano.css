@@ -2298,3 +2298,84 @@ h1 {
     transform:translate(-50%,-50%) scale(1.04);
   }
 }
+
+
+/* =========================================================
+   FRONDOSA CLASSIFY BRANCHES v0.1
+   Current noun + three permanent classifier branches.
+   ========================================================= */
+.frondosa-hotspots .leaf.is-classify-word {
+  left:50% !important;
+  top:26% !important;
+  width:92px;
+  min-height:48px;
+  transform:translate(-50%,-50%) !important;
+  background:linear-gradient(145deg,rgba(136,185,60,.94),rgba(215,179,90,.92));
+  color:#10150d;
+  font-weight:800;
+  z-index:6;
+}
+
+.frondosa-hotspots .leaf.is-classify-branch {
+  width:96px;
+  min-height:44px;
+  transform:translate(-50%,-50%) !important;
+  background:rgba(17,81,42,.82);
+  border-color:rgba(242,216,138,.24);
+  z-index:5;
+}
+
+.frondosa-hotspots .leaf.classify-branch-concrete {
+  left:27% !important;
+  top:59% !important;
+}
+
+.frondosa-hotspots .leaf.classify-branch-abstract {
+  left:50% !important;
+  top:67% !important;
+}
+
+.frondosa-hotspots .leaf.classify-branch-proper {
+  left:73% !important;
+  top:59% !important;
+}
+
+.frondosa-hotspots .leaf.is-classify-choice {
+  outline:2px solid rgba(116,166,255,.78);
+  outline-offset:3px;
+  box-shadow:0 0 18px rgba(116,166,255,.34);
+}
+
+.frondosa-hotspots .leaf.is-classify-source {
+  background:linear-gradient(145deg,rgba(136,185,60,.92),rgba(215,179,90,.94));
+  color:#11150d;
+  box-shadow:0 0 22px rgba(242,216,138,.38);
+}
+
+.frondosa-hotspots .leaf.is-classify-choice.is-classify-source {
+  outline-color:rgba(116,166,255,.85);
+  box-shadow:
+    0 0 0 3px rgba(116,166,255,.20),
+    0 0 24px rgba(242,216,138,.40);
+}
+
+@media (max-width:600px) {
+  .frondosa-hotspots .leaf.is-classify-word {
+    width:78px;
+    min-height:42px;
+  }
+
+  .frondosa-hotspots .leaf.is-classify-branch {
+    width:78px;
+    min-height:40px;
+    font-size:.58rem;
+  }
+
+  .frondosa-hotspots .leaf.classify-branch-concrete {
+    left:23% !important;
+  }
+
+  .frondosa-hotspots .leaf.classify-branch-proper {
+    left:77% !important;
+  }
+}
