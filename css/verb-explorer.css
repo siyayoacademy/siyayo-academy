@@ -242,3 +242,19 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 /* The highlighted question is exploration; the badge marks the canonical Session skill. */
 #questionGear .gear-option.session-target{border-color:#42d796;box-shadow:inset 0 0 0 1px rgba(66,215,150,.55)}
 #questionGear .session-target-label{display:block;margin-top:3px;color:#70e9ab;font-size:.55rem;letter-spacing:.06em;line-height:1.2}
+
+/* Read-only projection of the confirmed Question Word path and free visit. */
+.learner-trail-copy{width:100%}
+.learner-journey{width:100%;max-width:650px;margin:12px auto 0;padding:10px;border-top:1px solid rgba(242,216,138,.28);color:#dce7f7;line-height:1.4}
+.learner-journey-title{display:block;color:#f2d88a;font-size:.68rem;letter-spacing:.08em}
+.learner-journey-words{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin:8px 0}
+.learner-journey-word{display:inline-flex;align-items:center;gap:5px;padding:5px 8px;border:1px solid rgba(242,216,138,.26);border-radius:9px;background:rgba(3,20,38,.7);font-size:.72rem}
+.learner-journey-word b{color:#c98224}.learner-journey-word strong{font-size:.72rem}
+.learner-journey-word small{color:#dce7f7;font-size:.62rem;letter-spacing:0}
+.learner-journey-word[data-state="confirmed"]{border-color:#e3c571}
+.learner-journey-word[data-state="confirmed"] b{color:#f2d88a}
+.learner-journey-choice{display:block;color:#8fe6b6!important;letter-spacing:0!important}
+.learner-journey p{margin:6px 0 0;font-size:.76rem}
+.learner-journey p b{color:#f2d88a}
+.learner-journey p span{display:block}
+@media(max-width:480px){.learner-journey{padding:9px 4px}.learner-journey-word{flex-wrap:wrap;justify-content:center}.learner-journey p{font-size:.72rem}}
