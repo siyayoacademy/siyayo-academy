@@ -49,7 +49,7 @@
     if(!skill||!experienceId)return null;
     if(experienceId!==text(authorization.toExperience))return null;
     if(skill!==text(authorization.nextDecision&&authorization.nextDecision.skill))return null;
-    if(skill==='what.use.object-question'){
+    if(skill==='what.use.object-question'||skill==='why.use.contextual-reason'){
       var skillSource=root.SIYAYOVerbExplorerCanonicalSkillSource;
       var canonicalDefinition=skillSource&&typeof skillSource.getDefinition==='function'
         ?skillSource.getDefinition():null;
@@ -84,7 +84,8 @@
     if(configured!==true)return null;
 
     return Object.freeze({
-      status:'S2_ACTIVE',
+      status:experienceId==='preparing-dinner'?'S2_ACTIVE':
+        experienceId==='having-dinner'?'S3_ACTIVE':'NEXT_SESSION_ACTIVE',
       session:session,
       experienceId:experienceId,
       skill:skill,
