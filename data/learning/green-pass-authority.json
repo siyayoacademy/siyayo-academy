@@ -2,7 +2,8 @@
   "version": "0.1.0",
   "defaultAuthority": "legacy",
   "contractAuthoritySkills": [
-    "which.use.determiner"
+    "which.use.determiner",
+    "what.use.object-question"
   ],
   "policy": {
     "requiresPassContract": true,
