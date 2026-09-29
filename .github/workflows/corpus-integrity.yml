@@ -314,3 +314,6 @@ jobs:
         run: |
           node --check js/adaptive-what-object-question-probe-specification-source.js
           node scripts/test-what-object-question-probe-specification-source.js
+
+      - name: Verify S3 WHY corpus and transfer grounding
+        run: node scripts/test-s3-why-corpus-contract.js
