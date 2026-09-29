@@ -2052,3 +2052,18 @@ h1 {
 .stage-viewport[data-preview="portrait"] .learner-response-form > button[type="submit"] {
   width:100%;
 }
+
+
+/* =========================================================
+   CONTEXT SUPPORT v0.3 — full-row centered card
+   ========================================================= */
+.learner-response-form .context-support-panel {
+  grid-column:1 / -1;
+  justify-self:center;
+  box-sizing:border-box;
+  width:min(100%, 760px);
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form .context-support-panel {
+  width:100%;
+}
