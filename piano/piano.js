@@ -9,6 +9,8 @@
   const modeButtons = [...document.querySelectorAll(".mode-button")];
   const activityButtons = [...document.querySelectorAll(".activity-button")];
   const collectionButtons = [...document.querySelectorAll(".collection-button")];
+  const nounLayerPanel = document.getElementById("nounLayerPanel");
+  const nounLayerButtons = [...document.querySelectorAll(".noun-layer-button")];
   const pianinho = document.getElementById("pianinho");
   const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
   const pianinhoSequenceStatus = document.getElementById("pianinhoSequenceStatus");
@@ -76,92 +78,64 @@
     { id:"how-often", en:"How often", es:"Con qué frecuencia", pt:"Com que frequência" }
   ];
 
-  const nounItems = [
-      {
-          "id": "cheese",
-          "en": "Cheese",
-          "es": "Queso",
-          "pt": "Queijo"
+  const nounCollections = Object.freeze({
+    concrete: {
+      id: "concrete",
+      labels: { en:"Concrete", es:"Concreto", pt:"Concreto" },
+      example: {
+        en:"The cat sleeps on the sofa.",
+        es:"El gato duerme en el sofá.",
+        pt:"O gato dorme no sofá."
       },
-      {
-          "id": "bread",
-          "en": "Bread",
-          "es": "Pan",
-          "pt": "Pão"
+      items: [
+        { id:"teacher", en:"teacher", es:"profesor", pt:"professor" },
+        { id:"cat", en:"cat", es:"gato", pt:"gato" },
+        { id:"book", en:"book", es:"libro", pt:"livro" },
+        { id:"hotel", en:"hotel", es:"hotel", pt:"hotel" }
+      ]
+    },
+    abstract: {
+      id: "abstract",
+      labels: { en:"Abstract", es:"Abstracto", pt:"Abstrato" },
+      example: {
+        en:"Love can change the world.",
+        es:"El amor puede cambiar el mundo.",
+        pt:"O amor pode mudar o mundo."
       },
-      {
-          "id": "market",
-          "en": "Market",
-          "es": "Mercado",
-          "pt": "Mercado"
+      items: [
+        { id:"love", en:"love", es:"amor", pt:"amor" },
+        { id:"happiness", en:"happiness", es:"felicidad", pt:"felicidade" },
+        { id:"freedom", en:"freedom", es:"libertad", pt:"liberdade" },
+        { id:"decision", en:"decision", es:"decisión", pt:"decisão" },
+        { id:"idea", en:"idea", es:"idea", pt:"ideia" }
+      ]
+    },
+    proper: {
+      id: "proper",
+      labels: { en:"Proper", es:"Propio", pt:"Próprio" },
+      example: {
+        en:"London is a beautiful city.",
+        es:"Londres es una ciudad hermosa.",
+        pt:"Londres é uma cidade linda."
       },
-      {
-          "id": "hotel",
-          "en": "Hotel",
-          "es": "Hotel",
-          "pt": "Hotel"
-      },
-      {
-          "id": "airport",
-          "en": "Airport",
-          "es": "Aeropuerto",
-          "pt": "Aeroporto"
-      },
-      {
-          "id": "book",
-          "en": "Book",
-          "es": "Libro",
-          "pt": "Livro"
-      },
-      {
-          "id": "teacher",
-          "en": "Teacher",
-          "es": "Profesor",
-          "pt": "Professor"
-      },
-      {
-          "id": "student",
-          "en": "Student",
-          "es": "Estudiante",
-          "pt": "Estudante"
-      },
-      {
-          "id": "music",
-          "en": "Music",
-          "es": "Música",
-          "pt": "Música"
-      },
-      {
-          "id": "tree",
-          "en": "Tree",
-          "es": "Árbol",
-          "pt": "Árvore"
-      },
-      {
-          "id": "dinner",
-          "en": "Dinner",
-          "es": "Cena",
-          "pt": "Jantar"
-      },
-      {
-          "id": "water",
-          "en": "Water",
-          "es": "Agua",
-          "pt": "Água"
-      },
-      {
-          "id": "city",
-          "en": "City",
-          "es": "Ciudad",
-          "pt": "Cidade"
-      },
-      {
-          "id": "friend",
-          "en": "Friend",
-          "es": "Amigo",
-          "pt": "Amigo"
-      }
-  ];
+      items: [
+        { id:"susan", en:"Susan", es:"Susan", pt:"Susan" },
+        { id:"paul", en:"Paul", es:"Paul", pt:"Paul" },
+        { id:"london", en:"London", es:"Londres", pt:"Londres" },
+        { id:"brazil", en:"Brazil", es:"Brasil", pt:"Brasil" }
+      ]
+    }
+  });
+  let activeNounLayer = "concrete";
+
+  function currentNounCollection() {
+    return nounCollections[activeNounLayer] || nounCollections.concrete;
+  }
+
+  function currentNounItems() {
+    return currentNounCollection().items;
+  }
+
   let activeCollectionId = "question-words";
 
   if (contentCollectionEngine) {
@@ -174,8 +148,13 @@
     contentCollectionEngine.register({
       id: "nouns",
       label: "Nouns",
-      status: "visual-prototype",
-      items: nounItems.map(item => ({ ...item }))
+      status: "canonical-layered-prototype",
+      layers: Object.values(nounCollections).map(layer => ({
+        id: layer.id,
+        labels: { ...layer.labels },
+        example: { ...layer.example },
+        items: layer.items.map(item => ({ ...item }))
+      }))
     });
     contentCollectionEngine.activate("question-words", "piano-stage-bootstrap");
   }
@@ -753,6 +732,10 @@
     button.addEventListener("click", () => setActiveCollection(button.dataset.collection));
   });
 
+  nounLayerButtons.forEach(button => {
+    button.addEventListener("click", () => setNounLayer(button.dataset.nounLayer));
+  });
+
   if (semanticCadenceButton) {
     semanticCadenceButton.addEventListener("click", () => {
       runSemanticCadence(currentSemanticCadenceDefinition());
@@ -1325,7 +1308,8 @@
 
   function nounForLeaf(leaf) {
     const index = leaves.indexOf(leaf);
-    return index >= 0 ? nounItems[index] || null : null;
+    const items = currentNounItems();
+    return index >= 0 ? items[index] || null : null;
   }
 
   function activeContentItemForLeaf(leaf) {
@@ -1348,7 +1332,9 @@
   function refreshFrondosaLabels() {
     leaves.forEach(leaf => {
       const label = leaf.querySelector("span");
-      if (label) label.textContent = leafLabelForMode(leaf);
+      const item = activeContentItemForLeaf(leaf);
+      leaf.hidden = activeCollectionId === "nouns" && !item;
+      if (label) label.textContent = item ? contentLabelForMode(item) : "";
     });
   }
 
@@ -1374,6 +1360,44 @@
     }
   }
 
+  function nounLayerLabel() {
+    const collection = currentNounCollection();
+    const language = mode === "questions" ? pedagogicalLanguage : ["en","es","pt"].includes(mode) ? mode : "en";
+    return collection.labels[language] || collection.labels.en;
+  }
+
+  function nounLayerExample() {
+    const collection = currentNounCollection();
+    const language = ["es","pt"].includes(mode) ? mode : "en";
+    return collection.example[language] || collection.example.en;
+  }
+
+  function setNounLayer(nextLayer) {
+    if (!nounCollections[nextLayer]) return;
+    activeNounLayer = nextLayer;
+    nounLayerButtons.forEach(button => {
+      button.classList.toggle("is-active", button.dataset.nounLayer === activeNounLayer);
+    });
+
+    refreshFrondosaLabels();
+
+    if (activeCollectionId === "nouns") {
+      if (semanticSequence) semanticSequence.dataset.phase = "idle";
+      if (semanticPhase) semanticPhase.textContent = "NOUNS · " + nounLayerLabel().toUpperCase();
+      if (semanticCue) semanticCue.textContent = nounLayerExample();
+      if (semanticAnswer) semanticAnswer.textContent = "Canonical noun classification • Explore";
+    }
+
+    window.dispatchEvent(new CustomEvent("siyayo:noun-layer-changed", {
+      detail: {
+        layer: activeNounLayer,
+        source: "canonical-noun-classifications",
+        evaluated: false,
+        evidenceProduced: false
+      }
+    }));
+  }
+
   function setActiveCollection(nextId) {
     if (!["question-words","nouns"].includes(nextId)) return;
     activeCollectionId = nextId;
@@ -1390,14 +1414,17 @@
       if (mode === "questions") setMode(pedagogicalLanguage || "en");
     }
     refreshActivityControls();
+    if (nounLayerPanel) nounLayerPanel.hidden = activeCollectionId !== "nouns";
 
     if (semanticSequence) semanticSequence.dataset.phase = "idle";
-    if (semanticPhase) semanticPhase.textContent = activeCollectionId === "nouns" ? "NOUNS" : "READY";
+    if (semanticPhase) semanticPhase.textContent = activeCollectionId === "nouns"
+      ? "NOUNS · " + nounLayerLabel().toUpperCase()
+      : "READY";
     if (semanticCue) semanticCue.textContent = activeCollectionId === "nouns"
-      ? "Touch a noun leaf"
+      ? nounLayerExample()
       : "Touch a Question Word leaf";
     if (semanticAnswer) semanticAnswer.textContent = activeCollectionId === "nouns"
-      ? "Explore collection • no evaluation"
+      ? "Canonical noun classification • Explore"
       : "Question → WAIT → learner response";
     if (learnerResponseForm) learnerResponseForm.hidden = true;
     clearWaitArchetype();
@@ -1615,9 +1642,9 @@
 
         if (mode !== "solfege") speakContentItem(contentItem);
         if (semanticSequence) semanticSequence.dataset.phase = "observed";
-        if (semanticPhase) semanticPhase.textContent = "NOUN";
+        if (semanticPhase) semanticPhase.textContent = "NOUN · " + nounLayerLabel().toUpperCase();
         if (semanticCue) semanticCue.textContent = contentLabelForMode(contentItem);
-        if (semanticAnswer) semanticAnswer.textContent = "Collection item explored • no evaluation";
+        if (semanticAnswer) semanticAnswer.textContent = nounLayerExample();
 
         window.dispatchEvent(new CustomEvent("siyayo:content-item-event", {
           detail: {
@@ -2126,6 +2153,8 @@
   } catch (error) {}
 
   refreshActivityControls();
+  if (nounLayerPanel) nounLayerPanel.hidden = true;
+  setNounLayer(activeNounLayer);
   resetSemanticSequence();
   updatePianinhoSequenceStatus();
   refreshLabels();
