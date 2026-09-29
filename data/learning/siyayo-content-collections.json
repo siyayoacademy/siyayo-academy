@@ -10,91 +10,135 @@
         "es": "Sustantivos",
         "pt": "Substantivos"
       },
-      "status": "visual-prototype",
-      "items": [
+      "status": "canonical-layered-prototype",
+      "source": {
+        "branch": "jaguar/verb-explorer-resume-live-wire",
+        "path": "chapters/01-nouns/chapter.json",
+        "section": "classifications"
+      },
+      "layers": [
         {
-          "id": "cheese",
-          "en": "Cheese",
-          "es": "Queso",
-          "pt": "Queijo"
+          "id": "concrete",
+          "labels": {
+            "en": "Concrete",
+            "es": "Concreto",
+            "pt": "Concreto"
+          },
+          "example": {
+            "en": "The cat sleeps on the sofa.",
+            "es": "El gato duerme en el sofá.",
+            "pt": "O gato dorme no sofá."
+          },
+          "items": [
+            {
+              "id": "teacher",
+              "en": "teacher",
+              "es": "profesor",
+              "pt": "professor"
+            },
+            {
+              "id": "cat",
+              "en": "cat",
+              "es": "gato",
+              "pt": "gato"
+            },
+            {
+              "id": "book",
+              "en": "book",
+              "es": "libro",
+              "pt": "livro"
+            },
+            {
+              "id": "hotel",
+              "en": "hotel",
+              "es": "hotel",
+              "pt": "hotel"
+            }
+          ]
         },
         {
-          "id": "bread",
-          "en": "Bread",
-          "es": "Pan",
-          "pt": "Pão"
+          "id": "abstract",
+          "labels": {
+            "en": "Abstract",
+            "es": "Abstracto",
+            "pt": "Abstrato"
+          },
+          "example": {
+            "en": "Love can change the world.",
+            "es": "El amor puede cambiar el mundo.",
+            "pt": "O amor pode mudar o mundo."
+          },
+          "items": [
+            {
+              "id": "love",
+              "en": "love",
+              "es": "amor",
+              "pt": "amor"
+            },
+            {
+              "id": "happiness",
+              "en": "happiness",
+              "es": "felicidad",
+              "pt": "felicidade"
+            },
+            {
+              "id": "freedom",
+              "en": "freedom",
+              "es": "libertad",
+              "pt": "liberdade"
+            },
+            {
+              "id": "decision",
+              "en": "decision",
+              "es": "decisión",
+              "pt": "decisão"
+            },
+            {
+              "id": "idea",
+              "en": "idea",
+              "es": "idea",
+              "pt": "ideia"
+            }
+          ]
         },
         {
-          "id": "market",
-          "en": "Market",
-          "es": "Mercado",
-          "pt": "Mercado"
-        },
-        {
-          "id": "hotel",
-          "en": "Hotel",
-          "es": "Hotel",
-          "pt": "Hotel"
-        },
-        {
-          "id": "airport",
-          "en": "Airport",
-          "es": "Aeropuerto",
-          "pt": "Aeroporto"
-        },
-        {
-          "id": "book",
-          "en": "Book",
-          "es": "Libro",
-          "pt": "Livro"
-        },
-        {
-          "id": "teacher",
-          "en": "Teacher",
-          "es": "Profesor",
-          "pt": "Professor"
-        },
-        {
-          "id": "student",
-          "en": "Student",
-          "es": "Estudiante",
-          "pt": "Estudante"
-        },
-        {
-          "id": "music",
-          "en": "Music",
-          "es": "Música",
-          "pt": "Música"
-        },
-        {
-          "id": "tree",
-          "en": "Tree",
-          "es": "Árbol",
-          "pt": "Árvore"
-        },
-        {
-          "id": "dinner",
-          "en": "Dinner",
-          "es": "Cena",
-          "pt": "Jantar"
-        },
-        {
-          "id": "water",
-          "en": "Water",
-          "es": "Agua",
-          "pt": "Água"
-        },
-        {
-          "id": "city",
-          "en": "City",
-          "es": "Ciudad",
-          "pt": "Cidade"
-        },
-        {
-          "id": "friend",
-          "en": "Friend",
-          "es": "Amigo",
-          "pt": "Amigo"
+          "id": "proper",
+          "labels": {
+            "en": "Proper",
+            "es": "Propio",
+            "pt": "Próprio"
+          },
+          "example": {
+            "en": "London is a beautiful city.",
+            "es": "Londres es una ciudad hermosa.",
+            "pt": "Londres é uma cidade linda."
+          },
+          "items": [
+            {
+              "id": "susan",
+              "en": "Susan",
+              "es": "Susan",
+              "pt": "Susan"
+            },
+            {
+              "id": "paul",
+              "en": "Paul",
+              "es": "Paul",
+              "pt": "Paul"
+            },
+            {
+              "id": "london",
+              "en": "London",
+              "es": "Londres",
+              "pt": "Londres"
+            },
+            {
+              "id": "brazil",
+              "en": "Brazil",
+              "es": "Brasil",
+              "pt": "Brasil"
+            }
+          ]
         }
       ]
     },
