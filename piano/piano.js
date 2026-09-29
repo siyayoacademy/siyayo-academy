@@ -11,6 +11,12 @@
   const collectionButtons = [...document.querySelectorAll(".collection-button")];
   const nounLayerPanel = document.getElementById("nounLayerPanel");
   const nounLayerButtons = [...document.querySelectorAll(".noun-layer-button")];
+  const nounClassifyPanel = document.getElementById("nounClassifyPanel");
+  const nounClassifyLabel = document.getElementById("nounClassifyLabel");
+  const nounClassifyWord = document.getElementById("nounClassifyWord");
+  const nounClassificationButtons = [...document.querySelectorAll("[data-noun-classification]")];
+  const nounClassifyReveal = document.getElementById("nounClassifyReveal");
+  const nounClassifyNext = document.getElementById("nounClassifyNext");
   const pianinho = document.getElementById("pianinho");
   const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
   const pianinhoSequenceStatus = document.getElementById("pianinhoSequenceStatus");
@@ -134,6 +140,92 @@
 
   function currentNounItems() {
     return currentNounCollection().items;
+  }
+
+  const nounClassifyCopy = Object.freeze({
+    en:{
+      prompt:"Classify this noun",
+      reveal:"Show source classification",
+      next:"Next noun",
+      received:"Choice received",
+      source:"Canonical source classification",
+      noEvaluation:"Not evaluated • no GREEN • no Evidence"
+    },
+    es:{
+      prompt:"Clasifica este sustantivo",
+      reveal:"Mostrar clasificación de origen",
+      next:"Siguiente sustantivo",
+      received:"Elección recibida",
+      source:"Clasificación de origen canónica",
+      noEvaluation:"No evaluado • sin GREEN • sin Evidence"
+    },
+    pt:{
+      prompt:"Classifique este substantivo",
+      reveal:"Mostrar classificação de origem",
+      next:"Próximo substantivo",
+      received:"Escolha recebida",
+      source:"Classificação de origem canônica",
+      noEvaluation:"Não avaliado • sem GREEN • sem Evidence"
+    }
+  });
+
+  const nounClassifyDeck = Object.freeze([
+    { ...nounCollections.concrete.items[0], classification:"concrete" },
+    { ...nounCollections.abstract.items[0], classification:"abstract" },
+    { ...nounCollections.proper.items[0], classification:"proper" },
+    { ...nounCollections.concrete.items[1], classification:"concrete" },
+    { ...nounCollections.abstract.items[1], classification:"abstract" },
+    { ...nounCollections.proper.items[1], classification:"proper" },
+    { ...nounCollections.concrete.items[2], classification:"concrete" },
+    { ...nounCollections.abstract.items[2], classification:"abstract" },
+    { ...nounCollections.proper.items[2], classification:"proper" },
+    { ...nounCollections.concrete.items[3], classification:"concrete" },
+    { ...nounCollections.abstract.items[3], classification:"abstract" },
+    { ...nounCollections.proper.items[3], classification:"proper" }
+  ]);
+  let nounClassifyIndex = 0;
+  let nounClassifyChoice = null;
+
+  function nounClassifyLanguage() {
+    return ["es","pt"].includes(mode) ? mode : "en";
+  }
+
+  function currentNounClassifyCopy() {
+    return nounClassifyCopy[nounClassifyLanguage()] || nounClassifyCopy.en;
+  }
+
+  function classificationLabel(id) {
+    const layer = nounCollections[id];
+    if (!layer) return id;
+    if (mode === "tripiano") return layer.labels.en + " · " + layer.labels.es + " · " + layer.labels.pt;
+    const lang = nounClassifyLanguage();
+    return layer.labels[lang] || layer.labels.en;
+  }
+
+  function currentNounClassifyItem() {
+    return nounClassifyDeck[nounClassifyIndex % nounClassifyDeck.length];
+  }
+
+  function presentNounClassifyItem({ speakIt = true } = {}) {
+    const item = currentNounClassifyItem();
+    const copy = currentNounClassifyCopy();
+    nounClassifyChoice = null;
+
+    if (nounClassifyLabel) nounClassifyLabel.textContent = copy.prompt;
+    if (nounClassifyWord) nounClassifyWord.textContent = contentLabelForMode(item);
+    nounClassificationButtons.forEach(button => {
+      button.textContent = classificationLabel(button.dataset.nounClassification);
+      button.classList.remove("is-selected");
+    });
+    if (nounClassifyReveal) nounClassifyReveal.textContent = copy.reveal;
+    if (nounClassifyNext) nounClassifyNext.textContent = copy.next;
+
+    if (semanticSequence) semanticSequence.dataset.phase = "idle";
+    if (semanticPhase) semanticPhase.textContent = "NOUN · CLASSIFY";
+    if (semanticCue) semanticCue.textContent = contentLabelForMode(item);
+    if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
+
+    if (speakIt) speakContentItem(item);
   }
 
   let activeCollectionId = "question-words";
@@ -579,21 +671,32 @@
       const id = button.dataset.activity;
       button.classList.toggle("is-active", id === activeActivity);
       if (id === "questions") button.disabled = activeCollectionId !== "question-words";
+      if (id === "classify") button.disabled = activeCollectionId !== "nouns";
     });
   }
 
   function setActivity(nextActivity) {
-    if (!["explore","questions"].includes(nextActivity)) return;
+    if (!["explore","questions","classify"].includes(nextActivity)) return;
     if (nextActivity === "questions" && activeCollectionId !== "question-words") return;
+    if (nextActivity === "classify" && activeCollectionId !== "nouns") return;
 
     activeActivity = nextActivity;
     refreshActivityControls();
 
     if (activeActivity === "questions") {
+      if (nounLayerPanel) nounLayerPanel.hidden = true;
+      if (nounClassifyPanel) nounClassifyPanel.hidden = true;
       setMode("questions");
-    } else if (mode === "questions") {
-      setMode(pedagogicalLanguage || "en");
+    } else if (activeActivity === "classify") {
+      if (mode === "questions") setMode(pedagogicalLanguage || "en");
+      if (nounLayerPanel) nounLayerPanel.hidden = true;
+      if (nounClassifyPanel) nounClassifyPanel.hidden = false;
+      modeStatus.textContent = "CLASSIFY · " + mode.toUpperCase();
+      presentNounClassifyItem({ speakIt:true });
     } else {
+      if (mode === "questions") setMode(pedagogicalLanguage || "en");
+      if (nounClassifyPanel) nounClassifyPanel.hidden = true;
+      if (nounLayerPanel) nounLayerPanel.hidden = activeCollectionId !== "nouns";
       modeStatus.textContent = "EXPLORE · " + mode.toUpperCase();
     }
 
@@ -640,7 +743,9 @@
 
     modeStatus.textContent = mode === "questions"
       ? "QUESTIONS · " + pedagogicalLanguage.toUpperCase()
-      : "EXPLORE · " + mode.toUpperCase();
+      : activeActivity === "classify"
+        ? "CLASSIFY · " + mode.toUpperCase()
+        : "EXPLORE · " + mode.toUpperCase();
 
     stage.dataset.theme = mode === "questions"
       ? pedagogicalLanguage
@@ -655,6 +760,7 @@
     refreshLabels();
     refreshFrondosaLabels();
     if (mode === "questions") localizeQuestionFlowSurface();
+    if (activeActivity === "classify") presentNounClassifyItem({ speakIt:false });
   }
 
   function activateKey(button, key, source = "piano-flat", semantic = null, suppressSpeech = false) {
@@ -735,6 +841,69 @@
   nounLayerButtons.forEach(button => {
     button.addEventListener("click", () => setNounLayer(button.dataset.nounLayer));
   });
+
+  nounClassificationButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      if (activeActivity !== "classify" || activeCollectionId !== "nouns") return;
+      const item = currentNounClassifyItem();
+      const copy = currentNounClassifyCopy();
+      nounClassifyChoice = button.dataset.nounClassification;
+
+      nounClassificationButtons.forEach(candidate => {
+        candidate.classList.toggle("is-selected", candidate === button);
+      });
+
+      if (semanticSequence) semanticSequence.dataset.phase = "observed";
+      if (semanticPhase) semanticPhase.textContent = "CHOICE RECEIVED";
+      if (semanticCue) semanticCue.textContent = copy.received + ": " + classificationLabel(nounClassifyChoice);
+      if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
+
+      window.dispatchEvent(new CustomEvent("siyayo:noun-classification-choice", {
+        detail: {
+          type:"noun-classification-choice",
+          source:"piano-stage",
+          nounId:item.id,
+          displayedWord:contentLabelForMode(item),
+          choice:nounClassifyChoice,
+          language:nounClassifyLanguage(),
+          evaluated:false,
+          evidenceProduced:false,
+          green:false
+        }
+      }));
+    });
+  });
+
+  if (nounClassifyReveal) {
+    nounClassifyReveal.addEventListener("click", () => {
+      if (activeActivity !== "classify") return;
+      const item = currentNounClassifyItem();
+      const copy = currentNounClassifyCopy();
+      const sourceLabel = classificationLabel(item.classification);
+
+      if (semanticPhase) semanticPhase.textContent = "SOURCE";
+      if (semanticCue) semanticCue.textContent = copy.source + ": " + sourceLabel;
+      if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
+      speak(copy.source + ". " + sourceLabel, nounClassifyLanguage() === "es" ? "es-ES" : nounClassifyLanguage() === "pt" ? "pt-BR" : "en-US");
+
+      window.dispatchEvent(new CustomEvent("siyayo:noun-classification-source-revealed", {
+        detail:{
+          nounId:item.id,
+          sourceClassification:item.classification,
+          learnerChoice:nounClassifyChoice,
+          evaluated:false,
+          evidenceProduced:false
+        }
+      }));
+    });
+  }
+
+  if (nounClassifyNext) {
+    nounClassifyNext.addEventListener("click", () => {
+      nounClassifyIndex = (nounClassifyIndex + 1) % nounClassifyDeck.length;
+      presentNounClassifyItem({ speakIt:true });
+    });
+  }
 
   if (semanticCadenceButton) {
     semanticCadenceButton.addEventListener("click", () => {
@@ -1413,8 +1582,12 @@
       activeActivity = "explore";
       if (mode === "questions") setMode(pedagogicalLanguage || "en");
     }
+    if (activeCollectionId !== "nouns" && activeActivity === "classify") {
+      activeActivity = "explore";
+    }
     refreshActivityControls();
-    if (nounLayerPanel) nounLayerPanel.hidden = activeCollectionId !== "nouns";
+    if (nounClassifyPanel) nounClassifyPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "classify");
+    if (nounLayerPanel) nounLayerPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "explore");
 
     if (semanticSequence) semanticSequence.dataset.phase = "idle";
     if (semanticPhase) semanticPhase.textContent = activeCollectionId === "nouns"
@@ -2154,6 +2327,7 @@
 
   refreshActivityControls();
   if (nounLayerPanel) nounLayerPanel.hidden = true;
+  if (nounClassifyPanel) nounClassifyPanel.hidden = true;
   setNounLayer(activeNounLayer);
   resetSemanticSequence();
   updatePianinhoSequenceStatus();
