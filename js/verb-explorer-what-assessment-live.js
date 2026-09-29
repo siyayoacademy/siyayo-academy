@@ -90,6 +90,10 @@ function mount(input){
         feedback.hidden=false;
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
+        // A transfer may complete the origin Session after arrival in S3.
+        // Recheck the learner-owned adoption invitation after the canonical Cycle returns.
+        var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
+        if(adoption&&typeof adoption.install==='function')adoption.install({document:doc});
       });
       options.appendChild(button);
     });
