@@ -113,10 +113,24 @@
       <button type="button" class="noun-layer-button" data-noun-layer="abstract">Abstract</button>
       <button type="button" class="noun-layer-button" data-noun-layer="proper">Proper</button>
     </section>
+    <section class="noun-classify-panel" id="nounClassifyPanel" aria-label="Classify noun" hidden>
+      <span class="noun-classify-label" id="nounClassifyLabel">Classify this noun</span>
+      <strong class="noun-classify-word" id="nounClassifyWord">teacher</strong>
+      <div class="noun-classify-choices">
+        <button type="button" data-noun-classification="concrete">Concrete</button>
+        <button type="button" data-noun-classification="abstract">Abstract</button>
+        <button type="button" data-noun-classification="proper">Proper</button>
+      </div>
+      <div class="noun-classify-support">
+        <button type="button" id="nounClassifyReveal">Show source classification</button>
+        <button type="button" id="nounClassifyNext">Next noun</button>
+      </div>
+    </section>
     <section class="activity-panel" aria-label="Stage activities">
       <span class="activity-label">Activity</span>
       <button type="button" class="activity-button is-active" data-activity="explore">Explore</button>
       <button type="button" class="activity-button" data-activity="questions">14 Questions</button>
+      <button type="button" class="activity-button" data-activity="classify">Classify</button>
     </section>
 
     <section class="mode-panel" aria-label="Listening and language lenses">
