@@ -63,8 +63,8 @@
       var past=history&&markerAuthority.resolve(history);
       var confirmed=past&&(past.state==='CONFIRMED'||past.state==='CONSOLIDATED_EVIDENCE');
       var current=item.id===skill;
-      var state=confirmed?'confirmed':current&&progress&&progress.completed>0?'progress':'waiting';
-      var symbol=confirmed?'●':state==='progress'?'◐':'○';
+      var state=confirmed?'confirmed':current?'active':'waiting';
+      var symbol=confirmed?'●':current&&(past.state==='IN_PROGRESS'||progress&&progress.completed>0)?'◐':'○';
       var description=confirmed?stateLabel('CONFIRMED',language):
         current&&progress?progress.completed+'/'+progress.total:labels.waiting;
       return '<span class="learner-journey-word" data-state="'+state+'">'+
