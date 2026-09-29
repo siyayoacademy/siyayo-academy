@@ -17,16 +17,24 @@ const authorization={
   nextDecision:{skill:'which.use.determiner'}
 };
 let pending={status:'S2_ACTIVATION_PENDING',activationAuthorized:false,occurrenceId:'next-1',fromExperience:'shopping-for-dinner',toExperience:'preparing-dinner',authorization};
+const session={decision:{experienceId:'shopping-for-dinner'}};
 const root={
   document:doc,
   SIYAYOVerbExplorerPendingTransitionAuthority:{get:()=>pending,clear(id){assert.equal(id,'next-1');clears++;pending=null;return true;}},
   SIYAYOVerbExplorerAdaptiveStateBridge:{getState:()=>({currentExperienceId:location,experienceLanguage:language})},
-  SIYAYOVerbExplorerAdaptiveCoordinator:{snapshot:()=>({session:{decision:{experienceId:sessionOrigin}}})},
+  SIYAYOVerbExplorerAdaptiveCoordinator:{snapshot:()=>({session})},
   SIYAYOVerbExplorerCanonicalSkillSource:{getSkill:()=> 'which.use.determiner',getPassContract:()=>({requiredEvidence:[]})},
+  SIYAYOVerbExplorerNextAssessmentTarget:{prepare(input){
+    assert.equal(input.learnerEvent.intent,'continue-assessment');
+    return Promise.resolve({authorization:input.authorization,passContract:{requires:[]},
+      previousDefinition:{id:'which.use.determiner'},target:{skill:'what.use.object-question'}});
+  }},
+  SIYAYOVerbExplorerExperienceNavigation:{getExperience:()=>({id:'preparing-dinner'})},
+  SIYAYOVerbExplorerWhatAssessmentLive:{mount:()=>true},
   SIYAYOVerbExplorerPedagogicalSessionAdoption:{activate(input){
     assert.equal(input.learnerEvent.source,'pedagogical-session-adopt');
     assert.equal(input.learnerEvent.experienceId,'preparing-dinner');
-    activations++;sessionOrigin='preparing-dinner';return {status:'S2_ACTIVE'};
+    activations++;sessionOrigin='preparing-dinner';session.decision={experienceId:sessionOrigin};return {status:'S2_ACTIVE',skill:'what.use.object-question',experienceId:'preparing-dinner'};
   }}
 };
 vm.runInNewContext(fs.readFileSync('js/verb-explorer-pedagogical-session-adoption-surface.js','utf8'),{globalThis:root,Object});
@@ -41,8 +49,10 @@ assert.equal(button.hidden,false);
 assert.match(note.textContent,/S1 ● concluída → S2 ○ exploração livre/);
 assert.match(button.textContent,/COMEÇAR MEU PROGRESSO AQUI/);
 button.click();
-assert.equal(activations,1);
-assert.equal(clears,1);
-assert.equal(button.hidden,true);
-assert.equal(note.hidden,true);
-console.log('S2 adoption surface: PASS');
+setImmediate(()=>{
+  assert.equal(activations,1);
+  assert.equal(clears,1);
+  assert.equal(button.hidden,true);
+  assert.equal(note.hidden,true);
+  console.log('S2 adoption surface: PASS');
+});
