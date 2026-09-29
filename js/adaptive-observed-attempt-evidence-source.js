@@ -53,9 +53,15 @@
     var attemptExperience=text(attempt&&attempt.context&&attempt.context.experienceId);
     var eventExperience=text(learnerEvent.experienceId);
     var packetExperience=text(packet&&packet.context&&packet.context.experienceId);
+    var whichTransfer=skill==='which.use.determiner'&&
+      text(learnerEvent.source)==='determiner-use-transfer-probe-select'&&dimension==='determiner-use';
+    var whatTransfer=skill==='what.use.object-question'&&
+      text(learnerEvent.source)==='what-object-question-probe-select'&&
+      text(learnerEvent.intent)==='answer'&&dimension==='object-answer'&&
+      text(learnerEvent.language)===text(packet&&packet.context&&packet.context.language)&&
+      text(learnerEvent.language)===text(attempt&&attempt.context&&attempt.context.language);
     var transfer=attempt.mode==='transfer'&&packet.mode==='transfer'&&
-      text(learnerEvent.source)==='determiner-use-transfer-probe-select'&&
-      dimension==='determiner-use'&&
+      (whichTransfer||whatTransfer)&&
       text(learnerEvent.fromExperienceId)===experienceId&&
       text(attempt&&attempt.context&&attempt.context.fromExperienceId)===experienceId&&
       text(packet&&packet.context&&packet.context.fromExperienceId)===experienceId&&
