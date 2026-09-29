@@ -142,6 +142,26 @@
             }
           }
         },
+        "reasonGrounding": {
+          "type": "object",
+          "required": ["groundedIn", "acceptedReasonId", "alternatives"],
+          "additionalProperties": false,
+          "properties": {
+            "groundedIn": { "const": "situation" },
+            "acceptedReasonId": { "type": "string", "minLength": 1 },
+            "alternatives": {
+              "type": "array", "minItems": 2,
+              "items": {
+                "type": "object", "required": ["id", "response"],
+                "additionalProperties": false,
+                "properties": {
+                  "id": { "type": "string", "minLength": 1 },
+                  "response": { "$ref": "#/$defs/trilingual" }
+                }
+              }
+            }
+          }
+        },
         "assessmentTarget": {
           "type": "object",
           "required": ["skill", "definitionPath"],
