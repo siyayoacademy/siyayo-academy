@@ -333,3 +333,11 @@ jobs:
         run: |
           node --check js/verb-explorer-transfer-attempt-authority.js
           node scripts/test-what-object-question-transfer-authority.js
+
+      - name: Test live S2 WHAT adoption and canonical Green cycle
+        run: |
+          node scripts/test-s2-adoption-surface.js
+          node scripts/test-s2-what-target-adoption.js
+          node scripts/test-s2-what-live-assessment.js
+          node scripts/test-s2-what-longitudinal-transfer.js
+          node scripts/test-s2-what-canonical-green-cycle.js
