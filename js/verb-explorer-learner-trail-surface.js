@@ -43,6 +43,57 @@
       '◐ OBSERVED RESPONSE · the contract checks are counted separately';
   }
 
+  function journeyLabels(language){
+    return {
+      en:{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',waiting:'not started'},
+      es:{path:'RECORRIDO DE PALABRAS',visiting:'VISITANDO AHORA',assessment:'REGISTRO DE EVALUACIÓN',started:'iniciada en',visit:'Esta visita no inicia una nueva evaluación.',achieved:'resultado ya alcanzado',choice:'Evidencia de elección de WHICH aceptada',waiting:'aún no iniciada'},
+      pt:{path:'PERCURSO DAS PALAVRAS',visiting:'VISITANDO AGORA',assessment:'REGISTRO DA AVALIAÇÃO',started:'iniciada em',visit:'Esta visita não inicia uma nova avaliação.',achieved:'resultado já conquistado',choice:'Evidência de escolha de WHICH aceita',waiting:'ainda não iniciada'}
+    }[language]||{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',waiting:'not started'};
+  }
+
+  function journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language){
+    var labels=journeyLabels(language);
+    var known=[
+      {id:'which.use.determiner',word:'WHICH'},
+      {id:'what.use.object-question',word:'WHAT'},
+      {id:'why.use.contextual-reason',word:'WHY'}
+    ];
+    var cards=known.map(function(item){
+      var history=trailView.project(profile,item.id);
+      var past=history&&markerAuthority.resolve(history);
+      var confirmed=past&&(past.state==='CONFIRMED'||past.state==='CONSOLIDATED_EVIDENCE');
+      var current=item.id===skill;
+      var state=confirmed?'confirmed':current&&progress&&progress.completed>0?'progress':'waiting';
+      var symbol=confirmed?'●':state==='progress'?'◐':'○';
+      var description=confirmed?stateLabel('CONFIRMED',language):
+        current&&progress?progress.completed+'/'+progress.total:labels.waiting;
+      return '<span class="learner-journey-word" data-state="'+state+'">'+
+        '<b aria-hidden="true">'+symbol+'</b><strong>'+item.word+'</strong><small>'+escapeHtml(description)+'</small></span>';
+    }).join('');
+    var origin=text(snapshot&&snapshot.session&&snapshot.session.decision&&snapshot.session.decision.experienceId);
+    var destination=text(liveState.currentExperienceId);
+    var currentWord=known.find(function(item){return item.id===skill;});
+    var currentTitle=doc.getElementById('experienceTitle');
+    var visitName=text(currentTitle&&currentTitle.textContent)||destination;
+    var prior=origin&&destination&&origin!==destination;
+    var achieved=progress&&progress.completed===3&&progress.total===3;
+    var context=prior?
+      '<p><b>'+escapeHtml(labels.visiting)+'</b> · '+escapeHtml(visitName)+
+      ' <span>'+escapeHtml(labels.visit)+'</span></p>'+
+      '<p><b>'+escapeHtml(labels.assessment)+'</b> · '+escapeHtml(currentWord?currentWord.word:skill)+
+      (achieved?' · 3/3 · '+escapeHtml(labels.achieved):'')+
+      ' · '+escapeHtml(labels.started)+' '+escapeHtml(origin)+'</p>':'';
+    var which=trailView.project(profile,'which.use.determiner');
+    var whichMarker=which&&markerAuthority.resolve(which);
+    var choiceAccepted=(skill==='which.use.determiner'&&progress&&progress.satisfied[0])||
+      (whichMarker&&(whichMarker.state==='CONFIRMED'||whichMarker.state==='CONSOLIDATED_EVIDENCE'));
+    return '<div class="learner-journey" aria-label="'+escapeHtml(labels.path)+'">'+
+      '<b class="learner-journey-title">'+escapeHtml(labels.path)+'</b>'+
+      '<div class="learner-journey-words">'+cards+'</div>'+
+      (choiceAccepted?'<small class="learner-journey-choice">✓ '+escapeHtml(labels.choice)+'</small>':'')+
+      context+'</div>';
+  }
+
   function refresh(options){
     options=options||{};
     var doc=options.document||root.document;
@@ -176,6 +227,7 @@
         (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
         progressHtml+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
+        journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language)+
       '</div>';
 
     return true;
