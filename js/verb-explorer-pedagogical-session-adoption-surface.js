@@ -58,13 +58,20 @@ function install(options){
     var state=bridge&&bridge.getState&&bridge.getState();
     var snapshot=coordinator&&coordinator.snapshot&&coordinator.snapshot();
     var origin=text(snapshot&&snapshot.session&&snapshot.session.decision&&snapshot.session.decision.experienceId);
-    var visited=origin==='shopping-for-dinner'&&state&&text(state.currentExperienceId)==='preparing-dinner';
+    var destination=text(state&&state.currentExperienceId);
+    var level=origin==='shopping-for-dinner'&&destination==='preparing-dinner'?'S1':
+      origin==='preparing-dinner'&&destination==='having-dinner'?'S2':null;
+    var visited=!!level;
     var language=text(state&&state.experienceLanguage)||'en';
     var labels={
       en:{button:'START MY PROGRESS HERE',ready:'S1 ● completed → S2 ○ free exploration. Choose when to start a new assessment here.',visiting:'S2 ○ free exploration. Visiting does not start a new assessment.'},
       es:{button:'COMENZAR MI PROGRESO AQUÍ',ready:'S1 ● completada → S2 ○ exploración libre. Tú eliges cuándo iniciar una nueva evaluación aquí.',visiting:'S2 ○ exploración libre. Visitar no inicia una nueva evaluación.'},
       pt:{button:'COMEÇAR MEU PROGRESSO AQUI',ready:'S1 ● concluída → S2 ○ exploração livre. Você escolhe quando iniciar uma nova avaliação aqui.',visiting:'S2 ○ exploração livre. A visita não inicia uma nova avaliação.'}
     }[language]||{button:'START MY PROGRESS HERE',ready:'S1 ● completed → S2 ○ free exploration. Choose when to start a new assessment here.',visiting:'S2 ○ free exploration. Visiting does not start a new assessment.'};
+    if(level==='S2'){
+      labels.ready=labels.ready.replace('S1','S2').replace('S2 ○','S3 ○');
+      labels.visiting=labels.visiting.replace('S2 ○','S3 ○');
+    }
     button.textContent=labels.button;
     button.hidden=!ready;
     note.hidden=!visited;
@@ -109,7 +116,7 @@ function install(options){
           language:ready.language,document:doc,learnerEvent:learnerEvent
         });
         var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
-        if(!result||result.status!=='S2_ACTIVE'||result.skill!==prepared.target.skill){
+        if(!result||result.status!==(ready.toExperience==='having-dinner'?'S3_ACTIVE':'S2_ACTIVE')||result.skill!==prepared.target.skill){
           if(skills&&typeof skills.adopt==='function')skills.adopt(prepared.previousDefinition);
           return;
         }
@@ -118,8 +125,11 @@ function install(options){
         if(transferPanel&&typeof transferPanel.hide==='function')transferPanel.hide(doc);
         var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
         var what=root.SIYAYOVerbExplorerWhatAssessmentLive;
+        var why=root.SIYAYOVerbExplorerWhyAssessmentLive;
         var experience=catalog&&catalog.getExperience&&catalog.getExperience(result.experienceId);
-        if(what&&experience&&typeof what.mount==='function')what.mount({document:doc,experience:experience,language:ready.language});
+        if(result.skill==='why.use.contextual-reason'&&what&&typeof what.hide==='function')what.hide(doc);
+        var live=result.skill==='why.use.contextual-reason'?why:what;
+        if(live&&experience&&typeof live.mount==='function')live.mount({document:doc,experience:experience,language:ready.language});
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:ready.language});
       }).catch(function(){
