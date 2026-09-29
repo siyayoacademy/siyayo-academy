@@ -2116,3 +2116,51 @@ h1 {
   opacity:.38;
   cursor:not-allowed;
 }
+
+
+/* =========================================================
+   CANONICAL NOUN LAYERS v0.1
+   Concrete / Abstract / Proper from the canonical Nouns chapter.
+   ========================================================= */
+.noun-layer-panel {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+}
+
+.noun-layer-panel[hidden] {
+  display:none;
+}
+
+.noun-layer-label {
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+}
+
+.noun-layer-button {
+  min-height:34px;
+  padding:0 12px;
+  border:1px solid rgba(116,166,255,.30);
+  border-radius:999px;
+  background:rgba(20,42,78,.66);
+  color:#dce8ff;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.noun-layer-button.is-active {
+  border-color:rgba(242,216,138,.58);
+  color:var(--gold-light);
+  box-shadow:0 0 12px rgba(242,216,138,.12);
+}
+
+.frondosa-hotspots .leaf[hidden] {
+  display:none;
+}
