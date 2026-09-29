@@ -8,11 +8,11 @@ Status: **alvo e grounding de corpus declarados; WAIT de avaliação observada e
 |---|---|---|
 | `preparing-dinner.thinkingMind[what]` | `what.use.object-question` e provas de função/resposta em S2 | Session S2 |
 | `having-dinner.thinkingMind[what]` | “What are we eating first?” / “¿Qué estamos comiendo primero?” / “O que estamos comendo primeiro?”; `answerGrounding.acceptedVocabularyIds = ["salmon"]` | transferência da Session S2, não prova de S3 |
-| `having-dinner.thinkingMind` | WHAT, WHO, HOW, WHY em EN/ES/PT | exploração; nenhum `assessmentTarget` para S3 |
+| `having-dinner.thinkingMind[why]` | `why.use.contextual-reason` com motivo `prepared-together` em EN/ES/PT | alvo declarado de S3; avaliação observada em WAIT |
 | `having-dinner.toroidalNext` | destino `after-dinner-conversation` | navegação livre existente |
-| `after-dinner-conversation.thinkingMind` | WHAT, WHO, WHY, HOW em EN/ES/PT | perguntas sem `answerGrounding` ou prova de transferência S3 fundamentada |
+| `after-dinner-conversation.thinkingMind[why]` | motivo `talking-together` em EN/ES/PT | grounding de transferência S3 declarado; probe em WAIT |
 
-O diretório `data/learning/skills/` contém somente `which.json` e `what.json`. A política Green autoriza essas duas skills quando têm Pass Contract. Não existe hoje uma definição de habilidade-alvo própria de S3.
+O diretório `data/learning/skills/` contém `which.json`, `what.json` e `why.json`. A política Green autoriza somente WHICH e WHAT; WHY permanece declarada no corpus, sem autoridade Green operacional.
 
 ## Fronteira runtime encontrada
 
@@ -23,13 +23,13 @@ O diretório `data/learning/skills/` contém somente `which.json` e `what.json`.
 
 ## Próxima admissão canônica
 
-1. Escolher a habilidade de S3 a partir da necessidade comunicativa do corpus (WHO, HOW ou WHY são candidatos, não decisão tomada). Declarar `assessmentTarget` explícito, definição de skill e Pass Contract. WHAT de S3 permanece a transferência de S2 até uma escolha pedagógica explícita diferente.
-2. Fundamentar duas provas locais em S3 e uma transferência na Experience seguinte em EN/ES/PT. Uma pergunta presente no seed ou uma animação não constitui Evidence; S4 precisa de resposta/alternativas verificáveis antes de um probe avaliado.
-3. Criar especificações, Result, EvidenceBridge, AttemptBoundary e painel para a skill escolhida; preservar identidade de Session, ocorrência, apoio e idioma. Só a autoridade canônica fecha Green.
+1. **Concluído no corpus:** WHY foi escolhida com `assessmentTarget`, skill e Pass Contract explícitos. WHAT/salmão em S3 permanece a transferência de S2.
+2. **Grounding declarado; observação em WAIT:** S3 e S4 têm alternativas e motivos verificáveis em EN/ES/PT. Uma pergunta presente no seed, uma resposta declarada ou uma animação não constituem Evidence; ainda falta probe avaliado.
+3. Criar especificações, Result, EvidenceBridge, AttemptBoundary e painel para WHY; preservar identidade de Session, ocorrência, apoio e idioma. Só a autoridade canônica fecha Green.
 4. Generalizar a inspeção da transferência e a seleção do próximo alvo sem copiar pacotes de S2 nem criar segundo router. Adotar S3 somente após gesto explícito do aluno em S3; NEXT livre continua livre.
 5. Testar: Green S2 preservado, visita S3 livre, S3 em 0/3 apenas após adoção, duas provas locais, visita S4, transferência 3/3, EN/ES/PT e recusa de proveniência errada. Homologar a interface depois dos contratos.
 
-Até a primeira decisão e o grounding de S4, a Session S3 fica em **WAIT**, sem contador 0/3 inventado e sem Green presumido.
+Até existir observação avaliada, autorização de adoção e política Green para WHY, a Session S3 fica em **WAIT**, sem contador 0/3 inventado e sem Green presumido.
 
 ## Decisão de corpus posterior à auditoria
 
