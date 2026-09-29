@@ -317,3 +317,8 @@ jobs:
 
       - name: Verify S3 WHY corpus and transfer grounding
         run: node scripts/test-s3-why-corpus-contract.js
+
+      - name: Verify read-only S3 WHY probe specifications
+        run: |
+          node --check js/adaptive-why-contextual-reason-probe-specification-source.js
+          node scripts/test-s3-why-probe-specification-source.js
