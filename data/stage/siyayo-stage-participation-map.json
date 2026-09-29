@@ -238,7 +238,7 @@
     },
     {
       "id": "noun-classifications",
-      "status": "active-prototype",
+      "status": "active-classify-prototype",
       "whatIsIt": "Concrete, Abstract and Proper noun classifications with examples and related vocabulary.",
       "source": [
         "noun-chapter"
@@ -249,6 +249,7 @@
         "choose-example"
       ],
       "activities": [
+        "explore",
         "classify",
         "context-hunt",
         "tripiano-echo"
@@ -273,7 +274,7 @@
         "pt"
       ],
       "evidenceRole": "opportunity-only",
-      "destinationOrPurpose": "Concrete, Abstract and Proper canonical layers are now available for trilingual exploration."
+      "destinationOrPurpose": "Learner can now choose Concrete / Abstract / Proper; the stage records the choice without local evaluation and may reveal the canonical source classification on request."
     },
     {
       "id": "verb-actions",
@@ -571,8 +572,7 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate canonical Noun layers: Concrete / Abstract / Proper",
-    "add learner-facing Noun Classify activity without local evaluation",
+    "homologate Noun Classify: choice capture + optional source reveal",
     "admit Verb Actions from trilingual corpus",
     "bind Semantic Cadence contextually where an Experience actually needs it",
     "admit Nice Party contextual vocabulary/accessories",
@@ -604,7 +604,8 @@
         "questions"
       ],
       "nouns": [
-        "explore"
+        "explore",
+        "classify"
       ],
       "semantic-cadence": "contextual-only"
     }
