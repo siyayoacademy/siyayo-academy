@@ -83,15 +83,15 @@
             <button type="button" data-wait-request="confused">Need clarification</button>
             <button type="button" data-wait-request="insufficient-context">Context is missing</button>
           </div>
+          <div class="context-support-panel" id="contextSupportPanel" hidden aria-live="polite">
+            <span class="context-support-title" id="contextSupportTitle">Context</span>
+            <span class="context-support-text" id="contextSupportText"></span>
+          </div>
           <div class="micro-support-actions" id="microSupportActions" hidden aria-label="Contextual micro support">
             <button type="button" data-support-action="repeat-question">Repeat question</button>
             <button type="button" data-support-action="hear-qw">Hear QW again</button>
             <button type="button" data-support-action="show-gap">Show information gap</button>
             <button type="button" data-support-action="show-context">Show context</button>
-          </div>
-          <div class="context-support-panel" id="contextSupportPanel" hidden aria-live="polite">
-            <span class="context-support-title" id="contextSupportTitle">Context</span>
-            <span class="context-support-text" id="contextSupportText"></span>
           </div>
         </form>
         <div class="canonical-navigation-opportunity" id="canonicalNavigationOpportunity" hidden>
