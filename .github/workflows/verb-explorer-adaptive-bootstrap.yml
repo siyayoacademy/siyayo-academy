@@ -348,3 +348,8 @@ jobs:
           node --check js/adaptive-why-contextual-reason-probe-evidence-bridge.js
           node --check js/adaptive-why-contextual-reason-probe-attempt-boundary.js
           node scripts/test-s3-why-observed-evidence.js
+          node scripts/test-s3-why-target-adoption.js
+          node scripts/test-s3-why-live-assessment.js
+          node scripts/test-s3-why-transfer-authority.js
+          node scripts/test-s3-why-longitudinal-transfer.js
+          node scripts/test-s3-why-canonical-green-cycle.js
