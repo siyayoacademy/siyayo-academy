@@ -31,6 +31,10 @@ let experienceId='preparing-dinner';
 sandbox.SIYAYOVerbExplorerAdaptiveStateBridge={getState:()=>({currentExperienceId:experienceId,experienceLanguage:'pt'})};
 const active={session:{decision:{skill:skill.id,experienceId:'preparing-dinner'}}};
 const attempts=[];
+let adoptionInvitation=false;
+sandbox.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface={install(){
+  adoptionInvitation=attempts.length===3;return true;
+}};
 sandbox.SIYAYOVerbExplorerAdaptiveCoordinator={
   snapshot:()=>active,
   submitObservedAttempt(attempt,event){
@@ -56,6 +60,7 @@ groups[1].children[2].children.find(el=>el.textContent==='tomates').click();
 assert.equal(attempts.length,2);
 assert.equal(attempts[1].dimension,'object-answer');
 assert.equal(attempts[1].result,'pass');
+assert.equal(adoptionInvitation,false,'S3 adoption is not offered before transfer');
 experienceId='having-dinner';
 assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),true);
 groups=panel.children.filter(el=>el.className==='what-object-question-probe');
@@ -66,6 +71,7 @@ assert.equal(attempts.length,3);
 assert.equal(attempts[2].mode,'transfer');
 assert.equal(attempts[2].context.fromExperienceId,'preparing-dinner');
 assert.equal(attempts[2].context.experienceId,'having-dinner');
+assert.equal(adoptionInvitation,true,'Green WHAT transfer refreshes the S3 adoption invitation');
 assert.equal(panel.children.at(-1).textContent,'GREEN PASS · O QUE confirmado');
 active.session={decision:{skill:'which.use.determiner',experienceId:'preparing-dinner'}};
 assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),false);
