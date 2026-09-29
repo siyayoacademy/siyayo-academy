@@ -190,6 +190,122 @@
             "en": "WHY",
             "es": "POR QUÉ",
             "pt": "POR QUE"
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "Why do you prefer the fresh cheese?",
+                  "es": "¿Por qué prefieres el queso fresco?",
+                  "pt": "Por que você prefere o queijo fresco?"
+                },
+                "response": {
+                  "en": "I prefer the fresh cheese because it pairs well with salmon.",
+                  "es": "Prefiero el queso fresco porque combina bien con el salmón.",
+                  "pt": "Prefiro o queijo fresco porque combina bem com o salmão."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Why do you prefer the fresh cheese?",
+                  "es": "¿Por qué prefieres el queso fresco?",
+                  "pt": "Por que você prefere o queijo fresco?"
+                },
+                "response": {
+                  "en": "I do not prefer the strong cheese because it overwhelms the salmon.",
+                  "es": "No prefiero el queso fuerte porque opaca el sabor del salmón.",
+                  "pt": "Não prefiro o queijo forte porque encobre o sabor do salmão."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Why do you prefer the fresh cheese?",
+                  "es": "¿Por qué prefieres el queso fresco?",
+                  "pt": "Por que você prefere o queijo fresco?"
+                },
+                "response": {
+                  "en": "Do I prefer the fresh cheese because it pairs well with salmon?",
+                  "es": "¿Prefiero el queso fresco porque combina bien con el salmón?",
+                  "pt": "Eu prefiro o queijo fresco porque combina bem com o salmão?"
+                }
+              }
+            },
+            "past": {
+              "affirmative": {
+                "question": {
+                  "en": "Why did you prefer the fresh cheese?",
+                  "es": "¿Por qué preferiste el queso fresco?",
+                  "pt": "Por que você preferiu o queijo fresco?"
+                },
+                "response": {
+                  "en": "I preferred the fresh cheese because it paired well with salmon.",
+                  "es": "Preferí el queso fresco porque combinaba bien con el salmón.",
+                  "pt": "Preferi o queijo fresco porque combinava bem com o salmão."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Why did you prefer the fresh cheese?",
+                  "es": "¿Por qué preferiste el queso fresco?",
+                  "pt": "Por que você preferiu o queijo fresco?"
+                },
+                "response": {
+                  "en": "I did not prefer the strong cheese because it overwhelmed the salmon.",
+                  "es": "No preferí el queso fuerte porque opacaba el sabor del salmón.",
+                  "pt": "Não preferi o queijo forte porque encobria o sabor do salmão."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Why did you prefer the fresh cheese?",
+                  "es": "¿Por qué preferiste el queso fresco?",
+                  "pt": "Por que você preferiu o queijo fresco?"
+                },
+                "response": {
+                  "en": "Did I prefer the fresh cheese because it paired well with salmon?",
+                  "es": "¿Preferí el queso fresco porque combinaba bien con el salmón?",
+                  "pt": "Eu preferi o queijo fresco porque combinava bem com o salmão?"
+                }
+              }
+            },
+            "future": {
+              "affirmative": {
+                "question": {
+                  "en": "Why will you prefer the fresh cheese?",
+                  "es": "¿Por qué preferirás el queso fresco?",
+                  "pt": "Por que você vai preferir o queijo fresco?"
+                },
+                "response": {
+                  "en": "I will prefer the fresh cheese because it will pair well with salmon.",
+                  "es": "Preferiré el queso fresco porque combinará bien con el salmón.",
+                  "pt": "Vou preferir o queijo fresco porque combinará bem com o salmão."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Why will you prefer the fresh cheese?",
+                  "es": "¿Por qué preferirás el queso fresco?",
+                  "pt": "Por que você vai preferir o queijo fresco?"
+                },
+                "response": {
+                  "en": "I will not prefer the strong cheese because it will overwhelm the salmon.",
+                  "es": "No preferiré el queso fuerte porque opacará el sabor del salmón.",
+                  "pt": "Não vou preferir o queijo forte porque encobrirá o sabor do salmão."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Why will you prefer the fresh cheese?",
+                  "es": "¿Por qué preferirás el queso fresco?",
+                  "pt": "Por que você vai preferir o queijo fresco?"
+                },
+                "response": {
+                  "en": "Will I prefer the fresh cheese because it will pair well with salmon?",
+                  "es": "¿Preferiré el queso fresco porque combinará bien con el salmón?",
+                  "pt": "Eu vou preferir o queijo fresco porque combinará bem com o salmão?"
+                }
+              }
+            }
           }
         },
         {
@@ -397,7 +513,15 @@
               "es": "Deberíamos preparar las verduras primero.",
               "pt": "Devemos preparar os legumes primeiro."
             },
-            "acceptedVocabularyIds": ["tomatoes", "red-onion", "leek", "carrots", "sweet-potatoes", "cassava", "green-beans"]
+            "acceptedVocabularyIds": [
+              "tomatoes",
+              "red-onion",
+              "leek",
+              "carrots",
+              "sweet-potatoes",
+              "cassava",
+              "green-beans"
+            ]
           },
           "questionWordLabel": {
             "en": "WHAT",
@@ -638,7 +762,9 @@
               "es": "Estamos comiendo el salmón primero.",
               "pt": "Estamos comendo o salmão primeiro."
             },
-            "acceptedVocabularyIds": ["salmon"]
+            "acceptedVocabularyIds": [
+              "salmon"
+            ]
           },
           "questionWordLabel": {
             "en": "WHAT",
