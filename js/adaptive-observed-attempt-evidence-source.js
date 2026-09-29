@@ -60,8 +60,13 @@
       text(learnerEvent.intent)==='answer'&&dimension==='object-answer'&&
       text(learnerEvent.language)===text(packet&&packet.context&&packet.context.language)&&
       text(learnerEvent.language)===text(attempt&&attempt.context&&attempt.context.language);
+    var whyTransfer=skill==='why.use.contextual-reason'&&
+      text(learnerEvent.source)==='why-contextual-reason-probe-select'&&
+      text(learnerEvent.intent)==='answer'&&dimension==='reason-answer'&&
+      text(learnerEvent.language)===text(packet&&packet.context&&packet.context.language)&&
+      text(learnerEvent.language)===text(attempt&&attempt.context&&attempt.context.language);
     var transfer=attempt.mode==='transfer'&&packet.mode==='transfer'&&
-      (whichTransfer||whatTransfer)&&
+      (whichTransfer||whatTransfer||whyTransfer)&&
       text(learnerEvent.fromExperienceId)===experienceId&&
       text(attempt&&attempt.context&&attempt.context.fromExperienceId)===experienceId&&
       text(packet&&packet.context&&packet.context.fromExperienceId)===experienceId&&
