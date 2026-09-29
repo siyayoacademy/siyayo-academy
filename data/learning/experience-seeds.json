@@ -387,7 +387,7 @@
             "es": "¿Qué estamos preparando primero?",
             "pt": "O que estamos preparando primeiro?"
           },
-      "assessmentTarget": {
+          "assessmentTarget": {
             "skill": "what.use.object-question",
             "definitionPath": "data/learning/skills/what.json"
           },
@@ -632,7 +632,7 @@
             "es": "¿Qué estamos comiendo primero?",
             "pt": "O que estamos comendo primeiro?"
           },
-      "answerGrounding": {
+          "answerGrounding": {
             "context": {
               "en": "We are eating the salmon first.",
               "es": "Estamos comiendo el salmón primero.",
@@ -681,6 +681,32 @@
             "en": "Why is this dinner special?",
             "es": "¿Por qué esta cena es especial?",
             "pt": "Por que este jantar é especial?"
+          },
+          "assessmentTarget": {
+            "skill": "why.use.contextual-reason",
+            "definitionPath": "data/learning/skills/why.json"
+          },
+          "reasonGrounding": {
+            "groundedIn": "situation",
+            "acceptedReasonId": "prepared-together",
+            "alternatives": [
+              {
+                "id": "prepared-together",
+                "response": {
+                  "en": "Because we prepared it together.",
+                  "es": "Porque la preparamos juntos.",
+                  "pt": "Porque a preparamos juntos."
+                }
+              },
+              {
+                "id": "shopping-now",
+                "response": {
+                  "en": "Because we are still shopping at the supermarket.",
+                  "es": "Porque todavía estamos comprando en el supermercado.",
+                  "pt": "Porque ainda estamos comprando no supermercado."
+                }
+              }
+            ]
           },
           "questionWordLabel": {
             "en": "WHY",
@@ -847,6 +873,28 @@
             "en": "Why do you enjoy this conversation?",
             "es": "¿Por qué disfrutas esta conversación?",
             "pt": "Por que você gosta desta conversa?"
+          },
+          "reasonGrounding": {
+            "groundedIn": "situation",
+            "acceptedReasonId": "talking-together",
+            "alternatives": [
+              {
+                "id": "talking-together",
+                "response": {
+                  "en": "Because we enjoy talking together.",
+                  "es": "Porque disfrutamos conversar juntos.",
+                  "pt": "Porque gostamos de conversar juntos."
+                }
+              },
+              {
+                "id": "shopping-now",
+                "response": {
+                  "en": "Because we are shopping at the supermarket.",
+                  "es": "Porque estamos comprando en el supermercado.",
+                  "pt": "Porque estamos comprando no supermercado."
+                }
+              }
+            ]
           },
           "questionWordLabel": {
             "en": "WHY",
