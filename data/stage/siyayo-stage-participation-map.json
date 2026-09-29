@@ -201,8 +201,8 @@
     },
     {
       "id": "nouns-core",
-      "status": "active-prototype",
-      "whatIsIt": "Trilingual noun collection currently mapped to Frondosa leaves.",
+      "status": "canonical-layered-prototype",
+      "whatIsIt": "Canonical trilingual Noun classifications presented as selectable Frondosa layers.",
       "source": [
         "noun-chapter"
       ],
@@ -234,11 +234,11 @@
       ],
       "evidenceRole": "exploration-only",
       "destinationOrPurpose": "Prove reusable collection switching without QW-specific logic.",
-      "nextRefinement": "Replace temporary noun deck with canonical noun subcollections."
+      "nextRefinement": "Add a learner-facing Classify activity after Explore is homologated."
     },
     {
       "id": "noun-classifications",
-      "status": "ready-candidate",
+      "status": "active-prototype",
       "whatIsIt": "Concrete, Abstract and Proper noun classifications with examples and related vocabulary.",
       "source": [
         "noun-chapter"
@@ -273,7 +273,7 @@
         "pt"
       ],
       "evidenceRole": "opportunity-only",
-      "destinationOrPurpose": "Grow Nouns from flat vocabulary into meaningful semantic layers."
+      "destinationOrPurpose": "Concrete, Abstract and Proper canonical layers are now available for trilingual exploration."
     },
     {
       "id": "verb-actions",
@@ -571,8 +571,8 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate Stage Routing: Collection → Activity → Listen/Language",
-    "replace temporary Nouns deck with canonical noun classifications/examples",
+    "homologate canonical Noun layers: Concrete / Abstract / Proper",
+    "add learner-facing Noun Classify activity without local evaluation",
     "admit Verb Actions from trilingual corpus",
     "bind Semantic Cadence contextually where an Experience actually needs it",
     "admit Nice Party contextual vocabulary/accessories",
