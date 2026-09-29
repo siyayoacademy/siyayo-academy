@@ -50,14 +50,23 @@ function mount(input){
   var copy={en:{heading:'WHAT · CONTEXTUAL PRACTICE',registered:'Response recorded · assessment in progress',retry:'Try another answer',green:'GREEN PASS · WHAT confirmed'},
     es:{heading:'QUÉ · PRÁCTICA CONTEXTUAL',registered:'Respuesta registrada · evaluación en curso',retry:'Prueba otra respuesta',green:'GREEN PASS · QUÉ confirmado'},
     pt:{heading:'O QUE · PRÁTICA CONTEXTUAL',registered:'Resposta registrada · avaliação em andamento',retry:'Tente outra resposta',green:'GREEN PASS · O QUE confirmado'}}[language];
+  var guidance={
+    en:{function:'1 · Choose the question word',local:'2 · Choose what we are preparing',transfer:'3 · Apply WHAT at the dinner table'},
+    es:{function:'1 · Elige la palabra interrogativa',local:'2 · Elige qué estamos preparando',transfer:'3 · Aplica QUÉ en la mesa'},
+    pt:{function:'1 · Escolha a palavra interrogativa',local:'2 · Escolha o que estamos preparando',transfer:'3 · Aplique O QUE à mesa'}
+  }[language];
   var title=doc.createElement('h3');title.textContent=copy.heading;el.appendChild(title);
   var feedback=doc.createElement('p');feedback.setAttribute('aria-live','polite');feedback.hidden=true;
   var sensor=Object.freeze({support:function(){return 'none';}});
   available.forEach(function(spec){
     var section=doc.createElement('div');section.className='what-object-question-probe';
-    var question=doc.createElement('p');question.textContent=spec.question;section.appendChild(question);
+    var label=doc.createElement('h4');label.className='what-probe-step';
+    label.textContent=transfer?guidance.transfer:spec.dimension==='question-function'?guidance.function:guidance.local;
+    section.appendChild(label);
+    var question=doc.createElement('p');question.className='what-probe-question';question.textContent=spec.question;section.appendChild(question);
+    var options=doc.createElement('div');options.className='what-probe-options';
     spec.alternatives.forEach(function(alternative){
-      var button=doc.createElement('button');button.type='button';button.textContent=alternative.label;
+      var button=doc.createElement('button');button.type='button';button.className='what-probe-option';button.textContent=alternative.label;
       button.addEventListener('click',function(){
         var current=coordinator.snapshot();
         if(!current||current.session!==active.session)return;
@@ -82,8 +91,9 @@ function mount(input){
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
       });
-      section.appendChild(button);
+      options.appendChild(button);
     });
+    section.appendChild(options);
     el.appendChild(section);
   });
   el.appendChild(feedback);el.hidden=false;
