@@ -2067,3 +2067,52 @@ h1 {
 .stage-viewport[data-preview="portrait"] .learner-response-form .context-support-panel {
   width:100%;
 }
+
+
+/* =========================================================
+   STAGE ROUTING v0.1 — Collection → Activity → Listen/Language
+   ========================================================= */
+.activity-panel,
+.mode-panel {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.activity-panel {
+  margin-bottom:10px;
+}
+
+.activity-label,
+.mode-label {
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+}
+
+.activity-button {
+  min-height:36px;
+  padding:0 14px;
+  border:1px solid rgba(215,179,90,.30);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#f7f1df;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.activity-button.is-active {
+  background:linear-gradient(145deg,#d7b35a,#f2d88a);
+  color:#161006;
+  box-shadow:0 0 14px rgba(215,179,90,.18);
+}
+
+.activity-button:disabled {
+  opacity:.38;
+  cursor:not-allowed;
+}
