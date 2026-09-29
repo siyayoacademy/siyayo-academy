@@ -17,6 +17,8 @@
   const nounClassificationButtons = [...document.querySelectorAll("[data-noun-classification]")];
   const nounClassifyReveal = document.getElementById("nounClassifyReveal");
   const nounClassifyNext = document.getElementById("nounClassifyNext");
+  const nounClassifyChoiceState = document.getElementById("nounClassifyChoiceState");
+  const nounClassifySourceState = document.getElementById("nounClassifySourceState");
   const pianinho = document.getElementById("pianinho");
   const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
   const pianinhoSequenceStatus = document.getElementById("pianinhoSequenceStatus");
@@ -148,6 +150,7 @@
       reveal:"Show source classification",
       next:"Next noun",
       received:"Choice received",
+      yourChoice:"Your choice",
       source:"Canonical source classification",
       noEvaluation:"Not evaluated • no GREEN • no Evidence"
     },
@@ -156,6 +159,7 @@
       reveal:"Mostrar clasificación de origen",
       next:"Siguiente sustantivo",
       received:"Elección recibida",
+      yourChoice:"Tu elección",
       source:"Clasificación de origen canónica",
       noEvaluation:"No evaluado • sin GREEN • sin Evidence"
     },
@@ -164,6 +168,7 @@
       reveal:"Mostrar classificação de origem",
       next:"Próximo substantivo",
       received:"Escolha recebida",
+      yourChoice:"Sua escolha",
       source:"Classificação de origem canônica",
       noEvaluation:"Não avaliado • sem GREEN • sem Evidence"
     }
@@ -185,6 +190,7 @@
   ]);
   let nounClassifyIndex = 0;
   let nounClassifyChoice = null;
+  let nounClassifySourceRevealed = false;
 
   function nounClassifyLanguage() {
     return ["es","pt"].includes(mode) ? mode : "en";
@@ -206,16 +212,59 @@
     return nounClassifyDeck[nounClassifyIndex % nounClassifyDeck.length];
   }
 
-  function presentNounClassifyItem({ speakIt = true } = {}) {
+  function updateNounClassifyStateSurface() {
     const item = currentNounClassifyItem();
     const copy = currentNounClassifyCopy();
-    nounClassifyChoice = null;
+
+    if (nounClassifyChoiceState) {
+      nounClassifyChoiceState.hidden = !nounClassifyChoice;
+      nounClassifyChoiceState.textContent = nounClassifyChoice
+        ? copy.yourChoice + ": " + classificationLabel(nounClassifyChoice)
+        : "";
+    }
+
+    if (nounClassifySourceState) {
+      nounClassifySourceState.hidden = !nounClassifySourceRevealed;
+      nounClassifySourceState.textContent = nounClassifySourceRevealed
+        ? copy.source + ": " + classificationLabel(item.classification)
+        : "";
+    }
+
+    nounClassificationButtons.forEach(button => {
+      button.classList.toggle("is-selected", button.dataset.nounClassification === nounClassifyChoice);
+      button.classList.toggle(
+        "is-source",
+        nounClassifySourceRevealed && button.dataset.nounClassification === item.classification
+      );
+    });
+  }
+
+  function resonateCurrentClassifyNoun() {
+    if (!leaves || !leaves.length) return;
+    const item = currentNounClassifyItem();
+
+    leaves.forEach((leaf, index) => {
+      const label = leaf.querySelector("span");
+      const isCurrent = index === 0;
+      leaf.hidden = !isCurrent;
+      leaf.classList.toggle("is-classify-focus", isCurrent);
+      if (label) label.textContent = isCurrent ? contentLabelForMode(item) : "";
+    });
+  }
+
+  function presentNounClassifyItem({ speakIt = true, resetState = true } = {}) {
+    const item = currentNounClassifyItem();
+    const copy = currentNounClassifyCopy();
+
+    if (resetState) {
+      nounClassifyChoice = null;
+      nounClassifySourceRevealed = false;
+    }
 
     if (nounClassifyLabel) nounClassifyLabel.textContent = copy.prompt;
     if (nounClassifyWord) nounClassifyWord.textContent = contentLabelForMode(item);
     nounClassificationButtons.forEach(button => {
       button.textContent = classificationLabel(button.dataset.nounClassification);
-      button.classList.remove("is-selected");
     });
     if (nounClassifyReveal) nounClassifyReveal.textContent = copy.reveal;
     if (nounClassifyNext) nounClassifyNext.textContent = copy.next;
@@ -224,6 +273,9 @@
     if (semanticPhase) semanticPhase.textContent = "NOUN · CLASSIFY";
     if (semanticCue) semanticCue.textContent = contentLabelForMode(item);
     if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
+
+    resonateCurrentClassifyNoun();
+    updateNounClassifyStateSurface();
 
     if (speakIt) speakContentItem(item);
   }
@@ -692,7 +744,7 @@
       if (nounLayerPanel) nounLayerPanel.hidden = true;
       if (nounClassifyPanel) nounClassifyPanel.hidden = false;
       modeStatus.textContent = "CLASSIFY · " + mode.toUpperCase();
-      presentNounClassifyItem({ speakIt:true });
+      presentNounClassifyItem({ speakIt:true, resetState:true });
     } else {
       if (mode === "questions") setMode(pedagogicalLanguage || "en");
       if (nounClassifyPanel) nounClassifyPanel.hidden = true;
@@ -760,7 +812,7 @@
     refreshLabels();
     refreshFrondosaLabels();
     if (mode === "questions") localizeQuestionFlowSurface();
-    if (activeActivity === "classify") presentNounClassifyItem({ speakIt:false });
+    if (activeActivity === "classify") presentNounClassifyItem({ speakIt:false, resetState:false });
   }
 
   function activateKey(button, key, source = "piano-flat", semantic = null, suppressSpeech = false) {
@@ -849,9 +901,7 @@
       const copy = currentNounClassifyCopy();
       nounClassifyChoice = button.dataset.nounClassification;
 
-      nounClassificationButtons.forEach(candidate => {
-        candidate.classList.toggle("is-selected", candidate === button);
-      });
+      updateNounClassifyStateSurface();
 
       if (semanticSequence) semanticSequence.dataset.phase = "observed";
       if (semanticPhase) semanticPhase.textContent = "CHOICE RECEIVED";
@@ -880,6 +930,8 @@
       const item = currentNounClassifyItem();
       const copy = currentNounClassifyCopy();
       const sourceLabel = classificationLabel(item.classification);
+      nounClassifySourceRevealed = true;
+      updateNounClassifyStateSurface();
 
       if (semanticPhase) semanticPhase.textContent = "SOURCE";
       if (semanticCue) semanticCue.textContent = copy.source + ": " + sourceLabel;
@@ -901,7 +953,7 @@
   if (nounClassifyNext) {
     nounClassifyNext.addEventListener("click", () => {
       nounClassifyIndex = (nounClassifyIndex + 1) % nounClassifyDeck.length;
-      presentNounClassifyItem({ speakIt:true });
+      presentNounClassifyItem({ speakIt:true, resetState:true });
     });
   }
 
@@ -1499,9 +1551,15 @@
   }
 
   function refreshFrondosaLabels() {
+    if (activeCollectionId === "nouns" && activeActivity === "classify") {
+      resonateCurrentClassifyNoun();
+      return;
+    }
+
     leaves.forEach(leaf => {
       const label = leaf.querySelector("span");
       const item = activeContentItemForLeaf(leaf);
+      leaf.classList.remove("is-classify-focus");
       leaf.hidden = activeCollectionId === "nouns" && !item;
       if (label) label.textContent = item ? contentLabelForMode(item) : "";
     });
@@ -1802,6 +1860,17 @@
       const key = keys.find(item => item.id === leaf.dataset.note);
       const qw = questionWordForLeaf(leaf);
       const contentItem = activeContentItemForLeaf(leaf);
+      if (activeCollectionId === "nouns" && activeActivity === "classify") {
+        const classifyItem = currentNounClassifyItem();
+        if (!classifyItem) return;
+        speakContentItem(classifyItem);
+        resonateCurrentClassifyNoun();
+        if (semanticPhase) semanticPhase.textContent = "NOUN · CLASSIFY";
+        if (semanticCue) semanticCue.textContent = contentLabelForMode(classifyItem);
+        if (semanticAnswer) semanticAnswer.textContent = currentNounClassifyCopy().noEvaluation;
+        return;
+      }
+
       if (!key || !contentItem) return;
 
       if (activeCollectionId === "nouns") {
