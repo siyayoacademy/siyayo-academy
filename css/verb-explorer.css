@@ -227,3 +227,14 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .what-probe-option:hover,.what-probe-option:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:2px solid transparent;box-shadow:0 0 16px rgba(242,216,138,.18)}
 .what-probe-option:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
 @media(max-width:480px){.what-object-question-probe{padding:12px 0}.what-probe-options{gap:8px}.what-probe-option{min-width:82px;padding:9px 12px;font-size:.8rem}}
+
+/* WHY probes share the canonical assessment presentation. */
+.why-contextual-reason-probe{display:grid;justify-items:center;gap:10px;padding:14px 4px}
+.why-contextual-reason-probe+.why-contextual-reason-probe{border-top:1px solid rgba(242,216,138,.22)}
+.why-probe-step{margin:0;color:var(--siyayo-gold-primary);font-size:.78rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.why-probe-question{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2vw,1.2rem);font-weight:800;line-height:1.4}
+.why-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:100%}
+.why-probe-option{min-width:96px;min-height:44px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font:inherit;font-size:.9rem;font-weight:900;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,color .18s ease}
+.why-probe-option:hover,.why-probe-option:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:2px solid transparent;box-shadow:0 0 16px rgba(242,216,138,.18)}
+.why-probe-option:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
+@media(max-width:480px){.why-contextual-reason-probe{padding:12px 0}.why-probe-options{gap:8px}.why-probe-option{min-width:82px;padding:9px 12px;font-size:.8rem}}
