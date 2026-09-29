@@ -230,26 +230,97 @@
         : "";
     }
 
-    nounClassificationButtons.forEach(button => {
+    function chooseNounClassification(choice, source = "control-button") {
+    if (activeActivity !== "classify" || activeCollectionId !== "nouns") return;
+    if (!nounCollections[choice]) return;
+
+    const item = currentNounClassifyItem();
+    const copy = currentNounClassifyCopy();
+    nounClassifyChoice = choice;
+
+    updateNounClassifyStateSurface();
+
+    if (semanticSequence) semanticSequence.dataset.phase = "observed";
+    if (semanticPhase) semanticPhase.textContent = "CHOICE RECEIVED";
+    if (semanticCue) semanticCue.textContent = copy.received + ": " + classificationLabel(nounClassifyChoice);
+    if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
+
+    window.dispatchEvent(new CustomEvent("siyayo:noun-classification-choice", {
+      detail: {
+        type:"noun-classification-choice",
+        source,
+        nounId:item.id,
+        displayedWord:contentLabelForMode(item),
+        choice:nounClassifyChoice,
+        language:nounClassifyLanguage(),
+        evaluated:false,
+        evidenceProduced:false,
+        green:false
+      }
+    }));
+  }
+
+  nounClassificationButtons.forEach(button => {
       button.classList.toggle("is-selected", button.dataset.nounClassification === nounClassifyChoice);
       button.classList.toggle(
         "is-source",
         nounClassifySourceRevealed && button.dataset.nounClassification === item.classification
       );
     });
+
+    leaves.forEach(leaf => {
+      const branch = leaf.dataset.classifyBranch;
+      leaf.classList.toggle("is-classify-choice", !!branch && branch === nounClassifyChoice);
+      leaf.classList.toggle(
+        "is-classify-source",
+        !!branch && nounClassifySourceRevealed && branch === item.classification
+      );
+    });
   }
 
   function resonateCurrentClassifyNoun() {
-    if (!leaves || !leaves.length) return;
+    if (!leaves || leaves.length < 4) return;
     const item = currentNounClassifyItem();
+    const roles = [
+      { type:"word", label:contentLabelForMode(item) },
+      { type:"branch", id:"concrete", label:classificationLabel("concrete") },
+      { type:"branch", id:"abstract", label:classificationLabel("abstract") },
+      { type:"branch", id:"proper", label:classificationLabel("proper") }
+    ];
 
     leaves.forEach((leaf, index) => {
       const label = leaf.querySelector("span");
-      const isCurrent = index === 0;
-      leaf.hidden = !isCurrent;
-      leaf.classList.toggle("is-classify-focus", isCurrent);
-      if (label) label.textContent = isCurrent ? contentLabelForMode(item) : "";
+      const role = roles[index] || null;
+
+      leaf.hidden = !role;
+      leaf.classList.remove(
+        "is-classify-focus",
+        "is-classify-word",
+        "is-classify-branch",
+        "is-classify-choice",
+        "is-classify-source"
+      );
+      delete leaf.dataset.classifyBranch;
+      delete leaf.dataset.classifyRole;
+
+      if (!role) {
+        if (label) label.textContent = "";
+        return;
+      }
+
+      if (role.type === "word") {
+        leaf.dataset.classifyRole = "word";
+        leaf.classList.add("is-classify-focus","is-classify-word");
+      } else {
+        leaf.dataset.classifyRole = "branch";
+        leaf.dataset.classifyBranch = role.id;
+        leaf.classList.add("is-classify-branch","classify-branch-" + role.id);
+      }
+
+      if (label) label.textContent = role.label;
     });
+
+    updateNounClassifyStateSurface();
   }
 
   function presentNounClassifyItem({ speakIt = true, resetState = true } = {}) {
@@ -896,31 +967,7 @@
 
   nounClassificationButtons.forEach(button => {
     button.addEventListener("click", () => {
-      if (activeActivity !== "classify" || activeCollectionId !== "nouns") return;
-      const item = currentNounClassifyItem();
-      const copy = currentNounClassifyCopy();
-      nounClassifyChoice = button.dataset.nounClassification;
-
-      updateNounClassifyStateSurface();
-
-      if (semanticSequence) semanticSequence.dataset.phase = "observed";
-      if (semanticPhase) semanticPhase.textContent = "CHOICE RECEIVED";
-      if (semanticCue) semanticCue.textContent = copy.received + ": " + classificationLabel(nounClassifyChoice);
-      if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
-
-      window.dispatchEvent(new CustomEvent("siyayo:noun-classification-choice", {
-        detail: {
-          type:"noun-classification-choice",
-          source:"piano-stage",
-          nounId:item.id,
-          displayedWord:contentLabelForMode(item),
-          choice:nounClassifyChoice,
-          language:nounClassifyLanguage(),
-          evaluated:false,
-          evidenceProduced:false,
-          green:false
-        }
-      }));
+      chooseNounClassification(button.dataset.nounClassification, "piano-stage-control");
     });
   });
 
@@ -1559,7 +1606,18 @@
     leaves.forEach(leaf => {
       const label = leaf.querySelector("span");
       const item = activeContentItemForLeaf(leaf);
-      leaf.classList.remove("is-classify-focus");
+      leaf.classList.remove(
+        "is-classify-focus",
+        "is-classify-word",
+        "is-classify-branch",
+        "is-classify-choice",
+        "is-classify-source",
+        "classify-branch-concrete",
+        "classify-branch-abstract",
+        "classify-branch-proper"
+      );
+      delete leaf.dataset.classifyRole;
+      delete leaf.dataset.classifyBranch;
       leaf.hidden = activeCollectionId === "nouns" && !item;
       if (label) label.textContent = item ? contentLabelForMode(item) : "";
     });
@@ -1863,11 +1921,18 @@
       if (activeCollectionId === "nouns" && activeActivity === "classify") {
         const classifyItem = currentNounClassifyItem();
         if (!classifyItem) return;
-        speakContentItem(classifyItem);
-        resonateCurrentClassifyNoun();
-        if (semanticPhase) semanticPhase.textContent = "NOUN · CLASSIFY";
-        if (semanticCue) semanticCue.textContent = contentLabelForMode(classifyItem);
-        if (semanticAnswer) semanticAnswer.textContent = currentNounClassifyCopy().noEvaluation;
+
+        if (leaf.dataset.classifyRole === "branch" && leaf.dataset.classifyBranch) {
+          chooseNounClassification(leaf.dataset.classifyBranch, "frondosa-branch");
+          return;
+        }
+
+        if (leaf.dataset.classifyRole === "word") {
+          speakContentItem(classifyItem);
+          if (semanticPhase) semanticPhase.textContent = "NOUN · CLASSIFY";
+          if (semanticCue) semanticCue.textContent = contentLabelForMode(classifyItem);
+          if (semanticAnswer) semanticAnswer.textContent = currentNounClassifyCopy().noEvaluation;
+        }
         return;
       }
 
