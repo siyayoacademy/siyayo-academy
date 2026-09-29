@@ -7,6 +7,7 @@
   const wordStatus = document.getElementById("wordStatus");
   const modeStatus = document.getElementById("modeStatus");
   const modeButtons = [...document.querySelectorAll(".mode-button")];
+  const activityButtons = [...document.querySelectorAll(".activity-button")];
   const collectionButtons = [...document.querySelectorAll(".collection-button")];
   const pianinho = document.getElementById("pianinho");
   const pianinhoHotspots = [...document.querySelectorAll(".pianinho-hotspot")];
@@ -186,6 +187,7 @@
   });
 
   let mode = "sound";
+  let activeActivity = "explore";
   let pedagogicalLanguage = "en";
   let audioContext = null;
 
@@ -593,6 +595,40 @@
     });
   }
 
+  function refreshActivityControls() {
+    activityButtons.forEach(button => {
+      const id = button.dataset.activity;
+      button.classList.toggle("is-active", id === activeActivity);
+      if (id === "questions") button.disabled = activeCollectionId !== "question-words";
+    });
+  }
+
+  function setActivity(nextActivity) {
+    if (!["explore","questions"].includes(nextActivity)) return;
+    if (nextActivity === "questions" && activeCollectionId !== "question-words") return;
+
+    activeActivity = nextActivity;
+    refreshActivityControls();
+
+    if (activeActivity === "questions") {
+      setMode("questions");
+    } else if (mode === "questions") {
+      setMode(pedagogicalLanguage || "en");
+    } else {
+      modeStatus.textContent = "EXPLORE · " + mode.toUpperCase();
+    }
+
+    window.dispatchEvent(new CustomEvent("siyayo:stage-activity-changed", {
+      detail: {
+        activity: activeActivity,
+        collectionId: activeCollectionId,
+        language: pedagogicalLanguage,
+        evaluated: false,
+        evidenceProduced: false
+      }
+    }));
+  }
+
   function setMode(nextMode) {
     const isLanguage = ["en","es","pt"].includes(nextMode);
 
@@ -625,7 +661,7 @@
 
     modeStatus.textContent = mode === "questions"
       ? "QUESTIONS · " + pedagogicalLanguage.toUpperCase()
-      : mode.toUpperCase();
+      : "EXPLORE · " + mode.toUpperCase();
 
     stage.dataset.theme = mode === "questions"
       ? pedagogicalLanguage
@@ -709,6 +745,10 @@
     button.addEventListener("click", () => setMode(button.dataset.mode));
   });
 
+  activityButtons.forEach(button => {
+    button.addEventListener("click", () => setActivity(button.dataset.activity));
+  });
+
   collectionButtons.forEach(button => {
     button.addEventListener("click", () => setActiveCollection(button.dataset.collection));
   });
@@ -718,6 +758,13 @@
       runSemanticCadence(currentSemanticCadenceDefinition());
     });
   }
+
+  window.addEventListener("siyayo:run-semantic-cadence", event => {
+    const definition = event.detail && event.detail.definition
+      ? event.detail.definition
+      : currentSemanticCadenceDefinition();
+    runSemanticCadence(definition);
+  });
 
   const frondosa = document.getElementById("frondosa");
   const leaves = [...document.querySelectorAll(".leaf")];
@@ -1338,12 +1385,11 @@
       button.classList.toggle("is-active", button.dataset.collection === activeCollectionId);
     });
 
-    const questionsButton = modeButtons.find(button => button.dataset.mode === "questions");
-    if (questionsButton) questionsButton.disabled = activeCollectionId !== "question-words";
-
-    if (activeCollectionId === "nouns" && mode === "questions") {
-      setMode("en");
+    if (activeCollectionId !== "question-words" && activeActivity === "questions") {
+      activeActivity = "explore";
+      if (mode === "questions") setMode(pedagogicalLanguage || "en");
     }
+    refreshActivityControls();
 
     if (semanticSequence) semanticSequence.dataset.phase = "idle";
     if (semanticPhase) semanticPhase.textContent = activeCollectionId === "nouns" ? "NOUNS" : "READY";
@@ -2079,6 +2125,7 @@
     }
   } catch (error) {}
 
+  refreshActivityControls();
   resetSemanticSequence();
   updatePianinhoSequenceStatus();
   refreshLabels();
