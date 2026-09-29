@@ -89,6 +89,11 @@
       .then(function(){return ensureGlobal('SIYAYOAdaptiveDeterminerUseTransferProbeBrowserWire','js/adaptive-determiner-use-transfer-probe-browser-wire.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerTransferAttemptAuthority','js/verb-explorer-transfer-attempt-authority.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerDeterminerUseAssessmentLive','js/verb-explorer-determiner-use-assessment-live.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhatObjectQuestionProbeSpecificationSource','js/adaptive-what-object-question-probe-specification-source.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhatObjectQuestionProbeResult','js/adaptive-what-object-question-probe-result.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhatObjectQuestionProbeEvidenceBridge','js/adaptive-what-object-question-probe-evidence-bridge.js');})
+      .then(function(){return ensureGlobal('AdaptiveWhatObjectQuestionProbeAttemptBoundary','js/adaptive-what-object-question-probe-attempt-boundary.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerWhatAssessmentLive','js/verb-explorer-what-assessment-live.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerChoiceAdaptiveWire','js/verb-explorer-choice-adaptive-wire.js');})
       .then(function(wire){
         if(wire&&typeof wire.install==='function')wire.install();
@@ -146,6 +151,7 @@
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerActiveSessionSource','js/verb-explorer-progression-live-sources.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerProgressionDecisionSink','js/verb-explorer-progression-decision-sink.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerVisitedSessionAdoptionAuthority','js/verb-explorer-visited-session-adoption-authority.js');})
+      .then(function(){return ensureGlobal('SIYAYOVerbExplorerNextAssessmentTarget','js/verb-explorer-next-assessment-target.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface','js/verb-explorer-pedagogical-session-adoption-surface.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerToroidalNextObserver','js/verb-explorer-toroidal-next-observer.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerLiveNextWire','js/verb-explorer-live-next-wire.js');})
@@ -185,6 +191,10 @@
           var experience=state&&catalog&&catalog.getExperience&&catalog.getExperience(state.currentExperienceId);
           if(determiner&&typeof determiner.mount==='function'&&experience){
             determiner.mount({document:document,experience:experience,language:state.experienceLanguage});
+          }
+          var what=root.SIYAYOVerbExplorerWhatAssessmentLive;
+          if(what&&typeof what.mount==='function'&&experience){
+            what.mount({document:document,experience:experience,language:state.experienceLanguage});
           }
           var nextEl=document&&typeof document.getElementById==='function'
             ? document.getElementById('nextExperience')
