@@ -16,6 +16,7 @@ function build(){
   sandbox.SIYAYOVerbExplorerLearnerIdentitySource={getId:()=>learnerId};
   sandbox.SIYAYOLeafAssessmentTargetAuthority={getTarget:()=>target};
   sandbox.SIYAYOLeafCanonicalSkillBridge={loadTarget(){calls.load+=1;return Promise.resolve(true);}};
+  sandbox.SIYAYOVerbExplorerAdaptiveCoordinator={snapshot:()=>active?{session:{decision:{skill:'which.use.determiner'}}}:null};
   sandbox.SIYAYOVerbExplorerAdaptiveComposer={compose(input){
     calls.compose+=1;
     assert.equal(input.document,documentRef);
@@ -51,12 +52,13 @@ function build(){
   assert.equal(t.calls.compose,1);
 
   assert.equal(await t.live.tryCompose({document:t.documentRef}),false,'active Session must reject silent recomposition');
-  assert.equal(t.calls.load,2,'re-entry may revalidate the explicit Target');
-  assert.equal(t.calls.compose,2,'Composer remains the active-Session authority');
+  assert.equal(t.calls.load,1,'active Session must block definition loading before mutation');
+  assert.equal(t.calls.compose,1,'Composer remains the active-Session authority');
 
   t.clearSession();
   assert.equal(await t.live.tryCompose({document:t.documentRef}),true,'explicit lifecycle clear permits later composition');
-  assert.equal(t.calls.compose,3);
+  assert.equal(t.calls.load,2);
+  assert.equal(t.calls.compose,2);
 
   {
     let resolveLoad;
@@ -66,6 +68,7 @@ function build(){
     sandbox.SIYAYOVerbExplorerLearnerIdentitySource={getId:()=> 'learner-27'};
     sandbox.SIYAYOLeafAssessmentTargetAuthority={getTarget:()=>({skill:'which.use.determiner',definitionPath:'data/learning/skills/which.json'})};
     sandbox.SIYAYOLeafCanonicalSkillBridge={loadTarget(){calls.load+=1;return new Promise(resolve=>{resolveLoad=resolve;});}};
+    sandbox.SIYAYOVerbExplorerAdaptiveCoordinator={snapshot:()=>null};
     sandbox.SIYAYOVerbExplorerAdaptiveComposer={compose(){calls.compose+=1;return true;}};
     vm.runInContext(code,sandbox,{filename:'js/verb-explorer-adaptive-live-start.js'});
     const live=sandbox.SIYAYOVerbExplorerAdaptiveLiveStart;
