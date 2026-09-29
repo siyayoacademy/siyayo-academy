@@ -1988,3 +1988,33 @@ h1 {
   line-height:1.35;
   color:rgba(255,255,255,.84);
 }
+
+
+/* =========================================================
+   CONTEXT SUPPORT v0.2 — centered toroidal reading axis
+   ========================================================= */
+.context-support-panel {
+  justify-items:center;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:min(100%, 760px);
+}
+
+.context-support-title,
+.context-support-text {
+  width:100%;
+  text-align:center;
+}
+
+.context-support-title {
+  font-size:.72rem;
+}
+
+.context-support-text {
+  max-width:68ch;
+}
+
+.micro-support-actions {
+  margin-top:10px;
+}
