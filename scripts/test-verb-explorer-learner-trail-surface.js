@@ -74,14 +74,15 @@ const sandbox = vm.createContext({
   AdaptiveLearnerTrailView: Object.freeze({
     project(receivedProfile, skill) {
       assert.strictEqual(receivedProfile, profile);
-      assert.equal(skill, 'which.use.determiner');
+      assert.ok(['which.use.determiner','what.use.object-question','why.use.contextual-reason'].includes(skill));
+      const state = skill === 'which.use.determiner' ? marker.state : 'UNOBSERVED';
       return Object.freeze({
-        status: marker.state === 'UNOBSERVED' ? 'TRAIL_EMPTY' : 'TRAIL_AVAILABLE',
+        status: state === 'UNOBSERVED' ? 'TRAIL_EMPTY' : 'TRAIL_AVAILABLE',
         skill,
-        state: marker.state,
+        state,
         counts: Object.freeze({
-          footprints: marker.state === 'UNOBSERVED' ? 0 : 2,
-          greenPassClosures: marker.confirmedExperiences
+          footprints: state === 'UNOBSERVED' ? 0 : 2,
+          greenPassClosures: skill === 'which.use.determiner' ? marker.confirmedExperiences : 0
         }),
         footprints: Object.freeze([])
       });
@@ -153,7 +154,15 @@ const sandbox = vm.createContext({
     }
   }),
   AdaptiveLearnerProgressMarker: Object.freeze({
-    resolve() { return marker; }
+    resolve(trail) {
+      return trail.skill === 'which.use.determiner' ? marker : Object.freeze({
+        status: 'PROGRESS_MARKER_READY',
+        skill: trail.skill,
+        state: 'UNOBSERVED',
+        marker: 'EMPTY_DOT',
+        confirmedExperiences: 0
+      });
+    }
   })
 });
 sandbox.globalThis = sandbox;
@@ -177,6 +186,9 @@ assert.match(container.innerHTML, /○/);
 assert.match(container.innerHTML, /WHICH/);
 assert.match(container.innerHTML, /QUESTION WORD/);
 assert.match(container.innerHTML, /INTERROGATIVE DETERMINER/);
+assert.match(container.innerHTML, /WORD PATH/);
+assert.match(container.innerHTML, /WHAT.*not started/);
+assert.doesNotMatch(container.innerHTML, /WHAT.*confirmed/);
 
 assert.equal(Surface.refresh({ document: documentRef, language: 'es' }), true);
 assert.match(container.innerHTML, /RUTA DE APRENDIZAJE/);
@@ -226,6 +238,7 @@ Promise.resolve().then(function(){
   assert.equal(container.dataset.state, 'CONFIRMED');
   assert.match(container.innerHTML, /●/);
   assert.match(container.innerHTML, /CONFIRMED/);
+  assert.match(container.innerHTML, /WHICH choice evidence accepted/);
 
   const s2Session = { decision: { skill: 'which.use.determiner', experienceId: 'preparing-dinner' } };
   const s2Segments = [
