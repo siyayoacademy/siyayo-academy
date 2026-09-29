@@ -338,6 +338,7 @@ jobs:
         run: |
           node scripts/test-s2-adoption-surface.js
           node scripts/test-s2-what-target-adoption.js
+          node scripts/test-s2-what-early-thinking-mind-adoption.js
           node scripts/test-s2-what-live-assessment.js
           node scripts/test-s2-what-longitudinal-transfer.js
           node scripts/test-s2-what-canonical-green-cycle.js
