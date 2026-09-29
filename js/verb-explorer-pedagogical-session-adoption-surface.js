@@ -73,6 +73,7 @@ function install(options){
   }
   if(button.__siyayoAssessmentAdoptionInstalled!==true){
     button.addEventListener('click',function(){
+      if(button.__siyayoAssessmentAdoptionBusy===true)return;
       var ready=eligible();
       if(!ready){refresh();return;}
       var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoption;
@@ -86,22 +87,45 @@ function install(options){
       var authorization=ready.pending?ready.pending.authorization:
         authority&&typeof authority.authorize==='function'?authority.authorize(learnerEvent):null;
       if(!authorization)return;
-      var result=adoption.activate({
-        transitionAuthorization:authorization,
-        previousSession:ready.session,
-        passContract:ready.contract,
-        language:ready.language,
-        document:doc,
-        learnerEvent:learnerEvent
-      });
-      if(result&&result.status==='S2_ACTIVE'){
+      var target=root.SIYAYOVerbExplorerNextAssessmentTarget;
+      if(!target||typeof target.prepare!=='function')return;
+      button.__siyayoAssessmentAdoptionBusy=true;
+      var preparedTarget=null;
+      Promise.resolve().then(function(){return target.prepare({authorization:authorization,previousSession:ready.session,
+        language:ready.language,learnerEvent:learnerEvent});}).then(function(prepared){
+        if(!prepared)return;
+        preparedTarget=prepared;
+        var state=root.SIYAYOVerbExplorerAdaptiveStateBridge.getState();
+        var current=root.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot();
+        if(!current||current.session!==ready.session||
+          text(state&&state.currentExperienceId)!==ready.toExperience){
+          root.SIYAYOVerbExplorerCanonicalSkillSource.adopt(prepared.previousDefinition);
+          return;
+        }
+        var result=adoption.activate({
+          transitionAuthorization:prepared.authorization,
+          previousSession:ready.session,
+          passContract:prepared.passContract,
+          language:ready.language,document:doc,learnerEvent:learnerEvent
+        });
+        var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
+        if(!result||result.status!=='S2_ACTIVE'||result.skill!==prepared.target.skill){
+          if(skills&&typeof skills.adopt==='function')skills.adopt(prepared.previousDefinition);
+          return;
+        }
         if(ready.pending)root.SIYAYOVerbExplorerPendingTransitionAuthority.clear(ready.pending.occurrenceId);
         var transferPanel=root.SIYAYOVerbExplorerDeterminerUseAssessmentLive;
         if(transferPanel&&typeof transferPanel.hide==='function')transferPanel.hide(doc);
+        var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+        var what=root.SIYAYOVerbExplorerWhatAssessmentLive;
+        var experience=catalog&&catalog.getExperience&&catalog.getExperience(result.experienceId);
+        if(what&&experience&&typeof what.mount==='function')what.mount({document:doc,experience:experience,language:ready.language});
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:ready.language});
-      }
-      refresh();
+      }).catch(function(){
+        var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
+        if(preparedTarget&&skills&&typeof skills.adopt==='function')skills.adopt(preparedTarget.previousDefinition);
+      }).finally(function(){button.__siyayoAssessmentAdoptionBusy=false;refresh();});
     });
     button.__siyayoAssessmentAdoptionInstalled=true;
   }
