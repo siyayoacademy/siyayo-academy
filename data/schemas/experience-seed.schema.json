@@ -100,6 +100,25 @@
         }
       }
     },
+    "dialogueTurn": {
+      "type": "object",
+      "required": ["question", "response"],
+      "additionalProperties": false,
+      "properties": {
+        "question": { "$ref": "#/$defs/trilingual" },
+        "response": { "$ref": "#/$defs/trilingual" }
+      }
+    },
+    "dialogueTense": {
+      "type": "object",
+      "required": ["affirmative", "negative", "interrogative"],
+      "additionalProperties": false,
+      "properties": {
+        "affirmative": { "$ref": "#/$defs/dialogueTurn" },
+        "negative": { "$ref": "#/$defs/dialogueTurn" },
+        "interrogative": { "$ref": "#/$defs/dialogueTurn" }
+      }
+    },
     "thinkingQuestion": {
       "type": "object",
       "required": [
@@ -124,6 +143,16 @@
         },
         "responses": {
           "$ref": "#/$defs/trilingual"
+        },
+        "dialogueForms": {
+          "type": "object",
+          "required": ["present", "past", "future"],
+          "additionalProperties": false,
+          "properties": {
+            "present": { "$ref": "#/$defs/dialogueTense" },
+            "past": { "$ref": "#/$defs/dialogueTense" },
+            "future": { "$ref": "#/$defs/dialogueTense" }
+          }
         },
         "choiceContext": {
           "$ref": "#/$defs/choiceContext"
