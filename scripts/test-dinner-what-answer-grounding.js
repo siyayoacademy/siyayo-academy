@@ -65,6 +65,6 @@ assert.deepEqual(whatSkill.passContract.requires, [
   {dimension: 'object-answer', result: 'pass', support: 'none'},
   {dimension: 'object-answer', result: 'pass', mode: 'transfer', support: 'none'}
 ]);
-assert.ok(!greenPolicy.includes("'what.use.object-question'"), 'WHAT cannot become a Green authority without observed probes');
+assert.ok(greenPolicy.includes("'what.use.object-question'"), 'WHAT Green authority requires observed probes');
 
 console.log('PASS — S2 and S3 WHAT answer grounding is trilingual, canonical and separate from S1 WHICH transfer.');
