@@ -2231,3 +2231,70 @@ h1 {
   border-color:rgba(242,216,138,.24);
   color:var(--muted);
 }
+
+
+/* =========================================================
+   NOUN CLASSIFY COHERENCE v0.2
+   Separate learner choice from canonical source classification.
+   ========================================================= */
+.noun-classify-state {
+  display:grid;
+  gap:6px;
+  width:100%;
+  justify-items:center;
+}
+
+.noun-classify-state span {
+  width:min(100%,560px);
+  padding:7px 10px;
+  border-radius:10px;
+  font-family:var(--font-display);
+  font-size:.72rem;
+  text-align:center;
+}
+
+#nounClassifyChoiceState {
+  border:1px solid rgba(116,166,255,.34);
+  background:rgba(20,42,78,.50);
+  color:#dce8ff;
+}
+
+#nounClassifySourceState {
+  border:1px solid rgba(242,216,138,.34);
+  background:rgba(215,179,90,.10);
+  color:var(--gold-light);
+}
+
+.noun-classify-choices button.is-selected {
+  outline:2px solid rgba(116,166,255,.52);
+  outline-offset:2px;
+}
+
+.noun-classify-choices button.is-source {
+  box-shadow:
+    inset 0 0 0 2px rgba(242,216,138,.58),
+    0 0 14px rgba(242,216,138,.14);
+}
+
+.noun-classify-choices button.is-selected.is-source {
+  outline-color:rgba(116,166,255,.72);
+}
+
+.frondosa-hotspots .leaf.is-classify-focus {
+  box-shadow:
+    0 0 0 2px rgba(242,216,138,.54),
+    0 0 22px rgba(242,216,138,.30);
+  animation:nounClassifyFocusPulse 1200ms var(--motion-ease) infinite alternate;
+}
+
+@keyframes nounClassifyFocusPulse {
+  from { transform:translate(-50%,-50%) scale(1.02); }
+  to   { transform:translate(-50%,-50%) scale(1.08); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .frondosa-hotspots .leaf.is-classify-focus {
+    animation:none;
+    transform:translate(-50%,-50%) scale(1.04);
+  }
+}
