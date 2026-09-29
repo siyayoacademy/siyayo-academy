@@ -341,3 +341,10 @@ jobs:
           node scripts/test-s2-what-live-assessment.js
           node scripts/test-s2-what-longitudinal-transfer.js
           node scripts/test-s2-what-canonical-green-cycle.js
+
+      - name: Test observed S3 WHY boundaries
+        run: |
+          node --check js/adaptive-why-contextual-reason-probe-result.js
+          node --check js/adaptive-why-contextual-reason-probe-evidence-bridge.js
+          node --check js/adaptive-why-contextual-reason-probe-attempt-boundary.js
+          node scripts/test-s3-why-observed-evidence.js
