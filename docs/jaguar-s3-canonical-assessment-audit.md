@@ -1,38 +1,17 @@
-# Jaguar — auditoria de entrada da Session S3 (Having a Nice Dinner)
+# Jaguar — Session S3 e ciclo WHY
 
-Status: **alvo e grounding de corpus declarados; WAIT de avaliação observada e adoção S3**. Nenhum novo Attempt, Evidence, Green Pass ou gesto de adoção é concedido por este documento.
+Status: **costura canônica S2→S3 e provas WHY S3→S4 conectadas; CI verde; homologação visual humana pendente.**
 
-## O que o corpus já declara
-
-| Origem | Fato canônico | Alcance atual |
+| Acontecimento | Autoridade | Efeito |
 |---|---|---|
-| `preparing-dinner.thinkingMind[what]` | `what.use.object-question` e provas de função/resposta em S2 | Session S2 |
-| `having-dinner.thinkingMind[what]` | “What are we eating first?” / “¿Qué estamos comiendo primero?” / “O que estamos comendo primeiro?”; `answerGrounding.acceptedVocabularyIds = ["salmon"]` | transferência da Session S2, não prova de S3 |
-| `having-dinner.thinkingMind[why]` | `why.use.contextual-reason` com motivo `prepared-together` em EN/ES/PT | alvo declarado de S3; avaliação observada em WAIT |
-| `having-dinner.toroidalNext` | destino `after-dinner-conversation` | navegação livre existente |
-| `after-dinner-conversation.thinkingMind[why]` | motivo `talking-together` em EN/ES/PT | grounding de transferência S3 declarado; probe em WAIT |
+| WHAT em S2: função + tomates | Session S2 | 2/3, ainda sem Green |
+| Visitar S3 e responder salmon/salmão | transferência WHAT da Session S2 | 3/3, Green Pass WHAT; a visita permanece livre |
+| Escolher “começar meu progresso aqui” em S3 | `VisitedSessionAdoptionAuthority`, `NextAssessmentTarget`, `NextSessionActivation` | Session S3 WHY nasce em 0/3; Evidence operacional vazia; histórico WHAT preservado |
+| WHY em S3: função da pergunta e `prepared-together` | Result → EvidenceBridge → AttemptBoundary → Coordinator | 1/3 e 2/3, conforme Pass Contract |
+| Visitar S4 e responder `talking-together` | transferência WHY da Session S3 | 3/3 e Green Pass WHY pela autoridade canônica |
 
-O diretório `data/learning/skills/` contém `which.json`, `what.json` e `why.json`. A política Green autoriza somente WHICH e WHAT; WHY permanece declarada no corpus, sem autoridade Green operacional.
+As alternativas e perguntas estão ancoradas em `data/learning/experience-seeds.json` e `data/learning/skills/why.json`, com realizações EN/ES/PT. A resposta WHAT em S3 pertence à Session S2; a resposta WHY em S4 pertence à Session S3. O painel WHY envia apenas Attempts observados. A política `green-pass-authority.json` inclui WHY, e somente o Cycle avalia o contrato. O avanço por NEXT não executa adoção ou Green.
 
-## Fronteira runtime encontrada
+A inspeção de adoção aceita exatamente S1 WHICH→S2 e S2 WHAT→S3 depois de um pacote de transferência aprovado e do registro `green-pass-contract` confirmado. O gesto do aluno é requerido para a nova Session. `NextAssessmentTarget` valida o alvo e as três especificações em EN/ES/PT; `NextSessionActivation` inicia contexto operacional sem herdar Evidence anterior.
 
-- `VisitedSessionAdoptionAuthority.inspect` aceita apenas a Session `which.use.determiner` e a transferência `determiner-use`. O Green WHAT de S2 em S3 não atravessa esta inspeção.
-- `NextAssessmentTarget.prepare` valida exclusivamente `shopping-for-dinner → preparing-dinner`, WHICH → WHAT; não seleciona habilidade para S3.
-- `PedagogicalSessionAdoptionSurface` depende dessas duas autoridades. O botão de adoção S3 não pode ser habilitado apenas porque o aluno visitou S3 ou respondeu `salmon`.
-- `NextSessionActivation` exige decisão/skill e Pass Contract coerentes e cria Evidence operacional vazio para a nova Session. Seu retorno literal `S2_ACTIVE` e sua verificação especial de WHAT são atuais e precisam de generalização deliberada antes de S3.
-
-## Próxima admissão canônica
-
-1. **Concluído no corpus:** WHY foi escolhida com `assessmentTarget`, skill e Pass Contract explícitos. WHAT/salmão em S3 permanece a transferência de S2.
-2. **Grounding declarado; observação em WAIT:** S3 e S4 têm alternativas e motivos verificáveis em EN/ES/PT. Uma pergunta presente no seed, uma resposta declarada ou uma animação não constituem Evidence; ainda falta probe avaliado.
-3. **Especificações concluídas:** `AdaptiveWhyContextualReasonProbeSpecificationSource` resolve função, resposta local e transferência, apenas para S3→S4, em EN/ES/PT. **Result, EvidenceBridge e AttemptBoundary concluídos:** agora há evento explícito, resultado puro e pacote de Attempt com ocorrência/idioma/origem/apoio vinculados; ainda falta painel live e submissão pela Session S3; preservar identidade de Session, ocorrência, apoio e idioma. Só a autoridade canônica fecha Green.
-4. Generalizar a inspeção da transferência e a seleção do próximo alvo sem copiar pacotes de S2 nem criar segundo router. Adotar S3 somente após gesto explícito do aluno em S3; NEXT livre continua livre.
-5. Testar: Green S2 preservado, visita S3 livre, S3 em 0/3 apenas após adoção, duas provas locais, visita S4, transferência 3/3, EN/ES/PT e recusa de proveniência errada. Homologar a interface depois dos contratos.
-
-Até existir observação avaliada, autorização de adoção e política Green para WHY, a Session S3 fica em **WAIT**, sem contador 0/3 inventado e sem Green presumido.
-
-## Decisão de corpus posterior à auditoria
-
-A habilidade escolhida para S3 é `why.use.contextual-reason`. `having-dinner.thinkingMind[why].assessmentTarget` aponta para `data/learning/skills/why.json`. O Pass Contract declara função da pergunta, razão situada sem apoio e razão em transferência sem apoio. Em S3, `reasonGrounding` aceita `prepared-together`, ancorado na situação do jantar preparado juntos; em S4, aceita `talking-together`, ancorado na conversa juntos. Alternativas `shopping-now` servem como contraste incompatível com o contexto atual. As realizações EN/ES/PT e o teste `scripts/test-s3-why-corpus-contract.js` protegem essa identidade. A pergunta WHAT/salmão em S3 permanece apenas transferência da Session S2.
-
-**WAIT permanece:** as fronteiras observadas estão prontas e testadas isoladamente, mas não existe painel live, Session S3 adotada, submissão ao Coordinator, autorização de adoção S2→S3 nem inclusão de WHY na política Green. Os módulos não concedem Green por si só. O `assessmentTarget` é declaração de destino e não inicia Session ou prova por si só.
+Testes do bootstrap verificam adoção, interface WHY, origem/destino da transferência, rastro longitudinal e Green canônico em EN/ES/PT. O próximo passo é validar o percurso na interface publicada e, então, auditar a habilidade própria de S4; a transferência `talking-together` não deve ser reaproveitada como prova da nova Session.
