@@ -18,7 +18,7 @@
     if(!decision||!catalog||typeof catalog.getExperience!=='function')return false;
     if(!attempt||!event||!state||event.observed!==true||event.actor!=='learner')return false;
     var skill=id(decision.skill);
-    if(skill!=='which.use.determiner'&&skill!=='what.use.object-question')return false;
+    if(skill!=='which.use.determiner'&&skill!=='what.use.object-question'&&skill!=='why.use.contextual-reason')return false;
     if(id(event.mode)!=='transfer'||id(attempt.mode)!=='transfer')return false;
     if(skill==='which.use.determiner'&&id(event.source)!=='determiner-use-transfer-probe-select')return false;
     if(skill==='what.use.object-question'&&(
@@ -26,6 +26,12 @@
       id(event.intent)!=='answer'||
       id(event.dimension)!=='object-answer'||
       id(attempt.dimension)!=='object-answer'||
+      !['en','es','pt'].includes(id(event.language))||
+      id(event.language)!==id(attempt.context&&attempt.context.language)
+    ))return false;
+    if(skill==='why.use.contextual-reason'&&(
+      id(event.source)!=='why-contextual-reason-probe-select'||id(event.intent)!=='answer'||
+      id(event.dimension)!=='reason-answer'||id(attempt.dimension)!=='reason-answer'||
       !['en','es','pt'].includes(id(event.language))||
       id(event.language)!==id(attempt.context&&attempt.context.language)
     ))return false;
@@ -46,6 +52,19 @@
           entry.answerGrounding.acceptedVocabularyIds.includes(id(event.choice));
       });
       if(originWhat.length!==1||targetWhat.length!==1)return false;
+    }
+    if(skill==='why.use.contextual-reason'){
+      var originWhy=(origin.thinkingMind||[]).filter(function(entry){
+        return entry&&entry.questionWord==='why'&&entry.assessmentTarget&&
+          entry.assessmentTarget.skill===skill&&
+          entry.assessmentTarget.definitionPath==='data/learning/skills/why.json';
+      });
+      var targetWhy=(destination.thinkingMind||[]).filter(function(entry){
+        return entry&&entry.questionWord==='why'&&entry.reasonGrounding&&
+          Array.isArray(entry.reasonGrounding.alternatives)&&
+          entry.reasonGrounding.alternatives.some(function(option){return option.id===id(event.choice);});
+      });
+      if(originWhy.length!==1||targetWhy.length!==1)return false;
     }
     if(id(event.fromExperienceId)!==from||id(attempt.context&&attempt.context.fromExperienceId)!==from)return false;
     if(id(event.experienceId)!==to||id(attempt.context&&attempt.context.experienceId)!==to)return false;
