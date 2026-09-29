@@ -140,6 +140,10 @@
             }
           ]
         }
+      ],
+      "activities": [
+        "explore-collection",
+        "classify-noun"
       ]
     },
     {
@@ -243,7 +247,8 @@
   "activities": [
     "explore-collection",
     "explore-examples",
-    "semantic-opportunity"
+    "semantic-opportunity",
+    "classify-noun"
   ],
   "principles": {
     "sameActorsDifferentCollections": true,
