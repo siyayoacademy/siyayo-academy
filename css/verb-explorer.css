@@ -258,3 +258,4 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-journey p b{color:#f2d88a}
 .learner-journey p span{display:block}
 @media(max-width:480px){.learner-journey{padding:9px 4px}.learner-journey-word{flex-wrap:wrap;justify-content:center}.learner-journey p{font-size:.72rem}}
+.learner-journey-word[data-state="active"]{border-color:rgba(112,233,171,.68)}
