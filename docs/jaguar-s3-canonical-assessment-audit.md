@@ -1,6 +1,6 @@
 # Jaguar — auditoria de entrada da Session S3 (Having a Nice Dinner)
 
-Status: **WAIT de alvo e contrato S3**. Auditoria somente; nenhum novo Attempt, Evidence, Green Pass ou gesto de adoção é concedido por este documento.
+Status: **alvo e grounding de corpus declarados; WAIT de avaliação observada e adoção S3**. Nenhum novo Attempt, Evidence, Green Pass ou gesto de adoção é concedido por este documento.
 
 ## O que o corpus já declara
 
@@ -30,3 +30,9 @@ O diretório `data/learning/skills/` contém somente `which.json` e `what.json`.
 5. Testar: Green S2 preservado, visita S3 livre, S3 em 0/3 apenas após adoção, duas provas locais, visita S4, transferência 3/3, EN/ES/PT e recusa de proveniência errada. Homologar a interface depois dos contratos.
 
 Até a primeira decisão e o grounding de S4, a Session S3 fica em **WAIT**, sem contador 0/3 inventado e sem Green presumido.
+
+## Decisão de corpus posterior à auditoria
+
+A habilidade escolhida para S3 é `why.use.contextual-reason`. `having-dinner.thinkingMind[why].assessmentTarget` aponta para `data/learning/skills/why.json`. O Pass Contract declara função da pergunta, razão situada sem apoio e razão em transferência sem apoio. Em S3, `reasonGrounding` aceita `prepared-together`, ancorado na situação do jantar preparado juntos; em S4, aceita `talking-together`, ancorado na conversa juntos. Alternativas `shopping-now` servem como contraste incompatível com o contexto atual. As realizações EN/ES/PT e o teste `scripts/test-s3-why-corpus-contract.js` protegem essa identidade. A pergunta WHAT/salmão em S3 permanece apenas transferência da Session S2.
+
+**WAIT permanece:** não existem ainda especificações de probe, Result, EvidenceBridge, AttemptBoundary, painel live, autorização de adoção S2→S3 nem inclusão de WHY na política Green. O `assessmentTarget` é declaração de destino e não inicia Session ou prova por si só.
