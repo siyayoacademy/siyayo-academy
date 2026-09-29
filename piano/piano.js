@@ -1072,11 +1072,13 @@
 
   function localizeQuestionFlowSurface() {
     const copy = currentQuestionCopy();
+
     if (learnerResponseInput) {
       learnerResponseInput.placeholder = copy.placeholder;
       learnerResponseInput.setAttribute("aria-label", copy.placeholder);
     }
     if (learnerSubmitButton) learnerSubmitButton.textContent = copy.submit;
+
     learnerWaitButtons.forEach(button => {
       const state = button.dataset.waitRequest;
       button.textContent =
@@ -1084,6 +1086,7 @@
         state === "confused" ? copy.clarification :
         copy.missingContext;
     });
+
     microSupportButtons.forEach(button => {
       const action = button.dataset.supportAction;
       button.textContent =
@@ -1093,13 +1096,65 @@
         copy.showContext;
     });
 
-    if (!activeQuestionWord && semanticSequence) {
+    if (!semanticSequence) return;
+
+    if (!activeQuestionWord) {
       semanticPhase.textContent = copy.ready;
       semanticCue.textContent = copy.readyCue;
       semanticAnswer.textContent = copy.readyAnswer;
+      return;
     }
 
-    if (activeWaitArchetype) setWaitArchetype(activeWaitArchetype, "language-lens-change");
+    const phase = semanticSequence.dataset.phase || "idle";
+    const model = currentQuestionModel(activeQuestionWord);
+    const qwLabel = currentQuestionWordLabel(activeQuestionWord);
+
+    if (phase === "question") {
+      semanticPhase.textContent = copy.question;
+      semanticCue.textContent = qwLabel.toUpperCase() + " · " + model.prompt;
+      semanticAnswer.textContent = copy.gapPrefix + model.gap;
+    } else if (phase === "wait") {
+      semanticPhase.textContent = copy.wait;
+      if (activeWaitArchetype === "thinking") {
+        semanticCue.textContent = copy.requestedTime;
+        semanticAnswer.textContent = copy.explicitAction;
+      } else if (activeWaitArchetype === "confused") {
+        semanticCue.textContent = copy.requestedClarification;
+        semanticAnswer.textContent = copy.explicitAction;
+      } else if (activeWaitArchetype === "insufficient-context") {
+        semanticCue.textContent = copy.reportedContext;
+        semanticAnswer.textContent = copy.explicitAction;
+      } else {
+        semanticCue.textContent = copy.waitCue;
+        semanticAnswer.textContent = copy.noEvidence;
+      }
+    } else if (phase === "response") {
+      semanticPhase.textContent = copy.response;
+      semanticCue.textContent = qwLabel + copy.remains;
+      semanticAnswer.textContent = copy.awaitingResponse;
+    } else if (phase === "observed") {
+      semanticPhase.textContent = copy.observed;
+      semanticCue.textContent = copy.responseReceived;
+      semanticAnswer.textContent = copy.notEvaluated;
+    } else if (phase === "external-evaluation") {
+      semanticPhase.textContent = copy.externalPhase;
+      semanticCue.textContent = copy.externalCue;
+      semanticAnswer.textContent = copy.externalAnswer;
+    }
+
+    if (contextSupportPanel && !contextSupportPanel.hidden) {
+      const context = currentQuestionContext(activeQuestionWord);
+      if (contextSupportTitle) contextSupportTitle.textContent = copy.contextTitle;
+      if (contextSupportText && context) {
+        contextSupportText.textContent = context.situation + " " + context.question;
+      }
+    }
+
+    if (phase === "wait" && activeWaitArchetype) {
+      setWaitArchetype(activeWaitArchetype, "language-lens-change");
+    } else if (phase !== "wait" && activeWaitArchetype) {
+      clearWaitArchetype();
+    }
   }
 
   let semanticSequenceTimer = null;
@@ -1206,6 +1261,7 @@
       if (semanticAnswer) semanticAnswer.textContent = copy.noEvidence;
 
       semanticSequenceTimer = window.setTimeout(() => {
+        clearWaitArchetype();
         semanticSequence.dataset.phase = "response";
         if (semanticPhase) semanticPhase.textContent = copy.response;
         if (semanticCue) semanticCue.textContent = qwLabel + copy.remains;
