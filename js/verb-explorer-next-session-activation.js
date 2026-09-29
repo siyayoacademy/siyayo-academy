@@ -48,6 +48,14 @@
     var experienceId=text(session.decision.experienceId);
     if(!skill||!experienceId)return null;
     if(experienceId!==text(authorization.toExperience))return null;
+    if(skill!==text(authorization.nextDecision&&authorization.nextDecision.skill))return null;
+    if(skill==='what.use.object-question'){
+      var skillSource=root.SIYAYOVerbExplorerCanonicalSkillSource;
+      var canonicalDefinition=skillSource&&typeof skillSource.getDefinition==='function'
+        ?skillSource.getDefinition():null;
+      if(!canonicalDefinition||canonicalDefinition.id!==skill||
+        canonicalDefinition.passContract!==passContract)return null;
+    }
 
     if(text(state.currentExperienceId)!==experienceId)return null;
 
