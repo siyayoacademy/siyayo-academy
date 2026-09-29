@@ -20,11 +20,13 @@ function inspect(){
   var context=current&&current.context,profile=profiles.getProfile();
   var from=id(decision&&decision.experienceId),to=id(state&&state.currentExperienceId);
   var skill=id(decision&&decision.skill),packets=context&&context.evidencePackets;
-  if(!from||!to||from===to||skill!=='which.use.determiner')return null;
+  var which=from==='shopping-for-dinner'&&to==='preparing-dinner'&&skill==='which.use.determiner';
+  var what=from==='preparing-dinner'&&to==='having-dinner'&&skill==='what.use.object-question';
+  if(!which&&!what)return null;
   if(!context||!context.passContract||!Array.isArray(packets)||!profile||!Array.isArray(profile.observations))return null;
   var transfer=packets.some(function(packet){
     var details=packet&&packet.context||{};
-    return packet.skill===skill&&packet.dimension==='determiner-use'&&
+    return packet.skill===skill&&packet.dimension===(which?'determiner-use':'object-answer')&&
       packet.mode==='transfer'&&packet.result==='pass'&&packet.support==='none'&&
       id(details.fromExperienceId)===from&&id(details.experienceId)===to&&id(details.occurrenceId);
   });
