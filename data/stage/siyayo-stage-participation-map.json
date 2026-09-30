@@ -279,7 +279,7 @@
     },
     {
       "id": "verb-actions",
-      "status": "active-grouped-explore-prototype",
+      "status": "active-grouped-explore-plus-en-morphology-prototype",
       "whatIsIt": "Trilingual lexical verbs with example sentences and target words.",
       "source": [
         "verb-examples"
@@ -317,7 +317,7 @@
       ],
       "evidenceRole": "opportunity-only",
       "destinationOrPurpose": "All 21 canonical trilingual Verb Actions are available through two Frondosa groups (1–14, 15–21), preserving exact semantic resonance per item.",
-      "nextRefinement": "Homologate both groups in EN/ES/PT/Tripiano and reuse the grouping contract for future large collections such as Adjectives or alphabet queues."
+      "nextRefinement": "Homologate EN-only Regular/Irregular morphology visuals and speech across both groups; keep ES/PT morphology at WAIT."
     },
     {
       "id": "verb-systems",
@@ -574,8 +574,7 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate Verb Actions groups 1–14 and 15–21 in EN / ES / PT / Tripiano",
-    "implement EN-only Regular / Irregular morphology view from canonical actions.json",
+    "homologate EN-only Verb Morphology in groups 1–14 and 15–21: Regular / Irregular / speech / Portrait",
     "audit independent Spanish and Portuguese morphology sources before any cross-language regularity view",
     "map Verb Function as a separate Stage dimension",
     "map Time/Tense as a separate timeline/orbit dimension",
@@ -612,7 +611,8 @@
       ],
       "semantic-cadence": "contextual-only",
       "verbs": [
-        "explore"
+        "explore",
+        "morphology-en"
       ]
     },
     "visualHierarchy": {
@@ -739,7 +739,7 @@
   "verbSystemsDevelopmentMap": {
     "path": "docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md",
     "checkpoint": "PIANO-STAGE-VERB-MAP-01",
-    "status": "mapped",
+    "status": "en-morphology-implemented-awaiting-homologation",
     "criticalRule": "Current regularity is English-specific and must not be inferred for Spanish or Portuguese.",
     "next": [
       "homologate grouped Verb Actions Explore",
@@ -749,6 +749,28 @@
       "map Time/Tense separately",
       "map Sentence Form separately",
       "map Xespirito auxiliary/modal layer"
-    ]
+    ],
+    "currentImplementation": {
+      "activity": "morphology",
+      "scope": "en-only",
+      "source": "data/lexicon/verbs/actions.json",
+      "dimensions": [
+        "regularity",
+        "lemma",
+        "stored English forms"
+      ],
+      "visualChannels": [
+        "Frondosa aura/background",
+        "solid-vs-dashed contour",
+        "semantic status text"
+      ],
+      "speech": "English lemma + regular/irregular relation + past form",
+      "evidence": "none",
+      "waits": [
+        "Spanish morphology",
+        "Portuguese morphology",
+        "Tripiano regularity comparison"
+      ]
+    }
   }
 }
