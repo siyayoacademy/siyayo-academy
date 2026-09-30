@@ -2379,3 +2379,30 @@ h1 {
     left:77% !important;
   }
 }
+
+
+/* =========================================================
+   NOUN CLASSIFY SPEECH + FOCUS v0.3
+   Choice is prominent; canonical source remains a distinct state.
+   ========================================================= */
+.noun-classify-choices button.is-selected {
+  border-color:rgba(242,216,138,.88);
+  color:var(--gold-light);
+  background:rgba(215,179,90,.12);
+  outline:2px solid rgba(242,216,138,.72);
+  outline-offset:3px;
+  box-shadow:0 0 14px rgba(242,216,138,.18);
+}
+
+.noun-classify-choices button.is-source {
+  box-shadow:
+    inset 0 0 0 2px rgba(98,178,116,.62),
+    0 0 14px rgba(98,178,116,.16);
+}
+
+.noun-classify-choices button.is-selected.is-source {
+  outline-color:rgba(242,216,138,.88);
+  box-shadow:
+    inset 0 0 0 2px rgba(98,178,116,.68),
+    0 0 18px rgba(242,216,138,.20);
+}
