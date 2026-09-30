@@ -2497,3 +2497,75 @@ h1 {
     margin-bottom:1px;
   }
 }
+
+
+/* =========================================================
+   PORTRAIT CONTROL FLOW v0.3
+   Prevent overlap by letting control groups wrap on their own rows.
+   ========================================================= */
+.stage-viewport[data-preview="portrait"] .collection-panel,
+.stage-viewport[data-preview="portrait"] .activity-panel,
+.stage-viewport[data-preview="portrait"] .mode-panel,
+.stage-viewport[data-preview="portrait"] .noun-layer-panel {
+  display:flex;
+  width:100%;
+  max-width:100%;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  flex-wrap:wrap;
+  gap:10px 8px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.stage-viewport[data-preview="portrait"] .collection-label,
+.stage-viewport[data-preview="portrait"] .activity-label,
+.stage-viewport[data-preview="portrait"] .mode-label,
+.stage-viewport[data-preview="portrait"] .noun-layer-label {
+  flex:0 0 100%;
+  width:100%;
+  text-align:center;
+  margin:0 0 2px;
+}
+
+.stage-viewport[data-preview="portrait"] .collection-button,
+.stage-viewport[data-preview="portrait"] .activity-button,
+.stage-viewport[data-preview="portrait"] .mode-button,
+.stage-viewport[data-preview="portrait"] .noun-layer-button {
+  flex:0 0 auto;
+  min-width:max-content;
+  max-width:100%;
+  margin:0;
+}
+
+.stage-viewport[data-preview="portrait"] .activity-panel {
+  padding-inline:8px;
+}
+
+.stage-viewport[data-preview="portrait"] .mode-panel {
+  padding:10px 8px 0;
+}
+
+@media (max-width:600px) {
+  .collection-panel,
+  .activity-panel,
+  .mode-panel,
+  .noun-layer-panel {
+    width:100%;
+    max-width:100%;
+  }
+
+  .collection-button,
+  .activity-button,
+  .mode-button,
+  .noun-layer-button {
+    flex:0 0 auto;
+    min-width:max-content;
+  }
+
+  .activity-panel,
+  .mode-panel {
+    gap:10px 8px;
+  }
+}
