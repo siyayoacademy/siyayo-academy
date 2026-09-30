@@ -49,14 +49,15 @@ function build(){
   assert.equal(t.getCurrent(),'Aldo');
   assert.equal(t.getReadiness(),1,'identity confirmation may re-enter readiness once');
   assert.equal(t.panel.dataset.identityState,'ready');
-  assert.equal(t.input.disabled,true);
-  assert.equal(t.confirm.disabled,true);
+  assert.equal(t.input.disabled,false);
+  assert.equal(t.confirm.disabled,false);
   assert.match(t.status.textContent,/LEARNER READY · Aldo/);
 
   t.input.value='Another';
   t.listeners['confirm:click']();
   await Promise.resolve();
-  assert.deepEqual(t.provided,['Aldo'],'resolved identity must not be silently replaced');
+  assert.deepEqual(t.provided,['Aldo','Another'],'confirmed identity replacement is explicit');
+  assert.equal(t.getReadiness(),2);
 
   console.log('Verb Explorer learner identity surface: PASS — only explicit human-entered identity reaches the canonical provider, no identity is invented or persisted, and readiness is re-signaled once after acceptance.');
 })().catch(error=>{console.error(error);process.exit(1);});
