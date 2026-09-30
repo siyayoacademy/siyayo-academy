@@ -572,14 +572,14 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate Noun Classify: choice capture + optional source reveal",
+    "homologate Stage visual hierarchy: Collection → Activity → contextual surface → Listen/Language",
+    "finish Noun Classify visual/interactivity homologation",
     "admit Verb Actions from trilingual corpus",
     "bind Semantic Cadence contextually where an Experience actually needs it",
     "admit Nice Party contextual vocabulary/accessories",
     "prototype Perspective Shift",
     "prototype Social Identity bridge on stage",
-    "audit remaining Ten Kinds item-by-item",
-    "only then consider external research for additional game patterns"
+    "audit remaining Ten Kinds item-by-item"
   ],
   "stageRouting": {
     "version": "1.0",
@@ -608,6 +608,18 @@
         "classify"
       ],
       "semantic-cadence": "contextual-only"
+    },
+    "visualHierarchy": {
+      "status": "implemented-awaiting-homologation",
+      "order": [
+        "collection",
+        "activity",
+        "contextual-activity-surface",
+        "listen-language",
+        "status",
+        "instrument"
+      ],
+      "note": "Control order was clarified without changing pedagogical authority or activity contracts."
     }
   }
 }
