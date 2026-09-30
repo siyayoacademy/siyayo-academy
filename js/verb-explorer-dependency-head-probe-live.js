@@ -1,6 +1,6 @@
 // Live browser binding for one canonical Dependency Head Probe.
-// Mounting requires grounded Experience metadata, canonical dependency structure,
-// and an active adaptive Session with a canonical skill. One explicit learner
+// Mounting requires grounded Experience metadata and canonical dependency structure.
+// Identified assessment requires an active adaptive Session. One explicit learner
 // selection flows Definition -> Result -> Evidence -> Attempt -> Coordinator/Cycle.
 // Exploratory Dependency Focus remains separate and produces no assessed event.
 (function(root,factory){
@@ -9,6 +9,8 @@
   else root.SIYAYOVerbExplorerDependencyHeadProbeLive=api;
 })(typeof globalThis!=='undefined'?globalThis:this,function(root){
   'use strict';
+
+  var practiceTrace=[];
 
   function text(value){return typeof value==='string'?value.trim():'';}
 
@@ -26,6 +28,7 @@
     el.panel.hidden=true;
     el.container.innerHTML='';
     delete el.container.__siyayoDependencyHeadProbeBinding;
+    delete el.container.__siyayoAnonymousHeadToken;
     el.feedback.hidden=true;
     el.feedback.textContent='';
     delete el.feedback.dataset.result;
@@ -81,6 +84,45 @@
 
     var presentation=presenter.present(definition);
     if(!presentation)return false;
+
+
+    // Explicit anonymous observation path; never enters Evidence/Attempt/Cycle.
+    var identity=options.identitySource||root.SIYAYOVerbExplorerLearnerIdentitySource;
+    var runtime=options.runtime||root.SIYAYOVerbExplorerExperienceRuntime;
+    var questionWord=text(options.questionWord);
+    function anonymousCurrent(){
+      return identity&&typeof identity.getId==='function'&&!identity.getId()&&
+        (!coordinator||typeof coordinator.snapshot!=='function'||!(coordinator.snapshot()||{}).session)&&
+        runtime&&typeof runtime.activeExperienceId==='function'&&runtime.activeExperienceId()===experience.id&&
+        typeof runtime.activeLanguage==='function'&&runtime.activeLanguage()===language&&
+        typeof runtime.activeQuestionWord==='function'&&runtime.activeQuestionWord()===questionWord;
+    }
+    if(options.allowAnonymousPractice===true&&questionWord&&anonymousCurrent()){
+      if(!resultApi||typeof resultApi.evaluate!=='function'||!learnerEvents)return false;
+      var token={};
+      el.container.__siyayoAnonymousHeadToken=token;
+      var anonymousInstalled=wire.install(presentation,{
+        container:el.container,learnerEvents:learnerEvents,
+        onEvent:function(event){
+          if(el.container.__siyayoAnonymousHeadToken!==token||!anonymousCurrent())return null;
+          var result=resultApi.evaluate(definition,event);
+          if(!result)return null;
+          var record=Object.freeze({questionWord:questionWord,occurrenceId:result.occurrenceId,
+            experienceId:result.experienceId,structureId:result.structureId,language:language,
+            selectedAlternativeId:result.selectedAlternativeId,result:result.result,
+            evidenceProduced:false,greenPass:false});
+          practiceTrace.push(record);
+          el.feedback.textContent=result.result==='pass'
+            ?({en:'✓ HEAD IDENTIFIED · correct answer observed · free practice',es:'✓ NÚCLEO IDENTIFICADO · respuesta correcta observada · práctica libre',pt:'✓ NÚCLEO IDENTIFICADO · resposta correta observada · prática livre'}[language])
+            :feedbackText(result.result,language);
+          el.feedback.dataset.result=result.result;el.feedback.hidden=false;
+          el.panel.dataset.cycleStatus='observed';
+          return record;
+        }
+      });
+      if(anonymousInstalled!==true){hide(doc);return false;}
+      el.panel.dataset.assessmentState='anonymous-practice';el.panel.hidden=false;return true;
+    }
 
     // Assessment presentation is authority-gated. Before a grounded Session
     // exists, the Head Probe remains hidden: exploratory Dependency Focus may
@@ -150,5 +192,5 @@
     return true;
   }
 
-  return Object.freeze({mount:mount,hide:hide});
+  return Object.freeze({mount:mount,hide:hide,getPracticeTrace:function(){return Object.freeze(practiceTrace.slice());}});
 });

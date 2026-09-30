@@ -16,7 +16,7 @@ function panel(doc){
   }
   return el;
 }
-function hide(doc){var el=panel(doc);if(!el)return false;el.hidden=true;el.innerHTML='';return true;}
+function hide(doc){var el=panel(doc);if(!el)return false;el.hidden=true;el.innerHTML='';delete el.dataset.canonicalQuestion;return true;}
 function mount(input){
   input=input||{};
   var doc=input.document||root.document,el=panel(doc);
@@ -66,7 +66,7 @@ function mount(input){
   var feedback=doc.createElement('p');feedback.setAttribute('aria-live','polite');feedback.hidden=true;
   var sensor=Object.freeze({support:function(){return 'none';}});
   available.forEach(function(spec){
-    var section=doc.createElement('div');section.className='what-object-question-probe';
+    var section=doc.createElement('div');section.className='what-object-question-probe';section.dataset.dimension=spec.dimension;
     var label=doc.createElement('h4');label.className='what-probe-step';
     label.textContent=transfer?guidance.transfer:spec.dimension==='question-function'?guidance.function:guidance.local;
     section.appendChild(label);
@@ -108,6 +108,7 @@ function mount(input){
     section.appendChild(options);
     el.appendChild(section);
   });
+  el.dataset.canonicalQuestion=(available.find(function(spec){return spec.dimension==='object-answer';})||{}).question||'';
   el.appendChild(feedback);el.hidden=false;
   return true;
 }

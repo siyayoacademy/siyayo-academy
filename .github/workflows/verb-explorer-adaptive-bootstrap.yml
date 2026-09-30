@@ -375,3 +375,6 @@ jobs:
 
       - name: Test WHAT canonical answer presentation
         run: node scripts/test-shopping-what-canonical-responses.js
+
+      - name: Test WHAT presentation and anonymous structural practice
+        run: node scripts/test-what-presentation-and-anonymous-practice.js

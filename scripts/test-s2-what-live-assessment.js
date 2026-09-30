@@ -56,7 +56,7 @@ assert.match(groups[1].children[0].textContent,/preparando/);
 groups[0].children[2].children[0].click();
 assert.equal(attempts.length,1);
 assert.equal(attempts[0].dimension,'question-function');
-groups[1].children[2].children.find(el=>el.textContent==='tomates').click();
+groups[1].children[2].children.find(el=>el.textContent==='Estamos preparando tomates primeiro.').click();
 assert.equal(attempts.length,2);
 assert.equal(attempts[1].dimension,'object-answer');
 assert.equal(attempts[1].result,'pass');
@@ -77,3 +77,4 @@ active.session={decision:{skill:'which.use.determiner',experienceId:'preparing-d
 assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),false);
 assert.equal(attempts.length,3);
 console.log('PASS — WHAT panel submits distinct S2 and S3 Attempts only for the active WHAT Session.');
+

@@ -18,7 +18,54 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-12
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-13
+
+**Recorded:** 2026-09-30
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Base HEAD:** `3aeac624bc4dcb2a8fb648bf2c91697106f3f9ba`
+**Change kind:** EXTENSION — WHAT presentation and explicit anonymous structural practice; no migration/replacement of canonical evaluation.
+**Status:** local contract tests passed; CI/deploy and user visual homologation remain separate.
+
+## DONE — EXACT SCOPE
+
+| Surface | Connection | Authority / limit |
+|---|---|---|
+| Shopping WHAT LINES | third canonical-response action opens the existing WHAT panel and focuses a response | preserves all 27 exploratory dialogue turns; action creates no response/Evidence |
+| Preparing / Having WHAT LINES | contextual reference from declared answerGrounding, plus practice invitation only when panel visible | removes generic unrelated verb response for these WHAT entries; reference is not a new tense/mode corpus |
+| Preparing WHAT candidates | full EN/ES/PT responses for all seven accepted vegetables plus parsley and salmon | parsley distracts S1 transfer; salmon distracts S2 local; existing IDs/results unchanged |
+| Shopping WHAT / WHICH without nick | grounded Head diagnostic is visible, clicks use existing Definition/Result/Wire | anonymous observation only; no Evidence/Attempt/Coordinator/Green |
+| Anonymous history | immutable per-occurrence trace, QWord/Experience/language/structure/result, in current page memory | no nick/PII, no persistence/account/print, no retrospective assessment credit |
+| Nick / Session boundary | anonymous handler refuses identity arrival, active Session, replaced binding or changed QWord/language/Experience | identified assessment retains existing authority gate |
+
+The LINES action names the fixed canonical reference question explicitly; changing Tense/Mode does not change the assessed question.
+Anonymous structural success is observed feedback, not the contract counter. A nick does not turn previous practice into Evidence.
+Default live mounting remains Session-gated unless the runtime explicitly requests anonymous practice with verified absence of identity and Session.
+Xespirito / Verb DNA diagnosis, repair trace and legacy bridges are preserved unchanged.
+
+## TESTS / HOMOLOGATION
+
+- `scripts/test-what-presentation-and-anonymous-practice.js`: EN/ES/PT Preparing local/transfer candidates, fail-closed incomplete responses, LINES Tense/Mode and action, real Head Definition/Result/Wire, repeated click occurrences, fail feedback, stale identity/context/Session/binding, zero adaptive calls.
+- Existing S1 and S2 WHAT canonical Green cycles still pass in EN/ES/PT.
+- Existing S2 live panel test updated to select its full Portuguese response and preserves Attempt provenance and S3 transfer.
+- CI GREEN proves contract checks, not browser/user visual homologation.
+
+## OPEN — DO NOT ERASE GAPS
+
+- Anonymous canonical-choice/object-answer practices beyond Shopping structural Head diagnostic remain OPEN.
+- Preparing WHICH has no independent entry contract; preserve its Shopping transfer role.
+- Having full-sentence candidates remain the documented short-label presentation fallback.
+- Full per-QWord graph/diagnostic/tense-mode/dialogue/contract coverage is not complete; declare each grounded extension.
+- Durable accounts, reports, Piano receiver/advance executor remain OPEN.
+
+## NEXT GO
+
+After CI/deploy, visually check Shopping without nick -> WHAT/cook and WHICH/books in EN/ES/PT; verify observed feedback without Green or retroactive credit.
+Then with nick check WHAT LINES canonical-response action in Shopping and Preparing, select full accepted/distractor responses and preserve the existing 0/3 -> 3/3 cycles.
+Record visual homologation before expanding anonymous answer practice or another QWord.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-12
 
 **Recorded:** 2026-09-30
 **Base HEAD:** `5be0c98f2f0a119ab4df6ce2d6cde9fc32a3a5da`
@@ -761,8 +808,8 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-12`.  
-**Current work:** anonymous answer-practice boundary mapped; smallest Shopping WHICH seam pending implementation.
+**Checkpoint:** `JAGUAR-LIVE-13`.  
+**Current work:** WHAT LINES/Preparing responses and anonymous Shopping Head practice connected; visual homologation pending; broader anonymous answer practice remains OPEN.
 
 ## B. SIYAYO presentation / audiences / profiles
 

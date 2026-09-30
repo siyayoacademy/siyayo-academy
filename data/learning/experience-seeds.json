@@ -830,6 +830,80 @@
               "sweet-potatoes",
               "cassava",
               "green-beans"
+            ],
+            "canonicalResponses": [
+              {
+                "id": "tomatoes",
+                "response": {
+                  "en": "We are preparing tomatoes first.",
+                  "es": "Estamos preparando tomates primero.",
+                  "pt": "Estamos preparando tomates primeiro."
+                }
+              },
+              {
+                "id": "red-onion",
+                "response": {
+                  "en": "We are preparing red onion first.",
+                  "es": "Estamos preparando cebolla roja primero.",
+                  "pt": "Estamos preparando cebola roxa primeiro."
+                }
+              },
+              {
+                "id": "leek",
+                "response": {
+                  "en": "We are preparing leek first.",
+                  "es": "Estamos preparando puerro primero.",
+                  "pt": "Estamos preparando alho-poró primeiro."
+                }
+              },
+              {
+                "id": "carrots",
+                "response": {
+                  "en": "We are preparing carrots first.",
+                  "es": "Estamos preparando zanahorias primero.",
+                  "pt": "Estamos preparando cenouras primeiro."
+                }
+              },
+              {
+                "id": "sweet-potatoes",
+                "response": {
+                  "en": "We are preparing sweet potatoes first.",
+                  "es": "Estamos preparando batatas primero.",
+                  "pt": "Estamos preparando batatas-doces primeiro."
+                }
+              },
+              {
+                "id": "cassava",
+                "response": {
+                  "en": "We are preparing cassava first.",
+                  "es": "Estamos preparando yuca primero.",
+                  "pt": "Estamos preparando mandioca primeiro."
+                }
+              },
+              {
+                "id": "green-beans",
+                "response": {
+                  "en": "We are preparing green beans first.",
+                  "es": "Estamos preparando judías verdes primero.",
+                  "pt": "Estamos preparando vagens primeiro."
+                }
+              },
+              {
+                "id": "parsley",
+                "response": {
+                  "en": "We are preparing parsley first.",
+                  "es": "Estamos preparando perejil primero.",
+                  "pt": "Estamos preparando salsa primeiro."
+                }
+              },
+              {
+                "id": "salmon",
+                "response": {
+                  "en": "We are preparing salmon first.",
+                  "es": "Estamos preparando salmón primero.",
+                  "pt": "Estamos preparando salmão primeiro."
+                }
+              }
             ]
           },
           "questionWordLabel": {
