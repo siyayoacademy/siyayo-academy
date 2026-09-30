@@ -55,6 +55,13 @@ function mount(input){
     es:{function:'1 · Elige la palabra interrogativa',local:'2 · Elige qué estamos preparando',transfer:'3 · Aplica QUÉ en la mesa'},
     pt:{function:'1 · Escolha a palavra interrogativa',local:'2 · Escolha o que estamos preparando',transfer:'3 · Aplique O QUE à mesa'}
   }[language];
+  if(from==='shopping-for-dinner'){
+    guidance={
+      en:{function:'1 · Choose the question word',local:'2 · Choose what we are going to cook',transfer:'3 · Apply WHAT in the kitchen'},
+      es:{function:'1 · Elige la palabra interrogativa',local:'2 · Elige qué vamos a cocinar',transfer:'3 · Aplica QUÉ en la cocina'},
+      pt:{function:'1 · Escolha a palavra interrogativa',local:'2 · Escolha o que vamos cozinhar',transfer:'3 · Aplique O QUE na cozinha'}
+    }[language];
+  }
   var title=doc.createElement('h3');title.textContent=copy.heading;el.appendChild(title);
   var feedback=doc.createElement('p');feedback.setAttribute('aria-live','polite');feedback.hidden=true;
   var sensor=Object.freeze({support:function(){return 'none';}});
