@@ -18,7 +18,46 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-07
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-08
+
+**Recorded:** 2026-09-30
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Reviewed implementation HEAD:** `93a353aff9ee87acef6540b2aa4ea477511402b9`
+**Status:** prior Preparing WHICH seam visually homologated by user; anonymous practice boundary mapped, runtime implementation OPEN.
+
+## DONE / EVIDENCE
+
+- User confirmed the deployed Preparing WHICH seam and authorized the next step.
+- Rechecked GitHub HEAD: 93a353a. Bootstrap, Corpus Integrity, Resume Runtime Dispatch and Cloudflare Pages all succeeded.
+- Source audit: DependencyHeadProbeLive gates presentation behind an active Session. WhatAssessmentLive also requires the active WHAT decision. These assessment surfaces cannot simply be enabled anonymously without separating their submission authority.
+
+## ROUTINE MAP — anonymous answer practice
+
+- Entry: explicit selected QWord and its declared canonical practice content in the current Experience/language; no nick required.
+- First bounded candidate: existing Shopping WHICH head diagnostic and its EN/ES/PT definition/presenter/result chain. Reuse canonical content and correctness authority; do not invent a second evaluator.
+- Presentation must follow the selected QWord. Undeclared practice content remains absent/WAIT, never substituted with another QWord's task.
+- Anonymous response: record an observational practice trace and show canonical diagnostic feedback. It must not assemble assessed Evidence/Attempt, submit to Coordinator, fill mastery markers or authorize navigation.
+- Identified assessment: existing grounded Session remains the only authority for assessment submission. Practice must never silently evaluate another skill's Session.
+- Identity confirmation does not retroactively convert anonymous answers into assessed Evidence. The learner must respond under the explicit assessment contract.
+- Language comparison and NEXT remain freely available. Language/Experience changes must invalidate obsolete answer bindings.
+- Observation trace must omit raw nick/PII, remain separate from EvidenceProfile and state its actual persistence scope. No claim of account/report persistence.
+- Expected view: question/options and immediate observed-answer feedback without nick; no 0/3 assessment counter or Green from anonymous practice. Existing identified assessment retains its current contract.
+- Required checks before wiring: reuse Definition/Presenter/Result, inspect browser-wire event provenance and existing exploration trace sink; verify no anonymous Coordinator/Evidence calls, stale binding rejection, EN/ES/PT behavior, explicit Session gating and no retroactive credit.
+
+## WAIT / OPEN
+
+- This checkpoint maps the boundary only; anonymous answer practice is not implemented.
+- Durable anonymous trace, accounts and printable reports remain unverified.
+- S2 WHICH independent assessment entry and remaining QWord practice/dependency definitions remain undeclared.
+- No Green Pass from practice correctness, SVG, support, identity or navigation.
+
+## NEXT GO
+
+Inspect the existing head-probe browser wire and exploration trace authority; connect the smallest Shopping WHICH anonymous practice seam using the existing canonical definition/result. Test anonymous observation versus identified assessment before expansion to WHAT or other QWords.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-07
 
 **Recorded:** 2026-09-30
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -610,8 +649,8 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-07`.  
-**Current work:** Preparing WHICH contextual dialogue and reference syntax; anonymous practice remains OPEN.
+**Checkpoint:** `JAGUAR-LIVE-08`.  
+**Current work:** anonymous answer-practice boundary mapped; smallest Shopping WHICH seam pending implementation.
 
 ## B. SIYAYO presentation / audiences / profiles
 
