@@ -2569,3 +2569,86 @@ h1 {
     gap:10px 8px;
   }
 }
+
+
+/* =========================================================
+   CONTENT GROUP NAVIGATOR v0.1
+   Reusable queue/window control for large word collections.
+   ========================================================= */
+.content-group-panel {
+  width:min(100%,820px);
+  margin:0 auto 4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.content-group-panel[hidden] {
+  display:none;
+}
+
+.content-group-label {
+  font-family:var(--font-display);
+  font-size:.68rem;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.52);
+}
+
+.content-group-button {
+  min-height:30px;
+  padding:0 10px;
+  border:1px solid rgba(116,166,255,.26);
+  border-radius:999px;
+  background:rgba(20,42,78,.46);
+  color:rgba(220,232,255,.76);
+  font-family:var(--font-display);
+  font-size:.70rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.content-group-button.is-active {
+  border-color:rgba(242,216,138,.60);
+  color:var(--gold-light);
+  background:rgba(215,179,90,.10);
+  box-shadow:0 0 10px rgba(242,216,138,.10);
+}
+
+.stage-viewport[data-preview="portrait"] .content-group-panel {
+  width:100%;
+  justify-content:center;
+}
+
+/* Verb labels need a little more breathing room than Question Words. */
+.stage[data-collection="verbs"] .frondosa-hotspots .leaf span {
+  line-height:1.02;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"] .frondosa-hotspots .leaf {
+  width:66px;
+  min-height:40px;
+  padding:4px 5px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"] .frondosa-hotspots .leaf span {
+  font-size:.55rem;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  text-overflow:clip;
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  .stage[data-collection="verbs"] .frondosa-hotspots .leaf {
+    width:66px;
+    min-height:40px;
+  }
+
+  .stage[data-collection="verbs"] .frondosa-hotspots .leaf span {
+    font-size:.55rem;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+}
