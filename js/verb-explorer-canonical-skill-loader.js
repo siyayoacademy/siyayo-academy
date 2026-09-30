@@ -2,7 +2,8 @@
 // It loads no Experience mapping and makes no pedagogical Skill inference.
 (function(root){
 'use strict';
-var pendingByPath=Object.create(null);
+var pendingByPath=Object.create(null),generation=0;
+function clear(){generation+=1;}
 
 function normalizePath(path){
   if(typeof path!=='string')return null;
@@ -26,11 +27,13 @@ function load(path){
       .catch(function(){return null;});
   }
 
+  var version=generation;
   return pendingByPath[canonicalPath].then(function(definition){
+    if(version!==generation)return false;
     if(!definition)return false;
     return source.adopt(definition)===true;
   });
 }
 
-root.SIYAYOVerbExplorerCanonicalSkillLoader=Object.freeze({load:load});
+root.SIYAYOVerbExplorerCanonicalSkillLoader=Object.freeze({load:load,clear:clear});
 })(typeof globalThis!=='undefined'?globalThis:this);
