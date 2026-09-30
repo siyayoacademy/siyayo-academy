@@ -130,6 +130,7 @@ function selectThinkingMindAssessment(question){
   if(!selection||typeof selection.select!=="function")return Promise.resolve(false);
   return Promise.resolve(selection.select(question)).then(result=>{
     if(result===true){
+      renderExperience();
       const headProbe=window.SIYAYOVerbExplorerDependencyHeadProbeRuntime;
       if(headProbe&&typeof headProbe.render==="function")headProbe.render();
     }
