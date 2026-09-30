@@ -134,6 +134,23 @@
       ]
     }
   });
+  const verbActionItems = Object.freeze([
+    { id:"work", en:"work", es:"trabajo", pt:"trabalho", examples:{ en:"I work every day.", es:"Yo trabajo todos los días.", pt:"Eu trabalho todos os dias." } },
+    { id:"study", en:"study", es:"estudio", pt:"estudo", examples:{ en:"I study English every day.", es:"Yo estudio inglés todos los días.", pt:"Eu estudo inglês todos os dias." } },
+    { id:"play", en:"play", es:"juegan", pt:"brincam", examples:{ en:"The children play in the park.", es:"Los niños juegan en el parque.", pt:"As crianças brincam no parque." } },
+    { id:"walk", en:"walk", es:"Caminamos", pt:"Caminhamos", examples:{ en:"We walk to school.", es:"Caminamos a la escuela.", pt:"Caminhamos até a escola." } },
+    { id:"talk", en:"talk", es:"hablan", pt:"conversam", examples:{ en:"They talk every morning.", es:"Ellos hablan todas las mañanas.", pt:"Eles conversam todas as manhãs." } },
+    { id:"eat", en:"eat", es:"Desayunamos", pt:"Tomamos", examples:{ en:"We eat breakfast together.", es:"Desayunamos juntos.", pt:"Tomamos café da manhã juntos." } },
+    { id:"drink", en:"drinks", es:"bebe", pt:"bebe", examples:{ en:"She drinks water in the morning.", es:"Ella bebe agua por la mañana.", pt:"Ela bebe água pela manhã." } },
+    { id:"sleep", en:"sleeps", es:"duerme", pt:"dorme", examples:{ en:"The baby sleeps at night.", es:"El bebé duerme por la noche.", pt:"O bebê dorme à noite." } },
+    { id:"wake", en:"wake", es:"despierto", pt:"acordo", examples:{ en:"I wake up early.", es:"Me despierto temprano.", pt:"Eu acordo cedo." } },
+    { id:"read", en:"reads", es:"lee", pt:"lê", examples:{ en:"She reads a book every night.", es:"Ella lee un libro todas las noches.", pt:"Ela lê um livro todas as noites." } },
+    { id:"write", en:"writes", es:"escribe", pt:"escreve", examples:{ en:"He writes a message.", es:"Él escribe un mensaje.", pt:"Ele escreve uma mensagem." } },
+    { id:"listen", en:"listen", es:"Escuchamos", pt:"Escutamos", examples:{ en:"We listen to music.", es:"Escuchamos música.", pt:"Escutamos música." } },
+    { id:"speak", en:"speak", es:"hablan", pt:"falam", examples:{ en:"They speak three languages.", es:"Ellos hablan tres idiomas.", pt:"Eles falam três idiomas." } },
+    { id:"go", en:"go", es:"Voy", pt:"vou", examples:{ en:"I go to work by bus.", es:"Voy al trabajo en autobús.", pt:"Eu vou ao trabalho de ônibus." } }
+  ]);
+
   let activeNounLayer = "concrete";
 
   function currentNounCollection() {
@@ -420,6 +437,12 @@
         example: { ...layer.example },
         items: layer.items.map(item => ({ ...item }))
       }))
+    });
+    contentCollectionEngine.register({
+      id: "verbs",
+      label: "Verbs",
+      status: "canonical-action-starter-window",
+      items: verbActionItems.map(item => ({ ...item }))
     });
     contentCollectionEngine.activate("question-words", "piano-stage-bootstrap");
   }
@@ -1630,8 +1653,15 @@
     return index >= 0 ? items[index] || null : null;
   }
 
+  function verbForLeaf(leaf) {
+    const index = leaves.indexOf(leaf);
+    return index >= 0 ? verbActionItems[index] || null : null;
+  }
+
   function activeContentItemForLeaf(leaf) {
-    return activeCollectionId === "nouns" ? nounForLeaf(leaf) : questionWordForLeaf(leaf);
+    if (activeCollectionId === "nouns") return nounForLeaf(leaf);
+    if (activeCollectionId === "verbs") return verbForLeaf(leaf);
+    return questionWordForLeaf(leaf);
   }
 
   function contentLabelForMode(item) {
@@ -1668,7 +1698,7 @@
       );
       delete leaf.dataset.classifyRole;
       delete leaf.dataset.classifyBranch;
-      leaf.hidden = activeCollectionId === "nouns" && !item;
+      leaf.hidden = ["nouns","verbs"].includes(activeCollectionId) && !item;
       if (label) label.textContent = item ? contentLabelForMode(item) : "";
     });
   }
@@ -1699,6 +1729,12 @@
     const collection = currentNounCollection();
     const language = mode === "questions" ? pedagogicalLanguage : ["en","es","pt"].includes(mode) ? mode : "en";
     return collection.labels[language] || collection.labels.en;
+  }
+
+  function verbActionExample(item) {
+    if (!item || !item.examples) return "";
+    const language = mode === "es" ? "es" : mode === "pt" ? "pt" : "en";
+    return item.examples[language] || item.examples.en || "";
   }
 
   function nounLayerExample() {
@@ -1734,7 +1770,7 @@
   }
 
   function setActiveCollection(nextId) {
-    if (!["question-words","nouns"].includes(nextId)) return;
+    if (!["question-words","nouns","verbs"].includes(nextId)) return;
     activeCollectionId = nextId;
     if (contentCollectionEngine) {
       contentCollectionEngine.activate(nextId, "piano-stage-collection-control");
@@ -1751,20 +1787,32 @@
     if (activeCollectionId !== "nouns" && activeActivity === "classify") {
       activeActivity = "explore";
     }
+    if (activeCollectionId === "verbs" && activeActivity !== "explore") {
+      activeActivity = "explore";
+    }
     refreshActivityControls();
     if (nounClassifyPanel) nounClassifyPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "classify");
     if (nounLayerPanel) nounLayerPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "explore");
 
     if (semanticSequence) semanticSequence.dataset.phase = "idle";
-    if (semanticPhase) semanticPhase.textContent = activeCollectionId === "nouns"
-      ? "NOUNS · " + nounLayerLabel().toUpperCase()
-      : "READY";
-    if (semanticCue) semanticCue.textContent = activeCollectionId === "nouns"
-      ? nounLayerExample()
-      : "Touch a Question Word leaf";
-    if (semanticAnswer) semanticAnswer.textContent = activeCollectionId === "nouns"
-      ? "Canonical noun classification • Explore"
-      : "Question → WAIT → learner response";
+    if (semanticPhase) semanticPhase.textContent =
+      activeCollectionId === "nouns"
+        ? "NOUNS · " + nounLayerLabel().toUpperCase()
+        : activeCollectionId === "verbs"
+          ? "VERBS · ACTIONS"
+          : "READY";
+    if (semanticCue) semanticCue.textContent =
+      activeCollectionId === "nouns"
+        ? nounLayerExample()
+        : activeCollectionId === "verbs"
+          ? "Touch a Verb Action leaf"
+          : "Touch a Question Word leaf";
+    if (semanticAnswer) semanticAnswer.textContent =
+      activeCollectionId === "nouns"
+        ? "Canonical noun classification • Explore"
+        : activeCollectionId === "verbs"
+          ? "Canonical trilingual action corpus • Explore"
+          : "Question → WAIT → learner response";
     if (learnerResponseForm) learnerResponseForm.hidden = true;
     clearWaitArchetype();
     refreshFrondosaLabels();
@@ -2012,6 +2060,35 @@
             mode,
             evaluated: false,
             evidenceProduced: false
+          }
+        }));
+        return;
+      }
+
+      if (activeCollectionId === "verbs") {
+        const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+        if (pianoKey) activateKey(pianoKey, key, "frondosa", {
+          kind:"content-item",
+          collectionId:"verbs",
+          id:contentItem.id,
+          evidence:"none"
+        }, mode !== "solfege");
+
+        if (mode !== "solfege") speakContentItem(contentItem);
+        if (semanticSequence) semanticSequence.dataset.phase = "observed";
+        if (semanticPhase) semanticPhase.textContent = "VERB · ACTION";
+        if (semanticCue) semanticCue.textContent = contentLabelForMode(contentItem);
+        if (semanticAnswer) semanticAnswer.textContent = verbActionExample(contentItem);
+
+        window.dispatchEvent(new CustomEvent("siyayo:content-item-event", {
+          detail:{
+            type:"content-item-explored",
+            source:"frondosa",
+            collectionId:"verbs",
+            itemId:contentItem.id,
+            mode,
+            evaluated:false,
+            evidenceProduced:false
           }
         }));
         return;
