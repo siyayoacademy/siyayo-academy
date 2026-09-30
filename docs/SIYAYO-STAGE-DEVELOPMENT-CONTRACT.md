@@ -519,3 +519,28 @@ If a future implementation proposes to remove, merge, rename, or repurpose a hom
 No “cleanup” may delete a homologated pedagogical branch merely because it appears redundant from a local code perspective.
 
 The tree may grow new branches. Existing homologated branches are preserved unless consciously superseded.
+
+
+## 18. Verb Systems mapped checkpoint — PIANO-STAGE-VERB-MAP-01
+
+A dedicated verb-system map now exists at:
+
+`docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md`
+
+Critical grounded rule:
+
+- the current canonical `regularity` field is English-specific;
+- it must not be projected onto Spanish or Portuguese;
+- EN Regular/Irregular may proceed as a scoped Stage layer;
+- ES/PT morphology remains WAIT until independent canonical contracts are available.
+
+Protected development order:
+
+1. Verb Actions grouped Explore homologation.
+2. EN-only Regular/Irregular morphology.
+3. ES/PT morphology audit.
+4. Verb Function.
+5. Time/Tense.
+6. Sentence Form.
+7. Xespirito auxiliary/modal layer.
+8. Experience-level combinations only after individual dimensions are stable.
