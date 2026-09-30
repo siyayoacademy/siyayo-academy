@@ -98,7 +98,9 @@ function refreshThinkingMindAssessmentHighlight(){
     const marker=history&&markerAuthority?.resolve?.(history);
     const confirmed=Boolean(marker&&(marker.state==="CONFIRMED"||marker.state==="CONSOLIDATED_EVIDENCE"));
     const selected=Boolean(word&&question?.questionWord===word);
-    button.classList.toggle("session-target",selected);
+    button.classList.remove("session-target");
+    button.classList.toggle("question-word-practicing",selected&&!confirmed);
+    button.dataset.learningState=confirmed?"confirmed":selected?"practicing":"exploring";
     button.classList.toggle("question-word-confirmed",confirmed);
     button.querySelector(".session-target-label")?.remove();
     const name=button.textContent.trim();

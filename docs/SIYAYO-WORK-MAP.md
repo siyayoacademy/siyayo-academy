@@ -18,7 +18,28 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-09
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-10
+
+**Recorded:** 2026-09-30
+**Base HEAD:** `0b50533621be7f13209669ad5fc5aac97697426d`
+**Status:** screenshot/corpus audit complete; explicit practice class replaces ambiguous legacy Session class; CI/deploy pending.
+
+## DONE / FINDINGS
+
+- User screenshots 1–3 show WHAT 2/3 originating in Shopping; exploring WHICH in Preparing does not replace that Session.
+- Screenshot4 shows Preparing WHICH corpus/reference graph with no active Trail/probe. S2 WHICH has neither assessmentTarget nor choiceContext; identity alone cannot manufacture them.
+- Shopping WHICH still declares canonical cheese choices and its own assessmentTarget. Contextual 4/4 is retained in S1, not deleted.
+- Active practice now uses question-word-practicing rather than the old session-target class. This avoids old cached CSS painting the active Session green. A dedicated data-learning-state distinguishes practicing/exploring/confirmed; achievement glow continues using question-word-confirmed only.
+- Existing free exploration, Session ownership, WHICH transfer and canonical choice content are preserved.
+
+## NEXT GO / OPEN
+
+Verify CI/deploy and repeat Shopping WHICH selection with nick -> local cheese use + canonical cheese choice -> free Preparing transfer. Starting WHICH directly in Preparing remains WAIT for an independent contract; do not fake that entry or duplicate S1 contextual choices.
+Anonymous practice checkpoint08 remains OPEN.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-09
 
 **Recorded:** 2026-09-30
 **Base HEAD:** `98d87c907b941334e0664182d970a1156d4c44fb`
@@ -672,7 +693,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-09`.  
+**Checkpoint:** `JAGUAR-LIVE-10`.  
 **Current work:** anonymous answer-practice boundary mapped; smallest Shopping WHICH seam pending implementation.
 
 ## B. SIYAYO presentation / audiences / profiles

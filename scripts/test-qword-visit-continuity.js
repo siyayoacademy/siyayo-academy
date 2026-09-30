@@ -11,7 +11,10 @@ for(const word of ['which','what','why']){
  assert.equal(s.goToExperience('missing'),false);
 }
 const css=fs.readFileSync('css/verb-explorer.css','utf8');
-const active=css.match(/#questionGear \.gear-option\.session-target\{([^}]+)\}/)[1];
+const active=css.match(/#questionGear \.gear-option.question-word-practicing\{([^}]+)\}/)[1];
 assert.doesNotMatch(active,/#42d796|rgba\(66,215,150/);
 assert.match(css,/#questionGear \.question-word-confirmed/);
 console.log('QWord visit continuity and neutral active-assessment styling: PASS');
+
+assert.doesNotMatch(code,/classList\.toggle\("session-target"/);
+assert.match(code,/question-word-practicing",selected&&!confirmed/);
