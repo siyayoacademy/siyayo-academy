@@ -18,7 +18,44 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-06
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-07
+
+**Recorded:** 2026-09-30
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Base HEAD:** `967280b93f5876218feadada65bdf04bedb4658f`
+**Status:** contextual dialogue and dependency checks pass locally; new CI/deployment and visual homologation pending.
+
+## ROUTINE MAP
+
+- Entry: learner selects WHICH in Preparing, with or without nick.
+- Corpus: original thinkingMind.question remains unchanged for the S1 transfer authority.
+- Presentation: dialogueForms explicitly maps Present/Past/Future and Affirmative/Negative/Interrogative independently in EN/ES/PT. The response concerns the carrots selected, instead of the unrelated entryVerb routine sentence.
+- Syntax: three Preparing WHICH reference structures bind which -> carrots (det), carrots -> cook (obj), modal -> cook (aux), first -> cook (advmod); English additionally declares we -> cook (nsubj). Spanish/Portuguese omit subjects as their own corpus does.
+- Interaction: existing exploratory SVG token focus, language controls, tense/mode and audio remain the presentation mechanisms. Dependency graph is explicitly a canonical reference question; it does not claim to redraw all tense/mode variants.
+- Assessment: no new assessmentTarget is introduced for S2 WHICH. The already-grounded S1 transfer probe remains authoritative. No Attempt/Evidence/Green from viewing, listening, switching controls or highlighting syntax.
+- Expected view: question and contextual form in LINES / POSSIBLE RESPONSES; carrots dependency focus above. Reference graph is available without nick; identified assessment depends on its existing separate contract.
+
+## DONE / EVIDENCE
+
+- User visually confirmed the stale anonymous WHAT Session no longer starts after choosing WHICH in Preparing and confirming nick. This confirmation does not homologate missing S2 WHICH assessment entry.
+- Previous dependency label size adjustment is in base HEAD; visual confirmation of its typography remains separate.
+- New tests run the actual experienceLines function for 27 language/tense/mode combinations and reject the generic entryVerb fallback.
+- Local checks pass for three dependency DNAs, omitted subjects, existing QWord switching, ES/PT determiner-use and transfer contracts, S1 WHAT Green cycle and corpus integrity.
+
+## WAIT / OPEN
+
+- S2 WHICH independent assessment entry remains undeclared.
+- Anonymous answer practice, printable/history/account persistence and remaining QWord graphs remain separate integration gaps.
+- Do not count a reference graph, contextual utterance or corpus comparison as Green Pass evidence.
+- Do not describe every tense/mode dependency graph as implemented; this patch binds the original modal reference question only.
+
+## NEXT GO
+
+Verify CI/deployed commit and visually homologate Preparing WHICH in EN/ES/PT: question -> matching contextual response, tense/mode/audio, SVG carrots focus, and no new Session from free exploration. Preserve full S1 WHICH -> S2 transfer -> Green -> explicit S2 WHAT adoption. Then map the anonymous answer-practice boundary before wiring it.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-06
 
 **Recorded:** 2026-09-30
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -573,8 +610,8 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-06`.  
-**Current work:** CI/deployment and visual verification of pending-target fix and WHAT Dependency Focus.
+**Checkpoint:** `JAGUAR-LIVE-07`.  
+**Current work:** Preparing WHICH contextual dialogue and reference syntax; anonymous practice remains OPEN.
 
 ## B. SIYAYO presentation / audiences / profiles
 

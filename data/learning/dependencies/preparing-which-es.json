@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-which-es",
+  "language": "es",
+  "sentence": "¿Qué zanahorias deberíamos cocinar primero?",
+  "tokens": [
+    {
+      "id": "which",
+      "index": 1,
+      "form": "Qué",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante interrogativo de zanahorias"
+        }
+      }
+    },
+    {
+      "id": "carrots",
+      "index": 2,
+      "form": "zanahorias",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Zanahorias que se eligen"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 3,
+      "form": "deberíamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 4,
+      "form": "cocinar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "first",
+      "index": 5,
+      "form": "primero",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "carrots",
+      "dependent": "which",
+      "relation": "det"
+    },
+    {
+      "head": "cook",
+      "dependent": "carrots",
+      "relation": "obj"
+    },
+    {
+      "head": "cook",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "cook",
+      "dependent": "first",
+      "relation": "advmod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHICH question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "which",
+    "field": "thinkingMind.question",
+    "notes": "Explicit language-specific corpus reference; no inserted omitted subject."
+  }
+}

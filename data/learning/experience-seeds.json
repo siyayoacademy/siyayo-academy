@@ -846,6 +846,130 @@
             "en": "WHICH",
             "es": "QUÉ",
             "pt": "QUAIS"
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "Which carrots should we cook first?",
+                  "es": "¿Qué zanahorias deberíamos cocinar primero?",
+                  "pt": "Quais cenouras devemos cozinhar primeiro?"
+                },
+                "response": {
+                  "en": "We should cook the fresh carrots first.",
+                  "es": "Deberíamos cocinar primero las zanahorias frescas.",
+                  "pt": "Devemos cozinhar primeiro as cenouras frescas."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Which carrots should we cook first?",
+                  "es": "¿Qué zanahorias deberíamos cocinar primero?",
+                  "pt": "Quais cenouras devemos cozinhar primeiro?"
+                },
+                "response": {
+                  "en": "We should not cook those carrots first.",
+                  "es": "No deberíamos cocinar primero esas zanahorias.",
+                  "pt": "Não devemos cozinhar primeiro aquelas cenouras."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Which carrots should we cook first?",
+                  "es": "¿Qué zanahorias deberíamos cocinar primero?",
+                  "pt": "Quais cenouras devemos cozinhar primeiro?"
+                },
+                "response": {
+                  "en": "Should we cook the fresh carrots first?",
+                  "es": "¿Deberíamos cocinar primero las zanahorias frescas?",
+                  "pt": "Devemos cozinhar primeiro as cenouras frescas?"
+                }
+              }
+            },
+            "past": {
+              "affirmative": {
+                "question": {
+                  "en": "Which carrots did we cook first yesterday?",
+                  "es": "¿Qué zanahorias cocinamos primero ayer?",
+                  "pt": "Quais cenouras cozinhamos primeiro ontem?"
+                },
+                "response": {
+                  "en": "We cooked the fresh carrots first yesterday.",
+                  "es": "Cocinamos primero las zanahorias frescas ayer.",
+                  "pt": "Cozinhamos primeiro as cenouras frescas ontem."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Which carrots did we cook first yesterday?",
+                  "es": "¿Qué zanahorias cocinamos primero ayer?",
+                  "pt": "Quais cenouras cozinhamos primeiro ontem?"
+                },
+                "response": {
+                  "en": "We did not cook those carrots first yesterday.",
+                  "es": "No cocinamos primero esas zanahorias ayer.",
+                  "pt": "Não cozinhamos primeiro aquelas cenouras ontem."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Which carrots did we cook first yesterday?",
+                  "es": "¿Qué zanahorias cocinamos primero ayer?",
+                  "pt": "Quais cenouras cozinhamos primeiro ontem?"
+                },
+                "response": {
+                  "en": "Did we cook the fresh carrots first yesterday?",
+                  "es": "¿Cocinamos primero las zanahorias frescas ayer?",
+                  "pt": "Cozinhamos primeiro as cenouras frescas ontem?"
+                }
+              }
+            },
+            "future": {
+              "affirmative": {
+                "question": {
+                  "en": "Which carrots will we cook first tonight?",
+                  "es": "¿Qué zanahorias cocinaremos primero esta noche?",
+                  "pt": "Quais cenouras cozinharemos primeiro esta noite?"
+                },
+                "response": {
+                  "en": "We will cook the fresh carrots first tonight.",
+                  "es": "Cocinaremos primero las zanahorias frescas esta noche.",
+                  "pt": "Cozinharemos primeiro as cenouras frescas esta noite."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Which carrots will we cook first tonight?",
+                  "es": "¿Qué zanahorias cocinaremos primero esta noche?",
+                  "pt": "Quais cenouras cozinharemos primeiro esta noite?"
+                },
+                "response": {
+                  "en": "We will not cook those carrots first tonight.",
+                  "es": "No cocinaremos primero esas zanahorias esta noche.",
+                  "pt": "Não cozinharemos primeiro aquelas cenouras esta noite."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Which carrots will we cook first tonight?",
+                  "es": "¿Qué zanahorias cocinaremos primero esta noche?",
+                  "pt": "Quais cenouras cozinharemos primeiro esta noite?"
+                },
+                "response": {
+                  "en": "Will we cook the fresh carrots first tonight?",
+                  "es": "¿Cocinaremos primero las zanahorias frescas esta noche?",
+                  "pt": "Cozinharemos primeiro as cenouras frescas esta noite?"
+                }
+              }
+            }
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-which-en",
+              "es": "preparing-which-es",
+              "pt": "preparing-which-pt"
+            },
+            "defaultFocus": "carrots"
           }
         },
         {
