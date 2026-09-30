@@ -366,3 +366,6 @@ jobs:
         run: |
           node scripts/test-verb-explorer-learner-switch-isolation.js
           node scripts/test-s1-what-canonical-green-cycle.js
+
+      - name: Check QWord visit continuity and mastery styling
+        run: node scripts/test-qword-visit-continuity.js

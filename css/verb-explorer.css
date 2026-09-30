@@ -240,8 +240,8 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 @media(max-width:480px){.why-contextual-reason-probe{padding:12px 0}.why-probe-options{gap:8px}.why-probe-option{min-width:82px;padding:9px 12px;font-size:.8rem}}
 
 /* The highlighted question is exploration; the badge marks the canonical Session skill. */
-#questionGear .gear-option.session-target{border-color:#42d796;box-shadow:inset 0 0 0 1px rgba(66,215,150,.55)}
-#questionGear .session-target-label{display:block;margin-top:3px;color:#70e9ab;font-size:.55rem;letter-spacing:.06em;line-height:1.2}
+#questionGear .gear-option.session-target{border-color:#a7b9ce;box-shadow:none}
+#questionGear .session-target-label{display:block;margin-top:3px;color:#a7b9ce;font-size:.55rem;letter-spacing:.06em;line-height:1.2}
 
 /* Read-only projection of the confirmed Question Word path and free visit. */
 .learner-trail-copy{width:100%}

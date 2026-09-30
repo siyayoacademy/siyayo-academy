@@ -18,7 +18,30 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-08
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-09
+
+**Recorded:** 2026-09-30
+**Base HEAD:** `98d87c907b941334e0664182d970a1156d4c44fb`
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Status:** user screenshots audited; navigation/style correction implemented; CI/deploy and visual homologation pending.
+
+## ROUTINE / FINDINGS
+
+- Screenshots show UNOBSERVED and 0/3, not a awarded Green Pass. The active Session target style used green and visually resembled mastery.
+- Active assessment target now uses neutral slate; green achievement glow remains restricted to the existing confirmed marker authority.
+- Learner NEXT now preserves the explicitly explored QWord if declared in the destination, so WHICH in Shopping continues with WHICH in Preparing and its contextual dialogue.
+- Missing destination QWord uses the existing first-question fallback; navigation remains free. No new Session or Evidence is created by this presentation choice.
+- WHAT practice is object-question/contextual practice, not determiner-use. The screenshot shows its own function and object-answer tasks.
+- Existing identity isolation and Green contracts are unchanged; screenshot evidence does not demonstrate cross-learner Green leakage.
+- Tests cover WHICH/WHAT/WHY retained selection, invalid destination, and separation of neutral Session styling from confirmed glow.
+
+## OPEN / NEXT GO
+
+Verify CI/deployment; repeat a new nick WHICH 0/3 in Shopping -> NEXT Preparing, confirming WHICH remains selected and no green mastery glow until canonical Green. Repeat WHAT across the visit. Anonymous practice seam from checkpoint08 remains OPEN and follows this regression repair.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-08
 
 **Recorded:** 2026-09-30
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -649,7 +672,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-08`.  
+**Checkpoint:** `JAGUAR-LIVE-09`.  
 **Current work:** anonymous answer-practice boundary mapped; smallest Shopping WHICH seam pending implementation.
 
 ## B. SIYAYO presentation / audiences / profiles
