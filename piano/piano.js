@@ -8,6 +8,8 @@
   const modeStatus = document.getElementById("modeStatus");
   const modeButtons = [...document.querySelectorAll(".mode-button")];
   const activityButtons = [...document.querySelectorAll(".activity-button")];
+  const contentGroupPanel = document.getElementById("contentGroupPanel");
+  const contentGroupButtons = [...document.querySelectorAll(".content-group-button")];
   const collectionButtons = [...document.querySelectorAll(".collection-button")];
   const nounLayerPanel = document.getElementById("nounLayerPanel");
   const nounLayerButtons = [...document.querySelectorAll(".noun-layer-button")];
@@ -135,21 +137,281 @@
     }
   });
   const verbActionItems = Object.freeze([
-    { id:"work", en:"work", es:"trabajo", pt:"trabalho", examples:{ en:"I work every day.", es:"Yo trabajo todos los días.", pt:"Eu trabalho todos os dias." } },
-    { id:"study", en:"study", es:"estudio", pt:"estudo", examples:{ en:"I study English every day.", es:"Yo estudio inglés todos los días.", pt:"Eu estudo inglês todos os dias." } },
-    { id:"play", en:"play", es:"juegan", pt:"brincam", examples:{ en:"The children play in the park.", es:"Los niños juegan en el parque.", pt:"As crianças brincam no parque." } },
-    { id:"walk", en:"walk", es:"Caminamos", pt:"Caminhamos", examples:{ en:"We walk to school.", es:"Caminamos a la escuela.", pt:"Caminhamos até a escola." } },
-    { id:"talk", en:"talk", es:"hablan", pt:"conversam", examples:{ en:"They talk every morning.", es:"Ellos hablan todas las mañanas.", pt:"Eles conversam todas as manhãs." } },
-    { id:"eat", en:"eat", es:"Desayunamos", pt:"Tomamos", examples:{ en:"We eat breakfast together.", es:"Desayunamos juntos.", pt:"Tomamos café da manhã juntos." } },
-    { id:"drink", en:"drinks", es:"bebe", pt:"bebe", examples:{ en:"She drinks water in the morning.", es:"Ella bebe agua por la mañana.", pt:"Ela bebe água pela manhã." } },
-    { id:"sleep", en:"sleeps", es:"duerme", pt:"dorme", examples:{ en:"The baby sleeps at night.", es:"El bebé duerme por la noche.", pt:"O bebê dorme à noite." } },
-    { id:"wake", en:"wake", es:"despierto", pt:"acordo", examples:{ en:"I wake up early.", es:"Me despierto temprano.", pt:"Eu acordo cedo." } },
-    { id:"read", en:"reads", es:"lee", pt:"lê", examples:{ en:"She reads a book every night.", es:"Ella lee un libro todas las noches.", pt:"Ela lê um livro todas as noites." } },
-    { id:"write", en:"writes", es:"escribe", pt:"escreve", examples:{ en:"He writes a message.", es:"Él escribe un mensaje.", pt:"Ele escreve uma mensagem." } },
-    { id:"listen", en:"listen", es:"Escuchamos", pt:"Escutamos", examples:{ en:"We listen to music.", es:"Escuchamos música.", pt:"Escutamos música." } },
-    { id:"speak", en:"speak", es:"hablan", pt:"falam", examples:{ en:"They speak three languages.", es:"Ellos hablan tres idiomas.", pt:"Eles falam três idiomas." } },
-    { id:"go", en:"go", es:"Voy", pt:"vou", examples:{ en:"I go to work by bus.", es:"Voy al trabajo en autobús.", pt:"Eu vou ao trabalho de ônibus." } }
+    {
+        "id": "work",
+        "en": "work",
+        "es": "trabajo",
+        "pt": "trabalho",
+        "examples": {
+            "en": "I work every day.",
+            "es": "Yo trabajo todos los días.",
+            "pt": "Eu trabalho todos os dias."
+        }
+    },
+    {
+        "id": "study",
+        "en": "study",
+        "es": "estudio",
+        "pt": "estudo",
+        "examples": {
+            "en": "I study English every day.",
+            "es": "Yo estudio inglés todos los días.",
+            "pt": "Eu estudo inglês todos os dias."
+        }
+    },
+    {
+        "id": "play",
+        "en": "play",
+        "es": "juegan",
+        "pt": "brincam",
+        "examples": {
+            "en": "The children play in the park.",
+            "es": "Los niños juegan en el parque.",
+            "pt": "As crianças brincam no parque."
+        }
+    },
+    {
+        "id": "walk",
+        "en": "walk",
+        "es": "Caminamos",
+        "pt": "Caminhamos",
+        "examples": {
+            "en": "We walk to school.",
+            "es": "Caminamos a la escuela.",
+            "pt": "Caminhamos até a escola."
+        }
+    },
+    {
+        "id": "talk",
+        "en": "talk",
+        "es": "hablan",
+        "pt": "conversam",
+        "examples": {
+            "en": "They talk every morning.",
+            "es": "Ellos hablan todas las mañanas.",
+            "pt": "Eles conversam todas as manhãs."
+        }
+    },
+    {
+        "id": "eat",
+        "en": "eat",
+        "es": "Desayunamos",
+        "pt": "Tomamos",
+        "examples": {
+            "en": "We eat breakfast together.",
+            "es": "Desayunamos juntos.",
+            "pt": "Tomamos café da manhã juntos."
+        }
+    },
+    {
+        "id": "drink",
+        "en": "drinks",
+        "es": "bebe",
+        "pt": "bebe",
+        "examples": {
+            "en": "She drinks water in the morning.",
+            "es": "Ella bebe agua por la mañana.",
+            "pt": "Ela bebe água pela manhã."
+        }
+    },
+    {
+        "id": "sleep",
+        "en": "sleeps",
+        "es": "duerme",
+        "pt": "dorme",
+        "examples": {
+            "en": "The baby sleeps at night.",
+            "es": "El bebé duerme por la noche.",
+            "pt": "O bebê dorme à noite."
+        }
+    },
+    {
+        "id": "wake",
+        "en": "wake",
+        "es": "despierto",
+        "pt": "acordo",
+        "examples": {
+            "en": "I wake up early.",
+            "es": "Me despierto temprano.",
+            "pt": "Eu acordo cedo."
+        }
+    },
+    {
+        "id": "read",
+        "en": "reads",
+        "es": "lee",
+        "pt": "lê",
+        "examples": {
+            "en": "She reads a book every night.",
+            "es": "Ella lee un libro todas las noches.",
+            "pt": "Ela lê um livro todas as noites."
+        }
+    },
+    {
+        "id": "write",
+        "en": "writes",
+        "es": "escribe",
+        "pt": "escreve",
+        "examples": {
+            "en": "He writes a message.",
+            "es": "Él escribe un mensaje.",
+            "pt": "Ele escreve uma mensagem."
+        }
+    },
+    {
+        "id": "listen",
+        "en": "listen",
+        "es": "Escuchamos",
+        "pt": "Escutamos",
+        "examples": {
+            "en": "We listen to music.",
+            "es": "Escuchamos música.",
+            "pt": "Escutamos música."
+        }
+    },
+    {
+        "id": "speak",
+        "en": "speak",
+        "es": "hablan",
+        "pt": "falam",
+        "examples": {
+            "en": "They speak three languages.",
+            "es": "Ellos hablan tres idiomas.",
+            "pt": "Eles falam três idiomas."
+        }
+    },
+    {
+        "id": "go",
+        "en": "go",
+        "es": "Voy",
+        "pt": "vou",
+        "examples": {
+            "en": "I go to work by bus.",
+            "es": "Voy al trabajo en autobús.",
+            "pt": "Eu vou ao trabalho de ônibus."
+        }
+    },
+    {
+        "id": "come",
+        "en": "comes",
+        "es": "viene",
+        "pt": "vem",
+        "examples": {
+            "en": "She comes home in the evening.",
+            "es": "Ella viene a casa por la tarde.",
+            "pt": "Ela vem para casa à tarde."
+        }
+    },
+    {
+        "id": "run",
+        "en": "runs",
+        "es": "corre",
+        "pt": "corre",
+        "examples": {
+            "en": "He runs in the park.",
+            "es": "Él corre en el parque.",
+            "pt": "Ele corre no parque."
+        }
+    },
+    {
+        "id": "buy",
+        "en": "buy",
+        "es": "Compramos",
+        "pt": "Compramos",
+        "examples": {
+            "en": "We buy fresh fruit at the market.",
+            "es": "Compramos fruta fresca en el mercado.",
+            "pt": "Compramos frutas frescas no mercado."
+        }
+    },
+    {
+        "id": "choose",
+        "en": "choose",
+        "es": "Elegimos",
+        "pt": "Escolhemos",
+        "examples": {
+            "en": "We choose the fresh cheese.",
+            "es": "Elegimos el queso fresco.",
+            "pt": "Escolhemos o queijo fresco."
+        }
+    },
+    {
+        "id": "cook",
+        "en": "cook",
+        "es": "Cocino",
+        "pt": "preparo",
+        "examples": {
+            "en": "I cook dinner at home.",
+            "es": "Cocino la cena en casa.",
+            "pt": "Eu preparo o jantar em casa."
+        }
+    },
+    {
+        "id": "open",
+        "en": "open",
+        "es": "abre",
+        "pt": "abra",
+        "examples": {
+            "en": "Please open the window.",
+            "es": "Por favor, abre la ventana.",
+            "pt": "Por favor, abra a janela."
+        }
+    },
+    {
+        "id": "close",
+        "en": "close",
+        "es": "cierra",
+        "pt": "feche",
+        "examples": {
+            "en": "Please close the door.",
+            "es": "Por favor, cierra la puerta.",
+            "pt": "Por favor, feche a porta."
+        }
+    }
+]);
+  const verbActionGroups = Object.freeze([
+    Object.freeze(verbActionItems.slice(0,14)),
+    Object.freeze(verbActionItems.slice(14,21))
   ]);
+  let activeVerbGroup = 0;
+
+  function currentVerbItems() {
+    return verbActionGroups[activeVerbGroup] || verbActionGroups[0];
+  }
+
+  function refreshContentGroupControls() {
+    const isGroupedCollection = activeCollectionId === "verbs";
+    if (contentGroupPanel) contentGroupPanel.hidden = !isGroupedCollection;
+    contentGroupButtons.forEach(button => {
+      const index = Number(button.dataset.contentGroup);
+      button.classList.toggle("is-active", index === activeVerbGroup);
+      button.disabled = !isGroupedCollection;
+    });
+  }
+
+  function setContentGroup(index) {
+    const next = Number(index);
+    if (!Number.isInteger(next) || !verbActionGroups[next]) return;
+    activeVerbGroup = next;
+    refreshContentGroupControls();
+    refreshFrondosaLabels();
+
+    if (semanticSequence) semanticSequence.dataset.phase = "idle";
+    if (semanticPhase) semanticPhase.textContent = "VERBS · ACTIONS · GROUP " + (activeVerbGroup + 1);
+    if (semanticCue) semanticCue.textContent = activeVerbGroup === 0 ? "Verb Actions 1–14" : "Verb Actions 15–21";
+    if (semanticAnswer) semanticAnswer.textContent = "Canonical trilingual action corpus • Explore";
+
+    window.dispatchEvent(new CustomEvent("siyayo:content-group-changed", {
+      detail:{
+        collectionId:"verbs",
+        groupIndex:activeVerbGroup,
+        range:activeVerbGroup === 0 ? "1-14" : "15-21",
+        evaluated:false,
+        evidenceProduced:false
+      }
+    }));
+  }
+;
 
   let activeNounLayer = "concrete";
 
@@ -1034,6 +1296,10 @@
     button.addEventListener("click", () => setActiveCollection(button.dataset.collection));
   });
 
+  contentGroupButtons.forEach(button => {
+    button.addEventListener("click", () => setContentGroup(button.dataset.contentGroup));
+  });
+
   nounLayerButtons.forEach(button => {
     button.addEventListener("click", () => setNounLayer(button.dataset.nounLayer));
   });
@@ -1655,7 +1921,8 @@
 
   function verbForLeaf(leaf) {
     const index = leaves.indexOf(leaf);
-    return index >= 0 ? verbActionItems[index] || null : null;
+    const items = currentVerbItems();
+    return index >= 0 ? items[index] || null : null;
   }
 
   function activeContentItemForLeaf(leaf) {
@@ -1772,6 +2039,7 @@
   function setActiveCollection(nextId) {
     if (!["question-words","nouns","verbs"].includes(nextId)) return;
     activeCollectionId = nextId;
+    stage.dataset.collection = activeCollectionId;
     if (contentCollectionEngine) {
       contentCollectionEngine.activate(nextId, "piano-stage-collection-control");
     }
@@ -1791,6 +2059,7 @@
       activeActivity = "explore";
     }
     refreshActivityControls();
+    refreshContentGroupControls();
     if (nounClassifyPanel) nounClassifyPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "classify");
     if (nounLayerPanel) nounLayerPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "explore");
 
@@ -1799,13 +2068,13 @@
       activeCollectionId === "nouns"
         ? "NOUNS · " + nounLayerLabel().toUpperCase()
         : activeCollectionId === "verbs"
-          ? "VERBS · ACTIONS"
+          ? "VERBS · ACTIONS · " + (activeVerbGroup === 0 ? "1–14" : "15–21")
           : "READY";
     if (semanticCue) semanticCue.textContent =
       activeCollectionId === "nouns"
         ? nounLayerExample()
         : activeCollectionId === "verbs"
-          ? "Touch a Verb Action leaf"
+          ? (activeVerbGroup === 0 ? "Touch a Verb Action leaf · Group 1" : "Touch a Verb Action leaf · Group 2")
           : "Touch a Question Word leaf";
     if (semanticAnswer) semanticAnswer.textContent =
       activeCollectionId === "nouns"
@@ -1949,6 +2218,11 @@
             const noun = nounForLeaf(item);
             return noun && noun.id === semanticContentItem.id;
           })
+        : semanticContentItem && semanticContentItem.collectionId === "verbs"
+          ? leaves.filter(item => {
+              const verb = verbForLeaf(item);
+              return verb && verb.id === semanticContentItem.id;
+            })
         : mode === "questions"
           ? []
           : leaves.filter(item => item.dataset.note === detail.note);
@@ -2587,6 +2861,7 @@
   } catch (error) {}
 
   refreshActivityControls();
+  refreshContentGroupControls();
   if (nounLayerPanel) nounLayerPanel.hidden = true;
   if (nounClassifyPanel) nounClassifyPanel.hidden = true;
   setNounLayer(activeNounLayer);
