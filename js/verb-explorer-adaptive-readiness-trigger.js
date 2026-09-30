@@ -4,7 +4,8 @@
 (function(root){
 'use strict';
 
-var pending=null;
+var pending=null,generation=0;
+function clear(){generation+=1;pending=null;}
 
 function signal(options){
   options=options||{};
@@ -22,7 +23,9 @@ function signal(options){
     return Promise.resolve(false);
   }
 
+  var version=generation;
   pending=Promise.resolve(attempt).then(function(result){
+    if(version!==generation)return false;
     pending=null;
     var ready=result===true;
     if(ready){
@@ -40,6 +43,8 @@ function signal(options){
         determiner.mount({document:documentRef,experience:experience,language:state.experienceLanguage});
       }
 
+      var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+      if(runtime&&typeof runtime.render==='function')runtime.render();
       var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trailSurface&&typeof trailSurface.refresh==='function'){
         trailSurface.refresh({document:documentRef});
@@ -47,12 +52,12 @@ function signal(options){
     }
     return ready;
   },function(){
-    pending=null;
+    if(version===generation)pending=null;
     return false;
   });
 
   return pending;
 }
 
-root.SIYAYOVerbExplorerAdaptiveReadinessTrigger=Object.freeze({signal:signal});
+root.SIYAYOVerbExplorerAdaptiveReadinessTrigger=Object.freeze({signal:signal,clear:clear});
 })(typeof globalThis!=='undefined'?globalThis:this);
