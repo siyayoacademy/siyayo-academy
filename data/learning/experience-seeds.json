@@ -78,6 +78,122 @@
             "en": "WHAT",
             "es": "QUÉ",
             "pt": "O QUE"
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "What do we cook for dinner?",
+                  "es": "¿Qué cocinamos para la cena?",
+                  "pt": "O que cozinhamos para o jantar?"
+                },
+                "response": {
+                  "en": "We cook salmon and brown rice.",
+                  "es": "Cocinamos salmón y arroz integral.",
+                  "pt": "Cozinhamos salmão e arroz integral."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "What do we cook for dinner?",
+                  "es": "¿Qué cocinamos para la cena?",
+                  "pt": "O que cozinhamos para o jantar?"
+                },
+                "response": {
+                  "en": "We do not cook the strawberries; we serve them fresh.",
+                  "es": "No cocinamos las fresas; las servimos frescas.",
+                  "pt": "Não cozinhamos os morangos; nós os servimos frescos."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "What do we cook for dinner?",
+                  "es": "¿Qué cocinamos para la cena?",
+                  "pt": "O que cozinhamos para o jantar?"
+                },
+                "response": {
+                  "en": "Do we cook salmon and brown rice?",
+                  "es": "¿Cocinamos salmón y arroz integral?",
+                  "pt": "Cozinhamos salmão e arroz integral?"
+                }
+              }
+            },
+            "past": {
+              "affirmative": {
+                "question": {
+                  "en": "What did we cook for dinner yesterday?",
+                  "es": "¿Qué cocinamos para la cena ayer?",
+                  "pt": "O que cozinhamos para o jantar ontem?"
+                },
+                "response": {
+                  "en": "We cooked salmon and brown rice yesterday.",
+                  "es": "Cocinamos salmón y arroz integral ayer.",
+                  "pt": "Cozinhamos salmão e arroz integral ontem."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "What did we cook for dinner yesterday?",
+                  "es": "¿Qué cocinamos para la cena ayer?",
+                  "pt": "O que cozinhamos para o jantar ontem?"
+                },
+                "response": {
+                  "en": "We did not cook the strawberries; we served them fresh.",
+                  "es": "No cocinamos las fresas; las servimos frescas ayer.",
+                  "pt": "Não cozinhamos os morangos; nós os servimos frescos ontem."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "What did we cook for dinner yesterday?",
+                  "es": "¿Qué cocinamos para la cena ayer?",
+                  "pt": "O que cozinhamos para o jantar ontem?"
+                },
+                "response": {
+                  "en": "Did we cook salmon and brown rice yesterday?",
+                  "es": "¿Cocinamos salmón y arroz integral ayer?",
+                  "pt": "Cozinhamos salmão e arroz integral ontem?"
+                }
+              }
+            },
+            "future": {
+              "affirmative": {
+                "question": {
+                  "en": "What will we cook for dinner tonight?",
+                  "es": "¿Qué cocinaremos para la cena esta noche?",
+                  "pt": "O que cozinharemos para o jantar esta noite?"
+                },
+                "response": {
+                  "en": "We will cook salmon and brown rice tonight.",
+                  "es": "Cocinaremos salmón y arroz integral esta noche.",
+                  "pt": "Cozinharemos salmão e arroz integral esta noite."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "What will we cook for dinner tonight?",
+                  "es": "¿Qué cocinaremos para la cena esta noche?",
+                  "pt": "O que cozinharemos para o jantar esta noite?"
+                },
+                "response": {
+                  "en": "We will not cook the strawberries; we will serve them fresh.",
+                  "es": "No cocinaremos las fresas; las serviremos frescas.",
+                  "pt": "Não cozinharemos os morangos; nós os serviremos frescos."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "What will we cook for dinner tonight?",
+                  "es": "¿Qué cocinaremos para la cena esta noche?",
+                  "pt": "O que cozinharemos para o jantar esta noite?"
+                },
+                "response": {
+                  "en": "Will we cook salmon and brown rice tonight?",
+                  "es": "¿Cocinaremos salmón y arroz integral esta noche?",
+                  "pt": "Cozinharemos salmão e arroz integral esta noite?"
+                }
+              }
+            }
           }
         },
         {
