@@ -22,8 +22,12 @@ for (const language of ['en', 'es', 'pt']) {
   assert.equal(probes.transferProbe.experienceId, having.id);
   assert.equal(probes.transferProbe.mode, 'transfer');
   assert.deepEqual(probes.transferProbe.expectedAlternativeIds, ['salmon']);
-  assert.equal(source.resolve(skill, shopping, preparing, nouns, language), null,
-    'S1 WHICH transfer cannot be used as a WHAT S2 probe');
+  const s1 = source.resolve(skill, shopping, preparing, nouns, language);
+  assert.ok(s1, 'explicit S1 WHAT target has its own corpus-grounded probes');
+  assert.deepEqual(s1.localProbe.expectedAlternativeIds, ['salmon','brown-rice']);
+  assert.ok(s1.transferProbe.expectedAlternativeIds.includes('tomatoes'));
+  const anonymousTarget = {...shopping, thinkingMind: shopping.thinkingMind.map(q => q.questionWord === 'what' ? {...q, assessmentTarget: undefined} : q)};
+  assert.equal(source.resolve(skill, anonymousTarget, preparing, nouns, language), null);
   assert.equal(source.resolve(skill, having, preparing, nouns, language), null,
     'reverse Experience navigation cannot manufacture transfer');
   assert.equal(source.resolve({...skill, id: 'which.use.determiner'}, preparing, having, nouns, language), null);
