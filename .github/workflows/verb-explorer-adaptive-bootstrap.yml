@@ -369,3 +369,6 @@ jobs:
 
       - name: Check QWord visit continuity and mastery styling
         run: node scripts/test-qword-visit-continuity.js
+
+      - name: Test Shopping WHAT head diagnostic
+        run: node scripts/test-shopping-what-head-diagnostic.js

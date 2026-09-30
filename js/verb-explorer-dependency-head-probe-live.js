@@ -51,7 +51,7 @@
     var experience=options.experience;
     var structure=options.structure;
     var language=text(options.language)||'en';
-    var meta=experience&&experience.dependencyHeadProbe;
+    var meta=options.metadata||(experience&&experience.dependencyHeadProbe);
     var coordinator=options.coordinator||root.SIYAYOVerbExplorerAdaptiveCoordinator;
     var definitionApi=options.definitionApi||root.AdaptiveDependencyHeadProbeDefinition;
     var presenter=options.presenter||root.AdaptiveDependencyHeadProbePresenter;
@@ -93,7 +93,7 @@
     var active=coordinator.snapshot();
     var session=active&&active.session;
     var decision=session&&session.decision;
-    if(!decision||!text(decision.skill)||text(decision.experienceId)!==text(experience.id)){
+    if(!decision||!text(decision.skill)||(options.expectedSkill&&text(decision.skill)!==text(options.expectedSkill))||text(decision.experienceId)!==text(experience.id)){
       hide(doc);
       return false;
     }

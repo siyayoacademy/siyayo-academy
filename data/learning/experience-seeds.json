@@ -217,6 +217,34 @@
               "pt": "shopping-what-pt"
             },
             "defaultFocus": "cook"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "shopping-what-en",
+              "es": "shopping-what-es",
+              "pt": "shopping-what-pt"
+            },
+            "targetTokenId": "what",
+            "prompt": {
+              "en": "In “What are we going to cook?”, which verb does “What” connect to?",
+              "es": "En «¿Qué vamos a cocinar?», ¿a qué verbo se vincula «Qué»?",
+              "pt": "Em “O que vamos cozinhar?”, a qual verbo “O que” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "are",
+                "going",
+                "cook"
+              ],
+              "es": [
+                "go",
+                "cook"
+              ],
+              "pt": [
+                "go",
+                "cook"
+              ]
+            }
           }
         },
         {

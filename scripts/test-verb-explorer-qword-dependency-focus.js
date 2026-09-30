@@ -42,11 +42,11 @@ root.window.SIYAYOVerbExplorerDependencyHeadProbeLive={mount(){mounted++;return 
 vm.runInContext(runtime.slice(runtime.indexOf('function renderDependencyHeadProbe('),runtime.indexOf('function refreshThinkingMindAssessmentHighlight(')),context);
 question=shopping.thinkingMind.find(q=>q.questionWord==='what');
 vm.runInContext('renderDependencyHeadProbe(x)',context);
-assert.equal(mounted,0,'WHAT must not display unrelated WHICH head question');
-assert.equal(hidden,1);
+assert.equal(mounted,1,'WHAT displays its own declared diagnostic');
+assert.equal(hidden,0);
 question=shopping.thinkingMind.find(q=>q.questionWord==='which');
 vm.runInContext('renderDependencyHeadProbe(x)',context);
-assert.equal(mounted,1,'WHICH retains its head diagnostic');
+assert.equal(mounted,2,'WHICH retains its head diagnostic');
 const html=fs.readFileSync('verb-explorer.html','utf8');
 assert.ok(html.indexOf('🌐 LANGUAGE')<html.indexOf('🧠 THINKING MIND'));
 console.log('PASS — anonymous QWord dependency switching, independent EN/ES/PT, no unrelated fallback, WHICH preserved, language-first order.');

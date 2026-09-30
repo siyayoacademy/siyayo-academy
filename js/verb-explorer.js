@@ -72,14 +72,15 @@ function renderDependencyFocus(x){
   if(rendered===true)interaction.updateStructure(structure,experienceLanguage);
 }
 function renderDependencyHeadProbe(x){
-  const panel=document.getElementById("dependencyHeadProbePanel"),meta=x?.dependencyHeadProbe,structure=activeDependencyStructure(meta),live=window.SIYAYOVerbExplorerDependencyHeadProbeLive;
+  const panel=document.getElementById("dependencyHeadProbePanel"),question=activeThinkingQuestion(x),meta=question?.dependencyHeadProbe||(question?.questionWord==="which"?x?.dependencyHeadProbe:null),structure=activeDependencyStructure(meta),live=window.SIYAYOVerbExplorerDependencyHeadProbeLive;
   if(!panel)return false;
-  if(activeThinkingQuestion(x)?.questionWord!=="which"||!meta||!structure||!live||typeof live.mount!=="function"){
+  if(!meta||!structure||!live||typeof live.mount!=="function"){
     if(live&&typeof live.hide==="function")live.hide(document);
     else panel.hidden=true;
     return false;
   }
-  return live.mount({document,experience:x,structure,language:experienceLanguage})===true;
+  const metadata={...meta,alternativeTokenIds:meta.alternativeTokenIdsByLanguage?.[experienceLanguage]||meta.alternativeTokenIds};
+  return live.mount({document,experience:x,metadata,expectedSkill:question?.assessmentTarget?.skill,structure,language:experienceLanguage})===true;
 }
 function refreshThinkingMindAssessmentHighlight(){
   const source=window.SIYAYOVerbExplorerCanonicalSkillSource;

@@ -18,7 +18,26 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-10
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-11
+
+**Base HEAD:** `14482382975e6593eebc885004945a1d2c0a2bfe`
+**Recorded:** 2026-09-30
+**Status:** Shopping WHAT diagnostic connected; CI/deploy/visual pending.
+
+## ROUTINE
+
+Shopping WHAT now declares a per-QWord head diagnostic on its canonical reference question. Target what connects to cook (obj) in EN/ES/PT. Alternatives use each language's own declared tokens, not translation or inferred subjects. Existing Definition/Result/Presenter/Wire and identified Session boundary are reused.
+The diagnostic observes structure and remains separate from the three WHAT Green requirements. Nick/grounded origin Session remains required for this existing live assessment path. Anonymous practice remains OPEN.
+Shopping WHICH books example remains unchanged. No diagnostic or independent WHICH entry is invented in Preparing.
+Tests cover canonical correct/incorrect results across three languages and per-QWord mounting without unrelated fallback.
+
+## NEXT GO
+
+Verify CI/deploy, then Shopping WHAT -> nick -> diagnostic cook/cocinar/cozinhar. Confirm observed feedback without counting it as a new Green requirement. Preserve WHICH and the existing WHAT function/local/transfer cycle.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-10
 
 **Recorded:** 2026-09-30
 **Base HEAD:** `0b50533621be7f13209669ad5fc5aac97697426d`
@@ -693,7 +712,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-10`.  
+**Checkpoint:** `JAGUAR-LIVE-11`.  
 **Current work:** anonymous answer-practice boundary mapped; smallest Shopping WHICH seam pending implementation.
 
 ## B. SIYAYO presentation / audiences / profiles

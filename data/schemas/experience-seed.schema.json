@@ -278,6 +278,62 @@
               "type": "string"
             }
           }
+        },
+        "dependencyHeadProbe": {
+          "type": "object",
+          "required": [
+            "structureIds",
+            "targetTokenId",
+            "prompt",
+            "alternativeTokenIdsByLanguage"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "targetTokenId": {
+              "type": "string"
+            },
+            "prompt": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "type": "object",
+              "required": [
+                "en",
+                "es",
+                "pt"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "en": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "es": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "pt": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
