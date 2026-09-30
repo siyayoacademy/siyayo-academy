@@ -162,12 +162,106 @@
         "es": "Verbos",
         "pt": "Verbos"
       },
-      "status": "registered",
+      "status": "canonical-action-starter-window",
       "layers": [
         "meaning-function",
         "tense",
         "form",
         "mode"
+      ],
+      "activities": [
+        "explore-collection"
+      ],
+      "source": {
+        "branch": "jaguar/verb-explorer-resume-live-wire",
+        "path": "data/lexicon/verbs/action-examples.json",
+        "window": "items[0..13]"
+      },
+      "items": [
+        {
+          "id": "work",
+          "en": "work",
+          "es": "trabajo",
+          "pt": "trabalho"
+        },
+        {
+          "id": "study",
+          "en": "study",
+          "es": "estudio",
+          "pt": "estudo"
+        },
+        {
+          "id": "play",
+          "en": "play",
+          "es": "juegan",
+          "pt": "brincam"
+        },
+        {
+          "id": "walk",
+          "en": "walk",
+          "es": "Caminamos",
+          "pt": "Caminhamos"
+        },
+        {
+          "id": "talk",
+          "en": "talk",
+          "es": "hablan",
+          "pt": "conversam"
+        },
+        {
+          "id": "eat",
+          "en": "eat",
+          "es": "Desayunamos",
+          "pt": "Tomamos"
+        },
+        {
+          "id": "drink",
+          "en": "drinks",
+          "es": "bebe",
+          "pt": "bebe"
+        },
+        {
+          "id": "sleep",
+          "en": "sleeps",
+          "es": "duerme",
+          "pt": "dorme"
+        },
+        {
+          "id": "wake",
+          "en": "wake",
+          "es": "despierto",
+          "pt": "acordo"
+        },
+        {
+          "id": "read",
+          "en": "reads",
+          "es": "lee",
+          "pt": "lê"
+        },
+        {
+          "id": "write",
+          "en": "writes",
+          "es": "escribe",
+          "pt": "escreve"
+        },
+        {
+          "id": "listen",
+          "en": "listen",
+          "es": "Escuchamos",
+          "pt": "Escutamos"
+        },
+        {
+          "id": "speak",
+          "en": "speak",
+          "es": "hablan",
+          "pt": "falam"
+        },
+        {
+          "id": "go",
+          "en": "go",
+          "es": "Voy",
+          "pt": "vou"
+        }
       ]
     },
     {
