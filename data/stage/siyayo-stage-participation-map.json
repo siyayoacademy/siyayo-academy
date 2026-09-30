@@ -278,7 +278,7 @@
     },
     {
       "id": "verb-actions",
-      "status": "active-explore-prototype",
+      "status": "active-grouped-explore-prototype",
       "whatIsIt": "Trilingual lexical verbs with example sentences and target words.",
       "source": [
         "verb-examples"
@@ -315,8 +315,8 @@
         "pt"
       ],
       "evidenceRole": "opportunity-only",
-      "destinationOrPurpose": "Canonical trilingual Verb Actions starter window is now playable on Frondosa in Explore mode; no tense/function transformation or evaluation yet.",
-      "nextRefinement": "Homologate EN/ES/PT/Tripiano exploration, then admit the remaining canonical actions or add a paging/window contract before Semantic Cadence."
+      "destinationOrPurpose": "All 21 canonical trilingual Verb Actions are available through two Frondosa groups (1–14, 15–21), preserving exact semantic resonance per item.",
+      "nextRefinement": "Homologate both groups in EN/ES/PT/Tripiano and reuse the grouping contract for future large collections such as Adjectives or alphabet queues."
     },
     {
       "id": "verb-systems",
@@ -573,13 +573,13 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate Verb Actions Explore starter window in EN / ES / PT / Tripiano",
-    "decide canonical paging/window behavior for the remaining Verb Actions",
+    "homologate Verb Actions groups 1–14 and 15–21 in EN / ES / PT / Tripiano",
+    "homologate exact one-item Frondosa resonance for Verbs",
+    "reuse the grouping contract when Adjectives or alphabet queues are admitted",
     "bind Semantic Cadence contextually where an Experience actually needs it",
     "admit Nice Party contextual vocabulary/accessories",
     "prototype Perspective Shift",
-    "prototype Social Identity bridge on stage",
-    "audit remaining Ten Kinds item-by-item"
+    "prototype Social Identity bridge on stage"
   ],
   "stageRouting": {
     "version": "1.0",
@@ -623,6 +623,24 @@
         "instrument"
       ],
       "note": "Control order was clarified without changing pedagogical authority or activity contracts."
+    },
+    "groupingContract": {
+      "status": "prototype",
+      "purpose": "Large collections are presented in Frondosa-sized windows rather than overcrowding the canopy.",
+      "currentExample": {
+        "collection": "verbs",
+        "windowSize": 14,
+        "groups": [
+          "1-14",
+          "15-21"
+        ]
+      },
+      "reusableFor": [
+        "adjectives",
+        "alphabet",
+        "other-large-word-collections"
+      ],
+      "rule": "Changing group changes only the visible collection window; it does not create Evidence, GREEN, or assessment."
     }
   }
 }
