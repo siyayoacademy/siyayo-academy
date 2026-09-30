@@ -544,3 +544,35 @@ Protected development order:
 6. Sentence Form.
 7. Xespirito auxiliary/modal layer.
 8. Experience-level combinations only after individual dimensions are stable.
+
+
+## 19. EN Verb Morphology implementation — PIANO-STAGE-VERB-MORPH-EN-01
+
+Status: **IMPLEMENTED — awaiting visual/functional homologation**.
+
+Implemented scope:
+
+- Verbs → Activity → Morphology.
+- English-only canonical regularity from `data/lexicon/verbs/actions.json`.
+- Frondosa keeps the existing 1–14 / 15–21 grouping.
+- Touching a verb presents lemma, Regular/Irregular relation and stored English Past form.
+- Regular and Irregular use different aura/contour treatments; text explicitly names the category so color is not the sole cue.
+- Exact semantic one-item resonance remains active.
+- Speech says the English morphology relation.
+- `evaluated:false`, `evidenceProduced:false`, `green:false`.
+
+Protected WAIT:
+
+- ES morphology is not inferred from EN.
+- PT morphology is not inferred from EN.
+- Tripiano morphology comparison remains unavailable until independent language-specific morphology is canonical.
+
+Next state transition:
+
+```
+IMPLEMENTED
+→ TESTED
+→ HOMOLOGATED
+```
+
+Only after homologation should the Jaguar advance to the ES/PT morphology audit or the separate Verb Function dimension.
