@@ -575,12 +575,14 @@
   ],
   "recommendedJaguarOrder": [
     "homologate Verb Actions groups 1–14 and 15–21 in EN / ES / PT / Tripiano",
-    "homologate exact one-item Frondosa resonance for Verbs",
-    "reuse the grouping contract when Adjectives or alphabet queues are admitted",
-    "bind Semantic Cadence contextually where an Experience actually needs it",
-    "admit Nice Party contextual vocabulary/accessories",
-    "prototype Perspective Shift",
-    "prototype Social Identity bridge on stage"
+    "implement EN-only Regular / Irregular morphology view from canonical actions.json",
+    "audit independent Spanish and Portuguese morphology sources before any cross-language regularity view",
+    "map Verb Function as a separate Stage dimension",
+    "map Time/Tense as a separate timeline/orbit dimension",
+    "map Sentence Form separately",
+    "map Xespirito auxiliary/modal orchestration",
+    "reuse Grouping Contract for Adjectives and alphabet queues",
+    "bind Semantic Cadence only where an Experience explicitly needs it"
   ],
   "stageRouting": {
     "version": "1.0",
@@ -733,5 +735,20 @@
       "homologated"
     ],
     "protectionRule": "A homologated branch must not be silently removed, merged, renamed, or semantically repurposed. Any superseding change requires an explicit migration rationale and GO."
+  },
+  "verbSystemsDevelopmentMap": {
+    "path": "docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md",
+    "checkpoint": "PIANO-STAGE-VERB-MAP-01",
+    "status": "mapped",
+    "criticalRule": "Current regularity is English-specific and must not be inferred for Spanish or Portuguese.",
+    "next": [
+      "homologate grouped Verb Actions Explore",
+      "implement EN-only Regular/Irregular morphology view",
+      "audit independent ES/PT morphology sources",
+      "map Verb Function separately",
+      "map Time/Tense separately",
+      "map Sentence Form separately",
+      "map Xespirito auxiliary/modal layer"
+    ]
   }
 }
