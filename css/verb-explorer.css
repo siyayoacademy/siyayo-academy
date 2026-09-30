@@ -259,3 +259,12 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-journey p span{display:block}
 @media(max-width:480px){.learner-journey{padding:9px 4px}.learner-journey-word{flex-wrap:wrap;justify-content:center}.learner-journey p{font-size:.72rem}}
 .learner-journey-word[data-state="active"]{border-color:rgba(112,233,171,.68)}
+
+/* Achievement is projected only from canonical Green Pass trail closure. */
+#questionGear .gear-option.question-word-confirmed{
+  border-color:#70e9ab;background:rgba(30,99,69,.3);color:#f2d88a;
+  box-shadow:inset 0 0 0 1px rgba(112,233,171,.35),0 0 12px rgba(112,233,171,.22)
+}
+#questionGear .question-word-confirmed .session-target-label{
+  color:#f6d77f;font-size:.9rem;line-height:1;text-shadow:0 0 8px rgba(246,215,127,.35)
+}
