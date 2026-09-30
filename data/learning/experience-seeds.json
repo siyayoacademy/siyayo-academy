@@ -194,6 +194,21 @@
                 }
               }
             }
+          },
+          "assessmentTarget": {
+            "skill": "what.use.object-question",
+            "definitionPath": "data/learning/skills/what.json"
+          },
+          "answerGrounding": {
+            "context": {
+              "en": "For this dinner, we are going to cook salmon and brown rice.",
+              "es": "Para esta cena, vamos a cocinar salmón y arroz integral.",
+              "pt": "Para este jantar, vamos cozinhar salmão e arroz integral."
+            },
+            "acceptedVocabularyIds": [
+              "salmon",
+              "brown-rice"
+            ]
           }
         },
         {
