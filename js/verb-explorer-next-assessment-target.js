@@ -23,7 +23,7 @@ function prepare(input){
     typeof source.adopt!=='function'||typeof boundary.authorize!=='function')return Promise.resolve(null);
   var from=text(original.fromExperience),to=text(original.toExperience);
   var previous=text(session.decision.skill),selected=original.advanceSelection||{};
-  var s2=from==='shopping-for-dinner'&&to==='preparing-dinner'&&previous==='which.use.determiner';
+  var s2=from==='shopping-for-dinner'&&to==='preparing-dinner'&&(previous==='which.use.determiner'||previous==='what.use.object-question');
   var s3=from==='preparing-dinner'&&to==='having-dinner'&&previous==='what.use.object-question';
   if((!s2&&!s3)||text(event.experienceId)!==to||
     from!==text(session.decision.experienceId)||
