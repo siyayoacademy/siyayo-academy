@@ -4,7 +4,8 @@
 (function(root){
 'use strict';
 
-var pending=null;
+var pending=null,generation=0;
+function clear(){generation+=1;pending=null;}
 
 function tryCompose(options){
   options=options||{};
@@ -33,22 +34,25 @@ function tryCompose(options){
   if(typeof learnerId!=='string'||!learnerId.trim())return Promise.resolve(false);
   if(!target||typeof target!=='object')return Promise.resolve(false);
 
+  var version=generation;
   pending=Promise.resolve(skillBridge.loadTarget())
     .then(function(loaded){
-      if(loaded!==true)return false;
+      if(loaded!==true||version!==generation||identitySource.getId()!==learnerId)return false;
+      var latest=targetAuthority.getTarget();
+      if(!latest||latest.skill!==target.skill||latest.definitionPath!==target.definitionPath)return false;
       return composer.compose({document:documentRef})===true;
     })
     .catch(function(){return false;})
     .then(function(result){
-      pending=null;
+      if(version===generation)pending=null;
       return result;
     },function(){
-      pending=null;
+      if(version===generation)pending=null;
       return false;
     });
 
   return pending;
 }
 
-root.SIYAYOVerbExplorerAdaptiveLiveStart=Object.freeze({tryCompose:tryCompose});
+root.SIYAYOVerbExplorerAdaptiveLiveStart=Object.freeze({tryCompose:tryCompose,clear:clear});
 })(typeof globalThis!=='undefined'?globalThis:this);
