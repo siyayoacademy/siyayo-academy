@@ -92,6 +92,122 @@
             "en": "WHERE",
             "es": "DÓNDE",
             "pt": "ONDE"
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "Where do we find the salmon?",
+                  "es": "¿Dónde encontramos el salmón?",
+                  "pt": "Onde encontramos o salmão?"
+                },
+                "response": {
+                  "en": "We find the salmon at the fish counter.",
+                  "es": "Encontramos el salmón en la sección de pescado.",
+                  "pt": "Encontramos o salmão na seção de peixes."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Where do we find the salmon?",
+                  "es": "¿Dónde encontramos el salmón?",
+                  "pt": "Onde encontramos o salmão?"
+                },
+                "response": {
+                  "en": "We do not find the salmon in the fruit section.",
+                  "es": "No encontramos el salmón en la sección de frutas.",
+                  "pt": "Não encontramos o salmão na seção de frutas."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Where do we find the salmon?",
+                  "es": "¿Dónde encontramos el salmón?",
+                  "pt": "Onde encontramos o salmão?"
+                },
+                "response": {
+                  "en": "Do we find the salmon at the fish counter?",
+                  "es": "¿Encontramos el salmón en la sección de pescado?",
+                  "pt": "Encontramos o salmão na seção de peixes?"
+                }
+              }
+            },
+            "past": {
+              "affirmative": {
+                "question": {
+                  "en": "Where did we find the salmon?",
+                  "es": "¿Dónde encontramos el salmón ayer?",
+                  "pt": "Onde encontramos o salmão ontem?"
+                },
+                "response": {
+                  "en": "We found the salmon at the fish counter yesterday.",
+                  "es": "Encontramos el salmón en la sección de pescado ayer.",
+                  "pt": "Encontramos o salmão na seção de peixes ontem."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Where did we find the salmon?",
+                  "es": "¿Dónde encontramos el salmón ayer?",
+                  "pt": "Onde encontramos o salmão ontem?"
+                },
+                "response": {
+                  "en": "We did not find the salmon in the fruit section yesterday.",
+                  "es": "No encontramos el salmón en la sección de frutas ayer.",
+                  "pt": "Não encontramos o salmão na seção de frutas ontem."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Where did we find the salmon?",
+                  "es": "¿Dónde encontramos el salmón ayer?",
+                  "pt": "Onde encontramos o salmão ontem?"
+                },
+                "response": {
+                  "en": "Did we find the salmon at the fish counter yesterday?",
+                  "es": "¿Encontramos el salmón en la sección de pescado ayer?",
+                  "pt": "Encontramos o salmão na seção de peixes ontem?"
+                }
+              }
+            },
+            "future": {
+              "affirmative": {
+                "question": {
+                  "en": "Where will we find the salmon?",
+                  "es": "¿Dónde encontraremos el salmón?",
+                  "pt": "Onde encontraremos o salmão?"
+                },
+                "response": {
+                  "en": "We will find the salmon at the fish counter.",
+                  "es": "Encontraremos el salmón en la sección de pescado.",
+                  "pt": "Encontraremos o salmão na seção de peixes."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Where will we find the salmon?",
+                  "es": "¿Dónde encontraremos el salmón?",
+                  "pt": "Onde encontraremos o salmão?"
+                },
+                "response": {
+                  "en": "We will not find the salmon in the fruit section.",
+                  "es": "No encontraremos el salmón en la sección de frutas.",
+                  "pt": "Não encontraremos o salmão na seção de frutas."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Where will we find the salmon?",
+                  "es": "¿Dónde encontraremos el salmón?",
+                  "pt": "Onde encontraremos o salmão?"
+                },
+                "response": {
+                  "en": "Will we find the salmon at the fish counter?",
+                  "es": "¿Encontraremos el salmón en la sección de pescado?",
+                  "pt": "Encontraremos o salmão na seção de peixes?"
+                }
+              }
+            }
           }
         },
         {
