@@ -29,6 +29,8 @@
     if(!local||!transfer||!text(local.id)||!text(transfer.id)||local.id===transfer.id||
        !local.toroidalNext||local.toroidalNext.nextExperience!==transfer.id)return null;
     var what=one(local,'what'),where=one(local,'where'),later=one(transfer,'what');
+    if(!what||!what.assessmentTarget||what.assessmentTarget.skill!==skill.id||
+       what.assessmentTarget.definitionPath!=='data/learning/skills/what.json')return null;
     if(!what||!where||!later||what.intention!=='thing-or-action'||where.intention!=='place'||later.intention!=='thing-or-action')return null;
     if(!text(what.question&&what.question[language])||!text(where.question&&where.question[language])||!text(later.question&&later.question[language]))return null;
     if(!text(what.questionWordLabel&&what.questionWordLabel[language])||!text(where.questionWordLabel&&where.questionWordLabel[language]))return null;
@@ -44,7 +46,7 @@
         .find(function(item){return item&&!excluded.has(item.id)&&
           (mode==='local'?!item.semanticTags.includes('vegetable'):item.id!=='salmon');});
       if(!distractor)return null;
-      if(mode==='local'&&accepted.some(function(item){return !item.semanticTags.includes('vegetable');}))return null;
+      if(mode==='local'&&experience.id==='preparing-dinner'&&accepted.some(function(item){return !item.semanticTags.includes('vegetable');}))return null;
       return Object.freeze({skill:skill.id,language:language,experienceId:experience.id,fromExperienceId:mode==='transfer'?local.id:null,
         dimension:'object-answer',mode:mode,question:question.question[language],context:grounding.context[language],
         expectedAlternativeIds:Object.freeze(grounding.acceptedVocabularyIds.slice()),
