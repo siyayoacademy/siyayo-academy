@@ -74,7 +74,7 @@ function renderDependencyFocus(x){
 function renderDependencyHeadProbe(x){
   const panel=document.getElementById("dependencyHeadProbePanel"),meta=x?.dependencyHeadProbe,structure=activeDependencyStructure(meta),live=window.SIYAYOVerbExplorerDependencyHeadProbeLive;
   if(!panel)return false;
-  if(!meta||!structure||!live||typeof live.mount!=="function"){
+  if(activeThinkingQuestion(x)?.questionWord!=="which"||!meta||!structure||!live||typeof live.mount!=="function"){
     if(live&&typeof live.hide==="function")live.hide(document);
     else panel.hidden=true;
     return false;
