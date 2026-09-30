@@ -101,6 +101,9 @@
 
     var surface=doc.getElementById('learnerTrailSurface');
     if(!surface)return false;
+    surface.hidden=true;surface.innerHTML='';
+    var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+    var learnerId=identity&&typeof identity.getId==='function'?identity.getId():null;
 
     var profileSource=options.profileSource||root.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource;
     var skillSource=options.skillSource||root.SIYAYOVerbExplorerCanonicalSkillSource;
@@ -129,6 +132,7 @@
     var skill=text(skillSource.getSkill());
     var label=labelView.project(definition,language);
     if(!profile||!skill||!label||label.skill!==skill)return false;
+    if(identity&&(!learnerId||profile.id!==learnerId))return false;
 
     var trail=trailView.project(profile,skill);
     if(!trail)return false;
