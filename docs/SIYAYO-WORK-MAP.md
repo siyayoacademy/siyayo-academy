@@ -24,7 +24,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
 **Base HEAD:** `3aeac624bc4dcb2a8fb648bf2c91697106f3f9ba`
 **Change kind:** EXTENSION — WHAT presentation and explicit anonymous structural practice; no migration/replacement of canonical evaluation.
-**Status:** local contract tests passed; CI/deploy and user visual homologation remain separate.
+**Status:** local contract tests passed. First CI at `31b3fa9` exposed the isolated WHICH dialogue test calling a WHAT helper outside its extraction scope; the WHAT helper invocation is now restricted to WHAT. Repeat CI/deploy and user visual homologation remain separate.
 
 ## DONE — EXACT SCOPE
 
