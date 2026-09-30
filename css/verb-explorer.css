@@ -84,7 +84,7 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .dependency-token-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;align-items:flex-end}
 .dependency-token{display:grid;gap:2px;min-width:76px;padding:8px 10px;border:1px solid rgba(122,162,255,.28);border-radius:10px;background:rgba(0,0,0,.18)}
 .dependency-token b{font-size:.9rem;color:#eef4ff}
-.dependency-token small{font-size:.61rem;font-weight:900;letter-spacing:.08em;color:#8ea3bc}
+.dependency-token small{font-size:.6rem;font-weight:500;letter-spacing:.02em;color:#8ea3bc}
 .dependency-token em{font-size:.6rem;font-style:normal;color:#50c878}
 .dependency-token-focus{border-color:var(--siyayo-gold-primary);box-shadow:0 0 16px rgba(242,216,138,.16)}
 .dependency-token-head{border-color:#50c878}
@@ -153,7 +153,7 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
   .dependency-token-row{flex-wrap:nowrap;justify-content:center;align-items:stretch;gap:5px}
   .dependency-token{flex:1 1 0;min-width:0;padding:7px 3px}
   .dependency-token b{font-size:.8rem;line-height:1.08}
-  .dependency-token small{font-size:.53rem;letter-spacing:.05em}
+  .dependency-token small{font-size:.52rem;letter-spacing:.02em}
   .dependency-token em{font-size:.52rem}
 
   .dependency-head-probe-panel{padding:11px 8px 10px;text-align:center}
