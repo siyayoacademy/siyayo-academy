@@ -162,7 +162,7 @@
         "es": "Verbos",
         "pt": "Verbos"
       },
-      "status": "canonical-action-starter-window",
+      "status": "canonical-grouped-explore-prototype",
       "layers": [
         "meaning-function",
         "tense",
@@ -174,95 +174,255 @@
       ],
       "source": {
         "branch": "jaguar/verb-explorer-resume-live-wire",
-        "path": "data/lexicon/verbs/action-examples.json",
-        "window": "items[0..13]"
+        "path": "data/lexicon/verbs/action-examples.json"
       },
       "items": [
         {
           "id": "work",
           "en": "work",
           "es": "trabajo",
-          "pt": "trabalho"
+          "pt": "trabalho",
+          "examples": {
+            "en": "I work every day.",
+            "es": "Yo trabajo todos los días.",
+            "pt": "Eu trabalho todos os dias."
+          }
         },
         {
           "id": "study",
           "en": "study",
           "es": "estudio",
-          "pt": "estudo"
+          "pt": "estudo",
+          "examples": {
+            "en": "I study English every day.",
+            "es": "Yo estudio inglés todos los días.",
+            "pt": "Eu estudo inglês todos os dias."
+          }
         },
         {
           "id": "play",
           "en": "play",
           "es": "juegan",
-          "pt": "brincam"
+          "pt": "brincam",
+          "examples": {
+            "en": "The children play in the park.",
+            "es": "Los niños juegan en el parque.",
+            "pt": "As crianças brincam no parque."
+          }
         },
         {
           "id": "walk",
           "en": "walk",
           "es": "Caminamos",
-          "pt": "Caminhamos"
+          "pt": "Caminhamos",
+          "examples": {
+            "en": "We walk to school.",
+            "es": "Caminamos a la escuela.",
+            "pt": "Caminhamos até a escola."
+          }
         },
         {
           "id": "talk",
           "en": "talk",
           "es": "hablan",
-          "pt": "conversam"
+          "pt": "conversam",
+          "examples": {
+            "en": "They talk every morning.",
+            "es": "Ellos hablan todas las mañanas.",
+            "pt": "Eles conversam todas as manhãs."
+          }
         },
         {
           "id": "eat",
           "en": "eat",
           "es": "Desayunamos",
-          "pt": "Tomamos"
+          "pt": "Tomamos",
+          "examples": {
+            "en": "We eat breakfast together.",
+            "es": "Desayunamos juntos.",
+            "pt": "Tomamos café da manhã juntos."
+          }
         },
         {
           "id": "drink",
           "en": "drinks",
           "es": "bebe",
-          "pt": "bebe"
+          "pt": "bebe",
+          "examples": {
+            "en": "She drinks water in the morning.",
+            "es": "Ella bebe agua por la mañana.",
+            "pt": "Ela bebe água pela manhã."
+          }
         },
         {
           "id": "sleep",
           "en": "sleeps",
           "es": "duerme",
-          "pt": "dorme"
+          "pt": "dorme",
+          "examples": {
+            "en": "The baby sleeps at night.",
+            "es": "El bebé duerme por la noche.",
+            "pt": "O bebê dorme à noite."
+          }
         },
         {
           "id": "wake",
           "en": "wake",
           "es": "despierto",
-          "pt": "acordo"
+          "pt": "acordo",
+          "examples": {
+            "en": "I wake up early.",
+            "es": "Me despierto temprano.",
+            "pt": "Eu acordo cedo."
+          }
         },
         {
           "id": "read",
           "en": "reads",
           "es": "lee",
-          "pt": "lê"
+          "pt": "lê",
+          "examples": {
+            "en": "She reads a book every night.",
+            "es": "Ella lee un libro todas las noches.",
+            "pt": "Ela lê um livro todas as noites."
+          }
         },
         {
           "id": "write",
           "en": "writes",
           "es": "escribe",
-          "pt": "escreve"
+          "pt": "escreve",
+          "examples": {
+            "en": "He writes a message.",
+            "es": "Él escribe un mensaje.",
+            "pt": "Ele escreve uma mensagem."
+          }
         },
         {
           "id": "listen",
           "en": "listen",
           "es": "Escuchamos",
-          "pt": "Escutamos"
+          "pt": "Escutamos",
+          "examples": {
+            "en": "We listen to music.",
+            "es": "Escuchamos música.",
+            "pt": "Escutamos música."
+          }
         },
         {
           "id": "speak",
           "en": "speak",
           "es": "hablan",
-          "pt": "falam"
+          "pt": "falam",
+          "examples": {
+            "en": "They speak three languages.",
+            "es": "Ellos hablan tres idiomas.",
+            "pt": "Eles falam três idiomas."
+          }
         },
         {
           "id": "go",
           "en": "go",
           "es": "Voy",
-          "pt": "vou"
+          "pt": "vou",
+          "examples": {
+            "en": "I go to work by bus.",
+            "es": "Voy al trabajo en autobús.",
+            "pt": "Eu vou ao trabalho de ônibus."
+          }
+        },
+        {
+          "id": "come",
+          "en": "comes",
+          "es": "viene",
+          "pt": "vem",
+          "examples": {
+            "en": "She comes home in the evening.",
+            "es": "Ella viene a casa por la tarde.",
+            "pt": "Ela vem para casa à tarde."
+          }
+        },
+        {
+          "id": "run",
+          "en": "runs",
+          "es": "corre",
+          "pt": "corre",
+          "examples": {
+            "en": "He runs in the park.",
+            "es": "Él corre en el parque.",
+            "pt": "Ele corre no parque."
+          }
+        },
+        {
+          "id": "buy",
+          "en": "buy",
+          "es": "Compramos",
+          "pt": "Compramos",
+          "examples": {
+            "en": "We buy fresh fruit at the market.",
+            "es": "Compramos fruta fresca en el mercado.",
+            "pt": "Compramos frutas frescas no mercado."
+          }
+        },
+        {
+          "id": "choose",
+          "en": "choose",
+          "es": "Elegimos",
+          "pt": "Escolhemos",
+          "examples": {
+            "en": "We choose the fresh cheese.",
+            "es": "Elegimos el queso fresco.",
+            "pt": "Escolhemos o queijo fresco."
+          }
+        },
+        {
+          "id": "cook",
+          "en": "cook",
+          "es": "Cocino",
+          "pt": "preparo",
+          "examples": {
+            "en": "I cook dinner at home.",
+            "es": "Cocino la cena en casa.",
+            "pt": "Eu preparo o jantar em casa."
+          }
+        },
+        {
+          "id": "open",
+          "en": "open",
+          "es": "abre",
+          "pt": "abra",
+          "examples": {
+            "en": "Please open the window.",
+            "es": "Por favor, abre la ventana.",
+            "pt": "Por favor, abra a janela."
+          }
+        },
+        {
+          "id": "close",
+          "en": "close",
+          "es": "cierra",
+          "pt": "feche",
+          "examples": {
+            "en": "Please close the door.",
+            "es": "Por favor, cierra la puerta.",
+            "pt": "Por favor, feche a porta."
+          }
         }
-      ]
+      ],
+      "grouping": {
+        "strategy": "fixed-window",
+        "windowSize": 14,
+        "groups": [
+          {
+            "id": "group-1",
+            "range": "1-14"
+          },
+          {
+            "id": "group-2",
+            "range": "15-21"
+          }
+        ]
+      }
     },
     {
       "id": "adjectives",
