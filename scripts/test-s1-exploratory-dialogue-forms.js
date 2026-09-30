@@ -8,7 +8,9 @@ const corpus = JSON.parse(fs.readFileSync(path.join(root, 'data/learning/experie
 const shopping = corpus.items.find(item => item.id === 'shopping-for-dinner');
 for (const word of ['why', 'where', 'what']) {
 const question = shopping.thinkingMind.find(item => item.questionWord === word);
-assert.ok(question && !question.assessmentTarget, `Exploratory ${word} must not create an assessment target`);
+assert.ok(question);
+if(word==='what')assert.equal(question.assessmentTarget.skill,'what.use.object-question');
+else assert.ok(!question.assessmentTarget, `Exploratory ${word} must not create an assessment target`);
 for (const tense of ['present', 'past', 'future']) {
   for (const form of ['affirmative', 'negative', 'interrogative']) {
     const turn = question.dialogueForms?.[tense]?.[form];
@@ -24,4 +26,4 @@ for (const tense of ['present', 'past', 'future']) {
 const runtime = fs.readFileSync(path.join(root, 'js/verb-explorer.js'), 'utf8');
 assert.ok(runtime.includes('question.dialogueForms?.[experienceTense]?.[experienceForm]'), 'Lines must select the declared tense and form');
 assert.ok(runtime.includes('if(!turn)return[]'), 'Missing dialogue turn must remain absent');
-console.log('PASS — S1 WHY, WHERE and WHAT provide 81 grounded question/response pairs without assessment authority.');
+console.log('PASS — S1 WHY, WHERE and WHAT provide 81 grounded question/response pairs with explicit WHAT authority and free WHY/WHERE exploration.');
