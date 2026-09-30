@@ -146,6 +146,21 @@
             "en": "I work every day.",
             "es": "Yo trabajo todos los días.",
             "pt": "Eu trabalho todos os dias."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "work",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "works",
+                "past": "worked",
+                "pastParticiple": "worked",
+                "gerund": "working"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -157,6 +172,21 @@
             "en": "I study English every day.",
             "es": "Yo estudio inglés todos los días.",
             "pt": "Eu estudo inglês todos os dias."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "study",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "studies",
+                "past": "studied",
+                "pastParticiple": "studied",
+                "gerund": "studying"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -168,6 +198,21 @@
             "en": "The children play in the park.",
             "es": "Los niños juegan en el parque.",
             "pt": "As crianças brincam no parque."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "play",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "plays",
+                "past": "played",
+                "pastParticiple": "played",
+                "gerund": "playing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -179,6 +224,22 @@
             "en": "We walk to school.",
             "es": "Caminamos a la escuela.",
             "pt": "Caminhamos até a escola."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "walk",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "walks",
+                "past": "walked",
+                "pastParticiple": "walked",
+                "gerund": "walking"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -190,6 +251,21 @@
             "en": "They talk every morning.",
             "es": "Ellos hablan todas las mañanas.",
             "pt": "Eles conversam todas as manhãs."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "talk",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "talks",
+                "past": "talked",
+                "pastParticiple": "talked",
+                "gerund": "talking"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -201,6 +277,21 @@
             "en": "We eat breakfast together.",
             "es": "Desayunamos juntos.",
             "pt": "Tomamos café da manhã juntos."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "eat",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "eats",
+                "past": "ate",
+                "pastParticiple": "eaten",
+                "gerund": "eating"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -212,6 +303,21 @@
             "en": "She drinks water in the morning.",
             "es": "Ella bebe agua por la mañana.",
             "pt": "Ela bebe água pela manhã."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "drink",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "drinks",
+                "past": "drank",
+                "pastParticiple": "drunk",
+                "gerund": "drinking"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -223,6 +329,22 @@
             "en": "The baby sleeps at night.",
             "es": "El bebé duerme por la noche.",
             "pt": "O bebê dorme à noite."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "sleep",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "sleeps",
+                "past": "slept",
+                "pastParticiple": "slept",
+                "gerund": "sleeping"
+            },
+            "verbFunction": [
+                "state",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -234,6 +356,22 @@
             "en": "I wake up early.",
             "es": "Me despierto temprano.",
             "pt": "Eu acordo cedo."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "wake",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "wakes",
+                "past": "woke",
+                "pastParticiple": "woken",
+                "gerund": "waking"
+            },
+            "verbFunction": [
+                "state",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -245,6 +383,21 @@
             "en": "She reads a book every night.",
             "es": "Ella lee un libro todas las noches.",
             "pt": "Ela lê um livro todas as noites."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "read",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "reads",
+                "past": "read",
+                "pastParticiple": "read",
+                "gerund": "reading"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -256,6 +409,21 @@
             "en": "He writes a message.",
             "es": "Él escribe un mensaje.",
             "pt": "Ele escreve uma mensagem."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "write",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "writes",
+                "past": "wrote",
+                "pastParticiple": "written",
+                "gerund": "writing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -267,6 +435,21 @@
             "en": "We listen to music.",
             "es": "Escuchamos música.",
             "pt": "Escutamos música."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "listen",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "listens",
+                "past": "listened",
+                "pastParticiple": "listened",
+                "gerund": "listening"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -278,6 +461,21 @@
             "en": "They speak three languages.",
             "es": "Ellos hablan tres idiomas.",
             "pt": "Eles falam três idiomas."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "speak",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "speaks",
+                "past": "spoke",
+                "pastParticiple": "spoken",
+                "gerund": "speaking"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -289,6 +487,22 @@
             "en": "I go to work by bus.",
             "es": "Voy al trabajo en autobús.",
             "pt": "Eu vou ao trabalho de ônibus."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "go",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "goes",
+                "past": "went",
+                "pastParticiple": "gone",
+                "gerund": "going"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -300,6 +514,22 @@
             "en": "She comes home in the evening.",
             "es": "Ella viene a casa por la tarde.",
             "pt": "Ela vem para casa à tarde."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "come",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "comes",
+                "past": "came",
+                "pastParticiple": "come",
+                "gerund": "coming"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -311,6 +541,22 @@
             "en": "He runs in the park.",
             "es": "Él corre en el parque.",
             "pt": "Ele corre no parque."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "run",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "runs",
+                "past": "ran",
+                "pastParticiple": "run",
+                "gerund": "running"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -322,6 +568,21 @@
             "en": "We buy fresh fruit at the market.",
             "es": "Compramos fruta fresca en el mercado.",
             "pt": "Compramos frutas frescas no mercado."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "buy",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "buys",
+                "past": "bought",
+                "pastParticiple": "bought",
+                "gerund": "buying"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -333,6 +594,21 @@
             "en": "We choose the fresh cheese.",
             "es": "Elegimos el queso fresco.",
             "pt": "Escolhemos o queijo fresco."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "choose",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "chooses",
+                "past": "chose",
+                "pastParticiple": "chosen",
+                "gerund": "choosing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -344,6 +620,21 @@
             "en": "I cook dinner at home.",
             "es": "Cocino la cena en casa.",
             "pt": "Eu preparo o jantar em casa."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "cook",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "cooks",
+                "past": "cooked",
+                "pastParticiple": "cooked",
+                "gerund": "cooking"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -355,6 +646,21 @@
             "en": "Please open the window.",
             "es": "Por favor, abre la ventana.",
             "pt": "Por favor, abra a janela."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "open",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "opens",
+                "past": "opened",
+                "pastParticiple": "opened",
+                "gerund": "opening"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -366,6 +672,21 @@
             "en": "Please close the door.",
             "es": "Por favor, cierra la puerta.",
             "pt": "Por favor, feche a porta."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "close",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "closes",
+                "past": "closed",
+                "pastParticiple": "closed",
+                "gerund": "closing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     }
 ]);
@@ -393,6 +714,7 @@
     const next = Number(index);
     if (!Number.isInteger(next) || !verbActionGroups[next]) return;
     activeVerbGroup = next;
+    clearVerbMorphologyFocus();
     refreshContentGroupControls();
     refreshFrondosaLabels();
 
@@ -1130,15 +1452,19 @@
       button.classList.toggle("is-active", id === activeActivity);
       if (id === "questions") button.disabled = activeCollectionId !== "question-words";
       if (id === "classify") button.disabled = activeCollectionId !== "nouns";
+      if (id === "morphology") button.disabled = activeCollectionId !== "verbs";
     });
   }
 
   function setActivity(nextActivity) {
-    if (!["explore","questions","classify"].includes(nextActivity)) return;
+    if (!["explore","questions","classify","morphology"].includes(nextActivity)) return;
     if (nextActivity === "questions" && activeCollectionId !== "question-words") return;
     if (nextActivity === "classify" && activeCollectionId !== "nouns") return;
+    if (nextActivity === "morphology" && activeCollectionId !== "verbs") return;
 
     activeActivity = nextActivity;
+    stage.dataset.activity = activeActivity;
+    if (activeActivity !== "morphology") clearVerbMorphologyFocus();
     refreshActivityControls();
 
     if (activeActivity === "questions") {
@@ -1151,12 +1477,30 @@
       if (nounClassifyPanel) nounClassifyPanel.hidden = false;
       modeStatus.textContent = "CLASSIFY · " + mode.toUpperCase();
       presentNounClassifyItem({ speakIt:true, resetState:true });
+    } else if (activeActivity === "morphology") {
+      if (nounLayerPanel) nounLayerPanel.hidden = true;
+      if (nounClassifyPanel) nounClassifyPanel.hidden = true;
+      mode = "en";
+      pedagogicalLanguage = "en";
+      clearVerbMorphologyFocus();
+      modeButtons.forEach(btn => btn.classList.toggle("is-active", btn.dataset.mode === "en"));
+      stage.dataset.theme = "en";
+      modeStatus.textContent = "MORPHOLOGY · EN";
+      wordStatus.textContent = "Regular / Irregular";
+      if (semanticSequence) semanticSequence.dataset.phase = "idle";
+      if (semanticPhase) semanticPhase.textContent = "VERB · MORPHOLOGY · EN";
+      if (semanticCue) semanticCue.textContent = "Touch a verb to inspect its English morphology";
+      if (semanticAnswer) semanticAnswer.textContent = "English-only canonical regularity • no evaluation";
+      refreshLabels();
+      refreshFrondosaLabels();
     } else {
       if (mode === "questions") setMode(pedagogicalLanguage || "en");
       if (nounClassifyPanel) nounClassifyPanel.hidden = true;
       if (nounLayerPanel) nounLayerPanel.hidden = activeCollectionId !== "nouns";
       modeStatus.textContent = "EXPLORE · " + mode.toUpperCase();
     }
+
+    refreshModeAvailability();
 
     window.dispatchEvent(new CustomEvent("siyayo:stage-activity-changed", {
       detail: {
@@ -1171,6 +1515,7 @@
 
   function setMode(nextMode) {
     const isLanguage = ["en","es","pt"].includes(nextMode);
+    if (activeCollectionId === "verbs" && activeActivity === "morphology" && ["es","pt","tripiano"].includes(nextMode)) return;
 
     // In 14 Questions the language is an independent lens: switching EN/ES/PT
     // keeps the pedagogical activity active instead of leaving Questions mode.
@@ -1203,7 +1548,9 @@
       ? "QUESTIONS · " + pedagogicalLanguage.toUpperCase()
       : activeActivity === "classify"
         ? "CLASSIFY · " + mode.toUpperCase()
-        : "EXPLORE · " + mode.toUpperCase();
+        : activeActivity === "morphology"
+          ? "MORPHOLOGY · EN"
+          : "EXPLORE · " + mode.toUpperCase();
 
     stage.dataset.theme = mode === "questions"
       ? pedagogicalLanguage
@@ -1933,6 +2280,7 @@
 
   function contentLabelForMode(item) {
     if (!item) return "";
+    if (activeCollectionId === "verbs" && activeActivity === "morphology") return verbMorphologyLabel(item);
     if (mode === "questions") return item[pedagogicalLanguage] || item.en;
     if (mode === "es") return item.es;
     if (mode === "pt") return item.pt;
@@ -1972,6 +2320,10 @@
 
   function speakContentItem(item) {
     if (!item) return;
+    if (activeCollectionId === "verbs" && activeActivity === "morphology") {
+      speakVerbMorphology(item);
+      return;
+    }
     if (mode === "es") speak(item.es, "es-ES");
     else if (mode === "pt") speak(item.pt, "pt-BR");
     else if (mode === "tripiano") {
@@ -1996,6 +2348,40 @@
     const collection = currentNounCollection();
     const language = mode === "questions" ? pedagogicalLanguage : ["en","es","pt"].includes(mode) ? mode : "en";
     return collection.labels[language] || collection.labels.en;
+  }
+
+  function verbMorphologyLabel(item) {
+    return item && item.morphology ? item.morphology.lemma : (item ? item.en : "");
+  }
+
+  function verbMorphologySummary(item) {
+    if (!item || !item.morphology) return "";
+    const m = item.morphology;
+    const past = m.forms && m.forms.past ? m.forms.past : "";
+    const label = m.regularity === "irregular" ? "Irregular" : "Regular";
+    return label + " · " + m.lemma + (past ? " → " + past : "");
+  }
+
+  function speakVerbMorphology(item) {
+    if (!item || !item.morphology) return;
+    const m = item.morphology;
+    const kind = m.regularity === "irregular" ? "irregular" : "regular";
+    const past = m.forms && m.forms.past ? m.forms.past : "";
+    const sentence = m.lemma + " is an " + kind + " verb." + (past ? " Past: " + past + "." : "");
+    speak(sentence, "en-US");
+  }
+
+  function clearVerbMorphologyFocus() {
+    delete stage.dataset.verbRegularity;
+    leaves.forEach(leaf => leaf.classList.remove("is-morphology-focus","is-regular-verb","is-irregular-verb"));
+  }
+
+  function refreshModeAvailability() {
+    const morphologyEnglishOnly = activeCollectionId === "verbs" && activeActivity === "morphology";
+    modeButtons.forEach(button => {
+      const id = button.dataset.mode;
+      button.disabled = morphologyEnglishOnly && ["es","pt","tripiano"].includes(id);
+    });
   }
 
   function verbActionExample(item) {
@@ -2055,11 +2441,17 @@
     if (activeCollectionId !== "nouns" && activeActivity === "classify") {
       activeActivity = "explore";
     }
-    if (activeCollectionId === "verbs" && activeActivity !== "explore") {
+    if (activeCollectionId !== "verbs" && activeActivity === "morphology") {
+      activeActivity = "explore";
+      clearVerbMorphologyFocus();
+    }
+    if (activeCollectionId === "verbs" && !["explore","morphology"].includes(activeActivity)) {
       activeActivity = "explore";
     }
+    stage.dataset.activity = activeActivity;
     refreshActivityControls();
     refreshContentGroupControls();
+    refreshModeAvailability();
     if (nounClassifyPanel) nounClassifyPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "classify");
     if (nounLayerPanel) nounLayerPanel.hidden = !(activeCollectionId === "nouns" && activeActivity === "explore");
 
@@ -2340,6 +2732,43 @@
       }
 
       if (activeCollectionId === "verbs") {
+        if (activeActivity === "morphology") {
+          const morphology = contentItem.morphology;
+          if (!morphology) return;
+          const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+          if (pianoKey) activateKey(pianoKey, key, "frondosa", {
+            kind:"content-item",
+            collectionId:"verbs",
+            id:contentItem.id,
+            evidence:"none"
+          }, true);
+
+          clearVerbMorphologyFocus();
+          stage.dataset.verbRegularity = morphology.regularity;
+          leaf.classList.add("is-morphology-focus", morphology.regularity === "irregular" ? "is-irregular-verb" : "is-regular-verb");
+
+          if (semanticSequence) semanticSequence.dataset.phase = "observed";
+          if (semanticPhase) semanticPhase.textContent = "VERB · MORPHOLOGY · EN";
+          if (semanticCue) semanticCue.textContent = morphology.lemma.toUpperCase() + " · " + morphology.regularity.toUpperCase();
+          if (semanticAnswer) semanticAnswer.textContent = verbMorphologySummary(contentItem);
+          wordStatus.textContent = morphology.lemma + " → " + (morphology.forms.past || "");
+          speakVerbMorphology(contentItem);
+
+          window.dispatchEvent(new CustomEvent("siyayo:verb-morphology-presented", {
+            detail:{
+              verbId:contentItem.id,
+              language:"en",
+              lemma:morphology.lemma,
+              regularity:morphology.regularity,
+              forms:{...morphology.forms},
+              evaluated:false,
+              evidenceProduced:false,
+              green:false
+            }
+          }));
+          return;
+        }
+
         const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
         if (pianoKey) activateKey(pianoKey, key, "frondosa", {
           kind:"content-item",
