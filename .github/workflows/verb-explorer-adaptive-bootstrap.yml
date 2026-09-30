@@ -355,3 +355,8 @@ jobs:
           node scripts/test-s3-why-transfer-authority.js
           node scripts/test-s3-why-longitudinal-transfer.js
           node scripts/test-s3-why-canonical-green-cycle.js
+
+      - name: Test learner isolation and explicit Shopping WHAT entry
+        run: |
+          node scripts/test-verb-explorer-learner-switch-isolation.js
+          node scripts/test-s1-what-canonical-green-cycle.js
