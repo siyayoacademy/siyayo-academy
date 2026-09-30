@@ -55,5 +55,46 @@ function load(options={}){
     assert.equal(await t.api.select(which),false);
   }
 
+  {
+    // Real producer/authority chain: the first nick must not revive an older
+    // anonymous WHAT selection after the learner has chosen undeclared WHICH.
+    const root={Object,Promise};root.globalThis=root;
+    const context=vm.createContext(root);
+    for(const name of ['leaf-assessment-target-authority','leaf-assessment-target-readiness',
+      'leaf-assessment-target-provider','verb-explorer-thinking-mind-assessment-selection']){
+      vm.runInContext(fs.readFileSync('js/'+name+'.js','utf8'),context);
+    }
+    let learner=null,active=null,starts=0,clears=0;
+    root.GreenPassAuthorityPolicy={contractAuthoritySkills:['what.use.object-question','which.use.determiner']};
+    root.SIYAYOVerbExplorerLearnerIdentitySource={getId:()=>learner};
+    root.SIYAYOVerbExplorerAdaptiveCoordinator={snapshot:()=>active};
+    root.SIYAYOVerbExplorerAdaptiveReadinessTrigger={
+      clear(){clears++;},
+      signal(){if(learner&&root.SIYAYOLeafAssessmentTargetAuthority.getTarget()){starts++;return true;}return false;}
+    };
+    const api=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+    const what={assessmentTarget:{skill:'what.use.object-question',definitionPath:'what.json'}};
+    await api.select(what);
+    assert.equal(root.SIYAYOLeafAssessmentTargetAuthority.getSkill(),'what.use.object-question');
+    await api.select({questionWord:'which'});
+    assert.equal(root.SIYAYOLeafAssessmentTargetAuthority.getTarget(),null);
+    learner='First';
+    assert.equal(await root.SIYAYOVerbExplorerAdaptiveReadinessTrigger.signal(),false);
+    assert.equal(starts,0,'nick cannot resurrect stale WHAT');
+    learner=null;
+    await api.select(what);await api.select(which);
+    learner='First';
+    assert.equal(await root.SIYAYOVerbExplorerAdaptiveReadinessTrigger.signal(),true);
+    assert.equal(root.SIYAYOLeafAssessmentTargetAuthority.getSkill(),'which.use.determiner');
+    const before=clears;
+    active={session:{decision:{skill:'which.use.determiner'}}};
+    await api.select({questionWord:'where'});
+    assert.equal(clears,before,'identified active assessment survives exploration');
+    learner=null;active=null;
+    await api.select(what);
+    api.invalidatePending();
+    assert.equal(root.SIYAYOLeafAssessmentTargetAuthority.getTarget(),null,'free navigation invalidates pending origin');
+  }
+
   console.log('Thinking Mind assessment selection: PASS — only an explicitly declared assessmentTarget is forwarded; questionWord, choiceContext, and Experience semantics never infer Skill.');
 })().catch(error=>{console.error(error);process.exit(1);});

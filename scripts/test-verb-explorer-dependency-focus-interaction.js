@@ -108,6 +108,9 @@ for (const input of renders) {
   }
 }
 
+Interaction.updateStructure(structure,'en');
+clickToken('three');
+assert.equal(renders.length,3,'re-rendering reference must reset token deduplication');
 console.log(
   'Verb Explorer Dependency Focus interaction: PASS — explicit learner pointing switches canonical syntactic focus BOOKS ↔ THREE without producing LearnerEvent, evidence, score, mastery, progression, or Green Pass.'
 );

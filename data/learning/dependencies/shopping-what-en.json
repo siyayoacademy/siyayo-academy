@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-what-en",
+  "language": "en",
+  "sentence": "What are we going to cook?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "What",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Thing or action being asked about"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "are",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "going",
+      "index": 4,
+      "form": "going",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 5,
+      "form": "to",
+      "wordClass": "PART",
+      "pedagogy": {
+        "wordType": {
+          "en": "PARTICLE"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 6,
+      "form": "cook",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Action in the question"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cook",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "going",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "going",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "going",
+      "dependent": "cook",
+      "relation": "xcomp"
+    },
+    {
+      "head": "cook",
+      "dependent": "to",
+      "relation": "mark"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHAT question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference example; omitted subjects remain omitted. No inferred tokens."
+  }
+}

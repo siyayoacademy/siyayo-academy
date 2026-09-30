@@ -1,0 +1,79 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-what-pt",
+  "language": "pt",
+  "sentence": "O que vamos cozinhar?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "O que",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Objeto ou ação perguntada"
+        }
+      }
+    },
+    {
+      "id": "go",
+      "index": 2,
+      "form": "vamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": ""
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 3,
+      "form": "cozinhar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação na pergunta"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cook",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "cook",
+      "dependent": "go",
+      "relation": "aux"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical pt WHAT question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference example; omitted subjects remain omitted. No inferred tokens."
+  }
+}

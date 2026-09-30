@@ -7,12 +7,29 @@
 var retained=Object.create(null);
 function clear(){retained=Object.create(null);}
 
+function invalidatePending(){
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  if(identity&&identity.getId&&identity.getId())return false;
+  var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+  var active=coordinator&&coordinator.snapshot&&coordinator.snapshot();
+  if(active&&active.session)return false;
+  ['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
+    'SIYAYOVerbExplorerCanonicalSkillLoader','SIYAYOVerbExplorerCanonicalSkillSource',
+    'SIYAYOLeafAssessmentTargetAuthority'].forEach(function(name){
+    var api=root[name];if(api&&typeof api.clear==='function')api.clear();
+  });
+  return true;
+}
+
 function text(value){
   return typeof value==='string'?value.trim():'';
 }
 
 function select(question,options){
   options=options||{};
+  // A new anonymous selection supersedes the previous pending target, even
+  // when this question has no declared contract. Identified Sessions are retained.
+  invalidatePending();
   var provider=options.provider||root.SIYAYOLeafAssessmentTargetProvider;
   if(!question||typeof question!=='object')return Promise.resolve(false);
 
@@ -77,5 +94,5 @@ function select(question,options){
   }
 }
 
-root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear});
+root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending});
 })(typeof globalThis!=='undefined'?globalThis:this);

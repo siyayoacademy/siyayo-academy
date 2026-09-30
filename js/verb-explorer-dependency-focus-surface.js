@@ -71,6 +71,7 @@
     surface.innerHTML=
       '<div class="dependency-focus-heading">'+
         '<span>DEPENDENCY FOCUS</span>'+
+        '<small>'+escapeHtml(({en:'Canonical reference example',es:'Ejemplo canónico de referencia',pt:'Exemplo canônico de referência'})[language])+' · '+escapeHtml(structure.sentence||'')+'</small>'+
         '<strong>'+escapeHtml(resolved.focus.form)+' / '+escapeHtml(focusType)+'</strong>'+
         (focusRole?'<small class="dependency-focus-role">'+escapeHtml(focusRole)+'</small>':'')+
       '</div>'+

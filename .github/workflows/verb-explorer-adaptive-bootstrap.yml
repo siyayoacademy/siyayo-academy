@@ -356,6 +356,9 @@ jobs:
           node scripts/test-s3-why-longitudinal-transfer.js
           node scripts/test-s3-why-canonical-green-cycle.js
 
+      - name: Test QWord-owned exploratory Dependency Focus
+        run: node scripts/test-verb-explorer-qword-dependency-focus.js
+
       - name: Test learner isolation and explicit Shopping WHAT entry
         run: |
           node scripts/test-verb-explorer-learner-switch-isolation.js

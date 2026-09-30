@@ -209,6 +209,14 @@
               "salmon",
               "brown-rice"
             ]
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "shopping-what-en",
+              "es": "shopping-what-es",
+              "pt": "shopping-what-pt"
+            },
+            "defaultFocus": "cook"
           }
         },
         {
@@ -774,6 +782,14 @@
             "en": "WHAT",
             "es": "QUÉ",
             "pt": "O QUE"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-what-en",
+              "es": "preparing-what-es",
+              "pt": "preparing-what-pt"
+            },
+            "defaultFocus": "prepare"
           }
         },
         {

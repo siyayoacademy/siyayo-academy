@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-what-pt",
+  "language": "pt",
+  "sentence": "O que estamos preparando primeiro?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "O que",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Objeto ou ação perguntada"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "estamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": ""
+        }
+      }
+    },
+    {
+      "id": "prepare",
+      "index": 3,
+      "form": "preparando",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação na pergunta"
+        }
+      }
+    },
+    {
+      "id": "first",
+      "index": 4,
+      "form": "primeiro",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO"
+        },
+        "role": {
+          "pt": ""
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prepare",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "prepare",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "first",
+      "relation": "advmod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical pt WHAT question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference example; omitted subjects remain omitted. No inferred tokens."
+  }
+}

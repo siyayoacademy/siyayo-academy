@@ -18,7 +18,37 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-05
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-06
+
+**Recorded:** 2026-09-30
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Base HEAD:** `9f8921a936c972f6cf6e09a397eeefe145736ab2`
+**Status:** implementation and local contract checks complete; remote CI/deployment and user visual homologation pending.
+
+## DONE
+
+- Anonymous explicit selection invalidates any older pending target and cancels readiness/load generations. A later undeclared QWord leaves WAIT. Free Experience navigation clears anonymous pending origin; identified active Sessions are preserved.
+- Regression reproduces the original stale WHAT target against pre-fix code and passes after correction. Identity replacement and assessment retention checks pass.
+- WHAT declares its own read-only Dependency Focus in Shopping and Preparing, independently for EN/ES/PT. These six structures reference thinkingMind.question, including the actual omitted subjects and per-language constructions. They are explicitly labelled canonical reference examples, not projections of every tense/mode variation.
+- Selecting another undeclared QWord hides the unrelated books graph. Shopping WHICH retains its existing books fixture and assessed Head Probe contract.
+- LANGUAGE now precedes Thinking Mind. Token focus deduplication resets when the graph is re-rendered so switching language/question does not swallow the next focus event.
+- Local checks pass: pending-target producer chain; QWord graph switching; tri-language dependency source; SVG surface/accessible interaction; S1 WHAT canonical Green cycle; S2 early WHAT/adoption; learner identity isolation; corpus validator.
+
+## WAIT / OPEN
+
+- Browser visual homologation is required. Local Playwright could not launch because Chromium executable is absent; DOM contract tests do not replace user visual confirmation.
+- WHERE and the remaining QWords still need their own corpus-grounded dependency mappings. Do not claim all 14 are covered.
+- WHAT graph is a labelled reference question. Tense/mode-specific dependency structures remain unmapped.
+- Exploration trace persistence, account login and printable personal reports are not established by this patch.
+- No evidence/Green from anonymous exploration, token focus, SVG animation, language selection, or identity alone.
+
+## NEXT GO
+
+Verify CI/deployment for the implementation commit, then visually test anonymous WHAT -> undeclared WHICH in Preparing -> nick (no stale WHAT Session), and Shopping WHAT -> WHICH -> nick (WHICH 0/3). Compare WHAT SVG across EN/ES/PT without nick, confirm LANGUAGE order, and preserve existing Green/transfer/adoption path. After visual homologation, map WHERE independently before expansion.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-05
 
 **Status:** READ-ONLY runtime audit complete; corrections mapped, not implemented.
 **Recorded:** 2026-09-30
@@ -543,8 +573,8 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-05`.  
-**Current work:** pending-target lifecycle and per-QWord exploratory Dependency Focus mapping.
+**Checkpoint:** `JAGUAR-LIVE-06`.  
+**Current work:** CI/deployment and visual verification of pending-target fix and WHAT Dependency Focus.
 
 ## B. SIYAYO presentation / audiences / profiles
 

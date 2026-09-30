@@ -6,11 +6,13 @@
   var activeSurface=null;
   var activeDocument=null;
   var activeLanguage=null;
+  var lastFocusId=null;
 
   function updateStructure(structure,language){
     if(!structure||!Array.isArray(structure.tokens)||!Array.isArray(structure.relations))return false;
     var nextLanguage=typeof language==='string'&&language.trim()?language.trim():structure.language;
     if(!/^(en|es|pt)$/.test(nextLanguage)||structure.language!==nextLanguage)return false;
+    lastFocusId=null;
     activeStructure=structure;
     activeLanguage=nextLanguage;
     return true;
@@ -28,7 +30,6 @@
     activeSurface=surface;
     activeDocument=doc;
 
-    var lastFocusId=null;
 
     function tokenFromEvent(event){
       return event&&event.target&&typeof event.target.closest==='function'
