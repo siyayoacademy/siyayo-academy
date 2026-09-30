@@ -2652,3 +2652,62 @@ h1 {
     overflow-wrap:anywhere;
   }
 }
+
+
+/* =========================================================
+   VERB MORPHOLOGY · EN v0.1
+   English-only Regular / Irregular visual layer.
+   Color is paired with explicit text + contour treatment.
+   ========================================================= */
+.stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+  border-radius:28px;
+  transition:
+    background var(--motion-fast) var(--motion-ease),
+    box-shadow var(--motion-fast) var(--motion-ease),
+    outline-color var(--motion-fast) var(--motion-ease);
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="regular"] .frondosa {
+  background:
+    radial-gradient(ellipse at 50% 48%, rgba(70,150,105,.18), rgba(20,68,45,.06) 58%, transparent 74%);
+  box-shadow:inset 0 0 0 1px rgba(154,221,180,.22);
+  outline:1px solid rgba(154,221,180,.18);
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="irregular"] .frondosa {
+  background:
+    repeating-radial-gradient(ellipse at 50% 48%, rgba(119,102,188,.15) 0 12px, rgba(54,45,102,.06) 12px 24px, transparent 24px 38px);
+  box-shadow:inset 0 0 0 2px rgba(190,174,255,.20);
+  outline:2px dashed rgba(190,174,255,.22);
+  outline-offset:-5px;
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="regular"] .frondosa-visual {
+  filter:
+    drop-shadow(0 18px 24px rgba(0,0,0,.42))
+    drop-shadow(0 0 16px rgba(154,221,180,.26));
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="irregular"] .frondosa-visual {
+  filter:
+    drop-shadow(0 18px 24px rgba(0,0,0,.42))
+    drop-shadow(0 0 18px rgba(190,174,255,.30));
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"] .leaf.is-morphology-focus {
+  outline-offset:3px;
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"] .leaf.is-regular-verb.is-morphology-focus {
+  outline:2px solid rgba(154,221,180,.86);
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"] .leaf.is-irregular-verb.is-morphology-focus {
+  outline:2px dashed rgba(220,210,255,.92);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+    transition:none;
+  }
+}
