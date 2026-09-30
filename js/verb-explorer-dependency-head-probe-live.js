@@ -110,7 +110,7 @@
       learnerEvents:learnerEvents,
       onEvent:function(event,target){
         var current=coordinator.snapshot();
-        if(!current||!current.session||!current.session.decision)return null;
+        if(!current||!current.session||!current.session.decision||current.session!==session)return null;
         if(text(current.session.decision.skill)!==text(decision.skill))return null;
         if(text(current.session.decision.experienceId)!==text(experience.id))return null;
 
