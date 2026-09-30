@@ -18,7 +18,56 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-11
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-12
+
+**Recorded:** 2026-09-30
+**Base HEAD:** `5be0c98f2f0a119ab4df6ce2d6cde9fc32a3a5da`
+**Change kind:** EXTENSION — canonical WHAT response presentation; no migration/replacement of evaluator, identities or Pass Contract.
+**Status:** user homologated Shopping WHAT structural diagnostic in EN/ES/PT; this response extension awaits CI/deploy/visual confirmation.
+
+## APPROXIMATE INTEGRATION GUIDE — WHAT EXISTS / WHERE MISSING
+
+| Capability | Established | Missing / next seam | Authority / change kind |
+|---|---|---|---|
+| Shopping WHICH | books diagnostic, cheese choice/contextual4/4, local use, transfer to Preparing | anonymous answer practice, broader entry contracts | preserve; EXTEND only grounded corpus |
+| Shopping WHAT | own graph/head diagnostic, function/local answer/Preparing transfer | full canonical response presentation connected by this patch; visual confirmation pending | existing WHAT source/result/Cycle; EXTENSION |
+| Preparing WHAT | local function/object answer, Having transfer | complete contextual response corpus/presentation per language | map before EXTENSION |
+| WHY | contextual reason skill/proofs in existing dinner flow | full per-origin coverage and comparable presentation not audited here | no global completion claim |
+| WHERE/remaining QWords | contextual Thinking Mind entries; partial tense/mode dialogue | individual graphs, diagnostics, declared assessment targets/proofs across Experiences | WAIT when undeclared; no inferred Skill |
+| Free exploration | language/QWord/tense/mode/navigation | anonymous observational answer sink and persistence scope | separate from EvidenceProfile |
+| Identity/history | nick and learner isolation contracts | account login, durable personal reports/print | OPEN; never claim implemented |
+| Piano external cable | perceptual boundary; canonical resume executor exists | receiver and generic advance executor still unconfirmed | preserve WAIT/external dispatch |
+| Xespirito / Verb DNA | Verb Grid diagnosis, minimal repair/re-diagnose, repairTrace interpreter/bridges | audit full tri-language/routing integration before expansion | preserve existing diagnosis; not a QWord choice evaluator |
+
+## XESPIRITO CONTINUITY
+
+`xespirito-explorer-bridge.js` owns grid loading, functional conflict display and repairTrace.
+`verb-explorer-xespirito-evidence-bridge.js` interprets a grounded nonempty repair trace; creates no Profile/Session/Attempt/Context.
+`xespirito-green-pass-bridge.js` records interpreted conflict signals and recommendations through its existing profile API; this legacy bridge is not the new QWord target selector and must not be conflated with canonical Session contract closure.
+FUNCTIONAL PATH CLEAR means no conflict recognized by the current Grid, not universal correctness/mastery.
+No changes to these authorities in this extension.
+
+## ROUTINE — SHOPPING WHAT CANONICAL RESPONSES
+
+- Three independently authored EN/ES/PT candidates use existing noun IDs salmon/brown-rice/parsley.
+- Both accepted foods retain canonical pass; the distractor retains fail. Form validity is not contextual correctness.
+- Existing specification source carries optional declared response text; live buttons show it, then submit the same noun ID through existing learner-event/result/Evidence/Attempt/Cycle.
+- Full response selection is the existing object-answer proof, not a new requirement or a 4/4 score.
+- Undeclared response corpora retain existing short-label behavior; document this presentation fallback, do not describe it as full-response integration.
+- Existing LINES tense/mode corpus remains exploratory. Assessment reference question/candidates remain fixed to the declared contract; harmonizing placement/line roles is still OPEN.
+- No duplicate evaluator, router, auto-adoption or retroactive anonymous credit.
+
+## CHANGE DECLARATION PROTOCOL
+
+Every future routine must explicitly declare EXTENSION, MIGRATION or REPLACEMENT; name existing/changed authorities, canonical sources, compatibility/fallback, WAIT conditions, event/identity provenance, EN/ES/PT coverage, tests/CI/deployment and separate visual homologation. A replacement/migration must identify removed behavior and preserved history, never silently overwrite a homologated contract.
+
+## NEXT GO
+
+Verify checks/deploy and visually select full WHAT canonical responses in Shopping in each language. Preserve diagnostic separate from 0/3; accepted response satisfies the existing object-answer requirement only. Then map the LINES-to-practice presentation seam and Preparing response candidates before extending other QWords.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-11
 
 **Base HEAD:** `14482382975e6593eebc885004945a1d2c0a2bfe`
 **Recorded:** 2026-09-30
@@ -712,7 +761,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-11`.  
+**Checkpoint:** `JAGUAR-LIVE-12`.  
 **Current work:** anonymous answer-practice boundary mapped; smallest Shopping WHICH seam pending implementation.
 
 ## B. SIYAYO presentation / audiences / profiles

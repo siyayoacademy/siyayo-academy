@@ -73,7 +73,8 @@ function mount(input){
     var question=doc.createElement('p');question.className='what-probe-question';question.textContent=spec.question;section.appendChild(question);
     var options=doc.createElement('div');options.className='what-probe-options';
     spec.alternatives.forEach(function(alternative){
-      var button=doc.createElement('button');button.type='button';button.className='what-probe-option';button.textContent=alternative.label;
+      var button=doc.createElement('button');button.type='button';button.className='what-probe-option';button.textContent=alternative.response||alternative.label;
+      if(alternative.response)button.setAttribute('aria-label',alternative.response);
       button.addEventListener('click',function(){
         var current=coordinator.snapshot();
         if(!current||current.session!==active.session)return;

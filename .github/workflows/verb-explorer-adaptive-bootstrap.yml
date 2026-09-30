@@ -372,3 +372,6 @@ jobs:
 
       - name: Test Shopping WHAT head diagnostic
         run: node scripts/test-shopping-what-head-diagnostic.js
+
+      - name: Test WHAT canonical answer presentation
+        run: node scripts/test-shopping-what-canonical-responses.js

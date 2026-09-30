@@ -208,6 +208,32 @@
             "acceptedVocabularyIds": [
               "salmon",
               "brown-rice"
+            ],
+            "canonicalResponses": [
+              {
+                "id": "salmon",
+                "response": {
+                  "en": "We are going to cook salmon.",
+                  "es": "Vamos a cocinar salmón.",
+                  "pt": "Vamos cozinhar salmão."
+                }
+              },
+              {
+                "id": "brown-rice",
+                "response": {
+                  "en": "We are going to cook brown rice.",
+                  "es": "Vamos a cocinar arroz integral.",
+                  "pt": "Vamos cozinhar arroz integral."
+                }
+              },
+              {
+                "id": "parsley",
+                "response": {
+                  "en": "We are going to cook parsley.",
+                  "es": "Vamos a cocinar perejil.",
+                  "pt": "Vamos cozinhar salsa."
+                }
+              }
             ]
           },
           "dependencyFocus": {

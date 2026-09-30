@@ -46,11 +46,20 @@
         .find(function(item){return item&&!excluded.has(item.id)&&
           (mode==='local'?!item.semanticTags.includes('vegetable'):item.id!=='salmon');});
       if(!distractor)return null;
+      if(grounding.canonicalResponses!==undefined){
+        if(!Array.isArray(grounding.canonicalResponses))return null;
+        var ids=accepted.concat([distractor]).map(function(item){return item.id;});
+        if(ids.some(function(id){var matches=grounding.canonicalResponses.filter(function(candidate){return candidate&&candidate.id===id;});return matches.length!==1||!text(matches[0].response&&matches[0].response[language]);}))return null;
+      }
       if(mode==='local'&&experience.id==='preparing-dinner'&&accepted.some(function(item){return !item.semanticTags.includes('vegetable');}))return null;
       return Object.freeze({skill:skill.id,language:language,experienceId:experience.id,fromExperienceId:mode==='transfer'?local.id:null,
         dimension:'object-answer',mode:mode,question:question.question[language],context:grounding.context[language],
         expectedAlternativeIds:Object.freeze(grounding.acceptedVocabularyIds.slice()),
-        alternatives:freezeOptions(accepted.concat([distractor]).map(function(item){return {id:item.id,label:item.translations[language]};}))});
+        alternatives:freezeOptions(accepted.concat([distractor]).map(function(item){var candidates=grounding.canonicalResponses;
+          var matches=Array.isArray(candidates)?candidates.filter(function(candidate){return candidate.id===item.id;}):[];
+          var option={id:item.id,label:item.translations[language]};
+          if(matches.length===1&&text(matches[0].response&&matches[0].response[language]))option.response=matches[0].response[language];
+          return option;}))});
     }
     var situated=answer(what,local,'local'),cross=answer(later,transfer,'transfer');
     if(!situated||!cross)return null;

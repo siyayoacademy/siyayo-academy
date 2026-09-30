@@ -203,6 +203,27 @@
                 "type": "string",
                 "minLength": 1
               }
+            },
+            "canonicalResponses": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "response"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "response": {
+                    "$ref": "#/$defs/trilingual"
+                  }
+                }
+              }
             }
           }
         },
