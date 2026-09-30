@@ -7,7 +7,8 @@
     "A content item enters the stage only when its source, learner action, actor roles, language coverage and evidence boundary are known.",
     "Semantic identity has precedence over shared musical-note identity whenever an exact content item is known.",
     "Language is a lens; collection and activity are independent dimensions.",
-    "Roles are tendencies, not prisons; Experience bindings select active capabilities."
+    "Roles are tendencies, not prisons; Experience bindings select active capabilities.",
+    "Homologated branches are protected historical behavior: future implementations extend them or explicitly supersede them through a documented migration."
   ],
   "admissionContract": {
     "requiredQuestions": [
@@ -641,6 +642,96 @@
         "other-large-word-collections"
       ],
       "rule": "Changing group changes only the visible collection window; it does not create Evidence, GREEN, or assessment."
+    },
+    "futureOrthogonalDimensions": {
+      "verbs": {
+        "morphology": [
+          "regular",
+          "irregular"
+        ],
+        "function": [
+          "quality",
+          "state",
+          "movement",
+          "existential",
+          "routine",
+          "modal",
+          "conditional"
+        ],
+        "time": [
+          "present",
+          "past",
+          "future",
+          "present-period",
+          "past-period",
+          "future-period"
+        ],
+        "sentenceForm": [
+          "affirmative",
+          "negative",
+          "interrogative"
+        ],
+        "auxiliaryModal": [
+          "do",
+          "be",
+          "have",
+          "can",
+          "could",
+          "may",
+          "might",
+          "must",
+          "shall",
+          "should",
+          "will",
+          "would"
+        ],
+        "rule": "These dimensions must remain distinct and be revealed contextually rather than accumulated as permanent simultaneous controls."
+      },
+      "adjectives": {
+        "semanticValence": [
+          "positive",
+          "neutral",
+          "negative"
+        ],
+        "degree": [
+          "positive/base",
+          "comparative",
+          "superlative"
+        ],
+        "rule": "Semantic valence and grammatical degree are separate dimensions and must not share one visual meaning."
+      }
+    },
+    "accessibilityRules": [
+      "Color is never the sole carrier of meaning.",
+      "Portrait may have independent wrapping/layout treatment without breaking Auto/Landscape.",
+      "Avoid overlap, overflow and unnecessary truncation.",
+      "Choice, canonical source, WAIT, Evidence and GREEN must remain visually distinguishable."
+    ],
+    "historicalCheckpoint": {
+      "id": "PIANO-STAGE-CONTRACT-01",
+      "status": "active",
+      "note": "Contract introduced after Question Words, Nouns Explore/Classify, Stage visual hierarchy and grouped Verb Actions had established multiple homologated branches."
     }
+  },
+  "developmentContract": {
+    "id": "siyayo-stage-development-contract",
+    "path": "docs/SIYAYO-STAGE-DEVELOPMENT-CONTRACT.md",
+    "status": "active",
+    "purpose": "Preserve homologated Stage branches, historical implementation logic, forward architectural rules, and feature lifecycle so future work extends rather than silently replaces validated behavior.",
+    "requiredBeforeImplementation": [
+      "read development contract",
+      "read stage participation map",
+      "identify affected homologated invariants",
+      "map new routine before implementation",
+      "update feature state after testing/homologation"
+    ],
+    "lifecycle": [
+      "registered",
+      "mapped",
+      "implemented",
+      "tested",
+      "homologated"
+    ],
+    "protectionRule": "A homologated branch must not be silently removed, merged, renamed, or semantically repurposed. Any superseding change requires an explicit migration rationale and GO."
   }
 }
