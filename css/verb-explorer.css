@@ -128,7 +128,7 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 .learner-identity-panel small{display:block;margin-top:8px;color:#8ea3bc;font-size:.66rem;font-weight:800}
 .learner-identity-panel[data-identity-state="ready"]{border-color:rgba(67,198,111,.42)}
 .learner-identity-panel[data-identity-state="ready"] small{color:#43c66f}
-.learner-identity-panel[data-identity-state="ready"] input,.learner-identity-panel[data-identity-state="ready"] button{opacity:.48;cursor:default}
+.learner-identity-panel input:disabled,.learner-identity-panel button:disabled{opacity:.48;cursor:default}
 @media(max-width:520px){.learner-identity-controls{flex-direction:column}.learner-identity-controls button{width:100%}}
 
 
