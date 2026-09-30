@@ -18,7 +18,51 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-04
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-05
+
+**Status:** READ-ONLY runtime audit complete; corrections mapped, not implemented.
+**Recorded:** 2026-09-30
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Last implementation HEAD reviewed:** `0a3f5f959f48fa11c9ddbebb8386112efe559265`
+**Evidence:** source inspection and user screenshots. Previously checked implementation CI passed; this documentation checkpoint does not establish a new deployment or visual homologation.
+
+## FINDINGS
+
+- Dependency Focus currently resolves Experience.dependencyFocus, not the selected Question Word. Shopping declares the books fixture in EN/ES/PT; Preparing has no dependencyFocus declaration. The existing fixture was demonstrated; coverage of every QWord was not demonstrated.
+- Anonymous selection of a question with assessmentTarget stores a pending target before identity exists. Selecting a later question without assessmentTarget does not clear that target. Identity confirmation can therefore start the earlier WHAT target while exploration visibly shows WHICH. This is an implementation gap, not learner error.
+- A declared transfer question for S1 WHICH in visited S2 is not by itself an independent S2 WHICH assessment contract.
+- Free exploration and its navigation trace must remain available without identity. An identified assessment requires a declared canonical target and an explicit current learner selection. Observation, correct diagnostic answer, contextual score, contract evidence and Green Pass remain distinct.
+- Account login and printable personal history are product requirements; this audit does not establish that they are implemented.
+
+## WAIT / PERAÍ
+
+- Do not infer a Skill from a QWord label or manufacture dependencies by translation/parser inference.
+- Do not turn exploratory clicks, SVG focus, support or identity into Green Pass evidence.
+- Do not silently adopt an obsolete anonymous target when identity is confirmed.
+- Preserve earned history and learner-owned navigation; do not replace an active assessment merely because exploration changes.
+- LANGUAGE above Thinking Mind and per-QWord dependency presentation are requested interface mappings, not completed changes.
+
+## NEXT GO
+
+First map and test pending-target lifecycle: anonymous WHAT -> another QWord -> identity confirmation must revalidate the latest explicit selection; an undeclared target remains WAIT. Then map one corpus-grounded WHAT dependency example independently for EN/ES/PT before connecting its exploratory SVG. Preserve existing WHICH fixtures and transfer contracts.
+
+## ROUTINE MAPPING PROTOCOL — user clarification, 2026-09-30
+
+Before implementing a new routine, record:
+1. Purpose, learner action, entry/exit conditions and affected Experience/QWord.
+2. Independent EN/ES/PT canonical corpus and relation identities; explicit missing entries.
+3. Anonymous exploration state, identified learner state, pending target and active Session as separate actors/state.
+4. Events and receiving authorities; exploratory trace versus assessed Attempt/Evidence.
+5. WAIT conditions and forbidden automatic actions.
+6. Expected visible response, accessibility, language/tense/mode behavior and mastery projection.
+7. Minimal contract tests, relevant CI, deployed commit and separate user visual homologation.
+8. DONE/OPEN/NEXT GO checkpoint updates after each boundary, preserving historical decisions.
+
+Scope first; read existing authorities; map the complete routine; implement the smallest grounded seam; test; verify deployment; obtain visual homologation. Unknown coverage stays OPEN.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-04
 
 **Status:** S1 → visited S2 transfer wired; three CI workflows GREEN; visual verification pending
 **Recorded:** 2026-09-27
@@ -499,8 +543,8 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-00`.  
-**Current work:** Live Runtime contrast-review audit.
+**Checkpoint:** `JAGUAR-LIVE-05`.  
+**Current work:** pending-target lifecycle and per-QWord exploratory Dependency Focus mapping.
 
 ## B. SIYAYO presentation / audiences / profiles
 
