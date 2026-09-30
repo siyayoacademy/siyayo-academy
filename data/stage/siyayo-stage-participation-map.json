@@ -278,7 +278,7 @@
     },
     {
       "id": "verb-actions",
-      "status": "ready-candidate",
+      "status": "active-explore-prototype",
       "whatIsIt": "Trilingual lexical verbs with example sentences and target words.",
       "source": [
         "verb-examples"
@@ -315,7 +315,8 @@
         "pt"
       ],
       "evidenceRole": "opportunity-only",
-      "destinationOrPurpose": "Introduce verb vocabulary before tense/function transformations."
+      "destinationOrPurpose": "Canonical trilingual Verb Actions starter window is now playable on Frondosa in Explore mode; no tense/function transformation or evaluation yet.",
+      "nextRefinement": "Homologate EN/ES/PT/Tripiano exploration, then admit the remaining canonical actions or add a paging/window contract before Semantic Cadence."
     },
     {
       "id": "verb-systems",
@@ -572,9 +573,8 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate Stage visual hierarchy: Collection → Activity → contextual surface → Listen/Language",
-    "finish Noun Classify visual/interactivity homologation",
-    "admit Verb Actions from trilingual corpus",
+    "homologate Verb Actions Explore starter window in EN / ES / PT / Tripiano",
+    "decide canonical paging/window behavior for the remaining Verb Actions",
     "bind Semantic Cadence contextually where an Experience actually needs it",
     "admit Nice Party contextual vocabulary/accessories",
     "prototype Perspective Shift",
@@ -607,7 +607,10 @@
         "explore",
         "classify"
       ],
-      "semantic-cadence": "contextual-only"
+      "semantic-cadence": "contextual-only",
+      "verbs": [
+        "explore"
+      ]
     },
     "visualHierarchy": {
       "status": "implemented-awaiting-homologation",
