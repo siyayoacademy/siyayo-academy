@@ -25,17 +25,25 @@ function install(options){
   function reflect(){
     var current=text(source.getId());
     panel.dataset.identityState=current?'ready':'waiting';
-    input.disabled=Boolean(current);
-    confirm.disabled=Boolean(current);
+    input.disabled=false;
+    confirm.disabled=false;
     if(current){
       status.textContent='LEARNER READY · '+current;
     }
   }
 
   function submit(){
-    if(text(source.getId()))return Promise.resolve(false);
+    var previous=text(source.getId());
+    if(previous&&previous===text(input.value))return Promise.resolve(false);
     var id=text(input.value);
     if(!id){
+      if(previous&&typeof provider.clear==='function'&&provider.clear()===true){
+        reflect();
+        status.textContent='FREE EXPLORATION · no learner selected';
+        var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+        if(runtime&&typeof runtime.render==='function')runtime.render();
+        return Promise.resolve(true);
+      }
       status.textContent='Enter a name or nickname to begin the adaptive Session.';
       return Promise.resolve(false);
     }
@@ -44,6 +52,8 @@ function install(options){
       return Promise.resolve(false);
     }
     reflect();
+    var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+    if(runtime&&typeof runtime.render==='function')runtime.render();
     if(readiness&&typeof readiness.signal==='function'){
       try{return Promise.resolve(readiness.signal()).then(function(){return true;},function(){return true;});}
       catch(error){return Promise.resolve(true);}
