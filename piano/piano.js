@@ -151,7 +151,9 @@
       next:"Next noun",
       received:"Choice received",
       yourChoice:"Your choice",
+      spokenChoice:"Your choice",
       source:"Canonical source classification",
+      spokenSource:"According to the source classification",
       noEvaluation:"Not evaluated • no GREEN • no Evidence"
     },
     es:{
@@ -160,7 +162,9 @@
       next:"Siguiente sustantivo",
       received:"Elección recibida",
       yourChoice:"Tu elección",
+      spokenChoice:"Tu elección",
       source:"Clasificación de origen canónica",
+      spokenSource:"Según la clasificación de origen",
       noEvaluation:"No evaluado • sin GREEN • sin Evidence"
     },
     pt:{
@@ -169,7 +173,9 @@
       next:"Próximo substantivo",
       received:"Escolha recebida",
       yourChoice:"Sua escolha",
+      spokenChoice:"Sua escolha",
       source:"Classificação de origem canônica",
+      spokenSource:"Segundo a classificação de origem",
       noEvaluation:"Não avaliado • sem GREEN • sem Evidence"
     }
   });
@@ -230,41 +236,12 @@
         : "";
     }
 
-    function chooseNounClassification(choice, source = "control-button") {
-    if (activeActivity !== "classify" || activeCollectionId !== "nouns") return;
-    if (!nounCollections[choice]) return;
-
-    const item = currentNounClassifyItem();
-    const copy = currentNounClassifyCopy();
-    nounClassifyChoice = choice;
-
-    updateNounClassifyStateSurface();
-
-    if (semanticSequence) semanticSequence.dataset.phase = "observed";
-    if (semanticPhase) semanticPhase.textContent = "CHOICE RECEIVED";
-    if (semanticCue) semanticCue.textContent = copy.received + ": " + classificationLabel(nounClassifyChoice);
-    if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
-
-    window.dispatchEvent(new CustomEvent("siyayo:noun-classification-choice", {
-      detail: {
-        type:"noun-classification-choice",
-        source,
-        nounId:item.id,
-        displayedWord:contentLabelForMode(item),
-        choice:nounClassifyChoice,
-        language:nounClassifyLanguage(),
-        evaluated:false,
-        evidenceProduced:false,
-        green:false
-      }
-    }));
-  }
-
-  nounClassificationButtons.forEach(button => {
-      button.classList.toggle("is-selected", button.dataset.nounClassification === nounClassifyChoice);
+    nounClassificationButtons.forEach(button => {
+      const id = button.dataset.nounClassification;
+      button.classList.toggle("is-selected", id === nounClassifyChoice);
       button.classList.toggle(
         "is-source",
-        nounClassifySourceRevealed && button.dataset.nounClassification === item.classification
+        nounClassifySourceRevealed && id === item.classification
       );
     });
 
@@ -276,6 +253,79 @@
         !!branch && nounClassifySourceRevealed && branch === item.classification
       );
     });
+  }
+
+  function nounLabelInLanguage(item, language) {
+    if (!item) return "";
+    return item[language] || item.en;
+  }
+
+  function classificationLabelInLanguage(id, language) {
+    const layer = nounCollections[id];
+    if (!layer) return id;
+    return layer.labels[language] || layer.labels.en;
+  }
+
+  function nounClassificationSentence(item, classificationId, language, prefixKind = "choice") {
+    const noun = nounLabelInLanguage(item, language);
+    const classification = classificationLabelInLanguage(classificationId, language);
+    const copy = nounClassifyCopy[language] || nounClassifyCopy.en;
+    const prefix = prefixKind === "source" ? copy.spokenSource : copy.spokenChoice;
+
+    if (language === "es") {
+      return prefix + ": " + noun + " es un sustantivo " + classification.toLowerCase() + ".";
+    }
+    if (language === "pt") {
+      return prefix + ": " + noun + " é um substantivo " + classification.toLowerCase() + ".";
+    }
+    const article = /^[aeiou]/i.test(classification) ? "an" : "a";
+    return prefix + ": " + noun + " is " + article + " " + classification.toLowerCase() + " noun.";
+  }
+
+  function speakNounClassificationSentence(item, classificationId, prefixKind = "choice") {
+    if (mode === "tripiano") {
+      speakSequence([
+        { text:nounClassificationSentence(item, classificationId, "en", prefixKind), lang:"en-US" },
+        { text:nounClassificationSentence(item, classificationId, "es", prefixKind), lang:"es-ES" },
+        { text:nounClassificationSentence(item, classificationId, "pt", prefixKind), lang:"pt-BR" }
+      ]);
+      return;
+    }
+
+    const language = nounClassifyLanguage();
+    const locale = language === "es" ? "es-ES" : language === "pt" ? "pt-BR" : "en-US";
+    speak(nounClassificationSentence(item, classificationId, language, prefixKind), locale);
+  }
+
+  function chooseNounClassification(choice, source = "control-button") {
+    if (activeActivity !== "classify" || activeCollectionId !== "nouns") return;
+    if (!nounCollections[choice]) return;
+
+    const item = currentNounClassifyItem();
+    const copy = currentNounClassifyCopy();
+    nounClassifyChoice = choice;
+
+    updateNounClassifyStateSurface();
+    speakNounClassificationSentence(item, choice, "choice");
+
+    if (semanticSequence) semanticSequence.dataset.phase = "observed";
+    if (semanticPhase) semanticPhase.textContent = "CHOICE RECEIVED";
+    if (semanticCue) semanticCue.textContent = copy.received + ": " + classificationLabel(choice);
+    if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
+
+    window.dispatchEvent(new CustomEvent("siyayo:noun-classification-choice", {
+      detail: {
+        type:"noun-classification-choice",
+        source,
+        nounId:item.id,
+        displayedWord:contentLabelForMode(item),
+        choice,
+        language:nounClassifyLanguage(),
+        evaluated:false,
+        evidenceProduced:false,
+        green:false
+      }
+    }));
   }
 
   function resonateCurrentClassifyNoun() {
@@ -983,7 +1033,7 @@
       if (semanticPhase) semanticPhase.textContent = "SOURCE";
       if (semanticCue) semanticCue.textContent = copy.source + ": " + sourceLabel;
       if (semanticAnswer) semanticAnswer.textContent = copy.noEvaluation;
-      speak(copy.source + ". " + sourceLabel, nounClassifyLanguage() === "es" ? "es-ES" : nounClassifyLanguage() === "pt" ? "pt-BR" : "en-US");
+      speakNounClassificationSentence(item, item.classification, "source");
 
       window.dispatchEvent(new CustomEvent("siyayo:noun-classification-source-revealed", {
         detail:{
