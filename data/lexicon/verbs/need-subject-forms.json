@@ -221,7 +221,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Do i need more time every day?",
+              "en": "Do I need more time every day?",
               "es": "¿Necesito yo más tiempo todos los días?",
               "pt": "Eu preciso de mais tempo todos os dias?"
             },
@@ -543,7 +543,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Did i need more time yesterday?",
+              "en": "Did I need more time yesterday?",
               "es": "¿Necesité yo más tiempo ayer?",
               "pt": "Eu precisei de mais tempo ontem?"
             },
@@ -865,7 +865,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Will i need more time tomorrow?",
+              "en": "Will I need more time tomorrow?",
               "es": "¿Necesitaré yo más tiempo mañana?",
               "pt": "Eu precisarei de mais tempo amanhã?"
             },
