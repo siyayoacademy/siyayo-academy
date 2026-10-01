@@ -576,3 +576,32 @@ IMPLEMENTED
 ```
 
 Only after homologation should the Jaguar advance to the ES/PT morphology audit or the separate Verb Function dimension.
+
+
+## 20. EN Verb Morphology Portrait refinement — PIANO-STAGE-VERB-MORPH-EN-02
+
+Status: **FUNCTIONALLY TESTED; PORTRAIT REFINED; awaiting final visual homologation**.
+
+User-confirmed before this pass:
+
+- Morphology activity functions correctly.
+- Regular/Irregular relation is presented correctly.
+- Group 1–14 / Group 15–21 works.
+- Exact semantic focus works.
+- The remaining concern was Portrait visual arrangement.
+
+This pass changes presentation only:
+
+- Group 1 keeps a dense 14-item canopy with improved spacing.
+- Group 2 spreads its seven items across the full Frondosa canopy instead of leaving a top-heavy cluster.
+- Morphology activity and Group navigator receive clearer Portrait vertical rhythm.
+- Auto and Landscape are intentionally preserved.
+- No pedagogical authority, Evidence, GREEN, speech contract, or grouping semantics changed.
+
+Next transition:
+
+```
+visual confirmation
+→ HOMOLOGATED
+→ ES/PT morphology audit
+```
