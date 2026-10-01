@@ -31,7 +31,7 @@
         },
         "interrogative": {
           "sentences": {
-            "en": "Do i arrive at class every day?",
+            "en": "Do I arrive at class every day?",
             "es": "¿Llego yo a clase todos los días?",
             "pt": "Eu chego à aula todos os dias?"
           },
@@ -73,7 +73,7 @@
         },
         "interrogative": {
           "sentences": {
-            "en": "Did i arrive at class yesterday?",
+            "en": "Did I arrive at class yesterday?",
             "es": "¿Llegué yo a clase ayer?",
             "pt": "Eu cheguei à aula ontem?"
           },
@@ -115,7 +115,7 @@
         },
         "interrogative": {
           "sentences": {
-            "en": "Will i arrive at class tomorrow?",
+            "en": "Will I arrive at class tomorrow?",
             "es": "¿Llegaré yo a clase mañana?",
             "pt": "Eu chegarei à aula amanhã?"
           },
