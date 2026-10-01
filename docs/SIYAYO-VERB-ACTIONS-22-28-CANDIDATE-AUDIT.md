@@ -188,3 +188,17 @@ CANDIDATE AUDIT
 ```
 
 Do not add the seven only inside `piano.js`; that would create a second unofficial verb universe.
+
+
+## Admission result
+
+Status: **CANONICALLY ADMITTED; PIANO IMPLEMENTED; awaiting Stage homologation**.
+
+The seven audited candidates were admitted to the canonical verb corpus and received canonical sentence/subject form files. Corpus Integrity, Verb Explorer Adaptive Bootstrap and Resume Runtime Dispatch passed before Piano admission.
+
+The Stage target is now active:
+
+```
+Group 1 → 1–14
+Group 2 → 15–28
+```
