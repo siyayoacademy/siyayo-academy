@@ -221,7 +221,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Do i begin the lesson every day?",
+              "en": "Do I begin the lesson every day?",
               "es": "¿Empiezo yo la lección todos los días?",
               "pt": "Eu começo a aula todos os dias?"
             },
@@ -543,7 +543,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Did i begin the lesson yesterday?",
+              "en": "Did I begin the lesson yesterday?",
               "es": "¿Empecé yo la lección ayer?",
               "pt": "Eu comecei a aula ontem?"
             },
@@ -865,7 +865,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Will i begin the lesson tomorrow?",
+              "en": "Will I begin the lesson tomorrow?",
               "es": "¿Empezaré yo la lección mañana?",
               "pt": "Eu começarei a aula amanhã?"
             },
