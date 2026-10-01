@@ -221,7 +221,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Do i find the answer every day?",
+              "en": "Do I find the answer every day?",
               "es": "¿Encuentro yo la respuesta todos los días?",
               "pt": "Eu encontro a resposta todos os dias?"
             },
@@ -543,7 +543,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Did i find the answer yesterday?",
+              "en": "Did I find the answer yesterday?",
               "es": "¿Encontré yo la respuesta ayer?",
               "pt": "Eu encontrei a resposta ontem?"
             },
@@ -865,7 +865,7 @@
           {
             "subject": "first-singular",
             "sentences": {
-              "en": "Will i find the answer tomorrow?",
+              "en": "Will I find the answer tomorrow?",
               "es": "¿Encontraré yo la respuesta mañana?",
               "pt": "Eu encontrarei a resposta amanhã?"
             },
