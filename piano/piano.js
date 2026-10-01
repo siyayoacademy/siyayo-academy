@@ -688,11 +688,195 @@
             ],
             "verbClass": []
         }
+    },
+    {
+        "id": "find",
+        "en": "find",
+        "es": "Encontramos",
+        "pt": "Encontramos",
+        "examples": {
+            "en": "We find the salmon at the fish counter.",
+            "es": "Encontramos el salmón en la sección de pescado.",
+            "pt": "Encontramos o salmão na seção de peixes."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "find",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "finds",
+                "past": "found",
+                "pastParticiple": "found",
+                "gerund": "finding"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        }
+    },
+    {
+        "id": "need",
+        "en": "need",
+        "es": "Necesitamos",
+        "pt": "Precisamos",
+        "examples": {
+            "en": "We need fresh vegetables for dinner.",
+            "es": "Necesitamos verduras frescas para la cena.",
+            "pt": "Precisamos de vegetais frescos para o jantar."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "need",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "needs",
+                "past": "needed",
+                "pastParticiple": "needed",
+                "gerund": "needing"
+            },
+            "verbFunction": [
+                "state"
+            ],
+            "verbClass": []
+        }
+    },
+    {
+        "id": "serve",
+        "en": "serve",
+        "es": "Servimos",
+        "pt": "Servimos",
+        "examples": {
+            "en": "We serve the strawberries fresh.",
+            "es": "Servimos las fresas frescas.",
+            "pt": "Servimos os morangos frescos."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "serve",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "serves",
+                "past": "served",
+                "pastParticiple": "served",
+                "gerund": "serving"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        }
+    },
+    {
+        "id": "arrive",
+        "en": "arrive",
+        "es": "Llegamos",
+        "pt": "Chegamos",
+        "examples": {
+            "en": "We arrive at class in the morning.",
+            "es": "Llegamos a clase por la mañana.",
+            "pt": "Chegamos à aula pela manhã."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "arrive",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "arrives",
+                "past": "arrived",
+                "pastParticiple": "arrived",
+                "gerund": "arriving"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
+        }
+    },
+    {
+        "id": "begin",
+        "en": "begin",
+        "es": "Empezamos",
+        "pt": "Começamos",
+        "examples": {
+            "en": "We begin studying together.",
+            "es": "Empezamos a estudiar juntos.",
+            "pt": "Começamos a estudar juntos."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "begin",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "begins",
+                "past": "began",
+                "pastParticiple": "begun",
+                "gerund": "beginning"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        }
+    },
+    {
+        "id": "understand",
+        "en": "understand",
+        "es": "Entendemos",
+        "pt": "Entendemos",
+        "examples": {
+            "en": "We understand the lesson better together.",
+            "es": "Entendemos mejor la lección juntos.",
+            "pt": "Entendemos melhor a aula juntos."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "understand",
+            "regularity": "irregular",
+            "forms": {
+                "thirdPersonSingular": "understands",
+                "past": "understood",
+                "pastParticiple": "understood",
+                "gerund": "understanding"
+            },
+            "verbFunction": [
+                "state",
+                "action"
+            ],
+            "verbClass": []
+        }
+    },
+    {
+        "id": "share",
+        "en": "share",
+        "es": "Compartimos",
+        "pt": "Compartilhamos",
+        "examples": {
+            "en": "We share a note with the class.",
+            "es": "Compartimos un apunte con la clase.",
+            "pt": "Compartilhamos uma anotação com a turma."
+        },
+        "morphology": {
+            "language": "en",
+            "lemma": "share",
+            "regularity": "regular",
+            "forms": {
+                "thirdPersonSingular": "shares",
+                "past": "shared",
+                "pastParticiple": "shared",
+                "gerund": "sharing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        }
     }
 ]);
   const verbActionGroups = Object.freeze([
     Object.freeze(verbActionItems.slice(0,14)),
-    Object.freeze(verbActionItems.slice(14,21))
+    Object.freeze(verbActionItems.slice(14,28))
   ]);
   let activeVerbGroup = 0;
 
@@ -721,14 +905,14 @@
 
     if (semanticSequence) semanticSequence.dataset.phase = "idle";
     if (semanticPhase) semanticPhase.textContent = "VERBS · ACTIONS · GROUP " + (activeVerbGroup + 1);
-    if (semanticCue) semanticCue.textContent = activeVerbGroup === 0 ? "Verb Actions 1–14" : "Verb Actions 15–21";
+    if (semanticCue) semanticCue.textContent = activeVerbGroup === 0 ? "Verb Actions 1–14" : "Verb Actions 15–28";
     if (semanticAnswer) semanticAnswer.textContent = "Canonical trilingual action corpus • Explore";
 
     window.dispatchEvent(new CustomEvent("siyayo:content-group-changed", {
       detail:{
         collectionId:"verbs",
         groupIndex:activeVerbGroup,
-        range:activeVerbGroup === 0 ? "1-14" : "15-21",
+        range:activeVerbGroup === 0 ? "1-14" : "15-28",
         evaluated:false,
         evidenceProduced:false
       }
@@ -2463,7 +2647,7 @@
       activeCollectionId === "nouns"
         ? "NOUNS · " + nounLayerLabel().toUpperCase()
         : activeCollectionId === "verbs"
-          ? "VERBS · ACTIONS · " + (activeVerbGroup === 0 ? "1–14" : "15–21")
+          ? "VERBS · ACTIONS · " + (activeVerbGroup === 0 ? "1–14" : "15–28")
           : "READY";
     if (semanticCue) semanticCue.textContent =
       activeCollectionId === "nouns"
