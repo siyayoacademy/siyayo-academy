@@ -605,3 +605,52 @@ visual confirmation
 → HOMOLOGATED
 → ES/PT morphology audit
 ```
+
+
+## 21. EN Verb Morphology homologation + 28-item expansion audit
+
+### PIANO-STAGE-VERB-MORPH-EN-02
+
+Status: **HOMOLOGATED**.
+
+User-confirmed:
+
+- functionality correct;
+- Regular / Irregular presentation coherent;
+- Group 1–14 and Group 15–21 functional;
+- exact semantic focus correct;
+- Portrait refinement visually coherent.
+
+Protected result:
+
+```
+EN Verb Morphology
+IMPLEMENTED → TESTED → HOMOLOGATED
+```
+
+### VERB-ACTIONS-28-AUDIT-01
+
+Status: **MAPPED; canonical admission pending**.
+
+A seven-item extension has been grounded from existing SIYAYO Experiences:
+
+```
+22 find
+23 need
+24 serve
+25 arrive
+26 begin
+27 understand
+28 share
+```
+
+Target visual windows:
+
+```
+Group 1 → 1–14
+Group 2 → 15–28
+```
+
+Protection rule:
+
+The seven candidates must be added to canonical verb corpora first. They must not be introduced only inside Piano Stage code, because that would create a parallel unofficial lexicon.
