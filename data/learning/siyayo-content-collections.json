@@ -162,7 +162,7 @@
         "es": "Verbos",
         "pt": "Verbos"
       },
-      "status": "canonical-grouped-explore-prototype",
+      "status": "canonical-28-grouped-explore-morphology-prototype",
       "layers": [
         "meaning-function",
         "tense",
@@ -407,6 +407,83 @@
             "es": "Por favor, cierra la puerta.",
             "pt": "Por favor, feche a porta."
           }
+        },
+        {
+          "id": "find",
+          "en": "find",
+          "es": "Encontramos",
+          "pt": "Encontramos",
+          "examples": {
+            "en": "We find the salmon at the fish counter.",
+            "es": "Encontramos el salmón en la sección de pescado.",
+            "pt": "Encontramos o salmão na seção de peixes."
+          }
+        },
+        {
+          "id": "need",
+          "en": "need",
+          "es": "Necesitamos",
+          "pt": "Precisamos",
+          "examples": {
+            "en": "We need fresh vegetables for dinner.",
+            "es": "Necesitamos verduras frescas para la cena.",
+            "pt": "Precisamos de vegetais frescos para o jantar."
+          }
+        },
+        {
+          "id": "serve",
+          "en": "serve",
+          "es": "Servimos",
+          "pt": "Servimos",
+          "examples": {
+            "en": "We serve the strawberries fresh.",
+            "es": "Servimos las fresas frescas.",
+            "pt": "Servimos os morangos frescos."
+          }
+        },
+        {
+          "id": "arrive",
+          "en": "arrive",
+          "es": "Llegamos",
+          "pt": "Chegamos",
+          "examples": {
+            "en": "We arrive at class in the morning.",
+            "es": "Llegamos a clase por la mañana.",
+            "pt": "Chegamos à aula pela manhã."
+          }
+        },
+        {
+          "id": "begin",
+          "en": "begin",
+          "es": "Empezamos",
+          "pt": "Começamos",
+          "examples": {
+            "en": "We begin studying together.",
+            "es": "Empezamos a estudiar juntos.",
+            "pt": "Começamos a estudar juntos."
+          }
+        },
+        {
+          "id": "understand",
+          "en": "understand",
+          "es": "Entendemos",
+          "pt": "Entendemos",
+          "examples": {
+            "en": "We understand the lesson better together.",
+            "es": "Entendemos mejor la lección juntos.",
+            "pt": "Entendemos melhor a aula juntos."
+          }
+        },
+        {
+          "id": "share",
+          "en": "share",
+          "es": "Compartimos",
+          "pt": "Compartilhamos",
+          "examples": {
+            "en": "We share a note with the class.",
+            "es": "Compartimos un apunte con la clase.",
+            "pt": "Compartilhamos uma anotação com a turma."
+          }
         }
       ],
       "grouping": {
@@ -419,7 +496,7 @@
           },
           {
             "id": "group-2",
-            "range": "15-21"
+            "range": "15-28"
           }
         ]
       }
