@@ -279,7 +279,7 @@
     },
     {
       "id": "verb-actions",
-      "status": "active-grouped-explore-plus-en-morphology-prototype",
+      "status": "21-item-homologated-plus-22-28-candidate-audit",
       "whatIsIt": "Trilingual lexical verbs with example sentences and target words.",
       "source": [
         "verb-examples"
@@ -317,7 +317,7 @@
       ],
       "evidenceRole": "opportunity-only",
       "destinationOrPurpose": "All 21 canonical trilingual Verb Actions are available through two Frondosa groups (1–14, 15–21), preserving exact semantic resonance per item.",
-      "nextRefinement": "Homologate EN-only Regular/Irregular morphology visuals and speech across both groups; keep ES/PT morphology at WAIT."
+      "nextRefinement": "Admit the seven audited candidates canonically before expanding Piano Group 2 to 15–28."
     },
     {
       "id": "verb-systems",
@@ -574,9 +574,11 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "final visual homologation of EN Verb Morphology in Portrait for groups 1–14 and 15–21",
-    "mark PIANO-STAGE-VERB-MORPH-EN-01 HOMOLOGATED after visual confirmation",
-    "audit independent Spanish and Portuguese morphology sources before any cross-language regularity view",
+    "canonically admit audited Verb Actions 22–28: find, need, serve, arrive, begin, understand, share",
+    "validate canonical verb metadata and trilingual examples for all 28",
+    "expand Piano Group 2 from 15–21 to 15–28",
+    "homologate Explore + EN Morphology for the full 28-item corpus",
+    "audit independent Spanish and Portuguese morphology sources",
     "map Verb Function as a separate Stage dimension",
     "map Time/Tense as a separate timeline/orbit dimension",
     "map Sentence Form separately",
@@ -738,7 +740,7 @@
   "verbSystemsDevelopmentMap": {
     "path": "docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md",
     "checkpoint": "PIANO-STAGE-VERB-MAP-01",
-    "status": "en-morphology-functional-tested-portrait-refined-awaiting-final-homologation",
+    "status": "en-morphology-homologated",
     "criticalRule": "Current regularity is English-specific and must not be inferred for Spanish or Portuguese.",
     "next": [
       "homologate grouped Verb Actions Explore",
@@ -787,6 +789,25 @@
         "clearer Morphology activity vertical rhythm",
         "group navigator spacing"
       ]
-    }
+    },
+    "homologatedCheckpoint": "PIANO-STAGE-VERB-MORPH-EN-02"
+  },
+  "verbExpansion28": {
+    "status": "candidate-audit-complete",
+    "path": "docs/SIYAYO-VERB-ACTIONS-22-28-CANDIDATE-AUDIT.md",
+    "targetWindowing": [
+      "1-14",
+      "15-28"
+    ],
+    "candidates": [
+      "find",
+      "need",
+      "serve",
+      "arrive",
+      "begin",
+      "understand",
+      "share"
+    ],
+    "rule": "Candidates must enter canonical verb corpora before Piano admission; do not create a Piano-only shadow corpus."
   }
 }
