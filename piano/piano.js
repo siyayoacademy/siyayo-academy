@@ -714,6 +714,7 @@
     const next = Number(index);
     if (!Number.isInteger(next) || !verbActionGroups[next]) return;
     activeVerbGroup = next;
+    stage.dataset.verbGroup = String(activeVerbGroup + 1);
     clearVerbMorphologyFocus();
     refreshContentGroupControls();
     refreshFrondosaLabels();
@@ -2426,6 +2427,8 @@
     if (!["question-words","nouns","verbs"].includes(nextId)) return;
     activeCollectionId = nextId;
     stage.dataset.collection = activeCollectionId;
+    if (activeCollectionId === "verbs") stage.dataset.verbGroup = String(activeVerbGroup + 1);
+    else delete stage.dataset.verbGroup;
     if (contentCollectionEngine) {
       contentCollectionEngine.activate(nextId, "piano-stage-collection-control");
     }
