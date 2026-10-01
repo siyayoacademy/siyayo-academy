@@ -2711,3 +2711,67 @@ h1 {
     transition:none;
   }
 }
+
+
+/* =========================================================
+   VERB MORPHOLOGY PORTRAIT FINE PASS v0.2
+   Preserve logic; improve canopy balance and control rhythm.
+   ========================================================= */
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .activity-panel {
+  gap:10px 8px;
+  padding-inline:14px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .activity-button[data-activity="morphology"] {
+  flex-basis:auto;
+  margin-inline:28%;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .content-group-panel {
+  margin-top:2px;
+  margin-bottom:8px;
+  gap:8px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+  height:360px;
+}
+
+/* Group 1: 14-item canopy — slightly wider rows for scanability. */
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-1  { left:8%;  top:50%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-2  { left:18%; top:31%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-3  { left:36%; top:40%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-4  { left:40%; top:17%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-5  { left:55%; top:31%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-6  { left:62%; top:17%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-7  { left:74%; top:40%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-8  { left:82%; top:27%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-9  { left:14%; top:64%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-10 { left:32%; top:58%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-11 { left:48%; top:62%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-12 { left:63%; top:58%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-13 { left:78%; top:64%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-14 { left:83%; top:49%; }
+
+/* Group 2: seven-item canopy — use the full tree instead of leaving a top-heavy cluster. */
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-1 { left:12%; top:51%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-2 { left:24%; top:32%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-3 { left:41%; top:43%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-4 { left:47%; top:21%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-5 { left:63%; top:39%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-6 { left:76%; top:29%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-7 { left:80%; top:53%; }
+
+@media (max-width:600px) and (orientation:portrait) {
+  .stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+    height:360px;
+  }
+
+  .stage[data-collection="verbs"][data-activity="morphology"] .content-group-panel {
+    margin-bottom:8px;
+  }
+
+  .stage[data-collection="verbs"][data-activity="morphology"] .activity-button[data-activity="morphology"] {
+    margin-inline:28%;
+  }
+}
