@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "understand",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I understand the lesson every day.",
+              "es": "Yo entiendo la lección todos los días.",
+              "pt": "Eu entendo a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiendo",
+              "pt": "entendo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You understand the lesson every day.",
+              "es": "Tú entiendes la lección todos los días.",
+              "pt": "Você entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiendes",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He understands the lesson every day.",
+              "es": "Él entiende la lección todos los días.",
+              "pt": "Ele entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understands",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She understands the lesson every day.",
+              "es": "Ella entiende la lección todos los días.",
+              "pt": "Ela entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understands",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It understands the lesson every day.",
+              "es": "Ello entiende la lección todos los días.",
+              "pt": "Isso entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understands",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We understand the lesson every day.",
+              "es": "Nosotros entendemos la lección todos los días.",
+              "pt": "Nós entendemos a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendemos",
+              "pt": "entendemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You understand the lesson every day.",
+              "es": "Ustedes entienden la lección todos los días.",
+              "pt": "Vocês entendem a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entienden",
+              "pt": "entendem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They understand the lesson every day.",
+              "es": "Ellos entienden la lección todos los días.",
+              "pt": "Eles entendem a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entienden",
+              "pt": "entendem"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not understand the lesson every day.",
+              "es": "Yo no entiendo la lección todos los días.",
+              "pt": "Eu não entendo a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiendo",
+              "pt": "entendo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not understand the lesson every day.",
+              "es": "Tú no entiendes la lección todos los días.",
+              "pt": "Você não entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiendes",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not understand the lesson every day.",
+              "es": "Él no entiende la lección todos los días.",
+              "pt": "Ele não entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not understand the lesson every day.",
+              "es": "Ella no entiende la lección todos los días.",
+              "pt": "Ela não entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not understand the lesson every day.",
+              "es": "Ello no entiende la lección todos los días.",
+              "pt": "Isso não entende a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not understand the lesson every day.",
+              "es": "Nosotros no entendemos la lección todos los días.",
+              "pt": "Nós não entendemos a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendemos",
+              "pt": "entendemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not understand the lesson every day.",
+              "es": "Ustedes no entienden la lección todos los días.",
+              "pt": "Vocês não entendem a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entienden",
+              "pt": "entendem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not understand the lesson every day.",
+              "es": "Ellos no entienden la lección todos los días.",
+              "pt": "Eles não entendem a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entienden",
+              "pt": "entendem"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do i understand the lesson every day?",
+              "es": "¿Entiendo yo la lección todos los días?",
+              "pt": "Eu entendo a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiendo",
+              "pt": "entendo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you understand the lesson every day?",
+              "es": "¿Entiendes tú la lección todos los días?",
+              "pt": "Você entende a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiendes",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he understand the lesson every day?",
+              "es": "¿Entiende él la lección todos los días?",
+              "pt": "Ele entende a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she understand the lesson every day?",
+              "es": "¿Entiende ella la lección todos los días?",
+              "pt": "Ela entende a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it understand the lesson every day?",
+              "es": "¿Entiende ello la lección todos los días?",
+              "pt": "Isso entende a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entiende",
+              "pt": "entende"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we understand the lesson every day?",
+              "es": "¿Entendemos nosotros la lección todos los días?",
+              "pt": "Nós entendemos a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendemos",
+              "pt": "entendemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you understand the lesson every day?",
+              "es": "¿Entienden ustedes la lección todos los días?",
+              "pt": "Vocês entendem a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entienden",
+              "pt": "entendem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they understand the lesson every day?",
+              "es": "¿Entienden ellos la lección todos los días?",
+              "pt": "Eles entendem a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entienden",
+              "pt": "entendem"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I understood the lesson yesterday.",
+              "es": "Yo entendí la lección ayer.",
+              "pt": "Eu entendi a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendí",
+              "pt": "entendi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You understood the lesson yesterday.",
+              "es": "Tú entendiste la lección ayer.",
+              "pt": "Você entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendiste",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He understood the lesson yesterday.",
+              "es": "Él entendió la lección ayer.",
+              "pt": "Ele entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She understood the lesson yesterday.",
+              "es": "Ella entendió la lección ayer.",
+              "pt": "Ela entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It understood the lesson yesterday.",
+              "es": "Ello entendió la lección ayer.",
+              "pt": "Isso entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We understood the lesson yesterday.",
+              "es": "Nosotros entendimos la lección ayer.",
+              "pt": "Nós entendemos a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendimos",
+              "pt": "entendemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You understood the lesson yesterday.",
+              "es": "Ustedes entendieron la lección ayer.",
+              "pt": "Vocês entenderam a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendieron",
+              "pt": "entenderam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They understood the lesson yesterday.",
+              "es": "Ellos entendieron la lección ayer.",
+              "pt": "Eles entenderam a aula ontem."
+            },
+            "targetWords": {
+              "en": "understood",
+              "es": "entendieron",
+              "pt": "entenderam"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not understand the lesson yesterday.",
+              "es": "Yo no entendí la lección ayer.",
+              "pt": "Eu não entendi a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendí",
+              "pt": "entendi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not understand the lesson yesterday.",
+              "es": "Tú no entendiste la lección ayer.",
+              "pt": "Você não entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendiste",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not understand the lesson yesterday.",
+              "es": "Él no entendió la lección ayer.",
+              "pt": "Ele não entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not understand the lesson yesterday.",
+              "es": "Ella no entendió la lección ayer.",
+              "pt": "Ela não entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not understand the lesson yesterday.",
+              "es": "Ello no entendió la lección ayer.",
+              "pt": "Isso não entendeu a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not understand the lesson yesterday.",
+              "es": "Nosotros no entendimos la lección ayer.",
+              "pt": "Nós não entendemos a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendimos",
+              "pt": "entendemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not understand the lesson yesterday.",
+              "es": "Ustedes no entendieron la lección ayer.",
+              "pt": "Vocês não entenderam a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendieron",
+              "pt": "entenderam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not understand the lesson yesterday.",
+              "es": "Ellos no entendieron la lección ayer.",
+              "pt": "Eles não entenderam a aula ontem."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendieron",
+              "pt": "entenderam"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did i understand the lesson yesterday?",
+              "es": "¿Entendí yo la lección ayer?",
+              "pt": "Eu entendi a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendí",
+              "pt": "entendi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you understand the lesson yesterday?",
+              "es": "¿Entendiste tú la lección ayer?",
+              "pt": "Você entendeu a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendiste",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he understand the lesson yesterday?",
+              "es": "¿Entendió él la lección ayer?",
+              "pt": "Ele entendeu a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she understand the lesson yesterday?",
+              "es": "¿Entendió ella la lección ayer?",
+              "pt": "Ela entendeu a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it understand the lesson yesterday?",
+              "es": "¿Entendió ello la lección ayer?",
+              "pt": "Isso entendeu a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendió",
+              "pt": "entendeu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we understand the lesson yesterday?",
+              "es": "¿Entendimos nosotros la lección ayer?",
+              "pt": "Nós entendemos a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendimos",
+              "pt": "entendemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you understand the lesson yesterday?",
+              "es": "¿Entendieron ustedes la lección ayer?",
+              "pt": "Vocês entenderam a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendieron",
+              "pt": "entenderam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they understand the lesson yesterday?",
+              "es": "¿Entendieron ellos la lección ayer?",
+              "pt": "Eles entenderam a aula ontem?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entendieron",
+              "pt": "entenderam"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will understand the lesson tomorrow.",
+              "es": "Yo entenderé la lección mañana.",
+              "pt": "Eu entenderei a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderé",
+              "pt": "entenderei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will understand the lesson tomorrow.",
+              "es": "Tú entenderás la lección mañana.",
+              "pt": "Você entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderás",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will understand the lesson tomorrow.",
+              "es": "Él entenderá la lección mañana.",
+              "pt": "Ele entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will understand the lesson tomorrow.",
+              "es": "Ella entenderá la lección mañana.",
+              "pt": "Ela entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will understand the lesson tomorrow.",
+              "es": "Ello entenderá la lección mañana.",
+              "pt": "Isso entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will understand the lesson tomorrow.",
+              "es": "Nosotros entenderemos la lección mañana.",
+              "pt": "Nós entenderemos a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderemos",
+              "pt": "entenderemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will understand the lesson tomorrow.",
+              "es": "Ustedes entenderán la lección mañana.",
+              "pt": "Vocês entenderão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderán",
+              "pt": "entenderão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will understand the lesson tomorrow.",
+              "es": "Ellos entenderán la lección mañana.",
+              "pt": "Eles entenderão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderán",
+              "pt": "entenderão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not understand the lesson tomorrow.",
+              "es": "Yo no entenderé la lección mañana.",
+              "pt": "Eu não entenderei a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderé",
+              "pt": "entenderei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not understand the lesson tomorrow.",
+              "es": "Tú no entenderás la lección mañana.",
+              "pt": "Você não entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderás",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not understand the lesson tomorrow.",
+              "es": "Él no entenderá la lección mañana.",
+              "pt": "Ele não entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not understand the lesson tomorrow.",
+              "es": "Ella no entenderá la lección mañana.",
+              "pt": "Ela não entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not understand the lesson tomorrow.",
+              "es": "Ello no entenderá la lección mañana.",
+              "pt": "Isso não entenderá a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not understand the lesson tomorrow.",
+              "es": "Nosotros no entenderemos la lección mañana.",
+              "pt": "Nós não entenderemos a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderemos",
+              "pt": "entenderemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not understand the lesson tomorrow.",
+              "es": "Ustedes no entenderán la lección mañana.",
+              "pt": "Vocês não entenderão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderán",
+              "pt": "entenderão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not understand the lesson tomorrow.",
+              "es": "Ellos no entenderán la lección mañana.",
+              "pt": "Eles não entenderão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderán",
+              "pt": "entenderão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will i understand the lesson tomorrow?",
+              "es": "¿Entenderé yo la lección mañana?",
+              "pt": "Eu entenderei a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderé",
+              "pt": "entenderei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you understand the lesson tomorrow?",
+              "es": "¿Entenderás tú la lección mañana?",
+              "pt": "Você entenderá a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderás",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he understand the lesson tomorrow?",
+              "es": "¿Entenderá él la lección mañana?",
+              "pt": "Ele entenderá a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she understand the lesson tomorrow?",
+              "es": "¿Entenderá ella la lección mañana?",
+              "pt": "Ela entenderá a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it understand the lesson tomorrow?",
+              "es": "¿Entenderá ello la lección mañana?",
+              "pt": "Isso entenderá a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderá",
+              "pt": "entenderá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we understand the lesson tomorrow?",
+              "es": "¿Entenderemos nosotros la lección mañana?",
+              "pt": "Nós entenderemos a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderemos",
+              "pt": "entenderemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you understand the lesson tomorrow?",
+              "es": "¿Entenderán ustedes la lección mañana?",
+              "pt": "Vocês entenderão a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderán",
+              "pt": "entenderão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they understand the lesson tomorrow?",
+              "es": "¿Entenderán ellos la lección mañana?",
+              "pt": "Eles entenderão a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "understand",
+              "es": "entenderán",
+              "pt": "entenderão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
