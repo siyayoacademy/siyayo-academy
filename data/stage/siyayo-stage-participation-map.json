@@ -574,14 +574,13 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate EN-only Verb Morphology in groups 1–14 and 15–21: Regular / Irregular / speech / Portrait",
+    "final visual homologation of EN Verb Morphology in Portrait for groups 1–14 and 15–21",
+    "mark PIANO-STAGE-VERB-MORPH-EN-01 HOMOLOGATED after visual confirmation",
     "audit independent Spanish and Portuguese morphology sources before any cross-language regularity view",
     "map Verb Function as a separate Stage dimension",
     "map Time/Tense as a separate timeline/orbit dimension",
     "map Sentence Form separately",
-    "map Xespirito auxiliary/modal orchestration",
-    "reuse Grouping Contract for Adjectives and alphabet queues",
-    "bind Semantic Cadence only where an Experience explicitly needs it"
+    "map Xespirito auxiliary/modal orchestration"
   ],
   "stageRouting": {
     "version": "1.0",
@@ -739,7 +738,7 @@
   "verbSystemsDevelopmentMap": {
     "path": "docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md",
     "checkpoint": "PIANO-STAGE-VERB-MAP-01",
-    "status": "en-morphology-implemented-awaiting-homologation",
+    "status": "en-morphology-functional-tested-portrait-refined-awaiting-final-homologation",
     "criticalRule": "Current regularity is English-specific and must not be inferred for Spanish or Portuguese.",
     "next": [
       "homologate grouped Verb Actions Explore",
@@ -770,6 +769,23 @@
         "Spanish morphology",
         "Portuguese morphology",
         "Tripiano regularity comparison"
+      ]
+    },
+    "visualPass": {
+      "scope": "Portrait only",
+      "preserved": [
+        "Auto",
+        "Landscape",
+        "exact semantic resonance",
+        "grouping",
+        "speech",
+        "evidence boundary"
+      ],
+      "refinements": [
+        "balanced Group 1 canopy spacing",
+        "expanded Group 2 seven-item canopy distribution",
+        "clearer Morphology activity vertical rhythm",
+        "group navigator spacing"
       ]
     }
   }
