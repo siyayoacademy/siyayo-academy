@@ -1,26 +1,369 @@
 {
   "$schema": "../../schemas/verb-example.schema.json",
   "items": [
-    { "verb": "work", "examples": { "en": "I work every day.", "es": "Yo trabajo todos los días.", "pt": "Eu trabalho todos os dias." }, "targetWords": { "en": "work", "es": "trabajo", "pt": "trabalho" } },
-    { "verb": "study", "examples": { "en": "I study English every day.", "es": "Yo estudio inglés todos los días.", "pt": "Eu estudo inglês todos os dias." }, "targetWords": { "en": "study", "es": "estudio", "pt": "estudo" } },
-    { "verb": "play", "examples": { "en": "The children play in the park.", "es": "Los niños juegan en el parque.", "pt": "As crianças brincam no parque." }, "targetWords": { "en": "play", "es": "juegan", "pt": "brincam" } },
-    { "verb": "walk", "examples": { "en": "We walk to school.", "es": "Caminamos a la escuela.", "pt": "Caminhamos até a escola." }, "targetWords": { "en": "walk", "es": "Caminamos", "pt": "Caminhamos" } },
-    { "verb": "talk", "examples": { "en": "They talk every morning.", "es": "Ellos hablan todas las mañanas.", "pt": "Eles conversam todas as manhãs." }, "targetWords": { "en": "talk", "es": "hablan", "pt": "conversam" } },
-    { "verb": "eat", "examples": { "en": "We eat breakfast together.", "es": "Desayunamos juntos.", "pt": "Tomamos café da manhã juntos." }, "targetWords": { "en": "eat", "es": "Desayunamos", "pt": "Tomamos" } },
-    { "verb": "drink", "examples": { "en": "She drinks water in the morning.", "es": "Ella bebe agua por la mañana.", "pt": "Ela bebe água pela manhã." }, "targetWords": { "en": "drinks", "es": "bebe", "pt": "bebe" } },
-    { "verb": "sleep", "examples": { "en": "The baby sleeps at night.", "es": "El bebé duerme por la noche.", "pt": "O bebê dorme à noite." }, "targetWords": { "en": "sleeps", "es": "duerme", "pt": "dorme" } },
-    { "verb": "wake", "examples": { "en": "I wake up early.", "es": "Me despierto temprano.", "pt": "Eu acordo cedo." }, "targetWords": { "en": "wake", "es": "despierto", "pt": "acordo" } },
-    { "verb": "read", "examples": { "en": "She reads a book every night.", "es": "Ella lee un libro todas las noches.", "pt": "Ela lê um livro todas as noites." }, "targetWords": { "en": "reads", "es": "lee", "pt": "lê" } },
-    { "verb": "write", "examples": { "en": "He writes a message.", "es": "Él escribe un mensaje.", "pt": "Ele escreve uma mensagem." }, "targetWords": { "en": "writes", "es": "escribe", "pt": "escreve" } },
-    { "verb": "listen", "examples": { "en": "We listen to music.", "es": "Escuchamos música.", "pt": "Escutamos música." }, "targetWords": { "en": "listen", "es": "Escuchamos", "pt": "Escutamos" } },
-    { "verb": "speak", "examples": { "en": "They speak three languages.", "es": "Ellos hablan tres idiomas.", "pt": "Eles falam três idiomas." }, "targetWords": { "en": "speak", "es": "hablan", "pt": "falam" } },
-    { "verb": "go", "examples": { "en": "I go to work by bus.", "es": "Voy al trabajo en autobús.", "pt": "Eu vou ao trabalho de ônibus." }, "targetWords": { "en": "go", "es": "Voy", "pt": "vou" } },
-    { "verb": "come", "examples": { "en": "She comes home in the evening.", "es": "Ella viene a casa por la tarde.", "pt": "Ela vem para casa à tarde." }, "targetWords": { "en": "comes", "es": "viene", "pt": "vem" } },
-    { "verb": "run", "examples": { "en": "He runs in the park.", "es": "Él corre en el parque.", "pt": "Ele corre no parque." }, "targetWords": { "en": "runs", "es": "corre", "pt": "corre" } },
-    { "verb": "buy", "examples": { "en": "We buy fresh fruit at the market.", "es": "Compramos fruta fresca en el mercado.", "pt": "Compramos frutas frescas no mercado." }, "targetWords": { "en": "buy", "es": "Compramos", "pt": "Compramos" } },
-    { "verb": "choose", "examples": { "en": "We choose the fresh cheese.", "es": "Elegimos el queso fresco.", "pt": "Escolhemos o queijo fresco." }, "targetWords": { "en": "choose", "es": "Elegimos", "pt": "Escolhemos" } },
-    { "verb": "cook", "examples": { "en": "I cook dinner at home.", "es": "Cocino la cena en casa.", "pt": "Eu preparo o jantar em casa." }, "targetWords": { "en": "cook", "es": "Cocino", "pt": "preparo" } },
-    { "verb": "open", "examples": { "en": "Please open the window.", "es": "Por favor, abre la ventana.", "pt": "Por favor, abra a janela." }, "targetWords": { "en": "open", "es": "abre", "pt": "abra" } },
-    { "verb": "close", "examples": { "en": "Please close the door.", "es": "Por favor, cierra la puerta.", "pt": "Por favor, feche a porta." }, "targetWords": { "en": "close", "es": "cierra", "pt": "feche" } }
+    {
+      "verb": "work",
+      "examples": {
+        "en": "I work every day.",
+        "es": "Yo trabajo todos los días.",
+        "pt": "Eu trabalho todos os dias."
+      },
+      "targetWords": {
+        "en": "work",
+        "es": "trabajo",
+        "pt": "trabalho"
+      }
+    },
+    {
+      "verb": "study",
+      "examples": {
+        "en": "I study English every day.",
+        "es": "Yo estudio inglés todos los días.",
+        "pt": "Eu estudo inglês todos os dias."
+      },
+      "targetWords": {
+        "en": "study",
+        "es": "estudio",
+        "pt": "estudo"
+      }
+    },
+    {
+      "verb": "play",
+      "examples": {
+        "en": "The children play in the park.",
+        "es": "Los niños juegan en el parque.",
+        "pt": "As crianças brincam no parque."
+      },
+      "targetWords": {
+        "en": "play",
+        "es": "juegan",
+        "pt": "brincam"
+      }
+    },
+    {
+      "verb": "walk",
+      "examples": {
+        "en": "We walk to school.",
+        "es": "Caminamos a la escuela.",
+        "pt": "Caminhamos até a escola."
+      },
+      "targetWords": {
+        "en": "walk",
+        "es": "Caminamos",
+        "pt": "Caminhamos"
+      }
+    },
+    {
+      "verb": "talk",
+      "examples": {
+        "en": "They talk every morning.",
+        "es": "Ellos hablan todas las mañanas.",
+        "pt": "Eles conversam todas as manhãs."
+      },
+      "targetWords": {
+        "en": "talk",
+        "es": "hablan",
+        "pt": "conversam"
+      }
+    },
+    {
+      "verb": "eat",
+      "examples": {
+        "en": "We eat breakfast together.",
+        "es": "Desayunamos juntos.",
+        "pt": "Tomamos café da manhã juntos."
+      },
+      "targetWords": {
+        "en": "eat",
+        "es": "Desayunamos",
+        "pt": "Tomamos"
+      }
+    },
+    {
+      "verb": "drink",
+      "examples": {
+        "en": "She drinks water in the morning.",
+        "es": "Ella bebe agua por la mañana.",
+        "pt": "Ela bebe água pela manhã."
+      },
+      "targetWords": {
+        "en": "drinks",
+        "es": "bebe",
+        "pt": "bebe"
+      }
+    },
+    {
+      "verb": "sleep",
+      "examples": {
+        "en": "The baby sleeps at night.",
+        "es": "El bebé duerme por la noche.",
+        "pt": "O bebê dorme à noite."
+      },
+      "targetWords": {
+        "en": "sleeps",
+        "es": "duerme",
+        "pt": "dorme"
+      }
+    },
+    {
+      "verb": "wake",
+      "examples": {
+        "en": "I wake up early.",
+        "es": "Me despierto temprano.",
+        "pt": "Eu acordo cedo."
+      },
+      "targetWords": {
+        "en": "wake",
+        "es": "despierto",
+        "pt": "acordo"
+      }
+    },
+    {
+      "verb": "read",
+      "examples": {
+        "en": "She reads a book every night.",
+        "es": "Ella lee un libro todas las noches.",
+        "pt": "Ela lê um livro todas as noites."
+      },
+      "targetWords": {
+        "en": "reads",
+        "es": "lee",
+        "pt": "lê"
+      }
+    },
+    {
+      "verb": "write",
+      "examples": {
+        "en": "He writes a message.",
+        "es": "Él escribe un mensaje.",
+        "pt": "Ele escreve uma mensagem."
+      },
+      "targetWords": {
+        "en": "writes",
+        "es": "escribe",
+        "pt": "escreve"
+      }
+    },
+    {
+      "verb": "listen",
+      "examples": {
+        "en": "We listen to music.",
+        "es": "Escuchamos música.",
+        "pt": "Escutamos música."
+      },
+      "targetWords": {
+        "en": "listen",
+        "es": "Escuchamos",
+        "pt": "Escutamos"
+      }
+    },
+    {
+      "verb": "speak",
+      "examples": {
+        "en": "They speak three languages.",
+        "es": "Ellos hablan tres idiomas.",
+        "pt": "Eles falam três idiomas."
+      },
+      "targetWords": {
+        "en": "speak",
+        "es": "hablan",
+        "pt": "falam"
+      }
+    },
+    {
+      "verb": "go",
+      "examples": {
+        "en": "I go to work by bus.",
+        "es": "Voy al trabajo en autobús.",
+        "pt": "Eu vou ao trabalho de ônibus."
+      },
+      "targetWords": {
+        "en": "go",
+        "es": "Voy",
+        "pt": "vou"
+      }
+    },
+    {
+      "verb": "come",
+      "examples": {
+        "en": "She comes home in the evening.",
+        "es": "Ella viene a casa por la tarde.",
+        "pt": "Ela vem para casa à tarde."
+      },
+      "targetWords": {
+        "en": "comes",
+        "es": "viene",
+        "pt": "vem"
+      }
+    },
+    {
+      "verb": "run",
+      "examples": {
+        "en": "He runs in the park.",
+        "es": "Él corre en el parque.",
+        "pt": "Ele corre no parque."
+      },
+      "targetWords": {
+        "en": "runs",
+        "es": "corre",
+        "pt": "corre"
+      }
+    },
+    {
+      "verb": "buy",
+      "examples": {
+        "en": "We buy fresh fruit at the market.",
+        "es": "Compramos fruta fresca en el mercado.",
+        "pt": "Compramos frutas frescas no mercado."
+      },
+      "targetWords": {
+        "en": "buy",
+        "es": "Compramos",
+        "pt": "Compramos"
+      }
+    },
+    {
+      "verb": "choose",
+      "examples": {
+        "en": "We choose the fresh cheese.",
+        "es": "Elegimos el queso fresco.",
+        "pt": "Escolhemos o queijo fresco."
+      },
+      "targetWords": {
+        "en": "choose",
+        "es": "Elegimos",
+        "pt": "Escolhemos"
+      }
+    },
+    {
+      "verb": "cook",
+      "examples": {
+        "en": "I cook dinner at home.",
+        "es": "Cocino la cena en casa.",
+        "pt": "Eu preparo o jantar em casa."
+      },
+      "targetWords": {
+        "en": "cook",
+        "es": "Cocino",
+        "pt": "preparo"
+      }
+    },
+    {
+      "verb": "open",
+      "examples": {
+        "en": "Please open the window.",
+        "es": "Por favor, abre la ventana.",
+        "pt": "Por favor, abra a janela."
+      },
+      "targetWords": {
+        "en": "open",
+        "es": "abre",
+        "pt": "abra"
+      }
+    },
+    {
+      "verb": "close",
+      "examples": {
+        "en": "Please close the door.",
+        "es": "Por favor, cierra la puerta.",
+        "pt": "Por favor, feche a porta."
+      },
+      "targetWords": {
+        "en": "close",
+        "es": "cierra",
+        "pt": "feche"
+      }
+    },
+    {
+      "verb": "find",
+      "examples": {
+        "en": "We find the salmon at the fish counter.",
+        "es": "Encontramos el salmón en la sección de pescado.",
+        "pt": "Encontramos o salmão na seção de peixes."
+      },
+      "targetWords": {
+        "en": "find",
+        "es": "Encontramos",
+        "pt": "Encontramos"
+      }
+    },
+    {
+      "verb": "need",
+      "examples": {
+        "en": "We need fresh vegetables for dinner.",
+        "es": "Necesitamos verduras frescas para la cena.",
+        "pt": "Precisamos de vegetais frescos para o jantar."
+      },
+      "targetWords": {
+        "en": "need",
+        "es": "Necesitamos",
+        "pt": "Precisamos"
+      }
+    },
+    {
+      "verb": "serve",
+      "examples": {
+        "en": "We serve the strawberries fresh.",
+        "es": "Servimos las fresas frescas.",
+        "pt": "Servimos os morangos frescos."
+      },
+      "targetWords": {
+        "en": "serve",
+        "es": "Servimos",
+        "pt": "Servimos"
+      }
+    },
+    {
+      "verb": "arrive",
+      "examples": {
+        "en": "We arrive at class in the morning.",
+        "es": "Llegamos a clase por la mañana.",
+        "pt": "Chegamos à aula pela manhã."
+      },
+      "targetWords": {
+        "en": "arrive",
+        "es": "Llegamos",
+        "pt": "Chegamos"
+      }
+    },
+    {
+      "verb": "begin",
+      "examples": {
+        "en": "We begin studying together.",
+        "es": "Empezamos a estudiar juntos.",
+        "pt": "Começamos a estudar juntos."
+      },
+      "targetWords": {
+        "en": "begin",
+        "es": "Empezamos",
+        "pt": "Começamos"
+      }
+    },
+    {
+      "verb": "understand",
+      "examples": {
+        "en": "We understand the lesson better together.",
+        "es": "Entendemos mejor la lección juntos.",
+        "pt": "Entendemos melhor a aula juntos."
+      },
+      "targetWords": {
+        "en": "understand",
+        "es": "Entendemos",
+        "pt": "Entendemos"
+      }
+    },
+    {
+      "verb": "share",
+      "examples": {
+        "en": "We share a note with the class.",
+        "es": "Compartimos un apunte con la clase.",
+        "pt": "Compartilhamos uma anotação com a turma."
+      },
+      "targetWords": {
+        "en": "share",
+        "es": "Compartimos",
+        "pt": "Compartilhamos"
+      }
+    }
   ]
 }
