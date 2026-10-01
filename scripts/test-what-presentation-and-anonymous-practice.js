@@ -34,7 +34,7 @@ for(const language of ['en','es','pt']){
   assert.equal(lines[0].text,turn.question[language]);assert.equal(lines[1].text,turn.response[language]);assert.equal(lines[2].action,'what-practice');
  }
  const s2=ctx.experienceLines(seeds[1]);assert.equal(s2[1].text,seeds[1].thinkingMind.find(q=>q.questionWord==='what').answerGrounding.context[language]);assert.equal(s2[2].action,'what-practice');
- assert.equal(ctx.openWhatCanonicalPractice(),true);assert.equal(scrolls,1);assert.equal(focuses,1);
+ assert.equal(ctx.openWhatCanonicalPractice(),true);assert.equal(scrolls,0);assert.equal(focuses,1);
  panel.hidden=true;assert.equal(ctx.openWhatCanonicalPractice(),false);assert.equal(ctx.experienceLines(seeds[1]).length,2);
  assert.equal(ctx.whatCanonicalPracticeLine({questionWord:'which'}).length,0);
 }
@@ -63,3 +63,4 @@ for(const language of ['en','es','pt'])for(const word of ['what','which']){
  const old=container.__siyayoDependencyHeadProbeBinding;live.hide(document);assert.equal(container.__siyayoDependencyHeadProbeBinding,undefined);old.onEvent(trace[0]);assert.equal(live.getPracticeTrace().length,3);
 }
 console.log('PASS: WHAT LINES + Preparing canonical responses EN/ES/PT; anonymous Shopping WHAT/WHICH observations isolated from Evidence/Green and stale identity/context.');
+

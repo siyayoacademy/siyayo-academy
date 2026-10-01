@@ -129,7 +129,7 @@ function whatCanonicalPracticeLine(question){
 function openWhatCanonicalPractice(){
  const panel=document.getElementById("whatAssessmentPanel");
  if(!panel||panel.hidden)return false;
- panel.scrollIntoView?.({behavior:"smooth",block:"center"});
+ // Responses stay beside the dialogue; focusing must not move the page.
  panel.querySelector('.what-object-question-probe[data-dimension="object-answer"] .what-probe-option')?.focus({preventScroll:true});return true;
 }
 function experienceLines(x){if(experienceWordType==="noun")return nounLines(x);if(experienceWordType==="adjective")return adjectiveLines(x);if(experienceWordType==="composition")return compositionLines(x);if(experienceWordType==="sentence")return sentenceLines(x);if(experiencePerspective){const examples=x.perspectives?.[experiencePerspective]?.examples?.[experienceLanguage]||[];if(examples.length)return examples.map((text,i)=>({role:`${experiencePerspective.toUpperCase()} ${i+1}`,text}))}const question=activeThinkingQuestion(x);if(question?.choiceContext)return contextualChoiceLines(question,experienceLanguage);if(question?.dialogueForms){const turn=question.dialogueForms?.[experienceTense]?.[experienceForm];if(!turn)return[];const roles={en:["QUESTION","CONTEXTUAL CORPUS FORM"],es:["PREGUNTA","FORMA CONTEXTUAL DEL CORPUS"],pt:["PERGUNTA","FORMA CONTEXTUAL DO CORPUS"]}[experienceLanguage]||["QUESTION","CONTEXTUAL CORPUS FORM"];return[{role:roles[0],text:turn.question?.[experienceLanguage]||""},{role:roles[1],text:turn.response?.[experienceLanguage]||""},...(question?.questionWord==="what"?whatCanonicalPracticeLine(question):[])]}const q=question?.question?.[experienceLanguage]||"";if(question?.questionWord==="what"&&question?.answerGrounding?.context?.[experienceLanguage]){const roles={en:["QUESTION","CONTEXTUAL REFERENCE"],es:["PREGUNTA","REFERENCIA CONTEXTUAL"],pt:["PERGUNTA","REFERÊNCIA CONTEXTUAL"]}[experienceLanguage];return[{role:roles[0],text:q},{role:roles[1],text:question.answerGrounding.context[experienceLanguage]},...whatCanonicalPracticeLine(question)]}const canonical=canonicalExperienceLine();const follow={en:"Which detail would you like to explore next?",es:"¿Qué detalle te gustaría explorar ahora?",pt:"Qual detalhe você gostaria de explorar agora?"}[experienceLanguage];return[{role:"QUESTION",text:q},{role:"CORPUS RESPONSE",text:canonical},{role:"FOLLOW-UP",text:follow}]}
@@ -169,3 +169,4 @@ window.SIYAYOVerbExplorerExperienceRuntime=Object.freeze({
 });
 window.addEventListener("popstate",applyInitialRoute);
 loadVerbExplorer();
+

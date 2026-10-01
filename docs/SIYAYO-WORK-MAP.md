@@ -18,7 +18,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-14
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-15
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -886,7 +886,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-14`.  
+**Checkpoint:** `JAGUAR-LIVE-15`.  
 **Current work:** WHAT LINES/Preparing responses and anonymous Shopping Head practice connected; visual homologation pending; broader anonymous answer practice remains OPEN.
 
 ## B. SIYAYO presentation / audiences / profiles
@@ -977,3 +977,17 @@ Iaia, resgate JAGUAR-LIVE-00 pelo SIYAYO-WORK-MAP e confirme HEAD/CI antes do pr
 ```
 
 This procedure intentionally makes the repository, rather than a single chat session, the durable continuity anchor.
+
+
+
+## JAGUAR-LIVE-15 — WHAT visual alignment with WHICH
+
+EXTENSION of presentation only, based on cbca74b68dffa76dfd0ae9cbcff8ec01aaf68ec9. User homologated anonymous WHAT and nick entry in screenshots 20261001-004934 through 005648, and requested WHICH as the visual reference.
+
+WHAT practice now sits inside LINES / POSSIBLE RESPONSES, in the same dialogue area as WHICH canonical choices. Full responses use centered rectangular cards, two columns on landscape and one on narrow portrait. At most two object-answer candidates are visible per presentation page; all corpus candidates remain available through explicitly labelled previous/next response controls. The count describes visible candidates, not Evidence or mastery. Pagination never submits an Attempt. Selecting a response preserves canonical IDs, language, provenance and the existing Result → Evidence → Attempt → Cycle chain. Selection highlight is gold and does not claim Green Pass. The canonical invitation focuses the answers without scrolling away from the dialogue.
+
+WAIT: do not shorten or remove canonical alternatives, duplicate assessment authorities, interpret a page change as Evidence, or replace WHICH contextual 4/4 with WHAT's contract count. Xespirito, Session adoption, anonymous observation and navigation remain independent.
+
+Validation: existing WHAT EN/ES/PT cycles and presentation tests; DOM pagination test confirms two visible candidates, previous/next traversal and zero Attempts from presentation paging. Automated raster layout inspection could not run because the local Chromium executable is unavailable and its download failed; laptop/smartphone visual homologation remains OPEN for the live preview.
+
+NEXT GO: verify WHAT full responses beside LINES in EN/ES/PT, two candidates per page without a scroll jump; select responses through the unchanged S1→S2 and S2→S3 contracts. Then proceed with the next mapped QWord gap.

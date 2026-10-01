@@ -268,3 +268,21 @@ body { margin:0; min-height:100vh; font-family:Arial,Helvetica,sans-serif; color
 #questionGear .question-word-confirmed .session-target-label{
   color:#f6d77f;font-size:.9rem;line-height:1;text-shadow:0 0 8px rgba(246,215,127,.35)
 }
+
+
+/* WHAT extends the WHICH canonical card presentation; no pedagogical authority here. */
+.what-canonical-panel{min-width:0;margin:14px 0;padding:14px;border:1px solid rgba(242,216,138,.28);border-radius:14px;background:rgba(0,0,0,.18);text-align:center}
+.what-canonical-panel h3{margin:0 0 12px;color:var(--siyayo-gold-primary);font-size:.82rem;line-height:1.4}
+.what-canonical-panel .what-probe-step,.what-canonical-panel .what-probe-question{max-width:100%;text-align:center;overflow-wrap:anywhere}
+.what-canonical-panel .what-canonical-options{display:grid;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.what-canonical-options .what-probe-option{min-width:0;min-height:66px;padding:12px;border-radius:11px;border-color:rgba(242,216,138,.34);font-weight:600;line-height:1.45;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.what-canonical-options .what-probe-option[hidden]{display:none}
+.what-canonical-panel .what-probe-option[aria-pressed="true"]{border-color:var(--siyayo-gold-primary);box-shadow:0 0 18px rgba(242,216,138,.2)}
+.what-answer-pages{display:flex;justify-content:center;align-items:center;gap:16px;width:100%;margin-top:2px}
+.what-answer-pages span{color:#b9c6d8;font-size:.78rem}
+.what-answer-pages button{width:44px;min-height:44px;border:1px solid rgba(242,216,138,.4);border-radius:9px;background:#07162a;color:var(--siyayo-gold-primary);font:inherit;font-size:1.2rem;cursor:pointer}
+.what-answer-pages button:disabled{opacity:.3;cursor:default}
+.what-answer-pages button:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
+@media(max-width:520px){.what-canonical-panel{padding:10px}.what-canonical-panel .what-canonical-options{grid-template-columns:minmax(0,1fr)}.what-canonical-options .what-probe-option{font-size:.9rem}}
+
+.living-window:has(.what-canonical-panel:not([hidden])) .living-line{text-align:center;padding-inline:38px}

@@ -53,6 +53,15 @@ assert.equal(panel.children.filter(el=>el.className==='what-object-question-prob
 let groups=panel.children.filter(el=>el.className==='what-object-question-probe');
 assert.match(groups[0].children[0].textContent,/palavra interrogativa/);
 assert.match(groups[1].children[0].textContent,/preparando/);
+const responseButtons=groups[1].children[2].children;
+const pages=groups[1].children[3];
+assert.equal(responseButtons.filter(button=>!button.hidden).length,2);
+pages.children[2].click();
+assert.equal(attempts.length,0,'presentation paging must not submit an Attempt');
+assert.equal(responseButtons.filter(button=>!button.hidden).length,2);
+assert.equal(responseButtons[0].hidden,true);
+pages.children[0].click();
+assert.equal(responseButtons[0].hidden,false);
 groups[0].children[2].children[0].click();
 assert.equal(attempts.length,1);
 assert.equal(attempts[0].dimension,'question-function');
@@ -77,4 +86,5 @@ active.session={decision:{skill:'which.use.determiner',experienceId:'preparing-d
 assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),false);
 assert.equal(attempts.length,3);
 console.log('PASS — WHAT panel submits distinct S2 and S3 Attempts only for the active WHAT Session.');
+
 

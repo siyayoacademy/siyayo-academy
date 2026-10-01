@@ -10,9 +10,11 @@ function panel(doc){
   var el=doc.getElementById('whatAssessmentPanel');
   if(!el){
     el=doc.createElement('section');el.id='whatAssessmentPanel';
-    el.className='dependency-head-probe-panel';el.hidden=true;
+    el.className='what-canonical-panel';el.hidden=true;
     el.setAttribute('aria-label','WHAT contextual practice');
-    var grid=view.querySelector('.experience-grid');view.insertBefore(el,grid||null);
+    var window=view.querySelector('.living-window');
+    if(window)window.insertBefore(el,doc.getElementById('choiceResolverPanel'));
+    else {var grid=view.querySelector('.experience-grid');view.insertBefore(el,grid||null);}
   }
   return el;
 }
@@ -72,9 +74,12 @@ function mount(input){
     section.appendChild(label);
     var question=doc.createElement('p');question.className='what-probe-question';question.textContent=spec.question;section.appendChild(question);
     var options=doc.createElement('div');options.className='what-probe-options';
+    if(spec.dimension==='object-answer')options.className+=' what-canonical-options';
+    var buttons=[];
     spec.alternatives.forEach(function(alternative){
       var button=doc.createElement('button');button.type='button';button.className='what-probe-option';button.textContent=alternative.response||alternative.label;
       if(alternative.response)button.setAttribute('aria-label',alternative.response);
+      buttons.push(button);
       button.addEventListener('click',function(){
         var current=coordinator.snapshot();
         if(!current||current.session!==active.session)return;
@@ -92,6 +97,7 @@ function mount(input){
         if(!attempt)return;
         var submitted=coordinator.submitObservedAttempt(attempt,event,button);
         if(!submitted)return;
+        buttons.forEach(function(option){option.setAttribute('aria-pressed',String(option===button));});
         var closure=submitted.cycleResult&&submitted.cycleResult.contractEvaluation;
         feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
           ?copy.green:evaluated.result==='pass'?copy.registered:copy.retry;
@@ -106,6 +112,25 @@ function mount(input){
       options.appendChild(button);
     });
     section.appendChild(options);
+    // Presentation pages keep every canonical candidate available; turning a page is not an Attempt.
+    if(spec.dimension==='object-answer'&&buttons.length>2){
+      var page=0,size=2,total=Math.ceil(buttons.length/size);
+      var controls=doc.createElement('div');controls.className='what-answer-pages';
+      var previous=doc.createElement('button'),nextPage=doc.createElement('button'),count=doc.createElement('span');
+      previous.type=nextPage.type='button';previous.textContent='‹';nextPage.textContent='›';
+      var labels={en:['Previous responses','Next responses'],es:['Respuestas anteriores','Siguientes respuestas'],pt:['Respostas anteriores','Próximas respostas']}[language];
+      previous.setAttribute('aria-label',labels[0]);nextPage.setAttribute('aria-label',labels[1]);
+      count.setAttribute('aria-live','polite');
+      function showPage(){
+        buttons.forEach(function(button,index){button.hidden=Math.floor(index/size)!==page;});
+        count.textContent=(page*size+1)+'–'+Math.min((page+1)*size,buttons.length)+' / '+buttons.length;
+        previous.disabled=page===0;nextPage.disabled=page===total-1;
+      }
+      previous.addEventListener('click',function(){if(page>0){page--;showPage();}});
+      nextPage.addEventListener('click',function(){if(page<total-1){page++;showPage();}});
+      controls.appendChild(previous);controls.appendChild(count);controls.appendChild(nextPage);
+      section.appendChild(controls);showPage();
+    }
     el.appendChild(section);
   });
   el.dataset.canonicalQuestion=(available.find(function(spec){return spec.dimension==='object-answer';})||{}).question||'';
@@ -114,3 +139,4 @@ function mount(input){
 }
 root.SIYAYOVerbExplorerWhatAssessmentLive=Object.freeze({mount:mount,hide:hide});
 })(typeof globalThis!=='undefined'?globalThis:this);
+
