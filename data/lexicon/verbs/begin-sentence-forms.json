@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "begin",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I begin the lesson every day.",
+            "es": "Yo empiezo la lección todos los días.",
+            "pt": "Eu começo a aula todos os dias."
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empiezo",
+            "pt": "começo"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not begin the lesson every day.",
+            "es": "Yo no empiezo la lección todos los días.",
+            "pt": "Eu não começo a aula todos os dias."
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empiezo",
+            "pt": "começo"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do i begin the lesson every day?",
+            "es": "¿Empiezo yo la lección todos los días?",
+            "pt": "Eu começo a aula todos os dias?"
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empiezo",
+            "pt": "começo"
+          }
+        }
+      }
+    },
+    {
+      "verb": "begin",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I began the lesson yesterday.",
+            "es": "Yo empecé la lección ayer.",
+            "pt": "Eu comecei a aula ontem."
+          },
+          "targetWords": {
+            "en": "began",
+            "es": "empecé",
+            "pt": "comecei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not begin the lesson yesterday.",
+            "es": "Yo no empecé la lección ayer.",
+            "pt": "Eu não comecei a aula ontem."
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empecé",
+            "pt": "comecei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did i begin the lesson yesterday?",
+            "es": "¿Empecé yo la lección ayer?",
+            "pt": "Eu comecei a aula ontem?"
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empecé",
+            "pt": "comecei"
+          }
+        }
+      }
+    },
+    {
+      "verb": "begin",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will begin the lesson tomorrow.",
+            "es": "Yo empezaré la lección mañana.",
+            "pt": "Eu começarei a aula amanhã."
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empezaré",
+            "pt": "começarei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not begin the lesson tomorrow.",
+            "es": "Yo no empezaré la lección mañana.",
+            "pt": "Eu não começarei a aula amanhã."
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empezaré",
+            "pt": "começarei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will i begin the lesson tomorrow?",
+            "es": "¿Empezaré yo la lección mañana?",
+            "pt": "Eu começarei a aula amanhã?"
+          },
+          "targetWords": {
+            "en": "begin",
+            "es": "empezaré",
+            "pt": "começarei"
+          }
+        }
+      }
+    }
+  ]
+}
