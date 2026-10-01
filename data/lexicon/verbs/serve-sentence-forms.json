@@ -31,7 +31,7 @@
         },
         "interrogative": {
           "sentences": {
-            "en": "Do i serve dinner every day?",
+            "en": "Do I serve dinner every day?",
             "es": "¿Sirvo yo la cena todos los días?",
             "pt": "Eu sirvo o jantar todos os dias?"
           },
@@ -73,7 +73,7 @@
         },
         "interrogative": {
           "sentences": {
-            "en": "Did i serve dinner yesterday?",
+            "en": "Did I serve dinner yesterday?",
             "es": "¿Serví yo la cena ayer?",
             "pt": "Eu servi o jantar ontem?"
           },
@@ -115,7 +115,7 @@
         },
         "interrogative": {
           "sentences": {
-            "en": "Will i serve dinner tomorrow?",
+            "en": "Will I serve dinner tomorrow?",
             "es": "¿Serviré yo la cena mañana?",
             "pt": "Eu servirei o jantar amanhã?"
           },
