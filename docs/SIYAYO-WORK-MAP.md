@@ -18,7 +18,85 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-13
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-14
+
+**Recorded:** 2026-09-30 (America/Sao_Paulo)
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Base HEAD:** `e560f1064181f50a6e151790d400eb2ba7a2bb4b`
+**Change kind:** EXTENSION — replay of explicitly selected QWord at identity confirmation. No replacement of evaluator, Pass Contract or anonymous trace.
+**Status:** entry and existing canonical cycles tested locally; CI/deployment and visual homologation pending.
+
+## USER FINDING / IMPLEMENTATION
+
+User reproduced Shopping WHAT selected -> nick accepted -> no panels, while WHICH -> WHAT revealed the correct WHAT panels.
+The prior identity surface only signaled readiness; it did not replay explicit Thinking Mind selection. The exact internal state in the user's browser was not captured.
+Selection now retains the explicitly declared question and its origin Experience before nick. Identity confirmation calls `resumeForIdentity` through the existing target provider -> readiness -> skill loader -> LiveStart -> Composer -> canonical SessionSource chain.
+Replay checks identity, absence of active Session, current QWord and current Experience. It never infers Skill from the highlighted button or creates a Session directly.
+Navigation, undeclared anonymous selection and identity reset invalidate pending selection. Default WHAT highlighting alone is not an explicit selection.
+The surface renders again after asynchronous startup; LEARNER READY still means identity accepted, not Green or proof of Session creation.
+Existing identified QWord selection retention and free navigation are preserved.
+
+## REUSABLE QWORD IMPLEMENTATION / HOMOLOGATION PROCEDURE
+
+1. Declare EXTENSION / MIGRATION / REPLACEMENT and exact Experience origins.
+2. Read corpus, capability map, skill definition and per-language proofs before changes.
+3. Audit explicit selection -> pending target -> identity -> skill -> Session -> visible panels.
+4. Keep exploratory graph/diagnostic observations separate from assessed Evidence and anonymous trace.
+5. Use declared question/candidates/semantic IDs per language; no inferred correctness or copied WHICH score.
+6. Test each own requirement, incorrect/repeated/supported responses and provenance, then canonical closure and learner-specific history.
+7. Preserve free visits and explicit adoption; Green never executes NEXT.
+8. Test stale target, missing Skill/identity/corpus, identity replacement and late response. Missing authority is WAIT.
+9. Verify CI and exact deployment; then record separate user visual homologation.
+10. Update this coverage map before the next QWord. WHICH is the reference workflow, not a universal three-proof rubric.
+
+## WHAT — STAGE BY STAGE
+
+| Origin / stage | Implemented contract / presentation | Verification |
+|---|---|---|
+| Shopping anonymous WHAT | graph + cook diagnostic + independent observation trace | user screenshots homologated English; EN/ES/PT contract tests |
+| Shopping WHAT explicit -> nick | retained declared target replay; canonical Session with empty Evidence | new EN/ES/PT entry regression; user visual pending |
+| Shopping WHAT function | WHAT vs WHERE -> question-function Evidence | existing canonical cycle |
+| Shopping WHAT local | complete salmon/brown-rice/parsley responses -> object-answer Evidence | EN/ES/PT candidate and canonical cycle tests |
+| Preparing transfer for Shopping WHAT | vegetables close origin WHAT contract; full responses | existing S1 canonical cycle, same IDs/provenance |
+| Preparing own WHAT | explicit entry/adoption, function + local vegetables | existing S2 canonical cycle and live panel test |
+| Having transfer for Preparing WHAT | salmon closes S2 WHAT contract | existing S2 cycle; short-label presentation remains OPEN |
+| LINES | canonical response action only when grounded WHAT practice panel visible | tested action and preserved exploratory turns |
+| History / navigation | separate learner/QWord Session retention; visit does not adopt | existing isolation/adoption/transfer checks |
+
+WHAT structural Head success is not a fourth Green requirement. WHICH contextual 4/4 is not WHAT's rubric.
+
+## FOURTEEN QWORDS — ACTUAL DINNER CORPUS COVERAGE
+
+| QWord | Declared assessment entry | Next gap |
+|---|---|---|
+| WHICH | Shopping; Preparing is transfer, not independent entry | preserve homologated circuit; broader anonymous practice OPEN |
+| WHAT | Shopping and Preparing; forward transfers Preparing and Having | visually homologate direct nick entry; Having full responses OPEN |
+| WHY | Having; existing reason/transfer flow | audit current own entry/presentation before extending origins |
+| WHERE | none in dinner seeds; Shopping exploratory dialogue | define corpus-grounded Skill/proofs before evaluator wiring |
+| WHEN | none; Preparing exploration | independent graph/dialogue/Skill/proofs |
+| WHO | none; exploratory entries | independent graph/dialogue/Skill/proofs |
+| HOW | none; exploratory entries | independent graph/dialogue/Skill/proofs |
+| HOW MUCH | none; Shopping exploration | independent graph/dialogue/Skill/proofs |
+| HOW MANY | no dinner entry in inspected seeds | corpus/capability mapping first |
+| WHOSE | no dinner entry in inspected seeds | corpus/capability mapping first |
+| WHOM | no dinner entry in inspected seeds | corpus/capability mapping first |
+| HOW LONG | no dinner entry in inspected seeds | corpus/capability mapping first |
+| HOW FAR | no dinner entry in inspected seeds | corpus/capability mapping first |
+| HOW OFTEN | no dinner entry in inspected seeds | corpus/capability mapping first |
+
+Absence here describes the four inspected dinner seeds, not the whole repository or future Experiences.
+Xespirito / Verb DNA and Piano authorities remain unchanged; no duplicate router/evaluator.
+
+## TEST ANCHORS / NEXT GO
+
+`scripts/test-qword-nick-entry-replay.js` uses real target/readiness/loader bridge/LiveStart/Composer/SessionSource/AttemptLoop authorities, with controlled configuration and document endpoints. It proves direct WHAT and WHICH startup in EN/ES/PT without browser detours, empty Evidence, active-Session preservation and stale-origin WAIT.
+Existing S1/S2 WHAT canonical Green cycle tests and anonymous/presentation/isolation tests remain required.
+After CI/deploy: fresh Shopping -> explicitly click WHAT -> confirm nick -> inspect own WHAT 0/3, structural panel, contextual practice and canonical LINES action. Repeat EN/ES/PT and close the declared forward transfer.
+Record user visual result before advancing to WHERE's missing corpus/Skill/proof mapping. Do not declare all fourteen circuits complete.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-13
 
 **Recorded:** 2026-09-30
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -808,7 +886,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-13`.  
+**Checkpoint:** `JAGUAR-LIVE-14`.  
 **Current work:** WHAT LINES/Preparing responses and anonymous Shopping Head practice connected; visual homologation pending; broader anonymous answer practice remains OPEN.
 
 ## B. SIYAYO presentation / audiences / profiles

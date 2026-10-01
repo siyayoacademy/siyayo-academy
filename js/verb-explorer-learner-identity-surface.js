@@ -54,11 +54,16 @@ function install(options){
     reflect();
     var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
     if(runtime&&typeof runtime.render==='function')runtime.render();
-    if(readiness&&typeof readiness.signal==='function'){
-      try{return Promise.resolve(readiness.signal()).then(function(){return true;},function(){return true;});}
-      catch(error){return Promise.resolve(true);}
-    }
-    return Promise.resolve(true);
+    var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+    var resume=selection&&typeof selection.resumeForIdentity==='function'
+      ?selection.resumeForIdentity():Promise.resolve(false);
+    return Promise.resolve(resume).then(function(started){
+      if(started===true)return true;
+      return readiness&&typeof readiness.signal==='function'?readiness.signal():false;
+    }).then(function(){
+      if(runtime&&typeof runtime.render==='function')runtime.render();
+      return true;
+    },function(){return true;});
   }
 
   if(panel.__siyayoLearnerIdentityInstalled!==true){

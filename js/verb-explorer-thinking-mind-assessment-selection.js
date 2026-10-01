@@ -4,8 +4,8 @@
 // choiceContext, target words, or Dependency Focus.
 (function(root){
 'use strict';
-var retained=Object.create(null);
-function clear(){retained=Object.create(null);}
+var retained=Object.create(null),pendingSelection=null;
+function clear(){retained=Object.create(null);pendingSelection=null;}
 
 function invalidatePending(){
   var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
@@ -13,6 +13,7 @@ function invalidatePending(){
   var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var active=coordinator&&coordinator.snapshot&&coordinator.snapshot();
   if(active&&active.session)return false;
+  pendingSelection=null;
   ['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
     'SIYAYOVerbExplorerCanonicalSkillLoader','SIYAYOVerbExplorerCanonicalSkillSource',
     'SIYAYOLeafAssessmentTargetAuthority'].forEach(function(name){
@@ -45,6 +46,11 @@ function select(question,options){
   var learnerId=identity&&typeof identity.getId==='function'?identity.getId():null;
   var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var active=coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
+  if(!learnerId){
+    var bridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+    var state=bridge&&bridge.getState&&bridge.getState();
+    pendingSelection=Object.freeze({question:question,experienceId:state&&state.currentExperienceId});
+  }
   if(active&&active.session&&active.session.decision&&active.session.decision.skill===skill)
     return Promise.resolve(true);
   var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
@@ -94,5 +100,20 @@ function select(question,options){
   }
 }
 
-root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending});
+
+function resumeForIdentity(){
+  var pending=pendingSelection;
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+  var active=coordinator&&coordinator.snapshot&&coordinator.snapshot();
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  if(!pending||!identity||!identity.getId()||(active&&active.session))return Promise.resolve(false);
+  if(!runtime||typeof runtime.activeQuestionWord!=='function'||typeof runtime.activeExperienceId!=='function'||
+    runtime.activeQuestionWord()!==pending.question.questionWord||
+    runtime.activeExperienceId()!==pending.experienceId)return Promise.resolve(false);
+  pendingSelection=null;
+  return select(pending.question);
+}
+
+root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity});
 })(typeof globalThis!=='undefined'?globalThis:this);
