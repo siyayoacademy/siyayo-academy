@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "begin",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I begin the lesson every day.",
+              "es": "Yo empiezo la lección todos los días.",
+              "pt": "Eu começo a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezo",
+              "pt": "começo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You begin the lesson every day.",
+              "es": "Tú empiezas la lección todos los días.",
+              "pt": "Você começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezas",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He begins the lesson every day.",
+              "es": "Él empieza la lección todos los días.",
+              "pt": "Ele começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begins",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She begins the lesson every day.",
+              "es": "Ella empieza la lección todos los días.",
+              "pt": "Ela começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begins",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It begins the lesson every day.",
+              "es": "Ello empieza la lección todos los días.",
+              "pt": "Isso começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begins",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We begin the lesson every day.",
+              "es": "Nosotros empezamos la lección todos los días.",
+              "pt": "Nós começamos a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezamos",
+              "pt": "começamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You begin the lesson every day.",
+              "es": "Ustedes empiezan la lección todos los días.",
+              "pt": "Vocês começam a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezan",
+              "pt": "começam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They begin the lesson every day.",
+              "es": "Ellos empiezan la lección todos los días.",
+              "pt": "Eles começam a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezan",
+              "pt": "começam"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not begin the lesson every day.",
+              "es": "Yo no empiezo la lección todos los días.",
+              "pt": "Eu não começo a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezo",
+              "pt": "começo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not begin the lesson every day.",
+              "es": "Tú no empiezas la lección todos los días.",
+              "pt": "Você não começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezas",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not begin the lesson every day.",
+              "es": "Él no empieza la lección todos los días.",
+              "pt": "Ele não começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not begin the lesson every day.",
+              "es": "Ella no empieza la lección todos los días.",
+              "pt": "Ela não começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not begin the lesson every day.",
+              "es": "Ello no empieza la lección todos los días.",
+              "pt": "Isso não começa a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not begin the lesson every day.",
+              "es": "Nosotros no empezamos la lección todos los días.",
+              "pt": "Nós não começamos a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezamos",
+              "pt": "começamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not begin the lesson every day.",
+              "es": "Ustedes no empiezan la lección todos los días.",
+              "pt": "Vocês não começam a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezan",
+              "pt": "começam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not begin the lesson every day.",
+              "es": "Ellos no empiezan la lección todos los días.",
+              "pt": "Eles não começam a aula todos os dias."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezan",
+              "pt": "começam"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do i begin the lesson every day?",
+              "es": "¿Empiezo yo la lección todos los días?",
+              "pt": "Eu começo a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezo",
+              "pt": "começo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you begin the lesson every day?",
+              "es": "¿Empiezas tú la lección todos los días?",
+              "pt": "Você começa a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezas",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he begin the lesson every day?",
+              "es": "¿Empieza él la lección todos los días?",
+              "pt": "Ele começa a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she begin the lesson every day?",
+              "es": "¿Empieza ella la lección todos los días?",
+              "pt": "Ela começa a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it begin the lesson every day?",
+              "es": "¿Empieza ello la lección todos los días?",
+              "pt": "Isso começa a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empieza",
+              "pt": "começa"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we begin the lesson every day?",
+              "es": "¿Empezamos nosotros la lección todos los días?",
+              "pt": "Nós começamos a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezamos",
+              "pt": "começamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you begin the lesson every day?",
+              "es": "¿Empiezan ustedes la lección todos los días?",
+              "pt": "Vocês começam a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezan",
+              "pt": "começam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they begin the lesson every day?",
+              "es": "¿Empiezan ellos la lección todos los días?",
+              "pt": "Eles começam a aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empiezan",
+              "pt": "começam"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I began the lesson yesterday.",
+              "es": "Yo empecé la lección ayer.",
+              "pt": "Eu comecei a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empecé",
+              "pt": "comecei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You began the lesson yesterday.",
+              "es": "Tú empezaste la lección ayer.",
+              "pt": "Você começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezaste",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He began the lesson yesterday.",
+              "es": "Él empezó la lección ayer.",
+              "pt": "Ele começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She began the lesson yesterday.",
+              "es": "Ella empezó la lección ayer.",
+              "pt": "Ela começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It began the lesson yesterday.",
+              "es": "Ello empezó la lección ayer.",
+              "pt": "Isso começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We began the lesson yesterday.",
+              "es": "Nosotros empezamos la lección ayer.",
+              "pt": "Nós começamos a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezamos",
+              "pt": "começamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You began the lesson yesterday.",
+              "es": "Ustedes empezaron la lección ayer.",
+              "pt": "Vocês começaram a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezaron",
+              "pt": "começaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They began the lesson yesterday.",
+              "es": "Ellos empezaron la lección ayer.",
+              "pt": "Eles começaram a aula ontem."
+            },
+            "targetWords": {
+              "en": "began",
+              "es": "empezaron",
+              "pt": "começaram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not begin the lesson yesterday.",
+              "es": "Yo no empecé la lección ayer.",
+              "pt": "Eu não comecei a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empecé",
+              "pt": "comecei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not begin the lesson yesterday.",
+              "es": "Tú no empezaste la lección ayer.",
+              "pt": "Você não começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaste",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not begin the lesson yesterday.",
+              "es": "Él no empezó la lección ayer.",
+              "pt": "Ele não começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not begin the lesson yesterday.",
+              "es": "Ella no empezó la lección ayer.",
+              "pt": "Ela não começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not begin the lesson yesterday.",
+              "es": "Ello no empezó la lección ayer.",
+              "pt": "Isso não começou a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not begin the lesson yesterday.",
+              "es": "Nosotros no empezamos la lección ayer.",
+              "pt": "Nós não começamos a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezamos",
+              "pt": "começamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not begin the lesson yesterday.",
+              "es": "Ustedes no empezaron la lección ayer.",
+              "pt": "Vocês não começaram a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaron",
+              "pt": "começaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not begin the lesson yesterday.",
+              "es": "Ellos no empezaron la lección ayer.",
+              "pt": "Eles não começaram a aula ontem."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaron",
+              "pt": "começaram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did i begin the lesson yesterday?",
+              "es": "¿Empecé yo la lección ayer?",
+              "pt": "Eu comecei a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empecé",
+              "pt": "comecei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you begin the lesson yesterday?",
+              "es": "¿Empezaste tú la lección ayer?",
+              "pt": "Você começou a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaste",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he begin the lesson yesterday?",
+              "es": "¿Empezó él la lección ayer?",
+              "pt": "Ele começou a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she begin the lesson yesterday?",
+              "es": "¿Empezó ella la lección ayer?",
+              "pt": "Ela começou a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it begin the lesson yesterday?",
+              "es": "¿Empezó ello la lección ayer?",
+              "pt": "Isso começou a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezó",
+              "pt": "começou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we begin the lesson yesterday?",
+              "es": "¿Empezamos nosotros la lección ayer?",
+              "pt": "Nós começamos a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezamos",
+              "pt": "começamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you begin the lesson yesterday?",
+              "es": "¿Empezaron ustedes la lección ayer?",
+              "pt": "Vocês começaram a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaron",
+              "pt": "começaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they begin the lesson yesterday?",
+              "es": "¿Empezaron ellos la lección ayer?",
+              "pt": "Eles começaram a aula ontem?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaron",
+              "pt": "começaram"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will begin the lesson tomorrow.",
+              "es": "Yo empezaré la lección mañana.",
+              "pt": "Eu começarei a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaré",
+              "pt": "começarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will begin the lesson tomorrow.",
+              "es": "Tú empezarás la lección mañana.",
+              "pt": "Você começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarás",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will begin the lesson tomorrow.",
+              "es": "Él empezará la lección mañana.",
+              "pt": "Ele começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will begin the lesson tomorrow.",
+              "es": "Ella empezará la lección mañana.",
+              "pt": "Ela começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will begin the lesson tomorrow.",
+              "es": "Ello empezará la lección mañana.",
+              "pt": "Isso começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will begin the lesson tomorrow.",
+              "es": "Nosotros empezaremos la lección mañana.",
+              "pt": "Nós começaremos a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaremos",
+              "pt": "começaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will begin the lesson tomorrow.",
+              "es": "Ustedes empezarán la lección mañana.",
+              "pt": "Vocês começarão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarán",
+              "pt": "começarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will begin the lesson tomorrow.",
+              "es": "Ellos empezarán la lección mañana.",
+              "pt": "Eles começarão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarán",
+              "pt": "começarão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not begin the lesson tomorrow.",
+              "es": "Yo no empezaré la lección mañana.",
+              "pt": "Eu não começarei a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaré",
+              "pt": "começarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not begin the lesson tomorrow.",
+              "es": "Tú no empezarás la lección mañana.",
+              "pt": "Você não começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarás",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not begin the lesson tomorrow.",
+              "es": "Él no empezará la lección mañana.",
+              "pt": "Ele não começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not begin the lesson tomorrow.",
+              "es": "Ella no empezará la lección mañana.",
+              "pt": "Ela não começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not begin the lesson tomorrow.",
+              "es": "Ello no empezará la lección mañana.",
+              "pt": "Isso não começará a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not begin the lesson tomorrow.",
+              "es": "Nosotros no empezaremos la lección mañana.",
+              "pt": "Nós não começaremos a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaremos",
+              "pt": "começaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not begin the lesson tomorrow.",
+              "es": "Ustedes no empezarán la lección mañana.",
+              "pt": "Vocês não começarão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarán",
+              "pt": "começarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not begin the lesson tomorrow.",
+              "es": "Ellos no empezarán la lección mañana.",
+              "pt": "Eles não começarão a aula amanhã."
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarán",
+              "pt": "começarão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will i begin the lesson tomorrow?",
+              "es": "¿Empezaré yo la lección mañana?",
+              "pt": "Eu começarei a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaré",
+              "pt": "começarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you begin the lesson tomorrow?",
+              "es": "¿Empezarás tú la lección mañana?",
+              "pt": "Você começará a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarás",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he begin the lesson tomorrow?",
+              "es": "¿Empezará él la lección mañana?",
+              "pt": "Ele começará a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she begin the lesson tomorrow?",
+              "es": "¿Empezará ella la lección mañana?",
+              "pt": "Ela começará a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it begin the lesson tomorrow?",
+              "es": "¿Empezará ello la lección mañana?",
+              "pt": "Isso começará a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezará",
+              "pt": "começará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we begin the lesson tomorrow?",
+              "es": "¿Empezaremos nosotros la lección mañana?",
+              "pt": "Nós começaremos a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezaremos",
+              "pt": "começaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you begin the lesson tomorrow?",
+              "es": "¿Empezarán ustedes la lección mañana?",
+              "pt": "Vocês começarão a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarán",
+              "pt": "começarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they begin the lesson tomorrow?",
+              "es": "¿Empezarán ellos la lección mañana?",
+              "pt": "Eles começarão a aula amanhã?"
+            },
+            "targetWords": {
+              "en": "begin",
+              "es": "empezarán",
+              "pt": "começarão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
