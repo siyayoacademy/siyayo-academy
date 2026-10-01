@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "serve",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I serve dinner every day.",
+            "es": "Yo sirvo la cena todos los días.",
+            "pt": "Eu sirvo o jantar todos os dias."
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "sirvo",
+            "pt": "sirvo"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not serve dinner every day.",
+            "es": "Yo no sirvo la cena todos los días.",
+            "pt": "Eu não sirvo o jantar todos os dias."
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "sirvo",
+            "pt": "sirvo"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do i serve dinner every day?",
+            "es": "¿Sirvo yo la cena todos los días?",
+            "pt": "Eu sirvo o jantar todos os dias?"
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "sirvo",
+            "pt": "sirvo"
+          }
+        }
+      }
+    },
+    {
+      "verb": "serve",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I served dinner yesterday.",
+            "es": "Yo serví la cena ayer.",
+            "pt": "Eu servi o jantar ontem."
+          },
+          "targetWords": {
+            "en": "served",
+            "es": "serví",
+            "pt": "servi"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not serve dinner yesterday.",
+            "es": "Yo no serví la cena ayer.",
+            "pt": "Eu não servi o jantar ontem."
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "serví",
+            "pt": "servi"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did i serve dinner yesterday?",
+            "es": "¿Serví yo la cena ayer?",
+            "pt": "Eu servi o jantar ontem?"
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "serví",
+            "pt": "servi"
+          }
+        }
+      }
+    },
+    {
+      "verb": "serve",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will serve dinner tomorrow.",
+            "es": "Yo serviré la cena mañana.",
+            "pt": "Eu servirei o jantar amanhã."
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "serviré",
+            "pt": "servirei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not serve dinner tomorrow.",
+            "es": "Yo no serviré la cena mañana.",
+            "pt": "Eu não servirei o jantar amanhã."
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "serviré",
+            "pt": "servirei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will i serve dinner tomorrow?",
+            "es": "¿Serviré yo la cena mañana?",
+            "pt": "Eu servirei o jantar amanhã?"
+          },
+          "targetWords": {
+            "en": "serve",
+            "es": "serviré",
+            "pt": "servirei"
+          }
+        }
+      }
+    }
+  ]
+}
