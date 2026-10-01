@@ -263,3 +263,24 @@ THEN
 → audit ES/PT canonical morphology sources
 → only expand when grounded
 ```
+
+
+## Homologated checkpoint
+
+`PIANO-STAGE-VERB-MORPH-EN-02` is now HOMOLOGATED.
+
+## 28-item corpus expansion candidate checkpoint
+
+See:
+
+`docs/SIYAYO-VERB-ACTIONS-22-28-CANDIDATE-AUDIT.md`
+
+Candidate set:
+
+`find, need, serve, arrive, begin, understand, share`
+
+Target:
+
+`Group 1 = 1–14`, `Group 2 = 15–28`.
+
+These remain candidates until canonical corpus admission.
