@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "serve",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I serve dinner every day.",
+              "es": "Yo sirvo la cena todos los días.",
+              "pt": "Eu sirvo o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvo",
+              "pt": "sirvo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You serve dinner every day.",
+              "es": "Tú sirves la cena todos los días.",
+              "pt": "Você serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirves",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He serves dinner every day.",
+              "es": "Él sirve la cena todos los días.",
+              "pt": "Ele serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serves",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She serves dinner every day.",
+              "es": "Ella sirve la cena todos los días.",
+              "pt": "Ela serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serves",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It serves dinner every day.",
+              "es": "Ello sirve la cena todos los días.",
+              "pt": "Isso serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serves",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We serve dinner every day.",
+              "es": "Nosotros servimos la cena todos los días.",
+              "pt": "Nós servimos o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servimos",
+              "pt": "servimos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You serve dinner every day.",
+              "es": "Ustedes sirven la cena todos los días.",
+              "pt": "Vocês servem o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirven",
+              "pt": "servem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They serve dinner every day.",
+              "es": "Ellos sirven la cena todos los días.",
+              "pt": "Eles servem o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirven",
+              "pt": "servem"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not serve dinner every day.",
+              "es": "Yo no sirvo la cena todos los días.",
+              "pt": "Eu não sirvo o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvo",
+              "pt": "sirvo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not serve dinner every day.",
+              "es": "Tú no sirves la cena todos los días.",
+              "pt": "Você não serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirves",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not serve dinner every day.",
+              "es": "Él no sirve la cena todos los días.",
+              "pt": "Ele não serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not serve dinner every day.",
+              "es": "Ella no sirve la cena todos los días.",
+              "pt": "Ela não serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not serve dinner every day.",
+              "es": "Ello no sirve la cena todos los días.",
+              "pt": "Isso não serve o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not serve dinner every day.",
+              "es": "Nosotros no servimos la cena todos los días.",
+              "pt": "Nós não servimos o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servimos",
+              "pt": "servimos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not serve dinner every day.",
+              "es": "Ustedes no sirven la cena todos los días.",
+              "pt": "Vocês não servem o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirven",
+              "pt": "servem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not serve dinner every day.",
+              "es": "Ellos no sirven la cena todos los días.",
+              "pt": "Eles não servem o jantar todos os dias."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirven",
+              "pt": "servem"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do i serve dinner every day?",
+              "es": "¿Sirvo yo la cena todos los días?",
+              "pt": "Eu sirvo o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvo",
+              "pt": "sirvo"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you serve dinner every day?",
+              "es": "¿Sirves tú la cena todos los días?",
+              "pt": "Você serve o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirves",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he serve dinner every day?",
+              "es": "¿Sirve él la cena todos los días?",
+              "pt": "Ele serve o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she serve dinner every day?",
+              "es": "¿Sirve ella la cena todos los días?",
+              "pt": "Ela serve o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it serve dinner every day?",
+              "es": "¿Sirve ello la cena todos los días?",
+              "pt": "Isso serve o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirve",
+              "pt": "serve"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we serve dinner every day?",
+              "es": "¿Servimos nosotros la cena todos los días?",
+              "pt": "Nós servimos o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servimos",
+              "pt": "servimos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you serve dinner every day?",
+              "es": "¿Sirven ustedes la cena todos los días?",
+              "pt": "Vocês servem o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirven",
+              "pt": "servem"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they serve dinner every day?",
+              "es": "¿Sirven ellos la cena todos los días?",
+              "pt": "Eles servem o jantar todos os dias?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirven",
+              "pt": "servem"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I served dinner yesterday.",
+              "es": "Yo serví la cena ayer.",
+              "pt": "Eu servi o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "serví",
+              "pt": "servi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You served dinner yesterday.",
+              "es": "Tú serviste la cena ayer.",
+              "pt": "Você serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "serviste",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He served dinner yesterday.",
+              "es": "Él sirvió la cena ayer.",
+              "pt": "Ele serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She served dinner yesterday.",
+              "es": "Ella sirvió la cena ayer.",
+              "pt": "Ela serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It served dinner yesterday.",
+              "es": "Ello sirvió la cena ayer.",
+              "pt": "Isso serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We served dinner yesterday.",
+              "es": "Nosotros servimos la cena ayer.",
+              "pt": "Nós servimos o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "servimos",
+              "pt": "servimos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You served dinner yesterday.",
+              "es": "Ustedes sirvieron la cena ayer.",
+              "pt": "Vocês serviram o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "sirvieron",
+              "pt": "serviram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They served dinner yesterday.",
+              "es": "Ellos sirvieron la cena ayer.",
+              "pt": "Eles serviram o jantar ontem."
+            },
+            "targetWords": {
+              "en": "served",
+              "es": "sirvieron",
+              "pt": "serviram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not serve dinner yesterday.",
+              "es": "Yo no serví la cena ayer.",
+              "pt": "Eu não servi o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serví",
+              "pt": "servi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not serve dinner yesterday.",
+              "es": "Tú no serviste la cena ayer.",
+              "pt": "Você não serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviste",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not serve dinner yesterday.",
+              "es": "Él no sirvió la cena ayer.",
+              "pt": "Ele não serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not serve dinner yesterday.",
+              "es": "Ella no sirvió la cena ayer.",
+              "pt": "Ela não serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not serve dinner yesterday.",
+              "es": "Ello no sirvió la cena ayer.",
+              "pt": "Isso não serviu o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not serve dinner yesterday.",
+              "es": "Nosotros no servimos la cena ayer.",
+              "pt": "Nós não servimos o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servimos",
+              "pt": "servimos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not serve dinner yesterday.",
+              "es": "Ustedes no sirvieron la cena ayer.",
+              "pt": "Vocês não serviram o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvieron",
+              "pt": "serviram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not serve dinner yesterday.",
+              "es": "Ellos no sirvieron la cena ayer.",
+              "pt": "Eles não serviram o jantar ontem."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvieron",
+              "pt": "serviram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did i serve dinner yesterday?",
+              "es": "¿Serví yo la cena ayer?",
+              "pt": "Eu servi o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serví",
+              "pt": "servi"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you serve dinner yesterday?",
+              "es": "¿Serviste tú la cena ayer?",
+              "pt": "Você serviu o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviste",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he serve dinner yesterday?",
+              "es": "¿Sirvió él la cena ayer?",
+              "pt": "Ele serviu o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she serve dinner yesterday?",
+              "es": "¿Sirvió ella la cena ayer?",
+              "pt": "Ela serviu o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it serve dinner yesterday?",
+              "es": "¿Sirvió ello la cena ayer?",
+              "pt": "Isso serviu o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvió",
+              "pt": "serviu"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we serve dinner yesterday?",
+              "es": "¿Servimos nosotros la cena ayer?",
+              "pt": "Nós servimos o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servimos",
+              "pt": "servimos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you serve dinner yesterday?",
+              "es": "¿Sirvieron ustedes la cena ayer?",
+              "pt": "Vocês serviram o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvieron",
+              "pt": "serviram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they serve dinner yesterday?",
+              "es": "¿Sirvieron ellos la cena ayer?",
+              "pt": "Eles serviram o jantar ontem?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "sirvieron",
+              "pt": "serviram"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will serve dinner tomorrow.",
+              "es": "Yo serviré la cena mañana.",
+              "pt": "Eu servirei o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviré",
+              "pt": "servirei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will serve dinner tomorrow.",
+              "es": "Tú servirás la cena mañana.",
+              "pt": "Você servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirás",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will serve dinner tomorrow.",
+              "es": "Él servirá la cena mañana.",
+              "pt": "Ele servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will serve dinner tomorrow.",
+              "es": "Ella servirá la cena mañana.",
+              "pt": "Ela servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will serve dinner tomorrow.",
+              "es": "Ello servirá la cena mañana.",
+              "pt": "Isso servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will serve dinner tomorrow.",
+              "es": "Nosotros serviremos la cena mañana.",
+              "pt": "Nós serviremos o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviremos",
+              "pt": "serviremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will serve dinner tomorrow.",
+              "es": "Ustedes servirán la cena mañana.",
+              "pt": "Vocês servirão o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirán",
+              "pt": "servirão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will serve dinner tomorrow.",
+              "es": "Ellos servirán la cena mañana.",
+              "pt": "Eles servirão o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirán",
+              "pt": "servirão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not serve dinner tomorrow.",
+              "es": "Yo no serviré la cena mañana.",
+              "pt": "Eu não servirei o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviré",
+              "pt": "servirei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not serve dinner tomorrow.",
+              "es": "Tú no servirás la cena mañana.",
+              "pt": "Você não servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirás",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not serve dinner tomorrow.",
+              "es": "Él no servirá la cena mañana.",
+              "pt": "Ele não servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not serve dinner tomorrow.",
+              "es": "Ella no servirá la cena mañana.",
+              "pt": "Ela não servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not serve dinner tomorrow.",
+              "es": "Ello no servirá la cena mañana.",
+              "pt": "Isso não servirá o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not serve dinner tomorrow.",
+              "es": "Nosotros no serviremos la cena mañana.",
+              "pt": "Nós não serviremos o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviremos",
+              "pt": "serviremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not serve dinner tomorrow.",
+              "es": "Ustedes no servirán la cena mañana.",
+              "pt": "Vocês não servirão o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirán",
+              "pt": "servirão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not serve dinner tomorrow.",
+              "es": "Ellos no servirán la cena mañana.",
+              "pt": "Eles não servirão o jantar amanhã."
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirán",
+              "pt": "servirão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will i serve dinner tomorrow?",
+              "es": "¿Serviré yo la cena mañana?",
+              "pt": "Eu servirei o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviré",
+              "pt": "servirei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you serve dinner tomorrow?",
+              "es": "¿Servirás tú la cena mañana?",
+              "pt": "Você servirá o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirás",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he serve dinner tomorrow?",
+              "es": "¿Servirá él la cena mañana?",
+              "pt": "Ele servirá o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she serve dinner tomorrow?",
+              "es": "¿Servirá ella la cena mañana?",
+              "pt": "Ela servirá o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it serve dinner tomorrow?",
+              "es": "¿Servirá ello la cena mañana?",
+              "pt": "Isso servirá o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirá",
+              "pt": "servirá"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we serve dinner tomorrow?",
+              "es": "¿Serviremos nosotros la cena mañana?",
+              "pt": "Nós serviremos o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "serviremos",
+              "pt": "serviremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you serve dinner tomorrow?",
+              "es": "¿Servirán ustedes la cena mañana?",
+              "pt": "Vocês servirão o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirán",
+              "pt": "servirão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they serve dinner tomorrow?",
+              "es": "¿Servirán ellos la cena mañana?",
+              "pt": "Eles servirão o jantar amanhã?"
+            },
+            "targetWords": {
+              "en": "serve",
+              "es": "servirán",
+              "pt": "servirão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
