@@ -654,3 +654,32 @@ Group 2 → 15–28
 Protection rule:
 
 The seven candidates must be added to canonical verb corpora first. They must not be introduced only inside Piano Stage code, because that would create a parallel unofficial lexicon.
+
+
+## 22. Canonical 28-Verb Stage admission — PIANO-STAGE-VERB-28-01
+
+Status: **IMPLEMENTED — awaiting Stage homologation**.
+
+Canonical branch validation before Stage admission:
+
+- Corpus Integrity: PASS.
+- Verb Explorer Adaptive Bootstrap: PASS.
+- Resume Runtime Dispatch: PASS.
+- Validated PR #3 head: `9d6dc6b9c1c43cb38faa97cdec5082b79b6b79b1`.
+
+Canonical Verb Actions now total 28.
+
+Frondosa windows are equal:
+
+```
+Group 1 → 1–14
+Group 2 → 15–28
+```
+
+Newly admitted canonical items:
+
+`find, need, serve, arrive, begin, understand, share`.
+
+The Piano Stage now consumes the 28-item canonical corpus for Explore and the already protected EN Morphology activity.
+
+Grouping remains pagination only and carries no grammatical meaning, Evidence, or GREEN.
