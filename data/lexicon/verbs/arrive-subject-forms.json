@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "arrive",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I arrive at class every day.",
+              "es": "Yo llego a clase todos los días.",
+              "pt": "Eu chego à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llego",
+              "pt": "chego"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You arrive at class every day.",
+              "es": "Tú llegas a clase todos los días.",
+              "pt": "Você chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegas",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He arrives at class every day.",
+              "es": "Él llega a clase todos los días.",
+              "pt": "Ele chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrives",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She arrives at class every day.",
+              "es": "Ella llega a clase todos los días.",
+              "pt": "Ela chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrives",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It arrives at class every day.",
+              "es": "Ello llega a clase todos los días.",
+              "pt": "Isso chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrives",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We arrive at class every day.",
+              "es": "Nosotros llegamos a clase todos los días.",
+              "pt": "Nós chegamos à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegamos",
+              "pt": "chegamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You arrive at class every day.",
+              "es": "Ustedes llegan a clase todos los días.",
+              "pt": "Vocês chegam à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegan",
+              "pt": "chegam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They arrive at class every day.",
+              "es": "Ellos llegan a clase todos los días.",
+              "pt": "Eles chegam à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegan",
+              "pt": "chegam"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not arrive at class every day.",
+              "es": "Yo no llego a clase todos los días.",
+              "pt": "Eu não chego à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llego",
+              "pt": "chego"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not arrive at class every day.",
+              "es": "Tú no llegas a clase todos los días.",
+              "pt": "Você não chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegas",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not arrive at class every day.",
+              "es": "Él no llega a clase todos los días.",
+              "pt": "Ele não chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not arrive at class every day.",
+              "es": "Ella no llega a clase todos los días.",
+              "pt": "Ela não chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not arrive at class every day.",
+              "es": "Ello no llega a clase todos los días.",
+              "pt": "Isso não chega à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not arrive at class every day.",
+              "es": "Nosotros no llegamos a clase todos los días.",
+              "pt": "Nós não chegamos à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegamos",
+              "pt": "chegamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not arrive at class every day.",
+              "es": "Ustedes no llegan a clase todos los días.",
+              "pt": "Vocês não chegam à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegan",
+              "pt": "chegam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not arrive at class every day.",
+              "es": "Ellos no llegan a clase todos los días.",
+              "pt": "Eles não chegam à aula todos os dias."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegan",
+              "pt": "chegam"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do i arrive at class every day?",
+              "es": "¿Llego yo a clase todos los días?",
+              "pt": "Eu chego à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llego",
+              "pt": "chego"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you arrive at class every day?",
+              "es": "¿Llegas tú a clase todos los días?",
+              "pt": "Você chega à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegas",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he arrive at class every day?",
+              "es": "¿Llega él a clase todos los días?",
+              "pt": "Ele chega à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she arrive at class every day?",
+              "es": "¿Llega ella a clase todos los días?",
+              "pt": "Ela chega à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it arrive at class every day?",
+              "es": "¿Llega ello a clase todos los días?",
+              "pt": "Isso chega à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llega",
+              "pt": "chega"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we arrive at class every day?",
+              "es": "¿Llegamos nosotros a clase todos los días?",
+              "pt": "Nós chegamos à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegamos",
+              "pt": "chegamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you arrive at class every day?",
+              "es": "¿Llegan ustedes a clase todos los días?",
+              "pt": "Vocês chegam à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegan",
+              "pt": "chegam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they arrive at class every day?",
+              "es": "¿Llegan ellos a clase todos los días?",
+              "pt": "Eles chegam à aula todos os dias?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegan",
+              "pt": "chegam"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I arrived at class yesterday.",
+              "es": "Yo llegué a clase ayer.",
+              "pt": "Eu cheguei à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegué",
+              "pt": "cheguei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You arrived at class yesterday.",
+              "es": "Tú llegaste a clase ayer.",
+              "pt": "Você chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegaste",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He arrived at class yesterday.",
+              "es": "Él llegó a clase ayer.",
+              "pt": "Ele chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She arrived at class yesterday.",
+              "es": "Ella llegó a clase ayer.",
+              "pt": "Ela chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It arrived at class yesterday.",
+              "es": "Ello llegó a clase ayer.",
+              "pt": "Isso chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We arrived at class yesterday.",
+              "es": "Nosotros llegamos a clase ayer.",
+              "pt": "Nós chegamos à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegamos",
+              "pt": "chegamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You arrived at class yesterday.",
+              "es": "Ustedes llegaron a clase ayer.",
+              "pt": "Vocês chegaram à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegaron",
+              "pt": "chegaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They arrived at class yesterday.",
+              "es": "Ellos llegaron a clase ayer.",
+              "pt": "Eles chegaram à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrived",
+              "es": "llegaron",
+              "pt": "chegaram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not arrive at class yesterday.",
+              "es": "Yo no llegué a clase ayer.",
+              "pt": "Eu não cheguei à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegué",
+              "pt": "cheguei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not arrive at class yesterday.",
+              "es": "Tú no llegaste a clase ayer.",
+              "pt": "Você não chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaste",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not arrive at class yesterday.",
+              "es": "Él no llegó a clase ayer.",
+              "pt": "Ele não chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not arrive at class yesterday.",
+              "es": "Ella no llegó a clase ayer.",
+              "pt": "Ela não chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not arrive at class yesterday.",
+              "es": "Ello no llegó a clase ayer.",
+              "pt": "Isso não chegou à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not arrive at class yesterday.",
+              "es": "Nosotros no llegamos a clase ayer.",
+              "pt": "Nós não chegamos à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegamos",
+              "pt": "chegamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not arrive at class yesterday.",
+              "es": "Ustedes no llegaron a clase ayer.",
+              "pt": "Vocês não chegaram à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaron",
+              "pt": "chegaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not arrive at class yesterday.",
+              "es": "Ellos no llegaron a clase ayer.",
+              "pt": "Eles não chegaram à aula ontem."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaron",
+              "pt": "chegaram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did i arrive at class yesterday?",
+              "es": "¿Llegué yo a clase ayer?",
+              "pt": "Eu cheguei à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegué",
+              "pt": "cheguei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you arrive at class yesterday?",
+              "es": "¿Llegaste tú a clase ayer?",
+              "pt": "Você chegou à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaste",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he arrive at class yesterday?",
+              "es": "¿Llegó él a clase ayer?",
+              "pt": "Ele chegou à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she arrive at class yesterday?",
+              "es": "¿Llegó ella a clase ayer?",
+              "pt": "Ela chegou à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it arrive at class yesterday?",
+              "es": "¿Llegó ello a clase ayer?",
+              "pt": "Isso chegou à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegó",
+              "pt": "chegou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we arrive at class yesterday?",
+              "es": "¿Llegamos nosotros a clase ayer?",
+              "pt": "Nós chegamos à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegamos",
+              "pt": "chegamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you arrive at class yesterday?",
+              "es": "¿Llegaron ustedes a clase ayer?",
+              "pt": "Vocês chegaram à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaron",
+              "pt": "chegaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they arrive at class yesterday?",
+              "es": "¿Llegaron ellos a clase ayer?",
+              "pt": "Eles chegaram à aula ontem?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaron",
+              "pt": "chegaram"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will arrive at class tomorrow.",
+              "es": "Yo llegaré a clase mañana.",
+              "pt": "Eu chegarei à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaré",
+              "pt": "chegarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will arrive at class tomorrow.",
+              "es": "Tú llegarás a clase mañana.",
+              "pt": "Você chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarás",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will arrive at class tomorrow.",
+              "es": "Él llegará a clase mañana.",
+              "pt": "Ele chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will arrive at class tomorrow.",
+              "es": "Ella llegará a clase mañana.",
+              "pt": "Ela chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will arrive at class tomorrow.",
+              "es": "Ello llegará a clase mañana.",
+              "pt": "Isso chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will arrive at class tomorrow.",
+              "es": "Nosotros llegaremos a clase mañana.",
+              "pt": "Nós chegaremos à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaremos",
+              "pt": "chegaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will arrive at class tomorrow.",
+              "es": "Ustedes llegarán a clase mañana.",
+              "pt": "Vocês chegarão à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarán",
+              "pt": "chegarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will arrive at class tomorrow.",
+              "es": "Ellos llegarán a clase mañana.",
+              "pt": "Eles chegarão à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarán",
+              "pt": "chegarão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not arrive at class tomorrow.",
+              "es": "Yo no llegaré a clase mañana.",
+              "pt": "Eu não chegarei à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaré",
+              "pt": "chegarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not arrive at class tomorrow.",
+              "es": "Tú no llegarás a clase mañana.",
+              "pt": "Você não chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarás",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not arrive at class tomorrow.",
+              "es": "Él no llegará a clase mañana.",
+              "pt": "Ele não chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not arrive at class tomorrow.",
+              "es": "Ella no llegará a clase mañana.",
+              "pt": "Ela não chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not arrive at class tomorrow.",
+              "es": "Ello no llegará a clase mañana.",
+              "pt": "Isso não chegará à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not arrive at class tomorrow.",
+              "es": "Nosotros no llegaremos a clase mañana.",
+              "pt": "Nós não chegaremos à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaremos",
+              "pt": "chegaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not arrive at class tomorrow.",
+              "es": "Ustedes no llegarán a clase mañana.",
+              "pt": "Vocês não chegarão à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarán",
+              "pt": "chegarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not arrive at class tomorrow.",
+              "es": "Ellos no llegarán a clase mañana.",
+              "pt": "Eles não chegarão à aula amanhã."
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarán",
+              "pt": "chegarão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will i arrive at class tomorrow?",
+              "es": "¿Llegaré yo a clase mañana?",
+              "pt": "Eu chegarei à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaré",
+              "pt": "chegarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you arrive at class tomorrow?",
+              "es": "¿Llegarás tú a clase mañana?",
+              "pt": "Você chegará à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarás",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he arrive at class tomorrow?",
+              "es": "¿Llegará él a clase mañana?",
+              "pt": "Ele chegará à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she arrive at class tomorrow?",
+              "es": "¿Llegará ella a clase mañana?",
+              "pt": "Ela chegará à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it arrive at class tomorrow?",
+              "es": "¿Llegará ello a clase mañana?",
+              "pt": "Isso chegará à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegará",
+              "pt": "chegará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we arrive at class tomorrow?",
+              "es": "¿Llegaremos nosotros a clase mañana?",
+              "pt": "Nós chegaremos à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegaremos",
+              "pt": "chegaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you arrive at class tomorrow?",
+              "es": "¿Llegarán ustedes a clase mañana?",
+              "pt": "Vocês chegarão à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarán",
+              "pt": "chegarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they arrive at class tomorrow?",
+              "es": "¿Llegarán ellos a clase mañana?",
+              "pt": "Eles chegarão à aula amanhã?"
+            },
+            "targetWords": {
+              "en": "arrive",
+              "es": "llegarán",
+              "pt": "chegarão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
