@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "need",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I need more time every day.",
+              "es": "Yo necesito más tiempo todos los días.",
+              "pt": "Eu preciso de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesito",
+              "pt": "preciso"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You need more time every day.",
+              "es": "Tú necesitas más tiempo todos los días.",
+              "pt": "Você precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitas",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He needs more time every day.",
+              "es": "Él necesita más tiempo todos los días.",
+              "pt": "Ele precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "needs",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She needs more time every day.",
+              "es": "Ella necesita más tiempo todos los días.",
+              "pt": "Ela precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "needs",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It needs more time every day.",
+              "es": "Ello necesita más tiempo todos los días.",
+              "pt": "Isso precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "needs",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We need more time every day.",
+              "es": "Nosotros necesitamos más tiempo todos los días.",
+              "pt": "Nós precisamos de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitamos",
+              "pt": "precisamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You need more time every day.",
+              "es": "Ustedes necesitan más tiempo todos los días.",
+              "pt": "Vocês precisam de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitan",
+              "pt": "precisam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They need more time every day.",
+              "es": "Ellos necesitan más tiempo todos los días.",
+              "pt": "Eles precisam de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitan",
+              "pt": "precisam"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not need more time every day.",
+              "es": "Yo no necesito más tiempo todos los días.",
+              "pt": "Eu não preciso de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesito",
+              "pt": "preciso"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not need more time every day.",
+              "es": "Tú no necesitas más tiempo todos los días.",
+              "pt": "Você não precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitas",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not need more time every day.",
+              "es": "Él no necesita más tiempo todos los días.",
+              "pt": "Ele não precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not need more time every day.",
+              "es": "Ella no necesita más tiempo todos los días.",
+              "pt": "Ela não precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not need more time every day.",
+              "es": "Ello no necesita más tiempo todos los días.",
+              "pt": "Isso não precisa de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not need more time every day.",
+              "es": "Nosotros no necesitamos más tiempo todos los días.",
+              "pt": "Nós não precisamos de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitamos",
+              "pt": "precisamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not need more time every day.",
+              "es": "Ustedes no necesitan más tiempo todos los días.",
+              "pt": "Vocês não precisam de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitan",
+              "pt": "precisam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not need more time every day.",
+              "es": "Ellos no necesitan más tiempo todos los días.",
+              "pt": "Eles não precisam de mais tempo todos os dias."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitan",
+              "pt": "precisam"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do i need more time every day?",
+              "es": "¿Necesito yo más tiempo todos los días?",
+              "pt": "Eu preciso de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesito",
+              "pt": "preciso"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you need more time every day?",
+              "es": "¿Necesitas tú más tiempo todos los días?",
+              "pt": "Você precisa de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitas",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he need more time every day?",
+              "es": "¿Necesita él más tiempo todos los días?",
+              "pt": "Ele precisa de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she need more time every day?",
+              "es": "¿Necesita ella más tiempo todos los días?",
+              "pt": "Ela precisa de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it need more time every day?",
+              "es": "¿Necesita ello más tiempo todos los días?",
+              "pt": "Isso precisa de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesita",
+              "pt": "precisa"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we need more time every day?",
+              "es": "¿Necesitamos nosotros más tiempo todos los días?",
+              "pt": "Nós precisamos de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitamos",
+              "pt": "precisamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you need more time every day?",
+              "es": "¿Necesitan ustedes más tiempo todos los días?",
+              "pt": "Vocês precisam de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitan",
+              "pt": "precisam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they need more time every day?",
+              "es": "¿Necesitan ellos más tiempo todos los días?",
+              "pt": "Eles precisam de mais tempo todos os dias?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitan",
+              "pt": "precisam"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I needed more time yesterday.",
+              "es": "Yo necesité más tiempo ayer.",
+              "pt": "Eu precisei de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesité",
+              "pt": "precisei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You needed more time yesterday.",
+              "es": "Tú necesitaste más tiempo ayer.",
+              "pt": "Você precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitaste",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He needed more time yesterday.",
+              "es": "Él necesitó más tiempo ayer.",
+              "pt": "Ele precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She needed more time yesterday.",
+              "es": "Ella necesitó más tiempo ayer.",
+              "pt": "Ela precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It needed more time yesterday.",
+              "es": "Ello necesitó más tiempo ayer.",
+              "pt": "Isso precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We needed more time yesterday.",
+              "es": "Nosotros necesitamos más tiempo ayer.",
+              "pt": "Nós precisamos de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitamos",
+              "pt": "precisamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You needed more time yesterday.",
+              "es": "Ustedes necesitaron más tiempo ayer.",
+              "pt": "Vocês precisaram de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitaron",
+              "pt": "precisaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They needed more time yesterday.",
+              "es": "Ellos necesitaron más tiempo ayer.",
+              "pt": "Eles precisaram de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "needed",
+              "es": "necesitaron",
+              "pt": "precisaram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not need more time yesterday.",
+              "es": "Yo no necesité más tiempo ayer.",
+              "pt": "Eu não precisei de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesité",
+              "pt": "precisei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not need more time yesterday.",
+              "es": "Tú no necesitaste más tiempo ayer.",
+              "pt": "Você não precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaste",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not need more time yesterday.",
+              "es": "Él no necesitó más tiempo ayer.",
+              "pt": "Ele não precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not need more time yesterday.",
+              "es": "Ella no necesitó más tiempo ayer.",
+              "pt": "Ela não precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not need more time yesterday.",
+              "es": "Ello no necesitó más tiempo ayer.",
+              "pt": "Isso não precisou de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not need more time yesterday.",
+              "es": "Nosotros no necesitamos más tiempo ayer.",
+              "pt": "Nós não precisamos de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitamos",
+              "pt": "precisamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not need more time yesterday.",
+              "es": "Ustedes no necesitaron más tiempo ayer.",
+              "pt": "Vocês não precisaram de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaron",
+              "pt": "precisaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not need more time yesterday.",
+              "es": "Ellos no necesitaron más tiempo ayer.",
+              "pt": "Eles não precisaram de mais tempo ontem."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaron",
+              "pt": "precisaram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did i need more time yesterday?",
+              "es": "¿Necesité yo más tiempo ayer?",
+              "pt": "Eu precisei de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesité",
+              "pt": "precisei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you need more time yesterday?",
+              "es": "¿Necesitaste tú más tiempo ayer?",
+              "pt": "Você precisou de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaste",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he need more time yesterday?",
+              "es": "¿Necesitó él más tiempo ayer?",
+              "pt": "Ele precisou de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she need more time yesterday?",
+              "es": "¿Necesitó ella más tiempo ayer?",
+              "pt": "Ela precisou de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it need more time yesterday?",
+              "es": "¿Necesitó ello más tiempo ayer?",
+              "pt": "Isso precisou de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitó",
+              "pt": "precisou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we need more time yesterday?",
+              "es": "¿Necesitamos nosotros más tiempo ayer?",
+              "pt": "Nós precisamos de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitamos",
+              "pt": "precisamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you need more time yesterday?",
+              "es": "¿Necesitaron ustedes más tiempo ayer?",
+              "pt": "Vocês precisaram de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaron",
+              "pt": "precisaram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they need more time yesterday?",
+              "es": "¿Necesitaron ellos más tiempo ayer?",
+              "pt": "Eles precisaram de mais tempo ontem?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaron",
+              "pt": "precisaram"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will need more time tomorrow.",
+              "es": "Yo necesitaré más tiempo mañana.",
+              "pt": "Eu precisarei de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaré",
+              "pt": "precisarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will need more time tomorrow.",
+              "es": "Tú necesitarás más tiempo mañana.",
+              "pt": "Você precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarás",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will need more time tomorrow.",
+              "es": "Él necesitará más tiempo mañana.",
+              "pt": "Ele precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will need more time tomorrow.",
+              "es": "Ella necesitará más tiempo mañana.",
+              "pt": "Ela precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will need more time tomorrow.",
+              "es": "Ello necesitará más tiempo mañana.",
+              "pt": "Isso precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will need more time tomorrow.",
+              "es": "Nosotros necesitaremos más tiempo mañana.",
+              "pt": "Nós precisaremos de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaremos",
+              "pt": "precisaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will need more time tomorrow.",
+              "es": "Ustedes necesitarán más tiempo mañana.",
+              "pt": "Vocês precisarão de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarán",
+              "pt": "precisarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will need more time tomorrow.",
+              "es": "Ellos necesitarán más tiempo mañana.",
+              "pt": "Eles precisarão de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarán",
+              "pt": "precisarão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not need more time tomorrow.",
+              "es": "Yo no necesitaré más tiempo mañana.",
+              "pt": "Eu não precisarei de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaré",
+              "pt": "precisarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not need more time tomorrow.",
+              "es": "Tú no necesitarás más tiempo mañana.",
+              "pt": "Você não precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarás",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not need more time tomorrow.",
+              "es": "Él no necesitará más tiempo mañana.",
+              "pt": "Ele não precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not need more time tomorrow.",
+              "es": "Ella no necesitará más tiempo mañana.",
+              "pt": "Ela não precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not need more time tomorrow.",
+              "es": "Ello no necesitará más tiempo mañana.",
+              "pt": "Isso não precisará de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not need more time tomorrow.",
+              "es": "Nosotros no necesitaremos más tiempo mañana.",
+              "pt": "Nós não precisaremos de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaremos",
+              "pt": "precisaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not need more time tomorrow.",
+              "es": "Ustedes no necesitarán más tiempo mañana.",
+              "pt": "Vocês não precisarão de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarán",
+              "pt": "precisarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not need more time tomorrow.",
+              "es": "Ellos no necesitarán más tiempo mañana.",
+              "pt": "Eles não precisarão de mais tempo amanhã."
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarán",
+              "pt": "precisarão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will i need more time tomorrow?",
+              "es": "¿Necesitaré yo más tiempo mañana?",
+              "pt": "Eu precisarei de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaré",
+              "pt": "precisarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you need more time tomorrow?",
+              "es": "¿Necesitarás tú más tiempo mañana?",
+              "pt": "Você precisará de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarás",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he need more time tomorrow?",
+              "es": "¿Necesitará él más tiempo mañana?",
+              "pt": "Ele precisará de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she need more time tomorrow?",
+              "es": "¿Necesitará ella más tiempo mañana?",
+              "pt": "Ela precisará de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it need more time tomorrow?",
+              "es": "¿Necesitará ello más tiempo mañana?",
+              "pt": "Isso precisará de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitará",
+              "pt": "precisará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we need more time tomorrow?",
+              "es": "¿Necesitaremos nosotros más tiempo mañana?",
+              "pt": "Nós precisaremos de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitaremos",
+              "pt": "precisaremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you need more time tomorrow?",
+              "es": "¿Necesitarán ustedes más tiempo mañana?",
+              "pt": "Vocês precisarão de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarán",
+              "pt": "precisarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they need more time tomorrow?",
+              "es": "¿Necesitarán ellos más tiempo mañana?",
+              "pt": "Eles precisarão de mais tempo amanhã?"
+            },
+            "targetWords": {
+              "en": "need",
+              "es": "necesitarán",
+              "pt": "precisarão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
