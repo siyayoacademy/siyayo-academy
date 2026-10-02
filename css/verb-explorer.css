@@ -315,3 +315,26 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .siyayo-speaker{display:inline-block;width:18px;height:18px;background:var(--siyayo-gold-primary);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E") center/contain no-repeat;pointer-events:none}
 .choice-audio:focus-visible,.living-line:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:2px}
 @media(max-width:520px){.choice-option{grid-template-columns:48px minmax(0,1fr) 48px}.choice-audio{min-width:44px}.living-line{padding-inline:38px}.living-window-head{flex-wrap:wrap;justify-content:center;text-align:center}}
+
+/* JAGUAR-LIVE-17 — interaction glow; never an achievement signal. */
+.experience-panel :is(.living-line,.choice-option,.gear-option,.perspective-options button,.dependency-head-probe-options button,.determiner-use-probe-options button,.determiner-use-transfer-probe-options button,.what-probe-option,.why-probe-option,.line-controls button,.what-answer-pages button,.continue-assessment-here,.toroidal-next.available){
+  transition:border-color 180ms ease,box-shadow 180ms ease;
+}
+@media (hover:hover) and (pointer:fine){
+  .experience-panel :is(.living-line,.choice-option,.gear-option,.perspective-options button,.dependency-head-probe-options button,.determiner-use-probe-options button,.determiner-use-transfer-probe-options button,.what-probe-option,.why-probe-option,.line-controls button,.what-answer-pages button,.continue-assessment-here,.toroidal-next.available):not(:disabled):not([aria-disabled="true"]):not(.question-word-confirmed):not(.is-speaking):hover{
+    border-color:var(--siyayo-gold-primary);
+    box-shadow:0 0 18px rgba(215,179,90,.18),inset 0 0 12px rgba(242,216,138,.04);
+  }
+}
+.experience-panel :is(.living-line,.choice-option,.gear-option,.perspective-options button,.dependency-head-probe-options button,.determiner-use-probe-options button,.determiner-use-transfer-probe-options button,.what-probe-option,.why-probe-option,.line-controls button,.what-answer-pages button,.continue-assessment-here,.toroidal-next.available):not(:disabled):not([aria-disabled="true"]):not(.question-word-confirmed):not(.is-speaking):focus-visible,
+.experience-panel .choice-option:not(.is-speaking):has(:focus-visible){
+  border-color:var(--siyayo-gold-primary);
+  box-shadow:0 0 18px rgba(215,179,90,.18),inset 0 0 12px rgba(242,216,138,.04);
+}
+.experience-panel :is(.living-line,.gear-option,.perspective-options button,.dependency-head-probe-options button,.determiner-use-probe-options button,.determiner-use-transfer-probe-options button,.what-probe-option,.why-probe-option,.line-controls button,.what-answer-pages button,.continue-assessment-here,.toroidal-next.available):focus-visible{
+  outline:2px solid var(--siyayo-gold-primary);outline-offset:3px;
+}
+.experience-panel .choice-option:hover,.experience-panel .choice-option:focus-visible{transform:none}
+@media (prefers-reduced-motion:reduce){
+  .experience-panel :is(.living-line,.choice-option,.gear-option,.perspective-options button,.dependency-head-probe-options button,.determiner-use-probe-options button,.determiner-use-transfer-probe-options button,.what-probe-option,.why-probe-option,.line-controls button,.what-answer-pages button,.continue-assessment-here,.toroidal-next.available){transition:none}
+}

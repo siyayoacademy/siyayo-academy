@@ -18,7 +18,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-16
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-17
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -1005,3 +1005,14 @@ WAIT: no JSON/text/Pass Contract change, no Nick movement, no module relocation 
 Validation: target boundaries, composite/diacritic cases, HTML escaping, real EN/ES/PT seed labels, neutral question-function exceptions, existing audio separation and canonical cycle regressions. CI and live preview must be checked after publication; laptop/smartphone and text zoom remain user visual homologation, not inferred from tests.
 
 NEXT GO: visually inspect Shopping/Preparing/Having/After Dinner EN/ES/PT, WHICH reference first; confirm centered gold targets and speakers, no lost selections or progress. Then return to Nick compact study or corpus gap mapping under separate approval.
+
+
+## JAGUAR-LIVE-17 — subtle Experience interaction glow
+
+Classification: EXTENSION of visual interaction presentation. Explicit GO: 2026-10-02. Base: 9bf8025. This step follows the user visual approval of the typography/gold speaker lot; its own visual homologation remains pending.
+
+Reuse Chapters language-line gold halo: 18px outer rgba(215,179,90,.18), 12px inset rgba(242,216,138,.04). Scope only Experience actionable lines, canonical choices, enabled language/QWord/tense/mode/perspective controls, probe alternatives, paging, adoption and available NEXT. Fine-pointer hover only; keyboard focus-visible adds an explicit outline and canonical choice parent halo. Reduced motion removes the transition. Static contexts/results/feedback do not receive a misleading actionable halo.
+
+Preservation: confirmed QWords keep their green achievement projection; speaking choices keep audio provenance styling. Disabled controls excluded. Halo does not create observation, Evidence, Green Pass, selection, adoption or navigation. No JS/HTML/JSON/text modifications. No movement/resize added; canonical choices retain their position on hover. EN/ES/PT share the same presentation rules.
+
+Validation: review selector scope against the current renderer, existing confirmed/speaking styles and disabled controls; CSS parse check. CI and Cloudflare after publication. User visual homologation: pointer enter/leave on dialogue, choice and NEXT; keyboard Tab on choices/controls; confirm green achievement remains distinct and mobile has no persistent mouse-hover halo.
