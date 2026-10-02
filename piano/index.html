@@ -6,12 +6,23 @@
   <title>Piano SIYAYO Stage</title>
   <link rel="stylesheet" href="../css/siyayo-responsive-stage.css">
   <link rel="stylesheet" href="./piano.css">
+  <link rel="stylesheet" href="../css/siyayo-environments.css">
 </head>
-<body>
+<body class="siyayo-environment-host" data-siyayo-environment-host data-environment-registry="../data/environments/siyayo-environments.json" data-environment="cosmic-night">
   <div class="dev-preview-toolbar" id="devPreviewToolbar" data-siyayo-responsive-toolbar aria-label="Responsive preview tools">
     <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
     <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
     <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
+  </div>
+
+  <div class="environment-dev-toolbar" data-siyayo-environment-toolbar aria-label="Environment preview tools">
+    <span class="environment-label">ENVIRONMENT</span>
+    <button type="button" class="environment-button" data-environment-choice="auto-local-time">Auto time</button>
+    <button type="button" class="environment-button" data-environment-choice="cosmic-night">Cosmic</button>
+    <button type="button" class="environment-button" data-environment-choice="forest-day">Forest day</button>
+    <button type="button" class="environment-button" data-environment-choice="forest-night">Forest night</button>
+    <button type="button" class="environment-button" data-environment-choice="river-dawn">Dawn</button>
+    <button type="button" class="environment-button" data-environment-choice="nice-party-evening">Party</button>
   </div>
 
   <div class="stage-viewport" id="stageViewport" data-siyayo-responsive-viewport data-preview="auto">
@@ -180,6 +191,7 @@
   </div>
   <script src="./content-collection-engine.js"></script>
   <script src="../js/siyayo-responsive-preview.js"></script>
+  <script src="../js/siyayo-environment-controller.js"></script>
   <script src="./piano.js"></script>
 </body>
 </html>
