@@ -54,7 +54,7 @@ session.decision.experienceId='shopping-for-dinner';
 const choice={skill:'which.use.determiner',dimension:'choice-function',result:'pass',support:'none',context:{
   occurrenceId:'choice-select:1',experienceId:'shopping-for-dinner',selectedAlternativeId:'fresh-mild-cheese'
 }};
-const local={skill:'which.use.determiner',dimension:'determiner-use',result:'pass',support:'none',context:{
+const local={skill:'which.use.determiner',dimension:'determiner-use',result:'pass',mode:'local',support:'none',context:{
   occurrenceId:'determiner-use-probe-select:1',experienceId:'shopping-for-dinner',
   targetForm:'which',targetNoun:'cheese',selectedAlternativeId:'cheese'
 }};
