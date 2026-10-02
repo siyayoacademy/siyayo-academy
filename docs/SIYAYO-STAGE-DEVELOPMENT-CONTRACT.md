@@ -713,3 +713,26 @@ Real touch-first devices resolve preview mode to Auto and do not require the dev
 Page-specific responsive rules remain local to `piano/piano.css`, including keyboard dimensions, Frondosa/Pianinho layout and activity-specific Portrait tuning.
 
 Cross-branch adoption remains opt-in. The separate canonical Work Map branch is intentionally unchanged until explicit GO is given in that target branch/context.
+
+
+## 24. Responsive migration repair — SIYAYO-RESPONSIVE-R-02-FIX-01
+
+Status: **FIX APPLIED — awaiting visual confirmation**.
+
+Observed after the first shared-layer migration:
+
+- a literal `\n` appeared in the rendered page;
+- Auto remained visually selected;
+- Portrait and Landscape no longer responded.
+
+Root cause confirmed in `piano/index.html`:
+
+1. the stylesheet insertion contained the literal characters `\n` instead of an actual newline;
+2. the shared controller `../js/siyayo-responsive-preview.js` was not loaded before `piano.js`.
+
+Repair:
+
+- removed the literal `\n`;
+- wired the shared responsive preview controller before the page-specific Piano script.
+
+No pedagogical logic, collection state, Evidence, GREEN, actor behavior, or real-device responsive rules were changed.
