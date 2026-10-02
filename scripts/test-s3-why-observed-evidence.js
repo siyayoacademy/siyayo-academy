@@ -29,7 +29,7 @@ for(const language of ['en','es','pt']){
     const attempt=boundary.assemble({learnerEvent:event,evidence});
     assert.equal(attempt.skill,skill.id);
     assert.equal(attempt.context.experienceId,spec.experienceId);
-    assert.equal(attempt.mode,spec.mode==='transfer'?'transfer':undefined);
+    assert.equal(attempt.mode,spec.mode);
     assert.equal(attempt.support,'none');
     assert.equal(result.evaluate(spec,{...event,observed:false}),null);
     assert.equal(result.evaluate(spec,{...event,experienceId:'preparing-dinner'}),null);

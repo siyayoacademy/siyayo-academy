@@ -38,7 +38,7 @@
     var requires=skill.passContract&&skill.passContract.requires;
     if(!Array.isArray(requires)||requires.length!==3||
       requires[0].dimension!=='question-function'||requires[0].result!=='pass'||
-      requires[1].dimension!=='reason-answer'||requires[1].result!=='pass'||requires[1].support!=='none'||
+      requires[1].dimension!=='reason-answer'||requires[1].result!=='pass'||requires[1].support!=='none'||requires[1].mode!=='local'||
       requires[2].dimension!=='reason-answer'||requires[2].result!=='pass'||
       requires[2].mode!=='transfer'||requires[2].support!=='none')return null;
     if(!local||!transfer||!text(local.id)||!text(transfer.id)||local.id===transfer.id||

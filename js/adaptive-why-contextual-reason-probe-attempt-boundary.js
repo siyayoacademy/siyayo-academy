@@ -14,7 +14,7 @@
       evidence.skill!=='why.use.contextual-reason'||event.skill!==evidence.skill||
       !['question-function','reason-answer'].includes(event.dimension)||event.dimension!==evidence.dimension||
       !['local','transfer'].includes(event.mode)||
-      (event.mode==='transfer'?'transfer':undefined)!==evidence.mode||
+      event.mode!==evidence.mode||
       !['pass','fail'].includes(evidence.result)||!text(evidence.support))return null;
     var details=evidence.context||{};
     for(var pair of [['occurrenceId','occurrenceId'],['experienceId','experienceId'],
@@ -26,7 +26,7 @@
       if(event.dimension!=='reason-answer'||!from||from===event.experienceId||from!==details.fromExperienceId)return null;
     }else if(from||text(details.fromExperienceId))return null;
     return Object.freeze({occurrenceId:event.occurrenceId,skill:event.skill,
-      dimension:event.dimension,mode:event.mode==='transfer'?'transfer':undefined,
+      dimension:event.dimension,mode:event.mode,
       result:evidence.result,support:evidence.support,
       context:Object.freeze({occurrenceId:event.occurrenceId,experienceId:event.experienceId,
         fromExperienceId:from||null,language:event.language,selectedAlternativeId:event.choice})});

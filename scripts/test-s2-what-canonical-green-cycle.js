@@ -45,7 +45,7 @@ for (const language of ['en','es','pt']) {
     assert.equal(cycle.operationalAuthority,'contract');
     assert.equal(cycle.contractEligible,index===2);
     assert.equal(cycle.contractEvaluation.status,index===2?'GREEN_PASS':'WAITING_FOR_EVIDENCE');
-    assert.equal(cycle.evidencePacket.mode,index===2?'transfer':undefined);
+    assert.equal(cycle.evidencePacket.mode,index===2?'transfer':'local');
     assert.equal(cycle.advanceSelection,null,'NEXT remains learner-owned');
     assert.ok(cycle.greenProfile.bySkill[oldKey], 'S1 confirmed skill must remain in history');
     greenProfile=cycle.greenProfile;

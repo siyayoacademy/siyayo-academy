@@ -23,7 +23,8 @@
       {
         "dimension": "determiner-use",
         "result": "pass",
-        "support": "none"
+        "support": "none",
+        "mode": "local"
       },
       {
         "dimension": "determiner-use",

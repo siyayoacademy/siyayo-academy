@@ -39,6 +39,7 @@ assert.deepEqual(evidence, {
   skill: 'which.use.determiner',
   dimension: 'determiner-use',
   result: 'pass',
+  mode: 'local',
   support: 'none',
   context: {
     occurrenceId: 'determiner-use-probe-select:1',
@@ -52,7 +53,7 @@ assert.ok(Object.isFrozen(evidence));
 assert.ok(Object.isFrozen(evidence.context));
 assert.equal(
   Object.prototype.hasOwnProperty.call(evidence, 'mode'),
-  false,
+  true,
   'local determiner-use evidence must not fabricate transfer mode'
 );
 
@@ -107,3 +108,5 @@ assert.equal(
 console.log(
   'Adaptive determiner-use probe Evidence bridge: PASS — grounded probe result plus occurrence-scoped support becomes local determiner-use Evidence without fabricating transfer mode.'
 );
+
+assert.equal(Bridge.fromResult({result:{...result,mode:'transfer'},learnerEvent,supportSensor:sensor}),null);

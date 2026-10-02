@@ -33,7 +33,7 @@ const evidence=sandbox.AdaptiveDeterminerUseProbeEvidenceBridge.fromResult({resu
 assert.equal(evidence.support,'none');
 const second=sandbox.AdaptiveDeterminerUseProbeAttemptBoundary.assemble({learnerEvent,evidence});
 assert.ok(second);
-assert.equal(second.mode,undefined);
+assert.equal(second.mode,'local');
 
 result=Cycle.submit(profile,session,second,context);
 assert.equal(result.contractEvaluation.status,'WAITING_FOR_EVIDENCE');

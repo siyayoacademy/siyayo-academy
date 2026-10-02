@@ -19,6 +19,7 @@ const evidence = Object.freeze({
   skill: 'which.use.determiner',
   dimension: 'determiner-use',
   result: 'pass',
+  mode: 'local',
   support: 'none',
   context: Object.freeze({
     occurrenceId: 'determiner-use-probe-select:1',
@@ -35,6 +36,7 @@ assert.deepEqual(attempt, {
   skill: 'which.use.determiner',
   dimension: 'determiner-use',
   result: 'pass',
+  mode: 'local',
   support: 'none',
   context: {
     occurrenceId: 'determiner-use-probe-select:1',
@@ -48,7 +50,7 @@ assert.ok(Object.isFrozen(attempt));
 assert.ok(Object.isFrozen(attempt.context));
 assert.equal(
   Object.prototype.hasOwnProperty.call(attempt, 'mode'),
-  false,
+  true,
   'local determiner-use Attempt must not fabricate transfer mode'
 );
 
@@ -110,3 +112,5 @@ assert.equal(
 console.log(
   'Adaptive determiner-use probe Attempt boundary: PASS — one grounded learner occurrence owns exactly its local determiner-use Evidence without borrowing transfer mode.'
 );
+
+assert.equal(Boundary.assemble({learnerEvent:event,evidence:{...evidence,mode:'transfer'}}),null);

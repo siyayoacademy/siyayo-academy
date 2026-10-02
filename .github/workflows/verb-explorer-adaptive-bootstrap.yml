@@ -389,3 +389,6 @@ jobs:
 
       - name: Test compact learner identity and cancel preservation
         run: node scripts/test-learner-identity-compact.js
+
+      - name: Test distinct local and transfer requirements
+        run: node scripts/test-local-transfer-contract-separation.js

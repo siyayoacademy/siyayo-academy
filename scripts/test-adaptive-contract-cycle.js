@@ -21,7 +21,7 @@ function createSession(id, skill = 'which.use.determiner') {
 const baseAttempt = { language: 'en', chapter: 'question-words', skill: 'which.use.determiner', correct: true, confidence: 0.95 };
 const choiceAssisted = { ...baseAttempt, dimension: 'choice-function', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'shopping-for-dinner' };
 const determinerAssisted = { ...baseAttempt, dimension: 'determiner-use', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'shopping-for-dinner' };
-const determinerIndependent = { ...baseAttempt, dimension: 'determiner-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' };
+const determinerIndependent = { ...baseAttempt, dimension: 'determiner-use', result: 'pass', mode: 'local', support: 'none', context: 'shopping-for-dinner' };
 const determinerTransfer = { ...baseAttempt, dimension: 'determiner-use', result: 'pass', mode: 'transfer', support: 'none', context: 'shopping-clothes' };
 
 {

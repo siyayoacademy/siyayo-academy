@@ -10,18 +10,51 @@
     "communicativeIntention": "reason",
     "meaning": "ask why a shared dinner or conversation is meaningful and give a reason grounded in its situation"
   },
-  "observes": ["question-function", "reason-answer"],
+  "observes": [
+    "question-function",
+    "reason-answer"
+  ],
   "passContract": {
     "requires": [
-      {"dimension": "question-function", "result": "pass"},
-      {"dimension": "reason-answer", "result": "pass", "support": "none"},
-      {"dimension": "reason-answer", "result": "pass", "mode": "transfer", "support": "none"}
+      {
+        "dimension": "question-function",
+        "result": "pass"
+      },
+      {
+        "dimension": "reason-answer",
+        "result": "pass",
+        "support": "none",
+        "mode": "local"
+      },
+      {
+        "dimension": "reason-answer",
+        "result": "pass",
+        "mode": "transfer",
+        "support": "none"
+      }
     ],
-    "doesNotClaim": ["long-term-retention", "object-answer", "pronunciation", "cross-language-equivalence"]
+    "doesNotClaim": [
+      "long-term-retention",
+      "object-answer",
+      "pronunciation",
+      "cross-language-equivalence"
+    ]
   },
   "realizations": {
-    "en": {"form": "why", "family": "question-word", "grammarRole": "interrogative-adverb"},
-    "es": {"form": "por qué", "family": "palabra-interrogativa", "grammarRole": "adverbio-interrogativo"},
-    "pt": {"form": "por que", "family": "palavra-interrogativa", "grammarRole": "advérbio-interrogativo"}
+    "en": {
+      "form": "why",
+      "family": "question-word",
+      "grammarRole": "interrogative-adverb"
+    },
+    "es": {
+      "form": "por qué",
+      "family": "palabra-interrogativa",
+      "grammarRole": "adverbio-interrogativo"
+    },
+    "pt": {
+      "form": "por que",
+      "family": "palavra-interrogativa",
+      "grammarRole": "advérbio-interrogativo"
+    }
   }
 }

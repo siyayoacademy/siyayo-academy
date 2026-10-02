@@ -19,6 +19,8 @@
     var evidence=input.evidence;
 
     if(!event||!evidence)return null;
+    if(evidence.mode!=='local'||(text(event.mode)&&text(event.mode)!=='local')||
+       text(event.fromExperienceId)||text(evidence.context&&evidence.context.fromExperienceId))return null;
     if(event.observed!==true||event.actor!=='learner')return null;
     if(text(event.source)!=='determiner-use-probe-select')return null;
 
@@ -64,6 +66,7 @@
       skill:'which.use.determiner',
       dimension:'determiner-use',
       result:result,
+      mode:'local',
       support:support,
       context:context
     });

@@ -23,7 +23,8 @@
       {
         "dimension": "object-answer",
         "result": "pass",
-        "support": "none"
+        "support": "none",
+        "mode": "local"
       },
       {
         "dimension": "object-answer",

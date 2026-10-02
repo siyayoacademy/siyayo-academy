@@ -26,7 +26,7 @@
     var support=text(sensor.support(event));
     if(!support)return null;
     return Object.freeze({skill:result.skill,dimension:result.dimension,
-      mode:result.mode==='transfer'?'transfer':undefined,result:result.result,support:support,
+      mode:result.mode,result:result.result,support:support,
       context:Object.freeze({occurrenceId:result.occurrenceId,experienceId:result.experienceId,
         fromExperienceId:from||null,language:result.language,selectedAlternativeId:result.selectedAlternativeId})});
   }

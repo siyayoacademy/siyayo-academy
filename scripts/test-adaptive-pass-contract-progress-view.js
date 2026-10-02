@@ -4,7 +4,7 @@ const progress=require('../js/adaptive-pass-contract-progress-view.js');
 const evaluator=require('../js/green-pass-profile.js');
 const contract=require('../data/learning/skills/which.json').passContract;
 const choice={dimension:'choice-function',result:'pass',support:'none'};
-const local={dimension:'determiner-use',result:'pass',support:'none'};
+const local={mode:'local',dimension:'determiner-use',result:'pass',support:'none'};
 const transfer={dimension:'determiner-use',result:'pass',support:'none',mode:'transfer'};
 for(const [packets,expected,status] of [
   [[],0,'WAITING_FOR_EVIDENCE'],

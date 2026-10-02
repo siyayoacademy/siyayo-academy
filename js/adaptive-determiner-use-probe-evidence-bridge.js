@@ -20,6 +20,10 @@
     var supportSensor=input.supportSensor;
 
     if(!result||!learnerEvent)return null;
+    // This dedicated bridge can attest local use only, never relabel transfer.
+    if((text(result.mode)&&text(result.mode)!=='local')||
+       (text(learnerEvent.mode)&&text(learnerEvent.mode)!=='local')||
+       text(result.fromExperienceId)||text(learnerEvent.fromExperienceId))return null;
     if(!supportSensor||typeof supportSensor.support!=='function')return null;
 
     var occurrenceId=text(result.occurrenceId);
@@ -43,6 +47,7 @@
       skill:'which.use.determiner',
       dimension:'determiner-use',
       result:outcome,
+      mode:'local',
       support:support,
       context:Object.freeze({
         occurrenceId:occurrenceId,

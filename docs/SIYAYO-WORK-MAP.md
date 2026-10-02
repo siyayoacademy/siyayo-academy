@@ -18,7 +18,16 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-20
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-21
+
+**Recorded:** 2026-10-02 (UTC)
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Base HEAD:** `0b9567f8f8581bdfde03de718fb07fd5f0f2e1a3`
+**Change kind:** CONTRACT REFINEMENT / MIGRATION — explicit local and transfer modes; bridges preserve local provenance.
+**Status:** targeted positive and negative tests passed; CI pending. See LIVE-21 below.
+**NEXT GO:** Estudo Fino of language-owned assessment retention; no automatic language migration.
+
+## Historical entry checkpoint — JAGUAR-LIVE-20
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -1051,3 +1060,12 @@ Demonstrated: Thinking Mind resolves declared gaps, opportunityOnly/no Evidence;
 Candidate specifications (not implemented): explicit mode local requirement vs transfer; distinct language of exploration and language of adopted assessment, learner/skill/language-correlated Evidence and projection; approved contextual dialogue per Experience/QWord/language rather than generic verb fallback. Do not equate language comparison with Experience transfer. Preserve Xespirito/WAIT/Cycle/router authorities.
 
 NEXT GO: homologate minimum local/transfer contract refinement and its negative tests. Then full per-language impact map before implementation; S2 WHERE corpus/Dependency Focus follows. No runtime or corpus mutation in this checkpoint.
+
+
+## LIVE-21 — Explicit local / transfer separation
+
+Authorized refinement of WHICH, WHAT and WHY Pass Contracts: local use requires `mode: local`; transfer requires `mode: transfer`. Transfer Evidence never substitutes local use. Existing evaluator is reused; no new routing or Green authority.
+
+Implementation extends Evidence bridges and Attempt boundaries to preserve local mode explicitly. Dedicated WHICH local boundaries reject transfer provenance. WHAT/WHY specification sources validate the explicit local requirement. No historical Evidence is relabeled: unspecified-mode use remains insufficient under this refined contract; repeat the genuine local proof if required. Navigation, canonical corpus, UI and learner ownership are unchanged.
+
+Verification: positive complete circuits and negative missing/local/transfer, failed and supported-use cases. EN/ES/PT packet labels are covered; this does not homologate separate language-owned retention. Next Estudo Fino: language ownership impact map, then S2 WHERE contextual corpus and Dependency Focus. No expansion to other Question Words in this checkpoint.
