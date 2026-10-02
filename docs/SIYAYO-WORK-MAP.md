@@ -18,7 +18,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-18
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-19
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -1029,3 +1029,14 @@ Editing opens without provider/reset/readiness/render calls. Cancel and confirma
 Validation: compact surface tests in all languages cover initial/ready/editing/cancel/blank/same/different nick and DOM order; existing identity, isolation and QWord replay regressions; CI and preview after publication. Visual homologation pending: compact nick position, long nickname wrapping, keyboard/mobile controls and cancellation retaining trail.
 
 NEXT GO: homologate compact visual on laptop and smartphone EN/ES/PT; then return to corpus/QWord coverage mapping, keeping language isolation/local versus transfer audit issues open.
+
+
+## JAGUAR-LIVE-19 — read-only QWord coverage audit
+
+Classification: DOCUMENTATION / ESTUDO FINO. Explicit GO 2026-10-02; base 3f97d8b. Nick compact from LIVE-18 visually/functionally homologated by user; all CI checks passed. Audit: [QWord Experience coverage](siyayo-qword-experience-coverage-audit.md).
+
+Scope: 4 runtime Experiences, 21 Thinking Mind entries (63 EN/ES/PT question+label pairs), 8 of 14 QWords present. Dependency Focus: S1 WHAT/WHICH and S2 WHAT/WHICH. Head diagnostics: S1 WHAT/WHICH only. Evaluation starts: S1 WHICH, S1/S2 WHAT, S3 WHY. All four canonical probe routes resolve in EN/ES/PT.
+
+OPEN contract findings: generic use requirement can be fulfilled by transfer packet; reproduced with two packets in evaluateContract for all three skills, not a claim about browser Evidence issuance. retained learner|skill has no language key; independent language Green Pass remains unhomologated. Generic LINES fallback does not prove contextual response fit. Preserve JSON/runtime until explicit contract homologation.
+
+NEXT GO: align local vs transfer and language unit first; then S2 WHERE contextual dialogue/Dependency Focus study, alongside structural gaps of current pilots. No JS/CSS/HTML/JSON changes in this checkpoint.
