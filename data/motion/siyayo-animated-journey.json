@@ -113,5 +113,24 @@
     "portalRevealDoesNotNavigateAutomatically": true,
     "navigationRequiresApprovedReceiver": true,
     "reducedMotionPreservesSemanticOrder": true
+  },
+  "environment": {
+    "registry": "data/environments/siyayo-environments.json",
+    "sharedController": "js/siyayo-environment-controller.js",
+    "sharedCss": "css/siyayo-environments.css",
+    "default": "cosmic-night",
+    "developerChoices": [
+      "auto-local-time",
+      "cosmic-night",
+      "forest-day",
+      "forest-night",
+      "river-dawn",
+      "nice-party-evening"
+    ],
+    "future": {
+      "weatherAware": "open",
+      "externalContextBinding": "supported-via-siyayo:set-environment"
+    },
+    "boundary": "Environment never creates Evidence, GREEN, Session or assessment state."
   }
 }
