@@ -18,7 +18,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-15
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-16
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -886,7 +886,7 @@ Read-only audit of the exact branch runtime/UI around `contrast-review`, Xespiri
 
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
 **State:** ACTIVE implementation line.  
-**Checkpoint:** `JAGUAR-LIVE-15`.  
+**Checkpoint:** `JAGUAR-LIVE-16`.  
 **Current work:** WHAT LINES/Preparing responses and anonymous Shopping Head practice connected; visual homologation pending; broader anonymous answer practice remains OPEN.
 
 ## B. SIYAYO presentation / audiences / profiles
@@ -991,3 +991,17 @@ WAIT: do not shorten or remove canonical alternatives, duplicate assessment auth
 Validation: existing WHAT EN/ES/PT cycles and presentation tests; DOM pagination test confirms two visible candidates, previous/next traversal and zero Attempts from presentation paging. Automated raster layout inspection could not run because the local Chromium executable is unavailable and its download failed; laptop/smartphone visual homologation remains OPEN for the live preview.
 
 NEXT GO: verify WHAT full responses beside LINES in EN/ES/PT, two candidates per page without a scroll jump; select responses through the unchanged S1→S2 and S2→S3 contracts. Then proceed with the next mapped QWord gap.
+
+
+
+## JAGUAR-LIVE-16 — approved visual study execution
+
+EXTENSION of presentation, explicitly authorized 2026-10-02 after Estudo Fino. Base HEAD 9d6dc6b. Shared typography-only sheet supplies existing Chapters font declarations (Quicksand interface 600–700, Nunito Sans reading). It does not import Chapters layout. EXPERIENCE dialogue/canonical cards are centered consistently across QWords; primary response text remains >=1rem and secondary token classifications .7rem. Speakers use the Chapters SVG geometry, gold, on the left; audio selectors, handlers and support provenance stay intact. Two literal backslash-n CSS separators in Dependency Focus are normalized.
+
+A pure study-target presenter consumes questionWordLabel for the active corpus/language and escapes all text. Unicode whole-expression boundaries prevent highlighting substrings; composite labels remain whole. WHAT/WHY object/reason probe questions use their own Experience corpus label; question-function probes and alternatives stay neutral to avoid revealing the tested QWord. No metadata is inferred or translated. Missing labels yield plain text. Existing semantic-axis HTML is preserved. Dourado focus does not imply navigation or mastery.
+
+WAIT: no JSON/text/Pass Contract change, no Nick movement, no module relocation or pagination change, no new Evidence/runtime authority. Language isolation and local/transfer contract issues remain OPEN from the read-only audit. Shared Responsive Contract from Piano is not applied without its separate reading/homologation.
+
+Validation: target boundaries, composite/diacritic cases, HTML escaping, real EN/ES/PT seed labels, neutral question-function exceptions, existing audio separation and canonical cycle regressions. CI and live preview must be checked after publication; laptop/smartphone and text zoom remain user visual homologation, not inferred from tests.
+
+NEXT GO: visually inspect Shopping/Preparing/Having/After Dinner EN/ES/PT, WHICH reference first; confirm centered gold targets and speakers, no lost selections or progress. Then return to Nick compact study or corpus gap mapping under separate approval.

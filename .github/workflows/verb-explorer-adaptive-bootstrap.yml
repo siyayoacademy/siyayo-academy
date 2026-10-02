@@ -381,3 +381,7 @@ jobs:
 
       - name: Test explicit QWord selection replay after nick
         run: node scripts/test-qword-nick-entry-replay.js
+
+
+      - name: Test canonical study target presentation
+        run: node scripts/test-study-target-presentation.js

@@ -103,6 +103,12 @@ function mount(input){
     }
   });
   if(installed!==true)return false;
+  // Presentation follows this probe's corpus, independent of the explored QWord.
+  var targetPresentation=root.SIYAYOStudyTargetPresentation;
+  var targetQuestion=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='which';});
+  var promptNode=typeof container.querySelector==='function'?container.querySelector('.determiner-use-probe-prompt, .determiner-use-transfer-probe-prompt'):null;
+  if(targetPresentation&&promptNode)promptNode.innerHTML=targetPresentation.highlight(promptNode.textContent,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
+
   el.hidden=false;
   var title=typeof el.querySelector==='function'?el.querySelector('h3'):null;
   if(title)title.textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':language==='pt'?'QUAL · USO DO DETERMINANTE':'WHICH · DETERMINER USE';
@@ -111,3 +117,4 @@ function mount(input){
 }
 root.SIYAYOVerbExplorerDeterminerUseAssessmentLive=Object.freeze({mount:mount,hide:hide});
 })(typeof globalThis!=='undefined'?globalThis:this);
+

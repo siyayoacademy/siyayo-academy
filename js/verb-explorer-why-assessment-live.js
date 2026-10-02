@@ -63,7 +63,11 @@ function mount(input){
     var label=doc.createElement('h4');label.className='why-probe-step';
     label.textContent=transfer?guidance.transfer:spec.dimension==='question-function'?guidance.function:guidance.local;
     section.appendChild(label);
-    var question=doc.createElement('p');question.className='why-probe-question';question.textContent=spec.question;section.appendChild(question);
+    var question=doc.createElement('p');question.className='why-probe-question';question.textContent=spec.question;
+    var targetQuestion=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='why';});
+    var targetPresentation=root.SIYAYOStudyTargetPresentation;
+    if(spec.dimension==='reason-answer'&&targetPresentation)question.innerHTML=targetPresentation.highlight(spec.question,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
+    section.appendChild(question);
     var options=doc.createElement('div');options.className='why-probe-options';
     spec.alternatives.forEach(function(alternative){
       var button=doc.createElement('button');button.type='button';button.className='why-probe-option';button.textContent=alternative.label;
@@ -101,3 +105,4 @@ function mount(input){
 }
 root.SIYAYOVerbExplorerWhyAssessmentLive=Object.freeze({mount:mount,hide:hide});
 })(typeof globalThis!=='undefined'?globalThis:this);
+

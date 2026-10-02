@@ -72,7 +72,11 @@ function mount(input){
     var label=doc.createElement('h4');label.className='what-probe-step';
     label.textContent=transfer?guidance.transfer:spec.dimension==='question-function'?guidance.function:guidance.local;
     section.appendChild(label);
-    var question=doc.createElement('p');question.className='what-probe-question';question.textContent=spec.question;section.appendChild(question);
+    var question=doc.createElement('p');question.className='what-probe-question';question.textContent=spec.question;
+    var targetQuestion=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='what';});
+    var targetPresentation=root.SIYAYOStudyTargetPresentation;
+    if(spec.dimension==='object-answer'&&targetPresentation)question.innerHTML=targetPresentation.highlight(spec.question,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
+    section.appendChild(question);
     var options=doc.createElement('div');options.className='what-probe-options';
     if(spec.dimension==='object-answer')options.className+=' what-canonical-options';
     var buttons=[];
@@ -139,4 +143,5 @@ function mount(input){
 }
 root.SIYAYOVerbExplorerWhatAssessmentLive=Object.freeze({mount:mount,hide:hide});
 })(typeof globalThis!=='undefined'?globalThis:this);
+
 
