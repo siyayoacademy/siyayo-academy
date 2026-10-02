@@ -18,7 +18,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-19
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-20
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -1040,3 +1040,14 @@ Scope: 4 runtime Experiences, 21 Thinking Mind entries (63 EN/ES/PT question+lab
 OPEN contract findings: generic use requirement can be fulfilled by transfer packet; reproduced with two packets in evaluateContract for all three skills, not a claim about browser Evidence issuance. retained learner|skill has no language key; independent language Green Pass remains unhomologated. Generic LINES fallback does not prove contextual response fit. Preserve JSON/runtime until explicit contract homologation.
 
 NEXT GO: align local vs transfer and language unit first; then S2 WHERE contextual dialogue/Dependency Focus study, alongside structural gaps of current pilots. No JS/CSS/HTML/JSON changes in this checkpoint.
+
+
+## JAGUAR-LIVE-20 — Thinking Mind / Xespirito contract study
+
+Classification: DOCUMENTATION / ESTUDO FINO. Explicit GO 2026-10-02; base 88b35ce. Report: [Thinking Mind and Xespirito boundaries](siyayo-thinking-mind-xespirito-contract-study.md).
+
+Demonstrated: Thinking Mind resolves declared gaps, opportunityOnly/no Evidence; Xespirito detects English functional conflicts and returns no-canonical-diagnostic outside coverage, not semantic answer approval. Multilingual interference preserves review-only hypotheses; contrast verifier consumes externally grounded meaning/form verdicts. Four existing suites passed. Current Explorer manifests do not demonstrate the interference library cable; repairTrace ownership by learner/language remains open.
+
+Candidate specifications (not implemented): explicit mode local requirement vs transfer; distinct language of exploration and language of adopted assessment, learner/skill/language-correlated Evidence and projection; approved contextual dialogue per Experience/QWord/language rather than generic verb fallback. Do not equate language comparison with Experience transfer. Preserve Xespirito/WAIT/Cycle/router authorities.
+
+NEXT GO: homologate minimum local/transfer contract refinement and its negative tests. Then full per-language impact map before implementation; S2 WHERE corpus/Dependency Focus follows. No runtime or corpus mutation in this checkpoint.
