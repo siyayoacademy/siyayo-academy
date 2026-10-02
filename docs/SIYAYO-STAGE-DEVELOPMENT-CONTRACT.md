@@ -683,3 +683,33 @@ Newly admitted canonical items:
 The Piano Stage now consumes the 28-item canonical corpus for Explore and the already protected EN Morphology activity.
 
 Grouping remains pagination only and carries no grammatical meaning, Evidence, or GREEN.
+
+
+## 23. Shared Responsive System — SIYAYO-RESPONSIVE-R-02
+
+Dedicated contract:
+
+`docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md`
+
+Shared implementation:
+
+- `css/siyayo-responsive-stage.css`
+- `js/siyayo-responsive-preview.js`
+
+Status: **R-01 REGISTERED; R-02 IMPLEMENTED; awaiting Piano visual confirmation**.
+
+The Piano Stage has been migrated away from its page-owned preview controller and now consumes the shared implementation.
+
+Protected distinctions:
+
+```
+Development Preview Controller
+≠ Responsive Runtime
+≠ pedagogical state
+```
+
+Real touch-first devices resolve preview mode to Auto and do not require the developer toolbar.
+
+Page-specific responsive rules remain local to `piano/piano.css`, including keyboard dimensions, Frondosa/Pianinho layout and activity-specific Portrait tuning.
+
+Cross-branch adoption remains opt-in. The separate canonical Work Map branch is intentionally unchanged until explicit GO is given in that target branch/context.
