@@ -385,3 +385,7 @@ jobs:
 
       - name: Test canonical study target presentation
         run: node scripts/test-study-target-presentation.js
+
+
+      - name: Test compact learner identity and cancel preservation
+        run: node scripts/test-learner-identity-compact.js

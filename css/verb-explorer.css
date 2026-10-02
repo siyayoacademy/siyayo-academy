@@ -338,3 +338,12 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 @media (prefers-reduced-motion:reduce){
   .experience-panel :is(.living-line,.choice-option,.gear-option,.perspective-options button,.dependency-head-probe-options button,.determiner-use-probe-options button,.determiner-use-transfer-probe-options button,.what-probe-option,.why-probe-option,.line-controls button,.what-answer-pages button,.continue-assessment-here,.toroidal-next.available){transition:none}
 }
+
+/* JAGUAR-LIVE-18 — compact identity projection, no assessment authority. */
+.learner-identity-panel[data-identity-display="compact"]{width:fit-content;max-width:100%;padding:4px 8px;margin:10px auto 14px;border:0;background:transparent}
+.learner-identity-compact{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 14px}
+.learner-identity-compact strong{color:var(--siyayo-gold-primary);font-family:var(--font-display);font-size:1rem;overflow-wrap:anywhere;min-width:0;max-width:100%}
+.learner-identity-compact button,#learnerIdentityCancel{min-height:44px;padding:8px 12px;border:1px solid rgba(242,216,138,.35);border-radius:10px;background:#07162a;color:var(--siyayo-gold-primary);font:inherit;cursor:pointer}
+.learner-identity-panel button:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
+#learnerIdentityEditor>label{display:block;margin-bottom:9px;color:var(--siyayo-gold-primary);font-family:var(--font-display);font-size:.8rem;font-weight:700;letter-spacing:.06em}
+@media(hover:hover) and (pointer:fine){.learner-identity-panel button:not(:disabled):hover{border-color:var(--siyayo-gold-primary);box-shadow:0 0 18px rgba(215,179,90,.18),inset 0 0 12px rgba(242,216,138,.04)}}

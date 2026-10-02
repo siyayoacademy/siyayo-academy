@@ -18,7 +18,7 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-17
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-18
 
 **Recorded:** 2026-09-30 (America/Sao_Paulo)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -1016,3 +1016,16 @@ Reuse Chapters language-line gold halo: 18px outer rgba(215,179,90,.18), 12px in
 Preservation: confirmed QWords keep their green achievement projection; speaking choices keep audio provenance styling. Disabled controls excluded. Halo does not create observation, Evidence, Green Pass, selection, adoption or navigation. No JS/HTML/JSON/text modifications. No movement/resize added; canonical choices retain their position on hover. EN/ES/PT share the same presentation rules.
 
 Validation: review selector scope against the current renderer, existing confirmed/speaking styles and disabled controls; CSS parse check. CI and Cloudflare after publication. User visual homologation: pointer enter/leave on dialogue, choice and NEXT; keyboard Tab on choices/controls; confirm green achievement remains distinct and mobile has no persistent mouse-hover halo.
+
+
+## JAGUAR-LIVE-18 — compact identified learner
+
+Classification: EXTENSION of identity presentation. Explicit GO 2026-10-02, base 468b0a0. Halo from LIVE-17 visually homologated by user; all four CI checks succeeded.
+
+Waiting: keep identification editor above Dependency Focus. Ready: compact nickname and explicit Change learner/Cambiar estudiante/Trocar aluno, immediately after the Dependency Focus DOM anchor and before the head diagnostic. Missing/hidden Dependency Focus remains an independently tracked corpus gap; identity remains accessible. No assessment gate added.
+
+Editing opens without provider/reset/readiness/render calls. Cancel and confirmation of the same trimmed nickname close the editor preserving Session. Empty nickname rejected, not treated as accidental identity removal. Only a confirmed nonempty different nickname uses existing canonical provider; it retains its learner authority reset contract. Successful confirmation preserves explicit QWord selection replay/readiness; no new login, persistence, Evidence or Green Pass authority. Safe textContent for user nick. Render refresh updates independent EN/ES/PT interface labels and placement without evaluation or input overwrite during editing.
+
+Validation: compact surface tests in all languages cover initial/ready/editing/cancel/blank/same/different nick and DOM order; existing identity, isolation and QWord replay regressions; CI and preview after publication. Visual homologation pending: compact nick position, long nickname wrapping, keyboard/mobile controls and cancellation retaining trail.
+
+NEXT GO: homologate compact visual on laptop and smartphone EN/ES/PT; then return to corpus/QWord coverage mapping, keeping language isolation/local versus transfer audit issues open.
