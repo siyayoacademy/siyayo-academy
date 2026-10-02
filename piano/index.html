@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Piano SIYAYO Stage</title>
-  <link rel="stylesheet" href="./piano.css">
+  <link rel="stylesheet" href="../css/siyayo-responsive-stage.css">\n  <link rel="stylesheet" href="./piano.css">
 </head>
 <body>
-  <div class="dev-preview-toolbar" id="devPreviewToolbar" aria-label="Responsive preview tools">
+  <div class="dev-preview-toolbar" id="devPreviewToolbar" data-siyayo-responsive-toolbar aria-label="Responsive preview tools">
     <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
     <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
     <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
   </div>
 
-  <div class="stage-viewport" id="stageViewport" data-preview="auto">
+  <div class="stage-viewport" id="stageViewport" data-siyayo-responsive-viewport data-preview="auto">
   <main class="piano-stage" id="pianoStage" data-theme="sound">
     <header class="stage-header">
       <a class="home-link" href="../index.html" aria-label="Back to SIYAYO Academy">🦁</a>
