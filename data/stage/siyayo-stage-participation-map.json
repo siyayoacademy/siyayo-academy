@@ -808,5 +808,35 @@
       "share"
     ],
     "stageContract": "Two equal 14-item Frondosa windows; grouping remains pagination only."
+  },
+  "sharedResponsiveContract": {
+    "id": "siyayo-stage-container-responsive-contract",
+    "path": "docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md",
+    "status": "R-02-implemented-awaiting-piano-visual-confirmation",
+    "commonFiles": [
+      "css/siyayo-responsive-stage.css",
+      "js/siyayo-responsive-preview.js"
+    ],
+    "origin": "Piano Stage",
+    "reusableFor": [
+      "Piano",
+      "Verb DNA",
+      "Tri-Language Verb Explorer",
+      "Experience pages",
+      "future SIYAYO modules"
+    ],
+    "invariants": [
+      "development preview controller is distinct from real-device responsive runtime",
+      "touch-first real devices use Auto and do not require the preview toolbar",
+      "pages consume the shared controller instead of recreating Auto/Portrait/Landscape",
+      "page-specific responsive overrides are allowed without forking the shared controller",
+      "cross-branch adoption requires explicit GO in the target branch"
+    ],
+    "workMap": {
+      "canonicalPath": "docs/SIYAYO-WORK-MAP.md",
+      "currentLocation": "jaguar/verb-explorer-resume-live-wire",
+      "status": "not-mutated-from-piano-branch",
+      "next": "register reference there only after explicit target-branch authorization"
+    }
   }
 }
