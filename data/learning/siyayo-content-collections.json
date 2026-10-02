@@ -162,7 +162,7 @@
         "es": "Verbos",
         "pt": "Verbos"
       },
-      "status": "canonical-28-grouped-explore-morphology-prototype",
+      "status": "canonical-28-grouped-explore-morphology-function",
       "layers": [
         "meaning-function",
         "tense",
@@ -170,7 +170,8 @@
         "mode"
       ],
       "activities": [
-        "explore-collection"
+        "explore-collection",
+        "inspect-function"
       ],
       "source": {
         "branch": "jaguar/verb-explorer-resume-live-wire",
@@ -499,6 +500,33 @@
             "range": "15-28"
           }
         ]
+      },
+      "functionActivity": {
+        "source": {
+          "branch": "jaguar/verb-explorer-resume-live-wire",
+          "path": "data/lexicon/verbs/actions.json",
+          "field": "verbFunction"
+        },
+        "canonicalAxis": [
+          "quality",
+          "state",
+          "movement",
+          "action",
+          "existence"
+        ],
+        "currentCoverage": [
+          "state",
+          "movement",
+          "action"
+        ],
+        "overlapAllowed": true,
+        "evidence": "none"
+      },
+      "scaleTarget": {
+        "minimumCanonicalVerbs": 200,
+        "windowSize": 14,
+        "naturalFullWindowMilestone": 210,
+        "rule": "Corpus-first admission; Stage windows are pagination only."
       }
     },
     {
