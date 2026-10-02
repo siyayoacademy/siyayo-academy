@@ -1,0 +1,146 @@
+:root{
+  --journey-gold:#d7b35a;
+  --journey-gold-light:#f2d88a;
+  --journey-night:#020918;
+  --journey-panel:rgba(7,22,49,.82);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:radial-gradient(circle at 50% 18%,#102c55 0,#06152d 34%,#020918 72%);
+  color:#fff;
+}
+.journey-stage{
+  width:min(1180px,100%);
+  min-height:100vh;
+  margin:0 auto;
+  padding:20px;
+}
+.journey-header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  text-align:center;
+  justify-content:center;
+}
+.home-link{
+  position:absolute;
+  left:20px;
+  top:24px;
+  text-decoration:none;
+  font-size:1.6rem;
+}
+.eyebrow{margin:0;color:var(--journey-gold-light);letter-spacing:.16em;font-size:.72rem}
+h1{margin:.2rem 0;font-size:clamp(1.7rem,4vw,3rem)}
+.subtitle{margin:0;color:#cbd8ed}
+.journey-scene{
+  position:relative;
+  min-height:62vh;
+  margin:22px auto 14px;
+  overflow:hidden;
+  border:1px solid rgba(242,216,138,.34);
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 50% 38%,rgba(215,179,90,.14),transparent 34%),
+    linear-gradient(180deg,rgba(13,34,66,.88),rgba(3,11,26,.96));
+  box-shadow:0 22px 70px rgba(0,0,0,.45),inset 0 0 45px rgba(215,179,90,.06);
+  touch-action:pan-y;
+}
+.layer{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .66s cubic-bezier(.25,.8,.25,1),transform .66s cubic-bezier(.25,.8,.25,1)}
+.scene-copy{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:min(82%,720px);
+  transform:translate(-50%,-50%);
+  text-align:center;
+  z-index:20;
+}
+.scene-id{
+  display:inline-flex;
+  min-width:48px;
+  justify-content:center;
+  padding:6px 10px;
+  border:1px solid rgba(242,216,138,.45);
+  border-radius:999px;
+  color:var(--journey-gold-light);
+  background:rgba(2,9,24,.62);
+}
+.scene-copy h2{font-size:clamp(2rem,7vw,5.2rem);margin:.55rem 0 .4rem;color:#fff;text-shadow:0 0 24px rgba(242,216,138,.18)}
+.scene-copy p{margin:0 auto;color:#cbd8ed;font-size:clamp(.9rem,2vw,1.1rem)}
+.portal-surface{
+  position:absolute;
+  z-index:30;
+  left:50%;
+  bottom:26px;
+  transform:translateX(-50%);
+  width:min(88%,520px);
+  padding:12px;
+  border-radius:18px;
+  text-align:center;
+  border:1px solid rgba(242,216,138,.4);
+  background:rgba(2,9,24,.8);
+  backdrop-filter:blur(8px);
+}
+.portal-button,.journey-controls button{
+  border:1px solid rgba(242,216,138,.48);
+  border-radius:999px;
+  background:rgba(14,44,82,.84);
+  color:#fff;
+  padding:10px 16px;
+  font:inherit;
+  cursor:pointer;
+}
+.portal-button{color:#1c1507;background:var(--journey-gold-light);font-weight:700}
+.portal-surface small{display:block;margin-top:7px;color:#aebfd8}
+.journey-controls{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.journey-footer{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:14px;
+  color:#8799b6;
+  font-size:.78rem;
+}
+.journey-stage[data-scene="W0"] .layer-iris,
+.journey-stage[data-scene="W1"] .layer-eagle,
+.journey-stage[data-scene="W1"] .layer-branch,
+.journey-stage[data-scene="W2"] .layer-seed,
+.journey-stage[data-scene="W2"] .layer-branch,
+.journey-stage[data-scene="W3"] .layer-seed,
+.journey-stage[data-scene="W4"] .layer-frondosa,
+.journey-stage[data-scene="W4"] .layer-seed,
+.journey-stage[data-scene="W5"] .layer-trunk,
+.journey-stage[data-scene="W5"] .layer-seed,
+.journey-stage[data-scene="W6"] .layer-roots,
+.journey-stage[data-scene="W6"] .layer-seed,
+.journey-stage[data-scene="W7"] .layer-jaguar,
+.journey-stage[data-scene="W8"] .layer-patita,
+.journey-stage[data-scene="W8"] .layer-seed{opacity:1}
+
+.stage-viewport[data-preview="portrait"] .journey-stage{padding:12px}
+.stage-viewport[data-preview="portrait"] .journey-scene{min-height:70vh;border-radius:22px}
+.stage-viewport[data-preview="portrait"] .journey-header{padding-top:42px}
+.stage-viewport[data-preview="portrait"] .home-link{left:14px;top:16px}
+.stage-viewport[data-preview="landscape"] .journey-scene{min-height:58vh}
+
+@media (max-width:600px){
+  .journey-stage{padding:10px}
+  .journey-header{padding-top:42px}
+  .home-link{left:12px;top:14px}
+  .journey-scene{min-height:72vh;border-radius:20px}
+  .journey-footer{justify-content:center;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  .layer{transition:none!important}
+}
