@@ -2708,3 +2708,55 @@ h1 {
     margin-inline:28%;
   }
 }
+
+
+/* =========================================================
+   VERB FUNCTION v0.1
+   Canonical semantic function; independent from morphology.
+   ========================================================= */
+.stage[data-collection="verbs"][data-activity="function"] .frondosa {
+  border-radius:28px;
+  background:radial-gradient(ellipse at 50% 48%, rgba(87,128,205,.10), rgba(12,35,69,.04) 62%, transparent 76%);
+}
+
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus {
+  transform:scale(1.08);
+  z-index:8;
+}
+
+/* ACTION = solid lexical-doing frame. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-action {
+  outline:2px solid rgba(242,216,138,.88);
+  outline-offset:3px;
+}
+
+/* MOVEMENT = directional side echoes, not color alone. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-movement {
+  box-shadow:
+    -10px 0 0 -7px rgba(135,198,255,.88),
+    10px 0 0 -7px rgba(135,198,255,.88),
+    0 0 18px rgba(135,198,255,.30);
+}
+
+/* STATE = calm double frame. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-state {
+  border-style:double;
+  border-width:3px;
+  box-shadow:0 0 0 3px rgba(189,174,255,.24), 0 0 18px rgba(189,174,255,.20);
+}
+
+/* Reserved visual contracts for future corpus members. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-quality {
+  border-radius:50%;
+}
+
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-existence {
+  outline:3px dotted rgba(190,236,196,.88);
+  outline-offset:4px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus {
+    transform:none;
+  }
+}
