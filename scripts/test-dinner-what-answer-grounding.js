@@ -62,7 +62,7 @@ assert.equal(transfer[0].answerGrounding, undefined, 'S1 transfer remains a sepa
 assert.equal(whatSkill.id, 'what.use.object-question');
 assert.deepEqual(whatSkill.passContract.requires, [
   {dimension: 'question-function', result: 'pass'},
-  {dimension: 'object-answer', result: 'pass', support: 'none'},
+  {dimension: 'object-answer', result: 'pass', support: 'none', mode: 'local'},
   {dimension: 'object-answer', result: 'pass', mode: 'transfer', support: 'none'}
 ]);
 assert.ok(greenPolicy.includes("'what.use.object-question'"), 'WHAT Green authority requires observed probes');

@@ -38,6 +38,7 @@ const localDeterminerEvidence = Object.freeze({
   skill: 'which.use.determiner',
   dimension: 'determiner-use',
   result: 'pass',
+  mode: 'local',
   support: 'none',
   context: Object.freeze({
     occurrenceId: 'determiner-use-probe-select:1',

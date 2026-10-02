@@ -55,6 +55,7 @@ const localAttempt = Object.freeze({
   skill: 'which.use.determiner',
   dimension: 'determiner-use',
   result: 'pass',
+  mode: 'local',
   support: 'none',
   context: Object.freeze({
     occurrenceId: 'determiner-use-probe-select:1',
@@ -78,7 +79,7 @@ assert.equal(result.evidencePacket.result, 'pass');
 assert.equal(result.evidencePacket.support, 'none');
 assert.equal(
   Object.prototype.hasOwnProperty.call(result.evidencePacket, 'mode'),
-  false,
+  true,
   'local determiner-use evidence must remain non-transfer'
 );
 
