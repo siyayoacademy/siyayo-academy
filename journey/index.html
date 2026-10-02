@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated SIYAYO Journey</title>
+  <link rel="stylesheet" href="../css/siyayo-responsive-stage.css">
+  <link rel="stylesheet" href="./journey.css">
+</head>
+<body>
+  <div class="dev-preview-toolbar" id="devPreviewToolbar" data-siyayo-responsive-toolbar aria-label="Responsive preview tools">
+    <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
+    <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
+    <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
+  </div>
+
+  <div class="stage-viewport" id="stageViewport" data-siyayo-responsive-viewport data-preview="auto">
+    <main class="journey-stage" id="journeyStage" data-scene="W0" aria-live="polite">
+      <header class="journey-header">
+        <a class="home-link" href="../index.html" aria-label="Back to SIYAYO Academy">🦁</a>
+        <div>
+          <p class="eyebrow">SIYAYO ACADEMY</p>
+          <h1>Welcome Aboard</h1>
+          <p class="subtitle">Animated SIYAYO Journey · canonical entrance route</p>
+        </div>
+      </header>
+
+      <section class="journey-scene" id="journeyScene" tabindex="0" aria-label="Animated Journey scene">
+        <div class="layer layer-environment" data-layer="environment"></div>
+        <div class="layer layer-iris" data-layer="celestial-iris"></div>
+        <div class="layer layer-eagle" data-layer="golden-eagle"></div>
+        <div class="layer layer-branch" data-layer="golden-branch"></div>
+        <div class="layer layer-seed" data-layer="golden-seed"></div>
+        <div class="layer layer-frondosa" data-layer="frondosa"></div>
+        <div class="layer layer-trunk" data-layer="trunk"></div>
+        <div class="layer layer-roots" data-layer="roots-ground"></div>
+        <div class="layer layer-jaguar" data-layer="jaguar"></div>
+        <div class="layer layer-patita" data-layer="patita"></div>
+        <div class="layer layer-particles" data-layer="illumination-particles"></div>
+
+        <div class="scene-copy">
+          <span class="scene-id" id="sceneId">W0</span>
+          <h2 id="sceneTitle">Celestial Iris</h2>
+          <p id="sceneHint">Swipe or use Next to begin the Journey.</p>
+        </div>
+
+        <div class="portal-surface" id="portalSurface" hidden>
+          <button type="button" class="portal-button" id="morphologyPortal">Explore Morphology</button>
+          <small>Mapped capability · navigation receiver not connected yet</small>
+        </div>
+      </section>
+
+      <nav class="journey-controls" aria-label="Journey controls">
+        <button type="button" id="journeyBack">← Back</button>
+        <span id="journeyProgress">1 / 9</span>
+        <button type="button" id="journeyNext">Next →</button>
+      </nav>
+
+      <footer class="journey-footer">
+        <span>Swipe-controlled · Motion DNA</span>
+        <span>No Evidence · No GREEN</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="../js/siyayo-responsive-preview.js"></script>
+  <script src="./journey.js"></script>
+</body>
+</html>
