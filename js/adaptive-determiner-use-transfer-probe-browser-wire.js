@@ -113,6 +113,7 @@
         var observed=binding.learnerEvents.fromDeterminerUseTransferProbeSelect(choice,{
           fromExperienceId:binding.view.fromExperienceId,
           currentExperienceId:binding.view.experienceId,
+          language:binding.view.language,
           dimension:binding.view.dimension,
           mode:binding.view.mode,
           targetForm:binding.view.targetForm,

@@ -25,13 +25,19 @@
     });
   }
 
-  function project(profile,skill){
+  function project(profile,skill,filter){
     skill=text(skill);
     if(!profile||!Array.isArray(profile.observations)||!skill)return null;
 
+    if(filter&&!['en','es','pt'].includes(text(filter.language)))return null;
+    var legacyFootprints=profile.observations.filter(function(entry){return text(entry&&entry.context&&entry.context.skill)===skill&&!(entry.context&&entry.context.assessmentScope);}).length;
     var footprints=profile.observations
       .filter(function(entry){
-        return text(entry&&entry.context&&entry.context.skill)===skill;
+        var context=entry&&entry.context||{},scope=context.assessmentScope;
+        return text(context.skill)===skill&&(!filter||(
+          scope&&scope.learnerId===profile.id&&scope.skill===skill&&scope.language===filter.language&&
+          context.language===filter.language&&scope.key===JSON.stringify([scope.learnerId,scope.skill,scope.language,scope.originExperienceId])&&
+          (!filter.originExperienceId||scope.originExperienceId===filter.originExperienceId)));
       })
       .map(freezeFootprint);
 
@@ -52,6 +58,7 @@
       skill:skill,
       state:state,
       counts:Object.freeze({
+        ...(filter?{legacyFootprints:legacyFootprints,language:filter.language}:{}),
         footprints:footprints.length,
         greenPassClosures:greenPassClosures
       }),

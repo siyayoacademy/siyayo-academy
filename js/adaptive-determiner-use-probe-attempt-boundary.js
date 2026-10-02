@@ -19,6 +19,7 @@
     var evidence=input.evidence;
 
     if(!event||!evidence)return null;
+    if(evidence.context&&evidence.context.language&&text(evidence.context.language)!==text(event.language))return null;
     if(evidence.mode!=='local'||(text(event.mode)&&text(event.mode)!=='local')||
        text(event.fromExperienceId)||text(evidence.context&&evidence.context.fromExperienceId))return null;
     if(event.observed!==true||event.actor!=='learner')return null;
@@ -55,6 +56,7 @@
 
     var context=Object.freeze({
       occurrenceId:occurrenceId,
+      ...(evidence.context&&evidence.context.language?{language:text(evidence.context.language)}:{}),
       experienceId:experienceId,
       targetForm:'which',
       targetNoun:targetNoun,

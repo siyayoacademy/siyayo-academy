@@ -20,6 +20,7 @@
     var supportSensor=input.supportSensor;
 
     if(!result||!learnerEvent)return null;
+    if(result.language&&text(result.language)!==text(learnerEvent.language))return null;
     if(!supportSensor||typeof supportSensor.support!=='function')return null;
 
     var occurrenceId=text(result.occurrenceId);
@@ -57,6 +58,7 @@
       support:support,
       context:Object.freeze({
         occurrenceId:occurrenceId,
+        ...(result.language?{language:text(result.language)}:{}),
         fromExperienceId:fromExperienceId,
         experienceId:experienceId,
         targetForm:'which',

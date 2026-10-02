@@ -70,7 +70,7 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerAdaptiveReady)
 
     // The Explorer state may also become ready after page bootstrap. StateBridge reads it;
     // no Experience→Skill inference or writable StateBridge seam is introduced.
-    resumeContext={currentExperienceId:'shopping-for-dinner'};
+    resumeContext={currentExperienceId:'shopping-for-dinner',experienceLanguage:'en'};
 
     assert.equal(await live.tryCompose({document:sandbox.document}),true,'late explicit authorities must ground one live Session');
     const first=coordinator.snapshot();

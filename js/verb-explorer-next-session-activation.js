@@ -63,14 +63,21 @@
     var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
     var experiences=catalog&&typeof catalog.getExperiences==='function'
       ?catalog.getExperiences():Object.freeze([]);
-    var context=Object.freeze({
+    var scope=session.decision.assessmentScope,scopeApi=root.AdaptiveAssessmentScope;
+    if(scopeApi&&(!scopeApi.valid(scope)||scope.learnerId!==greenProfile.id||scope.language!==text(input.language)))return null;
+    var context=Object.freeze(Object.assign({},scope?{assessmentScope:scope,language:scope.language}:{},{
       skill:skill,
       currentExperience:experienceId,
       passContract:passContract,
       experiences:experiences,
       evidencePackets:evidencePackets
-    });
+    }));
 
+    var retention=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+    var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+    var previous=coordinator&&coordinator.snapshot&&coordinator.snapshot();
+    var oldDefinition=input.previousDefinition;
+    if(retention&&previous&&oldDefinition&&typeof retention.remember==='function')retention.remember(previous,oldDefinition);
     var configured=coordinatorConfig.configure({
       profile:greenProfile,
       session:session,

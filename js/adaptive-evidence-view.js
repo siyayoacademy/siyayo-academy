@@ -11,14 +11,15 @@
     }));
   }
 
-  function bySkill(profile, skill) {
+  function bySkill(profile, skill, scope) {
     if (!profile || !Array.isArray(profile.observations)) return Object.freeze([]);
     if (typeof skill !== 'string' || !skill.trim()) return Object.freeze([]);
 
     const expected = skill.trim();
     const matches = profile.observations
       .filter(function (entry) {
-        return entry && entry.context && entry.context.skill === expected;
+        return entry && entry.context && entry.context.skill === expected &&
+          (!scope || (entry.context.assessmentScope && entry.context.assessmentScope.key === scope.key && entry.context.language === scope.language && profile.id === scope.learnerId));
       })
       .map(function (entry) {
         const context = entry.context || {};

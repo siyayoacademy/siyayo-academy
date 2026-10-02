@@ -18,6 +18,7 @@ function event(choice, overrides = {}) {
   return {
     observed: true,
     actor: 'learner',
+    language: 'en',
     relevantToWait: true,
     intent: 'continue',
     type: 'learner-response',
@@ -36,6 +37,7 @@ function event(choice, overrides = {}) {
 
 const correct = Result.evaluate(specification, event('carrots'));
 assert.deepEqual(correct, {
+  language: 'en',
   occurrenceId: 'determiner-use-transfer-probe-select:1',
   fromExperienceId: 'shopping-for-dinner',
   experienceId: 'preparing-dinner',

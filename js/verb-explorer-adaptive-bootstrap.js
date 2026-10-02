@@ -20,7 +20,9 @@
   root.SIYAYOVerbExplorerAdaptiveReady = runtime.load().then(function(cycle){
     if(!cycle||typeof cycle.submit!=='function')return null;
     if(typeof document==='undefined')return cycle;
-    return ensureGlobal('SIYAYOVerbExplorerLearnerEvent','js/verb-explorer-learner-event.js')
+    return ensureGlobal('AdaptiveAssessmentScope','js/adaptive-assessment-scope.js')
+      .then(function(scope){if(!scope||typeof scope.create!=='function')throw new Error('Assessment scope authority missing');
+        return ensureGlobal('SIYAYOVerbExplorerLearnerEvent','js/verb-explorer-learner-event.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveController','js/verb-explorer-adaptive-controller.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveInputProvider','js/verb-explorer-adaptive-input-provider.js');})
       .then(function(){return ensureGlobal('SIYAYOVerbExplorerAdaptiveStateBridge','js/verb-explorer-adaptive-state-bridge.js');})

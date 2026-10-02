@@ -26,6 +26,24 @@ function text(value){
   return typeof value==='string'?value.trim():'';
 }
 
+function key(learnerId,skill,state){
+  var api=root.AdaptiveAssessmentScope;
+  if(!api)return learnerId+'|'+skill; // compatibility for non-live unscoped consumers
+  var scope=api.create({learnerId:learnerId,skill:skill,language:state&&state.experienceLanguage,
+    originExperienceId:state&&state.currentExperienceId});
+  return scope&&scope.key;
+}
+function remember(snapshot,definition){
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  var learnerId=identity&&identity.getId&&identity.getId();
+  var decision=snapshot&&snapshot.session&&snapshot.session.decision;
+  if(!learnerId||!decision||!definition||definition.id!==decision.skill)return false;
+  var api=root.AdaptiveAssessmentScope,scope=decision.assessmentScope;
+  if(api&&(!api.valid(scope)||scope.learnerId!==learnerId))return false;
+  var cacheKey=api?scope.key:learnerId+'|'+decision.skill;
+  retained[cacheKey]={snapshot:snapshot,definition:definition};
+  return true;
+}
 function select(question,options){
   options=options||{};
   // A new anonymous selection supersedes the previous pending target, even
@@ -46,30 +64,38 @@ function select(question,options){
   var learnerId=identity&&typeof identity.getId==='function'?identity.getId():null;
   var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var active=coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
+  var scopeApi=root.AdaptiveAssessmentScope;
+  var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+  var liveState=stateBridge&&stateBridge.getState&&stateBridge.getState();
+  if(scopeApi&&(!liveState||!['en','es','pt'].includes(liveState.experienceLanguage)))return Promise.resolve(false);
   if(!learnerId){
     var bridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
     var state=bridge&&bridge.getState&&bridge.getState();
-    pendingSelection=Object.freeze({question:question,experienceId:state&&state.currentExperienceId});
+    pendingSelection=Object.freeze({question:question,experienceId:state&&state.currentExperienceId,
+      language:state&&state.experienceLanguage});
   }
-  if(active&&active.session&&active.session.decision&&active.session.decision.skill===skill)
+  if(active&&active.session&&active.session.decision&&active.session.decision.skill===skill&&
+    (!scopeApi||(scopeApi.valid(active.session.decision.assessmentScope)&&
+      active.session.decision.assessmentScope.learnerId===learnerId&&
+      active.session.decision.assessmentScope.language===liveState.experienceLanguage)))
     return Promise.resolve(true);
-  var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
-  var liveState=stateBridge&&stateBridge.getState&&stateBridge.getState();
+  var requestedKey=learnerId&&key(learnerId,skill,liveState);
+  var saved=requestedKey&&retained[requestedKey];
   if(learnerId&&active&&active.session&&liveState&&
-    active.session.decision.experienceId!==liveState.currentExperienceId)return Promise.resolve(false);
+    active.session.decision.experienceId!==liveState.currentExperienceId&&!saved)return Promise.resolve(false);
   if(learnerId&&active&&active.session){
     var oldSkill=active.session.decision&&active.session.decision.skill;
     var skillSource=root.SIYAYOVerbExplorerCanonicalSkillSource;
     var definition=skillSource&&skillSource.getDefinition&&skillSource.getDefinition();
     if(oldSkill&&definition&&definition.id===oldSkill)
-      retained[learnerId+'|'+oldSkill]={snapshot:active,definition:definition};
+      remember(active,definition);
   }
   if(learnerId&&active&&coordinator&&typeof coordinator.clear==='function')coordinator.clear();
   if(learnerId)['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
     'SIYAYOVerbExplorerCanonicalSkillLoader'].forEach(function(name){
     var api=root[name];if(api&&typeof api.clear==='function')api.clear();
   });
-  var saved=learnerId&&retained[learnerId+'|'+skill];
+  if(scopeApi&&learnerId&&!requestedKey)return Promise.resolve(false);
   if(saved){
     var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
     var config=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
@@ -110,10 +136,11 @@ function resumeForIdentity(){
   if(!pending||!identity||!identity.getId()||(active&&active.session))return Promise.resolve(false);
   if(!runtime||typeof runtime.activeQuestionWord!=='function'||typeof runtime.activeExperienceId!=='function'||
     runtime.activeQuestionWord()!==pending.question.questionWord||
-    runtime.activeExperienceId()!==pending.experienceId)return Promise.resolve(false);
+    runtime.activeExperienceId()!==pending.experienceId||
+    (root.AdaptiveAssessmentScope&&runtime.activeLanguage&&runtime.activeLanguage()!==pending.language))return Promise.resolve(false);
   pendingSelection=null;
   return select(pending.question);
 }
 
-root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity});
+root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,remember:remember});
 })(typeof globalThis!=='undefined'?globalThis:this);

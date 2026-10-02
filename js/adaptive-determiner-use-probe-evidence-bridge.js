@@ -20,6 +20,7 @@
     var supportSensor=input.supportSensor;
 
     if(!result||!learnerEvent)return null;
+    if(result.language&&text(result.language)!==text(learnerEvent.language))return null;
     // This dedicated bridge can attest local use only, never relabel transfer.
     if((text(result.mode)&&text(result.mode)!=='local')||
        (text(learnerEvent.mode)&&text(learnerEvent.mode)!=='local')||
@@ -51,6 +52,7 @@
       support:support,
       context:Object.freeze({
         occurrenceId:occurrenceId,
+        ...(result.language?{language:text(result.language)}:{}),
         experienceId:text(result.experienceId),
         targetForm:'which',
         targetNoun:text(result.targetNoun),

@@ -31,6 +31,8 @@ function install(options){
     var skill=skillSource.getSkill&&skillSource.getSkill();
     var contract=skillSource.getPassContract&&skillSource.getPassContract();
     if(!state||!current||!current.session||!current.session.decision||!contract||!skill)return null;
+    var scope=current.session.decision.assessmentScope;
+    if(scope&&scope.language!==state.experienceLanguage)return null;
     if(pending&&pending.status==='S2_ACTIVATION_PENDING'&&pending.activationAuthorized===false&&
       text(state.currentExperienceId)===pending.toExperience&&
       text(current.session.decision.experienceId)===pending.fromExperience&&
@@ -111,13 +113,15 @@ function install(options){
         var state=root.SIYAYOVerbExplorerAdaptiveStateBridge.getState();
         var current=root.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot();
         if(!current||current.session!==ready.session||
-          text(state&&state.currentExperienceId)!==ready.toExperience){
+          text(state&&state.currentExperienceId)!==ready.toExperience||
+          (root.AdaptiveAssessmentScope&&text(state&&state.experienceLanguage)!==ready.language)){
           root.SIYAYOVerbExplorerCanonicalSkillSource.adopt(prepared.previousDefinition);
           return;
         }
         var result=adoption.activate({
           transitionAuthorization:prepared.authorization,
           previousSession:ready.session,
+          previousDefinition:prepared.previousDefinition,
           passContract:prepared.passContract,
           language:ready.language,document:doc,learnerEvent:learnerEvent
         });

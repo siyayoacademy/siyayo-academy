@@ -40,13 +40,18 @@ function compose(input){
   var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
   var canonicalExperiences=catalog&&typeof catalog.getExperiences==='function'
     ?catalog.getExperiences():null;
-  var context=Object.freeze({
+  var scopeApi=root.AdaptiveAssessmentScope;
+  var assessmentScope=scopeApi&&scopeApi.create({learnerId:learnerId,skill:skill,
+    language:state.experienceLanguage,originExperienceId:state.currentExperienceId});
+  if(scopeApi&&!assessmentScope)return false;
+  var scoped=assessmentScope?{assessmentScope:assessmentScope,language:assessmentScope.language}:{};
+  var context=Object.freeze(Object.assign({},scoped,{
     skill:skill,
     currentExperience:state.currentExperienceId,
     passContract:passContract,
     experiences:Array.isArray(canonicalExperiences)?canonicalExperiences:Object.freeze([]),
     evidencePackets:Object.freeze([])
-  });
+  }));
 
   var greenProfile=greenProfileSource.getProfile&&greenProfileSource.getProfile();
   if(greenProfile&&greenProfile.id!==learnerId)return false;
@@ -60,6 +65,7 @@ function compose(input){
 
   var session=sessionSource.begin(evidenceProfile,context);
   if(!session||!session.decision)return false;
+  if(assessmentScope&&!scopeApi.same(assessmentScope,session.decision.assessmentScope))return false;
 
   return coordinatorConfig.configure({
     profile:greenProfile,

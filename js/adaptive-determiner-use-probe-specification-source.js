@@ -81,6 +81,7 @@
 
     return Object.freeze({
       skill:'which.use.determiner',
+      language:language,
       experienceId:text(experience.id),
       dimension:'determiner-use',
       targetForm:'which',

@@ -5,6 +5,13 @@
   function configure(input){
     input=input||{};
     if(!input.profile||!input.session||!input.context)return false;
+    var scope=input.session.decision&&input.session.decision.assessmentScope;
+    if(scope||input.context.assessmentScope){
+      var api=root.AdaptiveAssessmentScope,identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+      if(!api||!api.same(scope,input.context.assessmentScope)||input.profile.id!==scope.learnerId||
+        !identity||identity.getId()!==scope.learnerId||
+        (input.context.evidencePackets||[]).some(function(packet){return !api.ownsPacket(scope,packet);}))return false;
+    }
     current={
       profile:input.profile,
       session:input.session,
@@ -115,6 +122,14 @@
     })===evidenceProfile;
   }
 
+  function groundScopedAttempt(attempt,learnerEvent,state){
+    var scope=current&&current.session&&current.session.decision.assessmentScope;
+    if(!scope)return attempt;
+    var api=root.AdaptiveAssessmentScope,identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+    if(!api||!identity||typeof identity.getId!=='function')return null;
+    return api.bindAttempt({scope:scope,attempt:attempt,learnerEvent:learnerEvent,
+      state:state,learnerId:identity.getId()});
+  }
   function submitChoice(choice,target,observedLearnerEvent){
     if(!current)return null;
     var controller=root.SIYAYOVerbExplorerAdaptiveController;
@@ -147,6 +162,8 @@
       });
       if(!attempt)return null;
     }
+    attempt=groundScopedAttempt(attempt,learnerEvent,state);
+    if(!attempt)return null;
     var resumeState=typeof current.getResumeState==='function'?current.getResumeState(state,target):state;
     if(!resumeState)return null;
     var sourceContext=current.context;
@@ -205,6 +222,8 @@
         catalog:root.SIYAYOVerbExplorerExperienceNavigation
       }))return null;
     }else if(sessionExperience&&attemptExperience&&String(sessionExperience)!==String(attemptExperience))return null;
+    attempt=groundScopedAttempt(attempt,learnerEvent,state);
+    if(!attempt)return null;
     var priorPackets=current.context&&current.context.evidencePackets;
     if(Array.isArray(priorPackets)&&priorPackets.some(function(packet){
       return packet&&packet.context&&String(packet.context.occurrenceId)===String(learnerEvent.occurrenceId);

@@ -19,6 +19,7 @@ const transfer = TransferSource.resolve(which, local, preparing, nouns, 'en');
 assert.ok(transfer, 'preparing-dinner must expose one grounded WHICH determiner transfer probe');
 
 assert.deepEqual(transfer, {
+  language: 'en',
   skill: 'which.use.determiner',
   fromExperienceId: 'shopping-for-dinner',
   experienceId: 'preparing-dinner',

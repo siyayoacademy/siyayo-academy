@@ -59,10 +59,10 @@
       {id:'why.use.contextual-reason',word:'WHY'}
     ];
     var cards=known.map(function(item){
-      var history=trailView.project(profile,item.id);
+      var history=trailView.project(profile,item.id,root.AdaptiveAssessmentScope?{language:language}:null);
       var past=history&&markerAuthority.resolve(history);
       var confirmed=past&&(past.state==='CONFIRMED'||past.state==='CONSOLIDATED_EVIDENCE');
-      var current=item.id===skill;
+      var current=item.id===skill&&(!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===language);
       var state=confirmed?'confirmed':current?'active':'waiting';
       var symbol=confirmed?'●':current&&(past.state==='IN_PROGRESS'||progress&&progress.completed>0)?'◐':'○';
       var description=confirmed?stateLabel('CONFIRMED',language):
@@ -83,7 +83,7 @@
       '<p><b>'+escapeHtml(labels.assessment)+'</b> · '+escapeHtml(currentWord?currentWord.word:skill)+
       (achieved?' · 3/3 · '+escapeHtml(labels.achieved):'')+
       ' · '+escapeHtml(labels.started)+' '+escapeHtml(origin)+'</p>':'';
-    var which=trailView.project(profile,'which.use.determiner');
+    var which=trailView.project(profile,'which.use.determiner',root.AdaptiveAssessmentScope?{language:language}:null);
     var whichMarker=which&&markerAuthority.resolve(which);
     var choiceAccepted=(skill==='which.use.determiner'&&progress&&progress.satisfied[0])||
       (whichMarker&&(whichMarker.state==='CONFIRMED'||whichMarker.state==='CONSOLIDATED_EVIDENCE'));
@@ -134,7 +134,7 @@
     if(!profile||!skill||!label||label.skill!==skill)return false;
     if(identity&&(!learnerId||profile.id!==learnerId))return false;
 
-    var trail=trailView.project(profile,skill);
+    var trail=trailView.project(profile,skill,root.AdaptiveAssessmentScope?{language:language}:null);
     if(!trail)return false;
     var marker=markerAuthority.resolve(trail);
     var sequence=sequenceView.project(trail);
@@ -153,7 +153,7 @@
     var evaluator=options.contractEvaluator||root.GreenPassProfile;
     var snapshot=coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
     var progress=snapshot&&snapshot.session&&snapshot.session.decision&&
-      snapshot.session.decision.skill===skill&&progressView&&typeof progressView.project==='function'
+      snapshot.session.decision.skill===skill&&(!root.AdaptiveAssessmentScope||snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===language)&&progressView&&typeof progressView.project==='function'
       ?progressView.project(snapshot.context&&snapshot.context.passContract,
         snapshot.context&&snapshot.context.evidencePackets,evaluator):null;
     var evidenceLabel={en:'CONTRACT EVIDENCE',es:'EVIDENCIA DEL CONTRATO',pt:'EVIDÊNCIA DO CONTRATO'}[language]||'CONTRACT EVIDENCE';
@@ -229,6 +229,7 @@
         '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
         (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
         (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
+        (trail.counts.legacyFootprints?'<small class="learner-trail-legacy">'+escapeHtml(({en:'HISTORICAL RECORDS',es:'REGISTROS ANTERIORES',pt:'REGISTROS ANTERIORES'}[language]||'HISTORICAL RECORDS')+' · '+trail.counts.legacyFootprints)+'</small>':'')+
         progressHtml+
         '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
         journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language)+

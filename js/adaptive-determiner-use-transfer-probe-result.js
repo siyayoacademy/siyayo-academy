@@ -15,6 +15,8 @@
 
   function evaluate(specification,learnerEvent){
     if(!specification||typeof specification!=='object')return null;
+    if(specification.language&&(!['en','es','pt'].includes(text(specification.language))||
+      text(specification.language)!==text(learnerEvent&&learnerEvent.language)))return null;
     if(!learnerEvent||learnerEvent.observed!==true||learnerEvent.actor!=='learner')return null;
 
     var skill=text(specification.skill);
@@ -64,6 +66,7 @@
       fromExperienceId:fromExperienceId,
       experienceId:experienceId,
       skill:skill,
+      ...(specification.language?{language:text(specification.language)}:{}),
       dimension:dimension,
       mode:'transfer',
       targetForm:targetForm,

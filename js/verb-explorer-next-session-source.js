@@ -49,6 +49,12 @@
     var language=text(input.language);
     var chapter=text(input.chapter);
     if(language)context.language=language;
+    var scopeApi=root.AdaptiveAssessmentScope;
+    if(scopeApi){
+      var scope=scopeApi.create({learnerId:profile.id,skill:skill,language:language,originExperienceId:toExperience});
+      if(!scope)return null;
+      context.assessmentScope=scope;
+    }
     if(chapter)context.chapter=chapter;
 
     return sessionSource.begin(profile,context);

@@ -10,9 +10,10 @@ const specification=require('../js/adaptive-what-object-question-probe-specifica
 const result=require('../js/adaptive-what-object-question-probe-result.js');
 const bridge=require('../js/adaptive-what-object-question-probe-evidence-bridge.js');
 const boundary=require('../js/adaptive-what-object-question-probe-attempt-boundary.js');
+const Scope=require('../js/adaptive-assessment-scope.js');
 const Profile=require('../js/green-pass-profile.js');
 const policy=require('../data/learning/green-pass-authority.json');
-const runtime={Object,Array,Set,AdaptivePedagogicalOrchestrator:{},GreenPassProfile:Profile,
+const runtime={Object,Array,Set,AdaptiveAssessmentScope:Scope,AdaptivePedagogicalOrchestrator:{},GreenPassProfile:Profile,
   AdaptiveAdvanceSelector:{select(){throw Error('Green does not navigate');}},
   GreenPassAuthorityPolicy:policy,
   AdaptiveLearningRouter:{route:()=>({action:'continue-assessment',focus:'assessment'})},
@@ -28,8 +29,9 @@ for (const language of ['en','es','pt']) {
   const oldKey=language+':question-words:'+which.id;
   profile.bySkill[oldKey]={attempts:3,correct:3,accuracy:1,confidence:1,status:'ready'};
   profile.greenPass=true;
-  const session={decision:{skill:skill.id,experienceId:seed[0].id,language},trace:[]};
-  let context={skill:skill.id,currentExperience:seed[0].id,passContract:skill.passContract,evidencePackets:[]};
+  const scope=Scope.create({learnerId:profile.id,skill:skill.id,language,originExperienceId:seed[0].id});
+  const session={decision:{skill:skill.id,experienceId:seed[0].id,language,assessmentScope:scope},trace:[]};
+  let context={assessmentScope:scope,language,skill:skill.id,currentExperience:seed[0].id,passContract:skill.passContract,evidencePackets:[]};
   let greenProfile=profile;
   assert.equal(Profile.evaluateContract(context.passContract,context.evidencePackets).status,'WAITING_FOR_EVIDENCE');
   const sequence=[[specs.functionProbe,'what'],[specs.localProbe,'salmon'],[specs.transferProbe,'tomatoes']];
@@ -40,7 +42,9 @@ for (const language of ['en','es','pt']) {
     });
     const evaluated=result.evaluate(spec,event);
     const evidence=bridge.fromResult({result:evaluated,learnerEvent:event,supportSensor:{support:()=> 'none'}});
-    const attempt=boundary.assemble({learnerEvent:event,evidence});
+    const rawAttempt=boundary.assemble({learnerEvent:event,evidence});
+    const attempt=Scope.bindAttempt({scope,attempt:rawAttempt,learnerEvent:event,state:{experienceLanguage:language},learnerId:profile.id});
+    assert.ok(attempt,'real Event/Result/Evidence/Attempt must carry the assessment language');
     const cycle=runtime.AdaptiveLearningCycle.submit(greenProfile,session,attempt,{...context,learnerEvent:event});
     assert.equal(cycle.operationalAuthority,'contract');
     assert.equal(cycle.contractEligible,index===2);

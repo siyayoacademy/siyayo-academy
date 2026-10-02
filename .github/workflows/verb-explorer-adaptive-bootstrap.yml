@@ -392,3 +392,8 @@ jobs:
 
       - name: Test distinct local and transfer requirements
         run: node scripts/test-local-transfer-contract-separation.js
+
+      - name: Test assessment ownership by learner language and circuit
+        run: |
+          node scripts/test-assessment-language-isolation.js
+          node scripts/test-assessment-language-selection.js

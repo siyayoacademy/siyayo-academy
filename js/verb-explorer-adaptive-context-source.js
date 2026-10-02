@@ -23,6 +23,13 @@ function compose(session,state,baseContext){
   if(base.currentExperience!=null&&String(base.currentExperience)!==String(aligned.currentExperience))return null;
   if(base.passContract&&!isContractSkill(aligned.skill))return null;
 
+  var scope=session&&session.decision&&session.decision.assessmentScope;
+  if(scope){
+    var api=root.AdaptiveAssessmentScope;
+    if(!api||!api.valid(scope)||scope.skill!==aligned.skill||scope.originExperienceId!==aligned.currentExperience||
+       (base.assessmentScope&&!api.same(scope,base.assessmentScope)))return null;
+    base=Object.assign({},base,{assessmentScope:scope,language:scope.language});
+  }
   return Object.freeze(Object.assign({},base,{
     skill:aligned.skill,
     currentExperience:aligned.currentExperience

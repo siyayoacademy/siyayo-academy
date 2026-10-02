@@ -41,6 +41,7 @@ function mount(input){
   var definition=skills.getDefinition&&skills.getDefinition();
   if(!decision||text(decision.skill)!=='what.use.object-question'||
     text(definition&&definition.id)!==text(decision.skill))return false;
+  if(decision.assessmentScope&&decision.assessmentScope.language!==language)return false;
   var origin=catalog.getExperience(text(decision.experienceId));
   if(!origin)return false;
   var to=text(experience.id),from=text(origin.id),transfer=to!==from;

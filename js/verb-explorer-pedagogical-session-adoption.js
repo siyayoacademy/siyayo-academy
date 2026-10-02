@@ -20,6 +20,7 @@ function activate(input){
   return activation.activate({
     transitionAuthorization:authorization,
     previousSession:input.previousSession,
+    previousDefinition:input.previousDefinition,
     passContract:input.passContract,
     language:input.language,
     chapter:input.chapter,

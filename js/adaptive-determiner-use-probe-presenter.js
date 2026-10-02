@@ -54,6 +54,7 @@
 
     return Object.freeze({
       skill:skill,
+      ...(specification.language?{language:text(specification.language)}:{}),
       experienceId:experienceId,
       dimension:dimension,
       targetForm:targetForm,

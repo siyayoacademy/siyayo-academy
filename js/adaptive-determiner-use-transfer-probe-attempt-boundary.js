@@ -19,6 +19,7 @@
     var evidence=input.evidence;
 
     if(!event||!evidence)return null;
+    if(evidence.context&&evidence.context.language&&text(evidence.context.language)!==text(event.language))return null;
     if(event.observed!==true||event.actor!=='learner')return null;
     if(text(event.source)!=='determiner-use-transfer-probe-select')return null;
     if(text(event.mode)!=='transfer'||text(evidence.mode)!=='transfer')return null;
@@ -59,6 +60,7 @@
 
     var context=Object.freeze({
       occurrenceId:occurrenceId,
+      ...(evidence.context&&evidence.context.language?{language:text(evidence.context.language)}:{}),
       fromExperienceId:fromExperienceId,
       experienceId:experienceId,
       targetForm:'which',

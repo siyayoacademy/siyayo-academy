@@ -24,6 +24,9 @@ function inspect(){
   var what=from==='preparing-dinner'&&to==='having-dinner'&&skill==='what.use.object-question';
   if(!which&&!what)return null;
   if(!context||!context.passContract||!Array.isArray(packets)||!profile||!Array.isArray(profile.observations))return null;
+  var scope=decision.assessmentScope;
+  if(scope&&(!context.assessmentScope||context.assessmentScope.key!==scope.key||profile.id!==scope.learnerId||
+    id(state.experienceLanguage)!==scope.language||packets.some(function(packet){return !packet.context||!packet.context.assessmentScope||packet.context.assessmentScope.key!==scope.key;})))return null;
   var transfer=packets.some(function(packet){
     var details=packet&&packet.context||{};
     return packet.skill===skill&&packet.dimension===(which?'determiner-use':'object-answer')&&
@@ -35,7 +38,8 @@ function inspect(){
     var details=entry&&entry.context||{};
     return entry.source==='green-pass-contract'&&entry.status==='transfer-confirmed'&&
       details.confirmed===true&&details.contractStatus==='GREEN_PASS'&&
-      id(details.skill)===skill&&id(details.experienceId)===from;
+      id(details.skill)===skill&&id(details.experienceId)===from&&
+      (!scope||(details.assessmentScope&&details.assessmentScope.key===scope.key));
   });
   if(!closed)return null;
   var result=evaluator.evaluateContract(context.passContract,packets);

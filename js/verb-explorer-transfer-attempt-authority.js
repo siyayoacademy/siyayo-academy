@@ -35,6 +35,9 @@
       !['en','es','pt'].includes(id(event.language))||
       id(event.language)!==id(attempt.context&&attempt.context.language)
     ))return false;
+    var scope=decision.assessmentScope;
+    if(scope&&(id(event.language)!==scope.language||id(attempt.context&&attempt.context.language)!==scope.language||
+      id(state.experienceLanguage)!==scope.language))return false;
     var from=id(decision.experienceId),to=id(state.currentExperienceId);
     if(!from||!to||from===to)return false;
     var origin=catalog.getExperience(from);

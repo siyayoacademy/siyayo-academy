@@ -13,7 +13,7 @@
     return typeof value==='string'?value.trim():'';
   }
 
-  function isDuplicate(profile,skill,experienceId){
+  function isDuplicate(profile,skill,experienceId,scope){
     return Array.isArray(profile&&profile.observations)&&profile.observations.some(function(entry){
       var context=entry&&entry.context||{};
       return entry&&
@@ -22,7 +22,8 @@
         context.confirmed===true&&
         text(context.skill)===skill&&
         text(context.experienceId)===experienceId&&
-        text(context.contractStatus)==='GREEN_PASS';
+        text(context.contractStatus)==='GREEN_PASS'&&
+        (!scope||(context.assessmentScope&&context.assessmentScope.key===scope.key&&context.language===scope.language));
     });
   }
 
@@ -43,7 +44,12 @@
     var experienceId=text(session&&session.decision&&session.decision.experienceId);
     if(!skill||!experienceId)return null;
 
-    if(isDuplicate(profile,skill,experienceId))return profile;
+    var scope=session.decision.assessmentScope;
+    if(scope&&(!context.assessmentScope||context.assessmentScope.key!==scope.key||
+      profile.id!==scope.learnerId||skill!==scope.skill||experienceId!==scope.originExperienceId||
+      !cycleResult.evidencePacket||!cycleResult.evidencePacket.context||
+      !cycleResult.evidencePacket.context.assessmentScope||cycleResult.evidencePacket.context.assessmentScope.key!==scope.key))return null;
+    if(isDuplicate(profile,skill,experienceId,scope))return profile;
 
     return profileApi.record(profile,{
       source:'green-pass-contract',
@@ -54,7 +60,8 @@
       requiresReinforcement:false
     },{
       skill:skill,
-      language:text(context.language)||'en',
+      language:scope?scope.language:text(context.language)||'en',
+      ...(scope?{assessmentScope:scope}:{}),
       chapter:text(context.chapter)||'question-words',
       confirmed:true,
       experienceId:experienceId,

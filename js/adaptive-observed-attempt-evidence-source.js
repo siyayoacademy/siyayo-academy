@@ -78,6 +78,9 @@
       if(packetExperience&&packetExperience!==experienceId)return null;
     }
 
+    var scope=session.decision.assessmentScope;
+    if(scope&&(profile.id!==scope.learnerId||!packet.context.assessmentScope||
+      packet.context.assessmentScope.key!==scope.key||text(packet.context.language)!==scope.language))return null;
     if(isDuplicate(profile,skill,occurrenceId))return profile;
 
     return profileApi.record(profile,{
@@ -89,7 +92,8 @@
       requiresReinforcement:false
     },{
       skill:skill,
-      language:text(packet&&packet.context&&packet.context.language)||text(sourceContext.language)||'en',
+      language:scope?scope.language:text(packet&&packet.context&&packet.context.language)||text(sourceContext.language)||'en',
+      ...(scope?{assessmentScope:scope}:{}),
       chapter:text(sourceContext.chapter)||'question-words',
       confirmed:false,
       experienceId:transfer?attemptExperience:experienceId,

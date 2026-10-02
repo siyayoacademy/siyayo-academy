@@ -48,6 +48,7 @@ function mount(input){
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
   var definition=skills.getDefinition();
   if(!decision||id(decision.skill)!=='which.use.determiner'||id(definition&&definition.id)!==id(decision.skill))return false;
+  if(decision.assessmentScope&&decision.assessmentScope.language!==language)return false;
   var origin=catalog.getExperience(id(decision.experienceId));
   if(!origin)return false;
   var transfer=id(experience.id)!==id(origin.id);
@@ -77,7 +78,8 @@ function mount(input){
       if(!now||now.session!==active.session)return null;
       var state=root.SIYAYOVerbExplorerAdaptiveStateBridge;
       var observed=state&&state.getState&&state.getState();
-      if(!observed||id(observed.currentExperienceId)!==id(experience.id))return null;
+      if(!observed||id(observed.currentExperienceId)!==id(experience.id)||
+        (decision.assessmentScope&&id(observed.experienceLanguage)!==language))return null;
       var result=resultApi.evaluate(specification,event);
       if(!result)return null;
       var evidence=evidenceBridge.fromResult({

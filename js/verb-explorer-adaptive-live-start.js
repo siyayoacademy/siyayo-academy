@@ -34,10 +34,16 @@ function tryCompose(options){
   if(typeof learnerId!=='string'||!learnerId.trim())return Promise.resolve(false);
   if(!target||typeof target!=='object')return Promise.resolve(false);
 
+  var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+  var selectedState=stateBridge&&stateBridge.getState&&stateBridge.getState();
+  if(root.AdaptiveAssessmentScope&&(!selectedState||!['en','es','pt'].includes(selectedState.experienceLanguage)))return Promise.resolve(false);
   var version=generation;
   pending=Promise.resolve(skillBridge.loadTarget())
     .then(function(loaded){
       if(loaded!==true||version!==generation||identitySource.getId()!==learnerId)return false;
+      var latestState=stateBridge&&stateBridge.getState&&stateBridge.getState();
+      if(root.AdaptiveAssessmentScope&&(!latestState||latestState.currentExperienceId!==selectedState.currentExperienceId||
+        latestState.experienceLanguage!==selectedState.experienceLanguage))return false;
       var latest=targetAuthority.getTarget();
       if(!latest||latest.skill!==target.skill||latest.definitionPath!==target.definitionPath)return false;
       return composer.compose({document:documentRef})===true;

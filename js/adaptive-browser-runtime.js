@@ -1,6 +1,7 @@
 // Browser loader for the adaptive Cycle dependency chain.
 (function(root){
   const scripts = Object.freeze([
+    'js/adaptive-assessment-scope.js',
     'js/pedagogical-resonance.js',
     'js/adaptive-learning-router.js',
     'js/adaptive-evidence-profile.js',

@@ -1092,3 +1092,23 @@ Candidate unit: learner + skill + assessment language + origin/circuit. Explorat
 OPEN homologation: pending anonymous target after language comparison, explicit start/return gesture, historical unscoped Evidence treatment and projection. Never infer missing language as EN or distribute historical Green across three languages. Xespirito remains comparison/diagnostic authority, not Green issuance. No corpus translation or new evaluator/router.
 
 NEXT GO: agree this unit and fail-closed pending policy, then smallest contract implementation + isolated/mixed/stale/identity tests. S2 WHERE corpus/Dependency Focus follows; do not expand it in this checkpoint.
+
+## JAGUAR-LIVE-23 — learner / skill / language / circuit ownership
+
+Classification: EXTENSION of the existing assessment ownership boundary; explicit homologation and GO on 2026-10-02. Base edb7035. No corpus translation, Pass Contract replacement, router duplication or visual redesign.
+
+Canonical unit: learner identity + declared skill/QWord + assessment language + originating Experience. LANGUAGE remains free exploration/comparison. Changing it neither creates a Session nor transfers Green. An explicit QWord selection in a new language creates a distinct declared circuit where an existing start contract permits it; a return selection restores its retained Session. Free visits preserve the originating circuit until explicit pedagogical adoption.
+
+Anonymous pending target: LANGUAGE invalidates it through existing readiness/target lifecycle clear; selecting a QWord again is required before nick confirmation. Loader completion verifies learner, generation, target, language and Experience captured at request start. No stale target is promoted by identity arrival.
+
+AdaptiveAssessmentScope is a pure ownership helper, loaded before canonical runtime authorities. Composer and NextSessionSource attach it to existing canonical Decisions/contexts. Coordinator binds grounded event-owned Attempts; Cycle rejects mixed learner/skill/language/circuit packets before trace/progress mutation. Existing evaluator and distinct local/transfer requirements remain authoritative. WHICH now transports explicit language through specification, presentation, event, result, Evidence and Attempt, matching WHAT/WHY. No missing live language is inferred as EN.
+
+Longitudinal history is preserved. Prior Evidence and closure deduplication use the same unit. Retained operational Sessions use all four dimensions; identity reset still clears them. Trail/glow projects only explicitly language-owned records. Existing records lacking assessmentScope remain historical footprints, never upgraded to a language-specific Green. Non-live unscoped consumers retain compatibility; production Explorer bootstrap loads ownership before Session creation.
+
+Adoption remains explicit and same-language; late UI completion rechecks language. Comparing another LANGUAGE keeps ordinary corpus dialogue/Dependency Focus available while a foreign-language active assessment panel is not submitted to that Session. Re-selecting its language and QWord recovers the corresponding circuit.
+
+Verification: ownership/mixed/missing/stale-language/other-learner/forged-scope/legacy-history tests; pending selection and retained return tests; real WHAT S1→S2, WHAT S2→S3 and WHY S3→S4 EN/ES/PT cycles; real WHICH language provenance and scoped S2 transfer/adoption. Existing suites retained. CI/publication and learner visual homologation must be reported separately.
+
+Visual check: anonymously select WHAT in EN → change LANGUAGE to ES → confirm nick: old EN target must not start. Select WHAT explicitly in ES: ES begins at zero. Back in EN, explicitly select the corresponding QWord: its own preserved EN Session appears if previously started; ES Evidence/Green does not migrate. Complete each genuine local/transfer circuit in its own language. Changing learner resets all retained ownership.
+
+NEXT: visual homologation of this language boundary, then S2 WHERE contextual corpus and Dependency Focus study. Missing QWord contracts are mapped gaps, not fabricated by language switching. Existing Xespirito diagnostic and WAIT boundaries remain unchanged. This implementation does not add durable accounts/login or persistence across page reloads.

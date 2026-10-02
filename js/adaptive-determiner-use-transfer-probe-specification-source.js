@@ -104,6 +104,7 @@
 
     return Object.freeze({
       skill:'which.use.determiner',
+      language:language,
       fromExperienceId:fromExperienceId,
       experienceId:experienceId,
       dimension:'determiner-use',
