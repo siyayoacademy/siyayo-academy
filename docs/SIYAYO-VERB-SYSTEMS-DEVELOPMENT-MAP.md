@@ -284,3 +284,28 @@ Target:
 `Group 1 = 1–14`, `Group 2 = 15–28`.
 
 These remain candidates until canonical corpus admission.
+
+
+## Verb Function checkpoint — PIANO-STAGE-VERB-FUNCTION-01
+
+Canonical audit:
+
+`docs/SIYAYO-VERB-FUNCTION-28-AUDIT.md`
+
+Status: **IMPLEMENTED — awaiting homologation**.
+
+The Activity `Verbs → Function` reads the existing `verbFunction` field rather than inferring function from morphology or surface wording.
+
+Current grounded coverage: Action, Movement, State.
+
+Reserved canonical axis members: Quality, Existence.
+
+Function overlap is explicitly allowed.
+
+## Corpus scale roadmap
+
+Minimum product direction: **200 canonical verbs**.
+
+Windowing remains fixed at 14 items. The first complete window milestone above 200 is 210.
+
+No Stage-only verb may be created to fill a visual window.
