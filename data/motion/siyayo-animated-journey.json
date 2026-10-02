@@ -1,0 +1,117 @@
+{
+  "id": "siyayo-animated-journey",
+  "version": "0.1.0",
+  "status": "baseline-runtime",
+  "branch": "jaguar/animated-siyayo-journey-v0.1",
+  "motionSource": "data/motion/siyayo-motion-dna.json",
+  "responsiveContract": "docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md",
+  "interactionGrammar": [
+    "touch-or-swipe",
+    "event",
+    "motion",
+    "reveal",
+    "resonance",
+    "wait-or-next"
+  ],
+  "scenes": [
+    {
+      "id": "W0",
+      "name": "Celestial Iris",
+      "actors": [
+        "celestial-iris"
+      ],
+      "wait": true
+    },
+    {
+      "id": "W1",
+      "name": "Golden Eagle",
+      "actors": [
+        "golden-eagle",
+        "golden-branch"
+      ],
+      "wait": true
+    },
+    {
+      "id": "W2",
+      "name": "Golden Seed Ready",
+      "actors": [
+        "golden-seed",
+        "golden-branch"
+      ],
+      "wait": true
+    },
+    {
+      "id": "W3",
+      "name": "Seed Fall",
+      "actors": [
+        "golden-seed"
+      ],
+      "wait": false
+    },
+    {
+      "id": "W4",
+      "name": "Frondosa Canopy",
+      "actors": [
+        "golden-seed",
+        "frondosa",
+        "leaf",
+        "branch"
+      ],
+      "wait": true,
+      "portals": [
+        {
+          "id": "explore-morphology",
+          "label": "Explore Morphology",
+          "capability": {
+            "collection": "verbs",
+            "activity": "morphology",
+            "surface": "piano-stage"
+          },
+          "status": "mapped-not-auto-navigated"
+        }
+      ]
+    },
+    {
+      "id": "W5",
+      "name": "Trunk",
+      "actors": [
+        "golden-seed",
+        "frondosa"
+      ],
+      "wait": true
+    },
+    {
+      "id": "W6",
+      "name": "Roots / Ground",
+      "actors": [
+        "golden-seed",
+        "frondosa"
+      ],
+      "wait": true
+    },
+    {
+      "id": "W7",
+      "name": "Jaguar Footprint",
+      "actors": [
+        "jaguar"
+      ],
+      "wait": true
+    },
+    {
+      "id": "W8",
+      "name": "Patita DNA Recognition",
+      "actors": [
+        "patita",
+        "golden-seed"
+      ],
+      "wait": true
+    }
+  ],
+  "boundaries": {
+    "presentationDoesNotCreateEvidence": true,
+    "swipeDoesNotCreateEvidence": true,
+    "portalRevealDoesNotNavigateAutomatically": true,
+    "navigationRequiresApprovedReceiver": true,
+    "reducedMotionPreservesSemanticOrder": true
+  }
+}
