@@ -878,5 +878,49 @@
     "naturalFullWindowMilestone": 210,
     "windows": "1–14, 15–28, then successive 14-item groups",
     "rule": "Never fill a window by inventing Stage-only verbs; canonical corpus admission and validation come first."
+  },
+  "animatedJourney": {
+    "branch": "jaguar/animated-siyayo-journey-v0.1",
+    "status": "responsive-baseline-implemented-awaiting-visual-homologation",
+    "contract": "docs/SIYAYO-ANIMATED-JOURNEY-CONTRACT.md",
+    "routeData": "data/motion/siyayo-animated-journey.json",
+    "page": "journey/index.html",
+    "responsive": {
+      "contract": "docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md",
+      "sharedCss": "css/siyayo-responsive-stage.css",
+      "sharedJs": "js/siyayo-responsive-preview.js",
+      "modes": [
+        "auto",
+        "portrait",
+        "landscape"
+      ],
+      "realTouch": "toolbar hidden; Auto runtime"
+    },
+    "canonicalRoute": [
+      "W0",
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "initialPortal": {
+      "scene": "W4",
+      "label": "Explore Morphology",
+      "capability": {
+        "collection": "verbs",
+        "activity": "morphology"
+      },
+      "status": "mapped-not-auto-navigated"
+    },
+    "boundaries": [
+      "no Evidence from animation",
+      "no GREEN from animation",
+      "swipe learner-controlled",
+      "portal requires approved navigation receiver"
+    ]
   }
 }
