@@ -124,3 +124,34 @@ Reduced-motion users keep the same W0→W8 semantic order and controls while sce
 4. Define branch/leaf contact effects in W4.
 5. Bind approved portal receiver(s), beginning with Explore Morphology.
 6. Homologate Auto / Portrait / Landscape and real smartphone before deeper choreography.
+
+
+## Environment Library — JOURNEY-ENV-01
+
+Status: **IMPLEMENTED — awaiting visual homologation**.
+
+Shared reusable files:
+
+- `data/environments/siyayo-environments.json`
+- `css/siyayo-environments.css`
+- `js/siyayo-environment-controller.js`
+
+Initial environments:
+
+- Cosmic Night
+- Forest Day
+- Forest Night
+- River Dawn
+- Nice Party Evening
+
+Developer preview additionally supports **Auto Time**, which uses the browser's local clock only to choose a daypart-appropriate visual environment.
+
+Weather-aware selection remains OPEN and is not simulated.
+
+Runtime binding event:
+
+`siyayo:set-environment`
+
+Environment changes are presentation/context changes only and must not alter collection, Activity, language, assessment target, Evidence, GREEN, Session or navigation authority.
+
+The same Environment Library may later be adopted by Piano, Verb DNA, Explorer and Experiences through explicit target-branch GO.
