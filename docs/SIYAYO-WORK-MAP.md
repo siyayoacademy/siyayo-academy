@@ -18,7 +18,17 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-21
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-22
+
+**Recorded:** 2026-10-02 (America/Sao_Paulo)
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+**Base HEAD:** `fa206b1d83388f234eb82d64fd157dd0212a1b59`
+**Change kind:** DOCUMENTATION / ESTUDO FINO — language ownership impact map.
+**Status:** base CI/deployment green; six isolated audit checks executed. No production JS/CSS/HTML/JSON changed.
+**Report:** [Assessment language impact study](siyayo-assessment-language-impact-study.md).
+**NEXT GO:** homologate explicit assessment unit and pending-target policy before code. LANGUAGE comparison remains free; no automatic per-language migration.
+
+## Historical contract checkpoint — JAGUAR-LIVE-21
 
 **Recorded:** 2026-10-02 (UTC)
 **Branch:** `jaguar/verb-explorer-resume-live-wire`
@@ -1069,3 +1079,16 @@ Authorized refinement of WHICH, WHAT and WHY Pass Contracts: local use requires 
 Implementation extends Evidence bridges and Attempt boundaries to preserve local mode explicitly. Dedicated WHICH local boundaries reject transfer provenance. WHAT/WHY specification sources validate the explicit local requirement. No historical Evidence is relabeled: unspecified-mode use remains insufficient under this refined contract; repeat the genuine local proof if required. Navigation, canonical corpus, UI and learner ownership are unchanged.
 
 Verification: positive complete circuits and negative missing/local/transfer, failed and supported-use cases. EN/ES/PT packet labels are covered; this does not homologate separate language-owned retention. Next Estudo Fino: language ownership impact map, then S2 WHERE contextual corpus and Dependency Focus. No expansion to other Question Words in this checkpoint.
+
+
+## JAGUAR-LIVE-22 — language-owned assessment impact study
+
+Authorized Estudo Fino after LIVE-21. Report: [Assessment language impact study](siyayo-assessment-language-impact-study.md). Base fa206b1; all four CI/deployment checks green.
+
+Six isolated checks demonstrate: mixed EN/ES/PT requirements accepted by the generic evaluator for WHICH/WHAT/WHY; closure deduplication omits language; Trail projection omits language filtering; same-skill selection reuses the active Session without language checking. These are contract/state reproductions, not a claim about an undeserved browser Green Pass.
+
+Candidate unit: learner + skill + assessment language + origin/circuit. Exploration language remains freely changeable. Map covers birth/Decision, retained and pending targets, event/Result/Evidence/Attempt provenance, Coordinator entry, transfer authority, closure, priorEvidence, Trail/glow, adoption and identity reset. Existing WHICH language provenance is incomplete; WHAT/WHY event-language correlation is not Session-language ownership.
+
+OPEN homologation: pending anonymous target after language comparison, explicit start/return gesture, historical unscoped Evidence treatment and projection. Never infer missing language as EN or distribute historical Green across three languages. Xespirito remains comparison/diagnostic authority, not Green issuance. No corpus translation or new evaluator/router.
+
+NEXT GO: agree this unit and fail-closed pending policy, then smallest contract implementation + isolated/mixed/stale/identity tests. S2 WHERE corpus/Dependency Focus follows; do not expand it in this checkpoint.
