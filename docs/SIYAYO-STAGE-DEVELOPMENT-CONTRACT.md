@@ -775,3 +775,28 @@ Product direction recorded: **at least 200 canonical verbs**.
 Frondosa remains a 14-item perceptual window. The natural complete-window milestone beyond 200 is 210 verbs.
 
 Expansion remains corpus-first and must not create Piano-only lexical items.
+
+
+## 26. Shared Environment Library — SIYAYO-ENV-01
+
+A reusable environment/background system now exists on the Animated Journey branch.
+
+Environment is separated from actors and semantic surfaces:
+
+```
+ENVIRONMENT
+→ atmosphere / background / parallax / light
+
+ACTORS
+→ Frondosa / Eagle / Seed / Pianinho / Jaguar / Patita
+
+SEMANTIC SURFACE
+→ words / activities / portals
+
+PEDAGOGICAL AUTHORITY
+→ remains separate
+```
+
+Initial manual environments plus local-clock daypart selection are implemented. Weather/context services remain future capabilities.
+
+Cross-branch reuse requires explicit GO; no Piano or adaptive branch was mutated by this implementation.
