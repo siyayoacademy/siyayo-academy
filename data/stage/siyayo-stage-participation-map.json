@@ -881,7 +881,7 @@
   },
   "animatedJourney": {
     "branch": "jaguar/animated-siyayo-journey-v0.1",
-    "status": "responsive-baseline-implemented-awaiting-visual-homologation",
+    "status": "responsive-and-environment-baseline-implemented-awaiting-visual-homologation",
     "contract": "docs/SIYAYO-ANIMATED-JOURNEY-CONTRACT.md",
     "routeData": "data/motion/siyayo-animated-journey.json",
     "page": "journey/index.html",
@@ -921,6 +921,41 @@
       "no GREEN from animation",
       "swipe learner-controlled",
       "portal requires approved navigation receiver"
-    ]
+    ],
+    "environmentSystem": "data/environments/siyayo-environments.json"
+  },
+  "environmentSystem": {
+    "id": "siyayo-environment-library",
+    "status": "shared-foundation-implemented-on-animated-journey",
+    "registry": "data/environments/siyayo-environments.json",
+    "sharedFiles": [
+      "css/siyayo-environments.css",
+      "js/siyayo-environment-controller.js"
+    ],
+    "initialEnvironments": [
+      "cosmic-night",
+      "forest-day",
+      "forest-night",
+      "river-dawn",
+      "nice-party-evening"
+    ],
+    "selectors": [
+      "manual-development-preview",
+      "auto-local-time"
+    ],
+    "futureSelectors": [
+      "weather-aware",
+      "experience-bound",
+      "learner-context-bound"
+    ],
+    "reusableFor": [
+      "Animated Journey",
+      "Piano Stage",
+      "Verb DNA",
+      "Verb Explorer",
+      "Experiences"
+    ],
+    "boundary": "Environment is atmosphere/context presentation only unless an Experience explicitly binds semantic meaning.",
+    "crossBranchRule": "Adoption in Piano or adaptive branches requires explicit GO in that target branch."
   }
 }
