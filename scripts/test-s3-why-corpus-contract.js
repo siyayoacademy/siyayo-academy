@@ -14,7 +14,7 @@ assert.equal(s3.thinkingMind.find(entry=>entry.questionWord==='what').assessment
   'salmon remains a transfer response owned by S2');
 assert.deepEqual(skill.passContract.requires,[
   {dimension:'question-function',result:'pass'},
-  {dimension:'reason-answer',result:'pass',support:'none'},
+  {dimension:'reason-answer',result:'pass',support:'none',mode:'local'},
   {dimension:'reason-answer',result:'pass',mode:'transfer',support:'none'}
 ]);
 for(const [experience,accepted] of [[s3,'prepared-together'],[s4,'talking-together']]){
