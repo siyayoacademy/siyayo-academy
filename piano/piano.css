@@ -591,20 +591,6 @@ h1 {
 /* =========================================================
    RESPONSIVE BOX SYSTEM + DEV PREVIEW
    ========================================================= */
-.stage-viewport {
-  width:100%;
-  display:flex;
-  justify-content:center;
-  transition:
-    max-width var(--motion-reveal) var(--motion-ease),
-    transform var(--motion-reveal) var(--motion-ease);
-}
-
-.experience-box {
-  width:100%;
-  min-width:0;
-}
-
 .tree-box,
 .controls-box,
 .keyboard-box {
@@ -621,65 +607,11 @@ h1 {
   min-width:0;
 }
 
-.dev-preview-toolbar {
-  position:fixed;
-  right:14px;
-  top:14px;
-  z-index:2000;
-  display:flex;
-  gap:6px;
-  padding:6px;
-  border:1px solid rgba(242,216,138,.34);
-  border-radius:999px;
-  background:rgba(2,9,24,.88);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  box-shadow:0 8px 28px rgba(0,0,0,.35);
-}
-
-.preview-button {
-  min-height:34px;
-  padding:0 11px;
-  border:1px solid rgba(242,216,138,.24);
-  border-radius:999px;
-  background:rgba(6,27,61,.72);
-  color:#fff;
-  font-family:var(--font-display);
-  font-size:.72rem;
-  cursor:pointer;
-}
-
-.preview-button.is-active {
-  background:var(--gold);
-  border-color:var(--gold-light);
-  color:#171006;
-  font-weight:700;
-}
-
-.stage-viewport[data-preview="portrait"] {
-  max-width:430px;
-  margin-inline:auto;
-}
-
-.stage-viewport[data-preview="landscape"] {
-  max-width:844px;
-  margin-inline:auto;
-}
-
-.stage-viewport[data-preview="portrait"] .piano-stage,
-.stage-viewport[data-preview="landscape"] .piano-stage {
-  width:100%;
-}
-
 /* Portrait-fit contract: no forced horizontal keyboard scroll. */
 @media (max-width:600px) {
   body {
     padding:0;
     display:block;
-  }
-
-  .dev-preview-toolbar {
-    display:none;
   }
 
   .piano-stage {
@@ -867,12 +799,6 @@ h1 {
    Keep development preview tools on desktop, never over real
    touch-first smartphone/tablet views.
    ========================================================= */
-@media (hover:none) and (pointer:coarse) {
-  .dev-preview-toolbar {
-    display:none !important;
-  }
-}
-
 /* Portrait hotspot calibration against the real Frondosa canopy. */
 @media (max-width:600px) and (orientation:portrait) {
   .frondosa-hotspots .leaf-1 { left:13%; top:48%; }
