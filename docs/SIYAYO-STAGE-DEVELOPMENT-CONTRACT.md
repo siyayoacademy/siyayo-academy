@@ -736,3 +736,42 @@ Repair:
 - wired the shared responsive preview controller before the page-specific Piano script.
 
 No pedagogical logic, collection state, Evidence, GREEN, actor behavior, or real-device responsive rules were changed.
+
+
+## 25. Homologated checkpoints + Verb Function implementation
+
+### SIYAYO-RESPONSIVE-R-02
+
+Status: **HOMOLOGATED** after user confirmation of Auto / Portrait / Landscape and repair verification.
+
+### PIANO-STAGE-VERB-28-01 / EN Morphology
+
+Status: **HOMOLOGATED** for Group 1–14 and Group 15–28, including word-by-word speech presentation.
+
+### PIANO-STAGE-VERB-FUNCTION-01
+
+Status: **IMPLEMENTED — awaiting functional/visual homologation**.
+
+Canonical source:
+
+`data/lexicon/verbs/actions.json#verbFunction`
+
+Canonical five-function axis:
+
+`Quality / State / Movement / Action / Existence`.
+
+Current 28-item corpus visibly grounds Action, Movement and State. Quality and Existence remain reserved until grounded corpus members are admitted.
+
+Function overlaps are preserved. Example: Movement + Action is not reduced to one label.
+
+The Function activity supports EN / ES / PT / Tripiano presentation and speech and remains non-evaluative:
+
+`evaluated:false`, `evidenceProduced:false`, `green:false`.
+
+### Long-range Verb corpus target
+
+Product direction recorded: **at least 200 canonical verbs**.
+
+Frondosa remains a 14-item perceptual window. The natural complete-window milestone beyond 200 is 210 verbs.
+
+Expansion remains corpus-first and must not create Piano-only lexical items.
