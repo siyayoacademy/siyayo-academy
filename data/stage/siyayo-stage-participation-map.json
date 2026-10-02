@@ -812,7 +812,7 @@
   "sharedResponsiveContract": {
     "id": "siyayo-stage-container-responsive-contract",
     "path": "docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md",
-    "status": "R-02-implemented-awaiting-piano-visual-confirmation",
+    "status": "R-02-implemented-fix-applied-awaiting-visual-confirmation",
     "commonFiles": [
       "css/siyayo-responsive-stage.css",
       "js/siyayo-responsive-preview.js"
@@ -837,6 +837,14 @@
       "currentLocation": "jaguar/verb-explorer-resume-live-wire",
       "status": "not-mutated-from-piano-branch",
       "next": "register reference there only after explicit target-branch authorization"
+    },
+    "latestFix": {
+      "issue": "Migration inserted a literal backslash-n in the stylesheet line and failed to include the shared responsive preview script.",
+      "fix": [
+        "replace literal backslash-n with a real HTML newline",
+        "load js/siyayo-responsive-preview.js before piano/piano.js"
+      ],
+      "effect": "Restores developer Auto / Portrait / Landscape controller without changing responsive runtime or pedagogy."
     }
   }
 }
