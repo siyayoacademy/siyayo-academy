@@ -2,7 +2,7 @@
 // Mounting requires grounded Experience metadata and canonical dependency structure.
 // Identified assessment requires an active adaptive Session. One explicit learner
 // selection flows Definition -> Result -> Evidence -> Attempt -> Coordinator/Cycle.
-// Exploratory Dependency Focus remains separate and produces no assessed event.
+// Free diagnostic observations remain available with or without identity, independently of assessment.
 (function(root,factory){
   var api=factory(root);
   if(typeof module==='object'&&module.exports)module.exports=api;
@@ -86,28 +86,53 @@
     if(!presentation)return false;
 
 
-    // Explicit anonymous observation path; never enters Evidence/Attempt/Cycle.
     var identity=options.identitySource||root.SIYAYOVerbExplorerLearnerIdentitySource;
     var runtime=options.runtime||root.SIYAYOVerbExplorerExperienceRuntime;
     var questionWord=text(options.questionWord);
-    function anonymousCurrent(){
-      return identity&&typeof identity.getId==='function'&&!identity.getId()&&
-        (!coordinator||typeof coordinator.snapshot!=='function'||!(coordinator.snapshot()||{}).session)&&
-        runtime&&typeof runtime.activeExperienceId==='function'&&runtime.activeExperienceId()===experience.id&&
+    var learnerId=identity&&typeof identity.getId==='function'?text(identity.getId()):'';
+    function snapshot(){
+      return coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
+    }
+    function locationCurrent(){
+      return runtime&&typeof runtime.activeExperienceId==='function'&&runtime.activeExperienceId()===experience.id&&
         typeof runtime.activeLanguage==='function'&&runtime.activeLanguage()===language&&
         typeof runtime.activeQuestionWord==='function'&&runtime.activeQuestionWord()===questionWord;
     }
-    if(options.allowAnonymousPractice===true&&questionWord&&anonymousCurrent()){
+    function compatibleAssessment(current){
+      var decision=current&&current.session&&current.session.decision;
+      if(!decision||!text(decision.skill)||(options.expectedSkill&&text(decision.skill)!==text(options.expectedSkill))||
+        text(decision.experienceId)!==text(experience.id))return false;
+      var scope=decision.assessmentScope,scopeApi=root.AdaptiveAssessmentScope;
+      if(scope){
+        if(!scopeApi||!scopeApi.valid(scope)||scope.language!==language||scope.skill!==decision.skill||
+          scope.originExperienceId!==experience.id||scope.learnerId!==learnerId)return false;
+      }else if(scopeApi||decision.language&&text(decision.language)!==language)return false;
+      return !!coordinator&&typeof coordinator.submitObservedAttempt==='function';
+    }
+    var active=snapshot(),session=active&&active.session,decision=session&&session.decision;
+    var assessed=compatibleAssessment(active);
+    var observationAllowed=options.allowObservationalPractice===true||
+      (options.allowAnonymousPractice===true&&identity&&typeof identity.getId==='function'&&!learnerId&&!session);
+    function observationCurrent(){
+      var current=snapshot();
+      var currentLearner=identity&&typeof identity.getId==='function'?text(identity.getId()):'';
+      return currentLearner===learnerId&&(current&&current.session||null)===(session||null)&&
+        !compatibleAssessment(current)&&locationCurrent();
+    }
+    // Separate observation path: no Evidence, Attempt, contract mutation or Session creation.
+    if(!assessed&&observationAllowed&&questionWord&&observationCurrent()){
       if(!resultApi||typeof resultApi.evaluate!=='function'||!learnerEvents)return false;
       var token={};
       el.container.__siyayoAnonymousHeadToken=token;
-      var anonymousInstalled=wire.install(presentation,{
+      var observationInstalled=wire.install(presentation,{
         container:el.container,learnerEvents:learnerEvents,
         onEvent:function(event){
-          if(el.container.__siyayoAnonymousHeadToken!==token||!anonymousCurrent())return null;
+          if(el.container.__siyayoAnonymousHeadToken!==token||!observationCurrent())return null;
           var result=resultApi.evaluate(definition,event);
           if(!result)return null;
-          var record=Object.freeze({questionWord:questionWord,occurrenceId:result.occurrenceId,
+          var record=Object.freeze({questionWord:questionWord,
+            questionWordLabel:text(options.questionWordLabel)||questionWord.toUpperCase(),
+            ...(learnerId?{learnerId:learnerId}:{}),occurrenceId:result.occurrenceId,
             experienceId:result.experienceId,structureId:result.structureId,language:language,
             selectedAlternativeId:result.selectedAlternativeId,result:result.result,
             evidenceProduced:false,greenPass:false});
@@ -117,28 +142,17 @@
             :feedbackText(result.result,language);
           el.feedback.dataset.result=result.result;el.feedback.hidden=false;
           el.panel.dataset.cycleStatus='observed';
+          var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
+          if(trailSurface&&typeof trailSurface.refresh==='function')trailSurface.refresh({document:doc,language:language});
           return record;
         }
       });
-      if(anonymousInstalled!==true){hide(doc);return false;}
-      el.panel.dataset.assessmentState='anonymous-practice';el.panel.hidden=false;return true;
+      if(observationInstalled!==true){hide(doc);return false;}
+      el.panel.dataset.assessmentState=learnerId?'identified-observation':'anonymous-practice';
+      el.panel.hidden=false;return true;
     }
 
-    // Assessment presentation is authority-gated. Before a grounded Session
-    // exists, the Head Probe remains hidden: exploratory Dependency Focus may
-    // still be used, but no assessed task is presented or bound.
-    if(!coordinator||typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'){
-      hide(doc);
-      return false;
-    }
-
-    var active=coordinator.snapshot();
-    var session=active&&active.session;
-    var decision=session&&session.decision;
-    if(!decision||!text(decision.skill)||(options.expectedSkill&&text(decision.skill)!==text(options.expectedSkill))||text(decision.experienceId)!==text(experience.id)){
-      hide(doc);
-      return false;
-    }
+    if(!assessed){hide(doc);return false;}
 
     if(!resultApi||typeof resultApi.evaluate!=='function')return false;
     if(!evidenceBridge||typeof evidenceBridge.fromResult!=='function')return false;
@@ -152,7 +166,8 @@
       learnerEvents:learnerEvents,
       onEvent:function(event,target){
         var current=coordinator.snapshot();
-        if(!current||!current.session||!current.session.decision||current.session!==session)return null;
+        if(!current||current.session!==session||!compatibleAssessment(current))return null;
+        if(runtime&&questionWord&&!locationCurrent())return null;
         if(text(current.session.decision.skill)!==text(decision.skill))return null;
         if(text(current.session.decision.experienceId)!==text(experience.id))return null;
 

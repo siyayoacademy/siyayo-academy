@@ -80,7 +80,7 @@ function renderDependencyHeadProbe(x){
     return false;
   }
   const metadata={...meta,alternativeTokenIds:meta.alternativeTokenIdsByLanguage?.[experienceLanguage]||meta.alternativeTokenIds};
-  return live.mount({document,experience:x,metadata,expectedSkill:question?.assessmentTarget?.skill,structure,language:experienceLanguage,questionWord:question?.questionWord,allowAnonymousPractice:true})===true;
+  return live.mount({document,experience:x,metadata,expectedSkill:question?.assessmentTarget?.skill,structure,language:experienceLanguage,questionWord:question?.questionWord,questionWordLabel:question?.questionWordLabel?.[experienceLanguage],allowObservationalPractice:true})===true;
 }
 function refreshThinkingMindAssessmentHighlight(){
   const source=window.SIYAYOVerbExplorerCanonicalSkillSource;

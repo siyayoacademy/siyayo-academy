@@ -43,6 +43,17 @@
       '◐ OBSERVED RESPONSE · the contract checks are counted separately';
   }
 
+  function freeDiagnosticRecords(language,learnerId){
+    var source=root.SIYAYOVerbExplorerDependencyHeadProbeLive,runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+    if(!source||typeof source.getPracticeTrace!=='function'||!runtime||typeof runtime.activeQuestionWord!=='function'||typeof runtime.activeExperienceId!=='function')return [];
+    return source.getPracticeTrace().filter(function(record){
+      return record.evidenceProduced===false&&record.greenPass===false&&text(record.learnerId)===text(learnerId)&&record.language===language&&record.questionWord===runtime.activeQuestionWord()&&record.experienceId===runtime.activeExperienceId();
+    });
+  }
+  function freeDiagnosticLabel(language){
+    return {en:'◐ EXPLORATORY RESPONSE OBSERVED · separate from assessment and Green Pass',es:'◐ RESPUESTA EXPLORATORIA OBSERVADA · separada de la evaluación y del Green Pass',pt:'◐ RESPOSTA EXPLORATÓRIA OBSERVADA · separada da avaliação e do Green Pass'}[language];
+  }
+
   function journeyLabels(language){
     return {
       en:{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',waiting:'not started'},
@@ -127,12 +138,22 @@
     var liveLanguage=experienceRuntime&&typeof experienceRuntime.activeLanguage==='function'?experienceRuntime.activeLanguage():'';
     var language=text(options.language)||text(liveLanguage)||'en';
     var copy=surfaceLabels(language);
+    delete surface.dataset.observationState;
+    var observations=freeDiagnosticRecords(language,learnerId);
+    var observationHtml=observations.length?'<small class="learner-trail-observation" data-observation-kind="free-diagnostic">'+escapeHtml(freeDiagnosticLabel(language))+'</small>':'';
+    function observationOnly(){
+      if(!observations.length)return false;
+      var latest=observations[observations.length-1];
+      surface.dataset.marker='EMPTY_DOT';surface.dataset.state='UNOBSERVED';surface.dataset.observationState='OBSERVED';surface.hidden=false;
+      surface.innerHTML='<div class="learner-trail-copy"><span class="learner-trail-label">'+escapeHtml(copy.title)+'</span><strong>'+escapeHtml(latest.questionWordLabel)+'</strong>'+observationHtml+'</div>';
+      return true;
+    }
     var profile=profileSource.getProfile();
     var definition=skillSource.getDefinition();
     var skill=text(skillSource.getSkill());
     var label=labelView.project(definition,language);
-    if(!profile||!skill||!label||label.skill!==skill)return false;
-    if(identity&&(!learnerId||profile.id!==learnerId))return false;
+    if(!profile||!skill||!label||label.skill!==skill)return observationOnly();
+    if(identity&&(!learnerId||profile.id!==learnerId))return observationOnly();
 
     var trail=trailView.project(profile,skill,root.AdaptiveAssessmentScope?{language:language}:null);
     if(!trail)return false;
@@ -217,6 +238,7 @@
       }else if(hint){hint.remove();}
     }
 
+    if(observations.length)surface.dataset.observationState='OBSERVED';
     surface.dataset.marker=marker.marker;
     surface.dataset.state=marker.state;
     surface.hidden=false;
@@ -228,6 +250,7 @@
         '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
         '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
         (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
+        observationHtml+
         (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
         (trail.counts.legacyFootprints?'<small class="learner-trail-legacy">'+escapeHtml(({en:'HISTORICAL RECORDS',es:'REGISTROS ANTERIORES',pt:'REGISTROS ANTERIORES'}[language]||'HISTORICAL RECORDS')+' · '+trail.counts.legacyFootprints)+'</small>':'')+
         progressHtml+

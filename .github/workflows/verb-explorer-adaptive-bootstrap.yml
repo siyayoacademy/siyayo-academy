@@ -397,3 +397,6 @@ jobs:
         run: |
           node scripts/test-assessment-language-isolation.js
           node scripts/test-assessment-language-selection.js
+
+      - name: Test diagnostic observation during identity and language WAIT
+        run: node scripts/test-head-observation-identity-language-wait.js

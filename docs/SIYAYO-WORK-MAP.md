@@ -1112,3 +1112,16 @@ Verification: ownership/mixed/missing/stale-language/other-learner/forged-scope/
 Visual check: anonymously select WHAT in EN → change LANGUAGE to ES → confirm nick: old EN target must not start. Select WHAT explicitly in ES: ES begins at zero. Back in EN, explicitly select the corresponding QWord: its own preserved EN Session appears if previously started; ES Evidence/Green does not migrate. Complete each genuine local/transfer circuit in its own language. Changing learner resets all retained ownership.
 
 NEXT: visual homologation of this language boundary, then S2 WHERE contextual corpus and Dependency Focus study. Missing QWord contracts are mapped gaps, not fabricated by language switching. Existing Xespirito diagnostic and WAIT boundaries remain unchanged. This implementation does not add durable accounts/login or persistence across page reloads.
+
+
+## LIVE-24 — Observational head diagnostic across identity and LANGUAGE WAIT
+
+Classification: extension of the existing WHAT/WHICH observational path; no migration or replacement of Pass Contracts, corpus or assessed authorities.
+
+Confirmed gaps: nick without compatible Session hid the grounded head diagnostic; a foreign-language diagnostic entered the active Session's submit path and was rejected before visible feedback. Mount now selects the assessed path only for compatible learner/skill/language/origin ownership. Otherwise the same canonical Definition/Result supplies correct/wrong feedback and an independent exploratory trace, with or without nick. No Evidence/Attempt/Session/Green is produced by this fallback. Existing compatible assessment pipeline remains unchanged.
+
+Free trace carries learner when identified, native QWord label, language, Experience, structure, response and occurrence. Repeats remain distinct. Stale learner/language/QWord/Session/location bindings are rejected. Learner Trail displays an explicitly separate exploratory observation; its canonical marker and contract counts are not promoted. Anonymous and another learner's observations are excluded from that projection. Trace remains in memory; this does not implement durable accounts/history.
+
+Verification: new real-definition/result/wire regression across EN/ES/PT WHAT/WHICH with identified Session WAIT and foreign-language active Session; positive/wrong/repeat/stale responses, unchanged authority and observation-only trail. Existing assessed diagnostic, language isolation and Green cycles remain required. Visual homologation pending publication and learner tests.
+
+Visual procedure: confirm nick before explicitly starting an assessment, answer head diagnostic correctly and incorrectly; feedback remains visible. Start WHAT/EN and earn contract progress; compare ES/PT without reselecting WHAT and answer head diagnostic: free observation appears, foreign-language contract stays unstarted, EN progress unchanged. Explicit WHAT selection starts that language's own contract; returning to EN recovers EN. Green requires canonical local/transfer closure.
