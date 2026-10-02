@@ -10,7 +10,6 @@ body{
   margin:0;
   min-height:100vh;
   font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:radial-gradient(circle at 50% 18%,#102c55 0,#06152d 34%,#020918 72%);
   color:#fff;
 }
 .journey-stage{
@@ -143,4 +142,12 @@ h1{margin:.2rem 0;font-size:clamp(1.7rem,4vw,3rem)}
 }
 @media (prefers-reduced-motion:reduce){
   .layer{transition:none!important}
+}
+
+
+/* Journey scene remains translucent so shared Environment can read through it. */
+.journey-scene{
+  background:
+    radial-gradient(circle at 50% 38%,rgba(215,179,90,.12),transparent 34%),
+    linear-gradient(180deg,rgba(7,22,49,.44),rgba(3,11,26,.64));
 }
