@@ -574,13 +574,12 @@
     }
   ],
   "recommendedJaguarOrder": [
-    "homologate full 28-item Verb Actions corpus in Explore across EN / ES / PT / Tripiano",
-    "homologate EN Morphology across both equal 14-item windows",
+    "homologate Verbs → Function across groups 1–14 and 15–28 in EN / ES / PT / Tripiano",
     "audit independent Spanish and Portuguese morphology sources",
-    "map Verb Function as a separate Stage dimension",
     "map Time/Tense as a separate timeline/orbit dimension",
     "map Sentence Form separately",
-    "map Xespirito auxiliary/modal orchestration"
+    "map Xespirito auxiliary/modal orchestration",
+    "continue canonical Verb expansion in 14-item windows toward at least 200 verbs"
   ],
   "stageRouting": {
     "version": "1.0",
@@ -738,7 +737,7 @@
   "verbSystemsDevelopmentMap": {
     "path": "docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md",
     "checkpoint": "PIANO-STAGE-VERB-MAP-01",
-    "status": "en-morphology-homologated",
+    "status": "verb-function-implemented-awaiting-homologation",
     "criticalRule": "Current regularity is English-specific and must not be inferred for Spanish or Portuguese.",
     "next": [
       "homologate grouped Verb Actions Explore",
@@ -788,7 +787,32 @@
         "group navigator spacing"
       ]
     },
-    "homologatedCheckpoint": "PIANO-STAGE-VERB-MORPH-EN-02"
+    "homologatedCheckpoint": "PIANO-STAGE-VERB-MORPH-EN-02",
+    "morphologyStatus": "28-item-en-morphology-homologated",
+    "functionImplementation": {
+      "activity": "function",
+      "source": "data/lexicon/verbs/actions.json#verbFunction",
+      "canonicalAxis": [
+        "quality",
+        "state",
+        "movement",
+        "action",
+        "existence"
+      ],
+      "current28Coverage": [
+        "action",
+        "movement",
+        "state"
+      ],
+      "overlapAllowed": true,
+      "languages": [
+        "en",
+        "es",
+        "pt",
+        "tripiano"
+      ],
+      "evidence": "none"
+    }
   },
   "verbExpansion28": {
     "status": "canonical-admitted-piano-implemented-awaiting-homologation",
@@ -812,7 +836,7 @@
   "sharedResponsiveContract": {
     "id": "siyayo-stage-container-responsive-contract",
     "path": "docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md",
-    "status": "R-02-implemented-fix-applied-awaiting-visual-confirmation",
+    "status": "R-02-homologated",
     "commonFiles": [
       "css/siyayo-responsive-stage.css",
       "js/siyayo-responsive-preview.js"
@@ -846,5 +870,13 @@
       ],
       "effect": "Restores developer Auto / Portrait / Landscape controller without changing responsive runtime or pedagogy."
     }
+  },
+  "verbScaleRoadmap": {
+    "minimumTarget": 200,
+    "currentCanonicalCount": 28,
+    "windowSize": 14,
+    "naturalFullWindowMilestone": 210,
+    "windows": "1–14, 15–28, then successive 14-item groups",
+    "rule": "Never fill a window by inventing Stage-only verbs; canonical corpus admission and validation come first."
   }
 }
