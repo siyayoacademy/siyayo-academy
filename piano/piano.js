@@ -161,6 +161,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "work",
+                "es": "trabajar",
+                "pt": "trabalhar"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -187,6 +198,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "study",
+                "es": "estudiar",
+                "pt": "estudar"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -208,6 +230,17 @@
                 "past": "played",
                 "pastParticiple": "played",
                 "gerund": "playing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "play",
+                "es": "jugar",
+                "pt": "jogar"
             },
             "verbFunction": [
                 "action"
@@ -240,6 +273,18 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "walk",
+                "es": "caminar",
+                "pt": "caminhar"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -261,6 +306,17 @@
                 "past": "talked",
                 "pastParticiple": "talked",
                 "gerund": "talking"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "talk",
+                "es": "hablar",
+                "pt": "falar"
             },
             "verbFunction": [
                 "action"
@@ -292,6 +348,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "eat",
+                "es": "comer",
+                "pt": "comer"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -318,6 +385,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "drink",
+                "es": "beber",
+                "pt": "beber"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -339,6 +417,18 @@
                 "past": "slept",
                 "pastParticiple": "slept",
                 "gerund": "sleeping"
+            },
+            "verbFunction": [
+                "state",
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "sleep",
+                "es": "dormir",
+                "pt": "dormir"
             },
             "verbFunction": [
                 "state",
@@ -372,6 +462,18 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "wake",
+                "es": "despertar",
+                "pt": "acordar"
+            },
+            "verbFunction": [
+                "state",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -393,6 +495,17 @@
                 "past": "read",
                 "pastParticiple": "read",
                 "gerund": "reading"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "read",
+                "es": "leer",
+                "pt": "ler"
             },
             "verbFunction": [
                 "action"
@@ -424,6 +537,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "write",
+                "es": "escribir",
+                "pt": "escrever"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -445,6 +569,17 @@
                 "past": "listened",
                 "pastParticiple": "listened",
                 "gerund": "listening"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "listen",
+                "es": "escuchar",
+                "pt": "escutar"
             },
             "verbFunction": [
                 "action"
@@ -476,6 +611,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "speak",
+                "es": "hablar",
+                "pt": "falar"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -497,6 +643,18 @@
                 "past": "went",
                 "pastParticiple": "gone",
                 "gerund": "going"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "go",
+                "es": "ir",
+                "pt": "ir"
             },
             "verbFunction": [
                 "movement",
@@ -530,6 +688,18 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "come",
+                "es": "venir",
+                "pt": "vir"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -551,6 +721,18 @@
                 "past": "ran",
                 "pastParticiple": "run",
                 "gerund": "running"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "run",
+                "es": "correr",
+                "pt": "correr"
             },
             "verbFunction": [
                 "movement",
@@ -583,6 +765,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "buy",
+                "es": "comprar",
+                "pt": "comprar"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -604,6 +797,17 @@
                 "past": "chose",
                 "pastParticiple": "chosen",
                 "gerund": "choosing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "choose",
+                "es": "elegir",
+                "pt": "escolher"
             },
             "verbFunction": [
                 "action"
@@ -635,6 +839,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "cook",
+                "es": "cocinar",
+                "pt": "cozinhar"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -656,6 +871,17 @@
                 "past": "opened",
                 "pastParticiple": "opened",
                 "gerund": "opening"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "open",
+                "es": "abrir",
+                "pt": "abrir"
             },
             "verbFunction": [
                 "action"
@@ -687,6 +913,17 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "close",
+                "es": "cerrar",
+                "pt": "fechar"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -708,6 +945,17 @@
                 "past": "found",
                 "pastParticiple": "found",
                 "gerund": "finding"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "find",
+                "es": "encontrar",
+                "pt": "encontrar"
             },
             "verbFunction": [
                 "action"
@@ -739,6 +987,17 @@
                 "state"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "need",
+                "es": "necesitar",
+                "pt": "precisar"
+            },
+            "verbFunction": [
+                "state"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -760,6 +1019,17 @@
                 "past": "served",
                 "pastParticiple": "served",
                 "gerund": "serving"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "serve",
+                "es": "servir",
+                "pt": "servir"
             },
             "verbFunction": [
                 "action"
@@ -792,6 +1062,18 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "arrive",
+                "es": "llegar",
+                "pt": "chegar"
+            },
+            "verbFunction": [
+                "movement",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -813,6 +1095,17 @@
                 "past": "began",
                 "pastParticiple": "begun",
                 "gerund": "beginning"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "begin",
+                "es": "empezar",
+                "pt": "começar"
             },
             "verbFunction": [
                 "action"
@@ -845,6 +1138,18 @@
                 "action"
             ],
             "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "understand",
+                "es": "entender",
+                "pt": "entender"
+            },
+            "verbFunction": [
+                "state",
+                "action"
+            ],
+            "verbClass": []
         }
     },
     {
@@ -866,6 +1171,17 @@
                 "past": "shared",
                 "pastParticiple": "shared",
                 "gerund": "sharing"
+            },
+            "verbFunction": [
+                "action"
+            ],
+            "verbClass": []
+        },
+        "functionMeta": {
+            "translations": {
+                "en": "share",
+                "es": "compartir",
+                "pt": "compartilhar"
             },
             "verbFunction": [
                 "action"
@@ -900,13 +1216,23 @@
     activeVerbGroup = next;
     stage.dataset.verbGroup = String(activeVerbGroup + 1);
     clearVerbMorphologyFocus();
+    clearVerbFunctionFocus();
     refreshContentGroupControls();
     refreshFrondosaLabels();
 
     if (semanticSequence) semanticSequence.dataset.phase = "idle";
-    if (semanticPhase) semanticPhase.textContent = "VERBS · ACTIONS · GROUP " + (activeVerbGroup + 1);
-    if (semanticCue) semanticCue.textContent = activeVerbGroup === 0 ? "Verb Actions 1–14" : "Verb Actions 15–28";
-    if (semanticAnswer) semanticAnswer.textContent = "Canonical trilingual action corpus • Explore";
+    if (semanticPhase) semanticPhase.textContent =
+      activeActivity === "morphology" ? "VERB · MORPHOLOGY · EN" :
+      activeActivity === "function" ? "VERB · FUNCTION" :
+      "VERBS · ACTIONS · GROUP " + (activeVerbGroup + 1);
+    if (semanticCue) semanticCue.textContent =
+      activeActivity === "morphology" ? "Touch a verb to inspect its English morphology" :
+      activeActivity === "function" ? "Touch a verb to inspect its canonical function" :
+      activeVerbGroup === 0 ? "Verb Actions 1–14" : "Verb Actions 15–28";
+    if (semanticAnswer) semanticAnswer.textContent =
+      activeActivity === "morphology" ? "English-only canonical regularity • no evaluation" :
+      activeActivity === "function" ? "Canonical semantic function • overlaps allowed • no evaluation" :
+      "Canonical trilingual action corpus • Explore";
 
     window.dispatchEvent(new CustomEvent("siyayo:content-group-changed", {
       detail:{
@@ -1638,18 +1964,21 @@
       if (id === "questions") button.disabled = activeCollectionId !== "question-words";
       if (id === "classify") button.disabled = activeCollectionId !== "nouns";
       if (id === "morphology") button.disabled = activeCollectionId !== "verbs";
+      if (id === "function") button.disabled = activeCollectionId !== "verbs";
     });
   }
 
   function setActivity(nextActivity) {
-    if (!["explore","questions","classify","morphology"].includes(nextActivity)) return;
+    if (!["explore","questions","classify","morphology","function"].includes(nextActivity)) return;
     if (nextActivity === "questions" && activeCollectionId !== "question-words") return;
     if (nextActivity === "classify" && activeCollectionId !== "nouns") return;
     if (nextActivity === "morphology" && activeCollectionId !== "verbs") return;
+    if (nextActivity === "function" && activeCollectionId !== "verbs") return;
 
     activeActivity = nextActivity;
     stage.dataset.activity = activeActivity;
     if (activeActivity !== "morphology") clearVerbMorphologyFocus();
+    if (activeActivity !== "function") clearVerbFunctionFocus();
     refreshActivityControls();
 
     if (activeActivity === "questions") {
@@ -1676,6 +2005,24 @@
       if (semanticPhase) semanticPhase.textContent = "VERB · MORPHOLOGY · EN";
       if (semanticCue) semanticCue.textContent = "Touch a verb to inspect its English morphology";
       if (semanticAnswer) semanticAnswer.textContent = "English-only canonical regularity • no evaluation";
+      refreshLabels();
+      refreshFrondosaLabels();
+    } else if (activeActivity === "function") {
+      if (mode === "questions" || mode === "sound" || mode === "solfege") {
+        mode = pedagogicalLanguage || "en";
+      }
+      if (!["en","es","pt","tripiano"].includes(mode)) mode = "en";
+      if (nounLayerPanel) nounLayerPanel.hidden = true;
+      if (nounClassifyPanel) nounClassifyPanel.hidden = true;
+      clearVerbFunctionFocus();
+      modeButtons.forEach(btn => btn.classList.toggle("is-active", btn.dataset.mode === mode));
+      stage.dataset.theme = ["en","es","pt"].includes(mode) ? mode : "sound";
+      modeStatus.textContent = "FUNCTION · " + mode.toUpperCase();
+      wordStatus.textContent = "Quality · State · Movement · Action · Existence";
+      if (semanticSequence) semanticSequence.dataset.phase = "idle";
+      if (semanticPhase) semanticPhase.textContent = "VERB · FUNCTION";
+      if (semanticCue) semanticCue.textContent = "Touch a verb to inspect its canonical function";
+      if (semanticAnswer) semanticAnswer.textContent = "Current corpus presents Action, Movement and State; functions may overlap • no evaluation";
       refreshLabels();
       refreshFrondosaLabels();
     } else {
@@ -1735,7 +2082,9 @@
         ? "CLASSIFY · " + mode.toUpperCase()
         : activeActivity === "morphology"
           ? "MORPHOLOGY · EN"
-          : "EXPLORE · " + mode.toUpperCase();
+          : activeActivity === "function"
+            ? "FUNCTION · " + mode.toUpperCase()
+            : "EXPLORE · " + mode.toUpperCase();
 
     stage.dataset.theme = mode === "questions"
       ? pedagogicalLanguage
@@ -1751,6 +2100,9 @@
     refreshFrondosaLabels();
     if (mode === "questions") localizeQuestionFlowSurface();
     if (activeActivity === "classify") presentNounClassifyItem({ speakIt:false, resetState:false });
+    if (activeActivity === "function" && activeVerbFunctionItem) {
+      presentVerbFunction(activeVerbFunctionItem, null, {speakIt:false});
+    }
   }
 
   function activateKey(button, key, source = "piano-flat", semantic = null, suppressSpeech = false) {
@@ -2466,6 +2818,12 @@
   function contentLabelForMode(item) {
     if (!item) return "";
     if (activeCollectionId === "verbs" && activeActivity === "morphology") return verbMorphologyLabel(item);
+    if (activeCollectionId === "verbs" && activeActivity === "function") {
+      if (mode === "tripiano") {
+        return ["en","es","pt"].map(language => verbFunctionWord(item, language)).join(" · ");
+      }
+      return verbFunctionWord(item);
+    }
     if (mode === "questions") return item[pedagogicalLanguage] || item.en;
     if (mode === "es") return item.es;
     if (mode === "pt") return item.pt;
@@ -2509,6 +2867,10 @@
       speakVerbMorphology(item);
       return;
     }
+    if (activeCollectionId === "verbs" && activeActivity === "function") {
+      speakVerbFunction(item);
+      return;
+    }
     if (mode === "es") speak(item.es, "es-ES");
     else if (mode === "pt") speak(item.pt, "pt-BR");
     else if (mode === "tripiano") {
@@ -2533,6 +2895,148 @@
     const collection = currentNounCollection();
     const language = mode === "questions" ? pedagogicalLanguage : ["en","es","pt"].includes(mode) ? mode : "en";
     return collection.labels[language] || collection.labels.en;
+  }
+
+  const verbFunctionCopy = Object.freeze({
+    quality:{
+      labels:{en:"Quality",es:"Cualidad",pt:"Qualidade"},
+      descriptions:{
+        en:"identity, classification, property or characteristic",
+        es:"identidad, clasificación, propiedad o característica",
+        pt:"identidade, classificação, propriedade ou característica"
+      }
+    },
+    state:{
+      labels:{en:"State",es:"Estado",pt:"Estado"},
+      descriptions:{
+        en:"condition or situation in context",
+        es:"condición o situación en contexto",
+        pt:"condição ou situação em contexto"
+      }
+    },
+    movement:{
+      labels:{en:"Movement",es:"Movimiento",pt:"Movimento"},
+      descriptions:{
+        en:"displacement, direction or change of position",
+        es:"desplazamiento, dirección o cambio de posición",
+        pt:"deslocamento, direção ou mudança de posição"
+      }
+    },
+    action:{
+      labels:{en:"Action",es:"Acción",pt:"Ação"},
+      descriptions:{
+        en:"what a subject does through a lexical action or activity",
+        es:"lo que hace un sujeto mediante una acción o actividad léxica",
+        pt:"o que o sujeito faz por meio de uma ação ou atividade lexical"
+      }
+    },
+    existence:{
+      labels:{en:"Existence",es:"Existencia",pt:"Existência"},
+      descriptions:{
+        en:"existence, presence, availability or occurrence",
+        es:"existencia, presencia, disponibilidad u ocurrencia",
+        pt:"existência, presença, disponibilidade ou ocorrência"
+      }
+    }
+  });
+  let activeVerbFunctionItem = null;
+
+  function verbFunctionLanguage() {
+    return ["es","pt"].includes(mode) ? mode : "en";
+  }
+
+  function verbFunctionWord(item, language = verbFunctionLanguage()) {
+    if (!item) return "";
+    return item.functionMeta?.translations?.[language] || item[language] || item.en || "";
+  }
+
+  function verbFunctionLabels(item, language = verbFunctionLanguage()) {
+    return (item?.functionMeta?.verbFunction || []).map(id => verbFunctionCopy[id]?.labels?.[language] || id);
+  }
+
+  function verbFunctionSummary(item, language = verbFunctionLanguage()) {
+    if (!item) return "";
+    const functions = item.functionMeta?.verbFunction || [];
+    return functions.map(id => {
+      const copy = verbFunctionCopy[id];
+      if (!copy) return id;
+      return copy.labels[language] + " · " + copy.descriptions[language];
+    }).join("  •  ");
+  }
+
+  function verbFunctionSentence(item, language) {
+    const word = verbFunctionWord(item, language);
+    const labels = verbFunctionLabels(item, language);
+    if (!word || !labels.length) return "";
+    const joined = labels.length === 1
+      ? labels[0]
+      : labels.slice(0,-1).join(", ") + (language === "es" ? " y " : language === "pt" ? " e " : " and ") + labels[labels.length-1];
+
+    if (language === "es") return word + " expresa " + joined + ". " + verbFunctionSummary(item, language).replaceAll("  •  ", ". ") + ".";
+    if (language === "pt") return word + " expressa " + joined + ". " + verbFunctionSummary(item, language).replaceAll("  •  ", ". ") + ".";
+    return word + " expresses " + joined + ". " + verbFunctionSummary(item, language).replaceAll("  •  ", ". ") + ".";
+  }
+
+  function speakVerbFunction(item) {
+    if (!item) return;
+    if (mode === "tripiano") {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      [["en","en-US"],["es","es-ES"],["pt","pt-BR"]].forEach(([language,locale]) => {
+        const sentence = verbFunctionSentence(item, language);
+        if (!sentence) return;
+        const utterance = new SpeechSynthesisUtterance(sentence);
+        utterance.lang = locale;
+        utterance.rate = 0.84;
+        window.speechSynthesis.speak(utterance);
+      });
+      return;
+    }
+    const language = verbFunctionLanguage();
+    const locale = language === "es" ? "es-ES" : language === "pt" ? "pt-BR" : "en-US";
+    speak(verbFunctionSentence(item, language), locale);
+  }
+
+  function clearVerbFunctionFocus() {
+    activeVerbFunctionItem = null;
+    delete stage.dataset.verbFunctions;
+    leaves.forEach(leaf => leaf.classList.remove(
+      "is-function-focus",
+      "has-function-action",
+      "has-function-movement",
+      "has-function-state",
+      "has-function-quality",
+      "has-function-existence"
+    ));
+  }
+
+  function presentVerbFunction(item, leaf = null, {speakIt=true} = {}) {
+    if (!item || !item.functionMeta) return;
+    activeVerbFunctionItem = item;
+    const functions = item.functionMeta.verbFunction || [];
+    const language = verbFunctionLanguage();
+
+    if (leaf) {
+      leaves.forEach(candidate => candidate.classList.remove(
+        "is-function-focus",
+        "has-function-action",
+        "has-function-movement",
+        "has-function-state",
+        "has-function-quality",
+        "has-function-existence"
+      ));
+      leaf.classList.add("is-function-focus");
+      functions.forEach(id => leaf.classList.add("has-function-" + id));
+    }
+
+    stage.dataset.verbFunctions = functions.join(" ");
+    if (semanticSequence) semanticSequence.dataset.phase = "observed";
+    if (semanticPhase) semanticPhase.textContent = "VERB · FUNCTION · " + (mode === "tripiano" ? "TRIPIANO" : language.toUpperCase());
+    if (semanticCue) semanticCue.textContent = verbFunctionWord(item, language).toUpperCase() + " · " + verbFunctionLabels(item, language).join(" + ").toUpperCase();
+    if (semanticAnswer) semanticAnswer.textContent = verbFunctionSummary(item, language);
+    wordStatus.textContent = verbFunctionWord(item, language) + " → " + verbFunctionLabels(item, language).join(" + ");
+
+    if (speakIt) speakVerbFunction(item);
   }
 
   function verbMorphologyLabel(item) {
@@ -2632,7 +3136,11 @@
       activeActivity = "explore";
       clearVerbMorphologyFocus();
     }
-    if (activeCollectionId === "verbs" && !["explore","morphology"].includes(activeActivity)) {
+    if (activeCollectionId !== "verbs" && activeActivity === "function") {
+      activeActivity = "explore";
+      clearVerbFunctionFocus();
+    }
+    if (activeCollectionId === "verbs" && !["explore","morphology","function"].includes(activeActivity)) {
       activeActivity = "explore";
     }
     stage.dataset.activity = activeActivity;
@@ -2948,6 +3456,36 @@
               lemma:morphology.lemma,
               regularity:morphology.regularity,
               forms:{...morphology.forms},
+              evaluated:false,
+              evidenceProduced:false,
+              green:false
+            }
+          }));
+          return;
+        }
+
+        if (activeActivity === "function") {
+          const functionMeta = contentItem.functionMeta;
+          if (!functionMeta) return;
+          const pianoKey = keyboard.querySelector('[data-note="' + key.id + '"]');
+          if (pianoKey) activateKey(pianoKey, key, "frondosa", {
+            kind:"content-item",
+            collectionId:"verbs",
+            id:contentItem.id,
+            semanticDimension:"verb-function",
+            functions:[...functionMeta.verbFunction],
+            evidence:"none"
+          }, true);
+
+          presentVerbFunction(contentItem, leaf, {speakIt:true});
+
+          window.dispatchEvent(new CustomEvent("siyayo:verb-function-presented", {
+            detail:{
+              verbId:contentItem.id,
+              functions:[...functionMeta.verbFunction],
+              verbClass:[...(functionMeta.verbClass || [])],
+              language:mode,
+              source:"canonical-verb-function",
               evaluated:false,
               evidenceProduced:false,
               green:false
