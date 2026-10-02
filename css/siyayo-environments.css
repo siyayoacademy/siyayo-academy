@@ -1,0 +1,151 @@
+/* SIYAYO Environment Library v0.1
+   Reusable atmosphere layer. No pedagogical authority. */
+
+.siyayo-environment-host{
+  --env-sky-1:#102c55;
+  --env-sky-2:#06152d;
+  --env-sky-3:#020918;
+  --env-glow:rgba(215,179,90,.18);
+  --env-haze:rgba(95,125,180,.12);
+  position:relative;
+  isolation:isolate;
+  background:
+    radial-gradient(circle at 50% 18%,var(--env-sky-1) 0,var(--env-sky-2) 38%,var(--env-sky-3) 78%);
+  transition:background 800ms cubic-bezier(.25,.8,.25,1);
+}
+
+.siyayo-environment-host::before,
+.siyayo-environment-host::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.9;
+  transition:opacity 800ms cubic-bezier(.25,.8,.25,1),background 800ms cubic-bezier(.25,.8,.25,1);
+}
+
+.siyayo-environment-host::before{
+  background:
+    radial-gradient(circle at 24% 18%,rgba(255,255,255,.52) 0 1px,transparent 1.6px),
+    radial-gradient(circle at 76% 30%,rgba(255,255,255,.40) 0 1px,transparent 1.5px),
+    radial-gradient(circle at 46% 9%,rgba(242,216,138,.34) 0 1px,transparent 1.8px),
+    radial-gradient(ellipse at 50% 72%,var(--env-haze),transparent 56%);
+  background-size:120px 120px,160px 160px,210px 210px,100% 100%;
+}
+
+.siyayo-environment-host::after{
+  background:
+    radial-gradient(circle at 50% 42%,var(--env-glow),transparent 34%),
+    linear-gradient(180deg,transparent 58%,rgba(0,0,0,.20));
+}
+
+.siyayo-environment-host > *{position:relative;z-index:1}
+
+.siyayo-environment-host[data-environment="forest-day"]{
+  --env-sky-1:#cce4df;
+  --env-sky-2:#8fba9a;
+  --env-sky-3:#315f49;
+  --env-glow:rgba(255,222,139,.28);
+  --env-haze:rgba(213,239,200,.24);
+}
+.siyayo-environment-host[data-environment="forest-day"]::before{
+  background:
+    radial-gradient(ellipse at 15% 22%,rgba(35,91,58,.48),transparent 28%),
+    radial-gradient(ellipse at 86% 18%,rgba(29,77,49,.42),transparent 30%),
+    radial-gradient(circle at 50% 16%,rgba(255,239,177,.58),transparent 18%),
+    linear-gradient(180deg,rgba(210,236,220,.12),rgba(26,72,48,.20));
+}
+
+.siyayo-environment-host[data-environment="forest-night"]{
+  --env-sky-1:#16334a;
+  --env-sky-2:#0b2530;
+  --env-sky-3:#031318;
+  --env-glow:rgba(184,214,255,.16);
+  --env-haze:rgba(102,154,143,.16);
+}
+.siyayo-environment-host[data-environment="forest-night"]::before{
+  background:
+    radial-gradient(circle at 70% 12%,rgba(214,228,255,.52),transparent 10%),
+    radial-gradient(ellipse at 10% 25%,rgba(18,73,53,.62),transparent 32%),
+    radial-gradient(ellipse at 92% 30%,rgba(16,65,48,.58),transparent 34%),
+    radial-gradient(ellipse at 50% 78%,rgba(92,139,132,.15),transparent 50%);
+}
+
+.siyayo-environment-host[data-environment="river-dawn"]{
+  --env-sky-1:#cbdfea;
+  --env-sky-2:#8caac6;
+  --env-sky-3:#3c6078;
+  --env-glow:rgba(255,190,132,.32);
+  --env-haze:rgba(237,223,214,.22);
+}
+.siyayo-environment-host[data-environment="river-dawn"]::before{
+  background:
+    radial-gradient(circle at 50% 28%,rgba(255,214,153,.52),transparent 15%),
+    linear-gradient(180deg,transparent 54%,rgba(178,207,217,.20) 55%,rgba(32,79,99,.24) 100%),
+    repeating-linear-gradient(0deg,transparent 0 18px,rgba(255,255,255,.035) 18px 19px);
+}
+
+.siyayo-environment-host[data-environment="nice-party-evening"]{
+  --env-sky-1:#25345e;
+  --env-sky-2:#152341;
+  --env-sky-3:#081224;
+  --env-glow:rgba(255,193,92,.30);
+  --env-haze:rgba(176,89,102,.14);
+}
+.siyayo-environment-host[data-environment="nice-party-evening"]::before{
+  background:
+    radial-gradient(circle at 16% 18%,rgba(255,213,132,.42) 0 4px,transparent 7px),
+    radial-gradient(circle at 34% 12%,rgba(255,185,102,.34) 0 3px,transparent 6px),
+    radial-gradient(circle at 66% 16%,rgba(255,223,151,.40) 0 4px,transparent 7px),
+    radial-gradient(circle at 84% 11%,rgba(255,188,102,.30) 0 3px,transparent 6px),
+    linear-gradient(180deg,rgba(90,48,83,.10),rgba(8,18,36,.20));
+}
+
+.environment-dev-toolbar{
+  position:fixed;
+  left:14px;
+  bottom:14px;
+  z-index:1999;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+  max-width:min(760px,calc(100vw - 28px));
+  padding:6px;
+  border:1px solid rgba(242,216,138,.30);
+  border-radius:18px;
+  background:rgba(2,9,24,.88);
+  backdrop-filter:blur(10px);
+}
+.environment-dev-toolbar .environment-label{
+  padding:0 6px;
+  color:#f2d88a;
+  font-size:.68rem;
+  letter-spacing:.09em;
+}
+.environment-button{
+  min-height:32px;
+  padding:0 9px;
+  border:1px solid rgba(242,216,138,.20);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#fff;
+  font:inherit;
+  font-size:.68rem;
+  cursor:pointer;
+}
+.environment-button.is-active{
+  background:#d7b35a;
+  border-color:#f2d88a;
+  color:#171006;
+  font-weight:700;
+}
+@media (hover:none) and (pointer:coarse){
+  .environment-dev-toolbar{display:none!important}
+}
+@media (prefers-reduced-motion:reduce){
+  .siyayo-environment-host,
+  .siyayo-environment-host::before,
+  .siyayo-environment-host::after{transition:none!important}
+}
