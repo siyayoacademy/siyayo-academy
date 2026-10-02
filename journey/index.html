@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animated SIYAYO Journey</title>
   <link rel="stylesheet" href="../css/siyayo-responsive-stage.css">
+  <link rel="stylesheet" href="../css/siyayo-environments.css">
   <link rel="stylesheet" href="./journey.css">
 </head>
-<body>
+<body class="siyayo-environment-host" data-siyayo-environment-host data-environment="cosmic-night" data-environment-registry="../data/environments/siyayo-environments.json">
   <div class="dev-preview-toolbar" id="devPreviewToolbar" data-siyayo-responsive-toolbar aria-label="Responsive preview tools">
     <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
     <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
     <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
+  </div>
+
+  <div class="environment-dev-toolbar" data-siyayo-environment-toolbar aria-label="Environment preview tools">
+    <span class="environment-label">ENVIRONMENT</span>
+    <button type="button" class="environment-button" data-environment-choice="auto-local-time">Auto Time</button>
+    <button type="button" class="environment-button is-active" data-environment-choice="cosmic-night">Cosmic Night</button>
+    <button type="button" class="environment-button" data-environment-choice="forest-day">Forest Day</button>
+    <button type="button" class="environment-button" data-environment-choice="forest-night">Forest Night</button>
+    <button type="button" class="environment-button" data-environment-choice="river-dawn">River Dawn</button>
+    <button type="button" class="environment-button" data-environment-choice="nice-party-evening">Nice Party</button>
   </div>
 
   <div class="stage-viewport" id="stageViewport" data-siyayo-responsive-viewport data-preview="auto">
@@ -64,6 +75,7 @@
   </div>
 
   <script src="../js/siyayo-responsive-preview.js"></script>
+  <script src="../js/siyayo-environment-controller.js"></script>
   <script src="./journey.js"></script>
 </body>
 </html>
