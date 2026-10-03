@@ -149,3 +149,97 @@
   .siyayo-environment-host::before,
   .siyayo-environment-host::after{transition:none!important}
 }
+
+
+/* SIYAYO Weather Overlay v0.1
+   Presentation only. Weather never produces pedagogical state or Evidence. */
+
+.siyayo-environment-host{
+  --weather-overlay:none;
+  --weather-overlay-opacity:0;
+}
+
+.siyayo-environment-host::after{
+  background:
+    var(--weather-overlay),
+    radial-gradient(circle at 50% 42%,var(--env-glow),transparent 34%),
+    linear-gradient(180deg,transparent 58%,rgba(0,0,0,.20));
+  opacity:calc(.9 + var(--weather-overlay-opacity));
+}
+
+.siyayo-environment-host[data-weather="clear"]{
+  --weather-overlay:none;
+  --weather-overlay-opacity:0;
+}
+
+.siyayo-environment-host[data-weather="cloudy"]{
+  --weather-overlay:
+    linear-gradient(180deg,rgba(210,220,230,.16),rgba(70,82,98,.18));
+  --weather-overlay-opacity:.02;
+}
+
+.siyayo-environment-host[data-weather="mist"]{
+  --weather-overlay:
+    repeating-linear-gradient(
+      180deg,
+      rgba(236,242,244,.06) 0 28px,
+      rgba(236,242,244,.14) 28px 58px,
+      rgba(236,242,244,.04) 58px 92px
+    );
+  --weather-overlay-opacity:.04;
+}
+
+.siyayo-environment-host[data-weather="rain"]{
+  --weather-overlay:
+    repeating-linear-gradient(
+      102deg,
+      transparent 0 18px,
+      rgba(220,235,255,.12) 18px 20px,
+      transparent 20px 42px
+    ),
+    linear-gradient(180deg,rgba(74,92,116,.12),rgba(10,18,30,.12));
+  --weather-overlay-opacity:.06;
+}
+
+.weather-dev-toolbar{
+  position:fixed;
+  right:14px;
+  bottom:14px;
+  z-index:1999;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+  max-width:min(560px,calc(100vw - 28px));
+  padding:6px;
+  border:1px solid rgba(242,216,138,.30);
+  border-radius:18px;
+  background:rgba(2,9,24,.88);
+  backdrop-filter:blur(10px);
+}
+.weather-dev-toolbar .weather-label{
+  padding:0 6px;
+  color:#f2d88a;
+  font-size:.68rem;
+  letter-spacing:.09em;
+}
+.weather-button{
+  min-height:32px;
+  padding:0 9px;
+  border:1px solid rgba(242,216,138,.20);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#fff;
+  font:inherit;
+  font-size:.68rem;
+  cursor:pointer;
+}
+.weather-button.is-active{
+  background:#d7b35a;
+  border-color:#f2d88a;
+  color:#171006;
+  font-weight:700;
+}
+@media (hover:none) and (pointer:coarse){
+  .weather-dev-toolbar{display:none!important}
+}
