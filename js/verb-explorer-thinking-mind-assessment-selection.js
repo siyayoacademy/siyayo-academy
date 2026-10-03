@@ -81,6 +81,20 @@ function select(question,options){
     return Promise.resolve(true);
   var requestedKey=learnerId&&key(learnerId,skill,liveState);
   var saved=requestedKey&&retained[requestedKey];
+  // A transfer visit retains the circuit's origin. Recover only the same
+  // learner/skill/origin in the explicitly selected language; never create S2 here.
+  var activeDecision=active&&active.session&&active.session.decision;
+  var transferVisit=scopeApi&&learnerId&&activeDecision&&activeDecision.skill===skill&&
+    scopeApi.valid(activeDecision.assessmentScope)&&activeDecision.assessmentScope.learnerId===learnerId&&
+    activeDecision.experienceId!==liveState.currentExperienceId;
+  if(transferVisit){
+    var navigation=root.SIYAYOVerbExplorerExperienceNavigation;
+    var origin=navigation&&typeof navigation.getExperience==='function'&&navigation.getExperience(activeDecision.experienceId);
+    if(!origin||text(origin.toroidalNext&&origin.toroidalNext.nextExperience)!==liveState.currentExperienceId)return Promise.resolve(false);
+    requestedKey=key(learnerId,skill,{experienceLanguage:liveState.experienceLanguage,currentExperienceId:activeDecision.experienceId});
+    saved=requestedKey&&retained[requestedKey];
+    if(!saved)return Promise.resolve(false);
+  }
   if(learnerId&&active&&active.session&&liveState&&
     active.session.decision.experienceId!==liveState.currentExperienceId&&!saved)return Promise.resolve(false);
   if(learnerId&&active&&active.session){

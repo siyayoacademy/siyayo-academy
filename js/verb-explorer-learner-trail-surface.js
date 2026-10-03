@@ -88,7 +88,8 @@
     var visitName=text(currentTitle&&currentTitle.textContent)||destination;
     var prior=origin&&destination&&origin!==destination;
     var achieved=progress&&progress.completed===3&&progress.total===3;
-    var context=prior?
+    var sameLanguage=!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===language;
+    var context=prior&&sameLanguage?
       '<p><b>'+escapeHtml(labels.visiting)+'</b> · '+escapeHtml(visitName)+
       ' <span>'+escapeHtml(labels.visit)+'</span></p>'+
       '<p><b>'+escapeHtml(labels.assessment)+'</b> · '+escapeHtml(currentWord?currentWord.word:skill)+
@@ -248,7 +249,7 @@
         '<span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
         '<strong>'+escapeHtml(label.form)+'</strong>'+
         '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
-        '<small>'+escapeHtml(stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
+        '<small>'+escapeHtml(marker.state==='UNOBSERVED'&&observations.length?({en:'ASSESSMENT NOT YET OBSERVED',es:'EVALUACIÓN AÚN NO OBSERVADA',pt:'AVALIAÇÃO AINDA NÃO OBSERVADA'}[language]):stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
         (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
         observationHtml+
         (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+

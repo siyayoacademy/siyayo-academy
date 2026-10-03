@@ -1125,3 +1125,18 @@ Free trace carries learner when identified, native QWord label, language, Experi
 Verification: new real-definition/result/wire regression across EN/ES/PT WHAT/WHICH with identified Session WAIT and foreign-language active Session; positive/wrong/repeat/stale responses, unchanged authority and observation-only trail. Existing assessed diagnostic, language isolation and Green cycles remain required. Visual homologation pending publication and learner tests.
 
 Visual procedure: confirm nick before explicitly starting an assessment, answer head diagnostic correctly and incorrectly; feedback remains visible. Start WHAT/EN and earn contract progress; compare ES/PT without reselecting WHAT and answer head diagnostic: free observation appears, foreign-language contract stays unstarted, EN progress unchanged. Explicit WHAT selection starts that language's own contract; returning to EN recovers EN. Green requires canonical local/transfer closure.
+
+
+## LIVE-25 — Explicit language recovery on the circuit's transfer visit
+
+Classification: extension of retained Session recovery and clarification of observational presentation; no Pass Contract/corpus replacement, no routing or automatic adoption.
+
+Visual report on c726fc3 demonstrated WHAT EN 2/3 and ES 1/3 retained independently. Explicit QUÉ in Preparing could not recover ES from Shopping because recovery addressed the current page as origin. A read-only reproduction confirmed refusal while ES's original trace remained retained.
+
+On an explicit QWord click during a different-language transfer visit, selection now requires valid same-learner/same-skill active ownership and the origin Experience's declared toroidalNext destination. It addresses the retained requested-language Session using that circuit origin. Missing retained circuit, missing navigation declaration, unrelated Experience or another learner remain WAIT; provider is never invoked to create a Session on this path. Recovery preserves Session/context/Evidence references and origin. Normal birth at origin and explicit pedagogical adoption remain separate.
+
+Learning Trail clarifies that UNOBSERVED concerns assessment when an exploratory diagnostic exists. An assessment record from a foreign language is no longer described as the screen-language visit's assessment. Marker/counters/Green authority unchanged. Repeated accepted local responses still cannot satisfy transfer.
+
+Verification: EN/ES/PT retained recovery during Shopping→Preparing visits, unchanged birth count and trace, return to origin, missing circuit/catalog/unrelated/other-learner negatives; native observational/assessment labels with empty canonical markers. Existing real Green cycles and local/transfer isolation remain required. Visual homologation pending.
+
+Visual next: start WHAT EN and ES in Shopping, record EN 2/3 and ES 1/3; visit Preparing in EN, switch ES and explicitly click QUÉ. The ES circuit from Shopping must recover at 1/3 and show its kitchen transfer. Return EN and explicitly click WHAT: 2/3 remains. Only the actual transfer response in Preparing completes that language's own circuit. No implicit new S2 Session, no new Green from LANGUAGE/clicks.
