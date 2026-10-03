@@ -1,32 +1,24 @@
 {
   "$schema": "../schemas/node.schema.json",
-
-  "version": "0.1.0",
-
+  "version": "0.2.0",
   "id": "movement",
-
   "type": "concept",
-
   "role": "verb-function",
-
   "label": {
     "en": "MOVEMENT",
     "es": "MOVIMIENTO",
     "pt": "MOVIMENTO"
   },
-
   "description": {
-    "en": "Verb-function concept for expressing an action or process in progress at a reference moment, structured in the Master through TO BE + verb-ING.",
-    "es": "Concepto de función verbal para expresar una acción o proceso en desarrollo en un momento de referencia, estructurado en la Master mediante TO BE + verbo-ING.",
-    "pt": "Conceito de função verbal para expressar uma ação ou processo em andamento em um momento de referência, estruturado na Master por TO BE + verbo-ING."
+    "en": "Verb-function concept for expressing displacement, direction, change of position or physical movement of a participant through lexical verbs such as go, come, walk and run.",
+    "es": "Concepto de función verbal para expresar desplazamiento, dirección, cambio de posición o movimiento físico de un participante mediante verbos léxicos como ir, venir, caminar y correr.",
+    "pt": "Conceito de função verbal para expressar deslocamento, direção, mudança de posição ou movimento físico de um participante por meio de verbos lexicais como ir, vir, caminhar e correr."
   },
-
   "relations": [
     {
       "type": "parent",
       "target": "verb-functions"
     },
-
     {
       "type": "related",
       "target": "prepositions"
@@ -55,7 +47,6 @@
       "type": "related",
       "target": "tools"
     },
-
     {
       "type": "supports",
       "target": "practice"
@@ -64,7 +55,6 @@
       "type": "supports",
       "target": "examples"
     },
-
     {
       "type": "returns-to",
       "target": "verbs"
@@ -74,7 +64,6 @@
       "target": "roots"
     }
   ],
-
   "representations": [
     {
       "type": "visual-index",
@@ -105,17 +94,15 @@
       "target": "master-movement"
     }
   ],
-
   "pedagogy": {
     "level": "core",
     "sequence": 2,
     "speechEnabled": true,
     "interactive": true
   },
-
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.1 treats Movement as a distinct verb-function concept centered on an action or process in progress, structured through TO BE + verb-ING. Spatial displacement and direction may appear as applications, but they do not define the concept. Boundaries remain intentionally permeable with prepositions, timelines, sentence structure, questions and practical communication."
+    "notes": "v0.2 defines Movement by lexical-semantic displacement, direction, change of position or physical movement. Action and Movement may overlap for verbs such as go, come, walk and run. Progressive aspect (BE + verb-ING) is a separate grammatical layer that may present Movement or Action as ongoing, but it does not define the Movement function itself. Boundaries remain intentionally permeable with Action, prepositions, timelines, sentence structure, questions and practical communication."
   }
 }

@@ -1,0 +1,1124 @@
+const fs = require("fs");
+const assert = require("assert");
+
+const labRoot =
+  "labs/human-semantic-surface";
+
+const htmlPath =
+  labRoot + "/index.html";
+
+const academyPath =
+  labRoot + "/data/academy.json";
+
+const chapterPath =
+  labRoot + "/data/chapter.json";
+
+const labStylePath =
+  labRoot + "/lab.css";
+
+const labIdentityPath =
+  labRoot + "/lab-learner-identity.js";
+
+const labExperienceRuntimePath =
+  labRoot + "/lab-experience-runtime.js";
+
+const labAdaptiveChoiceSurfacePath =
+  labRoot + "/lab-adaptive-choice-surface.js";
+
+assert.ok(
+  fs.existsSync(htmlPath),
+  "human Semantic Surface lab route must exist"
+);
+
+assert.ok(
+  fs.existsSync(academyPath),
+  "human lab must own an isolated academy manifest"
+);
+
+assert.ok(
+  fs.existsSync(chapterPath),
+  "human lab must own isolated controlled scene data"
+);
+
+assert.ok(
+  fs.existsSync(labStylePath),
+  "human lab must own scoped visual refinements"
+);
+
+assert.ok(
+  fs.existsSync(labIdentityPath),
+  "human lab must own an explicit lab-only learner identity fixture"
+);
+
+assert.ok(
+  fs.existsSync(labExperienceRuntimePath),
+  "human lab must own an explicit lab-only Experience runtime fixture"
+);
+
+assert.ok(
+  fs.existsSync(labAdaptiveChoiceSurfacePath),
+  "human lab must own its lab-only Adaptive Choice surface wrapper"
+);
+
+const html =
+  fs.readFileSync(
+    htmlPath,
+    "utf8"
+  );
+
+for (const src of [
+  "../../js/story-semantic-surface-realization.js",
+  "../../js/story-semantic-surface-dom-materialization.js",
+  "../../js/story-semantic-surface-attention.js",
+  "../../js/story-semantic-surface-interaction-intent.js",
+  "../../js/story-semantic-surface-action-choice.js",
+  "../../js/story-semantic-surface-action-choice-dom-materialization.js",
+  "../../js/story-assessment-leaf-surface.js",
+  "../../js/story-assessment-leaf.js",
+  "../../js/green-pass-authority-policy.js",
+  "../../js/leaf-assessment-target-authority.js",
+  "../../js/verb-explorer-learner-identity-source.js",
+  "../../js/verb-explorer-learner-identity-provider.js",
+  "../../js/verb-explorer-canonical-skill-source.js",
+  "../../js/verb-explorer-canonical-skill-loader.js",
+  "../../js/leaf-canonical-skill-bridge.js",
+  "../../js/green-pass-profile.js",
+  "../../js/verb-explorer-adaptive-profile-source.js",
+  "../../js/adaptive-evidence-profile.js",
+  "../../js/verb-explorer-adaptive-evidence-profile-source.js",
+  "../../js/adaptive-learning-router.js",
+  "../../js/adaptive-pedagogical-orchestrator.js",
+  "../../js/adaptive-attempt-loop.js",
+  "../../js/verb-explorer-adaptive-session-source.js",
+  "lab-experience-runtime.js",
+  "../../js/verb-explorer-adaptive-state-bridge.js",
+  "../../js/verb-explorer-adaptive-coordinator.js",
+  "../../js/verb-explorer-choice-attempt-provider.js",
+  "../../js/verb-explorer-adaptive-context-source.js",
+  "../../js/verb-explorer-session-state-boundary.js",
+  "../../js/verb-explorer-adaptive-coordinator-config.js",
+  "../../js/verb-explorer-adaptive-composer.js",
+  "../../js/verb-explorer-adaptive-live-start.js",
+  "../../js/verb-explorer-adaptive-readiness-trigger.js",
+  "../../js/leaf-assessment-target-readiness.js",
+  "../../js/leaf-assessment-target-provider.js",
+  "../../js/story-assessment-leaf-selection.js",
+  "../../js/adaptive-choice-context-source.js",
+  "../../js/adaptive-choice-presenter.js",
+  "../../js/contextual-choice-resolver.js",
+  "../../js/adaptive-choice-resolution-presenter.js",
+  "../../js/verb-explorer-choice-resolution-reader.js",
+  "../../js/choice-evidence-evaluator.js",
+  "../../js/verb-explorer-choice-evidence-bridge.js",
+  "../../js/choice-support-sensor.js",
+  "lab-choice-support-runtime.js",
+  "../../js/choice-attempt-ownership.js",
+  "../../js/choice-attempt-boundary.js",
+  "../../js/verb-explorer-choice-attempt-factory.js",
+  "../../js/adaptive-advance-selector.js",
+  "../../js/adaptive-wait-classifier.js",
+  "../../js/adaptive-learner-agency.js",
+  "../../js/adaptive-wait-release.js",
+  "../../js/adaptive-resume-eligibility.js",
+  "../../js/adaptive-agency-release.js",
+  "../../js/adaptive-agency-resume.js",
+  "../../js/adaptive-resume-context.js",
+  "../../js/adaptive-agency-resume-context.js",
+  "../../js/adaptive-learning-cycle.js",
+  "../../js/verb-explorer-adaptive-controller.js",
+  "../../js/verb-explorer-learner-event.js",
+  "../../js/adaptive-choice-browser-wire.js",
+  "lab-adaptive-choice-surface.js",
+  "../../js/app.js"
+]) {
+  assert.ok(
+    html.includes(
+      'src="' + src + '"'
+    ),
+    "human lab must load shared production module " + src
+  );
+}
+
+assert.ok(
+  html.includes(
+    'href="../../css/style.css"'
+  ),
+  "human lab must reuse production styling"
+);
+
+assert.ok(
+  html.includes(
+    'href="lab.css"'
+  ),
+  "human lab must load its scoped visual refinements after production styling"
+);
+
+
+const leafSurfaceIndex =
+  html.indexOf(
+    'src="../../js/story-assessment-leaf-surface.js"'
+  );
+
+const leafReaderIndex =
+  html.indexOf(
+    'src="../../js/story-assessment-leaf.js"'
+  );
+
+const greenPassAuthorityPolicyIndex =
+  html.indexOf(
+    'src="../../js/green-pass-authority-policy.js"'
+  );
+
+const targetAuthorityIndex =
+  html.indexOf(
+    'src="../../js/leaf-assessment-target-authority.js"'
+  );
+
+const learnerIdentitySourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-learner-identity-source.js"'
+  );
+
+const learnerIdentityProviderIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-learner-identity-provider.js"'
+  );
+
+const labLearnerIdentityIndex =
+  html.indexOf(
+    'src="lab-learner-identity.js"'
+  );
+
+const canonicalSkillSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-canonical-skill-source.js"'
+  );
+
+const canonicalSkillLoaderIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-canonical-skill-loader.js"'
+  );
+
+const leafCanonicalSkillBridgeIndex =
+  html.indexOf(
+    'src="../../js/leaf-canonical-skill-bridge.js"'
+  );
+
+const greenPassProfileIndex =
+  html.indexOf(
+    'src="../../js/green-pass-profile.js"'
+  );
+
+const adaptiveProfileSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-profile-source.js"'
+  );
+
+const adaptiveEvidenceProfileIndex =
+  html.indexOf(
+    'src="../../js/adaptive-evidence-profile.js"'
+  );
+
+const adaptiveEvidenceProfileSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-evidence-profile-source.js"'
+  );
+
+const adaptiveLearningRouterIndex =
+  html.indexOf(
+    'src="../../js/adaptive-learning-router.js"'
+  );
+
+const adaptivePedagogicalOrchestratorIndex =
+  html.indexOf(
+    'src="../../js/adaptive-pedagogical-orchestrator.js"'
+  );
+
+const adaptiveAttemptLoopIndex =
+  html.indexOf(
+    'src="../../js/adaptive-attempt-loop.js"'
+  );
+
+const adaptiveSessionSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-session-source.js"'
+  );
+
+const labExperienceRuntimeIndex =
+  html.indexOf(
+    'src="lab-experience-runtime.js"'
+  );
+
+const adaptiveStateBridgeIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-state-bridge.js"'
+  );
+
+const adaptiveCoordinatorIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-coordinator.js"'
+  );
+
+const choiceAttemptProviderIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-choice-attempt-provider.js"'
+  );
+
+const adaptiveContextSourceIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-context-source.js"'
+  );
+
+const sessionStateBoundaryIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-session-state-boundary.js"'
+  );
+
+const adaptiveCoordinatorConfigIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-coordinator-config.js"'
+  );
+
+const adaptiveComposerIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-composer.js"'
+  );
+
+const adaptiveLiveStartIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-live-start.js"'
+  );
+
+const readinessTriggerIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-readiness-trigger.js"'
+  );
+
+const targetReadinessIndex =
+  html.indexOf(
+    'src="../../js/leaf-assessment-target-readiness.js"'
+  );
+
+const targetProviderIndex =
+  html.indexOf(
+    'src="../../js/leaf-assessment-target-provider.js"'
+  );
+
+const leafSelectionIndex =
+  html.indexOf(
+    'src="../../js/story-assessment-leaf-selection.js"'
+  );
+
+const adaptiveChoiceContextSourceIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-context-source.js"'
+  );
+
+const adaptiveChoicePresenterIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-presenter.js"'
+  );
+
+const contextualChoiceResolverIndex =
+  html.indexOf(
+    'src="../../js/contextual-choice-resolver.js"'
+  );
+
+const adaptiveChoiceResolutionPresenterIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-resolution-presenter.js"'
+  );
+
+const choiceResolutionReaderIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-choice-resolution-reader.js"'
+  );
+
+const choiceEvidenceEvaluatorIndex =
+  html.indexOf(
+    'src="../../js/choice-evidence-evaluator.js"'
+  );
+
+const choiceEvidenceBridgeIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-choice-evidence-bridge.js"'
+  );
+
+const choiceSupportSensorIndex =
+  html.indexOf(
+    'src="../../js/choice-support-sensor.js"'
+  );
+
+const labChoiceSupportRuntimeIndex =
+  html.indexOf(
+    'src="lab-choice-support-runtime.js"'
+  );
+
+const choiceAttemptOwnershipIndex =
+  html.indexOf(
+    'src="../../js/choice-attempt-ownership.js"'
+  );
+
+const choiceAttemptBoundaryIndex =
+  html.indexOf(
+    'src="../../js/choice-attempt-boundary.js"'
+  );
+
+const choiceAttemptFactoryIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-choice-attempt-factory.js"'
+  );
+
+const adaptiveAdvanceSelectorIndex =
+  html.indexOf(
+    'src="../../js/adaptive-advance-selector.js"'
+  );
+
+const adaptiveWaitClassifierIndex =
+  html.indexOf(
+    'src="../../js/adaptive-wait-classifier.js"'
+  );
+
+const adaptiveLearnerAgencyIndex =
+  html.indexOf(
+    'src="../../js/adaptive-learner-agency.js"'
+  );
+
+const adaptiveWaitReleaseIndex =
+  html.indexOf(
+    'src="../../js/adaptive-wait-release.js"'
+  );
+
+const adaptiveResumeEligibilityIndex =
+  html.indexOf(
+    'src="../../js/adaptive-resume-eligibility.js"'
+  );
+
+const adaptiveAgencyReleaseIndex =
+  html.indexOf(
+    'src="../../js/adaptive-agency-release.js"'
+  );
+
+const adaptiveAgencyResumeIndex =
+  html.indexOf(
+    'src="../../js/adaptive-agency-resume.js"'
+  );
+
+const adaptiveResumeContextIndex =
+  html.indexOf(
+    'src="../../js/adaptive-resume-context.js"'
+  );
+
+const adaptiveAgencyResumeContextIndex =
+  html.indexOf(
+    'src="../../js/adaptive-agency-resume-context.js"'
+  );
+
+const adaptiveLearningCycleIndex =
+  html.indexOf(
+    'src="../../js/adaptive-learning-cycle.js"'
+  );
+
+const adaptiveControllerIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-adaptive-controller.js"'
+  );
+
+const learnerEventIndex =
+  html.indexOf(
+    'src="../../js/verb-explorer-learner-event.js"'
+  );
+
+const adaptiveChoiceBrowserWireIndex =
+  html.indexOf(
+    'src="../../js/adaptive-choice-browser-wire.js"'
+  );
+
+const labAdaptiveChoiceSurfaceIndex =
+  html.indexOf(
+    'src="lab-adaptive-choice-surface.js"'
+  );
+
+const appIndex =
+  html.indexOf(
+    'src="../../js/app.js"'
+  );
+
+assert.ok(
+  leafSurfaceIndex >= 0,
+  "human lab must load Story Assessment Leaf Surface"
+);
+
+assert.ok(
+  leafReaderIndex >= 0,
+  "human lab must load Story Assessment Leaf reader"
+);
+
+assert.ok(
+  greenPassAuthorityPolicyIndex >= 0,
+  "human lab must load Green Pass Authority Policy"
+);
+
+assert.ok(
+  targetAuthorityIndex >= 0,
+  "human lab must load Leaf Assessment Target Authority"
+);
+
+assert.ok(
+  targetAuthorityIndex > greenPassAuthorityPolicyIndex,
+  "Leaf Assessment Target Authority must load after Green Pass Authority Policy"
+);
+
+assert.ok(
+  learnerIdentitySourceIndex >= 0,
+  "human lab must load Verb Explorer Learner Identity Source"
+);
+
+assert.ok(
+  learnerIdentityProviderIndex >= 0,
+  "human lab must load Verb Explorer Learner Identity Provider"
+);
+
+assert.ok(
+  learnerIdentityProviderIndex > learnerIdentitySourceIndex,
+  "Learner Identity Provider must load after Learner Identity Source"
+);
+
+assert.ok(
+  labLearnerIdentityIndex >= 0,
+  "human lab must load its explicit lab-only learner identity fixture"
+);
+
+assert.ok(
+  labLearnerIdentityIndex > learnerIdentityProviderIndex,
+  "lab-only learner identity fixture must load after Learner Identity Provider"
+);
+
+assert.ok(
+  canonicalSkillSourceIndex >= 0,
+  "human lab must load Canonical Skill Source"
+);
+
+assert.ok(
+  canonicalSkillLoaderIndex >= 0,
+  "human lab must load Canonical Skill Loader"
+);
+
+assert.ok(
+  canonicalSkillLoaderIndex > canonicalSkillSourceIndex,
+  "Canonical Skill Loader must load after Canonical Skill Source"
+);
+
+assert.ok(
+  leafCanonicalSkillBridgeIndex >= 0,
+  "human lab must load Leaf Canonical Skill Bridge"
+);
+
+assert.ok(
+  leafCanonicalSkillBridgeIndex > canonicalSkillLoaderIndex,
+  "Leaf Canonical Skill Bridge must load after Canonical Skill Loader"
+);
+
+assert.ok(
+  greenPassProfileIndex >= 0,
+  "human lab must load canonical Green Pass Profile API"
+);
+
+assert.ok(
+  adaptiveProfileSourceIndex >= 0,
+  "human lab must load Adaptive Profile Source"
+);
+
+assert.ok(
+  adaptiveEvidenceProfileIndex >= 0,
+  "human lab must load canonical Adaptive Evidence Profile API"
+);
+
+assert.ok(
+  adaptiveEvidenceProfileSourceIndex >= 0,
+  "human lab must load Adaptive Evidence Profile Source"
+);
+
+assert.ok(
+  adaptiveLearningRouterIndex >= 0,
+  "human lab must load canonical Adaptive Learning Router"
+);
+
+assert.ok(
+  adaptivePedagogicalOrchestratorIndex >= 0,
+  "human lab must load canonical Adaptive Pedagogical Orchestrator"
+);
+
+assert.ok(
+  adaptiveAttemptLoopIndex >= 0,
+  "human lab must load canonical Adaptive Attempt Loop API"
+);
+
+assert.ok(
+  adaptiveSessionSourceIndex >= 0,
+  "human lab must load Adaptive Session Source"
+);
+
+assert.ok(
+  labExperienceRuntimeIndex >= 0,
+  "human lab must load its explicit lab-only Experience runtime fixture"
+);
+
+assert.ok(
+  adaptiveStateBridgeIndex >= 0,
+  "human lab must load Adaptive State Bridge"
+);
+
+assert.ok(
+  adaptiveCoordinatorIndex >= 0,
+  "human lab must load Adaptive Coordinator"
+);
+
+assert.ok(
+  choiceAttemptProviderIndex >= 0,
+  "human lab must load grounded Choice Attempt Provider"
+);
+
+assert.ok(
+  adaptiveContextSourceIndex >= 0,
+  "human lab must load grounded Adaptive Context Source"
+);
+
+assert.ok(
+  sessionStateBoundaryIndex >= 0,
+  "human lab must load Session State Boundary"
+);
+
+assert.ok(
+  adaptiveCoordinatorConfigIndex >= 0,
+  "human lab must load Adaptive Coordinator Config"
+);
+
+assert.ok(
+  adaptiveComposerIndex >= 0,
+  "human lab must load Adaptive Composer"
+);
+
+assert.ok(
+  adaptiveProfileSourceIndex > greenPassProfileIndex,
+  "Adaptive Profile Source must load after canonical Green Pass Profile API"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveProfileSourceIndex,
+  "Adaptive Composer must load after Adaptive Profile Source"
+);
+
+assert.ok(
+  adaptiveEvidenceProfileSourceIndex > adaptiveEvidenceProfileIndex,
+  "Adaptive Evidence Profile Source must load after canonical Adaptive Evidence Profile API"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveEvidenceProfileSourceIndex,
+  "Adaptive Composer must load after Adaptive Evidence Profile Source"
+);
+
+assert.ok(
+  adaptivePedagogicalOrchestratorIndex > adaptiveLearningRouterIndex,
+  "Adaptive Pedagogical Orchestrator must load after canonical Adaptive Learning Router"
+);
+
+assert.ok(
+  adaptiveAttemptLoopIndex > adaptivePedagogicalOrchestratorIndex,
+  "Adaptive Attempt Loop must load after canonical Adaptive Pedagogical Orchestrator"
+);
+
+assert.ok(
+  adaptiveSessionSourceIndex > adaptiveAttemptLoopIndex,
+  "Adaptive Session Source must load after canonical Adaptive Attempt Loop API"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveSessionSourceIndex,
+  "Adaptive Composer must load after Adaptive Session Source"
+);
+
+assert.ok(
+  adaptiveStateBridgeIndex > labExperienceRuntimeIndex,
+  "Adaptive State Bridge must load after the lab-only Experience runtime fixture"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveStateBridgeIndex,
+  "Adaptive Composer must load after Adaptive State Bridge"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveCoordinatorIndex,
+  "Adaptive Composer must load after Adaptive Coordinator"
+);
+
+assert.ok(
+  adaptiveContextSourceIndex > choiceAttemptProviderIndex,
+  "Adaptive Context Source must load after grounded Choice Attempt Provider"
+);
+
+assert.ok(
+  sessionStateBoundaryIndex > adaptiveContextSourceIndex,
+  "Session State Boundary must load after grounded Adaptive Context Source"
+);
+
+assert.ok(
+  adaptiveCoordinatorConfigIndex > sessionStateBoundaryIndex,
+  "Adaptive Coordinator Config must load after Session State Boundary"
+);
+
+assert.ok(
+  adaptiveComposerIndex > adaptiveCoordinatorConfigIndex,
+  "Adaptive Composer must load after Adaptive Coordinator Config"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex >= 0,
+  "human lab must load adaptive LiveStart"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex > adaptiveComposerIndex,
+  "Adaptive LiveStart must load after Adaptive Composer"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex > learnerIdentitySourceIndex,
+  "Adaptive LiveStart must load after Learner Identity Source"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex > labLearnerIdentityIndex,
+  "Adaptive LiveStart must load after the lab-only learner identity fixture"
+);
+
+assert.ok(
+  adaptiveLiveStartIndex > leafCanonicalSkillBridgeIndex,
+  "Adaptive LiveStart must load after Leaf Canonical Skill Bridge"
+);
+
+assert.ok(
+  readinessTriggerIndex >= 0,
+  "human lab must load adaptive Readiness Trigger"
+);
+
+assert.ok(
+  readinessTriggerIndex > adaptiveLiveStartIndex,
+  "adaptive Readiness Trigger must load after adaptive LiveStart"
+);
+
+assert.ok(
+  targetReadinessIndex >= 0,
+  "human lab must load Leaf Assessment Target Readiness"
+);
+
+assert.ok(
+  targetProviderIndex >= 0,
+  "human lab must load Leaf Assessment Target Provider"
+);
+
+assert.ok(
+  targetReadinessIndex > targetAuthorityIndex,
+  "Leaf Assessment Target Readiness must load after Target Authority"
+);
+
+assert.ok(
+  targetReadinessIndex > readinessTriggerIndex,
+  "Leaf Assessment Target Readiness must load after adaptive Readiness Trigger"
+);
+
+assert.ok(
+  targetProviderIndex > targetReadinessIndex,
+  "Leaf Assessment Target Provider must load after Target Readiness"
+);
+
+assert.ok(
+  leafSelectionIndex >= 0,
+  "human lab must load Story Assessment Leaf Selection"
+);
+
+assert.ok(
+  leafSelectionIndex > leafReaderIndex,
+  "Story Assessment Leaf Selection must load after the Leaf reader"
+);
+
+assert.ok(
+  leafSelectionIndex > targetProviderIndex,
+  "Story Assessment Leaf Selection must load after the Target provider"
+);
+
+assert.ok(
+  adaptiveChoiceContextSourceIndex >= 0,
+  "human lab must load Adaptive Choice Context Source"
+);
+
+assert.ok(
+  adaptiveChoicePresenterIndex > adaptiveChoiceContextSourceIndex,
+  "Adaptive Choice Presenter must load after Adaptive Choice Context Source"
+);
+
+assert.ok(
+  contextualChoiceResolverIndex >= 0,
+  "human lab must load canonical Contextual Choice Resolver"
+);
+
+assert.ok(
+  adaptiveChoiceResolutionPresenterIndex > contextualChoiceResolverIndex,
+  "Adaptive Choice Resolution Presenter must load after canonical Contextual Choice Resolver"
+);
+
+assert.ok(
+  choiceResolutionReaderIndex > adaptiveChoiceResolutionPresenterIndex,
+  "Choice Resolution Reader must load after Choice Resolution Presenter"
+);
+
+assert.ok(
+  choiceEvidenceEvaluatorIndex > choiceResolutionReaderIndex,
+  "Choice Evidence Evaluator must load after Choice Resolution Reader"
+);
+
+assert.ok(
+  choiceEvidenceBridgeIndex > choiceEvidenceEvaluatorIndex,
+  "Choice Evidence Bridge must load after Choice Evidence Evaluator"
+);
+
+assert.ok(
+  choiceSupportSensorIndex >= 0,
+  "human lab must load canonical Choice Support Sensor"
+);
+
+assert.ok(
+  labChoiceSupportRuntimeIndex > choiceSupportSensorIndex,
+  "Human Lab support runtime must instantiate after Choice Support Sensor factory"
+);
+
+assert.ok(
+  choiceAttemptOwnershipIndex > choiceEvidenceBridgeIndex,
+  "Choice Attempt Ownership must load after Choice Evidence Bridge"
+);
+
+assert.ok(
+  choiceAttemptBoundaryIndex > choiceAttemptOwnershipIndex,
+  "Choice Attempt Boundary must load after Choice Attempt Ownership"
+);
+
+assert.ok(
+  choiceAttemptFactoryIndex > choiceAttemptBoundaryIndex,
+  "Choice Attempt Factory must load after Choice Attempt Boundary"
+);
+
+assert.ok(
+  adaptiveWaitClassifierIndex > adaptiveAdvanceSelectorIndex,
+  "Adaptive Wait Classifier must load after Adaptive Advance Selector"
+);
+
+assert.ok(
+  adaptiveWaitReleaseIndex > adaptiveLearnerAgencyIndex,
+  "Adaptive Wait Release must load after Adaptive Learner Agency"
+);
+
+assert.ok(
+  adaptiveAgencyReleaseIndex > adaptiveWaitReleaseIndex,
+  "Adaptive Agency Release must load after learner agency/wait release"
+);
+
+assert.ok(
+  adaptiveAgencyResumeIndex > adaptiveResumeEligibilityIndex &&
+  adaptiveAgencyResumeIndex > adaptiveAgencyReleaseIndex,
+  "Adaptive Agency Resume must load after release and resume eligibility"
+);
+
+assert.ok(
+  adaptiveAgencyResumeContextIndex > adaptiveAgencyResumeIndex &&
+  adaptiveAgencyResumeContextIndex > adaptiveResumeContextIndex,
+  "Adaptive Agency Resume Context must load after agency resume and resume context"
+);
+
+assert.ok(
+  adaptiveLearningCycleIndex > adaptiveAgencyResumeContextIndex &&
+  adaptiveLearningCycleIndex > adaptiveWaitClassifierIndex,
+  "Adaptive Learning Cycle must load after its runtime dependencies"
+);
+
+assert.ok(
+  adaptiveControllerIndex > adaptiveLearningCycleIndex,
+  "Adaptive Controller must load after Adaptive Learning Cycle"
+);
+
+assert.ok(
+  learnerEventIndex >= 0,
+  "human lab must load canonical Verb Explorer LearnerEvent boundary"
+);
+
+assert.ok(
+  adaptiveChoiceBrowserWireIndex > learnerEventIndex,
+  "Adaptive Choice Browser Wire must load after canonical LearnerEvent boundary"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > leafSelectionIndex,
+  "lab Adaptive Choice surface wrapper must load after Story Assessment Leaf Selection"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > adaptiveChoicePresenterIndex,
+  "lab Adaptive Choice surface wrapper must load after Adaptive Choice Presenter"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > adaptiveChoiceResolutionPresenterIndex,
+  "lab Adaptive Choice surface wrapper must load after Adaptive Choice Resolution Presenter"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurfaceIndex > adaptiveChoiceBrowserWireIndex,
+  "lab Adaptive Choice surface wrapper must load after Adaptive Choice Browser Wire"
+);
+
+for (const specialistIndex of [
+  leafSurfaceIndex,
+  leafReaderIndex,
+  greenPassAuthorityPolicyIndex,
+  targetAuthorityIndex,
+  learnerIdentitySourceIndex,
+  learnerIdentityProviderIndex,
+  labLearnerIdentityIndex,
+  canonicalSkillSourceIndex,
+  canonicalSkillLoaderIndex,
+  leafCanonicalSkillBridgeIndex,
+  greenPassProfileIndex,
+  adaptiveProfileSourceIndex,
+  adaptiveEvidenceProfileIndex,
+  adaptiveEvidenceProfileSourceIndex,
+  adaptiveLearningRouterIndex,
+  adaptivePedagogicalOrchestratorIndex,
+  adaptiveAttemptLoopIndex,
+  adaptiveSessionSourceIndex,
+  labExperienceRuntimeIndex,
+  adaptiveStateBridgeIndex,
+  adaptiveCoordinatorIndex,
+  choiceAttemptProviderIndex,
+  adaptiveContextSourceIndex,
+  sessionStateBoundaryIndex,
+  adaptiveCoordinatorConfigIndex,
+  adaptiveComposerIndex,
+  adaptiveLiveStartIndex,
+  readinessTriggerIndex,
+  targetReadinessIndex,
+  targetProviderIndex,
+  leafSelectionIndex,
+  adaptiveChoiceContextSourceIndex,
+  adaptiveChoicePresenterIndex,
+  contextualChoiceResolverIndex,
+  adaptiveChoiceResolutionPresenterIndex,
+  choiceResolutionReaderIndex,
+  choiceEvidenceEvaluatorIndex,
+  choiceEvidenceBridgeIndex,
+  choiceSupportSensorIndex,
+  labChoiceSupportRuntimeIndex,
+  choiceAttemptOwnershipIndex,
+  choiceAttemptBoundaryIndex,
+  choiceAttemptFactoryIndex,
+  adaptiveAdvanceSelectorIndex,
+  adaptiveWaitClassifierIndex,
+  adaptiveLearnerAgencyIndex,
+  adaptiveWaitReleaseIndex,
+  adaptiveResumeEligibilityIndex,
+  adaptiveAgencyReleaseIndex,
+  adaptiveAgencyResumeIndex,
+  adaptiveResumeContextIndex,
+  adaptiveAgencyResumeContextIndex,
+  adaptiveLearningCycleIndex,
+  adaptiveControllerIndex,
+  learnerEventIndex,
+  adaptiveChoiceBrowserWireIndex,
+  labAdaptiveChoiceSurfaceIndex
+]) {
+  assert.ok(
+    appIndex > specialistIndex,
+    "Assessment Leaf browser specialists must load before app.js in the human lab"
+  );
+}
+
+
+const labIdentity =
+  fs.readFileSync(
+    labIdentityPath,
+    "utf8"
+  );
+
+assert.ok(
+  labIdentity.includes(
+    'SIYAYOVerbExplorerLearnerIdentityProvider'
+  ),
+  "lab identity fixture must use the canonical Learner Identity Provider"
+);
+
+assert.ok(
+  labIdentity.includes(
+    'human-lab-learner-01'
+  ),
+  "lab identity fixture must declare an explicit controlled learner id"
+);
+
+assert.equal(
+  /localStorage|sessionStorage|document\.cookie|URLSearchParams/.test(
+    labIdentity
+  ),
+  false,
+  "lab identity fixture must not become persistence, login, cookie, or URL identity authority"
+);
+
+const labExperienceRuntime =
+  fs.readFileSync(
+    labExperienceRuntimePath,
+    "utf8"
+  );
+
+assert.ok(
+  labExperienceRuntime.includes(
+    "SIYAYOVerbExplorerResumeRuntime"
+  ),
+  "lab Experience runtime fixture must satisfy only the existing ResumeRuntime boundary"
+);
+
+assert.ok(
+  labExperienceRuntime.includes(
+    "captureContext"
+  ),
+  "lab Experience runtime fixture must expose captureContext for the Adaptive State Bridge"
+);
+
+assert.ok(
+  labExperienceRuntime.includes(
+    "currentExperienceId"
+  ) &&
+  labExperienceRuntime.includes(
+    "shopping-for-dinner"
+  ),
+  "lab Experience runtime fixture must explicitly declare the controlled shopping-for-dinner state"
+);
+
+assert.equal(
+  /StoryAssessmentLeaf|assessmentLeaf|assessmentTarget|SemanticSurface|surfaceId|targetWords|fetch\s*\(|chapter\.json/.test(
+    labExperienceRuntime
+  ),
+  false,
+  "lab Experience runtime fixture must not infer Experience from Story, Leaf, Surface, target words, or chapter data"
+);
+
+const labAdaptiveChoiceSurface =
+  fs.readFileSync(
+    labAdaptiveChoiceSurfacePath,
+    "utf8"
+  );
+
+assert.ok(
+  labAdaptiveChoiceSurface.includes("data-choice-select"),
+  "lab Adaptive Choice surface must materialize the canonical response hook"
+);
+
+assert.ok(
+  labAdaptiveChoiceSurface.includes("coordinator.submitChoice"),
+  "lab Adaptive Choice surface must hand the observed event to the configured Coordinator"
+);
+
+assert.equal(
+  /AdaptiveLearningCycle|greenPass|NEXT/.test(
+    labAdaptiveChoiceSurface
+  ),
+  false,
+  "lab Adaptive Choice surface must not call Cycle/Green Pass/progression directly"
+);
+
+const labStyle =
+  fs.readFileSync(
+    labStylePath,
+    "utf8"
+  );
+
+assert.ok(
+  /\.human-semantic-surface-lab\s+\.chapter-title/.test(
+    labStyle
+  ),
+  "human lab title refinement must remain scoped to the lab"
+);
+
+assert.ok(
+  /\.human-semantic-surface-lab\s+\.section-title/.test(
+    labStyle
+  ),
+  "human lab subtitle refinement must remain scoped to the lab"
+);
+
+const academy =
+  JSON.parse(
+    fs.readFileSync(
+      academyPath,
+      "utf8"
+    )
+  );
+
+assert.strictEqual(
+  academy.chapters.length,
+  1,
+  "human lab manifest must expose only the controlled lab chapter"
+);
+
+assert.strictEqual(
+  academy.chapters[0].status,
+  "active",
+  "controlled lab chapter must be the active lab entry"
+);
+
+assert.strictEqual(
+  academy.chapters[0].path,
+  "data/chapter.json",
+  "lab must resolve its own isolated chapter without touching canonical chapter data"
+);
+
+const chapter =
+  JSON.parse(
+    fs.readFileSync(
+      chapterPath,
+      "utf8"
+    )
+  );
+
+const item =
+  chapter.chapter.sections[0].items[0];
+
+assert.strictEqual(
+  item.sentences.en,
+  "Which cheese should we choose?",
+  "human lab must expose the controlled P0 sentence"
+);
+
+assert.deepStrictEqual(
+  item.surfaces.map(
+    surface => surface.id
+  ),
+  [
+    "question-choice",
+    "decision-agent"
+  ],
+  "human lab must expose the two explicit Semantic Surfaces"
+);
+
+assert.strictEqual(
+  item.assessmentLeaf.anchorSurfaceId,
+  "question-choice",
+  "human lab Assessment Leaf must remain anchored only to question-choice"
+);
+
+assert.strictEqual(
+  item.assessmentLeaf.assessmentTarget.definitionPath,
+  "/data/learning/skills/which.json",
+  "human lab Assessment Leaf must use a root-absolute canonical Skill definition path so nested lab routes fetch the one production definition"
+);
+
+console.log(
+  "Human Semantic Surface browser lab route: OK"
+);

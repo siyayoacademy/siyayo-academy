@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "items": [
+    {
+      "patternKey": "pt:exquisito:cross-language-transfer:es",
+      "expectedLanguage": "pt",
+      "targetMeaning": "strange-or-odd",
+      "alternatives": [
+        {
+          "id": "pt-esquisito",
+          "language": "pt",
+          "form": "esquisito",
+          "meaning": "strange-or-odd"
+        },
+        {
+          "id": "es-exquisito",
+          "language": "es",
+          "form": "exquisito",
+          "meaning": "excellent-refined-or-delicious"
+        },
+        {
+          "id": "es-raro",
+          "language": "es",
+          "form": "raro",
+          "meaning": "strange-or-odd"
+        }
+      ]
+    }
+  ]
+}

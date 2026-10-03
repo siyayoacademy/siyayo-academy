@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-what-en",
+  "language": "en",
+  "sentence": "What are we preparing first?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "What",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Thing or action being asked about"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "are",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "prepare",
+      "index": 4,
+      "form": "preparing",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Action in the question"
+        }
+      }
+    },
+    {
+      "id": "first",
+      "index": 5,
+      "form": "first",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prepare",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "prepare",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "prepare",
+      "dependent": "first",
+      "relation": "advmod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHAT question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference example; omitted subjects remain omitted. No inferred tokens."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "share",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I share a note every day.",
+            "es": "Yo comparto un apunte todos los días.",
+            "pt": "Eu compartilho uma anotação todos os dias."
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "comparto",
+            "pt": "compartilho"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not share a note every day.",
+            "es": "Yo no comparto un apunte todos los días.",
+            "pt": "Eu não compartilho uma anotação todos os dias."
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "comparto",
+            "pt": "compartilho"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do i share a note every day?",
+            "es": "¿Comparto yo un apunte todos los días?",
+            "pt": "Eu compartilho uma anotação todos os dias?"
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "comparto",
+            "pt": "compartilho"
+          }
+        }
+      }
+    },
+    {
+      "verb": "share",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I shared a note yesterday.",
+            "es": "Yo compartí un apunte ayer.",
+            "pt": "Eu compartilhei uma anotação ontem."
+          },
+          "targetWords": {
+            "en": "shared",
+            "es": "compartí",
+            "pt": "compartilhei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not share a note yesterday.",
+            "es": "Yo no compartí un apunte ayer.",
+            "pt": "Eu não compartilhei uma anotação ontem."
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "compartí",
+            "pt": "compartilhei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did i share a note yesterday?",
+            "es": "¿Compartí yo un apunte ayer?",
+            "pt": "Eu compartilhei uma anotação ontem?"
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "compartí",
+            "pt": "compartilhei"
+          }
+        }
+      }
+    },
+    {
+      "verb": "share",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will share a note tomorrow.",
+            "es": "Yo compartiré un apunte mañana.",
+            "pt": "Eu compartilharei uma anotação amanhã."
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "compartiré",
+            "pt": "compartilharei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not share a note tomorrow.",
+            "es": "Yo no compartiré un apunte mañana.",
+            "pt": "Eu não compartilharei uma anotação amanhã."
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "compartiré",
+            "pt": "compartilharei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will i share a note tomorrow?",
+            "es": "¿Compartiré yo un apunte mañana?",
+            "pt": "Eu compartilharei uma anotação amanhã?"
+          },
+          "targetWords": {
+            "en": "share",
+            "es": "compartiré",
+            "pt": "compartilharei"
+          }
+        }
+      }
+    }
+  ]
+}

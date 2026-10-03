@@ -239,6 +239,9 @@ jobs:
           node --check js/verb-explorer.js
           node scripts/test-choice-ui-integration.js
 
+      - name: Verify exploratory S1 WHY dialogue forms
+        run: node scripts/test-s1-exploratory-dialogue-forms.js
+
       - name: Run 3C TENSE MODE safety tests
         run: node scripts/test-experience-grammar-lock.js
 
@@ -283,7 +286,10 @@ jobs:
       - name: Run 6.5 context-preserving return tests
         run: node scripts/test-context-preserving-return.js
 
-      - name: Run 6.6 repeatable Blue Verb round-trip tests
+      - name: Run 6.6 URL sync contract tests
+        run: node scripts/test-verb-explorer-url-sync.js
+
+      - name: Run 6.7 repeatable Blue Verb round-trip tests
         run: node scripts/test-blue-verb-round-trip.js
 
       - name: Run 6.7 ACTION semantic bridge tests
@@ -303,3 +309,19 @@ jobs:
 
       - name: Run 6.16 Patita story trace tests
         run: node scripts/test-patita-story-trace.js
+
+      - name: Verify grounded S2 and S3 WHAT answers
+        run: node scripts/test-dinner-what-answer-grounding.js
+
+      - name: Verify read-only S2 WHAT probe specifications
+        run: |
+          node --check js/adaptive-what-object-question-probe-specification-source.js
+          node scripts/test-what-object-question-probe-specification-source.js
+
+      - name: Verify S3 WHY corpus and transfer grounding
+        run: node scripts/test-s3-why-corpus-contract.js
+
+      - name: Verify read-only S3 WHY probe specifications
+        run: |
+          node --check js/adaptive-why-contextual-reason-probe-specification-source.js
+          node scripts/test-s3-why-probe-specification-source.js

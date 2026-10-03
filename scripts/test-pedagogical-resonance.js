@@ -60,5 +60,34 @@ assert.equal(empty.bestCandidate, null);
 const exactToken = Resonance.scoreExperience({ id: 'token-test', links: { verbs: [] }, thinkingMind: [], perspectives: {}, note: 'shoulder' }, 'modal-core');
 assert.equal(exactToken.contributions.languagePattern, 0, 'should must not match shoulder');
 
+const canonicalQuestionWordSkills = {
+  'what.identify.information-gap': 'what',
+  'where.identify.place': 'where',
+  'when.identify.time': 'when',
+  'who.identify.person': 'who',
+  'why.identify.reason': 'why',
+  'how.identify.manner': 'how',
+  'how-much.identify.amount': 'how-much',
+  'how-many.identify.count': 'how-many',
+  'whose.identify.possession': 'whose',
+  'whom.identify.object-person': 'whom',
+  'how-long.identify.duration-length': 'how-long',
+  'how-far.identify.distance': 'how-far',
+  'how-often.identify.frequency': 'how-often',
+  'how-old.identify.age': 'how-old' // explicitly declared practical extension
+};
+assert.deepEqual(Resonance.questionWordSkillSignals, canonicalQuestionWordSkills);
+for (const [skill, questionWord] of Object.entries(canonicalQuestionWordSkills)) {
+  const probe = Resonance.scoreExperience({
+    id: `qw-${questionWord}-probe`,
+    links: { verbs: [] },
+    thinkingMind: [{ questionWord }],
+    perspectives: {}
+  }, skill);
+  assert.deepEqual(probe.matched.questionWords, [questionWord]);
+  assert.equal(probe.score, Resonance.weights.questionWord);
+  assert.equal(probe.evidenceStrength, 'weak', 'question presence is only an opportunity signal, never learner evidence');
+}
+
 console.log('Pedagogical resonance explainability tests passed.');
 console.log('WHICH opportunity resonance: PASS — Shopping for a Nice Dinner exposes which + choose + debating without fabricating learner evidence.');

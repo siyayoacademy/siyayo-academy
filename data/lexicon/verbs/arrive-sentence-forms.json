@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "arrive",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I arrive at class every day.",
+            "es": "Yo llego a clase todos los días.",
+            "pt": "Eu chego à aula todos os dias."
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llego",
+            "pt": "chego"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not arrive at class every day.",
+            "es": "Yo no llego a clase todos los días.",
+            "pt": "Eu não chego à aula todos os dias."
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llego",
+            "pt": "chego"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do I arrive at class every day?",
+            "es": "¿Llego yo a clase todos los días?",
+            "pt": "Eu chego à aula todos os dias?"
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llego",
+            "pt": "chego"
+          }
+        }
+      }
+    },
+    {
+      "verb": "arrive",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I arrived at class yesterday.",
+            "es": "Yo llegué a clase ayer.",
+            "pt": "Eu cheguei à aula ontem."
+          },
+          "targetWords": {
+            "en": "arrived",
+            "es": "llegué",
+            "pt": "cheguei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not arrive at class yesterday.",
+            "es": "Yo no llegué a clase ayer.",
+            "pt": "Eu não cheguei à aula ontem."
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llegué",
+            "pt": "cheguei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did I arrive at class yesterday?",
+            "es": "¿Llegué yo a clase ayer?",
+            "pt": "Eu cheguei à aula ontem?"
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llegué",
+            "pt": "cheguei"
+          }
+        }
+      }
+    },
+    {
+      "verb": "arrive",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will arrive at class tomorrow.",
+            "es": "Yo llegaré a clase mañana.",
+            "pt": "Eu chegarei à aula amanhã."
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llegaré",
+            "pt": "chegarei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not arrive at class tomorrow.",
+            "es": "Yo no llegaré a clase mañana.",
+            "pt": "Eu não chegarei à aula amanhã."
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llegaré",
+            "pt": "chegarei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will I arrive at class tomorrow?",
+            "es": "¿Llegaré yo a clase mañana?",
+            "pt": "Eu chegarei à aula amanhã?"
+          },
+          "targetWords": {
+            "en": "arrive",
+            "es": "llegaré",
+            "pt": "chegarei"
+          }
+        }
+      }
+    }
+  ]
+}

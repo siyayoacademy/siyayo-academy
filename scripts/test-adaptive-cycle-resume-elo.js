@@ -23,7 +23,7 @@ const common = { language: 'en', chapter: 'question-words', skill: 'which.use.de
 const attempts = [
   { ...common, dimension: 'choice-function', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'shopping-for-dinner' },
   { ...common, dimension: 'determiner-use', result: 'pass', mode: 'controlled-production', support: 'audio', context: 'shopping-for-dinner' },
-  { ...common, dimension: 'determiner-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' },
+  { ...common, dimension: 'determiner-use', result: 'pass', mode: 'local', support: 'none', context: 'shopping-for-dinner' },
   { ...common, dimension: 'determiner-use', result: 'pass', mode: 'transfer', support: 'none', context: 'shopping-clothes' }
 ];
 

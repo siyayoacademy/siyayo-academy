@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-which-en",
+  "language": "en",
+  "sentence": "Which carrots should we cook first?",
+  "tokens": [
+    {
+      "id": "which",
+      "index": 1,
+      "form": "Which",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Interrogative determiner of carrots"
+        }
+      }
+    },
+    {
+      "id": "carrots",
+      "index": 2,
+      "form": "carrots",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Carrots being selected"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 3,
+      "form": "should",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 4,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 5,
+      "form": "cook",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "first",
+      "index": 6,
+      "form": "first",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": ""
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "carrots",
+      "dependent": "which",
+      "relation": "det"
+    },
+    {
+      "head": "cook",
+      "dependent": "carrots",
+      "relation": "obj"
+    },
+    {
+      "head": "cook",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "cook",
+      "dependent": "first",
+      "relation": "advmod"
+    },
+    {
+      "head": "cook",
+      "dependent": "we",
+      "relation": "nsubj"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHICH question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "which",
+    "field": "thinkingMind.question",
+    "notes": "Explicit language-specific corpus reference; no inserted omitted subject."
+  }
+}

@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "find",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I find the answer every day.",
+              "es": "Yo encuentro la respuesta todos los días.",
+              "pt": "Eu encontro a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentro",
+              "pt": "encontro"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You find the answer every day.",
+              "es": "Tú encuentras la respuesta todos los días.",
+              "pt": "Você encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentras",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He finds the answer every day.",
+              "es": "Él encuentra la respuesta todos los días.",
+              "pt": "Ele encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "finds",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She finds the answer every day.",
+              "es": "Ella encuentra la respuesta todos los días.",
+              "pt": "Ela encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "finds",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It finds the answer every day.",
+              "es": "Ello encuentra la respuesta todos los días.",
+              "pt": "Isso encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "finds",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We find the answer every day.",
+              "es": "Nosotros encontramos la respuesta todos los días.",
+              "pt": "Nós encontramos a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontramos",
+              "pt": "encontramos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You find the answer every day.",
+              "es": "Ustedes encuentran la respuesta todos los días.",
+              "pt": "Vocês encontram a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentran",
+              "pt": "encontram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They find the answer every day.",
+              "es": "Ellos encuentran la respuesta todos los días.",
+              "pt": "Eles encontram a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentran",
+              "pt": "encontram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not find the answer every day.",
+              "es": "Yo no encuentro la respuesta todos los días.",
+              "pt": "Eu não encontro a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentro",
+              "pt": "encontro"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not find the answer every day.",
+              "es": "Tú no encuentras la respuesta todos los días.",
+              "pt": "Você não encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentras",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not find the answer every day.",
+              "es": "Él no encuentra la respuesta todos los días.",
+              "pt": "Ele não encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not find the answer every day.",
+              "es": "Ella no encuentra la respuesta todos los días.",
+              "pt": "Ela não encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not find the answer every day.",
+              "es": "Ello no encuentra la respuesta todos los días.",
+              "pt": "Isso não encontra a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not find the answer every day.",
+              "es": "Nosotros no encontramos la respuesta todos los días.",
+              "pt": "Nós não encontramos a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontramos",
+              "pt": "encontramos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not find the answer every day.",
+              "es": "Ustedes no encuentran la respuesta todos los días.",
+              "pt": "Vocês não encontram a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentran",
+              "pt": "encontram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not find the answer every day.",
+              "es": "Ellos no encuentran la respuesta todos los días.",
+              "pt": "Eles não encontram a resposta todos os dias."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentran",
+              "pt": "encontram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do I find the answer every day?",
+              "es": "¿Encuentro yo la respuesta todos los días?",
+              "pt": "Eu encontro a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentro",
+              "pt": "encontro"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you find the answer every day?",
+              "es": "¿Encuentras tú la respuesta todos los días?",
+              "pt": "Você encontra a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentras",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he find the answer every day?",
+              "es": "¿Encuentra él la respuesta todos los días?",
+              "pt": "Ele encontra a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she find the answer every day?",
+              "es": "¿Encuentra ella la respuesta todos los días?",
+              "pt": "Ela encontra a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it find the answer every day?",
+              "es": "¿Encuentra ello la respuesta todos los días?",
+              "pt": "Isso encontra a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentra",
+              "pt": "encontra"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we find the answer every day?",
+              "es": "¿Encontramos nosotros la respuesta todos los días?",
+              "pt": "Nós encontramos a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontramos",
+              "pt": "encontramos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you find the answer every day?",
+              "es": "¿Encuentran ustedes la respuesta todos los días?",
+              "pt": "Vocês encontram a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentran",
+              "pt": "encontram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they find the answer every day?",
+              "es": "¿Encuentran ellos la respuesta todos los días?",
+              "pt": "Eles encontram a resposta todos os dias?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encuentran",
+              "pt": "encontram"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I found the answer yesterday.",
+              "es": "Yo encontré la respuesta ayer.",
+              "pt": "Eu encontrei a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontré",
+              "pt": "encontrei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You found the answer yesterday.",
+              "es": "Tú encontraste la respuesta ayer.",
+              "pt": "Você encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontraste",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He found the answer yesterday.",
+              "es": "Él encontró la respuesta ayer.",
+              "pt": "Ele encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She found the answer yesterday.",
+              "es": "Ella encontró la respuesta ayer.",
+              "pt": "Ela encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It found the answer yesterday.",
+              "es": "Ello encontró la respuesta ayer.",
+              "pt": "Isso encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We found the answer yesterday.",
+              "es": "Nosotros encontramos la respuesta ayer.",
+              "pt": "Nós encontramos a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontramos",
+              "pt": "encontramos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You found the answer yesterday.",
+              "es": "Ustedes encontraron la respuesta ayer.",
+              "pt": "Vocês encontraram a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontraron",
+              "pt": "encontraram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They found the answer yesterday.",
+              "es": "Ellos encontraron la respuesta ayer.",
+              "pt": "Eles encontraram a resposta ontem."
+            },
+            "targetWords": {
+              "en": "found",
+              "es": "encontraron",
+              "pt": "encontraram"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not find the answer yesterday.",
+              "es": "Yo no encontré la respuesta ayer.",
+              "pt": "Eu não encontrei a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontré",
+              "pt": "encontrei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not find the answer yesterday.",
+              "es": "Tú no encontraste la respuesta ayer.",
+              "pt": "Você não encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraste",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not find the answer yesterday.",
+              "es": "Él no encontró la respuesta ayer.",
+              "pt": "Ele não encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not find the answer yesterday.",
+              "es": "Ella no encontró la respuesta ayer.",
+              "pt": "Ela não encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not find the answer yesterday.",
+              "es": "Ello no encontró la respuesta ayer.",
+              "pt": "Isso não encontrou a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not find the answer yesterday.",
+              "es": "Nosotros no encontramos la respuesta ayer.",
+              "pt": "Nós não encontramos a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontramos",
+              "pt": "encontramos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not find the answer yesterday.",
+              "es": "Ustedes no encontraron la respuesta ayer.",
+              "pt": "Vocês não encontraram a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraron",
+              "pt": "encontraram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not find the answer yesterday.",
+              "es": "Ellos no encontraron la respuesta ayer.",
+              "pt": "Eles não encontraram a resposta ontem."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraron",
+              "pt": "encontraram"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did I find the answer yesterday?",
+              "es": "¿Encontré yo la respuesta ayer?",
+              "pt": "Eu encontrei a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontré",
+              "pt": "encontrei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you find the answer yesterday?",
+              "es": "¿Encontraste tú la respuesta ayer?",
+              "pt": "Você encontrou a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraste",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he find the answer yesterday?",
+              "es": "¿Encontró él la respuesta ayer?",
+              "pt": "Ele encontrou a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she find the answer yesterday?",
+              "es": "¿Encontró ella la respuesta ayer?",
+              "pt": "Ela encontrou a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it find the answer yesterday?",
+              "es": "¿Encontró ello la respuesta ayer?",
+              "pt": "Isso encontrou a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontró",
+              "pt": "encontrou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we find the answer yesterday?",
+              "es": "¿Encontramos nosotros la respuesta ayer?",
+              "pt": "Nós encontramos a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontramos",
+              "pt": "encontramos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you find the answer yesterday?",
+              "es": "¿Encontraron ustedes la respuesta ayer?",
+              "pt": "Vocês encontraram a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraron",
+              "pt": "encontraram"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they find the answer yesterday?",
+              "es": "¿Encontraron ellos la respuesta ayer?",
+              "pt": "Eles encontraram a resposta ontem?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraron",
+              "pt": "encontraram"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will find the answer tomorrow.",
+              "es": "Yo encontraré la respuesta mañana.",
+              "pt": "Eu encontrarei a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraré",
+              "pt": "encontrarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will find the answer tomorrow.",
+              "es": "Tú encontrarás la respuesta mañana.",
+              "pt": "Você encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarás",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will find the answer tomorrow.",
+              "es": "Él encontrará la respuesta mañana.",
+              "pt": "Ele encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will find the answer tomorrow.",
+              "es": "Ella encontrará la respuesta mañana.",
+              "pt": "Ela encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will find the answer tomorrow.",
+              "es": "Ello encontrará la respuesta mañana.",
+              "pt": "Isso encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will find the answer tomorrow.",
+              "es": "Nosotros encontraremos la respuesta mañana.",
+              "pt": "Nós encontraremos a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraremos",
+              "pt": "encontraremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will find the answer tomorrow.",
+              "es": "Ustedes encontrarán la respuesta mañana.",
+              "pt": "Vocês encontrarão a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarán",
+              "pt": "encontrarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will find the answer tomorrow.",
+              "es": "Ellos encontrarán la respuesta mañana.",
+              "pt": "Eles encontrarão a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarán",
+              "pt": "encontrarão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not find the answer tomorrow.",
+              "es": "Yo no encontraré la respuesta mañana.",
+              "pt": "Eu não encontrarei a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraré",
+              "pt": "encontrarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not find the answer tomorrow.",
+              "es": "Tú no encontrarás la respuesta mañana.",
+              "pt": "Você não encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarás",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not find the answer tomorrow.",
+              "es": "Él no encontrará la respuesta mañana.",
+              "pt": "Ele não encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not find the answer tomorrow.",
+              "es": "Ella no encontrará la respuesta mañana.",
+              "pt": "Ela não encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not find the answer tomorrow.",
+              "es": "Ello no encontrará la respuesta mañana.",
+              "pt": "Isso não encontrará a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not find the answer tomorrow.",
+              "es": "Nosotros no encontraremos la respuesta mañana.",
+              "pt": "Nós não encontraremos a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraremos",
+              "pt": "encontraremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not find the answer tomorrow.",
+              "es": "Ustedes no encontrarán la respuesta mañana.",
+              "pt": "Vocês não encontrarão a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarán",
+              "pt": "encontrarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not find the answer tomorrow.",
+              "es": "Ellos no encontrarán la respuesta mañana.",
+              "pt": "Eles não encontrarão a resposta amanhã."
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarán",
+              "pt": "encontrarão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will I find the answer tomorrow?",
+              "es": "¿Encontraré yo la respuesta mañana?",
+              "pt": "Eu encontrarei a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraré",
+              "pt": "encontrarei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you find the answer tomorrow?",
+              "es": "¿Encontrarás tú la respuesta mañana?",
+              "pt": "Você encontrará a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarás",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he find the answer tomorrow?",
+              "es": "¿Encontrará él la respuesta mañana?",
+              "pt": "Ele encontrará a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she find the answer tomorrow?",
+              "es": "¿Encontrará ella la respuesta mañana?",
+              "pt": "Ela encontrará a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it find the answer tomorrow?",
+              "es": "¿Encontrará ello la respuesta mañana?",
+              "pt": "Isso encontrará a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrará",
+              "pt": "encontrará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we find the answer tomorrow?",
+              "es": "¿Encontraremos nosotros la respuesta mañana?",
+              "pt": "Nós encontraremos a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontraremos",
+              "pt": "encontraremos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you find the answer tomorrow?",
+              "es": "¿Encontrarán ustedes la respuesta mañana?",
+              "pt": "Vocês encontrarão a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarán",
+              "pt": "encontrarão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they find the answer tomorrow?",
+              "es": "¿Encontrarán ellos la respuesta mañana?",
+              "pt": "Eles encontrarão a resposta amanhã?"
+            },
+            "targetWords": {
+              "en": "find",
+              "es": "encontrarán",
+              "pt": "encontrarão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -4,6 +4,22 @@
   else root.PedagogicalResonance = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const weights = Object.freeze({ linkedVerb: 3, languagePattern: 2, questionWord: 2, perspective: 1 });
+  const questionWordSkillSignals = Object.freeze({
+    'what.identify.information-gap': 'what',
+    'where.identify.place': 'where',
+    'when.identify.time': 'when',
+    'who.identify.person': 'who',
+    'why.identify.reason': 'why',
+    'how.identify.manner': 'how',
+    'how-much.identify.amount': 'how-much',
+    'how-many.identify.count': 'how-many',
+    'whose.identify.possession': 'whose',
+    'whom.identify.object-person': 'whom',
+    'how-long.identify.duration-length': 'how-long',
+    'how-far.identify.distance': 'how-far',
+    'how-often.identify.frequency': 'how-often',
+    'how-old.identify.age': 'how-old'
+  });
   const skillSignals = {
     'modal-core': { verbs: ['should', 'can', 'would'], perspectives: ['debating'], questionWords: ['which', 'when', 'who'] },
     'auxiliary-have': { verbs: ['have'], perspectives: ['narrating'], questionWords: ['what'] },
@@ -13,6 +29,9 @@
     'verb-function': { verbs: [], perspectives: ['describing', 'narrating'], questionWords: ['what', 'how'] },
     'which.use.determiner': { verbs: ['choose'], perspectives: ['debating'], questionWords: ['which'] }
   };
+  Object.entries(questionWordSkillSignals).forEach(([skill, questionWord]) => {
+    if (!skillSignals[skill]) skillSignals[skill] = { verbs: [], perspectives: [], questionWords: [questionWord] };
+  });
 
   const normalize = value => String(value || '').trim().toLowerCase();
   const unique = values => [...new Set(values.filter(Boolean))];
@@ -77,5 +96,5 @@
     };
   }
 
-  return { select, rank, scoreExperience, lexicalTokens, skillSignals, weights };
+  return { select, rank, scoreExperience, lexicalTokens, skillSignals, questionWordSkillSignals, weights };
 });

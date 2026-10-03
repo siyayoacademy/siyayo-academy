@@ -23,7 +23,8 @@
       {
         "dimension": "determiner-use",
         "result": "pass",
-        "support": "none"
+        "support": "none",
+        "mode": "local"
       },
       {
         "dimension": "determiner-use",
@@ -39,5 +40,22 @@
       "pronunciation",
       "cross-language-equivalence"
     ]
+  },
+  "realizations": {
+    "en": {
+      "form": "which",
+      "family": "question-word",
+      "grammarRole": "interrogative-determiner"
+    },
+    "es": {
+      "form": "qué",
+      "family": "palabra-interrogativa",
+      "grammarRole": "determinante-interrogativo"
+    },
+    "pt": {
+      "form": "qual",
+      "family": "palavra-interrogativa",
+      "grammarRole": "determinante-interrogativo"
+    }
   }
 }
