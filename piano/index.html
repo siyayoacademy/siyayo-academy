@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano SIYAYO Stage</title>
+  <link rel="stylesheet" href="../css/siyayo-responsive-stage.css">
+  <link rel="stylesheet" href="./piano.css">
+  <link rel="stylesheet" href="../css/siyayo-environments.css">
+</head>
+<body class="siyayo-environment-host" data-siyayo-environment-host data-environment-registry="../data/environments/siyayo-environments.json" data-environment-runtime="auto-local-time" data-environment="cosmic-night" data-weather="clear">
+  <div class="dev-preview-toolbar" id="devPreviewToolbar" data-siyayo-responsive-toolbar aria-label="Responsive preview tools">
+    <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
+    <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
+    <button type="button" class="preview-button" data-preview="landscape">▭ Landscape</button>
+  </div>
+
+  <div class="environment-dev-toolbar" data-siyayo-environment-toolbar aria-label="Developer environment preview tools">
+    <span class="environment-label">ENVIRONMENT</span>
+    <button type="button" class="environment-button" data-environment-choice="auto-local-time">Auto time</button>
+    <button type="button" class="environment-button" data-environment-choice="cosmic-night">Cosmic</button>
+    <button type="button" class="environment-button" data-environment-choice="forest-day">Forest day</button>
+    <button type="button" class="environment-button" data-environment-choice="forest-night">Forest night</button>
+    <button type="button" class="environment-button" data-environment-choice="river-dawn">Dawn</button>
+    <button type="button" class="environment-button" data-environment-choice="nice-party-evening">Party</button>
+  </div>
+
+  <div class="weather-dev-toolbar" data-siyayo-weather-toolbar aria-label="Developer weather preview tools">
+    <span class="weather-label">WEATHER</span>
+    <button type="button" class="weather-button is-active" data-weather-choice="clear">Clear</button>
+    <button type="button" class="weather-button" data-weather-choice="cloudy">Cloudy</button>
+    <button type="button" class="weather-button" data-weather-choice="mist">Mist</button>
+    <button type="button" class="weather-button" data-weather-choice="rain">Rain</button>
+  </div>
+
+  <div class="stage-viewport" id="stageViewport" data-siyayo-responsive-viewport data-preview="auto">
+  <main class="piano-stage" id="pianoStage" data-theme="sound">
+    <header class="stage-header">
+      <a class="home-link" href="../index.html" aria-label="Back to SIYAYO Academy">🦁</a>
+      <div>
+        <p class="eyebrow">SIYAYO ACADEMY</p>
+        <h1>Piano SIYAYO Stage</h1>
+        <p class="subtitle">Music • Language • Resonance</p>
+      </div>
+    </header>
+
+    <section class="avatar-stage" aria-label="Pianinho Mágico stage">
+      <div class="pianinho" id="pianinho" aria-label="Pianinho Mágico SIYAYO">
+        <img class="pianinho-visual" src="./assets/pianinho-magico.svg" alt="" aria-hidden="true">
+        <div class="pianinho-hotspots" aria-label="Pianinho musical hotspots">
+          <button type="button" class="pianinho-hotspot hotspot-do" data-note="C4" aria-label="Pianinho DÓ"><span>DÓ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-re is-secondary" data-note="D4" aria-label="Pianinho RÉ"><span>RÉ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-mi" data-note="E4" aria-label="Pianinho MI"><span>MI</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-fa is-secondary" data-note="F4" aria-label="Pianinho FÁ"><span>FÁ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-sol" data-note="G4" aria-label="Pianinho SOL"><span>SOL</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-la is-secondary" data-note="A4" aria-label="Pianinho LÁ"><span>LÁ</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-si is-secondary" data-note="B4" aria-label="Pianinho SI"><span>SI</span></button>
+          <button type="button" class="pianinho-hotspot hotspot-do-high" data-note="C5" aria-label="Pianinho DÓ agudo"><span>DÓ↑</span></button>
+        </div>
+        <p class="avatar-caption">Pianinho Mágico • DÓ–MI–SOL–DÓ↑ <span class="sequence-status" id="pianinhoSequenceStatus" aria-live="polite">0/4</span></p>
+      </div>
+    </section>
+
+    <section class="experience-box tree-box" aria-label="Frondosa visual box">
+    <section class="duet-stage" aria-label="Piano and Frondosa duet">
+      <div class="frondosa" id="frondosa" aria-label="Árvore Frondosa">
+        <img class="frondosa-visual" src="./assets/frondosa-sombreira.svg" alt="" aria-hidden="true">
+        <div class="frondosa-hotspots" aria-label="Frondosa interactive leaves">
+          <button type="button" class="leaf leaf-1" data-qw="what" data-note="C4" aria-label="What"><span>What</span></button>
+          <button type="button" class="leaf leaf-2" data-qw="where" data-note="D4" aria-label="Where"><span>Where</span></button>
+          <button type="button" class="leaf leaf-3" data-qw="when" data-note="E4" aria-label="When"><span>When</span></button>
+          <button type="button" class="leaf leaf-4" data-qw="who" data-note="F4" aria-label="Who"><span>Who</span></button>
+          <button type="button" class="leaf leaf-5" data-qw="which" data-note="G4" aria-label="Which"><span>Which</span></button>
+          <button type="button" class="leaf leaf-6" data-qw="why" data-note="A4" aria-label="Why"><span>Why</span></button>
+          <button type="button" class="leaf leaf-7" data-qw="how" data-note="B4" aria-label="How"><span>How</span></button>
+          <button type="button" class="leaf leaf-8" data-qw="how-much" data-note="C5" aria-label="How much"><span>How much</span></button>
+          <button type="button" class="leaf leaf-9" data-qw="how-many" data-note="C4" aria-label="How many"><span>How many</span></button>
+          <button type="button" class="leaf leaf-10" data-qw="whose" data-note="D4" aria-label="Whose"><span>Whose</span></button>
+          <button type="button" class="leaf leaf-11" data-qw="whom" data-note="E4" aria-label="Whom"><span>Whom</span></button>
+          <button type="button" class="leaf leaf-12" data-qw="how-long" data-note="F4" aria-label="How long"><span>How long</span></button>
+          <button type="button" class="leaf leaf-13" data-qw="how-far" data-note="G4" aria-label="How far"><span>How far</span></button>
+          <button type="button" class="leaf leaf-14" data-qw="how-often" data-note="A4" aria-label="How often"><span>How often</span></button>
+        </div>
+        <p class="duet-caption">Frondosa listens and blooms with the Piano</p>
+      </div>
+    </section>
+    </section>
+
+    <section class="experience-box semantic-sequence-box" aria-label="Question Word semantic sequence">
+      <div class="semantic-sequence" id="semanticSequence" data-phase="idle">
+        <span class="semantic-phase" id="semanticPhase">READY</span>
+        <strong class="semantic-cue" id="semanticCue">Touch a Question Word leaf</strong>
+        <span class="semantic-answer" id="semanticAnswer">Question → WAIT → learner response</span>
+        <div class="wait-archetype-indicator" id="waitArchetypeIndicator" hidden aria-live="polite">
+          <span class="wait-face" id="waitFace" aria-hidden="true">🤔</span>
+          <span class="wait-copy" id="waitCopy">PERAÍ… thinking</span>
+        </div>
+        <form class="learner-response-form" id="learnerResponseForm" hidden>
+          <input id="learnerResponseInput" type="text" autocomplete="off" placeholder="Type your response…" aria-label="Learner response">
+          <button type="submit">Submit response</button>
+          <div class="learner-wait-actions" aria-label="Learner-declared WAIT states">
+            <button type="button" data-wait-request="thinking">Need more time</button>
+            <button type="button" data-wait-request="confused">Need clarification</button>
+            <button type="button" data-wait-request="insufficient-context">Context is missing</button>
+          </div>
+          <div class="context-support-panel" id="contextSupportPanel" hidden aria-live="polite">
+            <span class="context-support-title" id="contextSupportTitle">Context</span>
+            <span class="context-support-text" id="contextSupportText"></span>
+          </div>
+          <div class="micro-support-actions" id="microSupportActions" hidden aria-label="Contextual micro support">
+            <button type="button" data-support-action="repeat-question">Repeat question</button>
+            <button type="button" data-support-action="hear-qw">Hear QW again</button>
+            <button type="button" data-support-action="show-gap">Show information gap</button>
+            <button type="button" data-support-action="show-context">Show context</button>
+          </div>
+        </form>
+        <div class="canonical-navigation-opportunity" id="canonicalNavigationOpportunity" hidden>
+          <span id="canonicalNavigationCopy">Canonical continuation available</span>
+          <button type="button" id="canonicalNavigationButton">Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-box controls-box" aria-label="Piano controls and status">
+    <section class="collection-panel" aria-label="Content collections">
+      <span class="collection-label">Play with</span>
+      <button type="button" class="collection-button is-active" data-collection="question-words">Question Words</button>
+      <button type="button" class="collection-button" data-collection="nouns">Nouns</button>
+      <button type="button" class="collection-button" data-collection="verbs">Verbs</button>
+    </section>
+    <section class="activity-panel" aria-label="Stage activities">
+      <span class="activity-label">Activity</span>
+      <button type="button" class="activity-button is-active" data-activity="explore">Explore</button>
+      <button type="button" class="activity-button" data-activity="questions">14 Questions</button>
+      <button type="button" class="activity-button" data-activity="classify">Classify</button>
+      <button type="button" class="activity-button" data-activity="morphology">Morphology</button>
+      <button type="button" class="activity-button" data-activity="function">Function</button>
+    </section>
+    <section class="content-group-panel" id="contentGroupPanel" aria-label="Content groups" hidden>
+      <span class="content-group-label">Group</span>
+      <button type="button" class="content-group-button is-active" data-content-group="0">1–14</button>
+      <button type="button" class="content-group-button" data-content-group="1">15–28</button>
+    </section>
+    <section class="noun-layer-panel" id="nounLayerPanel" aria-label="Noun classifications" hidden>
+      <span class="noun-layer-label">Noun layer</span>
+      <button type="button" class="noun-layer-button is-active" data-noun-layer="concrete">Concrete</button>
+      <button type="button" class="noun-layer-button" data-noun-layer="abstract">Abstract</button>
+      <button type="button" class="noun-layer-button" data-noun-layer="proper">Proper</button>
+    </section>
+    <section class="noun-classify-panel" id="nounClassifyPanel" aria-label="Classify noun" hidden>
+      <span class="noun-classify-label" id="nounClassifyLabel">Classify this noun</span>
+      <strong class="noun-classify-word" id="nounClassifyWord">teacher</strong>
+      <div class="noun-classify-choices">
+        <button type="button" data-noun-classification="concrete">Concrete</button>
+        <button type="button" data-noun-classification="abstract">Abstract</button>
+        <button type="button" data-noun-classification="proper">Proper</button>
+      </div>
+      <div class="noun-classify-state" aria-live="polite">
+        <span id="nounClassifyChoiceState" hidden></span>
+        <span id="nounClassifySourceState" hidden></span>
+      </div>
+      <div class="noun-classify-support">
+        <button type="button" id="nounClassifyReveal">Show source classification</button>
+        <button type="button" id="nounClassifyNext">Next noun</button>
+      </div>
+    </section>
+
+    <section class="mode-panel" aria-label="Listening and language lenses">
+      <span class="mode-label">Listen / Language</span>
+      <button type="button" class="mode-button is-active" data-mode="sound">Sound</button>
+      <button type="button" class="mode-button" data-mode="solfege">Solfege</button>
+      <button type="button" class="mode-button" data-mode="en">EN</button>
+      <button type="button" class="mode-button" data-mode="es">ES</button>
+      <button type="button" class="mode-button" data-mode="pt">PT</button>
+      <button type="button" class="mode-button" data-mode="tripiano">Tripiano</button>
+    </section>
+
+    <section class="status-panel" aria-live="polite">
+      <span id="modeStatus">EXPLORE · SOUND</span>
+      <strong id="noteStatus">Touch a key</strong>
+      <span id="wordStatus">DÓ → DÓ↑</span>
+    </section>
+
+    </section>
+
+    <section class="experience-box keyboard-box" aria-label="Piano keyboard box">
+    <section class="keyboard-shell" aria-label="Piano Plano SIYAYO">
+      <div class="keyboard-scroll">
+        <div class="keyboard" id="keyboard" role="group" aria-label="Chromatic piano keyboard"></div>
+      </div>
+    </section>
+    </section>
+
+    <footer class="stage-footer">
+      <span>v0.2 • Chromatic mapping • 14 Question Words • Trio Actors</span>
+      <span>Animation layers reserved per key</span>
+    </footer>
+  </main>
+  </div>
+  <script src="./content-collection-engine.js"></script>
+  <script src="../js/siyayo-responsive-preview.js"></script>
+  <script src="../js/siyayo-environment-controller.js"></script>
+  <script src="./piano.js"></script>
+</body>
+</html>

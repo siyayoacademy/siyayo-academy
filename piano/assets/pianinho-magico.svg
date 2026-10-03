@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="title desc">
+<title id="title">Pianinho Mágico SIYAYO</title>
+<desc id="desc">Avatar piano dourado com quatro zonas musicais DÓ, MI, SOL e DÓ agudo.</desc>
+<defs>
+  <linearGradient id="wood" x1="0" x2="1"><stop offset="0" stop-color="#2b160d"/><stop offset=".45" stop-color="#6e3a1d"/><stop offset=".72" stop-color="#3d2012"/><stop offset="1" stop-color="#1f1009"/></linearGradient>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#9d6f19"/><stop offset=".45" stop-color="#f3cf65"/><stop offset=".72" stop-color="#b77e1d"/><stop offset="1" stop-color="#f6dd88"/></linearGradient>
+  <linearGradient id="ivory" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf2"/><stop offset="1" stop-color="#dbcda9"/></linearGradient>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g>
+  <path d="M190 92 Q300 30 410 92 L390 210 Q300 245 210 210 Z" fill="url(#wood)" stroke="url(#gold)" stroke-width="8"/>
+  <path d="M210 210 H390 L422 286 Q300 320 178 286 Z" fill="url(#wood)" stroke="url(#gold)" stroke-width="8"/>
+  <g><ellipse cx="248" cy="145" rx="38" ry="45" fill="#f4e6c2" stroke="#c99831" stroke-width="5"/><ellipse cx="352" cy="145" rx="38" ry="45" fill="#f4e6c2" stroke="#c99831" stroke-width="5"/><ellipse cx="248" cy="150" rx="20" ry="28" fill="#30160d"/><ellipse cx="352" cy="150" rx="20" ry="28" fill="#30160d"/><circle cx="254" cy="141" r="8" fill="#ffd966"/><circle cx="358" cy="141" r="8" fill="#ffd966"/><path d="M275 190 Q300 215 325 190" fill="none" stroke="#f0a16a" stroke-width="8" stroke-linecap="round"/></g>
+  <g fill="url(#gold)"><path d="M300 48 l18 20 24-5-14 21 10 23-28-6-10 25-10-25-28 6 10-23-14-21 24 5z"/><path d="M128 208 q-44 22-56 60 38-13 66-3z"/><path d="M472 208 q44 22 56 60-38-13-66-3z"/></g>
+  <g transform="translate(198 222)"><rect x="0" y="0" width="204" height="68" rx="10" fill="#3b2114" stroke="#d5ad4a" stroke-width="4"/><g fill="url(#ivory)" stroke="#2a2018" stroke-width="1.5"><rect x="6" y="5" width="24" height="56"/><rect x="31" y="5" width="24" height="56"/><rect x="56" y="5" width="24" height="56"/><rect x="81" y="5" width="24" height="56"/><rect x="106" y="5" width="24" height="56"/><rect x="131" y="5" width="24" height="56"/><rect x="156" y="5" width="24" height="56"/><rect x="181" y="5" width="17" height="56"/></g><g fill="#17110d"><rect x="21" y="5" width="13" height="34" rx="2"/><rect x="47" y="5" width="13" height="34" rx="2"/><rect x="96" y="5" width="13" height="34" rx="2"/><rect x="122" y="5" width="13" height="34" rx="2"/><rect x="147" y="5" width="13" height="34" rx="2"/></g></g>
+  <g stroke="url(#gold)" stroke-width="14" stroke-linecap="round"><path d="M186 218 Q132 208 104 238"/><path d="M414 218 Q468 208 496 238"/><path d="M244 296 Q236 326 214 338"/><path d="M356 296 Q364 326 386 338"/></g>
+  <g fill="#182511" stroke="url(#gold)" stroke-width="3"><ellipse cx="205" cy="72" rx="18" ry="8" transform="rotate(-28 205 72)"/><ellipse cx="235" cy="55" rx="20" ry="8" transform="rotate(-18 235 55)"/><ellipse cx="365" cy="55" rx="20" ry="8" transform="rotate(18 365 55)"/><ellipse cx="395" cy="72" rx="18" ry="8" transform="rotate(28 395 72)"/></g>
+  <g fill="#2a160e" stroke="#efc958" stroke-width="4" filter="url(#glow)"><circle cx="98" cy="90" r="38"/><circle cx="102" cy="296" r="38"/><circle cx="498" cy="260" r="38"/><circle cx="502" cy="90" r="38"/></g>
+  <g fill="#ffe98d" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle"><text x="98" y="98" font-size="22">DÓ</text><text x="102" y="304" font-size="22">MI</text><text x="498" y="268" font-size="20">SOL</text><text x="502" y="98" font-size="20">DÓ↑</text></g>
+</g>
+</svg>
