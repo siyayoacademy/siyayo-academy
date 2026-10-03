@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./piano.css">
   <link rel="stylesheet" href="../css/siyayo-environments.css">
 </head>
-<body class="siyayo-environment-host" data-siyayo-environment-host data-environment-registry="../data/environments/siyayo-environments.json" data-environment-runtime="auto-local-time" data-environment="cosmic-night">
+<body class="siyayo-environment-host" data-siyayo-environment-host data-environment-registry="../data/environments/siyayo-environments.json" data-environment-runtime="auto-local-time" data-environment="cosmic-night" data-weather="clear">
   <div class="dev-preview-toolbar" id="devPreviewToolbar" data-siyayo-responsive-toolbar aria-label="Responsive preview tools">
     <button type="button" class="preview-button is-active" data-preview="auto">Auto</button>
     <button type="button" class="preview-button" data-preview="portrait">📱 Portrait</button>
@@ -23,6 +23,14 @@
     <button type="button" class="environment-button" data-environment-choice="forest-night">Forest night</button>
     <button type="button" class="environment-button" data-environment-choice="river-dawn">Dawn</button>
     <button type="button" class="environment-button" data-environment-choice="nice-party-evening">Party</button>
+  </div>
+
+  <div class="weather-dev-toolbar" data-siyayo-weather-toolbar aria-label="Developer weather preview tools">
+    <span class="weather-label">WEATHER</span>
+    <button type="button" class="weather-button is-active" data-weather-choice="clear">Clear</button>
+    <button type="button" class="weather-button" data-weather-choice="cloudy">Cloudy</button>
+    <button type="button" class="weather-button" data-weather-choice="mist">Mist</button>
+    <button type="button" class="weather-button" data-weather-choice="rain">Rain</button>
   </div>
 
   <div class="stage-viewport" id="stageViewport" data-siyayo-responsive-viewport data-preview="auto">
