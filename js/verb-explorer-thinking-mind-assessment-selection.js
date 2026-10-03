@@ -68,7 +68,8 @@ function select(question,options){
   var provider=options.provider||root.SIYAYOLeafAssessmentTargetProvider;
   if(!question||typeof question!=='object')return Promise.resolve(false);
 
-  var declared=question.assessmentTarget;
+  var resumeOnly=!question.assessmentTarget&&!!question.assessmentResumeTarget;
+  var declared=question.assessmentTarget||question.assessmentResumeTarget;
   if(!declared||typeof declared!=='object')return Promise.resolve(false);
 
   var skill=text(declared.skill);
@@ -84,6 +85,7 @@ function select(question,options){
   var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
   var liveState=stateBridge&&stateBridge.getState&&stateBridge.getState();
   if(scopeApi&&(!liveState||!['en','es','pt'].includes(liveState.experienceLanguage)))return Promise.resolve(false);
+  if(!learnerId&&resumeOnly)return Promise.resolve(false);
   if(!learnerId){
     var bridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
     var state=bridge&&bridge.getState&&bridge.getState();
@@ -142,6 +144,7 @@ function select(question,options){
     if(!restored){if(previous)source.adopt(previous);else if(source.clear)source.clear();}
     return Promise.resolve(restored);
   }
+  if(resumeOnly)return Promise.resolve(false);
   if(learnerId&&active&&coordinator&&typeof coordinator.clear==='function')coordinator.clear();
   if(learnerId)['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
     'SIYAYOVerbExplorerCanonicalSkillLoader'].forEach(function(name){

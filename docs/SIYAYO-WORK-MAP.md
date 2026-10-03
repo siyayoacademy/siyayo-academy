@@ -1154,3 +1154,12 @@ Regression checks cover the first click through production CoordinatorConfig, Co
 Extends the read-only learner trail surface. Previously inactive, incomplete assessments were labelled not started even when ThinkingMindAssessmentSelection retained their Sessions. getRetainedProgress projects canonical contract progress for the current learner, requested skill and language and includes each distinct circuit origin. It returns frozen summaries without restoring Sessions, changing skill, producing Evidence or granting Green Pass. WORD PATH uses these summaries for inactive assessments and displays the count, a localized saved-progress label and origin. Confirmed status continues to come from the existing canonical trail authority.
 
 Tests cover retained EN progress, missing PT, other learner exclusion, no read-side mutation, and the rendered WHAT saved-progress card without cross-language display. Visual homologation: record WHAT EN 2/3 and ES 1/3, switch to WHICH; WORD PATH must retain each language's own WHAT count. This is runtime retention, not account-backed persistence across reloads.
+
+
+## LIVE-28 — Corpus-declared WHICH recovery in Preparing
+
+Extends recovery; does not migrate or replace Pass Contracts or Spanish corpus. Preparing WHICH previously lacked assessmentTarget, so explicit selection returned before reaching retained-circuit recovery. Its new assessmentResumeTarget declares the existing skill and definition solely for recovery. Anonymous clicks and missing retained circuits remain WAIT; this declaration cannot create a destination Session.
+
+Production corpus regression covers EN/ES/PT origin Sessions recovered from Shopping at Preparing, no provider invocation during recovery, missing circuit and anonymous exclusion. Existing language isolation and contract checks remain required. Visual homologation pending: same nick -> Shopping WHICH local progress -> Preparing -> switch language -> explicitly select WHICH -> that language's existing Shopping circuit and transfer panel reappear. Language with no circuit must not inherit progress.
+
+Next approved corpus study: CUÁL queso (singular determiner), CUÁLES zanahorias (plural determiner), and separate pronominal comparison Tenemos dos quesos. ¿Cuál elegimos? No lexical substitution or pronominal Green Pass is included in LIVE-28.

@@ -142,6 +142,33 @@ async function run(){
  const delayed=deferred.SIYAYOVerbExplorerAdaptiveLiveStart.tryCompose();
  state={...state,experienceLanguage:'pt'};resolveLoad(true);
  assert.equal(await delayed,false);assert.equal(composed,0);
+ // Production corpus: Preparing WHICH is recovery-only, never a Session birth.
+ const corpus=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','utf8'));
+ const shopping=corpus.items.find(x=>x.id==='shopping-for-dinner');
+ const preparing=corpus.items.find(x=>x.id==='preparing-dinner');
+ const originWhich=shopping.thinkingMind.find(x=>x.questionWord==='which');
+ const resumeWhich=preparing.thinkingMind.find(x=>x.questionWord==='which');
+ assert.equal(resumeWhich.assessmentTarget,undefined);
+ assert.equal(resumeWhich.assessmentResumeTarget.skill,originWhich.assessmentTarget.skill);
+ selection.clear();active=null;definition=null;learner='real WHICH learner';
+ root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig={configure(input){active=input;return true;}};
+ question.assessmentTarget=originWhich.assessmentTarget;
+ const whichSessions={};
+ for(const language of ['en','es','pt']){
+  state={currentExperienceId:'shopping-for-dinner',experienceLanguage:language};
+  assert.equal(await selection.select(originWhich),true);whichSessions[language]=active.session;
+ }
+ const whichBirths=calls;
+ for(const language of ['en','es','pt']){
+  state={currentExperienceId:'preparing-dinner',experienceLanguage:language};
+  assert.equal(await selection.select(resumeWhich),true);
+  assert.equal(active.session,whichSessions[language]);
+ }
+ assert.equal(calls,whichBirths);
+ selection.clear();active=null;definition=null;
+ assert.equal(await selection.select(resumeWhich),false,'no existing circuit stays WAIT');
+ assert.equal(calls,whichBirths);
+ learner=null;assert.equal(await selection.select(resumeWhich),false,'anonymous recovery cannot birth');
  console.log('PASS: pending LANGUAGE invalidation, explicit language birth, retained scope recovery, free visit preservation and EN/ES/PT origin-owned transfer recovery with missing/unrelated/other-learner WAIT.');
 }
 run().catch(error=>{console.error(error);process.exitCode=1;});

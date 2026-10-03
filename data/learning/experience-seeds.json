@@ -965,6 +965,10 @@
         {
           "intention": "choice",
           "questionWord": "which",
+          "assessmentResumeTarget": {
+            "skill": "which.use.determiner",
+            "definitionPath": "data/learning/skills/which.json"
+          },
           "question": {
             "en": "Which carrots should we cook first?",
             "es": "¿Qué zanahorias deberíamos cocinar primero?",
