@@ -1,6 +1,6 @@
 {
   "id": "siyayo-environment-library",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "shared-reusable-foundation",
   "principle": "Environment controls atmosphere and stage context only. It does not create pedagogical state, Evidence, GREEN or Session authority.",
   "defaultEnvironment": "cosmic-night",
@@ -144,7 +144,9 @@
         ]
       },
       "weatherIntegration": "future-open"
-    }
+    },
+    "weatherPreview": true,
+    "weatherRuntimeEvent": "siyayo:set-weather"
   },
   "boundaries": {
     "environmentDoesNotChangePedagogy": true,
@@ -153,5 +155,29 @@
     "environmentDoesNotProduceEvidence": true,
     "environmentDoesNotProduceGreen": true,
     "experienceMayBindEnvironmentExplicitly": true
+  },
+  "weatherSystem": {
+    "status": "presentation-contract-active",
+    "defaultWeather": "clear",
+    "allowed": [
+      "clear",
+      "cloudy",
+      "mist",
+      "rain"
+    ],
+    "runtimeEvent": "siyayo:set-weather",
+    "presentationOnly": true,
+    "externalWeatherSource": "not-connected",
+    "autoWeather": {
+      "status": "future-open",
+      "source": "external-weather-provider"
+    },
+    "boundaries": {
+      "weatherDoesNotChangePedagogy": true,
+      "weatherDoesNotChangeLanguage": true,
+      "weatherDoesNotChangeAssessmentTarget": true,
+      "weatherDoesNotProduceEvidence": true,
+      "weatherDoesNotProduceGreen": true
+    }
   }
 }
