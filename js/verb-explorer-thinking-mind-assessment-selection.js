@@ -104,25 +104,33 @@ function select(question,options){
     if(oldSkill&&definition&&definition.id===oldSkill)
       remember(active,definition);
   }
-  if(learnerId&&active&&coordinator&&typeof coordinator.clear==='function')coordinator.clear();
-  if(learnerId)['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
-    'SIYAYOVerbExplorerCanonicalSkillLoader'].forEach(function(name){
-    var api=root[name];if(api&&typeof api.clear==='function')api.clear();
-  });
   if(scopeApi&&learnerId&&!requestedKey)return Promise.resolve(false);
   if(saved){
     var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
     var config=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
     var state=root.SIYAYOVerbExplorerAdaptiveStateBridge;
     var profiles=root.SIYAYOVerbExplorerAdaptiveProfileSource;
-    if(!source||!config||!state||source.adopt(saved.definition)!==true)return Promise.resolve(false);
-    return Promise.resolve(config.configure({
-      profile:profiles&&profiles.getProfile&&profiles.getProfile()||saved.snapshot.profile,
-      session:saved.snapshot.session,context:saved.snapshot.context,
-      getState:state.getState,getResumeState:state.getResumeState||state.getState,
-      document:options.document||root.document
-    })===true);
+    if(!source||!config||!state)return Promise.resolve(false);
+    var previous=source.getDefinition&&source.getDefinition();
+    if(source.adopt(saved.definition)!==true)return Promise.resolve(false);
+    var restored=false;
+    try{
+      var restore=config.restore||config.configure;
+      restored=restore({
+        profile:profiles&&profiles.getProfile&&profiles.getProfile()||saved.snapshot.profile,
+        session:saved.snapshot.session,context:saved.snapshot.context,
+        getState:state.getState,getResumeState:state.getResumeState||state.getState,
+        document:options.document||root.document
+      })===true;
+    }catch(error){restored=false;}
+    if(!restored){if(previous)source.adopt(previous);else if(source.clear)source.clear();}
+    return Promise.resolve(restored);
   }
+  if(learnerId&&active&&coordinator&&typeof coordinator.clear==='function')coordinator.clear();
+  if(learnerId)['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
+    'SIYAYOVerbExplorerCanonicalSkillLoader'].forEach(function(name){
+    var api=root[name];if(api&&typeof api.clear==='function')api.clear();
+  });
 
   var leaf=Object.freeze({
     assessmentTarget:Object.freeze({

@@ -1140,3 +1140,11 @@ Learning Trail clarifies that UNOBSERVED concerns assessment when an exploratory
 Verification: EN/ES/PT retained recovery during Shopping→Preparing visits, unchanged birth count and trace, return to origin, missing circuit/catalog/unrelated/other-learner negatives; native observational/assessment labels with empty canonical markers. Existing real Green cycles and local/transfer isolation remain required. Visual homologation pending.
 
 Visual next: start WHAT EN and ES in Shopping, record EN 2/3 and ES 1/3; visit Preparing in EN, switch ES and explicitly click QUÉ. The ES circuit from Shopping must recover at 1/3 and show its kitchen transfer. Return EN and explicitly click WHAT: 2/3 remains. Only the actual transfer response in Preparing completes that language's own circuit. No implicit new S2 Session, no new Green from LANGUAGE/clicks.
+
+## LIVE-26 — Atomic recovery through the real configuration boundary
+
+Extends LIVE-25; does not change corpus, Pass Contracts or routing. LIVE-25 selected the correct retained origin but normal configure rejected origin/observed-location mismatch after clearing the active Coordinator. A second click could consequently create a destination Session.
+
+Explicit restore validates retained scope, current language, retained origin/context and the origin's declared next Experience. It composes the context at its pedagogical origin while keeping getState at the actual observed location. Normal Session creation keeps its strict SessionStateBoundary unchanged. Selection never clears the Coordinator before restoration; failed restoration rolls back the canonical skill definition and preserves the active Session.
+
+Regression checks cover the first click through production CoordinatorConfig, ContextSource and SessionStateBoundary, two failed attempts without destination birth, and production Coordinator rejection of foreign learner ownership. Visual homologation remains pending: Shopping EN progress -> ES progress -> Preparing -> LANGUAGE EN -> one WHAT click must restore the existing Shopping EN circuit and kitchen transfer panel; repeat for ES/PT where their circuits exist.

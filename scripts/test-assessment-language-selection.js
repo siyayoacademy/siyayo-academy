@@ -41,7 +41,7 @@ async function run(){
  assert.equal(await selection.select(question),true,'visiting keeps active circuit until explicit adoption');
  assert.equal(active.session,spanish);
  assert.equal(calls,3,'anonymous + ES birth + EN birth; recovery does not create a Session');
- assert.equal(clears,2);
+ assert.equal(clears,1);
  // Regression: language comparison while visiting S2 restores each existing S1 circuit.
  selection.clear();active=null;definition=null;learner='transfer learner';state={currentExperienceId:'shopping-for-dinner',experienceLanguage:'en'};
  const sessions={};
@@ -83,6 +83,41 @@ async function run(){
  state={currentExperienceId:'preparing-dinner',experienceLanguage:'es'};await selection.select(question);
  state={...state,currentExperienceId:'shopping-for-dinner'};
  assert.equal(await selection.select(question),true);assert.equal(active.session,originSpanish);
+ // Cross the production configuration/context/boundary instead of a permissive config mock.
+ root.SIYAYOVerbExplorerAdaptiveCoordinator.configure=input=>{active=input;return true;};
+ root.SIYAYOVerbExplorerChoiceAttemptProvider={getAttempt(){return null;}};
+ root.GreenPassAuthorityPolicy={contractAuthoritySkills:[question.assessmentTarget.skill]};
+ for(const file of ['session-state-boundary','adaptive-context-source','adaptive-coordinator-config'])
+  vm.runInNewContext(fs.readFileSync('js/verb-explorer-'+file+'.js','utf8'),root);
+ state={currentExperienceId:'shopping-for-dinner',experienceLanguage:'en'};
+ await selection.select(question);const realEnglish=active.session;
+ realEnglish.trace.push({progress:'two local requirements'});
+ state={...state,experienceLanguage:'es'};await selection.select(question);const realSpanish=active.session;
+ state={currentExperienceId:'preparing-dinner',experienceLanguage:'en'};
+ assert.equal(await selection.select(question),true,'first click restores through the real boundary');
+ assert.equal(active.session,realEnglish);assert.equal(active.context.currentExperience,'shopping-for-dinner');
+ assert.equal(active.getState().currentExperienceId,'preparing-dinner','observed location remains live');
+ const realConfig=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
+ root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig={restore(){return false;}};
+ state={...state,experienceLanguage:'es'};const beforeFailure=active,previousDefinition=definition,previousBirths=calls;
+ for(let attempt=0;attempt<2;attempt++){
+  assert.equal(await selection.select(question),false);
+  assert.equal(active,beforeFailure,'failed recovery never clears the active Session');
+  assert.equal(definition,previousDefinition);assert.equal(calls,previousBirths);
+ }
+ root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig=realConfig;
+ assert.equal(await selection.select(question),true);assert.equal(active.session,realSpanish);
+ // The production Coordinator independently rejects foreign ownership atomically.
+ const priorCoordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+ vm.runInNewContext(fs.readFileSync('js/verb-explorer-adaptive-coordinator.js','utf8'),root);
+ const productionCoordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+ assert.equal(realConfig.restore({profile:{id:learner},session:realSpanish,context:active.context,getState:()=>state}),true);
+ const productionBefore=productionCoordinator.snapshot();
+ assert.equal(realConfig.restore({profile:{id:'another learner'},session:realSpanish,context:active.context,getState:()=>state}),false);
+ assert.equal(productionCoordinator.snapshot().session,productionBefore.session);
+ assert.equal(productionCoordinator.snapshot().context,productionBefore.context);
+ root.SIYAYOVerbExplorerAdaptiveCoordinator=priorCoordinator;
+
  // Deferred canonical load must not complete into another screen-language target.
  let resolveLoad,composed=0;
  const deferred={Object,Promise,AdaptiveAssessmentScope:Scope,

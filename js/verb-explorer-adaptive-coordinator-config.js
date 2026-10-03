@@ -3,7 +3,7 @@
 (function(root){
 'use strict';
 
-function configure(input){
+function configure(input,recover){
   input=input||{};
   var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var attemptProvider=root.SIYAYOVerbExplorerChoiceAttemptProvider;
@@ -16,7 +16,20 @@ function configure(input){
 
   var initialState=input.getState(null,null);
   if(!initialState)return false;
-  var context=contextSource.compose(input.session,initialState,input.context||{});
+  var context;
+  if(recover){
+    // Restore an existing origin-owned circuit; observed location remains live.
+    var decision=input.session.decision,scope=decision&&decision.assessmentScope;
+    var api=root.AdaptiveAssessmentScope;
+    var navigation=root.SIYAYOVerbExplorerExperienceNavigation;
+    var origin=navigation&&navigation.getExperience&&decision&&navigation.getExperience(decision.experienceId);
+    if(!api||!api.valid(scope)||scope.language!==initialState.experienceLanguage||
+       scope.originExperienceId!==decision.experienceId||
+       !input.context||!api.same(scope,input.context.assessmentScope))return false;
+    if(initialState.currentExperienceId!==decision.experienceId&&
+       (!origin||!origin.toroidalNext||origin.toroidalNext.nextExperience!==initialState.currentExperienceId))return false;
+    context=contextSource.compose(input.session,{currentExperienceId:decision.experienceId},input.context);
+  }else context=contextSource.compose(input.session,initialState,input.context||{});
   if(!context)return false;
 
   return coordinator.configure({
@@ -31,5 +44,5 @@ function configure(input){
   });
 }
 
-root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig=Object.freeze({configure:configure});
+root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig=Object.freeze({configure:configure,restore:function(input){return configure(input,true);}});
 })(typeof globalThis!=='undefined'?globalThis:this);
