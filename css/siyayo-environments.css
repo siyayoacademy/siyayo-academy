@@ -315,28 +315,57 @@
 .symbolic-gold-aura{
   inset:-12%;
   background:
-    radial-gradient(circle at 50% 45%,rgba(247,207,93,.16) 0 7%,rgba(215,179,90,.09) 16%,transparent 40%),
-    radial-gradient(circle at 50% 45%,transparent 0 32%,rgba(242,216,138,.08) 32.4% 32.8%,transparent 33.2%),
-    radial-gradient(circle at 50% 45%,transparent 0 44%,rgba(215,179,90,.06) 44.3% 44.7%,transparent 45.1%);
+    radial-gradient(circle at 50% 45%,rgba(247,207,93,.20) 0 7%,rgba(215,179,90,.11) 16%,transparent 40%),
+    radial-gradient(circle at 50% 45%,transparent 0 32%,rgba(242,216,138,.11) 32.35% 32.85%,transparent 33.3%),
+    radial-gradient(circle at 50% 45%,transparent 0 44%,rgba(215,179,90,.085) 44.3% 44.8%,transparent 45.2%);
   filter:blur(.2px);
-  opacity:.9;
+  opacity:.94;
 }
 
 .symbolic-seed-field{
   background:
-    radial-gradient(circle at 18% 18%,rgba(255,222,122,.75) 0 1.4px,transparent 2.4px),
-    radial-gradient(circle at 31% 32%,rgba(255,229,143,.54) 0 1.2px,transparent 2.2px),
-    radial-gradient(circle at 47% 16%,rgba(255,209,87,.68) 0 1.5px,transparent 2.5px),
-    radial-gradient(circle at 62% 28%,rgba(255,226,134,.58) 0 1.3px,transparent 2.3px),
-    radial-gradient(circle at 79% 18%,rgba(255,211,91,.68) 0 1.5px,transparent 2.5px),
-    radial-gradient(circle at 88% 42%,rgba(255,228,145,.46) 0 1.2px,transparent 2.2px),
-    radial-gradient(circle at 72% 66%,rgba(255,210,90,.54) 0 1.4px,transparent 2.4px),
-    radial-gradient(circle at 52% 78%,rgba(255,231,153,.46) 0 1.2px,transparent 2.2px),
-    radial-gradient(circle at 28% 70%,rgba(255,211,88,.55) 0 1.4px,transparent 2.4px),
-    radial-gradient(circle at 12% 52%,rgba(255,229,144,.42) 0 1.2px,transparent 2.2px);
+    radial-gradient(circle at 18% 18%,rgba(255,222,122,.86) 0 1.6px,transparent 2.8px),
+    radial-gradient(circle at 31% 32%,rgba(255,229,143,.68) 0 1.4px,transparent 2.5px),
+    radial-gradient(circle at 47% 16%,rgba(255,209,87,.82) 0 1.7px,transparent 2.9px),
+    radial-gradient(circle at 62% 28%,rgba(255,226,134,.72) 0 1.5px,transparent 2.6px),
+    radial-gradient(circle at 79% 18%,rgba(255,211,91,.82) 0 1.7px,transparent 2.9px),
+    radial-gradient(circle at 88% 42%,rgba(255,228,145,.60) 0 1.4px,transparent 2.5px),
+    radial-gradient(circle at 72% 66%,rgba(255,210,90,.68) 0 1.6px,transparent 2.8px),
+    radial-gradient(circle at 52% 78%,rgba(255,231,153,.60) 0 1.4px,transparent 2.5px),
+    radial-gradient(circle at 28% 70%,rgba(255,211,88,.70) 0 1.6px,transparent 2.8px),
+    radial-gradient(circle at 12% 52%,rgba(255,229,144,.56) 0 1.4px,transparent 2.5px);
   background-size:100% 100%;
-  opacity:.68;
+  opacity:.76;
   animation:siyayo-symbolic-seed-breathe 9s ease-in-out infinite alternate;
+}
+
+.symbolic-seed-field::before,
+.symbolic-seed-field::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-repeat:no-repeat;
+}
+
+.symbolic-seed-field::before{
+  background:
+    radial-gradient(circle at 24% 40%,rgba(255,237,169,.80) 0 1.2px,rgba(255,213,91,.28) 2px,transparent 4px),
+    radial-gradient(circle at 38% 62%,rgba(255,221,112,.72) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 58% 38%,rgba(255,238,173,.76) 0 1.2px,rgba(255,213,91,.24) 2px,transparent 4px),
+    radial-gradient(circle at 67% 56%,rgba(255,218,103,.74) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 82% 72%,rgba(255,235,162,.70) 0 1.1px,rgba(255,213,91,.20) 2px,transparent 4px);
+  animation:siyayo-symbolic-seed-twinkle-a 5.6s ease-in-out infinite alternate;
+}
+
+.symbolic-seed-field::after{
+  background:
+    radial-gradient(circle at 16% 76%,rgba(255,229,143,.70) 0 1px,rgba(255,213,91,.20) 2px,transparent 4px),
+    radial-gradient(circle at 43% 28%,rgba(255,238,173,.76) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 55% 66%,rgba(255,221,112,.72) 0 1px,rgba(255,213,91,.20) 2px,transparent 4px),
+    radial-gradient(circle at 75% 34%,rgba(255,235,162,.74) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 91% 58%,rgba(255,226,128,.68) 0 1px,rgba(255,213,91,.18) 2px,transparent 4px);
+  animation:siyayo-symbolic-seed-twinkle-b 7.4s ease-in-out infinite alternate;
 }
 
 .symbolic-art-slot{
@@ -354,8 +383,18 @@
    Keep pointer-events:none; bind images only after each asset is homologated. */
 
 @keyframes siyayo-symbolic-seed-breathe{
-  from{opacity:.46;transform:scale(1)}
-  to{opacity:.74;transform:scale(1.012)}
+  from{opacity:.58;transform:scale(1)}
+  to{opacity:.82;transform:scale(1.012)}
+}
+
+@keyframes siyayo-symbolic-seed-twinkle-a{
+  from{opacity:.28;transform:translate3d(-3px,2px,0) scale(.99)}
+  to{opacity:.92;transform:translate3d(4px,-3px,0) scale(1.015)}
+}
+
+@keyframes siyayo-symbolic-seed-twinkle-b{
+  from{opacity:.70;transform:translate3d(3px,-2px,0) scale(1.01)}
+  to{opacity:.22;transform:translate3d(-4px,3px,0) scale(.995)}
 }
 
 .siyayo-environment-host > .stage-symbolic-background{
@@ -377,7 +416,9 @@
 }
 
 @media (prefers-reduced-motion:reduce){
-  .symbolic-seed-field{
+  .symbolic-seed-field,
+  .symbolic-seed-field::before,
+  .symbolic-seed-field::after{
     animation:none!important;
   }
 }
