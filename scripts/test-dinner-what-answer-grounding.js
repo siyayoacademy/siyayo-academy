@@ -54,7 +54,7 @@ const transfer = preparing.thinkingMind.filter(item => item.questionWord === 'wh
 assert.equal(transfer.length, 1);
 assert.deepEqual(transfer[0].question, {
   en: 'Which carrots should we cook first?',
-  es: '¿Qué zanahorias deberíamos cocinar primero?',
+  es: '¿Cuáles zanahorias deberíamos cocinar primero?',
   pt: 'Quais cenouras devemos cozinhar primeiro?'
 });
 assert.equal(transfer[0].answerGrounding, undefined, 'S1 transfer remains a separate assessment');

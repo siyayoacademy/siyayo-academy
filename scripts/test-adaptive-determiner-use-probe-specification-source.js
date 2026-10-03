@@ -34,7 +34,7 @@ assert.ok(Object.isFrozen(specification.alternatives));
 assert.equal(Source.resolve(null, shopping, 'en'), null);
 assert.equal(Source.resolve(which, null, 'en'), null);
 assert.equal(Source.resolve(which, shopping, 'es'), null, 'Spanish requires canonical noun lexicon');
-assert.equal(Source.resolve(which, shopping, 'es', nouns).prompt, '¿Qué ___ deberíamos elegir?');
+assert.equal(Source.resolve(which, shopping, 'es', nouns).prompt, '¿Cuál ___ deberíamos elegir?');
 assert.equal(
   Source.resolve({ ...which, grammarRole: 'interrogative-pronoun' }, shopping, 'en'),
   null,

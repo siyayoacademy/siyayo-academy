@@ -16,9 +16,9 @@ for(const experience of corpus.items){
 }
 const shopping=corpus.items.find(x=>x.id==='shopping-for-dinner');
 const which=shopping.thinkingMind.find(q=>q.questionWord==='which');
-assert.deepEqual(which.questionWordLabel,{en:'WHICH',es:'QUÉ',pt:'QUAL'});
+assert.deepEqual(which.questionWordLabel,{en:'WHICH',es:'CUÁL',pt:'QUAL'});
 const preparing=corpus.items.find(x=>x.id==='preparing-dinner');
 const preparingWhich=preparing.thinkingMind.find(q=>q.questionWord==='which');
-assert.deepEqual(preparingWhich.questionWordLabel,{en:'WHICH',es:'QUÉ',pt:'QUAIS'});
+assert.deepEqual(preparingWhich.questionWordLabel,{en:'WHICH',es:'CUÁLES',pt:'QUAIS'});
 assert.match(runtime,/q\.questionWordLabel\?\.\[experienceLanguage\]/);
 console.log('Thinking Mind tri-language labels: PASS — technical identity stays stable while EN/ES/PT human forms follow each canonical Experience question.');

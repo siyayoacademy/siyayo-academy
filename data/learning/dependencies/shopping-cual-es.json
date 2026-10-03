@@ -1,34 +1,34 @@
 {
   "version": "0.1.0",
-  "id": "preparing-which-es",
+  "id": "shopping-cual-es",
   "language": "es",
-  "sentence": "¿Cuáles zanahorias deberíamos cocinar primero?",
+  "sentence": "¿Cuál queso deberíamos elegir?",
   "tokens": [
     {
       "id": "which",
       "index": 1,
-      "form": "Cuáles",
+      "form": "Cuál",
       "wordClass": "DET",
       "pedagogy": {
         "wordType": {
           "es": "DETERMINANTE"
         },
         "role": {
-          "es": "Determinante interrogativo de zanahorias"
+          "es": "Determinante interrogativo de queso"
         }
       }
     },
     {
-      "id": "carrots",
+      "id": "cheese",
       "index": 2,
-      "form": "zanahorias",
+      "form": "queso",
       "wordClass": "NOUN",
       "pedagogy": {
         "wordType": {
           "es": "SUSTANTIVO"
         },
         "role": {
-          "es": "Zanahorias que se eligen"
+          "es": "Queso que se elige"
         }
       }
     },
@@ -47,9 +47,9 @@
       }
     },
     {
-      "id": "cook",
+      "id": "choose",
       "index": 4,
-      "form": "cocinar",
+      "form": "elegir",
       "wordClass": "VERB",
       "pedagogy": {
         "wordType": {
@@ -59,42 +59,23 @@
           "es": ""
         }
       }
-    },
-    {
-      "id": "first",
-      "index": 5,
-      "form": "primero",
-      "wordClass": "ADV",
-      "pedagogy": {
-        "wordType": {
-          "es": "ADVERBIO"
-        },
-        "role": {
-          "es": ""
-        }
-      }
     }
   ],
   "relations": [
     {
-      "head": "carrots",
+      "head": "cheese",
       "dependent": "which",
       "relation": "det"
     },
     {
-      "head": "cook",
-      "dependent": "carrots",
+      "head": "choose",
+      "dependent": "cheese",
       "relation": "obj"
     },
     {
-      "head": "cook",
+      "head": "choose",
       "dependent": "should",
       "relation": "aux"
-    },
-    {
-      "head": "cook",
-      "dependent": "first",
-      "relation": "advmod"
     }
   ],
   "pedagogy": {
@@ -109,7 +90,7 @@
   },
   "source": {
     "name": "SIYAYO canonical es WHICH question",
-    "experienceId": "preparing-dinner",
+    "experienceId": "shopping-for-dinner",
     "questionWord": "which",
     "field": "thinkingMind.question",
     "notes": "Explicit language-specific corpus reference; no inserted omitted subject."

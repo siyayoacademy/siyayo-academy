@@ -400,3 +400,6 @@ jobs:
 
       - name: Test diagnostic observation during identity and language WAIT
         run: node scripts/test-head-observation-identity-language-wait.js
+
+      - name: Test independent Spanish CUÁL and CUÁLES extension
+        run: node scripts/test-cual-cuales-extension.js

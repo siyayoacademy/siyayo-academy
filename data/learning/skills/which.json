@@ -48,9 +48,10 @@
       "grammarRole": "interrogative-determiner"
     },
     "es": {
-      "form": "qué",
+      "form": "cuál",
       "family": "palabra-interrogativa",
-      "grammarRole": "determinante-interrogativo"
+      "grammarRole": "determinante-interrogativo",
+      "pluralForm": "cuáles"
     },
     "pt": {
       "form": "qual",

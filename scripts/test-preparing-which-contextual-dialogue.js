@@ -6,7 +6,7 @@ const seeds=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','ut
 const exp=seeds.find(x=>x.id==='preparing-dinner'),q=exp.thinkingMind.find(q=>q.questionWord==='which');
 const runtime=fs.readFileSync('js/verb-explorer.js','utf8');
 assert.equal(q.assessmentTarget,undefined,'exploration does not invent a new S2 WHICH contract');
-assert.deepEqual(q.question,{en:'Which carrots should we cook first?',es:'¿Qué zanahorias deberíamos cocinar primero?',pt:'Quais cenouras devemos cozinhar primeiro?'},'canonical S1 transfer question stays unchanged');
+assert.deepEqual(q.question,{en:'Which carrots should we cook first?',es:'¿Cuáles zanahorias deberíamos cocinar primero?',pt:'Quais cenouras devemos cozinhar primeiro?'},'canonical S1 transfer question stays unchanged');
 const root={activeThinkingQuestion:()=>q,canonicalExperienceLine(){throw Error('unrelated entry-verb fallback');}};
 const ctx=vm.createContext(root);
 vm.runInContext('let experienceWordType="verb",experiencePerspective=null,experienceLanguage="en",experienceTense="present",experienceForm="affirmative";'+runtime.slice(runtime.indexOf('function experienceLines('),runtime.indexOf('function choicePrompt(')),ctx);

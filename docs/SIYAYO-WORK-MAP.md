@@ -1163,3 +1163,12 @@ Extends recovery; does not migrate or replace Pass Contracts or Spanish corpus. 
 Production corpus regression covers EN/ES/PT origin Sessions recovered from Shopping at Preparing, no provider invocation during recovery, missing circuit and anonymous exclusion. Existing language isolation and contract checks remain required. Visual homologation pending: same nick -> Shopping WHICH local progress -> Preparing -> switch language -> explicitly select WHICH -> that language's existing Shopping circuit and transfer panel reappear. Language with no circuit must not inherit progress.
 
 Next approved corpus study: CUÁL queso (singular determiner), CUÁLES zanahorias (plural determiner), and separate pronominal comparison Tenemos dos quesos. ¿Cuál elegimos? No lexical substitution or pronominal Green Pass is included in LIVE-28.
+
+
+## LIVE-29 — Approved Spanish CUÁL/CUÁLES determiner realization and separate pronoun comparison
+
+Extends the Spanish learning content; migrates only the authored WHICH Spanish determiner realization from qué to cuál/cuáles in Shopping/Preparing, preserving WHAT qué and all EN/PT corpus. Stable skill identity, local/transfer requirements and retained scope ownership remain unchanged. Existing historical evidence is not regraded. Shopping CUÁL queso has its own dependency structure; Preparing CUÁLES zanahorias retains its grounded noun/verb relations. Authored dialogue forms, speech text, labels and local/transfer specification prefixes agree.
+
+Tenemos dos quesos. ¿Cuál elegimos? is an independent corpus-declared pronoun comparison. Its correct/incorrect selections produce a learner/language/experience-owned observational trace only, with evidenceProduced:false and greenPass:false. It does not submit to the determiner Coordinator. No pronominal Green Pass contract is claimed or implemented.
+
+Regression expectations updated only for the explicitly approved ES realization. New CI test covers singular/plural labels, preserved WHAT qué, dependency tokens and pronominal pass/fail/invalid without Evidence or Green Pass. Visual homologation pending: ES Shopping CUÁL -> queso + canonical mild cheese -> Preparing CUÁLES -> zanahorias -> determiner Green Pass. Separately answer pronoun comparison; determiner counter must not change.

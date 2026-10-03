@@ -92,7 +92,7 @@ function mount(input){
       if(!coordinated)return null;
       var closure=coordinated.cycleResult&&coordinated.cycleResult.contractEvaluation;
       feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
-        ?(language==='es'?'GREEN PASS · QUÉ confirmado':language==='pt'?'GREEN PASS · QUAL confirmado':'GREEN PASS · WHICH confirmed')
+        ?(language==='es'?'GREEN PASS · CUÁL/CUÁLES confirmado':language==='pt'?'GREEN PASS · QUAL confirmado':'GREEN PASS · WHICH confirmed')
         :result.result==='pass'
           ?(language==='es'?'Respuesta registrada · evaluación en curso':language==='pt'?'Resposta registrada · avaliação em andamento':'Response recorded · assessment in progress')
           :(language==='es'?'Prueba otra palabra':language==='pt'?'Tente outra palavra':'Try another word');
@@ -113,7 +113,7 @@ function mount(input){
 
   el.hidden=false;
   var title=typeof el.querySelector==='function'?el.querySelector('h3'):null;
-  if(title)title.textContent=language==='es'?'QUÉ · USO DEL DETERMINANTE':language==='pt'?'QUAL · USO DO DETERMINANTE':'WHICH · DETERMINER USE';
+  if(title)title.textContent=language==='es'?(transfer?'CUÁLES · USO DEL DETERMINANTE':'CUÁL · USO DEL DETERMINANTE'):language==='pt'?'QUAL · USO DO DETERMINANTE':'WHICH · DETERMINER USE';
   el.dataset.assessmentMode=transfer?'transfer':'local';
   return true;
 }

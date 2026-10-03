@@ -64,7 +64,7 @@
     if(!question)return null;
     var form=language==='pt'?text(entries[0].questionWordLabel&&entries[0].questionWordLabel.pt):'';
     if(language==='pt'&&!(text(skillDefinition.realizations&&skillDefinition.realizations.pt&&skillDefinition.realizations.pt.form)==='qual'&&form==='QUAIS'))return null;
-    var prefix=language==='es'?'¿Qué ':language==='pt'?'Quais ':'Which ';
+    var prefix=language==='es'?'¿Cuáles ':language==='pt'?'Quais ':'Which ';
 
     var nounId=canonicalNounId(
       question,

@@ -55,7 +55,7 @@
 
     var form=language==='pt'?text(entry.questionWordLabel&&entry.questionWordLabel.pt):'';
     if(language==='pt'&&form.toLowerCase()!==text(skillDefinition.realizations&&skillDefinition.realizations.pt&&skillDefinition.realizations.pt.form))return null;
-    var expectedPrefix=language==='es'?'¿Qué '+noun+' ':language==='pt'?form.charAt(0)+form.slice(1).toLowerCase()+' '+noun+' ':'Which '+noun+' ';
+    var expectedPrefix=language==='es'?'¿Cuál '+noun+' ':language==='pt'?form.charAt(0)+form.slice(1).toLowerCase()+' '+noun+' ':'Which '+noun+' ';
     if(question.indexOf(expectedPrefix)!==0)return null;
 
     var remainder=question.slice(expectedPrefix.length);
