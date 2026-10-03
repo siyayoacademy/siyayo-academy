@@ -40,7 +40,7 @@
     linear-gradient(180deg,transparent 58%,rgba(0,0,0,.20));
 }
 
-.siyayo-environment-host > *{position:relative;z-index:1}
+.siyayo-environment-host > .stage-viewport{position:relative;z-index:1}
 
 .siyayo-environment-host[data-environment="forest-day"]{
   --env-sky-1:#cce4df;
@@ -362,9 +362,18 @@
   z-index:0;
 }
 
-.siyayo-environment-host > :not(.stage-symbolic-background){
+/* Only the functional stage is lifted above the symbolic background.
+   Developer HUD/toolbars keep their own fixed positioning and z-index. */
+.siyayo-environment-host > .stage-viewport{
   position:relative;
   z-index:1;
+}
+
+.dev-preview-toolbar,
+.environment-dev-toolbar,
+.weather-dev-toolbar{
+  position:fixed;
+  z-index:1999;
 }
 
 @media (prefers-reduced-motion:reduce){
