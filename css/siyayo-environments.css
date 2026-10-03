@@ -148,6 +148,10 @@
   .siyayo-environment-host,
   .siyayo-environment-host::before,
   .siyayo-environment-host::after{transition:none!important}
+  .siyayo-environment-host[data-weather="mist"]::after,
+  .siyayo-environment-host[data-weather="rain"]::after{
+    animation:none!important;
+  }
 }
 
 
@@ -180,13 +184,17 @@
 
 .siyayo-environment-host[data-weather="mist"]{
   --weather-overlay:
-    repeating-linear-gradient(
-      180deg,
-      rgba(236,242,244,.06) 0 28px,
-      rgba(236,242,244,.14) 28px 58px,
-      rgba(236,242,244,.04) 58px 92px
-    );
-  --weather-overlay-opacity:.04;
+    radial-gradient(ellipse at 18% 28%,rgba(238,244,245,.18) 0 12%,transparent 38%),
+    radial-gradient(ellipse at 72% 42%,rgba(226,236,239,.14) 0 10%,transparent 36%),
+    radial-gradient(ellipse at 44% 72%,rgba(240,244,242,.12) 0 14%,transparent 42%),
+    linear-gradient(180deg,rgba(222,232,235,.05),rgba(230,238,239,.11) 48%,rgba(205,220,223,.04));
+  --weather-overlay-opacity:.03;
+}
+
+.siyayo-environment-host[data-weather="mist"]::after{
+  background-size:135% 82%,145% 96%,130% 90%,100% 100%;
+  background-position:-8% 8%,106% 28%,35% 88%,0 0;
+  animation:siyayo-mist-drift 18s ease-in-out infinite alternate;
 }
 
 .siyayo-environment-host[data-weather="rain"]{
@@ -194,11 +202,44 @@
     repeating-linear-gradient(
       102deg,
       transparent 0 18px,
-      rgba(220,235,255,.12) 18px 20px,
+      rgba(220,235,255,.13) 18px 20px,
       transparent 20px 42px
     ),
+    repeating-linear-gradient(
+      102deg,
+      transparent 0 31px,
+      rgba(190,215,245,.07) 31px 32px,
+      transparent 32px 63px
+    ),
     linear-gradient(180deg,rgba(74,92,116,.12),rgba(10,18,30,.12));
-  --weather-overlay-opacity:.06;
+  --weather-overlay-opacity:.05;
+}
+
+.siyayo-environment-host[data-weather="rain"]::after{
+  background-size:100% 220px,100% 340px,100% 100%;
+  background-position:0 -220px,18px -340px,0 0;
+  animation:siyayo-rain-fall 1.15s linear infinite;
+}
+
+@keyframes siyayo-mist-drift{
+  0%{
+    background-position:-8% 8%,106% 28%,35% 88%,0 0;
+  }
+  50%{
+    background-position:12% 16%,88% 34%,48% 78%,0 0;
+  }
+  100%{
+    background-position:24% 10%,74% 24%,58% 84%,0 0;
+  }
+}
+
+@keyframes siyayo-rain-fall{
+  from{
+    background-position:0 -220px,18px -340px,0 0;
+  }
+  to{
+    background-position:-54px 220px,-30px 340px,0 0;
+  }
 }
 
 .weather-dev-toolbar{
