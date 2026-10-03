@@ -56,10 +56,10 @@
 
   function journeyLabels(language){
     return {
-      en:{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',waiting:'not started'},
-      es:{path:'RECORRIDO DE PALABRAS',visiting:'VISITANDO AHORA',assessment:'REGISTRO DE EVALUACIÓN',started:'iniciada en',visit:'Esta visita no inicia una nueva evaluación.',achieved:'resultado ya alcanzado',choice:'Evidencia de elección de WHICH aceptada',waiting:'aún no iniciada'},
-      pt:{path:'PERCURSO DAS PALAVRAS',visiting:'VISITANDO AGORA',assessment:'REGISTRO DA AVALIAÇÃO',started:'iniciada em',visit:'Esta visita não inicia uma nova avaliação.',achieved:'resultado já conquistado',choice:'Evidência de escolha de WHICH aceita',waiting:'ainda não iniciada'}
-    }[language]||{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',waiting:'not started'};
+      en:{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',saved:'progress saved',waiting:'not started'},
+      es:{path:'RECORRIDO DE PALABRAS',visiting:'VISITANDO AHORA',assessment:'REGISTRO DE EVALUACIÓN',started:'iniciada en',visit:'Esta visita no inicia una nueva evaluación.',achieved:'resultado ya alcanzado',choice:'Evidencia de elección de WHICH aceptada',saved:'progreso guardado',waiting:'aún no iniciada'},
+      pt:{path:'PERCURSO DAS PALAVRAS',visiting:'VISITANDO AGORA',assessment:'REGISTRO DA AVALIAÇÃO',started:'iniciada em',visit:'Esta visita não inicia uma nova avaliação.',achieved:'resultado já conquistado',choice:'Evidência de escolha de WHICH aceita',saved:'progresso guardado',waiting:'ainda não iniciada'}
+    }[language]||{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',saved:'progress saved',waiting:'not started'};
   }
 
   function journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language){
@@ -74,10 +74,15 @@
       var past=history&&markerAuthority.resolve(history);
       var confirmed=past&&(past.state==='CONFIRMED'||past.state==='CONSOLIDATED_EVIDENCE');
       var current=item.id===skill&&(!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===language);
-      var state=confirmed?'confirmed':current?'active':'waiting';
-      var symbol=confirmed?'●':current&&(past.state==='IN_PROGRESS'||progress&&progress.completed>0)?'◐':'○';
+      var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+      var saved=!current&&selection&&typeof selection.getRetainedProgress==='function'
+        ?selection.getRetainedProgress(item.id,language):[];
+      var state=confirmed?'confirmed':current?'active':saved.length?'saved':'waiting';
+      var symbol=confirmed?'●':(current&&(past&&past.state==='IN_PROGRESS'||progress&&progress.completed>0)||saved.some(function(record){return record.progress.completed>0;}))?'◐':'○';
       var description=confirmed?stateLabel('CONFIRMED',language):
-        current&&progress?progress.completed+'/'+progress.total:labels.waiting;
+        current&&progress?progress.completed+'/'+progress.total:saved.length?saved.map(function(record){
+          return record.progress.completed+'/'+record.progress.total+' · '+labels.saved+' · '+record.originExperienceId;
+        }).join(' / '):labels.waiting;
       return '<span class="learner-journey-word" data-state="'+state+'">'+
         '<b aria-hidden="true">'+symbol+'</b><strong>'+item.word+'</strong><small>'+escapeHtml(description)+'</small></span>';
     }).join('');

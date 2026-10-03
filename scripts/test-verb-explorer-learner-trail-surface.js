@@ -283,6 +283,15 @@ Promise.resolve().then(function(){
   assert.match(container.innerHTML, /data-current="true"/);
   assert.doesNotMatch(container.innerHTML, /<button/i);
 
+  marker=Object.freeze({status:'PROGRESS_MARKER_READY',skill:'which.use.determiner',state:'UNOBSERVED',marker:'EMPTY_DOT',confirmedExperiences:0});
+  sandbox.SIYAYOVerbExplorerThinkingMindAssessmentSelection={getRetainedProgress(skill,language){
+    return skill==='what.use.object-question'&&language==='en'?[{originExperienceId:'shopping-for-dinner',progress:{completed:2,total:3}}]:[];
+  }};
+  Surface.refresh({document:documentRef,language:'en'});
+  assert.match(container.innerHTML,/WHAT<\/strong><small>2\/3 · progress saved · shopping-for-dinner/);
+  assert.doesNotMatch(container.innerHTML,/WHAT<\/strong><small>not started/);
+  Surface.refresh({document:documentRef,language:'es'});
+  assert.doesNotMatch(container.innerHTML,/progress saved/);
   console.log(
     'Verb Explorer learner trail surface: PASS — ○/◐/●/★ render as a read-only view of canonical Trail state and refresh after learner interaction without creating progression, score, mastery, or sound.'
   );

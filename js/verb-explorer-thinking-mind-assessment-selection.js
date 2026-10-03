@@ -44,6 +44,22 @@ function remember(snapshot,definition){
   retained[cacheKey]={snapshot:snapshot,definition:definition};
   return true;
 }
+// Read-only summaries: no Session adoption, Evidence creation or routing.
+function getRetainedProgress(skill,language){
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  var learnerId=identity&&identity.getId&&identity.getId();
+  var api=root.AdaptiveAssessmentScope,view=root.AdaptivePassContractProgressView;
+  if(!learnerId||!api||!view||typeof view.project!=='function')return Object.freeze([]);
+  var records=Object.keys(retained).map(function(cacheKey){
+    var entry=retained[cacheKey],snapshot=entry.snapshot;
+    var scope=snapshot.session.decision.assessmentScope;
+    if(!api.valid(scope)||scope.learnerId!==learnerId||scope.skill!==skill||scope.language!==language)return null;
+    var context=snapshot.context||{};
+    var progress=view.project(context.passContract,context.evidencePackets,root.GreenPassProfile);
+    return progress&&Object.freeze({originExperienceId:scope.originExperienceId,progress:progress});
+  }).filter(Boolean);
+  return Object.freeze(records);
+}
 function select(question,options){
   options=options||{};
   // A new anonymous selection supersedes the previous pending target, even
@@ -164,5 +180,5 @@ function resumeForIdentity(){
   return select(pending.question);
 }
 
-root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,remember:remember});
+root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,remember:remember,getRetainedProgress:getRetainedProgress});
 })(typeof globalThis!=='undefined'?globalThis:this);

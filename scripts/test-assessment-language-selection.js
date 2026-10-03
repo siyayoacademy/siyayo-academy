@@ -118,6 +118,15 @@ async function run(){
  assert.equal(productionCoordinator.snapshot().context,productionBefore.context);
  root.SIYAYOVerbExplorerAdaptiveCoordinator=priorCoordinator;
 
+ // Retained progress is projected without adopting a circuit, scoped to the learner and language.
+ root.AdaptivePassContractProgressView={project:()=>Object.freeze({completed:2,total:3})};
+ const beforeRead=active,beforeReadDefinition=definition,beforeReadBirths=calls;
+ const summaries=selection.getRetainedProgress(question.assessmentTarget.skill,'en');
+ assert.equal(summaries.length,1);assert.equal(summaries[0].originExperienceId,'shopping-for-dinner');
+ assert.equal(summaries[0].progress.completed,2);assert.ok(Object.isFrozen(summaries));
+ assert.equal(selection.getRetainedProgress(question.assessmentTarget.skill,'pt').length,0);
+ learner='another learner';assert.equal(selection.getRetainedProgress(question.assessmentTarget.skill,'en').length,0);
+ learner='transfer learner';assert.equal(active,beforeRead);assert.equal(definition,beforeReadDefinition);assert.equal(calls,beforeReadBirths);
  // Deferred canonical load must not complete into another screen-language target.
  let resolveLoad,composed=0;
  const deferred={Object,Promise,AdaptiveAssessmentScope:Scope,
