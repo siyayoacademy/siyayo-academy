@@ -284,3 +284,91 @@
 @media (hover:none) and (pointer:coarse){
   .weather-dev-toolbar{display:none!important}
 }
+
+
+/* SIYAYO Piano Symbolic Background v0.1
+   Global atmosphere only. Decorative layers never receive pointer events. */
+
+.stage-symbolic-background{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+  isolation:isolate;
+}
+
+.stage-symbolic-background > *{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+.symbolic-spectrum{
+  background:
+    radial-gradient(circle at 50% 22%,rgba(53,101,174,.18),transparent 26%),
+    radial-gradient(circle at 50% 55%,rgba(18,50,110,.18),transparent 42%),
+    linear-gradient(180deg,rgba(5,20,50,.10),rgba(1,7,24,.24));
+  opacity:.94;
+}
+
+.symbolic-gold-aura{
+  inset:-12%;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(247,207,93,.16) 0 7%,rgba(215,179,90,.09) 16%,transparent 40%),
+    radial-gradient(circle at 50% 45%,transparent 0 32%,rgba(242,216,138,.08) 32.4% 32.8%,transparent 33.2%),
+    radial-gradient(circle at 50% 45%,transparent 0 44%,rgba(215,179,90,.06) 44.3% 44.7%,transparent 45.1%);
+  filter:blur(.2px);
+  opacity:.9;
+}
+
+.symbolic-seed-field{
+  background:
+    radial-gradient(circle at 18% 18%,rgba(255,222,122,.75) 0 1.4px,transparent 2.4px),
+    radial-gradient(circle at 31% 32%,rgba(255,229,143,.54) 0 1.2px,transparent 2.2px),
+    radial-gradient(circle at 47% 16%,rgba(255,209,87,.68) 0 1.5px,transparent 2.5px),
+    radial-gradient(circle at 62% 28%,rgba(255,226,134,.58) 0 1.3px,transparent 2.3px),
+    radial-gradient(circle at 79% 18%,rgba(255,211,91,.68) 0 1.5px,transparent 2.5px),
+    radial-gradient(circle at 88% 42%,rgba(255,228,145,.46) 0 1.2px,transparent 2.2px),
+    radial-gradient(circle at 72% 66%,rgba(255,210,90,.54) 0 1.4px,transparent 2.4px),
+    radial-gradient(circle at 52% 78%,rgba(255,231,153,.46) 0 1.2px,transparent 2.2px),
+    radial-gradient(circle at 28% 70%,rgba(255,211,88,.55) 0 1.4px,transparent 2.4px),
+    radial-gradient(circle at 12% 52%,rgba(255,229,144,.42) 0 1.2px,transparent 2.2px);
+  background-size:100% 100%;
+  opacity:.68;
+  animation:siyayo-symbolic-seed-breathe 9s ease-in-out infinite alternate;
+}
+
+.symbolic-art-slot{
+  opacity:0;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  transition:opacity 600ms cubic-bezier(.25,.8,.25,1);
+}
+
+/* Asset-ready slots:
+   .symbolic-eagle-slot   -> isolated transparent eagle
+   .symbolic-frondosa-slot -> isolated transparent golden Frondosa
+   .symbolic-seed-slot    -> isolated transparent golden seed
+   Keep pointer-events:none; bind images only after each asset is homologated. */
+
+@keyframes siyayo-symbolic-seed-breathe{
+  from{opacity:.46;transform:scale(1)}
+  to{opacity:.74;transform:scale(1.012)}
+}
+
+.siyayo-environment-host > .stage-symbolic-background{
+  z-index:0;
+}
+
+.siyayo-environment-host > :not(.stage-symbolic-background){
+  position:relative;
+  z-index:1;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .symbolic-seed-field{
+    animation:none!important;
+  }
+}
