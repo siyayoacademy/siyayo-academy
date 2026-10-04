@@ -370,6 +370,11 @@ jobs:
       - name: Check QWord visit continuity and mastery styling
         run: node scripts/test-qword-visit-continuity.js
 
+      - name: Test TORO Experience presentation memory
+        run: |
+          node --check js/verb-explorer-experience-presentation-memory.js
+          node scripts/test-verb-explorer-toro-presentation-memory.js
+
       - name: Test Shopping WHAT head diagnostic
         run: node scripts/test-shopping-what-head-diagnostic.js
 
