@@ -2787,3 +2787,13 @@ h1 {
 .frondosa-hotspots{
   z-index:4;
 }
+
+
+/* =========================================================
+   FRONDOSA FUNCTIONAL TRANSLUCENCY TEST v0.1
+   Keeps pedagogical hotspots fully visible while reducing
+   only the real functional-tree artwork.
+   ========================================================= */
+.frondosa-visual{
+  opacity:.72;
+}
