@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const code=fs.readFileSync('js/verb-explorer.js','utf8');
-const navigation=code.match(/function goToExperience\(id\)\{[^\n]+/)[0];
+const navigation=code.slice(code.indexOf('function currentPresentationSnapshot('),code.indexOf('window.SIYAYOVerbExplorerExperienceNavigation='));
 for(const word of ['which','what','why']){
  const s={selected:word,currentExperienceId:'shopping-for-dinner',experienceQuestion:0,experiences:[{id:'shopping-for-dinner',thinkingMind:[{questionWord:word}]},{id:'preparing-dinner',thinkingMind:[{questionWord:'what'},{questionWord:'which'},{questionWord:'why'}]}],window:{SIYAYOVerbExplorerThinkingMindAssessmentSelection:{invalidatePending(){}}},syncExplorerRoute(){},renderExperience(){},activeThinkingQuestion(x){return x.thinkingMind[this.experienceQuestion||0]},activeExperience(){return s.experiences.find(x=>x.id===s.currentExperienceId)}};
  // Bind the same global lookup semantics as the browser runtime.

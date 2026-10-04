@@ -11,6 +11,7 @@
   'use strict';
 
   var practiceTrace=[];
+  var feedbackMemory=Object.create(null);
 
   function text(value){return typeof value==='string'?value.trim():'';}
 
@@ -76,7 +77,7 @@
     var prompt=meta.prompt&&text(meta.prompt[language]||meta.prompt.en);
     var definition=definitionApi.create(structure,{
       experienceId:text(experience.id),
-      targetTokenId:text(meta.targetTokenId),
+      targetTokenId:text(meta.targetTokenIdsByLanguage&&meta.targetTokenIdsByLanguage[language]||meta.targetTokenId),
       prompt:prompt,
       alternativeTokenIds:Array.isArray(meta.alternativeTokenIds)?meta.alternativeTokenIds:[]
     });
@@ -84,12 +85,17 @@
 
     var presentation=presenter.present(definition);
     if(!presentation)return false;
+    presentation=Object.freeze(Object.assign({},presentation,{studyTarget:text(options.questionWordLabel)}));
 
 
     var identity=options.identitySource||root.SIYAYOVerbExplorerLearnerIdentitySource;
     var runtime=options.runtime||root.SIYAYOVerbExplorerExperienceRuntime;
     var questionWord=text(options.questionWord);
     var learnerId=identity&&typeof identity.getId==='function'?text(identity.getId()):'';
+    var memoryKey=JSON.stringify([learnerId,questionWord,language,experience.id,structure.id,definition.targetToken.id]);
+    function rememberFeedback(){feedbackMemory[memoryKey]={text:el.feedback.textContent,result:el.feedback.dataset.result};}
+    function restoreFeedback(){var saved=feedbackMemory[memoryKey];if(saved){el.feedback.textContent=saved.text;el.feedback.dataset.result=saved.result;el.feedback.hidden=false;el.panel.dataset.cycleStatus='observed';}}
+
     function snapshot(){
       return coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
     }
@@ -125,7 +131,7 @@
       var token={};
       el.container.__siyayoAnonymousHeadToken=token;
       var observationInstalled=wire.install(presentation,{
-        container:el.container,learnerEvents:learnerEvents,
+        container:el.container,learnerEvents:learnerEvents,speak:options.speak,
         onEvent:function(event){
           if(el.container.__siyayoAnonymousHeadToken!==token||!observationCurrent())return null;
           var result=resultApi.evaluate(definition,event);
@@ -142,6 +148,7 @@
             :feedbackText(result.result,language);
           el.feedback.dataset.result=result.result;el.feedback.hidden=false;
           el.panel.dataset.cycleStatus='observed';
+          rememberFeedback();
           var trailSurface=root.SIYAYOVerbExplorerLearnerTrailSurface;
           if(trailSurface&&typeof trailSurface.refresh==='function')trailSurface.refresh({document:doc,language:language});
           return record;
@@ -149,7 +156,7 @@
       });
       if(observationInstalled!==true){hide(doc);return false;}
       el.panel.dataset.assessmentState=learnerId?'identified-observation':'anonymous-practice';
-      el.panel.hidden=false;return true;
+      el.panel.hidden=false;restoreFeedback();return true;
     }
 
     if(!assessed){hide(doc);return false;}
@@ -164,6 +171,7 @@
     var installed=wire.install(presentation,{
       container:el.container,
       learnerEvents:learnerEvents,
+      speak:options.speak,
       onEvent:function(event,target){
         var current=coordinator.snapshot();
         if(!current||current.session!==session||!compatibleAssessment(current))return null;
@@ -193,6 +201,7 @@
         el.feedback.dataset.result=result.result;
         el.feedback.hidden=false;
         el.panel.dataset.cycleStatus='observed';
+        rememberFeedback();
         return coordinated;
       }
     });
@@ -204,6 +213,7 @@
 
     el.panel.dataset.assessmentState='active';
     el.panel.hidden=false;
+    restoreFeedback();
     return true;
   }
 

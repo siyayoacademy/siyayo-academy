@@ -54,7 +54,7 @@ for(const language of ['en','es','pt'])for(const word of ['what','which']){
  assert.equal(live.mount({...options,allowAnonymousPractice:false}),false);
  assert.equal(live.mount(options),true);assert.equal(panel.dataset.assessmentState,'anonymous-practice');
  const click=id=>container.click({target:{closest(){return {dataset:{dependencyHeadProbeSelect:id}};}}});
- const correct=word==='what'?'cook':'books';click(correct);click(correct);click(meta.alternativeTokenIdsByLanguage?.[language]?.[0]||meta.alternativeTokenIds[0]);
+ const correct=word==='what'?'cook':language==='es'?'cheese':'books';click(correct);click(correct);click((meta.alternativeTokenIdsByLanguage?.[language]||meta.alternativeTokenIds).find(id=>id!==correct));
  assert.equal(feedback.dataset.result,'fail');let trace=live.getPracticeTrace();assert.equal(trace.length,3);assert.equal(trace[0].result,'pass');assert.notEqual(trace[0].occurrenceId,trace[1].occurrenceId);assert.ok(Object.isFrozen(trace));
  assert.ok(trace.every(r=>r.evidenceProduced===false&&r.greenPass===false&&!('learnerId' in r)));
  currentWord='where';click(correct);currentWord=word;currentLanguage='xx';click(correct);currentLanguage=language;

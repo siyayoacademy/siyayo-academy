@@ -47,6 +47,13 @@
     });
   }
 
+  function promptHtml(view){
+    var api=root.SIYAYOStudyTargetPresentation;
+    var value=api&&typeof api.highlight==='function'?api.highlight(view.prompt,view.studyTarget):escapeHtml(view.prompt);
+    // Keep the authored text; break only after its quoted reference sentence.
+    return value.replace(/([”»],)\s+/,'$1<br>');
+  }
+
   function render(view,options){
     options=options||{};
     var container=options.container;
@@ -54,7 +61,9 @@
 
     container.innerHTML=[
       '<section class="dependency-head-probe" aria-label="Dependency head check">',
-      '<p class="dependency-head-probe-prompt">',escapeHtml(view.prompt),'</p>',
+      '<span class="dependency-probe-heading">',escapeHtml(({en:'DEPENDENCY HEAD PROBE',es:'DIAGNÓSTICO DE VÍNCULO',pt:'DIAGNÓSTICO DE LIGAÇÃO'})[view.language]),'</span>',
+      '<p class="dependency-head-probe-prompt">',promptHtml(view),'</p>',
+      '<button type="button" class="dependency-probe-audio" data-dependency-probe-audio aria-label="',escapeHtml(({en:'Listen to the question',es:'Escuchar la pregunta',pt:'Ouvir a pergunta'})[view.language]),'"><span class="siyayo-speaker" aria-hidden="true"></span></button>',
       '<div class="dependency-head-probe-options">',
       view.alternatives.map(function(item){
         return [
@@ -94,13 +103,19 @@
     container.__siyayoDependencyHeadProbeBinding={
       view:view,
       learnerEvents:learnerEvents,
-      onEvent:onEvent
+      onEvent:onEvent,
+      speak:options.speak
     };
 
     if(container.__siyayoDependencyHeadProbeClickInstalled!==true){
       container.addEventListener('click',function(event){
         var binding=container.__siyayoDependencyHeadProbeBinding;
         if(!binding)return;
+        var audio=event&&event.target&&event.target.closest&&event.target.closest('[data-dependency-probe-audio]');
+        if(audio&&audio.dataset&&Object.prototype.hasOwnProperty.call(audio.dataset,'dependencyProbeAudio')){
+          if(typeof binding.speak==='function')binding.speak(binding.view.prompt,binding.view.language);
+          return;
+        }
 
         var target=event&&event.target&&typeof event.target.closest==='function'
           ? event.target.closest('[data-dependency-head-probe-select]')

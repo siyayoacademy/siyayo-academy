@@ -54,7 +54,8 @@ function install(options){
       var label=editor.querySelector&&editor.querySelector('label');
       if(label)label.textContent=labels.label;
       status.textContent=current?labels.ready+' · '+current:labels.waiting;
-      var anchor=doc.getElementById('dependencyFocusSurface');
+      var focusAnchor=doc.getElementById('dependencyFocusSurface');
+      var anchor=current?(doc.getElementById('dependencyHeadProbePanel')||focusAnchor):focusAnchor;
       if(anchor&&anchor.parentNode===panel.parentNode&&panel.parentNode){
         if(current){if(anchor.nextElementSibling!==panel)anchor.parentNode.insertBefore(panel,anchor.nextSibling);}
         else if(panel.nextElementSibling!==anchor)anchor.parentNode.insertBefore(panel,anchor);

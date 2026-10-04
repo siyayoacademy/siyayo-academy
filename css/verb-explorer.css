@@ -325,3 +325,8 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .learner-identity-panel[data-identity-display="compact"]{width:fit-content;max-width:100%;padding:8px 14px}
 .learner-identity-panel[data-identity-display="compact"] #learnerIdentityStatus{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 @media(max-width:520px){.learner-identity-compact button{min-height:44px}.learner-identity-panel[data-identity-display="compact"]{width:100%}}
+
+/* LIVE-31: diagnostic presentation follows authored QWord; speech is observation-free. */
+.dependency-probe-heading{color:var(--siyayo-gold-primary);font-family:var(--font-ui);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-align:center}
+.dependency-probe-audio{border:1px solid rgba(242,216,138,.35);border-radius:50%;background:transparent;color:var(--siyayo-gold-primary);width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.dependency-probe-audio:hover,.dependency-probe-audio:focus-visible{box-shadow:0 0 16px rgba(242,216,138,.16);border-color:var(--siyayo-gold-primary)}

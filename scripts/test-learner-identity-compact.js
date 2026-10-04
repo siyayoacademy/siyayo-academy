@@ -27,7 +27,7 @@ function build(language){
   assert.equal(n.learnerIdentityEditor.hidden,false);assert.equal(n.learnerIdentityCompact.hidden,true);
   n.learnerIdentityInput.value='Aldo';t.click('learnerIdentityConfirm');await t.tick();
   assert.equal(n.learnerIdentityEditor.hidden,true);assert.equal(n.learnerIdentityName.textContent,'Aldo');
-  assert.deepEqual(t.order(),['dependencyFocusSurface','learnerIdentityPanel','dependencyHeadProbePanel']);
+  assert.deepEqual(t.order(),['dependencyFocusSurface','dependencyHeadProbePanel','learnerIdentityPanel']);
   const session=t.session(),calls=t.calls(),signals=t.signals(),renders=t.renders();
   t.click('learnerIdentityChange');n.learnerIdentityInput.value='Another';t.click('learnerIdentityCancel');
   assert.equal(t.identity(),'Aldo');assert.equal(t.session(),session);assert.equal(t.calls(),calls);assert.equal(t.renders(),renders);assert.equal(t.signals(),signals);

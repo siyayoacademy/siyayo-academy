@@ -12,8 +12,10 @@ for(const language of ['en','es','pt'])for(const word of ['what','which'])for(co
  const live=sandbox.SIYAYOVerbExplorerDependencyHeadProbeLive,q=seeds[0].thinkingMind.find(q=>q.questionWord===word),meta=q.dependencyHeadProbe||seeds[0].dependencyHeadProbe,structure=require('../data/learning/dependencies/'+meta.structureIds[language]+'.json');
  const options={document,experience:seeds[0],structure,language,questionWord:word,questionWordLabel:q.questionWordLabel[language],metadata:{...meta,alternativeTokenIds:meta.alternativeTokenIdsByLanguage?.[language]||meta.alternativeTokenIds},identitySource:identity,runtime,coordinator:{snapshot(){return {session};},submitObservedAttempt(){calls++;}},evidenceBridge:{fromResult(){calls++;}},allowObservationalPractice:true};
  assert.equal(live.mount(options),true);assert.equal(panel.dataset.assessmentState,'identified-observation');
- const click=id=>container.click({target:{closest(){return {dataset:{dependencyHeadProbeSelect:id}};}}}),correct=word==='what'?'cook':'books';
- click(correct);assert.equal(feedback.dataset.result,'pass');click(correct);click(options.metadata.alternativeTokenIds[0]);assert.equal(feedback.dataset.result,'fail');
+ const click=id=>container.click({target:{closest(){return {dataset:{dependencyHeadProbeSelect:id}};}}}),correct=word==='what'?'cook':language==='es'?'cheese':'books';
+ click(correct);assert.equal(feedback.dataset.result,'pass');click(correct);click(options.metadata.alternativeTokenIds.find(id=>id!==correct));assert.equal(feedback.dataset.result,'fail');
+ const beforeRestore=live.getPracticeTrace().length;
+ assert.equal(live.mount(options),true);assert.equal(feedback.dataset.result,'fail');assert.equal(live.getPracticeTrace().length,beforeRestore);
  const trace=live.getPracticeTrace();assert.equal(trace.length,3);assert.notEqual(trace[0].occurrenceId,trace[1].occurrenceId);assert.ok(trace.every(r=>r.learnerId===learnerId&&r.language===language&&r.questionWord===word&&r.evidenceProduced===false&&r.greenPass===false));assert.equal(calls,0);assert.equal(JSON.stringify(session),original);
  // Production observation-only trail projection retains empty canonical authority.
  vm.runInContext(fs.readFileSync('js/verb-explorer-learner-trail-surface.js','utf8'),sandbox);

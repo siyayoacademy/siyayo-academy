@@ -371,6 +371,9 @@
                   }
                 }
               }
+            },
+            "targetTokenIdsByLanguage": {
+              "$ref": "#/$defs/trilingual"
             }
           }
         },
@@ -619,6 +622,9 @@
               "items": {
                 "type": "string"
               }
+            },
+            "targetTokenIdsByLanguage": {
+              "$ref": "#/$defs/trilingual"
             }
           }
         },

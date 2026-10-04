@@ -411,3 +411,7 @@ jobs:
 
       - name: Verify Experience preservation integration
         run: node scripts/test-experience-preservation-integration.js
+
+
+      - name: Verify head diagnostic corpus and presentation
+        run: node scripts/test-head-probe-corpus-presentation.js

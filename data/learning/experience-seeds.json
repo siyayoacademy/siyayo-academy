@@ -516,6 +516,41 @@
             "defaultFocusByLanguage": {
               "es": "cheese"
             }
+          },
+          "dependencyHeadProbe": {
+            "targetTokenId": "three",
+            "prompt": {
+              "en": "Which word is the head of “three”?",
+              "es": "En «¿Cuál queso deberíamos elegir?», ¿a qué sustantivo se vincula «Cuál»?",
+              "pt": "Qual palavra é o núcleo de “três”?"
+            },
+            "structureIds": {
+              "en": "all-these-three-books",
+              "es": "shopping-cual-es",
+              "pt": "todos-estes-tres-livros"
+            },
+            "targetTokenIdsByLanguage": {
+              "en": "three",
+              "es": "which",
+              "pt": "three"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "all",
+                "these",
+                "books"
+              ],
+              "es": [
+                "cheese",
+                "should",
+                "choose"
+              ],
+              "pt": [
+                "all",
+                "these",
+                "books"
+              ]
+            }
           }
         },
         {
@@ -949,6 +984,36 @@
               "pt": "preparing-what-pt"
             },
             "defaultFocus": "prepare"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-what-en",
+              "es": "preparing-what-es",
+              "pt": "preparing-what-pt"
+            },
+            "targetTokenId": "what",
+            "prompt": {
+              "en": "In “What are we preparing first?”, which verb does “What” connect to?",
+              "es": "En «¿Qué estamos preparando primero?», ¿a qué verbo se vincula «Qué»?",
+              "pt": "Em “O que estamos preparando primeiro?”, a qual verbo “O que” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "are",
+                "prepare",
+                "first"
+              ],
+              "es": [
+                "are",
+                "prepare",
+                "first"
+              ],
+              "pt": [
+                "are",
+                "prepare",
+                "first"
+              ]
+            }
           }
         },
         {
@@ -1133,6 +1198,36 @@
               "pt": "preparing-which-pt"
             },
             "defaultFocus": "carrots"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-which-en",
+              "es": "preparing-which-es",
+              "pt": "preparing-which-pt"
+            },
+            "targetTokenId": "which",
+            "prompt": {
+              "en": "In “Which carrots should we cook first?”, which noun does “Which” connect to?",
+              "es": "En «¿Cuáles zanahorias deberíamos cocinar primero?», ¿a qué sustantivo se vincula «Cuáles»?",
+              "pt": "Em “Quais cenouras devemos cozinhar primeiro?”, a qual substantivo “Quais” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "carrots",
+                "should",
+                "cook"
+              ],
+              "es": [
+                "carrots",
+                "should",
+                "cook"
+              ],
+              "pt": [
+                "carrots",
+                "should",
+                "cook"
+              ]
+            }
           }
         },
         {

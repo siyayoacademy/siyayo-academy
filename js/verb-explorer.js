@@ -82,8 +82,8 @@ function renderDependencyHeadProbe(x){
     else panel.hidden=true;
     return false;
   }
-  const metadata={...meta,alternativeTokenIds:meta.alternativeTokenIdsByLanguage?.[experienceLanguage]||meta.alternativeTokenIds};
-  return live.mount({document,experience:x,metadata,expectedSkill:question?.assessmentTarget?.skill,structure,language:experienceLanguage,questionWord:question?.questionWord,questionWordLabel:question?.questionWordLabel?.[experienceLanguage],allowObservationalPractice:true})===true;
+  const metadata={...meta,targetTokenId:meta.targetTokenIdsByLanguage?.[experienceLanguage]||meta.targetTokenId,alternativeTokenIds:meta.alternativeTokenIdsByLanguage?.[experienceLanguage]||meta.alternativeTokenIds};
+  return live.mount({document,experience:x,metadata,expectedSkill:question?.assessmentTarget?.skill,structure,language:experienceLanguage,questionWord:question?.questionWord,questionWordLabel:question?.questionWordLabel?.[experienceLanguage],speak:typeof speakText==="function"?speakText:null,allowObservationalPractice:true})===true;
 }
 function refreshThinkingMindAssessmentHighlight(){
   const source=window.SIYAYOVerbExplorerCanonicalSkillSource;
@@ -193,5 +193,6 @@ window.SIYAYOVerbExplorerExperienceRuntime=Object.freeze({
 });
 window.addEventListener("popstate",applyInitialRoute);
 loadVerbExplorer();
+
 
 
