@@ -18,7 +18,9 @@ const authorization={
 };
 let pending={status:'S2_ACTIVATION_PENDING',activationAuthorized:false,occurrenceId:'next-1',fromExperience:'shopping-for-dinner',toExperience:'preparing-dinner',authorization};
 const session={decision:{experienceId:'shopping-for-dinner'}};
+let synchronized=null;
 const root={
+  SIYAYOVerbExplorerExperienceRuntime:{adoptAssessmentPresentation(skill){synchronized=skill;}},
   document:doc,
   SIYAYOVerbExplorerPendingTransitionAuthority:{get:()=>pending,clear(id){assert.equal(id,'next-1');clears++;pending=null;return true;}},
   SIYAYOVerbExplorerAdaptiveStateBridge:{getState:()=>({currentExperienceId:location,experienceLanguage:language})},
@@ -51,6 +53,7 @@ assert.match(button.textContent,/COMEÇAR MEU PROGRESSO AQUI/);
 button.click();
 setImmediate(()=>{
   assert.equal(activations,1);
+  assert.equal(synchronized,"what.use.object-question");
   assert.equal(clears,1);
   assert.equal(button.hidden,true);
   assert.equal(note.hidden,true);

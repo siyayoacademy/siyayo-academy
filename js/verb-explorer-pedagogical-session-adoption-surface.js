@@ -143,7 +143,8 @@ function install(options){
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:ready.language});
         var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
-        if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
+        if(runtime&&typeof runtime.adoptAssessmentPresentation==='function')runtime.adoptAssessmentPresentation(result.skill);
+        else if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
       }).catch(function(){
         var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
         if(preparedTarget&&skills&&typeof skills.adopt==='function')skills.adopt(preparedTarget.previousDefinition);

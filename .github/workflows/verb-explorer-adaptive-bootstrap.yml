@@ -403,3 +403,6 @@ jobs:
 
       - name: Test independent Spanish CUÁL and CUÁLES extension
         run: node scripts/test-cual-cuales-extension.js
+
+      - name: Verify Experience preservation integration
+        run: node scripts/test-experience-preservation-integration.js

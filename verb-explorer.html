@@ -22,10 +22,17 @@
   <div class="experience-heading"><h2 id="experienceTitle">Shopping for a Nice Dinner</h2><p id="experienceSituation"></p></div>
   <div id="circumstanceStrip" class="circumstance-strip"></div>
   <section id="learnerIdentityPanel" class="learner-identity-panel" aria-label="Learner identity">
-    <label for="learnerIdentityInput">LEARNER · NAME OR NICKNAME</label>
-    <div class="learner-identity-controls">
-      <input id="learnerIdentityInput" type="text" maxlength="60" autocomplete="off" spellcheck="false" placeholder="Your name or nickname">
-      <button id="learnerIdentityConfirm" type="button">ENTER EXPERIENCE</button>
+    <div id="learnerIdentityEditor">
+      <label for="learnerIdentityInput">LEARNER · NAME OR NICKNAME</label>
+      <div class="learner-identity-controls">
+        <input id="learnerIdentityInput" type="text" maxlength="60" autocomplete="off" spellcheck="false" placeholder="Your name or nickname">
+        <button id="learnerIdentityConfirm" type="button">ENTER EXPERIENCE</button>
+        <button id="learnerIdentityCancel" type="button" hidden>Cancel</button>
+      </div>
+    </div>
+    <div id="learnerIdentityCompact" class="learner-identity-compact" hidden>
+      <strong id="learnerIdentityName"></strong>
+      <button id="learnerIdentityChange" type="button">Change learner</button>
     </div>
     <small id="learnerIdentityStatus" aria-live="polite">Choose the identity that will own this learning Session.</small>
   </section>
@@ -55,6 +62,7 @@
         <div id="contrastProbeOptions" class="contrast-probe-options" aria-label="Contrast probe alternatives"></div>
       </section>
       <div class="line-controls"><button id="lineUp" type="button" aria-label="Previous lines">↑</button><span>QUESTION · RESPONSE · FOLLOW-UP</span><button id="lineDown" type="button" aria-label="Next lines">↓</button></div>
+      <button id="previousExperience" class="previous-experience gear-option" type="button" hidden>Previous experience</button>
       <div class="toroidal-next"><span>🌀 NEXT?</span><strong id="nextPrompt"></strong><p id="nextAnswer"></p><small id="nextExperience"></small></div>
     </div>
   </div>

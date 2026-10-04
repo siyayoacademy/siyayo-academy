@@ -1172,3 +1172,18 @@ Extends the Spanish learning content; migrates only the authored WHICH Spanish d
 Tenemos dos quesos. ¿Cuál elegimos? is an independent corpus-declared pronoun comparison. Its correct/incorrect selections produce a learner/language/experience-owned observational trace only, with evidenceProduced:false and greenPass:false. It does not submit to the determiner Coordinator. No pronominal Green Pass contract is claimed or implemented.
 
 Regression expectations updated only for the explicitly approved ES realization. New CI test covers singular/plural labels, preserved WHAT qué, dependency tokens and pronominal pass/fail/invalid without Evidence or Green Pass. Visual homologation pending: ES Shopping CUÁL -> queso + canonical mild cheese -> Preparing CUÁLES -> zanahorias -> determiner Green Pass. Separately answer pronoun comparison; determiner counter must not change.
+
+
+## LIVE-30 — Restore homologated identity and synchronize adopted Experience presentation
+
+RESTORATION / EXTENSION, explicit GO 2026-10-03, base 1d4c7c5. Restore missing LIVE-18 HTML editor/compact/name/change/cancel elements and compact CSS. Identity authority unchanged: opening/canceling replacement and same nick preserve Session; only confirming a different nonempty nick calls the provider. Production HTML IDs are now checked by the existing compact test, before its controlled behavioral tests.
+
+After successful authorized Session adoption, select the destination corpus assessmentTarget matching the adopted skill and render the entire Experience. This is presentation only: no second target selection, Evidence, Session creation or router. Undeclared skills do not force another question.
+
+Extend strict Experience schema for approved pronounComparison, dependencyFocus.defaultFocusByLanguage and the existing assessmentResumeTarget. Keep additionalProperties:false. LIVE-29 remote corpus CI had failed on pronounComparison; the previous local Node-only test run did not include AJV and was insufficient for full CI homologation.
+
+Add an explicit previous-Experience control using the unique reverse edge of the existing canonical NEXT cycle and delegating to existing ExperienceNavigation.goToExperience. No new router, assessment selection, Green gating or automatic adoption. Existing QWord/language retention and browser history remain governed by current navigation. Reverse visit differs from historical rewind; no promise of restoring every exploratory UI field or erased feedback.
+
+Validation: strict AJV dinner/college schemas; real HTML compact anchor assertions; EN/ES/PT compact behavior; S2/S3 authorized adoption; reverse edges for all four dinner environments and missing destination; full workflow Node checks. Visual homologation remains required after confirmed deployment.
+
+OPEN: persistent diagnostic feedback through remount; cross-QWord retained-origin recovery at transfer destinations; full browser/device round-trip tests and legacy/ongoing retained state. Do not expand QWords before these are settled. The map's older ACTIVE heading describes its historical audit; latest implementation checkpoint is LIVE-30.

@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const productionHtml=fs.readFileSync('verb-explorer.html','utf8');
+for(const id of ['learnerIdentityPanel','learnerIdentityInput','learnerIdentityConfirm','learnerIdentityStatus','learnerIdentityEditor','learnerIdentityCompact','learnerIdentityName','learnerIdentityChange','learnerIdentityCancel']){
+ assert.equal((productionHtml.match(new RegExp('id="'+id+'"','g'))||[]).length,1,'production HTML must contain exactly one '+id);
+}
 const code=fs.readFileSync('js/verb-explorer-learner-identity-surface.js','utf8');
 function build(language){
  const nodes={},listeners={};let identity=null,session={progress:2},calls=0,renders=0,signals=0;
