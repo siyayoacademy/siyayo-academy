@@ -24,8 +24,12 @@ assert.ok(
 );
 
 assert.ok(
-  runtime.includes('if(route.experienceId)currentExperienceId=route.experienceId'),
-  'Back/Forward route application must restore the canonical Experience ID'
+  runtime.includes('route.experienceId&&route.experienceId!==currentExperienceId'),
+  'Back/Forward route application must detect a real Experience change'
+);
+assert.ok(
+  runtime.includes('rememberExperiencePresentation();currentExperienceId=route.experienceId;restoreExperiencePresentation(activeExperience(),selectedWord)'),
+  'Back/Forward navigation must preserve TORO presentation memory instead of inheriting the previous Experience UI'
 );
 
 assert.ok(
