@@ -15,7 +15,7 @@ let clicks=0,spoken=null,listener;
 const container={innerHTML:'',addEventListener(type,fn){listener=fn;}};
 const view={experienceId:'shopping-for-dinner',structureId:'shopping-what-en',language:'en',dimension:'head-identification',targetToken:{id:'what',form:'What',wordClass:'PRON'},prompt:'In “What are we going to cook?”, which verb does “What” connect to?',studyTarget:'WHAT',alternatives:[{id:'are',form:'are',wordClass:'AUX'},{id:'cook',form:'cook',wordClass:'VERB'}]};
 assert.equal(sandbox.SIYAYOAdaptiveDependencyHeadProbeBrowserWire.install(view,{container,learnerEvents:{fromDependencyHeadProbeSelect(){clicks++;return {}; }},onEvent(){clicks++;},speak(text,lang){spoken={text,lang};}}),true);
-assert.ok(container.innerHTML.includes('<br>'));assert.ok(container.innerHTML.includes('study-target-word'));assert.ok(!container.innerHTML.includes('study-target-word">which'));
+assert.ok(container.innerHTML.includes('<button type="button" class="dependency-probe-question-card" data-dependency-probe-audio'));assert.ok(!container.innerHTML.includes('<div class="dependency-probe-question-card"'));assert.ok(container.innerHTML.includes('<br>'));assert.ok(container.innerHTML.includes('study-target-word'));assert.ok(!container.innerHTML.includes('study-target-word">which'));
 listener({target:{closest(selector){return selector==='[data-dependency-probe-audio]'?{dataset:{dependencyProbeAudio:''}}:null;}}});
 assert.deepEqual(spoken,{text:view.prompt,lang:'en'});assert.equal(clicks,0);
 console.log('PASS: twelve grounded same-structure diagnostics; preserved WHICH EN/PT, aligned CUÁL ES; target, line break and speech without observed answer.');

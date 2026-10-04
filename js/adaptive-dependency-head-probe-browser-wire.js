@@ -62,8 +62,7 @@
     container.innerHTML=[
       '<section class="dependency-head-probe" aria-label="Dependency head check">',
       '<span class="dependency-probe-heading">',escapeHtml(({en:'DEPENDENCY HEAD PROBE',es:'DIAGNÓSTICO DE VÍNCULO',pt:'DIAGNÓSTICO DE LIGAÇÃO'})[view.language]),'</span>',
-      '<div class="dependency-probe-question-card"><p class="dependency-head-probe-prompt">',promptHtml(view),'</p>',
-      '<button type="button" class="dependency-probe-audio" data-dependency-probe-audio aria-label="',escapeHtml(({en:'Listen to the question',es:'Escuchar la pregunta',pt:'Ouvir a pergunta'})[view.language]),'"><span class="siyayo-speaker" aria-hidden="true"></span></button></div>',
+      '<button type="button" class="dependency-probe-question-card" data-dependency-probe-audio aria-label="',escapeHtml(({en:'Listen to the question',es:'Escuchar la pregunta',pt:'Ouvir a pergunta'})[view.language]),'"><span class="dependency-probe-audio siyayo-speaker" aria-hidden="true"></span><span class="dependency-head-probe-prompt">',promptHtml(view),'</span></button>',
       '<div class="dependency-head-probe-options">',
       view.alternatives.map(function(item){
         return [

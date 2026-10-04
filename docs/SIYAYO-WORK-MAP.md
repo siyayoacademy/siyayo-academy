@@ -1214,3 +1214,10 @@ GO: position the gold Speaker at the left of the diagnostic question, following 
 Question stays centered with authored line break and target highlighting. Audio remains its own keyboard-accessible 44px control; no answer, Evidence, Green Pass, identity or navigation contracts changed. Narrow screens reserve symmetric text padding.
 
 Validation: diagnostic corpus/presentation, browser wire, observation identity/language WAIT and live boundary tests. Visual homologation remains pending. The separate screenshot findings (Trail WHICH versus diagnostic WHAT; ES visit message on EN screen) remain open for investigation, not silently closed by this visual adjustment.
+
+
+## JAGUAR-LIVE-33 — Whole diagnostic question card speaks
+
+Explicit GO: follow the existing Lines QUESTION interaction, not just its Speaker placement. Entire diagnostic question card is now one native button: click, touch, Enter or Space reads the authored question in the current language. Speaker is a decorative gold indicator within that button; no nested button, duplicate speech or answer event. Hover glow retained; alternatives remain separate answer controls. No corpus, assessment or navigation changes.
+
+Parent 6858205 includes the other active thread's TORO browser Back/Forward fixes; preserved through the base tree. LIVE-32 was incomplete regarding whole-card speech; this entry closes that specific interaction gap. Validation: corpus/presentation, Browser Wire, live Head Probe and observation identity/language WAIT tests. User visual/audio homologation pending.

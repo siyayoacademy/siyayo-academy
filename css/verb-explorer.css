@@ -339,3 +339,9 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .dependency-probe-question-card .dependency-probe-audio:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:-2px}
 .dependency-probe-question-card .dependency-head-probe-prompt{width:auto;overflow-wrap:anywhere}
 @media(max-width:520px){.dependency-probe-question-card{padding:14px 44px}}
+
+/* LIVE-33: the complete question card is the native speech button, matching Lines. */
+button.dependency-probe-question-card{display:block;color:#eef4ff;font:inherit;text-align:center;cursor:pointer}
+button.dependency-probe-question-card .dependency-head-probe-prompt{display:block}
+button.dependency-probe-question-card .dependency-probe-audio.siyayo-speaker{left:16px;width:18px;height:18px;min-width:18px;border-radius:0;background:var(--siyayo-gold-primary);pointer-events:none}
+button.dependency-probe-question-card:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
