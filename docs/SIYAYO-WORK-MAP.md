@@ -1205,3 +1205,12 @@ OPEN from the broader audit: adoption invitation location after returning to ori
 Visual check: Shopping WHAT without nick -> heading/two-line question/gold speech; answer -> confirm nick -> compact below diagnostic; answer for this identity -> change LANGUAGE/QWord or visit/return -> same-scope feedback returns without duplicate contract count; other language/identity excludes it. Preparing WHAT/WHICH -> matching graph and diagnostic in EN/ES/PT. Shopping CUÁL -> queso head diagnostic, separate determiner Green circuit.
 
 Validation LIVE-31: strict AJV Dinner/College passed; 249 workflow Node checks passed after updating an older navigation test to include the production memory helpers and adapting ES diagnostic expectations to queso. Speech/target/two-line tests and remount tests verify no synthetic answer or duplicate observation. Browser/device visual and audio homologation remains pending; CI/deployment reported separately.
+
+
+## JAGUAR-LIVE-32 — Diagnostic Speaker and question-card alignment
+
+GO: position the gold Speaker at the left of the diagnostic question, following Lines / Possible Responses; apply the soft gold hover glow. Extension of LIVE-31 presentation only. Parent: 5e7db0f.
+
+Question stays centered with authored line break and target highlighting. Audio remains its own keyboard-accessible 44px control; no answer, Evidence, Green Pass, identity or navigation contracts changed. Narrow screens reserve symmetric text padding.
+
+Validation: diagnostic corpus/presentation, browser wire, observation identity/language WAIT and live boundary tests. Visual homologation remains pending. The separate screenshot findings (Trail WHICH versus diagnostic WHAT; ES visit message on EN screen) remain open for investigation, not silently closed by this visual adjustment.
