@@ -151,3 +151,24 @@ h1{margin:.2rem 0;font-size:clamp(1.7rem,4vw,3rem)}
     radial-gradient(circle at 50% 38%,rgba(215,179,90,.12),transparent 34%),
     linear-gradient(180deg,rgba(7,22,49,.44),rgba(3,11,26,.64));
 }
+
+
+/* W4 · Golden Frondosa local backdrop
+   Visual-only layer. Reuses the transparent Frondosa asset without changing
+   Journey state, Evidence, GREEN, Session authority or pointer behavior. */
+.layer-frondosa{
+  overflow:hidden;
+}
+
+.layer-frondosa::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:url("../piano/assets/frondosa-sombreira.svg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:86% auto;
+  opacity:.14;
+  filter:sepia(1) saturate(1.35) brightness(1.08);
+}
