@@ -2760,3 +2760,30 @@ h1 {
     transform:none;
   }
 }
+
+
+/* =========================================================
+   GOLDEN FRONDOSA COMPACT LOCAL TEST v0.1
+   Diagnostic local backdrop only. 80% visibility on purpose.
+   Never receives pointer events or pedagogical authority.
+   ========================================================= */
+.frondosa::before{
+  content:"";
+  position:absolute;
+  inset:0 1% 22px;
+  z-index:0;
+  pointer-events:none;
+  background-image:url("./assets/golden-frondosa-compact-test.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:86% auto;
+  opacity:.80;
+}
+
+.frondosa-visual{
+  z-index:1;
+}
+
+.frondosa-hotspots{
+  z-index:4;
+}
