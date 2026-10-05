@@ -4,6 +4,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root={Object,Promise};root.globalThis=root;
 function read(name){vm.runInNewContext(fs.readFileSync('js/'+name+'.js','utf8'),root);}
 read('verb-explorer-learner-identity-source');
+read('question-word-assessment-contract');
 const names=['AdaptiveReadinessTrigger','AdaptiveLiveStart','CanonicalSkillLoader','ThinkingMindAssessmentSelection','AdaptiveCoordinator','AdaptiveProfileSource','AdaptiveEvidenceProfileSource','CanonicalSkillSource','PendingTransitionAuthority'];
 const cleared=[];
 for(const name of names)root['SIYAYOVerbExplorer'+name]={clear(){cleared.push(name);}};
