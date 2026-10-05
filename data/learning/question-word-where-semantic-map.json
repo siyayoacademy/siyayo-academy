@@ -12,17 +12,32 @@
     "location": {
       "meaning": "Identify where an entity is found, placed or situated.",
       "languageForms": {
-        "en": ["where"],
-        "es": ["dónde"],
-        "pt": ["onde"]
+        "en": [
+          "where"
+        ],
+        "es": [
+          "dónde"
+        ],
+        "pt": [
+          "onde"
+        ]
       }
     },
     "destination": {
       "meaning": "Identify the endpoint or direction of movement.",
       "languageForms": {
-        "en": ["where"],
-        "es": ["adónde", "a dónde", "para dónde"],
-        "pt": ["aonde", "para onde"]
+        "en": [
+          "where"
+        ],
+        "es": [
+          "adónde",
+          "a dónde",
+          "para dónde"
+        ],
+        "pt": [
+          "aonde",
+          "para onde"
+        ]
       }
     }
   },
@@ -57,10 +72,15 @@
         "pt": "Onde devemos colocar os legumes?"
       },
       "expectedAnswerType": "location",
-      "groundedAnswerCandidate": null,
+      "groundedAnswerCandidate": {
+        "en": "on the plate",
+        "es": "en el plato",
+        "pt": "no prato"
+      },
       "localProofCandidate": false,
       "transferProofCandidate": true,
-      "gap": "No canonical answerGrounding, Dependency Focus or diagnostic structure is declared yet."
+      "groundingSource": "data/learning/nice-party-accessories.json#table-setting/plate",
+      "status": "presentation-grounded-no-assessment"
     },
     {
       "corpus": "college",
@@ -102,9 +122,7 @@
     ]
   },
   "requiredBeforeAssessment": [
-    "canonical answerGrounding for preparing-dinner WHERE in EN/ES/PT",
-    "Dependency Focus structures for Shopping and Preparing WHERE",
-    "observable diagnostic questions grounded in those structures",
+    "explicit reusable spatial answerGrounding contract for assessment, distinct from presentation-only dialogue",
     "explicit local versus transfer evidence modes",
     "canonical skill definition with Pass Contract",
     "assessmentTarget only after the above are approved"
