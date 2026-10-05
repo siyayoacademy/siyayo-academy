@@ -18,6 +18,18 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
+## Canonical inheritance rule — GOLD CONNECTION
+
+All active and future SIYAYO branches/pages must inherit the canonical GOLD CONNECTION adaptive-expansion DNA from `data/canonical/siyayo-development-map.json` and `docs/siyayo-canonical-development-map.md`.
+
+The project may expand toward encyclopedia-scale interactive corpus across verbs, adjectives, nouns, Question Words, other word types and Experiences. That expansion must preserve the staged authority chain:
+
+`corpus → capability → Thinking Mind opportunity → skill/Pass Contract → evidence chain → AssessmentScope dry-run → Contract Authority → explicit assessmentTarget → live assessment → WAIT/GREEN → TORO expansion`.
+
+Content abundance never implies assessment authority. No branch may create an independent mastery, score, progression, routing or Green authority merely because it introduces a new visual surface, archetype, corpus family or Experience.
+
+---
+
 # ACTIVE CHECKPOINT — JAGUAR-LIVE-41
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
