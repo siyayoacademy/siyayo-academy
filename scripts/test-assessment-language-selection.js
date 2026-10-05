@@ -166,6 +166,18 @@ async function run(){
   assert.equal(active.session,whichSessions[language]);
  }
  assert.equal(calls,whichBirths);
+ // Cross-QWord destination recovery: an explicitly selected resume-only QWord
+ // must recover its retained origin circuit even while another skill is active here.
+ const otherSkill='what.use.object-question';
+ const otherScope=Scope.create({learnerId:learner,skill:otherSkill,language:'en',originExperienceId:'preparing-dinner'});
+ active={session:{decision:{skill:otherSkill,experienceId:'preparing-dinner',assessmentScope:otherScope},trace:[{progress:'other QWord active'}]},
+  context:{assessmentScope:otherScope},profile:{id:learner}};
+ definition={id:otherSkill};
+ state={currentExperienceId:'preparing-dinner',experienceLanguage:'en'};
+ assert.equal(await selection.select(resumeWhich),true,'explicit WHICH must recover its Shopping circuit while another QWord is active');
+ assert.equal(active.session,whichSessions.en);
+ assert.equal(active.session.decision.experienceId,'shopping-for-dinner');
+ assert.equal(calls,whichBirths,'cross-QWord recovery must not create a destination Session');
  selection.clear();active=null;definition=null;
  assert.equal(await selection.select(resumeWhich),false,'no existing circuit stays WAIT');
  assert.equal(calls,whichBirths);
