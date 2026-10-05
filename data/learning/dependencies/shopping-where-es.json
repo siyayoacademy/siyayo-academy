@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-where-es",
+  "language": "es",
+  "sentence": "¿Dónde podemos encontrar el salmón?",
+  "tokens": [
+    {
+      "id": "where",
+      "index": 1,
+      "form": "Dónde",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": "Información espacial preguntada"
+        }
+      }
+    },
+    {
+      "id": "can",
+      "index": 2,
+      "form": "podemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR / MODAL"
+        },
+        "role": {
+          "es": "Portador modal"
+        }
+      }
+    },
+    {
+      "id": "find",
+      "index": 3,
+      "form": "encontrar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción de localización en la pregunta"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "el",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "ARTÍCULO / DETERMINANTE"
+        },
+        "role": {
+          "es": "Determina salmón"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 5,
+      "form": "salmón",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Elemento que se localiza"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "find",
+      "dependent": "where",
+      "relation": "advmod"
+    },
+    {
+      "head": "find",
+      "dependent": "can",
+      "relation": "aux"
+    },
+    {
+      "head": "find",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHERE question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "where",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. DÓNDE is modeled as spatial modifier of ENCONTRAR; no assessment claim."
+  }
+}
