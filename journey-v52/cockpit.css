@@ -14,8 +14,8 @@
 #v52-drawer .v52-group-note{padding:0 14px;margin:0 0 12px;color:#bfcbdc;font-size:11px;line-height:1.5}
 #v52-drawer .v52-group-body{display:grid;gap:12px;padding:0 10px 12px}
 #v52-drawer .v52-module{box-sizing:border-box;flex-wrap:wrap;gap:8px;align-items:center;border:1px solid #d4af372e!important;border-radius:9px!important;padding:10px!important;background:#ffffff03!important;font-size:11px!important;line-height:1.5!important;overflow-wrap:anywhere;box-shadow:none!important}
-#v52-drawer button,#v52-drawer select{box-sizing:border-box;min-height:42px!important;border:1px solid #d4af3780!important;border-radius:8px!important;padding:8px 10px!important;background:#0a2448!important;color:#f5df9b!important;font:600 11px system-ui!important;max-width:100%;cursor:pointer}
-#v52-drawer button.on,#v52-drawer button.active,#v52-drawer button[aria-pressed=true]{background:#e2c363!important;color:#071a39!important}
+#v52-drawer button,#v52-drawer select,#v52-drawer :is(#cameraLabBar,#v31,#stdnaBar,#dnaBar,#grip-calibrator,#skyDNAbar,#cloudDNAbar,#river-dna-panel,#v40TerrainPanel,#eagle-position-presets,#eagle-scale-presets) :is(button,select){box-sizing:border-box;min-height:42px!important;border:1px solid #d4af3780!important;border-radius:8px!important;padding:8px 10px!important;background:#0a2448!important;color:#f5df9b!important;font:600 11px system-ui!important;max-width:100%;cursor:pointer}
+#v52-drawer button.on,#v52-drawer button.active,#v52-drawer button[aria-pressed=true],#v52-drawer :is(#cameraLabBar,#v31,#stdnaBar,#dnaBar,#grip-calibrator,#skyDNAbar,#cloudDNAbar,#river-dna-panel,#v40TerrainPanel,#eagle-position-presets,#eagle-scale-presets) :is(button.on,button.active,button[aria-pressed=true]){background:#e2c363!important;color:#071a39!important}
 #v52-drawer select{width:100%!important;min-width:0!important}
 #v52-drawer button:focus-visible,#v52-tools-toggle:focus-visible,#v52-drawer summary:focus-visible{outline:2px solid #7ee4df;outline-offset:3px}
 #v52-drawer #v52-drawer-close{font-size:22px!important;min-width:44px}
@@ -31,3 +31,7 @@
 body:after{display:none!important}
 @media(max-width:600px){#v52-tools-toggle{font-size:11px;padding:8px 12px}#v52-drawer{width:min(360px,calc(100vw - 12px))}}
 @media(prefers-reduced-motion:reduce){#v52-drawer{transition:none}}
+#v52-drawer footer nav{display:flex;gap:8px}
+#v52-drawer footer nav button{flex:1}
+#v52-drawer footer p{margin:8px 0 0}
+#v52-drawer button:disabled{opacity:.45;cursor:default}

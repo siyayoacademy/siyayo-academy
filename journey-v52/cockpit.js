@@ -7,7 +7,6 @@
     const link = doc.createElement('link');
     link.rel = 'stylesheet';
     link.href = new URL('./cockpit.css', location.href).href;
-    doc.head.appendChild(link);
     const launcher = doc.createElement('button');
     launcher.id = 'v52-tools-toggle';
     launcher.type = 'button';
@@ -18,8 +17,13 @@
     drawer.id = 'v52-drawer';
     drawer.hidden = true;
     drawer.setAttribute('aria-label', 'Ferramentas da Jornada');
-    drawer.innerHTML = '<header><div><strong>JORNADA · FERRAMENTAS</strong><p id="v52-drawer-stage"></p></div><button type="button" id="v52-drawer-close" aria-label="Fechar ferramentas">×</button></header><div class="v52-drawer-scroll"></div><footer>Recolher preserva os ajustes · navegação na cena</footer>';
+    drawer.innerHTML = '<header><div><strong>JORNADA · FERRAMENTAS</strong><p id="v52-drawer-stage"></p></div><button type="button" id="v52-drawer-close" aria-label="Fechar ferramentas">×</button></header><div class="v52-drawer-scroll"></div><footer><nav aria-label="Navegação pelo painel"><button type="button" id="v52-drawer-prev">← Voltar etapa</button><button type="button" id="v52-drawer-next">Avançar etapa →</button></nav><p>Recolher preserva os ajustes</p></footer>';
     doc.body.append(launcher, drawer);
+    doc.body.appendChild(link);
+    const previous = scene.querySelector('.prev'), next = scene.querySelector('.next');
+    const drawerPrevious = doc.getElementById('v52-drawer-prev'), drawerNext = doc.getElementById('v52-drawer-next');
+    drawerPrevious.addEventListener('click', () => previous.click());
+    drawerNext.addEventListener('click', () => next.click());
     const scroll = drawer.querySelector('.v52-drawer-scroll');
     const sections = [];
     function group(title, subtitle) {
@@ -91,6 +95,8 @@
     function updateContext() {
       const state = ['state-w0','state-w1','state-w2','state-w3'].findIndex(name => scene.classList.contains(name));
       stage.textContent = 'ETAPA ' + (state + 1) + ' · W' + state;
+      drawerPrevious.disabled = previous.disabled;
+      drawerNext.disabled = next.disabled;
       presets.hidden = state !== 0;
       grip.hidden = state !== 1;
       context.textContent = state === 0 ? 'Presets disponíveis nesta etapa. CAL do Galho aparece em W1.' : state === 1 ? 'CAL do Galho disponível nesta etapa. Presets da Águia ficam em W0.' : 'Guias e âncoras disponíveis. Presets W0 e CAL W1 ficam nas suas etapas.';
