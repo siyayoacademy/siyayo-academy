@@ -237,6 +237,10 @@ jobs:
         run: node scripts/test-verb-explorer-thinking-mind-trilanguage.js
       - name: Test SVG Dependency Connector View
         run: node scripts/test-adaptive-dependency-connector-view.js
+      - name: Test QWord capability versus assessment contract
+        run: |
+          node --check js/question-word-assessment-contract.js
+          node scripts/test-question-word-assessment-contract.js
       - name: Test explicit Thinking Mind assessment Target selection
         run: node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
       - name: Test Dependency Head Probe definition
