@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-why-pt",
+  "language": "pt",
+  "sentence": "Por que você gosta desta conversa?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Por que",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO INTERROGATIVO"
+        },
+        "role": {
+          "pt": "Razão sobre a qual se pergunta"
+        }
+      }
+    },
+    {
+      "id": "you",
+      "index": 2,
+      "form": "você",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Sujeito"
+        }
+      }
+    },
+    {
+      "id": "enjoy",
+      "index": 3,
+      "form": "gosta",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação principal à qual POR QUE se liga"
+        }
+      }
+    },
+    {
+      "id": "this",
+      "index": 4,
+      "form": "desta",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE / CONTRAÇÃO PREPOSICIONAL"
+        },
+        "role": {
+          "pt": "Introduz e determina conversa no complemento de gostar"
+        }
+      }
+    },
+    {
+      "id": "conversation",
+      "index": 5,
+      "form": "conversa",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Complemento preposicionado de gostar"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "enjoy",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "enjoy",
+      "dependent": "you",
+      "relation": "nsubj"
+    },
+    {
+      "head": "enjoy",
+      "dependent": "conversation",
+      "relation": "obl"
+    },
+    {
+      "head": "conversation",
+      "dependent": "this",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical pt WHY transfer question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "why",
+    "field": "thinkingMind.question",
+    "notes": "Referência explícita do corpus. POR QUE modifica GOSTA; o complemento 'desta conversa' é preservado como complemento preposicionado, sem forçar equivalência com objeto direto de EN/ES. Sem afirmação avaliativa."
+  }
+}
