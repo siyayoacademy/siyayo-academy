@@ -1250,3 +1250,34 @@ Validation: diagnostic corpus/presentation, browser wire, observation identity/l
 Explicit GO: follow the existing Lines QUESTION interaction, not just its Speaker placement. Entire diagnostic question card is now one native button: click, touch, Enter or Space reads the authored question in the current language. Speaker is a decorative gold indicator within that button; no nested button, duplicate speech or answer event. Hover glow retained; alternatives remain separate answer controls. No corpus, assessment or navigation changes.
 
 Parent 6858205 includes the other active thread's TORO browser Back/Forward fixes; preserved through the base tree. LIVE-32 was incomplete regarding whole-card speech; this entry closes that specific interaction gap. Validation: corpus/presentation, Browser Wire, live Head Probe and observation identity/language WAIT tests. User visual/audio homologation pending.
+
+---
+
+## JOURNEY-V52-CHECKUP-20261005 — Golden Seed / cenário recuperado
+
+**Recorded:** 2026-10-05 (America/Sao_Paulo).  
+**Line:** `journey-v51-network-preview`; separate from the active pedagogical runtime checkpoint.  
+**Change kind:** AUDIT / ISOLATED PREVIEW REPAIR.  
+**Status:** recovery, checkup and V52 camera/CAL repairs completed; TERRAIN visual implementation remains OPEN. This closes the audit/repair phase, not autonomous terrain functionality.
+
+- V51 preserved baseline: `32d43cc98e9fc950e2ac339fc0b94abfa5fdf0dd`.
+- V52 keyboard guard and panorama Stage 4 scope: `25f221ec2bf2e271c5d42deafc9b2c10635911d6`.
+- V52 startup and relative W1 Galho CAL repair: `f5b7b3057191509782755f3b94ac03cab018f3e4`.
+- Preview: https://journey-v51-network-preview.siyayo-academy.pages.dev/journey-v52/
+- V52 fetches preserved V51 into a same-origin srcdoc frame, deferring only V36/V37 camera initializers to DOMContentLoaded; original portable file/assets unchanged.
+- CAL composes relative X/Y/rotation/scale while W1 calibration is open. Defaults and RESET preserve the approved baseline; existing state transitions remain.
+- Browser verification: Chrome desktop 1363×936, W0→W3; range arrows adjust controls without navigation; camera/sky/cloud transforms respond; original MutationObserver startup exception not reproduced after repair. Galho rectangle changed from x=379.1796875, y=523.9921875, width=245.328125 to x=389.6287536621094, y=530.0252685546875, width=251.68997192382812 after sample X/Y/scale/rotation; RESET restored the exact initial rectangle.
+- Preprocessing test preserved embedded image strings and syntax; keyboard regression passed. Cloudflare deployment succeeded at repair commit. User confirmed index/V52 functioning before repairs and acknowledged the repaired preview afterward; this is not independent mobile homologation.
+
+### TERRAIN and image-layer finding
+
+Panorama combines forest, castle, mountains and painted river into one JPEG; no independent terrain image was located in V51. TERRAIN toggle/state computes five transform variables with no CSS consumers. ON/readout is not proof of visual transformation. RIVER is a separate procedural SVG overlay; camera/sky/cloud layers already have their own response. Do not transform the full panorama and call that independent terrain implementation without a declared layer decision.
+
+### OPEN / NEXT GO
+
+1. Define the real terrain layer and approved visual/camera response; then wire and test actual transforms.
+2. Validate portrait/landscape and W3 resize/anchor continuity before shared Auto/Portrait/Landscape integration.
+3. Confirm COPY permissions/behavior, swipe/wheel, remaining camera combinations and mobile memory/FPS.
+4. White rectangle was not reproduced; keep cause open. Toro/Patita names were not located in V51 HTML; project-wide availability remains unaudited.
+
+Resume from this checkpoint when Journey work is requested. Preserve V51, approved actor geometry, Piano and canonical assessment authorities. Animation/visual movement produces no learner Evidence or Green Pass. This entry does not replace the runtime's ACTIVE CHECKPOINT / NEXT GO.

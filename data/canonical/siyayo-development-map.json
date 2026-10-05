@@ -103,6 +103,47 @@
       ],
       "frondosaAsset": "piano/assets/frondosa-sombreira.svg",
       "note": "Motion DNA reserves golden-seed, golden-eagle, frondosa, leaf, branch, jaguar and patita. The current Piano runtime does not yet implement the full swipe journey."
+    },
+    "checkupCheckpoint": {
+      "id": "JOURNEY-V52-CHECKUP-20261005",
+      "recordedAt": "2026-10-05",
+      "timezone": "America/Sao_Paulo",
+      "status": "audit-and-v52-repairs-completed-terrain-visual-pending",
+      "branch": "journey-v51-network-preview",
+      "preservedV51Commit": "32d43cc98e9fc950e2ac339fc0b94abfa5fdf0dd",
+      "controlsCommit": "25f221ec2bf2e271c5d42deafc9b2c10635911d6",
+      "repairCommit": "f5b7b3057191509782755f3b94ac03cab018f3e4",
+      "previewUrl": "https://journey-v51-network-preview.siyayo-academy.pages.dev/journey-v52/",
+      "completed": [
+        "online-v51-recovery-and-preservation",
+        "image-actor-function-audit",
+        "v52-keyboard-control-guard",
+        "stage-4-panorama-camera-scope",
+        "defer-v36-v37-camera-initializers-until-dom-ready",
+        "relative-w1-branch-calibration-with-exact-reset"
+      ],
+      "verification": {
+        "deployment": "Cloudflare Pages success at repairCommit",
+        "browser": "Chrome desktop 1363x936; W0-W3 exercised; no reproduced MutationObserver startup exception after fix; branch X/Y/scale/rotation changed transform; RESET restored original measured rectangle",
+        "user": "User confirmed index and V52 functioning before camera/CAL repairs; later acknowledged repaired preview",
+        "embeddedImages": "Preprocessing comparison preserves embedded image strings",
+        "mobile": "not-homologated"
+      },
+      "terrain": {
+        "status": "audited-visual-connection-pending",
+        "reason": "Toggle and diagnostic calculations exist; five v40-terrain transform variables lack CSS consumers; no autonomous terrain asset found in V51",
+        "implementationCompleted": false
+      },
+      "open": [
+        "terrain-visual-layer-and-transform-connection",
+        "portrait-landscape-auto-viewport-validation",
+        "w3-resize-anchor-continuity",
+        "clipboard-copy-environment-validation",
+        "swipe-wheel-and-mobile-performance",
+        "remaining-camera-preset-combinations"
+      ],
+      "nextGo": "Define the actual terrain layer and its camera response before wiring transforms; preserve V51 baseline and approved actor geometry; then validate orientation and anchors. No further implementation requested in this checkpoint.",
+      "authority": "Visual audit/calibration only; animation is not pedagogical evidence; no assessment or navigation authority changed."
     }
   },
   "nextPass": "corpus-experience-capability-mapping",
