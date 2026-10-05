@@ -3,6 +3,7 @@
 // Session plus an explicit learner response can submit to the canonical Cycle.
 (function(root){
 'use strict';
+var feedbackMemory=Object.create(null);
 function id(value){return typeof value==='string'?value.trim():'';}
 function panel(doc){
   if(!doc||typeof doc.getElementById!=='function')return null;
@@ -46,6 +47,7 @@ function mount(input){
   if(typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function')return false;
   if(typeof skills.getDefinition!=='function'||typeof catalog.getExperience!=='function')return false;
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
+  var feedbackKey=decision&&decision.assessmentScope?decision.assessmentScope.key+'|'+id(experience.id):'';
   var definition=skills.getDefinition();
   if(!decision||id(decision.skill)!=='which.use.determiner'||id(definition&&definition.id)!==id(decision.skill))return false;
   if(decision.assessmentScope&&decision.assessmentScope.language!==language)return false;
@@ -97,6 +99,7 @@ function mount(input){
           ?(language==='es'?'Respuesta registrada · evaluación en curso':language==='pt'?'Resposta registrada · avaliação em andamento':'Response recorded · assessment in progress')
           :(language==='es'?'Prueba otra palabra':language==='pt'?'Tente outra palavra':'Try another word');
       feedback.hidden=false;
+      if(feedbackKey)feedbackMemory[feedbackKey]=Object.freeze({text:feedback.textContent});
       var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
       var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
@@ -115,6 +118,8 @@ function mount(input){
   var title=typeof el.querySelector==='function'?el.querySelector('h3'):null;
   if(title)title.textContent=language==='es'?(transfer?'CUÁLES · USO DEL DETERMINANTE':'CUÁL · USO DEL DETERMINANTE'):language==='pt'?'QUAL · USO DO DETERMINANTE':'WHICH · DETERMINER USE';
   el.dataset.assessmentMode=transfer?'transfer':'local';
+  var savedFeedback=feedbackKey&&feedbackMemory[feedbackKey];
+  if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
   return true;
 }
 root.SIYAYOVerbExplorerDeterminerUseAssessmentLive=Object.freeze({mount:mount,hide:hide});
