@@ -23,7 +23,8 @@ const preparing=dinner.find(x=>x.id==='preparing-dinner').thinkingMind.find(q=>q
 const going=college.find(x=>x.id==='going-to-college').thinkingMind.find(q=>q.questionWord==='where');
 assert.ok(shopping.dialogueForms,'Shopping WHERE is the current dialogue reference');
 assert.ok(preparing.dialogueForms,'Preparing WHERE now has grounded EN/ES/PT dialogueForms');
-assert.equal(shopping.dependencyFocus,undefined,'Shopping WHERE dependency DNA remains a later grounding step');
+assert.deepEqual(shopping.dependencyFocus.structureIds,{en:'shopping-where-en',es:'shopping-where-es',pt:'shopping-where-pt'});
+assert.equal(shopping.dependencyFocus.defaultFocus,'find');
 assert.deepEqual(preparing.dependencyFocus.structureIds,{en:'preparing-where-en',es:'preparing-where-es',pt:'preparing-where-pt'});
 assert.equal(preparing.dependencyFocus.defaultFocus,'put');
 assert.equal(preparing.dependencyHeadProbe.targetTokenId,'where');
