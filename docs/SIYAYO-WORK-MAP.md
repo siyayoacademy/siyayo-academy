@@ -30,7 +30,49 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-41
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-42
+
+**Recorded:** 2026-10-05 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+
+**Base HEAD:** `e78931240555213df0abdfcce1d3db8d79a30212`
+
+**Change kind:** EXTENSION — isolated WHERE Contract Authority policy admission.
+
+**Status:** local contract checks passed; remote CI must be verified on the published commit. Browser/UI homologation remains WAIT.
+
+## DONE — authority policy and permanent regression coverage
+
+- Added only `where.use.location-question` to the canonical Node policy in `data/learning/green-pass-authority.json` and the browser policy in `js/green-pass-authority-policy.js`.
+- Existing WHICH, WHAT and WHY admission and the legacy fallback are preserved.
+- Added `scripts/test-where-authority-admission.js` and an explicit Verb Explorer Adaptive Bootstrap CI step.
+- The test exercises both default Cycle policies without injecting `greenPassAuthority` or a replacement policy, plus the explicit Leaf Target -> canonical loader -> Skill Source boundary.
+- Six scoped circuits cover Node and browser-mode VM execution in EN/ES/PT using the real WHERE Specification -> Result -> Evidence -> Attempt chain.
+- `1/3` and `2/3` remain `WAITING_FOR_EVIDENCE`; repeated local evidence cannot substitute for transfer. `3/3` makes the hypothetical contract eligible while `advanceSelection` remains null and the origin Session/Decision remains Shopping.
+- Foreign learner, skill, language, origin scope and prior packets are rejected before a trace entry is recorded.
+- Existing WHERE contract/evidence/scope, QWord target, Leaf/Skill loader, generic Cycle and Shopping/Preparing grounding regressions passed locally: 12 existing scripts plus the new admission script.
+- Four deliberate regressions were detected in temporary copies: omitted Node admission, omitted browser admission, missing explicit-contract requirement and automatic NEXT on eligibility.
+
+## WAIT / PERAÍ — policy admission is not live homologation
+
+- WHERE stays `isolated-candidate`; the spatial content map remains `assessmentAuthority: false`.
+- Shopping and Preparing WHERE still have no `assessmentTarget` or `assessmentResumeTarget`; selecting exploratory WHERE cannot invoke the assessment provider.
+- Live TransferAttemptAuthority still rejects WHERE. The `3/3` circuit above directly exercises the evaluator with synthetic scoped Attempts; it does not pass through or authorize the live transfer boundary.
+- The observed-attempt recorder used by Patita also needs explicit WHERE transfer support before that transfer can become a legitimate longitudinal footprint.
+- Successful tests or deployment alone do not establish a real learner response, a visible WHERE assessment panel or browser/UI homologation.
+
+## NEXT GO
+
+After verifying CI for the published admission commit, audit and implement the smallest WHERE transfer admission across TransferAttemptAuthority and the observed-attempt recorder. Validate origin Shopping -> visited Preparing, learner/skill/language ownership, exact occurrence, duplicate recording and closure retention. Keep explicit Shopping assessmentTarget and its Specification Source adaptation as the following boundary, then consider the live WHERE panel.
+
+## PARALLEL
+
+Gold Seed / Journey visual research remains a separate workstream. Patita's future visual markers must project the canonical observed history and must not create competence or Green authority.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-41
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
