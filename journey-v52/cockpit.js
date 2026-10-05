@@ -39,6 +39,12 @@
     }
     const camera = group('Câmera', 'Panorama na etapa 4 · controles e profundidade');
     const layers = group('Camadas', 'Céu, nuvens, rio e malha TERRAIN de teste');
+    const study = doc.createElement('a');
+    study.href = new URL('./descent.html', location.href).href;
+    study.target = '_top';
+    study.textContent = 'Abrir estudo da descida · artes 001–005';
+    study.style.cssText = 'color:#f5df9b;padding:14px;display:block';
+    layers.appendChild(study);
     const calibration = group('Calibração', 'Guias, âncoras e ajustes específicos de cada etapa');
     const information = group('Informações', 'Geometrias, estados e contrato DNA');
     function neutralize(element) {

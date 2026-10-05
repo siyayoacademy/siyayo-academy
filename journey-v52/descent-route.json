@@ -1,0 +1,61 @@
+{
+  "version": "0.1-study",
+  "frames": [
+    {
+      "id": "JGS-ART-001",
+      "title": "Frondosa à distância",
+      "asset": "./assets/jgs-art-001.webp",
+      "zoomStart": 1.04,
+      "zoomEnd": 1.16,
+      "roll": 0,
+      "seedX": 50,
+      "seedY": 40,
+      "windRoll": 0
+    },
+    {
+      "id": "JGS-ART-002",
+      "title": "Vista sobre a copa",
+      "asset": "./assets/jgs-art-002.webp",
+      "zoomStart": 1.04,
+      "zoomEnd": 1.16,
+      "roll": 1,
+      "seedX": 52,
+      "seedY": 43,
+      "windRoll": 9
+    },
+    {
+      "id": "JGS-ART-003",
+      "title": "Abertura entre as folhas",
+      "asset": "./assets/jgs-art-003.webp",
+      "zoomStart": 1.04,
+      "zoomEnd": 1.16,
+      "roll": -1,
+      "seedX": 46,
+      "seedY": 46,
+      "windRoll": -10
+    },
+    {
+      "id": "JGS-ART-004",
+      "title": "Descida junto ao tronco",
+      "asset": "./assets/jgs-art-004.webp",
+      "zoomStart": 1.04,
+      "zoomEnd": 1.16,
+      "roll": 1,
+      "seedX": 55,
+      "seedY": 48,
+      "windRoll": 7
+    },
+    {
+      "id": "JGS-ART-005",
+      "title": "Raízes e trilha",
+      "asset": "./assets/jgs-art-005.webp",
+      "zoomStart": 1.04,
+      "zoomEnd": 1.1,
+      "roll": 0,
+      "seedX": 50,
+      "seedY": 59,
+      "windRoll": 0
+    }
+  ],
+  "authority": "Presentation only; no evidence or portal routing."
+}
