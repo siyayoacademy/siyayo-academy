@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-where-en",
+  "language": "en",
+  "sentence": "Where should we put the vegetables?",
+  "tokens": [
+    {
+      "id": "where",
+      "index": 1,
+      "form": "Where",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Spatial information being asked about"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 2,
+      "form": "should",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Modal carrier"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject"
+        }
+      }
+    },
+    {
+      "id": "put",
+      "index": 4,
+      "form": "put",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Placement action in the question"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 5,
+      "form": "the",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "ARTICLE / DETERMINER"
+        },
+        "role": {
+          "en": "Determines vegetables"
+        }
+      }
+    },
+    {
+      "id": "vegetables",
+      "index": 6,
+      "form": "vegetables",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Thing being placed"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "put",
+      "dependent": "where",
+      "relation": "advmod"
+    },
+    {
+      "head": "put",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "put",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "put",
+      "dependent": "vegetables",
+      "relation": "obj"
+    },
+    {
+      "head": "vegetables",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHERE question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "where",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. WHERE is modeled as spatial modifier of PUT; no assessment claim."
+  }
+}
