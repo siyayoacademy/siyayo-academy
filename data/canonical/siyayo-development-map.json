@@ -159,7 +159,9 @@
           "camera": "High aerial oblique; tree height and trunk visible",
           "composition": "Central monumental tree, surrounding forest and river, castle in upper-right corner",
           "sequenceRole": "Candidate establishing descent view; narrative slot not fixed",
-          "actorsEmbedded": false
+          "actorsEmbedded": false,
+          "deliveryAsset": "journey-v52/assets/jgs-art-001.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
         },
         {
           "id": "JGS-ART-002",
@@ -170,7 +172,9 @@
           "sequenceRole": "Candidate downward canopy approach; narrative slot not fixed",
           "actorsEmbedded": false,
           "source": "Conversation-generated image, 2026-10-05; exec-5bc18360-7ae2-4875-b906-22125155432c.png",
-          "verification": "Near-nadir overhead study generated; exact optical 90-degree projection not geometrically calibrated. Not yet approved or integrated."
+          "verification": "Near-nadir overhead study generated; exact optical 90-degree projection not geometrically calibrated. Not yet approved or integrated.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-002.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
         },
         {
           "id": "JGS-ART-003",
@@ -180,7 +184,9 @@
           "camera": "Closer overhead crown; central gap and larger foreground leaves",
           "sequenceRole": "Approach canopy",
           "actorsEmbedded": false,
-          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation."
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-003.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
         },
         {
           "id": "JGS-ART-004",
@@ -190,7 +196,9 @@
           "camera": "Descending steep view alongside trunk; branch tiers and roots below",
           "sequenceRole": "Pass canopy toward trunk",
           "actorsEmbedded": false,
-          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation."
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-004.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
         },
         {
           "id": "JGS-ART-005",
@@ -200,7 +208,9 @@
           "camera": "Low oblique roots/trail view; river at right, warm distant clearing",
           "sequenceRole": "Ground arrival and trail toward Patita/Nice Party",
           "actorsEmbedded": false,
-          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation."
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-005.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
         }
       ],
       "motionIntent": {
@@ -212,6 +222,23 @@
         "destination": "Patita encounter and Nice Party / Piano Stage",
         "limitation": "Single raster supports initial camera approximation only; passing between branches requires layered assets or spatial scene geometry",
         "authority": "Concept proposal only; no portal navigation or pedagogical evidence authority implemented"
+      },
+      "previewImplementation": {
+        "status": "published-study",
+        "branch": "journey-v51-network-preview",
+        "commit": "c238c41c5c6472bc71787aee511e8479c4dd1b08",
+        "entry": "journey-v52/descent.html",
+        "previewUrl": "https://journey-v51-network-preview.siyayo-academy.pages.dev/journey-v52/descent",
+        "route": "journey-v52/descent-route.json",
+        "responsive": "Unchanged shared Piano responsive files; desktop portrait 430px, landscape 844x390 verified",
+        "rendering": "Crossfading/zooming raster plates plus separate original seed; manual advance and WAIT; native image drag disabled for pointer swipe",
+        "validation": "Desktop five views, WAIT, previous/next, keyboard, orientation modes observed; corrected swipe live verification pending; physical mobile not homologated",
+        "open": [
+          "foreground-leaf-branch-occlusion",
+          "calibrated-camera-pitch",
+          "Patita-and-Nice-Party-scene",
+          "physical-mobile-validation"
+        ]
       }
     }
   },
