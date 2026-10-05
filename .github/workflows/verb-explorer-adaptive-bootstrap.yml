@@ -241,6 +241,8 @@ jobs:
         run: |
           node --check js/question-word-assessment-contract.js
           node scripts/test-question-word-assessment-contract.js
+      - name: Test WHERE semantic study map
+        run: node scripts/test-question-word-where-semantic-map.js
       - name: Test explicit Thinking Mind assessment Target selection
         run: node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
       - name: Test Dependency Head Probe definition
