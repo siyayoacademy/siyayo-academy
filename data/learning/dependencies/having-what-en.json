@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "having-what-en",
+  "language": "en",
+  "sentence": "What are we eating first?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "What",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Object being asked about"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "are",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Progressive auxiliary"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject"
+        }
+      }
+    },
+    {
+      "id": "eat",
+      "index": 4,
+      "form": "eating",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Action in the question"
+        }
+      }
+    },
+    {
+      "id": "first",
+      "index": 5,
+      "form": "first",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Order in the action"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "eat",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "eat",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "eat",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "eat",
+      "dependent": "first",
+      "relation": "advmod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHAT transfer question",
+    "experienceId": "having-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. WHAT is the object of EATING; no assessment claim."
+  }
+}
