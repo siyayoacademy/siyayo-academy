@@ -75,7 +75,7 @@ function load(options={}){
       signal(){if(learner&&root.SIYAYOLeafAssessmentTargetAuthority.getTarget()){starts++;return true;}return false;}
     };
     const api=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
-    const what={assessmentTarget:{skill:'what.use.object-question',definitionPath:'what.json'}};
+    const what={questionWord:'what',assessmentTarget:{skill:'what.use.object-question',definitionPath:'what.json'}};
     await api.select(what);
     assert.equal(root.SIYAYOLeafAssessmentTargetAuthority.getSkill(),'what.use.object-question');
     await api.select({questionWord:'which'});
