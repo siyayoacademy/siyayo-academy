@@ -401,6 +401,44 @@
                 }
               }
             }
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "shopping-where-en",
+              "es": "shopping-where-es",
+              "pt": "shopping-where-pt"
+            },
+            "defaultFocus": "find"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "shopping-where-en",
+              "es": "shopping-where-es",
+              "pt": "shopping-where-pt"
+            },
+            "targetTokenId": "where",
+            "prompt": {
+              "en": "In “Where can we find the salmon?”, which verb does “Where” connect to?",
+              "es": "En «¿Dónde podemos encontrar el salmón?», ¿a qué verbo se vincula «Dónde»?",
+              "pt": "Em “Onde podemos encontrar o salmão?”, a qual verbo “Onde” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "can",
+                "find",
+                "salmon"
+              ],
+              "es": [
+                "can",
+                "find",
+                "salmon"
+              ],
+              "pt": [
+                "can",
+                "find",
+                "salmon"
+              ]
+            }
           }
         },
         {
