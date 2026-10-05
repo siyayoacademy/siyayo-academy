@@ -125,6 +125,7 @@
       if (event.key === 'Escape' && open) { event.preventDefault(); event.stopPropagation(); setOpen(false); }
     }, true);
     doc.addEventListener('click', event => {
+      if (!event.isTrusted) return;
       if (open && !drawer.contains(event.target) && !launcher.contains(event.target)) setOpen(false, false);
     });
   });
