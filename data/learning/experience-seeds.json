@@ -1612,6 +1612,44 @@
             "en": "WHAT",
             "es": "QUÉ",
             "pt": "O QUE"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "having-what-en",
+              "es": "having-what-es",
+              "pt": "having-what-pt"
+            },
+            "defaultFocus": "eat"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "having-what-en",
+              "es": "having-what-es",
+              "pt": "having-what-pt"
+            },
+            "targetTokenId": "what",
+            "prompt": {
+              "en": "In “What are we eating first?”, which verb does “What” connect to?",
+              "es": "En «¿Qué estamos comiendo primero?», ¿a qué verbo se vincula «Qué»?",
+              "pt": "Em “O que estamos comendo primeiro?”, a qual verbo “O que” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "are",
+                "eat",
+                "first"
+              ],
+              "es": [
+                "are",
+                "eat",
+                "first"
+              ],
+              "pt": [
+                "are",
+                "eat",
+                "first"
+              ]
+            }
           }
         },
         {
