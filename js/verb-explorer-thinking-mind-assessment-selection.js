@@ -68,12 +68,13 @@ function select(question,options){
   var provider=options.provider||root.SIYAYOLeafAssessmentTargetProvider;
   if(!question||typeof question!=='object')return Promise.resolve(false);
 
-  var resumeOnly=!question.assessmentTarget&&!!question.assessmentResumeTarget;
-  var declared=question.assessmentTarget||question.assessmentResumeTarget;
-  if(!declared||typeof declared!=='object')return Promise.resolve(false);
-
-  var skill=text(declared.skill);
-  var definitionPath=text(declared.definitionPath);
+  var contractApi=root.SIYAYOQuestionWordAssessmentContract;
+  var target=contractApi&&typeof contractApi.targetForSelection==='function'
+    ?contractApi.targetForSelection(question,null):null;
+  if(!target)return Promise.resolve(false);
+  var resumeOnly=target.resumeOnly===true;
+  var skill=text(target.skill);
+  var definitionPath=text(target.definitionPath);
   if(!skill||!definitionPath)return Promise.resolve(false);
   if(!provider||typeof provider.select!=='function')return Promise.resolve(false);
 
