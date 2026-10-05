@@ -215,6 +215,8 @@ jobs:
 
       - name: Run Nice Party semantic coherence tests
         run: node scripts/test-nice-party-coherence.js
+      - name: Test GOLD CONNECTION development DNA
+        run: node scripts/test-gold-connection-development-dna.js
 
       - name: Run Nice Party accessory and social identity tests
         run: node scripts/test-nice-party-accessories.js
