@@ -27,7 +27,9 @@
     'finite-carrier': { verbs: ['do', 'be', 'have'], perspectives: ['debating'], questionWords: ['when', 'why', 'which'] },
     'auxiliary-chain': { verbs: ['be', 'have'], perspectives: ['narrating'], questionWords: ['how', 'what'] },
     'verb-function': { verbs: [], perspectives: ['describing', 'narrating'], questionWords: ['what', 'how'] },
-    'which.use.determiner': { verbs: ['choose'], perspectives: ['debating'], questionWords: ['which'] }
+    'which.use.determiner': { verbs: ['choose'], perspectives: ['debating'], questionWords: ['which'] },
+    'what.use.object-question': { verbs: [], perspectives: [], questionWords: ['what'] },
+    'why.use.contextual-reason': { verbs: [], perspectives: [], questionWords: ['why'] }
   };
   Object.entries(questionWordSkillSignals).forEach(([skill, questionWord]) => {
     if (!skillSignals[skill]) skillSignals[skill] = { verbs: [], perspectives: [], questionWords: [questionWord] };
