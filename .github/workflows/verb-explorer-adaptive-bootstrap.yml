@@ -247,6 +247,8 @@ jobs:
         run: node scripts/test-preparing-where-grounding.js
       - name: Test Shopping and Preparing WHERE grounding
         run: node scripts/test-shopping-where-grounding.js
+      - name: Test isolated WHERE Pass Contract
+        run: node scripts/test-where-location-pass-contract.js
       - name: Test explicit Thinking Mind assessment Target selection
         run: node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
       - name: Test Dependency Head Probe definition
