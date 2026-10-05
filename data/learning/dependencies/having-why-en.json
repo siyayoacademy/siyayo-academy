@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "having-why-en",
+  "language": "en",
+  "sentence": "Why is this dinner special?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Why",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Reason information being asked about"
+        }
+      }
+    },
+    {
+      "id": "is",
+      "index": 2,
+      "form": "is",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB / COPULA"
+        },
+        "role": {
+          "en": "Copular link"
+        }
+      }
+    },
+    {
+      "id": "this",
+      "index": 3,
+      "form": "this",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Determines dinner"
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 4,
+      "form": "dinner",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Subject of the description"
+        }
+      }
+    },
+    {
+      "id": "special",
+      "index": 5,
+      "form": "special",
+      "wordClass": "ADJ",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADJECTIVE"
+        },
+        "role": {
+          "en": "Predicative quality WHY connects to"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "special",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "special",
+      "dependent": "is",
+      "relation": "cop"
+    },
+    {
+      "head": "special",
+      "dependent": "dinner",
+      "relation": "nsubj"
+    },
+    {
+      "head": "dinner",
+      "dependent": "this",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHY question",
+    "experienceId": "having-dinner",
+    "questionWord": "why",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. WHY is modeled as a reason modifier of the predicative adjective SPECIAL; no assessment claim."
+  }
+}
