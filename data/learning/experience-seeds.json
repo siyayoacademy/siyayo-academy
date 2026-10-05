@@ -1906,6 +1906,43 @@
             "en": "WHY",
             "es": "POR QUÉ",
             "pt": "POR QUE"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "after-dinner-why-en",
+              "es": "after-dinner-why-es",
+              "pt": "after-dinner-why-pt"
+            },
+            "defaultFocus": "enjoy"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "after-dinner-why-en",
+              "es": "after-dinner-why-es",
+              "pt": "after-dinner-why-pt"
+            },
+            "targetTokenId": "why",
+            "prompt": {
+              "en": "In “Why do you enjoy this conversation?”, which verb does “Why” connect to?",
+              "es": "En «¿Por qué disfrutas esta conversación?», ¿a qué verbo se vincula «Por qué»?",
+              "pt": "Em “Por que você gosta desta conversa?”, a qual verbo “Por que” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "do",
+                "enjoy",
+                "conversation"
+              ],
+              "es": [
+                "enjoy",
+                "conversation"
+              ],
+              "pt": [
+                "you",
+                "enjoy",
+                "conversation"
+              ]
+            }
           }
         },
         {
