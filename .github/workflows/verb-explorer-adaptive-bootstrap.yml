@@ -249,6 +249,13 @@ jobs:
         run: node scripts/test-shopping-where-grounding.js
       - name: Test isolated WHERE Pass Contract
         run: node scripts/test-where-location-pass-contract.js
+      - name: Test isolated WHERE evidence chain
+        run: |
+          node --check js/adaptive-where-location-probe-specification-source.js
+          node --check js/adaptive-where-location-probe-result.js
+          node --check js/adaptive-where-location-probe-evidence-bridge.js
+          node --check js/adaptive-where-location-probe-attempt-boundary.js
+          node scripts/test-where-location-evidence-chain.js
       - name: Test explicit Thinking Mind assessment Target selection
         run: node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
       - name: Test Dependency Head Probe definition
