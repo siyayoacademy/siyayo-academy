@@ -1,0 +1,1306 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 11,
+    "slug": "interrogative-words",
+    "title": {
+      "en": "INTERROGATIVE WORDS",
+      "es": "PALABRAS INTERROGATIVAS",
+      "pt": "PALAVRAS INTERROGATIVAS"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim interrogativus, “relativo a perguntar”. As palavras interrogativas abrem um espaço de informação ainda desconhecida: coisa, pessoa, lugar, tempo, motivo, modo, quantidade, posse, escolha, duração, distância ou frequência."
+        },
+        "focusWords": {
+          "pt": [
+            "interrogativus",
+            "perguntar",
+            "informação",
+            "coisa",
+            "pessoa",
+            "lugar",
+            "tempo",
+            "motivo",
+            "modo",
+            "quantidade",
+            "posse",
+            "escolha",
+            "duração",
+            "distância",
+            "frequência"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Palavras interrogativas são formas usadas para construir perguntas diretas ou indiretas e identificar exatamente qual informação está faltando. Elas podem funcionar como pronomes, determinantes, advérbios ou expressões interrogativas, conforme a estrutura."
+        },
+        "focusWords": {
+          "pt": [
+            "Palavras interrogativas",
+            "perguntas diretas",
+            "perguntas indiretas",
+            "informação",
+            "pronomes",
+            "determinantes",
+            "advérbios"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "A Question Word define o foco da pergunta. WHAT busca coisa ou informação; WHO pessoa; WHERE lugar; WHEN tempo; WHY motivo; HOW modo. Formas compostas com HOW refinam o foco para quantidade, duração, distância, frequência e idade. Na Mente Pensante, reconhecer esse foco é reconhecer o tipo de resposta que a pergunta espera."
+        },
+        "focusWords": {
+          "pt": [
+            "Question Word",
+            "WHAT",
+            "WHO",
+            "WHERE",
+            "WHEN",
+            "WHY",
+            "HOW",
+            "quantidade",
+            "duração",
+            "distância",
+            "frequência",
+            "idade"
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "choice",
+            "target": "which.use.determiner",
+            "status": "canonical"
+          },
+          {
+            "concept": "numerical answer",
+            "target": "numerals",
+            "status": "candidate"
+          },
+          {
+            "concept": "time",
+            "target": "adverbs",
+            "status": "candidate"
+          },
+          {
+            "concept": "place",
+            "target": "prepositions",
+            "status": "candidate"
+          },
+          {
+            "concept": "reason",
+            "target": "conjunctions",
+            "status": "candidate"
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, as Question Words costumam combinar-se com um verbo auxiliar ou com o verbo BE. Por exemplo: What do you need? Where did they go? How old is she? WHO também pode funcionar como sujeito da pergunta; nesse caso, nem sempre é necessário usar DO: Who called you? WHOM permanece principalmente em usos formais como objeto, enquanto no inglês cotidiano WHO é frequentemente usado em seu lugar.",
+          "es": "Em espanhol, formas interrogativas como qué, quién, cuál, cuándo, dónde, por qué, cómo e cuánto recebem acento gráfico quando têm valor interrogativo ou exclamativo. Algumas também apresentam concordância, como cuánto, cuánta, cuántos e cuántas. A forma escolhida depende do foco da pergunta e da estrutura que a acompanha.",
+          "pt": "Em português, as palavras interrogativas aparecem em estruturas como o que, quem, qual, onde, quando, por que, como e quanto. QUANTO pode variar em gênero e número, e QUAL varia em número. A construção mais natural depende do tipo de informação procurada e do contexto da pergunta."
+        },
+        "focusWords": {
+          "en": [
+            "What",
+            "Where",
+            "How old",
+            "Who",
+            "Whom",
+            "WHO"
+          ],
+          "es": [
+            "qué",
+            "quién",
+            "cuál",
+            "cuándo",
+            "dónde",
+            "por qué",
+            "cómo",
+            "cuánto"
+          ],
+          "pt": [
+            "o que",
+            "quem",
+            "qual",
+            "onde",
+            "quando",
+            "por que",
+            "como",
+            "quanto",
+            "QUAL"
+          ]
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "What do you study?",
+              "targets": [
+                "What"
+              ]
+            },
+            {
+              "text": "Who called you last night?",
+              "targets": [
+                "Who"
+              ]
+            },
+            {
+              "text": "Where will we meet tomorrow?",
+              "targets": [
+                "Where"
+              ]
+            },
+            {
+              "text": "When is the flight?",
+              "targets": [
+                "When"
+              ]
+            },
+            {
+              "text": "Why are you smiling?",
+              "targets": [
+                "Why"
+              ]
+            },
+            {
+              "text": "How did you solve it?",
+              "targets": [
+                "How"
+              ]
+            },
+            {
+              "text": "Which cheese should we choose?",
+              "targets": [
+                "Which"
+              ]
+            },
+            {
+              "text": "Whose jacket is this?",
+              "targets": [
+                "Whose"
+              ]
+            },
+            {
+              "text": "Whom did you invite? / Who did you invite?",
+              "targets": [
+                "Whom",
+                "Who"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "¿Qué estudias?",
+              "targets": [
+                "Qué"
+              ]
+            },
+            {
+              "text": "¿Quién te llamó anoche?",
+              "targets": [
+                "Quién"
+              ]
+            },
+            {
+              "text": "¿Dónde nos reuniremos mañana?",
+              "targets": [
+                "Dónde"
+              ]
+            },
+            {
+              "text": "¿Cuándo es el vuelo?",
+              "targets": [
+                "Cuándo"
+              ]
+            },
+            {
+              "text": "¿Por qué sonríes?",
+              "targets": [
+                "Por qué"
+              ]
+            },
+            {
+              "text": "¿Cómo lo resolviste?",
+              "targets": [
+                "Cómo"
+              ]
+            },
+            {
+              "text": "¿Qué queso deberíamos elegir?",
+              "targets": [
+                "Qué"
+              ]
+            },
+            {
+              "text": "¿De quién es esta chaqueta?",
+              "targets": [
+                "De quién"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "O que você estuda?",
+              "targets": [
+                "O que"
+              ]
+            },
+            {
+              "text": "Quem ligou para você ontem à noite?",
+              "targets": [
+                "Quem"
+              ]
+            },
+            {
+              "text": "Onde nos encontraremos amanhã?",
+              "targets": [
+                "Onde"
+              ]
+            },
+            {
+              "text": "Quando é o voo?",
+              "targets": [
+                "Quando"
+              ]
+            },
+            {
+              "text": "Por que você está sorrindo?",
+              "targets": [
+                "Por que"
+              ]
+            },
+            {
+              "text": "Como você resolveu isso?",
+              "targets": [
+                "Como"
+              ]
+            },
+            {
+              "text": "Qual queijo devemos escolher?",
+              "targets": [
+                "Qual"
+              ]
+            },
+            {
+              "text": "De quem é esta jaqueta?",
+              "targets": [
+                "De quem"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "identity-person",
+        "type": "examples",
+        "title": "WHAT · WHO · WHOM · WHOSE",
+        "items": [
+          {
+            "classification": {
+              "en": "WHAT · WHO · WHOM · WHOSE",
+              "es": "QUÉ · QUIÉN · A/CON QUIÉN · DE QUIÉN",
+              "pt": "O QUE · QUEM · A/COM QUEM · DE QUEM"
+            },
+            "sentences": {
+              "en": "What do you study?\nWho called you last night?\nWith whom are you going?\nWhose jacket is this?",
+              "es": "¿Qué estudias?\n¿Quién te llamó anoche?\n¿Con quién vas?\n¿De quién es esta chaqueta?",
+              "pt": "O que você estuda?\nQuem ligou para você ontem à noite?\nCom quem você vai?\nDe quem é esta jaqueta?"
+            },
+            "targetWords": {
+              "en": [
+                "What",
+                "Who",
+                "whom",
+                "Whose"
+              ],
+              "es": [
+                "Qué",
+                "Quién",
+                "Con quién",
+                "De quién"
+              ],
+              "pt": [
+                "O que",
+                "Quem",
+                "Com quem",
+                "De quem"
+              ]
+            },
+            "definition": {
+              "pt": "WHAT abre coisa ou informação; WHO pergunta por pessoa; WHOM preserva o contraste formal de objeto-pessoa, embora WHO seja frequente no inglês cotidiano; WHOSE pergunta por posse. Uma mesma família interrogativa pode mudar de função gramatical conforme a estrutura."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "WHAT",
+                "WHO",
+                "WHOM",
+                "WHOSE",
+                "informação",
+                "pessoa",
+                "objeto",
+                "posse"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "What did you buy yesterday?",
+                "es": "¿Qué compraste ayer?",
+                "pt": "O que você comprou ontem?"
+              },
+              {
+                "en": "What will you do tomorrow?",
+                "es": "¿Qué harás mañana?",
+                "pt": "O que você fará amanhã?"
+              },
+              {
+                "en": "What time is dinner?",
+                "es": "¿A qué hora es la cena?",
+                "pt": "Que horas é o jantar?"
+              },
+              {
+                "en": "What color do you prefer?",
+                "es": "¿Qué color prefieres?",
+                "pt": "Que cor você prefere?"
+              },
+              {
+                "en": "Who called you last night?",
+                "es": "¿Quién te llamó anoche?",
+                "pt": "Quem ligou para você ontem à noite?"
+              },
+              {
+                "en": "Who will lead the project?",
+                "es": "¿Quién liderará el proyecto?",
+                "pt": "Quem liderará o projeto?"
+              },
+              {
+                "en": "Who discovered Brazil?",
+                "es": "¿Quién descubrió Brasil?",
+                "pt": "Quem descobriu o Brasil?"
+              },
+              {
+                "en": "Who are they talking to?",
+                "es": "¿Con quién están hablando?",
+                "pt": "Com quem eles estão falando?"
+              },
+              {
+                "en": "Whom did you invite?",
+                "es": "¿A quién invitaste?",
+                "pt": "Quem você convidou?"
+              },
+              {
+                "en": "To whom did you speak?",
+                "es": "¿Con quién hablaste?",
+                "pt": "Com quem você falou?"
+              },
+              {
+                "en": "Who did you invite?",
+                "es": "¿A quién invitaste?",
+                "pt": "Quem você convidou?"
+              },
+              {
+                "en": "Who are you going with?",
+                "es": "¿Con quién vas?",
+                "pt": "Com quem você vai?"
+              },
+              {
+                "en": "Whose car did you borrow?",
+                "es": "¿De quién era el coche que tomaste prestado?",
+                "pt": "De quem era o carro que você pegou emprestado?"
+              },
+              {
+                "en": "Whose team will you join?",
+                "es": "¿Al equipo de quién te unirás?",
+                "pt": "Ao time de quem você vai se juntar?"
+              },
+              {
+                "en": "Whose car is that?",
+                "es": "¿De quién es ese coche?",
+                "pt": "De quem é aquele carro?"
+              },
+              {
+                "en": "Whose idea was this?",
+                "es": "¿De quién fue esta idea?",
+                "pt": "De quem foi esta ideia?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "thing/information",
+                "target": "nouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "person reference",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "object person",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "preposition placement",
+                "target": "prepositions",
+                "status": "candidate"
+              },
+              {
+                "concept": "possession",
+                "target": "pronouns",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "place-time",
+        "type": "examples",
+        "title": "WHERE · WHEN",
+        "items": [
+          {
+            "classification": {
+              "en": "WHERE · WHEN",
+              "es": "DÓNDE · CUÁNDO",
+              "pt": "ONDE · QUANDO"
+            },
+            "sentences": {
+              "en": "Where do you live now?\nWhen is the flight?",
+              "es": "¿Dónde vives ahora?\n¿Cuándo es el vuelo?",
+              "pt": "Onde você mora agora?\nQuando é o voo?"
+            },
+            "targetWords": {
+              "en": [
+                "Where",
+                "When"
+              ],
+              "es": [
+                "Dónde",
+                "Cuándo"
+              ],
+              "pt": [
+                "Onde",
+                "Quando"
+              ]
+            },
+            "definition": {
+              "pt": "WHERE procura informação espacial — posição, origem ou destino conforme a construção. WHEN procura informação temporal. Lugar não é movimento por si só, e WHEN não é tempo verbal: o verbo e o restante da frase completam a relação."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "WHERE",
+                "WHEN",
+                "posição",
+                "origem",
+                "destino",
+                "informação temporal",
+                "tempo verbal"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "Where did you go on vacation?",
+                "es": "¿Dónde fuiste de vacaciones?",
+                "pt": "Onde você foi nas férias?"
+              },
+              {
+                "en": "Where will we meet tomorrow?",
+                "es": "¿Dónde nos reuniremos mañana?",
+                "pt": "Onde nos encontraremos amanhã?"
+              },
+              {
+                "en": "Where are you going next?",
+                "es": "¿Adónde vas después?",
+                "pt": "Aonde você vai depois?"
+              },
+              {
+                "en": "Where is the Nice Party?",
+                "es": "¿Dónde es la Nice Party?",
+                "pt": "Onde é a Nice Party?"
+              },
+              {
+                "en": "When did they arrive?",
+                "es": "¿Cuándo llegaron?",
+                "pt": "Quando eles chegaram?"
+              },
+              {
+                "en": "When will the event start?",
+                "es": "¿Cuándo comenzará el evento?",
+                "pt": "Quando o evento começará?"
+              },
+              {
+                "en": "When is dinner?",
+                "es": "¿Cuándo es la cena?",
+                "pt": "Quando é o jantar?"
+              },
+              {
+                "en": "When are the guests arriving?",
+                "es": "¿Cuándo llegan los invitados?",
+                "pt": "Quando os convidados estão chegando?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "place",
+                "target": "adverbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "movement",
+                "target": "verbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "time",
+                "target": "adverbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "tense",
+                "target": "verbs",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "choice-reason",
+        "type": "examples",
+        "title": "WHICH · WHY",
+        "items": [
+          {
+            "classification": {
+              "en": "WHICH · WHY",
+              "es": "QUÉ / CUÁL · POR QUÉ",
+              "pt": "QUAL · POR QUE"
+            },
+            "sentences": {
+              "en": "Which cheese should we choose?\nWhy are you smiling?",
+              "es": "¿Qué queso deberíamos elegir?\n¿Por qué sonríes?",
+              "pt": "Qual queijo devemos escolher?\nPor que você está sorrindo?"
+            },
+            "targetWords": {
+              "en": [
+                "Which",
+                "Why"
+              ],
+              "es": [
+                "Qué",
+                "Por qué"
+              ],
+              "pt": [
+                "Qual",
+                "Por que"
+              ]
+            },
+            "definition": {
+              "pt": "WHICH organiza uma escolha entre possibilidades contextualmente delimitadas; WHY procura razão ou causa. A resposta a WHY frequentemente usa BECAUSE / PORQUE, mas pergunta e resposta pertencem a funções diferentes."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "WHICH",
+                "escolha",
+                "WHY",
+                "razão",
+                "causa",
+                "BECAUSE",
+                "PORQUE"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "Which color do you prefer?",
+                "es": "¿Qué color prefieres?",
+                "pt": "Qual cor você prefere?"
+              },
+              {
+                "en": "Which book did you choose?",
+                "es": "¿Qué libro elegiste?",
+                "pt": "Qual livro você escolheu?"
+              },
+              {
+                "en": "Which path will you take?",
+                "es": "¿Qué camino tomarás?",
+                "pt": "Qual caminho você seguirá?"
+              },
+              {
+                "en": "Which one do you want?",
+                "es": "¿Cuál quieres?",
+                "pt": "Qual você quer?"
+              },
+              {
+                "en": "Why did she leave early?",
+                "es": "¿Por qué se fue temprano?",
+                "pt": "Por que ela foi embora cedo?"
+              },
+              {
+                "en": "Why will they cancel the meeting?",
+                "es": "¿Por qué cancelarán la reunión?",
+                "pt": "Por que eles cancelarão a reunião?"
+              },
+              {
+                "en": "Why do we need three bottles?",
+                "es": "¿Por qué necesitamos tres botellas?",
+                "pt": "Por que precisamos de três garrafas?"
+              },
+              {
+                "en": "Why is the second option better?",
+                "es": "¿Por qué es mejor la segunda opción?",
+                "pt": "Por que a segunda opção é melhor?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "choice-function",
+                "target": "which.use.determiner",
+                "status": "canonical"
+              },
+              {
+                "concept": "determiner boundary",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "reason",
+                "target": "conjunctions",
+                "status": "candidate"
+              },
+              {
+                "concept": "because",
+                "target": "conjunctions",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "how-quantity",
+        "type": "examples",
+        "title": "HOW · HOW MUCH · HOW MANY",
+        "items": [
+          {
+            "classification": {
+              "en": "HOW · HOW MUCH · HOW MANY",
+              "es": "CÓMO · CUÁNTO · CUÁNTOS",
+              "pt": "COMO · QUANTO · QUANTOS"
+            },
+            "sentences": {
+              "en": "How did you solve it?\nHow much is the cheese?\nHow many guests are coming?",
+              "es": "¿Cómo lo resolviste?\n¿Cuánto cuesta el queso?\n¿Cuántos invitados vienen?",
+              "pt": "Como você resolveu isso?\nQuanto custa o queijo?\nQuantos convidados vêm?"
+            },
+            "targetWords": {
+              "en": [
+                "How",
+                "How much",
+                "How many"
+              ],
+              "es": [
+                "Cómo",
+                "Cuánto",
+                "Cuántos"
+              ],
+              "pt": [
+                "Como",
+                "Quanto",
+                "Quantos"
+              ]
+            },
+            "definition": {
+              "pt": "HOW pergunta por modo ou processo. HOW MUCH pergunta por quantidade não contável ou preço; HOW MANY pergunta pelo número de elementos contáveis. Aqui Question Words encontra diretamente Numerals, medidas e educação financeira."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "HOW",
+                "HOW MUCH",
+                "HOW MANY",
+                "modo",
+                "preço",
+                "quantidade",
+                "contáveis",
+                "Numerals",
+                "educação financeira"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "How do you do this?",
+                "es": "¿Cómo haces esto?",
+                "pt": "Como você faz isso?"
+              },
+              {
+                "en": "How will they solve the problem?",
+                "es": "¿Cómo resolverán el problema?",
+                "pt": "Como eles resolverão o problema?"
+              },
+              {
+                "en": "How are you?",
+                "es": "¿Cómo estás?",
+                "pt": "Como você está?"
+              },
+              {
+                "en": "How should we prepare the cheese?",
+                "es": "¿Cómo deberíamos preparar el queso?",
+                "pt": "Como devemos preparar o queijo?"
+              },
+              {
+                "en": "How much time did you spend?",
+                "es": "¿Cuánto tiempo empleaste?",
+                "pt": "Quanto tempo você gastou?"
+              },
+              {
+                "en": "How much fuel will it require?",
+                "es": "¿Cuánto combustible requerirá?",
+                "pt": "Quanto combustível será necessário?"
+              },
+              {
+                "en": "How much is the cheese?",
+                "es": "¿Cuánto cuesta el queso?",
+                "pt": "Quanto custa o queijo?"
+              },
+              {
+                "en": "How much is $10.25 in reais?",
+                "es": "¿Cuánto son 10,25 dólares en reales?",
+                "pt": "Quanto são US$ 10,25 em reais?"
+              },
+              {
+                "en": "How many cars do you have?",
+                "es": "¿Cuántos coches tienes?",
+                "pt": "Quantos carros você tem?"
+              },
+              {
+                "en": "How many pages did you read?",
+                "es": "¿Cuántas páginas leíste?",
+                "pt": "Quantas páginas você leu?"
+              },
+              {
+                "en": "How many stars does Brazil's flag have?",
+                "es": "¿Cuántas estrellas tiene la bandera de Brasil?",
+                "pt": "Quantas estrelas tem a bandeira do Brasil?"
+              },
+              {
+                "en": "How many colors does the flag have?",
+                "es": "¿Cuántos colores tiene la bandera?",
+                "pt": "Quantas cores tem a bandeira?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "amount",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "money",
+                "target": "financial-literacy",
+                "status": "reserved"
+              },
+              {
+                "concept": "count",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "world numbers",
+                "target": "numerals",
+                "status": "reserved"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "how-dimensions",
+        "type": "examples",
+        "title": "HOW LONG · HOW FAR · HOW OFTEN · HOW OLD",
+        "items": [
+          {
+            "classification": {
+              "en": "HOW LONG · HOW FAR · HOW OFTEN · HOW OLD",
+              "es": "CUÁNTO TIEMPO · A QUÉ DISTANCIA · CON QUÉ FRECUENCIA · QUÉ EDAD",
+              "pt": "QUANTO TEMPO · A QUE DISTÂNCIA · COM QUE FREQUÊNCIA · QUANTOS ANOS"
+            },
+            "sentences": {
+              "en": "How long will the flight take?\nHow far is the beach?\nHow often do you exercise?\nHow old is your brother?",
+              "es": "¿Cuánto tiempo durará el vuelo?\n¿A qué distancia está la playa?\n¿Con qué frecuencia haces ejercicio?\n¿Qué edad tiene tu hermano?",
+              "pt": "Quanto tempo o voo vai demorar?\nA que distância fica a praia?\nCom que frequência você se exercita?\nQuantos anos tem seu irmão?"
+            },
+            "targetWords": {
+              "en": [
+                "How long",
+                "How far",
+                "How often",
+                "How old"
+              ],
+              "es": [
+                "Cuánto tiempo",
+                "A qué distancia",
+                "Con qué frecuencia",
+                "Qué edad"
+              ],
+              "pt": [
+                "Quanto tempo",
+                "A que distância",
+                "Com que frequência",
+                "Quantos anos"
+              ]
+            },
+            "definition": {
+              "pt": "A família HOW pode medir dimensões diferentes: HOW LONG duração ou comprimento; HOW FAR distância; HOW OFTEN frequência; HOW OLD idade. HOW OLD permanece como extensão prática histórica da SIYAYO, além do mapa canônico de 14 focos."
+            },
+            "definitionFocusWords": {
+              "pt": [
+                "HOW LONG",
+                "duração",
+                "comprimento",
+                "HOW FAR",
+                "distância",
+                "HOW OFTEN",
+                "frequência",
+                "HOW OLD",
+                "idade"
+              ]
+            },
+            "relatedExamples": [
+              {
+                "en": "How long is the class?",
+                "es": "¿Cuánto dura la clase?",
+                "pt": "Quanto tempo dura a aula?"
+              },
+              {
+                "en": "How long did you wait?",
+                "es": "¿Cuánto tiempo esperaste?",
+                "pt": "Quanto tempo você esperou?"
+              },
+              {
+                "en": "How long is the table?",
+                "es": "¿Qué tan larga es la mesa?",
+                "pt": "Qual é o comprimento da mesa?"
+              },
+              {
+                "en": "How long have you lived here?",
+                "es": "¿Cuánto tiempo has vivido aquí?",
+                "pt": "Há quanto tempo você mora aqui?"
+              },
+              {
+                "en": "How far did you drive yesterday?",
+                "es": "¿Qué tan lejos condujiste ayer?",
+                "pt": "Quão longe você dirigiu ontem?"
+              },
+              {
+                "en": "How far will you go for this?",
+                "es": "¿Qué tan lejos llegarás por esto?",
+                "pt": "Até onde você irá por isso?"
+              },
+              {
+                "en": "How far is the hotel from the station?",
+                "es": "¿A qué distancia está el hotel de la estación?",
+                "pt": "A que distância fica o hotel da estação?"
+              },
+              {
+                "en": "How far is Campinas from São Paulo?",
+                "es": "¿A qué distancia está Campinas de São Paulo?",
+                "pt": "A que distância Campinas fica de São Paulo?"
+              },
+              {
+                "en": "How often did you travel last year?",
+                "es": "¿Con qué frecuencia viajaste el año pasado?",
+                "pt": "Com que frequência você viajou no ano passado?"
+              },
+              {
+                "en": "How often will you visit us?",
+                "es": "¿Con qué frecuencia nos visitarás?",
+                "pt": "Com que frequência você nos visitará?"
+              },
+              {
+                "en": "How often do we have a Nice Party?",
+                "es": "¿Con qué frecuencia tenemos una Nice Party?",
+                "pt": "Com que frequência temos uma Nice Party?"
+              },
+              {
+                "en": "How often do you study English?",
+                "es": "¿Con qué frecuencia estudias inglés?",
+                "pt": "Com que frequência você estuda inglês?"
+              },
+              {
+                "en": "How old were you in 2010?",
+                "es": "¿Qué edad tenías en 2010?",
+                "pt": "Quantos anos você tinha em 2010?"
+              },
+              {
+                "en": "How old will she be next year?",
+                "es": "¿Qué edad tendrá el próximo año?",
+                "pt": "Quantos anos ela terá no ano que vem?"
+              },
+              {
+                "en": "How old is this building?",
+                "es": "¿Cuántos años tiene este edificio?",
+                "pt": "Quantos anos tem este edifício?"
+              },
+              {
+                "en": "How old is the tradition?",
+                "es": "¿Cuántos años tiene la tradición?",
+                "pt": "Quantos anos tem a tradição?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "frequency",
+                "target": "adverbs",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Hi! Welcome to the Nice Party.\nWho are you here with? Which table do you prefer?\nHow many guests are coming, and how much cheese should we prepare?",
+            "es": "¡Hola! Bienvenido a la Nice Party.\n¿Con quién estás aquí? ¿Qué mesa prefieres?\n¿Cuántos invitados vienen y cuánto queso debemos preparar?",
+            "pt": "Olá! Bem-vindo à Nice Party.\nCom quem você está aqui? Qual mesa você prefere?\nQuantos convidados vêm e quanto queijo devemos preparar?",
+            "targetWords": {
+              "en": [
+                "Who",
+                "Which",
+                "How many",
+                "how much"
+              ],
+              "es": [
+                "quién",
+                "Qué",
+                "Cuántos",
+                "cuánto"
+              ],
+              "pt": [
+                "quem",
+                "Qual",
+                "Quantos",
+                "quanto"
+              ]
+            },
+            "extension": {
+              "en": "Where did you come from? When did you arrive?\nWhy did you choose this party? How did you hear about it?\nWhose piano is that, and how often do you play?",
+              "es": "¿De dónde vienes? ¿Cuándo llegaste?\n¿Por qué elegiste esta fiesta? ¿Cómo supiste de ella?\n¿De quién es ese piano y con qué frecuencia tocas?",
+              "pt": "De onde você veio? Quando chegou?\nPor que escolheu esta festa? Como ficou sabendo dela?\nDe quem é aquele piano e com que frequência você toca?"
+            },
+            "extensionTargetWords": {
+              "en": [
+                "Where",
+                "When",
+                "Why",
+                "How",
+                "Whose",
+                "how often"
+              ],
+              "es": [
+                "dónde",
+                "Cuándo",
+                "Por qué",
+                "Cómo",
+                "De quién",
+                "con qué frecuencia"
+              ],
+              "pt": [
+                "onde",
+                "Quando",
+                "Por que",
+                "Como",
+                "De quem",
+                "com que frequência"
+              ]
+            },
+            "intent": "QUESTION WORDS SOCIAL LAB",
+            "intentLabel": "QUESTION WORDS SOCIAL LAB",
+            "toroConnections": [
+              {
+                "concept": "greeting",
+                "target": "interjections",
+                "status": "candidate"
+              },
+              {
+                "concept": "person",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "choice",
+                "target": "which.use.determiner",
+                "status": "canonical"
+              },
+              {
+                "concept": "quantity",
+                "target": "numerals",
+                "status": "candidate"
+              },
+              {
+                "concept": "place",
+                "target": "prepositions",
+                "status": "candidate"
+              },
+              {
+                "concept": "time/frequency",
+                "target": "adverbs",
+                "status": "candidate"
+              },
+              {
+                "concept": "reason",
+                "target": "conjunctions",
+                "status": "candidate"
+              },
+              {
+                "concept": "Nice Party social lab",
+                "target": "experience",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "Question Word identifica a informação ausente; exemplos multiplicam contextos; speech transforma a pergunta escrita em experiência sonora; Mente Pensante reconhece o foco; Toro conecta a pergunta à classe e à Experience.",
+      "navigation": "As Question Words atravessam todos os Chapters e funcionam como chaves de navegação sem apagar a classe lexical concreta de cada forma.",
+      "canonicalQuestionMap": [
+        {
+          "en": "What",
+          "focus": "thing / information"
+        },
+        {
+          "en": "Where",
+          "focus": "place"
+        },
+        {
+          "en": "When",
+          "focus": "time"
+        },
+        {
+          "en": "Who",
+          "focus": "person"
+        },
+        {
+          "en": "Which",
+          "focus": "delimited choice"
+        },
+        {
+          "en": "Why",
+          "focus": "reason"
+        },
+        {
+          "en": "How",
+          "focus": "manner / method"
+        },
+        {
+          "en": "How much",
+          "focus": "amount / price"
+        },
+        {
+          "en": "How many",
+          "focus": "countable quantity"
+        },
+        {
+          "en": "Whose",
+          "focus": "possession"
+        },
+        {
+          "en": "Whom",
+          "focus": "formal object-person use"
+        },
+        {
+          "en": "How long",
+          "focus": "duration / length"
+        },
+        {
+          "en": "How far",
+          "focus": "distance"
+        },
+        {
+          "en": "How often",
+          "focus": "frequency"
+        }
+      ],
+      "practicalExtension": [
+        {
+          "en": "How old",
+          "focus": "age",
+          "sourceRole": "legacy-SIYAYO-practical-extension"
+        }
+      ],
+      "canonicalNotes": [
+        "A lista canônica mantém 14 focos principais e preserva HOW OLD como extensão prática histórica da SIYAYO.",
+        "WHOM é mantido como distinção formal útil; no inglês contemporâneo cotidiano, WHO frequentemente ocupa a função de objeto.",
+        "WHICH deve ser ensinado como escolha contextualmente delimitada; em espanhol, QUÉ antes de substantivo e CUÁL em uso pronominal exigem atenção fina.",
+        "HOW MANY conecta naturalmente Question Words a numerais cardinais; HOW MUCH conecta quantidade, preço e educação financeira.",
+        "WHERE não é sinônimo automático de movimento; verbo e preposição determinam se há posição, origem ou destino.",
+        "WHEN pergunta pelo tempo, mas não é tempo verbal.",
+        "WHY pergunta pela causa; BECAUSE introduz uma resposta causal e pertence a outra função.",
+        "Os containers de exemplos podem crescer quando cada exemplo acrescenta contraste, contexto, tempo verbal, função ou ponte pedagógica real.",
+        "No Slide 4, as três abas explicam em português como cada idioma organiza as Question Words; exemplos internos permanecem no idioma estudado, e o speech da explicação permanece em português."
+      ],
+      "masterSourceReview": {
+        "role": "legacy-master-cross-reference",
+        "sources": [
+          {
+            "title": "THE TEN KINDS OF WORDS SIYAYO ACADEMY A5.docx",
+            "contributes": [
+              "14-question-word practice list",
+              "present/past/future examples",
+              "How old practical form",
+              "conversation seeds"
+            ]
+          },
+          {
+            "title": "STRUCTURE- KIND OF WORDS.docx",
+            "contributes": [
+              "question-word sentence order",
+              "Who/Whom distinction",
+              "Which/What contrasts",
+              "How-family mappings",
+              "legacy exercise corpus"
+            ]
+          }
+        ],
+        "principle": "A5 supplies the map; MASTER supplies depth and legacy examples; the current Chapter normalizes both into a trilingual, function-first architecture."
+      },
+      "examplePolicy": {
+        "role": "expansive-example-container",
+        "principle": "The ten-slide architecture is concise; example containers are intentionally extensible.",
+        "admissionRule": "Add an example when it contributes a new tense, communicative focus, grammatical contrast, real-world context, cross-language contrast or useful speech pattern.",
+        "avoid": "Do not add examples that only repeat the same structure without pedagogical gain.",
+        "speechRole": "Every useful example is also potential listening and pronunciation material.",
+        "runtimeRule": "Because the current engine creates one slide per examples item, semantic families must remain one item per section; richness grows inside relatedExamples rather than multiplying runtime slides."
+      },
+      "boundaryMap": {
+        "role": "semantic-and-structural-boundary-audit",
+        "contrasts": [
+          {
+            "left": "WHAT",
+            "right": "WHICH",
+            "rule": "WHAT opens a broader information set; WHICH selects from contextually delimited alternatives."
+          },
+          {
+            "left": "WHO",
+            "right": "WHOM",
+            "rule": "WHO covers person reference broadly; WHOM marks formal object use and is often replaced by WHO in everyday English."
+          },
+          {
+            "left": "WHOSE",
+            "right": "WHO",
+            "rule": "WHOSE asks possession; WHO asks person identity."
+          },
+          {
+            "left": "WHERE",
+            "right": "movement",
+            "rule": "WHERE asks location or spatial information; motion comes from the verb/construction."
+          },
+          {
+            "left": "WHEN",
+            "right": "tense",
+            "rule": "WHEN asks temporal information; tense grammatically locates the event."
+          },
+          {
+            "left": "WHY",
+            "right": "BECAUSE",
+            "rule": "WHY asks for reason; BECAUSE introduces a causal response."
+          },
+          {
+            "left": "HOW MUCH",
+            "right": "HOW MANY",
+            "rule": "HOW MUCH asks amount/price or non-count quantity; HOW MANY asks number of countable entities."
+          },
+          {
+            "left": "HOW LONG",
+            "right": "HOW FAR",
+            "rule": "HOW LONG asks duration or length; HOW FAR asks distance."
+          },
+          {
+            "left": "HOW OFTEN",
+            "right": "WHEN",
+            "rule": "HOW OFTEN asks frequency; WHEN asks time or occasion."
+          }
+        ]
+      },
+      "futureExpansionScope": {
+        "role": "supplemental-question-lab",
+        "status": "reserved-for-later",
+        "possibleFormats": [
+          "Question Words archetype characters",
+          "present-past-future challenge packs",
+          "Which / How / How much microchallenges",
+          "Nice Party interview room",
+          "travel questions",
+          "World Numbers questions",
+          "financial literacy questions",
+          "guided listening and Sonic Grammar",
+          "question-order builder",
+          "direct versus indirect questions"
+        ],
+        "rule": "Reuse the canonical focus map and evidence skills rather than creating isolated question lists."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 What / Who / Whom / Whose",
+          "6 Where / When",
+          "7 Which / Why",
+          "8 How / How much / How many",
+          "9 How long / How far / How often / How old",
+          "10 Nice Party Question Words social lab"
+        ],
+        "rule": "Maintain exactly ten runtime slides: Slides 5–9 are semantic-family containers, each holding multiple Question Words and an expandable example bank."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}

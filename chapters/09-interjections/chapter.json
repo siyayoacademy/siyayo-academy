@@ -1,0 +1,901 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 9,
+    "slug": "interjections",
+    "title": {
+      "en": "INTERJECTION",
+      "es": "INTERJECCIÓN",
+      "pt": "INTERJEIÇÃO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim interiectio, de intericere: “lançar entre”, “interpor”. O nome sugere algo inserido no fluxo da fala. Interjeições costumam aparecer como unidades relativamente independentes que expressam reação, chamamento, contato social ou atitude do falante."
+        },
+        "focusWords": {
+          "pt": [
+            "lançar entre",
+            "interpor"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Interjeição é uma palavra ou expressão curta usada para manifestar reação, emoção, chamamento, saudação, hesitação ou outra atitude comunicativa. Na SIYAYO ACADEMY, o foco inicial é perceber o efeito pragmático e a entonação, sem reduzir a categoria a uma lista fixa de sons."
+        },
+        "focusWords": {
+          "pt": [
+            "Interjeição"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "A interjeição pode formar um enunciado sozinha — Wow! / ¡Ay! / Uau! — ou aparecer à margem de uma oração: Oh, I understand. Sua função é sobretudo pragmática: sinaliza como o falante reage, chama a atenção, inicia contato, ganha tempo ou comenta o que está sendo dito."
+        },
+        "toroConnections": [
+          {
+            "concept": "speaker reaction",
+            "target": "thinking-mind",
+            "status": "candidate"
+          },
+          {
+            "concept": "intonation and speech",
+            "target": "speech",
+            "status": "candidate"
+          },
+          {
+            "concept": "conversation",
+            "target": "experience",
+            "status": "candidate"
+          },
+          {
+            "concept": "sentence margin",
+            "target": "sentence-order",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "pt": [
+            "interjeição",
+            "Wow",
+            "Ay",
+            "Uau",
+            "Oh"
+          ]
+        }
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, formas como wow, oh, hey, ouch e uh podem funcionar como interjeições. Muitas são independentes da sintaxe da oração e dependem fortemente de entonação, pontuação e contexto. A mesma forma pode exercer funções diferentes em situações diferentes.",
+          "es": "Em espanhol, formas como vaya, ay, oye, hola e eh podem funcionar como interjeições ou expressões interjetivas. A interpretação depende de entonação, posição e contexto, e nem sempre existe equivalente direto em inglês ou português.",
+          "pt": "Em português, formas como uau, ai, ei, olá e ah podem funcionar como interjeições ou expressões interjetivas. Entonação e contexto são decisivos; a tradução literal raramente preserva exatamente o mesmo efeito pragmático."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "Wow! This dinner looks amazing.",
+              "targets": [
+                "Wow"
+              ]
+            },
+            {
+              "text": "Ouch! That is hot.",
+              "targets": [
+                "Ouch"
+              ]
+            },
+            {
+              "text": "Hey, are you ready?",
+              "targets": [
+                "Hey"
+              ]
+            },
+            {
+              "text": "Uh... I need a moment.",
+              "targets": [
+                "Uh"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "¡Vaya! Esta cena se ve increíble.",
+              "targets": [
+                "Vaya"
+              ]
+            },
+            {
+              "text": "¡Ay! Eso está caliente.",
+              "targets": [
+                "Ay"
+              ]
+            },
+            {
+              "text": "Oye, ¿estás listo?",
+              "targets": [
+                "Oye"
+              ]
+            },
+            {
+              "text": "Eh... necesito un momento.",
+              "targets": [
+                "Eh"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "Uau! Este jantar está incrível.",
+              "targets": [
+                "Uau"
+              ]
+            },
+            {
+              "text": "Ai! Isso está quente.",
+              "targets": [
+                "Ai"
+              ]
+            },
+            {
+              "text": "Ei, você está pronto?",
+              "targets": [
+                "Ei"
+              ]
+            },
+            {
+              "text": "Ah... preciso de um momento.",
+              "targets": [
+                "Ah"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "prosody",
+            "target": "speech",
+            "status": "candidate"
+          },
+          {
+            "concept": "pragmatic function",
+            "target": "thinking-mind",
+            "status": "candidate"
+          },
+          {
+            "concept": "cross-language non-equivalence",
+            "target": "words",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "en": [
+            "wow",
+            "oh",
+            "hey",
+            "ouch",
+            "uh"
+          ],
+          "es": [
+            "vaya",
+            "ay",
+            "oye",
+            "hola",
+            "eh"
+          ],
+          "pt": [
+            "uau",
+            "ai",
+            "ei",
+            "olá",
+            "ah"
+          ]
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Funções Interjetivas Essenciais",
+        "items": [
+          {
+            "classification": {
+              "en": "Surprise / Admiration",
+              "es": "Sorpresa / Admiración",
+              "pt": "Surpresa / Admiração"
+            },
+            "sentences": {
+              "en": "Wow! The view is beautiful.",
+              "es": "¡Vaya! La vista es hermosa.",
+              "pt": "Uau! A vista é linda."
+            },
+            "targetWords": {
+              "en": "Wow",
+              "es": "Vaya",
+              "pt": "Uau"
+            },
+            "definition": {
+              "pt": "Expressa surpresa, admiração ou reação imediata diante de algo percebido. A intensidade depende muito da voz e do contexto; a mesma forma pode soar entusiasmada, irônica ou apenas enfática."
+            },
+            "relatedExamples": [
+              {
+                "en": "Oh! You're here!",
+                "es": "¡Oh! ¡Estás aquí!",
+                "pt": "Oh! Você está aqui!"
+              },
+              {
+                "en": "Wow, this piano sounds wonderful.",
+                "es": "Vaya, este piano suena maravilloso.",
+                "pt": "Uau, este piano soa maravilhoso."
+              },
+              {
+                "en": "Hey! What a good idea!",
+                "es": "¡Oye! ¡Qué buena idea!",
+                "pt": "Ei! Que boa ideia!"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "emotion",
+                "target": "experience",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective evaluation",
+                "target": "adjectives",
+                "status": "candidate"
+              },
+              {
+                "concept": "piano and sound",
+                "target": "speech",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Pain / Discomfort",
+              "es": "Dolor / Molestia",
+              "pt": "Dor / Incômodo"
+            },
+            "sentences": {
+              "en": "Ouch! The pan is hot.",
+              "es": "¡Ay! La sartén está caliente.",
+              "pt": "Ai! A panela está quente."
+            },
+            "targetWords": {
+              "en": "Ouch",
+              "es": "Ay",
+              "pt": "Ai"
+            },
+            "definition": {
+              "pt": "Expressa dor, incômodo ou reação física imediata. Essas formas são altamente convencionais em cada língua, por isso Ouch / Ay / Ai são equivalentes funcionais, mas não traduções lexicais perfeitas."
+            },
+            "relatedExamples": [
+              {
+                "en": "Ow! My finger.",
+                "es": "¡Ay! Mi dedo.",
+                "pt": "Ai! Meu dedo."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "physical reaction",
+                "target": "experience",
+                "status": "candidate"
+              },
+              {
+                "concept": "functional equivalence",
+                "target": "words",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "Ouch",
+                "Ay",
+                "Ai"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Attention / Call",
+              "es": "Atención / Llamada",
+              "pt": "Atenção / Chamamento"
+            },
+            "sentences": {
+              "en": "Hey, look at this!",
+              "es": "Oye, ¡mira esto!",
+              "pt": "Ei, olha isto!"
+            },
+            "targetWords": {
+              "en": "Hey",
+              "es": "Oye",
+              "pt": "Ei"
+            },
+            "definition": {
+              "pt": "Chama a atenção do interlocutor ou abre um contato. Dependendo do tom, pode soar amistoso, urgente, brusco ou informal. A função social é tão importante quanto a forma lexical."
+            },
+            "relatedExamples": [
+              {
+                "en": "Hey! Look at that!",
+                "es": "¡Oye! ¡Mira eso!",
+                "pt": "Ei! Olha aquilo!"
+              },
+              {
+                "en": "Hey! What a good idea!",
+                "es": "¡Oye! ¡Qué buena idea!",
+                "pt": "Ei! Que boa ideia!"
+              },
+              {
+                "en": "Hey, where are you going?",
+                "es": "Oye, ¿adónde vas?",
+                "pt": "Ei, para onde você vai?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "Where are you going?",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "conversation opening",
+                "target": "experience",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Greeting / Social Contact",
+              "es": "Saludo / Contacto Social",
+              "pt": "Saudação / Contato Social"
+            },
+            "sentences": {
+              "en": "Hi! Nice to see you.",
+              "es": "¡Hola! Qué gusto verte.",
+              "pt": "Olá! Que bom ver você."
+            },
+            "targetWords": {
+              "en": "Hi",
+              "es": "Hola",
+              "pt": "Olá"
+            },
+            "definition": {
+              "pt": "Inicia, mantém ou encerra contato social. Saudações podem aparecer como interjeições, fórmulas discursivas ou expressões sociais conforme a gramática adotada. Na SIYAYO ACADEMY, observamos primeiro a função: abrir contato, reconhecer alguém, apresentar uma pessoa, acolher ou despedir-se."
+            },
+            "relatedExamples": [
+              {
+                "en": "Hello, John. How are you today?",
+                "es": "Hola, John. ¿Cómo estás hoy?",
+                "pt": "Olá, John. Como você está hoje?"
+              },
+              {
+                "en": "Hi! What's new?",
+                "es": "¡Hola! ¿Qué hay de nuevo?",
+                "pt": "Oi! O que há de novo?"
+              },
+              {
+                "en": "Hi! This is my friend Ana.",
+                "es": "¡Hola! Ella es mi amiga Ana.",
+                "pt": "Oi! Esta é minha amiga Ana."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "social interaction",
+                "target": "after-dinner-conversation",
+                "status": "candidate"
+              },
+              {
+                "concept": "introducing someone",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "Nice Party",
+                "target": "experience",
+                "status": "candidate"
+              },
+              {
+                "concept": "greetings and introductions",
+                "target": "speech",
+                "status": "candidate"
+              }
+            ]
+          },
+          {
+            "classification": {
+              "en": "Hesitation / Interaction",
+              "es": "Vacilación / Interacción",
+              "pt": "Hesitação / Interação"
+            },
+            "sentences": {
+              "en": "Uh... I need to think.",
+              "es": "Eh... necesito pensar.",
+              "pt": "Ah... preciso pensar."
+            },
+            "targetWords": {
+              "en": "Uh",
+              "es": "Eh",
+              "pt": "Ah"
+            },
+            "definition": {
+              "pt": "Pode sinalizar hesitação, busca de palavra, planejamento da fala ou manutenção do turno conversacional. Nem toda pausa vocalizada precisa ser tratada como interjeição em análises linguísticas finas; em nosso estudo fino, observamos primeiro sua função comunicativa antes de aprofundar a classificação."
+            },
+            "relatedExamples": [
+              {
+                "en": "Hmm... I'm not so sure.",
+                "es": "Mmm... no estoy tan seguro.",
+                "pt": "Hum... não tenho tanta certeza."
+              },
+              {
+                "en": "Uh... I don't know the answer to that.",
+                "es": "Eh... no sé la respuesta a eso.",
+                "pt": "Ah... não sei a resposta para isso."
+              },
+              {
+                "en": "Well... what did he say?",
+                "es": "Bueno... ¿qué dijo?",
+                "pt": "Bem... o que ele disse?"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "thinking time",
+                "target": "thinking-mind",
+                "status": "candidate"
+              },
+              {
+                "concept": "which choice",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              },
+              {
+                "concept": "speech rhythm",
+                "target": "speech",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Hi! Welcome to the Nice Party. This is my friend Ana.\nWow! Which cheese should we choose?",
+            "es": "¡Hola! Bienvenido a la Nice Party. Ella es mi amiga Ana.\n¡Vaya! ¿Qué queso deberíamos elegir?",
+            "pt": "Olá! Bem-vindo à Nice Party. Esta é minha amiga Ana.\nUau! Qual queijo devemos escolher?",
+            "targetWords": {
+              "en": [
+                "Hi",
+                "Wow"
+              ],
+              "es": [
+                "Hola",
+                "Vaya"
+              ],
+              "pt": [
+                "Olá",
+                "Uau"
+              ]
+            },
+            "intent": "GREETING_INTRODUCTION_REACTION_AND_CHOICE",
+            "extension": {
+              "en": "Nice to meet you! Hmm... let's choose the fresh one.\nOh, and don't forget the bread!",
+              "es": "¡Mucho gusto! Mmm... elijamos el fresco.\nAh, ¡y no olvides el pan!",
+              "pt": "Prazer em conhecer você! Hum... vamos escolher o fresco.\nAh, e não esqueça o pão!"
+            },
+            "extensionTargetWords": {
+              "en": [
+                "Hmm",
+                "Oh"
+              ],
+              "es": [
+                "Mmm",
+                "Ah"
+              ],
+              "pt": [
+                "Hum",
+                "Ah"
+              ]
+            },
+            "toroConnections": [
+              {
+                "concept": "greeting",
+                "target": "speech",
+                "status": "candidate"
+              },
+              {
+                "concept": "introducing someone",
+                "target": "pronouns",
+                "status": "candidate"
+              },
+              {
+                "concept": "reaction",
+                "target": "thinking-mind",
+                "status": "candidate"
+              },
+              {
+                "concept": "which / choice",
+                "target": "which.use.determiner",
+                "status": "contrast-review"
+              },
+              {
+                "concept": "and / addition",
+                "target": "conjunctions",
+                "status": "candidate"
+              },
+              {
+                "concept": "Nice Party social scene",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ],
+            "intentLabel": "GREETING INTRODUCTION REACTION AND CHOICE"
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; a voz revela atitude; Mente Pensante interpreta o efeito; Toro conecta; Experience contextualiza.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "Ensinar interjeição pela função pragmática e pela entonação, não como lista fechada de sons.",
+        "A mesma forma pode assumir funções diferentes conforme tom, posição e contexto; classificação por forma isolada é insuficiente.",
+        "Distinguir interjeição de onomatopeia: uma interjeição manifesta atitude ou interação; uma onomatopeia imita ou representa um som, embora algumas formas possam se aproximar.",
+        "Distinguir interjeição de discourse marker: formas como well / bueno / bem podem atuar discursivamente sem serem sempre interjeições no mesmo sentido.",
+        "Não forçar equivalência lexical EN-ES-PT; procurar equivalência funcional e pragmática.",
+        "Preservar saudações e hesitações como área de fronteira para estudo mais fino na MASTER.",
+        "Cruzar o legado MASTER com o A5 sem copiar listas mecanicamente: recuperar funções pragmáticas e transformar exemplos em cenas trilingues contextualizadas.",
+        "Usar a NICE PARTY como laboratório social para greetings, introductions, welcoming, attention calls, reactions, hesitation and farewell.",
+        "Distinguir greeting interjections de fórmulas sociais completas: Hello/Hi podem funcionar interjetivamente; Nice to meet you / Mucho gusto / Prazer em conhecer você são fórmulas de interação, não precisam ser reclassificadas como uma única interjeição.",
+        "Preservar formas multifuncionais do MASTER — hello, hey, oh, well — como sementes para futuro estudo de entonação e pragmática.",
+        "Mesma forma não implica mesma função: HELLO, HEY, OH e WELL podem mudar de valor com entonação e contexto.",
+        "Saudação, apresentação e acolhimento pertencem à mesma cena social, mas não necessariamente à mesma classe gramatical.",
+        "A NICE PARTY funciona como laboratório social onde interjeições podem conviver com fórmulas completas, Question Words, pronomes, verbos e conjunctions sem apagar suas fronteiras.",
+        "No A5, priorizar função pragmática observável; na MASTER, aprofundar prosódia, discourse markers, response tokens, vocatives e variação regional."
+      ],
+      "sourceConnections": {
+        "role": "canonical-source-integration",
+        "sources": [
+          {
+            "id": "experience-seeds",
+            "path": "data/learning/experience-seeds.json",
+            "contributes": [
+              "shopping-for-dinner",
+              "questions",
+              "conversation context",
+              "Nice Party continuity"
+            ]
+          },
+          {
+            "id": "which-skill",
+            "path": "data/learning/skills/which.json",
+            "contributes": [
+              "choice interaction",
+              "Which cheese should we choose?"
+            ]
+          },
+          {
+            "id": "conjunction-chapter",
+            "path": "chapters/08-conjunctions/chapter.json",
+            "contributes": [
+              "and/addition inside integrated conversation",
+              "logical relation boundary"
+            ]
+          },
+          {
+            "id": "adjective-chapter",
+            "path": "chapters/04-adjectives/chapter.json",
+            "contributes": [
+              "evaluation and reaction vocabulary",
+              "beautiful",
+              "wonderful"
+            ]
+          }
+        ],
+        "principle": "Reuse familiar SIYAYO contexts so pragmatic meaning becomes visible through real interaction instead of isolated memorization.",
+        "rule": "Interjection links to emotion, speech and conversation without absorbing adjective, conjunction, question-word or discourse-marker functions."
+      },
+      "thinkingMindIntegration": {
+        "role": "pragmatic-effect-detection",
+        "questions": [
+          "What is the speaker reacting to?",
+          "Is the speaker surprised, hurt, calling attention, greeting, hesitating or managing interaction?",
+          "How would the same word sound with a different intonation?",
+          "Is this form structurally part of the clause or operating at its margin?"
+        ],
+        "principle": "Hear the communicative effect before naming the category.",
+        "rule": "Prosody and context are evidence; spelling alone is not enough."
+      },
+      "boundaryMap": {
+        "role": "semantic-and-pragmatic-boundary-audit",
+        "contrasts": [
+          {
+            "left": "interjection",
+            "right": "onomatopoeia",
+            "rule": "Interjections express attitude or interaction; onomatopoeias imitate or represent sounds, though some forms may overlap historically or contextually."
+          },
+          {
+            "left": "interjection",
+            "right": "discourse-marker",
+            "rule": "Some forms can manage discourse rather than express an immediate reaction; classification depends on use and framework."
+          },
+          {
+            "left": "interjection",
+            "right": "clause-constituent",
+            "rule": "Many interjections stand outside core clause syntax and can form independent utterances."
+          },
+          {
+            "left": "same-form",
+            "right": "same-function",
+            "rule": "The same lexical form may signal surprise, attention, hesitation or stance depending on intonation and context."
+          },
+          {
+            "left": "translation",
+            "right": "pragmatic-equivalence",
+            "rule": "EN, ES and PT often use different conventional forms for the same interactional effect."
+          }
+        ]
+      },
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "surprise and admiration",
+          "pain and discomfort",
+          "attention and call",
+          "greeting and social contact",
+          "hesitation and interaction",
+          "prosody and punctuation awareness",
+          "basic interjection versus clause distinction",
+          "one integrated Experience conversation"
+        ],
+        "rule": "The Chapter introduces pragmatic functions without exhausting discourse markers, vocatives, particles, response tokens or prosodic nuance."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "primary versus secondary interjections",
+          "interjections versus discourse markers",
+          "interjections versus vocatives",
+          "onomatopoeia and sound symbolism",
+          "response tokens",
+          "prosody and intonation contours",
+          "register, politeness and social variation",
+          "regional variants",
+          "multimodal gesture and facial expression",
+          "advanced EN-ES-PT pragmatic contrast"
+        ],
+        "rule": "MASTER expands classification, prosody, interactional linguistics and variation."
+      },
+      "futureExpansionScope": {
+        "role": "supplemental-example-layer",
+        "status": "reserved-for-later",
+        "principle": "Keep the A5 concise; richer pragmatic examples, audio contrasts and archetypal reactions can grow later as supplemental modules.",
+        "possibleFormats": [
+          "audio minimal pairs with different intonation",
+          "emotion and reaction archetypes",
+          "Nice Party social interaction packs",
+          "travel greeting and attention packs",
+          "Question-Word-linked conversational reactions",
+          "Nice Party greetings-and-introductions pack: greeting one person, introducing a friend, introducing several people, welcoming guests and saying goodbye",
+          "pragmatic-function packs where the same form changes function by intonation: hello, hey, oh, well",
+          "social formulas adjacent to interjections: Nice to meet you / Mucho gusto / Prazer em conhecer você"
+        ],
+        "rule": "Do not overload the 10-slide A5 summary; preserve discoveries as reusable seeds."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function / pragmatic effect",
+          "4 grammar and prosody",
+          "5 surprise-admiration",
+          "6 pain-discomfort",
+          "7 attention-call",
+          "8 greeting-social contact",
+          "9 hesitation-interaction",
+          "10 integrated reaction-choice conversation"
+        ],
+        "rule": "The Chapter moves from pragmatic independence to five representative interactional functions and finishes inside a familiar SIYAYO Experience."
+      },
+      "masterSourceReview": {
+        "role": "legacy-master-cross-reference",
+        "source": {
+          "title": "STRUCTURE- KIND OF WORDS.docx",
+          "reviewedRanges": [
+            "21920-22039 — interjections: hello/hullo, hey, hi, hmm, oh, ouch, uh, uh-huh, um, well and pragmatic functions",
+            "17145-17158 — introduce + family / invite friends to the party",
+            "21320-21329 — introduce you to my friends",
+            "528-540 — English – A nice party! legacy section"
+          ]
+        },
+        "recoveredSeeds": [
+          {
+            "form": "hello / hullo",
+            "functions": [
+              "greeting",
+              "surprise"
+            ],
+            "examples": [
+              "Hello John. How are you today?",
+              "Hello! My car's gone!"
+            ]
+          },
+          {
+            "form": "hey",
+            "functions": [
+              "attention",
+              "surprise/joy"
+            ],
+            "examples": [
+              "Hey! Look at that!",
+              "Hey! What a good idea!"
+            ]
+          },
+          {
+            "form": "hi",
+            "functions": [
+              "greeting"
+            ],
+            "examples": [
+              "Hi! What's new?"
+            ]
+          },
+          {
+            "form": "hmm",
+            "functions": [
+              "hesitation",
+              "doubt",
+              "disagreement"
+            ],
+            "examples": [
+              "Hmm. I'm not so sure."
+            ]
+          },
+          {
+            "form": "oh",
+            "functions": [
+              "surprise",
+              "pain",
+              "pleading"
+            ],
+            "examples": [
+              "Oh! You're here!",
+              "Oh! I've got a toothache."
+            ]
+          },
+          {
+            "form": "uh / um",
+            "functions": [
+              "hesitation"
+            ],
+            "examples": [
+              "Uh... I don't know the answer to that."
+            ]
+          },
+          {
+            "form": "well",
+            "functions": [
+              "surprise",
+              "introducing a remark"
+            ],
+            "examples": [
+              "Well, what did he say?"
+            ]
+          },
+          {
+            "form": "introduce",
+            "functions": [
+              "social-introduction"
+            ],
+            "examples": [
+              "I can introduce you to my friends."
+            ]
+          }
+        ],
+        "principle": "Use the legacy MASTER as a seed bank: recover pragmatic distinctions and social situations, then normalize them into the trilingual SIYAYO architecture rather than copying the old material mechanically.",
+        "nicePartyBridge": "Greetings, introductions, reactions, attention calls and hesitation naturally form the social entrance layer of the Nice Party Experience."
+      },
+      "fineStudyExamples": {
+        "role": "pragmatic-and-prosodic-boundary-audit",
+        "examples": [
+          {
+            "focus": "same form, different pragmatic function",
+            "examples": [
+              "Hello, John. How are you today? → greeting",
+              "Hello! My car's gone! → surprise",
+              "Hey! Look at that! → attention",
+              "Hey! What a good idea! → surprise / enthusiasm"
+            ],
+            "insight": "The surface form alone does not determine the function; intonation, position and context matter."
+          },
+          {
+            "focus": "interjection versus social formula",
+            "examples": [
+              "Hi! → greeting interjection / greeting token",
+              "Nice to meet you. → complete social formula",
+              "Welcome to the Nice Party. → complete welcoming expression"
+            ],
+            "insight": "Expressions that perform a social act are not automatically single interjections; preserve the difference between interjection and larger formula."
+          },
+          {
+            "focus": "interjection versus discourse management",
+            "examples": [
+              "Uh... I need a moment. → hesitation",
+              "Hmm... I'm not so sure. → hesitation / doubt",
+              "Well... what did he say? → discourse management / remark introduction"
+            ],
+            "insight": "Some forms sit on the boundary between interjection and discourse marker; the A5 recognizes communicative function first and leaves framework-dependent classification to MASTER."
+          },
+          {
+            "focus": "interjection versus sentence grammar",
+            "examples": [
+              "Wow! The view is beautiful.",
+              "Ouch! The pan is hot.",
+              "Hey, where are you going?"
+            ],
+            "insight": "The interjection can stand alone or sit at the margin of the clause; the rest of the sentence keeps its own noun, verb, adjective and question-word grammar."
+          },
+          {
+            "focus": "Nice Party social entrance",
+            "examples": [
+              "Hi! Welcome to the Nice Party.",
+              "This is my friend Ana.",
+              "Nice to meet you!",
+              "Wow! Which cheese should we choose?"
+            ],
+            "insight": "Greeting, introduction, social formula, reaction and choice can coexist in one scene without collapsing into one grammatical category."
+          }
+        ],
+        "principle": "Interpret pragmatic effect and prosody before assigning a rigid label; then preserve the grammatical boundary of the surrounding sentence."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}

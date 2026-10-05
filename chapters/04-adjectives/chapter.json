@@ -1,0 +1,787 @@
+{
+  "schemaVersion": "0.1",
+  "project": "SIYAYO ACADEMY",
+  "contentEngine": "SIYAYO Content Engine",
+  "chapter": {
+    "number": 4,
+    "slug": "adjectives",
+    "title": {
+      "en": "ADJECTIVE",
+      "es": "ADJETIVO",
+      "pt": "ADJETIVO"
+    },
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "sections": [
+      {
+        "id": "etymology",
+        "type": "paragraph",
+        "title": "Origem / Etimologia Resumida",
+        "content": {
+          "pt": "Do latim adiectivum, “aquilo que é acrescentado”. O adjetivo acrescenta uma propriedade, característica, classificação, relação ou avaliação a um substantivo ou a um referente."
+        },
+        "focusWords": {
+          "pt": [
+            "adiectivum",
+            "adjetivo",
+            "propriedade",
+            "característica"
+          ]
+        }
+      },
+      {
+        "id": "definition",
+        "type": "paragraph",
+        "title": "Definição",
+        "content": {
+          "pt": "Adjetivo é a classe de palavras que caracteriza, qualifica, classifica ou relaciona um substantivo ou referente. Pode aparecer junto ao substantivo ou ligado a ele por verbos como BE, SER, ESTAR, parecer, look, seem e outros verbos de ligação."
+        },
+        "focusWords": {
+          "pt": [
+            "Adjetivo",
+            "caracteriza",
+            "qualifica",
+            "classifica",
+            "relaciona",
+            "verbos de ligação"
+          ]
+        }
+      },
+      {
+        "id": "sentence-function",
+        "type": "paragraph",
+        "title": "Função na Oração",
+        "content": {
+          "pt": "O adjetivo pode funcionar dentro de um grupo nominal, modificando diretamente um substantivo, ou como predicativo, atribuindo uma propriedade ou estado ao sujeito ou ao objeto por meio de uma relação verbal. Sua posição, concordância e possibilidade de comparação variam entre inglês, espanhol e português."
+        },
+        "toroConnections": [
+          {
+            "concept": "adjective and noun",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "quality predication",
+            "target": "quality",
+            "status": "candidate"
+          },
+          {
+            "concept": "state predication",
+            "target": "state",
+            "status": "candidate"
+          },
+          {
+            "concept": "linking verbs",
+            "target": "verbs",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "pt": [
+            "grupo nominal",
+            "predicativo",
+            "propriedade",
+            "estado",
+            "posição",
+            "concordância",
+            "comparação"
+          ]
+        }
+      },
+      {
+        "id": "grammar",
+        "type": "grammar",
+        "title": "Características Gramaticais",
+        "labels": {
+          "en": "PARA INGLÊS",
+          "es": "PARA ESPANHOL",
+          "pt": "EM PORTUGUÊS"
+        },
+        "speechLanguage": "pt",
+        "content": {
+          "en": "Em inglês, o adjetivo atributivo costuma vir antes do substantivo e normalmente não varia em gênero ou número. Depois de verbos de ligação, aparece em uso predicativo. A comparação pode usar -er/-est ou more/most, quando o adjetivo é graduável.",
+          "es": "Em espanhol, muitos adjetivos concordam com o substantivo em gênero e número. A posição pode vir antes ou depois do substantivo e, em certos casos, muda foco, estilo ou significado. A comparação normalmente usa más... que e el/la más..., quando o adjetivo é graduável.",
+          "pt": "Em português, muitos adjetivos concordam com o substantivo em gênero e número. A posição pode vir antes ou depois do substantivo e, em alguns casos, muda nuance, foco ou significado. A comparação normalmente usa mais... que/do que e o/a mais..., quando o adjetivo é graduável."
+        },
+        "examples": {
+          "en": [
+            {
+              "text": "a fresh tomato",
+              "targets": [
+                "fresh"
+              ]
+            },
+            {
+              "text": "fresh tomatoes",
+              "targets": [
+                "fresh"
+              ]
+            },
+            {
+              "text": "The tomato is fresh.",
+              "targets": [
+                "fresh"
+              ]
+            },
+            {
+              "text": "a great friend",
+              "targets": [
+                "great"
+              ]
+            },
+            {
+              "text": "This tomato is fresher.",
+              "targets": [
+                "fresher"
+              ]
+            }
+          ],
+          "es": [
+            {
+              "text": "un tomate fresco",
+              "targets": [
+                "fresco"
+              ]
+            },
+            {
+              "text": "tomates frescos",
+              "targets": [
+                "frescos"
+              ]
+            },
+            {
+              "text": "El tomate está fresco.",
+              "targets": [
+                "fresco"
+              ]
+            },
+            {
+              "text": "un gran amigo",
+              "targets": [
+                "gran"
+              ]
+            },
+            {
+              "text": "Este tomate está más fresco.",
+              "targets": [
+                "más fresco"
+              ]
+            }
+          ],
+          "pt": [
+            {
+              "text": "um tomate fresco",
+              "targets": [
+                "fresco"
+              ]
+            },
+            {
+              "text": "tomates frescos",
+              "targets": [
+                "frescos"
+              ]
+            },
+            {
+              "text": "O tomate está fresco.",
+              "targets": [
+                "fresco"
+              ]
+            },
+            {
+              "text": "um grande amigo",
+              "targets": [
+                "grande"
+              ]
+            },
+            {
+              "text": "Este tomate está mais fresco.",
+              "targets": [
+                "mais fresco"
+              ]
+            }
+          ]
+        },
+        "toroConnections": [
+          {
+            "concept": "adjective corpus",
+            "target": "words",
+            "status": "candidate"
+          },
+          {
+            "concept": "quality",
+            "target": "quality",
+            "status": "candidate"
+          },
+          {
+            "concept": "state",
+            "target": "state",
+            "status": "candidate"
+          },
+          {
+            "concept": "Experience adjective axis",
+            "target": "shopping-for-dinner",
+            "status": "candidate"
+          }
+        ],
+        "focusWords": {
+          "en": [
+            "adjetivo atributivo",
+            "gênero",
+            "número",
+            "predicativo",
+            "-er/-est",
+            "more/most",
+            "graduável"
+          ],
+          "es": [
+            "concordam",
+            "gênero",
+            "número",
+            "posição",
+            "comparação",
+            "más... que",
+            "graduável"
+          ],
+          "pt": [
+            "concordam",
+            "gênero",
+            "número",
+            "posição",
+            "comparação",
+            "mais... que/do que",
+            "graduável"
+          ]
+        }
+      },
+      {
+        "id": "classifications",
+        "type": "examples",
+        "title": "Tipos e Funções do Adjetivo",
+        "items": [
+          {
+            "classification": {
+              "en": "Qualitative",
+              "es": "Calificativo",
+              "pt": "Qualificativo"
+            },
+            "sentences": {
+              "en": "We chose fresh cheese.",
+              "es": "Elegimos queso fresco.",
+              "pt": "Escolhemos queijo fresco."
+            },
+            "targetWords": {
+              "en": "fresh",
+              "es": "fresco",
+              "pt": "fresco"
+            },
+            "definition": {
+              "pt": "Expressa qualidade, propriedade, aparência, avaliação, caráter, estado ou outra característica atribuída a um substantivo ou referente. No Chapter, observamos apenas alguns domínios; o corpus e as páginas internas aprofundam como a mesma palavra pode atravessar diferentes contextos."
+            },
+            "toroConnections": [
+              {
+                "concept": "qualitative adjective",
+                "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "fresh",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ],
+            "relatedExamples": [
+              {
+                "en": "She is reliable.",
+                "es": "Ella es confiable.",
+                "pt": "Ela é confiável."
+              },
+              {
+                "en": "She feels enthusiastic today.",
+                "es": "Ella se siente entusiasmada hoy.",
+                "pt": "Ela se sente entusiasmada hoje."
+              },
+              {
+                "en": "The experience was wonderful.",
+                "es": "La experiencia fue maravillosa.",
+                "pt": "A experiência foi maravilhosa."
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "qualidade",
+                "propriedade",
+                "avaliação",
+                "característica"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Relational & Classifying",
+              "es": "Relacional y Clasificador",
+              "pt": "Relacional e Classificador"
+            },
+            "sentences": {
+              "en": "She studies medical terminology.",
+              "es": "Ella estudia terminología médica.",
+              "pt": "Ela estuda terminologia médica."
+            },
+            "targetWords": {
+              "en": "medical",
+              "es": "médica",
+              "pt": "médica"
+            },
+            "definition": {
+              "pt": "Adjetivos relacionais ligam o substantivo a uma área, origem, finalidade ou domínio; usos classificadores colocam o substantivo em uma categoria ou subtipo. Na prática, essas funções podem se sobrepor. O schema da SIYAYO mantém os rótulos relational e classifying separados para permitir discriminação futura, mas o Chapter apresenta primeiro o contraste funcional sem forçar uma fronteira absoluta."
+            },
+            "relatedExamples": [
+              {
+                "en": "a digital course",
+                "es": "un curso digital",
+                "pt": "um curso digital"
+              },
+              {
+                "en": "a Brazilian company",
+                "es": "una empresa brasileña",
+                "pt": "uma empresa brasileira"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "relational adjective",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "classifying adjective",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "category and domain relation",
+                "target": "words",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "relacionais",
+                "classificadores",
+                "categoria",
+                "subtipo"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Attributive & Predicative",
+              "es": "Atributivo y Predicativo",
+              "pt": "Atributivo e Predicativo"
+            },
+            "sentences": {
+              "en": "The fresh salmon looks delicious.",
+              "es": "El salmón fresco parece delicioso.",
+              "pt": "O salmão fresco parece delicioso."
+            },
+            "targetWords": {
+              "en": "fresh",
+              "es": "fresco",
+              "pt": "fresco"
+            },
+            "definition": {
+              "pt": "No uso atributivo, o adjetivo integra o grupo nominal e modifica diretamente o substantivo; no uso predicativo, a propriedade é atribuída ao referente por uma relação verbal. A SIYAYO compara o mesmo significado nas três línguas para tornar visíveis as diferenças de posição e estrutura sem perder a unidade semântica."
+            },
+            "relatedExamples": [
+              {
+                "en": "fresh salmon",
+                "es": "salmón fresco",
+                "pt": "salmão fresco"
+              },
+              {
+                "en": "The salmon is fresh.",
+                "es": "El salmón está fresco.",
+                "pt": "O salmão está fresco."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "noun phrase",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "quality predication",
+                "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "state predication",
+                "target": "state",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "atributivo",
+                "grupo nominal",
+                "predicativo",
+                "relação verbal"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Position & Agreement",
+              "es": "Posición y Concordancia",
+              "pt": "Posição e Concordância"
+            },
+            "sentences": {
+              "en": "a beautiful dinner",
+              "es": "una cena hermosa",
+              "pt": "um jantar bonito"
+            },
+            "targetWords": {
+              "en": "beautiful",
+              "es": "hermosa",
+              "pt": "bonito"
+            },
+            "definition": {
+              "pt": "A posição do adjetivo é uma tendência de cada língua, não uma regra absoluta. A comparação simultânea EN/ES/PT permite observar o mesmo significado atravessando três sistemas: o inglês frequentemente antepõe o adjetivo; espanhol e português frequentemente o pospõem e marcam concordância, embora todos admitam variações contextuais."
+            },
+            "relatedExamples": [
+              {
+                "en": "a fresh tomato",
+                "es": "un tomate fresco",
+                "pt": "um tomate fresco"
+              },
+              {
+                "en": "fresh tomatoes",
+                "es": "tomates frescos",
+                "pt": "tomates frescos"
+              },
+              {
+                "en": "a great friend",
+                "es": "un gran amigo",
+                "pt": "um grande amigo"
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "noun phrase",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "agreement",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "predicative adjective",
+                "target": "quality",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "posição",
+                "inglês",
+                "espanhol",
+                "português",
+                "concordância"
+              ]
+            }
+          },
+          {
+            "classification": {
+              "en": "Comparison & Intensity",
+              "es": "Comparación e Intensidad",
+              "pt": "Comparação e Intensidade"
+            },
+            "sentences": {
+              "en": "This cheese is fresher.",
+              "es": "Este queso está más fresco.",
+              "pt": "Este queijo está mais fresco."
+            },
+            "targetWords": {
+              "en": "fresher",
+              "es": "más fresco",
+              "pt": "mais fresco"
+            },
+            "definition": {
+              "pt": "A comparação e a intensidade dependem de o adjetivo ser graduável. O contraste paralelo EN/ES/PT evidencia estratégias diferentes para a mesma relação: inglês pode flexionar (-er/-est) ou usar more/most; espanhol e português usam normalmente más/mais e estruturas equivalentes. Formas irregulares e restrições lexicais ficam para a MASTER."
+            },
+            "relatedExamples": [
+              {
+                "en": "This cheese is fresher.",
+                "es": "Este queso está más fresco.",
+                "pt": "Este queijo está mais fresco."
+              },
+              {
+                "en": "This is the freshest cheese.",
+                "es": "Este es el queso más fresco.",
+                "pt": "Este é o queijo mais fresco."
+              },
+              {
+                "en": "This dinner is more beautiful.",
+                "es": "Esta cena es más hermosa.",
+                "pt": "Este jantar é mais bonito."
+              }
+            ],
+            "toroConnections": [
+              {
+                "concept": "comparison",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "degree and intensity",
+                "target": "words",
+                "status": "candidate"
+              }
+            ],
+            "definitionFocusWords": {
+              "pt": [
+                "comparação",
+                "intensidade",
+                "graduável",
+                "-er/-est",
+                "more/most",
+                "más/mais"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "conversation",
+        "type": "conversation",
+        "title": "Aplicação em Conversação",
+        "items": [
+          {
+            "en": "Which cheese looks fresher?",
+            "es": "¿Qué queso se ve más fresco?",
+            "pt": "Qual queijo parece mais fresco?",
+            "targetWords": {
+              "en": "fresher",
+              "es": "más fresco",
+              "pt": "mais fresco"
+            },
+            "intent": "DESCRIBE",
+            "extension": {
+              "en": "This fresh cheese looks excellent for tonight's dinner.",
+              "es": "Este queso fresco parece excelente para la cena de esta noche.",
+              "pt": "Este queijo fresco parece excelente para o jantar desta noite."
+            },
+            "extensionTargetWords": {
+              "en": "fresh",
+              "es": "fresco",
+              "pt": "fresco"
+            },
+            "toroConnections": [
+              {
+                "concept": "Which / Qué / Qual",
+                "target": "question-words",
+                "status": "candidate"
+              },
+              {
+                "concept": "adjective + noun",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "quality / linking relation",
+                "target": "quality",
+                "status": "candidate"
+              },
+              {
+                "concept": "comparison",
+                "target": "words",
+                "status": "candidate"
+              },
+              {
+                "concept": "Experience adjective axis",
+                "target": "shopping-for-dinner",
+                "status": "candidate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "integration": {
+      "principle": "A5 mostra; Master aprofunda; corpus discrimina; Experience aplica; o contraste EN/ES/PT revela a forma; Dependency visualiza; a avaliação observa quando houver contexto avaliativo.",
+      "navigation": "As conexões são portas de navegação livre, não permissões de acesso.",
+      "canonicalNotes": [
+        "O schema do corpus permite adjectiveClass = qualitative, relational ou classifying; o corpus atual está efetivamente povoado apenas com itens qualitative.",
+        "Apresentar Relational e Classifying como funções distinguíveis porém permeáveis no A5; reservar fronteiras lexicais finas e casos ambíguos para a MASTER.",
+        "Não tratar polarity (positive, neutral, negative) como classe gramatical do adjetivo; polarity é metadado semântico/avaliativo do corpus e da Experience.",
+        "Distinguir uso atributivo e predicativo sem reduzir o adjetivo a uma posição fixa.",
+        "Preservar as diferenças EN/ES/PT de posição e concordância sem convertê-las em regras absolutas.",
+        "Reservar paradigmas completos de comparação, irregularidades, posição estilística e mudanças finas de significado para a MASTER.",
+        "Tratar a posição do adjetivo como tendência dependente da língua e do contexto, não como regra absoluta de pré- ou pós-nominalidade.",
+        "Tratar concordância como propriedade morfossintática produtiva em espanhol e português; o inglês normalmente não marca gênero ou número no adjetivo.",
+        "Aplicar comparação e intensidade apenas a adjetivos graduáveis; não assumir que todo adjetivo aceita very/muy/muito, comparativo ou superlativo natural.",
+        "Usar contraste trilingue alinhado como princípio SIYAYO: manter a intenção semântica estável e observar como EN, ES e PT realizam posição, concordância, predicação e comparação de modos diferentes.",
+        "Usar um léxico autoexplicativo: cada adjetivo canônico pode carregar glosses e selfExamples EN/ES/PT, permitindo que a própria palavra ensine significado e uso sem transformar o Chapter em uma lista extensa.",
+        "Apresentar PERSON/CHARACTER, MOOD/EMOTION e EXPERIENCE/THING como domínios semânticos introdutórios, não como novas adjectiveClass; uma palavra pode participar de mais de um domínio conforme o contexto.",
+        "One adjective, many contexts. One context, many connections."
+      ],
+      "chapterScope": {
+        "role": "introductory-canonical",
+        "includes": [
+          "definition and sentence function",
+          "basic EN-ES-PT position contrast",
+          "basic agreement contrast",
+          "qualitative adjectives",
+          "introductory semantic domains: person/character, mood/emotion, experience/thing",
+          "introductory relational and classifying distinction",
+          "attributive and predicative use",
+          "introductory comparison and intensity",
+          "one contextual adjective application"
+        ],
+        "rule": "The Chapter introduces the canonical adjective map without exhausting advanced agreement, word-order, degree or lexical-semantic exceptions."
+      },
+      "masterScope": {
+        "role": "deepening",
+        "reserved": [
+          "full adjective agreement paradigms",
+          "fine-grained adjective position and meaning shifts",
+          "comparative and superlative irregularities",
+          "gradable versus non-gradable adjective systems",
+          "participial adjectives",
+          "adjective complementation",
+          "register and stylistic placement",
+          "lexical restrictions on comparison and intensification",
+          "advanced EN-ES-PT contrastive grammar"
+        ],
+        "rule": "MASTER expands paradigms, exceptions, lexical restrictions and contrastive grammar."
+      },
+      "corpusScope": {
+        "role": "canonical-lexicon",
+        "source": "data/lexicon/adjectives/adjectives.json",
+        "rule": "The adjective corpus provides canonical trilingual lexical items, operational adjectiveClass values, polarity, semantic tags, short glosses and self-examples. The Chapter samples this lexicon; it does not reproduce the full corpus.",
+        "selfExplainingLexicon": {
+          "principle": "An adjective should be able to explain itself through a concise trilingual gloss and a natural trilingual example.",
+          "fields": [
+            "translations",
+            "glosses",
+            "selfExamples",
+            "adjectiveClass",
+            "polarity",
+            "semanticTags"
+          ],
+          "firstCollection": "positive-human-descriptors",
+          "rule": "Keep lexical depth in the corpus and surface selected items contextually in Chapters and Experiences."
+        }
+      },
+      "experienceScope": {
+        "role": "contextual-application",
+        "preferredContexts": [
+          "shopping-for-dinner",
+          "preparing-dinner",
+          "having-dinner",
+          "after-dinner-conversation"
+        ],
+        "rule": "Experiences apply adjectives to actual nouns, choices, descriptions and evaluations."
+      },
+      "pedagogicalSequence": {
+        "slideCount": 10,
+        "order": [
+          "1 etymology",
+          "2 definition",
+          "3 sentence-function",
+          "4 grammar",
+          "5 qualitative",
+          "6 relational-classifying",
+          "7 attributive-predicative",
+          "8 position-agreement",
+          "9 comparison-intensity",
+          "10 integrated conversation"
+        ],
+        "rule": "The chapter prioritizes observable adjective behavior: quality, relation/classification, attributive/predicative use, position/agreement and comparison. Fine lexical boundaries remain in MASTER."
+      },
+      "trilingualContrastScope": {
+        "role": "toroidal-cross-language-comparison",
+        "principle": "Keep one semantic intention stable while EN, ES and PT expose different grammatical realizations.",
+        "observe": [
+          "adjective position around the noun",
+          "gender and number agreement",
+          "attributive versus predicative realization",
+          "comparison and intensity strategies",
+          "linking-verb differences across the three languages"
+        ],
+        "rule": "The Chapter should use aligned EN/ES/PT examples whenever a contrast adds pedagogical value, while MASTER keeps the exhaustive paradigms and exceptions."
+      },
+      "semanticDomainScope": {
+        "role": "introductory-context-map",
+        "domains": [
+          {
+            "id": "person-character",
+            "label": {
+              "en": "PERSON / CHARACTER",
+              "es": "PERSONA / CARÁCTER",
+              "pt": "PESSOA / CARÁTER"
+            },
+            "examples": [
+              "reliable",
+              "kind",
+              "generous",
+              "diligent",
+              "adaptable"
+            ]
+          },
+          {
+            "id": "mood-emotion",
+            "label": {
+              "en": "MOOD / EMOTION",
+              "es": "ESTADO DE ÁNIMO / EMOCIÓN",
+              "pt": "HUMOR / EMOÇÃO"
+            },
+            "examples": [
+              "enthusiastic"
+            ]
+          },
+          {
+            "id": "experience-thing",
+            "label": {
+              "en": "EXPERIENCE / THING",
+              "es": "EXPERIENCIA / COSA",
+              "pt": "EXPERIÊNCIA / COISA"
+            },
+            "examples": [
+              "wonderful",
+              "excellent",
+              "beautiful",
+              "pleasant",
+              "fresh"
+            ]
+          }
+        ],
+        "principle": {
+          "en": "One adjective, many contexts. One context, many connections.",
+          "es": "Un adjetivo, muchos contextos. Un contexto, muchas conexiones.",
+          "pt": "Um adjetivo, muitos contextos. Um contexto, muitas conexões."
+        },
+        "rule": "Chapter 4 introduces semantic domains as a map, while corpus and internal adjective pages keep the lexical depth, polysemy, usage constraints and broader A-Z expansion."
+      }
+    }
+  },
+  "carousel": {
+    "defaultMode": "story",
+    "languageOrder": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "exampleLinesPerSlide": 3,
+    "controls": {
+      "previous": true,
+      "playPause": true,
+      "next": true
+    }
+  }
+}
