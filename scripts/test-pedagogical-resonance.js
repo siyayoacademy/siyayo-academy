@@ -48,6 +48,40 @@ assert.equal(unknown.status, 'matched');
 assert.equal(unknown.skill, 'unknown-skill');
 assert.ok(unknown.matched.questionWords.length || unknown.matched.perspectives.length);
 
+for (const [skill, questionWord] of [
+  ['what.use.object-question','what'],
+  ['why.use.contextual-reason','why']
+]) {
+  const signal = Resonance.skillSignals[skill];
+  assert.ok(signal, skill+' must have an explicit assessment resonance signal');
+  assert.deepEqual(signal.questionWords, [questionWord]);
+  assert.deepEqual(signal.verbs, []);
+  assert.deepEqual(signal.perspectives, []);
+  const probe = Resonance.scoreExperience({
+    id:'assessment-'+questionWord,
+    links:{verbs:[]},
+    thinkingMind:[{questionWord}],
+    perspectives:{describing:{}}
+  }, skill);
+  assert.deepEqual(probe.matched.questionWords,[questionWord]);
+  assert.deepEqual(probe.matched.perspectives,[],'assessment resonance must not inherit verb-function perspectives');
+  assert.equal(probe.score,Resonance.weights.questionWord);
+}
+const whatNoFallback = Resonance.scoreExperience({
+  id:'what-no-fallback',
+  links:{verbs:[]},
+  thinkingMind:[{questionWord:'how'}],
+  perspectives:{describing:{},narrating:{}}
+}, 'what.use.object-question');
+assert.equal(whatNoFallback.score,0,'WHAT assessment must not fall through to verb-function HOW/describing resonance');
+const whyNoFallback = Resonance.scoreExperience({
+  id:'why-no-fallback',
+  links:{verbs:[]},
+  thinkingMind:[{questionWord:'what'}],
+  perspectives:{describing:{},narrating:{}}
+}, 'why.use.contextual-reason');
+assert.equal(whyNoFallback.score,0,'WHY assessment must not inherit verb-function WHAT/describing resonance');
+
 const impossible = Resonance.select(experiences, 'modal-core', { minimumScore: 99 });
 assert.equal(impossible.status, 'no-resonance');
 assert.equal(impossible.minimumScore, 99);
