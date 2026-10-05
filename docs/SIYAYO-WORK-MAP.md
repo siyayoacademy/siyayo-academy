@@ -18,15 +18,35 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-22
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-34
 
-**Recorded:** 2026-10-02 (America/Sao_Paulo)
-**Branch:** `jaguar/verb-explorer-resume-live-wire`
-**Base HEAD:** `fa206b1d83388f234eb82d64fd157dd0212a1b59`
-**Change kind:** DOCUMENTATION / ESTUDO FINO — language ownership impact map.
-**Status:** base CI/deployment green; six isolated audit checks executed. No production JS/CSS/HTML/JSON changed.
-**Report:** [Assessment language impact study](siyayo-assessment-language-impact-study.md).
-**NEXT GO:** homologate explicit assessment unit and pending-target policy before code. LANGUAGE comparison remains free; no automatic per-language migration.
+**Recorded:** 2026-10-04 (America/Sao_Paulo)  
+**Branch:** `jaguar/verb-explorer-resume-live-wire`  
+**Base HEAD:** current branch HEAD after LIVE-33 whole-card speech and TORO history integration.  
+**Change kind:** TRANSVERSAL COHERENCE / CONTRACT-SAFE EXTENSION.  
+**Status:** assessment ownership remains unchanged; presentation truth and assessment resonance were tightened without creating Evidence, Sessions, Green Pass or navigation.
+
+## LIVE-34 — Visual truth and assessment resonance
+
+1. **Trail presentation scope**
+   - The learner Trail now projects active assessment progress with the Session's canonical `assessmentScope.language`, not merely the language currently displayed on screen.
+   - When the visual QWord differs from the active assessment QWord, the Trail explicitly shows the distinction.
+   - When display language differs from assessment language, the Trail explicitly shows both.
+   - This is presentation only: no Session, Evidence, Attempt, retained progress or Green authority changes.
+
+2. **Assessment resonance grounding**
+   - `what.use.object-question` now has an explicit Pedagogical Resonance signal limited to WHAT.
+   - `why.use.contextual-reason` now has an explicit Pedagogical Resonance signal limited to WHY.
+   - Neither assessment skill inherits `verb-function` HOW/WHAT or describing/narrating signals.
+   - Resonance remains an opportunity/reinforcement inspection; it produces no Evidence and cannot authorize navigation.
+
+3. **Preserved prior work**
+   - LIVE-33 whole diagnostic question card speech remains intact.
+   - TORO NEXT / Previous / browser Back / browser Forward presentation memory remains intact.
+   - AdaptiveAssessmentScope ownership remains `learnerId + skill + language + originExperienceId`.
+   - Capability skill remains distinct from assessment skill; no automatic capability→assessment promotion.
+
+**NEXT GO:** audit persistent feedback across WHAT / WHICH / WHY assessment panels, then formalize the reusable capability-skill versus assessment-skill contract before extending WHERE. Browser/device visual homologation remains separate.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
