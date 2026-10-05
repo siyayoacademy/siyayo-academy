@@ -1028,6 +1028,165 @@
             "en": "WHERE",
             "es": "DÓNDE",
             "pt": "ONDE"
+          },
+          "responses": {
+            "en": "We should put the vegetables on the plate.",
+            "es": "Debemos poner las verduras en el plato.",
+            "pt": "Devemos colocar os legumes no prato."
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "Where should we put the vegetables?",
+                  "es": "¿Dónde debemos poner las verduras?",
+                  "pt": "Onde devemos colocar os legumes?"
+                },
+                "response": {
+                  "en": "We should put the vegetables on the plate.",
+                  "es": "Debemos poner las verduras en el plato.",
+                  "pt": "Devemos colocar os legumes no prato."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Where should we put the vegetables?",
+                  "es": "¿Dónde debemos poner las verduras?",
+                  "pt": "Onde devemos colocar os legumes?"
+                },
+                "response": {
+                  "en": "We should not put the vegetables away from the plate.",
+                  "es": "No debemos poner las verduras lejos del plato.",
+                  "pt": "Não devemos colocar os legumes longe do prato."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Where should we put the vegetables?",
+                  "es": "¿Dónde debemos poner las verduras?",
+                  "pt": "Onde devemos colocar os legumes?"
+                },
+                "response": {
+                  "en": "Should we put the vegetables on the plate?",
+                  "es": "¿Debemos poner las verduras en el plato?",
+                  "pt": "Devemos colocar os legumes no prato?"
+                }
+              }
+            },
+            "past": {
+              "affirmative": {
+                "question": {
+                  "en": "Where did we put the vegetables?",
+                  "es": "¿Dónde pusimos las verduras?",
+                  "pt": "Onde colocamos os legumes?"
+                },
+                "response": {
+                  "en": "We put the vegetables on the plate.",
+                  "es": "Pusimos las verduras en el plato.",
+                  "pt": "Colocamos os legumes no prato."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Where did we put the vegetables?",
+                  "es": "¿Dónde pusimos las verduras?",
+                  "pt": "Onde colocamos os legumes?"
+                },
+                "response": {
+                  "en": "We did not put the vegetables away from the plate.",
+                  "es": "No pusimos las verduras lejos del plato.",
+                  "pt": "Não colocamos os legumes longe do prato."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Where did we put the vegetables?",
+                  "es": "¿Dónde pusimos las verduras?",
+                  "pt": "Onde colocamos os legumes?"
+                },
+                "response": {
+                  "en": "Did we put the vegetables on the plate?",
+                  "es": "¿Pusimos las verduras en el plato?",
+                  "pt": "Colocamos os legumes no prato?"
+                }
+              }
+            },
+            "future": {
+              "affirmative": {
+                "question": {
+                  "en": "Where will we put the vegetables?",
+                  "es": "¿Dónde pondremos las verduras?",
+                  "pt": "Onde colocaremos os legumes?"
+                },
+                "response": {
+                  "en": "We will put the vegetables on the plate.",
+                  "es": "Pondremos las verduras en el plato.",
+                  "pt": "Colocaremos os legumes no prato."
+                }
+              },
+              "negative": {
+                "question": {
+                  "en": "Where will we put the vegetables?",
+                  "es": "¿Dónde pondremos las verduras?",
+                  "pt": "Onde colocaremos os legumes?"
+                },
+                "response": {
+                  "en": "We will not put the vegetables away from the plate.",
+                  "es": "No pondremos las verduras lejos del plato.",
+                  "pt": "Não colocaremos os legumes longe do prato."
+                }
+              },
+              "interrogative": {
+                "question": {
+                  "en": "Where will we put the vegetables?",
+                  "es": "¿Dónde pondremos las verduras?",
+                  "pt": "Onde colocaremos os legumes?"
+                },
+                "response": {
+                  "en": "Will we put the vegetables on the plate?",
+                  "es": "¿Pondremos las verduras en el plato?",
+                  "pt": "Colocaremos os legumes no prato?"
+                }
+              }
+            }
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-where-en",
+              "es": "preparing-where-es",
+              "pt": "preparing-where-pt"
+            },
+            "defaultFocus": "put"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-where-en",
+              "es": "preparing-where-es",
+              "pt": "preparing-where-pt"
+            },
+            "targetTokenId": "where",
+            "prompt": {
+              "en": "In “Where should we put the vegetables?”, which verb does “Where” connect to?",
+              "es": "En «¿Dónde debemos poner las verduras?», ¿a qué verbo se vincula «Dónde»?",
+              "pt": "Em “Onde devemos colocar os legumes?”, a qual verbo “Onde” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "should",
+                "put",
+                "vegetables"
+              ],
+              "es": [
+                "should",
+                "put",
+                "vegetables"
+              ],
+              "pt": [
+                "should",
+                "put",
+                "vegetables"
+              ]
+            }
           }
         },
         {
