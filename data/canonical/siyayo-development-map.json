@@ -144,6 +144,45 @@
       ],
       "nextGo": "Define the actual terrain layer and its camera response before wiring transforms; preserve V51 baseline and approved actor geometry; then validate orientation and anchors. No further implementation requested in this checkpoint.",
       "authority": "Visual audit/calibration only; animation is not pedagogical evidence; no assessment or navigation authority changed."
+    },
+    "visualArtStudies": {
+      "recordedAt": "2026-10-05",
+      "timezone": "America/Sao_Paulo",
+      "status": "concept-art-not-integrated",
+      "numberingRule": "Stable artwork IDs are not W-state IDs or fixed narrative sequence numbers. Earlier, intermediate and later views may be inserted without renumbering existing artwork.",
+      "studies": [
+        {
+          "id": "JGS-ART-001",
+          "title": "Frondosa — aerial oblique descent environment",
+          "status": "generated-concept",
+          "source": "Conversation-generated image, 2026-10-05; exec-38c9a3d5-a877-43ed-ae57-55ef0cd41846.png",
+          "camera": "High aerial oblique; tree height and trunk visible",
+          "composition": "Central monumental tree, surrounding forest and river, castle in upper-right corner",
+          "sequenceRole": "Candidate establishing descent view; narrative slot not fixed",
+          "actorsEmbedded": false
+        },
+        {
+          "id": "JGS-ART-002",
+          "title": "Sombreira — vertical nadir canopy",
+          "status": "generated-concept",
+          "camera": "Exact nadir, optical axis perpendicular to ground (90 degrees)",
+          "composition": "Central umbrella crown; radial branches and gaps; forest, river and castle seen from overhead",
+          "sequenceRole": "Candidate downward canopy approach; narrative slot not fixed",
+          "actorsEmbedded": false,
+          "source": "Conversation-generated image, 2026-10-05; exec-5bc18360-7ae2-4875-b906-22125155432c.png",
+          "verification": "Near-nadir overhead study generated; exact optical 90-degree projection not geometrically calibrated. Not yet approved or integrated."
+        }
+      ],
+      "motionIntent": {
+        "continuityObject": "golden-seed",
+        "seedMotion": "Wind-driven lateral drift combined with apparent descent toward canopy, branches, trunk, ground, Jaguar trail and Patita",
+        "environmentMotion": "Camera tilt, rotation, focus and approach with independently composited foreground layers",
+        "advance": "User swipe moves to next composed viewpoint",
+        "wait": "Hold viewpoint for observation and contextual portal opportunities",
+        "destination": "Patita encounter and Nice Party / Piano Stage",
+        "limitation": "Single raster supports initial camera approximation only; passing between branches requires layered assets or spatial scene geometry",
+        "authority": "Concept proposal only; no portal navigation or pedagogical evidence authority implemented"
+      }
     }
   },
   "nextPass": "corpus-experience-capability-mapping",

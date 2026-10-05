@@ -1281,3 +1281,17 @@ Panorama combines forest, castle, mountains and painted river into one JPEG; no 
 4. White rectangle was not reproduced; keep cause open. Toro/Patita names were not located in V51 HTML; project-wide availability remains unaudited.
 
 Resume from this checkpoint when Journey work is requested. Preserve V51, approved actor geometry, Piano and canonical assessment authorities. Animation/visual movement produces no learner Evidence or Green Pass. This entry does not replace the runtime's ACTIVE CHECKPOINT / NEXT GO.
+
+
+## GOLD SEED — VISUAL ART STUDIES · 2026-10-05
+
+Stable artwork numbers are independent of W-state IDs and final narrative order. Insert earlier/intermediate/later scenes without renumbering these artworks.
+
+| Artwork ID | Study | Source image | Status |
+|---|---|---|---|
+| JGS-ART-001 | Frondosa aerial oblique view; tree height, river, forest and upper-right castle | exec-38c9a3d5-a877-43ed-ae57-55ef0cd41846.png · generated in conversation 2026-10-05 | Concept generated; not integrated |
+| JGS-ART-002 | Sombreira centered overhead canopy; requested nadir/90° view | exec-5bc18360-7ae2-4875-b906-22125155432c.png · generated in conversation 2026-10-05 | Near-nadir concept generated; exact projection not geometrically calibrated; not integrated |
+
+User motion intent: wind displaces the Golden Seed laterally during apparent descent between leaves/branches, along trunk, toward ground, Jaguar trail, Patita and Nice Party/Piano Stage. Swipe advances the camera composition; WAIT holds the view for contextual portals. A single raster can support initial zoom/drift only; passing through canopy needs independently composited layers or spatial geometry. Actor assets remain separate. No portal routing or assessment authority is implemented by these art studies.
+
+Machine registry: `data/canonical/siyayo-development-map.json#animatedJourney.visualArtStudies`.
