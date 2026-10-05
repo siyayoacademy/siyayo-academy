@@ -1680,6 +1680,44 @@
             "en": "WHY",
             "es": "POR QUÉ",
             "pt": "POR QUE"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "having-why-en",
+              "es": "having-why-es",
+              "pt": "having-why-pt"
+            },
+            "defaultFocus": "special"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "having-why-en",
+              "es": "having-why-es",
+              "pt": "having-why-pt"
+            },
+            "targetTokenId": "why",
+            "prompt": {
+              "en": "In “Why is this dinner special?”, which predicate does “Why” connect to?",
+              "es": "En «¿Por qué esta cena es especial?», ¿a qué predicado se vincula «Por qué»?",
+              "pt": "Em “Por que este jantar é especial?”, a qual predicado “Por que” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "is",
+                "dinner",
+                "special"
+              ],
+              "es": [
+                "is",
+                "dinner",
+                "special"
+              ],
+              "pt": [
+                "is",
+                "dinner",
+                "special"
+              ]
+            }
           }
         }
       ],
