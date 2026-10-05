@@ -441,5 +441,8 @@ jobs:
       - name: Test S3 WHY Dependency Focus and diagnostic
         run: node scripts/test-having-why-dependency-focus.js
 
+      - name: Test S4 WHY Dependency Focus and diagnostic
+        run: node scripts/test-after-dinner-why-dependency-focus.js
+
       - name: Verify head diagnostic corpus and presentation
         run: node scripts/test-head-probe-corpus-presentation.js
