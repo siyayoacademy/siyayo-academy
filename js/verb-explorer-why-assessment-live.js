@@ -2,6 +2,7 @@
 // The canonical Cycle alone evaluates the Pass Contract and Green Pass.
 (function(root){
 'use strict';
+var feedbackMemory=Object.create(null);
 function text(v){return typeof v==='string'?v.trim():'';}
 function panel(doc){
   if(!doc||typeof doc.getElementById!=='function')return null;
@@ -36,6 +37,7 @@ function mount(input){
   if(typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'||
     typeof catalog.getExperience!=='function'||typeof source.resolve!=='function')return false;
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
+  var feedbackKey=decision&&decision.assessmentScope?decision.assessmentScope.key+'|'+text(experience.id):'';
   var definition=skills.getDefinition&&skills.getDefinition();
   if(!decision||text(decision.skill)!=='why.use.contextual-reason'||
     text(definition&&definition.id)!==text(decision.skill))return false;
@@ -93,6 +95,7 @@ function mount(input){
         feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
           ?copy.green:evaluated.result==='pass'?copy.registered:copy.retry;
         feedback.hidden=false;
+        if(feedbackKey)feedbackMemory[feedbackKey]=Object.freeze({text:feedback.textContent});
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
       });
@@ -101,7 +104,10 @@ function mount(input){
     section.appendChild(options);
     el.appendChild(section);
   });
-  el.appendChild(feedback);el.hidden=false;
+  el.appendChild(feedback);
+  var savedFeedback=feedbackKey&&feedbackMemory[feedbackKey];
+  if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
+  el.hidden=false;
   return true;
 }
 root.SIYAYOVerbExplorerWhyAssessmentLive=Object.freeze({mount:mount,hide:hide});
