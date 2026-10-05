@@ -18,35 +18,32 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-40
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-41
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Change kind:** ISOLATED WHERE EVIDENCE CHAIN — runtime authority still locked.  
-**Status:** WHERE has a tested Specification → Result → Evidence → Attempt chain in isolation; it is still not selectable in the live assessment runtime.
+**Change kind:** WHERE COORDINATOR / ASSESSMENT SCOPE DRY-RUN — live authority still locked.  
+**Status:** a hypothetical WHERE Session has been exercised against the real Coordinator and AssessmentScope boundaries without adding WHERE to live assessment authority.
 
-## LIVE-40 — WHERE evidence ownership proved in isolation
+## LIVE-41 — WHERE scope ownership dry-run
 
-- Added isolated modules:
-  - `AdaptiveWhereLocationProbeSpecificationSource`
-  - `AdaptiveWhereLocationProbeResult`
-  - `AdaptiveWhereLocationProbeEvidenceBridge`
-  - `AdaptiveWhereLocationProbeAttemptBoundary`
-- Specification source accepts only `where.use.location-question` with status `isolated-candidate`.
-- Source requires the grounded Shopping→Preparing location pair and explicitly rejects any WHERE entry already carrying assessmentTarget / assessmentResumeTarget during this isolated stage.
-- Dimensions remain:
-  - `spatial-function` / local
-  - `location-answer` / local
-  - `location-answer` / transfer
-- Transfer ownership requires `fromExperienceId = shopping-for-dinner`; local occurrences must have no origin field.
-- Result comparison is strict on skill, dimension, mode, language, Experience, origin, occurrence and selected alternative.
-- Evidence bridge preserves occurrence, language, Experience, origin and external support provenance.
-- Attempt boundary accepts only the matching observed learner occurrence and matching Evidence.
-- EN / ES / PT tests prove the complete isolated chain can satisfy the candidate Pass Contract only with matching local + transfer evidence.
-- Negative tests reject wrong language, wrong transfer origin, local events carrying an origin, semantic destination choice, and status changes away from isolated-candidate.
-- WHERE remains outside `contractAuthoritySkills`; no live assessmentTarget, Session start, browser wire, presentation panel or Green Pass is exposed yet.
+- Hardened `SIYAYOVerbExplorerAdaptiveCoordinator.configure()` to require `AdaptiveAssessmentScope.ownsContext(scope, context)`, not merely matching scope keys.
+- This closes a transversal defense-in-depth gap: a context whose assessmentScope says EN but whose `context.language` says ES is rejected at Coordinator entry.
+- Added `test-where-coordinator-scope-dry-run.js`.
+- Dry-run constructs a hypothetical WHERE Session with scope:
+  `learner + where.use.location-question + en + shopping-for-dinner`.
+- Local WHERE Attempt binds successfully only to that canonical scope.
+- Transfer WHERE Attempt preserves:
+  - origin `shopping-for-dinner`;
+  - destination `preparing-dinner`;
+  - assessment language EN;
+  - identical assessmentScope key.
+- Visiting Preparing keeps the origin Shopping Session unchanged.
+- Wrong-language binding is rejected.
+- The live `SIYAYOVerbExplorerTransferAttemptAuthority` deliberately still rejects WHERE because WHERE has not been explicitly admitted.
+- WHERE remains absent from `green-pass-authority.json#contractAuthoritySkills`; no assessmentTarget or live presentation surface exists.
 
-**NEXT GO:** perform a dry-run integration audit against the real Coordinator/AssessmentScope before changing authority policy. Prove that a hypothetical WHERE Session would preserve learner + skill + language + origin and transfer semantics without enabling live selection. Only after that dry-run should authority admission be considered.
+**NEXT GO:** if CI is green, audit the exact authority-admission surface before changing policy. Admission must be staged: authority policy first in isolation, transfer authority support second, then explicit Shopping assessmentTarget, and only after those tests pass may a live WHERE panel be considered.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
