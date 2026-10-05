@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-where-pt",
+  "language": "pt",
+  "sentence": "Onde podemos encontrar o salmão?",
+  "tokens": [
+    {
+      "id": "where",
+      "index": 1,
+      "form": "Onde",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO"
+        },
+        "role": {
+          "pt": "Informação espacial perguntada"
+        }
+      }
+    },
+    {
+      "id": "can",
+      "index": 2,
+      "form": "podemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR / MODAL"
+        },
+        "role": {
+          "pt": "Portador modal"
+        }
+      }
+    },
+    {
+      "id": "find",
+      "index": 3,
+      "form": "encontrar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação de localização na pergunta"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "o",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ARTIGO / DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determina salmão"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 5,
+      "form": "salmão",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Elemento que será localizado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "find",
+      "dependent": "where",
+      "relation": "advmod"
+    },
+    {
+      "head": "find",
+      "dependent": "can",
+      "relation": "aux"
+    },
+    {
+      "head": "find",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical pt WHERE question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "where",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. ONDE is modeled as spatial modifier of ENCONTRAR; no assessment claim."
+  }
+}
