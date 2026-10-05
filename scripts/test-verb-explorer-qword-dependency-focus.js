@@ -30,8 +30,21 @@ for(const id of ['shopping-for-dinner','preparing-dinner']){
   assert.ok(rendered.structure.relations.some(r=>r.dependent==='what'&&r.relation==='obj'));
  }
  question=x.thinkingMind.find(q=>q.questionWord==='where');
+ for(const lang of ['en','es','pt']){
+  vm.runInContext('experienceLanguage='+JSON.stringify(lang),context);
+  root.x=x;vm.runInContext('renderDependencyFocus(x)',context);
+  assert.equal(surface.hidden,false,'declared WHERE Dependency Focus must remain visible');
+  assert.equal(rendered.structure.language,lang);
+  assert.equal(rendered.structure.sentence,question.question[lang]);
+  assert.ok(Focus.resolve(rendered.structure,rendered.focusId));
+  for(const token of rendered.structure.tokens)assert.ok(Focus.resolve(rendered.structure,token.id));
+  assert.ok(rendered.structure.relations.some(r=>r.dependent==='where'&&r.relation==='advmod'));
+ }
+ const undeclared=x.thinkingMind.find(q=>!q.dependencyFocus&&q.questionWord!=='which');
+ assert.ok(undeclared,'fixture must retain at least one QWord without Dependency Focus');
+ question=undeclared;
  vm.runInContext('renderDependencyFocus(x)',context);
- assert.equal(surface.hidden,true,'undeclared QWord cannot display unrelated books fixture');
+ assert.equal(surface.hidden,true,'undeclared QWord cannot display unrelated dependency fixture');
 }
 const shopping=seeds.find(x=>x.id==='shopping-for-dinner');
 question=shopping.thinkingMind.find(q=>q.questionWord==='which');
