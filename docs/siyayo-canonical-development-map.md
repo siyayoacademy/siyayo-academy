@@ -151,6 +151,204 @@ L3 contextual interaction / portal / WAIT controls
 
 No scene may grow under or collide with persistent controls. Portrait, landscape and reduced-motion behavior must be defined before homologation.
 
+## GOLD CONNECTION — Tri-Language Verb Explorer adaptive expansion DNA
+
+The label already present in the Explorer is architectural, not ornamental:
+
+`SIYAYO ACADEMY · GOLD CONNECTION`  
+`Tri-Language Verb Explorer`
+
+GOLD CONNECTION names the reusable connection between **large canonical knowledge**, **Thinking Mind opportunities**, **explicit assessment authority**, **learner evidence** and **TORO expansion**.
+
+The Academy may grow toward encyclopedia-scale interactivity without turning every visible word or question into simultaneous assessment.
+
+### Expansion grammar
+
+```text
+CANONICAL CORPUS
+      ↓
+CAPABILITY AVAILABLE
+      ↓
+THINKING MIND OPPORTUNITY
+      ↓
+CONTRACT AUTHORITY?
+      ↓
+EXPLICIT EXPERIENCE ASSESSMENT TARGET?
+      ↓
+LEARNER ACTION
+      ↓
+ATTEMPT
+      ↓
+EVIDENCE
+      ↓
+PASS CONTRACT
+      ↓
+WAIT or GREEN
+      ↓
+TORO EXPANSION
+```
+
+The gates are deliberately separate.
+
+- **Capability** means the learner may encounter, explore, listen to, compare or practice a meaningful opportunity.
+- **Contract Authority** means the skill is mature enough to make contractual pedagogical claims.
+- **Assessment Target** means this specific Experience explicitly chooses that authorized skill for assessment.
+- **Evidence** means an observed learner action with valid learner, skill, language, origin, occurrence and support provenance.
+
+Therefore:
+
+```text
+content present        ≠ assessment active
+capability present     ≠ contract authorized
+contract authorized    ≠ assessment targeted
+visual exploration     ≠ learner evidence
+navigation             ≠ Session transition
+animation              ≠ evidence
+Green Pass             ≠ automatic NEXT
+```
+
+### TORO as adaptive expansion
+
+TORO is not a fixed lesson sequence. It is the controlled expansion of meaningful opportunities around a stable learner identity and evidence core.
+
+```text
+CENTER
+  learner identity
+  profile
+  assessment scope
+  evidence history
+
+RINGS
+  Experiences
+  Question Words
+  verbs
+  nouns
+  adjectives
+  other word types
+  perspectives
+  semantic contexts
+
+OPENINGS
+  capabilities exposed by Thinking Mind + corpus
+
+GATES
+  Contract Authority + explicit assessmentTarget
+
+SEEDS
+  observed learner evidence
+
+GREEN
+  confirmed Pass Contract
+
+NEW RING
+  new Experiences, contrasts, lexical families and QWords
+```
+
+A learner can therefore expand non-linearly. One learner may confirm WHAT and WHERE while still reinforcing WHICH; another may progress through WHY and HOW first. The system does not need to force every learner through one identical list.
+
+### Encyclopedia-scale corpus, narrow authority
+
+A large inventory of verbs, adjectives, nouns, Question Words, prepositions, perspectives and contexts may exist simultaneously in canonical corpus.
+
+That abundance is desirable.
+
+It does **not** mean every item should gain its own evaluator immediately.
+
+The intended architecture is:
+
+```text
+many verbs
+many adjectives
+many nouns
+many QWords
+many Experiences
+        ↓
+structured reusable corpus
+        ↓
+contextually exposed opportunities
+        ↓
+small explicitly authorized assessment surface
+        ↓
+profile-sensitive expansion
+```
+
+This allows the Tri-Language Verb Explorer to become increasingly encyclopedic while preserving pedagogical precision.
+
+A new verb can become interactive as soon as an Experience needs it. An adjective can participate in semantic comparison before it owns a dedicated skill. A Question Word can be visible and useful for years before its Green Pass contract is mature. Corpus richness and assessment maturity evolve independently.
+
+### Profile-sensitive expansion
+
+Adaptive behavior should change the **field of opportunities**, not merely choose a different static lesson.
+
+The learner profile may influence which capability is:
+
+- visible,
+- emphasized,
+- practiced,
+- assessed,
+- reinforced,
+- transferred,
+- confirmed,
+- or left in WAIT.
+
+The profile must never fabricate competence. Expansion is driven by evidence plus explicit authority.
+
+### GOLD CONNECTION and the archetypes
+
+The same architecture gives the current archetypes concrete system roles:
+
+```text
+THINKING MIND
+  sees meaningful information needs
+
+JAGUAR
+  executes the next precise validated step
+
+EAGLE
+  audits coherence across visual state,
+  assessment scope and authority
+
+PATITA
+  remembers the observed path
+
+GOLDEN SEED
+  atomic grounded knowledge / evidence
+
+FRONDOSA
+  accumulated and expanding capability structure
+
+TORO
+  return + integration + outward expansion
+```
+
+These are not separate evidence authorities. They are perceptual, operational or narrative views over the same canonical learning system.
+
+### Branch and page inheritance rule
+
+Every new SIYAYO branch, page or interactive surface should grow under this same GOLD CONNECTION contract.
+
+A new implementation must not create an independent mastery, score, progression, routing or Green authority merely because it introduces new content.
+
+Before a capability becomes evaluative, the development path should be:
+
+```text
+canonical content
+→ capability
+→ Experience grounding
+→ skill definition
+→ Pass Contract
+→ Specification / Result / Evidence / Attempt
+→ AssessmentScope / Coordinator dry-run
+→ Contract Authority admission
+→ explicit assessmentTarget
+→ live assessment surface
+→ Green / WAIT
+```
+
+This staged path is the reusable expansion DNA for the Ten Kinds, Question Words, Verb DNA, future Experiences, Frondosa/Piano surfaces and other Academy branches.
+
+---
+
 ## Development admission rule
 
 Before implementing a new SIYAYO feature, record:
