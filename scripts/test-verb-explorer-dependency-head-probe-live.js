@@ -29,6 +29,18 @@ const html = fs.readFileSync('verb-explorer.html','utf8');
 const runtime = fs.readFileSync('js/verb-explorer.js','utf8');
 const bootstrap = fs.readFileSync('js/verb-explorer-adaptive-bootstrap.js','utf8');
 
+const preloadOrder=[
+  'js/verb-explorer-learner-event.js',
+  'js/adaptive-dependency-head-probe-definition.js',
+  'js/adaptive-dependency-head-probe-presenter.js',
+  'js/adaptive-dependency-head-probe-browser-wire.js',
+  'js/adaptive-dependency-head-probe-result.js',
+  'js/verb-explorer-dependency-head-probe-live.js',
+  'js/verb-explorer.js'
+].map(src=>html.indexOf('src="'+src+'"'));
+assert.ok(preloadOrder.every(index=>index>=0),'first render must preload diagnostic Head Probe micro-stack');
+assert.ok(preloadOrder.every((value,index)=>index===0||value>preloadOrder[index-1]),'diagnostic Head Probe preload must precede verb-explorer.js in dependency order');
+
 const shopping = corpus.items.find(item=>item.id==='shopping-for-dinner');
 assert.ok(shopping);
 assert.deepEqual(shopping.dependencyHeadProbe,{
