@@ -18,34 +18,35 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-39
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-40
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Change kind:** ISOLATED WHERE SKILL CONTRACT — not yet selectable.  
-**Status:** WHERE has a canonical candidate skill and Pass Contract in isolation; runtime authority still refuses it.
+**Change kind:** ISOLATED WHERE EVIDENCE CHAIN — runtime authority still locked.  
+**Status:** WHERE has a tested Specification → Result → Evidence → Attempt chain in isolation; it is still not selectable in the live assessment runtime.
 
-## LIVE-39 — WHERE location skill candidate
+## LIVE-40 — WHERE evidence ownership proved in isolation
 
-- Added `data/learning/skills/where.json` with candidate id `where.use.location-question`.
-- Semantic scope is restricted to `spatial-target / location`; destination remains explicitly outside the first Green claim.
-- Candidate Pass Contract:
-  1. `spatial-function` pass;
-  2. `location-answer` pass, support none, mode local;
-  3. `location-answer` pass, support none, mode transfer.
-- Grounding references the existing Shopping → Preparing WHERE location pair.
-- `doesNotClaim`: destination-use, preposition mastery, movement-verb mastery, pronunciation, cross-language equivalence, long-term retention.
-- Isolated tests verify:
-  - local and transfer are independent;
-  - transfer cannot satisfy local;
-  - head diagnostic does not satisfy any contract requirement;
-  - destination-answer does not satisfy location-answer;
-  - assisted local answer does not satisfy support:none.
-- WHERE remains absent from `green-pass-authority.json#contractAuthoritySkills`.
-- Leaf Assessment Target Authority explicitly tests and rejects `where.use.location-question`.
-- No WHERE `assessmentTarget`, Session creation, evaluator wiring, Evidence bridge or live Green exists yet.
+- Added isolated modules:
+  - `AdaptiveWhereLocationProbeSpecificationSource`
+  - `AdaptiveWhereLocationProbeResult`
+  - `AdaptiveWhereLocationProbeEvidenceBridge`
+  - `AdaptiveWhereLocationProbeAttemptBoundary`
+- Specification source accepts only `where.use.location-question` with status `isolated-candidate`.
+- Source requires the grounded Shopping→Preparing location pair and explicitly rejects any WHERE entry already carrying assessmentTarget / assessmentResumeTarget during this isolated stage.
+- Dimensions remain:
+  - `spatial-function` / local
+  - `location-answer` / local
+  - `location-answer` / transfer
+- Transfer ownership requires `fromExperienceId = shopping-for-dinner`; local occurrences must have no origin field.
+- Result comparison is strict on skill, dimension, mode, language, Experience, origin, occurrence and selected alternative.
+- Evidence bridge preserves occurrence, language, Experience, origin and external support provenance.
+- Attempt boundary accepts only the matching observed learner occurrence and matching Evidence.
+- EN / ES / PT tests prove the complete isolated chain can satisfy the candidate Pass Contract only with matching local + transfer evidence.
+- Negative tests reject wrong language, wrong transfer origin, local events carrying an origin, semantic destination choice, and status changes away from isolated-candidate.
+- WHERE remains outside `contractAuthoritySkills`; no live assessmentTarget, Session start, browser wire, presentation panel or Green Pass is exposed yet.
 
-**NEXT GO:** design WHERE probe specification/result/evidence mapping in isolation from the grounded Shopping→Preparing content pair. Preserve the authority lock until isolated evidence tests prove dimension, mode, language, origin and transfer ownership.
+**NEXT GO:** perform a dry-run integration audit against the real Coordinator/AssessmentScope before changing authority policy. Prove that a hypothetical WHERE Session would preserve learner + skill + language + origin and transfer semantics without enabling live selection. Only after that dry-run should authority admission be considered.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
