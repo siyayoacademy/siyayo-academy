@@ -1,0 +1,183 @@
+{
+  "id": "siyayo-environment-library",
+  "version": "0.2.0",
+  "status": "shared-reusable-foundation",
+  "principle": "Environment controls atmosphere and stage context only. It does not create pedagogical state, Evidence, GREEN or Session authority.",
+  "defaultEnvironment": "cosmic-night",
+  "environments": [
+    {
+      "id": "cosmic-night",
+      "label": {
+        "en": "Cosmic Night",
+        "es": "Noche Cósmica",
+        "pt": "Noite Cósmica"
+      },
+      "family": "celestial",
+      "daypart": "night",
+      "weather": "clear",
+      "visualTokens": {
+        "sky": "deep-indigo",
+        "horizon": "violet-blue",
+        "light": "golden-starlight",
+        "atmosphere": "stars-nebula"
+      },
+      "compatibleSurfaces": [
+        "animated-journey",
+        "piano-stage",
+        "verb-dna",
+        "verb-explorer",
+        "experience"
+      ]
+    },
+    {
+      "id": "forest-day",
+      "label": {
+        "en": "Forest Day",
+        "es": "Bosque de Día",
+        "pt": "Floresta de Dia"
+      },
+      "family": "forest",
+      "daypart": "day",
+      "weather": "clear",
+      "visualTokens": {
+        "sky": "soft-daylight",
+        "horizon": "green-gold",
+        "light": "sun-filtered",
+        "atmosphere": "leaf-dapple"
+      },
+      "compatibleSurfaces": [
+        "animated-journey",
+        "piano-stage",
+        "experience"
+      ]
+    },
+    {
+      "id": "forest-night",
+      "label": {
+        "en": "Forest Night",
+        "es": "Bosque Nocturno",
+        "pt": "Floresta Noturna"
+      },
+      "family": "forest",
+      "daypart": "night",
+      "weather": "clear",
+      "visualTokens": {
+        "sky": "midnight-blue",
+        "horizon": "deep-green",
+        "light": "moon-gold",
+        "atmosphere": "mist-stars"
+      },
+      "compatibleSurfaces": [
+        "animated-journey",
+        "piano-stage",
+        "experience"
+      ]
+    },
+    {
+      "id": "river-dawn",
+      "label": {
+        "en": "River Dawn",
+        "es": "Río al Amanecer",
+        "pt": "Rio ao Amanhecer"
+      },
+      "family": "river",
+      "daypart": "dawn",
+      "weather": "clear",
+      "visualTokens": {
+        "sky": "pearl-blue",
+        "horizon": "rose-gold",
+        "light": "dawn",
+        "atmosphere": "water-mist"
+      },
+      "compatibleSurfaces": [
+        "animated-journey",
+        "piano-stage",
+        "experience"
+      ]
+    },
+    {
+      "id": "nice-party-evening",
+      "label": {
+        "en": "Nice Party Evening",
+        "es": "Nice Party al Atardecer",
+        "pt": "Nice Party ao Entardecer"
+      },
+      "family": "social",
+      "daypart": "evening",
+      "weather": "indoor-or-clear",
+      "visualTokens": {
+        "sky": "navy-warm",
+        "horizon": "amber",
+        "light": "festive-gold",
+        "atmosphere": "soft-bokeh"
+      },
+      "compatibleSurfaces": [
+        "animated-journey",
+        "piano-stage",
+        "verb-explorer",
+        "experience"
+      ]
+    }
+  ],
+  "selectors": {
+    "developerManual": true,
+    "runtimeEvent": "siyayo:set-environment",
+    "autoLocalTime": {
+      "status": "implemented-daypart-only",
+      "source": "browser-local-clock",
+      "mapping": {
+        "dawn": [
+          5,
+          7
+        ],
+        "day": [
+          7,
+          17
+        ],
+        "evening": [
+          17,
+          20
+        ],
+        "night": [
+          20,
+          5
+        ]
+      },
+      "weatherIntegration": "future-open"
+    },
+    "weatherPreview": true,
+    "weatherRuntimeEvent": "siyayo:set-weather"
+  },
+  "boundaries": {
+    "environmentDoesNotChangePedagogy": true,
+    "environmentDoesNotChangeLanguage": true,
+    "environmentDoesNotChangeAssessmentTarget": true,
+    "environmentDoesNotProduceEvidence": true,
+    "environmentDoesNotProduceGreen": true,
+    "experienceMayBindEnvironmentExplicitly": true
+  },
+  "weatherSystem": {
+    "status": "presentation-contract-active",
+    "defaultWeather": "clear",
+    "allowed": [
+      "clear",
+      "cloudy",
+      "mist",
+      "rain"
+    ],
+    "runtimeEvent": "siyayo:set-weather",
+    "presentationOnly": true,
+    "externalWeatherSource": "not-connected",
+    "autoWeather": {
+      "status": "future-open",
+      "source": "external-weather-provider"
+    },
+    "boundaries": {
+      "weatherDoesNotChangePedagogy": true,
+      "weatherDoesNotChangeLanguage": true,
+      "weatherDoesNotChangeAssessmentTarget": true,
+      "weatherDoesNotProduceEvidence": true,
+      "weatherDoesNotProduceGreen": true
+    }
+  }
+}
