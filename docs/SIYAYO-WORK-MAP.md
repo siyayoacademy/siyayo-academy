@@ -18,33 +18,31 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-37
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-38
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Change kind:** WHERE PRESENTATION GROUNDING — no assessment authority.  
-**Status:** Preparing WHERE is now contextually and structurally grounded in EN/ES/PT while remaining exploration-only.
+**Change kind:** WHERE ORIGIN + TRANSFER CONTENT GROUNDING — still no assessment authority.  
+**Status:** Shopping and Preparing WHERE now form a structurally grounded location pair suitable for future contract design.
 
-## LIVE-37 — Preparing WHERE grounded without Green
+## LIVE-38 — WHERE local/transfer content pair
 
-- Reused the existing Nice Party `table-setting` accessory `plate / plato / prato` as the canonical spatial anchor; no new bowl/counter/location object was invented.
-- Preparing WHERE now has a canonical trilingual response:
-  - EN: `We should put the vegetables on the plate.`
-  - ES: `Debemos poner las verduras en el plato.`
-  - PT: `Devemos colocar os legumes no prato.`
-- Added Present / Past / Future × Affirmative / Negative / Interrogative dialogueForms so TENSE / MODE can operate on WHERE in the same Experience.
-- Added EN/ES/PT Dependency Focus structures:
-  - `preparing-where-en`
-  - `preparing-where-es`
-  - `preparing-where-pt`
-- Canonical relation: WHERE / DÓNDE / ONDE → PUT / PONER / COLOCAR as `advmod`; vegetables remains the object.
-- Added observational Dependency Head Probe asking which verb WHERE connects to. The correct head is `put`; this diagnostic produces no contract point.
-- Verb Explorer now loads all three WHERE structures.
-- Updated WHERE semantic study map: Preparing is `presentation-grounded-no-assessment`.
-- No `assessmentTarget`, `assessmentResumeTarget`, evaluator, Evidence bridge, Pass Contract or Green authority was added.
-- Presentation grounding uses authored corpus + existing Nice Party accessory; it must not be mistaken for assessment `answerGrounding`.
+- Added Shopping WHERE EN/ES/PT dependency structures:
+  - `shopping-where-en`
+  - `shopping-where-es`
+  - `shopping-where-pt`
+- Canonical Shopping relation: WHERE / DÓNDE / ONDE → FIND / ENCONTRAR as `advmod`; salmon remains the object.
+- Shopping WHERE now declares Dependency Focus and an observational Head Probe asking which verb WHERE connects to.
+- Preparing WHERE remains grounded to PUT / PONER / COLOCAR and plate / plato / prato from LIVE-37.
+- Added `where-spatial-answer-grounding.json` as a reusable content-only map:
+  - Shopping = candidate local location context.
+  - Preparing = candidate transfer location context.
+  - Both explicitly deny preposition mastery, cross-language equivalence and Green.
+  - Future evidence requires explicit local/transfer mode.
+- No WHERE `assessmentTarget`, `assessmentResumeTarget`, evaluator, Evidence bridge, Pass Contract or Green authority exists yet.
+- College destination WHERE remains outside this first location pair.
 
-**NEXT GO:** ground Shopping WHERE Dependency Focus / observational diagnostic and define an explicit reusable spatial answer-grounding model for Shopping + Preparing. Only after local and transfer answer semantics are explicit may a WHERE skill definition be proposed.
+**NEXT GO:** design a canonical WHERE assessment skill definition and Pass Contract in isolation, grounded only in this Shopping→Preparing location pair. Test contract semantics and negative cases before adding any assessmentTarget to corpus.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
