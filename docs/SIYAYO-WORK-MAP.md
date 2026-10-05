@@ -18,31 +18,34 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-38
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-39
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Change kind:** WHERE ORIGIN + TRANSFER CONTENT GROUNDING — still no assessment authority.  
-**Status:** Shopping and Preparing WHERE now form a structurally grounded location pair suitable for future contract design.
+**Change kind:** ISOLATED WHERE SKILL CONTRACT — not yet selectable.  
+**Status:** WHERE has a canonical candidate skill and Pass Contract in isolation; runtime authority still refuses it.
 
-## LIVE-38 — WHERE local/transfer content pair
+## LIVE-39 — WHERE location skill candidate
 
-- Added Shopping WHERE EN/ES/PT dependency structures:
-  - `shopping-where-en`
-  - `shopping-where-es`
-  - `shopping-where-pt`
-- Canonical Shopping relation: WHERE / DÓNDE / ONDE → FIND / ENCONTRAR as `advmod`; salmon remains the object.
-- Shopping WHERE now declares Dependency Focus and an observational Head Probe asking which verb WHERE connects to.
-- Preparing WHERE remains grounded to PUT / PONER / COLOCAR and plate / plato / prato from LIVE-37.
-- Added `where-spatial-answer-grounding.json` as a reusable content-only map:
-  - Shopping = candidate local location context.
-  - Preparing = candidate transfer location context.
-  - Both explicitly deny preposition mastery, cross-language equivalence and Green.
-  - Future evidence requires explicit local/transfer mode.
-- No WHERE `assessmentTarget`, `assessmentResumeTarget`, evaluator, Evidence bridge, Pass Contract or Green authority exists yet.
-- College destination WHERE remains outside this first location pair.
+- Added `data/learning/skills/where.json` with candidate id `where.use.location-question`.
+- Semantic scope is restricted to `spatial-target / location`; destination remains explicitly outside the first Green claim.
+- Candidate Pass Contract:
+  1. `spatial-function` pass;
+  2. `location-answer` pass, support none, mode local;
+  3. `location-answer` pass, support none, mode transfer.
+- Grounding references the existing Shopping → Preparing WHERE location pair.
+- `doesNotClaim`: destination-use, preposition mastery, movement-verb mastery, pronunciation, cross-language equivalence, long-term retention.
+- Isolated tests verify:
+  - local and transfer are independent;
+  - transfer cannot satisfy local;
+  - head diagnostic does not satisfy any contract requirement;
+  - destination-answer does not satisfy location-answer;
+  - assisted local answer does not satisfy support:none.
+- WHERE remains absent from `green-pass-authority.json#contractAuthoritySkills`.
+- Leaf Assessment Target Authority explicitly tests and rejects `where.use.location-question`.
+- No WHERE `assessmentTarget`, Session creation, evaluator wiring, Evidence bridge or live Green exists yet.
 
-**NEXT GO:** design a canonical WHERE assessment skill definition and Pass Contract in isolation, grounded only in this Shopping→Preparing location pair. Test contract semantics and negative cases before adding any assessmentTarget to corpus.
+**NEXT GO:** design WHERE probe specification/result/evidence mapping in isolation from the grounded Shopping→Preparing content pair. Preserve the authority lock until isolated evidence tests prove dimension, mode, language, origin and transfer ownership.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
