@@ -1295,3 +1295,12 @@ Stable artwork numbers are independent of W-state IDs and final narrative order.
 User motion intent: wind displaces the Golden Seed laterally during apparent descent between leaves/branches, along trunk, toward ground, Jaguar trail, Patita and Nice Party/Piano Stage. Swipe advances the camera composition; WAIT holds the view for contextual portals. A single raster can support initial zoom/drift only; passing through canopy needs independently composited layers or spatial geometry. Actor assets remain separate. No portal routing or assessment authority is implemented by these art studies.
 
 Machine registry: `data/canonical/siyayo-development-map.json#animatedJourney.visualArtStudies`.
+
+
+### GOLD SEED — ADDITIONAL DESCENT STUDIES · 2026-10-05
+
+- **JGS-ART-003 — Canopy approach**: Closer overhead crown; central gap and larger foreground leaves. Candidate narrative role: Approach canopy. Source: `exec-9b01afa8-c95e-4ba1-9d3f-a0e4d41fdce4.png` (conversation-generated image).
+- **JGS-ART-004 — Passage between branches**: Descending steep view alongside trunk; branch tiers and roots below. Candidate narrative role: Pass canopy toward trunk. Source: `exec-1606e50e-7d32-4700-8dcf-2ec9c68d2e2d.png` (conversation-generated image).
+- **JGS-ART-005 — Roots and Jaguar trail approach**: Low oblique roots/trail view; river at right, warm distant clearing. Candidate narrative role: Ground arrival and trail toward Patita/Nice Party. Source: `exec-69791587-599d-4ff0-acb7-d5170f58efe4.png` (conversation-generated image).
+
+All three are generated concept studies, not integrated V52 assets. Stable IDs do not fix W-state or narrative order. Shared appearance is an art direction reference, not proof of geometric continuity; transitions, occlusion, wind-driven seed drift and actor-layer separation remain to be built and verified.

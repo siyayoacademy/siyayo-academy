@@ -171,6 +171,36 @@
           "actorsEmbedded": false,
           "source": "Conversation-generated image, 2026-10-05; exec-5bc18360-7ae2-4875-b906-22125155432c.png",
           "verification": "Near-nadir overhead study generated; exact optical 90-degree projection not geometrically calibrated. Not yet approved or integrated."
+        },
+        {
+          "id": "JGS-ART-003",
+          "title": "Canopy approach",
+          "status": "generated-concept-not-integrated",
+          "source": "Conversation-generated image, 2026-10-05; exec-9b01afa8-c95e-4ba1-9d3f-a0e4d41fdce4.png",
+          "camera": "Closer overhead crown; central gap and larger foreground leaves",
+          "sequenceRole": "Approach canopy",
+          "actorsEmbedded": false,
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation."
+        },
+        {
+          "id": "JGS-ART-004",
+          "title": "Passage between branches",
+          "status": "generated-concept-not-integrated",
+          "source": "Conversation-generated image, 2026-10-05; exec-1606e50e-7d32-4700-8dcf-2ec9c68d2e2d.png",
+          "camera": "Descending steep view alongside trunk; branch tiers and roots below",
+          "sequenceRole": "Pass canopy toward trunk",
+          "actorsEmbedded": false,
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation."
+        },
+        {
+          "id": "JGS-ART-005",
+          "title": "Roots and Jaguar trail approach",
+          "status": "generated-concept-not-integrated",
+          "source": "Conversation-generated image, 2026-10-05; exec-69791587-599d-4ff0-acb7-d5170f58efe4.png",
+          "camera": "Low oblique roots/trail view; river at right, warm distant clearing",
+          "sequenceRole": "Ground arrival and trail toward Patita/Nice Party",
+          "actorsEmbedded": false,
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation."
         }
       ],
       "motionIntent": {
