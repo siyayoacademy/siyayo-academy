@@ -23,6 +23,7 @@ async function run(){
  SIYAYOVerbExplorerCanonicalSkillLoader:{clear(){}},
  SIYAYOLeafAssessmentTargetAuthority:{clear(){}}};
  root.globalThis=root;
+ vm.runInNewContext(fs.readFileSync('js/question-word-assessment-contract.js','utf8'),root);
  vm.runInNewContext(fs.readFileSync('js/verb-explorer-thinking-mind-assessment-selection.js','utf8'),root);
  const selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
  await selection.select(question);
