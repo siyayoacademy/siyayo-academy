@@ -2,6 +2,14 @@ const assert = require('assert');
 const fs = require('fs');
 const vm = require('vm');
 
+const bootstrapSource = fs.readFileSync('js/verb-explorer-adaptive-bootstrap.js','utf8');
+assert.match(bootstrapSource,/\.catch\(function\(error\)\{/,'adaptive bootstrap must preserve an explicit failure boundary');
+assert.match(
+  bootstrapSource,
+  /SIYAYOVerbExplorerExperienceRuntime[\s\S]*?experienceRuntime\.render\(\)[\s\S]*?throw error/,
+  'failed specialized loading must re-render the base Experience and still reject readiness'
+);
+
 const appended = [];
 const clickListeners = [];
 const eventListeners = Object.create(null);
