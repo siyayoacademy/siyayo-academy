@@ -33,6 +33,19 @@ function key(learnerId,skill,state){
     originExperienceId:state&&state.currentExperienceId});
   return scope&&scope.key;
 }
+function retainedTransfer(learnerId,skill,language,destinationId){
+  var api=root.AdaptiveAssessmentScope;
+  var navigation=root.SIYAYOVerbExplorerExperienceNavigation;
+  if(!api||!learnerId||!skill||!language||!destinationId||!navigation||typeof navigation.getExperience!=='function')return null;
+  var matches=Object.keys(retained).map(function(cacheKey){
+    var entry=retained[cacheKey],decision=entry&&entry.snapshot&&entry.snapshot.session&&entry.snapshot.session.decision;
+    var scope=decision&&decision.assessmentScope;
+    if(!entry||!api.valid(scope)||scope.learnerId!==learnerId||scope.skill!==skill||scope.language!==language)return null;
+    var origin=navigation.getExperience(scope.originExperienceId);
+    return origin&&text(origin.toroidalNext&&origin.toroidalNext.nextExperience)===destinationId?entry:null;
+  }).filter(Boolean);
+  return matches.length===1?matches[0]:null;
+}
 function remember(snapshot,definition){
   var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
   var learnerId=identity&&identity.getId&&identity.getId();
@@ -100,6 +113,15 @@ function select(question,options){
     return Promise.resolve(true);
   var requestedKey=learnerId&&key(learnerId,skill,liveState);
   var saved=requestedKey&&retained[requestedKey];
+  // A resume-only selection may recover one retained origin circuit even when
+  // another QWord/skill currently owns the active Session at the destination.
+  if(!saved&&resumeOnly&&learnerId&&liveState){
+    saved=retainedTransfer(learnerId,skill,liveState.experienceLanguage,liveState.currentExperienceId);
+    if(saved){
+      var savedScope=saved.snapshot.session.decision.assessmentScope;
+      requestedKey=savedScope&&savedScope.key;
+    }
+  }
   // A transfer visit retains the circuit's origin. Recover only the same
   // learner/skill/origin in the explicitly selected language; never create S2 here.
   var activeDecision=active&&active.session&&active.session.decision;
