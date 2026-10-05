@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-where-es",
+  "language": "es",
+  "sentence": "¿Dónde debemos poner las verduras?",
+  "tokens": [
+    {
+      "id": "where",
+      "index": 1,
+      "form": "Dónde",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": "Información espacial preguntada"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 2,
+      "form": "debemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR / MODAL"
+        },
+        "role": {
+          "es": "Portador modal"
+        }
+      }
+    },
+    {
+      "id": "put",
+      "index": 3,
+      "form": "poner",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción de colocación en la pregunta"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "las",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "ARTÍCULO / DETERMINANTE"
+        },
+        "role": {
+          "es": "Determina verduras"
+        }
+      }
+    },
+    {
+      "id": "vegetables",
+      "index": 5,
+      "form": "verduras",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Elemento que se coloca"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "put",
+      "dependent": "where",
+      "relation": "advmod"
+    },
+    {
+      "head": "put",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "put",
+      "dependent": "vegetables",
+      "relation": "obj"
+    },
+    {
+      "head": "vegetables",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHERE question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "where",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. DÓNDE is modeled as spatial modifier of PONER; no assessment claim."
+  }
+}
