@@ -3,12 +3,14 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 
+const contractCode=fs.readFileSync('js/question-word-assessment-contract.js','utf8');
 const code=fs.readFileSync('js/verb-explorer-thinking-mind-assessment-selection.js','utf8');
 
 function load(options={}){
   const calls=[];
   const sandbox=vm.createContext({Object,Promise});
   sandbox.globalThis=sandbox;
+  vm.runInContext(contractCode,sandbox,{filename:'js/question-word-assessment-contract.js'});
   if(options.provider!==false){
     sandbox.SIYAYOLeafAssessmentTargetProvider={
       select(leaf){
@@ -60,7 +62,7 @@ function load(options={}){
     // anonymous WHAT selection after the learner has chosen undeclared WHICH.
     const root={Object,Promise};root.globalThis=root;
     const context=vm.createContext(root);
-    for(const name of ['leaf-assessment-target-authority','leaf-assessment-target-readiness',
+    for(const name of ['question-word-assessment-contract','leaf-assessment-target-authority','leaf-assessment-target-readiness',
       'leaf-assessment-target-provider','verb-explorer-thinking-mind-assessment-selection']){
       vm.runInContext(fs.readFileSync('js/'+name+'.js','utf8'),context);
     }
