@@ -18,35 +18,27 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-34
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-35
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Base HEAD:** current branch HEAD after LIVE-33 whole-card speech and TORO history integration.  
-**Change kind:** TRANSVERSAL COHERENCE / CONTRACT-SAFE EXTENSION.  
-**Status:** assessment ownership remains unchanged; presentation truth and assessment resonance were tightened without creating Evidence, Sessions, Green Pass or navigation.
+**Change kind:** CANONICAL CONTRACT BOUNDARY — Question Word capability versus evaluative skill.  
+**Status:** runtime selection now requires the explicit QWord assessment contract; no capability skill can be promoted automatically into a Session.
 
-## LIVE-34 — Visual truth and assessment resonance
+## LIVE-35 — Capability Skill ≠ Assessment Skill
 
-1. **Trail presentation scope**
-   - The learner Trail now projects active assessment progress with the Session's canonical `assessmentScope.language`, not merely the language currently displayed on screen.
-   - When the visual QWord differs from the active assessment QWord, the Trail explicitly shows the distinction.
-   - When display language differs from assessment language, the Trail explicitly shows both.
-   - This is presentation only: no Session, Evidence, Attempt, retained progress or Green authority changes.
+- Added `SIYAYOQuestionWordAssessmentContract` as a pure boundary between Thinking Mind information-gap capability and evaluative assessment declaration.
+- Capability resolution remains opportunity-only and produces no Evidence.
+- Assessment begins only from an explicit `assessmentTarget`; `assessmentResumeTarget` remains recovery-only.
+- The boundary exposes `OPPORTUNITY_ONLY`, `ASSESSMENT_DECLARED`, and `ASSESSMENT_RESUME_ONLY` without loading definitions, creating Sessions, producing Evidence, evaluating Green Pass, or navigating.
+- Thinking Mind assessment selection now consults this boundary before forwarding a target to the existing Leaf provider.
+- Production HTML loads the contract before the selection runtime.
+- WHAT / WHICH / WHY existing declared contracts are preserved.
+- Preparing WHICH remains resume-only.
+- WHERE currently has capability opportunities in the dinner corpus but no assessment target, so it remains exploration-only / WAIT for evaluation. Presence of WHERE can never create a Session by inference.
+- Capability identifiers such as `where.identify.place` remain distinct from any future assessment skill unless a canonical assessment target explicitly declares one.
 
-2. **Assessment resonance grounding**
-   - `what.use.object-question` now has an explicit Pedagogical Resonance signal limited to WHAT.
-   - `why.use.contextual-reason` now has an explicit Pedagogical Resonance signal limited to WHY.
-   - Neither assessment skill inherits `verb-function` HOW/WHAT or describing/narrating signals.
-   - Resonance remains an opportunity/reinforcement inspection; it produces no Evidence and cannot authorize navigation.
-
-3. **Preserved prior work**
-   - LIVE-33 whole diagnostic question card speech remains intact.
-   - TORO NEXT / Previous / browser Back / browser Forward presentation memory remains intact.
-   - AdaptiveAssessmentScope ownership remains `learnerId + skill + language + originExperienceId`.
-   - Capability skill remains distinct from assessment skill; no automatic capability→assessment promotion.
-
-**NEXT GO:** audit persistent feedback across WHAT / WHICH / WHY assessment panels, then formalize the reusable capability-skill versus assessment-skill contract before extending WHERE. Browser/device visual homologation remains separate.
+**NEXT GO:** after CI, audit WHERE corpus/Dependency Focus/diagnostic coverage as a mapping exercise only. Do not create a WHERE evaluator until its own assessment skill, evidence dimensions, local proof and transfer proof are explicitly grounded and homologated.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
