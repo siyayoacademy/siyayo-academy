@@ -18,27 +18,31 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-35
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-36
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Change kind:** CANONICAL CONTRACT BOUNDARY — Question Word capability versus evaluative skill.  
-**Status:** runtime selection now requires the explicit QWord assessment contract; no capability skill can be promoted automatically into a Session.
+**Change kind:** EAGLE AUDIT / STUDY-ONLY SEMANTIC MAPPING — WHERE.  
+**Status:** WHERE remains exploration-only; no evaluator, Session birth, Evidence rule or Green Pass authority was added.
 
-## LIVE-35 — Capability Skill ≠ Assessment Skill
+## LIVE-36 — WHERE spatial-target audit
 
-- Added `SIYAYOQuestionWordAssessmentContract` as a pure boundary between Thinking Mind information-gap capability and evaluative assessment declaration.
-- Capability resolution remains opportunity-only and produces no Evidence.
-- Assessment begins only from an explicit `assessmentTarget`; `assessmentResumeTarget` remains recovery-only.
-- The boundary exposes `OPPORTUNITY_ONLY`, `ASSESSMENT_DECLARED`, and `ASSESSMENT_RESUME_ONLY` without loading definitions, creating Sessions, producing Evidence, evaluating Green Pass, or navigating.
-- Thinking Mind assessment selection now consults this boundary before forwarding a target to the existing Leaf provider.
-- Production HTML loads the contract before the selection runtime.
-- WHAT / WHICH / WHY existing declared contracts are preserved.
-- Preparing WHICH remains resume-only.
-- WHERE currently has capability opportunities in the dinner corpus but no assessment target, so it remains exploration-only / WAIT for evaluation. Presence of WHERE can never create a Session by inference.
-- Capability identifiers such as `where.identify.place` remain distinct from any future assessment skill unless a canonical assessment target explicitly declares one.
+- Added `data/learning/question-word-where-semantic-map.json` as a study-only map.
+- WHERE capability remains `where.identify.place`; assessment skill remains null.
+- Canonical semantic family: `spatial-target`.
+- Distinguished subtypes:
+  - `location`: DÓNDE / ONDE contexts such as finding salmon or placing vegetables.
+  - `destination`: English WHERE with Spanish ADÓNDE / Portuguese AONDE or PARA ONDE in movement contexts.
+- Shopping WHERE is the current strongest local reference: full dialogueForms and a grounded location response already exist.
+- Preparing WHERE is the natural Dinner transfer candidate but remains WAIT: no canonical answerGrounding, Dependency Focus, diagnostic structure or authored destination/container answer exists.
+- College WHERE is a strong destination contrast candidate but is outside the first proposed location Green claim.
+- No new answer was invented for “Where should we put the vegetables?” because the repository has no canonical container/surface grounding for that question.
+- Eagle audit documented in `docs/siyayo-where-eagle-audit.md`.
+- CI guard verifies all current WHERE entries remain free of `assessmentTarget` / `assessmentResumeTarget`.
 
-**NEXT GO:** after CI, audit WHERE corpus/Dependency Focus/diagnostic coverage as a mapping exercise only. Do not create a WHERE evaluator until its own assessment skill, evidence dimensions, local proof and transfer proof are explicitly grounded and homologated.
+**Candidate future WHERE contract — not authorized yet:** `spatial-function` + local `location-answer` + transfer `location-answer`. It must explicitly not claim destination use, preposition mastery, movement-verb mastery or cross-language equivalence.
+
+**NEXT GO:** ground Preparing WHERE from authored corpus before any evaluator: define canonical answer, then spatial vocabulary/preposition support if needed, then EN/ES/PT Dependency Focus and observational diagnostic. Only after those are approved may a WHERE assessment skill be authored.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
