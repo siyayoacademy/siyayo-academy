@@ -3,6 +3,13 @@ const code=fs.readFileSync('js/verb-explorer.js','utf8'),html=fs.readFileSync('v
 const experiences=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','utf8')).items;
 assert.equal((html.match(/id="previousExperience"/g)||[]).length,1);
 const functions=code.slice(code.indexOf('function previousExperienceCandidate()'),code.indexOf('function renderExperience()'));
+
+const renderBody=code.slice(code.indexOf('function renderExperience()'),code.indexOf('function canonicalExperienceLine()'));
+assert.ok(
+  renderBody.includes('SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface')&&
+  renderBody.includes("install({document})"),
+  'renderExperience must refresh the adoption surface after canonical previous/next/browser navigation'
+);
 let visits=[];const r={experiences,currentExperienceId:'preparing-dinner',experienceLanguage:'es',window:{SIYAYOVerbExplorerExperienceNavigation:{goToExperience(id){visits.push(id);return true;}}}};
 vm.createContext(r);vm.runInContext(functions,r);
 for(const [current,previous] of [['preparing-dinner','shopping-for-dinner'],['having-dinner','preparing-dinner'],['after-dinner-conversation','having-dinner'],['shopping-for-dinner','after-dinner-conversation']]){
