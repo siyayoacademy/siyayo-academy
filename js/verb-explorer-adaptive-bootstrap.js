@@ -218,5 +218,12 @@
           return cycle;
         });
       });
+  }).catch(function(error){
+    // A specialized bridge may fail after the base Experience already rendered.
+    // Re-render fail-closed so optional adaptive presentation cannot leave stale UI,
+    // while preserving the rejected readiness Promise for diagnostics/CI.
+    var experienceRuntime=root.SIYAYOVerbExplorerExperienceRuntime;
+    if(experienceRuntime&&typeof experienceRuntime.render==='function')experienceRuntime.render();
+    throw error;
   });
 })(typeof globalThis !== 'undefined' ? globalThis : this);
