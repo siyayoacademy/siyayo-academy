@@ -66,4 +66,14 @@ for(const target of [
   assert.equal(authority.getDefinitionPath(),'data/learning/skills/which.json');
 }
 
+
+{
+  const authority=build();
+  assert.equal(authority.adopt({
+    skill:'where.use.location-question',
+    definitionPath:'data/learning/skills/where.json'
+  }),false,'isolated WHERE candidate must remain WAIT until authority policy explicitly admits it');
+  assert.equal(authority.getTarget(),null);
+}
+
 console.log('Leaf Assessment Target Authority: PASS — only an explicit contract-authority Skill + definition path resolves Target; otherwise Leaf remains WAIT.');
