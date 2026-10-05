@@ -18,31 +18,33 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-36
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-37
 
 **Recorded:** 2026-10-04 (America/Sao_Paulo)  
 **Branch:** `jaguar/verb-explorer-resume-live-wire`  
-**Change kind:** EAGLE AUDIT / STUDY-ONLY SEMANTIC MAPPING — WHERE.  
-**Status:** WHERE remains exploration-only; no evaluator, Session birth, Evidence rule or Green Pass authority was added.
+**Change kind:** WHERE PRESENTATION GROUNDING — no assessment authority.  
+**Status:** Preparing WHERE is now contextually and structurally grounded in EN/ES/PT while remaining exploration-only.
 
-## LIVE-36 — WHERE spatial-target audit
+## LIVE-37 — Preparing WHERE grounded without Green
 
-- Added `data/learning/question-word-where-semantic-map.json` as a study-only map.
-- WHERE capability remains `where.identify.place`; assessment skill remains null.
-- Canonical semantic family: `spatial-target`.
-- Distinguished subtypes:
-  - `location`: DÓNDE / ONDE contexts such as finding salmon or placing vegetables.
-  - `destination`: English WHERE with Spanish ADÓNDE / Portuguese AONDE or PARA ONDE in movement contexts.
-- Shopping WHERE is the current strongest local reference: full dialogueForms and a grounded location response already exist.
-- Preparing WHERE is the natural Dinner transfer candidate but remains WAIT: no canonical answerGrounding, Dependency Focus, diagnostic structure or authored destination/container answer exists.
-- College WHERE is a strong destination contrast candidate but is outside the first proposed location Green claim.
-- No new answer was invented for “Where should we put the vegetables?” because the repository has no canonical container/surface grounding for that question.
-- Eagle audit documented in `docs/siyayo-where-eagle-audit.md`.
-- CI guard verifies all current WHERE entries remain free of `assessmentTarget` / `assessmentResumeTarget`.
+- Reused the existing Nice Party `table-setting` accessory `plate / plato / prato` as the canonical spatial anchor; no new bowl/counter/location object was invented.
+- Preparing WHERE now has a canonical trilingual response:
+  - EN: `We should put the vegetables on the plate.`
+  - ES: `Debemos poner las verduras en el plato.`
+  - PT: `Devemos colocar os legumes no prato.`
+- Added Present / Past / Future × Affirmative / Negative / Interrogative dialogueForms so TENSE / MODE can operate on WHERE in the same Experience.
+- Added EN/ES/PT Dependency Focus structures:
+  - `preparing-where-en`
+  - `preparing-where-es`
+  - `preparing-where-pt`
+- Canonical relation: WHERE / DÓNDE / ONDE → PUT / PONER / COLOCAR as `advmod`; vegetables remains the object.
+- Added observational Dependency Head Probe asking which verb WHERE connects to. The correct head is `put`; this diagnostic produces no contract point.
+- Verb Explorer now loads all three WHERE structures.
+- Updated WHERE semantic study map: Preparing is `presentation-grounded-no-assessment`.
+- No `assessmentTarget`, `assessmentResumeTarget`, evaluator, Evidence bridge, Pass Contract or Green authority was added.
+- Presentation grounding uses authored corpus + existing Nice Party accessory; it must not be mistaken for assessment `answerGrounding`.
 
-**Candidate future WHERE contract — not authorized yet:** `spatial-function` + local `location-answer` + transfer `location-answer`. It must explicitly not claim destination use, preposition mastery, movement-verb mastery or cross-language equivalence.
-
-**NEXT GO:** ground Preparing WHERE from authored corpus before any evaluator: define canonical answer, then spatial vocabulary/preposition support if needed, then EN/ES/PT Dependency Focus and observational diagnostic. Only after those are approved may a WHERE assessment skill be authored.
+**NEXT GO:** ground Shopping WHERE Dependency Focus / observational diagnostic and define an explicit reusable spatial answer-grounding model for Shopping + Preparing. Only after local and transfer answer semantics are explicit may a WHERE skill definition be proposed.
 
 ## Historical contract checkpoint — JAGUAR-LIVE-21
 
