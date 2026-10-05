@@ -8,7 +8,7 @@
     var scope=input.session.decision&&input.session.decision.assessmentScope;
     if(scope||input.context.assessmentScope){
       var api=root.AdaptiveAssessmentScope,identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
-      if(!api||!api.same(scope,input.context.assessmentScope)||input.profile.id!==scope.learnerId||
+      if(!api||!api.ownsContext(scope,input.context)||input.profile.id!==scope.learnerId||
         !identity||identity.getId()!==scope.learnerId||
         (input.context.evidencePackets||[]).some(function(packet){return !api.ownsPacket(scope,packet);}))return false;
     }
