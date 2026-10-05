@@ -438,6 +438,9 @@ jobs:
         run: node scripts/test-experience-preservation-integration.js
 
 
+      - name: Test S3 WHAT Dependency Focus and diagnostic
+        run: node scripts/test-having-what-dependency-focus.js
+
       - name: Test S3 WHY Dependency Focus and diagnostic
         run: node scripts/test-having-why-dependency-focus.js
 
