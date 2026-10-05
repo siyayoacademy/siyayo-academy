@@ -213,6 +213,8 @@ jobs:
         run: node scripts/test-verb-explorer-learner-trail-surface.js
       - name: Test Trail display versus assessment scope
         run: node scripts/test-learner-trail-assessment-scope-notice.js
+      - name: Test scoped assessment feedback remount
+        run: node scripts/test-assessment-feedback-remount-contract.js
       - name: Test chronological learner Trail sequence
         run: node scripts/test-adaptive-learner-trail-sequence.js
       - name: Test learner Trail current-position illumination
