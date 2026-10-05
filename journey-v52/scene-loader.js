@@ -8,7 +8,7 @@ function prepareJourneySource(source) {
       open + '\ndocument.addEventListener("DOMContentLoaded", function () {\n' +
       code + '\n}, {once:true});\n' + close);
   }
-  return source;
+  return source.replace("e.target.closest('#stdnaBar')", "e.target.closest('#stdnaBar,#v52-drawer,#v52-tools-toggle')");
 }
 (async function () {
   try {

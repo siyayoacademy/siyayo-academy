@@ -30,7 +30,7 @@
     doc.addEventListener('keydown', function (event) {
       if (!navigationKeys.has(event.key)) return;
       const control = event.target && event.target.closest &&
-        event.target.closest('input,select,textarea,button,a,[contenteditable]:not([contenteditable="false"]),[role="slider"],[role="textbox"]');
+        event.target.closest('input,select,textarea,button,summary,a,[contenteditable]:not([contenteditable="false"]),[role="slider"],[role="textbox"]');
       if (control || event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey || event.isComposing) {
         // Leave native editing/slider actions intact; prevent V51's document navigation.
         event.stopPropagation();

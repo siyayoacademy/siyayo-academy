@@ -1,0 +1,33 @@
+#v52-tools-toggle,#v52-drawer{box-sizing:border-box;font-family:system-ui,sans-serif;color:#f5df9b}
+#v52-tools-toggle{position:fixed;right:max(16px,env(safe-area-inset-right));top:max(16px,env(safe-area-inset-top));z-index:100200;border:1px solid #d4af37;border-radius:12px;min-height:44px;padding:10px 16px;background:#071a56eb;font-size:12px;font-weight:700;cursor:pointer;box-shadow:0 4px 18px #0004}
+#v52-tools-toggle[aria-expanded=true]{visibility:hidden}
+#v52-drawer{position:fixed;right:0;top:0;bottom:0;z-index:100210;width:min(390px,calc(100vw - 16px));display:flex;flex-direction:column;background:#081a39f5;border-left:1px solid #d4af37;box-shadow:-12px 0 40px #0005;transform:translateX(105%);transition:transform .2s ease;pointer-events:auto}
+#v52-drawer.v52-open{transform:translateX(0)}
+#v52-drawer[hidden],#v52-drawer [hidden]{display:none!important}
+#v52-drawer header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(16px + env(safe-area-inset-top)) 16px 12px;border-bottom:1px solid #d4af374d}
+#v52-drawer header strong{font-size:13px;letter-spacing:.05em}
+#v52-drawer header p{font-size:11px;color:#bfcbdc;margin:6px 0 0}
+#v52-drawer footer{padding:12px 16px calc(12px + env(safe-area-inset-bottom));border-top:1px solid #d4af374d;font-size:10px;color:#bfcbdc}
+#v52-drawer .v52-drawer-scroll{min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:12px;flex:1}
+#v52-drawer .v52-group{margin-bottom:10px;border:1px solid #d4af374d;border-radius:12px;background:#ffffff04}
+#v52-drawer summary{cursor:pointer;padding:14px;min-height:20px;font-size:14px;font-weight:650}
+#v52-drawer .v52-group-note{padding:0 14px;margin:0 0 12px;color:#bfcbdc;font-size:11px;line-height:1.5}
+#v52-drawer .v52-group-body{display:grid;gap:12px;padding:0 10px 12px}
+#v52-drawer .v52-module{box-sizing:border-box;flex-wrap:wrap;gap:8px;align-items:center;border:1px solid #d4af372e!important;border-radius:9px!important;padding:10px!important;background:#ffffff03!important;font-size:11px!important;line-height:1.5!important;overflow-wrap:anywhere;box-shadow:none!important}
+#v52-drawer button,#v52-drawer select{box-sizing:border-box;min-height:42px!important;border:1px solid #d4af3780!important;border-radius:8px!important;padding:8px 10px!important;background:#0a2448!important;color:#f5df9b!important;font:600 11px system-ui!important;max-width:100%;cursor:pointer}
+#v52-drawer button.on,#v52-drawer button.active,#v52-drawer button[aria-pressed=true]{background:#e2c363!important;color:#071a39!important}
+#v52-drawer select{width:100%!important;min-width:0!important}
+#v52-drawer button:focus-visible,#v52-tools-toggle:focus-visible,#v52-drawer summary:focus-visible{outline:2px solid #7ee4df;outline-offset:3px}
+#v52-drawer #v52-drawer-close{font-size:22px!important;min-width:44px}
+#v52-drawer #cameraLabBar label{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:8px;width:100%;font-size:11px}
+#v52-drawer input[type=range]{width:100%!important;min-width:0!important;height:32px;accent-color:#e2c363}
+#v52-drawer #cal-panel label{grid-template-columns:42px minmax(0,1fr) 46px!important}
+#v52-drawer #cal-panel{box-sizing:border-box;padding:10px!important;font-size:11px!important}
+#v52-drawer #grip-calibrator{flex-direction:column;align-items:stretch}
+#v52-drawer h3{margin:8px 0;font-size:12px}
+#v52-drawer .v52-guide-buttons{display:flex;flex-wrap:wrap;gap:8px}
+#v52-drawer #dnaPanel{font-size:10px;max-height:none!important;overflow:visible!important}
+#v52-drawer #dnaPanel pre{max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere}
+body:after{display:none!important}
+@media(max-width:600px){#v52-tools-toggle{font-size:11px;padding:8px 12px}#v52-drawer{width:min(360px,calc(100vw - 12px))}}
+@media(prefers-reduced-motion:reduce){#v52-drawer{transition:none}}
