@@ -2776,8 +2776,8 @@ h1 {
   background-image:url("./assets/golden-frondosa-compact-test.jpg");
   background-repeat:no-repeat;
   background-position:center center;
-  background-size:100% auto;
-  opacity:.28;
+  background-size:120% auto;
+  opacity:.38;
 }
 
 .frondosa-visual{
