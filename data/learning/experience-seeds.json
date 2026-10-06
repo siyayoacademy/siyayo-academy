@@ -276,6 +276,10 @@
         {
           "intention": "place",
           "questionWord": "where",
+          "assessmentTarget": {
+            "skill": "where.use.location-question",
+            "definitionPath": "data/learning/skills/where.json"
+          },
           "question": {
             "en": "Where can we find the salmon?",
             "es": "¿Dónde podemos encontrar el salmón?",

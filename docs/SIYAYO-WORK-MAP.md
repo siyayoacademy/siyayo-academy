@@ -30,7 +30,49 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-43
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-44
+
+**Recorded:** 2026-10-05 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+
+**Base HEAD:** `a9ed2c0fdcc2719d515357a9b8b9802a0a2782f4`
+
+**Change kind:** EXTENSION — explicit Shopping WHERE assessmentTarget and canonical Specification admission.
+
+**Status:** the new startup/Specification test and 26 existing regression scripts passed locally; remote CI, including canonical JSON Schema validation, must be verified on the published commit. Browser/UI homologation remains WAIT.
+
+## DONE — explicit origin target and language-owned Session
+
+- LIVE-43 was validated at `a9ed2c0fdcc2719d515357a9b8b9802a0a2782f4`: Bootstrap `37392958454`, Resume `37392958168` and Corpus `37392957939` all passed; Cloudflare deployment succeeded. Bootstrap step 119 verified transfer/footprint coverage and step 133 retained all 43 Choice Bridge checks.
+- Only Shopping WHERE now declares `assessmentTarget: {skill: "where.use.location-question", definitionPath: "data/learning/skills/where.json"}`.
+- Preparing declares neither a WHERE start target nor a recovery target. It remains the visited destination of the Shopping location circuit; other Dinner and College WHERE opportunities remain undeclared.
+- The existing WHERE Specification Source now requires the exact Shopping declaration, canonical Shopping -> Preparing hop and matching skill grounding metadata. Missing or foreign declarations, destination-start/recovery declarations, destination-use semantics and missing language realization fail closed.
+- The Specification remains read-only and uses the existing EN/ES/PT location examples: salmon at the fish counter in Shopping, vegetables on the plate in Preparing. No second evaluator was added.
+- Added `scripts/test-where-explicit-target-adoption.js` and an explicit Bootstrap CI step. The test uses production selection -> Leaf producer/readiness/authority -> canonical loader/bridge -> LiveStart -> Composer -> SessionSource -> CoordinatorConfig -> Coordinator, with controlled lexical state and JSON transport.
+- Anonymous selection remains WAIT until an explicit nick is supplied for the same pending question/language/origin. A loaded definition must match the target; learner/language/location drift during loading creates no Session or Evidence Profile.
+- EN/ES/PT have distinct learner-owned origin Sessions. Repeated selection reuses its Session; returning to EN restores its retained circuit. Selection starts at 0/3 WAIT and creates no Attempt, answer evidence or observed-attempt footprint.
+- Six Node/browser-VM Specification circuits reject 96 missing/foreign declaration, grounding and semantic cases. A Preparing visit preserves the Shopping Session without automatic NEXT.
+- Updated existing target/policy/grounding/footprint expectations for the one explicit Shopping pilot. The new test and 26 existing WHERE, selection, Leaf/loader/Composer, GOLD CONNECTION, WHICH/WHAT/WHY transfer and longitudinal-recording regressions passed; syntax and whitespace checks passed.
+
+## WAIT / PERAÍ
+
+- WHERE still has `isolated-candidate` status. Its semantic/content maps remain non-evaluative and `assessmentAuthority: false`; authority comes from the explicit policy/contract/target chain.
+- This checkpoint admits a selectable origin Session and canonical specifications. The learner-facing WHERE response panel and live event/support wire are still absent.
+- The browser checks use a VM and controlled lexical state, learner identity and JSON transport. They do not establish a real learner response or visible panel.
+- No persistent visitor history, Patita star UI, destination-use, preposition mastery, retention or cross-language competence is added.
+
+## NEXT GO
+
+After verifying CI for the published target commit, audit and connect the smallest learner-facing WHERE panel to the existing Specification -> Result -> Evidence -> Attempt -> Coordinator chain: spatial function and local location in Shopping, location transfer in Preparing. Any Preparing recovery must restore the same retained Shopping learner/language/origin circuit and must not start a destination Session. Then homologate real UI responses and one observed footprint per occurrence in EN/ES/PT; preserve WAIT at incomplete/assisted evidence and no automatic NEXT.
+
+## PARALLEL
+
+Gold Seed / Journey visual research remains separate. Future Patita stars/markers may project canonical observed history; they do not create competence or replace the live homologation gate.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-43
 
 **Recorded:** 2026-10-05 (America/Sao_Paulo)
 

@@ -7,7 +7,10 @@ const grounding=require('../data/learning/where-spatial-answer-grounding.json');
 for(const experienceId of ['shopping-for-dinner','preparing-dinner']){
   const exp=seeds.find(x=>x.id===experienceId);
   const q=exp.thinkingMind.find(q=>q.questionWord==='where');
-  assert.equal(q.assessmentTarget,undefined);
+  if(experienceId==='shopping-for-dinner')assert.deepEqual(q.assessmentTarget,{
+    skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
+  });
+  else assert.equal(q.assessmentTarget,undefined);
   assert.equal(q.assessmentResumeTarget,undefined);
   for(const language of ['en','es','pt']){
     const id=q.dependencyFocus.structureIds[language];
@@ -34,4 +37,4 @@ assert.equal(grounding.candidateFutureEvidence.requiresExplicitMode,true);
 const runtime=fs.readFileSync('js/verb-explorer.js','utf8');
 for(const prefix of ['shopping-where','preparing-where'])for(const language of ['en','es','pt'])
   assert.ok(runtime.includes('data/learning/dependencies/'+prefix+'-'+language+'.json'));
-console.log('PASS — Shopping + Preparing WHERE share grounded location semantics, explicit local/transfer candidates, and no assessment authority.');
+console.log('PASS — Shopping explicitly targets the WHERE location contract; Preparing stays transfer-only, and content grounding has no assessment authority.');

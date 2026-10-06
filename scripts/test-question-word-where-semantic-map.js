@@ -14,7 +14,10 @@ assert.ok(map.subtypes.destination.languageForms.pt.includes('para onde'));
 
 for(const x of [...dinner,...college]){
   for(const q of (x.thinkingMind||[]).filter(q=>q.questionWord==='where')){
-    assert.equal(q.assessmentTarget,undefined,x.id+' WHERE must remain exploration-only');
+    if(x.id==='shopping-for-dinner')assert.deepEqual(q.assessmentTarget,{
+      skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
+    },'only Shopping explicitly starts the WHERE location pilot');
+    else assert.equal(q.assessmentTarget,undefined,x.id+' WHERE remains exploration-only');
     assert.equal(q.assessmentResumeTarget,undefined,x.id+' WHERE must not masquerade as recovery');
   }
 }
@@ -36,4 +39,4 @@ assert.equal(shopping.answerGrounding,undefined);
 assert.equal(preparing.answerGrounding,undefined,'presentation grounding must not masquerade as assessment answerGrounding');
 assert.match(going.question.es,/Adónde/);
 assert.match(going.question.pt,/Para onde/);
-console.log('PASS — WHERE is mapped as spatial-target with location/destination contrast and remains assessment-free until grounded.');
+console.log('PASS — the WHERE study map remains non-evaluative; only Shopping explicitly declares the location pilot, with no destination or College promotion.');

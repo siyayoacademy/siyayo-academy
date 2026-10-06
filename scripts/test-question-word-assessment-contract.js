@@ -19,10 +19,16 @@ for(const q of [what,which]){
  assert.ok(c.definitionPath);
 }
 const whereContract=Contract.inspect(where,cap('where'));
-assert.equal(whereContract.status,'OPPORTUNITY_ONLY');
+assert.equal(whereContract.status,'ASSESSMENT_DECLARED');
 assert.equal(whereContract.capabilitySkill,'where.identify.place');
-assert.equal(whereContract.assessmentSkill,null);
-assert.equal(Contract.targetForSelection(where,cap('where')),null,'WHERE capability must not become assessment without assessmentTarget');
+assert.equal(whereContract.assessmentSkill,'where.use.location-question');
+assert.equal(whereContract.automaticPromotion,false);
+assert.deepEqual(Contract.targetForSelection(where,cap('where')),{
+ skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json',resumeOnly:false
+});
+const undeclaredWhere={...where};delete undeclaredWhere.assessmentTarget;
+assert.equal(Contract.inspect(undeclaredWhere,cap('where')).status,'OPPORTUNITY_ONLY');
+assert.equal(Contract.targetForSelection(undeclaredWhere,cap('where')),null,'WHERE capability cannot infer the declared assessment skill');
 
 const fakeWhere={...where,assessmentTarget:{skill:'where.identify.place',definitionPath:'data/learning/skills/where.json'}};
 const explicit=Contract.inspect(fakeWhere,cap('where'));

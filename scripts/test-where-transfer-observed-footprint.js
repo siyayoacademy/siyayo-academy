@@ -224,7 +224,8 @@ for (const mode of ['Node', 'browser VM']) {
     const laterSession = Loop.begin(Profile, history, context);
     assert.equal(laterSession.decision.priorEvidence.filter(entry => entry.source === 'green-pass-contract').length, 1,
       'a later canonical Decision can recover this scope closure');
-    assert.equal(local.thinkingMind.find(q => q.questionWord === 'where').assessmentTarget, undefined);
+    assert.deepEqual(local.thinkingMind.find(q => q.questionWord === 'where').assessmentTarget,
+      {skill: where.id, definitionPath: 'data/learning/skills/where.json'});
     assert.equal(destination.thinkingMind.find(q => q.questionWord === 'where').assessmentResumeTarget, undefined);
   }
   assert.equal(history.observations.length, 21, 'EN/ES/PT each retain six observed Attempts and one scope-owned closure');

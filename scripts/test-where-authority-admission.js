@@ -112,15 +112,20 @@ async function main() {
   assert.equal(where.status, 'isolated-candidate');
   assert.equal(grounding.assessmentAuthority, false);
   let selections = 0;
+  box.SIYAYOVerbExplorerAdaptiveStateBridge = {getState: () =>
+    ({currentExperienceId: local.id, experienceLanguage: 'en'})};
   for (const experience of [local, destination]) {
     const question = experience.thinkingMind.find(item => item.questionWord === 'where');
-    assert.equal(question.assessmentTarget, undefined);
+    const declared = experience === local;
+    if (declared) assert.deepEqual(question.assessmentTarget, target);
+    else assert.equal(question.assessmentTarget, undefined);
     assert.equal(question.assessmentResumeTarget, undefined);
-    assert.equal(box.SIYAYOQuestionWordAssessmentContract.inspect(question).status, 'OPPORTUNITY_ONLY');
+    assert.equal(box.SIYAYOQuestionWordAssessmentContract.inspect(question).status,
+      declared ? 'ASSESSMENT_DECLARED' : 'OPPORTUNITY_ONLY');
     assert.equal(await box.SIYAYOVerbExplorerThinkingMindAssessmentSelection.select(question,
-      {provider: {select() {selections += 1; return true;}}}), false);
+      {provider: {select() {selections += 1; return true;}}}), declared);
   }
-  assert.equal(selections, 0, 'exploratory WHERE cannot request an assessment');
+  assert.equal(selections, 1, 'only the explicit Shopping target can request an assessment');
   assert.equal(leaf.getTarget(), null);
   assert.equal(source.getDefinition(), null);
 
@@ -191,6 +196,6 @@ async function main() {
   }
   console.log('PASS — WHERE policy admission matches Node/browser, preserves WHICH/WHAT/WHY and requires explicit target/Skill.');
   console.log('PASS — six scoped EN/ES/PT Node/browser-VM circuits retain WAIT at 1/3 and 2/3; 3/3 is eligible without NEXT.');
-  console.log('PASS — foreign scope is rejected; exploratory WHERE remains locked while scoped pilot transfer is admitted. No live UI evidence is claimed.');
+  console.log('PASS — foreign scope is rejected; only Shopping explicitly selects WHERE, while Preparing stays transfer-only. No live UI evidence is claimed.');
 }
 main().catch(error => {console.error(error); process.exitCode = 1;});
