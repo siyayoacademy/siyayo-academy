@@ -1,4 +1,4 @@
-import cloudflareAccessPlugin from '@cloudflare/pages-plugin-cloudflare-access';
+import cloudflareAccessPlugin from '../../server/vendor/cloudflare-access.js';
 
 const headers = {
   'Content-Type': 'text/html; charset=utf-8',

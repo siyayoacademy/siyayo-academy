@@ -35,3 +35,9 @@ Fontes: https://developers.cloudflare.com/pages/functions/plugins/cloudflare-acc
 ## Checkpoint 2026-10-06
 
 Compilação local com Wrangler 4.147.0: Worker compilado com sucesso; rota gerada `/admin/:path*` cobre o índice e descendentes. O último commit consultado não apresentava status de deploy GitHub: publicação online não confirmada. Cloudflare Dashboard mostrou erro de verificação antes do login; política Access e variáveis continuam pendentes, sem declaração de ativação.
+
+## Correção do deploy: dependência ausente
+
+Os logs dos commits 663e711 e 25253ec confirmaram `Could not resolve @cloudflare/pages-plugin-cloudflare-access`. A Cloudflare pulou a etapa de build e não disponibilizou a dependência para a compilação de Functions.
+
+O plugin oficial 1.0.5 e sua API foram empacotados sem mudanças de comportamento em `server/vendor/cloudflare-access.js`, com licença MIT adjacente. A função agora usa import relativo, sem depender de node_modules no deploy. Dez testes de autenticação continuam aprovados. Não marcar o pacote como external nem remover a validação. A configuração Access/Google e das variáveis continua pendente.
