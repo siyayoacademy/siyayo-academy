@@ -186,11 +186,11 @@ async function main() {
       assert.equal(session.trace.some(entry => entry.event === 'adaptive-next-selected'), false);
       assert.equal(Transfer.accepts({session, attempt: transferAttempt.attempt,
         learnerEvent: transferAttempt.event, state: {currentExperienceId: destination.id, experienceLanguage: language},
-        catalog}), false, 'policy admission alone does not unlock live WHERE transfer');
+        catalog}), true, 'explicit scoped WHERE transfer uses the admitted pilot boundary');
     }
   }
   console.log('PASS — WHERE policy admission matches Node/browser, preserves WHICH/WHAT/WHY and requires explicit target/Skill.');
   console.log('PASS — six scoped EN/ES/PT Node/browser-VM circuits retain WAIT at 1/3 and 2/3; 3/3 is eligible without NEXT.');
-  console.log('PASS — foreign scope is rejected; exploratory WHERE and live transfer remain locked. No live UI evidence is claimed.');
+  console.log('PASS — foreign scope is rejected; exploratory WHERE remains locked while scoped pilot transfer is admitted. No live UI evidence is claimed.');
 }
 main().catch(error => {console.error(error); process.exitCode = 1;});

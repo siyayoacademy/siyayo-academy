@@ -30,7 +30,50 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-42
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-43
+
+**Recorded:** 2026-10-05 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+
+**Base HEAD:** `249a883229c4fc0657c6a7c1db3b1863ab980c0f`
+
+**Change kind:** EXTENSION — scoped WHERE transfer admission and Patita observed footprint.
+
+**Status:** local production-boundary checks passed; remote CI must be verified on the published commit. Browser/UI homologation remains WAIT.
+
+## DONE — explicit transfer ownership and longitudinal recording
+
+- LIVE-42 policy admission was validated remotely at `3f845b2f1249eacf54fd5e08962c30781f6029ba`: Bootstrap `37391074030`, Resume `37391075116` and Corpus `37391072860` all passed; deployment succeeded. The current base HEAD also passed all three workflows.
+- `SIYAYOVerbExplorerTransferAttemptAuthority` now admits WHERE only for the canonical Shopping -> Preparing location circuit, with a valid learner/skill/language/origin AssessmentScope and matching event, Attempt, occurrence and candidate.
+- Both corpus Experiences must have exactly one location-oriented WHERE entry. Any declared target must match the canonical WHERE skill/path. Missing Scope API, wrong hop, destination semantics and foreign provenance fail closed.
+- `AdaptiveObservedAttemptEvidenceSource` now accepts the same scoped WHERE transfer after Cycle acceptance. It records Preparing as the observed destination and Shopping as the origin, while the footprint remains non-confirmatory.
+- WHERE duplicate recording is keyed by its AssessmentScope as well as skill/occurrence. Reusing an occurrence ID in EN/ES/PT does not erase another language's legitimate footprint.
+- A malformed WHERE transfer cannot fall back to the local-recording path.
+- The existing generic contract-closure recorder remains unchanged: one satisfied contract closure per scope is retained and later canonical Decisions can recover it as prior evidence.
+- Added `scripts/test-where-transfer-observed-footprint.js` and an explicit Bootstrap CI step; updated the existing policy-admission and Coordinator dry-run expectations for this new boundary.
+- Six Node/browser-VM EN/ES/PT circuits run through the real Coordinator, Cycle, transfer authority and recorders. Tests reject 168 invalid transfers and 72 malformed records before duplicate handling; failed or audio-supported transfer leaves the contract at WAIT.
+- Each circuit preserves the origin Session/Decision on the Preparing visit, performs no transfer resume/navigation, records each observed occurrence once and retains one closure without automatic NEXT.
+- The new integration test and 13 existing regression scripts passed locally, including WHICH/WHAT/WHY transfer and Choice footprint coverage. Five deliberate admission/recording/duplicate/closure regressions were detected in temporary copies.
+
+## WAIT / PERAÍ
+
+- WHERE remains `isolated-candidate`; the content-grounding map remains `assessmentAuthority: false`.
+- Shopping and Preparing still have no WHERE `assessmentTarget` or `assessmentResumeTarget`. Exploratory selection cannot create a WHERE assessment Session.
+- Test Sessions and learner events are controlled fixtures; the browser checks use a VM. This checkpoint does not establish a real learner response or a visible WHERE assessment panel.
+- The transfer boundary admits only the existing location pilot. Destination-use, preposition mastery, retention and cross-language competence remain outside this contract.
+
+## NEXT GO
+
+After verifying CI for the published transfer commit, declare the explicit Shopping WHERE assessmentTarget and adapt the WHERE Specification Source to accept that exact declaration while rejecting foreign/mismatched targets. Validate selection -> canonical skill -> language-owned origin Session before adding a live WHERE panel. Preparing recovery and presentation must remain grounded in the same origin circuit.
+
+## PARALLEL
+
+Gold Seed / Journey visual research remains separate. Patita's future stars/markers may project this canonical observed history; persistent visitor history and visual marker changes remain later boundaries.
+
+---
+
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-42
 
 **Recorded:** 2026-10-05 (America/Sao_Paulo)
 

@@ -99,7 +99,7 @@ assert.equal(scopedTransfer.context.assessmentScope.key,scope.key);
 
 assert.equal(TransferAuthority.accepts({
   session,attempt:transferAttempt.attempt,learnerEvent:transferAttempt.event,state,catalog
-}),false,'live transfer authority must still reject WHERE before explicit admission');
+}),true,'explicit scoped WHERE transfer is admitted for the grounded pilot circuit');
 
 const before=coordinator.snapshot();
 assert.equal(before.session,session);
@@ -116,4 +116,4 @@ const wrongLanguage=Scope.bindAttempt({
 });
 assert.equal(wrongLanguage,null);
 
-console.log('PASS — WHERE dry-run preserves learner+skill+language+origin scope, keeps visited Preparing outside Session authority, and live transfer remains locked.');
+console.log('PASS — WHERE dry-run preserves learner+skill+language+origin scope and admits transfer without replacing the Shopping Session on a Preparing visit.');

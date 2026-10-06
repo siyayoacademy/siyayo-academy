@@ -260,6 +260,8 @@ jobs:
         run: node scripts/test-where-coordinator-scope-dry-run.js
       - name: Test isolated WHERE authority admission in Node and browser
         run: node scripts/test-where-authority-admission.js
+      - name: Test scoped WHERE transfer and observed footprint
+        run: node scripts/test-where-transfer-observed-footprint.js
       - name: Test explicit Thinking Mind assessment Target selection
         run: node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
       - name: Test Dependency Head Probe definition
