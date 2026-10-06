@@ -31,3 +31,7 @@ O plugin oficial valida a assinatura e os claims do JWT. A função aplica uma s
 Dados que já existem publicamente no repositório continuam públicos: Access restringe o painel e futuras rotas privadas, não torna os mapas públicos secretos. Novas APIs administrativas devem aplicar a mesma validação e não expor dados sensíveis em diretórios públicos.
 
 Fontes: https://developers.cloudflare.com/pages/functions/plugins/cloudflare-access/ e https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/validating-json/ .
+
+## Checkpoint 2026-10-06
+
+Compilação local com Wrangler 4.147.0: Worker compilado com sucesso; rota gerada `/admin/:path*` cobre o índice e descendentes. O último commit consultado não apresentava status de deploy GitHub: publicação online não confirmada. Cloudflare Dashboard mostrou erro de verificação antes do login; política Access e variáveis continuam pendentes, sem declaração de ativação.
