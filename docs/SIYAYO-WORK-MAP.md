@@ -40,7 +40,7 @@ Content abundance never implies assessment authority. No branch may create an in
 
 **Change kind:** EXTENSION — explicit Shopping WHERE assessmentTarget and canonical Specification admission.
 
-**Status:** the new startup/Specification test and 26 existing regression scripts passed locally; remote CI, including canonical JSON Schema validation, must be verified on the published commit. Browser/UI homologation remains WAIT.
+**Status:** the new startup/Specification test and 27 existing regression scripts passed locally; canonical JSON Schema validation passed in CI at `886de8756dec4434d64bb7912c6a64c0ac26ddfc`. All workflows must be verified on the final published commit. Browser/UI homologation remains WAIT.
 
 ## DONE — explicit origin target and language-owned Session
 
@@ -54,6 +54,7 @@ Content abundance never implies assessment authority. No branch may create an in
 - EN/ES/PT have distinct learner-owned origin Sessions. Repeated selection reuses its Session; returning to EN restores its retained circuit. Selection starts at 0/3 WAIT and creates no Attempt, answer evidence or observed-attempt footprint.
 - Six Node/browser-VM Specification circuits reject 96 missing/foreign declaration, grounding and semantic cases. A Preparing visit preserves the Shopping Session without automatic NEXT.
 - Updated existing target/policy/grounding/footprint expectations for the one explicit Shopping pilot. The new test and 26 existing WHERE, selection, Leaf/loader/Composer, GOLD CONNECTION, WHICH/WHAT/WHY transfer and longitudinal-recording regressions passed; syntax and whitespace checks passed.
+- Corpus CI at `886de8756dec4434d64bb7912c6a64c0ac26ddfc` exposed one obsolete WHERE-is-always-exploratory assertion in the S1 dialogue regression. That test now requires the exact Shopping WHERE target and preserves untargeted WHY, no Shopping recovery target and all 81 EN/ES/PT question/response pairs; the corrected script also passed locally.
 
 ## WAIT / PERAÍ
 

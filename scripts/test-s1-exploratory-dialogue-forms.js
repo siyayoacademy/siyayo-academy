@@ -10,7 +10,11 @@ for (const word of ['why', 'where', 'what']) {
 const question = shopping.thinkingMind.find(item => item.questionWord === word);
 assert.ok(question);
 if(word==='what')assert.equal(question.assessmentTarget.skill,'what.use.object-question');
+else if(word==='where')assert.deepEqual(question.assessmentTarget,{
+  skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
+},'Shopping explicitly declares only the WHERE location pilot');
 else assert.ok(!question.assessmentTarget, `Exploratory ${word} must not create an assessment target`);
+assert.equal(question.assessmentResumeTarget,undefined,'Shopping does not recover a destination Session');
 for (const tense of ['present', 'past', 'future']) {
   for (const form of ['affirmative', 'negative', 'interrogative']) {
     const turn = question.dialogueForms?.[tense]?.[form];
@@ -26,4 +30,4 @@ for (const tense of ['present', 'past', 'future']) {
 const runtime = fs.readFileSync(path.join(root, 'js/verb-explorer.js'), 'utf8');
 assert.ok(runtime.includes('question.dialogueForms?.[experienceTense]?.[experienceForm]'), 'Lines must select the declared tense and form');
 assert.ok(runtime.includes('if(!turn)return[]'), 'Missing dialogue turn must remain absent');
-console.log('PASS — S1 WHY, WHERE and WHAT provide 81 grounded question/response pairs with explicit WHAT authority and free WHY/WHERE exploration.');
+console.log('PASS — S1 WHY, WHERE and WHAT provide 81 grounded question/response pairs; WHAT and the WHERE location pilot are explicit targets, while WHY remains exploratory.');
