@@ -150,8 +150,9 @@
       var live=el.dataset.scopeKey===bound.scope.key&&el.dataset.experienceId===bound.experience.id&&
         el.querySelector('.where-contract-progress');
       (live||progress).textContent=projected?labels.progress+' · '+projected.completed+'/'+projected.total:'';
+      return projected;
     }
-    refreshProgress();el.appendChild(progress);
+    var currentProgress=refreshProgress();el.appendChild(progress);
     var probes=doc.createElement('div');probes.className='where-probe-grid';
     var feedback=doc.createElement('p');feedback.className='where-probe-feedback';feedback.setAttribute('aria-live','polite');feedback.hidden=true;
     function valid(){return mountedGeneration===generation&&!el.hidden&&stillOwns(bound);}
@@ -188,13 +189,13 @@
           var attempt=attemptApi.assemble({learnerEvent:event,evidence});if(!attempt)return;
           var submitted=bound.coordinator.submitObservedAttempt(attempt,event,button);if(!submitted)return;
           Array.from(choices.querySelectorAll('.where-probe-option')).forEach(function(option){option.setAttribute('aria-pressed',option===button?'true':'false');});
-          var closure=submitted.cycleResult&&submitted.cycleResult.contractEvaluation;
-          feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true?labels.green:
+          var currentProgress=refreshProgress();
+          feedback.textContent=currentProgress&&currentProgress.status==='GREEN_PASS'?labels.green:
             result.result==='fail'?labels.retry:support!=='none'?labels.assisted:labels.recorded;
           var saved=sessionFeedback.get(bound.session);
           if(!saved){saved=Object.create(null);sessionFeedback.set(bound.session,saved);}
           saved[bound.experience.id]=feedback.textContent;
-          feedback.hidden=false;refreshProgress();
+          feedback.hidden=false;
           // Resume dispatch may synchronously remount presentation. Update only
           // the still-owned visible scope, never its detached predecessor or another learner.
           if(stillOwns(bound)&&el.dataset.scopeKey===bound.scope.key&&el.dataset.experienceId===bound.experience.id){
@@ -211,7 +212,10 @@
     var note=doc.createElement('p');note.className='where-probe-support';note.setAttribute('aria-live','polite');
     note.textContent=labels.support;note.hidden=supportFor(bound)==='none';el.appendChild(note);el.appendChild(feedback);
     var saved=sessionFeedback.get(bound.session);
-    if(saved&&saved[bound.experience.id]){feedback.textContent=saved[bound.experience.id];feedback.hidden=false;}
+    // A retained Experience message may predate completion in another Experience.
+    // The existing canonical projection owns the current status; restoration is read-only.
+    if(currentProgress&&currentProgress.status==='GREEN_PASS'){feedback.textContent=labels.green;feedback.hidden=false;}
+    else if(saved&&saved[bound.experience.id]){feedback.textContent=saved[bound.experience.id];feedback.hidden=false;}
     el.hidden=false;return true;
   }
   root.SIYAYOVerbExplorerWhereAssessmentLive=Object.freeze({mount:mount,hide:hide,

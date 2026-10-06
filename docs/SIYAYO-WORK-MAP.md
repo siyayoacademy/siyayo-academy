@@ -30,7 +30,45 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-45
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-46
+
+**Recorded:** 2026-10-06 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+
+**Base HEAD:** `016c09d4fb12163eec8539af2d690291084733c7`
+
+**Change kind:** FIX — restore WHERE feedback from canonical contract progress after visiting another Experience.
+
+**Status:** human screenshot evidence now demonstrates two EN/desktop circuits reaching 3/3. The stale Preparing message is corrected; eight relevant existing regressions and six EN/ES/PT Node/browser-VM return reproductions passed locally. Remote CI/deploy results for the resulting published HEAD are tracked in PR #3. Human inspection of the corrected return remains pending. Overall homologation remains partial.
+
+## DONE — base validation and human screenshot review
+
+- LIVE-45 base `016c09d4fb12163eec8539af2d690291084733c7` passed Bootstrap `37420074888`, Resume `37420074869` and Corpus `37420074818`; Cloudflare deployed `https://36dd7026.siyayo-academy.pages.dev`. These remote checks were verified separately from the human screenshots.
+- The user's 19 supplied desktop screenshots dated 2026-10-06 show `36DDSECONDTEST` completing function, local Shopping use and Preparing transfer at 3/3 with GREEN PASS. A second nick, `36DDTESTAGAIN`, starts at 0/3 without inheriting that result, remains at 1/3 after a wrong local answer, reaches 2/3 after correct transfer, and shows 3/3 after returning to Shopping. The exact local correction click is absent from that sequence; its resulting confirmation is visible.
+- The subsequent Preparing visit preserves the Shopping-origin assessment, 3/3 and the WHERE star. The same screenshot also displays the old `assessment in progress` message saved when Preparing was at 2/3. This is a presentation inconsistency, not evidence that a requirement or the recorded closure was revoked.
+- Identity replacement clears the adopted learner-owned authorities; another explicit WHERE selection is required. A visually highlighted QWord does not itself adopt a Skill. The screenshots and the existing identity/selection boundaries agree on this behavior.
+- ES/PT screenshots show the translated interface with `display ES/PT · assessment EN`. They demonstrate display-language switching, not separately completed Spanish or Portuguese assessments. Static screenshots do not establish audible speech or mobile readability.
+
+## DONE — canonical completed feedback
+
+- The existing read-only `AdaptivePassContractProgressView` result, including its canonical status, now renders completed WHERE feedback on mount and after responses. A cached Experience message cannot override a GREEN_PASS result. Completion is not inferred from a displayed count, and restoration produces no Attempt, closure, Session, score or progression.
+- Reused the existing production integration fixture to reproduce the exact reverse completion order in six EN/ES/PT Node/browser-VM circuits: function pass -> local failure -> transfer pass at 2/3 -> return to Shopping for local pass -> revisit Preparing. The base displayed 3/3 with an old in-progress message; the correction displays the matching GREEN PASS label in each language. Return keeps the same Session and unchanged Trace/observation count, with exactly one canonical closure. This is controlled integration evidence, not a deployed-browser or human response claim.
+- Eight existing regression scripts passed: WHERE live assessment, feedback remount contract, Learner Trail, WHERE authority admission, explicit target adoption, transfer/footprint, adaptive bootstrap and the unchanged 43-check Choice Bridge. JavaScript syntax validation passed. No test, CI, corpus, Skill or evaluator file changed in this fix.
+
+## WAIT / PERAÍ
+
+- Verify this same branch/PR's exact published HEAD, CI and deploy before repassing the preview; consult PR #3 for the resulting commit's remote verification.
+- Human EN/desktop evidence is now present for the two demonstrated paths. The corrected deployed return must still be checked visually; separately adopted ES/PT assessments, audible speech/assisted WAIT and mobile readability remain pending.
+- Existing Choice Bridge, Session-owned Skill, WHERE requirements, scope/provenance, sticky support and one closure per scope remain the authoritative boundaries. No merge, new PR or automatic NEXT is authorized by this checkpoint.
+
+## NEXT GO
+
+Verify the published correction's exact HEAD, CI and deploy against PR #3, then inspect the 3/3 Shopping -> Preparing return and continue with separate ES/PT assessment circuits, a distinct listening trial and mobile readability. Do not ask the user to repeat already demonstrated EN paths merely to fill missing static screenshots.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-45
 
 **Recorded:** 2026-10-06 (America/Sao_Paulo)
 
@@ -69,7 +107,7 @@ Verify CI/deploy and the actual preview at this HEAD, then return the direct `ve
 
 ---
 
-# PREVIOUS CHECKPOINT — JAGUAR-LIVE-44
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-44
 
 **Recorded:** 2026-10-05 (America/Sao_Paulo)
 
