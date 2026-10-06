@@ -119,9 +119,10 @@ async function main() {
     const declared = experience === local;
     if (declared) assert.deepEqual(question.assessmentTarget, target);
     else assert.equal(question.assessmentTarget, undefined);
-    assert.equal(question.assessmentResumeTarget, undefined);
+    if (declared) assert.equal(question.assessmentResumeTarget, undefined);
+    else assert.deepEqual(question.assessmentResumeTarget, target);
     assert.equal(box.SIYAYOQuestionWordAssessmentContract.inspect(question).status,
-      declared ? 'ASSESSMENT_DECLARED' : 'OPPORTUNITY_ONLY');
+      declared ? 'ASSESSMENT_DECLARED' : 'ASSESSMENT_RESUME_ONLY');
     assert.equal(await box.SIYAYOVerbExplorerThinkingMindAssessmentSelection.select(question,
       {provider: {select() {selections += 1; return true;}}}), declared);
   }

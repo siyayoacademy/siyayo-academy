@@ -275,6 +275,24 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 /* WHAT extends the WHICH canonical card presentation; no pedagogical authority here. */
 .what-canonical-panel{min-width:0;margin:14px 0;padding:14px;border:1px solid rgba(242,216,138,.28);border-radius:14px;background:rgba(0,0,0,.18);text-align:center}
 .what-canonical-panel h3{margin:0 0 12px;color:var(--siyayo-gold-primary);font-size:.82rem;line-height:1.4}
+.where-canonical-panel{min-width:0;margin:14px 0;padding:16px;border:1px solid rgba(227,184,86,.65);border-radius:18px;background:rgba(8,25,26,.88);text-align:center}
+.where-canonical-panel h3,.where-location-probe h4{font-family:var(--font-display);color:#e3b856}
+.where-canonical-panel h3{margin:0 0 10px;font-size:.9rem;letter-spacing:.08em}
+.where-contract-progress{margin:0 0 14px;color:#fff;font:700 .8rem var(--font-display)}
+.where-probe-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.where-location-probe:only-child{grid-column:1/-1}
+.where-location-probe{min-width:0;padding:14px;border:1px solid rgba(227,184,86,.28);border-radius:14px}
+.where-location-probe h4{margin:0 0 12px;font-size:.9rem}
+.where-probe-question{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;margin:0 0 14px;font-family:var(--font-body);color:#fff;line-height:1.5}
+.where-probe-options{display:grid;gap:10px}
+.where-probe-choice{display:flex;align-items:center;gap:8px;min-width:0}
+.where-probe-option{flex:1;min-width:0;min-height:66px;padding:12px;border:1px solid rgba(227,184,86,.65);border-radius:12px;background:rgba(255,255,255,.07);color:#fff;font:700 .95rem var(--font-body);line-height:1.4;cursor:pointer}
+.where-probe-option[aria-pressed="true"]{background:rgba(227,184,86,.18);border-color:#e3b856}
+.where-probe-audio{flex:none;min-width:44px;min-height:44px;padding:6px;border:1px solid rgba(227,184,86,.5);border-radius:50%;background:transparent;color:#e3b856;font-size:1.2rem;cursor:pointer}
+.where-probe-option:focus-visible,.where-probe-audio:focus-visible{outline:2px solid #e3b856;outline-offset:3px}
+.where-probe-support,.where-probe-feedback{margin:14px 0 0;color:#fff;font-family:var(--font-body);line-height:1.5}
+.where-probe-support{color:#e3b856;font-size:.85rem}
+@media(max-width:700px){.where-probe-grid{grid-template-columns:1fr}.where-canonical-panel{padding:12px}.where-location-probe{padding:12px}}
 .what-canonical-panel .what-probe-step,.what-canonical-panel .what-probe-question{max-width:100%;text-align:center;overflow-wrap:anywhere}
 .what-canonical-panel .what-canonical-options{display:grid;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
 .what-canonical-options .what-probe-option{min-width:0;min-height:66px;padding:12px;border-radius:11px;border-color:rgba(242,216,138,.34);font-weight:600;line-height:1.45;white-space:normal;overflow-wrap:anywhere;text-align:center}

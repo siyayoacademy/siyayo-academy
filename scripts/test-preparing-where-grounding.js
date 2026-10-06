@@ -8,7 +8,9 @@ const preparing=seeds.find(x=>x.id==='preparing-dinner');
 const where=preparing.thinkingMind.find(q=>q.questionWord==='where');
 assert.ok(where);
 assert.equal(where.assessmentTarget,undefined);
-assert.equal(where.assessmentResumeTarget,undefined);
+assert.deepEqual(where.assessmentResumeTarget,{
+  skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
+});
 
 const plate=accessories.categories.find(c=>c.id==='table-setting').items.find(i=>i.id==='plate');
 assert.deepEqual(plate,{id:'plate',en:'plate',es:'plato',pt:'prato'});
@@ -36,4 +38,4 @@ for(const language of ['en','es','pt']){
 const runtime=fs.readFileSync('js/verb-explorer.js','utf8');
 for(const language of ['en','es','pt'])
   assert.ok(runtime.includes('data/learning/dependencies/preparing-where-'+language+'.json'));
-console.log('PASS — Preparing WHERE is presentation-grounded to canonical plate/plato/prato and dependency DNA, while assessment remains absent.');
+console.log('PASS — Preparing WHERE is grounded to plate/plato/prato and dependency DNA; its explicit recovery target cannot start a destination assessment.');

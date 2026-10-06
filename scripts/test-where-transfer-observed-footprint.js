@@ -226,7 +226,8 @@ for (const mode of ['Node', 'browser VM']) {
       'a later canonical Decision can recover this scope closure');
     assert.deepEqual(local.thinkingMind.find(q => q.questionWord === 'where').assessmentTarget,
       {skill: where.id, definitionPath: 'data/learning/skills/where.json'});
-    assert.equal(destination.thinkingMind.find(q => q.questionWord === 'where').assessmentResumeTarget, undefined);
+    assert.deepEqual(destination.thinkingMind.find(q => q.questionWord === 'where').assessmentResumeTarget,
+      {skill: where.id, definitionPath: 'data/learning/skills/where.json'});
   }
   assert.equal(history.observations.length, 21, 'EN/ES/PT each retain six observed Attempts and one scope-owned closure');
 }

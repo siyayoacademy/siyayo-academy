@@ -11,7 +11,10 @@ for(const experienceId of ['shopping-for-dinner','preparing-dinner']){
     skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
   });
   else assert.equal(q.assessmentTarget,undefined);
-  assert.equal(q.assessmentResumeTarget,undefined);
+  if(experienceId==='preparing-dinner')assert.deepEqual(q.assessmentResumeTarget,{
+    skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
+  });
+  else assert.equal(q.assessmentResumeTarget,undefined);
   for(const language of ['en','es','pt']){
     const id=q.dependencyFocus.structureIds[language];
     const structure=require('../data/learning/dependencies/'+id+'.json');

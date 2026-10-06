@@ -1061,6 +1061,10 @@
         {
           "intention": "place",
           "questionWord": "where",
+          "assessmentResumeTarget": {
+            "skill": "where.use.location-question",
+            "definitionPath": "data/learning/skills/where.json"
+          },
           "question": {
             "en": "Where should we put the vegetables?",
             "es": "¿Dónde debemos poner las verduras?",

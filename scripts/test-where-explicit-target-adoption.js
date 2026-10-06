@@ -93,7 +93,7 @@ async function main() {
       .map(item => ({experienceId: experience.id, target: item.assessmentTarget})));
   assert.deepEqual(declarations, [{experienceId: local.id, target}]);
   assert.equal(question(destination).assessmentTarget, undefined);
-  assert.equal(question(destination).assessmentResumeTarget, undefined);
+  assert.deepEqual(question(destination).assessmentResumeTarget, target);
   assert.equal(where.status, 'isolated-candidate');
   assert.equal(grounding.assessmentAuthority, false, 'content mapping is not an evaluator');
 
@@ -141,7 +141,9 @@ async function main() {
         ['origin resume-only', ({origin}) => {question(origin).assessmentResumeTarget = target; delete question(origin).assessmentTarget;}],
         ['origin also resume', ({origin}) => {question(origin).assessmentResumeTarget = target;}],
         ['destination starts assessment', ({later}) => {question(later).assessmentTarget = target;}],
-        ['destination undeclared recovery', ({later}) => {question(later).assessmentResumeTarget = target;}],
+        ['missing destination recovery', ({later}) => {delete question(later).assessmentResumeTarget;}],
+        ['foreign recovery skill', ({later}) => {question(later).assessmentResumeTarget.skill = 'what.use.object-question';}],
+        ['foreign recovery path', ({later}) => {question(later).assessmentResumeTarget.definitionPath = 'other.json';}],
         ['foreign origin', ({origin}) => {origin.id = 'having-dinner';}],
         ['foreign destination', ({origin, later}) => {later.id = 'having-dinner'; origin.toroidalNext.nextExperience = later.id;}],
         ['wrong canonical hop', ({origin}) => {origin.toroidalNext.nextExperience = 'having-dinner';}],
@@ -161,7 +163,7 @@ async function main() {
       assert.equal(api.resolve(where, local, destination, grounding, 'fr'), null);
     }
     env.move({currentExperienceId: destination.id});
-    assert.equal(await env.selection.select(question(destination)), false, 'Preparing cannot start a WHERE Session');
+    assert.equal(await env.selection.select(question(destination)), true, 'Preparing resumes only the retained Shopping Session');
     assert.strictEqual(env.coordinator.snapshot().session, snapshot.session);
     assert.equal(scopeOrigin(env.coordinator.snapshot()), local.id, 'a visit retains the origin Session');
   }
@@ -208,9 +210,9 @@ async function main() {
     assert.equal(pending.coordinator.snapshot(), null);
     assert.equal(pending.evidence.getProfile(), null, 'a rejected load creates no evidence profile');
   }
-  assert.equal(rejectedSpecifications, 96);
+  assert.equal(rejectedSpecifications, 108);
   console.log('PASS — Shopping is the sole explicit WHERE target; real selection/Leaf/loader/Composer/Coordinator startup creates three language-owned origin Sessions at 0/3 WAIT.');
-  console.log('PASS — six Node/browser-VM Specification circuits use canonical location examples and reject 96 missing/foreign declarations or grounding/semantic mismatches.');
+  console.log('PASS — six Node/browser-VM Specification circuits use canonical location examples and reject 108 missing/foreign declarations or grounding/semantic mismatches.');
   console.log('PASS — anonymous startup, definition mismatch and identity/language/origin drift remain WAIT; Preparing visit preserves Shopping, with no evidence, NEXT or live UI claim.');
 }
 function scopeOrigin(snapshot) {return snapshot.session.decision.assessmentScope.originExperienceId;}

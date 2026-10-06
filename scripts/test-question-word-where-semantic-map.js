@@ -18,7 +18,10 @@ for(const x of [...dinner,...college]){
       skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
     },'only Shopping explicitly starts the WHERE location pilot');
     else assert.equal(q.assessmentTarget,undefined,x.id+' WHERE remains exploration-only');
-    assert.equal(q.assessmentResumeTarget,undefined,x.id+' WHERE must not masquerade as recovery');
+    if(x.id==='preparing-dinner')assert.deepEqual(q.assessmentResumeTarget,{
+      skill:'where.use.location-question',definitionPath:'data/learning/skills/where.json'
+    },'Preparing only recovers the retained Shopping WHERE circuit');
+    else assert.equal(q.assessmentResumeTarget,undefined,x.id+' WHERE must not masquerade as recovery');
   }
 }
 const shopping=dinner.find(x=>x.id==='shopping-for-dinner').thinkingMind.find(q=>q.questionWord==='where');

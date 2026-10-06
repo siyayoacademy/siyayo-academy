@@ -34,14 +34,15 @@
       !local.toroidalNext||local.toroidalNext.nextExperience!==transfer.id)return null;
     var here=one(local,'where'),later=one(transfer,'where');
     if(!here||!later||!canonicalTarget(here.assessmentTarget)||here.assessmentResumeTarget||
-      later.assessmentTarget||later.assessmentResumeTarget)return null;
+      later.assessmentTarget||!canonicalTarget(later.assessmentResumeTarget))return null;
     if(here.intention!=='place'||later.intention!=='place')return null;
     var localRow=record(grounding,local.id),transferRow=record(grounding,transfer.id);
     if(!localRow||!transferRow||localRow.subtype!=='location'||transferRow.subtype!=='location'||
       localRow.modeCandidate!=='local'||transferRow.modeCandidate!=='transfer')return null;
     function answer(q,row,experience,mode){
       var answer=text(row.answer&&row.answer[language]),phrase=text(row.spatialPhrase&&row.spatialPhrase[language]);
-      if(!answer||!phrase||!text(q.question&&q.question[language]))return null;
+      var other=text(row.nonLocationAnswer&&row.nonLocationAnswer[language]);
+      if(!answer||!phrase||!other||other===answer||!text(q.question&&q.question[language]))return null;
       return Object.freeze({
         skill:skill.id,language:language,experienceId:experience.id,
         fromExperienceId:mode==='transfer'?local.id:null,
@@ -49,7 +50,7 @@
         question:q.question[language],expectedAlternativeId:'grounded-location',
         alternatives:Object.freeze([
           Object.freeze({id:'grounded-location',label:answer,spatialPhrase:phrase}),
-          Object.freeze({id:'non-location',label:'—'})
+          Object.freeze({id:'non-location',label:other})
         ])
       });
     }

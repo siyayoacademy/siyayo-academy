@@ -63,6 +63,11 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
       'js/verb-explorer-adaptive-input-provider.js',
       'js/verb-explorer-adaptive-state-bridge.js',
       'js/verb-explorer-adaptive-coordinator.js',
+      'js/adaptive-where-location-probe-specification-source.js',
+      'js/adaptive-where-location-probe-result.js',
+      'js/adaptive-where-location-probe-evidence-bridge.js',
+      'js/adaptive-where-location-probe-attempt-boundary.js',
+      'js/verb-explorer-where-assessment-live.js',
       'js/verb-explorer-choice-adaptive-wire.js',
       'js/choice-support-sensor.js',
       'js/verb-explorer-choice-support-observer.js',
@@ -74,6 +79,9 @@ Promise.resolve(sandbox.SIYAYOVerbExplorerCycleResumeDispatch.bootstrap())
     const positions = liveOrder.map(src => appended.indexOf(src));
     assert(positions.every((value, index) => index === 0 || value > positions[index - 1]), 'live adaptive modules must load in dependency order');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerLearnerEvent.fromChoiceSelect, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerLearnerEvent.fromWhereLocationProbeSelect, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerWhereAssessmentLive.captureAudio, 'function');
+    assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerWhereAssessmentLive.observeAudio, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerLearnerEvent.fromSentenceBuilt, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveController.submitChoice, 'function');
     assert.strictEqual(typeof sandbox.SIYAYOVerbExplorerAdaptiveInputProvider, 'function');

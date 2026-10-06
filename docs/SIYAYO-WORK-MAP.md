@@ -30,7 +30,46 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-44
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-45
+
+**Recorded:** 2026-10-06 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire`
+
+**Base HEAD:** `821ef1056ed326b208d379a761e1e56aeb989751`
+
+**Change kind:** EXTENSION — visible WHERE location probes, scoped Preparing recovery and observed audio support.
+
+**Status:** the new integration test and 43 existing regression scripts passed locally. CI/deployment must be verified on this published commit. Automated live-browser checks and human UI homologation are separate pending evidence; deployment alone does not grant homologation.
+
+## DONE — live WHERE presentation and canonical evidence wire
+
+- LIVE-44 final `821ef1056ed326b208d379a761e1e56aeb989751` passed Bootstrap `37395636772`, Resume `37395636854` and Corpus `37395636510`; Cloudflare deployed `https://c9295588.siyayo-academy.pages.dev`. The old S1 exploratory assertion was corrected without altering the 81 trilingual dialogue pairs.
+- Added `js/verb-explorer-where-assessment-live.js`, loaded after the WHERE Specification/Result/Evidence/Attempt modules by the adaptive bootstrap and mounted by the existing Experience runtime. Canonical grounding is fetched once; missing/malformed content hides the panel without creating an answer or Session.
+- Shopping shows spatial-function and local location probes; Preparing shows only the location-transfer probe. Full-sentence EN/ES/PT distractors now replace the placeholder alternative. These are presentation data, not another evaluator or a new destination-use contract.
+- Shopping remains the sole WHERE start target. Preparing declares the exact `assessmentResumeTarget` for `where.use.location-question` and `data/learning/skills/where.json`. The Specification requires that exact recovery declaration and rejects missing/foreign recovery or a destination start target. Six Node/browser-VM Specification circuits now reject 108 invalid cases.
+- Existing Thinking Mind selection restores only a retained Shopping circuit owned by the same learner/skill/language/origin. A fresh Preparing visitor cannot start a WHERE Session there. The panel itself starts no Session.
+- Actual response buttons create a distinct `where-location-probe-select` learner occurrence and use the existing Specification -> Result -> Evidence -> Attempt -> Coordinator/Cycle chain. Scope, Session, definition, identity, live language/Experience and detached-handler checks happen before submission. Selection, render, audio and recovery do not submit answers.
+- Native Explorer speech `onstart`, not a request, failure or synthetic panel click, observes audio support for matching canonical WHERE text. Living Lines and panel speakers use that same hook. Observation tokens cannot cross Session, identity or live context. Support is retained per adopted Session/Experience: remount/reclick/retained recovery cannot silently erase assistance. It never crosses language-owned Sessions or claims pronunciation mastery.
+- The existing contract still requires independent local and transfer location evidence. Incorrect/assisted answers leave the corresponding requirement in WAIT; a correct spatial-function response can satisfy its existing first requirement, whose contract does not require `support: none`. Existing independent evidence is not revoked by later listening.
+- The panel projects canonical contract progress and scope-owned feedback. WHERE is included in the existing read-only word path/highlight; spatial-function is labeled FUNCTION/FUNCIÓN/FUNÇÃO. No new score, star authority, persistent visitor history or automatic NEXT was added.
+- `scripts/test-where-live-assessment.js` uses controlled DOM/native speech transport around production startup/authorities. Six EN/ES/PT Node/browser-VM independent circuits cover 0/3 -> 1/3 -> 2/3 WAIT -> 3/3 eligible, incorrect choices, one footprint per occurrence, one closure per scope and restoration after another Skill. Six assisted-transfer and six assisted-local circuits verify sticky audio WAIT, native request/error versus onstart, delayed/foreign tokens, Living Lines support and language isolation. This is not a human learner response claim.
+- All 44 local scripts passed, including the new integration test, bootstrap order/late-authority, WHERE target/contract/transfer/grounding, learner events, Trail/feedback, WHICH/WHAT/WHY live/longitudinal regressions, GOLD CONNECTION and shared speech. The Choice Evidence Packet Bridge retains its 43 checks and unchanged Session-owned skill contract. Bootstrap CI now runs the live WHERE test explicitly.
+
+## WAIT / PERAÍ
+
+- Verify all three workflows, relevant logs and Cloudflare deployment at this exact published HEAD before presenting the new preview as ready.
+- Exercise the deployed panel with controlled browser clicks in EN/ES/PT. Record this separately from learner homologation; a browser automation run must not be attributed to the user.
+- Human homologation remains WAIT until the user checks the actual panel/answers, listening and mobile/desktop readability. Native speech availability varies by browser/OS; VM callbacks are not proof of audible speech on the user's device.
+- No merge, no new PR, no automatic NEXT/restart, no general destination-use/preposition mastery, no cross-language competence or persistent anonymous/nick visitor history.
+
+## NEXT GO
+
+Verify CI/deploy and the actual preview at this HEAD, then return the direct `verb-explorer.html?mode=experience&experience=shopping-for-dinner` link. For human homologation: choose WHERE, supply a nick, answer Shopping's two probes independently, freely visit Preparing and answer its transfer; repeat in ES/PT with the same learner but separately adopted language Sessions. Use a separate trial for listening support and confirm WAIT instead of counting an assisted response as independent evidence. Advance beyond this location pilot only after that UI evidence is explicit.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-44
 
 **Recorded:** 2026-10-05 (America/Sao_Paulo)
 

@@ -74,7 +74,7 @@ const sandbox = vm.createContext({
   AdaptiveLearnerTrailView: Object.freeze({
     project(receivedProfile, skill) {
       assert.strictEqual(receivedProfile, profile);
-      assert.ok(['which.use.determiner','what.use.object-question','why.use.contextual-reason'].includes(skill));
+      assert.ok(['which.use.determiner','what.use.object-question','why.use.contextual-reason','where.use.location-question'].includes(skill));
       const state = skill === 'which.use.determiner' ? marker.state : 'UNOBSERVED';
       return Object.freeze({
         status: state === 'UNOBSERVED' ? 'TRAIL_EMPTY' : 'TRAIL_AVAILABLE',
@@ -188,6 +188,7 @@ assert.match(container.innerHTML, /QUESTION WORD/);
 assert.match(container.innerHTML, /INTERROGATIVE DETERMINER/);
 assert.match(container.innerHTML, /WORD PATH/);
 assert.match(container.innerHTML, /WHAT.*not started/);
+assert.match(container.innerHTML, /WHERE.*not started/);
 assert.doesNotMatch(container.innerHTML, /WHAT.*confirmed/);
 
 assert.equal(Surface.refresh({ document: documentRef, language: 'es' }), true);

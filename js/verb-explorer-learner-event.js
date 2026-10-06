@@ -6,6 +6,7 @@
   var determinerUseTransferProbeOccurrenceSequence=0;
   var whatObjectQuestionProbeOccurrenceSequence=0;
   var whyContextualReasonProbeOccurrenceSequence=0;
+  var whereLocationProbeOccurrenceSequence=0;
   var dependencyHeadProbeOccurrenceSequence=0;
   var toroidalNextOccurrenceSequence=0;
 
@@ -74,6 +75,29 @@
       skill:'why.use.contextual-reason',dimension:state.dimension,mode:state.mode,
       language:state.language,choice:choice.trim(),
       fromExperienceId:from,experienceId:state.currentExperienceId
+    });
+  }
+
+  function fromWhereLocationProbeSelect(choice,state){
+    state=state||{};
+    if(typeof choice!=='string'||!choice.trim()||
+      state.skill!=='where.use.location-question'||
+      !['spatial-function','location-answer'].includes(state.dimension)||
+      !['local','transfer'].includes(state.mode)||
+      !['en','es','pt'].includes(state.language)||
+      typeof state.currentExperienceId!=='string'||!state.currentExperienceId.trim())return null;
+    var from=state.fromExperienceId||null;
+    if(state.mode==='transfer'&&(typeof from!=='string'||!from.trim()||
+      from===state.currentExperienceId||state.dimension!=='location-answer'))return null;
+    if(state.mode==='local'&&from)return null;
+    whereLocationProbeOccurrenceSequence+=1;
+    return Object.freeze({
+      observed:true,actor:'learner',intent:'answer',type:'learner-response',relevantToWait:true,
+      source:'where-location-probe-select',
+      occurrenceId:'where-location-probe-select:'+whereLocationProbeOccurrenceSequence,
+      skill:'where.use.location-question',dimension:state.dimension,mode:state.mode,
+      language:state.language,choice:choice.trim(),fromExperienceId:from,
+      experienceId:state.currentExperienceId
     });
   }
 
@@ -252,6 +276,7 @@
     fromDeterminerUseTransferProbeSelect:fromDeterminerUseTransferProbeSelect,
     fromWhatObjectQuestionProbeSelect:fromWhatObjectQuestionProbeSelect,
     fromWhyContextualReasonProbeSelect:fromWhyContextualReasonProbeSelect,
+    fromWhereLocationProbeSelect:fromWhereLocationProbeSelect,
     fromDependencyHeadProbeSelect:fromDependencyHeadProbeSelect,
     fromToroidalNextSelect:fromToroidalNextSelect,
     fromSentenceBuilt:fromSentenceBuilt

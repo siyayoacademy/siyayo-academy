@@ -70,7 +70,8 @@
     var known=[
       {id:'which.use.determiner',word:'WHICH'},
       {id:'what.use.object-question',word:'WHAT'},
-      {id:'why.use.contextual-reason',word:'WHY'}
+      {id:'why.use.contextual-reason',word:'WHY'},
+      {id:'where.use.location-question',word:'WHERE'}
     ];
     var cards=known.map(function(item){
       var history=trailView.project(profile,item.id,root.AdaptiveAssessmentScope?{language:assessmentLanguage}:null);
@@ -197,12 +198,12 @@
       progress.satisfied.map(function(done,index){
         var requirement=snapshot.context.passContract.requires[index]||{};
         var labels={
-          en:{choice:'CHOICE',use:'USE',transfer:'TRANSFER'},
-          es:{choice:'ELECCIÓN',use:'USO',transfer:'TRANSFERENCIA'},
-          pt:{choice:'ESCOLHA',use:'USO',transfer:'TRANSFERÊNCIA'}
+          en:{choice:'CHOICE',use:'USE',transfer:'TRANSFER',spatial:'FUNCTION'},
+          es:{choice:'ELECCIÓN',use:'USO',transfer:'TRANSFERENCIA',spatial:'FUNCIÓN'},
+          pt:{choice:'ESCOLHA',use:'USO',transfer:'TRANSFERÊNCIA',spatial:'FUNÇÃO'}
         }[language]||{choice:'CHOICE',use:'USE',transfer:'TRANSFER'};
         var key=requirement.mode==='transfer'?'transfer':
-          requirement.dimension==='choice-function'?'choice':'use';
+          requirement.dimension==='spatial-function'?'spatial':requirement.dimension==='choice-function'?'choice':'use';
         return escapeHtml(labels[key]+' '+(done?'●':'○'));
       }).join(' · ')+
       ' · '+escapeHtml(progress.completed+'/'+progress.total)+'</small>':'';
