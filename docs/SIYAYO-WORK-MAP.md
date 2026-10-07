@@ -40,7 +40,7 @@ Content abundance never implies assessment authority. No branch may create an in
 
 **Change kind:** FIX — restore WHERE feedback from canonical contract progress after visiting another Experience.
 
-**Status:** human desktop evidence demonstrates completed EN and separately adopted ES circuits. The 2026-10-07 PT trial reaches FUNCTION 1/3 and records a correct local answer with observed audio support, preserving WAIT for independent USE. The user confirms audible diagnostic/panel controls in this tested PT desktop environment. The stale Preparing message is corrected in code; eight relevant existing regressions and six EN/ES/PT Node/browser-VM return reproductions passed locally. Remote CI/deploy results for implementation HEAD `96ed877eac52588ffe36bfc7baea70f0e90fa8b7` are tracked in PR #3. The specific corrected reverse-order return, independent PT completion, mobile and final global visual review remain pending. Overall homologation remains partial.
+**Status:** human desktop evidence now demonstrates completed EN, separately adopted ES and PT circuits: DENOVO reaches PT 0/3 -> 2/3 -> 3/3, preserves GREEN PASS on Shopping return and retains the ONDE star while freely exploring WHAT. The earlier PT assisted 1/3 trial and user-confirmed audible diagnostic/panel controls remain distinct evidence. The stale Preparing message is corrected in code; eight relevant existing regressions and six EN/ES/PT Node/browser-VM reverse-order return reproductions passed locally. Remote CI/deploy results for implementation HEAD `96ed877eac52588ffe36bfc7baea70f0e90fa8b7` are tracked in PR #3. The specific corrected reverse-order return, mobile, final global visual review and the reported NOVO TESTE opening behavior remain pending. Overall homologation remains partial.
 
 ## DONE — base validation and human screenshot review
 
@@ -84,6 +84,26 @@ Preparing continua sendo visita/transferência da avaliação iniciada em Shoppi
 
 O relato humano confirma áudio efetivamente ouvido no diagnóstico e nos controles testados de ONDE/PT em desktop. A imagem isolada não demonstra escuta; não ampliar esta homologação para idiomas, dispositivos ou controles não testados. O diagnóstico de vínculo permanece observado fora dos três requisitos de localização.
 
+### Treze anexos adicionais — DENOVO conclui ONDE/PT · 2026-10-07
+
+| Anexos / arquivos na conversa | Constatação da revisão | Estado |
+|---|---|---|
+| 1–2: `image(20261007-154345).png`, `image(20261007-154540).png` | NOVO TESTE: erro deliberado no diagnóstico; RESPOSTA EXPLORATÓRIA OBSERVADA e Trail completo já visível em 0/3 nos dois prints. Usuário relata dois cliques em ONDE sem perceber abertura/mudança e decide reiniciar. | Relato de abertura mantido OPEN em ENTRY-WHERE-01; os recortes não mostram o painel de avaliação inferior |
+| 3–5: `image(20261007-154800).png` a `image(20261007-155011).png` | DENOVO: após novo início, erro deliberado gera observação exploratória compacta; depois da seleção de ONDE aparece a trilha completa em 0/3 com a observação branca preservada. | Erro observado permanece fora dos requisitos de localização |
+| 6: `image(20261007-155743).png` | Painel ONDE · PRÁTICA DE LOCALIZAÇÃO em 0/3, alternativas ainda sem seleção | Entrada do painel demonstrada neste circuito |
+| 7–8: `image(20261007-161230).png`, `image(20261007-161306).png` | Uma localização e Podemos encontrar o salmão na seção de peixes. selecionadas; FUNÇÃO ●, USO ●, TRANSFERÊNCIA ○; 2/3 e NEXT iluminado com transferência pendente | Função e uso aceitos; não há aviso de apoio de áudio nesse ensaio |
+| 9–10: `image(20261007-161343).png`, `image(20261007-161409).png` | Preparing: Devemos colocar os legumes no prato. selecionada; 3/3, GREEN PASS · ONDE confirmado, estrela e Trail confirmado. Origem shopping-for-dinner; S2 continua exploração livre. | Conclusão funcional própria PT demonstrada; 1 contexto confirmado, sem nova avaliação em Preparing |
+| 11–12: `image(20261007-161516).png`, `image(20261007-161548).png` | Retorno a Shopping preserva 3/3, estrela, observação exploratória e feedback GREEN PASS no painel local | Retenção e feedback neste retorno de ordem normal demonstrados |
+| 13: `image(20261007-161900-1).png` | Após o relato de visitar Preparing, escolher English/WHAT e retornar a Português, o print final mostra EXPLORANDO WHAT · AVALIAÇÃO WHERE, ONDE 3/3/estrela e WHAT ainda não iniciada | Preservação final do resultado PT durante exploração de outra QW demonstrada; o estado intermediário EN não está capturado |
+
+A pendência de conclusão própria ONDE/PT em desktop está encerrada para DENOVO. O contrato completo e o GREEN aparecem na interface; não foram inferidos apenas pelo destaque do botão. O diagnóstico errado permanece como observação exploratória e não bloqueia nem substitui as provas de função, uso e transferência. A aprovação humana da aparência deste percurso não encerra os registros de revisão visual global 1 e 2.
+
+**ENTRY-WHERE-01 — relato inicial de cliques sem mudança:** a trilha já está visível nos anexos 1 e 2, ao contrário de uma ausência total do Learning Trail. O painel de perguntas ONDE · PRÁTICA DE LOCALIZAÇÃO fica mais abaixo; ele não está incluído nesses recortes. Assim, ausência efetiva do painel e sua causa não estão comprovadas. O novo início com DENOVO não comprova correção dessa ocorrência. Registrar a distinção de nomes/localização entre trilha e painel também em VISUAL-PATITA-01. Não atribuir o problema a erro no diagnóstico, nick, carregamento, rede ou cache sem reprodução.
+
+Conferência do código em HEAD documental `4335ee3ffde5c5afd1b1d6b47fa9913af7afbf83`: `selectThinkingMindAssessment` refaz a apresentação após seleção aceita; `ThinkingMindAssessmentSelection.select` preserva a mesma Session quando learner/skill/language já coincidem. Reclique em ONDE não deve inventar resposta ou aumentar 0/3. `renderExperience` monta a trilha e o painel como superfícies separadas; o bootstrap carrega o grounding de WHERE e refaz a renderização. O painel exige a Session/Scope/grounding/contexto corretos; estas regras não foram relaxadas para contornar o relato.
+
+Verificação local direcionada em 2026-10-07: `node scripts/test-where-explicit-target-adoption.js` passou, usando os arquivos de produção. Cobre início Shopping em EN/ES/PT em 0/3, recuperação, identidade/idioma/origem e declarações inválidas. Este resultado não reproduz os dois cliques relatados no navegador nem comprova resolução de ENTRY-WHERE-01. Código funcional, contrato, Choice Bridge, testes/CI e regras de Session permanecem sem alteração.
+
 ### Rotinas conferidas e regra de registro
 
 - `js/verb-explorer.js` / `refreshThinkingMindAssessmentHighlight`: o botão da QW mostra ◐ quando a Session adota aquela Skill no idioma exibido e ainda não há confirmação canônica. Significa Praticando agora; pode existir já em 0/3. A estrela depende do fechamento canônico confirmado. A seleção visual sozinha não cria evidência.
@@ -104,12 +124,12 @@ O relato humano confirma áudio efetivamente ouvido no diagnóstico e nos contro
 
 - Implementação LIVE-46 permanece `96ed877eac52588ffe36bfc7baea70f0e90fa8b7`, com CI/deploy registrados em PR #3. Registrar separadamente a verificação deste commit documental; a documentação não comprova novo comportamento no navegador.
 - Evidência própria ES/desktop está presente. Áudio funcional PT/desktop e WAIT após uso assistido estão confirmados pelo relato humano e pelas capturas; não solicitar estes mesmos testes novamente para preencher a antiga pendência genérica.
-- Permanecem OPEN: conclusão PT independente 3/3, retorno específico da sequência invertida em Preparing após concluir USO em Shopping, mobile e registros visuais globais 1 e 2.
+- Conclusão própria PT/desktop e retorno normal Shopping com GREEN estão demonstrados por DENOVO. Permanecem OPEN: retorno específico da sequência invertida em Preparing após concluir USO em Shopping, mobile, registros visuais globais 1 e 2 e investigação de ENTRY-WHERE-01.
 - Existing Choice Bridge, Session-owned Skill, WHERE requirements, scope/provenance, sticky support and one closure per scope remain the authoritative boundaries. No merge, new PR or automatic NEXT is authorized by this checkpoint.
 
 ## NEXT GO
 
-Separar o ensaio PT assistido, já registrado, da prova independente ainda pendente. Para um circuito independente limpo no runtime atual, usar outro nick, Português e seleção explícita de ONDE em Shopping; responder função e uso sem acionar áudio antes das respostas, então visitar Preparing e responder a transferência sem áudio prévio. Esperar 0/3 -> 1/3 -> 2/3 -> 3/3. O ensaio assistido atual pode prosseguir para transferência, mas o USO assistido de Shopping continua pendente para GREEN. Não apagar ou reclassificar o apoio observado para forçar avanço. Depois conferir a sequência invertida, mobile e, no momento apropriado, executar os dois registros de revisão visual global. Não repetir os percursos EN/ES já demonstrados.
+Não repetir a conclusão normal de EN/ES/PT, já demonstrada, nem o ensaio de áudio PT homologado. Próximo teste humano específico: com outro nick e sem áudio prévio, responder a função corretamente e errar deliberadamente a localização em Shopping; visitar Preparing e acertar a transferência (2/3); voltar a Shopping e acertar a localização (3/3); retornar a Preparing e conferir GREEN PASS, estrela e 3/3, sem o feedback antigo de avaliação em andamento. Esta é a ordem invertida que ainda falta observar no navegador. Depois verificar mobile e executar os registros visuais globais no momento apropriado. ENTRY-WHERE-01 permanece disponível para investigação direcionada com a área inferior do painel, estado de abertura e sequência de cliques; não pressupor falha nem fechar a ocorrência pelo reinício bem-sucedido.
 
 ---
 
