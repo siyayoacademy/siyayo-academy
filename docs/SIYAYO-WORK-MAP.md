@@ -40,7 +40,7 @@ Content abundance never implies assessment authority. No branch may create an in
 
 **Change kind:** FIX — restore WHERE feedback from canonical contract progress after visiting another Experience.
 
-**Status:** human screenshot evidence now demonstrates two EN/desktop circuits reaching 3/3. The stale Preparing message is corrected; eight relevant existing regressions and six EN/ES/PT Node/browser-VM return reproductions passed locally. Remote CI/deploy results for the resulting published HEAD are tracked in PR #3. Human inspection of the corrected return remains pending. Overall homologation remains partial.
+**Status:** human desktop evidence demonstrates completed EN and separately adopted ES circuits. The 2026-10-07 PT trial reaches FUNCTION 1/3 and records a correct local answer with observed audio support, preserving WAIT for independent USE. The user confirms audible diagnostic/panel controls in this tested PT desktop environment. The stale Preparing message is corrected in code; eight relevant existing regressions and six EN/ES/PT Node/browser-VM return reproductions passed locally. Remote CI/deploy results for implementation HEAD `96ed877eac52588ffe36bfc7baea70f0e90fa8b7` are tracked in PR #3. The specific corrected reverse-order return, independent PT completion, mobile and final global visual review remain pending. Overall homologation remains partial.
 
 ## DONE — base validation and human screenshot review
 
@@ -56,15 +56,60 @@ Content abundance never implies assessment authority. No branch may create an in
 - Reused the existing production integration fixture to reproduce the exact reverse completion order in six EN/ES/PT Node/browser-VM circuits: function pass -> local failure -> transfer pass at 2/3 -> return to Shopping for local pass -> revisit Preparing. The base displayed 3/3 with an old in-progress message; the correction displays the matching GREEN PASS label in each language. Return keeps the same Session and unchanged Trace/observation count, with exactly one canonical closure. This is controlled integration evidence, not a deployed-browser or human response claim.
 - Eight existing regression scripts passed: WHERE live assessment, feedback remount contract, Learner Trail, WHERE authority admission, explicit target adoption, transfer/footprint, adaptive bootstrap and the unchanged 43-check Choice Bridge. JavaScript syntax validation passed. No test, CI, corpus, Skill or evaluator file changed in this fix.
 
+## REGISTRO HUMANO — ONDE / DÓNDE / WHERE · 2026-10-07
+
+Registro solicitado pelo usuário; revisão de evidências e fila de execução visual. Esta atualização altera somente o mapa de trabalho. A rotina auditada é a implementação `96ed877eac52588ffe36bfc7baea70f0e90fa8b7`; capturas sem identificação da versão não comprovam por si o SHA servido no navegador.
+
+### Evidência anterior consolidada — 17 capturas de 2026-10-06
+
+| Anexos / arquivos na conversa | Evidência humana visível | Limite |
+|---|---|---|
+| 1–5: `image(20261006-134858).png` a `image(20261006-135044).png` | Avaliação própria ES: 0/3 -> 2/3 -> 3/3, DÓNDE confirmado e retorno a Shopping preservado | Conclusão na transferência; não demonstra a sequência invertida corrigida |
+| 6–10: `image(20261006-135331).png` a `image(20261006-135458).png` | Outro nick inicia EN 0/3 e completa 3/3 | Não herda o resultado do nick anterior |
+| 11: `image(20261006-135508).png` | PANTALLA ES · EVALUACIÓN EN após troca de idioma | Exibição traduzida do circuito EN |
+| 12–16: `image(20261006-135515).png` a `image(20261006-135555).png` | Seleção explícita de DÓNDE com o mesmo nick do EN inicia ES 0/3 e completa 3/3 | Idiomas mantêm avaliações próprias |
+| 17: `image(20261006-135604).png` | ONDE/PT inicia 0/3 com os três requisitos vazios | Não demonstra conclusão PT |
+
+Preparing continua sendo visita/transferência da avaliação iniciada em Shopping; 1 contexto confirmado não significa uma nova avaliação em Preparing. Erro posterior no diagnóstico de vínculo não revoga o contrato de localização concluído. Estas novas evidências substituem a pendência geral de avaliação própria ES; a observação histórica sobre as 19 capturas anteriores continua válida para aquele lote.
+
+### Cinco novos anexos — ensaio PT com áudio
+
+| Anexo / arquivo | Constatação | Registro de homologação |
+|---|---|---|
+| 1: `image(20261006-143301).png` | ONDE em Thinking Mind com ◐; Trail e painel ainda 0/3 | Revisar a clareza do indicador de prática ativa no registro visual 1 abaixo |
+| 2: `image(20261007-133022).png` | encontrar: NÚCLEO IDENTIFICADO; marcador global laranja ◐ e RESPOSTA OBSERVADA branca ◐, contrato ainda 0/3 | Usuário aprova estes dois marcadores e confirma som funcional do diagnóstico |
+| 3: `image(20261007-135754).png` | Uma localização aceita; painel 1/3 e aviso de apoio de áudio | Usuário confirma som funcionando em todos os botões testados do painel ONDE |
+| 4: `image(20261007-135911).png` | FUNÇÃO ● · USO ○ · TRANSFERÊNCIA ○ · 1/3 no Trail | Projeção do requisito de função correta e aprovada pelo usuário |
+| 5: `image(20261007-140324).png` | Podemos encontrar o salmão na seção de peixes. selecionada; 1/3, apoio de áudio observado e resposta registrada com apoio de áudio | Resposta correta e registrada como assistida; não satisfaz USO independente |
+
+O relato humano confirma áudio efetivamente ouvido no diagnóstico e nos controles testados de ONDE/PT em desktop. A imagem isolada não demonstra escuta; não ampliar esta homologação para idiomas, dispositivos ou controles não testados. O diagnóstico de vínculo permanece observado fora dos três requisitos de localização.
+
+### Rotinas conferidas e regra de registro
+
+- `js/verb-explorer.js` / `refreshThinkingMindAssessmentHighlight`: o botão da QW mostra ◐ quando a Session adota aquela Skill no idioma exibido e ainda não há confirmação canônica. Significa Praticando agora; pode existir já em 0/3. A estrela depende do fechamento canônico confirmado. A seleção visual sozinha não cria evidência.
+- `js/adaptive-learner-progress-marker.js` e `js/verb-explorer-learner-trail-surface.js`: o marcador global laranja ◐ representa percurso observado/em progresso; RESPOSTA OBSERVADA branca separa a observação das provas do contrato. Os pontos individuais ●/○ de FUNÇÃO/USO/TRANSFERÊNCIA vêm dos requisitos satisfeitos, não da aparência do botão.
+- `data/learning/skills/where.json`: FUNÇÃO exige spatial-function/pass; USO exige location-answer/pass/local/support:none; TRANSFERÊNCIA exige location-answer/pass/transfer/support:none. A função pode contar com áudio, enquanto a resposta local assistida fica registrada sem preencher USO.
+- `js/verb-explorer-where-assessment-live.js`: o áudio nativo observado em onstart marca apoio por Session/Experience; o clique na alternativa produz Result -> Evidence com support:audio -> Attempt -> Coordinator. O aviso e a seleção do anexo 5 concordam com este caminho. Uma imagem não permite inspecionar o payload interno do Attempt; a cadeia foi verificada no código e no teste existente.
+- Apoio observado em Shopping permanece nessa Session/Experience após novo clique, remount ou retorno; repetir a mesma resposta não a transforma em prova independente. Escuta em Shopping não fabrica apoio em Preparing. Áudio sozinho não cria resposta, Attempt ou fechamento.
+- Verificação local em 2026-10-07: `node scripts/test-where-live-assessment.js` passou. O teste existente reproduz áudio em Living Lines -> função 1/3 -> localização correta assistida ainda 1/3; cobre remount/reclique, transferência independente, idiomas/identidade e controles inválidos. Não houve alteração de testes, CI, contrato, evaluator ou código funcional.
+
+### FILA DE EXECUÇÃO — homologação visual global final
+
+| Registro solicitado | Escopo e estudo futuro | Estado / critério de conclusão |
+|---|---|---|
+| **Registro 1 — VISUAL-PATITA-01: significado dos indicadores** | Revisar em todos os percursos/Experiences, todas as QWs e EN/ES/PT. Distinguir prática selecionada, resposta observada, progresso parcial, resultado retido e confirmação. Estudar background do botão e cores diferenciadas, acompanhados de texto/legenda acessível; preservar os dois marcadores do anexo 2 aprovados pelo usuário. Incluir clareza entre resposta correta assistida e requisito independente pendente. | OPEN para revisão geral no momento apropriado, antes da homologação visual final. Cor/background são propostas de estudo, ainda sem decisão visual ou implementação. Marcadores de Patita projetam os registros canônicos; não criam autoridade de aprovação. |
+| **Registro 2 — VISUAL-CARDS-02: bordas e espaço do texto** | Comparar os cartões de LINES / POSSIBLE RESPONSES, diagnóstico e avaliação. Revisar formato mais retangular, bordas/raio, padding, largura, quebras de linha e altura de leitura; o usuário percebe texto comprimido. Cobrir todos os percursos, QWs, idiomas e desktop/mobile com as fontes homologadas. | OPEN para revisão global no momento apropriado, antes da homologação visual final. Definir e homologar coerência de formato e leitura antes de aplicar CSS global. Nenhuma alteração visual antecipada neste registro. |
+
 ## WAIT / PERAÍ
 
-- Verify this same branch/PR's exact published HEAD, CI and deploy before repassing the preview; consult PR #3 for the resulting commit's remote verification.
-- Human EN/desktop evidence is now present for the two demonstrated paths. The corrected deployed return must still be checked visually; separately adopted ES/PT assessments, audible speech/assisted WAIT and mobile readability remain pending.
+- Implementação LIVE-46 permanece `96ed877eac52588ffe36bfc7baea70f0e90fa8b7`, com CI/deploy registrados em PR #3. Registrar separadamente a verificação deste commit documental; a documentação não comprova novo comportamento no navegador.
+- Evidência própria ES/desktop está presente. Áudio funcional PT/desktop e WAIT após uso assistido estão confirmados pelo relato humano e pelas capturas; não solicitar estes mesmos testes novamente para preencher a antiga pendência genérica.
+- Permanecem OPEN: conclusão PT independente 3/3, retorno específico da sequência invertida em Preparing após concluir USO em Shopping, mobile e registros visuais globais 1 e 2.
 - Existing Choice Bridge, Session-owned Skill, WHERE requirements, scope/provenance, sticky support and one closure per scope remain the authoritative boundaries. No merge, new PR or automatic NEXT is authorized by this checkpoint.
 
 ## NEXT GO
 
-Verify the published correction's exact HEAD, CI and deploy against PR #3, then inspect the 3/3 Shopping -> Preparing return and continue with separate ES/PT assessment circuits, a distinct listening trial and mobile readability. Do not ask the user to repeat already demonstrated EN paths merely to fill missing static screenshots.
+Separar o ensaio PT assistido, já registrado, da prova independente ainda pendente. Para um circuito independente limpo no runtime atual, usar outro nick, Português e seleção explícita de ONDE em Shopping; responder função e uso sem acionar áudio antes das respostas, então visitar Preparing e responder a transferência sem áudio prévio. Esperar 0/3 -> 1/3 -> 2/3 -> 3/3. O ensaio assistido atual pode prosseguir para transferência, mas o USO assistido de Shopping continua pendente para GREEN. Não apagar ou reclassificar o apoio observado para forçar avanço. Depois conferir a sequência invertida, mobile e, no momento apropriado, executar os dois registros de revisão visual global. Não repetir os percursos EN/ES já demonstrados.
 
 ---
 
