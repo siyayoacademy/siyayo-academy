@@ -42,7 +42,7 @@ Content abundance never implies assessment authority. No branch may create an in
 
 **User GO:** adopt AUTO/PORTRAIT/LANDSCAPE, start with font correction, inspect cards/arrows in the three formats and record the step-by-step sequence. The user will inspect the finished adjustments on the actual mobile device. No merge or new PR.
 
-**Status:** implementation prepared; controlled checks, visual verification and publication are in progress. The previous desktop PT reverse-order return is now demonstrated by the user's final two screenshots. Mobile PT normal-order completion is demonstrated in two nick-owned circuits. Those earlier captures do not homologate the new responsive presentation.
+**Status:** implementation published; all 267 workflow Node commands pass locally; Bootstrap/Resume/Corpus and Cloudflare deployment pass for functional commit `188e5603729020e60b609726d8ed4126023d69f3`. Three-format presentation checks are recorded. The next human step is the user's physical-mobile visual confirmation of these new adjustments. The previous desktop PT reverse-order return and two mobile PT normal-order circuits remain demonstrated; those earlier captures do not homologate the new responsive presentation.
 
 ## WORK RECORD — recovery without losing the sequence
 
@@ -51,12 +51,12 @@ Canonical work log: `docs/SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md`. Shared co
 | Step | Scope | State |
 |---|---|---|
 | 1 | Verify current HEAD, copied base blobs and common Piano files | DONE |
-| 2 | Adopt the common CSS/controller and toolbar/viewport | IMPLEMENTED |
-| 3 | Make Explorer layout follow its container in AUTO/PORTRAIT/LANDSCAPE | IMPLEMENTED |
-| 4 | Correct font precedence, whole-word cards and readable metadata | IMPLEMENTED |
-| 5 | Refresh arrow geometry after layout/font changes, retaining visual focus | IMPLEMENTED |
-| 6 | Existing regressions and three-format visual checks | 44/44 PASS; visual preview checks in progress |
-| 7 | Existing-branch publication, immutable readback, CI/deploy | PENDING |
+| 2 | Adopt the common CSS/controller and toolbar/viewport | DONE |
+| 3 | Make Explorer layout follow its container in AUTO/PORTRAIT/LANDSCAPE | DONE |
+| 4 | Correct font precedence, whole-word cards and readable metadata | DONE |
+| 5 | Refresh arrow geometry after layout/font changes, retaining visual focus | DONE |
+| 6 | Existing regressions and three-format visual checks | DONE: 267/267 workflow Node commands; browser presentation checks |
+| 7 | Existing-branch publication, immutable readback, CI/deploy | DONE: exact readback; 3 workflows and functional deployment PASS |
 | 8 | User visual confirmation on the physical mobile device | WAIT |
 
 ## HUMAN EVIDENCE — newly closed previous items
@@ -71,7 +71,6 @@ Canonical work log: `docs/SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md`. Shared co
 
 ## WAIT / PERAÍ
 
-- Finish and record controlled/visual verification and published CI/deploy before delivering the mobile preview.
 - User confirmation of the new mobile fonts/cards/arrows is pending. Earlier mobile functional success is retained as prior evidence, not approval of this new layout.
 - VISUAL-PATITA-01 and VISUAL-CARDS-02 remain OPEN for final global visual review across all Experiences/QWs/languages; this scoped Dependency Focus change does not close them.
 - ENTRY-WHERE-01 remains OPEN for the initial NOVO TESTE report. No cause or resolution is inferred from later successful restarts.
@@ -79,7 +78,7 @@ Canonical work log: `docs/SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md`. Shared co
 
 ## NEXT GO
 
-Continue at the first PENDING work-record step. After regressions, three-format checks and verified existing-branch publication, give the user the exact preview to inspect the new Dependency Focus on the physical mobile device: whole words, readable types/relations, compact card height, horizontal diagram scroll and arrows attached to the correct tokens. Preserve the current nick/assessment when switching desktop formats. Then resume the open global visual records and targeted ENTRY-WHERE-01 investigation. Do not repeat completed EN/ES/PT desktop or normal-order PT mobile circuits merely to fill stale checklist entries.
+Step 8: the user inspects [the verified functional LIVE-47 preview](https://3610852c.siyayo-academy.pages.dev/verb-explorer?mode=experience&experience=shopping-for-dinner) on the physical mobile device, in portrait and landscape: whole words, readable types/relations, compact card height, internal horizontal diagram scroll and arrows attached to the correct tokens. Desktop formats preserve the current nick/assessment. All details, CI links, the first CI failures and their correction are in the work log. Only the existing portrait-containment test changed; workflow and assessment authorities did not. Then resume the open global visual records and targeted ENTRY-WHERE-01 investigation. Do not repeat completed EN/ES/PT desktop or normal-order PT mobile circuits merely to fill stale checklist entries.
 
 ---
 
