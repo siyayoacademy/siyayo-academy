@@ -42,7 +42,7 @@ Content abundance never implies assessment authority. No branch may create an in
 
 **User GO:** adopt AUTO/PORTRAIT/LANDSCAPE, start with font correction, inspect cards/arrows in the three formats and record the step-by-step sequence. The user will inspect the finished adjustments on the actual mobile device. No merge or new PR.
 
-**Status:** implementation published; all 267 workflow Node commands pass locally; Bootstrap/Resume/Corpus and Cloudflare deployment pass for functional commit `188e5603729020e60b609726d8ed4126023d69f3`. Three-format presentation checks are recorded. The next human step is the user's physical-mobile visual confirmation of these new adjustments. The previous desktop PT reverse-order return and two mobile PT normal-order circuits remain demonstrated; those earlier captures do not homologate the new responsive presentation.
+**Status:** implementation published; all 267 workflow Node commands pass locally; Bootstrap/Resume/Corpus and Cloudflare deployment pass for functional commit `188e5603729020e60b609726d8ed4126023d69f3`. Three-format presentation checks are recorded. Twenty new human captures now demonstrate readable EN/portrait and PT/landscape presentation, audible mobile speech as reported by the user, and the expected assisted WHERE route 0/3 -> 1/3 -> 2/3 with retained Shopping origin. They also report a new Dependency Focus scroll reset, DEPENDENCY-SCROLL-01. Overall visual homologation remains partial. The previous desktop PT reverse-order return and two mobile PT normal-order circuits remain demonstrated separately.
 
 ## WORK RECORD — recovery without losing the sequence
 
@@ -57,7 +57,7 @@ Canonical work log: `docs/SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md`. Shared co
 | 5 | Refresh arrow geometry after layout/font changes, retaining visual focus | DONE |
 | 6 | Existing regressions and three-format visual checks | DONE: 267/267 workflow Node commands; browser presentation checks |
 | 7 | Existing-branch publication, immutable readback, CI/deploy | DONE: exact readback; 3 workflows and functional deployment PASS |
-| 8 | User visual confirmation on the physical mobile device | WAIT |
+| 8 | User visual confirmation on the physical mobile device | PARTIAL: 20 captures reviewed; scoped readability/audio accepted; DEPENDENCY-SCROLL-01 OPEN |
 
 ## HUMAN EVIDENCE — newly closed previous items
 
@@ -65,20 +65,29 @@ Canonical work log: `docs/SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md`. Shared co
 - Mobile PT normal order: 20 WhatsApp screenshots from 14.18.13 to 14.31.30 show `New Pupil ONDE` starting 0/3, Shopping 2/3, Preparing 3/3 GREEN and retained Shopping Trail. A second nick `Conferir learning trail Onde` starts 0/3, shows both Shopping panel and Trail at 2/3, and returns to Shopping with panel/Trail 3/3 confirmed. These are pre-LIVE-47 human screenshots on the tested device.
 - Display EN with assessment PT remains a PT result; switching display back to PT restores its ONDE star. Screenshots do not confirm audible mobile speech or an independently completed mobile EN/ES assessment.
 
+## HUMAN RETURN — new presentation/audio and scroll investigation
+
+The 20 captures from `image(20261007-213405).png` through `image(20261007-220853).png`, including the WhatsApp files at 18.02–18.16, are indexed in the canonical work log. Captures with an address bar identify functional preview `3610852c`; inspected HEAD `8635dc1f64653b98c61cc87ce73f36b4d611b573` differs from its functional commit only in the two work documents.
+
+- Mobile EN/WHAT portrait shows readable whole-word cards, full types, localized scroll guidance and canonical arrows at both ends. Mobile PT/ONDE landscape shows all five tokens and advmod/aux/obj attached to encontrar. The user approves the integration; this is scoped human presentation evidence, not a complete EN/ES/PT/QW matrix.
+- The user reports audible speech behaving as expected in the presented mobile trial. PT panel/Trail show function 1/3, local response recorded with audio support, independent Preparing transfer 2/3, then Shopping return still 2/3 with assistance retained. Local support remains sticky per Session/Experience; a Preparing visit does not start an assessment or manufacture transfer audio. This assisted trial has no independent local pass and no GREEN PASS.
+- DEPENDENCY-SCROLL-01 OPEN: user reports that the diagram jumps to its beginning when moving from the scrollbar to another token on laptop and when pointing cook on mobile. Source audit confirms that token interaction calls render, which replaces the scroll container without preserving scrollLeft. Resize/font/preview refresh itself does not replace it. Proposal: retain horizontal position for focus changes within the same canonical phrase/language, clamp after layout, and keep canonical connectors; a different phrase/context must not inherit unrelated scroll state. The approved white context scrollbar is a separate surface.
+- Eleven relevant existing regressions passed again, including language/QW isolation, live WHERE/audio and all 43 Choice Bridge checks. They do not test scroll retention. No new automated browser reproduction or scroll correction was performed in this review. The work log records acceptance criteria and the human/source distinction.
+
 ## VISUAL STUDY — Dependency Focus / portrait
 
-`image(20261007-183912).png` records the user's fine-study notes: word, word type, relation/arrow layer, font sizes and card height. Earlier mobile 14.18.13 shows overlapping words and metadata. Later general font rules overrode the smaller mobile token rules; equal shrinking columns compressed unbroken words. This step preserves the three information sources and canonical relations, uses compact readable cards and lets only the diagram scroll where required. The full record and field mapping are in the work log. This presentation item remains WAIT for the user's inspection after delivery.
+`image(20261007-183912).png` records the user's fine-study notes: word, word type, relation/arrow layer, font sizes and card height. Earlier mobile 14.18.13 shows overlapping words and metadata. Later general font rules overrode the smaller mobile token rules; equal shrinking columns compressed unbroken words. This step preserves the three information sources and canonical relations, uses compact readable cards and lets only the diagram scroll where required. The full record and field mapping are in the work log. The new human lot demonstrates improved readability in the observed compositions; retained scrolling and final global visual approval remain pending.
 
 ## WAIT / PERAÍ
 
-- User confirmation of the new mobile fonts/cards/arrows is pending. Earlier mobile functional success is retained as prior evidence, not approval of this new layout.
+- Scoped human confirmation of new mobile readability/audio is received. Retention while examining Dependency Focus arrows remains OPEN in DEPENDENCY-SCROLL-01, and the full human language/QW/format matrix is not demonstrated.
 - VISUAL-PATITA-01 and VISUAL-CARDS-02 remain OPEN for final global visual review across all Experiences/QWs/languages; this scoped Dependency Focus change does not close them.
 - ENTRY-WHERE-01 remains OPEN for the initial NOVO TESTE report. No cause or resolution is inferred from later successful restarts.
 - Preserve Session-owned Skill, unchanged Choice Bridge/WHERE contract, support:none requirements, scope/provenance, one closure per scope and the corrected canonical GREEN feedback. Preview and resizing create no evidence or progression.
 
 ## NEXT GO
 
-Step 8: the user inspects [the verified functional LIVE-47 preview](https://3610852c.siyayo-academy.pages.dev/verb-explorer?mode=experience&experience=shopping-for-dinner) on the physical mobile device, in portrait and landscape: whole words, readable types/relations, compact card height, internal horizontal diagram scroll and arrows attached to the correct tokens. Desktop formats preserve the current nick/assessment. All details, CI links, the first CI failures and their correction are in the work log. Only the existing portrait-containment test changed; workflow and assessment authorities did not. Then resume the open global visual records and targeted ENTRY-WHERE-01 investigation. Do not repeat completed EN/ES/PT desktop or normal-order PT mobile circuits merely to fill stale checklist entries.
+Investigate DEPENDENCY-SCROLL-01 before a hasty change: preserve the user's place while examining another token of the same phrase, then verify mouse/touch/keyboard and arrow alignment in AUTO/PORTRAIT/LANDSCAPE. Follow with targeted EN -> ES -> PT -> EN and QW switching in Shopping/Preparing, checking canonical reference selection and unchanged assessment ownership. The existing [verified functional LIVE-47 preview](https://3610852c.siyayo-academy.pages.dev/verb-explorer?mode=experience&experience=shopping-for-dinner) is the reviewed version, not a scroll-fix preview. The work log contains the 20-capture review, exact source finding, proposed boundary and acceptance criteria. This review changes documentation only. Global visual records and ENTRY-WHERE-01 remain open; do not repeat completed circuits merely to fill stale checklist entries.
 
 ---
 

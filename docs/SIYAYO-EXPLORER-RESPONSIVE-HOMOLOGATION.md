@@ -4,7 +4,7 @@
 **Registro:** 2026-10-07, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
 **Base:** `050b3c8c98698fa0a7990dd5b90827399575d6ec`  
-**Estado:** implementação publicada; regressões e conferência dos três formatos concluídas; homologação humana dos novos ajustes no celular em WAIT.
+**Estado:** implementação publicada; regressões e conferência dos três formatos concluídas; evidência humana dos novos ajustes e de áudio recebida. Homologação visual parcial; DEPENDENCY-SCROLL-01 e revisão geral permanecem OPEN.
 
 ## Objetivo e autorização
 
@@ -35,10 +35,13 @@ Usar o branch e a PR existentes. Não fazer merge nem criar outra PR.
 | 5 | Recalcular setas após largura/formato/fontes, preservando o foco | DONE: atualização visual sem refazer a avaliação |
 | 6 | Executar regressões pertinentes e conferir composição nos três formatos | DONE: 267/267 comandos Node dos workflows; conferência de apresentação no navegador |
 | 7 | Publicar no branch existente; verificar arquivos, CI e preview | DONE: readback exato; 3 workflows PASS; deploy do commit funcional confirmado |
-| 8 | Conferência humana dos ajustes no celular pelo usuário | WAIT |
+| 8 | Conferência humana dos ajustes no celular pelo usuário | PARTIAL: 20 capturas recebidas; leitura EN/portrait e PT/landscape, percurso com áudio e nova ocorrência de rolagem registrados abaixo |
 
-**Retomada:** passo 8 — usuário confere os novos ajustes no celular. Não refazer
-os circuitos humanos já demonstrados para preencher pendências antigas.
+**Retomada:** investigar a retenção da rolagem do Dependency Focus ao apontar
+outro token da mesma frase; depois conferir alternâncias de idioma/QW e os três
+formatos. Não refazer os circuitos humanos já demonstrados para preencher
+pendências antigas. A solicitação atual é de investigação; a correção de rolagem
+descrita abaixo ainda não foi implementada.
 
 ## Modos e composição
 
@@ -84,7 +87,8 @@ Não inventar uma relação apenas para preencher visualmente três linhas.
 Os cartões mantêm Quicksand/Nunito Sans, palavras inteiras e metadados completos.
 Onde falta largura, o diagrama tem rolagem horizontal, barra visível e instrução
 localizada somente quando há overflow. O restante da página continua ajustado
-ao contêiner. O registro permanece WAIT até a conferência humana dos ajustes.
+ao contêiner. O novo lote humano abaixo confirma legibilidade nas composições
+observadas; a retenção da rolagem e a revisão visual geral continuam abertas.
 
 As setas continuam usando dependente -> head a partir do corpus. São redesenhadas
 com as posições atuais dos cartões após ResizeObserver, mudança de preview,
@@ -195,5 +199,99 @@ humana de domínio ou de áudio.
 5. Enviar o relato e os prints dos dois lados/posições observados. Se aparecer
    uma falha, registrar idioma, Experience, QW, orientação e ação que a provoca.
 
-A homologação humana dos novos ajustes no celular permanece WAIT. CI/deploy
+Este era o roteiro entregue antes do novo lote humano abaixo. CI/deploy
 bem-sucedidos isoladamente não encerram a homologação visual.
+
+## Retorno humano — 20 capturas e áudio · 2026-10-07
+
+**Versão identificada:** as capturas com a barra de endereço mostram o preview
+funcional `3610852c`. Ele corresponde ao commit funcional `188e560`; o HEAD
+inspecionado nesta revisão, `8635dc1f64653b98c61cc87ce73f36b4d611b573`, acrescenta
+somente os dois documentos de acompanhamento. Capturas recortadas, isoladamente,
+não identificam um SHA. Os arquivos originais foram lidos localmente e preservados.
+
+| Capturas | Evidência observada | Limite / resultado |
+|---|---|---|
+| `image(20261007-213405).png`; WhatsApp `18.02.00` | Celular vertical, Shopping/English/WHAT: frase inteira alcançável por rolagem, palavras e tipos legíveis, setas obj/xcomp/mark e cartões de Living Lines com texto quebrado dentro das bordas | Apresentação EN/WHAT observada; nick vazio não é avaliação EN concluída |
+| `image(20261007-214110).png` | Celular horizontal, Shopping/PT/ONDE, nick Show: cinco tokens legíveis; advmod/aux/obj ligados a encontrar; diagnóstico correto observado fora do contrato; Trail 0/3 | Legibilidade nesta composição aprovada pelo relato; observação não satisfaz FUNÇÃO/USO/TRANSFERÊNCIA |
+| WhatsApp `18.06.28`, `18.06.47`, `18.07.15`, `18.07.29` | ONDE, tipos, passado/afirmativa/perspectivas e Living Lines legíveis; próximo contexto apresentado como exploração livre | Exploração gramatical e visita não iniciam outra avaliação |
+| WhatsApp `18.07.46`, `18.09.17`, `18.09.29`, `18.09.56` | FUNÇÃO preenchida; resposta correta de Shopping selecionada; aviso de apoio de áudio e exigência de evidência independente; Trail FUNÇÃO ● / USO ○ / TRANSFERÊNCIA ○, 1/3 | Resposta local foi registrada como assistida. A ausência de USO confirmado é o comportamento esperado |
+| WhatsApp `18.12.17`, `18.12.34` | Preparing conserva WHERE 1/3 e origem Shopping; visita não inicia nova avaliação; ONDE exibido | Retenção do percurso e da origem demonstrada |
+| WhatsApp `18.13.16`, `18.14.18` | Transferência correta em Preparing; Trail FUNÇÃO ● / USO ○ / TRANSFERÊNCIA ●, 2/3 | Transferência independente admitida; áudio local de Shopping não é fabricado como áudio em Preparing |
+| WhatsApp `18.15.08`, `18.16.55` | Retorno a Shopping mantém 2/3 e a mensagem de apoio de áudio no uso local | Remontagem não apaga o apoio observado nesta Session/Experience. Este ensaio permanece sem USO independente e sem GREEN PASS |
+| `image(20261007-214251).png`, `image(20261007-214342).png` | Laptop com barra AUTO e composição estreita do Explorer | Integração visual observada; não demonstra avaliação própria nem todos os formatos/idiomas |
+| `image(20261007-220853).png` | Usuário aprova a barra branca do contexto; relata salto da rolagem do diagrama ao sair da barra com o mouse e ao apontar cook no celular | Nova pendência DEPENDENCY-SCROLL-01, detalhada abaixo |
+
+O usuário confirma que o teste de áudio corresponde ao esperado. Registrar
+**áudio efetivamente ouvido no ensaio móvel apresentado**; os prints PT do painel
+corroboram o registro de apoio, mas imagem estática não prova escuta. Não ampliar
+esse relato para todas as vozes, idiomas, QWs ou dispositivos. O lote acrescenta
+evidência humana de apresentação e de apoio de áudio; não é somente um deploy
+bem-sucedido. Ele não demonstra uma matriz completa de alternâncias EN/ES/PT.
+
+### DEPENDENCY-SCROLL-01 — OPEN: retenção ao mudar o foco
+
+**Relato:** após deslizar até o fim da frase, o usuário quer examinar palavras e
+setas mantendo a posição. No laptop relata retorno ao início ao mover o mouse
+da barra; no celular relata o mesmo ao apontar cook. A imagem registra a posição
+e o relato, não uma sequência temporal automatizada.
+
+**Inspeção do código publicado:**
+
+- `js/verb-explorer-dependency-focus-interaction.js` muda o foco por hover
+  (`pointerover`, exceto touch), apontar (`pointerup`) e teclado (`focusin`,
+  Enter/Space). Uma mudança real de token chama `surface.render`.
+- `js/verb-explorer-dependency-focus-surface.js` substitui `surface.innerHTML`
+  e cria outro `.dependency-diagram-scroll` em cada renderização. Não captura nem
+  restaura `scrollLeft` do contêiner anterior. Essa perda de estado explica o
+  salto descrito quando o foco muda; não existe um handler específico de saída
+  da barra que deliberadamente mande a rolagem para o início.
+- A atualização de geometria por resize/fontes/preview usa `refresh` e não
+  recria esse contêiner. O desenho calcula posições relativas ao stage; a
+  rolagem deve conservar o alinhamento de cartões e setas.
+- Os dois arquivos inspecionados conferem exatamente com os blobs do HEAD:
+  surface `5e22ce450c8b694643e5665152506e6968c7d56d` e interaction
+  `fb3767abfa7a325fa9d82d45d669d3d8e5549351`.
+
+**Correção proposta, ainda não aplicada:** conservar a posição horizontal
+enquanto muda somente o token focado da mesma frase canônica e idioma. Se a
+renderização continuar substituindo o DOM, capturar a posição antes e restaurar
+no novo contêiner, limitada ao intervalo válido após o layout; manter o desenho
+das relações canônicas. Uma troca deliberada de frase/QW/idioma/Experience usa a
+nova referência sem carregar a posição de outra frase. Não desativar o apontar
+para esconder o problema. A barra branca do contexto foi aprovada e não faz
+parte desta ocorrência.
+
+**Critérios para o próximo elo:**
+
+1. Deslizar até a parte direita; apontar going/cook com mouse e touch e conferir
+   foco novo, posição retida e pontas das setas ligadas aos tokens corretos.
+2. Repetir por teclado, conferindo acesso aos tokens sem salto para o início.
+3. Alternar AUTO/PORTRAIT/LANDSCAPE com a mesma referência e verificar limites
+   da rolagem e redesenho das setas.
+4. Alternar EN -> ES -> PT -> EN e QWs disponíveis em Shopping e Preparing:
+   frase/tipos/relações correspondem à referência selecionada; referência ausente
+   não herda o diagrama anterior; voltar à referência mantém apresentação coerente.
+5. Conferir que exploração/preview não produzem evidência, Session, closure ou
+   adoção automática de Skill/idioma. Conservar as avaliações próprias retidas.
+
+### Verificação da revisão e fila preservada
+
+Passaram novamente **11 regressões existentes**: seleção e isolamento de idioma;
+áudio de Choice; QWord/Dependency Focus; referência viva por idioma; interação;
+interação acessível; superfície; WHERE vivo com áudio/remontagem; contrato WHERE;
+Choice Evidence Packet Bridge (43 verificações). Os testes de interação não
+verificam a retenção da rolagem; o resultado PASS não encerra DEPENDENCY-SCROLL-01.
+Esta revisão não fez uma nova reprodução automatizada no navegador.
+
+O HEAD `8635dc1` tem Bootstrap, Resume, Corpus e Cloudflare em success, conferidos
+separadamente das capturas. Nenhum arquivo de runtime, teste ou CI foi alterado
+por esta revisão; a publicação desta evidência é somente documental. Skill
+continua exclusivamente em `session.decision.skill`; o contrato e o Choice
+Bridge conservam as autoridades e restrições anteriores.
+
+**WAIT geral permanece:** DEPENDENCY-SCROLL-01; revisão visual global
+VISUAL-PATITA-01 / VISUAL-CARDS-02; ENTRY-WHERE-01; matriz humana ainda não
+demonstrada de idiomas/QWs/formatos. Áudio e legibilidade observados neste lote
+ficam registrados com seu escopo; não reabrir conclusões anteriores nem tratar
+o ensaio assistido em 2/3 como perda de um GREEN PASS anterior.
