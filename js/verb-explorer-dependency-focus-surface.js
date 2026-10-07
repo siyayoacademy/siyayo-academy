@@ -11,7 +11,7 @@
 
   function refresh(){
     var current=activeRender;
-    if(!current||current.surface.hidden||current.surface.isConnected===false)return false;
+    if(!current||current.surface.hidden||current.surface.isConnected===false||typeof current.surface.querySelector!=='function')return false;
     var stage=current.surface.querySelector('.dependency-token-stage');
     if(!stage)return false;
     var rect=stage.getBoundingClientRect();
@@ -31,6 +31,7 @@
   }
 
   function watchLayout(surface,doc){
+    if(typeof surface.querySelector!=='function')return;
     var stage=surface.querySelector('.dependency-token-stage');
     if(stage&&typeof root.ResizeObserver==='function'){
       if(!resizeObserver)resizeObserver=new root.ResizeObserver(scheduleRefresh);
@@ -132,8 +133,8 @@
       '<small class="dependency-scroll-hint" hidden>'+escapeHtml(({en:'Scroll sideways to see the complete sentence.',es:'Desliza hacia los lados para ver la frase completa.',pt:'Deslize para os lados para ver a frase completa.'})[language])+'</small>';
 
     activeRender={surface:surface,resolved:resolved,connectorView:connectorView};
+    var result=connectorView.draw({surface:surface,resolved:resolved});
     watchLayout(surface,doc);
-    var result=refresh();
     scheduleRefresh();
     return result;
   }
