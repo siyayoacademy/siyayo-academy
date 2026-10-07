@@ -1,0 +1,73 @@
+/* SIYAYO Responsive Stage — shared shell v1.0
+   Contract: docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md */
+
+.stage-viewport {
+  --siyayo-preview-portrait-width:430px;
+  --siyayo-preview-landscape-width:844px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  transition:max-width 220ms ease, transform 220ms ease;
+}
+
+.experience-box {
+  width:100%;
+  min-width:0;
+}
+
+.dev-preview-toolbar {
+  position:fixed;
+  right:14px;
+  top:14px;
+  z-index:2000;
+  display:flex;
+  gap:6px;
+  padding:6px;
+  border:1px solid rgba(242,216,138,.34);
+  border-radius:999px;
+  background:rgba(2,9,24,.88);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  box-shadow:0 8px 28px rgba(0,0,0,.35);
+}
+
+.preview-button {
+  min-height:34px;
+  padding:0 11px;
+  border:1px solid rgba(242,216,138,.24);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#fff;
+  font:inherit;
+  font-size:.72rem;
+  cursor:pointer;
+}
+
+.preview-button.is-active {
+  background:var(--gold,#d7b35a);
+  border-color:var(--gold-light,#f2d88a);
+  color:#171006;
+  font-weight:700;
+}
+
+.stage-viewport[data-preview="portrait"] {
+  max-width:var(--siyayo-preview-portrait-width);
+  margin-inline:auto;
+}
+
+.stage-viewport[data-preview="landscape"] {
+  max-width:var(--siyayo-preview-landscape-width);
+  margin-inline:auto;
+}
+
+.stage-viewport[data-preview="portrait"] > *,
+.stage-viewport[data-preview="landscape"] > * {
+  width:100%;
+}
+
+/* Preview UI is for development. Real touch-first devices use runtime CSS. */
+@media (hover:none) and (pointer:coarse) {
+  .dev-preview-toolbar {
+    display:none !important;
+  }
+}

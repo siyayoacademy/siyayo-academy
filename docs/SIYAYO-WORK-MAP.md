@@ -30,7 +30,60 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-46
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-47
+
+**Recorded:** 2026-10-07 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `050b3c8c98698fa0a7990dd5b90827399575d6ec`
+
+**Change kind:** PRESENTATION — adopt the shared responsive preview and correct Dependency Focus typography/layout.
+
+**User GO:** adopt AUTO/PORTRAIT/LANDSCAPE, start with font correction, inspect cards/arrows in the three formats and record the step-by-step sequence. The user will inspect the finished adjustments on the actual mobile device. No merge or new PR.
+
+**Status:** implementation prepared; controlled checks, visual verification and publication are in progress. The previous desktop PT reverse-order return is now demonstrated by the user's final two screenshots. Mobile PT normal-order completion is demonstrated in two nick-owned circuits. Those earlier captures do not homologate the new responsive presentation.
+
+## WORK RECORD — recovery without losing the sequence
+
+Canonical work log: `docs/SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md`. Shared contract: `docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md`, recovered from Piano snapshot `349bde65c7986843ad21ecef549d206631bea305`.
+
+| Step | Scope | State |
+|---|---|---|
+| 1 | Verify current HEAD, copied base blobs and common Piano files | DONE |
+| 2 | Adopt the common CSS/controller and toolbar/viewport | IMPLEMENTED |
+| 3 | Make Explorer layout follow its container in AUTO/PORTRAIT/LANDSCAPE | IMPLEMENTED |
+| 4 | Correct font precedence, whole-word cards and readable metadata | IMPLEMENTED |
+| 5 | Refresh arrow geometry after layout/font changes, retaining visual focus | IMPLEMENTED |
+| 6 | Existing regressions and three-format visual checks | 44/44 PASS; visual preview checks in progress |
+| 7 | Existing-branch publication, immutable readback, CI/deploy | PENDING |
+| 8 | User visual confirmation on the physical mobile device | WAIT |
+
+## HUMAN EVIDENCE — newly closed previous items
+
+- Desktop PT reverse order: `image(20261007-163327).png` through `image(20261007-164057).png` show 0/3 -> function/local failure 1/3 -> Preparing transfer 2/3 -> Shopping local correction 3/3. The final `image(20261007-165258).png` and `image(20261007-165559).png` show Preparing revisit with ONDE retained, star, Trail 3/3 and GREEN PASS feedback. The user confirms no additional ONDE click was needed. The specific LIVE-46 browser-return item is closed for this tested PT desktop sequence.
+- Mobile PT normal order: 20 WhatsApp screenshots from 14.18.13 to 14.31.30 show `New Pupil ONDE` starting 0/3, Shopping 2/3, Preparing 3/3 GREEN and retained Shopping Trail. A second nick `Conferir learning trail Onde` starts 0/3, shows both Shopping panel and Trail at 2/3, and returns to Shopping with panel/Trail 3/3 confirmed. These are pre-LIVE-47 human screenshots on the tested device.
+- Display EN with assessment PT remains a PT result; switching display back to PT restores its ONDE star. Screenshots do not confirm audible mobile speech or an independently completed mobile EN/ES assessment.
+
+## VISUAL STUDY — Dependency Focus / portrait
+
+`image(20261007-183912).png` records the user's fine-study notes: word, word type, relation/arrow layer, font sizes and card height. Earlier mobile 14.18.13 shows overlapping words and metadata. Later general font rules overrode the smaller mobile token rules; equal shrinking columns compressed unbroken words. This step preserves the three information sources and canonical relations, uses compact readable cards and lets only the diagram scroll where required. The full record and field mapping are in the work log. This presentation item remains WAIT for the user's inspection after delivery.
+
+## WAIT / PERAÍ
+
+- Finish and record controlled/visual verification and published CI/deploy before delivering the mobile preview.
+- User confirmation of the new mobile fonts/cards/arrows is pending. Earlier mobile functional success is retained as prior evidence, not approval of this new layout.
+- VISUAL-PATITA-01 and VISUAL-CARDS-02 remain OPEN for final global visual review across all Experiences/QWs/languages; this scoped Dependency Focus change does not close them.
+- ENTRY-WHERE-01 remains OPEN for the initial NOVO TESTE report. No cause or resolution is inferred from later successful restarts.
+- Preserve Session-owned Skill, unchanged Choice Bridge/WHERE contract, support:none requirements, scope/provenance, one closure per scope and the corrected canonical GREEN feedback. Preview and resizing create no evidence or progression.
+
+## NEXT GO
+
+Continue at the first PENDING work-record step. After regressions, three-format checks and verified existing-branch publication, give the user the exact preview to inspect the new Dependency Focus on the physical mobile device: whole words, readable types/relations, compact card height, horizontal diagram scroll and arrows attached to the correct tokens. Preserve the current nick/assessment when switching desktop formats. Then resume the open global visual records and targeted ENTRY-WHERE-01 investigation. Do not repeat completed EN/ES/PT desktop or normal-order PT mobile circuits merely to fill stale checklist entries.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-46
 
 **Recorded:** 2026-10-06 (America/Sao_Paulo)
 
@@ -133,7 +186,7 @@ Não repetir a conclusão normal de EN/ES/PT, já demonstrada, nem o ensaio de �
 
 ---
 
-# PREVIOUS CHECKPOINT — JAGUAR-LIVE-45
+# HISTORICAL CHECKPOINT — JAGUAR-LIVE-45
 
 **Recorded:** 2026-10-06 (America/Sao_Paulo)
 

@@ -3,6 +3,55 @@
 (function(root){
   'use strict';
 
+  var activeRender=null;
+  var observedStage=null;
+  var resizeObserver=null;
+  var listenersInstalled=false;
+  var refreshPending=false;
+
+  function refresh(){
+    var current=activeRender;
+    if(!current||current.surface.hidden||current.surface.isConnected===false)return false;
+    var stage=current.surface.querySelector('.dependency-token-stage');
+    if(!stage)return false;
+    var rect=stage.getBoundingClientRect();
+    if(!(rect.width>0&&rect.height>0))return false;
+    var result=current.connectorView.draw({surface:current.surface,resolved:current.resolved});
+    var scroll=current.surface.querySelector('.dependency-diagram-scroll');
+    var hint=current.surface.querySelector('.dependency-scroll-hint');
+    if(scroll&&hint)hint.hidden=scroll.scrollWidth<=scroll.clientWidth+1;
+    return result;
+  }
+
+  function scheduleRefresh(){
+    if(refreshPending)return;
+    if(typeof root.requestAnimationFrame!=='function'){refresh();return;}
+    refreshPending=true;
+    root.requestAnimationFrame(function(){refreshPending=false;refresh();});
+  }
+
+  function watchLayout(surface,doc){
+    var stage=surface.querySelector('.dependency-token-stage');
+    if(stage&&typeof root.ResizeObserver==='function'){
+      if(!resizeObserver)resizeObserver=new root.ResizeObserver(scheduleRefresh);
+      if(stage!==observedStage){
+        resizeObserver.disconnect();
+        resizeObserver.observe(stage);
+        observedStage=stage;
+      }
+    }
+    if(listenersInstalled)return;
+    if(typeof root.addEventListener==='function'){
+      root.addEventListener('resize',scheduleRefresh);
+      root.addEventListener('siyayo:responsive-preview-changed',scheduleRefresh);
+    }
+    if(doc.fonts){
+      if(doc.fonts.ready&&typeof doc.fonts.ready.then==='function')doc.fonts.ready.then(scheduleRefresh);
+      if(typeof doc.fonts.addEventListener==='function')doc.fonts.addEventListener('loadingdone',scheduleRefresh);
+    }
+    listenersInstalled=true;
+  }
+
   function text(value){
     return typeof value==='string'?value.trim():'';
   }
@@ -75,18 +124,22 @@
         '<strong>'+escapeHtml(resolved.focus.form)+' / '+escapeHtml(focusType)+'</strong>'+
         (focusRole?'<small class="dependency-focus-role">'+escapeHtml(focusRole)+'</small>':'')+
       '</div>'+
+      '<div class="dependency-diagram-scroll" tabindex="0" role="region" aria-label="'+escapeHtml(({en:'Dependency diagram',es:'Diagrama de relaciones',pt:'Diagrama de relações'})[language])+'">'+
       '<div class="dependency-token-stage">'+
         '<svg class="dependency-connector-overlay" data-dependency-connectors aria-hidden="true"></svg>'+
         '<div class="dependency-token-row" aria-label="Canonical dependency focus">'+tokenHtml+'</div>'+
-      '</div>';
+      '</div></div>'+
+      '<small class="dependency-scroll-hint" hidden>'+escapeHtml(({en:'Scroll sideways to see the complete sentence.',es:'Desliza hacia los lados para ver la frase completa.',pt:'Deslize para os lados para ver a frase completa.'})[language])+'</small>';
 
-    return connectorView.draw({
-      surface:surface,
-      resolved:resolved
-    });
+    activeRender={surface:surface,resolved:resolved,connectorView:connectorView};
+    watchLayout(surface,doc);
+    var result=refresh();
+    scheduleRefresh();
+    return result;
   }
 
   root.SIYAYOVerbExplorerDependencyFocusSurface=Object.freeze({
-    render:render
+    render:render,
+    refresh:refresh
   });
 })(typeof globalThis!=='undefined'?globalThis:this);
