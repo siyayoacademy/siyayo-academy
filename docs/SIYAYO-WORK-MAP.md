@@ -32,7 +32,35 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-51
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-52
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Reviewed implementation:** `829b9c3f7be67af7e5769abaa904f19fd385269f` — [fixed Home preview](https://f9ff9ba1.siyayo-academy.pages.dev).
+
+**Change kind:** HUMAN HOMOLOGATION / TEST PLAN — record the user's approval and organize the next targeted manual checks. Documentation only.
+
+**User GO:** “Agora sim está justo com o efeito desejado e imaginado”, “ficou perfeito” and gold “muito mais coerente”; offers to perform a sequence of tests and requests the list.
+
+**Status:** HOME-EXTERIOR-BLUE-01 confirmed by the user in the reviewed view. This confirms the approved appearance of the dark-blue exterior and gold in that view, without inferring device, all three formats or all pages. No new runtime or CSS change. Manual language/QWord/word/layout checks below are pending; previously closed circuits retain their original scope.
+
+## WORK RECORD
+
+1. Verified remote PR #3 HEAD against the reviewed implementation. The Home correction's CSS, layout and runtime remain unchanged.
+2. Recorded the user's explicit visual approval. No new screenshot or independent browser observation accompanies this report.
+3. Prepared the numbered human test sequence T1–T8 in [the homologation log](SIYAYO-EXPLORER-RESPONSIVE-HOMOLOGATION.md#sequência-humana-t1t8). Start with display-language switching while an assessment is active, then inspect QWords, token focus, scroll, layout, audio and in-Experience navigation.
+4. Keep learner, language, skill and origin distinct when comparing progress. A LANGUAGE-only change preserves the active assessment; explicitly selecting another contracted QWord may select or restore its own assessment. Word/token exploration and layout changes produce no mastery by themselves.
+5. The pinned implementation preview stays the test reference. A documentation-only publication does not constitute a new UI version or a new runtime test run.
+
+## NEXT GO
+
+Receive T1–T8 as OK / problem / not tested, with device, display/assessment language, Question Word, Experience and progress before/after for any problem. Start with T1, the corrected active-card case. DEPENDENCY-SCROLL-01 stays closed for the earlier reported mobile retest; T4 is a targeted check of that behavior. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 and the full human format matrix remain OPEN/partial. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-51
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

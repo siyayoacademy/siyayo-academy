@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-51  
+**Checkpoint atual:** JAGUAR-LIVE-52  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `921ade16da82e37d06f2a34b25b35e606f282826`  
-**Estado atual:** usuário aprovou a aparência da paleta no preview LIVE-50 e pediu corrigir o fundo externo da Home. HOME-EXTERIOR-BLUE-01 aplica o azul escuro homologado em desktop/mobile; revisão visual desta correção aguarda o novo preview. TRAIL-DISPLAY-LANGUAGE-01 permanece corrigido e DEPENDENCY-SCROLL-01 confirmado no reteste móvel. A matriz humana completa de formatos permanece parcial.
+**Base desta revisão:** `829b9c3f7be67af7e5769abaa904f19fd385269f`  
+**Estado atual:** usuário confirmou o efeito e a coerência do azul escuro/dourado no preview LIVE-51. HOME-EXTERIOR-BLUE-01 confirmado na vista aprovada; roteiro humano T1–T8 preparado e ainda pendente. TRAIL-DISPLAY-LANGUAGE-01 permanece corrigido e DEPENDENCY-SCROLL-01 confirmado no reteste móvel anterior. A matriz humana completa de formatos permanece parcial.
 
 ## Objetivo e autorização
 
@@ -373,5 +373,35 @@ CI/publicação e observações posteriores no preview servido ficam registrados
 **Verificação:** diff limitado às três declarações de fundo; importação/token homologado conferidos. Arte interna, sombras, fontes, layout, Explorer, JS e autoridades de avaliação intactos. A correção é apenas CSS; não se atribuem novos resultados aos testes de LIVE-50. Publicação/deploy e readback ficam na PR #3. Não houve nova validação visual servida por navegador, pois a abertura anterior do preview ficou bloqueada.
 
 **Próximo elo:** revisão do fundo externo no novo preview da Home em laptop/celular, mantendo a continuidade da matriz de idiomas/QWs/formatos. VISUAL-PATITA-01, VISUAL-CARDS-02 e ENTRY-WHERE-01 seguem OPEN; a homologação humana completa permanece parcial.
+
+## Confirmação visual e roteiro humano — JAGUAR-LIVE-52
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Implementação revisada pelo usuário:** `829b9c3f7be67af7e5769abaa904f19fd385269f`.
+
+**Relato:** o usuário confirma que o efeito ficou como desejado/imaginado, “ficou perfeito”, “belo”, “elegante”, e que o dourado ficou mais coerente. **HOME-EXTERIOR-BLUE-01: DONE na vista aprovada pelo usuário.** O relato não identifica o dispositivo ou demonstra todos os formatos/páginas. Não há nova captura nem conferência independente por navegador nesta rodada.
+
+**Escopo deste registro:** documentação da aprovação e da lista solicitada. CSS, JS, corpus, Session/Skill, evidência, contratos e layout permanecem intactos. Os resultados automatizados de LIVE-50 e o deploy de LIVE-51 conservam seu escopo original.
+
+### Sequência humana T1–T8
+
+[Preview fixo do Explorer](https://f9ff9ba1.siyayo-academy.pages.dev/verb-explorer.html?mode=experience&experience=shopping-for-dinner).
+
+Antes de T1, anotar o nick, Experience, idioma da avaliação, QWord e progresso de uma avaliação em andamento, preferencialmente WHICH. Fazer primeiro a alternância de LANGUAGE sem trocar QWord, responder provas ou iniciar outra avaliação. Se não houver avaliação ativa, marcar T1 como não testado e informar esse estado; uma tela vazia não verifica a correção do cartão ativo.
+
+| Teste | Ação humana | Resultado esperado | Estado |
+|---|---|---|---|
+| T1 — Idiomas / cartão ativo | Trocar somente LANGUAGE: PT → EN → ES → PT, mantendo a avaliação em andamento | Perguntas/exemplos acompanham a tela; o cartão continua representando a avaliação e seu progresso. O idioma de avaliação se conserva; o aviso de tela/avaliação diferente é esperado | PENDING |
+| T2 — QWords / retorno | Em cada idioma, selecionar WHICH → WHAT → WHERE → WHICH | Pergunta/referência correspondem à QWord. Selecionar uma QWord com contrato pode ativar/restaurar a avaliação dela; ao voltar à mesma QWord, nick, idioma e origem, seu progresso é preservado. Progressos de idiomas diferentes permanecem separados | PENDING |
+| T3 — Palavras / relações | Na frase atual, selecionar três tokens de tipos diferentes, onde disponíveis | Dependency Focus mostra o token, tipo e relações corretos. O diagnóstico de núcleo mantém seu alvo próprio; selecionar uma palavra não significa responder à prova | PENDING |
+| T4 — Rolagem interna | Na mesma frase e idioma, deslizar o diagrama para a direita e apontar outro token | Rolagem permanece na faixa examinada, sem salto à esquerda; foco/setas correspondem ao token. Nova frase/idioma pode iniciar seu próprio diagrama | PENDING |
+| T5 — Formatos no laptop | Na mesma tela, AUTO → PORTRAIT → LANDSCAPE → AUTO | Palavras inteiras, cartões legíveis e setas ligadas aos tokens; diagrama longo usa rolagem interna. Apenas trocar formato conserva avaliação/progresso | PENDING |
+| T6 — Celular | Conferir retrato e girar para paisagem, sem recarregar | Conteúdo legível e controles acessíveis; fundo externo e dourados coerentes; rolagem interna quando necessária. No touch real, o layout usa AUTO e a barra de simulação pode ficar oculta | PENDING |
+| T7 — Áudio | Ouvir uma frase e o cartão de pergunta do diagnóstico em EN, ES e PT | Texto/idioma correspondentes; uma reprodução por toque, sem fala duplicada. Ouvir uma prova pode registrar suporte de áudio no circuito, não domínio independente | PENDING |
+| T8 — Visita / retorno | Em Shopping, anotar o percurso ativo; visitar Preparing via NEXT e retornar pelo controle de Experience, sem iniciar outra avaliação | Visita e avaliação de origem ficam distinguidas; a visita por si só não inicia outro circuito nem altera o progresso da avaliação de origem | PENDING |
+
+**Como reportar:** `T1 OK; T2 OK; T3 problema; T4 não testado`. Se houver problema, informar dispositivo, formato, idiomas de tela/avaliação, QWord, Experience e progresso antes/depois; captura apenas se ajudar a localizar. Nenhum resultado é antecipado neste roteiro. Começar por T1 e devolver resultados em pequenos lotes.
+
+**Continuidade:** aprovação desta vista não fecha VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 ou a matriz humana inteira. Testes já homologados não precisam ser repetidos integralmente; T4 e T7 são checagens pontuais após as alterações recentes.
+
 
 
