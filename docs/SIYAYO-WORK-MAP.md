@@ -1776,3 +1776,38 @@ Machine registry: `data/canonical/siyayo-development-map.json#animatedJourney.vi
 - **JGS-ART-005 — Roots and Jaguar trail approach**: Low oblique roots/trail view; river at right, warm distant clearing. Candidate narrative role: Ground arrival and trail toward Patita/Nice Party. Source: `exec-69791587-599d-4ff0-acb7-d5170f58efe4.png` (conversation-generated image).
 
 All three are generated concept studies, not integrated V52 assets. Stable IDs do not fix W-state or narrative order. Shared appearance is an art direction reference, not proof of geometric continuity; transitions, occlusion, wind-driven seed drift and actor-layer separation remain to be built and verified.
+
+---
+
+## JGS-VIDEO-PLAN-20261008
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo).  
+**Line:** Gold Seed / Journey; future animation variant, separate from the active pedagogical runtime.  
+**Change kind:** ROADMAP / DOCUMENTATION.  
+**Status:** PLANNED — awaiting the user-finalized narrative and homologation of all final archetypes. No video/controller/portal implementation or portfolio publication in this record.
+
+**User decision:** finalize the step-by-step Journey already in development, define and homologate every final archetype, then create the animation variant using video + WAIT/swipe + an interactive layer. Reuse the homologated experience in the portfolio of **Agência SIYAYO Academy Fine Digital Art**.
+
+### Recorded procedures
+
+1. Finalize the script, archetype functions, stable IDs/assets and their homologation.
+2. Storyboard each transition and WAIT, including portrait/landscape framing and portal-safe areas.
+3. Produce coherent camera movement, contacts/occlusion, ground arrival and the Patita encounter.
+4. Export transition clips, matching WAIT stills and a versioned scene/media/portal manifest.
+5. Implement one gesture per transition, media-driven completion, stable WAIT and Back/Continue/loading/error states.
+6. Add HTML portals and PT/ES/EN labels through canonical navigation; preserve return to the same WAIT.
+7. Apply shared responsive/motion contracts, approved typography/palette, audio controls, direct access and reduced-motion equivalent.
+8. Build an isolated W3 → W4 pilot: two WAITs, one transition and one approved portal in both orientations.
+9. Homologate physical smartphones and laptop, including rotation, repeated gestures, buffering, portal return and language/accessibility behavior.
+10. Expand the approved route and integrate a reusable interactive case into the Agency portfolio.
+
+Preferred first method: one video per WAIT-to-WAIT transition plus an exported matching still for each WAIT. A timecoded master video is a later option. Existing artwork studies and their stable IDs keep their documented approval/implementation scopes.
+
+Detailed procedures, production gate, OPEN decisions and validation: [SIYAYO-GOLD-SEED-VIDEO-ROADMAP](SIYAYO-GOLD-SEED-VIDEO-ROADMAP.md).  
+Machine registry: `data/canonical/siyayo-development-map.json#animatedJourney.videoAnimationRoadmap`.
+
+### NEXT GO — this planned line only
+
+Continue finalizing the current Journey narrative and homologate all final archetypes. After recording that production gate, resume the storyboard and W3 → W4 pilot. Implementation branch, final media settings, portal receiver/destination map, persistence strategy and portfolio page/hosting remain OPEN.
+
+Preserve V51/V52, shared contracts and approved actor geometry. Animation and portal navigation produce no learner Evidence, Green Pass or automatic Session transition. This roadmap does not replace the active runtime checkpoint or its NEXT GO.

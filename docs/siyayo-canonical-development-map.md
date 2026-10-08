@@ -151,6 +151,17 @@ L3 contextual interaction / portal / WAIT controls
 
 No scene may grow under or collide with persistent controls. Portrait, landscape and reduced-motion behavior must be defined before homologation.
 
+### Gold Seed — variante futura com vídeo
+
+**Registro:** `JGS-VIDEO-PLAN-20261008` · 2026-10-08.  
+**Status:** PLANEJADO — aguardando roteiro final e homologação de todos os arquétipos finais.
+
+A ordem definida pelo usuário é concluir o passo a passo da Jornada em desenvolvimento e homologar os arquétipos antes de produzir a variante com animação pré-renderizada, controlador WAIT/swipe e camada HTML interativa. O método inicial recomendado usa um clipe por transição e uma imagem correspondente para cada WAIT.
+
+O plano inclui storyboard retrato/paisagem, contatos e pouso coerentes, manifesto de mídia/portais, retorno à mesma parada, acessibilidade, piloto W3 → W4, homologação em dispositivos e integração futura ao portfólio da **Agência SIYAYO Academy Fine Digital Art**.
+
+Procedimentos e decisões OPEN: [SIYAYO-GOLD-SEED-VIDEO-ROADMAP](SIYAYO-GOLD-SEED-VIDEO-ROADMAP.md). Registro máquina: `animatedJourney.videoAnimationRoadmap`. Esta é uma decisão de roadmap, sem produção ou integração de vídeo realizada; preserva o acesso direto e as autoridades canônicas de navegação, Evidence e Green.
+
 ## GOLD CONNECTION — Tri-Language Verb Explorer adaptive expansion DNA
 
 The label already present in the Explorer is architectural, not ornamental:

@@ -19,6 +19,116 @@
     "where-next"
   ],
   "animatedJourney": {
+    "videoAnimationRoadmap": {
+      "id": "JGS-VIDEO-PLAN-20261008",
+      "recordedAt": "2026-10-08",
+      "timezone": "America/Sao_Paulo",
+      "status": "planned-awaiting-script-and-final-archetype-homologation",
+      "implemented": false,
+      "authorizedScope": "Record the future workflow; animation production and runtime integration begin only after the user finalizes the script and homologates the final archetypes.",
+      "planDocument": "docs/SIYAYO-GOLD-SEED-VIDEO-ROADMAP.md",
+      "workMapCheckpoint": "docs/SIYAYO-WORK-MAP.md#jgs-video-plan-20261008",
+      "productionGate": {
+        "status": "pending",
+        "prerequisites": [
+          "user-finalized-narrative-and-wait-swipe-sequence",
+          "all-final-archetypes-and-asset-versions-homologated",
+          "portrait-landscape-framing-and-contact-poses-approved",
+          "portal-destinations-and-return-contract-defined"
+        ]
+      },
+      "approach": {
+        "preferredInitialRenderer": "one-prerendered-video-per-wait-to-wait-transition",
+        "waitSurface": "exported-matching-still-held-until-learner-advance",
+        "interactionLayer": "html-overlay-with-canonical-portal-request",
+        "controller": "journey-wait-swipe-state-controller",
+        "alternative": "single-timecoded-master-video-to-be-evaluated-later",
+        "cameraAndContacts": "rendered-in-animation; route changes require animation editing or deliberately composited live layers"
+      },
+      "sequence": [
+        {
+          "order": 1,
+          "id": "script-and-archetypes",
+          "status": "pending",
+          "deliverable": "Final narrative, archetype/asset registry and homologation record."
+        },
+        {
+          "order": 2,
+          "id": "storyboard-and-waits",
+          "status": "planned",
+          "deliverable": "Start/end compositions and portal-safe areas per WAIT in portrait and landscape."
+        },
+        {
+          "order": 3,
+          "id": "produce-transitions",
+          "status": "planned",
+          "deliverable": "Camera descent, contacts, occlusion, ground arrival and Patita encounter with continuous poses."
+        },
+        {
+          "order": 4,
+          "id": "export-media-and-manifest",
+          "status": "planned",
+          "deliverable": "Transition clips, exact matching WAIT stills and versioned scene/media/portal manifest."
+        },
+        {
+          "order": 5,
+          "id": "wait-swipe-controller",
+          "status": "planned",
+          "deliverable": "One gesture per transition; media-driven completion; stable WAIT, Back, buffering/error handling."
+        },
+        {
+          "order": 6,
+          "id": "portals-and-return",
+          "status": "planned",
+          "deliverable": "HTML hotspots, PT/ES/EN labels, canonical destination requests and return to the originating WAIT."
+        },
+        {
+          "order": 7,
+          "id": "responsive-and-accessibility",
+          "status": "planned",
+          "deliverable": "Portrait/landscape framing, playsinline, loading/audio controls, direct access and reduced-motion equivalent."
+        },
+        {
+          "order": 8,
+          "id": "isolated-w3-w4-pilot",
+          "status": "planned",
+          "deliverable": "Two WAITs, one transition and one approved portal in both orientations."
+        },
+        {
+          "order": 9,
+          "id": "device-homologation",
+          "status": "planned",
+          "deliverable": "Physical mobile and laptop checks covering swipes, rotation, buffering, portal return, languages and reduced motion."
+        },
+        {
+          "order": 10,
+          "id": "full-route-and-portfolio",
+          "status": "planned",
+          "deliverable": "Integrate the homologated full route and reusable interactive portfolio presentation."
+        }
+      ],
+      "integration": {
+        "journeyDevelopmentLine": "journey-v51-network-preview",
+        "implementationBranch": "OPEN; choose isolated implementation line when production starts",
+        "portalRequestEvent": "siyayo:journey-portal-request",
+        "receiverAndRouteMap": "OPEN; verify canonical navigation owner and approved destinations before wiring",
+        "evidenceProduced": false,
+        "animationCreatesGreenPass": false,
+        "navigationCreatesSessionTransition": false,
+        "directAcademyAccessRequired": true,
+        "reducedMotionEquivalentRequired": true,
+        "presentationInheritance": "Shared SIYAYO responsive/motion contracts, Quicksand/Nunito Sans and homologated gold/spectral-blue palette.",
+        "existingArchetypeAndArtworkIds": "Preserve stable IDs; artwork IDs are independent of W-state numbering.",
+        "activePedagogicalCheckpoint": "Preserved; this roadmap does not replace the active runtime NEXT GO."
+      },
+      "portfolio": {
+        "project": "Agência SIYAYO Academy Fine Digital Art",
+        "purpose": "Reusable interactive case demonstrating art direction, animation, responsive composition and Academy integration.",
+        "status": "planned-after-journey-homologation",
+        "pageAndHosting": "OPEN; no new portfolio page or publication created by this record"
+      },
+      "nextGo": "Continue current Journey development: finalize the narrative and homologate every final archetype. After recording the production gate, resume this plan at storyboard and the isolated W3-W4 pilot."
+    },
     "role": "optional-interactive-academy-entrance",
     "inputMotor": "swipe",
     "phaseGrammar": [
