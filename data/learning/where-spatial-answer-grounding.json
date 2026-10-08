@@ -1,0 +1,75 @@
+{
+  "version": "0.1.0",
+  "id": "where-spatial-answer-grounding",
+  "status": "content-grounding-only",
+  "questionWord": "where",
+  "semanticFamily": "spatial-target",
+  "assessmentAuthority": false,
+  "principle": "These records ground contextual WHERE answers for presentation and future contract design. They do not produce Evidence, Attempts, Sessions, Green Pass or preposition mastery.",
+  "records": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "subtype": "location",
+      "modeCandidate": "local",
+      "verb": "find",
+      "question": {
+        "en": "Where can we find the salmon?",
+        "es": "¿Dónde podemos encontrar el salmón?",
+        "pt": "Onde podemos encontrar o salmão?"
+      },
+      "answer": {
+        "en": "We can find the salmon at the fish counter.",
+        "es": "Podemos encontrar el salmón en la sección de pescado.",
+        "pt": "Podemos encontrar o salmão na seção de peixes."
+      },
+      "nonLocationAnswer": {
+        "en": "We want fresh salmon for a special dinner.",
+        "es": "Queremos salmón fresco para una cena especial.",
+        "pt": "Queremos salmão fresco para um jantar especial."
+      },
+      "spatialPhrase": {
+        "en": "at the fish counter",
+        "es": "en la sección de pescado",
+        "pt": "na seção de peixes"
+      },
+      "source": "experience-seeds.json#shopping-for-dinner/where/dialogueForms",
+      "doesNotClaim": ["preposition-mastery","cross-language-equivalence","green-pass"]
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "subtype": "location",
+      "modeCandidate": "transfer",
+      "verb": "put",
+      "question": {
+        "en": "Where should we put the vegetables?",
+        "es": "¿Dónde debemos poner las verduras?",
+        "pt": "Onde devemos colocar os legumes?"
+      },
+      "answer": {
+        "en": "We should put the vegetables on the plate.",
+        "es": "Debemos poner las verduras en el plato.",
+        "pt": "Devemos colocar os legumes no prato."
+      },
+      "nonLocationAnswer": {
+        "en": "We should prepare the vegetables carefully.",
+        "es": "Debemos preparar las verduras con cuidado.",
+        "pt": "Devemos preparar os legumes com cuidado."
+      },
+      "spatialPhrase": {
+        "en": "on the plate",
+        "es": "en el plato",
+        "pt": "no prato"
+      },
+      "source": "nice-party-accessories.json#table-setting/plate + experience-seeds.json#preparing-dinner/where",
+      "doesNotClaim": ["preposition-mastery","cross-language-equivalence","green-pass"]
+    }
+  ],
+  "candidateFutureEvidence": {
+    "status": "not-authorized",
+    "functionDimension": "spatial-function",
+    "answerDimension": "location-answer",
+    "localOrigin": "shopping-for-dinner",
+    "transferDestination": "preparing-dinner",
+    "requiresExplicitMode": true
+  }
+}

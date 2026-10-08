@@ -1,0 +1,973 @@
+{
+  "$schema": "../../schemas/verb-subject-forms.schema.json",
+  "version": "0.5.0",
+  "verb": "share",
+  "tenses": {
+    "present": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I share a note every day.",
+              "es": "Yo comparto un apunte todos los días.",
+              "pt": "Eu compartilho uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparto",
+              "pt": "compartilho"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You share a note every day.",
+              "es": "Tú compartes un apunte todos los días.",
+              "pt": "Você compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartes",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He shares a note every day.",
+              "es": "Él comparte un apunte todos los días.",
+              "pt": "Ele compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "shares",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She shares a note every day.",
+              "es": "Ella comparte un apunte todos los días.",
+              "pt": "Ela compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "shares",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It shares a note every day.",
+              "es": "Ello comparte un apunte todos los días.",
+              "pt": "Isso compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "shares",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We share a note every day.",
+              "es": "Nosotros compartimos un apunte todos los días.",
+              "pt": "Nós compartilhamos uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartimos",
+              "pt": "compartilhamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You share a note every day.",
+              "es": "Ustedes comparten un apunte todos los días.",
+              "pt": "Vocês compartilham uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparten",
+              "pt": "compartilham"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They share a note every day.",
+              "es": "Ellos comparten un apunte todos los días.",
+              "pt": "Eles compartilham uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparten",
+              "pt": "compartilham"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I do not share a note every day.",
+              "es": "Yo no comparto un apunte todos los días.",
+              "pt": "Eu não compartilho uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparto",
+              "pt": "compartilho"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You do not share a note every day.",
+              "es": "Tú no compartes un apunte todos los días.",
+              "pt": "Você não compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartes",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He does not share a note every day.",
+              "es": "Él no comparte un apunte todos los días.",
+              "pt": "Ele não compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She does not share a note every day.",
+              "es": "Ella no comparte un apunte todos los días.",
+              "pt": "Ela não compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It does not share a note every day.",
+              "es": "Ello no comparte un apunte todos los días.",
+              "pt": "Isso não compartilha uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We do not share a note every day.",
+              "es": "Nosotros no compartimos un apunte todos los días.",
+              "pt": "Nós não compartilhamos uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartimos",
+              "pt": "compartilhamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You do not share a note every day.",
+              "es": "Ustedes no comparten un apunte todos los días.",
+              "pt": "Vocês não compartilham uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparten",
+              "pt": "compartilham"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They do not share a note every day.",
+              "es": "Ellos no comparten un apunte todos los días.",
+              "pt": "Eles não compartilham uma anotação todos os dias."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparten",
+              "pt": "compartilham"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Do i share a note every day?",
+              "es": "¿Comparto yo un apunte todos los días?",
+              "pt": "Eu compartilho uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparto",
+              "pt": "compartilho"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Do you share a note every day?",
+              "es": "¿Compartes tú un apunte todos los días?",
+              "pt": "Você compartilha uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartes",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Does he share a note every day?",
+              "es": "¿Comparte él un apunte todos los días?",
+              "pt": "Ele compartilha uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Does she share a note every day?",
+              "es": "¿Comparte ella un apunte todos los días?",
+              "pt": "Ela compartilha uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Does it share a note every day?",
+              "es": "¿Comparte ello un apunte todos los días?",
+              "pt": "Isso compartilha uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparte",
+              "pt": "compartilha"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Do we share a note every day?",
+              "es": "¿Compartimos nosotros un apunte todos los días?",
+              "pt": "Nós compartilhamos uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartimos",
+              "pt": "compartilhamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Do you share a note every day?",
+              "es": "¿Comparten ustedes un apunte todos los días?",
+              "pt": "Vocês compartilham uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparten",
+              "pt": "compartilham"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Do they share a note every day?",
+              "es": "¿Comparten ellos un apunte todos los días?",
+              "pt": "Eles compartilham uma anotação todos os dias?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "comparten",
+              "pt": "compartilham"
+            }
+          }
+        ]
+      }
+    },
+    "past": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I shared a note yesterday.",
+              "es": "Yo compartí un apunte ayer.",
+              "pt": "Eu compartilhei uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartí",
+              "pt": "compartilhei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You shared a note yesterday.",
+              "es": "Tú compartiste un apunte ayer.",
+              "pt": "Você compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartiste",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He shared a note yesterday.",
+              "es": "Él compartió un apunte ayer.",
+              "pt": "Ele compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She shared a note yesterday.",
+              "es": "Ella compartió un apunte ayer.",
+              "pt": "Ela compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It shared a note yesterday.",
+              "es": "Ello compartió un apunte ayer.",
+              "pt": "Isso compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We shared a note yesterday.",
+              "es": "Nosotros compartimos un apunte ayer.",
+              "pt": "Nós compartilhamos uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartimos",
+              "pt": "compartilhamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You shared a note yesterday.",
+              "es": "Ustedes compartieron un apunte ayer.",
+              "pt": "Vocês compartilharam uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartieron",
+              "pt": "compartilharam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They shared a note yesterday.",
+              "es": "Ellos compartieron un apunte ayer.",
+              "pt": "Eles compartilharam uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "shared",
+              "es": "compartieron",
+              "pt": "compartilharam"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I did not share a note yesterday.",
+              "es": "Yo no compartí un apunte ayer.",
+              "pt": "Eu não compartilhei uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartí",
+              "pt": "compartilhei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You did not share a note yesterday.",
+              "es": "Tú no compartiste un apunte ayer.",
+              "pt": "Você não compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiste",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He did not share a note yesterday.",
+              "es": "Él no compartió un apunte ayer.",
+              "pt": "Ele não compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She did not share a note yesterday.",
+              "es": "Ella no compartió un apunte ayer.",
+              "pt": "Ela não compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It did not share a note yesterday.",
+              "es": "Ello no compartió un apunte ayer.",
+              "pt": "Isso não compartilhou uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We did not share a note yesterday.",
+              "es": "Nosotros no compartimos un apunte ayer.",
+              "pt": "Nós não compartilhamos uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartimos",
+              "pt": "compartilhamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You did not share a note yesterday.",
+              "es": "Ustedes no compartieron un apunte ayer.",
+              "pt": "Vocês não compartilharam uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartieron",
+              "pt": "compartilharam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They did not share a note yesterday.",
+              "es": "Ellos no compartieron un apunte ayer.",
+              "pt": "Eles não compartilharam uma anotação ontem."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartieron",
+              "pt": "compartilharam"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Did i share a note yesterday?",
+              "es": "¿Compartí yo un apunte ayer?",
+              "pt": "Eu compartilhei uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartí",
+              "pt": "compartilhei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Did you share a note yesterday?",
+              "es": "¿Compartiste tú un apunte ayer?",
+              "pt": "Você compartilhou uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiste",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Did he share a note yesterday?",
+              "es": "¿Compartió él un apunte ayer?",
+              "pt": "Ele compartilhou uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Did she share a note yesterday?",
+              "es": "¿Compartió ella un apunte ayer?",
+              "pt": "Ela compartilhou uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Did it share a note yesterday?",
+              "es": "¿Compartió ello un apunte ayer?",
+              "pt": "Isso compartilhou uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartió",
+              "pt": "compartilhou"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Did we share a note yesterday?",
+              "es": "¿Compartimos nosotros un apunte ayer?",
+              "pt": "Nós compartilhamos uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartimos",
+              "pt": "compartilhamos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Did you share a note yesterday?",
+              "es": "¿Compartieron ustedes un apunte ayer?",
+              "pt": "Vocês compartilharam uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartieron",
+              "pt": "compartilharam"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Did they share a note yesterday?",
+              "es": "¿Compartieron ellos un apunte ayer?",
+              "pt": "Eles compartilharam uma anotação ontem?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartieron",
+              "pt": "compartilharam"
+            }
+          }
+        ]
+      }
+    },
+    "future": {
+      "forms": {
+        "affirmative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will share a note tomorrow.",
+              "es": "Yo compartiré un apunte mañana.",
+              "pt": "Eu compartilharei uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiré",
+              "pt": "compartilharei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will share a note tomorrow.",
+              "es": "Tú compartirás un apunte mañana.",
+              "pt": "Você compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirás",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will share a note tomorrow.",
+              "es": "Él compartirá un apunte mañana.",
+              "pt": "Ele compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will share a note tomorrow.",
+              "es": "Ella compartirá un apunte mañana.",
+              "pt": "Ela compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will share a note tomorrow.",
+              "es": "Ello compartirá un apunte mañana.",
+              "pt": "Isso compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will share a note tomorrow.",
+              "es": "Nosotros compartiremos un apunte mañana.",
+              "pt": "Nós compartilharemos uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiremos",
+              "pt": "compartilharemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will share a note tomorrow.",
+              "es": "Ustedes compartirán un apunte mañana.",
+              "pt": "Vocês compartilharão uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirán",
+              "pt": "compartilharão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will share a note tomorrow.",
+              "es": "Ellos compartirán un apunte mañana.",
+              "pt": "Eles compartilharão uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirán",
+              "pt": "compartilharão"
+            }
+          }
+        ],
+        "negative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "I will not share a note tomorrow.",
+              "es": "Yo no compartiré un apunte mañana.",
+              "pt": "Eu não compartilharei uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiré",
+              "pt": "compartilharei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "You will not share a note tomorrow.",
+              "es": "Tú no compartirás un apunte mañana.",
+              "pt": "Você não compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirás",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "He will not share a note tomorrow.",
+              "es": "Él no compartirá un apunte mañana.",
+              "pt": "Ele não compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "She will not share a note tomorrow.",
+              "es": "Ella no compartirá un apunte mañana.",
+              "pt": "Ela não compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "It will not share a note tomorrow.",
+              "es": "Ello no compartirá un apunte mañana.",
+              "pt": "Isso não compartilhará uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "We will not share a note tomorrow.",
+              "es": "Nosotros no compartiremos un apunte mañana.",
+              "pt": "Nós não compartilharemos uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiremos",
+              "pt": "compartilharemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "You will not share a note tomorrow.",
+              "es": "Ustedes no compartirán un apunte mañana.",
+              "pt": "Vocês não compartilharão uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirán",
+              "pt": "compartilharão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "They will not share a note tomorrow.",
+              "es": "Ellos no compartirán un apunte mañana.",
+              "pt": "Eles não compartilharão uma anotação amanhã."
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirán",
+              "pt": "compartilharão"
+            }
+          }
+        ],
+        "interrogative": [
+          {
+            "subject": "first-singular",
+            "sentences": {
+              "en": "Will i share a note tomorrow?",
+              "es": "¿Compartiré yo un apunte mañana?",
+              "pt": "Eu compartilharei uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiré",
+              "pt": "compartilharei"
+            }
+          },
+          {
+            "subject": "second-singular",
+            "sentences": {
+              "en": "Will you share a note tomorrow?",
+              "es": "¿Compartirás tú un apunte mañana?",
+              "pt": "Você compartilhará uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirás",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-masculine",
+            "sentences": {
+              "en": "Will he share a note tomorrow?",
+              "es": "¿Compartirá él un apunte mañana?",
+              "pt": "Ele compartilhará uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-feminine",
+            "sentences": {
+              "en": "Will she share a note tomorrow?",
+              "es": "¿Compartirá ella un apunte mañana?",
+              "pt": "Ela compartilhará uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "third-singular-neuter",
+            "sentences": {
+              "en": "Will it share a note tomorrow?",
+              "es": "¿Compartirá ello un apunte mañana?",
+              "pt": "Isso compartilhará uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirá",
+              "pt": "compartilhará"
+            }
+          },
+          {
+            "subject": "first-plural",
+            "sentences": {
+              "en": "Will we share a note tomorrow?",
+              "es": "¿Compartiremos nosotros un apunte mañana?",
+              "pt": "Nós compartilharemos uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartiremos",
+              "pt": "compartilharemos"
+            }
+          },
+          {
+            "subject": "second-plural",
+            "sentences": {
+              "en": "Will you share a note tomorrow?",
+              "es": "¿Compartirán ustedes un apunte mañana?",
+              "pt": "Vocês compartilharão uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirán",
+              "pt": "compartilharão"
+            }
+          },
+          {
+            "subject": "third-plural",
+            "sentences": {
+              "en": "Will they share a note tomorrow?",
+              "es": "¿Compartirán ellos un apunte mañana?",
+              "pt": "Eles compartilharão uma anotação amanhã?"
+            },
+            "targetWords": {
+              "en": "share",
+              "es": "compartirán",
+              "pt": "compartilharão"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

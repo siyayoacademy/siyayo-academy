@@ -14,7 +14,7 @@ assert.equal(evaluation.status, 'WAITING_FOR_EVIDENCE');
 assert.equal(evaluation.satisfied, false);
 assert.equal(evaluation.missing.length, 2);
 
-const independentDinner = assistedReference.concat({ skill: 'which.use.determiner', dimension: 'determiner-use', result: 'pass', mode: 'free-production', support: 'none', context: 'preparing-dinner' });
+const independentDinner = assistedReference.concat({ skill: 'which.use.determiner', dimension: 'determiner-use', result: 'pass', mode: 'local', support: 'none', context: 'shopping-for-dinner' });
 evaluation = GreenPass.evaluateContract(contract, independentDinner);
 assert.equal(evaluation.status, 'WAITING_FOR_EVIDENCE');
 assert.equal(evaluation.satisfied, false);

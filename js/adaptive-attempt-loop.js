@@ -54,20 +54,28 @@
   function toEvidencePacket(session = {}, attempt = {}) {
     if (!session.decision) throw new TypeError('Adaptive attempt decision is required.');
 
-    const requiredFields = ['dimension', 'result', 'mode', 'support'];
+    // Every packet must state what was evidenced, the result, and the observed support.
+    // Pedagogical mode is optional because not every learner footprint observes one.
+    // When a contract requires mode (for example transfer), it must still be supplied
+    // explicitly and GreenPassProfile will match that field exactly.
+    const requiredFields = ['dimension', 'result', 'support'];
     const missingFields = requiredFields.filter(field => typeof attempt[field] !== 'string' || !attempt[field].trim());
     if (missingFields.length) {
       throw new TypeError(`Evidence packet requires explicit ${missingFields.join(', ')}.`);
     }
+    if (attempt.mode != null && (typeof attempt.mode !== 'string' || !attempt.mode.trim())) {
+      throw new TypeError('Evidence packet mode must be a non-empty string when provided.');
+    }
 
-    return {
+    const packet = {
       skill: attempt.skill || session.decision.skill || null,
       dimension: attempt.dimension,
       result: attempt.result,
-      mode: attempt.mode,
       support: attempt.support,
       context: attempt.context || session.decision.experienceId || null
     };
+    if (typeof attempt.mode === 'string' && attempt.mode.trim()) packet.mode = attempt.mode;
+    return packet;
   }
 
   return { begin, recordAttempt, toGreenPassAttempt, toEvidencePacket };

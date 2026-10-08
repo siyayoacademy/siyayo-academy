@@ -1,0 +1,173 @@
+{
+  "version": "0.1.0",
+  "id": "question-word-capability-map",
+  "family": "question-word",
+  "principle": "A Question Word identifies the information gap. Presence in an Experience is an opportunity signal, not learner evidence.",
+  "canonical": [
+    {
+      "questionWord": "what",
+      "intention": "thing-information",
+      "skill": "what.identify.information-gap",
+      "focus": "thing / information",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains what",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "where",
+      "intention": "place",
+      "skill": "where.identify.place",
+      "focus": "place",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains where",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "when",
+      "intention": "time",
+      "skill": "when.identify.time",
+      "focus": "time",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains when",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "who",
+      "intention": "person",
+      "skill": "who.identify.person",
+      "focus": "person",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains who",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "which",
+      "intention": "delimited-choice",
+      "skill": "which.use.determiner",
+      "focus": "delimited choice",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains which",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "why",
+      "intention": "reason",
+      "skill": "why.identify.reason",
+      "focus": "reason",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains why",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "how",
+      "intention": "manner-method",
+      "skill": "how.identify.manner",
+      "focus": "manner / method",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "how-much",
+      "intention": "amount-price",
+      "skill": "how-much.identify.amount",
+      "focus": "amount / price",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how-much",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "how-many",
+      "intention": "countable-quantity",
+      "skill": "how-many.identify.count",
+      "focus": "countable quantity",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how-many",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "whose",
+      "intention": "possession",
+      "skill": "whose.identify.possession",
+      "focus": "possession",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains whose",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "whom",
+      "intention": "object-person",
+      "skill": "whom.identify.object-person",
+      "focus": "formal object-person use",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains whom",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "how-long",
+      "intention": "duration-length",
+      "skill": "how-long.identify.duration-length",
+      "focus": "duration / length",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how-long",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "how-far",
+      "intention": "distance",
+      "skill": "how-far.identify.distance",
+      "focus": "distance",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how-far",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    },
+    {
+      "questionWord": "how-often",
+      "intention": "frequency",
+      "skill": "how-often.identify.frequency",
+      "focus": "frequency",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how-often",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      }
+    }
+  ],
+  "practicalExtensions": [
+    {
+      "questionWord": "how-old",
+      "intention": "age",
+      "skill": "how-old.identify.age",
+      "focus": "age",
+      "status": "legacy-SIYAYO-practical-extension"
+    }
+  ],
+  "waitRule": "If the target skill has no grounded learner attempt, preserve WAIT/continue-assessment. Do not infer pass from question exposure.",
+  "greenRule": "GREEN remains owned by the existing adaptive evidence/pass contract; this map does not manufacture pass decisions."
+}

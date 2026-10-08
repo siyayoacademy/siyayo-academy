@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1",
+  "project": {
+    "name": "SIYAYO HUMAN LAB",
+    "product": "Semantic Surface Human Probe",
+    "type": "trilingual-learning-webapp",
+    "languageOrder": ["en", "es", "pt"]
+  },
+  "chapters": [
+    {
+      "number": 0,
+      "slug": "human-semantic-surface-lab",
+      "title": {
+        "en": "HUMAN SURFACE LAB",
+        "es": "LABORATORIO DE SUPERFICIES",
+        "pt": "LABORATÓRIO DE SUPERFÍCIES"
+      },
+      "path": "data/chapter.json",
+      "status": "active"
+    }
+  ],
+  "extraModules": []
+}

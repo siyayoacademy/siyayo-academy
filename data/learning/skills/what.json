@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "id": "what.use.object-question",
+  "language": "en",
+  "family": "question-word",
+  "form": "what",
+  "grammarRole": "interrogative-pronoun",
+  "depth": "experience",
+  "function": {
+    "communicativeIntention": "thing-or-action",
+    "meaning": "ask which thing or action is contextually being prepared or eaten"
+  },
+  "observes": [
+    "question-function",
+    "object-answer"
+  ],
+  "passContract": {
+    "requires": [
+      {
+        "dimension": "question-function",
+        "result": "pass"
+      },
+      {
+        "dimension": "object-answer",
+        "result": "pass",
+        "support": "none",
+        "mode": "local"
+      },
+      {
+        "dimension": "object-answer",
+        "result": "pass",
+        "mode": "transfer",
+        "support": "none"
+      }
+    ],
+    "doesNotClaim": [
+      "long-term-retention",
+      "place-answer",
+      "determiner-use",
+      "pronunciation",
+      "cross-language-equivalence"
+    ]
+  },
+  "realizations": {
+    "en": {
+      "form": "what",
+      "family": "question-word",
+      "grammarRole": "interrogative-pronoun"
+    },
+    "es": {
+      "form": "qué",
+      "family": "palabra-interrogativa",
+      "grammarRole": "pronombre-interrogativo"
+    },
+    "pt": {
+      "form": "o que",
+      "family": "palavra-interrogativa",
+      "grammarRole": "pronome-interrogativo"
+    }
+  }
+}

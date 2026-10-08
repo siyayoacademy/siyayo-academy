@@ -1,0 +1,130 @@
+{
+  "version": "0.1.0",
+  "id": "where-semantic-map",
+  "status": "study-only",
+  "questionWord": "where",
+  "capabilitySkill": "where.identify.place",
+  "assessmentSkill": null,
+  "assessmentDeclared": false,
+  "principle": "WHERE exposes a spatial information gap. English WHERE may cover both location and destination, while Spanish and Portuguese can lexicalize the contrast explicitly. Presence or semantic classification never creates learner Evidence or an assessment Session.",
+  "semanticFamily": "spatial-target",
+  "subtypes": {
+    "location": {
+      "meaning": "Identify where an entity is found, placed or situated.",
+      "languageForms": {
+        "en": [
+          "where"
+        ],
+        "es": [
+          "dónde"
+        ],
+        "pt": [
+          "onde"
+        ]
+      }
+    },
+    "destination": {
+      "meaning": "Identify the endpoint or direction of movement.",
+      "languageForms": {
+        "en": [
+          "where"
+        ],
+        "es": [
+          "adónde",
+          "a dónde",
+          "para dónde"
+        ],
+        "pt": [
+          "aonde",
+          "para onde"
+        ]
+      }
+    }
+  },
+  "observedContexts": [
+    {
+      "corpus": "dinner",
+      "experienceId": "shopping-for-dinner",
+      "subtype": "location",
+      "verb": "find",
+      "question": {
+        "en": "Where can we find the salmon?",
+        "es": "¿Dónde podemos encontrar el salmón?",
+        "pt": "Onde podemos encontrar o salmão?"
+      },
+      "expectedAnswerType": "location",
+      "groundedAnswerCandidate": {
+        "en": "at the fish counter",
+        "es": "en la sección de pescado",
+        "pt": "na seção de peixes"
+      },
+      "localProofCandidate": true,
+      "transferProofCandidate": false
+    },
+    {
+      "corpus": "dinner",
+      "experienceId": "preparing-dinner",
+      "subtype": "location",
+      "verb": "put",
+      "question": {
+        "en": "Where should we put the vegetables?",
+        "es": "¿Dónde debemos poner las verduras?",
+        "pt": "Onde devemos colocar os legumes?"
+      },
+      "expectedAnswerType": "location",
+      "groundedAnswerCandidate": {
+        "en": "on the plate",
+        "es": "en el plato",
+        "pt": "no prato"
+      },
+      "localProofCandidate": false,
+      "transferProofCandidate": true,
+      "groundingSource": "data/learning/nice-party-accessories.json#table-setting/plate",
+      "status": "presentation-grounded-no-assessment"
+    },
+    {
+      "corpus": "college",
+      "experienceId": "going-to-college",
+      "subtype": "destination",
+      "verb": "go",
+      "question": {
+        "en": "Where are you going?",
+        "es": "¿Adónde vas?",
+        "pt": "Para onde você está indo?"
+      },
+      "expectedAnswerType": "destination",
+      "groundedAnswerCandidate": {
+        "en": "to college",
+        "es": "a la universidad",
+        "pt": "para a faculdade"
+      },
+      "localProofCandidate": false,
+      "transferProofCandidate": false,
+      "role": "cross-context contrast candidate; not part of the first Dinner transfer contract unless explicitly adopted later"
+    }
+  ],
+  "candidateAssessmentDesign": {
+    "status": "not-authorized",
+    "recommendedCommonMeaning": "spatial-target",
+    "possibleDimensions": [
+      "spatial-function",
+      "location-answer",
+      "transfer-location-answer"
+    ],
+    "firstOriginCandidate": "shopping-for-dinner",
+    "firstTransferCandidate": "preparing-dinner",
+    "doesNotClaim": [
+      "destination-use",
+      "preposition-mastery",
+      "movement-verb-mastery",
+      "cross-language-equivalence",
+      "green-pass"
+    ]
+  },
+  "requiredBeforeAssessment": [
+    "explicit reusable spatial answerGrounding contract for assessment, distinct from presentation-only dialogue",
+    "explicit local versus transfer evidence modes",
+    "canonical skill definition with Pass Contract",
+    "assessmentTarget only after the above are approved"
+  ]
+}

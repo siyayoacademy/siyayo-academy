@@ -6,11 +6,12 @@
     typeof module === 'object' && module.exports ? require('../data/learning/green-pass-authority.json') : root.GreenPassAuthorityPolicy,
     typeof module === 'object' && module.exports ? require('./adaptive-learning-router.js') : root.AdaptiveLearningRouter,
     typeof module === 'object' && module.exports ? require('./adaptive-wait-classifier.js') : root.AdaptiveWaitClassifier,
-    typeof module === 'object' && module.exports ? require('./adaptive-agency-resume-context.js') : root.AdaptiveAgencyResumeContext
+    typeof module === 'object' && module.exports ? require('./adaptive-agency-resume-context.js') : root.AdaptiveAgencyResumeContext,
+    typeof module === 'object' && module.exports ? require('./adaptive-assessment-scope.js') : root.AdaptiveAssessmentScope
   );
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.AdaptiveLearningCycle = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy, AdaptiveLearningRouter, AdaptiveWaitClassifier, AdaptiveAgencyResumeContext) {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (AdaptiveAttemptLoop, GreenPassProfile, AdaptiveAdvanceSelector, GreenPassAuthorityPolicy, AdaptiveLearningRouter, AdaptiveWaitClassifier, AdaptiveAgencyResumeContext, AdaptiveAssessmentScope) {
   function resolveAuthority(context = {}, skill = null) {
     if (!context.passContract) return 'legacy';
     if (context.greenPassAuthority === 'contract') return 'contract';
@@ -22,6 +23,15 @@
 
   function submit(greenProfile, session, attempt = {}, context = {}) {
     if (!GreenPassProfile || typeof GreenPassProfile.recordAttempt !== 'function') throw new TypeError('Green Pass profile API is required.');
+    const scope = context.assessmentScope;
+    if (scope || session?.decision?.assessmentScope) {
+      if (!AdaptiveAssessmentScope || !AdaptiveAssessmentScope.same(scope,session?.decision?.assessmentScope) ||
+          greenProfile?.id !== scope.learnerId || session.decision.skill !== scope.skill ||
+          session.decision.experienceId !== scope.originExperienceId || !AdaptiveAssessmentScope.ownsPacket(scope,attempt) ||
+          (context.evidencePackets || []).some(packet => !AdaptiveAssessmentScope.ownsPacket(scope,packet))) {
+        throw new TypeError('Assessment Evidence must belong to the declared learner, language and circuit.');
+      }
+    }
     const traceEntry = AdaptiveAttemptLoop.recordAttempt(session, attempt);
     const greenAttempt = AdaptiveAttemptLoop.toGreenPassAttempt(session, attempt);
     const nextGreenProfile = GreenPassProfile.recordAttempt(greenProfile, greenAttempt);

@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "understand",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I understand the lesson every day.",
+            "es": "Yo entiendo la lección todos los días.",
+            "pt": "Eu entendo a aula todos os dias."
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entiendo",
+            "pt": "entendo"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not understand the lesson every day.",
+            "es": "Yo no entiendo la lección todos los días.",
+            "pt": "Eu não entendo a aula todos os dias."
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entiendo",
+            "pt": "entendo"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do i understand the lesson every day?",
+            "es": "¿Entiendo yo la lección todos los días?",
+            "pt": "Eu entendo a aula todos os dias?"
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entiendo",
+            "pt": "entendo"
+          }
+        }
+      }
+    },
+    {
+      "verb": "understand",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I understood the lesson yesterday.",
+            "es": "Yo entendí la lección ayer.",
+            "pt": "Eu entendi a aula ontem."
+          },
+          "targetWords": {
+            "en": "understood",
+            "es": "entendí",
+            "pt": "entendi"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not understand the lesson yesterday.",
+            "es": "Yo no entendí la lección ayer.",
+            "pt": "Eu não entendi a aula ontem."
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entendí",
+            "pt": "entendi"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did i understand the lesson yesterday?",
+            "es": "¿Entendí yo la lección ayer?",
+            "pt": "Eu entendi a aula ontem?"
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entendí",
+            "pt": "entendi"
+          }
+        }
+      }
+    },
+    {
+      "verb": "understand",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will understand the lesson tomorrow.",
+            "es": "Yo entenderé la lección mañana.",
+            "pt": "Eu entenderei a aula amanhã."
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entenderé",
+            "pt": "entenderei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not understand the lesson tomorrow.",
+            "es": "Yo no entenderé la lección mañana.",
+            "pt": "Eu não entenderei a aula amanhã."
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entenderé",
+            "pt": "entenderei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will i understand the lesson tomorrow?",
+            "es": "¿Entenderé yo la lección mañana?",
+            "pt": "Eu entenderei a aula amanhã?"
+          },
+          "targetWords": {
+            "en": "understand",
+            "es": "entenderé",
+            "pt": "entenderei"
+          }
+        }
+      }
+    }
+  ]
+}

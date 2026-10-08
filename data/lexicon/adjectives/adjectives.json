@@ -1,12 +1,526 @@
 {
   "$schema": "../../schemas/adjective.schema.json",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "items": [
-    { "id": "fresh", "wordType": "adjective", "translations": { "en": "fresh", "es": "fresco", "pt": "fresco" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "food", "condition"] },
-    { "id": "delicious", "wordType": "adjective", "translations": { "en": "delicious", "es": "delicioso", "pt": "delicioso" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "food", "taste"] },
-    { "id": "beautiful", "wordType": "adjective", "translations": { "en": "beautiful", "es": "hermoso", "pt": "bonito" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "appearance", "appreciation"] },
-    { "id": "pleasant", "wordType": "adjective", "translations": { "en": "pleasant", "es": "agradable", "pt": "agradável" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "experience", "appreciation"] },
-    { "id": "excellent", "wordType": "adjective", "translations": { "en": "excellent", "es": "excelente", "pt": "excelente" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "evaluation", "appreciation"] },
-    { "id": "wonderful", "wordType": "adjective", "translations": { "en": "wonderful", "es": "maravilloso", "pt": "maravilhoso" }, "adjectiveClass": "qualitative", "polarity": "positive", "semanticTags": ["quality", "evaluation", "appreciation"] }
+    {
+      "id": "fresh",
+      "wordType": "adjective",
+      "translations": {
+        "en": "fresh",
+        "es": "fresco",
+        "pt": "fresco"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "quality",
+        "food",
+        "condition"
+      ],
+      "glosses": {
+        "en": "recent, clean, lively or in good condition",
+        "es": "reciente, limpio, vivo o en buenas condiciones",
+        "pt": "recente, limpo, vivo ou em boas condições"
+      },
+      "selfExamples": {
+        "en": "The vegetables are fresh.",
+        "es": "Las verduras están frescas.",
+        "pt": "Os legumes estão frescos."
+      }
+    },
+    {
+      "id": "delicious",
+      "wordType": "adjective",
+      "translations": {
+        "en": "delicious",
+        "es": "delicioso",
+        "pt": "delicioso"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "quality",
+        "food",
+        "taste"
+      ],
+      "glosses": {
+        "en": "very pleasant to taste or eat",
+        "es": "muy agradable al gusto o al comer",
+        "pt": "muito agradável ao paladar ou ao comer"
+      },
+      "selfExamples": {
+        "en": "The dinner is delicious.",
+        "es": "La cena está deliciosa.",
+        "pt": "O jantar está delicioso."
+      }
+    },
+    {
+      "id": "beautiful",
+      "wordType": "adjective",
+      "translations": {
+        "en": "beautiful",
+        "es": "hermoso",
+        "pt": "bonito"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "quality",
+        "appearance",
+        "appreciation"
+      ],
+      "glosses": {
+        "en": "very pleasing to see, hear or experience",
+        "es": "muy agradable de ver, oír o experimentar",
+        "pt": "muito agradável de ver, ouvir ou vivenciar"
+      },
+      "selfExamples": {
+        "en": "The garden is beautiful.",
+        "es": "El jardín es hermoso.",
+        "pt": "O jardim é bonito."
+      }
+    },
+    {
+      "id": "pleasant",
+      "wordType": "adjective",
+      "translations": {
+        "en": "pleasant",
+        "es": "agradable",
+        "pt": "agradável"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "quality",
+        "experience",
+        "appreciation"
+      ],
+      "glosses": {
+        "en": "enjoyable, agreeable and comfortable",
+        "es": "agradable, ameno y cómodo",
+        "pt": "agradável, ameno e confortável"
+      },
+      "selfExamples": {
+        "en": "The conversation is pleasant.",
+        "es": "La conversación es agradable.",
+        "pt": "A conversa é agradável."
+      }
+    },
+    {
+      "id": "excellent",
+      "wordType": "adjective",
+      "translations": {
+        "en": "excellent",
+        "es": "excelente",
+        "pt": "excelente"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "quality",
+        "evaluation",
+        "appreciation"
+      ],
+      "glosses": {
+        "en": "extremely good or of very high quality",
+        "es": "extremadamente bueno o de muy alta calidad",
+        "pt": "extremamente bom ou de qualidade muito alta"
+      },
+      "selfExamples": {
+        "en": "Her presentation is excellent.",
+        "es": "Su presentación es excelente.",
+        "pt": "A apresentação dela é excelente."
+      }
+    },
+    {
+      "id": "wonderful",
+      "wordType": "adjective",
+      "translations": {
+        "en": "wonderful",
+        "es": "maravilloso",
+        "pt": "maravilhoso"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "quality",
+        "evaluation",
+        "appreciation"
+      ],
+      "glosses": {
+        "en": "extremely good, delightful or impressive",
+        "es": "extremadamente bueno, encantador o impresionante",
+        "pt": "extremamente bom, encantador ou impressionante"
+      },
+      "selfExamples": {
+        "en": "It was a wonderful evening.",
+        "es": "Fue una noche maravillosa.",
+        "pt": "Foi uma noite maravilhosa."
+      }
+    },
+    {
+      "id": "adaptable",
+      "wordType": "adjective",
+      "translations": {
+        "en": "adaptable",
+        "es": "adaptable",
+        "pt": "adaptável"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "flexibility"
+      ],
+      "glosses": {
+        "en": "flexible and able to adjust to change",
+        "es": "flexible y capaz de adaptarse a los cambios",
+        "pt": "flexível e capaz de se adaptar a mudanças"
+      },
+      "selfExamples": {
+        "en": "She is adaptable in new situations.",
+        "es": "Ella es adaptable en situaciones nuevas.",
+        "pt": "Ela é adaptável em situações novas."
+      }
+    },
+    {
+      "id": "adventurous",
+      "wordType": "adjective",
+      "translations": {
+        "en": "adventurous",
+        "es": "aventurero",
+        "pt": "aventureiro"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "exploration"
+      ],
+      "glosses": {
+        "en": "willing to try new or challenging experiences",
+        "es": "dispuesto a probar experiencias nuevas o desafiantes",
+        "pt": "disposto a experimentar situações novas ou desafiadoras"
+      },
+      "selfExamples": {
+        "en": "He is adventurous and curious.",
+        "es": "Él es aventurero y curioso.",
+        "pt": "Ele é aventureiro e curioso."
+      }
+    },
+    {
+      "id": "affectionate",
+      "wordType": "adjective",
+      "translations": {
+        "en": "affectionate",
+        "es": "cariñoso",
+        "pt": "afetuoso"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "affection"
+      ],
+      "glosses": {
+        "en": "warm and willing to show care or love",
+        "es": "cálido y dispuesto a demostrar cariño",
+        "pt": "caloroso e disposto a demonstrar carinho"
+      },
+      "selfExamples": {
+        "en": "She is affectionate with her family.",
+        "es": "Ella es cariñosa con su familia.",
+        "pt": "Ela é afetuosa com a família."
+      }
+    },
+    {
+      "id": "ambitious",
+      "wordType": "adjective",
+      "translations": {
+        "en": "ambitious",
+        "es": "ambicioso",
+        "pt": "ambicioso"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "motivation"
+      ],
+      "glosses": {
+        "en": "strongly motivated to achieve important goals",
+        "es": "muy motivado para alcanzar objetivos importantes",
+        "pt": "fortemente motivado a alcançar objetivos importantes"
+      },
+      "selfExamples": {
+        "en": "He is ambitious and focused.",
+        "es": "Él es ambicioso y enfocado.",
+        "pt": "Ele é ambicioso e focado."
+      }
+    },
+    {
+      "id": "friendly",
+      "wordType": "adjective",
+      "translations": {
+        "en": "friendly",
+        "es": "amigable",
+        "pt": "amigável"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "sociability"
+      ],
+      "glosses": {
+        "en": "kind, welcoming and easy to interact with",
+        "es": "amable, acogedor y fácil de tratar",
+        "pt": "gentil, acolhedor e fácil de conviver"
+      },
+      "selfExamples": {
+        "en": "The new teacher is friendly.",
+        "es": "El nuevo profesor es amigable.",
+        "pt": "O novo professor é amigável."
+      }
+    },
+    {
+      "id": "articulate",
+      "wordType": "adjective",
+      "translations": {
+        "en": "articulate",
+        "es": "elocuente",
+        "pt": "articulado"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "communication",
+        "competence"
+      ],
+      "glosses": {
+        "en": "able to express ideas clearly and effectively",
+        "es": "capaz de expresar ideas con claridad y eficacia",
+        "pt": "capaz de expressar ideias com clareza e eficácia"
+      },
+      "selfExamples": {
+        "en": "She is articulate and confident.",
+        "es": "Ella es elocuente y segura.",
+        "pt": "Ela é articulada e confiante."
+      }
+    },
+    {
+      "id": "reliable",
+      "wordType": "adjective",
+      "translations": {
+        "en": "reliable",
+        "es": "confiable",
+        "pt": "confiável"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "trust"
+      ],
+      "glosses": {
+        "en": "dependable and worthy of trust",
+        "es": "responsable y digno de confianza",
+        "pt": "responsável e digno de confiança"
+      },
+      "selfExamples": {
+        "en": "He is a reliable colleague.",
+        "es": "Él es un colega confiable.",
+        "pt": "Ele é um colega confiável."
+      }
+    },
+    {
+      "id": "determined",
+      "wordType": "adjective",
+      "translations": {
+        "en": "determined",
+        "es": "determinado",
+        "pt": "determinado"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "motivation"
+      ],
+      "glosses": {
+        "en": "firmly focused on reaching a goal",
+        "es": "firmemente enfocado en alcanzar una meta",
+        "pt": "firmemente focado em alcançar uma meta"
+      },
+      "selfExamples": {
+        "en": "She is determined to finish the project.",
+        "es": "Ella está determinada a terminar el proyecto.",
+        "pt": "Ela está determinada a terminar o projeto."
+      }
+    },
+    {
+      "id": "diligent",
+      "wordType": "adjective",
+      "translations": {
+        "en": "diligent",
+        "es": "diligente",
+        "pt": "diligente"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "work"
+      ],
+      "glosses": {
+        "en": "careful, persistent and hardworking",
+        "es": "cuidadoso, persistente y trabajador",
+        "pt": "cuidadoso, persistente e dedicado ao trabalho"
+      },
+      "selfExamples": {
+        "en": "He is a diligent student.",
+        "es": "Él es un estudiante diligente.",
+        "pt": "Ele é um estudante diligente."
+      }
+    },
+    {
+      "id": "diplomatic",
+      "wordType": "adjective",
+      "translations": {
+        "en": "diplomatic",
+        "es": "diplomático",
+        "pt": "diplomático"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "communication"
+      ],
+      "glosses": {
+        "en": "tactful and skilled at handling sensitive situations",
+        "es": "discreto y hábil para tratar situaciones delicadas",
+        "pt": "cuidadoso e hábil ao lidar com situações delicadas"
+      },
+      "selfExamples": {
+        "en": "She is diplomatic during difficult conversations.",
+        "es": "Ella es diplomática en conversaciones difíciles.",
+        "pt": "Ela é diplomática em conversas difíceis."
+      }
+    },
+    {
+      "id": "dynamic",
+      "wordType": "adjective",
+      "translations": {
+        "en": "dynamic",
+        "es": "dinámico",
+        "pt": "dinâmico"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "energy"
+      ],
+      "glosses": {
+        "en": "energetic, active and full of ideas",
+        "es": "enérgico, activo y lleno de ideas",
+        "pt": "enérgico, ativo e cheio de ideias"
+      },
+      "selfExamples": {
+        "en": "He is a dynamic leader.",
+        "es": "Él es un líder dinámico.",
+        "pt": "Ele é um líder dinâmico."
+      }
+    },
+    {
+      "id": "enthusiastic",
+      "wordType": "adjective",
+      "translations": {
+        "en": "enthusiastic",
+        "es": "entusiasta",
+        "pt": "entusiasmado"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "energy"
+      ],
+      "glosses": {
+        "en": "showing strong interest, energy and excitement",
+        "es": "mostrando gran interés, energía y entusiasmo",
+        "pt": "demonstrando grande interesse, energia e entusiasmo"
+      },
+      "selfExamples": {
+        "en": "She is enthusiastic about learning languages.",
+        "es": "Ella está entusiasmada por aprender idiomas.",
+        "pt": "Ela está entusiasmada em aprender idiomas."
+      }
+    },
+    {
+      "id": "kind",
+      "wordType": "adjective",
+      "translations": {
+        "en": "kind",
+        "es": "amable",
+        "pt": "gentil"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "care"
+      ],
+      "glosses": {
+        "en": "caring, considerate and helpful toward others",
+        "es": "atento, considerado y dispuesto a ayudar a los demás",
+        "pt": "atencioso, considerado e disposto a ajudar os outros"
+      },
+      "selfExamples": {
+        "en": "She is kind to everyone.",
+        "es": "Ella es amable con todos.",
+        "pt": "Ela é gentil com todos."
+      }
+    },
+    {
+      "id": "generous",
+      "wordType": "adjective",
+      "translations": {
+        "en": "generous",
+        "es": "generoso",
+        "pt": "generoso"
+      },
+      "adjectiveClass": "qualitative",
+      "polarity": "positive",
+      "semanticTags": [
+        "person",
+        "character",
+        "care"
+      ],
+      "glosses": {
+        "en": "willing to give, share or help freely",
+        "es": "dispuesto a dar, compartir o ayudar con generosidad",
+        "pt": "disposto a dar, compartilhar ou ajudar com generosidade"
+      },
+      "selfExamples": {
+        "en": "He is generous with his time.",
+        "es": "Él es generoso con su tiempo.",
+        "pt": "Ele é generoso com seu tempo."
+      }
+    }
   ]
 }

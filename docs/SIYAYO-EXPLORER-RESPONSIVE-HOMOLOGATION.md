@@ -1,0 +1,329 @@
+# Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
+
+**Checkpoint atual:** JAGUAR-LIVE-49  
+**Registro atualizado:** 2026-10-08, America/Sao_Paulo  
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
+**Base desta confirmação:** `418f4c68c4385f7e6b38495dd650f67f0c5602d8`  
+**Estado atual:** DEPENDENCY-SCROLL-01 confirmado como corrigido pelo usuário no teste móvel retrato. Capturas EN/WHAT e ES/WHICH conferidas; homologação visual geral e matriz completa de idiomas/QWs/formatos permanecem parciais. As seções LIVE-47/48 preservam o diagnóstico e a implementação anteriores.
+
+## Objetivo e autorização
+
+O usuário autorizou adotar o modelo compartilhado do Pianinho Mágico no Explorer,
+começar pela correção das fontes e conferir cartões e setas nos três formatos.
+Pediu registrar o passo a passo para recuperar a continuidade do trabalho; a
+conferência dos ajustes no celular será realizada por ele após receber o preview.
+Usar o branch e a PR existentes. Não fazer merge nem criar outra PR.
+
+## Origem recuperada
+
+- Branch de origem: `jaguar/piano-stage-v0.1`.
+- Snapshot conferido: `349bde65c7986843ad21ecef549d206631bea305`.
+- Contrato: `docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md`.
+- CSS comum: `css/siyayo-responsive-stage.css`, blob `fde13b86d574464dba65ce8ca31479f0a2501ef7`.
+- JS comum: `js/siyayo-responsive-preview.js`, blob `1fe4d10615f3206b0ca1595462ad83e7e314491f`.
+- Os dois arquivos comuns são adotados sem alteração. O Explorer define somente
+  seus ajustes de layout, sem criar outro controlador de preview.
+
+## Passo a passo e ponto de retomada
+
+| Passo | Trabalho e critério | Estado |
+|---|---|---|
+| 1 | Conferir HEAD, fonte do Pianinho, contrato e arquivos da cópia local | DONE: arquivos da base conferidos pelos blobs Git |
+| 2 | Instalar barra AUTO/PORTRAIT/LANDSCAPE e contêiner comum no Explorer | DONE |
+| 3 | Fazer o layout responder à largura do contêiner nos três formatos | DONE: consultas de largura usam o contêiner nomeado |
+| 4 | Corrigir fontes, densidade dos cartões e legibilidade das relações | DONE: palavras inteiras, metadados legíveis e rolagem interna |
+| 5 | Recalcular setas após largura/formato/fontes, preservando o foco | DONE: atualização visual sem refazer a avaliação |
+| 6 | Executar regressões pertinentes e conferir composição nos três formatos | DONE: 267/267 comandos Node dos workflows; conferência de apresentação no navegador |
+| 7 | Publicar no branch existente; verificar arquivos, CI e preview | DONE: readback exato; 3 workflows PASS; deploy do commit funcional confirmado |
+| 8 | Conferência humana dos ajustes no celular pelo usuário | PARTIAL: 20 capturas recebidas; leitura EN/portrait e PT/landscape, percurso com áudio e nova ocorrência de rolagem registrados abaixo |
+
+**Retomada:** investigar a retenção da rolagem do Dependency Focus ao apontar
+outro token da mesma frase; depois conferir alternâncias de idioma/QW e os três
+formatos. Não refazer os circuitos humanos já demonstrados para preencher
+pendências antigas. A solicitação atual é de investigação; a correção de rolagem
+descrita abaixo ainda não foi implementada.
+
+## Modos e composição
+
+| Modo | Largura e comportamento |
+|---|---|
+| AUTO | Usa a largura disponível e as regras responsivas da página |
+| PORTRAIT | Contêiner limitado a 430 px, com composição estreita no laptop |
+| LANDSCAPE | Contêiner limitado a 844 px, com composição larga no laptop |
+| Touch real | Resolve para AUTO; barra de preview oculta; não herda simulação salva do desktop |
+
+A barra é uma ferramenta de conferência visual. Não é um controle de avaliação.
+O modo é salvo pela chave comum `siyayo-responsive-preview-mode`, separada das
+autoridades de learner/Session/Skill. O evento comum declara
+`pedagogicalChange:false`, `evaluated:false`, `evidenceProduced:false`.
+
+O Explorer consulta a largura do contêiner `siyayo-explorer`. Assim, uma janela
+larga de laptop pode mostrar a composição PORTRAIT. Unidades relativas à largura
+também usam esse contêiner. O diagnóstico Xespirito recebe apenas os ajustes
+locais necessários para acompanhar o formato; seu arquivo compartilhado fica
+intacto.
+
+## Registro — Dependency Focus / mobile portrait
+
+Evidência: `image(20261007-183912).png`, anotado pelo usuário, e o print mobile
+`WhatsApp Image 2026-10-07 at 14.18.13.jpeg`. Palavras e tipos invadiam cartões
+vizinhos. O usuário pediu estudar fonte, altura, organização das informações e a
+camada das setas.
+
+Causa de apresentação conferida: regras tipográficas posteriores sobrescreviam
+os tamanhos menores de mobile; cartões eram comprimidos em colunas iguais sem
+largura suficiente para palavras inteiras.
+
+| Informação | Fonte preservada |
+|---|---|
+| Palavra | `token.form` |
+| Tipo de palavra no idioma ativo | `token.pedagogy.wordType[language]`, com o fallback já existente |
+| Relação com o foco selecionado | `structure.relations`, projetada pelas views existentes |
+
+A terceira linha é condicional ao foco. Por exemplo, `o -> salmão` é `det`; ao
+focar `encontrar`, são projetadas as relações diretas `advmod`, `aux` e `obj`.
+Não inventar uma relação apenas para preencher visualmente três linhas.
+
+Os cartões mantêm Quicksand/Nunito Sans, palavras inteiras e metadados completos.
+Onde falta largura, o diagrama tem rolagem horizontal, barra visível e instrução
+localizada somente quando há overflow. O restante da página continua ajustado
+ao contêiner. O novo lote humano abaixo confirma legibilidade nas composições
+observadas; a retenção da rolagem e a revisão visual geral continuam abertas.
+
+As setas continuam usando dependente -> head a partir do corpus. São redesenhadas
+com as posições atuais dos cartões após ResizeObserver, mudança de preview,
+redimensionamento e carregamento das fontes. Essa atualização preserva o foco e
+não cria ação/resposta pedagógica.
+
+## Evidência humana já recebida antes deste ajuste
+
+- Desktop PT, ordem invertida: cinco prints de `163327` a `164057` demonstram
+  função correta, uso local errado, transferência em 2/3 e correção local em
+  Shopping para 3/3. Os prints `165258` e `165559` mostram o retorno final a
+  Preparing com ONDE/estrela, trilha 3/3 e feedback GREEN PASS corrigido. Esta
+  pendência específica de LIVE-46 está encerrada no percurso testado.
+- Mobile PT, ordem normal: 20 prints WhatsApp entre 14.18.13 e 14.31.30 mostram
+  `New Pupil ONDE` em 0/3 -> 2/3 -> 3/3 com GREEN em Preparing e retorno a Shopping;
+  a repetição com `Conferir learning trail Onde` acrescenta Trail Shopping 2/3 e
+  retorno confirmado 3/3, partindo novamente de 0/3.
+- English exibido com `DISPLAY EN · ASSESSMENT PT` não é uma conclusão própria EN.
+  O retorno a PT conserva a estrela. Áudio efetivamente ouvido no celular não
+  foi comprovado por esses prints.
+- Estas capturas são da versão anterior aos ajustes LIVE-47. Não homologam por
+  antecipação as novas fontes, cartões, contêiner ou setas.
+
+## Autoridades e pendências preservadas
+
+- Skill pertence exclusivamente a `session.decision.skill`.
+- Choice Evidence Packet Bridge, contrato WHERE, evaluator, corpus, escopo,
+  provenance, apoio de áudio e fechamento por scope permanecem intactos.
+- Preview, tamanho de fonte, rolagem, foco visual e setas não confirmam domínio.
+- VISUAL-PATITA-01 e VISUAL-CARDS-02 permanecem OPEN para a revisão visual global
+  de todos os percursos, QWs e idiomas.
+- ENTRY-WHERE-01 (ocorrência inicial com NOVO TESTE) permanece OPEN; os novos
+  circuitos bem-sucedidos não reproduzem nem encerram aquela ocorrência.
+- Sem merge, outra PR, NEXT automático, reinício automático ou mudança de idioma
+  da avaliação causada por um formato de tela.
+
+## Verificação desta implementação
+
+O conjunto inicial de 44 regressões passou. Depois de completar a cópia local
+dos scripts e fixtures usados pelo CI, passaram todos os 267 comandos Node
+distintos declarados nos três workflows. A validação de sintaxe dos dois scripts
+novos/alterados passou. Os arquivos recuperados de base foram conferidos pelos
+blobs Git; os dois arquivos comuns conferem exatamente com os blobs do Pianinho.
+
+O primeiro envio, `090e21d3a8e87e573945bcf0cb235b9a2b1d8b0a`, passou Resume,
+mas falhou no guard de portrait e no teste da superfície de foco. O teste de
+portrait procurava a antiga consulta `@media` em vez do contêiner adotado. O
+segundo usava um DOM mínimo sem `querySelector`, válido para a projeção estática.
+O follow-up preserva essa projeção e instala o observador somente quando há DOM
+de geometria; o teste existente de portrait exige agora contêiner nomeado e
+ligação ao preview comum. Não se contornou o CI nem se alteraram workflows.
+
+**Commit funcional final:** `188e5603729020e60b609726d8ed4126023d69f3`.
+Os oito arquivos do envio inicial e os dois arquivos do follow-up foram lidos
+exatamente dos commits imutáveis. O diff final desde a base contém nove caminhos:
+apresentação, três documentos e o teste de contenção de portrait. Corpus,
+contratos, Session/Skill, Choice Bridge e workflows permanecem intactos.
+
+| Check do commit funcional final | Resultado |
+|---|---|
+| [Verb Explorer Adaptive Bootstrap 37681034661](https://github.com/siyayoacademy/siyayo-academy/actions/runs/37681034661) | PASS |
+| [Resume Runtime Dispatch 37681034618](https://github.com/siyayoacademy/siyayo-academy/actions/runs/37681034618) | PASS |
+| [Corpus Integrity 37681034660](https://github.com/siyayoacademy/siyayo-academy/actions/runs/37681034660) | PASS |
+| Cloudflare Pages — HEAD `188e560` | Deploy successful; preview `3610852c` |
+
+O navegador de conferência não alcança o servidor local (connection refused).
+As verificações visuais foram feitas no preview publicado da mesma branch.
+Não houve execução TinyFish.
+
+### Conferência de apresentação no navegador
+
+Nick de teste: `QA LIVE47 LAYOUT`, Shopping, avaliação PT/ONDE em 0/3, sem
+responder aos probes ou ouvir áudio. Trocar AUTO -> PORTRAIT -> LANDSCAPE -> AUTO
+preservou nick, foco `find`, ONDE e contrato 0/3; não confirmou evidência.
+
+| Composição PT/ONDE | AUTO | PORTRAIT | LANDSCAPE |
+|---|---|---|---|
+| Largura do contêiner observada | 1348 px | 430 px | 844 px |
+| Palavra / metadados | 15 / 12 px | 14 / 12 px | 15 / 12 px |
+| Altura dos cartões observada | cerca de 89 px | cerca de 86 px | cerca de 89 px |
+| Diagrama: largura disponível / conteúdo | 996 / 996 px | 394 / 539 px | 745 / 745 px |
+| Rolagem e instrução | dispensadas | internas, instrução PT; teclado alcançou o fim, 145 px | dispensadas |
+| Setas após concluir a transição | SVG 996 x 147 | SVG 539 x 144 | SVG 745 x 147 |
+
+Nos três formatos, as palavras cabem inteiras nos próprios cartões. As setas
+advmod/aux/obj continuam ligadas ao foco canônico. A transição animada pode ter
+geometria intermediária; o observador refaz o SVG até a dimensão final.
+O documento não apresentou overflow horizontal (scrollWidth = clientWidth).
+
+Também foram conferidos metadados e instrução de rolagem em portrait ES e EN,
+incluindo os seis tokens EN e a seta nsubj. Trocar apenas a exibição preservou
+`ASSESSMENT PT`, sem adotar nem confirmar EN/ES. VERB DNA foi conferido em
+portrait/landscape, com cartões empilhados/colunas e diagnóstico acompanhando
+o contêiner. Esta inspeção é de apresentação pelo agente, não é homologação
+humana de domínio ou de áudio.
+
+**Preview funcional imutável, aberto e URL após redirecionamento conferida:**
+[Shopping — LIVE-47](https://3610852c.siyayo-academy.pages.dev/verb-explorer?mode=experience&experience=shopping-for-dinner).
+
+### Próximo elo humano — celular
+
+1. Abrir o preview acima no celular: layout AUTO, sem barra de simulação.
+2. Em Shopping/Português, escolher um nick e ONDE para exibir o diagrama.
+3. Conferir palavra inteira, tipo completo e relação legível; conferir a altura
+   dos cartões e deslizar o diagrama até o último cartão.
+4. Conferir setas ligadas aos tokens certos, tanto no início quanto no fim da
+   rolagem; repetir com o celular na horizontal.
+5. Enviar o relato e os prints dos dois lados/posições observados. Se aparecer
+   uma falha, registrar idioma, Experience, QW, orientação e ação que a provoca.
+
+Este era o roteiro entregue antes do novo lote humano abaixo. CI/deploy
+bem-sucedidos isoladamente não encerram a homologação visual.
+
+## Retorno humano — 20 capturas e áudio · 2026-10-07
+
+**Versão identificada:** as capturas com a barra de endereço mostram o preview
+funcional `3610852c`. Ele corresponde ao commit funcional `188e560`; o HEAD
+inspecionado nesta revisão, `8635dc1f64653b98c61cc87ce73f36b4d611b573`, acrescenta
+somente os dois documentos de acompanhamento. Capturas recortadas, isoladamente,
+não identificam um SHA. Os arquivos originais foram lidos localmente e preservados.
+
+| Capturas | Evidência observada | Limite / resultado |
+|---|---|---|
+| `image(20261007-213405).png`; WhatsApp `18.02.00` | Celular vertical, Shopping/English/WHAT: frase inteira alcançável por rolagem, palavras e tipos legíveis, setas obj/xcomp/mark e cartões de Living Lines com texto quebrado dentro das bordas | Apresentação EN/WHAT observada; nick vazio não é avaliação EN concluída |
+| `image(20261007-214110).png` | Celular horizontal, Shopping/PT/ONDE, nick Show: cinco tokens legíveis; advmod/aux/obj ligados a encontrar; diagnóstico correto observado fora do contrato; Trail 0/3 | Legibilidade nesta composição aprovada pelo relato; observação não satisfaz FUNÇÃO/USO/TRANSFERÊNCIA |
+| WhatsApp `18.06.28`, `18.06.47`, `18.07.15`, `18.07.29` | ONDE, tipos, passado/afirmativa/perspectivas e Living Lines legíveis; próximo contexto apresentado como exploração livre | Exploração gramatical e visita não iniciam outra avaliação |
+| WhatsApp `18.07.46`, `18.09.17`, `18.09.29`, `18.09.56` | FUNÇÃO preenchida; resposta correta de Shopping selecionada; aviso de apoio de áudio e exigência de evidência independente; Trail FUNÇÃO ● / USO ○ / TRANSFERÊNCIA ○, 1/3 | Resposta local foi registrada como assistida. A ausência de USO confirmado é o comportamento esperado |
+| WhatsApp `18.12.17`, `18.12.34` | Preparing conserva WHERE 1/3 e origem Shopping; visita não inicia nova avaliação; ONDE exibido | Retenção do percurso e da origem demonstrada |
+| WhatsApp `18.13.16`, `18.14.18` | Transferência correta em Preparing; Trail FUNÇÃO ● / USO ○ / TRANSFERÊNCIA ●, 2/3 | Transferência independente admitida; áudio local de Shopping não é fabricado como áudio em Preparing |
+| WhatsApp `18.15.08`, `18.16.55` | Retorno a Shopping mantém 2/3 e a mensagem de apoio de áudio no uso local | Remontagem não apaga o apoio observado nesta Session/Experience. Este ensaio permanece sem USO independente e sem GREEN PASS |
+| `image(20261007-214251).png`, `image(20261007-214342).png` | Laptop com barra AUTO e composição estreita do Explorer | Integração visual observada; não demonstra avaliação própria nem todos os formatos/idiomas |
+| `image(20261007-220853).png` | Usuário aprova a barra branca do contexto; relata salto da rolagem do diagrama ao sair da barra com o mouse e ao apontar cook no celular | Nova pendência DEPENDENCY-SCROLL-01, detalhada abaixo |
+
+O usuário confirma que o teste de áudio corresponde ao esperado. Registrar
+**áudio efetivamente ouvido no ensaio móvel apresentado**; os prints PT do painel
+corroboram o registro de apoio, mas imagem estática não prova escuta. Não ampliar
+esse relato para todas as vozes, idiomas, QWs ou dispositivos. O lote acrescenta
+evidência humana de apresentação e de apoio de áudio; não é somente um deploy
+bem-sucedido. Ele não demonstra uma matriz completa de alternâncias EN/ES/PT.
+
+### DEPENDENCY-SCROLL-01 — OPEN: retenção ao mudar o foco
+
+**Relato:** após deslizar até o fim da frase, o usuário quer examinar palavras e
+setas mantendo a posição. No laptop relata retorno ao início ao mover o mouse
+da barra; no celular relata o mesmo ao apontar cook. A imagem registra a posição
+e o relato, não uma sequência temporal automatizada.
+
+**Inspeção do código publicado:**
+
+- `js/verb-explorer-dependency-focus-interaction.js` muda o foco por hover
+  (`pointerover`, exceto touch), apontar (`pointerup`) e teclado (`focusin`,
+  Enter/Space). Uma mudança real de token chama `surface.render`.
+- `js/verb-explorer-dependency-focus-surface.js` substitui `surface.innerHTML`
+  e cria outro `.dependency-diagram-scroll` em cada renderização. Não captura nem
+  restaura `scrollLeft` do contêiner anterior. Essa perda de estado explica o
+  salto descrito quando o foco muda; não existe um handler específico de saída
+  da barra que deliberadamente mande a rolagem para o início.
+- A atualização de geometria por resize/fontes/preview usa `refresh` e não
+  recria esse contêiner. O desenho calcula posições relativas ao stage; a
+  rolagem deve conservar o alinhamento de cartões e setas.
+- Os dois arquivos inspecionados conferem exatamente com os blobs do HEAD:
+  surface `5e22ce450c8b694643e5665152506e6968c7d56d` e interaction
+  `fb3767abfa7a325fa9d82d45d669d3d8e5549351`.
+
+**Correção proposta, ainda não aplicada:** conservar a posição horizontal
+enquanto muda somente o token focado da mesma frase canônica e idioma. Se a
+renderização continuar substituindo o DOM, capturar a posição antes e restaurar
+no novo contêiner, limitada ao intervalo válido após o layout; manter o desenho
+das relações canônicas. Uma troca deliberada de frase/QW/idioma/Experience usa a
+nova referência sem carregar a posição de outra frase. Não desativar o apontar
+para esconder o problema. A barra branca do contexto foi aprovada e não faz
+parte desta ocorrência.
+
+**Critérios para o próximo elo:**
+
+1. Deslizar até a parte direita; apontar going/cook com mouse e touch e conferir
+   foco novo, posição retida e pontas das setas ligadas aos tokens corretos.
+2. Repetir por teclado, conferindo acesso aos tokens sem salto para o início.
+3. Alternar AUTO/PORTRAIT/LANDSCAPE com a mesma referência e verificar limites
+   da rolagem e redesenho das setas.
+4. Alternar EN -> ES -> PT -> EN e QWs disponíveis em Shopping e Preparing:
+   frase/tipos/relações correspondem à referência selecionada; referência ausente
+   não herda o diagrama anterior; voltar à referência mantém apresentação coerente.
+5. Conferir que exploração/preview não produzem evidência, Session, closure ou
+   adoção automática de Skill/idioma. Conservar as avaliações próprias retidas.
+
+### Verificação da revisão e fila preservada
+
+Passaram novamente **11 regressões existentes**: seleção e isolamento de idioma;
+áudio de Choice; QWord/Dependency Focus; referência viva por idioma; interação;
+interação acessível; superfície; WHERE vivo com áudio/remontagem; contrato WHERE;
+Choice Evidence Packet Bridge (43 verificações). Os testes de interação não
+verificam a retenção da rolagem; o resultado PASS não encerra DEPENDENCY-SCROLL-01.
+Esta revisão não fez uma nova reprodução automatizada no navegador.
+
+O HEAD `8635dc1` tem Bootstrap, Resume, Corpus e Cloudflare em success, conferidos
+separadamente das capturas. Nenhum arquivo de runtime, teste ou CI foi alterado
+por esta revisão; a publicação desta evidência é somente documental. Skill
+continua exclusivamente em `session.decision.skill`; o contrato e o Choice
+Bridge conservam as autoridades e restrições anteriores.
+
+**WAIT geral permanece:** DEPENDENCY-SCROLL-01; revisão visual global
+VISUAL-PATITA-01 / VISUAL-CARDS-02; ENTRY-WHERE-01; matriz humana ainda não
+demonstrada de idiomas/QWs/formatos. Áudio e legibilidade observados neste lote
+ficam registrados com seu escopo; não reabrir conclusões anteriores nem tratar
+o ensaio assistido em 2/3 como perda de um GREEN PASS anterior.
+
+## Retomada — JAGUAR-LIVE-48 / DEPENDENCY-SCROLL-01
+
+**Base imutável:** `8c3333b14679d14cbfa55f3d4682161b69a23c59`. A revisão das 20 capturas e do áudio foi preservada. A chamada de workflow que ficou sem retorno no chat anterior não impede a retomada: Bootstrap, Resume, Corpus e Cloudflare do checkpoint já estavam concluídos.
+
+**Correção implementada:** a interação em outro token solicita retenção da posição somente para a mesma superfície visível, estrutura canônica carregada e idioma. A renderização normal de contexto, QW ou idioma cria sua própria referência. A posição é restaurada e limitada à largura disponível após o layout. O token ou a região que tinha foco por teclado recupera esse foco com `preventScroll`; um guarda de ativação impede que o `focusin` de restauração reentre na renderização.
+
+**Reprodução e regressão:** o teste existente de superfície, já executado pelo CI, usa os módulos de produção de superfície/interação/conectores e uma fixture que reproduz perda de rolagem/foco ao substituir o DOM. No checkpoint, apontar cook após 260 px falha: posição 0 em vez de 260. A correção passa essa reprodução, mouse/touch/teclado, Enter/Space sem render duplicado, foco da região, token inválido sem substituição, clamp ao novo limite, superfície escondida sem estado antigo, EN -> ES -> PT -> EN e referências WHAT/WHERE/WHICH de Shopping/Preparing. As coordenadas e relações das setas continuam canônicas em três larguras disponíveis. A fixture não é uma homologação humana nem uma escuta de áudio.
+
+**Verificação local:** 14 comandos de regressão PASS: superfície, interação, interação acessível, referência viva, QW/Dependency Focus, DNA trilíngue, conectores, isolamento e seleção de idioma de avaliação, WHERE vivo, contrato WHERE, portrait containment, continuidade da visita QW e Choice Evidence Packet Bridge. O último mantém suas 43 verificações. Sintaxe dos três arquivos alterados PASS. Nenhum workflow, corpus, Session/Skill, suporte de áudio, contrato, Choice Bridge ou mecanismo de evidência foi alterado. Os resultados de publicação/CI e navegador servido ficam na PR #3.
+
+**Estado ao concluir LIVE-48 (histórico):** implementação de DEPENDENCY-SCROLL-01 corrigida e coberta por regressão. Naquele momento, a conferência humana desta versão no telefone permanecia WAIT; a revisão visual geral, VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam abertas. As seções de diagnóstico anteriores descrevem o estado pré-correção do checkpoint.
+
+**Próximo elo:** no preview corrigido, deslizar até a parte direita da frase, examinar outra palavra sem salto e conferir setas e foco nos formatos; depois alternar idiomas/QWs sem confundir exploração com evidência ou trocar a autoridade da avaliação.
+
+## Confirmação móvel — JAGUAR-LIVE-49
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Implementação conferida:** `418f4c68c4385f7e6b38495dd650f67f0c5602d8`, preview de Shopping publicado na PR #3.
+
+**Relato do usuário:** “sim corrigido”, após a solicitação de conferir a retenção da rolagem no celular. **DEPENDENCY-SCROLL-01: DONE no reteste móvel informado.** O relato confirma o comportamento temporal; as capturas abaixo registram estados visuais do ensaio.
+
+| Captura recebida | Observação direta | Escopo |
+|---|---|---|
+| `WhatsApp Image 2026-10-08 at 10.37.03.jpeg` | EN/WHAT, “What are we going to cook?”; foco em `to / PARTICLE`; seta `to → cook` com `mark`; parte direita do diagrama visível | Celular retrato, foco e conexão legíveis com rolagem interna |
+| `WhatsApp Image 2026-10-08 at 10.37.36.jpeg` | Mesma pergunta EN/WHAT; foco em `we / PRONOUN`; seta `we → going` com `nsubj`; outra faixa da frase visível | Celular retrato, exploração de outro token |
+| `WhatsApp Image 2026-10-08 at 10.41.30.jpeg` | ES/WHICH, “¿Cuál queso deberíamos elegir?”; foco em `queso / SUSTANTIVO`; relação `Cuál → queso` com `det`; curva `obj` continua à direita, com verbo fora da faixa visível | Celular retrato; referência e diagnóstico correspondentes em espanhol |
+
+**Limites da conferência:** nenhuma captura demonstra a sequência completa do gesto, teclado, formato paisagem/AUTO, alternância PT ou toda a matriz de QWs. O encerramento da falha neste reteste vem da confirmação explícita do usuário. A observação visual não produz nova evidência de domínio nem GREEN PASS.
+
+**Continuidade:** próximo elo é a alternância dirigida EN -> ES -> PT -> EN/QWs e a comparação dos três formatos no celular/laptop. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam OPEN. O áudio anteriormente ouvido e os circuitos já concluídos conservam seu escopo; a rota WHERE assistida em 2/3 permanece separada.
+
+Esta revisão altera apenas o mapa e este registro; a implementação corrigida, os contratos e as autoridades de avaliação são preservados.

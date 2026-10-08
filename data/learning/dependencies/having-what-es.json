@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "having-what-es",
+  "language": "es",
+  "sentence": "¿Qué estamos comiendo primero?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "Qué",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "es": "PRONOMBRE"
+        },
+        "role": {
+          "es": "Objeto por el que se pregunta"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "estamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": "Auxiliar progresivo"
+        }
+      }
+    },
+    {
+      "id": "eat",
+      "index": 3,
+      "form": "comiendo",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción en la pregunta"
+        }
+      }
+    },
+    {
+      "id": "first",
+      "index": 4,
+      "form": "primero",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": "Orden de la acción"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "eat",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "eat",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "eat",
+      "dependent": "first",
+      "relation": "advmod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHAT transfer question",
+    "experienceId": "having-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Referencia explícita del corpus. QUÉ es el objeto de COMIENDO; sin afirmación de evaluación."
+  }
+}

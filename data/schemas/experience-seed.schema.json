@@ -100,11 +100,48 @@
         }
       }
     },
+    "dialogueTurn": {
+      "type": "object",
+      "required": [
+        "question",
+        "response"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "question": {
+          "$ref": "#/$defs/trilingual"
+        },
+        "response": {
+          "$ref": "#/$defs/trilingual"
+        }
+      }
+    },
+    "dialogueTense": {
+      "type": "object",
+      "required": [
+        "affirmative",
+        "negative",
+        "interrogative"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "affirmative": {
+          "$ref": "#/$defs/dialogueTurn"
+        },
+        "negative": {
+          "$ref": "#/$defs/dialogueTurn"
+        },
+        "interrogative": {
+          "$ref": "#/$defs/dialogueTurn"
+        }
+      }
+    },
     "thinkingQuestion": {
       "type": "object",
       "required": [
         "intention",
         "questionWord",
+        "questionWordLabel",
         "question"
       ],
       "additionalProperties": false,
@@ -115,14 +152,304 @@
         "questionWord": {
           "type": "string"
         },
+        "questionWordLabel": {
+          "$ref": "#/$defs/trilingual"
+        },
         "question": {
           "$ref": "#/$defs/trilingual"
         },
         "responses": {
           "$ref": "#/$defs/trilingual"
         },
+        "dialogueForms": {
+          "type": "object",
+          "required": [
+            "present",
+            "past",
+            "future"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "present": {
+              "$ref": "#/$defs/dialogueTense"
+            },
+            "past": {
+              "$ref": "#/$defs/dialogueTense"
+            },
+            "future": {
+              "$ref": "#/$defs/dialogueTense"
+            }
+          }
+        },
         "choiceContext": {
           "$ref": "#/$defs/choiceContext"
+        },
+        "answerGrounding": {
+          "type": "object",
+          "required": [
+            "context",
+            "acceptedVocabularyIds"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "context": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "acceptedVocabularyIds": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "canonicalResponses": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "response"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "response": {
+                    "$ref": "#/$defs/trilingual"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "reasonGrounding": {
+          "type": "object",
+          "required": [
+            "groundedIn",
+            "acceptedReasonId",
+            "alternatives"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "groundedIn": {
+              "const": "situation"
+            },
+            "acceptedReasonId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alternatives": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "response"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "response": {
+                    "$ref": "#/$defs/trilingual"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "assessmentTarget": {
+          "type": "object",
+          "required": [
+            "skill",
+            "definitionPath"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "skill": {
+              "type": "string",
+              "minLength": 1
+            },
+            "definitionPath": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "dependencyFocus": {
+          "type": "object",
+          "required": [
+            "structureIds",
+            "defaultFocus"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "defaultFocus": {
+              "type": "string"
+            },
+            "defaultFocusByLanguage": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "es": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pt": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "dependencyHeadProbe": {
+          "type": "object",
+          "required": [
+            "structureIds",
+            "targetTokenId",
+            "prompt",
+            "alternativeTokenIdsByLanguage"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "targetTokenId": {
+              "type": "string"
+            },
+            "prompt": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "type": "object",
+              "required": [
+                "en",
+                "es",
+                "pt"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "en": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "es": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "pt": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "targetTokenIdsByLanguage": {
+              "$ref": "#/$defs/trilingual"
+            }
+          }
+        },
+        "pronounComparison": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "language",
+            "grammarRole",
+            "prompt",
+            "expectedAlternativeId",
+            "alternatives",
+            "doesNotClaim"
+          ],
+          "properties": {
+            "language": {
+              "const": "es"
+            },
+            "grammarRole": {
+              "const": "pronombre-interrogativo"
+            },
+            "prompt": {
+              "type": "string",
+              "minLength": 1
+            },
+            "expectedAlternativeId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alternatives": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "label"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "doesNotClaim": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "assessmentResumeTarget": {
+          "type": "object",
+          "required": [
+            "skill",
+            "definitionPath"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "skill": {
+              "type": "string",
+              "minLength": 1
+            },
+            "definitionPath": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         }
       }
     },
@@ -253,6 +580,54 @@
             }
           }
         },
+        "dependencyFocus": {
+          "type": "object",
+          "required": [
+            "structureIds",
+            "defaultFocus"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "defaultFocus": {
+              "type": "string"
+            }
+          }
+        },
+        "dependencyHeadProbe": {
+          "type": "object",
+          "required": [
+            "structureIds",
+            "targetTokenId",
+            "prompt",
+            "alternativeTokenIds"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "structureIds": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "targetTokenId": {
+              "type": "string"
+            },
+            "prompt": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "alternativeTokenIds": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "targetTokenIdsByLanguage": {
+              "$ref": "#/$defs/trilingual"
+            }
+          }
+        },
         "toroidalNext": {
           "type": "object",
           "required": [
@@ -322,12 +697,23 @@
         },
         "sentenceBridge": {
           "type": "object",
-          "required": ["verbId", "action", "structure"],
+          "required": [
+            "verbId",
+            "action",
+            "structure"
+          ],
           "additionalProperties": false,
           "properties": {
-            "verbId": { "type": "string", "minLength": 1 },
-            "action": { "$ref": "#/$defs/trilingual" },
-            "structure": { "$ref": "#/$defs/trilingual" }
+            "verbId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "action": {
+              "$ref": "#/$defs/trilingual"
+            },
+            "structure": {
+              "$ref": "#/$defs/trilingual"
+            }
           }
         },
         "preferredTraits": {

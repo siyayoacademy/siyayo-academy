@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "find",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I find the answer every day.",
+            "es": "Yo encuentro la respuesta todos los días.",
+            "pt": "Eu encontro a resposta todos os dias."
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encuentro",
+            "pt": "encontro"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not find the answer every day.",
+            "es": "Yo no encuentro la respuesta todos los días.",
+            "pt": "Eu não encontro a resposta todos os dias."
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encuentro",
+            "pt": "encontro"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do I find the answer every day?",
+            "es": "¿Encuentro yo la respuesta todos los días?",
+            "pt": "Eu encontro a resposta todos os dias?"
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encuentro",
+            "pt": "encontro"
+          }
+        }
+      }
+    },
+    {
+      "verb": "find",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I found the answer yesterday.",
+            "es": "Yo encontré la respuesta ayer.",
+            "pt": "Eu encontrei a resposta ontem."
+          },
+          "targetWords": {
+            "en": "found",
+            "es": "encontré",
+            "pt": "encontrei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not find the answer yesterday.",
+            "es": "Yo no encontré la respuesta ayer.",
+            "pt": "Eu não encontrei a resposta ontem."
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encontré",
+            "pt": "encontrei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did I find the answer yesterday?",
+            "es": "¿Encontré yo la respuesta ayer?",
+            "pt": "Eu encontrei a resposta ontem?"
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encontré",
+            "pt": "encontrei"
+          }
+        }
+      }
+    },
+    {
+      "verb": "find",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will find the answer tomorrow.",
+            "es": "Yo encontraré la respuesta mañana.",
+            "pt": "Eu encontrarei a resposta amanhã."
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encontraré",
+            "pt": "encontrarei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not find the answer tomorrow.",
+            "es": "Yo no encontraré la respuesta mañana.",
+            "pt": "Eu não encontrarei a resposta amanhã."
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encontraré",
+            "pt": "encontrarei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will I find the answer tomorrow?",
+            "es": "¿Encontraré yo la respuesta mañana?",
+            "pt": "Eu encontrarei a resposta amanhã?"
+          },
+          "targetWords": {
+            "en": "find",
+            "es": "encontraré",
+            "pt": "encontrarei"
+          }
+        }
+      }
+    }
+  ]
+}

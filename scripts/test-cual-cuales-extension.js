@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const corpus=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json'));
+const q=id=>corpus.items.find(x=>x.id===id).thinkingMind.find(x=>x.questionWord==='which');
+assert.equal(q('shopping-for-dinner').question.es,'¿Cuál queso deberíamos elegir?');
+assert.equal(q('preparing-dinner').question.es,'¿Cuáles zanahorias deberíamos cocinar primero?');
+const what=corpus.items[0].thinkingMind.find(x=>x.questionWord==='what');assert.equal(what.questionWordLabel.es,'QUÉ');
+const api=require('../js/verb-explorer-pronoun-comparison.js'),spec=q('shopping-for-dinner').pronounComparison;
+assert.equal(api.evaluate(spec,'cual').result,'pass');assert.equal(api.evaluate(spec,'cuales').result,'fail');
+assert.equal(api.evaluate(spec,'unknown'),null);
+assert.equal(api.evaluate(spec,'cual').evidenceProduced,false);assert.equal(api.evaluate(spec,'cual').greenPass,false);
+const dep=JSON.parse(fs.readFileSync('data/learning/dependencies/shopping-cual-es.json'));
+assert.equal(dep.tokens.find(t=>t.id==='which').form,'Cuál');assert.equal(dep.tokens.find(t=>t.id==='cheese').form,'queso');
+console.log('PASS: authored CUÁL/CUÁLES, preserved QUÉ, independent pronoun observation without Green Pass.');

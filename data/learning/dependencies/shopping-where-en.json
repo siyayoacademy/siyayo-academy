@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-where-en",
+  "language": "en",
+  "sentence": "Where can we find the salmon?",
+  "tokens": [
+    {
+      "id": "where",
+      "index": 1,
+      "form": "Where",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Spatial information being asked about"
+        }
+      }
+    },
+    {
+      "id": "can",
+      "index": 2,
+      "form": "can",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB / MODAL"
+        },
+        "role": {
+          "en": "Modal carrier"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject"
+        }
+      }
+    },
+    {
+      "id": "find",
+      "index": 4,
+      "form": "find",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Location-seeking action in the question"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 5,
+      "form": "the",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "ARTICLE / DETERMINER"
+        },
+        "role": {
+          "en": "Determines salmon"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 6,
+      "form": "salmon",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Thing being located"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "find",
+      "dependent": "where",
+      "relation": "advmod"
+    },
+    {
+      "head": "find",
+      "dependent": "can",
+      "relation": "aux"
+    },
+    {
+      "head": "find",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "find",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHERE question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "where",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. WHERE is modeled as spatial modifier of FIND; no assessment claim."
+  }
+}

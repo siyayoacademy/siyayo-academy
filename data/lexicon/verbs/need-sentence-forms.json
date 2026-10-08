@@ -1,0 +1,131 @@
+{
+  "$schema": "../../schemas/verb-sentence-forms.schema.json",
+  "items": [
+    {
+      "verb": "need",
+      "tense": "present",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I need more time every day.",
+            "es": "Yo necesito más tiempo todos los días.",
+            "pt": "Eu preciso de mais tempo todos os dias."
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesito",
+            "pt": "preciso"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I do not need more time every day.",
+            "es": "Yo no necesito más tiempo todos los días.",
+            "pt": "Eu não preciso de mais tempo todos os dias."
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesito",
+            "pt": "preciso"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Do I need more time every day?",
+            "es": "¿Necesito yo más tiempo todos los días?",
+            "pt": "Eu preciso de mais tempo todos os dias?"
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesito",
+            "pt": "preciso"
+          }
+        }
+      }
+    },
+    {
+      "verb": "need",
+      "tense": "past",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I needed more time yesterday.",
+            "es": "Yo necesité más tiempo ayer.",
+            "pt": "Eu precisei de mais tempo ontem."
+          },
+          "targetWords": {
+            "en": "needed",
+            "es": "necesité",
+            "pt": "precisei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I did not need more time yesterday.",
+            "es": "Yo no necesité más tiempo ayer.",
+            "pt": "Eu não precisei de mais tempo ontem."
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesité",
+            "pt": "precisei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Did I need more time yesterday?",
+            "es": "¿Necesité yo más tiempo ayer?",
+            "pt": "Eu precisei de mais tempo ontem?"
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesité",
+            "pt": "precisei"
+          }
+        }
+      }
+    },
+    {
+      "verb": "need",
+      "tense": "future",
+      "forms": {
+        "affirmative": {
+          "sentences": {
+            "en": "I will need more time tomorrow.",
+            "es": "Yo necesitaré más tiempo mañana.",
+            "pt": "Eu precisarei de mais tempo amanhã."
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesitaré",
+            "pt": "precisarei"
+          }
+        },
+        "negative": {
+          "sentences": {
+            "en": "I will not need more time tomorrow.",
+            "es": "Yo no necesitaré más tiempo mañana.",
+            "pt": "Eu não precisarei de mais tempo amanhã."
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesitaré",
+            "pt": "precisarei"
+          }
+        },
+        "interrogative": {
+          "sentences": {
+            "en": "Will I need more time tomorrow?",
+            "es": "¿Necesitaré yo más tiempo mañana?",
+            "pt": "Eu precisarei de mais tempo amanhã?"
+          },
+          "targetWords": {
+            "en": "need",
+            "es": "necesitaré",
+            "pt": "precisarei"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-cual-es",
+  "language": "es",
+  "sentence": "¿Cuál queso deberíamos elegir?",
+  "tokens": [
+    {
+      "id": "which",
+      "index": 1,
+      "form": "Cuál",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante interrogativo de queso"
+        }
+      }
+    },
+    {
+      "id": "cheese",
+      "index": 2,
+      "form": "queso",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Queso que se elige"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 3,
+      "form": "deberíamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "choose",
+      "index": 4,
+      "form": "elegir",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cheese",
+      "dependent": "which",
+      "relation": "det"
+    },
+    {
+      "head": "choose",
+      "dependent": "cheese",
+      "relation": "obj"
+    },
+    {
+      "head": "choose",
+      "dependent": "should",
+      "relation": "aux"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHICH question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "which",
+    "field": "thinkingMind.question",
+    "notes": "Explicit language-specific corpus reference; no inserted omitted subject."
+  }
+}

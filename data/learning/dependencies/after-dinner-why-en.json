@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-why-en",
+  "language": "en",
+  "sentence": "Why do you enjoy this conversation?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Why",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Reason information being asked about"
+        }
+      }
+    },
+    {
+      "id": "do",
+      "index": 2,
+      "form": "do",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Question auxiliary"
+        }
+      }
+    },
+    {
+      "id": "you",
+      "index": 3,
+      "form": "you",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject"
+        }
+      }
+    },
+    {
+      "id": "enjoy",
+      "index": 4,
+      "form": "enjoy",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Main action WHY connects to"
+        }
+      }
+    },
+    {
+      "id": "this",
+      "index": 5,
+      "form": "this",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Determines conversation"
+        }
+      }
+    },
+    {
+      "id": "conversation",
+      "index": 6,
+      "form": "conversation",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Thing being enjoyed"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "enjoy",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "enjoy",
+      "dependent": "do",
+      "relation": "aux"
+    },
+    {
+      "head": "enjoy",
+      "dependent": "you",
+      "relation": "nsubj"
+    },
+    {
+      "head": "enjoy",
+      "dependent": "conversation",
+      "relation": "obj"
+    },
+    {
+      "head": "conversation",
+      "dependent": "this",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical en WHY transfer question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "why",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference. WHY is modeled as a reason modifier of ENJOY; no assessment claim."
+  }
+}

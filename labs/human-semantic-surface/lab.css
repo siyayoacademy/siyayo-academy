@@ -1,0 +1,687 @@
+/* Human Semantic Surface Lab — scoped visual refinements only. */
+
+.human-semantic-surface-lab .chapter-title {
+  font-size:
+    clamp(0.98rem, 3.4vw, 1.45rem);
+
+  line-height: 1.12;
+
+  letter-spacing: 0.035em;
+}
+
+.human-semantic-surface-lab .section-title {
+  margin-bottom:
+    clamp(8px, 1.2vh, 12px);
+
+  font-size:
+    clamp(0.84rem, 2.8vw, 1.08rem);
+
+  line-height: 1.18;
+}
+
+
+/* ========================================
+   ADAPTIVE CHOICE — VISUAL SYSTEM
+   ======================================== */
+
+.human-semantic-surface-lab {
+  --human-lab-gold: #d4af37;
+  --human-lab-gold-soft: rgba(212, 175, 55, 0.34);
+  --human-lab-gold-faint: rgba(212, 175, 55, 0.11);
+  --human-lab-ink: rgba(255, 255, 255, 0.95);
+  --human-lab-muted: rgba(255, 255, 255, 0.70);
+  --human-lab-glass: rgba(7, 18, 41, 0.74);
+  --human-lab-glass-deep: rgba(5, 13, 31, 0.90);
+  --human-lab-line: rgba(255, 255, 255, 0.10);
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice-surface {
+  width: min(100%, 980px);
+  margin: clamp(1rem, 3vw, 2rem) auto 0;
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice-question {
+  margin-bottom: clamp(0.85rem, 2vw, 1.25rem);
+  text-align: center;
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice-question p {
+  margin: 0.2rem 0;
+  color: var(--human-lab-muted);
+  font-size: clamp(0.88rem, 1.8vw, 1.08rem);
+  line-height: 1.45;
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice-question p:first-child {
+  color: var(--human-lab-ink);
+  font-size: clamp(1rem, 2.1vw, 1.28rem);
+  font-weight: 700;
+}
+
+.human-lab-adaptive-choice-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.15rem);
+  align-items: stretch;
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 0;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--human-lab-gold-soft);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.018)),
+    var(--human-lab-glass);
+  color: var(--human-lab-ink);
+  text-align: left;
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(212,175,55,0.12), transparent 36%);
+  opacity: 0.75;
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0.68);
+  box-shadow:
+    0 20px 44px rgba(0, 0, 0, 0.28),
+    0 0 24px rgba(212, 175, 55, 0.09);
+}
+
+.human-semantic-surface-lab .human-lab-adaptive-choice:focus-visible {
+  outline: 2px solid var(--human-lab-gold);
+  outline-offset: 4px;
+  border-color: var(--human-lab-gold);
+}
+
+.human-semantic-surface-lab .human-lab-choice-line {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 2.35rem minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: start;
+  padding: 0.82rem 1rem;
+  border-top: 1px solid var(--human-lab-line);
+}
+
+.human-semantic-surface-lab .human-lab-choice-line:first-child {
+  border-top: 0;
+}
+
+.human-semantic-surface-lab .human-lab-choice-line-en {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.human-semantic-surface-lab .human-lab-choice-lang-code {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2rem;
+  min-height: 1.55rem;
+  padding: 0 0.4rem;
+  border: 1px solid rgba(212,175,55,0.42);
+  border-radius: 999px;
+  color: var(--human-lab-gold);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.human-semantic-surface-lab .human-lab-choice-copy {
+  color: var(--human-lab-muted);
+  font-size: clamp(0.82rem, 1.55vw, 0.98rem);
+  line-height: 1.45;
+}
+
+.human-semantic-surface-lab .human-lab-choice-line-en .human-lab-choice-copy {
+  color: var(--human-lab-ink);
+  font-size: clamp(0.93rem, 1.8vw, 1.08rem);
+  font-weight: 700;
+}
+
+.human-semantic-surface-lab .choice-feedback {
+  margin-top: clamp(1rem, 2.5vw, 1.7rem);
+}
+
+.human-semantic-surface-lab .semantic-feedback-shell {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1rem, 2.6vw, 1.6rem);
+  border: 1px solid rgba(212,175,55,0.36);
+  border-radius: 24px;
+  background:
+    linear-gradient(160deg, rgba(255,255,255,0.055), rgba(255,255,255,0.012)),
+    var(--human-lab-glass-deep);
+  box-shadow:
+    0 22px 54px rgba(0,0,0,0.30),
+    0 0 34px rgba(212,175,55,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  animation: semanticReveal 360ms ease both;
+}
+
+.human-semantic-surface-lab .semantic-feedback-shell::before {
+  content: "";
+  position: absolute;
+  inset: -40% 42% 28% -24%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgba(212,175,55,0.10), transparent 68%);
+  filter: blur(22px);
+}
+
+.human-semantic-surface-lab .semantic-feedback-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+  color: var(--human-lab-gold);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(0.72rem, 1.3vw, 0.84rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  animation: semanticReveal 340ms 80ms ease both;
+}
+
+.semantic-feedback-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.8rem, 2vw, 1.25rem);
+}
+
+.human-semantic-surface-lab .choice-feedback-card {
+  position: relative;
+  min-width: 0;
+  min-height: 210px;
+  padding: clamp(1rem, 2.3vw, 1.35rem);
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.025);
+}
+
+.human-semantic-surface-lab .choice-feedback-card--canonical {
+  border-radius: 12px;
+  border-color: rgba(212,175,55,0.38);
+  box-shadow:
+    inset 0 0 0 1px rgba(212,175,55,0.035),
+    0 10px 26px rgba(0,0,0,0.14);
+  animation: semanticReveal 360ms 160ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-card--canonical.is-valid {
+  box-shadow:
+    inset 0 0 0 1px rgba(212,175,55,0.06),
+    0 10px 26px rgba(0,0,0,0.14),
+    0 0 22px rgba(212,175,55,0.06);
+}
+
+.human-semantic-surface-lab .choice-feedback-card--contextual {
+  overflow: hidden;
+  border-radius: 26px;
+  animation: semanticReveal 360ms 420ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-card--contextual::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  aspect-ratio: 1;
+  left: 50%;
+  bottom: -52%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgba(212,175,55,0.11), rgba(212,175,55,0.03) 38%, transparent 70%);
+  filter: blur(8px);
+}
+
+.human-semantic-surface-lab .choice-feedback-kicker {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-bottom: 0.72rem;
+  color: var(--human-lab-gold);
+  text-transform: uppercase;
+  font-size: clamp(0.68rem, 1.2vw, 0.8rem);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.human-semantic-surface-lab .choice-feedback-status {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 0.55rem;
+  align-items: baseline;
+  color: var(--human-lab-ink);
+  font-size: clamp(1rem, 2vw, 1.22rem);
+  line-height: 1.3;
+  animation: semanticReveal 320ms 240ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-card--contextual .choice-feedback-status {
+  animation-delay: 520ms;
+}
+
+.human-semantic-surface-lab .choice-feedback-status-mark {
+  flex: 0 0 auto;
+  color: var(--human-lab-gold);
+  font-weight: 900;
+}
+
+.human-semantic-surface-lab .choice-feedback-copy {
+  position: relative;
+  z-index: 1;
+  margin: 1rem 0 0;
+  color: var(--human-lab-muted);
+  font-size: clamp(0.9rem, 1.7vw, 1.06rem);
+  line-height: 1.55;
+  animation: semanticReveal 340ms 320ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-score-ring {
+  --score-angle: 0deg;
+  position: relative;
+  z-index: 1;
+  width: clamp(78px, 10vw, 104px);
+  aspect-ratio: 1;
+  margin: clamp(1.1rem, 3vw, 1.6rem) auto 0;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      var(--human-lab-gold) var(--score-angle),
+      rgba(255,255,255,0.09) 0
+    );
+  display: grid;
+  place-items: center;
+  filter:
+    drop-shadow(0 0 12px rgba(212,175,55,0.14));
+  animation:
+    semanticReveal 360ms 640ms ease both,
+    scoreGlow 900ms 720ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-score-ring::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,255,255,0.05), transparent 32%),
+    rgba(6,15,34,0.96);
+  box-shadow: inset 0 0 16px rgba(0,0,0,0.28);
+}
+
+.human-semantic-surface-lab .choice-feedback-score-value {
+  position: relative;
+  z-index: 1;
+  color: var(--human-lab-ink);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 850;
+  letter-spacing: 0.025em;
+}
+
+@keyframes semanticReveal {
+  from {
+    opacity: 0;
+    transform: translateY(7px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes scoreGlow {
+  from {
+    filter:
+      drop-shadow(0 0 0 rgba(212,175,55,0));
+  }
+
+  to {
+    filter:
+      drop-shadow(0 0 14px rgba(212,175,55,0.18));
+  }
+}
+
+@media (max-width: 720px) {
+  .human-lab-adaptive-choice-options,
+  .semantic-feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .human-semantic-surface-lab .human-lab-adaptive-choice-surface {
+    width: min(100%, 620px);
+  }
+
+  .human-semantic-surface-lab .choice-feedback-card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .human-semantic-surface-lab .semantic-feedback-shell,
+  .human-semantic-surface-lab .semantic-feedback-heading,
+  .human-semantic-surface-lab .choice-feedback-card--canonical,
+  .human-semantic-surface-lab .choice-feedback-card--contextual,
+  .human-semantic-surface-lab .choice-feedback-status,
+  .human-semantic-surface-lab .choice-feedback-copy,
+  .human-semantic-surface-lab .choice-feedback-score-ring {
+    animation: none !important;
+  }
+
+  .human-semantic-surface-lab .human-lab-adaptive-choice {
+    transition: none;
+  }
+}
+
+
+/* ========================================
+   PENTE FINO CSS 2 — PORTRAIT SAFE SPACE
+   ======================================== */
+
+@media (max-width: 720px) and (orientation: portrait) {
+  .human-semantic-surface-lab .slide-content {
+    justify-content: flex-start;
+    padding-top: 0.35rem;
+    padding-bottom: clamp(7.5rem, 18dvh, 10rem);
+    scroll-padding-top: 0.5rem;
+    scroll-padding-bottom: clamp(7.5rem, 18dvh, 10rem);
+    overscroll-behavior: contain;
+  }
+
+  .human-semantic-surface-lab .human-lab-adaptive-choice-surface {
+    margin-top: 0.75rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-adaptive-choice-question {
+    margin-bottom: 0.65rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-choice-line {
+    grid-template-columns: 2.15rem minmax(0, 1fr);
+    gap: 0.55rem;
+    padding: 0.68rem 0.78rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-choice-line-en {
+    padding-top: 0.78rem;
+    padding-bottom: 0.78rem;
+  }
+
+  .human-semantic-surface-lab .human-lab-choice-lang-code {
+    min-width: 1.9rem;
+    min-height: 1.4rem;
+    font-size: 0.62rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback {
+    margin-top: 0.8rem;
+  }
+
+  .human-semantic-surface-lab .semantic-feedback-shell {
+    padding: 0.85rem;
+    border-radius: 20px;
+  }
+
+  .human-semantic-surface-lab .semantic-feedback-heading {
+    margin-bottom: 0.75rem;
+  }
+
+  .human-semantic-surface-lab .semantic-feedback-grid {
+    gap: 0.72rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-card {
+    padding: 0.9rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-kicker {
+    margin-bottom: 0.55rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-copy {
+    margin-top: 0.72rem;
+    line-height: 1.45;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-score-ring {
+    width: clamp(68px, 22vw, 86px);
+    margin-top: 0.9rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-score-ring::before {
+    inset: 6px;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-score-value {
+    font-size: clamp(0.95rem, 4.8vw, 1.08rem);
+  }
+}
+
+
+/* ========================================
+   PENTE FINO CSS 4 — LEARNER-FRIENDLY CONTEXT
+   ======================================== */
+
+.human-semantic-surface-lab .semantic-feedback-heading {
+  display: grid;
+  justify-items: center;
+  gap: 0.18rem;
+}
+
+.human-semantic-surface-lab .semantic-feedback-heading-main {
+  color: var(--human-lab-gold);
+  font-size: clamp(0.76rem, 1.35vw, 0.9rem);
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.human-semantic-surface-lab .semantic-feedback-heading-local {
+  color: var(--human-lab-muted);
+  font-size: clamp(0.68rem, 1.15vw, 0.78rem);
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+.human-semantic-surface-lab .choice-feedback-kicker-local {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: -0.42rem;
+  margin-bottom: 0.85rem;
+  color: rgba(255,255,255,0.58);
+  font-size: clamp(0.68rem, 1.15vw, 0.78rem);
+  line-height: 1.35;
+}
+
+.human-semantic-surface-lab .choice-feedback-target {
+  position: relative;
+  z-index: 1;
+  margin: 0.15rem 0 1rem;
+  color: var(--human-lab-ink);
+  font-size: clamp(1.16rem, 2.35vw, 1.52rem);
+  font-weight: 800;
+  line-height: 1.35;
+  text-wrap: balance;
+  animation: semanticReveal 340ms 260ms ease both;
+}
+
+.human-semantic-surface-lab .choice-feedback-status--secondary {
+  color: rgba(255,255,255,0.68);
+  font-size: clamp(0.82rem, 1.45vw, 0.96rem);
+  font-weight: 650;
+  animation-delay: 420ms;
+}
+
+.human-semantic-surface-lab .choice-feedback-card--contextual {
+  min-height: 0;
+}
+
+.human-semantic-surface-lab .context-criteria {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.48rem;
+  margin-top: 1rem;
+}
+
+.human-semantic-surface-lab .context-criterion {
+  display: flex;
+  align-items: center;
+  gap: 0.42rem;
+  min-width: 0;
+  padding: 0.5rem 0.62rem;
+  border: 1px solid rgba(212,175,55,0.20);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.028);
+  color: rgba(255,255,255,0.77);
+  font-size: clamp(0.72rem, 1.25vw, 0.84rem);
+  line-height: 1.25;
+}
+
+.human-semantic-surface-lab .context-criterion-mark {
+  flex: 0 0 auto;
+  color: var(--human-lab-gold);
+  font-size: 0.62em;
+}
+
+.human-semantic-surface-lab .context-options {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.58rem;
+  margin-top: 1rem;
+}
+
+.human-semantic-surface-lab .context-option {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto auto;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.72rem 0.78rem;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.025);
+}
+
+.human-semantic-surface-lab .context-option.is-best {
+  border-color: rgba(212,175,55,0.36);
+}
+
+.human-semantic-surface-lab .context-option.is-selected {
+  box-shadow:
+    inset 0 0 0 1px rgba(212,175,55,0.12),
+    0 0 18px rgba(212,175,55,0.05);
+}
+
+.human-semantic-surface-lab .context-option-main {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.human-semantic-surface-lab .context-option-name {
+  color: var(--human-lab-ink);
+  font-size: clamp(0.84rem, 1.5vw, 0.98rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.human-semantic-surface-lab .context-option-selected {
+  color: var(--human-lab-gold);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.human-semantic-surface-lab .context-option-markers {
+  display: inline-flex;
+  gap: 0.22rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.human-semantic-surface-lab .context-option-marker {
+  display: inline-grid;
+  place-items: center;
+  width: 1.15rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.16);
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.human-semantic-surface-lab .context-option-marker.is-match {
+  color: var(--human-lab-gold);
+  border-color: rgba(212,175,55,0.45);
+  background: rgba(212,175,55,0.08);
+}
+
+.human-semantic-surface-lab .context-option-marker.is-miss {
+  color: rgba(255,255,255,0.34);
+}
+
+.human-semantic-surface-lab .context-option-score {
+  min-width: 2.8rem;
+  color: var(--human-lab-ink);
+  font-size: clamp(0.78rem, 1.25vw, 0.9rem);
+  font-weight: 800;
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .human-semantic-surface-lab .choice-feedback-target {
+    font-size: clamp(1.15rem, 5.1vw, 1.36rem);
+    margin-bottom: 0.78rem;
+  }
+
+  .human-semantic-surface-lab .choice-feedback-status--secondary {
+    font-size: clamp(0.78rem, 3.6vw, 0.9rem);
+  }
+
+  .human-semantic-surface-lab .context-criteria {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .human-semantic-surface-lab .context-option {
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 0.5rem 0.65rem;
+  }
+
+  .human-semantic-surface-lab .context-option-markers {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}

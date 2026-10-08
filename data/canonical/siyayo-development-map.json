@@ -1,0 +1,318 @@
+{
+  "id": "siyayo-canonical-development-map",
+  "version": "1.1",
+  "status": "canonical-development-map",
+  "baselines": {
+    "academy": {
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "commit": "c46310b1a9ebf41f542a58ba665ce8523580c100"
+    },
+    "pianoMotion": {
+      "branch": "jaguar/piano-stage-v0.1",
+      "commit": "cda3edcce567a2bcbb2d52b27c26a055cabac239"
+    }
+  },
+  "protocol": [
+    "what-exists",
+    "what-is-missing",
+    "what-connects",
+    "where-next"
+  ],
+  "animatedJourney": {
+    "role": "optional-interactive-academy-entrance",
+    "inputMotor": "swipe",
+    "phaseGrammar": [
+      "touch-or-swipe",
+      "event",
+      "motion",
+      "reveal",
+      "resonance",
+      "wait-or-next"
+    ],
+    "continuityObject": "golden-seed",
+    "scenes": [
+      {
+        "id": "iris-celestial-opening",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "golden-eagle",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "golden-branch",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "golden-seed-release",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "frondosa-entry",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "leaf-branch-resonance",
+        "status": "actors-reserved-in-motion-dna"
+      },
+      {
+        "id": "dimensional-portals",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "trunk-descent",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "open-clearing",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "jaguar-footprint",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "patita-seed-recognition",
+        "status": "actor-reserved-in-motion-dna"
+      },
+      {
+        "id": "brilliant-dna-recognition",
+        "status": "canonical-requirement"
+      },
+      {
+        "id": "nice-party-encounter",
+        "status": "canonical-requirement"
+      }
+    ],
+    "rules": {
+      "learnerControlledAdvance": true,
+      "autoplayRequired": false,
+      "meaningfulWaits": true,
+      "animationIsEvidence": false,
+      "canonicalNavigationAuthority": true,
+      "directAcademyAccessRemainsAvailable": true,
+      "reducedMotionEquivalentRequired": true,
+      "responsiveSurfaceContract": "L0 environment; L1 persistent navigation when appropriate; L2 semantic scene; L3 contextual interaction"
+    },
+    "currentImplementationEvidence": {
+      "motionDna": "data/motion/siyayo-motion-dna.json",
+      "pianoStage": [
+        "piano/index.html",
+        "piano/piano.js",
+        "piano/piano.css"
+      ],
+      "frondosaAsset": "piano/assets/frondosa-sombreira.svg",
+      "note": "Motion DNA reserves golden-seed, golden-eagle, frondosa, leaf, branch, jaguar and patita. The current Piano runtime does not yet implement the full swipe journey."
+    },
+    "checkupCheckpoint": {
+      "id": "JOURNEY-V52-CHECKUP-20261005",
+      "recordedAt": "2026-10-05",
+      "timezone": "America/Sao_Paulo",
+      "status": "audit-and-v52-repairs-completed-terrain-visual-pending",
+      "branch": "journey-v51-network-preview",
+      "preservedV51Commit": "32d43cc98e9fc950e2ac339fc0b94abfa5fdf0dd",
+      "controlsCommit": "25f221ec2bf2e271c5d42deafc9b2c10635911d6",
+      "repairCommit": "f5b7b3057191509782755f3b94ac03cab018f3e4",
+      "previewUrl": "https://journey-v51-network-preview.siyayo-academy.pages.dev/journey-v52/",
+      "completed": [
+        "online-v51-recovery-and-preservation",
+        "image-actor-function-audit",
+        "v52-keyboard-control-guard",
+        "stage-4-panorama-camera-scope",
+        "defer-v36-v37-camera-initializers-until-dom-ready",
+        "relative-w1-branch-calibration-with-exact-reset"
+      ],
+      "verification": {
+        "deployment": "Cloudflare Pages success at repairCommit",
+        "browser": "Chrome desktop 1363x936; W0-W3 exercised; no reproduced MutationObserver startup exception after fix; branch X/Y/scale/rotation changed transform; RESET restored original measured rectangle",
+        "user": "User confirmed index and V52 functioning before camera/CAL repairs; later acknowledged repaired preview",
+        "embeddedImages": "Preprocessing comparison preserves embedded image strings",
+        "mobile": "not-homologated"
+      },
+      "terrain": {
+        "status": "audited-visual-connection-pending",
+        "reason": "Toggle and diagnostic calculations exist; five v40-terrain transform variables lack CSS consumers; no autonomous terrain asset found in V51",
+        "implementationCompleted": false
+      },
+      "open": [
+        "terrain-visual-layer-and-transform-connection",
+        "portrait-landscape-auto-viewport-validation",
+        "w3-resize-anchor-continuity",
+        "clipboard-copy-environment-validation",
+        "swipe-wheel-and-mobile-performance",
+        "remaining-camera-preset-combinations"
+      ],
+      "nextGo": "Define the actual terrain layer and its camera response before wiring transforms; preserve V51 baseline and approved actor geometry; then validate orientation and anchors. No further implementation requested in this checkpoint.",
+      "authority": "Visual audit/calibration only; animation is not pedagogical evidence; no assessment or navigation authority changed."
+    },
+    "visualArtStudies": {
+      "recordedAt": "2026-10-05",
+      "timezone": "America/Sao_Paulo",
+      "status": "concept-art-not-integrated",
+      "numberingRule": "Stable artwork IDs are not W-state IDs or fixed narrative sequence numbers. Earlier, intermediate and later views may be inserted without renumbering existing artwork.",
+      "studies": [
+        {
+          "id": "JGS-ART-001",
+          "title": "Frondosa — aerial oblique descent environment",
+          "status": "generated-concept",
+          "source": "Conversation-generated image, 2026-10-05; exec-38c9a3d5-a877-43ed-ae57-55ef0cd41846.png",
+          "camera": "High aerial oblique; tree height and trunk visible",
+          "composition": "Central monumental tree, surrounding forest and river, castle in upper-right corner",
+          "sequenceRole": "Candidate establishing descent view; narrative slot not fixed",
+          "actorsEmbedded": false,
+          "deliveryAsset": "journey-v52/assets/jgs-art-001.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
+        },
+        {
+          "id": "JGS-ART-002",
+          "title": "Sombreira — vertical nadir canopy",
+          "status": "generated-concept",
+          "camera": "Exact nadir, optical axis perpendicular to ground (90 degrees)",
+          "composition": "Central umbrella crown; radial branches and gaps; forest, river and castle seen from overhead",
+          "sequenceRole": "Candidate downward canopy approach; narrative slot not fixed",
+          "actorsEmbedded": false,
+          "source": "Conversation-generated image, 2026-10-05; exec-5bc18360-7ae2-4875-b906-22125155432c.png",
+          "verification": "Near-nadir overhead study generated; exact optical 90-degree projection not geometrically calibrated. Not yet approved or integrated.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-002.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
+        },
+        {
+          "id": "JGS-ART-003",
+          "title": "Canopy approach",
+          "status": "generated-concept-not-integrated",
+          "source": "Conversation-generated image, 2026-10-05; exec-9b01afa8-c95e-4ba1-9d3f-a0e4d41fdce4.png",
+          "camera": "Closer overhead crown; central gap and larger foreground leaves",
+          "sequenceRole": "Approach canopy",
+          "actorsEmbedded": false,
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-003.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
+        },
+        {
+          "id": "JGS-ART-004",
+          "title": "Passage between branches",
+          "status": "generated-concept-not-integrated",
+          "source": "Conversation-generated image, 2026-10-05; exec-1606e50e-7d32-4700-8dcf-2ec9c68d2e2d.png",
+          "camera": "Descending steep view alongside trunk; branch tiers and roots below",
+          "sequenceRole": "Pass canopy toward trunk",
+          "actorsEmbedded": false,
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-004.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
+        },
+        {
+          "id": "JGS-ART-005",
+          "title": "Roots and Jaguar trail approach",
+          "status": "generated-concept-not-integrated",
+          "source": "Conversation-generated image, 2026-10-05; exec-69791587-599d-4ff0-acb7-d5170f58efe4.png",
+          "camera": "Low oblique roots/trail view; river at right, warm distant clearing",
+          "sequenceRole": "Ground arrival and trail toward Patita/Nice Party",
+          "actorsEmbedded": false,
+          "verification": "Concept framing inspected; shared style reference, not a geometrically continuous 3D scene. Transition and actor-layer continuity require validation before animation.",
+          "deliveryAsset": "journey-v52/assets/jgs-art-005.webp",
+          "previewStatus": "incorporated-as-replaceable-study"
+        }
+      ],
+      "motionIntent": {
+        "continuityObject": "golden-seed",
+        "seedMotion": "Wind-driven lateral drift combined with apparent descent toward canopy, branches, trunk, ground, Jaguar trail and Patita",
+        "environmentMotion": "Camera tilt, rotation, focus and approach with independently composited foreground layers",
+        "advance": "User swipe moves to next composed viewpoint",
+        "wait": "Hold viewpoint for observation and contextual portal opportunities",
+        "destination": "Patita encounter and Nice Party / Piano Stage",
+        "limitation": "Single raster supports initial camera approximation only; passing between branches requires layered assets or spatial scene geometry",
+        "authority": "Concept proposal only; no portal navigation or pedagogical evidence authority implemented"
+      },
+      "previewImplementation": {
+        "status": "published-study",
+        "branch": "journey-v51-network-preview",
+        "commit": "c238c41c5c6472bc71787aee511e8479c4dd1b08",
+        "entry": "journey-v52/descent.html",
+        "previewUrl": "https://journey-v51-network-preview.siyayo-academy.pages.dev/journey-v52/descent",
+        "route": "journey-v52/descent-route.json",
+        "responsive": "Unchanged shared Piano responsive files; desktop portrait 430px, landscape 844x390 verified",
+        "rendering": "Crossfading/zooming raster plates plus separate original seed; manual advance and WAIT; native image drag disabled for pointer swipe",
+        "validation": "Desktop five views, WAIT, previous/next, keyboard, orientation modes observed; corrected swipe live verification pending; physical mobile not homologated",
+        "open": [
+          "foreground-leaf-branch-occlusion",
+          "calibrated-camera-pitch",
+          "Patita-and-Nice-Party-scene",
+          "physical-mobile-validation"
+        ]
+      }
+    }
+  },
+  "nextPass": "corpus-experience-capability-mapping",
+  "goldConnection": {
+    "title": "SIYAYO ACADEMY · GOLD CONNECTION",
+    "surface": "Tri-Language Verb Explorer",
+    "status": "canonical-adaptive-expansion-dna",
+    "principle": "Corpus abundance does not imply assessment abundance. SIYAYO may expose a growing encyclopedia of verbs, adjectives, nouns, Question Words, perspectives and Experiences while adaptive authority remains explicit and evidence-grounded.",
+    "expansionFlow": [
+      "canonical-corpus",
+      "capability-available",
+      "thinking-mind-opportunity",
+      "contract-authority-check",
+      "experience-assessment-target",
+      "learner-action",
+      "attempt",
+      "evidence",
+      "pass-contract",
+      "green-or-wait",
+      "toro-expansion"
+    ],
+    "gates": {
+      "capability": "The learner may encounter or explore a meaningful opportunity.",
+      "contractAuthority": "The skill is mature and explicitly authorized to make contractual pedagogical claims.",
+      "assessmentTarget": "This Experience explicitly chooses that authorized skill as an assessment target.",
+      "evidence": "Only observed learner action with valid provenance can satisfy the contract."
+    },
+    "nonEquivalences": [
+      "content-present != assessment-active",
+      "capability-present != contract-authorized",
+      "contract-authorized != assessment-targeted",
+      "visual-exploration != learner-evidence",
+      "navigation != session-transition",
+      "animation != evidence",
+      "green-pass != automatic-next"
+    ],
+    "toro": {
+      "meaning": "Controlled expansion of meaningful opportunities around a stable learner identity and evidence core.",
+      "center": [
+        "learner-identity",
+        "profile",
+        "assessment-scope",
+        "evidence-history"
+      ],
+      "rings": [
+        "experiences",
+        "question-words",
+        "verbs",
+        "nouns",
+        "adjectives",
+        "other-word-types",
+        "perspectives",
+        "contexts"
+      ],
+      "openings": "capabilities exposed by Thinking Mind and canonical corpus",
+      "gates": "contract authority plus explicit Experience assessment target",
+      "seeds": "observed learner evidence",
+      "green": "confirmed Pass Contract",
+      "expansion": "new Experiences, contrasts, lexical families and Question Words become available as grounded opportunities without forcing a single linear path"
+    },
+    "encyclopediaVision": {
+      "description": "The canonical corpus can grow toward encyclopedia-scale interactivity. Large verb, adjective, noun and Question Word inventories remain reusable structured knowledge until a grounded Experience, diagnostic, comparison, speech activity or assessment contract needs them.",
+      "adaptiveRule": "Expansion is profile-sensitive: different learners may see, practice, assess and confirm different capability sequences based on evidence, WAIT/Resume state and explicit pedagogical authority.",
+      "branchRule": "New branches and pages must connect to this authority chain instead of creating independent mastery, score, progression or routing systems."
+    },
+    "archetypeRoles": {
+      "thinkingMind": "surfaces meaningful information needs and possible Question Words",
+      "jaguar": "executes the next precise validated implementation/learning step",
+      "eagle": "audits coherence across visible state, assessment scope and authority",
+      "patita": "preserves observed trace/history without inventing competence",
+      "goldenSeed": "represents atomic grounded knowledge/evidence",
+      "frondosa": "visualizes accumulated and expanding capability structure",
+      "toro": "organizes return, integration and outward expansion"
+    }
+  }
+}

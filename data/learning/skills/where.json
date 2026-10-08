@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "id": "where.use.location-question",
+  "language": "en",
+  "family": "question-word",
+  "form": "where",
+  "grammarRole": "interrogative-adverb",
+  "depth": "experience",
+  "status": "isolated-candidate",
+  "function": {
+    "communicativeIntention": "location",
+    "semanticFamily": "spatial-target",
+    "subtype": "location",
+    "meaning": "ask for and provide a contextually grounded location for an entity or placement"
+  },
+  "observes": ["spatial-function","location-answer"],
+  "passContract": {
+    "requires": [
+      {"dimension":"spatial-function","result":"pass"},
+      {"dimension":"location-answer","result":"pass","support":"none","mode":"local"},
+      {"dimension":"location-answer","result":"pass","support":"none","mode":"transfer"}
+    ],
+    "doesNotClaim": [
+      "long-term-retention","destination-use","preposition-mastery",
+      "movement-verb-mastery","pronunciation","cross-language-equivalence"
+    ]
+  },
+  "grounding": {
+    "localOrigin": "shopping-for-dinner",
+    "transferDestination": "preparing-dinner",
+    "answerMap": "data/learning/where-spatial-answer-grounding.json"
+  },
+  "realizations": {
+    "en": {"form":"where","family":"question-word","grammarRole":"interrogative-adverb","locationForm":"where"},
+    "es": {"form":"dónde","family":"palabra-interrogativa","grammarRole":"adverbio-interrogativo","locationForm":"dónde","destinationForms":["adónde","a dónde","para dónde"]},
+    "pt": {"form":"onde","family":"palavra-interrogativa","grammarRole":"advérbio-interrogativo","locationForm":"onde","destinationForms":["aonde","para onde"]}
+  }
+}

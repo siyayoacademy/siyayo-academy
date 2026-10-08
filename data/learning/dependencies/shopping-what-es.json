@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-what-es",
+  "language": "es",
+  "sentence": "¿Qué vamos a cocinar?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "Qué",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "es": "PRONOMBRE"
+        },
+        "role": {
+          "es": "Objeto o acción preguntada"
+        }
+      }
+    },
+    {
+      "id": "go",
+      "index": 2,
+      "form": "vamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 3,
+      "form": "a",
+      "wordClass": "PART",
+      "pedagogy": {
+        "wordType": {
+          "es": "PREPOSICIÓN"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 4,
+      "form": "cocinar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción en la pregunta"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cook",
+      "dependent": "what",
+      "relation": "obj"
+    },
+    {
+      "head": "cook",
+      "dependent": "go",
+      "relation": "aux"
+    },
+    {
+      "head": "cook",
+      "dependent": "to",
+      "relation": "mark"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHAT question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Explicit corpus reference example; omitted subjects remain omitted. No inferred tokens."
+  }
+}
