@@ -29,6 +29,8 @@ preservando a numeração e os nomes dos dourados definidos pelo usuário.
 - **Azul escuro e médio:** referências de fundo; o fundo externo do Explorer
   usa essas duas opções no gradiente. Fundos translúcidos internos continuam
   compondo a profundidade do palco.
+- **Fundo externo da Home:** azul escuro uniforme `#071F41`, via
+  `--siyayo-blue-dark`, no desktop e na regra móvel (JAGUAR-LIVE-51).
 - **Azul brilhante:** terceira opção disponível para superfícies e detalhes
   da identidade, seguindo o bloco saturado do anexo.
 

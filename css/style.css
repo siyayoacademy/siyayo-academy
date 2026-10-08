@@ -68,7 +68,7 @@ body {
   width: 100%;
   min-height: 100%;
 
-  background: #000;
+  background: var(--siyayo-blue-dark);
 }
 
 body {
@@ -86,13 +86,7 @@ body {
 
   color: var(--text-main);
 
-  background:
-    radial-gradient(
-      circle at top,
-      #0b2f62 0%,
-      #030a18 48%,
-      #000 100%
-    );
+  background: var(--siyayo-blue-dark);
 }
 
 
@@ -762,7 +756,7 @@ body {
   body {
     padding: 0;
 
-    background: #000;
+    background: var(--siyayo-blue-dark);
   }
 
   .academy-quick-links {

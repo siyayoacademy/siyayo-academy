@@ -32,7 +32,35 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-50
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-51
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `921ade16da82e37d06f2a34b25b35e606f282826`
+
+**Change kind:** PRESENTATION — apply the homologated dark spectral blue to the Home exterior background on desktop and mobile.
+
+**User GO:** after approving the new palette's appearance, the user identifies the Home exterior as unapproved black and requests the approved dark blue; asks to verify whether blue is already present.
+
+**Status:** HOME-EXTERIOR-BLUE-01 corrected in CSS. The former desktop gradient started blue but ended in `#000`; the page reset and narrow-screen override also used `#000`. All three background declarations now use `var(--siyayo-blue-dark)`, resolving to `#071F41`. Source/diff checks confirm that only these backgrounds change. Publication and deployment readback are recorded in [PR #3](https://github.com/siyayoacademy/siyayo-academy/pull/3); visual review of this new correction remains pending.
+
+## WORK RECORD
+
+1. Reviewed `image(20261008-171701).png`, showing the Home at the LIVE-50 preview. The user's approval covers the displayed palette appearance; the exterior background is the requested follow-up.
+2. Confirmed the three legacy CSS declarations against the remote LIVE-50 base and the shared dark-blue token. The existing gradient explains why blue was visible near the top while the lower exterior appeared black.
+3. Replaced the reset background, main body gradient and mobile body background with the same approved dark-blue token. Kept the stage artwork, shadows, layout, typography and runtime unchanged.
+4. Checked the exact diff and token import/value. This reversible CSS correction does not need a new runtime regression; LIVE-50's 81 language/QWord/progress cases, 18 related regressions and 267 locally executed workflow Node commands retain their original scope.
+5. No new served-browser visual validation is claimed: the prior preview-opening operation stalled. Verify deployment through the repository check and provide the new Home preview for the user's review.
+
+## NEXT GO
+
+Confirm the new Home exterior color on laptop/mobile, then continue targeted language/QW/word exploration and AUTO/PORTRAIT/LANDSCAPE comparison. DEPENDENCY-SCROLL-01 remains closed for the reported mobile retest. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 and the full human format matrix remain OPEN/partial. Completed circuits and the assisted WHERE 2/3 route retain their scopes. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-50
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

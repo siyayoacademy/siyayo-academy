@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-50  
+**Checkpoint atual:** JAGUAR-LIVE-51  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `30d8446d3916f8a4ac44d540cae291f1a39af9c4`  
-**Estado atual:** usuário relata conferência correta nos três idiomas; quatro novas capturas revisadas. TRAIL-DISPLAY-LANGUAGE-01 reproduzido/corrigido; paleta dourada/azul espectral homologada e centralizada. DEPENDENCY-SCROLL-01 segue confirmado no reteste móvel. A matriz humana completa de formatos permanece parcial.
+**Base desta revisão:** `921ade16da82e37d06f2a34b25b35e606f282826`  
+**Estado atual:** usuário aprovou a aparência da paleta no preview LIVE-50 e pediu corrigir o fundo externo da Home. HOME-EXTERIOR-BLUE-01 aplica o azul escuro homologado em desktop/mobile; revisão visual desta correção aguarda o novo preview. TRAIL-DISPLAY-LANGUAGE-01 permanece corrigido e DEPENDENCY-SCROLL-01 confirmado no reteste móvel. A matriz humana completa de formatos permanece parcial.
 
 ## Objetivo e autorização
 
@@ -361,4 +361,17 @@ Os blocos uniformes do anexo são a fonte dos seis valores. O Explorer importa a
 **18 regressões existentes PASS**, incluindo a regressão ampliada de 81 casos; seleção/isolamento de idioma; Thinking Mind trilíngue; DNA e foco por QW; superfície/interação/acessibilidade/experiência; diagnóstico por identidade/idioma; observação/Trail; WHERE vivo e contrato; conectores; layout retrato; Choice Evidence Packet Bridge com suas 43 verificações. Sintaxe dos dois JS alterados PASS. O workflow Bootstrap já executa a regressão ampliada.
 
 CI/publicação e observações posteriores no preview servido ficam registrados na PR #3. O relato do usuário nos três idiomas e as capturas são preservados separadamente dos ensaios automatizados. A homologação humana da nova aplicação de cores e dos três formatos continua parcial. Próximo elo: conferir o novo preview e seguir a matriz de alternância/formatos, mantendo as autoridades da avaliação.
+
+## Fundo externo da Home — JAGUAR-LIVE-51
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Base:** `921ade16da82e37d06f2a34b25b35e606f282826`.
+
+**Relato e autorização:** o usuário aprovou a aparência da nova paleta, enviou `image(20261008-171701).png` e pediu substituir o preto externo pelo azul escuro homologado. Na sequência, pediu conferir se já havia azul. A captura registra a Home do preview LIVE-50; não demonstra a correção abaixo.
+
+**HOME-EXTERIOR-BLUE-01 — correção:** o CSS da base tinha um gradiente externo iniciado em `#0B2F62` e terminado em `#000`, além de preto no reset e na regra móvel. Em `css/style.css`, as três declarações passam a `background: var(--siyayo-blue-dark)`. O resultado definido é um fundo externo uniforme `#071F41` nos dois tamanhos, herdado de `css/siyayo-palette.css`.
+
+**Verificação:** diff limitado às três declarações de fundo; importação/token homologado conferidos. Arte interna, sombras, fontes, layout, Explorer, JS e autoridades de avaliação intactos. A correção é apenas CSS; não se atribuem novos resultados aos testes de LIVE-50. Publicação/deploy e readback ficam na PR #3. Não houve nova validação visual servida por navegador, pois a abertura anterior do preview ficou bloqueada.
+
+**Próximo elo:** revisão do fundo externo no novo preview da Home em laptop/celular, mantendo a continuidade da matriz de idiomas/QWs/formatos. VISUAL-PATITA-01, VISUAL-CARDS-02 e ENTRY-WHERE-01 seguem OPEN; a homologação humana completa permanece parcial.
+
 
