@@ -32,7 +32,39 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-53
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-54
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `e024a85c0b7863cbd70c062c028e7e4e4f71b128`. Preserve the other thread's Gold Seed roadmap and all unrelated base-tree paths.
+
+**Change kind:** DEPENDENCY CARD DENSITY / DEFERRED SVG FIX / SCOPED HOMOLOGATION.
+
+**User GO:** inspect the T2 return, T3 word/head practice, T4 scrolling and T5/T6 format captures; reduce the sky-blue type labels subtly and compress Dependency Focus card spacing. Cover EN/ES/PT, QWords and AUTO/PORTRAIT/LANDSCAPE. T7 audio and T8 navigation remain explicitly pending.
+
+**Status:** the new T2 text shows WHERE restored at 2/3 with WHICH 1/3 and WHAT 2/3 retained. The user also reports a WHICH button highlight; no attachment shows the selector together with the restored WHERE state. Keep that physical highlight occurrence OPEN. T3/T4/T5/T6 have scoped human evidence; the complete matrix is partial. A zero-size SVG defect is reproduced and corrected; the disappearance reported on the phone is not attributed to it without evidence.
+
+## WORK RECORD
+
+1. Verified remote HEAD and local source/test/CSS blobs before edits. The two older local canonical roadmap files are not published; the remote base tree preserves the other thread's versions.
+2. Reviewed all eleven new images directly: five PNG desktop composites and six Android/browser captures. In the portrait capture with focus `the` and no visible arrow, the viewport shows `can`, `we` and `find`; `the` and its head `salmon` are outside the visible scroll range. Other captures show their `det` arrow when that part of the diagram is visible. No missing canonical token is established by these crops.
+3. T3's All/these/three → books relations and authored head-of-three diagnostic remain distinct from assessment. A correct free-practice response does not advance the determiner contract or Green Pass. T4 shows different scroll/focus positions, adding partial human coverage to the earlier mobile scroll confirmation.
+4. Applied only Dependency Focus density adjustments in `css/verb-explorer.css`: type labels .75rem → .6875rem; row gap 8px → 6px; internal gap 5px → 4px; desktop minimum width 86px → 80px and padding 8px/10px → 7px/8px; narrow minimum width 82px → 76px and padding 7px/8px → 6px/7px. Token words retain their font size and nowrap; metadata can wrap, cards do not shrink and long sentences retain internal scrolling. Palette and fonts remain homologated.
+5. Reproduced `DEPENDENCY-DEFERRED-SVG-01`: the connector renderer converted zero/invalid stage dimensions to a 1×1 SVG and returned success. The regression failed before correction. The renderer now leaves the valid overlay intact until dimensions are positive and finite. The focus surface reports valid canonical markup as ready even when SVG measurement is deferred, so interaction binds the current structure; existing resize/preview/font listeners perform the later redraw. Initial hidden → visible → first token interaction is covered.
+6. Expanded three existing Bootstrap-CI scripts, without a new workflow. The focus-surface test exercises the real shared preview controller, connector renderer, layout/font listeners and interaction across all 28 loaded EN/ES/PT diagrams: **399 token/format cases**, full token forms/order, canonical endpoints/labels, retained scroll/focus and hidden-frame recovery. The trilingual selector test executes the real Experience renderer, QWord handler, bubbling document handlers and Thinking Mind decision: **63 authored QWord/language selections × 3 formats = 189 cases**, plus LANGUAGE-only returns. Its assessment transport and DOM are controlled; the separate WHERE live test retains real assessment-chain coverage.
+7. **14 relevant regression scripts PASS locally**, including the expanded tests, accessibility/interaction, canonical QWord projection, portrait containment, the real T1/T2 live sequence, language ownership, the 81 Trail cases and 43 Choice Bridge checks. Five changed JS files pass syntax checks. Physical button delivery, CSS geometry in a native browser and complete device homologation are not claimed. Publication and exact deployment/check readback are recorded in PR #3.
+
+## NEXT GO
+
+Review the new commit preview's smaller metadata/card gaps in AUTO → PORTRAIT → LANDSCAPE → AUTO and rotate the physical phone, using EN/ES/PT and the QWords already under test. Scroll to the focused token and its related head before judging an arrow absent. If WHERE's Trail shows 2/3 while the highlighted Thinking Mind button says WHICH, capture those two regions together; `QWORD-RETURN-WHERE-01` remains open only for that unresolved visual occurrence, with assessment restoration now reported by the user.
+
+T7 audio / T8 navigation stay PENDING. Native browser/device review of the new CSS and the reported highlight is the remaining handoff; do not reopen previously completed full assessment circuits or infer mastery from visual exploration. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 and the full human matrix remain OPEN/partial. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-53
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

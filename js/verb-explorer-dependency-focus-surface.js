@@ -159,10 +159,12 @@
       }else if(focusedRegion&&typeof nextScroll.focus==='function')nextScroll.focus({preventScroll:true});
       nextScroll.scrollLeft=Math.max(0,Math.min(scrollLeft,nextScroll.scrollWidth-nextScroll.clientWidth));
     }
-    var result=connectorView.draw({surface:surface,resolved:resolved});
+    connectorView.draw({surface:surface,resolved:resolved});
     watchLayout(surface,doc);
     scheduleRefresh();
-    return result;
+    // Canonical tokens are ready even if a hidden frame defers SVG measurement.
+    // Keep interaction bound to this structure while layout listeners redraw.
+    return true;
   }
 
   root.SIYAYOVerbExplorerDependencyFocusSurface=Object.freeze({

@@ -379,16 +379,16 @@ button.dependency-probe-question-card:focus-visible{outline:2px solid var(--siya
 .dependency-diagram-scroll::-webkit-scrollbar-track{background:rgba(2,9,24,.72);border-radius:999px}
 .dependency-diagram-scroll::-webkit-scrollbar-thumb{background:#8f6a1e;border-radius:999px}
 .dependency-focus-surface .dependency-token-stage{width:max-content;min-width:100%;margin:0;padding-top:58px}
-.dependency-focus-surface .dependency-token-row{width:max-content;min-width:100%;flex-wrap:nowrap;align-items:stretch;gap:8px}
-.dependency-focus-surface .dependency-token{flex:0 0 auto;min-width:86px;max-width:none;grid-template-rows:auto 1fr auto;justify-items:center;align-content:start;gap:5px;padding:8px 10px}
+.dependency-focus-surface .dependency-token-row{width:max-content;min-width:100%;flex-wrap:nowrap;align-items:stretch;gap:6px}
+.dependency-focus-surface .dependency-token{flex:0 0 auto;min-width:80px;max-width:none;grid-template-rows:auto 1fr auto;justify-items:center;align-content:start;gap:4px;padding:7px 8px}
 .dependency-focus-surface .dependency-token b{font-family:var(--font-display);font-size:.9375rem;line-height:1.2;font-weight:700;white-space:nowrap}
-.dependency-focus-surface .dependency-token small{max-width:14ch;min-width:0;font-family:var(--font-body);font-size:.75rem;line-height:1.2;font-weight:600;letter-spacing:0;text-align:center;white-space:normal}
+.dependency-focus-surface .dependency-token small{max-width:14ch;min-width:0;font-family:var(--font-body);font-size:.6875rem;line-height:1.2;font-weight:600;letter-spacing:0;text-align:center;white-space:normal}
 .dependency-focus-surface .dependency-token em{font-family:var(--font-body);font-size:.75rem;line-height:1.2;white-space:nowrap}
 .dependency-focus-surface .dependency-connector-label{font-family:var(--font-body);font-size:11px;letter-spacing:0}
 .dependency-scroll-hint{display:block;margin:6px 0 0;color:#b9c6d8;font-family:var(--font-body);font-size:.75rem;line-height:1.35;text-align:center}
 .dependency-scroll-hint[hidden]{display:none}
 @container siyayo-explorer (max-width:480px){
-  .dependency-focus-surface .dependency-token{min-width:82px;padding:7px 8px}
+  .dependency-focus-surface .dependency-token{min-width:76px;padding:6px 7px}
   .dependency-focus-surface .dependency-token b{font-size:.875rem}
 }
 

@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-53  
+**Checkpoint atual:** JAGUAR-LIVE-54  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `c0015414b07b1d10036659ad2d79200dfc6ac53f`  
-**Estado atual:** T1/T2 relatados e investigados. Troca somente de LANGUAGE conserva progresso; seleção explícita usa circuitos próprios por idioma e recupera o original nos testes reais. Um retorno WHERE do T2 permanece OPEN na interface, sem reprodução na sequência controlada. T3–T8 declarados não executados. Cores e rolagem mantêm a homologação anterior; matriz completa de formatos parcial.
+**Base desta revisão:** `e024a85c0b7863cbd70c062c028e7e4e4f71b128`  
+**Estado atual:** T2 relata WHERE 2/3 restaurado; destaque do botão WHICH ainda OPEN, sem captura conjunta. T3/T4/T5/T6 têm evidência humana parcial. Cartões Dependency Focus compactados; SVG em dimensão zero corrigido e coberto por regressão. T7/T8 continuam não executados. Homologação física do novo CSS e matriz completa de formatos continuam parciais.
 
 ## Objetivo e autorização
 
@@ -437,6 +437,38 @@ Continuar na **mesma aba e nick** do T2, EN/Shopping, com WHAT 2/3, WHERE 2/3 e 
 Se persistir, enviar captura que reúna seletor e Trail/painel, com antes/depois. Preservar o ensaio sem recarregar: os circuitos retidos nesta implementação pertencem ao runtime da página atual. Essas perguntas delimitam o próximo dado necessário; não pressupõem a causa ou uma correção inexistente.
 
 **Estados atuais:** T1 parcial (LANGUAGE confirmado; recuperação explícita original verificada automaticamente, aguardando relato humano); T2 parcial / QWORD-RETURN-WHERE-01 OPEN; **T3, T4, T5, T6, T7, T8 PENDING — não executados**. A homologação anterior de rolagem e cores permanece com o escopo já registrado. Nenhum GREEN é inferido dos testes de exploração ou deste registro.
+
+## T2–T6 — capturas, densidade e redesenho — JAGUAR-LIVE-54
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Base:** `e024a85c0b7863cbd70c062c028e7e4e4f71b128`. A tabela do LIVE-52 e o estado do LIVE-53 acima são históricos; os relatos novos atualizam os testes abaixo.
+
+**Anexos revistos:** `image(20261008-194411).png`, `image(20261008-194437).png`, `image(20261008-195350).png`, `image(20261008-200255).png`, `image(20261008-200839).png`; `WhatsApp Image 2026-10-08 at 17.36.49.jpeg`, `17.27.24.jpeg`, `17.25.52.jpeg`, `17.24.31.jpeg`, `17.37.36.jpeg` e `17.37.01.jpeg`. São capturas do preview anterior `f9ff9ba1`; não homologam antecipadamente o CSS deste checkpoint.
+
+| Teste | Evidência nova e conclusão | Estado atual |
+|---|---|---|
+| T2 — QWords | Texto mostra WHICH 1/3 → WHERE 2/3, com WHAT 2/3 e WHICH salvos. O relato também menciona destaque WHICH. Os dois prints do seletor/Trail são de WHICH; falta captura conjunta do seletor no estado WHERE 2/3 | Recuperação da avaliação observada pelo usuário; destaque físico ainda OPEN em QWORD-RETURN-WHERE-01 |
+| T3 — Palavras | All / these / three mostram tipos e det/nummod para books. O diagnóstico continua perguntando pelo núcleo de three; resposta correta é prática livre separada da avaliação | Parcial humano; relações observadas coerentes |
+| T4 — Rolagem | Montagens mostram foco e faixas de rolagem em WHAT/WHERE/WHICH EN/ES. Palavras nas bordas estão parcialmente fora da área visível; isso não demonstra exclusão de tokens | Parcial; confirmação anterior de retenção no celular preservada |
+| T5 — Laptop / formatos | Usuário relata possível palavra ausente e setas intermitentes; solicita rótulos azuis menores e caixas menos espaçadas | Ajuste implementado; reteste visual do novo preview pendente |
+| T6 — Celular / orientação | Capturas Android em retrato/paisagem. Em retrato, foco the com can/we/find visíveis deixa the → salmon fora da faixa; em paisagem a relação det aparece na parte direita | Parcial humano; não comprova causa de falha no redesenho |
+| T7 — Áudio | Usuário declara pendente | PENDING / não executado |
+| T8 — Navegação | Usuário declara pendente | PENDING / não executado |
+
+### Alterações aplicadas e limite da conclusão
+
+- Tipo de palavra azul: **.75rem → .6875rem**, redução de aproximadamente 8%. Espaço entre caixas: **8px → 6px**. Gap interno: **5px → 4px**. Padding desktop: **8px/10px → 7px/8px**; estreito: **7px/8px → 6px/7px**. Largura mínima desktop/estreita: **86/82px → 80/76px**. A palavra principal mantém tamanho e forma inteira, os tipos podem quebrar linha e o diagrama longo continua rolável.
+- `DEPENDENCY-DEFERRED-SVG-01`: regressão reproduz o renderer convertendo dimensão zero/NaN em SVG de 1×1 e sobrescrevendo o desenho. Falhou antes; passa com a correção que aguarda dimensão positiva/finita sem apagar o overlay válido. A superfície mantém o vínculo da interação à estrutura atual enquanto o SVG aguarda layout. Layout/resize/fontes/preview redesenham depois. Isso é uma falha de código confirmada, **não a causa demonstrada do relato físico**.
+- O comportamento de seleção QWord não foi alterado: os handlers reais não reproduzem o destaque WHICH depois de selecionar WHERE nos testes controlados. Não fechar esse relato pelo resultado automático. O badge de prática marca o contrato; o destaque de exploração marca a QWord selecionada.
+
+### Validação deste checkpoint
+
+**14 scripts relevantes PASS localmente.** Três testes existentes ampliados continuam no workflow Bootstrap: conectores com dimensão inválida; superfície com o controlador compartilhado AUTO/PORTRAIT/LANDSCAPE, reflow/fontes e interação; e renderização/delegação real dos botões Thinking Mind. São **399 casos de token/formato nos 28 diagramas EN/ES/PT** e **189 casos de QWord/idioma/formato**, além de trocas apenas de idioma. Os tokens aparecem completos e na ordem canônica; as setas conservam origem/destino/rótulo e a mudança de formato conserva foco/rolagem e não seleciona outra avaliação. O primeiro render oculto seguido de exposição também conserva a estrutura correta para interação.
+
+As regressões de T1/T2 com cadeia real, isolamento de idioma, as 81 projeções Trail e os 43 checks do Choice Bridge continuam passando. Cinco arquivos JS alterados passam sintaxe. Geometria DOM e transporte do seletor são controlados; a checagem não substitui CSS/navegador/dispositivo físico. Não há nova observação independente do preview servido. Publicação/Cloudflare e eventual estado Actions são registrados na PR #3 sem antecipar sucesso.
+
+### Próximo reteste humano
+
+No novo preview, conferir rótulos/cartões em AUTO → PORTRAIT → LANDSCAPE → AUTO e girar o celular, cruzando EN/ES/PT e as QWords utilizadas. Em frases longas, deslizar até o token focado e seu núcleo antes de conferir a seta. Se Trail WHERE 2/3 coexistir com botão WHICH destacado, registrar os dois juntos. T7/T8 seguem pendentes; não reiniciar circuitos completos já homologados. Cores aprovadas, áudio e evidência assistida conservam seus escopos. Revisão visual global e matriz humana completa continuam OPEN/parciais.
 
 
 

@@ -87,6 +87,20 @@ assert.match(overlay.innerHTML, /marker-end="url\(#dependencyArrow\)"/);
 assert.match(overlay.innerHTML, />det<\/text>/);
 assert.match(overlay.innerHTML, />nummod<\/text>/);
 
+// A hidden/transitional layout must not replace valid arrows with a 1×1 SVG.
+const validMarkup = overlay.innerHTML;
+const validViewBox = overlay.attrs.viewBox;
+for (const dimensions of [[0, 0], [0, 120], [440, 0], [NaN, 120], [Infinity, 120]]) {
+  [stageRect.width, stageRect.height] = dimensions;
+  assert.equal(Connectors.draw({surface, resolved: booksFocus}), false,
+    'unmeasurable layout must wait for a visible frame');
+  assert.equal(overlay.innerHTML, validMarkup);
+  assert.equal(overlay.attrs.viewBox, validViewBox);
+}
+Object.assign(stageRect, {width: 440, height: 120});
+assert.equal(Connectors.draw({surface, resolved: booksFocus}), true);
+assert.equal(overlay.attrs.viewBox, validViewBox);
+
 for (const forbidden of ['score','mastery','greenPass','learnerEvent','progression','nextExperience']) {
   assert.equal(
     Object.prototype.hasOwnProperty.call(booksPlan, forbidden),

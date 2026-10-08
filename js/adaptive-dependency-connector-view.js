@@ -59,9 +59,13 @@
     if(!overlay||!stage||typeof stage.getBoundingClientRect!=='function')return false;
 
     var stageRect=stage.getBoundingClientRect();
-    var width=Math.max(1,Math.round(Number(stageRect.width)||0));
-    var height=Math.max(1,Math.round(Number(stageRect.height)||0));
-    if(!width||!height)return false;
+    var measuredWidth=Number(stageRect.width),measuredHeight=Number(stageRect.height);
+    // Keep the last valid projection while the diagram is hidden or reflowing.
+    // The surface's layout/font listeners redraw once it can be measured.
+    if(!Number.isFinite(measuredWidth)||!Number.isFinite(measuredHeight)||
+       measuredWidth<=0||measuredHeight<=0)return false;
+    var width=Math.max(1,Math.round(measuredWidth));
+    var height=Math.max(1,Math.round(measuredHeight));
 
     var tokens=surface.querySelectorAll('[data-token-id]');
     var byId=Object.create(null);

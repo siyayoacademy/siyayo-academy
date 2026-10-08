@@ -130,13 +130,27 @@ assert.equal(
 function retentionFixture() {
   const listeners = Object.create(null);
   const frames = [];
-  const state = { clientWidth: 280, renders: 0, focusEvents: 0 };
-  let nodes = [], region = null, markup = '';
+  const state = { clientWidth: 280, renders: 0, focusEvents: 0,
+    tokenStep: 140, tokenWidth: 132, visible: true };
+  let nodes = [], region = null, stage = null, markup = '', resizeCallback;
+  const observed = new Set();
+  const viewport = {dataset: {}};
+  const previewButtons = ['auto', 'portrait', 'landscape'].map(mode => ({
+    dataset: {preview: mode}, classList: {toggle() {}}, setAttribute() {},
+    addEventListener(type, handler) { this[type] = handler; }
+  }));
+  const toolbar = {querySelectorAll() { return previewButtons; }};
   const overlay = { innerHTML: '', setAttribute() {} };
   const hint = { hidden: true };
   const doc = {
     activeElement: null,
     getElementById(id) { return id === 'dependencyFocusSurface' ? visual : null; },
+    querySelector(selector) {
+      return selector === '[data-siyayo-responsive-viewport]' ? viewport :
+        selector === '[data-siyayo-responsive-toolbar]' ? toolbar : null;
+    },
+    fonts: {ready: {then(handler) { handler(); }},
+      addEventListener(type, handler) { (listeners['fonts:' + type] ||= []).push(handler); }},
     addEventListener(type, handler) {
       (listeners[type] || (listeners[type] = [])).push(handler);
     }
@@ -151,11 +165,6 @@ function retentionFixture() {
     if (!options?.preventScroll) region.scrollLeft = 0;
     dispatch('focusin', { target: element });
   }
-  const stage = {
-    getBoundingClientRect() {
-      return { left: -region.scrollLeft, top: 0, width: region.scrollWidth, height: 180 };
-    }
-  };
   const visual = {
     dataset: {}, hidden: true, isConnected: true,
     contains(element) { return element === region || nodes.includes(element); },
@@ -173,12 +182,17 @@ function retentionFixture() {
       if (visual.contains(doc.activeElement)) doc.activeElement = null;
       markup = value;
       state.renders += 1;
+      stage = {getBoundingClientRect() {
+        return {left: -region.scrollLeft, top: 0,
+          width: state.visible ? region.scrollWidth : 0, height: state.visible ? 180 : 0};
+      }};
       nodes = [...value.matchAll(/data-token-id="([^"]+)"/g)].map((match, index) => {
         const node = {
           dataset: { tokenId: match[1], dependencyToken: match[1] },
           closest(selector) { return selector === '[data-dependency-token]' ? this : null; },
           getBoundingClientRect() {
-            return { left: index * 140 - region.scrollLeft, top: 112, width: 132, height: 56 };
+            return { left: index * state.tokenStep - region.scrollLeft,
+              top: 112, width: state.tokenWidth, height: 56 };
           },
           focus(options) { focus(this, options); }
         };
@@ -186,13 +200,13 @@ function retentionFixture() {
       });
       let left = 0;
       region = {
-        clientWidth: state.clientWidth,
-        scrollWidth: Math.max(nodes.length * 140, state.clientWidth),
+        get clientWidth() { return state.clientWidth; },
+        get scrollWidth() { return Math.max(nodes.length * state.tokenStep, state.clientWidth); },
         focus(options) { focus(this, options); },
         closest() { return null; }
       };
       Object.defineProperty(region, 'scrollLeft', {
-        get() { return left; },
+        get() { return Math.min(left, region.scrollWidth - region.clientWidth); },
         set(value) { left = Math.max(0, Math.min(value, region.scrollWidth - region.clientWidth)); }
       });
     }
@@ -200,11 +214,23 @@ function retentionFixture() {
   const context = vm.createContext({
     document: doc,
     requestAnimationFrame(callback) { frames.push(callback); },
+    addEventListener(type, handler) { (listeners[type] ||= []).push(handler); },
+    dispatchEvent(event) { dispatch(event.type, event); },
+    CustomEvent: class { constructor(type, input) { this.type = type; this.detail = input.detail; } },
+    matchMedia() { return {matches: false}; },
+    localStorage: {getItem() { return null; }, setItem() {}},
+    ResizeObserver: class {
+      constructor(callback) { resizeCallback = callback; }
+      disconnect() { observed.clear(); }
+      observe(element) { observed.add(element); }
+    },
     AdaptiveDependencyFocusView: require('../js/adaptive-dependency-focus-view.js'),
     AdaptiveDependencyConnectorView: require('../js/adaptive-dependency-connector-view.js')
   });
   context.globalThis = context;
-  for (const path of ['js/verb-explorer-dependency-focus-surface.js', 'js/verb-explorer-dependency-focus-interaction.js']) {
+  context.window = context;
+  for (const path of ['js/siyayo-responsive-preview.js',
+    'js/verb-explorer-dependency-focus-surface.js', 'js/verb-explorer-dependency-focus-interaction.js']) {
     vm.runInContext(fs.readFileSync(path, 'utf8'), context, { filename: path });
   }
   return {
@@ -213,7 +239,13 @@ function retentionFixture() {
     visual, doc, state, overlay, dispatch,
     scroll() { return region; },
     token(id) { return nodes.find(node => node.dataset.tokenId === id); },
-    flush() { for (const callback of frames.splice(0)) callback(); }
+    flush() { for (const callback of frames.splice(0)) callback(); },
+    preview(mode, width) {
+      state.clientWidth = width;
+      previewButtons.find(button => button.dataset.preview === mode).click();
+      assert.equal(context.SIYAYOResponsivePreview.getMode(), mode);
+    },
+    resize() { assert.ok(observed.has(stage), 'current stage must be observed'); resizeCallback(); }
   };
 }
 
@@ -304,6 +336,75 @@ retained.visual.hidden = true;
 retained.scroll().scrollLeft = 80;
 retained.surface.render({ structure: lastReference, focusId: lastReference.tokens[0].id, language: 'en', preserveScroll: true });
 assert.equal(retained.scroll().scrollLeft, 0, 'a hidden or cleared surface must not revive stale scroll state');
+
+// Exercise the actual preview controller and redraw listeners, without another
+// render or assessment event. Geometry is a controlled DOM fixture, not browser QA.
+const runtime = fs.readFileSync('js/verb-explorer.js', 'utf8');
+const paths = [...runtime.match(/DEPENDENCY_FOCUS_URLS=\[([^\]]+)\]/)[1].matchAll(/"([^"]+)"/g)].map(match => match[1]);
+const Focus = require('../js/adaptive-dependency-focus-view.js');
+const Connectors = require('../js/adaptive-dependency-connector-view.js');
+const initiallyHidden = retentionFixture();
+initiallyHidden.state.visible = false;
+assert.equal(initiallyHidden.surface.render({structure: shoppingWhat, focusId: 'going', language: 'en'}), true,
+  'a deferred SVG must not reject valid canonical token/interaction setup');
+assert.equal(initiallyHidden.interaction.install({structure: shoppingWhat, surface: initiallyHidden.surface, language: 'en'}), true);
+initiallyHidden.flush();
+assert.equal(initiallyHidden.overlay.innerHTML, '');
+initiallyHidden.state.visible = true;
+initiallyHidden.resize(); initiallyHidden.flush();
+assert.match(initiallyHidden.overlay.innerHTML, /dependency-connector-path/);
+initiallyHidden.dispatch('pointerup', {target: initiallyHidden.token('cook'), pointerType: 'touch'});
+assert.equal(initiallyHidden.visual.dataset.focusToken, 'cook', 'first visible interaction must use the current structure');
+let layoutCases = 0;
+for (const path of paths) {
+  const model = JSON.parse(fs.readFileSync(path, 'utf8'));
+  const fixture = retentionFixture();
+  for (const token of model.tokens) {
+    fixture.surface.render({structure: model, focusId: token.id, language: model.language});
+    fixture.flush();
+    const plan = Connectors.plan(Focus.resolve(model, token.id));
+    assert.deepEqual([...fixture.visual.innerHTML.matchAll(/data-token-id="([^"]+)"/g)].map(match => match[1]),
+      model.tokens.map(item => item.id), 'every canonical word must be rendered in order');
+    assert.deepEqual([...fixture.visual.innerHTML.matchAll(/<b>(.*?)<\/b>/g)].map(match => match[1]),
+      model.tokens.map(item => item.form), 'word forms must stay complete, including multiword tokens');
+    const renders = fixture.state.renders;
+    for (const [mode, width] of [['auto', 1200], ['portrait', 430], ['landscape', 844]]) {
+      fixture.preview(mode, width);
+      fixture.scroll().scrollLeft = 150;
+      const position = fixture.scroll().scrollLeft;
+      fixture.flush();
+      const drawn = [...fixture.overlay.innerHTML.matchAll(/d="M ([\d.]+) ([\d.]+) Q ([\d.]+) ([\d.]+) ([\d.]+) ([\d.]+)"[^>]*data-relation="([^"]+)"/g)];
+      assert.equal(drawn.length, plan.connectors.length, path + ' ' + token.id + ' ' + mode);
+      plan.connectors.forEach((connector, index) => {
+        assert.equal(Number(drawn[index][1]), model.tokens.findIndex(item => item.id === connector.from) * 140 + 66);
+        assert.equal(Number(drawn[index][5]), model.tokens.findIndex(item => item.id === connector.to) * 140 + 66);
+        assert.equal(drawn[index][7], connector.label);
+      });
+      assert.equal(fixture.scroll().scrollLeft, position);
+      assert.equal(fixture.visual.dataset.focusToken, token.id);
+      assert.equal(fixture.state.renders, renders, 'format change must not rebuild the sentence');
+      layoutCases += 1;
+    }
+  }
+  const saved = fixture.overlay.innerHTML;
+  fixture.state.visible = false;
+  fixture.resize(); fixture.flush();
+  assert.equal(fixture.overlay.innerHTML, saved, 'zero-sized frame must retain the valid projection');
+  fixture.state.visible = true;
+  fixture.state.tokenStep = 120; fixture.state.tokenWidth = 112;
+  fixture.resize(); fixture.dispatch('resize', {}); fixture.dispatch('fonts:loadingdone', {});
+  fixture.flush();
+  assert.equal(fixture.state.renders, model.tokens.length);
+  assert.ok(!fixture.overlay.innerHTML.includes('NaN'));
+  const finalPlan = Connectors.plan(Focus.resolve(model, model.tokens.at(-1).id));
+  const redrawn = [...fixture.overlay.innerHTML.matchAll(/d="M ([\d.]+) [\d.]+ Q [\d.]+ [\d.]+ ([\d.]+) [\d.]+"[^>]*data-relation="([^"]+)"/g)];
+  assert.equal(redrawn.length, finalPlan.connectors.length);
+  finalPlan.connectors.forEach((connector, index) => {
+    assert.equal(Number(redrawn[index][1]), model.tokens.findIndex(item => item.id === connector.from) * 120 + 56);
+    assert.equal(Number(redrawn[index][2]), model.tokens.findIndex(item => item.id === connector.to) * 120 + 56);
+  });
+}
+console.log('PASS — ' + layoutCases + ' token/format redraw cases across all loaded EN/ES/PT canonical diagrams; resize/font/hidden-frame recovery preserves words, focus and scroll.');
 
 console.log(
   'Verb Explorer Dependency Focus Surface: PASS — canonical trilingual focus, mouse/touch/keyboard scroll retention, non-recursive focus restoration, layout clamping, reference isolation and aligned canonical connectors without pedagogical side effects.'
