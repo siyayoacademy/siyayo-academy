@@ -295,3 +295,17 @@ VISUAL-PATITA-01 / VISUAL-CARDS-02; ENTRY-WHERE-01; matriz humana ainda não
 demonstrada de idiomas/QWs/formatos. Áudio e legibilidade observados neste lote
 ficam registrados com seu escopo; não reabrir conclusões anteriores nem tratar
 o ensaio assistido em 2/3 como perda de um GREEN PASS anterior.
+
+## Retomada — JAGUAR-LIVE-48 / DEPENDENCY-SCROLL-01
+
+**Base imutável:** `8c3333b14679d14cbfa55f3d4682161b69a23c59`. A revisão das 20 capturas e do áudio foi preservada. A chamada de workflow que ficou sem retorno no chat anterior não impede a retomada: Bootstrap, Resume, Corpus e Cloudflare do checkpoint já estavam concluídos.
+
+**Correção implementada:** a interação em outro token solicita retenção da posição somente para a mesma superfície visível, estrutura canônica carregada e idioma. A renderização normal de contexto, QW ou idioma cria sua própria referência. A posição é restaurada e limitada à largura disponível após o layout. O token ou a região que tinha foco por teclado recupera esse foco com `preventScroll`; um guarda de ativação impede que o `focusin` de restauração reentre na renderização.
+
+**Reprodução e regressão:** o teste existente de superfície, já executado pelo CI, usa os módulos de produção de superfície/interação/conectores e uma fixture que reproduz perda de rolagem/foco ao substituir o DOM. No checkpoint, apontar cook após 260 px falha: posição 0 em vez de 260. A correção passa essa reprodução, mouse/touch/teclado, Enter/Space sem render duplicado, foco da região, token inválido sem substituição, clamp ao novo limite, superfície escondida sem estado antigo, EN -> ES -> PT -> EN e referências WHAT/WHERE/WHICH de Shopping/Preparing. As coordenadas e relações das setas continuam canônicas em três larguras disponíveis. A fixture não é uma homologação humana nem uma escuta de áudio.
+
+**Verificação local:** 14 comandos de regressão PASS: superfície, interação, interação acessível, referência viva, QW/Dependency Focus, DNA trilíngue, conectores, isolamento e seleção de idioma de avaliação, WHERE vivo, contrato WHERE, portrait containment, continuidade da visita QW e Choice Evidence Packet Bridge. O último mantém suas 43 verificações. Sintaxe dos três arquivos alterados PASS. Nenhum workflow, corpus, Session/Skill, suporte de áudio, contrato, Choice Bridge ou mecanismo de evidência foi alterado. Os resultados de publicação/CI e navegador servido ficam na PR #3.
+
+**Estado atual:** implementação de DEPENDENCY-SCROLL-01 corrigida e coberta por regressão. Conferência humana desta versão no telefone permanece WAIT; a revisão visual geral, VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam abertas. As seções de diagnóstico anteriores descrevem o estado pré-correção do checkpoint.
+
+**Próximo elo:** no preview corrigido, deslizar até a parte direita da frase, examinar outra palavra sem salto e conferir setas e foco nos formatos; depois alternar idiomas/QWs sem confundir exploração com evidência ou trocar a autoridade da avaliação.

@@ -30,7 +30,35 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-47
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-48
+
+**Recorded:** 2026-10-07 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `8c3333b14679d14cbfa55f3d4682161b69a23c59`
+
+**Change kind:** FIX — DEPENDENCY-SCROLL-01: retain position while examining another token of the same canonical sentence.
+
+**Status:** correction implemented; 14 relevant regression commands pass locally, including the unchanged 43-check Choice Evidence Packet Bridge. Publication, CI and deployed-browser evidence are recorded in [PR #3](https://github.com/siyayoacademy/siyayo-academy/pull/3). Human physical-mobile confirmation of this correction remains WAIT.
+
+## WORK RECORD — resumed in a responsive chat
+
+1. Confirmed the remote checkpoint and three completed workflows/Cloudflare deployment. The previous chat's unreturned workflow call is separate from the completed repository work.
+2. Recovered 641 existing local files by exact Git blob hashes; the two continuity documents were refreshed from the immutable checkpoint. Missing unrelated archived documents are preserved by publishing against the full remote base tree.
+3. Reproduced the fault with the production surface, interaction handlers and connector renderer: moving from going to cook after scrolling 260 px replaced the region and returned to 0.
+4. Token interaction now requests scroll retention. The surface permits it only for the same visible surface, canonical structure object and language. Full Experience/QW/language rendering starts a new diagram and never inherits another reference's position.
+5. After replacement, restore the focused token or scroll region with preventScroll and clamp the saved horizontal position to the new layout. Guard synchronous focusin during this restoration so keyboard activation cannot recursively render.
+6. Expanded the existing CI-covered surface regression with mouse/touch/keyboard activation, Enter/Space idempotence, focused-region restoration, invalid-token rejection, layout clamping, hidden-surface reset, EN -> ES -> PT -> EN and Shopping/Preparing reference changes, and connector coordinates at three available widths. The checkpoint fails the new retention assertion; the correction passes.
+7. Fourteen relevant scripts and changed-file syntax checks pass. Source, corpus, assessment authorities, contracts, speech and workflows retain their prior behavior. Deployed browser and CI results are linked in PR #3.
+
+## NEXT GO
+
+The user checks the corrected preview on the physical phone: scroll to the right, point to another word of the same phrase and verify that position, readable cards and canonical arrows remain coherent in portrait and landscape. Then continue the targeted EN -> ES -> PT -> EN and QW exploration matrix with each learner's own assessment scope. Keep the previously demonstrated audio and completed circuits; the assisted 2/3 route remains distinct. VISUAL-PATITA-01, VISUAL-CARDS-02 and ENTRY-WHERE-01 remain OPEN. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-47
 
 **Recorded:** 2026-10-07 (America/Sao_Paulo)
 

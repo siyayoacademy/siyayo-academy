@@ -7,6 +7,7 @@
   var activeDocument=null;
   var activeLanguage=null;
   var lastFocusId=null;
+  var activating=false;
 
   function updateStructure(structure,language){
     if(!structure||!Array.isArray(structure.tokens)||!Array.isArray(structure.relations))return false;
@@ -38,20 +39,26 @@
     }
 
     function activate(target){
-      if(!target)return false;
+      if(!target||activating)return false;
       var focusId=target.dataset&&target.dataset.dependencyToken;
       if(typeof focusId!=='string'||!focusId.trim())return false;
       focusId=focusId.trim();
       if(focusId===lastFocusId)return true;
       if(!activeStructure||!activeSurface||!activeDocument)return false;
-      var rendered=activeSurface.render({
-        document:activeDocument,
-        structure:activeStructure,
-        focusId:focusId,
-        language:activeLanguage
-      });
-      if(rendered===true)lastFocusId=focusId;
-      return rendered===true;
+      // Restoring a keyboard-focused token fires focusin synchronously. Keep
+      // that restoration inside this render instead of starting another one.
+      activating=true;
+      try{
+        var rendered=activeSurface.render({
+          document:activeDocument,
+          structure:activeStructure,
+          focusId:focusId,
+          language:activeLanguage,
+          preserveScroll:true
+        });
+        if(rendered===true)lastFocusId=focusId;
+        return rendered===true;
+      }finally{activating=false;}
     }
 
     doc.addEventListener('pointerover',function(event){

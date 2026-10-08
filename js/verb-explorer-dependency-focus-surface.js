@@ -86,6 +86,19 @@
     var resolved=focusView.resolve(structure,focusId);
     if(!resolved)return false;
 
+    // Only token exploration may retain position. Full context/language/QW
+    // rendering starts a fresh diagram, even when it uses the same reference.
+    var retain=options.preserveScroll===true&&activeRender&&
+      activeRender.surface===surface&&activeRender.structure===structure&&
+      activeRender.language===language&&!surface.hidden;
+    var previousScroll=retain&&typeof surface.querySelector==='function'
+      ?surface.querySelector('.dependency-diagram-scroll'):null;
+    var scrollLeft=previousScroll?Number(previousScroll.scrollLeft)||0:0;
+    var focused=previousScroll&&doc.activeElement;
+    var focusInSurface=focused&&typeof surface.contains==='function'&&surface.contains(focused);
+    var focusedToken=focusInSurface&&focused.dataset&&text(focused.dataset.dependencyToken);
+    var focusedRegion=focused===previousScroll&&!!previousScroll;
+
     var dependentIds=new Set((resolved.dependents||[]).map(function(item){return item.id;}));
     var headId=resolved.head&&resolved.head.id||null;
 
@@ -132,7 +145,20 @@
       '</div></div>'+
       '<small class="dependency-scroll-hint" hidden>'+escapeHtml(({en:'Scroll sideways to see the complete sentence.',es:'Desliza hacia los lados para ver la frase completa.',pt:'Deslize para os lados para ver a frase completa.'})[language])+'</small>';
 
-    activeRender={surface:surface,resolved:resolved,connectorView:connectorView};
+    activeRender={surface:surface,structure:structure,language:language,resolved:resolved,connectorView:connectorView};
+    var nextScroll=previousScroll&&surface.querySelector('.dependency-diagram-scroll');
+    if(nextScroll){
+      if(focusedToken&&typeof surface.querySelectorAll==='function'){
+        var focusTokens=surface.querySelectorAll('[data-dependency-token]');
+        for(var i=0;i<focusTokens.length;i+=1){
+          if(text(focusTokens[i].dataset&&focusTokens[i].dataset.dependencyToken)===focusedToken){
+            if(typeof focusTokens[i].focus==='function')focusTokens[i].focus({preventScroll:true});
+            break;
+          }
+        }
+      }else if(focusedRegion&&typeof nextScroll.focus==='function')nextScroll.focus({preventScroll:true});
+      nextScroll.scrollLeft=Math.max(0,Math.min(scrollLeft,nextScroll.scrollWidth-nextScroll.clientWidth));
+    }
     var result=connectorView.draw({surface:surface,resolved:resolved});
     watchLayout(surface,doc);
     scheduleRefresh();
