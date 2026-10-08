@@ -1,4 +1,4 @@
-:root{--siyayo-gold-primary:#f2d88a;--siyayo-gold-rgb:242,216,138;--siyayo-gold-border:rgba(242,216,138,.34);--siyayo-gold-glow:rgba(242,216,138,.18)}
+:root{--siyayo-gold-primary:var(--siyayo-gold-medium,#f2d88a);--siyayo-gold-rgb:242,216,138;--siyayo-gold-border:rgba(242,216,138,.34);--siyayo-gold-glow:rgba(242,216,138,.18)}
 * { box-sizing: border-box; }
 html,body{max-width:100%;overflow-x:clip}
 body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,sans-serif); color:white; background:radial-gradient(circle at top,#0b2f62,#030a18 48%,#000); }
@@ -399,4 +399,14 @@ button.dependency-probe-question-card:focus-visible{outline:2px solid var(--siya
   .verb-explorer .xespirito-result dl>div{grid-template-columns:1fr;gap:4px}
   .verb-explorer .xespirito-trace>div{grid-template-columns:26px minmax(0,1fr)}
   .verb-explorer .xespirito-trace>div>small{grid-column:2;text-align:left}
+}
+
+/* User-approved gold and spectral-blue palette (2026-10-08). */
+body{
+  background:radial-gradient(circle at top,var(--siyayo-blue-medium),var(--siyayo-blue-dark) 48%,var(--siyayo-blue-dark));
+}
+.experience-heading h2{color:var(--siyayo-gold-standard)}
+.dependency-token:focus-visible,.gear-option:focus-visible,.explorer-mode:focus-visible{
+  outline:2px solid var(--siyayo-gold-bright);
+  outline-offset:3px;
 }

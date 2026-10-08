@@ -1,0 +1,21 @@
+/* SIYAYO palette approved by the user on 2026-10-08.
+   Exact samples from image(20261008-152408).png; see docs/SIYAYO-COLOR-PALETTE.md. */
+:root {
+  --siyayo-gold-standard: #d7b35a;
+  --siyayo-gold-medium: #f2d88a;
+  --siyayo-gold-bright: #fcec5b;
+
+  --siyayo-blue-dark: #071f41;
+  --siyayo-blue-medium: #0a2a58;
+  --siyayo-blue-bright: #0307b2;
+
+  /* Compatibility names resolve to one of the three approved options. */
+  --siyayo-gold: var(--siyayo-gold-standard);
+  --siyayo-gold-light: var(--siyayo-gold-medium);
+  --siyayo-gold-primary: var(--siyayo-gold-medium);
+  --siyayo-blue-deep: var(--siyayo-blue-dark);
+  --siyayo-blue: var(--siyayo-blue-medium);
+  --siyayo-blue-light: var(--siyayo-blue-bright);
+  --gold: var(--siyayo-gold-standard);
+  --gold-light: var(--siyayo-gold-medium);
+}

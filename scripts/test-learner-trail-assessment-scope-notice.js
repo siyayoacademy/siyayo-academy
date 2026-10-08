@@ -45,6 +45,55 @@ root.globalThis=root;vm.runInNewContext(code,root);
 assert.equal(root.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:doc,language:'es'}),true);
 assert.match(surface.innerHTML,/EXPLORANDO WHAT · EVALUACIÓN WHICH/);
 assert.match(surface.innerHTML,/PANTALLA ES · EVALUACIÓN EN/);
+assert.match(surface.innerHTML,/data-state="active"><b[^>]*>○<\/b><strong>WHICH<\/strong><small>0\/3<\/small>/,
+  'Changing display language must keep the active assessment card and its existing progress');
 assert.match(surface.innerHTML,/WHICH/);
 assert.doesNotMatch(surface.innerHTML,/EVALUACIÓN ES/);
-console.log('PASS — Trail shows visual QWord/display language separately from canonical assessment QWord/language.');
+
+// The language gear changes presentation, while an existing assessment keeps
+// its own language, QWord and progress. Exercise the read-only surface across
+// all language pairs, free QWord exploration and three existing progress states.
+root.AdaptiveLearnerTrailLabel=require('../js/adaptive-learner-trail-label.js');
+root.AdaptiveLearnerTrailView=require('../js/adaptive-learner-trail-view.js');
+const definition={id:'which.use.determiner',realizations:{
+  en:{form:'which',family:'question-word',grammarRole:'interrogative-determiner'},
+  es:{form:'cuál',family:'palabra-interrogativa',grammarRole:'determinante-interrogativo'},
+  pt:{form:'qual',family:'palavra-interrogativa',grammarRole:'determinante-interrogativo'}
+}};
+root.SIYAYOVerbExplorerCanonicalSkillSource.getDefinition=()=>definition;
+let active,displayLanguage,visualQWord,completed;
+root.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot=()=>active;
+root.SIYAYOVerbExplorerExperienceRuntime.activeLanguage=()=>displayLanguage;
+root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord=()=>visualQWord;
+root.AdaptivePassContractProgressView.project=(contract,packets)=>{
+  assert.strictEqual(contract,active.context.passContract);
+  assert.strictEqual(packets,active.context.evidencePackets);
+  return {completed,total:3,satisfied:[0,1,2].map(index=>index<completed)};
+};
+let cases=0;
+for(const assessmentLanguage of ['en','es','pt']){
+  const ownedScope=Scope.create({learnerId:'Aldo',skill:definition.id,language:assessmentLanguage,originExperienceId:'shopping-for-dinner'});
+  active={session:{decision:{skill:definition.id,experienceId:'shopping-for-dinner',assessmentScope:ownedScope}},
+    context:{passContract:{requires:[{dimension:'choice-function'},{mode:'local'},{mode:'transfer'}]},evidencePackets:[]}};
+  const unchanged=JSON.stringify(active);
+  for(completed=0;completed<3;completed++){
+    for(displayLanguage of ['en','es','pt']){
+      for(visualQWord of ['which','what','where']){
+        assert.equal(root.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:doc}),true);
+        const card=surface.innerHTML.match(/<span class="learner-journey-word" data-state="([^\"]+)">[^]*?<strong>WHICH<\/strong><small>([^<]+)<\/small><\/span>/);
+        assert.ok(card);
+        assert.equal(card[1],'active',`${assessmentLanguage} assessment stays active on ${displayLanguage} display`);
+        assert.equal(card[2],completed+'/3');
+        assert.equal((surface.innerHTML.match(/data-state="active"/g)||[]).length,1);
+        const ownedLabel=root.AdaptiveLearnerTrailLabel.project(definition,assessmentLanguage);
+        assert.ok(surface.innerHTML.includes('<strong>'+ownedLabel.form+'</strong>'));
+        if(displayLanguage!==assessmentLanguage){
+          assert.match(surface.innerHTML,new RegExp('(?:DISPLAY|PANTALLA|TELA) '+displayLanguage.toUpperCase()+' · (?:ASSESSMENT|EVALUACIÓN|AVALIAÇÃO) '+assessmentLanguage.toUpperCase()));
+        }
+        assert.equal(JSON.stringify(active),unchanged,'Presentation must not mutate the assessment snapshot');
+        cases++;
+      }
+    }
+  }
+}
+console.log(`PASS — Trail preserves canonical assessment scope and active progress across ${cases} language/QWord/display cases.`);

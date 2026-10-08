@@ -28,9 +28,41 @@ The project may expand toward encyclopedia-scale interactive corpus across verbs
 
 Content abundance never implies assessment authority. No branch may create an independent mastery, score, progression, routing or Green authority merely because it introduces a new visual surface, archetype, corpus family or Experience.
 
+Approved visual inheritance: the six gold/spectral-blue options are defined in [SIYAYO-COLOR-PALETTE](SIYAYO-COLOR-PALETTE.md) and `css/siyayo-palette.css`. Use these shared tokens for the homologated palette while preserving canonical semantic states and the Quicksand/Nunito Sans typography.
+
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-49
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-50
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `30d8446d3916f8a4ac44d540cae291f1a39af9c4`
+
+**Change kind:** FIX / PRESENTATION — keep the active assessment card when only the display language changes; register and adopt the user-approved gold/spectral-blue palette.
+
+**User GO:** perform the necessary checks, revisit possible language/word inconsistencies from four supplied mobile prints, and identify/register the three standard options in each of the two color spectra. The user reports checking all three languages successfully.
+
+**Status:** TRAIL-DISPLAY-LANGUAGE-01 reproduced and corrected. The current Word Path card used display language to decide whether the assessment was active, so an existing WHICH 0/3 could become “not started” on EN/ES display while its assessment stayed PT. The read-only card now follows the assessment language. Eighteen related regressions and changed-JS syntax checks PASS locally; the expanded existing CI test covers 81 language/QWord/progress combinations. Publication, CI and served-preview observations are recorded in [PR #3](https://github.com/siyayoacademy/siyayo-academy/pull/3).
+
+## WORK RECORD
+
+1. Verified remote HEAD and exact base blobs before editing. Reviewed `10.58.48`, `10.59.11`, `11.01.40` and `11.02.02` mobile captures plus the annotated palette image.
+2. Confirmed that display/assessment language notices are deliberate. The assessment label/history remain owned by the Session's language. A focused syntax token and the authored head diagnostic are separate read-only/assessment surfaces.
+3. Reproduced the incorrect “not started” card using the existing scope-notice regression before changing runtime. Updated only the current-card comparison; canonical Session/Skill, progress and Evidence authorities remain intact.
+4. Added 81 combinations of EN/ES/PT assessment/display languages, WHICH/WHAT/WHERE exploration and 0/3, 1/3, 2/3 progress. The real label/history projections are used; the assessment snapshot remains unchanged after every refresh.
+5. Sampled the six uniform color blocks: gold standard `#D7B35A`, medium `#F2D88A`, bright `#FCEC5B`; spectral blue dark `#071F41`, medium `#0A2A58`, bright `#0307B2`. Names, RGB, sampling regions and usage are recorded in [SIYAYO-COLOR-PALETTE](SIYAYO-COLOR-PALETTE.md).
+6. Centralized the palette in shared CSS, imported it into the Explorer and Home stylesheet, and aligned compatibility names. The Experience title uses standard gold; the outer Explorer background uses dark/medium blue; keyboard focus outlines use bright gold. Existing gold interface color follows the medium token.
+7. Passed 18 focused regressions, including language selection/isolation, syntax reference independence, head-observation WAIT, scroll/focus restoration, WHERE local/transfer and the unchanged 43-check Choice Evidence Packet Bridge.
+
+## NEXT GO
+
+Inspect the newly published palette and active-card behavior, then continue targeted language/QW/word exploration and AUTO/PORTRAIT/LANDSCAPE comparison. The user's three-language report and supplied portrait captures add human review; the full human format matrix remains partial. DEPENDENCY-SCROLL-01 remains closed for the reported mobile retest. VISUAL-PATITA-01, VISUAL-CARDS-02 and ENTRY-WHERE-01 remain OPEN. Previously completed circuits and the assisted WHERE 2/3 route retain their scopes. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-49
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

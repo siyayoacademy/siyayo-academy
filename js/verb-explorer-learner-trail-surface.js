@@ -77,7 +77,7 @@
       var history=trailView.project(profile,item.id,root.AdaptiveAssessmentScope?{language:assessmentLanguage}:null);
       var past=history&&markerAuthority.resolve(history);
       var confirmed=past&&(past.state==='CONFIRMED'||past.state==='CONSOLIDATED_EVIDENCE');
-      var current=item.id===skill&&(!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===language);
+      var current=item.id===skill&&(!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===assessmentLanguage);
       var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
       var saved=!current&&selection&&typeof selection.getRetainedProgress==='function'
         ?selection.getRetainedProgress(item.id,assessmentLanguage):[];

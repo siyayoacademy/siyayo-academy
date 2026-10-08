@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-49  
+**Checkpoint atual:** JAGUAR-LIVE-50  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta confirmação:** `418f4c68c4385f7e6b38495dd650f67f0c5602d8`  
-**Estado atual:** DEPENDENCY-SCROLL-01 confirmado como corrigido pelo usuário no teste móvel retrato. Capturas EN/WHAT e ES/WHICH conferidas; homologação visual geral e matriz completa de idiomas/QWs/formatos permanecem parciais. As seções LIVE-47/48 preservam o diagnóstico e a implementação anteriores.
+**Base desta revisão:** `30d8446d3916f8a4ac44d540cae291f1a39af9c4`  
+**Estado atual:** usuário relata conferência correta nos três idiomas; quatro novas capturas revisadas. TRAIL-DISPLAY-LANGUAGE-01 reproduzido/corrigido; paleta dourada/azul espectral homologada e centralizada. DEPENDENCY-SCROLL-01 segue confirmado no reteste móvel. A matriz humana completa de formatos permanece parcial.
 
 ## Objetivo e autorização
 
@@ -327,3 +327,38 @@ o ensaio assistido em 2/3 como perda de um GREEN PASS anterior.
 **Continuidade:** próximo elo é a alternância dirigida EN -> ES -> PT -> EN/QWs e a comparação dos três formatos no celular/laptop. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam OPEN. O áudio anteriormente ouvido e os circuitos já concluídos conservam seu escopo; a rota WHERE assistida em 2/3 permanece separada.
 
 Esta revisão altera apenas o mapa e este registro; a implementação corrigida, os contratos e as autoridades de avaliação são preservados.
+
+## Alternância de idiomas e paleta — JAGUAR-LIVE-50
+
+**Autorização:** o usuário pede as checagens necessárias, informa que realizou testes nos três idiomas e envia quatro capturas móveis adicionais. Homologa três dourados e três azuis espectrais no anexo `image(20261008-152408).png`.
+
+| Captura | Observação direta | Revisão |
+|---|---|---|
+| `WhatsApp Image 2026-10-08 at 10.58.48.jpeg` | PT, foco sintático em `estes` ligado a `livros` por `det`; diagnóstico pergunta o núcleo de `três`; aluno identificado; Trail QUAL | O foco explorado e o alvo do diagnóstico têm papéis próprios. Alterar o token visual conserva a pergunta canônica de diagnóstico |
+| `WhatsApp Image 2026-10-08 at 10.59.11.jpeg` | PT, WHICH ativo em 0/3; WHERE guardado em 0/3; prova “Qual ___ devemos escolher?” | Estados observados do ensaio atual; sem demonstração de PASS ou perda de progresso de outro aluno/ensaio |
+| `WhatsApp Image 2026-10-08 at 11.01.40.jpeg` | EN ativo na tela, aviso DISPLAY EN / ASSESSMENT PT; metadados da avaliação em PT; WHICH marcado “not started” | Aviso e idioma da avaliação corretos; cartão “not started” contradiz a avaliação já aberta |
+| `WhatsApp Image 2026-10-08 at 11.02.02.jpeg` | ES na tela, CUÁL selecionado, resposta exploratória separada; WHICH “aún no iniciada”, WHERE guardado em 0/3 | Mesma inconsistência de apresentação ao mudar somente o idioma |
+
+### TRAIL-DISPLAY-LANGUAGE-01 — corrigido
+
+A comparação do cartão ativo em `journeyHtml` usava o idioma da tela, enquanto histórico, label e progresso já usavam o idioma de avaliação. Ao apresentar uma Session PT na tela EN/ES, o cartão perdia o estado ativo e podia mostrar “não iniciado”.
+
+A correção compara com o idioma da avaliação. A Session conserva Skill, idioma, origem, progresso e Evidence; o aviso de tela/avaliação segue explícito. A regressão existente falhou antes da correção ao esperar WHICH ativo em 0/3. Depois, passou esse caso e **81 combinações** de idiomas de avaliação/tela, exploração WHICH/WHAT/WHERE e progresso 0/3, 1/3, 2/3, usando as projeções reais de label/histórico e verificando que o snapshot não muda.
+
+### PALETA — homologação e aplicação inicial
+
+Registro completo em [SIYAYO-COLOR-PALETTE](SIYAYO-COLOR-PALETTE.md); tokens em `css/siyayo-palette.css`.
+
+| Espectro | Escuro/padrão | Médio | Brilhante |
+|---|---|---|---|
+| Dourado, opções 1/2/3 do usuário | Padrão `#D7B35A` | `#F2D88A` | `#FCEC5B` |
+| Azul espectral | Escuro `#071F41` | `#0A2A58` | `#0307B2` |
+
+Os blocos uniformes do anexo são a fonte dos seis valores. O Explorer importa a paleta antes de seus estilos; a Home recebe a mesma fonte por importação em `css/style.css`. Título da Experience: dourado padrão; rótulos/título do Explorer: médio; foco por teclado nos tokens, seletores e abas: brilhante. Fundo externo do Explorer: azul escuro/médio. Fontes Quicksand/Nunito Sans e estados semânticos mantêm seus contratos.
+
+### Verificação e continuidade
+
+**18 regressões existentes PASS**, incluindo a regressão ampliada de 81 casos; seleção/isolamento de idioma; Thinking Mind trilíngue; DNA e foco por QW; superfície/interação/acessibilidade/experiência; diagnóstico por identidade/idioma; observação/Trail; WHERE vivo e contrato; conectores; layout retrato; Choice Evidence Packet Bridge com suas 43 verificações. Sintaxe dos dois JS alterados PASS. O workflow Bootstrap já executa a regressão ampliada.
+
+CI/publicação e observações posteriores no preview servido ficam registrados na PR #3. O relato do usuário nos três idiomas e as capturas são preservados separadamente dos ensaios automatizados. A homologação humana da nova aplicação de cores e dos três formatos continua parcial. Próximo elo: conferir o novo preview e seguir a matriz de alternância/formatos, mantendo as autoridades da avaliação.
+
