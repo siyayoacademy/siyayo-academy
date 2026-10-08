@@ -30,7 +30,32 @@ Content abundance never implies assessment authority. No branch may create an in
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-48
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-49
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `418f4c68c4385f7e6b38495dd650f67f0c5602d8`
+
+**Change kind:** DOCUMENTATION — physical-mobile confirmation of the Dependency Focus scroll correction.
+
+**Status:** the user reports “sim corrigido” after checking the published preview and supplies three portrait-phone captures. DEPENDENCY-SCROLL-01 is DONE for this reported mobile retest. The captures corroborate focused words, internally scrolled diagrams and readable arrows in EN/WHAT and ES/WHICH; the user's report supplies the confirmation of movement without the previous jump. The full human language/QW/format matrix remains open.
+
+## WORK RECORD — mobile preview confirmation
+
+1. Verified PR #3 still points to the corrected implementation `418f4c6`, with the existing branch and assessment authorities intact.
+2. Inspected the three supplied images directly. EN/WHAT shows `to → cook` with `mark` and `we → going` with `nsubj` in different visible portions of the same question. ES/WHICH shows focus on `queso`, `Cuál → queso` with `det`, and an `obj` curve continuing toward the off-screen verb.
+3. Recorded the user's explicit correction confirmation separately from the static visual observations. These captures do not establish keyboard behavior, landscape/AUTO coverage, PT alternation or a new assessment PASS.
+4. Preserved the earlier audio report, completed language-owned circuits and the separate assisted WHERE 2/3 route. This checkpoint updates only the two continuity documents.
+
+## NEXT GO
+
+Continue targeted EN -> ES -> PT -> EN and QW exploration, then compare AUTO/PORTRAIT/LANDSCAPE on phone and laptop. Check cards and canonical arrow alignment while maintaining each learner's assessment scope. VISUAL-PATITA-01, VISUAL-CARDS-02 and ENTRY-WHERE-01 remain OPEN. DEPENDENCY-SCROLL-01 no longer blocks the reported portrait-mobile route. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-48
 
 **Recorded:** 2026-10-07 (America/Sao_Paulo)
 

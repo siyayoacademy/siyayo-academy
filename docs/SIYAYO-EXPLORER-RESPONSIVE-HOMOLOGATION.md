@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint:** JAGUAR-LIVE-47  
-**Registro:** 2026-10-07, America/Sao_Paulo  
+**Checkpoint atual:** JAGUAR-LIVE-49  
+**Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base:** `050b3c8c98698fa0a7990dd5b90827399575d6ec`  
-**Estado:** implementação publicada; regressões e conferência dos três formatos concluídas; evidência humana dos novos ajustes e de áudio recebida. Homologação visual parcial; DEPENDENCY-SCROLL-01 e revisão geral permanecem OPEN.
+**Base desta confirmação:** `418f4c68c4385f7e6b38495dd650f67f0c5602d8`  
+**Estado atual:** DEPENDENCY-SCROLL-01 confirmado como corrigido pelo usuário no teste móvel retrato. Capturas EN/WHAT e ES/WHICH conferidas; homologação visual geral e matriz completa de idiomas/QWs/formatos permanecem parciais. As seções LIVE-47/48 preservam o diagnóstico e a implementação anteriores.
 
 ## Objetivo e autorização
 
@@ -306,6 +306,24 @@ o ensaio assistido em 2/3 como perda de um GREEN PASS anterior.
 
 **Verificação local:** 14 comandos de regressão PASS: superfície, interação, interação acessível, referência viva, QW/Dependency Focus, DNA trilíngue, conectores, isolamento e seleção de idioma de avaliação, WHERE vivo, contrato WHERE, portrait containment, continuidade da visita QW e Choice Evidence Packet Bridge. O último mantém suas 43 verificações. Sintaxe dos três arquivos alterados PASS. Nenhum workflow, corpus, Session/Skill, suporte de áudio, contrato, Choice Bridge ou mecanismo de evidência foi alterado. Os resultados de publicação/CI e navegador servido ficam na PR #3.
 
-**Estado atual:** implementação de DEPENDENCY-SCROLL-01 corrigida e coberta por regressão. Conferência humana desta versão no telefone permanece WAIT; a revisão visual geral, VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam abertas. As seções de diagnóstico anteriores descrevem o estado pré-correção do checkpoint.
+**Estado ao concluir LIVE-48 (histórico):** implementação de DEPENDENCY-SCROLL-01 corrigida e coberta por regressão. Naquele momento, a conferência humana desta versão no telefone permanecia WAIT; a revisão visual geral, VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam abertas. As seções de diagnóstico anteriores descrevem o estado pré-correção do checkpoint.
 
 **Próximo elo:** no preview corrigido, deslizar até a parte direita da frase, examinar outra palavra sem salto e conferir setas e foco nos formatos; depois alternar idiomas/QWs sem confundir exploração com evidência ou trocar a autoridade da avaliação.
+
+## Confirmação móvel — JAGUAR-LIVE-49
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Implementação conferida:** `418f4c68c4385f7e6b38495dd650f67f0c5602d8`, preview de Shopping publicado na PR #3.
+
+**Relato do usuário:** “sim corrigido”, após a solicitação de conferir a retenção da rolagem no celular. **DEPENDENCY-SCROLL-01: DONE no reteste móvel informado.** O relato confirma o comportamento temporal; as capturas abaixo registram estados visuais do ensaio.
+
+| Captura recebida | Observação direta | Escopo |
+|---|---|---|
+| `WhatsApp Image 2026-10-08 at 10.37.03.jpeg` | EN/WHAT, “What are we going to cook?”; foco em `to / PARTICLE`; seta `to → cook` com `mark`; parte direita do diagrama visível | Celular retrato, foco e conexão legíveis com rolagem interna |
+| `WhatsApp Image 2026-10-08 at 10.37.36.jpeg` | Mesma pergunta EN/WHAT; foco em `we / PRONOUN`; seta `we → going` com `nsubj`; outra faixa da frase visível | Celular retrato, exploração de outro token |
+| `WhatsApp Image 2026-10-08 at 10.41.30.jpeg` | ES/WHICH, “¿Cuál queso deberíamos elegir?”; foco em `queso / SUSTANTIVO`; relação `Cuál → queso` com `det`; curva `obj` continua à direita, com verbo fora da faixa visível | Celular retrato; referência e diagnóstico correspondentes em espanhol |
+
+**Limites da conferência:** nenhuma captura demonstra a sequência completa do gesto, teclado, formato paisagem/AUTO, alternância PT ou toda a matriz de QWs. O encerramento da falha neste reteste vem da confirmação explícita do usuário. A observação visual não produz nova evidência de domínio nem GREEN PASS.
+
+**Continuidade:** próximo elo é a alternância dirigida EN -> ES -> PT -> EN/QWs e a comparação dos três formatos no celular/laptop. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 e a matriz humana completa continuam OPEN. O áudio anteriormente ouvido e os circuitos já concluídos conservam seu escopo; a rota WHERE assistida em 2/3 permanece separada.
+
+Esta revisão altera apenas o mapa e este registro; a implementação corrigida, os contratos e as autoridades de avaliação são preservados.
