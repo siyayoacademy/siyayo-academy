@@ -87,14 +87,17 @@ function renderDependencyHeadProbe(x){
 }
 function refreshThinkingMindAssessmentHighlight(){
   const source=window.SIYAYOVerbExplorerCanonicalSkillSource;
-  const session=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.()?.session;
+  const snapshot=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.();
+  const session=snapshot?.session;
   const skill=session?.decision?.skill;
   const skills={"which":"which.use.determiner","what":"what.use.object-question","why":"why.use.contextual-reason","where":"where.use.location-question"};
   const word=skill&&source?.getSkill?.()===skill&&Object.values(skills).includes(skill)?skill.split(".")[0]:null;
+  const progress=word&&window.AdaptivePassContractProgressView?.project?.(snapshot?.context?.passContract,snapshot?.context?.evidencePackets,window.GreenPassProfile);
+  const accepted=Boolean(progress&&progress.completed>0);
   const profile=window.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource?.getProfile?.();
   const trailView=window.AdaptiveLearnerTrailView;
   const markerAuthority=window.AdaptiveLearnerProgressMarker;
-  const labels={en:{confirmed:"Green Pass earned",active:"Practicing now"},es:{confirmed:"Green Pass conseguido",active:"Practicando ahora"},pt:{confirmed:"Green Pass conquistado",active:"Praticando agora"}}[experienceLanguage]||{confirmed:"Green Pass earned",active:"Practicing now"};
+  const labels={en:{confirmed:"Green Pass earned",active:"Practicing now",ready:"Assessment selected"},es:{confirmed:"Green Pass conseguido",active:"Practicando ahora",ready:"Evaluación seleccionada"},pt:{confirmed:"Green Pass conquistado",active:"Praticando agora",ready:"Avaliação selecionada"}}[experienceLanguage]||{confirmed:"Green Pass earned",active:"Practicing now",ready:"Assessment selected"};
   document.querySelectorAll("#questionGear [data-question-index]").forEach(button=>{
     const question=activeExperience()?.thinkingMind?.[Number(button.dataset.questionIndex)];
     const questionSkill=skills[question?.questionWord];
@@ -104,7 +107,7 @@ function refreshThinkingMindAssessmentHighlight(){
     const selected=Boolean(word&&question?.questionWord===word&&(!window.AdaptiveAssessmentScope||session?.decision?.assessmentScope?.language===experienceLanguage));
     button.classList.remove("session-target");
     button.classList.toggle("question-word-practicing",selected&&!confirmed);
-    button.dataset.learningState=confirmed?"confirmed":selected?"practicing":"exploring";
+    button.dataset.learningState=confirmed?"confirmed":selected?(accepted?"practicing":"ready"):"exploring";
     button.classList.toggle("question-word-confirmed",confirmed);
     button.querySelector(".session-target-label")?.remove();
     const name=button.textContent.trim();
@@ -112,10 +115,10 @@ function refreshThinkingMindAssessmentHighlight(){
       const badge=document.createElement("small");
       badge.className="session-target-label";
       badge.setAttribute("aria-hidden","true");
-      badge.textContent=confirmed?"★":"◐";
+      badge.textContent=confirmed?"★":accepted?"◐":"○";
       button.appendChild(badge);
     }
-    const description=confirmed?labels.confirmed:selected?labels.active:"";
+    const description=confirmed?labels.confirmed:selected?(accepted?labels.active:labels.ready):"";
     button.setAttribute("aria-label",name+(description?" · "+description:""));
     if(description)button.setAttribute("title",description);
     else button.removeAttribute("title");

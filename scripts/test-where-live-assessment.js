@@ -300,6 +300,18 @@ async function main() {
     assert.equal(env.snapshot().context.currentExperience, local.id, 'no destination Session or automatic NEXT');
     env.button('location-answer', 'grounded-location').click(); assertProgress(env, 3);
     assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, 1, 'closure remains unique');
+    // Reported WHERE -> WHAT in visited Preparing: exploration is selectable,
+    // but this origin-owned WHERE circuit cannot silently start a WHAT Session.
+    const beforeWhatVisit = JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace});
+    env.move({questionWord: 'what'});
+    assert.equal(await env.select(destination.thinkingMind.find(item => item.questionWord === 'what')), false,
+      'WHERE closure has no integrated cross-skill adoption route to Preparing WHAT yet');
+    assert.equal(env.box.SIYAYOVerbExplorerWhatAssessmentLive.mount({document: env.doc,
+      experience: destination, language}), false);
+    assert.strictEqual(env.snapshot().session, session); assertProgress(env, 3);
+    assert.equal(JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace}), beforeWhatVisit);
+    env.move({questionWord: 'where'});
+    assert.equal(await env.select(question(destination)), true); assert.equal(env.mount(), true);
     // Another explicit Skill, then Preparing restores the retained Shopping circuit.
     env.move({currentExperienceId: local.id, questionWord: 'which'});
     assert.equal(await env.select(local.thinkingMind.find(item => item.questionWord === 'which')), true);

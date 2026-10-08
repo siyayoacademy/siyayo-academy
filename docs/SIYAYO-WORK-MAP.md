@@ -32,7 +32,38 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-54
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-55
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `b553d08c3e5c7ff3b294ab6ec54ef4283ba3fb80`. Keep LIVE-54 density/deferred-SVG fixes and the other thread's roadmap.
+
+**Change kind:** ZERO-EVIDENCE QWORD BADGE / EN–ES–PT COMPARISON AUDIT.
+
+**User GO:** investigate the half-filled white WHERE badge before answering under a new nick, and its absence after LANGUAGE-only ES/PT switches. Review all five annotated captures of the same `bbc9` trial.
+
+**Status:** `QWORD-ZERO-EVIDENCE-BADGE-01` reproduced: the button displayed ◐ whenever its Session skill/language was selected, including 0/3. This was a visual selection marker, not fabricated Evidence, but reused the progress glyph. Corrected to ○ for selected/no accepted requirement, ◐ for accepted contract evidence, and ★ only for a canonical confirmed closure. LANGUAGE-only foreign display omits the active badge because the original language owns the assessment; explicit QWord selection creates/restores that language's own circuit. Human retest of the new glyph remains pending.
+
+## WORK RECORD
+
+1. Read all five attachments directly: `image(20261008-215215).png`, `220618`, `223506`, `224758` and `231110`. The fresh-nick/before-answer observation is stated in the user text; the composites also show later answered states and do not independently establish the initial 0/3 chronology.
+2. The captures show WHAT head practice in EN/ES/PT without contract activation, WHICH EN Choice 1/3 retained under ES/PT display, and WHERE language-owned 2/3 followed by confirmed 3/3 in Preparing. Language-only changes retain the assessment-language notice. Explicit DÓNDE/ONDE/WHERE selections mount the corresponding circuit; a foreign display can retain a completed record without showing a same-language Thinking Mind badge.
+3. `refreshThinkingMindAssessmentHighlight` now reads the existing Coordinator snapshot and `AdaptivePassContractProgressView`/`GreenPassProfile`. No accepted requirement → ○ and localized “Assessment selected” copy; some accepted requirement → ◐; real history closure → ★. Repeated refresh cannot alter Session, skill, packets, identity, progression or the exploration highlight. The same rule applies to WHICH/WHAT/WHY/WHERE. CSS, palette and canonical content are unchanged.
+4. Expanded the existing trilingual selector regression with production contract/progress/Trail/marker projections: **288 cases** across four skills, three assessment/display languages, fresh nick, failed answer, head-only practice, audio-assisted-use-only, one/two accepted requirements, three before closure and real canonical closure. The 0/3 badge assertion fails before the correction; the full test passes afterward. The previous **189 QWord/language/format selection cases** remain covered. This is controlled DOM/input projection, not physical-device QA or evidence generation.
+5. Investigated the final annotation “WHAT … não funcional” in visited Preparing after WHERE completion. The screenshot actually shows WHAT selected and its question/diagnostic updated while Trail explicitly says EXPLORING WHAT / ASSESSMENT WHERE. The origin guard refuses a new WHAT circuit there, and the explicit adoption authorities currently lack the WHERE → WHAT route. **ENTRY-WHERE-TO-WHAT-01 OPEN:** add a separately authorized destination-entry route in a later implementation; do not manufacture S2 activation or rewrite the completed WHERE Session. Six real EN/ES/PT Node/browser-VM WHERE integrations now reproduce that refusal, preserve the identical WHERE 3/3/context/footprints and restore its panel on return.
+6. **10 relevant regression scripts and syntax of all three changed JS files PASS locally.** Includes real live assessment chain, language selection/isolation, 81 Trail scope cases, 43 Choice Bridge checks, marker/progress authority and exploration continuity. Exact publication/check readback is recorded in PR #3; no new native-browser observation is claimed.
+
+## NEXT GO
+
+Verify the new marker with a fresh language-owned circuit before answering: ○ at 0/3, then ◐ only after accepted contract evidence. A LANGUAGE-only foreign display retains the original circuit; explicitly choosing DÓNDE/ONDE/WHERE selects its own language. Keep the existing trial separate from the new preview origin.
+
+ENTRY-WHERE-TO-WHAT-01 is now a concrete pending integration for explicit assessment entry after a completed WHERE transfer; explore WHAT freely while preserving WHERE's completed record. T8 has partial human navigation evidence from the Preparing visit/retention; it is not fully homologated. T7 audio remains pending. The earlier QWORD-RETURN-WHERE-01 visual occurrence is not reproduced or globally closed by these different captures. The full human format/visual matrix stays partial. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-54
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

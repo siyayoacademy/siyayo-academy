@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-54  
+**Checkpoint atual:** JAGUAR-LIVE-55  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `e024a85c0b7863cbd70c062c028e7e4e4f71b128`  
-**Estado atual:** T2 relata WHERE 2/3 restaurado; destaque do botão WHICH ainda OPEN, sem captura conjunta. T3/T4/T5/T6 têm evidência humana parcial. Cartões Dependency Focus compactados; SVG em dimensão zero corrigido e coberto por regressão. T7/T8 continuam não executados. Homologação física do novo CSS e matriz completa de formatos continuam parciais.
+**Base desta revisão:** `b553d08c3e5c7ff3b294ab6ec54ef4283ba3fb80`  
+**Estado atual:** marcador ◐ em avaliação selecionada a 0/3 reproduzido e corrigido para ○; ausência em tela estrangeira explicada pela língua dona da avaliação. Cinco novas capturas acrescentam comparação EN/ES/PT e navegação parcial. Entrada WHAT após WHERE concluído em Preparing tem lacuna concreta OPEN. T7 áudio pendente; T8 parcial. Homologação física do novo marcador e matriz visual completa continuam parciais.
 
 ## Objetivo e autorização
 
@@ -469,6 +469,41 @@ As regressões de T1/T2 com cadeia real, isolamento de idioma, as 81 projeções
 ### Próximo reteste humano
 
 No novo preview, conferir rótulos/cartões em AUTO → PORTRAIT → LANDSCAPE → AUTO e girar o celular, cruzando EN/ES/PT e as QWords utilizadas. Em frases longas, deslizar até o token focado e seu núcleo antes de conferir a seta. Se Trail WHERE 2/3 coexistir com botão WHICH destacado, registrar os dois juntos. T7/T8 seguem pendentes; não reiniciar circuitos completos já homologados. Cores aprovadas, áudio e evidência assistida conservam seus escopos. Revisão visual global e matriz humana completa continuam OPEN/parciais.
+
+## Bolinha WHERE e comparação de idiomas — JAGUAR-LIVE-55
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Base:** `b553d08c3e5c7ff3b294ab6ec54ef4283ba3fb80`.
+
+**Fontes:** relato de bolinha branca semipreenchida antes de responder sob novo nick e cinco montagens: `image(20261008-215215).png`, `image(20261008-220618).png`, `image(20261008-223506).png`, `image(20261008-224758).png`, `image(20261008-231110).png`. Todos revistos. As imagens mostram o nick `bbc9` e estados posteriores com respostas; não comprovam sozinhas a cronologia inicial antes da interação.
+
+### Causa e correção visual
+
+O código usava ◐ como badge da **Session selecionada**, mesmo com 0/3. Não era evidência aceita nem herança de competência, mas a reutilização do símbolo parcial confundia seleção e progresso. Agora o renderer consulta a projeção canônica das provas já aceitas, sem escrever avaliação:
+
+| Situação do botão no idioma dono da avaliação | Badge | Significado |
+|---|---|---|
+| Avaliação selecionada, nenhuma exigência aceita | ○ | Avaliação selecionada / pronta, sem avanço demonstrado |
+| Ao menos uma exigência do contrato aceita | ◐ | Avaliação em progresso |
+| Fechamento confirmado registrado pela autoridade Green Pass | ★ | Green Pass conquistado |
+| Só exploração ou tela em outro idioma sem selecionar seu circuito | Sem badge ativo daquele circuito | A seleção visual da QWord continua independente da avaliação |
+
+Os títulos/ARIA de seleção estão em EN/ES/PT. A regra vale para WHICH/WHAT/WHY/WHERE. Um diagnóstico de núcleo observado ou uso assistido sozinho não transforma ○ em ◐; um conjunto completo de requisitos sem fechamento canônico não inventa ★. A marca de avaliação pronta não muda a cor/palavra selecionada nem produz Session/Evidence.
+
+### O que a comparação demonstra
+
+- A ausência do badge EN ao alternar apenas LANGUAGE para ES/PT segue o escopo: a avaliação continua EN, visível no aviso de tela/avaliação. Isso não demonstra perda de progresso. Selecionar DÓNDE/ONDE explicitamente escolhe ou recupera o circuito próprio daquele idioma.
+- WHAT aparece como diagnóstico/prática exploratória nos três idiomas na primeira montagem; WHICH EN mantém 1/3 durante os displays ES/PT na segunda. As montagens WHERE mostram 2/3 no Shopping e fechamento 3/3 em Preparing, incluindo registros confirmados mantidos sob outro idioma de tela e estrelas após seleção explícita do idioma correspondente.
+- A última montagem mostra **WHAT selecionado**, frase e diagnóstico WHAT atualizados, e avaliação **WHERE confirmada** preservada. Portanto o botão responde na exploração; a prova de WHAT não se abre porque a origem continua Shopping/WHERE e falta a rota explícita de adoção WHERE → WHAT em Preparing. Registrar **ENTRY-WHERE-TO-WHAT-01 OPEN**, sem contornar autoridade ou alterar o 3/3 concluído. Não confundir essa lacuna com o badge de 0/3.
+
+### Testes e estados
+
+O teste existente `test-verb-explorer-thinking-mind-trilanguage.js` falha antes com ◐ em 0/3 e passa após a correção. **288 casos** usam os módulos reais de contrato/progresso/Trail/marcador com quatro skills × três idiomas donos × oito estados de evidência × três idiomas de tela. Cobrem novo nick, resposta errada, núcleo exploratório, uso apenas assistido, uma/duas provas aceitas, três antes do fechamento e fechamento canônico. Repetir a projeção conserva o estado integral. Mantém os **189 casos** de QWord/idioma/formato e sua seleção visual.
+
+O teste WHERE live reproduz em **seis circuitos EN/ES/PT × Node/browser VM** o bloqueio de WHAT no destino após WHERE 3/3: não nasce nova Session nem Evidence; a avaliação/provas/trace anteriores ficam idênticos e WHERE retorna com o painel preservado. Trata-se da fronteira atual e de uma lacuna de entrada ainda não integrada, não de uma funcionalidade concluída.
+
+**10 scripts relevantes PASS localmente**, incluindo linguagem, cadeia real de avaliação, 81 casos Trail, 43 Choice Bridge e as autoridades de progresso/marcador. Três arquivos JS alterados passam sintaxe. DOM/input do marcador são controlados; a revisão física da nova apresentação ainda está pendente. CSS/paleta/diagramas, corpus e autoridades de ativação não foram alterados. Publicação/Cloudflare e eventual estado Actions ficam na PR #3.
+
+**Continuidade:** T2/comparação de idiomas parcial; ENTRY-WHERE-TO-WHAT-01 OPEN; QWORD-RETURN-WHERE-01 anterior não reproduzido/não fechado globalmente; T7 áudio PENDING; T8 navegação agora parcial pela visita a Preparing e preservação do registro, sem homologar todo Back/Forward/retorno. Conferir ○ antes de responder, ◐ após prova aceita e manutenção do escopo ao trocar LANGUAGE no novo preview. Preservar o ensaio aberto anterior em outra aba.
 
 
 
