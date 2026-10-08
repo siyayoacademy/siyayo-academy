@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-52  
+**Checkpoint atual:** JAGUAR-LIVE-53  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `829b9c3f7be67af7e5769abaa904f19fd385269f`  
-**Estado atual:** usuário confirmou o efeito e a coerência do azul escuro/dourado no preview LIVE-51. HOME-EXTERIOR-BLUE-01 confirmado na vista aprovada; roteiro humano T1–T8 preparado e ainda pendente. TRAIL-DISPLAY-LANGUAGE-01 permanece corrigido e DEPENDENCY-SCROLL-01 confirmado no reteste móvel anterior. A matriz humana completa de formatos permanece parcial.
+**Base desta revisão:** `c0015414b07b1d10036659ad2d79200dfc6ac53f`  
+**Estado atual:** T1/T2 relatados e investigados. Troca somente de LANGUAGE conserva progresso; seleção explícita usa circuitos próprios por idioma e recupera o original nos testes reais. Um retorno WHERE do T2 permanece OPEN na interface, sem reprodução na sequência controlada. T3–T8 declarados não executados. Cores e rolagem mantêm a homologação anterior; matriz completa de formatos parcial.
 
 ## Objetivo e autorização
 
@@ -402,6 +402,42 @@ Antes de T1, anotar o nick, Experience, idioma da avaliação, QWord e progresso
 **Como reportar:** `T1 OK; T2 OK; T3 problema; T4 não testado`. Se houver problema, informar dispositivo, formato, idiomas de tela/avaliação, QWord, Experience e progresso antes/depois; captura apenas se ajudar a localizar. Nenhum resultado é antecipado neste roteiro. Começar por T1 e devolver resultados em pequenos lotes.
 
 **Continuidade:** aprovação desta vista não fecha VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 ou a matriz humana inteira. Testes já homologados não precisam ser repetidos integralmente; T4 e T7 são checagens pontuais após as alterações recentes.
+
+## T1/T2 — investigação dos relatos — JAGUAR-LIVE-53
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Base de publicação:** `c0015414b07b1d10036659ad2d79200dfc6ac53f`. **UI ensaiada:** preview fixo `f9ff9ba1`, implementação `829b9c3f7be67af7e5769abaa904f19fd385269f`.
+
+**Fontes humanas:** relato detalhado e `image(20261008-183603).png` / `image(20261008-185840).png`, ambos revistos diretamente. Os anexos são montagens anotadas de estados T1; não permitem inferir o dispositivo físico ou fechar a matriz de formatos. O usuário declara T3–T8 ainda não executados.
+
+| Ensaio | Observação relatada | Conclusão e limite |
+|---|---|---|
+| T1, nick `f9ff9ba1`, avaliação EN | WHICH 0/3 → Choice 1/3; tela PT/ES conserva EN 1/3; resposta PT e comparação pronominal ES não avançam contrato EN | Retenção na troca somente de LANGUAGE confirmada. Respostas exploratórias/contextuais em outro idioma não pertencem ao contrato EN |
+| T1, nick `T1 — Idiomas`, avaliação PT | QUAL 1/3 continua após tela EN. Clique explícito em WHICH cria EN 0/3. Tela ES/PT mantém avaliação EN; núcleo observado é prática livre | 0/3 corresponde ao novo circuito EN. Mudar só a tela para PT não seleciona o circuito PT. Recuperação do PT 1/3 após clique em QUAL é esperada e passou nos testes controlados; essa última seleção não consta do relato |
+| T2, nick `T2 — QWs`, EN | WHICH núcleo observado 0/3; WHAT 2/3; WHERE 2/3; retorno WHICH 0/3, Choice 1/3; WHAT retorna 2/3 com os demais progressos guardados | Observação de núcleo separada do contrato; retenção parcial entre QWords demonstrada no relato |
+| T2, retorno WHERE após WHICH 1/3 | Texto copiado permanece WHICH 1/3, incluindo “Try another word”; não há captura do seletor/aviso desse clique | **QWORD-RETURN-WHERE-01 OPEN.** Não é possível concluir se o botão foi aplicado e a restauração falhou, se o clique não chegou ou se a leitura foi transitória. A ocorrência não foi reproduzida nos módulos reais |
+
+### Prova controlada e cobertura adicionada
+
+A regressão existente `scripts/test-where-live-assessment.js` agora reproduz os dois ensaios em **EN/ES/PT × Node/browser VM**. O transporte de JSON e o DOM são fixtures; startup, corpus, fronteiras, avaliação e contadores são os módulos reais.
+
+- **T1:** Choice canônica aceita em 1/3; LANGUAGE isolado conserva Session/contagem; resposta canônica em idioma estrangeiro é rejeitada antes de alterar a avaliação. Seleção explícita em outro idioma cria Session separada 0/3; retornar ao original e selecionar WHICH/QUAL restaura a mesma Session e seu 1/3. Retornar ao outro idioma restaura seu próprio 0/3.
+- **T2:** WHICH 0/3 → WHAT 2/3 → WHERE 2/3 → WHICH 0/3 → Choice 1/3 → uso de determinante incorreto → WHERE 2/3 → WHAT 2/3 → WHICH 1/3. Retornos passam na primeira seleção; nenhum Attempt é repetido pela recuperação. O erro de uso mantém o Choice já aceito e WAIT.
+- Choice usa Resolver, Reader, Evaluator, propriedade da ocorrência, Attempt, Bridge, Coordinator e Cycle de produção. WHAT/WHERE recebem cliques nos painéis reais com DOM controlado. O alvo incorreto de uso WHICH passa por Specification/Result/Evidence/Attempt reais.
+- Sintaxe do teste alterado e **seis scripts de regressão PASS localmente**: WHERE live (ampliado), seleção de idioma, isolamento de idioma, aviso/Trail de 81 casos, fronteira de seleção Thinking Mind e Choice Evidence Packet Bridge de 43 verificações.
+- O workflow Bootstrap já executa o teste ampliado. CSS, JS de runtime, corpus, Skill/Session, suporte de áudio e contratos permanecem intactos. Os resultados controlados não fecham a ocorrência física do clique em WHERE nem os testes T3–T8. Não houve nova observação do preview servido por navegador.
+
+### Reteste mínimo para QWORD-RETURN-WHERE-01
+
+Continuar na **mesma aba e nick** do T2, EN/Shopping, com WHAT 2/3, WHERE 2/3 e WHICH 1/3 guardados. Clicar WHERE uma vez, aguardar a atualização e conferir em conjunto:
+
+1. O botão WHERE fica selecionado em THINKING MIND?
+2. A Trail passa à avaliação WHERE 2/3, ou mostra WHICH e algum aviso de exploração/avaliação?
+3. Surge o painel WHERE de função/localização?
+
+Se persistir, enviar captura que reúna seletor e Trail/painel, com antes/depois. Preservar o ensaio sem recarregar: os circuitos retidos nesta implementação pertencem ao runtime da página atual. Essas perguntas delimitam o próximo dado necessário; não pressupõem a causa ou uma correção inexistente.
+
+**Estados atuais:** T1 parcial (LANGUAGE confirmado; recuperação explícita original verificada automaticamente, aguardando relato humano); T2 parcial / QWORD-RETURN-WHERE-01 OPEN; **T3, T4, T5, T6, T7, T8 PENDING — não executados**. A homologação anterior de rolagem e cores permanece com o escopo já registrado. Nenhum GREEN é inferido dos testes de exploração ou deste registro.
+
 
 
 

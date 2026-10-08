@@ -32,7 +32,41 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-52
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-53
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `c0015414b07b1d10036659ad2d79200dfc6ac53f`. This includes the separate approved Gold Seed video roadmap; preserve it.
+
+**Reviewed UI:** `829b9c3f7be67af7e5769abaa904f19fd385269f` — pinned `f9ff9ba1` preview. Subsequent documentation did not change that UI.
+
+**Change kind:** AUDIT / REGRESSION COVERAGE — investigate the reported T1/T2 cases with production modules; no runtime or palette change.
+
+**User GO:** verify the detailed T1 language-switch and T2 QWord-return reports and two annotated images. T3–T8 are explicitly not executed.
+
+**Status:** T1 LANGUAGE-only progress retention confirmed in the user's reports. Explicitly clicking WHICH in another language selects its own circuit, which can begin at 0/3; returning to the original language and explicitly selecting QUAL/WHICH restores the original 1/3 in controlled production-module tests. T2 retains WHAT 2/3 and WHERE 2/3 in the user's account, but one reported WHERE click leaves WHICH 1/3 active. QWORD-RETURN-WHERE-01 remains OPEN: the exact assessment sequence, including a failed WHICH-use response, restores WHERE 2/3 on the first explicit selection in all six controlled EN/ES/PT Node/browser-VM cases; physical UI behavior has not been independently reproduced.
+
+## WORK RECORD
+
+1. Verified the remote HEAD, current work map and scope log. Checked 530 local JS/test/learning/CSS files against remote blobs before editing; all matched. The Gold Seed roadmap append is retained in this map and the remote base tree.
+2. Reviewed `image(20261008-183603).png` and `image(20261008-185840).png`. They document T1's language/assessment states as annotated composites, not a complete physical-device/format sequence. T2's return anomaly is reported in the supplied text.
+3. Nick `f9ff9ba1`: EN WHICH advances 0/3 → 1/3; PT/ES display and foreign-language answers keep EN 1/3. Pronominal CUÁL/head identification and contextual-fit feedback are separate from determiner-contract evidence.
+4. Nick `T1 — Idiomas`: PT QUAL 1/3 survives EN display. The subsequent explicit EN WHICH selection begins a separate EN 0/3; PT/ES display alone keeps that EN circuit. A head answer in those display languages is free practice. The user's text does not yet include an explicit return to PT QUAL and recovery of its saved 1/3.
+5. Nick `T2 — QWs`: WHICH head observed at 0/3, WHAT 2/3, WHERE 2/3 and WHICH Choice 1/3 are valid distinct progress states. Returning to WHAT preserves 2/3. The one WHERE click that retains WHICH is not explained away or marked fixed.
+6. Expanded the existing `scripts/test-where-live-assessment.js` integration, already run by Bootstrap CI. It uses production startup, canonical corpus, Choice Resolver/Reader/Evaluator/Attempt/Coordinator/Cycle, WHAT/WHERE panels and failed determiner-use Result/Evidence/Attempt. T1 rejects foreign-language evidence, births a distinct language circuit and restores the original Session. T2 restores the three exact counts without replaying Attempts. DOM/transport are controlled fixtures; native button delivery is outside that proof.
+7. Six relevant regression scripts and changed-test syntax PASS locally, including the existing 81 Trail cases and 43 Choice Bridge checks. No new served-browser/device observation or current GitHub Actions success is claimed; publication/check readback is recorded in PR #3.
+
+## NEXT GO
+
+In the same active EN Shopping trial/nick `T2 — QWs`, click WHERE once and compare the Thinking Mind selected button, Trail assessment/notice and location-practice panel after the refresh settles. Expected: the existing WHERE 2/3 circuit. If WHICH persists, capture those regions together and record whether WHERE becomes visually selected. Do not reload that trial before checking; its retained circuits belong to the current page runtime. Human original-language recovery can be checked separately with the same trial/nick and an explicit QUAL/WHICH selection after returning to its language.
+
+T1/T2 are partial human checks; QWORD-RETURN-WHERE-01 stays OPEN. T3–T8 remain PENDING/unexecuted as stated by the user. Earlier HOME palette approval and DEPENDENCY-SCROLL-01 mobile confirmation retain their scope. VISUAL-PATITA-01, VISUAL-CARDS-02, ENTRY-WHERE-01 and the full format matrix stay OPEN/partial. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-52
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

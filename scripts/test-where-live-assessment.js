@@ -8,6 +8,7 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const read = name => fs.readFileSync(path.join(root, 'js', name + '.js'), 'utf8');
 const corpus = require('../data/learning/experience-seeds.json').items;
+const nouns = require('../data/lexicon/nouns/nouns.json');
 const where = require('../data/learning/skills/where.json');
 const grounding = require('../data/learning/where-spatial-answer-grounding.json');
 const local = corpus.find(item => item.id === 'shopping-for-dinner');
@@ -58,7 +59,8 @@ async function environment(mode, language, learnerId, data = grounding) {
   });
   box.window = box;
   box.SIYAYOVerbExplorerResumeRuntime = {captureContext: () => state};
-  box.SIYAYOVerbExplorerExperienceNavigation = {getExperience: id => corpus.find(item => item.id === id), getExperiences: () => corpus};
+  box.SIYAYOVerbExplorerExperienceNavigation = {getExperience: id => corpus.find(item => item.id === id), getExperiences: () => corpus,
+    getNouns: () => nouns};
   box.SIYAYOVerbExplorerExperienceRuntime = {
     activeQuestionWord: () => state.questionWord, activeExperienceId: () => state.currentExperienceId,
     activeLanguage: () => state.experienceLanguage, speak: (...args) => box.speakText(...args)
@@ -93,8 +95,18 @@ async function environment(mode, language, learnerId, data = grounding) {
     'leaf-assessment-target-readiness', 'leaf-assessment-target-provider', 'verb-explorer-thinking-mind-assessment-selection',
     'adaptive-where-location-probe-specification-source', 'adaptive-where-location-probe-result',
     'adaptive-where-location-probe-evidence-bridge', 'adaptive-where-location-probe-attempt-boundary',
-    'verb-explorer-learner-event', 'verb-explorer-where-assessment-live'
+    'verb-explorer-learner-event', 'verb-explorer-where-assessment-live',
+    'contextual-choice-resolver', 'choice-support-sensor', 'choice-evidence-evaluator',
+    'choice-attempt-ownership', 'choice-attempt-boundary', 'verb-explorer-choice-resolution-reader',
+    'verb-explorer-choice-evidence-bridge', 'verb-explorer-choice-attempt-factory',
+    'verb-explorer-choice-evidence-packet-bridge', 'verb-explorer-adaptive-controller',
+    'adaptive-what-object-question-probe-specification-source', 'adaptive-what-object-question-probe-result',
+    'adaptive-what-object-question-probe-evidence-bridge', 'adaptive-what-object-question-probe-attempt-boundary',
+    'verb-explorer-what-assessment-live', 'adaptive-determiner-use-probe-specification-source',
+    'adaptive-determiner-use-probe-result', 'adaptive-determiner-use-probe-evidence-bridge',
+    'adaptive-determiner-use-probe-attempt-boundary'
   ]) vm.runInContext(read(name), box, {filename: name + '.js'});
+  box.SIYAYOChoiceSupportSensor = box.SIYAYOChoiceSupportSensor.create();
   // Execute the actual production speech function with native TTS transport controlled.
   const speech = read('verb-explorer').split('\n').find(line => line.startsWith('function speakText('));
   assert.ok(speech); vm.runInContext(speech, box);
@@ -106,6 +118,20 @@ async function environment(mode, language, learnerId, data = grounding) {
     select: q => box.SIYAYOVerbExplorerThinkingMindAssessmentSelection.select(q),
     snapshot: () => box.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot(),
     records: () => box.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource.getProfile()?.observations || [],
+    chooseWhich(candidateId) {
+      const index = local.thinkingMind.findIndex(item => item.questionWord === 'which');
+      state = {...state, experienceQuestion: index, experienceChoiceCandidate: candidateId};
+      const result = box.SIYAYOChoiceResolver.resolveChoice(local.thinkingMind[index].choiceContext,
+        candidateId, state.experienceLanguage);
+      // Controlled DOM transport of the production resolver's rendered feedback.
+      // Reader/Evaluator/Attempt/Coordinator/Cycle stay real; no evidence is injected.
+      const feedback = doc.getElementById('choiceFeedback') || doc.createElement('div');
+      feedback.id = 'choiceFeedback';
+      feedback.querySelector = selector => selector.includes('.is-contextual')
+        ? {querySelector: () => ({textContent: result.contextualResponse.score + ' / ' + result.contextualResponse.possibleScore})}
+        : {classList: {contains: name => name === 'is-valid' && result.canonicalForm.valid === true}};
+      return box.SIYAYOVerbExplorerAdaptiveCoordinator.submitChoice(candidateId, null);
+    },
     mount(experience = corpus.find(item => item.id === state.currentExperienceId)) {
       return live.mount({document: doc, experience, language: state.experienceLanguage});
     },
@@ -128,8 +154,88 @@ function assertProgress(env, completed) {
   assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, completed === 3 ? 1 : 0);
 }
 
+async function verifyReportedLanguageAndQWordSequence(mode, language) {
+  const whichQuestion = local.thinkingMind.find(item => item.questionWord === 'which');
+  const preferred = require('../js/contextual-choice-resolver.js').rankCandidates(whichQuestion.choiceContext)[0];
+  assert.ok(preferred, 'use a corpus-owned canonical choice, not a fabricated pass');
+  async function pick(env, word) {
+    env.move({questionWord: word, experienceQuestion: local.thinkingMind.findIndex(item => item.questionWord === word)});
+    assert.equal(await env.select(local.thinkingMind.find(item => item.questionWord === word)), true,
+      'one explicit selection of ' + word + ' succeeds');
+  }
+  function progress(env, completed) {
+    const snapshot = env.snapshot();
+    const projected = env.box.AdaptivePassContractProgressView.project(
+      snapshot.context.passContract, snapshot.context.evidencePackets, env.box.GreenPassProfile);
+    assert.equal(projected.completed, completed);
+    assert.equal(projected.status, 'WAITING_FOR_EVIDENCE');
+    assert.equal(snapshot.session.decision.assessmentScope.language,
+      snapshot.context.assessmentScope.language);
+  }
+  const t1 = await environment(mode, language, 'reported-T1-' + mode + '-' + language);
+  await pick(t1, 'which'); assert.ok(t1.chooseWhich(preferred.id)); progress(t1, 1);
+  const original = t1.snapshot(), before = JSON.stringify(original);
+  for (const displayLanguage of ['pt', 'en', 'es', language]) {
+    t1.move({experienceLanguage: displayLanguage});
+    assert.strictEqual(t1.snapshot().session, original.session, 'LANGUAGE alone keeps the assessment');
+    progress(t1, 1);
+    if (displayLanguage !== language)
+      assert.equal(t1.chooseWhich(preferred.id), null, 'foreign-language response cannot supply evidence');
+    assert.equal(JSON.stringify(t1.snapshot()), before, 'display/foreign response leaves assessment untouched');
+  }
+  const otherLanguage = language === 'en' ? 'pt' : 'en';
+  t1.move({experienceLanguage: otherLanguage}); await pick(t1, 'which');
+  const separate = t1.snapshot().session;
+  assert.notStrictEqual(separate, original.session); progress(t1, 0);
+  assert.equal(separate.decision.assessmentScope.language, otherLanguage);
+  t1.move({experienceLanguage: language}); progress(t1, 0);
+  await pick(t1, 'which'); assert.strictEqual(t1.snapshot().session, original.session); progress(t1, 1);
+  t1.move({experienceLanguage: otherLanguage}); await pick(t1, 'which');
+  assert.strictEqual(t1.snapshot().session, separate); progress(t1, 0);
+
+  const t2 = await environment(mode, language, 'reported-T2-' + mode + '-' + language);
+  await pick(t2, 'which'); const whichSession = t2.snapshot().session; progress(t2, 0);
+  await pick(t2, 'what'); const whatSession = t2.snapshot().session;
+  assert.equal(t2.box.SIYAYOVerbExplorerWhatAssessmentLive.mount({document: t2.doc, experience: local, language}), true);
+  const whatGroups = t2.doc.getElementById('whatAssessmentPanel').querySelectorAll('.what-object-question-probe');
+  assert.equal(whatGroups.length, 2);
+  for (const group of whatGroups) group.querySelectorAll('.what-probe-option')[0].click();
+  progress(t2, 2);
+  await pick(t2, 'where'); const whereSession = t2.snapshot().session;
+  assert.equal(t2.mount(), true);
+  t2.button('spatial-function', 'location').click();
+  t2.button('location-answer', 'grounded-location').click(); progress(t2, 2);
+  await pick(t2, 'which'); assert.strictEqual(t2.snapshot().session, whichSession); progress(t2, 0);
+  assert.ok(t2.chooseWhich(preferred.id)); progress(t2, 1);
+  // The supplied T2 text also shows "Try another word" before the WHERE return.
+  // Include that real failed-use Attempt without changing the accepted Choice.
+  const spec = t2.box.AdaptiveDeterminerUseProbeSpecificationSource.resolve(
+    t2.box.SIYAYOVerbExplorerCanonicalSkillSource.getDefinition(), local, language, nouns);
+  const wrong = spec.alternatives.find(item => item.id !== spec.expectedAlternativeId);
+  const event = t2.box.SIYAYOVerbExplorerLearnerEvent.fromDeterminerUseProbeSelect(wrong.id, {
+    currentExperienceId: spec.experienceId, language, dimension: spec.dimension,
+    targetForm: spec.targetForm, targetNoun: spec.targetNoun
+  });
+  const evaluated = t2.box.AdaptiveDeterminerUseProbeResult.evaluate(spec, event);
+  assert.equal(evaluated.result, 'fail');
+  const evidence = t2.box.AdaptiveDeterminerUseProbeEvidenceBridge.fromResult({
+    result: evaluated, learnerEvent: event, supportSensor: {support: () => 'none'},
+    attemptLoop: t2.box.AdaptiveAttemptLoop
+  });
+  const attempt = t2.box.AdaptiveDeterminerUseProbeAttemptBoundary.assemble({learnerEvent: event, evidence});
+  assert.ok(t2.box.SIYAYOVerbExplorerAdaptiveCoordinator.submitObservedAttempt(attempt, event));
+  progress(t2, 1);
+  const footprints = t2.records().length;
+  await pick(t2, 'where'); assert.strictEqual(t2.snapshot().session, whereSession);
+  assert.equal(t2.mount(), true); assertProgress(t2, 2);
+  await pick(t2, 'what'); assert.strictEqual(t2.snapshot().session, whatSession); progress(t2, 2);
+  await pick(t2, 'which'); assert.strictEqual(t2.snapshot().session, whichSession); progress(t2, 1);
+  assert.equal(t2.records().length, footprints, 'returning among QWords never replays an Attempt');
+}
+
 async function main() {
   for (const mode of ['Node', 'browser VM']) for (const language of ['en', 'es', 'pt']) {
+    await verifyReportedLanguageAndQWordSequence(mode, language);
     const learnerId = 'where-live-' + mode + '-' + language;
     const env = await environment(mode, language, learnerId);
     assert.equal(env.mount(), false, 'grounding/identity alone does not create a Session');
@@ -255,6 +361,7 @@ async function main() {
   assert.equal(await malformed.select(question(local)), true); assert.equal(malformed.mount(), false);
   assert.equal(malformed.records().length, 0, 'missing alternative fails closed before presentation');
   console.log('PASS — six EN/ES/PT Node/browser-VM live-panel circuits use production startup and click -> Result -> Evidence -> Attempt -> Coordinator/Cycle; 0/3, 1/3 and 2/3 WAIT, independent transfer 3/3.');
+  console.log('PASS — reported T1/T2 sequences preserve WHICH 1/3 on LANGUAGE-only changes, reject foreign-language responses, recover the original language on one explicit click, and retain WHAT 2/3 / WHERE 2/3 / WHICH 1/3 on first-click QWord return.');
   console.log('PASS — failed answers, stale buttons, identity/language/location drift and fresh destination startup do not fabricate competence; one footprint per occurrence and one closure per scope, with retained Shopping recovery.');
   console.log('PASS — native speech onstart, not request/error, observes audio; assistance remains WAIT across remount/reclick and cannot cross identity. No automatic NEXT or human learner claim.');
 }
