@@ -3,8 +3,12 @@
 // Session plus an explicit learner response can submit to the canonical Cycle.
 (function(root){
 'use strict';
-var feedbackMemory=Object.create(null);
+var feedbackMemory=Object.create(null),generation=0;
 function id(value){return typeof value==='string'?value.trim():'';}
+function isExploringWhich(){
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  return !runtime||typeof runtime.activeQuestionWord!=='function'||runtime.activeQuestionWord()==='which';
+}
 function panel(doc){
   if(!doc||typeof doc.getElementById!=='function')return null;
   var view=doc.getElementById('experienceView');
@@ -23,6 +27,7 @@ function panel(doc){
   return el;
 }
 function hide(doc){
+  generation+=1;
   var el=panel(doc);
   if(!el)return false;
   el.hidden=true;
@@ -38,6 +43,8 @@ function mount(input){
   var el=panel(doc);
   if(!el)return false;
   hide(doc);
+  if(!isExploringWhich())return false;
+  var mountedGeneration=generation;
   var experience=input.experience,language=id(input.language);
   var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var skills=root.SIYAYOVerbExplorerCanonicalSkillSource;
@@ -76,6 +83,7 @@ function mount(input){
   var installed=wire.install(presentation,{
     container:container,
     onEvent:function(event,target){
+      if(mountedGeneration!==generation||el.hidden||!isExploringWhich())return null;
       var now=coordinator.snapshot();
       if(!now||now.session!==active.session)return null;
       var state=root.SIYAYOVerbExplorerAdaptiveStateBridge;
@@ -102,13 +110,15 @@ function mount(input){
       if(feedbackKey)feedbackMemory[feedbackKey]=Object.freeze({text:feedback.textContent});
       var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
       if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
+      var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+      if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
       var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
       if(adoption&&typeof adoption.install==='function')adoption.install({document:doc});
       return coordinated;
     }
   });
   if(installed!==true)return false;
-  // Presentation follows this probe's corpus, independent of the explored QWord.
+  // Highlight only this owned probe's corpus while WHICH is explored.
   var targetPresentation=root.SIYAYOStudyTargetPresentation;
   var targetQuestion=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='which';});
   var promptNode=typeof container.querySelector==='function'?container.querySelector('.determiner-use-probe-prompt, .determiner-use-transfer-probe-prompt'):null;

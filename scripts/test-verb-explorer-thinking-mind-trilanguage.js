@@ -82,6 +82,7 @@ async function verifyButtons(){
     SIYAYOVerbExplorerAdaptiveEvidenceProfileSource:{getProfile:()=>evidenceProfile},
     AdaptivePassContractProgressView:require('../js/adaptive-pass-contract-progress-view.js'),
     GreenPassProfile:require('../js/green-pass-profile.js'),
+    SIYAYOQuestionWordAssessmentContract:require('../js/question-word-assessment-contract.js'),
     AdaptiveLearnerTrailView:require('../js/adaptive-learner-trail-view.js'),
     AdaptiveLearnerProgressMarker:require('../js/adaptive-learner-progress-marker.js'),
     AdaptiveAssessmentScope:{},
@@ -107,7 +108,7 @@ async function verifyButtons(){
     'renderDependencyFocus','renderDependencyHeadProbe','renderLivingLines','renderChoiceResolver','visitPreviousExperience'])state[name]=()=>{};
   vm.runInContext(runtime.split('\n').find(line=>line.startsWith('function cap(')),context);
   for(const name of ['activeExperience','activeThinkingQuestion','chooseThinkingQuestion',
-    'refreshThinkingMindAssessmentHighlight','renderExperience','selectThinkingMindAssessment']){
+    'refreshThinkingMindAssessmentHighlight','renderExperience','renderAssessmentEntryNotice','selectThinkingMindAssessment']){
     vm.runInContext(functionSource(name),context,{filename:'verb-explorer.js:'+name});
   }
   vm.runInContext(runtime.split('\n').find(line=>line.startsWith('function attachEvents(')),context);

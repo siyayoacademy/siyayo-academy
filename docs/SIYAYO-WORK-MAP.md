@@ -32,7 +32,38 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-55
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-56
+
+**Recorded:** 2026-10-08 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3
+
+**Base HEAD:** `1e8fc63f4956411d8c00678cfe7fe1b189a637e7`. Preserve all unrelated base-tree paths, including the other thread's Gold Seed roadmap.
+
+**Change kind:** QWORD / DISPLAY-LANGUAGE TRAIL ALIGNMENT AND LIVE-PANEL OWNERSHIP.
+
+**User evidence:** two images `image(20261009-002107).png` and `image(20261009-002121).png`, both reviewed directly. Nick `b5ec3086D` shows Preparing WHERE exploration, a confirmed Shopping-origin WHAT 3/3, WHERE not started, LINES with a WHERE location question and a lower WHAT kitchen-transfer panel with GREEN PASS WHAT. The user reports WHAT 2/3 in Shopping before this, other QWords leaving WHAT visible, and language buttons changing while the Trail stays on WHAT. The final explicit direction is that the Learning Trail indication must follow the QWord/language equivalence because the old presentation is visually confusing.
+
+**Findings:** `QWORD-PANEL-OWNERSHIP-01` and `TRAIL-CURRENT-QWORD-01` reproduced. WHAT mount checked the adopted skill and language but not the explored QWord; a still-mounted WHAT transfer response could complete the WHAT contract while WHERE was explored. The resulting Green Pass belongs to WHAT: the captures and production regression do not demonstrate WHAT evidence entering WHERE. The Trail's primary heading/marker and Word Path indication followed the owning assessment instead of the visible QWord, compounding the confusion. Preparing WHERE/WHICH are explicit resume-only declarations; missing Shopping-origin circuits cannot be started by a destination click.
+
+## Implemented in this step
+
+1. Learning Trail primary form follows the current canonical Experience question's display-language label, including WHERE/DÓNDE/ONDE and Preparing WHICH/CUÁLES/QUAIS. Same-QWord language changes retain the assessment language/contract and show the language notice; translating the heading does not create equivalence Evidence.
+2. Exploring another QWord uses a neutral exploration mark and explicit free-exploration state. The owning assessment's name, language, canonical state, evidence count and sequence are displayed in a separate **saved assessment** block. A WHAT Green Pass is never projected as the main WHERE mark. Word Path highlights the explored word and identifies the other ongoing record as saved. Canonical profile/Session/history are unchanged by these read-only projections.
+3. WHAT, WHICH and WHY panels now require their own explored QWord when the runtime is available, matching the existing WHERE boundary. A hidden/remounted or QWord-drifted response is rejected before Attempt submission. Generation checks prevent old detached WHAT/WHY controls from becoming valid after returning to the same Session. Accepted responses refresh the existing Thinking Mind badge immediately.
+4. A read-only entry notice explains where to begin a resume-only QWord with no retained circuit. It uses the explicit target/definition path, the unique declared origin and authored localized Experience/QWord labels. It creates no target, Session, Evidence or navigation. Existing retained language-owned circuits suppress the notice and resume normally.
+5. Existing Bootstrap-CI regressions expanded: six EN/ES/PT Node/browser-VM WHAT 2/3 Shopping → Preparing → other-QWord circuits, **126 real Trail QWord/display projections**, blocked old WHAT transfer response, independent WHAT and WHERE closure records and retained WHAT recovery. WHICH/WHY controlled panel tests cover QWord drift/remount and badge refresh. The scope-notice regression retains **81 cases** with the corrected current/saved presentation; the existing **288 badge / 189 selector-format cases** remain passing.
+6. **22 relevant regression scripts PASS locally; syntax of all 10 changed JS files PASS.** Includes unchanged S1→S2 and S2→S3 WHAT Green cycles, explicit S2/S3 adoption, WHERE origin/transfer, language isolation/recovery, free practice, Trail/progress/marker authorities and 43 Choice Bridge checks. DOM/speech/transport are controlled; this does not claim native-browser/device visual homologation or complete T7/T8. Publication/check readback is recorded in PR #3.
+
+## NEXT GO
+
+In the new commit preview, retain WHAT 2/3 in Shopping, visit Preparing and select WHERE/WHICH. Verify that the main Trail label matches the button and language, WHAT's 2/3 is visibly saved, no WHAT assessment questions remain exposed, and missing origin entry is explained. Return to Shopping and explicitly select the desired WHERE/WHICH origin circuit if it has never started; Preparing resumes that circuit. An existing retained circuit should recover without replaying Attempts. Returning explicitly to WHAT recovers its own progress.
+
+`ENTRY-WHERE-TO-WHAT-01` remains OPEN: this checkpoint does not implement the separately authorized WHERE → WHAT destination-entry route. T7 audio remains PENDING; T8 navigation has scoped partial evidence. The earlier WHERE/WHICH physical highlight occurrence and full device/format matrix are not globally closed. Preserve the previous open trial separately; a new preview origin does not migrate its state. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-55
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

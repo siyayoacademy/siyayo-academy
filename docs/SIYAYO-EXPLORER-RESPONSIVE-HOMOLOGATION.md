@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-55  
+**Checkpoint atual:** JAGUAR-LIVE-56  
 **Registro atualizado:** 2026-10-08, America/Sao_Paulo  
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `b553d08c3e5c7ff3b294ab6ec54ef4283ba3fb80`  
-**Estado atual:** marcador ◐ em avaliação selecionada a 0/3 reproduzido e corrigido para ○; ausência em tela estrangeira explicada pela língua dona da avaliação. Cinco novas capturas acrescentam comparação EN/ES/PT e navegação parcial. Entrada WHAT após WHERE concluído em Preparing tem lacuna concreta OPEN. T7 áudio pendente; T8 parcial. Homologação física do novo marcador e matriz visual completa continuam parciais.
+**Base desta revisão:** `1e8fc63f4956411d8c00678cfe7fe1b189a637e7`  
+**Estado atual:** painel WHAT e cabeçalho Trail persistentes sob WHERE/WHICH reproduzidos e corrigidos. A indicação principal acompanha a QWord/idioma visível; o contrato anterior fica em bloco de avaliação preservada. Provas ocultas/antigas não aceitam respostas. Preparing orienta a entrada na origem quando só pode retomar WHERE/WHICH. 22 regressões locais PASS; revisão física do novo visual, T7 e matriz completa continuam pendentes/parciais. A rota WHERE → WHAT separada continua OPEN.
 
 ## Objetivo e autorização
 
@@ -508,3 +508,27 @@ O teste WHERE live reproduz em **seis circuitos EN/ES/PT × Node/browser VM** o 
 
 
 
+
+## QWord visível, Learning Trail e provas preservadas — JAGUAR-LIVE-56
+
+**Data:** 2026-10-08, America/Sao_Paulo. **Base:** `1e8fc63f4956411d8c00678cfe7fe1b189a637e7`.
+
+**Evidência humana:** os dois anexos `image(20261009-002107).png` e `image(20261009-002121).png` mostram o nick `b5ec3086D`, WHERE selecionado em Preparing e LINES de localização, enquanto Trail e painel de transferência continuam WHAT 3/3 confirmado. O usuário informa WHAT 2/3 em Shopping antes da visita, repetição com outras QWords e idiomas, e pede explicitamente que a indicação do Learning Trail siga a mesma equivalência dos botões LANGUAGE/QWord.
+
+**Conclusão:** havia mistura de apresentação, não uma prova WHAT atribuída a WHERE. O painel WHAT não conferia a QWord explorada; uma resposta desse painel antigo ainda podia produzir uma transferência válida de WHAT e concluir seu próprio contrato enquanto WHERE aparecia escolhido. O cabeçalho/indicador do Trail priorizava WHAT e seus dados canônicos. A reprodução falha antes da correção ao exigir que um botão WHAT retido não conclua o contrato após escolher WHERE; o teste de indicação também falha com estado principal IN_PROGRESS em vez de EXPLORING.
+
+| Seleção visível | Indicação principal corrigida | Registro/provas |
+|---|---|---|
+| WHAT em EN, depois LANGUAGE ES/PT | WHAT / QUÉ / O QUE, com aviso do idioma da avaliação | Mesmo contrato/idioma dono e 2/3; nenhuma prova de equivalência criada |
+| WHERE/DÓNDE/ONDE, sem circuito de origem | Palavra visível, marca neutra e exploração livre | WHAT aparece em avaliação preservada; nenhuma pergunta/prova WHAT exposta |
+| WHICH/CUÁLES/QUAIS em Preparing, sem circuito de origem | Palavra visível, exploração livre e orientação de entrada na origem | WHAT conserva sua própria contagem; não nasce WHICH em Preparing |
+| Seleção com circuito Shopping retido do mesmo aluno/idioma | Indicação e painel próprios depois da recuperação explícita | Mesma Session/provas recuperadas, sem replay de Attempts |
+| WHAT já concluído, depois exploração WHERE | WHERE com marcador principal neutro | WHAT 3/3 confirmado no bloco preservado; não concede Green Pass a WHERE |
+
+WHAT/WHICH/WHY agora conferem a QWord explorada na montagem e antes da resposta, junto às fronteiras existentes de Session/Experience/idioma. Ocultar/remontar invalida os controles anteriores; WHERE já tinha essa proteção. As respostas válidas atualizam imediatamente o badge canônico. A orientação de origem é apenas leitura das declarações explícitas resume-only e do único ambiente que declara o início correspondente; não navega nem ativa avaliação. Não foram alterados corpus, contratos, dados de grounding, autoridades de ativação, paleta, tipografia ou os cartões/setas compactados no LIVE-54.
+
+**Validação local:** 22 scripts relevantes PASS, dez arquivos JS alterados passam sintaxe. A integração de cadeia real repete os seis circuitos EN/ES/PT × Node/browser VM e **126 projeções reais Trail** (WHAT mais seis outras QWords de Preparing × três idiomas de tela), verifica resposta antiga bloqueada, WHAT 2/3 preservado, WHAT 3/3 independente de WHERE e retomada/fechamento próprios de WHERE. Mantém 81 casos de idioma/QWord/progresso do Trail, 288 casos do badge, 189 seleções de QWord/idioma/formato e 43 checks do Choice Bridge. As fixtures controlam DOM, transporte e fala; não são homologação visual de navegador ou dispositivo.
+
+**Próximo reteste:** no novo preview, WHAT 2/3 Shopping → Preparing → WHERE → WHICH → WHAT, cruzando EN/ES/PT. Acompanhar juntos botão, cabeçalho Trail, bloco preservado e painel de provas. Para um WHERE/WHICH nunca iniciado, seguir a orientação de voltar a Shopping e selecionar a palavra; Preparing retoma a avaliação da origem. Conferir também que Green Pass WHAT não aparece como marca principal WHERE. Preservar o ensaio anterior em outra aba.
+
+**Continuidade:** `QWORD-PANEL-OWNERSHIP-01` / `TRAIL-CURRENT-QWORD-01` corrigidos e verificados localmente, reteste humano pendente. `ENTRY-WHERE-TO-WHAT-01` continua OPEN; essa adoção não foi implementada. T7 áudio PENDING, T8 parcial e a matriz física completa/ocorrência antiga WHERE-WHICH continuam parciais. Publicação/Cloudflare/Actions ficam na PR #3; não antecipar estado CI/deploy. Sem merge ou nova PR.

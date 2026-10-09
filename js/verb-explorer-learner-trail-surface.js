@@ -65,7 +65,7 @@
     }[language]||{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',saved:'progress saved',waiting:'not started'};
   }
 
-  function journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language,assessmentLanguage){
+  function journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language,assessmentLanguage,visualQWord){
     var labels=journeyLabels(language);
     var known=[
       {id:'which.use.determiner',word:'WHICH'},
@@ -81,10 +81,11 @@
       var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
       var saved=!current&&selection&&typeof selection.getRetainedProgress==='function'
         ?selection.getRetainedProgress(item.id,assessmentLanguage):[];
-      var state=confirmed?'confirmed':current?'active':saved.length?'saved':'waiting';
+      var explored=visualQWord&&visualQWord===item.word.toLowerCase();
+      var state=explored?(current?'active':'exploring'):confirmed?'confirmed':current?(visualQWord?'saved':'active'):saved.length?'saved':'waiting';
       var symbol=confirmed?'●':(current&&(past&&past.state==='IN_PROGRESS'||progress&&progress.completed>0)||saved.some(function(record){return record.progress.completed>0;}))?'◐':'○';
       var description=confirmed?stateLabel('CONFIRMED',language):
-        current&&progress?progress.completed+'/'+progress.total:saved.length?saved.map(function(record){
+        current&&progress?progress.completed+'/'+progress.total+(visualQWord&&!explored?' · '+labels.saved:''):saved.length?saved.map(function(record){
           return record.progress.completed+'/'+record.progress.total+' · '+labels.saved+' · '+record.originExperienceId;
         }).join(' / '):labels.waiting;
       return '<span class="learner-journey-word" data-state="'+state+'">'+
@@ -149,6 +150,8 @@
     var language=text(options.language)||text(liveLanguage)||'en';
     var copy=surfaceLabels(language);
     delete surface.dataset.observationState;
+    delete surface.dataset.assessmentSkill;delete surface.dataset.assessmentLanguage;
+    delete surface.dataset.currentQword;delete surface.dataset.displayLanguage;
     var observations=freeDiagnosticRecords(language,learnerId);
     var observationHtml=observations.length?'<small class="learner-trail-observation" data-observation-kind="free-diagnostic">'+escapeHtml(freeDiagnosticLabel(language))+'</small>':'';
     function observationOnly(){
@@ -254,6 +257,13 @@
 
     var visualQWord=experienceRuntime&&typeof experienceRuntime.activeQuestionWord==='function'?text(experienceRuntime.activeQuestionWord()):'';
     var assessmentQWord=skill.split('.')[0]||'';
+    var exploring=!!(visualQWord&&assessmentQWord&&visualQWord!==assessmentQWord);
+    var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+    var experience=catalog&&typeof catalog.getExperience==='function'?catalog.getExperience(liveState.currentExperienceId):null;
+    var question=experience&&(experience.thinkingMind||[]).find(function(item){return item.questionWord===visualQWord;});
+    var displayLabel=labelView.project(definition,language)||label;
+    var visibleForm=text(question&&question.questionWordLabel&&question.questionWordLabel[language])||
+      (exploring?visualQWord.toUpperCase():displayLabel.form);
     var scopeNotice='';
     if((visualQWord&&assessmentQWord&&visualQWord!==assessmentQWord)||assessmentLanguage!==language){
       var pieces=[];
@@ -264,25 +274,43 @@
       scopeNotice='<small class="learner-trail-scope-notice">'+escapeHtml(pieces.join(' · '))+'</small>';
     }
 
+    var assessmentHtml=
+      '<small class="learner-trail-meta">'+escapeHtml((exploring?label:displayLabel).family||'')+
+        ((exploring?label:displayLabel).grammarRole?' · '+escapeHtml((exploring?label:displayLabel).grammarRole):'')+'</small>'+
+      '<small>'+(exploring?escapeHtml(markerGlyph)+' ':'')+
+        escapeHtml(marker.state==='UNOBSERVED'&&observations.length?({en:'ASSESSMENT NOT YET OBSERVED',es:'EVALUACIÓN AÚN NO OBSERVADA',pt:'AVALIAÇÃO AINDA NÃO OBSERVADA'}[language]):stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
+      (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
+      (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
+      (trail.counts.legacyFootprints?'<small class="learner-trail-legacy">'+escapeHtml(({en:'HISTORICAL RECORDS',es:'REGISTROS ANTERIORES',pt:'REGISTROS ANTERIORES'}[language]||'HISTORICAL RECORDS')+' · '+trail.counts.legacyFootprints)+'</small>':'')+
+      progressHtml+
+      '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>';
+    var freeCopy={en:'FREE EXPLORATION · no assessment active for this selection',
+      es:'EXPLORACIÓN LIBRE · sin evaluación activa para esta selección',
+      pt:'EXPLORAÇÃO LIVRE · sem avaliação ativa para esta seleção'}[language]||'FREE EXPLORATION';
+    var savedCopy={en:'SAVED ASSESSMENT',es:'EVALUACIÓN GUARDADA',pt:'AVALIAÇÃO PRESERVADA'}[language]||'SAVED ASSESSMENT';
+    if(exploring)assessmentHtml=
+      '<section class="learner-trail-assessment-record" data-assessment-qword="'+escapeHtml(assessmentQWord)+'">'+
+        '<span class="learner-trail-label">'+escapeHtml(savedCopy+' · '+assessmentLanguage.toUpperCase())+'</span>'+
+        '<strong>'+escapeHtml(label.form)+'</strong>'+assessmentHtml+'</section>';
+
     if(observations.length)surface.dataset.observationState='OBSERVED';
-    surface.dataset.marker=marker.marker;
-    surface.dataset.state=marker.state;
+    surface.dataset.marker=exploring?'EMPTY_DOT':marker.marker;
+    surface.dataset.state=exploring?'EXPLORING':marker.state;
+    surface.dataset.currentQword=visualQWord||assessmentQWord;
+    surface.dataset.displayLanguage=language;
+    surface.dataset.assessmentSkill=skill;
+    surface.dataset.assessmentLanguage=assessmentLanguage;
     surface.hidden=false;
     surface.innerHTML=
-      '<div class="learner-trail-mark" aria-hidden="true">'+escapeHtml(markerGlyph)+'</div>'+
+      '<div class="learner-trail-mark" aria-hidden="true">'+escapeHtml(exploring?'◌':markerGlyph)+'</div>'+
       '<div class="learner-trail-copy">'+
         '<span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
-        '<strong>'+escapeHtml(label.form)+'</strong>'+
-        '<small class="learner-trail-meta">'+escapeHtml(label.family||'')+(label.grammarRole?' · '+escapeHtml(label.grammarRole):'')+'</small>'+
+        '<strong class="learner-trail-current-word">'+escapeHtml(visibleForm)+'</strong>'+
+        (exploring?'<small class="learner-trail-exploration">'+escapeHtml(freeCopy)+'</small>':'')+
         scopeNotice+
-        '<small>'+escapeHtml(marker.state==='UNOBSERVED'&&observations.length?({en:'ASSESSMENT NOT YET OBSERVED',es:'EVALUACIÓN AÚN NO OBSERVADA',pt:'AVALIAÇÃO AINDA NÃO OBSERVADA'}[language]):stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
-        (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+
         observationHtml+
-        (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
-        (trail.counts.legacyFootprints?'<small class="learner-trail-legacy">'+escapeHtml(({en:'HISTORICAL RECORDS',es:'REGISTROS ANTERIORES',pt:'REGISTROS ANTERIORES'}[language]||'HISTORICAL RECORDS')+' · '+trail.counts.legacyFootprints)+'</small>':'')+
-        progressHtml+
-        '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>'+
-        journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language,assessmentLanguage)+
+        assessmentHtml+
+        journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language,assessmentLanguage,visualQWord)+
       '</div>';
 
     return true;

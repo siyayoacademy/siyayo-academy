@@ -255,6 +255,8 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .learner-journey-word small{color:#dce7f7;font-size:.62rem;letter-spacing:0}
 .learner-journey-word[data-state="confirmed"]{border-color:#e3c571}
 .learner-journey-word[data-state="confirmed"] b{color:#f2d88a}
+.learner-journey-word[data-state="active"],.learner-journey-word[data-state="exploring"]{border-color:var(--siyayo-gold-primary)}
+.learner-trail-assessment-record{display:grid;justify-items:center;gap:3px;width:100%;min-width:0;margin-top:10px;padding:10px 12px;border:1px solid rgba(242,216,138,.28);border-radius:10px;background:var(--siyayo-blue-dark)}
 .learner-journey-choice{display:block;color:#8fe6b6!important;letter-spacing:0!important}
 .learner-journey p{margin:6px 0 0;font-size:.76rem}
 .learner-journey p b{color:#f2d88a}

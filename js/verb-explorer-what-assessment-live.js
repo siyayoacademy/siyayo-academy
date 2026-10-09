@@ -2,8 +2,12 @@
 // The canonical Cycle alone evaluates the Pass Contract and Green Pass.
 (function(root){
 'use strict';
-var feedbackMemory=Object.create(null);
+var feedbackMemory=Object.create(null),generation=0;
 function text(v){return typeof v==='string'?v.trim():'';}
+function isExploringWhat(){
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  return !runtime||typeof runtime.activeQuestionWord!=='function'||runtime.activeQuestionWord()==='what';
+}
 function panel(doc){
   if(!doc||typeof doc.getElementById!=='function')return null;
   var view=doc.getElementById('experienceView');
@@ -19,12 +23,14 @@ function panel(doc){
   }
   return el;
 }
-function hide(doc){var el=panel(doc);if(!el)return false;el.hidden=true;el.innerHTML='';delete el.dataset.canonicalQuestion;return true;}
+function hide(doc){generation+=1;var el=panel(doc);if(!el)return false;el.hidden=true;el.innerHTML='';delete el.dataset.canonicalQuestion;return true;}
 function mount(input){
   input=input||{};
   var doc=input.document||root.document,el=panel(doc);
   if(!el)return false;
   hide(doc);
+  if(!isExploringWhat())return false;
+  var mountedGeneration=generation;
   var experience=input.experience,language=text(input.language);
   var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
   var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
@@ -88,6 +94,7 @@ function mount(input){
       if(alternative.response)button.setAttribute('aria-label',alternative.response);
       buttons.push(button);
       button.addEventListener('click',function(){
+        if(mountedGeneration!==generation||el.hidden||!isExploringWhat())return;
         var current=coordinator.snapshot();
         if(!current||current.session!==active.session)return;
         var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
@@ -112,6 +119,8 @@ function mount(input){
         if(feedbackKey)feedbackMemory[feedbackKey]=Object.freeze({text:feedback.textContent});
         var trail=root.SIYAYOVerbExplorerLearnerTrailSurface;
         if(trail&&typeof trail.refresh==='function')trail.refresh({document:doc,language:language});
+        var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+        if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
         // A transfer may complete the origin Session after arrival in S3.
         // Recheck the learner-owned adoption invitation after the canonical Cycle returns.
         var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;

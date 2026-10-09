@@ -43,6 +43,8 @@ function dom() {
 async function environment(mode, language, learnerId, data = grounding) {
   let state = {currentExperienceId: local.id, experienceLanguage: language, questionWord: 'where'};
   const doc = dom(), utterances = [], fetches = [];
+  let assessmentRefreshes = 0;
+  const trailNode = doc.createElement('section'); trailNode.id = 'learnerTrailSurface';
   const box = vm.createContext({document: doc,
     AdaptiveAssessmentScope: require('../js/adaptive-assessment-scope.js'),
     AdaptiveEvidenceProfile: require('../js/adaptive-evidence-profile.js'),
@@ -53,6 +55,11 @@ async function environment(mode, language, learnerId, data = grounding) {
     AdaptiveContractClosureEvidenceSource: require('../js/adaptive-contract-closure-evidence-source.js'),
     SIYAYOVerbExplorerTransferAttemptAuthority: require('../js/verb-explorer-transfer-attempt-authority.js'),
     AdaptivePassContractProgressView: require('../js/adaptive-pass-contract-progress-view.js'),
+    AdaptiveLearnerTrailLabel: require('../js/adaptive-learner-trail-label.js'),
+    AdaptiveLearnerTrailView: require('../js/adaptive-learner-trail-view.js'),
+    AdaptiveLearnerTrailSequence: require('../js/adaptive-learner-trail-sequence.js'),
+    AdaptiveLearnerTrailPosition: require('../js/adaptive-learner-trail-position.js'),
+    AdaptiveLearnerProgressMarker: require('../js/adaptive-learner-progress-marker.js'),
     clearChoiceAudioHighlight() {}, speechLocales: {en: 'en-US', es: 'es-ES', pt: 'pt-BR'},
     SpeechSynthesisUtterance: function(text) {this.text = text;},
     speechSynthesis: {cancel() {}, speak(utterance) {utterances.push(utterance);}}
@@ -63,7 +70,8 @@ async function environment(mode, language, learnerId, data = grounding) {
     getNouns: () => nouns};
   box.SIYAYOVerbExplorerExperienceRuntime = {
     activeQuestionWord: () => state.questionWord, activeExperienceId: () => state.currentExperienceId,
-    activeLanguage: () => state.experienceLanguage, speak: (...args) => box.speakText(...args)
+    activeLanguage: () => state.experienceLanguage, speak: (...args) => box.speakText(...args),
+    refreshAssessmentHighlight: () => {assessmentRefreshes++;}
   };
   box.fetch = async requested => {
     fetches.push(requested);
@@ -95,7 +103,7 @@ async function environment(mode, language, learnerId, data = grounding) {
     'leaf-assessment-target-readiness', 'leaf-assessment-target-provider', 'verb-explorer-thinking-mind-assessment-selection',
     'adaptive-where-location-probe-specification-source', 'adaptive-where-location-probe-result',
     'adaptive-where-location-probe-evidence-bridge', 'adaptive-where-location-probe-attempt-boundary',
-    'verb-explorer-learner-event', 'verb-explorer-where-assessment-live',
+    'verb-explorer-learner-event', 'verb-explorer-where-assessment-live', 'verb-explorer-learner-trail-surface',
     'contextual-choice-resolver', 'choice-support-sensor', 'choice-evidence-evaluator',
     'choice-attempt-ownership', 'choice-attempt-boundary', 'verb-explorer-choice-resolution-reader',
     'verb-explorer-choice-evidence-bridge', 'verb-explorer-choice-attempt-factory',
@@ -110,6 +118,13 @@ async function environment(mode, language, learnerId, data = grounding) {
   // Execute the actual production speech function with native TTS transport controlled.
   const speech = read('verb-explorer').split('\n').find(line => line.startsWith('function speakText('));
   assert.ok(speech); vm.runInContext(speech, box);
+  const explorer = read('verb-explorer');
+  box.experiences = corpus;
+  box.activeThinkingQuestion = experience => experience?.thinkingMind.find(item => item.questionWord === state.questionWord);
+  Object.defineProperty(box, 'experienceLanguage', {get: () => state.experienceLanguage});
+  vm.runInContext(explorer.split('\n').find(line => line.startsWith('function cap(')), box);
+  const noticeStart = explorer.indexOf('function renderAssessmentEntryNotice(');
+  vm.runInContext(explorer.slice(noticeStart, explorer.indexOf('\nfunction ', noticeStart + 1)), box);
   const live = box.SIYAYOVerbExplorerWhereAssessmentLive;
   assert.equal(await live.loadGrounding(), true); assert.equal(await live.loadGrounding(), true);
   assert.equal(fetches.filter(url => url.includes('where-spatial')).length, 1, 'one cached grounding transport');
@@ -117,6 +132,7 @@ async function environment(mode, language, learnerId, data = grounding) {
   return {box, live, doc, utterances, move: next => {state = {...state, ...next};},
     select: q => box.SIYAYOVerbExplorerThinkingMindAssessmentSelection.select(q),
     snapshot: () => box.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot(),
+    refreshCount: () => assessmentRefreshes,
     records: () => box.SIYAYOVerbExplorerAdaptiveEvidenceProfileSource.getProfile()?.observations || [],
     chooseWhich(candidateId) {
       const index = local.thinkingMind.findIndex(item => item.questionWord === 'which');
@@ -133,7 +149,9 @@ async function environment(mode, language, learnerId, data = grounding) {
       return box.SIYAYOVerbExplorerAdaptiveCoordinator.submitChoice(candidateId, null);
     },
     mount(experience = corpus.find(item => item.id === state.currentExperienceId)) {
-      return live.mount({document: doc, experience, language: state.experienceLanguage});
+      const mounted = live.mount({document: doc, experience, language: state.experienceLanguage});
+      box.renderAssessmentEntryNotice(experience);
+      return mounted;
     },
     button(dimension, alternativeId) {
       const group = doc.getElementById('whereAssessmentPanel').querySelectorAll('.where-location-probe')
@@ -151,7 +169,8 @@ function assertProgress(env, completed) {
   assert.equal(snapshot.session.decision.experienceId, local.id);
   assert.match(env.doc.getElementById('whereAssessmentPanel').querySelector('.where-contract-progress').textContent,
     new RegExp(completed + '/3'));
-  assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, completed === 3 ? 1 : 0);
+  assert.equal(env.records().filter(item => item.source === 'green-pass-contract' &&
+    item.context.skill === where.id).length, completed === 3 ? 1 : 0);
 }
 
 async function verifyReportedLanguageAndQWordSequence(mode, language) {
@@ -233,9 +252,133 @@ async function verifyReportedLanguageAndQWordSequence(mode, language) {
   assert.equal(t2.records().length, footprints, 'returning among QWords never replays an Attempt');
 }
 
+async function verifyWhatToWherePreparing(mode, language) {
+  const env = await environment(mode, language, 'reported-WHAT-WHERE-' + mode + '-' + language);
+  const what = env.box.SIYAYOVerbExplorerWhatAssessmentLive;
+  const whatQuestion = experience => experience.thinkingMind.find(item => item.questionWord === 'what');
+  function progress(completed) {
+    const snapshot = env.snapshot();
+    const projected = env.box.AdaptivePassContractProgressView.project(
+      snapshot.context.passContract, snapshot.context.evidencePackets, env.box.GreenPassProfile);
+    assert.equal(projected.completed, completed);
+    assert.equal(projected.status, completed === 3 ? 'GREEN_PASS' : 'WAITING_FOR_EVIDENCE');
+  }
+  function mountWhat(experience) {return what.mount({document: env.doc, experience, language});}
+  function whatButtons() {return env.doc.getElementById('whatAssessmentPanel').querySelectorAll('.what-probe-option');}
+  env.move({questionWord: 'what'});
+  assert.equal(await env.select(whatQuestion(local)), true);
+  assert.equal(mountWhat(local), true);
+  for (const group of env.doc.getElementById('whatAssessmentPanel').querySelectorAll('.what-object-question-probe'))
+    group.querySelectorAll('.what-probe-option')[0].click();
+  progress(2);
+  const session = env.snapshot().session;
+  env.move({currentExperienceId: destination.id});
+  assert.equal(mountWhat(destination), true);
+  const oldTransfer = whatButtons()[0];
+  const before = JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace});
+  for (const display of ['en', 'es', 'pt']) {
+    env.move({experienceLanguage: display});
+    assert.equal(env.box.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document: env.doc, language: display}), true);
+    const surface = env.doc.getElementById('learnerTrailSurface');
+    assert.ok(surface.innerHTML.includes('<strong class="learner-trail-current-word">' + whatQuestion(destination).questionWordLabel[display] + '</strong>'));
+    assert.equal(surface.dataset.currentQword, 'what');
+    assert.equal(surface.dataset.assessmentLanguage, language);
+    assert.equal(surface.dataset.state, 'IN_PROGRESS');
+    assert.ok(surface.innerHTML.includes('2/3'));
+    assert.ok(JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace}) === before);
+  }
+  env.move({experienceLanguage: language});
+  for (const explored of destination.thinkingMind.filter(item => item.questionWord !== 'what')) {
+    env.move({questionWord: explored.questionWord});
+    assert.equal(await env.select(explored), false, 'other Preparing QWords do not manufacture a missing assessment');
+    oldTransfer.click();
+    assert.equal(mountWhat(destination), false, explored.questionWord + ' hides the WHAT panel');
+    assert.equal(env.mount(), false);
+    const notice = env.doc.getElementById('assessmentEntryNotice');
+    if (explored.assessmentResumeTarget) {
+      assert.ok(notice && !notice.hidden, 'resume-only ' + explored.questionWord + ' explains Shopping entry');
+      assert.ok(notice.innerHTML.includes(explored.questionWordLabel[language]));
+      assert.ok(notice.innerHTML.includes(local.title[language]));
+    } else if (notice) assert.equal(notice.hidden, true, 'opportunity-only exploration does not invent an origin route');
+    assert.ok(JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace}) === before);
+    for (const display of ['en', 'es', 'pt']) {
+      env.move({experienceLanguage: display});
+      assert.equal(env.box.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document: env.doc, language: display}), true);
+      const markup = env.doc.getElementById('learnerTrailSurface').innerHTML;
+      assert.ok(markup.includes('<strong class="learner-trail-current-word">' + explored.questionWordLabel[display] + '</strong>'),
+        'the main Trail label follows the explored QWord in the display language');
+      assert.equal(env.doc.getElementById('learnerTrailSurface').dataset.state, 'EXPLORING');
+      assert.match(markup, /2\/3/);
+      assert.match(markup, /(?:EXPLORING|EXPLORANDO) [A-Z-]+ · (?:ASSESSMENT|EVALUACIÓN|AVALIAÇÃO) WHAT/);
+      if (display !== language) assert.ok(markup.includes(language.toUpperCase()), 'display change retains the owning assessment language');
+      assert.strictEqual(env.snapshot().session, session);
+      assert.ok(JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace}) === before);
+    }
+    env.move({experienceLanguage: language});
+  }
+  env.move({questionWord: 'where'});
+  assert.equal(await env.select(question(destination)), false, 'resume-only WHERE cannot start a destination circuit');
+  oldTransfer.click();
+  assert.ok(JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace}) === before,
+    'a WHAT response retained across the WHERE selection must not close WHAT');
+  assert.equal(mountWhat(destination), false, 'WHERE exploration does not expose WHAT assessment questions');
+  assert.equal(env.doc.getElementById('whatAssessmentPanel').hidden, true);
+  assert.equal(env.mount(), false);
+  const notice = env.doc.getElementById('assessmentEntryNotice');
+  assert.ok(notice && !notice.hidden, 'the missing Shopping origin is explained beside WHERE exploration');
+  assert.match(notice.innerHTML, /WHERE|DÓNDE|ONDE/);
+  assert.equal(env.doc.getElementById('whereAssessmentPanel').hidden, true);
+  assert.strictEqual(env.snapshot().session, session); progress(2);
+  assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, 0);
+
+  env.move({questionWord: 'what'});
+  assert.equal(await env.select(whatQuestion(destination)), true);
+  assert.equal(env.mount(), false); assert.equal(notice.hidden, true);
+  assert.equal(mountWhat(destination), true);
+  oldTransfer.click(); progress(2);
+  const refreshes = env.refreshCount();
+  whatButtons()[0].click(); progress(3);
+  assert.equal(env.refreshCount(), refreshes + 1, 'accepted WHAT evidence refreshes the contract-owned QWord badge immediately');
+  assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, 1);
+  assert.equal(env.records().find(item => item.source === 'green-pass-contract').context.skill, 'what.use.object-question');
+  assert.equal(session.decision.skill, 'what.use.object-question');
+
+  env.move({questionWord: 'where'});
+  assert.equal(await env.select(question(destination)), false);
+  assert.equal(mountWhat(destination), false); assert.equal(env.mount(), false);
+  progress(3); assert.equal(notice.hidden, false);
+  assert.equal(env.box.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document: env.doc, language}), true);
+  const completedSurface = env.doc.getElementById('learnerTrailSurface');
+  assert.equal(completedSurface.dataset.state, 'EXPLORING');
+  assert.equal(completedSurface.dataset.marker, 'EMPTY_DOT', 'WHERE exploration does not inherit the WHAT Green Pass marker');
+  assert.match(completedSurface.innerHTML, /data-assessment-qword="what"/);
+  assert.match(completedSurface.innerHTML, /3\/3/);
+  env.move({currentExperienceId: local.id});
+  assert.equal(await env.select(question(local)), true); assert.equal(env.mount(), true);
+  const whereSession = env.snapshot().session;
+  assert.notStrictEqual(whereSession, session); assertProgress(env, 0);
+  assert.equal(notice.hidden, true);
+  env.button('spatial-function', 'location').click();
+  env.button('location-answer', 'grounded-location').click(); assertProgress(env, 2);
+  env.move({currentExperienceId: destination.id});
+  assert.equal(await env.select(question(destination)), true); assert.equal(env.mount(), true);
+  assert.strictEqual(env.snapshot().session, whereSession); assertProgress(env, 2);
+  assert.equal(mountWhat(destination), false);
+  env.button('location-answer', 'grounded-location').click(); assertProgress(env, 3);
+  const closures = env.records().filter(item => item.source === 'green-pass-contract');
+  assert.equal(closures.length, 2);
+  assert.deepEqual(closures.map(item => item.context.skill).sort(), ['what.use.object-question', 'where.use.location-question']);
+  env.move({currentExperienceId: local.id, questionWord: 'what'});
+  assert.equal(await env.select(whatQuestion(local)), true);
+  assert.strictEqual(env.snapshot().session, session); progress(3);
+  assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, 2,
+    'returning to WHAT keeps its own Green Pass without replaying closure');
+}
+
 async function main() {
   for (const mode of ['Node', 'browser VM']) for (const language of ['en', 'es', 'pt']) {
     await verifyReportedLanguageAndQWordSequence(mode, language);
+    await verifyWhatToWherePreparing(mode, language);
     const learnerId = 'where-live-' + mode + '-' + language;
     const env = await environment(mode, language, learnerId);
     assert.equal(env.mount(), false, 'grounding/identity alone does not create a Session');
@@ -374,6 +517,7 @@ async function main() {
   assert.equal(malformed.records().length, 0, 'missing alternative fails closed before presentation');
   console.log('PASS — six EN/ES/PT Node/browser-VM live-panel circuits use production startup and click -> Result -> Evidence -> Attempt -> Coordinator/Cycle; 0/3, 1/3 and 2/3 WAIT, independent transfer 3/3.');
   console.log('PASS — reported T1/T2 sequences preserve WHICH 1/3 on LANGUAGE-only changes, reject foreign-language responses, recover the original language on one explicit click, and retain WHAT 2/3 / WHERE 2/3 / WHICH 1/3 on first-click QWord return.');
+  console.log('PASS — WHAT 2/3 Shopping → Preparing → WHERE/WHICH and other QWords hide WHAT probes, reject stale responses, explain resume-only origin entry and retain independent WHAT/WHERE Green Pass records in six language/runtime circuits; 126 real Trail display/QWord projections follow the current corpus label.');
   console.log('PASS — failed answers, stale buttons, identity/language/location drift and fresh destination startup do not fabricate competence; one footprint per occurrence and one closure per scope, with retained Shopping recovery.');
   console.log('PASS — native speech onstart, not request/error, observes audio; assistance remains WAIT across remount/reclick and cannot cross identity. No automatic NEXT or human learner claim.');
 }

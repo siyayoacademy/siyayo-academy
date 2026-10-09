@@ -38,6 +38,7 @@ const root={
     activeQuestionWord:()=> 'what',
     activeExperienceId:()=> 'shopping-for-dinner'
   },
+  SIYAYOVerbExplorerExperienceNavigation:{getExperience:id=>require('../data/learning/experience-seeds.json').items.find(item=>item.id===id)},
   SIYAYOVerbExplorerDependencyHeadProbeLive:{getPracticeTrace:()=>[]},
   SIYAYOVerbExplorerThinkingMindAssessmentSelection:{getRetainedProgress:()=>[]}
 };
@@ -45,8 +46,10 @@ root.globalThis=root;vm.runInNewContext(code,root);
 assert.equal(root.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:doc,language:'es'}),true);
 assert.match(surface.innerHTML,/EXPLORANDO WHAT · EVALUACIÓN WHICH/);
 assert.match(surface.innerHTML,/PANTALLA ES · EVALUACIÓN EN/);
-assert.match(surface.innerHTML,/data-state="active"><b[^>]*>○<\/b><strong>WHICH<\/strong><small>0\/3<\/small>/,
-  'Changing display language must keep the active assessment card and its existing progress');
+assert.match(surface.innerHTML,/data-state="saved"><b[^>]*>○<\/b><strong>WHICH<\/strong><small>0\/3 · progreso guardado<\/small>/,
+  'Changing display language keeps the existing assessment progress identified as saved while another QWord is explored');
+assert.match(surface.innerHTML,/<strong class="learner-trail-current-word">QUÉ<\/strong>/);
+assert.match(surface.innerHTML,/data-assessment-qword="which"/);
 assert.match(surface.innerHTML,/WHICH/);
 assert.doesNotMatch(surface.innerHTML,/EVALUACIÓN ES/);
 
@@ -82,11 +85,17 @@ for(const assessmentLanguage of ['en','es','pt']){
         assert.equal(root.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:doc}),true);
         const card=surface.innerHTML.match(/<span class="learner-journey-word" data-state="([^\"]+)">[^]*?<strong>WHICH<\/strong><small>([^<]+)<\/small><\/span>/);
         assert.ok(card);
-        assert.equal(card[1],'active',`${assessmentLanguage} assessment stays active on ${displayLanguage} display`);
-        assert.equal(card[2],completed+'/3');
-        assert.equal((surface.innerHTML.match(/data-state="active"/g)||[]).length,1);
-        const ownedLabel=root.AdaptiveLearnerTrailLabel.project(definition,assessmentLanguage);
-        assert.ok(surface.innerHTML.includes('<strong>'+ownedLabel.form+'</strong>'));
+        assert.equal(card[1],visualQWord==='which'?'active':'saved',`${assessmentLanguage} assessment keeps its own progress on ${displayLanguage} display`);
+        assert.ok(card[2].startsWith(completed+'/3'));
+        assert.equal((surface.innerHTML.match(/data-state="active"/g)||[]).length,visualQWord==='which'?1:0);
+        const currentQuestion=root.SIYAYOVerbExplorerExperienceNavigation.getExperience('shopping-for-dinner').thinkingMind.find(item=>item.questionWord===visualQWord);
+        assert.ok(surface.innerHTML.includes('<strong class="learner-trail-current-word">'+currentQuestion.questionWordLabel[displayLanguage]+'</strong>'));
+        assert.equal(surface.dataset.currentQword,visualQWord);
+        assert.equal(surface.dataset.assessmentLanguage,assessmentLanguage);
+        if(visualQWord!=='which'){
+          assert.equal(surface.dataset.state,'EXPLORING');
+          assert.match(surface.innerHTML,/data-assessment-qword="which"/);
+        }
         if(displayLanguage!==assessmentLanguage){
           assert.match(surface.innerHTML,new RegExp('(?:DISPLAY|PANTALLA|TELA) '+displayLanguage.toUpperCase()+' · (?:ASSESSMENT|EVALUACIÓN|AVALIAÇÃO) '+assessmentLanguage.toUpperCase()));
         }
