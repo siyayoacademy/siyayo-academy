@@ -331,7 +331,7 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .dependency-token small,.dependency-token em,.dependency-focus-role{font-family:var(--font-body);font-size:.7rem;line-height:1.25}
 .dependency-focus-heading span{font-size:.8rem}
 .learner-trail-copy small{font-size:.8rem;line-height:1.35;letter-spacing:.02em;font-weight:600}
-.living-window .learner-trail-surface{margin-top:14px;align-items:flex-start}
+.learning-trail-word-path-panel .learner-trail-surface{margin:0;align-items:flex-start}
 .learner-trail-experience{display:block;color:var(--siyayo-gold-primary);margin:4px 0 8px}
 .learner-trail-transfer{display:block;margin-top:8px;color:var(--siyayo-gold-primary)}
 .learner-trail-help{max-width:650px;margin:12px auto 0;text-align:left;color:#dce7f7;font-size:.78rem;line-height:1.5}
