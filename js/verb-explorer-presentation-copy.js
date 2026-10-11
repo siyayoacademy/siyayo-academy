@@ -23,17 +23,17 @@
       verb:'VERB',noun:'NOUN',adjective:'ADJECTIVE',present:'PRESENT',past:'PAST',future:'FUTURE',
       affirmative:'AFFIRMATIVE',negative:'NEGATIVE',interrogative:'INTERROGATIVE',
       describing:'DESCRIBE',narrating:'NARRATE',debating:'DEBATE',concluding:'CONCLUDE',
-      lines:'LINES / POSSIBLE RESPONSES',sequence:'QUESTION · RESPONSE · FOLLOW-UP',next:'NEXT?',candidate:'NEXT CANDIDATE'},
+      lines:'LINES / POSSIBLE RESPONSES',sequence:'QUESTION · RESPONSE · FOLLOW-UP',next:'NEXT?',candidate:'NEXT CANDIDATE',trailModule:'LEARNING TRAIL & WORD PATH',trailEmpty:'RESERVED AREA · NO LEARNER DATA MOVED'},
     es:{language:'IDIOMA',thinking:'MENTE PENSANTE',type:'TIPO DE PALABRA',tense:'TIEMPO VERBAL',mode:'MODO',perspective:'PERSPECTIVA',
       verb:'VERBO',noun:'SUSTANTIVO',adjective:'ADJETIVO',present:'PRESENTE',past:'PASADO',future:'FUTURO',
       affirmative:'AFIRMATIVO',negative:'NEGATIVO',interrogative:'INTERROGATIVO',
       describing:'DESCRIBIR',narrating:'NARRAR',debating:'DEBATIR',concluding:'CONCLUIR',
-      lines:'LÍNEAS / POSIBLES RESPUESTAS',sequence:'PREGUNTA · RESPUESTA · CONTINUACIÓN',next:'¿SIGUIENTE?',candidate:'SIGUIENTE EXPERIENCIA'},
+      lines:'LÍNEAS / POSIBLES RESPUESTAS',sequence:'PREGUNTA · RESPUESTA · CONTINUACIÓN',next:'¿SIGUIENTE?',candidate:'SIGUIENTE EXPERIENCIA',trailModule:'RUTA DE APRENDIZAJE Y RECORRIDO DE PALABRAS',trailEmpty:'ÁREA RESERVADA · SIN MOVER DATOS DEL ESTUDIANTE'},
     pt:{language:'IDIOMA',thinking:'MENTE PENSANTE',type:'TIPO DE PALAVRA',tense:'TEMPO VERBAL',mode:'MODO',perspective:'PERSPECTIVA',
       verb:'VERBO',noun:'SUBSTANTIVO',adjective:'ADJETIVO',present:'PRESENTE',past:'PASSADO',future:'FUTURO',
       affirmative:'AFIRMATIVO',negative:'NEGATIVO',interrogative:'INTERROGATIVO',
       describing:'DESCREVER',narrating:'NARRAR',debating:'DEBATER',concluding:'CONCLUIR',
-      lines:'LINHAS / POSSÍVEIS RESPOSTAS',sequence:'PERGUNTA · RESPOSTA · CONTINUAÇÃO',next:'PRÓXIMA?',candidate:'PRÓXIMA EXPERIÊNCIA'}
+      lines:'LINHAS / POSSÍVEIS RESPOSTAS',sequence:'PERGUNTA · RESPOSTA · CONTINUAÇÃO',next:'PRÓXIMA?',candidate:'PRÓXIMA EXPERIÊNCIA',trailModule:'TRILHA DE APRENDIZAGEM E PERCURSO DAS PALAVRAS',trailEmpty:'ÁREA RESERVADA · SEM MOVER DADOS DO ALUNO'}
   };
   function escape(value){return String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
   function localize(doc,experience,language){
@@ -48,7 +48,8 @@
     }).join('');
     [['languageGearLabel','🌐 '+copy.language],['thinkingMindLabel','🧠 '+copy.thinking],['wordTypeLabel','⚙ '+copy.type],
       ['tenseGearLabel','⏱ '+copy.tense],['modeGearLabel','◈ '+copy.mode],['perspectiveGearLabel',copy.perspective],
-      ['livingLinesLabel',copy.lines],['lineSequenceLabel',copy.sequence],['nextHeading','🌀 '+copy.next]].forEach(function(pair){
+      ['livingLinesLabel',copy.lines],['lineSequenceLabel',copy.sequence],['nextHeading','🌀 '+copy.next],
+      ['learningTrailWordPathHeading',copy.trailModule],['learningTrailWordPathEmpty',copy.trailEmpty]].forEach(function(pair){
       var node=doc.getElementById(pair[0]);if(node)node.textContent=pair[1];
     });
     ['wordType','experienceTense','experienceForm','perspective'].forEach(function(axis){

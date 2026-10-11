@@ -432,3 +432,15 @@ body{
   outline:2px solid var(--siyayo-gold-bright);
   outline-offset:3px;
 }
+
+/* JAGUAR ELO 1 — isolated expandable Learning Trail & Word Path shell. */
+.learning-trail-word-path-module{margin:14px 0 0;border:1px solid var(--siyayo-gold-border);border-radius:16px;background:rgba(2,12,28,.62);color:#eaf1fb;overflow:hidden}
+.learning-trail-word-path-trigger{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;padding:14px 18px;cursor:pointer;list-style:none;font-family:var(--font-display);font-size:.85rem;font-weight:700;color:var(--siyayo-gold-primary)}
+.learning-trail-word-path-trigger::-webkit-details-marker{display:none}
+.learning-trail-word-path-trigger:focus-visible{outline:2px solid var(--siyayo-gold-bright);outline-offset:-4px}
+.learning-trail-word-path-chevron{flex:none;display:inline-block;font-size:1.45rem;line-height:1;transition:transform 150ms ease}
+.learning-trail-word-path-module[open] .learning-trail-word-path-chevron{transform:rotate(180deg)}
+.learning-trail-word-path-panel{border-top:1px solid var(--siyayo-gold-border);padding:18px;min-height:92px}
+.learning-trail-word-path-empty{margin:0;text-align:center;color:#b6c6dc;font-family:var(--font-body);font-size:.8rem;line-height:1.5}
+@container siyayo-explorer (max-width:520px){.learning-trail-word-path-trigger{padding:13px 14px;font-size:.77rem}.learning-trail-word-path-panel{padding:14px}}
+@media (prefers-reduced-motion:reduce){.learning-trail-word-path-chevron{transition:none}}
