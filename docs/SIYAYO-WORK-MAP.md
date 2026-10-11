@@ -18,6 +18,13 @@ A chat conversation is not a branch. A branch represents an independent implemen
 
 ---
 
+## OPEN REVIEW — Learning Trail / Word Path + Dependency Focus (2026-10-11)
+
+Detailed future-only review register: [Learning Trail & Word Path — 2026-10-11](SIYAYO-TRAIL-WORD-PATH-REVIEW-2026-10-11.md).
+ELO-3 GO is limited to restoring Dependency Focus above the Experience grid. Head Probe placement and broader QW expansion remain awaiting separate discussion and authorization. Discussion ≠ implementation; preserve existing canonical evidence and contracts.
+
+---
+
 ## Canonical inheritance rule — GOLD CONNECTION
 
 All active and future SIYAYO branches/pages must inherit the canonical GOLD CONNECTION adaptive-expansion DNA from `data/canonical/siyayo-development-map.json` and `docs/siyayo-canonical-development-map.md`.
