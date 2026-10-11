@@ -43,6 +43,10 @@
     <small id="learnerIdentityStatus" aria-live="polite">Choose the identity that will own this learning Session.</small>
   </section>
   <section id="dependencyFocusSurface" class="dependency-focus-surface" hidden aria-live="polite" aria-label="Dependency focus"></section>
+  <section id="dependencyHeadProbePanel" class="dependency-head-probe-panel" hidden aria-live="polite" aria-label="Dependency head check">
+    <div id="dependencyHeadProbeOptions" class="dependency-head-probe-options"></div>
+    <div id="dependencyHeadProbeFeedback" class="dependency-head-probe-feedback" hidden aria-live="polite"></div>
+  </section>
   <div class="experience-grid">
     <div class="gear-stack">
       <div class="gear-block"><span id="languageGearLabel" class="gear-label">🌐 LANGUAGE</span><div id="experienceLanguageGear" class="gear-options"><button class="gear-option active" data-experience-language="en" type="button">English</button><button class="gear-option" data-experience-language="es" type="button">Español</button><button class="gear-option" data-experience-language="pt" type="button">Português</button></div></div>
@@ -54,10 +58,6 @@
     </div>
     <div class="living-window">
       <div class="living-window-head"><span id="livingLinesLabel">LINES / POSSIBLE RESPONSES</span><strong id="lineCounter">03 / 03</strong></div>
-      <section id="dependencyHeadProbePanel" class="dependency-head-probe-panel" hidden aria-live="polite" aria-label="Dependency head check">
-        <div id="dependencyHeadProbeOptions" class="dependency-head-probe-options"></div>
-        <div id="dependencyHeadProbeFeedback" class="dependency-head-probe-feedback" hidden aria-live="polite"></div>
-      </section>
       <div id="livingLines" class="living-lines"></div>
       <section id="choiceResolverPanel" class="choice-resolver-panel" hidden aria-live="polite">
         <div id="choiceOptions" class="choice-options" aria-label="Canonical choice candidates"></div>

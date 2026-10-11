@@ -110,7 +110,7 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .dependency-head-probe{display:grid;gap:12px;justify-items:center}
 .dependency-head-probe-prompt{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2cqw,1.2rem);font-weight:800;text-align:center}
 .dependency-head-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-.dependency-head-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font-weight:900;letter-spacing:.06em;cursor:pointer}
+.dependency-head-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:10px;background:#07162a;color:#eef4ff;font-weight:900;letter-spacing:.06em;cursor:pointer}
 .dependency-head-probe-options button:hover,.dependency-head-probe-options button:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:none;box-shadow:0 0 16px rgba(242,216,138,.16)}
 .dependency-head-probe-feedback{margin-top:12px;padding:9px 12px;border-radius:10px;font-size:.78rem;font-weight:900;letter-spacing:.08em}
 .dependency-head-probe-feedback[data-result="pass"]{color:#d7f4df;border:1px solid rgba(80,200,120,.55);background:rgba(80,200,120,.08)}
