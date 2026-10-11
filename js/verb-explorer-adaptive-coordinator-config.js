@@ -23,10 +23,13 @@ function configure(input,recover){
     var api=root.AdaptiveAssessmentScope;
     var navigation=root.SIYAYOVerbExplorerExperienceNavigation;
     var origin=navigation&&navigation.getExperience&&decision&&navigation.getExperience(decision.experienceId);
-    if(!api||!api.valid(scope)||scope.language!==initialState.experienceLanguage||
+    var cancelledStart=recover==='cancelled-start';
+    var skillSource=root.SIYAYOVerbExplorerCanonicalSkillSource;
+    if(cancelledStart&&(!skillSource||skillSource.getSkill()!==decision.skill))return false;
+    if(!api||!api.valid(scope)||(!cancelledStart&&scope.language!==initialState.experienceLanguage)||
        scope.originExperienceId!==decision.experienceId||
        !input.context||!api.same(scope,input.context.assessmentScope))return false;
-    if(initialState.currentExperienceId!==decision.experienceId&&
+    if(!cancelledStart&&initialState.currentExperienceId!==decision.experienceId&&
        (!origin||!origin.toroidalNext||origin.toroidalNext.nextExperience!==initialState.currentExperienceId))return false;
     context=contextSource.compose(input.session,{currentExperienceId:decision.experienceId},input.context);
   }else context=contextSource.compose(input.session,initialState,input.context||{});
@@ -44,5 +47,9 @@ function configure(input,recover){
   });
 }
 
-root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig=Object.freeze({configure:configure,restore:function(input){return configure(input,true);}});
+root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig=Object.freeze({configure:configure,
+  restore:function(input){return configure(input,true);},
+  // Roll back the previously active, scope-owned circuit after a cancelled load.
+  // Presentation may already have moved; Coordinator still validates every packet.
+  recoverAfterStartFailure:function(input){return configure(input,'cancelled-start');}});
 })(typeof globalThis!=='undefined'?globalThis:this);

@@ -1,10 +1,10 @@
 # Explorer — AUTO / PORTRAIT / LANDSCAPE e Dependency Focus
 
-**Checkpoint atual:** JAGUAR-LIVE-56  
-**Registro atualizado:** 2026-10-08, America/Sao_Paulo  
+**Checkpoint atual:** JAGUAR-LIVE-57
+**Registro atualizado:** 2026-10-11, America/Sao_Paulo
 **Branch:** `jaguar/verb-explorer-resume-live-wire` — PR #3 existente  
-**Base desta revisão:** `1e8fc63f4956411d8c00678cfe7fe1b189a637e7`  
-**Estado atual:** painel WHAT e cabeçalho Trail persistentes sob WHERE/WHICH reproduzidos e corrigidos. A indicação principal acompanha a QWord/idioma visível; o contrato anterior fica em bloco de avaliação preservada. Provas ocultas/antigas não aceitam respostas. Preparing orienta a entrada na origem quando só pode retomar WHERE/WHICH. 22 regressões locais PASS; revisão física do novo visual, T7 e matriz completa continuam pendentes/parciais. A rota WHERE → WHAT separada continua OPEN.
+**Base desta revisão:** `623b31d593dbd657cd5685ead5d6abf001c1eb28`
+**Estado atual:** LIVE-57 implementa a entrada explícita e independente WHERE → WHAT em Preparing, clareia marcadores/contextos/provas e idioma/origem de Word Path, reúne os módulos em LINES com NEXT final e localiza circunstâncias/controles. Verificação automatizada e conferência local em Chromium concluídas; publicação, T7 áudio e homologação da matriz física continuam pendentes.
 
 ## Objetivo e autorização
 
@@ -532,3 +532,34 @@ WHAT/WHICH/WHY agora conferem a QWord explorada na montagem e antes da resposta,
 **Próximo reteste:** no novo preview, WHAT 2/3 Shopping → Preparing → WHERE → WHICH → WHAT, cruzando EN/ES/PT. Acompanhar juntos botão, cabeçalho Trail, bloco preservado e painel de provas. Para um WHERE/WHICH nunca iniciado, seguir a orientação de voltar a Shopping e selecionar a palavra; Preparing retoma a avaliação da origem. Conferir também que Green Pass WHAT não aparece como marca principal WHERE. Preservar o ensaio anterior em outra aba.
 
 **Continuidade:** `QWORD-PANEL-OWNERSHIP-01` / `TRAIL-CURRENT-QWORD-01` corrigidos e verificados localmente, reteste humano pendente. `ENTRY-WHERE-TO-WHAT-01` continua OPEN; essa adoção não foi implementada. T7 áudio PENDING, T8 parcial e a matriz física completa/ocorrência antiga WHERE-WHICH continuam parciais. Publicação/Cloudflare/Actions ficam na PR #3; não antecipar estado CI/deploy. Sem merge ou nova PR.
+
+
+## Auditoria v2 → implementação das prioridades — JAGUAR-LIVE-57
+
+**Data:** 2026-10-11, America/Sao_Paulo. **Base:** `623b31d593dbd657cd5685ead5d6abf001c1eb28`.
+
+O anexo `image(20261011-144236).png` mostra WHAT em ES, duas provas aceitas a 2/3, transferência vazia, zero contextos e pedidos de esclarecer a relação visual versus registro. Depois da auditoria PDF v2 e da ordem de trabalho, o usuário pediu implementar as melhorias.
+
+| Verificação | Resultado da implementação | Evidência que ainda falta |
+|---|---|---|
+| Transferência a 2/3 | ○ continua correta até a resposta de transferência ser aceita. O Trail informa transferência em curso no destino elegível; não usa ◐ como meio crédito do requisito. | Leitura/clareza humana do novo texto. |
+| “0 contextos” | Agora **0 contextos confirmados**: Experiences distintas com Green Pass canônico para a habilidade/idioma. Ajuda sob demanda explica histórico e requisitos. | Homologação de compreensão pelo aluno. |
+| WHAT com “USO / USO” | **FUNÇÃO / RESPOSTA LOCAL / TRANSFERÊNCIA**, derivados das mesmas dimensões/modos do contrato. WHY recebe a mesma distinção; WHICH mantém escolha/uso/transferência e WHERE função/uso/transferência. | Conferência dos nomes nos três idiomas. |
+| Learning Trail / Word Path | Experiência atual abaixo do título; equivalência QWord, idioma do registro, origem localizada e contagem do contrato atual aparecem no percurso. Outras origens retidas da mesma habilidade continuam visíveis. | Comparação nativa completa EN/ES/PT/QWords. |
+| WHERE Shopping → WHAT Preparing | Declaração `assessmentEntryFrom` autoriza o gesto explícito de seleção WHAT no destino, com escopo próprio e 0/3. WHERE 2/3 ou 3/3 fica guardado e é retomável. Um WHAT correspondente já iniciado é recuperado primeiro. | Reteste humano com nick novo; `ENTRY-WHERE-TO-WHAT-01` implementado/verificado localmente, homologação visual pendente. |
+| Carregamento cancelado | Mudança de idioma/QWord/localização invalida o nascimento pendente; segunda seleção cancela a primeira. Falha recupera o circuito anterior, sem cópia/replay de Evidence. Recuperação normal continua exigindo idioma/local autorizados. | Ensaio de interação rápida e conexão instável. |
+| Organização em LINES | Trail, Focus/head probe, WHAT, WHERE, WHY e adoção reunidos; NEXT último e central; retorno independente dentro de NEXT. Nick preservado; WHICH fora de LINES como exceção temporária. | Novo layout e setas em formatos/dispositivos reais. |
+| Circunstâncias e controles | Nomes e valores da faixa, tipo/tempo/modo/perspectiva, LINES e NEXT localizados EN/ES/PT; IDs e avaliação não mudam pelo idioma da tela. | Revisão visual de texto e legibilidade. |
+
+**Regressões:** a cadeia real acrescenta doze percursos EN/ES/PT × Node/browser VM × WHERE 2/3 ou 3/3 → WHAT Preparing 0/3 → 2/3 → Having 3/3 → recuperação WHERE. Testa alvo inválido, idioma estrangeiro, ausência de seleção visível, carregamento falho/cancelado e clique que substitui uma entrada pendente. Exige fechamento separado e único, nenhuma Evidence na entrada, contexto confirmado só após Green, transferência ○ antes da resposta e desaparecimento do aviso pendente após aceitação. Mantém as 126 projeções reais do Trail, 81 combinações de escopo/tela, 288 badges e 189 seleções/formatos.
+
+**Escopo da conclusão:** Node/browser VM e schemas são automáticos locais, com DOM/transporte/fala controlados; Chromium executa o aplicativo real servido localmente. Não presumir implantação/CI remoto, homologação física ou áudio. P06 matriz visual de cores, P07 journal persistente PL/PA/exportações e P08 There+Be/composição permanecem próximas etapas, não capacidades já implementadas. T7 PENDING; T8 parcial. Paleta e tipografia homologadas preservadas.
+
+**Roteiro:** conferir WHAT 2/3 → Preparing → WHERE → WHICH → WHAT em EN/ES/PT; depois iniciar WHERE sob outro nick e selecionar WHAT em Preparing, comparando os dois registros. Validar a transferência WHAT em Having, voltar a WHERE e confirmar que suas provas foram conservadas. Abrir preview em outra aba; o estado do preview anterior não migra. Ordem detalhada e critérios estão no checkpoint LIVE-57 de `SIYAYO-WORK-MAP.md`.
+
+
+**Conferência nativa local:** Chromium 153 passou os percursos EN/ES/PT WHERE Shopping 2/3 → WHAT Preparing 0/3 → 2/3 → Having 3/3 → retorno ao WHERE 2/3 e fechamento separado. LANGUAGE isoladamente conserva o escopo/provas. NEXT aceita Enter/Space após a troca de QWord; retorno aceita Enter sem também avançar. Quinze amostras de formato/viewport validam setas SVG finitas e não vazias, sem transbordamento horizontal da página: AUTO/PORTRAIT/LANDSCAPE, 1280×960, 390×844 e 844×390. Trail/Focus/WHY ficam em LINES; WHICH conserva a exceção externa; NEXT fica por último. Três capturas foram inspecionadas. Não foram ouvidos áudios nem utilizados aparelhos físicos.
+
+**Refinamento encontrado na captura:** WHAT 3/3 conservava a mensagem local antiga “avaliação em andamento” ao retornar da transferência. WHAT/WHY/WHICH agora consultam a projeção canônica atual antes de restaurar o texto de feedback; a conclusão atual prevalece. Testes reais de WHAT exigem nenhuma nova Evidence/Attempt/pegada nessa remontagem; Chromium confere os retornos dos três módulos em EN/ES/PT. NEXT utiliza um botão nativo para conservar acesso por teclado após a remontagem. O marcador parcial que herdava laranja usa o token dourado padrão já aprovado; a matriz P06 ainda não foi redefinida.
+
+**Fechamento local de LIVE-57:** 265 scripts distintos dos workflows PASS; 8 comandos AJV draft2020 strict PASS; 477 arquivos JS de runtime/testes passam sintaxe. O pacote contém os 23 caminhos modificados e patch completo sobre a base remota. Antes da autorização específica, a revisão automática bloqueou duas tentativas de criar a árvore GitHub por divulgação pública de código/documentação; nenhuma dessas tentativas concluiu escrita remota. Em 2026-10-11, o usuário autorizou expressamente publicar o lote revisado no repositório público siyayoacademy/siyayo-academy, exclusivamente na branch jaguar/verb-explorer-resume-live-wire e PR #3, sem merge/main/produção. Conferidos os 23 caminhos, não foram encontrados candidatos a credenciais/dados privados nem arquivos indevidos; capturas/pacotes locais e registros de alunos não entram no envio. Commit, CI e preview Cloudflare devem ser conferidos e registrados na PR #3 após o envio. A aba pública inspecionada anteriormente foi apenas o LIVE-56; as capturas LIVE-57 deste fechamento são do aplicativo local.

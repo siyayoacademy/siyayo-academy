@@ -17,7 +17,9 @@ function panel(doc){
     el=doc.createElement('section');el.id='whyAssessmentPanel';
     el.className='dependency-head-probe-panel';el.hidden=true;
     el.setAttribute('aria-label','WHY contextual practice');
-    var grid=view.querySelector('.experience-grid');view.insertBefore(el,grid||null);
+    var living=view.querySelector('.living-window');
+    if(living)living.insertBefore(el,doc.getElementById('choiceResolverPanel'));
+    else {var grid=view.querySelector('.experience-grid');view.insertBefore(el,grid||null);}
   }
   return el;
 }
@@ -115,7 +117,10 @@ function mount(input){
   });
   el.appendChild(feedback);
   var savedFeedback=feedbackKey&&feedbackMemory[feedbackKey];
-  if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
+  var progressView=root.AdaptivePassContractProgressView;
+  var progress=active.context&&progressView&&progressView.project(active.context.passContract,active.context.evidencePackets,root.GreenPassProfile);
+  if(progress&&progress.status==='GREEN_PASS'){feedback.textContent=copy.green;feedback.hidden=false;}
+  else if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
   el.hidden=false;
   return true;
 }

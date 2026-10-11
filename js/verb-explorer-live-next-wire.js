@@ -23,9 +23,14 @@
     var nextCard=typeof nextElement.closest==='function'
       ? nextElement.closest('.toroidal-next')
       : null;
-    var interactiveTarget=nextCard||nextElement;
+    var nativeButton=nextElement.tagName==='BUTTON';
+    var interactiveTarget=nativeButton?nextElement:nextCard||nextElement;
 
-    function activate(){
+    function isPreviousControl(event){
+      return !!(event&&event.target&&typeof event.target.closest==='function'&&event.target.closest('#previousExperience'));
+    }
+    function activate(event){
+      if(isPreviousControl(event))return null;
       var toExperienceId=text(nextElement&&nextElement.dataset?nextElement.dataset.nextExperience:null);
       if(!toExperienceId)return null;
 
@@ -70,16 +75,24 @@
     }
 
     interactiveTarget.onclick=activate;
-    interactiveTarget.onkeydown=function(event){
+    if(!nativeButton)interactiveTarget.onkeydown=function(event){
       if(!event||!(event.key==='Enter'||event.key===' '))return;
+      if(isPreviousControl(event))return;
       if(typeof event.preventDefault==='function')event.preventDefault();
       activate();
     };
 
     if(nextCard){
-      nextCard.tabIndex=0;
-      nextCard.setAttribute('role','button');
-      nextCard.setAttribute('aria-label','Continue to the next Experience');
+      if(nativeButton){
+        nextCard.onclick=function(event){
+          if(event&&event.target&&event.target.closest&&event.target.closest('button'))return null;
+          return activate(event);
+        };
+      }else{
+        nextCard.tabIndex=0;
+        nextCard.setAttribute('role','button');
+        nextCard.setAttribute('aria-label','Continue to the next Experience');
+      }
       nextCard.dataset.nextState='available';
       nextCard.classList.remove('next-gated');
     }

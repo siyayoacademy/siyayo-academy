@@ -4,8 +4,36 @@
 // choiceContext, target words, or Dependency Focus.
 (function(root){
 'use strict';
-var retained=Object.create(null),pendingSelection=null;
-function clear(){retained=Object.create(null);pendingSelection=null;}
+var retained=Object.create(null),pendingSelection=null,pendingStart=null,generation=0;
+function clearStartup(){
+  ['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
+    'SIYAYOVerbExplorerCanonicalSkillLoader'].forEach(function(name){
+    var api=root[name];if(api&&typeof api.clear==='function')api.clear();
+  });
+}
+function clear(){
+  generation+=1;if(pendingStart)clearStartup();
+  retained=Object.create(null);pendingSelection=null;pendingStart=null;
+}
+function recoverPrevious(previous){
+  if(!previous||!previous.snapshot||!previous.snapshot.session||!previous.definition)return false;
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+  var now=coordinator&&coordinator.snapshot&&coordinator.snapshot();
+  if(!identity||identity.getId()!==previous.learnerId||now&&now.session)return false;
+  var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
+  var config=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
+  var state=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+  var profiles=root.SIYAYOVerbExplorerAdaptiveProfileSource;
+  if(!source||!config||!state||typeof config.restore!=='function')return false;
+  try{
+    if(source.adopt(previous.definition)!==true)return false;
+    var recover=config.recoverAfterStartFailure||config.restore;
+    return recover({profile:profiles&&profiles.getProfile&&profiles.getProfile()||previous.snapshot.profile,
+      session:previous.snapshot.session,context:previous.snapshot.context,getState:state.getState,
+      getResumeState:state.getResumeState||state.getState,document:previous.document})===true;
+  }catch(error){return false;}
+}
 
 function invalidatePending(){
   var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
@@ -69,12 +97,45 @@ function getRetainedProgress(skill,language){
     if(!api.valid(scope)||scope.learnerId!==learnerId||scope.skill!==skill||scope.language!==language)return null;
     var context=snapshot.context||{};
     var progress=view.project(context.passContract,context.evidencePackets,root.GreenPassProfile);
-    return progress&&Object.freeze({originExperienceId:scope.originExperienceId,progress:progress});
+    return progress&&Object.freeze({scopeKey:scope.key,language:scope.language,
+      originExperienceId:scope.originExperienceId,progress:progress});
   }).filter(Boolean);
   return Object.freeze(records);
 }
+// A destination may declare a separate entry from a named origin circuit.
+// This is an explicit QWord selection, not transfer credit or a Green-based NEXT.
+function independentEntryAllowed(question,target,decision,learnerId,state){
+  var api=root.AdaptiveAssessmentScope,navigation=root.SIYAYOVerbExplorerExperienceNavigation;
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  if(runtime&&typeof runtime.activeQuestionWord==='function'&&runtime.activeQuestionWord()!==question.questionWord)return false;
+  var scope=decision&&decision.assessmentScope;
+  if(!api||!api.valid(scope)||scope.learnerId!==learnerId||scope.language!==state.experienceLanguage||
+    scope.originExperienceId!==decision.experienceId||!navigation||typeof navigation.getExperience!=='function')return false;
+  var destination=navigation.getExperience(state.currentExperienceId);
+  var canonical=destination&&(destination.thinkingMind||[]).find(function(item){return item.questionWord===question.questionWord;});
+  var declared=canonical&&canonical.assessmentTarget;
+  if(!declared||declared.skill!==target.skill||declared.definitionPath!==target.definitionPath||
+    !Array.isArray(canonical.assessmentEntryFrom))return false;
+  var origin=navigation.getExperience(scope.originExperienceId);
+  var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
+  var definition=source&&source.getDefinition&&source.getDefinition();
+  if(!origin||text(origin.toroidalNext&&origin.toroidalNext.nextExperience)!==destination.id||
+    !definition||definition.id!==scope.skill)return false;
+  return canonical.assessmentEntryFrom.some(function(rule){
+    return rule.originExperienceId===scope.originExperienceId&&rule.skill===scope.skill&&
+      (origin.thinkingMind||[]).some(function(item){return item.assessmentTarget&&item.assessmentTarget.skill===rule.skill;});
+  });
+}
 function select(question,options){
   options=options||{};
+  var version=++generation;
+  if(pendingStart){
+    var interrupted=pendingStart;pendingStart=null;
+    clearStartup();
+    var authority=root.SIYAYOLeafAssessmentTargetAuthority;
+    if(authority&&typeof authority.clear==='function')authority.clear();
+    recoverPrevious(interrupted);
+  }
   // A new anonymous selection supersedes the previous pending target, even
   // when this question has no declared contract. Identified Sessions are retained.
   invalidatePending();
@@ -113,9 +174,10 @@ function select(question,options){
     return Promise.resolve(true);
   var requestedKey=learnerId&&key(learnerId,skill,liveState);
   var saved=requestedKey&&retained[requestedKey];
-  // A resume-only selection may recover one retained origin circuit even when
-  // another QWord/skill currently owns the active Session at the destination.
-  if(!saved&&resumeOnly&&learnerId&&liveState){
+  // Recover a unique retained origin before considering a separate new entry.
+  // Returning among QWords must not replace a started Shopping WHAT circuit.
+  if(!saved&&learnerId&&liveState&&(resumeOnly||active&&active.session&&
+    active.session.decision.experienceId!==liveState.currentExperienceId)){
     saved=retainedTransfer(learnerId,skill,liveState.experienceLanguage,liveState.currentExperienceId);
     if(saved){
       var savedScope=saved.snapshot.session.decision.assessmentScope;
@@ -137,11 +199,14 @@ function select(question,options){
     if(!saved)return Promise.resolve(false);
   }
   if(learnerId&&active&&active.session&&liveState&&
-    active.session.decision.experienceId!==liveState.currentExperienceId&&!saved)return Promise.resolve(false);
+    active.session.decision.experienceId!==liveState.currentExperienceId&&!saved&&
+    !independentEntryAllowed(question,target,activeDecision,learnerId,liveState))return Promise.resolve(false);
+  var previousDefinition=null;
   if(learnerId&&active&&active.session){
     var oldSkill=active.session.decision&&active.session.decision.skill;
     var skillSource=root.SIYAYOVerbExplorerCanonicalSkillSource;
     var definition=skillSource&&skillSource.getDefinition&&skillSource.getDefinition();
+    previousDefinition=definition&&definition.id===oldSkill?definition:null;
     if(oldSkill&&definition&&definition.id===oldSkill)
       remember(active,definition);
   }
@@ -169,10 +234,10 @@ function select(question,options){
   }
   if(resumeOnly)return Promise.resolve(false);
   if(learnerId&&active&&coordinator&&typeof coordinator.clear==='function')coordinator.clear();
-  if(learnerId)['SIYAYOVerbExplorerAdaptiveReadinessTrigger','SIYAYOVerbExplorerAdaptiveLiveStart',
-    'SIYAYOVerbExplorerCanonicalSkillLoader'].forEach(function(name){
-    var api=root[name];if(api&&typeof api.clear==='function')api.clear();
-  });
+  if(learnerId)clearStartup();
+  pendingStart={
+    snapshot:active,definition:previousDefinition,learnerId:learnerId,document:options.document||root.document
+  };
 
   var leaf=Object.freeze({
     assessmentTarget:Object.freeze({
@@ -180,13 +245,26 @@ function select(question,options){
       definitionPath:definitionPath
     })
   });
-
+  function finish(result){
+    if(version!==generation)return false;
+    var previous=pendingStart;pendingStart=null;
+    if(result===true)return true;
+    if(!learnerId)return false; // anonymous target waits for explicit nick entry
+    // A failed/cancelled load must leave the original circuit reviewable.
+    var authority=root.SIYAYOLeafAssessmentTargetAuthority;
+    if(authority&&typeof authority.clear==='function')authority.clear();
+    var recovered=recoverPrevious(previous);
+    var now=coordinator&&coordinator.snapshot&&coordinator.snapshot();
+    if(!recovered&&(!now||!now.session)){
+      var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
+      if(source&&typeof source.clear==='function')source.clear();
+    }
+    return false;
+  }
   try{
-    return Promise.resolve(provider.select(leaf)).then(function(result){
-      return result===true;
-    },function(){return false;});
+    return Promise.resolve(provider.select(leaf)).then(finish,function(){return finish(false);});
   }catch(error){
-    return Promise.resolve(false);
+    return Promise.resolve(finish(false));
   }
 }
 

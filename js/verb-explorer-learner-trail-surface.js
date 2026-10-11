@@ -33,10 +33,10 @@
     return (labels[language]||labels.en)[state]||state||(labels[language]||labels.en).UNOBSERVED;
   }
   function surfaceLabels(language){
-    return {en:{title:'LEARNING TRAIL',context:'CONTEXT',contexts:'CONTEXTS',exploring:'EXPLORING',display:'DISPLAY',assessment:'ASSESSMENT'},
-      es:{title:'RUTA DE APRENDIZAJE',context:'CONTEXTO',contexts:'CONTEXTOS',exploring:'EXPLORANDO',display:'PANTALLA',assessment:'EVALUACIÓN'},
-      pt:{title:'TRILHA DE APRENDIZAGEM',context:'CONTEXTO',contexts:'CONTEXTOS',exploring:'EXPLORANDO',display:'TELA',assessment:'AVALIAÇÃO'}}[language]||
-      {title:'LEARNING TRAIL',context:'CONTEXT',contexts:'CONTEXTS',exploring:'EXPLORING',display:'DISPLAY',assessment:'ASSESSMENT'};
+    return {en:{title:'LEARNING TRAIL',context:'CONFIRMED CONTEXT',contexts:'CONFIRMED CONTEXTS',exploring:'EXPLORING',display:'DISPLAY',assessment:'ASSESSMENT'},
+      es:{title:'RUTA DE APRENDIZAJE',context:'CONTEXTO CONFIRMADO',contexts:'CONTEXTOS CONFIRMADOS',exploring:'EXPLORANDO',display:'PANTALLA',assessment:'EVALUACIÓN'},
+      pt:{title:'TRILHA DE APRENDIZAGEM',context:'CONTEXTO CONFIRMADO',contexts:'CONTEXTOS CONFIRMADOS',exploring:'EXPLORANDO',display:'TELA',assessment:'AVALIAÇÃO'}}[language]||
+      {title:'LEARNING TRAIL',context:'CONFIRMED CONTEXT',contexts:'CONFIRMED CONTEXTS',exploring:'EXPLORING',display:'DISPLAY',assessment:'ASSESSMENT'};
   }
 
   function observationLabel(language){
@@ -65,6 +65,27 @@
     }[language]||{path:'WORD PATH',visiting:'NOW VISITING',assessment:'ASSESSMENT RECORD',started:'started in',visit:'This visit does not begin a new assessment.',achieved:'achieved result',choice:'WHICH choice evidence accepted',saved:'progress saved',waiting:'not started'};
   }
 
+  function experienceName(id,language){
+    var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+    var experience=catalog&&catalog.getExperience&&catalog.getExperience(id);
+    return text(experience&&experience.title&&experience.title[language])||text(id);
+  }
+  function markerHelp(language){
+    var copy={
+      en:['HOW TO READ THE TRAIL','The large mark describes the learning history: ○ no observation, ◐ observed response, ● one confirmed context, ★ two or more confirmed contexts.',
+        'A confirmed context is a distinct Experience with a canonical Green Pass in this skill and assessment language. Visits and individual answers do not increase this count.',
+        'The three contract marks are binary: ○ evidence not yet accepted; ● evidence accepted. At 2/3, an empty transfer mark means that transfer is still pending. Word Path shows accepted progress and confirmed results.'],
+      es:['CÓMO LEER LA RUTA','La marca grande describe el historial: ○ sin observación, ◐ respuesta observada, ● un contexto confirmado, ★ dos o más contextos confirmados.',
+        'Un contexto confirmado es una experiencia distinta con Green Pass canónico en esta habilidad e idioma de evaluación. Visitas y respuestas individuales no aumentan este número.',
+        'Las tres marcas del contrato son binarias: ○ evidencia aún no aceptada; ● evidencia aceptada. Con 2/3, transferencia vacía significa transferencia pendiente. El recorrido muestra progreso aceptado y resultados confirmados.'],
+      pt:['COMO LER A TRILHA','A marca grande descreve o histórico: ○ sem observação, ◐ resposta observada, ● um contexto confirmado, ★ dois ou mais contextos confirmados.',
+        'Um contexto confirmado é uma experiência distinta com Green Pass canônico nesta habilidade e idioma de avaliação. Visitas e respostas individuais não aumentam essa contagem.',
+        'As três marcas do contrato são binárias: ○ evidência ainda não aceita; ● evidência aceita. Com 2/3, transferência vazia significa transferência pendente. O percurso mostra progresso aceito e resultados confirmados.']
+    };
+    copy=copy[language]||copy.en;
+    return '<details class="learner-trail-help"><summary>'+escapeHtml(copy[0])+'</summary>'+copy.slice(1).map(function(line){return '<p>'+escapeHtml(line)+'</p>';}).join('')+'</details>';
+  }
+
   function journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language,assessmentLanguage,visualQWord){
     var labels=journeyLabels(language);
     var known=[
@@ -79,23 +100,34 @@
       var confirmed=past&&(past.state==='CONFIRMED'||past.state==='CONSOLIDATED_EVIDENCE');
       var current=item.id===skill&&(!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===assessmentLanguage);
       var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
-      var saved=!current&&selection&&typeof selection.getRetainedProgress==='function'
+      var saved=selection&&typeof selection.getRetainedProgress==='function'
         ?selection.getRetainedProgress(item.id,assessmentLanguage):[];
+      var currentScope=snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope;
+      saved=saved.filter(function(record){return !current||!currentScope||record.scopeKey!==currentScope.key;});
       var explored=visualQWord&&visualQWord===item.word.toLowerCase();
       var state=explored?(current?'active':'exploring'):confirmed?'confirmed':current?(visualQWord?'saved':'active'):saved.length?'saved':'waiting';
-      var symbol=confirmed?'●':(current&&(past&&past.state==='IN_PROGRESS'||progress&&progress.completed>0)||saved.some(function(record){return record.progress.completed>0;}))?'◐':'○';
-      var description=confirmed?stateLabel('CONFIRMED',language):
+      var symbol=confirmed?'●':(current&&progress&&progress.completed>0||saved.some(function(record){return record.progress.completed>0;}))?'◐':'○';
+      var currentCopy={en:'current contract',es:'contrato actual',pt:'contrato atual'}[language];
+      var description=confirmed?stateLabel('CONFIRMED',language)+(current&&progress?' · '+currentCopy+' '+progress.completed+'/'+progress.total:''):
         current&&progress?progress.completed+'/'+progress.total+(visualQWord&&!explored?' · '+labels.saved:''):saved.length?saved.map(function(record){
-          return record.progress.completed+'/'+record.progress.total+' · '+labels.saved+' · '+record.originExperienceId;
+          return record.progress.completed+'/'+record.progress.total+' · '+labels.saved+' · '+experienceName(record.originExperienceId,language);
         }).join(' / '):labels.waiting;
+      var origins=[];
+      if(current&&currentScope)origins.push(assessmentLanguage.toUpperCase()+' · '+labels.started+' '+experienceName(currentScope.originExperienceId,language));
+      if(current)saved.forEach(function(record){origins.push(record.progress.completed+'/'+record.progress.total+' · '+labels.saved+' · '+experienceName(record.originExperienceId,language));});
+      var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+      var visible=catalog&&catalog.getExperience&&catalog.getExperience(liveState.currentExperienceId);
+      var equivalent=visible&&(visible.thinkingMind||[]).find(function(q){return q.questionWord===item.word.toLowerCase();});
+      var form=text(equivalent&&equivalent.questionWordLabel&&equivalent.questionWordLabel[language]);
       return '<span class="learner-journey-word" data-state="'+state+'">'+
-        '<b aria-hidden="true">'+symbol+'</b><strong>'+item.word+'</strong><small>'+escapeHtml(description)+'</small></span>';
+        '<b aria-hidden="true">'+symbol+'</b><strong>'+item.word+'</strong><small>'+escapeHtml(description)+'</small>'+
+        (form&&form!==item.word?'<small class="learner-journey-equivalent">'+escapeHtml(form)+'</small>':'')+
+        (origins.length?'<small class="learner-journey-scope">'+escapeHtml(origins.join(' / '))+'</small>':'')+'</span>';
     }).join('');
     var origin=text(snapshot&&snapshot.session&&snapshot.session.decision&&snapshot.session.decision.experienceId);
     var destination=text(liveState.currentExperienceId);
     var currentWord=known.find(function(item){return item.id===skill;});
-    var currentTitle=doc.getElementById('experienceTitle');
-    var visitName=text(currentTitle&&currentTitle.textContent)||destination;
+    var visitName=experienceName(destination,language);
     var prior=origin&&destination&&origin!==destination;
     var achieved=progress&&progress.completed===3&&progress.total===3;
     var sameLanguage=!root.AdaptiveAssessmentScope||snapshot&&snapshot.session&&snapshot.session.decision.assessmentScope&&snapshot.session.decision.assessmentScope.language===assessmentLanguage;
@@ -104,13 +136,14 @@
       ' <span>'+escapeHtml(labels.visit)+'</span></p>'+
       '<p><b>'+escapeHtml(labels.assessment)+'</b> · '+escapeHtml(currentWord?currentWord.word:skill)+
       (achieved?' · 3/3 · '+escapeHtml(labels.achieved):'')+
-      ' · '+escapeHtml(labels.started)+' '+escapeHtml(origin)+'</p>':'';
+      ' · '+escapeHtml(labels.started)+' '+escapeHtml(experienceName(origin,language))+'</p>':'';
     var which=trailView.project(profile,'which.use.determiner',root.AdaptiveAssessmentScope?{language:assessmentLanguage}:null);
     var whichMarker=which&&markerAuthority.resolve(which);
     var choiceAccepted=(skill==='which.use.determiner'&&progress&&progress.satisfied[0])||
       (whichMarker&&(whichMarker.state==='CONFIRMED'||whichMarker.state==='CONSOLIDATED_EVIDENCE'));
     return '<div class="learner-journey" aria-label="'+escapeHtml(labels.path)+'">'+
       '<b class="learner-journey-title">'+escapeHtml(labels.path)+'</b>'+
+      '<small class="learner-journey-language">'+escapeHtml(labels.assessment+' · '+assessmentLanguage.toUpperCase())+'</small>'+
       '<div class="learner-journey-words">'+cards+'</div>'+
       (choiceAccepted?'<small class="learner-journey-choice">✓ '+escapeHtml(labels.choice)+'</small>':'')+
       context+'</div>';
@@ -201,12 +234,13 @@
       progress.satisfied.map(function(done,index){
         var requirement=snapshot.context.passContract.requires[index]||{};
         var labels={
-          en:{choice:'CHOICE',use:'USE',transfer:'TRANSFER',spatial:'FUNCTION'},
-          es:{choice:'ELECCIÓN',use:'USO',transfer:'TRANSFERENCIA',spatial:'FUNCIÓN'},
-          pt:{choice:'ESCOLHA',use:'USO',transfer:'TRANSFERÊNCIA',spatial:'FUNÇÃO'}
-        }[language]||{choice:'CHOICE',use:'USE',transfer:'TRANSFER'};
+          en:{choice:'CHOICE',use:'USE',transfer:'TRANSFER',function:'FUNCTION',answer:'LOCAL ANSWER'},
+          es:{choice:'ELECCIÓN',use:'USO',transfer:'TRANSFERENCIA',function:'FUNCIÓN',answer:'RESPUESTA LOCAL'},
+          pt:{choice:'ESCOLHA',use:'USO',transfer:'TRANSFERÊNCIA',function:'FUNÇÃO',answer:'RESPOSTA LOCAL'}
+        }[language]||{choice:'CHOICE',use:'USE',transfer:'TRANSFER',function:'FUNCTION',answer:'LOCAL ANSWER'};
         var key=requirement.mode==='transfer'?'transfer':
-          requirement.dimension==='spatial-function'?'spatial':requirement.dimension==='choice-function'?'choice':'use';
+          ['spatial-function','question-function'].includes(requirement.dimension)?'function':
+          requirement.dimension==='choice-function'?'choice':requirement.dimension==='object-answer'||requirement.dimension==='reason-answer'?'answer':'use';
         return escapeHtml(labels[key]+' '+(done?'●':'○'));
       }).join(' · ')+
       ' · '+escapeHtml(progress.completed+'/'+progress.total)+'</small>':'';
@@ -274,6 +308,13 @@
       scopeNotice='<small class="learner-trail-scope-notice">'+escapeHtml(pieces.join(' · '))+'</small>';
     }
 
+    var transferPending=progress&&snapshot.context.passContract.requires.some(function(requirement,index){
+      return requirement.mode==='transfer'&&!progress.satisfied[index];
+    });
+    var inTransfer=!!(transferPending&&!exploring&&assessmentLanguage===language&&experience&&
+      decision.experienceId!==experience.id&&
+      (catalog.getExperience(decision.experienceId)||{}).toroidalNext?.nextExperience===experience.id);
+    var transferCopy={en:'TRANSFER IN PROGRESS · awaiting accepted evidence',es:'TRANSFERENCIA EN CURSO · esperando evidencia aceptada',pt:'TRANSFERÊNCIA EM CURSO · aguardando evidência aceita'}[language];
     var assessmentHtml=
       '<small class="learner-trail-meta">'+escapeHtml((exploring?label:displayLabel).family||'')+
         ((exploring?label:displayLabel).grammarRole?' · '+escapeHtml((exploring?label:displayLabel).grammarRole):'')+'</small>'+
@@ -283,6 +324,7 @@
       (freshStage?'<small class="learner-trail-new-stage">'+escapeHtml(freshStageLabel)+'</small>':'')+
       (trail.counts.legacyFootprints?'<small class="learner-trail-legacy">'+escapeHtml(({en:'HISTORICAL RECORDS',es:'REGISTROS ANTERIORES',pt:'REGISTROS ANTERIORES'}[language]||'HISTORICAL RECORDS')+' · '+trail.counts.legacyFootprints)+'</small>':'')+
       progressHtml+
+      (inTransfer?'<small class="learner-trail-transfer" data-transfer-state="pending">○ '+escapeHtml(transferCopy)+'</small>':'')+
       '<div class="learner-trail-sequence" aria-label="Visited learning experiences">'+segmentHtml+'</div>';
     var freeCopy={en:'FREE EXPLORATION · no assessment active for this selection',
       es:'EXPLORACIÓN LIBRE · sin evaluación activa para esta selección',
@@ -305,12 +347,14 @@
       '<div class="learner-trail-mark" aria-hidden="true">'+escapeHtml(exploring?'◌':markerGlyph)+'</div>'+
       '<div class="learner-trail-copy">'+
         '<span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
+        '<small class="learner-trail-experience">'+escapeHtml(experienceName(liveState.currentExperienceId,language))+'</small>'+
         '<strong class="learner-trail-current-word">'+escapeHtml(visibleForm)+'</strong>'+
         (exploring?'<small class="learner-trail-exploration">'+escapeHtml(freeCopy)+'</small>':'')+
         scopeNotice+
         observationHtml+
         assessmentHtml+
         journeyHtml(profile,skill,trailView,markerAuthority,progress,snapshot,liveState,doc,language,assessmentLanguage,visualQWord)+
+        markerHelp(language)+
       '</div>';
 
     return true;

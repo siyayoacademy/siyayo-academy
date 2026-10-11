@@ -9,6 +9,7 @@ function install(options){
   var view=doc.getElementById('experienceView');
   if(!view)return false;
   var button=doc.getElementById('continueAssessmentHere');
+  var controls=doc.getElementById('assessmentAdoptionControls');
   if(!button){
     button=doc.createElement('button');
     button.id='continueAssessmentHere';
@@ -17,7 +18,8 @@ function install(options){
     button.textContent='CONTINUE ASSESSMENT HERE';
     button.hidden=true;
     var heading=doc.querySelector('.experience-heading');
-    view.insertBefore(button,heading?heading.nextSibling:view.firstChild);
+    if(controls)controls.appendChild(button);
+    else view.insertBefore(button,heading?heading.nextSibling:view.firstChild);
   }
   function eligible(){
     var pendingSource=root.SIYAYOVerbExplorerPendingTransitionAuthority;
@@ -51,7 +53,8 @@ function install(options){
     note.className='assessment-adoption-status';
     note.setAttribute('aria-live','polite');
     note.hidden=true;
-    view.insertBefore(note,button);
+    if(controls)controls.insertBefore(note,button);
+    else view.insertBefore(note,button);
   }
   function refresh(){
     var ready=eligible();
@@ -77,7 +80,7 @@ function install(options){
     button.textContent=labels.button;
     var preceding=level==="S1"?doc.getElementById("determinerUseAssessmentPanel"):
       level==="S2"?doc.getElementById("whatAssessmentPanel"):null;
-    if(preceding&&preceding.parentNode===view){
+    if(!controls&&preceding&&preceding.parentNode===view){
       view.insertBefore(note,preceding.nextSibling);
       view.insertBefore(button,note.nextSibling);
     }
@@ -118,6 +121,8 @@ function install(options){
           root.SIYAYOVerbExplorerCanonicalSkillSource.adopt(prepared.previousDefinition);
           return;
         }
+        var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+        if(selection&&typeof selection.remember==='function')selection.remember(current,prepared.previousDefinition);
         var result=adoption.activate({
           transitionAuthorization:prepared.authorization,
           previousSession:ready.session,

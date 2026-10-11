@@ -189,7 +189,7 @@ assert.match(container.innerHTML, /INTERROGATIVE DETERMINER/);
 assert.match(container.innerHTML, /WORD PATH/);
 assert.match(container.innerHTML, /WHAT.*not started/);
 assert.match(container.innerHTML, /WHERE.*not started/);
-assert.doesNotMatch(container.innerHTML, /WHAT.*confirmed/);
+assert.doesNotMatch(container.innerHTML, /data-state="confirmed"><b[^>]*>[^<]*<\/b><strong>WHAT<\/strong>/);
 
 assert.equal(Surface.refresh({ document: documentRef, language: 'es' }), true);
 assert.match(container.innerHTML, /RUTA DE APRENDIZAJE/);
@@ -277,7 +277,7 @@ Promise.resolve().then(function(){
   assert.equal(container.dataset.marker, 'MILESTONE');
   assert.equal(container.dataset.state, 'CONSOLIDATED_EVIDENCE');
   assert.match(container.innerHTML, /★/);
-  assert.match(container.innerHTML, /2 CONTEXTS/);
+  assert.match(container.innerHTML, /2 CONFIRMED CONTEXTS/);
   assert.match(container.innerHTML, /shopping-for-dinner/);
   assert.match(container.innerHTML, /preparing-dinner/);
   assert.match(container.innerHTML, /aria-current="step"/);

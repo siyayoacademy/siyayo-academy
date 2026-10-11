@@ -153,7 +153,12 @@ function mount(input){
   el.dataset.canonicalQuestion=(available.find(function(spec){return spec.dimension==='object-answer';})||{}).question||'';
   el.appendChild(feedback);
   var savedFeedback=feedbackKey&&feedbackMemory[feedbackKey];
-  if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
+  // A local response message can predate completion at the transfer destination.
+  // Project the current owned contract without replaying any learner response.
+  var progressView=root.AdaptivePassContractProgressView;
+  var progress=active.context&&progressView&&progressView.project(active.context.passContract,active.context.evidencePackets,root.GreenPassProfile);
+  if(progress&&progress.status==='GREEN_PASS'){feedback.textContent=copy.green;feedback.hidden=false;}
+  else if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
   el.hidden=false;
   return true;
 }

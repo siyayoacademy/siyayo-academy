@@ -34,7 +34,7 @@ const liveNextWire = fs.readFileSync(path.join(ROOT, 'js/verb-explorer-live-next
 
 for (const hook of [
   "nextElement.closest('.toroidal-next')",
-  "var interactiveTarget=nextCard||nextElement",
+  "var interactiveTarget=nativeButton?nextElement:nextCard||nextElement",
   "interactiveTarget.onclick=activate",
   "interactiveTarget.onkeydown=function(event)",
   "nextCard.dataset.nextState='available'",
@@ -42,6 +42,10 @@ for (const hook of [
 ]) {
   assert.ok(liveNextWire.includes(hook), 'missing learner-owned full-card NEXT hook: '+hook);
 }
+
+assert.match(fs.readFileSync(path.join(ROOT, 'verb-explorer.html'), 'utf8'),
+  /<button\b[^>]*id="nextExperience"[^>]*type="button"/,
+  'NEXT has native keyboard activation after an Experience/QWord render');
 
 assert.ok(
   !fs.readFileSync(path.join(ROOT, 'js/verb-explorer.js'), 'utf8').includes('nextCard.onclick=activateNext'),

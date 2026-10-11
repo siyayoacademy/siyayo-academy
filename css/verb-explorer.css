@@ -331,6 +331,26 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .dependency-token small,.dependency-token em,.dependency-focus-role{font-family:var(--font-body);font-size:.7rem;line-height:1.25}
 .dependency-focus-heading span{font-size:.8rem}
 .learner-trail-copy small{font-size:.8rem;line-height:1.35;letter-spacing:.02em;font-weight:600}
+.living-window .learner-trail-surface{margin-top:14px;align-items:flex-start}
+.learner-trail-experience{display:block;color:var(--siyayo-gold-primary);margin:4px 0 8px}
+.learner-trail-transfer{display:block;margin-top:8px;color:var(--siyayo-gold-primary)}
+.learner-trail-help{max-width:650px;margin:12px auto 0;text-align:left;color:#dce7f7;font-size:.78rem;line-height:1.5}
+.learner-trail-help summary{cursor:pointer;color:var(--siyayo-gold-primary);font-weight:700}
+.learner-trail-help p{margin:8px 0}
+.learner-journey-word{display:grid;grid-template-columns:auto minmax(0,1fr);min-width:0;max-width:100%;text-align:left}
+.learner-journey-word>small{grid-column:1/-1;overflow-wrap:anywhere}
+.learner-journey-word .learner-journey-equivalent{color:var(--siyayo-gold-primary)}
+.learner-journey-word .learner-journey-scope{max-width:260px;font-size:.7rem}
+.learner-journey-language{display:block;margin-top:4px}
+.assessment-adoption-controls{margin-top:14px;text-align:center}
+.assessment-adoption-controls:empty{display:none}
+.assessment-adoption-controls .continue-assessment-here{margin:8px auto 0;max-width:100%}
+.toroidal-next{text-align:center}
+.toroidal-next .previous-experience{display:block;margin:14px auto 0;white-space:normal;max-width:100%}
+.toroidal-next .previous-experience[hidden]{display:none}
+.toroidal-next .next-experience{display:block;margin:10px auto 0;min-height:44px;max-width:100%;padding:9px 14px;border:1px solid var(--siyayo-gold-primary);border-radius:10px;background:var(--siyayo-blue-dark);color:var(--siyayo-gold-primary);font:inherit;font-size:.85rem;font-weight:700;line-height:1.4;cursor:pointer}
+.toroidal-next .next-experience:focus-visible{outline:2px solid var(--siyayo-gold-bright);outline-offset:3px}
+.learner-trail-surface[data-marker="PARTIAL_DOT"] .learner-trail-mark,.learner-journey-word b{color:var(--siyayo-gold-standard);border-color:var(--siyayo-gold-standard)}
 .study-target-word{color:var(--siyayo-gold-primary);font:inherit;font-weight:700;text-decoration:none}
 .siyayo-speaker{display:inline-block;width:18px;height:18px;background:var(--siyayo-gold-primary);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E") center/contain no-repeat;pointer-events:none}
 .choice-audio:focus-visible,.living-line:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:2px}

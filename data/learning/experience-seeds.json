@@ -924,6 +924,12 @@
             "skill": "what.use.object-question",
             "definitionPath": "data/learning/skills/what.json"
           },
+          "assessmentEntryFrom": [
+            {
+              "originExperienceId": "shopping-for-dinner",
+              "skill": "where.use.location-question"
+            }
+          ],
           "answerGrounding": {
             "context": {
               "en": "We should prepare the vegetables first.",

@@ -375,10 +375,104 @@ async function verifyWhatToWherePreparing(mode, language) {
     'returning to WHAT keeps its own Green Pass without replaying closure');
 }
 
+async function verifyIndependentWhereToWhat(mode,language,completed){
+  const env=await environment(mode,language,'entry-'+mode+'-'+language+'-'+completed);
+  assert.equal(await env.select(question(local)),true);assert.equal(env.mount(),true);
+  env.button('spatial-function','location').click();env.button('location-answer','grounded-location').click();
+  env.move({currentExperienceId:destination.id});assert.equal(env.mount(),true);
+  if(completed===3)env.button('location-answer','grounded-location').click();
+  assertProgress(env,completed);
+  const original=env.snapshot(),before=JSON.stringify({context:original.context,records:env.records(),trace:original.session.trace});
+  const whatQuestion=destination.thinkingMind.find(q=>q.questionWord==='what');
+  const selection=env.box.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+  assert.equal(await env.select(whatQuestion),false,'a hidden WHAT selection cannot replace the visible WHERE circuit');
+  env.move({questionWord:'what',experienceLanguage:language==='en'?'es':'en'});
+  assert.equal(await env.select(whatQuestion),false,'entry authority is owned by the source assessment language');
+  assert.strictEqual(env.snapshot().session,original.session);
+  env.move({experienceLanguage:language});
+  assert.equal(await env.select({...whatQuestion,assessmentTarget:{...whatQuestion.assessmentTarget,definitionPath:'untrusted.json'}}),false);
+  assert.strictEqual(env.snapshot().session,original.session,'canonical destination target must match');
+  assert.equal(await selection.select(whatQuestion,{provider:{select:()=>Promise.resolve(false)}}),false);
+  assert.strictEqual(env.snapshot().session,original.session,'failed target transport restores the original Session');
+  assert.equal(JSON.stringify({context:env.snapshot().context,records:env.records(),trace:original.session.trace}),before);
+  let deliver;
+  const fetch=env.box.fetch;
+  env.box.fetch=requested=>requested==='data/learning/skills/what.json'
+    ?new Promise(resolve=>{deliver=resolve;}):fetch(requested);
+  const pending=env.select(whatQuestion);
+  for(let i=0;i<10&&!deliver;i++)await Promise.resolve();
+  assert.ok(deliver,'canonical loader is pending before state drift');
+  env.move({questionWord:'where',experienceLanguage:language==='en'?'es':'en'});
+  deliver({ok:true,json:async()=>require('../data/learning/skills/what.json')});
+  assert.equal(await pending,false,'language/QWord drift cancels a pending start');
+  assert.strictEqual(env.snapshot().session,original.session,'cancelled entry retains the old assessment despite foreign display');
+  assert.equal(env.box.SIYAYOVerbExplorerCanonicalSkillSource.getSkill(),where.id);
+  assert.equal(JSON.stringify({context:env.snapshot().context,records:env.records(),trace:original.session.trace}),before);
+  env.box.fetch=fetch;env.move({questionWord:'what',experienceLanguage:language});
+  const interrupted=env.select(whatQuestion);
+  env.move({questionWord:'where'});
+  assert.equal(await env.select(question(destination)),true,'a second explicit selection supersedes the pending start');
+  assert.equal(await interrupted,false,'late completion of the old selection cannot activate WHAT');
+  assert.strictEqual(env.snapshot().session,original.session);
+  assert.equal(env.box.SIYAYOVerbExplorerCanonicalSkillSource.getSkill(),where.id);
+  assert.equal(JSON.stringify({context:env.snapshot().context,records:env.records(),trace:original.session.trace}),before);
+  env.move({questionWord:'what'});
+  assert.equal(await env.select(whatQuestion),true,'explicit entry accepts a declared independent target');
+  const whatSession=env.snapshot().session;
+  assert.notStrictEqual(whatSession,original.session);
+  assert.equal(whatSession.decision.assessmentScope.language,language);
+  assert.equal(whatSession.decision.assessmentScope.originExperienceId,destination.id);
+  assert.equal(env.snapshot().context.evidencePackets.length,0,'new WHAT circuit starts at zero');
+  assert.equal(JSON.stringify(env.records()),JSON.stringify(JSON.parse(before).records),'selection creates no footprint or closure');
+  const what=env.box.SIYAYOVerbExplorerWhatAssessmentLive;
+  const project=()=>env.box.AdaptivePassContractProgressView.project(env.snapshot().context.passContract,env.snapshot().context.evidencePackets,env.box.GreenPassProfile);
+  function mountWhat(experience){return what.mount({document:env.doc,experience,language});}
+  assert.equal(mountWhat(destination),true);
+  assert.equal(project().completed,0);
+  for(const group of env.doc.getElementById('whatAssessmentPanel').querySelectorAll('.what-object-question-probe'))
+    group.querySelectorAll('.what-probe-option')[0].click();
+  assert.equal(project().completed,2);
+  env.box.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:env.doc,language});
+  const surface=env.doc.getElementById('learnerTrailSurface');
+  const copy={en:/FUNCTION ● · LOCAL ANSWER ● · TRANSFER ○ · 2\/3/,es:/FUNCIÓN ● · RESPUESTA LOCAL ● · TRANSFERENCIA ○ · 2\/3/,pt:/FUNÇÃO ● · RESPOSTA LOCAL ● · TRANSFERÊNCIA ○ · 2\/3/}[language];
+  assert.match(surface.innerHTML,copy,'WHAT requirements have distinct labels without changing evidence counts');
+  assert.match(surface.innerHTML,/(?:0 CONFIRMED CONTEXTS|0 CONTEXTOS CONFIRMADOS)/);
+  const having=corpus.find(item=>item.id==='having-dinner');
+  env.move({currentExperienceId:having.id});assert.equal(mountWhat(having),true);
+  env.box.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:env.doc,language});
+  assert.match(surface.innerHTML,/data-transfer-state="pending"/,'active transfer remains pending until an accepted answer');
+  assert.match(surface.innerHTML,copy,'visiting the transfer destination cannot fill its requirement');
+  env.doc.getElementById('whatAssessmentPanel').querySelectorAll('.what-probe-option')[0].click();
+  assert.equal(project().completed,3);assert.equal(project().status,'GREEN_PASS');
+  assert.equal(env.records().filter(r=>r.source==='green-pass-contract'&&r.context.skill==='what.use.object-question').length,1);
+  env.box.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:env.doc,language});
+  assert.doesNotMatch(surface.innerHTML,/data-transfer-state="pending"/);
+  assert.match(surface.innerHTML,/(?:1 CONFIRMED CONTEXT|1 CONTEXTO CONFIRMADO)/);
+  env.move({currentExperienceId:destination.id,questionWord:'where'});
+  const footprints=env.records().length;
+  assert.equal(await env.select(question(destination)),true);assert.equal(env.mount(),true);
+  assert.strictEqual(env.snapshot().session,original.session);assertProgress(env,completed);
+  assert.equal(env.records().length,footprints,'resume does not replay any Attempt');
+  if(completed===2)env.button('location-answer','grounded-location').click();
+  assertProgress(env,3);
+  assert.equal(env.records().filter(r=>r.source==='green-pass-contract').length,2,'each skill has its own canonical closure');
+  env.move({questionWord:'what'});assert.equal(await env.select(whatQuestion),true);
+  assert.strictEqual(env.snapshot().session,whatSession);assert.equal(project().completed,3);
+  const recordsBeforeRemount=env.records().length,packetsBeforeRemount=env.snapshot().context.evidencePackets.length;
+  assert.equal(mountWhat(destination),true);
+  const returnedPanel=env.doc.getElementById('whatAssessmentPanel');
+  assert.match(returnedPanel.children.at(-1).textContent,/GREEN PASS/,
+    'return to the origin cannot restore the old in-progress feedback after transfer closure');
+  assert.equal(env.records().length,recordsBeforeRemount,'feedback remount creates no footprint');
+  assert.equal(env.snapshot().context.evidencePackets.length,packetsBeforeRemount,'feedback remount replays no Attempt');
+}
+
 async function main() {
   for (const mode of ['Node', 'browser VM']) for (const language of ['en', 'es', 'pt']) {
     await verifyReportedLanguageAndQWordSequence(mode, language);
     await verifyWhatToWherePreparing(mode, language);
+    await verifyIndependentWhereToWhat(mode,language,2);
+    await verifyIndependentWhereToWhat(mode,language,3);
     const learnerId = 'where-live-' + mode + '-' + language;
     const env = await environment(mode, language, learnerId);
     assert.equal(env.mount(), false, 'grounding/identity alone does not create a Session');
@@ -443,18 +537,20 @@ async function main() {
     assert.equal(env.snapshot().context.currentExperience, local.id, 'no destination Session or automatic NEXT');
     env.button('location-answer', 'grounded-location').click(); assertProgress(env, 3);
     assert.equal(env.records().filter(item => item.source === 'green-pass-contract').length, 1, 'closure remains unique');
-    // Reported WHERE -> WHAT in visited Preparing: exploration is selectable,
-    // but this origin-owned WHERE circuit cannot silently start a WHAT Session.
+    // An explicit WHERE -> WHAT entry starts an independent Preparing circuit.
     const beforeWhatVisit = JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace});
     env.move({questionWord: 'what'});
-    assert.equal(await env.select(destination.thinkingMind.find(item => item.questionWord === 'what')), false,
-      'WHERE closure has no integrated cross-skill adoption route to Preparing WHAT yet');
+    assert.equal(await env.select(destination.thinkingMind.find(item => item.questionWord === 'what')), true);
     assert.equal(env.box.SIYAYOVerbExplorerWhatAssessmentLive.mount({document: env.doc,
-      experience: destination, language}), false);
-    assert.strictEqual(env.snapshot().session, session); assertProgress(env, 3);
-    assert.equal(JSON.stringify({context: env.snapshot().context, records: env.records(), trace: session.trace}), beforeWhatVisit);
+      experience: destination, language}), true);
+    assert.notStrictEqual(env.snapshot().session, session);
+    assert.equal(env.snapshot().session.decision.experienceId,destination.id);
+    assert.equal(env.snapshot().context.evidencePackets.length,0,'WHAT never inherits WHERE evidence');
+    assert.equal(env.box.SIYAYOVerbExplorerThinkingMindAssessmentSelection.getRetainedProgress(where.id,language)[0].progress.completed,3);
+    assert.equal(JSON.stringify(env.records()),JSON.stringify(JSON.parse(beforeWhatVisit).records),'entry alone creates no Evidence');
     env.move({questionWord: 'where'});
     assert.equal(await env.select(question(destination)), true); assert.equal(env.mount(), true);
+    assert.strictEqual(env.snapshot().session,session);assertProgress(env,3);
     // Another explicit Skill, then Preparing restores the retained Shopping circuit.
     env.move({currentExperienceId: local.id, questionWord: 'which'});
     assert.equal(await env.select(local.thinkingMind.find(item => item.questionWord === 'which')), true);
@@ -520,5 +616,6 @@ async function main() {
   console.log('PASS — WHAT 2/3 Shopping → Preparing → WHERE/WHICH and other QWords hide WHAT probes, reject stale responses, explain resume-only origin entry and retain independent WHAT/WHERE Green Pass records in six language/runtime circuits; 126 real Trail display/QWord projections follow the current corpus label.');
   console.log('PASS — failed answers, stale buttons, identity/language/location drift and fresh destination startup do not fabricate competence; one footprint per occurrence and one closure per scope, with retained Shopping recovery.');
   console.log('PASS — native speech onstart, not request/error, observes audio; assistance remains WAIT across remount/reclick and cannot cross identity. No automatic NEXT or human learner claim.');
+  console.log('PASS — twelve WHERE 2/3 or 3/3 → independent WHAT Preparing 0/3 → 2/3 → Having 3/3 circuits preserve origin, language and each closure; WHERE resumes without replay. Foreign-language entry and invalid target are rejected; a failed load restores WHERE.');
 }
 main().catch(error => {console.error(error); process.exitCode = 1;});

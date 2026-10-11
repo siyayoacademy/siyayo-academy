@@ -83,7 +83,7 @@ for(const assessmentLanguage of ['en','es','pt']){
     for(displayLanguage of ['en','es','pt']){
       for(visualQWord of ['which','what','where']){
         assert.equal(root.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document:doc}),true);
-        const card=surface.innerHTML.match(/<span class="learner-journey-word" data-state="([^\"]+)">[^]*?<strong>WHICH<\/strong><small>([^<]+)<\/small><\/span>/);
+        const card=surface.innerHTML.match(/<span class="learner-journey-word" data-state="([^\"]+)">[^]*?<strong>WHICH<\/strong><small>([^<]+)<\/small>/);
         assert.ok(card);
         assert.equal(card[1],visualQWord==='which'?'active':'saved',`${assessmentLanguage} assessment keeps its own progress on ${displayLanguage} display`);
         assert.ok(card[2].startsWith(completed+'/3'));
@@ -92,6 +92,9 @@ for(const assessmentLanguage of ['en','es','pt']){
         assert.ok(surface.innerHTML.includes('<strong class="learner-trail-current-word">'+currentQuestion.questionWordLabel[displayLanguage]+'</strong>'));
         assert.equal(surface.dataset.currentQword,visualQWord);
         assert.equal(surface.dataset.assessmentLanguage,assessmentLanguage);
+        assert.ok(surface.innerHTML.includes('learner-journey-language'), 'Word Path declares the record language');
+        assert.ok(surface.innerHTML.includes('learner-journey-scope'), 'active record declares its own origin');
+        assert.ok(surface.innerHTML.includes('learner-trail-help'), 'marker/context explanation remains on demand');
         if(visualQWord!=='which'){
           assert.equal(surface.dataset.state,'EXPLORING');
           assert.match(surface.innerHTML,/data-assessment-qword="which"/);

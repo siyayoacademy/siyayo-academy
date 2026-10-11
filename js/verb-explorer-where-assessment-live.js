@@ -124,7 +124,8 @@
       el=doc.createElement('section');el.id='whereAssessmentPanel';el.className='where-canonical-panel';
       el.hidden=true;el.setAttribute('aria-label','WHERE location practice');
       var living=view.querySelector('.living-window');
-      if(living)living.appendChild(el);else view.insertBefore(el,view.querySelector('.experience-grid')||null);
+      if(living)living.insertBefore(el,doc.getElementById('choiceResolverPanel'));
+      else view.insertBefore(el,view.querySelector('.experience-grid')||null);
     }
     return el;
   }

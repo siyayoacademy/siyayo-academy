@@ -67,6 +67,13 @@ function runCase(label, adaptiveState) {
   assert.equal(nextCard.role, 'button');
   assert.equal(nextCard['aria-label'], 'Continue to the next Experience');
   assert.equal(nextCard.dataset.nextState, 'available');
+  const previous={closest: selector => selector==='#previousExperience'?previous:null};
+  assert.equal(nextCard.onclick({target:previous}),null,'previous arrow cannot bubble into NEXT');
+  let prevented=false;
+  nextCard.onkeydown({key:'Enter',target:previous,preventDefault(){prevented=true;}});
+  nextCard.onkeydown({key:' ',target:previous,preventDefault(){prevented=true;}});
+  assert.equal(navigationCalls,1,'previous click/keyboard does not navigate forward');
+  assert.equal(prevented,false,'previous control retains native keyboard activation');
 }
 
 runCase('anonymous/no Session', null);
@@ -78,6 +85,43 @@ runCase('identified and pedagogically supported', {
   session: { decision: { experienceId: 'shopping-for-dinner' } },
   lastConvergenceResult: { status: 'CANDIDATE_SUPPORTED_FOR_CONSIDERATION' }
 });
+
+// Real HTML now uses a native button. Keep keyboard activation native and
+// prevent the card's convenience click from duplicating or reversing a gesture.
+{
+  const card = makeTarget();
+  const button = {
+    tagName: 'BUTTON', dataset: { nextExperience: 'preparing-dinner' },
+    closest(selector) { return selector === '.toroidal-next' ? card : selector === 'button' ? this : null; }
+  };
+  let calls = 0;
+  const sandbox = vm.createContext({ Object, document: {
+    getElementById(id) { return id === 'nextExperience' ? button : null; }
+  }});
+  sandbox.globalThis = sandbox;
+  vm.runInContext(fs.readFileSync('js/verb-explorer-live-next-wire.js', 'utf8'), sandbox);
+  assert.equal(sandbox.SIYAYOVerbExplorerLiveNextWire.install({
+    document: sandbox.document, goToExperience(id) {
+      assert.equal(id, 'preparing-dinner'); calls += 1;
+    }
+  }), true);
+  button.onclick({ target: button });
+  card.onclick({ target: button });
+  assert.equal(calls, 1, 'native button bubbles without duplicate navigation');
+  assert.equal(button.onkeydown, undefined, 'Enter/Space retain native button behavior');
+  assert.equal(card.role, undefined, 'container does not become a second keyboard button');
+  const previous = { closest(selector) { return selector === 'button' || selector === '#previousExperience' ? this : null; }};
+  card.onclick({ target: previous });
+  assert.equal(calls, 1, 'native previous button never also advances');
+  card.onclick({ target: { closest() { return null; } }});
+  assert.equal(calls, 2, 'card text remains a single convenient forward gesture');
+  button.dataset.nextExperience = '';
+  assert.equal(button.onclick({ target: button }), null, 'no destination causes no navigation');
+  assert.equal(calls, 2);
+  const html = fs.readFileSync('verb-explorer.html', 'utf8');
+  assert.match(html, /<button\b[^>]*id="nextExperience"[^>]*type="button"/,
+    'NEXT remains keyboard accessible after every presentation render');
+}
 
 console.log(
   'Verb Explorer LIVE NEXT wire: PASS — canonical NEXT navigation remains available anonymously and independently of Session, Coordinator, convergence, and Green Pass.'

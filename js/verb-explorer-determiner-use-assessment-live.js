@@ -129,7 +129,11 @@ function mount(input){
   if(title)title.textContent=language==='es'?(transfer?'CUÁLES · USO DEL DETERMINANTE':'CUÁL · USO DEL DETERMINANTE'):language==='pt'?'QUAL · USO DO DETERMINANTE':'WHICH · DETERMINER USE';
   el.dataset.assessmentMode=transfer?'transfer':'local';
   var savedFeedback=feedbackKey&&feedbackMemory[feedbackKey];
-  if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
+  var progressView=root.AdaptivePassContractProgressView;
+  var progress=active.context&&progressView&&progressView.project(active.context.passContract,active.context.evidencePackets,root.GreenPassProfile);
+  if(progress&&progress.status==='GREEN_PASS'){
+    feedback.textContent=language==='es'?'GREEN PASS · CUÁL/CUÁLES confirmado':language==='pt'?'GREEN PASS · QUAL confirmado':'GREEN PASS · WHICH confirmed';feedback.hidden=false;
+  }else if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
   return true;
 }
 root.SIYAYOVerbExplorerDeterminerUseAssessmentLive=Object.freeze({mount:mount,hide:hide});

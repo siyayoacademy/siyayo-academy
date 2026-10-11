@@ -266,6 +266,20 @@
             }
           }
         },
+        "assessmentEntryFrom": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": ["originExperienceId", "skill"],
+            "additionalProperties": false,
+            "properties": {
+              "originExperienceId": {"type": "string", "minLength": 1},
+              "skill": {"type": "string", "minLength": 1}
+            }
+          }
+        },
         "assessmentTarget": {
           "type": "object",
           "required": [

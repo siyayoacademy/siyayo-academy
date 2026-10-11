@@ -32,7 +32,51 @@ Approved visual inheritance: the six gold/spectral-blue options are defined in [
 
 ---
 
-# ACTIVE CHECKPOINT — JAGUAR-LIVE-56
+# ACTIVE CHECKPOINT — JAGUAR-LIVE-57
+
+**Recorded:** 2026-10-11 (America/Sao_Paulo)
+
+**Branch:** `jaguar/verb-explorer-resume-live-wire` — existing PR #3.
+
+**Base HEAD:** `623b31d593dbd657cd5685ead5d6abf001c1eb28`. Preserve unrelated base-tree paths, including the parallel Gold Seed roadmap and canonical development DNA.
+
+**Authorization:** after the updated audit v2, the user explicitly requested implementation of the improvements. This batch executes priorities P01–P04 and the interface/circumstance localization in P05. New color/state assignments (P06), persistent PL/PA journal/export (P07), There+Be/composition assessment expansion (P08) and global physical/audio homologation (P09) remain subsequent work.
+
+**Publication authorization:** on 2026-10-11 the user explicitly authorized publication of the reviewed LIVE-57 code and documentation to the public repository `siyayoacademy/siyayo-academy`, exclusively on `jaguar/verb-explorer-resume-live-wire`, updating existing PR #3. No main merge or official production change is authorized. Two earlier attempts were blocked by automatic approval review before this destination-specific authorization; neither wrote a remote tree/commit/ref/PR. Repository metadata confirms public visibility and owner push permission. Pre-publication review covers all 23 permitted paths, excludes local QA captures/packages and runtime learner records, and found no credentials/private-data candidates or inappropriate files. Remote commit/hash preservation, CI and Cloudflare preview readback must be recorded in PR #3 after publication; local verification alone does not establish deployment.
+
+## Implemented
+
+| Point | Behavior and authority | Verification / next evidence |
+|---|---|---|
+| P01 — marks versus records | Contract marks stay binary ○/●. WHAT/WHY function and local-answer requirements have distinct labels. The main count explicitly says **confirmed contexts**; an on-demand explanation distinguishes longitudinal history from accepted requirements. A visited, still-unaccepted transfer says **transfer in progress**, without filling its mark. | Actual contract/Cycle circuits check 2/3 with transfer ○, then 3/3 and one confirmed context. Human visual review pending at commit creation. |
+| P02 — Learning Trail / Word Path | The current localized Experience appears below the Trail title. Word Path declares its assessment-record language, localized QWord equivalent and origin. Confirmed history also shows the current contract count; other retained origins of the same skill stay legible. Read-only projection excludes the cached duplicate of the current scope. | 81 scope/display cases; 126 real Trail QWord/display projections; 288 badges and 189 selector/format cases. Projection does not mutate progress. |
+| P03 — WHERE → WHAT Preparing | Preparing WHAT explicitly declares `assessmentEntryFrom` Shopping WHERE. An explicit visible WHAT selection may start a separate Preparing-origin WHAT assessment at 0/3, with its own language, leaf target, canonical loader/Composer and contract. WHERE partial/confirmed snapshots are retained. A previously started matching WHAT origin takes recovery precedence. | Twelve EN/ES/PT × Node/browser-VM circuits start from WHERE 2/3 or 3/3, complete WHAT's local/transfer answers, then recover WHERE and preserve both closures. No Evidence is inherited or produced by entry. |
+| P03 — cancellation and failures | Skill loading binds to the selected QWord, location, language and identity. A superseding selection cancels stale startup. Failed/cancelled entry recovers the previously active scope and packets, even if display has moved. Normal explicit recovery keeps its original language/location gates; rollback does not authorize foreign answers. Anonymous target still waits for explicit nick. | Real loader/Cycle regression covers state drift, superseding click, invalid target, foreign-language entry and failed transport; identity isolation remains passing. |
+| P04 — module organization | Trail, Dependency Focus/head probe, WHAT, WHERE, WHY and explicit adoption controls share LINES. NEXT is last and centered; NEXT and previous Experience use separate native buttons within that card. Nick keeps its position. WHICH remains outside LINES as the temporary approved exception. | Local Chromium checks native Enter/Space after QWord renders, one navigation per gesture, return, panel placement and nonempty finite SVG connectors. Physical-device review remains open. |
+| P05 — language presentation | Circumstance names and authored values, gear labels/types/tense/mode/perspective, LINES and NEXT follow EN/ES/PT. Internal IDs, corpus relationships and assessment language remain canonical. | Strict schema and corpus checks pass; native copy review pending at commit creation. |
+
+**Local verification:** 265 distinct workflow Node scripts PASS; 8 AJV draft2020 strict schema/compile commands PASS; syntax of 477 runtime/test JS files PASS. Local headless Chromium 153 verifies EN/ES/PT independent WHERE → WHAT, separate closures and recovery, display-language isolation, native NEXT/previous keyboard behavior, panel placement and 15 format/viewport samples (AUTO/PORTRAIT/LANDSCAPE; 1280×960, 390×844 and 844×390). Three full-page captures were inspected. These checks do not replace physical-device or audible T7 homologation. Publication is now explicitly authorized; public CI/deploy/readback are verified separately after the branch update.
+
+**Native-review refinement:** after a transfer closed WHAT, returning to its origin restored the earlier “assessment in progress” message while Trail correctly showed 3/3. WHAT/WHY/WHICH now prefer the existing read-only contract projection's current Green Pass status over cached presentation text. Scoped fallback feedback remains; remount submits no Attempt and changes no Evidence/history. Native EN/ES/PT checks cover the return after each skill's closure. The legacy orange partial Trail/Word Path glyph now uses the already homologated gold-standard token; no new color/state matrix was assigned.
+
+**Marker semantics:** main Trail ○ no footprint / ◐ observed footprint / ● one distinct Experience closed canonically / ★ at least two distinct closed Experiences, filtered by skill and assessment language. Contract requirements ○ not accepted / ● accepted. Word Path ◐ requires accepted partial progress, and ● represents confirmed history. Thinking Mind ○ selected with no accepted requirement / ◐ accepted contract progress / ★ canonical closure. These layers have different meanings; changing color or visiting a transfer destination cannot create Evidence.
+
+## NEXT GO
+
+After successful branch publication and deploy/readback, open the new commit preview in a separate tab; preserve the previous trial. A new preview origin does not migrate in-page progress. Use a new test nick.
+
+1. Shopping WHAT → two accepted local requirements: 2/3, **FUNCTION / LOCAL ANSWER / TRANSFER**, zero confirmed contexts.
+2. Preparing → WHERE → WHICH → WHAT, comparing EN/ES/PT display one axis at a time. Button, main Trail word, record language/origin and visible assessment panel must agree. Missing WHERE/WHICH origins still name Shopping and the exact QWord to start.
+3. Under a second new nick, begin WHERE in Shopping and obtain 2/3; visit Preparing. Select WHAT explicitly in the same assessment language. Without a retained WHAT circuit, it begins here at 0/3 and WHERE stays saved. Obtain WHAT 2/3 → Having transfer 3/3. Return to Preparing WHERE: the original 2/3 returns; its transfer closes only WHERE.
+4. Repeat the independent entry from an already confirmed WHERE 3/3. Check that WHERE is not replayed and WHAT begins empty. If matching WHAT was already started, a QWord click recovers it; the existing explicit adoption action remains the separate way to start the next confirmed WHAT stage.
+5. Review LINES, WHY/adoption placement, final centered NEXT, previous arrow, whole words, internal diagram scroll and connectors in AUTO/PORTRAIT/LANDSCAPE. Keep WHICH's temporary placement exception and Nick position.
+6. Complete T7 audio and T8 full navigation manually. Do not close the entire physical EN/ES/PT × QWord × format matrix from automated results alone.
+
+**Follow-up work order:** P06 color/background/border homologation study; P07 durable PL/PA journal with on-demand query/share/print/export; P08 canonical composition and There+Be assessment contracts; P09 physical-device/audio matrix. Existing palette tokens and contract definitions stay authoritative. No merge or new PR.
+
+---
+
+# PREVIOUS CHECKPOINT — JAGUAR-LIVE-56
 
 **Recorded:** 2026-10-08 (America/Sao_Paulo)
 

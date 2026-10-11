@@ -36,12 +36,15 @@ function tryCompose(options){
 
   var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
   var selectedState=stateBridge&&stateBridge.getState&&stateBridge.getState();
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  var selectedWord=runtime&&runtime.activeQuestionWord&&runtime.activeQuestionWord();
   if(root.AdaptiveAssessmentScope&&(!selectedState||!['en','es','pt'].includes(selectedState.experienceLanguage)))return Promise.resolve(false);
   var version=generation;
   pending=Promise.resolve(skillBridge.loadTarget())
     .then(function(loaded){
       if(loaded!==true||version!==generation||identitySource.getId()!==learnerId)return false;
       var latestState=stateBridge&&stateBridge.getState&&stateBridge.getState();
+      if(selectedWord&&runtime.activeQuestionWord()!==selectedWord)return false;
       if(root.AdaptiveAssessmentScope&&(!latestState||latestState.currentExperienceId!==selectedState.currentExperienceId||
         latestState.experienceLanguage!==selectedState.experienceLanguage))return false;
       var latest=targetAuthority.getTarget();
