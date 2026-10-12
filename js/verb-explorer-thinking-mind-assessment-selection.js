@@ -102,8 +102,6 @@ function getRetainedProgress(skill,language){
   }).filter(Boolean);
   return Object.freeze(records);
 }
-  return Object.freeze(records);
-}
 // Read-only witness summaries for the WORD PATH. A retained snapshot must
 // remain owned by this NICK and its exact Skill × Language × origin scope.
 function getRetainedEvidence(skill,language){
@@ -124,6 +122,9 @@ function getRetainedEvidence(skill,language){
       progressView:root.AdaptivePassContractProgressView});
     return projection&&Object.freeze({scopeKey:scope.key,language:scope.language,
       originExperienceId:scope.originExperienceId,detail:projection});
+  }).filter(Boolean);
+  return Object.freeze(records);
+}
 // A destination may declare a separate entry from a named origin circuit.
 // This is an explicit QWord selection, not transfer credit or a Green-based NEXT.
 function independentEntryAllowed(question,target,decision,learnerId,state){
