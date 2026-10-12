@@ -3,6 +3,37 @@
 (function(root){
 'use strict';
 var feedbackMemory=Object.create(null),generation=0;
+// Read-only source for free WHAT practice; never adopt a Skill or create a Session.
+var exploratoryDefinition=null,exploratoryLoad=null;
+function freeWhatDefinition(){
+  if(exploratoryDefinition)return Promise.resolve(exploratoryDefinition);
+  if(!exploratoryLoad){
+    exploratoryLoad=Promise.resolve().then(function(){
+      return typeof root.fetch==='function'?root.fetch('data/learning/skills/what.json'):null;
+    }).then(function(response){return response&&response.ok?response.json():null;}).then(function(value){
+      if(value&&value.id==='what.use.object-question'&&value.passContract&&Array.isArray(value.passContract.requires)){
+        exploratoryDefinition=value;return value;
+      }
+      return null;
+    }).catch(function(){return null;}).then(function(value){
+      if(!value)exploratoryLoad=null;
+      return value;
+    });
+  }
+  return exploratoryLoad;
+}
+function freeRoute(experience,catalog){
+  var destination=experience&&catalog&&catalog.getExperience&&catalog.getExperience(experience.toroidalNext&&experience.toroidalNext.nextExperience);
+  var target=(experience&&experience.thinkingMind||[]).find(function(q){return q.questionWord==='what'&&q.assessmentTarget&&q.assessmentTarget.skill==='what.use.object-question';});
+  if(target&&destination)return {origin:experience,next:destination,transfer:false};
+  var all=catalog&&catalog.getExperiences&&catalog.getExperiences();
+  var origins=(Array.isArray(all)?all:[]).filter(function(candidate){
+    return candidate&&candidate.toroidalNext&&candidate.toroidalNext.nextExperience===experience.id&&
+      (candidate.thinkingMind||[]).some(function(q){return q.questionWord==='what'&&q.assessmentTarget&&q.assessmentTarget.skill==='what.use.object-question';});
+  });
+  return origins.length===1?{origin:origins[0],next:experience,transfer:true}:null;
+}
+
 function text(v){return typeof v==='string'?v.trim():'';}
 function isExploringWhat(){
   var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
@@ -45,19 +76,46 @@ function mount(input){
   if(typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'||
     typeof catalog.getExperience!=='function'||typeof source.resolve!=='function')return false;
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
-  var feedbackKey=decision&&decision.assessmentScope?decision.assessmentScope.key+'|'+text(experience.id):'';
-  var definition=skills.getDefinition&&skills.getDefinition();
-  if(!decision||text(decision.skill)!=='what.use.object-question'||
-    text(definition&&definition.id)!==text(decision.skill))return false;
-  if(decision.assessmentScope&&decision.assessmentScope.language!==language)return false;
-  var origin=catalog.getExperience(text(decision.experienceId));
+  var adopted=skills.getDefinition&&skills.getDefinition();
+  var ownedOrigin=decision&&catalog.getExperience(text(decision.experienceId));
+  var sameOrNext=ownedOrigin&&(ownedOrigin.id===experience.id||
+    text(ownedOrigin.toroidalNext&&ownedOrigin.toroidalNext.nextExperience)===experience.id);
+  var authorized=!!(decision&&decision.skill==='what.use.object-question'&&
+    adopted&&adopted.id===decision.skill&&sameOrNext&&
+    (!decision.assessmentScope||decision.assessmentScope.language===language));
+  var exploring=!authorized;
+  var definition=authorized?adopted:input.exploratoryDefinition;
+  if(exploring&&!definition){
+    // Only advertise extra response choices when an existing canonical route resolves.
+    if(!freeRoute(experience,catalog))return false;
+    var currentQuestion=(experience.thinkingMind||[]).find(function(q){return q.questionWord==='what';});
+    var canonical=text(currentQuestion&&currentQuestion.question&&currentQuestion.question[language]);
+    if(!canonical)return false;
+    // Keep the canonical LINES invitation visible while the read-only definition loads.
+    el.dataset.canonicalQuestion=canonical;
+    el.dataset.assessmentState='exploratory';
+    var pending=doc.createElement('p');
+    pending.textContent={en:'WHAT · free contextual practice',es:'QUÉ · práctica contextual libre',pt:'O QUE · prática contextual livre'}[language];
+    el.appendChild(pending);el.hidden=false;
+    freeWhatDefinition().then(function(skill){
+      var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+      if(!skill||mountedGeneration!==generation||el.hidden||!isExploringWhat()||
+        runtime&&typeof runtime.activeLanguage==='function'&&runtime.activeLanguage()!==language||
+        runtime&&typeof runtime.activeExperienceId==='function'&&runtime.activeExperienceId()!==experience.id)return;
+      mount(Object.assign({},input,{exploratoryDefinition:skill}));
+    });
+    return true;
+  }
+  var route=exploring?freeRoute(experience,catalog):null;
+  var origin=exploring?route&&route.origin:ownedOrigin;
   if(!origin)return false;
   var to=text(experience.id),from=text(origin.id),transfer=to!==from;
   if(transfer&&text(origin.toroidalNext&&origin.toroidalNext.nextExperience)!==to)return false;
-  var next=transfer?experience:catalog.getExperience(text(origin.toroidalNext&&origin.toroidalNext.nextExperience));
+  var next=exploring?route.next:(transfer?experience:catalog.getExperience(text(origin.toroidalNext&&origin.toroidalNext.nextExperience)));
   var specs=source.resolve(definition,origin,next,catalog.getNouns&&catalog.getNouns(),language);
   if(!specs)return false;
   var available=transfer?[specs.transferProbe]:[specs.functionProbe,specs.localProbe];
+  var feedbackKey=authorized&&decision.assessmentScope?decision.assessmentScope.key+'|'+text(experience.id):'';
   var copy={en:{heading:'WHAT · CONTEXTUAL PRACTICE',registered:'Response recorded · assessment in progress',retry:'Try another answer',green:'GREEN PASS · WHAT confirmed'},
     es:{heading:'QUÉ · PRÁCTICA CONTEXTUAL',registered:'Respuesta registrada · evaluación en curso',retry:'Prueba otra respuesta',green:'GREEN PASS · QUÉ confirmado'},
     pt:{heading:'O QUE · PRÁTICA CONTEXTUAL',registered:'Resposta registrada · avaliação em andamento',retry:'Tente outra resposta',green:'GREEN PASS · O QUE confirmado'}}[language];
@@ -74,6 +132,13 @@ function mount(input){
     }[language];
   }
   var title=doc.createElement('h3');title.textContent=copy.heading;el.appendChild(title);
+  el.dataset.assessmentState=exploring?'exploratory':'authorized';
+  if(exploring){
+    var freeLabel=doc.createElement('p');
+    freeLabel.className='where-probe-feedback';
+    freeLabel.textContent={en:'FREE EXPLORATION · responses are not graded',es:'EXPLORACIÓN LIBRE · respuestas sin calificación',pt:'EXPLORAÇÃO LIVRE · respostas sem avaliação'}[language];
+    el.appendChild(freeLabel);
+  }
   var feedback=doc.createElement('p');feedback.setAttribute('aria-live','polite');feedback.hidden=true;
   var sensor=Object.freeze({support:function(){return 'none';}});
   available.forEach(function(spec){
@@ -96,7 +161,10 @@ function mount(input){
       button.addEventListener('click',function(){
         if(mountedGeneration!==generation||el.hidden||!isExploringWhat())return;
         var current=coordinator.snapshot();
-        if(!current||current.session!==active.session)return;
+        if(exploring){
+          // A later Session adoption invalidates a previously mounted exploratory button.
+          if((current&&current.session||null)!==(active&&active.session||null))return;
+        }else if(!current||current.session!==active.session)return;
         var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
         var state=stateBridge&&stateBridge.getState&&stateBridge.getState();
         if(!state||text(state.currentExperienceId)!==spec.experienceId||
@@ -106,6 +174,16 @@ function mount(input){
           fromExperienceId:spec.fromExperienceId,currentExperienceId:spec.experienceId
         });
         var evaluated=results.evaluate(spec,event);
+        if(!evaluated)return;
+        if(exploring){
+          // Diagnostic feedback only: no Evidence, Attempt, Coordinator, profile or Green Pass.
+          buttons.forEach(function(option){option.setAttribute('aria-pressed',String(option===button));});
+          feedback.textContent=evaluated.result==='pass'
+            ?{en:'Contextual response recognized · free practice only',es:'Respuesta contextual reconocida · solo práctica libre',pt:'Resposta contextual reconhecida · apenas prática livre'}[language]
+            :{en:'Try another response · free practice only',es:'Prueba otra respuesta · solo práctica libre',pt:'Experimente outra resposta · apenas prática livre'}[language];
+          feedback.hidden=false;
+          return;
+        }
         var evidence=evidenceBridge.fromResult({result:evaluated,learnerEvent:event,supportSensor:sensor});
         var attempt=boundary.assemble({learnerEvent:event,evidence:evidence});
         if(!attempt)return;
@@ -156,7 +234,7 @@ function mount(input){
   // A local response message can predate completion at the transfer destination.
   // Project the current owned contract without replaying any learner response.
   var progressView=root.AdaptivePassContractProgressView;
-  var progress=active.context&&progressView&&progressView.project(active.context.passContract,active.context.evidencePackets,root.GreenPassProfile);
+  var progress=!exploring&&active&&active.context&&progressView&&progressView.project(active.context.passContract,active.context.evidencePackets,root.GreenPassProfile);
   if(progress&&progress.status==='GREEN_PASS'){feedback.textContent=copy.green;feedback.hidden=false;}
   else if(savedFeedback){feedback.textContent=savedFeedback.text;feedback.hidden=false;}
   el.hidden=false;

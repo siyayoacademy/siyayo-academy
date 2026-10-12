@@ -26,7 +26,7 @@ sandbox.AdaptiveWhatObjectQuestionProbeResult=require('../js/adaptive-what-objec
 sandbox.AdaptiveWhatObjectQuestionProbeEvidenceBridge=require('../js/adaptive-what-object-question-probe-evidence-bridge.js');
 sandbox.AdaptiveWhatObjectQuestionProbeAttemptBoundary=require('../js/adaptive-what-object-question-probe-attempt-boundary.js');
 sandbox.SIYAYOVerbExplorerCanonicalSkillSource={getDefinition:()=>skill};
-sandbox.SIYAYOVerbExplorerExperienceNavigation={getExperience:id=>seeds.find(e=>e.id===id),getNouns:()=>nouns};
+sandbox.SIYAYOVerbExplorerExperienceNavigation={getExperience:id=>seeds.find(e=>e.id===id),getExperiences:()=>seeds.slice(),getNouns:()=>nouns};
 let experienceId='preparing-dinner';
 sandbox.SIYAYOVerbExplorerAdaptiveStateBridge={getState:()=>({currentExperienceId:experienceId,experienceLanguage:'pt'})};
 const active={session:{decision:{skill:skill.id,experienceId:'preparing-dinner'}}};
@@ -45,8 +45,9 @@ sandbox.SIYAYOVerbExplorerAdaptiveCoordinator={
 };
 vm.runInNewContext(fs.readFileSync('js/verb-explorer-what-assessment-live.js','utf8'),sandbox);
 const live=sandbox.SIYAYOVerbExplorerWhatAssessmentLive;
-assert.equal(live.mount({document:doc,experience:seeds[0],language:'pt'}),false,
-  'S1 visit cannot mount the adopted S2 WHAT probe');
+assert.equal(live.mount({document:doc,experience:seeds[0],language:'pt'}),true,
+  'S1 visit offers free WHAT practice without adopting or replacing the S2 Session');
+assert.equal(byId.whatAssessmentPanel.dataset.assessmentState,'exploratory');
 assert.equal(live.mount({document:doc,experience:seeds[1],language:'pt'}),true);
 let panel=byId.whatAssessmentPanel;
 assert.equal(panel.children.filter(el=>el.className==='what-object-question-probe').length,2);
@@ -83,8 +84,10 @@ assert.equal(attempts[2].context.experienceId,'having-dinner');
 assert.equal(adoptionInvitation,true,'Green WHAT transfer refreshes the S3 adoption invitation');
 assert.equal(panel.children.at(-1).textContent,'GREEN PASS · O QUE confirmado');
 active.session={decision:{skill:'which.use.determiner',experienceId:'preparing-dinner'}};
-assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),false);
-assert.equal(attempts.length,3);
+assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),true,
+  'An unrelated active Skill must not hide free WHAT practice');
+assert.equal(panel.dataset.assessmentState,'exploratory');
+assert.equal(attempts.length,3,'free exploration must not submit an Attempt');
 console.log('PASS — WHAT panel submits distinct S2 and S3 Attempts only for the active WHAT Session.');
 
 
