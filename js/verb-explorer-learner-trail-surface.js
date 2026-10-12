@@ -124,6 +124,17 @@
         (form&&form!==item.word?'<small class="learner-journey-equivalent">'+escapeHtml(form)+'</small>':'')+
         (origins.length?'<small class="learner-journey-scope">'+escapeHtml(origins.join(' / '))+'</small>':'')+'</span>';
     }).join('');
+    // Read-only QW × EN/ES/PT history. Keep legacy cards if the projection is unavailable.
+    var matrixView=root.SIYAYOVerbExplorerPolyglotWordPathView,polyglotMatrix='';
+    if(matrixView&&typeof matrixView.render==='function'&&root.AdaptiveAssessmentScope){
+      try{polyglotMatrix=matrixView.render({language:language,profile:profile,
+        identity:root.SIYAYOVerbExplorerLearnerIdentitySource,
+        selection:root.SIYAYOVerbExplorerThinkingMindAssessmentSelection,
+        snapshot:snapshot,trailView:trailView,markerAuthority:markerAuthority,
+        progressView:root.AdaptivePassContractProgressView,evaluator:root.GreenPassProfile,
+        scopeApi:root.AdaptiveAssessmentScope,catalog:root.SIYAYOVerbExplorerExperienceNavigation});}
+      catch(_error){polyglotMatrix='';}
+    }
     var origin=text(snapshot&&snapshot.session&&snapshot.session.decision&&snapshot.session.decision.experienceId);
     var destination=text(liveState.currentExperienceId);
     var currentWord=known.find(function(item){return item.id===skill;});
@@ -144,7 +155,7 @@
     return '<div class="learner-journey" aria-label="'+escapeHtml(labels.path)+'">'+
       '<b class="learner-journey-title">'+escapeHtml(labels.path)+'</b>'+
       '<small class="learner-journey-language">'+escapeHtml(labels.assessment+' · '+assessmentLanguage.toUpperCase())+'</small>'+
-      '<div class="learner-journey-words">'+cards+'</div>'+
+      '<div class="learner-journey-words'+(polyglotMatrix?' learner-journey-polyglot':'')+'">'+(polyglotMatrix||cards)+'</div>'+
       (choiceAccepted?'<small class="learner-journey-choice">✓ '+escapeHtml(labels.choice)+'</small>':'')+
       context+'</div>';
   }
