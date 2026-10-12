@@ -293,9 +293,28 @@ Promise.resolve().then(function(){
   assert.doesNotMatch(container.innerHTML,/WHAT<\/strong><small>not started/);
   Surface.refresh({document:documentRef,language:'es'});
   assert.doesNotMatch(container.innerHTML,/progress saved/);
-  console.log(
-    'Verb Explorer learner trail surface: PASS — ○/◐/●/★ render as a read-only view of canonical Trail state and refresh after learner interaction without creating progression, score, mastery, or sound.'
-  );
+
+  // ELO 7D.2.2 regression: opening the witness disclosure is read-only.
+  // A global render here would replace the opened <details> and jump scroll.
+  const openedCard = '<details class="wp-evidence-card" open><summary>WHAT · PT</summary><p>Evidência aceita</p></details>';
+  container.innerHTML = openedCard;
+  for (const handler of listeners.click) handler({
+    target: { closest(selector) {
+      assert.equal(selector, '#learningTrailWordPathModule');
+      return { id: 'learningTrailWordPathModule' };
+    } }
+  });
+  return Promise.resolve().then(function(){
+    assert.equal(container.innerHTML, openedCard, 'Word Path click preserves the opened details');
+    // Real pedagogical actions happen outside the read-only module and must refresh.
+    for (const handler of listeners.click) handler({ target: { closest() { return null; } } });
+    return Promise.resolve().then(function(){
+      assert.notEqual(container.innerHTML, openedCard, 'outside click still refreshes Trail evidence');
+      console.log(
+        'Verb Explorer learner trail surface: PASS — ○/◐/●/★, read-only details persist on click, outside interactions still refresh without score or progression writes.'
+      );
+    });
+  });
 }).catch(function(error){
   console.error(error);
   process.exitCode = 1;

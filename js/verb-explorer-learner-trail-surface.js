@@ -377,7 +377,12 @@
     var doc=options.document||root.document;
     if(!doc||typeof doc.addEventListener!=='function')return false;
 
-    doc.addEventListener('click',function(){
+    doc.addEventListener('click',function(event){
+      // The Trail & Word Path is a read-only disclosure. Rebuilding it when
+      // a learner opens evidence details discards the opened DOM and scroll.
+      // Keep the global refresh for interactions outside this module.
+      var target=event&&event.target;
+      if(target&&typeof target.closest==='function'&&target.closest('#learningTrailWordPathModule'))return;
       Promise.resolve().then(function(){
         var nextOptions=Object.assign({},options);
         delete nextOptions.language;
