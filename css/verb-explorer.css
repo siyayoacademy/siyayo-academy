@@ -498,3 +498,24 @@ body{
 .wp-evidence-requirement small,.wp-evidence-pending{font-size:.67rem;color:#a9bcd1}
 .wp-evidence-note{margin:11px 0 0;color:#a9bcd1;text-align:center;font-size:.68rem;line-height:1.4}
 @container siyayo-explorer (max-width:480px){.wp-evidence-grid{grid-template-columns:minmax(0,1fr)}.wp-evidence-card>summary{padding:10px}}
+
+/* JAGUAR ELO 7D.3 · Portrait alignment only.
+   Read-only display: do not change Sessions, Evidence or Green Pass. */
+@container siyayo-explorer (max-width:480px){
+  /* Leave the progress medallion in place, but out of the width calculation. */
+  .learning-trail-word-path-panel .learner-trail-surface{
+    position:relative;
+    display:block;
+  }
+  .learning-trail-word-path-panel .learner-trail-mark{
+    position:absolute;
+    top:10px;
+    left:10px;
+  }
+  /* Grid min-content tracks must not push the 322px matrix off-centre. */
+  .learning-trail-word-path-panel .learner-trail-copy{
+    width:100%;
+    min-width:0;
+    grid-template-columns:minmax(0,1fr);
+  }
+}
