@@ -63,6 +63,38 @@ function install(options){
     }else if(current){status.textContent='LEARNER READY · '+current;}
   }
 
+  // A displayed Question Word can be selected before any assessment click.
+  // NICK confirmation may adopt ONLY the current Experience's declared start target.
+  // Resume-only targets, exploratory questions and other scopes remain untouched.
+  function adoptCurrentQuestionForIdentity(learnerId, selection, initialFocus){
+    var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+    var navigation=root.SIYAYOVerbExplorerExperienceNavigation;
+    var contract=root.SIYAYOQuestionWordAssessmentContract;
+    var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+    if(!selection||typeof selection.select!=='function'||
+       !runtime||!navigation||typeof navigation.getExperience!=='function'||
+       !contract||typeof contract.targetForSelection!=='function'||
+       !initialFocus||text(source.getId())!==learnerId)return false;
+    if(typeof runtime.activeQuestionWord!=='function'||
+       typeof runtime.activeExperienceId!=='function'||
+       typeof runtime.activeLanguage!=='function'||
+       runtime.activeQuestionWord()!==initialFocus.word||
+       runtime.activeExperienceId()!==initialFocus.experienceId||
+       runtime.activeLanguage()!==initialFocus.language)return false;
+    var live=coordinator&&typeof coordinator.snapshot==='function'?coordinator.snapshot():null;
+    if(live&&live.session)return false;
+    var experience=navigation.getExperience(initialFocus.experienceId);
+    var matches=(experience&&experience.thinkingMind||[]).filter(function(question){
+      return question&&question.questionWord===initialFocus.word;
+    });
+    if(matches.length!==1||!matches[0].assessmentTarget)return false;
+    var target=contract.targetForSelection(matches[0],null);
+    if(!target||target.resumeOnly===true||
+       target.skill!==matches[0].assessmentTarget.skill||
+       target.definitionPath!==matches[0].assessmentTarget.definitionPath)return false;
+    return Promise.resolve(selection.select(matches[0]));
+  }
+
   function submit(){
     var previous=text(source.getId());
     if(previous&&previous===text(input.value)){editing=false;reflect();if(enhanced)change.focus();return Promise.resolve(false);}
@@ -80,11 +112,21 @@ function install(options){
     var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
     if(runtime&&typeof runtime.render==='function')runtime.render();
     var selection=root.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
+    var focus=runtime&&typeof runtime.activeQuestionWord==='function'&&
+      typeof runtime.activeExperienceId==='function'&&
+      typeof runtime.activeLanguage==='function'
+      ?{word:runtime.activeQuestionWord(),experienceId:runtime.activeExperienceId(),language:runtime.activeLanguage()}:null;
     var resume=selection&&typeof selection.resumeForIdentity==='function'
       ?selection.resumeForIdentity():Promise.resolve(false);
     return Promise.resolve(resume).then(function(started){
       if(started===true)return true;
-      return readiness&&typeof readiness.signal==='function'?readiness.signal():false;
+      var adopted=adoptCurrentQuestionForIdentity(id,selection,focus);
+      // Keep the existing readiness path synchronous when no target exists.
+      if(adopted===false)return readiness&&typeof readiness.signal==='function'?readiness.signal():false;
+      return Promise.resolve(adopted).then(function(result){
+        return result===true?true:
+          readiness&&typeof readiness.signal==='function'?readiness.signal():false;
+      });
     }).then(function(){
       if(runtime&&typeof runtime.render==='function')runtime.render();
       return true;
