@@ -475,3 +475,26 @@ body{
  .wp-poly-origin{font-size:.52rem}
  .wp-poly-word small{font-size:.53rem}
 }
+
+/* JAGUAR ELO 7D.2 — read-only expandable proof details beneath Word Path. */
+.wp-evidence-detail{width:100%;max-width:100%;margin:17px auto 0;padding-top:14px;border-top:1px solid rgba(242,216,138,.25);text-align:left}
+.wp-evidence-detail h5{margin:0 0 12px;color:var(--siyayo-gold-primary);font-family:var(--font-display);font-size:.78rem;letter-spacing:.065em;text-align:center}
+.wp-evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:9px}
+.wp-evidence-card{min-width:0;border:1px solid rgba(242,216,138,.28);border-radius:11px;background:rgba(5,17,35,.8);overflow:hidden}
+.wp-evidence-card[open]{border-color:rgba(242,216,138,.57)}
+.wp-evidence-card>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;cursor:pointer;color:var(--siyayo-gold-primary);font-size:.77rem;list-style:none}
+.wp-evidence-card>summary::-webkit-details-marker{display:none}
+.wp-evidence-card>summary:after{content:'⌄';font-size:1.2rem;line-height:1}
+.wp-evidence-card[open]>summary:after{transform:rotate(180deg)}
+.wp-evidence-card>summary:focus-visible{outline:2px solid var(--siyayo-gold-bright);outline-offset:-3px}
+.wp-evidence-card>summary span{font-size:.68rem;color:#dce7f7}
+.wp-evidence-origin{padding:0 12px 9px;margin:0;color:#a5b9d0;font-size:.69rem;overflow-wrap:anywhere}
+.wp-evidence-items{margin:0;padding:0 12px 11px;list-style:none;display:grid;gap:7px}
+.wp-evidence-requirement{display:grid;gap:3px;padding:8px 9px;background:rgba(12,32,57,.72);border:1px solid rgba(148,175,195,.22);border-radius:8px;overflow-wrap:anywhere}
+.wp-evidence-requirement b{color:#dce7f7;font-size:.69rem}
+.wp-evidence-requirement[data-accepted=true] b{color:#8fddb8}
+.wp-evidence-answer{font-size:.83rem;color:#fff;overflow-wrap:anywhere}
+.wp-evidence-sentence{font-size:.73rem;color:#dce7f7;overflow-wrap:anywhere}
+.wp-evidence-requirement small,.wp-evidence-pending{font-size:.67rem;color:#a9bcd1}
+.wp-evidence-note{margin:11px 0 0;color:#a9bcd1;text-align:center;font-size:.68rem;line-height:1.4}
+@container siyayo-explorer (max-width:480px){.wp-evidence-grid{grid-template-columns:minmax(0,1fr)}.wp-evidence-card>summary{padding:10px}}

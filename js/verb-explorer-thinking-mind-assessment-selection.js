@@ -102,6 +102,28 @@ function getRetainedProgress(skill,language){
   }).filter(Boolean);
   return Object.freeze(records);
 }
+  return Object.freeze(records);
+}
+// Read-only witness summaries for the WORD PATH. A retained snapshot must
+// remain owned by this NICK and its exact Skill × Language × origin scope.
+function getRetainedEvidence(skill,language){
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  var learnerId=identity&&identity.getId&&identity.getId();
+  var api=root.AdaptiveAssessmentScope;
+  var detail=root.SIYAYOVerbExplorerWordPathWitnessView;
+  if(!learnerId||!api||!detail||typeof detail.project!=='function'||
+     !['en','es','pt'].includes(language)||!text(skill))return Object.freeze([]);
+  var records=Object.keys(retained).map(function(cacheKey){
+    var entry=retained[cacheKey],snap=entry&&entry.snapshot;
+    var decision=snap&&snap.session&&snap.session.decision;
+    var scope=decision&&decision.assessmentScope,context=snap&&snap.context;
+    if(!api.valid(scope)||scope.key!==cacheKey||scope.learnerId!==learnerId||
+       scope.skill!==skill||scope.language!==language||!context)return null;
+    var projection=detail.project({scope:scope,context:context,
+      scopeApi:api,evaluator:root.GreenPassProfile,
+      progressView:root.AdaptivePassContractProgressView});
+    return projection&&Object.freeze({scopeKey:scope.key,language:scope.language,
+      originExperienceId:scope.originExperienceId,detail:projection});
 // A destination may declare a separate entry from a named origin circuit.
 // This is an explicit QWord selection, not transfer credit or a Green-based NEXT.
 function independentEntryAllowed(question,target,decision,learnerId,state){
@@ -284,5 +306,5 @@ function resumeForIdentity(){
   return select(pending.question);
 }
 
-root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,remember:remember,getRetainedProgress:getRetainedProgress});
+root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,remember:remember,getRetainedProgress:getRetainedProgress,getRetainedEvidence:getRetainedEvidence});
 })(typeof globalThis!=='undefined'?globalThis:this);
