@@ -547,3 +547,99 @@ body{
     overflow-wrap:anywhere;
   }
 }
+
+/* JAGUAR ELO 7D.3.2 — read-only Portrait polish.
+   Dependency Head Probe and Spanish pronoun comparison presentation only.
+   No option IDs, evaluation, learner evidence or Green Pass are changed. */
+#pronounComparisonPanel{
+  min-width:0;
+  max-width:100%;
+  overflow-wrap:break-word;
+}
+#pronounComparisonPanel>h3{
+  max-width:100%;
+  margin:0 0 10px;
+  color:var(--siyayo-gold-primary);
+  font-family:var(--font-display);
+  font-size:clamp(.85rem,2.4cqw,1.05rem);
+  line-height:1.35;
+  text-align:center;
+  overflow-wrap:anywhere;
+}
+#pronounComparisonPanel>p{
+  min-width:0;
+  max-width:100%;
+  margin:0;
+  line-height:1.4;
+  text-align:center;
+  overflow-wrap:anywhere;
+}
+#pronounComparisonPanel>p[aria-live]{color:#d7f4df}
+@container siyayo-explorer (max-width:520px){
+  /* The existing speech-card and its three canonical choices remain intact. */
+  #dependencyHeadProbePanel .dependency-head-probe,
+  #dependencyHeadProbePanel .dependency-probe-question-card{
+    min-width:0;
+    max-width:100%;
+  }
+  #dependencyHeadProbePanel .dependency-head-probe-prompt{
+    min-width:0;
+    max-width:100%;
+    overflow-wrap:anywhere;
+    hyphens:auto;
+    text-wrap:pretty;
+  }
+  #dependencyHeadProbePanel .dependency-head-probe-options{
+    min-width:0;
+    max-width:100%;
+    gap:6px;
+  }
+  #dependencyHeadProbePanel .dependency-head-probe-options>button{
+    max-width:100%;
+    min-height:44px;
+    overflow-wrap:anywhere;
+  }
+  /* The comparison is observational. The choices retain native buttons. */
+  #pronounComparisonPanel{
+    display:grid;
+    grid-template-columns:44px minmax(0,1fr) minmax(0,1fr);
+    align-items:center;
+    justify-items:stretch;
+    column-gap:8px;
+    row-gap:10px;
+    padding:12px 10px;
+  }
+  #pronounComparisonPanel>h3,
+  #pronounComparisonPanel>p{
+    grid-column:1 / -1;
+  }
+  #pronounComparisonPanel>button.choice-audio{
+    grid-column:1;
+    grid-row:auto;
+    box-sizing:border-box;
+    width:44px;
+    min-width:0;
+    min-height:44px;
+    padding:0;
+    border:1px solid rgba(242,216,138,.4);
+    border-radius:10px;
+    background:#07162a;
+    justify-self:stretch;
+  }
+  #pronounComparisonPanel>button.gear-option{
+    grid-column:auto;
+    grid-row:auto;
+    box-sizing:border-box;
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    min-height:44px;
+    padding:8px 4px;
+    border-radius:10px;
+    text-align:center;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    justify-self:stretch;
+  }
+  #pronounComparisonPanel>p[aria-live]{margin-top:2px}
+}
