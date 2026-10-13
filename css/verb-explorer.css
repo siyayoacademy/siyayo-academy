@@ -519,3 +519,31 @@ body{
     grid-template-columns:minmax(0,1fr);
   }
 }
+
+/* JAGUAR ELO 7D.3.1 · Typography and Portrait-only three-option layout.
+   Pure presentation. No assessment, evidence or progression change. */
+.dependency-focus-reference{display:block;min-width:0;max-width:100%;line-height:1.4;text-align:center}
+.dependency-focus-reference-label,.dependency-focus-reference-sentence{display:block;overflow-wrap:break-word}
+.dependency-focus-reference-label{font-weight:700}
+.dependency-focus-reference-sentence{margin-top:3px}
+@container siyayo-explorer (max-width:480px){
+  /* Only an exact three-choice determiner probe; do not modify other probes. */
+  #determinerUseAssessmentPanel .determiner-use-probe-options:has(> button:nth-child(3):last-child){
+    display:grid;
+    width:100%;
+    min-width:0;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
+  }
+  #determinerUseAssessmentPanel .determiner-use-probe-options:has(> button:nth-child(3):last-child)>button{
+    box-sizing:border-box;
+    width:100%;
+    min-width:0;
+    min-height:44px;
+    padding:8px 3px;
+    font-size:clamp(.69rem,2.6cqw,.8rem);
+    line-height:1.2;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+}
