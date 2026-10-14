@@ -643,3 +643,23 @@ body{
   }
   #pronounComparisonPanel>p[aria-live]{margin-top:2px}
 }
+
+/* JAGUAR ELO 7D.3.3 — observational ES grammar after R1/R2 and feedback.
+   No answer IDs, contract Evidence or Green Pass changes. */
+#pronounComparisonPanel.pronoun-comparison-extension{
+  margin-top:16px;
+  border-top:2px solid rgba(242,216,138,.42);
+}
+#pronounComparisonPanel>.pronoun-comparison-extension-label{
+  grid-column:1 / -1;
+  width:100%;
+  margin:0 0 2px;
+  color:var(--siyayo-gold-primary);
+  font-family:var(--font-ui);
+  font-size:.7rem;
+  line-height:1.4;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-align:center;
+  overflow-wrap:anywhere;
+}

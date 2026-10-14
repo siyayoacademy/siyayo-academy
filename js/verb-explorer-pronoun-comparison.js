@@ -12,8 +12,12 @@
  function mount(input){
   var doc=input.document,old=doc.getElementById('pronounComparisonPanel');if(old)old.remove();
   var q=input.question,spec=q&&q.pronounComparison;if(input.language!=='es'||!spec)return false;
-  var lines=doc.getElementById('livingLines');if(!lines)return false;
-  var panel=doc.createElement('section');panel.id='pronounComparisonPanel';panel.className='dependency-head-probe-panel';
+  // The canonical choices and their feedback come before optional grammar practice.
+  var anchor=doc.getElementById('choiceResolverPanel');if(!anchor||!anchor.parentNode||anchor.hidden)return false;
+  var panel=doc.createElement('section');panel.id='pronounComparisonPanel';panel.className='dependency-head-probe-panel pronoun-comparison-extension';
+  panel.setAttribute('aria-label','Exploración gramatical complementaria');
+  var sectionLabel=doc.createElement('p');sectionLabel.className='pronoun-comparison-extension-label';
+  sectionLabel.textContent='EXPLORACIÓN GRAMATICAL COMPLEMENTARIA · PRÁCTICA LIBRE';panel.appendChild(sectionLabel);
   var title=doc.createElement('h3');title.textContent='CUÁL · COMPARACIÓN PRONOMINAL';panel.appendChild(title);
   var prompt=doc.createElement('p');prompt.textContent=spec.prompt;panel.appendChild(prompt);
   var audio=doc.createElement('button');audio.type='button';audio.className='choice-audio';audio.setAttribute('aria-label','Escuchar comparación');
@@ -23,7 +27,7 @@
    b.onclick=function(){var result=evaluate(spec,a.id);if(!result)return;
     trace.push(Object.freeze({learnerId:input.learnerId||null,experienceId:input.experienceId,language:'es',choice:a.id,result:result.result,evidenceProduced:false,greenPass:false}));
     feedback.textContent=result.result==='pass'?'✓ CUÁL sustituye a queso · respuesta observada · prueba separada del contrato determinante':'Prueba otra forma: elegimos un queso.';
-   };panel.appendChild(b);});panel.appendChild(feedback);lines.parentNode.insertBefore(panel,lines.nextSibling);return true;
+   };panel.appendChild(b);});panel.appendChild(feedback);anchor.parentNode.insertBefore(panel,anchor.nextSibling);return true;
  }
  return Object.freeze({evaluate:evaluate,mount:mount,getTrace:function(){return Object.freeze(trace.slice());}});
 });
