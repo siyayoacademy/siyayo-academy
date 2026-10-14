@@ -720,3 +720,15 @@ body{
     padding:5px 12px;
   }
 }
+
+/* JAGUAR ELO 7D.3.7 — reflective REVIEW follows R1/R2 and canonical/contextual feedback.
+   Native audio control; no assessment or choice semantics changed. */
+#choiceReview.choice-review{margin-top:12px;min-width:0;max-width:100%}
+#choiceReview .choice-review-button{display:block;min-height:84px;margin:0;text-align:center}
+#choiceReview .choice-review-button>span{display:block;color:var(--siyayo-gold-primary)}
+#choiceReview .choice-review-button>p{text-align:center;line-height:1.4}
+#choiceReview[hidden]{display:none}
+@container siyayo-explorer (max-width:520px){
+  #choiceReview .choice-review-button{min-height:78px;padding-inline:38px}
+  #choiceReview .choice-review-button>p{overflow-wrap:anywhere}
+}
