@@ -7,7 +7,7 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 @container siyayo-explorer (max-width:720px){.verb-explorer{width:min(94cqw,620px);padding-top:14px}.explorer-header{grid-template-columns:52px 1fr 52px;gap:10px}.home-link{width:52px;height:52px}.language-branches,.form-sentences{grid-template-columns:1fr}.language-card{min-height:170px;padding:24px 18px}.form-sentence{min-height:130px;padding:20px 18px}.language-card>p,.form-sentence>p{font-size:clamp(1.3rem,5.4cqw,1.5rem);padding-top:16px}.language-card>strong,.language-card>span,.form-sentence>span{font-size:clamp(.72rem,3cqw,.84rem)}h1{font-size:clamp(1.35rem,5.8cqw,1.6rem)}.gold-node strong{font-size:clamp(2rem,8.8cqw,2.4rem)}.tense-tabs,.form-tabs,.subject-tabs{gap:7px}.tense-tab,.form-tab{padding:9px 11px;font-size:.72rem}.tense-tab{min-width:78px}.subject-axis{padding:12px 4px 14px}.subject-tab{min-width:44px;padding:8px 9px;font-size:.72rem}.experience-panel{padding:18px 12px}.circumstance-strip{display:flex;overflow-x:auto}.circumstance-strip div{flex:0 0 115px}.experience-grid{grid-template-columns:1fr}.gear-stack{padding:12px}.living-window{padding:12px}.gear-options,.perspective-options{scroll-snap-type:x proximity}.gear-option,.perspective-options button{scroll-snap-align:start}.living-line{min-height:86px}.explorer-mode{padding:9px 15px;font-size:.72rem}}
 
 .choice-resolver-panel{margin:12px 0 16px;padding:14px;border:1px solid rgba(242,216,138,.34);border-radius:15px;background:rgba(2,11,25,.58)}
-.choice-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.choice-options{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}
 .choice-option{min-height:66px;padding:11px;border:1px solid rgba(242,216,138,.34);border-radius:11px;background:#07162a;color:#eaf1fb;text-align:left;cursor:pointer;transition:border-color 180ms ease,box-shadow 180ms ease,transform 180ms ease}
 .choice-option:hover,.choice-option:focus-visible{border-color:var(--siyayo-gold-primary);outline:none;transform:translateY(-1px)}
 .choice-option.active{border-color:var(--siyayo-gold-primary);box-shadow:0 0 18px rgba(242,216,138,.2)}
@@ -662,4 +662,17 @@ body{
   letter-spacing:.07em;
   text-align:center;
   overflow-wrap:anywhere;
+}
+
+/* JAGUAR ELO 7D.3.4 — R1/R2 wide stacked contextual answers in EN/ES/PT.
+   Presentation only: candidates, audio, reviewer feedback and contracts stay intact. */
+.choice-options .choice-option{
+  width:100%;
+  min-width:0;
+  min-height:96px;
+}
+.choice-options .choice-select span{
+  font-size:clamp(1.06rem,2.2cqw,1.35rem);
+  line-height:1.4;
+  overflow-wrap:break-word;
 }
