@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-which-en",
+  "language": "en",
+  "sentence": "Which cheese should we choose?",
+  "tokens": [
+    {
+      "id": "which",
+      "index": 1,
+      "form": "Which",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Interrogative determiner modifying cheese"
+        }
+      }
+    },
+    {
+      "id": "cheese",
+      "index": 2,
+      "form": "cheese",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Cheese being selected"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 3,
+      "form": "should",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Modal auxiliary expressing advice"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 4,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject of choose"
+        }
+      }
+    },
+    {
+      "id": "choose",
+      "index": 5,
+      "form": "choose",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Action of selecting cheese"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cheese",
+      "dependent": "which",
+      "relation": "det"
+    },
+    {
+      "head": "choose",
+      "dependent": "cheese",
+      "relation": "obj"
+    },
+    {
+      "head": "choose",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "choose",
+      "dependent": "we",
+      "relation": "nsubj"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical EN Shopping WHICH",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "which",
+    "field": "thinkingMind.question",
+    "notes": "Contextual cheese dependency; books reference remains an independent historical corpus."
+  }
+}

@@ -49,7 +49,8 @@ for(const id of ['shopping-for-dinner','preparing-dinner']){
 const shopping=seeds.find(x=>x.id==='shopping-for-dinner');
 question=shopping.thinkingMind.find(q=>q.questionWord==='which');
 root.x=shopping;vm.runInContext('experienceLanguage="en";renderDependencyFocus(x)',context);
-assert.equal(rendered.structure.id,'all-these-three-books','original WHICH fixture preserved');
+assert.equal(rendered.structure.id,'shopping-which-en','Shopping WHICH must use contextual cheese DNA');
+assert.equal(rendered.structure.sentence,question.question.en,'Shopping WHICH must match its canonical question');
 let mounted=0,hidden=0;
 root.window.SIYAYOVerbExplorerDependencyHeadProbeLive={mount(){mounted++;return true;},hide(){hidden++;}};
 vm.runInContext(runtime.slice(runtime.indexOf('function renderDependencyHeadProbe('),runtime.indexOf('function refreshThinkingMindAssessmentHighlight(')),context);

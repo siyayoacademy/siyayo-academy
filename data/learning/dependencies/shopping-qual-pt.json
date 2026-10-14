@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-qual-pt",
+  "language": "pt",
+  "sentence": "Qual queijo devemos escolher?",
+  "tokens": [
+    {
+      "id": "which",
+      "index": 1,
+      "form": "Qual",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determinante interrogativo que acompanha queijo"
+        }
+      }
+    },
+    {
+      "id": "cheese",
+      "index": 2,
+      "form": "queijo",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Substantivo que designa o queijo escolhido"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 3,
+      "form": "devemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": "Auxiliar modal de dever na locução verbal"
+        }
+      }
+    },
+    {
+      "id": "choose",
+      "index": 4,
+      "form": "escolher",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Verbo principal da escolha"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cheese",
+      "dependent": "which",
+      "relation": "det"
+    },
+    {
+      "head": "choose",
+      "dependent": "cheese",
+      "relation": "obj"
+    },
+    {
+      "head": "choose",
+      "dependent": "should",
+      "relation": "aux"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical PT Shopping QUAL",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "which",
+    "field": "thinkingMind.question",
+    "notes": "First-person plural subject is encoded in devemos; no invented explicit pronoun. Livros reference retained independently."
+  }
+}

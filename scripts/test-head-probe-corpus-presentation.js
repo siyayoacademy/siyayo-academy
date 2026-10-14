@@ -7,7 +7,7 @@ for(const x of seeds.slice(0,2))for(const word of ['what','which'])for(const lan
  const d=Definition.create(structure,{experienceId:x.id,targetTokenId:m.targetTokenIdsByLanguage?.[language]||m.targetTokenId,prompt:m.prompt[language],alternativeTokenIds:m.alternativeTokenIdsByLanguage?.[language]||m.alternativeTokenIds});
  assert.ok(d,`${x.id}/${word}/${language}`);
  assert.equal(m.structureIds[language],q.dependencyFocus.structureIds[language]);
- assert.equal(d.expectedHeadTokenId,word==='what'?(x.id==='shopping-for-dinner'?'cook':'prepare'):(x.id==='preparing-dinner'?'carrots':language==='es'?'cheese':'books'));
+ assert.equal(d.expectedHeadTokenId,word==='what'?(x.id==='shopping-for-dinner'?'cook':'prepare'):(x.id==='preparing-dinner'?'carrots':'cheese'));
 }
 const sandbox={};sandbox.globalThis=sandbox;vm.createContext(sandbox);
 for(const path of ['js/study-target-presentation.js','js/adaptive-dependency-head-probe-browser-wire.js'])vm.runInContext(fs.readFileSync(path,'utf8'),sandbox);

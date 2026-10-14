@@ -550,37 +550,39 @@
           },
           "dependencyFocus": {
             "structureIds": {
-              "en": "all-these-three-books",
+              "en": "shopping-which-en",
               "es": "shopping-cual-es",
-              "pt": "todos-estes-tres-livros"
+              "pt": "shopping-qual-pt"
             },
             "defaultFocus": "books",
             "defaultFocusByLanguage": {
-              "es": "cheese"
+              "en": "cheese",
+              "es": "cheese",
+              "pt": "cheese"
             }
           },
           "dependencyHeadProbe": {
             "targetTokenId": "three",
             "prompt": {
-              "en": "Which word is the head of “three”?",
+              "en": "In “Which cheese should we choose?”, which noun does “Which” modify?",
               "es": "En «¿Cuál queso deberíamos elegir?», ¿a qué sustantivo se vincula «Cuál»?",
-              "pt": "Qual palavra é o núcleo de “três”?"
+              "pt": "Em “Qual queijo devemos escolher?”, a qual substantivo “Qual” se liga?"
             },
             "structureIds": {
-              "en": "all-these-three-books",
+              "en": "shopping-which-en",
               "es": "shopping-cual-es",
-              "pt": "todos-estes-tres-livros"
+              "pt": "shopping-qual-pt"
             },
             "targetTokenIdsByLanguage": {
-              "en": "three",
+              "en": "which",
               "es": "which",
-              "pt": "three"
+              "pt": "which"
             },
             "alternativeTokenIdsByLanguage": {
               "en": [
-                "all",
-                "these",
-                "books"
+                "cheese",
+                "should",
+                "choose"
               ],
               "es": [
                 "cheese",
@@ -588,9 +590,9 @@
                 "choose"
               ],
               "pt": [
-                "all",
-                "these",
-                "books"
+                "cheese",
+                "should",
+                "choose"
               ]
             }
           }
