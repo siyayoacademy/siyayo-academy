@@ -1,5 +1,10 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## SEEK × TORO — registro setorial e completude dos discos (2026-10-13)
+
+**Herdar em novos ELOs:** [Mapa de lacunas, variações e espaços de interface](siyayo-seek-toro-sector-register.md) e [Inventário JSON de planejamento](siyayo-seek-toro-sector-register.v0.2.json). Auditorias históricas são snapshots; comparar com HEAD antes de assumir pendência. SEEK revisa Experience × QW × EN/ES/PT × The Ten Kinds × TENSE/MODE × modais relevantes × Perspectives, áudio, módulos, escopo/contratos, Evidence, efeitos TORO e espaço pedagógico. Não implementa nova autoridade ou progresso; nenhum painel novo sem seu elo e autorização.
+
+
 > Canonical human-readable continuity map for active development.  
 > Purpose: preserve the exact thread of work across Chat, Work, devices, connection interruptions and parallel research conversations.
 

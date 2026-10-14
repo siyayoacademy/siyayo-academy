@@ -1,5 +1,10 @@
 # SIYAYO CANONICAL DEVELOPMENT MAP
 
+## SEEK × TORO — herança do mapa de lacunas e oportunidades (2026-10-13)
+
+O [registro SEEK de discos/Experiences](siyayo-seek-toro-sector-register.md) e seu [mapa JSON auditável](siyayo-seek-toro-sector-register.v0.2.json) estendem WHAT EXISTS / WHAT IS MISSING / WHAT CONNECTS / WHERE NEXT, incluindo quais módulos futuros dependem do elo, a âncora coerente da interface, a responsabilidade semântica e os testes EN/ES/PT + TENSE/MODE/MODAL. Integra CANONICAL STRUCTURE, NATURAL EXPRESSION, REAL-LIFE LISTENING e CONTEXTUAL RESONANCE como oportunidades pedagógicas, **não** Evidence nem Green automático. Histórico permanece datado; contrato canônico e WAIT/TORO não são modificados.
+
+
 Version: 1.1  
 Status: canonical-development-map  
 Audit baseline: `jaguar/verb-explorer-resume-live-wire@c46310b`  
