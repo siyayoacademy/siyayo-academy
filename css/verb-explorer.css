@@ -676,3 +676,47 @@ body{
   line-height:1.4;
   overflow-wrap:break-word;
 }
+
+/* JAGUAR ELO 7D.3.6 · Three-step Dependency Link reading.
+   Canonical sentence → investigated term → brief question.
+   Speaker, response IDs, and evaluation boundaries are not modified. */
+#dependencyHeadProbePanel .dependency-probe-reference,
+#dependencyHeadProbePanel .dependency-probe-target,
+#dependencyHeadProbePanel .dependency-probe-short-question{
+  display:block;
+  box-sizing:border-box;
+  min-width:0;
+  max-width:100%;
+  overflow-wrap:break-word;
+  text-align:center;
+}
+#dependencyHeadProbePanel .dependency-probe-reference{
+  font-size:clamp(1rem,2.1cqw,1.22rem);
+  font-weight:650;
+  line-height:1.35;
+}
+#dependencyHeadProbePanel .dependency-probe-target{
+  width:fit-content;
+  margin:10px auto;
+  padding:5px 16px;
+  border:1px solid rgba(242,216,138,.4);
+  border-radius:10px;
+  color:var(--siyayo-gold-primary);
+  background:rgba(242,216,138,.06);
+  font-family:var(--font-display);
+  font-size:clamp(1.1rem,2.4cqw,1.38rem);
+  font-weight:800;
+  letter-spacing:.04em;
+  line-height:1.25;
+}
+#dependencyHeadProbePanel .dependency-probe-short-question{
+  font-size:clamp(1rem,2cqw,1.22rem);
+  font-weight:650;
+  line-height:1.4;
+}
+@container siyayo-explorer (max-width:520px){
+  #dependencyHeadProbePanel .dependency-probe-target{
+    margin:8px auto;
+    padding:5px 12px;
+  }
+}

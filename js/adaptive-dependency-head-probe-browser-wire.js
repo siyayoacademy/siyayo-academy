@@ -47,10 +47,38 @@
     });
   }
 
+  // Only split fully recognized, corpus-authored relation questions.
+  // Never infer a linguistic role or the correct answer from a translated guess.
+  function splitLinkQuestion(view){
+    var p=text(view.prompt),target=text(view.targetToken&&view.targetToken.form),language=text(view.language);
+    var m=null,question='';
+    if(language==='en'){
+      m=/^In “([^”]+)”, (which (?:noun|verb|predicate) does) “([^”]+)” (modify|connect to)\?$/i.exec(p);
+      if(m)question=m[2].charAt(0).toUpperCase()+m[2].slice(1)+' it '+m[4]+'?';
+    }else if(language==='es'){
+      m=/^En «([^»]+)», (¿a qué (?:sustantivo|verbo|predicado) se vincula) «([^»]+)»\?$/i.exec(p);
+      if(m)question='¿'+m[2].slice(1,2).toUpperCase()+m[2].slice(2)+'?';
+    }else if(language==='pt'){
+      m=/^Em “([^”]+)”, (a qual (?:substantivo|verbo|predicado)) “([^”]+)” se liga\?$/i.exec(p);
+      if(m)question=m[2].charAt(0).toUpperCase()+m[2].slice(1)+' se liga?';
+    }
+    if(!m||!target||m[3].toLocaleLowerCase()!==target.toLocaleLowerCase()||
+       !m[1].toLocaleLowerCase().includes(target.toLocaleLowerCase()))return null;
+    return {sentence:m[1],target:m[3],question:question};
+  }
+
   function promptHtml(view){
+    var parts=splitLinkQuestion(view);
     var api=root.SIYAYOStudyTargetPresentation;
+    if(parts){
+      var sentence=api&&typeof api.highlight==='function'
+        ?api.highlight(parts.sentence,view.studyTarget):escapeHtml(parts.sentence);
+      return '<span class="dependency-probe-reference">'+sentence+'</span>'+
+        '<span class="dependency-probe-target">'+escapeHtml(parts.target)+'</span>'+
+        '<span class="dependency-probe-short-question">'+escapeHtml(parts.question)+'</span>';
+    }
+    // Historical and unmatched probes preserve their authored question verbatim.
     var value=api&&typeof api.highlight==='function'?api.highlight(view.prompt,view.studyTarget):escapeHtml(view.prompt);
-    // Keep the authored text; break only after its quoted reference sentence.
     return value.replace(/([”»],)\s+/,'$1<br>');
   }
 
