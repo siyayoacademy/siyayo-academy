@@ -15,6 +15,10 @@ Scope: documentation and mapping only; no runtime or UI change authorized.
 - Branch references are snapshots, not claims of completion. Inspect live branches and source files before reporting implementation status.
 - Do not conflate semantic learning evidence with decorative motion or inferred user behavior.
 
+## ROOTS — foundational protocol
+
+ROOTS is the canonical identity/provenance/source-of-truth foundation for each project. For Academy, ROOTS is already represented as a navigation hub in `data/navigation.json`, but the wider ROOTS contract described here is a governance requirement, **not a claim that a complete ROOTS runtime already exists**. Before changing a capability, identify the ROOTS owner, canonical source, permissions, language/context, downstream dependencies and approval status. Do not overwrite Academy-specific authority.
+
 ## Seven minimum cross-project contracts
 
 1. Identity: objective, audience, purpose, boundaries and owner.
