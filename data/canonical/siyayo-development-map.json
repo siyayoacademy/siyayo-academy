@@ -424,5 +424,41 @@
       "frondosa": "visualizes accumulated and expanding capability structure",
       "toro": "organizes return, integration and outward expansion"
     }
+  },
+  "multiverse360": {
+    "version": "0.1",
+    "status": "cross-project-reference",
+    "protocol": "docs/multiverse-360-supervision-protocol.md",
+    "authority": "Academy canonical map and runtime remain authoritative for Academy",
+    "contracts": [
+      "identity",
+      "data-provenance",
+      "logic-state",
+      "visual-responsive",
+      "integration",
+      "validation",
+      "evolution"
+    ],
+    "roots": {
+      "role": "foundational-source-and-identity-contract",
+      "anchors": [
+        "project-identity",
+        "canonical-sources",
+        "meaning",
+        "provenance",
+        "rights",
+        "languages",
+        "pedagogical-boundaries",
+        "source-of-truth-dependencies"
+      ],
+      "changeRule": "trace ROOTS source and downstream dependencies before implementation",
+      "status": "documented-not-runtime-modified"
+    },
+    "fineArt": {
+      "id": "MVR-FA-001",
+      "status": "proposed-not-implemented",
+      "rule": "preserve-by-default; explicit transformation permission; layered assets and visual QA"
+    },
+    "priority": "Corpus ↔ Experience Capability Mapping and smallest verified Academy gap; no new parallel authority"
   }
 }
