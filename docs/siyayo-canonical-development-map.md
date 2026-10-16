@@ -1,5 +1,32 @@
 # SIYAYO CANONICAL DEVELOPMENT MAP
 
+## MVR-FA-002 — Fine Art partner-module family (2026-10-16)
+
+**Status: architecture and implementation backlog; not a claim of implemented features.** This entry extends MVR-FA-001, does not replace Academy's canonical pedagogical map, and authorizes no changes to artwork, runtime, sites, repositories beyond this registry, or published digital assets.
+
+**Governance guarantee (design requirement, not yet an enforced technical guarantee):** The Creator may experiment; the Investigator may challenge; the Integrator may recommend decisions; the Learner Model, adaptive interface and Experience sequence may evolve only through approved, evidence-based gates. Canonical linguistic references, learning objectives, pedagogical contracts and auditable memory remain outside improvisation. Human approval and versioned provenance are required for changes to those authorities. An Integrator recommendation is not an independent authorization to rewrite them.
+
+**Fine Art functional ecosystem and partner modules:**
+
+| ID | Module | Specialized scope / expected handoff | Status |
+|---|---|---|---|
+| MVR-FA-001 | Fine Art | Source inventory, element-level decomposition, transparent layers, masks, geometry, colors, anchors, fidelity and lossless reconstruction audit | proposed / specification |
+| MVR-FA-002A | Fine Anime Art 2D 3D | 2D/3D characters, rigs, poses, keyframes, scene continuity, archetype identities and motion-ready exports | planned / mapping |
+| MVR-FA-002B | Fine Audio/Video Art edit | Timeline editing, clips, compositing, synchronization, captions, audio/video export and source attribution | planned / mapping |
+| MVR-FA-002C | Fine Sound Art Creator | Sound motifs, effects, soundscapes, timing, licensing and event-driven sound cues | planned / mapping |
+| MVR-FA-002D | Fine Art MIDI/Partiture | MIDI events, score/partiture references, tempo, instruments, symbolic-to-audio alignment and provenance | planned / mapping |
+| MVR-FA-002E | Fine Art Responsive Share | Portrait/landscape variants, adaptive safe zones, accessibility, export profiles and controlled sharing | planned / mapping |
+| MVR-FA-002F | Digital Fine Art in Movement | Future homologated orchestration/management of approved layers, scenes, animation, audio, score and responsive packages | future integration; gate closed |
+
+**Cross-module contracts:** Stable asset/archetype IDs independent of scene/W-state numbering; immutable source reference plus versioned derivatives; transparent layer/mask and spatial transform metadata; audio/video/MIDI timebase alignment; event/scene state machine; explicit usage rights and sharing scope; locale/accessibility/reduced-motion; deterministic manifest of dependencies; export validation and human approval. A JSON manifest alone cannot guarantee pixel-perfect extraction or reconstruction: retain actual image, vector, mask, audio, video and score files, and verify fidelity.
+
+**Archetypes:** Inventory existing still and moving representations (including Jaguar, Golden Eagle, Golden Seed, Patita, Frondosa, Pianinho Mágico and other approved actors) with source, approved identity, motion state, rig/animation availability, dimensions, version, rights and integration owner. A moving image is not proof of a reusable rig, 3D model, editable layers or homologation. Do not silently redesign or drop emblematic elements.
+
+**Digital assets:** Future output may become a cataloged digital asset only after ownership/permissions, provenance, quality, accessibility, export, integrity and publication approval. This registry does not imply tokenization, NFT issuance, blockchain deployment or sale.
+
+**Acceptance / NEXT ELO:** (1) Read-only inventory of existing artwork, Motion DNA, Piano/Journey media and archetypes; (2) evidence matrix EXISTING / PARTIAL / PLANNED / OPEN per partner module; (3) draft shared asset/scene/event/rights manifest and interface boundaries; (4) isolated proof of one approved moving archetype across 2D layers, audio/MIDI synchronization and portrait/landscape; (5) fidelity, reduced-motion, permissions and human homologation tests; (6) only then propose integration to Digital Fine Art in Movement. Preserve the current Corpus ↔ Experience and ROOTS → NOUN → THINKING MIND priority; no pedagogical evidence or Green Pass can be inferred from visual motion.
+
+
 ## MULTIVERSE 360° inheritance and ROOTS contract (2026-10-16)
 
 The [MULTIVERSE 360° supervision protocol](multiverse-360-supervision-protocol.md) is a **cross-project supervisory reference**, not a replacement for this Academy canonical map. Academy remains the authority for pedagogical corpus, navigation, runtime, evidence, WAIT/RESUME and approval. The shared protocol adds seven minimum contracts: identity, data/provenance, logic/state, visual/responsive, integration, validation and evolution.
