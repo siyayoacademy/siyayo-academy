@@ -1,5 +1,20 @@
 # SIYAYO CANONICAL DEVELOPMENT MAP
 
+## MULTIVERSE 360° inheritance and ROOTS contract (2026-10-16)
+
+The [MULTIVERSE 360° supervision protocol](multiverse-360-supervision-protocol.md) is a **cross-project supervisory reference**, not a replacement for this Academy canonical map. Academy remains the authority for pedagogical corpus, navigation, runtime, evidence, WAIT/RESUME and approval. The shared protocol adds seven minimum contracts: identity, data/provenance, logic/state, visual/responsive, integration, validation and evolution.
+
+**ROOTS is foundational, not merely a decorative navigation item.** ROOTS anchors project identity, canonical sources, meaning, provenance, rights, languages, pedagogical boundaries and the source-of-truth relationships from which WORD TREE, Chapters/A5, MASTER, corpora, Thinking Mind and Experience grow. A ROOTS-level change must identify the affected canonical source and downstream dependencies before modifying UI or runtime. Keep ROOTS visible in the 360° audit and do not silently replace it with another authority.
+
+The shared distinction is **WHAT the content/data is** versus **HOW TO SHOW it**. Informational assets (PDFs, A5, MASTER, hymnals, media, image libraries, text/audio/video) are separate from specialized visual presentation modules (Dependency Focus, Lines / Possible Responses, Piano, Frondosa and future Fine Art). A common JSON contract may describe assets and layers, but visual source files, masks and explicit fidelity checks remain necessary.
+
+Fine Art MVR-FA-001 is **proposed only**: preserve original imagery and all meaningful elements by default; separate transparent layers with geometry, masks, anchors, stacking order, original provenance and explicit permission for transformations; validate portrait/landscape recomposition. No Academy implementation or artwork modification is authorized by this record.
+
+The Multiverse discovery register records source, verified status, dependencies, acceptance tests, responsible project and next step. Claims from chats remain unverified until matched to repository sources. Future public mirror is optional and must exclude private or unapproved assets.
+
+**Current priority stays unchanged:** use the existing [Corpus ↔ Experience capability matrix](siyayo-corpus-experience-capability-matrix.md), validate its gaps, then advance the smallest approved Academy implementation. Keep the Golden Seed Journey, SEEK × TORO and responsive L0–L3 contracts visible without diverting work to animations or Fine Art.
+
+
 ## SEEK × TORO — herança do mapa de lacunas e oportunidades (2026-10-13)
 
 O [registro SEEK de discos/Experiences](siyayo-seek-toro-sector-register.md) e seu [mapa JSON auditável](siyayo-seek-toro-sector-register.v0.2.json) estendem WHAT EXISTS / WHAT IS MISSING / WHAT CONNECTS / WHERE NEXT, incluindo quais módulos futuros dependem do elo, a âncora coerente da interface, a responsabilidade semântica e os testes EN/ES/PT + TENSE/MODE/MODAL. Integra CANONICAL STRUCTURE, NATURAL EXPRESSION, REAL-LIFE LISTENING e CONTEXTUAL RESONANCE como oportunidades pedagógicas, **não** Evidence nem Green automático. Histórico permanece datado; contrato canônico e WAIT/TORO não são modificados.
