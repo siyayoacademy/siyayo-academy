@@ -204,7 +204,25 @@ function mount(input){
         var adoption=root.SIYAYOVerbExplorerPedagogicalSessionAdoptionSurface;
         if(adoption&&typeof adoption.install==='function')adoption.install({document:doc});
       });
-      options.appendChild(button);
+      if(spec.dimension==='object-answer'&&alternative.response){
+        // Listening is exploratory and never submits an Attempt or contract Evidence.
+        var audio=doc.createElement('button');audio.type='button';
+        audio.className='what-probe-speaker';
+        audio.textContent='🔊';
+        audio.setAttribute('aria-label',({en:'Listen to response: ',es:'Escuchar respuesta: ',pt:'Ouvir resposta: '}[language]||'Listen to response: ')+alternative.response);
+        audio.addEventListener('click',function(event){
+          event.stopPropagation();
+          if(mountedGeneration!==generation||el.hidden||!isExploringWhat())return;
+          if(!root.speechSynthesis||!root.SpeechSynthesisUtterance)return;
+          root.speechSynthesis.cancel();
+          var utterance=new root.SpeechSynthesisUtterance(alternative.response);
+          utterance.lang=({en:'en-US',es:'es-ES',pt:'pt-BR'}[language]||'en-US');
+          root.speechSynthesis.speak(utterance);
+        });
+        var responseRow=doc.createElement('div');responseRow.className='what-probe-response-row';
+        responseRow.appendChild(button);responseRow.appendChild(audio);
+        options.appendChild(responseRow);
+      }else options.appendChild(button);
     });
     section.appendChild(options);
     // All canonical responses remain visible in their authored order; selecting alone can create an Attempt.
