@@ -506,3 +506,18 @@ Examples: `I am happy / Yo estoy feliz / Eu estou feliz` (pronoun → conjugated
 **Governance:** SEEK × TORO / MULTIVERSO 360 supervision; `CORPUS → CAPABILITY → THINKING MIND/QW → authorized TARGET/CONTRACT → ACTION/ATTEMPT → EVIDENCE → WAIT/GREEN → TORO`. Maintain independent EN/ES/PT nuance and evaluation scopes. Keep unrelated project content (including UNAQUI/hymnals) separate. **Do not merge to `main` or promote production without separate authorization.**
 
 **Data minimization:** this registration contains no learner nicknames, device identifiers, personal e-mails or unrelated named persons. A future asset addition requires independent file/provenance and rights checks.
+
+
+---
+
+## JAGUAR — UI regression notes: green active buttons, response paging and speech (2026-10-18)
+
+**Evidence:** three user screenshots from the Jaguar Experience preview, EN/ES/PT, plus targeted HEAD inspection of `css/verb-explorer.css`. **Status: INVESTIGATE / NOT YET HOMOLOGATED.** Preserve the preceding circumstance-localization commit `60be3f47afeeb9153d2f03297629ff0cf82f2946` and the R1/R2/REVIEW/NICK/Trail regression evidence. No merge to `main`.
+
+1. **ACTIVE BUTTON = GREEN BACKGROUND (requested restoration):** in EN/ES/PT apply the same unambiguous active selection visual to interactive QW, TENSE, MODE, PERSPECTIVE and contextual answer buttons, consistent with the user-annotated green reference. Current HEAD CSS uses gold borders/shadows without a green fill in selectors including `.gear-option.active`, `.perspective-options button.active`, `.choice-option.active`, and `.what-probe-option[aria-pressed="true"]`. Investigate all active/pressed/selected selectors and earlier homologated versions before writing a scoped CSS patch. Do not change inactive/disabled semantics, keyboard focus or contrast. **A green UI selection is NOT a Green Pass or assessment evidence.**
+2. **Response options/pagination:** screenshot displays two simultaneous response options and `1–2 / 3` with navigation arrows; verify the actual third candidate, arrow availability, state persistence, and intended responsive grid behavior. Do not infer a missing third option from the screenshot alone.
+3. **Speaker / speech:** screenshot reports absent voice affordances in contextual practice. Inspect DOM, scripts, audio wiring and user interactions across EN/ES/PT. Do not claim functional audio or missing assets without an audible browser/device test. Preserve existing speaker icon, speech controls, and authorized evidence boundaries.
+4. **Learning Trail / Word Path:** screenshot shows previously saved EN/ES/PT assessment records, with WHAT EN 2/3 and ES/PT 1/3, and WHICH ES/PT 1/3. These are observations from that screenshot/NICK, not new universal contract state; do not reset or merge learner scopes.
+5. **Deployment/document continuity:** verify HEAD commit, Cloudflare deploy identity and the precise preview URL separately. The `docs/` maps were confirmed present on Jaguar; use direct branch paths rather than assuming `main` contains the same docs. GitHub PR #3 currently has merge conflicts; treat merge audit as separate ELO.
+
+**Acceptance gate:** first compare prior homologated active-button design with current HEAD, identify exact cause; implement minimal presentation-only change on Jaguar; run EN/ES/PT portrait/landscape/desktop regressions including R1/R2/REVIEW, third-option pagination, speech, NICK and Learning Trail; request user visual homologation before any promotion.
