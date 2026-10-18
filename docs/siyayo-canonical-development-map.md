@@ -457,3 +457,18 @@ Current first executable gap discovered by that matrix: **Chapter 01 NOUN lacks 
 **Source-control cross-check:** `ff1c325f` SEEK × TORO checkpoint to `e2be26238d57ba33f7814c883d96c74988845a09` Jaguar HEAD: 12 commits and 23 changed files, including later Dependency Focus/Head Probe/REVIEW-related changes. Treat older sector gaps as historical until rechecked against HEAD. Cloudflare Pages check for that HEAD returned `success`; this does not independently prove that the production homepage serves the same commit.
 
 **NEXT GO in existing sequence (not a new authority):** (P0) identify exact production/preview commit and inspect public visitor interactions for Verb Explorer, Dependency Focus, REVIEW and QW; (P0) execute existing 7D.3.x regression tests and compare EN/ES/PT visual behavior; (P0) reconcile SEEK × TORO Experience/QW slots with HEAD, marking existing vs missing vs tested vs homologated vs publicly accessible independently; (P1) locate and verify preserved Gold Seed Journey deployments; (P1) complete Academy MASTER/Ten Kinds capability mapping; (P2) trial assistance for tests/visual diff only under existing governance. No percentages without verified denominators; no generated assessment evidence or automatic Green Pass.
+
+
+---
+
+## JAGUAR — Public-link diagnosis and functional test (2026-10-18)
+
+**Status: VERIFIED ON PREVIEW, DOCUMENTATION ONLY; production main unchanged.**
+
+- Cloudflare Pages successful check for commit `5c719c8242f6885ce2140a7fcbad74f9b824d7f4` explicitly publishes immutable URL `https://3b4029e3.siyayo-academy.pages.dev` and branch URL `https://jaguar-verb-explorer-resume.siyayo-academy.pages.dev`. The guessed longer branch alias returned 404; do not distribute it.
+- The production `https://siyayo-academy.pages.dev/` serves older main code. GitHub main `verb-explorer.html` lacks `learnerIdentityInput`, `dependencyFocusSurface`, `choiceReview`; the Jaguar branch HTML contains all three. **This is a version/deployment distinction, not a missing NICK implementation.** Do not change main without separate production approval.
+- Public Jaguar browser test (2026-10-18) used disposable NICK `JAGUAR-QA-20261018-R1`, entered Experience S1, selected EN WHICH, selected R1 `We should choose the fresh, mild cheese.`, saw valid canonical candidate / contextual 4/4, then REVIEW became visible **after** selection. The 0/3→1/3 contract recorded CHOICE only; USE and TRANSFER stayed pending. Expanded Learning Trail & Word Path reflected EN WHICH 1/3. Switching to ES showed EN 1/3 Saved and ES 0/3 Current; switching back to EN restored EN 1/3. Dependency Focus and Head Probe displayed the cheese relationship.
+- **Not yet tested/homologated:** R2 alternative, REVIEW click/explanation, completion of USE and TRANSFER, refresh persistence, independent ES/PT evaluation, real speech output, phone/tablet responsive, all QWs and cross-Experience transitions. Audio buttons visible does not prove audio plays. The displayed `02/02` or `03/03` counts living lines, **not** contract progress; do not confuse with `1/3` evidence.
+- **Access correction:** for Jaguar functional acceptance share the explicit Cloudflare **branch preview URL** above, not the older main domain. This is a link/routing guidance correction only, not a runtime fix. A future production promotion requires separate authorization, review, regressions and merge/deploy gate.
+
+**NEXT ELO:** test R2 feedback without awarding unearned evidence, REVIEW explanation, ES/PT distinct contract, and audio/portrait; execute existing 7D.3.x tests before any code change. Preserve all previously homologated behavior and distinct project boundaries.
