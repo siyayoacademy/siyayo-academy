@@ -795,3 +795,18 @@ body{
   background:var(--siyayo-selected-green);
   color:#fff;
 }
+
+/* JAGUAR HOW TO SHOW: only a passing WHAT evaluation earns green; dark-blue lettering. */
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[aria-pressed="true"]:not(.what-answer-assertive){
+  background:transparent;
+  color:var(--siyayo-text-primary,#eaf1fb);
+}
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option.what-answer-assertive[aria-pressed="true"],
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option.what-answer-assertive[aria-pressed="true"]:hover{
+  background:var(--siyayo-selected-green);
+  color:#07162a;
+}
+.what-probe-options:not(.what-canonical-options)>.what-probe-option[aria-pressed="true"]{
+  background:var(--siyayo-selected-green);
+  color:#07162a;
+}
