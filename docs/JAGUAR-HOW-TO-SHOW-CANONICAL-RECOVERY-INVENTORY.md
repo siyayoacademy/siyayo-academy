@@ -79,3 +79,12 @@ Never advance status because a preceding status passed. When evidence is missing
 **Privacy rule:** Keep this recovery entry limited to technical checkpoints and public commit identifiers. Do not insert learner nicks, personal names, e-mail addresses, telephone numbers or device identifiers.
 
 **State at writing:** historical origin VERIFIED; HOW TO SHOW visual reference USER CONFIRMED; CSS issue IDENTIFIED; corrective CSS commit, deployment verification and complete regressions PENDING.
+
+
+## G. WHAT/QUÉ/O QUE assertive-response presentation rule (2026-10-18)
+
+User homologated full-width, ordered WHAT answer cards in EN/ES/PT and the left-integrated golden SVG speakers; user reports speech functional in all three languages. **New specific HOW TO SHOW contract:** use the existing active-control green `#56C877` with dark-blue text `#07162A`. For WHAT/QUÉ/O QUE **response candidates**, green is shown if and only if the chosen candidate has a positive evaluation result (`evaluated.result === 'pass'`); an incorrect choice must not receive green merely because it was selected. The Question Word choice control remains a separate active-control state and can use green with dark-blue lettering. Do not confuse this presentation signal with a Green Pass, accepted contract Evidence or progression.
+
+Implementation on Jaguar branch: `js/verb-explorer-what-assessment-live.js` commit `f204176fcafbf39b144387c1075d3ed2ca5f7ebf` sets `what-answer-assertive` only for the chosen option after a positive probe evaluation. `css/verb-explorer.css` commit `ebaa590fddb22e7eadf68ba4b6c0facf37b9ede7` styles the affirmative response green with dark-blue text, while a selected non-passing response retains the dark card background. This applies to the common EN/ES/PT rendering path.
+
+**State:** user visual homologation applies to the prior full-width cards and speech, not yet to this new conditional-color implementation. Commits VERIFIED; deployed SHA, positive/negative behavior in EN/ES/PT, portrait regression and Green Pass noninterference NOT YET TESTED. Main untouched.
