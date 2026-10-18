@@ -208,7 +208,11 @@ function mount(input){
         // Listening is exploratory and never submits an Attempt or contract Evidence.
         var audio=doc.createElement('button');audio.type='button';
         audio.className='what-probe-speaker';
-        audio.textContent='🔊';
+        audio.textContent='';
+        var speakerIcon=doc.createElement('span');
+        speakerIcon.className='siyayo-speaker';
+        speakerIcon.setAttribute('aria-hidden','true');
+        audio.appendChild(speakerIcon);
         audio.setAttribute('aria-label',({en:'Listen to response: ',es:'Escuchar respuesta: ',pt:'Ouvir resposta: '}[language]||'Listen to response: ')+alternative.response);
         audio.addEventListener('click',function(event){
           event.stopPropagation();
@@ -220,7 +224,7 @@ function mount(input){
           root.speechSynthesis.speak(utterance);
         });
         var responseRow=doc.createElement('div');responseRow.className='what-probe-response-row';
-        responseRow.appendChild(button);responseRow.appendChild(audio);
+        responseRow.appendChild(audio);responseRow.appendChild(button);
         options.appendChild(responseRow);
       }else options.appendChild(button);
     });
