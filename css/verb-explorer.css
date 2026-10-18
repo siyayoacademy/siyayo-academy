@@ -86,23 +86,23 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .dependency-token{display:grid;gap:2px;min-width:76px;padding:8px 10px;border:1px solid rgba(122,162,255,.28);border-radius:10px;background:rgba(0,0,0,.18)}
 .dependency-token b{font-size:.9rem;color:#eef4ff}
 .dependency-token small{font-size:.6rem;font-weight:500;letter-spacing:.02em;color:#8ea3bc}
-.dependency-token em{font-size:.6rem;font-style:normal;color:#50c878}
+.dependency-token em{font-size:.6rem;font-style:normal;color:#56c877}
 .dependency-token-focus{border-color:var(--siyayo-gold-primary);box-shadow:0 0 16px rgba(242,216,138,.16)}
-.dependency-token-head{border-color:#50c878}
-.dependency-token-dependent{border-color:rgba(80,200,120,.55)}
+.dependency-token-head{border-color:#56c877}
+.dependency-token-dependent{border-color:rgba(86,200,119,.55)}
 
 .dependency-token-stage{position:relative;width:min(540px,100%);margin:0 auto;padding-top:56px}
 .dependency-token-row{position:relative;z-index:2}
 .dependency-connector-overlay{position:absolute;inset:0 0 auto 0;width:100%;height:100%;z-index:1;overflow:visible;pointer-events:none}
-.dependency-connector-path{fill:none;stroke:#50c878;stroke-width:2.4;vector-effect:non-scaling-stroke}
-.dependency-connector-overlay marker path{fill:#50c878}
+.dependency-connector-path{fill:none;stroke:#56c877;stroke-width:2.4;vector-effect:non-scaling-stroke}
+.dependency-connector-overlay marker path{fill:#56c877}
 .dependency-connector-label{fill:#d7f4df;font-size:10px;font-weight:900;letter-spacing:.04em}
 
 
 .determiner-use-probe,.determiner-use-transfer-probe{display:grid;gap:12px;justify-items:center}
 .determiner-use-probe-prompt,.determiner-use-transfer-probe-prompt{margin:0;color:#eef4ff;font-weight:800;font-size:clamp(1rem,2.2cqw,1.2rem)}
 .determiner-use-probe-options,.determiner-use-transfer-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-.determiner-use-probe-options button,.determiner-use-transfer-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font-weight:900;cursor:pointer}
+.determiner-use-probe-options button,.determiner-use-transfer-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(86,200,119,.5);border-radius:999px;background:#07162a;color:#eef4ff;font-weight:900;cursor:pointer}
 .determiner-use-probe-options button:hover,.determiner-use-probe-options button:focus-visible,.determiner-use-transfer-probe-options button:hover,.determiner-use-transfer-probe-options button:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:none}
 #determinerUseAssessmentPanel h3{margin:0 0 12px;color:var(--siyayo-gold-primary);font-size:.84rem;letter-spacing:.08em}
 #determinerUseAssessmentFeedback{margin:12px 0 0;color:#d7f4df;font-weight:800}
@@ -110,10 +110,10 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .dependency-head-probe{display:grid;grid-template-columns:minmax(0,1fr);width:100%;gap:12px;justify-items:center}
 .dependency-head-probe-prompt{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2cqw,1.2rem);font-weight:800;text-align:center}
 .dependency-head-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
-.dependency-head-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:10px;background:#07162a;color:#eef4ff;font-weight:900;letter-spacing:.06em;cursor:pointer}
+.dependency-head-probe-options button{min-width:96px;padding:10px 16px;border:1px solid rgba(86,200,119,.5);border-radius:10px;background:#07162a;color:#eef4ff;font-weight:900;letter-spacing:.06em;cursor:pointer}
 .dependency-head-probe-options button:hover,.dependency-head-probe-options button:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:none;box-shadow:0 0 16px rgba(242,216,138,.16)}
 .dependency-head-probe-feedback{margin-top:12px;padding:9px 12px;border-radius:10px;font-size:.78rem;font-weight:900;letter-spacing:.08em}
-.dependency-head-probe-feedback[data-result="pass"]{color:#d7f4df;border:1px solid rgba(80,200,120,.55);background:rgba(80,200,120,.08)}
+.dependency-head-probe-feedback[data-result="pass"]{color:#d7f4df;border:1px solid rgba(86,200,119,.55);background:rgba(86,200,119,.08)}
 .dependency-head-probe-feedback[data-result="fail"]{color:#f6d7a9;border:1px solid rgba(242,216,138,.45);background:rgba(242,216,138,.08)}
 @container siyayo-explorer (max-width:480px){.dependency-head-probe-panel{padding:12px}.dependency-head-probe-options button{min-width:82px;padding:9px 12px;font-size:.75rem}}
 
@@ -225,7 +225,7 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .what-probe-step{margin:0;color:var(--siyayo-gold-primary);font-size:.78rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 .what-probe-question{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2cqw,1.2rem);font-weight:800;line-height:1.4}
 .what-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:100%}
-.what-probe-option{min-width:96px;min-height:44px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font:inherit;font-size:.9rem;font-weight:900;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,color .18s ease}
+.what-probe-option{min-width:96px;min-height:44px;padding:10px 16px;border:1px solid rgba(86,200,119,.5);border-radius:999px;background:#07162a;color:#eef4ff;font:inherit;font-size:.9rem;font-weight:900;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,color .18s ease}
 .what-probe-option:hover,.what-probe-option:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:2px solid transparent;box-shadow:0 0 16px rgba(242,216,138,.18)}
 .what-probe-option:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
 @container siyayo-explorer (max-width:480px){.what-object-question-probe{padding:12px 0}.what-probe-options{gap:8px}.what-probe-option{min-width:82px;padding:9px 12px;font-size:.8rem}}
@@ -236,7 +236,7 @@ body { margin:0; min-height:100vh; font-family:var(--font-body,"Segoe UI",Arial,
 .why-probe-step{margin:0;color:var(--siyayo-gold-primary);font-size:.78rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 .why-probe-question{margin:0;color:#eef4ff;font-size:clamp(1rem,2.2cqw,1.2rem);font-weight:800;line-height:1.4}
 .why-probe-options{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:100%}
-.why-probe-option{min-width:96px;min-height:44px;padding:10px 16px;border:1px solid rgba(80,200,120,.5);border-radius:999px;background:#07162a;color:#eef4ff;font:inherit;font-size:.9rem;font-weight:900;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,color .18s ease}
+.why-probe-option{min-width:96px;min-height:44px;padding:10px 16px;border:1px solid rgba(86,200,119,.5);border-radius:999px;background:#07162a;color:#eef4ff;font:inherit;font-size:.9rem;font-weight:900;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,color .18s ease}
 .why-probe-option:hover,.why-probe-option:focus-visible{border-color:var(--siyayo-gold-primary);color:var(--siyayo-gold-primary);outline:2px solid transparent;box-shadow:0 0 16px rgba(242,216,138,.18)}
 .why-probe-option:focus-visible{outline:2px solid var(--siyayo-gold-primary);outline-offset:3px}
 @container siyayo-explorer (max-width:480px){.why-contextual-reason-probe{padding:12px 0}.why-probe-options{gap:8px}.why-probe-option{min-width:82px;padding:9px 12px;font-size:.8rem}}
@@ -736,8 +736,8 @@ body{
 
 /* JAGUAR: selected controls use green fill; selection is not Green Pass. */
 :root{
-  --siyayo-selected-green:#198b46;
-  --siyayo-selected-green-hover:#20a653;
+  --siyayo-selected-green:#56c877;
+  --siyayo-selected-green-hover:#56c877;
 }
 .gear-option.active:not(:disabled),
 .perspective-options button.active:not(:disabled),
@@ -750,7 +750,7 @@ body{
   background:var(--siyayo-selected-green);
   color:#fff;
   border-color:var(--siyayo-gold-primary);
-  box-shadow:0 0 0 1px rgba(242,216,138,.25),0 0 14px rgba(25,139,70,.25);
+  box-shadow:0 0 0 1px rgba(242,216,138,.25),0 0 14px rgba(86,200,119,.25);
 }
 .gear-option.active:not(:disabled):hover,
 .perspective-options button.active:not(:disabled):hover,
