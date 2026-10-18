@@ -179,7 +179,7 @@ function mount(input){
           // Diagnostic feedback only: no Evidence, Attempt, Coordinator, profile or Green Pass.
           buttons.forEach(function(option){
             option.setAttribute('aria-pressed',String(option===button));
-            option.classList.toggle('what-answer-assertive',option===button&&evaluated.result==='pass');
+            option.setAttribute('data-assertive',String(option===button&&evaluated.result==='pass'));
           });
           feedback.textContent=evaluated.result==='pass'
             ?{en:'Contextual response recognized · free practice only',es:'Respuesta contextual reconocida · solo práctica libre',pt:'Resposta contextual reconhecida · apenas prática livre'}[language]
@@ -194,7 +194,7 @@ function mount(input){
         if(!submitted)return;
         buttons.forEach(function(option){
             option.setAttribute('aria-pressed',String(option===button));
-            option.classList.toggle('what-answer-assertive',option===button&&evaluated.result==='pass');
+            option.setAttribute('data-assertive',String(option===button&&evaluated.result==='pass'));
           });
         var closure=submitted.cycleResult&&submitted.cycleResult.contractEvaluation;
         feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
