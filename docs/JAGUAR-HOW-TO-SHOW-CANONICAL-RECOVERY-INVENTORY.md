@@ -88,3 +88,21 @@ User homologated full-width, ordered WHAT answer cards in EN/ES/PT and the left-
 Implementation on Jaguar branch: `js/verb-explorer-what-assessment-live.js` commit `f204176fcafbf39b144387c1075d3ed2ca5f7ebf` sets `what-answer-assertive` only for the chosen option after a positive probe evaluation. `css/verb-explorer.css` commit `ebaa590fddb22e7eadf68ba4b6c0facf37b9ede7` styles the affirmative response green with dark-blue text, while a selected non-passing response retains the dark card background. This applies to the common EN/ES/PT rendering path.
 
 **State:** user visual homologation applies to the prior full-width cards and speech, not yet to this new conditional-color implementation. Commits VERIFIED; deployed SHA, positive/negative behavior in EN/ES/PT, portrait regression and Green Pass noninterference NOT YET TESTED. Main untouched.
+
+
+## H. Jaguar ten-elo execution queue — release gates
+
+This queue records the user's instruction to progress through ten linked ELOs before a consolidated Cloudflare visual review. **One ELO is not automatically one commit**; each gate needs verifiable evidence.
+
+1. **ELO 01 — Conditional WHAT color**: EN/ES/PT `evaluated.result === 'pass'` alone may mark an answer assertive. JS commit `35e73825b6fac50110abf2cc383f58ad89cca74d`, CSS commit `137149d7c48650fe63454c911958f84c8b1d7746`. SOURCE IMPLEMENTED, deployed confirmation PENDING.
+2. **ELO 02 — Rejected answer state**: parsley/perejil/salsa must remain dark even when selected; check hover, focus, click and reselect. PENDING deployed regression.
+3. **ELO 03 — Correct answer state**: salmon/salmón/salmão must display green `#56C877` and dark-blue `#07162A`; selection is not Green Pass. PENDING deployed regression.
+4. **ELO 04 — Active controls**: Question Word WHAT/QUÉ/O QUE and other active gear controls use homologated green/dark-blue, without confusing active UI with positive answer assessment. PENDING.
+5. **ELO 05 — HOW TO SHOW**: preserve three full-width ordered answer rows, integrated golden speaker at left, no hidden pagination; user homologated layout and speech on 2026-10-18. NEW COLOR RULE PENDING.
+6. **ELO 06 — Audio and input separation**: speech EN/ES/PT remains functional, speaker click must never select or submit evidence. User-reported audio PASS; automated noninterference regression PENDING.
+7. **ELO 07 — Contract evidence**: anonymous exploratory choices never produce canonical Evidence; NICK CHOICE/USE/TRANSFER, Green Pass and Word Path must not be changed by CSS. PENDING.
+8. **ELO 08 — R1/R2/REVIEW**: maintain feedback then review, contextual 4/4 independent of contract 0/3→3/3, without touching existing accepted WHICH paths. PENDING.
+9. **ELO 09 — Responsive release**: compare portrait-first with landscape/desktop and EN/ES/PT; verify Cloudflare preview deployment corresponds to commit SHA, not just GitHub source. PENDING.
+10. **ELO 10 — Consolidated user review**: provide branch preview URL, exact deployed SHA, passing/failing checks and known gaps; request visual homologation before any separate main promotion. PENDING.
+
+**First live-browser observation, before latest JS/CSS commits:** all three languages showed full-width rows and pedagogical pass/fail feedback, but active Question Word and answer colors differed from the new user requirement; some icon-color observations conflict with user-provided screenshots. Treat as PRE-FIX BASELINE, not final verification. Do not claim audible tests by browser automation. No main merge.
