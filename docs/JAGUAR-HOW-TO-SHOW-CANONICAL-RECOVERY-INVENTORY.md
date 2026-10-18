@@ -106,3 +106,10 @@ This queue records the user's instruction to progress through ten linked ELOs be
 10. **ELO 10 — Consolidated user review**: provide branch preview URL, exact deployed SHA, passing/failing checks and known gaps; request visual homologation before any separate main promotion. PENDING.
 
 **First live-browser observation, before latest JS/CSS commits:** all three languages showed full-width rows and pedagogical pass/fail feedback, but active Question Word and answer colors differed from the new user requirement; some icon-color observations conflict with user-provided screenshots. Treat as PRE-FIX BASELINE, not final verification. Do not claim audible tests by browser automation. No main merge.
+
+
+## I. Active QW and assertive WHAT bold typography
+
+User screenshots on 2026-10-18 identified that default active WHAT appeared dark-blue/white, including after learner NICK entry; user also homologated the WHAT response green/dark-blue colors and requested **BOLD** typography. Canonical HOW TO SHOW presentation rule: whenever an active gear control has the approved green background `#56C877`, use dark-blue `#07162A` with `font-weight:700`. The active Question Word must have this appearance on initial render and after NICK reinitialization, without awarding any assessment credit. For a WHAT/QUÉ/O QUE response, green + dark-blue BOLD is only permitted for an evaluated passing answer. Incorrect selected answers remain dark and must not receive the green style.
+
+CSS implementation commit `ff2bde1ebc3a4d121e530205e4e661abb2e662be` overrides the previous `#questionGear .gear-option.question-word-practicing` dark background when `.active` and strengthens positive answer typography. **Source commit confirmed; Cloudflare deployment, initial/NICK state and EN/ES/PT regression not yet verified.** No main merge.
