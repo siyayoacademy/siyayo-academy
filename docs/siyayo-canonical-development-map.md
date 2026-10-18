@@ -438,3 +438,22 @@ The Animated SIYAYO Journey remains visible in every 360° audit as a top-level 
 - `docs/siyayo-corpus-experience-capability-matrix.md` — Ten Kinds + Question Words audit connecting A5, MASTER depth, reusable corpus, Experience/Toro, evidence maturity and the next canonical action.
 
 Current first executable gap discovered by that matrix: **Chapter 01 NOUN lacks the explicit `chapterScope` / `masterScope` metadata contract already present in Chapters 02–10.**
+
+
+---
+
+## JAGUAR — External-access evidence checkpoint (2026-10-18)
+
+**Scope:** documentation-only evidence checkpoint for SIYAYO Academy; no runtime, pedagogical, deployment or authority change. This supplements rather than supersedes WORK MAP, SEEK × TORO, ROOTS, Corpus ↔ Experience, and MULTIVERSO supervision. Do not transfer domain content between Academy, UNAQUI or Fine Art.
+
+**Evidence directly checked (public, unauthenticated page retrieval, 2026-10-18):**
+
+- `https://siyayo-academy.pages.dev/` resolves to the Academy homepage, with links to DNA and Experience Verb Explorer.
+- `https://siyayo-academy.pages.dev/verb-explorer.html?mode=experience` resolves to `/verb-explorer?mode=experience`, titled *SIYAYO — Tri-Language Verb Explorer*. Its rendered page exposes Xespirito Functional Diagnosis, Thinking Mind, Word Type, Experience Nouns/Adjectives, Tense, Mode, Language and Lines/Possible Responses. This is evidence of a public interface, **not** evidence that all QWs, assessments, audio, Dependency Focus or responsive states work correctly.
+- `https://siyayo-academy.pages.dev/verb-explorer.html?mode=dna` resolves to `/verb-explorer?mode=dna` with the Verb Explorer page title. Functional differences between the modes are **OPEN**.
+- `https://jaguar-piano-stage-v0-1.siyayo-academy.pages.dev/piano/` was opened in a separate unauthenticated browser run: Pianinho SVG, chromatic keyboard, score `0/4`, Frondosa QW leaves, Environment/Weather, and Auto/Portrait/Landscape controls were visible. Portrait, Landscape and Auto were clicked; selected-state changed without visible error. **OPEN:** real-device responsive layout, audio, exercise completion, and whether changes to noun classification visibility are intentional.
+- `https://siyayo-academy.pages.dev/journey-v51/` returned the Academy homepage content during public page extraction, **not** evidence of the preserved V51 Journey. **OPEN:** locate the actual branch/deployment URL, verify V51/V52 and each implemented scene/function before asserting absence or completeness. Do not change the Journey roadmap or assets based on this routing observation alone.
+
+**Source-control cross-check:** `ff1c325f` SEEK × TORO checkpoint to `e2be26238d57ba33f7814c883d96c74988845a09` Jaguar HEAD: 12 commits and 23 changed files, including later Dependency Focus/Head Probe/REVIEW-related changes. Treat older sector gaps as historical until rechecked against HEAD. Cloudflare Pages check for that HEAD returned `success`; this does not independently prove that the production homepage serves the same commit.
+
+**NEXT GO in existing sequence (not a new authority):** (P0) identify exact production/preview commit and inspect public visitor interactions for Verb Explorer, Dependency Focus, REVIEW and QW; (P0) execute existing 7D.3.x regression tests and compare EN/ES/PT visual behavior; (P0) reconcile SEEK × TORO Experience/QW slots with HEAD, marking existing vs missing vs tested vs homologated vs publicly accessible independently; (P1) locate and verify preserved Gold Seed Journey deployments; (P1) complete Academy MASTER/Ten Kinds capability mapping; (P2) trial assistance for tests/visual diff only under existing governance. No percentages without verified denominators; no generated assessment evidence or automatic Green Pass.
