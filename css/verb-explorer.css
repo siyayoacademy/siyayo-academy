@@ -810,3 +810,15 @@ body{
   background:var(--siyayo-selected-green);
   color:#07162a;
 }
+
+/* JAGUAR: authoritative positive evaluation marker for WHAT response colors. */
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="true"][aria-pressed="true"],
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="true"][aria-pressed="true"]:hover{
+  background:var(--siyayo-selected-green);
+  color:#07162a;
+}
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="false"][aria-pressed="true"],
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="false"][aria-pressed="true"]:hover{
+  background:transparent;
+  color:var(--siyayo-text-primary,#eaf1fb);
+}
