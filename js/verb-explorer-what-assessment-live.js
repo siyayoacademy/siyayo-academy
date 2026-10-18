@@ -177,7 +177,10 @@ function mount(input){
         if(!evaluated)return;
         if(exploring){
           // Diagnostic feedback only: no Evidence, Attempt, Coordinator, profile or Green Pass.
-          buttons.forEach(function(option){option.setAttribute('aria-pressed',String(option===button));});
+          buttons.forEach(function(option){
+            option.setAttribute('aria-pressed',String(option===button));
+            option.classList.toggle('what-answer-assertive',option===button&&evaluated.result==='pass');
+          });
           feedback.textContent=evaluated.result==='pass'
             ?{en:'Contextual response recognized · free practice only',es:'Respuesta contextual reconocida · solo práctica libre',pt:'Resposta contextual reconhecida · apenas prática livre'}[language]
             :{en:'Try another response · free practice only',es:'Prueba otra respuesta · solo práctica libre',pt:'Experimente outra resposta · apenas prática livre'}[language];
@@ -189,7 +192,10 @@ function mount(input){
         if(!attempt)return;
         var submitted=coordinator.submitObservedAttempt(attempt,event,button);
         if(!submitted)return;
-        buttons.forEach(function(option){option.setAttribute('aria-pressed',String(option===button));});
+        buttons.forEach(function(option){
+            option.setAttribute('aria-pressed',String(option===button));
+            option.classList.toggle('what-answer-assertive',option===button&&evaluated.result==='pass');
+          });
         var closure=submitted.cycleResult&&submitted.cycleResult.contractEvaluation;
         feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
           ?copy.green:evaluated.result==='pass'?copy.registered:copy.retry;
