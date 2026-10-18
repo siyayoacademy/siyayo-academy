@@ -62,3 +62,20 @@
 Never advance status because a preceding status passed. When evidence is missing, mark **OPEN**, not **ABSENT** or **DONE**.
 
 **No runtime/CSS changes, no merge, no deployment promotion authorized by this inventory.**
+
+
+## F. Historical LINES reference and next visual recovery gate
+
+**Verified origin:** The `LINES / POSSIBLE RESPONSES` panel appears in `verb-explorer.html` at Git commit `5137862734` (2026-08-29), with the `living-window`, `livingLines` and navigation elements. Earlier inspected HTML versions did not contain this panel. The current approved WHICH panel, as shown in the user's screenshot, is the visual HOW TO SHOW reference for question and response lines.
+
+**Visual contract:** golden SVG speaker integrated at the left edge of each card; centered legible response text on the right; consistent border, padding, typography and card width; ordered responses; portrait-first with landscape and desktop checks. The speaker interaction is distinct from answer selection and must not create assessment evidence.
+
+**Historical conflict to resolve:** checkpoint JAGUAR-LIVE-15 records at most two WHAT responses per presentation page, whereas the latest requested WHAT design displays all three ordered responses without hiding the third. Both are documented; do not silently overwrite the earlier checkpoint. The currently accepted presentation must be explicitly verified against the current user's visual instructions.
+
+**Code-level discrepancy:** In `css/verb-explorer.css`, the older `.what-canonical-panel .what-canonical-options` two-column rule has greater specificity than the newer `.what-canonical-options` one-column rule. Verify computed styles in the deployed preview before patching. The WHICH card uses its existing `.choice-option`, `.choice-audio` and `.choice-select` presentation; WHAT currently uses `.what-probe-response-row`, `.what-probe-speaker` and `.what-probe-option`. Reuse the approved visual arrangement, not the assessment event wiring.
+
+**Release gate:** source diff -> minimal CSS/markup correction -> check all alternatives -> test speech EN/ES/PT without Evidence -> portrait/landscape/desktop -> R1/R2/REVIEW and NICK/Learning Trail regression -> verified commit SHA and matching preview -> user homologation. No merge to main.
+
+**Privacy rule:** Keep this recovery entry limited to technical checkpoints and public commit identifiers. Do not insert learner nicks, personal names, e-mail addresses, telephone numbers or device identifiers.
+
+**State at writing:** historical origin VERIFIED; HOW TO SHOW visual reference USER CONFIRMED; CSS issue IDENTIFIED; corrective CSS commit, deployment verification and complete regressions PENDING.
