@@ -758,3 +758,9 @@ body{
 .what-probe-option[aria-pressed="true"]:not(:disabled):hover{
   background:var(--siyayo-selected-green-hover);
 }
+
+/* JAGUAR WHAT practice: response and independent speech control. */
+.what-probe-response-row{display:flex;align-items:stretch;gap:6px;max-width:100%;flex:1 1 210px}
+.what-probe-response-row>.what-probe-option{flex:1;min-width:0;white-space:normal}
+.what-probe-speaker{flex:0 0 44px;min-height:44px;border:1px solid rgba(86,200,119,.6);border-radius:12px;background:#07162a;color:#f2d88a;font:inherit;font-size:1.05rem;cursor:pointer}
+.what-probe-speaker:hover,.what-probe-speaker:focus-visible{border-color:var(--siyayo-gold-primary);outline:2px solid var(--siyayo-gold-primary);outline-offset:2px}
