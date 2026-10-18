@@ -472,3 +472,37 @@ Current first executable gap discovered by that matrix: **Chapter 01 NOUN lacks 
 - **Access correction:** for Jaguar functional acceptance share the explicit Cloudflare **branch preview URL** above, not the older main domain. This is a link/routing guidance correction only, not a runtime fix. A future production promotion requires separate authorization, review, regressions and merge/deploy gate.
 
 **NEXT ELO:** test R2 feedback without awarding unearned evidence, REVIEW explanation, ES/PT distinct contract, and audio/portrait; execute existing 7D.3.x tests before any code change. Preserve all previously homologated behavior and distinct project boundaries.
+
+
+---
+
+## ENGLISH FACE — Fine Art, Fine Text and Tri-Language Disks
+
+**Source and status:** user-supplied English Face reference image, 2026-10-18, associated with the author's MASTER VIP Apostila / The Ten Kinds of Words. **DESIGN / STUDY ONLY — NOT YET IMPLEMENTED OR HOMOLOGATED.** The original flat image is a visual reference, not an already-separated editable layer file. This registration does not replace any previously homologated contract, branch or checkpoint.
+
+### Fine Art BK, Fine Text and Art in Movement
+
+Decompose the reference conceptually into **16 functional layers**, organized into four groups: **Fine Art** (general replaceable/transparent background; face contour; face fill; eyes/irises; smiling overlays on eyes; lips/mouth), **Fine Text** (English Face title; QW words above head; auxiliaries/modals on forehead; SPEAK and ENGLISH labels), **linguistic semantics** (Question Words; Auxiliaries; Subject; Verb + Predicate relations), and **interface/movement** (concept arrows/labels; interactive disks, elevators, zoom, rotation, animation and audio). The count is an architectural proposal; conceptual layers need not correspond to independent pixels in the original raster.
+
+The source image shows **7 W + 7 H** question expressions. Its source list includes **HOW OLD**; the Academy's existing canonical 14-QW matrix includes **WHOM**. Preserve both source and canonical lists separately; do not silently replace the canonical QW corpus or assessment targets.
+
+### BASE + MODULAR word-type disks and elevators
+
+Treat each of The Ten Kinds of Words as a reusable disk with metadata: language EN/ES/PT, lemma, displayed form, word type **as used in this sentence**, grammatical role, agreement/tense/mode features, syntactic dependency, contextual suitability and MASTER VIP provenance. Disks can spin, elevate and compose candidate utterances; a **single existing authorized language/dependency layer** must validate allowable before/after connections, agreement, idiomatic phrasing, subject omission and language-specific word order. Do not create a competing assessment or grammar engine.
+
+Examples: `I am happy / Yo estoy feliz / Eu estou feliz` (pronoun → conjugated verb → adjective). In `Which verb should we use?`, the token `verb` is a **noun** referring to the grammatical category of verbs. This illustrates why lexical topic and in-sentence function must remain distinct.
+
+**Proposed display/decision states only:** TRUE = contextually permitted combination; FALSE = incompatible under the selected rule, **not automatically a learner error**; NULL = insufficient data; PERAÍ/WAIT = suspend for context, listening or learner choice. These do not replace existing Green Pass, WAIT or contract authority. Free exploration, visual rotation, pronunciation and art motion do not automatically create canonical learner Evidence.
+
+### Priority: Verb Explorer first, then cross-stage adapters
+
+1. **P0 — Current Jaguar NEXT GO remains first:** inspect and correct only demonstrated circumstance-label localization inconsistencies in the Learning Trail/presentation. Existing `js/verb-explorer-presentation-copy.js` contains EN/ES/PT labels; investigate exact rendering path before touching corpus or assessment.
+2. **P0 — Regression and visual verification:** run existing EN/ES/PT tests for Shopping WHICH R1/R2 → feedback → REVIEW, Dependency Focus, Head Probe, NICK and Learning Trail/Word Path. Distinguish **contextual 0/4–4/4** from **contract 0/3–3/3**. Do not mark audio or real-device responsiveness homologated without direct evidence.
+3. **P0 — Reuse existing implementation:** connect proposed disks and HOW TO SHOW to current Word Type, lexical composition, Thinking Mind, Xespirito, Dependency Focus, Head Probe and assessment-authority surfaces; identify actual missing QW/Experience circuits against HEAD and SEEK × TORO before implementation. Prioritize completion of the Verb Explorer and MASTER VIP integration.
+4. **P1 — MASTER VIP ↔ Academy:** preserve chapter/figure/page provenance, map The Ten Kinds of Words to reusable corpus/capabilities, mirror examples idiomatically in EN/ES/PT and design HOW TO PRINT, HOW TO SHOW, speech and optional animation without inventing source material.
+5. **P1 — Optional Pianinho Mágico / Resonance bridge:** subtle English Face visual and voice companion via separately authorized adapter; preserve keyboard, music, environment, Auto/Portrait/Landscape and existing contracts.
+6. **P1 — Optional Gold Seed Journey / Art in Movement bridge:** Fine Art BK/Fine Text overlays and WAIT animations with preserved V51/V52 archetypes, scenes and navigation; require separate stage acceptance.
+
+**Governance:** SEEK × TORO / MULTIVERSO 360 supervision; `CORPUS → CAPABILITY → THINKING MIND/QW → authorized TARGET/CONTRACT → ACTION/ATTEMPT → EVIDENCE → WAIT/GREEN → TORO`. Maintain independent EN/ES/PT nuance and evaluation scopes. Keep unrelated project content (including UNAQUI/hymnals) separate. **Do not merge to `main` or promote production without separate authorization.**
+
+**Data minimization:** this registration contains no learner nicknames, device identifiers, personal e-mails or unrelated named persons. A future asset addition requires independent file/provenance and rights checks.
