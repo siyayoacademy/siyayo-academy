@@ -822,3 +822,27 @@ body{
   background:transparent;
   color:var(--siyayo-text-primary,#eaf1fb);
 }
+
+/* JAGUAR HOW TO SHOW: active WHAT/QW green and bold dark-blue; assertive answer bold. */
+#questionGear .gear-option.active,
+#questionGear .gear-option.active.question-word-practicing,
+#questionGear .gear-option.question-word-practicing.active{
+  background:var(--siyayo-selected-green,#56c877);
+  color:#07162a;
+  font-weight:700;
+  border-color:var(--siyayo-gold-primary);
+}
+#questionGear .gear-option.active .session-target-label,
+#questionGear .gear-option.question-word-practicing.active .session-target-label{
+  color:#07162a;
+  font-weight:700;
+}
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="true"][aria-pressed="true"],
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="true"][aria-pressed="true"]:hover{
+  color:#07162a;
+  font-weight:700;
+}
+.what-probe-options:not(.what-canonical-options)>.what-probe-option[aria-pressed="true"]{
+  color:#07162a;
+  font-weight:700;
+}
