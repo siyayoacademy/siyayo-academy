@@ -732,3 +732,29 @@ body{
   #choiceReview .choice-review-button{min-height:78px;padding-inline:38px}
   #choiceReview .choice-review-button>p{overflow-wrap:anywhere}
 }
+
+
+/* JAGUAR: selected controls use green fill; selection is not Green Pass. */
+:root{
+  --siyayo-selected-green:#198b46;
+  --siyayo-selected-green-hover:#20a653;
+}
+.gear-option.active:not(:disabled),
+.perspective-options button.active:not(:disabled),
+.choice-option.active:not(:disabled),
+.what-probe-option[aria-pressed="true"]:not(:disabled),
+.why-probe-option[aria-pressed="true"]:not(:disabled),
+.determiner-use-probe-options button[aria-pressed="true"]:not(:disabled),
+.determiner-use-transfer-probe-options button[aria-pressed="true"]:not(:disabled),
+.dependency-head-probe-options button[aria-pressed="true"]:not(:disabled){
+  background:var(--siyayo-selected-green);
+  color:#fff;
+  border-color:var(--siyayo-gold-primary);
+  box-shadow:0 0 0 1px rgba(242,216,138,.25),0 0 14px rgba(25,139,70,.25);
+}
+.gear-option.active:not(:disabled):hover,
+.perspective-options button.active:not(:disabled):hover,
+.choice-option.active:not(:disabled):hover,
+.what-probe-option[aria-pressed="true"]:not(:disabled):hover{
+  background:var(--siyayo-selected-green-hover);
+}
