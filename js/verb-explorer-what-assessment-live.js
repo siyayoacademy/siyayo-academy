@@ -207,25 +207,7 @@ function mount(input){
       options.appendChild(button);
     });
     section.appendChild(options);
-    // Presentation pages keep every canonical candidate available; turning a page is not an Attempt.
-    if(spec.dimension==='object-answer'&&buttons.length>2){
-      var page=0,size=2,total=Math.ceil(buttons.length/size);
-      var controls=doc.createElement('div');controls.className='what-answer-pages';
-      var previous=doc.createElement('button'),nextPage=doc.createElement('button'),count=doc.createElement('span');
-      previous.type=nextPage.type='button';previous.textContent='‹';nextPage.textContent='›';
-      var labels={en:['Previous responses','Next responses'],es:['Respuestas anteriores','Siguientes respuestas'],pt:['Respostas anteriores','Próximas respostas']}[language];
-      previous.setAttribute('aria-label',labels[0]);nextPage.setAttribute('aria-label',labels[1]);
-      count.setAttribute('aria-live','polite');
-      function showPage(){
-        buttons.forEach(function(button,index){button.hidden=Math.floor(index/size)!==page;});
-        count.textContent=(page*size+1)+'–'+Math.min((page+1)*size,buttons.length)+' / '+buttons.length;
-        previous.disabled=page===0;nextPage.disabled=page===total-1;
-      }
-      previous.addEventListener('click',function(){if(page>0){page--;showPage();}});
-      nextPage.addEventListener('click',function(){if(page<total-1){page++;showPage();}});
-      controls.appendChild(previous);controls.appendChild(count);controls.appendChild(nextPage);
-      section.appendChild(controls);showPage();
-    }
+    // All canonical responses remain visible in their authored order; selecting alone can create an Attempt.
     el.appendChild(section);
   });
   el.dataset.canonicalQuestion=(available.find(function(spec){return spec.dimension==='object-answer';})||{}).question||'';
