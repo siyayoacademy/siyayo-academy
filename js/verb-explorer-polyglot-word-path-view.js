@@ -201,7 +201,7 @@ function view(input){
      status='multiple';value=String(records.length);info=copy.multiple;
      detail=records.map(function(rec){return rec.progress.completed+'/'+rec.progress.total+' · '+copy.scope+' '+experienceName(rec.origin);}).join(' / ');
    }else if(confirmed){status='confirmed';value=marker.marker==='MILESTONE'?'★':'●';info=copy.confirmed;}
-   if(confirmed&&records.length){info+=' · '+copy.confirmed+' ('+language.toUpperCase()+')';}
+   if(confirmed&&records.length){info+=' · '+copy.confirmed+' ('+lang.toUpperCase()+')';}
    return '<td class="wp-poly-cell" data-skill="'+escapeHtml(word.id)+'" data-language="'+lang+'" data-state="'+status+'">'+
      '<strong class="wp-poly-value">'+escapeHtml(value)+'</strong>'+
      '<span class="wp-poly-status">'+escapeHtml(info)+'</span>'+
