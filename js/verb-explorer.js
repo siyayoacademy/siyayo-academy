@@ -112,13 +112,8 @@ function refreshThinkingMindAssessmentHighlight(){
     button.classList.toggle("question-word-confirmed",confirmed);
     button.querySelector(".session-target-label")?.remove();
     const name=button.textContent.trim();
-    if(selected||confirmed){
-      const badge=document.createElement("small");
-      badge.className="session-target-label";
-      badge.setAttribute("aria-hidden","true");
-      badge.textContent=confirmed?"★":accepted?"◐":"○";
-      button.appendChild(badge);
-    }
+    // HOW TO SHOW: keep assessment state in data-learning-state and accessible labels;
+    // do not append decorative dots or stars inside active Question Word buttons.
     const description=confirmed?labels.confirmed:selected?(accepted?labels.active:labels.ready):"";
     button.setAttribute("aria-label",name+(description?" · "+description:""));
     if(description)button.setAttribute("title",description);
