@@ -600,3 +600,18 @@ Inspeção de `js/verb-explorer-adaptive-evidence-profile-source.js`, `js/verb-e
 - **Novo requisito de regressão:** verificar preservação conjunta de GreenPassProfile, AdaptiveEvidenceProfile, Session, Context, evidencePackets e ocorrência, não só o contador visual. Não reconstituir perfis pela interface; verificar imutabilidade/serialização e versão do corpus antes de desenhar a hidratação.
 
 **Status:** auditoria de fonte, não implementação; GitHub/Cloudflare/bytes servidos ainda sem fingerprint imutável comprovado. Sem alteração JS, sem merge main.
+
+
+### Pente fino — serialização, identidade e prova de pacote (2026-10-19)
+
+Arquivos inspecionados: `js/adaptive-assessment-scope.js`, `js/adaptive-learning-cycle.js`, `js/green-pass-profile.js`, além de Coordinator, Composer e Selection.
+
+1. `AdaptiveAssessmentScope.create` define chave JSON determinística de `[learnerId,skill,language,originExperienceId]`; `valid` recalcula a chave, `same` compara, `ownsContext` valida contexto/idioma, `ownsPacket` valida skill e contexto. **O nome da chave no storage não basta:** a carga deve validar cada campo e pacote novamente.
+2. `AdaptiveAssessmentScope.bindAttempt` exige evento observado pelo aluno, `occurrenceId` coincidente, skill e idioma; a hidratação não pode criar eventos fictícios nem chamar bindAttempt como substituto da captura de evidência real.
+3. `AdaptiveLearningCycle.submit` acrescenta pacotes ao contexto e `GreenPassProfile.evaluateContract` verifica requisitos nos pacotes. Persistir apenas contagem 1/3, 2/3 ou 3/3 perde origem e autoridade e é expressamente vedado.
+4. `GreenPassProfile` e `AdaptiveEvidenceProfile` têm semânticas diferentes; o adapter precisa validar esquema e identidade de ambos, além de `Session.decision`, `Context.assessmentScope`, `passContract`, `evidencePackets` e `occurrenceId` antes de qualquer `restore`.
+5. `Object.freeze` protege algumas estruturas durante execução, mas não autentica conteúdo persistido e não impede alteração do storage pelo usuário. NICK não é autenticação; armazenamento local é dispositivo/navegador específico.
+6. A versão da definição canônica e do corpus precisa ser compatível com o snapshot. Se não for, **falhar fechado**, preservar o registro bruto para diagnóstico e não fabricar créditos.
+7. **Gate de engenharia ainda aberto:** inventário de todos os pontos de entrada de perfil/sessão e ciclo de vida do armazenamento; testes automatizados de serialização, rejeição de pacote com scope incorreto, duplicação de ocorrência, corpus incompatível e recarga real. Identidade de deployment continua OPEN.
+
+**Status: especificação auditada; runtime de persistência NÃO implementado nem homologado.**
