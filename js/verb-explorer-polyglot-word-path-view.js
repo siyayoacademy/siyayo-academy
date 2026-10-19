@@ -218,8 +218,30 @@ function view(input){
     '<th scope="col">ENGLISH</th><th scope="col">ESPAÑOL</th><th scope="col">PORTUGUÊS</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
   '<p class="wp-poly-footnote">'+escapeHtml(copy.scopeNote)+'</p>'+
   '<p class="wp-poly-footnote wp-poly-coverage">'+escapeHtml(copy.details)+'</p>'+
+  patitaHtml(input)+
   (root.SIYAYOVerbExplorerWordPathWitnessView&&typeof root.SIYAYOVerbExplorerWordPathWitnessView.render==='function'
     ?root.SIYAYOVerbExplorerWordPathWitnessView.render(input):'')+'</section>';
 }
-root.SIYAYOVerbExplorerPolyglotWordPathView=Object.freeze({render:view,version:'patita-observation-integration-pending'});
+var patitaKey='siyayo.patita.contextual-choices.v1';
+function readPatita(){
+ try{var rows=JSON.parse(root.localStorage.getItem(patitaKey)||'[]');return Array.isArray(rows)?rows.filter(function(r){return r&&r.learnerId&&['en','es','pt'].includes(r.language)&&r.answer;}).slice(-500):[];}catch(_e){return [];}
+}
+function observeChoice(input){
+ input=input||{};
+ var id=text(input.learnerId),language=text(input.language),answer=text(input.answer);
+ if(!id||!['en','es','pt'].includes(language)||!answer)return false;
+ var rows=readPatita();
+ rows.push({learnerId:id,language:language,questionWord:text(input.questionWord),experienceId:text(input.experienceId),candidateId:text(input.candidateId),answer:answer,observedAt:new Date().toISOString(),kind:'exploratory-contextual-choice',evidenceProduced:false});
+ try{root.localStorage.setItem(patitaKey,JSON.stringify(rows.slice(-500)));return true;}catch(_e){return false;}
+}
+function patitaRecords(id){return readPatita().filter(function(r){return r.learnerId===text(id);});}
+function patitaHtml(input){
+ var identity=input&&input.identity,id=identity&&typeof identity.getId==='function'?text(identity.getId()):'';
+ if(!id||!input.profile||text(input.profile.id)!==id)return '';
+ var rows=patitaRecords(id).slice(-30).reverse();
+ if(!rows.length)return '';
+ var labels={en:'PATITA · observed choices · no assessment credit',es:'PATITA · respuestas observadas · sin crédito evaluativo',pt:'PATITA · respostas observadas · sem crédito avaliativo'};
+ return '<section class="wp-patita-observations" data-observation-only="true"><h4>'+escapeHtml(labels[input.language]||labels.en)+'</h4><ol>'+rows.map(function(r){return '<li data-observed-language="'+escapeHtml(r.language)+'"><strong>'+escapeHtml(r.language.toUpperCase()+' · '+r.questionWord.toUpperCase())+'</strong> · '+escapeHtml(r.answer)+' <small>'+escapeHtml(r.experienceId)+' · '+escapeHtml(r.observedAt)+'</small></li>';}).join('')+'</ol></section>';
+}
+root.SIYAYOVerbExplorerPolyglotWordPathView=Object.freeze({render:view,observeChoice:observeChoice,patitaRecords:patitaRecords});
 })(typeof globalThis!=='undefined'?globalThis:this);
