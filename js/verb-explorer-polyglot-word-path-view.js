@@ -79,6 +79,9 @@ function render(input){
  function experienceName(id){var x=catalog&&catalog.getExperience&&catalog.getExperience(id);return text(x&&x.title&&x.title[lang])||text(id);}
  function labelAnswer(rec,item){
    var id=item.selectedAlternativeId,language=rec.language,exp=catalog&&catalog.getExperience&&catalog.getExperience(item.experienceId);
+   // Accepted choice evidence may lack the historic answer-text identifier.
+   // Report that provenance gap without inventing a selected sentence.
+   if(!id&&item.dimension==='choice-function'&&item.accepted)return {label:{en:'Contextual choice accepted · answer text not retained',es:'Elección contextual aceptada · texto de respuesta no conservado',pt:'Escolha contextual aceita · texto da resposta não preservado'}[lang],extra:''};
    if(!id)return {label:'',extra:''};
    var word=WORDS.find(function(x){return x.word.toLowerCase()===id;});
    if(word&&exp){
