@@ -113,3 +113,12 @@ This queue records the user's instruction to progress through ten linked ELOs be
 User screenshots on 2026-10-18 identified that default active WHAT appeared dark-blue/white, including after learner NICK entry; user also homologated the WHAT response green/dark-blue colors and requested **BOLD** typography. Canonical HOW TO SHOW presentation rule: whenever an active gear control has the approved green background `#56C877`, use dark-blue `#07162A` with `font-weight:700`. The active Question Word must have this appearance on initial render and after NICK reinitialization, without awarding any assessment credit. For a WHAT/QUÉ/O QUE response, green + dark-blue BOLD is only permitted for an evaluated passing answer. Incorrect selected answers remain dark and must not receive the green style.
 
 CSS implementation commit `ff2bde1ebc3a4d121e530205e4e661abb2e662be` overrides the previous `#questionGear .gear-option.question-word-practicing` dark background when `.active` and strengthens positive answer typography. **Source commit confirmed; Cloudflare deployment, initial/NICK state and EN/ES/PT regression not yet verified.** No main merge.
+
+
+## J. Active-control styling and removal of decorative QW dots
+
+User visual direction dated 2026-10-18: all active controls, not only WHAT/QUÉ/O QUE, use approved green `#56C877` with dark-blue `#07162A` bold typography. Apply a restrained inner glow/shadow without reducing text legibility; portrait remains the priority. Remove the `○` / `◐` / `★` badges **inside** active Question Word buttons because they are not part of the approved HOW TO SHOW design. Do not delete canonical Learning Trail states, NICK identity, progress or evidence. Keep progress information in accessible labels and separate learning surfaces.
+
+Implementation: `js/verb-explorer.js` commit `9cad47e061b1cec1de329b271b4ac0b2d9b76c26` removes the badge injection; `css/verb-explorer.css` commit `15ee2017a8af095b4db21a9bb6e23bb878e43040` applies green/bold navy to the shared active-control families and a subtle inset effect. Positive WHAT response color remains controlled by `data-assertive="true"`, not merely `aria-pressed`.
+
+**Verification gate:** check all active families and inactive counterparts in EN/ES/PT, after NICK, on portrait and desktop; check text contrast, focus and hover, QW accessible name, Learning Trail unchanged, incorrect WHAT never green. Source commits confirmed, deployment and full regression pending. No main merge.
