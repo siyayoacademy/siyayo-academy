@@ -1,5 +1,18 @@
 # SIYAYO CANONICAL DEVELOPMENT MAP
 
+## JAGUAR — SENTINELA TORO / VISÃO DE ÁGUIA / PATITA / PERAÍ (2026-10-18)
+
+**Status: protocolo de auditoria para os próximos ELOs; não representa correção implementada nem homologação.** Complementa SEEK × TORO, contratos canônicos, NICK, Learning Trail / Word Path e auditorias existentes, sem substituí-los.
+
+- **ÁGUIA:** mapear transições relevantes de ida, volta, alternância, repetição e retomada entre S1/S2/S3, QW, idioma de exibição, idioma e escopo de avaliação, NICK, contexto e sessão.
+- **SENTINELA TORO:** testar estados antes/depois de cada transição crítica, incluindo retorno após GREEN PASS, troca de idioma/QW e respostas repetidas. Cor verde não é prova de Evidence.
+- **PATITA:** correlacionar ação, evento, registro exploratório ou contrato autorizado, CHOICE/USE/TRANSFER, Learning Trail, Word Path e feedback. Exploração não vira Evidence canônica automaticamente; navegação livre não apaga contrato confirmado.
+- **PERAÍ:** diante de divergência visual × registro, interromper avanço do circuito, preservar prints, NICK, rota, ordem dos eventos, HEAD e preview; investigar antes de corrigir.
+- **Gate de aceite:** matriz de caminhos testados e pendentes, esperado × observado, regressões EN/ES/PT e dispositivos pertinentes, homologação humana. Nenhum ELO novo deve encobrir lacuna aberta. Main permanece intocada sem autorização.
+
+**Caso sentinela aberto:** S1 PT → S2 PT (3/3) → alternância ES/EN → retorno S1 EN WHICH: resposta fresh, mild cheese já aparecia verde ANTES do novo clique; novo clique não mostrou registro adicional no Learning Trail. Inspeção localizou restauração de choiceCandidate por memória de apresentação; o handler data-choice-select atualiza a escolha e renderiza, sem emissão explícita de Evidence nesse trecho. Investigar outros observadores, rastro exploratório e escopo do contrato antes de concluir causa completa. Não atribuir automaticamente evidência inglesa ao contrato PT. **PENDENTE: auditoria end-to-end, correção autorizada e homologação.**
+
+
 ## MVR-FA-002 — Fine Art partner-module family (2026-10-16)
 
 **Status: architecture and implementation backlog; not a claim of implemented features.** This entry extends MVR-FA-001, does not replace Academy's canonical pedagogical map, and authorizes no changes to artwork, runtime, sites, repositories beyond this registry, or published digital assets.
