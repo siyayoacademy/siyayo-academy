@@ -92,6 +92,11 @@ function mount(input){
         (decision.assessmentScope&&id(observed.experienceLanguage)!==language))return null;
       var result=resultApi.evaluate(specification,event);
       if(!result)return null;
+      // Presentation only: a passing probe can illuminate its answer; never infer Evidence from color.
+      var buttons=container.querySelectorAll('[data-determiner-use-probe-select], [data-determiner-use-transfer-probe-select]');
+      Array.prototype.forEach.call(buttons,function(button){
+        button.dataset.assertive=String(button===target&&result.result==='pass');
+      });
       var evidence=evidenceBridge.fromResult({
         result:result,learnerEvent:event,supportSensor:support,attemptLoop:loop
       });
