@@ -555,3 +555,34 @@ Examples: `I am happy / Yo estoy feliz / Eu estou feliz` (pronoun → conjugated
 10. Map registration: **RECORDED** — this section documents findings and unresolved gates, not a Green Pass or homologation.
 
 **Next single ELO:** establish immutable preview build identity and replay a fresh-NICK deterministic test across EN/ES/PT, exact S1↔S2 path, accepted-evidence snapshots, PATITA observed-event snapshots before/after refresh, and HOW TO SHOW. Compare event count and scope without awarding exploratory credits. Preserve user records; do not merge main or promote production. Browser automation did not access network console or inspect localStorage directly; those remain open.
+
+
+## JAGUAR — ELO DE PERSISTÊNCIA CANÔNICA · 2026-10-19 · AUDITORIA E CONTRATO DE IMPLEMENTAÇÃO
+
+**Status: INVESTIGADO / IMPLEMENTAÇÃO RUNTIME PENDENTE.** Não confundir registro desta especificação com recuperação implementada ou homologada. Branch Jaguar apenas; main e produção intocadas.
+
+### Evidência do navegador — PATITA × contrato
+
+TinyFish execução https://agent.tinyfish.ai/runs/94d046b4-724c-41ca-bd10-90bee358a8b8, NICK isolado `PATITA-WHICH-RELOAD-20261019-C`, S1 Shopping for a Nice Dinner, EN, WHICH, escolha `fresh-mild-cheese`. O registro `EN · WHICH · We should choose the fresh, mild cheese. · shopping-for-dinner · 2026-10-19T16:16:42.304Z` reapareceu com dados idênticos após reload e reinserção do NICK: **PASS para persistência PATITA no mesmo navegador**. A visualização do contrato mudou **1/3 (CHOICE ●)** antes para **0/3 (CHOICE ○)** depois: **DIVERGÊNCIA A INVESTIGAR**; não atribuir causalidade nem crédito PATITA sem inspecionar autoridade e pacotes. A seleção da QW invoca `selectThinkingMindAssessment(question)` independentemente de `observeChoice()` no clique `data-choice-select`.
+
+### Inventário de fronteiras (leitura da branch)
+
+- `js/verb-explorer-learner-identity-source.js`: `current` em memória; identidade explícita, não persistida por esse módulo.
+- `js/verb-explorer-adaptive-profile-source.js`: `current` em memória; não grava em storage.
+- `js/verb-explorer-adaptive-coordinator.js`: `current` contém profile/session/context e `snapshot()`; valida `AdaptiveAssessmentScope.ownsContext` e `ownsPacket` ao configurar, mas não grava em storage.
+- `js/verb-explorer-thinking-mind-assessment-selection.js`: `retained=Object.create(null)`; `remember`, `getRetainedEvidence`, `getRetainedProgress` são cache em memória; `restore` reconstitui sessão retida **na mesma execução da página**, não equivale a recuperação após reload.
+- `js/verb-explorer-adaptive-coordinator-config.js`: `restore` valida e configura um contexto fornecido; não fornece armazenamento persistente próprio.
+- `js/verb-explorer-polyglot-word-path-view.js`: `observeChoice` grava `siyayo.patita.contextual-choices.v1` em localStorage, com `evidenceProduced:false`; PATITA não é evidência avaliativa.
+
+**Limite da conclusão:** não foi demonstrada inexistência de outra camada de armazenamento em todo o repositório. Também não foi verificada a identidade exata do deployment Cloudflare: GitHub HEAD → Cloudflare deployment → bytes JS servidos permanece **OPEN**.
+
+### Contrato proposto para implementação (não autorizado como evidência)
+
+1. **Escopo:** chave canônica validada `learnerId × skill × language × originExperienceId`; nenhuma inferência de skill por QW textual ou escolha contextual. Não misturar EN/ES/PT ou origem S1/S2.
+2. **Fonte:** capturar somente snapshot de sessão/contexto já emitido pelo coordenador e seus `evidencePackets` autorizados, nunca gerar novos pacotes a partir de PATITA, Word Path ou renderização.
+3. **Integridade:** schema versionado, validação de tipo, ownership `AdaptiveAssessmentScope`, `ownsContext`, `ownsPacket`, contrato `passContract.requires` e definição canônica existente; falhar fechado em dados malformados/incompatíveis. Não usar NICK como autenticação ou como identidade segura entre dispositivos.
+4. **Restituição:** reentrada explícita do mesmo NICK; carregar definição por autoridade; recuperar por `coordinatorConfig.restore` apenas após validações; preservar o contrato de origem ao visitar transferência S2; sem auto-GREEN, auto-NEXT, auto-credit ou overwrite silencioso.
+5. **Ciclo de vida:** salvar somente após eventos avaliativos canônicos concluídos; impedir duplicatas e restaurações entre perfis; limpeza deliberada não deve apagar dados sem confirmação; separar storage observacional PATITA do storage avaliativo.
+6. **Regressão:** novo NICK 0/3 → CHOICE/USE autorizados → reload → mesma contagem, mesmos pacotes, mesmo escopo; EN→PT→ES→EN; S1→S2→S1→S2; PATITA sem alteração de crédito; dados corrompidos fail-closed; comparação dos bytes servidos e SHA de build antes de homologar.
+
+**Próximo ELO de engenharia:** inspecionar possíveis persistências externas e testes existentes, desenhar adapter de armazenamento + hidratação versionada com testes automatizados antes de conectar à inicialização. Não modificar avaliação canônica, não publicar preview como homologado antes de testes. 
