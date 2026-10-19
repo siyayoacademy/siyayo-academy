@@ -221,5 +221,5 @@ function view(input){
   (root.SIYAYOVerbExplorerWordPathWitnessView&&typeof root.SIYAYOVerbExplorerWordPathWitnessView.render==='function'
     ?root.SIYAYOVerbExplorerWordPathWitnessView.render(input):'')+'</section>';
 }
-root.SIYAYOVerbExplorerPolyglotWordPathView=Object.freeze({render:view});
+root.SIYAYOVerbExplorerPolyglotWordPathView=Object.freeze({render:view,version:'patita-observation-integration-pending'});
 })(typeof globalThis!=='undefined'?globalThis:this);
