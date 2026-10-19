@@ -586,3 +586,17 @@ TinyFish execução https://agent.tinyfish.ai/runs/94d046b4-724c-41ca-bd10-90bee
 6. **Regressão:** novo NICK 0/3 → CHOICE/USE autorizados → reload → mesma contagem, mesmos pacotes, mesmo escopo; EN→PT→ES→EN; S1→S2→S1→S2; PATITA sem alteração de crédito; dados corrompidos fail-closed; comparação dos bytes servidos e SHA de build antes de homologar.
 
 **Próximo ELO de engenharia:** inspecionar possíveis persistências externas e testes existentes, desenhar adapter de armazenamento + hidratação versionada com testes automatizados antes de conectar à inicialização. Não modificar avaliação canônica, não publicar preview como homologado antes de testes. 
+
+
+### Pente fino complementar — fronteiras P/S/C e restauração (2026-10-19)
+
+Inspeção de `js/verb-explorer-adaptive-evidence-profile-source.js`, `js/verb-explorer-adaptive-session-source.js`, `js/verb-explorer-adaptive-composer.js`, `js/verb-explorer-adaptive-context-source.js`, `js/verb-explorer-adaptive-coordinator-config.js` e `js/verb-explorer-adaptive-coordinator.js`:
+
+- **P:** GreenPassProfile e AdaptiveEvidenceProfile são fontes distintas, mantidas em memória; restaurar apenas o GreenPassProfile não demonstra recuperação de todo o histórico avaliativo.
+- **S:** SessionSource cria sessão por `AdaptiveAttemptLoop.begin` a partir de EvidenceProfile canônico; não fabrica Session no adapter.
+- **C:** Composer compõe contexto novo com `evidencePackets: Object.freeze([])`; chamar `compose()` para retomar uma sessão persistida pode reiniciar contagem em vez de recuperar pacotes.
+- **Restore existente:** CoordinatorConfig `restore` usa `ContextSource.compose(session, origin, persistedContext)`, validando skill, scope, origin e visita de transferência. Deve receber snapshot canônico validado; não é armazenamento.
+- **Event integrity:** Coordinator rejeita `occurrenceId` duplicado nos pacotes observados, verifica evento do learner, skill, experiência, e exige autoridade explícita para transferência. Um futuro adapter não pode reemitir eventos para reconstruir pontuação, nem quebrar a deduplicação.
+- **Novo requisito de regressão:** verificar preservação conjunta de GreenPassProfile, AdaptiveEvidenceProfile, Session, Context, evidencePackets e ocorrência, não só o contador visual. Não reconstituir perfis pela interface; verificar imutabilidade/serialização e versão do corpus antes de desenhar a hidratação.
+
+**Status:** auditoria de fonte, não implementação; GitHub/Cloudflare/bytes servidos ainda sem fingerprint imutável comprovado. Sem alteração JS, sem merge main.
