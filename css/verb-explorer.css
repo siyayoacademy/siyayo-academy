@@ -846,3 +846,37 @@ body{
   color:#07162a;
   font-weight:700;
 }
+
+/* JAGUAR HOW TO SHOW: universal active green controls, bold navy lettering, subtle inset glow. */
+.gear-option.active:not(:disabled),
+.perspective-options button.active:not(:disabled),
+.tense-tab.active:not(:disabled),
+.form-tab.active:not(:disabled),
+.subject-tab.active:not(:disabled),
+.explorer-mode.active:not(:disabled),
+.what-probe-options:not(.what-canonical-options)>.what-probe-option[aria-pressed="true"]:not(:disabled),
+.why-probe-option[aria-pressed="true"]:not(:disabled),
+.determiner-use-probe-options button[aria-pressed="true"]:not(:disabled),
+.determiner-use-transfer-probe-options button[aria-pressed="true"]:not(:disabled),
+.dependency-head-probe-options button[aria-pressed="true"]:not(:disabled){
+  background:var(--siyayo-selected-green,#56c877);
+  color:#07162a;
+  font-weight:700;
+  box-shadow:inset 0 1px 7px rgba(255,255,255,.16),inset 0 -3px 7px rgba(7,22,42,.11),0 0 10px rgba(86,200,119,.16);
+}
+.gear-option.active:not(:disabled):hover,
+.perspective-options button.active:not(:disabled):hover,
+.tense-tab.active:not(:disabled):hover,
+.form-tab.active:not(:disabled):hover,
+.subject-tab.active:not(:disabled):hover{
+  color:#07162a;
+  background:var(--siyayo-selected-green,#56c877);
+}
+.what-canonical-panel .what-canonical-options>.what-probe-response-row>.what-probe-option[data-assertive="true"][aria-pressed="true"]{
+  color:#07162a;
+  font-weight:700;
+  box-shadow:inset 0 1px 7px rgba(255,255,255,.12);
+}
+@media (prefers-reduced-motion:reduce){
+  .gear-option.active,.perspective-options button.active{transition:none}
+}
