@@ -197,10 +197,15 @@
     delete surface.dataset.assessmentSkill;delete surface.dataset.assessmentLanguage;
     delete surface.dataset.currentQword;delete surface.dataset.displayLanguage;
     var observations=freeDiagnosticRecords(language,learnerId);
-    var observationHtml=observations.length?'<small class="learner-trail-observation" data-observation-kind="free-diagnostic">'+escapeHtml(freeDiagnosticLabel(language))+'</small>':'';
+    var patitaApi=root.SIYAYOVerbExplorerPolyglotWordPathView;
+    var patitaRows=patitaApi&&typeof patitaApi.patitaRecords==='function'?patitaApi.patitaRecords(learnerId):[];
+    var latestPatita=patitaRows.filter(function(r){return r.language===language&&r.experienceId===text(root.SIYAYOVerbExplorerExperienceRuntime&&root.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId&&root.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId())&&r.questionWord.toUpperCase()===text(root.SIYAYOVerbExplorerExperienceRuntime&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord()).toUpperCase();}).slice(-1)[0];
+    var patitaLabel={en:'PATITA · contextual response observed · no assessment credit',es:'PATITA · respuesta contextual observada · sin crédito evaluativo',pt:'PATITA · resposta contextual observada · sem crédito avaliativo'}[language];
+    var patitaHtml=latestPatita?'<small class="learner-trail-observation" data-observation-kind="patita-contextual">'+escapeHtml(patitaLabel)+' · '+escapeHtml(latestPatita.answer)+'</small>':'';
+    var observationHtml=(observations.length?'<small class="learner-trail-observation" data-observation-kind="free-diagnostic">'+escapeHtml(freeDiagnosticLabel(language))+'</small>':'')+patitaHtml;
     function observationOnly(){
-      if(!observations.length)return false;
-      var latest=observations[observations.length-1];
+      if(!observations.length&&!latestPatita)return false;
+      var latest=observations[observations.length-1]||{questionWordLabel:text(root.SIYAYOVerbExplorerExperienceRuntime&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord())};
       surface.dataset.marker='EMPTY_DOT';surface.dataset.state='UNOBSERVED';surface.dataset.observationState='OBSERVED';surface.hidden=false;
       surface.innerHTML='<div class="learner-trail-copy"><span class="learner-trail-label">'+escapeHtml(copy.title)+'</span><strong>'+escapeHtml(latest.questionWordLabel)+'</strong>'+observationHtml+'</div>';
       return true;
