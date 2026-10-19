@@ -880,3 +880,27 @@ body{
 @media (prefers-reduced-motion:reduce){
   .gear-option.active,.perspective-options button.active{transition:none}
 }
+
+/* HOW TO SHOW: contextual best-fit and passing determiner answers alone earn green. */
+#choiceOptions .choice-option.active:not(.choice-context-assertive),
+#choiceOptions .choice-option.active:not(.choice-context-assertive) .choice-select{
+  background:#07162a;
+  color:#eaf1fb;
+}
+#choiceOptions .choice-option.active.choice-context-assertive,
+#choiceOptions .choice-option.active.choice-context-assertive .choice-select{
+  background:var(--siyayo-selected-green,#56c877);
+  color:#07162a;
+  font-weight:700;
+}
+.determiner-use-probe-options button[data-assertive="true"],
+.determiner-use-transfer-probe-options button[data-assertive="true"]{
+  background:var(--siyayo-selected-green,#56c877);
+  color:#07162a;
+  font-weight:700;
+}
+.determiner-use-probe-options button[data-assertive="false"],
+.determiner-use-transfer-probe-options button[data-assertive="false"]{
+  background:#07162a;
+  color:#eaf1fb;
+}
