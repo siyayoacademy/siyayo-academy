@@ -1,0 +1,13 @@
+# ISOLATED LOCAL-ONLY LAB. Never deploy. Keep port private.
+name = "siyayo-jaguar-v29-local-only"
+main = "src/worker.js"
+compatibility_date = "2026-10-19"
+[vars]
+V29_LOCAL_ONLY = "true"
+V29_ALLOWED_SCOPE = "WHICH/EN/S1"
+# Secret deliberately absent from config. Supply via local environment/.dev.vars (never commit).
+[[d1_databases]]
+binding = "ASSESSMENT_DB"
+database_name = "siyayo-jaguar-v29-local"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
