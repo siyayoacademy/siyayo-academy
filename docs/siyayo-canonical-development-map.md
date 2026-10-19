@@ -534,3 +534,24 @@ Examples: `I am happy / Yo estoy feliz / Eu estou feliz` (pronoun → conjugated
 5. **Deployment/document continuity:** verify HEAD commit, Cloudflare deploy identity and the precise preview URL separately. The `docs/` maps were confirmed present on Jaguar; use direct branch paths rather than assuming `main` contains the same docs. GitHub PR #3 currently has merge conflicts; treat merge audit as separate ELO.
 
 **Acceptance gate:** first compare prior homologated active-button design with current HEAD, identify exact cause; implement minimal presentation-only change on Jaguar; run EN/ES/PT portrait/landscape/desktop regressions including R1/R2/REVIEW, third-option pagination, speech, NICK and Learning Trail; request user visual homologation before any promotion.
+
+
+## JAGUAR — CONSISTENCY REGRESSION 2026-10-19
+
+**Scope:** audit only on Jaguar preview; isolated test NICK `JAGUAR-CONSISTENCIA-20261019`. No changes to main, learner contract, or production. Browser audit run: https://agent.tinyfish.ai/runs/f117a0af-e42f-41f6-b074-16d2f0e5aed1 .
+
+**Source control:** `jaguar/verb-explorer-resume-live-wire` diverges from `main` (GitHub comparison on 2026-10-19: ahead 1508, behind 1); this does not prove which commit Cloudflare deployed. Preview did not expose a verifiable deployment SHA.
+
+**Ten-point gate (PASS / PARTIAL / OPEN):**
+1. Exact deployed version: **OPEN** — no verified build SHA or deployment identifier exposed; compare served assets with immutable commit/build manifest.
+2. Refresh and recover same NICK: **PARTIAL** — reload performed, login input reset; re-entering NICK and comparing retained state was not completed.
+3. Three Green Passes without new credit: **OPEN** — no three-language 3/3 contract regression or before/after evidence diff performed; do not claim credit absence based on visual UI alone.
+4. EN → PT → ES → EN: **PASS for navigation/display only** — language controls responded; no complete assessment-scope integrity diff.
+5. S1 → S2 → S1 → S2: **PARTIAL** — next/previous controls operated, but exact four-step sequence not established by captured report.
+6. PATITA preserves response/language/origin: **PARTIAL (source implementation)** — `js/verb-explorer-polyglot-word-path-view.js` has `observeChoice`, `patitaRecords`, browser localStorage key `siyayo.patita.contextual-choices.v1`, fields `learnerId/language/questionWord/experienceId/candidateId/answer/observedAt`, max 500 global rows. Post-refresh retrieval and per-action write provenance not verified in browser. LocalStorage is browser-local, not cross-device.
+7. Word Path accepted contract read: **PARTIAL** — visible table and accepted evidence; exact before/after `getRetainedEvidence` and scope matching not audited in live browser.
+8. HOW TO SHOW: **PARTIAL** — Dependency Focus/Head Probe, Learning Trail, Word Path displayed; full state matrix across QWs, languages, contract/exploration, portrait/landscape not completed.
+9. Copy, translation, dates, IDs: **PARTIAL** — no obvious visible language break reported; no exhaustive proofreading or corrections applied. Audit flagged no deployment SHA visible.
+10. Map registration: **RECORDED** — this section documents findings and unresolved gates, not a Green Pass or homologation.
+
+**Next single ELO:** establish immutable preview build identity and replay a fresh-NICK deterministic test across EN/ES/PT, exact S1↔S2 path, accepted-evidence snapshots, PATITA observed-event snapshots before/after refresh, and HOW TO SHOW. Compare event count and scope without awarding exploratory credits. Preserve user records; do not merge main or promote production. Browser automation did not access network console or inspect localStorage directly; those remain open.
