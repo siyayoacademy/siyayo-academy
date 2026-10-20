@@ -1,0 +1,26 @@
+# CI-only mock observation panel, not public Explorer integration or deployment.
+name: JAGUAR V30.3.85E observation UI boundary
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-observation-ui.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  observation-view:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Observation-only UI and switch/race safety
+        run: node --test test/observation-ui/observation-panel.test.mjs
