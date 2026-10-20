@@ -1,0 +1,47 @@
+# Read-only tests. Explorer is pinned and never modified. NO DEPLOY.
+name: JAGUAR V30.3.85D HOW TO SHOW
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-how-to-show.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  restore-and-show:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout experimental lab
+        uses: actions/checkout@v4
+      - name: Checkout pinned Explorer in a separate read-only worktree
+        uses: actions/checkout@v4
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .snapshot-explorer-show
+          sparse-checkout: |
+            js
+            scripts
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Safe read-only restoration tests
+        working-directory: labs/jaguar-v30-3
+        run: node --test test/storage-contract/restore-observer.test.mjs
+      - name: Real Explorer Word Path 4 QWs x 3 languages
+        working-directory: .snapshot-explorer-show
+        run: node scripts/test-elo7d1-polyglot-word-path-view.js
+      - name: Real Explorer accepted witness details EN ES PT
+        working-directory: .snapshot-explorer-show
+        run: node scripts/test-elo7d2-word-path-evidence-detail.js
+      - name: Real Explorer Learning Trail marker presentation
+        working-directory: .snapshot-explorer-show
+        run: node scripts/test-verb-explorer-learner-trail-surface.js
+      - name: Real Explorer QW and assessment/display language continuity
+        working-directory: .snapshot-explorer-show
+        run: node scripts/test-learner-trail-assessment-scope-notice.js
