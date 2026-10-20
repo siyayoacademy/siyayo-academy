@@ -1,0 +1,26 @@
+# CI ONLY. Read-only browser transport lifecycle; no remote Cloudflare deployment.
+name: JAGUAR V30.3.87C browser restoration
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-browser-restoration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Same-origin transport, logout, QW and language switch — 23 tests
+        run: node --test test/browser87/explorer-observation-client.test.mjs
