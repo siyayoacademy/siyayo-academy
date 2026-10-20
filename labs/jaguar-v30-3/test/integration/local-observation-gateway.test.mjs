@@ -189,7 +189,10 @@ test('read failure in one authorized QW does not create partial snapshot',async 
  const {gateway,tamper}=lab(t);
  await gateway.record(request('WHICH.en.assessment',subs(1)));
  await gateway.record(request('WHAT.es.assessment',subs(2)));
- tamper("UPDATE v30_85c_occurrences SET status='confirmed' WHERE question_word='WHAT'");
+ // The database MUST reject forged confirmation before the observer runs.
+ assert.throws(()=>tamper("UPDATE v30_85c_occurrences SET status='confirmed' WHERE question_word='WHAT'"),/CHECK constraint failed/);
+ // Then mutate a hash field that has valid SQL shape but violates content integrity.
+ tamper("UPDATE v30_85c_occurrences SET payload_sha256=? WHERE question_word='WHAT'",'0'.repeat(64));
  assert.equal((await gateway.read(view())).reason,'history_unavailable');
 });
 test('no SQL mutation occurs during repeated restoration and display',async t=>{
