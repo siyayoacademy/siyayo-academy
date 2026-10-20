@@ -1,0 +1,40 @@
+# Read-only Explorer contract audit; pinned to an exact historical Explorer commit.
+# NO DEPLOY. NO authentication. NO modifications to Explorer or main.
+name: JAGUAR V30.3.85 Explorer seam audit
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-explorer-seams.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  explorer-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout isolated laboratory
+        uses: actions/checkout@v4
+      - name: Checkout pinned Explorer source (read-only)
+        uses: actions/checkout@v4
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .snapshot-explorer
+          sparse-checkout: |
+            js/adaptive-assessment-scope.js
+            js/verb-explorer-learner-identity-source.js
+            js/verb-explorer-learner-identity-provider.js
+            js/verb-explorer-learner-event.js
+            js/question-word-assessment-contract.js
+          sparse-checkout-cone-mode: false
+      - name: Configure Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate interfaces and identify migration blockers
+        working-directory: labs/jaguar-v30-3
+        run: node --test test/explorer-seam.test.mjs
