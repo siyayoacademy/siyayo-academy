@@ -26,6 +26,7 @@ jobs:
           sparse-checkout: |
             js
             scripts
+            data/learning
           sparse-checkout-cone-mode: true
       - uses: actions/setup-node@v4
         with:
