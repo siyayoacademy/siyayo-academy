@@ -1,0 +1,30 @@
+# Isolated Cloudflare workerd + D1 LOCAL checks. NO DEPLOY, NO REMOTE D1.
+name: JAGUAR V30.3 Cloudflare local D1
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-cloudflare-local.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cloudflare-local:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Original and recovered regression — 42 tests
+        run: node --test test/worker.test.mjs test/identity-mock/identity.test.mjs test/bridge.test.mjs test/worker-v30-integration.test.mjs
+      - name: SQLite SQL-constraint regression — 10 tests
+        run: python3 test/d1-schema.sqlite.test.py -v
+      - name: Cloudflare workerd + Wrangler D1 local smoke — 10 HTTP requests
+        run: bash scripts/cloudflare-local-smoke.sh
