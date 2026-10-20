@@ -21,7 +21,7 @@ export function examinePreStaging87D(manifest,files){
   seen.add(r.id);
   if(typeof r.description!=='string'||r.description.length<10)add('missing_gate_description:'+r.id);
   if(r.id.startsWith('LAB-')){
-   if(r.kind!=='local'||r.status!=='lab_verified'||!/^\.github\/workflows\/jaguar-v30-3-[a-z-]+\.yml$/.test(r.evidence||''))
+   if(r.kind!=='local'||r.status!=='lab_verified'||!/^\.github\/workflows\/jaguar-v30-3-[a-z0-9-]+\.yml$/.test(r.evidence||''))
     add('invalid_lab_evidence:'+r.id);
   }else{
    if(r.kind!=='external'||r.status!=='blocked'||
@@ -44,7 +44,7 @@ export function examinePreStaging87D(manifest,files){
      !/logout\(\)/.test(browser))add('browser_boundary_drift');
   if(Object.keys(workflows).length<10)add('missing_workflows');
   for(const [name,body] of Object.entries(workflows)){
-   if(!/^jaguar-v30-3-[a-z-]+\.yml$/.test(name)||
+   if(!/^jaguar-v30-3-[a-z0-9-]+\.yml$/.test(name)||
       !/jaguar\/v30-3-recovery-archive/.test(body)||
       !/permissions:\s*\n\s*contents:\s*read/.test(body)||forbidden.test(body))
     add('unsafe_workflow:'+name);
