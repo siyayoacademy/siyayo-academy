@@ -26,5 +26,7 @@ jobs:
         run: node --test test/worker.test.mjs test/identity-mock/identity.test.mjs test/bridge.test.mjs test/worker-v30-integration.test.mjs
       - name: SQLite SQL-constraint regression — 10 tests
         run: python3 test/d1-schema.sqlite.test.py -v
+      - name: Verify experimental isolation fence (15 tests)
+        run: node scripts/assert-isolation.mjs && node --test test/assert-isolation.test.mjs
       - name: Cloudflare workerd + Wrangler D1 local smoke — 10 HTTP requests
         run: bash scripts/cloudflare-local-smoke.sh
