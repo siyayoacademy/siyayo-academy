@@ -1,0 +1,35 @@
+# PRE-STAGING CONSISTENCY PASS; RELEASE IS BLOCKED. CI ONLY, NO DEPLOY.
+name: JAGUAR V30.3.87D pre-staging STOP gate
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-prestaging-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Confirm blocking gate is internally consistent
+        run: node scripts/prestaging-gate.mjs
+      - name: Prove release is refused, even with local tests green
+        run: |
+          set +e
+          node scripts/prestaging-gate.mjs --require-ready
+          result=$?
+          set -e
+          test "$result" -eq 2
+      - name: Adversarial security-gate tests
+        run: node --test test/prestaging-gate.test.mjs
