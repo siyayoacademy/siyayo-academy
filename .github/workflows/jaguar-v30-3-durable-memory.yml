@@ -1,0 +1,28 @@
+# V30.3.85C: CI-only durable key/SQLite tests. NEVER DEPLOY. NO REMOTE D1.
+name: JAGUAR V30.3.85C durable Experience memory
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-durable-memory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  durable-memory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Mock principal and durable idempotent occurrence tests
+        run: node --test test/storage-contract.test.mjs
+      - name: SQLite durable memory and additive migrations
+        run: python3 test/durable-storage.sqlite.test.py -v
