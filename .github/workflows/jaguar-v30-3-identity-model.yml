@@ -1,0 +1,27 @@
+# JAGUAR V30.3.85B — TEST-ONLY mock identity contract.
+# Does not authenticate users, deploy Workers or touch production.
+name: JAGUAR V30.3.85B trusted identity model
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-identity-model.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  identity-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Server-principal vs NICK mock contract tests
+        run: node --test test/identity-contract/server-identity-contract.test.mjs
