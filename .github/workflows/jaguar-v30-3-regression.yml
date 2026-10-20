@@ -1,0 +1,31 @@
+# CI-only mock recovery checks; NEVER DEPLOY
+name: JAGUAR V30.3 isolated regression
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mock-regression:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate reconstructed Worker syntax
+        run: node --check src/worker-v30-integration.mjs
+      - name: Original 34 mock tests
+        run: node --test test/worker.test.mjs test/identity-mock/identity.test.mjs test/bridge.test.mjs
+      - name: HTTP safety reconstruction tests (8)
+        run: node --test test/worker-v30-integration.test.mjs
