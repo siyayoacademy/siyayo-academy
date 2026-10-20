@@ -1,0 +1,26 @@
+# V30.3.86 — filesystem SQLite + staged mock adapter + UI smoke, no deploy.
+name: JAGUAR V30.3.86 SQLite end-to-end
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-e2e-local.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  local-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Real file SQLite V30.3 end-to-end — 18 tests
+        run: node --test test/integration/local-observation-gateway.test.mjs
