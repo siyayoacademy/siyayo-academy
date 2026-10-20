@@ -1,0 +1,26 @@
+# 87A Access cryptography contract only, never deploy or use real identity.
+name: JAGUAR V30.3.87A Access JWT cryptography
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-access-jwt.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  signed-access:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: RS256 JWT verification and revocation safety (22 cases)
+        run: node --test test/http87/access-verifier.test.mjs
