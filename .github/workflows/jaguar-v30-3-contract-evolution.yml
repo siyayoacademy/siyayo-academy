@@ -1,0 +1,27 @@
+# V30.3.88 governance regression: isolated architecture registry, no deploy.
+name: JAGUAR V30.3.88 contract evolution registry
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/governance/**'
+      - 'labs/jaguar-v30-3/test/contract-evolution-registry.test.mjs'
+      - '.github/workflows/jaguar-v30-3-contract-evolution.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evolution-register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source provenance and authority-preserving registry
+        run: node --test test/contract-evolution-registry.test.mjs
