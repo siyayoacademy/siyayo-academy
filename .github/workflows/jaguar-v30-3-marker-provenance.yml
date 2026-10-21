@@ -1,0 +1,50 @@
+# V30.3.89J: contrast canonical marker contract with isolated observations.
+# No Cloudflare credentials, user data, Wrangler or deployment.
+name: JAGUAR V30.3.89J marker provenance tests
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-marker-provenance.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  marker-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Checkout pinned official Explorer
+        uses: actions/checkout@v4
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89j
+          sparse-checkout: |
+            js
+            scripts
+            data/learning
+          sparse-checkout-cone-mode: true
+      - name: Lab vs canonical marker authorities
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89J_PINNED_ROOT: ../../.pinned-explorer-89j
+        run: node --test test/marker-provenance-89j.test.mjs
+      - name: Canonical large marker baseline
+        working-directory: .pinned-explorer-89j
+        run: node scripts/test-adaptive-learner-progress-marker.js
+      - name: Canonical small contract markers 0/3 through 3/3
+        working-directory: .pinned-explorer-89j
+        run: node scripts/test-adaptive-pass-contract-progress-view.js
+      - name: Existing canonical Trail visual surface
+        working-directory: .pinned-explorer-89j
+        run: node scripts/test-verb-explorer-learner-trail-surface.js
+      - name: Canonical Word Path witness ownership
+        working-directory: .pinned-explorer-89j
+        run: node scripts/test-elo7d2-word-path-evidence-detail.js
