@@ -1,0 +1,43 @@
+# Read-only 89N.1..89N.4. Uses pinned official source but browser-only disposable synthetic DOM.
+name: JAGUAR V30.3.89N four-QW visual audit
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-four-qw-visual-89n.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  four-qw-visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Checkout official Explorer immutable pin
+        uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89n
+      - name: Launch localhost Explorer, no external APIs or credentials
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 --directory .pinned-explorer-89n > "$RUNNER_TEMP/89n-server.log" 2>&1 &
+          sleep 3
+          curl --fail --silent --show-error -o /dev/null http://127.0.0.1:8879/verb-explorer.html
+      - name: Strict 24 cases — QW text, open cards, NEXT, swipe and SIMULATION
+        run: python labs/jaguar-v30-3/scripts/audit_four_qws_89n.py
+      - name: Save 24 images, report, or fail-closed diagnostic captures
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: siyayo-89n-four-elos-24-screens
+          path: visual-audit-89n/
+          if-no-files-found: warn
+          retention-days: 14
