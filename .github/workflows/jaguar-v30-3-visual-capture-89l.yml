@@ -1,0 +1,50 @@
+# Offline visual capture of pinned Explorer. No Cloudflare credentials or deploy.
+name: JAGUAR V30.3.89L desktop portrait visual captures
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-visual-capture-89l.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture-pinned-explorer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Read-only checkout of fixed canonical Explorer
+        uses: actions/checkout@v4
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89l
+      - name: Install browser controller (existing Chrome runner binary)
+        run: |
+          python -m pip install playwright==1.56.0
+          which google-chrome || which google-chrome-stable
+      - name: Launch local pinned static Explorer
+        run: |
+          python -m http.server 8879 --bind 127.0.0.1 --directory .pinned-explorer-89l > "$RUNNER_TEMP/89l-server.log" 2>&1 &
+          echo $! > "$RUNNER_TEMP/89l-server.pid"
+          sleep 3
+          curl --fail --silent --show-error -o /dev/null "http://127.0.0.1:8879/verb-explorer.html?mode=experience"
+      - name: Render 6 desktop/portrait EN ES PT views
+        env:
+          SIYAYO_VISUAL_OUT: visual-audit-89l
+        run: python labs/jaguar-v30-3/scripts/visual_capture_89l.py
+      - name: Attach all screenshots and diagnostics, even if test fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: siyayo-89l-visual-6-cases
+          path: |
+            visual-audit-89l/
+          if-no-files-found: warn
+          retention-days: 14
