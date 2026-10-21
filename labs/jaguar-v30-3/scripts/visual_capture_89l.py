@@ -35,11 +35,10 @@ with sync_playwright() as playwright:
                     page.locator('[data-mode="experience"]').click(timeout=5000)
                 page.wait_for_timeout(700)
                 record["checks"]["experience_visible"] = page.locator("#experienceView").is_visible()
-                toolbar = page.locator('[data-preview="portrait" if-does-not-exist]')
-                if mode == "portrait" and page.locator('[data-preview="portrait"]').count():
-                    page.locator('[data-preview="portrait"]').click(timeout=5000)
-                elif mode == "desktop" and page.locator('[data-preview="auto"]').count():
-                    page.locator('[data-preview="auto"]').click(timeout=5000)
+                if mode == "portrait" and page.locator('button[data-preview="portrait"]').count():
+                    page.locator('button[data-preview="portrait"]').click(timeout=5000)
+                elif mode == "desktop" and page.locator('button[data-preview="auto"]').count():
+                    page.locator('button[data-preview="auto"]').click(timeout=5000)
 
                 if page.locator("#learnerIdentityInput").is_visible():
                     page.locator("#learnerIdentityInput").fill("VISUAL-LAB-89L")
@@ -58,7 +57,7 @@ with sync_playwright() as playwright:
                 record["checks"]["trail_module_exists"] = module.count() == 1
                 if module.count():
                     if not module.evaluate("(e)=>e.open"):
-                        module.locator("summary").click(timeout=7000)
+                        module.locator(":scope > summary").click(timeout=7000)
                     page.wait_for_timeout(750)
                     record["checks"]["trail_module_expanded"] = module.evaluate("(e)=>e.open")
                 surface = page.locator("#learnerTrailSurface")
@@ -119,7 +118,11 @@ for item in CASES:
     print(item["mode"], item["language"], "checks", item["checks"],
           "overflow", item.get("page",{}).get("unexpectedHorizontalOverflow"),
           "error", item.get("capture_error",""))
-total_ok = sum(1 for x in CASES if x.get("screenshots"))
-print(f"SCREENSHOTS {total_ok}/6; failed/cannot-render={6-total_ok}")
-if total_ok < 6:
+required=["experience_visible","nick_visible_in_compact","language_selected",
+          "trail_module_exists","trail_module_expanded","trail_surface_visible",
+          "locale_heading_in_trail","wordpath_table_exists"]
+complete=sum(1 for x in CASES if all(x.get("checks",{}).get(key) is True for key in required)
+             and len(x.get("screenshots",[]))==2 and "capture_error" not in x)
+print(f"FULL AUDIT {complete}/6; incomplete={6-complete}")
+if complete != 6:
     raise SystemExit(1)
