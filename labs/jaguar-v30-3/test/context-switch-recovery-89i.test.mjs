@@ -237,7 +237,8 @@ test('browser can switch language/QW/Experience without mutating D1 or using JWT
   assert.equal(client.state().language,l);
   assert.equal(await client.refresh(),true);
   assert.equal(client.state().outcome,'shown');
-  assert.doesNotMatch(element.textContent,/1\/3|2\/3|3\/3|GREEN PASS/i);
+  assert.doesNotMatch(element.textContent,/1\/3|2\/3|3\/3|Green Pass awarded/i);
+  assert.match(element.textContent,/not accepted evidence or Green Pass|no son evidencias aceptadas ni Green Pass|não são evidências aceitas nem Green Pass/i);
   assert.ok(!element.textContent.includes('opaque-a'));
  }
  assert.equal(counters.sqlWrites,writesBefore);
