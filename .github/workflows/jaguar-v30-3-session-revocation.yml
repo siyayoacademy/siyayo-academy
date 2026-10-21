@@ -1,0 +1,25 @@
+# V30.3.88C mock per-session lifecycle. CI ONLY.
+name: JAGUAR V30.3.88C session revocation study
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-session-revocation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  session-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/http88/session-gate.test.mjs
