@@ -1,0 +1,28 @@
+# V30.3.89I offline-only regression. No Cloudflare credentials, Wrangler or deployment.
+name: JAGUAR V30.3.89I context switch memory
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-context-switch-memory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: EN ES PT / QW / Experience / NICK scoped recovery
+        run: node --test test/context-switch-recovery-89i.test.mjs
+      - name: Existing offline freeze and no-financial-change contract
+        run: node --test test/offline-continuity-89h.test.mjs
