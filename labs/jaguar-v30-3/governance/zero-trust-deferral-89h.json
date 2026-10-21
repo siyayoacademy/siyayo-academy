@@ -1,0 +1,118 @@
+{
+  "id": "SIYAYO-JAGUAR-V30.3.89H",
+  "schemaVersion": "1.0.0",
+  "date": "2026-10-21",
+  "stage": "LOCAL_TESTS_ONLY",
+  "decision": "DEFER_ZERO_TRUST_NO_PURCHASE",
+  "decisionSource": "User explicitly chose to leave Zero Trust pending and continue tests without contracting or payment.",
+  "checkoutObserved": {
+    "planLabel": "Zero Trust Free",
+    "headlineUSDPerMonth": 0,
+    "paymentMethodRequested": true,
+    "futureUsageChargesWarning": true,
+    "paymentEnrollmentAuthorized": false,
+    "checkoutCompletionConfirmed": false,
+    "accessOrganizationCreated": false,
+    "accessAppPolicyVerified": false
+  },
+  "securityFreeze": {
+    "allowPayments": false,
+    "allowFreePlanActivation": false,
+    "allowAccessSetup": false,
+    "allowCloudflareMutations": false,
+    "allowRemoteWorkerDeploy": false,
+    "allowRemoteDatabaseCreation": false,
+    "allowRemoteStagingUse": false,
+    "allowProductionEdits": false,
+    "allowPublicPreviewAsAuthentication": false,
+    "allowMockPrincipalAsRealIdentity": false,
+    "allowObservedToMintAcceptedProgress": false,
+    "requiresFutureExplicitApproval": true
+  },
+  "labScope": {
+    "branch": "jaguar/v30-3-recovery-archive",
+    "headBeforeDecision": "ed0508ea697fecc819a5ec6bbef48d13cae1ceb2",
+    "officialExplorerPin": "c7e83709cacf8479847df0f3cee4ed8a563aaae6",
+    "testedEnvironment": "GITHUB_CI_SYNTHETIC_NODE_SQLITE",
+    "syntheticLearnerDataOnly": true,
+    "authorizedTests": [
+      "filesystem-sqlite-restart",
+      "synthetic-subject-isolation",
+      "NICK-independent-session-model",
+      "QW-x-language-observation",
+      "exploration-vs-pending",
+      "no-Green-Pass-from-observed",
+      "test-only-JWT-and-session-expiry"
+    ],
+    "visibleQuestionWords": [
+      "WHICH",
+      "WHAT",
+      "WHERE",
+      "WHY"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "acceptedEvidenceSource": "canonical evaluator and authorized Pass Contract only, NOT this experimental observer"
+  },
+  "externalControls": [
+    {
+      "id": "EXT-01",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-02",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-03",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-04",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-05",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-06",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-07",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-08",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-09",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-10",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-11",
+      "status": "blocked"
+    },
+    {
+      "id": "EXT-12",
+      "status": "blocked"
+    }
+  ],
+  "continuity": {
+    "predecessor": "labs/jaguar-v30-3/governance/cloudflare-staging-architecture-89d.json",
+    "officialPages": "siyayo-academy",
+    "preservedVisualWorker": "shiny-scene-4b76",
+    "currentAction": "continue isolated tests; do not create Cloudflare resources",
+    "prerequisiteForRemote": "separate future financial decision and explicit scoped deployment approval; security gates remain blocked",
+    "futurePedagogy": "JAGUAR 7D.3.10 DISCOVER WHY parked as separate conceptual proposal"
+  }
+}

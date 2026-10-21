@@ -1,0 +1,30 @@
+# 89H: selected local-only tests following user's decision to defer billing.
+name: JAGUAR V30.3.89H offline continuity
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-offline-continuity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Pause contract and four QW trilingual observations
+        run: node --test test/offline-continuity-89h.test.mjs
+      - name: File SQLite persistence and scoped observer
+        run: node --test test/integration/local-observation-gateway.test.mjs
+      - name: Synthetic JWT-to-SQLite read-only recovery
+        run: node --test test/http88/cross-layer-recovery.test.mjs
