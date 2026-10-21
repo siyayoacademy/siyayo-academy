@@ -6,7 +6,9 @@ import {observationPreview85D} from './storage-contract/restore-observer.mjs';
 import {read89D,inspect89D} from '../scripts/check-staging-architecture-89d.mjs';
 const pause=JSON.parse(readFileSync(new URL('../governance/zero-trust-deferral-89h.json',import.meta.url)));
 const old=read89D();
-const c=(w,l,purpose,status)=>({ok:true,kind:'OBSERVATIONS_ONLY',questionWord:w,skillId:w.toLowerCase()+'.lab',
+const CANONICAL_SKILL=Object.freeze({WHICH:'which.use.determiner',WHAT:'what.use.object-question',
+ WHERE:'where.use.location-question',WHY:'why.use.contextual-reason'});
+const c=(w,l,purpose,status)=>({ok:true,kind:'OBSERVATIONS_ONLY',questionWord:w,skillId:CANONICAL_SKILL[w]??'not-authored',
  language:l,originExperienceId:'shopping-for-dinner',events:[{
   questionWord:w,language:l,originExperienceId:'shopping-for-dinner',purpose,status
  }]});
