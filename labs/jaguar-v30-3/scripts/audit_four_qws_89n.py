@@ -195,6 +195,12 @@ with sync_playwright() as engine:
                     if ident.is_visible():
                         ident.fill('LAB-ONLY-89N')
                         page.locator('#learnerIdentityConfirm').click(timeout=5000)
+                    page.wait_for_function("""() => [
+                        'AdaptivePassContractProgressView','GreenPassProfile',
+                        'AdaptiveLearnerProgressMarker','SIYAYOVerbExplorerLearnerTrailSurface',
+                        'SIYAYOVerbExplorerPolyglotWordPathView','AdaptiveLearnerTrailPosition',
+                        'AdaptiveLearnerTrailLabel'
+                    ].every(name=>Boolean(window[name]))""",timeout=15000)
                     # Fresh local page per skill/locale avoids progress crossing test scenarios.
                     data=page.evaluate(SIM,{
                         "word":word,"language":language,"notice":copy["notice"],
