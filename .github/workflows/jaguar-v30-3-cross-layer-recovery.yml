@@ -1,0 +1,41 @@
+# V30.3.88E: isolated cross-layer security/read-only visual tests. NO DEPLOY.
+name: JAGUAR V30.3.88E cross-layer recovery
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-cross-layer-recovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  e2e-lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Full signed session HTTP SQLite observation-only circuit
+        working-directory: labs/jaguar-v30-3
+        run: node --test test/http88/cross-layer-recovery.test.mjs
+      - name: Original Explorer source pinned read-only for visual contract
+        uses: actions/checkout@v4
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-view
+          sparse-checkout: |
+            js
+            scripts
+            data/learning
+          sparse-checkout-cone-mode: true
+      - name: Word Path 4 QWs x 3 languages
+        working-directory: .pinned-explorer-view
+        run: node scripts/test-elo7d1-polyglot-word-path-view.js
+      - name: Learning Trail accepted-witness markers
+        working-directory: .pinned-explorer-view
+        run: node scripts/test-verb-explorer-learner-trail-surface.js
