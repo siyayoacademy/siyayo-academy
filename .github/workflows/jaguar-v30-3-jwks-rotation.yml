@@ -1,0 +1,25 @@
+# V30.3.88B offline trust-store simulation, no real Access or deploy.
+name: JAGUAR V30.3.88B JWKS rotation study
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-jwks-rotation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rotation-study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/http88/rotating-jwks.test.mjs

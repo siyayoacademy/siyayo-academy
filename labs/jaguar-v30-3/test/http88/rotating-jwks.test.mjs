@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {generateKeyPairSync} from 'node:crypto';
+import {createRotatingKeyset88} from './rotating-jwks.mjs';
+const issuer='https://siyayo-test.cloudflareaccess.com';
+const rsa=()=>generateKeyPairSync('rsa',{modulusLength:2048}).publicKey.export({format:'jwk'});
+const A={...rsa(),kid:'A',alg:'RS256',use:'sig'};
+const B={...rsa(),kid:'B',alg:'RS256',use:'sig'};
+let time=1000;
+const source=(keys=[A],opts={})=>({issuer,ttl:60,keys,...opts});
+const build=(fetchTrustedKeys,opts={})=>createRotatingKeyset88({
+ expectedIssuer:issuer,now:()=>time,fetchTrustedKeys,...opts
+});
+test('trusted initial keyset accepted',async()=>{time=1000;const s=await build(async()=>source()).current();assert.equal(s.ok,true);assert.equal(s.keys[0].kid,'A');});
+test('cache serves trusted keys before expiry without second fetch',async()=>{time=1000;let count=0;const c=build(async()=>{count++;return source()});await c.current();time=1059;await c.current();assert.equal(count,1);});
+test('rotation at expiry replaces removed old key with new kid',async()=>{time=1000;let keys=[A];const c=build(async()=>source(keys));await c.current();keys=[B];time=1060;const s=await c.current();assert.deepEqual(s.keys.map(x=>x.kid),['B']);});
+test('overlap accepts both keys during rotation window',async()=>{time=1000;const c=build(async()=>source([A,B]));assert.deepEqual((await c.current()).keys.map(x=>x.kid),['A','B']);});
+test('issuer mismatch is rejected',async()=>{time=1000;const c=build(async()=>source([A],{issuer:'https://other.cloudflareaccess.com'}));assert.equal((await c.current()).ok,false);});
+test('missing or duplicate key id rejected',async()=>{time=1000;const c=build(async()=>source([A,A]));assert.equal((await c.current()).ok,false);});
+test('private JWK components are refused',async()=>{time=1000;const c=build(async()=>source([{...A,d:'private'}]));assert.equal((await c.current()).ok,false);});
+test('non RS256 key rejected',async()=>{time=1000;const c=build(async()=>source([{...A,alg:'HS256'}]));assert.equal((await c.current()).ok,false);});
+test('too-short modulus rejected',async()=>{time=1000;const c=build(async()=>source([{...A,n:'weak'}]));assert.equal((await c.current()).ok,false);});
+test('key count bound enforced',async()=>{time=1000;const keys=Array.from({length:5},(_,i)=>({...A,kid:'id'+i}));const c=build(async()=>source(keys));assert.equal((await c.current()).ok,false);});
+test('TTL outside trusted bound rejected',async()=>{time=1000;const c=build(async()=>source([A],{ttl:9999}));assert.equal((await c.current()).ok,false);});
+test('expired JWKS outage fails closed; stale key not returned',async()=>{time=1000;let fail=false;const c=build(async()=>{if(fail)throw Error('offline');return source()});await c.current();time=1060;fail=true;const r=await c.current();assert.equal(r.ok,false);assert.equal(r.keys,undefined);});
+test('no cache on initial outage',async()=>{time=1000;const c=build(async()=>{throw Error('offline')});assert.equal((await c.current()).reason,'jwks_unavailable');});
+test('cache invalidate triggers trusted refresh',async()=>{time=1000;let count=0;const c=build(async()=>{count++;return source()});await c.current();c.invalidate();await c.current();assert.equal(count,2);});
+test('invalid configured issuer throws',()=>assert.throws(()=>build(async()=>source(),{expectedIssuer:'http://localhost'}),TypeError));
+test('oversized configured max TTL throws',()=>assert.throws(()=>build(async()=>source(),{maxTtl:9999}),TypeError));
+test('no fetch dependency throws',()=>assert.throws(()=>createRotatingKeyset88({expectedIssuer:issuer,now:()=>1000}),TypeError));
+test('cache stores immutable public fields only',async()=>{time=1000;const s=await build(async()=>source()).current();assert.equal(Object.isFrozen(s.keys[0]),true);assert.deepEqual(Object.keys(s.keys[0]).sort(),['alg','e','kid','kty','n','use']);});
