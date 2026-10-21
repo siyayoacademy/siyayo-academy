@@ -1,0 +1,28 @@
+# CI-only read-only Cloudflare staging discovery preflight. NO deploy or credentials.
+name: JAGUAR V30.3.89A Cloudflare proof preflight
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-cloudflare-proof-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-blocked-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify no remote deployment allowed; account still unverified
+        run: node scripts/cloudflare-proof-preflight.mjs
+      - name: Sixteen fail-closed contract tests
+        run: node --test test/cloudflare-proof-preflight.test.mjs
