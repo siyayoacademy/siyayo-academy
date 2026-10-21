@@ -1,0 +1,35 @@
+# CI-only guard. No Cloudflare credentials or remote operations.
+name: JAGUAR V30.3.89D staging design audit
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-staging-design.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-design:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: labs/jaguar-v30-3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Read-only design consistency
+        run: node scripts/check-staging-architecture-89d.mjs
+      - name: Prove live deployment still refused
+        run: |
+          set +e
+          node scripts/check-staging-architecture-89d.mjs --require-live
+          status=$?
+          set -e
+          test "$status" -eq 2
+      - name: Fail-closed architecture regression
+        run: node --test test/staging-architecture-89d.test.mjs
