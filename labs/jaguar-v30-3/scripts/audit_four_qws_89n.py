@@ -23,8 +23,8 @@ SIM=r"""async ({word,language,notice,swipe,portrait})=>{
  const definition=await (await fetch('/data/learning/skills/'+word+'.json',{cache:'no-store'})).json();
  if(definition.id!==skill||definition.passContract?.requires?.length!==3)
   throw Error('Missing canonical definition and 3 requirements: '+word);
- const person={id:w.SIYAYOVerbExplorerLearnerIdentitySource?.getId?.()};
- if(!person.id)throw Error('No synthetic learner identity');
+ const person={id:'LAB-ONLY-89N-'+word+'-'+language};
+ // Fixture-only identity, never an authenticated learner or Cloudflare principal.
  const scope={learnerId:person.id,skill,language,originExperienceId:origin,
   key:JSON.stringify([person.id,skill,language,origin])};
  const requests=definition.passContract.requires;
