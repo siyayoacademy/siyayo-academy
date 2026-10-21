@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Read-only checkout of fixed canonical Explorer
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: siyayoacademy/siyayo-academy
           ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
@@ -41,7 +41,7 @@ jobs:
         run: python labs/jaguar-v30-3/scripts/visual_capture_89l.py
       - name: Attach all screenshots and diagnostics, even if test fails
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: siyayo-89l-visual-6-cases
           path: |
