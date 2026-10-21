@@ -1,0 +1,44 @@
+# 89K: static/VM trilingual visual contract and responsive CSS check, no deploy.
+name: JAGUAR V30.3.89K trilingual visual study
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-trilingual-visual-study.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trilingual-visual-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Checkout pinned official Explorer (read-only)
+        uses: actions/checkout@v4
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89k
+          sparse-checkout: |
+            js
+            css
+            scripts
+            data/learning
+          sparse-checkout-cone-mode: true
+      - name: Word Path EN ES PT semantics and responsive CSS
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89K_PINNED_ROOT: ../../.pinned-explorer-89k
+        run: node --test test/trilingual-visual-contract-89k.test.mjs
+      - name: Canonical Word Path EN ES PT baseline
+        working-directory: .pinned-explorer-89k
+        run: node scripts/test-elo7d1-polyglot-word-path-view.js
+      - name: Canonical Trail EN ES PT baseline
+        working-directory: .pinned-explorer-89k
+        run: node scripts/test-verb-explorer-learner-trail-surface.js
