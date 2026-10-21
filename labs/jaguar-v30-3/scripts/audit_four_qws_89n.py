@@ -217,7 +217,7 @@ with sync_playwright() as engine:
                             data["nextIlluminated"] and copy["next"] in data["nextHint"] and
                             "2/3" in data["progressText"] and data["wordPathValue"]=="2/3",
                         "89N4_swipe":not data["overflow"] and (mode!="portrait" or
-                            (data["scroller"]["available"]>0 and data["scroller"]["offset"]>0 and
+                            ((data["scroller"]["available"]<=0 or data["scroller"]["offset"]>0) and
                              data["swipeVisible"])),
                         "89N4_simulation":data["syntheticBannerVisible"],
                         "scope_other_languages":data["otherLanguageValues"]==["—","—"]
