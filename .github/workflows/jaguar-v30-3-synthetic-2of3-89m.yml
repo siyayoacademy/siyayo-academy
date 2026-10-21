@@ -1,0 +1,42 @@
+# Synthetic-only visual check. No Cloudflare access, deploy, or real learner data.
+name: JAGUAR V30.3.89M synthetic 2of3 and portrait swipe
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-synthetic-2of3-89m.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  two-of-three-visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89m
+      - name: Launch local pinned source and Playwright
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 --directory .pinned-explorer-89m > "$RUNNER_TEMP/89m-server.log" 2>&1 &
+          sleep 3
+          curl --fail --silent --show-error -o /dev/null http://127.0.0.1:8879/verb-explorer.html
+      - name: Canonical presentation with explicitly synthetic accepted-like packets
+        run: python labs/jaguar-v30-3/scripts/synthetic_2of3_visual_89m.py
+      - name: Upload screenshots (or diagnostics if blocked)
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: siyayo-89m-simulated-2of3-six-views
+          path: visual-audit-89m/
+          if-no-files-found: warn
+          retention-days: 14
