@@ -616,5 +616,24 @@
         "whereAudioOnstartRemainsIndependent": false
       }
     }
+  },
+  "pronounContrast89Z": {
+    "title": "JAGUAR 89Z CUÁL CUÁLES and QUAL QUAIS",
+    "status": "isolated-experimental-needs-portrait-review-before-official-integration",
+    "document": "docs/JAGUAR-89Z-CUAL-CUALES-QUAL-QUAIS.md",
+    "inheritedHowToShow": "docs/SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md",
+    "assessmentsUntouched": [
+      "which.use.determiner",
+      "what.use.object-question",
+      "where.use.location-question",
+      "why.use.contextual-reason"
+    ],
+    "freePracticeOnly": true,
+    "localGreenPass": false,
+    "englishQwInflection": false,
+    "portraitHumanReviewOnly": true,
+    "previewAfterApproval": true,
+    "productionPromotion": false,
+    "pr3Unchanged": true
   }
 }

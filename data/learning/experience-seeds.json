@@ -531,6 +531,8 @@
           "pronounComparison": {
             "language": "es",
             "grammarRole": "pronombre-interrogativo",
+            "title": "CUÁL / CUÁLES · UNA ELECCIÓN O VARIAS",
+            "intro": "La forma depende de cuántos elementos elegimos, no de cuántas opciones tenemos.",
             "prompt": "Tenemos dos quesos. ¿Cuál elegimos?",
             "expectedAlternativeId": "cual",
             "alternatives": [
@@ -543,9 +545,81 @@
                 "label": "Cuáles"
               }
             ],
+            "cases": [
+              {
+                "id": "singular",
+                "title": "1 · ELEGIMOS UN SOLO QUESO",
+                "context": "Tenemos tres quesos: fresco, suave y curado. Solo podemos elegir uno.",
+                "gapPrompt": "¿___ elegimos?",
+                "audioSetup": "Tenemos tres quesos: fresco, suave y curado. Solo podemos elegir uno. Elige la forma interrogativa.",
+                "expectedAlternativeId": "cual",
+                "correctFeedback": "¡Correcto! Elegimos un solo queso.",
+                "completedQuestion": "¿Cuál elegimos? — El fresco.",
+                "retryFeedback": "Prueba otra vez: necesitamos elegir un solo queso."
+              },
+              {
+                "id": "plural",
+                "title": "2 · ELEGIMOS VARIOS QUESOS",
+                "context": "Tenemos tres quesos: fresco, suave y curado. Para la tabla necesitamos dos.",
+                "gapPrompt": "¿___ elegimos?",
+                "audioSetup": "Tenemos tres quesos: fresco, suave y curado. Para la tabla necesitamos dos. Elige la forma interrogativa.",
+                "expectedAlternativeId": "cuales",
+                "correctFeedback": "¡Correcto! Elegimos dos quesos.",
+                "completedQuestion": "¿Cuáles elegimos? — El fresco y el curado.",
+                "retryFeedback": "Prueba otra vez: necesitamos elegir dos quesos."
+              }
+            ],
+            "counterparts": {
+              "pt": {
+                "language": "pt",
+                "grammarRole": "pronome-interrogativo",
+                "title": "QUAL / QUAIS · UMA ESCOLHA OU VÁRIAS",
+                "intro": "A forma depende de quantos elementos escolhemos, não de quantas opções temos.",
+                "alternatives": [
+                  {
+                    "id": "qual",
+                    "label": "Qual"
+                  },
+                  {
+                    "id": "quais",
+                    "label": "Quais"
+                  }
+                ],
+                "cases": [
+                  {
+                    "id": "singular",
+                    "title": "1 · ESCOLHEMOS UM QUEIJO",
+                    "context": "Temos três queijos: fresco, suave e maturado. Só podemos escolher um.",
+                    "gapPrompt": "___ escolhemos?",
+                    "audioSetup": "Temos três queijos: fresco, suave e maturado. Só podemos escolher um. Escolha a forma interrogativa.",
+                    "expectedAlternativeId": "qual",
+                    "correctFeedback": "Correto! Escolhemos um único queijo.",
+                    "completedQuestion": "Qual escolhemos? — O fresco.",
+                    "retryFeedback": "Tente novamente: vamos escolher um queijo."
+                  },
+                  {
+                    "id": "plural",
+                    "title": "2 · ESCOLHEMOS VÁRIOS QUEIJOS",
+                    "context": "Temos três queijos: fresco, suave e maturado. Para a tábua, precisamos escolher dois.",
+                    "gapPrompt": "___ escolhemos?",
+                    "audioSetup": "Temos três queijos: fresco, suave e maturado. Para a tábua, precisamos escolher dois. Escolha a forma interrogativa.",
+                    "expectedAlternativeId": "quais",
+                    "correctFeedback": "Correto! Escolhemos dois queijos.",
+                    "completedQuestion": "Quais escolhemos? — O fresco e o maturado.",
+                    "retryFeedback": "Tente novamente: vamos escolher dois queijos."
+                  }
+                ],
+                "doesNotClaim": [
+                  "determiner-use",
+                  "green-pass",
+                  "contract-evidence"
+                ]
+              }
+            },
             "doesNotClaim": [
               "determiner-use",
-              "green-pass"
+              "green-pass",
+              "contract-evidence"
             ]
           },
           "dependencyFocus": {
