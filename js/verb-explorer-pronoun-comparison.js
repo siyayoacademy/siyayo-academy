@@ -15,7 +15,7 @@
  }
  function caseFor(spec,caseId){
   if(Array.isArray(spec.cases)){
-   return spec.cases.find(function(c){return c.id===caseId;})||null;
+   return caseId===undefined||caseId===null?spec.cases[0]:(spec.cases.find(function(c){return c.id===caseId;})||null);
   }
   return caseId===undefined||caseId===null?spec.cases[0]:null;
  }
