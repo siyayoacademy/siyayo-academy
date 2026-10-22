@@ -8,7 +8,8 @@ const nouns=require('../data/lexicon/nouns/nouns.json');
 const shopping=corpus.items.find(item=>item.id==='shopping-for-dinner');
 const preparing=corpus.items.find(item=>item.id==='preparing-dinner');
 const listeners=[];
-const container={innerHTML:'',addEventListener(name,handler){if(name==='click')listeners.push(handler);}};
+const container={innerHTML:'',querySelectorAll(){return [];},addEventListener(name,handler){if(name==='click')listeners.push(handler);}};
+// 90B.1: DOM test fixture must support the real panel's read-only pressed-state projection.
 const feedback={hidden:true,textContent:''};
 const panel={hidden:true,dataset:{}};
 const view={};
