@@ -185,7 +185,9 @@
       });
       var sentence=doc.createElement('span');sentence.className='where-probe-question-text';
       sentence.textContent=spec.question;
-      if(spec.dimension!=='spatial-function'&&root.SIYAYOStudyTargetPresentation){
+      // WHERE function distinguishes location vs destination, not QW identity.
+      // Highlight WHERE in both steps; no answer ID or evidence is disclosed.
+      if(root.SIYAYOStudyTargetPresentation){
         var q=bound.experience.thinkingMind.find(function(item){return item.questionWord==='where';});
         sentence.innerHTML=root.SIYAYOStudyTargetPresentation.highlight(spec.question,
           q&&q.questionWordLabel&&q.questionWordLabel[bound.language]);

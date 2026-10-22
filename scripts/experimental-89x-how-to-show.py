@@ -175,6 +175,54 @@ with sync_playwright() as p:
     check(all(x["width"]>=.83*g["width"] and x["speakers"]==1 and x["audio"] and x["response"] for x in g["rows"]),
           "WHERE speaker/response split or narrow: "+str(g))
     row["whereGeometry"]=g
+    audit=page.evaluate("""() => {
+      const root=document.querySelector('#whereAssessmentPanel');
+      const qs=[...root.querySelectorAll('button.where-probe-question')];
+      const rect=e=>e.getBoundingClientRect();
+      const questions=qs.map(q=>{
+        const icon=q.querySelector(':scope > .siyayo-speaker');
+        const text=q.querySelector(':scope > .where-probe-question-text');
+        const gold=text?.querySelector('.study-target-word');
+        return {qTag:q.tagName,hasDivider:!!q.querySelector('.where-probe-audio'),
+          speaker:!!icon,text:text?.innerText||null,qword:gold?.innerText||null,
+          targetNoWrap:gold&&getComputedStyle(gold).whiteSpace==='nowrap',
+          targetWithinText:gold&&rect(gold).left>=rect(text).left-2&&rect(gold).right<=rect(text).right+2,
+          goldColor:gold&&getComputedStyle(gold).color,
+          aria:q.getAttribute('aria-label'),width:rect(q).width};
+      });
+      const lines=[...document.querySelectorAll('#livingLines .living-line')].map(b=>({
+        visibleRole:!!b.querySelector(':scope > span'),
+        hasSpeaker:!!b.querySelector('.siyayo-speaker'),
+        label:b.getAttribute('aria-label')||'',
+        dialogue:b.querySelector(':scope > p')?.innerText||''
+      }));
+      const trail=document.querySelector('#learnerTrailSurface');
+      const family=trail?.querySelector('.learner-trail-family');
+      const grammar=trail?.querySelector('.learner-trail-grammar-role');
+      const why=[...trail?.querySelectorAll('.wp-poly-word')||[]].find(x=>x.querySelector('strong')?.textContent==='WHY');
+      const es=why?.querySelector('span[lang="es"]'),pt=why?.querySelector('span[lang="pt"]');
+      const scroller=trail?.querySelector('.wp-poly-scroller');
+      return {questions,lines,
+        trail:{family:family?.textContent,grammar:grammar?.textContent,
+          separated:!!family&&!!grammar&&rect(grammar).top>rect(family).top+2},
+        wordPath:{es:es?.textContent,pt:pt?.textContent,
+          separated:!!es&&!!pt&&rect(pt).top>rect(es).top+2,
+          atomic:!!es&&!!pt&&getComputedStyle(es).whiteSpace==='nowrap'&&getComputedStyle(pt).whiteSpace==='nowrap',
+          internalScroll:!!scroller&&scroller.scrollWidth>scroller.clientWidth},
+        globalWidth:document.documentElement.scrollWidth,viewport:innerWidth};
+    }""")
+    check(len(audit["questions"])==2 and all(x["qTag"]=="BUTTON" and not x["hasDivider"] and
+      x["speaker"] and x["qword"] and x["targetNoWrap"] and x["targetWithinText"] and x["aria"]
+      for x in audit["questions"]),"Unintegrated WHERE QUESTION or split QW: "+str(audit["questions"]))
+    check(len(audit["lines"])==2 and all(not x["visibleRole"] and x["hasSpeaker"] and x["label"] and x["dialogue"]
+      for x in audit["lines"]),"LINES role label was not hidden or speech/ARIA lost: "+str(audit["lines"]))
+    check(audit["trail"]["separated"],"Trail family/grammar must render in two lines")
+    wp=audit["wordPath"]
+    check(wp["es"]=="POR QUÉ" and wp["pt"]=="POR QUÊ" and wp["separated"] and wp["atomic"],
+      "Word Path accent preservation and separate ES/PT lines: "+str(wp))
+    if form=="portrait":check(wp["internalScroll"],"Word Path portrait requires internal table scroll")
+    check(audit["globalWidth"]<=audit["viewport"]+4,"Global overflow")
+    row["howToShowGate"]=audit
     page.screenshot(path=str(OUT/f"WHERE-{language}-{form}.png"),full_page=True,animations="disabled")
     page.locator('#questionGear [data-question-index="0"]').click()
     page.wait_for_function("""() =>
@@ -192,10 +240,10 @@ with sync_playwright() as p:
     try:page.screenshot(path=str(OUT/f"FAIL-{language}-{form}.png"),full_page=True,animations="disabled",timeout=12000)
     except Exception:pass
    finally:
-    CASES.append(row);print("89W",language,form,row["status"],row.get("error",""),flush=True)
+    CASES.append(row);print("89X.2",language,form,row["status"],row.get("error",""),flush=True)
     ctx.close()
  browser.close()
 (OUT/"report.json").write_text(json.dumps(CASES,ensure_ascii=False,indent=2),encoding="utf8")
 n=sum(r["status"]=="PASS" for r in CASES)
-print(f"JAGUAR 89W STRICT {n}/{len(CASES)}",flush=True)
+print(f"JAGUAR 89X.2 STRICT {n}/{len(CASES)}",flush=True)
 if n!=len(CASES):raise SystemExit(1)
