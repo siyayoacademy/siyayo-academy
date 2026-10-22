@@ -1,0 +1,44 @@
+# JAGUAR 89T actual rendered browser audit in disposable GitHub runner.
+# Does not use staging auth, Cloudflare API, production data, or deploy.
+name: JAGUAR V30.3.89T live UI WHICH REVIEW and WHY transfer
+on:
+  push:
+    branches: [jaguar/v30-3-recovery-archive]
+    paths:
+      - 'labs/jaguar-v30-3/scripts/audit_live_browser_89t.py'
+      - '.github/workflows/jaguar-v30-3-live-browser-89t.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  real-ui-89t:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Checkout immutable approved Explorer source
+        uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89t
+      - name: Prepare isolated browser and local HTTP server
+        run: |
+          python -m pip install playwright==1.56.0
+          which google-chrome || which google-chrome-stable
+          python -m http.server 8879 --bind 127.0.0.1 --directory .pinned-explorer-89t > "$RUNNER_TEMP/89t-server.log" 2>&1 &
+          sleep 3
+          curl --fail --silent --show-error -o /dev/null http://127.0.0.1:8879/verb-explorer.html
+      - name: Actual DOM review WHY assessment and desktop portrait landscape
+        run: python labs/jaguar-v30-3/scripts/audit_live_browser_89t.py
+      - name: Save screenshots and JSON including fail-closed diagnostics
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: siyayo-89t-real-ui-review-why-layout
+          path: visual-audit-89t/
+          if-no-files-found: warn
+          retention-days: 14
