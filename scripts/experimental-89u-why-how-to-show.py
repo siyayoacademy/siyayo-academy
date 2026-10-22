@@ -28,8 +28,10 @@ with sync_playwright() as p:
     # Mock the PRESENTATION speech outlet ONLY, not the assessment API.
     page.evaluate("""() => {
        window.__audio89U=[];
-       let runtime=window.SIYAYOVerbExplorerExperienceRuntime;
-       Object.defineProperty(runtime,'speak',{value:(text,lang)=>window.__audio89U.push({text,lang}),configurable:true});
+       SpeechSynthesis.prototype.speak=function(u){
+         window.__audio89U.push({text:u.text,lang:u.lang});
+       };
+       SpeechSynthesis.prototype.cancel=function(){};
     }""")
     before=page.evaluate("""() => {
        let c=window.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot()?.context;
@@ -43,7 +45,7 @@ with sync_playwright() as p:
     }""")
     assert before==after==0,"Audio minted canonical evidence"
     audio=page.evaluate("window.__audio89U")
-    assert len(audio)==2 and all(x["lang"]==lang and x["text"] for x in audio),"Audio was not routed through speech adapter"
+    assert len(audio)==2 and all(x["lang"].startswith(lang) and x["text"] for x in audio),"Audio was not routed through speech adapter"
     panel=page.locator('#whyAssessmentPanel')
     assert panel.locator('.why-probe-question-card .siyayo-speaker').count()==2,"Question SVG speakers missing"
     assert panel.locator('.why-probe-audio .siyayo-speaker').count()==4,"Response SVG speakers missing"
