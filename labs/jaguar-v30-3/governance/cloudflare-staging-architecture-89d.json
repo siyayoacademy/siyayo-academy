@@ -1,0 +1,173 @@
+{
+  "schema": "siyayo.staging.design.v1",
+  "elo": "V30.3.89D",
+  "status": "DESIGN_ONLY",
+  "date": "2026-10-21",
+  "sources": {
+    "labHead": "36150cfe576c8e6620a552ad9a8972c0caa0340c",
+    "explorerPin": "c7e83709cacf8479847df0f3cee4ed8a563aaae6",
+    "mainPin": "c2149f5e63b8de716cf9b9dcdede213bd328344e",
+    "contractRegistry": "labs/jaguar-v30-3/governance/contract-evolution-registry.json",
+    "releaseGate": "labs/jaguar-v30-3/security/prestaging-readiness.json"
+  },
+  "observed": {
+    "source": "user-provided Cloudflare Dashboard screenshots and previous read-only audit 2026-10-21",
+    "pagesProject": "siyayo-academy",
+    "productionBranch": "main",
+    "previewsBuildAutomatically": true,
+    "previewsProtectedByAccess": false,
+    "prodPagesBindings": 0,
+    "previewPagesBindings": 0,
+    "previewSecretNameObserved": "ADMIN_ALLOWED_EMAIL",
+    "previewSecretValueRead": false,
+    "d1DatabaseCountShown": 0,
+    "d1QuotaShown": 10,
+    "visualWorker": "shiny-scene-4b76",
+    "visualWorkerBindingsShown": 0
+  },
+  "proposed": {
+    "access": {
+      "state": "NOT_CONFIGURED_FOR_STAGING",
+      "domain": "TO_SELECT",
+      "bypassProtectionRequired": true
+    },
+    "worker": {
+      "name": "siyayo-academy-staging-api",
+      "state": "NOT_CREATED",
+      "publicWorkersDevDisabledOrEquivalentlyProtected": true
+    },
+    "d1": {
+      "name": "siyayo-academy-staging",
+      "state": "NOT_CREATED",
+      "databaseId": null,
+      "emptySyntheticOnly": true
+    },
+    "publicPages": {
+      "name": "siyayo-academy",
+      "unchanged": true,
+      "stagingD1Binding": false
+    },
+    "originalVisualWorker": {
+      "name": "shiny-scene-4b76",
+      "unchanged": true
+    }
+  },
+  "security": {
+    "noRemoteDeploy": true,
+    "noRemoteD1Mutation": true,
+    "noSecretOrAuthCookieInRepo": true,
+    "noRealLearnerData": true,
+    "noPublicPreviewAsAuthBoundary": true,
+    "noNICKAsIdentity": true,
+    "noInventedSidAsCloudflareContract": true,
+    "sameOriginOrExplicitReviewedProxy": true,
+    "denyUnverifiedAndRevokedSessions": true,
+    "independentServerSideAssessmentAuthority": true,
+    "onlyObservationReadUntilApproval": true,
+    "noExploratoryEvidenceToGreenPass": true,
+    "noChangesToLearningTrailOrWordPath": true
+  },
+  "gates": [
+    {
+      "id": "EXT-01",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-02",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-03",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-04",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-05",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-06",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-07",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-08",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-09",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-10",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-11",
+      "state": "blocked"
+    },
+    {
+      "id": "EXT-12",
+      "state": "blocked"
+    }
+  ],
+  "phases": [
+    {
+      "id": "89D-01",
+      "task": "Document independent staging topology and preserve original releases",
+      "state": "designed",
+      "remote": false
+    },
+    {
+      "id": "89D-02",
+      "task": "Audit real Access team domain, policies, issuer AUD JWKS and native revocation",
+      "state": "blocked",
+      "remote": false
+    },
+    {
+      "id": "89D-03",
+      "task": "Approve protected staging hostname and prevent workers.dev/public preview bypass",
+      "state": "blocked",
+      "remote": true
+    },
+    {
+      "id": "89D-04",
+      "task": "Approve empty synthetic-data D1 staging creation and migration rollback",
+      "state": "blocked",
+      "remote": true
+    },
+    {
+      "id": "89D-05",
+      "task": "Approve Worker staging deployment with only dedicated D1 binding",
+      "state": "blocked",
+      "remote": true
+    },
+    {
+      "id": "89D-06",
+      "task": "Test external deny, scoped restore, key rotation, revoked sessions and UI EN/ES/PT",
+      "state": "blocked",
+      "remote": false
+    },
+    {
+      "id": "89D-07",
+      "task": "Request independent security and pedagogical release signoff",
+      "state": "blocked",
+      "remote": true
+    }
+  ],
+  "release": {
+    "remoteAuthorized": false,
+    "stagingReady": false,
+    "externalGatesCompleted": false,
+    "rollbackRehearsed": false,
+    "productionChangeAllowed": false,
+    "expectedCloudflarePagesSkipPrefix": "[CF-Pages-Skip]"
+  },
+  "next": "Confirm Access identity/policy and isolated staging target; remote mutation requires new explicit scoped approval."
+}

@@ -635,5 +635,19 @@
     "previewAfterApproval": true,
     "productionPromotion": false,
     "pr3Unchanged": true
+  },
+  "integration90A": {
+    "id": "JAGUAR-90A",
+    "status": "archived-cross-lineage-local-CI-only",
+    "manifest": "data/canonical/siyayo-integration-continuity-90a.json",
+    "report": "docs/JAGUAR-90A-CROSS-LINEAGE-INTEGRATION.md",
+    "sourceExplorer89Z": "725e6fb23e5e4d8859393490d18548e867afaaca",
+    "sourceRecovery": "1463d6105d90b60c0fb31ed80baf90693cc0cb59",
+    "historicalLabTree": "5ee77257551593b8e4960dd6971cc7ed069fcd56",
+    "whyS3S4GreenLabOnly": true,
+    "remoteD1Active": false,
+    "stagingReleaseAuthorized": false,
+    "externalSecurityGatesBlocked": 12,
+    "officialExplorerUpdated": false
   }
 }

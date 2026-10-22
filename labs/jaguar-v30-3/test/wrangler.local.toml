@@ -1,0 +1,11 @@
+# JAGUAR V30.3 local-only test configuration. DO NOT DEPLOY.
+name = "siyayo-v30-3-local-d1-only"
+main = "../src/worker-v30-integration.mjs"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+
+[[d1_databases]]
+binding = "ASSESSMENT_DB"
+database_name = "v30-local-only"
+database_id = "00000000-0000-0000-0000-000000000030"

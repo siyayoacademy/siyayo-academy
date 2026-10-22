@@ -1,0 +1,27 @@
+// Strict 90A offline release guard and provenance. No network, credentials or runtime mutation.
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const m=read('data/canonical/siyayo-integration-continuity-90a.json');
+const p=read('labs/jaguar-v30-3/security/prestaging-readiness.json');
+const map=read('data/canonical/siyayo-development-map.json');
+assert.equal(m.source.recoveryLabTree,'5ee77257551593b8e4960dd6971cc7ed069fcd56');
+assert.equal(m.source.explorerIntegrated89ZCommit,'725e6fb23e5e4d8859393490d18548e867afaaca');
+assert.equal(m.security.currentRemoteStagingReleaseAuthorized,false);
+assert.equal(m.security.realD1Integrated,false);
+assert.equal(m.security.externalGatesBlocked,12);
+assert.equal(m.pedagogy.why.labConfirmed,'3/3 GREEN PASS only after authorized S4 answer');
+assert.equal(m.pedagogy.why.realAuthenticatedLearnerConfirmed,false);
+assert.equal(m.distinction.byteForByteOriginalAll,false);
+assert.equal(map.integration90A.status,'archived-cross-lineage-local-CI-only');
+assert.equal(p.releaseAuthorized,false);
+assert.equal(p.deploymentPermitted,false);
+const gates=p.records.filter(x=>x.kind==='external');
+assert.equal(gates.length,12);
+assert.ok(gates.every(x=>x.status==='blocked'));
+assert.ok(fs.existsSync('labs/jaguar-v30-3/test/review-why-transversal-89o.test.mjs'));
+assert.ok(fs.existsSync('labs/jaguar-v30-3/test/scoped-memory-continuity-89q.test.mjs'));
+assert.ok(fs.existsSync('labs/jaguar-v30-3/test/scoped-selection-word-path-89r.test.mjs'));
+assert.ok(fs.existsSync('labs/jaguar-v30-3/test/worker-v30-integration.test.mjs'));
+assert.ok(fs.existsSync('docs/SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md'));
+console.log('PASS JAGUAR 90A preserved historical subtree + S4 WHY lab authority and BLOCKED release gates');

@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {inspect89D,read89D} from '../scripts/check-staging-architecture-89d.mjs';
+const doc=read89D();
+const changed=fn=>{const a=structuredClone(doc);fn(a);return inspect89D(a)};
+test('valid model explicitly remains BLOCKED with 12 gates',()=>{
+ const r=inspect89D(doc);assert.equal(r.valid,true);assert.equal(r.verdict,'BLOCKED');assert.equal(r.blockedExternalGates,12);
+});
+test('lab contract never claims remote authorization',()=>assert.equal(changed(x=>x.release.remoteAuthorized=true).valid,false));
+test('lab contract never claims staging is ready',()=>assert.equal(changed(x=>x.release.stagingReady=true).valid,false));
+test('lab contract never claims rollback has been rehearsed',()=>assert.equal(changed(x=>x.release.rollbackRehearsed=true).valid,false));
+test('public pages remain separate',()=>assert.equal(changed(x=>x.proposed.publicPages.stagingD1Binding=true).valid,false));
+test('production Pages remain unchanged',()=>assert.equal(changed(x=>x.proposed.publicPages.unchanged=false).valid,false));
+test('original shiny-scene worker preserved',()=>assert.equal(changed(x=>x.proposed.originalVisualWorker.unchanged=false).valid,false));
+test('not inventing an existing staging D1',()=>assert.equal(changed(x=>x.proposed.d1.state='CREATED').valid,false));
+test('no real DB identifier may appear',()=>assert.equal(changed(x=>x.proposed.d1.databaseId='unexpected-id').valid,false));
+test('not pretending Cloudflare Access is configured',()=>assert.equal(changed(x=>x.proposed.access.state='VERIFIED').valid,false));
+test('raw workers.dev bypass must be prevented',()=>assert.equal(changed(x=>x.proposed.worker.publicWorkersDevDisabledOrEquivalentlyProtected=false).valid,false));
+test('public previews cannot authenticate a learner',()=>assert.equal(changed(x=>x.security.noPublicPreviewAsAuthBoundary=false).valid,false));
+test('display NICK never identifies a server account',()=>assert.equal(changed(x=>x.security.noNICKAsIdentity=false).valid,false));
+test('invented sid cannot act as a real Cloudflare session',()=>assert.equal(changed(x=>x.security.noInventedSidAsCloudflareContract=false).valid,false));
+test('observational read never grants Green Pass',()=>assert.equal(changed(x=>x.security.noExploratoryEvidenceToGreenPass=false).valid,false));
+test('all twelve external checks remain blocked',()=>assert.equal(changed(x=>x.gates[8].state='verified').valid,false));
+test('future phase cannot silently turn ready',()=>assert.equal(changed(x=>x.phases[2].state='done').valid,false));
+test('source Explorer commit protected',()=>assert.equal(changed(x=>x.sources.explorerPin='main').valid,false));
+test('prevents additional automatic public preview on documentation commits',()=>assert.equal(changed(x=>x.release.expectedCloudflarePagesSkipPrefix='').valid,false));
+test('--require-live refuses staging even when design checks pass',()=>{
+ const r=spawnSync(process.execPath,['scripts/check-staging-architecture-89d.mjs','--require-live'],{encoding:'utf8'});
+ assert.equal(r.status,2);assert.match(r.stderr,/not a Cloudflare deployment authorization/);
+});

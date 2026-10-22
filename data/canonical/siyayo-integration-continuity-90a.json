@@ -1,0 +1,141 @@
+{
+  "id": "SIYAYO-JAGUAR-90A-CROSS-LINEAGE-INTEGRATION",
+  "status": "checkpoint-consolidated-source-and-CI-only-not-production-not-authenticated",
+  "version": "90A.0",
+  "source": {
+    "repository": "siyayoacademy/siyayo-academy",
+    "explorerBaseline": "c7e83709cacf8479847df0f3cee4ed8a563aaae6",
+    "explorerIntegrated89ZCommit": "725e6fb23e5e4d8859393490d18548e867afaaca",
+    "explorerSourceBranch": "jaguar/verb-explorer-pronoun-contrast-89z",
+    "recoveryArchiveBranch": "jaguar/v30-3-recovery-archive",
+    "recoveryCommit": "1463d6105d90b60c0fb31ed80baf90693cc0cb59",
+    "recoveryLabTree": "5ee77257551593b8e4960dd6971cc7ed069fcd56",
+    "labMountedPath": "labs/jaguar-v30-3"
+  },
+  "distinction": {
+    "v30_3_internal_milestones": true,
+    "v40_v50_v60_v70_v80_as_independent_branches": false,
+    "classification": "User describes continuous V30.3.40/.../80 refinements; don't claim standalone branch V40/50/60/70/80",
+    "recoverableSource": "V30.3.6 original recovered from eight supplied source files; later worker reconstruction documented",
+    "notRecovered": [
+      "original V30.3.80 runner logfile bytes",
+      "pre-guard Worker backup bytes",
+      "original live D1 records"
+    ],
+    "byteForByteOriginalAll": false
+  },
+  "preservedTracks": [
+    {
+      "id": "30-early",
+      "name": "V30.3.6→.40→.50→.60→.70→.80 laboratory lineage",
+      "path": "labs/jaguar-v30-3",
+      "kind": "code-and-audits; mock identity, Worker, local SQLite, probes and evidence",
+      "runtimeWired": false
+    },
+    {
+      "id": "30-85-86",
+      "name": "identity, scoped memory, local end-to-end",
+      "docs": [
+        "labs/jaguar-v30-3/evidence/V30-3-85B-IDENTITY-CONTRACT.md",
+        "labs/jaguar-v30-3/evidence/V30-3-85C-DURABLE-MEMORY.md",
+        "labs/jaguar-v30-3/evidence/V30-3-86-INTEGRATION-LAB.md"
+      ],
+      "runtimeWired": false
+    },
+    {
+      "id": "30-87-88",
+      "name": "JWT, JWKS, Access verification, rollback and pre-staging",
+      "docs": [
+        "labs/jaguar-v30-3/evidence/V30-3-87D-PRESTAGING-AUDIT.md",
+        "labs/jaguar-v30-3/evidence/V30-3-88E-CROSS-LAYER-RECOVERY.md"
+      ],
+      "runtimeWired": false
+    },
+    {
+      "id": "30-89O-T",
+      "name": "canonical QW and context transfer verified synthetic",
+      "docs": [
+        "labs/jaguar-v30-3/evidence/V30-3-89O-REVIEW-WHY-S1-S4.md",
+        "labs/jaguar-v30-3/evidence/V30-3-89Q-SCOPED-MEMORY-CONTINUITY.md",
+        "labs/jaguar-v30-3/evidence/V30-3-89T-REAL-BROWSER-S1-S4.md"
+      ],
+      "runtimeWired": false
+    },
+    {
+      "id": "89U-89Z",
+      "name": "HOW TO SHOW four QWs; pronominal ES/PT; portrait",
+      "docs": [
+        "docs/SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md",
+        "docs/JAGUAR-89Y-FOUR-QW-INTEGRATED-HOW-TO-SHOW.md",
+        "docs/JAGUAR-89Z-CUAL-CUALES-QUAL-QUAIS.md"
+      ],
+      "runtimeWired": true,
+      "scope": "experimental-browser-branch-not-official-not-remote"
+    }
+  ],
+  "pedagogy": {
+    "experiences": [
+      "S1 Shopping",
+      "S2 Preparing",
+      "S3 Having",
+      "S4 After-Dinner"
+    ],
+    "qwsEvaluated": [
+      "WHICH",
+      "WHAT",
+      "WHERE",
+      "WHY"
+    ],
+    "whereStatus": "isolated-candidate",
+    "why": {
+      "origin": "S3 Having",
+      "transfer": "S4 After-Dinner",
+      "requirements": [
+        "question-function",
+        "reason-answer local",
+        "reason-answer transfer"
+      ],
+      "labConfirmed": "3/3 GREEN PASS only after authorized S4 answer",
+      "realAuthenticatedLearnerConfirmed": false
+    },
+    "otherQuestionWords": "corpus-only-where-no-canonical-contract",
+    "pastFuture": "not-authorized-evaluation",
+    "pronounContrastESPT": "free practice, no Green Pass"
+  },
+  "security": {
+    "currentRemoteStagingReleaseAuthorized": false,
+    "realSessionProviderVerified": false,
+    "realD1Integrated": false,
+    "externalGatesBlocked": 12,
+    "gateSource": "labs/jaguar-v30-3/security/prestaging-readiness.json",
+    "noProdMerge": true,
+    "noPR3Update": true,
+    "noD1Migration": true,
+    "noCloudflareDeploy": true
+  },
+  "gates": {
+    "present": [
+      "manifest pinned source checks",
+      "existing canonical browser JS regressions",
+      "local V30 worker+storage regressions",
+      "89O/89P/89Q/89R pinned classic evaluation tests",
+      "release BLOCKED checks"
+    ],
+    "pending": [
+      "recover and compare all intermediate Codespaces artifacts if user has originals",
+      "human 89Z portrait approval",
+      "full 89Y actual source UI end-to-end on consolidation SHA",
+      "authenticated staging Access+JWT+revocation setup",
+      "separate D1 backup/rollback, binding, cross-origin verification",
+      "real phone speech and persistence",
+      "reviewed official Explorer PR3 promotion",
+      "main/production authorization"
+    ]
+  },
+  "evidenceArtifacts": {
+    "githubActionsScreenshotRetentionDays": 14,
+    "archivePerpetuallyRequired": true,
+    "remoteOriginalLogRecovered": false
+  },
+  "sourceOfTruth": "git commit SHA + original snapshots + accepted visual refs; no reconstructed log may be described as original"
+}
