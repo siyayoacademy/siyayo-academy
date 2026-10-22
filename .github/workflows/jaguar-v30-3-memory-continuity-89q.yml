@@ -29,6 +29,11 @@ jobs:
         env:
           SIYAYO_89Q_PINNED_ROOT: ../../.pinned-explorer-89q
         run: node --test test/scoped-memory-continuity-89q.test.mjs
+      - name: 89R real retention selector and Word Path across subjects and WHAT origins
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89R_PINNED_ROOT: ../../.pinned-explorer-89q
+        run: node --test test/scoped-selection-word-path-89r.test.mjs
       - name: Canonical S3 WHY longitudinal transfer baseline
         working-directory: .pinned-explorer-89q
         run: node scripts/test-s3-why-longitudinal-transfer.js
