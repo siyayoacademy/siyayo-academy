@@ -1,0 +1,34 @@
+# Jaguar 89Q: offline continuity S1–S4. Read-only pinned canonical modules, no Cloudflare.
+name: JAGUAR V30.3.89Q S1 S4 scoped memory integrity
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-memory-continuity-89q.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scoped-continuity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89q
+      - name: Verify learner QW locale origin and S4 transfer without false Green
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89Q_PINNED_ROOT: ../../.pinned-explorer-89q
+        run: node --test test/scoped-memory-continuity-89q.test.mjs
+      - name: Canonical S3 WHY longitudinal transfer baseline
+        working-directory: .pinned-explorer-89q
+        run: node scripts/test-s3-why-longitudinal-transfer.js
