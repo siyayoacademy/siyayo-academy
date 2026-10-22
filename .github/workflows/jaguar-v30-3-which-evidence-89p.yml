@@ -1,0 +1,32 @@
+# V30.3.89P: reproduce historical mismatch, correct only disposable fixture.
+name: JAGUAR V30.3.89P WHICH evidence 1of3 2of3 3of3
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-which-evidence-89p.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  which-evidence-boundary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Pin immutable official Explorer
+        uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89p
+      - name: Run 89P historical negative control and corrected synthetic clone
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89P_PINNED_ROOT: ../../.pinned-explorer-89p
+        run: node --test test/which-evidence-boundary-89p.test.mjs

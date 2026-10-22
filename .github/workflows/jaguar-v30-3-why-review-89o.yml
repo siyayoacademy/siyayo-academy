@@ -34,9 +34,11 @@ jobs:
       - name: Canonical regression — S1 WHICH R1 R2 feedback then trilingual REVIEW
         working-directory: .pinned-explorer-89o
         run: node scripts/test-jaguar-review-after-contextual-feedback.js
-      - name: Canonical regression — WHICH S1 to S2 cross-Experience transfer
-        working-directory: .pinned-explorer-89o
-        run: node scripts/test-which-third-attempt-green-boundary.js
+      - name: Historical WHICH regression — expected RED; corrected ephemeral USE local, then GREEN
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89P_PINNED_ROOT: ../../.pinned-explorer-89o
+        run: node --test test/which-evidence-boundary-89p.test.mjs
       - name: Canonical regression — WHAT possible S1 to S2 transfer
         working-directory: .pinned-explorer-89o
         run: node scripts/test-s1-what-canonical-green-cycle.js
