@@ -29,7 +29,7 @@ const markup=read('verb-explorer.html');
 const reviewSpec=read('scripts/test-jaguar-review-after-contextual-feedback.js');
 const whySource=read('js/verb-explorer-why-assessment-live.js');
 const whyProbe=read('js/adaptive-why-contextual-reason-probe-specification-source.js');
-const registry=JSON.parse(read('labs/jaguar-v30-3/governance/contract-evolution-registry.json'));
+const registry=JSON.parse(readFileSync(resolve(process.cwd(),'governance/contract-evolution-registry.json'),'utf8'));
 
 test('89O.1 four Experience stages follow S1 → S2 → S3 → S4 → S1 in authored Toro route',()=>{
  assert.deepEqual(stages.map(x=>x.id),order);
