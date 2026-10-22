@@ -40,6 +40,28 @@ sandbox.SIYAYOVerbExplorerAdaptiveCoordinator={
 };
 vm.runInNewContext(fs.readFileSync('js/verb-explorer-why-assessment-live.js','utf8'),sandbox);
 const live=sandbox.SIYAYOVerbExplorerWhyAssessmentLive;
+// 90B: 89U introduced one speaker + one evaluative button inside EACH response row.
+// The original flat options.children[0] is now a row wrapper, not an Attempt source.
+function responseParts(probe){
+  const options=probe.children.find(el=>el.className==='why-probe-options');
+  assert.ok(options,'WHY possible responses component is present');
+  const parts=options.children.map(row=>{
+    assert.equal(row.className,'why-probe-response-row','full-width visual response row retained');
+    const audio=row.children.find(item=>item.className==='why-probe-audio');
+    const answer=row.children.find(item=>item.className==='why-probe-option');
+    assert.ok(audio&&answer,'speaker and evaluative answer remain separate');
+    assert.ok(audio.children.some(item=>item.className==='siyayo-speaker'),'speaker SVG retained');
+    return {audio,answer};
+  });
+  assert.ok(parts.length>=2,'canonical alternatives must remain available');
+  return parts;
+}
+function answer(probe,label){
+  const btns=responseParts(probe).map(p=>p.answer);
+  const button=label===undefined?btns[0]:btns.find(x=>x.textContent===label);
+  assert.ok(button,'canonical response alternative found');
+  return button;
+}
 assert.equal(live.mount({document:doc,experience:seeds[1],language:'pt'}),false,
   'S2 visit cannot mount the adopted S3 WHY probe');
 assert.equal(live.mount({document:doc,experience:seeds[2],language:'pt'}),true);
@@ -48,10 +70,14 @@ assert.equal(panel.children.filter(el=>el.className==='why-contextual-reason-pro
 let groups=panel.children.filter(el=>el.className==='why-contextual-reason-probe');
 assert.match(groups[0].children[0].textContent,/palavra interrogativa/);
 assert.match(groups[1].children[0].textContent,/por que/);
-groups[0].children[2].children[0].click();
+// Speech is presentation only; no Attempt, Evidence, or Green Pass.
+groups[0].children[1].click();
+responseParts(groups[0])[0].audio.click();
+assert.equal(attempts.length,0,'listening does not create canonical evidence');
+answer(groups[0]).click();
 assert.equal(attempts.length,1);
 assert.equal(attempts[0].dimension,'question-function');
-groups[1].children[2].children.find(el=>el.textContent==='Porque a preparamos juntos.').click();
+answer(groups[1],'Porque a preparamos juntos.').click();
 assert.equal(attempts.length,2);
 assert.equal(attempts[1].dimension,'reason-answer');
 assert.equal(attempts[1].result,'pass');
@@ -60,7 +86,7 @@ assert.equal(live.mount({document:doc,experience:seeds[3],language:'pt'}),true);
 groups=panel.children.filter(el=>el.className==='why-contextual-reason-probe');
 assert.equal(groups.length,1);
 assert.match(groups[0].children[0].textContent,/após o jantar/);
-groups[0].children[2].children.find(el=>el.textContent==='Porque gostamos de conversar juntos.').click();
+answer(groups[0],'Porque gostamos de conversar juntos.').click();
 assert.equal(attempts.length,3);
 assert.equal(attempts[2].mode,'transfer');
 assert.equal(attempts[2].context.fromExperienceId,'having-dinner');
@@ -70,17 +96,18 @@ let visualWord='why',badgeRefreshes=0;
 sandbox.SIYAYOVerbExplorerExperienceRuntime={activeQuestionWord:()=>visualWord,
   refreshAssessmentHighlight(){badgeRefreshes++;}};
 assert.equal(live.mount({document:doc,experience:seeds[3],language:'pt'}),true);
-const oldButton=panel.children.find(el=>el.className==='why-contextual-reason-probe').children[2].children[0];
-visualWord='where';oldButton.click();
+const oldButton=answer(panel.children.find(el=>el.className==='why-contextual-reason-probe'));
+const oldAudio=responseParts(panel.children.find(el=>el.className==='why-contextual-reason-probe'))[0].audio;
+visualWord='where';oldButton.click();oldAudio.click();
 assert.equal(attempts.length,3,'QWord drift blocks an old WHY response');
 assert.equal(live.mount({document:doc,experience:seeds[3],language:'pt'}),false);
 assert.equal(panel.hidden,true);
 visualWord='why';
 assert.equal(live.mount({document:doc,experience:seeds[3],language:'pt'}),true);
 oldButton.click();assert.equal(attempts.length,3,'remount does not revive a detached old response');
-panel.children.find(el=>el.className==='why-contextual-reason-probe').children[2].children[0].click();
+answer(panel.children.find(el=>el.className==='why-contextual-reason-probe')).click();
 assert.equal(attempts.length,4);assert.equal(badgeRefreshes,1);
 active.session={decision:{skill:'which.use.determiner',experienceId:'having-dinner'}};
 assert.equal(live.mount({document:doc,experience:seeds[3],language:'pt'}),false);
 assert.equal(attempts.length,4);
-console.log('PASS — WHY panel submits distinct S3 and S4 Attempts only for the active WHY Session.');
+console.log('PASS 90B — WHY responds only to evaluative buttons, preserving S3/S4 Attempt logic; speech and stale controls never credit.');

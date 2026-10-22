@@ -31,3 +31,7 @@ Contrato visual continua `docs/SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-C
 O registro `labs/jaguar-v30-3/security/prestaging-readiness.json` aponta **12 controles externos bloqueados**; o pipeline 90A deve **falhar** se isso desaparecer ou se declarar `releaseAuthorized:true`. Os testes são locais e não autorizam autenticação remota. Screenshots do GitHub Actions expiram; conservar visual homologado em arquivo durável após consentimento.
 
 **Não tocar na PR #3, na branch oficial `jaguar/verb-explorer-resume-live-wire`, na `main`, nem publicar no Pages por essa consolidação.** O marcador `[CF-Pages-Skip]` sinaliza intenção de não implantar, mas a configuração real dos gatilhos Pages deve ser conferida independentemente.
+
+
+## Sucessor 90B — roteiro de promoção obrigatório
+Leia [JAGUAR 90B→90E](JAGUAR-90B-TO-90E-MASTER-ROADMAP.md) antes de qualquer novo ELO. Falha do teste histórico WHY em 90A localizada: após refatoração 89U, `children[0]` é row de speaker/resposta, não o botão; corrigir seletor sem reduzir contrato. Registrar futura matriz WHICH/WHAT/WHERE/WHY, outras 14 QWs, PRESENT/PAST/FUTURE e AFFIRMATIVE/NEGATIVE/INTERROGATIVE.

@@ -649,5 +649,18 @@
     "stagingReleaseAuthorized": false,
     "externalSecurityGatesBlocked": 12,
     "officialExplorerUpdated": false
+  },
+  "integrationRoadmap90B": {
+    "id": "JAGUAR-90B-TO-90E",
+    "document": "docs/JAGUAR-90B-TO-90E-MASTER-ROADMAP.md",
+    "structured": "data/canonical/siyayo-integration-roadmap-90b.json",
+    "stage": "90B-historical-WHY-test",
+    "futureQuestionWords": "not-complete",
+    "present": "assessment-partial",
+    "past": "contracts-pending",
+    "future": "contracts-pending",
+    "modes": "AFFIRMATIVE/NEGATIVE/INTERROGATIVE × PRESENT/PAST/FUTURE pending broad assessment",
+    "externalSecurityGates": 12,
+    "releaseAuthorized": false
   }
 }

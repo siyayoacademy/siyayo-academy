@@ -137,5 +137,14 @@
     "archivePerpetuallyRequired": true,
     "remoteOriginalLogRecovered": false
   },
-  "sourceOfTruth": "git commit SHA + original snapshots + accepted visual refs; no reconstructed log may be described as original"
+  "sourceOfTruth": "git commit SHA + original snapshots + accepted visual refs; no reconstructed log may be described as original",
+  "successorRoadmap": {
+    "id": "SIYAYO-JAGUAR-90B-TO-90E-CANONICAL-IMPLEMENTATION-ROADMAP",
+    "path": "data/canonical/siyayo-integration-roadmap-90b.json",
+    "document": "docs/JAGUAR-90B-TO-90E-MASTER-ROADMAP.md",
+    "status": "gate-90B-running",
+    "preserved90ARecoveryLabTree": "5ee77257551593b8e4960dd6971cc7ed069fcd56",
+    "pastFutureContractHomologation": false,
+    "allQWsCompleted": false
+  }
 }
