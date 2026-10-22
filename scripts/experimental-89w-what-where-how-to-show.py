@@ -75,6 +75,9 @@ def what(page,language):
  page.locator('#whatAssessmentPanel .what-object-question-probe[data-dimension="object-answer"]').get_by_role("button",name=spec["localLabel"],exact=True).click()
  c=assertions(page,'what.use.object-question',language,2)
  check(c["status"]=="WAITING_FOR_EVIDENCE","WHAT 2/3 should remain WAIT")
+ # The homologated Learning Trail & Word Path shell starts collapsed. Open
+ # it through the native details state before asserting visible text.
+ page.locator("#learningTrailWordPathModule").evaluate("(e)=>{e.open=true}")
  trail=page.locator("#learnerTrailSurface")
  check(trail.locator('.learner-trail-contract-progress').count()==1 and "2/3" in trail.inner_text(),
        "WHAT 2/3 not represented in Learning Trail")
