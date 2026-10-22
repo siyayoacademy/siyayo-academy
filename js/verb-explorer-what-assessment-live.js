@@ -250,7 +250,25 @@ function mount(input){
         var responseRow=doc.createElement('div');responseRow.className='what-probe-response-row';
         responseRow.appendChild(audio);responseRow.appendChild(button);
         options.appendChild(responseRow);
-      }else options.appendChild(button);
+      }else {
+        var responseRow=doc.createElement('div');responseRow.className='what-probe-response-row';
+        var audio=doc.createElement('button');audio.type='button';
+        audio.className='what-probe-speaker';audio.setAttribute('aria-label',({
+          en:'Listen to response: ',es:'Escuchar respuesta: ',pt:'Ouvir resposta: '
+        }[language])+alternative.label);
+        var icon=doc.createElement('span');icon.className='siyayo-speaker';
+        icon.setAttribute('aria-hidden','true');audio.appendChild(icon);
+        audio.addEventListener('click',function(event){
+          event.stopPropagation();
+          if(mountedGeneration!==generation||el.hidden||!isExploringWhat())return;
+          var state=root.SIYAYOVerbExplorerAdaptiveStateBridge?.getState?.();
+          if(!state||text(state.currentExperienceId)!==spec.experienceId||
+            text(state.experienceLanguage)!==spec.language)return;
+          var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+          if(runtime&&typeof runtime.speak==='function')runtime.speak(alternative.label,language);
+        });
+        responseRow.appendChild(audio);responseRow.appendChild(button);options.appendChild(responseRow);
+      }
     });
     section.appendChild(options);
     // All canonical responses remain visible in their authored order; selecting alone can create an Attempt.

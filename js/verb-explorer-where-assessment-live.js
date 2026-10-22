@@ -173,13 +173,20 @@
       section.dataset.dimension=spec.dimension;section.dataset.mode=spec.mode;
       var title=doc.createElement('h4');title.textContent=spec.mode==='transfer'?labels.transfer:
         spec.dimension==='spatial-function'?labels.function:labels.local;section.appendChild(title);
-      var question=doc.createElement('p');question.className='where-probe-question';
+      var question=doc.createElement('div');question.className='where-probe-question';
       question.appendChild(speaker(spec.question));
-      var sentence=doc.createElement('span');sentence.textContent=spec.question;question.appendChild(sentence);section.appendChild(question);
+      var sentence=doc.createElement('span');sentence.className='where-probe-question-text';
+      sentence.textContent=spec.question;
+      if(spec.dimension!=='spatial-function'&&root.SIYAYOStudyTargetPresentation){
+        var q=bound.experience.thinkingMind.find(function(item){return item.questionWord==='where';});
+        sentence.innerHTML=root.SIYAYOStudyTargetPresentation.highlight(spec.question,
+          q&&q.questionWordLabel&&q.questionWordLabel[bound.language]);
+      }
+      question.appendChild(sentence);section.appendChild(question);
       var choices=doc.createElement('div');choices.className='where-probe-options';
       spec.alternatives.forEach(function(alternative){
         var row=doc.createElement('div');row.className='where-probe-choice';
-        if(spec.dimension==='location-answer')row.appendChild(speaker(alternative.label));
+        row.appendChild(speaker(spec.dimension==='spatial-function'?labels[alternative.id]:alternative.label));
         var button=doc.createElement('button');button.type='button';button.className='where-probe-option';
         button.dataset.alternativeId=alternative.id;button.setAttribute('aria-pressed','false');
         button.textContent=spec.dimension==='spatial-function'?labels[alternative.id]:alternative.label;
@@ -191,7 +198,10 @@
           var evidence=evidenceApi.fromResult({result:result,learnerEvent:event,supportSensor:{support:function(){return support;}}});
           var attempt=attemptApi.assemble({learnerEvent:event,evidence});if(!attempt)return;
           var submitted=bound.coordinator.submitObservedAttempt(attempt,event,button);if(!submitted)return;
-          Array.from(choices.querySelectorAll('.where-probe-option')).forEach(function(option){option.setAttribute('aria-pressed',option===button?'true':'false');});
+          Array.from(choices.querySelectorAll('.where-probe-option')).forEach(function(option){
+            option.setAttribute('aria-pressed',option===button?'true':'false');
+            option.setAttribute('data-assertive',option===button&&result.result==='pass'&&support==='none'?'true':'false');
+          });
           var currentProgress=refreshProgress();
           feedback.textContent=currentProgress&&currentProgress.status==='GREEN_PASS'?labels.green:
             result.result==='fail'?labels.retry:support!=='none'?labels.assisted:labels.recorded;

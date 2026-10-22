@@ -170,9 +170,7 @@ function mount(input){
         var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
         if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
       });
-      options.appendChild(button);
-      // Direct sibling keeps historical selection controls stable in the DOM;
-      // CSS places the independent speaker to the LEFT of the same answer.
+      // A single speaker/response card per answer; audio remains observational.
       var audio=doc.createElement('button');audio.type='button';
       audio.className='why-probe-audio';audio.dataset.whySlot=String(alternativeIndex+1);
       audio.setAttribute('aria-label',({
@@ -184,7 +182,9 @@ function mount(input){
         var runtime=speakOnly(spec,language,doc,mountedGeneration,el);
         if(runtime)runtime.speak(alternative.label,language);
       });
-      options.appendChild(audio);
+      var answerRow=doc.createElement('div');answerRow.className='why-probe-response-row';
+      answerRow.appendChild(audio);answerRow.appendChild(button);
+      options.appendChild(answerRow);
     });
     section.appendChild(options);
     el.appendChild(section);
