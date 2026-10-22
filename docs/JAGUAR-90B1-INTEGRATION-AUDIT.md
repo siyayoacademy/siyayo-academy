@@ -30,3 +30,9 @@ GREEN CI confirma compatibilidade técnica *dessas provas*, não toda a carreira
 ## Regras de promoção preservadas
 
 Próximo 90C após aceitar o resultado 90B.1; 90C.1 preview portrait; 90D somente staging sob 12 controles e autorização específica; 90E somente após homologação e aprovação explícita. Não tocar PR #3, produção ou DB remoto; manter documentos `docs/JAGUAR-90B-TO-90E-MASTER-ROADMAP.md` e `data/canonical/siyayo-integration-roadmap-90b.json` como contrato obrigatório. Evidências visuais GitHub Actions expiram, não tratá-las como arquivo permanente.
+
+
+## 90B.1.1 · Primeira execução e divergências de proveniência
+- Run 39874297023 foi RED inicial. Testes V30 89Q/89R são fail-closed sem `SIYAYO_89Q_PINNED_ROOT` / `SIYAYO_89R_PINNED_ROOT`, e foram executados sem o checkout imutável; workflow corrigido para criar o checkout `c7e83709` e passar ambos os caminhos.
+- `scripts/test-which-first-attempt-contract.js` é histórico e espera USE sem `mode`. O corpus vigente exige explicitamente `mode:local` (89P, preservado) para impedir crédito cruzado com TRANSFER. Não afrouxar o contrato para aprovar o teste antigo; ele continua no Git e deve permanecer classificado como legado, enquanto o CI utiliza o teste vigente de uso do determinante. Este é um exemplo de auditoria orientada a proveniência, não de perda de código.
+- Revisão browser portrait EN/ES/PT e auditorias seguintes ainda pendem da execução.

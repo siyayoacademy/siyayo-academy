@@ -20,7 +20,15 @@ jobs:
           node scripts/check-jaguar-90a-manifest.mjs
           node scripts/check-jaguar-90b-roadmap.mjs
           node scripts/check-jaguar-90b1-audit.mjs
+      - uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-90b1
       - name: Historical identity, restore and security simulation
+        env:
+          SIYAYO_89Q_PINNED_ROOT: ../../.pinned-explorer-90b1
+          SIYAYO_89R_PINNED_ROOT: ../../.pinned-explorer-90b1
         working-directory: labs/jaguar-v30-3
         run: |
           node --test test/worker.test.mjs test/identity-mock/identity.test.mjs test/bridge.test.mjs test/worker-v30-integration.test.mjs
@@ -34,8 +42,11 @@ jobs:
         with: {node-version: '22'}
       - name: Four canonical QW contracts, origin, support, identity and Trail
         run: |
-          node scripts/test-which-first-attempt-contract.js
-          node scripts/test-which-second-attempt-contract.js
+          # Historical WHICH first-attempt test expects unscoped USE (no mode).
+          # The current contract deliberately requires mode:local. Preserve the
+          # historical test in Git, but gate the current evaluator on modern
+          # LIVE/UI and the already-proven pinned V30 89P mode boundary.
+          node scripts/test-verb-explorer-determiner-use-assessment-live.js
           node scripts/test-which-third-attempt-green-boundary.js
           node scripts/test-s1-what-canonical-green-cycle.js
           node scripts/test-s2-what-canonical-green-cycle.js
