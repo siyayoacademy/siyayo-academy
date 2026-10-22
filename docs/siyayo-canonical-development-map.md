@@ -615,3 +615,7 @@ Arquivos inspecionados: `js/adaptive-assessment-scope.js`, `js/adaptive-learning
 7. **Gate de engenharia ainda aberto:** inventário de todos os pontos de entrada de perfil/sessão e ciclo de vida do armazenamento; testes automatizados de serialização, rejeição de pacote com scope incorreto, duplicação de ocorrência, corpus incompatível e recarga real. Identidade de deployment continua OPEN.
 
 **Status: especificação auditada; runtime de persistência NÃO implementado nem homologado.**
+
+
+## JAGUAR 89X · HOW TO SHOW visual contract: POSSIBLE QUESTIONS ≠ POSSIBLE RESPONSES (2026-10-22)
+**READ BEFORE EVERY NEW ELO/CHAT/RESUME:** [SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT](SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md). This is an explicit previously homologated user-design requirement, not a new proposal. **Question module:** full-width semi-rectangular speaker SVG gold left, centered question, QW bold gold except where revealing the answer. **Response module:** one full-width two-cell speaker/answer row per option, speaker independently actionable, answer evaluable, responsive, no pill/narrow columns, green only positively accepted under owned contract. Validate contract and evidence first, visual next, Learning Trail & Word Path read-only afterward. Prior green tests 89U/89V/89W did not gate all these geometry invariants; human visual homologation still OPEN. No alteration of assessment contracts/main/production is authorized by this registry.

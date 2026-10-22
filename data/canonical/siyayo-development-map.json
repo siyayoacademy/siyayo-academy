@@ -539,5 +539,50 @@
       "nextElo": "read-only inventory, capability/evidence matrix, manifest, isolated proof, human homologation before integration",
       "academyPriorityPreserved": true
     }
+  },
+  "howToShowPossibleQuestionsResponses": {
+    "id": "JAGUAR-89X-HOW-TO-SHOW-PQ-PR",
+    "source": "User-defined Oct 04, Oct 18; reaffirmed two annotated images Oct 22 2026",
+    "status": "recorded-immutable-visual-contract-experimental-integration-awaiting-human-homologation",
+    "document": "docs/SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md",
+    "priority": "P0-read-before-every-elo-and-resume",
+    "logicBeforeRender": true,
+    "possibleQuestions": {
+      "fullWidth": true,
+      "semiRectangular": true,
+      "textCentered": true,
+      "goldSvgSpeakerLeft": true,
+      "qwordGoldBoldUnlessRevealsAnswer": true,
+      "audioNeverCredits": true
+    },
+    "possibleResponses": {
+      "fullWidthOneRowPerAlternative": true,
+      "speechColumnSeparate": true,
+      "answerColumnEvaluative": true,
+      "greenOnlyAcceptedAssertion": true,
+      "negativeOrAssistedNeverGreen": true,
+      "ariaAndKeyboardRequired": true
+    },
+    "trailWordPath": {
+      "outsideLines": true,
+      "readOnly": true,
+      "scope": [
+        "learner",
+        "skill",
+        "assessmentLanguage",
+        "originExperience"
+      ],
+      "greenPassAuthorityUnchanged": true
+    },
+    "criteria": [
+      "contract-prereq",
+      "EN_ES_PT",
+      "desktop_portrait_landscape",
+      "geometry",
+      "speech-no-evidence",
+      "accepted-vs-assisted",
+      "word-path-retention",
+      "human-signoff-before-preview-promotion"
+    ]
   }
 }
