@@ -24,8 +24,8 @@ def enter(page):
  # of the visible corpus/QW buttons. Never click NEXT before its own binding.
  page.wait_for_function("""() =>
    typeof document.getElementById('nextExperience')?.onclick==='function' &&
-   typeof document.getElementById('learnerIdentityConfirm')?.onclick==='function' &&
-   !!window.SIYAYOVerbExplorerAdaptiveCoordinator
+   !!window.SIYAYOVerbExplorerAdaptiveCoordinator &&
+   !!window.SIYAYOVerbExplorerLearnerIdentitySource
  """,timeout=30000)
  if not page.locator("#experienceView").is_visible():
   page.locator('[data-mode="experience"]').click()
