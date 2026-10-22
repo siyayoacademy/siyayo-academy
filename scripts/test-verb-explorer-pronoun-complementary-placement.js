@@ -41,7 +41,7 @@ check(api.mount(input)===false,'not shown without contextual choices');
 check(!document.getElementById('pronounComparisonPanel'),'stale section cleared');
 anchor.hidden=false;
 check(api.mount({...input,language:'en'})===false,'does not invent an English extension');
-check(api.mount({...input,language:'pt'})===false,'does not invent a Portuguese extension');
+check(api.mount({...input,language:'pt'})===true,'Portuguese QUAL/QUAIS complementary module now exists');
 check(explorer.includes('renderLivingLines(x);renderChoiceResolver(x);window.SIYAYOPronounComparison?.mount('),'resolver renders before observational panel');
 check(css.includes('#pronounComparisonPanel>.pronoun-comparison-extension-label'),'responsive section marker present');
 console.log('PASS: complementary pronoun placement; '+checks+' assertions; no new Evidence or Green.');
