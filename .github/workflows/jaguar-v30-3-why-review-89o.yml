@@ -1,0 +1,63 @@
+# V30.3.89O end-to-end SOURCE regression across Shopping→Preparing→Having→After-dinner.
+# This is a read-only laboratory workflow. Do not touch Cloudflare, main or Explorer branch.
+name: JAGUAR V30.3.89O REVIEW WHY S1 S4 transversal audit
+on:
+  push:
+    branches:
+      - jaguar/v30-3-recovery-archive
+    paths:
+      - 'labs/jaguar-v30-3/**'
+      - '.github/workflows/jaguar-v30-3-why-review-89o.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review-why-inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Checkout frozen Explorer from approved source checkpoint
+        uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
+          path: .pinned-explorer-89o
+      - name: Audit 4 stages, 21 QW slots, REVIEW and authority
+        working-directory: labs/jaguar-v30-3
+        env:
+          SIYAYO_89O_PINNED_ROOT: ../../.pinned-explorer-89o
+        run: node --test test/review-why-transversal-89o.test.mjs
+      - name: Canonical regression — S1 WHICH R1 R2 feedback then trilingual REVIEW
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-jaguar-review-after-contextual-feedback.js
+      - name: Canonical regression — WHICH S1 to S2 cross-Experience transfer
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-which-third-attempt-green-boundary.js
+      - name: Canonical regression — WHAT possible S1 to S2 transfer
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-s1-what-canonical-green-cycle.js
+      - name: Canonical regression — WHAT possible S2 to S3 transfer
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-s2-what-canonical-green-cycle.js
+      - name: Canonical regression — WHERE S1 to S2 candidate contract
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-where-location-pass-contract.js
+      - name: Canonical regression — WHY S3 to S4 corpus and contract
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-s3-why-corpus-contract.js
+      - name: Canonical regression — WHY S3 to S4 real Event to Evidence lab simulation
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Canonical regression — WHY mounted local and transfer view
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-s3-why-live-assessment.js
+      - name: Canonical regression — WHY transfer authority remains scoped
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-s3-why-transfer-authority.js
+      - name: Canonical regression — WHY S4 independent Dependency Focus
+        working-directory: .pinned-explorer-89o
+        run: node scripts/test-after-dinner-why-dependency-focus.js
