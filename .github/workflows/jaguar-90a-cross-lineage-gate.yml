@@ -37,7 +37,7 @@ jobs:
           repository: siyayoacademy/siyayo-academy
           ref: c7e83709cacf8479847df0f3cee4ed8a563aaae6
           path: .pinned-explorer-90a
-      - name: Original V30 audit vs frozen Explorer: 89O/P/Q/R
+      - name: 'Original V30 audit vs frozen Explorer: 89O/P/Q/R'
         working-directory: labs/jaguar-v30-3
         env:
           SIYAYO_89O_PINNED_ROOT: ../../.pinned-explorer-90a
