@@ -19,7 +19,7 @@
     {
       "id": "90B",
       "title": "WHY historical-test reconciliation",
-      "status": "implementation-in-progress",
+      "status": "lab-ci-green-39873436430",
       "actions": [
         "Replace legacy flattened DOM selector with answer button inside response row; speaker button is separate",
         "Keep S3 FUNCTION/LOCAL ANSWER and S4 TRANSFER canonical evaluator unchanged",
@@ -35,7 +35,7 @@
     {
       "id": "90B.1",
       "title": "Comprehensive cross-lineage integration review",
-      "status": "pending",
+      "status": "integrated-cross-lineage-audit-in-progress",
       "actions": [
         "Audit V30.3 internal .40/.50/.60/.70/.80, 89O–89T, 89U–89Z",
         "Verify NICK identity vs authenticated learner, QW/language/origin-scoped memory and restoration",
@@ -153,5 +153,19 @@
     "No legacy evidence or source deletions to pass CI",
     "No Cloudflare/Worker/D1 activation, PR #3 modification, main merge, or production deploy during 90B",
     "Check GitHub Actions short-lived image artifacts and preserve agreed visual gold references"
-  ]
+  ],
+  "evidence90B": {
+    "sha": "b8f5020f739585d08f551f2a6dad27484b34cada",
+    "workflowRun": 39873436430,
+    "tests": "90B two jobs GREEN and WHY historical fixed without changing evaluator"
+  },
+  "audit90B1": {
+    "status": "candidate-needs-ci-validation",
+    "branch": "jaguar/explorer-integration-gate-90b1",
+    "source90B": "b8f5020f739585d08f551f2a6dad27484b34cada",
+    "portraitOnly": true,
+    "report": "docs/JAGUAR-90B1-INTEGRATION-AUDIT.md",
+    "machine": "data/canonical/siyayo-integration-audit-90b1.json",
+    "noRealSecurityApproval": true
+  }
 }

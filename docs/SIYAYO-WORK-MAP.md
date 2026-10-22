@@ -2015,3 +2015,7 @@ Preserve V51/V52, shared contracts and approved actor geometry. Animation and po
 
 ## JAGUAR 90B→90E · ROTEIRO OBRIGATÓRIO, incluindo QWs e TENSE/MODE
 **P0 read before every chat, code change or resume:** [JAGUAR 90B→90E full roadmap](JAGUAR-90B-TO-90E-MASTER-ROADMAP.md) and JSON `data/canonical/siyayo-integration-roadmap-90b.json`. Preserve 90A archive tree. Order: 90B reconcile historical WHY 89U DOM test; 90B.1 cross-lineage audits V30.3-.80/89O-Z; 90C HOW TO SHOW + read-only Trail/Word Path + free ES/PT pronouns; 90C.1 portrait preview and human approval; 90D separate Access/Worker/D1 staging with 12 external gates; 90E explicit final authorization before official PR3/main/production. **Do not lose pedagogical future map:** 4 contracted QWs still need live Explorer homologation; remaining QWs need individual contracts/UX; PRESENT more coverage; PAST and FUTURE own contracts; AFFIRMATIVE/NEGATIVE/INTERROGATIVE across each tense/Experience. All are open scope, not claimed complete.
+
+
+## JAGUAR 90B.1 · Auditoria cruzada real de fontes (2026-10-22)
+Leia [JAGUAR 90B.1 integração e domínios W01–W11](JAGUAR-90B1-INTEGRATION-AUDIT.md), mapa máquina `data/canonical/siyayo-integration-audit-90b1.json`, workflow `jaguar-90b1-cross-lineage-audit.yml`. Testa QW/idioma/NICK/origem, WHY S3→S4, WHERE onstart/candidato isolado, Learning Trail/Word Path e prática livre ES/PT. CI e PORTRAIT são laboratório e não legitimam staging com 12 gates externos bloqueados, não atualizam PR #3/main/produção e não concluem QWs restantes, PAST, FUTURE e MODES.

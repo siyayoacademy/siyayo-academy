@@ -142,9 +142,16 @@
     "id": "SIYAYO-JAGUAR-90B-TO-90E-CANONICAL-IMPLEMENTATION-ROADMAP",
     "path": "data/canonical/siyayo-integration-roadmap-90b.json",
     "document": "docs/JAGUAR-90B-TO-90E-MASTER-ROADMAP.md",
-    "status": "gate-90B-running",
+    "status": "90B CI GREEN; 90B.1 AUDIT PENDING",
     "preserved90ARecoveryLabTree": "5ee77257551593b8e4960dd6971cc7ed069fcd56",
     "pastFutureContractHomologation": false,
     "allQWsCompleted": false
+  },
+  "audit90B1": {
+    "branch": "jaguar/explorer-integration-gate-90b1",
+    "originalLabTreePreserved": true,
+    "visualSource89ZPreserved": true,
+    "expectedCi": "cross-lineage source tests + portrait only",
+    "officialExplorerUpdated": false
   }
 }

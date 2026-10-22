@@ -1,0 +1,154 @@
+{
+  "id": "SIYAYO-JAGUAR-90B1-CROSS-LINEAGE-AUDIT",
+  "version": "1.0",
+  "source90B": "b8f5020f739585d08f551f2a6dad27484b34cada",
+  "status": "CI-PENDING",
+  "evidenceType": "offline canonical regression and browser portrait emulator; NOT authenticated learner or real D1",
+  "sourceTree": "5ee77257551593b8e4960dd6971cc7ed069fcd56",
+  "categories": [
+    {
+      "id": "W01",
+      "group": "learner-and-scope",
+      "description": "NICK is display identity, never server-authenticated; QW/language/origin evaluation independent",
+      "paths": [
+        "scripts/test-verb-explorer-learner-identity-source.js",
+        "scripts/test-assessment-language-isolation.js",
+        "scripts/test-choice-occurrence-identity.js",
+        "labs/jaguar-v30-3/test/scoped-memory-continuity-89q.test.mjs"
+      ],
+      "status": "check-by-CI",
+      "blocked": "real authenticated learner still absent"
+    },
+    {
+      "id": "W02",
+      "group": "evidence-authorization",
+      "description": "Only valid learner Event→Result→Evidence→Attempt→Pass Contract may count",
+      "paths": [
+        "scripts/test-which-first-attempt-contract.js",
+        "scripts/test-which-second-attempt-contract.js",
+        "scripts/test-which-third-attempt-green-boundary.js",
+        "scripts/test-where-authority-admission.js",
+        "scripts/test-s3-why-canonical-green-cycle.js"
+      ],
+      "status": "check-by-CI",
+      "blocked": "WHERE remains isolated-candidate"
+    },
+    {
+      "id": "W03",
+      "group": "what-origin",
+      "description": "WHAT S1→S2 and S2→S3 independently scoped by origin, language and learner",
+      "paths": [
+        "scripts/test-s1-what-canonical-green-cycle.js",
+        "scripts/test-s2-what-canonical-green-cycle.js",
+        "scripts/test-s2-what-longitudinal-transfer.js"
+      ],
+      "status": "check-by-CI"
+    },
+    {
+      "id": "W04",
+      "group": "where-and-audio",
+      "description": "WHERE audio onstart not request, no fabricated evidence; S1→S2",
+      "paths": [
+        "scripts/test-where-live-assessment.js",
+        "scripts/test-where-location-pass-contract.js"
+      ],
+      "status": "check-by-CI",
+      "blocked": "physical audio unverified"
+    },
+    {
+      "id": "W05",
+      "group": "why-transfer",
+      "description": "WHY S3 FUNCTION+LOCAL, S4 authorized TRANSFER only for 3/3; speaker never credits",
+      "paths": [
+        "scripts/test-s3-why-canonical-green-cycle.js",
+        "scripts/test-s3-why-live-assessment.js",
+        "scripts/experimental-90b1-why-portrait.py"
+      ],
+      "status": "check-by-CI",
+      "blocked": "real account persist after reload unverified"
+    },
+    {
+      "id": "W06",
+      "group": "which-review",
+      "description": "WHICH R1/R2→feedback→REVIEW and 0/4 contextual score distinct from 0/3",
+      "paths": [
+        "scripts/test-jaguar-review-after-contextual-feedback.js",
+        "scripts/test-verb-explorer-determiner-use-assessment-live.js",
+        "scripts/experimental-90b1-four-qw-portrait.py"
+      ],
+      "status": "check-by-CI"
+    },
+    {
+      "id": "W07",
+      "group": "navigation",
+      "description": "NEXT solely learner-owned; switching QW, locale or scene never wipes canonical progress",
+      "paths": [
+        "scripts/test-verb-explorer-live-next-wire.js",
+        "scripts/test-verb-explorer-toro-presentation-memory.js",
+        "labs/jaguar-v30-3/test/scoped-selection-word-path-89r.test.mjs"
+      ],
+      "status": "check-by-CI"
+    },
+    {
+      "id": "W08",
+      "group": "visual-projection",
+      "description": "Trail and Word Path read-only from accepted evidence; POR QUÉ/POR QUÊ kept separate",
+      "paths": [
+        "scripts/test-verb-explorer-learner-trail-surface.js",
+        "scripts/test-elo7d1-polyglot-word-path-view.js",
+        "scripts/test-elo7d2-word-path-evidence-detail.js",
+        "scripts/experimental-90b1-four-qw-portrait.py"
+      ],
+      "status": "check-by-CI",
+      "blocked": "human visual approval 90C"
+    },
+    {
+      "id": "W09",
+      "group": "grammatical-free-practice",
+      "description": "ES CUÁL/CUÁLES PT QUAL/QUAIS exploratory, no canonical credit",
+      "paths": [
+        "scripts/test-pronoun-contrast-89z.js",
+        "scripts/experimental-89z-portrait.py"
+      ],
+      "status": "check-by-CI"
+    },
+    {
+      "id": "W10",
+      "group": "archived-runtime",
+      "description": "Original archival V30 lab tree and tests intact; local SQLite and mock identity not production",
+      "paths": [
+        "labs/jaguar-v30-3/README.md",
+        "labs/jaguar-v30-3/evidence/PROVENANCE.md",
+        "labs/jaguar-v30-3/test/worker-v30-integration.test.mjs"
+      ],
+      "status": "check-by-CI",
+      "blocked": "12 external staging gates"
+    },
+    {
+      "id": "W11",
+      "group": "future-unfinished",
+      "description": "14 QWs overall, PRESENT/PAST/FUTURE and three modes still need contracts, never silent promotion",
+      "paths": [
+        "data/canonical/siyayo-integration-roadmap-90b.json",
+        "docs/JAGUAR-90B-TO-90E-MASTER-ROADMAP.md"
+      ],
+      "status": "verified-by-manifest-only",
+      "blocked": "not evaluation complete"
+    }
+  ],
+  "contractSkillIds": [
+    "which.use.determiner",
+    "what.use.object-question",
+    "where.use.location-question",
+    "why.use.contextual-reason"
+  ],
+  "whereCandidate": true,
+  "whyS4GreenLabOnly": true,
+  "sourceIdentityNotUserAuthentication": true,
+  "fullStackStagingReleaseBlocked": true,
+  "externalBlockedCount": 12,
+  "workerD1Active": false,
+  "photographicArtifactsTTL": 14,
+  "acceptedRealAudio": false,
+  "futureRoadmap": "data/canonical/siyayo-integration-roadmap-90b.json"
+}

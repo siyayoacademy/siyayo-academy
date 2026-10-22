@@ -662,5 +662,17 @@
     "modes": "AFFIRMATIVE/NEGATIVE/INTERROGATIVE × PRESENT/PAST/FUTURE pending broad assessment",
     "externalSecurityGates": 12,
     "releaseAuthorized": false
+  },
+  "integration90B1": {
+    "id": "JAGUAR-90B.1",
+    "status": "cross-lineage-audit-ci-pending",
+    "branch": "jaguar/explorer-integration-gate-90b1",
+    "report": "docs/JAGUAR-90B1-INTEGRATION-AUDIT.md",
+    "matrix": "data/canonical/siyayo-integration-audit-90b1.json",
+    "browser": "EN/ES/PT portrait only",
+    "source90B": "b8f5020f739585d08f551f2a6dad27484b34cada",
+    "externalGatesRemainBlocked": 12,
+    "realBackendWired": false,
+    "releaseAuthorized": false
   }
 }
