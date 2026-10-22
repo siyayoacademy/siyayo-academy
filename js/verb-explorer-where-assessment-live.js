@@ -159,7 +159,9 @@
     function valid(){return mountedGeneration===generation&&!el.hidden&&stillOwns(bound);}
     function speaker(spoken){
       var button=doc.createElement('button');button.type='button';button.className='where-probe-audio';
-      button.textContent='♪';button.setAttribute('aria-label',labels.hear+': '+spoken);
+      var icon=doc.createElement('span');icon.className='siyayo-speaker';
+      icon.setAttribute('aria-hidden','true');button.appendChild(icon);
+      button.setAttribute('aria-label',labels.hear+': '+spoken);
       button.addEventListener('click',function(){
         if(!valid())return;
         var runtime=root.SIYAYOVerbExplorerExperienceRuntime;

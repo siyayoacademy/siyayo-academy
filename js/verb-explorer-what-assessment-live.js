@@ -146,10 +146,28 @@ function mount(input){
     var label=doc.createElement('h4');label.className='what-probe-step';
     label.textContent=transfer?guidance.transfer:spec.dimension==='question-function'?guidance.function:guidance.local;
     section.appendChild(label);
-    var question=doc.createElement('p');question.className='what-probe-question';question.textContent=spec.question;
+    var question=doc.createElement('button');question.type='button';
+    question.className='what-probe-question what-probe-question-card';
+    question.setAttribute('aria-label',({
+      en:'Listen to question: ',es:'Escuchar pregunta: ',pt:'Ouvir pergunta: '
+    }[language])+spec.question);
+    var questionSpeaker=doc.createElement('span');questionSpeaker.className='siyayo-speaker';
+    questionSpeaker.setAttribute('aria-hidden','true');
+    var questionText=doc.createElement('span');questionText.className='what-probe-question-text';
+    questionText.textContent=spec.question;
+    question.appendChild(questionSpeaker);question.appendChild(questionText);
+    question.addEventListener('click',function(){
+      // Read-only speech: no learner event, no Attempt, no support sensor.
+      if(mountedGeneration!==generation||el.hidden||!isExploringWhat())return;
+      var state=root.SIYAYOVerbExplorerAdaptiveStateBridge?.getState?.();
+      if(!state||text(state.currentExperienceId)!==spec.experienceId||
+        text(state.experienceLanguage)!==spec.language)return;
+      var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+      if(runtime&&typeof runtime.speak==='function')runtime.speak(spec.question,language);
+    });
     var targetQuestion=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='what';});
     var targetPresentation=root.SIYAYOStudyTargetPresentation;
-    if(spec.dimension==='object-answer'&&targetPresentation)question.innerHTML=targetPresentation.highlight(spec.question,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
+    if(spec.dimension==='object-answer'&&targetPresentation)questionText.innerHTML=targetPresentation.highlight(spec.question,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
     section.appendChild(question);
     var options=doc.createElement('div');options.className='what-probe-options';
     if(spec.dimension==='object-answer')options.className+=' what-canonical-options';

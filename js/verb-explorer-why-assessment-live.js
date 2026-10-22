@@ -97,9 +97,16 @@ function mount(input){
       progressLine.hidden=true;return;
     }
     progressLine.hidden=false;
-    progressLine.textContent=progressCopy.map(function(label,i){
-      return label+' '+(projection.satisfied[i]?'●':'○');
-    }).join(' · ')+' — '+projection.completed+'/'+projection.total;
+    progressLine.replaceChildren();
+    var steps=doc.createElement('span');steps.className='why-contract-progress-steps';
+    progressCopy.forEach(function(label,i){
+      var chip=doc.createElement('span');chip.className='why-contract-progress-step';
+      chip.textContent=label+' '+(projection.satisfied[i]?'●':'○');
+      steps.appendChild(chip);
+    });
+    var count=doc.createElement('strong');count.className='why-contract-progress-count';
+    count.textContent=projection.completed+'/'+projection.total;
+    progressLine.appendChild(steps);progressLine.appendChild(count);
   }
   available.forEach(function(spec){
     var section=doc.createElement('div');section.className='why-contextual-reason-probe';

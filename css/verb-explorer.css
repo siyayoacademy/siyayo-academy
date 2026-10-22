@@ -985,3 +985,41 @@ body{
 @media (prefers-reduced-motion:reduce){
   #whyAssessmentPanel .why-probe-option{transition:none}
 }
+
+/* JAGUAR 89V — harmonize WHAT question speech with WHY/LINES, no assessment semantics. */
+#whatAssessmentPanel .what-probe-question-card{
+  display:grid;grid-template-columns:20px minmax(0,1fr);align-items:center;column-gap:12px;
+  width:100%;min-width:0;min-height:78px;padding:15px 17px;
+  border:1px solid rgba(74,143,232,.38);border-radius:12px;
+  background:linear-gradient(90deg,rgba(7,28,53,.95),rgba(5,18,36,.88));
+  color:#eef4ff;font-family:var(--font-body);font-weight:600;line-height:1.45;
+  text-align:center;cursor:pointer;overflow-wrap:anywhere;
+}
+#whatAssessmentPanel .what-probe-question-text{min-width:0;text-align:center}
+#whatAssessmentPanel .what-probe-question-card .siyayo-speaker{width:18px;height:18px;min-width:18px}
+#whatAssessmentPanel .what-probe-question-card:hover{border-color:var(--siyayo-gold-primary)}
+#whatAssessmentPanel .what-probe-question-card:focus-visible{outline:2px solid var(--siyayo-gold-bright);outline-offset:2px}
+#whereAssessmentPanel .where-probe-audio .siyayo-speaker{display:block;width:18px;height:18px;margin:auto}
+#whereAssessmentPanel .where-probe-audio:focus-visible{outline:2px solid var(--siyayo-gold-bright);outline-offset:2px}
+#whyAssessmentPanel .why-contract-progress{
+ display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;
+}
+#whyAssessmentPanel .why-contract-progress-steps{
+ display:flex;flex-wrap:wrap;justify-content:center;gap:6px;
+ width:100%;min-width:0
+}
+#whyAssessmentPanel .why-contract-progress-step{
+ display:inline-block;min-width:0;padding:4px 7px;
+ border:1px solid rgba(242,216,138,.28);border-radius:8px;
+ background:rgba(7,31,65,.8);white-space:normal
+}
+#whyAssessmentPanel .why-contract-progress-count{
+ display:block;flex:0 0 auto;min-width:48px;
+ color:var(--siyayo-gold-bright);font:700 1rem var(--font-display);
+ letter-spacing:.02em;text-align:center
+}
+@container siyayo-explorer (max-width:480px){
+  #whatAssessmentPanel .what-probe-question-card{padding:12px 10px}
+  #whyAssessmentPanel .why-contract-progress{gap:7px}
+  #whyAssessmentPanel .why-contract-progress-step{font-size:.7rem;padding:3px 5px}
+}
