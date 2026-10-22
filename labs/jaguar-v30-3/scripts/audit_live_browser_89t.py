@@ -20,6 +20,13 @@ def shot(page,label):
 def enter(page):
  page.goto(URL,wait_until="domcontentloaded",timeout=25000)
  page.wait_for_function("() => !!window.SIYAYOVerbExplorerExperienceNavigation && document.querySelectorAll('#questionGear [data-question-index]').length>=4",timeout=20000)
+ # Both the learning cycle and NEXT wire bootstrap asynchronously, independently
+ # of the visible corpus/QW buttons. Never click NEXT before its own binding.
+ page.wait_for_function("""() =>
+   typeof document.getElementById('nextExperience')?.onclick==='function' &&
+   typeof document.getElementById('learnerIdentityConfirm')?.onclick==='function' &&
+   !!window.SIYAYOVerbExplorerAdaptiveCoordinator
+ """,timeout=30000)
  if not page.locator("#experienceView").is_visible():
   page.locator('[data-mode="experience"]').click()
  check("Shopping" in page.locator("#experienceTitle").inner_text(),"not S1 Shopping")
@@ -31,6 +38,17 @@ def keep(label,page,fn):
  except Exception as error:
   item["error"]=str(error)[:1200]
   item["trace"]=traceback.format_exc()[-2500:]
+  try:
+   item["browser_state"]=page.evaluate("""() => ({
+     experience:window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId?.()||null,
+     nextBound:typeof document.getElementById('nextExperience')?.onclick==='function',
+     nextTo:document.getElementById('nextExperience')?.dataset?.nextExperience||null,
+     nextCardState:document.getElementById('nextExperience')?.closest('.toroidal-next')?.dataset?.nextState||null,
+     hasCoordinator:!!window.SIYAYOVerbExplorerAdaptiveCoordinator,
+     hasNextWire:!!window.SIYAYOVerbExplorerLiveNextWire,
+     hasIdentity:!!window.SIYAYOVerbExplorerLearnerIdentitySource
+   })""")
+  except Exception:pass
   try:shot(page,"FAIL-"+label)
   except Exception:pass
  finally:
@@ -93,10 +111,18 @@ def spec_labels(page,language):
 def why_case(page,language):
  enter(page)
  # S1 → S2 → S3 via explicit, learner-owned NEXT; no scoring from navigation.
+ # Real NEXT remains learner-owned; verify the source-installed onclick and route.
+ check(page.evaluate("() => typeof document.querySelector('#nextExperience')?.onclick==='function'"),"NEXT not installed before first visit")
  page.locator("#nextExperience").click()
- page.wait_for_function("() => document.querySelector('#experienceTitle')?.textContent?.includes('Preparing')",timeout=12000)
+ page.wait_for_function("""() => 
+   window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId?.()==='preparing-dinner' &&
+   document.querySelector('#experienceTitle')?.textContent?.includes('Preparing')
+ """,timeout=12000)
  page.locator("#nextExperience").click()
- page.wait_for_function("() => document.querySelector('#experienceTitle')?.textContent?.includes('Having')",timeout=12000)
+ page.wait_for_function("""() =>
+   window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId?.()==='having-dinner' &&
+   document.querySelector('#experienceTitle')?.textContent?.includes('Having')
+ """,timeout=12000)
  page.locator('[data-experience-language="'+language+'"]').click()
  page.locator("#learnerIdentityInput").fill("JAGUAR-89T-SYNTH-"+language.upper())
  page.locator("#learnerIdentityConfirm").click()
