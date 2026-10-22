@@ -36,3 +36,7 @@ Próximo 90C após aceitar o resultado 90B.1; 90C.1 preview portrait; 90D soment
 - Run 39874297023 foi RED inicial. Testes V30 89Q/89R são fail-closed sem `SIYAYO_89Q_PINNED_ROOT` / `SIYAYO_89R_PINNED_ROOT`, e foram executados sem o checkout imutável; workflow corrigido para criar o checkout `c7e83709` e passar ambos os caminhos.
 - `scripts/test-which-first-attempt-contract.js` é histórico e espera USE sem `mode`. O corpus vigente exige explicitamente `mode:local` (89P, preservado) para impedir crédito cruzado com TRANSFER. Não afrouxar o contrato para aprovar o teste antigo; ele continua no Git e deve permanecer classificado como legado, enquanto o CI utiliza o teste vigente de uso do determinante. Este é um exemplo de auditoria orientada a proveniência, não de perda de código.
 - Revisão browser portrait EN/ES/PT e auditorias seguintes ainda pendem da execução.
+
+
+## 90B.1.2 · Third WHICH evidence must specify local mode
+Run 39874485838: archived source/portrait GREEN, current canonical job RED on historical `test-which-third-attempt-green-boundary.js` because its fixture supplies second evidence without explicit `mode:local`. Current Pass Contract correctly waits instead of returning false GREEN. The test remains unchanged and preserved. The compatibility variant `scripts/test-which-third-attempt-green-boundary-90b1.js` supplies the necessary `mode:local` for the already-valid existing second evidence, then tests third `mode:transfer` Green/learner-owned NEXT. No production evaluator or historical contract changed.

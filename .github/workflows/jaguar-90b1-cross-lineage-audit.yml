@@ -47,7 +47,7 @@ jobs:
           # historical test in Git, but gate the current evaluator on modern
           # LIVE/UI and the already-proven pinned V30 89P mode boundary.
           node scripts/test-verb-explorer-determiner-use-assessment-live.js
-          node scripts/test-which-third-attempt-green-boundary.js
+          node scripts/test-which-third-attempt-green-boundary-90b1.js
           node scripts/test-s1-what-canonical-green-cycle.js
           node scripts/test-s2-what-canonical-green-cycle.js
           node scripts/test-s2-what-longitudinal-transfer.js
