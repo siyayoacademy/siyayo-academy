@@ -24,6 +24,16 @@ function panel(doc){
   return el;
 }
 function hide(doc){generation+=1;var el=panel(doc);if(!el)return false;el.hidden=true;el.innerHTML='';return true;}
+// HOW TO SHOW 89U: speech is presentation-only. It cannot submit an Attempt.
+function speakOnly(spec,language,doc,ownerGeneration,host){
+  if(ownerGeneration!==generation||host.hidden||!isExploringWhy())return false;
+  var state=root.SIYAYOVerbExplorerAdaptiveStateBridge?.getState?.();
+  if(!state||text(state.currentExperienceId)!==text(spec.experienceId)||
+    text(state.experienceLanguage)!==language)return false;
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  if(!runtime||typeof runtime.speak!=='function')return false;
+  return runtime;
+}
 function mount(input){
   input=input||{};
   var doc=input.document||root.document,el=panel(doc);
@@ -69,19 +79,56 @@ function mount(input){
   var title=doc.createElement('h3');title.textContent=copy.heading;el.appendChild(title);
   var feedback=doc.createElement('p');feedback.setAttribute('aria-live','polite');feedback.hidden=true;
   var sensor=Object.freeze({support:function(){return 'none';}});
+  // Read-only canonical projection, shared with Learning Trail / Word Path.
+  var progressCopy={
+    en:['FUNCTION','LOCAL ANSWER','TRANSFER'],
+    es:['FUNCIÓN','RESPUESTA LOCAL','TRANSFERENCIA'],
+    pt:['FUNÇÃO','RESPOSTA LOCAL','TRANSFERÊNCIA']
+  }[language];
+  var progressLine=doc.createElement('p');
+  progressLine.className='why-contract-progress';
+  progressLine.setAttribute('aria-live','polite');
+  function showCanonicalProgress(){
+    var latest=coordinator.snapshot();
+    var view=root.AdaptivePassContractProgressView;
+    var context=latest&&latest.session===active.session?latest.context:null;
+    var projection=context&&view?.project?.(context.passContract,context.evidencePackets,root.GreenPassProfile);
+    if(!projection||projection.total!==3||!Array.isArray(projection.satisfied)){
+      progressLine.hidden=true;return;
+    }
+    progressLine.hidden=false;
+    progressLine.textContent=progressCopy.map(function(label,i){
+      return label+' '+(projection.satisfied[i]?'●':'○');
+    }).join(' · ')+' — '+projection.completed+'/'+projection.total;
+  }
   available.forEach(function(spec){
     var section=doc.createElement('div');section.className='why-contextual-reason-probe';
     var label=doc.createElement('h4');label.className='why-probe-step';
     label.textContent=transfer?guidance.transfer:spec.dimension==='question-function'?guidance.function:guidance.local;
     section.appendChild(label);
-    var question=doc.createElement('p');question.className='why-probe-question';question.textContent=spec.question;
+    var question=doc.createElement('button');question.type='button';
+    question.className='why-probe-question why-probe-question-card';
+    var questionSpeaker=doc.createElement('span');questionSpeaker.className='siyayo-speaker';
+    questionSpeaker.setAttribute('aria-hidden','true');
+    var questionText=doc.createElement('span');questionText.className='why-probe-question-text';
+    questionText.textContent=spec.question;
+    question.appendChild(questionSpeaker);question.appendChild(questionText);
+    question.setAttribute('aria-label',({
+      en:'Listen to question: ',es:'Escuchar pregunta: ',pt:'Ouvir pergunta: '
+    }[language])+spec.question);
+    question.addEventListener('click',function(){
+      var runtime=speakOnly(spec,language,doc,mountedGeneration,el);
+      if(runtime)runtime.speak(spec.question,language);
+    });
     var targetQuestion=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='why';});
     var targetPresentation=root.SIYAYOStudyTargetPresentation;
-    if(spec.dimension==='reason-answer'&&targetPresentation)question.innerHTML=targetPresentation.highlight(spec.question,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
+    if(spec.dimension==='reason-answer'&&targetPresentation)questionText.innerHTML=targetPresentation.highlight(spec.question,targetQuestion&&targetQuestion.questionWordLabel&&targetQuestion.questionWordLabel[language]);
     section.appendChild(question);
     var options=doc.createElement('div');options.className='why-probe-options';
-    spec.alternatives.forEach(function(alternative){
-      var button=doc.createElement('button');button.type='button';button.className='why-probe-option';button.textContent=alternative.label;
+    spec.alternatives.forEach(function(alternative,alternativeIndex){
+      var button=doc.createElement('button');button.type='button';button.className='why-probe-option';
+      button.textContent=alternative.label;button.dataset.whySlot=String(alternativeIndex+1);
+      button.setAttribute('aria-pressed','false');
       button.addEventListener('click',function(){
         if(mountedGeneration!==generation||el.hidden||!isExploringWhy())return;
         var current=coordinator.snapshot();
@@ -100,6 +147,12 @@ function mount(input){
         if(!attempt)return;
         var submitted=coordinator.submitObservedAttempt(attempt,event,button);
         if(!submitted)return;
+        if(typeof options.querySelectorAll==='function'){
+          Array.prototype.forEach.call(options.querySelectorAll('.why-probe-option'),function(item){
+            item.setAttribute('aria-pressed',String(item===button&&evaluated.result==='pass'));
+          });
+        }
+        showCanonicalProgress();
         var closure=submitted.cycleResult&&submitted.cycleResult.contractEvaluation;
         feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
           ?copy.green:evaluated.result==='pass'?copy.registered:copy.retry;
@@ -111,11 +164,27 @@ function mount(input){
         if(runtime&&typeof runtime.refreshAssessmentHighlight==='function')runtime.refreshAssessmentHighlight();
       });
       options.appendChild(button);
+      // Direct sibling keeps historical selection controls stable in the DOM;
+      // CSS places the independent speaker to the LEFT of the same answer.
+      var audio=doc.createElement('button');audio.type='button';
+      audio.className='why-probe-audio';audio.dataset.whySlot=String(alternativeIndex+1);
+      audio.setAttribute('aria-label',({
+        en:'Listen to response: ',es:'Escuchar respuesta: ',pt:'Ouvir resposta: '
+      }[language])+alternative.label);
+      var icon=doc.createElement('span');icon.className='siyayo-speaker';
+      icon.setAttribute('aria-hidden','true');audio.appendChild(icon);
+      audio.addEventListener('click',function(){
+        var runtime=speakOnly(spec,language,doc,mountedGeneration,el);
+        if(runtime)runtime.speak(alternative.label,language);
+      });
+      options.appendChild(audio);
     });
     section.appendChild(options);
     el.appendChild(section);
   });
+  el.appendChild(progressLine);
   el.appendChild(feedback);
+  showCanonicalProgress();
   var savedFeedback=feedbackKey&&feedbackMemory[feedbackKey];
   var progressView=root.AdaptivePassContractProgressView;
   var progress=active.context&&progressView&&progressView.project(active.context.passContract,active.context.evidencePackets,root.GreenPassProfile);
