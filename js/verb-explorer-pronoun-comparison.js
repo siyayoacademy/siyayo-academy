@@ -17,7 +17,7 @@
   if(Array.isArray(spec.cases)){
    return spec.cases.find(function(c){return c.id===caseId;})||null;
   }
-  return caseId===undefined||caseId===null?spec:null;
+  return caseId===undefined||caseId===null?spec.cases[0]:null;
  }
  function evaluate(spec,choice,caseId){
   if(!spec||!['es','pt'].includes(spec.language)||

@@ -27,10 +27,10 @@ check(panel.nextSibling===document.getElementById('contrastProbePanel'),'other p
 check(panel.children[0].textContent.includes('EXPLORACIÓN GRAMATICAL COMPLEMENTARIA'),'separate complementary label');
 check(panel.children[0].textContent.includes('PRÁCTICA LIBRE'),'free practice label');
 check(panel.attrs['aria-label']==='Exploración gramatical complementaria','accessible section');
-check(panel.children.filter(c=>c.tag==='button').length===3,'audio + two options preserved');
-panel.children.find(c=>c.className==='choice-audio').onclick();
-check(played.length===1&&played[0].s===question.pronounComparison.prompt&&played[0].l==='es','Spanish speech unchanged');
-panel.children.find(c=>c.tag==='button'&&c.textContent==='Cuál').onclick();
+check(panel.children.filter(c=>c.className==='pronoun-comparison-case').length===2,'two authored ES situations preserved');
+panel.children.find(c=>c.className==='pronoun-comparison-case').children.find(c=>c.className==='pronoun-comparison-question-card').onclick();
+check(played.length===1&&played[0].s===question.pronounComparison.cases[0].audioSetup&&played[0].l==='es','Spanish speech unchanged');
+panel.children.find(c=>c.className==='pronoun-comparison-case').children.find(c=>c.className==='pronoun-comparison-response-list').children.find(c=>c.className==='pronoun-comparison-response-row').children.find(c=>c.className==='pronoun-comparison-option').onclick();
 check(api.getTrace().at(-1).result==='pass','correct canonical candidate ID unchanged');
 check(api.getTrace().at(-1).evidenceProduced===false,'observation is not Evidence');
 check(api.getTrace().at(-1).greenPass===false,'observation is not Green Pass');

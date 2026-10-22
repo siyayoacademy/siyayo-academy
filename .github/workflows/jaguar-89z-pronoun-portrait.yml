@@ -1,0 +1,39 @@
+name: JAGUAR 89Z portrait ES PT contrast
+on:
+  push:
+    branches: [jaguar/verb-explorer-pronoun-contrast-89z]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  portrait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - name: Existing assessment and new singular plural regressions
+        run: |
+          node --check js/verb-explorer-pronoun-comparison.js
+          node scripts/test-cual-cuales-extension.js
+          node scripts/test-verb-explorer-pronoun-complementary-placement.js
+          node scripts/test-pronoun-contrast-89z.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-jaguar-review-after-contextual-feedback.js
+      - name: Real Chrome portrait only
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/89z-http.log" 2>&1 &
+          sleep 3
+          python scripts/experimental-89z-portrait.py
+      - name: Upload portrait screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: jaguar-89z-es-pt-portrait-only
+          path: visual-audit-89z/
+          retention-days: 14
+          if-no-files-found: warn
