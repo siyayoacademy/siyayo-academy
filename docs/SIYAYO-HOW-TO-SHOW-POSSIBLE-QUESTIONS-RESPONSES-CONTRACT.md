@@ -39,3 +39,14 @@
 8. If tests omit a geometry or visual-acceptance requirement, a green CI cannot be described as complete HOW TO SHOW homologation. RED → investigate, not remove the authority check to make CI green.
 
 **Files/owners:** `js/verb-explorer-{what,where,why}-assessment-live.js` (module actions), `css/verb-explorer.css` (presentation); `js/verb-explorer-learner-trail-surface.js` and `js/verb-explorer-polyglot-word-path-view.js` (read-only); no new authority. Expansion into other QWs and PAST/FUTURE comes after grounded contracts and separate approval.
+
+
+## E. 89X.1 · portrait WHERE, LINES reference and Learning Trail (user screenshots 2026-10-22)
+**Must read before each chat/ELO/resume.** The user supplied two more annotated portrait images: `image(20261022-205410).png` and `image(20261022-205601).png`.
+
+- **Question is ONE element:** a single semi-rectangular possible-question card with the gold SVG speaker integrated *inside* the card. **No dividing line** between speaker and question. The *response* rows deliberately DO have independent speaker and assessment regions. Never copy the response geometry to a question.
+- **Grammar QW gold-bold and atomic:** `Onde` must never split into `Ond` / `e`, nor may any translated QW lose diacritics or break mid-word. Prefer one line if legible within actual panel width; otherwise wrap between words naturally. Pedagogical non-disclosure exception applies when the QW itself is being assessed.
+- **LINES reference (homologated):** the corpus presents an authored question and its contextual response using two full-width speech cards, speech SVG left. The visible headings `QUESTION/PREGUNTA/PERGUNTA` and `CONTEXTUAL CORPUS FORM/FORMA CONTEXTUAL DEL CORPUS/FORMA CONTEXTUAL DO CORPUS` must **NOT** occupy the cards. Preserve semantic role in the metadata and accessible name; do not delete corpus lines or speaker controls. Follow-up and R1/R2/REVIEW labels remain separately governed.
+- **Learning Trail ALL QWs portrait:** place `PALAVRA INTERROGATIVA` and `ADVÉRBIO INTERROGATIVO` on different controlled lines; do not put literal `<br>` in source data. Equivalent split for EN/ES. This is a grammatical classification, not an alternative, and gives no Evidence.
+- **Word Path portrait:** ES and PT QW translations (including `POR QUÉ` vs `POR QUÊ` when different) must appear on separate readable lines. Preserve each source form/diacritics, and keep horizontal scrolling **inside** the table. Do not force the entire page to overflow.
+- **NO false homologation:** previous 89X 9/9 only checked broad question/response widths, not these exact assertions. After this change, verify LINES label omission, WHERE question one-button gold-SVG structure, atomic highlight, Trail paired grammar spans, Word Path language spans in EN/ES/PT viewport screenshots. Retest canonical evidence, audio-onstart and NEXT separately. Human visual approval remains pending. `main`, PR #3 and production protected.

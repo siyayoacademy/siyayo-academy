@@ -208,7 +208,8 @@ function view(input){
      (detail?'<small class="wp-poly-origin">'+escapeHtml(detail)+'</small>':'')+'</td>';
  }
  var rows=WORDS.map(function(word){
-   return '<tr><th scope="row" class="wp-poly-word"><strong>'+escapeHtml(word.en)+'</strong><small>'+escapeHtml(word.es)+' · '+escapeHtml(word.pt)+'</small></th>'+
+   return '<tr><th scope="row" class="wp-poly-word"><strong>'+escapeHtml(word.en)+'</strong><small class="wp-poly-word-translations">'+
+      '<span lang="es">'+escapeHtml(word.es)+'</span><span lang="pt">'+escapeHtml(word.pt)+'</span></small></th>'+
      LANGUAGES.map(function(l){return one(word,l);}).join('')+'</tr>';
  }).join('');
  return '<section class="wp-polyglot" aria-label="'+escapeHtml(copy.heading)+'">'+

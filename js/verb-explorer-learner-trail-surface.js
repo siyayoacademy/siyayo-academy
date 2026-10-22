@@ -332,8 +332,11 @@
       (catalog.getExperience(decision.experienceId)||{}).toroidalNext?.nextExperience===experience.id);
     var transferCopy={en:'TRANSFER IN PROGRESS · awaiting accepted evidence',es:'TRANSFERENCIA EN CURSO · esperando evidencia aceptada',pt:'TRANSFERÊNCIA EM CURSO · aguardando evidência aceita'}[language];
     var assessmentHtml=
-      '<small class="learner-trail-meta">'+escapeHtml((exploring?label:displayLabel).family||'')+
-        ((exploring?label:displayLabel).grammarRole?' · '+escapeHtml((exploring?label:displayLabel).grammarRole):'')+'</small>'+
+      '<small class="learner-trail-meta">'+
+        '<span class="learner-trail-family">'+escapeHtml((exploring?label:displayLabel).family||'')+'</span>'+
+        ((exploring?label:displayLabel).grammarRole?
+          '<span class="learner-trail-grammar-role">'+escapeHtml((exploring?label:displayLabel).grammarRole)+'</span>':'')+
+        '</small>'+
       '<small>'+(exploring?escapeHtml(markerGlyph)+' ':'')+
         escapeHtml(marker.state==='UNOBSERVED'&&observations.length?({en:'ASSESSMENT NOT YET OBSERVED',es:'EVALUACIÓN AÚN NO OBSERVADA',pt:'AVALIAÇÃO AINDA NÃO OBSERVADA'}[language]):stateLabel(marker.state,language))+' · '+escapeHtml(contexts)+'</small>'+
       (marker.state==='IN_PROGRESS'?'<small class="learner-trail-observation">'+escapeHtml(observationLabel(language))+'</small>':'')+

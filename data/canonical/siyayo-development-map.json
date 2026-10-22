@@ -583,6 +583,38 @@
       "accepted-vs-assisted",
       "word-path-retention",
       "human-signoff-before-preview-promotion"
-    ]
+    ],
+    "portraitExtension": {
+      "id": "JAGUAR-89X.1-PORTRAIT-LINES-QW-TRAIL",
+      "source": [
+        "image(20261022-205410).png",
+        "image(20261022-205601).png"
+      ],
+      "status": "implementation-on-isolated-89x-awaiting-browser-check-and-human-approval",
+      "possibleQuestion": {
+        "singleIntegratedSpeechCard": true,
+        "noDivider": true,
+        "atomicGoldQW": true,
+        "wrapBetweenWords": true
+      },
+      "possibleResponses": {
+        "separateAudioAndAssessmentRegions": true,
+        "fullWidthPerAlternative": true
+      },
+      "livingLines": {
+        "corpusQuestionAndContextualAnswerVisibleRoleLabels": false,
+        "speechSpeakerRemain": true,
+        "roleAccessible": true
+      },
+      "trailWordPath": {
+        "allQWsGrammarFamilyAndRoleSeparateLines": true,
+        "esPtWordFormsSeparateLines": true,
+        "keepDiacriticsAndInternalScroll": true
+      },
+      "evidence": {
+        "noNewAssessmentAuthority": true,
+        "whereAudioOnstartRemainsIndependent": false
+      }
+    }
   }
 }

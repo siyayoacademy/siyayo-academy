@@ -1110,3 +1110,45 @@ body{
   min-height:64px;padding:11px 9px;font-size:.94rem
  }
 }
+
+/* JAGUAR 89X.1 · single-control possible question: gold speaker IN the card,
+   never the two-cell possible-response pattern. */
+#whereAssessmentPanel button.where-probe-question{
+ display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;
+ gap:9px;min-height:76px;width:100%;box-sizing:border-box;
+ padding:14px 16px;border:1px solid rgba(74,143,232,.48);
+ border-radius:12px;background:linear-gradient(90deg,rgba(7,28,53,.95),rgba(5,18,36,.88));
+ color:#eef4ff;cursor:pointer;text-align:center
+}
+#whereAssessmentPanel button.where-probe-question .siyayo-speaker{
+ display:block;align-self:center;justify-self:center;
+ width:18px;height:18px;min-width:18px
+}
+#whereAssessmentPanel button.where-probe-question .where-probe-question-text{
+ min-width:0;display:block;padding:0;
+ text-align:center;overflow-wrap:normal;word-break:normal;
+ font-size:clamp(.96rem,1.9cqw,1.13rem);line-height:1.45
+}
+#whereAssessmentPanel button.where-probe-question:focus-visible{
+ outline:2px solid var(--siyayo-gold-bright);outline-offset:2px
+}
+#whereAssessmentPanel .where-probe-question-text .study-target-word,
+#whatAssessmentPanel .what-probe-question-text .study-target-word,
+#whyAssessmentPanel .why-probe-question-text .study-target-word,
+#livingLines .study-target-word{
+ display:inline-block;white-space:nowrap;overflow-wrap:normal;word-break:keep-all;
+ font-weight:800;color:var(--siyayo-gold-primary);
+}
+#livingLines .living-line:has(> p:first-child){min-height:68px}
+#livingLines .living-line:has(> p:first-child)>p{margin-block:auto}
+.learner-trail-meta .learner-trail-family,
+.learner-trail-meta .learner-trail-grammar-role{display:block;white-space:normal;overflow-wrap:normal;word-break:normal}
+.wp-poly-word-translations span{display:block;white-space:nowrap;overflow-wrap:normal;word-break:keep-all}
+@container siyayo-explorer (max-width:520px){
+ #whereAssessmentPanel button.where-probe-question{
+  grid-template-columns:20px minmax(0,1fr);padding:12px 11px;gap:7px;
+ }
+ .wp-poly-table{min-width:410px}
+ .wp-poly-word-translations span{font-size:.62rem;line-height:1.4}
+ .learner-trail-meta{max-width:100%;line-height:1.4}
+}

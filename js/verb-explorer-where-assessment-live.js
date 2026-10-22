@@ -173,8 +173,16 @@
       section.dataset.dimension=spec.dimension;section.dataset.mode=spec.mode;
       var title=doc.createElement('h4');title.textContent=spec.mode==='transfer'?labels.transfer:
         spec.dimension==='spatial-function'?labels.function:labels.local;section.appendChild(title);
-      var question=doc.createElement('div');question.className='where-probe-question';
-      question.appendChild(speaker(spec.question));
+      var question=doc.createElement('button');question.type='button';
+      question.className='where-probe-question';
+      question.setAttribute('aria-label',labels.hear+': '+spec.question);
+      var questionIcon=doc.createElement('span');questionIcon.className='siyayo-speaker';
+      questionIcon.setAttribute('aria-hidden','true');question.appendChild(questionIcon);
+      question.addEventListener('click',function(){
+        if(!valid())return;
+        var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+        if(runtime&&typeof runtime.speak==='function')runtime.speak(spec.question,bound.language);
+      });
       var sentence=doc.createElement('span');sentence.className='where-probe-question-text';
       sentence.textContent=spec.question;
       if(spec.dimension!=='spatial-function'&&root.SIYAYOStudyTargetPresentation){
