@@ -26,3 +26,7 @@ O verificador encontrou **6 lacunas de autoria** (S1 Shopping e S2 Preparing × 
 
 ## 90C.2.2 · Browser RED initial: sequence S1→S2→S3 must await navigation
 Run 39887385284: authority CI PASS but strict portrait RED 0/3 because script clicked NEXT twice without awaiting intermediate S2; second click may be dropped during render and timeout followed. Browser test fixed with explicit S2 navigation wait; no production evaluator modification. Retest required before green.
+
+
+## 90C.2.3 · Root cause: premature NEXT click before runtime wire
+Run 39887584937 failed from S1 because the new browser audit waited for a runtime symbol but **not** for `#nextExperience.onclick` wiring. Screenshot proved the page remained in Shopping with no learner, not an incorrect WHY answer. Fixed to wait for installed click handler, as already used in GREEN 90C script. No pedagogical runtime changed. Rerun required.
