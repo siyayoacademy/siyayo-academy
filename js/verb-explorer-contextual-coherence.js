@@ -21,6 +21,23 @@
       status:'not-authored',reason:'tense-mode-unsupported',notice:pending[language],
       tense:tense||'',form:form||''
     });
+    // 90C.6: separate authored exploratory reference, never an assessment target.
+    var presentation=question.presentationGrounding;
+    if(presentation){
+      if(presentation.kind!=='exploratory-causal-dialogue'||presentation.groundedIn!=='situation'||
+        presentation.assessmentAuthority!==false||presentation.assessmentEvidence!==false||
+        question.assessmentTarget||question.assessmentResumeTarget||
+        presentation.tense!=='present'||presentation.form!=='affirmative')
+        return Object.freeze({status:'corpus-gap',reason:'invalid-exploration-boundary'});
+      var alternatives=presentation.alternatives||[],selected=alternatives.filter(function(a){return a&&a.id===presentation.referenceReasonId;});
+      if(!Array.isArray(alternatives)||alternatives.length<2||new Set(alternatives.map(function(a){return a.id;})).size!==alternatives.length||selected.length!==1)
+        return Object.freeze({status:'corpus-gap',reason:'invalid-exploration-reason'});
+      var localized=alternatives.every(function(a){return value(a.response&&a.response[language]);});
+      if(!localized)return Object.freeze({status:'corpus-gap',reason:'missing-exploration-translation'});
+      return Object.freeze({status:'grounded',question:value(presentation.questionOverride&&presentation.questionOverride[language])||questionText,
+        response:value(selected[0].response[language]),source:'presentationGrounding.referenceReasonId',
+        reasonId:presentation.referenceReasonId,assessmentEvidence:false,greenPass:false,exploratory:true});
+    }
     var ground=question.reasonGrounding,answers=ground&&ground.alternatives;
     if(!ground||ground.groundedIn!=='situation'||!Array.isArray(answers)||!value(ground.acceptedReasonId))
       return Object.freeze({status:'corpus-gap',reason:'missing-grounding'});
