@@ -142,10 +142,16 @@ function independentEntryAllowed(question,target,decision,learnerId,state){
   var origin=navigation.getExperience(scope.originExperienceId);
   var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
   var definition=source&&source.getDefinition&&source.getDefinition();
-  if(!origin||text(origin.toroidalNext&&origin.toroidalNext.nextExperience)!==destination.id||
-    !definition||definition.id!==scope.skill)return false;
+  if(!origin||!definition||definition.id!==scope.skill)return false;
+  var direct=text(origin.toroidalNext&&origin.toroidalNext.nextExperience)===destination.id;
+  function declaredRoute(rule){
+    if(direct)return true;
+    if(rule.entryMode!=='explicit-independent-start'||rule.allowCanonicalMultiHop!==true)return false;
+    var next=navigation.getExperience(text(origin.toroidalNext&&origin.toroidalNext.nextExperience));
+    return !!next&&text(next.toroidalNext&&next.toroidalNext.nextExperience)===destination.id;
+  }
   return canonical.assessmentEntryFrom.some(function(rule){
-    return rule.originExperienceId===scope.originExperienceId&&rule.skill===scope.skill&&
+    return rule.originExperienceId===scope.originExperienceId&&rule.skill===scope.skill&&declaredRoute(rule)&&
       (origin.thinkingMind||[]).some(function(item){return item.assessmentTarget&&item.assessmentTarget.skill===rule.skill;});
   });
 }
