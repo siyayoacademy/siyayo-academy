@@ -66,7 +66,7 @@ for(const exp of ['shopping-for-dinner','preparing-dinner']){
  const which=list.find(x=>x.experience===exp&&x.questionWord==='which');
  const why=list.find(x=>x.experience===exp&&x.questionWord==='why');
  assert.ok(which&&langs.every(l=>which.loc[l].dependencyFocus&&which.loc[l].headProbe));
- assert.ok(why?.stage==='FREE_CONTEXTUAL'&&why.open.includes('DEPENDENCY_FOCUS_NOT_AUTHORED'));
+ assert.ok(why?.stage==='FREE_CONTEXTUAL'&&['en','es','pt'].every(lang=>why.loc[lang].dependencyFocus&&why.loc[lang].headProbe));
 }
 assert.equal(list.find(x=>x.experience==='having-dinner'&&x.questionWord==='why')?.owner,'why.use.contextual-reason');
 assert.equal(list.find(x=>x.experience==='after-dinner-conversation'&&x.questionWord==='why')?.stage,'TRANSFER_CORPUS');
