@@ -178,13 +178,47 @@
     "externalGatesBlocked": 12
   },
   "coherence90C2": {
-    "status": "CI_PENDING",
+    "status": "CI_GREEN_PREVIEW_HUMAN_PENDING",
     "branch": "jaguar/explorer-contextual-coherence-90c2",
     "source": "53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da",
     "documentation": "docs/JAGUAR-90C2-CONTEXTUAL-COHERENCE-GATE.md",
     "prePromotionGate": true,
     "verifiedOnly": "PRESENT/AFFIRMATIVE WHY; other tense/mode remain unauthored",
     "futureQwTenseModeCompliance": true,
-    "realPreviewHumanApproval": false
+    "realPreviewHumanApproval": false,
+    "ciEvidence": {
+      "commit": "a6924981a99ed886cdfecf210cc49d0b850f6e3a",
+      "runId": 39887857301,
+      "authority": "PASS",
+      "portrait": "PASS",
+      "chromiumLanguages": "EN_ES_PT_3_OF_3",
+      "whyTrailTransfer": "EN_ES_PT_3_OF_3",
+      "artifactId": 12473725975
+    },
+    "isolatedPreview": {
+      "branch": "jaguar/explorer-portrait-preview-90c2",
+      "head": "d50f09157614d62fcf27192ac91fa20e706ea858",
+      "gitHubSourceAvailable": true,
+      "deploymentVerified": false,
+      "approvedByHuman": false,
+      "reason": "Tested plausible Cloudflare branch alias returns 404; actual deployed URL and build identity not established."
+    }
+  },
+  "retroactiveCoherence90C3": {
+    "status": "STRUCTURAL_CI_GREEN_SEMANTIC_HUMAN_REVIEW_PENDING",
+    "branch": "jaguar/explorer-retro-coherence-90c3",
+    "checkpoint": "267ffc50c97f826f3ad6e0855d687ad57d9bd2ac",
+    "runId": 39953968467,
+    "metrics": {
+      "experiences": 4,
+      "questionEntries": 21,
+      "localizedQuestionTexts": 63,
+      "authoredGrammarTriples": 45,
+      "whyGrounded": 6,
+      "whyKnownGaps": 6,
+      "whyUnexpectedGaps": 0
+    },
+    "assessmentCertifiedByThisTest": false,
+    "authoringS1S2": "UNAPPROVED"
   }
 }
