@@ -1,0 +1,77 @@
+# Isolated static-only branch: no external secrets and no deployment from CI.
+name: JAGUAR 90C.1 isolated static PORTRAIT preview validation
+on:
+  push:
+    branches: [jaguar/explorer-portrait-preview-90c1]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  safety-and-bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v5
+      - name: Assert no backend/admin/lab leaked into preview tree
+        run: |
+          test ! -d labs && test ! -d functions && test ! -d scripts && test ! -d docs
+          test ! -d data/canonical && test ! -d .dev.vars
+          test -s index.html && test -s verb-explorer.html
+          node - <<'JS'
+          const fs=require('node:fs'),m=JSON.parse(fs.readFileSync('preview-manifest.json','utf8'));
+          if(m.sourceCommit!=='53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da'||m.humanApproved!==false)process.exit(1);
+          console.log('PASS 90C.1 static-only preview source and human approval pending');
+          JS
+      - name: Archive standalone static preview files
+        run: |
+          mkdir -p "$RUNNER_TEMP/siyayo-90c1-portrait"
+          cp index.html verb-explorer.html _headers preview-manifest.json "$RUNNER_TEMP/siyayo-90c1-portrait/"
+          cp -R js css assets data "$RUNNER_TEMP/siyayo-90c1-portrait/"
+          cd "$RUNNER_TEMP"
+          zip -qr "$GITHUB_WORKSPACE/siyayo-90c1-portrait.zip" siyayo-90c1-portrait
+      - uses: actions/upload-artifact@v6
+        with:
+          name: jaguar-90c1-portrait-static-preview
+          path: siyayo-90c1-portrait.zip
+          retention-days: 30
+  portrait:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: siyayoacademy/siyayo-academy
+          ref: 53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da
+          path: .source-90c
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - name: Start isolated preview; verify cross-reference source SHA
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/90c1-site.log" 2>&1 &
+          sleep 3
+          curl -fsS http://127.0.0.1:8879/verb-explorer.html > /dev/null
+          python - <<'PY'
+          import json
+          d=json.load(open('preview-manifest.json'))
+          assert d['humanApproved'] is False
+          assert d['sourceCommit']=='53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da'
+          PY
+      - name: S1 WHICH WHAT WHERE Word Path portrait EN ES PT
+        run: python .source-90c/scripts/experimental-90b1-four-qw-portrait.py
+      - name: WHY S3 S4 accepted transfer portrait EN ES PT
+        run: python .source-90c/scripts/experimental-90c-why-trail-portrait.py
+      - name: ES PT free singular plural contrasts
+        run: python .source-90c/scripts/experimental-89z-portrait.py
+      - name: Preserve browser screenshot approval evidence PORTRAIT only
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: jaguar-90c1-browser-portrait-s1-s4
+          path: |
+            visual-audit-90b1-qw/
+            visual-audit-90c-why/
+            visual-audit-89z/
+          retention-days: 30
+          if-no-files-found: warn

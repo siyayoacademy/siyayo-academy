@@ -1,0 +1,56 @@
+{
+  "preview": "JAGUAR-90C1-PORTRAIT-STATIC",
+  "status": "preview-only-no-real-auth-no-remote-d1",
+  "sourceCommit": "53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da",
+  "sourceBranch": "jaguar/explorer-how-to-show-90c",
+  "createdOn": "2026-10-22",
+  "trialRoute": "/verb-explorer.html?mode=experience&experience=shopping-for-dinner",
+  "modes": [
+    "EN",
+    "ES",
+    "PT"
+  ],
+  "viewportsUnderTest": [
+    "390x844"
+  ],
+  "stories": [
+    "S1 Shopping",
+    "S2 Preparing",
+    "S3 Having",
+    "S4 After-Dinner"
+  ],
+  "includedSubtrees": [
+    "js",
+    "css",
+    "assets",
+    "data/learning",
+    "data/lexicon",
+    "data/grammar",
+    "data/archetypes"
+  ],
+  "excluded": [
+    "labs",
+    "docs",
+    "scripts",
+    "functions",
+    "data/canonical",
+    "admin",
+    "CI secrets",
+    "real D1",
+    "Cloudflare Access"
+  ],
+  "certifiedBy": "90C 8/8 GitHub Actions 39876680015",
+  "humanApproved": false,
+  "promotion": [
+    "90C.1 human portrait/acoustic acceptance",
+    "90D security staging external gates",
+    "90E separate official production permission"
+  ],
+  "noAutoClaims": [
+    "real account authentication",
+    "real D1 persistence",
+    "final approval",
+    "all 14 QWs",
+    "PAST/FUTURE mode contracts"
+  ]
+}
