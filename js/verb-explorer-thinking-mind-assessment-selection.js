@@ -298,6 +298,40 @@ function select(question,options){
 }
 
 
+
+function resumeRetainedForVisibleSelection(question,options){
+  options=options||{};
+  if(!question||question.questionWord!=='why')return Promise.resolve(false);
+  var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
+  var learnerId=identity&&identity.getId&&identity.getId();
+  var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+  var stateApi=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+  var state=stateApi&&stateApi.getState&&stateApi.getState();
+  var scopeApi=root.AdaptiveAssessmentScope;
+  var coordinator=root.SIYAYOVerbExplorerAdaptiveCoordinator;
+  var skill='why.use.contextual-reason';
+  if(!learnerId||!state||!scopeApi||!coordinator||!runtime||
+    runtime.activeQuestionWord()!=='why'||runtime.activeLanguage()!==state.experienceLanguage||
+    runtime.activeExperienceId()!==state.currentExperienceId)return Promise.resolve(false);
+  // S3 owns the origin; S4 may only resume that exact S3 origin.
+  if(!['having-dinner','after-dinner-conversation'].includes(state.currentExperienceId))return Promise.resolve(false);
+  var saved=state.currentExperienceId==='having-dinner'
+    ?retained[key(learnerId,skill,state)]
+    :retainedTransfer(learnerId,skill,state.experienceLanguage,state.currentExperienceId);
+  if(!saved||!saved.snapshot||!saved.snapshot.session||!saved.definition)return Promise.resolve(false);
+  var savedDecision=saved.snapshot.session.decision,scope=savedDecision&&savedDecision.assessmentScope;
+  if(!scopeApi.valid(scope)||scope.learnerId!==learnerId||scope.skill!==skill||
+    scope.language!==state.experienceLanguage||scope.originExperienceId!=='having-dinner'||
+    savedDecision.skill!==skill||savedDecision.experienceId!=='having-dinner'||
+    saved.definition.id!==skill)return Promise.resolve(false);
+  var active=coordinator.snapshot&&coordinator.snapshot();
+  var liveDecision=active&&active.session&&active.session.decision;
+  if(liveDecision&&liveDecision.assessmentScope&&liveDecision.assessmentScope.key===scope.key)return Promise.resolve(true);
+  // Reuse the existing selection/restore boundary: it remembers the previous
+  // Session and never calls provider.select for this already-retained scope.
+  return select(question,options);
+}
+
 function resumeForIdentity(){
   var pending=pendingSelection;
   var identity=root.SIYAYOVerbExplorerLearnerIdentitySource;
@@ -313,5 +347,5 @@ function resumeForIdentity(){
   return select(pending.question);
 }
 
-root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,remember:remember,getRetainedProgress:getRetainedProgress,getRetainedEvidence:getRetainedEvidence});
+root.SIYAYOVerbExplorerThinkingMindAssessmentSelection=Object.freeze({select:select,clear:clear,invalidatePending:invalidatePending,resumeForIdentity:resumeForIdentity,resumeRetainedForVisibleSelection:resumeRetainedForVisibleSelection,remember:remember,getRetainedProgress:getRetainedProgress,getRetainedEvidence:getRetainedEvidence});
 })(typeof globalThis!=='undefined'?globalThis:this);
