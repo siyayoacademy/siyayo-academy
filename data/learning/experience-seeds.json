@@ -799,6 +799,44 @@
                 }
               }
             }
+          },
+          "presentationGrounding": {
+            "version": "90C.6",
+            "kind": "exploratory-causal-dialogue",
+            "groundedIn": "situation",
+            "tense": "present",
+            "form": "affirmative",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "referent": {
+              "vocabularyId": "fresh-mild-cheese",
+              "sourceQuestionWord": "which",
+              "referenceOnly": true
+            },
+            "questionOverride": {
+              "en": "Why do you prefer the fresh cheese?",
+              "es": "¿Por qué prefieres el queso fresco?",
+              "pt": "Por que você prefere o queijo fresco?"
+            },
+            "referenceReasonId": "pairs-with-salmon",
+            "alternatives": [
+              {
+                "id": "pairs-with-salmon",
+                "response": {
+                  "en": "Because the fresh, mild cheese pairs well with the salmon.",
+                  "es": "Porque el queso fresco y suave combina bien con el salmón.",
+                  "pt": "Porque o queijo fresco e suave combina bem com o salmão."
+                }
+              },
+              {
+                "id": "shopping-finished",
+                "response": {
+                  "en": "Because we have already finished shopping.",
+                  "es": "Porque ya terminamos de hacer las compras.",
+                  "pt": "Porque já terminamos as compras."
+                }
+              }
+            ]
           }
         },
         {
@@ -1529,6 +1567,34 @@
             "en": "WHY",
             "es": "POR QUÉ",
             "pt": "POR QUE"
+          },
+          "presentationGrounding": {
+            "version": "90C.6",
+            "kind": "exploratory-causal-dialogue",
+            "groundedIn": "situation",
+            "tense": "present",
+            "form": "affirmative",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "referenceReasonId": "sharing-preparation",
+            "alternatives": [
+              {
+                "id": "sharing-preparation",
+                "response": {
+                  "en": "Because preparing it together lets us share the experience.",
+                  "es": "Porque prepararla juntos nos permite compartir la experiencia.",
+                  "pt": "Porque prepará-lo juntos nos permite compartilhar essa experiência."
+                }
+              },
+              {
+                "id": "still-shopping",
+                "response": {
+                  "en": "Because we are still choosing ingredients at the supermarket.",
+                  "es": "Porque todavía estamos eligiendo ingredientes en el supermercado.",
+                  "pt": "Porque ainda estamos escolhendo ingredientes no supermercado."
+                }
+              }
+            ]
           }
         },
         {
