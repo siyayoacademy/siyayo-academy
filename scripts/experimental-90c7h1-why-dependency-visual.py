@@ -92,11 +92,35 @@ with sync_playwright() as p:
     assert session(page)['completed']==2,('S4 navigation mutated progress',session(page))
     assert answer(page,'transfer','talking-together')['ok']
     assert session(page)['completed']==3,('S4 transfer',session(page))
-    page.wait_for_timeout(250)
-    trail_text=page.locator('#learnerTrailSurface').inner_text()
-    if '3/3' not in trail_text:
-     r['trailObservation']={'excerpt':trail_text[:2000],'html':page.locator('#learnerTrailSurface').inner_html()[:1500]}
-    assert '3/3' in trail_text,('Trail not reflecting certified 3/3',r.get('trailObservation'))
+    # The read-only Trail/Word Path lives inside a collapsed <details>.
+    # DOM content while collapsed is not the same as visible user-facing content.
+    # Open through its native control before asserting visible 3/3.
+    trail_module=page.locator('#learningTrailWordPathModule')
+    assert trail_module.count()==1,('missing learning module',lang,layout)
+    initially_open=trail_module.evaluate('(el) => el.open')
+    trail_module.evaluate('(el) => { el.open=true; }')
+    progress_label=page.locator('#learnerTrailSurface .learner-trail-contract-progress')
+    progress_label.wait_for(state='visible',timeout=8000)
+    trail_text=progress_label.inner_text()
+    trail_aria=progress_label.get_attribute('aria-label') or ''
+    assert '3/3' in trail_text and '3 / 3' in trail_aria,('wrong visible contract evidence',trail_text,trail_aria)
+    # Separately inspect longitudinal Experience state. A 3/3 assessment
+    # does NOT authorize changing the S4 timeline marker to CONFIRMED.
+    current_segment=page.locator('#learnerTrailSurface .learner-trail-segment[data-current="true"]')
+    assert current_segment.count()==1,('missing current Experience segment',lang,layout)
+    longitudinal_state=current_segment.get_attribute('data-state')
+    assert longitudinal_state in ('UNOBSERVED','IN_PROGRESS','CONFIRMED','CONSOLIDATED_EVIDENCE'),longitudinal_state
+    # Word Path must be visible, associated with the active assessment language,
+    # and report WHY independently from the Trail's overall Experience marker.
+    word_path=page.locator('#learnerTrailSurface .learner-journey')
+    polyglot=page.locator('#learnerTrailSurface .wp-polyglot')
+    matrix=page.locator('#learnerTrailSurface .wp-poly-table')
+    assert word_path.is_visible() and polyglot.is_visible() and matrix.is_visible(),('Word Path hidden/absent',lang,layout)
+    assert polyglot.get_attribute('data-focused-language')==lang,('Word Path language mismatch',lang)
+    assert 'WHY' in word_path.inner_text() and '3/3' in word_path.inner_text(),('Word Path WHY progress mismatch',lang)
+    r['trailWordPath']={'moduleInitiallyOpen':initially_open,'moduleOpen':trail_module.evaluate('(el) => el.open'),
+      'contractEvidence':trail_text,'contractAria':trail_aria,'currentExperienceState':longitudinal_state,
+      'wordPathLanguage':polyglot.get_attribute('data-focused-language'),'wordPathVisible':True}
     r['scenes'].append({'scene':'after-dinner-conversation','progress':session(page)})
     page.screenshot(path=str(OUT/f'S4-3of3-{lang}-{layout}.png'),full_page=True,animations='disabled')
     r['status']='PASS'
