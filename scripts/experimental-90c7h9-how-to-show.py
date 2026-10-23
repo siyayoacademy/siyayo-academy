@@ -18,7 +18,7 @@ with sync_playwright() as p:
    page.locator('#questionGear [data-question-index="5"]').click() # WHO: question authored, answer not
    page.wait_for_function("() => document.querySelector('#livingLines')?.dataset.corpusStatus==='authoring-gap'")
    lines=page.locator('#livingLines')
-   assert lines.locator('.living-line').count()==1
+   assert lines.locator('button.living-line').count()==1
    assert lines.locator('.living-line-status').count()==1
    assert 'Who' in lines.inner_text() or 'Quién' in lines.inner_text() or 'Quem' in lines.inner_text()
    assert page.evaluate("() => window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.()?.session?.decision?.skill||null") is None
