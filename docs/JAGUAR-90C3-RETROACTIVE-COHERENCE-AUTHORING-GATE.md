@@ -31,3 +31,13 @@ São **duas entradas × três traduções = seis lacunas**. Até a aprovação d
 5. Somente após homologação, preparar pacote de integração 90D/90E, com os 12 controles externos e autorização específica para staging/PR/main.
 
 **STOP:** não conectar Worker/D1, não modificar runtime avaliativo, nem declarar PAST/FUTURE ou novos modos homologados por existir `dialogueForms`.
+
+## PROVA GREEN: 23/10/2026 (registrada sem ampliar a autoridade)
+- **90C.2 run 39887857301**, source commit `a692498`: jobs `authority` PASS e `portrait` PASS. Chromium 390×844: EN, ES, PT 3/3; WHY S3→S4 Trail 3/3; imagens e relatórios no artifact ID `12473725975`, `jaguar-90c2-contextual-coherence-portrait`. A prova inclui ausência de frase genérica em LINES e aviso sem resposta falsa em PAST, mas não valida áudio humano.
+- **90C.3 run 39953968467**, source commit `267ffc5`: `retro-coherence` PASS, 4 Experiences, 21 QW entries, 63 textos de pergunta localizados, 45 pares de diálogo tempo/modo encontrados, 6 WHY fundamentados S3/S4 e 6 lacunas WHY S1/S2 inventariadas, sem novas lacunas inesperadas. Verificação estrutural, não chancela semântica universal.
+- **Preview isolado:** `jaguar/explorer-portrait-preview-90c2` atualizado em fonte na revisão `d50f091`. As URLs hipotéticas de alias Cloudflare testadas retornaram 404; não há build remoto/deployment SHA confirmados. Não considerar preview publicado nem aceitar homologação visual/acústica real até identificar e abrir um deployment legítimo. Branch antiga 90C.1 permanece intacta.
+- **Segurança:** 12 external staging gates BLOCKED; `main`, PR #3, Worker/D1 remotos e produção intocados. Promoção 90D/90E continua bloqueada.
+
+Links de evidência: https://github.com/siyayoacademy/siyayo-academy/actions/runs/39887857301 e https://github.com/siyayoacademy/siyayo-academy/actions/runs/39953968467
+
+**Próximo bloqueio concreto:** diagnosticar/deployar somente o preview estático de branch, comprovar identidade do build e capturar homologação humana portrait/acústica; em paralelo, continuar revisão das propostas de autoria WHY S1/S2 antes de editar corpus.
