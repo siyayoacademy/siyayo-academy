@@ -684,5 +684,16 @@
     "next": "90C.1 isolated portrait preview",
     "futureCurriculumPending": true,
     "releaseAuthorized": false
+  },
+  "coherence90C2": {
+    "status": "branch-isolated-ci-pending",
+    "documentation": "docs/JAGUAR-90C2-CONTEXTUAL-COHERENCE-GATE.md",
+    "manifest": "data/canonical/siyayo-contextual-coherence-90c2.json",
+    "whyS3S4SemanticAnswer": true,
+    "otherTenseMode": "not authored; no fallback",
+    "wordPathFocusedLanguage": true,
+    "ptAgreement": true,
+    "next": "homologate portrait before official PR3",
+    "upstream89O90C1Preserved": true
   }
 }

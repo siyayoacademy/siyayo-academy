@@ -207,16 +207,19 @@ function view(input){
      '<span class="wp-poly-status">'+escapeHtml(info)+'</span>'+
      (detail?'<small class="wp-poly-origin">'+escapeHtml(detail)+'</small>':'')+'</td>';
  }
+ var focusLanguage=currentValid?currentScope.language:language;
+ var columnOrder=[focusLanguage].concat(LANGUAGES.filter(function(lang){return lang!==focusLanguage;}));
+ var columnNames={en:'ENGLISH',es:'ESPAÑOL',pt:'PORTUGUÊS'};
  var rows=WORDS.map(function(word){
    return '<tr><th scope="row" class="wp-poly-word"><strong>'+escapeHtml(word.en)+'</strong><small class="wp-poly-word-translations">'+
       '<span lang="es">'+escapeHtml(word.es)+'</span><span lang="pt">'+escapeHtml(word.pt)+'</span></small></th>'+
-     LANGUAGES.map(function(l){return one(word,l);}).join('')+'</tr>';
+     columnOrder.map(function(l){return one(word,l);}).join('')+'</tr>';
  }).join('');
- return '<section class="wp-polyglot" aria-label="'+escapeHtml(copy.heading)+'">'+
+ return '<section class="wp-polyglot" data-focused-language="'+escapeHtml(focusLanguage)+'" aria-label="'+escapeHtml(copy.heading)+'">'+
   '<h4 class="wp-poly-title">'+escapeHtml(copy.heading)+'</h4>'+
   '<div class="wp-poly-scroller" tabindex="0" role="region" aria-label="'+escapeHtml(copy.heading)+'">'+
     '<table class="wp-poly-table"><thead><tr><th scope="col">'+escapeHtml(copy.qword)+'</th>'+
-    '<th scope="col">ENGLISH</th><th scope="col">ESPAÑOL</th><th scope="col">PORTUGUÊS</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+    columnOrder.map(function(lang){return '<th scope="col" data-language="'+lang+'"'+(lang===focusLanguage?' data-focused="true"':'')+'>'+columnNames[lang]+'</th>';}).join('')+'</tr></thead><tbody>'+rows+'</tbody></table></div>'+
   '<p class="wp-poly-footnote">'+escapeHtml(copy.scopeNote)+'</p>'+
   '<p class="wp-poly-footnote wp-poly-coverage">'+escapeHtml(copy.details)+'</p>'+
   patitaHtml(input)+

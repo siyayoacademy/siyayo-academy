@@ -77,7 +77,7 @@ assert.equal(attempts.length,0,'listening does not create canonical evidence');
 answer(groups[0]).click();
 assert.equal(attempts.length,1);
 assert.equal(attempts[0].dimension,'question-function');
-answer(groups[1],'Porque a preparamos juntos.').click();
+answer(groups[1],'Porque preparamos o jantar juntos.').click();
 assert.equal(attempts.length,2);
 assert.equal(attempts[1].dimension,'reason-answer');
 assert.equal(attempts[1].result,'pass');

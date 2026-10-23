@@ -176,5 +176,15 @@
     "humanPortraitApproval": false,
     "productionIntegrated": false,
     "externalGatesBlocked": 12
+  },
+  "coherence90C2": {
+    "status": "CI_PENDING",
+    "branch": "jaguar/explorer-contextual-coherence-90c2",
+    "source": "53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da",
+    "documentation": "docs/JAGUAR-90C2-CONTEXTUAL-COHERENCE-GATE.md",
+    "prePromotionGate": true,
+    "verifiedOnly": "PRESENT/AFFIRMATIVE WHY; other tense/mode remain unauthored",
+    "futureQwTenseModeCompliance": true,
+    "realPreviewHumanApproval": false
   }
 }

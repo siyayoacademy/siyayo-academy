@@ -1,0 +1,37 @@
+{
+  "id": "JAGUAR-90C2-CONTEXTUAL-COHERENCE",
+  "status": "isolated-experimental-ci-pending",
+  "extends": "90C.1 visual audit after six S3/S4 EN/ES/PT screenshots",
+  "base": "53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da",
+  "sourceBranch": "jaguar/explorer-how-to-show-90c",
+  "branch": "jaguar/explorer-contextual-coherence-90c2",
+  "diagnosis": "Generic conjugation fallback in LINES was incorrectly displayed as a response to WHY",
+  "corrections": [
+    {
+      "id": "L1",
+      "subject": "S3/S4 WHY LINES",
+      "rule": "PRESENT/AFFIRMATIVE uses author-owned reasonGrounding acceptedReasonId, not generic verb sentence; other modes show explicit unauthored status, no false answer"
+    },
+    {
+      "id": "L2",
+      "subject": "S3 PT agreement",
+      "rule": "Porque preparamos o jantar juntos. retained under prepared-together canonical ID"
+    },
+    {
+      "id": "L3",
+      "subject": "Polyglot Word Path",
+      "rule": "The assessment language column comes first after sticky QUESTION WORD; all EN/ES/PT columns still available via internal scroll"
+    }
+  ],
+  "auth": "read-only presentation / corpus copy; no assessment event or Green Pass permission",
+  "explicitFutureGate": "Every new contextual Question Word authored must have same dimension/tense/mode compatibility and accepted response provenance verified",
+  "forbidden": [
+    "main update",
+    "PR3 update",
+    "Cloudflare production",
+    "Worker or D1",
+    "fabricated linguistic tenses/modes"
+  ],
+  "humanPortraitApproval": false,
+  "externalStagingGatesBlocked": 12
+}
