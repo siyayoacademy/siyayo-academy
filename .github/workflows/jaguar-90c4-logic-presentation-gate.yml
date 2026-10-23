@@ -1,0 +1,29 @@
+name: JAGUAR 90C.4 logic and HOW TO SHOW authority guard
+on:
+  push:
+    branches: [jaguar/explorer-how-to-show-authority-90c4]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  no-false-credit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - name: Authority presentation, historical contracts and release blockers
+        run: |
+          test "$(git rev-parse HEAD:labs/jaguar-v30-3)" = "5ee77257551593b8e4960dd6971cc7ed069fcd56"
+          node --check js/verb-explorer-visible-assessment-boundary.js
+          node --check js/verb-explorer.js
+          node scripts/test-jaguar-lines-authority-90c4.js
+          node scripts/test-jaguar-contextual-coherence-90c2.js
+          node scripts/test-jaguar-retro-coherence-90c3.js
+          node scripts/test-s3-why-live-assessment.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-where-live-assessment.js
+          node scripts/check-jaguar-90a-manifest.mjs
+          node scripts/check-jaguar-90b-roadmap.mjs
+          node scripts/check-jaguar-90b1-audit.mjs
