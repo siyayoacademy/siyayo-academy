@@ -1,0 +1,34 @@
+{
+  "$schema": "../schemas/node.schema.json",
+  "version": "0.1.0",
+  "id": "master-verb-functions",
+  "type": "reference",
+  "role": "master-vip-source",
+  "label": {
+    "en": "MASTER VIP · VERB FUNCTIONS",
+    "es": "MASTER VIP · FUNCIONES VERBALES",
+    "pt": "MASTER VIP · FUNÇÕES VERBAIS"
+  },
+  "description": {
+    "en": "Source index of the five verb functions in the Master VIP",
+    "es": "Referencia pedagógica a la Master VIP; no autoriza evaluación.",
+    "pt": "Referência pedagógica à Master VIP; não autoriza avaliação."
+  },
+  "relations": [
+    {
+      "type": "related",
+      "target": "verb-functions"
+    }
+  ],
+  "representations": [
+    {
+      "type": "reference",
+      "source": "data/learning/references/master-vip-verb-functions-v0.1.json"
+    }
+  ],
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE- KIND OF WORDS.docx (Master VIP)",
+    "notes": "Reference only; source text remains in Library, no assessment/Green Pass enabled."
+  }
+}
