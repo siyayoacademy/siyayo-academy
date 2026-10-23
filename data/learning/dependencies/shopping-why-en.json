@@ -1,0 +1,156 @@
+{
+  "version": "90C.7H.1",
+  "id": "shopping-why-en",
+  "language": "en",
+  "sentence": "Why do you prefer the fresh cheese?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Why",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Reason sought by the question"
+        }
+      }
+    },
+    {
+      "id": "do",
+      "index": 2,
+      "form": "do",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Question auxiliary"
+        }
+      }
+    },
+    {
+      "id": "you",
+      "index": 3,
+      "form": "you",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject"
+        }
+      }
+    },
+    {
+      "id": "prefer",
+      "index": 4,
+      "form": "prefer",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Preference predicate that WHY modifies"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 5,
+      "form": "the",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Determines cheese"
+        }
+      }
+    },
+    {
+      "id": "fresh",
+      "index": 6,
+      "form": "fresh",
+      "wordClass": "ADJ",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADJECTIVE"
+        },
+        "role": {
+          "en": "Quality of cheese"
+        }
+      }
+    },
+    {
+      "id": "cheese",
+      "index": 7,
+      "form": "cheese",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Chosen food"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prefer",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "prefer",
+      "dependent": "do",
+      "relation": "aux"
+    },
+    {
+      "head": "prefer",
+      "dependent": "you",
+      "relation": "nsubj"
+    },
+    {
+      "head": "prefer",
+      "dependent": "cheese",
+      "relation": "obj"
+    },
+    {
+      "head": "cheese",
+      "dependent": "the",
+      "relation": "det"
+    },
+    {
+      "head": "cheese",
+      "dependent": "fresh",
+      "relation": "amod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "assessmentAuthority": false,
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO WHY S1 authored exploratory sentence",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "why",
+    "field": "thinkingMind.presentationGrounding.questionOverride",
+    "notes": "Specific cheese referent is a contextual reference only; not a recorded WHICH choice or a WHY assessment."
+  }
+}
