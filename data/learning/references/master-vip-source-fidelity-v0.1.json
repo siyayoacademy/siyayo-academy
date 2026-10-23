@@ -1,0 +1,76 @@
+{
+  "version": "0.1.0",
+  "id": "master-vip-source-fidelity-policy",
+  "kind": "pedagogical-provenance-policy",
+  "authority": "Master VIP — STRUCTURE- KIND OF WORDS.docx (ChatGPT Library, original not distributed)",
+  "status": "reference-only",
+  "labels": {
+    "MASTER_ORIGINAL": "Verified directly in Master VIP; retain original didactic meaning",
+    "SIYAYO_ADAPTATION": "Prepared for EN/ES/PT Experience, must be examined against actual scene",
+    "COMPLEMENTARY_STUDY": "Independent linguistic or architectural explanation; cannot silently replace Master",
+    "PENDING_HOMOLOGATION": "Authored proposal not yet admitted to canonical Explorer corpus"
+  },
+  "constraints": [
+    "Conceptual definition, source example, contextual adaptation and assessment opportunity have separate provenance",
+    "Do not promote an adapted sentence because the lexical words exist in a source chapter",
+    "Do not turn a grammar paradigm or UI navigation into assessment evidence",
+    "PATITA observations and canonical evaluator evidence are different event classifications",
+    "Assessment may recognize independently validated evidence from any Experience once the skill contract authorizes that context; navigation is not a prerequisite"
+  ],
+  "comparativeAnchors": [
+    {
+      "function": "movement",
+      "masterOriginal": {
+        "provenance": "MASTER_ORIGINAL",
+        "teachingRole": "Action in progress, initially framed as simultaneous with speaking",
+        "construction": "TO BE + VERB-ING",
+        "example": {
+          "en": "We are eating pizza.",
+          "pt": "Nós estamos comendo pizza."
+        },
+        "masterPages": [
+          10,
+          57,
+          59
+        ]
+      },
+      "complementary": {
+        "provenance": "COMPLEMENTARY_STUDY",
+        "interpretation": "Lexical displacement/direction (go, come, walk, run) is a related category but NOT the Master VIP's original core definition",
+        "mustNotOverride": "masterOriginal"
+      },
+      "actionGate": "Keep lexical movement and progressive aspect distinguishable within teaching/assessment"
+    },
+    {
+      "function": "existence",
+      "masterOriginal": {
+        "provenance": "MASTER_ORIGINAL",
+        "construction": "THERE + TO BE",
+        "semanticUse": "HAVER / EXISTIR; distinguish possession HAVE",
+        "masterPages": [
+          10,
+          100,
+          101,
+          102,
+          104
+        ]
+      },
+      "complementary": {
+        "provenance": "COMPLEMENTARY_STUDY",
+        "interpretation": "Spanish hay and Portuguese há / Brazilian tem are possible semantic realizations; compare register and agreement before authorization",
+        "mustNotOverride": "masterOriginal"
+      },
+      "actionGate": "Do not mistake locative 'there' for existential 'there + be'; no score by visiting or hearing"
+    }
+  ],
+  "sourceFiles": [
+    "data/learning/references/master-vip-verb-functions-v0.1.json",
+    "data/learning/references/master-vip-existence-v0.1.json",
+    "data/nodes/verb-functions.json",
+    "data/nodes/movement.json",
+    "data/nodes/existence.json"
+  ],
+  "assessmentAuthority": false,
+  "assessmentEvidence": false,
+  "greenPass": false
+}
