@@ -1,0 +1,78 @@
+{
+  "version": "0.1.0",
+  "id": "master-vip-verb-functions",
+  "kind": "pedagogical-source-index",
+  "status": "reference-only",
+  "authority": "Master VIP / STRUCTURE- KIND OF WORDS.docx",
+  "sourceLocation": "ChatGPT Library; not republished",
+  "languagePolicy": "Master English and Portuguese examples are source-grounded; Spanish translations require independent contextual review",
+  "principles": [
+    "Five verb functions: QUALITY, STATE, MOVEMENT, ACTION, EXISTENCE",
+    "Verb systems and nine accessory word types according to Master VIP organization",
+    "Tense/mode transformations must be pedagogically grounded; no automatic assessment credit"
+  ],
+  "functions": [
+    {
+      "id": "quality",
+      "pattern": "TO BE",
+      "masterPage": 10,
+      "example": {
+        "en": "She is tall.",
+        "pt": "Ela é alta."
+      }
+    },
+    {
+      "id": "state",
+      "pattern": "TO BE",
+      "masterPage": 10,
+      "example": {
+        "en": "He is sick.",
+        "pt": "Ele está doente."
+      }
+    },
+    {
+      "id": "movement",
+      "pattern": "TO BE + VERB-ING",
+      "masterPage": 10,
+      "example": {
+        "en": "We are eating pizza.",
+        "pt": "Nós estamos comendo pizza."
+      }
+    },
+    {
+      "id": "action",
+      "pattern": "lexical action",
+      "masterPage": 10,
+      "example": {
+        "en": "They eat pizza every day.",
+        "pt": "Eles comem pizza todo dia."
+      }
+    },
+    {
+      "id": "existence",
+      "pattern": "THERE + TO BE",
+      "masterPages": [
+        10,
+        100,
+        101,
+        102,
+        104
+      ],
+      "example": {
+        "en": "There is a man outside.",
+        "pt": "Há um homem lá fora."
+      }
+    }
+  ],
+  "crossLinks": [
+    "data/nodes/verb-functions.json",
+    "data/nodes/quality.json",
+    "data/nodes/state.json",
+    "data/nodes/movement.json",
+    "data/nodes/action.json",
+    "data/nodes/existence.json"
+  ],
+  "assessmentAuthority": false,
+  "assessmentEvidence": false,
+  "greenPass": false
+}
