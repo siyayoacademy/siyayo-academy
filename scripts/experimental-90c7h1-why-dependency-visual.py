@@ -92,7 +92,11 @@ with sync_playwright() as p:
     assert session(page)['completed']==2,('S4 navigation mutated progress',session(page))
     assert answer(page,'transfer','talking-together')['ok']
     assert session(page)['completed']==3,('S4 transfer',session(page))
-    assert '3/3' in page.locator('#learnerTrailSurface').inner_text()
+    page.wait_for_timeout(250)
+    trail_text=page.locator('#learnerTrailSurface').inner_text()
+    if '3/3' not in trail_text:
+     r['trailObservation']={'excerpt':trail_text[:2000],'html':page.locator('#learnerTrailSurface').inner_html()[:1500]}
+    assert '3/3' in trail_text,('Trail not reflecting certified 3/3',r.get('trailObservation'))
     r['scenes'].append({'scene':'after-dinner-conversation','progress':session(page)})
     page.screenshot(path=str(OUT/f'S4-3of3-{lang}-{layout}.png'),full_page=True,animations='disabled')
     r['status']='PASS'
