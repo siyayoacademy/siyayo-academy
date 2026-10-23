@@ -1,0 +1,32 @@
+name: JAGUAR 90C.7H.0 supervisor baseline
+on:
+  push:
+    branches: [jaguar/explorer-supervision-gate-90c7h0]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - name: Baseline and historic authority
+        run: |
+          node scripts/jaguar-90c7h0-supervisor.js
+          node scripts/test-jaguar-why-present-exploration-90c6.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-which-third-attempt-green-boundary-90b1.js
+          node scripts/test-jaguar-lines-authority-90c4.js
+          node scripts/test-jaguar-retro-coherence-90c3.js
+          test "$(git rev-parse HEAD:labs/jaguar-v30-3)" = "5ee77257551593b8e4960dd6971cc7ed069fcd56"
+      - name: Publish supervision matrix including known gaps
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: jaguar-90c7h0-supervision-matrix
+          path: visual-audit-90c7h0/
+          if-no-files-found: warn
+          retention-days: 30
