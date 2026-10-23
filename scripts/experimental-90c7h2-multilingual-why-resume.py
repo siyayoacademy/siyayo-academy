@@ -36,8 +36,21 @@ with sync_playwright() as p:
     page.wait_for_function("l => {const s=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.();return s?.session?.decision?.assessmentScope?.language===l && !document.querySelector('#whyAssessmentPanel')?.hidden}",arg=lang,timeout=17000)
     before=progress(page)
     assert before["completed"]==2,(lang,before)
+    # S4 WHY -> WHAT -> WHY must RESUME the existing S3 Session,
+    # never create a fresh S4 assessment or transfer evidence.
+    page.locator('#questionGear [data-question-index="0"]').click()
+    assert page.locator("#whyAssessmentPanel").is_hidden(),("WHY should be hidden on WHAT",lang)
+    page.locator('#questionGear [data-question-index="2"]').click()
+    page.wait_for_function("l => {const s=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.();return s?.session?.decision?.assessmentScope?.language===l && !document.querySelector('#whyAssessmentPanel')?.hidden}",arg=lang,timeout=13000)
+    assert progress(page)==before,("Revisiting WHY manufactured evidence",lang,progress(page),before)
     assert click(page,"transfer","talking-together")
     assert progress(page)["completed"]==3,(lang,progress(page))
+    # The completed 3/3 contract must remain viewable on a QW round trip.
+    page.locator('#questionGear [data-question-index="0"]').click()
+    assert page.locator("#whyAssessmentPanel").is_hidden()
+    page.locator('#questionGear [data-question-index="2"]').click()
+    page.wait_for_function("() => !document.querySelector('#whyAssessmentPanel')?.hidden",timeout=13000)
+    assert progress(page)["completed"]==3,("Green Pass changed on return to WHY",lang,progress(page))
     page.locator("#learningTrailWordPathModule").evaluate("(x)=>x.open=true")
     assert "3/3" in page.locator("#learnerTrailSurface .learner-trail-contract-progress").inner_text()
     assert page.locator("#learnerTrailSurface .wp-polyglot").get_attribute("data-focused-language")==lang
