@@ -1,0 +1,39 @@
+name: JAGUAR 90C.7H.9 HOW TO SHOW contextual gate
+on:
+  push:
+    branches: [jaguar/patita-how-to-show-coherence-90c7h9]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  coherence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check js/verb-explorer.js
+          node scripts/test-jaguar-90c7h9-how-to-show.js
+          node scripts/jaguar-90c7h0-supervisor.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-jaguar-why-90c7h1-dependency.js
+          test "$(git rev-parse HEAD:labs/jaguar-v30-3)" = "5ee77257551593b8e4960dd6971cc7ed069fcd56"
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/server.log" 2>&1 &
+          sleep 3
+          curl -fsS -o /dev/null http://127.0.0.1:8879/verb-explorer.html
+      - run: python scripts/experimental-90c7h9-how-to-show.py
+      - if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: jaguar-h9-how-to-show-audit
+          path: visual-audit-90c7h9/
+          retention-days: 30
