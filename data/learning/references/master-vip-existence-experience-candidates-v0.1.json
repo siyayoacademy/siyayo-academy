@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "master-vip-existence-experience-candidate-matrix",
+  "purpose": "Contextual illustration only: compare Master function against scenes before adding QW or canonical assessment",
+  "masterReference": "data/learning/references/master-vip-existence-v0.1.json",
+  "sourceProvenance": "SIYAYO_ADAPTATION",
+  "notMasterQuotation": true,
+  "assessmentAuthority": false,
+  "assessmentEvidence": false,
+  "greenPass": false,
+  "experienceCandidates": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "context": "S1 shopping",
+      "examples": {
+        "en": "There is fresh cheese in the supermarket.",
+        "es": "Hay queso fresco en el supermercado.",
+        "pt": "Há queijo fresco no supermercado."
+      },
+      "questionWordCandidates": [
+        "what",
+        "where",
+        "which"
+      ],
+      "questionWordsNotCurrentlyImplementedHere": [],
+      "status": "PENDING_HOMOLOGATION",
+      "validation": [
+        "Master existential role",
+        "scene evidence",
+        "trilingual agreement/number",
+        "tense and perspective",
+        "QW suitability",
+        "transfer distinctness",
+        "human acceptance"
+      ]
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "context": "S2 preparing",
+      "examples": {
+        "en": "There are carrots on the kitchen table.",
+        "es": "Hay zanahorias sobre la mesa de la cocina.",
+        "pt": "Há cenouras sobre a mesa da cozinha."
+      },
+      "questionWordCandidates": [
+        "what",
+        "where",
+        "how-many"
+      ],
+      "questionWordsNotCurrentlyImplementedHere": [
+        "how-many"
+      ],
+      "status": "PENDING_HOMOLOGATION",
+      "validation": [
+        "Master existential role",
+        "scene evidence",
+        "trilingual agreement/number",
+        "tense and perspective",
+        "QW suitability",
+        "transfer distinctness",
+        "human acceptance"
+      ]
+    },
+    {
+      "experienceId": "having-dinner",
+      "context": "S3 having",
+      "examples": {
+        "en": "There is salmon on the dining table.",
+        "es": "Hay salmón sobre la mesa del comedor.",
+        "pt": "Há salmão sobre a mesa de jantar."
+      },
+      "questionWordCandidates": [
+        "what",
+        "who",
+        "how-many"
+      ],
+      "questionWordsNotCurrentlyImplementedHere": [
+        "how-many"
+      ],
+      "status": "PENDING_HOMOLOGATION",
+      "validation": [
+        "Master existential role",
+        "scene evidence",
+        "trilingual agreement/number",
+        "tense and perspective",
+        "QW suitability",
+        "transfer distinctness",
+        "human acceptance"
+      ]
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "context": "S4 after dinner",
+      "examples": {
+        "en": "There was a pleasant conversation after dinner.",
+        "es": "Hubo una conversación agradable después de la cena.",
+        "pt": "Houve uma conversa agradável depois do jantar."
+      },
+      "questionWordCandidates": [
+        "what",
+        "when",
+        "who"
+      ],
+      "questionWordsNotCurrentlyImplementedHere": [],
+      "status": "PENDING_HOMOLOGATION",
+      "validation": [
+        "Master existential role",
+        "scene evidence",
+        "trilingual agreement/number",
+        "tense and perspective",
+        "QW suitability",
+        "transfer distinctness",
+        "human acceptance"
+      ]
+    }
+  ]
+}
