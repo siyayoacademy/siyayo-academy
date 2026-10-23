@@ -157,7 +157,7 @@ function experienceLines(x){if(experienceWordType==="noun")return nounLines(x);i
     es:{question:"PREGUNTA",role:"RESPUESTA CONTEXTUAL · REDACCIÓN PENDIENTE",text:"Todavía no se ha redactado ni verificado una respuesta contextual para esta palabra interrogativa en esta experiencia. Puedes explorar la pregunta libremente; no implica una respuesta ni crédito evaluativo."},
     pt:{question:"PERGUNTA",role:"RESPOSTA CONTEXTUAL · ELABORAÇÃO PENDENTE",text:"A resposta contextual para esta palavra interrogativa nesta Experience ainda não foi elaborada nem conferida. Explore a pergunta livremente; isso não implica resposta nem crédito avaliativo."}
   }[experienceLanguage];
-  return[{role:gapCopy.question,text:q,hideVisibleRole:true},{role:gapCopy.role,text:gapCopy.text,noSpeech:true}]
+  return[{role:gapCopy.question,text:q,hideVisibleRole:true},{role:gapCopy.role,text:gapCopy.text,noSpeech:true}]}
 function choicePrompt(language){return{en:"Choose a canonical response to compare its contextual fit.",es:"Elige una respuesta canónica para comparar su adecuación contextual.",pt:"Escolha uma resposta canônica para comparar sua adequação contextual."}[language]||"Choose a canonical response to compare its contextual fit."}
 function choiceAudioLabel(language){return{en:"Listen to this response",es:"Escuchar esta respuesta",pt:"Ouvir esta resposta"}[language]||"Listen to this response"}
 function renderChoiceReview(review,language){const item=contextualChoiceReviewLine(language);review.hidden=false;review.innerHTML=`<button type="button" class="living-line choice-review-button" data-choice-review-audio><span>${escapeHtml(item.role)}</span><p>${escapeHtml(item.text)}</p><b><span class="siyayo-speaker" aria-hidden="true"></span></b></button>`}
