@@ -1,8 +1,8 @@
 {
-  "preview": "JAGUAR-90C1-PORTRAIT-STATIC",
-  "status": "preview-only-no-real-auth-no-remote-d1",
-  "sourceCommit": "53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da",
-  "sourceBranch": "jaguar/explorer-how-to-show-90c",
+  "preview": "JAGUAR-90C2-PORTRAIT-STATIC",
+  "status": "isolated-preview-source-updated-awaiting-deployment-and-human-acceptance",
+  "sourceCommit": "a6924981a99ed886cdfecf210cc49d0b850f6e3a",
+  "sourceBranch": "jaguar/explorer-contextual-coherence-90c2",
   "createdOn": "2026-10-22",
   "trialRoute": "/verb-explorer.html?mode=experience&experience=shopping-for-dinner",
   "modes": [
@@ -42,8 +42,10 @@
   "certifiedBy": "90C 8/8 GitHub Actions 39876680015",
   "humanApproved": false,
   "promotion": [
-    "90C.1 human portrait/acoustic acceptance",
-    "90D security staging external gates",
+    "GitHub Actions portrait validation",
+    "Verify Cloudflare branch build and deployed SHA",
+    "EN/ES/PT portrait visual and acoustic human acceptance",
+    "90D staging external 12 security gates",
     "90E separate official production permission"
   ],
   "noAutoClaims": [
@@ -52,5 +54,16 @@
     "final approval",
     "all 14 QWs",
     "PAST/FUTURE mode contracts"
-  ]
+  ],
+  "corrections": [
+    "S3/S4 WHY LINES contextual-grounding-only with explicit unauthored status",
+    "PT S3 response: Porque preparamos o jantar juntos.",
+    "Word Path active assessment language first after Question Word"
+  ],
+  "knownCorpusGaps": [
+    "S1 Shopping WHY × EN/ES/PT",
+    "S2 Preparing WHY × EN/ES/PT"
+  ],
+  "verifiedInThisTurn": "Source files copied and branch content readback, not Chromium or real-device approval",
+  "previewOnly": true
 }
