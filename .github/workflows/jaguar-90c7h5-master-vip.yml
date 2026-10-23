@@ -1,0 +1,46 @@
+name: JAGUAR 90C.7H.5 Master VIP reference-only gate
+on:
+  push:
+    branches: [jaguar/master-vip-reference-mirror-90c7h5]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  reference-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - name: Master mirror JSON structure & read-only authority
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('node:assert/strict');
+          const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+          const functions=read('data/learning/references/master-vip-verb-functions-v0.1.json');
+          const ex=read('data/learning/references/master-vip-existence-v0.1.json');
+          assert.deepEqual(functions.functions.map(f=>f.id),['quality','state','movement','action','existence']);
+          assert.equal(functions.assessmentAuthority,false);
+          assert.equal(functions.assessmentEvidence,false);
+          assert.equal(functions.greenPass,false);
+          assert.equal(ex.englishPattern,'THERE + TO BE');
+          assert.equal(ex.experienceMapping.length,4);
+          assert.equal(ex.rules.assessmentAuthority,false);
+          assert.equal(ex.rules.assessmentEvidence,false);
+          assert.equal(ex.rules.greenPass,false);
+          assert.ok(ex.experienceMapping.every(e=>e.status==='needs-contextual-authoring'));
+          assert.equal(ex.sourceExample.es,null);
+          for(const [name,src] of [['existence','master-existence'],['verb-functions','master-verb-functions']]){
+            const node=read('data/nodes/'+name+'.json');
+            const ref=read('data/nodes/'+src+'.json');
+            assert.ok(node.representations.some(r=>r.type==='reference'&&r.target===src));
+            assert.equal(ref.type,'reference');
+            assert.ok(ref.relations.some(r=>r.target===name));
+            assert.ok(ref.representations.some(r=>fs.existsSync(r.source)));
+          }
+          console.log('PASS Master source reference nodes, five functions, THERE+BE, EN/PT source, ES pending, four context candidates, no assessment authority');
+          NODE
+      - name: Historical assessment guards
+        run: |
+          test "$(git rev-parse HEAD:labs/jaguar-v30-3)" = "5ee77257551593b8e4960dd6971cc7ed069fcd56"
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-jaguar-why-90c7h1-dependency.js
