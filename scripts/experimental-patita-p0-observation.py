@@ -19,6 +19,7 @@ with sync_playwright() as p:
    page.locator('#experienceModeGear [data-experience-form="negative"]').click()
    page.locator('[data-word-type="noun"]').click()
    page.locator('[data-perspective="describing"]').click()
+   page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().length>=6",timeout=4000)
    before=page.evaluate("() => window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.()?.session?.decision?.skill||null")
    assert before is None,("Navigation wrongly started assessment",before)
    trace=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords()")
@@ -34,6 +35,7 @@ with sync_playwright() as p:
    anonymous_count=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().length")
    page.locator('[data-word-type="verb"]').click()
    page.locator('#experienceTenseGear [data-experience-tense="future"]').click()
+   page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().length>=2",timeout=4000)
    identified=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords()")
    assert len(identified)>=2 and all(r["learnerId"]=="PATITA-"+lang for r in identified),identified
    assert identified[-1]["action"]=="tense" and identified[-1]["uiOutcome"]=="changed",identified[-1]
