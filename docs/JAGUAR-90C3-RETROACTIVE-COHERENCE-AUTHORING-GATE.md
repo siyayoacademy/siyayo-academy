@@ -41,3 +41,12 @@ São **duas entradas × três traduções = seis lacunas**. Até a aprovação d
 Links de evidência: https://github.com/siyayoacademy/siyayo-academy/actions/runs/39887857301 e https://github.com/siyayoacademy/siyayo-academy/actions/runs/39953968467
 
 **Próximo bloqueio concreto:** diagnosticar/deployar somente o preview estático de branch, comprovar identidade do build e capturar homologação humana portrait/acústica; em paralelo, continuar revisão das propostas de autoria WHY S1/S2 antes de editar corpus.
+
+## Correção factual 90C.2 — Cloudflare Pages LIVE em preview isolado
+**Confirmação em 23/10/2026 às 10:07 BRT:** usuário forneceu captura do Cloudflare Workers & Pages com deployment **success**, ID `9a55d7c9-896e-44a2-b8cb-748219ab9b80`, Git commit `776d6e40796a333ad02b553a21998360ea290804` e duração 12s. Logs evidenciam `HEAD is now at 776d6e4`, 305 assets processados (303 já enviados, 2 novos), `Success: Assets published!` e `Success: Your site was deployed!`. A opção `No build command specified`, a ausência de `/functions` e de Wrangler são esperadas nesta publicação estática; não é liberação de Worker/D1.
+- **URL imutável de deployment comprovada:** https://9a55d7c9.siyayo-academy.pages.dev/
+- **Alias real do Pages comprovado:** https://jaguar-explorer-portrait-pre-9973.siyayo-academy.pages.dev/
+- **Rota do Explorer:** https://9a55d7c9.siyayo-academy.pages.dev/verb-explorer.html?mode=experience&experience=shopping-for-dinner
+- **Leitura externa independente:** root de deployment e alias retornam título `SIYAYO · JAGUAR 90C.2 · Preview Portrait`; manifesto `preview-manifest.json` e página do Explorer disponíveis. O alias antigo adivinhado `jaguar-explorer-portrait-preview-90c2` não era o alias real e retornava 404. Este parágrafo **substitui a pendência anterior quanto à identidade de implantação**; não reescreve o histórico de investigação.
+- **Aceite visual anterior:** usuário informou ter revisado as 15 capturas portrait e considerá-las corretas. Trata-se de conferência de artefatos de CI; **não** atesta áudio real, uso físico de smartphone nem homologação completa do Pages.
+- **Gates preservados:** `main`, PR #3, Worker/D1 remoto e produção não recebem mudanças; 12 controles externos bloqueados. Avançar à inspeção da interface online, contraste EN/ES/PT, Word Path, áudio humano e registro explícito de aceite antes de integração.
