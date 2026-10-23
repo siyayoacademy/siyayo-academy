@@ -1,8 +1,8 @@
 {
-  "preview": "JAGUAR-90C7H1-WHY-DEPENDENCY-STATIC",
-  "status": "awaiting-Cloudflare-deployment-and-human-acceptance",
-  "sourceCommit": "0c44d358552827958983133e4298985cd7f96b20",
-  "sourceBranch": "jaguar/explorer-why-90c7h1-dependency",
+  "preview": "JAGUAR-90C7H2-WHY-LANGUAGE-RESUME-STATIC",
+  "status": "source-ready-awaiting-Cloudflare-and-human-acceptance",
+  "sourceCommit": "b557c3f171c45f05953305a84275a0c58ac92e97",
+  "sourceBranch": "jaguar/explorer-why-language-resume-90c7h2",
   "createdOn": "2026-10-22",
   "trialRoute": "/verb-explorer.html?mode=experience&experience=shopping-for-dinner",
   "modes": [
@@ -64,16 +64,18 @@
     "90C.7H.1 six S1/S2 WHY dependency structures",
     "Free Head Probe, no assessment credit",
     "Trail 3/3 visible only after expanding panel",
-    "WHICH history retained across transition"
+    "WHICH history retained across transition",
+    "Restore S3-owned WHY sessions by language in S4 without new authority",
+    "Retain 2/3 and 3/3 across WHY-WHAT-WHY roundtrip"
   ],
   "knownCorpusGaps": [],
-  "verifiedInThisTurn": "GitHub static files synced, Cloudflare must be verified separately",
+  "verifiedInThisTurn": "2/2 source GitHub CI GREEN, two modified JS blobs synchronized with experimental source; live preview deployment pending",
   "previewOnly": true,
   "historical90CEvidence": "90C baseline 8/8: GitHub Actions 39876680015; NOT certification of 90C.2 preview",
   "historicalCI": {
-    "run": 40002684451,
-    "result": "3-of-3-success",
-    "scope": "WHY S1/S2 DF/DHP EN ES PT; WHICH to WHY; S3 2/3 and S4 3/3 Trail Word Path"
+    "run": 40011723303,
+    "result": "2-of-2-GREEN",
+    "scope": "retained WHY 2/3->3/3 on ES/PT/EN language switches and WHY-WHAT-WHY revisits in S4"
   },
   "audioHomologated": false
 }
