@@ -132,8 +132,12 @@ function independentEntryAllowed(question,target,decision,learnerId,state){
   var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
   if(runtime&&typeof runtime.activeQuestionWord==='function'&&runtime.activeQuestionWord()!==question.questionWord)return false;
   var scope=decision&&decision.assessmentScope;
-  if(!api||!api.valid(scope)||scope.learnerId!==learnerId||scope.language!==state.experienceLanguage||
+  if(!api||!api.valid(scope)||scope.learnerId!==learnerId||
     scope.originExperienceId!==decision.experienceId||!navigation||typeof navigation.getExperience!=='function')return false;
+  // Independent start changes QW and may change language. The old language
+  // belongs ONLY to the retained origin contract; target authority is separately
+  // checked against the destination's explicit assessmentEntryFrom declaration.
+  if(!['en','es','pt'].includes(state.experienceLanguage))return false;
   var destination=navigation.getExperience(state.currentExperienceId);
   var canonical=destination&&(destination.thinkingMind||[]).find(function(item){return item.questionWord===question.questionWord;});
   var declared=canonical&&canonical.assessmentTarget;
