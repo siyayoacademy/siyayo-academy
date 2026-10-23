@@ -1,8 +1,8 @@
 {
-  "preview": "JAGUAR-90C2-PORTRAIT-STATIC",
-  "status": "isolated-preview-source-updated-awaiting-deployment-and-human-acceptance",
-  "sourceCommit": "a6924981a99ed886cdfecf210cc49d0b850f6e3a",
-  "sourceBranch": "jaguar/explorer-contextual-coherence-90c2",
+  "preview": "JAGUAR-90C7-WHY-PRESENT-STATIC",
+  "status": "source-ready-awaiting-deployment-and-live-acceptance",
+  "sourceCommit": "1c7520bfc9168f3420a4c58f3a777687e245a5a4",
+  "sourceBranch": "jaguar/explorer-why-present-acceptance-90c7",
   "createdOn": "2026-10-22",
   "trialRoute": "/verb-explorer.html?mode=experience&experience=shopping-for-dinner",
   "modes": [
@@ -11,7 +11,9 @@
     "PT"
   ],
   "viewportsUnderTest": [
-    "390x844"
+    "390x844",
+    "844x390",
+    "1366x900"
   ],
   "stories": [
     "S1 Shopping",
@@ -55,15 +57,19 @@
     "PAST/FUTURE mode contracts"
   ],
   "corrections": [
-    "S3/S4 WHY LINES contextual-grounding-only with explicit unauthored status",
-    "PT S3 response: Porque preparamos o jantar juntos.",
-    "Word Path active assessment language first after Question Word"
+    "WHY S1/S2 contextual free exploration EN ES PT",
+    "WHY S3/S4 canonical assessment preserved",
+    "LINES audio vs assessment authority cue",
+    "S4 narrative tense provenance preserved"
   ],
-  "knownCorpusGaps": [
-    "S1 Shopping WHY × EN/ES/PT",
-    "S2 Preparing WHY × EN/ES/PT"
-  ],
+  "knownCorpusGaps": [],
   "verifiedInThisTurn": "Source files copied and branch content readback, not Chromium or real-device approval",
   "previewOnly": true,
-  "historical90CEvidence": "90C baseline 8/8: GitHub Actions 39876680015; NOT certification of 90C.2 preview"
+  "historical90CEvidence": "90C baseline 8/8: GitHub Actions 39876680015; NOT certification of 90C.2 preview",
+  "historicalCI": {
+    "run": 39986290096,
+    "result": "authority-and-browser-PASS",
+    "humanScreenshotsReviewed": true
+  },
+  "audioHomologated": false
 }
