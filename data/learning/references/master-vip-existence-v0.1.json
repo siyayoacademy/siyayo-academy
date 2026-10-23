@@ -1,0 +1,145 @@
+{
+  "version": "0.1.0",
+  "id": "master-vip-existence",
+  "kind": "pedagogical-source-reference",
+  "status": "reference-only",
+  "source": {
+    "title": "STRUCTURE- KIND OF WORDS.docx",
+    "chapter": "EXISTENCE / VERB - Existence",
+    "masterPages": [
+      100,
+      101,
+      102,
+      104
+    ],
+    "repositoryCopy": false
+  },
+  "canonicalNode": "data/nodes/existence.json",
+  "function": "EXISTENCE",
+  "englishPattern": "THERE + TO BE",
+  "distinction": "Existential there+be (haver/existir) differs from possession have and locative there",
+  "paradigm": {
+    "present": {
+      "affirmative": [
+        "there is",
+        "there are"
+      ],
+      "negative": [
+        "there is not",
+        "there are not"
+      ],
+      "interrogative": [
+        "is there any?",
+        "are there any?"
+      ]
+    },
+    "past": {
+      "affirmative": [
+        "there was",
+        "there were"
+      ],
+      "negative": [
+        "there was not",
+        "there were not"
+      ],
+      "interrogative": [
+        "was there any?",
+        "were there any?"
+      ]
+    },
+    "future": {
+      "affirmative": [
+        "there will be"
+      ],
+      "negative": [
+        "there will not be"
+      ],
+      "interrogative": [
+        "will there be any?"
+      ]
+    },
+    "presentPerfect": {
+      "affirmative": [
+        "there has been",
+        "there have been"
+      ],
+      "negative": [
+        "there has not been",
+        "there have not been"
+      ],
+      "interrogative": [
+        "has there been any?",
+        "have there been any?"
+      ]
+    },
+    "pastPerfect": {
+      "affirmative": [
+        "there had been"
+      ],
+      "negative": [
+        "there had not been"
+      ],
+      "interrogative": [
+        "had there been any?"
+      ]
+    }
+  },
+  "sourceExample": {
+    "en": "There are two cars in the garage.",
+    "pt": "Há dois carros na garagem.",
+    "es": null,
+    "source": "Master VIP p.10",
+    "translationStatus": "Spanish pending independent contextual review"
+  },
+  "experienceMapping": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "candidate": "Availability of ingredients at the supermarket",
+      "status": "needs-contextual-authoring",
+      "possibleQWs": [
+        "what",
+        "where",
+        "how-much",
+        "which"
+      ]
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "candidate": "Ingredients and utensils available in the kitchen",
+      "status": "needs-contextual-authoring",
+      "possibleQWs": [
+        "what",
+        "where",
+        "how-many"
+      ]
+    },
+    {
+      "experienceId": "having-dinner",
+      "candidate": "Food, dishes and people present at the dining table",
+      "status": "needs-contextual-authoring",
+      "possibleQWs": [
+        "what",
+        "who",
+        "how-many"
+      ]
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "candidate": "Events or people present during conversation",
+      "status": "needs-contextual-authoring",
+      "possibleQWs": [
+        "what",
+        "who",
+        "when"
+      ]
+    }
+  ],
+  "rules": {
+    "recordAsExploration": true,
+    "assessmentAuthority": false,
+    "assessmentEvidence": false,
+    "greenPass": false,
+    "doNotInferQWAvailability": true,
+    "noAutomaticExamplePromotion": true
+  }
+}
