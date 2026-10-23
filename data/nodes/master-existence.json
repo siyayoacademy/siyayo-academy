@@ -1,0 +1,34 @@
+{
+  "$schema": "../schemas/node.schema.json",
+  "version": "0.1.0",
+  "id": "master-existence",
+  "type": "reference",
+  "role": "master-vip-source",
+  "label": {
+    "en": "MASTER VIP · EXISTENCE",
+    "es": "MASTER VIP · EXISTENCIA",
+    "pt": "MASTER VIP · EXISTÊNCIA"
+  },
+  "description": {
+    "en": "Source reference for THERE + BE existential paradigms in the Master VIP",
+    "es": "Referencia pedagógica a la Master VIP; no autoriza evaluación.",
+    "pt": "Referência pedagógica à Master VIP; não autoriza avaliação."
+  },
+  "relations": [
+    {
+      "type": "related",
+      "target": "existence"
+    }
+  ],
+  "representations": [
+    {
+      "type": "reference",
+      "source": "data/learning/references/master-vip-existence-v0.1.json"
+    }
+  ],
+  "metadata": {
+    "status": "prototype",
+    "source": "STRUCTURE- KIND OF WORDS.docx (Master VIP)",
+    "notes": "Reference only; source text remains in Library, no assessment/Green Pass enabled."
+  }
+}
