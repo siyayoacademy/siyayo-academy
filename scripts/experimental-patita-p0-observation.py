@@ -22,7 +22,7 @@ with sync_playwright() as p:
    before=page.evaluate("() => window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.()?.session?.decision?.skill||null")
    assert before is None,("Navigation wrongly started assessment",before)
    trace=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords()")
-   assert [r["action"] for r in trace][-6:]==["language","question-word","tense","mode","word-type","perspective"],trace
+   assert [r["action"] for r in trace][-6:]==["language","question-word","tense","mode","word-type","perspective"],[r["action"] for r in trace]
    assert all(r["evidenceProduced"] is False and r["assessmentCredit"] is False and r["greenPass"] is False for r in trace)
    assert all(r["learnerId"] is None for r in trace), "Anonymous trace must remain anonymous"
    page.locator('#learningTrailWordPathModule').evaluate('(e)=>e.open=true')
