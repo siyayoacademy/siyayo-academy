@@ -22,7 +22,7 @@ def session(page):
   return {skill:s?.session?.decision?.skill||null,completed:p?.completed??null,total:p?.total??null};
  }""")
 def audit_exploration(page,lang,scene,index,layout):
- page.wait_for_function("id=>window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()===id",scene)
+ page.wait_for_function("id=>window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()===id",arg=scene)
  page.locator(f'#questionGear [data-question-index="{index}"]').click()
  page.wait_for_function("() => document.querySelector('#dependencyFocusSurface')?.hidden===false && document.querySelector('#dependencyHeadProbePanel')?.hidden===false")
  focus=page.locator('#dependencyFocusSurface');probe=page.locator('#dependencyHeadProbePanel')
