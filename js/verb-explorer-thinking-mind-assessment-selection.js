@@ -327,9 +327,33 @@ function resumeRetainedForVisibleSelection(question,options){
   var active=coordinator.snapshot&&coordinator.snapshot();
   var liveDecision=active&&active.session&&active.session.decision;
   if(liveDecision&&liveDecision.assessmentScope&&liveDecision.assessmentScope.key===scope.key)return Promise.resolve(true);
-  // Reuse the existing selection/restore boundary: it remembers the previous
-  // Session and never calls provider.select for this already-retained scope.
-  return select(question,options);
+  // A S4 WHY transfer question deliberately has NO assessmentTarget.
+  // Restore its pre-existing S3 owner directly; never call targetForSelection
+  // or provider.select here, and never create a fresh Session in S4.
+  var source=root.SIYAYOVerbExplorerCanonicalSkillSource;
+  var config=root.SIYAYOVerbExplorerAdaptiveCoordinatorConfig;
+  var stateBridge=root.SIYAYOVerbExplorerAdaptiveStateBridge;
+  var profiles=root.SIYAYOVerbExplorerAdaptiveProfileSource;
+  if(!source||!config||typeof config.restore!=='function'||!stateBridge)return Promise.resolve(false);
+  var previousDef=source.getDefinition&&source.getDefinition();
+  if(active&&active.session&&previousDef&&previousDef.id===active.session.decision.skill)
+    remember(active,previousDef);
+  if(source.adopt(saved.definition)!==true)return Promise.resolve(false);
+  var restored=false;
+  try{
+    restored=config.restore({
+      profile:profiles&&profiles.getProfile&&profiles.getProfile()||saved.snapshot.profile,
+      session:saved.snapshot.session,context:saved.snapshot.context,
+      getState:stateBridge.getState,getResumeState:stateBridge.getResumeState||stateBridge.getState,
+      document:options.document||root.document
+    })===true;
+  }catch(error){restored=false;}
+  if(!restored){
+    if(previousDef)source.adopt(previousDef);else if(source.clear)source.clear();
+    // Never claim a successful switch when restoration failed.
+    return Promise.resolve(false);
+  }
+  return Promise.resolve(true);
 }
 
 function resumeForIdentity(){
