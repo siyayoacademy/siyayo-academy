@@ -164,6 +164,8 @@ function renderAssessmentEntryNotice(experience){
   const contracts=window.SIYAYOQuestionWordAssessmentContract;
   const question=activeThinkingQuestion(experience);
   const target=contracts?.targetForSelection?.(question);
+  const snapshot=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.();
+  const decision=snapshot?.session?.decision;
   // WHY in S4 is a transfer reference with no fresh assessmentTarget.
   // Do not invent a S4 assessment: guide learner to the authorized S3 origin
   // when their selected language has no retained WHY Session.
@@ -191,8 +193,6 @@ function renderAssessmentEntryNotice(experience){
     note.hidden=false;return true;
   }
   if(!experience||!target?.resumeOnly)return false;
-  const snapshot=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.();
-  const decision=snapshot?.session?.decision;
   if(decision?.skill===target.skill&&decision.assessmentScope?.language===experienceLanguage)return false;
   const origins=experiences.filter(origin=>origin.toroidalNext?.nextExperience===experience.id&&
     origin.thinkingMind?.some(item=>{
