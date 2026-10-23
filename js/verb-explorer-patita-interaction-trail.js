@@ -138,9 +138,10 @@ function observe(event){
   var intent=identify(event.target);
   if(!intent)return;
   var before=snapshot(),id=learnerId(),session=sessionId();
-  // Read the rendered result after native and existing Explorer event handlers.
-  // Microtask captures the action, never calls any assessment or progression API.
-  Promise.resolve().then(function(){
+  // A capture-phase microtask may run BEFORE target/bubble click handlers.
+  // Defer the AFTER snapshot to the next task so the Explorer has updated UI state.
+  // Observation only: no assessment/progression calls.
+  root.setTimeout(function(){
     var after=snapshot(),rows=read();
     var prior=rows.length?rows[rows.length-1].sequence:0;
     rows.push({
@@ -152,7 +153,7 @@ function observe(event){
     });
     try{root.localStorage.setItem(KEY,JSON.stringify(rows.slice(-LIMIT)));}catch(_error){}
     render();
-  });
+  },0);
 }
 if(doc&&typeof doc.addEventListener==='function'){
   // Capture before handler dispatch so BEFORE is truly before QW/language changes.
