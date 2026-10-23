@@ -674,5 +674,15 @@
     "externalGatesRemainBlocked": 12,
     "realBackendWired": false,
     "releaseAuthorized": false
+  },
+  "integration90C": {
+    "source90B1": "f221f351143f5e2517313f69601bff76dbbe4172",
+    "branch": "jaguar/explorer-how-to-show-90c",
+    "status": "isolated-gate-needs-green-CI-and-human-review",
+    "report": "docs/JAGUAR-90C-HOW-TO-SHOW-LEARNING-TRAIL-WORD-PATH.md",
+    "howToShowContract": "docs/SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md",
+    "next": "90C.1 isolated portrait preview",
+    "futureCurriculumPending": true,
+    "releaseAuthorized": false
   }
 }

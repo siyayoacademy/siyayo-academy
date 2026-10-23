@@ -2019,3 +2019,7 @@ Preserve V51/V52, shared contracts and approved actor geometry. Animation and po
 
 ## JAGUAR 90B.1 · Auditoria cruzada real de fontes (2026-10-22)
 Leia [JAGUAR 90B.1 integração e domínios W01–W11](JAGUAR-90B1-INTEGRATION-AUDIT.md), mapa máquina `data/canonical/siyayo-integration-audit-90b1.json`, workflow `jaguar-90b1-cross-lineage-audit.yml`. Testa QW/idioma/NICK/origem, WHY S3→S4, WHERE onstart/candidato isolado, Learning Trail/Word Path e prática livre ES/PT. CI e PORTRAIT são laboratório e não legitimam staging com 12 gates externos bloqueados, não atualizam PR #3/main/produção e não concluem QWs restantes, PAST, FUTURE e MODES.
+
+
+## JAGUAR 90C — Contrato HOW TO SHOW + Learning Trail + Word Path
+Leia [ELO 90C](JAGUAR-90C-HOW-TO-SHOW-LEARNING-TRAIL-WORD-PATH.md), [contrato visual 89X](SIYAYO-HOW-TO-SHOW-POSSIBLE-QUESTIONS-RESPONSES-CONTRACT.md), [mapa mestre 90B→90E](JAGUAR-90B-TO-90E-MASTER-ROADMAP.md). Auditar em 390×844 portrait somente: perguntas um cartão com speaker SVG integrado e sem divisor; respostas uma linha inteira com speaker à esquerda e botão avaliativo à direita; verde somente em resultado aceito; Trail/Word Path read-only, 2/3 WHAT→WHERE→WHAT, WHY S3 2/3→S4 2/3→3/3; ES CUÁL/CUÁLES, PT QUAL/QUAIS livres sem crédito. Não integrar sem homologação 90C.1, não executar 90D enquanto 12 gates externos não estiverem satisfeitos, PR3/main/produção preservados; futuro 14 QWs, PRESENT, PAST, FUTURE e 3 MODES preservados.

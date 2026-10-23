@@ -35,7 +35,7 @@
     {
       "id": "90B.1",
       "title": "Comprehensive cross-lineage integration review",
-      "status": "integrated-cross-lineage-audit-in-progress",
+      "status": "ci-green-39874668062",
       "actions": [
         "Audit V30.3 internal .40/.50/.60/.70/.80, 89O–89T, 89U–89Z",
         "Verify NICK identity vs authenticated learner, QW/language/origin-scoped memory and restoration",
@@ -52,7 +52,7 @@
     {
       "id": "90C",
       "title": "HOW TO SHOW and read-only Learning Trail / Word Path",
-      "status": "pending",
+      "status": "experimental-portrait-ci-pending",
       "actions": [
         "POSSIBLE QUESTIONS are single full-width semi-rectangular card with integrated golden speaker",
         "POSSIBLE RESPONSES are one full-width two-area speaker / evaluative-answer row per alternative",
@@ -167,5 +167,14 @@
     "report": "docs/JAGUAR-90B1-INTEGRATION-AUDIT.md",
     "machine": "data/canonical/siyayo-integration-audit-90b1.json",
     "noRealSecurityApproval": true
+  },
+  "integration90C": {
+    "source90B1": "f221f351143f5e2517313f69601bff76dbbe4172",
+    "branch": "jaguar/explorer-how-to-show-90c",
+    "workflow": ".github/workflows/jaguar-90c-portrait-how-to-show.yml",
+    "report": "docs/JAGUAR-90C-HOW-TO-SHOW-LEARNING-TRAIL-WORD-PATH.md",
+    "humanPortraitApproval": false,
+    "productionIntegrated": false,
+    "externalGatesBlocked": 12
   }
 }
