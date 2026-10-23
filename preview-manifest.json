@@ -39,7 +39,6 @@
     "real D1",
     "Cloudflare Access"
   ],
-  "certifiedBy": "90C 8/8 GitHub Actions 39876680015",
   "humanApproved": false,
   "promotion": [
     "GitHub Actions portrait validation",
@@ -65,5 +64,6 @@
     "S2 Preparing WHY × EN/ES/PT"
   ],
   "verifiedInThisTurn": "Source files copied and branch content readback, not Chromium or real-device approval",
-  "previewOnly": true
+  "previewOnly": true,
+  "historical90CEvidence": "90C baseline 8/8: GitHub Actions 39876680015; NOT certification of 90C.2 preview"
 }
