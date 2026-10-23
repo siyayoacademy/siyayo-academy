@@ -2168,7 +2168,10 @@
             "pt": [
               "Maravilhoso. Foi uma noite agradável juntos."
             ]
-          }
+          },
+          "exampleTense": "past",
+          "exampleScope": "retrospective-scene-narrative",
+          "assessmentAuthority": false
         }
       },
       "toroidalNext": {
