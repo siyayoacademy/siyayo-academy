@@ -1,8 +1,8 @@
 {
-  "preview": "JAGUAR-90C7-WHY-PRESENT-STATIC",
-  "status": "source-ready-awaiting-deployment-and-live-acceptance",
-  "sourceCommit": "1c7520bfc9168f3420a4c58f3a777687e245a5a4",
-  "sourceBranch": "jaguar/explorer-why-present-acceptance-90c7",
+  "preview": "JAGUAR-90C7H1-WHY-DEPENDENCY-STATIC",
+  "status": "awaiting-Cloudflare-deployment-and-human-acceptance",
+  "sourceCommit": "0c44d358552827958983133e4298985cd7f96b20",
+  "sourceBranch": "jaguar/explorer-why-90c7h1-dependency",
   "createdOn": "2026-10-22",
   "trialRoute": "/verb-explorer.html?mode=experience&experience=shopping-for-dinner",
   "modes": [
@@ -60,16 +60,20 @@
     "WHY S1/S2 contextual free exploration EN ES PT",
     "WHY S3/S4 canonical assessment preserved",
     "LINES audio vs assessment authority cue",
-    "S4 narrative tense provenance preserved"
+    "S4 narrative tense provenance preserved",
+    "90C.7H.1 six S1/S2 WHY dependency structures",
+    "Free Head Probe, no assessment credit",
+    "Trail 3/3 visible only after expanding panel",
+    "WHICH history retained across transition"
   ],
   "knownCorpusGaps": [],
-  "verifiedInThisTurn": "Source files copied and branch content readback, not Chromium or real-device approval",
+  "verifiedInThisTurn": "GitHub static files synced, Cloudflare must be verified separately",
   "previewOnly": true,
   "historical90CEvidence": "90C baseline 8/8: GitHub Actions 39876680015; NOT certification of 90C.2 preview",
   "historicalCI": {
-    "run": 39986290096,
-    "result": "authority-and-browser-PASS",
-    "humanScreenshotsReviewed": true
+    "run": 40002684451,
+    "result": "3-of-3-success",
+    "scope": "WHY S1/S2 DF/DHP EN ES PT; WHICH to WHY; S3 2/3 and S4 3/3 Trail Word Path"
   },
   "audioHomologated": false
 }
