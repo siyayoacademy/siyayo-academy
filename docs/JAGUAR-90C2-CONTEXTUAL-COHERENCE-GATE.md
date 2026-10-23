@@ -22,3 +22,7 @@ O código está em branch experimental. Segue-se **novo preview estático PORTRA
 
 ## Peraí 90C.2.1 — inventário obrigatório das lacunas S1/S2
 O verificador encontrou **6 lacunas de autoria** (S1 Shopping e S2 Preparing × EN/ES/PT), sem `reasonGrounding` WHY completo. Estas não são aprovações e não devem ser mascaradas como corpus fundamentado. A auditoria rejeita qualquer lacuna em S3/S4 e também rejeita novas lacunas fora do inventário S1/S2. Para S1/S2, o renderizador mostra aviso não-autorável quando houver WHY sem grounding, evitando sentença genérica tratada como resposta. A futura expansão dessas perguntas necessita autorização de novos contratos e corpus contextual. A pontuação avaliativa existente segue independente.
+
+
+## 90C.2.2 · Browser RED initial: sequence S1→S2→S3 must await navigation
+Run 39887385284: authority CI PASS but strict portrait RED 0/3 because script clicked NEXT twice without awaiting intermediate S2; second click may be dropped during render and timeout followed. Browser test fixed with explicit S2 navigation wait; no production evaluator modification. Retest required before green.

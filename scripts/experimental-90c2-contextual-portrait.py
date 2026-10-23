@@ -25,6 +25,7 @@ with sync_playwright() as p:
    page.goto('http://127.0.0.1:8879/verb-explorer.html?mode=experience&experience=shopping-for-dinner',wait_until='domcontentloaded',timeout=24000)
    page.wait_for_function("() => !!window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId && !!window.SIYAYOVerbExplorerContextualCoherence",timeout=25000)
    page.locator('#nextExperience').click()
+   page.wait_for_function("() => window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()==='preparing-dinner'",timeout=13000)
    page.locator('#nextExperience').click()
    page.wait_for_function("() => window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()==='having-dinner'",timeout=13000)
    page.locator('[data-experience-language="'+lang+'"]').click()
