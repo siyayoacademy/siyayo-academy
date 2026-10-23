@@ -206,6 +206,14 @@ function selectThinkingMindAssessment(question){
   const selection=window.SIYAYOVerbExplorerThinkingMindAssessmentSelection;
   if(!selection||typeof selection.select!=="function")return Promise.resolve(false);
   return Promise.resolve(selection.select(question)).then(result=>{
+    // S4 WHY has no assessmentTarget by design. Returning to its QW after
+    // exploring HOW/WHAT may resume ONLY the existing S3-owned Session.
+    // Never create a new S4 attempt or transfer credit merely on QW selection.
+    if(result!==true&&question?.questionWord==="why"&&
+       typeof selection.resumeRetainedForVisibleSelection==="function")
+      return selection.resumeRetainedForVisibleSelection(question);
+    return result===true;
+  }).then(result=>{
     renderExperience();
     if(result===true){
       const headProbe=window.SIYAYOVerbExplorerDependencyHeadProbeRuntime;
