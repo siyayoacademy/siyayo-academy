@@ -178,7 +178,7 @@
     "externalGatesBlocked": 12
   },
   "coherence90C2": {
-    "status": "CI_GREEN_PREVIEW_HUMAN_PENDING",
+    "status": "CI_GREEN_CLOUDFLARE_PREVIEW_VERIFIED_HUMAN_AUDIO_PENDING",
     "branch": "jaguar/explorer-contextual-coherence-90c2",
     "source": "53c6dc9b8039937bc5f6bf13e800cd5e08c5b5da",
     "documentation": "docs/JAGUAR-90C2-CONTEXTUAL-COHERENCE-GATE.md",
@@ -197,11 +197,17 @@
     },
     "isolatedPreview": {
       "branch": "jaguar/explorer-portrait-preview-90c2",
-      "head": "d50f09157614d62fcf27192ac91fa20e706ea858",
-      "gitHubSourceAvailable": true,
-      "deploymentVerified": false,
-      "approvedByHuman": false,
-      "reason": "Tested plausible Cloudflare branch alias returns 404; actual deployed URL and build identity not established."
+      "head": "776d6e40796a333ad02b553a21998360ea290804",
+      "deploymentVerified": true,
+      "deploymentId": "9a55d7c9-896e-44a2-b8cb-748219ab9b80",
+      "deploymentUrl": "https://9a55d7c9.siyayo-academy.pages.dev/",
+      "aliasUrl": "https://jaguar-explorer-portrait-pre-9973.siyayo-academy.pages.dev/",
+      "route": "/verb-explorer.html?mode=experience&experience=shopping-for-dinner",
+      "screenshotsReviewedByUser": true,
+      "previewBrowserFullRegression": "pending",
+      "physicalSpeechHomologation": "pending",
+      "fullHumanApproval": false,
+      "backendConnected": false
     }
   },
   "retroactiveCoherence90C3": {
