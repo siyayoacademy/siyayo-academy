@@ -837,6 +837,32 @@
                 }
               }
             ]
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "shopping-why-en",
+              "es": "shopping-why-es",
+              "pt": "shopping-why-pt"
+            },
+            "defaultFocus": "prefer"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "shopping-why-en",
+              "es": "shopping-why-es",
+              "pt": "shopping-why-pt"
+            },
+            "targetTokenId": "why",
+            "prompt": {
+              "en": "In “Why do you prefer the fresh cheese?”, which verb does WHY modify?",
+              "es": "En «¿Por qué prefieres el queso fresco?», ¿a qué verbo se vincula POR QUÉ?",
+              "pt": "Em “Por que você prefere o queijo fresco?”, a qual verbo POR QUE se liga?"
+            },
+            "alternativeTokenIds": [
+              "prefer",
+              "cheese",
+              "fresh"
+            ]
           }
         },
         {
@@ -1594,6 +1620,32 @@
                   "pt": "Porque ainda estamos escolhendo ingredientes no supermercado."
                 }
               }
+            ]
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-why-en",
+              "es": "preparing-why-es",
+              "pt": "preparing-why-pt"
+            },
+            "defaultFocus": "preparing"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-why-en",
+              "es": "preparing-why-es",
+              "pt": "preparing-why-pt"
+            },
+            "targetTokenId": "why",
+            "prompt": {
+              "en": "In “Why are we preparing this dinner together?”, which main verb does WHY modify?",
+              "es": "En «¿Por qué estamos preparando esta cena juntos?», ¿a qué verbo principal se vincula POR QUÉ?",
+              "pt": "Em “Por que estamos preparando este jantar juntos?”, a qual verbo principal POR QUE se liga?"
+            },
+            "alternativeTokenIds": [
+              "are",
+              "preparing",
+              "dinner"
             ]
           }
         },
