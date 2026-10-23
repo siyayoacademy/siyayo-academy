@@ -1,0 +1,36 @@
+name: JAGUAR Master VIP H6 provenance gate
+on:
+  push:
+    branches: [jaguar/master-vip-provenance-priorities-90c7h6]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  fidelity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('node:assert/strict');
+          const get=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+          const policy=get('data/learning/references/master-vip-source-fidelity-v0.1.json');
+          const movement=get('data/nodes/movement.json');
+          const matrix=get('data/learning/references/master-vip-existence-experience-candidates-v0.1.json');
+          const seeds=get('data/learning/experience-seeds.json');
+          assert.equal(policy.assessmentAuthority,false);
+          assert.ok(policy.labels.MASTER_ORIGINAL&&policy.labels.COMPLEMENTARY_STUDY);
+          assert.match(movement.description.en,/TO BE \+ VERB-ING/);
+          assert.match(movement.metadata.notes,/MASTER_ORIGINAL/);
+          assert.equal(matrix.experienceCandidates.length,4);
+          assert.ok(matrix.experienceCandidates.every(c=>c.status==='PENDING_HOMOLOGATION'));
+          assert.ok(matrix.experienceCandidates.every(c=>['en','es','pt'].every(l=>c.examples[l])));
+          assert.ok(matrix.experienceCandidates.every(c=>seeds.items.some(s=>s.id===c.experienceId)));
+          for(const k of ['assessmentAuthority','assessmentEvidence','greenPass'])assert.equal(matrix[k],false);
+          assert.equal(seeds.items.length,4);
+          console.log('PASS Master VIP provenance / movement source fidelity / 4 candidate scenes / no-evidence gate');
+          NODE
+          node scripts/jaguar-90c7h0-supervisor.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          test "$(git rev-parse HEAD:labs/jaguar-v30-3)" = "5ee77257551593b8e4960dd6971cc7ed069fcd56"
