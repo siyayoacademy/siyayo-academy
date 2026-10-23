@@ -1,0 +1,118 @@
+{
+  "version": "90C.7H.1",
+  "id": "shopping-why-es",
+  "language": "es",
+  "sentence": "¿Por qué prefieres el queso fresco?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Por qué",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO INTERROGATIVO"
+        },
+        "role": {
+          "es": "Razón preguntada"
+        }
+      }
+    },
+    {
+      "id": "prefer",
+      "index": 2,
+      "form": "prefieres",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Predicado de preferencia al que se vincula POR QUÉ"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 3,
+      "form": "el",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determina queso"
+        }
+      }
+    },
+    {
+      "id": "cheese",
+      "index": 4,
+      "form": "queso",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Alimento elegido"
+        }
+      }
+    },
+    {
+      "id": "fresh",
+      "index": 5,
+      "form": "fresco",
+      "wordClass": "ADJ",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADJETIVO"
+        },
+        "role": {
+          "es": "Cualidad del queso"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prefer",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "prefer",
+      "dependent": "cheese",
+      "relation": "obj"
+    },
+    {
+      "head": "cheese",
+      "dependent": "the",
+      "relation": "det"
+    },
+    {
+      "head": "cheese",
+      "dependent": "fresh",
+      "relation": "amod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "assessmentAuthority": false,
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO WHY S1 authored exploratory sentence",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "why",
+    "field": "thinkingMind.presentationGrounding.questionOverride",
+    "notes": "Specific cheese referent is a contextual reference only; not a recorded WHICH choice or a WHY assessment."
+  }
+}
