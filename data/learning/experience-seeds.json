@@ -1846,7 +1846,32 @@
                 "special"
               ]
             }
-          }
+          },
+          "assessmentEntryFrom": [
+            {
+              "originExperienceId": "shopping-for-dinner",
+              "skill": "what.use.object-question",
+              "entryMode": "explicit-independent-start",
+              "allowCanonicalMultiHop": true
+            },
+            {
+              "originExperienceId": "shopping-for-dinner",
+              "skill": "where.use.location-question",
+              "entryMode": "explicit-independent-start",
+              "allowCanonicalMultiHop": true
+            },
+            {
+              "originExperienceId": "shopping-for-dinner",
+              "skill": "which.use.determiner",
+              "entryMode": "explicit-independent-start",
+              "allowCanonicalMultiHop": true
+            },
+            {
+              "originExperienceId": "preparing-dinner",
+              "skill": "what.use.object-question",
+              "entryMode": "explicit-independent-start"
+            }
+          ]
         }
       ],
       "perspectives": {
