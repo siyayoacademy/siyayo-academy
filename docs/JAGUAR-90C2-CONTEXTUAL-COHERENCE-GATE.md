@@ -18,3 +18,7 @@ O teste `scripts/test-jaguar-contextual-coherence-90c2.js` e a auditoria PORTRAI
 **Invariantes:** 3/3 WHY somente após transferência válida S4; S3 2/3 não vira 3/3 por abrir Trail, responder livremente, ouvir áudio ou clicar NEXT. `POR QUÉ` e `POR QUÊ` preservados. NICK/idioma/origem e quatro QWs preservados. Não alterar 12 controles externos bloqueados nem considerar PAST/FUTURE homologados.
 
 O código está em branch experimental. Segue-se **novo preview estático PORTRAIT e homologação humana**; a antiga branch preview `jaguar/explorer-portrait-preview-90c1` continua intacta como comparação.
+
+
+## Peraí 90C.2.1 — inventário obrigatório das lacunas S1/S2
+O verificador encontrou **6 lacunas de autoria** (S1 Shopping e S2 Preparing × EN/ES/PT), sem `reasonGrounding` WHY completo. Estas não são aprovações e não devem ser mascaradas como corpus fundamentado. A auditoria rejeita qualquer lacuna em S3/S4 e também rejeita novas lacunas fora do inventário S1/S2. Para S1/S2, o renderizador mostra aviso não-autorável quando houver WHY sem grounding, evitando sentença genérica tratada como resposta. A futura expansão dessas perguntas necessita autorização de novos contratos e corpus contextual. A pontuação avaliativa existente segue independente.
