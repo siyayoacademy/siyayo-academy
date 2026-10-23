@@ -98,6 +98,20 @@ function visibleRecords(){
     return id?r.learnerId===id:!r.learnerId&&r.sessionId===session;
   });
 }
+// A control request is not necessarily an accepted result.
+// This classification describes UI interaction only; assessment results belong
+// exclusively to existing canonical evaluators.
+var STATE_FIELDS=Object.freeze({
+  'language':'language','question-word':'questionWord',
+  'tense':'tense','mode':'mode','word-type':'wordType',
+  'perspective':'perspective','next-experience':'experienceId',
+  'previous-experience':'experienceId','explorer-mode':'view'
+});
+function classify(action,before,after){
+  var field=STATE_FIELDS[action];
+  if(!field)return 'requested';
+  return before[field]===after[field]?'unchanged':'changed';
+}
 function render(){
   var panel=doc?.getElementById('patitaInteractionLedger');
   if(!panel)return;
@@ -114,7 +128,8 @@ function render(){
     '<p>'+escapeHtml(labels.detail)+(learnerId()?'':' · '+escapeHtml(labels.anonymous))+'</p>'+
     '<ol>'+last.map(function(r){
       return '<li><strong>'+escapeHtml(r.action)+'</strong> · '+
-        escapeHtml(r.selected||'—')+' <small>'+escapeHtml((r.after?.language||r.before?.language||'—').toUpperCase())+
+        escapeHtml(r.selected||'—')+' · '+escapeHtml(r.uiOutcome||'requested')+
+        ' <small>'+escapeHtml((r.after?.language||r.before?.language||'—').toUpperCase())+
         ' · '+escapeHtml(r.after?.experienceId||r.before?.experienceId||'—')+
         ' · '+escapeHtml(r.after?.questionWord||r.before?.questionWord||'—')+'</small></li>';
     }).join('')+'</ol>';
@@ -132,6 +147,7 @@ function observe(event){
       version:1,kind:'patita-interaction',sequence:(Number.isInteger(prior)?prior:0)+1,
       observedAt:new Date().toISOString(),sessionId:session,learnerId:id,
       action:intent.action,selected:intent.selected,before:before,after:after,
+      uiOutcome:classify(intent.action,before,after),
       observationOnly:true,evidenceProduced:false,assessmentCredit:false,greenPass:false
     });
     try{root.localStorage.setItem(KEY,JSON.stringify(rows.slice(-LIMIT)));}catch(_error){}
@@ -144,7 +160,7 @@ if(doc&&typeof doc.addEventListener==='function'){
   doc.addEventListener('DOMContentLoaded',render);
 }
 root.SIYAYOPatitaInteractionTrail=Object.freeze({
-  getVisibleRecords:function(){return visibleRecords().map(function(r){return Object.assign({},r);});},
+  getVisibleRecords:function(){return visibleRecords().map(function(r){return JSON.parse(JSON.stringify(r));});},
   refresh:render,
   storageKey:KEY
 });
