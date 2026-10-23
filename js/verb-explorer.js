@@ -164,6 +164,32 @@ function renderAssessmentEntryNotice(experience){
   const contracts=window.SIYAYOQuestionWordAssessmentContract;
   const question=activeThinkingQuestion(experience);
   const target=contracts?.targetForSelection?.(question);
+  // WHY in S4 is a transfer reference with no fresh assessmentTarget.
+  // Do not invent a S4 assessment: guide learner to the authorized S3 origin
+  // when their selected language has no retained WHY Session.
+  if(experience?.id==='after-dinner-conversation'&&question?.questionWord==='why'){
+    const existing=window.SIYAYOVerbExplorerThinkingMindAssessmentSelection?.getRetainedProgress?.('why.use.contextual-reason',experienceLanguage)||[];
+    const authorized=decision?.skill==='why.use.contextual-reason'&&decision.assessmentScope?.language===experienceLanguage&&decision.assessmentScope?.originExperienceId==='having-dinner';
+    if(authorized||existing.some(record=>record.originExperienceId==='having-dinner'))return false;
+    const origin=experiences.find(item=>item.id==='having-dinner');
+    const labels={
+      en:{heading:'WHY · FREE EXPLORATION',message:'WHY transfer cannot begin here. Return to Having a Nice Dinner (S3), select WHY in English and complete the first two authorized responses. Then return here for the third response. Other Question Word progress is preserved.'},
+      es:{heading:'POR QUÉ · EXPLORACIÓN LIBRE',message:'La transferencia de POR QUÉ no comienza aquí. Vuelve a Disfrutando una linda cena (S3), selecciona POR QUÉ en español y completa las dos primeras respuestas autorizadas. Luego vuelve aquí para la tercera. Se conserva el progreso de otras preguntas.'},
+      pt:{heading:'POR QUE · EXPLORAÇÃO LIVRE',message:'A transferência de POR QUE não começa aqui. Volte a Desfrutando um belo jantar (S3), selecione POR QUE em português e conclua as duas primeiras respostas autorizadas. Depois volte aqui para a terceira. O progresso das outras perguntas permanece preservado.'}
+    }[experienceLanguage];
+    if(!labels||!origin)return false;
+    const view=document.getElementById('experienceView');
+    if(!view)return false;
+    if(!note){
+      note=document.createElement('section');note.id='assessmentEntryNotice';note.className='what-canonical-panel';
+      note.setAttribute('aria-live','polite');
+      const living=view.querySelector('.living-window');
+      if(living)living.insertBefore(note,document.getElementById('assessmentAdoptionControls'));
+      else view.insertBefore(note,view.querySelector('.experience-grid')||null);
+    }
+    note.innerHTML=`<h3>${escapeHtml(labels.heading)}</h3><p class="where-probe-feedback">${escapeHtml(labels.message)}</p>`;
+    note.hidden=false;return true;
+  }
   if(!experience||!target?.resumeOnly)return false;
   const snapshot=window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.();
   const decision=snapshot?.session?.decision;
