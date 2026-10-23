@@ -10,9 +10,9 @@
     "pt": "MOVIMENTO"
   },
   "description": {
-    "en": "Verb-function concept for expressing displacement, direction, change of position or physical movement of a participant through lexical verbs such as go, come, walk and run.",
-    "es": "Concepto de función verbal para expresar desplazamiento, dirección, cambio de posición o movimiento físico de un participante mediante verbos léxicos como ir, venir, caminar y correr.",
-    "pt": "Conceito de função verbal para expressar deslocamento, direção, mudança de posição ou movimento físico de um participante por meio de verbos lexicais como ir, vir, caminhar e correr."
+    "en": "MASTER VIP teaching function: action in progress, introduced through TO BE + VERB-ING, especially activity simultaneous with speaking. Physical displacement is a related complementary interpretation, not a replacement for the original classification.",
+    "es": "Función didáctica original de Master VIP: acción en desarrollo, introducida mediante TO BE + VERB-ING, especialmente simultánea al habla. El desplazamiento físico es una interpretación complementaria relacionada, no una sustitución de la clasificación original.",
+    "pt": "Função didática original da Master VIP: ação em desenvolvimento, apresentada por TO BE + VERB-ING, especialmente simultânea à fala. O deslocamento físico é uma interpretação complementar relacionada, não substitui a classificação original."
   },
   "relations": [
     {
@@ -103,6 +103,6 @@
   "metadata": {
     "status": "prototype",
     "source": "STRUCTURE - KIND OF WORDS Master",
-    "notes": "v0.2 defines Movement by lexical-semantic displacement, direction, change of position or physical movement. Action and Movement may overlap for verbs such as go, come, walk and run. Progressive aspect (BE + verb-ING) is a separate grammatical layer that may present Movement or Action as ongoing, but it does not define the Movement function itself. Boundaries remain intentionally permeable with Action, prepositions, timelines, sentence structure, questions and practical communication."
+    "notes": "MASTER_ORIGINAL: MOVEMENT = TO BE + VERB-ING; 'We are eating pizza.' / 'Nós estamos comendo pizza.' (Master VIP p.10 and Movement chapter). COMPLEMENTARY_STUDY: lexical physical displacement with go/walk/run is related, not the original definition. No change to assessment contracts or runtime."
   }
 }
