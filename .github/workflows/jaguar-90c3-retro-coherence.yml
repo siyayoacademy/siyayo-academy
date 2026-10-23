@@ -1,0 +1,26 @@
+name: JAGUAR 90C.3 retrospective coherence read-only
+on:
+  push:
+    branches: [jaguar/explorer-retro-coherence-90c3]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  retro-coherence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - name: Read-only 90C.3 retrospective inventory and negative controls
+        run: |
+          node --check scripts/test-jaguar-retro-coherence-90c3.js
+          node scripts/test-jaguar-retro-coherence-90c3.js
+          node scripts/test-jaguar-contextual-coherence-90c2.js
+      - name: Verify archival and external release barriers unchanged
+        run: |
+          test "$(git rev-parse HEAD:labs/jaguar-v30-3)" = "5ee77257551593b8e4960dd6971cc7ed069fcd56"
+          node scripts/check-jaguar-90a-manifest.mjs
+          node scripts/check-jaguar-90b-roadmap.mjs
+          node scripts/check-jaguar-90b1-audit.mjs
