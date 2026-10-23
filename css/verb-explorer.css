@@ -1254,3 +1254,6 @@ body{
 .living-line-authority-note{margin:6px 10px 10px;padding:9px 12px;border:1px solid rgba(242,216,138,.32);border-radius:9px;color:#dce7f5;background:#091e36;font:600 .78rem/1.45 var(--font-body);text-align:center;overflow-wrap:break-word}
 .living-line-authority-note[data-authority-state="free-exploration"]{border-style:dashed}
 .living-line-authority-note[hidden]{display:none}
+
+/* 90C.5: factual narrative tense label; never a Pass Contract signal */
+#livingLines .living-line-narrative-scope{display:block;text-align:center;white-space:normal;color:#f2d88a;font:600 .72rem/1.4 var(--font-body);margin:3px 8px 0;letter-spacing:.03em}
