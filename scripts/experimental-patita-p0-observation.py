@@ -29,9 +29,18 @@ with sync_playwright() as p:
    assert page.locator('#patitaInteractionLedger').is_visible()
    page.locator('#learnerIdentityInput').fill("PATITA-"+lang)
    page.locator('#learnerIdentityConfirm').click()
+   # NOUN locks TENSE; it must not be clicked or counted as an event.
+   assert page.locator('#experienceTenseGear [data-experience-tense="future"]').is_disabled()
+   anonymous_count=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().length")
+   page.locator('[data-word-type="verb"]').click()
    page.locator('#experienceTenseGear [data-experience-tense="future"]').click()
    identified=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords()")
-   assert identified and all(r["learnerId"]=="PATITA-"+lang for r in identified),identified
+   assert len(identified)>=2 and all(r["learnerId"]=="PATITA-"+lang for r in identified),identified
+   assert identified[-1]["action"]=="tense" and identified[-1]["uiOutcome"]=="changed",identified[-1]
+   assert all(r["evidenceProduced"] is False for r in identified)
+   # A detached read must not allow a caller to mutate ledger state.
+   page.evaluate("() => {const rows=window.SIYAYOPatitaInteractionTrail.getVisibleRecords();rows[0].after.language='zz'}")
+   assert page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords()[0].after.language")!="zz"
    assert not any(r["action"]=="question-word" for r in identified),"Anonymous observations must not be silently attributed to NICK"
    assert page.evaluate("() => window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.()?.session?.decision?.skill||null") is None
    page.screenshot(path=str(out/(lang+".png")),full_page=True)
