@@ -7,10 +7,10 @@ const issues=resolver.auditExperiences(data.items);
 const knownGaps=issues.filter(x=>['shopping-for-dinner','preparing-dinner'].includes(x.experienceId));
 const inScopeGaps=issues.filter(x=>['having-dinner','after-dinner-conversation'].includes(x.experienceId));
 assert.deepEqual(inScopeGaps,[],'S3/S4 WHY MUST be coherent in EN ES PT');
-assert.equal(knownGaps.length,6,'S1/S2 ungrounded WHY authoring gaps must be inventoried, not erased');
+assert.equal(knownGaps.length,0,'90C.6 S1/S2 WHY exploratory references now grounded');
 assert.ok(knownGaps.every(x=>x.reason==='missing-grounding'));
 assert.equal(issues.length,knownGaps.length,'Do not silently accept any other WHY semantic gap');
-console.log('GAP INVENTORY 90C.2: S1/S2 WHY have six corpus-grounding authoring gaps, NOT evaluated as passing authored dialogs.');
+console.log('90C.6 CORPUS: previous six S1/S2 gaps are authored as exploratory only, NOT evaluative.');
 const expected={
  'having-dinner':{
    en:['Why is this dinner special?','Because we prepared it together.'],
