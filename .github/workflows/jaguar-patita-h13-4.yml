@@ -1,0 +1,35 @@
+name: JAGUAR H13.4 navigation matrix
+on:
+  push:
+    branches: [jaguar/patita-h13-4-navigation-matrix]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check js/verb-explorer-patita-interaction-trail.js
+          node --check js/verb-explorer-polyglot-word-path-view.js
+          node scripts/jaguar-90c7h0-supervisor.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/site.log" 2>&1 &
+          sleep 3
+      - run: python scripts/experimental-patita-h13-4-navigation.py
+      - if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: patita-h13-4-navigation
+          path: visual-audit-patita-h13-4/
