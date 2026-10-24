@@ -1,0 +1,580 @@
+{
+  "title": "SIYAYO Academy — Specialized Module Governance Registry",
+  "version": "draft-audit-2026-10-24",
+  "source_repository": "siyayoacademy/siyayo-academy",
+  "source_branch": "jaguar/h14-19-func13-speech-window-period-gap",
+  "source_commit": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+  "publication_status": "Documentation branch jaguar/module-governance-registry-20261024; docs-only, no merge to main; read source_commit for audited code reference",
+  "contract_rule": "Module code, name, HTML selector, event, data source, owner and update invariants must be verified before reuse. Visual module ≠ evaluation authority.",
+  "modules": [
+    {
+      "code": "EXP-01",
+      "name": "Experience Header",
+      "status": "existing structure; documentation alias",
+      "html": ".experience-heading; #experienceTitle; #experienceSituation",
+      "controller": "js/verb-explorer.js · renderExperience()",
+      "data_sources": [
+        "data/learning/experience-seeds.json → items[].title/situation"
+      ],
+      "consumers": [
+        "#experienceView",
+        "CTX-02",
+        "LIVE-07",
+        "FUNC-13"
+      ],
+      "entry_events": [
+        "goToExperience(id)",
+        "change language",
+        "initial route",
+        "popstate"
+      ],
+      "how_to_do": "Resolve active Experience by id",
+      "how_to_record": "Presentation memory may retain navigation state; no evaluation credit",
+      "how_to_show": "Render localized title and situation",
+      "how_to_check": "Ensure experience exists and localized text is grounded",
+      "how_to_speak": "None in header",
+      "update_rules": "Re-render on Experience or language change",
+      "portability": "Reusable with localized title data",
+      "visual_contract": "Centered header; gold SIYAYO title",
+      "warnings": ""
+    },
+    {
+      "code": "CTX-02",
+      "name": "Circumstance Strip",
+      "status": "existing structure; documentation alias",
+      "html": "#circumstanceStrip",
+      "controller": "js/verb-explorer-presentation-copy.js · localize()",
+      "data_sources": [
+        "data/learning/experience-seeds.json → items[].circumstances",
+        "js/verb-explorer-presentation-copy.js → dictionary"
+      ],
+      "consumers": [
+        "Experience Header",
+        "Dependency Focus",
+        "pedagogical context"
+      ],
+      "entry_events": [
+        "renderExperience",
+        "language change",
+        "Experience navigation"
+      ],
+      "how_to_do": "Read TIME/PLACE/WEATHER/COMPANY/PURPOSE keys",
+      "how_to_record": "No assessment record",
+      "how_to_show": "Render five contextual cards with localized labels",
+      "how_to_check": "Unknown circumstance keys must not be fabricated",
+      "how_to_speak": "No independent speech",
+      "update_rules": "Re-render on Experience or language change",
+      "portability": "Reusable if source keys/translation dictionary provided",
+      "visual_contract": "Dark cards, gold accents",
+      "warnings": ""
+    },
+    {
+      "code": "DEP-03",
+      "name": "Dependency Focus",
+      "status": "existing structure; documentation alias",
+      "html": "#dependencyFocusSurface",
+      "controller": "js/verb-explorer-dependency-focus-surface.js; js/verb-explorer-dependency-structure-source.js",
+      "data_sources": [
+        "data/learning/dependencies/*.json (actual URL whitelist in js/verb-explorer.js)",
+        "data/learning/experience-seeds.json → thinkingMind[].dependencyFocus"
+      ],
+      "consumers": [
+        "HEAD-04",
+        "Dependency connectors",
+        "Thinking Mind"
+      ],
+      "entry_events": [
+        "QW change",
+        "language change",
+        "Experience change",
+        "resize",
+        "siyayo:responsive-preview-changed"
+      ],
+      "how_to_do": "Resolve canonical dependency structure matching Experience/QW/language",
+      "how_to_record": "Read-only diagram; interaction observer may log exploration, not Evidence",
+      "how_to_show": "Render dependency token boxes + connectors",
+      "how_to_check": "Validate referenced structure and tokens; never infer missing syntax",
+      "how_to_speak": "No independent TTS in diagram",
+      "update_rules": "Recompute on grounded selection, redraw connectors after geometry/preview changes",
+      "portability": "Portable ONLY with canonical dependency structures, diagram renderer, connector view, CSS",
+      "visual_contract": "Centered token diagram with semantic links; preserve readable arrows",
+      "warnings": ""
+    },
+    {
+      "code": "HEAD-04",
+      "name": "Dependency Head Probe",
+      "status": "existing structure; documentation alias",
+      "html": "#dependencyHeadProbePanel",
+      "controller": "js/verb-explorer-dependency-head-probe-live.js",
+      "data_sources": [
+        "data/learning/experience-seeds.json → dependencyHeadProbe or thinkingMind metadata",
+        "data/learning/dependencies/*.json"
+      ],
+      "consumers": [
+        "AdaptiveDependencyHeadProbeDefinition",
+        "AdaptiveDependencyHeadProbeResult",
+        "Adaptive Coordinator",
+        "PATITA-12"
+      ],
+      "entry_events": [
+        "QW/Experience/language change",
+        "learner selects alternative",
+        "learner identity change"
+      ],
+      "how_to_do": "Present candidates and determine selected syntactic head",
+      "how_to_record": "Free observation via PATITA; Attempt/Evidence only with compatible active contract",
+      "how_to_show": "Presenter/browser wire + localized feedback",
+      "how_to_check": "Verify matching structure, learner, language, Experience, scope and authorized Session",
+      "how_to_speak": "Probe speaker via supplied speak callback",
+      "update_rules": "Mount or hide when metadata/scope changes; preserve qualified feedback by context",
+      "portability": "Requires all specialized Definition/Presenter/Result/Evidence/Attempt boundaries",
+      "visual_contract": "Centered prompt and answer options",
+      "warnings": "HEAD IDENTIFIED in practice ≠ contract 3/3 or GREEN PASS"
+    },
+    {
+      "code": "ID-05",
+      "name": "Learner Identity",
+      "status": "existing structure; documentation alias",
+      "html": "#learnerIdentityPanel; #learnerIdentityInput",
+      "controller": "js/verb-explorer-learner-identity-{source,provider,surface}.js",
+      "data_sources": [
+        "User-entered NICK; identity source"
+      ],
+      "consumers": [
+        "Assessment scopes",
+        "PATITA-12",
+        "TRAIL-10",
+        "WORD-11"
+      ],
+      "entry_events": [
+        "Confirm learner",
+        "Change learner"
+      ],
+      "how_to_do": "Establish displayed learner identity and allow changing it",
+      "how_to_record": "Identity source; canonical learning identity is not display-only",
+      "how_to_show": "Compact NICK / edit form",
+      "how_to_check": "Scope any canonical evidence to exact learner",
+      "how_to_speak": "No TTS",
+      "update_rules": "Refresh on identity change and Experience render",
+      "portability": "Reuse only with privacy and identity scope controls",
+      "visual_contract": "Small dark-gold identity panel",
+      "warnings": "Do not carry one learner’s evidence into another learner’s view"
+    },
+    {
+      "code": "GEAR-06",
+      "name": "Pedagogical Axes / Gear Stack",
+      "status": "existing structure; documentation alias",
+      "html": ".gear-stack; #experienceLanguageGear; #questionGear; #wordTypeGear; #experienceTenseGear; #experienceModeGear; #perspectiveGear",
+      "controller": "js/verb-explorer.js · attachEvents/renderExperience; js/thinking-mind-runtime-decision.js; js/verb-explorer-thinking-mind-assessment-selection.js",
+      "data_sources": [
+        "data/learning/experience-seeds.json",
+        "data/learning/question-word-capabilities.json",
+        "NOUN/ADJECTIVE lexicons"
+      ],
+      "consumers": [
+        "EXP-01",
+        "DEP-03",
+        "LIVE-07",
+        "FUNC-13",
+        "EVAL-08"
+      ],
+      "entry_events": [
+        "[data-experience-language]",
+        "[data-question-index]",
+        "[data-word-type]",
+        "[data-experience-tense]",
+        "[data-experience-form]",
+        "[data-perspective]",
+        "COMPOSE/BUILD SENTENCE"
+      ],
+      "how_to_do": "Choose visible axes; Thinking Mind Decision resolves available opportunities",
+      "how_to_record": "Presentation memory retains UI; canonical evaluation only on declared target via Assessment Selection",
+      "how_to_show": "Render active buttons and available axes; change content in adjacent panels",
+      "how_to_check": "No fabricated QW skills; grammar lock and contextual coherence gates",
+      "how_to_speak": "Changes active voice locale, but gear has no audio",
+      "update_rules": "Re-render current Experience; reset line offset as coded; preserve scope-owned evidence",
+      "portability": "Portable as UI shell; assessment selection requires canonical runtime",
+      "visual_contract": "Gold labels, SIYAYO dark blue, selected active states",
+      "warnings": ""
+    },
+    {
+      "code": "LIVE-07",
+      "name": "Living Window / Lines & Possible Responses",
+      "status": "existing structure; documentation alias",
+      "html": ".living-window; #livingLines",
+      "controller": "js/verb-explorer.js · experienceLines/renderLivingLines; js/verb-explorer-visible-assessment-boundary.js",
+      "data_sources": [
+        "data/learning/experience-seeds.json → thinkingMind/perspectives",
+        "data/lexicon/*",
+        "canonical choices"
+      ],
+      "consumers": [
+        "LW header",
+        "SPEECH-A",
+        "EVAL-08",
+        "NEXT-09",
+        "choice resolver",
+        "line controls"
+      ],
+      "entry_events": [
+        "renderExperience",
+        "QW/Experience/language change",
+        "lineUp/lineDown",
+        "word type/tense/mode/perspective"
+      ],
+      "how_to_do": "Assemble three visible lines from authored Corpus and current axes",
+      "how_to_record": "Speech lines do NOT register evaluative responses; PATITA may observe clicks",
+      "how_to_show": "Render header/counter/dialogue, optional subpanels and NEXT",
+      "how_to_check": "VisibleAssessmentBoundary labels corpus-only; missing authored variants show authoring gap",
+      "how_to_speak": "Uses SPEECH-A and speakText()",
+      "update_rules": "Rebuild on relevant selection; lineOffset reset for most navigation actions",
+      "portability": "Portable corpus reader with separate authoring and evaluation layers",
+      "visual_contract": "Dark center-aligned sentence cards; 03/03 is dialogue count",
+      "warnings": "NEXT-09 is CHILD of LIVE-07; not an independent parent at same DOM level"
+    },
+    {
+      "code": "EVAL-08",
+      "name": "Assessment Probes",
+      "status": "existing structure; documentation alias",
+      "html": "dynamic #determinerUseAssessmentPanel; #whatAssessmentPanel; #whyAssessmentPanel; #whereAssessmentPanel",
+      "controller": "js/verb-explorer-{determiner-use,what,why,where}-assessment-live.js",
+      "data_sources": [
+        "data/learning/experience-seeds.json → assessmentTarget / assessmentResumeTarget",
+        "canonical target definitions / probe specifications"
+      ],
+      "consumers": [
+        "Adaptive Coordinator",
+        "Attempt/Evidence boundaries",
+        "TRAIL-10",
+        "WORD-11"
+      ],
+      "entry_events": [
+        "Authorized QW selection",
+        "learner choice",
+        "Session resume",
+        "Experience/language/identity change"
+      ],
+      "how_to_do": "Specialized question/choice probes for WHICH WHAT WHERE WHY",
+      "how_to_record": "Canonical Attempt/Evidence with authorized target only",
+      "how_to_show": "Dynamically mount separate probe panels; WHICH panel is before .experience-grid, not within LIVE-07",
+      "how_to_check": "Validate declared assessment target, scope, result, compatible session and pass contract",
+      "how_to_speak": "Independent question-card TTS and answer-row TTS",
+      "update_rules": "Mount/hide and refresh on active context and scope",
+      "portability": "Not portable as a plain visual widget without evaluation gates",
+      "visual_contract": "B1 speech question vs B2 separate audio & answer",
+      "warnings": "Never infer credit from corpus listening"
+    },
+    {
+      "code": "NEXT-09",
+      "name": "Toroidal NEXT Navigation",
+      "status": "existing structure; documentation alias",
+      "html": ".toroidal-next; #nextExperience; #previousExperience",
+      "controller": "js/verb-explorer.js; js/verb-explorer-live-next-wire.js; js/verb-explorer-toroidal-next-observer.js",
+      "data_sources": [
+        "data/learning/experience-seeds.json → toroidalNext.nextExperience/prompt/answer",
+        "runtime transition authorities"
+      ],
+      "consumers": [
+        "LIVE-07 parent",
+        "Experience Navigation",
+        "Adaptive Transition"
+      ],
+      "entry_events": [
+        "Click NEXT candidate",
+        "Click Previous Experience",
+        "evaluation progression events"
+      ],
+      "how_to_do": "Offer navigation candidate or authorized progression path",
+      "how_to_record": "Observations and canonical progression maintained by respective authorities",
+      "how_to_show": "NEXT card inside .living-window",
+      "how_to_check": "NEXT candidate ≠ GREEN or assessment authorization",
+      "how_to_speak": "No native speaker",
+      "update_rules": "Update on Experience render, authorized progression and transfer readiness",
+      "portability": "Can copy visual navigation shell; cannot blindly copy canonical progression authority",
+      "visual_contract": "Centered dark blue panel with gold NEXT button",
+      "warnings": "To place above NEXT: insert before .toroidal-next within .living-window; do not confuse LIVE-07 with NEXT-09"
+    },
+    {
+      "code": "TRAIL-10",
+      "name": "Learning Trail",
+      "status": "existing structure; documentation alias",
+      "html": "#learningTrailWordPathModule > #learningTrailWordPathPanel > #learnerTrailSurface",
+      "controller": "js/verb-explorer-learner-trail-surface.js; js/adaptive-learner-trail-view.js",
+      "data_sources": [
+        "Adaptive Coordinator snapshots",
+        "scope-owned evidence and pass-contract progress"
+      ],
+      "consumers": [
+        "WORD-11",
+        "PATITA-12 (parallel observational panel)"
+      ],
+      "entry_events": [
+        "learner change",
+        "QW/language change",
+        "Assessment updated",
+        "Experience render"
+      ],
+      "how_to_do": "Project learner progress by authorized skill and scope",
+      "how_to_record": "Read-only canonical progress projection",
+      "how_to_show": "Render milestones / progress / transfer",
+      "how_to_check": "Verify accepted evidence, scope and progress markers",
+      "how_to_speak": "None",
+      "update_rules": "Refresh after canonical evidence or visible context updates",
+      "portability": "Portable read-only with corresponding canonical sources",
+      "visual_contract": "Expansible dark-blue trail view",
+      "warnings": ""
+    },
+    {
+      "code": "WORD-11",
+      "name": "Word Path",
+      "status": "existing structure; documentation alias",
+      "html": "#learningTrailWordPathPanel (rendered content in learnerTrailSurface)",
+      "controller": "js/verb-explorer-polyglot-word-path-view.js",
+      "data_sources": [
+        "Retained Evidence from ThinkingMindAssessmentSelection",
+        "canonical Experience + NOUN corpus",
+        "Adaptive Scope"
+      ],
+      "consumers": [
+        "TRAIL-10",
+        "EVAL-08"
+      ],
+      "entry_events": [
+        "QW/language/learner change",
+        "new accepted evidence",
+        "Trail refresh"
+      ],
+      "how_to_do": "Project accepted words/answers by skill/language/origin",
+      "how_to_record": "No writes: read-only witnesses",
+      "how_to_show": "Display evidence details / polyglot matrix",
+      "how_to_check": "No witness => no accepted label; never invent answer text",
+      "how_to_speak": "No native TTS defined",
+      "update_rules": "Refresh with Trail and scope changes",
+      "portability": "Portable ONLY alongside canonical evidence reader",
+      "visual_contract": "Scoped polyglot text/list/matrix",
+      "warnings": ""
+    },
+    {
+      "code": "PATITA-12",
+      "name": "PATITA Interaction Ledger",
+      "status": "existing structure; documentation alias",
+      "html": "#patitaInteractionLedger",
+      "controller": "js/verb-explorer-patita-interaction-trail.js",
+      "data_sources": [
+        "DOM UI events",
+        "localStorage key siyayo.patita.interactions.v1",
+        "sessionStorage key siyayo.patita.tab-session.v1"
+      ],
+      "consumers": [
+        "Learning Trail",
+        "observation summaries",
+        "contextual outcomes"
+      ],
+      "entry_events": [
+        "Captured UI click",
+        "recordOutcome()",
+        "storage/pageshow",
+        "details toggle"
+      ],
+      "how_to_do": "Observe interaction intents and visible outcomes",
+      "how_to_record": "Local bounded ledger, max 500 records; observational only",
+      "how_to_show": "Render recent PATITA interactions within expandable module",
+      "how_to_check": "Classify UI outcomes, NOT canonical evaluator",
+      "how_to_speak": "Never synthesizes speech",
+      "update_rules": "Refresh on click/outcome/identity/context changes",
+      "portability": "Portable if privacy model and event selectors adapted",
+      "visual_contract": "Observational activity history",
+      "warnings": "PATITA is NEVER sole authority for Attempt, Evidence, GREEN"
+    },
+    {
+      "code": "FUNC-13",
+      "name": "Master VIP — Five Verb Functions / Function Lens",
+      "status": "experimental; H14.19 branch inspected; still hidden by default",
+      "html": "#h14SpecializedPreview",
+      "controller": "js/verb-explorer-h14-14-preview.js + scripts/jaguar-h14-13-specialized-mirror-reference.js",
+      "data_sources": [
+        "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json",
+        "data/learning/experience-seeds.json → perspectives"
+      ],
+      "consumers": [
+        "Explorer Runtime",
+        "Experience Navigation",
+        "GEAR-06"
+      ],
+      "entry_events": [
+        "QUALITY/STATE/MOVEMENT/ACTION/EXISTENCE selection",
+        "language, Experience, perspective, tense, mode, QW change",
+        "popstate"
+      ],
+      "how_to_do": "Project SIYAYO-authoring reference with H14.13 core coherence rules",
+      "how_to_record": "Per-Experience temporary function selection; NO Attempt/Evidence/GREEN",
+      "how_to_show": "Five-function panel with two contextual cards; default hidden; opt-in ?h14_14=preview",
+      "how_to_check": "H14.13 projectSingle verifies provenance, status, authoring compatibility and lack of assessment authority",
+      "how_to_speak": "H14.19 speech-window work is specialized; verify precise behavior before adopting in another site",
+      "update_rules": "Only opt-in render with valid source and compatible context",
+      "portability": "Portable authoring/reference component; requires H14.13 core and matrix",
+      "visual_contract": "Five buttons, gold/dark cards, perspective color red/yellow/green/blue",
+      "warnings": "Do not treat the panel as EVAL-08 or automatic assessment progress"
+    },
+    {
+      "code": "SPEECH-A",
+      "name": "Corpus Speech Card",
+      "status": "existing structure; documentation alias",
+      "html": "#livingLines > .living-line; .siyayo-speaker",
+      "controller": "js/verb-explorer.js · renderLivingLines/speakText; css/verb-explorer.css",
+      "data_sources": [
+        "Canonical authored dialogue from experienceLines()",
+        "speechLocales in verb-explorer.js"
+      ],
+      "consumers": [
+        "LIVE-07",
+        "SPEAKER-SVG"
+      ],
+      "entry_events": [
+        "Click complete living-line card",
+        "SpeechSynthesis start/end"
+      ],
+      "how_to_do": "Select authored text to read aloud",
+      "how_to_record": "Not an assessment answer; PATITA may observe click",
+      "how_to_show": "Full-card speech button; centered paragraph + edge icon",
+      "how_to_check": "VisibleAssessmentBoundary; authoring-gap item is not clickable speech",
+      "how_to_speak": "SpeechSynthesisUtterance; en-US, es-ES, pt-BR",
+      "update_rules": "Re-render when language/QW/content axes change",
+      "portability": "Portable visual+speech widget, but implement your own language/text source",
+      "visual_contract": "Dark background; centered semibold body; gold bold target; SVG-mask gold speaker; CURRENT Explorer speaker at LEFT via .living-line b {left:13px;right:auto}; RIGHT is a proposed placement variant",
+      "warnings": "Speaker on right is a requested variant, not current code. Do not equate audio click to assessment attempt"
+    },
+    {
+      "code": "SPEECH-B1",
+      "name": "Assessment Question Speech Card",
+      "status": "existing structure; documentation alias",
+      "html": ".what-probe-question-card; .why-probe-question-card; .where-probe-question",
+      "controller": "js/verb-explorer-{what,why,where}-assessment-live.js + CSS",
+      "data_sources": [
+        "Authorized probe questions and localized specifications"
+      ],
+      "consumers": [
+        "EVAL-08"
+      ],
+      "entry_events": [
+        "Click question card for audio"
+      ],
+      "how_to_do": "Present authored assessment question",
+      "how_to_record": "Question audio is not answer selection",
+      "how_to_show": "Question button with integrated speaker icon and centered text",
+      "how_to_check": "Assessment/scope checked independently; question listen alone no evidence",
+      "how_to_speak": "Speech function provided by runtime",
+      "update_rules": "Remount on context/QW/language/assessment changes",
+      "portability": "Portable only after separating visual speech from assessment semantics",
+      "visual_contract": "Gold speaker inside one card; target text gold bold",
+      "warnings": ""
+    },
+    {
+      "code": "SPEECH-B2",
+      "name": "Assessment Response Row",
+      "status": "existing structure; documentation alias",
+      "html": ".what-probe-response-row; .why-probe-response-row; .where-probe-choice",
+      "controller": "js/verb-explorer-{what,why,where}-assessment-live.js + CSS",
+      "data_sources": [
+        "Grounded probe answer alternatives"
+      ],
+      "consumers": [
+        "EVAL-08",
+        "SPEECH-B1"
+      ],
+      "entry_events": [
+        "Click speaker separately",
+        "Click answer option"
+      ],
+      "how_to_do": "Separate listening action from answer selection",
+      "how_to_record": "Answer selection may submit authorized Attempt only through evaluative boundary",
+      "how_to_show": "Two independent controls: speaker cell + response button, centered text",
+      "how_to_check": "Verify no Answer submission on audio click; authority gate must validate selection",
+      "how_to_speak": "Independent audio button for localized response",
+      "update_rules": "Remount/redraw on scoped assessment and language changes",
+      "portability": "Portable as two-button presentation; never copy assessment submission blindly",
+      "visual_contract": "Two-cell dark panel; CSS presently places speech icon in LEFT column",
+      "warnings": ""
+    },
+    {
+      "code": "RS-01",
+      "name": "Responsive Stage — Auto / Portrait / Landscape",
+      "status": "existing shared contract",
+      "html": "[data-siyayo-responsive-toolbar]; [data-siyayo-responsive-viewport]",
+      "controller": "js/siyayo-responsive-preview.js",
+      "data_sources": [
+        "No JSON source; CSS vars --siyayo-preview-portrait-width / --siyayo-preview-landscape-width",
+        "localStorage siyayo-responsive-preview-mode (legacy siyayo-piano-preview-mode)"
+      ],
+      "consumers": [
+        "Piano Stage",
+        "Verb Explorer",
+        "Dependency Focus layout listener",
+        "any target page adopting common shell"
+      ],
+      "entry_events": [
+        "data-preview click",
+        "bootstrap",
+        "siyayo:responsive-preview-changed",
+        "window.SIYAYOResponsivePreview.setMode(mode)"
+      ],
+      "how_to_do": "Constrain preview viewport on desktop; Auto uses actual responsive width",
+      "how_to_record": "Persist preview mode in localStorage ONLY; no pedagogical state",
+      "how_to_show": "css/siyayo-responsive-stage.css applies toolbar and widths; JS toggles data-preview, active class and aria-pressed",
+      "how_to_check": "Whitelist auto/portrait/landscape; on touch-first force AUTO; verify page-specific container queries",
+      "how_to_speak": "None",
+      "update_rules": "On mode switch dispatch custom event; page-specific layout may listen for redraw",
+      "portability": "HIGH — copy two shared files, HTML shell and scoped page CSS; preserve contract",
+      "visual_contract": "Portrait=430px; Landscape=844px; Auto=no width cap; toolbar hidden for coarse-pointer touch",
+      "warnings": "Developer preview is NOT physical device emulation; CSS container/media rules must be adapted for the new page"
+    },
+    {
+      "code": "XESP-DIAG",
+      "name": "XESPIRITO — Functional Diagnosis",
+      "status": "additional module; alias not in 01–13 numbering",
+      "html": "#xespiritoPanel",
+      "controller": "js/xespirito-diagnostics.js; js/xespirito-explorer-bridge.js",
+      "data_sources": [
+        "Canonical verb grid / verb constructions"
+      ],
+      "consumers": [
+        "VERB DNA"
+      ],
+      "entry_events": [
+        "Diagnose click",
+        "input changes"
+      ],
+      "how_to_do": "Analyze functional verbal constructions",
+      "how_to_record": "No evidence writes in static diagnosis itself",
+      "how_to_show": "Diagnostic panel",
+      "how_to_check": "Use functional grammar diagnosis, not invented evaluator",
+      "how_to_speak": "Separate from corpus speech",
+      "update_rules": "When diagnosed sentence changes",
+      "portability": "Portable with own grammar source",
+      "visual_contract": "Dark functional panel",
+      "warnings": ""
+    }
+  ],
+  "placement_rules": {
+    "LIVE-07": "The parent `.living-window` contains `#livingLines`, choice/contrast panels, `.line-controls`, `#assessmentAdoptionControls`, then `.toroidal-next`.",
+    "above_NEXT-09": "Insert a new panel as a child of `.living-window` before `.toroidal-next`. Ensure no accidental assessment credit and preserve existing subpanel sequence.",
+    "FUNC-13": "Independent `.h14-specialized-preview` after `.experience-grid` and before `#learningTrailWordPathModule`; default hidden.",
+    "RS-01": "The toolbar sits before `.stage-viewport`, which wraps the main page content."
+  },
+  "shared_visual_tokens": {
+    "gold-standard": "#d7b35a",
+    "gold-medium": "#f2d88a",
+    "gold-bright": "#fcec5b",
+    "blue-dark": "#071f41",
+    "blue-medium": "#0a2a58",
+    "blue-bright": "#0307b2",
+    "font-display": "Quicksand",
+    "font-body": "Nunito Sans"
+  },
+  "snapshot_caveat": "Source inspection at the referenced commit; consumers should verify active target branch before changes.",
+  "registry_branch": "jaguar/module-governance-registry-20261024",
+  "registry_paths": {
+    "human": "docs/SIYAYO-MODULE-GOVERNANCE-REGISTRY.md",
+    "machine": "docs/siyayo-module-registry.json"
+  }
+}
