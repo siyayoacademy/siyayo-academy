@@ -1,0 +1,23 @@
+name: JAGUAR H14.28 WHY semantic contrast laboratory
+on:
+  push:
+    branches: [jaguar/h14-28-why-semantic-contrast-laboratory]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  contrast-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-28-semantic-contrast-bank.js
+          node scripts/test-jaguar-h14-27-why-semantic-rubric.js
+          node scripts/test-jaguar-h14-26-why-independent-task-blueprints.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-28-semantic-contrast-bank.js --json > h14-28-semantic-contrasts.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-28-contrasts-en-es-pt
+          path: h14-28-semantic-contrasts.json
