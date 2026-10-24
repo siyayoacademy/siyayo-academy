@@ -109,7 +109,7 @@ with sync_playwright() as p:
    page.locator('#learningTrailWordPathModule').evaluate("(e)=>e.open=true")
    page.evaluate("() => window.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document})")
    stage="crosscheck-green"
-   page.wait_for_function("(lang)=>{const t=document.querySelector('#learnerTrailSurface .learner-trail-contract-progress');const w=document.querySelector('.wp-poly-cell[data-skill=\"which.use.determiner\"][data-language=\"'+lang+'\''] .wp-poly-value');return t?.textContent?.includes('3/3')&&w?.textContent?.trim()==='3/3'}",arg=lang,timeout=10000)
+   page.wait_for_function("(lang)=>{const t=document.querySelector('#learnerTrailSurface .learner-trail-contract-progress');const w=document.querySelector('.wp-poly-cell[data-skill=\\\"which.use.determiner\\\"][data-language=\\\"'+lang+'\\\"] .wp-poly-value');return t?.textContent?.includes('3/3')&&w?.textContent?.trim()==='3/3'}",arg=lang,timeout=10000)
    audit=page.evaluate("""({lang,nick})=>{
      const s=window.SIYAYOVerbExplorerAdaptiveCoordinator.snapshot();
      const p=window.AdaptivePassContractProgressView.project(s.context.passContract,s.context.evidencePackets,window.GreenPassProfile);
@@ -139,7 +139,7 @@ with sync_playwright() as p:
    stage="leave-green"
    choose_qw("where")
    page.wait_for_function("() => window.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord()==='where'")
-   page.wait_for_function("(lang)=>document.querySelector('.wp-poly-cell[data-skill=\"which.use.determiner\"][data-language=\"'+lang+'\''] .wp-poly-value')?.textContent?.trim()==='3/3'",arg=lang,timeout=10000)
+   page.wait_for_function("(lang)=>document.querySelector('.wp-poly-cell[data-skill=\\\"which.use.determiner\\\"][data-language=\\\"'+lang+'\\\"] .wp-poly-value')?.textContent?.trim()==='3/3'",arg=lang,timeout=10000)
    page.evaluate("() => window.SIYAYOVerbExplorerLearnerTrailSurface.refresh({document})")
    assert page.locator('#learnerTrailSurface').get_attribute('data-current-qword') in (None,'where')
    stage="switch-display-language"
