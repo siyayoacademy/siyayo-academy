@@ -208,6 +208,7 @@
           var evidence=evidenceApi.fromResult({result:result,learnerEvent:event,supportSensor:{support:function(){return support;}}});
           var attempt=attemptApi.assemble({learnerEvent:event,evidence});if(!attempt)return;
           var submitted=bound.coordinator.submitObservedAttempt(attempt,event,button);if(!submitted)return;
+          root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'canonical-probe',phase:'assessment-attempt',selected:alternative.id,experienceId:spec.experienceId,language:spec.language,questionWord:'where',resultCode:result.result,dimension:spec.dimension,mode:spec.mode,skill:spec.skill,support:support});
           Array.from(choices.querySelectorAll('.where-probe-option')).forEach(function(option){
             option.setAttribute('aria-pressed',option===button?'true':'false');
             option.setAttribute('data-assertive',option===button&&result.result==='pass'&&support==='none'?'true':'false');
