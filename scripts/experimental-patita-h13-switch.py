@@ -10,11 +10,13 @@ with sync_playwright() as p:
   stage='init'
   try:
    page.goto('http://127.0.0.1:8879/verb-explorer.html?mode=experience&experience=shopping-for-dinner',wait_until='domcontentloaded')
-   page.wait_for_function("() => !!window.SIYAYOPatitaInteractionTrail?.projectVisible")
+   # A loaded observer is not evidence that identity click handlers are installed.
+   page.wait_for_function("() => !!window.SIYAYOPatitaInteractionTrail?.projectVisible && !!window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId() && document.querySelector('#learnerIdentityPanel')?.__siyayoLearnerIdentityInstalled===true && document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='editor'",timeout=15000)
    page.locator('[data-experience-language="'+lang+'"]').click()
    page.locator('#learnerIdentityInput').fill('H13-ALPHA-'+lang)
+   stage='confirm-alpha'
    page.locator('#learnerIdentityConfirm').click()
-   page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact'")
+   page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact' && window.SIYAYOVerbExplorerLearnerIdentitySource?.getId()==='H13-ALPHA-'+document.querySelector('[data-experience-language].active')?.dataset.experienceLanguage)",timeout=15000)
    page.locator('#questionGear [data-question-index="3"]').click()
    page.locator('#choiceOptions [data-choice-select="fresh-mild-cheese"]').click()
    page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.projectVisible().some(r=>r.questionWord==='which'&&r.results===1)")
