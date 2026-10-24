@@ -1,0 +1,35 @@
+name: JAGUAR H14.1 cross-QW coherence
+on:
+  push:
+    branches: [jaguar/patita-h14-1-cross-qw-coherence]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check js/verb-explorer-patita-interaction-trail.js
+          node --check js/verb-explorer-learner-trail-surface.js
+          node scripts/jaguar-90c7h0-supervisor.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/site.log" 2>&1 &
+          sleep 3
+      - run: python scripts/experimental-patita-h14-1-cross-qw.py
+      - if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: patita-h14-1-cross-qw
+          path: visual-audit-patita-h14-1/
