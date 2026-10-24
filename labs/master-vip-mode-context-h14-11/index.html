@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIYAYO · JAGUAR H14.11 · Modos e Coerência</title>
+<style>
+:root{color-scheme:dark;--bg:#071b30;--pane:#112f4a;--gold:#dfbd6c;--line:#a38952;--muted:#cbd7e2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#143d5b,var(--bg) 66%);color:#f2f3ef;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+main{max-width:970px;margin:auto;padding:23px 16px 62px}h1{font-size:clamp(1.55rem,5vw,2.6rem);margin:5px 0;color:var(--gold)}h2{font-size:1.2rem;margin:6px 0 12px}h3{margin:7px 0;font-size:1rem}
+p{margin:7px 0}.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.09em;font-size:.78rem}.card{border:1px solid var(--line);background:var(--pane);border-radius:16px;padding:17px;margin:16px 0}
+small,.small{color:var(--muted)}.buttons{display:flex;flex-wrap:wrap;gap:8px;margin:11px 0}button{background:#173d5e;color:white;border:1px solid #b69b60;border-radius:10px;padding:10px 13px;font:inherit;cursor:pointer}
+button[aria-pressed=true]{background:var(--gold);color:#071b30;font-weight:700}button:focus-visible,textarea:focus-visible{outline:3px solid #86bded;outline-offset:3px}
+.strip{padding:12px;border-radius:9px;border-left:4px solid var(--gold);background:#081f35;margin:12px 0}.strip.red{border-left-color:#e34850}.strip.yellow{border-left-color:#f4d92a}.strip.blue{border-left-color:#58a5ec}.status{font-size:.78rem;color:#f0ce8b}
+textarea{width:100%;background:#061a2c;color:white;border:1px solid #96a7ba;border-radius:9px;min-height:80px;padding:11px;font:inherit;resize:vertical}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.muted{color:#cbdae5}.em{font-weight:700}
+</style></head><body><main>
+<div class="kicker">🔔🐆 SIYAYO ACADEMY · MASTER VIP · ESTUDO FINO</div>
+<h1>JAGUAR H14.11 · TENSE × MODE × CONTEXT</h1>
+<p class="muted">Protótipo isolado, sem avaliação, armazenamento, pontuação ou PATITA funcional. Seleção independente de idioma, Experience e MODE.</p>
+<div class="card"><h2>LANGUAGE</h2><div class="buttons" aria-label="Idioma">
+<button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button><button type="button" data-lang="pt">PT</button></div>
+<h2>EXPERIENCE × FUNCTION × PERSPECTIVE</h2><div class="buttons" aria-label="Experience">
+<button type="button" data-task="0">S3 · STATE × DESCRIBING 🔴</button><button type="button" data-task="1">S2 · MOVEMENT × NARRATING 🟡</button></div>
+<h2>MODE · PRESENT</h2><div class="buttons" aria-label="Modo gramatical">
+<button type="button" data-mode="affirmative">AFFIRMATIVE</button><button type="button" data-mode="negative">NEGATIVE</button><button type="button" data-mode="interrogative">INTERROGATIVE</button></div>
+<p class="small">PERIOD: ainda não autorado neste circuito. O passado da narrativa S2 funciona somente como referência temporal.</p></div>
+<section class="card" aria-labelledby="lesson"><div class="kicker" id="status">SIYAYO_ADAPTATION · PENDING_HOMOLOGATION</div><h2 id="lesson"></h2>
+<div class="grid"><div class="strip blue"><div class="status">EXPERIENCE · PERSPECTIVE ORIGINAL</div><p id="source"></p></div>
+<div class="strip"><div class="status">EXEMPLO H14.10 · REFERÊNCIA AFIRMATIVA</div><p id="baseline"></p></div></div>
+<div class="strip" id="mode-strip"><div class="status" id="role"></div><p id="sentence" class="em"></p><p id="note" class="small"></p></div>
+<div class="strip blue" id="contrast-box" hidden><div class="status">TRANSFORMAÇÃO LITERAL QUE CONTRADIZ A CENA</div><p id="literal"></p></div>
+<label for="draft" class="em">Meu exercício livre (rascunho local, não enviado)</label>
+<textarea id="draft" autocomplete="off" placeholder="Escreva sua própria formulação; não há correção automática."></textarea>
+<div class="buttons"><button type="button" id="reveal" aria-expanded="false" aria-controls="reply">Mostrar resposta de referência (quando existir)</button>
+<button type="button" id="clear">Limpar rascunho</button></div>
+<div class="strip" id="reply" hidden><div class="status">RESPOSTA DE REFERÊNCIA — NÃO É EVIDÊNCIA</div><p id="reply-text"></p></div>
+<p class="small" id="warning"></p></section>
+<section class="card"><h3>Hierarquia pedagógica preservada</h3>
+<p>MASTER_ORIGINAL: <strong>STATE = TO BE</strong>; <strong>MOVEMENT = TO BE + VERB-ING</strong>. DESCRIBING e NARRATING são perspectivas. Uma negativa pode ser uma forma gramatical correta e, mesmo assim, contradizer o contexto. Uma pergunta não equivale a resposta avaliada.</p>
+<p class="small">QW é conexão opcional. PAST/FUTURE e PERIOD exigem cenários e respostas específicos antes de gerar novas formas contextualizadas. O módulo EXISTENCE = THERE + TO BE permanece independente.</p></section>
+<footer class="small">Sem Attempt, Evidence, Green Pass ou PATITA funcional; não há gravação no servidor. Nenhuma mudança no Explorer oficial.</footer>
+<script>
+'use strict';
+const tasks=[{"id":"H14-10-S3-STATE-DESCRIBING","experienceId":"having-dinner","masterPattern":"TO BE","functionId":"state","perspectiveId":"describing","optionalQuestionWord":"how","originalH1410Prompt":{"en":"How is the salmon during dinner?","es":"¿Cómo está el salmón durante la cena?","pt":"Como está o salmão durante o jantar?"},"originalH1410ReferenceAnswer":{"en":"The salmon is delicious.","es":"El salmón está delicioso.","pt":"O salmão está delicioso."},"originalCanonicalPerspectiveExamples":{"en":["The dinner looks beautiful.","The salmon tastes delicious."],"es":["La cena se ve hermosa.","El salmón está delicioso."],"pt":["O jantar está bonito.","O salmão está delicioso."]},"grammaticalScope":{"basis":"CURRENT_MEAL_DESCRIBING_PERSPECTIVE","tense":"PRESENT","period":"NONE","masterFunction":"STATE","masterPattern":"TO BE","perspective":"describing","perspectiveColor":"red","forms":{"affirmative":{"sentence":{"en":"The salmon is delicious.","es":"El salmón está delicioso.","pt":"O salmão está delicioso."},"sceneStatus":"SCENE_SUPPORTED_AS_NARRATIVE_REFERENCE","answerRole":"SITUATED_STATEMENT","note":{"en":"The description follows the authored meal scene; this is not a claim about the learner's personal taste.","es":"Se apoya en la descripción de la cena, no en el gusto personal del estudiante.","pt":"A descrição corresponde à cena autorada, não ao paladar pessoal do aluno."}},"negative":{"sentence":{"en":"The salmon is not delicious.","es":"El salmón no está delicioso.","pt":"O salmão não está delicioso."},"sceneStatus":"COUNTERFACTUAL_GRAMMAR_ONLY","answerRole":"GRAMMAR_TRANSFORMATION_NOT_CONTEXTUAL_ANSWER","note":{"en":"Correct negative form, but it contradicts the positive description. Do not accept as this scene's answer.","es":"Forma negativa correcta, pero contradice la descripción positiva. No sirve como respuesta de esta escena.","pt":"Negativa correta, mas contraria a descrição positiva. Não serve como resposta desta cena."}},"interrogative":{"sentence":{"en":"Is the salmon delicious?","es":"¿Está delicioso el salmón?","pt":"O salmão está delicioso?"},"sceneStatus":"QUESTION_ABOUT_SOURCE_SCENE","answerRole":"YES_NO_QUESTION_NOT_AUTOMATIC_PROOF","referenceReply":{"en":"Yes, the salmon is delicious.","es":"Sí, el salmón está delicioso.","pt":"Sim, o salmão está delicioso."},"note":{"en":"This asks for confirmation. A reference reply is not proof that the learner understood or actually tasted the dish.","es":"Solicita confirmación. La respuesta modelo no demuestra aprendizaje ni degustación real.","pt":"Solicita confirmação. A resposta de referência não comprova aprendizagem nem degustação real."}}},"caution":"In English, 'delicious' can describe a food quality; Spanish/Portuguese ESTAR reflects a current judgment. STATE versus QUALITY remains pending human didactic review."}},{"id":"H14-10-S2-MOVEMENT-NARRATING","experienceId":"preparing-dinner","masterPattern":"TO BE + VERB-ING","functionId":"movement","perspectiveId":"narrating","optionalQuestionWord":"what","originalH1410Prompt":{"en":"We came home and started preparing dinner. What are we doing now?","es":"Llegamos a casa y empezamos a preparar la cena. ¿Qué estamos haciendo ahora?","pt":"Chegamos em casa e começamos a preparar o jantar. O que estamos fazendo agora?"},"originalH1410ReferenceAnswer":{"en":"We are preparing dinner.","es":"Estamos preparando la cena.","pt":"Estamos preparando o jantar."},"originalCanonicalPerspectiveExamples":{"en":["We came home, opened the groceries and started preparing dinner."],"es":["Llegamos a casa, abrimos las compras y empezamos a preparar la cena."],"pt":["Chegamos em casa, abrimos as compras e começamos a preparar o jantar."]},"grammaticalScope":{"basis":"EARLIER_NARRATED_ACTIONS_THEN_CURRENT_PREPARATION","tense":"PRESENT","period":"NONE","masterFunction":"MOVEMENT","masterPattern":"TO BE + VERB-ING","perspective":"narrating","perspectiveColor":"yellow","temporalAnchor":{"en":"We came home, opened the groceries and started preparing dinner.","es":"Llegamos a casa, abrimos las compras y empezamos a preparar la cena.","pt":"Chegamos em casa, abrimos as compras e começamos a preparar o jantar."},"forms":{"affirmative":{"sentence":{"en":"We are preparing dinner.","es":"Estamos preparando la cena.","pt":"Estamos preparando o jantar."},"sceneStatus":"SCENE_SUPPORTED_AS_NARRATIVE_REFERENCE","answerRole":"SITUATED_PRESENT_PROGRESSIVE","note":{"en":"Past events explain how we arrived at the present ongoing action.","es":"Los hechos pasados anteceden a la acción progresiva actual.","pt":"Os acontecimentos passados antecedem a ação progressiva atual."}},"negative":{"sentence":{"en":"We are not shopping now; we are preparing dinner.","es":"No estamos haciendo las compras ahora; estamos preparando la cena.","pt":"Não estamos fazendo compras agora; estamos preparando o jantar."},"sceneStatus":"SCENE_SUPPORTED_CONTRAST_WITH_DIFFERENT_PREDICATE","answerRole":"CONTEXTUAL_NEGATIVE_CONTRAST_NOT_SAME_PREDICATE","literalTransformationNotValidInScene":{"en":"We are not preparing dinner.","es":"No estamos preparando la cena.","pt":"Não estamos preparando o jantar."},"note":{"en":"Negative shopping versus ongoing dinner preparation fits this scene. The literal negation of preparation would contradict it.","es":"Negar que estemos de compras y afirmar la preparación concuerda con la escena. Negar la preparación la contradice.","pt":"Negar as compras e afirmar a preparação é coerente com a cena. Negar a preparação seria contraditório."}},"interrogative":{"sentence":{"en":"Are we preparing dinner?","es":"¿Estamos preparando la cena?","pt":"Estamos preparando o jantar?"},"sceneStatus":"QUESTION_ABOUT_SOURCE_SCENE","answerRole":"YES_NO_QUESTION_NOT_AUTOMATIC_PROOF","referenceReply":{"en":"Yes, we are preparing dinner.","es":"Sí, estamos preparando la cena.","pt":"Sim, estamos preparando o jantar."},"note":{"en":"The question in the present progressive is distinct from the narrated past arrival and from the canonical S2 WHAT assessment question.","es":"La pregunta progresiva es distinta de la llegada narrada y de la pregunta canónica WHAT de S2.","pt":"A pergunta progressiva é diferente da chegada narrada e da pergunta WHAT canônica de S2."}}},"caution":"'We came home' is lexical physical movement in the past, not MOVEMENT=TO BE+ING in the Master original. Past narrative is an anchor, not a new past tense assessment."}}];
+const state={lang:'pt',task:0,mode:'affirmative',reveal:false};
+const el=id=>document.getElementById(id);
+function render(){
+ const t=tasks[state.task],g=t.grammaticalScope,f=g.forms[state.mode],l=state.lang;
+ document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===l)));
+ document.querySelectorAll('[data-task]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.task===state.task)));
+ document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode)));
+ el('lesson').textContent=t.experienceId+' · '+g.masterFunction+' × '+g.perspective.toUpperCase()+' · '+state.mode.toUpperCase();
+ el('source').textContent=t.originalCanonicalPerspectiveExamples[l].join(' — ');
+ el('baseline').textContent=t.originalH1410ReferenceAnswer[l];
+ el('sentence').textContent=f.sentence[l];
+ el('role').textContent=f.sceneStatus+' · '+f.answerRole;
+ el('note').textContent=f.note[l];
+ el('mode-strip').className='strip '+(g.perspective==='describing'?'red':'yellow');
+ el('literal').textContent=f.literalTransformationNotValidInScene?.[l]||'';
+ el('contrast-box').hidden=!f.literalTransformationNotValidInScene;
+ el('warning').textContent=g.caution;
+ const reference=f.referenceReply?.[l]||null;
+ el('reveal').hidden=!reference;
+ el('reply').hidden=!reference||!state.reveal;
+ el('reply-text').textContent=reference||'';
+ el('reveal').setAttribute('aria-expanded',String(!!reference&&state.reveal));
+}
+document.addEventListener('click',ev=>{
+ const b=ev.target.closest('button');if(!b)return;
+ let changed=false;
+ if(b.dataset.lang){state.lang=b.dataset.lang;changed=true;}
+ if(b.dataset.task!==undefined){state.task=Number(b.dataset.task);changed=true;}
+ if(b.dataset.mode){state.mode=b.dataset.mode;changed=true;}
+ if(changed){state.reveal=false;el('draft').value='';}
+ if(b.id==='reveal')state.reveal=!state.reveal;
+ if(b.id==='clear')el('draft').value='';
+ render();
+});
+render();
+</script></main></body></html>

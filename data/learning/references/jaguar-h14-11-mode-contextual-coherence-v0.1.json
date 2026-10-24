@@ -1,0 +1,256 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-11-mode-contextual-coherence",
+  "status": "PENDING_HUMAN_HOMOLOGATION_STUDY_ONLY",
+  "sourceChapter": "STRUCTURE- KIND OF WORDS.docx — page 10 verb functions; mode, tense and period distinction in Master VIP",
+  "sourcePilot": "data/learning/references/jaguar-h14-10-first-two-practice-pilots-v0.1.json",
+  "provenance": {
+    "masterPatterns": "MASTER_ORIGINAL",
+    "perspectives": "CANONICAL_EXPERIENCE_JSON",
+    "modeSentences": "SIYAYO_ADAPTATION",
+    "status": "PENDING_HOMOLOGATION"
+  },
+  "languageOrder": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "dimensions": {
+    "experiences": 2,
+    "functions": 2,
+    "perspectives": 2,
+    "languageVariants": 3,
+    "modes": [
+      "affirmative",
+      "negative",
+      "interrogative"
+    ],
+    "tense": "PRESENT",
+    "period": "NONE",
+    "pastNarrativeAnchorNotNewTenseExercise": true,
+    "optionalQWs": [
+      "how",
+      "what"
+    ],
+    "qwPrerequisite": false
+  },
+  "contracts": {
+    "newEntry": false,
+    "newResume": false,
+    "newLearnerAttempt": false,
+    "newEvidence": false,
+    "newGreenPass": false,
+    "patitaObservationOnly": true,
+    "learnerTypedDraftLocalOnly": true,
+    "sourceS3S4WHYUnchanged": true
+  },
+  "gatePolicy": {
+    "grammaticalWellFormedDoesNotImplySceneTruth": true,
+    "negativeSamePredicateCanBeCounterfactual": true,
+    "interrogativeQuestionDoesNotCountAsAnswer": true,
+    "referenceReplyDoesNotGrantEvidence": true,
+    "noAutomaticPerfectOrFuturePeriod": true,
+    "noUnverifiedTransfer": true,
+    "noImplicitCreditOnLanguageOrPerspectiveChange": true,
+    "newContractRequiresSeparateHomologation": true
+  },
+  "tasks": [
+    {
+      "id": "H14-10-S3-STATE-DESCRIBING",
+      "experienceId": "having-dinner",
+      "masterPattern": "TO BE",
+      "functionId": "state",
+      "perspectiveId": "describing",
+      "optionalQuestionWord": "how",
+      "originalH1410Prompt": {
+        "en": "How is the salmon during dinner?",
+        "es": "¿Cómo está el salmón durante la cena?",
+        "pt": "Como está o salmão durante o jantar?"
+      },
+      "originalH1410ReferenceAnswer": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "originalCanonicalPerspectiveExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "grammaticalScope": {
+        "basis": "CURRENT_MEAL_DESCRIBING_PERSPECTIVE",
+        "tense": "PRESENT",
+        "period": "NONE",
+        "masterFunction": "STATE",
+        "masterPattern": "TO BE",
+        "perspective": "describing",
+        "perspectiveColor": "red",
+        "forms": {
+          "affirmative": {
+            "sentence": {
+              "en": "The salmon is delicious.",
+              "es": "El salmón está delicioso.",
+              "pt": "O salmão está delicioso."
+            },
+            "sceneStatus": "SCENE_SUPPORTED_AS_NARRATIVE_REFERENCE",
+            "answerRole": "SITUATED_STATEMENT",
+            "note": {
+              "en": "The description follows the authored meal scene; this is not a claim about the learner's personal taste.",
+              "es": "Se apoya en la descripción de la cena, no en el gusto personal del estudiante.",
+              "pt": "A descrição corresponde à cena autorada, não ao paladar pessoal do aluno."
+            }
+          },
+          "negative": {
+            "sentence": {
+              "en": "The salmon is not delicious.",
+              "es": "El salmón no está delicioso.",
+              "pt": "O salmão não está delicioso."
+            },
+            "sceneStatus": "COUNTERFACTUAL_GRAMMAR_ONLY",
+            "answerRole": "GRAMMAR_TRANSFORMATION_NOT_CONTEXTUAL_ANSWER",
+            "note": {
+              "en": "Correct negative form, but it contradicts the positive description. Do not accept as this scene's answer.",
+              "es": "Forma negativa correcta, pero contradice la descripción positiva. No sirve como respuesta de esta escena.",
+              "pt": "Negativa correta, mas contraria a descrição positiva. Não serve como resposta desta cena."
+            }
+          },
+          "interrogative": {
+            "sentence": {
+              "en": "Is the salmon delicious?",
+              "es": "¿Está delicioso el salmón?",
+              "pt": "O salmão está delicioso?"
+            },
+            "sceneStatus": "QUESTION_ABOUT_SOURCE_SCENE",
+            "answerRole": "YES_NO_QUESTION_NOT_AUTOMATIC_PROOF",
+            "referenceReply": {
+              "en": "Yes, the salmon is delicious.",
+              "es": "Sí, el salmón está delicioso.",
+              "pt": "Sim, o salmão está delicioso."
+            },
+            "note": {
+              "en": "This asks for confirmation. A reference reply is not proof that the learner understood or actually tasted the dish.",
+              "es": "Solicita confirmación. La respuesta modelo no demuestra aprendizaje ni degustación real.",
+              "pt": "Solicita confirmação. A resposta de referência não comprova aprendizagem nem degustação real."
+            }
+          }
+        },
+        "caution": "In English, 'delicious' can describe a food quality; Spanish/Portuguese ESTAR reflects a current judgment. STATE versus QUALITY remains pending human didactic review."
+      }
+    },
+    {
+      "id": "H14-10-S2-MOVEMENT-NARRATING",
+      "experienceId": "preparing-dinner",
+      "masterPattern": "TO BE + VERB-ING",
+      "functionId": "movement",
+      "perspectiveId": "narrating",
+      "optionalQuestionWord": "what",
+      "originalH1410Prompt": {
+        "en": "We came home and started preparing dinner. What are we doing now?",
+        "es": "Llegamos a casa y empezamos a preparar la cena. ¿Qué estamos haciendo ahora?",
+        "pt": "Chegamos em casa e começamos a preparar o jantar. O que estamos fazendo agora?"
+      },
+      "originalH1410ReferenceAnswer": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "originalCanonicalPerspectiveExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "grammaticalScope": {
+        "basis": "EARLIER_NARRATED_ACTIONS_THEN_CURRENT_PREPARATION",
+        "tense": "PRESENT",
+        "period": "NONE",
+        "masterFunction": "MOVEMENT",
+        "masterPattern": "TO BE + VERB-ING",
+        "perspective": "narrating",
+        "perspectiveColor": "yellow",
+        "temporalAnchor": {
+          "en": "We came home, opened the groceries and started preparing dinner.",
+          "es": "Llegamos a casa, abrimos las compras y empezamos a preparar la cena.",
+          "pt": "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        },
+        "forms": {
+          "affirmative": {
+            "sentence": {
+              "en": "We are preparing dinner.",
+              "es": "Estamos preparando la cena.",
+              "pt": "Estamos preparando o jantar."
+            },
+            "sceneStatus": "SCENE_SUPPORTED_AS_NARRATIVE_REFERENCE",
+            "answerRole": "SITUATED_PRESENT_PROGRESSIVE",
+            "note": {
+              "en": "Past events explain how we arrived at the present ongoing action.",
+              "es": "Los hechos pasados anteceden a la acción progresiva actual.",
+              "pt": "Os acontecimentos passados antecedem a ação progressiva atual."
+            }
+          },
+          "negative": {
+            "sentence": {
+              "en": "We are not shopping now; we are preparing dinner.",
+              "es": "No estamos haciendo las compras ahora; estamos preparando la cena.",
+              "pt": "Não estamos fazendo compras agora; estamos preparando o jantar."
+            },
+            "sceneStatus": "SCENE_SUPPORTED_CONTRAST_WITH_DIFFERENT_PREDICATE",
+            "answerRole": "CONTEXTUAL_NEGATIVE_CONTRAST_NOT_SAME_PREDICATE",
+            "literalTransformationNotValidInScene": {
+              "en": "We are not preparing dinner.",
+              "es": "No estamos preparando la cena.",
+              "pt": "Não estamos preparando o jantar."
+            },
+            "note": {
+              "en": "Negative shopping versus ongoing dinner preparation fits this scene. The literal negation of preparation would contradict it.",
+              "es": "Negar que estemos de compras y afirmar la preparación concuerda con la escena. Negar la preparación la contradice.",
+              "pt": "Negar as compras e afirmar a preparação é coerente com a cena. Negar a preparação seria contraditório."
+            }
+          },
+          "interrogative": {
+            "sentence": {
+              "en": "Are we preparing dinner?",
+              "es": "¿Estamos preparando la cena?",
+              "pt": "Estamos preparando o jantar?"
+            },
+            "sceneStatus": "QUESTION_ABOUT_SOURCE_SCENE",
+            "answerRole": "YES_NO_QUESTION_NOT_AUTOMATIC_PROOF",
+            "referenceReply": {
+              "en": "Yes, we are preparing dinner.",
+              "es": "Sí, estamos preparando la cena.",
+              "pt": "Sim, estamos preparando o jantar."
+            },
+            "note": {
+              "en": "The question in the present progressive is distinct from the narrated past arrival and from the canonical S2 WHAT assessment question.",
+              "es": "La pregunta progresiva es distinta de la llegada narrada y de la pregunta canónica WHAT de S2.",
+              "pt": "A pergunta progressiva é diferente da chegada narrada e da pergunta WHAT canônica de S2."
+            }
+          }
+        },
+        "caution": "'We came home' is lexical physical movement in the past, not MOVEMENT=TO BE+ING in the Master original. Past narrative is an anchor, not a new past tense assessment."
+      }
+    }
+  ],
+  "nextGate": [
+    "Review S3 state versus quality and user subjectivity of taste",
+    "Review natural EN/ES/PT interrogative register and negative semantics",
+    "Write independent learner actions with explicit criteria, without showing answer beforehand",
+    "Only then consider separate contracts and transfer tasks",
+    "Browser portrait/landscape and keyboard checks",
+    "Retain WHAT/WHY S3→S4 and PATITA scope regression"
+  ]
+}
