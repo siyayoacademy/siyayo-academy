@@ -10,7 +10,7 @@ function escapeHtml(value){return String(value==null?'':value).replaceAll('&','&
 function read(){
   try{
     var rows=JSON.parse(root.localStorage.getItem(KEY)||'[]');
-    return Array.isArray(rows)?rows.filter(function(r){return r&&r.kind==='patita-interaction'&&r.evidenceProduced===false;}).slice(-LIMIT):[];
+    return Array.isArray(rows)?rows.filter(function(r){return r&&['patita-interaction','patita-observed-result'].includes(r.kind)&&r.evidenceProduced===false;}).slice(-LIMIT):[];
   }catch(_error){return [];}
 }
 function sessionId(){
@@ -92,6 +92,47 @@ function identify(target){
   }
   return null;
 }
+// P0.3: one observation envelope for post-interaction feedback *returned by*
+// existing contextual resolvers. No ability to submit Attempt/Evidence.
+function append(record){
+  var rows=read(),prior=rows.length?rows[rows.length-1].sequence:0;
+  record.sequence=(Number.isInteger(prior)?prior:0)+1;
+  rows.push(record);
+  try{root.localStorage.setItem(KEY,JSON.stringify(rows.slice(-LIMIT)));}catch(_error){}
+  render();
+}
+function recordOutcome(input){
+  input=input||{};
+  var source=text(input.source),phase=text(input.phase),code=text(input.resultCode);
+  if(!['contextual-choice','dependency-head-probe'].includes(source))return false;
+  if(!['exploration','assessment-attempt'].includes(phase))return false;
+  if(!['best-fit','possible-fit','pass','fail'].includes(code))return false;
+  if(source==='contextual-choice'&&(phase!=='exploration'||!['best-fit','possible-fit'].includes(code)))return false;
+  if(source==='dependency-head-probe'&&!['pass','fail'].includes(code))return false;
+  var context=snapshot(),selected=text(input.selected);
+  if(!selected||text(input.experienceId)!==context.experienceId||
+    text(input.language)!==context.language||text(input.questionWord)!==context.questionWord)return false;
+  var numerator=input.score,denominator=input.possibleScore;
+  if(source==='contextual-choice'&&(!Number.isInteger(numerator)||!Number.isInteger(denominator)||
+    denominator<=0||numerator<0||numerator>denominator))return false;
+  if(source==='contextual-choice'){
+    if((code==='best-fit'&&input.isBestFit!==true)||
+      (code==='possible-fit'&&input.isBestFit!==false))return false;
+  }
+  var observerId=learnerId(),tab=sessionId();
+  var outcome={
+    version:1,kind:'patita-observed-result',observedAt:new Date().toISOString(),
+    sessionId:tab,learnerId:observerId,
+    action:source,selected:selected.slice(0,96),source:source,phase:phase,
+    resultCode:code,experienceId:context.experienceId,language:context.language,questionWord:context.questionWord,
+    ...(source==='contextual-choice'?{score:numerator,possibleScore:denominator}:{structureId:text(input.structureId)||null}),
+    before:context,after:context,uiOutcome:'observed-result',
+    observationOnly:true,evidenceProduced:false,assessmentCredit:false,greenPass:false
+  };
+  // Defer write until captured raw click intent is committed; do not delay any assessor.
+  root.setTimeout(function(){append(outcome);},0);
+  return true;
+}
 function visibleRecords(){
   var id=learnerId(),session=sessionId();
   return read().filter(function(r){
@@ -127,8 +168,10 @@ function render(){
   panel.innerHTML='<h4>'+escapeHtml(labels.heading)+' · '+rows.length+'</h4>'+
     '<p>'+escapeHtml(labels.detail)+(learnerId()?'':' · '+escapeHtml(labels.anonymous))+'</p>'+
     '<ol>'+last.map(function(r){
-      return '<li><strong>'+escapeHtml(r.action)+'</strong> · '+
+      return '<li data-patita-kind="'+escapeHtml(r.kind)+'"><strong>'+escapeHtml(r.action)+'</strong> · '+
         escapeHtml(r.selected||'—')+' · '+escapeHtml(r.uiOutcome||'requested')+
+        (r.kind==='patita-observed-result'?' · '+escapeHtml(r.resultCode||'')+
+          (Number.isInteger(r.score)?' · '+escapeHtml(r.score)+'/'+escapeHtml(r.possibleScore)+' (context, not Green Pass)':' · observed, not Green Pass'):'')+
         ' <small>'+escapeHtml((r.after?.language||r.before?.language||'—').toUpperCase())+
         ' · '+escapeHtml(r.after?.experienceId||r.before?.experienceId||'—')+
         ' · '+escapeHtml(r.after?.questionWord||r.before?.questionWord||'—')+'</small></li>';
@@ -163,6 +206,7 @@ if(doc&&typeof doc.addEventListener==='function'){
 root.SIYAYOPatitaInteractionTrail=Object.freeze({
   getVisibleRecords:function(){return visibleRecords().map(function(r){return JSON.parse(JSON.stringify(r));});},
   refresh:render,
+  recordOutcome:recordOutcome,
   storageKey:KEY
 });
 })(typeof globalThis!=='undefined'?globalThis:this);
