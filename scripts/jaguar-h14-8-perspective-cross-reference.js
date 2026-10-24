@@ -22,7 +22,7 @@ function project({mirror,functionsMatrix,experiences}={}){
          langs.some(l=>typeof f.example?.[l]!=='string'||!f.example[l].trim()))return null;
        out.push(Object.freeze({
          id:e.id+'::'+f.functionId+'::'+name,experienceId:e.id,functionId:f.functionId,perspective:name,
-         color:p.line,sourcePerspectiveExamples:Object.freeze(Object.fromEntries(langs.map(l=>[l,Object.freeze([...p.examples[l])]))),
+         color:p.line,sourcePerspectiveExamples:Object.freeze(Object.fromEntries(langs.map(l=>[l,Object.freeze([...p.examples[l]])]))),
          sourceFunctionExample:Object.freeze(Object.fromEntries(langs.map(l=>[l,f.example[l]]))),
          exampleTense:p.exampleTense||null,stage:'UNREVIEWED_RELATION_ONLY',synthesizedAnswer:null,questionWord:null,
          assessmentAuthority:false,evidenceProduced:false,greenPass:false
