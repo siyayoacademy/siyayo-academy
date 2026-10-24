@@ -1,0 +1,24 @@
+name: JAGUAR H14.26 WHY independent task blueprints
+on:
+  push:
+    branches: [jaguar/h14-26-why-independent-task-blueprints]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  origin-independent-blueprints:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-26-why-independent-task-blueprints.js
+          node scripts/test-jaguar-h14-25-why-s1-s2-fine-review.js
+          node scripts/test-jaguar-h14-6-why-origin-scoped-contract.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-26-why-independent-task-blueprints.js --json > h14-26-blueprints.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-26-origin-scoped-why-blueprints
+          path: h14-26-blueprints.json
