@@ -1,0 +1,18 @@
+name: JAGUAR H14.17 FUNC-13 fine study architecture
+on:
+  push:
+    branches: [jaguar/h14-17-func13-fine-design-contract]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  study-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-17-func13-fine-study.js
+          node scripts/test-jaguar-h14-15-func13-unified.js
+          node scripts/test-s3-why-canonical-green-cycle.js
