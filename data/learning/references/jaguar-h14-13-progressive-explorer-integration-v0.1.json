@@ -1,0 +1,213 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-13-progressive-explorer-integration",
+  "status": "PUBLISHED_BRANCH_REFERENCE_ONLY_NOT_IN_EXPLORER",
+  "parent": {
+    "branch": "jaguar/h14-12-integration-ledger-temporal-gates",
+    "commit": "a376488efdf9e2c444286d94ad803d365eb3b6a4",
+    "ciRun": 40059575948,
+    "ciConclusion": "success"
+  },
+  "methodAuthority": "STRUCTURE- KIND OF WORDS.docx — MASTER VIP; original not republished",
+  "moduleAxis": {
+    "verbFunctions": [
+      "quality",
+      "state",
+      "movement",
+      "action",
+      "existence"
+    ],
+    "perspectives": [
+      {
+        "id": "describing",
+        "color": "red"
+      },
+      {
+        "id": "narrating",
+        "color": "yellow"
+      },
+      {
+        "id": "debating",
+        "color": "green"
+      },
+      {
+        "id": "concluding",
+        "color": "blue"
+      }
+    ],
+    "experiences": [
+      "shopping-for-dinner",
+      "preparing-dinner",
+      "having-dinner",
+      "after-dinner-conversation"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "grammar": [
+      "tense",
+      "mode",
+      "period",
+      "wordType"
+    ],
+    "optionalAxis": "questionWord",
+    "combinatorialRelationships": 80,
+    "newAuthorizedAssessments": 0
+  },
+  "runtimeAnchors": [
+    {
+      "file": "js/verb-explorer.js",
+      "symbol": "currentPresentationSnapshot",
+      "role": "read QW/Perspective/wordType/tense/form",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    },
+    {
+      "file": "js/verb-explorer.js",
+      "symbol": "restoreExperiencePresentation",
+      "role": "preserve selections per Experience",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    },
+    {
+      "file": "js/verb-explorer.js",
+      "symbol": "renderExperience",
+      "role": "future namespaced feature-flag OFF visual mounting",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    },
+    {
+      "file": "js/verb-explorer.js",
+      "symbol": "experienceLines",
+      "role": "preserve existing authored lines and audio",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    },
+    {
+      "file": "js/verb-explorer-experience-presentation-memory.js",
+      "symbol": "remember/recall",
+      "role": "presentation only; not assessment storage",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    },
+    {
+      "file": "js/verb-explorer-patita-interaction-trail.js",
+      "symbol": "recordOutcome",
+      "role": "PATITA observation only; no new invocation",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    },
+    {
+      "file": "js/adaptive-assessment-scope.js",
+      "symbol": "create",
+      "role": "learner × skill × language × originExperienceId",
+      "changePolicy": "DO_NOT_MODIFY_IN_H14_13"
+    }
+  ],
+  "preservation": {
+    "sourceLedger": "data/learning/references/jaguar-h14-12-integration-ledger-v0.1.json",
+    "protected": [
+      "main",
+      "PR #3",
+      "production Cloudflare",
+      "Worker/D1 remote",
+      "canonical Experience seeds",
+      "canonical Pass Contract",
+      "PATITA executable",
+      "Master VIP original"
+    ],
+    "sourceHashesMustBeVerified": true,
+    "allH14_2ToH14_12MustRemainTraceable": true,
+    "noPromiseOfMergeOrFullIntegrationUntilHumanReview": true
+  },
+  "integrationStages": [
+    {
+      "id": "H14.13-A",
+      "name": "Read-only mapping bridge",
+      "state": "BRANCH_REFERENCE_PUBLISHED",
+      "gate": "Mapping returns authored source separately, without generated response or score"
+    },
+    {
+      "id": "H14.13-B",
+      "name": "Opt-in visual surface",
+      "state": "FUTURE_PROPOSAL",
+      "gate": "Flag default OFF; do not replace LINES or QWs"
+    },
+    {
+      "id": "H14.13-C",
+      "name": "Contextual task authoring",
+      "state": "FUTURE_PROPOSAL",
+      "gate": "EN/ES/PT and tense/mode/period human semantic review"
+    },
+    {
+      "id": "H14.13-D",
+      "name": "PATITA observational handoff",
+      "state": "FUTURE_PROPOSAL",
+      "gate": "Observation only; Evidence remains contract-owned"
+    },
+    {
+      "id": "H14.13-E",
+      "name": "Independent contract adoption",
+      "state": "FUTURE_PROPOSAL",
+      "gate": "Origin-scoped learner action and practice/transfer authorizations"
+    },
+    {
+      "id": "H14.13-F",
+      "name": "Regression and preview",
+      "state": "FUTURE_PROPOSAL",
+      "gate": "CI, desktop/portrait/landscape, speaker, QWs, Perspectives and Word Path"
+    },
+    {
+      "id": "H14.13-G",
+      "name": "Final Explorer integration decision",
+      "state": "FUTURE_PROPOSAL",
+      "gate": "Separately approved merge and production"
+    }
+  ],
+  "specializedModules": [
+    {
+      "id": "existence",
+      "route": "labs/master-vip-existence/index.html",
+      "standalone": true,
+      "isQuestionWord": false
+    },
+    {
+      "id": "firstPractices",
+      "route": "labs/master-vip-first-practices-h14-10/index.html",
+      "standalone": true,
+      "isQuestionWord": false
+    },
+    {
+      "id": "grammarModes",
+      "route": "labs/master-vip-mode-context-h14-11/index.html",
+      "standalone": true,
+      "isQuestionWord": false
+    },
+    {
+      "id": "timeAndPeriod",
+      "route": "labs/master-vip-time-gate-h14-12/index.html",
+      "standalone": true,
+      "isQuestionWord": false
+    }
+  ],
+  "assessment": {
+    "newAssessmentTarget": false,
+    "newPassContract": false,
+    "newEvidence": false,
+    "newGreenPass": false,
+    "patitaObserverOnly": true,
+    "explicitLearnerAttemptNecessary": true
+  },
+  "masterVipRules": {
+    "movementOriginal": "TO BE + VERB-ING — action in progress, not inherently physical displacement",
+    "physicalDisplacement": "Complementary lexical ACTION/TO DO; progressive may use TO BE+ING",
+    "existenceOriginal": "THERE + TO BE; independent module; not a QW",
+    "quality": "TO BE — introductory permanent characteristic",
+    "state": "TO BE — introductory temporary state",
+    "action": "lexical verbs, habits/routines; do/does/did auxiliaries where appropriate",
+    "perspectiveConclusionIsNotGreenPass": true
+  },
+  "deliveryState": {
+    "localPatchGenerated": true,
+    "githubBranchCreated": true,
+    "githubCommitCreated": true,
+    "githubCiExecutedForH1413": "VERIFY_IN_GITHUB_ACTIONS",
+    "integrationPublishedToExplorer": false
+  }
+}

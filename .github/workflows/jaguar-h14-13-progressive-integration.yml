@@ -1,0 +1,19 @@
+name: JAGUAR H14.13 progressive Explorer integration (study only)
+on:
+  push:
+    branches: [jaguar/h14-13-progressive-explorer-integration]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  preservation-and-reference-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check scripts/jaguar-h14-13-specialized-mirror-reference.js
+          node scripts/test-jaguar-h14-12-integration-temporal.js
+          node scripts/test-jaguar-h14-13-progressive-integration.js
+          node scripts/test-s3-why-canonical-green-cycle.js
