@@ -1,0 +1,26 @@
+name: JAGUAR H14.31 two-reviewer semantic consistency
+on:
+  push:
+    branches: [jaguar/h14-31-why-interreviewer-consistency]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  study-consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-31-two-reviewer-consistency.js
+          node scripts/test-jaguar-h14-30-supervised-semantic-protocol.js
+          node scripts/test-jaguar-h14-29-semantic-risk-audit.js
+          node scripts/test-jaguar-h14-28-semantic-contrast-bank.js
+          node scripts/test-jaguar-h14-27-why-semantic-rubric.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-31-review-form.js --json > h14-31-empty-review-forms.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-31-blank-teacher-review-forms
+          path: h14-31-empty-review-forms.json
