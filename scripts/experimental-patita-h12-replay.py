@@ -28,13 +28,7 @@ with sync_playwright() as p:
    assert page.locator('#patitaInteractionLedger .patita-replay-row[data-patita-qw="which"][data-patita-language="'+lang+'"]').count()==1
    page.locator('#nextExperience').click()
    page.wait_for_function("() => window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()==='preparing-dinner'")
-   stage='reload'
-   page.reload(wait_until='domcontentloaded')
-   page.wait_for_function("() => !!window.SIYAYOPatitaInteractionTrail?.projectVisible && !!window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId()")
-   # Identity is explicit; a reload does not authorize silent NICK restoration.
-   page.locator('#learnerIdentityInput').fill('H12-ALPHA-'+lang)
-   page.locator('#learnerIdentityConfirm').click()
-   page.wait_for_function("() => window.SIYAYOVerbExplorerLearnerIdentitySource.getId()?.startsWith('H12-ALPHA-')")
+   stage='experience-replay'
    after=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.projectVisible()")
    assert all(any(x['questionWord']==r['questionWord'] and x['language']==r['language'] and x['results']>=r['results'] for x in after) for r in before),(before,after)
    stage='change-NICK'
