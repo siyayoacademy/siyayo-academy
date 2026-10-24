@@ -1,0 +1,24 @@
+name: JAGUAR H14.12 preserved assets and temporal authoring gates
+on:
+  push:
+    branches: [jaguar/h14-12-integration-ledger-temporal-gates]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  preservation-and-semantic-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-7-five-functions-matrix.js
+          node scripts/test-jaguar-h14-7-existence-lab.js
+          node scripts/test-jaguar-h14-8-perspective-cross-reference.js
+          node scripts/test-jaguar-h14-9-semantic-80-review.js
+          node scripts/test-jaguar-h14-10-first-two-pilots.js
+          node scripts/test-jaguar-h14-11-modes-and-coherence.js
+          node scripts/test-jaguar-h14-12-integration-temporal.js
+          node scripts/test-jaguar-h14-6-why-origin-scoped-contract.js
+          node scripts/test-s3-why-canonical-green-cycle.js

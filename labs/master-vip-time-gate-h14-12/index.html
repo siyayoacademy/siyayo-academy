@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIYAYO · JAGUAR H14.12 · TENSE/PERIOD Context Gate</title>
+<style>
+:root{color-scheme:dark;--gold:#e4bd67;--bg:#071b30;--panel:#112b44;--line:#aa8a4d}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at top,#164164,var(--bg) 70%);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#eef3f7;line-height:1.52}
+main{max-width:980px;margin:auto;padding:22px 16px 70px}h1,h2{color:var(--gold)}h1{font-size:clamp(1.6rem,4vw,2.4rem);margin:6px 0}
+section{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin:15px 0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}button{font:inherit;color:white;background:#143954;border:1px solid #9c854c;border-radius:9px;padding:10px;cursor:pointer}
+button[aria-pressed=true]{background:var(--gold);color:#081c30;font-weight:700}button:focus-visible{outline:3px solid #77bdf0;outline-offset:3px}
+.summary{font-size:.86rem;color:#cedee8}.eyebrow{letter-spacing:.12em;text-transform:uppercase;font-size:.75rem;color:var(--gold)}
+.card{background:#081e33;border-radius:10px;padding:16px;border-left:4px solid #ddb866;margin-top:10px}.status{color:#f2d388;font-size:.85rem}
+h2{font-size:1.25rem;margin:7px 0}.sentence{font-weight:650;font-size:1.13rem}.small{font-size:.86rem;color:#c7d5e0}
+footer{font-size:.82rem;color:#b6c5d1;margin-top:20px}
+</style></head><body><main>
+<div class="eyebrow">🔔🐆 SIYAYO ACADEMY · MASTER VIP · VISÃO DE ÁGUIA</div>
+<h1>H14.12 · TENSE / PERIOD × Context</h1>
+<p class="summary">Espelho pedagógico para revisar períodos e tempos. Não é um avaliador; nenhuma frase daqui altera a Learning Trail ou concede Green Pass.</p>
+<section><h2>LANGUAGE</h2><div class="tabs" aria-label="Idioma">
+<button data-lang="en" type="button">EN</button><button data-lang="es" type="button">ES</button><button data-lang="pt" type="button">PT</button></div>
+<h2>EXPERIENCE × FUNÇÃO</h2><div class="tabs" aria-label="Função da cena">
+<button data-pilot="0" type="button">S3 · STATE × DESCRIBING 🔴</button><button data-pilot="1" type="button">S2 · MOVEMENT × NARRATING 🟡</button></div>
+<h2>TIME FAMILY</h2><div class="tabs" aria-label="Tempo/período">
+<button data-time="PRESENT" type="button">PRESENT</button><button data-time="PAST" type="button">PAST</button><button data-time="FUTURE" type="button">FUTURE</button>
+<button data-time="PRESENT_PERIOD" type="button">PRESENT PERIOD</button><button data-time="PAST_PERIOD" type="button">PAST PERIOD</button></div>
+</section><section aria-live="polite"><div class="eyebrow" id="headline"></div><h2 id="classification"></h2>
+<div class="card"><div class="eyebrow">Exemplo / situação</div><p id="sentence" class="sentence"></p></div>
+<p class="small" id="anchor"></p><p class="status" id="explain"></p><div class="card"><div class="eyebrow">Gramática × Fato × Evidência</div>
+<p id="grammar"></p><p class="small">Master VIP: a forma gramatical e a Perspective são eixos distintos. Uma previsão, opinião ou transformação correta não equivale a fato da cena nem a prova do aluno.</p></div>
+</section>
+<footer>PENDING_HOMOLOGATION. QWs opcionais; EXISTENCE independente. Apenas formas AFFIRMATIVE selecionadas para revisão. NEGATIVE e INTERROGATIVE mantêm sua própria análise H14.11. Sem PATITA funcional, APIs, storage ou avaliação. Não publicado na produção.</footer>
+<script>
+'use strict';
+const model={"cases":[{"id":"S3-STATE-PRESENT","pilot":"H14-10-S3-STATE-DESCRIBING","scene":"having-dinner","target":"PRESENT","mode":"AFFIRMATIVE","classification":"SOURCE_SUPPORTED_REFERENCE","utterance":{"en":"The salmon is delicious.","es":"El salmón está delicioso.","pt":"O salmão está delicioso."},"sourceScene":"S3 describing/contextual adaptation","grammarRelation":"TO BE; scene evaluation about a dish, not objective sensory proof","factKind":"NARRATIVE_REFERENCE_NOT_PERSONAL_TASTE","requiresReview":["STATE/QUALITY nuance"]},{"id":"S3-STATE-PAST","pilot":"H14-10-S3-STATE-DESCRIBING","scene":"after-dinner-conversation","target":"PAST","mode":"AFFIRMATIVE","classification":"CONTEXTUAL_RECONSTRUCTION","utterance":{"en":"The salmon was delicious.","es":"El salmón estaba delicioso.","pt":"O salmão estava delicioso."},"sourceScene":"S3 has positive taste evaluation; S4 is after dinner","grammarRelation":"PAST TO BE; retrospectively report S3 assessment, not a new S4 sourced quote","factKind":"REPORTED_NARRATIVE_OPINION","requiresReview":["Check S4 speaker/reporting provenance","STATE vs QUALITY"]},{"id":"S3-STATE-FUTURE","pilot":"H14-10-S3-STATE-DESCRIBING","scene":"preparing-dinner","target":"FUTURE","mode":"AFFIRMATIVE","classification":"PREDICTION_ONLY","utterance":{"en":"The salmon will be delicious.","es":"El salmón estará delicioso.","pt":"O salmão estará delicioso."},"sourceScene":"S2 dinner still being prepared; future taste not tasted yet","grammarRelation":"Prediction in FUTURE, cannot be used as observed tasty-state answer","factKind":"UNCERTAIN_PREDICTION","requiresReview":["Explicit prediction task, not sensory evidence"]},{"id":"S3-STATE-PRESENT-PERIOD","pilot":"H14-10-S3-STATE-DESCRIBING","scene":"having-dinner","target":"PRESENT_PERIOD","mode":"AFFIRMATIVE","classification":"BLOCKED_MISSING_PREMISE","utterance":null,"sourceScene":"S3 no prolonged duration of food taste stated","grammarRelation":"PRESENT PERFECT or continuous temporal duration not authorable from this scene","factKind":"MISSING_DURATION","requiresReview":["Author verified earlier interval and idiomatic expression before a sentence"]},{"id":"S3-STATE-PAST-PERIOD","pilot":"H14-10-S3-STATE-DESCRIBING","scene":"after-dinner-conversation","target":"PAST_PERIOD","mode":"AFFIRMATIVE","classification":"BLOCKED_MISSING_PREMISE","utterance":null,"sourceScene":"S4 does not establish a prior ordered sensory-event interval","grammarRelation":"PAST PERFECT temporal ordering lacks a second confirmed prior event","factKind":"MISSING_PRIOR_EVENT","requiresReview":["Author actual two-event sequence before examples"]},{"id":"S2-MOVEMENT-PRESENT","pilot":"H14-10-S2-MOVEMENT-NARRATING","scene":"preparing-dinner","target":"PRESENT","mode":"AFFIRMATIVE","classification":"SOURCE_SUPPORTED_REFERENCE","utterance":{"en":"We are preparing dinner.","es":"Estamos preparando la cena.","pt":"Estamos preparando o jantar."},"sourceScene":"S2 current ongoing dinner preparation","grammarRelation":"TO BE + ING, canonical introductory MOVEMENT","factKind":"CURRENT_PROGRESSIVE_SCENE","requiresReview":["Keep NARRATING independent from function"]},{"id":"S2-MOVEMENT-PAST","pilot":"H14-10-S2-MOVEMENT-NARRATING","scene":"preparing-dinner","target":"PAST","mode":"AFFIRMATIVE","classification":"SOURCE_SUPPORTED_NON_TARGET_FUNCTION","utterance":{"en":"We came home, opened the groceries and started preparing dinner.","es":"Llegamos a casa, abrimos las compras y empezamos a preparar la cena.","pt":"Chegamos em casa, abrimos as compras e começamos a preparar o jantar."},"sourceScene":"Exact authored S2 NARRATING Perspective","grammarRelation":"PAST simple narration, NOT automatically PAST MOVEMENT (was/were + ING)","factKind":"PAST_NARRATIVE_SOURCE","requiresReview":["Do not give MOVEMENT function credit for past simple motion/started"]},{"id":"S2-MOVEMENT-FUTURE","pilot":"H14-10-S2-MOVEMENT-NARRATING","scene":"shopping-for-dinner","target":"FUTURE","mode":"AFFIRMATIVE","classification":"PREDICTION_ONLY","utterance":{"en":"We will prepare dinner tonight.","es":"Prepararemos la cena esta noche.","pt":"Vamos preparar o jantar hoje à noite."},"sourceScene":"S1 shopping for tonight's dinner; future proposal, not verbatim scene quote","grammarRelation":"Will + verb lexical future plan, NOT TO BE + ING progressive MOVEMENT","factKind":"PLAN_PENDING_EXECUTION","requiresReview":["Choose future task; do not mark as progressive function"]},{"id":"S2-MOVEMENT-PRESENT-PERIOD","pilot":"H14-10-S2-MOVEMENT-NARRATING","scene":"preparing-dinner","target":"PRESENT_PERIOD","mode":"AFFIRMATIVE","classification":"BLOCKED_MISSING_PREMISE","utterance":null,"sourceScene":"No duration of ongoing preparation provided","grammarRelation":"Perfect-progressive requires explicit temporal span, not given","factKind":"MISSING_DURATION","requiresReview":["Author duration/starting time, then review language forms"]},{"id":"S2-MOVEMENT-PAST-PERIOD","pilot":"H14-10-S2-MOVEMENT-NARRATING","scene":"having-dinner","target":"PAST_PERIOD","mode":"AFFIRMATIVE","classification":"BLOCKED_MISSING_PREMISE","utterance":null,"sourceScene":"No separate anchored reference time for preparatory perfect-progressive","grammarRelation":"Past perfect progressive cannot be inferred merely from dinner completion","factKind":"MISSING_ORDERED_EVENTS","requiresReview":["Define duration and a second event in past with supported chronology"]}],"legend":{"SOURCE_SUPPORTED_REFERENCE":"Sentence/structure is supported by an authored scene or established SIYAYO reference, still not new approved scoring.","SOURCE_SUPPORTED_NON_TARGET_FUNCTION":"Source phrase exists in corpus, but has the wrong function construction for this particular targeted grammar skill.","CONTEXTUAL_RECONSTRUCTION":"A plausible reformulation based on events in other scenes, not a canonical sourced sentence, requires review.","PREDICTION_ONLY":"Future statement expresses an uncertain forecast or plan, not an observed property or action; may be authored for a separate task.","BLOCKED_MISSING_PREMISE":"No phrase is automatically generated because prerequisite chronology, duration, facts or context are missing."}};
+const state={lang:'pt',pilot:0,time:'PRESENT'};
+function render(){
+  document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===state.lang)));
+  document.querySelectorAll('[data-pilot]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.pilot===state.pilot)));
+  document.querySelectorAll('[data-time]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.time===state.time)));
+  const item=model.cases.find(x=>x.pilot.includes(state.pilot===0?'S3-STATE':'S2-MOVEMENT')&&x.target===state.time);
+  const el=id=>document.getElementById(id);
+  if(!item)return;
+  el('headline').textContent=item.scene+' · '+item.target+' · '+item.mode;
+  el('classification').textContent=item.classification;
+  el('sentence').textContent=item.utterance?.[state.lang]||'NÃO AUTORADO — faltam premissas contextuais suficientes.';
+  el('anchor').textContent=item.sourceScene;
+  el('explain').textContent=model.legend[item.classification];
+  el('grammar').textContent=item.grammarRelation;
+}
+document.addEventListener('click',ev=>{
+ const btn=ev.target.closest('button');if(!btn)return;
+ if(btn.dataset.lang)state.lang=btn.dataset.lang;
+ if(btn.dataset.pilot!==undefined)state.pilot=Number(btn.dataset.pilot);
+ if(btn.dataset.time)state.time=btn.dataset.time;
+ render();
+});
+render();
+</script></main></body></html>

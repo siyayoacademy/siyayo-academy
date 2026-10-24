@@ -1,0 +1,197 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-12-integration-preservation-ledger",
+  "status": "REFERENCE_AND_INTEGRATION_GATE_NOT_DEPLOYED",
+  "origin": "H14.11 GREEN, HEAD dcfb910d6d776995c2e267bd8ebfb9869ec0a56d",
+  "purpose": "Preserve references for future full Explorer integration with source drift checks, not claim implementation now",
+  "assets": [
+    {
+      "id": "H14.2",
+      "path": "data/learning/references/jaguar-h14-2-qw-opportunity-map-v0.1.json",
+      "gitBlobSha": "ecc5107abcbeab20aef787d1bc2b33cf3880528e",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.3",
+      "path": "data/learning/references/jaguar-h14-3-why-s1-eligibility-v0.1.json",
+      "gitBlobSha": "4e4ae6fcb585829d18d77eb6044d1f7af01394a7",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.4",
+      "path": "data/learning/references/jaguar-h14-4-why-independent-opportunity-readiness-v0.1.json",
+      "gitBlobSha": "6cae1f63c36e11431c3039273591fa6e0dba6a46",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.5",
+      "path": "data/learning/references/jaguar-h14-5-why-s1-s2-context-transfer-v0.1.json",
+      "gitBlobSha": "e034e9a76aa2de77f2db6c0e878f22ba438dfe9a",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.6",
+      "path": "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+      "gitBlobSha": "143e8692ac7dd5bdbd2de3d4624b0f264db7370d",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.7-MATRIX",
+      "path": "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json",
+      "gitBlobSha": "a5262614f21672560a3941aaace4e26d470da17a",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.8",
+      "path": "data/learning/references/jaguar-h14-8-master-vip-perspectives-v0.1.json",
+      "gitBlobSha": "2c2ea20d38bebf8af1500c7dd0f4608bf1f7fff4",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.9",
+      "path": "data/learning/references/jaguar-h14-9-semantic-80-review-v0.1.json",
+      "gitBlobSha": "16bb6a6a08f7c97d33352ec59005fa9b247d9dca",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.10",
+      "path": "data/learning/references/jaguar-h14-10-first-two-practice-pilots-v0.1.json",
+      "gitBlobSha": "65ef1346b6088bea0af1249bcfd17034f8cb4cdd",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "H14.11",
+      "path": "data/learning/references/jaguar-h14-11-mode-contextual-coherence-v0.1.json",
+      "gitBlobSha": "6f3eb8781f0f004fcc962b38b34563e27938dd2b",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "LAB-EXISTENCE",
+      "path": "labs/master-vip-existence/index.html",
+      "gitBlobSha": "8dce529b00fbeb3838f13a8612c38b29e6cb416c",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "LAB-FIRST-TWO",
+      "path": "labs/master-vip-first-practices-h14-10/index.html",
+      "gitBlobSha": "bf95238e5e5998f82bf306ac2511c3fb45dd5b2b",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "LAB-MODES",
+      "path": "labs/master-vip-mode-context-h14-11/index.html",
+      "gitBlobSha": "3b242e898fe32a1345f0c9b9ab264ea2adf70f21",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    },
+    {
+      "id": "CANONICAL-EXPLORER",
+      "path": "js/verb-explorer.js",
+      "gitBlobSha": "d4101482aa39926250c7a08e9890bb9d118d11d4",
+      "status": "PRESERVED_IN_CURRENT_BRANCH_AT_CHECKPOINT",
+      "integratedIntoFinalExplorer": false
+    }
+  ],
+  "historicalSequence": [
+    {
+      "elo": "H14.2",
+      "focus": "21 Experience×QW slots mapped; assessment authority separate"
+    },
+    {
+      "elo": "H14.3",
+      "focus": "S1 WHY authored question versus causal-answer eligibility"
+    },
+    {
+      "elo": "H14.4",
+      "focus": "S1/S2 independent opportunity blockers; S3→S4 existing contract"
+    },
+    {
+      "elo": "H14.5",
+      "focus": "S1→S2 contextual WHY candidate in EN/ES/PT"
+    },
+    {
+      "elo": "H14.6",
+      "focus": "per-origin WHY proposal with start/resume/transfer intent, no authority"
+    },
+    {
+      "elo": "H14.7",
+      "focus": "5 Master functions×4 Experiences plus autonomous EXISTENCE LAB"
+    },
+    {
+      "elo": "H14.8",
+      "focus": "4 preserved PERSPECTIVES; 80 possible references, zero approved task grants"
+    },
+    {
+      "elo": "H14.9",
+      "focus": "80 semantic preliminary reviews; source-close/bridge/contrast"
+    },
+    {
+      "elo": "H14.10",
+      "focus": "S3 STATE/DESCRIBING and S2 MOVEMENT/NARRATING draft tasks"
+    },
+    {
+      "elo": "H14.11",
+      "focus": "2 pilots×3 modes×EN/ES/PT, grammatical form separated from contextual truth"
+    },
+    {
+      "elo": "H14.12",
+      "focus": "integration ledger and time/PERIOD authoring gates"
+    }
+  ],
+  "reviewRequirements": [
+    "Do not change Master VIP original (private library) to match a complementary interpretation",
+    "Keep DESCRIBING red, NARRATING yellow, DEBATING green and CONCLUDING blue",
+    "Keep TO BE + ING as introductory MOVEMENT; physical displacement remains related lexical ACTION / TO DO study",
+    "EXISTENCE (THERE + TO BE) remains standalone and independent of Question Word menu",
+    "No artifact grants a Green Pass without authorized learner action and exact-scope contract",
+    "Retain EN/ES/PT, TENSE, MODE, PERIOD, word type, and optional QWs without imposed sequence",
+    "Keep PATITA observational; Learning Trail/Word Path should show only canonical verified evidence"
+  ],
+  "plannedIntegration": [
+    {
+      "stage": "SOURCE_FIDELITY",
+      "checkpoint": "Master original plus SIYAYO adaptations, editorial corrections explicit"
+    },
+    {
+      "stage": "AUTHORING",
+      "checkpoint": "Human-approved contextual questions/answers in three languages with sufficient scene time and referents"
+    },
+    {
+      "stage": "CONTRACT_DESIGN",
+      "checkpoint": "Per-origin assessment contract, distinct practice/transfer and failure isolation"
+    },
+    {
+      "stage": "RUNTIME_INTEGRATION",
+      "checkpoint": "Integration with Explorer selectors, PATITA, retained learner scopes, Word Path and visible HOW TO SHOW"
+    },
+    {
+      "stage": "REGRESSION",
+      "checkpoint": "GitHub tests, interactions, contrast semantics, speaker, portrait, landscape, desktop"
+    },
+    {
+      "stage": "HUMAN_HOMOLOGATION",
+      "checkpoint": "Manual EN/ES/PT, action evidence and final preview acceptance before merge/deploy"
+    }
+  ],
+  "requiresAllStagesBeforeProduction": true,
+  "protectedTargets": [
+    "main",
+    "PR #3",
+    "Cloudflare production",
+    "PATITA existing evaluator",
+    "Worker/D1 remote"
+  ],
+  "guarantees": "Git blobs remain inspectable in ancestry and are guarded at this checkpoint. Future integration is intended, not yet completed; periodic ref/branch retention and CI are required."
+}

@@ -1,0 +1,237 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-12-temporal-context-gate",
+  "status": "STUDY_ONLY_NOT_CANONICAL_EXPERIENCE_OR_ASSESSMENT",
+  "sources": [
+    "data/learning/references/jaguar-h14-11-mode-contextual-coherence-v0.1.json",
+    "data/learning/references/jaguar-h14-10-first-two-practice-pilots-v0.1.json",
+    "data/learning/experience-seeds.json",
+    "STRUCTURE- KIND OF WORDS.docx"
+  ],
+  "note": "PAST/FUTURE/PERIOD are educational possibilities, not automatically derived proof. TENSE examples for STATE/MOVEMENT must be classed by grammatical structure and scene truth separately.",
+  "controlledAxes": {
+    "langs": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "pilots": 2,
+    "targetTimeFamilies": [
+      "PRESENT",
+      "PAST",
+      "FUTURE",
+      "PRESENT_PERIOD",
+      "PAST_PERIOD"
+    ],
+    "modesAuthoredHere": [
+      "AFFIRMATIVE"
+    ],
+    "modeTriadsRemainSeparateIn": "H14.11",
+    "perspectiveIndependent": true,
+    "qwOptional": true,
+    "masterFunctionNeverInferredFromTenseLabel": true
+  },
+  "classificationLegend": {
+    "SOURCE_SUPPORTED_REFERENCE": "Sentence/structure is supported by an authored scene or established SIYAYO reference, still not new approved scoring.",
+    "SOURCE_SUPPORTED_NON_TARGET_FUNCTION": "Source phrase exists in corpus, but has the wrong function construction for this particular targeted grammar skill.",
+    "CONTEXTUAL_RECONSTRUCTION": "A plausible reformulation based on events in other scenes, not a canonical sourced sentence, requires review.",
+    "PREDICTION_ONLY": "Future statement expresses an uncertain forecast or plan, not an observed property or action; may be authored for a separate task.",
+    "BLOCKED_MISSING_PREMISE": "No phrase is automatically generated because prerequisite chronology, duration, facts or context are missing."
+  },
+  "roles": {
+    "grammaticalForm": true,
+    "sceneTruthSeparate": true,
+    "opinionVsFactSeparate": true,
+    "observedLearnerAttempt": false,
+    "assessmentContractAuthority": false,
+    "canonicalEvidence": false,
+    "greenPass": false,
+    "patitaReadOnly": true
+  },
+  "rows": [
+    {
+      "id": "S3-STATE-PRESENT",
+      "pilot": "H14-10-S3-STATE-DESCRIBING",
+      "scene": "having-dinner",
+      "target": "PRESENT",
+      "mode": "AFFIRMATIVE",
+      "classification": "SOURCE_SUPPORTED_REFERENCE",
+      "utterance": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "sourceScene": "S3 describing/contextual adaptation",
+      "grammarRelation": "TO BE; scene evaluation about a dish, not objective sensory proof",
+      "factKind": "NARRATIVE_REFERENCE_NOT_PERSONAL_TASTE",
+      "requiresReview": [
+        "STATE/QUALITY nuance"
+      ]
+    },
+    {
+      "id": "S3-STATE-PAST",
+      "pilot": "H14-10-S3-STATE-DESCRIBING",
+      "scene": "after-dinner-conversation",
+      "target": "PAST",
+      "mode": "AFFIRMATIVE",
+      "classification": "CONTEXTUAL_RECONSTRUCTION",
+      "utterance": {
+        "en": "The salmon was delicious.",
+        "es": "El salmón estaba delicioso.",
+        "pt": "O salmão estava delicioso."
+      },
+      "sourceScene": "S3 has positive taste evaluation; S4 is after dinner",
+      "grammarRelation": "PAST TO BE; retrospectively report S3 assessment, not a new S4 sourced quote",
+      "factKind": "REPORTED_NARRATIVE_OPINION",
+      "requiresReview": [
+        "Check S4 speaker/reporting provenance",
+        "STATE vs QUALITY"
+      ]
+    },
+    {
+      "id": "S3-STATE-FUTURE",
+      "pilot": "H14-10-S3-STATE-DESCRIBING",
+      "scene": "preparing-dinner",
+      "target": "FUTURE",
+      "mode": "AFFIRMATIVE",
+      "classification": "PREDICTION_ONLY",
+      "utterance": {
+        "en": "The salmon will be delicious.",
+        "es": "El salmón estará delicioso.",
+        "pt": "O salmão estará delicioso."
+      },
+      "sourceScene": "S2 dinner still being prepared; future taste not tasted yet",
+      "grammarRelation": "Prediction in FUTURE, cannot be used as observed tasty-state answer",
+      "factKind": "UNCERTAIN_PREDICTION",
+      "requiresReview": [
+        "Explicit prediction task, not sensory evidence"
+      ]
+    },
+    {
+      "id": "S3-STATE-PRESENT-PERIOD",
+      "pilot": "H14-10-S3-STATE-DESCRIBING",
+      "scene": "having-dinner",
+      "target": "PRESENT_PERIOD",
+      "mode": "AFFIRMATIVE",
+      "classification": "BLOCKED_MISSING_PREMISE",
+      "utterance": null,
+      "sourceScene": "S3 no prolonged duration of food taste stated",
+      "grammarRelation": "PRESENT PERFECT or continuous temporal duration not authorable from this scene",
+      "factKind": "MISSING_DURATION",
+      "requiresReview": [
+        "Author verified earlier interval and idiomatic expression before a sentence"
+      ]
+    },
+    {
+      "id": "S3-STATE-PAST-PERIOD",
+      "pilot": "H14-10-S3-STATE-DESCRIBING",
+      "scene": "after-dinner-conversation",
+      "target": "PAST_PERIOD",
+      "mode": "AFFIRMATIVE",
+      "classification": "BLOCKED_MISSING_PREMISE",
+      "utterance": null,
+      "sourceScene": "S4 does not establish a prior ordered sensory-event interval",
+      "grammarRelation": "PAST PERFECT temporal ordering lacks a second confirmed prior event",
+      "factKind": "MISSING_PRIOR_EVENT",
+      "requiresReview": [
+        "Author actual two-event sequence before examples"
+      ]
+    },
+    {
+      "id": "S2-MOVEMENT-PRESENT",
+      "pilot": "H14-10-S2-MOVEMENT-NARRATING",
+      "scene": "preparing-dinner",
+      "target": "PRESENT",
+      "mode": "AFFIRMATIVE",
+      "classification": "SOURCE_SUPPORTED_REFERENCE",
+      "utterance": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "sourceScene": "S2 current ongoing dinner preparation",
+      "grammarRelation": "TO BE + ING, canonical introductory MOVEMENT",
+      "factKind": "CURRENT_PROGRESSIVE_SCENE",
+      "requiresReview": [
+        "Keep NARRATING independent from function"
+      ]
+    },
+    {
+      "id": "S2-MOVEMENT-PAST",
+      "pilot": "H14-10-S2-MOVEMENT-NARRATING",
+      "scene": "preparing-dinner",
+      "target": "PAST",
+      "mode": "AFFIRMATIVE",
+      "classification": "SOURCE_SUPPORTED_NON_TARGET_FUNCTION",
+      "utterance": {
+        "en": "We came home, opened the groceries and started preparing dinner.",
+        "es": "Llegamos a casa, abrimos las compras y empezamos a preparar la cena.",
+        "pt": "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+      },
+      "sourceScene": "Exact authored S2 NARRATING Perspective",
+      "grammarRelation": "PAST simple narration, NOT automatically PAST MOVEMENT (was/were + ING)",
+      "factKind": "PAST_NARRATIVE_SOURCE",
+      "requiresReview": [
+        "Do not give MOVEMENT function credit for past simple motion/started"
+      ]
+    },
+    {
+      "id": "S2-MOVEMENT-FUTURE",
+      "pilot": "H14-10-S2-MOVEMENT-NARRATING",
+      "scene": "shopping-for-dinner",
+      "target": "FUTURE",
+      "mode": "AFFIRMATIVE",
+      "classification": "PREDICTION_ONLY",
+      "utterance": {
+        "en": "We will prepare dinner tonight.",
+        "es": "Prepararemos la cena esta noche.",
+        "pt": "Vamos preparar o jantar hoje à noite."
+      },
+      "sourceScene": "S1 shopping for tonight's dinner; future proposal, not verbatim scene quote",
+      "grammarRelation": "Will + verb lexical future plan, NOT TO BE + ING progressive MOVEMENT",
+      "factKind": "PLAN_PENDING_EXECUTION",
+      "requiresReview": [
+        "Choose future task; do not mark as progressive function"
+      ]
+    },
+    {
+      "id": "S2-MOVEMENT-PRESENT-PERIOD",
+      "pilot": "H14-10-S2-MOVEMENT-NARRATING",
+      "scene": "preparing-dinner",
+      "target": "PRESENT_PERIOD",
+      "mode": "AFFIRMATIVE",
+      "classification": "BLOCKED_MISSING_PREMISE",
+      "utterance": null,
+      "sourceScene": "No duration of ongoing preparation provided",
+      "grammarRelation": "Perfect-progressive requires explicit temporal span, not given",
+      "factKind": "MISSING_DURATION",
+      "requiresReview": [
+        "Author duration/starting time, then review language forms"
+      ]
+    },
+    {
+      "id": "S2-MOVEMENT-PAST-PERIOD",
+      "pilot": "H14-10-S2-MOVEMENT-NARRATING",
+      "scene": "having-dinner",
+      "target": "PAST_PERIOD",
+      "mode": "AFFIRMATIVE",
+      "classification": "BLOCKED_MISSING_PREMISE",
+      "utterance": null,
+      "sourceScene": "No separate anchored reference time for preparatory perfect-progressive",
+      "grammarRelation": "Past perfect progressive cannot be inferred merely from dinner completion",
+      "factKind": "MISSING_ORDERED_EVENTS",
+      "requiresReview": [
+        "Define duration and a second event in past with supported chronology"
+      ]
+    }
+  ],
+  "authoritativeChanges": {
+    "experiences": false,
+    "skills": false,
+    "patita": false,
+    "main": false,
+    "pr3": false,
+    "cloudflare": false,
+    "workerD1": false
+  }
+}
