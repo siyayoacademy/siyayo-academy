@@ -18,7 +18,7 @@ with sync_playwright() as p:
    page.locator('#whatAssessmentPanel .what-object-question-probe .what-probe-option').first.click()
    page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().some(r=>r.source==='canonical-probe'&&r.questionWord==='what')")
    what=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().filter(r=>r.source==='canonical-probe'&&r.questionWord==='what').at(-1)")
-   assert what['phase']=='exploration' and what['evidenceProduced']==False,what
+   assert what['phase']=='exploration' and what['evidenceProduced']==False and what['learnerId'] is None,what
    assert what['resultCode'] in ('pass','fail'),what
    assert page.evaluate("() => window.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.()?.session?.decision?.skill||null") is None
    page.locator('#learnerIdentityInput').fill('PATITA-H14.1-'+lang)
@@ -65,7 +65,7 @@ with sync_playwright() as p:
    assert status['wordPathLanguage'] in (None,lang),status
    for item in status['results']:
     assert item['owner'] in (None,'PATITA-H14.1-'+lang) and item['credit'] is False and item['evidence'] is False,item
-   assert any(x['qw']=='what' and x['phase']=='exploration' for x in status['results']),status
+   assert not any(x['qw']=='what' and x['phase']=='exploration' for x in status['results']),status # No anonymous-event adoption into NICK
    assert any(x['qw']=='where' and x['phase']=='assessment-attempt' for x in status['results']),status
    assert any(x['qw']=='why' and x['phase']=='assessment-attempt' for x in status['results']),status
    # Switching to a different QW must not silently give credit to a different skill.
