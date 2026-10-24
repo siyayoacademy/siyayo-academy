@@ -103,6 +103,8 @@ with sync_playwright() as p:
    assert completed["activeScope"]["origin"]=="shopping-for-dinner" and completed["activeScope"]["language"]==lang,completed
    trail=page.locator('#learnerTrailSurface')
    assert trail.get_attribute('data-assessment-language') in (None,lang)
+   # PATITA observational writes are deferred; wait for both result envelopes.
+   page.wait_for_function("() => {const rows=window.SIYAYOPatitaInteractionTrail.getVisibleRecords().filter(x=>x.source==='determiner-use'&&x.mode==='transfer');return rows.some(x=>x.resultCode==='fail')&&rows.some(x=>x.resultCode==='pass')}",timeout=8000)
    records=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().filter(x=>x.source==='determiner-use'&&x.mode==='transfer')")
    assert any(x['resultCode']=='fail' for x in records) and any(x['resultCode']=='pass' for x in records),records
    assert all(x['evidenceProduced'] is False and x['assessmentCredit'] is False for x in records)
