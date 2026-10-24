@@ -105,6 +105,8 @@ function mount(input){
       if(!attempt)return null;
       var coordinated=coordinator.submitObservedAttempt(attempt,event,target);
       if(!coordinated)return null;
+      // Post-coordinator observational mirror; canonical Cycle alone grants credit.
+      root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'determiner-use',phase:'assessment-attempt',selected:result.selectedAlternativeId,experienceId:experience.id,language:language,questionWord:'which',resultCode:result.result,skill:'which.use.determiner',dimension:'determiner-use',mode:transfer?'transfer':'local'});
       var closure=coordinated.cycleResult&&coordinated.cycleResult.contractEvaluation;
       feedback.textContent=closure&&closure.status==='GREEN_PASS'&&closure.satisfied===true
         ?(language==='es'?'GREEN PASS · CUÁL/CUÁLES confirmado':language==='pt'?'GREEN PASS · QUAL confirmado':'GREEN PASS · WHICH confirmed')
