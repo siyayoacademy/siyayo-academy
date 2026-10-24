@@ -7,6 +7,7 @@ with sync_playwright() as p:
  b=p.chromium.launch(channel='chrome',headless=True,args=['--no-sandbox'])
  for lang in ('en','es','pt'):
   ctx=b.new_context(viewport={'width':390,'height':844});page=ctx.new_page();row={'lang':lang,'status':'FAIL'}
+  stage='init'
   try:
    page.goto('http://127.0.0.1:8879/verb-explorer.html?mode=experience&experience=shopping-for-dinner',wait_until='domcontentloaded')
    page.wait_for_function("() => !!window.SIYAYOPatitaInteractionTrail?.projectVisible")
@@ -22,12 +23,16 @@ with sync_playwright() as p:
    page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact' && !document.querySelector('#learnerIdentityCompact')?.hidden")
    before=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.projectVisible()")
    assert any(x['questionWord']=='which' and x['results']>=1 for x in before)
+   stage='click-change'
    page.locator('#learnerIdentityChange').click()
    page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='editor'")
+   stage='enter-beta'
    page.locator('#learnerIdentityInput').fill('H13-BETA-'+lang)
    page.locator('#learnerIdentityConfirm').click()
+   stage='confirm-beta'
    page.wait_for_function("() => window.SIYAYOVerbExplorerLearnerIdentitySource?.getId()?.startsWith('H13-BETA-') && document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact'")
    assert not any(x['results'] for x in page.evaluate("() => window.SIYAYOPatitaInteractionTrail.projectVisible()"))
+   stage='return-alpha'
    page.locator('#learnerIdentityChange').click()
    page.locator('#learnerIdentityInput').fill('H13-ALPHA-'+lang)
    page.locator('#learnerIdentityConfirm').click()
@@ -37,7 +42,7 @@ with sync_playwright() as p:
    page.screenshot(path=str(out/(lang+'-identity-switch.png')),full_page=True)
    row.update(status='PASS',isolation=True,returnToNick=True)
   except Exception as e:
-   row.update(error=repr(e)[:700],trace=traceback.format_exc()[-1000:])
+   row.update(stage=stage,error=repr(e)[:700],trace=traceback.format_exc()[-1000:])
    try:page.screenshot(path=str(out/('ERROR-'+lang+'.png')),full_page=True)
    except Exception:pass
   finally:
