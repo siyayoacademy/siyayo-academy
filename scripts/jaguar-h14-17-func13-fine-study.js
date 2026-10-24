@@ -10,7 +10,7 @@ function inspect(experienceId,functionId,perspective,language){
  if(!contract.axes.experiences.includes(experienceId)||!contract.axes.functions.includes(functionId)||!contract.axes.perspectives.includes(perspective)||!contract.axes.languages.includes(language))return null;
  const experience=seeds.find(x=>x.id===experienceId),cell=matrix.cells.find(x=>x.experienceId===experienceId&&x.functionId===functionId),review=reviews.matrix.find(x=>x.key===experienceId+'::'+functionId+'::'+perspective),original=master.functions.find(x=>x.id===functionId);
  if(!experience||!cell||!review||!original||!experience.perspectives[perspective])return null;
- return Object.freeze({functionId,masterPattern:original.masterPattern,masterMeaning:original.masterMeaning,experienceId,perspective,language,
+ return Object.freeze({functionId,masterPattern:original.pattern,masterMeaning:'Master original — consult the indexed page; no automatic semantic reclassification',experienceId,perspective,language,
  functionAdaptation:cell.example[language],contextLines:Object.freeze([...experience.perspectives[perspective].examples[language]]),
  color:experience.perspectives[perspective].line,semanticReview:review.preliminaryReview,reviewReason:review.reason,
  unresolved:true,approvedExercise:false,assessmentAuthority:false,canAwardEvidence:false,
