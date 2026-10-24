@@ -1,0 +1,24 @@
+name: JAGUAR H14.24 Experience QW coherent inventory
+on:
+  push:
+    branches: [jaguar/h14-24-experience-qw-coherence-inventory]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  inventory-no-authority:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-24-experience-qw-audit.js
+          node scripts/test-jaguar-h14-6-why-origin-scoped-contract.js
+          node scripts/test-jaguar-h14-23-gear-snapshot.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-24-experience-qw-audit.js --json > h14-24-inventory.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-24-experience-qw-audit
+          path: h14-24-inventory.json
