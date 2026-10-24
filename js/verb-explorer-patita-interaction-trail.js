@@ -140,6 +140,47 @@ function visibleRecords(){
     return id?r.learnerId===id:!r.learnerId&&r.sessionId===session;
   });
 }
+// H12: read-only PATITA path by QW x language, independent of active Experience
+// and of any canonical 0/3, 2/3 or Green Pass. This is a bounded local excerpt.
+function projectVisible(){
+  var byKey=new Map();
+  visibleRecords().forEach(function(record){
+    var after=record.after||{},before=record.before||{};
+    var word=text(record.questionWord||after.questionWord||before.questionWord).toLowerCase();
+    var lang=text(record.language||after.language||before.language).toLowerCase();
+    var experience=text(record.experienceId||after.experienceId||before.experienceId);
+    if(!word||!LANGUAGES.includes(lang)||!experience)return;
+    var key=JSON.stringify([word,lang]),row=byKey.get(key);
+    if(!row){row={questionWord:word,language:lang,actions:0,results:0,contexts:[]};byKey.set(key,row);}
+    if(!row.contexts.includes(experience))row.contexts.push(experience);
+    if(record.kind==='patita-observed-result')row.results+=1;
+    else row.actions+=1;
+  });
+  return Array.from(byKey.values()).sort(function(a,b){
+    return a.questionWord.localeCompare(b.questionWord)||LANGUAGES.indexOf(a.language)-LANGUAGES.indexOf(b.language);
+  }).map(function(row){return {
+    questionWord:row.questionWord,language:row.language,actions:row.actions,
+    results:row.results,contexts:row.contexts.slice()
+  };});
+}
+function replaySummary(language){
+  var rows=projectVisible();
+  if(!rows.length)return '';
+  var labels={
+    en:{heading:'OBSERVED WORD PATH · RECENT RECORDS',context:'Experiences',actions:'actions',results:'results',limit:'Local excerpt (last 500 events); no assessment credit'},
+    es:{heading:'WORD PATH OBSERVADO · REGISTROS RECIENTES',context:'Experiencias',actions:'acciones',results:'resultados',limit:'Extracto local (últimos 500 eventos); sin crédito evaluativo'},
+    pt:{heading:'WORD PATH OBSERVADO · REGISTROS RECENTES',context:'Experiences',actions:'ações',results:'resultados',limit:'Trecho local (últimos 500 eventos); sem crédito avaliativo'}
+  }[language]||{heading:'OBSERVED WORD PATH',context:'Experiences',actions:'actions',results:'results',limit:'Local excerpt only'};
+  return '<section class="patita-replay-summary" data-observation-only="true" aria-label="'+escapeHtml(labels.heading)+'">'+
+    '<h5>'+escapeHtml(labels.heading)+'</h5>'+
+    '<div class="patita-replay-items">'+rows.map(function(row){
+      return '<p class="patita-replay-row" data-patita-qw="'+escapeHtml(row.questionWord)+
+        '" data-patita-language="'+escapeHtml(row.language)+'">'+
+        '<strong>'+escapeHtml(row.questionWord.toUpperCase()+' · '+row.language.toUpperCase())+'</strong> · '+
+        escapeHtml(row.actions)+' '+escapeHtml(labels.actions)+' · '+escapeHtml(row.results)+' '+escapeHtml(labels.results)+
+        ' · '+escapeHtml(labels.context)+': '+escapeHtml(row.contexts.join(', '))+'</p>';
+    }).join('')+'</div><small>'+escapeHtml(labels.limit)+'</small></section>';
+}
 // A control request is not necessarily an accepted result.
 // This classification describes UI interaction only; assessment results belong
 // exclusively to existing canonical evaluators.
@@ -168,6 +209,7 @@ function render(){
   panel.hidden=false;panel.dataset.observationOnly='true';
   panel.innerHTML='<h4>'+escapeHtml(labels.heading)+' · '+rows.length+'</h4>'+
     '<p>'+escapeHtml(labels.detail)+(learnerId()?'':' · '+escapeHtml(labels.anonymous))+'</p>'+
+    replaySummary(language)+
     '<ol>'+last.map(function(r){
       return '<li data-patita-kind="'+escapeHtml(r.kind)+'"><strong>'+escapeHtml(r.action)+'</strong> · '+
         escapeHtml(r.selected||'—')+' · '+escapeHtml(r.uiOutcome||'requested')+
@@ -186,26 +228,32 @@ function observe(event){
   // Defer the AFTER snapshot to the next task so the Explorer has updated UI state.
   // Observation only: no assessment/progression calls.
   root.setTimeout(function(){
-    var after=snapshot(),rows=read();
-    var prior=rows.length?rows[rows.length-1].sequence:0;
-    rows.push({
-      version:1,kind:'patita-interaction',sequence:(Number.isInteger(prior)?prior:0)+1,
+    var after=snapshot();
+    append({
+      version:1,kind:'patita-interaction',
       observedAt:new Date().toISOString(),sessionId:session,learnerId:id,
       action:intent.action,selected:intent.selected,before:before,after:after,
       uiOutcome:classify(intent.action,before,after),
       observationOnly:true,evidenceProduced:false,assessmentCredit:false,greenPass:false
     });
-    try{root.localStorage.setItem(KEY,JSON.stringify(rows.slice(-LIMIT)));}catch(_error){}
-    render();
   },0);
 }
 if(doc&&typeof doc.addEventListener==='function'){
   // Capture before handler dispatch so BEFORE is truly before QW/language changes.
   doc.addEventListener('click',observe,true);
   doc.addEventListener('DOMContentLoaded',render);
+  // Re-read only. No Assessment, Attempt, Evidence or persistence mutation.
+  if(typeof root.addEventListener==='function'){
+    root.addEventListener('pageshow',render);
+    root.addEventListener('storage',function(event){if(event.key===KEY)render();});
+  }
+  doc.addEventListener('toggle',function(event){
+    if(event.target&&event.target.id==='learningTrailWordPathModule'&&event.target.open)render();
+  },true);
 }
 root.SIYAYOPatitaInteractionTrail=Object.freeze({
   getVisibleRecords:function(){return visibleRecords().map(function(r){return JSON.parse(JSON.stringify(r));});},
+  projectVisible:function(){return projectVisible().map(function(r){return JSON.parse(JSON.stringify(r));});},
   refresh:render,
   recordOutcome:recordOutcome,
   storageKey:KEY
