@@ -1,0 +1,28 @@
+name: JAGUAR H14.16 FUNC-13 browser regression
+on:
+  push:
+    branches: [jaguar/h14-16-func13-browser-regressions]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  browser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-13-progressive-integration.js
+          node scripts/test-jaguar-h14-14-preview.js
+          node scripts/test-jaguar-h14-15-func13-unified.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-jaguar-h14-16-browser-regressions.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-16-browser-captures
+          path: artifacts/h14-16/
+          if-no-files-found: ignore
