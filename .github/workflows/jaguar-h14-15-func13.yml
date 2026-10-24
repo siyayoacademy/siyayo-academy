@@ -1,0 +1,20 @@
+name: JAGUAR H14.15 FUNC-13 governance and single policy
+on:
+  push:
+    branches: [jaguar/h14-15-func13-unified-governance]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  unified-policy-and-preservation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-12-integration-temporal.js
+          node scripts/test-jaguar-h14-13-progressive-integration.js
+          node scripts/test-jaguar-h14-14-preview.js
+          node scripts/test-jaguar-h14-15-func13-unified.js
+          node scripts/test-s3-why-canonical-green-cycle.js
