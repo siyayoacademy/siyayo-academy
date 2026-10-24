@@ -1,0 +1,20 @@
+name: JAGUAR H14.18 FUNC-13 Function Window prototype
+on:
+  push:
+    branches: [jaguar/h14-18-func13-context-snapshot-function-window]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  contract-and-window:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check scripts/jaguar-h14-18-function-window-contract.js
+          node scripts/test-jaguar-h14-18-function-window.js
+          node scripts/test-jaguar-h14-17-func13-fine-study.js
+          node scripts/test-jaguar-h14-15-func13-unified.js
+          node scripts/test-s3-why-canonical-green-cycle.js
