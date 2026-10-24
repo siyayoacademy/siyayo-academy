@@ -1,0 +1,23 @@
+name: JAGUAR H14.29 semantic risk audit
+on:
+  push:
+    branches: [jaguar/h14-29-why-false-positive-negative-ambiguity]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  risk-matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-29-semantic-risk-audit.js
+          node scripts/test-jaguar-h14-28-semantic-contrast-bank.js
+          node scripts/test-jaguar-h14-27-why-semantic-rubric.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-29-semantic-risk-audit.js --json > h14-29-semantic-risks.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-29-semantic-risk-matrix
+          path: h14-29-semantic-risks.json
