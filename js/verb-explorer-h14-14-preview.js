@@ -1,7 +1,7 @@
 (function(root){'use strict';
 const FUNCTIONS=['quality','state','movement','action','existence'];
 function project(experience,cell,language,perspective,tense,mode){
- const core=root.SIYAYOH1413SpecializedMirror;
+ const core=root.SIYAYOH1413SpecializedMirror||(typeof module==='object'&&module.exports?require('../scripts/jaguar-h14-13-specialized-mirror-reference.js'):null);
  if(!core||typeof core.projectSingle!=='function')return null;
  const result=core.projectSingle({experience,cell,selection:{experienceId:experience?.id,functionId:cell?.functionId,language,perspective,tense,mode,period:'none'}});
  return result?Object.freeze({source:result.canonicalPerspectiveExamples,example:result.functionSourceExample,
