@@ -1,0 +1,20 @@
+{
+  "id": "H14.27-MODULE-REGISTRY-CROSSCHECK",
+  "sourceBranch": "jaguar/module-governance-registry-20261024",
+  "sourceCommit": "719f259d78ca27d444bdfacecd3ccd2091818980",
+  "sourceRegistryBlob": "0ee10834cc168c462f96bc569953591bb6f8c51c",
+  "sourceRegistryDocumentBlob": "605f798439467771b4204858fcf78d5e560ace07",
+  "status": "CROSS_BRANCH_REFERENCE_ONLY_NOT_COPIED",
+  "auditedBaseline": "H14.19",
+  "governance": {
+    "HEAD_04": "Syntactic dependency; not independent WHY causal-function proof",
+    "EVAL_08": "Authorized assessment probe and canonical evidence authority",
+    "LIVE_07": "Corpus and examples, no evaluation credit",
+    "SPEECH_A": "Audio of authored text, not Attempt",
+    "PATITA_12": "Observational only",
+    "GEAR_06": "Pedagogical axes; PERIOD backlog separate",
+    "FUNC_13": "Preview hidden in normal Explorer"
+  },
+  "divergence": "Registry source snapshot H14.19 predates H14.27 research; version difference only, no explicit governance conflict",
+  "authorization": false
+}

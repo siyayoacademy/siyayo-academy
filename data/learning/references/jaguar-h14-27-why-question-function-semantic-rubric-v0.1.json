@@ -1,0 +1,188 @@
+{
+  "id": "JAGUAR-H14.27-WHY-QUESTION-FUNCTION-SEMANTIC-RUBRIC",
+  "version": "0.1.0",
+  "status": "NEW_AUTHORING_PROPOSAL_NOT_AUTHORIZED",
+  "provenance": {
+    "whySkill": "data/learning/skills/why.json",
+    "sourcePlans": "JAGUAR-H14.26",
+    "sourceQuestions": "data/learning/experience-seeds.json → thinkingMind[why].presentationGrounding/questionOverride",
+    "sourceReview": "JAGUAR-H14.25",
+    "newWording": "The instructions and teacher paraphrases below are NEW DRAFT AUTHORING, not existing canonical content",
+    "registry": {
+      "branch": "jaguar/module-governance-registry-20261024",
+      "jsonPath": "docs/siyayo-module-registry.json",
+      "gitBlobSha": "0ee10834cc168c462f96bc569953591bb6f8c51c",
+      "sourceBaselineCommit": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+      "snapshotOutdatedRelativeToH1426": true
+    }
+  },
+  "ownership": {
+    "HEAD04": "Syntactic head/dependency probe is not independent proof of WHY causal question function",
+    "EVAL08": "Only authorized contract+session+attempt+scope may ever mint canonical Evidence",
+    "LIVE07": "Speech/corpus models are presentation, not assessed responses",
+    "PATITA12": "Observational ledger; never assessment authority",
+    "GEAR06": "LANGUAGE/TENSE/MODE; PERIOD missing and cannot be fabricated",
+    "FUNC13": "Hidden reference module; unchanged",
+    "TRAIL10": "Read-only authorized evidence; no progress from this proposal"
+  },
+  "tasks": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "why",
+      "intent": "identify type of information requested, not answer WHY",
+      "localized": {
+        "en": {
+          "instruction": "Read this question. What information does the speaker want to find out? Explain in your own words without answering the question itself.",
+          "teacherOnly": {
+            "illustrativeFunctionalParaphrase": "They want to know the reason someone prefers the fresh cheese.",
+            "meaningAnchor": "cause of the cheese preference",
+            "nonLiteralReasonVariant": "Because its mild flavor goes well with the salmon.",
+            "commonConfusion": "Describing the cheese instead of explaining what the question asks."
+          }
+        },
+        "es": {
+          "instruction": "Lee esta pregunta. ¿Qué información quiere conocer la persona que pregunta? Explícalo con tus palabras sin contestar la pregunta en sí.",
+          "teacherOnly": {
+            "illustrativeFunctionalParaphrase": "Quiere saber el motivo por el cual alguien prefiere el queso fresco.",
+            "meaningAnchor": "causa de la preferencia por el queso",
+            "nonLiteralReasonVariant": "Porque su sabor suave va bien con el salmón.",
+            "commonConfusion": "Describir el queso sin identificar qué información solicita la pregunta."
+          }
+        },
+        "pt": {
+          "instruction": "Leia esta pergunta. Que informação a pessoa quer descobrir? Explique com suas palavras, sem responder à própria pergunta.",
+          "teacherOnly": {
+            "illustrativeFunctionalParaphrase": "Quer saber o motivo de alguém preferir o queijo fresco.",
+            "meaningAnchor": "razão da preferência pelo queijo",
+            "nonLiteralReasonVariant": "Porque o sabor suave combina com o salmão.",
+            "commonConfusion": "Apenas descrever o queijo, sem identificar a intenção da pergunta."
+          }
+        }
+      }
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "why",
+      "intent": "identify contextual causal question function, not recite the model",
+      "localized": {
+        "en": {
+          "instruction": "Read this question. What is the person asking to understand? Explain in your own words without giving the dinner's actual answer.",
+          "teacherOnly": {
+            "illustrativeFunctionalParaphrase": "They want to learn why the people are preparing dinner together.",
+            "meaningAnchor": "cause of preparing the dinner together",
+            "nonLiteralReasonVariant": "Because cooking together gives us a chance to share the moment.",
+            "commonConfusion": "Describing how the food is cooked rather than what WHY asks."
+          }
+        },
+        "es": {
+          "instruction": "Lee esta pregunta. ¿Qué quiere comprender quien pregunta? Explícalo con tus palabras sin dar la respuesta concreta sobre la cena.",
+          "teacherOnly": {
+            "illustrativeFunctionalParaphrase": "Quiere entender por qué están preparando la cena juntos.",
+            "meaningAnchor": "razón para preparar la cena en compañía",
+            "nonLiteralReasonVariant": "Porque cocinar juntos nos permite compartir ese momento.",
+            "commonConfusion": "Explicar cómo se prepara la cena en vez de reconocer la razón que se solicita."
+          }
+        },
+        "pt": {
+          "instruction": "Leia esta pergunta. O que a pessoa está tentando compreender? Explique com suas palavras, sem dar a resposta concreta sobre o jantar.",
+          "teacherOnly": {
+            "illustrativeFunctionalParaphrase": "Quer compreender por que estão preparando o jantar juntos.",
+            "meaningAnchor": "motivo de preparar o jantar em conjunto",
+            "nonLiteralReasonVariant": "Porque cozinhar juntos nos permite compartilhar esse momento.",
+            "commonConfusion": "Explicar como o jantar é preparado, em vez de reconhecer a razão solicitada."
+          }
+        }
+      }
+    }
+  ],
+  "rubrics": {
+    "status": "TEACHER_REVIEW_GUIDANCE_ONLY_NO_AUTOMATIC_FREE_TEXT_GRADING",
+    "questionFunction": {
+      "observes": [
+        "causal_information_intent",
+        "grounded_referent",
+        "differentiate_reason_from_manner"
+      ],
+      "bands": {
+        "0": "Does not identify the question's function or confuses it with manner/place/object.",
+        "1": "Identifies a question but misses the causal information requested.",
+        "2": "Recognizes the topic or preference/action but causal purpose remains ambiguous.",
+        "3": "Identifies a reason being sought; referent is generic or partly specified.",
+        "4": "Clearly explains that WHY asks for the reason behind this Experience-specific preference/action in own words."
+      },
+      "variantsMayPassWithoutExactWording": true,
+      "dependencyHeadProbeAloneIsInsufficient": true
+    },
+    "contextualReason": {
+      "observes": [
+        "responsive_causal_explanation",
+        "scenario_consistency",
+        "referent_grounding",
+        "independence"
+      ],
+      "bands": {
+        "0": "No pertinent explanation, or contradicted contextual premise.",
+        "1": "Generic assertion or off-topic reason with no useful contextual support.",
+        "2": "Some plausible cause, but important contextual relation is unclear or incomplete.",
+        "3": "Coherent, relevant cause grounded in scene; slight ambiguity remains.",
+        "4": "Independent, context-specific, coherent and plausible causal explanation in own words; not necessarily the model's phrasing."
+      },
+      "exactStringMatching": false,
+      "alternateGroundedReasonsAllowedAfterHumanReview": true,
+      "contextMaySupportMoreThanOneValidReason": true,
+      "noInventedFacts": true,
+      "onlyPresentAffirmativeSourcesCurrentlyConfirmed": true
+    },
+    "expressionQuality": {
+      "dimension": "INDEPENDENT_FROM_CONTEXTUAL_0_OF_4",
+      "categories": [
+        "CLEAR",
+        "UNDERSTANDABLE_WITH_LANGUAGE_ERRORS",
+        "MEANING_UNCLEAR"
+      ],
+      "rule": "Assess meaning and grammatical clarity separately. Do not automatically reject semantically coherent paraphrases for minor spelling/inflection errors. If meaning is unclear, request review, never infer correctness.",
+      "languages": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "spanishAgreement": "Review reference la cena → prepararla, without imposing that exact pronoun in learner's independent answer",
+      "portugueseAgreement": "Review reference o jantar → prepará-lo, without imposing that exact pronoun in learner's independent answer"
+    },
+    "progress": {
+      "dimension": "CANONICAL_0_OF_3_SEPARATE",
+      "source": "Existing authorized attempt/evidence and Pass Contract only",
+      "noProgressFromThisRubric": true,
+      "localAndTransferIndependent": true,
+      "explicitScope": [
+        "learnerId",
+        "skill",
+        "language",
+        "originExperienceId"
+      ],
+      "explicitIntent": [
+        "start",
+        "resume",
+        "transfer"
+      ],
+      "occurrenceIdRequired": true,
+      "neverReuseOccurrenceAcrossTwoOrigins": true,
+      "transferMayPrecedeLocalWithoutForcedRoute": true
+    }
+  },
+  "blockers": [
+    "Teacher approval of new question-function prompts in all three languages",
+    "Teacher approval of semantic ranges and sample paraphrases",
+    "Independent learner free-response capture design",
+    "Observed attempt, origin scope and occurrence identity under separately authorized contract",
+    "Browser UX and accessibility test before any formal adoption",
+    "No PAST/FUTURE/PERIOD response inference from present/affirmative sources"
+  ],
+  "canMintEvidence": false,
+  "canAwardGreenPass": false,
+  "createAssessmentTarget": false,
+  "touchesExplorer": false,
+  "touchesMain": false,
+  "touchesPR3": false,
+  "touchesProduction": false
+}
