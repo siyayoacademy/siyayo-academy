@@ -1,0 +1,115 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-3-why-s1-context-eligibility",
+  "status": "reference-only",
+  "provenance": "SIYAYO_ADAPTATION",
+  "originCheckpoint": "jaguar/patita-h14-2-assessment-opportunity-map",
+  "sourcePaths": [
+    "data/learning/experience-seeds.json",
+    "data/learning/skills/why.json",
+    "data/learning/references/master-vip-source-fidelity-v0.1.json",
+    "data/learning/references/master-vip-existence-v0.1.json"
+  ],
+  "focus": {
+    "experienceId": "shopping-for-dinner",
+    "scene": "S1 Shopping",
+    "questionWord": "why",
+    "intention": "reason",
+    "questionTextSource": "thinkingMind.why.question",
+    "dialogueSource": "thinkingMind.why.dialogueForms",
+    "presentationSource": "thinkingMind.why.presentationGrounding"
+  },
+  "sourceInventory": {
+    "tenses": [
+      "present",
+      "past",
+      "future"
+    ],
+    "modes": [
+      "affirmative",
+      "negative",
+      "interrogative"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "dialogueFormCount": 9,
+    "presentationReasonId": "pairs-with-salmon",
+    "presentationAlternativeCount": 2,
+    "hasDependencyFocus": true,
+    "hasDependencyHeadProbe": true,
+    "hasAssessmentTarget": false
+  },
+  "contextualJudgments": [
+    {
+      "id": "referent",
+      "status": "NEEDS_SCENE_GROUNDING",
+      "finding": "this one in general QW must resolve to fresh cheese as an explicit active S1 scene referent; no prior WHICH assessment is necessary",
+      "requirement": "Resolve question/answer referent from authored scene or provide a clear localized question override"
+    },
+    {
+      "id": "dialogue-interrogatives",
+      "status": "GRAMMAR_EXERCISE_ONLY",
+      "finding": "Interrogative dialogueForms responses are confirmation questions, not direct causal answers to WHY",
+      "requirement": "Do not credit a reformulated yes/no question as reason-answer"
+    },
+    {
+      "id": "tense-semantic-fit",
+      "status": "REQUIRES_CASE_REVIEW",
+      "finding": "PAST and FUTURE language forms exist, but cannot inherit evidence authority from present scene",
+      "requirement": "Check PERIOD, mode, scene temporal compatibility, and EN/ES/PT meaning separately"
+    },
+    {
+      "id": "distractor",
+      "status": "REQUIRES_CONTRAST_VALIDATION",
+      "finding": "shopping-finished is a grammatical causal phrase but not a grounded explanation for preferring fresh cheese",
+      "requirement": "Evaluate contextual adequacy apart from well-formed language and apart from Green Pass"
+    },
+    {
+      "id": "transfer",
+      "status": "CONTRACT_AMENDMENT_REQUIRED",
+      "finding": "S3 to S4 WHY is the current authorized local/transfer contract; S1 cannot become an entry or evidence provider just by being visited",
+      "requirement": "Human-authorized independent scope plus validated distinct transfer scene and explicit learner attempt are prerequisites"
+    }
+  ],
+  "s2Comparator": {
+    "experienceId": "preparing-dinner",
+    "questionWord": "why",
+    "sourceKind": "presentationGrounding",
+    "hasStructuredDialogueForms": false,
+    "presentationReasonId": "sharing-preparation",
+    "currentAuthority": false,
+    "notAutomaticallyTransferForS1": true
+  },
+  "existingContract": {
+    "skill": "why.use.contextual-reason",
+    "authorizedOriginExperienceId": "having-dinner",
+    "authorizedTransferExperienceId": "after-dinner-conversation",
+    "requires": [
+      "question-function",
+      "reason-answer(local)",
+      "reason-answer(transfer)"
+    ],
+    "unchanged": true
+  },
+  "masterVip": {
+    "originalSource": "STRUCTURE- KIND OF WORDS.docx",
+    "tenKindsOfWords": true,
+    "existencePattern": "THERE + TO BE",
+    "existencePages": [
+      100,
+      101,
+      102,
+      104
+    ],
+    "relationship": "EXISTENCE may furnish independent contextual scenes, not WHY evidence and not a Question Word itself",
+    "citationPolicy": "Reference-only index; do not republish private original"
+  },
+  "nextGate": "HUMAN_CONTEXT_AND_CONTRACT_REVIEW",
+  "assessmentAuthority": false,
+  "assessmentEvidence": false,
+  "greenPass": false,
+  "executableChanges": false
+}
