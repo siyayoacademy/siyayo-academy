@@ -1,0 +1,576 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-2-experience-qw-opportunities",
+  "status": "reference-only",
+  "source": "data/learning/experience-seeds.json",
+  "primaryPedagogy": "Master VIP — The Ten Kinds of Words",
+  "purpose": "Differentiate authored question, authored contextual answer, authorized assessment entry, and resume-only transfer for every Experience × Question Word; no inferred authorizations",
+  "audit": {
+    "experienceCount": 4,
+    "questionSlots": 21,
+    "entrySlots": 5,
+    "resumeOnlySlots": 2,
+    "contextResponseSlots": 10,
+    "questionOrPresentationOnlySlots": 11
+  },
+  "rules": [
+    "Free navigation does not confer assessment authority",
+    "An authored question is not an authored response",
+    "A contextual response is not an approved assessment entry",
+    "An assessmentResumeTarget resumes only the matching existing canonical scope",
+    "No evidence or Green Pass originates from this reference map",
+    "Prioritize scene-grounded authoring, trilingual correctness and Master VIP provenance before new QWs",
+    "No fixed route should be introduced merely to present available questions"
+  ],
+  "assessmentAuthority": false,
+  "assessmentEvidence": false,
+  "greenPass": false,
+  "slots": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "what",
+      "questionText": {
+        "en": "What are we going to cook?",
+        "es": "¿Qué vamos a cocinar?",
+        "pt": "O que vamos cozinhar?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": "what.use.object-question",
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": true,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "DECLARED_ASSESSMENT_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "where",
+      "questionText": {
+        "en": "Where can we find the salmon?",
+        "es": "¿Dónde podemos encontrar el salmón?",
+        "pt": "Onde podemos encontrar o salmão?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": "where.use.location-question",
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": true,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "DECLARED_ASSESSMENT_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "how-much",
+      "questionText": {
+        "en": "How much salmon do we need?",
+        "es": "¿Cuánto salmón necesitamos?",
+        "pt": "Quanto salmão precisamos?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "which",
+      "questionText": {
+        "en": "Which cheese should we choose?",
+        "es": "¿Cuál queso deberíamos elegir?",
+        "pt": "Qual queijo devemos escolher?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": "which.use.determiner",
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": true,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "DECLARED_ASSESSMENT_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "why",
+      "questionText": {
+        "en": "Why do you prefer this one?",
+        "es": "¿Por qué prefieres este?",
+        "pt": "Por que você prefere este?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "CONTEXT_AUTHORED_NO_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "questionWord": "who",
+      "questionText": {
+        "en": "Who is coming to dinner?",
+        "es": "¿Quién viene a cenar?",
+        "pt": "Quem vem para o jantar?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "what",
+      "questionText": {
+        "en": "What are we preparing first?",
+        "es": "¿Qué estamos preparando primero?",
+        "pt": "O que estamos preparando primeiro?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": "what.use.object-question",
+        "resumeTarget": null,
+        "entryDeclarations": 1,
+        "authorizedNewContract": true,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "DECLARED_ASSESSMENT_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "where",
+      "questionText": {
+        "en": "Where should we put the vegetables?",
+        "es": "¿Dónde debemos poner las verduras?",
+        "pt": "Onde devemos colocar os legumes?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": "where.use.location-question",
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": true
+      },
+      "classification": "DECLARED_RESUME_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "when",
+      "questionText": {
+        "en": "When should we cook the salmon?",
+        "es": "¿Cuándo debemos cocinar el salmón?",
+        "pt": "Quando devemos cozinhar o salmão?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "how",
+      "questionText": {
+        "en": "How are we going to prepare the rice?",
+        "es": "¿Cómo vamos a preparar el arroz?",
+        "pt": "Como vamos preparar o arroz?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "which",
+      "questionText": {
+        "en": "Which carrots should we cook first?",
+        "es": "¿Cuáles zanahorias deberíamos cocinar primero?",
+        "pt": "Quais cenouras devemos cozinhar primeiro?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": "which.use.determiner",
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": true
+      },
+      "classification": "DECLARED_RESUME_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "why",
+      "questionText": {
+        "en": "Why are we preparing this dinner together?",
+        "es": "¿Por qué estamos preparando esta cena juntos?",
+        "pt": "Por que estamos preparando este jantar juntos?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": true,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "questionWord": "who",
+      "questionText": {
+        "en": "Who is preparing the salad?",
+        "es": "¿Quién está preparando la ensalada?",
+        "pt": "Quem está preparando a salada?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "having-dinner",
+      "questionWord": "what",
+      "questionText": {
+        "en": "What are we eating first?",
+        "es": "¿Qué estamos comiendo primero?",
+        "pt": "O que estamos comendo primeiro?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "CONTEXT_AUTHORED_NO_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "having-dinner",
+      "questionWord": "who",
+      "questionText": {
+        "en": "Who would like some salmon?",
+        "es": "¿Quién quiere un poco de salmón?",
+        "pt": "Quem gostaria de um pouco de salmão?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "having-dinner",
+      "questionWord": "how",
+      "questionText": {
+        "en": "How does the dinner taste?",
+        "es": "¿Cómo está la cena?",
+        "pt": "Como está o jantar?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "having-dinner",
+      "questionWord": "why",
+      "questionText": {
+        "en": "Why is this dinner special?",
+        "es": "¿Por qué esta cena es especial?",
+        "pt": "Por que este jantar é especial?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": "why.use.contextual-reason",
+        "resumeTarget": null,
+        "entryDeclarations": 4,
+        "authorizedNewContract": true,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "DECLARED_ASSESSMENT_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "questionWord": "what",
+      "questionText": {
+        "en": "What would you like to talk about?",
+        "es": "¿De qué te gustaría hablar?",
+        "pt": "Sobre o que você gostaria de conversar?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "questionWord": "who",
+      "questionText": {
+        "en": "Who would you like to listen to?",
+        "es": "¿A quién te gustaría escuchar?",
+        "pt": "Quem você gostaria de escutar?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "questionWord": "why",
+      "questionText": {
+        "en": "Why do you enjoy this conversation?",
+        "es": "¿Por qué disfrutas esta conversación?",
+        "pt": "Por que você gosta desta conversa?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": true,
+        "presentationOnly": false,
+        "dependencyFocus": true,
+        "headProbe": true
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "CONTEXT_AUTHORED_NO_ENTRY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "questionWord": "how",
+      "questionText": {
+        "en": "How can we keep the conversation pleasant?",
+        "es": "¿Cómo podemos mantener agradable la conversación?",
+        "pt": "Como podemos manter a conversa agradável?"
+      },
+      "sourceCapabilities": {
+        "questionAuthored": true,
+        "contextualResponseAuthored": false,
+        "presentationOnly": false,
+        "dependencyFocus": false,
+        "headProbe": false
+      },
+      "assessment": {
+        "entryTarget": null,
+        "resumeTarget": null,
+        "entryDeclarations": 0,
+        "authorizedNewContract": false,
+        "transferRequiresExistingContract": false
+      },
+      "classification": "QUESTION_OR_PRESENTATION_ONLY",
+      "provenance": "CURRENT_EXPERIENCE_SEEDS",
+      "candidateForNewAssessment": "PENDING_HUMAN_CONTEXT_AND_CONTRACT_REVIEW"
+    }
+  ]
+}
