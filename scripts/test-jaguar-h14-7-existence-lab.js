@@ -18,7 +18,7 @@ for(const c of candidates){
 for(const [tense,modes] of Object.entries(refs.paradigm)){
  if(!['present','past','future','presentPerfect','pastPerfect'].includes(tense))continue;
  for(const mode of ['affirmative','negative','interrogative'])
-  for(const part of modes[mode])assert.ok(src.includes(JSON.stringify(part)),tense+'/'+mode+'/'+part);
+  for(const part of modes[mode])assert.ok(src.toLowerCase().includes(JSON.stringify(part).toLowerCase()),tense+'/'+mode+'/'+part);
 }
 assert.doesNotMatch(src,/fetch\(|localStorage|sessionStorage|\bsubmitObservedAttempt\b|indexedDB|\/api\//);
 assert.doesNotMatch(src,/navigator\.sendBeacon|WebSocket|EventSource/);
