@@ -1,0 +1,29 @@
+name: JAGUAR H14.20 Corpus Speech Card layout and PERIOD backlog
+on:
+  push:
+    branches: [jaguar/h14-20-func13-corpus-speech-card-layout]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  corpus-card-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-20-corpus-speech-card.js
+          node scripts/test-jaguar-h14-19-speech-layout.js
+          node scripts/test-jaguar-h14-18-function-window.js
+          node scripts/test-jaguar-h14-15-func13-unified.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-jaguar-h14-20-browser.cjs
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-20-speech-card-visual-captures
+          path: artifacts/h14-20/
+          if-no-files-found: ignore

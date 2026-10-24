@@ -1,0 +1,87 @@
+{
+  "id": "FUNC-13",
+  "elo": "H14.20",
+  "module": "Master VIP Function Lens",
+  "component": "Function Window",
+  "status": "DESIGN_LAB_ONLY_AWAITING_VISUAL_HOMOLOGATION",
+  "reference": "user-supplied screenshot — TIPO A Corpus Speech Card",
+  "hierarchy": [
+    {
+      "row": 1,
+      "id": "func13Speak",
+      "type": "CORPUS_SPEECH_CARD_TYPE_A",
+      "interaction": "ENTIRE_CARD_CLICK_PLAYS_DISPLAYED_TEXT",
+      "layout": "GOLD_SVG_SPEAKER_LEFT; EXACT_SENTENCE_CENTERED_IN_WHOLE_CARD"
+    },
+    {
+      "row": 2,
+      "id": "func13Functions",
+      "type": "FIVE_FUNCTION_SELECTOR",
+      "layout": "ONE_HORIZONTAL_SCROLLABLE_STRIP",
+      "functions": [
+        "QUALITY",
+        "STATE",
+        "MOVEMENT",
+        "ACTION",
+        "EXISTENCE"
+      ]
+    },
+    {
+      "row": 3,
+      "id": "func13Study",
+      "type": "THREE_PEDAGOGICAL_REFERENCES",
+      "sections": [
+        "FUNÇÃO — Master VIP",
+        "CONTEXTO — Experience × Perspective",
+        "ESTUDO FINO — Coerência da relação"
+      ],
+      "desktop": "THREE_COLUMNS",
+      "portrait": "STACKED_THREE_CARDS"
+    }
+  ],
+  "speech": {
+    "browser": "speechSynthesis",
+    "svg": "gold inline SVG matching Explorer Corpus Speech Card",
+    "source": "H14.7 adaptation after H14.13/H14.18 checks",
+    "entireCardAccessibleButton": true,
+    "localeMap": {
+      "en": "en-US",
+      "es": "es-ES",
+      "pt": "pt-BR"
+    },
+    "disableForNotAuthored": true,
+    "disableIfUnavailable": true,
+    "assessment": false,
+    "voiceQualityTest": "MANUAL_DEVICE_TEST_REQUIRED"
+  },
+  "periodBacklog": {
+    "id": "GEAR-06-PERIOD-GAP",
+    "owner": "GEAR-06 · Gear Stack",
+    "priority": "GENERAL_ARCHITECTURAL_REFINEMENT",
+    "state": "EVIDENCED_NOT_IMPLEMENTED",
+    "source": "H14.12 temporal gates + H14.18 context snapshot",
+    "workRequired": [
+      "define pedagogical meaning of PERIOD relative to TENSE",
+      "review contextual temporal premises and duration",
+      "plan tri-language grammatical representation",
+      "define controls and independent ownership in Gear Stack",
+      "verify grammar locks and no fabricated examples"
+    ],
+    "noPeriodSelectorInFUNC13": true
+  },
+  "changes": {
+    "lab": "labs/func13-function-window-h14-20/",
+    "priorLabPreserved": true,
+    "mainUntouched": true,
+    "pr3Untouched": true,
+    "explorerHtmlUntouched": true,
+    "productionUntouched": true,
+    "patitaUntouched": true,
+    "learningTrailUntouched": true
+  },
+  "visibility": {
+    "normalExplorer": "HIDDEN",
+    "finalPlacement": "UNDECIDED",
+    "visualHomologation": "PENDING"
+  }
+}
