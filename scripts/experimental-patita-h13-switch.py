@@ -16,7 +16,7 @@ with sync_playwright() as p:
    page.locator('#learnerIdentityInput').fill('H13-ALPHA-'+lang)
    stage='confirm-alpha'
    page.locator('#learnerIdentityConfirm').click()
-   page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact' && window.SIYAYOVerbExplorerLearnerIdentitySource?.getId()==='H13-ALPHA-'+document.querySelector('[data-experience-language].active')?.dataset.experienceLanguage)",timeout=15000)
+   page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact' && window.SIYAYOVerbExplorerLearnerIdentitySource?.getId()==='H13-ALPHA-'+document.querySelector('[data-experience-language].active')?.dataset.experienceLanguage",timeout=15000)
    page.locator('#questionGear [data-question-index="3"]').click()
    page.locator('#choiceOptions [data-choice-select="fresh-mild-cheese"]').click()
    page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.projectVisible().some(r=>r.questionWord==='which'&&r.results===1)")
