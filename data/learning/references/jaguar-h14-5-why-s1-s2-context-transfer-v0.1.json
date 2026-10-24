@@ -1,0 +1,106 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-5-why-s1-s2-context-transfer",
+  "status": "REFERENCE_ONLY_PENDING_HUMAN_HOMOLOGATION",
+  "provenance": "SIYAYO_ADAPTATION",
+  "priorCheckpoints": [
+    "JAGUAR-H14.2",
+    "JAGUAR-H14.3",
+    "JAGUAR-H14.4"
+  ],
+  "canonicalSource": "data/learning/experience-seeds.json",
+  "masterVipSource": {
+    "original": "STRUCTURE- KIND OF WORDS.docx",
+    "verification": "ChatGPT Library original checked; WHY = reason, HOW = manner",
+    "canonicalIndex": "data/learning/references/master-vip-source-fidelity-v0.1.json",
+    "separateExistenceReference": "data/learning/references/master-vip-existence-v0.1.json",
+    "existenceFunction": "THERE + TO BE",
+    "effectOnWhyEvaluation": "none"
+  },
+  "scenario": {
+    "originExperienceId": "shopping-for-dinner",
+    "targetExperienceId": "preparing-dinner",
+    "grammarTarget": "WHY / POR QUÉ / POR QUE",
+    "tense": "present",
+    "mode": "affirmative",
+    "contractSkill": "why.use.contextual-reason",
+    "sourceGrounding": "presentationGrounding",
+    "explicitQuestionOverrideOnOrigin": true,
+    "skipPriorWhichContract": true,
+    "skipPriorHowMenu": true
+  },
+  "contexts": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "scene": "supermarket",
+      "semanticQuestionRole": "reason-for-ingredient-preference",
+      "acceptedReasonId": "pairs-with-salmon",
+      "distractorId": "shopping-finished",
+      "source": "thinkingMind[why].presentationGrounding",
+      "status": "EXPLORATORY_CONTEXT_AUTHORED",
+      "authority": false
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "scene": "home-kitchen",
+      "semanticQuestionRole": "reason-for-shared-preparation",
+      "acceptedReasonId": "sharing-preparation",
+      "distractorId": "still-shopping",
+      "source": "thinkingMind[why].presentationGrounding",
+      "status": "EXPLORATORY_CONTEXT_AUTHORED",
+      "authority": false
+    }
+  ],
+  "trilingualReview": {
+    "en": {
+      "questionFunction": "WHY asks for reason, not manner",
+      "originQuestion": "Why do you prefer the fresh cheese?",
+      "originReason": "Because the fresh, mild cheese pairs well with the salmon.",
+      "transferQuestion": "Why are we preparing this dinner together?",
+      "transferReason": "Because preparing it together lets us share the experience.",
+      "notes": "Fresh cheese referent made explicit; reason shifts from food pairing to shared activity."
+    },
+    "es": {
+      "questionFunction": "POR QUÉ pide la razón, no el modo",
+      "originQuestion": "¿Por qué prefieres el queso fresco?",
+      "originReason": "Porque el queso fresco y suave combina bien con el salmón.",
+      "transferQuestion": "¿Por qué estamos preparando esta cena juntos?",
+      "transferReason": "Porque prepararla juntos nos permite compartir la experiencia.",
+      "notes": "'Prepararla' retoma 'la cena' (feminino); contraste de justificativas."
+    },
+    "pt": {
+      "questionFunction": "POR QUE solicita a razão, não o modo",
+      "originQuestion": "Por que você prefere o queijo fresco?",
+      "originReason": "Porque o queijo fresco e suave combina bem com o salmão.",
+      "transferQuestion": "Por que estamos preparando este jantar juntos?",
+      "transferReason": "Porque prepará-lo juntos nos permite compartilhar essa experiência.",
+      "notes": "'Prepará-lo' retoma 'o jantar' (masculino); a mudança de razão não depende de avaliar WHICH."
+    }
+  },
+  "judgment": {
+    "semanticDistinction": "Ingredient-preference and collaborative-preparation are two distinguishable reasons in separate scenes; candidate for testing transfer of causal question use, NOT automatically proof of transfer.",
+    "limitations": [
+      "Difference of IDs or scene labels is not proof of acquired skill",
+      "Two visible alternatives yield chance-performance risk; design independent response evidence before scoring",
+      "A learner hearing or selecting exploration LINES cannot mint evidence",
+      "No PAST/FUTURE or PERIOD evidence is authorized from present-only presentation"
+    ],
+    "nextGate": "Approve response task for each context, distractors, independent transfer requirements, multilingual and human review before contract v2"
+  },
+  "outputPolicy": {
+    "artifact": "read-only-authoring-reference",
+    "canGenerateAttempt": false,
+    "canGenerateEvidence": false,
+    "canAwardGreenPass": false,
+    "canActivateContract": false,
+    "assessmentAuthority": false
+  },
+  "integrity": {
+    "existingS3S4ContractUntouched": true,
+    "executablesUnchanged": true,
+    "mainUntouched": true,
+    "pr3Untouched": true,
+    "productionUntouched": true,
+    "workerD1RemoteUntouched": true
+  }
+}

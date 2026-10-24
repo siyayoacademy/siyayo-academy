@@ -1,0 +1,22 @@
+name: JAGUAR H14.5 WHY S1 S2 contextual transfer reference
+on:
+  push:
+    branches: [jaguar/patita-h14-5-why-s1-s2-context-transfer]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  reference-and-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check scripts/jaguar-h14-5-why-context-projection.js
+          node scripts/test-jaguar-h14-2-opportunity-map.js
+          node scripts/test-jaguar-h14-3-why-s1-eligibility.js
+          node scripts/test-jaguar-h14-4-why-independent-opportunities.js
+          node scripts/test-jaguar-h14-5-why-s1-s2-context-transfer.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-assessment-language-isolation.js
