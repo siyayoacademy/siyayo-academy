@@ -1,0 +1,113 @@
+{
+  "version": "0.2.0",
+  "id": "jaguar-h14-14-preservation-extension",
+  "status": "BRANCH_ONLY_CHECKPOINT",
+  "parent": "f4e8a4f08d043baf78fd42f194578265da00dcb2",
+  "ledger": "data/learning/references/jaguar-h14-12-integration-ledger-v0.1.json",
+  "newTrackedAssets": [
+    {
+      "name": "H14.12 workflow",
+      "path": ".github/workflows/jaguar-h14-12-integration-temporal.yml",
+      "gitBlobSha": "fa10ec39873f79a7b3b0fcae63a8601291b5ca7a"
+    },
+    {
+      "name": "H14.12 ledger",
+      "path": "data/learning/references/jaguar-h14-12-integration-ledger-v0.1.json",
+      "gitBlobSha": "e4cdd81fee2b0fa2a83d434eb296f18bb9ca8a8b"
+    },
+    {
+      "name": "H14.12 time",
+      "path": "data/learning/references/jaguar-h14-12-temporal-context-gate-v0.1.json",
+      "gitBlobSha": "7bf4aa3256f9b890805f9a07bf62af6cb4cf3cce"
+    },
+    {
+      "name": "H14.12 document",
+      "path": "docs/JAGUAR-H14-12-PRESERVATION-AND-TEMPORAL-GATES.md",
+      "gitBlobSha": "09c0988dd8b8371c836b2196f7fea529f1f82e92"
+    },
+    {
+      "name": "H14.12 laboratory",
+      "path": "labs/master-vip-time-gate-h14-12/index.html",
+      "gitBlobSha": "3563721551b0aefeded930f2f7c0185b607e6463"
+    },
+    {
+      "name": "H14.12 test",
+      "path": "scripts/test-jaguar-h14-12-integration-temporal.js",
+      "gitBlobSha": "c2318bfe79ac67325495eaabed30a72ba26b659b"
+    },
+    {
+      "name": "H14.13 workflow",
+      "path": ".github/workflows/jaguar-h14-13-progressive-integration.yml",
+      "gitBlobSha": "2d89f15ba85d36141f6787c98416660915e845bf"
+    },
+    {
+      "name": "H14.13 manifest",
+      "path": "data/learning/references/jaguar-h14-13-progressive-explorer-integration-v0.1.json",
+      "gitBlobSha": "e2d566110e12bb600055beaac463ac20cf0d36d1"
+    },
+    {
+      "name": "H14.13 document",
+      "path": "docs/JAGUAR-H14-13-PROGRESSIVE-EXPLORER-INTEGRATION.md",
+      "gitBlobSha": "bf99add0ca2e265a024122131aaa3f4e381e127b"
+    },
+    {
+      "name": "H14.13 bridge",
+      "path": "scripts/jaguar-h14-13-specialized-mirror-reference.js",
+      "gitBlobSha": "560b03298159678d44f61629fd3a3bc284103a9e"
+    },
+    {
+      "name": "H14.13 test",
+      "path": "scripts/test-jaguar-h14-13-progressive-integration.js",
+      "gitBlobSha": "bf8f1d12f4b29c8dfbfe2eb6738bba754d1d98fb"
+    }
+  ],
+  "counts": {
+    "previousLedger": 14,
+    "newTracked": 11,
+    "combined": 25
+  },
+  "h1414": {
+    "enabledOnlyBy": "h14_14=preview",
+    "defaultOff": true,
+    "html": "verb-explorer.html",
+    "js": "js/verb-explorer-h14-14-preview.js",
+    "css": "css/verb-explorer-h14-14-preview.css",
+    "location": "outside Experience grid and above Learning Trail",
+    "notIntegratedIntoMain": true
+  },
+  "security": {
+    "assessmentWrites": false,
+    "patitaWrites": false,
+    "canonicalEvidence": false,
+    "greenPass": false,
+    "production": false,
+    "masterOriginalReplaced": false
+  },
+  "readiness": [
+    {
+      "step": 1,
+      "name": "H14.14 isolated opt-in visual",
+      "status": "IMPLEMENTED_AWAITING_CI"
+    },
+    {
+      "step": 2,
+      "name": "Browser/portrait/landscape/audio and Learning Trail regression",
+      "status": "PENDING"
+    },
+    {
+      "step": 3,
+      "name": "Review divergent main changes and apply narrow integration patch",
+      "status": "PENDING"
+    },
+    {
+      "step": 4,
+      "name": "Human trilingual contextual and transfer homologation",
+      "status": "PENDING"
+    },
+    {
+      "step": 5,
+      "name": "Activation/merge/deploy only after explicit approval",
+      "status": "PENDING"
+    }
+  ]
+}
