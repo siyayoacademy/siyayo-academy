@@ -17,6 +17,7 @@ jobs:
           python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/site.log" 2>&1 &
           sleep 3
       - run: python scripts/experimental-patita-h13-diagnostic.py
+      - run: python scripts/experimental-patita-h13-switch.py
       - if: always()
         uses: actions/upload-artifact@v6
         with:
