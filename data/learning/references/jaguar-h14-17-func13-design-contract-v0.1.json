@@ -1,0 +1,110 @@
+{
+  "id": "FUNC-13",
+  "name": "Master VIP Function Lens",
+  "friendlyName": "Lente das Cinco Funções Verbais",
+  "version": "0.1.0",
+  "status": "DESIGN_ONLY_PENDING_HUMAN_HOMOLOGATION",
+  "feature": {
+    "defaultOff": true,
+    "previewOnly": "h14_14=preview",
+    "productionActivation": false,
+    "finalHtmlPlacement": "UNDECIDED",
+    "existingExperimentalId": "h14SpecializedPreview"
+  },
+  "roles": {
+    "howToDo": "H14.13 read-only source projection",
+    "howToShow": "H14.14 preview presenter; future layout undecided",
+    "howToCheck": "H14.9 semantics + H14.12 temporal + regression; human adjudication necessary",
+    "howToRecord": "NO NEW RECORD",
+    "howToSpeak": "NOT YET SUPPORTED IN FUNC-13"
+  },
+  "surfaces": [
+    {
+      "id": "FUNCTION",
+      "purpose": "Master VIP function, its original pattern and adapted candidate",
+      "source": "master-vip-verb-functions-v0.1.json + H14.7 matrix"
+    },
+    {
+      "id": "CONTEXT_PERSPECTIVE",
+      "purpose": "Experience source, four Perspectives and language-specific examples",
+      "source": "experience-seeds.json"
+    },
+    {
+      "id": "FINE_RELATION",
+      "purpose": "H14.9 relation review, reasons, fit and open authoring gaps",
+      "source": "jaguar-h14-9-semantic-80-review-v0.1.json"
+    }
+  ],
+  "axes": {
+    "functions": [
+      "quality",
+      "state",
+      "movement",
+      "action",
+      "existence"
+    ],
+    "experiences": [
+      "shopping-for-dinner",
+      "preparing-dinner",
+      "having-dinner",
+      "after-dinner-conversation"
+    ],
+    "perspectives": [
+      "describing",
+      "narrating",
+      "debating",
+      "concluding"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "independent": [
+      "tense",
+      "mode",
+      "period",
+      "wordType",
+      "questionWord"
+    ],
+    "qWRequired": false,
+    "perspectiveFallback": "DISPLAY_ONLY_DESCRIBING_NEVER_MUTATE_EXPLORER"
+  },
+  "pedagogical": {
+    "MasterVIP": "QUALITY/STATE TO BE; MOVEMENT TO BE+ING; ACTION lexical verb/TO DO; EXISTENCE THERE+TO BE",
+    "existenceNotQW": true,
+    "freeNavigation": true,
+    "authoredExampleNotAnswer": true,
+    "semanticFitNotAssessment": true,
+    "concludingNotGreenPass": true,
+    "reviewLabels": [
+      "SOURCE_CLOSE",
+      "BRIDGE",
+      "CONTRAST"
+    ],
+    "reviewNotHomologation": true
+  },
+  "visibility": {
+    "warning": "FUNC-13 REMAINS HIDDEN DURING NORMAL EXPLORER NAVIGATION",
+    "until": "architecture, contextual review, full visual QA and separate authorization",
+    "noRuntimeChangeThisElo": true
+  },
+  "guardrails": {
+    "noLearnerAttempt": true,
+    "noPatitaWrite": true,
+    "noEvidence": true,
+    "noPassContract": true,
+    "noGreenPass": true,
+    "noMainMerge": true,
+    "noPR3Modification": true,
+    "noProductionDeploy": true
+  },
+  "gates": [
+    "technical source preservation",
+    "semantic authoring S1–S4 EN/ES/PT",
+    "responsive visual design prototypes",
+    "manual portrait landscape desktop and speech",
+    "selective main reconciliation with full dependency audit",
+    "separate final placement/activation homologation"
+  ]
+}
