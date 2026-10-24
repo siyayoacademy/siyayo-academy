@@ -154,6 +154,7 @@ function mount(input){
         if(!attempt)return;
         var submitted=coordinator.submitObservedAttempt(attempt,event,button);
         if(!submitted)return;
+        root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'canonical-probe',phase:'assessment-attempt',selected:alternative.id,experienceId:spec.experienceId,language:spec.language,questionWord:'why',resultCode:evaluated.result,dimension:spec.dimension,mode:spec.mode,skill:spec.skill});
         if(typeof options.querySelectorAll==='function'){
           Array.prototype.forEach.call(options.querySelectorAll('.why-probe-option'),function(item){
             item.setAttribute('aria-pressed',String(item===button&&evaluated.result==='pass'));
