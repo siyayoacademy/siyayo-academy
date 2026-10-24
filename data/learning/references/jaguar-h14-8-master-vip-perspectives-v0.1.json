@@ -1,0 +1,328 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-8-master-vip-perspectives",
+  "status": "REFERENCE_ONLY_PENDING_CONTEXTUAL_HOMOLOGATION",
+  "source": [
+    "STRUCTURE- KIND OF WORDS.docx (original not republished)",
+    "data/learning/experience-seeds.json",
+    "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json"
+  ],
+  "userVisualReferences": [
+    "FIGURA PAGINA 07.png",
+    "PERSPECTIVE control screenshot"
+  ],
+  "republishedUserImages": false,
+  "perspectives": [
+    {
+      "id": "describing",
+      "order": 1,
+      "color": "red",
+      "intent": "properties, states, circumstances"
+    },
+    {
+      "id": "narrating",
+      "order": 2,
+      "color": "yellow",
+      "intent": "events, actions, sequence"
+    },
+    {
+      "id": "debating",
+      "order": 3,
+      "color": "green",
+      "intent": "questions, alternatives, arguments"
+    },
+    {
+      "id": "concluding",
+      "order": 4,
+      "color": "blue",
+      "intent": "synthesis, closure, reflection"
+    }
+  ],
+  "counts": {
+    "functions": 5,
+    "experiences": 4,
+    "perspectives": 4,
+    "languages": 3,
+    "canonicalPerspectiveSlots": 16,
+    "functionExperienceCandidates": 20,
+    "potentialCrossings": 80,
+    "authorizedCrossings": 0
+  },
+  "coreAxes": [
+    "experience",
+    "verbFunction",
+    "perspective",
+    "language",
+    "tense",
+    "mode",
+    "period",
+    "wordType"
+  ],
+  "optionalAxes": [
+    "questionWord"
+  ],
+  "compatibility": {
+    "perspectiveNotQW": true,
+    "perspectiveNotTense": true,
+    "perspectiveNotMode": true,
+    "perspectiveNotVerbFunction": true,
+    "questionWordPrerequisite": false,
+    "noRequiredNarrativeSequence": true,
+    "movementMasterOriginal": "TO BE + VERB-ING as ongoing action simultaneous with speaking",
+    "physicalDisplacement": "COMPLEMENTARY_STUDY: lexical ACTION / TO DO verbs (walk, go, run) in simple tense; progressives share TO BE + ING structure",
+    "existenceAutonomous": true,
+    "existenceIsNotQW": true,
+    "existenceModule": "labs/master-vip-existence/index.html",
+    "noAssessmentByNarrativeConclusion": true,
+    "patitaObservationNotEvidence": true,
+    "sourceDefinitionsUnmodified": true
+  },
+  "perspectivesSource": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "slots": [
+        {
+          "id": "describing",
+          "color": "red",
+          "count": {
+            "en": 2,
+            "es": 2,
+            "pt": 2
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "narrating",
+          "color": "yellow",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "debating",
+          "color": "green",
+          "count": {
+            "en": 2,
+            "es": 2,
+            "pt": 2
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "concluding",
+          "color": "blue",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        }
+      ]
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "slots": [
+        {
+          "id": "describing",
+          "color": "red",
+          "count": {
+            "en": 2,
+            "es": 2,
+            "pt": 2
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "narrating",
+          "color": "yellow",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "debating",
+          "color": "green",
+          "count": {
+            "en": 2,
+            "es": 2,
+            "pt": 2
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "concluding",
+          "color": "blue",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        }
+      ]
+    },
+    {
+      "experienceId": "having-dinner",
+      "slots": [
+        {
+          "id": "describing",
+          "color": "red",
+          "count": {
+            "en": 2,
+            "es": 2,
+            "pt": 2
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "narrating",
+          "color": "yellow",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "debating",
+          "color": "green",
+          "count": {
+            "en": 2,
+            "es": 2,
+            "pt": 2
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "concluding",
+          "color": "blue",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        }
+      ]
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "slots": [
+        {
+          "id": "describing",
+          "color": "red",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "narrating",
+          "color": "yellow",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "debating",
+          "color": "green",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": null,
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        },
+        {
+          "id": "concluding",
+          "color": "blue",
+          "count": {
+            "en": 1,
+            "es": 1,
+            "pt": 1
+          },
+          "exampleTense": "past",
+          "source": "experience-seeds.json",
+          "authority": "not granted by presentation"
+        }
+      ]
+    }
+  ],
+  "crossing": {
+    "status": "UNREVIEWED_RELATION_ONLY",
+    "note": "80 relationship hypotheses; not 80 contextual exercises, not 80 answers, not 80 assessment contracts",
+    "requireBeforePromotion": [
+      "independent semantic comparison of function and Perspective in specific scene",
+      "authored EN/ES/PT contextual question and answer",
+      "temporal and TENSE/MODE/PERIOD appropriateness",
+      "explicit human homologation",
+      "contract scope and evidence tests",
+      "visual and audio regression"
+    ],
+    "sourceExamplesNotConcatenated": true
+  },
+  "teachingMaterials": [
+    "ten kinds of words",
+    "glossaries",
+    "questions and responses",
+    "tense and period",
+    "word order",
+    "conversations",
+    "evaluation separated from PATITA observation"
+  ],
+  "authority": {
+    "newAssessmentTarget": false,
+    "newResumeTarget": false,
+    "newPassContract": false,
+    "newEvidence": false,
+    "newGreenPass": false,
+    "patitaRuntimeModified": false,
+    "mainModified": false,
+    "pr3Modified": false,
+    "productionModified": false,
+    "workerD1Modified": false
+  }
+}
