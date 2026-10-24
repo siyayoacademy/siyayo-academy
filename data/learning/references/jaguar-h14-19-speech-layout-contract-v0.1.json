@@ -1,0 +1,47 @@
+{
+  "id": "FUNC-13",
+  "elo": "H14.19",
+  "status": "ISOLATED_VISUAL_AUDIO_LAB_NOT_HOMOLOGATED",
+  "visibility": {
+    "normalExplorer": "HIDDEN",
+    "experimentalOnly": true,
+    "finalHtmlPosition": "UNDECIDED"
+  },
+  "layout": {
+    "line1": "gold SVG speaker left + contextual text right",
+    "line2": "five verb-function buttons horizontal",
+    "details": "Function / Context / Fine Study",
+    "desktop": "three detail columns",
+    "portrait": "stack detail columns; horizontal button scrolling",
+    "landscape": "prevent page overflow"
+  },
+  "speech": {
+    "method": "SpeechSynthesisUtterance",
+    "locales": {
+      "en": "en-US",
+      "es": "es-ES",
+      "pt": "pt-BR"
+    },
+    "source": "authored adaptation only for selected grammar; never synthesize unknown forms",
+    "speaker": "inline SVG path matching existing SIYAYO CSS speaker artwork",
+    "placement": "LEFT_OF_TEXT",
+    "noEvaluation": true,
+    "disabledWhenUnauthored": true,
+    "voicesSubjectToBrowserAvailability": true
+  },
+  "period": {
+    "status": "OPEN_GEAR_STACK_GAP",
+    "independentGearExists": false,
+    "owner": "GEAR_STACK_FUTURE",
+    "doNotImplementInFUNC13": true
+  },
+  "protection": {
+    "noMain": true,
+    "noPR3": true,
+    "noProduction": true,
+    "noPATITA": true,
+    "noNewEvidence": true,
+    "noExplorerHTMLChanges": true
+  },
+  "humanVisualHomologation": false
+}

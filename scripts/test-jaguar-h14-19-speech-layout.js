@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+'use strict';
+const fs=require('fs'),assert=require('node:assert/strict'),vm=require('vm');
+const dir='labs/func13-function-window-h14-19/',html=fs.readFileSync(dir+'index.html','utf8'),css=fs.readFileSync(dir+'window.css','utf8'),js=fs.readFileSync(dir+'window.js','utf8');
+const j=JSON.parse(fs.readFileSync('data/learning/references/jaguar-h14-19-speech-layout-contract-v0.1.json','utf8'));
+assert.equal(j.visibility.normalExplorer,'HIDDEN');assert.equal(j.period.independentGearExists,false);
+assert.ok(html.indexOf('id="func13SpeechRow"')<html.indexOf('id="func13Functions"'));
+assert.ok(html.indexOf('id="func13Functions"')<html.indexOf('id="func13Study"'));
+assert.equal((html.match(/data-function="/g)||[]).length,5);
+assert.match(html,/id="func13Speak"/);assert.match(html,/class="gold-speaker-svg"/);
+assert.match(css,/grid-template-columns:54px minmax\(0,1fr\)/);
+assert.match(css,/overflow-x:auto/);assert.match(css,/@media\(max-width:430px\)/);
+assert.match(js,/SpeechSynthesisUtterance/);assert.match(js,/en-US/);assert.match(js,/es-ES/);assert.match(js,/pt-BR/);
+assert.match(js,/disabled=!spoken\|\|!speechAvailable\(\)/);
+assert.match(js,/stopAudio\(\);/);
+assert.match(html,/OCULTO na navegação normal/);
+assert.match(html,/LACUNA IDENTIFICADA NO GEAR STACK/);
+for(const forbidden of ['localStorage','sessionStorage','submitObservedAttempt','recordOutcome(','createEvidence('])assert.equal(js.includes(forbidden),false,forbidden);
+new vm.Script(js);
+console.log('PASS H14.19: speaker left of contextual text, five buttons second row, source-only speech, tri-language, PERIOD gap, Explorer hidden');

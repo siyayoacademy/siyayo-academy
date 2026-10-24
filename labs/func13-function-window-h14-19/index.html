@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIYAYO · FUNC-13 Function Window · H14.19</title>
+<link rel="stylesheet" href="window.css"></head>
+<body><main>
+  <header><p class="eyebrow">🔔🐆 SIYAYO ACADEMY · JAGUAR H14.19 · DESIGN LAB</p>
+  <h1>FUNC-13 · MASTER VIP FUNCTION LENS</h1>
+  <p class="guard" role="note">Este módulo permanece <strong>OCULTO na navegação normal do Explorer</strong>. Protótipo independente, sem avaliação, PATITA, integração oficial ou publicação em produção.</p></header>
+  <section class="panel mock-gear" aria-labelledby="gear-title"><h2 id="gear-title">GEAR STACK · CONTEXTO SIMULADO (somente laboratório)</h2>
+    <div class="axes">
+    <label>EXPERIENCE<select id="experience"><option value="shopping-for-dinner">S1 · Shopping</option><option value="preparing-dinner">S2 · Preparing</option><option value="having-dinner">S3 · Having</option><option value="after-dinner-conversation">S4 · After Dinner</option></select></label>
+    <label>LANGUAGE<select id="language"><option value="en">EN · English</option><option value="es">ES · Español</option><option value="pt" selected>PT · Português</option></select></label>
+    <label>TENSE<select id="tense"><option value="present">PRESENT</option><option value="past">PAST</option><option value="future">FUTURE</option></select></label>
+    <label>MODE<select id="mode"><option value="affirmative">AFFIRMATIVE</option><option value="negative">NEGATIVE</option><option value="interrogative">INTERROGATIVE</option></select></label>
+    <label>PERSPECTIVE<select id="perspective"><option value="">Nenhuma selecionada</option><option value="describing">🔴 DESCRIBING</option><option value="narrating">🟡 NARRATING</option><option value="debating">🟢 DEBATING</option><option value="concluding">🔵 CONCLUDING</option></select></label>
+    <label>THINKING MIND · QW (opcional)<select id="questionWord"><option value="">Nenhuma</option></select></label>
+    </div>
+    <p class="period-gap" id="periodGap"><strong>PERIOD · LACUNA IDENTIFICADA NO GEAR STACK</strong> — ainda não existe seletor independente no Explorer. Não inferir tempo/período.</p>
+  </section>
+  <section class="panel window" id="func13-window" aria-labelledby="window-title" data-authority="study-only">
+    <div class="window-top"><div><span class="eyebrow">FUNC-13 · HOW TO SHOW · ESTUDO DE COMPOSIÇÃO</span><h2 id="window-title">FUNCTION WINDOW</h2></div><span class="status-tag">PREVIEW · SEM CRÉDITO</span></div>
+    <!-- Linha 1: speaker dourado à esquerda, texto responsivo à direita. -->
+    <div id="func13SpeechRow" class="speech-row" aria-label="Linha contextual com áudio">
+      <button type="button" id="func13Speak" class="speech-control" aria-label="Ouvir frase" title="Ouvir frase" disabled>
+        <svg class="gold-speaker-svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z"/>
+        </svg></button>
+      <div class="speech-content"><span id="speechSource" class="source-label">SIYAYO ADAPTATION · PENDING HOMOLOGATION</span>
+        <p id="func13SpeechText" lang="pt-BR">Escolha uma função para consultar a frase contextual.</p></div>
+    </div>
+    <!-- Linha 2: funções em faixa horizontal, scroll somente interno no portrait. -->
+    <nav id="func13Functions" class="function-strip" aria-label="Cinco funções verbais Master VIP">
+      <button type="button" data-function="quality" aria-pressed="false">QUALITY</button>
+      <button type="button" data-function="state" aria-pressed="false">STATE</button>
+      <button type="button" data-function="movement" aria-pressed="true">MOVEMENT</button>
+      <button type="button" data-function="action" aria-pressed="false">ACTION</button>
+      <button type="button" data-function="existence" aria-pressed="false">EXISTENCE</button>
+    </nav>
+    <p id="speechState" class="small" role="status" aria-live="polite"></p>
+    <div class="study-grid" id="func13Study">
+      <article class="study-cell"><h3>1 · FUNÇÃO · MASTER VIP</h3><p class="source-label">Padrão original</p><p id="functionPattern"></p><p class="source-label">Exemplo original (quando indexado)</p><p id="functionOriginal"></p><p class="source-label">Adaptação SIYAYO · pendente</p><p id="functionAdaptation"></p></article>
+      <article class="study-cell" id="perspectiveCell" data-perspective-color="red"><h3>2 · CONTEXTO × PERSPECTIVE</h3><p id="contextDescription"></p><p id="perspectiveLines"></p></article>
+      <article class="study-cell"><h3>3 · ESTUDO FINO</h3><p id="reviewType" class="review-marker"></p><p id="reviewReason" class="small"></p><p class="small">Parecer preliminar · não equivale a exercício homologado</p></article>
+    </div><p id="func13Status" class="guard" role="status" aria-live="polite">Carregando fontes de estudo…</p>
+  </section>
+  <footer class="small">Desenho H14.19 para homologação visual futura. A posição final em HTML, PERIOD e integração com o Gear Stack real continuam pendentes.</footer>
+</main>
+<script src="../../scripts/jaguar-h14-13-specialized-mirror-reference.js"></script>
+<script src="../../scripts/jaguar-h14-18-function-window-contract.js"></script>
+<script src="window.js"></script></body></html>
