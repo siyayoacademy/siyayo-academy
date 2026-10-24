@@ -207,7 +207,9 @@ function view(input){
      '<span class="wp-poly-status">'+escapeHtml(info)+'</span>'+
      (detail?'<small class="wp-poly-origin">'+escapeHtml(detail)+'</small>':'')+'</td>';
  }
- var focusLanguage=currentValid?currentScope.language:language;
+ // HOW TO SHOW tracks the visible language; assessment scope remains unchanged.
+ var focusLanguage=language;
+ var scopeLanguage=currentValid?currentScope.language:null;
  var columnOrder=[focusLanguage].concat(LANGUAGES.filter(function(lang){return lang!==focusLanguage;}));
  var columnNames={en:'ENGLISH',es:'ESPAÑOL',pt:'PORTUGUÊS'};
  var rows=WORDS.map(function(word){
@@ -215,8 +217,13 @@ function view(input){
       '<span lang="es">'+escapeHtml(word.es)+'</span><span lang="pt">'+escapeHtml(word.pt)+'</span></small></th>'+
      columnOrder.map(function(l){return one(word,l);}).join('')+'</tr>';
  }).join('');
- return '<section class="wp-polyglot" data-focused-language="'+escapeHtml(focusLanguage)+'" aria-label="'+escapeHtml(copy.heading)+'">'+
+ var splitLabels={en:{display:'DISPLAY',assessment:'ASSESSMENT'},es:{display:'PANTALLA',assessment:'EVALUACIÓN'},pt:{display:'TELA',assessment:'AVALIAÇÃO'}}[language]||{display:'DISPLAY',assessment:'ASSESSMENT'};
+ var scopeDifference=scopeLanguage&&scopeLanguage!==focusLanguage;
+ return '<section class="wp-polyglot" data-focused-language="'+escapeHtml(focusLanguage)+
+   '" data-assessment-language="'+escapeHtml(scopeLanguage||'none')+'" aria-label="'+escapeHtml(copy.heading)+'">'+
   '<h4 class="wp-poly-title">'+escapeHtml(copy.heading)+'</h4>'+
+  (scopeDifference?'<p class="wp-poly-scope-notice" data-assessment-scope-separate="true">'+
+   escapeHtml(splitLabels.display+' '+focusLanguage.toUpperCase()+' · '+splitLabels.assessment+' '+scopeLanguage.toUpperCase())+'</p>':'')+
   '<div class="wp-poly-scroller" tabindex="0" role="region" aria-label="'+escapeHtml(copy.heading)+'">'+
     '<table class="wp-poly-table"><thead><tr><th scope="col">'+escapeHtml(copy.qword)+'</th>'+
     columnOrder.map(function(lang){return '<th scope="col" data-language="'+lang+'"'+(lang===focusLanguage?' data-focused="true"':'')+'>'+columnNames[lang]+'</th>';}).join('')+'</tr></thead><tbody>'+rows+'</tbody></table></div>'+
