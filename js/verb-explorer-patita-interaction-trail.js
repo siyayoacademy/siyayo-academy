@@ -104,11 +104,12 @@ function append(record){
 function recordOutcome(input){
   input=input||{};
   var source=text(input.source),phase=text(input.phase),code=text(input.resultCode);
-  if(!['contextual-choice','dependency-head-probe'].includes(source))return false;
+  if(!['contextual-choice','dependency-head-probe','canonical-probe'].includes(source))return false;
   if(!['exploration','assessment-attempt'].includes(phase))return false;
   if(!['best-fit','possible-fit','pass','fail'].includes(code))return false;
   if(source==='contextual-choice'&&(phase!=='exploration'||!['best-fit','possible-fit'].includes(code)))return false;
-  if(source==='dependency-head-probe'&&!['pass','fail'].includes(code))return false;
+  if(['dependency-head-probe','canonical-probe'].includes(source)&&!['pass','fail'].includes(code))return false;
+  if(source==='canonical-probe'&&!['what','where','why'].includes(text(input.questionWord)))return false;
   var context=snapshot(),selected=text(input.selected);
   if(!selected||text(input.experienceId)!==context.experienceId||
     text(input.language)!==context.language||text(input.questionWord)!==context.questionWord)return false;
@@ -125,7 +126,7 @@ function recordOutcome(input){
     sessionId:tab,learnerId:observerId,
     action:source,selected:selected.slice(0,96),source:source,phase:phase,
     resultCode:code,experienceId:context.experienceId,language:context.language,questionWord:context.questionWord,
-    ...(source==='contextual-choice'?{score:numerator,possibleScore:denominator}:{structureId:text(input.structureId)||null}),
+    ...(source==='contextual-choice'?{score:numerator,possibleScore:denominator}:{structureId:text(input.structureId)||null,dimension:text(input.dimension)||null,mode:text(input.mode)||null,skill:text(input.skill)||null,support:text(input.support)||null}),
     before:context,after:context,uiOutcome:'observed-result',
     observationOnly:true,evidenceProduced:false,assessmentCredit:false,greenPass:false
   };
