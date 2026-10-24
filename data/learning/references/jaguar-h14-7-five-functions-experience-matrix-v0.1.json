@@ -1,0 +1,714 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-7-master-vip-five-functions-experience-matrix",
+  "status": "reference-only-pending-pedagogical-homologation",
+  "originalSource": "STRUCTURE- KIND OF WORDS.docx (private Library; no reproduction)",
+  "sourceIndex": "data/learning/references/master-vip-verb-functions-v0.1.json",
+  "originDefinitionProvenance": "MASTER_ORIGINAL",
+  "cellExampleProvenance": "SIYAYO_ADAPTATION",
+  "cellStatus": "PENDING_HOMOLOGATION",
+  "architecture": {
+    "axes": [
+      "function",
+      "experience",
+      "language",
+      "tense",
+      "mode",
+      "period",
+      "word-type",
+      "question-word-optional"
+    ],
+    "qwsMandatory": false,
+    "assessmentAuthority": false,
+    "assessmentEvidence": false,
+    "greenPass": false,
+    "patitaOnlyObservation": true,
+    "sourceOriginalUnchanged": true
+  },
+  "functions": [
+    {
+      "id": "quality",
+      "masterPattern": "TO BE",
+      "masterMeaning": "Permanent quality / characteristic (introductory classification)",
+      "group": "TO BE",
+      "sourcePage": 10
+    },
+    {
+      "id": "state",
+      "masterPattern": "TO BE",
+      "masterMeaning": "Temporary state / condition (introductory classification)",
+      "group": "TO BE",
+      "sourcePage": 10
+    },
+    {
+      "id": "movement",
+      "masterPattern": "TO BE + VERB-ING",
+      "masterMeaning": "Activity ongoing, taught as simultaneous with speaking",
+      "group": "TO BE",
+      "sourcePage": 10
+    },
+    {
+      "id": "action",
+      "masterPattern": "Lexical verbs other than TO BE; TO DO family auxiliaries",
+      "masterMeaning": "Routine/habit (introductory classification)",
+      "group": "TO DO",
+      "sourcePage": 10
+    },
+    {
+      "id": "existence",
+      "masterPattern": "THERE + TO BE",
+      "masterMeaning": "Existence, presence or occurrence",
+      "group": "EXISTENTIAL THERE + TO BE",
+      "sourcePage": 10
+    }
+  ],
+  "movementRules": {
+    "original": "MOVEMENT = TO BE + VERB-ING / ongoing action simultaneous with speaking (Master VIP)",
+    "complementary": "Physical displacement by go, walk, run is a semantic subtype of lexical ACTION / TO DO family for contrastive study",
+    "grammarContrast": {
+      "actionSimple": "We walk to the supermarket.",
+      "actionNegative": "We do not walk to the supermarket.",
+      "actionQuestion": "Do we walk to the supermarket?",
+      "progressive": "We are walking to the supermarket."
+    },
+    "guard": "In the Master teaching classification, progressive is not silently renamed physical displacement. The lexical motion verb stays in the TO DO family for simple-tense auxiliary logic, while its progressive use belongs to the TO BE + ING structure."
+  },
+  "existenceRules": {
+    "independentModule": true,
+    "independentFromQWs": true,
+    "prototypePath": "labs/master-vip-existence/index.html",
+    "masterReference": "data/learning/references/master-vip-existence-v0.1.json",
+    "sceneExamplesSource": "data/learning/references/master-vip-existence-experience-candidates-v0.1.json",
+    "tenses": [
+      "present",
+      "past",
+      "future",
+      "presentPerfect",
+      "pastPerfect"
+    ],
+    "futurePeriod": "Master original mentions THERE WILL HAVE BEEN; separate review of applicability and adoption",
+    "crossQWLinksOnly": true
+  },
+  "originalEditorialReviews": [
+    {
+      "id": "MASTER-VIP-HOW-MANY-HOW-MUCH",
+      "location": "Interrogative Pronouns section",
+      "status": "EDITORIAL_REVIEW_NOT_CORRECTION",
+      "observation": "The original text associates HOW MANY with quantity singular and HOW MUCH with quantity plural in one line; conventional grammar distinguishes countable quantity from uncountable amount or price. Keep source unchanged pending explicit teaching decision."
+    }
+  ],
+  "cells": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "functionId": "quality",
+      "example": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "semanticFocus": "ingredient-quality",
+      "sceneAssumption": "scene-inference",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "which",
+        "what"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "functionId": "state",
+      "example": {
+        "en": "The salmon is fresh.",
+        "es": "El salmón está fresco.",
+        "pt": "O salmão está fresco."
+      },
+      "semanticFocus": "temporary-ingredient-condition",
+      "sceneAssumption": "scene-inference",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "which",
+        "what"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "functionId": "movement",
+      "example": {
+        "en": "We are choosing ingredients.",
+        "es": "Estamos eligiendo ingredientes.",
+        "pt": "Estamos escolhendo ingredientes."
+      },
+      "semanticFocus": "activity-in-progress",
+      "sceneAssumption": "scene-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "functionId": "action",
+      "example": {
+        "en": "We buy ingredients every Friday.",
+        "es": "Compramos ingredientes todos los viernes.",
+        "pt": "Compramos ingredientes todas as sextas-feiras."
+      },
+      "semanticFocus": "habitual-shopping",
+      "sceneAssumption": "hypothetical-habit-not-established-in-scene",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present-habitual",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "when"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "functionId": "existence",
+      "example": {
+        "en": "There is fresh cheese in the supermarket.",
+        "es": "Hay queso fresco en el supermercado.",
+        "pt": "Há queijo fresco no supermercado."
+      },
+      "semanticFocus": "availability",
+      "sceneAssumption": "existing-master-vip-existence-candidate",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "where",
+        "which"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "functionId": "quality",
+      "example": {
+        "en": "The carrots are orange.",
+        "es": "Las zanahorias son anaranjadas.",
+        "pt": "As cenouras são alaranjadas."
+      },
+      "semanticFocus": "described-property",
+      "sceneAssumption": "candidate-detail-not-established-in-scene",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "which",
+        "what"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "functionId": "state",
+      "example": {
+        "en": "The vegetables are fresh.",
+        "es": "Las verduras están frescas.",
+        "pt": "Os legumes estão frescos."
+      },
+      "semanticFocus": "current-condition",
+      "sceneAssumption": "scene-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "where"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "functionId": "movement",
+      "example": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "semanticFocus": "activity-in-progress",
+      "sceneAssumption": "source-situation-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "how"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "functionId": "action",
+      "example": {
+        "en": "We usually cook dinner together.",
+        "es": "Solemos preparar la cena juntos.",
+        "pt": "Costumamos preparar o jantar juntos."
+      },
+      "semanticFocus": "habitual-preparation",
+      "sceneAssumption": "hypothetical-habit-not-established-in-scene",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present-habitual",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "when",
+        "how"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "functionId": "existence",
+      "example": {
+        "en": "There are carrots on the kitchen table.",
+        "es": "Hay zanahorias sobre la mesa de la cocina.",
+        "pt": "Há cenouras sobre a mesa da cozinha."
+      },
+      "semanticFocus": "presence",
+      "sceneAssumption": "existing-master-vip-existence-candidate",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "where"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "having-dinner",
+      "functionId": "quality",
+      "example": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "semanticFocus": "ingredient-quality",
+      "sceneAssumption": "scene-inference",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "having-dinner",
+      "functionId": "state",
+      "example": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "semanticFocus": "current-taste-experience",
+      "sceneAssumption": "perspective-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "how"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "having-dinner",
+      "functionId": "movement",
+      "example": {
+        "en": "We are eating dinner.",
+        "es": "Estamos cenando.",
+        "pt": "Estamos jantando."
+      },
+      "semanticFocus": "activity-in-progress",
+      "sceneAssumption": "source-situation-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "having-dinner",
+      "functionId": "action",
+      "example": {
+        "en": "We often eat together.",
+        "es": "Comemos juntos a menudo.",
+        "pt": "Costumamos comer juntos."
+      },
+      "semanticFocus": "habitual-eating",
+      "sceneAssumption": "hypothetical-habit-not-established-in-scene",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present-habitual",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "how"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "having-dinner",
+      "functionId": "existence",
+      "example": {
+        "en": "There is salmon on the dining table.",
+        "es": "Hay salmón sobre la mesa del comedor.",
+        "pt": "Há salmão sobre a mesa de jantar."
+      },
+      "semanticFocus": "presence",
+      "sceneAssumption": "existing-master-vip-existence-candidate",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "who"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "functionId": "quality",
+      "example": {
+        "en": "Conversation is important.",
+        "es": "La conversación es importante.",
+        "pt": "Conversar é importante."
+      },
+      "semanticFocus": "general-property-statement",
+      "sceneAssumption": "complementary-generic-example-not-scene-fact",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "why"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "functionId": "state",
+      "example": {
+        "en": "The conversation is pleasant.",
+        "es": "La conversación es agradable.",
+        "pt": "A conversa está agradável."
+      },
+      "semanticFocus": "current-condition",
+      "sceneAssumption": "perspective-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "how"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "functionId": "movement",
+      "example": {
+        "en": "We are talking together.",
+        "es": "Estamos conversando juntos.",
+        "pt": "Estamos conversando juntos."
+      },
+      "semanticFocus": "activity-in-progress",
+      "sceneAssumption": "source-situation-adaptation",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "how"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "functionId": "action",
+      "example": {
+        "en": "We usually talk after dinner.",
+        "es": "Solemos conversar después de cenar.",
+        "pt": "Costumamos conversar depois do jantar."
+      },
+      "semanticFocus": "habitual-conversation",
+      "sceneAssumption": "hypothetical-habit-not-established-in-scene",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "present-habitual",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "when"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "functionId": "existence",
+      "example": {
+        "en": "There was a pleasant conversation after dinner.",
+        "es": "Hubo una conversación agradable después de la cena.",
+        "pt": "Houve uma conversa agradável depois do jantar."
+      },
+      "semanticFocus": "past-event-existence",
+      "sceneAssumption": "existing-master-vip-existence-candidate",
+      "status": "PENDING_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "notMasterQuotation": true,
+      "tense": "past",
+      "mode": "affirmative",
+      "experienceSceneRequiresReview": true,
+      "wordTypeCrossLink": [
+        "verb",
+        "noun",
+        "adjective",
+        "adverb",
+        "preposition"
+      ],
+      "qwLinksSuggested": [
+        "what",
+        "why"
+      ],
+      "qwLinksNotPrerequisites": true,
+      "assessmentAuthority": false,
+      "assessmentEvidence": false
+    }
+  ]
+}
