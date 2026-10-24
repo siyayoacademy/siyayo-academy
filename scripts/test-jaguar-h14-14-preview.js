@@ -6,7 +6,13 @@ const old=read('data/learning/references/jaguar-h14-12-integration-ledger-v0.1.j
 const ext=read('data/learning/references/jaguar-h14-14-preservation-extension-v0.1.json');
 const sha=b=>crypto.createHash('sha1').update(Buffer.concat([Buffer.from('blob '+b.length+'\0'),b])).digest('hex');
 assert.equal(old.assets.length,14);assert.equal(ext.newTrackedAssets.length,11);
-for(const item of [...old.assets,...ext.newTrackedAssets])assert.equal(sha(fs.readFileSync(item.path)),item.gitBlobSha,'DRIFT '+item.path);
+for(const item of [...old.assets,...ext.newTrackedAssets]){
+ const actual=sha(fs.readFileSync(item.path));
+ if(item.path==='scripts/jaguar-h14-13-specialized-mirror-reference.js'){
+  assert.equal(item.gitBlobSha,'560b03298159678d44f61629fd3a3bc284103a9e','historic H14.13 SHA remains in ledger');
+  assert.equal(actual,'676ec4181e42e3b28a4a56ca830f99b207048696','H14.15 intentionally updated shared policy SHA');
+ }else assert.equal(actual,item.gitBlobSha,'DRIFT '+item.path);
+}
 const html=fs.readFileSync('verb-explorer.html','utf8'),script=fs.readFileSync('js/verb-explorer-h14-14-preview.js','utf8'),css=fs.readFileSync('css/verb-explorer-h14-14-preview.css','utf8');
 assert.ok(html.includes('id="h14SpecializedPreview" class="h14-specialized-preview" hidden'));
 assert.ok(html.indexOf('id="h14SpecializedPreview"')>html.indexOf('class="experience-grid"'));
