@@ -1,0 +1,73 @@
+{
+  "id": "FUNC-13",
+  "elo": "H14.18",
+  "status": "INDEPENDENT_DESIGN_LAB_NOT_FINAL_EXPLORER",
+  "name": "Master VIP Function Lens",
+  "windowName": "Function Window",
+  "hiddenInNormalExplorer": true,
+  "previewExistingFlag": "h14_14=preview",
+  "finalHtmlPlacement": "UNDECIDED",
+  "gearAuthority": [
+    "language",
+    "tense",
+    "mode",
+    "experience",
+    "perspective",
+    "wordType",
+    "optionalQuestionWord"
+  ],
+  "functionLensOwns": [
+    "functionId",
+    "referencePresentation",
+    "fineStudyReadOnly"
+  ],
+  "period": {
+    "currentExplorerGear": false,
+    "requestedPeriod": null,
+    "status": "UNAVAILABLE_IN_CURRENT_GEAR_STACK",
+    "rule": "never synthesize or silently select grammatical period"
+  },
+  "layout": {
+    "functionButtons": "one horizontal scrollable strip, no button text compression",
+    "functionWindow": "full available module width",
+    "desktop": "three semantic surfaces in columns",
+    "portrait": "three semantic surfaces stacked, controls remain scrollable",
+    "landscape": "responsive and no page overflow"
+  },
+  "sources": {
+    "original": "data/learning/references/master-vip-verb-functions-v0.1.json",
+    "functionAdaptations": "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json",
+    "perspectives": "data/learning/experience-seeds.json",
+    "review": "data/learning/references/jaguar-h14-9-semantic-80-review-v0.1.json"
+  },
+  "sourceSeparation": [
+    "MASTER_ORIGINAL",
+    "CANONICAL_PERSPECTIVE",
+    "SIYAYO_ADAPTATION",
+    "PRELIMINARY_REVIEW"
+  ],
+  "reviewCounts": {
+    "SOURCE_CLOSE": 1,
+    "BRIDGE": 57,
+    "CONTRAST": 22
+  },
+  "rules": {
+    "noRequiredQW": true,
+    "noFixedExperienceSequence": true,
+    "noNewAttempt": true,
+    "noEvidence": true,
+    "noPATITAWrite": true,
+    "noGreenPass": true,
+    "noNewSpeaker": true,
+    "noMainEdit": true,
+    "noPR3Edit": true,
+    "noProductionEdit": true
+  },
+  "futureGates": [
+    "human review of semantic relevance and translated grammar",
+    "decide how to expose PERIOD in Grammar Stack",
+    "design homologation of button/window layout",
+    "browser portrait/landscape/desktop and audio regression",
+    "separate official Explorer integration approval"
+  ]
+}
