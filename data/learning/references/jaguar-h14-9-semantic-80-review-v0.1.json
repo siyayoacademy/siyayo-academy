@@ -1,0 +1,2728 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-9-eighty-potential-relations-semantic-review",
+  "state": "PRELIMINARY_REVIEW_ONLY_NOT_HUMAN_HOMOLOGATION",
+  "parentCheckpoint": "JAGUAR H14.8 GREEN (commit 3daec8286f87e00bfdb468aa991e2468aca23fe2)",
+  "primaryPedagogicalSource": "STRUCTURE- KIND OF WORDS.docx",
+  "counts": {
+    "experiences": 4,
+    "functions": 5,
+    "perspectives": 4,
+    "languages": 3,
+    "uniqueRelations": 80,
+    "trilingualViews": 240,
+    "preliminaryReviewCounts": {
+      "BRIDGE": 57,
+      "CONTRAST": 22,
+      "SOURCE_CLOSE": 1
+    },
+    "verifiedContextualExercises": 0,
+    "newAssessmentOpportunitiesAuthorized": 0
+  },
+  "rubric": {
+    "SOURCE_CLOSE": "Function example and authored perspective have strong immediate semantic overlap. Still not a new exercise, approved answer or evidence.",
+    "BRIDGE": "Communicative connection is plausible but needs a specific authored bridge (referent, situation, discourse function, period or rationale); not directly usable as a scored task.",
+    "CONTRAST": "Current source sentences are ill-fitting for this Perspective or assert an unestablished habit/time/quality. Can be studied for contrast but must not be presented as this scene's proven response."
+  },
+  "auditPolicy": {
+    "all80IndividuallyCommented": true,
+    "sourceTextLeftUnchanged": true,
+    "masterFunctionLabelsUnchanged": true,
+    "provenanceRespect": true,
+    "functionAndPerspectiveIndependent": true,
+    "qwIndependent": true,
+    "navigationOrderIndependent": true,
+    "sameExampleNotAutomaticallyTransfer": true,
+    "noNewQW": true,
+    "comparisonNotContract": true,
+    "scoringDisabled": true,
+    "masterMovementIsProgressive": true,
+    "actionHabitRequiresEvidence": true,
+    "existenceRemainsAutonomous": true,
+    "concludingDoesNotGrantGreenPass": true,
+    "sourceClosureIsNotGreenPass": true,
+    "grammarAspectRequiresTimeContext": true,
+    "perspectiveColorSources": [
+      "red",
+      "yellow",
+      "green",
+      "blue"
+    ],
+    "boundary": "An initial review classification is advisory only; learner evidence needs a separate authorized Pass Contract and observed attempt"
+  },
+  "urgentFindings": [
+    {
+      "id": "H14-9-ACTION-HABIT",
+      "observations": 16,
+      "summary": "Every ACTION×Perspective relation uses an illustrative habitual action not established by the single dinner narrative. These 16 remain CONTRAST until scene authoring validates a routine or explicitly sets hypothetical practice."
+    },
+    {
+      "id": "H14-9-PERCEIVED-VS-ACTUAL",
+      "summary": "The source may say looks fresh while the example claims is fresh; an observation is not a verified state. Applies S1 salmon, S2 vegetables."
+    },
+    {
+      "id": "H14-9-S4-PT-STATE",
+      "summary": "Original S4 PT perspective 'A conversa é agradável' differs from proposed function 'A conversa está agradável'; review state/quality nuance."
+    },
+    {
+      "id": "H14-9-NARRATIVE-TIME",
+      "summary": "NARRATING or CONCLUDING may describe past completed events while MOVEMENT sample is present progressive. Do not assign immediate equivalence."
+    },
+    {
+      "id": "H14-9-EXISTENCE-QW",
+      "summary": "There + be is standalone, not a Question Word. Its scene presence does not automatically answer WHERE/WHAT/HOW MANY without explicit scenario details."
+    }
+  ],
+  "matrix": [
+    {
+      "key": "shopping-for-dinner::quality::describing",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "quality",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Cheese mildness could be described, but the canonical describing examples feature salmon and strawberries; ingredient reference requires authorship.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The salmon looks fresh.",
+          "The strawberries are beautiful."
+        ],
+        "es": [
+          "El salmón se ve fresco.",
+          "Las fresas están hermosas."
+        ],
+        "pt": [
+          "O salmão parece fresco.",
+          "Os morangos estão lindos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::quality::narrating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "quality",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The original quality example is a property statement, not the authored chronological account of going to the store, buying food and returning.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We went to the supermarket, bought the ingredients and came home."
+        ],
+        "es": [
+          "Fuimos al supermercado, compramos los ingredientes y volvimos a casa."
+        ],
+        "pt": [
+          "Fomos ao supermercado, compramos os ingredientes e voltamos para casa."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::quality::debating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "quality",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Mild cheese could justify a choice, but the canonical debate contrasts salmon freshness; do not silently move the reason to cheese.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we buy this salmon or the other one?",
+          "I think this one is better because it looks fresher."
+        ],
+        "es": [
+          "¿Deberíamos comprar este salmón o el otro?",
+          "Creo que este es mejor porque parece más fresco."
+        ],
+        "pt": [
+          "Devemos comprar este salmão ou o outro?",
+          "Acho que este é melhor porque parece mais fresco."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::quality::concluding",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "quality",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Mildness might summarize a preference, but the canonical conclusion says all supplies are available; link not established.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Great. We have everything we need."
+        ],
+        "es": [
+          "Muy bien. Tenemos todo lo que necesitamos."
+        ],
+        "pt": [
+          "Ótimo. Temos tudo o que precisamos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::state::describing",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "state",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Salmon looks fresh in the Perspective source; 'is fresh' is a stronger assertion than 'looks fresh'. Retain evidential distinction.",
+      "functionAdaptation": {
+        "en": "The salmon is fresh.",
+        "es": "El salmón está fresco.",
+        "pt": "O salmão está fresco."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The salmon looks fresh.",
+          "The strawberries are beautiful."
+        ],
+        "es": [
+          "El salmón se ve fresco.",
+          "Las fresas están hermosas."
+        ],
+        "pt": [
+          "O salmão parece fresco.",
+          "Os morangos estão lindos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::state::narrating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "state",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "A perceived salmon condition can accompany the shopping story, but the authored narration is retrospective; establish timing first.",
+      "functionAdaptation": {
+        "en": "The salmon is fresh.",
+        "es": "El salmón está fresco.",
+        "pt": "O salmão está fresco."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We went to the supermarket, bought the ingredients and came home."
+        ],
+        "es": [
+          "Fuimos al supermercado, compramos los ingredientes y volvimos a casa."
+        ],
+        "pt": [
+          "Fomos ao supermercado, compramos os ingredientes e voltamos para casa."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::state::debating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "state",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Salmon freshness is close to the debate's 'looks fresher' rationale, but appearance and verified freshness are not identical.",
+      "functionAdaptation": {
+        "en": "The salmon is fresh.",
+        "es": "El salmón está fresco.",
+        "pt": "O salmão está fresco."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we buy this salmon or the other one?",
+          "I think this one is better because it looks fresher."
+        ],
+        "es": [
+          "¿Deberíamos comprar este salmón o el otro?",
+          "Creo que este es mejor porque parece más fresco."
+        ],
+        "pt": [
+          "Devemos comprar este salmão ou o outro?",
+          "Acho que este é melhor porque parece mais fresco."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::state::concluding",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "state",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Concluding supplies are complete does not itself verify salmon freshness.",
+      "functionAdaptation": {
+        "en": "The salmon is fresh.",
+        "es": "El salmón está fresco.",
+        "pt": "O salmão está fresco."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Great. We have everything we need."
+        ],
+        "es": [
+          "Muy bien. Tenemos todo lo que necesitamos."
+        ],
+        "pt": [
+          "Ótimo. Temos tudo o que precisamos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::movement::describing",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "movement",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Choosing ingredients is an ongoing activity; describing it needs an authorized current-action frame distinct from object description.",
+      "functionAdaptation": {
+        "en": "We are choosing ingredients.",
+        "es": "Estamos eligiendo ingredientes.",
+        "pt": "Estamos escolhendo ingredientes."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The salmon looks fresh.",
+          "The strawberries are beautiful."
+        ],
+        "es": [
+          "El salmón se ve fresco.",
+          "Las fresas están hermosas."
+        ],
+        "pt": [
+          "O salmão parece fresco.",
+          "Os morangos estão lindos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::movement::narrating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "movement",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The Perspective narration says the group went, bought and returned; present-progressive choosing requires a temporal shift.",
+      "functionAdaptation": {
+        "en": "We are choosing ingredients.",
+        "es": "Estamos eligiendo ingredientes.",
+        "pt": "Estamos escolhendo ingredientes."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We went to the supermarket, bought the ingredients and came home."
+        ],
+        "es": [
+          "Fuimos al supermercado, compramos los ingredientes y volvimos a casa."
+        ],
+        "pt": [
+          "Fomos ao supermercado, compramos os ingredientes e voltamos para casa."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::movement::debating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "movement",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "A debate may occur while choosing, but the current movement sample is no argument or alternative.",
+      "functionAdaptation": {
+        "en": "We are choosing ingredients.",
+        "es": "Estamos eligiendo ingredientes.",
+        "pt": "Estamos escolhendo ingredientes."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we buy this salmon or the other one?",
+          "I think this one is better because it looks fresher."
+        ],
+        "es": [
+          "¿Deberíamos comprar este salmón o el otro?",
+          "Creo que este es mejor porque parece más fresco."
+        ],
+        "pt": [
+          "Devemos comprar este salmão ou o outro?",
+          "Acho que este é melhor porque parece mais fresco."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::movement::concluding",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "movement",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Ongoing choosing conflicts with the current conclusion 'we have everything'; revising time or situation is necessary.",
+      "functionAdaptation": {
+        "en": "We are choosing ingredients.",
+        "es": "Estamos eligiendo ingredientes.",
+        "pt": "Estamos escolhendo ingredientes."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Great. We have everything we need."
+        ],
+        "es": [
+          "Muy bien. Tenemos todo lo que necesitamos."
+        ],
+        "pt": [
+          "Ótimo. Temos tudo o que precisamos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::action::describing",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "action",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The every-Friday habitual shopping claim is hypothetical and absent from the scene; cannot be presented as a described fact.",
+      "functionAdaptation": {
+        "en": "We buy ingredients every Friday.",
+        "es": "Compramos ingredientes todos los viernes.",
+        "pt": "Compramos ingredientes todas as sextas-feiras."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The salmon looks fresh.",
+          "The strawberries are beautiful."
+        ],
+        "es": [
+          "El salmón se ve fresco.",
+          "Las fresas están hermosas."
+        ],
+        "pt": [
+          "O salmão parece fresco.",
+          "Os morangos estão lindos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::action::narrating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "action",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The Perspective narrates one completed shopping trip; a weekly routine is not established.",
+      "functionAdaptation": {
+        "en": "We buy ingredients every Friday.",
+        "es": "Compramos ingredientes todos los viernes.",
+        "pt": "Compramos ingredientes todas as sextas-feiras."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We went to the supermarket, bought the ingredients and came home."
+        ],
+        "es": [
+          "Fuimos al supermercado, compramos los ingredientes y volvimos a casa."
+        ],
+        "pt": [
+          "Fomos ao supermercado, compramos os ingredientes e voltamos para casa."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::action::debating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "action",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The salmon-purchase argument cannot substantiate shopping every Friday.",
+      "functionAdaptation": {
+        "en": "We buy ingredients every Friday.",
+        "es": "Compramos ingredientes todos los viernes.",
+        "pt": "Compramos ingredientes todas as sextas-feiras."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we buy this salmon or the other one?",
+          "I think this one is better because it looks fresher."
+        ],
+        "es": [
+          "¿Deberíamos comprar este salmón o el otro?",
+          "Creo que este es mejor porque parece más fresco."
+        ],
+        "pt": [
+          "Devemos comprar este salmão ou o outro?",
+          "Acho que este é melhor porque parece mais fresco."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::action::concluding",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "action",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "One completed shopping episode does not justify a recurring-Friday conclusion.",
+      "functionAdaptation": {
+        "en": "We buy ingredients every Friday.",
+        "es": "Compramos ingredientes todos los viernes.",
+        "pt": "Compramos ingredientes todas as sextas-feiras."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Great. We have everything we need."
+        ],
+        "es": [
+          "Muy bien. Tenemos todo lo que necesitamos."
+        ],
+        "pt": [
+          "Ótimo. Temos tudo o que precisamos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::existence::describing",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "existence",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Availability of fresh cheese in the supermarket can be described, but the Perspective examples currently describe different products.",
+      "functionAdaptation": {
+        "en": "There is fresh cheese in the supermarket.",
+        "es": "Hay queso fresco en el supermercado.",
+        "pt": "Há queijo fresco no supermercado."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The salmon looks fresh.",
+          "The strawberries are beautiful."
+        ],
+        "es": [
+          "El salmón se ve fresco.",
+          "Las fresas están hermosas."
+        ],
+        "pt": [
+          "O salmão parece fresco.",
+          "Os morangos estão lindos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::existence::narrating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "existence",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Existence in the store is a contextual condition, not yet an event in the authored past-tense shopping narration.",
+      "functionAdaptation": {
+        "en": "There is fresh cheese in the supermarket.",
+        "es": "Hay queso fresco en el supermercado.",
+        "pt": "Há queijo fresco no supermercado."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We went to the supermarket, bought the ingredients and came home."
+        ],
+        "es": [
+          "Fuimos al supermercado, compramos los ingredientes y volvimos a casa."
+        ],
+        "pt": [
+          "Fomos ao supermercado, compramos os ingredientes e voltamos para casa."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::existence::debating",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "existence",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Ingredient availability can motivate a choice, but no existing debate assesses existential meaning.",
+      "functionAdaptation": {
+        "en": "There is fresh cheese in the supermarket.",
+        "es": "Hay queso fresco en el supermercado.",
+        "pt": "Há queijo fresco no supermercado."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we buy this salmon or the other one?",
+          "I think this one is better because it looks fresher."
+        ],
+        "es": [
+          "¿Deberíamos comprar este salmón o el otro?",
+          "Creo que este es mejor porque parece más fresco."
+        ],
+        "pt": [
+          "Devemos comprar este salmão ou o outro?",
+          "Acho que este é melhor porque parece mais fresco."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "shopping-for-dinner::existence::concluding",
+      "experienceId": "shopping-for-dinner",
+      "functionId": "existence",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Having everything needed is broader than existence of one cheese; require quantified ingredient inventory before concluding.",
+      "functionAdaptation": {
+        "en": "There is fresh cheese in the supermarket.",
+        "es": "Hay queso fresco en el supermercado.",
+        "pt": "Há queijo fresco no supermercado."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Great. We have everything we need."
+        ],
+        "es": [
+          "Muy bien. Tenemos todo lo que necesitamos."
+        ],
+        "pt": [
+          "Ótimo. Temos tudo o que precisamos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::quality::describing",
+      "experienceId": "preparing-dinner",
+      "functionId": "quality",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Carrots being orange is not identical to canonical vegetables looking fresh; carrot color also lacks specific scene grounding.",
+      "functionAdaptation": {
+        "en": "The carrots are orange.",
+        "es": "Las zanahorias son anaranjadas.",
+        "pt": "As cenouras são alaranjadas."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The vegetables look fresh.",
+          "The kitchen smells wonderful."
+        ],
+        "es": [
+          "Las verduras se ven frescas.",
+          "La cocina huele de maravilla."
+        ],
+        "pt": [
+          "Os legumes parecem frescos.",
+          "A cozinha está com um aroma maravilhoso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::quality::narrating",
+      "experienceId": "preparing-dinner",
+      "functionId": "quality",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Carrot color is background description rather than the authored sequence of opening bags and beginning preparations.",
+      "functionAdaptation": {
+        "en": "The carrots are orange.",
+        "es": "Las zanahorias son anaranjadas.",
+        "pt": "As cenouras são alaranjadas."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::quality::debating",
+      "experienceId": "preparing-dinner",
+      "functionId": "quality",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The debate concerns which food to cook first, not carrot color; write an appropriate reason before linking.",
+      "functionAdaptation": {
+        "en": "The carrots are orange.",
+        "es": "Las zanahorias son anaranjadas.",
+        "pt": "As cenouras são alaranjadas."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we cook the salmon now or prepare the vegetables first?",
+          "I think we should prepare the vegetables first."
+        ],
+        "es": [
+          "¿Cocinamos el salmón ahora o preparamos primero las verduras?",
+          "Creo que debemos preparar primero las verduras."
+        ],
+        "pt": [
+          "Devemos cozinhar o salmão agora ou preparar primeiro os legumes?",
+          "Acho que devemos preparar primeiro os legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::quality::concluding",
+      "experienceId": "preparing-dinner",
+      "functionId": "quality",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Carrots' color cannot support the existing statement that the dinner is almost ready.",
+      "functionAdaptation": {
+        "en": "The carrots are orange.",
+        "es": "Las zanahorias son anaranjadas.",
+        "pt": "As cenouras são alaranjadas."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Excellent. Dinner is almost ready."
+        ],
+        "es": [
+          "Excelente. La cena está casi lista."
+        ],
+        "pt": [
+          "Excelente. O jantar está quase pronto."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::state::describing",
+      "experienceId": "preparing-dinner",
+      "functionId": "state",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The Perspective states vegetables 'look fresh' and the function example says they 'are fresh'; distinguish impression from fact.",
+      "functionAdaptation": {
+        "en": "The vegetables are fresh.",
+        "es": "Las verduras están frescas.",
+        "pt": "Os legumes estão frescos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The vegetables look fresh.",
+          "The kitchen smells wonderful."
+        ],
+        "es": [
+          "Las verduras se ven frescas.",
+          "La cocina huele de maravilla."
+        ],
+        "pt": [
+          "Os legumes parecem frescos.",
+          "A cozinha está com um aroma maravilhoso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::state::narrating",
+      "experienceId": "preparing-dinner",
+      "functionId": "state",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Fresh vegetables could contextualize preparation, but the existing narration describes actions and a completed arrival.",
+      "functionAdaptation": {
+        "en": "The vegetables are fresh.",
+        "es": "Las verduras están frescas.",
+        "pt": "Os legumes estão frescos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::state::debating",
+      "experienceId": "preparing-dinner",
+      "functionId": "state",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Vegetable condition may be a decision premise; current debate is about cooking order, not freshness.",
+      "functionAdaptation": {
+        "en": "The vegetables are fresh.",
+        "es": "Las verduras están frescas.",
+        "pt": "Os legumes estão frescos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we cook the salmon now or prepare the vegetables first?",
+          "I think we should prepare the vegetables first."
+        ],
+        "es": [
+          "¿Cocinamos el salmón ahora o preparamos primero las verduras?",
+          "Creo que debemos preparar primero las verduras."
+        ],
+        "pt": [
+          "Devemos cozinhar o salmão agora ou preparar primeiro os legumes?",
+          "Acho que devemos preparar primeiro os legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::state::concluding",
+      "experienceId": "preparing-dinner",
+      "functionId": "state",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Freshness and dinner readiness are different conditions; do not treat them as interchangeable.",
+      "functionAdaptation": {
+        "en": "The vegetables are fresh.",
+        "es": "Las verduras están frescas.",
+        "pt": "Os legumes estão frescos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Excellent. Dinner is almost ready."
+        ],
+        "es": [
+          "Excelente. La cena está casi lista."
+        ],
+        "pt": [
+          "Excelente. O jantar está quase pronto."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::movement::describing",
+      "experienceId": "preparing-dinner",
+      "functionId": "movement",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Preparing dinner in progress could be described as ongoing action, but canonical describing examples foreground appearance and aroma.",
+      "functionAdaptation": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The vegetables look fresh.",
+          "The kitchen smells wonderful."
+        ],
+        "es": [
+          "Las verduras se ven frescas.",
+          "La cocina huele de maravilla."
+        ],
+        "pt": [
+          "Os legumes parecem frescos.",
+          "A cozinha está com um aroma maravilhoso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::movement::narrating",
+      "experienceId": "preparing-dinner",
+      "functionId": "movement",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Authored narration says preparations started; progressive 'we are preparing' requires a consistent now-versus-earlier frame.",
+      "functionAdaptation": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::movement::debating",
+      "experienceId": "preparing-dinner",
+      "functionId": "movement",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Cooking-order debate occurs during preparation; movement is situation context, not the argument answer.",
+      "functionAdaptation": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we cook the salmon now or prepare the vegetables first?",
+          "I think we should prepare the vegetables first."
+        ],
+        "es": [
+          "¿Cocinamos el salmón ahora o preparamos primero las verduras?",
+          "Creo que debemos preparar primero las verduras."
+        ],
+        "pt": [
+          "Devemos cozinhar o salmão agora ou preparar primeiro os legumes?",
+          "Acho que devemos preparar primeiro os legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::movement::concluding",
+      "experienceId": "preparing-dinner",
+      "functionId": "movement",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Ongoing preparation can lead to almost-ready conclusion, but aspect and stage must be explicitly related.",
+      "functionAdaptation": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Excellent. Dinner is almost ready."
+        ],
+        "es": [
+          "Excelente. La cena está casi lista."
+        ],
+        "pt": [
+          "Excelente. O jantar está quase pronto."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::action::describing",
+      "experienceId": "preparing-dinner",
+      "functionId": "action",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "CONTRAST",
+      "reason": "A habitual joint cooking practice is not established by this single dinner scene.",
+      "functionAdaptation": {
+        "en": "We usually cook dinner together.",
+        "es": "Solemos preparar la cena juntos.",
+        "pt": "Costumamos preparar o jantar juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The vegetables look fresh.",
+          "The kitchen smells wonderful."
+        ],
+        "es": [
+          "Las verduras se ven frescas.",
+          "La cocina huele de maravilla."
+        ],
+        "pt": [
+          "Os legumes parecem frescos.",
+          "A cozinha está com um aroma maravilhoso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::action::narrating",
+      "experienceId": "preparing-dinner",
+      "functionId": "action",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The narrated singular event does not establish a usual dinner routine.",
+      "functionAdaptation": {
+        "en": "We usually cook dinner together.",
+        "es": "Solemos preparar la cena juntos.",
+        "pt": "Costumamos preparar o jantar juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::action::debating",
+      "experienceId": "preparing-dinner",
+      "functionId": "action",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The present cooking-order debate does not prove a regular shared habit.",
+      "functionAdaptation": {
+        "en": "We usually cook dinner together.",
+        "es": "Solemos preparar la cena juntos.",
+        "pt": "Costumamos preparar o jantar juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we cook the salmon now or prepare the vegetables first?",
+          "I think we should prepare the vegetables first."
+        ],
+        "es": [
+          "¿Cocinamos el salmón ahora o preparamos primero las verduras?",
+          "Creo que debemos preparar primero las verduras."
+        ],
+        "pt": [
+          "Devemos cozinhar o salmão agora ou preparar primeiro os legumes?",
+          "Acho que devemos preparar primeiro os legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::action::concluding",
+      "experienceId": "preparing-dinner",
+      "functionId": "action",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Almost-ready dinner does not imply that they usually cook together.",
+      "functionAdaptation": {
+        "en": "We usually cook dinner together.",
+        "es": "Solemos preparar la cena juntos.",
+        "pt": "Costumamos preparar o jantar juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Excellent. Dinner is almost ready."
+        ],
+        "es": [
+          "Excelente. La cena está casi lista."
+        ],
+        "pt": [
+          "Excelente. O jantar está quase pronto."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::existence::describing",
+      "experienceId": "preparing-dinner",
+      "functionId": "existence",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Carrots on the kitchen table are an existential description; the Perspective describes freshness and aroma, not table contents.",
+      "functionAdaptation": {
+        "en": "There are carrots on the kitchen table.",
+        "es": "Hay zanahorias sobre la mesa de la cocina.",
+        "pt": "Há cenouras sobre a mesa da cozinha."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The vegetables look fresh.",
+          "The kitchen smells wonderful."
+        ],
+        "es": [
+          "Las verduras se ven frescas.",
+          "La cocina huele de maravilla."
+        ],
+        "pt": [
+          "Os legumes parecem frescos.",
+          "A cozinha está com um aroma maravilhoso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::existence::narrating",
+      "experienceId": "preparing-dinner",
+      "functionId": "existence",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The current past-sequence narration need not imply carrots on the table; add placement/availability context.",
+      "functionAdaptation": {
+        "en": "There are carrots on the kitchen table.",
+        "es": "Hay zanahorias sobre la mesa de la cocina.",
+        "pt": "Há cenouras sobre a mesa da cozinha."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::existence::debating",
+      "experienceId": "preparing-dinner",
+      "functionId": "existence",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Available carrots could influence order of preparation, but that premise is not yet authored in the debate.",
+      "functionAdaptation": {
+        "en": "There are carrots on the kitchen table.",
+        "es": "Hay zanahorias sobre la mesa de la cocina.",
+        "pt": "Há cenouras sobre a mesa da cozinha."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we cook the salmon now or prepare the vegetables first?",
+          "I think we should prepare the vegetables first."
+        ],
+        "es": [
+          "¿Cocinamos el salmón ahora o preparamos primero las verduras?",
+          "Creo que debemos preparar primero las verduras."
+        ],
+        "pt": [
+          "Devemos cozinhar o salmão agora ou preparar primeiro os legumes?",
+          "Acho que devemos preparar primeiro os legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "preparing-dinner::existence::concluding",
+      "experienceId": "preparing-dinner",
+      "functionId": "existence",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Dinner almost ready and ingredients on the table are separate facts; review the stage of preparation.",
+      "functionAdaptation": {
+        "en": "There are carrots on the kitchen table.",
+        "es": "Hay zanahorias sobre la mesa de la cocina.",
+        "pt": "Há cenouras sobre a mesa da cozinha."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Excellent. Dinner is almost ready."
+        ],
+        "es": [
+          "Excelente. La cena está casi lista."
+        ],
+        "pt": [
+          "Excelente. O jantar está quase pronto."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::quality::describing",
+      "experienceId": "having-dinner",
+      "functionId": "quality",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Mild cheese is a general quality; current describing examples address the dinner appearance and salmon taste.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::quality::narrating",
+      "experienceId": "having-dinner",
+      "functionId": "quality",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Cheese quality is background to the account of preparing dinner and sitting down; not itself a narrated event.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We prepared dinner together and then sat down to eat."
+        ],
+        "es": [
+          "Preparamos la cena juntos y luego nos sentamos a comer."
+        ],
+        "pt": [
+          "Preparamos o jantar juntos e depois nos sentamos para comer."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::quality::debating",
+      "experienceId": "having-dinner",
+      "functionId": "quality",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The choice of additional salmon or vegetables is not explained by mild cheese.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Would you like more salmon or some vegetables?",
+          "I think I'll have some more vegetables."
+        ],
+        "es": [
+          "¿Quieres más salmón o algunas verduras?",
+          "Creo que comeré un poco más de verduras."
+        ],
+        "pt": [
+          "Você gostaria de mais salmão ou alguns legumes?",
+          "Acho que vou comer mais alguns legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::quality::concluding",
+      "experienceId": "having-dinner",
+      "functionId": "quality",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "A pleasant dinner might include mild cheese, but the canonical conclusion does not establish this link.",
+      "functionAdaptation": {
+        "en": "The cheese is mild.",
+        "es": "El queso es suave.",
+        "pt": "O queijo é suave."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. We enjoyed a special dinner together."
+        ],
+        "es": [
+          "Maravilloso. Disfrutamos juntos de una cena especial."
+        ],
+        "pt": [
+          "Maravilhoso. Desfrutamos juntos de um jantar especial."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::state::describing",
+      "experienceId": "having-dinner",
+      "functionId": "state",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "SOURCE_CLOSE",
+      "reason": "The canonical description says salmon tastes delicious, and the state example says salmon is delicious; close situated meaning with EN/ES/PT review still required.",
+      "functionAdaptation": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::state::narrating",
+      "experienceId": "having-dinner",
+      "functionId": "state",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Enjoying salmon may be part of the meal, but the narration is about the earlier preparation and sitting down.",
+      "functionAdaptation": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We prepared dinner together and then sat down to eat."
+        ],
+        "es": [
+          "Preparamos la cena juntos y luego nos sentamos a comer."
+        ],
+        "pt": [
+          "Preparamos o jantar juntos e depois nos sentamos para comer."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::state::debating",
+      "experienceId": "having-dinner",
+      "functionId": "state",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Taste could influence an additional serving, but the current debate expresses preference without the specific causal claim.",
+      "functionAdaptation": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Would you like more salmon or some vegetables?",
+          "I think I'll have some more vegetables."
+        ],
+        "es": [
+          "¿Quieres más salmón o algunas verduras?",
+          "Creo que comeré un poco más de verduras."
+        ],
+        "pt": [
+          "Você gostaria de mais salmão ou alguns legumes?",
+          "Acho que vou comer mais alguns legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::state::concluding",
+      "experienceId": "having-dinner",
+      "functionId": "state",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "A delicious dish may contribute to a special dinner, but the conclusion concerns the shared experience, not a direct tasting proof.",
+      "functionAdaptation": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. We enjoyed a special dinner together."
+        ],
+        "es": [
+          "Maravilloso. Disfrutamos juntos de una cena especial."
+        ],
+        "pt": [
+          "Maravilhoso. Desfrutamos juntos de um jantar especial."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::movement::describing",
+      "experienceId": "having-dinner",
+      "functionId": "movement",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "We are eating dinner describes ongoing activity, while existing DESCRIBING lines focus on appearance and taste.",
+      "functionAdaptation": {
+        "en": "We are eating dinner.",
+        "es": "Estamos cenando.",
+        "pt": "Estamos jantando."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::movement::narrating",
+      "experienceId": "having-dinner",
+      "functionId": "movement",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "We are eating now is temporally distinct from 'we prepared then sat down'; link chronological stages instead of treating them identical.",
+      "functionAdaptation": {
+        "en": "We are eating dinner.",
+        "es": "Estamos cenando.",
+        "pt": "Estamos jantando."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We prepared dinner together and then sat down to eat."
+        ],
+        "es": [
+          "Preparamos la cena juntos y luego nos sentamos a comer."
+        ],
+        "pt": [
+          "Preparamos o jantar juntos e depois nos sentamos para comer."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::movement::debating",
+      "experienceId": "having-dinner",
+      "functionId": "movement",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "An eating action frames a discussion about servings, but it is not itself an argued preference.",
+      "functionAdaptation": {
+        "en": "We are eating dinner.",
+        "es": "Estamos cenando.",
+        "pt": "Estamos jantando."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Would you like more salmon or some vegetables?",
+          "I think I'll have some more vegetables."
+        ],
+        "es": [
+          "¿Quieres más salmón o algunas verduras?",
+          "Creo que comeré un poco más de verduras."
+        ],
+        "pt": [
+          "Você gostaria de mais salmão ou alguns legumes?",
+          "Acho que vou comer mais alguns legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::movement::concluding",
+      "experienceId": "having-dinner",
+      "functionId": "movement",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Current-progressive eating is not directly usable as the concluded, completed enjoyable dinner.",
+      "functionAdaptation": {
+        "en": "We are eating dinner.",
+        "es": "Estamos cenando.",
+        "pt": "Estamos jantando."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. We enjoyed a special dinner together."
+        ],
+        "es": [
+          "Maravilloso. Disfrutamos juntos de una cena especial."
+        ],
+        "pt": [
+          "Maravilhoso. Desfrutamos juntos de um jantar especial."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::action::describing",
+      "experienceId": "having-dinner",
+      "functionId": "action",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Often eating together is an unestablished habit; the current meal does not prove repetition.",
+      "functionAdaptation": {
+        "en": "We often eat together.",
+        "es": "Comemos juntos a menudo.",
+        "pt": "Costumamos comer juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::action::narrating",
+      "experienceId": "having-dinner",
+      "functionId": "action",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The narrated event is single; 'often' cannot be inferred from it.",
+      "functionAdaptation": {
+        "en": "We often eat together.",
+        "es": "Comemos juntos a menudo.",
+        "pt": "Costumamos comer juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We prepared dinner together and then sat down to eat."
+        ],
+        "es": [
+          "Preparamos la cena juntos y luego nos sentamos a comer."
+        ],
+        "pt": [
+          "Preparamos o jantar juntos e depois nos sentamos para comer."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::action::debating",
+      "experienceId": "having-dinner",
+      "functionId": "action",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Selecting another serving gives no evidence of an established eating routine.",
+      "functionAdaptation": {
+        "en": "We often eat together.",
+        "es": "Comemos juntos a menudo.",
+        "pt": "Costumamos comer juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Would you like more salmon or some vegetables?",
+          "I think I'll have some more vegetables."
+        ],
+        "es": [
+          "¿Quieres más salmón o algunas verduras?",
+          "Creo que comeré un poco más de verduras."
+        ],
+        "pt": [
+          "Você gostaria de mais salmão ou alguns legumes?",
+          "Acho que vou comer mais alguns legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::action::concluding",
+      "experienceId": "having-dinner",
+      "functionId": "action",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "One special dinner cannot be promoted to a habitual eating claim.",
+      "functionAdaptation": {
+        "en": "We often eat together.",
+        "es": "Comemos juntos a menudo.",
+        "pt": "Costumamos comer juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. We enjoyed a special dinner together."
+        ],
+        "es": [
+          "Maravilloso. Disfrutamos juntos de una cena especial."
+        ],
+        "pt": [
+          "Maravilhoso. Desfrutamos juntos de um jantar especial."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::existence::describing",
+      "experienceId": "having-dinner",
+      "functionId": "existence",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Salmon on the dining table is a presence claim; the Perspective describes appearance and taste rather than contents.",
+      "functionAdaptation": {
+        "en": "There is salmon on the dining table.",
+        "es": "Hay salmón sobre la mesa del comedor.",
+        "pt": "Há salmão sobre a mesa de jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::existence::narrating",
+      "experienceId": "having-dinner",
+      "functionId": "existence",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The source narrative describes sitting to eat, but the salmon's location and number need contextual support.",
+      "functionAdaptation": {
+        "en": "There is salmon on the dining table.",
+        "es": "Hay salmón sobre la mesa del comedor.",
+        "pt": "Há salmão sobre a mesa de jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We prepared dinner together and then sat down to eat."
+        ],
+        "es": [
+          "Preparamos la cena juntos y luego nos sentamos a comer."
+        ],
+        "pt": [
+          "Preparamos o jantar juntos e depois nos sentamos para comer."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::existence::debating",
+      "experienceId": "having-dinner",
+      "functionId": "existence",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Salmon availability might make serving options possible, but it is not evidence of the preference expressed.",
+      "functionAdaptation": {
+        "en": "There is salmon on the dining table.",
+        "es": "Hay salmón sobre la mesa del comedor.",
+        "pt": "Há salmão sobre a mesa de jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Would you like more salmon or some vegetables?",
+          "I think I'll have some more vegetables."
+        ],
+        "es": [
+          "¿Quieres más salmón o algunas verduras?",
+          "Creo que comeré un poco más de verduras."
+        ],
+        "pt": [
+          "Você gostaria de mais salmão ou alguns legumes?",
+          "Acho que vou comer mais alguns legumes."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "having-dinner::existence::concluding",
+      "experienceId": "having-dinner",
+      "functionId": "existence",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Presence of a dish on the table does not alone establish enjoyment or a special shared dinner.",
+      "functionAdaptation": {
+        "en": "There is salmon on the dining table.",
+        "es": "Hay salmón sobre la mesa del comedor.",
+        "pt": "Há salmão sobre a mesa de jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. We enjoyed a special dinner together."
+        ],
+        "es": [
+          "Maravilloso. Disfrutamos juntos de una cena especial."
+        ],
+        "pt": [
+          "Maravilhoso. Desfrutamos juntos de um jantar especial."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::quality::describing",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "quality",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Conversation is important is a general principle; canonical DESCRIBING says this particular conversation is pleasant.",
+      "functionAdaptation": {
+        "en": "Conversation is important.",
+        "es": "La conversación es importante.",
+        "pt": "Conversar é importante."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The conversation is pleasant."
+        ],
+        "es": [
+          "La conversación es agradable."
+        ],
+        "pt": [
+          "A conversa é agradável."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::quality::narrating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "quality",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "CONTRAST",
+      "reason": "A general importance judgment does not narrate the completed dinner and the start of conversation.",
+      "functionAdaptation": {
+        "en": "Conversation is important.",
+        "es": "La conversación es importante.",
+        "pt": "Conversar é importante."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We finished dinner and started talking together."
+        ],
+        "es": [
+          "Terminamos la cena y empezamos a conversar juntos."
+        ],
+        "pt": [
+          "Terminamos o jantar e começamos a conversar juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::quality::debating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "quality",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The importance of discussion could justify hearing another idea, but that reason is not currently authored.",
+      "functionAdaptation": {
+        "en": "Conversation is important.",
+        "es": "La conversación es importante.",
+        "pt": "Conversar é importante."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we keep talking or listen to another idea?"
+        ],
+        "es": [
+          "¿Seguimos conversando o escuchamos otra idea?"
+        ],
+        "pt": [
+          "Continuamos conversando ou escutamos outra ideia?"
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::quality::concluding",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "quality",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Important conversation and a pleasant evening are different judgments; an explicit inference is required.",
+      "functionAdaptation": {
+        "en": "Conversation is important.",
+        "es": "La conversación es importante.",
+        "pt": "Conversar é importante."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. It was a pleasant evening together."
+        ],
+        "es": [
+          "Maravilloso. Fue una velada agradable juntos."
+        ],
+        "pt": [
+          "Maravilhoso. Foi uma noite agradável juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": "past",
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::state::describing",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "state",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "English/Spanish semantic context is close, but PT changes 'é agradável' to 'está agradável'; check nuanced temporary STATE vs quality.",
+      "functionAdaptation": {
+        "en": "The conversation is pleasant.",
+        "es": "La conversación es agradable.",
+        "pt": "A conversa está agradável."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The conversation is pleasant."
+        ],
+        "es": [
+          "La conversación es agradable."
+        ],
+        "pt": [
+          "A conversa é agradável."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::state::narrating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "state",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The conversation's current pleasantness is not the same as the earlier sequence starting to talk.",
+      "functionAdaptation": {
+        "en": "The conversation is pleasant.",
+        "es": "La conversación es agradable.",
+        "pt": "A conversa está agradável."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We finished dinner and started talking together."
+        ],
+        "es": [
+          "Terminamos la cena y empezamos a conversar juntos."
+        ],
+        "pt": [
+          "Terminamos o jantar e começamos a conversar juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::state::debating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "state",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "A pleasant state could support continuing the talk, but a learner must supply the reason rather than inherit it.",
+      "functionAdaptation": {
+        "en": "The conversation is pleasant.",
+        "es": "La conversación es agradable.",
+        "pt": "A conversa está agradável."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we keep talking or listen to another idea?"
+        ],
+        "es": [
+          "¿Seguimos conversando o escuchamos otra idea?"
+        ],
+        "pt": [
+          "Continuamos conversando ou escutamos outra ideia?"
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::state::concluding",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "state",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The conclusion is retrospective ('it was'); the function sample is present; temporal adaptation is required.",
+      "functionAdaptation": {
+        "en": "The conversation is pleasant.",
+        "es": "La conversación es agradable.",
+        "pt": "A conversa está agradável."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. It was a pleasant evening together."
+        ],
+        "es": [
+          "Maravilloso. Fue una velada agradable juntos."
+        ],
+        "pt": [
+          "Maravilhoso. Foi uma noite agradável juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": "past",
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::movement::describing",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "movement",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Talking together is current progressive action; a describing perspective here already reports the conversation's pleasant character.",
+      "functionAdaptation": {
+        "en": "We are talking together.",
+        "es": "Estamos conversando juntos.",
+        "pt": "Estamos conversando juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The conversation is pleasant."
+        ],
+        "es": [
+          "La conversación es agradable."
+        ],
+        "pt": [
+          "A conversa é agradável."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::movement::narrating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "movement",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The narrative says the group finished dinner and started talking; progressive current talking is a subsequent state.",
+      "functionAdaptation": {
+        "en": "We are talking together.",
+        "es": "Estamos conversando juntos.",
+        "pt": "Estamos conversando juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We finished dinner and started talking together."
+        ],
+        "es": [
+          "Terminamos la cena y empezamos a conversar juntos."
+        ],
+        "pt": [
+          "Terminamos o jantar e começamos a conversar juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::movement::debating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "movement",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Continuing to talk relates to an ongoing action, but the debate still requires a reasoned choice.",
+      "functionAdaptation": {
+        "en": "We are talking together.",
+        "es": "Estamos conversando juntos.",
+        "pt": "Estamos conversando juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we keep talking or listen to another idea?"
+        ],
+        "es": [
+          "¿Seguimos conversando o escuchamos otra idea?"
+        ],
+        "pt": [
+          "Continuamos conversando ou escutamos outra ideia?"
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::movement::concluding",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "movement",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Current ongoing talking does not fit the already-past narrative conclusion without a deliberate temporal transformation.",
+      "functionAdaptation": {
+        "en": "We are talking together.",
+        "es": "Estamos conversando juntos.",
+        "pt": "Estamos conversando juntos."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. It was a pleasant evening together."
+        ],
+        "es": [
+          "Maravilloso. Fue una velada agradable juntos."
+        ],
+        "pt": [
+          "Maravilhoso. Foi uma noite agradável juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": "past",
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::action::describing",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "action",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "CONTRAST",
+      "reason": "Usually talking after dinner states a habitual routine not established by the one evening.",
+      "functionAdaptation": {
+        "en": "We usually talk after dinner.",
+        "es": "Solemos conversar después de cenar.",
+        "pt": "Costumamos conversar depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The conversation is pleasant."
+        ],
+        "es": [
+          "La conversación es agradable."
+        ],
+        "pt": [
+          "A conversa é agradável."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::action::narrating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "action",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "CONTRAST",
+      "reason": "The narrated single conversation does not prove repeated behavior.",
+      "functionAdaptation": {
+        "en": "We usually talk after dinner.",
+        "es": "Solemos conversar después de cenar.",
+        "pt": "Costumamos conversar depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We finished dinner and started talking together."
+        ],
+        "es": [
+          "Terminamos la cena y empezamos a conversar juntos."
+        ],
+        "pt": [
+          "Terminamos o jantar e começamos a conversar juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::action::debating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "action",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "CONTRAST",
+      "reason": "One suggestion to continue talking does not establish a usual conversational habit.",
+      "functionAdaptation": {
+        "en": "We usually talk after dinner.",
+        "es": "Solemos conversar después de cenar.",
+        "pt": "Costumamos conversar depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we keep talking or listen to another idea?"
+        ],
+        "es": [
+          "¿Seguimos conversando o escuchamos otra idea?"
+        ],
+        "pt": [
+          "Continuamos conversando ou escutamos outra ideia?"
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::action::concluding",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "action",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "CONTRAST",
+      "reason": "A pleasant evening does not prove a repeated after-dinner routine.",
+      "functionAdaptation": {
+        "en": "We usually talk after dinner.",
+        "es": "Solemos conversar después de cenar.",
+        "pt": "Costumamos conversar depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. It was a pleasant evening together."
+        ],
+        "es": [
+          "Maravilloso. Fue una velada agradable juntos."
+        ],
+        "pt": [
+          "Maravilhoso. Foi uma noite agradável juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": "past",
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::existence::describing",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "existence",
+      "perspectiveId": "describing",
+      "color": "red",
+      "preliminaryReview": "BRIDGE",
+      "reason": "There was a pleasant conversation is a retrospective occurrence, while describing source uses present-state of conversation.",
+      "functionAdaptation": {
+        "en": "There was a pleasant conversation after dinner.",
+        "es": "Hubo una conversación agradable después de la cena.",
+        "pt": "Houve uma conversa agradável depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "The conversation is pleasant."
+        ],
+        "es": [
+          "La conversación es agradable."
+        ],
+        "pt": [
+          "A conversa é agradável."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::existence::narrating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "existence",
+      "perspectiveId": "narrating",
+      "color": "yellow",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The narrative records finishing dinner and starting conversation; eventual past occurrence needs completion semantics or timeline.",
+      "functionAdaptation": {
+        "en": "There was a pleasant conversation after dinner.",
+        "es": "Hubo una conversación agradable después de la cena.",
+        "pt": "Houve uma conversa agradável depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "We finished dinner and started talking together."
+        ],
+        "es": [
+          "Terminamos la cena y empezamos a conversar juntos."
+        ],
+        "pt": [
+          "Terminamos o jantar e começamos a conversar juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::existence::debating",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "existence",
+      "perspectiveId": "debating",
+      "color": "green",
+      "preliminaryReview": "BRIDGE",
+      "reason": "The debate is a current choice about continuing; already-past conversation occurrence is not its answer.",
+      "functionAdaptation": {
+        "en": "There was a pleasant conversation after dinner.",
+        "es": "Hubo una conversación agradable después de la cena.",
+        "pt": "Houve uma conversa agradável depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Should we keep talking or listen to another idea?"
+        ],
+        "es": [
+          "¿Seguimos conversando o escuchamos otra idea?"
+        ],
+        "pt": [
+          "Continuamos conversando ou escutamos outra ideia?"
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": null,
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    },
+    {
+      "key": "after-dinner-conversation::existence::concluding",
+      "experienceId": "after-dinner-conversation",
+      "functionId": "existence",
+      "perspectiveId": "concluding",
+      "color": "blue",
+      "preliminaryReview": "BRIDGE",
+      "reason": "Retrospective existential occurrence and concluding 'it was a pleasant evening' are compatible, but not identical propositions; preserve retrospective tense.",
+      "functionAdaptation": {
+        "en": "There was a pleasant conversation after dinner.",
+        "es": "Hubo una conversación agradable después de la cena.",
+        "pt": "Houve uma conversa agradável depois do jantar."
+      },
+      "perspectiveAuthoredExamples": {
+        "en": [
+          "Wonderful. It was a pleasant evening together."
+        ],
+        "es": [
+          "Maravilloso. Fue una velada agradable juntos."
+        ],
+        "pt": [
+          "Maravilhoso. Foi uma noite agradável juntos."
+        ]
+      },
+      "functionExampleSource": "H14.7 SIYAYO_ADAPTATION PENDING_HOMOLOGATION",
+      "perspectiveExamplesSource": "experience-seeds.json existing",
+      "timeFlag": "past",
+      "assessedLearner": false,
+      "assessmentAuthority": false,
+      "evidenceProduced": false,
+      "reviewedBy": "ASSISTANT_PRELIMINARY_SEMANTIC_AUDIT_NOT_HUMAN_HOMOLOGATION"
+    }
+  ]
+}
