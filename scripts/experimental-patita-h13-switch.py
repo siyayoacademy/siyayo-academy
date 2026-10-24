@@ -26,16 +26,19 @@ with sync_playwright() as p:
    stage='click-change'
    page.locator('#learnerIdentityChange').click()
    page.wait_for_function("() => document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='editor'")
+   print('H13.1',lang,'editing',page.evaluate("() => ({id:window.SIYAYOVerbExplorerLearnerIdentitySource.getId(),view:document.querySelector('#learnerIdentityPanel').dataset.identityDisplay,input:document.querySelector('#learnerIdentityInput').value})"),flush=True)
    stage='enter-beta'
    page.locator('#learnerIdentityInput').fill('H13-BETA-'+lang)
    page.locator('#learnerIdentityConfirm').click()
    stage='confirm-beta'
+   print('H13.1',lang,'after-beta-click',page.evaluate("() => ({id:window.SIYAYOVerbExplorerLearnerIdentitySource.getId(),view:document.querySelector('#learnerIdentityPanel').dataset.identityDisplay,status:document.querySelector('#learnerIdentityStatus').textContent})"),flush=True)
    page.wait_for_function("() => window.SIYAYOVerbExplorerLearnerIdentitySource?.getId()?.startsWith('H13-BETA-') && document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay==='compact'")
    assert not any(x['results'] for x in page.evaluate("() => window.SIYAYOPatitaInteractionTrail.projectVisible()"))
    stage='return-alpha'
    page.locator('#learnerIdentityChange').click()
    page.locator('#learnerIdentityInput').fill('H13-ALPHA-'+lang)
    page.locator('#learnerIdentityConfirm').click()
+   stage='confirm-return-alpha'
    page.wait_for_function("() => window.SIYAYOVerbExplorerLearnerIdentitySource?.getId()?.startsWith('H13-ALPHA-')")
    page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.projectVisible().some(r=>r.questionWord==='which'&&r.results>=1)")
    assert page.evaluate("() => document.querySelector('#learnerIdentityName')?.textContent")=='H13-ALPHA-'+lang
@@ -46,6 +49,11 @@ with sync_playwright() as p:
    try:page.screenshot(path=str(out/('ERROR-'+lang+'.png')),full_page=True)
    except Exception:pass
   finally:
+   if row['status']!='PASS':
+    print('H13.1 FAIL-STAGE',lang,row.get('stage'),flush=True)
+    try:
+     print('H13.1 FAIL-STATE',lang,json.dumps(page.evaluate("""() => ({id:window.SIYAYOVerbExplorerLearnerIdentitySource?.getId(),view:document.querySelector('#learnerIdentityPanel')?.dataset.identityDisplay,editorHidden:document.querySelector('#learnerIdentityEditor')?.hidden,compactHidden:document.querySelector('#learnerIdentityCompact')?.hidden,input:document.querySelector('#learnerIdentityInput')?.value,status:document.querySelector('#learnerIdentityStatus')?.textContent,experience:window.SIYAYOVerbExplorerExperienceRuntime?.activeExperienceId(),trail:window.SIYAYOPatitaInteractionTrail?.projectVisible()})""")),flush=True)
+    except Exception as diagnostic: print('H13.1 state inspection error',repr(diagnostic),flush=True)
    print('H13 SWITCH',lang,row['status'],row.get('error',''),flush=True)
    runs.append(row);ctx.close()
  b.close()
