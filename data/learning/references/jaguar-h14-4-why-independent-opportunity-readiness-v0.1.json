@@ -1,0 +1,94 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-4-why-independent-opportunity-readiness",
+  "status": "reference-only",
+  "purpose": "Source-grounded diagnostic for WHY candidates by Experience; no runtime evaluation or evidence authority",
+  "sources": [
+    "data/learning/experience-seeds.json",
+    "data/learning/skills/why.json",
+    "data/learning/references/jaguar-h14-2-qw-opportunity-map-v0.1.json",
+    "data/learning/references/jaguar-h14-3-why-s1-eligibility-v0.1.json",
+    "js/adaptive-why-contextual-reason-probe-specification-source.js",
+    "js/adaptive-assessment-scope.js"
+  ],
+  "languageSet": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "skill": "why.use.contextual-reason",
+  "candidates": [
+    {
+      "id": "H14.4-S1",
+      "originExperienceId": "shopping-for-dinner",
+      "potentialTransferExperienceId": "preparing-dinner",
+      "classification": "CANDIDATE_NOT_AUTHORIZED",
+      "localReasonSource": "presentationGrounding",
+      "localReasonId": "pairs-with-salmon",
+      "transferReasonId": "sharing-preparation",
+      "expectedBlockers": [
+        "origin-assessment-entry-missing",
+        "origin-how-question-missing",
+        "origin-reason-grounding-missing",
+        "transfer-reason-grounding-missing"
+      ],
+      "reviewNotes": [
+        "Prefer explicit cheese referent without prior WHICH credit",
+        "Preserve interrogative dialogue as grammar exercise, not direct reason-answer",
+        "Do not require HOW menu to unlock WHY",
+        "Approve scenario-distinct transfer before contract changes"
+      ]
+    },
+    {
+      "id": "H14.4-S2",
+      "originExperienceId": "preparing-dinner",
+      "potentialTransferExperienceId": "having-dinner",
+      "classification": "CANDIDATE_NOT_AUTHORIZED",
+      "localReasonSource": "presentationGrounding",
+      "localReasonId": "sharing-preparation",
+      "transferReasonId": "prepared-together",
+      "expectedBlockers": [
+        "origin-assessment-entry-missing",
+        "origin-reason-grounding-missing",
+        "transfer-already-has-independent-entry"
+      ],
+      "reviewNotes": [
+        "S2 reason and S3 dinner reason share prepared-together semantics; transfer distinctness needs human examination",
+        "S3 remains valid independent WHY origin, not silently downgraded to transfer",
+        "A dual-role Experience would require explicit contract/attempt mode discrimination"
+      ]
+    },
+    {
+      "id": "H14.4-S3",
+      "originExperienceId": "having-dinner",
+      "potentialTransferExperienceId": "after-dinner-conversation",
+      "classification": "CURRENT_AUTHORIZED",
+      "localReasonSource": "reasonGrounding",
+      "localReasonId": "prepared-together",
+      "transferReasonId": "talking-together",
+      "expectedBlockers": [],
+      "reviewNotes": [
+        "Keep current S3→S4 function/local/transfer contract and existing scope/evidence unchanged"
+      ]
+    }
+  ],
+  "futurePolicy": {
+    "independentEntry": "Each candidate WHY QW must have explicitly approved per-Experience evaluation authority; visits, QW switches and presentation cannot grant it",
+    "semanticPrerequisite": "Scene-specific referent and causal contrast are needed; prior WHICH/HOW assessment is not prerequisite",
+    "transfer": "Separate explicit transfer approval and genuinely distinct contextual reasoning; no route/visit obligation",
+    "evidence": "Only observed learner answer, canonical scope, authored probe/result and validated contract can produce evidence",
+    "scope": "learnerId × skill × language × originExperienceId; preserve retained scopes, do not relabel S3 as S1 or S2",
+    "timeModes": "PRESENT/PAST/FUTURE × AFFIRMATIVE/NEGATIVE/INTERROGATIVE require mode-appropriate reasoning; grammatical transformation is not causal response",
+    "masterVip": "Master VIP authoritatively supplies QW/word types and THERE + TO BE / EXISTENCE; latter is independent verb function, not a WHY shortcut",
+    "view": "HOW TO SHOW displays only verified current context and evidence; 0/4 contextual suitability is distinct from 0/3 Green Pass progress"
+  },
+  "authorization": {
+    "assessmentAuthority": false,
+    "assessmentEvidence": false,
+    "greenPass": false,
+    "experiencesExecutableModified": false,
+    "activeContractModified": false,
+    "patitaModified": false,
+    "workerD1Modified": false
+  }
+}

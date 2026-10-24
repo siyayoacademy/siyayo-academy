@@ -1,0 +1,20 @@
+name: JAGUAR H14.4 WHY independent opportunity gates (reference only)
+on:
+  push:
+    branches: [jaguar/patita-h14-4-why-independent-opportunities]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  source-and-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-2-opportunity-map.js
+          node scripts/test-jaguar-h14-3-why-s1-eligibility.js
+          node scripts/test-jaguar-h14-4-why-independent-opportunities.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-assessment-language-isolation.js
