@@ -34,7 +34,19 @@ with sync_playwright() as p:
    page.locator('#learningTrailWordPathModule').evaluate('(e)=>e.open=true')
    assert page.locator('#patitaInteractionLedger [data-patita-kind="patita-observed-result"]').count()>=1
    page.screenshot(path=str(out/(lang+'-where.png')),full_page=True)
-   r.update(status='PASS',where=where['resultCode'])
+   page.locator('#nextExperience').click()
+   page.wait_for_function("() => window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()==='preparing-dinner'")
+   page.locator('#nextExperience').click()
+   page.wait_for_function("() => window.SIYAYOVerbExplorerExperienceRuntime.activeExperienceId()==='having-dinner'")
+   page.locator('#questionGear [data-question-index="3"]').click()
+   page.wait_for_function("() => !document.querySelector('#whyAssessmentPanel')?.hidden",timeout=12000)
+   page.locator('#whyAssessmentPanel .why-contextual-reason-probe .why-probe-option').first.click()
+   page.wait_for_function("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().some(r=>r.source==='canonical-probe'&&r.questionWord==='why')",timeout=8000)
+   why=page.evaluate("() => window.SIYAYOPatitaInteractionTrail.getVisibleRecords().filter(r=>r.source==='canonical-probe'&&r.questionWord==='why').at(-1)")
+   assert why['phase']=='assessment-attempt' and why['evidenceProduced']==False and why['skill']=='why.use.contextual-reason',why
+   assert why['resultCode'] in ('pass','fail'),why
+   page.screenshot(path=str(out/(lang+'-why.png')),full_page=True)
+   r.update(status='PASS',where=where['resultCode'],why=why['resultCode'])
   except Exception as e:
    r.update(error=repr(e)[:700],trace=traceback.format_exc()[-1200:])
    try:page.screenshot(path=str(out/('ERROR-'+lang+'.png')),full_page=True)
