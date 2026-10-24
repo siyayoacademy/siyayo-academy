@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIYAYO H14.10 · Master VIP Contextual Practice</title>
+<style>
+:root{color-scheme:dark;--navy:#071b2f;--gold:#dfbd6c;--goldline:#a58b53;--primary:#112e4a;--bright:#74b8f0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#123859,var(--navy) 68%);color:#eff4f7;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+main{max-width:960px;margin:auto;padding:22px 15px 55px}h1{font-size:clamp(1.5rem,5vw,2.6rem);color:var(--gold);margin:.2em 0}h2{margin:0 0 12px;font-size:1.25rem}h3{margin:0 0 5px;font-size:1rem}p{margin:8px 0}.eyebrow{font-size:.78rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase}.panel{border:1px solid var(--goldline);background:#112a44e9;border-radius:17px;padding:18px;margin:16px 0}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}button{font:inherit;background:#12395b;border:1px solid #877340;color:#edf5ff;padding:10px 13px;border-radius:9px;cursor:pointer}button[aria-pressed=true]{background:var(--gold);color:#081c30;font-weight:700}button:focus-visible{outline:3px solid var(--bright);outline-offset:3px}.muted{color:#c4d2de;font-size:.88rem}.sample{background:#081d32;border:1px solid #304760;border-left:4px solid #e0bd6f;padding:14px;border-radius:8px;margin:9px 0}.source{border-left-color:#2089cb}.describing{border-left-color:#e24049}.narrating{border-left-color:#ecd530}.source-label{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:#d1c08f}.status{color:#f3d18a;font-size:.79rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.hide{display:none}footer{font-size:.8rem;color:#beccd7;margin-top:20px}blockquote{margin:6px 0}#answer[hidden]{display:none}
+</style></head><body>
+<main><div class="eyebrow">🔔🐆 SIYAYO · JAGUAR H14.10 · MASTER VIP</div>
+<h1>Primeiras provas em Estudo Fino</h1>
+<p class="muted">Laboratório pedagógico isolado: demonstra tarefas e respostas de referência. Não avalia o aluno, não concede Green Pass e não grava dados.</p>
+<div class="tabs" id="langs" aria-label="Idioma">
+<button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button><button type="button" data-lang="pt">PT</button>
+</div>
+<div class="tabs" id="lessons" aria-label="Proposta">
+<button type="button" data-task="0">S3 · STATE × DESCRIBING 🔴</button><button type="button" data-task="1">S2 · MOVEMENT × NARRATING 🟡</button>
+</div>
+<section class="panel"><div class="eyebrow" id="meta"></div><h2 id="title"></h2>
+<div class="grid">
+<div class="sample source"><div class="source-label">PERSPECTIVE · frase original do JSON</div><p id="perspectiveSource"></p></div>
+<div class="sample"><div class="source-label">FUNÇÃO VERBAL · adaptação H14.7</div><p id="functionSource"></p></div>
+</div>
+<div class="sample"><div class="source-label">SIYAYO_ADAPTATION · pergunta em estudo</div>
+<p id="instruction"></p><strong id="question"></strong></div>
+<button type="button" id="toggle" aria-expanded="false" aria-controls="answer">Mostrar resposta de referência</button>
+<div class="sample" id="answer" hidden><div class="source-label">Resposta autorada · não é Evidence</div><p id="reference"></p></div>
+<div class="sample source"><div class="source-label">ESTUDO FINO · diferença semântica</div><p id="contrast"></p></div>
+<p class="status">PENDING_HUMAN_HOMOLOGATION · sem pontuação, sem Attempt e sem PATITA funcional</p>
+</section>
+<section class="panel"><h3>Fidelidade ao método</h3><p>MASTER_ORIGINAL: STATE → TO BE; MOVEMENT → TO BE + VERB-ING. DESCRIBING e NARRATING são perspectivas comunicativas, não contratos. PAST, PRESENT, MODE e PERIOD não são alterados pela simples navegação.</p><p class="muted">A cena S3 sobre o sabor requer revisão da nuance STATE × QUALITY. A cena S2 cruza acontecimentos passados com ação progressiva atual sem atribuir automaticamente transferência de aprendizagem.</p></section>
+<footer>EXISTENCE permanece independente das QWs. S3→S4 WHY, PATITA, main, PR #3, produção e Worker/D1 não são modificados neste laboratório.</footer></main>
+<script>
+'use strict';
+const tasks=[{"id":"H14-10-S3-STATE-DESCRIBING","experienceId":"having-dinner","functionId":"state","perspectiveId":"describing","sourceRelation":"having-dinner::state::describing","masterPattern":"TO BE","sourceMasterPage":10,"curricularStatus":"PENDING_HUMAN_HOMOLOGATION","provenance":"SIYAYO_ADAPTATION","exerciseMode":"AFFIRMATIVE","canonicalPerspectiveExamples":{"en":["The dinner looks beautiful.","The salmon tastes delicious."],"es":["La cena se ve hermosa.","El salmón está delicioso."],"pt":["O jantar está bonito.","O salmão está delicioso."]},"sourceFunctionAdaptation":{"en":"The salmon is delicious.","es":"El salmón está delicioso.","pt":"O salmão está delicioso."},"contextualPrompt":{"instruction":{"en":"Describe how the salmon is perceived during this dinner. Use TO BE to express its state.","es":"Describe cómo está el salmón durante esta cena. Usa ESTAR para expresar su estado.","pt":"Descreva como está o salmão durante este jantar. Use ESTAR para expressar seu estado."},"question":{"en":"How is the salmon during dinner?","es":"¿Cómo está el salmón durante la cena?","pt":"Como está o salmão durante o jantar?"},"referenceAnswer":{"en":"The salmon is delicious.","es":"El salmón está delicioso.","pt":"O salmão está delicioso."}},"optionalQW":{"id":"how","authoredQuestionIsNotCanonicalQWText":true,"requiresQWSelection":false,"assessmentTarget":false},"grammarFunctionContrast":{"en":"The salmon tastes delicious. (authored DESCRIBING, lexical 'tastes') ≠ The salmon is delicious. (TO BE structure, function classification requires situated review)","es":"El salmón está delicioso. (perspectiva y ejemplo coinciden en la superficie; revisar función y contexto)","pt":"O salmão está delicioso. (perspectiva e exemplo coincidem na superfície; revisar função e contexto)"},"evaluationDesign":[{"dimension":"function-recognition","draftOnly":true,"criterion":"Recognize TO BE/ESTAR structure; do not mark lexical 'taste' as identical in form."},{"dimension":"situated-response","draftOnly":true,"criterion":"Describe the dinner-scene salmon without claiming an unobserved permanent property."},{"dimension":"semantic-transfer","draftOnly":true,"criterion":"New scene requires separately authored answer with different referent, observed learner action and approved origin-scope contract."}],"semanticCautions":["In English, delicious can be interpreted as a food quality; in this dinner's Spanish/Portuguese ESTAR emphasizes evaluated current condition. Human review must decide if this is a valid instance of Master introductory STATE rather than QUALITY.","A learner may legitimately disagree about taste; score only with an explicitly defined narrative-reference task, not an actual personal tasting assessment.","Do not equate existing perspective 'The salmon tastes delicious' with the grammar of TO BE."],"sourceStatus":"SOURCE_CLOSE_NOT_APPROVED","canScore":false,"canProduceEvidence":false,"greenPass":false},{"id":"H14-10-S2-MOVEMENT-NARRATING","experienceId":"preparing-dinner","functionId":"movement","perspectiveId":"narrating","sourceRelation":"preparing-dinner::movement::narrating","masterPattern":"TO BE + VERB-ING","sourceMasterPage":10,"curricularStatus":"PENDING_HUMAN_HOMOLOGATION","provenance":"SIYAYO_ADAPTATION","exerciseMode":"AFFIRMATIVE","canonicalPerspectiveExamples":{"en":["We came home, opened the groceries and started preparing dinner."],"es":["Llegamos a casa, abrimos las compras y empezamos a preparar la cena."],"pt":["Chegamos em casa, abrimos as compras e começamos a preparar o jantar."]},"sourceFunctionAdaptation":{"en":"We are preparing dinner.","es":"Estamos preparando la cena.","pt":"Estamos preparando o jantar."},"contextualPrompt":{"instruction":{"en":"Link the earlier narrated events to the ongoing action now. Use TO BE + VERB-ING for what is in progress.","es":"Relaciona los acontecimientos narrados anteriormente con la acción que ocurre ahora. Usa ESTAR + gerundio para lo que está en desarrollo.","pt":"Relacione os acontecimentos narrados anteriormente com a ação que ocorre agora. Use ESTAR + gerúndio para o que está em desenvolvimento."},"question":{"en":"We came home and started preparing dinner. What are we doing now?","es":"Llegamos a casa y empezamos a preparar la cena. ¿Qué estamos haciendo ahora?","pt":"Chegamos em casa e começamos a preparar o jantar. O que estamos fazendo agora?"},"referenceAnswer":{"en":"We are preparing dinner.","es":"Estamos preparando la cena.","pt":"Estamos preparando o jantar."}},"optionalQW":{"id":"what","authoredQuestionIsNotCanonicalQWText":true,"requiresQWSelection":false,"assessmentTarget":false},"grammarFunctionContrast":{"en":"We came home (completed past event; physical displacement) ≠ We are preparing dinner (present progressive, Master MOVEMENT).","es":"Llegamos a casa (evento pasado) ≠ Estamos preparando la cena (acción progresiva actual).","pt":"Chegamos em casa (evento passado) ≠ Estamos preparando o jantar (ação progressiva atual)."},"evaluationDesign":[{"dimension":"function-recognition","draftOnly":true,"criterion":"Identify present progressive as Master MOVEMENT (TO BE + ING), not physical displacement."},{"dimension":"narrative-temporal-coherence","draftOnly":true,"criterion":"Retain past-before-present scene timeline; distinguish came/started from are preparing."},{"dimension":"semantic-transfer","draftOnly":true,"criterion":"A different scene and new learner response would need its own homologated transfer specification and approved contract."}],"semanticCautions":["'We came home' is lexical past physical displacement, not the Master MOVEMENT progressive by itself.","The present activity is established by S2 source situation, but the dialogue question is a new SIYAYO adaptation, not canonical S2 WHAT assessment question.","Do not infer PAST PROGRESSIVE or completed-period evidence from past narrative line."],"sourceStatus":"BRIDGE_AUTHORING_DRAFT_NOT_APPROVED","canScore":false,"canProduceEvidence":false,"greenPass":false}];
+const state={lang:'pt',task:0,reveal:false};
+const el=id=>document.getElementById(id);
+function render(){
+ document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===state.lang)));
+ document.querySelectorAll('[data-task]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.task)===state.task)));
+ const t=tasks[state.task],l=state.lang;
+ el('meta').textContent=t.experienceId+' · '+t.functionId.toUpperCase()+' × '+t.perspectiveId.toUpperCase();
+ el('title').textContent= t.id;
+ el('perspectiveSource').textContent=t.canonicalPerspectiveExamples[l].join(' — ');
+ el('functionSource').textContent=t.sourceFunctionAdaptation[l];
+ el('instruction').textContent=t.contextualPrompt.instruction[l];
+ el('question').textContent=t.contextualPrompt.question[l];
+ el('reference').textContent=t.contextualPrompt.referenceAnswer[l];
+ el('contrast').textContent=t.grammarFunctionContrast[l];
+ el('answer').hidden=!state.reveal;
+ el('toggle').setAttribute('aria-expanded',String(state.reveal));
+ el('toggle').textContent=state.reveal?'Ocultar resposta de referência':'Mostrar resposta de referência';
+}
+document.addEventListener('click',event=>{
+ const b=event.target.closest('button');if(!b)return;
+ if(b.dataset.lang){state.lang=b.dataset.lang;state.reveal=false;}
+ if(b.dataset.task!==undefined){state.task=Number(b.dataset.task);state.reveal=false;}
+ if(b.id==='toggle')state.reveal=!state.reveal;
+ render();
+});
+render();
+</script></body></html>

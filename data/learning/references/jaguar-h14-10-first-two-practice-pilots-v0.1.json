@@ -1,0 +1,223 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-10-first-two-pedagogical-pilots",
+  "status": "PENDING_HUMAN_HOMOLOGATION_REFERENCE_AND_STATIC_LAB_ONLY",
+  "primarySource": "STRUCTURE- KIND OF WORDS.docx — MASTER_ORIGINAL definitions, original not redistributed",
+  "sourceReferences": [
+    "data/learning/experience-seeds.json",
+    "data/learning/references/master-vip-verb-functions-v0.1.json",
+    "data/learning/references/jaguar-h14-9-semantic-80-review-v0.1.json"
+  ],
+  "distinctions": [
+    "Source MASTER_ORIGINAL definition",
+    "Canonical perspective sentence",
+    "SIYAYO_ADAPTATION contextual exercise",
+    "human review status",
+    "explicit attempt/evidence contract only if independently authorized"
+  ],
+  "perspectiveColors": {
+    "describing": "red",
+    "narrating": "yellow",
+    "debating": "green",
+    "concluding": "blue"
+  },
+  "languages": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "tense": "PRESENT",
+  "mode": "AFFIRMATIVE",
+  "period": "CURRENT_SCENE_NOT_PERFECT",
+  "tasks": [
+    {
+      "id": "H14-10-S3-STATE-DESCRIBING",
+      "experienceId": "having-dinner",
+      "functionId": "state",
+      "perspectiveId": "describing",
+      "sourceRelation": "having-dinner::state::describing",
+      "masterPattern": "TO BE",
+      "sourceMasterPage": 10,
+      "curricularStatus": "PENDING_HUMAN_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "exerciseMode": "AFFIRMATIVE",
+      "canonicalPerspectiveExamples": {
+        "en": [
+          "The dinner looks beautiful.",
+          "The salmon tastes delicious."
+        ],
+        "es": [
+          "La cena se ve hermosa.",
+          "El salmón está delicioso."
+        ],
+        "pt": [
+          "O jantar está bonito.",
+          "O salmão está delicioso."
+        ]
+      },
+      "sourceFunctionAdaptation": {
+        "en": "The salmon is delicious.",
+        "es": "El salmón está delicioso.",
+        "pt": "O salmão está delicioso."
+      },
+      "contextualPrompt": {
+        "instruction": {
+          "en": "Describe how the salmon is perceived during this dinner. Use TO BE to express its state.",
+          "es": "Describe cómo está el salmón durante esta cena. Usa ESTAR para expresar su estado.",
+          "pt": "Descreva como está o salmão durante este jantar. Use ESTAR para expressar seu estado."
+        },
+        "question": {
+          "en": "How is the salmon during dinner?",
+          "es": "¿Cómo está el salmón durante la cena?",
+          "pt": "Como está o salmão durante o jantar?"
+        },
+        "referenceAnswer": {
+          "en": "The salmon is delicious.",
+          "es": "El salmón está delicioso.",
+          "pt": "O salmão está delicioso."
+        }
+      },
+      "optionalQW": {
+        "id": "how",
+        "authoredQuestionIsNotCanonicalQWText": true,
+        "requiresQWSelection": false,
+        "assessmentTarget": false
+      },
+      "grammarFunctionContrast": {
+        "en": "The salmon tastes delicious. (authored DESCRIBING, lexical 'tastes') ≠ The salmon is delicious. (TO BE structure, function classification requires situated review)",
+        "es": "El salmón está delicioso. (perspectiva y ejemplo coinciden en la superficie; revisar función y contexto)",
+        "pt": "O salmão está delicioso. (perspectiva e exemplo coincidem na superfície; revisar função e contexto)"
+      },
+      "evaluationDesign": [
+        {
+          "dimension": "function-recognition",
+          "draftOnly": true,
+          "criterion": "Recognize TO BE/ESTAR structure; do not mark lexical 'taste' as identical in form."
+        },
+        {
+          "dimension": "situated-response",
+          "draftOnly": true,
+          "criterion": "Describe the dinner-scene salmon without claiming an unobserved permanent property."
+        },
+        {
+          "dimension": "semantic-transfer",
+          "draftOnly": true,
+          "criterion": "New scene requires separately authored answer with different referent, observed learner action and approved origin-scope contract."
+        }
+      ],
+      "semanticCautions": [
+        "In English, delicious can be interpreted as a food quality; in this dinner's Spanish/Portuguese ESTAR emphasizes evaluated current condition. Human review must decide if this is a valid instance of Master introductory STATE rather than QUALITY.",
+        "A learner may legitimately disagree about taste; score only with an explicitly defined narrative-reference task, not an actual personal tasting assessment.",
+        "Do not equate existing perspective 'The salmon tastes delicious' with the grammar of TO BE."
+      ],
+      "sourceStatus": "SOURCE_CLOSE_NOT_APPROVED",
+      "canScore": false,
+      "canProduceEvidence": false,
+      "greenPass": false
+    },
+    {
+      "id": "H14-10-S2-MOVEMENT-NARRATING",
+      "experienceId": "preparing-dinner",
+      "functionId": "movement",
+      "perspectiveId": "narrating",
+      "sourceRelation": "preparing-dinner::movement::narrating",
+      "masterPattern": "TO BE + VERB-ING",
+      "sourceMasterPage": 10,
+      "curricularStatus": "PENDING_HUMAN_HOMOLOGATION",
+      "provenance": "SIYAYO_ADAPTATION",
+      "exerciseMode": "AFFIRMATIVE",
+      "canonicalPerspectiveExamples": {
+        "en": [
+          "We came home, opened the groceries and started preparing dinner."
+        ],
+        "es": [
+          "Llegamos a casa, abrimos las compras y empezamos a preparar la cena."
+        ],
+        "pt": [
+          "Chegamos em casa, abrimos as compras e começamos a preparar o jantar."
+        ]
+      },
+      "sourceFunctionAdaptation": {
+        "en": "We are preparing dinner.",
+        "es": "Estamos preparando la cena.",
+        "pt": "Estamos preparando o jantar."
+      },
+      "contextualPrompt": {
+        "instruction": {
+          "en": "Link the earlier narrated events to the ongoing action now. Use TO BE + VERB-ING for what is in progress.",
+          "es": "Relaciona los acontecimientos narrados anteriormente con la acción que ocurre ahora. Usa ESTAR + gerundio para lo que está en desarrollo.",
+          "pt": "Relacione os acontecimentos narrados anteriormente com a ação que ocorre agora. Use ESTAR + gerúndio para o que está em desenvolvimento."
+        },
+        "question": {
+          "en": "We came home and started preparing dinner. What are we doing now?",
+          "es": "Llegamos a casa y empezamos a preparar la cena. ¿Qué estamos haciendo ahora?",
+          "pt": "Chegamos em casa e começamos a preparar o jantar. O que estamos fazendo agora?"
+        },
+        "referenceAnswer": {
+          "en": "We are preparing dinner.",
+          "es": "Estamos preparando la cena.",
+          "pt": "Estamos preparando o jantar."
+        }
+      },
+      "optionalQW": {
+        "id": "what",
+        "authoredQuestionIsNotCanonicalQWText": true,
+        "requiresQWSelection": false,
+        "assessmentTarget": false
+      },
+      "grammarFunctionContrast": {
+        "en": "We came home (completed past event; physical displacement) ≠ We are preparing dinner (present progressive, Master MOVEMENT).",
+        "es": "Llegamos a casa (evento pasado) ≠ Estamos preparando la cena (acción progresiva actual).",
+        "pt": "Chegamos em casa (evento passado) ≠ Estamos preparando o jantar (ação progressiva atual)."
+      },
+      "evaluationDesign": [
+        {
+          "dimension": "function-recognition",
+          "draftOnly": true,
+          "criterion": "Identify present progressive as Master MOVEMENT (TO BE + ING), not physical displacement."
+        },
+        {
+          "dimension": "narrative-temporal-coherence",
+          "draftOnly": true,
+          "criterion": "Retain past-before-present scene timeline; distinguish came/started from are preparing."
+        },
+        {
+          "dimension": "semantic-transfer",
+          "draftOnly": true,
+          "criterion": "A different scene and new learner response would need its own homologated transfer specification and approved contract."
+        }
+      ],
+      "semanticCautions": [
+        "'We came home' is lexical past physical displacement, not the Master MOVEMENT progressive by itself.",
+        "The present activity is established by S2 source situation, but the dialogue question is a new SIYAYO adaptation, not canonical S2 WHAT assessment question.",
+        "Do not infer PAST PROGRESSIVE or completed-period evidence from past narrative line."
+      ],
+      "sourceStatus": "BRIDGE_AUTHORING_DRAFT_NOT_APPROVED",
+      "canScore": false,
+      "canProduceEvidence": false,
+      "greenPass": false
+    }
+  ],
+  "authority": {
+    "newAssessmentTarget": false,
+    "newAssessmentResumeTarget": false,
+    "assessmentAttempt": false,
+    "assessmentEvidence": false,
+    "greenPass": false,
+    "canonicalExperiencesModified": false,
+    "canonicalPassContractModified": false,
+    "patitaRuntimeModified": false,
+    "productionModified": false,
+    "mainModified": false,
+    "pr3Modified": false,
+    "workerD1RemoteModified": false
+  },
+  "nextGate": [
+    "Review S3 STATE vs QUALITY nuance (English lexical quality vs Spanish/Portuguese temporary state)",
+    "Approve source-grounded EN/ES/PT prompts and learner-independent practice actions",
+    "Approve S2 past→present progressive temporal bridge",
+    "Author transfer exercises in distinct context before proposing new Pass Contract",
+    "Ensure all 80 relations remain review-only until separately audited and homologated",
+    "Visual/browser review desktop+portrait+landscape and audio if added"
+  ]
+}
