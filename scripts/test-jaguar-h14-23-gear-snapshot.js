@@ -5,7 +5,7 @@ const original=fs.readFileSync('js/verb-explorer.js','utf8'),html=fs.readFileSyn
 for(const id of ['experienceLanguageGear','experienceTenseGear','experienceModeGear','perspectiveGear','wordTypeGear'])assert.ok(html.includes('id="'+id+'"'));
 const refs={experienceId:'shopping-for-dinner',lang:'en',qw:'what'};
 const buttons=(attribute,chosen,disabled=false)=>['en','es','pt'].map(x=>({classList:{contains:c=>c==='active'&&x===chosen},getAttribute:k=>k===attribute?x:null,disabled}));
-function gear(attr,options,selected,lock=false){return{querySelectorAll:()=>options.map(x=>({classList:{contains:c=>c==='active'&&x===selected},getAttribute:k=>k===attr?x:null,dataset:{perspective:x},disabled:lock}))};}
+function gear(attr,options,selected,lock=false){return{querySelectorAll:selector=>options.filter(x=>!selector.includes('.active')||x===selected).map(x=>({classList:{contains:c=>c==='active'&&x===selected},getAttribute:k=>k===attr?x:null,dataset:{perspective:x},disabled:lock}))};}
 const nodes={
  experienceLanguageGear:gear('data-experience-language',['en','es','pt'],'en'),
  experienceTenseGear:gear('data-experience-tense',['present','past','future'],'present'),
