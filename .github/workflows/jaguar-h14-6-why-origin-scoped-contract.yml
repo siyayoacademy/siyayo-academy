@@ -1,0 +1,24 @@
+name: JAGUAR H14.6 WHY origin-scoped contract draft
+on:
+  push:
+    branches: [jaguar/patita-h14-6-why-origin-scoped-contract-draft]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  reference-and-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check scripts/jaguar-h14-6-contract-inspector.js
+          node scripts/test-jaguar-h14-2-opportunity-map.js
+          node scripts/test-jaguar-h14-3-why-s1-eligibility.js
+          node scripts/test-jaguar-h14-4-why-independent-opportunities.js
+          node scripts/test-jaguar-h14-5-why-s1-s2-context-transfer.js
+          node scripts/test-jaguar-h14-6-why-origin-scoped-contract.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-assessment-language-isolation.js
+          node scripts/test-verb-explorer-thinking-mind-assessment-selection.js

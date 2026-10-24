@@ -1,0 +1,140 @@
+{
+  "version": "0.1.0",
+  "id": "jaguar-h14-6-why-origin-scoped-contract-draft",
+  "status": "SPECIFIED_NOT_AUTHORIZED",
+  "kind": "reference-only-contract-proposal",
+  "sourceCheckpoint": "JAGUAR-H14.5",
+  "skill": "why.use.contextual-reason",
+  "sourceSkillDefinition": "data/learning/skills/why.json",
+  "passRequirements": [
+    "question-function",
+    "reason-answer(local)",
+    "reason-answer(transfer)"
+  ],
+  "contractRegistry": [
+    {
+      "id": "WHY-S1-S2-DRAFT",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "originExperienceId": "shopping-for-dinner",
+      "transferExperienceId": "preparing-dinner",
+      "localReasonId": "pairs-with-salmon",
+      "transferReasonId": "sharing-preparation",
+      "localSemanticRole": "ingredient-preference",
+      "transferSemanticRole": "shared-preparation",
+      "sourceType": "presentationGrounding",
+      "authority": false,
+      "canMintEvidence": false
+    },
+    {
+      "id": "WHY-S2-S1-DRAFT",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "originExperienceId": "preparing-dinner",
+      "transferExperienceId": "shopping-for-dinner",
+      "localReasonId": "sharing-preparation",
+      "transferReasonId": "pairs-with-salmon",
+      "localSemanticRole": "shared-preparation",
+      "transferSemanticRole": "ingredient-preference",
+      "sourceType": "presentationGrounding",
+      "authority": false,
+      "canMintEvidence": false,
+      "transferConcern": "Return to S1 is only a candidate scene re-entry, not an assumed chronological route"
+    },
+    {
+      "id": "WHY-S3-S4-CANONICAL",
+      "status": "EXISTING_CANONICAL_UNCHANGED",
+      "originExperienceId": "having-dinner",
+      "transferExperienceId": "after-dinner-conversation",
+      "localReasonId": "prepared-together",
+      "transferReasonId": "talking-together",
+      "localSemanticRole": "why-dinner-is-special",
+      "transferSemanticRole": "why-enjoy-conversation",
+      "sourceType": "reasonGrounding",
+      "authority": "already-declared-in-experience-seeds",
+      "canMintEvidence": "only-through-existing-canonical-runtime"
+    }
+  ],
+  "deferred": [
+    {
+      "experienceId": "after-dinner-conversation",
+      "questionWord": "why",
+      "status": "CONTEXT_ONLY_NO_INDEPENDENT_ENTRY",
+      "reason": "S4 is the authorized transfer of S3; separate S4 origin needs distinct approved transfer and independent contract"
+    }
+  ],
+  "intentModel": {
+    "selectionIntents": [
+      "start",
+      "resume",
+      "transfer"
+    ],
+    "explicitOriginRequiredFor": [
+      "resume",
+      "transfer"
+    ],
+    "noImplicitStartFromVisit": true,
+    "noImplicitTransferFromNext": true,
+    "noPreviousWhichOrHowRequired": true,
+    "dualRoleExperienceId": "preparing-dinner",
+    "dualRolePolicy": "Explicit intent and origin scope decide whether S2 is local (S2-origin) or transfer (S1-origin); any ambiguity fails closed"
+  },
+  "scopeModel": {
+    "ownerFields": [
+      "learnerId",
+      "skill",
+      "language",
+      "originExperienceId"
+    ],
+    "persistPreviousScope": true,
+    "languageIsolation": true,
+    "noCrossNickCredit": true,
+    "noCrossOriginCredit": true,
+    "sourceApi": "js/adaptive-assessment-scope.js",
+    "authBoundary": "NICK is a display identity; real backend authentication is separately required"
+  },
+  "proofPolicy": {
+    "questionFunction": "Recognize WHY as causal gap; contrast with HOW as concept, not required HOW menu or prior HOW assessment",
+    "local": "Observed independent answer to situated WHY, not listening or grammatical reformulation",
+    "transfer": "Observed independent reason in approved alternate scene; same skill different causal context; may be attempted before local proof but cannot close Pass Contract without all requirements",
+    "counting": "Each occurrence evaluated once in exact learner × skill × language × origin scope; no dual assignment",
+    "progress": "Only existing canonical Evidence and Pass Contract can advance 0/3→3/3",
+    "contextualScore": "0/4 contextual adequacy remains separate from canonical 0/3 progress"
+  },
+  "pedagogy": {
+    "provenance": "SIYAYO_ADAPTATION",
+    "masterVIP": "STRUCTURE- KIND OF WORDS.docx",
+    "whyRole": "WHY = reason",
+    "howRole": "HOW = manner",
+    "wordKinds": "The Ten Kinds of Words",
+    "existence": "THERE + TO BE / THERE IS / THERE ARE is a separate EXISTENCE function, not WHY authority",
+    "tenses": [
+      "PRESENT",
+      "PAST",
+      "FUTURE"
+    ],
+    "modes": [
+      "AFFIRMATIVE",
+      "NEGATIVE",
+      "INTERROGATIVE"
+    ],
+    "activePilotSubset": "PRESENT / AFFIRMATIVE / EN-ES-PT contextual authoring reference only; grammar modes do not automatically become reason-answer evidence"
+  },
+  "adoptionGates": [
+    "Approve local and transfer tasks/distractors and independent learner actions EN/ES/PT",
+    "Approve per-origin contract changes and conflict rule when S2 has dual roles",
+    "Source-backed specification independently authoring HOW contrast without requiring HOW QW menu",
+    "Demonstrate snapshot retention on QW/language/Experience switches",
+    "Cross-origin, cross-language and cross-NICK fail-closed tests",
+    "Actual browser EN/ES/PT desktop/portrait/landscape, speech and Word Path/PATITA provenance",
+    "Keep S3→S4 3/3 regressions green",
+    "Human homologation then separate runtime authorization"
+  ],
+  "newAssessmentAuthority": false,
+  "newAssessmentEvidence": false,
+  "newGreenPass": false,
+  "runtimeChanges": false,
+  "mainChanges": false,
+  "pr3Changes": false,
+  "cloudflareProductionChanges": false,
+  "workerD1RemoteChanges": false,
+  "requiresHumanHomologation": true
+}
