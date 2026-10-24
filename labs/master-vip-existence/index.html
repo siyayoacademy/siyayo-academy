@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIYAYO · MASTER VIP · EXISTENCE LAB</title>
+<style>
+:root{color-scheme:dark;--gold:#dfbd6c;--navy:#061c31;--panel:#102a45;--line:#ad8e49;--blue:#6db2ef}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#123653,var(--navy) 65%);color:#f6f3e9;font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+main{max-width:1000px;padding:24px 18px 60px;margin:auto}h1,h2{color:var(--gold);margin:.2em 0}h1{font-size:clamp(1.8rem,5vw,3rem)}p{margin:.5em 0 1em}.eyebrow{color:var(--gold);font-size:.8rem;letter-spacing:.19em;text-transform:uppercase}.panel{background:#0e2944d9;border:1px solid var(--line);border-radius:17px;padding:20px;margin-top:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button{background:#133653;color:white;border:1px solid #937842;padding:11px 14px;border-radius:9px;cursor:pointer;font:inherit}button[aria-pressed=true]{background:#dfbd6c;color:#071a2c;font-weight:700}button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.line{padding:15px;margin:8px 0;background:#071e34;border-left:3px solid var(--gold);border-radius:7px}.small{color:#c4d1df;font-size:.88rem}.original{background:#142a36;border-radius:12px;padding:12px;border:1px solid #486276}.status{color:#f0c879;font-size:.8rem;letter-spacing:.06em}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}footer{color:#d0d9df;font-size:.85rem;margin-top:24px}output{display:block;color:#e3f4ff;white-space:pre-line}
+</style></head><body><main>
+<div class="eyebrow">🔔 🐆 SIYAYO ACADEMY · THE TEN KINDS OF WORDS</div>
+<h1>EXISTENCE · THERE + TO BE</h1>
+<p>Laboratório independente da função verbal <strong>EXISTENCE</strong>, em referência à Apostila Master VIP. Não depende de selecionar Question Words.</p>
+<div class="panel original"><div class="status">MASTER_ORIGINAL · Referência didática</div><h2>EXISTENCE ≠ POSSESSION</h2>
+<p><strong>THERE + TO BE</strong> apresenta existência, presença ou ocorrência. <strong>HAVE</strong> com sujeito pode indicar posse. Não confundir com <em>there</em> locativo.</p>
+<p class="small">Parâmetros didáticos: PRESENT / PAST / FUTURE / PRESENT PERIOD / PAST PERIOD. A aplicação de FUTURE PERIOD permanece para estudo posterior. Fonte: STRUCTURE- KIND OF WORDS.docx, páginas de EXISTENCE; texto integral não redistribuído.</p></div>
+<section class="panel" aria-labelledby="scenes"><div class="row"><h2 id="scenes">Espelho das Experiences</h2><span class="status">SIYAYO_ADAPTATION · PENDING_HOMOLOGATION</span></div>
+<div class="tabs" id="langs" aria-label="Idioma"><button type="button" data-lang="en">EN</button><button type="button" data-lang="es">ES</button><button type="button" data-lang="pt">PT</button></div>
+<div class="tabs" id="scenetabs" aria-label="Experience"><button type="button" data-scene="0">S1 Shopping</button><button type="button" data-scene="1">S2 Preparing</button><button type="button" data-scene="2">S3 Having</button><button type="button" data-scene="3">S4 After-Dinner</button></div>
+<div class="line" id="sentence"></div><p class="small" id="sceneinfo"></p>
+</section>
+<section class="panel"><h2>TENSE × MODE</h2><p class="small">Paradigmas da Master VIP para investigação; são estruturas, não provas de resposta contextual.</p>
+<div class="tabs" id="tenses" aria-label="Tempo"><button type="button" data-tense="present">PRESENT</button><button type="button" data-tense="past">PAST</button><button type="button" data-tense="future">FUTURE</button><button type="button" data-tense="presentPerfect">PRESENT PERIOD</button><button type="button" data-tense="pastPerfect">PAST PERIOD</button></div>
+<div class="tabs" id="modes" aria-label="Modo"><button type="button" data-mode="affirmative">AFFIRMATIVE</button><button type="button" data-mode="negative">NEGATIVE</button><button type="button" data-mode="interrogative">INTERROGATIVE</button></div>
+<output id="paradigm"></output>
+</section>
+<section class="panel"><h2>Cruzamento independente</h2><div class="grid"><div class="original"><strong>Master VIP</strong><p>Original pedagógico → definição.</p></div><div class="original"><strong>ESTUDO FINO</strong><p>Análise semântica e trilíngue, sem substituir a fonte.</p></div><div class="original"><strong>EXPERIENCE</strong><p>Aplicação de contexto, objeto, número, situação e tempo.</p></div><div class="original"><strong>PATITA / CONTRATO</strong><p>Observação livre; nenhuma evidência avaliativa criada neste laboratório.</p></div></div></section>
+<footer>H14.7 · Protótipo estático isolado · Sem login, sem gravação, sem áudio automático, sem PATITA funcional, sem Green Pass, sem alterações na produção.</footer>
+</main>
+<script>
+"use strict";
+const sentences=[
+{en:"There is fresh cheese in the supermarket.",es:"Hay queso fresco en el supermercado.",pt:"Há queijo fresco no supermercado."},
+{en:"There are carrots on the kitchen table.",es:"Hay zanahorias sobre la mesa de la cocina.",pt:"Há cenouras sobre a mesa da cozinha."},
+{en:"There is salmon on the dining table.",es:"Hay salmón sobre la mesa del comedor.",pt:"Há salmão sobre a mesa de jantar."},
+{en:"There was a pleasant conversation after dinner.",es:"Hubo una conversación agradable después de la cena.",pt:"Houve uma conversa agradável depois do jantar."}];
+const paradigms={
+present:{affirmative:["There is","There are"],negative:["There is not","There are not"],interrogative:["Is there any?","Are there any?"]},
+past:{affirmative:["There was","There were"],negative:["There was not","There were not"],interrogative:["Was there any?","Were there any?"]},
+future:{affirmative:["There will be"],negative:["There will not be"],interrogative:["Will there be any?"]},
+presentPerfect:{affirmative:["There has been","There have been"],negative:["There has not been","There have not been"],interrogative:["Has there been any?","Have there been any?"]},
+pastPerfect:{affirmative:["There had been"],negative:["There had not been"],interrogative:["Had there been any?"]}};
+const state={lang:"pt",scene:1,tense:"present",mode:"affirmative"};
+const label={en:["Shopping","Preparing","Having","After-Dinner"],es:["Compras","Preparando","Cena","Después de cenar"],pt:["Compras","Preparando","Jantar","Após o jantar"]};
+function render(){document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===state.lang)));
+document.querySelectorAll("[data-scene]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.scene===state.scene)));
+document.querySelectorAll("[data-tense]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tense===state.tense)));
+document.querySelectorAll("[data-mode]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mode===state.mode)));
+document.getElementById("sentence").textContent=sentences[state.scene][state.lang];
+document.getElementById("sceneinfo").textContent="S"+(state.scene+1)+" · "+label[state.lang][state.scene]+" · adaptação contextual, não um exemplo original da apostila";
+document.getElementById("paradigm").textContent=paradigms[state.tense][state.mode].join("  ·  ");}
+document.addEventListener("click",event=>{const b=event.target.closest("button");if(!b)return;
+if(b.dataset.lang)state.lang=b.dataset.lang;
+if(b.dataset.scene)state.scene=+b.dataset.scene;
+if(b.dataset.tense)state.tense=b.dataset.tense;
+if(b.dataset.mode)state.mode=b.dataset.mode;
+render();});render();
+</script></body></html>
