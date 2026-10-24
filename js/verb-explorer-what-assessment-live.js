@@ -203,6 +203,7 @@ function mount(input){
             ?{en:'Contextual response recognized · free practice only',es:'Respuesta contextual reconocida · solo práctica libre',pt:'Resposta contextual reconhecida · apenas prática livre'}[language]
             :{en:'Try another response · free practice only',es:'Prueba otra respuesta · solo práctica libre',pt:'Experimente outra resposta · apenas prática livre'}[language];
           feedback.hidden=false;
+          root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'canonical-probe',phase:'exploration',selected:alternative.id,experienceId:spec.experienceId,language:spec.language,questionWord:'what',resultCode:evaluated.result,dimension:spec.dimension,mode:spec.mode,skill:spec.skill});
           return;
         }
         var evidence=evidenceBridge.fromResult({result:evaluated,learnerEvent:event,supportSensor:sensor});
@@ -210,6 +211,7 @@ function mount(input){
         if(!attempt)return;
         var submitted=coordinator.submitObservedAttempt(attempt,event,button);
         if(!submitted)return;
+        root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'canonical-probe',phase:'assessment-attempt',selected:alternative.id,experienceId:spec.experienceId,language:spec.language,questionWord:'what',resultCode:evaluated.result,dimension:spec.dimension,mode:spec.mode,skill:spec.skill});
         buttons.forEach(function(option){
             option.setAttribute('aria-pressed',String(option===button));
             option.setAttribute('data-assertive',String(option===button&&evaluated.result==='pass'));
