@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const core=require('./jaguar-h14-13-specialized-mirror-reference.js');
+const visual=require('../js/verb-explorer-h14-14-preview.js');
+const exp=read('data/learning/experience-seeds.json').items;
+const matrix=read('data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json');
+const src=fs.readFileSync('scripts/jaguar-h14-13-specialized-mirror-reference.js','utf8');
+const presenter=fs.readFileSync('js/verb-explorer-h14-14-preview.js','utf8');
+const html=fs.readFileSync('verb-explorer.html','utf8');
+assert.match(html,/FUNC-13 · MASTER VIP FUNCTION LENS/);
+assert.ok(html.indexOf('scripts/jaguar-h14-13-specialized-mirror-reference.js')<html.indexOf('js/verb-explorer-h14-14-preview.js'));
+assert.match(html,/id="h14SpecializedPreview" class="h14-specialized-preview" hidden/);
+assert.equal((html.match(/data-h14-function=/g)||[]).length,5);
+assert.ok(!presenter.includes('function authored='));
+assert.ok(!presenter.includes('const authored='));
+assert.ok(presenter.includes('core.projectSingle'));
+assert.deepEqual(core.FUNCTIONS,['quality','state','movement','action','existence']);
+let count=0;
+for(const e of exp)for(const cell of matrix.cells.filter(c=>c.experienceId===e.id))for(const p of ['describing','narrating','debating','concluding'])for(const l of ['en','es','pt']){
+ const s={experienceId:e.id,functionId:cell.functionId,perspective:p,language:l,tense:'present',mode:'affirmative',period:'none'};
+ const x=core.projectSingle({experience:e,cell,selection:s});
+ const y=core.project({experiences:exp,functionsMatrix:matrix,selection:s});
+ const z=visual.project(e,cell,l,p,'present','affirmative');
+ assert.ok(x&&y&&z);
+ assert.deepEqual(x,y);
+ assert.deepEqual(z.source,x.canonicalPerspectiveExamples);
+ assert.equal(z.example,x.functionSourceExample);
+ assert.equal(z.color,x.color);
+ assert.equal(z.assessmentAuthority,false);assert.equal(z.evidenceProduced,false);assert.equal(z.greenPass,false);
+ const off=visual.project(e,cell,l,p,'past','negative');assert.ok(off);assert.equal(off.example,null);
+ count++;
+}
+assert.equal(count,240);
+const bad=core.projectSingle({experience:exp[0],cell:matrix.cells[0],selection:{experienceId:exp[0].id,functionId:'quality',perspective:'describing',language:'fr'}});
+assert.equal(bad,null);
+const fake={globalThis:{},URLSearchParams};vm.runInNewContext(src,fake);assert.ok(fake.globalThis.SIYAYOH1413SpecializedMirror);
+assert.equal(fake.globalThis.SIYAYOH1413SpecializedMirror.projectSingle({experience:exp[0],cell:matrix.cells[0],selection:{experienceId:exp[0].id,functionId:'quality',perspective:'describing',language:'en',tense:'present',mode:'affirmative'}}).functionSourceExample,matrix.cells[0].example.en);
+for(const danger of ['localStorage','sessionStorage','submitObservedAttempt','recordOutcome(','createEvidence('])assert.ok(!src.includes(danger)&&!presenter.includes(danger),danger);
+assert.ok(presenter.includes("get('h14_14')!=='preview'"));
+console.log('PASS H14.15 FUNC-13: Node/browser shared source, 240 projections, provenance/coherence, no evidence');
