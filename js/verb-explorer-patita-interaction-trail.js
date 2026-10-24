@@ -104,11 +104,12 @@ function append(record){
 function recordOutcome(input){
   input=input||{};
   var source=text(input.source),phase=text(input.phase),code=text(input.resultCode);
-  if(!['contextual-choice','dependency-head-probe','canonical-probe'].includes(source))return false;
+  if(!['contextual-choice','dependency-head-probe','canonical-probe','determiner-use'].includes(source))return false;
   if(!['exploration','assessment-attempt'].includes(phase))return false;
   if(!['best-fit','possible-fit','pass','fail'].includes(code))return false;
   if(source==='contextual-choice'&&(phase!=='exploration'||!['best-fit','possible-fit'].includes(code)))return false;
-  if(['dependency-head-probe','canonical-probe'].includes(source)&&!['pass','fail'].includes(code))return false;
+  if(['dependency-head-probe','canonical-probe','determiner-use'].includes(source)&&!['pass','fail'].includes(code))return false;
+  if(source==='determiner-use'&&(phase!=='assessment-attempt'||text(input.questionWord)!=='which'||!['local','transfer'].includes(text(input.mode))||text(input.skill)!=='which.use.determiner'))return false;
   if(source==='canonical-probe'&&!['what','where','why'].includes(text(input.questionWord)))return false;
   var context=snapshot(),selected=text(input.selected);
   if(!selected||text(input.experienceId)!==context.experienceId||
