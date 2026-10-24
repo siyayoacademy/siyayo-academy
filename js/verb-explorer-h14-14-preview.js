@@ -1,14 +1,11 @@
 (function(root){'use strict';
 const FUNCTIONS=['quality','state','movement','action','existence'];
-const COLORS={describing:'red',narrating:'yellow',debating:'green',concluding:'blue'};
 function project(experience,cell,language,perspective,tense,mode){
- if(!experience||!cell||!['en','es','pt'].includes(language)||!COLORS[perspective]||!FUNCTIONS.includes(cell.functionId))return null;
- const p=experience.perspectives?.[perspective];
- if(!p||p.line!==COLORS[perspective]||cell.experienceId!==experience.id||cell.status!=='PENDING_HOMOLOGATION'||cell.assessmentAuthority!==false||cell.assessmentEvidence!==false)return null;
- const source=p.examples?.[language],example=cell.example?.[language];
- if(!Array.isArray(source)||!source.length||!example)return null;
- const authored=(cell.tense===tense||(cell.tense==='present-habitual'&&tense==='present'))&&mode==='affirmative';
- return Object.freeze({source:source.slice(),example:authored?example:null,sourceStatus:authored?'AUTHORING_REFERENCE':'NOT_AUTHORED_FOR_SELECTED_GRAMMAR',color:COLORS[perspective],assessmentAuthority:false,evidenceProduced:false,greenPass:false});
+ const core=root.SIYAYOH1413SpecializedMirror;
+ if(!core||typeof core.projectSingle!=='function')return null;
+ const result=core.projectSingle({experience,cell,selection:{experienceId:experience?.id,functionId:cell?.functionId,language,perspective,tense,mode,period:'none'}});
+ return result?Object.freeze({source:result.canonicalPerspectiveExamples,example:result.functionSourceExample,
+ sourceStatus:result.functionExampleStatus,color:result.color,assessmentAuthority:false,evidenceProduced:false,greenPass:false}):null;
 }
 function start(){
  if(!root.location||new URLSearchParams(root.location.search).get('h14_14')!=='preview')return false;
