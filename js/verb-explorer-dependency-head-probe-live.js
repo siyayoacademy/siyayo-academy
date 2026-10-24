@@ -143,6 +143,10 @@
             selectedAlternativeId:result.selectedAlternativeId,result:result.result,
             evidenceProduced:false,greenPass:false});
           practiceTrace.push(record);
+          root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'dependency-head-probe',
+            phase:'exploration',selected:result.selectedAlternativeId,experienceId:experience.id,
+            language:language,questionWord:questionWord,resultCode:result.result,
+            structureId:result.structureId});
           el.feedback.textContent=result.result==='pass'
             ?({en:'✓ HEAD IDENTIFIED · correct answer observed · free practice',es:'✓ NÚCLEO IDENTIFICADO · respuesta correcta observada · práctica libre',pt:'✓ NÚCLEO IDENTIFICADO · resposta correta observada · prática livre'}[language])
             :feedbackText(result.result,language);
@@ -196,6 +200,12 @@
 
         var coordinated=coordinator.submitObservedAttempt(attempt,event,target);
         if(!coordinated)return null;
+        // This is only a mirror of the existing assessment result. The
+        // canonical evaluator remains sole authority for Evidence / Green Pass.
+        root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'dependency-head-probe',
+          phase:'assessment-attempt',selected:result.selectedAlternativeId,
+          experienceId:experience.id,language:language,questionWord:questionWord,
+          resultCode:result.result,structureId:result.structureId});
 
         el.feedback.textContent=feedbackText(result.result,language);
         el.feedback.dataset.result=result.result;
