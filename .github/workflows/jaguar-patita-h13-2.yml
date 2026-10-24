@@ -1,0 +1,36 @@
+name: JAGUAR H13.2 identity readiness and swap
+on:
+  push:
+    branches: [jaguar/patita-identity-h13-2-readiness]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node --check js/verb-explorer-learner-identity-surface.js
+          node --check js/verb-explorer-learner-identity-provider.js
+          node --check js/verb-explorer-patita-interaction-trail.js
+          node scripts/test-jaguar-90c7h9-how-to-show.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - run: |
+          python -m pip install playwright==1.56.0
+          python -m http.server 8879 --bind 127.0.0.1 > "$RUNNER_TEMP/site.log" 2>&1 &
+          sleep 3
+      - run: python scripts/experimental-patita-h13-switch.py
+      - if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: patita-h13-1-switch-diagnostic
+          path: visual-audit-patita-h13/
