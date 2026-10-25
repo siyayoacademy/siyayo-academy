@@ -1,0 +1,152 @@
+{
+  "id": "JAGUAR-H14.41",
+  "version": "0.1.0",
+  "status": "SPECIFIED_NOT_AUTHORIZED",
+  "parentCommit": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+  "storage": {
+    "reuse": "V30.3.85C",
+    "table": "v30_85c_occurrences",
+    "primaryKey": [
+      "learner_subject",
+      "event_id"
+    ],
+    "encoding": "VERSIONED_SERVER_ASSEMBLED_EVENT_IN_EXISTING_payload_json",
+    "schemaMigration": false,
+    "legacyRows": "READABLE_AS_LEGACY_UNBOUND_NEVER_BACKFILL_AUTHORITY",
+    "dimensionColumnsExist": false
+  },
+  "dimensions": [
+    "question-function",
+    "reason-answer(local)",
+    "reason-answer(transfer)"
+  ],
+  "intents": [
+    "start",
+    "resume",
+    "transfer"
+  ],
+  "eventBinding": {
+    "version": "h14.41.v0.1",
+    "required": [
+      "bindingVersion",
+      "assessmentTargetId",
+      "contractId",
+      "contractVersion",
+      "questionWord",
+      "language",
+      "originExperienceId",
+      "currentExperienceId",
+      "dimension",
+      "intent",
+      "actionReference",
+      "exposureReference"
+    ],
+    "authoritySource": "FUTURE_SERVER_RESOLVED_AUTHORIZED_TARGET_NOT_CLIENT_FIELDS",
+    "clientMetadata": "UNTRUSTED_REQUEST_ONLY",
+    "digest": "INTEGRITY_ONLY_NOT_AUTHORIZATION",
+    "actionReference": "SERVER_VERIFIED_DIRECT_LEARNER_ACTION_NOT_PATITA_OBSERVATION",
+    "exposureReference": "SERVER_RESOLVED_MODEL_EXPOSURE_PROVENANCE_UNKNOWN_BLOCKS_INDEPENDENCE",
+    "constraints": [
+      "Validate every binding against target, principal and outer 85C policy before write and on evaluation read",
+      "Full scope includes subject, skill, language, origin, contract ID/version, QW, purpose and dimension",
+      "One event binds exactly one dimension; new dimension or answer requires new UUID",
+      "Replay retains original intent, current Experience and envelope even after navigation",
+      "start cannot reset existing scope; resume needs explicit existing origin; transfer needs explicit origin and approved target scene",
+      "Transfer may precede local proof; completion still requires all three dimensions",
+      "No implicit start from visit, transfer from NEXT, or prerequisite WHICH/HOW",
+      "Do not store raw session tokens or NICK as ownership"
+    ]
+  },
+  "lifecycle": {
+    "storageStates": [
+      "observed_exploratory",
+      "pending"
+    ],
+    "storageImmutable": true,
+    "futureEvaluatorStates": [
+      "awaiting_authority",
+      "eligible_for_evaluator",
+      "decision_rejected",
+      "decision_accepted",
+      "evidence_committed"
+    ],
+    "edges": [
+      [
+        "pending",
+        "awaiting_authority"
+      ],
+      [
+        "awaiting_authority",
+        "eligible_for_evaluator"
+      ],
+      [
+        "eligible_for_evaluator",
+        "decision_rejected"
+      ],
+      [
+        "eligible_for_evaluator",
+        "decision_accepted"
+      ],
+      [
+        "decision_accepted",
+        "evidence_committed"
+      ]
+    ],
+    "guards": {
+      "eligible_for_evaluator": [
+        "verified principal",
+        "authorized non-revoked target",
+        "exact immutable binding",
+        "verified direct action and exposure provenance"
+      ],
+      "decision_accepted": [
+        "authorized evaluator decision in exact scope"
+      ],
+      "evidence_committed": [
+        "atomic decision plus Evidence/outbox transaction",
+        "unique subject/event/dimension/target decision key",
+        "all downstream consumers idempotent"
+      ]
+    },
+    "noPromotion": [
+      "observed_exploratory",
+      "legacy_unbound"
+    ],
+    "storageReceiptIsEvaluation": false,
+    "retry": "SAME_UUID_SAME_ENVELOPE",
+    "newSubmission": "NEW_UUID_NO_MUTATION_OF_OLD_ATTEMPT",
+    "navigation": "PRESERVE_ALL_SCOPES_NO_AUTOMATIC_REASSIGNMENT",
+    "rollback": "DISABLE_ADAPTER_KEEP_85C_ROWS_READABLE"
+  },
+  "gapDisposition": {
+    "DG-01": "DESIGN_SPECIFIED_IMPLEMENTATION_AND_AUTHORITY_OPEN",
+    "DG-02": "OPEN",
+    "DG-03": "DESIGN_BOUNDARY_ONLY_ATOMIC_IMPLEMENTATION_OPEN",
+    "DG-04": "OPEN",
+    "DG-05": "OPEN_H14.42_LOCAL_FAILURE_TESTS_THEN_REAL_STAGING",
+    "DG-06": "OPEN",
+    "DG-07": "OPEN"
+  },
+  "authority": {
+    "mayWriteDatabase": false,
+    "mayAuthorizeTarget": false,
+    "mayGradeText": false,
+    "mayIssueEvidence": false,
+    "mayGrantGreenPass": false,
+    "mayDeploy": false
+  },
+  "next": [
+    "H14.42 failure/recovery/replay/concurrency/rollback laboratory",
+    "H14.43 selective integration manifest and GO/NO-GO"
+  ],
+  "preserved": [
+    "main",
+    "PR #3",
+    "Explorer",
+    "PATITA",
+    "Learning Trail",
+    "FUNC-13 hidden",
+    "canonical WHY S3-S4",
+    "production D1"
+  ]
+}
