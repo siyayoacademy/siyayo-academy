@@ -1,0 +1,22 @@
+name: JAGUAR H14.39 cross origin occurrence idempotence
+on:
+  push:
+    branches: [jaguar/h14-39-why-cross-origin-occurrence-idempotence]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  occurrence-guards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-39-shadow-occurrence-idempotence.js
+          node scripts/test-jaguar-h14-38-independent-production-transfer.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-39-shadow-occurrence-idempotence.js --json > h14-39-shadow-occurrences.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-39-idempotence-study
+          path: h14-39-shadow-occurrences.json
