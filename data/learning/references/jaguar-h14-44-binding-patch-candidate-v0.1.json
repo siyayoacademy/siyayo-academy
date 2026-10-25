@@ -1,0 +1,27 @@
+{
+  "id": "JAGUAR-H14.44",
+  "version": "0.1.0",
+  "status": "ISOLATED_BINDING_DRY_RUN_NOT_RUNTIME_INTEGRATED",
+  "parentCommit": "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333",
+  "patchCandidateFiles": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.mjs",
+      "gitBlobSha": "62b76f48b92cc5df7bb6ec8859e0d5c212c3f3f9"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.test.mjs",
+      "gitBlobSha": "1863f8b62de350796a6ca1b546f3764b69133991"
+    }
+  ],
+  "productionApplyAllowlist": [],
+  "authoritySource": "INJECTED_MOCK_SERVER_RESOLVERS_IN_TESTS_ONLY",
+  "storageWrites": false,
+  "createsScope": false,
+  "persistentReplayImplemented": false,
+  "realAuthenticationImplemented": false,
+  "draftTargetsRemainBlocked": true,
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false,
+  "allSevenIntegrationGapsRemainOpen": true
+}
