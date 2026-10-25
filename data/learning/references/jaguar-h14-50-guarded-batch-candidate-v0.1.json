@@ -1,0 +1,39 @@
+{
+  "id": "JAGUAR-H14.50",
+  "version": "0.1.0",
+  "status": "GUARDED_BATCH_CANDIDATE_LOCAL_SQLITE_VERIFIED_D1_UNVERIFIED",
+  "parentCommit": "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.mjs",
+      "gitBlobSha": "3028ce91dc4c5ae6f8d8ca38aa2ba3d594f103ef"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.test.mjs",
+      "gitBlobSha": "512bac4480a8919f0ca21e9157c8a2404672fa79"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-50/batch_driver.py",
+      "gitBlobSha": "1dfd593298211a142c87f5541310d2c2b17cc1b4"
+    }
+  ],
+  "newTests": 17,
+  "batchStatements": 6,
+  "zeroRowAuthorizationForcesSqlError": true,
+  "storage": "UNCHANGED_85C_OCCURRENCE_TABLE",
+  "assertionTable": "LOCAL_TEST_METADATA_ONLY",
+  "javascriptEmitsBeginCommit": false,
+  "atomicityProviderInTests": "PYTHON_SQLITE_SINGLE_TRANSACTION_DRIVER",
+  "newProductMigration": false,
+  "defaultEnabled": false,
+  "realD1BatchVerified": false,
+  "distributedConcurrencyVerified": false,
+  "replicatedReplayVerified": false,
+  "expirationDuringCommitVerified": false,
+  "realAuthenticationVerified": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}
