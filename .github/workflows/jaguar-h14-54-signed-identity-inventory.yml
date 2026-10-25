@@ -1,0 +1,33 @@
+name: JAGUAR H14.54 signed identity fixture and Explorer inventory
+on:
+  push:
+    branches: [jaguar/h14-54-why-signed-identity-inventory]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  isolated-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: npm ci --prefix labs/jaguar-v30-3/test/h14-54 --no-audit --no-fund
+      - run: npm ci --prefix labs/jaguar-v30-3/test/h14-53 --no-audit --no-fund
+      - run: npm ci --prefix labs/jaguar-v30-3/test/h14-52 --no-audit --no-fund
+      - run: |
+          npm test --prefix labs/jaguar-v30-3/test/h14-54
+          npm test --prefix labs/jaguar-v30-3/test/h14-53
+          npm test --prefix labs/jaguar-v30-3/test/h14-52
+          node --test labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.test.mjs
+          node --test labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.test.mjs
+          node --test labs/jaguar-v30-3/test/storage-contract.test.mjs
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Validate integration inventory is complete and non-authoritative
+        run: |
+          node --input-type=module -e "
+            import fs from 'node:fs';
+            const x=JSON.parse(fs.readFileSync('data/learning/references/jaguar-h14-54-explorer-integration-inventory-v0.1.json'));
+            if(x.module_catalog.length!==18||x.elos.length!==16||x.gates.length!==7||x.gates.some(g=>g.closed)||x.runtime_apply_allowlist.length||x.can_grant_evidence||x.can_deploy)process.exit(2);
+            console.log('H14.54 inventory:',x.module_catalog.length,'registered modules;',x.elos.length,'H14 ELOs;',x.gates.length,'open gates');
+          "

@@ -1,0 +1,18 @@
+{
+  "id": "JAGUAR-H14.54",
+  "version": "0.1.0",
+  "status": "LAB_SIGNED_ASSERTION_VERIFIER_CI_PENDING",
+  "parentCommit": "43468d39255dcebb13e944ef79ef054d6883cf68",
+  "identityVerifier": "HMAC_SHA256_TEST_ISSUER_ONLY",
+  "realAuthenticationVerified": false,
+  "actualUserSessionVerified": false,
+  "remoteD1Verified": false,
+  "productionMigrations": false,
+  "workerHTTPSubmissionEnabled": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "explorerInventory": "docs/JAGUAR-H14-54-EXPLORER-INTEGRATION-INVENTORY.md",
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}

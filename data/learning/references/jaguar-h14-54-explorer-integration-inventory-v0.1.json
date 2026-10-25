@@ -1,0 +1,351 @@
+{
+  "id": "SIYAYO-EXPLORER-INTEGRATION-INVENTORY-H14-54",
+  "version": "0.1.0",
+  "baseline": {
+    "repository": "siyayoacademy/siyayo-academy",
+    "branch": "jaguar/h14-53-why-trusted-provenance-worker",
+    "commit": "43468d39255dcebb13e944ef79ef054d6883cf68",
+    "registry_branch": "jaguar/cross-project-registry-xpr03-h14-supervision-20261025",
+    "registry_snapshot_sha": "39b81289f1a05479701343325640b31bc7ded02b"
+  },
+  "scope": "verified H14.39-H14.53 local/docs + registry module catalog; not an exhaustive history of every product commit",
+  "source_type": "documented_vs_tested_vs_runtime",
+  "module_catalog": [
+    {
+      "id": "EXP-01",
+      "name": "Experience Header",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "CTX-02",
+      "name": "Circumstance Strip",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "DEP-03",
+      "name": "Dependency Focus",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "HEAD-04",
+      "name": "Dependency Head Probe",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "ID-05",
+      "name": "Learner Identity (NICK visual)",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "visual_not_real_identity",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "GEAR-06",
+      "name": "Language/QW/Word Type/Tense/Mode/Perspective",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "LIVE-07",
+      "name": "Living Window/Lines",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "EVAL-08",
+      "name": "Assessment Probes",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "NEXT-09",
+      "name": "Toroidal NEXT",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "TRAIL-10",
+      "name": "Learning Trail",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "WORD-11",
+      "name": "Word Path",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "PATITA-12",
+      "name": "Interaction Ledger observational",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "FUNC-13",
+      "name": "Master VIP Functions (hidden experimental)",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "experimental_hidden",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "SPEECH-A",
+      "name": "Corpus Speech",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "SPEECH-B1",
+      "name": "Question Speech",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "SPEECH-B2",
+      "name": "Response Speech",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "RS-01",
+      "name": "Responsive Stage",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    },
+    {
+      "id": "XESP-DIAG",
+      "name": "XESPIRITO diagnosis",
+      "reference": "docs/siyayo-module-registry.json in REG branch",
+      "product_status": "registered_explorer_module_or_surface",
+      "integration_assessment": "recheck_current_MAIN_and_PR3"
+    }
+  ],
+  "elos": [
+    {
+      "elo": "H14.39",
+      "title": "Ocorrência, origem e idempotência",
+      "evidence": "modelo sintético em memória",
+      "document": "docs/JAGUAR-H14-39-CROSS-ORIGIN-OCCURRENCE-IDEMPOTENCE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.40",
+      "title": "Reuso 85C durável",
+      "evidence": "análise sem storage duplicado",
+      "document": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.41",
+      "title": "Dimensão/intenção/ciclo",
+      "evidence": "contrato especificado; sem autorização",
+      "document": "docs/JAGUAR-H14-41-DIMENSION-INTENT-ATTEMPT-LIFECYCLE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.42",
+      "title": "Falhas e recuperação",
+      "evidence": "SQLite local com rollback/replay",
+      "document": "docs/JAGUAR-H14-42-DURABLE-FAILURE-RECOVERY.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.43",
+      "title": "Handoff seletivo",
+      "evidence": "manifesto de 182 arquivos e 7 gates abertos",
+      "document": "docs/JAGUAR-H14-43-SELECTIVE-INTEGRATION-HANDOFF.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.44",
+      "title": "Binding preparado",
+      "evidence": "preparador JS de serviços simulados",
+      "document": "docs/JAGUAR-H14-44-SERVER-BINDING-DRY-RUN.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.45",
+      "title": "Replay 85C",
+      "evidence": "adaptador local de replay/revalidação",
+      "document": "docs/JAGUAR-H14-45-PERSISTED-REPLAY-REVALIDATION.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.46",
+      "title": "Ação/escopo transacional",
+      "evidence": "SQLite + metadados sintéticos",
+      "document": "docs/JAGUAR-H14-46-TRANSACTIONAL-ACTION-SCOPE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.47",
+      "title": "Compatibilidade de escritores",
+      "evidence": "bypass entre writers reproduzido",
+      "document": "docs/JAGUAR-H14-47-CROSS-ADAPTER-LEGACY-COMPATIBILITY.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.48",
+      "title": "Ponto único de escrita",
+      "evidence": "triggers locais bloqueiam bypass",
+      "document": "docs/JAGUAR-H14-48-SINGLE-WRITE-BOUNDARY.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.49",
+      "title": "Contrato D1/legado",
+      "evidence": "plano de destino sem migração",
+      "document": "docs/JAGUAR-H14-49-D1-WRITER-LEGACY-CONTRACT.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.50",
+      "title": "Batch protegido",
+      "evidence": "JS + SQLite local; 17 testes",
+      "document": "docs/JAGUAR-H14-50-GUARDED-BATCH-CANDIDATE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.51",
+      "title": "Binding D1 local",
+      "evidence": "Miniflare proxy Node; 14 testes",
+      "document": "docs/JAGUAR-H14-51-MINIFLARE-D1-RUNTIME.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.52",
+      "title": "Worker local empacotado",
+      "evidence": "workerd/D1/crypto; 15 testes",
+      "document": "docs/JAGUAR-H14-52-WORKER-LOCAL-BUNDLE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.53",
+      "title": "Fronteira sintética/proveniência",
+      "evidence": "Worker gateway D1 local; 12 testes, CI GREEN",
+      "document": "docs/JAGUAR-H14-53-TRUSTED-ACTION-PROVENANCE.md",
+      "integration_status": "not_integrated_to_main_or_explorer_product",
+      "pedagogical_authority": false
+    },
+    {
+      "elo": "H14.54",
+      "title": "Prova assinada substituível",
+      "evidence": "HMAC de teste, contrato de verificador e bundle; CI pendente",
+      "document": "docs/JAGUAR-H14-54-VERIFIED-ASSERTION-CONTRACT.md",
+      "integration_status": "experimental_unverified_ci",
+      "pedagogical_authority": false
+    }
+  ],
+  "foundational_reuse": [
+    {
+      "id": "V30.3.85C",
+      "status": "tested in isolated lab",
+      "paths": [
+        "labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql",
+        "labs/jaguar-v30-3/test/storage-contract/storage-contract.mjs"
+      ],
+      "rule": "do not duplicate occurrence table; SUBJECT+UUID unique"
+    },
+    {
+      "id": "WHY-S3-S4",
+      "status": "existing canonical independent evaluation regression",
+      "paths": [
+        "scripts/test-s3-why-canonical-green-cycle.js"
+      ],
+      "rule": "preserve approved contract; do not port lab pending as credit"
+    },
+    {
+      "id": "XPR-03.1",
+      "status": "read-only governance tests confirmed",
+      "paths": [
+        "docs/siyayo-cross-project-watchlist.json",
+        "scripts/siyayo-xpr02-drift-audit.cjs"
+      ],
+      "rule": "reference only, not runtime supervisor"
+    }
+  ],
+  "protected": [
+    "main",
+    "PR#3",
+    "Explorer production",
+    "Cloudflare Pages",
+    "D1 remote",
+    "MCE",
+    "PATITA observational",
+    "Trail/Word Path Evidence-only",
+    "FUNC-13 hidden"
+  ],
+  "gates": [
+    {
+      "id": "DG-01",
+      "need": "authoritative versioned binding of dimension and intent",
+      "closed": false
+    },
+    {
+      "id": "DG-02",
+      "need": "authorized WHY S1/S2 contracts",
+      "closed": false
+    },
+    {
+      "id": "DG-03",
+      "need": "atomic evaluation decision plus Evidence/outbox and idempotent consumers",
+      "closed": false
+    },
+    {
+      "id": "DG-04",
+      "need": "real trusted authentication, revocation and subject isolation",
+      "closed": false
+    },
+    {
+      "id": "DG-05",
+      "need": "real Worker/D1 staging concurrency recovery consistency",
+      "closed": false
+    },
+    {
+      "id": "DG-06",
+      "need": "fresh main/PR compare and selective regression tested integration patch",
+      "closed": false
+    },
+    {
+      "id": "DG-07",
+      "need": "human pedagogical homologation HG-04/05/09/10",
+      "closed": false
+    }
+  ],
+  "runtime_apply_allowlist": [],
+  "can_grant_evidence": false,
+  "can_issue_green_pass": false,
+  "can_deploy": false
+}

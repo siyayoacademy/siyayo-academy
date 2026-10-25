@@ -1,0 +1,13 @@
+{
+  "name": "jaguar-h14-54-signed-identity-fixture",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test signed-identity.test.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "miniflare": "4.20260730.0"
+  }
+}
