@@ -1,0 +1,33 @@
+{
+  "id": "JAGUAR-H14.47",
+  "version": "0.1.0",
+  "status": "READ_REPLAY_COMPATIBLE_MIXED_WRITERS_BLOCKED",
+  "parentCommit": "3c43844cd8403dccd50d877ba50a9a729ea10fb2",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-47/compatibility_inspector.py",
+      "gitBlobSha": "17240a8ae42e73db063713d3d2eb5f175b624167"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-47/sqlite_lab_driver.py",
+      "gitBlobSha": "1c45926ba640c53ae0689626fe810361bc0d70a0"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-47/cross-adapter-compatibility.test.mjs",
+      "gitBlobSha": "13a5bd52af0ef04804be5fe837c036bae3d8dd6e"
+    }
+  ],
+  "tests": 10,
+  "crossAdapterSameSQLiteVerified": true,
+  "mixedWriterBypassReproduced": true,
+  "mixedWriterCutoverAllowed": false,
+  "legacyBackfillApplied": false,
+  "inspectorReadOnly": true,
+  "newProductMigration": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false,
+  "next": "SINGLE_LAB_WRITE_BOUNDARY_WITH_EXPLICIT_LEGACY_DISPOSITION"
+}
