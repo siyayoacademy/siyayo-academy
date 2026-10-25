@@ -1,0 +1,209 @@
+{
+  "id": "JAGUAR-H14.33-WHY-SEMANTIC-HOMOLOGATION-REFERENCE",
+  "version": "0.1.0",
+  "status": "REFERENCE_DRAFT_NOT_HOMOLOGATED",
+  "originBranch": "jaguar/h14-32-why-pedagogical-mediation",
+  "sources": [
+    {
+      "id": "H14.27",
+      "path": "data/learning/references/jaguar-h14-27-why-question-function-semantic-rubric-v0.1.json",
+      "blobSha": "fd0836b271ad957e1a4e4b9f30eeb65e333c25ab",
+      "role": "Trilingual semantic teacher rubric, no automatic grade"
+    },
+    {
+      "id": "H14.28",
+      "path": "scripts/jaguar-h14-28-semantic-contrast-bank.js",
+      "blobSha": "d89952862273595870a305e553ab14c025b12d70",
+      "role": "48 newly synthesized demonstration responses"
+    },
+    {
+      "id": "H14.29",
+      "path": "scripts/jaguar-h14-29-semantic-risk-audit.js",
+      "blobSha": "bcf4c7d9c2aae8872e4c1a33597059160e19bf4c",
+      "role": "False positives, false negatives and context ambiguity"
+    },
+    {
+      "id": "H14.30",
+      "path": "scripts/jaguar-h14-30-supervised-semantic-protocol.js",
+      "blobSha": "ea5b602bfe7ae4bd75211d0bb271eec0a0a8e4bf",
+      "role": "Four interpretive feedback hypotheses, not an evaluator"
+    },
+    {
+      "id": "H14.31",
+      "path": "scripts/jaguar-h14-31-two-reviewer-consistency.js",
+      "blobSha": "1a7254c5df8169c36b41161ab6136dea3bbeb067",
+      "role": "Compare two independent teacher judgments; never auto-credit"
+    },
+    {
+      "id": "H14.32",
+      "path": "scripts/jaguar-h14-32-pedagogical-mediation.js",
+      "blobSha": "8b1c9be3632660900af6659b34c1b336397af556",
+      "role": "Third-person mediated proposal, not approval"
+    }
+  ],
+  "moduleGovernance": {
+    "HEAD-04": "Syntax/head identification only, not causal intention proof",
+    "EVAL-08": "Only separately authorized contract may validate learner Attempt and Evidence",
+    "PATITA-12": "Observe interactions; never determine grades or grant credit",
+    "LIVE-07": "Presentation only",
+    "SPEECH-A": "Speech playback only; never an Attempt",
+    "TRAIL-10": "Read authorized Evidence; no credit from study",
+    "GEAR-06": "Controls language, tense, mode; PERIOD remains unresolved",
+    "FUNC-13": "Hidden specialized reference module, not part of this ELO"
+  },
+  "scope": {
+    "experiences": [
+      "shopping-for-dinner",
+      "preparing-dinner"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "questionWord": "why",
+    "authorizedTemporalView": "present+affirmative",
+    "period": "UNAVAILABLE_IN_GEAR_STACK",
+    "skill": "why.use.contextual-reason",
+    "dimensions": [
+      "question-function",
+      "reason-answer(local)",
+      "reason-answer(transfer)"
+    ],
+    "originScoping": [
+      "learnerId",
+      "skill",
+      "language",
+      "originExperienceId"
+    ],
+    "transferIntentMustBeExplicit": true,
+    "sourceS3S4Preserved": true
+  },
+  "independentAxes": {
+    "semanticContext": "H14.27 contextual and question-function 0/4 teacher rubric; no automatically determined score",
+    "expressionLanguage": "CLEAR | UNDERSTANDABLE_WITH_LANGUAGE_ERRORS | MEANING_UNCLEAR",
+    "contractualProgress": "0/3 only by authorized EVAL-08 and Evidence; excluded from this contract"
+  },
+  "studyStates": [
+    "COHERENT",
+    "PARTIAL",
+    "NEEDS_REVIEW",
+    "INCOHERENT"
+  ],
+  "studyStateAuthority": "NONE_NO_REAL_LEARNER_ASSESSMENT",
+  "homologationGates": [
+    {
+      "id": "HG-01",
+      "area": "SOURCE_PROVENANCE",
+      "requirement": "Review anchored question, reason and contrast against authored Experience facts and explicit WHY QW",
+      "status": "SOURCE_REVIEW_PENDING"
+    },
+    {
+      "id": "HG-02",
+      "area": "REFERENT",
+      "requirement": "S1 fresh cheese versus salmon and S2 joint dinner preparation must be distinct and unambiguous in each language",
+      "status": "TEACHER_REVIEW_PENDING"
+    },
+    {
+      "id": "HG-03",
+      "area": "QUESTION_FUNCTION",
+      "requirement": "Independent task proves WHY causal-intent comprehension; HEAD-04 alone is insufficient",
+      "status": "TASK_AUTHORING_PENDING"
+    },
+    {
+      "id": "HG-04",
+      "area": "LOCAL_ANSWER",
+      "requirement": "Independent learner reasoning with no exposed model answer and no exact-string requirement",
+      "status": "TASK_AUTHORING_PENDING"
+    },
+    {
+      "id": "HG-05",
+      "area": "TRANSFER_ANSWER",
+      "requirement": "Different context, distinct cause and independently scoped occurrence, not mandatory scene order",
+      "status": "TASK_AUTHORING_PENDING"
+    },
+    {
+      "id": "HG-06",
+      "area": "TRILINGUAL_PARITY",
+      "requirement": "Human review of EN/ES/PT meaning, pragmatics and referents; allow natural grammatical variants",
+      "status": "TEACHER_REVIEW_PENDING"
+    },
+    {
+      "id": "HG-07",
+      "area": "EXPRESSION_INDEPENDENCE",
+      "requirement": "Minor language error must not automatically override semantic fit; record language clarity separately",
+      "status": "TEACHER_REVIEW_PENDING"
+    },
+    {
+      "id": "HG-08",
+      "area": "ALTERNATE_REASONS",
+      "requirement": "Grounded paraphrases may differ lexically; plausible but absent premises need contextual evidence",
+      "status": "TEACHER_REVIEW_PENDING"
+    },
+    {
+      "id": "HG-09",
+      "area": "DUAL_REVIEW",
+      "requirement": "Two independent actual teacher reviews per applicable case, document disagreement; no fabricated agreement metric",
+      "status": "REAL_TEACHER_REVIEWS_PENDING"
+    },
+    {
+      "id": "HG-10",
+      "area": "MEDIATION",
+      "requirement": "Where needed, independent third mediator documents reasons and verifiable scene facts, not majority vote",
+      "status": "REAL_MEDIATION_PENDING"
+    },
+    {
+      "id": "HG-11",
+      "area": "PROGRESS_SEPARATION",
+      "requirement": "Context 0/4 separate from contract 0/3; observation or feedback never grants credit",
+      "status": "DESIGN_VERIFIED_NOT_AUTHORITY"
+    },
+    {
+      "id": "HG-12",
+      "area": "PRIVACY_PROVENANCE",
+      "requirement": "No learner identifiers or live attempts in study packets; future data retention and consent must be separately designed",
+      "status": "INTEGRATION_POLICY_PENDING"
+    },
+    {
+      "id": "HG-13",
+      "area": "CONTRACT_AUTHORITY",
+      "requirement": "Specific approved EVAL-08 contract, explicit origin/intent/occurrence, isolated learner and language, Evidence protection",
+      "status": "NOT_AUTHORIZED"
+    },
+    {
+      "id": "HG-14",
+      "area": "RUNTIME_INTEGRATION",
+      "requirement": "E2E regression across languages, QWs, PATITA/Trail, S3-S4 canonical cycle and main reconciliation",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "HG-15",
+      "area": "TEMPORAL_GEAR",
+      "requirement": "PERIOD missing in GEAR-06 and only present affirmative WHY sources currently established; other grammar not inferred",
+      "status": "GEAR_GAP_OPEN"
+    }
+  ],
+  "reviewEvidence": {
+    "realTeacherReviewsCollected": 0,
+    "realTeacherMediationsCollected": 0,
+    "syntheticLabCases": 48,
+    "sourceCaseReviewsPrepopulated": false,
+    "humanHomologationComplete": false
+  },
+  "authorization": {
+    "pedagogicalHomologation": false,
+    "canEvaluateLearnerText": false,
+    "canIssueFeedbackFromRealAttempt": false,
+    "canMintEvidence": false,
+    "canGrantGreenPass": false,
+    "canWritePatita": false,
+    "canChangeLearningTrail": false
+  },
+  "deployment": {
+    "normalExplorer": "NO_CHANGE",
+    "func13": "HIDDEN",
+    "main": "UNTOUCHED",
+    "pr3": "UNTOUCHED",
+    "production": "UNTOUCHED"
+  }
+}
