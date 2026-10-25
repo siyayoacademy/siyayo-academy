@@ -1,0 +1,46 @@
+name: SIYAYO XPR-03 H14 supervision
+on:
+  push:
+    branches:
+      - jaguar/cross-project-registry-xpr03-h14-supervision-20261025
+    paths:
+      - 'docs/siyayo-cross-project-watchlist.json'
+      - 'docs/siyayo-xpr03-h14-capability-snapshot.json'
+      - 'scripts/siyayo-xpr03-*.cjs'
+      - 'scripts/test-siyayo-xpr03-*.cjs'
+      - 'scripts/test-siyayo-xpr02-drift-audit.cjs'
+      - '.github/workflows/siyayo-xpr03-h14-supervision.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test XPR-02 drift scenarios offline
+        run: node scripts/test-siyayo-xpr02-drift-audit.cjs
+      - name: Test XPR-03 discovery scenarios offline
+        run: node scripts/test-siyayo-xpr03-h14-discovery.cjs
+      - name: Audit all pinned HEADs (read-only)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/siyayo-xpr02-drift-audit.cjs --live --strict --output-dir reports
+      - name: Discover unregistered H14 WHY branches (read-only)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/siyayo-xpr03-h14-discovery.cjs --live --strict --output-dir reports
+      - name: Preserve diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: siyayo-xpr03-supervision
+          if-no-files-found: warn
+          path: |
+            reports/xpr02-report.json
+            reports/xpr02-report.md
+            reports/xpr03-discovery.json
+            reports/xpr03-discovery.md

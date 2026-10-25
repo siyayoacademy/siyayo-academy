@@ -1,0 +1,93 @@
+{
+  "id": "SIYAYO-XPR-03-H14-LAB-COVERAGE",
+  "version": "0.1.0",
+  "status": "READ_ONLY_DOCUMENTED_SCOPE_CI_VERIFICATION_PENDING",
+  "source": {
+    "repository": "siyayoacademy/siyayo-academy",
+    "base_branch": "jaguar/cross-project-registry-xpr02-20261025",
+    "base_commit": "04ea14d92e028f832313aa3a973762b8c60c0b6e"
+  },
+  "lifecycle": {
+    "coverage_start": "H14.40",
+    "coverage_end": "H14.51",
+    "watches": 16,
+    "why_labs": 12,
+    "added_lab_watches": 11
+  },
+  "audited_evidence": [
+    {
+      "elo": "H14.40",
+      "branch": "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+      "commit": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+      "verification": "github_ci_success_previously_checked",
+      "claims": [
+        "Reused V30.3.85C local SQLite/D1 study, seven open gaps"
+      ]
+    },
+    {
+      "elo": "H14.50",
+      "branch": "jaguar/h14-50-why-guarded-batch-candidate",
+      "commit": "03ccf051e677309891987524fee6df7624c33fc4",
+      "verification": "github_ci_success_run_40202361772",
+      "claims": [
+        "17 added local SQLite guarded-batch tests",
+        "No live Worker/D1, Evidence or Green"
+      ]
+    },
+    {
+      "elo": "H14.51",
+      "branch": "jaguar/h14-51-why-miniflare-d1-runtime",
+      "commit": "bb2878e3746415a29f4e5b15c087a65ec31fd696",
+      "verification": "github_ci_success_run_40203140595",
+      "claims": [
+        "14 added tests on actual local Miniflare D1 binding",
+        "Candidate still executed via Node proxy, not inside Worker",
+        "No remote D1, no real authentication, no production",
+        "Seven integration gaps remain open"
+      ]
+    }
+  ],
+  "other_lab_commits": {
+    "range": "H14.41–H14.49",
+    "verification": "github_branch_commit_sha_checked_only_no_new_CI_claims",
+    "count": 9
+  },
+  "unchanged_invariants": [
+    "No credentials in public documents",
+    "No new lab capability becomes production authority",
+    "85C occurrence storage separate from canonical Evidence",
+    "PATITA observational only",
+    "No merge main/PR#3",
+    "FUNC-13 hidden",
+    "No modification to MCE repo",
+    "No remote D1 or Cloudflare Pages deploy"
+  ],
+  "caveat": "Snapshot; discovery only on explicit workflow run or XPR-03 branch push. No background monitoring and no cross-project merges.",
+  "audit_critical_paths": [
+    {
+      "glob": "labs/jaguar-v30-3/",
+      "scope": "isolated_lab",
+      "nonpromotion": "yes"
+    },
+    {
+      "glob": "data/learning/references/jaguar-h14-",
+      "scope": "lab_references",
+      "nonpromotion": "yes"
+    },
+    {
+      "glob": "js/verb-explorer*",
+      "scope": "actual_explorer_runtime",
+      "requires": "separate integration authority"
+    },
+    {
+      "glob": "data/learning/skills/",
+      "scope": "evaluation_definitions",
+      "requires": "contract + pedagogical authority"
+    },
+    {
+      "glob": "docs/siyayo-cross-project-",
+      "scope": "governance_only",
+      "requires": "revalidation of references"
+    }
+  ]
+}

@@ -20,7 +20,7 @@ function test(scenario,strict){
   assert.ok(fs.existsSync(path.join(out,'xpr02-report.md')));
   assert.equal(p.status,scenario==='stable'?0:strict?2:0);
   assert.equal(r.decision,scenario==='stable'?'NO_REGISTERED_DRIFT':'REVIEW_REQUIRED');
-  if(scenario==='stable')assert.equal(r.summary.match,5);
+  if(scenario==='stable')assert.equal(r.summary.match,ws.length);
   if(scenario==='drift'){
    const m=r.results.find(x=>x.watch_id==='MCE:implementation');
    assert.ok(m.potential_modules.includes('MCE:MCE-RS-01')&&m.potential_modules.includes('MCE:MCE-HYM-A'));

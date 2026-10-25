@@ -92,3 +92,7 @@ Este registro é um **snapshot auditado**, não acompanha commits automaticament
 ## XPR-02 — Read-only drift audit
 
 A [auditoria de divergências](./SIYAYO-CROSS-PROJECT-DRIFT-AUDITOR.md) compara HEADs expressamente inscritos em uma [watchlist](./siyayo-cross-project-watchlist.json), analisa arquivos modificados e aponta consumidores candidatos. O script não monitora continuamente, não descobre branches automaticamente e não integra código.
+
+## XPR-03 — H14 laboratory coverage and branch discovery
+
+A [supervisão XPR-03](./SIYAYO-XPR03-H14-SUPERVISION.md) estende a watchlist para 16 checkpoints, incluindo H14.40–H14.51. Um verificador adicional procura branches H14 WHY ainda não cadastradas e solicita revisão sem inscrição automática. O laboratório H14.51 confirmou o binding D1 **local Miniflare**, não D1 remoto, autenticação ou aprovação de integração. Scripts e workflow são somente de leitura; não existe monitoramento contínuo.

@@ -37,3 +37,7 @@ Existe workflow em `.github/workflows/siyayo-xpr02-drift-audit.yml` com `content
 - Comparações grandes (300 arquivos ou mais) exigem conferência independente de completude. Mudanças não-fast-forward exigem inspeção manual.
 
 **Preservação:** documentações e scripts somente; nenhuma modificação a `main`, PR #3, Explorer, Mestre Canto Ensino, Cloudflare ou D1.
+
+## XPR-03 — H14 laboratory coverage and branch discovery
+
+A [supervisão XPR-03](./SIYAYO-XPR03-H14-SUPERVISION.md) estende a watchlist para 16 checkpoints, incluindo H14.40–H14.51. Um verificador adicional procura branches H14 WHY ainda não cadastradas e solicita revisão sem inscrição automática. O laboratório H14.51 confirmou o binding D1 **local Miniflare**, não D1 remoto, autenticação ou aprovação de integração. Scripts e workflow são somente de leitura; não existe monitoramento contínuo.
