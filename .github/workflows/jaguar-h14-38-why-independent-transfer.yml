@@ -1,0 +1,25 @@
+name: JAGUAR H14.38 WHY independent production and transfer
+on:
+  push:
+    branches: [jaguar/h14-38-why-independent-production-transfer]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  study-origin-protections:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-38-independent-production-transfer.js
+          node scripts/test-jaguar-h14-37-trilingual-semantic-review.js
+          node scripts/test-jaguar-h14-26-why-independent-task-blueprints.js
+          node scripts/test-jaguar-h14-36-phase1-source-review.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-38-independent-production-transfer.js --json > h14-38-task-packets.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-38-independent-task-packets
+          path: h14-38-task-packets.json
