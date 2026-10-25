@@ -1,0 +1,8 @@
+{
+  "name": "jaguar-h14-53-trusted-provenance-tests",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {"test": "node --test trusted-provenance-worker.test.mjs"},
+  "devDependencies": {"esbuild": "0.28.2", "miniflare": "4.20260730.0"}
+}

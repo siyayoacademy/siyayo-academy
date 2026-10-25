@@ -1,0 +1,23 @@
+{
+  "id": "JAGUAR-H14.53",
+  "version": "0.1.0",
+  "status": "TRUST_GATEWAY_LOCAL_MOCK_AUTH_NOT_REAL_AUTH",
+  "parentCommit": "677ced16460e9f0f5c88a40a379293beedb3c07f",
+  "components": [
+    "labs/jaguar-v30-3/test/h14-53/worker-entry.mjs",
+    "labs/jaguar-v30-3/test/h14-53/trusted-action-gateway.mjs",
+    "labs/jaguar-v30-3/test/h14-53/trusted-provenance-fixture.mjs"
+  ],
+  "newTests": 12,
+  "remoteD1Verified": false,
+  "realAuthenticationVerified": false,
+  "immutableRealActionProvenanceVerified": false,
+  "syntheticRecordImmutable": true,
+  "clientAuthorityFieldsRejected": true,
+  "workerBundledWithLocalD1": true,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}
