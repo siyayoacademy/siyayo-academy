@@ -1,0 +1,31 @@
+{
+  "id": "JAGUAR-H14.46",
+  "version": "0.1.0",
+  "status": "LOCAL_SQLITE_TRANSACTION_MODEL_NOT_RUNTIME_INTEGRATED",
+  "parentCommit": "1926c60e38e311f5c983ea1501cc37b66720dd19",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-46/transactional_lab.py",
+      "gitBlobSha": "65dd13d79912d7041fe624dc20d510ecaf4425d8"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-46/transactional_lab_test.py",
+      "gitBlobSha": "a705f9bc76ff5a3bd2f556acbbfa9466b287d317"
+    }
+  ],
+  "occurrenceTable": "v30_85c_occurrences_UNCHANGED",
+  "companionSchema": "TEMPORARY_TEST_FIXTURE_METADATA_ONLY",
+  "newProductMigration": false,
+  "defaultEnabled": false,
+  "tests": 20,
+  "sameDatabaseSerializationVerified": true,
+  "externalAuthorityAtomicityVerified": false,
+  "javascriptTransactionAdapterImplemented": false,
+  "workerD1Verified": false,
+  "legacyScopeImportImplemented": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}
