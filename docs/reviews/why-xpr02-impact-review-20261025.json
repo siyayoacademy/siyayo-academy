@@ -1,0 +1,872 @@
+{
+  "id": "SIYAYO-WHY-XPR02-IMPACT-REVIEW",
+  "schema_version": "1.0.0",
+  "status": "ON_DEMAND_REVIEW_WATCHLIST_PROPOSAL_NOT_ACTIVE",
+  "observed_at": "2026-10-25T14:43:16.688Z",
+  "governance": {
+    "branch": "jaguar/cross-project-registry-xpr02-20261025",
+    "commit": "04ea14d92e028f832313aa3a973762b8c60c0b6e",
+    "sources": [
+      {
+        "path": "docs/SIYAYO-CROSS-PROJECT-REGISTRY.md",
+        "blob_sha": "195bc981ad92da18c504e003f9dd15718704ca7d"
+      },
+      {
+        "path": "docs/SIYAYO-CROSS-PROJECT-DRIFT-AUDITOR.md",
+        "blob_sha": "48a84f550abbf730e8fd6ae7057c5ada8fbeffac"
+      },
+      {
+        "path": "docs/siyayo-cross-project-registry.json",
+        "blob_sha": "a1d32b6ec128a749b1e2de40a26ee5699dd04e15"
+      },
+      {
+        "path": "docs/siyayo-cross-project-watchlist.json",
+        "blob_sha": "84f051405a6946bc011433265cca6503f8740e58"
+      }
+    ]
+  },
+  "checkpoint_audit": [
+    {
+      "elo": "H14.40",
+      "branch": "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+      "expected_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+      "current_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+      "head_status": "MATCH",
+      "parents": [
+        "19dda53c4608f2b23987b361e4e3e21f19bf38a1"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-40-durable-idempotency.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-40-durable-idempotency-reconciliation-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+          "status": "added"
+        },
+        {
+          "path": "scripts/jaguar-h14-40-durable-idempotency-audit.js",
+          "status": "added"
+        },
+        {
+          "path": "scripts/test-jaguar-h14-40-durable-idempotency-audit.js",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40189055421,
+          "name": "JAGUAR H14.40 reuse V30 85C durable idempotence",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40189055421"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-40-durable-idempotency-reconciliation-v0.1.json",
+        "blob_sha": "e11a28bab88604dd5a0418134bffb06d24b7e43e",
+        "status": "DESIGN_RECONCILIATION_NOT_AUTHORIZED"
+      },
+      "implementation_scope": "SPECIFICATION_AUDIT_OR_PLANNER_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.41",
+      "branch": "jaguar/h14-41-why-dimension-intent-attempt-lifecycle",
+      "expected_sha": "9b06c9cc59990030dd4960f97a277720babeae0f",
+      "current_sha": "9b06c9cc59990030dd4960f97a277720babeae0f",
+      "head_status": "MATCH",
+      "parents": [
+        "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-41-dimension-intent-lifecycle.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-41-dimension-intent-lifecycle-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-41-DIMENSION-INTENT-ATTEMPT-LIFECYCLE.md",
+          "status": "added"
+        },
+        {
+          "path": "scripts/test-jaguar-h14-41-dimension-intent-lifecycle.js",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40190440020,
+          "name": "JAGUAR H14.41 dimension intent lifecycle",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "9b06c9cc59990030dd4960f97a277720babeae0f",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40190440020"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-41-dimension-intent-lifecycle-v0.1.json",
+        "blob_sha": "36e2a2617f22f385035d7bc143a75f0ae6af72ed",
+        "status": "SPECIFIED_NOT_AUTHORIZED"
+      },
+      "implementation_scope": "SPECIFICATION_AUDIT_OR_PLANNER_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.42",
+      "branch": "jaguar/h14-42-why-durable-failure-recovery",
+      "expected_sha": "b30aa104c531f3f96ba0a878b4eb5c423c5d7644",
+      "current_sha": "b30aa104c531f3f96ba0a878b4eb5c423c5d7644",
+      "head_status": "MATCH",
+      "parents": [
+        "9b06c9cc59990030dd4960f97a277720babeae0f"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-42-failure-recovery.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-42-failure-recovery-readiness-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-42-DURABLE-FAILURE-RECOVERY.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-42-failure-recovery.sqlite.test.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-42-storage-faults.test.mjs",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40191084264,
+          "name": "JAGUAR H14.42 durable failure recovery",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "b30aa104c531f3f96ba0a878b4eb5c423c5d7644",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40191084264"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-42-failure-recovery-readiness-v0.1.json",
+        "blob_sha": "ba27dd5c95865c01bf99bd87bbbb8069219aaf1f",
+        "status": "LOCAL_FAILURE_RECOVERY_VERIFIED_NOT_PRODUCTION_READY"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.43",
+      "branch": "jaguar/h14-43-why-selective-integration-manifest",
+      "expected_sha": "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333",
+      "current_sha": "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333",
+      "head_status": "MATCH",
+      "parents": [
+        "b30aa104c531f3f96ba0a878b4eb5c423c5d7644"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-43-selective-integration.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-43-selective-integration-manifest-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-43-SELECTIVE-INTEGRATION-HANDOFF.md",
+          "status": "added"
+        },
+        {
+          "path": "scripts/jaguar-h14-43-integration-readiness.js",
+          "status": "added"
+        },
+        {
+          "path": "scripts/test-jaguar-h14-43-integration-readiness.js",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40191814182,
+          "name": "JAGUAR H14.43 selective integration handoff",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40191814182"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-43-selective-integration-manifest-v0.1.json",
+        "blob_sha": "dee3d9e038b584bf240dc69d10a12b7e3bac2399",
+        "status": "TECHNICAL_HANDOFF_COMPLETE_RUNTIME_NO_GO"
+      },
+      "implementation_scope": "SPECIFICATION_AUDIT_OR_PLANNER_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.44",
+      "branch": "jaguar/h14-44-why-server-binding-dry-run",
+      "expected_sha": "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1",
+      "current_sha": "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1",
+      "head_status": "MATCH",
+      "parents": [
+        "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-44-server-binding-dry-run.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-44-binding-patch-candidate-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-44-SERVER-BINDING-DRY-RUN.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.mjs",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.test.mjs",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40192220752,
+          "name": "JAGUAR H14.44 server binding dry run",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40192220752"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-44-binding-patch-candidate-v0.1.json",
+        "blob_sha": "5ed38c680fffb1c69c94e48cd728b4ea9f859b95",
+        "status": "ISOLATED_BINDING_DRY_RUN_NOT_RUNTIME_INTEGRATED"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.45",
+      "branch": "jaguar/h14-45-why-persisted-replay-revalidation",
+      "expected_sha": "1926c60e38e311f5c983ea1501cc37b66720dd19",
+      "current_sha": "1926c60e38e311f5c983ea1501cc37b66720dd19",
+      "head_status": "MATCH",
+      "parents": [
+        "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-45-persisted-replay-revalidation.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-45-replay-revalidation-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-45-PERSISTED-REPLAY-REVALIDATION.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-45/persisted-replay-lab.mjs",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-45/persisted-replay-lab.test.mjs",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40193509780,
+          "name": "JAGUAR H14.45 persisted replay revalidation",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "1926c60e38e311f5c983ea1501cc37b66720dd19",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40193509780"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-45-replay-revalidation-v0.1.json",
+        "blob_sha": "34973b12524dced21334873454032f823b9744a4",
+        "status": "LOCAL_85C_REPLAY_REVALIDATION_NOT_PRODUCTION_READY"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.46",
+      "branch": "jaguar/h14-46-why-transactional-action-scope",
+      "expected_sha": "3c43844cd8403dccd50d877ba50a9a729ea10fb2",
+      "current_sha": "3c43844cd8403dccd50d877ba50a9a729ea10fb2",
+      "head_status": "MATCH",
+      "parents": [
+        "1926c60e38e311f5c983ea1501cc37b66720dd19"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-46-transactional-action-scope.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-46-transactional-action-scope-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-46-TRANSACTIONAL-ACTION-SCOPE.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-46/transactional_lab.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-46/transactional_lab_test.py",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40193847441,
+          "name": "JAGUAR H14.46 transactional action scope",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "3c43844cd8403dccd50d877ba50a9a729ea10fb2",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40193847441"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-46-transactional-action-scope-v0.1.json",
+        "blob_sha": "1b5f7c22c004c8d3fd84713ce22be49f3b7a7365",
+        "status": "LOCAL_SQLITE_TRANSACTION_MODEL_NOT_RUNTIME_INTEGRATED"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.47",
+      "branch": "jaguar/h14-47-why-cross-adapter-legacy-compatibility",
+      "expected_sha": "c96744fa5f216b0abe4411c28bf92f76d82e73e7",
+      "current_sha": "c96744fa5f216b0abe4411c28bf92f76d82e73e7",
+      "head_status": "MATCH",
+      "parents": [
+        "3c43844cd8403dccd50d877ba50a9a729ea10fb2"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-47-cross-adapter-compatibility.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-47-cross-adapter-compatibility-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-47-CROSS-ADAPTER-LEGACY-COMPATIBILITY.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-47/compatibility_inspector.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-47/cross-adapter-compatibility.test.mjs",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-47/sqlite_lab_driver.py",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40196271583,
+          "name": "JAGUAR H14.47 cross adapter legacy compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "c96744fa5f216b0abe4411c28bf92f76d82e73e7",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40196271583"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-47-cross-adapter-compatibility-v0.1.json",
+        "blob_sha": "19a1604bac897845060f5d0c62fae61e3c9a5716",
+        "status": "READ_REPLAY_COMPATIBLE_MIXED_WRITERS_BLOCKED"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.48",
+      "branch": "jaguar/h14-48-why-single-write-boundary",
+      "expected_sha": "79ce251bd0d2820590ad3a6c7e69afad892c09a0",
+      "current_sha": "79ce251bd0d2820590ad3a6c7e69afad892c09a0",
+      "head_status": "MATCH",
+      "parents": [
+        "c96744fa5f216b0abe4411c28bf92f76d82e73e7"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-48-single-write-boundary.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-48-single-write-boundary-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-48-SINGLE-WRITE-BOUNDARY.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-48/boundary_driver.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-48/guarded_transactions_test.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-48/single-write-boundary.test.mjs",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-48/single_write_boundary.py",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40199162699,
+          "name": "JAGUAR H14.48 single write boundary",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "79ce251bd0d2820590ad3a6c7e69afad892c09a0",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40199162699"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-48-single-write-boundary-v0.1.json",
+        "blob_sha": "f07b5cd78ec7e3901e19401222fcba7d73e2ee64",
+        "status": "LOCAL_SINGLE_WRITE_BOUNDARY_VERIFIED_NOT_PRODUCTION_READY"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.49",
+      "branch": "jaguar/h14-49-why-d1-writer-legacy-contract",
+      "expected_sha": "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c",
+      "current_sha": "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c",
+      "head_status": "MATCH",
+      "parents": [
+        "79ce251bd0d2820590ad3a6c7e69afad892c09a0"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-49-d1-writer-legacy-contract.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-49-d1-writer-legacy-contract-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-49-D1-WRITER-LEGACY-CONTRACT.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-49/legacy_destination_plan.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-49/legacy_destination_plan_test.py",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40201146869,
+          "name": "JAGUAR H14.49 D1 writer legacy contract",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40201146869"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-49-d1-writer-legacy-contract-v0.1.json",
+        "blob_sha": "b86edd17395f2ebbfbdd91438d8ad07eaa991a69",
+        "status": "DESTINATION_CONTRACT_DEFINED_ADAPTER_AND_STAGING_UNVERIFIED"
+      },
+      "implementation_scope": "SPECIFICATION_AUDIT_OR_PLANNER_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.50",
+      "branch": "jaguar/h14-50-why-guarded-batch-candidate",
+      "expected_sha": "03ccf051e677309891987524fee6df7624c33fc4",
+      "current_sha": "03ccf051e677309891987524fee6df7624c33fc4",
+      "head_status": "MATCH",
+      "parents": [
+        "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-50-guarded-batch-candidate.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-50-guarded-batch-candidate-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-50-GUARDED-BATCH-CANDIDATE.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-50/batch_driver.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.mjs",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.test.mjs",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40202361772,
+          "name": "JAGUAR H14.50 guarded batch candidate",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "03ccf051e677309891987524fee6df7624c33fc4",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40202361772"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-50-guarded-batch-candidate-v0.1.json",
+        "blob_sha": "b55ae90afd78cb559bad949b394a74b55a9b7674",
+        "status": "GUARDED_BATCH_CANDIDATE_LOCAL_SQLITE_VERIFIED_D1_UNVERIFIED"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    },
+    {
+      "elo": "H14.51",
+      "branch": "jaguar/h14-51-why-miniflare-d1-runtime",
+      "expected_sha": "bb2878e3746415a29f4e5b15c087a65ec31fd696",
+      "current_sha": "bb2878e3746415a29f4e5b15c087a65ec31fd696",
+      "head_status": "MATCH",
+      "parents": [
+        "03ccf051e677309891987524fee6df7624c33fc4"
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/jaguar-h14-51-miniflare-d1-runtime.yml",
+          "status": "added"
+        },
+        {
+          "path": "data/learning/references/jaguar-h14-51-miniflare-d1-runtime-v0.1.json",
+          "status": "added"
+        },
+        {
+          "path": "docs/JAGUAR-H14-51-MINIFLARE-D1-RUNTIME.md",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-51/.gitignore",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-51/fixture_export.py",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-51/miniflare-d1.test.mjs",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-51/package-lock.json",
+          "status": "added"
+        },
+        {
+          "path": "labs/jaguar-v30-3/test/h14-51/package.json",
+          "status": "added"
+        }
+      ],
+      "ci": [
+        {
+          "id": 40203140595,
+          "name": "JAGUAR H14.51 Miniflare D1 local runtime",
+          "status": "completed",
+          "conclusion": "success",
+          "head_sha": "bb2878e3746415a29f4e5b15c087a65ec31fd696",
+          "url": "https://github.com/siyayoacademy/siyayo-academy/actions/runs/40203140595"
+        }
+      ],
+      "reference": {
+        "path": "data/learning/references/jaguar-h14-51-miniflare-d1-runtime-v0.1.json",
+        "blob_sha": "359e4511840743536670dc24dd12ae25a14216f6",
+        "status": "MINIFLARE_D1_BINDING_VERIFIED_REMOTE_AND_WORKER_BUNDLE_UNVERIFIED"
+      },
+      "implementation_scope": "LABORATORY_COMPONENT_IMPLEMENTED",
+      "local_test_status": "TESTADO_LOCALMENTE",
+      "human_homologation": "PENDENTE_NAO_LOCALIZADA_NAS_FONTES",
+      "explorer_integration": "NAO_INTEGRADO",
+      "remote_d1": "PENDENTE"
+    }
+  ],
+  "active_watch_observation": [
+    {
+      "id": "SIA:registry",
+      "sha": "b73b0e728058652620119bdb737d2cf29bb92178",
+      "error": null
+    },
+    {
+      "id": "SIA:implementation",
+      "sha": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+      "error": null
+    },
+    {
+      "id": "MCE:registry",
+      "sha": "aaa118507e760ea670b9d608fb83e732d91d0a99",
+      "error": null
+    },
+    {
+      "id": "MCE:implementation",
+      "sha": "be95888dbf9709df00ee8a9969381536c0df4dd7",
+      "error": null
+    },
+    {
+      "id": "SIA:H14.40",
+      "sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+      "error": null
+    }
+  ],
+  "no_automatic_supervision": true,
+  "watchlist_activation": false,
+  "source_blobs_verified": [{"path":"labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.mjs","blob_sha":"62b76f48b92cc5df7bb6ec8859e0d5c212c3f3f9","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-45/persisted-replay-lab.mjs","blob_sha":"bc90d8ba8292a04b2d73929d459b0e021825ea45","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-46/transactional_lab.py","blob_sha":"65dd13d79912d7041fe624dc20d510ecaf4425d8","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-47/compatibility_inspector.py","blob_sha":"17240a8ae42e73db063713d3d2eb5f175b624167","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-48/single_write_boundary.py","blob_sha":"a000421d04db64ca71d1d53731bc847e2d6c7435","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-49/legacy_destination_plan.py","blob_sha":"97b4c06bfcb66cd37ea025a61315bd520540aa92","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.mjs","blob_sha":"3028ce91dc4c5ae6f8d8ca38aa2ba3d594f103ef","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/h14-51/miniflare-d1.test.mjs","blob_sha":"51d4f4f879d55f16e00a47107b7da43e62513d2a","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/test/storage-contract/storage-contract.mjs","blob_sha":"24ee8b62de033858ef44531f2d24b390236e32ec","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"},{"path":"labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql","blob_sha":"a83ca36d73466513bb80a302fbd58eaa8512b00d","commit":"bb2878e3746415a29f4e5b15c087a65ec31fd696"}],
+  "dependency_impact": [
+    {
+      "from": "H14.40",
+      "to": "REG-02:STORE-85C / REG-03:LAB-85C",
+      "relationship": "REUSES_EXISTING_STUDY",
+      "certainty": "PINNED_REFERENCE_AND_SQL_BLOB",
+      "impact": "No parallel occurrence bank; keep existing primary key and legacy rows"
+    },
+    {
+      "from": "H14.41",
+      "to": "REG-02:INTENT-01 / AUTH-01",
+      "relationship": "SPECIFIES_BINDING_NO_AUTHORITY",
+      "certainty": "PINNED_REFERENCE",
+      "impact": "Dimension/intent versioning remains separate from authorized EVAL-08"
+    },
+    {
+      "from": "H14.42",
+      "to": "V30.3.85C",
+      "relationship": "FAILURE_TESTS_SQL_AND_JS",
+      "certainty": "ADDED_TEST_PATHS_AND_CI",
+      "impact": "Local failures/restart/concurrency not remote-D1 proof"
+    },
+    {
+      "from": "H14.43",
+      "to": "REG-02:GATE-01",
+      "relationship": "SELECTIVE_HANDOFF_SEVEN_OPEN_GATES",
+      "certainty": "PINNED_REFERENCE",
+      "impact": "No runtime allowlist or integration authorization"
+    },
+    {
+      "from": "H14.45",
+      "to": "H14.44 + storage-contract.mjs",
+      "relationship": "DIRECT_JS_IMPORTS",
+      "certainty": "VERIFIED_SOURCE_BLOBS",
+      "impact": "Replay bypasses re-start but previous writer lacks transactional claims"
+    },
+    {
+      "from": "H14.46",
+      "to": "V30.3.85C SQL",
+      "relationship": "PYTHON_TRANSACTION_MODEL_NOT_JS_ADAPTER",
+      "certainty": "VERIFIED_SOURCE_BLOB",
+      "impact": "Reserves action/scope in same local DB transaction; mock authorization"
+    },
+    {
+      "from": "H14.48",
+      "to": "H14.47 + H14.46",
+      "relationship": "INSPECTOR_IMPORT_AND_LOCAL_GUARD_METADATA",
+      "certainty": "VERIFIED_SOURCE_BLOBS",
+      "impact": "Blocks old inserts only after explicit local guard installation and clean audit"
+    },
+    {
+      "from": "H14.49",
+      "to": "H14.47",
+      "relationship": "READ_ONLY_INSPECTOR_IMPORT",
+      "certainty": "VERIFIED_SOURCE_BLOBS",
+      "impact": "Classifies legacy disposition; no migration/backfill"
+    },
+    {
+      "from": "H14.50",
+      "to": "H14.44 + storage-contract.mjs",
+      "relationship": "DIRECT_JS_IMPORTS_PLUS_H14.48_GUARDED_SCHEMA",
+      "certainty": "VERIFIED_SOURCE_BLOBS",
+      "impact": "Prepared batch candidate uses original occurrences; assertion is auxiliary test metadata"
+    },
+    {
+      "from": "H14.51",
+      "to": "H14.50 + storage-contract.mjs + Miniflare",
+      "relationship": "DIRECT_TEST_IMPORTS_AND_LOCAL_D1_BINDING",
+      "certainty": "VERIFIED_SOURCE_BLOBS_AND_PINNED_RUNTIME_REFERENCE",
+      "impact": "D1 API tested locally, candidate still runs on Node host"
+    }
+  ],
+  "future_consumers": [
+    {
+      "ref": "SIA:ID-05",
+      "status": "POTENTIAL_NOT_INTEGRATED",
+      "boundary": "NICK display cannot own durable records; trusted server identity required"
+    },
+    {
+      "ref": "SIA:EVAL-08",
+      "status": "POTENTIAL_NOT_INTEGRATED",
+      "boundary": "Approved contract and evaluator decide; pending/receipt never credits"
+    },
+    {
+      "ref": "SIA:TRAIL-10",
+      "status": "POTENTIAL_NOT_INTEGRATED",
+      "boundary": "Read-only canonical progress; storage pending not accepted evidence"
+    },
+    {
+      "ref": "SIA:WORD-11",
+      "status": "POTENTIAL_NOT_INTEGRATED",
+      "boundary": "Read-only accepted witnesses in exact scope"
+    },
+    {
+      "ref": "SIA:PATITA-12",
+      "status": "PRESERVED_OBSERVATIONAL_ONLY",
+      "boundary": "Observation cannot become direct learner action or evaluation authority"
+    },
+    {
+      "ref": "SIA:LIVE-07",
+      "status": "PRESERVED_CONTEXTUAL_PRESENTATION",
+      "boundary": "Corpus/QW opportunity cannot implicitly authorize assessment"
+    },
+    {
+      "ref": "SIA:FUNC-13",
+      "status": "PRESERVED_HIDDEN",
+      "boundary": "Reference preview no evidence"
+    }
+  ],
+  "five_how": {
+    "HOW TO DO": "Prepare/bind/replay/reserve/guard batch in isolated laboratory; only approved future EVAL-08 can assess",
+    "HOW TO RECORD": "Reuse v30_85c_occurrences; immutable subject/UUID scope, action uniqueness and provenance; no second occurrence bank",
+    "HOW TO SHOW": "Receipts and audit reports now; future Trail/Word Path only from canonical evidence, not pending",
+    "HOW TO CHECK": "Pinned sources, CI, failures, races, read-only XPR drift review; separate local and remote proofs",
+    "HOW TO SPEAK": "NOT_APPLICABLE_TO_BACKEND; no new audio or speech; existing speech controls preserved"
+  },
+  "findings": [
+    {
+      "id": "WHY-XPR-01",
+      "type": "DOCUMENTARY_SNAPSHOT_AGE_NOT_CODE_DRIFT",
+      "detail": "REG-02 still labels H14.41-43 pending at H14.40 snapshot; use this dated supplement, preserve historical source"
+    },
+    {
+      "id": "WHY-XPR-02",
+      "type": "WATCHLIST_COVERAGE_GAP",
+      "detail": "Only H14.40 is active; H14.41-51 are proposed, not active"
+    },
+    {
+      "id": "WHY-XPR-03",
+      "type": "PATH_MAPPING_LIMIT",
+      "detail": "XPR-02 laboratory mapping has no potential consumers; H14 reference JSON/test-script/workflow paths may be UNMAPPED_REVIEW_REQUIRED. Do not change those rules silently"
+    },
+    {
+      "id": "WHY-XPR-04",
+      "type": "CONFIRMED_LAB_BYPASS_AND_SCOPED_FIX",
+      "detail": "H14.47 reproduces old-writer bypass; H14.48 guard blocks it only in installed protected local DBs"
+    },
+    {
+      "id": "WHY-XPR-05",
+      "type": "STATUS_AUTHORITY_SEPARATION",
+      "detail": "All CI success; no HG-04/05/09/10 homologation located; no Explorer integration or remote-D1 evidence"
+    },
+    {
+      "id": "WHY-XPR-06",
+      "type": "LOCAL_RUNTIME_BOUNDARY",
+      "detail": "H14.51 verifies local Miniflare D1 binding, not candidate bundled inside Worker or remote distributed D1"
+    },
+    {
+      "id": "WHY-XPR-07",
+      "type": "PROJECT_OWNERSHIP",
+      "detail": "Governance methodology reusable in MCE; WHY/identity/evidence/storage are SIA-specific and not imported into MCE"
+    }
+  ],
+  "protection": {
+    "main_changed": false,
+    "pr3_changed": false,
+    "laboratory_code_changed": false,
+    "assessment_contracts_changed": false,
+    "d1_changed": false,
+    "production_changed": false,
+    "may_issue_evidence": false,
+    "may_grant_green_pass": false,
+    "may_deploy": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "provenance": {
+    "mode": "REMOTE_GET_OBSERVATION_REPLAY_NOT_CONTINUOUS_MONITOR",
+    "observed_at": "2026-10-25T14:43:16.688Z",
+    "governance_commit": "04ea14d92e028f832313aa3a973762b8c60c0b6e"
+  },
+  "branches": {
+    "SIA:registry": {
+      "sha": "b73b0e728058652620119bdb737d2cf29bb92178"
+    },
+    "SIA:implementation": {
+      "sha": "9bcf599affccec323e4af6aa82d3a76f631bb8f5"
+    },
+    "MCE:registry": {
+      "sha": "aaa118507e760ea670b9d608fb83e732d91d0a99"
+    },
+    "MCE:implementation": {
+      "sha": "be95888dbf9709df00ee8a9969381536c0df4dd7"
+    },
+    "SIA:H14.40": {
+      "sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768"
+    },
+    "SIA:H14.41": {
+      "sha": "9b06c9cc59990030dd4960f97a277720babeae0f"
+    },
+    "SIA:H14.42": {
+      "sha": "b30aa104c531f3f96ba0a878b4eb5c423c5d7644"
+    },
+    "SIA:H14.43": {
+      "sha": "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333"
+    },
+    "SIA:H14.44": {
+      "sha": "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1"
+    },
+    "SIA:H14.45": {
+      "sha": "1926c60e38e311f5c983ea1501cc37b66720dd19"
+    },
+    "SIA:H14.46": {
+      "sha": "3c43844cd8403dccd50d877ba50a9a729ea10fb2"
+    },
+    "SIA:H14.47": {
+      "sha": "c96744fa5f216b0abe4411c28bf92f76d82e73e7"
+    },
+    "SIA:H14.48": {
+      "sha": "79ce251bd0d2820590ad3a6c7e69afad892c09a0"
+    },
+    "SIA:H14.49": {
+      "sha": "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c"
+    },
+    "SIA:H14.50": {
+      "sha": "03ccf051e677309891987524fee6df7624c33fc4"
+    },
+    "SIA:H14.51": {
+      "sha": "bb2878e3746415a29f4e5b15c087a65ec31fd696"
+    }
+  },
+  "comparisons": {}
+}

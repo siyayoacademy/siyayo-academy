@@ -1,0 +1,137 @@
+{
+  "id": "SIYAYO-XPR-02-WHY-WATCHLIST-PROPOSAL",
+  "schema_version": "1.0.0",
+  "status": "PROPOSED_NOT_ACTIVE_NO_MONITORING",
+  "watches": [
+    {
+      "id": "SIA:registry",
+      "project_id": "SIA",
+      "role": "registry",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/module-governance-reg03-impact-20261025",
+      "expected_sha": "b73b0e728058652620119bdb737d2cf29bb92178"
+    },
+    {
+      "id": "SIA:implementation",
+      "project_id": "SIA",
+      "role": "implementation",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-19-func13-speech-window-period-gap",
+      "expected_sha": "9bcf599affccec323e4af6aa82d3a76f631bb8f5"
+    },
+    {
+      "id": "MCE:registry",
+      "project_id": "MCE",
+      "role": "registry",
+      "repository": "siyayoacademy/mestrecantoensino",
+      "branch": "jaguar/mce-modular-governance-reg123-20261025",
+      "expected_sha": "aaa118507e760ea670b9d608fb83e732d91d0a99"
+    },
+    {
+      "id": "MCE:implementation",
+      "project_id": "MCE",
+      "role": "implementation",
+      "repository": "siyayoacademy/mestrecantoensino",
+      "branch": "jaguar/portal-preview-v25",
+      "expected_sha": "be95888dbf9709df00ee8a9969381536c0df4dd7"
+    },
+    {
+      "id": "SIA:H14.40",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+      "expected_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768"
+    },
+    {
+      "id": "SIA:H14.41",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-41-why-dimension-intent-attempt-lifecycle",
+      "expected_sha": "9b06c9cc59990030dd4960f97a277720babeae0f"
+    },
+    {
+      "id": "SIA:H14.42",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-42-why-durable-failure-recovery",
+      "expected_sha": "b30aa104c531f3f96ba0a878b4eb5c423c5d7644"
+    },
+    {
+      "id": "SIA:H14.43",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-43-why-selective-integration-manifest",
+      "expected_sha": "94bfc9ce9d171d7024ec6bbd641aab2cb5d27333"
+    },
+    {
+      "id": "SIA:H14.44",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-44-why-server-binding-dry-run",
+      "expected_sha": "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1"
+    },
+    {
+      "id": "SIA:H14.45",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-45-why-persisted-replay-revalidation",
+      "expected_sha": "1926c60e38e311f5c983ea1501cc37b66720dd19"
+    },
+    {
+      "id": "SIA:H14.46",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-46-why-transactional-action-scope",
+      "expected_sha": "3c43844cd8403dccd50d877ba50a9a729ea10fb2"
+    },
+    {
+      "id": "SIA:H14.47",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-47-why-cross-adapter-legacy-compatibility",
+      "expected_sha": "c96744fa5f216b0abe4411c28bf92f76d82e73e7"
+    },
+    {
+      "id": "SIA:H14.48",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-48-why-single-write-boundary",
+      "expected_sha": "79ce251bd0d2820590ad3a6c7e69afad892c09a0"
+    },
+    {
+      "id": "SIA:H14.49",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-49-why-d1-writer-legacy-contract",
+      "expected_sha": "fa3cf9bcffa3e88b7addfa047cffd1d59ffd0b4c"
+    },
+    {
+      "id": "SIA:H14.50",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-50-why-guarded-batch-candidate",
+      "expected_sha": "03ccf051e677309891987524fee6df7624c33fc4"
+    },
+    {
+      "id": "SIA:H14.51",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-51-why-miniflare-d1-runtime",
+      "expected_sha": "bb2878e3746415a29f4e5b15c087a65ec31fd696"
+    }
+  ],
+  "limits": "Proposal only; baseline five entries preserved. Activating requires explicit XPR watchlist revision. MATCH is not homologation or integration.",
+  "proposal_base_commit": "04ea14d92e028f832313aa3a973762b8c60c0b6e"
+}
