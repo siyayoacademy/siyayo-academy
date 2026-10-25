@@ -1,0 +1,49 @@
+{
+  "id": "JAGUAR-H14.51",
+  "version": "0.1.0",
+  "status": "MINIFLARE_D1_BINDING_VERIFIED_REMOTE_AND_WORKER_BUNDLE_UNVERIFIED",
+  "parentCommit": "03ccf051e677309891987524fee6df7624c33fc4",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-51/package.json",
+      "gitBlobSha": "6b87d5b3466b84ca89acfa4fa0fc9244f3abebf7"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-51/package-lock.json",
+      "gitBlobSha": "76bd961843ec0d7f40f171fd22ca4a76de46a59c"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-51/fixture_export.py",
+      "gitBlobSha": "6d395cfb0586c5b400664709e3e2567394e58b61"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-51/miniflare-d1.test.mjs",
+      "gitBlobSha": "51d4f4f879d55f16e00a47107b7da43e62513d2a"
+    }
+  ],
+  "runtime": {
+    "miniflare": "4.20260730.0",
+    "workerd": "1.20260730.1",
+    "compatibilityDate": "2026-07-30",
+    "storage": "TEMPORARY_LOCAL_D1_PERSISTENCE",
+    "queryDriver": "ACTUAL_MINIFLARE_D1_BINDING",
+    "candidateExecution": "NODE_HOST_USING_D1_PROXY",
+    "pythonRole": "EXPORT_FIXTURE_DDL_ONLY"
+  },
+  "newTests": 14,
+  "candidateH1450Modified": false,
+  "localD1BatchVerified": true,
+  "concurrentSameUuidVerifiedLocally": true,
+  "concurrentSameActionVerifiedLocally": true,
+  "fullRuntimeRestartVerifiedLocally": true,
+  "candidateWorkerBundlingVerified": false,
+  "remoteD1Verified": false,
+  "replicatedReadVerified": false,
+  "realAuthenticationVerified": false,
+  "productMigrationCreated": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}

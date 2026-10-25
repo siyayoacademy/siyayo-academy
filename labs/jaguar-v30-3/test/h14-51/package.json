@@ -1,0 +1,8 @@
+{
+  "name": "jaguar-h14-51-d1-local-runtime-tests",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {"test": "node --test miniflare-d1.test.mjs"},
+  "devDependencies": {"miniflare": "4.20260730.0"}
+}
