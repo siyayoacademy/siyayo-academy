@@ -1,0 +1,73 @@
+{
+  "id": "JAGUAR-H14.52",
+  "version": "0.1.0",
+  "status": "BUNDLED_WORKER_LOCAL_VERIFIED_REAL_IDENTITY_AND_REMOTE_D1_PENDING",
+  "parentCommit": "bb2878e3746415a29f4e5b15c087a65ec31fd696",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-52/worker-entry.mjs",
+      "gitBlobSha": "303421709574c72b2ac71042708b2bf4dd3a0351"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-52/worker-local-bundle.test.mjs",
+      "gitBlobSha": "169eee2f84faf7c1ba9f1d1b9e67d700696e7526"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-52/package.json",
+      "gitBlobSha": "100487e88085dafc3285583320c58b841b163e60"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-52/package-lock.json",
+      "gitBlobSha": "2c9e37be28612d8158511cd63891c1c7a462dfe2"
+    }
+  ],
+  "unchangedDependencies": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.mjs",
+      "gitBlobSha": "3028ce91dc4c5ae6f8d8ca38aa2ba3d594f103ef"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-44/server-binding-dry-run.mjs",
+      "gitBlobSha": "62b76f48b92cc5df7bb6ec8859e0d5c212c3f3f9"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/storage-contract/storage-contract.mjs",
+      "gitBlobSha": "24ee8b62de033858ef44531f2d24b390236e32ec"
+    }
+  ],
+  "runtime": {
+    "esbuild": "0.28.2",
+    "miniflare": "4.20260730.0",
+    "workerd": "1.20260730.1",
+    "compatibilityDate": "2026-07-30",
+    "flags": [
+      "nodejs_compat"
+    ],
+    "candidateExecution": "INSIDE_WORKER_VIA_LOCAL_RPC",
+    "httpRoutes": "ALWAYS_404",
+    "rpcDefaultEnabled": false,
+    "identity": "SYNTHETIC_DB_SESSION_ONLY"
+  },
+  "newTests": 15,
+  "bundledWorkerExecutionVerified": true,
+  "nativeCryptoVerified": true,
+  "localD1BatchVerified": true,
+  "remoteD1Verified": false,
+  "realAuthenticationVerified": false,
+  "productMigrationCreated": false,
+  "governance": {
+    "referenceCommit": "04ea14d92e028f832313aa3a973762b8c60c0b6e",
+    "whyImpactReviewCommit": "4d23abbf2893df8191b637bb792a35775f6c9f23",
+    "watchlistActivated": false,
+    "continuousMonitoring": false,
+    "fiveHowApplied": true
+  },
+  "homologation": "PENDING_SEPARATE_PEDAGOGICAL_REVIEW",
+  "explorerIntegration": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false,
+  "next": "H14.53_TRUSTED_IDENTITY_REVISION_AND_IMMUTABLE_ACTION_PROVENANCE"
+}
