@@ -1,0 +1,1167 @@
+{
+  "id": "JAGUAR-H14.43",
+  "version": "0.1.0",
+  "status": "TECHNICAL_HANDOFF_COMPLETE_RUNTIME_NO_GO",
+  "snapshot": {
+    "observedAt": "2026-10-25T12:06:22.140Z",
+    "repository": "siyayoacademy/siyayo-academy",
+    "main": "c2149f5e63b8de716cf9b9dcdede213bd328344e",
+    "pr3Head": "c7e83709cacf8479847df0f3cee4ed8a563aaae6",
+    "pr3Base": "8cd169bac05506f7c9046a12bfee7542af2292e6",
+    "registryHead": "719f259d78ca27d444bdfacecd3ccd2091818980",
+    "labHead": "b30aa104c531f3f96ba0a878b4eb5c423c5d7644",
+    "registrySource": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+    "registryBlob": "0ee10834cc168c462f96bc569953591bb6f8c51c",
+    "comparison": [
+      {
+        "path": "verb-explorer.html",
+        "main": "ddb08279e6ffdf5e9d24fc0c5b51ab62a32301a5",
+        "pr3": "3b703eabb576673c28dab4b4cb7550b781fc62ca",
+        "lab": "3e41f8feefba907335a54ec26d35dd340c8b8228",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "js/verb-explorer.js",
+        "main": "93d3e4b57f9d0337847005df704248b473644946",
+        "pr3": "56512980ed31b713849e9c1fb64aa257acf6b143",
+        "lab": "d4101482aa39926250c7a08e9890bb9d118d11d4",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "data/learning/experience-seeds.json",
+        "main": "3cf48fe1b97aaf391075f13371a12948f00d5065",
+        "pr3": "4982f37e3828aea0497998c7d3269ad8dab5a981",
+        "lab": "9a7165df76aed1b3b726c8198311027e024e91c4",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "data/learning/skills/why.json",
+        "main": null,
+        "pr3": "cf16e1e879bd236e5199240e350c0c623a2bc3ed",
+        "lab": "cf16e1e879bd236e5199240e350c0c623a2bc3ed",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "js/adaptive-assessment-scope.js",
+        "main": null,
+        "pr3": "ac0ec23f9a445377fba05092c684c2379afeff52",
+        "lab": "ac0ec23f9a445377fba05092c684c2379afeff52",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "js/verb-explorer-why-assessment-live.js",
+        "main": null,
+        "pr3": "f1b35c46b1e5f0e90ee7d7d33dd0c2425e487151",
+        "lab": "b1f879709dde208ad28e906d19c69b1d58328bde",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "js/verb-explorer-patita-interaction-trail.js",
+        "main": null,
+        "pr3": null,
+        "lab": "7a228eddf3f7f6c1f811230fad12709eda200e67",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "js/verb-explorer-learner-trail-surface.js",
+        "main": null,
+        "pr3": "942b5d23c05d83931e8a86017253a8d7b623858e",
+        "lab": "ecff309615ace2191e196fd3dc81fed4bf44767b",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "js/verb-explorer-polyglot-word-path-view.js",
+        "main": null,
+        "pr3": "aea0ea8f2734e13f1f936f94a6d32700811c9a0f",
+        "lab": "eea3ccf0ddf49110a760f6aa0831abc033c0d9cb",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "labs/jaguar-v30-3/test/storage-contract/storage-contract.mjs",
+        "main": null,
+        "pr3": null,
+        "lab": "24ee8b62de033858ef44531f2d24b390236e32ec",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      },
+      {
+        "path": "labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql",
+        "main": null,
+        "pr3": null,
+        "lab": "a83ca36d73466513bb80a302fbd58eaa8512b00d",
+        "disposition": "RECONCILE_ONLY_NO_AUTOMATIC_COPY"
+      }
+    ],
+    "modules": [
+      {
+        "code": "ID-05",
+        "controller": "js/verb-explorer-learner-identity-{source,provider,surface}.js",
+        "howToRecord": "Identity source; canonical learning identity is not display-only"
+      },
+      {
+        "code": "EVAL-08",
+        "controller": "js/verb-explorer-{determiner-use,what,why,where}-assessment-live.js",
+        "howToRecord": "Canonical Attempt/Evidence with authorized target only"
+      },
+      {
+        "code": "TRAIL-10",
+        "controller": "js/verb-explorer-learner-trail-surface.js; js/adaptive-learner-trail-view.js",
+        "howToRecord": "Read-only canonical progress projection"
+      },
+      {
+        "code": "WORD-11",
+        "controller": "js/verb-explorer-polyglot-word-path-view.js",
+        "howToRecord": "No writes: read-only witnesses"
+      },
+      {
+        "code": "PATITA-12",
+        "controller": "js/verb-explorer-patita-interaction-trail.js",
+        "howToRecord": "Local bounded ledger, max 500 records; observational only"
+      },
+      {
+        "code": "FUNC-13",
+        "controller": "js/verb-explorer-h14-14-preview.js + scripts/jaguar-h14-13-specialized-mirror-reference.js",
+        "howToRecord": "Per-Experience temporary function selection; NO Attempt/Evidence/GREEN"
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "path": "data/learning/references/jaguar-h14-10-first-two-practice-pilots-v0.1.json",
+      "gitBlobSha": "65ef1346b6088bea0af1249bcfd17034f8cb4cdd",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-11-mode-contextual-coherence-v0.1.json",
+      "gitBlobSha": "6f3eb8781f0f004fcc962b38b34563e27938dd2b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-12-integration-ledger-v0.1.json",
+      "gitBlobSha": "e4cdd81fee2b0fa2a83d434eb296f18bb9ca8a8b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-12-temporal-context-gate-v0.1.json",
+      "gitBlobSha": "7bf4aa3256f9b890805f9a07bf62af6cb4cf3cce",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-13-progressive-explorer-integration-v0.1.json",
+      "gitBlobSha": "e2d566110e12bb600055beaac463ac20cf0d36d1",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-14-preservation-extension-v0.1.json",
+      "gitBlobSha": "4f11fb187c09dacca6a0e851c1660aff3e185405",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-17-func13-design-contract-v0.1.json",
+      "gitBlobSha": "d03447067f788424b2df394824a17d4dad57f749",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-18-function-window-design-v0.1.json",
+      "gitBlobSha": "b02371db8a8541ac0faaae18946611f903c0e3af",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-19-speech-layout-contract-v0.1.json",
+      "gitBlobSha": "f3e68c87838af192bb751d1eac3eb679f3888965",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-2-qw-opportunity-map-v0.1.json",
+      "gitBlobSha": "ecc5107abcbeab20aef787d1bc2b33cf3880528e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-20-corpus-speech-period-gate-v0.1.json",
+      "gitBlobSha": "e3f7bf2d320978dc7505fb15e733b00d3626b6a4",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-27-module-registry-crosscheck-v0.1.json",
+      "gitBlobSha": "cf23a420655fd983644817246874e1d89384685c",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-27-why-question-function-semantic-rubric-v0.1.json",
+      "gitBlobSha": "fd0836b271ad957e1a4e4b9f30eeb65e333c25ab",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-3-why-s1-eligibility-v0.1.json",
+      "gitBlobSha": "4e4ae6fcb585829d18d77eb6044d1f7af01394a7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-33-why-semantic-homologation-reference-v0.1.json",
+      "gitBlobSha": "122599c7e06ed92ccbb877318ec95a3a55b694ad",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-36-main-integration-preflight-v0.1.json",
+      "gitBlobSha": "96aecc12a4168260b268433ffed7a66a8547aab7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-4-why-independent-opportunity-readiness-v0.1.json",
+      "gitBlobSha": "6cae1f63c36e11431c3039273591fa6e0dba6a46",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-40-durable-idempotency-reconciliation-v0.1.json",
+      "gitBlobSha": "e11a28bab88604dd5a0418134bffb06d24b7e43e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-41-dimension-intent-lifecycle-v0.1.json",
+      "gitBlobSha": "36e2a2617f22f385035d7bc143a75f0ae6af72ed",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-42-failure-recovery-readiness-v0.1.json",
+      "gitBlobSha": "ba27dd5c95865c01bf99bd87bbbb8069219aaf1f",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-5-why-s1-s2-context-transfer-v0.1.json",
+      "gitBlobSha": "e034e9a76aa2de77f2db6c0e878f22ba438dfe9a",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+      "gitBlobSha": "143e8692ac7dd5bdbd2de3d4624b0f264db7370d",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json",
+      "gitBlobSha": "a5262614f21672560a3941aaace4e26d470da17a",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-8-master-vip-perspectives-v0.1.json",
+      "gitBlobSha": "2c2ea20d38bebf8af1500c7dd0f4608bf1f7fff4",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-9-semantic-80-review-v0.1.json",
+      "gitBlobSha": "16bb6a6a08f7c97d33352ec59005fa9b247d9dca",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-10-FIRST-TWO-CONTEXTUAL-PRACTICE-PILOTS.md",
+      "gitBlobSha": "226f23a870c3377e1d8f66ba7590a2dbb1870e40",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-11-TENSE-MODE-CONTEXTUAL-COHERENCE.md",
+      "gitBlobSha": "3da68ffb3fadd832720d89bef1850f447d97e0c5",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-12-PRESERVATION-AND-TEMPORAL-GATES.md",
+      "gitBlobSha": "09c0988dd8b8371c836b2196f7fea529f1f82e92",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-13-PROGRESSIVE-EXPLORER-INTEGRATION.md",
+      "gitBlobSha": "bf99add0ca2e265a024122131aaa3f4e381e127b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-15-FUNC13-MODULE-GOVERNANCE.md",
+      "gitBlobSha": "8c0d2fe619f70d5d30ac34821dbf895dfc1feb78",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-16-BROWSER-QA-AND-SELECTIVE-MAIN-INTEGRATION.md",
+      "gitBlobSha": "c8f9bf1aa068f1bc2ca1d9ac10cc084087793ce1",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-17-FUNC13-FINE-STUDY-ARCHITECTURE.md",
+      "gitBlobSha": "8bee90b9c737886964f51afcd4c00a2448cb3b82",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-18-FUNC13-FUNCTION-WINDOW-ARCHITECTURE.md",
+      "gitBlobSha": "87cf9730b8cf0cd1b84a1551983cae08fdeec0d8",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-19-FUNC13-SPEECH-LAYOUT-AND-PERIOD.md",
+      "gitBlobSha": "100980702742c85c62ae86a898fee17433d7c606",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-2-QW-OPPORTUNITY-ARCHITECTURE.md",
+      "gitBlobSha": "af5b58c5310e09c47741b767564812b76ea4fb4b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-20-CORPUS-SPEECH-CARD-AND-PERIOD.md",
+      "gitBlobSha": "51e0e8095b54e3ac8fd32202812b8075da8176a6",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-21-FUNC13-CENTERED-TORO-HOW-TO-SHOW.md",
+      "gitBlobSha": "d9ed16ac81f89d0baedc2dc6b549513bb01c77b1",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-22-CENTERED-BROWSER-QA.md",
+      "gitBlobSha": "aa3d40104f0b3e0aeee21f1a6b803ff24ffefcfa",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-23-FUNC13-READONLY-GEAR-SNAPSHOT.md",
+      "gitBlobSha": "a2c74be126f83f4cb790e845f29379ab145cd389",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-24-EXPERIENCE-QW-COHERENCE-INVENTORY.md",
+      "gitBlobSha": "dbf4dbcdc7ce4ac2789524ff5b4a63b83a98fb97",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-25-WHY-S1-S2-FINE-COHERENCE.md",
+      "gitBlobSha": "fea17480a4693c1f80b0188c8d5b1c3d1695a9ea",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-26-WHY-INDEPENDENT-TASK-BLUEPRINTS.md",
+      "gitBlobSha": "5cc75d031e0f47bfab4b36cbab8461ac173868fa",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-27-WHY-SEMANTIC-RUBRIC-AND-REGISTRY.md",
+      "gitBlobSha": "d0213bc6f4c0aef9a78c06c631d9f0dcf65587a7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-28-WHY-SEMANTIC-CONTRAST-LAB.md",
+      "gitBlobSha": "76ae43d444865d8f003d3d22871b7e596e4a216a",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-29-SEMANTIC-RISKS.md",
+      "gitBlobSha": "d696b6c3d67feda21f77086bfb5abeba6d960a68",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-3-WHY-S1-CONTEXT-ELIGIBILITY.md",
+      "gitBlobSha": "fc800408592cc6514517c007564f63bf43a3a218",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-30-SUPERVISED-SEMANTIC-FEEDBACK.md",
+      "gitBlobSha": "8853e28ca9f467bc15f399304cc64af3aa734218",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-31-WHY-TWO-REVIEWER-CONSISTENCY.md",
+      "gitBlobSha": "c3301301059b1af22c5ef5ac5924ddbad7836017",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-32-WHY-PEDAGOGICAL-MEDIATION.md",
+      "gitBlobSha": "3d2d8f4d53034858657c7616bdbedd306b1a9bcc",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-33-WHY-SEMANTIC-HOMOLOGATION-REFERENCE.md",
+      "gitBlobSha": "944b11a08457790d6109ae508d62953ac6ea5f11",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-34-CONTEXTUAL-ASSESSMENT-READINESS.md",
+      "gitBlobSha": "00933caf12de51b8222acf8ec4d6c8c402eb82e7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-35-PROGRESSIVE-HOMOLOGATION-AND-MAIN-RECONCILIATION.md",
+      "gitBlobSha": "f0715b79837058a612eca21aaba409e61ae7e1b3",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-36-PHASE1-WHY-SOURCE-AND-INTEGRATION-PREFLIGHT.md",
+      "gitBlobSha": "369471f38a9fe13ac7fc272ef8f12193975ef537",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-37-TRILINGUAL-SEMANTIC-PARITY.md",
+      "gitBlobSha": "397983e1d648bdb598d5f859a7473a5d15483f1a",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-38-WHY-INDEPENDENT-PRODUCTION-TRANSFER.md",
+      "gitBlobSha": "cf82e2e757ae35d6994e967e49df2fcde8ff8454",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-39-CROSS-ORIGIN-OCCURRENCE-IDEMPOTENCE.md",
+      "gitBlobSha": "9de873c70a7fe99d1f1587c4e2ad7cf4f8e4d9f3",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-4-WHY-INDEPENDENT-OPPORTUNITY-GATES.md",
+      "gitBlobSha": "dd25c7dfc607aea6bc375dab0bf616648b4a78bc",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "gitBlobSha": "8380b95632351289720348013a4ac6c4b6c2a5f2",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-41-DIMENSION-INTENT-ATTEMPT-LIFECYCLE.md",
+      "gitBlobSha": "3f23adcc0c8990323ef47e5a66316348cd7ae951",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-42-DURABLE-FAILURE-RECOVERY.md",
+      "gitBlobSha": "03266777779c6cc0a44683b9014f262c7344ff4e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-5-WHY-S1-S2-CONTEXTUAL-TRANSFER.md",
+      "gitBlobSha": "05ccbf5bb23be94e77d8f2f2fc7b7f1aa2bd7013",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-6-WHY-ORIGIN-SCOPED-CONTRACT.md",
+      "gitBlobSha": "bbc23928103047a085d96c49ac958db03b4f4c94",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-7-MASTER-VIP-FIVE-FUNCTION-MATRIX.md",
+      "gitBlobSha": "67de83aade64ef5d6e25f1d4f9e5a66733c80661",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-8-MASTER-VIP-PERSPECTIVES-CONSOLIDATION.md",
+      "gitBlobSha": "5c836a7eb05cd0cd12e71cc73b3c5696a8f02658",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "docs/JAGUAR-H14-9-SEMANTIC-80-RELATIONS-STUDY.md",
+      "gitBlobSha": "3627c094d2477ce4663b39eb7d41168399df631e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/evidence/V30-3-85B-IDENTITY-CONTRACT.md",
+      "gitBlobSha": "efc1b8f045a5433c258ebba8e6010fcf841fc5ae",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql",
+      "gitBlobSha": "a83ca36d73466513bb80a302fbd58eaa8512b00d",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/assert-isolation.test.mjs",
+      "gitBlobSha": "5a322ae5de4a2dbc120644bb44011bc7b79c1e46",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/bridge.test.mjs",
+      "gitBlobSha": "647e53de50e27e01efcaa5fadd9be520798f125f",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/browser87/explorer-observation-client.mjs",
+      "gitBlobSha": "56d8c1f74518dbef0279a587edcd27f6e42fc3c1",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/browser87/explorer-observation-client.test.mjs",
+      "gitBlobSha": "a09b9f67c60e7960ea5b0ab178b83c30c96ce096",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/cloudflare-proof-preflight.test.mjs",
+      "gitBlobSha": "ecffb9ac6d5ddbab226ec0eb76dd3a70be886ab2",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/context-switch-recovery-89i.test.mjs",
+      "gitBlobSha": "d052c9ed18f8a455daa729a74e37cd4e4092fa07",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/contract-evolution-registry.test.mjs",
+      "gitBlobSha": "dc6ad226fd1713d7bf24e43ffae11d132a50ab93",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/d1-schema.sqlite.test.py",
+      "gitBlobSha": "1c2382182687aa7275b1c90a030305a7b762c452",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/durable-storage.sqlite.test.py",
+      "gitBlobSha": "0de59b5c3d4cc25ce05aca5157e64e6a52263f83",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/explorer-seam.test.mjs",
+      "gitBlobSha": "6c72a2eeb8e323f4cdf0ddcde83992a6f685f796",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-42-failure-recovery.sqlite.test.py",
+      "gitBlobSha": "e36bce4a96d4dcbf5837e6d0f520a5da32489160",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-42-storage-faults.test.mjs",
+      "gitBlobSha": "cdd39d780ef949df669dfcdae8c73aa598e4bab3",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http87/access-verifier.mjs",
+      "gitBlobSha": "0a7278adf0267893679b6b5734ff54b880f363b9",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http87/access-verifier.test.mjs",
+      "gitBlobSha": "30c7bf99f428d236b8c79ddf8a5421b23922fd4b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http87/read-only-http.mjs",
+      "gitBlobSha": "0bca640cf00f44b2dda81fe64c18737169191f2e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http87/read-only-http.test.mjs",
+      "gitBlobSha": "67255fbead34fb3bc6bc905ecb4277f55f585698",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/composite-access-verifier.mjs",
+      "gitBlobSha": "1306309252cbef6cdcb8a44c2cead850dbf6e903",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/composite-access-verifier.test.mjs",
+      "gitBlobSha": "bed281b74b48dc9dd163d0ce78292a243f3e80c7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/cross-layer-recovery.test.mjs",
+      "gitBlobSha": "3c50f80a1f07eb574b6ce63ccd5abe156127fb50",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/rotating-jwks.mjs",
+      "gitBlobSha": "f0b7f20cbedcd0da4f3763b3be3b28f91b499888",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/rotating-jwks.test.mjs",
+      "gitBlobSha": "d6426926a3bb75b30ac703c6598a0331ec096c36",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/session-gate.mjs",
+      "gitBlobSha": "0fe2bb1684a5ab97a27d3b80a4126b7b3c4fb4ee",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/http88/session-gate.test.mjs",
+      "gitBlobSha": "a5e581bdd153d394dccb770f35a7388051633cd2",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/identity-contract/server-identity-contract.mjs",
+      "gitBlobSha": "e28e6c5c39340d31daa12ac866178fc9bab48041",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/identity-contract/server-identity-contract.test.mjs",
+      "gitBlobSha": "d76bb980197efad3e3703fa79a31115d54567b62",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/identity-mock/identity.mjs",
+      "gitBlobSha": "0eac51524c1885dfa7383f2c28342cac6516f9c3",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/identity-mock/identity.test.mjs",
+      "gitBlobSha": "45ef022765fa6ece7ba4702fca547b9ae28971d8",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/integration/local-observation-gateway.mjs",
+      "gitBlobSha": "2c3493f92055f2b41812b9ad3fe26a98c917cbd7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/integration/local-observation-gateway.test.mjs",
+      "gitBlobSha": "78d91342d7104eb927b0b3b35b610fc1ea374e5f",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/marker-provenance-89j.test.mjs",
+      "gitBlobSha": "ee3d7aa4b473542d10000dc660ffd438b24e1eef",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/observation-ui/observation-panel.mjs",
+      "gitBlobSha": "b53c95c77c2c4b80628c382a46586d9edef32fa9",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/observation-ui/observation-panel.test.mjs",
+      "gitBlobSha": "9bf92da8f0bf14867364762434965d0aa38fed99",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/offline-continuity-89h.test.mjs",
+      "gitBlobSha": "cd156d18efe1935e8b8d83fb2c5f1d68c6b744d7",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/prestaging-gate.test.mjs",
+      "gitBlobSha": "31fa451c8cdeca4cf68ee27db41b789f69fb2a42",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/review-why-transversal-89o.test.mjs",
+      "gitBlobSha": "c188d4370988bfd4e99816516167b7e806cd8fd6",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/scoped-memory-continuity-89q.test.mjs",
+      "gitBlobSha": "799a7b0f10f22ffa51f26f825639685f1f482431",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/scoped-selection-word-path-89r.test.mjs",
+      "gitBlobSha": "9c7af2dee269c8fef9f6ec1e8bb9d631368b1ee1",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/staging-architecture-89d.test.mjs",
+      "gitBlobSha": "b50b7db39bb406f24c538adc843f37cea18b2ae3",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/storage-contract.test.mjs",
+      "gitBlobSha": "f8a00d936b8b85a8f478cae7d6eb1f4e6cf7e22e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/storage-contract/restore-observer.mjs",
+      "gitBlobSha": "115b8e35c917ab7ce84241019309c4bfdb674320",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/storage-contract/restore-observer.test.mjs",
+      "gitBlobSha": "74d76684f0840aebc3fb981cffe9ad4a5f1b1c07",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/storage-contract/storage-contract.mjs",
+      "gitBlobSha": "24ee8b62de033858ef44531f2d24b390236e32ec",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/trilingual-visual-contract-89k.test.mjs",
+      "gitBlobSha": "be51a32a277708c7d4838c4c178059cbe1fc2241",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/which-evidence-boundary-89p.test.mjs",
+      "gitBlobSha": "6196d5615db44a9932eadad624358b9d4762c057",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/worker-v30-integration.test.mjs",
+      "gitBlobSha": "2ee7c106ef87065e5a4256cd5ca1677b7407249f",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/worker.test.mjs",
+      "gitBlobSha": "f8c7f4d01b7daa62d27d0d2deb2363ec9bab801e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/wrangler.local.toml",
+      "gitBlobSha": "947e3b8dce1eb90b0cc5a940604d6a21a06e4456",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/experimental-patita-h14-1-cross-qw.py",
+      "gitBlobSha": "103d9e217c7da65cda5944dac7bb4df550bbb6a0",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-13-specialized-mirror-reference.js",
+      "gitBlobSha": "676ec4181e42e3b28a4a56ca830f99b207048696",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-17-func13-fine-study.js",
+      "gitBlobSha": "45d6afc02bd07ef3d25ea0e9b0df2bc36ff8aff9",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-18-function-window-contract.js",
+      "gitBlobSha": "d3bfe6cf7d0ba89038efdc413a0db930ca06ce6b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-24-experience-qw-audit.js",
+      "gitBlobSha": "6d7ae1bde3c30c6ae06b0800c8560a6901c58005",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-25-why-s1-s2-fine-review.js",
+      "gitBlobSha": "66dccee4263215c6fab53ee044be095e67c142c0",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-26-why-independent-task-blueprints.js",
+      "gitBlobSha": "8004dd85f124a0a68e12c60d8dfb2feeb938f0cf",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-28-semantic-contrast-bank.js",
+      "gitBlobSha": "d89952862273595870a305e553ab14c025b12d70",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-29-semantic-risk-audit.js",
+      "gitBlobSha": "bcf4c7d9c2aae8872e4c1a33597059160e19bf4c",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-30-supervised-semantic-protocol.js",
+      "gitBlobSha": "ea5b602bfe7ae4bd75211d0bb271eec0a0a8e4bf",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-31-review-form.js",
+      "gitBlobSha": "fc343e211c4d32a2f5bf970e3c6249b384e868a2",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-31-two-reviewer-consistency.js",
+      "gitBlobSha": "1a7254c5df8169c36b41161ab6136dea3bbeb067",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-32-pedagogical-mediation.js",
+      "gitBlobSha": "8b1c9be3632660900af6659b34c1b336397af556",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-33-homologation-reference-audit.js",
+      "gitBlobSha": "b54fbb5e0ae1e9a6d41c9593e360aa8ae0388f17",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-34-readiness-matrix.js",
+      "gitBlobSha": "177a97b65bd0ee58a87e943523ab8db3cb535ad0",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-35-progressive-homologation.js",
+      "gitBlobSha": "39934532881cda5158645ff46936be15d2239cb6",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-36-phase1-source-review.js",
+      "gitBlobSha": "fe9c9816b056cddefc97733f7676a93f191cd656",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-37-trilingual-semantic-review.js",
+      "gitBlobSha": "b9aecd0afe264d7a108008cdc3079088cff04237",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-38-independent-production-transfer.js",
+      "gitBlobSha": "48e70c983cb864c39d5a6b7e79f7069333c35377",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-39-shadow-occurrence-idempotence.js",
+      "gitBlobSha": "c92e7e2375c60ff485a1f4a30a4967656887dd90",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-4-why-readiness.js",
+      "gitBlobSha": "5031bb7fe9b2fd85abb84fb806e7b191a1820076",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-40-durable-idempotency-audit.js",
+      "gitBlobSha": "113fa777d46abbaa387d8475e373af80e3a614ed",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-5-why-context-projection.js",
+      "gitBlobSha": "bf98dc5b857123b6cfeb4922deb428add9da28af",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-6-contract-inspector.js",
+      "gitBlobSha": "cfbe96ecc591324d7b69e85909f6bd92eed55753",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/jaguar-h14-8-perspective-cross-reference.js",
+      "gitBlobSha": "93ae3853bd207666b53ee0b8aa25872988f92372",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-10-first-two-pilots.js",
+      "gitBlobSha": "3cda00d230d63c43b5f13d7c5d0bf647be309813",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-11-modes-and-coherence.js",
+      "gitBlobSha": "7c5f640af423b029d46b87697c9bdf975e93666e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-12-integration-temporal.js",
+      "gitBlobSha": "c2318bfe79ac67325495eaabed30a72ba26b659b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-13-progressive-integration.js",
+      "gitBlobSha": "bf8f1d12f4b29c8dfbfe2eb6738bba754d1d98fb",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-14-preview.js",
+      "gitBlobSha": "9da22ca07e92be90ea38d7c9941395ee692c0796",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-15-func13-unified.js",
+      "gitBlobSha": "e35d6aa6944497bdca18419eb200cc3f77588d34",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-16-browser-regressions.cjs",
+      "gitBlobSha": "0423a8bfde11597e5f129b909d124a8b8232d7e2",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-17-func13-fine-study.js",
+      "gitBlobSha": "98b150777a61e692703b95eca2087a96d35392d8",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-18-function-window.js",
+      "gitBlobSha": "2473f310bac11cea5603d88f884da3561269d429",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-19-speech-layout.js",
+      "gitBlobSha": "d15e64477b1114e215131ac495efc3aa82e34fcc",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-2-opportunity-map.js",
+      "gitBlobSha": "39a9d215c5df398e88d56b31a6eff821250da31d",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-20-browser.cjs",
+      "gitBlobSha": "9e93de8b4d55b629fd884e369ce53cddee305597",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-20-corpus-speech-card.js",
+      "gitBlobSha": "0a2ef002e266b5095a459a421f4cf5553051412f",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-21-centered-toro.js",
+      "gitBlobSha": "002576af52f4df8ef5a9089fe46753b605e5b2c5",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-22-centered-browser-speech.cjs",
+      "gitBlobSha": "fe985ed4204fa95e2851fb691a2afd386ec25c3a",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-23-gear-snapshot.js",
+      "gitBlobSha": "d49eba73dd395e7bf95eb75a781423f6e15a0312",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-23-real-gear-browser.cjs",
+      "gitBlobSha": "fa42a430fb61a061197e41a000050c580aeafa32",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-24-experience-qw-audit.js",
+      "gitBlobSha": "f41887ebd1baf31fecea3eacc8d6d8a4906f5b35",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-25-why-s1-s2-fine-review.js",
+      "gitBlobSha": "fa4b120b80200d6af80a81cb68a29b65760138b0",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-26-why-independent-task-blueprints.js",
+      "gitBlobSha": "579ad883242883bfdb683e0e3a19e9022bcc8019",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-27-why-semantic-rubric.js",
+      "gitBlobSha": "efe8f135629e307f043378f66e23349c6adc1e1e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-28-semantic-contrast-bank.js",
+      "gitBlobSha": "d81f6d417ae8b39b1faccff0f0a85ca65cbf74f6",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-29-semantic-risk-audit.js",
+      "gitBlobSha": "8ca9c33975c211ec4c496bf8ea113c3815d3d92b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-3-why-s1-eligibility.js",
+      "gitBlobSha": "012b8f82404fda873d96fb8db09ec6bbf76d059d",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-30-supervised-semantic-protocol.js",
+      "gitBlobSha": "61ec8ddefc10006cb8d852161557685caae8d25f",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-31-two-reviewer-consistency.js",
+      "gitBlobSha": "e1703d20cab8c7ba6e6f1481f209663647b85a1c",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-32-pedagogical-mediation.js",
+      "gitBlobSha": "39b548f5865919a23a2b6a0fdcf618bf61ed53e3",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-33-homologation-reference.js",
+      "gitBlobSha": "2f2453e5fbdd18d2a426c1d3b6370361164c8b8d",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-34-readiness-matrix.js",
+      "gitBlobSha": "61c0697cba0b7340039ac09000019b263e8b2fc5",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-35-progressive-homologation.js",
+      "gitBlobSha": "6bab49b0b7b4bd0929752d6d5a8155b7dc8ca77b",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-36-phase1-source-review.js",
+      "gitBlobSha": "e34f4c4b07bb1b5e7bc895a73fb9dcb08706fb3c",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-37-trilingual-semantic-review.js",
+      "gitBlobSha": "a6961394689b7ebc7cc75a8db6e636b212e78bba",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-38-independent-production-transfer.js",
+      "gitBlobSha": "2c1af433a95cce08fb2d0263f41c35b9795b6e40",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-39-shadow-occurrence-idempotence.js",
+      "gitBlobSha": "70a7f56169d44d4871bfa7f2a215272e79544247",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-4-why-independent-opportunities.js",
+      "gitBlobSha": "4e96bec7341fe10de7750775f8da537ccf6faf7e",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-40-durable-idempotency-audit.js",
+      "gitBlobSha": "3b6cb85ba40b3eab1c5fa2ff73c0b2bfba307171",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-41-dimension-intent-lifecycle.js",
+      "gitBlobSha": "4645037561db1e25e6bc1edca3c4317b0e620da8",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-5-why-s1-s2-context-transfer.js",
+      "gitBlobSha": "f1c3bcbe5cc717f5c61b2e65f0e65d61f3e05867",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-6-why-origin-scoped-contract.js",
+      "gitBlobSha": "7deb679091cd6315bc745e1c186308cb53ecdf01",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-7-existence-lab.js",
+      "gitBlobSha": "7a042a8ed7204c60a8813008c863ebc12c92feef",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-7-five-functions-matrix.js",
+      "gitBlobSha": "f806391ef914905a53ebcc0595b4a40eda65e228",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-8-perspective-cross-reference.js",
+      "gitBlobSha": "c65c10404c050a3f74c0524a41d20a53685d7529",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    },
+    {
+      "path": "scripts/test-jaguar-h14-9-semantic-80-review.js",
+      "gitBlobSha": "2e2574a85b6aac69df8755e162d09851a3b3e657",
+      "disposition": "REFERENCE_OR_TEST_ONLY_NOT_RUNTIME_ALLOWLIST"
+    }
+  ],
+  "inventoryScope": "H14 documents/reference/scripts plus existing V30 test assets and 85C SQL; inventory is not a proven transitive runtime dependency closure",
+  "runtimeApplyAllowlist": [],
+  "decision": {
+    "technicalHandoff": "GO",
+    "runtimeIntegration": "NO_GO",
+    "stagingDeployment": "NO_GO",
+    "production": "NO_GO"
+  },
+  "gates": [
+    {
+      "id": "DG-01",
+      "name": "DIMENSION_AND_INTENT",
+      "status": "OPEN",
+      "requiredEvidence": "Bind question-function/local/transfer with authoritative intent, origin and occurrence; 85C lacks dedicated columns."
+    },
+    {
+      "id": "DG-02",
+      "name": "AUTHORIZED_CONTRACT",
+      "status": "OPEN",
+      "requiredEvidence": "S1/S2 draft WHY must receive a separate approved EVAL-08 assessment target; pending does not mean pass."
+    },
+    {
+      "id": "DG-03",
+      "name": "ATOMIC_EVIDENCE_LIFECYCLE",
+      "status": "OPEN",
+      "requiredEvidence": "Add independently tested atomic evidence outbox or ledger for exactly-once canonical Evidence; 85C only stores pending/observed."
+    },
+    {
+      "id": "DG-04",
+      "name": "PRODUCTION_IDENTITY",
+      "status": "OPEN",
+      "requiredEvidence": "Real trusted session verifier and server-owned opaque subject. V30 tests remain mock-only."
+    },
+    {
+      "id": "DG-05",
+      "name": "CROSS_RUNTIME_CONCURRENCY",
+      "status": "OPEN",
+      "requiredEvidence": "Prove D1/Worker behavior with real staging races and retries before production."
+    },
+    {
+      "id": "DG-06",
+      "name": "EXPLORER_INTEGRATION",
+      "status": "OPEN",
+      "requiredEvidence": "Read module registry, reconcile main HEAD, selective apply, regress EN/ES/PT, S3–S4, PATITA/Trail."
+    },
+    {
+      "id": "DG-07",
+      "name": "TEACHER_HOMOLOGATION",
+      "status": "OPEN",
+      "requiredEvidence": "HG-04/05/09/10 teacher review of independent production and transfer not complete."
+    }
+  ],
+  "dependencyBoundaries": [
+    {
+      "component": "H14.39 shadow",
+      "dependsOn": [
+        "H14.38 task source packets",
+        "Adaptive Scope",
+        "WHY skill"
+      ],
+      "boundary": "synthetic candidates only; reconcile UUID uniqueness with 85C before any adapter"
+    },
+    {
+      "component": "V30.3.85C",
+      "dependsOn": [
+        "verified server principal (mock in tests)",
+        "unchanged 0004 SQL",
+        "storage-contract.mjs"
+      ],
+      "boundary": "durable observed/pending only; not evaluator"
+    },
+    {
+      "component": "H14.41",
+      "dependsOn": [
+        "H14.6 dimensions/intents",
+        "H14.40 reuse"
+      ],
+      "boundary": "server-resolved binding proposal; implementation not present"
+    },
+    {
+      "component": "H14.42",
+      "dependsOn": [
+        "85C SQL real local SQLite",
+        "85C JS with DB double",
+        "H14.41 binding metadata"
+      ],
+      "boundary": "local failure evidence; not distributed D1 validation"
+    },
+    {
+      "component": "future evaluator",
+      "dependsOn": [
+        "approved EVAL-08 target",
+        "real identity",
+        "verified action/exposure",
+        "atomic decision Evidence/outbox"
+      ],
+      "boundary": "not implemented/authorized by this package"
+    },
+    {
+      "component": "TRAIL-10 WORD-11 PATITA-12",
+      "dependsOn": [
+        "existing canonical sources and module contracts"
+      ],
+      "boundary": "read-only evidence projections / observational ledger; do not promote stored attempts"
+    }
+  ],
+  "selectiveIntegrationProcedure": [
+    "Re-read main, PR3 and registry HEADs; invalidate snapshot on drift and recalculate path comparison",
+    "Produce a separate reviewed runtime patch with exact path/blob allowlist and proven transitive dependencies; never merge the laboratory branch wholesale",
+    "Implement and verify real identity and server-owned versioned binding, preserving 85C rows and legacy-unbound reads",
+    "Obtain pedagogical homologation HG-04/05/09/10 and separate authorized per-origin EVAL-08 contracts",
+    "Implement atomic evaluator decision plus Evidence/outbox with idempotent consumers; never infer authority from pending/hash",
+    "Test isolated Worker/D1 staging races, failure recovery and adapter-disable rollback after all staging preconditions are met",
+    "Regress EN/ES/PT, origins, QW/language/learner switches, WHY S3-S4, speech, Trail/Word Path/PATITA and FUNC-13 hidden; desktop portrait landscape",
+    "Re-evaluate every gate using linked evidence and approvals; authorize integration/deployment separately"
+  ],
+  "preservation": {
+    "mainMutation": false,
+    "pr3Mutation": false,
+    "explorerMutation": false,
+    "patitaMutation": false,
+    "trailMutation": false,
+    "func13Unhide": false,
+    "productionMutation": false,
+    "mayIssueEvidence": false,
+    "mayGrantGreenPass": false
+  },
+  "completion": "H14.40-H14.43 technical preparation 4/4; seven integration gates remain open"
+}

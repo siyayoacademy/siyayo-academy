@@ -1,0 +1,29 @@
+name: JAGUAR H14.43 selective integration handoff
+on:
+  push:
+    branches: [jaguar/h14-43-why-selective-integration-manifest]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify-existing-durable-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-43-integration-readiness.js
+          python3 labs/jaguar-v30-3/test/h14-42-failure-recovery.sqlite.test.py -v
+          node --test labs/jaguar-v30-3/test/h14-42-storage-faults.test.mjs
+          node scripts/test-jaguar-h14-41-dimension-intent-lifecycle.js
+          node scripts/test-jaguar-h14-40-durable-idempotency-audit.js
+          node scripts/test-jaguar-h14-39-shadow-occurrence-idempotence.js
+          node --test labs/jaguar-v30-3/test/storage-contract.test.mjs
+          python3 labs/jaguar-v30-3/test/durable-storage.sqlite.test.py -v
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-43-integration-readiness.js > h14-43-integration-readiness.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-43-integration-handoff
+          path: h14-43-integration-readiness.json
