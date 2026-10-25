@@ -1,0 +1,31 @@
+{
+  "id": "JAGUAR-H14.45",
+  "version": "0.1.0",
+  "status": "LOCAL_85C_REPLAY_REVALIDATION_NOT_PRODUCTION_READY",
+  "parentCommit": "557ff26a9b279b9ed73e1833b299ba3dc0eef5e1",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-45/persisted-replay-lab.mjs",
+      "gitBlobSha": "bc90d8ba8292a04b2d73929d459b0e021825ea45"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-45/persisted-replay-lab.test.mjs",
+      "gitBlobSha": "1c161403054d00e3f1898c228e8f7c878b94807a"
+    }
+  ],
+  "storage": "UNCHANGED_85C",
+  "newSchema": false,
+  "defaultEnabled": false,
+  "tests": 18,
+  "testDatabase": "FILE_BACKED_SQLITE_VIA_PYTHON_DRIVER",
+  "resolvers": "MOCK_ONLY",
+  "replay": "AUTHENTICATED_HISTORICAL_RECEIPT_NOT_REAUTHORIZATION",
+  "atomicAuthorizationAndWrite": false,
+  "exclusiveActionReservation": false,
+  "atomicScopeCreation": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}
