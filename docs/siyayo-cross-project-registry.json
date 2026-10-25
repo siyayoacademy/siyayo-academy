@@ -1,0 +1,827 @@
+{
+  "id": "SIYAYO-XPR-01-CROSS-PROJECT-REGISTRY",
+  "schema_version": "1.0.0",
+  "status": "STATIC_DOCUMENTARY_SNAPSHOT_NO_AUTOMATIC_SYNCHRONIZATION",
+  "purpose": "cross-project module discovery; relationship classification; selective adaptation with independent ownership",
+  "registry_host": "siyayoacademy/siyayo-academy",
+  "designed_for_repos": [
+    "siyayoacademy/siyayo-academy",
+    "siyayoacademy/mestrecantoensino"
+  ],
+  "qualification_rule": "Use SIA:EXP-01 and MCE:MCE-HYM-A; never assume unqualified code is globally unique",
+  "provenance": {
+    "academyRegistryCommit": "b73b0e728058652620119bdb737d2cf29bb92178",
+    "mceRegistryCommit": "aaa118507e760ea670b9d608fb83e732d91d0a99",
+    "academyExplorerCode": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+    "mceSiteCode": "be95888dbf9709df00ee8a9969381536c0df4dd7",
+    "academyResponsiveJS": "1fe4d10615f3206b0ca1595462ad83e7e314491f",
+    "academyResponsiveCSS": "fde13b86d574464dba65ce8ca31479f0a2501ef7",
+    "mceResponsiveJS": "1b0085b9467fc933e93423c74d0435030519cf75",
+    "mceResponsiveCSS": "e0c00c819f160f9818ed3d685e376aed021da822"
+  },
+  "projects": [
+    {
+      "id": "SIA",
+      "name": "SIYAYO Academy",
+      "repository": "siyayoacademy/siyayo-academy",
+      "registry_branch": "jaguar/module-governance-reg03-impact-20261025",
+      "registry_commit": "b73b0e728058652620119bdb737d2cf29bb92178",
+      "implementation_source_branch": "jaguar/h14-19-func13-speech-window-period-gap",
+      "implementation_source_commit": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+      "registries": {
+        "REG-01": [
+          "docs/SIYAYO-MODULE-GOVERNANCE-REGISTRY.md",
+          "docs/siyayo-module-registry.json"
+        ],
+        "REG-02": [
+          "docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md",
+          "docs/siyayo-backstage-flow-registry.json"
+        ],
+        "REG-03": [
+          "docs/SIYAYO-IMPACT-INTEGRATION-MAP.md",
+          "docs/siyayo-impact-integration-map.json"
+        ]
+      },
+      "module_inventory_count": 18
+    },
+    {
+      "id": "MCE",
+      "name": "Mestre Canto Ensino",
+      "repository": "siyayoacademy/mestrecantoensino",
+      "registry_branch": "jaguar/mce-modular-governance-reg123-20261025",
+      "registry_commit": "aaa118507e760ea670b9d608fb83e732d91d0a99",
+      "implementation_source_branch": "jaguar/portal-preview-v25",
+      "implementation_source_commit": "be95888dbf9709df00ee8a9969381536c0df4dd7",
+      "registries": {
+        "REG-01": [
+          "docs/MESTRE-CANTO-ENSINO-MODULE-GOVERNANCE-REGISTRY.md",
+          "docs/mestre-canto-ensino-module-registry.json"
+        ],
+        "REG-02": [
+          "docs/MCE-BACKSTAGE-FLOW-REGISTRY.md",
+          "docs/mce-backstage-flow-registry.json"
+        ],
+        "REG-03": [
+          "docs/MCE-IMPACT-INTEGRATION-MAP.md",
+          "docs/mce-impact-integration-map.json"
+        ]
+      },
+      "module_inventory_count": 21
+    }
+  ],
+  "entries": [
+    {
+      "id": "SIA:EXP-01",
+      "project_id": "SIA",
+      "local_code": "EXP-01",
+      "name": "Experience Header",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer.js · renderExperience()",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:CTX-02",
+      "project_id": "SIA",
+      "local_code": "CTX-02",
+      "name": "Circumstance Strip",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-presentation-copy.js · localize()",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:DEP-03",
+      "project_id": "SIA",
+      "local_code": "DEP-03",
+      "name": "Dependency Focus",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-dependency-focus-surface.js; js/verb-explorer-dependency-structure-source.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:HEAD-04",
+      "project_id": "SIA",
+      "local_code": "HEAD-04",
+      "name": "Dependency Head Probe",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-dependency-head-probe-live.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:ID-05",
+      "project_id": "SIA",
+      "local_code": "ID-05",
+      "name": "Learner Identity",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-learner-identity-{source,provider,surface}.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:GEAR-06",
+      "project_id": "SIA",
+      "local_code": "GEAR-06",
+      "name": "Pedagogical Axes / Gear Stack",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer.js · attachEvents/renderExperience; js/thinking-mind-runtime-decision.js; js/verb-explorer-thinking-mind-assessment-selection.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:LIVE-07",
+      "project_id": "SIA",
+      "local_code": "LIVE-07",
+      "name": "Living Window / Lines & Possible Responses",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer.js · experienceLines/renderLivingLines; js/verb-explorer-visible-assessment-boundary.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:EVAL-08",
+      "project_id": "SIA",
+      "local_code": "EVAL-08",
+      "name": "Assessment Probes",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-{determiner-use,what,why,where}-assessment-live.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:NEXT-09",
+      "project_id": "SIA",
+      "local_code": "NEXT-09",
+      "name": "Toroidal NEXT Navigation",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer.js; js/verb-explorer-live-next-wire.js; js/verb-explorer-toroidal-next-observer.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:TRAIL-10",
+      "project_id": "SIA",
+      "local_code": "TRAIL-10",
+      "name": "Learning Trail",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-learner-trail-surface.js; js/adaptive-learner-trail-view.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:WORD-11",
+      "project_id": "SIA",
+      "local_code": "WORD-11",
+      "name": "Word Path",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-polyglot-word-path-view.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:PATITA-12",
+      "project_id": "SIA",
+      "local_code": "PATITA-12",
+      "name": "PATITA Interaction Ledger",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-patita-interaction-trail.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:FUNC-13",
+      "project_id": "SIA",
+      "local_code": "FUNC-13",
+      "name": "Master VIP — Five Verb Functions / Function Lens",
+      "implementation_status": "experimental; H14.19 branch inspected; still hidden by default",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-h14-14-preview.js + scripts/jaguar-h14-13-specialized-mirror-reference.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:SPEECH-A",
+      "project_id": "SIA",
+      "local_code": "SPEECH-A",
+      "name": "Corpus Speech Card",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer.js · renderLivingLines/speakText; css/verb-explorer.css",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:SPEECH-B1",
+      "project_id": "SIA",
+      "local_code": "SPEECH-B1",
+      "name": "Assessment Question Speech Card",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-{what,why,where}-assessment-live.js + CSS",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:SPEECH-B2",
+      "project_id": "SIA",
+      "local_code": "SPEECH-B2",
+      "name": "Assessment Response Row",
+      "implementation_status": "existing structure; documentation alias",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/verb-explorer-{what,why,where}-assessment-live.js + CSS",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:RS-01",
+      "project_id": "SIA",
+      "local_code": "RS-01",
+      "name": "Responsive Stage — Auto / Portrait / Landscape",
+      "implementation_status": "existing shared contract",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/siyayo-responsive-preview.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "SIA:XESP-DIAG",
+      "project_id": "SIA",
+      "local_code": "XESP-DIAG",
+      "name": "XESPIRITO — Functional Diagnosis",
+      "implementation_status": "additional module; alias not in 01–13 numbering",
+      "kind": "pedagogical_or_shared",
+      "primary_source": "js/xespirito-diagnostics.js; js/xespirito-explorer-bridge.js",
+      "provenance_ref": "SIA REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-RS-01",
+      "project_id": "MCE",
+      "local_code": "MCE-RS-01",
+      "name": "Responsive Stage",
+      "implementation_status": "existing",
+      "kind": "shared presentation",
+      "primary_source": "js/ris-responsive-preview.js",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-HEAD-01",
+      "project_id": "MCE",
+      "local_code": "MCE-HEAD-01",
+      "name": "Portal header / RIS identity",
+      "implementation_status": "existing",
+      "kind": "presentation",
+      "primary_source": "index.html (inline CSS and JavaScript)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-NAV-02",
+      "project_id": "MCE",
+      "local_code": "MCE-NAV-02",
+      "name": "Acesso rápido",
+      "implementation_status": "existing",
+      "kind": "navigation",
+      "primary_source": "index.html (anchors)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-HOME-03",
+      "project_id": "MCE",
+      "local_code": "MCE-HOME-03",
+      "name": "Homenagem de abertura",
+      "implementation_status": "existing",
+      "kind": "content presentation",
+      "primary_source": "index.html (authored copy)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-HYM-A",
+      "project_id": "MCE",
+      "local_code": "MCE-HYM-A",
+      "name": "O Santo Cruzeiro Universal / leitura contínua",
+      "implementation_status": "existing",
+      "kind": "documentary presentation",
+      "primary_source": "index.html (authored partial hymn content)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-STANZA-B",
+      "project_id": "MCE",
+      "local_code": "MCE-STANZA-B",
+      "name": "Estrofe e linhas verticais — Modelo B",
+      "implementation_status": "existing",
+      "kind": "layout controller",
+      "primary_source": "index.html: layoutStanzaBars(); data-bars; data-bar-status",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-SEP-04",
+      "project_id": "MCE",
+      "local_code": "MCE-SEP-04",
+      "name": "Sol · Lua · Estrela",
+      "implementation_status": "existing",
+      "kind": "visual separator",
+      "primary_source": "index.html (inline SVG and CSS)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-HYM-B",
+      "project_id": "MCE",
+      "local_code": "MCE-HYM-B",
+      "name": "Diversões do Mestre",
+      "implementation_status": "existing",
+      "kind": "expandable hymn container",
+      "primary_source": "index.html (placeholder; no verified full transcription)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-HYM-C",
+      "project_id": "MCE",
+      "local_code": "MCE-HYM-C",
+      "name": "Santa Missa",
+      "implementation_status": "existing",
+      "kind": "expandable hymn container",
+      "primary_source": "index.html (placeholder; no verified full transcription)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-FLAG-05",
+      "project_id": "MCE",
+      "local_code": "MCE-FLAG-05",
+      "name": "RIS flag gallery",
+      "implementation_status": "existing",
+      "kind": "visual assets",
+      "primary_source": "ris-green.png",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-STAGE-06",
+      "project_id": "MCE",
+      "local_code": "MCE-STAGE-06",
+      "name": "Palco RIS seis camadas",
+      "implementation_status": "existing",
+      "kind": "media mixer",
+      "primary_source": "index.html (scene/layer definitions and inline JS)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-PAGES-07",
+      "project_id": "MCE",
+      "local_code": "MCE-PAGES-07",
+      "name": "Navegação de páginas internas",
+      "implementation_status": "existing",
+      "kind": "navigation",
+      "primary_source": "index.html (relative links)",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-DOC-08",
+      "project_id": "MCE",
+      "local_code": "MCE-DOC-08",
+      "name": "Decreto 1970",
+      "implementation_status": "existing",
+      "kind": "documentary page",
+      "primary_source": "decreto-1970/index.html",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-TRIBUTE-09",
+      "project_id": "MCE",
+      "local_code": "MCE-TRIBUTE-09",
+      "name": "Homenagem visual",
+      "implementation_status": "existing",
+      "kind": "gallery page",
+      "primary_source": "homenagem/index.html",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-BIO-10",
+      "project_id": "MCE",
+      "local_code": "MCE-BIO-10",
+      "name": "Vida e Obra",
+      "implementation_status": "existing",
+      "kind": "documentary page",
+      "primary_source": "vida-e-obra/index.html",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-CAL-11",
+      "project_id": "MCE",
+      "local_code": "MCE-CAL-11",
+      "name": "Calendário dos Trabalhos",
+      "implementation_status": "existing",
+      "kind": "page placeholder",
+      "primary_source": "calendario/index.html",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-LINKS-12",
+      "project_id": "MCE",
+      "local_code": "MCE-LINKS-12",
+      "name": "Nossa Irmandade — Links",
+      "implementation_status": "existing",
+      "kind": "page placeholder",
+      "primary_source": "nossa-irmandade/index.html",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-HYM-HUB-13",
+      "project_id": "MCE",
+      "local_code": "MCE-HYM-HUB-13",
+      "name": "Página de Hinários",
+      "implementation_status": "existing",
+      "kind": "page placeholder",
+      "primary_source": "hinarios/index.html",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-FINEART-20",
+      "project_id": "MCE",
+      "local_code": "MCE-FINEART-20",
+      "name": "Fine Art & homenagem 55 anos",
+      "implementation_status": "planned",
+      "kind": "future creative media",
+      "primary_source": "",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-SPEECH-21",
+      "project_id": "MCE",
+      "local_code": "MCE-SPEECH-21",
+      "name": "Speech / audio player",
+      "implementation_status": "planned",
+      "kind": "future media",
+      "primary_source": "",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    },
+    {
+      "id": "MCE:MCE-SHARE-22",
+      "project_id": "MCE",
+      "local_code": "MCE-SHARE-22",
+      "name": "Share por hino/estrofe",
+      "implementation_status": "planned",
+      "kind": "future export",
+      "primary_source": "",
+      "provenance_ref": "MCE REG-01",
+      "portable_by_default": false
+    }
+  ],
+  "methodological_concepts": [
+    {
+      "id": "METH-REG-01",
+      "name": "Modular identification",
+      "projects": [
+        "SIA",
+        "MCE"
+      ],
+      "relation": "governance_methodology",
+      "code_shared": false
+    },
+    {
+      "id": "METH-REG-02",
+      "name": "Backstage/data flow governance",
+      "projects": [
+        "SIA",
+        "MCE"
+      ],
+      "relation": "governance_methodology",
+      "code_shared": false
+    },
+    {
+      "id": "METH-REG-03",
+      "name": "Impact and selective integration",
+      "projects": [
+        "SIA",
+        "MCE"
+      ],
+      "relation": "governance_methodology",
+      "code_shared": false
+    },
+    {
+      "id": "METH-HOW",
+      "name": "Five HOW TO",
+      "projects": [
+        "SIA",
+        "MCE"
+      ],
+      "relation": "terminology_and_boundaries",
+      "code_shared": false
+    }
+  ],
+  "cross_project_links": [
+    {
+      "id": "XPR-LINK-01",
+      "type": "adapted_implementation_confirmed",
+      "from": "SIA:RS-01",
+      "to": "MCE:MCE-RS-01",
+      "status": "implemented_separately_needs_cross-site_regression",
+      "reusability": "shared_ui_contract_not_bitwise_identity",
+      "differences": [
+        {
+          "field": "controller",
+          "SIA": "js/siyayo-responsive-preview.js",
+          "MCE": "js/ris-responsive-preview.js"
+        },
+        {
+          "field": "stylesheet",
+          "SIA": "css/siyayo-responsive-stage.css",
+          "MCE": "css/ris-responsive-stage.css"
+        },
+        {
+          "field": "localStorage",
+          "SIA": "siyayo-responsive-preview-mode",
+          "MCE": "ris-responsive-preview-mode"
+        },
+        {
+          "field": "event",
+          "SIA": "siyayo:responsive-preview-changed",
+          "MCE": "ris:responsive-preview-changed"
+        },
+        {
+          "field": "global_API",
+          "SIA": "window.SIYAYOResponsivePreview",
+          "MCE": "window.RISResponsivePreview"
+        }
+      ],
+      "common_contract": [
+        "AUTO",
+        "PORTRAIT 430px",
+        "LANDSCAPE 844px",
+        "touch-first AUTO",
+        "aria-pressed",
+        "presentation-only"
+      ],
+      "tests": [
+        "desktop dimensions and viewport interaction",
+        "touch-first default AUTO, toolbar visibility",
+        "all MCE internal pages",
+        "SIA DEP-03 listener still uses original event name",
+        "no evidence or learner state"
+      ]
+    },
+    {
+      "id": "XPR-LINK-02",
+      "type": "governance_methodology",
+      "from": "SIA:RS-01",
+      "to": "MCE:MCE-STAGE-06",
+      "status": "conceptual_guidance_only",
+      "reusability": "responsive shell patterns apply to RIS stage; not a reused stage controller",
+      "differences": [],
+      "common_contract": [
+        "responsive presentation only"
+      ],
+      "tests": [
+        "scene selector",
+        "mixer layers",
+        "keyboard",
+        "portrait-landscape"
+      ]
+    },
+    {
+      "id": "XPR-LINK-03",
+      "type": "content_presentation_analogy_only",
+      "from": "SIA:LIVE-07",
+      "to": "MCE:MCE-HYM-A",
+      "status": "separate_business_semantics",
+      "reusability": "only visual container/change audit methodology; do not copy Experience scripts",
+      "differences": [],
+      "common_contract": [
+        "authored content visible",
+        "source provenance",
+        "responsive text layout"
+      ],
+      "tests": [
+        "SIA QW evidence separation",
+        "MCE continuous reading sequence, text integrity"
+      ]
+    },
+    {
+      "id": "XPR-LINK-04",
+      "type": "future_design_candidate",
+      "from": "SIA:SPEECH-A",
+      "to": "MCE:MCE-SPEECH-21",
+      "status": "MCE_planned_not_implemented",
+      "reusability": "audio/control inspiration only; MCE requires independent hymn and music audio design",
+      "differences": [],
+      "common_contract": [
+        "sound playback separated from authoritative content updates"
+      ],
+      "tests": [
+        "music/hymn performance rights",
+        "voice vs audio player distinction",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "XPR-LINK-05",
+      "type": "future_design_candidate",
+      "from": "SIA:SPEECH-A",
+      "to": "MCE:MCE-SHARE-22",
+      "status": "MCE_planned_not_implemented",
+      "reusability": "none directly; control affordance/placement inspiration only",
+      "differences": [],
+      "common_contract": [
+        "UI affordance under project-specific rights/provenance"
+      ],
+      "tests": [
+        "hymn/stanza share rights",
+        "link identity and caption"
+      ]
+    },
+    {
+      "id": "XPR-LINK-06",
+      "type": "cataloging_analogy_only",
+      "from": "SIA:TRAIL-10",
+      "to": "MCE:MCE-HYM-HUB-13",
+      "status": "no_equivalent_canonical_evidence",
+      "reusability": "indexing method only; MCE hymn hub not assessment trail",
+      "differences": [],
+      "common_contract": [
+        "source-based catalog inventory"
+      ],
+      "tests": [
+        "do not copy learner profile, PATITA, Evidence, or Green"
+      ]
+    },
+    {
+      "id": "XPR-LINK-07",
+      "type": "visual_design_candidate",
+      "from": "SIA:EXP-01",
+      "to": "MCE:MCE-HEAD-01",
+      "status": "independent_site_identity",
+      "reusability": "typography and palette comparison only; preserve RIS identity",
+      "differences": [],
+      "common_contract": [
+        "gold accents and dark background overlap"
+      ],
+      "tests": [
+        "MCE approved brand artwork, gold tokens, typography",
+        "no CSS wholesale import"
+      ]
+    }
+  ],
+  "protected_exclusions": [
+    {
+      "project": "MCE",
+      "not_import_from_SIA": [
+        "EVAL-08",
+        "ID-05",
+        "TRAIL-10",
+        "WORD-11",
+        "PATITA-12",
+        "FUNC-13",
+        "XESP-DIAG"
+      ],
+      "reason": "project-specific pedagogy, evidence, auth, learner identity or grammar function; conceptual similarity is not permission to copy"
+    },
+    {
+      "project": "SIA",
+      "not_import_from_MCE": [
+        "MCE-HYM-A",
+        "MCE-HYM-B",
+        "MCE-HYM-C",
+        "MCE-DOC-08",
+        "MCE-FLAG-05",
+        "MCE-STAGE-06"
+      ],
+      "reason": "cultural, historical, liturgical, artwork or media content requires independent provenance/rights, adaptation and approval"
+    }
+  ],
+  "adoption": {
+    "stages": [
+      "LOCATE",
+      "PIN_BOTH_HEADS",
+      "COMPARE_CONTRACT_AND_BLOB",
+      "CLASSIFY_RELATIONSHIP",
+      "CHECK_PROVENANCE_AND_RIGHTS",
+      "MAP_CONSUMERS_EVENTS_STATE",
+      "ADAPT_IN_ISOLATED_BRANCH",
+      "TEST_SCREEN_AUDIO_DOCUMENT_AND_BOUNDARIES",
+      "HUMAN_HOMOLOGATION_IF_APPLICABLE",
+      "SELECTIVE_GO_NO_GO"
+    ],
+    "classifications": [
+      "adapted_implementation_confirmed",
+      "governance_methodology",
+      "content_presentation_analogy_only",
+      "cataloging_analogy_only",
+      "visual_design_candidate",
+      "future_design_candidate"
+    ],
+    "gates": [
+      "No crossing project ownership by nickname/learner fields",
+      "No implicit assessment",
+      "MCE hymn JSON not an active renderer",
+      "Different responsive global APIs/events/localStorage cannot be treated as identical",
+      "Do not assume prototype or planned module is installed",
+      "Rights/provenance of hymns/images/music",
+      "Fresh HEAD compare before adopting changes",
+      "Human approval for visuals/hymns"
+    ],
+    "decisions": [
+      "NO_GO",
+      "REVIEW_REQUIRED",
+      "READY_FOR_ISOLATED_ADAPTATION",
+      "HOMOLOGATED_FOR_TARGET"
+    ],
+    "changes_tracked": [
+      "source_project",
+      "source_commit",
+      "target_project",
+      "target_head",
+      "source_module_id",
+      "target_module_id",
+      "contract_differences",
+      "data_provenance",
+      "tests",
+      "authority_diff",
+      "asset_rights",
+      "homologation",
+      "rollback"
+    ]
+  },
+  "known_discrepancies": [
+    {
+      "id": "XPR-GAP-01",
+      "project": "MCE",
+      "category": "source_of_truth",
+      "source": "data/santo-cruzeiro-universal.json",
+      "visible_consumer": "index.html",
+      "status": "JSON_NOT_FETCHED_BY_RENDERER",
+      "impact": "JSON edits alone must not be described as changing the live reading"
+    },
+    {
+      "id": "XPR-GAP-02",
+      "project": "MCE",
+      "category": "responsive_controller",
+      "source": "js/ris-responsive-preview.js",
+      "status": "ADAPTED_NOT_IDENTICAL_TO_SIA",
+      "impact": "different event names, globals and storage keys"
+    },
+    {
+      "id": "XPR-GAP-03",
+      "project": "MCE",
+      "category": "planned_modules",
+      "source": "MCE REG-01",
+      "status": "MCE-FINEART-20/MCE-SPEECH-21/MCE-SHARE-22_PLANNED",
+      "impact": "not treated as installed or homologated"
+    },
+    {
+      "id": "XPR-GAP-04",
+      "project": "SIA",
+      "category": "laboratory",
+      "source": "H14.40/V30.3.85C",
+      "status": "NO_LIVE_STORAGE_OR_EVIDENCE_AUTHORITY",
+      "impact": "no transfer of D1 or Assessment to MCE"
+    }
+  ],
+  "audit_log_template": {
+    "audit_id": "XPR-REVIEW-000",
+    "source_ref": "SIA:RS-01",
+    "destination_ref": "MCE:MCE-RS-01",
+    "source_head": "",
+    "destination_head": "",
+    "modification_scope": [],
+    "dependency_impact": [],
+    "contract_differences": [],
+    "contextual_rights": "NOT_APPLICABLE_OR_REVIEW",
+    "checks": [],
+    "result": "REVIEW_REQUIRED",
+    "human_homologation": "PENDING",
+    "rollback": "Plan before publishing"
+  }
+}

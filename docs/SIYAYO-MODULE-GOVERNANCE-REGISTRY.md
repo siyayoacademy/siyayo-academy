@@ -432,3 +432,7 @@ O REG-03 permite identificar mudanças, consumidores diretos/indiretos, gatilhos
 
 - [Manual de análise de impacto](./SIYAYO-IMPACT-INTEGRATION-MAP.md)
 - [Grafo estruturado de dependências](./siyayo-impact-integration-map.json)
+
+## XPR-01 — Catálogo interprojetos (SIYAYO + Mestre Canto Ensino)
+
+O [Cross-Project Registry](./SIYAYO-CROSS-PROJECT-REGISTRY.md) referencia 18 módulos SIYAYO e 21 módulos MCE com qualificadores `SIA:` e `MCE:`, sem transferir autoridade, áudio, conteúdo ou implementação entre repositórios. O [JSON estruturado](./siyayo-cross-project-registry.json) registra relações efetivamente adaptadas (RS-01), possibilidades futuras e exclusões; `node scripts/validate-siyayo-cross-project-registry.mjs` verifica sua integridade interna, sem consultar GitHub remoto.
