@@ -1,0 +1,23 @@
+name: JAGUAR H14.35 progressive homologation
+on:
+  push:
+    branches: [jaguar/h14-35-why-progressive-homologation]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  protected-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-35-progressive-homologation.js
+          node scripts/test-jaguar-h14-34-readiness-matrix.js
+          node scripts/test-jaguar-h14-33-homologation-reference.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-35-progressive-homologation.js --json > h14-35-progressive-homologation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-35-review-packets
+          path: h14-35-progressive-homologation.json
