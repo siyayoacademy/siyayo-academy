@@ -1,0 +1,1050 @@
+{
+  "id": "SIYAYO-REG-03-IMPACT-INTEGRATION-MAP",
+  "version": "0.1.0",
+  "status": "DOCUMENTATION_ONLY_SNAPSHOT_NOT_LIVE_MONITOR",
+  "provenance": {
+    "base_branch": "jaguar/module-governance-reg02-backstage-20261025",
+    "base_sha": "1854563d16ffd87b7d20174860766fbd33700e2d",
+    "explorer_branch": "jaguar/h14-19-func13-speech-window-period-gap",
+    "explorer_sha": "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+    "lab_branch": "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+    "lab_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768"
+  },
+  "workflow": [
+    "pin_source_and_target_HEAD",
+    "identify_change_type_and_exact_paths",
+    "find_direct_graph_edges",
+    "expand_impacted_consumers",
+    "check_five_HOW_TO_and_authority",
+    "run_targeted_regressions",
+    "document_gate_decision",
+    "explicit_selective_adoption_only"
+  ],
+  "source_policy": "All edges are point-in-time assertions with evidence paths; certainty=requires_caller_verification is an audit hypothesis, not an established import. Build fresh comparison on every target branch before code reuse.",
+  "node_total": 41,
+  "nodes": [
+    {
+      "id": "EXP-01",
+      "kind": "display",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "CTX-02",
+      "kind": "display",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "DEP-03",
+      "kind": "display",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "HEAD-04",
+      "kind": "display",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "ID-05",
+      "kind": "identity",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "GEAR-06",
+      "kind": "control",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "LIVE-07",
+      "kind": "display",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "EVAL-08",
+      "kind": "evaluation",
+      "file": "js/verb-explorer-why-assessment-live.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "NEXT-09",
+      "kind": "navigation",
+      "file": "verb-explorer.html",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "TRAIL-10",
+      "kind": "display",
+      "file": "js/verb-explorer-learner-trail-surface.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "WORD-11",
+      "kind": "display",
+      "file": "js/verb-explorer-polyglot-word-path-view.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "PATITA-12",
+      "kind": "observation",
+      "file": "js/verb-explorer-patita-interaction-trail.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "FUNC-13",
+      "kind": "display",
+      "file": "js/verb-explorer-h14-14-preview.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "SPEECH-A",
+      "kind": "speech",
+      "file": "js/verb-explorer.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "SPEECH-B1",
+      "kind": "speech",
+      "file": "js/verb-explorer-what-assessment-live.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "SPEECH-B2",
+      "kind": "speech",
+      "file": "js/verb-explorer-why-assessment-live.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "RS-01",
+      "kind": "responsive",
+      "file": "js/siyayo-responsive-preview.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "XESP-DIAG",
+      "kind": "diagnostic",
+      "file": "js/xespirito-diagnostics.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "FLOW-01",
+      "kind": "orchestration",
+      "file": "js/verb-explorer-adaptive-coordinator.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "STATE-01",
+      "kind": "presentation",
+      "file": "js/verb-explorer-experience-presentation-memory.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "AUTH-01",
+      "kind": "authority",
+      "file": "js/question-word-assessment-contract.js",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "GATE-01",
+      "kind": "governance",
+      "file": "docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md",
+      "role": "See REG-02 module/backstage records for full contract"
+    },
+    {
+      "id": "JSON-SEEDS",
+      "kind": "data",
+      "file": "data/learning/experience-seeds.json",
+      "role": "Experience titles, circumstances, QW, dialogue, perspective and NEXT"
+    },
+    {
+      "id": "JSON-CAPABILITIES",
+      "kind": "data",
+      "file": "data/learning/question-word-capabilities.json",
+      "role": "QW opportunities not automatically assessment authority"
+    },
+    {
+      "id": "JSON-DEPENDENCIES",
+      "kind": "data",
+      "file": "data/learning/dependencies/",
+      "role": "Language/QW dependency structures"
+    },
+    {
+      "id": "JSON-FUNCTIONS",
+      "kind": "data",
+      "file": "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json",
+      "role": "FUNC-13 five-function reference cells"
+    },
+    {
+      "id": "JSON-SKILLS",
+      "kind": "data",
+      "file": "data/learning/skills/why.json",
+      "role": "WHY canonical skill; authorization remains separate"
+    },
+    {
+      "id": "RUNTIME-EXP",
+      "kind": "control",
+      "file": "js/verb-explorer.js",
+      "role": "Owns renderExperience(), goToExperience(), gear click handlers, speakText()"
+    },
+    {
+      "id": "PRES-COPY",
+      "kind": "presentation",
+      "file": "js/verb-explorer-presentation-copy.js",
+      "role": "Localizes UI/circumstance copy"
+    },
+    {
+      "id": "DEP-SURFACE",
+      "kind": "presentation",
+      "file": "js/verb-explorer-dependency-focus-surface.js",
+      "role": "Renders diagram and redraws on layout events"
+    },
+    {
+      "id": "HEAD-PROBE",
+      "kind": "control",
+      "file": "js/verb-explorer-dependency-head-probe-live.js",
+      "role": "Head Probe binding and observation/assessment boundary"
+    },
+    {
+      "id": "ASSESS-SELECT",
+      "kind": "authority",
+      "file": "js/verb-explorer-thinking-mind-assessment-selection.js",
+      "role": "Explicit assessment target selection/resume, not inferred from QW"
+    },
+    {
+      "id": "CONTEXT-CHECK",
+      "kind": "verification",
+      "file": "js/verb-explorer-contextual-coherence.js",
+      "role": "Read-only contextual corpus coherency"
+    },
+    {
+      "id": "SPEECH-RUNTIME",
+      "kind": "speech",
+      "file": "js/verb-explorer.js",
+      "role": "speakText Web Speech API locales en-US/es-ES/pt-BR"
+    },
+    {
+      "id": "SOURCE-HIGHLIGHT",
+      "kind": "presentation",
+      "file": "js/study-target-presentation.js",
+      "role": "Read-only golden target highlighting"
+    },
+    {
+      "id": "SCOPE-BOUNDARY",
+      "kind": "authority",
+      "file": "js/adaptive-assessment-scope.js",
+      "role": "Browser assessment ownership, not server identity"
+    },
+    {
+      "id": "QW-CONTRACT",
+      "kind": "authority",
+      "file": "js/question-word-assessment-contract.js",
+      "role": "QW capability not assessment unless declared"
+    },
+    {
+      "id": "REG-02",
+      "kind": "governance",
+      "file": "docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md",
+      "role": "Documented backstage governance, not browser runtime"
+    },
+    {
+      "id": "LAB-85C",
+      "kind": "laboratory",
+      "file": "labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql",
+      "role": "Local-only SQLite occurrence storage study"
+    },
+    {
+      "id": "LAB-39",
+      "kind": "laboratory",
+      "file": "scripts/jaguar-h14-39-shadow-occurrence-idempotence.js",
+      "role": "Synthetic shadow event model, not production store"
+    },
+    {
+      "id": "H14-40",
+      "kind": "governance",
+      "file": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "role": "Documented reconciliation of WHY and V30 durable study"
+    }
+  ],
+  "edges": [
+    {
+      "id": "EDGE-01",
+      "from": "JSON-SEEDS",
+      "to": "RUNTIME-EXP",
+      "kind": "loads",
+      "trigger": "initial_load",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-02",
+      "from": "JSON-SEEDS",
+      "to": "PRES-COPY",
+      "kind": "localizes",
+      "trigger": "language_or_experience_selection",
+      "evidence": "js/verb-explorer-presentation-copy.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-03",
+      "from": "PRES-COPY",
+      "to": "CTX-02",
+      "kind": "renders",
+      "trigger": "language_or_experience_selection",
+      "evidence": "js/verb-explorer-presentation-copy.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-04",
+      "from": "RUNTIME-EXP",
+      "to": "EXP-01",
+      "kind": "renders",
+      "trigger": "experience_or_language",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-05",
+      "from": "RUNTIME-EXP",
+      "to": "GEAR-06",
+      "kind": "selects_and_renders",
+      "trigger": "gear_clicks",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-06",
+      "from": "RUNTIME-EXP",
+      "to": "LIVE-07",
+      "kind": "renders",
+      "trigger": "gear_change_or_experience_navigation",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-07",
+      "from": "RUNTIME-EXP",
+      "to": "NEXT-09",
+      "kind": "updates",
+      "trigger": "experience_navigation",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-08",
+      "from": "NEXT-09",
+      "to": "RUNTIME-EXP",
+      "kind": "navigates",
+      "trigger": "next_or_previous_click",
+      "evidence": "js/verb-explorer.js",
+      "authority": "navigation_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-09",
+      "from": "GEAR-06",
+      "to": "RUNTIME-EXP",
+      "kind": "requests",
+      "trigger": "question_language_tense_mode_perspective_click",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-10",
+      "from": "JSON-DEPENDENCIES",
+      "to": "RUNTIME-EXP",
+      "kind": "loads",
+      "trigger": "initial_load",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-11",
+      "from": "RUNTIME-EXP",
+      "to": "DEP-03",
+      "kind": "renders",
+      "trigger": "question_or_language_or_experience",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-12",
+      "from": "RUNTIME-EXP",
+      "to": "HEAD-04",
+      "kind": "renders",
+      "trigger": "question_or_language_or_experience",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-13",
+      "from": "DEP-SURFACE",
+      "to": "DEP-03",
+      "kind": "draws_connections",
+      "trigger": "render_and_layout_change",
+      "evidence": "js/verb-explorer-dependency-focus-surface.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-14",
+      "from": "RS-01",
+      "to": "DEP-SURFACE",
+      "kind": "notifies",
+      "trigger": "siyayo:responsive-preview-changed",
+      "evidence": "js/siyayo-responsive-preview.js; js/verb-explorer-dependency-focus-surface.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-15",
+      "from": "HEAD-PROBE",
+      "to": "HEAD-04",
+      "kind": "binds",
+      "trigger": "dependency_probe_mount_and_choice",
+      "evidence": "js/verb-explorer-dependency-head-probe-live.js",
+      "authority": "free_observation_or_scoped_assessment_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-16",
+      "from": "JSON-CAPABILITIES",
+      "to": "QW-CONTRACT",
+      "kind": "describes_capability",
+      "trigger": "question_selection",
+      "evidence": "js/question-word-assessment-contract.js",
+      "authority": "capability_not_evidence",
+      "certainty": "requires_caller_verification"
+    },
+    {
+      "id": "EDGE-17",
+      "from": "QW-CONTRACT",
+      "to": "ASSESS-SELECT",
+      "kind": "guards_target",
+      "trigger": "assessment_target_declaration",
+      "evidence": "js/question-word-assessment-contract.js; js/verb-explorer-thinking-mind-assessment-selection.js",
+      "authority": "explicit_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-18",
+      "from": "GEAR-06",
+      "to": "ASSESS-SELECT",
+      "kind": "requests_assessment",
+      "trigger": "qw_selection",
+      "evidence": "js/verb-explorer.js",
+      "authority": "explicit_target_required",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-19",
+      "from": "ASSESS-SELECT",
+      "to": "EVAL-08",
+      "kind": "authorizes_or_resumes",
+      "trigger": "selected_qw_with_target",
+      "evidence": "js/verb-explorer-thinking-mind-assessment-selection.js",
+      "authority": "contract_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-20",
+      "from": "RUNTIME-EXP",
+      "to": "EVAL-08",
+      "kind": "mounts",
+      "trigger": "renderExperience",
+      "evidence": "js/verb-explorer.js",
+      "authority": "mount_not_credit",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-21",
+      "from": "EVAL-08",
+      "to": "FLOW-01",
+      "kind": "submits_authorized_attempt",
+      "trigger": "choice_or_probe_action",
+      "evidence": "js/verb-explorer-adaptive-coordinator.js",
+      "authority": "contract_and_scope_required",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-22",
+      "from": "AUTH-01",
+      "to": "EVAL-08",
+      "kind": "guards",
+      "trigger": "assessment_boundary_check",
+      "evidence": "js/question-word-assessment-contract.js",
+      "authority": "explicit_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-23",
+      "from": "SCOPE-BOUNDARY",
+      "to": "AUTH-01",
+      "kind": "establishes_scope",
+      "trigger": "learner_skill_language_origin",
+      "evidence": "js/adaptive-assessment-scope.js",
+      "authority": "browser_scope_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-24",
+      "from": "FLOW-01",
+      "to": "TRAIL-10",
+      "kind": "provides_view_data",
+      "trigger": "scoped_assessment_change",
+      "evidence": "js/verb-explorer-learner-trail-surface.js",
+      "authority": "canonical_view_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-25",
+      "from": "TRAIL-10",
+      "to": "WORD-11",
+      "kind": "supplies_witness_view",
+      "trigger": "trail_expansion_and_scoped_refresh",
+      "evidence": "js/verb-explorer-polyglot-word-path-view.js",
+      "authority": "read_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-26",
+      "from": "RUNTIME-EXP",
+      "to": "SPEECH-A",
+      "kind": "constructs",
+      "trigger": "corpus_render",
+      "evidence": "js/verb-explorer.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-27",
+      "from": "SOURCE-HIGHLIGHT",
+      "to": "SPEECH-A",
+      "kind": "highlights",
+      "trigger": "render_corpus_line",
+      "evidence": "js/study-target-presentation.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-28",
+      "from": "SPEECH-A",
+      "to": "SPEECH-RUNTIME",
+      "kind": "requests_speech",
+      "trigger": "corpus_line_click",
+      "evidence": "js/verb-explorer.js",
+      "authority": "audio_not_attempt",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-29",
+      "from": "SPEECH-B1",
+      "to": "SPEECH-RUNTIME",
+      "kind": "requests_speech",
+      "trigger": "assessment_question_audio",
+      "evidence": "js/verb-explorer.js",
+      "authority": "audio_not_answer",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-30",
+      "from": "SPEECH-B2",
+      "to": "EVAL-08",
+      "kind": "submits_selection",
+      "trigger": "response_button_click_only",
+      "evidence": "js/verb-explorer-what-assessment-live.js; js/verb-explorer-why-assessment-live.js",
+      "authority": "contract_gate_required",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-31",
+      "from": "JSON-SEEDS",
+      "to": "CONTEXT-CHECK",
+      "kind": "supplies_context",
+      "trigger": "why_corpus_resolution",
+      "evidence": "js/verb-explorer-contextual-coherence.js",
+      "authority": "read_only_or_visual",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-32",
+      "from": "CONTEXT-CHECK",
+      "to": "LIVE-07",
+      "kind": "grounds_corpus",
+      "trigger": "why_tense_mode_language",
+      "evidence": "js/verb-explorer.js",
+      "authority": "no_semantic_grading",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-33",
+      "from": "JSON-FUNCTIONS",
+      "to": "FUNC-13",
+      "kind": "reference_data",
+      "trigger": "func13_opt_in_preview",
+      "evidence": "js/verb-explorer-h14-14-preview.js",
+      "authority": "source_only_no_evidence",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-34",
+      "from": "GEAR-06",
+      "to": "FUNC-13",
+      "kind": "requests_projection",
+      "trigger": "perspective_tense_mode_language_change",
+      "evidence": "js/verb-explorer-h14-14-preview.js",
+      "authority": "source_only_no_evidence",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-35",
+      "from": "FUNC-13",
+      "to": "TRAIL-10",
+      "kind": "visually_adjacent_only",
+      "trigger": "none",
+      "evidence": "verb-explorer.html",
+      "authority": "no_data_transfer",
+      "certainty": "layout_only"
+    },
+    {
+      "id": "EDGE-36",
+      "from": "RUNTIME-EXP",
+      "to": "STATE-01",
+      "kind": "remembers",
+      "trigger": "experience_navigation",
+      "evidence": "js/verb-explorer-experience-presentation-memory.js",
+      "authority": "presentation_state_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-37",
+      "from": "RUNTIME-EXP",
+      "to": "PATITA-12",
+      "kind": "observed_by",
+      "trigger": "learner_ui_click",
+      "evidence": "js/verb-explorer-patita-interaction-trail.js",
+      "authority": "observation_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-38",
+      "from": "LAB-39",
+      "to": "H14-40",
+      "kind": "reconciled_by",
+      "trigger": "h14_40_reuse_review",
+      "evidence": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "authority": "laboratory_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-39",
+      "from": "LAB-85C",
+      "to": "H14-40",
+      "kind": "reused_study_by",
+      "trigger": "h14_40_reuse_review",
+      "evidence": "data/learning/references/jaguar-h14-40-durable-idempotency-reconciliation-v0.1.json",
+      "authority": "laboratory_only",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-40",
+      "from": "H14-40",
+      "to": "GATE-01",
+      "kind": "requires_selective_integration",
+      "trigger": "future_go_no_go",
+      "evidence": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "authority": "never_automatic",
+      "certainty": "confirmed_source"
+    },
+    {
+      "id": "EDGE-41",
+      "from": "REG-02",
+      "to": "GATE-01",
+      "kind": "governance_reference",
+      "trigger": "impact_review",
+      "evidence": "docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md",
+      "authority": "docs_only",
+      "certainty": "confirmed_source"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "IM-01",
+      "name": "Troca QW ou idioma com painel antigo",
+      "changed": [
+        "GEAR-06",
+        "RUNTIME-EXP",
+        "JSON-SEEDS",
+        "PRES-COPY"
+      ],
+      "events": [
+        "question_language_tense_mode_perspective_click",
+        "question_or_language_or_experience"
+      ],
+      "inspect": [
+        "EXP-01",
+        "CTX-02",
+        "DEP-03",
+        "HEAD-04",
+        "LIVE-07",
+        "EVAL-08",
+        "TRAIL-10",
+        "WORD-11",
+        "PATITA-12",
+        "FUNC-13"
+      ],
+      "tests": [
+        "Repeat EN→ES→PT and QW WHAT→WHY→WHICH within S1–S4",
+        "Verify each localized title, dependency diagram, corpus and opt-in preview redraw",
+        "Ensure retained evidence remains in exact learner/skill/language/origin scope while wrong pending selection is invalidated",
+        "Check free exploration never creates credit"
+      ],
+      "stop_if": [
+        "stale_ui",
+        "scope_leak",
+        "implicit_assessment"
+      ],
+      "gate": "language_qw_regression"
+    },
+    {
+      "id": "IM-02",
+      "name": "Responsive Stage e geometria do Dependency Focus",
+      "changed": [
+        "RS-01",
+        "DEP-SURFACE"
+      ],
+      "events": [
+        "siyayo:responsive-preview-changed"
+      ],
+      "inspect": [
+        "DEP-03",
+        "LIVE-07",
+        "GEAR-06"
+      ],
+      "tests": [
+        "Use AUTO, PORTRAIT(430px), LANDSCAPE(844px) desktop preview",
+        "Observe redraw and scroll of dependency connector links",
+        "Verify touch-first device uses AUTO and toolbar is hidden",
+        "No changes to QW, Evidence or learner identity"
+      ],
+      "stop_if": [
+        "connector_misalignment",
+        "unauthorized_pedagogical_change"
+      ],
+      "gate": "responsive_visual_device"
+    },
+    {
+      "id": "IM-03",
+      "name": "Montar SPEECH-A com speaker à direita acima de NEXT",
+      "changed": [
+        "SPEECH-A",
+        "LIVE-07"
+      ],
+      "events": [
+        "corpus_line_click"
+      ],
+      "inspect": [
+        "SOURCE-HIGHLIGHT",
+        "SPEECH-RUNTIME",
+        "NEXT-09",
+        "RS-01"
+      ],
+      "tests": [
+        "Locate .living-window and insert before .toroidal-next without replacing evaluative probes",
+        "Preserve gold token bold and center-aligned text across EN/ES/PT",
+        "Original current implementation has LEFT speaker; right alignment is a proposed scoped CSS variant",
+        "Speech action must not become response/Attempt; test keyboard focus and portrait"
+      ],
+      "stop_if": [
+        "text_overlap",
+        "audio_submits_answer",
+        "next_interference"
+      ],
+      "gate": "visual_speech_only"
+    },
+    {
+      "id": "IM-04",
+      "name": "Atualizar estrutura JSON de Dependency Focus",
+      "changed": [
+        "JSON-DEPENDENCIES",
+        "DEP-SURFACE"
+      ],
+      "events": [
+        "question_or_language_or_experience"
+      ],
+      "inspect": [
+        "DEP-03",
+        "HEAD-04",
+        "CONTEXT-CHECK"
+      ],
+      "tests": [
+        "Validate language/QW/Experience source path and graph node labels",
+        "Verify existing diagram projection and Head Probe use canonical structure",
+        "No inferred dependency or evaluator from missing authoring",
+        "Inspect EN/ES/PT responsive connections"
+      ],
+      "stop_if": [
+        "unproven_dependency",
+        "stale_graph",
+        "unexpected_evidence"
+      ],
+      "gate": "json_semantic_and_ui"
+    },
+    {
+      "id": "IM-05",
+      "name": "FUNC-13 recebe novas células da matriz",
+      "changed": [
+        "JSON-FUNCTIONS",
+        "FUNC-13"
+      ],
+      "events": [
+        "func13_opt_in_preview",
+        "perspective_tense_mode_language_change"
+      ],
+      "inspect": [
+        "GEAR-06",
+        "RUNTIME-EXP",
+        "TRAIL-10"
+      ],
+      "tests": [
+        "Confirm H14.13 unified projection and source provenance",
+        "Only show authored grammar; no fabricated PERIOD variants",
+        "Maintain panel hidden without explicit preview query",
+        "No Evidence, Green Pass or mutation of Trail"
+      ],
+      "stop_if": [
+        "missing_provenance",
+        "unhomologated_example_presented_as_authorized",
+        "preview_leaks_to_default"
+      ],
+      "gate": "func13_source_only"
+    },
+    {
+      "id": "IM-06",
+      "name": "Enriquecimento JSON de Experience/QW",
+      "changed": [
+        "JSON-SEEDS",
+        "JSON-CAPABILITIES",
+        "JSON-SKILLS"
+      ],
+      "events": [
+        "json_source_change"
+      ],
+      "inspect": [
+        "GEAR-06",
+        "LIVE-07",
+        "CONTEXT-CHECK",
+        "AUTH-01",
+        "EVAL-08",
+        "TRAIL-10"
+      ],
+      "tests": [
+        "Diff old/new JSON schema and record source commit, author, provenance and origin",
+        "Validate EN/ES/PT, target QW, TENSE/MODE/PERSPECTIVE and missing corpus gaps",
+        "Confirm QW opportunity is not an implicit assessmentTarget",
+        "Compare consumers and run cross-selection regressions before selective merge"
+      ],
+      "stop_if": [
+        "duplicated_canonical_source",
+        "unsupported_grammar",
+        "silent_contract_change",
+        "schema_drift"
+      ],
+      "gate": "source_authority"
+    },
+    {
+      "id": "IM-07",
+      "name": "WHY S1/S2 dimensão, intenção e novo contrato",
+      "changed": [
+        "H14-40",
+        "LAB-39",
+        "AUTH-01",
+        "EVAL-08"
+      ],
+      "events": [
+        "new_assessment_target"
+      ],
+      "inspect": [
+        "GATE-01",
+        "LAB-85C",
+        "FLOW-01",
+        "PATITA-12",
+        "TRAIL-10",
+        "WORD-11"
+      ],
+      "tests": [
+        "Check DG-01 and DG-02 independently before any new authority",
+        "Preserve existing S3→S4 WHY cycle and approved review scope",
+        "Require direct author action, independent question-function/local/transfer dimension and explicit origin",
+        "Do not promote simulated or pending attempt to canonical Evidence"
+      ],
+      "stop_if": [
+        "unapproved_contract",
+        "pending_promoted_to_pass",
+        "patita_credit"
+      ],
+      "gate": "eval_contract_teacher"
+    },
+    {
+      "id": "IM-08",
+      "name": "Reutilizar V30.3.85C no Explorer",
+      "changed": [
+        "LAB-85C",
+        "H14-40"
+      ],
+      "events": [
+        "storage_schema_proposal"
+      ],
+      "inspect": [
+        "AUTH-01",
+        "GATE-01",
+        "FLOW-01",
+        "TRAIL-10",
+        "WORD-11"
+      ],
+      "tests": [
+        "Identify exact (learner_subject,event_id) key and schema snapshot; no second occurrence bank",
+        "Verified server principal—not NICK—owns events; stable UUIDv4 across one submission retries",
+        "Replay same payload yields duplicate, changed language/origin/payload fails closed",
+        "Prove atomic Evidence lifecycle, actual Worker/D1 races and rollback separately before live integration"
+      ],
+      "stop_if": [
+        "nick_as_storage_identity",
+        "remote_migration_without_approval",
+        "duplicate_bank",
+        "storage_receipt_treated_as_evidence"
+      ],
+      "gate": "backend_security_staging"
+    },
+    {
+      "id": "IM-09",
+      "name": "Reposicionar elemento de LIVE-07 sem alterar NEXT",
+      "changed": [
+        "LIVE-07",
+        "NEXT-09"
+      ],
+      "events": [
+        "experience_navigation"
+      ],
+      "inspect": [
+        "SPEECH-A",
+        "SPEECH-B1",
+        "SPEECH-B2",
+        "EVAL-08",
+        "RS-01"
+      ],
+      "tests": [
+        "Insert DOM child immediately before .toroidal-next and preserve parent .living-window",
+        "Preserve choice, contrast, assessment controls and NEXT keyboard click",
+        "Test layout in desktop and mobile portrait/landscape",
+        "Confirm NEXT permission/target unchanged"
+      ],
+      "stop_if": [
+        "button_reparented",
+        "navigation_behavior_changed",
+        "evaluation_overlap"
+      ],
+      "gate": "layout_navigation"
+    },
+    {
+      "id": "IM-10",
+      "name": "Discordância entre PATITA e Learning Trail",
+      "changed": [
+        "PATITA-12",
+        "TRAIL-10",
+        "WORD-11"
+      ],
+      "events": [
+        "learner_ui_click",
+        "scoped_assessment_change"
+      ],
+      "inspect": [
+        "AUTH-01",
+        "FLOW-01",
+        "STATE-01"
+      ],
+      "tests": [
+        "Compare observational interaction scope vs canonical accepted witnesses; do not equate them",
+        "Ensure cross-language and learner isolation",
+        "Confirm Word Path read-only and no evidence created from replay of PATITA ledger",
+        "Check records after free exploration and valid authorized attempt separately"
+      ],
+      "stop_if": [
+        "evidence_from_observation",
+        "scope_leak",
+        "display_counts_as_credit"
+      ],
+      "gate": "audit_evidence_provenance"
+    }
+  ],
+  "protected": {
+    "no_main_change": true,
+    "no_pr3_change": true,
+    "no_cloudflare_production": true,
+    "no_db_migration": true,
+    "no_pending_as_evidence": true,
+    "no_nick_as_auth": true,
+    "no_patita_credit": true,
+    "func13_default_hidden": true,
+    "keep_canonical_why_s3_s4": true
+  },
+  "decision_statuses": [
+    "NO_GO",
+    "REVIEW_REQUIRED",
+    "LAB_VERIFIED",
+    "APPROVED_FOR_SELECTIVE_ADOPTION"
+  ],
+  "change_log_schema": {
+    "source_branch": "string",
+    "source_sha": "full commit SHA",
+    "target_branch": "string",
+    "target_head": "full commit SHA",
+    "changed_paths": [
+      "path"
+    ],
+    "changed_json_keys": [
+      "key"
+    ],
+    "modules_direct": [
+      "code"
+    ],
+    "modules_transitive": [
+      "code"
+    ],
+    "scope": {
+      "experience": "S1–S4",
+      "qw": "WHAT/WHY/…",
+      "language": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "tense": "present/past/future",
+      "mode": "affirmative/negative/interrogative",
+      "perspective": "describe/narrate/debate/conclude"
+    },
+    "authority_diff": "explicit or none",
+    "storage_migration": "none unless independently authorized",
+    "tests": [
+      "command/results"
+    ],
+    "human_review": "pending/passed/not-needed",
+    "go_no_go": "REVIEW_REQUIRED",
+    "rollback": "plan"
+  }
+}

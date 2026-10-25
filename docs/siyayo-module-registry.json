@@ -583,5 +583,15 @@
     "structured": "docs/siyayo-backstage-flow-registry.json",
     "source_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
     "status": "documentation only; H14.40 design, no live storage/evidence"
+  },
+  "impact_registry": {
+    "id": "SIYAYO-REG-03-IMPACT-INTEGRATION-MAP",
+    "human": "docs/SIYAYO-IMPACT-INTEGRATION-MAP.md",
+    "structured": "docs/siyayo-impact-integration-map.json",
+    "source_snapshot": [
+      "9bcf599affccec323e4af6aa82d3a76f631bb8f5",
+      "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768"
+    ],
+    "status": "documentation only; source-anchored impact graph, not live analyzer"
   }
 }

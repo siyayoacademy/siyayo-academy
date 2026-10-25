@@ -91,3 +91,10 @@ When any watchpoint occurs: compare existing owners/contracts → compute impact
 ## H. Preservation
 
 Documentation-only. No database touched, no new runtime, routes or assessment semantics, no deploy, no Evidence, no Green, no changes to `main`, PR #3, PATITA, Learning Trail or hidden FUNC-13. Follow-up ELOs are independent from this registry snapshot.
+
+## REG-03 — Impact Analysis & Integration Map
+
+O REG-03 permite identificar mudanças, consumidores diretos/indiretos, gatilhos e gates antes de transportar módulos entre branches ou reutilizá-los em outro site. Inclui riscos de UI antiga, coerência EN/ES/PT, contratos, JSON, persistência 85C e armazenamento distinto de Evidence. **Não monitora branches automaticamente e não concede aprovação técnica.**
+
+- [Manual de análise de impacto](./SIYAYO-IMPACT-INTEGRATION-MAP.md)
+- [Grafo estruturado de dependências](./siyayo-impact-integration-map.json)

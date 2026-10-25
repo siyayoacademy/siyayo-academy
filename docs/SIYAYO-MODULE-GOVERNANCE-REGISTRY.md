@@ -425,3 +425,10 @@ A governança se estende à rastreabilidade de **JSON, serviços de bastidores, 
 - [Mapa estruturado de fluxo e dependências](./siyayo-backstage-flow-registry.json)
 - Fonte de laboratório auditada: `jaguar/h14-40-why-v30-85c-durable-idempotency-contract` @ `f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768`.
 - **Distinção obrigatória:** PATITA observa; 85C registra `pending` ou `observed_exploratory` em teste local; somente contratos avaliativos autorizados podem produzir Evidence e GREEN em outro circuito.
+
+## REG-03 — Impact Analysis & Integration Map
+
+O REG-03 permite identificar mudanças, consumidores diretos/indiretos, gatilhos e gates antes de transportar módulos entre branches ou reutilizá-los em outro site. Inclui riscos de UI antiga, coerência EN/ES/PT, contratos, JSON, persistência 85C e armazenamento distinto de Evidence. **Não monitora branches automaticamente e não concede aprovação técnica.**
+
+- [Manual de análise de impacto](./SIYAYO-IMPACT-INTEGRATION-MAP.md)
+- [Grafo estruturado de dependências](./siyayo-impact-integration-map.json)
