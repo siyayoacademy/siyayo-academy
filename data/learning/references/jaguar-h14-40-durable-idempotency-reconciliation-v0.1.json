@@ -1,0 +1,157 @@
+{
+  "id": "JAGUAR-H14.40-WHY-V30-85C-DURABLE-IDEMPOTENCY",
+  "version": "0.1.0",
+  "status": "DESIGN_RECONCILIATION_NOT_AUTHORIZED",
+  "scope": "WHY S1 and S2 origin-specific draft assessments in EN/ES/PT, separate from existing canonical WHY S3-S4",
+  "reuse": {
+    "existingStudy": "V30.3.85C Durable Experience Memory",
+    "migration": "labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql",
+    "migrationBlobSha": "a83ca36d73466513bb80a302fbd58eaa8512b00d",
+    "storageContract": "labs/jaguar-v30-3/test/storage-contract/storage-contract.mjs",
+    "storageContractBlobSha": "24ee8b62de033858ef44531f2d24b390236e32ec",
+    "durableTests": "labs/jaguar-v30-3/test/durable-storage.sqlite.test.py",
+    "identityBoundary": "labs/jaguar-v30-3/evidence/V30-3-85B-IDENTITY-CONTRACT.md",
+    "currentShadow": "scripts/jaguar-h14-39-shadow-occurrence-idempotence.js",
+    "shadowBlobSha": "c92e7e2375c60ff485a1f4a30a4967656887dd90",
+    "newMigrationRequired": false,
+    "applyMigrationAnywhere": false
+  },
+  "keyReconciliation": {
+    "canonical85CPrimaryKey": [
+      "learner_subject",
+      "event_id"
+    ],
+    "learnerSubjectSource": "ONLY_VERIFIED_SERVER_PRINCIPAL",
+    "displayNickname": "NOT_AUTHENTICATION",
+    "eventId": "STABLE_UUIDV4_REUSED_ACROSS_RETRIES_OF_ONE_SUBMISSION",
+    "sourceOccurrenceId": "LEGACY_UI_CORRELATION_ONLY_NEVER_DURABLE_PRIMARY_KEY",
+    "clientSuppliedOwnerAllowed": false,
+    "sameAuthenticatedSubjectSameEventIdIdenticalEnvelope": "DUPLICATE_NO_SECOND_ROW",
+    "sameAuthenticatedSubjectSameEventIdChangedOriginOrLanguageOrSkillOrPayload": "CONFLICT_FAIL_CLOSED",
+    "differentAuthenticatedSubjectsSameUUID": "ALLOWED_AND_ISOLATED_BY_PRIMARY_KEY",
+    "h1439GlobalSimulationDifference": "H14.39 treats one event ID as global across all simulated profiles; V30.3.85C correctly scopes uniqueness to a verified subject. Future agreement should follow V30.3.85C for distinct verified subjects.",
+    "scopeForRead": [
+      "verified subject",
+      "skill",
+      "language",
+      "originExperienceId",
+      "contractVersion",
+      "questionWord",
+      "purpose"
+    ],
+    "currentExperienceId": "MAY_CHANGE_FOR_EXPLICIT_TRANSFER_WHILE_ORIGIN_IS_PRESERVED"
+  },
+  "intention": {
+    "exploration": "observed_exploratory",
+    "assessment": "pending",
+    "noAutomaticPromotionFromEither": true,
+    "requiresAuthorizedAssessmentTargetBeyond85C": true,
+    "sourceExperienceVisitAloneCannotStartContract": true,
+    "transferRequiresExplicitOriginAndIntent": true,
+    "questionFunctionNotProvenByHeadProbe": true,
+    "resubmissionCannotReuseEventIdForNewDimension": true,
+    "dimensionEncoding": "CURRENT_85C_SCHEMA_HAS_NO_DEDICATED_DIMENSION_OR_INTENT_COLUMNS; FUTURE_SERVER_POLICY_MUST_BIND_AND_VALIDATE_DIMENSION_AND_INTENT_IN_VERSIONED_CANONICAL_EVENT_OR_ADDITIVE_SCHEMA",
+    "cannotAssumeEvaluationPassFromPending": true,
+    "modelExposureAndOriginalLearnerActionProof": "FUTURE_AUTHORIZED_EVAL_08_REQUIREMENT"
+  },
+  "transactionDesign": {
+    "existingSql": "INSERT ... ON CONFLICT(learner_subject,event_id) DO NOTHING then READ_AND_COMPARE",
+    "requiresAtomicUniqueIndex": true,
+    "replayReceipts": [
+      "created",
+      "duplicate"
+    ],
+    "failClosedConflicts": "changed event details/purpose/origin/current Experience/language/contract/version/payload",
+    "integrity": "canonical JSON SHA256 and read verification; no authority inferred from digest alone",
+    "restart": "85C file-backed SQLite test confirms records survive connection close/open",
+    "crashBetweenInsertAndResponse": "Retry SAME UUID, compare record, return same result (not second write)",
+    "crashBetweenPendingAndEvaluation": "NO_EVIDENCE_GRANTED; future authorized evaluator must own its own transactional exactly-once evidence/outbox contract",
+    "concurrency": "SQLite unique index is modeled/tested; Cloudflare D1 distributed concurrency and Worker retries not yet independently verified",
+    "rollback": "Disable new adapter without deleting prior tables or historical data",
+    "privacy": "No real user answers, sessions, NICK, or credentials in this research branch"
+  },
+  "reconciliationGaps": [
+    {
+      "id": "DG-01",
+      "status": "OPEN",
+      "name": "DIMENSION_AND_INTENT",
+      "requirement": "Bind question-function/local/transfer with authoritative intent, origin and occurrence; 85C lacks dedicated columns."
+    },
+    {
+      "id": "DG-02",
+      "status": "OPEN",
+      "name": "AUTHORIZED_CONTRACT",
+      "requirement": "S1/S2 draft WHY must receive a separate approved EVAL-08 assessment target; pending does not mean pass."
+    },
+    {
+      "id": "DG-03",
+      "status": "OPEN",
+      "name": "ATOMIC_EVIDENCE_LIFECYCLE",
+      "requirement": "Add independently tested atomic evidence outbox or ledger for exactly-once canonical Evidence; 85C only stores pending/observed."
+    },
+    {
+      "id": "DG-04",
+      "status": "OPEN",
+      "name": "PRODUCTION_IDENTITY",
+      "requirement": "Real trusted session verifier and server-owned opaque subject. V30 tests remain mock-only."
+    },
+    {
+      "id": "DG-05",
+      "status": "OPEN",
+      "name": "CROSS_RUNTIME_CONCURRENCY",
+      "requirement": "Prove D1/Worker behavior with real staging races and retries before production."
+    },
+    {
+      "id": "DG-06",
+      "status": "OPEN",
+      "name": "EXPLORER_INTEGRATION",
+      "requirement": "Read module registry, reconcile main HEAD, selective apply, regress EN/ES/PT, S3–S4, PATITA/Trail."
+    },
+    {
+      "id": "DG-07",
+      "status": "OPEN",
+      "name": "TEACHER_HOMOLOGATION",
+      "requirement": "HG-04/05/09/10 teacher review of independent production and transfer not complete."
+    }
+  ],
+  "futureFourEloPlan": [
+    {
+      "elo": "H14.40",
+      "goal": "Reconcile H14.39 with existing V30.3.85C and test SQLite persistence/contracts",
+      "status": "THIS_ELO"
+    },
+    {
+      "elo": "H14.41",
+      "goal": "Propose isolated versioned dimension/intent and authorized-event lifecycle without production writes",
+      "status": "PENDING"
+    },
+    {
+      "elo": "H14.42",
+      "goal": "Exercise restart/collision/rollback/concurrency failure scenarios and strengthen contracts",
+      "status": "PENDING"
+    },
+    {
+      "elo": "H14.43",
+      "goal": "Deliver frozen integration handoff with dependency map, selective main reconciliation and go/no-go evidence",
+      "status": "PENDING"
+    }
+  ],
+  "authority": {
+    "mayCreateAssessmentTarget": false,
+    "mayGradeFreeText": false,
+    "mayIssueEvidence": false,
+    "mayGrantGreenPass": false,
+    "mayAlterPatita": false,
+    "mayAlterExplorer": false,
+    "mayMutateMain": false,
+    "mayChangePr3": false,
+    "mayPublishProduction": false
+  },
+  "preservation": {
+    "func13Hidden": true,
+    "periodGapOpen": true,
+    "existingS3S4Why": "UNMODIFIED",
+    "phase3HumanReview": "PENDING",
+    "productionD1": "UNTOUCHED"
+  }
+}

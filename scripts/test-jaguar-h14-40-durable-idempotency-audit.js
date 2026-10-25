@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const {audit}=require('./jaguar-h14-40-durable-idempotency-audit.js');
+const spec=require('../data/learning/references/jaguar-h14-40-durable-idempotency-reconciliation-v0.1.json');
+const r=audit();
+assert.equal(r.status,'REUSE_85C_CONTRACT_READY_FOR_STUDY_ONLY',JSON.stringify(r.problems));
+assert.equal(r.problems.length,0);assert.equal(r.gapsOpen,7);
+assert.deepEqual(r.dbPrimaryKey,['learner_subject','event_id']);
+assert.equal(r.sameUUIDAcrossDistinctSubjectsAllowed,true);
+assert.equal(r.contradictoryH1439GlobalRuleAcknowledged,true);
+assert.equal(r.canCreateCanonicalEvidence,false);assert.equal(r.canDeploy,false);
+assert.equal(spec.futureFourEloPlan.length,4);
+assert.equal(spec.reuse.newMigrationRequired,false);
+assert.equal(spec.reuse.applyMigrationAnywhere,false);
+assert.equal(spec.transactionDesign.concurrency.includes('SQLite'),true);
+assert.equal(spec.keyReconciliation.sameAuthenticatedSubjectSameEventIdChangedOriginOrLanguageOrSkillOrPayload,'CONFLICT_FAIL_CLOSED');
+const code=fs.readFileSync('scripts/jaguar-h14-40-durable-idempotency-audit.js','utf8');
+for(const s of ['createEvidence(','submitObservedAttempt','localStorage','sessionStorage','fetch('])assert.ok(!code.includes(s));
+console.log('PASS H14.40 reuse 85C, stable subject-key, durable design gaps, zero Evidence');
