@@ -415,3 +415,13 @@ Caminhos canônicos desta edição na branch documental `jaguar/module-governanc
 ## Prompt operacional reutilizável
 
 > Abra o registro `docs/SIYAYO-MODULE-GOVERNANCE-REGISTRY.md` no repositório `siyayoacademy/siyayo-academy`, confira o JSON correspondente e o commit de origem. Solicito o módulo `<CÓDIGO>`, no contêiner `<PARENT>`, antes/depois de `<SIBLING>`. Preserve HOW TO DO / RECORD / SHOW / CHECK / SPEAK, regras CSS e autoridade. Identifique diferenças de branch e lacunas, audite antes de qualquer alteração; reutilize o contrato do componente em vez de criar um motor paralelo.
+
+
+## REG-02 — Bastidores, enriquecimento JSON e memória durável
+
+A governança se estende à rastreabilidade de **JSON, serviços de bastidores, escopos de identidade, armazenamento durável de ocorrências, testes e integração seletiva**. O registro companion documenta as responsabilidades e **as sete lacunas H14.40**, sem habilitar persistência ou avaliação no Explorer.
+
+- [Manual de governança dos bastidores](./SIYAYO-BACKSTAGE-FLOW-REGISTRY.md)
+- [Mapa estruturado de fluxo e dependências](./siyayo-backstage-flow-registry.json)
+- Fonte de laboratório auditada: `jaguar/h14-40-why-v30-85c-durable-idempotency-contract` @ `f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768`.
+- **Distinção obrigatória:** PATITA observa; 85C registra `pending` ou `observed_exploratory` em teste local; somente contratos avaliativos autorizados podem produzir Evidence e GREEN em outro circuito.

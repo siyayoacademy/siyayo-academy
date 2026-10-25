@@ -1,0 +1,236 @@
+{
+  "id": "SIYAYO-REG-02-BACKSTAGE-GOVERNANCE",
+  "version": "0.1.0",
+  "kind": "DOCUMENTATION_ONLY_NOT_A_RUNTIME",
+  "readme": "docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md",
+  "baseline_registry": {
+    "branch": "jaguar/module-governance-registry-20261024",
+    "sha": "719f259d78ca27d444bdfacecd3ccd2091818980"
+  },
+  "audited_lab": {
+    "branch": "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+    "sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+    "ci": {
+      "run": 40189055421,
+      "status": "success"
+    },
+    "stage": "DESIGN_RECONCILIATION_NOT_AUTHORIZED"
+  },
+  "aliases": [
+    {
+      "code": "DATA-01",
+      "name": "JSON authoring and provenance",
+      "primary_source": "data/learning/experience-seeds.json",
+      "consumers": [
+        "EXP-01",
+        "GEAR-06",
+        "LIVE-07",
+        "DEP-03",
+        "FUNC-13"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "FLOW-01",
+      "name": "Adaptive boot and coordination",
+      "primary_source": "js/verb-explorer-adaptive-coordinator.js",
+      "consumers": [
+        "EVAL-08",
+        "TRAIL-10",
+        "WORD-11"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "STATE-01",
+      "name": "Presentation and state read bridge",
+      "primary_source": "js/verb-explorer-experience-presentation-memory.js",
+      "consumers": [
+        "GEAR-06",
+        "LIVE-07"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "AUTH-01",
+      "name": "Assessment contract and scope",
+      "primary_source": "js/question-word-assessment-contract.js",
+      "consumers": [
+        "EVAL-08"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "OBS-01",
+      "name": "PATITA observation only",
+      "primary_source": "js/verb-explorer-patita-interaction-trail.js",
+      "consumers": [
+        "PATITA-12"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "STORE-85C",
+      "name": "Local-only durable occurrence storage study",
+      "primary_source": "labs/jaguar-v30-3/migrations/0004_v30_85c_occurrences.sql",
+      "consumers": [
+        "AUTH-01",
+        "INTENT-01"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "INTENT-01",
+      "name": "WHY synthetic dimension and intent study",
+      "primary_source": "scripts/jaguar-h14-39-shadow-occurrence-idempotence.js",
+      "consumers": [
+        "DATA-01",
+        "EVAL-08"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    },
+    {
+      "code": "GATE-01",
+      "name": "Branch and integration verification",
+      "primary_source": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "consumers": [
+        "DATA-01",
+        "STORE-85C",
+        "EVAL-08"
+      ],
+      "scope": "documentation alias; inspect owner before reuse"
+    }
+  ],
+  "json_change_contract": {
+    "inputs": [
+      "source_branch",
+      "source_sha",
+      "paths_changed",
+      "schema_version",
+      "provenance",
+      "experience",
+      "question_word",
+      "language",
+      "tense",
+      "mode",
+      "perspective",
+      "consumer_modules"
+    ],
+    "gates": [
+      "source_dedup",
+      "parse_and_schema",
+      "semantic_and_trilingual_coherence",
+      "explicit_assessment_authority",
+      "no_stale_ui",
+      "tests_and_human_review",
+      "selective_go_no_go"
+    ],
+    "stop_on": [
+      "unattributed_source",
+      "duplication",
+      "unauthored_grammar_as_fact",
+      "implicit_eval_contract",
+      "identity_from_nick",
+      "runtime_data_schema_mismatch"
+    ]
+  },
+  "storage_contract": {
+    "table": "v30_85c_occurrences",
+    "primary_key": [
+      "learner_subject",
+      "event_id"
+    ],
+    "identity": "VERIFIED_SERVER_SUBJECT_ONLY_NOT_LIVE",
+    "event_id": "UUIDV4_STABLE_PER_SUBMISSION",
+    "same_subject_same_id_same_envelope": "DUPLICATE_NO_SECOND_WRITE",
+    "same_subject_same_id_changed_envelope": "CONFLICT_FAIL_CLOSED",
+    "different_verified_subject_same_uuid": "ISOLATED_ALLOWED",
+    "statuses": [
+      "observed_exploratory",
+      "pending"
+    ],
+    "allowed_to_issue_evidence": false,
+    "has_dimension_intent_columns": false,
+    "live_authentication": false,
+    "real_worker_d1_concurrency_verified": false,
+    "local_sqlite_restart_test": true,
+    "no_new_migration": true
+  },
+  "gaps": [
+    {
+      "id": "DG-01",
+      "name": "DIMENSION_AND_INTENT",
+      "owner": "H14.41",
+      "status_at_h14_40": "OPEN"
+    },
+    {
+      "id": "DG-02",
+      "name": "AUTHORIZED_CONTRACT",
+      "owner": "EVAL-08 + teacher",
+      "status_at_h14_40": "OPEN"
+    },
+    {
+      "id": "DG-03",
+      "name": "ATOMIC_EVIDENCE_LIFECYCLE",
+      "owner": "canonical evaluator/storage",
+      "status_at_h14_40": "OPEN"
+    },
+    {
+      "id": "DG-04",
+      "name": "PRODUCTION_IDENTITY",
+      "owner": "trusted server authentication",
+      "status_at_h14_40": "OPEN"
+    },
+    {
+      "id": "DG-05",
+      "name": "CROSS_RUNTIME_CONCURRENCY",
+      "owner": "H14.42 staging",
+      "status_at_h14_40": "OPEN"
+    },
+    {
+      "id": "DG-06",
+      "name": "EXPLORER_INTEGRATION",
+      "owner": "H14.43 selective reconciliation",
+      "status_at_h14_40": "OPEN"
+    },
+    {
+      "id": "DG-07",
+      "name": "TEACHER_HOMOLOGATION",
+      "owner": "HG-04/05/09/10",
+      "status_at_h14_40": "OPEN"
+    }
+  ],
+  "planned_elos": [
+    {
+      "elo": "H14.41",
+      "status_at_snapshot": "PENDING",
+      "scope": "dimension/intent and attempt lifecycle"
+    },
+    {
+      "elo": "H14.42",
+      "status_at_snapshot": "PENDING",
+      "scope": "failure, recovery, concurrency and rollback tests"
+    },
+    {
+      "elo": "H14.43",
+      "status_at_snapshot": "PENDING",
+      "scope": "integration handoff GO/NO-GO"
+    }
+  ],
+  "documentary_watchpoints": [
+    "json_source_change",
+    "new_assessment_target",
+    "storage_schema_proposal",
+    "identity_boundary_change",
+    "cross_branch_cherry_pick",
+    "release_candidate"
+  ],
+  "invariants": [
+    "no cross branch auto merge",
+    "no production migration",
+    "no NICK as authenticating subject",
+    "pending != Evidence",
+    "PATITA observation != Assessment",
+    "H14.40 green != live integration or homologation"
+  ]
+}

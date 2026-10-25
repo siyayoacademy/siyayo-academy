@@ -576,5 +576,12 @@
   "registry_paths": {
     "human": "docs/SIYAYO-MODULE-GOVERNANCE-REGISTRY.md",
     "machine": "docs/siyayo-module-registry.json"
+  },
+  "backstage_registry": {
+    "id": "SIYAYO-REG-02-BACKSTAGE-GOVERNANCE",
+    "manual": "docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md",
+    "structured": "docs/siyayo-backstage-flow-registry.json",
+    "source_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768",
+    "status": "documentation only; H14.40 design, no live storage/evidence"
   }
 }
