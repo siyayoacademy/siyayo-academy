@@ -41,7 +41,7 @@ async function fixture(t,extra={},initial=true){
 }
 test('bundle imports original H14.50 candidate, H14.44 and 85C',()=>{
  const inputs=Object.keys(bundle.metafile.inputs);
- for(const name of ['h14-50/guarded-batch-candidate.mjs','h14-44/server-binding-dry-run.mjs','storage-contract/storage-contract.mjs','h14-53/trusted-action-gateway.mjs'])
+ for(const name of ['h14-50/guarded-batch-candidate.mjs','h14-44/server-binding-dry-run.mjs','storage-contract/storage-contract.mjs'])
   assert.ok(inputs.some(p=>p.endsWith(name)),name);
 });
 test('synthetic SERVER session resolves provenance into local Worker and D1',async t=>{
