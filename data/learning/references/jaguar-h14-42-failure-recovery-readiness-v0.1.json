@@ -1,0 +1,23 @@
+{
+  "id": "JAGUAR-H14.42",
+  "version": "0.1.0",
+  "status": "LOCAL_FAILURE_RECOVERY_VERIFIED_NOT_PRODUCTION_READY",
+  "parentCommit": "9b06c9cc59990030dd4960f97a277720babeae0f",
+  "newTests": {
+    "sqlite": 10,
+    "javascript85CWithDBDouble": 5
+  },
+  "reuse": "V30.3.85C unchanged schema and storage contract",
+  "newOccurrenceStore": false,
+  "newMigration": false,
+  "localConcurrencyVerified": true,
+  "workerD1ConcurrencyVerified": false,
+  "productionIdentityVerified": false,
+  "atomicEvidenceImplemented": false,
+  "rollback": "SIMULATED_ADAPTER_DISABLE_PRESERVES_ROWS",
+  "allSevenIntegrationGapsRemainOpen": true,
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false,
+  "next": "H14.43 selective integration manifest GO/NO-GO"
+}
