@@ -1,0 +1,40 @@
+{
+  "id": "JAGUAR-H14.48",
+  "version": "0.1.0",
+  "status": "LOCAL_SINGLE_WRITE_BOUNDARY_VERIFIED_NOT_PRODUCTION_READY",
+  "parentCommit": "c96744fa5f216b0abe4411c28bf92f76d82e73e7",
+  "files": [
+    {
+      "path": "labs/jaguar-v30-3/test/h14-48/single_write_boundary.py",
+      "gitBlobSha": "a000421d04db64ca71d1d53731bc847e2d6c7435"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-48/boundary_driver.py",
+      "gitBlobSha": "fa420ced076873c1acc026d509fd78973ed8f74d"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-48/single-write-boundary.test.mjs",
+      "gitBlobSha": "87e32df2966a832beb0f51b7fc43055e0e375756"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-48/guarded_transactions_test.py",
+      "gitBlobSha": "ea3247fcb09167137b821d00ae858260c8070f48"
+    }
+  ],
+  "newTests": 12,
+  "inheritedScenariosRepeatedWithGuard": 20,
+  "mixedWriterBypassBlockedLocally": true,
+  "occurrenceColumnsChanged": false,
+  "newOccurrenceTable": false,
+  "ddl": "LOCAL_TEST_TRIGGERS_AND_CONTROL_TABLE_ONLY",
+  "newProductMigration": false,
+  "defaultEnabled": false,
+  "legacyPolicy": "REFUSE_CUTOVER_NO_AUTOMATIC_BACKFILL",
+  "oldReaderAndReceiptsPreserved": true,
+  "workerD1Verified": false,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false
+}
