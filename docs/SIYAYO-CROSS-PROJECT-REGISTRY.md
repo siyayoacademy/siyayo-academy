@@ -88,3 +88,7 @@ Este registro é um **snapshot auditado**, não acompanha commits automaticament
 - [SIYAYO REG-01/02/03](https://github.com/siyayoacademy/siyayo-academy/tree/jaguar/module-governance-reg03-impact-20261025/docs)
 - [MCE REG-01/02/03](https://github.com/siyayoacademy/mestrecantoensino/tree/jaguar/mce-modular-governance-reg123-20261025/docs)
 - [XPR-01 arquivo de dados](./siyayo-cross-project-registry.json)
+
+## XPR-02 — Read-only drift audit
+
+A [auditoria de divergências](./SIYAYO-CROSS-PROJECT-DRIFT-AUDITOR.md) compara HEADs expressamente inscritos em uma [watchlist](./siyayo-cross-project-watchlist.json), analisa arquivos modificados e aponta consumidores candidatos. O script não monitora continuamente, não descobre branches automaticamente e não integra código.

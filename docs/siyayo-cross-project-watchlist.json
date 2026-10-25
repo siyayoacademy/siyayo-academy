@@ -1,0 +1,48 @@
+{
+  "id": "SIYAYO-XPR-02-WATCHLIST",
+  "schema_version": "1.0.0",
+  "status": "EXPLICIT_BRANCH_SET_NOT_SCHEDULED_MONITOR",
+  "watches": [
+    {
+      "id": "SIA:registry",
+      "project_id": "SIA",
+      "role": "registry",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/module-governance-reg03-impact-20261025",
+      "expected_sha": "b73b0e728058652620119bdb737d2cf29bb92178"
+    },
+    {
+      "id": "SIA:implementation",
+      "project_id": "SIA",
+      "role": "implementation",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-19-func13-speech-window-period-gap",
+      "expected_sha": "9bcf599affccec323e4af6aa82d3a76f631bb8f5"
+    },
+    {
+      "id": "MCE:registry",
+      "project_id": "MCE",
+      "role": "registry",
+      "repository": "siyayoacademy/mestrecantoensino",
+      "branch": "jaguar/mce-modular-governance-reg123-20261025",
+      "expected_sha": "aaa118507e760ea670b9d608fb83e732d91d0a99"
+    },
+    {
+      "id": "MCE:implementation",
+      "project_id": "MCE",
+      "role": "implementation",
+      "repository": "siyayoacademy/mestrecantoensino",
+      "branch": "jaguar/portal-preview-v25",
+      "expected_sha": "be95888dbf9709df00ee8a9969381536c0df4dd7"
+    },
+    {
+      "id": "SIA:H14.40",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+      "expected_sha": "f8f2cbf958b807f84cf2e2371b0b2ef4dd8eb768"
+    }
+  ],
+  "limits": "Other experimental branches require explicit watchlist addition."
+}

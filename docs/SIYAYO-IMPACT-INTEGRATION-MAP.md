@@ -330,3 +330,7 @@ Solicitação-modelo: **JAGUAR, consulte o SIYAYO REG-03 em `docs/siyayo-impact-
 ## XPR-01 — Catálogo interprojetos (SIYAYO + Mestre Canto Ensino)
 
 O [Cross-Project Registry](./SIYAYO-CROSS-PROJECT-REGISTRY.md) referencia 18 módulos SIYAYO e 21 módulos MCE com qualificadores `SIA:` e `MCE:`, sem transferir autoridade, áudio, conteúdo ou implementação entre repositórios. O [JSON estruturado](./siyayo-cross-project-registry.json) registra relações efetivamente adaptadas (RS-01), possibilidades futuras e exclusões; `node scripts/validate-siyayo-cross-project-registry.mjs` verifica sua integridade interna, sem consultar GitHub remoto.
+
+## XPR-02 — Read-only drift audit
+
+A [auditoria de divergências](./SIYAYO-CROSS-PROJECT-DRIFT-AUDITOR.md) compara HEADs expressamente inscritos em uma [watchlist](./siyayo-cross-project-watchlist.json), analisa arquivos modificados e aponta consumidores candidatos. O script não monitora continuamente, não descobre branches automaticamente e não integra código.

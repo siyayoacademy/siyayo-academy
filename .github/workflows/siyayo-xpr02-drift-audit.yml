@@ -1,0 +1,36 @@
+name: SIYAYO XPR-02 drift audit
+on:
+  push:
+    branches:
+      - jaguar/cross-project-registry-xpr02-20261025
+    paths:
+      - 'docs/siyayo-cross-project-watchlist.json'
+      - 'docs/siyayo-cross-project-registry.json'
+      - 'scripts/siyayo-xpr02-*.cjs'
+      - '.github/workflows/siyayo-xpr02-drift-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test offline fail-closed behavior
+        run: node scripts/test-siyayo-xpr02-drift-audit.cjs
+      - name: Compare registered GitHub HEADs read-only
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/siyayo-xpr02-drift-audit.cjs --live --strict --output-dir reports
+      - name: Preserve JSON and Markdown report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: siyayo-xpr02-drift-reports
+          path: |
+            reports/xpr02-report.json
+            reports/xpr02-report.md
+          if-no-files-found: warn
