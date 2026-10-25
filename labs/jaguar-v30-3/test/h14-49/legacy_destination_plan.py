@@ -1,0 +1,28 @@
+"""Read-only local disposition planner, not migration/deployment authority."""
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'h14-47'))
+from compatibility_inspector import inspect
+
+DISPOSITIONS={
+ 'MISSING_LAB_METADATA':'PRESERVE_HISTORY_REQUIRE_COMPANION_SCHEMA_REVIEW',
+ 'LEGACY_DISPOSITION_REQUIRED':'PRESERVE_UNBOUND_HISTORY_DO_NOT_INFER_AUTHORITY',
+ 'UNRESERVED_SCOPE':'PRESERVE_ROWS_REVIEW_SCOPE_PROVENANCE_NO_AUTOMATIC_RESERVATION',
+ 'UNRESERVED_OR_CONFLICTING_ACTION':'PRESERVE_ROWS_RECONCILE_ACTION_OWNERSHIP_NO_AUTOMATIC_CLAIM',
+ 'ACTION_REUSED_ACROSS_UUIDS':'PRESERVE_ALL_OCCURRENCES_REVIEW_DUPLICATE_ACTION_NO_ARBITRARY_WINNER',
+ 'INTEGRITY_FAILURE':'PRESERVE_SOURCE_FREEZE_WRITES_INVESTIGATE_INTEGRITY',
+ 'INVALID_BINDING':'PRESERVE_SOURCE_REVIEW_BINDING_NO_REWRITE',
+ 'ORPHAN_ACTION_CLAIM':'PRESERVE_METADATA_REVIEW_INTERRUPTED_OR_INCONSISTENT_TRANSACTION',
+ 'UNVERIFIED_ACTION_CLAIM':'PRESERVE_METADATA_REQUIRE_PROVENANCE_REVIEW'
+}
+
+def plan(path):
+    try:
+        audit=inspect(path)
+    except Exception:
+        return dict(status='STOP_UNREADABLE_SOURCE',actions=['PRESERVE_SOURCE_RESOLVE_READ_FAILURE'],mayWrite=False,mayDeploy=False,mayIssueEvidence=False)
+    problems=audit['problems']
+    actions=[dict(problem=p,disposition=DISPOSITIONS.get(p,'STOP_UNKNOWN_PROBLEM_REQUIRE_REVIEW')) for p in problems]
+    return dict(status='BLOCKED_DATA_RECONCILIATION' if problems else 'LOCAL_DATA_CONSISTENT_DESTINATION_UNVERIFIED',
+        actions=actions,counts=audit['counts'],mayWrite=False,mayDeploy=False,mayIssueEvidence=False,
+        destination='D1_ADAPTER_NOT_IMPLEMENTED',next='REVIEW_DATA_PROVENANCE' if problems else 'IMPLEMENT_AND_TEST_ISOLATED_D1_BATCH_CANDIDATE')

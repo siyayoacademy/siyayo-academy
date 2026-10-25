@@ -1,0 +1,116 @@
+{
+  "id": "JAGUAR-H14.49",
+  "version": "0.1.0",
+  "status": "DESTINATION_CONTRACT_DEFINED_ADAPTER_AND_STAGING_UNVERIFIED",
+  "parentCommit": "79ce251bd0d2820590ad3a6c7e69afad892c09a0",
+  "writerContract": {
+    "entryPoint": "ONE_SERVER_OWNED_SUBMISSION_BOUNDARY",
+    "database": "REUSE_85C_OCCURRENCES_NO_PARALLEL_STORE",
+    "owner": "VERIFIED_SERVER_SUBJECT_NEVER_NICK",
+    "retryKey": [
+      "learner_subject",
+      "event_id"
+    ],
+    "actionUniqueness": [
+      "subject",
+      "actionReference"
+    ],
+    "scope": [
+      "subject",
+      "skill",
+      "language",
+      "origin",
+      "contractId",
+      "contractVersion",
+      "questionWord"
+    ],
+    "transactionalInvariants": [
+      "Validate database-owned authorization revision and current status within same atomic write unit as reservations and occurrence",
+      "Consume direct action once and reserve scope consistently; new action may resume retained scope",
+      "Reject changed envelope on same UUID; identical authenticated replay is historical receipt only",
+      "Failing preconditions must prevent all new reservations and writes; zero changed rows alone is not proof of statement failure",
+      "Revoke and submission writers must use one consistent authorization revision protocol",
+      "Keep attempts separate from authorized evaluation and Evidence/outbox"
+    ],
+    "oldWriters": "MUST_BE_BLOCKED_BEFORE_NEW_WRITER_ENABLE",
+    "defaultEnabled": false
+  },
+  "destinationFacts": [
+    {
+      "id": "D1-BATCH",
+      "status": "DOCUMENTED_NOT_TESTED_HERE",
+      "fact": "batch executes prepared statements in order as a transaction; statement error aborts or rolls back batch",
+      "url": "https://developers.cloudflare.com/d1/worker-api/d1-database/#batch",
+      "reviewedOn": "2026-10-25"
+    },
+    {
+      "id": "D1-SESSIONS",
+      "status": "DOCUMENTED_NOT_ATOMIC_AUTHORIZATION_PROOF",
+      "fact": "Sessions provide sequential consistency; first-primary starts from primary; bookmarks retain read ordering context",
+      "url": "https://developers.cloudflare.com/d1/worker-api/d1-database/#withsession",
+      "reviewedOn": "2026-10-25"
+    }
+  ],
+  "portabilityDecisions": {
+    "copyBeginImmediateLoopToD1": false,
+    "assumeSessionsAreTransactionLock": false,
+    "assumeZeroChangesRollsBackBatch": false,
+    "copyMockSchemasIntoProduct": false,
+    "databasePredicatesMustCauseRealFailureWhenRequired": true
+  },
+  "legacyPolicy": {
+    "cleanOrEmpty": "CANDIDATE_FOR_ISOLATED_DESTINATION_PROTOTYPE_ONLY",
+    "unbound": "PRESERVE_HISTORY_NO_AUTHORITY_BACKFILL",
+    "boundWithoutReservations": "REVIEW_PROVENANCE_NO_AUTOMATIC_CLAIMS",
+    "duplicateAction": "PRESERVE_ALL_ROWS_NO_ARBITRARY_WINNER",
+    "integrityOrOrphan": "FREEZE_NEW_WRITES_REVIEW_SOURCE_NO_DELETION",
+    "unreadable": "STOP_NO_REPLACEMENT_DATABASE",
+    "migrationWritesImplemented": false
+  },
+  "requiredDestinationProofs": [
+    {
+      "id": "ADDITIVE_SCHEMA_REVIEW",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "REAL_IDENTITY_REVISION_PROTOCOL",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "GUARDED_ATOMIC_BATCH_AND_ZERO_ROW_FAILURE",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "SAME_UUID_AND_SAME_ACTION_RACES",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "REVOCATION_AND_EXPIRATION_RACES",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "REPLICA_READ_AND_REPLAY_POLICY",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "LEGACY_PROVENANCE_DISPOSITION",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "FEATURE_DISABLE_AND_HISTORY_READ",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "EN_ES_PT_EXPLORER_AND_HOMOLOGATION",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "newLocalTests": 9,
+  "allSevenIntegrationGapsRemainOpen": true,
+  "productionApplyAllowlist": [],
+  "mayWriteDatabase": false,
+  "mayIssueEvidence": false,
+  "mayGrantGreenPass": false,
+  "mayDeploy": false,
+  "next": "IMPLEMENT_ISOLATED_GUARDED_BATCH_CANDIDATE_AND_TEST_LOCAL_SEMANTICS_THEN_STAGING"
+}
