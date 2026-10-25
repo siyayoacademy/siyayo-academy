@@ -1,12 +1,12 @@
 # 🔔🐆 SIYAYO XPR-03 — H14 Laboratory Supervision & Drift Discovery
 
-**Escopo:** supervisão consultiva e verificável entre registros REG-01/02/03, XPR-01, XPR-02 e a evolução WHY H14.40–H14.51. **Não existe monitoramento contínuo.** Esta branch contém apenas documentação, scripts de auditoria, testes e um workflow com permissões somente de leitura.
+**Escopo:** supervisão consultiva e verificável entre registros REG-01/02/03, XPR-01, XPR-02 e a evolução WHY H14.40–H14.52. **Não existe monitoramento contínuo.** Esta branch contém apenas documentação, scripts de auditoria, testes e um workflow com permissões somente de leitura.
 
 ## 1. O que evoluiu desde XPR-02
 
-A [watchlist](./siyayo-cross-project-watchlist.json) foi ampliada de **5 para 16** referências exatas, com H14.41–H14.51 adicionados após conferência dos seus HEADs no GitHub. O H14.40 já estava cadastrado. Os projetos SIYAYO Academy e Mestre Canto Ensino preservam suas próprias branches, módulos e REGs.
+A [watchlist](./siyayo-cross-project-watchlist.json) foi ampliada de **5 para 17** referências exatas, com H14.41–H14.52 adicionados após conferência dos seus HEADs no GitHub. O H14.40 já estava cadastrado. Os projetos SIYAYO Academy e Mestre Canto Ensino preservam suas próprias branches, módulos e REGs.
 
-O teste XPR-02 existente foi atualizado para validar o total dinâmico de watchpoints, sem alterar o comparador e sem presumir que cinco é o número definitivo.
+O teste XPR-02 existente foi atualizado para validar o total dinâmico de watchpoints, com compatibilidade explícita para os contratos 1.0.0 e 1.1.0 e sem presumir que cinco é o número definitivo.
 
 ## 2. Dois mecanismos complementares
 
@@ -20,7 +20,8 @@ Esses dois mecanismos operam apenas quando executados; o workflow automatiza a v
 
 - **H14.50**, commit `03ccf051e677309891987524fee6df7624c33fc4`: candidato de lote protegido, 17 novos testes usando driver SQLite local. CI confirmado: [run 40202361772](https://github.com/siyayoacademy/siyayo-academy/actions/runs/40202361772).
 - **H14.51**, commit `bb2878e3746415a29f4e5b15c087a65ec31fd696`: executou o candidato H14.50 *sem alteração* via binding D1 **local Miniflare/workerd**, 14 novos testes, incluindo concorrência e recuperação. CI confirmado: [run 40203140595](https://github.com/siyayoacademy/siyayo-academy/actions/runs/40203140595).
-- **Ainda NÃO demonstrado:** candidato empacotado dentro de um Worker, D1 remoto, autenticação real, replicação distribuída, migração legada ou Evidence canônica. Os sete gates H14.43 permanecem abertos segundo o relatório H14.51.
+- **H14.52:** candidato empacotado e executado dentro de um Worker local com D1 local; 15 novos testes e [CI GREEN 40207453876](https://github.com/siyayoacademy/siyayo-academy/actions/runs/40207453876), commit `677ced16460e9f0f5c88a40a379293beedb3c07f`.
+- **Ainda NÃO demonstrado:** D1 remoto, autenticação real, replicação distribuída, migração legada ou Evidence canônica. Os sete gates H14.43 permanecem abertos segundo o relatório H14.51.
 
 Os commits H14.41–H14.49 foram identificados e fixados individualmente como referências de branch; isso não é uma nova auditoria de CI ou homologação de cada ELO.
 
@@ -37,7 +38,7 @@ Os dois últimos realizam exclusivamente GET na API pública GitHub e produzem a
 
 ### GitHub Actions
 
-`.github/workflows/siyayo-xpr03-h14-supervision.yml` roda no push da própria branch XPR-03, testa cenários offline e consulta o estado atual das branches. Publica os quatro relatórios como *artifacts* do job. O workflow possui `permissions: contents: read` e **não tem `schedule` ou escrita remota**. Um disparo manual via `workflow_dispatch` pode depender da presença do workflow na branch default, que não será modificada neste ELO.
+`.github/workflows/siyayo-xpr03-h14-supervision.yml` roda no push da própria branch XPR-03 ou da branch de manutenção XPR-03.1, testa cenários offline e consulta o estado atual das branches. Publica os quatro relatórios como *artifacts* do job. O workflow possui `permissions: contents: read` e **não tem `schedule` ou escrita remota**. Um disparo manual via `workflow_dispatch` pode depender da presença do workflow na branch default, que não será modificada neste ELO.
 
 ## 5. Contratos de integração que não podem ser confundidos
 
@@ -57,3 +58,7 @@ Os dois últimos realizam exclusivamente GET na API pública GitHub e produzem a
 A descoberta atual procura branches H14 WHY numeradas, não todos os laboratórios do ecossistema; PATITA, Fine Art e MCE possuem governança própria. A ampliação futura pode incluir índices específicos por projeto, mas nunca importará implementações ou permissões automaticamente.
 
 **Preservado:** `main`, PR #3, Explorer, contratos pedagógicos, PATITA, Learning Trail, FUNC-13 oculto, projetos MCE e produção.
+
+## Manutenção XPR-03.1
+
+Consulte [diagnóstico, escopo e validação](./SIYAYO-XPR03-1-COMPAT-H1452.md). Os 16 checkpoints anteriores permanecem intactos; H14.52 foi acrescentado como 17ª referência. Versões desconhecidas continuam rejeitadas antes da auditoria.

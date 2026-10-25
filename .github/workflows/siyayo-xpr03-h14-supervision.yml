@@ -3,12 +3,15 @@ on:
   push:
     branches:
       - jaguar/cross-project-registry-xpr03-h14-supervision-20261025
+      - jaguar/xpr03-1-compat-h1452-20261025
     paths:
       - 'docs/siyayo-cross-project-watchlist.json'
       - 'docs/siyayo-xpr03-h14-capability-snapshot.json'
       - 'scripts/siyayo-xpr03-*.cjs'
       - 'scripts/test-siyayo-xpr03-*.cjs'
       - 'scripts/test-siyayo-xpr02-drift-audit.cjs'
+      - 'scripts/siyayo-xpr02-drift-audit.cjs'
+      - 'scripts/test-siyayo-xpr03-1-compat.cjs'
       - '.github/workflows/siyayo-xpr03-h14-supervision.yml'
   workflow_dispatch:
 permissions:
@@ -18,9 +21,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Validate registry and maintenance contract
+        run: |
+          node scripts/validate-siyayo-cross-project-registry.mjs
+          node scripts/test-siyayo-xpr03-1-compat.cjs
       - name: Test XPR-02 drift scenarios offline
         run: node scripts/test-siyayo-xpr02-drift-audit.cjs
       - name: Test XPR-03 discovery scenarios offline
@@ -38,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: siyayo-xpr03-supervision
-          if-no-files-found: warn
+          if-no-files-found: error
           path: |
             reports/xpr02-report.json
             reports/xpr02-report.md

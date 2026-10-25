@@ -11,6 +11,8 @@ function verify(name,branches,error,strict){
   const args=[path.join(root,'scripts/siyayo-xpr03-h14-discovery.cjs'),'--fixture',file,'--output-dir',out];
   if(strict)args.push('--strict');
   const p=cp.spawnSync(process.execPath,args,{encoding:'utf8'});
+  assert.equal(p.error,undefined,'auditor spawn failed: '+p.error);
+  assert.ok(fs.existsSync(path.join(out,'xpr03-discovery.json')),'Auditor did not generate xpr03-discovery.json; exit='+p.status+'; stdout='+p.stdout+'; stderr='+p.stderr);
   const report=JSON.parse(fs.readFileSync(path.join(out,'xpr03-discovery.json'),'utf8'));
   assert.equal(report.decision,name==='match'?'REGISTERED_H14_COVERAGE_MATCH':'REVIEW_REQUIRED');
   assert.equal(p.status,name==='match'?0:strict?2:0);

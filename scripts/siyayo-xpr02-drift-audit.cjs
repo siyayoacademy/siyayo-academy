@@ -10,7 +10,9 @@ const reg=JSON.parse(fs.readFileSync(path.join(root,'docs/siyayo-cross-project-r
 const list=JSON.parse(fs.readFileSync(path.join(root,'docs/siyayo-cross-project-watchlist.json'),'utf8'));
 const fixture=fixturePath?JSON.parse(fs.readFileSync(fixturePath,'utf8')):null;
 const modules=new Set(reg.entries.map(m=>m.id)),projects=new Map(reg.projects.map(p=>[p.id,p]));
-if(list.schema_version!=='1.0.0'||list.watches.length<4)throw Error('invalid watchlist');
+const supportedWatchlistVersions=new Set(['1.0.0','1.1.0']);
+if(!supportedWatchlistVersions.has(list.schema_version))throw Error('unsupported watchlist schema_version: '+JSON.stringify(list.schema_version));
+if(!Array.isArray(list.watches)||list.watches.length<4)throw Error('invalid watchlist');
 for(const w of list.watches){
  if(!projects.has(w.project_id)||projects.get(w.project_id).repository!==w.repository)throw Error('unexpected repository');
  if(!/^[0-9a-f]{40}$/.test(w.expected_sha)||!/^[a-zA-Z0-9_./-]+$/.test(w.branch)||w.branch.includes('..'))throw Error('bad HEAD reference');

@@ -130,7 +130,15 @@
       "repository": "siyayoacademy/siyayo-academy",
       "branch": "jaguar/h14-51-why-miniflare-d1-runtime",
       "expected_sha": "bb2878e3746415a29f4e5b15c087a65ec31fd696"
+    },
+    {
+      "id": "SIA:H14.52",
+      "project_id": "SIA",
+      "role": "laboratory",
+      "repository": "siyayoacademy/siyayo-academy",
+      "branch": "jaguar/h14-52-why-worker-local-bundle",
+      "expected_sha": "677ced16460e9f0f5c88a40a379293beedb3c07f"
     }
   ],
-  "limits": "16 pinned branches; discovery flags newly found H14 WHY branches for review without automatic admission."
+  "limits": "17 pinned branches; discovery flags newly found H14 WHY branches for review without automatic admission."
 }

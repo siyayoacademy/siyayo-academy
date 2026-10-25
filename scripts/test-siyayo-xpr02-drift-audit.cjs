@@ -16,6 +16,8 @@ function test(scenario,strict){
   const args=[path.join(root,'scripts/siyayo-xpr02-drift-audit.cjs'),'--fixture',f,'--output-dir',out];
   if(strict)args.push('--strict');
   const p=cp.spawnSync(process.execPath,args,{encoding:'utf8'});
+  assert.equal(p.error,undefined,'auditor spawn failed: '+p.error);
+  assert.ok(fs.existsSync(path.join(out,'xpr02-report.json')),'Auditor did not generate xpr02-report.json; exit='+p.status+'; stdout='+p.stdout+'; stderr='+p.stderr);
   const r=JSON.parse(fs.readFileSync(path.join(out,'xpr02-report.json'),'utf8'));
   assert.ok(fs.existsSync(path.join(out,'xpr02-report.md')));
   assert.equal(p.status,scenario==='stable'?0:strict?2:0);

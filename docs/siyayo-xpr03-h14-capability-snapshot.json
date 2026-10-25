@@ -1,7 +1,7 @@
 {
   "id": "SIYAYO-XPR-03-H14-LAB-COVERAGE",
-  "version": "0.1.0",
-  "status": "READ_ONLY_DOCUMENTED_SCOPE_CI_VERIFICATION_PENDING",
+  "version": "0.1.1",
+  "status": "READ_ONLY_DOCUMENTED_SCOPE_MAINTENANCE_VALIDATION",
   "source": {
     "repository": "siyayoacademy/siyayo-academy",
     "base_branch": "jaguar/cross-project-registry-xpr02-20261025",
@@ -9,10 +9,10 @@
   },
   "lifecycle": {
     "coverage_start": "H14.40",
-    "coverage_end": "H14.51",
-    "watches": 16,
-    "why_labs": 12,
-    "added_lab_watches": 11
+    "coverage_end": "H14.52",
+    "watches": 17,
+    "why_labs": 13,
+    "added_lab_watches": 12
   },
   "audited_evidence": [
     {
@@ -44,6 +44,16 @@
         "Candidate still executed via Node proxy, not inside Worker",
         "No remote D1, no real authentication, no production",
         "Seven integration gaps remain open"
+      ]
+    },
+    {
+      "elo": "H14.52",
+      "branch": "jaguar/h14-52-why-worker-local-bundle",
+      "commit": "677ced16460e9f0f5c88a40a379293beedb3c07f",
+      "verification": "github_ci_success_run_40207453876_rechecked",
+      "claims": [
+        "15 added tests: unchanged guarded candidate bundled and executed inside local Worker with local D1",
+        "No remote D1, real authentication, Evidence, Green Pass or publication authority"
       ]
     }
   ],
@@ -89,5 +99,6 @@
       "scope": "governance_only",
       "requires": "revalidation of references"
     }
-  ]
+  ],
+  "maintenance_base_commit": "39b81289f1a05479701343325640b31bc7ded02b"
 }

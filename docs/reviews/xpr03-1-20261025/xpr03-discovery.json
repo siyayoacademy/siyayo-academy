@@ -1,0 +1,43 @@
+{
+  "id": "SIYAYO-XPR-03-H14-DISCOVERY",
+  "mode": "github_read_only",
+  "at_utc": "2026-10-25T16:36:11.994Z",
+  "checked_prefix": "jaguar/h14-<number>-why-",
+  "minimum_elo": 40,
+  "known_registered": [
+    "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+    "jaguar/h14-41-why-dimension-intent-attempt-lifecycle",
+    "jaguar/h14-42-why-durable-failure-recovery",
+    "jaguar/h14-43-why-selective-integration-manifest",
+    "jaguar/h14-44-why-server-binding-dry-run",
+    "jaguar/h14-45-why-persisted-replay-revalidation",
+    "jaguar/h14-46-why-transactional-action-scope",
+    "jaguar/h14-47-why-cross-adapter-legacy-compatibility",
+    "jaguar/h14-48-why-single-write-boundary",
+    "jaguar/h14-49-why-d1-writer-legacy-contract",
+    "jaguar/h14-50-why-guarded-batch-candidate",
+    "jaguar/h14-51-why-miniflare-d1-runtime",
+    "jaguar/h14-52-why-worker-local-bundle"
+  ],
+  "discovered": [
+    "jaguar/h14-40-why-v30-85c-durable-idempotency-contract",
+    "jaguar/h14-41-why-dimension-intent-attempt-lifecycle",
+    "jaguar/h14-42-why-durable-failure-recovery",
+    "jaguar/h14-43-why-selective-integration-manifest",
+    "jaguar/h14-44-why-server-binding-dry-run",
+    "jaguar/h14-45-why-persisted-replay-revalidation",
+    "jaguar/h14-46-why-transactional-action-scope",
+    "jaguar/h14-47-why-cross-adapter-legacy-compatibility",
+    "jaguar/h14-48-why-single-write-boundary",
+    "jaguar/h14-49-why-d1-writer-legacy-contract",
+    "jaguar/h14-50-why-guarded-batch-candidate",
+    "jaguar/h14-51-why-miniflare-d1-runtime",
+    "jaguar/h14-52-why-worker-local-bundle"
+  ],
+  "untracked": [],
+  "missing": [],
+  "unavailable": null,
+  "decision": "REGISTERED_H14_COVERAGE_MATCH",
+  "coverage": "H14 WHY branches only; excludes other projects, unrelated labs and the current XPR branch",
+  "recommendation": "No H14 branch-name discrepancies in the consulted list. HEAD and test quality are checked separately."
+}
