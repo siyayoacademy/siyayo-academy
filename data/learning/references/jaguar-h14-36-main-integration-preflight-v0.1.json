@@ -1,0 +1,123 @@
+{
+  "id": "JAGUAR-H14.36-INTEGRATION-PREFLIGHT",
+  "version": "0.1.0",
+  "auditSnapshot": {
+    "experimentalBranch": "jaguar/h14-35-why-progressive-homologation",
+    "experimentalHead": "ba6d044f6e9b00f2a04c60f3ff94cad7486f3b9b",
+    "mainHead": "c2149f5e63b8de716cf9b9dcdede213bd328344e",
+    "ahead": 1765,
+    "behind": 1,
+    "notADeployApproval": true,
+    "mustRefreshAtIntegration": true
+  },
+  "moduleRegistry": {
+    "sourceBranch": "jaguar/module-governance-registry-20261024",
+    "registryRelativePath": "docs/siyayo-module-registry.json",
+    "comparisonRequiresNewRead": true
+  },
+  "sourcePins": [
+    {
+      "path": "data/learning/experience-seeds.json",
+      "blobSha": "9a7165df76aed1b3b726c8198311027e024e91c4",
+      "module": "EXP-01 / CTX-02 / DEP-03"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-5-why-s1-s2-context-transfer-v0.1.json",
+      "blobSha": "e034e9a76aa2de77f2db6c0e878f22ba438dfe9a",
+      "module": "WHY exploratory context"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+      "blobSha": "143e8692ac7dd5bdbd2de3d4624b0f264db7370d",
+      "module": "EVAL-08 unapproved drafts"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-33-why-semantic-homologation-reference-v0.1.json",
+      "blobSha": "122599c7e06ed92ccbb877318ec95a3a55b694ad",
+      "module": "WHY gates"
+    },
+    {
+      "path": "js/verb-explorer-contextual-coherence.js",
+      "blobSha": "6219a57623c10583b5f0e8ee5f7e2d137a040b19",
+      "module": "WHY source read-only"
+    },
+    {
+      "path": "js/question-word-assessment-contract.js",
+      "blobSha": "13d361054ca4cdb7a930aabb707b383f5041d733",
+      "module": "EVAL-08 boundary"
+    },
+    {
+      "path": "js/adaptive-assessment-scope.js",
+      "blobSha": "ac0ec23f9a445377fba05092c684c2379afeff52",
+      "module": "EVAL-08 scoped attempts"
+    },
+    {
+      "path": "js/verb-explorer-patita-interaction-trail.js",
+      "blobSha": "7a228eddf3f7f6c1f811230fad12709eda200e67",
+      "module": "PATITA-12 observer"
+    },
+    {
+      "path": "js/verb-explorer-why-assessment-live.js",
+      "blobSha": "b1f879709dde208ad28e906d19c69b1d58328bde",
+      "module": "EVAL-08 canonical WHY"
+    },
+    {
+      "path": "js/verb-explorer-h14-23-gear-snapshot-adapter.js",
+      "blobSha": "f96c25829897bf987deb576d35419fa821cee99e",
+      "module": "GEAR-06 adapter"
+    },
+    {
+      "path": "js/verb-explorer.js",
+      "blobSha": "d4101482aa39926250c7a08e9890bb9d118d11d4",
+      "module": "Explorer experimental runtime"
+    },
+    {
+      "path": "verb-explorer.html",
+      "blobSha": "3e41f8feefba907335a54ec26d35dd340c8b8228",
+      "module": "Explorer experimental entrypoint"
+    },
+    {
+      "path": "scripts/test-s3-why-canonical-green-cycle.js",
+      "blobSha": "a4474a7c1bd465d166e404b798dce1edd062721a",
+      "module": "WHY S3–S4 regression"
+    },
+    {
+      "path": "scripts/jaguar-h14-35-progressive-homologation.js",
+      "blobSha": "39934532881cda5158645ff46936be15d2239cb6",
+      "module": "H14.35 review plan"
+    }
+  ],
+  "sourceReview": {
+    "scope": "WHY S1/S2 × EN/ES/PT",
+    "sourceIntegrityCanPass": true,
+    "humanApprovalMustRemainPending": true,
+    "noImplicitWhichPrerequisite": true
+  },
+  "integrationRules": [
+    "DO_NOT_MERGE_WHOLE_EXPERIMENTAL_BRANCH",
+    "FETCH_CURRENT_MAIN_AND_OTHER_CONCURRENT_BRANCHES",
+    "MAP_MODULE_ID_ENTRYPOINT_DEPENDENCIES_CONSUMERS",
+    "INSPECT_MAIN_UNIQUE_COMMIT",
+    "VERIFY_SOURCE_PINS_AND_DIFF",
+    "SELECTIVELY_PORT_REVIEWED_MODULES",
+    "PRESERVE_S3_TO_S4_CANONICAL_CONTRACT",
+    "REGRESSION_EN_ES_PT_QW_PATITA_EVAL_TRAIL",
+    "REVIEW_PRODUCTION_VISUALS_BEFORE_RELEASE",
+    "REQUIRE_EXPLICIT_AUTHORIZATION_FOR_MERGE_AND_PRODUCTION"
+  ],
+  "permissions": {
+    "canMergeMain": false,
+    "canMutatePr3": false,
+    "canDeployProduction": false,
+    "canAuthorizeS1S2Why": false,
+    "canCreateEvidence": false,
+    "canGrantGreenPass": false
+  },
+  "preservation": {
+    "func13Hidden": true,
+    "gearPeriodBacklog": true,
+    "patitaObservationOnly": true,
+    "mainUnchanged": true,
+    "pr3Unchanged": true
+  }
+}

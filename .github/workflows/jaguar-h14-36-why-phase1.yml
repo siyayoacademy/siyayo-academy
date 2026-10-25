@@ -1,0 +1,26 @@
+name: JAGUAR H14.36 WHY phase 1 source preflight
+on:
+  push:
+    branches: [jaguar/h14-36-why-phase1-source-and-integration-preflight]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  source-and-integration-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-36-phase1-source-review.js
+          node scripts/test-jaguar-h14-35-progressive-homologation.js
+          node scripts/test-jaguar-h14-34-readiness-matrix.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-36-phase1-source-review.js --json > h14-36-source-review.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-36-six-why-source-packets
+          path: h14-36-source-review.json
+          if-no-files-found: warn
