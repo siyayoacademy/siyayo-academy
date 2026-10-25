@@ -1,0 +1,25 @@
+name: JAGUAR H14.34 contextual assessment readiness
+on:
+  push:
+    branches: [jaguar/h14-34-contextual-readiness-matrix]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: {node-version: '22'}
+      - run: |
+          node scripts/test-jaguar-h14-34-readiness-matrix.js
+          node scripts/test-jaguar-h14-33-homologation-reference.js
+          node scripts/test-jaguar-h14-32-pedagogical-mediation.js
+          node scripts/test-jaguar-h14-31-two-reviewer-consistency.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - run: node scripts/jaguar-h14-34-readiness-matrix.js --json > h14-34-readiness.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jaguar-h14-34-contextual-readiness-matrix
+          path: h14-34-readiness.json
