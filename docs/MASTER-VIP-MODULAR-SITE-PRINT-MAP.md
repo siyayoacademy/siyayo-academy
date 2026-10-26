@@ -1,0 +1,131 @@
+# Master VIP The Ten Kinds of Words
+## MVP 02 Mapeamento modular do subsite e da edição imprimível
+
+Data: 2026-10-26. Estado: ESPECIFICADO. Esta entrega registra arquitetura e backlog; não declara subsite, editor, compartilhamento, impressão ou habilidade instalados.
+
+## Origem e destino
+Repositório siyayoacademy/siyayo-academy. Branch própria: jaguar/master-vip-modular-site-print-20261026. Base isolada: main em c2149f5e63b8de716cf9b9dcdede213bd328344e. A base mantém INDEX/CHAPTERS existentes; esta etapa adiciona somente documentação e manifest inicial. Governança mais recente é consultada por referência, sem copiar laboratórios para a base.
+Destino previsto: /master-vip/index.html, título Master VIP The Ten Kinds of Words. Nenhuma URL de preview é considerada existente antes da confirmação do deploy.
+
+Original preservado: STRUCTURE-KIND OF WORDS.docx, Biblioteca libfile_aa3a9cd10ef88191ba4dd2b11dfc2e4a, SHA256 99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c. IDs Pxxxxx do inventário são localizadores desta revisão, não IDs pedagógicos permanentes. Reconhecer eventual versão diferente antes de reutilizar paginação histórica.
+
+## Referências consultadas
+Branch jaguar/module-governance-reg03-impact-20261025:
+- docs/SIYAYO-WORK-MAP.md (blob b37cecb8764f03f6478b788520a40487538c796b)
+- docs/siyayo-canonical-development-map.md (blob 4f2851f9bae5289ff01efdc72a97252e188f451f)
+- docs/SIYAYO-MODULE-GOVERNANCE-REGISTRY.md
+- docs/SIYAYO-BACKSTAGE-FLOW-REGISTRY.md
+- docs/SIYAYO-IMPACT-INTEGRATION-MAP.md
+- docs/JAGUAR-90C4-LOGIC-HOW-TO-SHOW-PRINT-GATE.md
+- docs/JAGUAR-90C7H5-MASTER-VIP-REFERENCE-MAP.md (blob 1b3d3ac79123796e3c00e96b881715774952291a)
+- docs/JAGUAR-H14-7-MASTER-VIP-FIVE-FUNCTION-MATRIX.md (blob 67de83aade64ef5d6e25f1d4f9e5a66733c80661)
+INDEX consultado em main (blob 5a94456f4235994e93787acad1135c921a4d87b1). Fontes Quicksand/Nunito Sans e paleta homologada já identificadas no CSS e reiteradas pelo WORK MAP.
+A leitura é seletiva dos mapas pertinentes, não auditoria de todos os arquivos docs. Referências históricas descrevem snapshots, não o estado atual de todos os laboratórios.
+
+## Decisão arquitetural
+Uma base de conteúdo versionada alimenta dois renderizadores: leitura em contêineres/slides e composição contínua A4. Um slide não equivale a uma página impressa. Não manter três transcrições divergentes para as edições EN→PT, EN→ES e EN→ES→PT.
+Unidade estável → capítulos/seções → projeção web e projeção print. Alteração editorial é uma mudança de fonte com revisão; abrir um módulo ou mover slides não altera contratos ou gera Evidence.
+
+## Hierarquia identificável
+| Nível | Identidade proposta | Responsabilidade |
+|---|---|---|
+| Portal | MVP:INDEX | Índice integral e busca por título, termo, classe e eixo |
+| Capítulo | MVP:CH:EXISTENCE | Contêiner de leitura, sumário local e referências |
+| Seção | MVP:SEC:EXISTENCE:PRESENT | Divisão pedagógica reutilizável |
+| Slide | MVP:SL:EXISTENCE:PRESENT:MODEL:001 | Unidade de apresentação, ordem versionada |
+| Conteúdo | MVP:UNIT:EXISTENCE:EXAMPLE:001 | Texto, tabela, exercício ou explicação independente da tela |
+| Figura | MVP:ASSET:0001 | Arquivo original e derivados com proporção preservada |
+| Frase | MVP:SENT:000001 | Alinhamento EN/ES/PT, contexto e variantes |
+| Palavra | MVP:TERM:000001 | Lema e função no contexto, remissões |
+| Perfil de saída | MVP:EXPORT:A4:EN-ES-PT | Seleção, idioma, paginação e versão |
+
+Estes IDs pertencem ao novo namespace editorial proposto; não substituem SIA:FUNC-13 ou IDs existentes de corpus. Conexões com a Academy são arestas com proveniência e tipo de relação, não equivalências presumidas. Seções recorrentes compartilham tipo de componente, mas cada instância tem identidade e conteúdo próprios.
+
+## Mapa inicial de capítulos
+| ID local | Conteúdo identificado na apostila | Seções recorrentes e relações |
+|---|---|---|
+| ORIENTATION | Homework Control, Itinerary, A Nice Party, General Checklist | Apresentação, uso, plano e checklist |
+| FOUNDATIONS | Dez tipos, cinco funções, ordem, English Face | Conceito, diagrama, exemplo e prática |
+| TOOLS | To Be/To Do, auxiliares, Curious Hands, English In Your Hand | Modelo, comparação, figura e remissão |
+| TO-BE | Quality/State, pessoas, possessivos, perguntas | Regra, tabela, exemplo, speaking e gabarito |
+| QUESTIONS | Question Words e construção interrogativa | Intenção, pergunta/resposta e contrastes |
+| MOVEMENT | To Be + ing | Conceito, timeline, exemplo, exercício e resposta |
+| ACTION-PRESENT | Rotina/hábito e presente | Modelo, mixing, construção, QW e speaking |
+| ACTION-FUTURE | Will/going to | Comparação contextual, construção e prática |
+| ACTION-PAST | Passado e regulares/irregulares | Modelo, contraste e prática |
+| PERFECT-PERIOD | Present Perfect/Past Perfect e PERIOD | Linha temporal, exemplo, contraste e revisão |
+| EXISTENCE | THERE + TO BE | Singular/plural, tempo/modo, quantidade, contexto e prática |
+| VERBAL-SYSTEMS | Passiva, sujeito, condicionais e modais | Explicação, quadro e aplicação |
+| WORD-CLASSES | Nouns, Pronouns, Articles, Adjectives, Adverbs, Prepositions, Conjunctions, Numbers, Interjections | Subcapítulo autônomo por classe |
+| VERB-LEXICON | Studying Verbs, irregulares e phrasal verbs | Glossários, famílias, uso e remissões |
+| REFERENCE | Índices, respostas e glossários transversais | Links bidirecionais com unidade de origem |
+
+Esta organização é inicial: fronteiras e títulos finais exigem reconciliação com todos os blocos do inventário. As seções de respostas podem aparecer no livro ao final, mas permanecem ligadas aos exercícios de origem.
+WORD-CLASSES terá nove subcapítulos autônomos; VERB continua explicitamente nos capítulos verbais. Não reduzir o método a nove tipos. MOVEMENT mantém seu sentido didático original, distinguindo progressivo de deslocamento lexical.
+
+## Tipos recorrentes de seção
+INTRODUCTION, CONCEPT, MODEL, TABLE, TIMELINE, FIGURE, EXAMPLE, CONTRAST, GUIDED_PRACTICE, FREE_PRACTICE, SPEAKING, REVIEW, CHECKLIST, ANSWER_KEY, GLOSSARY, CROSS_REFERENCE.
+Cada capítulo usa apenas os tipos pertinentes; não preencher automaticamente todos. Cabeçalho mostra título legível e código consultável. Descrição editorial e status ficam em área de bastidores, sem poluir o material do aluno.
+
+## Navegação do INDEX e do capítulo
+O mesmo INDEX contém lista de capítulos e índice de palavras-chave. Abre capítulo/ seção/slide por link estável, mantendo retorno ao INDEX, breadcrumb e anterior/próximo opcionais. Navegação livre e acesso direto; nenhuma conclusão obrigatória para desbloquear outro capítulo. Busca combina termo e aliases, idioma, classe, função, TENSE, MODE e QW.
+Rota proposta: /master-vip/?module=MVP%3ACH%3AEXISTENCE&section=MVP%3ASEC%3AEXISTENCE%3APRESENT&edition=en-es-pt#MVP-SL-EXISTENCE-PRESENT-MODEL-001.
+O roteador deverá validar IDs e apresentar recuperação ao índice quando um ID não existir. Links antigos recebem alias/redirect mapeado. Navegação por teclado, foco após troca de slide, URL e histórico devem funcionar juntos.
+
+A edição visível não é idioma de avaliação. Não há requisito de NICK para consulta. Não carregar PATITA, avaliadores, banco ou escopo de progresso apenas para abrir a Master.
+
+## Frases e palavras alvo
+A frase conserva texto integral, idiomas alinhados, contexto, função, classe, tempo, modo e proveniência. Destaque é anotação por token/intervalo com versão do texto; nunca substituição global de uma palavra em todas as frases. A mesma palavra pode exercer funções diferentes.
+Cada termo registra lema e formas por idioma, aliases, classe no contexto e links às frases e glossários. Traduções não precisam ter correspondência token a token. Vínculo exercício→gabarito e pergunta→resposta é explícito.
+Conferir ortografia, acentos interrogativos, pessoa, número, intenção e equivalência; distinguir MASTER_ORIGINAL, SIYAYO_ADAPTATION e COMPLEMENTARY_STUDY. Texto não revisado não recebe rótulo HOMOLOGADO.
+
+## Imagens em submódulos
+Cada figura recebe slide/contêiner próprio e referências ao conceito/exemplo que ilustra. Registrar original, hash, formato, pixels, modo/cor, transparência, dimensões de uso no DOCX em mm, recorte e resolução efetiva. Preservar proporção; width proporcional ao espaço disponível, altura automática e limite de ampliação. Não esticar miniaturas.
+O registro de asset e o registro de ocorrência são distintos: uma imagem pode aparecer em vários contextos e tamanhos. Preservar uso original como baseline; cada versão Fine Art é derivado identificado, sem sobrescrever o original.
+Atualização: manter asset ID e versionar arquivo/metadata, conferir todas as ocorrências consumidoras, legenda, alt text, qualidade na impressão, direitos e aceite. Completar VML e reconciliação de alternativas antes de declarar inventário visual fechado.
+
+## Visual web e impressão
+Web: azuis espectrais, dourados homologados, Quicksand/Nunito Sans, contêineres semelhantes a INDEX/CHAPTERS e bordas do sistema. Usar tokens compartilhados onde existentes, com CSS escopado à Master para evitar alterações no Explorer.
+Preservar A5/Chapters com contrato conciso de dez slides; a Master terá quantidade variável por capítulo. Analogia visual não impõe dez slides à apostila integral.
+Print: fundo claro, texto legível, acentos e sinais que funcionem em P&B, A4, área para escrita, margens de encadernação e ordem contínua. Slides ocultos na tela não podem desaparecer por acidente da seleção de impressão. Imprimir capítulo deve incluir todos os seus itens selecionados, referências e gabarito conforme escolha; tabelas repetem cabeçalho e figuras preservam escala.
+Web responsive e PDF imprimível têm verificações independentes. Diálogo de impressão é controlado pelo navegador; impressão direta silenciosa não é prometida.
+
+## Fluxo de edição ágil
+Primeira fase: editar arquivos de conteúdo e manifest na branch, com revisão Git e validação. Uma interface de leitura com botões não constitui editor persistente.
+Fase futura: formulário editorial com rascunho, validação, diff e exportação de alterações; persistência no repositório exige mecanismo autenticado próprio. Não incluir token GitHub no navegador. Conflitos de revisão devem ser detectados antes de gravar.
+Importação integral será por lotes, preservando original e inventário. Medir cobertura por blocos de conteúdo, tabelas e ocorrências de imagem, não por quantidade de slides. Unidade não mapeada aparece em relatório de lacunas. Nenhum descarte silencioso de material repetido.
+
+## Compartilhamento e impressão modular
+Componentes propostos MVP:SHARE e MVP:PRINT:
+- Compartilhar link profundo com module/section/slide/edition, com fallback copiar link.
+- Imprimir seleção de slide, seção, capítulo, vários capítulos ou livro.
+- Escolher EN→PT, EN→ES ou EN→ES→PT e incluir/excluir gabaritos.
+- Gerar saída com versão editorial, IDs e proveniência do conteúdo; só declarar PDF gerado quando o arquivo existir e for verificado.
+- Futuro cartão/imagem compartilhável exige layout e revisão próprios; não confundir share de link com exportação visual.
+Especificação de habilidade especializada futura: Master VIP Share Print Modular. Entradas: IDs, edição, perfil A4, seleção e gabaritos. Procedimento: resolver fonte e versão, validar relações e direitos, compor, renderizar, conferir e salvar. Saídas: link/arquivo e relatório de checagem. Estado ESPECIFICADA, não instalada. Sua criação instalável seguirá a habilidade skill-creator em ELO próprio.
+
+## Acesso entre branches e publicação
+Uma branch não serve páginas automaticamente. Reservar uma URL de preview confirmada da branch Master como referência consultável. Outras branches poderão apontar por URL absoluta e deep link, sem copiar o corpus. Links relativos só servem quando /master-vip/ existe no mesmo deploy. Registrar URL resolvida, commit e estado; nunca inventar URL Cloudflare a partir do nome da branch.
+Referência móvel acompanha desenvolvimento; referência congelada identifica commit/versão para auditoria. Alterar link de entrada de outra branch será lote seletivo posterior. Nenhuma mudança no INDEX principal nesta etapa.
+O mapa histórico tratava o original como privado e permitia apenas espelho de referência. A presente solicitação define intenção de subsite integral; a etapa atual publica apenas arquitetura sem conteúdo integral. Antes de publicar o corpus integral, resolver explicitamente audiência e direitos das mídias; preservação do original na Biblioteca não equivale a publicação pública do arquivo.
+
+## Cinco eixos e dependências
+HOW TO DO: unidades pedagógicas e modelos. HOW TO RECORD: IDs, proveniência, versões e cobertura. HOW TO SHOW: INDEX, contêineres, slides e print. HOW TO CHECK: validadores, revisão contextual, visual e preflight. HOW TO SPEAK: texto por locale e pronúncia futura, sem depender de áudio para consulta ou avaliação.
+Reutilização documental REG-01/02/03; dependências candidatas: INDEX/CHAPTERS, palette, tipos e corpus de referência. FUNC-13 e master-existence são fontes de comparação, não autoridades copiadas. Não integrar código de EVAL/ID/TRAIL/WORD/PATITA para obter aparência de contêiner.
+Eventos futuros, locais: master-vip:navigation-changed e master-vip:export-requested. Não emitir eventos canônicos de aprendizagem.
+
+## Sequência executável
+1. MVP 02 atual: branch própria, documento e manifest inicial.
+2. MVP 03: reconciliar catálogo integral e fronteiras; assets/ocorrências VML; cobertura e fontes herdadas.
+3. MVP 04: construir /master-vip/ com INDEX, contêiner, slides, busca, deep links, componentes acessíveis e estados vazios.
+4. MVP 05: importar capítulo EXISTENCE completo com proveniência, figuras, tabelas e exercícios; revisar três edições e prova A4.
+5. MVP 06: implementar share link e impressão modular; validar gabaritos, seleções e navegação.
+6. MVP 07: importar demais capítulos por lotes com relatório de cobertura, atualização Fine Art e links cruzados.
+7. MVP 08: habilidade instalável e edição assistida conforme contrato validado; validação de persistência.
+8. MVP 09: regressão integral, homologação separada web/conteúdo/print, preview confirmado e entradas nas branches consumidoras.
+
+Critérios: IDs únicos e referências resolvidas; seleção e ordem previsíveis; original íntegro; gabarito não revela resposta na questão; nenhuma evidência/contrato alterados; telas desktop/portrait/landscape; teclado; print A4 completo e P&B; fontes e figuras verificadas.
+Estados independentes: ESPECIFICADO, IMPLEMENTADO, TESTADO_LOCALMENTE, PENDENTE, HOMOLOGADO, INTEGRADO e PUBLICADO. Cada estado exige evidência própria. CI GREEN não integra nem homologa.
+
+## Resultado deste checkpoint
+Somente mapa e manifest publicados na branch própria. Subsite e habilidade continuam pendentes. Não houve alteração de main, PR 3, produção, avaliações, D1 ou watchlist. O próximo ELO concreto é fechar cobertura e implementar o shell modular com o piloto THERE + TO BE.
