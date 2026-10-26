@@ -1,0 +1,188 @@
+{
+  "id": "SIYAYO-WHY-PRODUCTION-RELEASE-CANDIDATE",
+  "version": "0.1.0",
+  "build_status": "SOURCE_GREEN_RELEASE_GATE_PREPARED_PRODUCTION_BLOCKED",
+  "repo": "siyayoacademy/siyayo-academy",
+  "source_branch": "jaguar/h14-67-why-experimental-closure-go-nogo-20261026",
+  "source_head": "03f8ebb95c5770c5a38b8f9458fd699addd30070",
+  "source_ci_run_id": 40410398591,
+  "source_ci_result": "success",
+  "comparison_snapshot": {
+    "main_sha": "c2149f5e63b8de716cf9b9dcdede213bd328344e",
+    "pr3_head_sha": "c7e83709cacf8479847df0f3cee4ed8a563aaae6",
+    "main_diverged": true,
+    "pr3_behind_by": 0,
+    "pr3_ahead_by": 289,
+    "comparison_file_limit": 300,
+    "diff_complete": false
+  },
+  "intended_activities": {
+    "production_readiness_checks": true,
+    "source_dependency_review": true,
+    "manual_preview_QA_allowed_without_credit": true,
+    "integrate_main": false,
+    "integrate_pr3": false,
+    "activate_why_s1_s2": false,
+    "grant_evidence": false,
+    "issue_green_pass": false,
+    "write_d1_remote": false,
+    "cloudflare_deploy": false
+  },
+  "blockers": {
+    "historical_audit": "PARTIAL_HIST01_OPEN",
+    "pedagogy": [
+      {
+        "id": "HG-01",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-02",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-03",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-04",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-05",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-06",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-07",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-08",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-09",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-10",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-11",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-12",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-13",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-14",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      },
+      {
+        "id": "HG-15",
+        "status": "OPEN",
+        "verified_human_attestation": null
+      }
+    ],
+    "technical": [
+      {
+        "id": "DG-01",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      },
+      {
+        "id": "DG-02",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      },
+      {
+        "id": "DG-03",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      },
+      {
+        "id": "DG-04",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      },
+      {
+        "id": "DG-05",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      },
+      {
+        "id": "DG-06",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      },
+      {
+        "id": "DG-07",
+        "status": "OPEN",
+        "verified_technical_attestation": null
+      }
+    ],
+    "WHY-S1-S2-DRAFT": "NOT_HOMOLOGATED",
+    "WHY-S2-S1-DRAFT": "NOT_HOMOLOGATED",
+    "REAL_AUTHENTICATION": "NOT_VERIFIED",
+    "REAL_WORKER_D1_STAGING": "NOT_VERIFIED",
+    "LIVE_DEVICE_AUDIO_UI_QA": "NOT_EXECUTED"
+  },
+  "hard_rules": {
+    "patita_observation_cannot_credit": true,
+    "nick_not_authentication": true,
+    "assessment_evaluator_only": true,
+    "show_canonical_only": true,
+    "s3_s4_unchanged": true,
+    "no_historical_hash_rewriting": true,
+    "func13_hidden": true,
+    "no_copy_of_mock_sql": true,
+    "no_wholesale_merge": true
+  },
+  "release_mode": "CHECKS_ONLY__DO_NOT_DEPLOY",
+  "release_candidate_authority": "NONE",
+  "executable_changes": [],
+  "git_commits_to_main": 0,
+  "protected_target_branches": [
+    "main",
+    "jaguar/verb-explorer-resume-live-wire"
+  ],
+  "staged_features": [
+    "H14.62..67 finalized lab pack",
+    "canonical S3→S4 untouched",
+    "WHY S1/S2 draft remains disabled"
+  ],
+  "controls_for_future": [
+    "Human-authenticated reviews and pedagogical decisions, authored questions and EN/ES/PT parity",
+    "Real subject issuer/session verification and direct action provenance",
+    "Atomic Evidence/outbox, remote D1 staging with rollback and rate/race/idempotency",
+    "Selective HEAD-level dependency patch, real browser and audio QA",
+    "Separate explicit production release authorization"
+  ],
+  "production_ready": false,
+  "allow_cloudflare_deploy": false,
+  "allow_main_merge": false,
+  "evidence_authorized": false
+}

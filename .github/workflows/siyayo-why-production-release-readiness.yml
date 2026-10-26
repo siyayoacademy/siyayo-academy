@@ -1,0 +1,30 @@
+name: SIYAYO WHY — Protected production readiness (NO DEPLOY)
+on:
+  push:
+    branches: [jaguar/why-production-release-gate-20261026]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  protected-release-readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Assert production GO/NO-GO and source provenance
+        run: node scripts/jaguar-why-production-safety-gate.cjs
+      - name: Negative release safety tests (fake approvals cannot deploy)
+        run: node scripts/test-jaguar-why-production-safety-gate.cjs
+      - name: Preserve existing WHY experimental closure regression
+        run: node scripts/test-jaguar-h14-67-final-gates.cjs
+      - name: Keep non-evaluative Explorer read-only inspector safe
+        run: |
+          node scripts/test-jaguar-h14-57-opportunity-bridge.cjs
+          node scripts/test-jaguar-h14-58-authority-review.cjs
+          node scripts/test-jaguar-h14-59-scoped-applicability.cjs
+          node scripts/test-jaguar-h14-60-referral.cjs
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Final release status
+        run: echo "CHECKS_GREEN_MEANS_PRODUCTION_STILL_BLOCKED; no deploy and no merge."
