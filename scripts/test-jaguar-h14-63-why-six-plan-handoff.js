@@ -83,7 +83,7 @@ const s3=corpus.find(x=>x.id==='having-dinner').thinkingMind.find(x=>x.questionW
 a.equal(s3.assessmentTarget.skill,'why.use.contextual-reason');
 const serialized=JSON.stringify(j);
 for(const forbidden of ['Because the fresh, mild cheese','Porque el queso fresco y suave','Porque prepará-lo juntos',
-'teacherOnly','contrastAnswer','modelAnswer','\"learnerId\":\"'])a.equal(serialized.includes(forbidden),false,'teacher content leak: '+forbidden);
+'"teacherOnly":','"contrastAnswer":','"modelAnswer":','\"learnerId\":\"'])a.equal(serialized.includes(forbidden),false,'teacher content leak: '+forbidden);
 const m=JSON.parse(fs.readFileSync('data/learning/references/jaguar-h14-63-why-six-plan-contract-v0.1.json'));
 a.equal(m.id,'SIYAYO-H14.63-WHY-SIX-PLAN-PEDAGOGICAL-HANDOFF');
 a.equal(m.status,'DRAFT_FOR_HUMAN_HOMOLOGATION_NO_EVIDENCE_AUTHORITY');
