@@ -1,0 +1,206 @@
+{
+  "id": "MVP:REGISTRY",
+  "schema_version": "0.2.0",
+  "catalog_version": "0.3.0",
+  "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
+  "route": "/master-vip/",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "modules": [
+    {
+      "id": "MVP:CH:ORIENTATION",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:FOUNDATIONS",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:TOOLS",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:TO-BE",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:QUESTIONS",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:MOVEMENT",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:ACTION-PRESENT",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:ACTION-FUTURE",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:ACTION-PAST",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:PERFECT-PERIOD",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:EXISTENCE",
+      "status": "SOURCE_AND_PILOT",
+      "sections": [
+        {
+          "id": "MVP:SEC:EXISTENCE:INTRO",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:CONCEPT:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:PRESENT",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:MODEL:001",
+            "MVP:UNIT:EXISTENCE:TABLE:001",
+            "MVP:UNIT:EXISTENCE:FIGURE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:CONTRAST",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:CONTRAST:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:QUESTIONS",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:QUESTIONS:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:TIME",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:TIME:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:PRACTICE",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:PRACTICE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:ANSWERS",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:ANSWERS:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:GLOSSARY",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:GLOSSARY:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-COMPARE",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-PARADIGMS",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATION-MODEL:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-FIGURE",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:FIGURE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MVP:CH:VERBAL-SYSTEMS",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:WORD-CLASSES",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:VERB-LEXICON",
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:REFERENCE",
+      "status": "PLANNED",
+      "sections": []
+    }
+  ],
+  "original_existence_units": 33,
+  "adaptation_units": 10,
+  "source_map": "master-vip/data/existence-source-map.json",
+  "print_status": "DOM_SELECTION_TESTED_PHYSICAL_PROOF_PENDING",
+  "specialized_skill": "SPECIFIED_NOT_INSTALLED",
+  "editor": "FILES_ONLY_NO_PERSISTENT_UI_EDITOR",
+  "assessment_authority": false
+}

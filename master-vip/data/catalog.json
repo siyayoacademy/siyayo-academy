@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -127,7 +127,7 @@
     {
       "id": "MVP:CH:EXISTENCE",
       "title": "Existence · There + To Be",
-      "description": "Existência, quantidade e contexto. Um primeiro capítulo para estudar e refinar.",
+      "description": "Fonte original e propostas novas, lado a lado. Texto, tabelas, exercícios e respostas com origem identificada.",
       "keywords": [
         "EXISTENCE",
         "Existence · There + To Be",
@@ -140,7 +140,7 @@
         "how many",
         "how much"
       ],
-      "status": "EDITORIAL_PILOT",
+      "status": "SOURCE_AND_PILOT",
       "sections": [
         {
           "id": "MVP:SEC:EXISTENCE:INTRO",
@@ -198,6 +198,75 @@
           "title": "Glossário",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:GLOSSARY:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-COMPARE",
+          "title": "Original · Comparação",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-PARADIGMS",
+          "title": "Original · Tabelas",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+          "title": "Original · Reformulação",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATION-MODEL:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004",
+            "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-FIGURE",
+          "title": "Original · Figura",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:FIGURE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+          "title": "Original · Exercícios",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+            "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+          "title": "Original · Respostas",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+            "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
           ]
         }
       ]
@@ -272,7 +341,8 @@
         "en": "Use there + be to introduce the existence or presence of something. Choose is for a singular count noun or an uncountable noun, and are for a plural count noun.",
         "es": "Usamos there + be para presentar la existencia o presencia de algo. En español, hay se usa tanto con singular como con plural.",
         "pt": "Usamos there + be para apresentar a existência ou presença de algo. Em português, há é impessoal; existe e existem concordam com o termo apresentado."
-      }
+      },
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:MODEL:001",
@@ -303,7 +373,7 @@
             "es": "Hay",
             "pt": "Há"
           },
-          "word_type": "VERB",
+          "word_type": "VERB → verbo → verbo",
           "tense": "PRESENT",
           "mode": "AFFIRMATIVE"
         },
@@ -319,7 +389,7 @@
             "es": "Hay",
             "pt": "Há"
           },
-          "word_type": "VERB",
+          "word_type": "VERB → verbo → verbo",
           "tense": "PRESENT",
           "mode": "AFFIRMATIVE"
         },
@@ -335,11 +405,12 @@
             "es": "Hay",
             "pt": "Há"
           },
-          "word_type": "VERB",
+          "word_type": "VERB → verbo → verbo",
           "tense": "PRESENT",
           "mode": "AFFIRMATIVE"
         }
-      ]
+      ],
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:TABLE:001",
@@ -396,7 +467,8 @@
             "pt": "Há um tomate? / Há tomates?"
           }
         }
-      ]
+      ],
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:FIGURE:001",
@@ -432,7 +504,8 @@
           "pt": "Um tomate e água usam there is; dois tomates usam there are."
         }
       },
-      "caption": "Diagrama editorial novo. As figuras originais serão incorporadas após a reconciliação do inventário."
+      "caption": "Diagrama editorial novo. As figuras originais serão incorporadas após a reconciliação do inventário.",
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:CONTRAST:001",
@@ -495,7 +568,8 @@
         "en": "The first sentence introduces existence. In the second, there indicates a place. Have expresses possession in the third.",
         "es": "La primera oración presenta existencia. En la segunda, there indica lugar. Have expresa posesión en la tercera.",
         "pt": "A primeira frase apresenta existência. Na segunda, there indica lugar. Have expressa posse na terceira."
-      }
+      },
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:QUESTIONS:001",
@@ -547,7 +621,8 @@
         "en": "Count individual tomatoes; measure water. These are teaching examples, not new assessment contracts.",
         "es": "Contamos tomates individuales; medimos el agua. Son ejemplos de estudio, no nuevos contratos evaluativos.",
         "pt": "Contamos tomates; medimos água. São exemplos de estudo, sem ativar contratos avaliativos."
-      }
+      },
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:TIME:001",
@@ -596,7 +671,8 @@
           "tense": "FUTURE",
           "mode": "AFFIRMATIVE"
         }
-      ]
+      ],
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:PRACTICE:001",
@@ -625,7 +701,8 @@
         "There ___ some water in the jug.",
         "How many __________________________?"
       ],
-      "answer_key_id": "MVP:UNIT:EXISTENCE:ANSWERS:001"
+      "answer_key_id": "MVP:UNIT:EXISTENCE:ANSWERS:001",
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:ANSWERS:001",
@@ -648,7 +725,8 @@
         "es": "1. is · 2. are · 3. is · 4. How many carrots are there in the bowl? (Pregunta más corta válida: How many carrots are there?)",
         "pt": "1. is · 2. are · 3. is · 4. How many carrots are there in the bowl? (Pergunta mais curta válida: How many carrots are there?)"
       },
-      "exercise_id": "MVP:UNIT:EXISTENCE:PRACTICE:001"
+      "exercise_id": "MVP:UNIT:EXISTENCE:PRACTICE:001",
+      "source_layer": "ADAPTATION"
     },
     {
       "id": "MVP:UNIT:EXISTENCE:GLOSSARY:001",
@@ -717,15 +795,1867 @@
             "MVP:SENT:000006"
           ]
         }
+      ],
+      "source_layer": "ADAPTATION"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-COMPARE",
+      "type": "SOURCE_TEXT",
+      "title": "Compare · texto da Master",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11803",
+          "P11804",
+          "P11805",
+          "P11806",
+          "P11807",
+          "P11808",
+          "P11809",
+          "P11811",
+          "P11813"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11803",
+          "text": "Tem (Há) um problema que precisamos resolver……..There is a problem....."
+        },
+        {
+          "source_id": "P11804",
+          "text": "Teve (Houve) festa na empresa ontem…..There was a party..."
+        },
+        {
+          "source_id": "P11805",
+          "text": "Tinha (Havia) muita gente na festa…..There were many people..."
+        },
+        {
+          "source_id": "P11806",
+          "text": "Terá (Haverá) reunião amanhã…There will be a meeting..."
+        },
+        {
+          "source_id": "P11807",
+          "text": "Teve (Houve) festa aqui… olhe quanta sujeira!There has been a party.... Em português podemos utilizar os verbos TER e HAVER(existir) em qualquer situação."
+        },
+        {
+          "source_id": "P11808",
+          "text": "Em inglês você não pode utilizar o verbo HAVE (ter) sem sujeito. Você deve utilizar a combinação “THERE + to be” para indicar o verbo “HAVER” . Ex.:"
+        },
+        {
+          "source_id": "P11809",
+          "text": "(errado) Has a problem..... (correto) There is a problem."
+        },
+        {
+          "source_id": "P11811",
+          "text": "I have a problem = Eu tenho (possuo) um problema There is a problem = Tem (há) um problema"
+        },
+        {
+          "source_id": "P11813",
+          "text": "Ter (no sentido de possuir) = have Ter (no sentido de haver) = there + to be"
+        }
       ]
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-PARADIGMS",
+      "type": "SOURCE_TABLE",
+      "title": "Present · tabela original",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11822",
+          "P11823",
+          "P11824",
+          "P11825",
+          "P11826",
+          "P11827",
+          "P11828",
+          "P11829",
+          "P11830"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0090",
+      "source_headers": [
+        "Coluna 1",
+        "Coluna 2",
+        "Coluna 3"
+      ],
+      "source_rows": [
+        [
+          "AFFIRMATIVE:",
+          "There Is",
+          "There Are"
+        ],
+        [
+          "NEGATIVE:",
+          "There Is Not",
+          "There Are Not"
+        ],
+        [
+          "INTERROGATIVE:",
+          "Is There Any?",
+          "Are There Any?"
+        ]
+      ],
+      "caption": "Ordem e conteúdo das células preservados; títulos e mesclagens aguardam recomposição editorial."
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-PARADIGMS",
+      "type": "SOURCE_TABLE",
+      "title": "Past / Future · tabela original",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11835",
+          "P11836",
+          "P11837",
+          "P11838",
+          "P11839",
+          "P11840",
+          "P11841",
+          "P11842",
+          "P11843",
+          "P11844",
+          "P11845",
+          "P11846",
+          "P11847",
+          "P11848",
+          "P11849",
+          "P11850"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0091",
+      "source_headers": [
+        "Coluna 1",
+        "Coluna 2",
+        "Coluna 3"
+      ],
+      "source_rows": [
+        [
+          "AFFIRMATIVE:",
+          "There Was",
+          "There Were"
+        ],
+        [
+          "NEGATIVE:",
+          "There Was Not",
+          "There Were Not"
+        ],
+        [
+          "INTERROGATIVE:",
+          "Was There Any?",
+          "Were There Any?"
+        ],
+        [
+          "FUTURETHERE WILL BE",
+          "",
+          ""
+        ],
+        [
+          "AFFIRMATIVE: NEGATIVE: INTERROGATIVE:",
+          "There Will Be There Will Not Be Will There Be Any?",
+          ""
+        ]
+      ],
+      "caption": "Ordem e conteúdo das células preservados; títulos e mesclagens aguardam recomposição editorial."
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-PARADIGMS",
+      "type": "SOURCE_TABLE",
+      "title": "Perfect · tabela original",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11855",
+          "P11856",
+          "P11857",
+          "P11858",
+          "P11859",
+          "P11860",
+          "P11861",
+          "P11862",
+          "P11863",
+          "P11864",
+          "P11865",
+          "P11866",
+          "P11867",
+          "P11868",
+          "P11869",
+          "P11870",
+          "P11871"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0092",
+      "source_headers": [
+        "Coluna 1",
+        "Coluna 2",
+        "Coluna 3"
+      ],
+      "source_rows": [
+        [
+          "AFFIRMATIVE:",
+          "There Has Been",
+          "There Have Been"
+        ],
+        [
+          "NEGATIVE:",
+          "There Has Not Been",
+          "There Have Not Been"
+        ],
+        [
+          "INTERROGATIVE:",
+          "Has There Been Any?",
+          "Have There Been Any?"
+        ],
+        [
+          "PAST PERFECT THERE HAD BEEN",
+          "",
+          ""
+        ],
+        [
+          "AFFIRMATIVE: NEGATIVE:INTERROGATIVE:",
+          "There Had Been There Had Not BeenHad There Been Any?",
+          ""
+        ]
+      ],
+      "caption": "Ordem e conteúdo das células preservados; títulos e mesclagens aguardam recomposição editorial."
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATION-MODEL:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+      "type": "SOURCE_TEXT",
+      "title": "Modelo de reformulação original",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11879"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11879",
+          "text": "We have two chairs  in this room.There are two chairs in this room."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+      "type": "SOURCE_EXERCISE",
+      "title": "Reformulação · 1–5",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11880",
+          "P11881",
+          "P11882",
+          "P11883",
+          "P11884"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11880",
+          "text": "1. We don’t have any chairs in this room."
+        },
+        {
+          "source_id": "P11881",
+          "text": "2. He made only one mistake in spelling."
+        },
+        {
+          "source_id": "P11882",
+          "text": "3. He didn’t make mistakes in spelling."
+        },
+        {
+          "source_id": "P11883",
+          "text": "4. She didn’t buy flowers for the living room."
+        },
+        {
+          "source_id": "P11884",
+          "text": "5. A hundred people were invited to the party. Only fifty went."
+        }
+      ],
+      "instructions": {
+        "pt": "Reformule usando THERE + TO BE quando o contexto permitir. O original propõe a reformulação; verificar possíveis mudanças de sentido."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+      "type": "SOURCE_EXERCISE",
+      "title": "Reformulação · 6–10",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11885",
+          "P11886",
+          "P11887",
+          "P11888",
+          "P11889"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11885",
+          "text": "6. He didn’t have any good news to tell us."
+        },
+        {
+          "source_id": "P11886",
+          "text": "7. I bought milk."
+        },
+        {
+          "source_id": "P11887",
+          "text": "8. I didn’t buy bread."
+        },
+        {
+          "source_id": "P11888",
+          "text": "9. A dog is barking outside."
+        },
+        {
+          "source_id": "P11889",
+          "text": "10. I have never had problems with my car."
+        }
+      ],
+      "instructions": {
+        "pt": "Reformule usando THERE + TO BE quando o contexto permitir. O original propõe a reformulação; verificar possíveis mudanças de sentido."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+      "type": "SOURCE_EXERCISE",
+      "title": "Reformulação · 11–15",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11890",
+          "P11891",
+          "P11892",
+          "P11893",
+          "P11894"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11890",
+          "text": "11. I didn’t find any eggs."
+        },
+        {
+          "source_id": "P11891",
+          "text": "12. I have a problem."
+        },
+        {
+          "source_id": "P11892",
+          "text": "13. I can’t see anybody outside."
+        },
+        {
+          "source_id": "P11893",
+          "text": "14. The place was empty."
+        },
+        {
+          "source_id": "P11894",
+          "text": "15. The exhibition didn’t happen."
+        }
+      ],
+      "instructions": {
+        "pt": "Reformule usando THERE + TO BE quando o contexto permitir. O original propõe a reformulação; verificar possíveis mudanças de sentido."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+      "type": "SOURCE_EXERCISE",
+      "title": "Reformulação · 16–20",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11895",
+          "P11896",
+          "P11897",
+          "P11898",
+          "P11899"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11895",
+          "text": "16. It looks like somebody had a party here."
+        },
+        {
+          "source_id": "P11896",
+          "text": "17. An accident happened there."
+        },
+        {
+          "source_id": "P11897",
+          "text": "18. Many people are there."
+        },
+        {
+          "source_id": "P11898",
+          "text": "19. I saw an old fashioned car at the automobile exhibition."
+        },
+        {
+          "source_id": "P11899",
+          "text": "20. I don’t have any messages for you."
+        }
+      ],
+      "instructions": {
+        "pt": "Reformule usando THERE + TO BE quando o contexto permitir. O original propõe a reformulação; verificar possíveis mudanças de sentido."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+      "type": "SOURCE_EXERCISE",
+      "title": "Reformulação · 21–25",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11900",
+          "P11901",
+          "P11902",
+          "P11903",
+          "P11904"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11900",
+          "text": "21. I need to buy some more sugar. The sugar bowl is empty."
+        },
+        {
+          "source_id": "P11901",
+          "text": "22. London has many beautiful places."
+        },
+        {
+          "source_id": "P11902",
+          "text": "23. We have three holidays in September."
+        },
+        {
+          "source_id": "P11903",
+          "text": "24. We will have no holidays in August."
+        },
+        {
+          "source_id": "P11904",
+          "text": "25. We should have a big commemoration for this."
+        }
+      ],
+      "instructions": {
+        "pt": "Reformule usando THERE + TO BE quando o contexto permitir. O original propõe a reformulação; verificar possíveis mudanças de sentido."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:FIGURE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-FIGURE",
+      "type": "FIGURE",
+      "title": "Figura original · remissão",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11905"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:MASTER-EXISTENCE-001"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:MASTER-EXISTENCE-001",
+        "src": "assets/master-existence-original.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "origin": "MASTER_ORIGINAL",
+        "original_width_mm": null,
+        "original_height_mm": null,
+        "drawing_container_width_mm": 107.23,
+        "drawing_container_height_mm": 29.62,
+        "geometry_status": "CONTAINER_EXTENT_ONLY_IMAGE_SCALE_PENDING",
+        "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+        "alternate_vml": {
+          "path": "word/media/image139.jpeg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c"
+        },
+        "alt": {
+          "en": "Original hand drawing pointing toward GO TO.",
+          "es": "Dibujo original de una mano que señala GO TO.",
+          "pt": "Desenho original de mão apontando para GO TO."
+        }
+      },
+      "caption": "Imagem original preservada, sem ampliação além de 376 px na tela. No DOCX: 107.23 × 29.62 mm no quadro DrawingML, não confirmado como medida da imagem isolada. Escala física a conferir. Remissão a Indefinite Pronouns / Prepositions."
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 1–5",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11913",
+          "P11915",
+          "P11917",
+          "P11919",
+          "P11921"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11913",
+          "text": "1. Tem (Há) cervejas na geladeira?"
+        },
+        {
+          "source_id": "P11915",
+          "text": "2. Eu tenho 10 latas de cerveja na geladeira."
+        },
+        {
+          "source_id": "P11917",
+          "text": "3. Tem (Há) cervejas na geladeira."
+        },
+        {
+          "source_id": "P11919",
+          "text": "4. Não temos cervejas."
+        },
+        {
+          "source_id": "P11921",
+          "text": "5. Tem (Há) recado pra mim?"
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 6–10",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11923",
+          "P11925",
+          "P11927",
+          "P11929",
+          "P11931"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11923",
+          "text": "6. Tem (Há) um recado para você."
+        },
+        {
+          "source_id": "P11925",
+          "text": "7. Tem (Há) açúcar neste café?"
+        },
+        {
+          "source_id": "P11927",
+          "text": "8. Não temos mais açúcar."
+        },
+        {
+          "source_id": "P11929",
+          "text": "9. Tem (Há) recados para mim?"
+        },
+        {
+          "source_id": "P11931",
+          "text": "10. Tem (Há) algum problema?"
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 11–15",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11933",
+          "P11935",
+          "P11937",
+          "P11939",
+          "P11941"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11933",
+          "text": "11. Eu tenho um problema."
+        },
+        {
+          "source_id": "P11935",
+          "text": "12. Tinha (Havia) muita gente na festa?"
+        },
+        {
+          "source_id": "P11937",
+          "text": "13. Havia apenas 30 pessoas na festa."
+        },
+        {
+          "source_id": "P11939",
+          "text": "14. Tem (Há) alguém aí?"
+        },
+        {
+          "source_id": "P11941",
+          "text": "15. Não há ninguém aqui."
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 16–20",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11943",
+          "P11945",
+          "P11947",
+          "P11949",
+          "P11951"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11943",
+          "text": "16. Tem (Há) muita gente lá fora?"
+        },
+        {
+          "source_id": "P11945",
+          "text": "17. Tem (Há) festa hoje?"
+        },
+        {
+          "source_id": "P11947",
+          "text": "18. Há várias pessoas lá fora."
+        },
+        {
+          "source_id": "P11949",
+          "text": "19. Tem (Há) festa amanhã?"
+        },
+        {
+          "source_id": "P11951",
+          "text": "20. Eu tenho festa em casa hoje á noite."
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 21–25",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11953",
+          "P11955",
+          "P11957",
+          "P11959",
+          "P11961"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11953",
+          "text": "21. Teve (Houve) festa ontem?"
+        },
+        {
+          "source_id": "P11955",
+          "text": "22. Teve (Houve) festa aqui?"
+        },
+        {
+          "source_id": "P11957",
+          "text": "23. Tem (Há) alguma coisa errada?"
+        },
+        {
+          "source_id": "P11959",
+          "text": "24. Tem (Há) alguém me chamando?"
+        },
+        {
+          "source_id": "P11961",
+          "text": "25. Tem (Há) alguém me esperando?"
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 26–30",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11963",
+          "P11965",
+          "P11967",
+          "P11969",
+          "P11971"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11963",
+          "text": "26. Tem (Há) algum papel que eu possa usar?"
+        },
+        {
+          "source_id": "P11965",
+          "text": "27. Tem (Há) algo que eu possa fazer por você?"
+        },
+        {
+          "source_id": "P11967",
+          "text": "28. Tem (Há) algo que eu posso fazer por você."
+        },
+        {
+          "source_id": "P11969",
+          "text": "29. Tem (Há) algo que eu precise saber?"
+        },
+        {
+          "source_id": "P11971",
+          "text": "30. Existe algo que você precisa saber."
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 31–35",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11973",
+          "P11975",
+          "P11977",
+          "P11979",
+          "P11981"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11973",
+          "text": "31. Tem (Haverá) algum problema se eu fizer isso?"
+        },
+        {
+          "source_id": "P11975",
+          "text": "32. Teria (Haveria) algum problema se eu fizesse isso?"
+        },
+        {
+          "source_id": "P11977",
+          "text": "33. Deveria haver menos impostos para as pequenas empresas."
+        },
+        {
+          "source_id": "P11979",
+          "text": "34. Poderá haver conflitos se os dois países não chegarem a um acordo."
+        },
+        {
+          "source_id": "P11981",
+          "text": "35. Essa máquina tem muitos problemas."
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 36–40",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11983",
+          "P11985",
+          "P11987",
+          "P11989",
+          "P11991"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11983",
+          "text": "36. Tem (Há) alguma coisa que eu possa fazer para ajudá-la?"
+        },
+        {
+          "source_id": "P11985",
+          "text": "37. Tem que (Há de) haver uma solução para esse problema."
+        },
+        {
+          "source_id": "P11987",
+          "text": "38. Haverá reunião amanhã?"
+        },
+        {
+          "source_id": "P11989",
+          "text": "39. Terá (Haverá) alguém esperando por mim no aeroporto?"
+        },
+        {
+          "source_id": "P11991",
+          "text": "40. Teve (Houve) alguém aqui?"
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 41–45",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11993",
+          "P11995",
+          "P11997",
+          "P11999",
+          "P12001"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P11993",
+          "text": "41. Teve (Houve) festa aqui?"
+        },
+        {
+          "source_id": "P11995",
+          "text": "42. Terá (Haverá) alguma multa?"
+        },
+        {
+          "source_id": "P11997",
+          "text": "43. Quantas pessoas havia na reunião?"
+        },
+        {
+          "source_id": "P11999",
+          "text": "44. Eu tive um acidente no mês passado."
+        },
+        {
+          "source_id": "P12001",
+          "text": "45. Tem (Há) algo que eu possa fazer?"
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 46–50",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12003",
+          "P12005",
+          "P12007",
+          "P12009",
+          "P12011"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12003",
+          "text": "46. Tem (Há) algo que ele pode fazer por nós."
+        },
+        {
+          "source_id": "P12005",
+          "text": "47. Tem (Há) alguma coisa que poderemos fazer por ele."
+        },
+        {
+          "source_id": "P12007",
+          "text": "48. Tem (Há) algo que possamos fazer por eles?"
+        },
+        {
+          "source_id": "P12009",
+          "text": "49. Tem que (Há de) haver alguma outra alternativa."
+        },
+        {
+          "source_id": "P12011",
+          "text": "50. Tem que ter (haver) cerveja na geladeira ainda! Nós compramos ontem."
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercícios originais · 51–55",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12013",
+          "P12015",
+          "P12017",
+          "P12019",
+          "P12021"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12013",
+          "text": "51. Quando cheguei em casa percebi que tinha havido uma festa."
+        },
+        {
+          "source_id": "P12015",
+          "text": "52. Havia muitas pessoas esperando por aquela decisão."
+        },
+        {
+          "source_id": "P12017",
+          "text": "53. Tem havido muitas reclamações por causa disso."
+        },
+        {
+          "source_id": "P12019",
+          "text": "54. Há muitos brasileiros morando em Miami."
+        },
+        {
+          "source_id": "P12021",
+          "text": "55. Havia tantos exercícios difíceis!"
+        }
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "instructions": {
+        "pt": "Produza a versão em inglês. A numeração original foi preservada. As respostas ficam em seção separada."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 1–5",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12027",
+          "P12028",
+          "P12029",
+          "P12030",
+          "P12031"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12027",
+          "text": "1. Are there any beers in the fridge/refrigerator?",
+          "original_text": "Are there any beers in the fridge/refrigerator?",
+          "editorial_number": 1
+        },
+        {
+          "source_id": "P12028",
+          "text": "2. I have ten cans of beer in the fridge/refrigerator.",
+          "original_text": "I have ten cans of beer in the fridge/refrigerator.",
+          "editorial_number": 2
+        },
+        {
+          "source_id": "P12029",
+          "text": "3. There is beer in the fridge.",
+          "original_text": "There is beer in the fridge.",
+          "editorial_number": 3
+        },
+        {
+          "source_id": "P12030",
+          "text": "4. We don’t have any beers.",
+          "original_text": "We don’t have any beers.",
+          "editorial_number": 4
+        },
+        {
+          "source_id": "P12031",
+          "text": "5. Is there any message for me?",
+          "original_text": "Is there any message for me?",
+          "editorial_number": 5
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 6–10",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12032",
+          "P12033",
+          "P12034",
+          "P12035",
+          "P12036"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12032",
+          "text": "6. There is a message for you.",
+          "original_text": "There is a message for you.",
+          "editorial_number": 6
+        },
+        {
+          "source_id": "P12033",
+          "text": "7. Is there any sugar in this coffee?",
+          "original_text": "Is there any sugar in this coffee?",
+          "editorial_number": 7
+        },
+        {
+          "source_id": "P12034",
+          "text": "8. We don’t have any more sugar.",
+          "original_text": "We don’t have any more sugar.",
+          "editorial_number": 8
+        },
+        {
+          "source_id": "P12035",
+          "text": "9. Are there messages for me?",
+          "original_text": "Are there messages for me?",
+          "editorial_number": 9
+        },
+        {
+          "source_id": "P12036",
+          "text": "10. Is there any problem?",
+          "original_text": "Is there any problem?",
+          "editorial_number": 10
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 11–15",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12037",
+          "P12038",
+          "P12039",
+          "P12040",
+          "P12041"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12037",
+          "text": "11. I have a problem.",
+          "original_text": "I have a problem.",
+          "editorial_number": 11
+        },
+        {
+          "source_id": "P12038",
+          "text": "12. Were there many people at the party?",
+          "original_text": "Were there many people at the party?",
+          "editorial_number": 12
+        },
+        {
+          "source_id": "P12039",
+          "text": "13. There were only 30 people at the party.",
+          "original_text": "There were only 30 people at the party.",
+          "editorial_number": 13
+        },
+        {
+          "source_id": "P12040",
+          "text": "14. Is there anybody there?",
+          "original_text": "Is there anybody there?",
+          "editorial_number": 14
+        },
+        {
+          "source_id": "P12041",
+          "text": "15. There is nobody here. / There isn’t anybody here.",
+          "original_text": "There is nobody here. / There isn’t anybody here.",
+          "editorial_number": 15
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 16–20",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12042",
+          "P12043",
+          "P12044",
+          "P12045",
+          "P12046"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12042",
+          "text": "16. Are there many people outside?",
+          "original_text": "Are there many people outside?",
+          "editorial_number": 16
+        },
+        {
+          "source_id": "P12043",
+          "text": "17. Is there a party today?",
+          "original_text": "Is there a party today?",
+          "editorial_number": 17
+        },
+        {
+          "source_id": "P12044",
+          "text": "18. There are many people outside there.",
+          "original_text": "There are many people outside there.",
+          "editorial_number": 18
+        },
+        {
+          "source_id": "P12045",
+          "text": "19. Will there be a party tomorrow?",
+          "original_text": "Will there be a party tomorrow?",
+          "editorial_number": 19
+        },
+        {
+          "source_id": "P12046",
+          "text": "20. I will have a party at home tonight.",
+          "original_text": "I will have a party at home tonight.",
+          "editorial_number": 20
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 21–25",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12047",
+          "P12048",
+          "P12049",
+          "P12050",
+          "P12051"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12047",
+          "text": "21. Was there a party yesterday?",
+          "original_text": "Was there a party yesterday?",
+          "editorial_number": 21
+        },
+        {
+          "source_id": "P12048",
+          "text": "22. Has there been a party here?",
+          "original_text": "Has there been a party here?",
+          "editorial_number": 22
+        },
+        {
+          "source_id": "P12049",
+          "text": "23. Is there anything wrong?",
+          "original_text": "Is there anything wrong?",
+          "editorial_number": 23
+        },
+        {
+          "source_id": "P12050",
+          "text": "24. Is there anybody calling me?",
+          "original_text": "Is there anybody calling me?",
+          "editorial_number": 24
+        },
+        {
+          "source_id": "P12051",
+          "text": "25. Is there anybody waiting for me?",
+          "original_text": "Is there anybody waiting for me?",
+          "editorial_number": 25
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 26–30",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12052",
+          "P12053",
+          "P12054",
+          "P12055",
+          "P12056"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12052",
+          "text": "26. Is there any paper I can use?",
+          "original_text": "Is there any paper I can use?",
+          "editorial_number": 26
+        },
+        {
+          "source_id": "P12053",
+          "text": "27. Is there anything I can do for you?",
+          "original_text": "Is there anything I can do for you?",
+          "editorial_number": 27
+        },
+        {
+          "source_id": "P12054",
+          "text": "28. There is something I can do for you.",
+          "original_text": "There is something I can do for you.",
+          "editorial_number": 28
+        },
+        {
+          "source_id": "P12055",
+          "text": "29. Is there anything I need to know?",
+          "original_text": "Is there anything I need to know?",
+          "editorial_number": 29
+        },
+        {
+          "source_id": "P12056",
+          "text": "30. There is something you need to know.",
+          "original_text": "There is something you need to know.",
+          "editorial_number": 30
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 31–35",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12057",
+          "P12058",
+          "P12059",
+          "P12060",
+          "P12061"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12057",
+          "text": "31. Is there a problem if I do that?",
+          "original_text": "Is there a problem if I do that?",
+          "editorial_number": 31
+        },
+        {
+          "source_id": "P12058",
+          "text": "32. Would there be a problem if I did that?",
+          "original_text": "Would there be a problem if I did that?",
+          "editorial_number": 32
+        },
+        {
+          "source_id": "P12059",
+          "text": "33. There should be less taxes for the small companies.",
+          "original_text": "There should be less taxes for the small companies.",
+          "editorial_number": 33
+        },
+        {
+          "source_id": "P12060",
+          "text": "34. There might be conflicts if the two countries don’t come to an agreement.",
+          "original_text": "There might be conflicts if the two countries don’t come to an agreement.",
+          "editorial_number": 34
+        },
+        {
+          "source_id": "P12061",
+          "text": "35. That machine has many problems.",
+          "original_text": "That machine has many problems.",
+          "editorial_number": 35
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 36–40",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12062",
+          "P12063",
+          "P12064",
+          "P12065",
+          "P12066"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12062",
+          "text": "36. Is there anything I can do to help her?",
+          "original_text": "Is there anything I can do to help her?",
+          "editorial_number": 36
+        },
+        {
+          "source_id": "P12063",
+          "text": "37. There must be/has to be a solution to this problem.",
+          "original_text": "There must be/has to be a solution to this problem.",
+          "editorial_number": 37
+        },
+        {
+          "source_id": "P12064",
+          "text": "38. Will there be a meeting tomorrow?",
+          "original_text": "Will there be a meeting tomorrow?",
+          "editorial_number": 38
+        },
+        {
+          "source_id": "P12065",
+          "text": "39. Will there be anyone/anybody waiting for me at the airport?",
+          "original_text": "Will there be anyone/anybody waiting for me at the airport?",
+          "editorial_number": 39
+        },
+        {
+          "source_id": "P12066",
+          "text": "40. Has there been anybody here?",
+          "original_text": "Has there been anybody here?",
+          "editorial_number": 40
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 41–45",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12067",
+          "P12068",
+          "P12069",
+          "P12070",
+          "P12071"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12067",
+          "text": "41. Has there been a party here?",
+          "original_text": "Has there been a party here?",
+          "editorial_number": 41
+        },
+        {
+          "source_id": "P12068",
+          "text": "42. Will there be any fine/ticket?",
+          "original_text": "Will there be any fine/ticket?",
+          "editorial_number": 42
+        },
+        {
+          "source_id": "P12069",
+          "text": "43. How many people were there at the meeting?",
+          "original_text": "How many people were there at the meeting?",
+          "editorial_number": 43
+        },
+        {
+          "source_id": "P12070",
+          "text": "44. I had an accident last month.",
+          "original_text": "I had an accident last month.",
+          "editorial_number": 44
+        },
+        {
+          "source_id": "P12071",
+          "text": "45. Is there anything I can do?",
+          "original_text": "Is there anything I can do?",
+          "editorial_number": 45
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 46–50",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12072",
+          "P12073",
+          "P12074",
+          "P12075",
+          "P12076"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12072",
+          "text": "46. There is something he can do for us.",
+          "original_text": "There is something he can do for us.",
+          "editorial_number": 46
+        },
+        {
+          "source_id": "P12073",
+          "text": "47. There is something we can do for him.",
+          "original_text": "There is something we can do for him.",
+          "editorial_number": 47
+        },
+        {
+          "source_id": "P12074",
+          "text": "48. Is there anything we can do for them?",
+          "original_text": "Is there anything we can do for them?",
+          "editorial_number": 48
+        },
+        {
+          "source_id": "P12075",
+          "text": "49. There must be/has to be another alternative/option.",
+          "original_text": "There must be/has to be another alternative/option.",
+          "editorial_number": 49
+        },
+        {
+          "source_id": "P12076",
+          "text": "50. There still has to be beer in the fridge! We bought some yesterday.",
+          "original_text": "There still has to be beer in the fridge! We bought some yesterday.",
+          "editorial_number": 50
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Respostas originais · 51–55",
+      "revision": 1,
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_layer": "ORIGINAL",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12077",
+          "P12078",
+          "P12079",
+          "P12080",
+          "P12081"
+        ],
+        "note": "Transcrição de referência preservada. Não é correção nem tradução homologada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P12077",
+          "text": "51. When I arrived/got home I notice there had been a party.",
+          "original_text": "When I arrived/got home I notice there had been a party.",
+          "editorial_number": 51
+        },
+        {
+          "source_id": "P12078",
+          "text": "52. There were many people waiting for that decision.",
+          "original_text": "There were many people waiting for that decision.",
+          "editorial_number": 52
+        },
+        {
+          "source_id": "P12079",
+          "text": "53. There have been many complaints because of that.",
+          "original_text": "There have been many complaints because of that.",
+          "editorial_number": 53
+        },
+        {
+          "source_id": "P12080",
+          "text": "54. There are many Brazilians living in Miami.",
+          "original_text": "There are many Brazilians living in Miami.",
+          "editorial_number": 54
+        },
+        {
+          "source_id": "P12081",
+          "text": "55. There were so many difficult exercises!",
+          "original_text": "There were so many difficult exercises!",
+          "editorial_number": 55
+        }
+      ],
+      "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
     }
   ],
   "terms": [],
   "coverage": {
     "imported_original_chapters": 0,
     "adaptation_pilot_chapters": 1,
-    "original_images_imported": 0,
-    "original_integral_mapping": "PENDING",
-    "notes": "Piloto editorial novo; não representa importação integral do capítulo original."
-  }
+    "original_images_imported": 1,
+    "original_integral_mapping": "PENDING_OTHER_CHAPTERS_AND_VISUAL_RECONSTRUCTION",
+    "notes": "Bloco textual EXISTENCE mapeado. Recomposição visual, caixas e mesclagens não homologadas. Não há tradução ES da fonte original.",
+    "original_existence_text_block": "P11776–P12083",
+    "original_existence_source_units": 33,
+    "original_existence_tables": 5,
+    "original_existence_reformulations": 25,
+    "original_existence_exercises": 55,
+    "original_existence_answers": 55
+  },
+  "editorial_issues": [
+    {
+      "id": "MVP:REVIEW:EX:001",
+      "source_ids": [
+        "P11807"
+      ],
+      "kind": "REGISTER",
+      "observation": "A afirmação sobre TER/HAVER em qualquer situação exige distinguir uso coloquial existencial de registro formal.",
+      "proposal": "Acrescentar nota de registro; preservar explicação autoral até revisão."
+    },
+    {
+      "id": "MVP:REVIEW:EX:002",
+      "source_ids": [
+        "P11917",
+        "P12029"
+      ],
+      "kind": "SEMANTIC_ALIGNMENT",
+      "observation": "Exercício 3 usa cervejas; resposta usa beer como incontável.",
+      "proposal": "Explicitar leitura de unidades/porções ou líquido e suas variantes."
+    },
+    {
+      "id": "MVP:REVIEW:EX:003",
+      "source_ids": [
+        "P11977",
+        "P12059"
+      ],
+      "kind": "QUANTIFIER",
+      "observation": "Resposta 33 contém less taxes.",
+      "proposal": "Revisar para fewer taxes ao contar impostos; less tax se a intenção for quantidade de imposto."
+    },
+    {
+      "id": "MVP:REVIEW:EX:004",
+      "source_ids": [
+        "P12013",
+        "P12077"
+      ],
+      "kind": "TENSE_AND_ORTHOGRAPHY",
+      "observation": "Resposta 51 contém I notice em narrativa passada.",
+      "proposal": "Revisar para I noticed."
+    },
+    {
+      "id": "MVP:REVIEW:EX:005",
+      "source_ids": [
+        "P12005",
+        "P12073"
+      ],
+      "kind": "MODAL_MEANING",
+      "observation": "Exercício 47 inclui poderemos; resposta usa can.",
+      "proposal": "Examinar intenção futura e possível forma will be able to."
+    },
+    {
+      "id": "MVP:REVIEW:EX:006",
+      "source_ids": [
+        "P11880",
+        "P11904"
+      ],
+      "kind": "TASK_CONTEXT",
+      "observation": "Algumas reformulações não preservam automaticamente posse, evento e existência.",
+      "proposal": "Acrescentar circunstância e resposta aceitável por item."
+    }
+  ]
 }

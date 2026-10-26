@@ -1,0 +1,3815 @@
+{
+  "id": "MVP:SOURCE:EXISTENCE",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "bounds": {
+    "first": "P11776",
+    "last": "P12083",
+    "next_heading": "P12084 MISCELANEOUS"
+  },
+  "paragraph_count": 308,
+  "paragraphs": [
+    {
+      "source_id": "P11776",
+      "xpath": "/w:document/w:body/w:p[1811]",
+      "text": "EXISTENCE",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11777",
+      "xpath": "/w:document/w:body/w:p[1812]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11778",
+      "xpath": "/w:document/w:body/w:p[1813]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11779",
+      "xpath": "/w:document/w:body/w:p[1814]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11780",
+      "xpath": "/w:document/w:body/w:p[1815]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11781",
+      "xpath": "/w:document/w:body/w:p[1816]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11782",
+      "xpath": "/w:document/w:body/w:p[1817]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11783",
+      "xpath": "/w:document/w:body/w:p[1818]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11784",
+      "xpath": "/w:document/w:body/w:p[1819]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11785",
+      "xpath": "/w:document/w:body/w:p[1820]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11786",
+      "xpath": "/w:document/w:body/w:p[1821]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11787",
+      "xpath": "/w:document/w:body/w:p[1822]",
+      "text": "EXISTENCEPrepositionsIndefinite PronounsEXISTENCEPrepositionsIndefinite Pronouns",
+      "style": "(default)",
+      "disposition": "TEXTBOX_ALTERNATE_WRAPPER",
+      "unit_ids": [],
+      "note": "Texto agregado de caixa com variantes Choice/Fallback; não repetir como parágrafo comum."
+    },
+    {
+      "source_id": "P11788",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11789",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[7]/wps:txbx/w:txbxContent/w:p",
+      "text": "EXISTENCE",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11790",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[8]/wps:txbx/w:txbxContent/w:p",
+      "text": "Prepositions",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11791",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[9]/wps:txbx/w:txbxContent/w:p",
+      "text": "Indefinite Pronouns",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11792",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11793",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "EXISTENCE",
+      "style": "(default)",
+      "disposition": "ALTERNATE_OR_REPEATED_REFERENCE",
+      "unit_ids": [],
+      "note": "Preservado no inventário; não repetir no leitor sem conferência visual da fonte."
+    },
+    {
+      "source_id": "P11794",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[3]/v:textbox/w:txbxContent/w:p",
+      "text": "Prepositions",
+      "style": "(default)",
+      "disposition": "ALTERNATE_OR_REPEATED_REFERENCE",
+      "unit_ids": [],
+      "note": "Preservado no inventário; não repetir no leitor sem conferência visual da fonte."
+    },
+    {
+      "source_id": "P11795",
+      "xpath": "/w:document/w:body/w:p[1822]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[4]/v:textbox/w:txbxContent/w:p",
+      "text": "Indefinite Pronouns",
+      "style": "(default)",
+      "disposition": "ALTERNATE_OR_REPEATED_REFERENCE",
+      "unit_ids": [],
+      "note": "Preservado no inventário; não repetir no leitor sem conferência visual da fonte."
+    },
+    {
+      "source_id": "P11796",
+      "xpath": "/w:document/w:body/w:p[1823]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11797",
+      "xpath": "/w:document/w:body/w:p[1824]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11798",
+      "xpath": "/w:document/w:body/w:p[1825]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11799",
+      "xpath": "/w:document/w:body/w:p[1826]",
+      "text": "COMPARE:",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11800",
+      "xpath": "/w:document/w:body/w:p[1827]",
+      "text": " VERB - Existence",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11801",
+      "xpath": "/w:document/w:body/w:p[1828]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11802",
+      "xpath": "/w:document/w:body/w:p[1829]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11803",
+      "xpath": "/w:document/w:body/w:p[1830]",
+      "text": "Tem (Há) um problema que precisamos resolver……..There is a problem.....",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11804",
+      "xpath": "/w:document/w:body/w:p[1831]",
+      "text": "Teve (Houve) festa na empresa ontem…..There was a party...",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11805",
+      "xpath": "/w:document/w:body/w:p[1832]",
+      "text": "Tinha (Havia) muita gente na festa…..There were many people...",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11806",
+      "xpath": "/w:document/w:body/w:p[1833]",
+      "text": "Terá (Haverá) reunião amanhã…There will be a meeting...",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11807",
+      "xpath": "/w:document/w:body/w:p[1834]",
+      "text": "Teve (Houve) festa aqui… olhe quanta sujeira!There has been a party.... Em português podemos utilizar os verbos TER e HAVER(existir) em qualquer situação.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11808",
+      "xpath": "/w:document/w:body/w:p[1835]",
+      "text": "Em inglês você não pode utilizar o verbo HAVE (ter) sem sujeito. Você deve utilizar a combinação “THERE + to be” para indicar o verbo “HAVER” . Ex.:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11809",
+      "xpath": "/w:document/w:body/w:p[1836]",
+      "text": "(errado) Has a problem..... (correto) There is a problem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11810",
+      "xpath": "/w:document/w:body/w:p[1837]",
+      "text": "I have a problem = Eu tenho (possuo) um problema There is a problem = Tem (há) um problemaTer (no sentido de possuir) = have Ter (no sentido de haver) = there + to beI have a problem = Eu tenho (possuo) um problema There is a problem = Tem (há) um problemaTer (no sentido de possuir) = have Ter (no sentido de haver) = there + to be",
+      "style": "(default)",
+      "disposition": "TEXTBOX_ALTERNATE_WRAPPER",
+      "unit_ids": [],
+      "note": "Texto agregado de caixa com variantes Choice/Fallback; não repetir como parágrafo comum."
+    },
+    {
+      "source_id": "P11811",
+      "xpath": "/w:document/w:body/w:p[1837]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[1]",
+      "text": "I have a problem = Eu tenho (possuo) um problema There is a problem = Tem (há) um problema",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11812",
+      "xpath": "/w:document/w:body/w:p[1837]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11813",
+      "xpath": "/w:document/w:body/w:p[1837]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[3]",
+      "text": "Ter (no sentido de possuir) = have Ter (no sentido de haver) = there + to be",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ]
+    },
+    {
+      "source_id": "P11814",
+      "xpath": "/w:document/w:body/w:p[1837]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[1]",
+      "text": "I have a problem = Eu tenho (possuo) um problema There is a problem = Tem (há) um problema",
+      "style": "(default)",
+      "disposition": "ALTERNATE_OR_REPEATED_REFERENCE",
+      "unit_ids": [],
+      "note": "Preservado no inventário; não repetir no leitor sem conferência visual da fonte."
+    },
+    {
+      "source_id": "P11815",
+      "xpath": "/w:document/w:body/w:p[1837]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11816",
+      "xpath": "/w:document/w:body/w:p[1837]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[3]",
+      "text": "Ter (no sentido de possuir) = have Ter (no sentido de haver) = there + to be",
+      "style": "(default)",
+      "disposition": "ALTERNATE_OR_REPEATED_REFERENCE",
+      "unit_ids": [],
+      "note": "Preservado no inventário; não repetir no leitor sem conferência visual da fonte."
+    },
+    {
+      "source_id": "P11817",
+      "xpath": "/w:document/w:body/w:p[1838]",
+      "text": "CONJUGANDO:",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11818",
+      "xpath": "/w:document/w:body/w:p[1839]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11819",
+      "xpath": "/w:document/w:body/w:p[1840]",
+      "text": "PRESENT",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11820",
+      "xpath": "/w:document/w:body/w:p[1841]",
+      "text": "THERE IS / THERE ARE",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11821",
+      "xpath": "/w:document/w:body/w:p[1842]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11822",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[1]/w:tc[1]/w:p",
+      "text": "AFFIRMATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11823",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[1]/w:tc[2]/w:p",
+      "text": "There Is",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11824",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[1]/w:tc[3]/w:p",
+      "text": "There Are",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11825",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[2]/w:tc[1]/w:p",
+      "text": "NEGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11826",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[2]/w:tc[2]/w:p",
+      "text": "There Is Not",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11827",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[2]/w:tc[3]/w:p",
+      "text": "There Are Not",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11828",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[3]/w:tc[1]/w:p",
+      "text": "INTERROGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11829",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[3]/w:tc[2]/w:p",
+      "text": "Is There Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11830",
+      "xpath": "/w:document/w:body/w:tbl[90]/w:tr[3]/w:tc[3]/w:p",
+      "text": "Are There Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001"
+      ]
+    },
+    {
+      "source_id": "P11831",
+      "xpath": "/w:document/w:body/w:p[1843]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11832",
+      "xpath": "/w:document/w:body/w:p[1844]",
+      "text": "PAST",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11833",
+      "xpath": "/w:document/w:body/w:p[1845]",
+      "text": "THERE WAS / THERE WERE",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11834",
+      "xpath": "/w:document/w:body/w:p[1846]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11835",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[1]/w:tc[1]/w:p",
+      "text": "AFFIRMATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11836",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[1]/w:tc[2]/w:p",
+      "text": "There Was",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11837",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[1]/w:tc[3]/w:p",
+      "text": "There Were",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11838",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[2]/w:tc[1]/w:p",
+      "text": "NEGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11839",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[2]/w:tc[2]/w:p",
+      "text": "There Was Not",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11840",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[2]/w:tc[3]/w:p",
+      "text": "There Were Not",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11841",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[3]/w:tc[1]/w:p",
+      "text": "INTERROGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11842",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[3]/w:tc[2]/w:p",
+      "text": "Was There Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11843",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[3]/w:tc[3]/w:p",
+      "text": "Were There Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11844",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[4]/w:tc[1]/w:p[1]",
+      "text": "FUTURE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11845",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[4]/w:tc[1]/w:p[2]",
+      "text": "THERE WILL BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11846",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[4]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11847",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[4]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11848",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[5]/w:tc[1]/w:p",
+      "text": "AFFIRMATIVE: NEGATIVE: INTERROGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11849",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[5]/w:tc[2]/w:p",
+      "text": "There Will Be There Will Not Be Will There Be Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11850",
+      "xpath": "/w:document/w:body/w:tbl[91]/w:tr[5]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002"
+      ]
+    },
+    {
+      "source_id": "P11851",
+      "xpath": "/w:document/w:body/w:p[1847]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11852",
+      "xpath": "/w:document/w:body/w:p[1848]",
+      "text": "PRESENT PERFECT",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11853",
+      "xpath": "/w:document/w:body/w:p[1849]",
+      "text": "THERE HAS BEEN / THERE HAVE BEEN",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11854",
+      "xpath": "/w:document/w:body/w:p[1850]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11855",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[1]/w:tc[1]/w:p",
+      "text": "AFFIRMATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11856",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[1]/w:tc[2]/w:p",
+      "text": "There Has Been",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11857",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[1]/w:tc[3]/w:p",
+      "text": "There Have Been",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11858",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[2]/w:tc[1]/w:p",
+      "text": "NEGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11859",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[2]/w:tc[2]/w:p",
+      "text": "There Has Not Been",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11860",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[2]/w:tc[3]/w:p",
+      "text": "There Have Not Been",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11861",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[3]/w:tc[1]/w:p",
+      "text": "INTERROGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11862",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[3]/w:tc[2]/w:p",
+      "text": "Has There Been Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11863",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[3]/w:tc[3]/w:p",
+      "text": "Have There Been Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11864",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[4]/w:tc[1]/w:p",
+      "text": "PAST PERFECT THERE HAD BEEN",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11865",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[4]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11866",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[4]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11867",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[5]/w:tc[1]/w:p[1]",
+      "text": "AFFIRMATIVE: NEGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11868",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[5]/w:tc[1]/w:p[2]",
+      "text": "INTERROGATIVE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11869",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[5]/w:tc[2]/w:p[1]",
+      "text": "There Had Been There Had Not Been",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11870",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[5]/w:tc[2]/w:p[2]",
+      "text": "Had There Been Any?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11871",
+      "xpath": "/w:document/w:body/w:tbl[92]/w:tr[5]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003"
+      ]
+    },
+    {
+      "source_id": "P11872",
+      "xpath": "/w:document/w:body/w:p[1851]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11873",
+      "xpath": "/w:document/w:body/w:p[1852]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11874",
+      "xpath": "/w:document/w:body/w:p[1853]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11875",
+      "xpath": "/w:document/w:body/w:p[1854]",
+      "text": "Use the correct form:",
+      "style": "Ttulo6",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11876",
+      "xpath": "/w:document/w:body/w:p[1855]",
+      "text": "VERB - Existence",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11877",
+      "xpath": "/w:document/w:body/w:p[1856]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11878",
+      "xpath": "/w:document/w:body/w:p[1857]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11879",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[1]/w:tc/w:p",
+      "text": "We have two chairs  in this room.There are two chairs in this room.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATION-MODEL:001"
+      ]
+    },
+    {
+      "source_id": "P11880",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[2]/w:tc/w:p",
+      "text": "1. We don’t have any chairs in this room.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001"
+      ]
+    },
+    {
+      "source_id": "P11881",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[3]/w:tc/w:p",
+      "text": "2. He made only one mistake in spelling.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001"
+      ]
+    },
+    {
+      "source_id": "P11882",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[4]/w:tc/w:p",
+      "text": "3. He didn’t make mistakes in spelling.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001"
+      ]
+    },
+    {
+      "source_id": "P11883",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[5]/w:tc/w:p",
+      "text": "4. She didn’t buy flowers for the living room.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001"
+      ]
+    },
+    {
+      "source_id": "P11884",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[6]/w:tc/w:p",
+      "text": "5. A hundred people were invited to the party. Only fifty went.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001"
+      ]
+    },
+    {
+      "source_id": "P11885",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[7]/w:tc/w:p",
+      "text": "6. He didn’t have any good news to tell us.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002"
+      ]
+    },
+    {
+      "source_id": "P11886",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[8]/w:tc/w:p",
+      "text": "7. I bought milk.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002"
+      ]
+    },
+    {
+      "source_id": "P11887",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[9]/w:tc/w:p",
+      "text": "8. I didn’t buy bread.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002"
+      ]
+    },
+    {
+      "source_id": "P11888",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[10]/w:tc/w:p",
+      "text": "9. A dog is barking outside.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002"
+      ]
+    },
+    {
+      "source_id": "P11889",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[11]/w:tc/w:p",
+      "text": "10. I have never had problems with my car.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002"
+      ]
+    },
+    {
+      "source_id": "P11890",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[12]/w:tc/w:p",
+      "text": "11. I didn’t find any eggs.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003"
+      ]
+    },
+    {
+      "source_id": "P11891",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[13]/w:tc/w:p",
+      "text": "12. I have a problem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003"
+      ]
+    },
+    {
+      "source_id": "P11892",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[14]/w:tc/w:p",
+      "text": "13. I can’t see anybody outside.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003"
+      ]
+    },
+    {
+      "source_id": "P11893",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[15]/w:tc/w:p",
+      "text": "14. The place was empty.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003"
+      ]
+    },
+    {
+      "source_id": "P11894",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[16]/w:tc/w:p",
+      "text": "15. The exhibition didn’t happen.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003"
+      ]
+    },
+    {
+      "source_id": "P11895",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[17]/w:tc/w:p",
+      "text": "16. It looks like somebody had a party here.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004"
+      ]
+    },
+    {
+      "source_id": "P11896",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[18]/w:tc/w:p",
+      "text": "17. An accident happened there.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004"
+      ]
+    },
+    {
+      "source_id": "P11897",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[19]/w:tc/w:p",
+      "text": "18. Many people are there.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004"
+      ]
+    },
+    {
+      "source_id": "P11898",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[20]/w:tc/w:p",
+      "text": "19. I saw an old fashioned car at the automobile exhibition.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004"
+      ]
+    },
+    {
+      "source_id": "P11899",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[21]/w:tc/w:p",
+      "text": "20. I don’t have any messages for you.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004"
+      ]
+    },
+    {
+      "source_id": "P11900",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[22]/w:tc/w:p",
+      "text": "21. I need to buy some more sugar. The sugar bowl is empty.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+      ]
+    },
+    {
+      "source_id": "P11901",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[23]/w:tc/w:p",
+      "text": "22. London has many beautiful places.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+      ]
+    },
+    {
+      "source_id": "P11902",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[24]/w:tc/w:p",
+      "text": "23. We have three holidays in September.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+      ]
+    },
+    {
+      "source_id": "P11903",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[25]/w:tc/w:p",
+      "text": "24. We will have no holidays in August.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+      ]
+    },
+    {
+      "source_id": "P11904",
+      "xpath": "/w:document/w:body/w:tbl[93]/w:tr[26]/w:tc/w:p",
+      "text": "25. We should have a big commemoration for this.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005"
+      ]
+    },
+    {
+      "source_id": "P11905",
+      "xpath": "/w:document/w:body/w:p[1858]",
+      "text": "Indefinite Pronouns PrepositionsIndefinite Pronouns Prepositions",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:FIGURE:001"
+      ]
+    },
+    {
+      "source_id": "P11906",
+      "xpath": "/w:document/w:body/w:p[1858]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11907",
+      "xpath": "/w:document/w:body/w:p[1858]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p",
+      "text": "Indefinite Pronouns Prepositions",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11908",
+      "xpath": "/w:document/w:body/w:p[1858]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11909",
+      "xpath": "/w:document/w:body/w:p[1858]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "Indefinite Pronouns Prepositions",
+      "style": "(default)",
+      "disposition": "ALTERNATE_OR_REPEATED_REFERENCE",
+      "unit_ids": [],
+      "note": "Preservado no inventário; não repetir no leitor sem conferência visual da fonte."
+    },
+    {
+      "source_id": "P11910",
+      "xpath": "/w:document/w:body/w:p[1859]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11911",
+      "xpath": "/w:document/w:body/w:p[1860]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11912",
+      "xpath": "/w:document/w:body/w:p[1861]",
+      "text": "EXERCISES - EXISTENCE",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11913",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[1]/w:tc[1]/w:p",
+      "text": "1. Tem (Há) cervejas na geladeira?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001"
+      ]
+    },
+    {
+      "source_id": "P11914",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[1]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11915",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[2]/w:tc[1]/w:p",
+      "text": "2. Eu tenho 10 latas de cerveja na geladeira.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001"
+      ]
+    },
+    {
+      "source_id": "P11916",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[2]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11917",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[3]/w:tc[1]/w:p",
+      "text": "3. Tem (Há) cervejas na geladeira.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001"
+      ]
+    },
+    {
+      "source_id": "P11918",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[3]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11919",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[4]/w:tc[1]/w:p",
+      "text": "4. Não temos cervejas.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001"
+      ]
+    },
+    {
+      "source_id": "P11920",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[4]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11921",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[5]/w:tc[1]/w:p",
+      "text": "5. Tem (Há) recado pra mim?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001"
+      ]
+    },
+    {
+      "source_id": "P11922",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[5]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11923",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[6]/w:tc[1]/w:p",
+      "text": "6. Tem (Há) um recado para você.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002"
+      ]
+    },
+    {
+      "source_id": "P11924",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[6]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11925",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[7]/w:tc[1]/w:p",
+      "text": "7. Tem (Há) açúcar neste café?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002"
+      ]
+    },
+    {
+      "source_id": "P11926",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[7]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11927",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[8]/w:tc[1]/w:p",
+      "text": "8. Não temos mais açúcar.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002"
+      ]
+    },
+    {
+      "source_id": "P11928",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[8]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11929",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[9]/w:tc[1]/w:p",
+      "text": "9. Tem (Há) recados para mim?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002"
+      ]
+    },
+    {
+      "source_id": "P11930",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[9]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11931",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[10]/w:tc[1]/w:p",
+      "text": "10. Tem (Há) algum problema?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002"
+      ]
+    },
+    {
+      "source_id": "P11932",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[10]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11933",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[11]/w:tc[1]/w:p",
+      "text": "11. Eu tenho um problema.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003"
+      ]
+    },
+    {
+      "source_id": "P11934",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[11]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11935",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[12]/w:tc[1]/w:p",
+      "text": "12. Tinha (Havia) muita gente na festa?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003"
+      ]
+    },
+    {
+      "source_id": "P11936",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[12]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11937",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[13]/w:tc[1]/w:p",
+      "text": "13. Havia apenas 30 pessoas na festa.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003"
+      ]
+    },
+    {
+      "source_id": "P11938",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[13]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11939",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[14]/w:tc[1]/w:p",
+      "text": "14. Tem (Há) alguém aí?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003"
+      ]
+    },
+    {
+      "source_id": "P11940",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[14]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11941",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[15]/w:tc[1]/w:p",
+      "text": "15. Não há ninguém aqui.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003"
+      ]
+    },
+    {
+      "source_id": "P11942",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[15]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11943",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[16]/w:tc[1]/w:p",
+      "text": "16. Tem (Há) muita gente lá fora?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004"
+      ]
+    },
+    {
+      "source_id": "P11944",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[16]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11945",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[17]/w:tc[1]/w:p",
+      "text": "17. Tem (Há) festa hoje?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004"
+      ]
+    },
+    {
+      "source_id": "P11946",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[17]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11947",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[18]/w:tc[1]/w:p",
+      "text": "18. Há várias pessoas lá fora.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004"
+      ]
+    },
+    {
+      "source_id": "P11948",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[18]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11949",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[19]/w:tc[1]/w:p",
+      "text": "19. Tem (Há) festa amanhã?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004"
+      ]
+    },
+    {
+      "source_id": "P11950",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[19]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11951",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[20]/w:tc[1]/w:p",
+      "text": "20. Eu tenho festa em casa hoje á noite.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004"
+      ]
+    },
+    {
+      "source_id": "P11952",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[20]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11953",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[21]/w:tc[1]/w:p",
+      "text": "21. Teve (Houve) festa ontem?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005"
+      ]
+    },
+    {
+      "source_id": "P11954",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[21]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11955",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[22]/w:tc[1]/w:p",
+      "text": "22. Teve (Houve) festa aqui?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005"
+      ]
+    },
+    {
+      "source_id": "P11956",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[22]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11957",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[23]/w:tc[1]/w:p",
+      "text": "23. Tem (Há) alguma coisa errada?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005"
+      ]
+    },
+    {
+      "source_id": "P11958",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[23]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11959",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[24]/w:tc[1]/w:p",
+      "text": "24. Tem (Há) alguém me chamando?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005"
+      ]
+    },
+    {
+      "source_id": "P11960",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[24]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11961",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[25]/w:tc[1]/w:p",
+      "text": "25. Tem (Há) alguém me esperando?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005"
+      ]
+    },
+    {
+      "source_id": "P11962",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[25]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11963",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[26]/w:tc[1]/w:p",
+      "text": "26. Tem (Há) algum papel que eu possa usar?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006"
+      ]
+    },
+    {
+      "source_id": "P11964",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[26]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11965",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[27]/w:tc[1]/w:p",
+      "text": "27. Tem (Há) algo que eu possa fazer por você?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006"
+      ]
+    },
+    {
+      "source_id": "P11966",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[27]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11967",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[28]/w:tc[1]/w:p",
+      "text": "28. Tem (Há) algo que eu posso fazer por você.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006"
+      ]
+    },
+    {
+      "source_id": "P11968",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[28]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11969",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[29]/w:tc[1]/w:p",
+      "text": "29. Tem (Há) algo que eu precise saber?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006"
+      ]
+    },
+    {
+      "source_id": "P11970",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[29]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11971",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[30]/w:tc[1]/w:p",
+      "text": "30. Existe algo que você precisa saber.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006"
+      ]
+    },
+    {
+      "source_id": "P11972",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[30]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11973",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[31]/w:tc[1]/w:p",
+      "text": "31. Tem (Haverá) algum problema se eu fizer isso?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007"
+      ]
+    },
+    {
+      "source_id": "P11974",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[31]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11975",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[32]/w:tc[1]/w:p",
+      "text": "32. Teria (Haveria) algum problema se eu fizesse isso?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007"
+      ]
+    },
+    {
+      "source_id": "P11976",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[32]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11977",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[33]/w:tc[1]/w:p",
+      "text": "33. Deveria haver menos impostos para as pequenas empresas.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007"
+      ]
+    },
+    {
+      "source_id": "P11978",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[33]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11979",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[34]/w:tc[1]/w:p",
+      "text": "34. Poderá haver conflitos se os dois países não chegarem a um acordo.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007"
+      ]
+    },
+    {
+      "source_id": "P11980",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[34]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11981",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[35]/w:tc[1]/w:p",
+      "text": "35. Essa máquina tem muitos problemas.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007"
+      ]
+    },
+    {
+      "source_id": "P11982",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[35]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11983",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[36]/w:tc[1]/w:p",
+      "text": "36. Tem (Há) alguma coisa que eu possa fazer para ajudá-la?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008"
+      ]
+    },
+    {
+      "source_id": "P11984",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[36]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11985",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[37]/w:tc[1]/w:p",
+      "text": "37. Tem que (Há de) haver uma solução para esse problema.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008"
+      ]
+    },
+    {
+      "source_id": "P11986",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[37]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11987",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[38]/w:tc[1]/w:p",
+      "text": "38. Haverá reunião amanhã?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008"
+      ]
+    },
+    {
+      "source_id": "P11988",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[38]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11989",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[39]/w:tc[1]/w:p",
+      "text": "39. Terá (Haverá) alguém esperando por mim no aeroporto?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008"
+      ]
+    },
+    {
+      "source_id": "P11990",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[39]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11991",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[40]/w:tc[1]/w:p",
+      "text": "40. Teve (Houve) alguém aqui?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008"
+      ]
+    },
+    {
+      "source_id": "P11992",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[40]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11993",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[41]/w:tc[1]/w:p",
+      "text": "41. Teve (Houve) festa aqui?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009"
+      ]
+    },
+    {
+      "source_id": "P11994",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[41]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11995",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[42]/w:tc[1]/w:p",
+      "text": "42. Terá (Haverá) alguma multa?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009"
+      ]
+    },
+    {
+      "source_id": "P11996",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[42]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11997",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[43]/w:tc[1]/w:p",
+      "text": "43. Quantas pessoas havia na reunião?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009"
+      ]
+    },
+    {
+      "source_id": "P11998",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[43]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P11999",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[44]/w:tc[1]/w:p",
+      "text": "44. Eu tive um acidente no mês passado.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009"
+      ]
+    },
+    {
+      "source_id": "P12000",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[44]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12001",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[45]/w:tc[1]/w:p",
+      "text": "45. Tem (Há) algo que eu possa fazer?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009"
+      ]
+    },
+    {
+      "source_id": "P12002",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[45]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12003",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[46]/w:tc[1]/w:p",
+      "text": "46. Tem (Há) algo que ele pode fazer por nós.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010"
+      ]
+    },
+    {
+      "source_id": "P12004",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[46]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12005",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[47]/w:tc[1]/w:p",
+      "text": "47. Tem (Há) alguma coisa que poderemos fazer por ele.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010"
+      ]
+    },
+    {
+      "source_id": "P12006",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[47]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12007",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[48]/w:tc[1]/w:p",
+      "text": "48. Tem (Há) algo que possamos fazer por eles?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010"
+      ]
+    },
+    {
+      "source_id": "P12008",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[48]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12009",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[49]/w:tc[1]/w:p",
+      "text": "49. Tem que (Há de) haver alguma outra alternativa.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010"
+      ]
+    },
+    {
+      "source_id": "P12010",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[49]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12011",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[50]/w:tc[1]/w:p",
+      "text": "50. Tem que ter (haver) cerveja na geladeira ainda! Nós compramos ontem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010"
+      ]
+    },
+    {
+      "source_id": "P12012",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[50]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12013",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[51]/w:tc[1]/w:p",
+      "text": "51. Quando cheguei em casa percebi que tinha havido uma festa.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+      ]
+    },
+    {
+      "source_id": "P12014",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[51]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12015",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[52]/w:tc[1]/w:p",
+      "text": "52. Havia muitas pessoas esperando por aquela decisão.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+      ]
+    },
+    {
+      "source_id": "P12016",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[52]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12017",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[53]/w:tc[1]/w:p",
+      "text": "53. Tem havido muitas reclamações por causa disso.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+      ]
+    },
+    {
+      "source_id": "P12018",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[53]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12019",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[54]/w:tc[1]/w:p",
+      "text": "54. Há muitos brasileiros morando em Miami.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+      ]
+    },
+    {
+      "source_id": "P12020",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[54]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12021",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[55]/w:tc[1]/w:p",
+      "text": "55. Havia tantos exercícios difíceis!",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+      ]
+    },
+    {
+      "source_id": "P12022",
+      "xpath": "/w:document/w:body/w:tbl[94]/w:tr[55]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12023",
+      "xpath": "/w:document/w:body/w:p[1862]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12024",
+      "xpath": "/w:document/w:body/w:p[1863]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12025",
+      "xpath": "/w:document/w:body/w:p[1864]",
+      "text": "ANSWERS FOR THE PREVIOUS EXERCISES",
+      "style": "(default)",
+      "disposition": "HEADING_OR_NAVIGATION_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12026",
+      "xpath": "/w:document/w:body/w:p[1865]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12027",
+      "xpath": "/w:document/w:body/w:p[1866]",
+      "text": "Are there any beers in the fridge/refrigerator?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001"
+      ]
+    },
+    {
+      "source_id": "P12028",
+      "xpath": "/w:document/w:body/w:p[1867]",
+      "text": "I have ten cans of beer in the fridge/refrigerator.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001"
+      ]
+    },
+    {
+      "source_id": "P12029",
+      "xpath": "/w:document/w:body/w:p[1868]",
+      "text": "There is beer in the fridge.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001"
+      ]
+    },
+    {
+      "source_id": "P12030",
+      "xpath": "/w:document/w:body/w:p[1869]",
+      "text": "We don’t have any beers.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001"
+      ]
+    },
+    {
+      "source_id": "P12031",
+      "xpath": "/w:document/w:body/w:p[1870]",
+      "text": "Is there any message for me?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001"
+      ]
+    },
+    {
+      "source_id": "P12032",
+      "xpath": "/w:document/w:body/w:p[1871]",
+      "text": "There is a message for you.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002"
+      ]
+    },
+    {
+      "source_id": "P12033",
+      "xpath": "/w:document/w:body/w:p[1872]",
+      "text": "Is there any sugar in this coffee?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002"
+      ]
+    },
+    {
+      "source_id": "P12034",
+      "xpath": "/w:document/w:body/w:p[1873]",
+      "text": "We don’t have any more sugar.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002"
+      ]
+    },
+    {
+      "source_id": "P12035",
+      "xpath": "/w:document/w:body/w:p[1874]",
+      "text": "Are there messages for me?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002"
+      ]
+    },
+    {
+      "source_id": "P12036",
+      "xpath": "/w:document/w:body/w:p[1875]",
+      "text": "Is there any problem?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002"
+      ]
+    },
+    {
+      "source_id": "P12037",
+      "xpath": "/w:document/w:body/w:p[1876]",
+      "text": "I have a problem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003"
+      ]
+    },
+    {
+      "source_id": "P12038",
+      "xpath": "/w:document/w:body/w:p[1877]",
+      "text": "Were there many people at the party?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003"
+      ]
+    },
+    {
+      "source_id": "P12039",
+      "xpath": "/w:document/w:body/w:p[1878]",
+      "text": "There were only 30 people at the party.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003"
+      ]
+    },
+    {
+      "source_id": "P12040",
+      "xpath": "/w:document/w:body/w:p[1879]",
+      "text": "Is there anybody there?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003"
+      ]
+    },
+    {
+      "source_id": "P12041",
+      "xpath": "/w:document/w:body/w:p[1880]",
+      "text": "There is nobody here. / There isn’t anybody here.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003"
+      ]
+    },
+    {
+      "source_id": "P12042",
+      "xpath": "/w:document/w:body/w:p[1881]",
+      "text": "Are there many people outside?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004"
+      ]
+    },
+    {
+      "source_id": "P12043",
+      "xpath": "/w:document/w:body/w:p[1882]",
+      "text": "Is there a party today?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004"
+      ]
+    },
+    {
+      "source_id": "P12044",
+      "xpath": "/w:document/w:body/w:p[1883]",
+      "text": "There are many people outside there.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004"
+      ]
+    },
+    {
+      "source_id": "P12045",
+      "xpath": "/w:document/w:body/w:p[1884]",
+      "text": "Will there be a party tomorrow?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004"
+      ]
+    },
+    {
+      "source_id": "P12046",
+      "xpath": "/w:document/w:body/w:p[1885]",
+      "text": "I will have a party at home tonight.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004"
+      ]
+    },
+    {
+      "source_id": "P12047",
+      "xpath": "/w:document/w:body/w:p[1886]",
+      "text": "Was there a party yesterday?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005"
+      ]
+    },
+    {
+      "source_id": "P12048",
+      "xpath": "/w:document/w:body/w:p[1887]",
+      "text": "Has there been a party here?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005"
+      ]
+    },
+    {
+      "source_id": "P12049",
+      "xpath": "/w:document/w:body/w:p[1888]",
+      "text": "Is there anything wrong?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005"
+      ]
+    },
+    {
+      "source_id": "P12050",
+      "xpath": "/w:document/w:body/w:p[1889]",
+      "text": "Is there anybody calling me?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005"
+      ]
+    },
+    {
+      "source_id": "P12051",
+      "xpath": "/w:document/w:body/w:p[1890]",
+      "text": "Is there anybody waiting for me?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005"
+      ]
+    },
+    {
+      "source_id": "P12052",
+      "xpath": "/w:document/w:body/w:p[1891]",
+      "text": "Is there any paper I can use?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006"
+      ]
+    },
+    {
+      "source_id": "P12053",
+      "xpath": "/w:document/w:body/w:p[1892]",
+      "text": "Is there anything I can do for you?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006"
+      ]
+    },
+    {
+      "source_id": "P12054",
+      "xpath": "/w:document/w:body/w:p[1893]",
+      "text": "There is something I can do for you.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006"
+      ]
+    },
+    {
+      "source_id": "P12055",
+      "xpath": "/w:document/w:body/w:p[1894]",
+      "text": "Is there anything I need to know?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006"
+      ]
+    },
+    {
+      "source_id": "P12056",
+      "xpath": "/w:document/w:body/w:p[1895]",
+      "text": "There is something you need to know.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006"
+      ]
+    },
+    {
+      "source_id": "P12057",
+      "xpath": "/w:document/w:body/w:p[1896]",
+      "text": "Is there a problem if I do that?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007"
+      ]
+    },
+    {
+      "source_id": "P12058",
+      "xpath": "/w:document/w:body/w:p[1897]",
+      "text": "Would there be a problem if I did that?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007"
+      ]
+    },
+    {
+      "source_id": "P12059",
+      "xpath": "/w:document/w:body/w:p[1898]",
+      "text": "There should be less taxes for the small companies.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007"
+      ]
+    },
+    {
+      "source_id": "P12060",
+      "xpath": "/w:document/w:body/w:p[1899]",
+      "text": "There might be conflicts if the two countries don’t come to an agreement.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007"
+      ]
+    },
+    {
+      "source_id": "P12061",
+      "xpath": "/w:document/w:body/w:p[1900]",
+      "text": "That machine has many problems.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007"
+      ]
+    },
+    {
+      "source_id": "P12062",
+      "xpath": "/w:document/w:body/w:p[1901]",
+      "text": "Is there anything I can do to help her?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008"
+      ]
+    },
+    {
+      "source_id": "P12063",
+      "xpath": "/w:document/w:body/w:p[1902]",
+      "text": "There must be/has to be a solution to this problem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008"
+      ]
+    },
+    {
+      "source_id": "P12064",
+      "xpath": "/w:document/w:body/w:p[1903]",
+      "text": "Will there be a meeting tomorrow?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008"
+      ]
+    },
+    {
+      "source_id": "P12065",
+      "xpath": "/w:document/w:body/w:p[1904]",
+      "text": "Will there be anyone/anybody waiting for me at the airport?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008"
+      ]
+    },
+    {
+      "source_id": "P12066",
+      "xpath": "/w:document/w:body/w:p[1905]",
+      "text": "Has there been anybody here?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008"
+      ]
+    },
+    {
+      "source_id": "P12067",
+      "xpath": "/w:document/w:body/w:p[1906]",
+      "text": "Has there been a party here?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009"
+      ]
+    },
+    {
+      "source_id": "P12068",
+      "xpath": "/w:document/w:body/w:p[1907]",
+      "text": "Will there be any fine/ticket?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009"
+      ]
+    },
+    {
+      "source_id": "P12069",
+      "xpath": "/w:document/w:body/w:p[1908]",
+      "text": "How many people were there at the meeting?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009"
+      ]
+    },
+    {
+      "source_id": "P12070",
+      "xpath": "/w:document/w:body/w:p[1909]",
+      "text": "I had an accident last month.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009"
+      ]
+    },
+    {
+      "source_id": "P12071",
+      "xpath": "/w:document/w:body/w:p[1910]",
+      "text": "Is there anything I can do?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009"
+      ]
+    },
+    {
+      "source_id": "P12072",
+      "xpath": "/w:document/w:body/w:p[1911]",
+      "text": "There is something he can do for us.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010"
+      ]
+    },
+    {
+      "source_id": "P12073",
+      "xpath": "/w:document/w:body/w:p[1912]",
+      "text": "There is something we can do for him.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010"
+      ]
+    },
+    {
+      "source_id": "P12074",
+      "xpath": "/w:document/w:body/w:p[1913]",
+      "text": "Is there anything we can do for them?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010"
+      ]
+    },
+    {
+      "source_id": "P12075",
+      "xpath": "/w:document/w:body/w:p[1914]",
+      "text": "There must be/has to be another alternative/option.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010"
+      ]
+    },
+    {
+      "source_id": "P12076",
+      "xpath": "/w:document/w:body/w:p[1915]",
+      "text": "There still has to be beer in the fridge! We bought some yesterday.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010"
+      ]
+    },
+    {
+      "source_id": "P12077",
+      "xpath": "/w:document/w:body/w:p[1916]",
+      "text": "When I arrived/got home I notice there had been a party.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+      ]
+    },
+    {
+      "source_id": "P12078",
+      "xpath": "/w:document/w:body/w:p[1917]",
+      "text": "There were many people waiting for that decision.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+      ]
+    },
+    {
+      "source_id": "P12079",
+      "xpath": "/w:document/w:body/w:p[1918]",
+      "text": "There have been many complaints because of that.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+      ]
+    },
+    {
+      "source_id": "P12080",
+      "xpath": "/w:document/w:body/w:p[1919]",
+      "text": "There are many Brazilians living in Miami.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+      ]
+    },
+    {
+      "source_id": "P12081",
+      "xpath": "/w:document/w:body/w:p[1920]",
+      "text": "There were so many difficult exercises!",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+      ]
+    },
+    {
+      "source_id": "P12082",
+      "xpath": "/w:document/w:body/w:p[1921]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P12083",
+      "xpath": "/w:document/w:body/w:p[1922]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    }
+  ],
+  "tables": [
+    {
+      "id": "T0090",
+      "xpath": "/w:document/w:body/w:tbl[90]",
+      "rows": 3,
+      "grid_columns": 3,
+      "cells": [
+        [
+          "AFFIRMATIVE:",
+          "There Is",
+          "There Are"
+        ],
+        [
+          "NEGATIVE:",
+          "There Is Not",
+          "There Are Not"
+        ],
+        [
+          "INTERROGATIVE:",
+          "Is There Any?",
+          "Are There Any?"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"afffff8\"/><w:tblW w:w=\"6331\" w:type=\"dxa\"/><w:tblInd w:w=\"858\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0091",
+      "xpath": "/w:document/w:body/w:tbl[91]",
+      "rows": 5,
+      "grid_columns": 3,
+      "cells": [
+        [
+          "AFFIRMATIVE:",
+          "There Was",
+          "There Were"
+        ],
+        [
+          "NEGATIVE:",
+          "There Was Not",
+          "There Were Not"
+        ],
+        [
+          "INTERROGATIVE:",
+          "Was There Any?",
+          "Were There Any?"
+        ],
+        [
+          "FUTURETHERE WILL BE",
+          "",
+          ""
+        ],
+        [
+          "AFFIRMATIVE: NEGATIVE: INTERROGATIVE:",
+          "There Will Be There Will Not Be Will There Be Any?",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"afffff9\"/><w:tblW w:w=\"6461\" w:type=\"dxa\"/><w:tblInd w:w=\"858\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0092",
+      "xpath": "/w:document/w:body/w:tbl[92]",
+      "rows": 5,
+      "grid_columns": 3,
+      "cells": [
+        [
+          "AFFIRMATIVE:",
+          "There Has Been",
+          "There Have Been"
+        ],
+        [
+          "NEGATIVE:",
+          "There Has Not Been",
+          "There Have Not Been"
+        ],
+        [
+          "INTERROGATIVE:",
+          "Has There Been Any?",
+          "Have There Been Any?"
+        ],
+        [
+          "PAST PERFECT THERE HAD BEEN",
+          "",
+          ""
+        ],
+        [
+          "AFFIRMATIVE: NEGATIVE:INTERROGATIVE:",
+          "There Had Been There Had Not BeenHad There Been Any?",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"afffffa\"/><w:tblW w:w=\"6912\" w:type=\"dxa\"/><w:tblInd w:w=\"858\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0093",
+      "xpath": "/w:document/w:body/w:tbl[93]",
+      "rows": 26,
+      "grid_columns": 1,
+      "cells": [
+        [
+          "We have two chairs  in this room.There are two chairs in this room."
+        ],
+        [
+          "1. We don’t have any chairs in this room."
+        ],
+        [
+          "2. He made only one mistake in spelling."
+        ],
+        [
+          "3. He didn’t make mistakes in spelling."
+        ],
+        [
+          "4. She didn’t buy flowers for the living room."
+        ],
+        [
+          "5. A hundred people were invited to the party. Only fifty went."
+        ],
+        [
+          "6. He didn’t have any good news to tell us."
+        ],
+        [
+          "7. I bought milk."
+        ],
+        [
+          "8. I didn’t buy bread."
+        ],
+        [
+          "9. A dog is barking outside."
+        ],
+        [
+          "10. I have never had problems with my car."
+        ],
+        [
+          "11. I didn’t find any eggs."
+        ],
+        [
+          "12. I have a problem."
+        ],
+        [
+          "13. I can’t see anybody outside."
+        ],
+        [
+          "14. The place was empty."
+        ],
+        [
+          "15. The exhibition didn’t happen."
+        ],
+        [
+          "16. It looks like somebody had a party here."
+        ],
+        [
+          "17. An accident happened there."
+        ],
+        [
+          "18. Many people are there."
+        ],
+        [
+          "19. I saw an old fashioned car at the automobile exhibition."
+        ],
+        [
+          "20. I don’t have any messages for you."
+        ],
+        [
+          "21. I need to buy some more sugar. The sugar bowl is empty."
+        ],
+        [
+          "22. London has many beautiful places."
+        ],
+        [
+          "23. We have three holidays in September."
+        ],
+        [
+          "24. We will have no holidays in August."
+        ],
+        [
+          "25. We should have a big commemoration for this."
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"afffffb\"/><w:tblW w:w=\"9928\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0094",
+      "xpath": "/w:document/w:body/w:tbl[94]",
+      "rows": 55,
+      "grid_columns": 2,
+      "cells": [
+        [
+          "1. Tem (Há) cervejas na geladeira?",
+          ""
+        ],
+        [
+          "2. Eu tenho 10 latas de cerveja na geladeira.",
+          ""
+        ],
+        [
+          "3. Tem (Há) cervejas na geladeira.",
+          ""
+        ],
+        [
+          "4. Não temos cervejas.",
+          ""
+        ],
+        [
+          "5. Tem (Há) recado pra mim?",
+          ""
+        ],
+        [
+          "6. Tem (Há) um recado para você.",
+          ""
+        ],
+        [
+          "7. Tem (Há) açúcar neste café?",
+          ""
+        ],
+        [
+          "8. Não temos mais açúcar.",
+          ""
+        ],
+        [
+          "9. Tem (Há) recados para mim?",
+          ""
+        ],
+        [
+          "10. Tem (Há) algum problema?",
+          ""
+        ],
+        [
+          "11. Eu tenho um problema.",
+          ""
+        ],
+        [
+          "12. Tinha (Havia) muita gente na festa?",
+          ""
+        ],
+        [
+          "13. Havia apenas 30 pessoas na festa.",
+          ""
+        ],
+        [
+          "14. Tem (Há) alguém aí?",
+          ""
+        ],
+        [
+          "15. Não há ninguém aqui.",
+          ""
+        ],
+        [
+          "16. Tem (Há) muita gente lá fora?",
+          ""
+        ],
+        [
+          "17. Tem (Há) festa hoje?",
+          ""
+        ],
+        [
+          "18. Há várias pessoas lá fora.",
+          ""
+        ],
+        [
+          "19. Tem (Há) festa amanhã?",
+          ""
+        ],
+        [
+          "20. Eu tenho festa em casa hoje á noite.",
+          ""
+        ],
+        [
+          "21. Teve (Houve) festa ontem?",
+          ""
+        ],
+        [
+          "22. Teve (Houve) festa aqui?",
+          ""
+        ],
+        [
+          "23. Tem (Há) alguma coisa errada?",
+          ""
+        ],
+        [
+          "24. Tem (Há) alguém me chamando?",
+          ""
+        ],
+        [
+          "25. Tem (Há) alguém me esperando?",
+          ""
+        ],
+        [
+          "26. Tem (Há) algum papel que eu possa usar?",
+          ""
+        ],
+        [
+          "27. Tem (Há) algo que eu possa fazer por você?",
+          ""
+        ],
+        [
+          "28. Tem (Há) algo que eu posso fazer por você.",
+          ""
+        ],
+        [
+          "29. Tem (Há) algo que eu precise saber?",
+          ""
+        ],
+        [
+          "30. Existe algo que você precisa saber.",
+          ""
+        ],
+        [
+          "31. Tem (Haverá) algum problema se eu fizer isso?",
+          ""
+        ],
+        [
+          "32. Teria (Haveria) algum problema se eu fizesse isso?",
+          ""
+        ],
+        [
+          "33. Deveria haver menos impostos para as pequenas empresas.",
+          ""
+        ],
+        [
+          "34. Poderá haver conflitos se os dois países não chegarem a um acordo.",
+          ""
+        ],
+        [
+          "35. Essa máquina tem muitos problemas.",
+          ""
+        ],
+        [
+          "36. Tem (Há) alguma coisa que eu possa fazer para ajudá-la?",
+          ""
+        ],
+        [
+          "37. Tem que (Há de) haver uma solução para esse problema.",
+          ""
+        ],
+        [
+          "38. Haverá reunião amanhã?",
+          ""
+        ],
+        [
+          "39. Terá (Haverá) alguém esperando por mim no aeroporto?",
+          ""
+        ],
+        [
+          "40. Teve (Houve) alguém aqui?",
+          ""
+        ],
+        [
+          "41. Teve (Houve) festa aqui?",
+          ""
+        ],
+        [
+          "42. Terá (Haverá) alguma multa?",
+          ""
+        ],
+        [
+          "43. Quantas pessoas havia na reunião?",
+          ""
+        ],
+        [
+          "44. Eu tive um acidente no mês passado.",
+          ""
+        ],
+        [
+          "45. Tem (Há) algo que eu possa fazer?",
+          ""
+        ],
+        [
+          "46. Tem (Há) algo que ele pode fazer por nós.",
+          ""
+        ],
+        [
+          "47. Tem (Há) alguma coisa que poderemos fazer por ele.",
+          ""
+        ],
+        [
+          "48. Tem (Há) algo que possamos fazer por eles?",
+          ""
+        ],
+        [
+          "49. Tem que (Há de) haver alguma outra alternativa.",
+          ""
+        ],
+        [
+          "50. Tem que ter (haver) cerveja na geladeira ainda! Nós compramos ontem.",
+          ""
+        ],
+        [
+          "51. Quando cheguei em casa percebi que tinha havido uma festa.",
+          ""
+        ],
+        [
+          "52. Havia muitas pessoas esperando por aquela decisão.",
+          ""
+        ],
+        [
+          "53. Tem havido muitas reclamações por causa disso.",
+          ""
+        ],
+        [
+          "54. Há muitos brasileiros morando em Miami.",
+          ""
+        ],
+        [
+          "55. Havia tantos exercícios difíceis!",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"afffffc\"/><w:tblW w:w=\"10209\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"8\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"8\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"8\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"8\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"8\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"8\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    }
+  ],
+  "exercise_answer_links": [
+    {
+      "number": 1,
+      "exercise_paragraph": "P11913",
+      "answer_paragraph": "P12027",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 2,
+      "exercise_paragraph": "P11915",
+      "answer_paragraph": "P12028",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 3,
+      "exercise_paragraph": "P11917",
+      "answer_paragraph": "P12029",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 4,
+      "exercise_paragraph": "P11919",
+      "answer_paragraph": "P12030",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 5,
+      "exercise_paragraph": "P11921",
+      "answer_paragraph": "P12031",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 6,
+      "exercise_paragraph": "P11923",
+      "answer_paragraph": "P12032",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 7,
+      "exercise_paragraph": "P11925",
+      "answer_paragraph": "P12033",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 8,
+      "exercise_paragraph": "P11927",
+      "answer_paragraph": "P12034",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 9,
+      "exercise_paragraph": "P11929",
+      "answer_paragraph": "P12035",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 10,
+      "exercise_paragraph": "P11931",
+      "answer_paragraph": "P12036",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 11,
+      "exercise_paragraph": "P11933",
+      "answer_paragraph": "P12037",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 12,
+      "exercise_paragraph": "P11935",
+      "answer_paragraph": "P12038",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 13,
+      "exercise_paragraph": "P11937",
+      "answer_paragraph": "P12039",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 14,
+      "exercise_paragraph": "P11939",
+      "answer_paragraph": "P12040",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 15,
+      "exercise_paragraph": "P11941",
+      "answer_paragraph": "P12041",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 16,
+      "exercise_paragraph": "P11943",
+      "answer_paragraph": "P12042",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 17,
+      "exercise_paragraph": "P11945",
+      "answer_paragraph": "P12043",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 18,
+      "exercise_paragraph": "P11947",
+      "answer_paragraph": "P12044",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 19,
+      "exercise_paragraph": "P11949",
+      "answer_paragraph": "P12045",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 20,
+      "exercise_paragraph": "P11951",
+      "answer_paragraph": "P12046",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 21,
+      "exercise_paragraph": "P11953",
+      "answer_paragraph": "P12047",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 22,
+      "exercise_paragraph": "P11955",
+      "answer_paragraph": "P12048",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 23,
+      "exercise_paragraph": "P11957",
+      "answer_paragraph": "P12049",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 24,
+      "exercise_paragraph": "P11959",
+      "answer_paragraph": "P12050",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 25,
+      "exercise_paragraph": "P11961",
+      "answer_paragraph": "P12051",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 26,
+      "exercise_paragraph": "P11963",
+      "answer_paragraph": "P12052",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 27,
+      "exercise_paragraph": "P11965",
+      "answer_paragraph": "P12053",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 28,
+      "exercise_paragraph": "P11967",
+      "answer_paragraph": "P12054",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 29,
+      "exercise_paragraph": "P11969",
+      "answer_paragraph": "P12055",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 30,
+      "exercise_paragraph": "P11971",
+      "answer_paragraph": "P12056",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 31,
+      "exercise_paragraph": "P11973",
+      "answer_paragraph": "P12057",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 32,
+      "exercise_paragraph": "P11975",
+      "answer_paragraph": "P12058",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 33,
+      "exercise_paragraph": "P11977",
+      "answer_paragraph": "P12059",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 34,
+      "exercise_paragraph": "P11979",
+      "answer_paragraph": "P12060",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 35,
+      "exercise_paragraph": "P11981",
+      "answer_paragraph": "P12061",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 36,
+      "exercise_paragraph": "P11983",
+      "answer_paragraph": "P12062",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 37,
+      "exercise_paragraph": "P11985",
+      "answer_paragraph": "P12063",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 38,
+      "exercise_paragraph": "P11987",
+      "answer_paragraph": "P12064",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 39,
+      "exercise_paragraph": "P11989",
+      "answer_paragraph": "P12065",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 40,
+      "exercise_paragraph": "P11991",
+      "answer_paragraph": "P12066",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 41,
+      "exercise_paragraph": "P11993",
+      "answer_paragraph": "P12067",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 42,
+      "exercise_paragraph": "P11995",
+      "answer_paragraph": "P12068",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 43,
+      "exercise_paragraph": "P11997",
+      "answer_paragraph": "P12069",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 44,
+      "exercise_paragraph": "P11999",
+      "answer_paragraph": "P12070",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 45,
+      "exercise_paragraph": "P12001",
+      "answer_paragraph": "P12071",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 46,
+      "exercise_paragraph": "P12003",
+      "answer_paragraph": "P12072",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 47,
+      "exercise_paragraph": "P12005",
+      "answer_paragraph": "P12073",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 48,
+      "exercise_paragraph": "P12007",
+      "answer_paragraph": "P12074",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 49,
+      "exercise_paragraph": "P12009",
+      "answer_paragraph": "P12075",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 50,
+      "exercise_paragraph": "P12011",
+      "answer_paragraph": "P12076",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 51,
+      "exercise_paragraph": "P12013",
+      "answer_paragraph": "P12077",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 52,
+      "exercise_paragraph": "P12015",
+      "answer_paragraph": "P12078",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 53,
+      "exercise_paragraph": "P12017",
+      "answer_paragraph": "P12079",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 54,
+      "exercise_paragraph": "P12019",
+      "answer_paragraph": "P12080",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    },
+    {
+      "number": 55,
+      "exercise_paragraph": "P12021",
+      "answer_paragraph": "P12081",
+      "exercise_unit": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+      "answer_unit": "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+      "alignment_status": "POSITIONAL_PAIR_REQUIRES_SEMANTIC_REVIEW"
+    }
+  ],
+  "issues": [
+    {
+      "id": "MVP:REVIEW:EX:001",
+      "source_ids": [
+        "P11807"
+      ],
+      "kind": "REGISTER",
+      "observation": "A afirmação sobre TER/HAVER em qualquer situação exige distinguir uso coloquial existencial de registro formal.",
+      "proposal": "Acrescentar nota de registro; preservar explicação autoral até revisão."
+    },
+    {
+      "id": "MVP:REVIEW:EX:002",
+      "source_ids": [
+        "P11917",
+        "P12029"
+      ],
+      "kind": "SEMANTIC_ALIGNMENT",
+      "observation": "Exercício 3 usa cervejas; resposta usa beer como incontável.",
+      "proposal": "Explicitar leitura de unidades/porções ou líquido e suas variantes."
+    },
+    {
+      "id": "MVP:REVIEW:EX:003",
+      "source_ids": [
+        "P11977",
+        "P12059"
+      ],
+      "kind": "QUANTIFIER",
+      "observation": "Resposta 33 contém less taxes.",
+      "proposal": "Revisar para fewer taxes ao contar impostos; less tax se a intenção for quantidade de imposto."
+    },
+    {
+      "id": "MVP:REVIEW:EX:004",
+      "source_ids": [
+        "P12013",
+        "P12077"
+      ],
+      "kind": "TENSE_AND_ORTHOGRAPHY",
+      "observation": "Resposta 51 contém I notice em narrativa passada.",
+      "proposal": "Revisar para I noticed."
+    },
+    {
+      "id": "MVP:REVIEW:EX:005",
+      "source_ids": [
+        "P12005",
+        "P12073"
+      ],
+      "kind": "MODAL_MEANING",
+      "observation": "Exercício 47 inclui poderemos; resposta usa can.",
+      "proposal": "Examinar intenção futura e possível forma will be able to."
+    },
+    {
+      "id": "MVP:REVIEW:EX:006",
+      "source_ids": [
+        "P11880",
+        "P11904"
+      ],
+      "kind": "TASK_CONTEXT",
+      "observation": "Algumas reformulações não preservam automaticamente posse, evento e existência.",
+      "proposal": "Acrescentar circunstância e resposta aceitável por item."
+    }
+  ],
+  "source_units": [
+    "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001",
+    "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATION-MODEL:001",
+    "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001",
+    "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002",
+    "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:003",
+    "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001",
+    "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:002",
+    "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003",
+    "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:004",
+    "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:005",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:003",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:003",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:004",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:004",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:005",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:005",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:006",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:006",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:008",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:008",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:009",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:009",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010",
+    "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+    "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011",
+    "MVP:UNIT:EXISTENCE:SOURCE:FIGURE:001"
+  ],
+  "status": "TEXT_STRUCTURALLY_MAPPED_VISUAL_REVIEW_PENDING",
+  "limitations": [
+    "XML paragraphs can include nested text boxes and AlternateContent duplicates.",
+    "Coverage means every source paragraph was classified, not visual fidelity.",
+    "55 answer links are positional and have not all been semantically validated.",
+    "Original figure displayed once via DrawingML; VML alternate recorded."
+  ]
+}
