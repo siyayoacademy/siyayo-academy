@@ -1,0 +1,21 @@
+name: JAGUAR H14.66 WHY evidence display boundary
+on:
+  push:
+    branches: [jaguar/h14-66-why-evidence-display-boundary-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node --test scripts/test-jaguar-h14-66-evidence-boundary.cjs
+      - run: |
+          node scripts/test-elo7d2-word-path-evidence-detail.js
+          node scripts/test-elo7d1-polyglot-word-path-view.js
+          node scripts/test-adaptive-pass-contract-progress-view.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node --test labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.test.mjs
+          node --test labs/jaguar-v30-3/test/h14-65/why-authority-relay.test.mjs
