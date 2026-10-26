@@ -1,0 +1,202 @@
+{
+  "id": "MVP:REGISTRY",
+  "schema_version": "0.1.0",
+  "status": "SPECIFIED_NOT_RUNTIME",
+  "title": "Master VIP The Ten Kinds of Words",
+  "source": {
+    "library_file_id": "libfile_aa3a9cd10ef88191ba4dd2b11dfc2e4a",
+    "sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c"
+  },
+  "branch": "jaguar/master-vip-modular-site-print-20261026",
+  "route_proposed": "/master-vip/",
+  "deployment_url": null,
+  "editions": [
+    "en-pt",
+    "en-es",
+    "en-es-pt"
+  ],
+  "chapters": [
+    {
+      "id": "MVP:CH:ORIENTATION",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:FOUNDATIONS",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:TOOLS",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:TO-BE",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:QUESTIONS",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:MOVEMENT",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:ACTION-PRESENT",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:ACTION-FUTURE",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:ACTION-PAST",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:PERFECT-PERIOD",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:EXISTENCE",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "PILOT"
+    },
+    {
+      "id": "MVP:CH:VERBAL-SYSTEMS",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:WORD-CLASSES",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:VERB-LEXICON",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "MVP:CH:REFERENCE",
+      "status": "PLANNED",
+      "sections": [],
+      "source_mapping_status": "PENDING_RECONCILIATION",
+      "priority": "NORMAL"
+    }
+  ],
+  "recurring_section_types": [
+    "INTRODUCTION",
+    "CONCEPT",
+    "MODEL",
+    "TABLE",
+    "TIMELINE",
+    "FIGURE",
+    "EXAMPLE",
+    "CONTRAST",
+    "GUIDED_PRACTICE",
+    "FREE_PRACTICE",
+    "SPEAKING",
+    "REVIEW",
+    "CHECKLIST",
+    "ANSWER_KEY",
+    "GLOSSARY",
+    "CROSS_REFERENCE"
+  ],
+  "unit_required_fields": [
+    "id",
+    "chapter_id",
+    "section_id",
+    "type",
+    "content_by_language",
+    "provenance",
+    "revision",
+    "review_status",
+    "related_unit_ids",
+    "term_annotations",
+    "asset_occurrence_ids"
+  ],
+  "asset_required_fields": [
+    "id",
+    "original_sha256",
+    "original_path",
+    "format",
+    "width_px",
+    "height_px",
+    "color_mode",
+    "rights_status",
+    "derivatives"
+  ],
+  "asset_occurrence_required_fields": [
+    "id",
+    "asset_id",
+    "unit_id",
+    "original_width_mm",
+    "original_height_mm",
+    "crop",
+    "alt_by_language"
+  ],
+  "export_contract": {
+    "status": "SPECIFIED",
+    "selection_scopes": [
+      "slide",
+      "section",
+      "chapter",
+      "chapters",
+      "book"
+    ],
+    "format": "A4",
+    "answer_keys": "explicit-option",
+    "source_of_truth": "versioned-content-units",
+    "slide_is_print_page": false
+  },
+  "specialized_skill": {
+    "name": "Master VIP Share Print Modular",
+    "status": "SPECIFIED_NOT_INSTALLED"
+  },
+  "integration": {
+    "main_changed": false,
+    "pr3_changed": false,
+    "assessment_authority": false,
+    "production_deployed": false,
+    "watchlist_modified": false
+  },
+  "next": "Reconcile source coverage and implement modular shell with EXISTENCE pilot"
+}
