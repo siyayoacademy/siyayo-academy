@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.6.0",
+  "catalog_version": "0.7.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -193,9 +193,92 @@
     },
     {
       "id": "MVP:CH:TO-BE",
-      "status": "PLANNED",
-      "source_map": null,
-      "sections": []
+      "status": "SOURCE_AND_STUDY",
+      "source_map": "data/to-be-compare-source-map.json",
+      "sections": [
+        {
+          "id": "MVP:SEC:TO-BE:STUDY-COMPARE",
+          "title": "Estudo · Comparar as funções",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:STUDY:QUALITY",
+            "MVP:UNIT:TO-BE:STUDY:STATE",
+            "MVP:UNIT:TO-BE:STUDY:EXISTENCE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:STUDY-MODES",
+          "title": "Estudo · Formas de To Be",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:STUDY:MODES"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:STUDY-CONTRAST",
+          "title": "Estudo · Action e Movement",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:STUDY:ACTION-MOVEMENT"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:STUDY-PRACTICE",
+          "title": "Estudo · Prática e respostas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:STUDY:PRACTICE",
+            "MVP:UNIT:TO-BE:STUDY:ANSWER-KEY"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SOURCE-COMPARE",
+          "title": "Original · Comparação das funções",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:INTRO:COMPARE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SOURCE-QSE",
+          "title": "Original · Quality / State / Existence",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:01",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:02",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:03",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:04",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:05",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:06",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:07",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:08",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:09",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:QSE:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SOURCE-AM",
+          "title": "Original · Action / Movement",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:01",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:02",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:03",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:04",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:05",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:06",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:07",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:08",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:09",
+            "MVP:UNIT:TO-BE:SOURCE:COMPARE:AM:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SOURCE-CLASSIFY",
+          "title": "Original · Identificar as funções",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:INTRO:CLASSIFY",
+            "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:01",
+            "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:02",
+            "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:03",
+            "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:04",
+            "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:05"
+          ]
+        }
+      ]
     },
     {
       "id": "MVP:CH:QUESTIONS",
@@ -447,5 +530,20 @@
     "source_units": 35,
     "adaptation_units": 4,
     "full_group_reconstruction": "PENDING"
+  },
+  "to_be_compare": {
+    "bounds": [
+      "P01405",
+      "P01703"
+    ],
+    "paragraphs_classified": 299,
+    "tables": 2,
+    "original_comparison_prompts": 50,
+    "original_classification_prompts": 25,
+    "source_units": 27,
+    "adaptation_units": 7,
+    "primary_image_occurrences": 0,
+    "chapter_completeness": "PARTIAL",
+    "next_pending": "P01704 THE TWO GROUPS: COMPARING AFFIRMATIVE – NEGATIVE - INTERROGATIVE"
   }
 }
