@@ -16,3 +16,10 @@ const origState=resolve(c,new URLSearchParams({layer:'original'}));assert.equal(
 const srcExercise=c.units.find(u=>u.type==='SOURCE_EXERCISE'&&u.answer_key_id);const state2=resolve(c,new URLSearchParams({layer:'original',section:srcExercise.section_id,unit:srcExercise.id}));assert.equal(selection(c,state2,'slide',true).length,2);
 const issue=sourceMap.issues.find(i=>i.id==='MVP:REVIEW:EX:004');assert.ok(issue.source_ids.includes('P12077'));const raw=sourceMap.paragraphs.find(p=>p.source_id==='P12077');assert.ok(raw.text.includes('I notice'));assert.ok(!raw.text.includes('I noticed'));
 console.log('PASS: source coverage, 55 exercise/answer links, layer isolation, source traceability and original error preservation.');
+
+const comparisons=c.units.filter(u=>u.type==='EDITORIAL_COMPARISON');assert.equal(comparisons.length,6);
+for(const u of comparisons){assert.equal(u.proposal_status,'PROPOSED_NOT_HOMOLOGATED');assert.ok(u.related_unit_ids.length);for(const id of u.related_unit_ids)assert.equal(byId[id].provenance.kind,'MASTER_ORIGINAL');for(const lang of ['en','es','pt'])assert.ok(u.body[lang]);for(const l of u.original_lines)assert.equal(l.text,sourceMap.paragraphs.find(p=>p.source_id===l.source_id).text);}
+const manifest=JSON.parse(fs.readFileSync(path.join(root,'master-vip/proofs/proof-manifest.json'),'utf8'));assert.equal(manifest.proofs.length,3);const crypto=require('node:crypto');
+for(const proof of manifest.proofs){const bytes=fs.readFileSync(path.join(root,proof.path));assert.ok(bytes.subarray(0,5).toString()==='%PDF-');assert.equal(proof.pages,5);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),proof.sha256);}
+for(const name of ['NunitoSans-Regular.ttf','NunitoSans-Bold.ttf','NunitoSans-Italic.ttf','SIYAYODisplay-SemiBold.ttf']){const b=fs.readFileSync(path.join(root,'master-vip/assets/fonts',name));assert.equal(b.readUInt32BE(0),0x00010000);}
+console.log('PASS: six comparisons preserve original text; localized proposals; three proof hashes; local font integrity.');

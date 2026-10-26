@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -198,6 +198,18 @@
           "title": "Glossário",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:GLOSSARY:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+          "title": "Revisão editorial",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:REVIEW:REGISTER",
+            "MVP:UNIT:EXISTENCE:REVIEW:COUNTABILITY",
+            "MVP:UNIT:EXISTENCE:REVIEW:TAXES",
+            "MVP:UNIT:EXISTENCE:REVIEW:PAST",
+            "MVP:UNIT:EXISTENCE:REVIEW:FUTURE-ABILITY",
+            "MVP:UNIT:EXISTENCE:REVIEW:REFORMULATION"
           ]
         },
         {
@@ -2581,6 +2593,252 @@
         }
       ],
       "exercise_id": "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:REVIEW:REGISTER",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+      "type": "EDITORIAL_COMPARISON",
+      "title": "Registro de TER e HAVER",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "source_layer": "ADAPTATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11807"
+        ],
+        "note": "Proposta editorial vinculada à fonte; original não substituído."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "issue_id": "MVP:REVIEW:EX:001",
+      "original_lines": [
+        {
+          "source_id": "P11807",
+          "text": "Teve (Houve) festa aqui… olhe quanta sujeira!There has been a party.... Em português podemos utilizar os verbos TER e HAVER(existir) em qualquer situação."
+        }
+      ],
+      "body": {
+        "en": "In everyday Brazilian Portuguese, ter can express existence. In formal writing, prefer há or existe/existem. In English, use there + be for existence and have for possession.",
+        "es": "En el portugués brasileño cotidiano, ter puede expresar existencia. En la escritura formal, se prefiere há o existe/existem. En inglés, there + be expresa existencia y have expresa posesión.",
+        "pt": "No português brasileiro cotidiano, ter pode expressar existência. Na escrita formal, prefira há ou existe/existem. Em inglês, there + be expressa existência e have expressa posse."
+      },
+      "editorial_reason": "Evitar a generalização “em qualquer situação”. A nota diferencia registros sem apagar o uso coloquial.",
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:REVIEW:COUNTABILITY",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+      "type": "EDITORIAL_COMPARISON",
+      "title": "Cervejas ou cerveja?",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "source_layer": "ADAPTATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11917",
+          "P12029"
+        ],
+        "note": "Proposta editorial vinculada à fonte; original não substituído."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "issue_id": "MVP:REVIEW:EX:002",
+      "original_lines": [
+        {
+          "source_id": "P11917",
+          "text": "3. Tem (Há) cervejas na geladeira."
+        },
+        {
+          "source_id": "P12029",
+          "text": "There is beer in the fridge."
+        }
+      ],
+      "body": {
+        "en": "There are some beers in the fridge.",
+        "es": "Hay algunas cervezas en la nevera.",
+        "pt": "Há algumas cervejas na geladeira."
+      },
+      "editorial_reason": "Proposta para o plural do exercício 3. Beer pode ser incontável como líquido; beers pode indicar porções ou unidades. A alternativa There is some beer in the fridge exige explicitar essa mudança de leitura.",
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:REVIEW:TAXES",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+      "type": "EDITORIAL_COMPARISON",
+      "title": "Quantidade contável: fewer taxes",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "source_layer": "ADAPTATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11977",
+          "P12059"
+        ],
+        "note": "Proposta editorial vinculada à fonte; original não substituído."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:007",
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:007"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "issue_id": "MVP:REVIEW:EX:003",
+      "original_lines": [
+        {
+          "source_id": "P11977",
+          "text": "33. Deveria haver menos impostos para as pequenas empresas."
+        },
+        {
+          "source_id": "P12059",
+          "text": "There should be less taxes for the small companies."
+        }
+      ],
+      "body": {
+        "en": "There should be fewer taxes for small businesses.",
+        "es": "Debería haber menos impuestos para las pequeñas empresas.",
+        "pt": "Deveria haver menos impostos para as pequenas empresas."
+      },
+      "editorial_reason": "Para contar impostos, usar fewer taxes. Less tax é possível para uma quantidade menor de imposto; a escolha depende da intenção.",
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:REVIEW:PAST",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+      "type": "EDITORIAL_COMPARISON",
+      "title": "Narrativa passada: I noticed",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "source_layer": "ADAPTATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12013",
+          "P12077"
+        ],
+        "note": "Proposta editorial vinculada à fonte; original não substituído."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:011",
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "issue_id": "MVP:REVIEW:EX:004",
+      "original_lines": [
+        {
+          "source_id": "P12013",
+          "text": "51. Quando cheguei em casa percebi que tinha havido uma festa."
+        },
+        {
+          "source_id": "P12077",
+          "text": "When I arrived/got home I notice there had been a party."
+        }
+      ],
+      "body": {
+        "en": "When I got home, I noticed there had been a party.",
+        "es": "Cuando llegué a casa, me di cuenta de que había habido una fiesta.",
+        "pt": "Quando cheguei em casa, percebi que tinha havido uma festa."
+      },
+      "editorial_reason": "Noticed situa a percepção no passado; had been apresenta a festa como anterior à chegada.",
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:REVIEW:FUTURE-ABILITY",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+      "type": "EDITORIAL_COMPARISON",
+      "title": "Capacidade futura: poderemos",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "source_layer": "ADAPTATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P12005",
+          "P12073"
+        ],
+        "note": "Proposta editorial vinculada à fonte; original não substituído."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:010",
+        "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:010"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "issue_id": "MVP:REVIEW:EX:005",
+      "original_lines": [
+        {
+          "source_id": "P12005",
+          "text": "47. Tem (Há) alguma coisa que poderemos fazer por ele."
+        },
+        {
+          "source_id": "P12073",
+          "text": "There is something we can do for him."
+        }
+      ],
+      "body": {
+        "en": "There is something we will be able to do for him.",
+        "es": "Hay algo que podremos hacer por él.",
+        "pt": "Há algo que poderemos fazer por ele."
+      },
+      "editorial_reason": "A existência é apresentada no presente; a capacidade de fazer algo está no futuro, dentro da oração relativa. Can não precisa substituir automaticamente poderemos.",
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:REVIEW:REFORMULATION",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+      "type": "EDITORIAL_COMPARISON",
+      "title": "Reformular com contexto explícito",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "source_layer": "ADAPTATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P11891"
+        ],
+        "note": "Proposta editorial vinculada à fonte; original não substituído."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:003"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "issue_id": "MVP:REVIEW:EX:006",
+      "original_lines": [
+        {
+          "source_id": "P11891",
+          "text": "12. I have a problem."
+        }
+      ],
+      "body": {
+        "en": "Situation: my computer has a problem. I have a problem with my computer. There is a problem with my computer.",
+        "es": "Situación: mi computadora tiene un problema. Tengo un problema con mi computadora. Hay un problema con mi computadora.",
+        "pt": "Situação: meu computador tem um problema. Eu tenho um problema com meu computador. Há um problema com meu computador."
+      },
+      "editorial_reason": "Adaptação com contexto acrescentado e declarado. I have a problem e There is a problem não são substituições equivalentes em toda situação; preservar a relação com o falante exige contexto.",
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     }
   ],
   "terms": [],
@@ -2605,7 +2863,14 @@
       ],
       "kind": "REGISTER",
       "observation": "A afirmação sobre TER/HAVER em qualquer situação exige distinguir uso coloquial existencial de registro formal.",
-      "proposal": "Acrescentar nota de registro; preservar explicação autoral até revisão."
+      "proposal": "Acrescentar nota de registro; preservar explicação autoral até revisão.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:REGISTER",
+      "proposal_by_language": {
+        "en": "In everyday Brazilian Portuguese, ter can express existence. In formal writing, prefer há or existe/existem. In English, use there + be for existence and have for possession.",
+        "es": "En el portugués brasileño cotidiano, ter puede expresar existencia. En la escritura formal, se prefiere há o existe/existem. En inglés, there + be expresa existencia y have expresa posesión.",
+        "pt": "No português brasileiro cotidiano, ter pode expressar existência. Na escrita formal, prefira há ou existe/existem. Em inglês, there + be expressa existência e have expressa posse."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:002",
@@ -2615,7 +2880,14 @@
       ],
       "kind": "SEMANTIC_ALIGNMENT",
       "observation": "Exercício 3 usa cervejas; resposta usa beer como incontável.",
-      "proposal": "Explicitar leitura de unidades/porções ou líquido e suas variantes."
+      "proposal": "Explicitar leitura de unidades/porções ou líquido e suas variantes.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:COUNTABILITY",
+      "proposal_by_language": {
+        "en": "There are some beers in the fridge.",
+        "es": "Hay algunas cervezas en la nevera.",
+        "pt": "Há algumas cervejas na geladeira."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:003",
@@ -2625,7 +2897,14 @@
       ],
       "kind": "QUANTIFIER",
       "observation": "Resposta 33 contém less taxes.",
-      "proposal": "Revisar para fewer taxes ao contar impostos; less tax se a intenção for quantidade de imposto."
+      "proposal": "Revisar para fewer taxes ao contar impostos; less tax se a intenção for quantidade de imposto.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:TAXES",
+      "proposal_by_language": {
+        "en": "There should be fewer taxes for small businesses.",
+        "es": "Debería haber menos impuestos para las pequeñas empresas.",
+        "pt": "Deveria haver menos impostos para as pequenas empresas."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:004",
@@ -2635,7 +2914,14 @@
       ],
       "kind": "TENSE_AND_ORTHOGRAPHY",
       "observation": "Resposta 51 contém I notice em narrativa passada.",
-      "proposal": "Revisar para I noticed."
+      "proposal": "Revisar para I noticed.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:PAST",
+      "proposal_by_language": {
+        "en": "When I got home, I noticed there had been a party.",
+        "es": "Cuando llegué a casa, me di cuenta de que había habido una fiesta.",
+        "pt": "Quando cheguei em casa, percebi que tinha havido uma festa."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:005",
@@ -2645,17 +2931,51 @@
       ],
       "kind": "MODAL_MEANING",
       "observation": "Exercício 47 inclui poderemos; resposta usa can.",
-      "proposal": "Examinar intenção futura e possível forma will be able to."
+      "proposal": "Examinar intenção futura e possível forma will be able to.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:FUTURE-ABILITY",
+      "proposal_by_language": {
+        "en": "There is something we will be able to do for him.",
+        "es": "Hay algo que podremos hacer por él.",
+        "pt": "Há algo que poderemos fazer por ele."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:006",
       "source_ids": [
-        "P11880",
-        "P11904"
+        "P11891"
       ],
       "kind": "TASK_CONTEXT",
       "observation": "Algumas reformulações não preservam automaticamente posse, evento e existência.",
-      "proposal": "Acrescentar circunstância e resposta aceitável por item."
+      "proposal": "Acrescentar circunstância e resposta aceitável por item.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:REFORMULATION",
+      "proposal_by_language": {
+        "en": "Situation: my computer has a problem. I have a problem with my computer. There is a problem with my computer.",
+        "es": "Situación: mi computadora tiene un problema. Tengo un problema con mi computadora. Hay un problema con mi computadora.",
+        "pt": "Situação: meu computador tem um problema. Eu tenho um problema com meu computador. Há um problema com meu computador."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED",
+      "scope_note": "O ponto geral sobre reformulações permanece; esta comparação demonstra o item 12."
+    }
+  ],
+  "proofs": [
+    {
+      "edition": "en-pt",
+      "href": "proofs/master-vip-existence-a4-en-pt.pdf",
+      "status": "EDITORIAL_PROOF_NOT_HOMOLOGATED",
+      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original."
+    },
+    {
+      "edition": "en-es",
+      "href": "proofs/master-vip-existence-a4-en-es.pdf",
+      "status": "EDITORIAL_PROOF_NOT_HOMOLOGATED",
+      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original."
+    },
+    {
+      "edition": "en-es-pt",
+      "href": "proofs/master-vip-existence-a4-en-es-pt.pdf",
+      "status": "EDITORIAL_PROOF_NOT_HOMOLOGATED",
+      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original."
     }
   ]
 }

@@ -3717,7 +3717,14 @@
       ],
       "kind": "REGISTER",
       "observation": "A afirmação sobre TER/HAVER em qualquer situação exige distinguir uso coloquial existencial de registro formal.",
-      "proposal": "Acrescentar nota de registro; preservar explicação autoral até revisão."
+      "proposal": "Acrescentar nota de registro; preservar explicação autoral até revisão.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:REGISTER",
+      "proposal_by_language": {
+        "en": "In everyday Brazilian Portuguese, ter can express existence. In formal writing, prefer há or existe/existem. In English, use there + be for existence and have for possession.",
+        "es": "En el portugués brasileño cotidiano, ter puede expresar existencia. En la escritura formal, se prefiere há o existe/existem. En inglés, there + be expresa existencia y have expresa posesión.",
+        "pt": "No português brasileiro cotidiano, ter pode expressar existência. Na escrita formal, prefira há ou existe/existem. Em inglês, there + be expressa existência e have expressa posse."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:002",
@@ -3727,7 +3734,14 @@
       ],
       "kind": "SEMANTIC_ALIGNMENT",
       "observation": "Exercício 3 usa cervejas; resposta usa beer como incontável.",
-      "proposal": "Explicitar leitura de unidades/porções ou líquido e suas variantes."
+      "proposal": "Explicitar leitura de unidades/porções ou líquido e suas variantes.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:COUNTABILITY",
+      "proposal_by_language": {
+        "en": "There are some beers in the fridge.",
+        "es": "Hay algunas cervezas en la nevera.",
+        "pt": "Há algumas cervejas na geladeira."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:003",
@@ -3737,7 +3751,14 @@
       ],
       "kind": "QUANTIFIER",
       "observation": "Resposta 33 contém less taxes.",
-      "proposal": "Revisar para fewer taxes ao contar impostos; less tax se a intenção for quantidade de imposto."
+      "proposal": "Revisar para fewer taxes ao contar impostos; less tax se a intenção for quantidade de imposto.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:TAXES",
+      "proposal_by_language": {
+        "en": "There should be fewer taxes for small businesses.",
+        "es": "Debería haber menos impuestos para las pequeñas empresas.",
+        "pt": "Deveria haver menos impostos para as pequenas empresas."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:004",
@@ -3747,7 +3768,14 @@
       ],
       "kind": "TENSE_AND_ORTHOGRAPHY",
       "observation": "Resposta 51 contém I notice em narrativa passada.",
-      "proposal": "Revisar para I noticed."
+      "proposal": "Revisar para I noticed.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:PAST",
+      "proposal_by_language": {
+        "en": "When I got home, I noticed there had been a party.",
+        "es": "Cuando llegué a casa, me di cuenta de que había habido una fiesta.",
+        "pt": "Quando cheguei em casa, percebi que tinha havido uma festa."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:005",
@@ -3757,17 +3785,31 @@
       ],
       "kind": "MODAL_MEANING",
       "observation": "Exercício 47 inclui poderemos; resposta usa can.",
-      "proposal": "Examinar intenção futura e possível forma will be able to."
+      "proposal": "Examinar intenção futura e possível forma will be able to.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:FUTURE-ABILITY",
+      "proposal_by_language": {
+        "en": "There is something we will be able to do for him.",
+        "es": "Hay algo que podremos hacer por él.",
+        "pt": "Há algo que poderemos fazer por ele."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
     },
     {
       "id": "MVP:REVIEW:EX:006",
       "source_ids": [
-        "P11880",
-        "P11904"
+        "P11891"
       ],
       "kind": "TASK_CONTEXT",
       "observation": "Algumas reformulações não preservam automaticamente posse, evento e existência.",
-      "proposal": "Acrescentar circunstância e resposta aceitável por item."
+      "proposal": "Acrescentar circunstância e resposta aceitável por item.",
+      "comparison_unit_id": "MVP:UNIT:EXISTENCE:REVIEW:REFORMULATION",
+      "proposal_by_language": {
+        "en": "Situation: my computer has a problem. I have a problem with my computer. There is a problem with my computer.",
+        "es": "Situación: mi computadora tiene un problema. Tengo un problema con mi computadora. Hay un problema con mi computadora.",
+        "pt": "Situação: meu computador tem um problema. Eu tenho um problema com meu computador. Há um problema com meu computador."
+      },
+      "proposal_status": "PROPOSED_NOT_HOMOLOGATED",
+      "scope_note": "O ponto geral sobre reformulações permanece; esta comparação demonstra o item 12."
     }
   ],
   "source_units": [

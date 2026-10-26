@@ -1,0 +1,33 @@
+{
+  "catalog_version": "0.4.0",
+  "format": "A4",
+  "proofs": [
+    {
+      "edition": "en-pt",
+      "path": "master-vip/proofs/master-vip-existence-a4-en-pt.pdf",
+      "pages": 5,
+      "sha256": "423e94502f1894703aac77379c7e9319d0694d285920de5ac3a991930f2a2a25"
+    },
+    {
+      "edition": "en-es",
+      "path": "master-vip/proofs/master-vip-existence-a4-en-es.pdf",
+      "pages": 5,
+      "sha256": "227d567fb038b6ac548eaaa31c6820eeb351fd9f8052e8bf268c66851a304772"
+    },
+    {
+      "edition": "en-es-pt",
+      "path": "master-vip/proofs/master-vip-existence-a4-en-es-pt.pdf",
+      "pages": 5,
+      "sha256": "d4c11827d79ccdd2841900ce4b8dcdeac88d57f81e04d397b75d52f5088d762c"
+    }
+  ],
+  "combined_pages": 15,
+  "status": "RENDERED_VISUALLY_REVIEWED_PHYSICAL_PROOF_PENDING",
+  "scope": "Teaching pilot, six editorial proposals, practice and answer key",
+  "qa": {
+    "pages_reviewed": 15,
+    "a4_dimensions_verified": true,
+    "embedded_fonts": "NunitoSans Regular/Bold/Italic and static Quicksand-derived display",
+    "physical_print": "PENDING"
+  }
+}

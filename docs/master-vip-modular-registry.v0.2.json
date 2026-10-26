@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.3.0",
+  "catalog_version": "0.4.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -202,5 +202,16 @@
   "print_status": "DOM_SELECTION_TESTED_PHYSICAL_PROOF_PENDING",
   "specialized_skill": "SPECIFIED_NOT_INSTALLED",
   "editor": "FILES_ONLY_NO_PERSISTENT_UI_EDITOR",
-  "assessment_authority": false
+  "assessment_authority": false,
+  "editorial_comparisons": 6,
+  "a4_proofs": {
+    "editions": [
+      "en-pt",
+      "en-es",
+      "en-es-pt"
+    ],
+    "pages_per_edition": 5,
+    "qa": "RENDERED_VISUALLY_REVIEWED",
+    "physical_proof": "PENDING"
+  }
 }
