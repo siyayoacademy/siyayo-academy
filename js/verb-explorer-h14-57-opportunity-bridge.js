@@ -2,10 +2,10 @@
 // PATITA observations are discovery hints, never Attempt/Evidence/Green or an
 // authorization to select/activate an assessment.
 (function(root,factory){
-  var api=factory();
+  var api=factory(root);
   if(typeof module==='object'&&module.exports)module.exports=api;
   else root.SIYAYOH1457OpportunityBridge=api;
-})(typeof globalThis!=='undefined'?globalThis:this,function(){
+})(typeof globalThis!=='undefined'?globalThis:this,function(root){
 'use strict';
 var LANGS=['en','es','pt'];
 var labels={
