@@ -1,0 +1,18 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),root=path.resolve(__dirname,'..');
+const h57=require('../js/verb-explorer-h14-57-opportunity-bridge.js'),h58=require('../js/verb-explorer-h14-58-authority-review.js'),api=require('../js/question-word-assessment-contract.js');
+const items=JSON.parse(fs.readFileSync(path.join(root,'data/learning/experience-seeds.json'))).items;
+const policy={contractAuthoritySkills:['which.use.determiner','what.use.object-question','where.use.location-question','why.use.contextual-reason']};
+const record=(id,q,lang='en',nick='A')=>({kind:'patita-interaction',learnerId:nick,evidenceProduced:false,after:{experienceId:id,questionWord:q,language:lang}});
+const inspect=(records,nick='A',p=policy)=>h58.inspect({nick,experiences:items,contractApi:api,authorityPolicy:p,observedOpportunities:h57.inspect({nick,observations:records,experiences:items,contractApi:api})});
+test('S1 WHY remains observational',()=>{let x=inspect([record('shopping-for-dinner','why')]);assert.equal(x[0].status,'NO_DECLARED_CONTRACT');assert.equal(x[0].authorityGranted,false)});
+test('S3 WHY is declared and policy-listed, still not authorized',()=>{let x=inspect([record('having-dinner','why')]);assert.equal(x[0].status,'DECLARED_POLICY_LISTED_NOT_AUTHORIZED');assert.equal(x[0].canCreateAttempt,false)});
+test('S2 WHERE resume requires origin check',()=>{let x=inspect([record('preparing-dinner','where')]);assert.equal(x[0].status,'RESUME_ORIGIN_UNVERIFIED');assert.equal(x[0].requiresOriginCheck,true)});
+test('policy absence fails closed',()=>{let x=inspect([record('having-dinner','why')],'A',{contractAuthoritySkills:[]});assert.equal(x[0].status,'POLICY_NOT_LISTED')});
+test('all languages independent without progression credit',()=>{let x=inspect(['en','es','pt'].map(l=>record('having-dinner','why',l)));assert.equal(x.length,3);assert.ok(x.every(y=>!y.canGrantGreenPass&&!y.authorityGranted))});
+test('different nick is not observed',()=>assert.equal(inspect([record('having-dinner','why','pt','B')]).length,0));
+test('false forged row cannot promote authority',()=>{let x=h58.inspect({nick:'A',experiences:items,contractApi:api,authorityPolicy:policy,observedOpportunities:[{experienceId:'having-dinner',questionWord:'why',language:'en',status:'DECLARED_TARGET_REQUIRES_AUTHORITY',skill:'why.use.contextual-reason',canSubmitAttempt:true,canIssueEvidence:false,canGrantGreenPass:false,selectionRequested:false}]});assert.equal(x.length,0)});
+test('no declared target created for missing question',()=>assert.equal(inspect([record('shopping-for-dinner','how far')]).length,0));
+test('repeat observations do not create more authority',()=>assert.equal(inspect([record('having-dinner','why'),record('having-dinner','why')]).length,1));
+test('integration remains opt-in and presentation only',()=>{const html=fs.readFileSync('verb-explorer.html','utf8'),js=fs.readFileSync('js/verb-explorer.js','utf8');assert.match(html,/id="h1458AuthorityReview" hidden/);assert.match(js,/SIYAYOH1458AuthorityReview\?\.refresh/);assert.match(html,/js\/verb-explorer-h14-58-authority-review\.js/);assert.match(html,/id="h14SpecializedPreview"[^>]*hidden/)});
+test('default off returns without reading PATITA',()=>{const result=h58.refresh({document:{getElementById:()=>({hidden:false})},experiences:items});assert.equal(result,null)});

@@ -1,0 +1,5 @@
+# JAGUAR H14.58 — PATITA → EVAL-08 inspection bridge
+
+Isolated branch; inspected, not authorized. H14.57's read-only PATITA candidates are **revalidated** against authored assessmentTarget/assessmentResumeTarget and the read-only GreenPassAuthorityPolicy skill allowlist. An allowlisted skill is **not** an authorized Session or Pass Contract. No action, Attempt, Evidence, Green Pass or navigation is created; this module never calls Leaf.adopt, readiness.signal or assessment.select. Resume requires independent scope/origin/session checks. NICK remains browser identity, not real authentication. WHY S1/S2 still lack declared authorized targets. A hidden-by-default panel is available only on the experimental Explorer with `?h14_58=inspect`, inside Learning Trail & Word Path but semantically separate from canonical achievements.
+
+Historical debt `HIST-01` remains OPEN and unmodified. DG-01 to DG-07 remain open. Protect main, PR #3, production, D1 remote, FUNC-13 hidden, PATITA and existing evaluators. This is **partial experimental Explorer integration only**, not activation of automatic evaluation or product rollout.

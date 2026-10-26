@@ -1,0 +1,19 @@
+name: JAGUAR H14.58 read-only EVAL-08 applicability
+on:
+  push:
+    branches: [jaguar/h14-58-patita-eval08-authority-review-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node --test scripts/test-jaguar-h14-58-authority-review.cjs
+      - run: |
+          node scripts/test-jaguar-h14-57-opportunity-bridge.cjs
+          node scripts/test-question-word-assessment-contract.js
+          node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
+          node scripts/test-elo7d1-polyglot-word-path-view.js
