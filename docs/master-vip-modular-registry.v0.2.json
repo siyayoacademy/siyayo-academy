@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.7.0",
+  "catalog_version": "0.8.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -194,7 +194,7 @@
     {
       "id": "MVP:CH:TO-BE",
       "status": "SOURCE_AND_STUDY",
-      "source_map": "data/to-be-compare-source-map.json",
+      "source_map": "data/to-be-source-map.json",
       "sections": [
         {
           "id": "MVP:SEC:TO-BE:STUDY-COMPARE",
@@ -276,6 +276,184 @@
             "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:03",
             "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:04",
             "MVP:UNIT:TO-BE:SOURCE:CLASSIFY:05"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-INTRO",
+          "title": "Original · Os dois grupos",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-EX-AFFIRMATIVE",
+          "title": "Original · AFFIRMATIVE · exercícios",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:01",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:02",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:03",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:04",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:05",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:06",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:07",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:08",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:09",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:10",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:11",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:12",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:13",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:14",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:15",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:16",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:17",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:18",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:19",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-EX-INTERROGATIVE",
+          "title": "Original · INTERROGATIVE · exercícios",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:21",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:22",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:23",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:24",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:25",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:26",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:27",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:28",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:29",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:30",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:31",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:32",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:33",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:34",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:35",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:36",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:37",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:38",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:39",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-EX-NEGATIVE",
+          "title": "Original · NEGATIVE · exercícios",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:41",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:42",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:43",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:44",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:45",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:46",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:47",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:48",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:49",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:50",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:51",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:52",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:53",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:54",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:55",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:56",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:57",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:58",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:59",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:60"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-KEY-INTRO",
+          "title": "Original · Instrução das respostas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY-INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-KEY-AFFIRMATIVE",
+          "title": "Original · AFFIRMATIVE · respostas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:01",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:02",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:03",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:04",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:05",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:06",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:07",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:08",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:09",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:10",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:11",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:12",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:13",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:14",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:15",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:16",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:17",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:18",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:19",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-KEY-INTERROGATIVE",
+          "title": "Original · INTERROGATIVE · respostas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:21",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:22",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:23",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:24",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:25",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:26",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:27",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:28",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:29",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:30",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:31",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:32",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:33",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:34",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:35",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:36",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:37",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:38",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:39",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-KEY-NEGATIVE",
+          "title": "Original · NEGATIVE · respostas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:41",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:42",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:43",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:44",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:45",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:46",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:47",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:48",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:49",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:50",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:51",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:52",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:53",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:54",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:55",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:56",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:57",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:58",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:59",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:60"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:SIXTY-VISUALS",
+          "title": "Original · Composições vetoriais pendentes",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:1704",
+            "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:2381"
           ]
         }
       ]
@@ -545,5 +723,20 @@
     "primary_image_occurrences": 0,
     "chapter_completeness": "PARTIAL",
     "next_pending": "P01704 THE TWO GROUPS: COMPARING AFFIRMATIVE – NEGATIVE - INTERROGATIVE"
+  },
+  "to_be_sixty": {
+    "bounds": [
+      "P01704",
+      "P02393"
+    ],
+    "paragraphs_classified": 690,
+    "tables": 2,
+    "exercises": 60,
+    "answer_keys": 60,
+    "source_units": 124,
+    "vector_compositions": 2,
+    "raster_references": 0,
+    "chapter_completeness": "PARTIAL",
+    "next_pending": "P02394 Action Versus Movement"
   }
 }
