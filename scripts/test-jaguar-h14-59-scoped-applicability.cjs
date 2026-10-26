@@ -1,0 +1,22 @@
+'use strict';
+const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs');
+const corpus=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json')).items;
+const q=require('../js/question-word-assessment-contract.js'),s=require('../js/adaptive-assessment-scope.js');
+const p57=require('../js/verb-explorer-h14-57-opportunity-bridge.js'),p58=require('../js/verb-explorer-h14-58-authority-review.js'),p59=require('../js/verb-explorer-h14-59-scoped-applicability.js');
+const policy={contractAuthoritySkills:['what.use.object-question','which.use.determiner','why.use.contextual-reason','where.use.location-question']};
+const obs=(id,word,lang='en',nick='A')=>({kind:'patita-interaction',learnerId:nick,evidenceProduced:false,after:{experienceId:id,questionWord:word,language:lang}});
+const retained=(skill,lang,origin,who='A')=>{const scope=s.create({learnerId:who,skill,language:lang,originExperienceId:origin});return {scopeKey:scope.key,language:lang,originExperienceId:origin,progress:{completed:2,total:3}}};
+function evaluate(rows,ret=[] ,nick='A',auth=policy){const observed=p57.inspect({nick,observations:rows,experiences:corpus,contractApi:q});const ar=p58.inspect({nick,observedOpportunities:observed,experiences:corpus,contractApi:q,authorityPolicy:auth});return p59.inspect({nick,authorityRows:ar,experiences:corpus,contractApi:q,authorityPolicy:auth,scopeApi:s,listRetained:()=>ret});}
+test('WHY S1 has no declared assessment',()=>a.equal(evaluate([obs('shopping-for-dinner','why')])[0].status,'NO_DECLARED_CONTRACT'));
+test('S3 WHY declared start still not authorized',()=>a.equal(evaluate([obs('having-dinner','why')])[0].status,'DECLARED_START_NOT_AUTHORIZED'));
+test('S2 WHERE without matching S1 scope cannot resume',()=>a.equal(evaluate([obs('preparing-dinner','where')])[0].status,'NO_RETAINED_ORIGIN'));
+test('S2 WHERE with exact S1 retained scope is only a candidate',()=>{const x=evaluate([obs('preparing-dinner','where')],[retained('where.use.location-question','en','shopping-for-dinner')])[0];a.equal(x.status,'ONE_RETAINED_ORIGIN');a.equal(x.scopeAuthorization,'NOT_VERIFIED');a.equal(x.automaticallyResume,false)});
+test('unconnected origin is not transferable',()=>a.equal(evaluate([obs('preparing-dinner','where')],[retained('where.use.location-question','en','having-dinner')])[0].status,'NO_RETAINED_ORIGIN'));
+test('wrong NICK retained entry ignored',()=>a.equal(evaluate([obs('preparing-dinner','where')],[retained('where.use.location-question','en','shopping-for-dinner','B')])[0].status,'NO_RETAINED_ORIGIN'));
+test('language isolation for EN/ES/PT',()=>{const xs=['en','es','pt'].flatMap(lang=>evaluate([obs('preparing-dinner','where',lang)],[retained('where.use.location-question','en','shopping-for-dinner')]));a.deepEqual(xs.map(x=>x.status),['ONE_RETAINED_ORIGIN','NO_RETAINED_ORIGIN','NO_RETAINED_ORIGIN'])});
+test('duplicate rows cannot grant credit',()=>{const x=evaluate([obs('preparing-dinner','where'),obs('preparing-dinner','where')],[retained('where.use.location-question','en','shopping-for-dinner')]);a.equal(x.length,1);a.equal(x[0].canIssueEvidence,false);a.equal(x[0].canGrantGreenPass,false)});
+test('policy absence is fail-closed',()=>a.equal(evaluate([obs('having-dinner','why')],[],'A',{contractAuthoritySkills:[]})[0].status,'POLICY_NOT_LISTED'));
+test('S1 WHAT retained scope does not collapse other origins',()=>{const x=evaluate([obs('shopping-for-dinner','what')],[retained('what.use.object-question','en','shopping-for-dinner')]);a.equal(x[0].status,'DECLARED_START_RETAINED_SCOPE');a.equal(x[0].contractExecutionAuthorized,false)});
+test('no NICK or invalid injected flags cannot manufacture applicability',()=>{a.equal(evaluate([obs('having-dinner','why')],[],'').length,0);a.equal(p59.inspect({nick:'A',authorityRows:[{authorityGranted:true}],experiences:corpus,contractApi:q,authorityPolicy:policy,scopeApi:s}).length,0)});
+test('original evidence, selection and Explorer gates remain preserved',()=>{const h=fs.readFileSync('verb-explorer.html','utf8'),j=fs.readFileSync('js/verb-explorer.js','utf8');a.match(h,/id="h1459ScopeReview" hidden/);a.match(j,/SIYAYOH1459ScopedApplicability\?\.refresh/);a.match(h,/id="h14SpecializedPreview"[^>]*hidden/);a.match(h,/id="learnerTrailSurface"/);a.match(h,/id="patitaInteractionLedger"/);});
+test('default-off UI reads nothing and produces no result',()=>a.equal(p59.refresh({document:{getElementById:()=>({hidden:false})},experiences:corpus}),null));
