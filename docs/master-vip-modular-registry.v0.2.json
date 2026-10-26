@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.5.0",
+  "catalog_version": "0.6.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -87,9 +87,109 @@
     },
     {
       "id": "MVP:CH:TOOLS",
-      "status": "PLANNED",
-      "source_map": null,
-      "sections": []
+      "status": "SOURCE_AND_STUDY",
+      "source_map": "data/tools-source-map.json",
+      "sections": [
+        {
+          "id": "MVP:SEC:TOOLS:STUDY-GUIDE",
+          "title": "Estudo · Usar as ferramentas",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:STUDY:INTRO",
+            "MVP:UNIT:TOOLS:STUDY:BE-DO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:STUDY-REVIEW",
+          "title": "Estudo · Revisão dos auxiliares",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:STUDY:AUX-CHAINS",
+            "MVP:UNIT:TOOLS:STUDY:PERIPHRASES"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-AUX",
+          "title": "Original · Auxiliares",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:AUX-INTRO",
+            "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-BE-DO",
+          "title": "Original · Be e Do",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:VERB-MAP",
+            "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:88",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:89"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-OVERVIEW",
+          "title": "Original · General view To Be",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009",
+            "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010",
+            "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-FACE",
+          "title": "Original · English Face",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:86"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-HANDS",
+          "title": "Original · Curious hands",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:90"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-IN-HAND",
+          "title": "Original · English In Your Hand",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:91",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:92"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-LAYERS",
+          "title": "Original · Camadas In Your Hand",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:93",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:94",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:95",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:96",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:97",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:98",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:99",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:101",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:102",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:103",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:104",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:105",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:106",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:107",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:108",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:109",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:110",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:111",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:112",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:113",
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:114"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:SOURCE-REMISSIONS",
+          "title": "Original · Remissões",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:SOURCE:FIGURE:138"
+          ]
+        }
+      ]
     },
     {
       "id": "MVP:CH:TO-BE",
@@ -334,5 +434,18 @@
     "adaptation_units": 9,
     "visual_reconstruction": "PENDING",
     "technical_images": 1
+  },
+  "tools": {
+    "bounds": [
+      "P01130",
+      "P01404"
+    ],
+    "paragraphs_classified": 275,
+    "tables": 5,
+    "primary_image_occurrences": 28,
+    "all_image_references": 53,
+    "source_units": 35,
+    "adaptation_units": 4,
+    "full_group_reconstruction": "PENDING"
   }
 }

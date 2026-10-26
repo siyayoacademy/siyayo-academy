@@ -1,0 +1,4615 @@
+{
+  "id": "MVP:SOURCE:TOOLS",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "bounds": {
+    "first": "P01130",
+    "last": "P01404",
+    "next_heading": "P01405 LET’S COMPARE"
+  },
+  "paragraphs": [
+    {
+      "source_id": "P01130",
+      "xpath": "/w:document/w:body/w:p[261]",
+      "text": "English Face – The order of sentences",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:STUDY:INTRO"
+      ]
+    },
+    {
+      "source_id": "P01131",
+      "xpath": "/w:document/w:body/w:p[262]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01132",
+      "xpath": "/w:document/w:body/w:p[263]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01133",
+      "xpath": "/w:document/w:body/w:p[264]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:86"
+      ]
+    },
+    {
+      "source_id": "P01134",
+      "xpath": "/w:document/w:body/w:p[264]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01135",
+      "xpath": "/w:document/w:body/w:p[264]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01136",
+      "xpath": "/w:document/w:body/w:p[265]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01137",
+      "xpath": "/w:document/w:body/w:p[266]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01138",
+      "xpath": "/w:document/w:body/w:p[267]",
+      "text": "Verbos auxiliaresPARA QUE SERVEM?SÃO UTILIZADOS PARA AUXILIAR OUTRO VERBO, INDICANDO TEMPO, PERÍODO, AFIRMAÇÃO, NEGAÇÃO OU INTERROGAÇÃO.VEJA A CLASSIFICAÇÃO DOS VERBOS AUXILIARES E O TIPO DE ORAÇÕES EM QUE OS MESMOS SÃO UTILIZADOS, LEMBRANDO QUE ELES IDENTIFICAM SE A ORAÇÃO SE REFERE A UMA AÇÃO, A UMA QUALIDADE, A UM ESTADO, MOVIMENTO OU MODO, NOS DEVIDOS TEMPOS EM QUE ALGO ACONTECE. NÃO SE PODE UTILIZAR DOIS VERBOS AUXILIARES NA MESMA SENTENÇA.EX.: I will not can do that tomorrow. Correct: I will not be able to do that tomorrow.PARA QUE SERVEM?SÃO UTILIZADOS PARA AUXILIAR OUTRO VERBO, INDICANDO TEMPO, PERÍODO, AFIRMAÇÃO, NEGAÇÃO OU INTERROGAÇÃO.VEJA A CLASSIFICAÇÃO DOS VERBOS AUXILIARES E O TIPO DE ORAÇÕES EM QUE OS MESMOS SÃO UTILIZADOS, LEMBRANDO QUE ELES IDENTIFICAM SE A ORAÇÃO SE REFERE A UMA AÇÃO, A UMA QUALIDADE, A UM ESTADO, MOVIMENTO OU MODO, NOS DEVIDOS TEMPOS EM QUE ALGO ACONTECE. NÃO SE PODE UTILIZAR DOIS VERBOS AUXILIARES NA MESMA SENTENÇA.EX.: I will not can do that tomorrow. Correct: I will not be able to do that tomorrow.",
+      "style": "(default)",
+      "disposition": "DRAWING_WRAPPER_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01139",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[1]",
+      "text": "PARA QUE SERVEM?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:AUX-INTRO"
+      ]
+    },
+    {
+      "source_id": "P01140",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[2]",
+      "text": "SÃO UTILIZADOS PARA AUXILIAR OUTRO VERBO, INDICANDO TEMPO, PERÍODO, AFIRMAÇÃO, NEGAÇÃO OU INTERROGAÇÃO.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:AUX-INTRO"
+      ]
+    },
+    {
+      "source_id": "P01141",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[3]",
+      "text": "VEJA A CLASSIFICAÇÃO DOS VERBOS AUXILIARES E O TIPO DE ORAÇÕES EM QUE OS MESMOS SÃO UTILIZADOS, LEMBRANDO QUE ELES IDENTIFICAM SE A ORAÇÃO SE REFERE A UMA AÇÃO, A UMA QUALIDADE, A UM ESTADO, MOVIMENTO OU MODO, NOS DEVIDOS TEMPOS EM QUE ALGO ACONTECE. NÃO SE PODE UTILIZAR DOIS VERBOS AUXILIARES NA MESMA SENTENÇA.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:AUX-INTRO",
+        "MVP:UNIT:TOOLS:STUDY:AUX-CHAINS"
+      ]
+    },
+    {
+      "source_id": "P01142",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[4]",
+      "text": "EX.: I will not can do that tomorrow. Correct: I will not be able to do that tomorrow.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:AUX-INTRO",
+        "MVP:UNIT:TOOLS:STUDY:AUX-CHAINS"
+      ]
+    },
+    {
+      "source_id": "P01143",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[1]",
+      "text": "PARA QUE SERVEM?",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01144",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[2]",
+      "text": "SÃO UTILIZADOS PARA AUXILIAR OUTRO VERBO, INDICANDO TEMPO, PERÍODO, AFIRMAÇÃO, NEGAÇÃO OU INTERROGAÇÃO.",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01145",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[3]",
+      "text": "VEJA A CLASSIFICAÇÃO DOS VERBOS AUXILIARES E O TIPO DE ORAÇÕES EM QUE OS MESMOS SÃO UTILIZADOS, LEMBRANDO QUE ELES IDENTIFICAM SE A ORAÇÃO SE REFERE A UMA AÇÃO, A UMA QUALIDADE, A UM ESTADO, MOVIMENTO OU MODO, NOS DEVIDOS TEMPOS EM QUE ALGO ACONTECE. NÃO SE PODE UTILIZAR DOIS VERBOS AUXILIARES NA MESMA SENTENÇA.",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01146",
+      "xpath": "/w:document/w:body/w:p[267]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[4]",
+      "text": "EX.: I will not can do that tomorrow. Correct: I will not be able to do that tomorrow.",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01147",
+      "xpath": "/w:document/w:body/w:p[268]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01148",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[1]/w:tc[1]/w:p[1]",
+      "text": "TO BE:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01149",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[1]/w:tc[1]/w:p[2]",
+      "text": "AM, IS, ARE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01150",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[1]/w:tc[2]/w:p[1]",
+      "text": "QUALIDADE/ESTADO/MOVIMENTO - PRESENTE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01151",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[1]/w:tc[2]/w:p[2]",
+      "text": "Ex: “I am a teacher” “I am at school”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01152",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[1]/w:tc[2]/w:p[3]",
+      "text": "“I am teaching now.”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01153",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[2]/w:tc[1]/w:p",
+      "text": "TO BE: WAS, WERE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01154",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[2]/w:tc[2]/w:p[1]",
+      "text": "QUALIDADE/ESTADO/MOVIMENTO - PASSADO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01155",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[2]/w:tc[2]/w:p[2]",
+      "text": "Ex: “I was a teacher” “I was at school”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01156",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[2]/w:tc[2]/w:p[3]",
+      "text": "“I was teaching yesterday.”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01157",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[3]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01158",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[3]/w:tc[1]/w:p[2]",
+      "text": "DO, DOES",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01159",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[3]/w:tc[2]/w:p[1]",
+      "text": "AÇÃO – PRESENTE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01160",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[3]/w:tc[2]/w:p[2]",
+      "text": "Ex: “Do you smoke?” “No, I don’t smoke.” “Yes, I do.”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01161",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[4]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01162",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[4]/w:tc[1]/w:p[2]",
+      "text": "DID",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01163",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[4]/w:tc[2]/w:p[1]",
+      "text": "AÇÃO - PASSADO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01164",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[4]/w:tc[2]/w:p[2]",
+      "text": "Ex: “Did you go to the movie yesterday?” “No, I didn’t go to the movie yesterday.”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01165",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[5]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01166",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[5]/w:tc[1]/w:p[2]",
+      "text": "WILL",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01167",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[5]/w:tc[2]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01168",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[5]/w:tc[2]/w:p[2]",
+      "text": "FUTURO – P/ TODOS OS VERBOS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01169",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[5]/w:tc[2]/w:p[3]",
+      "text": "Ex:  “I will do this.” “I will be there.”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01170",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[6]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01171",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[6]/w:tc[1]/w:p[2]",
+      "text": "HAVE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01172",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[6]/w:tc[2]/w:p[1]",
+      "text": "UM PASSADO ATÉ O PRESENTE (período, tempo indeterminado,",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01173",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[6]/w:tc[2]/w:p[2]",
+      "text": "causa e consequência) P/ QUALQUER VERBO NO PARTICÍPIO PASSADO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01174",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[6]/w:tc[2]/w:p[3]",
+      "text": "Ex: “Have you done your homework yet?” “You have been a good student”.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01175",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[7]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01176",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[7]/w:tc[1]/w:p[2]",
+      "text": "HAD",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01177",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[7]/w:tc[2]/w:p[1]",
+      "text": "UM PASSADO ATÉ O PASSADO (período, tempo indeterminado, causa e consequência) P/ QUALQUER VERBO NO PARTICÍPIO PASSADO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01178",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[7]/w:tc[2]/w:p[2]",
+      "text": "Ex: “Had you already done your homework when she arrived?”",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01179",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[8]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01180",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[8]/w:tc[1]/w:p[2]",
+      "text": "MODALS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01181",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[8]/w:tc[2]/w:p[1]",
+      "text": "INDICAM O MODO PARA QUALQUER VERBO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008"
+      ]
+    },
+    {
+      "source_id": "P01182",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[8]/w:tc[2]/w:p[2]",
+      "text": "CAN, COULD, WILL, WOULD, SHALL, SHOULD, MAY, MIGHT, MUST, *HAVE TO, *NEED TO, *BE ABLE TO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008",
+        "MVP:UNIT:TOOLS:STUDY:PERIPHRASES"
+      ]
+    },
+    {
+      "source_id": "P01183",
+      "xpath": "/w:document/w:body/w:tbl[8]/w:tr[8]/w:tc[2]/w:p[3]",
+      "text": "* dependem de outro auxiliar na interrogativa e na negativa",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008",
+        "MVP:UNIT:TOOLS:STUDY:PERIPHRASES"
+      ]
+    },
+    {
+      "source_id": "P01184",
+      "xpath": "/w:document/w:body/w:p[269]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01185",
+      "xpath": "/w:document/w:body/w:p[270]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01186",
+      "xpath": "/w:document/w:body/w:p[271]",
+      "text": "Verbs",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01187",
+      "xpath": "/w:document/w:body/w:p[272]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01188",
+      "xpath": "/w:document/w:body/w:p[273]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01189",
+      "xpath": "/w:document/w:body/w:p[274]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01190",
+      "xpath": "/w:document/w:body/w:p[275]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01191",
+      "xpath": "/w:document/w:body/w:p[276]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01192",
+      "xpath": "/w:document/w:body/w:p[277]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01193",
+      "xpath": "/w:document/w:body/w:p[278]",
+      "text": "VERBSQualityStateMovementActionExistenceVERBSQualityStateMovementActionExistence",
+      "style": "(default)",
+      "disposition": "DRAWING_WRAPPER_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01194",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01195",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[14]/wps:txbx/w:txbxContent/w:p",
+      "text": "VERBS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:VERB-MAP"
+      ]
+    },
+    {
+      "source_id": "P01196",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[15]/wps:txbx/w:txbxContent/w:p",
+      "text": "Quality",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:VERB-MAP"
+      ]
+    },
+    {
+      "source_id": "P01197",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[16]/wps:txbx/w:txbxContent/w:p",
+      "text": "State",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:VERB-MAP"
+      ]
+    },
+    {
+      "source_id": "P01198",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[17]/wps:txbx/w:txbxContent/w:p",
+      "text": "Movement",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:VERB-MAP"
+      ]
+    },
+    {
+      "source_id": "P01199",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[18]/wps:txbx/w:txbxContent/w:p",
+      "text": "Action",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:VERB-MAP"
+      ]
+    },
+    {
+      "source_id": "P01200",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[19]/wps:txbx/w:txbxContent/w:p",
+      "text": "Existence",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:VERB-MAP"
+      ]
+    },
+    {
+      "source_id": "P01201",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01202",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "VERBS",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01203",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[3]/v:textbox/w:txbxContent/w:p",
+      "text": "Quality",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01204",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[4]/v:textbox/w:txbxContent/w:p",
+      "text": "State",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01205",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[5]/v:textbox/w:txbxContent/w:p",
+      "text": "Movement",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01206",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[6]/v:textbox/w:txbxContent/w:p",
+      "text": "Action",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01207",
+      "xpath": "/w:document/w:body/w:p[278]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[7]/v:textbox/w:txbxContent/w:p",
+      "text": "Existence",
+      "style": "(default)",
+      "disposition": "ALTERNATE_TEXT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01208",
+      "xpath": "/w:document/w:body/w:p[279]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01209",
+      "xpath": "/w:document/w:body/w:p[280]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01210",
+      "xpath": "/w:document/w:body/w:p[281]",
+      "text": "General view – to be",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01211",
+      "xpath": "/w:document/w:body/w:p[282]",
+      "text": "Quality",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01212",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[1]/w:tc[1]/w:p",
+      "text": "question words",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01213",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[1]/w:tc[2]/w:p",
+      "text": "auxiliaries",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01214",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[1]/w:tc[3]/w:p",
+      "text": "subject",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01215",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[1]/w:tc[4]/w:p",
+      "text": "verb",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01216",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[1]/w:tc[5]/w:p",
+      "text": "the rest",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01217",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p[1]",
+      "text": "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOW",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01218",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p[2]",
+      "text": "HOW MANY HOW MUCH HOW FAR HOW LONG HOW OFTEN",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01219",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[1]/w:p[3]",
+      "text": "HOW OLD",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01220",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[2]/w:p[1]",
+      "text": "AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01221",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[2]/w:p[2]",
+      "text": "WERE WILL",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01222",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01223",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[3]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01224",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[3]/w:p[3]",
+      "text": "☺",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01225",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[3]/w:p[4]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01226",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[3]/w:p[5]",
+      "text": "☺☺",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01227",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[4]/w:p[1]",
+      "text": "AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01228",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[4]/w:p[2]",
+      "text": "WERE WILL BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01229",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[5]/w:p[1]",
+      "text": "The/a Adjectives This/that My/mine Color Jobs",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01230",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[5]/w:p[2]",
+      "text": "Nationalities (from places) Age",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01231",
+      "xpath": "/w:document/w:body/w:tbl[9]/w:tr[2]/w:tc[5]/w:p[3]",
+      "text": "Passive (made in/of)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009"
+      ]
+    },
+    {
+      "source_id": "P01232",
+      "xpath": "/w:document/w:body/w:p[283]",
+      "text": "State",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01233",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[1]/w:tc[1]/w:p",
+      "text": "question words",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01234",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[1]/w:tc[2]/w:p",
+      "text": "auxiliaries",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01235",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[1]/w:tc[3]/w:p",
+      "text": "subject",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01236",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[1]/w:tc[4]/w:p",
+      "text": "verb",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01237",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[1]/w:tc[5]/w:p",
+      "text": "the rest",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01238",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[1]/w:p[1]",
+      "text": "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOW",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01239",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[1]/w:p[2]",
+      "text": "HOW MANY HOW MUCH HOW FAR HOW LONG HOW OFTEN",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01240",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[1]/w:p[3]",
+      "text": "HOW OLD",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01241",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[2]/w:p[1]",
+      "text": "AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01242",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[2]/w:p[2]",
+      "text": "WERE WILL",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01243",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01244",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[3]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01245",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[3]/w:p[3]",
+      "text": "☺",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01246",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[3]/w:p[4]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01247",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[3]/w:p[5]",
+      "text": "☺☺",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01248",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[4]/w:p[1]",
+      "text": "AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01249",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[4]/w:p[2]",
+      "text": "WERE WILL BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01250",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[5]/w:p[1]",
+      "text": "Adjectives Prepositions (in-on- at)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01251",
+      "xpath": "/w:document/w:body/w:tbl[10]/w:tr[2]/w:tc[5]/w:p[2]",
+      "text": "Adv. Of place (here)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010"
+      ]
+    },
+    {
+      "source_id": "P01252",
+      "xpath": "/w:document/w:body/w:p[284]",
+      "text": "Movement",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01253",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[1]/w:tc[1]/w:p",
+      "text": "question words",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01254",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[1]/w:tc[2]/w:p",
+      "text": "auxiliaries",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01255",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[1]/w:tc[3]/w:p",
+      "text": "subject",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01256",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[1]/w:tc[4]/w:p",
+      "text": "verb",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01257",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[1]/w:tc[5]/w:p",
+      "text": "the rest",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01258",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[1]/w:p[1]",
+      "text": "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOW",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01259",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[1]/w:p[2]",
+      "text": "HOW MANY HOW MUCH HOW FAR HOW LONG",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01260",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[1]/w:p[3]",
+      "text": "HOW OFTEN HOW OLD",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01261",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[2]/w:p[1]",
+      "text": "AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01262",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[2]/w:p[2]",
+      "text": "WERE WILL",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01263",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01264",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[3]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01265",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[3]/w:p[3]",
+      "text": "☺",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01266",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[3]/w:p[4]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01267",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[3]/w:p[5]",
+      "text": "☺☺",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01268",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[1]",
+      "text": "AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01269",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[2]",
+      "text": "WERE WILL BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01270",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[3]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01271",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[4]",
+      "text": "+",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01272",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[5]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01273",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[6]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01274",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[4]/w:p[7]",
+      "text": "Verb + ing",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01275",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[5]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01276",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[5]/w:p[2]",
+      "text": "Prepositions of movement (into- onto…)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01277",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[5]/w:p[3]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01278",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[5]/w:p[4]",
+      "text": "Adv. of time",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01279",
+      "xpath": "/w:document/w:body/w:tbl[11]/w:tr[2]/w:tc[5]/w:p[5]",
+      "text": "Adv. of frequency",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011"
+      ]
+    },
+    {
+      "source_id": "P01280",
+      "xpath": "/w:document/w:body/w:p[285]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01281",
+      "xpath": "/w:document/w:body/w:p[286]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01282",
+      "xpath": "/w:document/w:body/w:p[287]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01283",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01284",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[2]",
+      "text": "DO DONE COME SPEAK TALK WALK WORK",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01285",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[3]",
+      "text": "... e qualquer verbo diferente de to be",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01286",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[4]",
+      "text": "s verbos pertencentes ao grupo DO são ndependentes somente na afirmativa. Precisam do auxílio do DO para perguntar e negar. Ex.:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01287",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[5]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01288",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[6]",
+      "text": "(+ ) They work in that company.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+        "MVP:UNIT:TOOLS:STUDY:BE-DO"
+      ]
+    },
+    {
+      "source_id": "P01289",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]/w:p[7]",
+      "text": "( - ) They DO not work in that company. (? ) DO they work in that company?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+        "MVP:UNIT:TOOLS:STUDY:BE-DO"
+      ]
+    },
+    {
+      "source_id": "P01290",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01291",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[2]",
+      "text": "BE AM IS ARE WAS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01292",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[3]",
+      "text": "WERE BEEN",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01293",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[4]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01294",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[5]",
+      "text": "Os verbos pertencentes ao grupo BE são independentes, já que o verbo TO BE é auxiliar. Ex.:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01295",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[6]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01296",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[7]",
+      "text": "(+ ) They are in that company.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+        "MVP:UNIT:TOOLS:STUDY:BE-DO"
+      ]
+    },
+    {
+      "source_id": "P01297",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[2]/w:p[8]",
+      "text": "( - ) They are not in that company. (? ) Are they in that company?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+        "MVP:UNIT:TOOLS:STUDY:BE-DO"
+      ]
+    },
+    {
+      "source_id": "P01298",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[2]/w:tc/w:p[1]",
+      "text": "Da união dos dois grupos nasce uma nova família: GERUNDIO. Ex.:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01299",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[2]/w:tc/w:p[2]",
+      "text": "They ARE working in that company. They ARE not working in that company.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+        "MVP:UNIT:TOOLS:STUDY:BE-DO"
+      ]
+    },
+    {
+      "source_id": "P01300",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[2]/w:tc/w:p[3]",
+      "text": "ARE they working in that company?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+        "MVP:UNIT:TOOLS:STUDY:BE-DO"
+      ]
+    },
+    {
+      "source_id": "P01301",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc/w:p[1]",
+      "text": "Auxiliares comuns aos dois grupos:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01302",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc/w:p[2]",
+      "text": "WILL (futuro) HAVE / HAD (período)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01303",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc/w:p[3]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01304",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc/w:p[4]",
+      "text": "Modais:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01305",
+      "xpath": "/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc/w:p[5]",
+      "text": "CAN / COULD / WOULD /SHALL / SHOULD / MAY / MIGHT / MUST",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012"
+      ]
+    },
+    {
+      "source_id": "P01306",
+      "xpath": "/w:document/w:body/w:p[288]",
+      "text": "The Two Groups: To Be & To Do",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01307",
+      "xpath": "/w:document/w:body/w:p[289]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:88",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:89"
+      ]
+    },
+    {
+      "source_id": "P01308",
+      "xpath": "/w:document/w:body/w:p[290]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01309",
+      "xpath": "/w:document/w:body/w:p[291]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01310",
+      "xpath": "/w:document/w:body/w:p[292]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01311",
+      "xpath": "/w:document/w:body/w:p[293]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01312",
+      "xpath": "/w:document/w:body/w:p[294]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01313",
+      "xpath": "/w:document/w:body/w:p[295]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01314",
+      "xpath": "/w:document/w:body/w:p[296]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01315",
+      "xpath": "/w:document/w:body/w:p[297]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01316",
+      "xpath": "/w:document/w:body/w:p[298]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01317",
+      "xpath": "/w:document/w:body/w:p[299]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01318",
+      "xpath": "/w:document/w:body/w:p[300]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01319",
+      "xpath": "/w:document/w:body/w:p[301]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01320",
+      "xpath": "/w:document/w:body/w:p[302]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01321",
+      "xpath": "/w:document/w:body/w:p[303]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01322",
+      "xpath": "/w:document/w:body/w:p[304]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01323",
+      "xpath": "/w:document/w:body/w:p[305]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01324",
+      "xpath": "/w:document/w:body/w:p[306]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01325",
+      "xpath": "/w:document/w:body/w:p[307]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01326",
+      "xpath": "/w:document/w:body/w:p[308]",
+      "text": "O",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01327",
+      "xpath": "/w:document/w:body/w:p[309]",
+      "text": "i",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01328",
+      "xpath": "/w:document/w:body/w:p[310]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01329",
+      "xpath": "/w:document/w:body/w:p[311]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01330",
+      "xpath": "/w:document/w:body/w:p[312]",
+      "text": "Curious hands",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:STUDY:INTRO"
+      ]
+    },
+    {
+      "source_id": "P01331",
+      "xpath": "/w:document/w:body/w:p[313]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01332",
+      "xpath": "/w:document/w:body/w:p[314]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01333",
+      "xpath": "/w:document/w:body/w:p[315]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01334",
+      "xpath": "/w:document/w:body/w:p[316]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01335",
+      "xpath": "/w:document/w:body/w:p[317]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:90"
+      ]
+    },
+    {
+      "source_id": "P01336",
+      "xpath": "/w:document/w:body/w:p[318]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01337",
+      "xpath": "/w:document/w:body/w:p[319]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01338",
+      "xpath": "/w:document/w:body/w:p[320]",
+      "text": "English In Your Hand",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:STUDY:INTRO"
+      ]
+    },
+    {
+      "source_id": "P01339",
+      "xpath": "/w:document/w:body/w:p[321]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01340",
+      "xpath": "/w:document/w:body/w:p[322]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01341",
+      "xpath": "/w:document/w:body/w:p[323]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01342",
+      "xpath": "/w:document/w:body/w:p[324]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01343",
+      "xpath": "/w:document/w:body/w:p[325]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01344",
+      "xpath": "/w:document/w:body/w:p[326]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01345",
+      "xpath": "/w:document/w:body/w:p[327]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:91",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:92",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:93",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:94",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:95",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:96",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:97",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:98",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:99",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:101",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:102",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:103",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:104",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:105",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:106",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:107",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:108",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:109",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:110",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:111",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:112",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:113",
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:114"
+      ],
+      "legacy_glyphs": [
+        "0xf080",
+        "0xf081"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01346",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01347",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01348",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[5]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01349",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[8]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01350",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[13]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01351",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01352",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01353",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[3]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01354",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[4]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01355",
+      "xpath": "/w:document/w:body/w:p[327]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[5]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01356",
+      "xpath": "/w:document/w:body/w:p[328]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": [],
+      "legacy_glyphs": [
+        "0xf094"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01357",
+      "xpath": "/w:document/w:body/w:p[329]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": [],
+      "legacy_glyphs": [
+        "0xf048"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01358",
+      "xpath": "/w:document/w:body/w:p[330]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": [],
+      "legacy_glyphs": [
+        "0xf0fe"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01359",
+      "xpath": "/w:document/w:body/w:p[331]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": [],
+      "legacy_glyphs": [
+        "0xf08e"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01360",
+      "xpath": "/w:document/w:body/w:p[332]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": [],
+      "legacy_glyphs": [
+        "0xf027"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01361",
+      "xpath": "/w:document/w:body/w:p[333]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": [],
+      "legacy_glyphs": [
+        "0xf0f5"
+      ],
+      "glyph_status": "FONT_DEPENDENT_RECONSTRUCTION_PENDING"
+    },
+    {
+      "source_id": "P01362",
+      "xpath": "/w:document/w:body/w:p[334]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01363",
+      "xpath": "/w:document/w:body/w:p[335]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01364",
+      "xpath": "/w:document/w:body/w:p[336]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01365",
+      "xpath": "/w:document/w:body/w:p[337]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01366",
+      "xpath": "/w:document/w:body/w:p[338]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01367",
+      "xpath": "/w:document/w:body/w:p[339]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01368",
+      "xpath": "/w:document/w:body/w:p[340]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01369",
+      "xpath": "/w:document/w:body/w:p[341]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01370",
+      "xpath": "/w:document/w:body/w:p[342]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01371",
+      "xpath": "/w:document/w:body/w:p[343]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01372",
+      "xpath": "/w:document/w:body/w:p[344]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01373",
+      "xpath": "/w:document/w:body/w:p[345]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01374",
+      "xpath": "/w:document/w:body/w:p[346]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01375",
+      "xpath": "/w:document/w:body/w:p[347]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01376",
+      "xpath": "/w:document/w:body/w:p[348]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01377",
+      "xpath": "/w:document/w:body/w:p[349]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01378",
+      "xpath": "/w:document/w:body/w:p[350]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01379",
+      "xpath": "/w:document/w:body/w:p[351]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01380",
+      "xpath": "/w:document/w:body/w:p[352]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01381",
+      "xpath": "/w:document/w:body/w:p[353]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01382",
+      "xpath": "/w:document/w:body/w:p[354]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01383",
+      "xpath": "/w:document/w:body/w:p[355]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01384",
+      "xpath": "/w:document/w:body/w:p[356]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01385",
+      "xpath": "/w:document/w:body/w:p[357]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01386",
+      "xpath": "/w:document/w:body/w:p[358]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01387",
+      "xpath": "/w:document/w:body/w:p[359]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01388",
+      "xpath": "/w:document/w:body/w:p[360]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01389",
+      "xpath": "/w:document/w:body/w:p[361]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01390",
+      "xpath": "/w:document/w:body/w:p[362]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01391",
+      "xpath": "/w:document/w:body/w:p[363]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01392",
+      "xpath": "/w:document/w:body/w:p[364]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01393",
+      "xpath": "/w:document/w:body/w:p[365]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01394",
+      "xpath": "/w:document/w:body/w:p[366]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01395",
+      "xpath": "/w:document/w:body/w:p[367]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01396",
+      "xpath": "/w:document/w:body/w:p[368]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01397",
+      "xpath": "/w:document/w:body/w:p[369]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01398",
+      "xpath": "/w:document/w:body/w:p[370]",
+      "text": "Slide: Be vs DoSlide: Be vs Do",
+      "style": "(default)",
+      "disposition": "DRAWING_WRAPPER_REFERENCE",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:SOURCE:FIGURE:138"
+      ]
+    },
+    {
+      "source_id": "P01399",
+      "xpath": "/w:document/w:body/w:p[370]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01400",
+      "xpath": "/w:document/w:body/w:p[370]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p",
+      "text": "Slide: Be vs Do",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01401",
+      "xpath": "/w:document/w:body/w:p[370]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01402",
+      "xpath": "/w:document/w:body/w:p[370]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "Slide: Be vs Do",
+      "style": "(default)",
+      "disposition": "HEADING_OR_FRAGMENT_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01403",
+      "xpath": "/w:document/w:body/w:p[371]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01404",
+      "xpath": "/w:document/w:body/w:p[372]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    }
+  ],
+  "tables": [
+    {
+      "id": "T0008",
+      "xpath": "/w:document/w:body/w:tbl[8]",
+      "rows": 8,
+      "grid_columns": 2,
+      "cells": [
+        [
+          "TO BE:AM, IS, ARE",
+          "QUALIDADE/ESTADO/MOVIMENTO - PRESENTEEx: “I am a teacher” “I am at school”“I am teaching now.”"
+        ],
+        [
+          "TO BE: WAS, WERE",
+          "QUALIDADE/ESTADO/MOVIMENTO - PASSADOEx: “I was a teacher” “I was at school”“I was teaching yesterday.”"
+        ],
+        [
+          "DO, DOES",
+          "AÇÃO – PRESENTEEx: “Do you smoke?” “No, I don’t smoke.” “Yes, I do.”"
+        ],
+        [
+          "DID",
+          "AÇÃO - PASSADOEx: “Did you go to the movie yesterday?” “No, I didn’t go to the movie yesterday.”"
+        ],
+        [
+          "WILL",
+          "FUTURO – P/ TODOS OS VERBOSEx:  “I will do this.” “I will be there.”"
+        ],
+        [
+          "HAVE",
+          "UM PASSADO ATÉ O PRESENTE (período, tempo indeterminado,causa e consequência) P/ QUALQUER VERBO NO PARTICÍPIO PASSADOEx: “Have you done your homework yet?” “You have been a good student”."
+        ],
+        [
+          "HAD",
+          "UM PASSADO ATÉ O PASSADO (período, tempo indeterminado, causa e consequência) P/ QUALQUER VERBO NO PARTICÍPIO PASSADOEx: “Had you already done your homework when she arrived?”"
+        ],
+        [
+          "MODALS",
+          "INDICAM O MODO PARA QUALQUER VERBOCAN, COULD, WILL, WOULD, SHALL, SHOULD, MAY, MIGHT, MUST, *HAVE TO, *NEED TO, *BE ABLE TO* dependem de outro auxiliar na interrogativa e na negativa"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a6\"/><w:tblW w:w=\"10067\" w:type=\"dxa\"/><w:tblInd w:w=\"820\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0009",
+      "xpath": "/w:document/w:body/w:tbl[9]",
+      "rows": 2,
+      "grid_columns": 5,
+      "cells": [
+        [
+          "question words",
+          "auxiliaries",
+          "subject",
+          "verb",
+          "the rest"
+        ],
+        [
+          "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOWHOW MANY HOW MUCH HOW FAR HOW LONG HOW OFTENHOW OLD",
+          "AM IS ARE WASWERE WILL",
+          "☺☺☺",
+          "AM IS ARE WASWERE WILL BE",
+          "The/a Adjectives This/that My/mine Color JobsNationalities (from places) AgePassive (made in/of)"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a7\"/><w:tblW w:w=\"10064\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0010",
+      "xpath": "/w:document/w:body/w:tbl[10]",
+      "rows": 2,
+      "grid_columns": 5,
+      "cells": [
+        [
+          "question words",
+          "auxiliaries",
+          "subject",
+          "verb",
+          "the rest"
+        ],
+        [
+          "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOWHOW MANY HOW MUCH HOW FAR HOW LONG HOW OFTENHOW OLD",
+          "AM IS ARE WASWERE WILL",
+          "☺☺☺",
+          "AM IS ARE WASWERE WILL BE",
+          "Adjectives Prepositions (in-on- at)Adv. Of place (here)"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a8\"/><w:tblW w:w=\"10063\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0011",
+      "xpath": "/w:document/w:body/w:tbl[11]",
+      "rows": 2,
+      "grid_columns": 5,
+      "cells": [
+        [
+          "question words",
+          "auxiliaries",
+          "subject",
+          "verb",
+          "the rest"
+        ],
+        [
+          "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOWHOW MANY HOW MUCH HOW FAR HOW LONGHOW OFTEN HOW OLD",
+          "AM IS ARE WASWERE WILL",
+          "☺☺☺",
+          "AM IS ARE WASWERE WILL BE+Verb + ing",
+          "Prepositions of movement (into- onto…)Adv. of timeAdv. of frequency"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a9\"/><w:tblW w:w=\"10064\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0012",
+      "xpath": "/w:document/w:body/w:tbl[12]",
+      "rows": 3,
+      "grid_columns": 2,
+      "cells": [
+        [
+          "DO DONE COME SPEAK TALK WALK WORK... e qualquer verbo diferente de to bes verbos pertencentes ao grupo DO são ndependentes somente na afirmativa. Precisam do auxílio do DO para perguntar e negar. Ex.:(+ ) They work in that company.( - ) They DO not work in that company. (? ) DO they work in that company?",
+          "BE AM IS ARE WASWERE BEENOs verbos pertencentes ao grupo BE são independentes, já que o verbo TO BE é auxiliar. Ex.:(+ ) They are in that company.( - ) They are not in that company. (? ) Are they in that company?"
+        ],
+        [
+          "Da união dos dois grupos nasce uma nova família: GERUNDIO. Ex.:They ARE working in that company. They ARE not working in that company.ARE they working in that company?"
+        ],
+        [
+          "Auxiliares comuns aos dois grupos:WILL (futuro) HAVE / HAD (período)Modais:CAN / COULD / WOULD /SHALL / SHOULD / MAY / MIGHT / MUST"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"aa\"/><w:tblW w:w=\"9983\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    }
+  ],
+  "assets": [
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-86",
+      "source_filename": "image86.jpg",
+      "width": 1247,
+      "height": 1640,
+      "format": "JPEG",
+      "color_mode": "COLOR",
+      "alpha": false,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "953aea6a84d976708f9a5d998da97ae10d9dc18a3e7c0f6000e278013a3bf480",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "948",
+              "y": "311"
+            },
+            "ext": {
+              "cx": "9893",
+              "cy": "11570"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 90
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-88",
+      "source_filename": "image88.png",
+      "width": 621,
+      "height": 388,
+      "format": "PNG",
+      "color_mode": "COLOR",
+      "alpha": false,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "039cc333728b50707fbcfd7c8a07744a10f635cba184313000fa02013166e8ec",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "0",
+              "y": "0"
+            },
+            "ext": {
+              "cx": "2544332",
+              "cy": "1589151"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-89",
+      "source_filename": "image89.png",
+      "width": 734,
+      "height": 388,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": false,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "5d7382bde1cc9675110674e97e4392a93a6be152b2c7e6660376b80116ea1894",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "0",
+              "y": "0"
+            },
+            "ext": {
+              "cx": "2514348",
+              "cy": "1330452"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-90",
+      "source_filename": "image90.jpg",
+      "width": 904,
+      "height": 1290,
+      "format": "JPEG",
+      "color_mode": "COLOR",
+      "alpha": false,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "07eddb39f2fdb173d9a4a01430baab8c2963d880a9ea0b1d1f7976709f4beff8",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "0",
+              "y": "0"
+            },
+            "ext": {
+              "cx": "6440882",
+              "cy": "7863840"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 90
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-91",
+      "source_filename": "image91.jpg",
+      "width": 938,
+      "height": 1104,
+      "format": "JPEG",
+      "color_mode": "COLOR",
+      "alpha": false,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "5a8c7b25b03da79d50d13614ddadd5e8791ae9574b15cc724fbb43c2087e09e5",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "881",
+              "y": "-513"
+            },
+            "ext": {
+              "cx": "9550",
+              "cy": "11239"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-92",
+      "source_filename": "image92.png",
+      "width": 545,
+      "height": 676,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "b62e8a0fad33ac7606339d682d7145a3002400b37520e4fff2b500555ac43be5",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "1982",
+              "y": "4755"
+            },
+            "ext": {
+              "cx": "4084",
+              "cy": "5070"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-93",
+      "source_filename": "image93.png",
+      "width": 73,
+      "height": 26,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "3741cddadb586c7d0d5bd914208e6315041d130e5e84d8fa3094d009371a2c93",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5164",
+              "y": "665"
+            },
+            "ext": {
+              "cx": "551",
+              "cy": "200"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-94",
+      "source_filename": "image94.png",
+      "width": 40,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "1974a5967befb6e12f735f5cf44c5e0d1f50c9818711496126c42debcd28ece4",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5287",
+              "y": "979"
+            },
+            "ext": {
+              "cx": "303",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-95",
+      "source_filename": "image95.png",
+      "width": 80,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "ad6a59fbc73b359e77d29d3fd4473aef3078811a0acba76006cf94f521984d3f",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5139",
+              "y": "1294"
+            },
+            "ext": {
+              "cx": "597",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-96",
+      "source_filename": "image96.png",
+      "width": 94,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "0cf0da2139ef23fe74e57d4976b367b5394dc7714be6eef010c25438f730ec5b",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5086",
+              "y": "1609"
+            },
+            "ext": {
+              "cx": "702",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-97",
+      "source_filename": "image97.png",
+      "width": 114,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "996a719970a2b6caed8d006cfcb4041089feb436d86974091713cb2e77d8d3e0",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5009",
+              "y": "1924"
+            },
+            "ext": {
+              "cx": "854",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-98",
+      "source_filename": "image98.png",
+      "width": 58,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "592fe652b2401aa18607d99c61ef93fcc96f129d810616128b8618a8900b9da2",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5217",
+              "y": "2239"
+            },
+            "ext": {
+              "cx": "437",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-99",
+      "source_filename": "image99.png",
+      "width": 109,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "6547e43a578fd4e55268cd407863d477018f1407f896e44364fee40ca26fa5e4",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5026",
+              "y": "2554"
+            },
+            "ext": {
+              "cx": "817",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-101",
+      "source_filename": "image101.png",
+      "width": 71,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "35ba5ec774625676aa49cd73040ebf6beb7d9e8a7ec68d953c49616b4df0bd44",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5169",
+              "y": "2869"
+            },
+            "ext": {
+              "cx": "529",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-102",
+      "source_filename": "image102.png",
+      "width": 110,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "601d48fc9cad23f1678521cbb77b57669a4b84e2ba31a97d0e700e7927b29c10",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5020",
+              "y": "3498"
+            },
+            "ext": {
+              "cx": "823",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-103",
+      "source_filename": "image103.png",
+      "width": 134,
+      "height": 27,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "12f29074de4f1aebbaac1eb26094cdbbdcf21c6ad1da5ebcd6851e4d898683c2",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "4926",
+              "y": "4443"
+            },
+            "ext": {
+              "cx": "1006",
+              "cy": "203"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-104",
+      "source_filename": "image104.png",
+      "width": 84,
+      "height": 80,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "4f4294efb8b7a8be8d01bc0873d919e2602ab149e8fe0e9cf29897583623b3e4",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8653",
+              "y": "-1127"
+            },
+            "ext": {
+              "cx": "632",
+              "cy": "598"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-105",
+      "source_filename": "image105.png",
+      "width": 87,
+      "height": 82,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "5b8b19fe186bd34f17c580644094d909b51f99a9bd7817a8ac74f971898f8cc2",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8643",
+              "y": "-1137"
+            },
+            "ext": {
+              "cx": "652",
+              "cy": "618"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-106",
+      "source_filename": "image106.png",
+      "width": 160,
+      "height": 137,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "a3e0b59a82bb9f7361c35e912febcf5b61598d6aec7fa735032cd4a0cd2c1556",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "9418",
+              "y": "-700"
+            },
+            "ext": {
+              "cx": "1203",
+              "cy": "1029"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-107",
+      "source_filename": "image107.png",
+      "width": 216,
+      "height": 172,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "5d4f893c14b00db7e9ce79f278c8409f88bc90d3cfb4e3d2b7460fb584e7ce79",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "9785",
+              "y": "646"
+            },
+            "ext": {
+              "cx": "1625",
+              "cy": "1289"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-108",
+      "source_filename": "image108.png",
+      "width": 46,
+      "height": 46,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "5a3f90cddbe03ea460d9d87e892760e8f4edd16bb347fff7b6061207f2bb5f0d",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "6091",
+              "y": "-814"
+            },
+            "ext": {
+              "cx": "346",
+              "cy": "351"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-109",
+      "source_filename": "image109.png",
+      "width": 21,
+      "height": 22,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "f8228816cf97e796a79ccf6871a8c42f60ff4b7f461b60ee1b5492ca538c101a",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5880",
+              "y": "-427"
+            },
+            "ext": {
+              "cx": "160",
+              "cy": "162"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-110",
+      "source_filename": "image110.png",
+      "width": 48,
+      "height": 50,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "27750cc8fa562ebc985d8bd8da689bea0a7be7fcd7b105c1e5b29ebdb8bfb43e",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "6081",
+              "y": "-824"
+            },
+            "ext": {
+              "cx": "366",
+              "cy": "371"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-111",
+      "source_filename": "image111.png",
+      "width": 39,
+      "height": 39,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "1c55088361562737c000279c02713bdecaf1a4df647fb4d119d964b839f04c28",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "1812",
+              "y": "3265"
+            },
+            "ext": {
+              "cx": "296",
+              "cy": "296"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-112",
+      "source_filename": "image112.png",
+      "width": 42,
+      "height": 42,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "d258c20c373b1384b7d34423f7e7c61869b1916a034638820ac8d5f05f6835d3",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "1802",
+              "y": "3255"
+            },
+            "ext": {
+              "cx": "316",
+              "cy": "316"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-113",
+      "source_filename": "image113.png",
+      "width": 95,
+      "height": 188,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "99efca04c7140f749b598e2ae9d103c83942f056dc11771f1a198beefa28ebc7",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8062",
+              "y": "2433"
+            },
+            "ext": {
+              "cx": "710",
+              "cy": "1410"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:TOOLS:IMAGE-114",
+      "source_filename": "image114.png",
+      "width": 73,
+      "height": 215,
+      "format": "PNG",
+      "color_mode": "GRAYSCALE_CHANNELS",
+      "alpha": true,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "f9c3abbb7414e8f47850be8eb41c8bbb640aab241ee0ccabb82f95b6c369beaf",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8442",
+              "y": "713"
+            },
+            "ext": {
+              "cx": "547",
+              "cy": "1614"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    },
+    {
+      "id": "MVP:ASSET:MASTER-EXISTENCE-001",
+      "source_filename": "image138.jpg",
+      "width": 376,
+      "height": 188,
+      "format": "JPEG",
+      "color_mode": "COLOR",
+      "alpha": false,
+      "origin": "MASTER_ORIGINAL",
+      "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+      "original_width_mm": null,
+      "original_height_mm": null,
+      "geometry_status": "LOCAL_DRAWING_TRANSFORM_RECORDED_PHYSICAL_SCALE_PENDING",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "3871",
+              "y": "280"
+            },
+            "ext": {
+              "cx": "2711",
+              "cy": "1354"
+            }
+          }
+        }
+      ],
+      "reading_rotation": 0
+    }
+  ],
+  "image_references": [
+    {
+      "paragraph_id": "P01133",
+      "relationship": "rId91",
+      "representation": "DRAWINGML",
+      "path": "word/media/image86.jpg",
+      "sha256": "953aea6a84d976708f9a5d998da97ae10d9dc18a3e7c0f6000e278013a3bf480",
+      "width_px": 1247,
+      "height_px": 1640,
+      "format": "JPEG",
+      "mode": "RGB",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "948",
+              "y": "311"
+            },
+            "ext": {
+              "cx": "9893",
+              "cy": "11570"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01133",
+      "relationship": "rId92",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image87.jpeg",
+      "sha256": "953aea6a84d976708f9a5d998da97ae10d9dc18a3e7c0f6000e278013a3bf480",
+      "width_px": 1247,
+      "height_px": 1640,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "paragraph_id": "P01307",
+      "relationship": "rId93",
+      "representation": "DRAWINGML",
+      "path": "word/media/image88.png",
+      "sha256": "039cc333728b50707fbcfd7c8a07744a10f635cba184313000fa02013166e8ec",
+      "width_px": 621,
+      "height_px": 388,
+      "format": "PNG",
+      "mode": "P",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "0",
+              "y": "0"
+            },
+            "ext": {
+              "cx": "2544332",
+              "cy": "1589151"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01307",
+      "relationship": "rId94",
+      "representation": "DRAWINGML",
+      "path": "word/media/image89.png",
+      "sha256": "5d7382bde1cc9675110674e97e4392a93a6be152b2c7e6660376b80116ea1894",
+      "width_px": 734,
+      "height_px": 388,
+      "format": "PNG",
+      "mode": "P",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "0",
+              "y": "0"
+            },
+            "ext": {
+              "cx": "2514348",
+              "cy": "1330452"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01335",
+      "relationship": "rId95",
+      "representation": "DRAWINGML",
+      "path": "word/media/image90.jpg",
+      "sha256": "07eddb39f2fdb173d9a4a01430baab8c2963d880a9ea0b1d1f7976709f4beff8",
+      "width_px": 904,
+      "height_px": 1290,
+      "format": "JPEG",
+      "mode": "RGB",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "0",
+              "y": "0"
+            },
+            "ext": {
+              "cx": "6440882",
+              "cy": "7863840"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId96",
+      "representation": "DRAWINGML",
+      "path": "word/media/image91.jpg",
+      "sha256": "5a8c7b25b03da79d50d13614ddadd5e8791ae9574b15cc724fbb43c2087e09e5",
+      "width_px": 938,
+      "height_px": 1104,
+      "format": "JPEG",
+      "mode": "RGB",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "881",
+              "y": "-513"
+            },
+            "ext": {
+              "cx": "9550",
+              "cy": "11239"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId97",
+      "representation": "DRAWINGML",
+      "path": "word/media/image92.png",
+      "sha256": "b62e8a0fad33ac7606339d682d7145a3002400b37520e4fff2b500555ac43be5",
+      "width_px": 545,
+      "height_px": 676,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "1982",
+              "y": "4755"
+            },
+            "ext": {
+              "cx": "4084",
+              "cy": "5070"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId98",
+      "representation": "DRAWINGML",
+      "path": "word/media/image93.png",
+      "sha256": "3741cddadb586c7d0d5bd914208e6315041d130e5e84d8fa3094d009371a2c93",
+      "width_px": 73,
+      "height_px": 26,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5164",
+              "y": "665"
+            },
+            "ext": {
+              "cx": "551",
+              "cy": "200"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId99",
+      "representation": "DRAWINGML",
+      "path": "word/media/image94.png",
+      "sha256": "1974a5967befb6e12f735f5cf44c5e0d1f50c9818711496126c42debcd28ece4",
+      "width_px": 40,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5287",
+              "y": "979"
+            },
+            "ext": {
+              "cx": "303",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId100",
+      "representation": "DRAWINGML",
+      "path": "word/media/image95.png",
+      "sha256": "ad6a59fbc73b359e77d29d3fd4473aef3078811a0acba76006cf94f521984d3f",
+      "width_px": 80,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5139",
+              "y": "1294"
+            },
+            "ext": {
+              "cx": "597",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId101",
+      "representation": "DRAWINGML",
+      "path": "word/media/image96.png",
+      "sha256": "0cf0da2139ef23fe74e57d4976b367b5394dc7714be6eef010c25438f730ec5b",
+      "width_px": 94,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5086",
+              "y": "1609"
+            },
+            "ext": {
+              "cx": "702",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId102",
+      "representation": "DRAWINGML",
+      "path": "word/media/image97.png",
+      "sha256": "996a719970a2b6caed8d006cfcb4041089feb436d86974091713cb2e77d8d3e0",
+      "width_px": 114,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5009",
+              "y": "1924"
+            },
+            "ext": {
+              "cx": "854",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId103",
+      "representation": "DRAWINGML",
+      "path": "word/media/image98.png",
+      "sha256": "592fe652b2401aa18607d99c61ef93fcc96f129d810616128b8618a8900b9da2",
+      "width_px": 58,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5217",
+              "y": "2239"
+            },
+            "ext": {
+              "cx": "437",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId104",
+      "representation": "DRAWINGML",
+      "path": "word/media/image99.png",
+      "sha256": "6547e43a578fd4e55268cd407863d477018f1407f896e44364fee40ca26fa5e4",
+      "width_px": 109,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5026",
+              "y": "2554"
+            },
+            "ext": {
+              "cx": "817",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId105",
+      "representation": "DRAWINGML",
+      "path": "word/media/image101.png",
+      "sha256": "35ba5ec774625676aa49cd73040ebf6beb7d9e8a7ec68d953c49616b4df0bd44",
+      "width_px": 71,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5169",
+              "y": "2869"
+            },
+            "ext": {
+              "cx": "529",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId106",
+      "representation": "DRAWINGML",
+      "path": "word/media/image102.png",
+      "sha256": "601d48fc9cad23f1678521cbb77b57669a4b84e2ba31a97d0e700e7927b29c10",
+      "width_px": 110,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5020",
+              "y": "3498"
+            },
+            "ext": {
+              "cx": "823",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId107",
+      "representation": "DRAWINGML",
+      "path": "word/media/image103.png",
+      "sha256": "12f29074de4f1aebbaac1eb26094cdbbdcf21c6ad1da5ebcd6851e4d898683c2",
+      "width_px": 134,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "4926",
+              "y": "4443"
+            },
+            "ext": {
+              "cx": "1006",
+              "cy": "203"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId108",
+      "representation": "DRAWINGML",
+      "path": "word/media/image104.png",
+      "sha256": "4f4294efb8b7a8be8d01bc0873d919e2602ab149e8fe0e9cf29897583623b3e4",
+      "width_px": 84,
+      "height_px": 80,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8653",
+              "y": "-1127"
+            },
+            "ext": {
+              "cx": "632",
+              "cy": "598"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId109",
+      "representation": "DRAWINGML",
+      "path": "word/media/image105.png",
+      "sha256": "5b8b19fe186bd34f17c580644094d909b51f99a9bd7817a8ac74f971898f8cc2",
+      "width_px": 87,
+      "height_px": 82,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8643",
+              "y": "-1137"
+            },
+            "ext": {
+              "cx": "652",
+              "cy": "618"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId110",
+      "representation": "DRAWINGML",
+      "path": "word/media/image106.png",
+      "sha256": "a3e0b59a82bb9f7361c35e912febcf5b61598d6aec7fa735032cd4a0cd2c1556",
+      "width_px": 160,
+      "height_px": 137,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "9418",
+              "y": "-700"
+            },
+            "ext": {
+              "cx": "1203",
+              "cy": "1029"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId111",
+      "representation": "DRAWINGML",
+      "path": "word/media/image107.png",
+      "sha256": "5d4f893c14b00db7e9ce79f278c8409f88bc90d3cfb4e3d2b7460fb584e7ce79",
+      "width_px": 216,
+      "height_px": 172,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "9785",
+              "y": "646"
+            },
+            "ext": {
+              "cx": "1625",
+              "cy": "1289"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId112",
+      "representation": "DRAWINGML",
+      "path": "word/media/image108.png",
+      "sha256": "5a3f90cddbe03ea460d9d87e892760e8f4edd16bb347fff7b6061207f2bb5f0d",
+      "width_px": 46,
+      "height_px": 46,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "6091",
+              "y": "-814"
+            },
+            "ext": {
+              "cx": "346",
+              "cy": "351"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId113",
+      "representation": "DRAWINGML",
+      "path": "word/media/image109.png",
+      "sha256": "f8228816cf97e796a79ccf6871a8c42f60ff4b7f461b60ee1b5492ca538c101a",
+      "width_px": 21,
+      "height_px": 22,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "5880",
+              "y": "-427"
+            },
+            "ext": {
+              "cx": "160",
+              "cy": "162"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId114",
+      "representation": "DRAWINGML",
+      "path": "word/media/image110.png",
+      "sha256": "27750cc8fa562ebc985d8bd8da689bea0a7be7fcd7b105c1e5b29ebdb8bfb43e",
+      "width_px": 48,
+      "height_px": 50,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "6081",
+              "y": "-824"
+            },
+            "ext": {
+              "cx": "366",
+              "cy": "371"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId115",
+      "representation": "DRAWINGML",
+      "path": "word/media/image111.png",
+      "sha256": "1c55088361562737c000279c02713bdecaf1a4df647fb4d119d964b839f04c28",
+      "width_px": 39,
+      "height_px": 39,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "1812",
+              "y": "3265"
+            },
+            "ext": {
+              "cx": "296",
+              "cy": "296"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId116",
+      "representation": "DRAWINGML",
+      "path": "word/media/image112.png",
+      "sha256": "d258c20c373b1384b7d34423f7e7c61869b1916a034638820ac8d5f05f6835d3",
+      "width_px": 42,
+      "height_px": 42,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "1802",
+              "y": "3255"
+            },
+            "ext": {
+              "cx": "316",
+              "cy": "316"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId117",
+      "representation": "DRAWINGML",
+      "path": "word/media/image113.png",
+      "sha256": "99efca04c7140f749b598e2ae9d103c83942f056dc11771f1a198beefa28ebc7",
+      "width_px": 95,
+      "height_px": 188,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8062",
+              "y": "2433"
+            },
+            "ext": {
+              "cx": "710",
+              "cy": "1410"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId118",
+      "representation": "DRAWINGML",
+      "path": "word/media/image114.png",
+      "sha256": "f9c3abbb7414e8f47850be8eb41c8bbb640aab241ee0ccabb82f95b6c369beaf",
+      "width_px": 73,
+      "height_px": 215,
+      "format": "PNG",
+      "mode": "RGBA",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "8442",
+              "y": "713"
+            },
+            "ext": {
+              "cx": "547",
+              "cy": "1614"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId119",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image115.jpeg",
+      "sha256": "5a8c7b25b03da79d50d13614ddadd5e8791ae9574b15cc724fbb43c2087e09e5",
+      "width_px": 938,
+      "height_px": 1104,
+      "format": "JPEG",
+      "mode": "RGB"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId120",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image116.png",
+      "sha256": "b62e8a0fad33ac7606339d682d7145a3002400b37520e4fff2b500555ac43be5",
+      "width_px": 545,
+      "height_px": 676,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId121",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image117.png",
+      "sha256": "3741cddadb586c7d0d5bd914208e6315041d130e5e84d8fa3094d009371a2c93",
+      "width_px": 73,
+      "height_px": 26,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId122",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image118.png",
+      "sha256": "1974a5967befb6e12f735f5cf44c5e0d1f50c9818711496126c42debcd28ece4",
+      "width_px": 40,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId123",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image119.png",
+      "sha256": "ad6a59fbc73b359e77d29d3fd4473aef3078811a0acba76006cf94f521984d3f",
+      "width_px": 80,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId124",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image120.png",
+      "sha256": "0cf0da2139ef23fe74e57d4976b367b5394dc7714be6eef010c25438f730ec5b",
+      "width_px": 94,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId125",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image121.png",
+      "sha256": "996a719970a2b6caed8d006cfcb4041089feb436d86974091713cb2e77d8d3e0",
+      "width_px": 114,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId126",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image122.png",
+      "sha256": "592fe652b2401aa18607d99c61ef93fcc96f129d810616128b8618a8900b9da2",
+      "width_px": 58,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId127",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image123.png",
+      "sha256": "6547e43a578fd4e55268cd407863d477018f1407f896e44364fee40ca26fa5e4",
+      "width_px": 109,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId128",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image124.png",
+      "sha256": "35ba5ec774625676aa49cd73040ebf6beb7d9e8a7ec68d953c49616b4df0bd44",
+      "width_px": 71,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId129",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image125.png",
+      "sha256": "601d48fc9cad23f1678521cbb77b57669a4b84e2ba31a97d0e700e7927b29c10",
+      "width_px": 110,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId130",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image126.png",
+      "sha256": "12f29074de4f1aebbaac1eb26094cdbbdcf21c6ad1da5ebcd6851e4d898683c2",
+      "width_px": 134,
+      "height_px": 27,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId131",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image127.png",
+      "sha256": "4f4294efb8b7a8be8d01bc0873d919e2602ab149e8fe0e9cf29897583623b3e4",
+      "width_px": 84,
+      "height_px": 80,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId132",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image128.png",
+      "sha256": "5b8b19fe186bd34f17c580644094d909b51f99a9bd7817a8ac74f971898f8cc2",
+      "width_px": 87,
+      "height_px": 82,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId133",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image129.png",
+      "sha256": "a3e0b59a82bb9f7361c35e912febcf5b61598d6aec7fa735032cd4a0cd2c1556",
+      "width_px": 160,
+      "height_px": 137,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId134",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image130.png",
+      "sha256": "5d4f893c14b00db7e9ce79f278c8409f88bc90d3cfb4e3d2b7460fb584e7ce79",
+      "width_px": 216,
+      "height_px": 172,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId135",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image131.png",
+      "sha256": "5a3f90cddbe03ea460d9d87e892760e8f4edd16bb347fff7b6061207f2bb5f0d",
+      "width_px": 46,
+      "height_px": 46,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId136",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image132.png",
+      "sha256": "f8228816cf97e796a79ccf6871a8c42f60ff4b7f461b60ee1b5492ca538c101a",
+      "width_px": 21,
+      "height_px": 22,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId137",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image133.png",
+      "sha256": "27750cc8fa562ebc985d8bd8da689bea0a7be7fcd7b105c1e5b29ebdb8bfb43e",
+      "width_px": 48,
+      "height_px": 50,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId138",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image134.png",
+      "sha256": "1c55088361562737c000279c02713bdecaf1a4df647fb4d119d964b839f04c28",
+      "width_px": 39,
+      "height_px": 39,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId139",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image135.png",
+      "sha256": "d258c20c373b1384b7d34423f7e7c61869b1916a034638820ac8d5f05f6835d3",
+      "width_px": 42,
+      "height_px": 42,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId140",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image136.png",
+      "sha256": "99efca04c7140f749b598e2ae9d103c83942f056dc11771f1a198beefa28ebc7",
+      "width_px": 95,
+      "height_px": 188,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01345",
+      "relationship": "rId141",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image137.png",
+      "sha256": "f9c3abbb7414e8f47850be8eb41c8bbb640aab241ee0ccabb82f95b6c369beaf",
+      "width_px": 73,
+      "height_px": 215,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    {
+      "paragraph_id": "P01398",
+      "relationship": "rId142",
+      "representation": "DRAWINGML",
+      "path": "word/media/image138.jpg",
+      "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+      "width_px": 376,
+      "height_px": 188,
+      "format": "JPEG",
+      "mode": "RGB",
+      "local_transform": [
+        {
+          "attributes": {},
+          "parts": {
+            "off": {
+              "x": "3871",
+              "y": "280"
+            },
+            "ext": {
+              "cx": "2711",
+              "cy": "1354"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P01398",
+      "relationship": "rId143",
+      "representation": "VML_ALTERNATE",
+      "path": "word/media/image139.jpeg",
+      "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+      "width_px": 376,
+      "height_px": 188,
+      "format": "JPEG",
+      "mode": "RGB"
+    }
+  ],
+  "issues": [
+    {
+      "id": "MVP:REVIEW:TOOLS:001",
+      "source_ids": [
+        "P01141",
+        "P01142"
+      ],
+      "observation": "A frase que proíbe dois auxiliares generaliza uma restrição que precisa distinguir modais de cadeias de auxiliares.",
+      "comparison_unit_id": "MVP:UNIT:TOOLS:STUDY:AUX-CHAINS",
+      "status": "REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:TOOLS:002",
+      "source_ids": [
+        "P01182",
+        "P01183"
+      ],
+      "observation": "Have to, need to e be able to não compartilham uma única regra de auxiliar em todas as construções.",
+      "comparison_unit_id": "MVP:UNIT:TOOLS:STUDY:PERIPHRASES",
+      "status": "REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:TOOLS:003",
+      "source_ids": [
+        "P01286",
+        "P01294",
+        "P01298"
+      ],
+      "observation": "Grupo DO/BE e a denominação gerúndio precisam ser contextualizados ao padrão em estudo; não universalizar para todos os tempos e usos.",
+      "status": "REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:TOOLS:004",
+      "source_ids": [
+        "P01345"
+      ],
+      "observation": "Grupo contém imagens e glifos de fonte especial; a extração em camadas não comprova fidelidade da montagem integral.",
+      "status": "VISUAL_RECONSTRUCTION_PENDING"
+    }
+  ],
+  "source_units": [
+    "MVP:UNIT:TOOLS:SOURCE:AUX-INTRO",
+    "MVP:UNIT:TOOLS:SOURCE:VERB-MAP",
+    "MVP:UNIT:TOOLS:SOURCE:TABLE:T0008",
+    "MVP:UNIT:TOOLS:SOURCE:TABLE:T0009",
+    "MVP:UNIT:TOOLS:SOURCE:TABLE:T0010",
+    "MVP:UNIT:TOOLS:SOURCE:TABLE:T0011",
+    "MVP:UNIT:TOOLS:SOURCE:TABLE:T0012",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:86",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:88",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:89",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:90",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:91",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:92",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:93",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:94",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:95",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:96",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:97",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:98",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:99",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:101",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:102",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:103",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:104",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:105",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:106",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:107",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:108",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:109",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:110",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:111",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:112",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:113",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:114",
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:138"
+  ],
+  "status": "STRUCTURAL_EXTRACTION_NOT_FULL_VISUAL_RECONSTRUCTION"
+}
