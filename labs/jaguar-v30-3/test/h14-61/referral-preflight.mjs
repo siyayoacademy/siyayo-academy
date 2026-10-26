@@ -12,7 +12,7 @@ function validProposal(p){
    'proposedOriginExperienceId','proposalKind','authorized','serverVerified','actionVerified',
    'maySubmitAttempt','mayStartSession','mayIssueEvidence','mayGrantGreenPass','automaticForward']))return false;
  if(!token(p.experienceId)||!token(p.questionWord)||!LANGS.has(p.language)||
-    !token(p.skill)||!token(p.definitionPath)||!token(p.proposedOriginExperienceId))return false;
+    !token(p.skill)||typeof p.definitionPath!=='string'||!/^data\/learning\/skills\/[a-z0-9-]+\.json$/.test(p.definitionPath)||!token(p.proposedOriginExperienceId))return false;
  if(!['START_PROPOSAL_UNVERIFIED','RESUME_PROPOSAL_UNVERIFIED'].includes(p.proposalKind))return false;
  if(!['authorized','serverVerified','actionVerified','maySubmitAttempt','mayStartSession',
    'mayIssueEvidence','mayGrantGreenPass','automaticForward'].every(k=>p[k]===false))return false;
