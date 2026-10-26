@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.4.0",
+  "catalog_version": "0.5.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -9,65 +9,145 @@
     {
       "id": "MVP:CH:ORIENTATION",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:FOUNDATIONS",
-      "status": "PLANNED",
-      "sections": []
+      "status": "SOURCE_AND_STUDY",
+      "source_map": "data/foundations-source-map.json",
+      "sections": [
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-CLASSES",
+          "title": "Estudo · Dez classes",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:TEN-KINDS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+          "title": "Estudo · Cinco funções",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:QUALITY",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-ORDER",
+          "title": "Estudo · Construção de orações",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:ORDER",
+            "MVP:UNIT:FOUNDATIONS:STUDY:QUESTION-CONTRAST"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-CONNECTIONS",
+          "title": "Conexões de estudo",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:FREE-NAVIGATION"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:SOURCE-CLASSES",
+          "title": "Original · Dez classes",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+          "title": "Original · Cinco funções",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:SOURCE:FUNCTIONS-INTRO",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:SOURCE-ORDER",
+          "title": "Original · Ordem das orações",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-INTRO",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES"
+          ]
+        }
+      ]
     },
     {
       "id": "MVP:CH:TOOLS",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:TO-BE",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:QUESTIONS",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:MOVEMENT",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:ACTION-PRESENT",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:ACTION-FUTURE",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:ACTION-PAST",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:PERFECT-PERIOD",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:EXISTENCE",
       "status": "SOURCE_AND_PILOT",
+      "source_map": "data/existence-source-map.json",
       "sections": [
         {
           "id": "MVP:SEC:EXISTENCE:INTRO",
+          "title": "Introdução",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:CONCEPT:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:PRESENT",
+          "title": "Present",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:MODEL:001",
             "MVP:UNIT:EXISTENCE:TABLE:001",
@@ -76,48 +156,68 @@
         },
         {
           "id": "MVP:SEC:EXISTENCE:CONTRAST",
+          "title": "Contrastes",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:CONTRAST:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:QUESTIONS",
+          "title": "Perguntas",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:QUESTIONS:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:TIME",
+          "title": "Past / Future",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:TIME:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:PRACTICE",
+          "title": "Prática",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:PRACTICE:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:ANSWERS",
+          "title": "Gabarito",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:ANSWERS:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:GLOSSARY",
+          "title": "Glossário",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:GLOSSARY:001"
           ]
         },
         {
+          "id": "MVP:SEC:EXISTENCE:EDITORIAL-REVIEW",
+          "title": "Revisão editorial",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:REVIEW:REGISTER",
+            "MVP:UNIT:EXISTENCE:REVIEW:COUNTABILITY",
+            "MVP:UNIT:EXISTENCE:REVIEW:TAXES",
+            "MVP:UNIT:EXISTENCE:REVIEW:PAST",
+            "MVP:UNIT:EXISTENCE:REVIEW:FUTURE-ABILITY",
+            "MVP:UNIT:EXISTENCE:REVIEW:REFORMULATION"
+          ]
+        },
+        {
           "id": "MVP:SEC:EXISTENCE:SOURCE-COMPARE",
+          "title": "Original · Comparação",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:SOURCE:COMPARE:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:SOURCE-PARADIGMS",
+          "title": "Original · Tabelas",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:001",
             "MVP:UNIT:EXISTENCE:SOURCE:PARADIGM:002",
@@ -126,6 +226,7 @@
         },
         {
           "id": "MVP:SEC:EXISTENCE:SOURCE-REFORMULATE",
+          "title": "Original · Reformulação",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATION-MODEL:001",
             "MVP:UNIT:EXISTENCE:SOURCE:REFORMULATE:001",
@@ -137,12 +238,14 @@
         },
         {
           "id": "MVP:SEC:EXISTENCE:SOURCE-FIGURE",
+          "title": "Original · Figura",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:SOURCE:FIGURE:001"
           ]
         },
         {
           "id": "MVP:SEC:EXISTENCE:SOURCE-EXERCISES",
+          "title": "Original · Exercícios",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:001",
             "MVP:UNIT:EXISTENCE:SOURCE:EXERCISE:002",
@@ -159,6 +262,7 @@
         },
         {
           "id": "MVP:SEC:EXISTENCE:SOURCE-ANSWERS",
+          "title": "Original · Respostas",
           "unit_ids": [
             "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:001",
             "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:002",
@@ -178,21 +282,25 @@
     {
       "id": "MVP:CH:VERBAL-SYSTEMS",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:WORD-CLASSES",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:VERB-LEXICON",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     },
     {
       "id": "MVP:CH:REFERENCE",
       "status": "PLANNED",
+      "source_map": null,
       "sections": []
     }
   ],
@@ -212,6 +320,19 @@
     ],
     "pages_per_edition": 5,
     "qa": "RENDERED_VISUALLY_REVIEWED",
-    "physical_proof": "PENDING"
+    "physical_proof": "PENDING",
+    "source_catalog_version": "0.4.0"
+  },
+  "foundations": {
+    "bounds": [
+      "P00897",
+      "P01129"
+    ],
+    "paragraphs_classified": 233,
+    "tables": 4,
+    "source_units": 15,
+    "adaptation_units": 9,
+    "visual_reconstruction": "PENDING",
+    "technical_images": 1
   }
 }

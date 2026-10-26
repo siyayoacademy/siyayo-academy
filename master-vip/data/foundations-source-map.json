@@ -1,0 +1,2626 @@
+{
+  "id": "MVP:SOURCE:FOUNDATIONS",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "bounds": {
+    "first": "P00897",
+    "last": "P01129",
+    "next_heading": "P01130 English Face - The order of sentences"
+  },
+  "paragraphs": [
+    {
+      "source_id": "P00897",
+      "xpath": "/w:document/w:body/w:p[178]",
+      "text": "As 10 classes de palavras",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES",
+        "MVP:UNIT:FOUNDATIONS:STUDY:TEN-KINDS"
+      ]
+    },
+    {
+      "source_id": "P00898",
+      "xpath": "/w:document/w:body/w:p[179]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00899",
+      "xpath": "/w:document/w:body/w:p[180]",
+      "text": "Assim como em português, em inglês toda palavra pertence a uma família, de acordo com a sua função na frase.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00900",
+      "xpath": "/w:document/w:body/w:p[181]",
+      "text": "Existem 10 classes de palavras:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES",
+        "MVP:UNIT:FOUNDATIONS:STUDY:TEN-KINDS"
+      ]
+    },
+    {
+      "source_id": "P00901",
+      "xpath": "/w:document/w:body/w:p[182]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00902",
+      "xpath": "/w:document/w:body/w:p[183]",
+      "text": "Verbs: indicam qualidade, estado, movimento, ação ou existência. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00903",
+      "xpath": "/w:document/w:body/w:p[184]",
+      "text": "drive, work, live,  ",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00904",
+      "xpath": "/w:document/w:body/w:p[185]",
+      "text": "Nouns: dão nome às coisas. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00905",
+      "xpath": "/w:document/w:body/w:p[186]",
+      "text": "chair, table, coffee,  ",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00906",
+      "xpath": "/w:document/w:body/w:p[187]",
+      "text": "Articles: definem ou indefinem um nome. Exemplos: a, an, the",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00907",
+      "xpath": "/w:document/w:body/w:p[188]",
+      "text": "Pronouns: acompanham ou substituem o nome. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00908",
+      "xpath": "/w:document/w:body/w:p[189]",
+      "text": "she, her, hers,  ",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00909",
+      "xpath": "/w:document/w:body/w:p[190]",
+      "text": "Adjectives: caracterizam o nome. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00910",
+      "xpath": "/w:document/w:body/w:p[191]",
+      "text": "beautiful, cheap, short, _  Adverbs: dão mais informação sobre o verbo, adjetivo ou o próprio advérbio. Exemplos (complete): here, there, slowly,   Prepositions: indicam posição, direção. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:005"
+      ]
+    },
+    {
+      "source_id": "P00911",
+      "xpath": "/w:document/w:body/w:p[192]",
+      "text": "in, behind, under,  ",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00912",
+      "xpath": "/w:document/w:body/w:p[193]",
+      "text": "Conjunctions: ligam duas frases. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00913",
+      "xpath": "/w:document/w:body/w:p[194]",
+      "text": "but, and, because,  ",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00914",
+      "xpath": "/w:document/w:body/w:p[195]",
+      "text": "Numbers: indicam quantidade ou posição. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00915",
+      "xpath": "/w:document/w:body/w:p[196]",
+      "text": "one, twelve, first,  ",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00916",
+      "xpath": "/w:document/w:body/w:p[197]",
+      "text": "Interjections: expressam emoção. Exemplos (complete):",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ]
+    },
+    {
+      "source_id": "P00917",
+      "xpath": "/w:document/w:body/w:p[198]",
+      "text": "wow, yay, oh my God,   Os VERBOS são a classe de palavras mais importante, pois sem eles não podemos formar uma oração. As outras classes são consideradas ACESSÓRIOS, pois podem ou  não  ser  usadas,  de acordo com a frase. É por isso que a apostila é dividida em duas partes: VERBOS e ACESSÓRIOS.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:005"
+      ]
+    },
+    {
+      "source_id": "P00918",
+      "xpath": "/w:document/w:body/w:p[199]",
+      "text": "A parte de verbos é feita na ordem em que aparece na apostila, já a parte de acessórios é usada de acordo",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FREE-NAVIGATION"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:001"
+      ]
+    },
+    {
+      "source_id": "P00919",
+      "xpath": "/w:document/w:body/w:p[200]",
+      "text": "com o verbo que você está estudando. Por exemplo: o verbo ‘to be’ combina com adjetivos (she is beautiful, we are tall...) O seu professor indicará quando usar um acessório.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FREE-NAVIGATION"
+      ]
+    },
+    {
+      "source_id": "P00920",
+      "xpath": "/w:document/w:body/w:p[201]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00921",
+      "xpath": "/w:document/w:body/w:p[202]",
+      "text": "DIVISÃO DA APOSTILA",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION"
+      ]
+    },
+    {
+      "source_id": "P00922",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[1]/w:p[1]",
+      "text": "VERBS (seguir em ordem)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:001"
+      ]
+    },
+    {
+      "source_id": "P00923",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[1]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00924",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[1]/w:p[3]",
+      "text": "Quality & State: presente, past and future (simple and perfect)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00925",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[1]/w:p[4]",
+      "text": "Movement: : presente, past and future (simple and perfect)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00926",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[1]/w:p[5]",
+      "text": "Action: presente, past and future (simple and perfect)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00927",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[1]/w:p[6]",
+      "text": "Existence: presente, past and future (simple and perfect)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00928",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[2]/w:p[1]",
+      "text": "ACESSORIES (ver de acordo com os verbos)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00929",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[2]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00930",
+      "xpath": "/w:document/w:body/w:tbl[4]/w:tr/w:tc[2]/w:p[3]",
+      "text": "Nouns Articles Pronouns Adjectives Adverbs Prepositions Conjunctions Numbers Interjections",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+      ]
+    },
+    {
+      "source_id": "P00931",
+      "xpath": "/w:document/w:body/w:p[203]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00932",
+      "xpath": "/w:document/w:body/w:p[204]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00933",
+      "xpath": "/w:document/w:body/w:p[205]",
+      "text": "As cinco funções do verbo",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:FUNCTIONS-INTRO"
+      ]
+    },
+    {
+      "source_id": "P00934",
+      "xpath": "/w:document/w:body/w:p[206]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00935",
+      "xpath": "/w:document/w:body/w:p[207]",
+      "text": "CONSIDERAÇÕES GERAIS: Iniciaremos nossos exercícios e explicações pelo VERBO, pois ele é o elemento essencial de qualquer oração. As outras nove classes de palavras entrarão como “acessórios”, as quais você precisa praticar em aula, com o professor, e em casa, com os exercícios.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:FUNCTIONS-INTRO"
+      ]
+    },
+    {
+      "source_id": "P00936",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[1]/w:tc[1]/w:p",
+      "text": "FUNÇÕES",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00937",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[1]/w:tc[2]/w:p",
+      "text": "O QUE É",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00938",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[1]/w:tc[3]/w:p",
+      "text": "INGLÊS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00939",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[1]/w:tc[4]/w:p",
+      "text": "PORTUGUÊS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00940",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[1]/w:tc[5]/w:p",
+      "text": "EXEMPLO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00941",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00942",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[1]/w:p[2]",
+      "text": "QUALITY",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00943",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[2]/w:p",
+      "text": "Característica permanente",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:QUALITY"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:004"
+      ]
+    },
+    {
+      "source_id": "P00944",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00945",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[3]/w:p[2]",
+      "text": "TO BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00946",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[4]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00947",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[4]/w:p[2]",
+      "text": "SER",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00948",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[2]/w:tc[5]/w:p",
+      "text": "She is tall. Ela é alta.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00949",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00950",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[1]/w:p[2]",
+      "text": "STATE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE"
+      ]
+    },
+    {
+      "source_id": "P00951",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[2]/w:p",
+      "text": "Característica temporária",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:004"
+      ]
+    },
+    {
+      "source_id": "P00952",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00953",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[3]/w:p[2]",
+      "text": "TO BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00954",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[4]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00955",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[4]/w:p[2]",
+      "text": "ESTAR",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00956",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[5]/w:p[1]",
+      "text": "He is sick.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE"
+      ]
+    },
+    {
+      "source_id": "P00957",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[3]/w:tc[5]/w:p[2]",
+      "text": "Ele está doente.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE"
+      ]
+    },
+    {
+      "source_id": "P00958",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00959",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[1]/w:p[2]",
+      "text": "MOVEMENT",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT"
+      ]
+    },
+    {
+      "source_id": "P00960",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[2]/w:p",
+      "text": "Ação simultânea à fala",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:004"
+      ]
+    },
+    {
+      "source_id": "P00961",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[3]/w:p[1]",
+      "text": "TO BE +",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00962",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[3]/w:p[2]",
+      "text": "(verbo) ING",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00963",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[4]/w:p",
+      "text": "ESTAR + (verbo) ANDO/ENDO/INDO",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00964",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[5]/w:p[1]",
+      "text": "We are eating pizza. Nós estamos comendo",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT"
+      ]
+    },
+    {
+      "source_id": "P00965",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[4]/w:tc[5]/w:p[2]",
+      "text": "pizza.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT"
+      ]
+    },
+    {
+      "source_id": "P00966",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00967",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[1]/w:p[2]",
+      "text": "ACTION",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION"
+      ]
+    },
+    {
+      "source_id": "P00968",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[2]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00969",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[2]/w:p[2]",
+      "text": "Rotina, hábito",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:004"
+      ]
+    },
+    {
+      "source_id": "P00970",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[3]/w:p",
+      "text": "TODOS MENOS TO BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00971",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[4]/w:p",
+      "text": "TODOS MENOS SER E ESTAR",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00972",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[5]/w:p[1]",
+      "text": "They eat pizza every day. Eles comem pizza todo",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION"
+      ]
+    },
+    {
+      "source_id": "P00973",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[5]/w:tc[5]/w:p[2]",
+      "text": "dia.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION"
+      ]
+    },
+    {
+      "source_id": "P00974",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[1]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00975",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[1]/w:p[2]",
+      "text": "EXISTENCE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P00976",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[2]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00977",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[2]/w:p[2]",
+      "text": "Fato",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00978",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[3]/w:p",
+      "text": "THERE + TO BE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P00979",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[4]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00980",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[4]/w:p[2]",
+      "text": "HAVER, EXISTIR",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005"
+      ]
+    },
+    {
+      "source_id": "P00981",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[5]/w:p[1]",
+      "text": "There is a man outside.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P00982",
+      "xpath": "/w:document/w:body/w:tbl[5]/w:tr[6]/w:tc[5]/w:p[2]",
+      "text": "Há um homem lá fora.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P00983",
+      "xpath": "/w:document/w:body/w:p[208]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00984",
+      "xpath": "/w:document/w:body/w:p[209]",
+      "text": "Veja mais exemplos:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00985",
+      "xpath": "/w:document/w:body/w:p[210]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00986",
+      "xpath": "/w:document/w:body/w:p[211]",
+      "text": "QUALIDADE-TO BE (SER)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00987",
+      "xpath": "/w:document/w:body/w:p[212]",
+      "text": "I am a teacher. Eu sou um professor",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00988",
+      "xpath": "/w:document/w:body/w:p[213]",
+      "text": "Helen is a good driver. Helen é uma boa motorista.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00989",
+      "xpath": "/w:document/w:body/w:p[214]",
+      "text": "Peter and Paul are from the United States. Peter e Paul são dos Estados Unidos.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY"
+      ]
+    },
+    {
+      "source_id": "P00990",
+      "xpath": "/w:document/w:body/w:p[215]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00991",
+      "xpath": "/w:document/w:body/w:p[216]",
+      "text": "ESTADO-TO BE (ESTAR)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE"
+      ]
+    },
+    {
+      "source_id": "P00992",
+      "xpath": "/w:document/w:body/w:p[217]",
+      "text": "I am tired. Eu estou cansado.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE"
+      ]
+    },
+    {
+      "source_id": "P00993",
+      "xpath": "/w:document/w:body/w:p[218]",
+      "text": "She is at school. Ela está na escola.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE"
+      ]
+    },
+    {
+      "source_id": "P00994",
+      "xpath": "/w:document/w:body/w:p[219]",
+      "text": "My car is there. Meu carro está lá.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE"
+      ]
+    },
+    {
+      "source_id": "P00995",
+      "xpath": "/w:document/w:body/w:p[220]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P00996",
+      "xpath": "/w:document/w:body/w:p[221]",
+      "text": "MOVIMENTO-TO BE (ESTAR FAZENDO)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT"
+      ]
+    },
+    {
+      "source_id": "P00997",
+      "xpath": "/w:document/w:body/w:p[222]",
+      "text": "1- I am studying English now. Eu estou estudando inglês agora. 2- She is going up the stairs. Ela está subindo as escadas.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT"
+      ]
+    },
+    {
+      "source_id": "P00998",
+      "xpath": "/w:document/w:body/w:p[223]",
+      "text": "3- The car is going into the garage. O carro está entrando na garagem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT"
+      ]
+    },
+    {
+      "source_id": "P00999",
+      "xpath": "/w:document/w:body/w:p[224]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01000",
+      "xpath": "/w:document/w:body/w:p[225]",
+      "text": "ROTINA / HÁBITO / AÇÃO – OUTROS VERBOS (AGIR, FAZER)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION"
+      ]
+    },
+    {
+      "source_id": "P01001",
+      "xpath": "/w:document/w:body/w:p[226]",
+      "text": "I usually wake up at 7 o’clock. (acordo). Eu geralmente acordo às 7 horas.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION"
+      ]
+    },
+    {
+      "source_id": "P01002",
+      "xpath": "/w:document/w:body/w:p[227]",
+      "text": "The dog barks when it sees a cat. (late). O cachorro late quando vê um gato.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION"
+      ]
+    },
+    {
+      "source_id": "P01003",
+      "xpath": "/w:document/w:body/w:p[228]",
+      "text": "The earth goes around the sun. (gira). A terra gira ao redor do sol.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION"
+      ]
+    },
+    {
+      "source_id": "P01004",
+      "xpath": "/w:document/w:body/w:p[229]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01005",
+      "xpath": "/w:document/w:body/w:p[230]",
+      "text": "EXISTÊNCIA-TO BE (HAVER / EXISTIR)",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P01006",
+      "xpath": "/w:document/w:body/w:p[231]",
+      "text": "There is somebody outside. Há alguém lá fora.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P01007",
+      "xpath": "/w:document/w:body/w:p[232]",
+      "text": "There are two cars in the garage. Há dois carros na garagem.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P01008",
+      "xpath": "/w:document/w:body/w:p[233]",
+      "text": "There will be a problem if you do that. Haverá um problema se você fizer isso.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE"
+      ]
+    },
+    {
+      "source_id": "P01009",
+      "xpath": "/w:document/w:body/w:p[234]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01010",
+      "xpath": "/w:document/w:body/w:p[235]",
+      "text": "Importância do verbo ‘to be’: Observe como o verbo ‘to be’ é importante. Ele está presente em quatro das cinco funções do verbo e, portanto, é muito usado na formação de frases, tanto na fala como na escrita.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE"
+      ]
+    },
+    {
+      "source_id": "P01011",
+      "xpath": "/w:document/w:body/w:p[236]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01012",
+      "xpath": "/w:document/w:body/w:p[237]",
+      "text": "Tempos verbais: As cinco funções acima descritas funcionam em qualquer tempo verbal (presente, passado e futuro dos tempos simples ou perfeitos), como veremos ao longo da apostila.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE"
+      ]
+    },
+    {
+      "source_id": "P01013",
+      "xpath": "/w:document/w:body/w:p[238]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01014",
+      "xpath": "/w:document/w:body/w:p[239]",
+      "text": "- ATENÇÃO!! COMO USAR SUA APOSTILA?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE"
+      ]
+    },
+    {
+      "source_id": "P01015",
+      "xpath": "/w:document/w:body/w:p[240]",
+      "text": "A parte de verbos da apostila é dividida de acordo com as cinco funções do verbo.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE"
+      ]
+    },
+    {
+      "source_id": "P01016",
+      "xpath": "/w:document/w:body/w:p[241]",
+      "text": "Se você já possui conhecimento prévio de inglês, continue nas páginas seguintes. Você fará primeiro um mix das cinco funções, depois estudará cada uma delas individualmente. Se você não possui conhecimento prévio de inglês, vá para a página 21. Você estudará cada uma das cinco funções individualmente e depois fará o primeiro mix das mesmas.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE",
+        "MVP:UNIT:FOUNDATIONS:STUDY:FREE-NAVIGATION"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:001"
+      ]
+    },
+    {
+      "source_id": "P01017",
+      "xpath": "/w:document/w:body/w:p[242]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01018",
+      "xpath": "/w:document/w:body/w:p[243]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01019",
+      "xpath": "/w:document/w:body/w:p[244]",
+      "text": "Ordem de qualquer oração em inglês",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-INTRO"
+      ]
+    },
+    {
+      "source_id": "P01020",
+      "xpath": "/w:document/w:body/w:p[245]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01021",
+      "xpath": "/w:document/w:body/w:p[246]",
+      "text": "CONSIDERAÇÕES GERAIS: É essencial entender exatamente qual é a ordem das orações em inglês.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-INTRO"
+      ]
+    },
+    {
+      "source_id": "P01022",
+      "xpath": "/w:document/w:body/w:p[246]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01023",
+      "xpath": "/w:document/w:body/w:p[246]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01024",
+      "xpath": "/w:document/w:body/w:p[246]/w:r[2]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01025",
+      "xpath": "/w:document/w:body/w:p[246]/w:r[2]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01026",
+      "xpath": "/w:document/w:body/w:p[247]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01027",
+      "xpath": "/w:document/w:body/w:tbl[6]/w:tr/w:tc/w:p[1]",
+      "text": "A diferença na ordem das orações entre o português e o inglês está basicamente no uso do auxiliar para perguntar ou negar, o qual é dispensado na língua portuguesa.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006",
+        "MVP:UNIT:FOUNDATIONS:STUDY:ORDER"
+      ]
+    },
+    {
+      "source_id": "P01028",
+      "xpath": "/w:document/w:body/w:tbl[6]/w:tr/w:tc/w:p[2]",
+      "text": "Ex.: Você trabalha aqui? (Do you work here?) Eu não trabalho aqui (I do not work here). Onde você trabalha? (Where do you work?). Se agrupássemos as partes de uma oração em colunas, diríamos que no português temos quatro colunas e no inglês temos cinco.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006",
+        "MVP:UNIT:FOUNDATIONS:STUDY:ORDER"
+      ]
+    },
+    {
+      "source_id": "P01029",
+      "xpath": "/w:document/w:body/w:tbl[6]/w:tr/w:tc/w:p[3]",
+      "text": "Compare na tabela abaixo:",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006"
+      ]
+    },
+    {
+      "source_id": "P01030",
+      "xpath": "/w:document/w:body/w:p[248]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01031",
+      "xpath": "/w:document/w:body/w:p[249]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "TECHNICAL_IMAGE_REFERENCE",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01032",
+      "xpath": "/w:document/w:body/w:p[250]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01033",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[1]/w:tc[1]/w:p",
+      "text": "INTERROGATIVE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01034",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[1]/w:tc[2]/w:p",
+      "text": "AFIRMATIVE / NEGATIVE",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01035",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[1]/w:p[1]",
+      "text": "Em português",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01036",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[1]/w:p[2]",
+      "text": "podemos começar uma pergunta com “De quem” “Para quem”, etc...",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01037",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[1]/w:p[3]",
+      "text": "Em inglês isso não é comum.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01038",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[2]/w:p[1]",
+      "text": "O uso do auxiliar é",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:002"
+      ]
+    },
+    {
+      "source_id": "P01039",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[2]/w:p[2]",
+      "text": "obrigatório para fazer perguntas!",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:002"
+      ]
+    },
+    {
+      "source_id": "P01040",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[3]/w:p[1]",
+      "text": "Na afirmativa a sequência é a mesma do português.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01041",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[3]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01042",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[3]/w:p[3]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01043",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[3]/w:p[4]",
+      "text": "Na negativa é necessário utilizar o auxiliar + not antes do verbo principal.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01044",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[2]/w:tc[3]/w:p[5]",
+      "text": "Ex.: I DO NOT eat fish. I AM NOT a doctor.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01045",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[3]/w:tc[1]/w:p",
+      "text": "QUESTION WORDS",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01046",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[3]/w:tc[2]/w:p",
+      "text": "AUXILIARIES",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01047",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[3]/w:tc[3]/w:p",
+      "text": "SUBJECT",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01048",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[3]/w:tc[4]/w:p",
+      "text": "VERB",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01049",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[3]/w:tc[5]/w:p",
+      "text": "THE REST",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01050",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[4]/w:tc[1]/w:p",
+      "text": "What",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01051",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[4]/w:tc[2]/w:p",
+      "text": "do",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01052",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[4]/w:tc[3]/w:p",
+      "text": "you",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01053",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[4]/w:tc[4]/w:p",
+      "text": "eat",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01054",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[4]/w:tc[5]/w:p",
+      "text": "for breakfast?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01055",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[5]/w:tc[1]/w:p",
+      "text": "O que",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01056",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[5]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01057",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[5]/w:tc[3]/w:p",
+      "text": "você",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01058",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[5]/w:tc[4]/w:p",
+      "text": "come",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01059",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[5]/w:tc[5]/w:p",
+      "text": "no café da manhâ?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01060",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[6]/w:tc[1]/w:p",
+      "text": "Where",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01061",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[6]/w:tc[2]/w:p",
+      "text": "did",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01062",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[6]/w:tc[3]/w:p",
+      "text": "you",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01063",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[6]/w:tc[4]/w:p",
+      "text": "eat",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01064",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[6]/w:tc[5]/w:p",
+      "text": "yesterday?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01065",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[7]/w:tc[1]/w:p",
+      "text": "Onde",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01066",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[7]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01067",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[7]/w:tc[3]/w:p",
+      "text": "você",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01068",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[7]/w:tc[4]/w:p",
+      "text": "comeu",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01069",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[7]/w:tc[5]/w:p",
+      "text": "ontem?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01070",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[8]/w:tc[1]/w:p",
+      "text": "Where",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01071",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[8]/w:tc[2]/w:p",
+      "text": "were",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01072",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[8]/w:tc[3]/w:p",
+      "text": "you",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01073",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[8]/w:tc[4]/w:p",
+      "text": "going",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01074",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[8]/w:tc[5]/w:p",
+      "text": "yesterday at 5 p.m.?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01075",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[9]/w:tc[1]/w:p",
+      "text": "Onde",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01076",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[9]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01077",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[9]/w:tc[3]/w:p",
+      "text": "você",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01078",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[9]/w:tc[4]/w:p",
+      "text": "(estava) indo",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01079",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[9]/w:tc[5]/w:p",
+      "text": "ontem às 5 horas?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01080",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[10]/w:tc[1]/w:p",
+      "text": "When",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01081",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[10]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01082",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[10]/w:tc[3]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01083",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[10]/w:tc[4]/w:p",
+      "text": "is",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01084",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[10]/w:tc[5]/w:p",
+      "text": "your birthday?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01085",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[11]/w:tc[1]/w:p",
+      "text": "Quando",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01086",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[11]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01087",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[11]/w:tc[3]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01088",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[11]/w:tc[4]/w:p",
+      "text": "é",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01089",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[11]/w:tc[5]/w:p",
+      "text": "o seu aniversário?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01090",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[12]/w:tc[1]/w:p",
+      "text": "Who",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01091",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[12]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01092",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[12]/w:tc[3]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01093",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[12]/w:tc[4]/w:p",
+      "text": "is",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01094",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[12]/w:tc[5]/w:p",
+      "text": "he?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01095",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[13]/w:tc[1]/w:p",
+      "text": "Quem",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01096",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[13]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01097",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[13]/w:tc[3]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01098",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[13]/w:tc[4]/w:p",
+      "text": "é",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01099",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[13]/w:tc[5]/w:p",
+      "text": "ele?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01100",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[14]/w:tc[1]/w:p",
+      "text": "How long",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01101",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[14]/w:tc[2]/w:p",
+      "text": "have",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01102",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[14]/w:tc[3]/w:p",
+      "text": "you",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01103",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[14]/w:tc[4]/w:p",
+      "text": "been waiting",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01104",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[14]/w:tc[5]/w:p",
+      "text": "for me?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01105",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[15]/w:tc[1]/w:p",
+      "text": "Há quanto tempo",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01106",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[15]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01107",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[15]/w:tc[3]/w:p",
+      "text": "você",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01108",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[15]/w:tc[4]/w:p",
+      "text": "tem estado esperando",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01109",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[15]/w:tc[5]/w:p",
+      "text": "por mim?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01110",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[16]/w:tc[1]/w:p",
+      "text": "Who",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01111",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[16]/w:tc[2]/w:p",
+      "text": "are",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01112",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[16]/w:tc[3]/w:p",
+      "text": "you",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01113",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[16]/w:tc[4]/w:p",
+      "text": "talking",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01114",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[16]/w:tc[5]/w:p",
+      "text": "to?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01115",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[17]/w:tc[1]/w:p",
+      "text": "*Com quem",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01116",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[17]/w:tc[2]/w:p",
+      "text": "-",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01117",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[17]/w:tc[3]/w:p",
+      "text": "você",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01118",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[17]/w:tc[4]/w:p",
+      "text": "está conversando?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01119",
+      "xpath": "/w:document/w:body/w:tbl[7]/w:tr[17]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007"
+      ]
+    },
+    {
+      "source_id": "P01120",
+      "xpath": "/w:document/w:body/w:p[251]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01121",
+      "xpath": "/w:document/w:body/w:p[252]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01122",
+      "xpath": "/w:document/w:body/w:p[253]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01123",
+      "xpath": "/w:document/w:body/w:p[254]",
+      "text": "*Exceto para perguntas curtas, normalmente não se inicia uma pergunta em inglês com o uso da preposição, a qual vem no final da sentença.",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:003"
+      ]
+    },
+    {
+      "source_id": "P01124",
+      "xpath": "/w:document/w:body/w:p[255]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01125",
+      "xpath": "/w:document/w:body/w:p[256]",
+      "text": "Ex.: With whom? (curta) Who are you going with? (completa).",
+      "style": "Ttulo6",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:003"
+      ]
+    },
+    {
+      "source_id": "P01126",
+      "xpath": "/w:document/w:body/w:p[257]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01127",
+      "xpath": "/w:document/w:body/w:p[258]",
+      "text": "*Verifique que a ordem não é a mesma para orações sem sujeito ou com sujeito oculto. Ex.: Who is he? What happened? Who discovered Brazil? What makes you think that the economy will be better next year? Is there anybody waiting for me?",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES",
+        "MVP:UNIT:FOUNDATIONS:STUDY:QUESTION-CONTRAST"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:FD:002"
+      ]
+    },
+    {
+      "source_id": "P01128",
+      "xpath": "/w:document/w:body/w:p[259]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    },
+    {
+      "source_id": "P01129",
+      "xpath": "/w:document/w:body/w:p[260]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": []
+    }
+  ],
+  "tables": [
+    {
+      "id": "T0004",
+      "xpath": "/w:document/w:body/w:tbl[4]",
+      "rows": 1,
+      "grid_columns": 2,
+      "cells": [
+        [
+          "VERBS (seguir em ordem)Quality & State: presente, past and future (simple and perfect)Movement: : presente, past and future (simple and perfect)Action: presente, past and future (simple and perfect)Existence: presente, past and future (simple and perfect)",
+          "ACESSORIES (ver de acordo com os verbos)Nouns Articles Pronouns Adjectives Adverbs Prepositions Conjunctions Numbers Interjections"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a2\"/><w:tblW w:w=\"10208\" w:type=\"dxa\"/><w:tblInd w:w=\"752\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0005",
+      "xpath": "/w:document/w:body/w:tbl[5]",
+      "rows": 6,
+      "grid_columns": 5,
+      "cells": [
+        [
+          "FUNÇÕES",
+          "O QUE É",
+          "INGLÊS",
+          "PORTUGUÊS",
+          "EXEMPLO"
+        ],
+        [
+          "QUALITY",
+          "Característica permanente",
+          "TO BE",
+          "SER",
+          "She is tall. Ela é alta."
+        ],
+        [
+          "STATE",
+          "Característica temporária",
+          "TO BE",
+          "ESTAR",
+          "He is sick.Ele está doente."
+        ],
+        [
+          "MOVEMENT",
+          "Ação simultânea à fala",
+          "TO BE +(verbo) ING",
+          "ESTAR + (verbo) ANDO/ENDO/INDO",
+          "We are eating pizza. Nós estamos comendopizza."
+        ],
+        [
+          "ACTION",
+          "Rotina, hábito",
+          "TODOS MENOS TO BE",
+          "TODOS MENOS SER E ESTAR",
+          "They eat pizza every day. Eles comem pizza tododia."
+        ],
+        [
+          "EXISTENCE",
+          "Fato",
+          "THERE + TO BE",
+          "HAVER, EXISTIR",
+          "There is a man outside.Há um homem lá fora."
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a3\"/><w:tblW w:w=\"10210\" w:type=\"dxa\"/><w:tblInd w:w=\"752\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0006",
+      "xpath": "/w:document/w:body/w:tbl[6]",
+      "rows": 1,
+      "grid_columns": 1,
+      "cells": [
+        [
+          "A diferença na ordem das orações entre o português e o inglês está basicamente no uso do auxiliar para perguntar ou negar, o qual é dispensado na língua portuguesa.Ex.: Você trabalha aqui? (Do you work here?) Eu não trabalho aqui (I do not work here). Onde você trabalha? (Where do you work?). Se agrupássemos as partes de uma oração em colunas, diríamos que no português temos quatro colunas e no inglês temos cinco.Compare na tabela abaixo:"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a4\"/><w:tblW w:w=\"9957\" w:type=\"dxa\"/><w:tblInd w:w=\"873\" w:type=\"dxa\"/><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0007",
+      "xpath": "/w:document/w:body/w:tbl[7]",
+      "rows": 17,
+      "grid_columns": 5,
+      "cells": [
+        [
+          "INTERROGATIVE",
+          "AFIRMATIVE / NEGATIVE"
+        ],
+        [
+          "Em portuguêspodemos começar uma pergunta com “De quem” “Para quem”, etc...Em inglês isso não é comum.",
+          "O uso do auxiliar éobrigatório para fazer perguntas!",
+          "Na afirmativa a sequência é a mesma do português.Na negativa é necessário utilizar o auxiliar + not antes do verbo principal.Ex.: I DO NOT eat fish. I AM NOT a doctor."
+        ],
+        [
+          "QUESTION WORDS",
+          "AUXILIARIES",
+          "SUBJECT",
+          "VERB",
+          "THE REST"
+        ],
+        [
+          "What",
+          "do",
+          "you",
+          "eat",
+          "for breakfast?"
+        ],
+        [
+          "O que",
+          "-",
+          "você",
+          "come",
+          "no café da manhâ?"
+        ],
+        [
+          "Where",
+          "did",
+          "you",
+          "eat",
+          "yesterday?"
+        ],
+        [
+          "Onde",
+          "-",
+          "você",
+          "comeu",
+          "ontem?"
+        ],
+        [
+          "Where",
+          "were",
+          "you",
+          "going",
+          "yesterday at 5 p.m.?"
+        ],
+        [
+          "Onde",
+          "-",
+          "você",
+          "(estava) indo",
+          "ontem às 5 horas?"
+        ],
+        [
+          "When",
+          "-",
+          "-",
+          "is",
+          "your birthday?"
+        ],
+        [
+          "Quando",
+          "-",
+          "-",
+          "é",
+          "o seu aniversário?"
+        ],
+        [
+          "Who",
+          "-",
+          "-",
+          "is",
+          "he?"
+        ],
+        [
+          "Quem",
+          "-",
+          "-",
+          "é",
+          "ele?"
+        ],
+        [
+          "How long",
+          "have",
+          "you",
+          "been waiting",
+          "for me?"
+        ],
+        [
+          "Há quanto tempo",
+          "-",
+          "você",
+          "tem estado esperando",
+          "por mim?"
+        ],
+        [
+          "Who",
+          "are",
+          "you",
+          "talking",
+          "to?"
+        ],
+        [
+          "*Com quem",
+          "-",
+          "você",
+          "está conversando?",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"a5\"/><w:tblW w:w=\"10134\" w:type=\"dxa\"/><w:tblInd w:w=\"837\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"48\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"48\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"48\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"48\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"48\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"48\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    }
+  ],
+  "assets": [
+    {
+      "path": "word/media/image100.png",
+      "sha256": "706e5cc0c7299afd40031a94120b77da76a166c1802c4ee3758b4e651d3ab02a",
+      "width_px": 1,
+      "height_px": 1,
+      "mode": "RGBA",
+      "classification": "TECHNICAL_1PX_IMAGE_NOT_DIDACTIC_FIGURE",
+      "paragraph_id": "P01031",
+      "rendered": false
+    }
+  ],
+  "issues": [
+    {
+      "id": "MVP:REVIEW:FD:001",
+      "source_ids": [
+        "P00918",
+        "P00922",
+        "P01016"
+      ],
+      "observation": "Percurso impresso sugere ordem; a consulta web permanece livre.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:FD:002",
+      "source_ids": [
+        "P01038",
+        "P01039",
+        "P01127"
+      ],
+      "observation": "A regra geral sobre auxiliar precisa distinguir perguntas de sujeito e padrões com to be.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:FD:003",
+      "source_ids": [
+        "P01123",
+        "P01125"
+      ],
+      "observation": "Perguntas com preposição inicial também existem no registro formal, por exemplo With whom are you speaking?",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:FD:004",
+      "source_ids": [
+        "P00943",
+        "P00951",
+        "P00960",
+        "P00969"
+      ],
+      "observation": "Preservar as cinco funções autorais como organização didática; estudar nuances sem tratá-las como classificação linguística universal.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:FD:005",
+      "source_ids": [
+        "P00910",
+        "P00917"
+      ],
+      "observation": "Há classes e explicações agregadas no mesmo parágrafo; a recomposição visual precisa separar blocos sem perder a referência.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    }
+  ],
+  "source_units": [
+    "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:FUNCTIONS-INTRO",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-INTRO",
+    "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES"
+  ],
+  "status": "STRUCTURALLY_MAPPED_VISUAL_REVIEW_PENDING"
+}

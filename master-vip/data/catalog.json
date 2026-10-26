@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -19,14 +19,94 @@
     {
       "id": "MVP:CH:FOUNDATIONS",
       "title": "Fundamentos",
-      "description": "The Ten Kinds of Words · cinco funções · ordem das orações",
+      "description": "Dez classes, cinco funções e ordem das orações. Fonte original e estudo complementar com remissões.",
       "keywords": [
         "FOUNDATIONS",
         "Fundamentos",
-        "The Ten Kinds of Words · cinco funções · ordem das orações"
+        "The Ten Kinds of Words · cinco funções · ordem das orações",
+        "dez classes",
+        "cinco funções",
+        "five functions",
+        "classes",
+        "quality",
+        "state",
+        "movement",
+        "action",
+        "existence",
+        "ordem",
+        "do",
+        "does"
       ],
-      "status": "PLANNED",
-      "sections": []
+      "status": "SOURCE_AND_STUDY",
+      "sections": [
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-CLASSES",
+          "title": "Estudo · Dez classes",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:TEN-KINDS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+          "title": "Estudo · Cinco funções",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:QUALITY",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION",
+            "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-ORDER",
+          "title": "Estudo · Construção de orações",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:ORDER",
+            "MVP:UNIT:FOUNDATIONS:STUDY:QUESTION-CONTRAST"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:STUDY-CONNECTIONS",
+          "title": "Conexões de estudo",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:STUDY:FREE-NAVIGATION"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:SOURCE-CLASSES",
+          "title": "Original · Dez classes",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+          "title": "Original · Cinco funções",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:SOURCE:FUNCTIONS-INTRO",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:FOUNDATIONS:SOURCE-ORDER",
+          "title": "Original · Ordem das orações",
+          "unit_ids": [
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-INTRO",
+            "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES"
+          ]
+        }
+      ],
+      "source_map": "data/foundations-source-map.json"
     },
     {
       "id": "MVP:CH:TOOLS",
@@ -281,7 +361,8 @@
             "MVP:UNIT:EXISTENCE:SOURCE:ANSWERS:011"
           ]
         }
-      ]
+      ],
+      "source_map": "data/existence-source-map.json"
     },
     {
       "id": "MVP:CH:VERBAL-SYSTEMS",
@@ -2839,6 +2920,1505 @@
       },
       "editorial_reason": "Adaptação com contexto acrescentado e declarado. I have a problem e There is a problem não são substituições equivalentes em toda situação; preservar a relação com o falante exige contexto.",
       "proposal_status": "PROPOSED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:WORD-CLASSES",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-CLASSES",
+      "type": "SOURCE_TEXT",
+      "title": "As dez classes de palavras",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00897",
+          "P00899",
+          "P00900",
+          "P00902",
+          "P00903",
+          "P00904",
+          "P00905",
+          "P00906",
+          "P00907",
+          "P00908",
+          "P00909",
+          "P00910",
+          "P00911",
+          "P00912",
+          "P00913",
+          "P00914",
+          "P00915",
+          "P00916",
+          "P00917"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P00897",
+          "text": "As 10 classes de palavras"
+        },
+        {
+          "source_id": "P00899",
+          "text": "Assim como em português, em inglês toda palavra pertence a uma família, de acordo com a sua função na frase."
+        },
+        {
+          "source_id": "P00900",
+          "text": "Existem 10 classes de palavras:"
+        },
+        {
+          "source_id": "P00902",
+          "text": "Verbs: indicam qualidade, estado, movimento, ação ou existência. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00903",
+          "text": "drive, work, live,  "
+        },
+        {
+          "source_id": "P00904",
+          "text": "Nouns: dão nome às coisas. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00905",
+          "text": "chair, table, coffee,  "
+        },
+        {
+          "source_id": "P00906",
+          "text": "Articles: definem ou indefinem um nome. Exemplos: a, an, the"
+        },
+        {
+          "source_id": "P00907",
+          "text": "Pronouns: acompanham ou substituem o nome. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00908",
+          "text": "she, her, hers,  "
+        },
+        {
+          "source_id": "P00909",
+          "text": "Adjectives: caracterizam o nome. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00910",
+          "text": "beautiful, cheap, short, _  Adverbs: dão mais informação sobre o verbo, adjetivo ou o próprio advérbio. Exemplos (complete): here, there, slowly,   Prepositions: indicam posição, direção. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00911",
+          "text": "in, behind, under,  "
+        },
+        {
+          "source_id": "P00912",
+          "text": "Conjunctions: ligam duas frases. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00913",
+          "text": "but, and, because,  "
+        },
+        {
+          "source_id": "P00914",
+          "text": "Numbers: indicam quantidade ou posição. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00915",
+          "text": "one, twelve, first,  "
+        },
+        {
+          "source_id": "P00916",
+          "text": "Interjections: expressam emoção. Exemplos (complete):"
+        },
+        {
+          "source_id": "P00917",
+          "text": "wow, yay, oh my God,   Os VERBOS são a classe de palavras mais importante, pois sem eles não podemos formar uma oração. As outras classes são consideradas ACESSÓRIOS, pois podem ou  não  ser  usadas,  de acordo com a frase. É por isso que a apostila é dividida em duas partes: VERBOS e ACESSÓRIOS."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:ORGANIZATION",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-CLASSES",
+      "type": "SOURCE_TEXT",
+      "title": "Organização da apostila",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00918",
+          "P00919",
+          "P00921"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P00918",
+          "text": "A parte de verbos é feita na ordem em que aparece na apostila, já a parte de acessórios é usada de acordo"
+        },
+        {
+          "source_id": "P00919",
+          "text": "com o verbo que você está estudando. Por exemplo: o verbo ‘to be’ combina com adjetivos (she is beautiful, we are tall...) O seu professor indicará quando usar um acessório."
+        },
+        {
+          "source_id": "P00921",
+          "text": "DIVISÃO DA APOSTILA"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:FUNCTIONS-INTRO",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "As cinco funções do verbo",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00933",
+          "P00935"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P00933",
+          "text": "As cinco funções do verbo"
+        },
+        {
+          "source_id": "P00935",
+          "text": "CONSIDERAÇÕES GERAIS: Iniciaremos nossos exercícios e explicações pelo VERBO, pois ele é o elemento essencial de qualquer oração. As outras nove classes de palavras entrarão como “acessórios”, as quais você precisa praticar em aula, com o professor, e em casa, com os exercícios."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0004",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-CLASSES",
+      "type": "SOURCE_TABLE",
+      "title": "Divisão da apostila",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00922",
+          "P00923",
+          "P00924",
+          "P00925",
+          "P00926",
+          "P00927",
+          "P00928",
+          "P00929",
+          "P00930"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0004",
+      "source_rows": [
+        [
+          "VERBS (seguir em ordem)Quality & State: presente, past and future (simple and perfect)Movement: : presente, past and future (simple and perfect)Action: presente, past and future (simple and perfect)Existence: presente, past and future (simple and perfect)",
+          "ACESSORIES (ver de acordo com os verbos)Nouns Articles Pronouns Adjectives Adverbs Prepositions Conjunctions Numbers Interjections"
+        ]
+      ],
+      "source_headers": [],
+      "caption": "Células preservadas na ordem de extração. Mesclagens e recomposição visual ainda em revisão."
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0005",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TABLE",
+      "title": "Cinco funções · quadro original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00936",
+          "P00937",
+          "P00938",
+          "P00939",
+          "P00940",
+          "P00941",
+          "P00942",
+          "P00943",
+          "P00944",
+          "P00945",
+          "P00946",
+          "P00947",
+          "P00948",
+          "P00949",
+          "P00950",
+          "P00951",
+          "P00952",
+          "P00953",
+          "P00954",
+          "P00955",
+          "P00956",
+          "P00957",
+          "P00958",
+          "P00959",
+          "P00960",
+          "P00961",
+          "P00962",
+          "P00963",
+          "P00964",
+          "P00965",
+          "P00966",
+          "P00967",
+          "P00968",
+          "P00969",
+          "P00970",
+          "P00971",
+          "P00972",
+          "P00973",
+          "P00974",
+          "P00975",
+          "P00976",
+          "P00977",
+          "P00978",
+          "P00979",
+          "P00980",
+          "P00981",
+          "P00982"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0005",
+      "source_rows": [
+        [
+          "FUNÇÕES",
+          "O QUE É",
+          "INGLÊS",
+          "PORTUGUÊS",
+          "EXEMPLO"
+        ],
+        [
+          "QUALITY",
+          "Característica permanente",
+          "TO BE",
+          "SER",
+          "She is tall. Ela é alta."
+        ],
+        [
+          "STATE",
+          "Característica temporária",
+          "TO BE",
+          "ESTAR",
+          "He is sick.Ele está doente."
+        ],
+        [
+          "MOVEMENT",
+          "Ação simultânea à fala",
+          "TO BE +(verbo) ING",
+          "ESTAR + (verbo) ANDO/ENDO/INDO",
+          "We are eating pizza. Nós estamos comendopizza."
+        ],
+        [
+          "ACTION",
+          "Rotina, hábito",
+          "TODOS MENOS TO BE",
+          "TODOS MENOS SER E ESTAR",
+          "They eat pizza every day. Eles comem pizza tododia."
+        ],
+        [
+          "EXISTENCE",
+          "Fato",
+          "THERE + TO BE",
+          "HAVER, EXISTIR",
+          "There is a man outside.Há um homem lá fora."
+        ]
+      ],
+      "source_headers": [],
+      "caption": "Células preservadas na ordem de extração. Mesclagens e recomposição visual ainda em revisão."
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0006",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-ORDER",
+      "type": "SOURCE_TABLE",
+      "title": "Comparação das orações",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01027",
+          "P01028",
+          "P01029"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0006",
+      "source_rows": [
+        [
+          "A diferença na ordem das orações entre o português e o inglês está basicamente no uso do auxiliar para perguntar ou negar, o qual é dispensado na língua portuguesa.Ex.: Você trabalha aqui? (Do you work here?) Eu não trabalho aqui (I do not work here). Onde você trabalha? (Where do you work?). Se agrupássemos as partes de uma oração em colunas, diríamos que no português temos quatro colunas e no inglês temos cinco.Compare na tabela abaixo:"
+        ]
+      ],
+      "source_headers": [],
+      "caption": "Células preservadas na ordem de extração. Mesclagens e recomposição visual ainda em revisão."
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:TABLE:T0007",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-ORDER",
+      "type": "SOURCE_TABLE",
+      "title": "Ordem das orações · quadro original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01033",
+          "P01034",
+          "P01035",
+          "P01036",
+          "P01037",
+          "P01038",
+          "P01039",
+          "P01040",
+          "P01041",
+          "P01042",
+          "P01043",
+          "P01044",
+          "P01045",
+          "P01046",
+          "P01047",
+          "P01048",
+          "P01049",
+          "P01050",
+          "P01051",
+          "P01052",
+          "P01053",
+          "P01054",
+          "P01055",
+          "P01056",
+          "P01057",
+          "P01058",
+          "P01059",
+          "P01060",
+          "P01061",
+          "P01062",
+          "P01063",
+          "P01064",
+          "P01065",
+          "P01066",
+          "P01067",
+          "P01068",
+          "P01069",
+          "P01070",
+          "P01071",
+          "P01072",
+          "P01073",
+          "P01074",
+          "P01075",
+          "P01076",
+          "P01077",
+          "P01078",
+          "P01079",
+          "P01080",
+          "P01081",
+          "P01082",
+          "P01083",
+          "P01084",
+          "P01085",
+          "P01086",
+          "P01087",
+          "P01088",
+          "P01089",
+          "P01090",
+          "P01091",
+          "P01092",
+          "P01093",
+          "P01094",
+          "P01095",
+          "P01096",
+          "P01097",
+          "P01098",
+          "P01099",
+          "P01100",
+          "P01101",
+          "P01102",
+          "P01103",
+          "P01104",
+          "P01105",
+          "P01106",
+          "P01107",
+          "P01108",
+          "P01109",
+          "P01110",
+          "P01111",
+          "P01112",
+          "P01113",
+          "P01114",
+          "P01115",
+          "P01116",
+          "P01117",
+          "P01118",
+          "P01119"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0007",
+      "source_rows": [
+        [
+          "INTERROGATIVE",
+          "AFIRMATIVE / NEGATIVE"
+        ],
+        [
+          "Em portuguêspodemos começar uma pergunta com “De quem” “Para quem”, etc...Em inglês isso não é comum.",
+          "O uso do auxiliar éobrigatório para fazer perguntas!",
+          "Na afirmativa a sequência é a mesma do português.Na negativa é necessário utilizar o auxiliar + not antes do verbo principal.Ex.: I DO NOT eat fish. I AM NOT a doctor."
+        ],
+        [
+          "QUESTION WORDS",
+          "AUXILIARIES",
+          "SUBJECT",
+          "VERB",
+          "THE REST"
+        ],
+        [
+          "What",
+          "do",
+          "you",
+          "eat",
+          "for breakfast?"
+        ],
+        [
+          "O que",
+          "-",
+          "você",
+          "come",
+          "no café da manhâ?"
+        ],
+        [
+          "Where",
+          "did",
+          "you",
+          "eat",
+          "yesterday?"
+        ],
+        [
+          "Onde",
+          "-",
+          "você",
+          "comeu",
+          "ontem?"
+        ],
+        [
+          "Where",
+          "were",
+          "you",
+          "going",
+          "yesterday at 5 p.m.?"
+        ],
+        [
+          "Onde",
+          "-",
+          "você",
+          "(estava) indo",
+          "ontem às 5 horas?"
+        ],
+        [
+          "When",
+          "-",
+          "-",
+          "is",
+          "your birthday?"
+        ],
+        [
+          "Quando",
+          "-",
+          "-",
+          "é",
+          "o seu aniversário?"
+        ],
+        [
+          "Who",
+          "-",
+          "-",
+          "is",
+          "he?"
+        ],
+        [
+          "Quem",
+          "-",
+          "-",
+          "é",
+          "ele?"
+        ],
+        [
+          "How long",
+          "have",
+          "you",
+          "been waiting",
+          "for me?"
+        ],
+        [
+          "Há quanto tempo",
+          "-",
+          "você",
+          "tem estado esperando",
+          "por mim?"
+        ],
+        [
+          "Who",
+          "are",
+          "you",
+          "talking",
+          "to?"
+        ],
+        [
+          "*Com quem",
+          "-",
+          "você",
+          "está conversando?",
+          ""
+        ]
+      ],
+      "source_headers": [],
+      "caption": "Células preservadas na ordem de extração. Mesclagens e recomposição visual ainda em revisão."
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:QUALITY",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "QUALITY · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00984",
+          "P00986",
+          "P00987",
+          "P00988",
+          "P00989"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P00984",
+          "text": "Veja mais exemplos:"
+        },
+        {
+          "source_id": "P00986",
+          "text": "QUALIDADE-TO BE (SER)"
+        },
+        {
+          "source_id": "P00987",
+          "text": "I am a teacher. Eu sou um professor"
+        },
+        {
+          "source_id": "P00988",
+          "text": "Helen is a good driver. Helen é uma boa motorista."
+        },
+        {
+          "source_id": "P00989",
+          "text": "Peter and Paul are from the United States. Peter e Paul são dos Estados Unidos."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:STATE",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "STATE · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00991",
+          "P00992",
+          "P00993",
+          "P00994"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P00991",
+          "text": "ESTADO-TO BE (ESTAR)"
+        },
+        {
+          "source_id": "P00992",
+          "text": "I am tired. Eu estou cansado."
+        },
+        {
+          "source_id": "P00993",
+          "text": "She is at school. Ela está na escola."
+        },
+        {
+          "source_id": "P00994",
+          "text": "My car is there. Meu carro está lá."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:MOVEMENT",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "MOVEMENT · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00996",
+          "P00997",
+          "P00998"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P00996",
+          "text": "MOVIMENTO-TO BE (ESTAR FAZENDO)"
+        },
+        {
+          "source_id": "P00997",
+          "text": "1- I am studying English now. Eu estou estudando inglês agora. 2- She is going up the stairs. Ela está subindo as escadas."
+        },
+        {
+          "source_id": "P00998",
+          "text": "3- The car is going into the garage. O carro está entrando na garagem."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:ACTION",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "ACTION · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01000",
+          "P01001",
+          "P01002",
+          "P01003"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P01000",
+          "text": "ROTINA / HÁBITO / AÇÃO – OUTROS VERBOS (AGIR, FAZER)"
+        },
+        {
+          "source_id": "P01001",
+          "text": "I usually wake up at 7 o’clock. (acordo). Eu geralmente acordo às 7 horas."
+        },
+        {
+          "source_id": "P01002",
+          "text": "The dog barks when it sees a cat. (late). O cachorro late quando vê um gato."
+        },
+        {
+          "source_id": "P01003",
+          "text": "The earth goes around the sun. (gira). A terra gira ao redor do sol."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:EXAMPLES:EXISTENCE",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "EXISTENCE · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01005",
+          "P01006",
+          "P01007",
+          "P01008"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P01005",
+          "text": "EXISTÊNCIA-TO BE (HAVER / EXISTIR)"
+        },
+        {
+          "source_id": "P01006",
+          "text": "There is somebody outside. Há alguém lá fora."
+        },
+        {
+          "source_id": "P01007",
+          "text": "There are two cars in the garage. Há dois carros na garagem."
+        },
+        {
+          "source_id": "P01008",
+          "text": "There will be a problem if you do that. Haverá um problema se você fizer isso."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:GUIDANCE",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-FUNCTIONS",
+      "type": "SOURCE_TEXT",
+      "title": "To Be, tempos e orientação de estudo",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01010",
+          "P01012",
+          "P01014",
+          "P01015",
+          "P01016"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P01010",
+          "text": "Importância do verbo ‘to be’: Observe como o verbo ‘to be’ é importante. Ele está presente em quatro das cinco funções do verbo e, portanto, é muito usado na formação de frases, tanto na fala como na escrita."
+        },
+        {
+          "source_id": "P01012",
+          "text": "Tempos verbais: As cinco funções acima descritas funcionam em qualquer tempo verbal (presente, passado e futuro dos tempos simples ou perfeitos), como veremos ao longo da apostila."
+        },
+        {
+          "source_id": "P01014",
+          "text": "- ATENÇÃO!! COMO USAR SUA APOSTILA?"
+        },
+        {
+          "source_id": "P01015",
+          "text": "A parte de verbos da apostila é dividida de acordo com as cinco funções do verbo."
+        },
+        {
+          "source_id": "P01016",
+          "text": "Se você já possui conhecimento prévio de inglês, continue nas páginas seguintes. Você fará primeiro um mix das cinco funções, depois estudará cada uma delas individualmente. Se você não possui conhecimento prévio de inglês, vá para a página 21. Você estudará cada uma das cinco funções individualmente e depois fará o primeiro mix das mesmas."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-INTRO",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-ORDER",
+      "type": "SOURCE_TEXT",
+      "title": "Ordem das orações · introdução",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01019",
+          "P01021"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P01019",
+          "text": "Ordem de qualquer oração em inglês"
+        },
+        {
+          "source_id": "P01021",
+          "text": "CONSIDERAÇÕES GERAIS: É essencial entender exatamente qual é a ordem das orações em inglês."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:SOURCE:ORDER-NOTES",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:SOURCE-ORDER",
+      "type": "SOURCE_TEXT",
+      "title": "Perguntas e preposições · notas originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01123",
+          "P01125",
+          "P01127"
+        ],
+        "note": "Fonte preservada."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P01123",
+          "text": "*Exceto para perguntas curtas, normalmente não se inicia uma pergunta em inglês com o uso da preposição, a qual vem no final da sentença."
+        },
+        {
+          "source_id": "P01125",
+          "text": "Ex.: With whom? (curta) Who are you going with? (completa)."
+        },
+        {
+          "source_id": "P01127",
+          "text": "*Verifique que a ordem não é a mesma para orações sem sujeito ou com sujeito oculto. Ex.: Who is he? What happened? Who discovered Brazil? What makes you think that the economy will be better next year? Is there anybody waiting for me?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:TEN-KINDS",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-CLASSES",
+      "type": "WORD_TYPE_MAP",
+      "title": "The Ten Kinds of Words",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00897",
+          "P00900"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "word_types": [
+        {
+          "id": "MVP:WORD-TYPE:PRONOUN",
+          "names": {
+            "en": "PRONOUN",
+            "es": "pronombre",
+            "pt": "pronome"
+          },
+          "example": {
+            "en": "I",
+            "es": "yo",
+            "pt": "eu"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:VERB",
+          "names": {
+            "en": "VERB",
+            "es": "verbo",
+            "pt": "verbo"
+          },
+          "example": {
+            "en": "prepare",
+            "es": "preparar",
+            "pt": "preparar"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:ADJECTIVE",
+          "names": {
+            "en": "ADJECTIVE",
+            "es": "adjetivo",
+            "pt": "adjetivo"
+          },
+          "example": {
+            "en": "fresh",
+            "es": "fresco",
+            "pt": "fresco"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:CONJUNCTION",
+          "names": {
+            "en": "CONJUNCTION",
+            "es": "conjunción",
+            "pt": "conjunção"
+          },
+          "example": {
+            "en": "and",
+            "es": "y",
+            "pt": "e"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:ARTICLE",
+          "names": {
+            "en": "ARTICLE",
+            "es": "artículo",
+            "pt": "artigo"
+          },
+          "example": {
+            "en": "the",
+            "es": "el / la / los / las",
+            "pt": "o / a / os / as"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:ADVERB",
+          "names": {
+            "en": "ADVERB",
+            "es": "adverbio",
+            "pt": "advérbio"
+          },
+          "example": {
+            "en": "slowly",
+            "es": "despacio",
+            "pt": "devagar"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:PREPOSITION",
+          "names": {
+            "en": "PREPOSITION",
+            "es": "preposición",
+            "pt": "preposição"
+          },
+          "example": {
+            "en": "with",
+            "es": "con",
+            "pt": "com"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:INTERJECTION",
+          "names": {
+            "en": "INTERJECTION",
+            "es": "interjección",
+            "pt": "interjeição"
+          },
+          "example": {
+            "en": "Wow!",
+            "es": "¡Guau!",
+            "pt": "Uau!"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:NOUN",
+          "names": {
+            "en": "NOUN",
+            "es": "sustantivo",
+            "pt": "substantivo"
+          },
+          "example": {
+            "en": "carrot",
+            "es": "zanahoria",
+            "pt": "cenoura"
+          }
+        },
+        {
+          "id": "MVP:WORD-TYPE:NUMERAL",
+          "names": {
+            "en": "NUMERAL",
+            "es": "numeral",
+            "pt": "numeral"
+          },
+          "example": {
+            "en": "two",
+            "es": "dos",
+            "pt": "dois"
+          }
+        }
+      ],
+      "body": {
+        "en": "Identify each word by its function in context. Question Words form an interrogative axis; they are not an eleventh word class.",
+        "es": "Identifica cada palabra por su función en el contexto. Question Words es un eje interrogativo, no una undécima clase.",
+        "pt": "Identifique a palavra por sua função no contexto. Question Words é um eixo interrogativo, não uma décima primeira classe."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:QUALITY",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+      "type": "EXAMPLE",
+      "title": "QUALITY · Característica permanente no modelo didático",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00942",
+          "P00943",
+          "P00948"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:QUALITY",
+          "text": {
+            "en": "She is tall.",
+            "es": "Ella es alta.",
+            "pt": "Ela é alta."
+          },
+          "targets": {
+            "en": "is",
+            "es": "es",
+            "pt": "é"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "body": {
+        "en": "This example illustrates the author’s teaching model. It is not an exhaustive rule for every use of the verb.",
+        "es": "Este ejemplo ilustra el modelo didáctico del autor. No es una regla exhaustiva para todos los usos del verbo.",
+        "pt": "Este exemplo ilustra o modelo didático do autor. Não é uma regra exaustiva para todos os usos do verbo."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:STATE",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+      "type": "EXAMPLE",
+      "title": "STATE · Característica temporária no modelo didático",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00950",
+          "P00951",
+          "P00956",
+          "P00957"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:STATE",
+          "text": {
+            "en": "He is sick.",
+            "es": "Él está enfermo.",
+            "pt": "Ele está doente."
+          },
+          "targets": {
+            "en": "is",
+            "es": "está",
+            "pt": "está"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "body": {
+        "en": "This example illustrates the author’s teaching model. It is not an exhaustive rule for every use of the verb.",
+        "es": "Este ejemplo ilustra el modelo didáctico del autor. No es una regla exhaustiva para todos los usos del verbo.",
+        "pt": "Este exemplo ilustra o modelo didático do autor. Não é uma regra exaustiva para todos os usos do verbo."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:MOVEMENT",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+      "type": "EXAMPLE",
+      "title": "MOVEMENT · Ação em progresso no recorte original",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00959",
+          "P00960",
+          "P00964",
+          "P00965"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:MOVEMENT",
+          "text": {
+            "en": "We are eating pizza.",
+            "es": "Nosotros estamos comiendo pizza.",
+            "pt": "Nós estamos comendo pizza."
+          },
+          "targets": {
+            "en": "are eating",
+            "es": "estamos comiendo",
+            "pt": "estamos comendo"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "related_chapter_ids": [
+        "MVP:CH:MOVEMENT"
+      ],
+      "body": {
+        "en": "This example illustrates the author’s teaching model. It is not an exhaustive rule for every use of the verb.",
+        "es": "Este ejemplo ilustra el modelo didáctico del autor. No es una regla exhaustiva para todos los usos del verbo.",
+        "pt": "Este exemplo ilustra o modelo didático do autor. Não é uma regra exaustiva para todos os usos do verbo."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:ACTION",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+      "type": "EXAMPLE",
+      "title": "ACTION · Rotina ou hábito no recorte original",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00967",
+          "P00969",
+          "P00972",
+          "P00973"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:ACTION",
+          "text": {
+            "en": "They eat pizza every day.",
+            "es": "Ellos comen pizza todos los días.",
+            "pt": "Eles comem pizza todos os dias."
+          },
+          "targets": {
+            "en": "eat",
+            "es": "comen",
+            "pt": "comem"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "related_chapter_ids": [
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "body": {
+        "en": "This example illustrates the author’s teaching model. It is not an exhaustive rule for every use of the verb.",
+        "es": "Este ejemplo ilustra el modelo didáctico del autor. No es una regla exhaustiva para todos los usos del verbo.",
+        "pt": "Este exemplo ilustra o modelo didático do autor. Não é uma regra exaustiva para todos os usos do verbo."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:FUNCTION:EXISTENCE",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-FUNCTIONS",
+      "type": "EXAMPLE",
+      "title": "EXISTENCE · THERE + TO BE",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00975",
+          "P00978",
+          "P00981",
+          "P00982"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:EXISTENCE",
+          "text": {
+            "en": "There is a man outside.",
+            "es": "Hay un hombre afuera.",
+            "pt": "Há um homem lá fora."
+          },
+          "targets": {
+            "en": "There is",
+            "es": "Hay",
+            "pt": "Há"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "related_chapter_ids": [
+        "MVP:CH:EXISTENCE"
+      ],
+      "body": {
+        "en": "This example illustrates the author’s teaching model. It is not an exhaustive rule for every use of the verb.",
+        "es": "Este ejemplo ilustra el modelo didáctico del autor. No es una regla exhaustiva para todos los usos del verbo.",
+        "pt": "Este exemplo ilustra o modelo didático do autor. Não é uma regra exaustiva para todos os usos do verbo."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:ORDER",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-ORDER",
+      "type": "EXAMPLE",
+      "title": "Affirmative · Negative · Interrogative",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01027",
+          "P01028"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:AFF",
+          "text": {
+            "en": "I prepare dinner every evening.",
+            "es": "Yo preparo la cena cada noche.",
+            "pt": "Eu preparo o jantar todas as noites."
+          },
+          "targets": {
+            "en": "prepare",
+            "es": "preparo",
+            "pt": "preparo"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        },
+        {
+          "id": "MVP:SENT:FOUNDATIONS:NEG",
+          "text": {
+            "en": "I do not prepare dinner every evening.",
+            "es": "Yo no preparo la cena cada noche.",
+            "pt": "Eu não preparo o jantar todas as noites."
+          },
+          "targets": {
+            "en": "do not prepare",
+            "es": "no preparo",
+            "pt": "não preparo"
+          },
+          "tense": "PRESENT",
+          "mode": "NEGATIVE"
+        },
+        {
+          "id": "MVP:SENT:FOUNDATIONS:INT",
+          "text": {
+            "en": "What do you prepare every evening?",
+            "es": "¿Qué preparas cada noche?",
+            "pt": "O que você prepara todas as noites?"
+          },
+          "targets": {
+            "en": "What",
+            "es": "Qué",
+            "pt": "O que"
+          },
+          "tense": "PRESENT",
+          "mode": "INTERROGATIVE",
+          "qw": "WHAT"
+        }
+      ],
+      "body": {
+        "en": "With lexical verbs in the simple present, English uses do/does in many questions and negatives. To be, modals and subject questions require their own patterns.",
+        "es": "Con verbos léxicos en presente simple, el inglés usa do/does en muchas preguntas y negaciones. To be, los modales y las preguntas de sujeto tienen patrones propios.",
+        "pt": "Com verbos lexicais no presente simples, o inglês usa do/does em muitas perguntas e negativas. To be, modais e perguntas de sujeito têm padrões próprios."
+      },
+      "related_chapter_ids": [
+        "MVP:CH:QUESTIONS",
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:QUESTION-CONTRAST",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-ORDER",
+      "type": "CONTRAST",
+      "title": "Pergunta sobre sujeito e pergunta sobre ação",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P01127"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:FOUNDATIONS:SUBJECT-Q",
+          "text": {
+            "en": "Who prepares dinner?",
+            "es": "¿Quién prepara la cena?",
+            "pt": "Quem prepara o jantar?"
+          },
+          "targets": {
+            "en": "Who",
+            "es": "Quién",
+            "pt": "Quem"
+          },
+          "qw": "WHO"
+        },
+        {
+          "id": "MVP:SENT:FOUNDATIONS:ACTION-Q",
+          "text": {
+            "en": "What do you prepare?",
+            "es": "¿Qué preparas?",
+            "pt": "O que você prepara?"
+          },
+          "targets": {
+            "en": "What",
+            "es": "Qué",
+            "pt": "O que"
+          },
+          "qw": "WHAT"
+        }
+      ],
+      "body": {
+        "en": "In the first question, who is the subject. In the second, you is the subject and do supports the question.",
+        "es": "En la primera pregunta, who es el sujeto. En la segunda, you es el sujeto y do auxilia la pregunta.",
+        "pt": "Na primeira pergunta, who é o sujeito. Na segunda, you é o sujeito e do auxilia a pergunta."
+      }
+    },
+    {
+      "id": "MVP:UNIT:FOUNDATIONS:STUDY:FREE-NAVIGATION",
+      "chapter_id": "MVP:CH:FOUNDATIONS",
+      "section_id": "MVP:SEC:FOUNDATIONS:STUDY-CONNECTIONS",
+      "type": "CONCEPT",
+      "title": "Do modelo à prática, com navegação livre",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P00918",
+          "P00919",
+          "P01016"
+        ],
+        "note": "Proposta complementar EN/ES/PT, sem substituir a fonte."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "body": {
+        "en": "Use the printed sequence as a study suggestion. You can consult any available chapter. Existence connects the five-function model to there is and there are.",
+        "es": "Usa la secuencia impresa como sugerencia de estudio. Puedes consultar cualquier capítulo disponible. Existence conecta las cinco funciones con there is y there are.",
+        "pt": "Use a sequência impressa como sugestão de estudo. Você pode consultar qualquer capítulo disponível. Existence conecta o modelo das cinco funções a there is e there are."
+      },
+      "related_chapter_ids": [
+        "MVP:CH:EXISTENCE",
+        "MVP:CH:TOOLS",
+        "MVP:CH:WORD-CLASSES"
+      ]
     }
   ],
   "terms": [],
@@ -2853,7 +4433,19 @@
     "original_existence_tables": 5,
     "original_existence_reformulations": 25,
     "original_existence_exercises": 55,
-    "original_existence_answers": 55
+    "original_existence_answers": 55,
+    "foundations": {
+      "bounds": [
+        "P00897",
+        "P01129"
+      ],
+      "paragraphs_classified": 233,
+      "tables": 4,
+      "source_units": 15,
+      "adaptation_units": 9,
+      "visual_reconstruction": "PENDING",
+      "technical_images": 1
+    }
   },
   "editorial_issues": [
     {
@@ -2963,19 +4555,78 @@
       "edition": "en-pt",
       "href": "proofs/master-vip-existence-a4-en-pt.pdf",
       "status": "EDITORIAL_PROOF_NOT_HOMOLOGATED",
-      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original."
+      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original.",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "source_catalog_version": "0.4.0"
     },
     {
       "edition": "en-es",
       "href": "proofs/master-vip-existence-a4-en-es.pdf",
       "status": "EDITORIAL_PROOF_NOT_HOMOLOGATED",
-      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original."
+      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original.",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "source_catalog_version": "0.4.0"
     },
     {
       "edition": "en-es-pt",
       "href": "proofs/master-vip-existence-a4-en-es-pt.pdf",
       "status": "EDITORIAL_PROOF_NOT_HOMOLOGATED",
-      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original."
+      "scope": "Piloto didático e seis propostas de revisão; não é todo o capítulo original.",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "source_catalog_version": "0.4.0"
     }
-  ]
+  ],
+  "chapter_editorial_issues": {
+    "MVP:CH:FOUNDATIONS": [
+      {
+        "id": "MVP:REVIEW:FD:001",
+        "source_ids": [
+          "P00918",
+          "P00922",
+          "P01016"
+        ],
+        "observation": "Percurso impresso sugere ordem; a consulta web permanece livre.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:FD:002",
+        "source_ids": [
+          "P01038",
+          "P01039",
+          "P01127"
+        ],
+        "observation": "A regra geral sobre auxiliar precisa distinguir perguntas de sujeito e padrões com to be.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:FD:003",
+        "source_ids": [
+          "P01123",
+          "P01125"
+        ],
+        "observation": "Perguntas com preposição inicial também existem no registro formal, por exemplo With whom are you speaking?",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:FD:004",
+        "source_ids": [
+          "P00943",
+          "P00951",
+          "P00960",
+          "P00969"
+        ],
+        "observation": "Preservar as cinco funções autorais como organização didática; estudar nuances sem tratá-las como classificação linguística universal.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:FD:005",
+        "source_ids": [
+          "P00910",
+          "P00917"
+        ],
+        "observation": "Há classes e explicações agregadas no mesmo parágrafo; a recomposição visual precisa separar blocos sem perder a referência.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      }
+    ]
+  }
 }
