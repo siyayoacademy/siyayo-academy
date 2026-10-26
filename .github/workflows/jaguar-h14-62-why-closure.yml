@@ -1,0 +1,25 @@
+name: JAGUAR H14.62 WHY closure historical provenance
+on:
+  push:
+    branches: [jaguar/h14-62-why-historical-closure-map-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Historical provenance and six-ELO closure
+        run: node scripts/test-jaguar-h14-62-why-closure.cjs
+      - name: Pre-H14 evidence and WHY source regressions
+        run: |
+          node scripts/test-jaguar-h14-2-opportunity-map.js
+          node scripts/test-jaguar-h14-6-why-origin-scoped-contract.js
+          node scripts/test-jaguar-h14-25-why-s1-s2-fine-review.js
+          node scripts/test-jaguar-h14-34-readiness-matrix.js
+          node scripts/test-jaguar-h14-38-independent-production-transfer.js
+          node scripts/test-s3-why-canonical-green-cycle.js
+      - name: H14.61 previous preflight regression
+        run: node --test labs/jaguar-v30-3/test/h14-61/referral-preflight.test.mjs

@@ -1,0 +1,175 @@
+{
+  "id": "SIYAYO-H14-62-WHY-CLOSURE",
+  "version": "0.1.0",
+  "source_repo": "siyayoacademy/siyayo-academy",
+  "source_head": "93fdff453d5ac53532004c39633fd787e810ec02",
+  "h1461_ci": {
+    "run": 40373584200,
+    "conclusion": "success"
+  },
+  "meaning": "SIX ELO ENGINEERING TARGET TO EXPERIMENTAL WHY CLOSURE; NO PROMISE OF PRODUCT GO",
+  "closing_elo": "H14.67",
+  "elo_count": 6,
+  "plan": [
+    {
+      "elo": "H14.62",
+      "objective": "Reconstruir antecedentes pré-FUNC-13 e registrar pendências históricas",
+      "done_when": "fontes 90C6/90C7, PATITA H13/H14.1, H14.2-6 e V30 89O cruzadas por caminho e hash; histórico residual explicitado",
+      "state": "IMPLEMENTED_FOR_CI_PENDING"
+    },
+    {
+      "elo": "H14.63",
+      "objective": "Consolidar seis contextos S1/S2 EN/ES/PT e tarefas independentes",
+      "done_when": "tarefa local e transferência de cada origem + contraste de WHY/HOW e proveniência autorada, sem aprovação implícita",
+      "state": "PENDING"
+    },
+    {
+      "elo": "H14.64",
+      "objective": "Homologação pedagógica da função causal, semântica e transferência",
+      "done_when": "revisores humanos aprovam explicitamente critérios HG-01..10; sem aprovação há NO-GO",
+      "state": "PENDING_HUMAN"
+    },
+    {
+      "elo": "H14.65",
+      "objective": "Conectar contratos por origem à autoridade EVAL-08 em isolamento",
+      "done_when": "contrato versionado e autorização independente testados com sujeito autenticado de teste, ação comprovada, livre navegação sem acoplamento indevido",
+      "state": "PENDING_AUTHORITY"
+    },
+    {
+      "elo": "H14.66",
+      "objective": "Testar Evidence canônica, V30.3/85C e projeções Trail/Word Path",
+      "done_when": "CHOICE/USE/TRANSFER WHY 0/3 a 3/3 só com tentativa autorizada; idempotência, EN/ES/PT, alternância, rollback, cross-subject e anti-duplicação comprovadas",
+      "state": "PENDING_EVIDENCE"
+    },
+    {
+      "elo": "H14.67",
+      "objective": "Homologação e handoff da integração WHY no Explorer experimental",
+      "done_when": "comparar MAIN/PR3, QA visual/áudio responsivo EN/ES/PT, S3-S4 preservado, relatório GO/NO-GO por DG, aprovação humana",
+      "state": "PENDING_EXPLORER"
+    }
+  ],
+  "ancestry": [
+    {
+      "label": "90C.6 WHY S1–S4",
+      "path": "docs/JAGUAR-90C6-WHY-PRESENT-S1-S4-GATE.md",
+      "sha": "683468c5d61673ef347d131d9a3ac363c880416b",
+      "scope": "S1/S2 exploração PRESENT/AFFIRMATIVE EN/ES/PT; S3/S4 avaliação canônica preservada"
+    },
+    {
+      "label": "90C.7H.7 PATITA P0",
+      "path": "docs/JAGUAR-90C7H7-PATITA-P0-OBSERVATION-GATE.md",
+      "sha": "6f09c6290815bb2633e092c29a128335a5cd9b2a",
+      "scope": "ledger observacional no navegador, sem assumir evento avaliativo"
+    },
+    {
+      "label": "90C.7H.13 identidade",
+      "path": "docs/JAGUAR-90C7H13-PATITA-IDENTITY-EVENT-GATE.md",
+      "sha": "108d4f15e1775496221d18184a1f88c34966890d",
+      "scope": "NICK explícito, não autenticado ou persistido"
+    },
+    {
+      "label": "90C.7H.13.7 WHICH cross-check",
+      "path": "docs/JAGUAR-90C7H13-7-ROUND-CLOSURE.md",
+      "sha": "a6422f868fbabcd537d6189c85bde64935f232b1",
+      "scope": "WHICH S1→S2 2/3→3/3 apenas por contrato; PATITA observa"
+    },
+    {
+      "label": "PATITA H14.1 cross-QW",
+      "path": "scripts/experimental-patita-h14-1-cross-qw.py",
+      "sha": "103d9e217c7da65cda5944dac7bb4df550bbb6a0",
+      "scope": "ensaio Chromium WHAT/WHY/WHICH/alternância EN/ES/PT — resultado histórico não reexecutado"
+    },
+    {
+      "label": "H14.2 matriz QW",
+      "path": "docs/JAGUAR-H14-2-QW-OPPORTUNITY-ARCHITECTURE.md",
+      "sha": "af5b58c5310e09c47741b767564812b76ea4fb4b",
+      "scope": "21 slots, 5 entradas, 2 retomadas, S1/S2 WHY somente contextual"
+    },
+    {
+      "label": "H14.6 rascunhos S1/S2",
+      "path": "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+      "sha": null,
+      "scope": "S1→S2, S2→S1 independentes, draft; S3→S4 canônico"
+    },
+    {
+      "label": "H14.25 coerência",
+      "path": "docs/JAGUAR-H14-25-WHY-S1-S2-FINE-COHERENCE.md",
+      "sha": null,
+      "scope": "referente queijo/salmão S1, preparação conjunta S2, papel causal"
+    },
+    {
+      "label": "H14.34 prontidão",
+      "path": "docs/JAGUAR-H14-34-CONTEXTUAL-ASSESSMENT-READINESS.md",
+      "sha": null,
+      "scope": "homologação real HG pendente, material de estudo não é aprovação"
+    },
+    {
+      "label": "H14.38 planos",
+      "path": "docs/JAGUAR-H14-38-WHY-INDEPENDENT-PRODUCTION-TRANSFER.md",
+      "sha": null,
+      "scope": "6 planos em EN/ES/PT S1↔S2, 18 posições, revisão humana pendente"
+    },
+    {
+      "label": "V30.3 89O contexto",
+      "path": "labs/jaguar-v30-3/evidence/V30-3-89O-REVIEW-WHY-S1-S4.md",
+      "sha": "c21586561e9ba1bb236170cbe271935ab3f2b1b1",
+      "scope": "4 experiences, 21 QWs, revisão WHICH distinta de WHY e DISCOVER WHY ainda proposta"
+    }
+  ],
+  "gates": [
+    {
+      "id": "HIST-01",
+      "status": "PARTIALLY_RECONSTRUCTED_NOT_EXHAUSTIVE",
+      "need": "Mais commits/branches e H14.1 outcomes reais/QA de origens não reconstruídos integralmente"
+    },
+    {
+      "id": "HG-01-10",
+      "status": "OPEN",
+      "need": "Autoria e revisão humana real de causalidade, equivalência e transferência EN/ES/PT"
+    },
+    {
+      "id": "DG-01-07",
+      "status": "OPEN",
+      "need": "Autenticador real, contrato EVAL-08, Evidence/outbox, D1 remoto, integração seletiva e QA"
+    },
+    {
+      "id": "WHY-S1-S2",
+      "status": "DRAFT_NOT_AUTHORIZED",
+      "need": "Dois contratos de origem distintos, não confundir S2 local com transferência S1"
+    },
+    {
+      "id": "WHY-S3-S4",
+      "status": "PRESERVE_CANONICAL",
+      "need": "Não alterar o ciclo homologado em avaliações existentes"
+    }
+  ],
+  "observed_corpus_expectations": {
+    "experienceCount": 4,
+    "questionWordSlots": 21,
+    "assessmentStarts": 5,
+    "assessmentResume": 2,
+    "whyS1": "CONTEXT_ONLY",
+    "whyS2": "CONTEXT_ONLY",
+    "whyS3": "AUTHORED_CANONICAL_START",
+    "whyS4": "CANONICAL_TRANSFER",
+    "three_languages": [
+      "en",
+      "es",
+      "pt"
+    ]
+  },
+  "source_skill": "data/learning/skills/why.json",
+  "draft_contract": "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+  "invariants": {
+    "nik_is_authentication": false,
+    "patita_can_evaluate": false,
+    "source_corpus_mutation": false,
+    "evidence_from_view": false,
+    "green_pass_from_observation": false,
+    "real_authentication_verified": false,
+    "remote_d1_verified": false,
+    "merge_to_main_authorized": false,
+    "production_deploy_authorized": false
+  },
+  "status": "HISTORICAL_AUDIT_CHECKPOINT_CI_PENDING; NO CONTRACT AUTHORITY"
+}
