@@ -1,0 +1,20 @@
+name: JAGUAR H14.57 optional read-only Explorer opportunity bridge
+on:
+  push:
+    branches: [jaguar/h14-57-explorer-patita-contract-opportunity-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node scripts/test-jaguar-h14-57-opportunity-bridge.cjs
+      - run: |
+          node scripts/test-question-word-assessment-contract.js
+          node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
+          node scripts/test-elo7d1-polyglot-word-path-view.js
+          node scripts/test-verb-explorer-learner-identity-source.js
+          node scripts/test-jaguar-h14-55-integration-handoff.cjs

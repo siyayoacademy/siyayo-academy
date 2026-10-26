@@ -1,0 +1,14 @@
+{
+  "id": "HIST-01",
+  "status": "OPEN_REQUIRES_SEPARATE_HISTORICAL_AUDIT",
+  "scope": "Before H14.1 and earlier Explorer/V29/V30/90C; investigate how WHAT/WHICH/WHERE led to WHY S1/S2, PATITA observation, contracts, navigation and presentation",
+  "must_check": [
+    "Git branches and blob SHAs before H14.1",
+    "PR #3 and main current differences",
+    "Experience/QW/language corpus and validation history",
+    "PATITA H13/H14.1 and context gates",
+    "assessment authority, occurrence, Trail and Word Path regressions",
+    "Master VIP and FUNC-13 predecessors"
+  ],
+  "prohibition": "Do not infer content or fill JSONs without contextual review; no runtime modification implied."
+}
