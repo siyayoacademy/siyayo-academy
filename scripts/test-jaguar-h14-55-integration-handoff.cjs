@@ -1,0 +1,30 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),j=JSON.parse(fs.readFileSync(path.join(root,'data/learning/references/jaguar-h14-55-full-integration-handoff-v0.1.json'),'utf8'));
+assert.equal(j.id,'SIYAYO-H14-55-FULL-HISTORICAL-INTEGRATION-HANDOFF');
+assert.equal(j.status,'HANDOFF_DOCUMENTED_NOT_PRODUCT_INTEGRATED');
+assert.equal(j.stages.length,53);assert.equal(j.registry_modules.length,18);
+assert.equal(j.links.length,10);assert.equal(j.roadmap.length,8);assert.equal(j.gates.length,7);
+assert.equal(new Set(j.registry_modules.map(x=>x.id)).size,18);
+assert.ok(j.gates.every(x=>x.closed===false));
+for(let n=2;n<=54;n++)assert.equal(j.stages.filter(x=>x.elo==='H14.'+n).length,1,'missing H14.'+n);
+for(const s of [...j.stages,...j.sources]){
+ const bytes=fs.readFileSync(path.join(root,s.path));
+ const hash=crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex');
+ assert.equal(hash,s.git_blob_sha,'source content changed: '+s.path);
+}
+for(const link of j.links)assert.ok(j.segments.some(x=>x.id===link.from)||j.registry_modules.some(x=>x.id===link.from),'bad from '+link.from);
+for(const link of j.links)assert.ok(j.segments.some(x=>x.id===link.to)||j.registry_modules.some(x=>x.id===link.to),'bad to '+link.to);
+assert.equal(j.privacy.original_private,true);
+assert.equal(j.invariants.func13_default_off,true);
+assert.equal(j.invariants.patita_evidence_authority,false);
+assert.equal(j.invariants.nick_authentication,false);
+assert.equal(j.invariants.staging_authentication_real,false);
+assert.equal(j.invariants.remote_d1_verified,false);
+assert.equal(j.invariants.pending_is_evidence,false);
+assert.equal(j.invariants.may_issue_green,false);
+assert.equal(j.invariants.runtime_apply_allowlist.length,0);
+assert.deepEqual(j.pedagogy.functions,['QUALITY','STATE','MOVEMENT','ACTION','EXISTENCE']);
+assert.equal(j.pedagogy.period,'GEAR-06-PERIOD-GAP');
+assert.equal(j.pedagogy.potential_function_experience_perspective_relations,80);
+console.log('H14.55 PASS: 53 H14 source blobs; 18 modules; 10 relationships; 7 open integration gates; no runtime authority');

@@ -1,0 +1,832 @@
+{
+  "id": "SIYAYO-H14-55-FULL-HISTORICAL-INTEGRATION-HANDOFF",
+  "version": "0.1.0",
+  "status": "HANDOFF_DOCUMENTED_NOT_PRODUCT_INTEGRATED",
+  "origin": {
+    "repo": "siyayoacademy/siyayo-academy",
+    "source_head": "6118e7f06e9781c69f5244aa9617d2911bb4b0a6",
+    "h1454_ci_run": 40216345434,
+    "main_head_at_audit": "c2149f5e63b8de716cf9b9dcdede213bd328344e",
+    "pr3_head_at_audit": "c7e83709cacf8479847df0f3cee4ed8a563aaae6"
+  },
+  "limits": "H14.2–54 plus public Master VIP source mirrors and REG-01. H14.1 and earlier project modules are only indirectly referenced: not exhaustive all chat/branch history.",
+  "privacy": {
+    "original": "STRUCTURE- KIND OF WORDS.docx",
+    "original_private": true,
+    "original_copied_to_repo": false
+  },
+  "sources": [
+    {
+      "path": "docs/JAGUAR-90C7H5-MASTER-VIP-REFERENCE-MAP.md",
+      "git_blob_sha": "1b3d3ac79123796e3c00e96b881715774952291a"
+    },
+    {
+      "path": "data/learning/references/master-vip-verb-functions-v0.1.json",
+      "git_blob_sha": "f334d4f16a5ef10d87092077c1abd892c8e1c788"
+    },
+    {
+      "path": "data/learning/references/master-vip-existence-v0.1.json",
+      "git_blob_sha": "b18fde5d9f575de2ba15aedc56f262b844413c36"
+    },
+    {
+      "path": "data/nodes/master-verb-functions.json",
+      "git_blob_sha": "e370939dcede26ecf3b562393d9ac42c2d4cfdbf"
+    },
+    {
+      "path": "data/nodes/master-existence.json",
+      "git_blob_sha": "7a9ca8b557b2b201dbc7a6bc03fb474786eeb9f0"
+    },
+    {
+      "path": "labs/master-vip-existence/README.md",
+      "git_blob_sha": "9c8913f8b20d7195fc16f065ac86241deb6ded95"
+    },
+    {
+      "path": "scripts/jaguar-h14-13-specialized-mirror-reference.js",
+      "git_blob_sha": "676ec4181e42e3b28a4a56ca830f99b207048696"
+    },
+    {
+      "path": "js/verb-explorer-h14-14-preview.js",
+      "git_blob_sha": "eb1ecdc8078e006c994d90070fa1eab61342ea50"
+    },
+    {
+      "path": "js/verb-explorer-h14-23-gear-snapshot-adapter.js",
+      "git_blob_sha": "f96c25829897bf987deb576d35419fa821cee99e"
+    },
+    {
+      "path": "docs/JAGUAR-H14-54-EXPLORER-INTEGRATION-INVENTORY.md",
+      "git_blob_sha": "7a96531f7d746bf711a4a50d81b2c8ac9ee76832"
+    },
+    {
+      "path": "docs/JAGUAR-H14-43-SELECTIVE-INTEGRATION-HANDOFF.md",
+      "git_blob_sha": "5c530fb6fa9dde0bfdc662217847cada154a7097"
+    }
+  ],
+  "segments": [
+    {
+      "id": "SOURCE_WHY",
+      "start": 2,
+      "end": 6,
+      "description": "Experience/QW sem rigidez; WHY S1/S2 é proposta por origem, sem ativação"
+    },
+    {
+      "id": "MASTER_VIP",
+      "start": 7,
+      "end": 13,
+      "description": "Cinco funções e 4 Experiences/Perspectives; estudos finos e fonte de autoria"
+    },
+    {
+      "id": "FUNC13",
+      "start": 14,
+      "end": 23,
+      "description": "Preview oculto, Function Window, fala e snapshot read-only do Gear Stack"
+    },
+    {
+      "id": "WHY_SEMANTIC",
+      "start": 24,
+      "end": 38,
+      "description": "Coerência, rubricas, paráfrases, revisão humana e readiness sem avaliar automaticamente"
+    },
+    {
+      "id": "DURABLE_WHY",
+      "start": 39,
+      "end": 54,
+      "description": "85C, idempotência, batch, Worker/D1 local, identidade sintética e assinatura de teste"
+    }
+  ],
+  "stages": [
+    {
+      "elo": "H14.2",
+      "group": "SOURCE_WHY",
+      "path": "docs/JAGUAR-H14-2-QW-OPPORTUNITY-ARCHITECTURE.md",
+      "git_blob_sha": "af5b58c5310e09c47741b767564812b76ea4fb4b",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.3",
+      "group": "SOURCE_WHY",
+      "path": "docs/JAGUAR-H14-3-WHY-S1-CONTEXT-ELIGIBILITY.md",
+      "git_blob_sha": "fc800408592cc6514517c007564f63bf43a3a218",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.4",
+      "group": "SOURCE_WHY",
+      "path": "docs/JAGUAR-H14-4-WHY-INDEPENDENT-OPPORTUNITY-GATES.md",
+      "git_blob_sha": "dd25c7dfc607aea6bc375dab0bf616648b4a78bc",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.5",
+      "group": "SOURCE_WHY",
+      "path": "docs/JAGUAR-H14-5-WHY-S1-S2-CONTEXTUAL-TRANSFER.md",
+      "git_blob_sha": "05ccbf5bb23be94e77d8f2f2fc7b7f1aa2bd7013",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.6",
+      "group": "SOURCE_WHY",
+      "path": "docs/JAGUAR-H14-6-WHY-ORIGIN-SCOPED-CONTRACT.md",
+      "git_blob_sha": "bbc23928103047a085d96c49ac958db03b4f4c94",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.7",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-7-MASTER-VIP-FIVE-FUNCTION-MATRIX.md",
+      "git_blob_sha": "67de83aade64ef5d6e25f1d4f9e5a66733c80661",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.8",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-8-MASTER-VIP-PERSPECTIVES-CONSOLIDATION.md",
+      "git_blob_sha": "5c836a7eb05cd0cd12e71cc73b3c5696a8f02658",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.9",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-9-SEMANTIC-80-RELATIONS-STUDY.md",
+      "git_blob_sha": "3627c094d2477ce4663b39eb7d41168399df631e",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.10",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-10-FIRST-TWO-CONTEXTUAL-PRACTICE-PILOTS.md",
+      "git_blob_sha": "226f23a870c3377e1d8f66ba7590a2dbb1870e40",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.11",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-11-TENSE-MODE-CONTEXTUAL-COHERENCE.md",
+      "git_blob_sha": "3da68ffb3fadd832720d89bef1850f447d97e0c5",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.12",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-12-PRESERVATION-AND-TEMPORAL-GATES.md",
+      "git_blob_sha": "09c0988dd8b8371c836b2196f7fea529f1f82e92",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.13",
+      "group": "MASTER_VIP",
+      "path": "docs/JAGUAR-H14-13-PROGRESSIVE-EXPLORER-INTEGRATION.md",
+      "git_blob_sha": "bf99add0ca2e265a024122131aaa3f4e381e127b",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.14",
+      "group": "FUNC13",
+      "path": "js/verb-explorer-h14-14-preview.js",
+      "git_blob_sha": "eb1ecdc8078e006c994d90070fa1eab61342ea50",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.15",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-15-FUNC13-MODULE-GOVERNANCE.md",
+      "git_blob_sha": "8c0d2fe619f70d5d30ac34821dbf895dfc1feb78",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.16",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-16-BROWSER-QA-AND-SELECTIVE-MAIN-INTEGRATION.md",
+      "git_blob_sha": "c8f9bf1aa068f1bc2ca1d9ac10cc084087793ce1",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.17",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-17-FUNC13-FINE-STUDY-ARCHITECTURE.md",
+      "git_blob_sha": "8bee90b9c737886964f51afcd4c00a2448cb3b82",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.18",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-18-FUNC13-FUNCTION-WINDOW-ARCHITECTURE.md",
+      "git_blob_sha": "87cf9730b8cf0cd1b84a1551983cae08fdeec0d8",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.19",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-19-FUNC13-SPEECH-LAYOUT-AND-PERIOD.md",
+      "git_blob_sha": "100980702742c85c62ae86a898fee17433d7c606",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.20",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-20-CORPUS-SPEECH-CARD-AND-PERIOD.md",
+      "git_blob_sha": "51e0e8095b54e3ac8fd32202812b8075da8176a6",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.21",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-21-FUNC13-CENTERED-TORO-HOW-TO-SHOW.md",
+      "git_blob_sha": "d9ed16ac81f89d0baedc2dc6b549513bb01c77b1",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.22",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-22-CENTERED-BROWSER-QA.md",
+      "git_blob_sha": "aa3d40104f0b3e0aeee21f1a6b803ff24ffefcfa",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.23",
+      "group": "FUNC13",
+      "path": "docs/JAGUAR-H14-23-FUNC13-READONLY-GEAR-SNAPSHOT.md",
+      "git_blob_sha": "a2c74be126f83f4cb790e845f29379ab145cd389",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.24",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-24-EXPERIENCE-QW-COHERENCE-INVENTORY.md",
+      "git_blob_sha": "dbf4dbcdc7ce4ac2789524ff5b4a63b83a98fb97",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.25",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-25-WHY-S1-S2-FINE-COHERENCE.md",
+      "git_blob_sha": "fea17480a4693c1f80b0188c8d5b1c3d1695a9ea",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.26",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-26-WHY-INDEPENDENT-TASK-BLUEPRINTS.md",
+      "git_blob_sha": "5cc75d031e0f47bfab4b36cbab8461ac173868fa",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.27",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-27-WHY-SEMANTIC-RUBRIC-AND-REGISTRY.md",
+      "git_blob_sha": "d0213bc6f4c0aef9a78c06c631d9f0dcf65587a7",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.28",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-28-WHY-SEMANTIC-CONTRAST-LAB.md",
+      "git_blob_sha": "76ae43d444865d8f003d3d22871b7e596e4a216a",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.29",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-29-SEMANTIC-RISKS.md",
+      "git_blob_sha": "d696b6c3d67feda21f77086bfb5abeba6d960a68",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.30",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-30-SUPERVISED-SEMANTIC-FEEDBACK.md",
+      "git_blob_sha": "8853e28ca9f467bc15f399304cc64af3aa734218",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.31",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-31-WHY-TWO-REVIEWER-CONSISTENCY.md",
+      "git_blob_sha": "c3301301059b1af22c5ef5ac5924ddbad7836017",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.32",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-32-WHY-PEDAGOGICAL-MEDIATION.md",
+      "git_blob_sha": "3d2d8f4d53034858657c7616bdbedd306b1a9bcc",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.33",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-33-WHY-SEMANTIC-HOMOLOGATION-REFERENCE.md",
+      "git_blob_sha": "944b11a08457790d6109ae508d62953ac6ea5f11",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.34",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-34-CONTEXTUAL-ASSESSMENT-READINESS.md",
+      "git_blob_sha": "00933caf12de51b8222acf8ec4d6c8c402eb82e7",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.35",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-35-PROGRESSIVE-HOMOLOGATION-AND-MAIN-RECONCILIATION.md",
+      "git_blob_sha": "f0715b79837058a612eca21aaba409e61ae7e1b3",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.36",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-36-PHASE1-WHY-SOURCE-AND-INTEGRATION-PREFLIGHT.md",
+      "git_blob_sha": "369471f38a9fe13ac7fc272ef8f12193975ef537",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.37",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-37-TRILINGUAL-SEMANTIC-PARITY.md",
+      "git_blob_sha": "397983e1d648bdb598d5f859a7473a5d15483f1a",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.38",
+      "group": "WHY_SEMANTIC",
+      "path": "docs/JAGUAR-H14-38-WHY-INDEPENDENT-PRODUCTION-TRANSFER.md",
+      "git_blob_sha": "cf82e2e757ae35d6994e967e49df2fcde8ff8454",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.39",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-39-CROSS-ORIGIN-OCCURRENCE-IDEMPOTENCE.md",
+      "git_blob_sha": "9de873c70a7fe99d1f1587c4e2ad7cf4f8e4d9f3",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.40",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-40-V30-85C-DURABLE-IDEMPOTENCY-REUSE.md",
+      "git_blob_sha": "8380b95632351289720348013a4ac6c4b6c2a5f2",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.41",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-41-DIMENSION-INTENT-ATTEMPT-LIFECYCLE.md",
+      "git_blob_sha": "3f23adcc0c8990323ef47e5a66316348cd7ae951",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.42",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-42-DURABLE-FAILURE-RECOVERY.md",
+      "git_blob_sha": "03266777779c6cc0a44683b9014f262c7344ff4e",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.43",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-43-SELECTIVE-INTEGRATION-HANDOFF.md",
+      "git_blob_sha": "5c530fb6fa9dde0bfdc662217847cada154a7097",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.44",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-44-SERVER-BINDING-DRY-RUN.md",
+      "git_blob_sha": "2361389c94ac71e70c8be1156004a714177502a9",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.45",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-45-PERSISTED-REPLAY-REVALIDATION.md",
+      "git_blob_sha": "7166823a33dcf0d600669582a5d7a5f14f5753c2",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.46",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-46-TRANSACTIONAL-ACTION-SCOPE.md",
+      "git_blob_sha": "aa087779986e39d5dc0db5dec4e7b79a3bf5f00d",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.47",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-47-CROSS-ADAPTER-LEGACY-COMPATIBILITY.md",
+      "git_blob_sha": "cb5954a62083359dc7cdad15f2913a203631cc90",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.48",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-48-SINGLE-WRITE-BOUNDARY.md",
+      "git_blob_sha": "4d96cf09d7f5958181e361f972688baf4c28a747",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.49",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-49-D1-WRITER-LEGACY-CONTRACT.md",
+      "git_blob_sha": "19f68e48c19d0d815bb05a431776dbd4d05128df",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.50",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-50-GUARDED-BATCH-CANDIDATE.md",
+      "git_blob_sha": "38814542f1d9fed0a28faad6ac60ee9fb005dd6a",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.51",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-51-MINIFLARE-D1-RUNTIME.md",
+      "git_blob_sha": "21bbc29da93b73384c50b4d64aa722c15e6918f9",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.52",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-52-WORKER-LOCAL-BUNDLE.md",
+      "git_blob_sha": "6451efdb096d91435803f8709774dc9f437c6747",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.53",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-53-TRUSTED-ACTION-PROVENANCE.md",
+      "git_blob_sha": "831184a59c263d92613febbcc611bd8fa3790753",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    },
+    {
+      "elo": "H14.54",
+      "group": "DURABLE_WHY",
+      "path": "docs/JAGUAR-H14-54-VERIFIED-ASSERTION-CONTRACT.md",
+      "git_blob_sha": "bce79737929e565e280462405ef532f3346d54e1",
+      "authority": "REVIEW_ONLY_NOT_RUNTIME_AUTHORIZED",
+      "evaluative_credit": false
+    }
+  ],
+  "registry_modules": [
+    {
+      "id": "EXP-01",
+      "name": "Experience Header",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "CTX-02",
+      "name": "Circumstance Strip",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "DEP-03",
+      "name": "Dependency Focus",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "HEAD-04",
+      "name": "Dependency Head Probe",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "ID-05",
+      "name": "Learner Identity",
+      "status": "VISUAL_NOT_AUTHENTICATION"
+    },
+    {
+      "id": "GEAR-06",
+      "name": "Pedagogical Axes / Gear Stack",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "LIVE-07",
+      "name": "Living Window / Lines & Possible Responses",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "EVAL-08",
+      "name": "Assessment Probes",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "NEXT-09",
+      "name": "Toroidal NEXT Navigation",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "TRAIL-10",
+      "name": "Learning Trail",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "WORD-11",
+      "name": "Word Path",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "PATITA-12",
+      "name": "PATITA Interaction Ledger",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "FUNC-13",
+      "name": "Master VIP — Five Verb Functions / Function Lens",
+      "status": "EXPERIMENTAL_HIDDEN_NOT_MOUNTED"
+    },
+    {
+      "id": "SPEECH-A",
+      "name": "Corpus Speech Card",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "SPEECH-B1",
+      "name": "Assessment Question Speech Card",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "SPEECH-B2",
+      "name": "Assessment Response Row",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "RS-01",
+      "name": "Responsive Stage — Auto / Portrait / Landscape",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    },
+    {
+      "id": "XESP-DIAG",
+      "name": "XESPIRITO — Functional Diagnosis",
+      "status": "REGISTRY_DOCUMENTED_CHECK_ACTUAL_TARGET_HEAD"
+    }
+  ],
+  "pedagogy": {
+    "functions": [
+      "QUALITY",
+      "STATE",
+      "MOVEMENT",
+      "ACTION",
+      "EXISTENCE"
+    ],
+    "original_master_patterns": [
+      "TO BE quality",
+      "TO BE state",
+      "TO BE + VERB-ING ongoing activity",
+      "lexical verbs and TO DO when required",
+      "THERE + TO BE existence"
+    ],
+    "perspectives": [
+      "DESCRIBING red",
+      "NARRATING yellow",
+      "DEBATING green",
+      "CONCLUDING blue"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ],
+    "question_words": 14,
+    "existing_experience_qw_slots_at_h142": 21,
+    "function_experience_cells": 20,
+    "potential_function_experience_perspective_relations": 80,
+    "period": "GEAR-06-PERIOD-GAP",
+    "source_provenance": [
+      "MASTER_ORIGINAL",
+      "SIYAYO_ADAPTATION",
+      "COMPLEMENTARY_STUDY",
+      "PENDING_HOMOLOGATION"
+    ],
+    "source_examples_not_automatically_assessable": true
+  },
+  "links": [
+    {
+      "from": "MASTER_VIP",
+      "to": "FUNC13",
+      "relationship": "Master-index & H14.13 projectSingle() → default-OFF read-only presentation",
+      "authority": "NO_ATTEMPT_OR_EVIDENCE"
+    },
+    {
+      "from": "FUNC13",
+      "to": "GEAR-06",
+      "relationship": "H14.23 snapshot reads active gear only; PERIOD null and owned by GEAR-06",
+      "authority": "READ_ONLY"
+    },
+    {
+      "from": "FUNC13",
+      "to": "SPEECH-A",
+      "relationship": "Gold speaker/card and trilingual speech, no audio-based assessment",
+      "authority": "PRESENTATION_ONLY"
+    },
+    {
+      "from": "SOURCE_WHY",
+      "to": "WHY_SEMANTIC",
+      "relationship": "Contextually grounded QW/Experience/EN ES PT, no bulk authored fillers",
+      "authority": "PEDAGOGICAL_REVIEW"
+    },
+    {
+      "from": "WHY_SEMANTIC",
+      "to": "EVAL-08",
+      "relationship": "S1/S2 WHY drafts and human mediations require authorized contracts",
+      "authority": "PENDING_HOMOLOGATION"
+    },
+    {
+      "from": "DURABLE_WHY",
+      "to": "EVAL-08",
+      "relationship": "85C pending + protected batch require genuine user auth and evaluator",
+      "authority": "NO_PRODUCT_RUNTIME"
+    },
+    {
+      "from": "EVAL-08",
+      "to": "TRAIL-10",
+      "relationship": "Accepted canonical Evidence only",
+      "authority": "AUTHORIZED_CONTRACT_ONLY"
+    },
+    {
+      "from": "EVAL-08",
+      "to": "WORD-11",
+      "relationship": "Accepted canonical Evidence only",
+      "authority": "AUTHORIZED_CONTRACT_ONLY"
+    },
+    {
+      "from": "PATITA-12",
+      "to": "EVAL-08",
+      "relationship": "Observed action is not evaluation",
+      "authority": "NO_AUTOMATIC_CREDIT"
+    },
+    {
+      "from": "SOURCE_WHY",
+      "to": "LIVE-07",
+      "relationship": "Original authored corpus and visible responses not interchangeable with assessment",
+      "authority": "CORPUS_ONLY"
+    }
+  ],
+  "roadmap": [
+    {
+      "step": "I0",
+      "name": "Freeze & compare HEADs",
+      "state": "REFERENCE_PINNED_RECHECK_ON_TARGET",
+      "gate": "DG-06",
+      "effect": "Audit current main, PR #3, H14.54, FUNC-13 and 90C sources; never whole-merge divergent branches"
+    },
+    {
+      "step": "I1",
+      "name": "Pedagogical source coherence",
+      "state": "REVIEW_REQUIRED",
+      "gate": "DG-01",
+      "effect": "Master VIP origin, 5 functions, 4 Perspectives, 14 QWs, 3 languages, TENSE/MODE, PERIOD gap and context data"
+    },
+    {
+      "step": "I2",
+      "name": "FUNC-13 isolated pilot",
+      "state": "NOT_MOUNTED",
+      "gate": "DG-06",
+      "effect": "Only selective H14.13/14/18/23; keep hidden/default off and test responsive speech without credit"
+    },
+    {
+      "step": "I3",
+      "name": "WHY S1/S2 authorized content",
+      "state": "NO_GO",
+      "gate": "DG-02",
+      "effect": "Human review of S1↔S2 WHY causal answers, HG-04/05/09/10 and transfer independence; preserve canonical S3→S4"
+    },
+    {
+      "step": "I4",
+      "name": "Trusted identity and D1",
+      "state": "NO_GO",
+      "gate": "DG-04",
+      "effect": "Select real auth issuer and ingested action source, real staging D1, legacy reconciliation, one writer, no fixture copy"
+    },
+    {
+      "step": "I5",
+      "name": "Canonical decision/Evidence",
+      "state": "NO_GO",
+      "gate": "DG-03",
+      "effect": "EVAL-08 decision/outbox and idempotent consumers; PATITA remains observer, 85C pending not GREEN"
+    },
+    {
+      "step": "I6",
+      "name": "Selective Explorer patch",
+      "state": "NO_GO",
+      "gate": "DG-06",
+      "effect": "Per-file dependencies with refreshed heads, EN/ES/PT, portrait/desktop/landscape, QW switching, audio, Trails"
+    },
+    {
+      "step": "I7",
+      "name": "Homologation and authorized release",
+      "state": "NO_GO",
+      "gate": "DG-07",
+      "effect": "Human acceptance, rollback and separate explicit permission before merge, D1 or Cloudflare production"
+    }
+  ],
+  "gates": [
+    {
+      "id": "DG-01",
+      "need": "authoritative versioned binding of dimension and intent",
+      "closed": false
+    },
+    {
+      "id": "DG-02",
+      "need": "authorized WHY S1/S2 contracts",
+      "closed": false
+    },
+    {
+      "id": "DG-03",
+      "need": "atomic evaluation decision plus Evidence/outbox and idempotent consumers",
+      "closed": false
+    },
+    {
+      "id": "DG-04",
+      "need": "real trusted authentication, revocation and subject isolation",
+      "closed": false
+    },
+    {
+      "id": "DG-05",
+      "need": "real Worker/D1 staging concurrency recovery consistency",
+      "closed": false
+    },
+    {
+      "id": "DG-06",
+      "need": "fresh main/PR compare and selective regression tested integration patch",
+      "closed": false
+    },
+    {
+      "id": "DG-07",
+      "need": "human pedagogical homologation HG-04/05/09/10",
+      "closed": false
+    }
+  ],
+  "invariants": {
+    "func13_default_off": true,
+    "patita_evidence_authority": false,
+    "nick_authentication": false,
+    "s3_s4_canonical_preserved": true,
+    "staging_authentication_real": false,
+    "remote_d1_verified": false,
+    "pending_is_evidence": false,
+    "evaluation_contracts_s1_s2_authorized": false,
+    "runtime_apply_allowlist": [],
+    "do_not_merge_main": true,
+    "do_not_deploy": true,
+    "may_issue_green": false
+  },
+  "related_governance": [
+    "REG-01",
+    "REG-02",
+    "REG-03",
+    "XPR-01",
+    "XPR-02",
+    "XPR-03.1"
+  ]
+}
