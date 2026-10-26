@@ -1,0 +1,49 @@
+name: JAGUAR H14.67 WHY closure decision and regression audit
+on:
+  push:
+    branches: [jaguar/h14-67-why-experimental-closure-go-nogo-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  handoff-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify frozen sources, safety gates, main/PR comparison snapshot
+        run: node scripts/test-jaguar-h14-67-final-gates.cjs
+      - name: JavaScript syntax and experimental read-only bridge wiring
+        run: |
+          node --check js/verb-explorer.js
+          node --check js/verb-explorer-h14-57-opportunity-bridge.js
+          node --check js/verb-explorer-h14-58-authority-review.js
+          node --check js/verb-explorer-h14-59-scoped-applicability.js
+          node --check js/verb-explorer-h14-60-referral-proposal.js
+      - name: WHY pedagogical and authority lab regressions
+        run: |
+          node scripts/test-jaguar-h14-55-integration-handoff.cjs
+          node scripts/test-jaguar-h14-62-why-closure.cjs
+          node scripts/test-jaguar-h14-63-why-six-plan-handoff.js
+          node scripts/test-jaguar-h14-64-pedagogical-human-review-gate.js
+          node --test labs/jaguar-v30-3/test/h14-61/referral-preflight.test.mjs
+          node --test labs/jaguar-v30-3/test/h14-65/why-authority-relay.test.mjs
+          node --test scripts/test-jaguar-h14-66-evidence-boundary.cjs
+      - name: Canonical Explorer WHY, PATITA, Trail and Word Path regressions
+        run: |
+          node scripts/test-jaguar-h14-57-opportunity-bridge.cjs
+          node scripts/test-jaguar-h14-58-authority-review.cjs
+          node scripts/test-jaguar-h14-59-scoped-applicability.cjs
+          node scripts/test-jaguar-h14-60-referral.cjs
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-s3-why-live-assessment.js
+          node scripts/test-elo7d1-polyglot-word-path-view.js
+          node scripts/test-elo7d2-word-path-evidence-detail.js
+          node scripts/test-verb-explorer-learner-trail-surface.js
+          node scripts/test-adaptive-pass-contract-progress-view.js
+          node scripts/test-jaguar-h14-13-progressive-integration.js
+          node scripts/test-jaguar-h14-23-gear-snapshot.js
+          node scripts/test-jaguar-h14-43-integration-readiness.js
+      - name: H14.50 isolated atomic persistence and replay
+        run: node --test labs/jaguar-v30-3/test/h14-50/guarded-batch-candidate.test.mjs

@@ -1,0 +1,345 @@
+{
+  "id": "SIYAYO-JAGUAR-H14.67-WHY-FINAL-EXPERIMENTAL-HANDOFF",
+  "version": "0.1.0",
+  "status": "CI_PENDING_LAB_GO_CANDIDATE__LIVE_NO_GO",
+  "repository": "siyayoacademy/siyayo-academy",
+  "branch": "jaguar/h14-67-why-experimental-closure-go-nogo-20261026",
+  "parent_head": "0bab91922db5c8ed31b7d4391c61d21317130105",
+  "comparison_at_2026_10_26": {
+    "main": {
+      "head": "c2149f5e63b8de716cf9b9dcdede213bd328344e",
+      "relationship": "diverged",
+      "ahead_by": 1801,
+      "behind_by": 1,
+      "merge_base": "8cd169bac05506f7c9046a12bfee7542af2292e6"
+    },
+    "pr3": {
+      "head": "c7e83709cacf8479847df0f3cee4ed8a563aaae6",
+      "relationship": "ahead",
+      "ahead_by": 289,
+      "behind_by": 0,
+      "open": true,
+      "merged": false
+    },
+    "diff_file_list_limit": "compare API returned 300 files each; NOT exhaustive inventory of differences; refresh before any patch or merge"
+  },
+  "closure_scope": "H14.62–H14.67 experimental lab inventory / safety assessment only",
+  "timeline": [
+    {
+      "elo": "H14.62",
+      "theme": "história pré-FUNC-13 e roteiro",
+      "status": "LAB_GREEN",
+      "run": 40375856732
+    },
+    {
+      "elo": "H14.63",
+      "theme": "6 planos × 3 dimensões WHY S1/S2",
+      "status": "LAB_GREEN",
+      "run": 40378010797
+    },
+    {
+      "elo": "H14.64",
+      "theme": "instrumento de 2 revisores + mediação; não homologação real",
+      "status": "INSTRUMENT_GREEN_HUMAN_PENDING",
+      "run": 40378701137
+    },
+    {
+      "elo": "H14.65",
+      "theme": "relay de proposta até verificador EVAL-08 fictício",
+      "status": "LAB_GREEN_AUTHORITY_DENIED",
+      "run": 40381927019
+    },
+    {
+      "elo": "H14.66",
+      "theme": "ocorrências pending ≠ Evidence; projeção de testemunhas",
+      "status": "LAB_GREEN",
+      "run": 40387472932
+    },
+    {
+      "elo": "H14.67",
+      "theme": "conferência de regressões + handoff formal GO/NO-GO",
+      "status": "CI_PENDING"
+    }
+  ],
+  "decisions": {
+    "laboratory_package": "CONDITIONAL_GO_AFTER_GREEN_H1467_CI",
+    "historic_inventory": "GO_DOCUMENTED_WITH_HIST01_OPEN",
+    "why_s3_to_s4": "PRESERVE_EXISTING_CANONICAL_CYCLE",
+    "why_s1_to_s2_contract": "NO_GO_PEDAGOGICAL_AUTHORITY",
+    "why_s2_to_s1_contract": "NO_GO_PEDAGOGICAL_AUTHORITY",
+    "real_evaluator_and_green": "NO_GO",
+    "real_learner_authentication": "NO_GO",
+    "worker_d1_staging": "NO_GO",
+    "integrate_into_main_or_pr3": "NO_GO",
+    "deploy_cloudflare": "NO_GO"
+  },
+  "counts": {
+    "elos_62_67": 6,
+    "previous_green": 5,
+    "new_evidence": 0,
+    "new_green_passes": 0,
+    "approved_why_s1s2": 0,
+    "hg_open": 15,
+    "dg_open": 7,
+    "s1s2_plans": 6,
+    "s1s2_review_dimensions": 18,
+    "case_triplets": 16,
+    "simulated_semantic_cases": 48
+  },
+  "protected_files": [
+    {
+      "path": "verb-explorer.html",
+      "git_blob_sha": "924ce406a3fa7ffad9c911a35e84a114ce6c1111"
+    },
+    {
+      "path": "js/verb-explorer.js",
+      "git_blob_sha": "3c232deeb15e87ff66e0675f400461eeb7a013f6"
+    },
+    {
+      "path": "data/learning/experience-seeds.json",
+      "git_blob_sha": "9a7165df76aed1b3b726c8198311027e024e91c4"
+    },
+    {
+      "path": "data/learning/skills/why.json",
+      "git_blob_sha": "cf16e1e879bd236e5199240e350c0c623a2bc3ed"
+    },
+    {
+      "path": "js/green-pass-profile.js",
+      "git_blob_sha": "d53bc959cd35e89d05628cfb7db4815d910b2848"
+    },
+    {
+      "path": "js/adaptive-assessment-scope.js",
+      "git_blob_sha": "ac0ec23f9a445377fba05092c684c2379afeff52"
+    },
+    {
+      "path": "js/adaptive-pass-contract-progress-view.js",
+      "git_blob_sha": "d235b534933405533fe5b3022829454a58d3019f"
+    },
+    {
+      "path": "js/verb-explorer-polyglot-word-path-view.js",
+      "git_blob_sha": "eea3ccf0ddf49110a760f6aa0831abc033c0d9cb"
+    },
+    {
+      "path": "js/verb-explorer-learner-trail-surface.js",
+      "git_blob_sha": "ecff309615ace2191e196fd3dc81fed4bf44767b"
+    },
+    {
+      "path": "js/verb-explorer-patita-interaction-trail.js",
+      "git_blob_sha": "7a228eddf3f7f6c1f811230fad12709eda200e67"
+    },
+    {
+      "path": "js/verb-explorer-thinking-mind-assessment-selection.js",
+      "git_blob_sha": "08d5820d2cc3eb2d7ba109942d5da0391d728207"
+    },
+    {
+      "path": "js/verb-explorer-h14-57-opportunity-bridge.js",
+      "git_blob_sha": "b3a2aedd8175106823bb350733286d1ef019dc69"
+    },
+    {
+      "path": "js/verb-explorer-h14-58-authority-review.js",
+      "git_blob_sha": "a9fdfc67cd0253adc3556d0fc3adf488616440c1"
+    },
+    {
+      "path": "js/verb-explorer-h14-59-scoped-applicability.js",
+      "git_blob_sha": "c09b75c54716105a1de195d5f63d42421f3beda6"
+    },
+    {
+      "path": "js/verb-explorer-h14-60-referral-proposal.js",
+      "git_blob_sha": "1522268f434a6dc93e0234e2f7d8b65e69fc236f"
+    },
+    {
+      "path": "js/verb-explorer-h14-14-preview.js",
+      "git_blob_sha": "eb1ecdc8078e006c994d90070fa1eab61342ea50"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+      "git_blob_sha": "143e8692ac7dd5bdbd2de3d4624b0f264db7370d"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-62-why-closure-v0.1.json",
+      "git_blob_sha": "af78b5a06e305bdb353de9e5b99871c475daa1b5"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-63-why-six-plan-contract-v0.1.json",
+      "git_blob_sha": "6393bef0cb1d812c41a91c389f259de904329bd8"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-64-human-homologation-prep-v0.1.json",
+      "git_blob_sha": "8cb294022982c277ac0a8ed534fabfd6481a531a"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-54-explorer-integration-inventory-v0.1.json",
+      "git_blob_sha": "8a38955fe87996001ea8f83b67261b30bb60d72a"
+    },
+    {
+      "path": "docs/jaguar-h14-57-historical-debt.json",
+      "git_blob_sha": "9b6f9a83fcc72722f0d1c5de0b1c9d7e4ad27167"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-61/referral-preflight.mjs",
+      "git_blob_sha": "7a14d9c29c0859d1e45954cf4463e767e6511956"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-65/why-authority-relay.mjs",
+      "git_blob_sha": "5a80d152495cc3e4e3a094aaf22c8794d91ceec8"
+    },
+    {
+      "path": "labs/jaguar-v30-3/test/h14-66/why-evidence-display-boundary.cjs",
+      "git_blob_sha": "41c98d61f505d2e05b7a87ce2da91e1f46087185"
+    }
+  ],
+  "portões": [
+    {
+      "id": "HIST-01",
+      "condition": "PARTIAL",
+      "reason": "H14.62 recovered 90C.6/90C.7/PATITA H13/H14.1 and WHY S1/S2 drafts, not all historical branches and browser sessions"
+    },
+    {
+      "id": "HG-01..15",
+      "condition": "OPEN",
+      "reason": "0 verified actual teacher reviews, 0 mediations and no authenticated human pedagogical sign-off"
+    },
+    {
+      "id": "DG-01",
+      "condition": "OPEN",
+      "reason": "authoritative versioned binding of dimension and intent"
+    },
+    {
+      "id": "DG-02",
+      "condition": "OPEN",
+      "reason": "authorized WHY S1/S2 contracts"
+    },
+    {
+      "id": "DG-03",
+      "condition": "OPEN",
+      "reason": "atomic evaluation decision plus Evidence/outbox and idempotent consumers"
+    },
+    {
+      "id": "DG-04",
+      "condition": "OPEN",
+      "reason": "real trusted authentication, revocation and subject isolation"
+    },
+    {
+      "id": "DG-05",
+      "condition": "OPEN",
+      "reason": "real Worker/D1 staging concurrency recovery consistency"
+    },
+    {
+      "id": "DG-06",
+      "condition": "OPEN",
+      "reason": "HEAD comparison refreshed but no selective target patch merged, no device-level browser QA"
+    },
+    {
+      "id": "DG-07",
+      "condition": "OPEN",
+      "reason": "human pedagogical homologation HG-04/05/09/10"
+    },
+    {
+      "id": "GEAR-06-PERIOD-GAP",
+      "condition": "OPEN",
+      "reason": "PERIOD remains outside independent Gear controls and FUNC-13 is hidden"
+    },
+    {
+      "id": "WHY-S1/S2",
+      "condition": "DRAFT",
+      "reason": "two independent WHY S1→S2/S2→S1 plans, six language candidates, zero approved targets"
+    },
+    {
+      "id": "WHY-S3/S4",
+      "condition": "PRESERVED",
+      "reason": "Existing canonical S3→S4 skill and regression pipeline; no changes"
+    }
+  ],
+  "qa": [
+    {
+      "name": "Frozen paths: Git blob integrity",
+      "kind": "automated_CI",
+      "verified_by": "H14.67 read-only Node source guard"
+    },
+    {
+      "name": "Provenance and all six ELO sources",
+      "kind": "automated_CI",
+      "verified_by": "H14.62–66 test scripts"
+    },
+    {
+      "name": "WHY S3→S4 canonical cycle EN/ES/PT",
+      "kind": "automated_CI",
+      "verified_by": "S3 WHY cycle and live simulation"
+    },
+    {
+      "name": "Draft WHY S1/S2 no authority",
+      "kind": "automated_CI",
+      "verified_by": "H14.63/64/65; H14.66 anti-credit"
+    },
+    {
+      "name": "PATITA vs EVAL-08 browser inspectors",
+      "kind": "automated_CI",
+      "verified_by": "H14.57–60 CLI/static regressions"
+    },
+    {
+      "name": "Trail / Word Path witnesses and language scopes",
+      "kind": "automated_CI",
+      "verified_by": "ELO7D.1/7D.2, Trail scripts"
+    },
+    {
+      "name": "85C batch atomicity and replay",
+      "kind": "automated_CI",
+      "verified_by": "H14.50 sqlite Python test local only"
+    },
+    {
+      "name": "Chromium desktop, smartphone portrait and landscape manual UX",
+      "kind": "NOT_EXECUTED",
+      "verified_by": "Human preview QA required"
+    },
+    {
+      "name": "Real speaker audio on EN/ES/PT target devices",
+      "kind": "NOT_EXECUTED",
+      "verified_by": "Manual auditory QA required"
+    },
+    {
+      "name": "Authenticated learner lifecycle and real trusted provider",
+      "kind": "NOT_EXECUTED",
+      "verified_by": "DG-04 requires provider integration"
+    },
+    {
+      "name": "Cloudflare Worker production/staging D1 remote transaction",
+      "kind": "NOT_EXECUTED",
+      "verified_by": "DG-05 requires authorized staging"
+    },
+    {
+      "name": "Real human causal/semantic homologation",
+      "kind": "NOT_EXECUTED",
+      "verified_by": "15 HG gates open"
+    },
+    {
+      "name": "PR #3 merge / main production integration",
+      "kind": "NOT_PERFORMED",
+      "verified_by": "Selective patch and approval pending"
+    }
+  ],
+  "architecture": {
+    "nick": "browser nickname is not an authenticated principal",
+    "patita": "observation only; no evaluator, no signer, no credit",
+    "eval08": "sole future issuer after real identity, action and authorized pedagogical contract",
+    "source_bindings": "Experience, questionWord, language and origin independently validated; navigation free",
+    "evidence": "85C pending, observed_exploratory and synthetic fixtures never credit",
+    "views": "Learning Trail and Word Path display only accepted canonical witness projections",
+    "func13": "experimental hidden by default; remains separate from WHY evaluator",
+    "preserve_s3s4": true
+  },
+  "next_finite_blockers": [
+    "Obtain real pedagogical judgments with provenance (HG-01–15), approve WHY S1/S2 tasks and EN/ES/PT semantic parity",
+    "Resolve HIST-01 remaining commit/browser lineage if relevant to particular integration diff",
+    "Build production-grade identity/contract/authorship interface with real issuer, revocation and action provenance (DG-01/02/04)",
+    "Implement atomic Evidence/outbox, D1 staging recovery and independent producer/consumer separation (DG-03/05)",
+    "Prepare scoped per-file Explorer patch based on refreshed PR3/main, conduct manual responsive and speech QA (DG-06/07)",
+    "Only then seek explicit permission for main/PR3 integration or Cloudflare production deploy"
+  ],
+  "runtime_apply_allowlist": [],
+  "may_mint_evidence": false,
+  "may_grant_green": false,
+  "real_teacher_reviews_collected": false,
+  "real_identity_verified": false,
+  "real_d1_remote_verified": false,
+  "production_approved": false
+}
