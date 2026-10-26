@@ -1,0 +1,17 @@
+name: Master VIP modular validation
+on:
+  push:
+    branches: [jaguar/master-vip-modular-site-print-20261026]
+    paths: ['master-vip/**', 'scripts/test-master-vip.cjs', '.github/workflows/master-vip-validation.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check master-vip/master-vip.js
+      - run: node scripts/test-master-vip.cjs

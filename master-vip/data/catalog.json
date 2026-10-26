@@ -1,0 +1,731 @@
+{
+  "id": "MVP:CATALOG",
+  "version": "0.2.0",
+  "status": "EDITORIAL_PILOT",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "chapters": [
+    {
+      "id": "MVP:CH:ORIENTATION",
+      "title": "Orientação e itinerário",
+      "description": "Homework control · A Nice Party · General Checklist",
+      "keywords": [
+        "ORIENTATION",
+        "Orientação e itinerário",
+        "Homework control · A Nice Party · General Checklist"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:FOUNDATIONS",
+      "title": "Fundamentos",
+      "description": "The Ten Kinds of Words · cinco funções · ordem das orações",
+      "keywords": [
+        "FOUNDATIONS",
+        "Fundamentos",
+        "The Ten Kinds of Words · cinco funções · ordem das orações"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:TOOLS",
+      "title": "Ferramentas da língua",
+      "description": "English Face · Curious Hands · English In Your Hand",
+      "keywords": [
+        "TOOLS",
+        "Ferramentas da língua",
+        "English Face · Curious Hands · English In Your Hand"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:TO-BE",
+      "title": "To Be",
+      "description": "Quality · State · pronomes · perguntas",
+      "keywords": [
+        "TO-BE",
+        "To Be",
+        "Quality · State · pronomes · perguntas"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:QUESTIONS",
+      "title": "Question Words",
+      "description": "Intenção comunicativa · perguntas e respostas",
+      "keywords": [
+        "QUESTIONS",
+        "Question Words",
+        "Intenção comunicativa · perguntas e respostas"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:MOVEMENT",
+      "title": "Movement",
+      "description": "Atividade em progresso · To Be + verb-ing",
+      "keywords": [
+        "MOVEMENT",
+        "Movement",
+        "Atividade em progresso · To Be + verb-ing"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:ACTION-PRESENT",
+      "title": "Action · Present",
+      "description": "Rotinas e hábitos · Do / Does",
+      "keywords": [
+        "ACTION-PRESENT",
+        "Action · Present",
+        "Rotinas e hábitos · Do / Does"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:ACTION-FUTURE",
+      "title": "Action · Future",
+      "description": "Will · Going to · planos e previsões",
+      "keywords": [
+        "ACTION-FUTURE",
+        "Action · Future",
+        "Will · Going to · planos e previsões"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:ACTION-PAST",
+      "title": "Action · Past",
+      "description": "Did · verbos regulares e irregulares",
+      "keywords": [
+        "ACTION-PAST",
+        "Action · Past",
+        "Did · verbos regulares e irregulares"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:PERFECT-PERIOD",
+      "title": "Perfect e Period",
+      "description": "Present Perfect · Past Perfect · referência temporal",
+      "keywords": [
+        "PERFECT-PERIOD",
+        "Perfect e Period",
+        "Present Perfect · Past Perfect · referência temporal"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:EXISTENCE",
+      "title": "Existence · There + To Be",
+      "description": "Existência, quantidade e contexto. Um primeiro capítulo para estudar e refinar.",
+      "keywords": [
+        "EXISTENCE",
+        "Existence · There + To Be",
+        "Existência, quantidade e contexto. Um primeiro capítulo para estudar e refinar.",
+        "there is",
+        "there are",
+        "there to be",
+        "existência",
+        "existencia",
+        "how many",
+        "how much"
+      ],
+      "status": "EDITORIAL_PILOT",
+      "sections": [
+        {
+          "id": "MVP:SEC:EXISTENCE:INTRO",
+          "title": "Introdução",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:CONCEPT:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:PRESENT",
+          "title": "Present",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:MODEL:001",
+            "MVP:UNIT:EXISTENCE:TABLE:001",
+            "MVP:UNIT:EXISTENCE:FIGURE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:CONTRAST",
+          "title": "Contrastes",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:CONTRAST:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:QUESTIONS",
+          "title": "Perguntas",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:QUESTIONS:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:TIME",
+          "title": "Past / Future",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:TIME:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:PRACTICE",
+          "title": "Prática",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:PRACTICE:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:ANSWERS",
+          "title": "Gabarito",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:ANSWERS:001"
+          ]
+        },
+        {
+          "id": "MVP:SEC:EXISTENCE:GLOSSARY",
+          "title": "Glossário",
+          "unit_ids": [
+            "MVP:UNIT:EXISTENCE:GLOSSARY:001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MVP:CH:VERBAL-SYSTEMS",
+      "title": "Sistemas verbais",
+      "description": "Modais · condicionais · voz passiva",
+      "keywords": [
+        "VERBAL-SYSTEMS",
+        "Sistemas verbais",
+        "Modais · condicionais · voz passiva"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:WORD-CLASSES",
+      "title": "Classes de palavras",
+      "description": "Nouns · pronouns · articles · adjectives · adverbs · prepositions · conjunctions · numerals · interjections",
+      "keywords": [
+        "WORD-CLASSES",
+        "Classes de palavras",
+        "Nouns · pronouns · articles · adjectives · adverbs · prepositions · conjunctions · numerals · interjections"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:VERB-LEXICON",
+      "title": "Studying Verbs",
+      "description": "Glossário verbal · irregulares · phrasal verbs",
+      "keywords": [
+        "VERB-LEXICON",
+        "Studying Verbs",
+        "Glossário verbal · irregulares · phrasal verbs"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    },
+    {
+      "id": "MVP:CH:REFERENCE",
+      "title": "Referências e glossários",
+      "description": "Índices de termos · remissões · gabaritos",
+      "keywords": [
+        "REFERENCE",
+        "Referências e glossários",
+        "Índices de termos · remissões · gabaritos"
+      ],
+      "status": "PLANNED",
+      "sections": []
+    }
+  ],
+  "units": [
+    {
+      "id": "MVP:UNIT:EXISTENCE:CONCEPT:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:INTRO",
+      "type": "CONCEPT",
+      "title": "O que existe neste contexto?",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "body": {
+        "en": "Use there + be to introduce the existence or presence of something. Choose is for a singular count noun or an uncountable noun, and are for a plural count noun.",
+        "es": "Usamos there + be para presentar la existencia o presencia de algo. En español, hay se usa tanto con singular como con plural.",
+        "pt": "Usamos there + be para apresentar a existência ou presença de algo. Em português, há é impessoal; existe e existem concordam com o termo apresentado."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:MODEL:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:PRESENT",
+      "type": "MODEL",
+      "title": "There is · There are",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:000001",
+          "text": {
+            "en": "There is a tomato on the table.",
+            "es": "Hay un tomate en la mesa.",
+            "pt": "Há um tomate na mesa."
+          },
+          "targets": {
+            "en": "There is",
+            "es": "Hay",
+            "pt": "Há"
+          },
+          "word_type": "VERB",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        },
+        {
+          "id": "MVP:SENT:000002",
+          "text": {
+            "en": "There are two tomatoes on the table.",
+            "es": "Hay dos tomates en la mesa.",
+            "pt": "Há dois tomates na mesa."
+          },
+          "targets": {
+            "en": "There are",
+            "es": "Hay",
+            "pt": "Há"
+          },
+          "word_type": "VERB",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        },
+        {
+          "id": "MVP:SENT:000003",
+          "text": {
+            "en": "There is some water in the jug.",
+            "es": "Hay un poco de agua en la jarra.",
+            "pt": "Há um pouco de água na jarra."
+          },
+          "targets": {
+            "en": "There is",
+            "es": "Hay",
+            "pt": "Há"
+          },
+          "word_type": "VERB",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:TABLE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:PRESENT",
+      "type": "TABLE",
+      "title": "Present · Affirmative / Negative / Interrogative",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "headers": {
+        "en": [
+          "MODE",
+          "ENGLISH"
+        ],
+        "es": [
+          "MODO",
+          "ESPAÑOL"
+        ],
+        "pt": [
+          "MODO",
+          "PORTUGUÊS"
+        ]
+      },
+      "rows": [
+        {
+          "label": "AFFIRMATIVE",
+          "text": {
+            "en": "There is a tomato. / There are two tomatoes.",
+            "es": "Hay un tomate. / Hay dos tomates.",
+            "pt": "Há um tomate. / Há dois tomates."
+          }
+        },
+        {
+          "label": "NEGATIVE",
+          "text": {
+            "en": "There is not a tomato. / There are not any tomatoes.",
+            "es": "No hay un tomate. / No hay tomates.",
+            "pt": "Não há um tomate. / Não há tomates."
+          }
+        },
+        {
+          "label": "INTERROGATIVE",
+          "text": {
+            "en": "Is there a tomato? / Are there any tomatoes?",
+            "es": "¿Hay un tomate? / ¿Hay tomates?",
+            "pt": "Há um tomate? / Há tomates?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:FIGURE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:PRESENT",
+      "type": "FIGURE",
+      "title": "Número e contabilidade",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:EXISTENCE-MODEL-001"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:EXISTENCE-MODEL-001",
+        "src": "assets/existence-model.svg",
+        "width": 840,
+        "height": 260,
+        "format": "SVG",
+        "color_mode": "COLOR",
+        "original_width_mm": null,
+        "original_height_mm": null,
+        "origin": "NEW_EDITORIAL_DIAGRAM",
+        "alt": {
+          "en": "One tomato and water use there is; two tomatoes use there are.",
+          "es": "Un tomate y agua usan there is; dos tomates usan there are.",
+          "pt": "Um tomate e água usam there is; dois tomates usam there are."
+        }
+      },
+      "caption": "Diagrama editorial novo. As figuras originais serão incorporadas após a reconciliação do inventário."
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:CONTRAST:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:CONTRAST",
+      "type": "CONTRAST",
+      "title": "Existência, localização e posse",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:000004",
+          "text": {
+            "en": "There is a book on the table.",
+            "es": "Hay un libro en la mesa.",
+            "pt": "Há um livro na mesa."
+          },
+          "targets": {
+            "en": "There is",
+            "es": "Hay",
+            "pt": "Há"
+          }
+        },
+        {
+          "id": "MVP:SENT:000005",
+          "text": {
+            "en": "The book is there.",
+            "es": "El libro está allí.",
+            "pt": "O livro está ali."
+          },
+          "targets": {
+            "en": "there",
+            "es": "allí",
+            "pt": "ali"
+          }
+        },
+        {
+          "id": "MVP:SENT:000006",
+          "text": {
+            "en": "I have a book.",
+            "es": "Tengo un libro.",
+            "pt": "Eu tenho um livro."
+          },
+          "targets": {
+            "en": "have",
+            "es": "Tengo",
+            "pt": "tenho"
+          }
+        }
+      ],
+      "body": {
+        "en": "The first sentence introduces existence. In the second, there indicates a place. Have expresses possession in the third.",
+        "es": "La primera oración presenta existencia. En la segunda, there indica lugar. Have expresa posesión en la tercera.",
+        "pt": "A primeira frase apresenta existência. Na segunda, there indica lugar. Have expressa posse na terceira."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:QUESTIONS:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:QUESTIONS",
+      "type": "EXAMPLE",
+      "title": "How many? · How much?",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:000007",
+          "text": {
+            "en": "How many tomatoes are there? There are two tomatoes.",
+            "es": "¿Cuántos tomates hay? Hay dos tomates.",
+            "pt": "Quantos tomates há? Há dois tomates."
+          },
+          "targets": {
+            "en": "How many",
+            "es": "Cuántos",
+            "pt": "Quantos"
+          },
+          "qw": "HOW MANY"
+        },
+        {
+          "id": "MVP:SENT:000008",
+          "text": {
+            "en": "How much water is there? There is one litre of water.",
+            "es": "¿Cuánta agua hay? Hay un litro de agua.",
+            "pt": "Quanta água há? Há um litro de água."
+          },
+          "targets": {
+            "en": "How much",
+            "es": "Cuánta",
+            "pt": "Quanta"
+          },
+          "qw": "HOW MUCH"
+        }
+      ],
+      "body": {
+        "en": "Count individual tomatoes; measure water. These are teaching examples, not new assessment contracts.",
+        "es": "Contamos tomates individuales; medimos el agua. Son ejemplos de estudio, no nuevos contratos evaluativos.",
+        "pt": "Contamos tomates; medimos água. São exemplos de estudo, sem ativar contratos avaliativos."
+      }
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:TIME:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:TIME",
+      "type": "EXAMPLE",
+      "title": "Past · Future",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:000009",
+          "text": {
+            "en": "There were two tomatoes on the table yesterday.",
+            "es": "Había dos tomates en la mesa ayer.",
+            "pt": "Havia dois tomates na mesa ontem."
+          },
+          "targets": {
+            "en": "There were",
+            "es": "Había",
+            "pt": "Havia"
+          },
+          "tense": "PAST",
+          "mode": "AFFIRMATIVE"
+        },
+        {
+          "id": "MVP:SENT:000010",
+          "text": {
+            "en": "There will be two tomatoes on the table tomorrow.",
+            "es": "Habrá dos tomates en la mesa mañana.",
+            "pt": "Haverá dois tomates na mesa amanhã."
+          },
+          "targets": {
+            "en": "There will be",
+            "es": "Habrá",
+            "pt": "Haverá"
+          },
+          "tense": "FUTURE",
+          "mode": "AFFIRMATIVE"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:PRACTICE:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:PRACTICE",
+      "type": "GUIDED_PRACTICE",
+      "title": "Observe, escolha e escreva",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "instructions": {
+        "en": "In a kitchen, you can see one tomato on the table, two carrots in a bowl and some water in a jug. Complete with is or are. Then ask a question about the number of carrots.",
+        "es": "En una cocina, ves un tomate en la mesa, dos zanahorias en un cuenco y un poco de agua en una jarra. Completa con is o are. Después, pregunta por la cantidad de zanahorias.",
+        "pt": "Em uma cozinha, você vê um tomate na mesa, duas cenouras em uma tigela e um pouco de água em uma jarra. Complete com is ou are. Depois, pergunte pela quantidade de cenouras."
+      },
+      "prompts": [
+        "There ___ a tomato on the table.",
+        "There ___ two carrots in the bowl.",
+        "There ___ some water in the jug.",
+        "How many __________________________?"
+      ],
+      "answer_key_id": "MVP:UNIT:EXISTENCE:ANSWERS:001"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:ANSWERS:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:ANSWERS",
+      "type": "ANSWER_KEY",
+      "title": "Gabarito da prática",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "body": {
+        "en": "1. is · 2. are · 3. is · 4. How many carrots are there in the bowl? (A valid shorter question: How many carrots are there?)",
+        "es": "1. is · 2. are · 3. is · 4. How many carrots are there in the bowl? (Pregunta más corta válida: How many carrots are there?)",
+        "pt": "1. is · 2. are · 3. is · 4. How many carrots are there in the bowl? (Pergunta mais curta válida: How many carrots are there?)"
+      },
+      "exercise_id": "MVP:UNIT:EXISTENCE:PRACTICE:001"
+    },
+    {
+      "id": "MVP:UNIT:EXISTENCE:GLOSSARY:001",
+      "chapter_id": "MVP:CH:EXISTENCE",
+      "section_id": "MVP:SEC:EXISTENCE:GLOSSARY",
+      "type": "GLOSSARY",
+      "title": "Palavras que conectam este capítulo",
+      "revision": 1,
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "note": "Nova proposta editorial baseada no eixo EXISTENCE da Master VIP; não é transcrição integral."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "terms": [
+        {
+          "id": "MVP:TERM:000001",
+          "word_type": "NOUN",
+          "text": {
+            "en": "tomato / tomatoes",
+            "es": "tomate / tomates",
+            "pt": "tomate / tomates"
+          },
+          "sentence_ids": [
+            "MVP:SENT:000001",
+            "MVP:SENT:000002"
+          ]
+        },
+        {
+          "id": "MVP:TERM:000002",
+          "word_type": "NOUN",
+          "text": {
+            "en": "water",
+            "es": "agua",
+            "pt": "água"
+          },
+          "sentence_ids": [
+            "MVP:SENT:000003",
+            "MVP:SENT:000008"
+          ]
+        },
+        {
+          "id": "MVP:TERM:000003",
+          "word_type": "PREPOSITION",
+          "text": {
+            "en": "on",
+            "es": "en / sobre",
+            "pt": "em / sobre"
+          },
+          "sentence_ids": [
+            "MVP:SENT:000001"
+          ]
+        },
+        {
+          "id": "MVP:TERM:000004",
+          "word_type": "VERB",
+          "text": {
+            "en": "have",
+            "es": "tener",
+            "pt": "ter"
+          },
+          "sentence_ids": [
+            "MVP:SENT:000006"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "coverage": {
+    "imported_original_chapters": 0,
+    "adaptation_pilot_chapters": 1,
+    "original_images_imported": 0,
+    "original_integral_mapping": "PENDING",
+    "notes": "Piloto editorial novo; não representa importação integral do capítulo original."
+  }
+}
