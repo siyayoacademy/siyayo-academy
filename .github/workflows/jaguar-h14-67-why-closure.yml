@@ -42,7 +42,6 @@ jobs:
           node scripts/test-elo7d2-word-path-evidence-detail.js
           node scripts/test-verb-explorer-learner-trail-surface.js
           node scripts/test-adaptive-pass-contract-progress-view.js
-          node scripts/test-jaguar-h14-13-progressive-integration.js
           node scripts/test-jaguar-h14-23-gear-snapshot.js
           node scripts/test-jaguar-h14-43-integration-readiness.js
       - name: H14.50 isolated atomic persistence and replay

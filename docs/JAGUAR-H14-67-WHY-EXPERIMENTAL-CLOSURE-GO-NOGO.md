@@ -84,3 +84,7 @@ CI regressiva = validação programática e simulações locais, **não** inspe�
 5. Solicitar aprovação distinta para integrar no Explorer oficial, PR #3, main e/ou publicar Cloudflare, com rollback.
 
 **Fechamento experimental ≠ aprovação do produto**. O manifesto companheiro fornece allowlist executável vazia, proteção de 25 fontes por blob SHA, 15 HG e 7 DG abertos.
+
+## Nota de compatibilidade de checkpoint H14.13
+
+A primeira CI H14.67 (`40410146537`) encontrou apenas um teste de hash histórico: `test-jaguar-h14-13-progressive-integration.js` exige um blob de `js/verb-explorer.js` anterior aos previews read-only H14.57–60. Isso não é regressão de comportamento, mas a exigência de um HEAD imutável do H14.13. Preservamos o teste original sem alterar seu hash e o excluímos **apenas da CI de ponta da branch atual**, onde o H14.67 já valida o blob atual e executa regressões funcionais de WHY/Trail/Word Path. O H14.13 permanece auditável no próprio checkpoint histórico. Não declarar H14.13 como validado no HEAD atual.
