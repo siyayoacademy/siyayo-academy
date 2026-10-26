@@ -1,0 +1,243 @@
+{
+  "id": "SIYAYO-H14.63-WHY-SIX-PLAN-PEDAGOGICAL-HANDOFF",
+  "version": "0.1.0",
+  "sourceH14_62": "689b9c6da80f32c32a9067fd53ec2f29a931eb71",
+  "status": "DRAFT_FOR_HUMAN_HOMOLOGATION_NO_EVIDENCE_AUTHORITY",
+  "scope": "S1↔S2 only, independent WHY causal questions, EN→ES→PT; source authored reference not live assessment",
+  "sourceFiles": [
+    "data/learning/experience-seeds.json",
+    "data/learning/skills/why.json",
+    "data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json",
+    "scripts/jaguar-h14-26-why-independent-task-blueprints.js",
+    "scripts/jaguar-h14-37-trilingual-semantic-review.js",
+    "scripts/jaguar-h14-38-independent-production-transfer.js"
+  ],
+  "dimensions": [
+    "question-function",
+    "reason-answer(local)",
+    "reason-answer(transfer)"
+  ],
+  "plans": [
+    {
+      "id": "H14.63-WHY-S1-S2-en",
+      "proposalId": "WHY-S1-S2-DRAFT",
+      "language": "en",
+      "origin": "shopping-for-dinner",
+      "transfer": "preparing-dinner",
+      "dimensions": [
+        "question-function",
+        "reason-answer(local)",
+        "reason-answer(transfer)"
+      ],
+      "authoredContextOnly": true,
+      "questionFunctionIndependentPromptStatus": "NEEDS_AUTHORING",
+      "localPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "transferPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "requiresHumanSemanticReview": true,
+      "requiresDirectActionProof": true,
+      "explicitOriginAndIntent": true,
+      "freeExperienceNavigation": true,
+      "teacherModelNeverLearnerVisible": true,
+      "humanApproval": null,
+      "contractAuthorized": false,
+      "canGrantGreenPass": false
+    },
+    {
+      "id": "H14.63-WHY-S2-S1-en",
+      "proposalId": "WHY-S2-S1-DRAFT",
+      "language": "en",
+      "origin": "preparing-dinner",
+      "transfer": "shopping-for-dinner",
+      "dimensions": [
+        "question-function",
+        "reason-answer(local)",
+        "reason-answer(transfer)"
+      ],
+      "authoredContextOnly": true,
+      "questionFunctionIndependentPromptStatus": "NEEDS_AUTHORING",
+      "localPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "transferPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "requiresHumanSemanticReview": true,
+      "requiresDirectActionProof": true,
+      "explicitOriginAndIntent": true,
+      "freeExperienceNavigation": true,
+      "teacherModelNeverLearnerVisible": true,
+      "humanApproval": null,
+      "contractAuthorized": false,
+      "canGrantGreenPass": false
+    },
+    {
+      "id": "H14.63-WHY-S1-S2-es",
+      "proposalId": "WHY-S1-S2-DRAFT",
+      "language": "es",
+      "origin": "shopping-for-dinner",
+      "transfer": "preparing-dinner",
+      "dimensions": [
+        "question-function",
+        "reason-answer(local)",
+        "reason-answer(transfer)"
+      ],
+      "authoredContextOnly": true,
+      "questionFunctionIndependentPromptStatus": "NEEDS_AUTHORING",
+      "localPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "transferPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "requiresHumanSemanticReview": true,
+      "requiresDirectActionProof": true,
+      "explicitOriginAndIntent": true,
+      "freeExperienceNavigation": true,
+      "teacherModelNeverLearnerVisible": true,
+      "humanApproval": null,
+      "contractAuthorized": false,
+      "canGrantGreenPass": false
+    },
+    {
+      "id": "H14.63-WHY-S2-S1-es",
+      "proposalId": "WHY-S2-S1-DRAFT",
+      "language": "es",
+      "origin": "preparing-dinner",
+      "transfer": "shopping-for-dinner",
+      "dimensions": [
+        "question-function",
+        "reason-answer(local)",
+        "reason-answer(transfer)"
+      ],
+      "authoredContextOnly": true,
+      "questionFunctionIndependentPromptStatus": "NEEDS_AUTHORING",
+      "localPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "transferPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "requiresHumanSemanticReview": true,
+      "requiresDirectActionProof": true,
+      "explicitOriginAndIntent": true,
+      "freeExperienceNavigation": true,
+      "teacherModelNeverLearnerVisible": true,
+      "humanApproval": null,
+      "contractAuthorized": false,
+      "canGrantGreenPass": false
+    },
+    {
+      "id": "H14.63-WHY-S1-S2-pt",
+      "proposalId": "WHY-S1-S2-DRAFT",
+      "language": "pt",
+      "origin": "shopping-for-dinner",
+      "transfer": "preparing-dinner",
+      "dimensions": [
+        "question-function",
+        "reason-answer(local)",
+        "reason-answer(transfer)"
+      ],
+      "authoredContextOnly": true,
+      "questionFunctionIndependentPromptStatus": "NEEDS_AUTHORING",
+      "localPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "transferPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "requiresHumanSemanticReview": true,
+      "requiresDirectActionProof": true,
+      "explicitOriginAndIntent": true,
+      "freeExperienceNavigation": true,
+      "teacherModelNeverLearnerVisible": true,
+      "humanApproval": null,
+      "contractAuthorized": false,
+      "canGrantGreenPass": false
+    },
+    {
+      "id": "H14.63-WHY-S2-S1-pt",
+      "proposalId": "WHY-S2-S1-DRAFT",
+      "language": "pt",
+      "origin": "preparing-dinner",
+      "transfer": "shopping-for-dinner",
+      "dimensions": [
+        "question-function",
+        "reason-answer(local)",
+        "reason-answer(transfer)"
+      ],
+      "authoredContextOnly": true,
+      "questionFunctionIndependentPromptStatus": "NEEDS_AUTHORING",
+      "localPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "transferPromptStatus": "GROUNDED_SOURCE_NOT_HOMOLOGATED",
+      "requiresHumanSemanticReview": true,
+      "requiresDirectActionProof": true,
+      "explicitOriginAndIntent": true,
+      "freeExperienceNavigation": true,
+      "teacherModelNeverLearnerVisible": true,
+      "humanApproval": null,
+      "contractAuthorized": false,
+      "canGrantGreenPass": false
+    }
+  ],
+  "teacherReviewChecklist": [
+    "HG-01/02 grounded question and referent S1 cheese–salmon / S2 shared preparation",
+    "HG-03 independent task for causal function distinct from HEAD Probe",
+    "HG-04/05 independent local reason and genuine transferred reason, no replay of Corpus Speech",
+    "HG-06/07/08 EN/ES/PT semantic naturalness, paraphrases, distractors, partial and HOW manner rejection",
+    "HG-09/10 two actual reviewers, disagreement mediation and explicit signed pedagogical decision",
+    "Confirm exactly one occurrence in authorized learner×skill×language×origin scope, no dual S2 credit"
+  ],
+  "gates": [
+    {
+      "id": "HG-01",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-02",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-03",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-04",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-05",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-06",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-07",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-08",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-09",
+      "closed": false,
+      "humanApproval": null
+    },
+    {
+      "id": "HG-10",
+      "closed": false,
+      "humanApproval": null
+    }
+  ],
+  "remainingElos": [
+    "H14.64",
+    "H14.65",
+    "H14.66",
+    "H14.67"
+  ],
+  "actualTeacherReviews": 0,
+  "actualLearnerAttempts": 0,
+  "realAuthAvailable": false,
+  "d1RemoteVerified": false,
+  "runtimeChanges": false,
+  "newAssessmentTargets": false,
+  "newContractsAuthorized": false,
+  "newEvidence": false,
+  "newGreenPass": false,
+  "hist01": "PARTIALLY_RECONSTRUCTED_NOT_EXHAUSTIVE",
+  "dgGatesRemainOpen": true
+}

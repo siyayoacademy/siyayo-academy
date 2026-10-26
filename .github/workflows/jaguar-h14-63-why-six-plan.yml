@@ -1,0 +1,22 @@
+name: JAGUAR H14.63 WHY six-plan pedagogical handoff
+on:
+  push:
+    branches: [jaguar/h14-63-why-six-plan-pedagogical-handoff-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Validate six plans without teacher-model leakage or assessment activation
+        run: node scripts/test-jaguar-h14-63-why-six-plan-handoff.js
+      - name: Source and trilingual regressions
+        run: |
+          node scripts/test-jaguar-h14-26-why-independent-task-blueprints.js
+          node scripts/test-jaguar-h14-37-trilingual-semantic-review.js
+          node scripts/test-jaguar-h14-38-independent-production-transfer.js
+          node scripts/test-jaguar-h14-62-why-closure.cjs
+          node scripts/test-s3-why-canonical-green-cycle.js
