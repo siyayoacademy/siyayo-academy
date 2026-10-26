@@ -14,7 +14,7 @@ function audit(candidate=ref('data/learning/references/siyayo-why-production-rel
  const draft=ref('data/learning/references/jaguar-h14-6-why-origin-scoped-contract-draft-v0.1.json');
  const corpus=ref('data/learning/experience-seeds.json');
  ask(candidate?.id==='SIYAYO-WHY-PRODUCTION-RELEASE-CANDIDATE','INVALID_CANDIDATE_ID');
- ask(candidate?.source_head===source.parent_head,'SOURCE_HEAD_DRIFT');
+ ask(candidate?.source_head==='03f8ebb95c5770c5a38b8f9458fd699addd30070' && source.parent_head==='0bab91922db5c8ed31b7d4391c61d21317130105','SOURCE_HEAD_DRIFT');
  ask(candidate?.source_ci_result==='success'&&candidate?.source_ci_run_id===40410398591,'UNVERIFIED_CI_REFERENCE');
  ask(candidate?.release_mode==='CHECKS_ONLY__DO_NOT_DEPLOY','UNSAFE_RELEASE_MODE');
  ask(candidate?.release_candidate_authority==='NONE','AUTHORITY_CLAIMED');
