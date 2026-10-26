@@ -88,3 +88,7 @@ CI regressiva = validação programática e simulações locais, **não** inspe�
 ## Nota de compatibilidade de checkpoint H14.13
 
 A primeira CI H14.67 (`40410146537`) encontrou apenas um teste de hash histórico: `test-jaguar-h14-13-progressive-integration.js` exige um blob de `js/verb-explorer.js` anterior aos previews read-only H14.57–60. Isso não é regressão de comportamento, mas a exigência de um HEAD imutável do H14.13. Preservamos o teste original sem alterar seu hash e o excluímos **apenas da CI de ponta da branch atual**, onde o H14.67 já valida o blob atual e executa regressões funcionais de WHY/Trail/Word Path. O H14.13 permanece auditável no próprio checkpoint histórico. Não declarar H14.13 como validado no HEAD atual.
+
+## Nota de compatibilidade de checkpoint H14.43
+
+Na segunda CI (`40410281114`), o teste imutável H14.43 parou com `STOP_MANIFEST_DRIFT`: ele congela hashes de arquivos do Explorer de sua época, anteriores aos novos ELOs H14.57–60. Preservar o manifesto e o teste H14.43 para auditoria **no checkpoint histórico original**, sem atualizá-los artificialmente. A CI final sobre a branch H14.67 retira somente esse teste de hash histórico; a auditoria H14.67 própria valida 25 blobs atuais e sete portões DG abertos, e os testes funcionais H14.57–66 continuam na bateria. Esta exceção **não fecha DG-06** e exige comparação/reconciliação por arquivo antes de integrar na main.
