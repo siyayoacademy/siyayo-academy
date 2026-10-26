@@ -1,0 +1,19 @@
+name: JAGUAR H14.65 WHY isolated nonexecuting authority relay
+on:
+  push:
+    branches: [jaguar/h14-65-why-eval08-authority-relay-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node --test labs/jaguar-v30-3/test/h14-65/why-authority-relay.test.mjs
+      - run: |
+          node --test labs/jaguar-v30-3/test/h14-61/referral-preflight.test.mjs
+          node scripts/test-jaguar-h14-64-pedagogical-human-review-gate.js
+          node scripts/test-jaguar-h14-63-why-six-plan-handoff.js
+          node scripts/test-s3-why-canonical-green-cycle.js
