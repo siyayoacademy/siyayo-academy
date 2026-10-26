@@ -1,0 +1,32 @@
+{
+  "id": "JAGUAR-H14.64",
+  "version": "0.1.0",
+  "status": "INSTRUMENT_READY_HUMAN_HOMOLOGATION_PENDING",
+  "sources": [
+    "H14.31",
+    "H14.32",
+    "H14.33",
+    "H14.37",
+    "H14.38",
+    "H14.63"
+  ],
+  "reviewSlots": 18,
+  "languageComparisons": 16,
+  "syntheticCases": 48,
+  "openHgGates": 15,
+  "realReviewerIdentityVerified": false,
+  "realTeacherReviews": 0,
+  "realMediations": 0,
+  "humanApproval": false,
+  "assessmentAuthorization": false,
+  "evidence": false,
+  "greenPass": false,
+  "hist01": "PARTIALLY_RECONSTRUCTED_NOT_EXHAUSTIVE",
+  "dgGatesOpen": 7,
+  "remaining": [
+    "H14.65",
+    "H14.66",
+    "H14.67"
+  ],
+  "limits": "Structural CI does not verify teachers or approve tasks; no real learner answers or teacher model payloads in public form."
+}

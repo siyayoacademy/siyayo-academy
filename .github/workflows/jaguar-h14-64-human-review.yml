@@ -1,0 +1,20 @@
+name: JAGUAR H14.64 human review preparation (NO homologation)
+on:
+  push:
+    branches: [jaguar/h14-64-human-semantic-review-gate-20261026]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node scripts/test-jaguar-h14-64-pedagogical-human-review-gate.js
+      - run: |
+          node scripts/test-jaguar-h14-63-why-six-plan-handoff.js
+          node scripts/test-jaguar-h14-33-homologation-reference.js
+          node scripts/test-jaguar-h14-37-trilingual-semantic-review.js
+          node scripts/test-jaguar-h14-38-independent-production-transfer.js
+          node scripts/test-s3-why-canonical-green-cycle.js
