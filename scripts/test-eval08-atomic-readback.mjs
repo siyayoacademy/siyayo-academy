@@ -1,0 +1,42 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';import {join} from 'node:path';import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+import {createLocalAtomicEval08Writer} from '../labs/jaguar-v30-3/test/eval08-live-candidate/atomic-d1-writer.mjs';
+import {createVerifiedAssessmentIntakeCandidate} from '../server/assessment/eval08-verified-intake-candidate.mjs';
+const require=createRequire(import.meta.url),S=require('../js/adaptive-assessment-scope.js'),why=require('../data/learning/skills/why.json');
+const now=1800000000,uuid='f7027810-0c12-4b65-ae3e-18f538d67e18';
+function fixture(t,options={}){
+ const dir=mkdtempSync(join(tmpdir(),'eval08-'));t.after(()=>rmSync(dir,{recursive:true,force:true}));
+ const path=join(dir,'db.sqlite'),driver=fileURLToPath(new URL('../labs/jaguar-v30-3/test/eval08-live-candidate/sqlite_driver.py',import.meta.url));
+ const rpc=x=>JSON.parse(execFileSync('python3',['-B',driver],{input:JSON.stringify({path,...x}),encoding:'utf8'}));
+ rpc({op:'init'});
+ const exec=(sql,args=[])=>rpc({op:'run',sql,args}),one=(sql,args=[])=>rpc({op:'first',sql,args});
+ const subject='SUBJECT_A',sessionId='SESSION_A',actionKey='ACT-08',origin='having-dinner';
+ const scope=S.create({learnerId:subject,skill:why.id,language:'en',originExperienceId:origin});
+ exec('INSERT INTO lab_eval_sessions VALUES (?,?,1,0,?)',[subject,sessionId,now+600]);
+ exec('INSERT INTO lab_eval_contracts VALUES (?,?,?,?,?,?,?,?,?,?,1,0,?)',['CONTRACT_WHY','0.1.0',1,subject,sessionId,why.id,'en',origin,origin,'local',now+600]);
+ exec("INSERT INTO lab_eval_actions VALUES (?,?,?,?,?,?,?,?,?,?,?,?,0,?)",[actionKey,uuid,subject,sessionId,why.id,'en',origin,origin,'reason-answer','local','local','DIRECT_LEARNER_ACTION',now-5]);
+ exec("INSERT INTO v30_85c_occurrences (learner_subject,event_id,skill_id,language,origin_experience_id,current_experience_id,question_word,purpose,status,contract_version,source_occurrence_id,payload_sha256,payload_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",[subject,uuid,why.id,'en',origin,origin,'WHY','assessment','pending','0.1.0',actionKey,'0'.repeat(64),'{}']);
+ let failAt=options.failAt;
+ const db={prepare(sql){let args=[];return {sql,get args(){return args;},bind(...v){args=v;return this;},async first(){return rpc({op:'first',sql,args});},async all(){return rpc({op:'all',sql,args});}};},batch:async ss=>{
+   const statements=ss.map(s=>({sql:s.sql,args:s.args}));
+   return rpc({op:'batch',statements,failAt});
+ }};
+ const session={verified:true,issuerVerified:true,subject,sessionId,revoked:false,expiresAt:now+600};
+ const action={source:'DIRECT_LEARNER_ACTION',observed:true,actor:'learner',subject,sessionId,eventId:uuid,actionKey,consumed:false,recordedAt:now-5,language:'en',questionWord:'why',skill:why.id,originExperienceId:origin,currentExperienceId:origin,phase:'local',dimension:'reason-answer',mode:'local',support:'none'};
+ const contract={authorized:true,revoked:false,subject,sessionId,id:'CONTRACT_WHY',version:'0.1.0',revision:1,expiresAt:now+600,skill:why.id,language:'en',originExperienceId:origin,currentExperienceId:origin,definitionPath:'data/learning/skills/why.json',phase:'local',passContract:why.passContract};
+ const writer=createLocalAtomicEval08Writer({db,now:()=>now,resolveVerifiedSession:async()=>session});
+ const intake=createVerifiedAssessmentIntakeCandidate({now:()=>now,resolveVerifiedSession:async()=>session,resolveDirectAction:async()=>action,resolveAuthorizedContract:async()=>contract,assessAuthorizedAction:async()=>({result:options.fail?'fail':'pass',skill:why.id,language:'en',dimension:'reason-answer',mode:'local',experienceId:origin,support:'none',provenanceId:'TEST_JUDGE'}),commitAtomicAssessment:writer.commitAtomicAssessment});
+ return {db,exec,one,writer,intake,session,scope,request:{sessionHandle:'HANDLE_A',actionKey,eventId:uuid},setFailAt:v=>{failAt=v}};
+}
+test('accepted result is atomic, readback scoped, outbox once',async t=>{const f=fixture(t),r=await f.intake.submit(f.request);assert.equal(r.ok,true,JSON.stringify(r));assert.equal(r.greenPassIssued,false);
+ assert.equal(f.one('SELECT count(*) n FROM lab_eval_evidence').n,1);assert.equal(f.one('SELECT count(*) n FROM lab_eval_outbox').n,1);
+ const read=await f.writer.readAccepted({sessionHandle:'HANDLE_A',skill:why.id,language:'en',originExperienceId:'having-dinner'});
+ assert.equal(read.ok,true);assert.equal(read.packets.length,1);
+ assert.equal((await f.intake.submit(f.request)).ok,false);assert.equal(f.one('SELECT count(*) n FROM lab_eval_attempts').n,1);
+});
+test('fail creates attempt but no Evidence',async t=>{const f=fixture(t,{fail:true}),r=await f.intake.submit(f.request);assert.equal(r.ok,true);assert.equal(r.evidenceCreated,false);assert.equal(f.one('SELECT count(*) n FROM lab_eval_evidence').n,0)});
+test('transaction rolls back across injected failure',async t=>{const f=fixture(t,{failAt:3}),r=await f.intake.submit(f.request);assert.equal(r.ok,false);assert.equal(f.one('SELECT count(*) n FROM lab_eval_attempts').n,0);assert.equal(f.one('SELECT consumed FROM lab_eval_actions').consumed,0);});
+test('revoked DB contract after trusted JS lookups stops SQL commit',async t=>{const f=fixture(t);f.exec('UPDATE lab_eval_contracts SET revoked=1');assert.equal((await f.intake.submit(f.request)).ok,false);assert.equal(f.one('SELECT count(*) n FROM lab_eval_attempts').n,0)});
+test('foreign reader cannot access another learner scope',async t=>{const f=fixture(t);await f.intake.submit(f.request);const r=await f.writer.readAccepted({sessionHandle:'HANDLE_A',skill:why.id,language:'es',originExperienceId:'having-dinner'});assert.equal(r.ok,true);assert.equal(r.packets.length,0)});
