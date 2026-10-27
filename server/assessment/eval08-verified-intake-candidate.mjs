@@ -72,7 +72,7 @@ export function createVerifiedAssessmentIntakeCandidate({
         action.recordedAt<stamp-300||!allowed.includes(action.language)||
         !['local','transfer'].includes(action.phase)||!isTok(action.questionWord)||
         !isTok(action.skill)||!isTok(action.originExperienceId)||!isTok(action.currentExperienceId)||
-        !isTok(action.dimension)||!isTok(action.mode)||action.support!=='none'))
+        !isTok(action.dimension)||!isTok(action.mode)||action.support!=='none')
        return fail('direct_action_not_verified');
      const target=authoritativeTarget(action);
      if(!target)return fail('no_authorized_authored_target');
