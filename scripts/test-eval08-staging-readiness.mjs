@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {inspectStagingReadiness,inspectProposedBindings,createDisabledStagingHandler} from '../labs/jaguar-v30-3/test/eval08-staging/staging-readiness.mjs';
+const good={workerName:'siyayo-academy-staging-api',d1Binding:'ASSESSMENT_DB',d1DatabaseName:'siyayo-academy-staging',d1DatabaseId:null,workersDev:false,publicPreviewAllowed:false,d1Migrated:false,accessPolicyProof:null,accountProof:null};
+test('12 external, 7 technical and 15 pedagogical gates remain open',()=>{const r=inspectStagingReadiness();assert.deepEqual(r.issues,[]);assert.equal(r.externalGatesOpen,12);assert.equal(r.canDeploy,false);assert.equal(r.safeToPrepareNonDeployFiles,true)});
+test('well formed metadata still cannot grant permissions',()=>{const r=inspectProposedBindings(good);assert.equal(r.localContractOnly,true);assert.equal(r.canDeploy,false);assert.equal(r.canMigrateD1,false)});
+test('public bypass or invented proofs denied',()=>{for(const f of [{workersDev:true},{publicPreviewAllowed:true},{d1Migrated:true},{accessPolicyProof:'FAKE'},{accountProof:'FAKE'},{d1DatabaseId:'00000000-0000-0000-0000-000000000001'}])assert.equal(inspectProposedBindings({...good,...f}).reason,'unverified_staging_binding_or_public_bypass')});
+test('cannot inject client identity',()=>assert.equal(inspectProposedBindings({...good,nick:'test'}).reason,'invalid_config_shape'));
+test('all HTTP routes disabled no-store',async()=>{const h=createDisabledStagingHandler();for(const method of ['GET','POST','PUT','DELETE']){const r=await h.fetch(new Request('https://staging.invalid/assessment',{method}));assert.equal(r.status,404);assert.match(r.headers.get('Cache-Control'),/no-store/)}});
