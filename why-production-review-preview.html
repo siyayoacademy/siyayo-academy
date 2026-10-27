@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SIYAYO Academy — WHY · Human Review Preview</title>
+<link rel="stylesheet" href="css/why-production-review-preview.css">
+</head><body>
+<main>
+<header>
+<h1>🔔🐆 SIYAYO Academy · WHY</h1>
+<p class="flag">REVIEW PREVIEW · HUMAN HOMOLOGATION PENDING</p>
+<p class="sub">The Ten Kinds of Words · S1 Shopping ↔ S2 Preparing · EN / ES / PT</p>
+<p>Apresentação pedagógica isolada. Não é uma sessão do Explorer, não identifica o aluno, não coleta respostas e não concede avaliação, Evidence ou Green Pass.</p>
+</header>
+<div class="controls"><label for="language">LANGUAGE / IDIOMA</label><select id="language">
+<option value="en">EN · English</option><option value="es">ES · Español</option><option value="pt" selected>PT · Português</option>
+</select><span id="sourceStatus" role="status" aria-live="polite">Aguardando corpus homologável…</span></div>
+<section id="whyProductionReviewPreview" class="review-shell" hidden aria-label="WHY human review drafts"></section>
+<p class="footer">Os enunciados apresentados são rascunhos provenientes do corpus. Os modelos do professor e a autoridade EVAL-08 não são carregados. Este preview não modifica a versão oficial do Explorer.</p>
+</main>
+<script src="js/verb-explorer-why-production-review-preview.js"></script>
+<script>
+(function(){
+ 'use strict';
+ const status=document.getElementById('sourceStatus');
+ const lang=document.getElementById('language');
+ let experiences=null;
+ function refresh(){
+  if(!experiences)return;
+  const rows=window.SIYAYOWHYProductionReviewPreview?.refresh({document,experiences,language:lang.value,activeExperienceId:null});
+  status.textContent=rows?.length===2?'2 planos de origem · 6 tarefas de revisão · sem avaliação':'Fonte indisponível — nenhuma tarefa ativada';
+ }
+ lang.addEventListener('change',refresh);
+ fetch('data/learning/experience-seeds.json',{cache:'no-store'})
+  .then(r=>{if(!r.ok)throw Error('corpus unavailable');return r.json();})
+  .then(doc=>{experiences=doc.items;refresh();})
+  .catch(()=>{status.textContent='Fonte indisponível — nenhum contrato ativado';});
+})();
+</script>
+</body></html>

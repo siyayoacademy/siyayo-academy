@@ -1,0 +1,487 @@
+{
+  "id": "SIYAYO-WHY-S1-S2-HUMAN-REVIEW-QUEUE",
+  "version": "0.1.0",
+  "status": "UNASSIGNED_UNHOMOLOGATED_NO_CREDIT",
+  "source": "H14.63 six-plan handoff and H14.64 human review instrument",
+  "source_branch": "jaguar/why-production-release-gate-20261026",
+  "private_teacher_model_included": false,
+  "intended_for": "Authenticated two-reviewer workflow; no actual reviewer identities or answers stored here",
+  "originPairs": [
+    [
+      "shopping-for-dinner",
+      "preparing-dinner",
+      "WHY-S1-S2-DRAFT"
+    ],
+    [
+      "preparing-dinner",
+      "shopping-for-dinner",
+      "WHY-S2-S1-DRAFT"
+    ]
+  ],
+  "languages": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "dimensions": [
+    "question-function",
+    "reason-answer(local)",
+    "reason-answer(transfer)"
+  ],
+  "tasks": [
+    {
+      "taskId": "WHY-S1-S2-DRAFT:en:question-function",
+      "language": "en",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "question-function",
+      "authoringStatus": "NEEDS_INDEPENDENT_TASK_AUTHORING",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:en:reason-answer(local)",
+      "language": "en",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "reason-answer(local)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:en:reason-answer(transfer)",
+      "language": "en",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "reason-answer(transfer)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:en:question-function",
+      "language": "en",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "question-function",
+      "authoringStatus": "NEEDS_INDEPENDENT_TASK_AUTHORING",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:en:reason-answer(local)",
+      "language": "en",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "reason-answer(local)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:en:reason-answer(transfer)",
+      "language": "en",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "reason-answer(transfer)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:es:question-function",
+      "language": "es",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "question-function",
+      "authoringStatus": "NEEDS_INDEPENDENT_TASK_AUTHORING",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:es:reason-answer(local)",
+      "language": "es",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "reason-answer(local)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:es:reason-answer(transfer)",
+      "language": "es",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "reason-answer(transfer)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:es:question-function",
+      "language": "es",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "question-function",
+      "authoringStatus": "NEEDS_INDEPENDENT_TASK_AUTHORING",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:es:reason-answer(local)",
+      "language": "es",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "reason-answer(local)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:es:reason-answer(transfer)",
+      "language": "es",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "reason-answer(transfer)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:pt:question-function",
+      "language": "pt",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "question-function",
+      "authoringStatus": "NEEDS_INDEPENDENT_TASK_AUTHORING",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:pt:reason-answer(local)",
+      "language": "pt",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "reason-answer(local)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S1-S2-DRAFT:pt:reason-answer(transfer)",
+      "language": "pt",
+      "originExperienceId": "shopping-for-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S1-S2-DRAFT",
+      "dimension": "reason-answer(transfer)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:pt:question-function",
+      "language": "pt",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "question-function",
+      "authoringStatus": "NEEDS_INDEPENDENT_TASK_AUTHORING",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:pt:reason-answer(local)",
+      "language": "pt",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "preparing-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "reason-answer(local)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    },
+    {
+      "taskId": "WHY-S2-S1-DRAFT:pt:reason-answer(transfer)",
+      "language": "pt",
+      "originExperienceId": "preparing-dinner",
+      "destinationExperienceId": "shopping-for-dinner",
+      "contractDraft": "WHY-S2-S1-DRAFT",
+      "dimension": "reason-answer(transfer)",
+      "authoringStatus": "GROUNDED_PROMPT_NEEDS_REVIEW",
+      "reviewerOne": null,
+      "reviewerTwo": null,
+      "mediator": null,
+      "identityVerification": "NOT_DONE",
+      "semanticDecision": null,
+      "languageDecision": null,
+      "pedagogicalApproval": null,
+      "contractAuthorized": false,
+      "mayIssueEvidence": false
+    }
+  ],
+  "criteria": [
+    "WHY causal question function vs HOW manner",
+    "Origin-specific causal referent",
+    "Semantic parity and naturalness in EN/ES/PT",
+    "Meaning-preserving paraphrases and false-positive control",
+    "Local vs transfer independent action and no prior model echo",
+    "Two independently identified reviewers and mediation if needed"
+  ],
+  "hgGates": [
+    {
+      "id": "HG-01",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-02",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-03",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-04",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-05",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-06",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-07",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-08",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-09",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-10",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-11",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-12",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-13",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-14",
+      "status": "OPEN",
+      "humanSignoff": null
+    },
+    {
+      "id": "HG-15",
+      "status": "OPEN",
+      "humanSignoff": null
+    }
+  ],
+  "dgGates": [
+    {
+      "id": "DG-01",
+      "status": "OPEN",
+      "technicalSignoff": null
+    },
+    {
+      "id": "DG-02",
+      "status": "OPEN",
+      "technicalSignoff": null
+    },
+    {
+      "id": "DG-03",
+      "status": "OPEN",
+      "technicalSignoff": null
+    },
+    {
+      "id": "DG-04",
+      "status": "OPEN",
+      "technicalSignoff": null
+    },
+    {
+      "id": "DG-05",
+      "status": "OPEN",
+      "technicalSignoff": null
+    },
+    {
+      "id": "DG-06",
+      "status": "OPEN",
+      "technicalSignoff": null
+    },
+    {
+      "id": "DG-07",
+      "status": "OPEN",
+      "technicalSignoff": null
+    }
+  ],
+  "approvedTasks": 0,
+  "realTeacherReviews": 0,
+  "realMediations": 0,
+  "studentResponseStorage": false,
+  "evaluatorEnabled": false,
+  "realAuthenticationEnabled": false,
+  "runtimeProductPatched": false,
+  "productionDeployAuthorized": false
+}

@@ -1,0 +1,19 @@
+name: WHY production human-review preview safety
+on:
+  push:
+    branches: [jaguar/why-production-review-preview-20261026]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-review-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/test-why-production-review-preview.cjs
+      - run: node scripts/test-jaguar-why-production-safety-gate.cjs
+      - run: node scripts/test-jaguar-h14-67-final-gates.cjs
+      - run: node scripts/test-s3-why-canonical-green-cycle.js
