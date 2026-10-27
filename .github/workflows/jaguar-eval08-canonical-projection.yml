@@ -1,0 +1,18 @@
+name: JAGUAR EVAL-08 canonical readback projection (NO DEPLOY)
+on:
+  push:
+    branches: [jaguar/eval08-canonical-projection-20261027]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: node --test scripts/test-eval08-canonical-readback-projection.mjs
+      - run: node --test scripts/test-eval08-atomic-readback.mjs
+      - run: node --test scripts/test-eval08-verified-intake-candidate.mjs
+      - run: node scripts/test-elo7d2-word-path-evidence-detail.js
+      - run: node scripts/test-s3-why-canonical-green-cycle.js
