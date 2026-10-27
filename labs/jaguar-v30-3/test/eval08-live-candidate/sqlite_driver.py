@@ -6,7 +6,7 @@ try:
  op=x['op']
  if op=='init':
   db.executescript((Path(__file__).parent/'atomic-fixture.sql').read_text())
-  db.executescript((Path(__file__).parents[1]/'migrations/0004_v30_85c_occurrences.sql').read_text())
+  db.executescript((Path(__file__).parents[2]/'migrations/0004_v30_85c_occurrences.sql').read_text())
   db.commit();print('{}')
  elif op=='batch':
   out=[]
