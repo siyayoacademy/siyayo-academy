@@ -13,6 +13,6 @@ jobs:
         with: {node-version: '22'}
       - run: node --test scripts/test-eval08-staging-readiness.mjs
       - run: node labs/jaguar-v30-3/scripts/cloudflare-proof-preflight.mjs
-      - run: node --test labs/jaguar-v30-3/test/staging-architecture-89d.test.mjs
+      - run: node labs/jaguar-v30-3/scripts/check-staging-architecture-89d.mjs
       - run: node --test scripts/test-eval08-canonical-readback-projection.mjs
       - run: node --test scripts/test-eval08-atomic-readback.mjs
