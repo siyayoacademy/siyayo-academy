@@ -1,0 +1,21 @@
+name: EVAL-08 verified assessment intake candidate — NO DEPLOY
+on:
+  push:
+    branches: [jaguar/eval08-verified-intake-candidate-20261027]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - name: Validate trusted boundaries and controlled scoring
+        run: node --test scripts/test-eval08-verified-intake-candidate.mjs
+      - name: Preserve canonical WHY, scopes and production release guard
+        run: |
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-elo7d2-word-path-evidence-detail.js
+          node scripts/test-jaguar-why-production-safety-gate.cjs
+          node scripts/test-jaguar-h14-67-final-gates.cjs
