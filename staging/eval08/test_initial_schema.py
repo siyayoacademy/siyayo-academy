@@ -29,7 +29,7 @@ db.execute("INSERT INTO eval08_actions(action_key,event_id,subject_key,session_k
 rejects("INSERT INTO eval08_occurrences(subject_key,event_id,action_key,skill_id,language,origin_experience_id,current_experience_id,question_word,purpose,status,payload_sha256,created_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",('SUB',eid,'ACT','why.use.contextual-reason','en','having-dinner','having-dinner','WHY','assessment','accepted','0'*64,10))
 db.execute("INSERT INTO eval08_occurrences VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",('SUB',eid,'ACT','why.use.contextual-reason','en','having-dinner','having-dinner','WHY','assessment','pending','0'*64,10))
 packet='{"test":true}'
-db.execute("INSERT INTO eval08_attempts VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",('SUB',eid,'ACT','CONTRACT','0.1',1,'SCOPE','why.use.contextual-reason','en','having-dinner','having-dinner','reason-answer','local','fail','PROOF',packet,10))
+db.execute("INSERT INTO eval08_attempts VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",('SUB',eid,'ACT','CONTRACT','0.1',1,'SCOPE','why.use.contextual-reason','en','having-dinner','having-dinner','reason-answer','local','fail','PROOF',packet,10))
 rejects("INSERT INTO eval08_evidence VALUES(?,?,?,?,?,?,?)",('SUB',eid,'SCOPE','why.use.contextual-reason','en','having-dinner',packet))
 rejects("UPDATE eval08_attempts SET result='pass' WHERE subject_key='SUB'")
 assert db.execute('SELECT COUNT(*) FROM eval08_evidence').fetchone()[0]==0
