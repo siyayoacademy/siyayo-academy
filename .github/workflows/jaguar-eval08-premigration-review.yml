@@ -1,0 +1,14 @@
+name: EVAL-08 premigration guard (offline SQL only)
+on:
+  push:
+    branches: [jaguar/eval08-premigration-review-20261028]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 staging/eval08/test_initial_schema.py
+      - run: python3 staging/eval08/test_premigration_gates.py
+      - run: node scripts/test-jaguar-why-production-safety-gate.cjs
