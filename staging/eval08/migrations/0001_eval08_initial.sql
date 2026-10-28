@@ -67,10 +67,10 @@ CREATE TABLE IF NOT EXISTS eval08_occurrences (
   (purpose='exploration' AND status='observed_exploratory') OR
   (purpose='assessment' AND status='pending')
  ),
- CHECK ((purpose='exploration' AND action_key IS NULL) OR
-        (purpose='assessment' AND action_key IS NOT NULL)),
  payload_sha256 TEXT NOT NULL CHECK(length(payload_sha256)=64),
  created_at INTEGER NOT NULL,
+ CHECK ((purpose='exploration' AND action_key IS NULL) OR
+        (purpose='assessment' AND action_key IS NOT NULL)),
  PRIMARY KEY(subject_key,event_id),
  UNIQUE(subject_key,action_key),
  FOREIGN KEY(action_key) REFERENCES eval08_actions(action_key)
