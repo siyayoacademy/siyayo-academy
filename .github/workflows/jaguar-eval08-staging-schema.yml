@@ -1,0 +1,18 @@
+name: JAGUAR EVAL-08 D1 staging schema review (NO REMOTE SQL)
+on:
+  push:
+    branches: [jaguar/eval08-staging-schema-20261028]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-sqlite-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate proposed initial migration locally only
+        run: python3 staging/eval08/test_initial_schema.py
+      - name: Keep canonical evaluative contracts intact
+        run: |
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-jaguar-why-production-safety-gate.cjs
