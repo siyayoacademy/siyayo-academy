@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.49.0/config-schema.json",
+  "name": "siyayo-academy-staging-api",
+  "compatibility_date": "2026-10-27",
+  "workers_dev": false,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "ASSESSMENT_DB",
+      "database_name": "siyayo-academy-staging",
+      "database_id": "cc48dd16-ac40-4af1-a206-f2d72ed4e7f0",
+      "migrations_dir": "migrations",
+      "migrations_table": "d1_migrations"
+    }
+  ]
+}
