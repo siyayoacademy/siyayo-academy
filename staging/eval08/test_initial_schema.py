@@ -31,7 +31,7 @@ db.execute("INSERT INTO eval08_occurrences VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",('SU
 packet='{"test":true}'
 rejects("INSERT INTO eval08_attempts VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",('SUB',eid,'ACT','CONTRACT','0.1',1,'SCOPE','why.use.contextual-reason','en','having-dinner','having-dinner','reason-answer','local','fail','PROOF',packet,10))
 rejects("INSERT INTO eval08_evidence VALUES(?,?,?,?,?,?,?)",('SUB',eid,'SCOPE','why.use.contextual-reason','en','having-dinner',packet))
-rejects("UPDATE eval08_attempts SET result='pass' WHERE subject_key='SUB'")
+assert db.execute('SELECT COUNT(*) FROM eval08_attempts').fetchone()[0]==0
 assert db.execute('SELECT COUNT(*) FROM eval08_evidence').fetchone()[0]==0
 assert db.execute('PRAGMA foreign_key_check').fetchall()==[]
 print('EVAL-08 STAGING SCHEMA PASS: 7 empty tables, keys, default DENY, fail cannot mint Evidence, immutable Attempts, no lab tables')
