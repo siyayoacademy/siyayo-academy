@@ -149,3 +149,8 @@ Especificação completa: [Master VIP — leitura clara, submódulos e speech](M
 
 Este lote registra somente documentação. Nenhuma alteração de HTML/CSS/JS, catálogo, fontes, PDF, main, PR #3, D1 ou produção. Testes visuais, vozes, integração e homologação deste refinamento continuam pendentes.
 
+
+
+## ELO MVP11 — leitura e speech modular
+
+Execução autorizada com a ressalva do cartão inteiro clicável, speaker dourado decorativo à esquerda e sem botões repetir/parar. Referência, dependências, estados e evidências em MASTER-VIP-MVP11-READABILITY-SPEECH.md. Registro de 374 unidades / 1.540 alvos em master-vip-presentation-registry.v1.json. Explicações 21px desktop/20px portrait; impressão independente. Testado localmente; homologação humana visual/áudio/A4 pendente. Catálogo e cobertura de conteúdo inalterados. Novos lotes devem adotar este contrato.

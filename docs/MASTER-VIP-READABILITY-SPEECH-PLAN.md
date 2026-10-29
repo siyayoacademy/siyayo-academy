@@ -1,6 +1,6 @@
 # Master VIP — leitura clara, submódulos e speech
 
-29 de outubro de 2026. Solicitação em modo de indagação: NÃO IMPLEMENTAR. Este documento registra entendimento, proposta e etapas. Estado ESPECIFICADO / PENDENTE. Não representa implantação, teste visual, homologação ou áudio disponível na Master VIP.
+29 de outubro de 2026. Proposta originalmente registrada como indagação. A solicitação posterior autorizou executar a sequência com a ressalva: o cartão textual inteiro ativa speech; speaker dourado decorativo à esquerda; sem botões especializados para repetir/parar. Registro de execução: MASTER-VIP-MVP11-READABILITY-SPEECH.md. As descrições de baseline abaixo são históricas; o estado atual está no registro MVP11.
 
 ## Entendimento confirmado
 
@@ -38,12 +38,12 @@ O componente visual pode ser reutilizado; cada instância mantém identidade e v
 |---|---|---|
 | 1 — Identidade e referências | Completar identificação dos subblocos; resolver a origem/versão do Corpus Speech Card, SVG e serviço de voz homologados; mapear consumidores e contratos de apresentação | Mapa de submódulos e reaproveitamento, com IDs existentes preservados e lacunas explícitas |
 | 2 — Leitura e hierarquia web | Especializar Explicação, Exemplo e Exercício; ampliar exclusivamente o corpo explicativo; organizar largura, contraste e respiro; alinhar a coluna do speaker entre módulos | Prova visual para portrait e desktop; explicação distinta do exemplo/exercício; proposta inicial 20–22px no corpo explicativo e entrelinha 1,5–1,7, sujeita à conferência |
-| 3 — Speech reutilizável | Integrar o speaker SVG dourado e a leitura do texto correto por idioma; oferecer ouvir/repetir/parar conforme o componente; impedir sobreposição e interromper ao mudar de unidade | Operação por clique/teclado, indicação acessível do estado e idioma correto, sem autoplay |
+| 3 — Speech reutilizável | Integrar o speaker SVG dourado e a leitura do texto correto por idioma; ativar leitura pelo clique no cartão inteiro, sem botões extras para repetir/parar; impedir sobreposição e interromper ao mudar de unidade | Operação por clique/teclado, indicação acessível do estado e idioma correto, sem autoplay |
 | 4 — Piloto THERE + TO BE | Aplicar aos submódulos de explicação, exemplo, exercício e gabarito de Existence, incluindo situações EN→PT, EN→ES e EN→ES→PT efetivamente disponíveis | Conferência humana do padrão visual e áudio antes da expansão; registrar separadamente implementação, testes e homologação |
 | 5 — Aplicação aos módulos existentes | Usar o mesmo componente nos cinco destinos e nas 374 unidades do baseline onde houver texto falável; tratar tabelas, figuras e glossários conforme sua função | Cobertura por tipo de conteúdo e idioma; remissões e IDs estáveis; novos capítulos passam a adotar o padrão |
 | 6 — Print e validação final | Conferir saída A4 independente da escala web; retirar botões de áudio da saída; preservar textos e escolha de gabaritos; verificar acessibilidade e regressões | Web, conteúdo, voz e impressão com estados próprios; prova física A4 e revisão portrait/desktop |
 
-São seis etapas funcionais, não seis commits garantidos. A abrangência da etapa 5 pode exigir lotes por tipo/capítulo, sem mudar a arquitetura ou repetir o desenvolvimento do componente. Nenhuma etapa de interface é executada por este registro.
+São seis etapas funcionais, não seis commits garantidos. A abrangência da etapa 5 pode exigir lotes por tipo/capítulo, sem mudar a arquitetura ou repetir o desenvolvimento do componente. A execução autorizada está registrada no MVP11; a homologação humana permanece pendente.
 
 ## Parâmetros de leitura e alinhamento
 
@@ -57,7 +57,7 @@ Cada ação lê o texto do bloco/idioma correspondente. Não ler IDs técnicos, 
 
 Uma edição de três idiomas não transforma um texto original EN ou EN/PT em tradução ES pronta. Idioma ausente deve ser indicado, sem fabricar tradução ou usar voz errada. Qualidade/disponibilidade da voz depende do mecanismo/dispositivo escolhido e será conferida na implementação; não se promete a mesma voz em todos os aparelhos.
 
-Ouvir um exercício lê o enunciado, não a resposta vinculada. Gabaritos só são lidos quando o usuário os abre/escolhe. Modelos resolvidos que já contêm resposta na fonte continuam identificados como modelos. Mudança de capítulo/unidade interrompe leitura anterior; repetição e parada são ações explícitas. Nenhum autoplay ao navegar. O componente deve ser operável por teclado, com nome acessível e foco visível. Pausa/retomada só entram se suportadas pelo componente homologado após conferência.
+Ouvir um exercício lê o enunciado, não a resposta vinculada. Gabaritos só são lidos quando o usuário os abre/escolhe. Modelos resolvidos que já contêm resposta na fonte continuam identificados como modelos. Mudança de capítulo/unidade interrompe leitura anterior; novo clique reinicia a leitura e cancela a anterior; navegação também cancela. Não há botões adicionais para repetir/parar. Nenhum autoplay ao navegar. O componente deve ser operável por teclado, com nome acessível e foco visível. Pausa/retomada não fazem parte deste contrato.
 
 Interação de estudo por áudio não produz avaliação, Evidence, Green Pass ou progresso contratual. Não carregar PATITA, NICK, D1 ou avaliadores como dependência do speech.
 
@@ -74,3 +74,7 @@ Origem: solicitação do professor em 29/10/2026, posterior ao MVP10. Função: 
 HOW TO DO: componente e instâncias. HOW TO RECORD: IDs, idioma e origem/versão. HOW TO SHOW: leitura e speaker alinhados. HOW TO CHECK: piloto, cobertura e provas independentes. HOW TO SPEAK: texto correto por idioma, com ação explícita.
 
 Estado: ESPECIFICADO. Implementação: PENDENTE. Testes: PENDENTES. Homologação: PENDENTE. Integração ao Explorer: NÃO REALIZADA. Este lote altera somente documentação na branch Master VIP; não modifica HTML/CSS/JS, catálogo, PDFs, main, PR #3, avaliações, D1 ou produção.
+
+## Estado atualizado — MVP11
+
+IMPLEMENTADO na branch Master VIP: subcontêineres identificados, corpo explicativo 21px desktop/20px portrait, cartões speech em 372 das 374 unidades, 1.540 alvos. TESTADO LOCALMENTE: preservação textual, idiomas, cancelamento, renderização DOM de tela/print e ausência de controles de áudio impressos. HOMOLOGAÇÃO humana de visual, áudio e A4 físico: PENDENTE. INTEGRADO AO EXPLORER: NÃO. O navegador de teste não disponibilizou vozes e retornou synthesis-failed; o teste do controlador com vozes simuladas passou.

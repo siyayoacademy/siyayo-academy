@@ -1,0 +1,6 @@
+const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto'),path=require('node:path');
+const root=path.join(__dirname,'..'),ctx={};vm.runInNewContext(fs.readFileSync(path.join(root,'master-vip/master-vip-speech.js'),'utf8'),ctx);
+const catalog=JSON.parse(fs.readFileSync(path.join(root,'master-vip/data/catalog.json'),'utf8'));
+const units=catalog.units.map(u=>({id:u.id,targets:ctx.MasterVIPSpeech.describeUnit(u).map(({text,...t})=>({...t,text_sha256:crypto.createHash('sha256').update(text).digest('hex')}))}));
+const result={id:'MVP:PRESENTATION:REGISTRY',version:'1.0.0',catalog_version:catalog.version,source_sha256:catalog.source_sha256,contract:'whole-card-click; decorative gold speaker left; no repeat/stop buttons',normalization:'Decorative glyphs and whitespace only; original text unchanged',status:{implemented:true,tested_locally:true,homologated:false,integrated_into_explorer:false},unit_count:units.length,textual_unit_count:units.filter(u=>u.targets.length).length,target_count:units.reduce((n,u)=>n+u.targets.length,0),units};
+fs.writeFileSync(path.join(root,'docs/master-vip-presentation-registry.v1.json'),JSON.stringify(result,null,2)+'\n');console.log(result.unit_count,result.textual_unit_count,result.target_count);

@@ -937,5 +937,13 @@
     "raster_references": 0,
     "chapter_completeness": "PARTIAL",
     "next_pending": "P02430 QUALITY & STATE"
+  },
+  "presentation": {
+    "registry": "master-vip-presentation-registry.v1.json",
+    "implementation": "MASTER-VIP-MVP11-READABILITY-SPEECH.md",
+    "contract": "whole-card-click; decorative gold speaker left; no extra repeat/stop buttons",
+    "implemented": true,
+    "tested_locally": true,
+    "homologated": false
   }
 }

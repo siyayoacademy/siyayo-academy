@@ -1,0 +1,33 @@
+.master-speech-icon{display:inline-block;width:18px;height:18px;background:var(--light);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 9v6h4l5 4V5L7 9H3zm11.5 3a3.5 3.5 0 0 0-1.5-2.87v5.74A3.5 3.5 0 0 0 14.5 12zm0-6.18v2.06A6 6 0 0 1 17 12a6 6 0 0 1-2.5 4.12v2.06A8 8 0 0 0 19 12a8 8 0 0 0-4.5-6.18z'/%3E%3C/svg%3E") center/contain no-repeat;pointer-events:none}
+/* Master VIP shared presentation. Click the entire text card; the icon is decorative. */
+.master-content{margin:22px 0;padding:19px 20px;border:1px solid var(--border);border-radius:12px;background:rgba(7,25,48,.55);min-width:0}
+.master-content--explanation{background:rgba(17,43,75,.58);border-left:3px solid var(--gold)}
+.master-content--exercise{border-style:dashed}.master-content--answer{border-left:3px solid var(--light)}
+.content-kind{font-family:var(--font-body);font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--light);margin:0 0 14px}
+.master-speech-card{display:grid;grid-template-columns:22px minmax(0,1fr) 22px;align-items:center;gap:12px;width:100%;min-width:0;min-height:48px;padding:13px 12px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--text);text-align:center;white-space:normal;font:inherit;cursor:pointer}
+.master-speech-card:hover{background:rgba(242,216,138,.06);border-color:var(--border)}
+.master-speech-card:focus-visible{outline:2px solid var(--light);outline-offset:3px}
+.master-speech-card.is-speaking{border-color:var(--light);background:rgba(242,216,138,.09)}
+.master-speech-card .speech-text{display:block;min-width:0;overflow-wrap:anywhere;white-space:pre-wrap;font-family:var(--font-body);font-size:1.125rem;line-height:1.6;letter-spacing:normal}
+.master-content--explanation .master-speech-card .speech-text{font-size:1.3125rem;line-height:1.65}
+.speech-balance{width:22px}.master-speech-icon{justify-self:center;width:18px;height:18px}
+.master-content .language-block{padding:12px 0}.master-content .language-tag{font-size:.7rem;letter-spacing:.08em;color:var(--light)}
+.master-content .source-part{padding:8px 0}.master-content .source-line+.source-line{border-top:1px solid var(--border);margin-top:14px;padding-top:14px}
+.master-content table{table-layout:auto}.master-content td .master-speech-card{padding:8px 4px;grid-template-columns:18px minmax(0,1fr) 18px;gap:5px}.master-content td .speech-text{font-size:1rem;line-height:1.5}
+.master-content td{vertical-align:top}.master-content--table .table-scroll{max-width:100%}.master-content--table table{min-width:500px}
+.speech-hint{font-size:.85rem;line-height:1.5;color:var(--soft);margin:0 0 18px}.prompt-number{display:block;color:var(--light);font-size:.85rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:600px){.reading{padding:18px}.slide{padding:17px}.master-content{padding:15px 10px;margin:18px 0}.master-speech-card{padding:12px 4px;gap:8px;grid-template-columns:20px minmax(0,1fr) 20px}.speech-balance{width:20px}.master-content--explanation .master-speech-card .speech-text{font-size:1.25rem;line-height:1.65}.master-speech-card .speech-text{font-size:1.0625rem}.source-notice{overflow-wrap:anywhere}}
+@media print{
+ .speech-hint,.master-speech-icon,.speech-balance,#speechStatus{display:none!important}
+ .print-unit .master-content{margin:9pt 0;padding:0;border:0;border-radius:0;background:none;break-inside:auto}
+ .print-unit .content-kind{font-size:8pt;color:#443716;letter-spacing:.04em;margin:7pt 0 4pt}
+ .print-unit .master-content .speech-text{display:block;color:#111;font-size:10.5pt!important;line-height:1.45!important;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;margin:3pt 0}
+ .print-unit .master-content .speech-text .speech-text{display:inline;font-size:inherit!important;line-height:inherit!important}
+ .print-unit .master-content .language-block{padding:3pt 0}.print-unit .master-content .language-tag{font-size:8pt;color:#443716}
+ .print-unit .master-content--table table{min-width:0;width:100%;font-size:9pt}.print-unit .master-content td .speech-text{font-size:9pt!important}
+ .print-unit .master-content .source-line+.source-line{border:0;margin-top:5pt;padding-top:0}
+ .print-unit .master-content .source-part{padding:0}.print-unit .table-scroll{overflow:visible}
+}
+.source-ornament{white-space:pre-wrap;overflow-wrap:anywhere;color:inherit}
+.slide-meta,.source-id,.source-notice{overflow-wrap:anywhere}
