@@ -1,7 +1,7 @@
 {
   "id": "MVP:PRESENTATION:REGISTRY",
   "version": "1.1.0",
-  "catalog_version": "0.12.0",
+  "catalog_version": "0.13.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "contract": "whole-card-click; decorative gold speaker left; no repeat/stop buttons",
   "normalization": "Decorative glyphs and whitespace only; original text unchanged",
@@ -17,9 +17,9 @@
     "homologation_scope": "Inherited card pattern approved; full current corpus and physical A4 pending",
     "integrated_into_explorer": false
   },
-  "unit_count": 543,
-  "textual_unit_count": 528,
-  "target_count": 2143,
+  "unit_count": 716,
+  "textual_unit_count": 695,
+  "target_count": 2387,
   "units": [
     {
       "id": "MVP:UNIT:EXISTENCE:CONCEPT:001",
@@ -22500,6 +22500,3174 @@
           "lang": "pt",
           "role": "figure",
           "text_sha256": "5ba905b31719799c9b73258d0fa4e7f5b330ac24d135fa7907d4c321e8dcb37b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03524",
+          "start": 0,
+          "end": 21,
+          "text_sha256": "051a8b2592c33e6d681a2c63e46761f5639890b79a9a8851384759486ff6f415"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03529",
+          "start": 0,
+          "end": 11,
+          "text_sha256": "c0cf5a1df0a59a0d127057a5a07baa20d886f83df5e5362962c740d6d7075651"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03530",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "67e57e3df4dd3ae8be932c767444f5cdcf828a5bb8d5cf6e8b726417b76599a2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03531",
+          "start": 0,
+          "end": 12,
+          "text_sha256": "4ddf0e1a0b83df812add10f8bd7d0288a1276ca16edfbb39b8285359410de1d3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03559",
+          "start": 1,
+          "end": 4,
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03559",
+          "start": 4,
+          "end": 23,
+          "text_sha256": "a5f1894438084310d9114a52667f1e8e03c0efae294fb78b115aa845bb3e953f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU:BLOCK:source:0:3:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+          "key": "source:0:3",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03559",
+          "start": 23,
+          "end": 44,
+          "text_sha256": "219b49f61fb14822448f7c020f3852d6e885610cd342846b405be0a01d934889"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03561",
+          "start": 0,
+          "end": 19,
+          "text_sha256": "1ab64ca2a432b048448aa88605b0ea31289348aa908ac77c1846160729cdb0ff"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU:BLOCK:source:2:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+          "key": "source:2:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03562",
+          "start": 0,
+          "end": 21,
+          "text_sha256": "123f5f12b2be978f200ff66d9efb829bedaffa57fb9f3b04c528420581ce312f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03567",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "ea72c79594296e45b8c2a296644d988581f58cfac6601d122ed0a8bd7c02e8bf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03567",
+          "start": 5,
+          "end": 7,
+          "text_sha256": "30efdfb52ff67f80dab7cb89dcfe0eec8412966cfe58324993674b4616d6bd11"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03568",
+          "start": 0,
+          "end": 22,
+          "text_sha256": "a1613c66f2dc74de97403243cd84889b9ac032c8a470bdc83c4f721eaacda1e2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:2:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:2:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03569",
+          "start": 0,
+          "end": 23,
+          "text_sha256": "3dd0a48e87b6d67494994375c21edc2008d477a93ba3683d3453baacbae17c3e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:3:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:3:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03571",
+          "start": 0,
+          "end": 9,
+          "text_sha256": "4c74471eb45e5405a2eab8d50357ef5a7a03362b4c1f7b946d5f3f0383147b66"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03572",
+          "start": 0,
+          "end": 26,
+          "text_sha256": "bb17965744d2aeaa719bc7a12b48bd45afe97029a26da28adce05959b5bd0539"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:5:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:5:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03573",
+          "start": 0,
+          "end": 26,
+          "text_sha256": "c6578643a13897edf8c305c48e081836e78bf4a609879639583561be2a15a165"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:6:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:6:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03574",
+          "start": 0,
+          "end": 21,
+          "text_sha256": "268064ee3a47dcef8cf7cbcf2b2ec9c304580141ca633cb9a9cd0f4c1710d334"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:7:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:7:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03575",
+          "start": 0,
+          "end": 23,
+          "text_sha256": "d6972450ec347dee5af132e6f278d532afbb61c762bb4f8b90b51f058ec03a1d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:8:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:8:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03577",
+          "start": 0,
+          "end": 9,
+          "text_sha256": "4c74471eb45e5405a2eab8d50357ef5a7a03362b4c1f7b946d5f3f0383147b66"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:9:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:9:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03578",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "b4764b48ecb33ebb2e60061e740116474981de078bb8f64c597916b47cb89abc"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS:BLOCK:source:10:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+          "key": "source:10:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03579",
+          "start": 0,
+          "end": 26,
+          "text_sha256": "0d6caf1312f956528c10668440472280a6dd4e1e5710803c604f29b0c9139408"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03583",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "4f23798d92708359b734a18172c9c864f1d48044a754115a0d4b843bca3a5332"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03583",
+          "start": 4,
+          "end": 7,
+          "text_sha256": "d602e91d93c835ee2aa640ccffe314c61328ea2c1dbc45bec4277a9e94f91206"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03584",
+          "start": 0,
+          "end": 22,
+          "text_sha256": "525df87c32dc50bed1bc69c43e107b8190820677ae7ef767eb1a24e54c92e6b9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:2:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:2:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03585",
+          "start": 0,
+          "end": 23,
+          "text_sha256": "439f197a722d8751dd9df20fd63c4ffd5d9d77503aefecacaf168724369a9265"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:3:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:3:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03587",
+          "start": 0,
+          "end": 9,
+          "text_sha256": "4c74471eb45e5405a2eab8d50357ef5a7a03362b4c1f7b946d5f3f0383147b66"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03588",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "adac71e447e4fb6659adc4f52475ac32272a770becdb3c88905b0a8d5d963c49"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:5:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:5:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03589",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "14121dedb856ba5a4a205deb14049a15d3de3d7a02256d4b010e0c74bae229e1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:6:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:6:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03590",
+          "start": 0,
+          "end": 22,
+          "text_sha256": "e755eda994b66daa1eb4b23083a3474e86d89aafca92b9fe0e654767b5d6a9fd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:7:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:7:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03591",
+          "start": 0,
+          "end": 23,
+          "text_sha256": "e91f3633a9a709fe294a9e03af62294345b71ea51a08332e9c315b7c3e81347f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:8:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:8:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03593",
+          "start": 0,
+          "end": 9,
+          "text_sha256": "4c74471eb45e5405a2eab8d50357ef5a7a03362b4c1f7b946d5f3f0383147b66"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:9:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:9:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03594",
+          "start": 0,
+          "end": 24,
+          "text_sha256": "b5cd1ace25baa1c05664643a94addfc70ac15bcbd5742753872ace201becf533"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS:BLOCK:source:10:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+          "key": "source:10:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03595",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "8168e5a9a68f52bfc5046aa45f50a9685aef89757059b88c1a24063de82da5d5"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03598",
+          "start": 0,
+          "end": 2,
+          "text_sha256": "555c7b8b3856c5f4e5d6cd2ec93e4fc54678c49fd0d972d02608fab3ee7b37b3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03598",
+          "start": 2,
+          "end": 23,
+          "text_sha256": "9788a62b7cb68058eae079cbe54fbcb4a36c569f01338ac083e49114061ec3ea"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03598",
+          "start": 23,
+          "end": 40,
+          "text_sha256": "1dcecffc2015ab4b650fb083c1a29a0a557faa623db433d900adae2d4cc9e767"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03603",
+          "start": 0,
+          "end": 9,
+          "text_sha256": "c71fb4c7d5004af2c3513903ea951383d27f562a34a16634082a8a530a725120"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03604",
+          "start": 0,
+          "end": 18,
+          "text_sha256": "2cc9c79fd410a0b7915ee02673cae123b923356b3851c8e392e4a939ed95a26b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:2:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:2:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03604",
+          "start": 18,
+          "end": 36,
+          "text_sha256": "68a556a8b4b9214913a323b12fb3fbdf330f36ec742cafdc950c8d24fb6db8a0"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:3:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:3:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03608",
+          "start": 2,
+          "end": 4,
+          "text_sha256": "f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:3:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:3:2",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03608",
+          "start": 4,
+          "end": 6,
+          "text_sha256": "f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03609",
+          "start": 0,
+          "end": 2,
+          "text_sha256": "f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS:BLOCK:source:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+          "key": "source:5:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03610",
+          "start": 0,
+          "end": 2,
+          "text_sha256": "f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03611",
+          "start": 0,
+          "end": 11,
+          "text_sha256": "143a1a0cc4d4f36fe02a31ad12148670a4392cc2ff95744f959c2db120ad3fe6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03612",
+          "start": 0,
+          "end": 3,
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03612",
+          "start": 3,
+          "end": 22,
+          "text_sha256": "a5f1894438084310d9114a52667f1e8e03c0efae294fb78b115aa845bb3e953f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03612",
+          "start": 22,
+          "end": 41,
+          "text_sha256": "1ab64ca2a432b048448aa88605b0ea31289348aa908ac77c1846160729cdb0ff"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03621",
+          "start": 0,
+          "end": 14,
+          "text_sha256": "2e362ef6c1d8f8971446f0b2b7c255c74acb8e1d50fd34633ed854f119142a5a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03622",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "a32efbd9d674211ecaba948acc1fd45f09e0872bd30687bd2077ce8b95199d55"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03626",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "a32efbd9d674211ecaba948acc1fd45f09e0872bd30687bd2077ce8b95199d55"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:5:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:5:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03631",
+          "start": 0,
+          "end": 55,
+          "text_sha256": "3aabfcd2347f3d6e0c6f5a95385ee556e0c30ebf10cc6c700839c5c3bf1be112"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:7:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:7:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03636",
+          "start": 0,
+          "end": 55,
+          "text_sha256": "3aabfcd2347f3d6e0c6f5a95385ee556e0c30ebf10cc6c700839c5c3bf1be112"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:8:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:8:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03637",
+          "start": 0,
+          "end": 27,
+          "text_sha256": "b04baa146023ba5b930a3e3f5bc349202ae4f7576f3e0639e01745e92435e8a3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:9:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:9:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03638",
+          "start": 0,
+          "end": 27,
+          "text_sha256": "35dbe096a6716f5ef8bb9c856925fdc05d6c7a1fa62856f4fd6ca01a577d2538"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:10:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:10:0",
+          "lang": "pt",
+          "role": "example",
+          "source_id": "P03640",
+          "start": 0,
+          "end": 35,
+          "text_sha256": "f3818d7249ec24f4071fb73e7e16955975b060b3c36b4b768bd19bcdcf8af7d5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:11:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:11:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03641",
+          "start": 0,
+          "end": 76,
+          "text_sha256": "b845b624ad194d93f0c6671116a982e0ff6756f615884cbd2140a4b1714da1fd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS:BLOCK:source:12:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+          "key": "source:12:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P03644",
+          "start": 0,
+          "end": 23,
+          "text_sha256": "4770c0ea971b3cdb0c5148db27568234687f7740b4032e88c6b1eabd3c9d416c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:EXERCISE-INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:EXERCISE-INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:EXERCISE-INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03652",
+          "start": 0,
+          "end": 86,
+          "text_sha256": "76d3da91767fafcaf918b6522f1e7c3fd98168358f1baf388c12292de7b3daca"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY-INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY-INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY-INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03758",
+          "start": 0,
+          "end": 30,
+          "text_sha256": "673591e4167ff3ca17b6ecd71ba0bcaf0dbc465af710bc7c9047ea7ccf615021"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO:BLOCK:instructions:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO",
+          "key": "instructions",
+          "lang": "en",
+          "role": "explanation",
+          "text_sha256": "bcd56bf2e9e7bf012145c233906444baf49e15b57920aefc429abe968f42cb63"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO:BLOCK:instructions:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO",
+          "key": "instructions",
+          "lang": "es",
+          "role": "explanation",
+          "text_sha256": "d734bde5c6a80ff67d8469b92f1d60b879cddbd032a6ab2580ce0432e06a0fd9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO:BLOCK:instructions:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO",
+          "key": "instructions",
+          "lang": "pt",
+          "role": "explanation",
+          "text_sha256": "9b388e2b67fd722bd5353854ab71f9795e781c5e43e89d5b46c99cc375f2d0e7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03814",
+          "start": 0,
+          "end": 42,
+          "text_sha256": "4d64aa85a6d08d4eb7e8b22a9b496e1626c15bf923958b4227cadac51ff16e23"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03905",
+          "start": 0,
+          "end": 10,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03905",
+          "start": 10,
+          "end": 30,
+          "text_sha256": "d464ca590183793c16696d8ef83bbb0e0ceeec272f2b910e824f0f6b71ab3823"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03905",
+          "start": 30,
+          "end": 49,
+          "text_sha256": "cf29fc97960cca17dc3049331355265bd34d356584a1390a0fc854f72e2af5a4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:0:3:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:0:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03905",
+          "start": 49,
+          "end": 59,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:0:4:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:0:4",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03905",
+          "start": 59,
+          "end": 79,
+          "text_sha256": "d464ca590183793c16696d8ef83bbb0e0ceeec272f2b910e824f0f6b71ab3823"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:0:5:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:0:5",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03905",
+          "start": 79,
+          "end": 98,
+          "text_sha256": "cf29fc97960cca17dc3049331355265bd34d356584a1390a0fc854f72e2af5a4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03908",
+          "start": 0,
+          "end": 10,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03909",
+          "start": 0,
+          "end": 39,
+          "text_sha256": "13909cac38d95942c71750748f70c29b9309be6d9ead4c53ad31a8e303d1107d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03912",
+          "start": 0,
+          "end": 10,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03913",
+          "start": 0,
+          "end": 39,
+          "text_sha256": "13909cac38d95942c71750748f70c29b9309be6d9ead4c53ad31a8e303d1107d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0021",
+          "text_sha256": "d9f14dae8b6983f756d1d4d1c1d322fe77f233457607bffaa62c758b8459d175"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0021",
+          "text_sha256": "fecf91f780e1e4daafa0b20d996db7effb30630d49a0147792efb98478431151"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "cad8cc64b60b3565f500b958a3bd04ce45bc89b71b81be415479b10ae09ed852"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "73c9fef079fa70e66808391c8b27aeb1eb27b815f10763dd62c4d61aed91f263"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "208c3bf97b20f8c7b57939a870ac7bbe5662ad501f7fb89f6bb985d219c5bc42"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "529a6551bfce81f66f68e8561743f81dab9211fec1aab9afcd72c434f1beb76b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "49cb38581c2747304df1c704197be0bc362ba03896cdda5b1978f2789e425373"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "3817ee503e69d6e346f1e44a4ff631189ae84f96e699d978f890b20657692be0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "b0aae9e5808d6070c9367afe23965c8f89e5497fd4be4ae00364875ec4f2e6a1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "a4a563ff6b02c0ff1f5cca3a3e96492621831cbd691436e74209c64cdbbf00b4"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "83f0f0313c899e77b28c0b460aec5099e6b4a404886b22521c8aa441f941b715"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "9b8e180c663930501e775243a9211a69ef81b4807627bdb845b1dbaa07d65a3a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "cffe4402127023d6a74b7cbd5fbda42f4bc34020c6c51cc192275d5e7bdfae82"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "33332c6a0d806a0649875e0e982fb303ca4f69784cf20791ea4d987371ce5765"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "5c518baea962bfd28b9d6e3b110468baf2b51716a3133dabd5d13d898b324aba"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "63df20c18e6a3f21b1e22f858fc776fec91ee2231cde29e000ad1dc58523f996"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "9611329d3904c1005400876a95d805f0edf9b8a2629c41274312a385d52086ac"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "d177f2030b348522254337e50a53f5799ce8de4f3350bd6b15621ffbc2e3e63f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "5eaa9828cad931324fa120efdf4979a7f8711b54def3f1100a7a3ecbfee99ab2"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "8630955add03d230a93e4ed5934580aeb637fe6c2339a3d79ba9fe8ff855e469"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "e36f14edc92dd9b525e627106048e5e5559af85e1abe7ab2754ef1a2daa7ee8c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "9a8131259b95598211f4305cc366ae3be177609748cbcae5f20b60152e8ae143"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "97486401d1005ddf1e38a3a0ef4a7fdb7af494dc14e6382c29df7ebb0ce6a07e"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "bc011a20afe4dd7603645d4afa7f629280681c7f6116569df86f1216d686307c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "1b5d7f3664954f83ae7632059f5a4c0d652dcabd8e3e0a161afa1c652b257f8d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "9cbde7c502fe08ff038b73bd81919f1a470b2bf1fd226d09a96509279a161537"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "0b1e962e4df8b9c7f9531936275162d0d1386f048389f29d423759f3d709d28b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "720d084bbe1f36f9348d70c5272d73a934fb2227eb032a4bedfdd10aeb1b07eb"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "1333161e41d770125b7bb5f5070c0d2ae974ae724d69373ebabf2983c8c5e4ba"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "05e8140850cb55d1c56a402fb6e30c795a7d1a5cd78b9708bb052031bfe29bf0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "401ea39eba328ee3e07fd54a460852a33839517cd8881ebe3be3841bf897dea5"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "d0066d90a40668de46e95448f3b9a83d98616b140cbe65ea03321f1e8c806150"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "25ed70ccc9466be71df0895f0e978838ea6a3a3aa56903736dfb23ac844f06f9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "7c460a84ad17377ab3d50e3b7597253d02fbdd0ec7e1272b95aaa3b54951fc37"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "2b58f93de1cc45d4d0e5cd3313dacfe4d4e3b95ea8a27e43de591091e70f43ae"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "8ff538541f080372fbcd5c5808fbbadc945710f3648ee1637272d78ee726af50"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "392c53dc473b273a542358f46010b5515db368def64a537cedc9c62b260e4461"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "03587477416c69d76a5d9c1589db17cbad4febd81538fa4b3f92877a49c4da40"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "87fc3fb2540bcb2979085e47d3e2b125a0c52fd06a6fb52ce5eba221020ce2ec"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "d8ca8fce8b381c7d1b510e7551d8ad70ee78b1c823a4dbf714b70ae52f988c66"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "b43c5236dff5ddb2fdc0108b520518a0ba33acd316746c885394ef49129a6cdb"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "6c3e866c964c468cc21e91f3c5a6f42b234e3860619efd9ddc07df5f6219370d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "cb815a6649be6125ee48e398b637746e27843667dc8e6fefdf7542987a0c2540"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "1fbdbbad7a06a5c52259fea3b70e22ca41029109c400a91f7c67319860142ad5"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "97c9b5f1f6e3940e84441efeb10dbe9f48cd970a28ba64bc3a897300ed81177c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "1c329d62fb130aa7734de14a149554ceec814868dcbc78f1ec99aa8742d228f7"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "b069489ed02fcc77bf90db2e8351e2d7cf90b2ccba073db5dd3339b2a4fab602"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "bdeda689312eca64dfe907db26785d5a9f6495c259aa95b454223e5523e7e754"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "35b98f6674db4ce62c6dee908fff1e72a3fd3b9ebf3720f4a23b597708707878"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "a1437a18efa67645284de07733d3dfbd8fb3f5c36ba5e5d9dc672795826b15c8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0021",
+          "text_sha256": "b2350093afd86c4574030acade144e305e0dddc746cf2d9d02972d43ad27fb79"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:01",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:01:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:01",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "b09291de0d9d7abf3423e819a0f5a6760f30dc1179017c4956203046332a0838"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:02",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:02:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:02",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "a1457b8fe5b0441f4ea4a166e34172f9a633f19cf62f3b4089e444800adeff8f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:03",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:03:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:03",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "10fd6248c69829e58513e24099c989df3ac606756877b85daf74972b41253f53"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:04",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:04:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:04",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "22adc7aa65a410c23f08ac1b218dc23aefb1fb5a4b4b1d067afb33ec7dc8eb71"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:05",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:05:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:05",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "0b613dced7faee1ae468c77539e3a3cb79b710a022e74d1d69fa90e7e0586e3d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:06",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:06:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:06",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "7b80b5599fae9b485a17165a403876a7c0c8e3df969f20e7be899e64014cd38c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:07",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:07:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:07",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "c1276a7f8ed9489b6a12a8ad66a930a59312a2ef31c288b19bed52ef9738ae27"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:08",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:08:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:08",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "5547fd18c1129f9b4e57f86a568ae4d2ea959d550fd540e12b117293edf93f7e"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:09",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:09:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:09",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "86fe99c48f3e22eb2f671f83ec29447638edaf3b8baee4f42f607799302a625f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:10",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:10:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:10",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "47e8528dd02f515996cb3ca024139f258a79cadc42f4a775ba7f3bf56add53cb"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:11",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:11:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:11",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "642cf2cf74d29a33e73240adc9f2bcd0114106247cd95c5987d9d18781bbacfe"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:12",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:12:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:12",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "db4d529fbf0ea5f0eb2bcd0aaccbe558ac7199c620b20e13c55377de39548960"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:13",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:13:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:13",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "79cbac5211f8fa943546a6b95771605e40ed480991cdf413a1911e036a2b19f3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:14",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:14:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:14",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "39d51b240dee6d35937468028d1ecd59da609756a1443c34e1a8ac0d4d641ede"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:15",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:15:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:15",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "fec3e9d8bd55d589f3a44c2553cf4fac8603fb85560cc6c21a9607ab672bbc03"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:16",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:16:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:16",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "cbe17006fb159aec5d5e4bef5810b998b7b5ee3cdc0ffc819074eadea12d271f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:17",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:17:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:17",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "51ea946b752c7fb7846642c1d13b60f6dc804f10d0a72498104e72f192de987b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:18",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:18:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:18",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "ba8722282986a13b87d2d647897e8185edbe8eabf649ee46a7c7e24e12d9698c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:19",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:19:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:19",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "d4d097f8ef7e993a3b497bd77572d7dc199c76c7bd5957a17ab524140b6b7e36"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:20",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:20:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:20",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "b261f52d461bf1485274cf66432e9376c3ba7f8fa0fc763b3ed5494f578017f1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:21",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:21:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:21",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "6789979f9facb79bbcaa764b76e8253851378dbbdd2864c18b3fe503264e9c26"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:22",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:22:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:22",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "db1756483468789663837d2ea16e50089bf53c1033c056f971d99d66fe64cdc0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:23",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:23:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:23",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "5cf9eabcc5442a0e2aa1eae4aac7aef13e4134c4e6a5c5252602d38c008fed38"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:24",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:24:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:24",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "c74e5be51eba11e3e73d3a4502318472e5f82a5f914d4ef3b9d5d71226edd218"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:25",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:25:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:25",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "66f14cb38bbac8f1f16e383f6d5bbced7371e820198729a2c88c8ab02ea56ffe"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:26",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:26:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:26",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "36b737f72496366c28933601a2df2bc01724fa9da21ee8e384b62ca2a97d5a62"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:27",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:27:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:27",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "49d0a54d7498e18cd88822ca8017ce7635704523030603b36958aa86b9cee546"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:28",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:28:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:28",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "ca5a26ad9d437307db429adef71a08a06af07b7d43e3e4a8be5bb106886b15d6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:29",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:29:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:29",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "d9d1fbd45d9fc2d0f4f6625016ac64c0c61b37ead29ce693a2c7f62a3145218a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:30",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:30:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:30",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "90f69b4a4970839903b54d6f5c8a5653742ba1fd0245e605303cb3c22c0bf661"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:31",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:31:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:31",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "4f78584b8746c83cb4ba67ba4e8691d3f5b6e26188d14c7a9f060ca6f635c65c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:32",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:32:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:32",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "9ee8fa1dc5f0cdc084f0b3bf5406bae2d9d765912d66fb271d83e4de8f41dca2"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:33",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:33:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:33",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "a86988c38baea4b8bdacf8e99de2c50e3007103f01a7b74a28943edd1089af1d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:34",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:34:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:34",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "f2687857469d26eea5834660baaf0a218e9818451ed3828bed38613851c27a99"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:35",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:35:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:35",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "5adf8e6104e9ae6446faf8c9d395ec8529b3c2f6dc83e7049d145cef4c5326b8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:36",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:36:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:36",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "4d1172b307a01c7ac68257d315123e8ca1a64ca3c21ef04b51dcd0cc9a9a4df1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:37",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:37:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:37",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "7e0efea2002eac96d5f20d5de1f97b660fe01d4f4891ffcaed67f8d16c258275"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:38",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:38:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:38",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "5b6b814fe3ac72d0234f91860abcf34d6d6316d91fbf79a990c4ab0a3391dff3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:39",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:39:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:39",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "f1ed4a9617aedc4a6e2d34748794e49e96b00f215a6442bfd1ae0d696fdc3242"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:40",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:40:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:40",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "39c0f47defe8686d253558cf083c2af09f2f620fff999301aee8f3c97a23caf2"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:41",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:41:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:41",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "23e8c1fd8728e4cc781b11de6579448a0788d9705ac6d530fa4cb29c7f27efee"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:42",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:42:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:42",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "c16c8698c88f54f6b3eb0a21331c703dfbc5da33711462b443dc8e0c6349f03b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:43",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:43:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:43",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "2b666f004b9ab2cbd6ffb58c569d42f0206608e38a8644949bc958a52b8ac6c1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:44",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:44:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:44",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "2e026a1f6ca2ba66c4a237686c524bcf28de107b20e5544f6be4e468499102a1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:45",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:45:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:45",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "5ab2eba739e2ea5f67f267877777a5725ee1c6c16919b71aa8d5af5ec6ada4ab"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:46",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:46:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:46",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "babff003a46a686c1cfc9f6b1c6372211dddb9fa7291c826a0b6e2f50fb2a912"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:47",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:47:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:47",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "871e6a3f4479970509871a25fab5908c5aff18d7570734e0e278f3b4f821557d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:48",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:48:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:48",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "1b5cbc1c92e28620b283579fa462c15b04926ccb8fda1cb979b007777db94387"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:49",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:49:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:49",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "088ddfdd0fb8a9fc12af06c1848edc5d04db6247db264240192ed233b83faf0a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:50",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:50:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:50",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "c94894dee667ea2eee63119349776d66d1dab30ff5e03b7718b33f210547fd47"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:51",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:51:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:51",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "828d0a332ea3d01fa630278babf30d92bc3e807bb1f0e6e0cdc30e43fea474cf"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:52",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:52:BLOCK:cell:0:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:52",
+          "key": "cell:0:0:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0022",
+          "text_sha256": "c5ab575449676763c56b34601b9f8edf36d7ca159cfe11f9a9660f81852c4be5"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "9b9aaa7d3ddc40def615536d4d47af7ebe942d402665fbc32f2ade5f83724ccf"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "5e05ede766154839c1a98ac50ceddebde66c71a5cb8047b905efc37951013afd"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "efcc6e79e846801fc2a681a1469e60fdbe037aab5bd935cab064c7ea838a3d00"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "aac3d483888da84b53a485325bdc1f2c4a17c814e9fa8e29c188263602037313"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "6f5f3a41e350a8f2592d4f6a3dff1bb728bae311ab8814d1f84b72a8ed15e7a7"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "e2f310b6120fc92369eaf402a328dd68189c984e2431e3194d3c944a5cd32696"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "2603afc70dd8986fa47a839bc4e83f91caac5085cce11c4b229923439f20c16e"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "8740138547e04cc6de0bb7ad2661349c69b348798d5e5da8d5d942d7ada4184c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "2463620204d61b3e6add55d7a0a414038dd63f0152c014bbe5b6ddbf1fc21ac4"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "4f2a3c6ad3055e33d9b1ea12fbe5c87b5bb3e5dc50e05ae42d07d1fd4dd1c92b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "18e46c7ac7934de5564a82430f1d1ae2f1d9290355c0a519e5d7056d0e21b627"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "ecfcea121f2168cf4625120f8eec4f1f7a8df01f2861f06fedbb8921ce807f5c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "2ca66cfa6b719e742d512206411d7be7cbe48442c3d744fba6327adb68df426b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "debc2531f63afa0e5ca0be8ae5c1ea0f2e8bae718c96f873c13f8754ee7534ae"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "63c3d5c22e5b65ab397ca8fae5786b3509bf869be860715f8778d2f3b4c3fe7a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "e36b2f8aaecf06ab573b072d6a804a985dfa2bc77ee67bba41774de6e715dc6c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "96a08baa5d34e890f7125811ef1e5f414175a01d5d3115539c093313d774ba4c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "658cf76786d1bc70fb761dddb4fc70e529e9e5b86e06a497629d3e637b61ccad"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "986b79619132cc32ce8dbec671ce243f9ddd2938cf347ab7ded1855d4503f602"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "c80bf1fe7885c3a58cd204364c1d3a148e107947f23973953cc0d687512d58b9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "ca2b5e4cdc5837916d04a4d3f8a005e8c1d5b783e7412911fe2d9b4fbd848f94"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "f012dd5518d6c5e87943afe61e5ba6632135c902fe808f319720b0f3b8006443"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "b654515b06d5f974d38eac7a3907fe4d7c90018c45519ca3aed00fdf1540410c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "84109fd080847bab2dfc04a68100650b4c98d5ba6d0c24d5075ea41f673cd8b1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "7dbd11b1e9f07317c2408c0b2a8d1baf06fb0acfe156f91a1a9d299e565a3b48"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "57a6b7451ef702e23a5baf21bf0c13c63237944073f53be1e37881f3415fb938"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "d3a8aeb69c14341ba8efc8d85bbda497073211d4bb57eb79ae35595b4f7ded61"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "5aec85b03b3dff93ccf3ffaca8343194afbd671fe2d86f28969577f440a8745a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "6e7f207437d4d0445f46fe072a46bbde13d38045e5555a3b614a8f5d53b7f743"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "bfb799bea77a2d0de42c8a3a36dc3fee50df61e12009fc56ac18db461b501106"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "57f91778e53c575f15d33eb9cb280627b6eda8594e5ee1d65af77f7e4d295e17"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "ca125b11053d157013d82e4f8a98008cd348a06199a773b9e2c4012a12daeb46"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "b6add1f150d56c2d9c2e5b1042a72cb1f63209375a7d97530ab57f5eacc8f404"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "95528266323c30cca065bb4f774c60d1265925459b777e8f4b74220f814bdc74"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "125f77f218bf1b679f07badde8927b78bc75b36ea7a63850633a3798822b0b59"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "9caf058dd92a1226210272c4e64b6ed46da4201d19187141f6d6d964a6f8e994"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "e03388ee5b2990a44a7060e738cc0664ccfa8c9911fcf70136501634f2c44b32"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "e44d6ab886c2b33479e235077ad341822b8b6ed2ca353c05b9f2fabb0d8f4576"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "6da6108dd492c7c206549f2e797f9b8999a4ff071dedd4f64aa668aa2393b2d0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "fc14707f33ad317d52733bc3f1835473f729ce76b549c58e42fbdcd28c0bd155"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "2755e711e6bd88f0cfdcb8d5de234e31f01496dd776f82d00cd1e1f806692024"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "2dee01aca939944e10d1a2a51c9064406a689f9422dc52533e623ef9fd607623"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "7bbfa7e71004eec4c79fd0f37e55d5887a32a701d08b0e160bdf40984d6698c3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44:BLOCK:cell:0:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44",
+          "key": "cell:0:0:0",
+          "lang": "pt",
+          "role": "exercise",
+          "source_table_id": "T0023",
+          "text_sha256": "7569ebe5dcc70623d8393fe7762b9991e6813e5c9ecf4b98304bc5dce60136a8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03533",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "c12846d11c73636565f858b448b31f4f03fe64aab1a0ac5135cff5dff1aee64d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "f89baf483009bbe725974fc17cc5a5a7fad8bedbafcc65f1a75db814ffdaff0f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "2948f1f128b4f60839d1aba5b861a6ce284b5e5e9459a253933f5f4b61361379"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "2f2cf384fccb786e01b82d958efb5c135ac0f7a309617547332ba8ad83b69099"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "302b411d730955d5322dcc3191011ae98cea0b795c45b34609e0b618dbd5211e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "1eef153345fcaf81e26d83ee843a0d2113ede87ade77e9858226e73a891756fe"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "ea7041876dca3c624fd4b8ce15c9d0b78b2a0546ed19f8a792ca6746df7d6d31"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "3cafe4858d6f25de8cb730ed266eb6047850e08d7ae382872e54c0adaddbba34"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "97f8329257c4cd2ba4f5dfef64be83e20a3cac510ba257f613ae3533402a66ea"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "5012680c8fd788f6aed325b3aaa48670c02579b06c43d7feb5715573882371cf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "f20ccd90ebad36635d4b65567f7d6c7a715e0e50a80059c7564c9155659fcac4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "b3a48b09a32641c86f13a8dfcb9896b69f7316fee55aaaa7de2b45fddaf22882"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "295b1770e4aac617f0ac2bddf0ed09525d1a8829d4a4ee71de4b73585cdf1fa7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "101bda0cff0d37eaacac73e82526d140a5a41294e5244914e1f82b0875640303"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "8b9a699da21eabf893b8c1f82d1a15c3713ba4c46e90b977173cedac2effe787"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "87c0c1b35f3ba7ee2dc721876d5939f52b5edb087b68d39a44a36c71db84728a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "dcd31d4a43baf1ce9a315bf737498a65a564761cda18785d2f6a770601d63896"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "b3a48b09a32641c86f13a8dfcb9896b69f7316fee55aaaa7de2b45fddaf22882"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03598",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:TECHNICAL:I0105",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03608",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03649",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "9bdf6c931cf2ccaff7ae53eb8df838acdd2cf38c7f9221ec2f48fd978f16ce25"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "a20ac914d6e8dc8b342a5a7b7f3484ccca46a18a47ab9a7d19c313f5d06ee44e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "24ed4aa26ac28c028403a52999c830481d8deb57b08aa0102b72990a3ac2a524"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03905",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "9bdf6c931cf2ccaff7ae53eb8df838acdd2cf38c7f9221ec2f48fd978f16ce25"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "a20ac914d6e8dc8b342a5a7b7f3484ccca46a18a47ab9a7d19c313f5d06ee44e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "24ed4aa26ac28c028403a52999c830481d8deb57b08aa0102b72990a3ac2a524"
         }
       ]
     }

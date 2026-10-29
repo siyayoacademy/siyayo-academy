@@ -1,32 +1,32 @@
 {
   "id": "MVP:COVERAGE",
   "date": "2026-10-29",
-  "catalog_version": "0.12.0",
+  "catalog_version": "0.13.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "scope": "Development branch only; partial modular source coverage; not main or full editorial/print approval",
   "method": "Unique original paragraph IDs linked to units; character count uses those full source paragraphs once. Whitespace-only paragraphs excluded from textual paragraph metric. Includes repeated source text present in DOCX XML; not page coverage or a quality score.",
   "text_characters": {
-    "integrated": 38743,
+    "integrated": 44812,
     "total": 304836,
-    "percent": 12.709456888294033
+    "percent": 14.700363474130352
   },
   "text_paragraphs": {
-    "integrated": 1604,
+    "integrated": 1822,
     "total": 11072,
-    "percent": 14.486994219653178
+    "percent": 16.45592485549133
   },
   "classified_xml_paragraphs": {
-    "mapped": 2935,
+    "mapped": 3327,
     "total": 20649,
-    "percent": 14.213763378371834
+    "percent": 16.11216039517652
   },
   "source_tables": {
-    "integrated": 22,
+    "integrated": 25,
     "total": 168,
-    "percent": 13.095238095238095
+    "percent": 14.880952380952381
   },
   "raster_unique_files": {
-    "preserved": 51,
+    "preserved": 58,
     "total": 237,
     "visual_reconstruction": "PENDING"
   },
@@ -42,7 +42,7 @@
     "text_characters": 22667,
     "text_character_percent": 7.4358015457491895
   },
-  "units": 543,
+  "units": 716,
   "chapters": [
     {
       "id": "MVP:CH:ORIENTATION",
@@ -66,7 +66,7 @@
       "id": "MVP:CH:TO-BE",
       "title": "To Be",
       "state": "PARTIAL_AVAILABLE",
-      "linked_text_paragraphs": 1066
+      "linked_text_paragraphs": 1284
     },
     {
       "id": "MVP:CH:QUESTIONS",

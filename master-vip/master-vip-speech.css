@@ -35,3 +35,6 @@
 /* Local contrast backing for original transparent dark labels; bytes unchanged. */
 .source-image-matte img{background:#f5f4ef;border-radius:8px;padding:10px}
 @media print{.source-image-matte img{background:#fff}}
+/* Preserved unresolved source fragments are selectable text, not speech buttons. */
+.master-speech-card:not(button){display:block;cursor:text;border-style:dashed}
+.master-speech-card:not(button) .speech-text{text-align:left;overflow-wrap:anywhere}

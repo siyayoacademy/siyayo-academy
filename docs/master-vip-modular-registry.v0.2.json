@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.12.0",
+  "catalog_version": "0.13.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -798,6 +798,329 @@
             "MVP:UNIT:TO-BE:DRILLS:VISUAL",
             "MVP:UNIT:TO-BE:DRILLS:FIGURE"
           ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:INTRO",
+          "title": "Original · Possessive Pronouns",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FRAGMENTS",
+          "title": "Original · Composição inicial em revisão",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:EXAMPLES",
+          "title": "Original · Possessivos · exemplos",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+            "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+            "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+            "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+            "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+            "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+            "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:EXERCISE-INTRO",
+          "title": "Original · Possessive Sentences · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:EXERCISE-INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-INTRO",
+          "title": "Original · Family · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY-INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:BUILD-INTRO",
+          "title": "Original · Building Sentences · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:REMISSIONS",
+          "title": "Original · Remissões Adjectives",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:MODEL",
+          "title": "Original · Possessivos · modelo resolvido",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:SENTENCES-02",
+          "title": "Original · Possessive Sentences · 2–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:SENTENCES-11",
+          "title": "Original · Possessive Sentences · 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:SENTENCES-21",
+          "title": "Original · Possessive Sentences · 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:SENTENCES-31",
+          "title": "Original · Possessive Sentences · 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:SENTENCES-41",
+          "title": "Original · Possessive Sentences · 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49",
+            "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-01",
+          "title": "Original · Family · 1–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:01",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:02",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:03",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:04",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:05",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:06",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:07",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:08",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:09",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-11",
+          "title": "Original · Family · 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:11",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:12",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:13",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:14",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:15",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:16",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:17",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:18",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:19",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-21",
+          "title": "Original · Family · 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:21",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:22",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:23",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:24",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:25",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:26",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:27",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:28",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:29",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-31",
+          "title": "Original · Family · 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:31",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:32",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:33",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:34",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:35",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:36",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:37",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:38",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:39",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-41",
+          "title": "Original · Family · 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:41",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:42",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:43",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:44",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:45",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:46",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:47",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:48",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:49",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:50"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:FAMILY-51",
+          "title": "Original · Family · 51–52",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:51",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:52"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:BUILD-01",
+          "title": "Original · Construir possessivos · 1–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:BUILD-11",
+          "title": "Original · Construir possessivos · 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:BUILD-21",
+          "title": "Original · Construir possessivos · 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:BUILD-31",
+          "title": "Original · Construir possessivos · 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:BUILD-41",
+          "title": "Original · Construir possessivos · 41–44",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43",
+            "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:POSSESSIVES:VISUALS",
+          "title": "Original · Possessivos · composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03533",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104",
+            "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03598",
+            "MVP:UNIT:TO-BE:POSSESSIVES:TECHNICAL:I0105",
+            "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03608",
+            "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03649",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
+            "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03905",
+            "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107"
+          ]
         }
       ]
     },
@@ -1351,6 +1674,47 @@
     "next_pending": "P03524 Possessive Pronouns",
     "chapter_completeness": "PARTIAL",
     "evidence": "MASTER-VIP-MVP14-SUBSTITUTION-DRILLS.md",
+    "states": {
+      "implemented": true,
+      "tested_locally": true,
+      "human_content_homologated": false
+    }
+  },
+  "possessives": {
+    "bounds": [
+      "P03524",
+      "P03915"
+    ],
+    "paragraphs_classified": 392,
+    "source_units": 173,
+    "tables": 3,
+    "sentence_items": 50,
+    "family_items": 52,
+    "building_items": 44,
+    "solved_models": 1,
+    "unsolved_exercises": 145,
+    "vector_compositions": 5,
+    "figure_occurrences": 8,
+    "technical_placeholders": 1,
+    "speech_disabled_paragraphs": [
+      "P03532",
+      "P03533",
+      "P03534",
+      "P03535",
+      "P03536",
+      "P03537",
+      "P03538",
+      "P03539",
+      "P03540",
+      "P03541",
+      "P03554",
+      "P03627",
+      "P03629",
+      "P03634"
+    ],
+    "next_pending": "P03916 To be – other forms",
+    "chapter_completeness": "PARTIAL",
+    "evidence": "MASTER-VIP-MVP15-POSSESSIVES.md",
     "states": {
       "implemented": true,
       "tested_locally": true,

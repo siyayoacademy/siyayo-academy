@@ -179,3 +179,8 @@ P02683–P02794 incorporados: 39 módulos, 112 parágrafos classificados, T0018,
 ## JAGUAR-MVP-14 — Substitution Drills / Build Sentences
 
 P02795–P03523: 105 unidades, 729 parágrafos classificados, duas tabelas. Cinquenta fichas históricas e cinquenta itens de construção; dois modelos preenchidos e 48 exercícios sem respostas fornecidas. Catálogo 0.12.0: 543 unidades / 2.143 alvos speech; 12,7095% dos caracteres de origem. Grade, número/modo/enunciado separados sem alterar a fonte. [Registro completo](MASTER-VIP-MVP14-SUBSTITUTION-DRILLS.md). NEXT GO MVP15: P03524 Possessive Pronouns.
+
+
+## JAGUAR-MVP-15 — Possessive Pronouns
+
+P03524–P03915: 173 unidades, 392 parágrafos classificados, três tabelas, oito ocorrências de imagens e pixel técnico separado, cinco composições XML. Três séries: 50/52/44 itens; um modelo preenchido na fonte e 145 exercícios sem gabarito acrescentado. Quatorze parágrafos truncados/concatenados permanecem como texto estático, sem falsa disponibilidade de áudio. Catálogo 0.13.0: 716 unidades / 2.387 alvos speech; 14,7004% dos caracteres de origem. [Registro completo](MASTER-VIP-MVP15-POSSESSIVES.md). NEXT GO MVP16: P03916 To be – other forms.

@@ -1,6 +1,6 @@
 # SIYAYO Work Map — Master VIP
 
-Checkpoint ativo desta branch: **JAGUAR-MVP-14-SUBSTITUTION-DRILLS**, 29/10/2026.
+Checkpoint ativo desta branch: **JAGUAR-MVP-15-POSSESSIVES**, 29/10/2026.
 
 Este mapa acompanha exclusivamente a branch `jaguar/master-vip-modular-site-print-20261026`. O Work Map geral permanece na branch do Explorer; não substituímos seu checkpoint nem copiamos sua arquitetura.
 
@@ -25,7 +25,7 @@ O registro de apresentação v1.1 distingue pattern_homologated=true (padrão ap
 
 **Prioridade primária: integrar a apostila inteira ao site com rapidez e rastreabilidade, usando o padrão homologado.** Novos refinamentos visuais ficam para seu momento, salvo defeitos que bloqueiem leitura, integridade ou navegação.
 
-Próximo ELO executável: **MVP15 — P03524 Possessive Pronouns**. Delimitar o próximo bloco da fonte já auditada, importar seus textos em módulos e registrar relações, lacunas e cobertura. Não iniciar outra arquitetura para realizar essa importação. Catálogo atual 0.12.0: 543 unidades; cobertura textual 12,7095%, não confundir arquitetura pronta com corpus completo.
+Próximo ELO executável: **MVP16 — P03916 To be · other forms**. Delimitar o próximo bloco da fonte já auditada, importar seus textos em módulos e registrar relações, lacunas e cobertura. Não iniciar outra arquitetura para realizar essa importação. Catálogo atual 0.13.0: 716 unidades; cobertura textual 14,7004%, não confundir arquitetura pronta com corpus completo.
 
 Circuito de cada lote: Corpus Master VIP → Site interativo → HOW TO DO → HOW TO RECORD → HOW TO SHOW → conferência/homologação. Entrega deve fechar origem, exibição, navegação, speech aplicável e seleção print; pendências editoriais são explícitas. GEAR, Multiverse 360° e novas experiences são consumidores futuros desse circuito, não integrações já realizadas.
 
@@ -58,3 +58,8 @@ Sem alterações em main, PR #3, contratos avaliativos, D1 ou produção. Impres
 ## Continuidade de publicação — incidente resolvido no MVP14
 
 Arquivos temporários de empacotamento em /tmp desapareceram durante o envio; o corpus, os testes e os mapas em workspace permaneceram intactos. Retomada aplicada: refazer somente o pacote em qa/upload-m14 dentro do workspace, excluído do envio, preservando a importação e as verificações concluídas. Usar esse estágio de trabalho para novos lotes em vez de depender de /tmp; publicar arquivos pequenos por conteúdo na árvore e grandes por blob, com atualização de branch protegida por expected_sha. Isso é procedimento de publicação, sem mudança de arquitetura ou de autoridade pedagógica.
+
+
+## Resultado MVP15
+
+173 unidades de possessivos incorporadas, P03524–P03915. T0021/T0022/T0023: um modelo original resolvido e 145 exercícios sem gabarito criado. 244 novos alvos speech; 14 parágrafos fragmentados preservados sem ativação de voz e com aviso de revisão. [Evidências e limites](MASTER-VIP-MVP15-POSSESSIVES.md). NEXT GO MVP16: P03916 To be – other forms. Publicação retoma o estágio em qa no workspace, conforme o incidente já resolvido no MVP14.

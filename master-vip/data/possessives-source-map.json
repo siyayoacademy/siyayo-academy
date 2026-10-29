@@ -1,0 +1,6193 @@
+{
+  "id": "MVP:SOURCE:POSSESSIVES",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "bounds": {
+    "first": "P03524",
+    "last": "P03915",
+    "next_heading": "P03916 To be – other forms"
+  },
+  "paragraphs": [
+    {
+      "source_id": "P03524",
+      "xpath": "/w:document/w:body/w:p[573]",
+      "text": "  Possessive Pronouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03525",
+      "xpath": "/w:document/w:body/w:p[574]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03526",
+      "xpath": "/w:document/w:body/w:p[575]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03527",
+      "xpath": "/w:document/w:body/w:p[576]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03528",
+      "xpath": "/w:document/w:body/w:p[577]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03529",
+      "xpath": "/w:document/w:body/w:p[578]",
+      "text": "Possessives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03530",
+      "xpath": "/w:document/w:body/w:p[579]",
+      "text": "Slide: Demonstratives and",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03531",
+      "xpath": "/w:document/w:body/w:p[580]",
+      "text": "☺Possessives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03532",
+      "xpath": "/w:document/w:body/w:p[581]",
+      "text": "essive a posse)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03533",
+      "xpath": "/w:document/w:body/w:p[582]",
+      "text": "ok is mine.PersonalPossessive AdjectivePoss(não indica posse direta)(indicIMy book is blue.This bo(Meu livro é azul.)(Este livPersonalPossessive AdjectivePoss(não indica posse direta)(indicIMy book is blue.This bo(Meu livro é azul.)(Este liv",
+      "style": "(default)",
+      "drawing_count": 4,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS",
+        "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03533",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03534",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[1]",
+      "text": "PersonalPossessive AdjectivePoss",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03535",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[2]",
+      "text": "(não indica posse direta)(indic",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03536",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[3]",
+      "text": "IMy book is blue.This bo",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03537",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p[4]",
+      "text": "(Meu livro é azul.)(Este liv",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03538",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[1]",
+      "text": "PersonalPossessive AdjectivePoss",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03539",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[2]",
+      "text": "(não indica posse direta)(indic",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03540",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[3]",
+      "text": "IMy book is blue.This bo",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03541",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p[4]",
+      "text": "(Meu livro é azul.)(Este liv",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03542",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03543",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[3]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03544",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[5]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03545",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[7]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03546",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[51]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03547",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[52]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03548",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03549",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03550",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[3]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03551",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[4]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03552",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[5]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03553",
+      "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[6]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03554",
+      "xpath": "/w:document/w:body/w:p[583]",
+      "text": "ro é meu.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03555",
+      "xpath": "/w:document/w:body/w:p[584]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03556",
+      "xpath": "/w:document/w:body/w:p[585]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03557",
+      "xpath": "/w:document/w:body/w:p[586]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03558",
+      "xpath": "/w:document/w:body/w:p[587]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03559",
+      "xpath": "/w:document/w:body/w:p[588]",
+      "text": "☺YouYour book is green. (Teu livro é verde.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:YOU"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03560",
+      "xpath": "/w:document/w:body/w:p[589]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03561",
+      "xpath": "/w:document/w:body/w:p[590]",
+      "text": "That book is yours.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:YOU"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03562",
+      "xpath": "/w:document/w:body/w:p[591]",
+      "text": "(Aquele livro é teu.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:YOU"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03563",
+      "xpath": "/w:document/w:body/w:p[592]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03564",
+      "xpath": "/w:document/w:body/w:p[593]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03565",
+      "xpath": "/w:document/w:body/w:p[594]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03566",
+      "xpath": "/w:document/w:body/w:p[595]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03567",
+      "xpath": "/w:document/w:body/w:p[596]",
+      "text": "PeterHe",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03568",
+      "xpath": "/w:document/w:body/w:p[597]",
+      "text": "His suitcase is black.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03569",
+      "xpath": "/w:document/w:body/w:p[598]",
+      "text": "(A pasta dele é preta.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03570",
+      "xpath": "/w:document/w:body/w:p[599]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03571",
+      "xpath": "/w:document/w:body/w:p[600]",
+      "text": "Genitivo:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03572",
+      "xpath": "/w:document/w:body/w:p[601]",
+      "text": "Peter’s suitcase is black.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03573",
+      "xpath": "/w:document/w:body/w:p[602]",
+      "text": "(A pasta do Peter é preta)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03574",
+      "xpath": "/w:document/w:body/w:p[603]",
+      "text": "That suitcase is his.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03575",
+      "xpath": "/w:document/w:body/w:p[604]",
+      "text": "(Aquela  pasta é dele.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03576",
+      "xpath": "/w:document/w:body/w:p[605]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03577",
+      "xpath": "/w:document/w:body/w:p[606]",
+      "text": "Genitivo:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03578",
+      "xpath": "/w:document/w:body/w:p[607]",
+      "text": "That suitcase is Peter’s.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03579",
+      "xpath": "/w:document/w:body/w:p[608]",
+      "text": "(Aquela pasta é do Peter.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HIS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03580",
+      "xpath": "/w:document/w:body/w:p[609]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03581",
+      "xpath": "/w:document/w:body/w:p[610]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03582",
+      "xpath": "/w:document/w:body/w:p[611]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03583",
+      "xpath": "/w:document/w:body/w:p[612]",
+      "text": "JaneShe",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03584",
+      "xpath": "/w:document/w:body/w:p[613]",
+      "text": "Her suitcase is black.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03585",
+      "xpath": "/w:document/w:body/w:p[614]",
+      "text": "(A pasta dela é preta.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03586",
+      "xpath": "/w:document/w:body/w:p[615]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03587",
+      "xpath": "/w:document/w:body/w:p[616]",
+      "text": "Genitivo:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03588",
+      "xpath": "/w:document/w:body/w:p[617]",
+      "text": "Jane’s suitcase is black.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03589",
+      "xpath": "/w:document/w:body/w:p[618]",
+      "text": "(A pasta da Jane é preta)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03590",
+      "xpath": "/w:document/w:body/w:p[619]",
+      "text": "That suitcase is hers.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03591",
+      "xpath": "/w:document/w:body/w:p[620]",
+      "text": "(Aquela  pasta é dela.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03592",
+      "xpath": "/w:document/w:body/w:p[621]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03593",
+      "xpath": "/w:document/w:body/w:p[622]",
+      "text": "Genitivo:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03594",
+      "xpath": "/w:document/w:body/w:p[623]",
+      "text": "That suitcase is Jane´s.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:004"
+      ]
+    },
+    {
+      "source_id": "P03595",
+      "xpath": "/w:document/w:body/w:p[624]",
+      "text": "(Aquela pasta é da Jane.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:HERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03596",
+      "xpath": "/w:document/w:body/w:p[625]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03597",
+      "xpath": "/w:document/w:body/w:p[626]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03598",
+      "xpath": "/w:document/w:body/w:p[627]",
+      "text": "ItIts logo is colorful.This logo is its.",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+        "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03598",
+        "MVP:UNIT:TO-BE:POSSESSIVES:TECHNICAL:I0105"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:002"
+      ]
+    },
+    {
+      "source_id": "P03599",
+      "xpath": "/w:document/w:body/w:p[628]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03600",
+      "xpath": "/w:document/w:body/w:p[629]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03601",
+      "xpath": "/w:document/w:body/w:p[630]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03602",
+      "xpath": "/w:document/w:body/w:p[631]",
+      "text": "☺☺",
+      "style": "Ttulo6",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:OURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03603",
+      "xpath": "/w:document/w:body/w:p[632]",
+      "text": "You and I",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:OURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03604",
+      "xpath": "/w:document/w:body/w:p[633]",
+      "text": "Our book is green.That book is ours.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:OURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03605",
+      "xpath": "/w:document/w:body/w:p[634]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03606",
+      "xpath": "/w:document/w:body/w:p[635]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03607",
+      "xpath": "/w:document/w:body/w:p[636]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03608",
+      "xpath": "/w:document/w:body/w:p[637]",
+      "text": "☺☺WeWe",
+      "style": "Ttulo6",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+        "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03608"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03609",
+      "xpath": "/w:document/w:body/w:p[637]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p",
+      "text": "We",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:OURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03610",
+      "xpath": "/w:document/w:body/w:p[637]/w:r[2]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "We",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:OURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03611",
+      "xpath": "/w:document/w:body/w:p[638]",
+      "text": "You and you",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:YOURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03612",
+      "xpath": "/w:document/w:body/w:p[639]",
+      "text": "YouYour book is green.That book is yours.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:YOURS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03613",
+      "xpath": "/w:document/w:body/w:p[640]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03614",
+      "xpath": "/w:document/w:body/w:p[641]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03615",
+      "xpath": "/w:document/w:body/w:p[642]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03616",
+      "xpath": "/w:document/w:body/w:p[643]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03617",
+      "xpath": "/w:document/w:body/w:p[644]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03618",
+      "xpath": "/w:document/w:body/w:p[645]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03619",
+      "xpath": "/w:document/w:body/w:p[646]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03620",
+      "xpath": "/w:document/w:body/w:p[647]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03621",
+      "xpath": "/w:document/w:body/w:p[648]",
+      "text": "Peter and Jane",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03622",
+      "xpath": "/w:document/w:body/w:p[649]",
+      "text": "They",
+      "style": "Ttulo2",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03623",
+      "xpath": "/w:document/w:body/w:p[650]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03624",
+      "xpath": "/w:document/w:body/w:p[651]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03625",
+      "xpath": "/w:document/w:body/w:p[652]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03626",
+      "xpath": "/w:document/w:body/w:p[653]",
+      "text": "They",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03627",
+      "xpath": "/w:document/w:body/w:p[654]",
+      "text": "Their suitcases are black. Their suitcaseis black.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03628",
+      "xpath": "/w:document/w:body/w:p[655]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03629",
+      "xpath": "/w:document/w:body/w:p[656]",
+      "text": "Genitivo: nome em lugar do pronome: Jane’s and Peter’s suitcaseis black. Jane’s and Peter’s suitcases are black.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001",
+        "MVP:REVIEW:POSSESSIVES:004"
+      ]
+    },
+    {
+      "source_id": "P03630",
+      "xpath": "/w:document/w:body/w:p[657]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03631",
+      "xpath": "/w:document/w:body/w:p[658]",
+      "text": "O verbo é definido pelo objeto e não pelo proprietário.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:003"
+      ]
+    },
+    {
+      "source_id": "P03632",
+      "xpath": "/w:document/w:body/w:p[659]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03633",
+      "xpath": "/w:document/w:body/w:p[660]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03634",
+      "xpath": "/w:document/w:body/w:p[661]",
+      "text": "Their logos are colorful. Their logois colorful.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:001"
+      ]
+    },
+    {
+      "source_id": "P03635",
+      "xpath": "/w:document/w:body/w:p[662]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03636",
+      "xpath": "/w:document/w:body/w:p[663]",
+      "text": "O verbo é definido pelo objeto e não pelo proprietário.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:003"
+      ]
+    },
+    {
+      "source_id": "P03637",
+      "xpath": "/w:document/w:body/w:p[664]",
+      "text": "Those suitcases are theirs.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03638",
+      "xpath": "/w:document/w:body/w:p[665]",
+      "text": "(Aquelas pastas são deles.)",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03639",
+      "xpath": "/w:document/w:body/w:p[666]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03640",
+      "xpath": "/w:document/w:body/w:p[667]",
+      "text": "Genitivo: nome em lugar do pronome:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03641",
+      "xpath": "/w:document/w:body/w:p[668]",
+      "text": "That suitcase is Jane´s and Peter’s. Those suitcases are Jane’s and Peter’s.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:004"
+      ]
+    },
+    {
+      "source_id": "P03642",
+      "xpath": "/w:document/w:body/w:p[669]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03643",
+      "xpath": "/w:document/w:body/w:p[670]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03644",
+      "xpath": "/w:document/w:body/w:p[671]",
+      "text": "Those logos are theirs.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03645",
+      "xpath": "/w:document/w:body/w:p[672]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03646",
+      "xpath": "/w:document/w:body/w:p[673]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03647",
+      "xpath": "/w:document/w:body/w:p[674]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03648",
+      "xpath": "/w:document/w:body/w:p[675]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03649",
+      "xpath": "/w:document/w:body/w:p[676]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03649",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03650",
+      "xpath": "/w:document/w:body/w:p[677]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03651",
+      "xpath": "/w:document/w:body/w:p[678]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03652",
+      "xpath": "/w:document/w:body/w:p[679]",
+      "text": "  EXERCISES: Possessive sentences – Write what is in brackets into possessive pronouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:EXERCISE-INTRO"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:005"
+      ]
+    },
+    {
+      "source_id": "P03653",
+      "xpath": "/w:document/w:body/w:p[680]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03654",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[1]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03655",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[1]/w:tc[2]/w:p",
+      "text": "ANSWERS",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49",
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03656",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[2]/w:tc[1]/w:p",
+      "text": "1. He (I) friend.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03657",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[2]/w:tc[2]/w:p",
+      "text": "He is my friend.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03658",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[3]/w:tc[1]/w:p",
+      "text": "2. I (He) sister.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03659",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[3]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03660",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[4]/w:tc[1]/w:p",
+      "text": "3. She (I) neighbour.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03661",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[4]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03662",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[5]/w:tc[1]/w:p",
+      "text": "4. I (She) teacher.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03663",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[5]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03664",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[6]/w:tc[1]/w:p",
+      "text": "5. We (Susan) friends.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03665",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[6]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03666",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[7]/w:tc[1]/w:p",
+      "text": "6. They (We) colleagues.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03667",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[7]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03668",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[8]/w:tc[1]/w:p",
+      "text": "7. I (Gustavo) girlfriend.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03669",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[8]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03670",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[9]/w:tc[1]/w:p",
+      "text": "8. Gustavo (I) brother-in-law.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03671",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[9]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03672",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[10]/w:tc[1]/w:p",
+      "text": "9. Cyntia (she) sister-in-law.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03673",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[10]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03674",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[11]/w:tc[1]/w:p",
+      "text": "10. Carol and Susan (we) cousins.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03675",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[11]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03676",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[12]/w:tc[1]/w:p",
+      "text": "11. These (they) folders.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03677",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[12]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03678",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[13]/w:tc[1]/w:p",
+      "text": "12. Those (I) files.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03679",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[13]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03680",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[14]/w:tc[1]/w:p",
+      "text": "13. They (they) parents.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03681",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[14]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03682",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[15]/w:tc[1]/w:p",
+      "text": "14. She (they) granddaughter.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03683",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[15]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03684",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[16]/w:tc[1]/w:p",
+      "text": "15. She (my friend) mother.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03685",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[16]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03686",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[17]/w:tc[1]/w:p",
+      "text": "16. She (my mother) friend.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03687",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[17]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03688",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[18]/w:tc[1]/w:p",
+      "text": "17. They (you) guests.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03689",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[18]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03690",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[19]/w:tc[1]/w:p",
+      "text": "18. All of them (I) students.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03691",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[19]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03692",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[20]/w:tc[1]/w:p",
+      "text": "19. It (we) car.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03693",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[20]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03694",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[21]/w:tc[1]/w:p",
+      "text": "20. They (we) cars.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03695",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[21]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03696",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[22]/w:tc[1]/w:p",
+      "text": "21. They (we).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03697",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[22]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03698",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[23]/w:tc[1]/w:p",
+      "text": "22. The baby (you).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03699",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[23]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03700",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[24]/w:tc[1]/w:p",
+      "text": "23. They (she) friends.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03701",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[24]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03702",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[25]/w:tc[1]/w:p",
+      "text": "24. It (Peter) car.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03703",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[25]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03704",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[26]/w:tc[1]/w:p",
+      "text": "25. It (Douglas) car.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03705",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[26]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03706",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[27]/w:tc[1]/w:p",
+      "text": "26. It (Douglas).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03707",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[27]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03708",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[28]/w:tc[1]/w:p",
+      "text": "27. It (the car) equipment.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03709",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[28]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03710",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[29]/w:tc[1]/w:p",
+      "text": "28. It (everybody) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03711",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[29]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03712",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[30]/w:tc[1]/w:p",
+      "text": "29. It (nobody).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03713",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[30]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03714",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[31]/w:tc[1]/w:p",
+      "text": "30. It (the cat) food.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03715",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[31]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03716",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[32]/w:tc[1]/w:p",
+      "text": "31. It (it).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03717",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[32]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03718",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[33]/w:tc[1]/w:p",
+      "text": "32. They (the dogs) food.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03719",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[33]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03720",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[34]/w:tc[1]/w:p",
+      "text": "33. It (you).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03721",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[34]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03722",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[35]/w:tc[1]/w:p",
+      "text": "34. It (I).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03723",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[35]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03724",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[36]/w:tc[1]/w:p",
+      "text": "35. It (you) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03725",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[36]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03726",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[37]/w:tc[1]/w:p",
+      "text": "36. It (I) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03727",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[37]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03728",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[38]/w:tc[1]/w:p",
+      "text": "37. It (he) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03729",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[38]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03730",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[39]/w:tc[1]/w:p",
+      "text": "38. It (she) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03731",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[39]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03732",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[40]/w:tc[1]/w:p",
+      "text": "39. It (we) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03733",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[40]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03734",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[41]/w:tc[1]/w:p",
+      "text": "40. It (the system) problem.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03735",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[41]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03736",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[42]/w:tc[1]/w:p",
+      "text": "41. It (Microsoft).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03737",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[42]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03738",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[43]/w:tc[1]/w:p",
+      "text": "42. It (she).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03739",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[43]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03740",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[44]/w:tc[1]/w:p",
+      "text": "43. It (you).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03741",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[44]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03742",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[45]/w:tc[1]/w:p",
+      "text": "44. It (he).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03743",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[45]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03744",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[46]/w:tc[1]/w:p",
+      "text": "45. They (they).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03745",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[46]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03746",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[47]/w:tc[1]/w:p",
+      "text": "46. It (Carol) turn.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03747",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[47]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03748",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[48]/w:tc[1]/w:p",
+      "text": "47. It (He) turn.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03749",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[48]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03750",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[49]/w:tc[1]/w:p",
+      "text": "48. It (she) turn.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03751",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[49]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03752",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[50]/w:tc[1]/w:p",
+      "text": "49. It (I) turn.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03753",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[50]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03754",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[51]/w:tc[1]/w:p",
+      "text": "50. It (you) turn.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03755",
+      "xpath": "/w:document/w:body/w:tbl[21]/w:tr[51]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03756",
+      "xpath": "/w:document/w:body/w:p[681]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03757",
+      "xpath": "/w:document/w:body/w:p[682]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03758",
+      "xpath": "/w:document/w:body/w:p[683]",
+      "text": "  POSSESSIVE PRONOUNS – FAMILY",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY-INTRO"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:005"
+      ]
+    },
+    {
+      "source_id": "P03759",
+      "xpath": "/w:document/w:body/w:p[684]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03760",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[1]/w:tc/w:p",
+      "text": "1. Your father’s sister is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03761",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[2]/w:tc/w:p",
+      "text": "2. Bruno’s wife’s mother is his",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03762",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[3]/w:tc/w:p",
+      "text": "3. Janet’s husband’s brother is her",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03763",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[4]/w:tc/w:p",
+      "text": "4. Of your granny you are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03764",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[5]/w:tc/w:p",
+      "text": "5. Of your granpa you are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03765",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[6]/w:tc/w:p",
+      "text": "6. Of your mother your father is",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03766",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[7]/w:tc/w:p",
+      "text": "7. Of your sister you are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:07"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03767",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[8]/w:tc/w:p",
+      "text": "8. Of your teacher’s students you are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:08"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03768",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[9]/w:tc/w:p",
+      "text": "9. Of your teacher you are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:09"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03769",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[10]/w:tc/w:p",
+      "text": "10. People related to you are your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:10"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03770",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[11]/w:tc/w:p",
+      "text": "11. The husband of your aunt is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:11"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03771",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[12]/w:tc/w:p",
+      "text": "12. The parents of your parents are your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:12"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03772",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[13]/w:tc/w:p",
+      "text": "13. The son of your son is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:13"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03773",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[14]/w:tc/w:p",
+      "text": "14. The wife of your uncle is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:14"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03774",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[15]/w:tc/w:p",
+      "text": "15. You are your grandparents’",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:15"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03775",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[16]/w:tc/w:p",
+      "text": "16. You are your mother’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:16"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03776",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[17]/w:tc/w:p",
+      "text": "17. You are your parents’",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:17"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03777",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[18]/w:tc/w:p",
+      "text": "18. You are your relatives’",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:18"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03778",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[19]/w:tc/w:p",
+      "text": "19. You are your sister’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:19"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03779",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[20]/w:tc/w:p",
+      "text": "20. You are your stepfather’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:20"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03780",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[21]/w:tc/w:p",
+      "text": "21. Your aunt’s son is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:21"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03781",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[22]/w:tc/w:p",
+      "text": "22. Your brother’s brother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:22"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03782",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[23]/w:tc/w:p",
+      "text": "23. Your brother’s daughter is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:23"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03783",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[24]/w:tc/w:p",
+      "text": "24. Your brother’s wife is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:24"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03784",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[25]/w:tc/w:p",
+      "text": "25. Your cousin’s mother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:25"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03785",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[26]/w:tc/w:p",
+      "text": "26. Your daughter’s daughter is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:26"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03786",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[27]/w:tc/w:p",
+      "text": "27. Your ex-husband is your son’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:27"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03787",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[28]/w:tc/w:p",
+      "text": "28. Your ex-wife is your daughter’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:28"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03788",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[29]/w:tc/w:p",
+      "text": "29. Your father and your mother are your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:29"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03789",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[30]/w:tc/w:p",
+      "text": "30. Your father’s daughter is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:30"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03790",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[31]/w:tc/w:p",
+      "text": "31. Your father’s grandmother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:31"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03791",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[32]/w:tc/w:p",
+      "text": "32. Your father’s mother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:32"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03792",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[33]/w:tc/w:p",
+      "text": "33. Your father’s sister is your mother’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:33"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03793",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[34]/w:tc/w:p",
+      "text": "34. Your father’s wife is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:34"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03794",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[35]/w:tc/w:p",
+      "text": "35. Your fiance’s father is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:35"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03795",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[36]/w:tc/w:p",
+      "text": "36. Your fiance’s mother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:36"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03796",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[37]/w:tc/w:p",
+      "text": "37. Your husband is your sister’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:37"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03797",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[38]/w:tc/w:p",
+      "text": "38. Your husband’s sister is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:38"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03798",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[39]/w:tc/w:p",
+      "text": "39. Your mother is your father’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:39"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03799",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[40]/w:tc/w:p",
+      "text": "40. Your mother’s brother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:40"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03800",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[41]/w:tc/w:p",
+      "text": "41. Your mother’s husband is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:41"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03801",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[42]/w:tc/w:p",
+      "text": "42. Your mother’s mother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:42"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03802",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[43]/w:tc/w:p",
+      "text": "43. Your mother’s mother-in-law is your father’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:43"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03803",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[44]/w:tc/w:p",
+      "text": "44. Your mother’s son is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:44"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03804",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[45]/w:tc/w:p",
+      "text": "45. Your parent’s only child is",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:45"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03805",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[46]/w:tc/w:p",
+      "text": "46. Your sister’s son is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:46"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03806",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[47]/w:tc/w:p",
+      "text": "47. Your sister is your husband’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:47"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03807",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[48]/w:tc/w:p",
+      "text": "48. Your sister’s brother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:48"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03808",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[49]/w:tc/w:p",
+      "text": "49. Your stepfather is your mother’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:49"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03809",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[50]/w:tc/w:p",
+      "text": "50. Your stepmother is your father’s",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:50"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03810",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[51]/w:tc/w:p",
+      "text": "51. Your uncle’s daughter is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:51"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03811",
+      "xpath": "/w:document/w:body/w:tbl[22]/w:tr[52]/w:tc/w:p",
+      "text": "52. Your uncle’s mother is your",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:52"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03812",
+      "xpath": "/w:document/w:body/w:p[685]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03813",
+      "xpath": "/w:document/w:body/w:p[686]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03814",
+      "xpath": "/w:document/w:body/w:p[687]",
+      "text": "  BUILDING SENTENCES – POSSESSIVE PRONOUNS",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:005"
+      ]
+    },
+    {
+      "source_id": "P03815",
+      "xpath": "/w:document/w:body/w:p[688]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03816",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[1]/w:tc[1]/w:p",
+      "text": "1. De quem é este livro?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03817",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[1]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03818",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[2]/w:tc[1]/w:p",
+      "text": "2. É meu.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03819",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[2]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03820",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[3]/w:tc[1]/w:p",
+      "text": "3. Este carro é teu?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03821",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[3]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03822",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[4]/w:tc[1]/w:p",
+      "text": "4. Não. É da minha irmã.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03823",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[4]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03824",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[5]/w:tc[1]/w:p",
+      "text": "5. Estes são meus professores.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03825",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[5]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03826",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[6]/w:tc[1]/w:p",
+      "text": "6. Eles não são seus.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03827",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[6]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03828",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[7]/w:tc[1]/w:p",
+      "text": "7. De quem é a culpa?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03829",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[7]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03830",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[8]/w:tc[1]/w:p",
+      "text": "8. Não é culpa dela.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03831",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[8]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03832",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[9]/w:tc[1]/w:p",
+      "text": "9. Minha família é grande.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03833",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[9]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03834",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[10]/w:tc[1]/w:p",
+      "text": "10. Esta é a minha família.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03835",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[10]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03836",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[11]/w:tc[1]/w:p",
+      "text": "11. Aquele é o teu lugar.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03837",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[11]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03838",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[12]/w:tc[1]/w:p",
+      "text": "12. Este lugar é meu.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03839",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[12]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03840",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[13]/w:tc[1]/w:p",
+      "text": "13. O carro deles é potente.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03841",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[13]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03842",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[14]/w:tc[1]/w:p",
+      "text": "14. Os carros deles são potentes.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03843",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[14]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03844",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[15]/w:tc[1]/w:p",
+      "text": "15. Esta é a opinião deles.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03845",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[15]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03846",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[16]/w:tc[1]/w:p",
+      "text": "16. Esta é a opinião dela.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03847",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[16]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03848",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[17]/w:tc[1]/w:p",
+      "text": "17. Esta é a tua opinião, não a minha.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03849",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[17]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03850",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[18]/w:tc[1]/w:p",
+      "text": "18. A minha é diferente.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03851",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[18]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03852",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[19]/w:tc[1]/w:p",
+      "text": "19. A tua é aquela lá.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03853",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[19]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03854",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[20]/w:tc[1]/w:p",
+      "text": "20. A minha é esta aqui.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03855",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[20]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03856",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[21]/w:tc[1]/w:p",
+      "text": "21. A dela é essa aí.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03857",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[21]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03858",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[22]/w:tc[1]/w:p",
+      "text": "22. Nossa atitude é correta.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03859",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[22]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03860",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[23]/w:tc[1]/w:p",
+      "text": "23. A atitude deles é estranha.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03861",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[23]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03862",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[24]/w:tc[1]/w:p",
+      "text": "24. Nossa casa é confortável.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03863",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[24]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03864",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[25]/w:tc[1]/w:p",
+      "text": "25. Sua mãe está aqui.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03865",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[25]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03866",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[26]/w:tc[1]/w:p",
+      "text": "26. O irmão dela é cantor.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03867",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[26]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03868",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[27]/w:tc[1]/w:p",
+      "text": "27. O meu primo é engenheiro.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03869",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[27]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03870",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[28]/w:tc[1]/w:p",
+      "text": "28. A irmã dela é uma secretária.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03871",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[28]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03872",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[29]/w:tc[1]/w:p",
+      "text": "29. O nosso chefe é da Austrália.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03873",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[29]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03874",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[30]/w:tc[1]/w:p",
+      "text": "30. Meu chefe é australiano.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03875",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[30]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03876",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[31]/w:tc[1]/w:p",
+      "text": "31. A família dela é da França.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03877",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[31]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03878",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[32]/w:tc[1]/w:p",
+      "text": "32. O livro deles é importado.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03879",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[32]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03880",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[33]/w:tc[1]/w:p",
+      "text": "33. Os programas da Microsoft são bons.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03881",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[33]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03882",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[34]/w:tc[1]/w:p",
+      "text": "34. A ideia dela é boa.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03883",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[34]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03884",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[35]/w:tc[1]/w:p",
+      "text": "35. As ideias delas são boas.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03885",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[35]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03886",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[36]/w:tc[1]/w:p",
+      "text": "36. Nossa ideia é a mesma que a deles.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03887",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[36]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03888",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[37]/w:tc[1]/w:p",
+      "text": "37. A ideia deles é a mesma que a nossa.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03889",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[37]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03890",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[38]/w:tc[1]/w:p",
+      "text": "38. Essa é a tua grande oportunidade.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03891",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[38]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03892",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[39]/w:tc[1]/w:p",
+      "text": "39. A decisão é tua.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03893",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[39]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03894",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[40]/w:tc[1]/w:p",
+      "text": "40. Esta é a casa dos meus pais.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03895",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[40]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03896",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[41]/w:tc[1]/w:p",
+      "text": "41. A casa é dos meus pais.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03897",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[41]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03898",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[42]/w:tc[1]/w:p",
+      "text": "42. O problema é de todos.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03899",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[42]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03900",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[43]/w:tc[1]/w:p",
+      "text": "43. Não é um problema de administração.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03901",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[43]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03902",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[44]/w:tc[1]/w:p",
+      "text": "44. Não é um problema da administração.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03903",
+      "xpath": "/w:document/w:body/w:tbl[23]/w:tr[44]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03904",
+      "xpath": "/w:document/w:body/w:p[689]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03905",
+      "xpath": "/w:document/w:body/w:p[690]",
+      "text": "AdjectivesSlide: Comparatives Slide: SuperlativesAdjectivesSlide: Comparatives Slide: Superlatives",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+        "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03905",
+        "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:POSSESSIVES:005"
+      ]
+    },
+    {
+      "source_id": "P03906",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03907",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03908",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[2]",
+      "text": "Adjectives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03909",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[3]",
+      "text": "Slide: Comparatives Slide: Superlatives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03910",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03911",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03912",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[2]",
+      "text": "Adjectives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03913",
+      "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[3]",
+      "text": "Slide: Comparatives Slide: Superlatives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03914",
+      "xpath": "/w:document/w:body/w:p[691]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03915",
+      "xpath": "/w:document/w:body/w:p[692]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    }
+  ],
+  "tables": [
+    {
+      "id": "T0021",
+      "xpath": "/w:document/w:body/w:tbl[21]",
+      "rows": 51,
+      "grid_columns": 2,
+      "cells": [
+        [
+          "",
+          "ANSWERS"
+        ],
+        [
+          "1. He (I) friend.",
+          "He is my friend."
+        ],
+        [
+          "2. I (He) sister.",
+          ""
+        ],
+        [
+          "3. She (I) neighbour.",
+          ""
+        ],
+        [
+          "4. I (She) teacher.",
+          ""
+        ],
+        [
+          "5. We (Susan) friends.",
+          ""
+        ],
+        [
+          "6. They (We) colleagues.",
+          ""
+        ],
+        [
+          "7. I (Gustavo) girlfriend.",
+          ""
+        ],
+        [
+          "8. Gustavo (I) brother-in-law.",
+          ""
+        ],
+        [
+          "9. Cyntia (she) sister-in-law.",
+          ""
+        ],
+        [
+          "10. Carol and Susan (we) cousins.",
+          ""
+        ],
+        [
+          "11. These (they) folders.",
+          ""
+        ],
+        [
+          "12. Those (I) files.",
+          ""
+        ],
+        [
+          "13. They (they) parents.",
+          ""
+        ],
+        [
+          "14. She (they) granddaughter.",
+          ""
+        ],
+        [
+          "15. She (my friend) mother.",
+          ""
+        ],
+        [
+          "16. She (my mother) friend.",
+          ""
+        ],
+        [
+          "17. They (you) guests.",
+          ""
+        ],
+        [
+          "18. All of them (I) students.",
+          ""
+        ],
+        [
+          "19. It (we) car.",
+          ""
+        ],
+        [
+          "20. They (we) cars.",
+          ""
+        ],
+        [
+          "21. They (we).",
+          ""
+        ],
+        [
+          "22. The baby (you).",
+          ""
+        ],
+        [
+          "23. They (she) friends.",
+          ""
+        ],
+        [
+          "24. It (Peter) car.",
+          ""
+        ],
+        [
+          "25. It (Douglas) car.",
+          ""
+        ],
+        [
+          "26. It (Douglas).",
+          ""
+        ],
+        [
+          "27. It (the car) equipment.",
+          ""
+        ],
+        [
+          "28. It (everybody) problem.",
+          ""
+        ],
+        [
+          "29. It (nobody).",
+          ""
+        ],
+        [
+          "30. It (the cat) food.",
+          ""
+        ],
+        [
+          "31. It (it).",
+          ""
+        ],
+        [
+          "32. They (the dogs) food.",
+          ""
+        ],
+        [
+          "33. It (you).",
+          ""
+        ],
+        [
+          "34. It (I).",
+          ""
+        ],
+        [
+          "35. It (you) problem.",
+          ""
+        ],
+        [
+          "36. It (I) problem.",
+          ""
+        ],
+        [
+          "37. It (he) problem.",
+          ""
+        ],
+        [
+          "38. It (she) problem.",
+          ""
+        ],
+        [
+          "39. It (we) problem.",
+          ""
+        ],
+        [
+          "40. It (the system) problem.",
+          ""
+        ],
+        [
+          "41. It (Microsoft).",
+          ""
+        ],
+        [
+          "42. It (she).",
+          ""
+        ],
+        [
+          "43. It (you).",
+          ""
+        ],
+        [
+          "44. It (he).",
+          ""
+        ],
+        [
+          "45. They (they).",
+          ""
+        ],
+        [
+          "46. It (Carol) turn.",
+          ""
+        ],
+        [
+          "47. It (He) turn.",
+          ""
+        ],
+        [
+          "48. It (she) turn.",
+          ""
+        ],
+        [
+          "49. It (I) turn.",
+          ""
+        ],
+        [
+          "50. It (you) turn.",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"af3\"/><w:tblW w:w=\"10067\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0022",
+      "xpath": "/w:document/w:body/w:tbl[22]",
+      "rows": 52,
+      "grid_columns": 1,
+      "cells": [
+        [
+          "1. Your father’s sister is your"
+        ],
+        [
+          "2. Bruno’s wife’s mother is his"
+        ],
+        [
+          "3. Janet’s husband’s brother is her"
+        ],
+        [
+          "4. Of your granny you are"
+        ],
+        [
+          "5. Of your granpa you are"
+        ],
+        [
+          "6. Of your mother your father is"
+        ],
+        [
+          "7. Of your sister you are"
+        ],
+        [
+          "8. Of your teacher’s students you are"
+        ],
+        [
+          "9. Of your teacher you are"
+        ],
+        [
+          "10. People related to you are your"
+        ],
+        [
+          "11. The husband of your aunt is your"
+        ],
+        [
+          "12. The parents of your parents are your"
+        ],
+        [
+          "13. The son of your son is your"
+        ],
+        [
+          "14. The wife of your uncle is your"
+        ],
+        [
+          "15. You are your grandparents’"
+        ],
+        [
+          "16. You are your mother’s"
+        ],
+        [
+          "17. You are your parents’"
+        ],
+        [
+          "18. You are your relatives’"
+        ],
+        [
+          "19. You are your sister’s"
+        ],
+        [
+          "20. You are your stepfather’s"
+        ],
+        [
+          "21. Your aunt’s son is your"
+        ],
+        [
+          "22. Your brother’s brother is your"
+        ],
+        [
+          "23. Your brother’s daughter is your"
+        ],
+        [
+          "24. Your brother’s wife is your"
+        ],
+        [
+          "25. Your cousin’s mother is your"
+        ],
+        [
+          "26. Your daughter’s daughter is your"
+        ],
+        [
+          "27. Your ex-husband is your son’s"
+        ],
+        [
+          "28. Your ex-wife is your daughter’s"
+        ],
+        [
+          "29. Your father and your mother are your"
+        ],
+        [
+          "30. Your father’s daughter is your"
+        ],
+        [
+          "31. Your father’s grandmother is your"
+        ],
+        [
+          "32. Your father’s mother is your"
+        ],
+        [
+          "33. Your father’s sister is your mother’s"
+        ],
+        [
+          "34. Your father’s wife is your"
+        ],
+        [
+          "35. Your fiance’s father is your"
+        ],
+        [
+          "36. Your fiance’s mother is your"
+        ],
+        [
+          "37. Your husband is your sister’s"
+        ],
+        [
+          "38. Your husband’s sister is your"
+        ],
+        [
+          "39. Your mother is your father’s"
+        ],
+        [
+          "40. Your mother’s brother is your"
+        ],
+        [
+          "41. Your mother’s husband is your"
+        ],
+        [
+          "42. Your mother’s mother is your"
+        ],
+        [
+          "43. Your mother’s mother-in-law is your father’s"
+        ],
+        [
+          "44. Your mother’s son is your"
+        ],
+        [
+          "45. Your parent’s only child is"
+        ],
+        [
+          "46. Your sister’s son is your"
+        ],
+        [
+          "47. Your sister is your husband’s"
+        ],
+        [
+          "48. Your sister’s brother is your"
+        ],
+        [
+          "49. Your stepfather is your mother’s"
+        ],
+        [
+          "50. Your stepmother is your father’s"
+        ],
+        [
+          "51. Your uncle’s daughter is your"
+        ],
+        [
+          "52. Your uncle’s mother is your"
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"af4\"/><w:tblW w:w=\"10068\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0023",
+      "xpath": "/w:document/w:body/w:tbl[23]",
+      "rows": 44,
+      "grid_columns": 2,
+      "cells": [
+        [
+          "1. De quem é este livro?",
+          ""
+        ],
+        [
+          "2. É meu.",
+          ""
+        ],
+        [
+          "3. Este carro é teu?",
+          ""
+        ],
+        [
+          "4. Não. É da minha irmã.",
+          ""
+        ],
+        [
+          "5. Estes são meus professores.",
+          ""
+        ],
+        [
+          "6. Eles não são seus.",
+          ""
+        ],
+        [
+          "7. De quem é a culpa?",
+          ""
+        ],
+        [
+          "8. Não é culpa dela.",
+          ""
+        ],
+        [
+          "9. Minha família é grande.",
+          ""
+        ],
+        [
+          "10. Esta é a minha família.",
+          ""
+        ],
+        [
+          "11. Aquele é o teu lugar.",
+          ""
+        ],
+        [
+          "12. Este lugar é meu.",
+          ""
+        ],
+        [
+          "13. O carro deles é potente.",
+          ""
+        ],
+        [
+          "14. Os carros deles são potentes.",
+          ""
+        ],
+        [
+          "15. Esta é a opinião deles.",
+          ""
+        ],
+        [
+          "16. Esta é a opinião dela.",
+          ""
+        ],
+        [
+          "17. Esta é a tua opinião, não a minha.",
+          ""
+        ],
+        [
+          "18. A minha é diferente.",
+          ""
+        ],
+        [
+          "19. A tua é aquela lá.",
+          ""
+        ],
+        [
+          "20. A minha é esta aqui.",
+          ""
+        ],
+        [
+          "21. A dela é essa aí.",
+          ""
+        ],
+        [
+          "22. Nossa atitude é correta.",
+          ""
+        ],
+        [
+          "23. A atitude deles é estranha.",
+          ""
+        ],
+        [
+          "24. Nossa casa é confortável.",
+          ""
+        ],
+        [
+          "25. Sua mãe está aqui.",
+          ""
+        ],
+        [
+          "26. O irmão dela é cantor.",
+          ""
+        ],
+        [
+          "27. O meu primo é engenheiro.",
+          ""
+        ],
+        [
+          "28. A irmã dela é uma secretária.",
+          ""
+        ],
+        [
+          "29. O nosso chefe é da Austrália.",
+          ""
+        ],
+        [
+          "30. Meu chefe é australiano.",
+          ""
+        ],
+        [
+          "31. A família dela é da França.",
+          ""
+        ],
+        [
+          "32. O livro deles é importado.",
+          ""
+        ],
+        [
+          "33. Os programas da Microsoft são bons.",
+          ""
+        ],
+        [
+          "34. A ideia dela é boa.",
+          ""
+        ],
+        [
+          "35. As ideias delas são boas.",
+          ""
+        ],
+        [
+          "36. Nossa ideia é a mesma que a deles.",
+          ""
+        ],
+        [
+          "37. A ideia deles é a mesma que a nossa.",
+          ""
+        ],
+        [
+          "38. Essa é a tua grande oportunidade.",
+          ""
+        ],
+        [
+          "39. A decisão é tua.",
+          ""
+        ],
+        [
+          "40. Esta é a casa dos meus pais.",
+          ""
+        ],
+        [
+          "41. A casa é dos meus pais.",
+          ""
+        ],
+        [
+          "42. O problema é de todos.",
+          ""
+        ],
+        [
+          "43. Não é um problema de administração.",
+          ""
+        ],
+        [
+          "44. Não é um problema da administração.",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"af5\"/><w:tblW w:w=\"10068\" w:type=\"dxa\"/><w:tblInd w:w=\"893\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    }
+  ],
+  "assets": [
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0099",
+        "src": "assets/master-possessives-image176.jpg",
+        "source_filename": "image176.jpg",
+        "width": 126,
+        "height": 89,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5e85b007cce122a45ea3dab8ec39fa3317e5866392e3522606c5f0266ee68da4",
+        "original_width_mm": 177.16,
+        "original_height_mm": 211.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original Google logo.",
+          "es": "Logotipo original de Google.",
+          "pt": "Logotipo original do Google."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0099",
+        "paragraph_id": "P03533",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0099",
+        "source_use": {
+          "id": "I0099",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[1]/pic:blipFill/a:blip",
+          "relationship": "rId181",
+          "target": "media/image176.jpg",
+          "width_mm": 177.16,
+          "height_mm": 211.56,
+          "effective_ppi_x": 18.1,
+          "description": {
+            "id": "387",
+            "name": "Group 387"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0100",
+        "src": "assets/master-possessives-image177.jpg",
+        "source_filename": "image177.jpg",
+        "width": 120,
+        "height": 84,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "996c58a0d0e44cf20ec39b9325250e01e2d43c0a2a654ba377a1c9163a49e7c5",
+        "original_width_mm": 177.16,
+        "original_height_mm": 211.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original Yahoo logo.",
+          "es": "Logotipo original de Yahoo.",
+          "pt": "Logotipo original do Yahoo."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0100",
+        "paragraph_id": "P03533",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0100",
+        "source_use": {
+          "id": "I0100",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[2]/pic:blipFill/a:blip",
+          "relationship": "rId182",
+          "target": "media/image177.jpg",
+          "width_mm": 177.16,
+          "height_mm": 211.56,
+          "effective_ppi_x": 17.2,
+          "description": {
+            "id": "387",
+            "name": "Group 387"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0101",
+        "src": "assets/master-possessives-image178.jpg",
+        "source_filename": "image178.jpg",
+        "width": 171,
+        "height": 137,
+        "format": "JPEG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "f0d16af061ec4a45826faea94f446dbfccafbdd2308d40548887ef4ce95d315f",
+        "original_width_mm": 177.16,
+        "original_height_mm": 211.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Man with a briefcase and papers.",
+          "es": "Hombre con un maletín y papeles.",
+          "pt": "Homem com uma pasta e papéis."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0101",
+        "paragraph_id": "P03533",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0101",
+        "source_use": {
+          "id": "I0101",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[3]/pic:blipFill/a:blip",
+          "relationship": "rId183",
+          "target": "media/image178.jpg",
+          "width_mm": 177.16,
+          "height_mm": 211.56,
+          "effective_ppi_x": 24.5,
+          "description": {
+            "id": "387",
+            "name": "Group 387"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0102",
+        "src": "assets/master-possessives-image179.jpg",
+        "source_filename": "image179.jpg",
+        "width": 128,
+        "height": 137,
+        "format": "JPEG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "3886c68fc065dfe5b6483b0b0caf4e0a7593f47e3015f4e661e56451a9140dec",
+        "original_width_mm": 177.16,
+        "original_height_mm": 211.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Woman with a handbag.",
+          "es": "Mujer con un bolso.",
+          "pt": "Mulher com uma bolsa."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0102",
+        "paragraph_id": "P03533",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0102",
+        "source_use": {
+          "id": "I0102",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[4]/pic:blipFill/a:blip",
+          "relationship": "rId184",
+          "target": "media/image179.jpg",
+          "width_mm": 177.16,
+          "height_mm": 211.56,
+          "effective_ppi_x": 18.4,
+          "description": {
+            "id": "387",
+            "name": "Group 387"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0103",
+        "src": "assets/master-possessives-image180.jpg",
+        "source_filename": "image180.jpg",
+        "width": 124,
+        "height": 126,
+        "format": "JPEG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "e209329eb0ace3bfa51dc1d603ef3250277c82e8cf352d92c27bed7a9769fcf5",
+        "original_width_mm": 177.16,
+        "original_height_mm": 211.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Man with a briefcase.",
+          "es": "Hombre con un maletín.",
+          "pt": "Homem com uma pasta."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0103",
+        "paragraph_id": "P03533",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0103",
+        "source_use": {
+          "id": "I0103",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[5]/pic:blipFill/a:blip",
+          "relationship": "rId185",
+          "target": "media/image180.jpg",
+          "width_mm": 177.16,
+          "height_mm": 211.56,
+          "effective_ppi_x": 17.8,
+          "description": {
+            "id": "387",
+            "name": "Group 387"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0104",
+        "src": "assets/master-possessives-image181.jpg",
+        "source_filename": "image181.jpg",
+        "width": 87,
+        "height": 153,
+        "format": "JPEG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "fdc8db6aaae7f267faba591d89938274edd467bfc2bf95741b097f2624ed6e1e",
+        "original_width_mm": 177.16,
+        "original_height_mm": 211.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Woman with a bag.",
+          "es": "Mujer con una bolsa.",
+          "pt": "Mulher com uma bolsa."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0104",
+        "paragraph_id": "P03533",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0104",
+        "source_use": {
+          "id": "I0104",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[582]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[6]/pic:blipFill/a:blip",
+          "relationship": "rId186",
+          "target": "media/image181.jpg",
+          "width_mm": 177.16,
+          "height_mm": 211.56,
+          "effective_ppi_x": 12.5,
+          "description": {
+            "id": "387",
+            "name": "Group 387"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0105",
+        "src": "assets/master-possessives-image910.png",
+        "source_filename": "image910.png",
+        "width": 1,
+        "height": 1,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6eca2e8b26db5a423c096908ddb5d7b4af89c521c64548bb47b91e4bf1cc4588",
+        "original_width_mm": 3.56,
+        "original_height_mm": 0.35,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": true,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Technical transparent pixel.",
+          "es": "Píxel transparente técnico.",
+          "pt": "Pixel transparente técnico."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0105",
+        "paragraph_id": "P03598",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0105",
+        "source_use": {
+          "id": "I0105",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[627]/w:r[6]/mc:AlternateContent/mc:Fallback/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId193",
+          "target": "media/image910.png",
+          "width_mm": 3.56,
+          "height_mm": 0.35,
+          "effective_ppi_x": 7.1,
+          "description": {
+            "id": "91",
+            "name": "image91.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0106",
+        "src": "assets/master-possessives-image188.jpg",
+        "source_filename": "image188.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5b201481fb5f52e03c47dc8abec757037ebe4c79bd674d8184129d6f5dc0d11f",
+        "original_width_mm": 47.8,
+        "original_height_mm": 23.88,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Pointing hand with GO TO label.",
+          "es": "Mano indicadora con rótulo GO TO.",
+          "pt": "Mão indicadora com rótulo GO TO."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0106",
+        "paragraph_id": "P03649",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0106",
+        "source_use": {
+          "id": "I0106",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[676]/w:r/w:drawing/wp:inline/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId194",
+          "target": "media/image188.jpg",
+          "width_mm": 47.8,
+          "height_mm": 23.88,
+          "effective_ppi_x": 199.8,
+          "description": {
+            "id": "1237",
+            "name": "image225.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:POSSESSIVES:I0107",
+        "src": "assets/master-existence-original.jpg",
+        "source_filename": "image138.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+        "original_width_mm": 107.23,
+        "original_height_mm": 31.77,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Pointing hand with GO TO label.",
+          "es": "Mano indicadora con rótulo GO TO.",
+          "pt": "Mão indicadora com rótulo GO TO."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:POSSESSIVES:I0107",
+        "paragraph_id": "P03905",
+        "asset_id": "MVP:ASSET:POSSESSIVES:I0107",
+        "source_use": {
+          "id": "I0107",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[690]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId142",
+          "target": "media/image138.jpg",
+          "width_mm": 107.23,
+          "height_mm": 31.77,
+          "effective_ppi_x": 89.1,
+          "description": {
+            "id": "707",
+            "name": "Group 707"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "MVP:REVIEW:POSSESSIVES:001",
+      "source_ids": [
+        "P03532",
+        "P03533",
+        "P03534",
+        "P03535",
+        "P03536",
+        "P03537",
+        "P03538",
+        "P03539",
+        "P03540",
+        "P03541",
+        "P03554",
+        "P03627",
+        "P03629",
+        "P03634"
+      ],
+      "observation": "Texto extraído truncado ou concatenado, inclusive alternativas de caixas. Preservado sem leitura automática até recomposição/normalização revisada; não completar palavras ou frases por inferência.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:POSSESSIVES:002",
+      "source_ids": [
+        "P03598"
+      ],
+      "observation": "Rever o uso independente de its em This logo is its. Não considerar o modelo integralmente homologado por estar importado.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:POSSESSIVES:003",
+      "source_ids": [
+        "P03631",
+        "P03636"
+      ],
+      "observation": "Conferir a terminologia da concordância: distinguir sujeito da oração, objeto possuído e proprietário.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:POSSESSIVES:004",
+      "source_ids": [
+        "P03594",
+        "P03629",
+        "P03641"
+      ],
+      "observation": "Rever apóstrofos e posse conjunta/individual conforme o contexto, preservando grafia e espaços originais.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:POSSESSIVES:005",
+      "source_ids": [
+        "P03652",
+        "P03758",
+        "P03814",
+        "P03905"
+      ],
+      "observation": "Um modelo resolvido em T0021; demais respostas originais vazias. Family e Building Sentences não recebem gabaritos inferidos. Remissões gráficas não inventam destinos.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    }
+  ],
+  "source_units": [
+    "MVP:UNIT:TO-BE:POSSESSIVES:INTRO",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FRAGMENTS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:YOU",
+    "MVP:UNIT:TO-BE:POSSESSIVES:HIS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:HERS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:ITS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:OURS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:YOURS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:THEIRS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:EXERCISE-INTRO",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY-INTRO",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD-INTRO",
+    "MVP:UNIT:TO-BE:POSSESSIVES:REMISSIONS",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:01",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:02",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:03",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:04",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:05",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:06",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:07",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:08",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:09",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:10",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:11",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:12",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:13",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:14",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:15",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:16",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:17",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:18",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:19",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:20",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:21",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:22",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:23",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:24",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:25",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:26",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:27",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:28",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:29",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:30",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:31",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:32",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:33",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:34",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:35",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:36",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:37",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:38",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:39",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:40",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:41",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:42",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:43",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:44",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:45",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:46",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:47",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:48",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:49",
+    "MVP:UNIT:TO-BE:POSSESSIVES:SENTENCES:50",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:01",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:02",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:03",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:04",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:05",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:06",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:07",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:08",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:09",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:10",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:11",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:12",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:13",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:14",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:15",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:16",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:17",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:18",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:19",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:20",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:21",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:22",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:23",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:24",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:25",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:26",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:27",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:28",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:29",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:30",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:31",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:32",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:33",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:34",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:35",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:36",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:37",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:38",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:39",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:40",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:41",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:42",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:43",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:44",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:45",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:46",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:47",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:48",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:49",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:50",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:51",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FAMILY:52",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:01",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:02",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:03",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:04",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:05",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:06",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:07",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:08",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:09",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:10",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:11",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:12",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:13",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:14",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:15",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:16",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:17",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:18",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:19",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:20",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:21",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:22",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:23",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:24",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:25",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:26",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:27",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:28",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:29",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:30",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:31",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:32",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:33",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:34",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:35",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:36",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:37",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:38",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:39",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:40",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:41",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:42",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:43",
+    "MVP:UNIT:TO-BE:POSSESSIVES:BUILD:44",
+    "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03533",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0099",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0100",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0101",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0102",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0103",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0104",
+    "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03598",
+    "MVP:UNIT:TO-BE:POSSESSIVES:TECHNICAL:I0105",
+    "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03608",
+    "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03649",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
+    "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03905",
+    "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107"
+  ],
+  "vector_compositions": [
+    {
+      "id": "MVP:VISUAL:POSSESSIVES:P03533",
+      "paragraph_id": "P03533",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "a31494d503aae2d52ffc15d6859ca583dd021bde051c387d0df0f853b0c6eadb",
+      "xml_src": "assets/source-xml/possessives-P03533.xml",
+      "object_names": [
+        "Group 391",
+        "Rectangle 392",
+        "Straight Arrow Connector 397",
+        "Rectangle 398",
+        "Straight Arrow Connector 399",
+        "Rectangle 402",
+        "Straight Arrow Connector 403",
+        "Rectangle 404",
+        "Straight Arrow Connector 406",
+        "Straight Arrow Connector 410",
+        "Straight Arrow Connector 412",
+        "Straight Arrow Connector 414",
+        "Straight Arrow Connector 416",
+        "Straight Arrow Connector 417",
+        "Straight Arrow Connector 418",
+        "Straight Arrow Connector 420",
+        "Straight Arrow Connector 424",
+        "Straight Arrow Connector 426",
+        "Straight Arrow Connector 428",
+        "Straight Arrow Connector 439",
+        "Shape 656",
+        "Straight Arrow Connector 442",
+        "Straight Arrow Connector 443",
+        "Straight Arrow Connector 444",
+        "Straight Arrow Connector 445",
+        "Straight Arrow Connector 446",
+        "Straight Arrow Connector 447",
+        "Straight Arrow Connector 672",
+        "Straight Arrow Connector 673",
+        "Straight Arrow Connector 674",
+        "Straight Arrow Connector 675",
+        "Straight Arrow Connector 676",
+        "Straight Arrow Connector 677",
+        "Straight Arrow Connector 678",
+        "Straight Arrow Connector 679",
+        "Straight Arrow Connector 680",
+        "Straight Arrow Connector 681",
+        "Straight Arrow Connector 682",
+        "Straight Arrow Connector 683",
+        "Straight Arrow Connector 684",
+        "Straight Arrow Connector 685",
+        "Straight Arrow Connector 686",
+        "Shape 678",
+        "Straight Arrow Connector 688",
+        "Straight Arrow Connector 689",
+        "Straight Arrow Connector 690",
+        "Straight Arrow Connector 691",
+        "Straight Arrow Connector 692",
+        "Straight Arrow Connector 693",
+        "Straight Arrow Connector 694",
+        "Straight Arrow Connector 695",
+        "Straight Arrow Connector 696",
+        "Straight Arrow Connector 697",
+        "Shape 689",
+        "Shape 690",
+        "Shape 691",
+        "Shape 692",
+        "Rectangle 703",
+        "Rectangle 704"
+      ],
+      "container_extents": [
+        {
+          "cx": "3894455",
+          "cy": "713105"
+        },
+        {
+          "cx": "6377940",
+          "cy": "7616190"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId181",
+          "path": "word/media/image176.jpg",
+          "sha256": "5e85b007cce122a45ea3dab8ec39fa3317e5866392e3522606c5f0266ee68da4",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId182",
+          "path": "word/media/image177.jpg",
+          "sha256": "996c58a0d0e44cf20ec39b9325250e01e2d43c0a2a654ba377a1c9163a49e7c5",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId183",
+          "path": "word/media/image178.jpg",
+          "sha256": "f0d16af061ec4a45826faea94f446dbfccafbdd2308d40548887ef4ce95d315f",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId184",
+          "path": "word/media/image179.jpg",
+          "sha256": "3886c68fc065dfe5b6483b0b0caf4e0a7593f47e3015f4e661e56451a9140dec",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId185",
+          "path": "word/media/image180.jpg",
+          "sha256": "e209329eb0ace3bfa51dc1d603ef3250277c82e8cf352d92c27bed7a9769fcf5",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId186",
+          "path": "word/media/image181.jpg",
+          "sha256": "fdc8db6aaae7f267faba591d89938274edd467bfc2bf95741b097f2624ed6e1e",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId187",
+          "path": "word/media/image182.jpeg",
+          "sha256": "5e85b007cce122a45ea3dab8ec39fa3317e5866392e3522606c5f0266ee68da4",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId188",
+          "path": "word/media/image183.jpeg",
+          "sha256": "996c58a0d0e44cf20ec39b9325250e01e2d43c0a2a654ba377a1c9163a49e7c5",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId189",
+          "path": "word/media/image184.jpeg",
+          "sha256": "f0d16af061ec4a45826faea94f446dbfccafbdd2308d40548887ef4ce95d315f",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId190",
+          "path": "word/media/image185.jpeg",
+          "sha256": "3886c68fc065dfe5b6483b0b0caf4e0a7593f47e3015f4e661e56451a9140dec",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId191",
+          "path": "word/media/image186.jpeg",
+          "sha256": "e209329eb0ace3bfa51dc1d603ef3250277c82e8cf352d92c27bed7a9769fcf5",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId192",
+          "path": "word/media/image187.jpeg",
+          "sha256": "fdc8db6aaae7f267faba591d89938274edd467bfc2bf95741b097f2624ed6e1e",
+          "representation": "imagedata"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:POSSESSIVES:P03598",
+      "paragraph_id": "P03598",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "c0c296342486c1fd79ac9c96dd31b72765ac358d283213fd1a3a6c02d0246f17",
+      "xml_src": "assets/source-xml/possessives-P03598.xml",
+      "object_names": [
+        "image91.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "128270",
+          "cy": "12700"
+        },
+        {
+          "cx": "128270",
+          "cy": "12700"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId193",
+          "path": "word/media/image910.png",
+          "sha256": "6eca2e8b26db5a423c096908ddb5d7b4af89c521c64548bb47b91e4bf1cc4588",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:POSSESSIVES:P03608",
+      "paragraph_id": "P03608",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "422b8e7867be872e4f3ad2dca5de458d8821a1952b3c965b1b95bad9daf16b94",
+      "xml_src": "assets/source-xml/possessives-P03608.xml",
+      "object_names": [],
+      "container_extents": [
+        {
+          "cx": "392430",
+          "cy": "294005"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:POSSESSIVES:P03649",
+      "paragraph_id": "P03649",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "e9cda660470550fee838b54d0cc1221e3fb8eeb4748e53dd597dcd2921682269",
+      "xml_src": "assets/source-xml/possessives-P03649.xml",
+      "object_names": [
+        "image225.jpg"
+      ],
+      "container_extents": [
+        {
+          "cx": "1720711",
+          "cy": "859536"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId194",
+          "path": "word/media/image188.jpg",
+          "sha256": "5b201481fb5f52e03c47dc8abec757037ebe4c79bd674d8184129d6f5dc0d11f",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:POSSESSIVES:P03905",
+      "paragraph_id": "P03905",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "a0d089f98d27d358847a52d0de65f5df3b08a46000bea76636aeab543219ab71",
+      "xml_src": "assets/source-xml/possessives-P03905.xml",
+      "object_names": [
+        "Group 708",
+        "Rectangle 709",
+        "Shape 104",
+        "Rectangle 711"
+      ],
+      "container_extents": [
+        {
+          "cx": "3860165",
+          "cy": "1143635"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId142",
+          "path": "word/media/image138.jpg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId143",
+          "path": "word/media/image139.jpeg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+          "representation": "imagedata"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    }
+  ],
+  "chapter_completeness": "PARTIAL",
+  "status": "SOURCE_IMPORTED_FRAGMENT_AND_CONTEXT_REVIEW_PENDING"
+}
