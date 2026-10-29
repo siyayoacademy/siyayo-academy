@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const src=fs.readFileSync('js/verb-explorer.js','utf8');
+const start=src.indexOf('document.getElementById("experienceLanguageGear").onclick=');
+const end=src.indexOf('document.getElementById("perspectiveGear").onclick=',start);
+assert.ok(start>=0&&end>start);
+const handler=src.slice(start,end);
+assert.match(handler,/resumeRetainedForVisibleSelection/);
+assert.match(handler,/stillCurrent\(\)/);
+assert.match(handler,/intendedExperience!=="having-dinner"/);
+assert.match(handler,/visibleQuestion\?\.assessmentTarget\?\.skill!=="why.use.contextual-reason"/);
+assert.match(handler,/selection\?\.select\?\.\(visibleQuestion\)/);
+assert.ok(handler.indexOf('resumeRetainedForVisibleSelection')<handler.indexOf('selection?.select?.(visibleQuestion)'));
+const catalog=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','utf8')).items;
+assert.equal(catalog.filter(x=>x.thinkingMind.some(q=>q.questionWord==='why'&&q.assessmentTarget?.skill==='why.use.contextual-reason')).length,1);
+assert.equal(catalog.find(x=>x.id==='having-dinner').thinkingMind.find(q=>q.questionWord==='why').assessmentTarget.skill,'why.use.contextual-reason');
+console.log('PASS: S3 NICK language switch can start authorized WHY target; S1/S2/S4 stay without fresh target (static gate)');
