@@ -97,7 +97,10 @@ function mount(input){
     return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
       mountExploration(doc,el,experience,language,skills,catalog,source);
   }
-  if(decision.assessmentScope&&decision.assessmentScope.language!==language)return false;
+  if(decision.assessmentScope&&decision.assessmentScope.language!==language){
+    return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
+      mountExploration(doc,el,experience,language,skills,catalog,source);
+  }
   var origin=catalog.getExperience(text(decision.experienceId));
   if(!origin)return false;
   var to=text(experience.id),from=text(origin.id),transfer=to!==from;
