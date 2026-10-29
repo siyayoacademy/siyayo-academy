@@ -34,6 +34,41 @@ function speakOnly(spec,language,doc,ownerGeneration,host){
   if(!runtime||typeof runtime.speak!=='function')return false;
   return runtime;
 }
+// Presentation is not owned by the evaluator. Keep a read-only practice surface
+// visible in S3/S4 whenever WHY is selected, even without NICK or adopted scope.
+function mountExploration(doc,el,experience,language,skills,catalog,source){
+  var definition=skills.getDefinition?.();
+  var origin=catalog.getExperience('having-dinner');
+  var next=catalog.getExperience('after-dinner-conversation');
+  var specs=definition&&origin&&next&&source.resolve(definition,origin,next,language);
+  if(!specs)return false;
+  var transfer=experience.id==='after-dinner-conversation';
+  var available=transfer?[specs.transferProbe]:[specs.functionProbe,specs.localProbe];
+  var labels={
+    en:['WHY · CONTEXTUAL PRACTICE','Exploratory practice · no assessment credit','Choose an answer to explore'],
+    es:['POR QUÉ · PRÁCTICA CONTEXTUAL','Práctica exploratoria · sin crédito de evaluación','Elige una respuesta para explorar'],
+    pt:['POR QUÊ · PRÁTICA CONTEXTUAL','Prática exploratória · sem crédito de avaliação','Escolha uma resposta para explorar']
+  }[language];
+  var heading=doc.createElement('h3');heading.textContent=labels[0];el.appendChild(heading);
+  var notice=doc.createElement('p');notice.className='why-contract-progress';notice.textContent=labels[1];el.appendChild(notice);
+  available.forEach(function(spec,i){
+    var section=doc.createElement('div');section.className='why-contextual-reason-probe';
+    var subtitle=doc.createElement('h4');subtitle.className='why-probe-step';
+    subtitle.textContent=(i+1)+' · '+labels[2];section.appendChild(subtitle);
+    var q=doc.createElement('button');q.type='button';q.className='why-probe-question why-probe-question-card';
+    q.textContent=spec.question;q.addEventListener('click',function(){if(!el.hidden&&isExploringWhy())root.SIYAYOVerbExplorerExperienceRuntime?.speak?.(spec.question,language);});section.appendChild(q);
+    var options=doc.createElement('div');options.className='why-probe-options';
+    spec.alternatives.forEach(function(a){
+      var b=doc.createElement('button');b.type='button';b.className='why-probe-option';b.textContent=a.label;
+      b.addEventListener('click',function(){
+        if(el.hidden||!isExploringWhy())return;
+        options.querySelectorAll('.why-probe-option').forEach(function(other){other.setAttribute('aria-pressed',String(other===b));});
+        root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'why-exploration',phase:'exploratory-choice',selected:a.id,experienceId:experience.id,language:language,questionWord:'why'});
+      });options.appendChild(b);
+    });section.appendChild(options);el.appendChild(section);
+  });
+  el.hidden=false;return true;
+}
 function mount(input){
   input=input||{};
   var doc=input.document||root.document,el=panel(doc);
@@ -58,7 +93,10 @@ function mount(input){
   var feedbackKey=decision&&decision.assessmentScope?decision.assessmentScope.key+'|'+text(experience.id):'';
   var definition=skills.getDefinition&&skills.getDefinition();
   if(!decision||text(decision.skill)!=='why.use.contextual-reason'||
-    text(definition&&definition.id)!==text(decision.skill))return false;
+    text(definition&&definition.id)!==text(decision.skill)){
+    return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
+      mountExploration(doc,el,experience,language,skills,catalog,source);
+  }
   if(decision.assessmentScope&&decision.assessmentScope.language!==language)return false;
   var origin=catalog.getExperience(text(decision.experienceId));
   if(!origin)return false;
