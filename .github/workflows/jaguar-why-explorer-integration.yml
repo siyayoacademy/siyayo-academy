@@ -16,6 +16,8 @@ jobs:
           node-version: '22'
       - name: Check browser dependency wiring (static)
         run: node scripts/test-why-explorer-wiring.cjs
+      - name: Check WHY S1-S4 EN ES PT observational presentation
+        run: node scripts/test-why-explorer-s1-s4-presentation.cjs
       - name: Check existing WHY canonical S3 cycle
         run: node scripts/test-s3-why-canonical-green-cycle.js
       - name: Check human-review safeguards S1 S2
