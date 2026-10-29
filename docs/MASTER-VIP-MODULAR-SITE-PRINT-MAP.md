@@ -164,3 +164,8 @@ Execução autorizada com a ressalva do cartão inteiro clicável, speaker doura
 ## JAGUAR-MVP-11.2 — homologação e continuidade
 
 29/10/2026: professor homologou o padrão visual e confirmou áudio funcional nos cartões revisados, incluindo classe com inicial maiúscula e quebra de linha antes do exemplo. Este registro atualiza os estados históricos de pendência acima somente nesse escopo; conteúdo integral e A4 físico não estão homologados. Guia vigente HOW TO DO/RECORD/SHOW/CHECK/SPEAK: [Work Map](SIYAYO-WORK-MAP.md). [Checkpoint](master-vip-jaguar-checkpoint.json) e [referência XPR](master-vip-xpr-handoff.json). Prioridade primária: importar o restante da apostila com o componente aprovado. NEXT GO: MVP12, P02430 QUALITY & STATE; não repetir auditorias concluídas ou abrir arquitetura paralela.
+
+
+## JAGUAR-MVP-12 — QUALITY & STATE
+
+GO executado: P02430–P02682, 25 unidades originais, 253 parágrafos classificados, T0017, oito ocorrências de imagens e cinco composições XML preservadas. Catálogo 0.10.0, 399 unidades / 1.691 alvos speech; 10,6841% dos caracteres da fonte. Padrão de apresentação homologado reutilizado; novo conteúdo e composição visual ainda em revisão. Evidências: [MVP12](MASTER-VIP-MVP12-QUALITY-STATE.md). NEXT GO: P02683 To be in your hand, sem reabrir auditorias concluídas.

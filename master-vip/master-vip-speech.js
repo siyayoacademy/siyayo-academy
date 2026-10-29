@@ -34,11 +34,13 @@ const englishSpans={
 };
 function splitSpans(text,base,fragments){const intervals=[];for(const item of fragments||[]){const start=text.indexOf(item);if(start>=0)intervals.push({start,end:start+item.length,lang:'en'});}return splitIntervals(text,base,intervals);}
 function splitIntervals(text,base,intervals){const out=[];let at=0;for(const part of intervals.sort((a,b)=>a.start-b.start)){if(part.start<at)continue;if(part.start>at)out.push({text:text.slice(at,part.start),lang:base,start:at,end:part.start});out.push({text:text.slice(part.start,part.end),lang:part.lang,start:part.start,end:part.end});at=part.end;}if(at<text.length)out.push({text:text.slice(at),lang:base,start:at,end:text.length});return out.length?out:[{text,lang:base,start:0,end:text.length}];}
-function sourceLineParts(unit,row){const text=row.text||'',n=Number(String(row.source_id||'').slice(1));if(englishSpans[row.source_id])return splitSpans(text,'pt',englishSpans[row.source_id]);
+function sourceLineParts(unit,row){const text=row.text||'',n=Number(String(row.source_id||'').slice(1));if(unit.id.startsWith('MVP:UNIT:TO-BE:QUALITY:')){const tokens={P02443:/QUALITY & STATE|Nouns|Numbers|Demonstratives|Possessives|Adjectives/g,P02464:/I|you/g,P02471:/he|she|it/g,P02473:/we|they/g,P02476:/ORDER OF SENTENCES – TO BE|I am an auxiliary/g}[row.source_id];if(tokens)return splitIntervals(text,'en',Array.from(text.matchAll(tokens),m=>({start:m.index,end:m.index+m[0].length,lang:'en'})));}if(englishSpans[row.source_id])return splitSpans(text,'pt',englishSpans[row.source_id]);
  let lang=null;if(unit.source_languages?.length===1)lang=unit.source_languages[0];else if(unit.chapter_id==='MVP:CH:MOVEMENT')lang='en';else if(n>=11879&&n<=11904)lang='en';else if(n>=11913&&n<=12021)lang='pt';else if(n>=12027&&n<=12081)lang='en';else if(n===11808)lang='pt';else if(n>=897&&n<=1127)lang=[903,905,908,911,913,915].includes(n)?'en':'pt';else if(n>=1139&&n<=1141)lang='pt';else if(n>=1195&&n<=1200)lang='en';else if(unit.chapter_id==='MVP:CH:TO-BE')lang='en';
  return [{text,lang,start:0,end:text.length}];
 }
 function cellParts(unit,text,row,col){const id=unit.source_table_id;
+ if(id==='T0017'){const globalRow=unit.source_row_indices[row];const lang=globalRow>=20&&col===1?'pt':'en';const split={SheIt:3,isis:2,'is notis not':6,WhyWhere:3,'Por queOnde':7,'Iyou he she it we you they':1}[text];if(split)return [{text:text.slice(0,split),lang,start:0,end:split},{text:text.slice(split),lang,start:split,end:text.length}];return [{text,lang,start:0,end:text.length}];}
+
  if(id==='T0013')return [{text,lang:row===2?'pt':'en',start:0,end:text.length}];
  if(id==='T0014'||id==='T0016'||['T0090','T0091','T0092'].includes(id))return [{text,lang:'en',start:0,end:text.length}];
  if(id==='T0015')return [{text,lang:row===1&&col===0?'pt':'en',start:0,end:text.length}];

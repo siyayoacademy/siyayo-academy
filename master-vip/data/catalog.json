@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -235,7 +235,7 @@
     {
       "id": "MVP:CH:TO-BE",
       "title": "To Be",
-      "description": "Let’s Compare, cinco funções, 25 frases de identificação e 60 exercícios com respostas originais separadas. Continuação do capítulo em preparação.",
+      "description": "Comparações, 60 exercícios/respostas, QUALITY & STATE, ordem das frases, perguntas e imagens originais. Capítulo parcial.",
       "keywords": [
         "TO-BE",
         "To Be",
@@ -259,7 +259,12 @@
         "exercises",
         "answers",
         "mirror",
-        "economy"
+        "economy",
+        "personal pronouns",
+        "from Brazil",
+        "angry",
+        "young",
+        "ordem das frases"
       ],
       "status": "SOURCE_AND_STUDY",
       "sections": [
@@ -521,6 +526,79 @@
           "unit_ids": [
             "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:1704",
             "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:2381"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-INTRO",
+          "title": "Original · Quality & State",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-PRONOUNS",
+          "title": "Original · Personal Pronouns",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:PRONOUNS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER",
+          "title": "Original · Order of Sentences",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:ORDER"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER-AFFIRMATIVE",
+          "title": "Original · AFFIRMATIVE",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER-NEGATIVE",
+          "title": "Original · NEGATIVE",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER-INTERROGATIVE",
+          "title": "Original · INTERROGATIVE",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+          "title": "Original · Frases e perguntas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+          "title": "Original · Composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02443",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02464",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02469",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02471",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
           ]
         }
       ],
@@ -23412,6 +23490,1622 @@
         "es": "Ambos patrones son posibles. La forma progresiva puede expresar la actitud del hablante ante una conducta repetida; always por sí solo no decide el patrón.",
         "pt": "Os dois padrões são possíveis. A forma progressiva pode expressar a atitude do falante diante de um comportamento repetido; always sozinho não decide o padrão."
       }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "QUALITY & STATE · rótulos da composição",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02430",
+          "P02443",
+          "P02445",
+          "P02446",
+          "P02447",
+          "P02448",
+          "P02449",
+          "P02450",
+          "P02452",
+          "P02453",
+          "P02454",
+          "P02455",
+          "P02456",
+          "P02457"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02430",
+          "text": "QUALITY & STATE"
+        },
+        {
+          "source_id": "P02443",
+          "text": "QUALITY & STATENounsNumbersDemonstrativesPossessivesAdjectivesQUALITY & STATENounsNumbersDemonstrativesPossessivesAdjectives"
+        },
+        {
+          "source_id": "P02445",
+          "text": "QUALITY & STATE"
+        },
+        {
+          "source_id": "P02446",
+          "text": "Nouns"
+        },
+        {
+          "source_id": "P02447",
+          "text": "Numbers"
+        },
+        {
+          "source_id": "P02448",
+          "text": "Demonstratives"
+        },
+        {
+          "source_id": "P02449",
+          "text": "Possessives"
+        },
+        {
+          "source_id": "P02450",
+          "text": "Adjectives"
+        },
+        {
+          "source_id": "P02452",
+          "text": "QUALITY & STATE"
+        },
+        {
+          "source_id": "P02453",
+          "text": "Nouns"
+        },
+        {
+          "source_id": "P02454",
+          "text": "Numbers"
+        },
+        {
+          "source_id": "P02455",
+          "text": "Demonstratives"
+        },
+        {
+          "source_id": "P02456",
+          "text": "Possessives"
+        },
+        {
+          "source_id": "P02457",
+          "text": "Adjectives"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-PRONOUNS",
+      "type": "SOURCE_TEXT",
+      "title": "Personal Pronouns · texto extraído",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02461",
+          "P02464",
+          "P02471",
+          "P02473"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02461",
+          "text": " PERSONAL PRONOUNS"
+        },
+        {
+          "source_id": "P02464",
+          "text": "   Iyou"
+        },
+        {
+          "source_id": "P02471",
+          "text": "hesheit"
+        },
+        {
+          "source_id": "P02473",
+          "text": "wethey"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-ORDER",
+      "type": "SOURCE_TEXT",
+      "title": "Order of Sentences · To Be",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02476",
+          "P02478",
+          "P02480"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02476",
+          "text": " ORDER OF SENTENCES – TO BEI am an auxiliaryI am an auxiliary"
+        },
+        {
+          "source_id": "P02478",
+          "text": "I am an auxiliary"
+        },
+        {
+          "source_id": "P02480",
+          "text": "I am an auxiliary"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-ORDER-AFFIRMATIVE",
+      "type": "SOURCE_TABLE",
+      "title": "AFFIRMATIVE · quadro original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02482",
+          "P02483",
+          "P02484",
+          "P02485",
+          "P02486",
+          "P02487",
+          "P02488",
+          "P02489",
+          "P02490",
+          "P02491",
+          "P02492",
+          "P02493",
+          "P02494",
+          "P02495",
+          "P02496",
+          "P02497",
+          "P02498",
+          "P02499",
+          "P02500",
+          "P02501",
+          "P02502",
+          "P02503",
+          "P02504",
+          "P02505",
+          "P02506",
+          "P02507",
+          "P02508",
+          "P02509",
+          "P02510",
+          "P02511",
+          "P02512",
+          "P02513",
+          "P02514",
+          "P02515",
+          "P02516",
+          "P02517",
+          "P02518",
+          "P02519",
+          "P02520",
+          "P02521",
+          "P02522",
+          "P02523",
+          "P02524"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0017",
+      "source_row_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "source_rows": [
+        [
+          "AFFIRMATIVE"
+        ],
+        [
+          "P. Interrogativos",
+          "Verbo auxiliar",
+          "Sujeito",
+          "Verbo",
+          "Predicado"
+        ],
+        [
+          "",
+          "",
+          "I",
+          "am",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are",
+          ""
+        ],
+        [
+          "",
+          "",
+          "He",
+          "is",
+          ""
+        ],
+        [
+          "",
+          "",
+          "SheIt",
+          "isis",
+          "from Brazil."
+        ],
+        [
+          "",
+          "",
+          "We",
+          "are",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are",
+          ""
+        ],
+        [
+          "",
+          "",
+          "They",
+          "are",
+          ""
+        ]
+      ],
+      "source_header_rows": 2,
+      "mode": "AFFIRMATIVE",
+      "tense": "PRESENT",
+      "caption": "Células originais preservadas; rótulos de colunas e mesclagens exigem revisão. SheIt/isis e WhyWhere/Por queOnde são concatenações da extração, não novas palavras ou frases-modelo."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-ORDER-NEGATIVE",
+      "type": "SOURCE_TABLE",
+      "title": "NEGATIVE · quadro original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02525",
+          "P02526",
+          "P02527",
+          "P02528",
+          "P02529",
+          "P02530",
+          "P02531",
+          "P02532",
+          "P02533",
+          "P02534",
+          "P02535",
+          "P02536",
+          "P02537",
+          "P02538",
+          "P02539",
+          "P02540",
+          "P02541",
+          "P02542",
+          "P02543",
+          "P02544",
+          "P02545",
+          "P02546",
+          "P02547",
+          "P02548",
+          "P02549",
+          "P02550",
+          "P02551",
+          "P02552",
+          "P02553",
+          "P02554",
+          "P02555",
+          "P02556",
+          "P02557",
+          "P02558",
+          "P02559",
+          "P02560",
+          "P02561",
+          "P02562",
+          "P02563",
+          "P02564",
+          "P02565",
+          "P02566",
+          "P02567"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0017",
+      "source_row_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "source_rows": [
+        [
+          "NEGATIVE"
+        ],
+        [
+          "P. Interrogativos",
+          "Verbo auxiliar",
+          "Sujeito",
+          "Verbo",
+          "Predicado"
+        ],
+        [
+          "",
+          "",
+          "I",
+          "am not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "He",
+          "is not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "SheIt",
+          "is notis not",
+          "from Brazil."
+        ],
+        [
+          "",
+          "",
+          "We",
+          "are not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "They",
+          "are not",
+          ""
+        ]
+      ],
+      "source_header_rows": 2,
+      "mode": "NEGATIVE",
+      "tense": "PRESENT",
+      "caption": "Células originais preservadas; rótulos de colunas e mesclagens exigem revisão. SheIt/isis e WhyWhere/Por queOnde são concatenações da extração, não novas palavras ou frases-modelo."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-ORDER-INTERROGATIVE",
+      "type": "SOURCE_TABLE",
+      "title": "INTERROGATIVE · quadro original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02568",
+          "P02569",
+          "P02570",
+          "P02571",
+          "P02572",
+          "P02573",
+          "P02574",
+          "P02575",
+          "P02576",
+          "P02577",
+          "P02578",
+          "P02579",
+          "P02580",
+          "P02581",
+          "P02582",
+          "P02583",
+          "P02584",
+          "P02585",
+          "P02586",
+          "P02587",
+          "P02588",
+          "P02589",
+          "P02590",
+          "P02591",
+          "P02592",
+          "P02593",
+          "P02594",
+          "P02595",
+          "P02596",
+          "P02597",
+          "P02598",
+          "P02599",
+          "P02600",
+          "P02601",
+          "P02602",
+          "P02603",
+          "P02604",
+          "P02605",
+          "P02606",
+          "P02607",
+          "P02608",
+          "P02609",
+          "P02610",
+          "P02611",
+          "P02612",
+          "P02613",
+          "P02614",
+          "P02615",
+          "P02616",
+          "P02617",
+          "P02618",
+          "P02619",
+          "P02620",
+          "P02621",
+          "P02622",
+          "P02623",
+          "P02624",
+          "P02625",
+          "P02626",
+          "P02627",
+          "P02628",
+          "P02629",
+          "P02630",
+          "P02631",
+          "P02632",
+          "P02633",
+          "P02634",
+          "P02635",
+          "P02636",
+          "P02637",
+          "P02638",
+          "P02639",
+          "P02640",
+          "P02641",
+          "P02642",
+          "P02643",
+          "P02644",
+          "P02645",
+          "P02646",
+          "P02647",
+          "P02648",
+          "P02649",
+          "P02650",
+          "P02651",
+          "P02652",
+          "P02653",
+          "P02654"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0017",
+      "source_row_indices": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "source_rows": [
+        [
+          "INTERROGATIVE"
+        ],
+        [
+          "P. Interrogativos",
+          "Verbo auxiliar",
+          "Sujeito",
+          "Verbo",
+          "Predicado"
+        ],
+        [
+          "What",
+          "O que/que",
+          "Am Are Is Is Is Are Are Are",
+          "Iyou he she it we you they",
+          "",
+          ""
+        ],
+        [
+          "Which",
+          "Qual",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "WhyWhere",
+          "Por queOnde",
+          "",
+          "",
+          "",
+          "..."
+        ],
+        [
+          "When",
+          "Quando",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Who",
+          "Quem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Whose",
+          "De quem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How",
+          "Como",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How many",
+          "Quantos",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How much",
+          "Quanto",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How long",
+          "Período",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How far",
+          "Distância",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How often",
+          "Frequência",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How old",
+          "Idade",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "source_header_rows": 2,
+      "mode": "INTERROGATIVE",
+      "tense": "PRESENT",
+      "caption": "Células originais preservadas; rótulos de colunas e mesclagens exigem revisão. SheIt/isis e WhyWhere/Por queOnde são concatenações da extração, não novas palavras ou frases-modelo."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+      "type": "SOURCE_MODEL",
+      "title": "They are American · quatro formas",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02657",
+          "P02658",
+          "P02659",
+          "P02660"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02657",
+          "text": "They are American."
+        },
+        {
+          "source_id": "P02658",
+          "text": "They are not American."
+        },
+        {
+          "source_id": "P02659",
+          "text": "Are they American?"
+        },
+        {
+          "source_id": "P02660",
+          "text": "Where are they from?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+      "type": "SOURCE_MODEL",
+      "title": "She is angry · quatro formas",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02661",
+          "P02662",
+          "P02663",
+          "P02664"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02661",
+          "text": "She is angry."
+        },
+        {
+          "source_id": "P02662",
+          "text": "She is not angry."
+        },
+        {
+          "source_id": "P02663",
+          "text": "Is she angry?"
+        },
+        {
+          "source_id": "P02664",
+          "text": "Why is she angry?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+      "type": "SOURCE_MODEL",
+      "title": "Paul and Susan are here · quatro formas",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02665",
+          "P02666",
+          "P02667",
+          "P02668"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02665",
+          "text": "Paul and Susan are here."
+        },
+        {
+          "source_id": "P02666",
+          "text": "Paul and Susan are not here."
+        },
+        {
+          "source_id": "P02667",
+          "text": "Are Paul and Susan here?"
+        },
+        {
+          "source_id": "P02668",
+          "text": "Where are Paul and Susan?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+      "type": "SOURCE_MODEL",
+      "title": "They are there · quatro formas",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02669",
+          "P02670",
+          "P02671",
+          "P02672"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02669",
+          "text": "They are there."
+        },
+        {
+          "source_id": "P02670",
+          "text": "They are not there."
+        },
+        {
+          "source_id": "P02671",
+          "text": "Are they there?"
+        },
+        {
+          "source_id": "P02672",
+          "text": "Why are they there?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+      "type": "SOURCE_MODEL",
+      "title": "We are good students · quatro formas",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02673",
+          "P02674",
+          "P02675",
+          "P02676"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02673",
+          "text": "We are good students."
+        },
+        {
+          "source_id": "P02674",
+          "text": "We are not good students."
+        },
+        {
+          "source_id": "P02675",
+          "text": "Are we good students?"
+        },
+        {
+          "source_id": "P02676",
+          "text": "What kind of students are we?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+      "type": "SOURCE_MODEL",
+      "title": "He is young · quatro formas",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02677",
+          "P02678",
+          "P02679",
+          "P02680"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02677",
+          "text": "He is young."
+        },
+        {
+          "source_id": "P02678",
+          "text": "He is not young."
+        },
+        {
+          "source_id": "P02679",
+          "text": "Is he young?"
+        },
+        {
+          "source_id": "P02680",
+          "text": "How old is he?"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02443",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02443",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02443"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:QUALITY:P02443",
+        "paragraph_id": "P02443",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "ee3e53e8d74535f5c82cec27ac0251d911b0b661230089902994bb5ce7eae900",
+        "xml_src": "assets/source-xml/quality-P02443.xml",
+        "object_names": [
+          "Group 68",
+          "Rectangle 70",
+          "Freeform 75",
+          "Freeform 80",
+          "Freeform 84",
+          "Freeform 89",
+          "Straight Arrow Connector 90",
+          "Straight Arrow Connector 91",
+          "Straight Arrow Connector 92",
+          "Straight Arrow Connector 93",
+          "Straight Arrow Connector 94",
+          "Freeform 95",
+          "Straight Arrow Connector 96",
+          "Freeform 97",
+          "Straight Arrow Connector 98",
+          "Rectangle 99",
+          "Rectangle 101",
+          "Rectangle 102",
+          "Rectangle 103",
+          "Rectangle 105",
+          "Rectangle 106"
+        ],
+        "container_extents": [
+          {
+            "cx": "6066790",
+            "cy": "5686425"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02464",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02464",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02464"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:QUALITY:P02464",
+        "paragraph_id": "P02464",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "6479d91f3fb417a1ca0513c34eb0a45025928b4c8e43956f21c6fa7414d2cb0b",
+        "xml_src": "assets/source-xml/quality-P02464.xml",
+        "object_names": [
+          "image224.jpg",
+          "image226.jpg",
+          "image157.jpg"
+        ],
+        "container_extents": [
+          {
+            "cx": "1128395",
+            "cy": "1245911"
+          },
+          {
+            "cx": "1477645",
+            "cy": "1405254"
+          },
+          {
+            "cx": "1098550",
+            "cy": "2524124"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0071",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02464"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0071"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0071",
+        "src": "assets/master-quality-image140.jpg",
+        "source_filename": "image140.jpg",
+        "width": 247,
+        "height": 273,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "bb87abcc71b522a7c1edbaffb346343c104aba4f155b122d5fcc035d5ee30a1e",
+        "original_width_mm": 31.34,
+        "original_height_mm": 34.61,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Boy pointing toward himself.",
+          "es": "Niño señalándose a sí mismo.",
+          "pt": "Menino apontando para si."
+        }
+      },
+      "caption": "Original preservado: 247 × 273 px; 31.34 × 34.61 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0072",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02464"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0072"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0072",
+        "src": "assets/master-quality-image141.jpg",
+        "source_filename": "image141.jpg",
+        "width": 356,
+        "height": 338,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6a9dcd25c41078a734ee672f6c1c2675aaf1a451bb0aeb03da800a647f25e9ab",
+        "original_width_mm": 41.05,
+        "original_height_mm": 39.03,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Hand pointing toward the viewer.",
+          "es": "Mano señalando hacia quien observa.",
+          "pt": "Mão apontando para quem observa."
+        }
+      },
+      "caption": "Original preservado: 356 × 338 px; 41.05 × 39.03 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0073",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02464"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0073"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0073",
+        "src": "assets/master-quality-image142.jpg",
+        "source_filename": "image142.jpg",
+        "width": 148,
+        "height": 341,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "bf5f001ddcf4251db8db90fafdf1d99d0ac813cf815712e00516e11b1583b3ac",
+        "original_width_mm": 30.52,
+        "original_height_mm": 70.11,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Female character with a sword.",
+          "es": "Personaje femenino con espada.",
+          "pt": "Personagem feminina com espada."
+        }
+      },
+      "caption": "Original preservado: 148 × 341 px; 30.52 × 70.11 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02469",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02469",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02469"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:QUALITY:P02469",
+        "paragraph_id": "P02469",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "0c8da850038239e743829cd97bd25ef53915d4c4755930664781be64884ed5ee",
+        "xml_src": "assets/source-xml/quality-P02469.xml",
+        "object_names": [
+          "image227.jpg"
+        ],
+        "container_extents": [
+          {
+            "cx": "1221581",
+            "cy": "1221581"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0074",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02469"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0074"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0074",
+        "src": "assets/master-quality-image143.jpg",
+        "source_filename": "image143.jpg",
+        "width": 225,
+        "height": 225,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "4a923f174d09e7c5b37455628b8a1685ffbea740b01607e2ac7cd5f44381544e",
+        "original_width_mm": 33.93,
+        "original_height_mm": 33.93,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Justice League emblem.",
+          "es": "Emblema de la Liga de la Justicia.",
+          "pt": "Emblema da Liga da Justiça."
+        }
+      },
+      "caption": "Original preservado: 225 × 225 px; 33.93 × 33.93 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02471",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02471",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02471"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:QUALITY:P02471",
+        "paragraph_id": "P02471",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "e359252b8446f409a67eeb42685a9e66968f0e5f26c779edd2a3b99dd5ee8117",
+        "xml_src": "assets/source-xml/quality-P02471.xml",
+        "object_names": [
+          "image211.jpg",
+          "image215.jpg",
+          "image203.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "1112520",
+            "cy": "2216150"
+          },
+          {
+            "cx": "2476500",
+            "cy": "1863089"
+          },
+          {
+            "cx": "2082164",
+            "cy": "1706880"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0075",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02471"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0075"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0075",
+        "src": "assets/master-quality-image144.jpg",
+        "source_filename": "image144.jpg",
+        "width": 159,
+        "height": 317,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "7fc0038433bb3511e93147c73d8d16e52ec2ee2bd0993c51067651afe339e22e",
+        "original_width_mm": 30.9,
+        "original_height_mm": 61.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Male character with a sword.",
+          "es": "Personaje masculino con espada.",
+          "pt": "Personagem masculina com espada."
+        }
+      },
+      "caption": "Original preservado: 159 × 317 px; 30.9 × 61.56 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0076",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02471"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0076"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0076",
+        "src": "assets/master-quality-image145.jpg",
+        "source_filename": "image145.jpg",
+        "width": 259,
+        "height": 194,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "82adc67d2203c29a93cc3dd7146fc4036395e5b64cc51651ad0fdea89cce19d2",
+        "original_width_mm": 68.79,
+        "original_height_mm": 51.75,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Group of superhero characters.",
+          "es": "Grupo de personajes de superhéroes.",
+          "pt": "Grupo de personagens de super-heróis."
+        }
+      },
+      "caption": "Original preservado: 259 × 194 px; 68.79 × 51.75 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0077",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02471"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0077"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0077",
+        "src": "assets/master-quality-image146.png",
+        "source_filename": "image146.png",
+        "width": 427,
+        "height": 350,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "285cfe5cdc47f8365da8ef35007ec666280f6eaedb1a548fa51fe606c29640eb",
+        "original_width_mm": 57.84,
+        "original_height_mm": 47.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Two figures talking while seated.",
+          "es": "Dos figuras conversando sentadas.",
+          "pt": "Duas figuras conversando sentadas."
+        }
+      },
+      "caption": "Original preservado: 427 × 350 px; 57.84 × 47.41 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02476",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02476"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:QUALITY:P02476",
+        "paragraph_id": "P02476",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "5364c2963a0285286ed3bb8078ccc759aaa93e878a9f704bc549d7f2ed961899",
+        "xml_src": "assets/source-xml/quality-P02476.xml",
+        "object_names": [
+          "image202.png",
+          "Group 113",
+          "Rectangle 114",
+          "Freeform 115",
+          "Rectangle 116"
+        ],
+        "container_extents": [
+          {
+            "cx": "1187530",
+            "cy": "628269"
+          },
+          {
+            "cx": "2666365",
+            "cy": "1001395"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0078",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02476"
+        ],
+        "note": "Fonte preservada. Fragmentos de desenhos não são frases recompostas; mesclagens e escala física em revisão."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:QUALITY:I0078"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0078",
+        "src": "assets/master-tools-image89.png",
+        "source_filename": "image89.png",
+        "width": 734,
+        "height": 388,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5d7382bde1cc9675110674e97e4392a93a6be152b2c7e6660376b80116ea1894",
+        "original_width_mm": 32.99,
+        "original_height_mm": 17.45,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Original BE teaching diagram.",
+          "es": "Diagrama didáctico original de BE.",
+          "pt": "Diagrama didático original de BE."
+        }
+      },
+      "caption": "Original preservado: 734 × 388 px; 32.99 × 17.45 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
     }
   ],
   "terms": [],
@@ -23498,7 +25192,20 @@
       "chapter_completeness": "PARTIAL",
       "next_pending": "P02430 QUALITY & STATE"
     },
-    "report": "data/coverage-report.json"
+    "report": "data/coverage-report.json",
+    "quality_state": {
+      "bounds": [
+        "P02430",
+        "P02682"
+      ],
+      "paragraphs_classified": 253,
+      "source_units": 25,
+      "tables": 1,
+      "figure_occurrences": 8,
+      "vector_compositions": 5,
+      "next_pending": "P02683 To be in your hand",
+      "chapter_completeness": "PARTIAL"
+    }
   },
   "editorial_issues": [
     {
@@ -23808,6 +25515,44 @@
           "P02080"
         ],
         "observation": "A numeração ocupa a primeira coluna sob QW. Não reinterpretar os números como Question Words; a revisão gráfica deverá separar identificação e função sintática.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:QUALITY:001",
+        "source_ids": [
+          "P02443",
+          "P02464",
+          "P02471",
+          "P02476"
+        ],
+        "observation": "Extração agrega rótulos e alternativas de caixas de texto. Não deduplicar como se fossem frases sem conferir a composição original.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:QUALITY:002",
+        "source_ids": [
+          "P02505",
+          "P02506",
+          "P02507",
+          "P02508",
+          "P02548",
+          "P02549",
+          "P02550",
+          "P02551",
+          "P02587",
+          "P02588",
+          "P02589",
+          "P02590"
+        ],
+        "observation": "Mesclagens concatenam She/It, is/is e Why/Where. Preservar células e conferir recomposição; não pronunciar concatenações como um termo.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:QUALITY:003",
+        "source_ids": [
+          "P02680"
+        ],
+        "observation": "How old is he? pergunta idade; não constitui transformação mecânica de todo sentido de young. Exemplo original preservado.",
         "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
       }
     ],

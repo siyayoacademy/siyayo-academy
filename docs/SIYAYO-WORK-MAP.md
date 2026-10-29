@@ -1,6 +1,6 @@
 # SIYAYO Work Map — Master VIP
 
-Checkpoint ativo desta branch: **JAGUAR-MVP-11.2-HOMOLOGATED**, 29/10/2026.
+Checkpoint ativo desta branch: **JAGUAR-MVP-12-QUALITY-STATE**, 29/10/2026.
 
 Este mapa acompanha exclusivamente a branch `jaguar/master-vip-modular-site-print-20261026`. O Work Map geral permanece na branch do Explorer; não substituímos seu checkpoint nem copiamos sua arquitetura.
 
@@ -19,13 +19,13 @@ Professor aprovou o padrão visual e confirmou áudio funcional nos cartões rev
 | HOW TO CHECK | Reutilizar testes já concluídos; verificar o delta: integridade do novo trecho, idioma, referências, gabarito isolado e seleção de impressão. Reabrir auditoria somente por mudança, falha ou divergência observada. |
 | HOW TO SPEAK | Cartão textual inteiro clicável e operável por teclado; sem botões repetir/parar. Novo clique cancela a leitura anterior. EN/ES/PT corretos; sem autoplay ou leitura automática de respostas fechadas. |
 
-O registro de apresentação v1 é um snapshot técnico anterior à aprovação; seu campo histórico homologated=false não prevalece sobre a homologação de escopo registrada no checkpoint atual. O registro modular aponta para esse estado vigente.
+O registro de apresentação v1.1 distingue pattern_homologated=true (padrão aprovado) de homologated=false (corpus completo e prova física ainda pendentes). O checkpoint registra o escopo vigente.
 
 ## Prioridade e próximo GO
 
 **Prioridade primária: integrar a apostila inteira ao site com rapidez e rastreabilidade, usando o padrão homologado.** Novos refinamentos visuais ficam para seu momento, salvo defeitos que bloqueiem leitura, integridade ou navegação.
 
-Próximo ELO executável: **MVP12 — P02430 QUALITY & STATE**. Delimitar o próximo bloco da fonte já auditada, importar seus textos em módulos e registrar relações, lacunas e cobertura. Não iniciar outra arquitetura para realizar essa importação. Catálogo atual 0.9.0: 374 unidades; cobertura textual 10,2245%, não confundir arquitetura pronta com corpus completo.
+Próximo ELO executável: **MVP13 — P02683 To be in your hand**. Delimitar o próximo bloco da fonte já auditada, importar seus textos em módulos e registrar relações, lacunas e cobertura. Não iniciar outra arquitetura para realizar essa importação. Catálogo atual 0.10.0: 399 unidades; cobertura textual 10,6841%, não confundir arquitetura pronta com corpus completo.
 
 Circuito de cada lote: Corpus Master VIP → Site interativo → HOW TO DO → HOW TO RECORD → HOW TO SHOW → conferência/homologação. Entrega deve fechar origem, exibição, navegação, speech aplicável e seleção print; pendências editoriais são explícitas. GEAR, Multiverse 360° e novas experiences são consumidores futuros desse circuito, não integrações já realizadas.
 
@@ -38,3 +38,8 @@ Circuito de cada lote: Corpus Master VIP → Site interativo → HOW TO DO → H
 5. Registrar somente decisões novas e resultados reais.
 
 Sem alterações em main, PR #3, contratos avaliativos, D1 ou produção. Impressão física A4 permanece pendente. Supervisão contínua não é declarada instalada por este registro.
+
+
+## Resultado MVP12
+
+25 unidades QUALITY & STATE importadas; 151 novos alvos speech. Fonte P02430–P02682, tabela T0017, oito ocorrências de imagem e cinco composições XML. [Evidências e limites](MASTER-VIP-MVP12-QUALITY-STATE.md). Novo conteúdo implementado/testado localmente; revisão humana e composição visual pendentes. Padrão homologado anterior preservado.

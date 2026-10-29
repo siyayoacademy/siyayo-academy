@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.9.0",
+  "catalog_version": "0.10.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -454,6 +454,79 @@
           "unit_ids": [
             "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:1704",
             "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:2381"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-INTRO",
+          "title": "Original · Quality & State",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-PRONOUNS",
+          "title": "Original · Personal Pronouns",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:PRONOUNS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER",
+          "title": "Original · Order of Sentences",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:ORDER"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER-AFFIRMATIVE",
+          "title": "Original · AFFIRMATIVE",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER-NEGATIVE",
+          "title": "Original · NEGATIVE",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-ORDER-INTERROGATIVE",
+          "title": "Original · INTERROGATIVE",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-EXAMPLES",
+          "title": "Original · Frases e perguntas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+            "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:QUALITY-VISUALS",
+          "title": "Original · Composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02443",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02464",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02469",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02471",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+            "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
+            "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
           ]
         }
       ]
@@ -951,5 +1024,24 @@
     "work_map": "SIYAYO-WORK-MAP.md",
     "checkpoint": "master-vip-jaguar-checkpoint.json",
     "xpr": "master-vip-xpr-handoff.json"
+  },
+  "quality_state": {
+    "bounds": [
+      "P02430",
+      "P02682"
+    ],
+    "paragraphs_classified": 253,
+    "source_units": 25,
+    "tables": 1,
+    "figure_occurrences": 8,
+    "vector_compositions": 5,
+    "next_pending": "P02683 To be in your hand",
+    "chapter_completeness": "PARTIAL",
+    "evidence": "MASTER-VIP-MVP12-QUALITY-STATE.md",
+    "states": {
+      "implemented": true,
+      "tested_locally": true,
+      "human_content_homologated": false
+    }
   }
 }

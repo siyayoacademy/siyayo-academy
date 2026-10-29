@@ -1,5 +1,5 @@
 {
-  "id": "JAGUAR-MVP-11.2-HOMOLOGATED",
+  "id": "JAGUAR-MVP-12-QUALITY-STATE",
   "date": "2026-10-29",
   "timezone": "America/Sao_Paulo",
   "repository": "siyayoacademy/siyayo-academy",
@@ -8,7 +8,7 @@
     "cfb3e696ea3a3f23c4db02fb4d0c89c797b85af7",
     "4f585b014502700984f211ee70345b4440a4898e"
   ],
-  "authorization_evidence": "Professor: Perfeito homologado!! Registrar em mapas HOW TO DO / HOW TO SHOW e priorizar integração integral da apostila.",
+  "authorization_evidence": "Professor: OK EXCELENTE GO NEXT ELO GO",
   "states": {
     "implemented": true,
     "tested_locally": true,
@@ -17,15 +17,15 @@
     "physical_a4_homologated": false,
     "integrated_into_explorer": false
   },
-  "catalog_version": "0.9.0",
-  "units": 374,
-  "speech_targets": 1540,
-  "source_text_coverage_percent": 10.2245,
+  "catalog_version": "0.10.0",
+  "units": 399,
+  "speech_targets": 1691,
+  "source_text_coverage_percent": 10.684105551837709,
   "next_go": {
-    "elo": "MVP12",
-    "source_start": "P02430",
-    "topic": "QUALITY & STATE",
-    "action": "Delimitar próximo bloco da fonte e importar conteúdo original em unidades identificadas, usando o renderizador homologado; atualizar mapa, relações e cobertura no mesmo lote."
+    "elo": "MVP13",
+    "source_start": "P02683",
+    "topic": "To be in your hand",
+    "action": "Delimitar e importar próximo bloco na arquitetura homologada, atualizar mapas e cobertura."
   },
   "known_limits": [
     {
@@ -58,5 +58,21 @@
     "modules": "master-vip-modular-registry.v0.2.json",
     "presentation": "master-vip-presentation-registry.v1.json",
     "xpr_handoff": "master-vip-xpr-handoff.json"
+  },
+  "previous_checkpoint": {
+    "id": "JAGUAR-MVP-11.2-HOMOLOGATED",
+    "record_commit": "f22f975e1f9e8649aa39bae3d5935969b1e83063"
+  },
+  "implementation_base_commit": "f22f975e1f9e8649aa39bae3d5935969b1e83063",
+  "completed_elo": {
+    "elo": "MVP12",
+    "bounds": [
+      "P02430",
+      "P02682"
+    ],
+    "source_units": 25,
+    "evidence": "MASTER-VIP-MVP12-QUALITY-STATE.md",
+    "source_review": "PENDING",
+    "visual_composition": "PENDING"
   }
 }

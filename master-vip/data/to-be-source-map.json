@@ -3,8 +3,8 @@
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "bounds": {
     "first": "P01405",
-    "last": "P02393",
-    "next_heading": "P02394 Action Versus Movement"
+    "last": "P02682",
+    "next_heading": "P02683 To be in your hand"
   },
   "paragraphs": [
     {
@@ -11913,6 +11913,3020 @@
       "disposition": "BLANK_LAYOUT",
       "unit_ids": [],
       "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02430",
+      "xpath": "/w:document/w:body/w:p[427]",
+      "text": "QUALITY & STATE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02431",
+      "xpath": "/w:document/w:body/w:p[428]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02432",
+      "xpath": "/w:document/w:body/w:p[429]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02433",
+      "xpath": "/w:document/w:body/w:p[430]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02434",
+      "xpath": "/w:document/w:body/w:p[431]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02435",
+      "xpath": "/w:document/w:body/w:p[432]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02436",
+      "xpath": "/w:document/w:body/w:p[433]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02437",
+      "xpath": "/w:document/w:body/w:p[434]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02438",
+      "xpath": "/w:document/w:body/w:p[435]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02439",
+      "xpath": "/w:document/w:body/w:p[436]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02440",
+      "xpath": "/w:document/w:body/w:p[437]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02441",
+      "xpath": "/w:document/w:body/w:p[438]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02442",
+      "xpath": "/w:document/w:body/w:p[439]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02443",
+      "xpath": "/w:document/w:body/w:p[440]",
+      "text": "QUALITY & STATENounsNumbersDemonstrativesPossessivesAdjectivesQUALITY & STATENounsNumbersDemonstrativesPossessivesAdjectives",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO",
+        "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02443"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:001"
+      ]
+    },
+    {
+      "source_id": "P02444",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02445",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[15]/wps:txbx/w:txbxContent/w:p",
+      "text": "QUALITY & STATE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02446",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[16]/wps:txbx/w:txbxContent/w:p",
+      "text": "Nouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02447",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[17]/wps:txbx/w:txbxContent/w:p",
+      "text": "Numbers",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02448",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[18]/wps:txbx/w:txbxContent/w:p",
+      "text": "Demonstratives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02449",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[19]/wps:txbx/w:txbxContent/w:p",
+      "text": "Possessives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02450",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[20]/wps:txbx/w:txbxContent/w:p",
+      "text": "Adjectives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02451",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02452",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "QUALITY & STATE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02453",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[3]/v:textbox/w:txbxContent/w:p",
+      "text": "Nouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02454",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[4]/v:textbox/w:txbxContent/w:p",
+      "text": "Numbers",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02455",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[5]/v:textbox/w:txbxContent/w:p",
+      "text": "Demonstratives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02456",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[6]/v:textbox/w:txbxContent/w:p",
+      "text": "Possessives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02457",
+      "xpath": "/w:document/w:body/w:p[440]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[7]/v:textbox/w:txbxContent/w:p",
+      "text": "Adjectives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02458",
+      "xpath": "/w:document/w:body/w:p[441]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02459",
+      "xpath": "/w:document/w:body/w:p[442]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02460",
+      "xpath": "/w:document/w:body/w:p[443]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02461",
+      "xpath": "/w:document/w:body/w:p[444]",
+      "text": " PERSONAL PRONOUNS",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:PRONOUNS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02462",
+      "xpath": "/w:document/w:body/w:p[445]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02463",
+      "xpath": "/w:document/w:body/w:p[446]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02464",
+      "xpath": "/w:document/w:body/w:p[447]",
+      "text": "   Iyou",
+      "style": "(default)",
+      "drawing_count": 3,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+        "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02464",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:001"
+      ]
+    },
+    {
+      "source_id": "P02465",
+      "xpath": "/w:document/w:body/w:p[448]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02466",
+      "xpath": "/w:document/w:body/w:p[449]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02467",
+      "xpath": "/w:document/w:body/w:p[450]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02468",
+      "xpath": "/w:document/w:body/w:p[451]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02469",
+      "xpath": "/w:document/w:body/w:p[452]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02469",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02470",
+      "xpath": "/w:document/w:body/w:p[453]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02471",
+      "xpath": "/w:document/w:body/w:p[454]",
+      "text": "hesheit",
+      "style": "(default)",
+      "drawing_count": 3,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+        "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02471",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:001"
+      ]
+    },
+    {
+      "source_id": "P02472",
+      "xpath": "/w:document/w:body/w:p[455]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02473",
+      "xpath": "/w:document/w:body/w:p[456]",
+      "text": "wethey",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:PRONOUNS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02474",
+      "xpath": "/w:document/w:body/w:p[457]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02475",
+      "xpath": "/w:document/w:body/w:p[458]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02476",
+      "xpath": "/w:document/w:body/w:p[459]",
+      "text": " ORDER OF SENTENCES – TO BEI am an auxiliaryI am an auxiliary",
+      "style": "(default)",
+      "drawing_count": 3,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:ORDER",
+        "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
+        "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:001"
+      ]
+    },
+    {
+      "source_id": "P02477",
+      "xpath": "/w:document/w:body/w:p[459]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02478",
+      "xpath": "/w:document/w:body/w:p[459]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[3]/wps:txbx/w:txbxContent/w:p",
+      "text": "I am an auxiliary",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:ORDER"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02479",
+      "xpath": "/w:document/w:body/w:p[459]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02480",
+      "xpath": "/w:document/w:body/w:p[459]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "I am an auxiliary",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:ORDER"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02481",
+      "xpath": "/w:document/w:body/w:p[460]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02482",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[1]/w:tc/w:p",
+      "text": "AFFIRMATIVE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02483",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[2]/w:tc[1]/w:p",
+      "text": "P. Interrogativos",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02484",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[2]/w:tc[2]/w:p",
+      "text": "Verbo auxiliar",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02485",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[2]/w:tc[3]/w:p",
+      "text": "Sujeito",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02486",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[2]/w:tc[4]/w:p",
+      "text": "Verbo",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02487",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[2]/w:tc[5]/w:p",
+      "text": "Predicado",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02488",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[3]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02489",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[3]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02490",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[3]/w:tc[3]/w:p",
+      "text": "I",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02491",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[3]/w:tc[4]/w:p",
+      "text": "am",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02492",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[3]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02493",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[4]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02494",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[4]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02495",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[4]/w:tc[3]/w:p",
+      "text": "You",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02496",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[4]/w:tc[4]/w:p",
+      "text": "are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02497",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[4]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02498",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[5]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02499",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[5]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02500",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[5]/w:tc[3]/w:p",
+      "text": "He",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02501",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[5]/w:tc[4]/w:p",
+      "text": "is",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02502",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[5]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02503",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02504",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02505",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[3]/w:p[1]",
+      "text": "She",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02506",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[3]/w:p[2]",
+      "text": "It",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02507",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[4]/w:p[1]",
+      "text": "is",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02508",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[4]/w:p[2]",
+      "text": "is",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02509",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[6]/w:tc[5]/w:p",
+      "text": "from Brazil.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02510",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[7]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02511",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[7]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02512",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[7]/w:tc[3]/w:p",
+      "text": "We",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02513",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[7]/w:tc[4]/w:p",
+      "text": "are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02514",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[7]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02515",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[8]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02516",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[8]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02517",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[8]/w:tc[3]/w:p",
+      "text": "You",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02518",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[8]/w:tc[4]/w:p",
+      "text": "are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02519",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[8]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02520",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[9]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02521",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[9]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02522",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[9]/w:tc[3]/w:p",
+      "text": "They",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02523",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[9]/w:tc[4]/w:p",
+      "text": "are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02524",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[9]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02525",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[10]/w:tc/w:p",
+      "text": "NEGATIVE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02526",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[11]/w:tc[1]/w:p",
+      "text": "P. Interrogativos",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02527",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[11]/w:tc[2]/w:p",
+      "text": "Verbo auxiliar",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02528",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[11]/w:tc[3]/w:p",
+      "text": "Sujeito",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02529",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[11]/w:tc[4]/w:p",
+      "text": "Verbo",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02530",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[11]/w:tc[5]/w:p",
+      "text": "Predicado",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02531",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[12]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02532",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[12]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02533",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[12]/w:tc[3]/w:p",
+      "text": "I",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02534",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[12]/w:tc[4]/w:p",
+      "text": "am not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02535",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[12]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02536",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[13]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02537",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[13]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02538",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[13]/w:tc[3]/w:p",
+      "text": "You",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02539",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[13]/w:tc[4]/w:p",
+      "text": "are not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02540",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[13]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02541",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[14]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02542",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[14]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02543",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[14]/w:tc[3]/w:p",
+      "text": "He",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02544",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[14]/w:tc[4]/w:p",
+      "text": "is not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02545",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[14]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02546",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02547",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02548",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[3]/w:p[1]",
+      "text": "She",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02549",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[3]/w:p[2]",
+      "text": "It",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02550",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[4]/w:p[1]",
+      "text": "is not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02551",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[4]/w:p[2]",
+      "text": "is not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02552",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[15]/w:tc[5]/w:p",
+      "text": "from Brazil.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02553",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[16]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02554",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[16]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02555",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[16]/w:tc[3]/w:p",
+      "text": "We",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02556",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[16]/w:tc[4]/w:p",
+      "text": "are not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02557",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[16]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02558",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[17]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02559",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[17]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02560",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[17]/w:tc[3]/w:p",
+      "text": "You",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02561",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[17]/w:tc[4]/w:p",
+      "text": "are not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02562",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[17]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02563",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[18]/w:tc[1]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02564",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[18]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02565",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[18]/w:tc[3]/w:p",
+      "text": "They",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02566",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[18]/w:tc[4]/w:p",
+      "text": "are not",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02567",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[18]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02568",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[19]/w:tc/w:p",
+      "text": "INTERROGATIVE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02569",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[20]/w:tc[1]/w:p",
+      "text": "P. Interrogativos",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02570",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[20]/w:tc[2]/w:p",
+      "text": "Verbo auxiliar",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02571",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[20]/w:tc[3]/w:p",
+      "text": "Sujeito",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02572",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[20]/w:tc[4]/w:p",
+      "text": "Verbo",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02573",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[20]/w:tc[5]/w:p",
+      "text": "Predicado",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02574",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[1]/w:p",
+      "text": "What",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02575",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[2]/w:p",
+      "text": "O que/que",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02576",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[3]/w:p",
+      "text": "Am Are Is Is Is Are Are Are",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02577",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[4]/w:p[1]",
+      "text": "I",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02578",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[4]/w:p[2]",
+      "text": "you he she it we you they",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02579",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02580",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[21]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02581",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[22]/w:tc[1]/w:p",
+      "text": "Which",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02582",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[22]/w:tc[2]/w:p",
+      "text": "Qual",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02583",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[22]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02584",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[22]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02585",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[22]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02586",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[22]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02587",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[1]/w:p[1]",
+      "text": "Why",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02588",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[1]/w:p[2]",
+      "text": "Where",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02589",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[2]/w:p[1]",
+      "text": "Por que",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02590",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[2]/w:p[2]",
+      "text": "Onde",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:002"
+      ]
+    },
+    {
+      "source_id": "P02591",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02592",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02593",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02594",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[23]/w:tc[6]/w:p",
+      "text": "...",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02595",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[24]/w:tc[1]/w:p",
+      "text": "When",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02596",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[24]/w:tc[2]/w:p",
+      "text": "Quando",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02597",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[24]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02598",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[24]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02599",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[24]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02600",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[24]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02601",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[25]/w:tc[1]/w:p",
+      "text": "Who",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02602",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[25]/w:tc[2]/w:p",
+      "text": "Quem",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02603",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[25]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02604",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[25]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02605",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[25]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02606",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[25]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02607",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[26]/w:tc[1]/w:p",
+      "text": "Whose",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02608",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[26]/w:tc[2]/w:p",
+      "text": "De quem",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02609",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[26]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02610",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[26]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02611",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[26]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02612",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[26]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02613",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[27]/w:tc[1]/w:p",
+      "text": "How",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02614",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[27]/w:tc[2]/w:p",
+      "text": "Como",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02615",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[27]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02616",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[27]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02617",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[27]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02618",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[27]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02619",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[28]/w:tc[1]/w:p",
+      "text": "How many",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02620",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[28]/w:tc[2]/w:p",
+      "text": "Quantos",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02621",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[28]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02622",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[28]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02623",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[28]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02624",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[28]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02625",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[29]/w:tc[1]/w:p",
+      "text": "How much",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02626",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[29]/w:tc[2]/w:p",
+      "text": "Quanto",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02627",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[29]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02628",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[29]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02629",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[29]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02630",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[29]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02631",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[30]/w:tc[1]/w:p",
+      "text": "How long",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02632",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[30]/w:tc[2]/w:p",
+      "text": "Período",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02633",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[30]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02634",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[30]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02635",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[30]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02636",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[30]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02637",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[31]/w:tc[1]/w:p",
+      "text": "How far",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02638",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[31]/w:tc[2]/w:p",
+      "text": "Distância",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02639",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[31]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02640",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[31]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02641",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[31]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02642",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[31]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02643",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[32]/w:tc[1]/w:p",
+      "text": "How often",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02644",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[32]/w:tc[2]/w:p",
+      "text": "Frequência",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02645",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[32]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02646",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[32]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02647",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[32]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02648",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[32]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02649",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[33]/w:tc[1]/w:p",
+      "text": "How old",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02650",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[33]/w:tc[2]/w:p",
+      "text": "Idade",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02651",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[33]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02652",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[33]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02653",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[33]/w:tc[5]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02654",
+      "xpath": "/w:document/w:body/w:tbl[17]/w:tr[33]/w:tc[6]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02655",
+      "xpath": "/w:document/w:body/w:p[461]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02656",
+      "xpath": "/w:document/w:body/w:p[462]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02657",
+      "xpath": "/w:document/w:body/w:p[463]",
+      "text": "They are American.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02658",
+      "xpath": "/w:document/w:body/w:p[464]",
+      "text": "They are not American.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02659",
+      "xpath": "/w:document/w:body/w:p[465]",
+      "text": "Are they American?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02660",
+      "xpath": "/w:document/w:body/w:p[466]",
+      "text": "Where are they from?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02661",
+      "xpath": "/w:document/w:body/w:p[467]",
+      "text": "She is angry.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02662",
+      "xpath": "/w:document/w:body/w:p[468]",
+      "text": "She is not angry.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02663",
+      "xpath": "/w:document/w:body/w:p[469]",
+      "text": "Is she angry?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02664",
+      "xpath": "/w:document/w:body/w:p[470]",
+      "text": "Why is she angry?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02665",
+      "xpath": "/w:document/w:body/w:p[471]",
+      "text": "Paul and Susan are here.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02666",
+      "xpath": "/w:document/w:body/w:p[472]",
+      "text": "Paul and Susan are not here.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02667",
+      "xpath": "/w:document/w:body/w:p[473]",
+      "text": "Are Paul and Susan here?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02668",
+      "xpath": "/w:document/w:body/w:p[474]",
+      "text": "Where are Paul and Susan?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02669",
+      "xpath": "/w:document/w:body/w:p[475]",
+      "text": "They are there.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02670",
+      "xpath": "/w:document/w:body/w:p[476]",
+      "text": "They are not there.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02671",
+      "xpath": "/w:document/w:body/w:p[477]",
+      "text": "Are they there?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02672",
+      "xpath": "/w:document/w:body/w:p[478]",
+      "text": "Why are they there?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02673",
+      "xpath": "/w:document/w:body/w:p[479]",
+      "text": "We are good students.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02674",
+      "xpath": "/w:document/w:body/w:p[480]",
+      "text": "We are not good students.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02675",
+      "xpath": "/w:document/w:body/w:p[481]",
+      "text": "Are we good students?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02676",
+      "xpath": "/w:document/w:body/w:p[482]",
+      "text": "What kind of students are we?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02677",
+      "xpath": "/w:document/w:body/w:p[483]",
+      "text": "He is young.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02678",
+      "xpath": "/w:document/w:body/w:p[484]",
+      "text": "He is not young.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02679",
+      "xpath": "/w:document/w:body/w:p[485]",
+      "text": "Is he young?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02680",
+      "xpath": "/w:document/w:body/w:p[486]",
+      "text": "How old is he?",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:QUALITY:003"
+      ]
+    },
+    {
+      "source_id": "P02681",
+      "xpath": "/w:document/w:body/w:p[487]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02682",
+      "xpath": "/w:document/w:body/w:p[488]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
     }
   ],
   "tables": [
@@ -13292,9 +16306,603 @@
         ]
       ],
       "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"ae\"/><w:tblW w:w=\"10069\" w:type=\"dxa\"/><w:tblInd w:w=\"894\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0017",
+      "xpath": "/w:document/w:body/w:tbl[17]",
+      "rows": 33,
+      "grid_columns": 6,
+      "cells": [
+        [
+          "AFFIRMATIVE"
+        ],
+        [
+          "P. Interrogativos",
+          "Verbo auxiliar",
+          "Sujeito",
+          "Verbo",
+          "Predicado"
+        ],
+        [
+          "",
+          "",
+          "I",
+          "am",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are",
+          ""
+        ],
+        [
+          "",
+          "",
+          "He",
+          "is",
+          ""
+        ],
+        [
+          "",
+          "",
+          "SheIt",
+          "isis",
+          "from Brazil."
+        ],
+        [
+          "",
+          "",
+          "We",
+          "are",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are",
+          ""
+        ],
+        [
+          "",
+          "",
+          "They",
+          "are",
+          ""
+        ],
+        [
+          "NEGATIVE"
+        ],
+        [
+          "P. Interrogativos",
+          "Verbo auxiliar",
+          "Sujeito",
+          "Verbo",
+          "Predicado"
+        ],
+        [
+          "",
+          "",
+          "I",
+          "am not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "He",
+          "is not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "SheIt",
+          "is notis not",
+          "from Brazil."
+        ],
+        [
+          "",
+          "",
+          "We",
+          "are not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "You",
+          "are not",
+          ""
+        ],
+        [
+          "",
+          "",
+          "They",
+          "are not",
+          ""
+        ],
+        [
+          "INTERROGATIVE"
+        ],
+        [
+          "P. Interrogativos",
+          "Verbo auxiliar",
+          "Sujeito",
+          "Verbo",
+          "Predicado"
+        ],
+        [
+          "What",
+          "O que/que",
+          "Am Are Is Is Is Are Are Are",
+          "Iyou he she it we you they",
+          "",
+          ""
+        ],
+        [
+          "Which",
+          "Qual",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "WhyWhere",
+          "Por queOnde",
+          "",
+          "",
+          "",
+          "..."
+        ],
+        [
+          "When",
+          "Quando",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Who",
+          "Quem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Whose",
+          "De quem",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How",
+          "Como",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How many",
+          "Quantos",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How much",
+          "Quanto",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How long",
+          "Período",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How far",
+          "Distância",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How often",
+          "Frequência",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "How old",
+          "Idade",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"af\"/><w:tblW w:w=\"9972\" w:type=\"dxa\"/><w:tblInd w:w=\"894\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"4\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0071",
+        "src": "assets/master-quality-image140.jpg",
+        "source_filename": "image140.jpg",
+        "width": 247,
+        "height": 273,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "bb87abcc71b522a7c1edbaffb346343c104aba4f155b122d5fcc035d5ee30a1e",
+        "original_width_mm": 31.34,
+        "original_height_mm": 34.61,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Boy pointing toward himself.",
+          "es": "Niño señalándose a sí mismo.",
+          "pt": "Menino apontando para si."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0071",
+        "paragraph_id": "P02464",
+        "asset_id": "MVP:ASSET:QUALITY:I0071",
+        "source_use": {
+          "id": "I0071",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[447]/w:r[1]/w:drawing/wp:inline/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId144",
+          "target": "media/image140.jpg",
+          "width_mm": 31.34,
+          "height_mm": 34.61,
+          "effective_ppi_x": 200.2,
+          "description": {
+            "id": "1234",
+            "name": "image224.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0072",
+        "src": "assets/master-quality-image141.jpg",
+        "source_filename": "image141.jpg",
+        "width": 356,
+        "height": 338,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6a9dcd25c41078a734ee672f6c1c2675aaf1a451bb0aeb03da800a647f25e9ab",
+        "original_width_mm": 41.05,
+        "original_height_mm": 39.03,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Hand pointing toward the viewer.",
+          "es": "Mano señalando hacia quien observa.",
+          "pt": "Mão apontando para quem observa."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0072",
+        "paragraph_id": "P02464",
+        "asset_id": "MVP:ASSET:QUALITY:I0072",
+        "source_use": {
+          "id": "I0072",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[447]/w:r[5]/w:drawing/wp:inline/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId145",
+          "target": "media/image141.jpg",
+          "width_mm": 41.05,
+          "height_mm": 39.03,
+          "effective_ppi_x": 220.3,
+          "description": {
+            "id": "1235",
+            "name": "image226.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0073",
+        "src": "assets/master-quality-image142.jpg",
+        "source_filename": "image142.jpg",
+        "width": 148,
+        "height": 341,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "bf5f001ddcf4251db8db90fafdf1d99d0ac813cf815712e00516e11b1583b3ac",
+        "original_width_mm": 30.52,
+        "original_height_mm": 70.11,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Female character with a sword.",
+          "es": "Personaje femenino con espada.",
+          "pt": "Personagem feminina com espada."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0073",
+        "paragraph_id": "P02464",
+        "asset_id": "MVP:ASSET:QUALITY:I0073",
+        "source_use": {
+          "id": "I0073",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[447]/w:r[7]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId146",
+          "target": "media/image142.jpg",
+          "width_mm": 30.52,
+          "height_mm": 70.11,
+          "effective_ppi_x": 123.2,
+          "description": {
+            "id": "164",
+            "name": "image157.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0074",
+        "src": "assets/master-quality-image143.jpg",
+        "source_filename": "image143.jpg",
+        "width": 225,
+        "height": 225,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "4a923f174d09e7c5b37455628b8a1685ffbea740b01607e2ac7cd5f44381544e",
+        "original_width_mm": 33.93,
+        "original_height_mm": 33.93,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Justice League emblem.",
+          "es": "Emblema de la Liga de la Justicia.",
+          "pt": "Emblema da Liga da Justiça."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0074",
+        "paragraph_id": "P02469",
+        "asset_id": "MVP:ASSET:QUALITY:I0074",
+        "source_use": {
+          "id": "I0074",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[452]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId147",
+          "target": "media/image143.jpg",
+          "width_mm": 33.93,
+          "height_mm": 33.93,
+          "effective_ppi_x": 168.4,
+          "description": {
+            "id": "1236",
+            "name": "image227.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0075",
+        "src": "assets/master-quality-image144.jpg",
+        "source_filename": "image144.jpg",
+        "width": 159,
+        "height": 317,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "7fc0038433bb3511e93147c73d8d16e52ec2ee2bd0993c51067651afe339e22e",
+        "original_width_mm": 30.9,
+        "original_height_mm": 61.56,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Male character with a sword.",
+          "es": "Personaje masculino con espada.",
+          "pt": "Personagem masculina com espada."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0075",
+        "paragraph_id": "P02471",
+        "asset_id": "MVP:ASSET:QUALITY:I0075",
+        "source_use": {
+          "id": "I0075",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[454]/w:r[6]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId148",
+          "target": "media/image144.jpg",
+          "width_mm": 30.9,
+          "height_mm": 61.56,
+          "effective_ppi_x": 130.7,
+          "description": {
+            "id": "212",
+            "name": "image211.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0076",
+        "src": "assets/master-quality-image145.jpg",
+        "source_filename": "image145.jpg",
+        "width": 259,
+        "height": 194,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "82adc67d2203c29a93cc3dd7146fc4036395e5b64cc51651ad0fdea89cce19d2",
+        "original_width_mm": 68.79,
+        "original_height_mm": 51.75,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Group of superhero characters.",
+          "es": "Grupo de personajes de superhéroes.",
+          "pt": "Grupo de personagens de super-heróis."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0076",
+        "paragraph_id": "P02471",
+        "asset_id": "MVP:ASSET:QUALITY:I0076",
+        "source_use": {
+          "id": "I0076",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[454]/w:r[7]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId149",
+          "target": "media/image145.jpg",
+          "width_mm": 68.79,
+          "height_mm": 51.75,
+          "effective_ppi_x": 95.6,
+          "description": {
+            "id": "217",
+            "name": "image215.jpg"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0077",
+        "src": "assets/master-quality-image146.png",
+        "source_filename": "image146.png",
+        "width": 427,
+        "height": 350,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "285cfe5cdc47f8365da8ef35007ec666280f6eaedb1a548fa51fe606c29640eb",
+        "original_width_mm": 57.84,
+        "original_height_mm": 47.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Two figures talking while seated.",
+          "es": "Dos figuras conversando sentadas.",
+          "pt": "Duas figuras conversando sentadas."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0077",
+        "paragraph_id": "P02471",
+        "asset_id": "MVP:ASSET:QUALITY:I0077",
+        "source_use": {
+          "id": "I0077",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[454]/w:r[8]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId150",
+          "target": "media/image146.png",
+          "width_mm": 57.84,
+          "height_mm": 47.41,
+          "effective_ppi_x": 187.5,
+          "description": {
+            "id": "207",
+            "name": "image203.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:QUALITY:I0078",
+        "src": "assets/master-tools-image89.png",
+        "source_filename": "image89.png",
+        "width": 734,
+        "height": 388,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5d7382bde1cc9675110674e97e4392a93a6be152b2c7e6660376b80116ea1894",
+        "original_width_mm": 32.99,
+        "original_height_mm": 17.45,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "alt": {
+          "en": "Original BE teaching diagram.",
+          "es": "Diagrama didáctico original de BE.",
+          "pt": "Diagrama didático original de BE."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:QUALITY:I0078",
+        "paragraph_id": "P02476",
+        "asset_id": "MVP:ASSET:QUALITY:I0078",
+        "source_use": {
+          "id": "I0078",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[459]/w:r[2]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId94",
+          "target": "media/image89.png",
+          "width_mm": 32.99,
+          "height_mm": 17.45,
+          "effective_ppi_x": 565.2,
+          "description": {
+            "id": "210",
+            "name": "image202.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    }
+  ],
   "issues": [
     {
       "id": "MVP:REVIEW:TB:001",
@@ -13382,6 +16990,44 @@
         "P02080"
       ],
       "observation": "A numeração ocupa a primeira coluna sob QW. Não reinterpretar os números como Question Words; a revisão gráfica deverá separar identificação e função sintática.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:QUALITY:001",
+      "source_ids": [
+        "P02443",
+        "P02464",
+        "P02471",
+        "P02476"
+      ],
+      "observation": "Extração agrega rótulos e alternativas de caixas de texto. Não deduplicar como se fossem frases sem conferir a composição original.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:QUALITY:002",
+      "source_ids": [
+        "P02505",
+        "P02506",
+        "P02507",
+        "P02508",
+        "P02548",
+        "P02549",
+        "P02550",
+        "P02551",
+        "P02587",
+        "P02588",
+        "P02589",
+        "P02590"
+      ],
+      "observation": "Mesclagens concatenam She/It, is/is e Why/Where. Preservar células e conferir recomposição; não pronunciar concatenações como um termo.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:QUALITY:003",
+      "source_ids": [
+        "P02680"
+      ],
+      "observation": "How old is he? pergunta idade; não constitui transformação mecânica de todo sentido de young. Exemplo original preservado.",
       "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
     }
   ],
@@ -13536,7 +17182,32 @@
     "MVP:UNIT:TO-BE:SOURCE:SIXTY:EX:60",
     "MVP:UNIT:TO-BE:SOURCE:SIXTY:KEY:60",
     "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:1704",
-    "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:2381"
+    "MVP:UNIT:TO-BE:SOURCE:SIXTY:VISUAL:2381",
+    "MVP:UNIT:TO-BE:QUALITY:INTRO",
+    "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+    "MVP:UNIT:TO-BE:QUALITY:ORDER",
+    "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+    "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+    "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+    "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+    "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+    "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+    "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+    "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+    "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+    "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02443",
+    "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02464",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+    "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02469",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+    "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02471",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+    "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
   ],
   "status": "STRUCTURALLY_MAPPED_VISUAL_REVIEW_PENDING",
   "chapter_completeness": "PARTIAL",
@@ -13599,6 +17270,139 @@
       ],
       "reproduction_status": "PENDING",
       "raster_references": 0
+    },
+    {
+      "id": "MVP:VISUAL:QUALITY:P02443",
+      "paragraph_id": "P02443",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "ee3e53e8d74535f5c82cec27ac0251d911b0b661230089902994bb5ce7eae900",
+      "xml_src": "assets/source-xml/quality-P02443.xml",
+      "object_names": [
+        "Group 68",
+        "Rectangle 70",
+        "Freeform 75",
+        "Freeform 80",
+        "Freeform 84",
+        "Freeform 89",
+        "Straight Arrow Connector 90",
+        "Straight Arrow Connector 91",
+        "Straight Arrow Connector 92",
+        "Straight Arrow Connector 93",
+        "Straight Arrow Connector 94",
+        "Freeform 95",
+        "Straight Arrow Connector 96",
+        "Freeform 97",
+        "Straight Arrow Connector 98",
+        "Rectangle 99",
+        "Rectangle 101",
+        "Rectangle 102",
+        "Rectangle 103",
+        "Rectangle 105",
+        "Rectangle 106"
+      ],
+      "container_extents": [
+        {
+          "cx": "6066790",
+          "cy": "5686425"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:QUALITY:P02464",
+      "paragraph_id": "P02464",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "6479d91f3fb417a1ca0513c34eb0a45025928b4c8e43956f21c6fa7414d2cb0b",
+      "xml_src": "assets/source-xml/quality-P02464.xml",
+      "object_names": [
+        "image224.jpg",
+        "image226.jpg",
+        "image157.jpg"
+      ],
+      "container_extents": [
+        {
+          "cx": "1128395",
+          "cy": "1245911"
+        },
+        {
+          "cx": "1477645",
+          "cy": "1405254"
+        },
+        {
+          "cx": "1098550",
+          "cy": "2524124"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:QUALITY:P02469",
+      "paragraph_id": "P02469",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "0c8da850038239e743829cd97bd25ef53915d4c4755930664781be64884ed5ee",
+      "xml_src": "assets/source-xml/quality-P02469.xml",
+      "object_names": [
+        "image227.jpg"
+      ],
+      "container_extents": [
+        {
+          "cx": "1221581",
+          "cy": "1221581"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:QUALITY:P02471",
+      "paragraph_id": "P02471",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "e359252b8446f409a67eeb42685a9e66968f0e5f26c779edd2a3b99dd5ee8117",
+      "xml_src": "assets/source-xml/quality-P02471.xml",
+      "object_names": [
+        "image211.jpg",
+        "image215.jpg",
+        "image203.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "1112520",
+          "cy": "2216150"
+        },
+        {
+          "cx": "2476500",
+          "cy": "1863089"
+        },
+        {
+          "cx": "2082164",
+          "cy": "1706880"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:QUALITY:P02476",
+      "paragraph_id": "P02476",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "5364c2963a0285286ed3bb8078ccc759aaa93e878a9f704bc549d7f2ed961899",
+      "xml_src": "assets/source-xml/quality-P02476.xml",
+      "object_names": [
+        "image202.png",
+        "Group 113",
+        "Rectangle 114",
+        "Freeform 115",
+        "Rectangle 116"
+      ],
+      "container_extents": [
+        {
+          "cx": "1187530",
+          "cy": "628269"
+        },
+        {
+          "cx": "2666365",
+          "cy": "1001395"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
     }
   ],
   "exercise_answer_links": [
@@ -14862,5 +18666,15 @@
       ],
       "mode": "NEGATIVE"
     }
+  ],
+  "covered_ranges": [
+    [
+      "P01405",
+      "P02393"
+    ],
+    [
+      "P02430",
+      "P02682"
+    ]
   ]
 }

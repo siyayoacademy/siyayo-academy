@@ -1,7 +1,7 @@
 {
   "id": "MVP:PRESENTATION:REGISTRY",
-  "version": "1.0.0",
-  "catalog_version": "0.9.0",
+  "version": "1.1.0",
+  "catalog_version": "0.10.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "contract": "whole-card-click; decorative gold speaker left; no repeat/stop buttons",
   "normalization": "Decorative glyphs and whitespace only; original text unchanged",
@@ -9,11 +9,17 @@
     "implemented": true,
     "tested_locally": true,
     "homologated": false,
+    "pattern_homologated": true,
+    "pattern_reference_commits": [
+      "cfb3e696ea3a3f23c4db02fb4d0c89c797b85af7",
+      "4f585b014502700984f211ee70345b4440a4898e"
+    ],
+    "homologation_scope": "Inherited card pattern approved; full current corpus and physical A4 pending",
     "integrated_into_explorer": false
   },
-  "unit_count": 374,
-  "textual_unit_count": 372,
-  "target_count": 1540,
+  "unit_count": 399,
+  "textual_unit_count": 392,
+  "target_count": 1691,
   "units": [
     {
       "id": "MVP:UNIT:EXISTENCE:CONCEPT:001",
@@ -16041,6 +16047,1585 @@
           "role": "example",
           "sentence_id": "MVP:SENT:MOVEMENT:ALWAYS-PROGRESS",
           "text_sha256": "5528c6d4da65e0707507eefcd27480bf0b1bfeba8dc098717abeb8a71eaff9e9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02430",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "345c6103240887baa4651b3da5fc45317843452f1352eda74fc7771662f7cf28"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "345c6103240887baa4651b3da5fc45317843452f1352eda74fc7771662f7cf28"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 15,
+          "end": 20,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 20,
+          "end": 27,
+          "text_sha256": "b0640f0fc46040e7139bbbc43e0a75dc914c6cab74f344cee2c597f1d6b476df"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:3:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 27,
+          "end": 41,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:4:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:4",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 41,
+          "end": 52,
+          "text_sha256": "c0cf5a1df0a59a0d127057a5a07baa20d886f83df5e5362962c740d6d7075651"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:5:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:5",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 52,
+          "end": 62,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:6:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:6",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 62,
+          "end": 77,
+          "text_sha256": "345c6103240887baa4651b3da5fc45317843452f1352eda74fc7771662f7cf28"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:7:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:7",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 77,
+          "end": 82,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:8:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:8",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 82,
+          "end": 89,
+          "text_sha256": "b0640f0fc46040e7139bbbc43e0a75dc914c6cab74f344cee2c597f1d6b476df"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:9:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:9",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 89,
+          "end": 103,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:10:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:10",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 103,
+          "end": 114,
+          "text_sha256": "c0cf5a1df0a59a0d127057a5a07baa20d886f83df5e5362962c740d6d7075651"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:1:11:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:1:11",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02443",
+          "start": 114,
+          "end": 124,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02445",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "345c6103240887baa4651b3da5fc45317843452f1352eda74fc7771662f7cf28"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02446",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02447",
+          "start": 0,
+          "end": 7,
+          "text_sha256": "b0640f0fc46040e7139bbbc43e0a75dc914c6cab74f344cee2c597f1d6b476df"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:5:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02448",
+          "start": 0,
+          "end": 14,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:6:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:6:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02449",
+          "start": 0,
+          "end": 11,
+          "text_sha256": "c0cf5a1df0a59a0d127057a5a07baa20d886f83df5e5362962c740d6d7075651"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:7:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:7:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02450",
+          "start": 0,
+          "end": 10,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:8:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:8:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02452",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "345c6103240887baa4651b3da5fc45317843452f1352eda74fc7771662f7cf28"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:9:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:9:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02453",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:10:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:10:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02454",
+          "start": 0,
+          "end": 7,
+          "text_sha256": "b0640f0fc46040e7139bbbc43e0a75dc914c6cab74f344cee2c597f1d6b476df"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:11:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:11:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02455",
+          "start": 0,
+          "end": 14,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:12:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:12:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02456",
+          "start": 0,
+          "end": 11,
+          "text_sha256": "c0cf5a1df0a59a0d127057a5a07baa20d886f83df5e5362962c740d6d7075651"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:INTRO:BLOCK:source:13:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:INTRO",
+          "key": "source:13:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02457",
+          "start": 0,
+          "end": 10,
+          "text_sha256": "a47426d0da6f720e18e0c68e4310e658cd87875e1132d3fcfd030080de2dfd7b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02461",
+          "start": 0,
+          "end": 18,
+          "text_sha256": "97d067d5a4b7c07c4ee119b0c638506928c441e79dabf4430a1c12232904fec1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02464",
+          "start": 3,
+          "end": 4,
+          "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02464",
+          "start": 4,
+          "end": 7,
+          "text_sha256": "bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02471",
+          "start": 0,
+          "end": 2,
+          "text_sha256": "372f7e2fd2d01ce2a1d71dc072acbba4c6fd25a1087cd7f153f4ec0ce37e1ede"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:2:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:2:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02471",
+          "start": 2,
+          "end": 5,
+          "text_sha256": "2cda85e504e155f30a40f1f1cc4e83f3f8ec178033f6b6170cc9381f5e4f9d3d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:2:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:2:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02471",
+          "start": 5,
+          "end": 7,
+          "text_sha256": "2ad8a7049d7c5511ac254f5f51fe70a046ebd884729056f0fe57f5160d467153"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02473",
+          "start": 0,
+          "end": 2,
+          "text_sha256": "dc7c811b9561739d9b75bb3e9e1715970a868834e62251b0b9ca02e74d0f42c9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS:BLOCK:source:3:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:PRONOUNS",
+          "key": "source:3:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02473",
+          "start": 2,
+          "end": 6,
+          "text_sha256": "151e58a831306903b282edb477bb6c4b713887cdd2b0353c84aff6f43da8e95d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:ORDER:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02476",
+          "start": 1,
+          "end": 27,
+          "text_sha256": "cf51455a7d8b6857260ddbedb0e9ee1bd44cf3173a67b349c66ba8993fad6582"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:ORDER:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02476",
+          "start": 27,
+          "end": 44,
+          "text_sha256": "9953753d682c5308c7997aa434bdba8c9faa70ad0ec686df103b9d8a3f90ee64"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:ORDER:BLOCK:source:0:3:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+          "key": "source:0:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02476",
+          "start": 44,
+          "end": 61,
+          "text_sha256": "9953753d682c5308c7997aa434bdba8c9faa70ad0ec686df103b9d8a3f90ee64"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:ORDER:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02478",
+          "start": 0,
+          "end": 17,
+          "text_sha256": "9953753d682c5308c7997aa434bdba8c9faa70ad0ec686df103b9d8a3f90ee64"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:ORDER:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:ORDER",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02480",
+          "start": 0,
+          "end": 17,
+          "text_sha256": "9953753d682c5308c7997aa434bdba8c9faa70ad0ec686df103b9d8a3f90ee64"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:2:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:2:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:2:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:2:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ab6db599234d2636659cba1aa191bd014c3867d5cfade98ff694785c20c28fc6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:3:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:3:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:3:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:3:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ba78973ddcf98d4e5369f5e722d681d94f5106895e5d6cf6fa3ca8240fabdc14"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:4:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:4:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "30efdfb52ff67f80dab7cb89dcfe0eec8412966cfe58324993674b4616d6bd11"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:4:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:4:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "fa51fd49abf67705d6a35d18218c115ff5633aec1f9ebfdc9d5d4956416f57f6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:5:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:5:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "d602e91d93c835ee2aa640ccffe314c61328ea2c1dbc45bec4277a9e94f91206"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:5:2:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:5:2:1",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "555c7b8b3856c5f4e5d6cd2ec93e4fc54678c49fd0d972d02608fab3ee7b37b3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:5:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:5:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "fa51fd49abf67705d6a35d18218c115ff5633aec1f9ebfdc9d5d4956416f57f6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:5:3:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:5:3:1",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "fa51fd49abf67705d6a35d18218c115ff5633aec1f9ebfdc9d5d4956416f57f6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:5:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:5:4:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "58f3bdaaee3253a5ae50b78cd222c1480d84b5b7356fdeca51fa7f9c0ec43fd1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:6:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:6:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:6:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:6:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ba78973ddcf98d4e5369f5e722d681d94f5106895e5d6cf6fa3ca8240fabdc14"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:7:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:7:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:7:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:7:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ba78973ddcf98d4e5369f5e722d681d94f5106895e5d6cf6fa3ca8240fabdc14"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:8:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:8:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a32efbd9d674211ecaba948acc1fd45f09e0872bd30687bd2077ce8b95199d55"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE:BLOCK:cell:8:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:AFFIRMATIVE",
+          "key": "cell:8:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ba78973ddcf98d4e5369f5e722d681d94f5106895e5d6cf6fa3ca8240fabdc14"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:2:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:2:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:2:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:2:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "34c6fb1ad91538ba3a0db54b566d6187372657d6c095308b1319d817d4c59b34"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:3:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:3:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:3:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:3:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "dc49b334fa9faecc02c731bdbc00a870d24e802b12fd6b6380c73368ca44038a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:4:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:4:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "30efdfb52ff67f80dab7cb89dcfe0eec8412966cfe58324993674b4616d6bd11"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:4:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:4:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "e1bf1560b1c243362a27812b338fbb98bb4b23c4c1f39ee86feb80645dc1deaf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:5:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:5:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "d602e91d93c835ee2aa640ccffe314c61328ea2c1dbc45bec4277a9e94f91206"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:5:2:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:5:2:1",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "555c7b8b3856c5f4e5d6cd2ec93e4fc54678c49fd0d972d02608fab3ee7b37b3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:5:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:5:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "e1bf1560b1c243362a27812b338fbb98bb4b23c4c1f39ee86feb80645dc1deaf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:5:3:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:5:3:1",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "e1bf1560b1c243362a27812b338fbb98bb4b23c4c1f39ee86feb80645dc1deaf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:5:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:5:4:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "58f3bdaaee3253a5ae50b78cd222c1480d84b5b7356fdeca51fa7f9c0ec43fd1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:6:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:6:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "f3fe997b8d1ce8187681a84a35ee34efa871dd7ed39df22ac2d9b2b5d745220a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:6:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:6:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "dc49b334fa9faecc02c731bdbc00a870d24e802b12fd6b6380c73368ca44038a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:7:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:7:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:7:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:7:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "dc49b334fa9faecc02c731bdbc00a870d24e802b12fd6b6380c73368ca44038a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:8:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:8:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a32efbd9d674211ecaba948acc1fd45f09e0872bd30687bd2077ce8b95199d55"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE:BLOCK:cell:8:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:NEGATIVE",
+          "key": "cell:8:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "dc49b334fa9faecc02c731bdbc00a870d24e802b12fd6b6380c73368ca44038a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:2:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:2:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "f8cf83a76a98df2dd4799b4d0d4f6ffc9af9a3a72d8648f94ca7cdea4b52fde7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:2:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:2:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a81bee71b79614dd99d965ff81a1c3469fdcc35ac9135bab0b2db1e8700d9841"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:2:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:2:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "7a1c02fcf0ac4a145fbf7a15192742af553ecb01d52f9d859a592663d4e23e2a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:2:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:2:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:2:3:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:2:3:1",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "d22d00c73fe5c949bc476949253428869fbc09b5e4b75705f9048d0f37dc270f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:3:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:3:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "29b44be64bedf09b64503de19e77703ac3954ad1798bb480872f28cbb8b80e99"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:3:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:3:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "02b57f4f09d00b5550745ed0b474fb8fc9647dfbbcc2c2be9e97d92ae19942f9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:4:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:4:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "d3ae14a50bfe463f804c73c9fd16e88c36bf5a0bf4a56f98ae696a91eb2de149"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:4:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:4:0:1",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "1daaa38f33cd860e9710c74ef1ebbb00af9f348ad0e991b94bba044a61ece936"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:4:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:4:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "9d05af37a9f33a3ee302af1c9fcb407240ddf802a85281a6a6603c69057956e2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:4:1:1:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:4:1:1",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "8431766c440b2c459a6ae4c1709538e59b20cab49a2621af144f17b6dcb0be89"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:5:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:5:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "cf9c7aa24a26aac4f0ec4b6395cbfdcc055677c3dac87bd6af898bccd66d4e17"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:5:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:5:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "9f8f7fa3a50f98a2d87bd82545773f25fa8a1878db8c62a6b13139d12cd24aef"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:6:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:6:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "c17b94b8c9394d40151ba4078f384f0bfe77936d258bc2029bd8b857685cd3f1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:6:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:6:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ea0be612ab4884ca6ee482d4006e9c7eb207bb59a8e894ad12c3e82c9e3a17cb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:7:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:7:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "969dc128a5003d35bd1d1afc7a2cc07fc4cfddcc7779072b867e9e24904b5819"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:7:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:7:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "d465614117ab9c8bfd661dd4135bebe66b3b4eec573508eccab82d57c6fd89fe"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:8:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:8:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "7470bd3bc2abfe497af32ee4ccf845cb2aba14878d55c970d38d99629ab5d6a3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:8:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:8:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "3cc49087b41cbaf2c572648629a421ec1078fbfe8e8811e0d5cfff536371f496"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:9:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:9:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "e2a6ff2c78fdb163d02c7b5c66431cab9b1b418470219eb4e342b0324dfab14f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:9:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:9:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "9244945d396752a9657eea567e76db78e7b50e22e686eb2770eaec5c08824852"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:10:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:10:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "82fa6da4cd415265da3c7da3288771581d73bb7f1acfdbdf7a86b50bc93c07dc"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:10:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:10:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "82298b0b071f33fcc235fb503f8350a8a401a764ab2a6c816b38813d5624724d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:11:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:11:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "8ddab050d5e09f41adadfb7048c73b9d57263b0e7ef5fdad15979f0aa925cfab"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:11:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:11:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "162459d223dc72e52fff07a8dcf0a97de1a9e2920d6d734e263698d6a1253644"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:12:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:12:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "e03bfa8b89669bc754dd0375e9f90983710c13c9be33b1fd375c10517c117227"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:12:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:12:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "dfea8d0b070064dc7287c62b2ec4a68a1e5fd1f7b404d7f966214e625bae8b55"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:13:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:13:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "7710cdf129966891cd63315f6d538fb5a3bfd701f4ac9a4d37f5e0955abe9441"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:13:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:13:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "4ccef85f69f6e685b2ec8af5616ecabd00901505f4bd94e28c30009d3d62c627"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:14:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:14:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "a87244a25462f7546b24556b86c2520e05bdfd86a36a53c2cd974d668fb83e77"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE:BLOCK:cell:14:1:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:TABLE:INTERROGATIVE",
+          "key": "cell:14:1:0",
+          "lang": "pt",
+          "role": "example",
+          "source_table_id": "T0017",
+          "text_sha256": "ef9ed8873173c4659f7c3ac69e4607a290bb33a02b010994ab54f6834383fdb9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02657",
+          "start": 0,
+          "end": 18,
+          "text_sha256": "932ce658f4f8909135e53fcff0f29e30e4640c90ff2d7df5758a721d882b5b54"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02658",
+          "start": 0,
+          "end": 22,
+          "text_sha256": "7f7e12e6efa409fb8cd59adf4fcb3933e67c08e5780a66796c05452e46948b43"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02659",
+          "start": 0,
+          "end": 18,
+          "text_sha256": "d9ac2ebe1bacde38b7515a80ba90688cf88615f9de958bddf0f7556ce11a75d9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:01",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02660",
+          "start": 0,
+          "end": 20,
+          "text_sha256": "621d9f2a67bad152b1879993011d80e589e2f03b6dcc3919aa46d385715630ba"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02661",
+          "start": 0,
+          "end": 13,
+          "text_sha256": "58940e41470e1f8ff74e2810cd7d85d0958023b24a6c8974695e5107c01b69bd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02662",
+          "start": 0,
+          "end": 17,
+          "text_sha256": "07422c262fec4b4d95a44ae03d62189025ad22051e169b4669f499710b1d615f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02663",
+          "start": 0,
+          "end": 13,
+          "text_sha256": "dfae511a44b5b9a4f635b0c4dabd053f85fc77cbf5c605c2d966da4efe56ecd8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:02",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02664",
+          "start": 0,
+          "end": 17,
+          "text_sha256": "89b63b88598c65df7679a1483a8f8b9adbd106b5b3657a7c093f7c136be9ad83"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02665",
+          "start": 0,
+          "end": 24,
+          "text_sha256": "c2233c2f44db2afc9a9a16ddcb3db38f0f4e493b89df2e2f2472cf8e17021860"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02666",
+          "start": 0,
+          "end": 28,
+          "text_sha256": "a904188eed9c3e02b60813dce46cde03cea250030caeb40d252998a90451ba3e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02667",
+          "start": 0,
+          "end": 24,
+          "text_sha256": "b1b0a930e068fc9b09f27c872352b912b39abe16ab86223765777cb65b9be924"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:03",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02668",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "4ab2ea4b2c2010b0f37ce9a7c20594b588441b5b510968094d03ae906587f685"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02669",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "44693d6501f5b103090f844b1910d3e229cd01424c7618a9a375e955f9603939"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02670",
+          "start": 0,
+          "end": 19,
+          "text_sha256": "85e5b895ba74917b1351587c0aebfccacf0f87bafa9915f830bc0e7d3244ff35"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02671",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "cac502af2463836b9d261e677ac3bae0439e26b32dbdafa60551bbe0abb55d5a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:04",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02672",
+          "start": 0,
+          "end": 19,
+          "text_sha256": "92792b7e2d30010354fcaae4db7bba79b0f56c68dc7c7e846d114b99b1305b63"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02673",
+          "start": 0,
+          "end": 21,
+          "text_sha256": "9b6b9e6dcfe7f9684836a716caed5ab6d24e53aec4859992d7fe6429c402e3f9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02674",
+          "start": 0,
+          "end": 25,
+          "text_sha256": "c73c6f4147a40203c18a5327c3456cd237d018101c4d14de59b3e5b81ffa4106"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02675",
+          "start": 0,
+          "end": 21,
+          "text_sha256": "18f9e7a0888e03436a652a4ce53132c4a7a3ac649b75763d4a6bc5192917c9bc"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:05",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02676",
+          "start": 0,
+          "end": 29,
+          "text_sha256": "9bc82bcb79398d50583af034026f2c447ef199a8bcf09137db1107ec74be7b59"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02677",
+          "start": 0,
+          "end": 12,
+          "text_sha256": "ba651fa0117055e559c44afbac7a1af8d60c89959763d79e1804521732fc7e8d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02678",
+          "start": 0,
+          "end": 16,
+          "text_sha256": "2663f1ec9cf9f929b9ee90a9258699bd78723ed012fa7d91eb7df049cdd26e64"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02679",
+          "start": 0,
+          "end": 12,
+          "text_sha256": "654f53c2069fef6c22498746ca2c1464aa500556b9dad0bfb28edee9735f035c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:EXAMPLE:06",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "example",
+          "source_id": "P02680",
+          "start": 0,
+          "end": 14,
+          "text_sha256": "894e4fc03ba1d710ac19e2b12b6b4ef6747eda12d2aa2a4279dd108aac98b80f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02443",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02464",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "591dabd6427a987ca8dd2c02420919288fd988d34b82a3cb7915096eb0e60fac"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "d881ca631072baf56ec2cd05812e835cc0b15113ffade23a73be992f74ac19c3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0071",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "c1158cd837507345eaa7bcab864ebe571f0c25f06731bfb2c7eff231b8c07862"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "b8f69487051038747ed866fdcf55bc450fc1957e9a494221cadee3b136d44ecd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "a9b8170e3669328098f70b430ce09ded4505e3b300cbeff3fdd7e4624a57fe5b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0072",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "e28a92f02991bf75b83d91ee9f565b6d7839910896ee3e76a29053815aac1991"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "06b433528c9a8c1c6dec25b212bb3ed86010e04ce26ad78660e354406de6530b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "f3b457fc0c5528e94402494af4d45122115a15c6b5daf1c976617068802b89a6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0073",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "1050ba3930dd778c34165621a245b28c20db5c0869126553d0669e9e03b38fac"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02469",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "3cd7dd38d276b227bb111ce95974591e6dd2826ae7acd553c89e2d8f831628d4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "8d429b31d07c41ac62add68b54c00f4a711f0bff23b1984dda2f87b1db116ae7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0074",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "e1dfef63b98e9f86db66db485f492fd03c7a54a6cca31a60f104e5be7444b36a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02471",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "a49697bed0b1f18b37d132bc7b22ddbb9d4fb83558fcace43e38f960cf0e283d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "5835da18df49038954ea645f7386d2a4b598eb1c633d6394fe86cab644e89b82"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0075",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "abebe6b5e349e79e8a62b9ba8585bc14399ed4bbd5d7b8eec585ca967bad7b69"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "cd0f01061fd41965797c0f0f06f262aff1b0263fb437c98a5737977305c6e98d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "d6b06aedf4146531cb0e4199cfa53e893b4cc0dd69bd11beb9e19d2471005f6b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "297c766de72a6da5ea6c66774f8e94fedf643153d22242e90d91e4bfdc378be2"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "f81b7ddf5b5877b3c94529d7f4a81f5874b853b335cb8232017af4511753ff82"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "2a7e61db11092e5745d88cb7d76938d7af569a8d37f43f91be98bfc333b92b62"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "0f70b55a1bff9fb4f3afd323c313203682389b8c7012a94836741457d5490f9b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "2d7bef2be2b59130754640667ca3e3e7885ead219bbdc67c877d57c442e0d8f0"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "60bc870707167b06f90c3e3187a6cb75afce4ca70460703b545c9b90e69b9c99"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "b2fd52fee680f990dfd82ddfaf8b79312a9ac310fbc7e6eb4ae476ac8c82eff9"
         }
       ]
     }
