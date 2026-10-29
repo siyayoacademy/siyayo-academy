@@ -1,4 +1,6 @@
 # Master VIP The Ten Kinds of Words
+> Histórico do MVP02. O subsite avançou até o MVP10; consulte MASTER-VIP-CONTENT-PROGRESS.md para a cobertura atual e MASTER-VIP-READABILITY-SPEECH-PLAN.md para o plano de leitura/speech ainda não implementado.
+
 ## MVP 02 Mapeamento modular do subsite e da edição imprimível
 
 Data: 2026-10-26. Estado: ESPECIFICADO. Esta entrega registra arquitetura e backlog; não declara subsite, editor, compartilhamento, impressão ou habilidade instalados.
@@ -129,3 +131,21 @@ Estados independentes: ESPECIFICADO, IMPLEMENTADO, TESTADO_LOCALMENTE, PENDENTE,
 
 ## Resultado deste checkpoint
 Somente mapa e manifest publicados na branch própria. Subsite e habilidade continuam pendentes. Não houve alteração de main, PR 3, produção, avaliações, D1 ou watchlist. O próximo ELO concreto é fechar cobertura e implementar o shell modular com o piloto THERE + TO BE.
+
+
+## Atualização de entendimento — 29/10/2026 — leitura, submódulos e speech
+
+Solicitação em modo de indagação: registrar o plano, sem implementar a interface. Estado deste refinamento: ESPECIFICADO / PENDENTE.
+
+A hierarquia identificável já existe no catálogo 0.9.0 (374 unidades): capítulo → seção → unidade/slide e frases identificadas onde cadastradas. Complementar a identidade dos subblocos explicativos, exemplos e exercícios antes de torná-los Speech Cards. O mesmo componente especializado será reutilizado por instâncias com identidade própria, sem clonar conteúdo.
+
+Adotar como referência o padrão homologado Chapters/DNA Explorer/LINES/POSSIBLE RESPONSES: speaker SVG dourado à esquerda e frase centralizada, com alinhamento consistente entre os módulos. Reutilização exata do SVG/componente depende da identificação da versão de referência, não de desenho aproximado. O speech não está instalado na Master VIP por este registro.
+
+Ampliar especificamente a leitura dos textos explicativos para o usuário, diferenciando explicação, exemplo e exercício; proposta inicial de prova 20–22px para o corpo explicativo, sujeita à conferência. Não promover aumento global de fontes nem transpor a escala web ao A4.
+
+Plano em seis etapas: (1) identidade/referências; (2) hierarquia e leitura web; (3) componente de speech; (4) piloto THERE + TO BE; (5) aplicação aos módulos existentes; (6) impressão/acessibilidade e validação final. A etapa 5 poderá ser dividida em lotes; seis etapas não significam seis commits garantidos.
+
+Especificação completa: [Master VIP — leitura clara, submódulos e speech](MASTER-VIP-READABILITY-SPEECH-PLAN.md). Incluir controles por idioma/texto, ação explícita, ausência de sobreposição e leitura do gabarito somente quando escolhido. Preservar navegação livre, fonte original, IDs, impressão modular e independência de NICK/avaliação/D1.
+
+Este lote registra somente documentação. Nenhuma alteração de HTML/CSS/JS, catálogo, fontes, PDF, main, PR #3, D1 ou produção. Testes visuais, vozes, integração e homologação deste refinamento continuam pendentes.
+
