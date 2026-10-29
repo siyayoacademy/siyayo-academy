@@ -154,3 +154,8 @@ Este lote registra somente documentação. Nenhuma alteração de HTML/CSS/JS, c
 ## ELO MVP11 — leitura e speech modular
 
 Execução autorizada com a ressalva do cartão inteiro clicável, speaker dourado decorativo à esquerda e sem botões repetir/parar. Referência, dependências, estados e evidências em MASTER-VIP-MVP11-READABILITY-SPEECH.md. Registro de 374 unidades / 1.540 alvos em master-vip-presentation-registry.v1.json. Explicações 21px desktop/20px portrait; impressão independente. Testado localmente; homologação humana visual/áudio/A4 pendente. Catálogo e cobertura de conteúdo inalterados. Novos lotes devem adotar este contrato.
+
+
+## ELO MVP11.1 — tipos de palavras em duas linhas
+
+29/10/2026: professor confirmou áudio funcional nos cartões revisados. Confirmação humana parcial; não presume revisão integral de todas as vozes/blocos. Ajuste solicitado no WORD_TYPE_MAP: nome da classe com inicial maiúscula e demais letras minúsculas em EN/ES/PT, negrito e dois-pontos, quebra de linha explícita antes do exemplo. Aplicado pelo renderizador em tela e impressão; catálogo, IDs, alvos e comportamento speech preservados. Exemplo: Substantivo: / cenoura. Sem novos botões de áudio.
