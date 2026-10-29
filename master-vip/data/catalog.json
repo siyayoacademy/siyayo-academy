@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -291,7 +291,7 @@
     {
       "id": "MVP:CH:TO-BE",
       "title": "To Be",
-      "description": "Comparações, 60 exercícios/respostas, QUALITY & STATE, ordem das frases, perguntas e imagens originais. Capítulo parcial. To be in your hand e remissões Personal Pronouns incorporados. Cinquenta fichas de speaking e cinquenta itens de construção de frases incorporados. Possessivos: exemplos, família e construção de frases incorporados, com fragmentos em revisão.",
+      "description": "Comparações, 60 exercícios/respostas, QUALITY & STATE, ordem das frases, perguntas e imagens originais. Capítulo parcial. To be in your hand e remissões Personal Pronouns incorporados. Cinquenta fichas de speaking e cinquenta itens de construção de frases incorporados. Possessivos: exemplos, família e construção de frases incorporados, com fragmentos em revisão. Other Forms: PRESENT / PAST / FUTURE, will / going to e rótulos de linhas do tempo incorporados; recomposição visual pendente.",
       "keywords": [
         "TO-BE",
         "To Be",
@@ -343,7 +343,15 @@
         "theirs",
         "family",
         "genitivo",
-        "possessivos"
+        "possessivos",
+        "other forms",
+        "will",
+        "going to",
+        "was",
+        "were",
+        "timeline",
+        "linha do tempo",
+        "futuro"
       ],
       "status": "SOURCE_AND_STUDY",
       "sections": [
@@ -1223,6 +1231,60 @@
             "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0106",
             "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03905",
             "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:FORMS",
+          "title": "Original · To Be · outras formas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:FUTURE",
+          "title": "Original · Will / Going to",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+          "title": "Original · Linhas do tempo",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+          "title": "Original · Outras formas · composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03970",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03972",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03979",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03981",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03986",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03988",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03994",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03996",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04002",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04008",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016"
           ]
         }
       ],
@@ -43125,6 +43187,1469 @@
         }
       },
       "caption": "Original preservado: 376 × 188 px; 107.23 × 31.77 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:FORMS",
+      "type": "SOURCE_TEXT",
+      "title": "To Be — Other Forms",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03916"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03916",
+          "text": "To be – other forms"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:FORMS",
+      "type": "SOURCE_TABLE",
+      "title": "To Be · PRESENT / PAST / FUTURE",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03918",
+          "P03919",
+          "P03920",
+          "P03921",
+          "P03922",
+          "P03923",
+          "P03924",
+          "P03925",
+          "P03926",
+          "P03927",
+          "P03928",
+          "P03929",
+          "P03930",
+          "P03931",
+          "P03932",
+          "P03933",
+          "P03934",
+          "P03935",
+          "P03936",
+          "P03937",
+          "P03938",
+          "P03939",
+          "P03940",
+          "P03941",
+          "P03942",
+          "P03943",
+          "P03944",
+          "P03945",
+          "P03946",
+          "P03947",
+          "P03948"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_table_id": "T0024",
+      "source_row_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_rows": [
+        [
+          "PERSON / THING",
+          "PRESENT",
+          "PAST",
+          "FUTURE"
+        ],
+        [
+          "I",
+          "AM",
+          "WAS",
+          "W I L LB E"
+        ],
+        [
+          "☺",
+          "IS",
+          "",
+          ""
+        ],
+        [
+          "YOU",
+          "ARE",
+          "WERE",
+          ""
+        ],
+        [
+          "☺☺",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "source_header_rows": 1,
+      "caption": "Conteúdo das células originais preservado. A fonte usa células mescladas; vazios não são exercícios a completar. WILL BE aparece espaçado na extração; leitura desse fragmento aguarda revisão."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:FUTURE",
+      "type": "SOURCE_TEXT",
+      "title": "Tipos de futuro · orientação original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03956"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03956",
+          "text": "*TIPOS DE FUTURO:"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:FUTURE",
+      "type": "SOURCE_TEXT",
+      "title": "Will · explicação e exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03958",
+          "P03959",
+          "P03960"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03958",
+          "text": "Will - Decidido no momento da fala. Exemplos:"
+        },
+        {
+          "source_id": "P03959",
+          "text": "I will be back."
+        },
+        {
+          "source_id": "P03960",
+          "text": "I will be at home."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:FUTURE",
+      "type": "SOURCE_TEXT",
+      "title": "Going to · explicação e exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03962",
+          "P03963"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03962",
+          "text": "Going to - Planejado anteriormente. Exemplos:"
+        },
+        {
+          "source_id": "P03963",
+          "text": "I am going to be back in two weeks. I am going to be at home at that time."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "Timeline · referência original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03966"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03966",
+          "text": "TIMELINE"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "Kate · estudos e profissões · rótulos da fonte",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03971",
+          "P03975"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03971",
+          "text": "STUDENTSECRETARYEXECUTIVE"
+        },
+        {
+          "source_id": "P03975",
+          "text": "2000This year2025"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "Mike · profissões · rótulos da fonte",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03980",
+          "P03984"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03980",
+          "text": "BUILDERENGINEERBUSINESS MAN"
+        },
+        {
+          "source_id": "P03984",
+          "text": "1998This year2029"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "Charles & Sophia · relações · rótulos da fonte",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03987",
+          "P03991"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03987",
+          "text": "FRIENDSMARRIEDMARRIED"
+        },
+        {
+          "source_id": "P03991",
+          "text": "1990This year2032"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "This table · cores · rótulos da fonte",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03995",
+          "P03999"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P03995",
+          "text": "REDWHITEBLUE"
+        },
+        {
+          "source_id": "P03999",
+          "text": "2000This year2037"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "Madonna · características · rótulos da fonte",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04004",
+          "P04005",
+          "P04011"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P04004",
+          "text": "RED HEADEDBLOND"
+        },
+        {
+          "source_id": "P04005",
+          "text": "BALD"
+        },
+        {
+          "source_id": "P04011",
+          "text": "1989This year2028"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+      "type": "SOURCE_TEXT",
+      "title": "You · NOW · rótulos da fonte",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04019"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P04019",
+          "text": "NOW"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03970",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03970",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03970"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03970",
+        "paragraph_id": "P03970",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "8ddfc2f49471b59664357d090451c429f690cd4001865dd6849bb37db2465c02",
+        "xml_src": "assets/source-xml/other-forms-P03970.xml",
+        "object_names": [
+          "image174.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "613435",
+            "cy": "266700"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId195",
+            "path": "word/media/image189.png",
+            "sha256": "be8d93e54b5c0f897d763cce1cee6a9a5a5cc9938bcd3ff0ebbdaba717d177d8",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0108",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03970"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:OTHER-FORMS:I0108"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0108",
+        "src": "assets/master-other-forms-image189.png",
+        "source_filename": "image189.png",
+        "width": 128,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "be8d93e54b5c0f897d763cce1cee6a9a5a5cc9938bcd3ff0ebbdaba717d177d8",
+        "original_width_mm": 17.04,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: KATE.",
+          "es": "Rótulo original: KATE.",
+          "pt": "Rótulo original: KATE."
+        }
+      },
+      "caption": "Original preservado: 128 × 56 px; 17.04 × 7.41 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03972",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03972",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03972"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03972",
+        "paragraph_id": "P03972",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "d9d8a816a8bb0d9611352114d521c9e4701dbf917574aa4a525b2f6729ffcd7d",
+        "xml_src": "assets/source-xml/other-forms-P03972.xml",
+        "object_names": [
+          "Group 714",
+          "Rectangle 715",
+          "Freeform 717",
+          "Freeform 718",
+          "Freeform 720",
+          "Freeform 721"
+        ],
+        "container_extents": [
+          {
+            "cx": "6504305",
+            "cy": "397510"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03979",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03979",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03979"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03979",
+        "paragraph_id": "P03979",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "15842fd499a0279ed9772fea62b4e1cc67fdd21168bfbed3a67408783166ff3d",
+        "xml_src": "assets/source-xml/other-forms-P03979.xml",
+        "object_names": [
+          "image120.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "614530",
+            "cy": "267176"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId196",
+            "path": "word/media/image190.png",
+            "sha256": "13b59a7f579bf155df5f0d713e688f9577e0a0a354ecef2779cba343a6979c6f",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0109",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03979"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:OTHER-FORMS:I0109"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0109",
+        "src": "assets/master-other-forms-image190.png",
+        "source_filename": "image190.png",
+        "width": 128,
+        "height": 55,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "13b59a7f579bf155df5f0d713e688f9577e0a0a354ecef2779cba343a6979c6f",
+        "original_width_mm": 17.07,
+        "original_height_mm": 7.42,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: MIKE.",
+          "es": "Rótulo original: MIKE.",
+          "pt": "Rótulo original: MIKE."
+        }
+      },
+      "caption": "Original preservado: 128 × 55 px; 17.07 × 7.42 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03981",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03981",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03981"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03981",
+        "paragraph_id": "P03981",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "9876f45094b23a9d0e13d9066f21c2931fd3ff1fd738c6a0d778b91775374793",
+        "xml_src": "assets/source-xml/other-forms-P03981.xml",
+        "object_names": [
+          "Group 724",
+          "Rectangle 725",
+          "Freeform 726",
+          "Freeform 727",
+          "Freeform 728",
+          "Freeform 729"
+        ],
+        "container_extents": [
+          {
+            "cx": "6504305",
+            "cy": "381000"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03986",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03986",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03986"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03986",
+        "paragraph_id": "P03986",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "ba989bea8be1e841150f3bcce4a6a2f1cdb2dd99d8b856a9bc06b70a93572097",
+        "xml_src": "assets/source-xml/other-forms-P03986.xml",
+        "object_names": [
+          "image158.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "1383884",
+            "cy": "228314"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId197",
+            "path": "word/media/image191.png",
+            "sha256": "9ec21d8de4f1f95e7055a20a0ce0c3bbd662a194ad759396729a435482892388",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0110",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03986"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:OTHER-FORMS:I0110"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0110",
+        "src": "assets/master-other-forms-image191.png",
+        "source_filename": "image191.png",
+        "width": 290,
+        "height": 47,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "9ec21d8de4f1f95e7055a20a0ce0c3bbd662a194ad759396729a435482892388",
+        "original_width_mm": 38.44,
+        "original_height_mm": 6.34,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: CHARLES & SOPHIA.",
+          "es": "Rótulo original: CHARLES & SOPHIA.",
+          "pt": "Rótulo original: CHARLES & SOPHIA."
+        }
+      },
+      "caption": "Original preservado: 290 × 47 px; 38.44 × 6.34 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03988",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03988",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03988"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03988",
+        "paragraph_id": "P03988",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "54f7efcc49c74ad5b2a1f7a10f6ed5e95274e11dbf268be40352d48fab9e83a6",
+        "xml_src": "assets/source-xml/other-forms-P03988.xml",
+        "object_names": [
+          "Group 731",
+          "Rectangle 732",
+          "Freeform 733",
+          "Freeform 734",
+          "Freeform 735",
+          "Freeform 736"
+        ],
+        "container_extents": [
+          {
+            "cx": "6504305",
+            "cy": "381000"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03994",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03994",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03994"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03994",
+        "paragraph_id": "P03994",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "1aff4eb10b4532e9ac945e5834405d717716a05c74772d3a85d2556664b6ff18",
+        "xml_src": "assets/source-xml/other-forms-P03994.xml",
+        "object_names": [
+          "image213.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "928099",
+            "cy": "267176"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId198",
+            "path": "word/media/image192.png",
+            "sha256": "183a986d2ab8f751a71037c7b0373eeb7ccbea9e63070f986808d888708223dc",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0111",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03994"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:OTHER-FORMS:I0111"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0111",
+        "src": "assets/master-other-forms-image192.png",
+        "source_filename": "image192.png",
+        "width": 194,
+        "height": 55,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "183a986d2ab8f751a71037c7b0373eeb7ccbea9e63070f986808d888708223dc",
+        "original_width_mm": 25.78,
+        "original_height_mm": 7.42,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: THIS TABLE.",
+          "es": "Rótulo original: THIS TABLE.",
+          "pt": "Rótulo original: THIS TABLE."
+        }
+      },
+      "caption": "Original preservado: 194 × 55 px; 25.78 × 7.42 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03996",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P03996",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P03996"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P03996",
+        "paragraph_id": "P03996",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "d83681b593f4b08f6aaebaf3f7d7e0bd824ba140ba86165327ad519605e8052a",
+        "xml_src": "assets/source-xml/other-forms-P03996.xml",
+        "object_names": [
+          "Group 738",
+          "Rectangle 739",
+          "Freeform 740",
+          "Freeform 741",
+          "Freeform 742",
+          "Freeform 743"
+        ],
+        "container_extents": [
+          {
+            "cx": "6504305",
+            "cy": "399415"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04002",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P04002",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04002"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P04002",
+        "paragraph_id": "P04002",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "6adb24369a39ced794ccaf7b24e19bcec6dd066d33e7a4292e2079b7f2577aa8",
+        "xml_src": "assets/source-xml/other-forms-P04002.xml",
+        "object_names": [
+          "image126.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "1270934",
+            "cy": "266700"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId199",
+            "path": "word/media/image193.png",
+            "sha256": "5930fd531bee51c49ce8f938086b21ca8f34782445f57c88033ad95957c375e1",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0112",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04002"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:OTHER-FORMS:I0112"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0112",
+        "src": "assets/master-other-forms-image193.png",
+        "source_filename": "image193.png",
+        "width": 266,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5930fd531bee51c49ce8f938086b21ca8f34782445f57c88033ad95957c375e1",
+        "original_width_mm": 35.3,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: MADONNA.",
+          "es": "Rótulo original: MADONNA.",
+          "pt": "Rótulo original: MADONNA."
+        }
+      },
+      "caption": "Original preservado: 266 × 56 px; 35.3 × 7.41 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04008",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P04008",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04008"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P04008",
+        "paragraph_id": "P04008",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "28bbb1a4aa811d0474b8c3bb1d5f0bc1ece03670c1ee3944095498c0205b499e",
+        "xml_src": "assets/source-xml/other-forms-P04008.xml",
+        "object_names": [
+          "Group 745",
+          "Rectangle 746",
+          "Freeform 747",
+          "Freeform 748",
+          "Freeform 749",
+          "Freeform 750"
+        ],
+        "container_extents": [
+          {
+            "cx": "6431280",
+            "cy": "357505"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P04014",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04014"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P04014",
+        "paragraph_id": "P04014",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "cd867fb595ae349e4c2d427811b8934a7d23d9b7c66c2808d571b4195a6b5b54",
+        "xml_src": "assets/source-xml/other-forms-P04014.xml",
+        "object_names": [
+          "image163.png"
+        ],
+        "container_extents": [
+          {
+            "cx": "1270807",
+            "cy": "266700"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId200",
+            "path": "word/media/image194.png",
+            "sha256": "9d7970308422d91846252473b2a1c491a506371322c7be7c291d18f67f59201e",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "FIGURE",
+      "title": "Imagem original · I0113",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04014"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:OTHER-FORMS:I0113"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0113",
+        "src": "assets/master-other-forms-image194.png",
+        "source_filename": "image194.png",
+        "width": 266,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "9d7970308422d91846252473b2a1c491a506371322c7be7c291d18f67f59201e",
+        "original_width_mm": 35.3,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: YOU.",
+          "es": "Rótulo original: YOU.",
+          "pt": "Rótulo original: YOU."
+        }
+      },
+      "caption": "Original preservado: 266 × 56 px; 35.3 × 7.41 mm no DOCX. Composição e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P04016",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P04016"
+        ],
+        "note": "Fonte original preservada. Linhas do tempo históricas e composição vetorial ainda em revisão; nenhuma data atualizada por inferência."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS",
+        "MVP:CH:FOUNDATIONS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:OTHER-FORMS:P04016",
+        "paragraph_id": "P04016",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "30cfbc045471a21c2e39a4bbc85a31573bdddbb3e4d188cb983b149e9a49cfe5",
+        "xml_src": "assets/source-xml/other-forms-P04016.xml",
+        "object_names": [
+          "Group 752",
+          "Rectangle 753",
+          "Freeform 754",
+          "Freeform 755",
+          "Freeform 756",
+          "Freeform 757"
+        ],
+        "container_extents": [
+          {
+            "cx": "6457315",
+            "cy": "381000"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
     }
   ],
   "terms": [],
@@ -43289,6 +44814,19 @@
         "P03634"
       ],
       "next_pending": "P03916 To be – other forms",
+      "chapter_completeness": "PARTIAL"
+    },
+    "other_forms": {
+      "bounds": [
+        "P03916",
+        "P04021"
+      ],
+      "paragraphs_classified": 106,
+      "source_units": 30,
+      "tables": 1,
+      "vector_compositions": 12,
+      "figure_occurrences": 6,
+      "next_pending": "P04022 VERB TO BE – MAKING QUESTIONS",
       "chapter_completeness": "PARTIAL"
     }
   },
@@ -44113,6 +45651,43 @@
           "P03905"
         ],
         "observation": "Um modelo resolvido em T0021; demais respostas originais vazias. Family e Building Sentences não recebem gabaritos inferidos. Remissões gráficas não inventam destinos.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:OTHER-FORMS:001",
+        "source_ids": [
+          "P03958",
+          "P03962"
+        ],
+        "observation": "A oposição will decidido no momento / going to planejado é uma simplificação didática da fonte. Rever os demais usos e o contexto sem converter essa distinção em regra absoluta.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:OTHER-FORMS:002",
+        "source_ids": [
+          "P03928",
+          "P03930"
+        ],
+        "observation": "W I L LB E resulta de texto espaçado e caixas/células mescladas. Matriz e XML originais preservados; sem leitura automática desse fragmento e sem preencher vazios como respostas.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:OTHER-FORMS:003",
+        "source_ids": [
+          "P03971",
+          "P03975",
+          "P03980",
+          "P03984",
+          "P03987",
+          "P03991",
+          "P03995",
+          "P03999",
+          "P04004",
+          "P04005",
+          "P04011",
+          "P04019"
+        ],
+        "observation": "Rótulos de linhas do tempo extraídos da composição; ordem visual e relações precisam da figura recomposta. Datas e This year são históricos, não o ano corrente. Nenhuma frase ou associação temporal foi inferida.",
         "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
       }
     ],

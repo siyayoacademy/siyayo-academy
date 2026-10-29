@@ -71,3 +71,7 @@ Arquivos temporários de empacotamento em /tmp desapareceram durante o envio; o 
 - HOW TO CHECK: Anterior/Próximo e links internos focam slideSurface com preventScroll e rolam ao início do slide (margem 20px); não ao cabeçalho reading. Navegação sequencial e expansão verificadas em navegador; regressão de catálogo e 2387 alvos speech GREEN.
 - HOW TO RECORD: corpus permanece 716 unidades, cobertura textual 14,70036%; nenhuma nova homologação humana ou física presumida. Escopo exclusivo Master VIP; main, PR #3, Explorer, D1 e produção preservados.
 - Próximo ELO de corpus mantido: MVP16 · To Be — Other Forms · P03916.
+
+
+### JAGUAR-MVP-16-OTHER-FORMS · 2026-10-29
+P03916–P04021 incorporado: 30 unidades, T0024, seis rótulos raster e 12 composições XML. Total 746 unidades / 2453 alvos de leitura; 45.307 caracteres (14,86%). HOW TO DO / RECORD / SHOW / CHECK / SPEAK em MASTER-VIP-MVP16-OTHER-FORMS.md. Refinamento 9a65954 homologado pelo professor: manter mapa expansível, detalhes técnicos recolhidos e âncora slideSurface. Próximo checkpoint MVP17 · P04022 Making Questions. Revisão integral, recomposição e impressão física pendentes; nenhuma integração ao Explorer ou alteração da watchlist central.

@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.13.0",
+  "catalog_version": "0.14.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -1121,6 +1121,60 @@
             "MVP:UNIT:TO-BE:POSSESSIVES:VISUAL:P03905",
             "MVP:UNIT:TO-BE:POSSESSIVES:FIGURE:I0107"
           ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:FORMS",
+          "title": "Original · To Be · outras formas",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:FUTURE",
+          "title": "Original · Will / Going to",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:TIMELINE",
+          "title": "Original · Linhas do tempo",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS:VISUALS",
+          "title": "Original · Outras formas · composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03970",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03972",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03979",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03981",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03986",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03988",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03994",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03996",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04002",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04008",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+            "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016"
+          ]
         }
       ]
     },
@@ -1720,5 +1774,23 @@
       "tested_locally": true,
       "human_content_homologated": false
     }
+  },
+  "other_forms": {
+    "bounds": [
+      "P03916",
+      "P04021"
+    ],
+    "paragraphs_classified": 106,
+    "source_units": 30,
+    "tables": 1,
+    "vector_compositions": 12,
+    "figure_occurrences": 6,
+    "next_pending": "P04022 VERB TO BE – MAKING QUESTIONS",
+    "chapter_completeness": "PARTIAL",
+    "evidence": "MASTER-VIP-MVP16-OTHER-FORMS.md",
+    "implemented": true,
+    "tested_locally": true,
+    "homologated": false,
+    "integrated_into_explorer": false
   }
 }

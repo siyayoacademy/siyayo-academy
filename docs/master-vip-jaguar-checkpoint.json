@@ -1,5 +1,5 @@
 {
-  "id": "JAGUAR-MVP-15-POSSESSIVES",
+  "id": "JAGUAR-MVP-16-OTHER-FORMS",
   "date": "2026-10-29",
   "timezone": "America/Sao_Paulo",
   "repository": "siyayoacademy/siyayo-academy",
@@ -8,7 +8,7 @@
     "cfb3e696ea3a3f23c4db02fb4d0c89c797b85af7",
     "4f585b014502700984f211ee70345b4440a4898e"
   ],
-  "authorization_evidence": "Professor: o go next elo go",
+  "authorization_evidence": "Professor: correções executadas próximo elo",
   "states": {
     "implemented": true,
     "tested_locally": true,
@@ -17,15 +17,15 @@
     "physical_a4_homologated": false,
     "integrated_into_explorer": false
   },
-  "catalog_version": "0.13.0",
-  "units": 716,
-  "speech_targets": 2387,
-  "source_text_coverage_percent": 14.700363474130352,
+  "catalog_version": "0.14.0",
+  "units": 746,
+  "speech_targets": 2453,
+  "source_text_coverage_percent": 14.862745869910379,
   "next_go": {
-    "elo": "MVP16",
-    "source_start": "P03916",
-    "topic": "To be – other forms",
-    "action": "Delimitar e importar o bloco seguinte no circuito homologado, preservando origem e pendências."
+    "elo": "MVP17",
+    "source_start": "P04022",
+    "topic": "VERB TO BE – MAKING QUESTIONS",
+    "action": "Delimitar e importar as perguntas e os exercícios seguintes, preservando os circuitos homologados."
   },
   "known_limits": [
     {
@@ -65,16 +65,15 @@
   },
   "implementation_base_commit": "794bb9da27439d05342477e0ff1e5292f00d825f",
   "completed_elo": {
-    "elo": "MVP15",
+    "elo": "MVP16",
     "bounds": [
-      "P03524",
-      "P03915"
+      "P03916",
+      "P04021"
     ],
-    "source_units": 173,
-    "evidence": "MASTER-VIP-MVP15-POSSESSIVES.md",
+    "source_units": 30,
+    "evidence": "MASTER-VIP-MVP16-OTHER-FORMS.md",
     "source_review": "PENDING",
-    "visual_composition": "PENDING",
-    "source_fragments_without_speech": 14
+    "visual_composition": "PENDING"
   },
   "history": [
     {
@@ -121,6 +120,22 @@
         "source_review": "PENDING",
         "visual_composition": "PENDING"
       }
+    },
+    {
+      "id": "JAGUAR-MVP-15-POSSESSIVES",
+      "completed_elo": {
+        "elo": "MVP15",
+        "bounds": [
+          "P03524",
+          "P03915"
+        ],
+        "source_units": 173,
+        "evidence": "MASTER-VIP-MVP15-POSSESSIVES.md",
+        "source_review": "PENDING",
+        "visual_composition": "PENDING",
+        "source_fragments_without_speech": 14
+      },
+      "commit": "580963cdd0e4869964f79bd87548057fa6e5c7ec"
     }
   ],
   "ui_refinement": {
@@ -133,6 +148,8 @@
     ],
     "tested_locally": true,
     "browser_verified": true,
-    "human_homologated": false
+    "human_homologated": true,
+    "approval_evidence": "Professor: OK Entendo sim ficou melhor agora; ok perfeito!",
+    "published_commit": "9a6595474676eac9092357e96391316a848d7708"
   }
 }

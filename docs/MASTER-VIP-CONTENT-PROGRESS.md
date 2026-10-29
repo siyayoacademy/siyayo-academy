@@ -1,20 +1,20 @@
 # Master VIP — cobertura do conteúdo
 
-29 de outubro de 2026 · Catálogo 0.13.0 · branch jaguar/master-vip-modular-site-print-20261026.
+29 de outubro de 2026 · Catálogo 0.14.0 · branch jaguar/master-vip-modular-site-print-20261026.
 
 ## Percentual verificável
 
-Aproximadamente **15% do volume textual de origem já está vinculado aos módulos do site**. Métrica por caracteres: **44.812 / 304.836 = 14,70%**. Métrica por parágrafos com texto: **1.822 / 11.072 = 16,46%**. Ambos usam IDs únicos dos parágrafos de origem das unidades ORIGINAL, contando cada parágrafo uma vez. O intervalo de texto de cada parágrafo é o extraído do XML do DOCX; textos repetidos existentes na fonte e alternativas de caixas podem fazer parte do denominador. Não é percentual de páginas nem índice de qualidade.
+Aproximadamente **15% do volume textual de origem já está vinculado aos módulos do site**. Métrica por caracteres: **45.307 / 304.836 = 14,86%**. Métrica por parágrafos com texto: **1.857 / 11.072 = 16,77%**. Ambos usam IDs únicos dos parágrafos de origem das unidades ORIGINAL, contando cada parágrafo uma vez. O intervalo de texto de cada parágrafo é o extraído do XML do DOCX; textos repetidos existentes na fonte e alternativas de caixas podem fazer parte do denominador. Não é percentual de páginas nem índice de qualidade.
 
 Antes do MVP10: 22.667 caracteres (7,44%) e 935 parágrafos com texto (8,44%). O bloco Action Versus Movement contém muitos exercícios agregados no mesmo parágrafo; por isso o avanço em caracteres é maior que o avanço em quantidade de parágrafos. A contagem por capítulos disponíveis não mede conclusão de conteúdo.
 
 | Indicador | Disponível/classificado | Total da fonte | Cobertura |
 |---|---:|---:|---:|
-| Volume textual de origem vinculado | 44.812 caracteres | 304.836 | 14,70% |
-| Parágrafos com texto vinculados | 1.822 | 11.072 | 16,46% |
-| Parágrafos XML classificados, incluindo vazios | 3.327 | 20.649 | 16,11% |
-| Tabelas de origem incorporadas nos blocos | 25 | 168 | 14,88% |
-| Arquivos raster distintos preservados nos módulos | 58 | 237 | Reprodução/revisão visual pendente |
+| Volume textual de origem vinculado | 45.307 caracteres | 304.836 | 14,86% |
+| Parágrafos com texto vinculados | 1.857 | 11.072 | 16,77% |
+| Parágrafos XML classificados, incluindo vazios | 3.433 | 20.649 | 16,63% |
+| Tabelas de origem incorporadas nos blocos | 26 | 168 | 15,48% |
+| Arquivos raster distintos preservados nos módulos | 64 | 237 | Reprodução/revisão visual pendente |
 
 Fonte: STRUCTURE-KIND OF WORDS.docx, SHA256 99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c. Detalhes e denominadores em master-vip/data/coverage-report.json. Numerador derivado do catálogo e dos mapas ativos; mapas históricos não são somados novamente. A cobertura refere-se à branch de desenvolvimento, não à main/produção.
 
@@ -63,7 +63,7 @@ Revisão contextual, tradução integral dos textos originais, revisão tipográ
 
 ## Próximo elo
 
-P03916 To be – other forms e conteúdos seguintes: delimitar antes de importar. Continuar com IDs de origem, módulos próprios, preservação textual e propostas editoriais explícitas. As dez áreas pendentes acima são o roteiro cadastrado; seus limites integrais ainda precisam de conferência na fonte.
+P04022 VERB TO BE – MAKING QUESTIONS e conteúdos seguintes: delimitar antes de importar. Continuar com IDs de origem, módulos próprios, preservação textual e propostas editoriais explícitas. As dez áreas pendentes acima são o roteiro cadastrado; seus limites integrais ainda precisam de conferência na fonte.
 
 
 MVP12 acrescenta 253 parágrafos XML classificados (129 com texto vinculado), 1.401 caracteres, uma tabela, oito ocorrências de imagens (sete arquivos novos) e cinco composições XML preservadas. Catálogo: 399 unidades. Composição visual de camadas permanece pendente; percentual textual não mede prontidão gráfica.
@@ -76,3 +76,7 @@ Atualização MVP14: P02795–P03523, 729 parágrafos XML (473 com texto), 4.015
 
 
 MVP15: P03524–P03915, 392 parágrafos XML (218 com texto), 6.069 caracteres adicionais, T0021/T0022/T0023. 173 módulos novos: exemplos de possessivos, 50 + 52 + 44 itens (um modelo resolvido na fonte e 145 exercícios sem gabarito acrescentado), imagens e composições. Catálogo atual 0.13.0: 716 unidades e 2.387 alvos speech. Quatorze parágrafos truncados/concatenados ficam preservados como texto, sem leitura automática até revisão. Métrica de integração não significa recomposição, homologação ou áudio de todo fragmento.
+
+
+### JAGUAR-MVP-16-OTHER-FORMS · 2026-10-29
+P03916–P04021 incorporado: 30 unidades, T0024, seis rótulos raster e 12 composições XML. Total 746 unidades / 2453 alvos de leitura; 45.307 caracteres (14,86%). HOW TO DO / RECORD / SHOW / CHECK / SPEAK em MASTER-VIP-MVP16-OTHER-FORMS.md. Refinamento 9a65954 homologado pelo professor: manter mapa expansível, detalhes técnicos recolhidos e âncora slideSurface. Próximo checkpoint MVP17 · P04022 Making Questions. Revisão integral, recomposição e impressão física pendentes; nenhuma integração ao Explorer ou alteração da watchlist central.

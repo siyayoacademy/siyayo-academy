@@ -1,7 +1,7 @@
 {
   "id": "MVP:PRESENTATION:REGISTRY",
   "version": "1.1.0",
-  "catalog_version": "0.13.0",
+  "catalog_version": "0.14.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "contract": "whole-card-click; decorative gold speaker left; no repeat/stop buttons",
   "normalization": "Decorative glyphs and whitespace only; original text unchanged",
@@ -17,9 +17,9 @@
     "homologation_scope": "Inherited card pattern approved; full current corpus and physical A4 pending",
     "integrated_into_explorer": false
   },
-  "unit_count": 716,
-  "textual_unit_count": 695,
-  "target_count": 2387,
+  "unit_count": 746,
+  "textual_unit_count": 713,
+  "target_count": 2453,
   "units": [
     {
       "id": "MVP:UNIT:EXISTENCE:CONCEPT:001",
@@ -25670,6 +25670,802 @@
           "text_sha256": "24ed4aa26ac28c028403a52999c830481d8deb57b08aa0102b72990a3ac2a524"
         }
       ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03916",
+          "start": 0,
+          "end": 19,
+          "text_sha256": "e51d1022055cadc274c69c46f7771582f86128bf9ad54968aff77053944dbf53"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:1:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:1:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "c8f48a68649d1cae147fb8afd54801e3e82622465c98ff1ee29075da2c201d78"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "2eabe007d86c4523f543a7ab0c3440c1655093a81f768ce94b2569dbe9d92423"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:2:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:2:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "0d40e64e3455677c1521870d6b732366e2434e18ffc4d2e10140a40131f96d4b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:3:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:3:0:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "a0d4a6737a54383f99f03e4bfa7a60143f1815298625002b6dc4dd8e7d7ec141"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:3:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:3:1:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "16aec4cc0cd3dca7df02abddcec6f18917115dbbd69f57058bfbfb9a78db1bc0"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE:BLOCK:cell:3:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+          "key": "cell:3:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0024",
+          "text_sha256": "fa2c78b7a7a87b7c9037cc417e45a8743fa1036f6b2383553100f70514b7f39d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P03956",
+          "start": 0,
+          "end": 17,
+          "text_sha256": "7eadb639417dcb9cd761ecec189cc22932312a09f15800bd9347b3125f9f5a3a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03958",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "6cef4ccc1019d6cee6b9cad39d49cabf808ba2e0665d5832b70c44c09c2dfae0"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL:BLOCK:source:0:1:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+          "key": "source:0:1",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P03958",
+          "start": 4,
+          "end": 45,
+          "text_sha256": "ce41bd9f7b2c468fb31fed87221b3422fa1e57d73a6861f53b09236544de91e9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03959",
+          "start": 0,
+          "end": 15,
+          "text_sha256": "7d73c8b5d0b6ef2de57a5d35ec95d65fa5e1eeb9a005bf5fc41764f2b5c958dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03960",
+          "start": 0,
+          "end": 18,
+          "text_sha256": "8e7081ec9c0604bfc329d0887656c28bf8367a872520e03049c168501570bf38"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03962",
+          "start": 0,
+          "end": 8,
+          "text_sha256": "77a2fb38559d93bef7aa4ecb01466d7d5321d568334e61b797f313fb0df555bc"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO:BLOCK:source:0:1:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO",
+          "key": "source:0:1",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P03962",
+          "start": 8,
+          "end": 45,
+          "text_sha256": "2bf7785c024f51db44ddb01b263274e494982d5ff596315264da6a03e1a7175a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03963",
+          "start": 0,
+          "end": 74,
+          "text_sha256": "b0bc7aa1b62c445e3bae5ee33e19c255d10b2a679939ffb8f657b0f27e3793b3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03966",
+          "start": 0,
+          "end": 8,
+          "text_sha256": "cbef8ef9a36a7baf69578a4d10acd8356b7ab6e02d47017a3c3378840036b44a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03971",
+          "start": 0,
+          "end": 7,
+          "text_sha256": "0803fc919f4869c1515c8df47a88f8fd76de775c01ef515588a62df1c500e5e5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03971",
+          "start": 7,
+          "end": 16,
+          "text_sha256": "794470dd4cd7e0a68eab986c423980e95e7fba1a756b10b3f3fa37643b77b358"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03971",
+          "start": 16,
+          "end": 25,
+          "text_sha256": "70f4ebb56ac06e477173df12de2ef04c33df5043f9b892cad024e13216d4c816"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03975",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "81a83544cf93c245178cbc1620030f1123f435af867c79d87135983c52ab39d9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03975",
+          "start": 4,
+          "end": 13,
+          "text_sha256": "98597183c8c663282c3bb42f3374730701220f7caece637facee5b33cbd9f66e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03975",
+          "start": 13,
+          "end": 17,
+          "text_sha256": "b2b2f104d32c638903e151a9b20d6e27b41d8c0c84cf8458738f83ca2f1dd744"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03980",
+          "start": 0,
+          "end": 7,
+          "text_sha256": "6c3beaa7177c6b239162cc8cac2546e184f02f8e06bd84fa7c72c533d798b01f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03980",
+          "start": 7,
+          "end": 15,
+          "text_sha256": "cafa51a40e34a9536eecbeceb8cb6ee5e961a54daa5b2ba60b00f6c9d8eaeefc"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03980",
+          "start": 15,
+          "end": 27,
+          "text_sha256": "c95ee0315d51554e4fa1090e07cdb1dee358268f9a3d6020d88ad358cdd5cc34"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03984",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "d54123de468bd42ea00dafbd777f85fe5fa1ff6404d9838c007953c25c92a1c5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03984",
+          "start": 4,
+          "end": 13,
+          "text_sha256": "98597183c8c663282c3bb42f3374730701220f7caece637facee5b33cbd9f66e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03984",
+          "start": 13,
+          "end": 17,
+          "text_sha256": "8f0f97e140e126a4404a09eb1e14a53b7c742701c4290a5d1702d14daec22ee8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03987",
+          "start": 0,
+          "end": 7,
+          "text_sha256": "15037d080b19bb52bd7183ec766f3f2d0b7bc30e18e9c5604dca9e7229dde4ec"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03987",
+          "start": 7,
+          "end": 14,
+          "text_sha256": "8623744e832ac4d2479a3de6c827dfb779ddb769de07f0a0b2567f27b6cb45f5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03987",
+          "start": 14,
+          "end": 21,
+          "text_sha256": "8623744e832ac4d2479a3de6c827dfb779ddb769de07f0a0b2567f27b6cb45f5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03991",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "a7be8e1fe282a37cd666e0632b17d933fa13f21addf4798fc0455bc166e2488c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03991",
+          "start": 4,
+          "end": 13,
+          "text_sha256": "98597183c8c663282c3bb42f3374730701220f7caece637facee5b33cbd9f66e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03991",
+          "start": 13,
+          "end": 17,
+          "text_sha256": "4432cb276ffc79e796e2f86c4aabb5a223462ff45d089d30e5c78c38318c55cf"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03995",
+          "start": 0,
+          "end": 3,
+          "text_sha256": "65cbe1e19791d49b023800b3e22714e2589b6339bef5e660b628dd1023506ebd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03995",
+          "start": 3,
+          "end": 8,
+          "text_sha256": "e05d8feee2b07636f84e1feb7760ee9c090b941f1273c6a7b3f626da7a902575"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03995",
+          "start": 8,
+          "end": 12,
+          "text_sha256": "24a866f4940f1b00083a71ba4df7323bac1486f28dc81d500bbc4bb02c6e0e16"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03999",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "81a83544cf93c245178cbc1620030f1123f435af867c79d87135983c52ab39d9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03999",
+          "start": 4,
+          "end": 13,
+          "text_sha256": "98597183c8c663282c3bb42f3374730701220f7caece637facee5b33cbd9f66e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03999",
+          "start": 13,
+          "end": 17,
+          "text_sha256": "3bbcf69de876e98ac944c5276eaeb44308c00a4e89260ad0067c7c9aeb4532b8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04004",
+          "start": 0,
+          "end": 10,
+          "text_sha256": "8dc248a29d1830d6943c58a0e44dd6c7c56ddd29294a1e06230cd2234fc095e5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04004",
+          "start": 10,
+          "end": 15,
+          "text_sha256": "f4df27f8f6f87b0758cc17abe44dccc9ab8f0547e496f3d342b9f9d0c56df996"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04005",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "0b095798015f244b6f742a7b11617a33db9d1290665fa542a8f08e2ae225e1a2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04011",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "9113b98df80f877c7a2ee5d865a04c9514b4e9bf25a49d315b0b15f115d2f0d2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA:BLOCK:source:2:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+          "key": "source:2:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04011",
+          "start": 4,
+          "end": 13,
+          "text_sha256": "98597183c8c663282c3bb42f3374730701220f7caece637facee5b33cbd9f66e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA:BLOCK:source:2:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+          "key": "source:2:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04011",
+          "start": 13,
+          "end": 17,
+          "text_sha256": "6ae9e4d22c4670b9140fc378214b3274fb3f64d16058717f974515000680b24c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P04019",
+          "start": 0,
+          "end": 3,
+          "text_sha256": "97bfc0d9913d2b682d4caa1c254298baec1acf51bc0d03a0e02da0cb97297afa"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03970",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "7e603a57d7b98049bf22bdf1ba64e3599660b1a2256fce8506360e8aec7801b1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "272eca097357ab52b56d77d7749eed1c0f0941cee9ef826c76e56345bc6b2356"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "272eca097357ab52b56d77d7749eed1c0f0941cee9ef826c76e56345bc6b2356"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03972",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03979",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "5763e95c70448adafdda7d9706abf6ead74c2bd3ca9914395e76cf5ad6d44c70"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "cdd35d3aa4b6f054fea7e0e84500e320b7c335c070d36c15cc0a965a3823bc7c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "cdd35d3aa4b6f054fea7e0e84500e320b7c335c070d36c15cc0a965a3823bc7c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03981",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03986",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "3bb517bd29b56d3fecec9f0e48b3b86f38c3ffcac9d27b83241d272159bada91"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "555324d5dd165d2c925f6a0475bdefef36d937d8a4a846d3970ef878bf8ac5bb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "555324d5dd165d2c925f6a0475bdefef36d937d8a4a846d3970ef878bf8ac5bb"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03988",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03994",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "6296a2b5970821584fd56939dd7761cbc4428e5834b18c89ac264c8c18926e5e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "8ba0436f69ee5ff9453f8f2a2cf6fe4775fe1d15f9365da69930a048cacbbd47"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "8ba0436f69ee5ff9453f8f2a2cf6fe4775fe1d15f9365da69930a048cacbbd47"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03996",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04002",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "311a8ff90a3fc9ae9f6ccec846c61c254de9eeee48299a22a45e55dffbffddc3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "47261dcb5561c4b3aae376b33ca7633f23944b34115facb6f7a7b7d603601f1b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "47261dcb5561c4b3aae376b33ca7633f23944b34115facb6f7a7b7d603601f1b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04008",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "41ec2a99d4d82a6350deb0355294a767a69aa1aa403d0e8975128b7ed643cee3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "0b8f620cf9b31d799ac17f93eb8c43830563c80f0b465f0f9abdf0b15ef30731"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "0b8f620cf9b31d799ac17f93eb8c43830563c80f0b465f0f9abdf0b15ef30731"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016",
+      "targets": []
     }
   ]
 }

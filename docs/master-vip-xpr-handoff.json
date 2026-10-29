@@ -35,14 +35,15 @@
   },
   "reg_01": "Existing Master VIP module identities and presentation registry",
   "reg_02": "Catalog → renderer → text-card speech / independent print; navigation cancels speech; no persistence or evaluative events",
-  "reg_03": "Docs-only checkpoint update; no runtime/content delta; future imports validate changed source spans and references",
-  "local_checkpoint": "JAGUAR-MVP-15-POSSESSIVES",
-  "implementation_delta": "173 original units; P03524–P03915; T0021/T0022/T0023; one solved table model, 145 unanswered exercises; 244 speech targets; 14 preserved fragments pending speech review. No central watchlist modification.",
+  "reg_03": "Bounded corpus delta and localized speech routing; source/print/navigation regression verified; no assessment or persistence changes.",
+  "local_checkpoint": "JAGUAR-MVP-16-OTHER-FORMS",
+  "implementation_delta": "30 original units; P03916–P04021; T0024 + merged-cell XML, 12 vector paragraph XMLs, six immutable label PNGs; 66 speech targets; no central watchlist modification.",
   "ui_refinement": {
     "checkpoint": "JAGUAR-MVP-15-R1",
     "scope": "Master VIP reading UI only",
     "corpus_changed": false,
     "central_watchlist_changed": false,
-    "next_source": "P03916"
+    "next_source": "P04022",
+    "human_homologated": true
   }
 }

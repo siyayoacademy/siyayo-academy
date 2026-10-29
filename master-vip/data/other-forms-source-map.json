@@ -1,0 +1,1919 @@
+{
+  "id": "MVP:SOURCE:OTHER-FORMS",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "bounds": {
+    "first": "P03916",
+    "last": "P04021",
+    "next_heading": "P04022 VERB TO BE – MAKING QUESTIONS"
+  },
+  "paragraphs": [
+    {
+      "source_id": "P03916",
+      "xpath": "/w:document/w:body/w:p[693]",
+      "text": "To be – other forms",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03917",
+      "xpath": "/w:document/w:body/w:p[694]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03918",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[1]/w:tc[1]/w:p",
+      "text": "PERSON / THING",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03919",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[1]/w:tc[2]/w:p",
+      "text": "PRESENT",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03920",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[1]/w:tc[3]/w:p",
+      "text": "PAST",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03921",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[1]/w:tc[4]/w:p",
+      "text": "FUTURE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03922",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[1]/w:p",
+      "text": "I",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03923",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[2]/w:p",
+      "text": "AM",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03924",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03925",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[3]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03926",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[3]/w:p[3]",
+      "text": "WAS",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03927",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[4]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03928",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[4]/w:p[2]",
+      "text": "W I L L",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:002"
+      ]
+    },
+    {
+      "source_id": "P03929",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[4]/w:p[3]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03930",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[2]/w:tc[4]/w:p[4]",
+      "text": "B E",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:002"
+      ]
+    },
+    {
+      "source_id": "P03931",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[3]/w:tc[1]/w:p",
+      "text": "☺",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03932",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[3]/w:tc[2]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03933",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[3]/w:tc[2]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03934",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[3]/w:tc[2]/w:p[3]",
+      "text": "IS",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03935",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[3]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03936",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[3]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03937",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[1]/w:p",
+      "text": "YOU",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03938",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[2]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03939",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[2]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03940",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[2]/w:p[3]",
+      "text": "ARE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03941",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[3]/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03942",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[3]/w:p[2]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03943",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[3]/w:p[3]",
+      "text": "WERE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03944",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[4]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03945",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[5]/w:tc[1]/w:p",
+      "text": "☺☺",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03946",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[5]/w:tc[2]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03947",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[5]/w:tc[3]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03948",
+      "xpath": "/w:document/w:body/w:tbl[24]/w:tr[5]/w:tc[4]/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03949",
+      "xpath": "/w:document/w:body/w:p[695]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03950",
+      "xpath": "/w:document/w:body/w:p[696]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03951",
+      "xpath": "/w:document/w:body/w:p[697]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03952",
+      "xpath": "/w:document/w:body/w:p[698]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03953",
+      "xpath": "/w:document/w:body/w:p[699]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03954",
+      "xpath": "/w:document/w:body/w:p[700]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03955",
+      "xpath": "/w:document/w:body/w:p[701]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03956",
+      "xpath": "/w:document/w:body/w:p[702]",
+      "text": "*TIPOS DE FUTURO:",
+      "style": "Ttulo1",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03957",
+      "xpath": "/w:document/w:body/w:p[703]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03958",
+      "xpath": "/w:document/w:body/w:p[704]",
+      "text": "Will - Decidido no momento da fala. Exemplos:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:WILL"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:001"
+      ]
+    },
+    {
+      "source_id": "P03959",
+      "xpath": "/w:document/w:body/w:p[705]",
+      "text": "I will be back.",
+      "style": "Ttulo2",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:WILL"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03960",
+      "xpath": "/w:document/w:body/w:p[706]",
+      "text": "I will be at home.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:WILL"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03961",
+      "xpath": "/w:document/w:body/w:p[707]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03962",
+      "xpath": "/w:document/w:body/w:p[708]",
+      "text": "Going to - Planejado anteriormente. Exemplos:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:001"
+      ]
+    },
+    {
+      "source_id": "P03963",
+      "xpath": "/w:document/w:body/w:p[709]",
+      "text": "I am going to be back in two weeks. I am going to be at home at that time.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03964",
+      "xpath": "/w:document/w:body/w:p[710]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03965",
+      "xpath": "/w:document/w:body/w:p[711]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03966",
+      "xpath": "/w:document/w:body/w:p[712]",
+      "text": "TIMELINE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03967",
+      "xpath": "/w:document/w:body/w:p[713]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03968",
+      "xpath": "/w:document/w:body/w:p[714]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03969",
+      "xpath": "/w:document/w:body/w:p[715]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03970",
+      "xpath": "/w:document/w:body/w:p[716]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03970",
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03971",
+      "xpath": "/w:document/w:body/w:p[717]",
+      "text": "STUDENTSECRETARYEXECUTIVE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03972",
+      "xpath": "/w:document/w:body/w:p[718]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03972"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03973",
+      "xpath": "/w:document/w:body/w:p[718]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03974",
+      "xpath": "/w:document/w:body/w:p[718]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03975",
+      "xpath": "/w:document/w:body/w:p[719]",
+      "text": "2000This year2025",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03976",
+      "xpath": "/w:document/w:body/w:p[720]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03977",
+      "xpath": "/w:document/w:body/w:p[721]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03978",
+      "xpath": "/w:document/w:body/w:p[722]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03979",
+      "xpath": "/w:document/w:body/w:p[723]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03979",
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03980",
+      "xpath": "/w:document/w:body/w:p[724]",
+      "text": "BUILDERENGINEERBUSINESS MAN",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03981",
+      "xpath": "/w:document/w:body/w:p[725]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03981"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03982",
+      "xpath": "/w:document/w:body/w:p[725]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03983",
+      "xpath": "/w:document/w:body/w:p[725]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03984",
+      "xpath": "/w:document/w:body/w:p[726]",
+      "text": "1998This year2029",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03985",
+      "xpath": "/w:document/w:body/w:p[727]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03986",
+      "xpath": "/w:document/w:body/w:p[728]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03986",
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03987",
+      "xpath": "/w:document/w:body/w:p[729]",
+      "text": "FRIENDSMARRIEDMARRIED",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03988",
+      "xpath": "/w:document/w:body/w:p[730]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03988"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03989",
+      "xpath": "/w:document/w:body/w:p[730]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03990",
+      "xpath": "/w:document/w:body/w:p[730]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03991",
+      "xpath": "/w:document/w:body/w:p[731]",
+      "text": "1990This year2032",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03992",
+      "xpath": "/w:document/w:body/w:p[732]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03993",
+      "xpath": "/w:document/w:body/w:p[733]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03994",
+      "xpath": "/w:document/w:body/w:p[734]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03994",
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03995",
+      "xpath": "/w:document/w:body/w:p[735]",
+      "text": "REDWHITEBLUE",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P03996",
+      "xpath": "/w:document/w:body/w:p[736]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03996"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03997",
+      "xpath": "/w:document/w:body/w:p[736]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03998",
+      "xpath": "/w:document/w:body/w:p[736]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P03999",
+      "xpath": "/w:document/w:body/w:p[737]",
+      "text": "2000This year2037",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P04000",
+      "xpath": "/w:document/w:body/w:p[738]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04001",
+      "xpath": "/w:document/w:body/w:p[739]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04002",
+      "xpath": "/w:document/w:body/w:p[740]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04002",
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04003",
+      "xpath": "/w:document/w:body/w:p[741]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04004",
+      "xpath": "/w:document/w:body/w:p[742]",
+      "text": "RED HEADEDBLOND",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P04005",
+      "xpath": "/w:document/w:body/w:p[743]",
+      "text": "BALD",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P04006",
+      "xpath": "/w:document/w:body/w:p[744]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04007",
+      "xpath": "/w:document/w:body/w:p[745]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04008",
+      "xpath": "/w:document/w:body/w:p[746]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04008"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04009",
+      "xpath": "/w:document/w:body/w:p[746]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:inline/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04010",
+      "xpath": "/w:document/w:body/w:p[746]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04011",
+      "xpath": "/w:document/w:body/w:p[747]",
+      "text": "1989This year2028",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P04012",
+      "xpath": "/w:document/w:body/w:p[748]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04013",
+      "xpath": "/w:document/w:body/w:p[749]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04014",
+      "xpath": "/w:document/w:body/w:p[750]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 1,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
+        "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04015",
+      "xpath": "/w:document/w:body/w:p[751]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04016",
+      "xpath": "/w:document/w:body/w:p[752]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04017",
+      "xpath": "/w:document/w:body/w:p[752]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04018",
+      "xpath": "/w:document/w:body/w:p[752]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04019",
+      "xpath": "/w:document/w:body/w:p[753]",
+      "text": "NOW",
+      "style": "Ttulo5",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:OTHER-FORMS:003"
+      ]
+    },
+    {
+      "source_id": "P04020",
+      "xpath": "/w:document/w:body/w:p[754]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P04021",
+      "xpath": "/w:document/w:body/w:p[755]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    }
+  ],
+  "tables": [
+    {
+      "id": "T0024",
+      "xpath": "/w:document/w:body/w:tbl[24]",
+      "rows": 5,
+      "grid_columns": 4,
+      "cells": [
+        [
+          "PERSON / THING",
+          "PRESENT",
+          "PAST",
+          "FUTURE"
+        ],
+        [
+          "I",
+          "AM",
+          "WAS",
+          "W I L LB E"
+        ],
+        [
+          "☺",
+          "IS",
+          "",
+          ""
+        ],
+        [
+          "YOU",
+          "ARE",
+          "WERE",
+          ""
+        ],
+        [
+          "☺☺",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"af6\"/><w:tblW w:w=\"9142\" w:type=\"dxa\"/><w:tblInd w:w=\"1319\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"6\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"6\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"6\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"6\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"6\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"6\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>",
+      "xml_src": "assets/source-xml/other-forms-T0024.xml",
+      "xml_sha256": "6c9496d5da6b67db8f6838357d00d6f47ce4132db9e47c9dda46e56929909530"
+    }
+  ],
+  "assets": [
+    {
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0108",
+        "src": "assets/master-other-forms-image189.png",
+        "source_filename": "image189.png",
+        "width": 128,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "be8d93e54b5c0f897d763cce1cee6a9a5a5cc9938bcd3ff0ebbdaba717d177d8",
+        "original_width_mm": 17.04,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: KATE.",
+          "es": "Rótulo original: KATE.",
+          "pt": "Rótulo original: KATE."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:OTHER-FORMS:I0108",
+        "paragraph_id": "P03970",
+        "asset_id": "MVP:ASSET:OTHER-FORMS:I0108",
+        "source_use": {
+          "id": "I0108",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[716]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId195",
+          "target": "media/image189.png",
+          "width_mm": 17.04,
+          "height_mm": 7.41,
+          "effective_ppi_x": 190.8,
+          "description": {
+            "id": "1238",
+            "name": "image174.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0109",
+        "src": "assets/master-other-forms-image190.png",
+        "source_filename": "image190.png",
+        "width": 128,
+        "height": 55,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "13b59a7f579bf155df5f0d713e688f9577e0a0a354ecef2779cba343a6979c6f",
+        "original_width_mm": 17.07,
+        "original_height_mm": 7.42,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: MIKE.",
+          "es": "Rótulo original: MIKE.",
+          "pt": "Rótulo original: MIKE."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:OTHER-FORMS:I0109",
+        "paragraph_id": "P03979",
+        "asset_id": "MVP:ASSET:OTHER-FORMS:I0109",
+        "source_use": {
+          "id": "I0109",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[723]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId196",
+          "target": "media/image190.png",
+          "width_mm": 17.07,
+          "height_mm": 7.42,
+          "effective_ppi_x": 190.5,
+          "description": {
+            "id": "1239",
+            "name": "image120.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0110",
+        "src": "assets/master-other-forms-image191.png",
+        "source_filename": "image191.png",
+        "width": 290,
+        "height": 47,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "9ec21d8de4f1f95e7055a20a0ce0c3bbd662a194ad759396729a435482892388",
+        "original_width_mm": 38.44,
+        "original_height_mm": 6.34,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: CHARLES & SOPHIA.",
+          "es": "Rótulo original: CHARLES & SOPHIA.",
+          "pt": "Rótulo original: CHARLES & SOPHIA."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:OTHER-FORMS:I0110",
+        "paragraph_id": "P03986",
+        "asset_id": "MVP:ASSET:OTHER-FORMS:I0110",
+        "source_use": {
+          "id": "I0110",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[728]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId197",
+          "target": "media/image191.png",
+          "width_mm": 38.44,
+          "height_mm": 6.34,
+          "effective_ppi_x": 191.6,
+          "description": {
+            "id": "1240",
+            "name": "image158.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0111",
+        "src": "assets/master-other-forms-image192.png",
+        "source_filename": "image192.png",
+        "width": 194,
+        "height": 55,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "183a986d2ab8f751a71037c7b0373eeb7ccbea9e63070f986808d888708223dc",
+        "original_width_mm": 25.78,
+        "original_height_mm": 7.42,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: THIS TABLE.",
+          "es": "Rótulo original: THIS TABLE.",
+          "pt": "Rótulo original: THIS TABLE."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:OTHER-FORMS:I0111",
+        "paragraph_id": "P03994",
+        "asset_id": "MVP:ASSET:OTHER-FORMS:I0111",
+        "source_use": {
+          "id": "I0111",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[734]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId198",
+          "target": "media/image192.png",
+          "width_mm": 25.78,
+          "height_mm": 7.42,
+          "effective_ppi_x": 191.1,
+          "description": {
+            "id": "1241",
+            "name": "image213.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0112",
+        "src": "assets/master-other-forms-image193.png",
+        "source_filename": "image193.png",
+        "width": 266,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5930fd531bee51c49ce8f938086b21ca8f34782445f57c88033ad95957c375e1",
+        "original_width_mm": 35.3,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: MADONNA.",
+          "es": "Rótulo original: MADONNA.",
+          "pt": "Rótulo original: MADONNA."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:OTHER-FORMS:I0112",
+        "paragraph_id": "P04002",
+        "asset_id": "MVP:ASSET:OTHER-FORMS:I0112",
+        "source_use": {
+          "id": "I0112",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[740]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId199",
+          "target": "media/image193.png",
+          "width_mm": 35.3,
+          "height_mm": 7.41,
+          "effective_ppi_x": 191.4,
+          "description": {
+            "id": "1242",
+            "name": "image126.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:OTHER-FORMS:I0113",
+        "src": "assets/master-other-forms-image194.png",
+        "source_filename": "image194.png",
+        "width": 266,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "9d7970308422d91846252473b2a1c491a506371322c7be7c291d18f67f59201e",
+        "original_width_mm": 35.3,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Original label: YOU.",
+          "es": "Rótulo original: YOU.",
+          "pt": "Rótulo original: YOU."
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:OTHER-FORMS:I0113",
+        "paragraph_id": "P04014",
+        "asset_id": "MVP:ASSET:OTHER-FORMS:I0113",
+        "source_use": {
+          "id": "I0113",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[750]/w:r/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId200",
+          "target": "media/image194.png",
+          "width_mm": 35.3,
+          "height_mm": 7.41,
+          "effective_ppi_x": 191.4,
+          "description": {
+            "id": "1243",
+            "name": "image163.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "MVP:REVIEW:OTHER-FORMS:001",
+      "source_ids": [
+        "P03958",
+        "P03962"
+      ],
+      "observation": "A oposição will decidido no momento / going to planejado é uma simplificação didática da fonte. Rever os demais usos e o contexto sem converter essa distinção em regra absoluta.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:OTHER-FORMS:002",
+      "source_ids": [
+        "P03928",
+        "P03930"
+      ],
+      "observation": "W I L LB E resulta de texto espaçado e caixas/células mescladas. Matriz e XML originais preservados; sem leitura automática desse fragmento e sem preencher vazios como respostas.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:OTHER-FORMS:003",
+      "source_ids": [
+        "P03971",
+        "P03975",
+        "P03980",
+        "P03984",
+        "P03987",
+        "P03991",
+        "P03995",
+        "P03999",
+        "P04004",
+        "P04005",
+        "P04011",
+        "P04019"
+      ],
+      "observation": "Rótulos de linhas do tempo extraídos da composição; ordem visual e relações precisam da figura recomposta. Datas e This year são históricos, não o ano corrente. Nenhuma frase ou associação temporal foi inferida.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    }
+  ],
+  "source_units": [
+    "MVP:UNIT:TO-BE:OTHER-FORMS:INTRO",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TABLE",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FUTURE-INTRO",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:WILL",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:GOING-TO",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:KATE",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MIKE",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:CHARLES-SOPHIA",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:TABLE",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:MADONNA",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:TIMELINE:YOU",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03970",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0108",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03972",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03979",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0109",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03981",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03986",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0110",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03988",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03994",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0111",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P03996",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04002",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0112",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04008",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
+    "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016"
+  ],
+  "vector_compositions": [
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03970",
+      "paragraph_id": "P03970",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "8ddfc2f49471b59664357d090451c429f690cd4001865dd6849bb37db2465c02",
+      "xml_src": "assets/source-xml/other-forms-P03970.xml",
+      "object_names": [
+        "image174.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "613435",
+          "cy": "266700"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId195",
+          "path": "word/media/image189.png",
+          "sha256": "be8d93e54b5c0f897d763cce1cee6a9a5a5cc9938bcd3ff0ebbdaba717d177d8",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03972",
+      "paragraph_id": "P03972",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "d9d8a816a8bb0d9611352114d521c9e4701dbf917574aa4a525b2f6729ffcd7d",
+      "xml_src": "assets/source-xml/other-forms-P03972.xml",
+      "object_names": [
+        "Group 714",
+        "Rectangle 715",
+        "Freeform 717",
+        "Freeform 718",
+        "Freeform 720",
+        "Freeform 721"
+      ],
+      "container_extents": [
+        {
+          "cx": "6504305",
+          "cy": "397510"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03979",
+      "paragraph_id": "P03979",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "15842fd499a0279ed9772fea62b4e1cc67fdd21168bfbed3a67408783166ff3d",
+      "xml_src": "assets/source-xml/other-forms-P03979.xml",
+      "object_names": [
+        "image120.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "614530",
+          "cy": "267176"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId196",
+          "path": "word/media/image190.png",
+          "sha256": "13b59a7f579bf155df5f0d713e688f9577e0a0a354ecef2779cba343a6979c6f",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03981",
+      "paragraph_id": "P03981",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "9876f45094b23a9d0e13d9066f21c2931fd3ff1fd738c6a0d778b91775374793",
+      "xml_src": "assets/source-xml/other-forms-P03981.xml",
+      "object_names": [
+        "Group 724",
+        "Rectangle 725",
+        "Freeform 726",
+        "Freeform 727",
+        "Freeform 728",
+        "Freeform 729"
+      ],
+      "container_extents": [
+        {
+          "cx": "6504305",
+          "cy": "381000"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03986",
+      "paragraph_id": "P03986",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "ba989bea8be1e841150f3bcce4a6a2f1cdb2dd99d8b856a9bc06b70a93572097",
+      "xml_src": "assets/source-xml/other-forms-P03986.xml",
+      "object_names": [
+        "image158.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "1383884",
+          "cy": "228314"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId197",
+          "path": "word/media/image191.png",
+          "sha256": "9ec21d8de4f1f95e7055a20a0ce0c3bbd662a194ad759396729a435482892388",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03988",
+      "paragraph_id": "P03988",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "54f7efcc49c74ad5b2a1f7a10f6ed5e95274e11dbf268be40352d48fab9e83a6",
+      "xml_src": "assets/source-xml/other-forms-P03988.xml",
+      "object_names": [
+        "Group 731",
+        "Rectangle 732",
+        "Freeform 733",
+        "Freeform 734",
+        "Freeform 735",
+        "Freeform 736"
+      ],
+      "container_extents": [
+        {
+          "cx": "6504305",
+          "cy": "381000"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03994",
+      "paragraph_id": "P03994",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "1aff4eb10b4532e9ac945e5834405d717716a05c74772d3a85d2556664b6ff18",
+      "xml_src": "assets/source-xml/other-forms-P03994.xml",
+      "object_names": [
+        "image213.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "928099",
+          "cy": "267176"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId198",
+          "path": "word/media/image192.png",
+          "sha256": "183a986d2ab8f751a71037c7b0373eeb7ccbea9e63070f986808d888708223dc",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P03996",
+      "paragraph_id": "P03996",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "d83681b593f4b08f6aaebaf3f7d7e0bd824ba140ba86165327ad519605e8052a",
+      "xml_src": "assets/source-xml/other-forms-P03996.xml",
+      "object_names": [
+        "Group 738",
+        "Rectangle 739",
+        "Freeform 740",
+        "Freeform 741",
+        "Freeform 742",
+        "Freeform 743"
+      ],
+      "container_extents": [
+        {
+          "cx": "6504305",
+          "cy": "399415"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P04002",
+      "paragraph_id": "P04002",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "6adb24369a39ced794ccaf7b24e19bcec6dd066d33e7a4292e2079b7f2577aa8",
+      "xml_src": "assets/source-xml/other-forms-P04002.xml",
+      "object_names": [
+        "image126.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "1270934",
+          "cy": "266700"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId199",
+          "path": "word/media/image193.png",
+          "sha256": "5930fd531bee51c49ce8f938086b21ca8f34782445f57c88033ad95957c375e1",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P04008",
+      "paragraph_id": "P04008",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "28bbb1a4aa811d0474b8c3bb1d5f0bc1ece03670c1ee3944095498c0205b499e",
+      "xml_src": "assets/source-xml/other-forms-P04008.xml",
+      "object_names": [
+        "Group 745",
+        "Rectangle 746",
+        "Freeform 747",
+        "Freeform 748",
+        "Freeform 749",
+        "Freeform 750"
+      ],
+      "container_extents": [
+        {
+          "cx": "6431280",
+          "cy": "357505"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P04014",
+      "paragraph_id": "P04014",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "cd867fb595ae349e4c2d427811b8934a7d23d9b7c66c2808d571b4195a6b5b54",
+      "xml_src": "assets/source-xml/other-forms-P04014.xml",
+      "object_names": [
+        "image163.png"
+      ],
+      "container_extents": [
+        {
+          "cx": "1270807",
+          "cy": "266700"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId200",
+          "path": "word/media/image194.png",
+          "sha256": "9d7970308422d91846252473b2a1c491a506371322c7be7c291d18f67f59201e",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:OTHER-FORMS:P04016",
+      "paragraph_id": "P04016",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "30cfbc045471a21c2e39a4bbc85a31573bdddbb3e4d188cb983b149e9a49cfe5",
+      "xml_src": "assets/source-xml/other-forms-P04016.xml",
+      "object_names": [
+        "Group 752",
+        "Rectangle 753",
+        "Freeform 754",
+        "Freeform 755",
+        "Freeform 756",
+        "Freeform 757"
+      ],
+      "container_extents": [
+        {
+          "cx": "6457315",
+          "cy": "381000"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    }
+  ],
+  "chapter_completeness": "PARTIAL",
+  "status": "SOURCE_IMPORTED_TIMELINE_RECOMPOSITION_PENDING"
+}
