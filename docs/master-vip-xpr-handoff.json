@@ -37,5 +37,12 @@
   "reg_02": "Catalog → renderer → text-card speech / independent print; navigation cancels speech; no persistence or evaluative events",
   "reg_03": "Docs-only checkpoint update; no runtime/content delta; future imports validate changed source spans and references",
   "local_checkpoint": "JAGUAR-MVP-15-POSSESSIVES",
-  "implementation_delta": "173 original units; P03524–P03915; T0021/T0022/T0023; one solved table model, 145 unanswered exercises; 244 speech targets; 14 preserved fragments pending speech review. No central watchlist modification."
+  "implementation_delta": "173 original units; P03524–P03915; T0021/T0022/T0023; one solved table model, 145 unanswered exercises; 244 speech targets; 14 preserved fragments pending speech review. No central watchlist modification.",
+  "ui_refinement": {
+    "checkpoint": "JAGUAR-MVP-15-R1",
+    "scope": "Master VIP reading UI only",
+    "corpus_changed": false,
+    "central_watchlist_changed": false,
+    "next_source": "P03916"
+  }
 }

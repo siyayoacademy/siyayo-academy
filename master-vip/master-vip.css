@@ -16,3 +16,6 @@
 .word-class-name{display:block;color:var(--light);font-size:12px}.word-class-example{display:block;margin-top:3px;color:var(--soft);font-size:11px}.chapter-connections{padding-top:12px;border-top:1px solid var(--border)}.chapter-connections a{padding:5px 9px;border:1px solid var(--border);border-radius:7px}.print-unit .word-class-name,.print-unit .word-class-example{color:#111}
 
 .figure-stage{position:relative;overflow:hidden;width:100%}.figure-stage img{position:absolute;left:50%;top:50%;max-width:none;height:auto;margin:0}.figure-orientation{margin:.75rem 0}@media print{.figure-orientation{display:none}}
+
+/* Reading navigation stays at the current slide; section inventory is opt-in. */
+#slideSurface{scroll-margin-top:20px;min-width:0}.section-map{margin:0 0 22px;padding:12px;border:1px solid var(--border);border-radius:10px}.section-map>summary{cursor:pointer;color:var(--light);font-size:13px}.section-map .section-links{margin:16px 0 0}.technical-details p{overflow-wrap:anywhere}

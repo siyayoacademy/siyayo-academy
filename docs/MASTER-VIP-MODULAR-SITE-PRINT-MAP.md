@@ -184,3 +184,11 @@ P02795–P03523: 105 unidades, 729 parágrafos classificados, duas tabelas. Cinq
 ## JAGUAR-MVP-15 — Possessive Pronouns
 
 P03524–P03915: 173 unidades, 392 parágrafos classificados, três tabelas, oito ocorrências de imagens e pixel técnico separado, cinco composições XML. Três séries: 50/52/44 itens; um modelo preenchido na fonte e 145 exercícios sem gabarito acrescentado. Quatorze parágrafos truncados/concatenados permanecem como texto estático, sem falsa disponibilidade de áudio. Catálogo 0.13.0: 716 unidades / 2.387 alvos speech; 14,7004% dos caracteres de origem. [Registro completo](MASTER-VIP-MVP15-POSSESSIVES.md). NEXT GO MVP16: P03916 To be – other forms.
+
+
+### JAGUAR-MVP-15-R1 — refinamento de leitura · 2026-10-29
+- HOW TO DO: manter o inventário de objetos Word em details técnico fechado; é rastreabilidade, não conteúdo pedagógico. Reprodução vetorial segue pendente, sem figura inventada.
+- HOW TO SHOW: mapa de seções em contêiner expansível nativo, fechado inicialmente; seletor de seção continua disponível. Estado de abertura preservado na navegação interna.
+- HOW TO CHECK: Anterior/Próximo e links internos focam slideSurface com preventScroll e rolam ao início do slide (margem 20px); não ao cabeçalho reading. Navegação sequencial e expansão verificadas em navegador; regressão de catálogo e 2387 alvos speech GREEN.
+- HOW TO RECORD: corpus permanece 716 unidades, cobertura textual 14,70036%; nenhuma nova homologação humana ou física presumida. Escopo exclusivo Master VIP; main, PR #3, Explorer, D1 e produção preservados.
+- Próximo ELO de corpus mantido: MVP16 · To Be — Other Forms · P03916.

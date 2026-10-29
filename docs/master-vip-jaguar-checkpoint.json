@@ -122,5 +122,17 @@
         "visual_composition": "PENDING"
       }
     }
-  ]
+  ],
+  "ui_refinement": {
+    "id": "JAGUAR-MVP-15-R1",
+    "base_commit": "580963cdd0e4869964f79bd87548057fa6e5c7ec",
+    "changes": [
+      "collapsed technical object inventory with clear pending-figure explanation",
+      "collapsed chapter section map",
+      "slideSurface focus and scroll anchor for navigation"
+    ],
+    "tested_locally": true,
+    "browser_verified": true,
+    "human_homologated": false
+  }
 }

@@ -63,3 +63,11 @@ Arquivos temporários de empacotamento em /tmp desapareceram durante o envio; o 
 ## Resultado MVP15
 
 173 unidades de possessivos incorporadas, P03524–P03915. T0021/T0022/T0023: um modelo original resolvido e 145 exercícios sem gabarito criado. 244 novos alvos speech; 14 parágrafos fragmentados preservados sem ativação de voz e com aviso de revisão. [Evidências e limites](MASTER-VIP-MVP15-POSSESSIVES.md). NEXT GO MVP16: P03916 To be – other forms. Publicação retoma o estágio em qa no workspace, conforme o incidente já resolvido no MVP14.
+
+
+### JAGUAR-MVP-15-R1 — refinamento de leitura · 2026-10-29
+- HOW TO DO: manter o inventário de objetos Word em details técnico fechado; é rastreabilidade, não conteúdo pedagógico. Reprodução vetorial segue pendente, sem figura inventada.
+- HOW TO SHOW: mapa de seções em contêiner expansível nativo, fechado inicialmente; seletor de seção continua disponível. Estado de abertura preservado na navegação interna.
+- HOW TO CHECK: Anterior/Próximo e links internos focam slideSurface com preventScroll e rolam ao início do slide (margem 20px); não ao cabeçalho reading. Navegação sequencial e expansão verificadas em navegador; regressão de catálogo e 2387 alvos speech GREEN.
+- HOW TO RECORD: corpus permanece 716 unidades, cobertura textual 14,70036%; nenhuma nova homologação humana ou física presumida. Escopo exclusivo Master VIP; main, PR #3, Explorer, D1 e produção preservados.
+- Próximo ELO de corpus mantido: MVP16 · To Be — Other Forms · P03916.
