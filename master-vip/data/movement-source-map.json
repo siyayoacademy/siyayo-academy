@@ -1,0 +1,1546 @@
+{
+  "id": "MVP:SOURCE:MOVEMENT",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "bounds": {
+    "first": "P02394",
+    "last": "P02429",
+    "next_heading": "P02430 QUALITY & STATE"
+  },
+  "paragraphs": [
+    {
+      "source_id": "P02394",
+      "xpath": "/w:document/w:body/w:p[391]",
+      "text": "Action Versus Movement",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02395",
+      "xpath": "/w:document/w:body/w:p[392]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02396",
+      "xpath": "/w:document/w:body/w:p[393]",
+      "text": "They – smoke – occasionally ………………………They smoke occasionally.………………………………………..………………… 2. They – smoke – now …………………………………They are smoking now…..…………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002",
+        "MVP:UNIT:MOVEMENT:STUDY:ROUTINE-PROGRESS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02397",
+      "xpath": "/w:document/w:body/w:p[394]",
+      "text": "The manager – talk to the client - hardly ever ……..The manager hardly ever talks to the client…….…………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:003"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02398",
+      "xpath": "/w:document/w:body/w:p[395]",
+      "text": "The manager - talk to the client - right now …………The manager is talking to the client right now…..……………………………… 5.   The kids - watch tv – sometimes  …………………………………….…………………………………………………………………….… 6.    The kids - watch tv - right now  ……………………………………….……………………………………………………………………… 7.   That guy - wash the car - twice a week……………………………...…………………………………………………………………… 8.  That guy - wash the car -  at this very moment  …………………………………………………………………………………………….. 9.    People in my city - go to the movies – rarely ………………………..………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:004",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:005",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:006",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:007",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:008",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:009"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02399",
+      "xpath": "/w:document/w:body/w:p[396]",
+      "text": "10. People in my city -  go to the movies - nowadays   ………………….…………………………………………………………………… 11. The maid - cook - hardly ever ………………………………………..……………………………………………………………………….. 12. The maid - cook - right now    ………………………………………….…………………………………………………………………… 13. The group - live in Paris – nowadays ………………………………..……………………………………………………………………….. 14. The group - live in Paris – now ……………………………………….………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:010",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:011",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:012",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:013",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:014"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02400",
+      "xpath": "/w:document/w:body/w:p[397]",
+      "text": "The majority of people - invest in the stock market – currently …..………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:015"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02401",
+      "xpath": "/w:document/w:body/w:p[398]",
+      "text": "The majority of people - invest in the stock market - right now …..……………………………………………………………………….. 17. The teenagers - go to the church - hardly ever …………………….……………………………………………………………………….. 18. The teenagers - go to the church - once a month………………….………………………………………………………………….. 19.  She - see them - frequently…………………………………………………………………………………….……………………….. 20. She - see them - always……………………………………………………………………………………………………………… 21.  I - speak to you - frequently……………………………………………………………………………………………………………… 22.  I - speak to you - right now……………………………………………………………………………………………………………… 23. They - swear – never ………………………………………………………………………………………………………………………….. 24.  They - swear -  all the time…………………………………………………………………………….………………………………… 25. He - read some books – always ……………………………………..……………………………………………………………………….. 26.  He - read some books - now and then……………………………………………………………...…………………………………… 27. We both - speak English - frequently……………………………………………………………………………………………...…… 28. We both - speak English - at this very moment………………………………………………………………………………………. 29. My entire family - eat fish - almost never …………………………...……………………………………………………………………….. 30. My entire family - eat fish - at the moment ………………………………………………………………………………………………….. 31. Women - do nails - once a month ………………………………….……………………………………………………………………….. 32.  Women - do nails - every other day………………………………………………………………………………………………….. 33. My children - listen to music - pretty often ………………………….……………………………………………………………………….",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:016",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:017",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:018",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:019",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:021",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:022",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:023",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:026",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:027",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:028",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:029",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:030",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:031",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:032",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:033",
+        "MVP:UNIT:MOVEMENT:STUDY:ALWAYS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02402",
+      "xpath": "/w:document/w:body/w:p[399]",
+      "text": "34. My children - listen to music - every single day………………………………………..…………………………………………….. 35. My aunt - sing a song - almost never………………………………………………………………………………………………….. 36. My aunt - sing a song - every other day ………………...…………………………………………………………………………………… 37. Forgetful people - buy a new lighter - always………………………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:034",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:035",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:036",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:037"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02403",
+      "xpath": "/w:document/w:body/w:p[400]",
+      "text": "Forgetfull people - buy a new lighter - every other day…………………………..………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:038"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02404",
+      "xpath": "/w:document/w:body/w:p[401]",
+      "text": "The director - open the mailbox - every single day ……………..…………………………………………………………………………. 40.  The director - open the mailbox - every month……………………………………………………………………………………….. 41. The ombudsman - answer e-mails - every other day ……………………………………...……………………………………………….. 42.  The ombudsman - answer e-mails - this Sunday    ……………………………………………………………………….……………… 43. The dancers - dance - right now ……………………………………………………………………………………………………………….. 44. The dancers - dance - twice a day……………………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:039",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:040",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:041",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:042",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:043",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:044"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02405",
+      "xpath": "/w:document/w:body/w:p[402]",
+      "text": "The sales people - sell the same amount - every month…………………………………………………………………………….",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:045"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02406",
+      "xpath": "/w:document/w:body/w:p[403]",
+      "text": "The sales people - sell the same amount - everyday ……………………………………………………………………………………….. 47. I - travel - this Sunday …………………………………………………………………………….…………………………………………….. 48. I - travel - each two years……………………………………………………………………………………………………………….",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:046",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:047",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:048"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:001",
+        "MVP:REVIEW:MV:002"
+      ]
+    },
+    {
+      "source_id": "P02407",
+      "xpath": "/w:document/w:body/w:p[404]",
+      "text": "49. People in general - have shower - every other month……………………………………………………………………………            50. People in general - have shower - twice a day……………………………………………………………………………………….",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:049",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:050"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02408",
+      "xpath": "/w:document/w:body/w:p[405]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02409",
+      "xpath": "/w:document/w:body/w:p[406]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02410",
+      "xpath": "/w:document/w:body/w:p[407]",
+      "text": "ACTION versus MOVEMENT",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:INTRO"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:005"
+      ]
+    },
+    {
+      "source_id": "P02411",
+      "xpath": "/w:document/w:body/w:p[408]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02412",
+      "xpath": "/w:document/w:body/w:p[409]",
+      "text": "The whole department - have a meeting - everyday………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:051"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:001"
+      ]
+    },
+    {
+      "source_id": "P02413",
+      "xpath": "/w:document/w:body/w:p[410]",
+      "text": "The whole department - have a meeting - often……………………………………………………………………………………… 53. They - update the system - each two years ………………………………………………………………………………………………….. 54. They - update the system - at the moment ………………………………………………………………………………………………….. 55. The prices - increase - every other month ………………………………………………………………………………………………….. 56. The prices - increase - all the time ……………………………………………………………………………………………………………… 57. She - put on make up - often……………………………………………………………………………………………………………… 58. She - put on make up - at this moment     ………………………………………………………………………………………………….. 59. My grandmother  - make cake - at the moment……………………………………………………………………………………… 60. My grandmother  - make cake - now and then……………………………………………………………………………………… 61. The girl - do that - all the time    ……………………………………………………………………………………………………………… 62. The girl - do that - after the meals ……………………………………………………………………………………………………………… 63. The boss - write a message - every night  ………………………………………………………………………………………………….. 64. The boss - write a message - at this moment ………………………………………………………………………………………………….. 65. My family - visit them - now and then………………………………………………………………………………………………….. 66. My family - visit them - every morning………………………………………………………………………………………………….. 67. The little girl - brush her teeth - ritually…………………………………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:052",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:053",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:054",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:055",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:057",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:058",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:059",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:060",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:061",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:062",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:063",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:064",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:065",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:066",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:067",
+        "MVP:UNIT:MOVEMENT:STUDY:ALWAYS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:002"
+      ]
+    },
+    {
+      "source_id": "P02414",
+      "xpath": "/w:document/w:body/w:p[411]",
+      "text": "The little girl - brush her teeth - after the meals………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:068"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02415",
+      "xpath": "/w:document/w:body/w:p[412]",
+      "text": "Everybody - set the alarm clock on - every single year ………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:069"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:004"
+      ]
+    },
+    {
+      "source_id": "P02416",
+      "xpath": "/w:document/w:body/w:p[413]",
+      "text": "Everybody - set  the alarm clock on - every night………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:070"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:004"
+      ]
+    },
+    {
+      "source_id": "P02417",
+      "xpath": "/w:document/w:body/w:p[414]",
+      "text": "All the people - set the alarm clock off - at this specific moment …………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:071"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:004"
+      ]
+    },
+    {
+      "source_id": "P02418",
+      "xpath": "/w:document/w:body/w:p[415]",
+      "text": "All the people - set the alarm clock off - every morning……………………………………………………………………………………… 73. The receptionist - organize things - regularly ………………………………………………………………………………………………….. 74. The receptionist - organize things - ritually …………………………………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:072",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:073",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:074"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:004"
+      ]
+    },
+    {
+      "source_id": "P02419",
+      "xpath": "/w:document/w:body/w:p[416]",
+      "text": "75. The team - go on vacation - every single year……………………………………………………………………………………… 76. The team - go on vacation - normally………………………………………………………………………………………………….. 77.  I - study- this - at this specific moment     …………………………………………………………………………………………………. 78. I - study- this - religiously……………………………………………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:075",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:076",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:077",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:078"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02420",
+      "xpath": "/w:document/w:body/w:p[417]",
+      "text": "My parents - donate money to charity - regularly……………………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:079"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02421",
+      "xpath": "/w:document/w:body/w:p[418]",
+      "text": "My parents - donate money to charity - every other year…………………………………………………………………………. 81. I - prefer staying home - normally …………………………………………………………………………………………………………….. 82. I - prefer staying home - straight away………………………………………………………………………………………………….",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:080",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:081",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:082"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02422",
+      "xpath": "/w:document/w:body/w:p[419]",
+      "text": "She - phone all the friends at night - religiously……………………………………………………………………………………...",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:083"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02423",
+      "xpath": "/w:document/w:body/w:p[420]",
+      "text": "She - phone all the friends at night - repeatedly………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:084"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02424",
+      "xpath": "/w:document/w:body/w:p[421]",
+      "text": "The father - pick the kids up in the school - unconsciously…………………………………………………………………………..",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:085"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02425",
+      "xpath": "/w:document/w:body/w:p[422]",
+      "text": "The father - pick the kids up in the school - every other day     ………………………………………………………………………….. 87. The secretary - reply e-mails - straight away ………………………………………………………………………………………………….. 88. The secretary - reply e-mails - right away  ………………………………………………………………………………………………….. 89. The boy - know the answers - at the same time……………………………………………………………………………………… 90. The boy - know the answers - right away   ………………………………………………………………………………………………….. 91. We all - make this mistake - right now………………………………………………………………………………………………….. 92. We all - make this mistake - unconsciously ………………………………………………………………………………………………….. 93. He - itch the head – repeatedly  ……………………………………………………………………………………………………………… 94. He - itch the head - in the morning ………………………………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:086",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:087",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:088",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:091",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:092",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:093",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:094",
+        "MVP:UNIT:MOVEMENT:STUDY:STATIVE"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:MV:003"
+      ]
+    },
+    {
+      "source_id": "P02426",
+      "xpath": "/w:document/w:body/w:p[423]",
+      "text": "They - watch tv and play with the kids - right now………………………………………………………………………………………",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:095"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02427",
+      "xpath": "/w:document/w:body/w:p[424]",
+      "text": "They - watch tv and play with the kids - at the same time………………………………………………………………………….. 97. I - run in the park - now …………………………………………………………………………………………………………………………. 98. I - run in the park - on Sundays…………………………………………………………………………………………………………….. 99. She - drink coffee - in the morning …………………………………………………………………………………………………………….. 100.She - drink coffee - at the moment………………………………………………………………………………………………….",
+      "style": "(default)",
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:096",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:097",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:098",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:099",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:100"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02428",
+      "xpath": "/w:document/w:body/w:p[425]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02429",
+      "xpath": "/w:document/w:body/w:p[426]",
+      "text": "",
+      "style": "(default)",
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    }
+  ],
+  "tables": [],
+  "assets": [],
+  "issues": [
+    {
+      "id": "MVP:REVIEW:MV:001",
+      "source_ids": [
+        "P02406",
+        "P02412"
+      ],
+      "observation": "Everyday aparece em função adverbial: estudar every day na revisão, preservando a fonte.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:MV:002",
+      "source_ids": [
+        "P02406",
+        "P02413"
+      ],
+      "observation": "Each two years requer revisão de naturalidade: considerar every two years.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:MV:003",
+      "source_ids": [
+        "P02425"
+      ],
+      "observation": "Know, itch the head e pick the kids up in the school exigem revisão semântica/contextual. Não completar frases por associação mecânica ao advérbio.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:MV:004",
+      "source_ids": [
+        "P02415",
+        "P02416",
+        "P02417",
+        "P02418"
+      ],
+      "observation": "Set the alarm clock on/off precisa distinguir acertar o horário e ativar/desativar o alarme conforme o contexto.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:MV:005",
+      "source_ids": [
+        "P02410"
+      ],
+      "observation": "Título intermediário preservado. A numeração ausente do texto extraído foi reconstituída apenas para navegação; offsets registram cada segmento.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    }
+  ],
+  "source_units": [
+    "MVP:UNIT:MOVEMENT:SOURCE:INTRO",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:003",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:004",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:005",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:006",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:007",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:008",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:009",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:010",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:011",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:012",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:013",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:014",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:015",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:016",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:017",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:018",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:019",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:021",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:022",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:023",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:026",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:027",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:028",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:029",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:030",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:031",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:032",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:033",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:034",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:035",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:036",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:037",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:038",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:039",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:040",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:041",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:042",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:043",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:044",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:045",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:046",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:047",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:048",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:049",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:050",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:051",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:052",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:053",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:054",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:055",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:057",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:058",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:059",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:060",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:061",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:062",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:063",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:064",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:065",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:066",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:067",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:068",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:069",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:070",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:071",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:072",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:073",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:074",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:075",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:076",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:077",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:078",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:079",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:080",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:081",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:082",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:083",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:084",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:085",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:086",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:087",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:088",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:091",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:092",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:093",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:094",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:095",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:096",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:097",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:098",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:099",
+    "MVP:UNIT:MOVEMENT:SOURCE:ITEM:100"
+  ],
+  "item_segments": [
+    {
+      "number": 1,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+      "paragraph_id": "P02396",
+      "start": 0,
+      "end": 86,
+      "explicit_number": null,
+      "kind": "SOLVED_MODEL"
+    },
+    {
+      "number": 2,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002",
+      "paragraph_id": "P02396",
+      "start": 86,
+      "end": 166,
+      "explicit_number": 2,
+      "kind": "SOLVED_MODEL"
+    },
+    {
+      "number": 3,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:003",
+      "paragraph_id": "P02397",
+      "start": 0,
+      "end": 110,
+      "explicit_number": null,
+      "kind": "SOLVED_MODEL"
+    },
+    {
+      "number": 4,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:004",
+      "paragraph_id": "P02398",
+      "start": 0,
+      "end": 111,
+      "explicit_number": null,
+      "kind": "SOLVED_MODEL"
+    },
+    {
+      "number": 5,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:005",
+      "paragraph_id": "P02398",
+      "start": 111,
+      "end": 193,
+      "explicit_number": 5,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 6,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:006",
+      "paragraph_id": "P02398",
+      "start": 193,
+      "end": 276,
+      "explicit_number": 6,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 7,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:007",
+      "paragraph_id": "P02398",
+      "start": 276,
+      "end": 360,
+      "explicit_number": 7,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 8,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:008",
+      "paragraph_id": "P02398",
+      "start": 360,
+      "end": 450,
+      "explicit_number": 8,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 9,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:009",
+      "paragraph_id": "P02398",
+      "start": 450,
+      "end": 542,
+      "explicit_number": 9,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 10,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:010",
+      "paragraph_id": "P02399",
+      "start": 0,
+      "end": 90,
+      "explicit_number": 10,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 11,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:011",
+      "paragraph_id": "P02399",
+      "start": 90,
+      "end": 171,
+      "explicit_number": 11,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 12,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:012",
+      "paragraph_id": "P02399",
+      "start": 171,
+      "end": 250,
+      "explicit_number": 12,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 13,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:013",
+      "paragraph_id": "P02399",
+      "start": 250,
+      "end": 335,
+      "explicit_number": 13,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 14,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:014",
+      "paragraph_id": "P02399",
+      "start": 335,
+      "end": 416,
+      "explicit_number": 14,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 15,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:015",
+      "paragraph_id": "P02400",
+      "start": 0,
+      "end": 96,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 16,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:016",
+      "paragraph_id": "P02401",
+      "start": 0,
+      "end": 97,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 17,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:017",
+      "paragraph_id": "P02401",
+      "start": 97,
+      "end": 187,
+      "explicit_number": 17,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 18,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:018",
+      "paragraph_id": "P02401",
+      "start": 187,
+      "end": 274,
+      "explicit_number": 18,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 19,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:019",
+      "paragraph_id": "P02401",
+      "start": 274,
+      "end": 351,
+      "explicit_number": 19,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 20,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020",
+      "paragraph_id": "P02401",
+      "start": 351,
+      "end": 421,
+      "explicit_number": 20,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 21,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:021",
+      "paragraph_id": "P02401",
+      "start": 421,
+      "end": 498,
+      "explicit_number": 21,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 22,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:022",
+      "paragraph_id": "P02401",
+      "start": 498,
+      "end": 574,
+      "explicit_number": 22,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 23,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:023",
+      "paragraph_id": "P02401",
+      "start": 574,
+      "end": 648,
+      "explicit_number": 23,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 24,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+      "paragraph_id": "P02401",
+      "start": 648,
+      "end": 725,
+      "explicit_number": 24,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 25,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+      "paragraph_id": "P02401",
+      "start": 725,
+      "end": 805,
+      "explicit_number": 25,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 26,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:026",
+      "paragraph_id": "P02401",
+      "start": 805,
+      "end": 886,
+      "explicit_number": 26,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 27,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:027",
+      "paragraph_id": "P02401",
+      "start": 886,
+      "end": 967,
+      "explicit_number": 27,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 28,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:028",
+      "paragraph_id": "P02401",
+      "start": 967,
+      "end": 1051,
+      "explicit_number": 28,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 29,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:029",
+      "paragraph_id": "P02401",
+      "start": 1051,
+      "end": 1141,
+      "explicit_number": 29,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 30,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:030",
+      "paragraph_id": "P02401",
+      "start": 1141,
+      "end": 1229,
+      "explicit_number": 30,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 31,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:031",
+      "paragraph_id": "P02401",
+      "start": 1229,
+      "end": 1309,
+      "explicit_number": 31,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 32,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:032",
+      "paragraph_id": "P02401",
+      "start": 1309,
+      "end": 1388,
+      "explicit_number": 32,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 33,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:033",
+      "paragraph_id": "P02401",
+      "start": 1388,
+      "end": 1476,
+      "explicit_number": 33,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 34,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:034",
+      "paragraph_id": "P02402",
+      "start": 0,
+      "end": 89,
+      "explicit_number": 34,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 35,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:035",
+      "paragraph_id": "P02402",
+      "start": 89,
+      "end": 169,
+      "explicit_number": 35,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 36,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:036",
+      "paragraph_id": "P02402",
+      "start": 169,
+      "end": 255,
+      "explicit_number": 36,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 37,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:037",
+      "paragraph_id": "P02402",
+      "start": 255,
+      "end": 339,
+      "explicit_number": 37,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 38,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:038",
+      "paragraph_id": "P02403",
+      "start": 0,
+      "end": 87,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 39,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:039",
+      "paragraph_id": "P02404",
+      "start": 0,
+      "end": 88,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 40,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:040",
+      "paragraph_id": "P02404",
+      "start": 88,
+      "end": 174,
+      "explicit_number": 40,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 41,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:041",
+      "paragraph_id": "P02404",
+      "start": 174,
+      "end": 265,
+      "explicit_number": 41,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 42,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:042",
+      "paragraph_id": "P02404",
+      "start": 265,
+      "end": 353,
+      "explicit_number": 42,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 43,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:043",
+      "paragraph_id": "P02404",
+      "start": 353,
+      "end": 434,
+      "explicit_number": 43,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 44,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:044",
+      "paragraph_id": "P02404",
+      "start": 434,
+      "end": 509,
+      "explicit_number": 44,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 45,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:045",
+      "paragraph_id": "P02405",
+      "start": 0,
+      "end": 83,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 46,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:046",
+      "paragraph_id": "P02406",
+      "start": 0,
+      "end": 87,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 47,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:047",
+      "paragraph_id": "P02406",
+      "start": 87,
+      "end": 166,
+      "explicit_number": 47,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 48,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:048",
+      "paragraph_id": "P02406",
+      "start": 166,
+      "end": 240,
+      "explicit_number": 48,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 49,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:049",
+      "paragraph_id": "P02407",
+      "start": 0,
+      "end": 96,
+      "explicit_number": 49,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 50,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:050",
+      "paragraph_id": "P02407",
+      "start": 96,
+      "end": 179,
+      "explicit_number": 50,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 51,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:051",
+      "paragraph_id": "P02412",
+      "start": 0,
+      "end": 81,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 52,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:052",
+      "paragraph_id": "P02413",
+      "start": 0,
+      "end": 79,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 53,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:053",
+      "paragraph_id": "P02413",
+      "start": 79,
+      "end": 165,
+      "explicit_number": 53,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 54,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:054",
+      "paragraph_id": "P02413",
+      "start": 165,
+      "end": 250,
+      "explicit_number": 54,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 55,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:055",
+      "paragraph_id": "P02413",
+      "start": 250,
+      "end": 336,
+      "explicit_number": 55,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 56,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056",
+      "paragraph_id": "P02413",
+      "start": 336,
+      "end": 420,
+      "explicit_number": 56,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 57,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:057",
+      "paragraph_id": "P02413",
+      "start": 420,
+      "end": 495,
+      "explicit_number": 57,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 58,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:058",
+      "paragraph_id": "P02413",
+      "start": 495,
+      "end": 581,
+      "explicit_number": 58,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 59,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:059",
+      "paragraph_id": "P02413",
+      "start": 581,
+      "end": 662,
+      "explicit_number": 59,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 60,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:060",
+      "paragraph_id": "P02413",
+      "start": 662,
+      "end": 742,
+      "explicit_number": 60,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 61,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:061",
+      "paragraph_id": "P02413",
+      "start": 742,
+      "end": 826,
+      "explicit_number": 61,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 62,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:062",
+      "paragraph_id": "P02413",
+      "start": 826,
+      "end": 910,
+      "explicit_number": 62,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 63,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:063",
+      "paragraph_id": "P02413",
+      "start": 910,
+      "end": 996,
+      "explicit_number": 63,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 64,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:064",
+      "paragraph_id": "P02413",
+      "start": 996,
+      "end": 1084,
+      "explicit_number": 64,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 65,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:065",
+      "paragraph_id": "P02413",
+      "start": 1084,
+      "end": 1165,
+      "explicit_number": 65,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 66,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:066",
+      "paragraph_id": "P02413",
+      "start": 1165,
+      "end": 1247,
+      "explicit_number": 66,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 67,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:067",
+      "paragraph_id": "P02413",
+      "start": 1247,
+      "end": 1334,
+      "explicit_number": 67,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 68,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:068",
+      "paragraph_id": "P02414",
+      "start": 0,
+      "end": 84,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 69,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:069",
+      "paragraph_id": "P02415",
+      "start": 0,
+      "end": 88,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 70,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:070",
+      "paragraph_id": "P02416",
+      "start": 0,
+      "end": 82,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 71,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:071",
+      "paragraph_id": "P02417",
+      "start": 0,
+      "end": 95,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 72,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:072",
+      "paragraph_id": "P02418",
+      "start": 0,
+      "end": 90,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 73,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:073",
+      "paragraph_id": "P02418",
+      "start": 90,
+      "end": 181,
+      "explicit_number": 73,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 74,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:074",
+      "paragraph_id": "P02418",
+      "start": 181,
+      "end": 270,
+      "explicit_number": 74,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 75,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:075",
+      "paragraph_id": "P02419",
+      "start": 0,
+      "end": 83,
+      "explicit_number": 75,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 76,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:076",
+      "paragraph_id": "P02419",
+      "start": 83,
+      "end": 163,
+      "explicit_number": 76,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 77,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:077",
+      "paragraph_id": "P02419",
+      "start": 163,
+      "end": 253,
+      "explicit_number": 77,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 78,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:078",
+      "paragraph_id": "P02419",
+      "start": 253,
+      "end": 329,
+      "explicit_number": 78,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 79,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:079",
+      "paragraph_id": "P02420",
+      "start": 0,
+      "end": 82,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 80,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:080",
+      "paragraph_id": "P02421",
+      "start": 0,
+      "end": 85,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 81,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:081",
+      "paragraph_id": "P02421",
+      "start": 85,
+      "end": 168,
+      "explicit_number": 81,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 82,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:082",
+      "paragraph_id": "P02421",
+      "start": 168,
+      "end": 249,
+      "explicit_number": 82,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 83,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:083",
+      "paragraph_id": "P02422",
+      "start": 0,
+      "end": 85,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 84,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:084",
+      "paragraph_id": "P02423",
+      "start": 0,
+      "end": 82,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 85,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:085",
+      "paragraph_id": "P02424",
+      "start": 0,
+      "end": 89,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 86,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:086",
+      "paragraph_id": "P02425",
+      "start": 0,
+      "end": 97,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 87,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:087",
+      "paragraph_id": "P02425",
+      "start": 97,
+      "end": 187,
+      "explicit_number": 87,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 88,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:088",
+      "paragraph_id": "P02425",
+      "start": 187,
+      "end": 275,
+      "explicit_number": 88,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 89,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+      "paragraph_id": "P02425",
+      "start": 275,
+      "end": 358,
+      "explicit_number": 89,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 90,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090",
+      "paragraph_id": "P02425",
+      "start": 358,
+      "end": 444,
+      "explicit_number": 90,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 91,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:091",
+      "paragraph_id": "P02425",
+      "start": 444,
+      "end": 526,
+      "explicit_number": 91,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 92,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:092",
+      "paragraph_id": "P02425",
+      "start": 526,
+      "end": 613,
+      "explicit_number": 92,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 93,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:093",
+      "paragraph_id": "P02425",
+      "start": 613,
+      "end": 693,
+      "explicit_number": 93,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 94,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:094",
+      "paragraph_id": "P02425",
+      "start": 693,
+      "end": 775,
+      "explicit_number": 94,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 95,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:095",
+      "paragraph_id": "P02426",
+      "start": 0,
+      "end": 83,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 96,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:096",
+      "paragraph_id": "P02427",
+      "start": 0,
+      "end": 88,
+      "explicit_number": null,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 97,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:097",
+      "paragraph_id": "P02427",
+      "start": 88,
+      "end": 166,
+      "explicit_number": 97,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 98,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:098",
+      "paragraph_id": "P02427",
+      "start": 166,
+      "end": 246,
+      "explicit_number": 98,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 99,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:099",
+      "paragraph_id": "P02427",
+      "start": 246,
+      "end": 330,
+      "explicit_number": 99,
+      "kind": "EXERCISE"
+    },
+    {
+      "number": 100,
+      "unit_id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:100",
+      "paragraph_id": "P02427",
+      "start": 330,
+      "end": 406,
+      "explicit_number": 100,
+      "kind": "EXERCISE"
+    }
+  ],
+  "status": "STRUCTURALLY_MAPPED_VISUAL_REVIEW_PENDING",
+  "chapter_completeness": "PARTIAL"
+}

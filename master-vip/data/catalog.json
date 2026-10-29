@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -542,14 +542,207 @@
     {
       "id": "MVP:CH:MOVEMENT",
       "title": "Movement",
-      "description": "Atividade em progresso · To Be + verb-ing",
+      "description": "Action Versus Movement: quatro modelos resolvidos e 96 exercícios originais, com estudo trilíngue de rotina, progresso e contexto. Capítulo parcial.",
       "keywords": [
         "MOVEMENT",
         "Movement",
-        "Atividade em progresso · To Be + verb-ing"
+        "Atividade em progresso · To Be + verb-ing",
+        "action versus movement",
+        "rotina",
+        "progresso",
+        "now",
+        "always",
+        "know",
+        "every day",
+        "occasionally"
       ],
-      "status": "PLANNED",
-      "sections": []
+      "status": "SOURCE_AND_STUDY",
+      "sections": [
+        {
+          "id": "MVP:SEC:MOVEMENT:STUDY",
+          "title": "Estudo · Rotina, progresso e contexto",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:STUDY:ROUTINE-PROGRESS",
+            "MVP:UNIT:MOVEMENT:STUDY:STATIVE",
+            "MVP:UNIT:MOVEMENT:STUDY:ALWAYS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:INTRO",
+          "title": "Original · INTRO",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:MODELS",
+          "title": "Original · MODELS",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:003",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:004"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+          "title": "Original · itens 01-10",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:005",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:006",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:007",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:008",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:009",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:010"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+          "title": "Original · itens 11-20",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:011",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:012",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:013",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:014",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:015",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:016",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:017",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:018",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:019",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+          "title": "Original · itens 21-30",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:021",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:022",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:023",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:026",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:027",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:028",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:029",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:030"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+          "title": "Original · itens 31-40",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:031",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:032",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:033",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:034",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:035",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:036",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:037",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:038",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:039",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:040"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+          "title": "Original · itens 41-50",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:041",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:042",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:043",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:044",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:045",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:046",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:047",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:048",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:049",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:050"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+          "title": "Original · itens 51-60",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:051",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:052",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:053",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:054",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:055",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:057",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:058",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:059",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:060"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+          "title": "Original · itens 61-70",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:061",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:062",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:063",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:064",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:065",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:066",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:067",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:068",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:069",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:070"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+          "title": "Original · itens 71-80",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:071",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:072",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:073",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:074",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:075",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:076",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:077",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:078",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:079",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:080"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+          "title": "Original · itens 81-90",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:081",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:082",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:083",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:084",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:085",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:086",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:087",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:088",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+          "title": "Original · itens 91-100",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:091",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:092",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:093",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:094",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:095",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:096",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:097",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:098",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:099",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:100"
+          ]
+        }
+      ],
+      "completeness": "PARTIAL",
+      "source_map": "data/movement-source-map.json"
     },
     {
       "id": "MVP:CH:ACTION-PRESENT",
@@ -18804,15 +18997,4430 @@
         "reproduction_status": "PENDING",
         "raster_references": 0
       }
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:INTRO",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "Action Versus Movement · títulos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02394",
+          "P02410"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02394",
+          "text": "Action Versus Movement"
+        },
+        {
+          "source_id": "P02410",
+          "text": "ACTION versus MOVEMENT"
+        }
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:MODELS",
+      "type": "SOURCE_MODEL",
+      "title": "Modelo resolvido 1 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02396"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02396",
+          "text": "They – smoke – occasionally ………………………They smoke occasionally.………………………………………..………………… "
+        }
+      ],
+      "source_item_number": 1,
+      "source_span": {
+        "paragraph_id": "P02396",
+        "start": 0,
+        "end": 86,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:MODELS",
+      "type": "SOURCE_MODEL",
+      "title": "Modelo resolvido 2 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02396"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02396",
+          "text": "2. They – smoke – now …………………………………They are smoking now…..…………………………………………………………"
+        }
+      ],
+      "source_item_number": 2,
+      "source_span": {
+        "paragraph_id": "P02396",
+        "start": 86,
+        "end": 166,
+        "explicit_number": 2,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:003",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:MODELS",
+      "type": "SOURCE_MODEL",
+      "title": "Modelo resolvido 3 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02397"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02397",
+          "text": "The manager – talk to the client - hardly ever ……..The manager hardly ever talks to the client…….…………………………………"
+        }
+      ],
+      "source_item_number": 3,
+      "source_span": {
+        "paragraph_id": "P02397",
+        "start": 0,
+        "end": 110,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:004",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:MODELS",
+      "type": "SOURCE_MODEL",
+      "title": "Modelo resolvido 4 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02398"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02398",
+          "text": "The manager - talk to the client - right now …………The manager is talking to the client right now…..……………………………… "
+        }
+      ],
+      "source_item_number": 4,
+      "source_span": {
+        "paragraph_id": "P02398",
+        "start": 0,
+        "end": 111,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:005",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 5 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02398"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02398",
+          "text": "5.   The kids - watch tv – sometimes  …………………………………….…………………………………………………………………….… "
+        }
+      ],
+      "source_item_number": 5,
+      "source_span": {
+        "paragraph_id": "P02398",
+        "start": 111,
+        "end": 193,
+        "explicit_number": 5,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:006",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 6 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02398"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02398",
+          "text": "6.    The kids - watch tv - right now  ……………………………………….……………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 6,
+      "source_span": {
+        "paragraph_id": "P02398",
+        "start": 193,
+        "end": 276,
+        "explicit_number": 6,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:007",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 7 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02398"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02398",
+          "text": "7.   That guy - wash the car - twice a week……………………………...…………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 7,
+      "source_span": {
+        "paragraph_id": "P02398",
+        "start": 276,
+        "end": 360,
+        "explicit_number": 7,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:008",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 8 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02398"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02398",
+          "text": "8.  That guy - wash the car -  at this very moment  …………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 8,
+      "source_span": {
+        "paragraph_id": "P02398",
+        "start": 360,
+        "end": 450,
+        "explicit_number": 8,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:009",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 9 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02398"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02398",
+          "text": "9.    People in my city - go to the movies – rarely ………………………..……………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 9,
+      "source_span": {
+        "paragraph_id": "P02398",
+        "start": 450,
+        "end": 542,
+        "explicit_number": 9,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:010",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 10 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02399"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02399",
+          "text": "10. People in my city -  go to the movies - nowadays   ………………….…………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 10,
+      "source_span": {
+        "paragraph_id": "P02399",
+        "start": 0,
+        "end": 90,
+        "explicit_number": 10,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:011",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 11 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02399"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02399",
+          "text": "11. The maid - cook - hardly ever ………………………………………..……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 11,
+      "source_span": {
+        "paragraph_id": "P02399",
+        "start": 90,
+        "end": 171,
+        "explicit_number": 11,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:012",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 12 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02399"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02399",
+          "text": "12. The maid - cook - right now    ………………………………………….…………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 12,
+      "source_span": {
+        "paragraph_id": "P02399",
+        "start": 171,
+        "end": 250,
+        "explicit_number": 12,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:013",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 13 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02399"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02399",
+          "text": "13. The group - live in Paris – nowadays ………………………………..……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 13,
+      "source_span": {
+        "paragraph_id": "P02399",
+        "start": 250,
+        "end": 335,
+        "explicit_number": 13,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:014",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 14 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02399"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02399",
+          "text": "14. The group - live in Paris – now ……………………………………….……………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 14,
+      "source_span": {
+        "paragraph_id": "P02399",
+        "start": 335,
+        "end": 416,
+        "explicit_number": 14,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:015",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 15 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02400"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02400",
+          "text": "The majority of people - invest in the stock market – currently …..……………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 15,
+      "source_span": {
+        "paragraph_id": "P02400",
+        "start": 0,
+        "end": 96,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:016",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 16 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "The majority of people - invest in the stock market - right now …..……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 16,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 0,
+        "end": 97,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:017",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 17 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "17. The teenagers - go to the church - hardly ever …………………….……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 17,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 97,
+        "end": 187,
+        "explicit_number": 17,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:018",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 18 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "18. The teenagers - go to the church - once a month………………….………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 18,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 187,
+        "end": 274,
+        "explicit_number": 18,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:019",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 19 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "19.  She - see them - frequently…………………………………………………………………………………….……………………….. "
+        }
+      ],
+      "source_item_number": 19,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 274,
+        "end": 351,
+        "explicit_number": 19,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 20 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "20. She - see them - always……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 20,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 351,
+        "end": 421,
+        "explicit_number": 20,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:021",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 21 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "21.  I - speak to you - frequently……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 21,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 421,
+        "end": 498,
+        "explicit_number": 21,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:022",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 22 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "22.  I - speak to you - right now……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 22,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 498,
+        "end": 574,
+        "explicit_number": 22,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:023",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 23 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "23. They - swear – never ………………………………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 23,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 574,
+        "end": 648,
+        "explicit_number": 23,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 24 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "24.  They - swear -  all the time…………………………………………………………………………….………………………………… "
+        }
+      ],
+      "source_item_number": 24,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 648,
+        "end": 725,
+        "explicit_number": 24,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 25 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "25. He - read some books – always ……………………………………..……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 25,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 725,
+        "end": 805,
+        "explicit_number": 25,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:026",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 26 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "26.  He - read some books - now and then……………………………………………………………...…………………………………… "
+        }
+      ],
+      "source_item_number": 26,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 805,
+        "end": 886,
+        "explicit_number": 26,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:027",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 27 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "27. We both - speak English - frequently……………………………………………………………………………………………...…… "
+        }
+      ],
+      "source_item_number": 27,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 886,
+        "end": 967,
+        "explicit_number": 27,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:028",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 28 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "28. We both - speak English - at this very moment………………………………………………………………………………………. "
+        }
+      ],
+      "source_item_number": 28,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 967,
+        "end": 1051,
+        "explicit_number": 28,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:029",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 29 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "29. My entire family - eat fish - almost never …………………………...……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 29,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 1051,
+        "end": 1141,
+        "explicit_number": 29,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:030",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 30 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "30. My entire family - eat fish - at the moment ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 30,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 1141,
+        "end": 1229,
+        "explicit_number": 30,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:031",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 31 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "31. Women - do nails - once a month ………………………………….……………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 31,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 1229,
+        "end": 1309,
+        "explicit_number": 31,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:032",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 32 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "32.  Women - do nails - every other day………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 32,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 1309,
+        "end": 1388,
+        "explicit_number": 32,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:033",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 33 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02401",
+          "text": "33. My children - listen to music - pretty often ………………………….………………………………………………………………………."
+        }
+      ],
+      "source_item_number": 33,
+      "source_span": {
+        "paragraph_id": "P02401",
+        "start": 1388,
+        "end": 1476,
+        "explicit_number": 33,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:034",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 34 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02402"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02402",
+          "text": "34. My children - listen to music - every single day………………………………………..…………………………………………….. "
+        }
+      ],
+      "source_item_number": 34,
+      "source_span": {
+        "paragraph_id": "P02402",
+        "start": 0,
+        "end": 89,
+        "explicit_number": 34,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:035",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 35 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02402"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02402",
+          "text": "35. My aunt - sing a song - almost never………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 35,
+      "source_span": {
+        "paragraph_id": "P02402",
+        "start": 89,
+        "end": 169,
+        "explicit_number": 35,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:036",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 36 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02402"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02402",
+          "text": "36. My aunt - sing a song - every other day ………………...…………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 36,
+      "source_span": {
+        "paragraph_id": "P02402",
+        "start": 169,
+        "end": 255,
+        "explicit_number": 36,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:037",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 37 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02402"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02402",
+          "text": "37. Forgetful people - buy a new lighter - always……………………………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 37,
+      "source_span": {
+        "paragraph_id": "P02402",
+        "start": 255,
+        "end": 339,
+        "explicit_number": 37,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:038",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 38 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02403"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02403",
+          "text": "Forgetfull people - buy a new lighter - every other day…………………………..……………………………………………….."
+        }
+      ],
+      "source_item_number": 38,
+      "source_span": {
+        "paragraph_id": "P02403",
+        "start": 0,
+        "end": 87,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:039",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 39 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02404"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02404",
+          "text": "The director - open the mailbox - every single day ……………..…………………………………………………………………………. "
+        }
+      ],
+      "source_item_number": 39,
+      "source_span": {
+        "paragraph_id": "P02404",
+        "start": 0,
+        "end": 88,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:040",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 40 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02404"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02404",
+          "text": "40.  The director - open the mailbox - every month……………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 40,
+      "source_span": {
+        "paragraph_id": "P02404",
+        "start": 88,
+        "end": 174,
+        "explicit_number": 40,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:041",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 41 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02404"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02404",
+          "text": "41. The ombudsman - answer e-mails - every other day ……………………………………...……………………………………………….. "
+        }
+      ],
+      "source_item_number": 41,
+      "source_span": {
+        "paragraph_id": "P02404",
+        "start": 174,
+        "end": 265,
+        "explicit_number": 41,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:042",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 42 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02404"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02404",
+          "text": "42.  The ombudsman - answer e-mails - this Sunday    ……………………………………………………………………….……………… "
+        }
+      ],
+      "source_item_number": 42,
+      "source_span": {
+        "paragraph_id": "P02404",
+        "start": 265,
+        "end": 353,
+        "explicit_number": 42,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:043",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 43 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02404"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02404",
+          "text": "43. The dancers - dance - right now ……………………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 43,
+      "source_span": {
+        "paragraph_id": "P02404",
+        "start": 353,
+        "end": 434,
+        "explicit_number": 43,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:044",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 44 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02404"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02404",
+          "text": "44. The dancers - dance - twice a day……………………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 44,
+      "source_span": {
+        "paragraph_id": "P02404",
+        "start": 434,
+        "end": 509,
+        "explicit_number": 44,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:045",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 45 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02405"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02405",
+          "text": "The sales people - sell the same amount - every month……………………………………………………………………………."
+        }
+      ],
+      "source_item_number": 45,
+      "source_span": {
+        "paragraph_id": "P02405",
+        "start": 0,
+        "end": 83,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:046",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 46 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02406"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02406",
+          "text": "The sales people - sell the same amount - everyday ……………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 46,
+      "source_span": {
+        "paragraph_id": "P02406",
+        "start": 0,
+        "end": 87,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:047",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 47 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02406"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02406",
+          "text": "47. I - travel - this Sunday …………………………………………………………………………….…………………………………………….. "
+        }
+      ],
+      "source_item_number": 47,
+      "source_span": {
+        "paragraph_id": "P02406",
+        "start": 87,
+        "end": 166,
+        "explicit_number": 47,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:048",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 48 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02406"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02406",
+          "text": "48. I - travel - each two years………………………………………………………………………………………………………………."
+        }
+      ],
+      "source_item_number": 48,
+      "source_span": {
+        "paragraph_id": "P02406",
+        "start": 166,
+        "end": 240,
+        "explicit_number": 48,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:049",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 49 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02407"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02407",
+          "text": "49. People in general - have shower - every other month……………………………………………………………………………            "
+        }
+      ],
+      "source_item_number": 49,
+      "source_span": {
+        "paragraph_id": "P02407",
+        "start": 0,
+        "end": 96,
+        "explicit_number": 49,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:050",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 50 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02407"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02407",
+          "text": "50. People in general - have shower - twice a day………………………………………………………………………………………."
+        }
+      ],
+      "source_item_number": 50,
+      "source_span": {
+        "paragraph_id": "P02407",
+        "start": 96,
+        "end": 179,
+        "explicit_number": 50,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:051",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 51 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02412"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02412",
+          "text": "The whole department - have a meeting - everyday………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 51,
+      "source_span": {
+        "paragraph_id": "P02412",
+        "start": 0,
+        "end": 81,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:052",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 52 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "The whole department - have a meeting - often……………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 52,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 0,
+        "end": 79,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:053",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 53 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "53. They - update the system - each two years ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 53,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 79,
+        "end": 165,
+        "explicit_number": 53,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:054",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 54 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "54. They - update the system - at the moment ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 54,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 165,
+        "end": 250,
+        "explicit_number": 54,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:055",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 55 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "55. The prices - increase - every other month ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 55,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 250,
+        "end": 336,
+        "explicit_number": 55,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 56 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "56. The prices - increase - all the time ……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 56,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 336,
+        "end": 420,
+        "explicit_number": 56,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:057",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 57 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "57. She - put on make up - often……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 57,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 420,
+        "end": 495,
+        "explicit_number": 57,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:058",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 58 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "58. She - put on make up - at this moment     ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 58,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 495,
+        "end": 581,
+        "explicit_number": 58,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:059",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 59 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "59. My grandmother  - make cake - at the moment……………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 59,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 581,
+        "end": 662,
+        "explicit_number": 59,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:060",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 60 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "60. My grandmother  - make cake - now and then……………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 60,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 662,
+        "end": 742,
+        "explicit_number": 60,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:061",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 61 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "61. The girl - do that - all the time    ……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 61,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 742,
+        "end": 826,
+        "explicit_number": 61,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:062",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 62 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "62. The girl - do that - after the meals ……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 62,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 826,
+        "end": 910,
+        "explicit_number": 62,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:063",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 63 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "63. The boss - write a message - every night  ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 63,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 910,
+        "end": 996,
+        "explicit_number": 63,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:064",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 64 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "64. The boss - write a message - at this moment ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 64,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 996,
+        "end": 1084,
+        "explicit_number": 64,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:065",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 65 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "65. My family - visit them - now and then………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 65,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 1084,
+        "end": 1165,
+        "explicit_number": 65,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:066",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 66 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "66. My family - visit them - every morning………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 66,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 1165,
+        "end": 1247,
+        "explicit_number": 66,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:067",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 67 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02413"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02413",
+          "text": "67. The little girl - brush her teeth - ritually………………………………………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 67,
+      "source_span": {
+        "paragraph_id": "P02413",
+        "start": 1247,
+        "end": 1334,
+        "explicit_number": 67,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:068",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 68 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02414"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02414",
+          "text": "The little girl - brush her teeth - after the meals………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 68,
+      "source_span": {
+        "paragraph_id": "P02414",
+        "start": 0,
+        "end": 84,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:069",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 69 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02415"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02415",
+          "text": "Everybody - set the alarm clock on - every single year ………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 69,
+      "source_span": {
+        "paragraph_id": "P02415",
+        "start": 0,
+        "end": 88,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:070",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 70 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02416"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02416",
+          "text": "Everybody - set  the alarm clock on - every night………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 70,
+      "source_span": {
+        "paragraph_id": "P02416",
+        "start": 0,
+        "end": 82,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:071",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 71 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02417"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02417",
+          "text": "All the people - set the alarm clock off - at this specific moment …………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 71,
+      "source_span": {
+        "paragraph_id": "P02417",
+        "start": 0,
+        "end": 95,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:072",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 72 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02418"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02418",
+          "text": "All the people - set the alarm clock off - every morning……………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 72,
+      "source_span": {
+        "paragraph_id": "P02418",
+        "start": 0,
+        "end": 90,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:073",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 73 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02418"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02418",
+          "text": "73. The receptionist - organize things - regularly ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 73,
+      "source_span": {
+        "paragraph_id": "P02418",
+        "start": 90,
+        "end": 181,
+        "explicit_number": 73,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:074",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 74 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02418"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02418",
+          "text": "74. The receptionist - organize things - ritually ………………………………………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 74,
+      "source_span": {
+        "paragraph_id": "P02418",
+        "start": 181,
+        "end": 270,
+        "explicit_number": 74,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:075",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 75 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02419"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02419",
+          "text": "75. The team - go on vacation - every single year……………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 75,
+      "source_span": {
+        "paragraph_id": "P02419",
+        "start": 0,
+        "end": 83,
+        "explicit_number": 75,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:076",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 76 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02419"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02419",
+          "text": "76. The team - go on vacation - normally………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 76,
+      "source_span": {
+        "paragraph_id": "P02419",
+        "start": 83,
+        "end": 163,
+        "explicit_number": 76,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:077",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 77 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02419"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02419",
+          "text": "77.  I - study- this - at this specific moment     …………………………………………………………………………………………………. "
+        }
+      ],
+      "source_item_number": 77,
+      "source_span": {
+        "paragraph_id": "P02419",
+        "start": 163,
+        "end": 253,
+        "explicit_number": 77,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:078",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 78 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02419"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02419",
+          "text": "78. I - study- this - religiously…………………………………………………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 78,
+      "source_span": {
+        "paragraph_id": "P02419",
+        "start": 253,
+        "end": 329,
+        "explicit_number": 78,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:079",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 79 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02420"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02420",
+          "text": "My parents - donate money to charity - regularly…………………………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 79,
+      "source_span": {
+        "paragraph_id": "P02420",
+        "start": 0,
+        "end": 82,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:080",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 80 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02421"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02421",
+          "text": "My parents - donate money to charity - every other year…………………………………………………………………………. "
+        }
+      ],
+      "source_item_number": 80,
+      "source_span": {
+        "paragraph_id": "P02421",
+        "start": 0,
+        "end": 85,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:081",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 81 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02421"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02421",
+          "text": "81. I - prefer staying home - normally …………………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 81,
+      "source_span": {
+        "paragraph_id": "P02421",
+        "start": 85,
+        "end": 168,
+        "explicit_number": 81,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:082",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 82 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02421"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02421",
+          "text": "82. I - prefer staying home - straight away…………………………………………………………………………………………………."
+        }
+      ],
+      "source_item_number": 82,
+      "source_span": {
+        "paragraph_id": "P02421",
+        "start": 168,
+        "end": 249,
+        "explicit_number": 82,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:083",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 83 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02422"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02422",
+          "text": "She - phone all the friends at night - religiously……………………………………………………………………………………..."
+        }
+      ],
+      "source_item_number": 83,
+      "source_span": {
+        "paragraph_id": "P02422",
+        "start": 0,
+        "end": 85,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:084",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 84 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02423"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02423",
+          "text": "She - phone all the friends at night - repeatedly………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 84,
+      "source_span": {
+        "paragraph_id": "P02423",
+        "start": 0,
+        "end": 82,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:085",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 85 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02424"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02424",
+          "text": "The father - pick the kids up in the school - unconsciously………………………………………………………………………….."
+        }
+      ],
+      "source_item_number": 85,
+      "source_span": {
+        "paragraph_id": "P02424",
+        "start": 0,
+        "end": 89,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:086",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 86 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "The father - pick the kids up in the school - every other day     ………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 86,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 0,
+        "end": 97,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:087",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 87 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "87. The secretary - reply e-mails - straight away ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 87,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 97,
+        "end": 187,
+        "explicit_number": 87,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:088",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 88 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "88. The secretary - reply e-mails - right away  ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 88,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 187,
+        "end": 275,
+        "explicit_number": 88,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 89 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "89. The boy - know the answers - at the same time……………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 89,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 275,
+        "end": 358,
+        "explicit_number": 89,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 90 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "90. The boy - know the answers - right away   ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 90,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 358,
+        "end": 444,
+        "explicit_number": 90,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:091",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 91 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "91. We all - make this mistake - right now………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 91,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 444,
+        "end": 526,
+        "explicit_number": 91,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:092",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 92 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "92. We all - make this mistake - unconsciously ………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 92,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 526,
+        "end": 613,
+        "explicit_number": 92,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:093",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 93 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "93. He - itch the head – repeatedly  ……………………………………………………………………………………………………………… "
+        }
+      ],
+      "source_item_number": 93,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 613,
+        "end": 693,
+        "explicit_number": 93,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:094",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 94 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02425",
+          "text": "94. He - itch the head - in the morning ………………………………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 94,
+      "source_span": {
+        "paragraph_id": "P02425",
+        "start": 693,
+        "end": 775,
+        "explicit_number": 94,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:095",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 95 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02426"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02426",
+          "text": "They - watch tv and play with the kids - right now………………………………………………………………………………………"
+        }
+      ],
+      "source_item_number": 95,
+      "source_span": {
+        "paragraph_id": "P02426",
+        "start": 0,
+        "end": 83,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:096",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 96 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02427"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02427",
+          "text": "They - watch tv and play with the kids - at the same time………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 96,
+      "source_span": {
+        "paragraph_id": "P02427",
+        "start": 0,
+        "end": 88,
+        "explicit_number": null,
+        "navigation_number_derived": true
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:097",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 97 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02427"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02427",
+          "text": "97. I - run in the park - now …………………………………………………………………………………………………………………………. "
+        }
+      ],
+      "source_item_number": 97,
+      "source_span": {
+        "paragraph_id": "P02427",
+        "start": 88,
+        "end": 166,
+        "explicit_number": 97,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:098",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 98 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02427"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02427",
+          "text": "98. I - run in the park - on Sundays…………………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 98,
+      "source_span": {
+        "paragraph_id": "P02427",
+        "start": 166,
+        "end": 246,
+        "explicit_number": 98,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:099",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 99 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02427"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02427",
+          "text": "99. She - drink coffee - in the morning …………………………………………………………………………………………………………….. "
+        }
+      ],
+      "source_item_number": 99,
+      "source_span": {
+        "paragraph_id": "P02427",
+        "start": 246,
+        "end": 330,
+        "explicit_number": 99,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:SOURCE:ITEM:100",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+      "type": "SOURCE_EXERCISE",
+      "title": "Exercício 100 · Action / Movement",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02427"
+        ],
+        "note": "Texto preservado por segmento; numeração de navegação reconstituída quando ausente do texto extraído."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02427",
+          "text": "100.She - drink coffee - at the moment…………………………………………………………………………………………………."
+        }
+      ],
+      "source_item_number": 100,
+      "source_span": {
+        "paragraph_id": "P02427",
+        "start": 330,
+        "end": 406,
+        "explicit_number": 100,
+        "navigation_number_derived": false
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ],
+      "source_languages": [
+        "en"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:STUDY:ROUTINE-PROGRESS",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:STUDY",
+      "type": "CONTRAST",
+      "title": "Rotina e ação em progresso",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02396"
+        ],
+        "note": "Estudo complementar EN/ES/PT; não substitui nem completa o gabarito original."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:MOVEMENT:ROUTINE",
+          "text": {
+            "en": "They read every evening.",
+            "es": "Ellos leen todas las noches.",
+            "pt": "Eles leem todas as noites."
+          },
+          "targets": {
+            "en": "read",
+            "es": "leen",
+            "pt": "leem"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        },
+        {
+          "id": "MVP:SENT:MOVEMENT:NOW",
+          "text": {
+            "en": "They are reading now.",
+            "es": "Ellos están leyendo ahora.",
+            "pt": "Eles estão lendo agora."
+          },
+          "targets": {
+            "en": "are reading",
+            "es": "están leyendo",
+            "pt": "estão lendo"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "body": {
+        "en": "Compare the meaning of a routine with an action in progress. ACTION and MOVEMENT are labels in the author’s teaching model.",
+        "es": "Compara el sentido de una rutina con una acción en curso. ACTION y MOVEMENT son etiquetas del modelo didáctico del autor.",
+        "pt": "Compare o sentido de rotina com o de uma ação em progresso. ACTION e MOVEMENT são rótulos do modelo didático autoral."
+      },
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE",
+        "MVP:CH:ACTION-PRESENT"
+      ]
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:STUDY:STATIVE",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:STUDY",
+      "type": "EXAMPLE",
+      "title": "Know · o contexto não depende só do advérbio",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02425"
+        ],
+        "note": "Estudo complementar EN/ES/PT; não substitui nem completa o gabarito original."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:MOVEMENT:KNOW",
+          "text": {
+            "en": "I know the answer now.",
+            "es": "Ahora sé la respuesta.",
+            "pt": "Agora eu sei a resposta."
+          },
+          "targets": {
+            "en": "know",
+            "es": "sé",
+            "pt": "sei"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "body": {
+        "en": "Here know describes a state of knowledge. Now does not require a progressive form. Consider the verb’s meaning and the full context.",
+        "es": "Aquí know describe un estado de conocimiento. Now no exige una forma progresiva. Considera el sentido del verbo y todo el contexto.",
+        "pt": "Aqui know descreve um estado de conhecimento. Now não exige uma forma progressiva. Considere o sentido do verbo e o contexto completo."
+      }
+    },
+    {
+      "id": "MVP:UNIT:MOVEMENT:STUDY:ALWAYS",
+      "chapter_id": "MVP:CH:MOVEMENT",
+      "section_id": "MVP:SEC:MOVEMENT:STUDY",
+      "type": "CONTRAST",
+      "title": "Always · hábitos e repetição expressiva",
+      "revision": 1,
+      "source_layer": "ADAPTATION",
+      "review_status": "PENDING_HOMOLOGATION",
+      "provenance": {
+        "kind": "SIYAYO_ADAPTATION",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02401",
+          "P02413"
+        ],
+        "note": "Estudo complementar EN/ES/PT; não substitui nem completa o gabarito original."
+      },
+      "related_unit_ids": [
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+        "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "examples": [
+        {
+          "id": "MVP:SENT:MOVEMENT:ALWAYS-SIMPLE",
+          "text": {
+            "en": "He always arrives early.",
+            "es": "Él siempre llega temprano.",
+            "pt": "Ele sempre chega cedo."
+          },
+          "targets": {
+            "en": "arrives",
+            "es": "llega",
+            "pt": "chega"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        },
+        {
+          "id": "MVP:SENT:MOVEMENT:ALWAYS-PROGRESS",
+          "text": {
+            "en": "He is always interrupting me.",
+            "es": "Él siempre me está interrumpiendo.",
+            "pt": "Ele está sempre me interrompendo."
+          },
+          "targets": {
+            "en": "is always interrupting",
+            "es": "siempre me está interrumpiendo",
+            "pt": "está sempre me interrompendo"
+          },
+          "word_type": "VERB → verbo → verbo",
+          "tense": "PRESENT",
+          "mode": "AFFIRMATIVE"
+        }
+      ],
+      "body": {
+        "en": "Both patterns are possible. The progressive can express a speaker’s attitude toward repeated behavior; always alone does not decide the pattern.",
+        "es": "Ambos patrones son posibles. La forma progresiva puede expresar la actitud del hablante ante una conducta repetida; always por sí solo no decide el patrón.",
+        "pt": "Os dois padrões são possíveis. A forma progressiva pode expressar a atitude do falante diante de um comportamento repetido; always sozinho não decide o padrão."
+      }
     }
   ],
   "terms": [],
   "coverage": {
     "imported_original_chapters": 0,
     "adaptation_pilot_chapters": 1,
-    "original_images_imported": 1,
+    "original_images_imported": 28,
     "original_integral_mapping": "PENDING_OTHER_CHAPTERS_AND_VISUAL_RECONSTRUCTION",
-    "notes": "Bloco textual EXISTENCE mapeado. Recomposição visual, caixas e mesclagens não homologadas. Não há tradução ES da fonte original.",
+    "notes": "Cinco capítulos com cobertura parcial. Métricas verificáveis em data/coverage-report.json; disponibilidade de capítulos não equivale a percentual de conteúdo.",
     "original_existence_text_block": "P11776–P12083",
     "original_existence_source_units": 33,
     "original_existence_tables": 5,
@@ -18873,7 +23481,24 @@
       "raster_references": 0,
       "chapter_completeness": "PARTIAL",
       "next_pending": "P02394 Action Versus Movement"
-    }
+    },
+    "movement": {
+      "bounds": [
+        "P02394",
+        "P02429"
+      ],
+      "paragraphs_classified": 36,
+      "source_units": 101,
+      "adaptation_units": 3,
+      "source_items": 100,
+      "solved_models": 4,
+      "exercises": 96,
+      "tables": 0,
+      "raster_references": 0,
+      "chapter_completeness": "PARTIAL",
+      "next_pending": "P02430 QUALITY & STATE"
+    },
+    "report": "data/coverage-report.json"
   },
   "editorial_issues": [
     {
@@ -19183,6 +23808,53 @@
           "P02080"
         ],
         "observation": "A numeração ocupa a primeira coluna sob QW. Não reinterpretar os números como Question Words; a revisão gráfica deverá separar identificação e função sintática.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      }
+    ],
+    "MVP:CH:MOVEMENT": [
+      {
+        "id": "MVP:REVIEW:MV:001",
+        "source_ids": [
+          "P02406",
+          "P02412"
+        ],
+        "observation": "Everyday aparece em função adverbial: estudar every day na revisão, preservando a fonte.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:MV:002",
+        "source_ids": [
+          "P02406",
+          "P02413"
+        ],
+        "observation": "Each two years requer revisão de naturalidade: considerar every two years.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:MV:003",
+        "source_ids": [
+          "P02425"
+        ],
+        "observation": "Know, itch the head e pick the kids up in the school exigem revisão semântica/contextual. Não completar frases por associação mecânica ao advérbio.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:MV:004",
+        "source_ids": [
+          "P02415",
+          "P02416",
+          "P02417",
+          "P02418"
+        ],
+        "observation": "Set the alarm clock on/off precisa distinguir acertar o horário e ativar/desativar o alarme conforme o contexto.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:MV:005",
+        "source_ids": [
+          "P02410"
+        ],
+        "observation": "Título intermediário preservado. A numeração ausente do texto extraído foi reconstituída apenas para navegação; offsets registram cada segmento.",
         "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
       }
     ]

@@ -1,0 +1,138 @@
+{
+  "id": "MVP:COVERAGE",
+  "date": "2026-10-29",
+  "catalog_version": "0.9.0",
+  "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+  "scope": "Development branch only; partial modular source coverage; not main or full editorial/print approval",
+  "method": "Unique original paragraph IDs linked to units; character count uses those full source paragraphs once. Whitespace-only paragraphs excluded from textual paragraph metric. Includes repeated source text present in DOCX XML; not page coverage or a quality score.",
+  "text_characters": {
+    "integrated": 31168,
+    "total": 304836,
+    "percent": 10.224514164993636
+  },
+  "text_paragraphs": {
+    "integrated": 965,
+    "total": 11072,
+    "percent": 8.715679190751445
+  },
+  "classified_xml_paragraphs": {
+    "mapped": 1841,
+    "total": 20649,
+    "percent": 8.915685989636302
+  },
+  "source_tables": {
+    "integrated": 18,
+    "total": 168,
+    "percent": 10.714285714285714
+  },
+  "raster_unique_files": {
+    "preserved": 28,
+    "total": 237,
+    "visual_reconstruction": "PENDING"
+  },
+  "navigation": {
+    "available_partial_chapters": 5,
+    "planned_chapters": 10,
+    "total": 15,
+    "note": "Do not use chapter ratio as content completion"
+  },
+  "baseline_mvp09": {
+    "text_paragraphs": 935,
+    "text_paragraph_percent": 8.444725433526012,
+    "text_characters": 22667,
+    "text_character_percent": 7.4358015457491895
+  },
+  "units": 374,
+  "chapters": [
+    {
+      "id": "MVP:CH:ORIENTATION",
+      "title": "Orientação e itinerário",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:FOUNDATIONS",
+      "title": "Fundamentos",
+      "state": "PARTIAL_AVAILABLE",
+      "linked_text_paragraphs": 183
+    },
+    {
+      "id": "MVP:CH:TOOLS",
+      "title": "Ferramentas da língua",
+      "state": "PARTIAL_AVAILABLE",
+      "linked_text_paragraphs": 110
+    },
+    {
+      "id": "MVP:CH:TO-BE",
+      "title": "To Be",
+      "state": "PARTIAL_AVAILABLE",
+      "linked_text_paragraphs": 460
+    },
+    {
+      "id": "MVP:CH:QUESTIONS",
+      "title": "Question Words",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:MOVEMENT",
+      "title": "Movement",
+      "state": "PARTIAL_AVAILABLE",
+      "linked_text_paragraphs": 30
+    },
+    {
+      "id": "MVP:CH:ACTION-PRESENT",
+      "title": "Action · Present",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:ACTION-FUTURE",
+      "title": "Action · Future",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:ACTION-PAST",
+      "title": "Action · Past",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:PERFECT-PERIOD",
+      "title": "Perfect e Period",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:EXISTENCE",
+      "title": "Existence · There + To Be",
+      "state": "PARTIAL_AVAILABLE",
+      "linked_text_paragraphs": 182
+    },
+    {
+      "id": "MVP:CH:VERBAL-SYSTEMS",
+      "title": "Sistemas verbais",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:WORD-CLASSES",
+      "title": "Classes de palavras",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:VERB-LEXICON",
+      "title": "Studying Verbs",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    },
+    {
+      "id": "MVP:CH:REFERENCE",
+      "title": "Referências e glossários",
+      "state": "NOT_INTEGRATED",
+      "linked_text_paragraphs": 0
+    }
+  ]
+}

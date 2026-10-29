@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.8.0",
+  "catalog_version": "0.9.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -466,9 +466,192 @@
     },
     {
       "id": "MVP:CH:MOVEMENT",
-      "status": "PLANNED",
-      "source_map": null,
-      "sections": []
+      "status": "SOURCE_AND_STUDY",
+      "source_map": "data/movement-source-map.json",
+      "sections": [
+        {
+          "id": "MVP:SEC:MOVEMENT:STUDY",
+          "title": "Estudo · Rotina, progresso e contexto",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:STUDY:ROUTINE-PROGRESS",
+            "MVP:UNIT:MOVEMENT:STUDY:STATIVE",
+            "MVP:UNIT:MOVEMENT:STUDY:ALWAYS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:INTRO",
+          "title": "Original · INTRO",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:MODELS",
+          "title": "Original · MODELS",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:001",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:002",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:003",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:004"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-01-10",
+          "title": "Original · itens 01-10",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:005",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:006",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:007",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:008",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:009",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:010"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-11-20",
+          "title": "Original · itens 11-20",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:011",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:012",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:013",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:014",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:015",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:016",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:017",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:018",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:019",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:020"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-21-30",
+          "title": "Original · itens 21-30",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:021",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:022",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:023",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:024",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:025",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:026",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:027",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:028",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:029",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:030"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-31-40",
+          "title": "Original · itens 31-40",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:031",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:032",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:033",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:034",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:035",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:036",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:037",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:038",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:039",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:040"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-41-50",
+          "title": "Original · itens 41-50",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:041",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:042",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:043",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:044",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:045",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:046",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:047",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:048",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:049",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:050"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-51-60",
+          "title": "Original · itens 51-60",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:051",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:052",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:053",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:054",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:055",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:056",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:057",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:058",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:059",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:060"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-61-70",
+          "title": "Original · itens 61-70",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:061",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:062",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:063",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:064",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:065",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:066",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:067",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:068",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:069",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:070"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-71-80",
+          "title": "Original · itens 71-80",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:071",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:072",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:073",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:074",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:075",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:076",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:077",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:078",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:079",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:080"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-81-90",
+          "title": "Original · itens 81-90",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:081",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:082",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:083",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:084",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:085",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:086",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:087",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:088",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:089",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:090"
+          ]
+        },
+        {
+          "id": "MVP:SEC:MOVEMENT:ITEMS-91-100",
+          "title": "Original · itens 91-100",
+          "unit_ids": [
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:091",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:092",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:093",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:094",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:095",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:096",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:097",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:098",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:099",
+            "MVP:UNIT:MOVEMENT:SOURCE:ITEM:100"
+          ]
+        }
+      ]
     },
     {
       "id": "MVP:CH:ACTION-PRESENT",
@@ -738,5 +921,21 @@
     "raster_references": 0,
     "chapter_completeness": "PARTIAL",
     "next_pending": "P02394 Action Versus Movement"
+  },
+  "movement": {
+    "bounds": [
+      "P02394",
+      "P02429"
+    ],
+    "paragraphs_classified": 36,
+    "source_units": 101,
+    "adaptation_units": 3,
+    "source_items": 100,
+    "solved_models": 4,
+    "exercises": 96,
+    "tables": 0,
+    "raster_references": 0,
+    "chapter_completeness": "PARTIAL",
+    "next_pending": "P02430 QUALITY & STATE"
   }
 }
