@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -111,7 +111,7 @@
     {
       "id": "MVP:CH:TOOLS",
       "title": "Ferramentas da língua",
-      "description": "English Face, auxiliares, General view, Be/Do e ferramentas de mãos. Figuras e camadas originais com estudo complementar.",
+      "description": "English Face, auxiliares, General view, Be/Do e ferramentas de mãos. Figuras e camadas originais com estudo complementar. Noun Helpers: artigos, nomes próprios/comuns e demonstrativos; fonte em revisão.",
       "keywords": [
         "TOOLS",
         "Ferramentas da língua",
@@ -126,7 +126,15 @@
         "does",
         "did",
         "have to",
-        "be able to"
+        "be able to",
+        "noun helpers",
+        "a/an",
+        "this",
+        "that",
+        "these",
+        "those",
+        "nomes próprios",
+        "demonstrativos"
       ],
       "status": "SOURCE_AND_STUDY",
       "sections": [
@@ -228,6 +236,54 @@
           "unit_ids": [
             "MVP:UNIT:TOOLS:SOURCE:FIGURE:138"
           ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:INTRO",
+          "title": "Original · Noun Helpers",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "title": "Original · Noun Helpers · regras e exemplos",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+          "title": "Original · Useful Tools · explicações",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+          "title": "Original · Composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02730",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:TECHNICAL:I0089",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02761",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02782",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097"
+          ]
         }
       ],
       "source_map": "data/tools-source-map.json"
@@ -235,7 +291,7 @@
     {
       "id": "MVP:CH:TO-BE",
       "title": "To Be",
-      "description": "Comparações, 60 exercícios/respostas, QUALITY & STATE, ordem das frases, perguntas e imagens originais. Capítulo parcial.",
+      "description": "Comparações, 60 exercícios/respostas, QUALITY & STATE, ordem das frases, perguntas e imagens originais. Capítulo parcial. To be in your hand e remissões Personal Pronouns incorporados.",
       "keywords": [
         "TO-BE",
         "To Be",
@@ -264,7 +320,8 @@
         "from Brazil",
         "angry",
         "young",
-        "ordem das frases"
+        "ordem das frases",
+        "to be in your hand"
       ],
       "status": "SOURCE_AND_STUDY",
       "sections": [
@@ -599,6 +656,39 @@
             "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
             "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
             "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:HAND-HELPERS:INTRO",
+          "title": "Original · To be in your hand",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:HAND-HELPERS:PRONOUNS",
+          "title": "Original · Remissão Personal Pronouns",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+          "title": "Original · Composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02687",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02694",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088"
           ]
         }
       ],
@@ -25106,6 +25196,2232 @@
         }
       },
       "caption": "Original preservado: 734 × 388 px; 32.99 × 17.45 mm no desenho DOCX. Composição em camadas e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "To be in your hand",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02683"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02683",
+          "text": "To be in your hand"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:PRONOUNS",
+      "type": "SOURCE_TEXT",
+      "title": "Slide: Personal Pronouns · remissão original",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02719",
+          "P02722",
+          "P02725"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02719",
+          "text": "Slide: Personal PronounsSlide: Personal Pronouns"
+        },
+        {
+          "source_id": "P02722",
+          "text": "Slide: Personal Pronouns"
+        },
+        {
+          "source_id": "P02725",
+          "text": "Slide: Personal Pronouns"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "Useful Tools · Noun Helpers",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02728"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02728",
+          "text": "Useful Tools - Noun Helpers"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+      "type": "SOURCE_TEXT",
+      "title": "Noun Helpers · regras e exemplos em revisão",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02740",
+          "P02741",
+          "P02742",
+          "P02744",
+          "P02745",
+          "P02747",
+          "P02748"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02740",
+          "text": "Nome comum no singular nunca estará sozinho. Ex.:"
+        },
+        {
+          "source_id": "P02741",
+          "text": "The star A Star This star That star These stars Those stars"
+        },
+        {
+          "source_id": "P02742",
+          "text": "My star Carol’s star Some stars Any star No star One star Two stars"
+        },
+        {
+          "source_id": "P02744",
+          "text": "Nome comum no singular nunca terá dois acompanhantes. Ex.:"
+        },
+        {
+          "source_id": "P02745",
+          "text": "The my car is there."
+        },
+        {
+          "source_id": "P02747",
+          "text": "Nome próprio no singular sempre estará sozinho."
+        },
+        {
+          "source_id": "P02748",
+          "text": "Ex.: The Brazil."
+        }
+      ],
+      "source_table_id": "T0018",
+      "instructions": {
+        "en": "Source statements and examples await contextual review. Not every example below is a correct model.",
+        "es": "Las afirmaciones y los ejemplos de la fuente requieren revisión contextual. No todos los ejemplos siguientes son modelos correctos.",
+        "pt": "As afirmações e os exemplos da fonte aguardam revisão contextual. Nem todo exemplo abaixo é um modelo correto."
+      },
+      "editorial_instructions": true
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Useful Tools · abertura",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02751"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02751",
+          "text": "USEFUL TOOLS"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Nomes próprios · definição e exemplo",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02753",
+          "P02754"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02753",
+          "text": "NOMES PRÓPRIOS (nome escolhido “de batismo”)."
+        },
+        {
+          "source_id": "P02754",
+          "text": "Ex.: Susan is my teacher. Susan é minha professora."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Nomes comuns · definição e exemplos",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02756"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02756",
+          "text": "NOMES COMUNS (nome da classe): Nome de coisas, animais e ideias. Ex.: mulher, professora, mesa, cadeira, gato, escola, projeto, sistema, confusão, ideia, etc. Ex.: Susan é minha professora. Susan is my teacher."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Artigos · introdução",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02758"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02758",
+          "text": "ARTIGOS: (usados para acompanhar nomes comuns)"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "A · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02760",
+          "P02761"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02760",
+          "text": "“A / AN” - Indefinido: O objeto não está definido. Ex.: I watched a movie. Eu assisti a um filme."
+        },
+        {
+          "source_id": "P02761",
+          "text": "a + consoantes:a book – a doctor – a teacher – a student – a movie – a house – a horse."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "An · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02765"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02765",
+          "text": "an + vogais:an elephant – an egg – an orange – an engineer – an umbrella – an ant."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "The · exemplos originais",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02767"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02767",
+          "text": "“THE” - Definido: O objeto é definido. Ex.: The movie was very good. O filme foi muito bom. Em inglês o artigo não varia entre singular ou plural. Ex.: The teacher. The teachers. Em inglês o artigo não varia entre masculino ou feminino. Ex.: The boy. The girl."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Artigos e nomes · observações em revisão",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02769",
+          "P02770",
+          "P02771",
+          "P02772"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02769",
+          "text": "Importante:"
+        },
+        {
+          "source_id": "P02770",
+          "text": "Em português colocamos artigo antes de nomes próprios.Ex.: A Susan é minha professora."
+        },
+        {
+          "source_id": "P02771",
+          "text": "Em inglês não existe artigo antes de nome próprio.Ex.: The Susan is my teacher."
+        },
+        {
+          "source_id": "P02772",
+          "text": "Em inglês não existe artigo antes de pronomes.Ex.: The my bag is blue."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Demonstrativos · proximidade e referência",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02774",
+          "P02776",
+          "P02777",
+          "P02779",
+          "P02781"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02774",
+          "text": "4 – PRONOMES DEMONSTRATIVOS:"
+        },
+        {
+          "source_id": "P02776",
+          "text": "Mostram o objeto ou a ideia (perto ou longe – singular ou plural)."
+        },
+        {
+          "source_id": "P02777",
+          "text": "Ex.: That is my car. Aquele é meu carro. That is not right. Isso não está certo."
+        },
+        {
+          "source_id": "P02779",
+          "text": "Fazem referência ao objeto/assunto mencionado. Ex.: That is a good idea. Essa é uma boa ideia."
+        },
+        {
+          "source_id": "P02781",
+          "text": "Não existe isto, isso ou aquilo em inglês. Ex.: That is terrible. Isso é terrível."
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+      "type": "SOURCE_TEXT",
+      "title": "Nouns / Articles / Demonstratives · remissões",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02782",
+          "P02785",
+          "P02786",
+          "P02787",
+          "P02790",
+          "P02791",
+          "P02792"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "P02782",
+          "text": "NounsSlide: Singular and Plural ArticlesDemonstrativesNounsSlide: Singular and Plural ArticlesDemonstratives"
+        },
+        {
+          "source_id": "P02785",
+          "text": "Nouns"
+        },
+        {
+          "source_id": "P02786",
+          "text": "Slide: Singular and Plural Articles"
+        },
+        {
+          "source_id": "P02787",
+          "text": "Demonstratives"
+        },
+        {
+          "source_id": "P02790",
+          "text": "Nouns"
+        },
+        {
+          "source_id": "P02791",
+          "text": "Slide: Singular and Plural Articles"
+        },
+        {
+          "source_id": "P02792",
+          "text": "Demonstratives"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02687",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02687",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02687"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:HAND-HELPERS:P02687",
+        "paragraph_id": "P02687",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "4e166d50f85cd0c2f9f86eb80d87aa52967350ddcf516555c62f54ca1e9ae1a8",
+        "xml_src": "assets/source-xml/hand-helpers-P02687.xml",
+        "object_names": [
+          "image166.png",
+          "image175.png",
+          "image209.png",
+          "Group 108",
+          "Rectangle 109",
+          "Freeform 110",
+          "Freeform 111",
+          "Freeform 112",
+          "Freeform 117"
+        ],
+        "container_extents": [
+          {
+            "cx": "1101236",
+            "cy": "214312"
+          },
+          {
+            "cx": "871321",
+            "cy": "266700"
+          },
+          {
+            "cx": "1996643",
+            "cy": "199167"
+          },
+          {
+            "cx": "149225",
+            "cy": "214630"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId151",
+            "path": "word/media/image147.png",
+            "sha256": "0e82642f25d12c3d27a15a7e6ccd4efa48e5db17e5b78eafa0dd91ce7f1c7e65",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId152",
+            "path": "word/media/image148.png",
+            "sha256": "915787dbf1a9799a79c3c39fc21b77b1b2caa3e11beb22e2bc28783c9b4e5a21",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId153",
+            "path": "word/media/image149.png",
+            "sha256": "7e10c0742e4d483fd7798b5b83912160265825a7b869b8de8d846604699b355e",
+            "representation": "blip"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Affirmative",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02687"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0079"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0079",
+        "src": "assets/master-hand-helpers-image147.png",
+        "source_filename": "image147.png",
+        "width": 231,
+        "height": 45,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "0e82642f25d12c3d27a15a7e6ccd4efa48e5db17e5b78eafa0dd91ce7f1c7e65",
+        "original_width_mm": 30.59,
+        "original_height_mm": 5.95,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Affirmative label.",
+          "es": "Rótulo Affirmative.",
+          "pt": "Imagem didática original: Affirmative"
+        }
+      },
+      "caption": "Original preservado: 231 × 45 px; 30.59 × 5.95 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Negative",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02687"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0080"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0080",
+        "src": "assets/master-hand-helpers-image148.png",
+        "source_filename": "image148.png",
+        "width": 183,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "915787dbf1a9799a79c3c39fc21b77b1b2caa3e11beb22e2bc28783c9b4e5a21",
+        "original_width_mm": 24.2,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Negative label.",
+          "es": "Rótulo Negative.",
+          "pt": "Imagem didática original: Negative"
+        }
+      },
+      "caption": "Original preservado: 183 × 56 px; 24.2 × 7.41 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Interrogative",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02687"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0081"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0081",
+        "src": "assets/master-hand-helpers-image149.png",
+        "source_filename": "image149.png",
+        "width": 418,
+        "height": 41,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "7e10c0742e4d483fd7798b5b83912160265825a7b869b8de8d846604699b355e",
+        "original_width_mm": 55.46,
+        "original_height_mm": 5.53,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Interrogative label.",
+          "es": "Rótulo Interrogative.",
+          "pt": "Imagem didática original: Interrogative"
+        }
+      },
+      "caption": "Original preservado: 418 × 41 px; 55.46 × 5.53 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02694",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02694",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:HAND-HELPERS:P02694",
+        "paragraph_id": "P02694",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "8f5c106347354083e287b3e55a291f328ee403c5f68a15630f5dba18ae1880b6",
+        "xml_src": "assets/source-xml/hand-helpers-P02694.xml",
+        "object_names": [
+          "Group 119",
+          "Rectangle 121",
+          "Shape 564",
+          "Shape 565",
+          "Freeform 124",
+          "Freeform 125",
+          "Freeform 126",
+          "Freeform 127",
+          "Freeform 352",
+          "Freeform 353",
+          "Freeform 354",
+          "Freeform 355",
+          "Freeform 356",
+          "Freeform 357",
+          "Freeform 358",
+          "Freeform 359",
+          "Freeform 360",
+          "Freeform 361",
+          "Freeform 362",
+          "Freeform 363",
+          "Freeform 364",
+          "Freeform 365",
+          "Group 148",
+          "Rectangle 149",
+          "Shape 713",
+          "Freeform 150",
+          "Freeform 151",
+          "Shape 716",
+          "Freeform 152",
+          "Freeform 153",
+          "Shape 719",
+          "Straight Arrow Connector 154",
+          "Rectangle 155",
+          "Shape 722",
+          "Freeform 156",
+          "Freeform 157",
+          "Freeform 158",
+          "Freeform 159",
+          "Freeform 160",
+          "Freeform 161",
+          "Freeform 162",
+          "Freeform 163",
+          "Freeform 165",
+          "Freeform 166",
+          "Freeform 167",
+          "Freeform 168",
+          "Freeform 170",
+          "Freeform 171",
+          "Freeform 172",
+          "Freeform 173",
+          "Freeform 174",
+          "Freeform 176",
+          "Freeform 177",
+          "Freeform 178",
+          "Freeform 179",
+          "Freeform 180",
+          "Freeform 181",
+          "Freeform 182"
+        ],
+        "container_extents": [
+          {
+            "cx": "2861945",
+            "cy": "3609975"
+          },
+          {
+            "cx": "2774315",
+            "cy": "3484245"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId154",
+            "path": "word/media/image150.png",
+            "sha256": "c0d8af563146029d112e05e1a7101f91cd185922130c6b6561c0e7f64eac998d",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId155",
+            "path": "word/media/image151.png",
+            "sha256": "b0b3dc99a24b65084786f6761aab5e20694ce962047fbdb7972e89bedd54cb1f",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId156",
+            "path": "word/media/image152.png",
+            "sha256": "c0d8af563146029d112e05e1a7101f91cd185922130c6b6561c0e7f64eac998d",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId157",
+            "path": "word/media/image153.png",
+            "sha256": "b0b3dc99a24b65084786f6761aab5e20694ce962047fbdb7972e89bedd54cb1f",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId158",
+            "path": "word/media/image154.jpg",
+            "sha256": "3b4dd315298e1daa22937171942fff24e241b9520f13d9653ec6e4ca3848c783",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId159",
+            "path": "word/media/image155.png",
+            "sha256": "de4e76b84094f4d581a7d50646fb46e5753b38df563fcbbe04ddbc13f14e7347",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId160",
+            "path": "word/media/image156.png",
+            "sha256": "6b8cfcea08ee30140c9f98271968faed236fd4d10213669b7113b39698df245c",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId161",
+            "path": "word/media/image157.png",
+            "sha256": "56c8ff6dab33b4bc53353c9ac8c0bbfa0f8084fc1070181aac7bb6188d7678b1",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId162",
+            "path": "word/media/image158.jpeg",
+            "sha256": "3b4dd315298e1daa22937171942fff24e241b9520f13d9653ec6e4ca3848c783",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId163",
+            "path": "word/media/image159.png",
+            "sha256": "de4e76b84094f4d581a7d50646fb46e5753b38df563fcbbe04ddbc13f14e7347",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId164",
+            "path": "word/media/image160.png",
+            "sha256": "6b8cfcea08ee30140c9f98271968faed236fd4d10213669b7113b39698df245c",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId165",
+            "path": "word/media/image161.png",
+            "sha256": "56c8ff6dab33b4bc53353c9ac8c0bbfa0f8084fc1070181aac7bb6188d7678b1",
+            "representation": "imagedata"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Mão no gesto de OK",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0082"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0082",
+        "src": "assets/master-hand-helpers-image150.png",
+        "source_filename": "image150.png",
+        "width": 232,
+        "height": 271,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "c0d8af563146029d112e05e1a7101f91cd185922130c6b6561c0e7f64eac998d",
+        "original_width_mm": 79.5,
+        "original_height_mm": 100.28,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Hand making an OK gesture.",
+          "es": "Mano haciendo el gesto de OK.",
+          "pt": "Imagem didática original: Mão no gesto de OK"
+        }
+      },
+      "caption": "Original preservado: 232 × 271 px; 79.5 × 100.28 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Camada is (not) / on the table",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0083"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0083",
+        "src": "assets/master-hand-helpers-image151.png",
+        "source_filename": "image151.png",
+        "width": 221,
+        "height": 268,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "b0b3dc99a24b65084786f6761aab5e20694ce962047fbdb7972e89bedd54cb1f",
+        "original_width_mm": 79.5,
+        "original_height_mm": 100.28,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: is not; on the table.",
+          "es": "Capa textual: is not; on the table.",
+          "pt": "Imagem didática original: Camada is (not) / on the table"
+        }
+      },
+      "caption": "Original preservado: 221 × 268 px; 79.5 × 100.28 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Mão aberta com rótulos",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0084"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0084",
+        "src": "assets/master-hand-helpers-image154.jpg",
+        "source_filename": "image154.jpg",
+        "width": 668,
+        "height": 838,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "3b4dd315298e1daa22937171942fff24e241b9520f13d9653ec6e4ca3848c783",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Open hand with teaching labels.",
+          "es": "Mano abierta con rótulos didácticos.",
+          "pt": "Imagem didática original: Mão aberta com rótulos"
+        }
+      },
+      "caption": "Original preservado: 668 × 838 px; 77.06 × 96.78 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Camada are · branco",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0085"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0085",
+        "src": "assets/master-hand-helpers-image155.png",
+        "source_filename": "image155.png",
+        "width": 76,
+        "height": 103,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "de4e76b84094f4d581a7d50646fb46e5753b38df563fcbbe04ddbc13f14e7347",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "spectral",
+        "alt": {
+          "en": "White text layer: are.",
+          "es": "Capa de texto blanco: are.",
+          "pt": "Imagem didática original: Camada are · branco"
+        }
+      },
+      "caption": "Original preservado: 76 × 103 px; 77.06 × 96.78 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Camada are · contorno",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0086"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0086",
+        "src": "assets/master-hand-helpers-image156.png",
+        "source_filename": "image156.png",
+        "width": 78,
+        "height": 105,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6b8cfcea08ee30140c9f98271968faed236fd4d10213669b7113b39698df245c",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Outlined text layer: are.",
+          "es": "Capa de texto delineado: are.",
+          "pt": "Imagem didática original: Camada are · contorno"
+        }
+      },
+      "caption": "Original preservado: 78 × 105 px; 77.06 × 96.78 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Fragmento s · branco",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02694"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0087"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0087",
+        "src": "assets/master-hand-helpers-image157.png",
+        "source_filename": "image157.png",
+        "width": 27,
+        "height": 51,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "56c8ff6dab33b4bc53353c9ac8c0bbfa0f8084fc1070181aac7bb6188d7678b1",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "spectral",
+        "alt": {
+          "en": "White letter s fragment.",
+          "es": "Fragmento de letra s en blanco.",
+          "pt": "Imagem didática original: Fragmento s · branco"
+        }
+      },
+      "caption": "Original preservado: 27 × 51 px; 77.06 × 96.78 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02719",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02719"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:HAND-HELPERS:P02719",
+        "paragraph_id": "P02719",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "313162633a7c8df9466f7d43db9dc3c435bed334c154792c56b94e33a8aa1879",
+        "xml_src": "assets/source-xml/hand-helpers-P02719.xml",
+        "object_names": [
+          "Group 184",
+          "Rectangle 185",
+          "Shape 702",
+          "Rectangle 186"
+        ],
+        "container_extents": [
+          {
+            "cx": "3860165",
+            "cy": "993775"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId142",
+            "path": "word/media/image138.jpg",
+            "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId143",
+            "path": "word/media/image139.jpeg",
+            "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+            "representation": "imagedata"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Remissão GO TO · mão indicadora",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02719"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TOOLS"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0088"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0088",
+        "src": "assets/master-existence-original.jpg",
+        "source_filename": "image138.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+        "original_width_mm": 107.23,
+        "original_height_mm": 27.6,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Pointing hand with GO TO label.",
+          "es": "Mano indicadora con rótulo GO TO.",
+          "pt": "Imagem didática original: Remissão GO TO · mão indicadora"
+        }
+      },
+      "caption": "Original preservado: 376 × 188 px; 107.23 × 27.6 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02730",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02730",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:HAND-HELPERS:P02730",
+        "paragraph_id": "P02730",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "5e7f37c5965279705946d9d7e7920b2b6d2d6f1347303bec2d85a4c2440773a6",
+        "xml_src": "assets/source-xml/hand-helpers-P02730.xml",
+        "object_names": [
+          "Group 367",
+          "Rectangle 368",
+          "Freeform 369",
+          "Freeform 370",
+          "Freeform 371",
+          "Freeform 372",
+          "image88.png",
+          "Group 375",
+          "Rectangle 376",
+          "Freeform 377",
+          "Freeform 381",
+          "Group 130",
+          "Rectangle 131",
+          "Shape 487",
+          "Shape 488",
+          "Shape 489",
+          "Freeform 137",
+          "Freeform 138",
+          "Freeform 139",
+          "Freeform 140",
+          "Freeform 141",
+          "Freeform 142",
+          "Freeform 143",
+          "Freeform 144",
+          "Freeform 145",
+          "Freeform 146",
+          "Freeform 147",
+          "Freeform 183",
+          "Freeform 187",
+          "Freeform 188",
+          "Freeform 189",
+          "Freeform 190",
+          "Freeform 191",
+          "Shape 507",
+          "Shape 508",
+          "Freeform 194",
+          "Shape 510",
+          "Shape 511",
+          "Freeform 197",
+          "Freeform 198",
+          "Freeform 199",
+          "Freeform 200",
+          "Freeform 201",
+          "Freeform 202",
+          "Freeform 203",
+          "Freeform 206"
+        ],
+        "container_extents": [
+          {
+            "cx": "403225",
+            "cy": "346710"
+          },
+          {
+            "cx": "74295",
+            "cy": "352425"
+          },
+          {
+            "cx": "74295",
+            "cy": "352425"
+          },
+          {
+            "cx": "146685",
+            "cy": "260350"
+          },
+          {
+            "cx": "4657725",
+            "cy": "3435350"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId166",
+            "path": "word/media/image880.png",
+            "sha256": "93a7509fccefc030676a5e5f3c549e04559ab7be404486fc554ae1ab5ab8df22",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId167",
+            "path": "word/media/image162.png",
+            "sha256": "878e54492f33f56fce8540ba23ed6e74c7a139392a511620020ff444b01007ac",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId168",
+            "path": "word/media/image163.png",
+            "sha256": "5c898613aab86bf0565e06061c1a2cd59e0f9634701e511cb38ec06cf724928d",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId169",
+            "path": "word/media/image164.png",
+            "sha256": "a1e7e7ba239d07c10339a337b65956f0225ac6d361a03608e6dcf225ba641ba6",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId170",
+            "path": "word/media/image165.png",
+            "sha256": "6f2bc1b24f7446fec7b5e36c5e1669281510cb5d7b9f45ae78c710d39f637285",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId171",
+            "path": "word/media/image166.png",
+            "sha256": "bed9a44cf6b9f476638c465990156673718981aaf68598b4a8ef965def257bb2",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId172",
+            "path": "word/media/image167.png",
+            "sha256": "68aff4c4474b4949d9e2ce86e792641616d67509dcffdf717f0631c0ac8ebbd6",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId173",
+            "path": "word/media/image168.png",
+            "sha256": "8b8c8478c1b10bbfabebce7cbbd6e6cf6722753e28d9e401e2d768aa7c456aec",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId174",
+            "path": "word/media/image169.png",
+            "sha256": "878e54492f33f56fce8540ba23ed6e74c7a139392a511620020ff444b01007ac",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId175",
+            "path": "word/media/image170.png",
+            "sha256": "5c898613aab86bf0565e06061c1a2cd59e0f9634701e511cb38ec06cf724928d",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId176",
+            "path": "word/media/image171.png",
+            "sha256": "a1e7e7ba239d07c10339a337b65956f0225ac6d361a03608e6dcf225ba641ba6",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId177",
+            "path": "word/media/image172.png",
+            "sha256": "6f2bc1b24f7446fec7b5e36c5e1669281510cb5d7b9f45ae78c710d39f637285",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId178",
+            "path": "word/media/image173.png",
+            "sha256": "bed9a44cf6b9f476638c465990156673718981aaf68598b4a8ef965def257bb2",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId179",
+            "path": "word/media/image174.png",
+            "sha256": "68aff4c4474b4949d9e2ce86e792641616d67509dcffdf717f0631c0ac8ebbd6",
+            "representation": "imagedata"
+          },
+          {
+            "relationship": "rId180",
+            "path": "word/media/image175.png",
+            "sha256": "8b8c8478c1b10bbfabebce7cbbd6e6cf6722753e28d9e401e2d768aa7c456aec",
+            "representation": "imagedata"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:TECHNICAL:I0089",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Referência técnica · pixel transparente",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0089"
+      ],
+      "visual_reference": {
+        "object_names": [
+          "Pixel RGBA 1 × 1; não é figura pedagógica."
+        ],
+        "reproduction_status": "TECHNICAL_PLACEHOLDER_PRESERVED"
+      },
+      "technical_asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0089",
+        "src": "assets/master-hand-helpers-image880.png",
+        "source_filename": "image880.png",
+        "width": 1,
+        "height": 1,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "93a7509fccefc030676a5e5f3c549e04559ab7be404486fc554ae1ab5ab8df22",
+        "original_width_mm": 2.06,
+        "original_height_mm": 9.79,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": true,
+        "presentation_matte": "spectral",
+        "alt": {
+          "en": "Technical transparent pixel.",
+          "es": "Píxel transparente técnico.",
+          "pt": "Imagem didática original: Pixel transparente técnico"
+        }
+      }
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "This / that / these / those",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0090"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0090",
+        "src": "assets/master-hand-helpers-image162.png",
+        "source_filename": "image162.png",
+        "width": 418,
+        "height": 52,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "878e54492f33f56fce8540ba23ed6e74c7a139392a511620020ff444b01007ac",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: this, that, these, those.",
+          "es": "Capa textual: this, that, these, those.",
+          "pt": "Imagem didática original: This / that / these / those"
+        }
+      },
+      "caption": "Original preservado: 418 × 52 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Some / any / no",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0091"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0091",
+        "src": "assets/master-hand-helpers-image163.png",
+        "source_filename": "image163.png",
+        "width": 242,
+        "height": 74,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5c898613aab86bf0565e06061c1a2cd59e0f9634701e511cb38ec06cf724928d",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: some, any, no.",
+          "es": "Capa textual: some, any, no.",
+          "pt": "Imagem didática original: Some / any / no"
+        }
+      },
+      "caption": "Original preservado: 242 × 74 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "My · camada tipográfica",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0092"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0092",
+        "src": "assets/master-hand-helpers-image164.png",
+        "source_filename": "image164.png",
+        "width": 75,
+        "height": 51,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "a1e7e7ba239d07c10339a337b65956f0225ac6d361a03608e6dcf225ba641ba6",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: my.",
+          "es": "Capa textual: my.",
+          "pt": "Imagem didática original: My · camada tipográfica"
+        }
+      },
+      "caption": "Original preservado: 75 × 51 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Numeral 1 · camada",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0093"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0093",
+        "src": "assets/master-hand-helpers-image165.png",
+        "source_filename": "image165.png",
+        "width": 31,
+        "height": 40,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6f2bc1b24f7446fec7b5e36c5e1669281510cb5d7b9f45ae78c710d39f637285",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Numeral one layer.",
+          "es": "Capa del numeral uno.",
+          "pt": "Imagem didática original: Numeral 1 · camada"
+        }
+      },
+      "caption": "Original preservado: 31 × 40 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Apóstrofo · camada pequena",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0094"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0094",
+        "src": "assets/master-hand-helpers-image166.png",
+        "source_filename": "image166.png",
+        "width": 16,
+        "height": 22,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "bed9a44cf6b9f476638c465990156673718981aaf68598b4a8ef965def257bb2",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Small apostrophe layer.",
+          "es": "Capa pequeña de apóstrofo.",
+          "pt": "Imagem didática original: Apóstrofo · camada pequena"
+        }
+      },
+      "caption": "Original preservado: 16 × 22 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Apóstrofo · camada",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0095"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0095",
+        "src": "assets/master-hand-helpers-image167.png",
+        "source_filename": "image167.png",
+        "width": 17,
+        "height": 22,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "68aff4c4474b4949d9e2ce86e792641616d67509dcffdf717f0631c0ac8ebbd6",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Apostrophe layer.",
+          "es": "Capa de apóstrofo.",
+          "pt": "Imagem didática original: Apóstrofo · camada"
+        }
+      },
+      "caption": "Original preservado: 17 × 22 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Numeral 3 · camada",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02730"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0096"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0096",
+        "src": "assets/master-hand-helpers-image168.png",
+        "source_filename": "image168.png",
+        "width": 42,
+        "height": 40,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "8b8c8478c1b10bbfabebce7cbbd6e6cf6722753e28d9e401e2d768aa7c456aec",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Numeral three layer.",
+          "es": "Capa del numeral tres.",
+          "pt": "Imagem didática original: Numeral 3 · camada"
+        }
+      },
+      "caption": "Original preservado: 42 × 40 px; 129.38 × 95.43 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02761",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02761",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02761"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:HAND-HELPERS:P02761",
+        "paragraph_id": "P02761",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "d833e467b97d20a46ec159437aa0080db1d58e3532446c1f6363faed72212e7c",
+        "xml_src": "assets/source-xml/hand-helpers-P02761.xml",
+        "object_names": [],
+        "container_extents": [
+          {
+            "cx": "50165",
+            "cy": "12700"
+          }
+        ],
+        "media_dependencies": [],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02782",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "SOURCE_VISUAL_REFERENCE",
+      "title": "Composição original · P02782",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02782"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "visual_reference": {
+        "id": "MVP:VISUAL:HAND-HELPERS:P02782",
+        "paragraph_id": "P02782",
+        "representation": "ORIGINAL_WORD_XML",
+        "sha256": "f79bcc2b0ab551ece5b53c630d046cdedfcea0b0615ff90a411840bbe63fcf05",
+        "xml_src": "assets/source-xml/hand-helpers-P02782.xml",
+        "object_names": [
+          "Group 213",
+          "Rectangle 214",
+          "Shape 607",
+          "Rectangle 218"
+        ],
+        "container_extents": [
+          {
+            "cx": "3860165",
+            "cy": "993775"
+          }
+        ],
+        "media_dependencies": [
+          {
+            "relationship": "rId142",
+            "path": "word/media/image138.jpg",
+            "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+            "representation": "blip"
+          },
+          {
+            "relationship": "rId143",
+            "path": "word/media/image139.jpeg",
+            "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+            "representation": "imagedata"
+          }
+        ],
+        "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097",
+      "chapter_id": "MVP:CH:TOOLS",
+      "section_id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+      "type": "FIGURE",
+      "title": "Remissão GO TO · mão indicadora",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en",
+        "pt"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [
+          "P02782"
+        ],
+        "note": "Fonte preservada; textos, imagens e composições identificados separadamente. Avisos de revisão não corrigem silenciosamente o original."
+      },
+      "related_unit_ids": [],
+      "related_chapter_ids": [
+        "MVP:CH:TO-BE"
+      ],
+      "term_annotations": [],
+      "asset_occurrence_ids": [
+        "MVP:OCCURRENCE:HAND-HELPERS:I0097"
+      ],
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0097",
+        "src": "assets/master-existence-original.jpg",
+        "source_filename": "image138.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+        "original_width_mm": 107.23,
+        "original_height_mm": 27.6,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Pointing hand with GO TO label.",
+          "es": "Mano indicadora con rótulo GO TO.",
+          "pt": "Imagem didática original: Remissão GO TO · mão indicadora"
+        }
+      },
+      "caption": "Original preservado: 376 × 188 px; 107.23 × 27.6 mm no desenho DOCX. Camada individual; montagem e escala física final pendentes."
     }
   ],
   "terms": [],
@@ -25204,6 +27520,20 @@
       "figure_occurrences": 8,
       "vector_compositions": 5,
       "next_pending": "P02683 To be in your hand",
+      "chapter_completeness": "PARTIAL"
+    },
+    "in_hand_helpers": {
+      "bounds": [
+        "P02683",
+        "P02794"
+      ],
+      "paragraphs_classified": 112,
+      "source_units": 39,
+      "tables": 1,
+      "figure_occurrences": 18,
+      "technical_placeholders": 1,
+      "vector_compositions": 6,
+      "next_pending": "P02795 Substitution Drills",
       "chapter_completeness": "PARTIAL"
     }
   },
@@ -25426,6 +27756,57 @@
         ],
         "observation": "Grupo contém imagens e glifos de fonte especial; a extração em camadas não comprova fidelidade da montagem integral.",
         "status": "VISUAL_RECONSTRUCTION_PENDING"
+      },
+      {
+        "id": "MVP:REVIEW:HAND-HELPERS:001",
+        "source_ids": [
+          "P02740",
+          "P02744",
+          "P02747"
+        ],
+        "observation": "Rever o alcance de nunca/sempre: distinguir substantivo comum contável singular, usos incontáveis e nomes próprios. Não generalizar como regra sem exceções.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:HAND-HELPERS:002",
+        "source_ids": [
+          "P02745",
+          "P02748",
+          "P02771",
+          "P02772"
+        ],
+        "observation": "Sinalizar exemplos inadequados para evitar que The my car, The Brazil, The Susan e The my bag sejam aprendidos como modelos corretos. Rever exceções de artigo com nomes próprios.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:HAND-HELPERS:003",
+        "source_ids": [
+          "P02761",
+          "P02765"
+        ],
+        "observation": "A/an dependem do som inicial, não só da letra: propor revisão com university/hour no momento editorial, sem substituir a fonte.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:HAND-HELPERS:004",
+        "source_ids": [
+          "P02781"
+        ],
+        "observation": "Rever Não existe isto, isso ou aquilo em inglês: equivalência de this/that depende de contexto e distância discursiva, não ausência de recurso no idioma.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:HAND-HELPERS:005",
+        "source_ids": [
+          "P02687",
+          "P02694",
+          "P02719",
+          "P02730",
+          "P02761",
+          "P02782"
+        ],
+        "observation": "Camadas e alternativas XML preservadas; composição integral não reconstruída. Pixel transparente não é figura pedagógica; referências GO TO não geram destino inventado.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
       }
     ],
     "MVP:CH:TO-BE": [
@@ -25553,6 +27934,19 @@
           "P02680"
         ],
         "observation": "How old is he? pergunta idade; não constitui transformação mecânica de todo sentido de young. Exemplo original preservado.",
+        "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+      },
+      {
+        "id": "MVP:REVIEW:HAND-HELPERS:005",
+        "source_ids": [
+          "P02687",
+          "P02694",
+          "P02719",
+          "P02730",
+          "P02761",
+          "P02782"
+        ],
+        "observation": "Camadas e alternativas XML preservadas; composição integral não reconstruída. Pixel transparente não é figura pedagógica; referências GO TO não geram destino inventado.",
         "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
       }
     ],

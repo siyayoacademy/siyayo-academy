@@ -3,8 +3,8 @@
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "bounds": {
     "first": "P01405",
-    "last": "P02682",
-    "next_heading": "P02683 To be in your hand"
+    "last": "P02727",
+    "next_heading": "P02728 Useful Tools - Noun Helpers"
   },
   "paragraphs": [
     {
@@ -14927,6 +14927,485 @@
       "disposition": "BLANK_LAYOUT",
       "unit_ids": [],
       "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02683",
+      "xpath": "/w:document/w:body/w:p[489]",
+      "text": "To be in your hand",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02684",
+      "xpath": "/w:document/w:body/w:p[490]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02685",
+      "xpath": "/w:document/w:body/w:p[491]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02686",
+      "xpath": "/w:document/w:body/w:p[492]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02687",
+      "xpath": "/w:document/w:body/w:p[493]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 5,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02687",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:005"
+      ]
+    },
+    {
+      "source_id": "P02688",
+      "xpath": "/w:document/w:body/w:p[493]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02689",
+      "xpath": "/w:document/w:body/w:p[493]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02690",
+      "xpath": "/w:document/w:body/w:p[494]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02691",
+      "xpath": "/w:document/w:body/w:p[495]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02692",
+      "xpath": "/w:document/w:body/w:p[496]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02693",
+      "xpath": "/w:document/w:body/w:p[497]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02694",
+      "xpath": "/w:document/w:body/w:p[498]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 4,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02694",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:005"
+      ]
+    },
+    {
+      "source_id": "P02695",
+      "xpath": "/w:document/w:body/w:p[498]/w:r[1]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02696",
+      "xpath": "/w:document/w:body/w:p[498]/w:r[1]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02697",
+      "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02698",
+      "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[7]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02699",
+      "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02700",
+      "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02701",
+      "xpath": "/w:document/w:body/w:p[499]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02702",
+      "xpath": "/w:document/w:body/w:p[500]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02703",
+      "xpath": "/w:document/w:body/w:p[501]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02704",
+      "xpath": "/w:document/w:body/w:p[502]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02705",
+      "xpath": "/w:document/w:body/w:p[503]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02706",
+      "xpath": "/w:document/w:body/w:p[504]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02707",
+      "xpath": "/w:document/w:body/w:p[505]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02708",
+      "xpath": "/w:document/w:body/w:p[506]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02709",
+      "xpath": "/w:document/w:body/w:p[507]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02710",
+      "xpath": "/w:document/w:body/w:p[508]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02711",
+      "xpath": "/w:document/w:body/w:p[509]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02712",
+      "xpath": "/w:document/w:body/w:p[510]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02713",
+      "xpath": "/w:document/w:body/w:p[511]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02714",
+      "xpath": "/w:document/w:body/w:p[512]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02715",
+      "xpath": "/w:document/w:body/w:p[513]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02716",
+      "xpath": "/w:document/w:body/w:p[514]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02717",
+      "xpath": "/w:document/w:body/w:p[515]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02718",
+      "xpath": "/w:document/w:body/w:p[516]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02719",
+      "xpath": "/w:document/w:body/w:p[517]",
+      "text": "Slide: Personal PronounsSlide: Personal Pronouns",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
+        "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:005"
+      ]
+    },
+    {
+      "source_id": "P02720",
+      "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02721",
+      "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02722",
+      "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[2]",
+      "text": "Slide: Personal Pronouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02723",
+      "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02724",
+      "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02725",
+      "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[2]",
+      "text": "Slide: Personal Pronouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02726",
+      "xpath": "/w:document/w:body/w:p[518]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02727",
+      "xpath": "/w:document/w:body/w:p[519]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
     }
   ],
   "tables": [
@@ -16901,6 +17380,466 @@
           ]
         }
       }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0079",
+        "src": "assets/master-hand-helpers-image147.png",
+        "source_filename": "image147.png",
+        "width": 231,
+        "height": 45,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "0e82642f25d12c3d27a15a7e6ccd4efa48e5db17e5b78eafa0dd91ce7f1c7e65",
+        "original_width_mm": 30.59,
+        "original_height_mm": 5.95,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Affirmative label.",
+          "es": "Rótulo Affirmative.",
+          "pt": "Imagem didática original: Affirmative"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0079",
+        "paragraph_id": "P02687",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0079",
+        "source_use": {
+          "id": "I0079",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[493]/w:r[1]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId151",
+          "target": "media/image147.png",
+          "width_mm": 30.59,
+          "height_mm": 5.95,
+          "effective_ppi_x": 191.8,
+          "description": {
+            "id": "169",
+            "name": "image166.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0080",
+        "src": "assets/master-hand-helpers-image148.png",
+        "source_filename": "image148.png",
+        "width": 183,
+        "height": 56,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "915787dbf1a9799a79c3c39fc21b77b1b2caa3e11beb22e2bc28783c9b4e5a21",
+        "original_width_mm": 24.2,
+        "original_height_mm": 7.41,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Negative label.",
+          "es": "Rótulo Negative.",
+          "pt": "Imagem didática original: Negative"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0080",
+        "paragraph_id": "P02687",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0080",
+        "source_use": {
+          "id": "I0080",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[493]/w:r[2]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId152",
+          "target": "media/image148.png",
+          "width_mm": 24.2,
+          "height_mm": 7.41,
+          "effective_ppi_x": 192.0,
+          "description": {
+            "id": "175",
+            "name": "image175.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0081",
+        "src": "assets/master-hand-helpers-image149.png",
+        "source_filename": "image149.png",
+        "width": 418,
+        "height": 41,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "7e10c0742e4d483fd7798b5b83912160265825a7b869b8de8d846604699b355e",
+        "original_width_mm": 55.46,
+        "original_height_mm": 5.53,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Interrogative label.",
+          "es": "Rótulo Interrogative.",
+          "pt": "Imagem didática original: Interrogative"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0081",
+        "paragraph_id": "P02687",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0081",
+        "source_use": {
+          "id": "I0081",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[493]/w:r[3]/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId153",
+          "target": "media/image149.png",
+          "width_mm": 55.46,
+          "height_mm": 5.53,
+          "effective_ppi_x": 191.4,
+          "description": {
+            "id": "209",
+            "name": "image209.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0082",
+        "src": "assets/master-hand-helpers-image150.png",
+        "source_filename": "image150.png",
+        "width": 232,
+        "height": 271,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "c0d8af563146029d112e05e1a7101f91cd185922130c6b6561c0e7f64eac998d",
+        "original_width_mm": 79.5,
+        "original_height_mm": 100.28,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Hand making an OK gesture.",
+          "es": "Mano haciendo el gesto de OK.",
+          "pt": "Imagem didática original: Mão no gesto de OK"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0082",
+        "paragraph_id": "P02694",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0082",
+        "source_use": {
+          "id": "I0082",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[498]/w:r[1]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[1]/pic:blipFill/a:blip",
+          "relationship": "rId154",
+          "target": "media/image150.png",
+          "width_mm": 79.5,
+          "height_mm": 100.28,
+          "effective_ppi_x": 74.1,
+          "description": {
+            "id": "118",
+            "name": "Group 118"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0083",
+        "src": "assets/master-hand-helpers-image151.png",
+        "source_filename": "image151.png",
+        "width": 221,
+        "height": 268,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "b0b3dc99a24b65084786f6761aab5e20694ce962047fbdb7972e89bedd54cb1f",
+        "original_width_mm": 79.5,
+        "original_height_mm": 100.28,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: is not; on the table.",
+          "es": "Capa textual: is not; on the table.",
+          "pt": "Imagem didática original: Camada is (not) / on the table"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0083",
+        "paragraph_id": "P02694",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0083",
+        "source_use": {
+          "id": "I0083",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[498]/w:r[1]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[2]/pic:blipFill/a:blip",
+          "relationship": "rId155",
+          "target": "media/image151.png",
+          "width_mm": 79.5,
+          "height_mm": 100.28,
+          "effective_ppi_x": 70.6,
+          "description": {
+            "id": "118",
+            "name": "Group 118"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0084",
+        "src": "assets/master-hand-helpers-image154.jpg",
+        "source_filename": "image154.jpg",
+        "width": 668,
+        "height": 838,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "3b4dd315298e1daa22937171942fff24e241b9520f13d9653ec6e4ca3848c783",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Open hand with teaching labels.",
+          "es": "Mano abierta con rótulos didácticos.",
+          "pt": "Imagem didática original: Mão aberta com rótulos"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0084",
+        "paragraph_id": "P02694",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0084",
+        "source_use": {
+          "id": "I0084",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[1]/pic:blipFill/a:blip",
+          "relationship": "rId158",
+          "target": "media/image154.jpg",
+          "width_mm": 77.06,
+          "height_mm": 96.78,
+          "effective_ppi_x": 220.2,
+          "description": {
+            "id": "132",
+            "name": "Group 132"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0085",
+        "src": "assets/master-hand-helpers-image155.png",
+        "source_filename": "image155.png",
+        "width": 76,
+        "height": 103,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "de4e76b84094f4d581a7d50646fb46e5753b38df563fcbbe04ddbc13f14e7347",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "spectral",
+        "alt": {
+          "en": "White text layer: are.",
+          "es": "Capa de texto blanco: are.",
+          "pt": "Imagem didática original: Camada are · branco"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0085",
+        "paragraph_id": "P02694",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0085",
+        "source_use": {
+          "id": "I0085",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[2]/pic:blipFill/a:blip",
+          "relationship": "rId159",
+          "target": "media/image155.png",
+          "width_mm": 77.06,
+          "height_mm": 96.78,
+          "effective_ppi_x": 25.0,
+          "description": {
+            "id": "132",
+            "name": "Group 132"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0086",
+        "src": "assets/master-hand-helpers-image156.png",
+        "source_filename": "image156.png",
+        "width": 78,
+        "height": 105,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6b8cfcea08ee30140c9f98271968faed236fd4d10213669b7113b39698df245c",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Outlined text layer: are.",
+          "es": "Capa de texto delineado: are.",
+          "pt": "Imagem didática original: Camada are · contorno"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0086",
+        "paragraph_id": "P02694",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0086",
+        "source_use": {
+          "id": "I0086",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[3]/pic:blipFill/a:blip",
+          "relationship": "rId160",
+          "target": "media/image156.png",
+          "width_mm": 77.06,
+          "height_mm": 96.78,
+          "effective_ppi_x": 25.7,
+          "description": {
+            "id": "132",
+            "name": "Group 132"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0087",
+        "src": "assets/master-hand-helpers-image157.png",
+        "source_filename": "image157.png",
+        "width": 27,
+        "height": 51,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "56c8ff6dab33b4bc53353c9ac8c0bbfa0f8084fc1070181aac7bb6188d7678b1",
+        "original_width_mm": 77.06,
+        "original_height_mm": 96.78,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "spectral",
+        "alt": {
+          "en": "White letter s fragment.",
+          "es": "Fragmento de letra s en blanco.",
+          "pt": "Imagem didática original: Fragmento s · branco"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0087",
+        "paragraph_id": "P02694",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0087",
+        "source_use": {
+          "id": "I0087",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[498]/w:r[2]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[4]/pic:blipFill/a:blip",
+          "relationship": "rId161",
+          "target": "media/image157.png",
+          "width_mm": 77.06,
+          "height_mm": 96.78,
+          "effective_ppi_x": 8.9,
+          "description": {
+            "id": "132",
+            "name": "Group 132"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0088",
+        "src": "assets/master-existence-original.jpg",
+        "source_filename": "image138.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+        "original_width_mm": 107.23,
+        "original_height_mm": 27.6,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Pointing hand with GO TO label.",
+          "es": "Mano indicadora con rótulo GO TO.",
+          "pt": "Imagem didática original: Remissão GO TO · mão indicadora"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0088",
+        "paragraph_id": "P02719",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0088",
+        "source_use": {
+          "id": "I0088",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[517]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId142",
+          "target": "media/image138.jpg",
+          "width_mm": 107.23,
+          "height_mm": 27.6,
+          "effective_ppi_x": 89.1,
+          "description": {
+            "id": "128",
+            "name": "Group 128"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
     }
   ],
   "issues": [
@@ -17028,6 +17967,19 @@
         "P02680"
       ],
       "observation": "How old is he? pergunta idade; não constitui transformação mecânica de todo sentido de young. Exemplo original preservado.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:HAND-HELPERS:005",
+      "source_ids": [
+        "P02687",
+        "P02694",
+        "P02719",
+        "P02730",
+        "P02761",
+        "P02782"
+      ],
+      "observation": "Camadas e alternativas XML preservadas; composição integral não reconstruída. Pixel transparente não é figura pedagógica; referências GO TO não geram destino inventado.",
       "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
     }
   ],
@@ -17207,7 +18159,22 @@
     "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0076",
     "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
     "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
-    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
+    "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02687",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02694",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
+    "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088"
   ],
   "status": "STRUCTURALLY_MAPPED_VISUAL_REVIEW_PENDING",
   "chapter_completeness": "PARTIAL",
@@ -17400,6 +18367,249 @@
         {
           "cx": "2666365",
           "cy": "1001395"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:HAND-HELPERS:P02687",
+      "paragraph_id": "P02687",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "4e166d50f85cd0c2f9f86eb80d87aa52967350ddcf516555c62f54ca1e9ae1a8",
+      "xml_src": "assets/source-xml/hand-helpers-P02687.xml",
+      "object_names": [
+        "image166.png",
+        "image175.png",
+        "image209.png",
+        "Group 108",
+        "Rectangle 109",
+        "Freeform 110",
+        "Freeform 111",
+        "Freeform 112",
+        "Freeform 117"
+      ],
+      "container_extents": [
+        {
+          "cx": "1101236",
+          "cy": "214312"
+        },
+        {
+          "cx": "871321",
+          "cy": "266700"
+        },
+        {
+          "cx": "1996643",
+          "cy": "199167"
+        },
+        {
+          "cx": "149225",
+          "cy": "214630"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId151",
+          "path": "word/media/image147.png",
+          "sha256": "0e82642f25d12c3d27a15a7e6ccd4efa48e5db17e5b78eafa0dd91ce7f1c7e65",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId152",
+          "path": "word/media/image148.png",
+          "sha256": "915787dbf1a9799a79c3c39fc21b77b1b2caa3e11beb22e2bc28783c9b4e5a21",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId153",
+          "path": "word/media/image149.png",
+          "sha256": "7e10c0742e4d483fd7798b5b83912160265825a7b869b8de8d846604699b355e",
+          "representation": "blip"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:HAND-HELPERS:P02694",
+      "paragraph_id": "P02694",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "8f5c106347354083e287b3e55a291f328ee403c5f68a15630f5dba18ae1880b6",
+      "xml_src": "assets/source-xml/hand-helpers-P02694.xml",
+      "object_names": [
+        "Group 119",
+        "Rectangle 121",
+        "Shape 564",
+        "Shape 565",
+        "Freeform 124",
+        "Freeform 125",
+        "Freeform 126",
+        "Freeform 127",
+        "Freeform 352",
+        "Freeform 353",
+        "Freeform 354",
+        "Freeform 355",
+        "Freeform 356",
+        "Freeform 357",
+        "Freeform 358",
+        "Freeform 359",
+        "Freeform 360",
+        "Freeform 361",
+        "Freeform 362",
+        "Freeform 363",
+        "Freeform 364",
+        "Freeform 365",
+        "Group 148",
+        "Rectangle 149",
+        "Shape 713",
+        "Freeform 150",
+        "Freeform 151",
+        "Shape 716",
+        "Freeform 152",
+        "Freeform 153",
+        "Shape 719",
+        "Straight Arrow Connector 154",
+        "Rectangle 155",
+        "Shape 722",
+        "Freeform 156",
+        "Freeform 157",
+        "Freeform 158",
+        "Freeform 159",
+        "Freeform 160",
+        "Freeform 161",
+        "Freeform 162",
+        "Freeform 163",
+        "Freeform 165",
+        "Freeform 166",
+        "Freeform 167",
+        "Freeform 168",
+        "Freeform 170",
+        "Freeform 171",
+        "Freeform 172",
+        "Freeform 173",
+        "Freeform 174",
+        "Freeform 176",
+        "Freeform 177",
+        "Freeform 178",
+        "Freeform 179",
+        "Freeform 180",
+        "Freeform 181",
+        "Freeform 182"
+      ],
+      "container_extents": [
+        {
+          "cx": "2861945",
+          "cy": "3609975"
+        },
+        {
+          "cx": "2774315",
+          "cy": "3484245"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId154",
+          "path": "word/media/image150.png",
+          "sha256": "c0d8af563146029d112e05e1a7101f91cd185922130c6b6561c0e7f64eac998d",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId155",
+          "path": "word/media/image151.png",
+          "sha256": "b0b3dc99a24b65084786f6761aab5e20694ce962047fbdb7972e89bedd54cb1f",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId156",
+          "path": "word/media/image152.png",
+          "sha256": "c0d8af563146029d112e05e1a7101f91cd185922130c6b6561c0e7f64eac998d",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId157",
+          "path": "word/media/image153.png",
+          "sha256": "b0b3dc99a24b65084786f6761aab5e20694ce962047fbdb7972e89bedd54cb1f",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId158",
+          "path": "word/media/image154.jpg",
+          "sha256": "3b4dd315298e1daa22937171942fff24e241b9520f13d9653ec6e4ca3848c783",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId159",
+          "path": "word/media/image155.png",
+          "sha256": "de4e76b84094f4d581a7d50646fb46e5753b38df563fcbbe04ddbc13f14e7347",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId160",
+          "path": "word/media/image156.png",
+          "sha256": "6b8cfcea08ee30140c9f98271968faed236fd4d10213669b7113b39698df245c",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId161",
+          "path": "word/media/image157.png",
+          "sha256": "56c8ff6dab33b4bc53353c9ac8c0bbfa0f8084fc1070181aac7bb6188d7678b1",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId162",
+          "path": "word/media/image158.jpeg",
+          "sha256": "3b4dd315298e1daa22937171942fff24e241b9520f13d9653ec6e4ca3848c783",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId163",
+          "path": "word/media/image159.png",
+          "sha256": "de4e76b84094f4d581a7d50646fb46e5753b38df563fcbbe04ddbc13f14e7347",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId164",
+          "path": "word/media/image160.png",
+          "sha256": "6b8cfcea08ee30140c9f98271968faed236fd4d10213669b7113b39698df245c",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId165",
+          "path": "word/media/image161.png",
+          "sha256": "56c8ff6dab33b4bc53353c9ac8c0bbfa0f8084fc1070181aac7bb6188d7678b1",
+          "representation": "imagedata"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:HAND-HELPERS:P02719",
+      "paragraph_id": "P02719",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "313162633a7c8df9466f7d43db9dc3c435bed334c154792c56b94e33a8aa1879",
+      "xml_src": "assets/source-xml/hand-helpers-P02719.xml",
+      "object_names": [
+        "Group 184",
+        "Rectangle 185",
+        "Shape 702",
+        "Rectangle 186"
+      ],
+      "container_extents": [
+        {
+          "cx": "3860165",
+          "cy": "993775"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId142",
+          "path": "word/media/image138.jpg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId143",
+          "path": "word/media/image139.jpeg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+          "representation": "imagedata"
         }
       ],
       "reproduction_status": "PENDING_COMPOSITION"
@@ -18675,6 +19885,10 @@
     [
       "P02430",
       "P02682"
+    ],
+    [
+      "P02683",
+      "P02727"
     ]
   ]
 }

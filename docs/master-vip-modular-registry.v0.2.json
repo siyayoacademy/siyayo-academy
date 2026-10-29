@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.10.0",
+  "catalog_version": "0.11.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -187,6 +187,54 @@
           "title": "Original · Remissões",
           "unit_ids": [
             "MVP:UNIT:TOOLS:SOURCE:FIGURE:138"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:INTRO",
+          "title": "Original · Noun Helpers",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "title": "Original · Noun Helpers · regras e exemplos",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:CONTENT",
+          "title": "Original · Useful Tools · explicações",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TOOLS:HAND-HELPERS:VISUALS",
+          "title": "Original · Composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02730",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:TECHNICAL:I0089",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02761",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02782",
+            "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097"
           ]
         }
       ]
@@ -527,6 +575,39 @@
             "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0077",
             "MVP:UNIT:TO-BE:QUALITY:VISUAL:P02476",
             "MVP:UNIT:TO-BE:QUALITY:FIGURE:I0078"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:HAND-HELPERS:INTRO",
+          "title": "Original · To be in your hand",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:HAND-HELPERS:PRONOUNS",
+          "title": "Original · Remissão Personal Pronouns",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:HAND-HELPERS:VISUALS",
+          "title": "Original · Composições e imagens",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02687",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02694",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
+            "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088"
           ]
         }
       ]
@@ -1038,6 +1119,26 @@
     "next_pending": "P02683 To be in your hand",
     "chapter_completeness": "PARTIAL",
     "evidence": "MASTER-VIP-MVP12-QUALITY-STATE.md",
+    "states": {
+      "implemented": true,
+      "tested_locally": true,
+      "human_content_homologated": false
+    }
+  },
+  "in_hand_helpers": {
+    "bounds": [
+      "P02683",
+      "P02794"
+    ],
+    "paragraphs_classified": 112,
+    "source_units": 39,
+    "tables": 1,
+    "figure_occurrences": 18,
+    "technical_placeholders": 1,
+    "vector_compositions": 6,
+    "next_pending": "P02795 Substitution Drills",
+    "chapter_completeness": "PARTIAL",
+    "evidence": "MASTER-VIP-MVP13-IN-HAND-HELPERS.md",
     "states": {
       "implemented": true,
       "tested_locally": true,

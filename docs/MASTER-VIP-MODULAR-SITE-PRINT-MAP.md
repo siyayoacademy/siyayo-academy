@@ -169,3 +169,8 @@ Execução autorizada com a ressalva do cartão inteiro clicável, speaker doura
 ## JAGUAR-MVP-12 — QUALITY & STATE
 
 GO executado: P02430–P02682, 25 unidades originais, 253 parágrafos classificados, T0017, oito ocorrências de imagens e cinco composições XML preservadas. Catálogo 0.10.0, 399 unidades / 1.691 alvos speech; 10,6841% dos caracteres da fonte. Padrão de apresentação homologado reutilizado; novo conteúdo e composição visual ainda em revisão. Evidências: [MVP12](MASTER-VIP-MVP12-QUALITY-STATE.md). NEXT GO: P02683 To be in your hand, sem reabrir auditorias concluídas.
+
+
+## JAGUAR-MVP-13 — To be in your hand / Noun Helpers
+
+P02683–P02794 incorporados: 39 módulos, 112 parágrafos classificados, T0018, 18 ocorrências de imagem e um pixel técnico, seis composições XML. Catálogo 0.11.0: 438 unidades / 1.820 alvos speech; 11,3924% dos caracteres da fonte. Contraste local em camadas transparentes, sem alterar seus bytes. Fonte e revisões contextuais separadas. [Registro completo](MASTER-VIP-MVP13-IN-HAND-HELPERS.md). NEXT GO MVP14: P02795 Substitution Drills, usando o circuito existente.

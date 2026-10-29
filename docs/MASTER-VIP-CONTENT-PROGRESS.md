@@ -1,20 +1,20 @@
 # Master VIP — cobertura do conteúdo
 
-29 de outubro de 2026 · Catálogo 0.10.0 · branch jaguar/master-vip-modular-site-print-20261026.
+29 de outubro de 2026 · Catálogo 0.11.0 · branch jaguar/master-vip-modular-site-print-20261026.
 
 ## Percentual verificável
 
-Aproximadamente **11% do volume textual de origem já está vinculado aos módulos do site**. Métrica por caracteres: **32.569 / 304.836 = 10,68%**. Métrica por parágrafos com texto: **1.094 / 11.072 = 9,88%**. Ambos usam IDs únicos dos parágrafos de origem das unidades ORIGINAL, contando cada parágrafo uma vez. O intervalo de texto de cada parágrafo é o extraído do XML do DOCX; textos repetidos existentes na fonte e alternativas de caixas podem fazer parte do denominador. Não é percentual de páginas nem índice de qualidade.
+Aproximadamente **11% do volume textual de origem já está vinculado aos módulos do site**. Métrica por caracteres: **34.728 / 304.836 = 11,39%**. Métrica por parágrafos com texto: **1.131 / 11.072 = 10,21%**. Ambos usam IDs únicos dos parágrafos de origem das unidades ORIGINAL, contando cada parágrafo uma vez. O intervalo de texto de cada parágrafo é o extraído do XML do DOCX; textos repetidos existentes na fonte e alternativas de caixas podem fazer parte do denominador. Não é percentual de páginas nem índice de qualidade.
 
 Antes do MVP10: 22.667 caracteres (7,44%) e 935 parágrafos com texto (8,44%). O bloco Action Versus Movement contém muitos exercícios agregados no mesmo parágrafo; por isso o avanço em caracteres é maior que o avanço em quantidade de parágrafos. A contagem por capítulos disponíveis não mede conclusão de conteúdo.
 
 | Indicador | Disponível/classificado | Total da fonte | Cobertura |
 |---|---:|---:|---:|
-| Volume textual de origem vinculado | 32.569 caracteres | 304.836 | 10,68% |
-| Parágrafos com texto vinculados | 1.094 | 11.072 | 9,88% |
-| Parágrafos XML classificados, incluindo vazios | 2.094 | 20.649 | 10,14% |
-| Tabelas de origem incorporadas nos blocos | 19 | 168 | 11,31% |
-| Arquivos raster distintos preservados nos módulos | 35 | 237 | Reprodução/revisão visual pendente |
+| Volume textual de origem vinculado | 34.728 caracteres | 304.836 | 11,39% |
+| Parágrafos com texto vinculados | 1.131 | 11.072 | 10,21% |
+| Parágrafos XML classificados, incluindo vazios | 2.206 | 20.649 | 10,68% |
+| Tabelas de origem incorporadas nos blocos | 20 | 168 | 11,90% |
+| Arquivos raster distintos preservados nos módulos | 51 | 237 | Reprodução/revisão visual pendente |
 
 Fonte: STRUCTURE-KIND OF WORDS.docx, SHA256 99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c. Detalhes e denominadores em master-vip/data/coverage-report.json. Numerador derivado do catálogo e dos mapas ativos; mapas históricos não são somados novamente. A cobertura refere-se à branch de desenvolvimento, não à main/produção.
 
@@ -63,7 +63,10 @@ Revisão contextual, tradução integral dos textos originais, revisão tipográ
 
 ## Próximo elo
 
-P02683 To be in your hand e conteúdos seguintes: delimitar antes de importar. Continuar com IDs de origem, módulos próprios, preservação textual e propostas editoriais explícitas. As dez áreas pendentes acima são o roteiro cadastrado; seus limites integrais ainda precisam de conferência na fonte.
+P02795 TO BE – SUBSTITUTION DRILLS – Speaking e conteúdos seguintes: delimitar antes de importar. Continuar com IDs de origem, módulos próprios, preservação textual e propostas editoriais explícitas. As dez áreas pendentes acima são o roteiro cadastrado; seus limites integrais ainda precisam de conferência na fonte.
 
 
 MVP12 acrescenta 253 parágrafos XML classificados (129 com texto vinculado), 1.401 caracteres, uma tabela, oito ocorrências de imagens (sete arquivos novos) e cinco composições XML preservadas. Catálogo: 399 unidades. Composição visual de camadas permanece pendente; percentual textual não mede prontidão gráfica.
+
+
+Atualização MVP13: P02683–P02794, 112 parágrafos XML (37 com texto), 2.159 caracteres adicionais, tabela T0018. 39 unidades novas, 18 ocorrências pedagógicas de imagem e um pixel técnico separado. Catálogo atual 0.11.0: 438 unidades, 1.820 alvos speech. 51 arquivos raster pedagógicos distintos preservados; pixel técnico excluído desse numerador. Composições e revisão contextual seguem pendentes.

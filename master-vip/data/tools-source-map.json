@@ -3,8 +3,8 @@
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "bounds": {
     "first": "P01130",
-    "last": "P01404",
-    "next_heading": "P01405 LET’S COMPARE"
+    "last": "P02794",
+    "next_heading": "P02795 Substitution Drills"
   },
   "paragraphs": [
     {
@@ -2554,6 +2554,780 @@
       "style": "(default)",
       "disposition": "BLANK_LAYOUT",
       "unit_ids": []
+    },
+    {
+      "source_id": "P02728",
+      "xpath": "/w:document/w:body/w:p[520]",
+      "text": "Useful Tools - Noun Helpers",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02729",
+      "xpath": "/w:document/w:body/w:p[521]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02730",
+      "xpath": "/w:document/w:body/w:p[522]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 8,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02730",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:TECHNICAL:I0089",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:005"
+      ]
+    },
+    {
+      "source_id": "P02731",
+      "xpath": "/w:document/w:body/w:p[522]/w:r[1]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02732",
+      "xpath": "/w:document/w:body/w:p[522]/w:r[1]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02733",
+      "xpath": "/w:document/w:body/w:p[522]/w:r[3]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02734",
+      "xpath": "/w:document/w:body/w:p[522]/w:r[3]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02735",
+      "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02736",
+      "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02737",
+      "xpath": "/w:document/w:body/w:p[523]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02738",
+      "xpath": "/w:document/w:body/w:p[524]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02739",
+      "xpath": "/w:document/w:body/w:p[525]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02740",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[1]",
+      "text": "Nome comum no singular nunca estará sozinho. Ex.:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:001"
+      ]
+    },
+    {
+      "source_id": "P02741",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[2]",
+      "text": "The star A Star This star That star These stars Those stars",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02742",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[3]",
+      "text": "My star Carol’s star Some stars Any star No star One star Two stars",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02743",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[4]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02744",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[5]",
+      "text": "Nome comum no singular nunca terá dois acompanhantes. Ex.:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:001"
+      ]
+    },
+    {
+      "source_id": "P02745",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[6]",
+      "text": "The my car is there.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:002"
+      ]
+    },
+    {
+      "source_id": "P02746",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[7]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02747",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[8]",
+      "text": "Nome próprio no singular sempre estará sozinho.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:001"
+      ]
+    },
+    {
+      "source_id": "P02748",
+      "xpath": "/w:document/w:body/w:tbl[18]/w:tr/w:tc/w:p[9]",
+      "text": "Ex.: The Brazil.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:002"
+      ]
+    },
+    {
+      "source_id": "P02749",
+      "xpath": "/w:document/w:body/w:p[526]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02750",
+      "xpath": "/w:document/w:body/w:p[527]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02751",
+      "xpath": "/w:document/w:body/w:p[528]",
+      "text": "USEFUL TOOLS",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02752",
+      "xpath": "/w:document/w:body/w:p[529]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02753",
+      "xpath": "/w:document/w:body/w:p[530]",
+      "text": "NOMES PRÓPRIOS (nome escolhido “de batismo”).",
+      "style": "Ttulo3",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02754",
+      "xpath": "/w:document/w:body/w:p[531]",
+      "text": "Ex.: Susan is my teacher. Susan é minha professora.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02755",
+      "xpath": "/w:document/w:body/w:p[532]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02756",
+      "xpath": "/w:document/w:body/w:p[533]",
+      "text": "NOMES COMUNS (nome da classe): Nome de coisas, animais e ideias. Ex.: mulher, professora, mesa, cadeira, gato, escola, projeto, sistema, confusão, ideia, etc. Ex.: Susan é minha professora. Susan is my teacher.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02757",
+      "xpath": "/w:document/w:body/w:p[534]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02758",
+      "xpath": "/w:document/w:body/w:p[535]",
+      "text": "ARTIGOS: (usados para acompanhar nomes comuns)",
+      "style": "Ttulo4",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02759",
+      "xpath": "/w:document/w:body/w:p[536]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02760",
+      "xpath": "/w:document/w:body/w:p[537]",
+      "text": "“A / AN” - Indefinido: O objeto não está definido. Ex.: I watched a movie. Eu assisti a um filme.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:A"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02761",
+      "xpath": "/w:document/w:body/w:p[538]",
+      "text": "a + consoantes:a book – a doctor – a teacher – a student – a movie – a house – a horse.",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02761"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:003",
+        "MVP:REVIEW:HAND-HELPERS:005"
+      ]
+    },
+    {
+      "source_id": "P02762",
+      "xpath": "/w:document/w:body/w:p[538]/w:r[17]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wps:wsp/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02763",
+      "xpath": "/w:document/w:body/w:p[538]/w:r[17]/mc:AlternateContent/mc:Fallback/w:pict/v:rect/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02764",
+      "xpath": "/w:document/w:body/w:p[539]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02765",
+      "xpath": "/w:document/w:body/w:p[540]",
+      "text": "an + vogais:an elephant – an egg – an orange – an engineer – an umbrella – an ant.",
+      "style": "Ttulo6",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:AN"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:003"
+      ]
+    },
+    {
+      "source_id": "P02766",
+      "xpath": "/w:document/w:body/w:p[541]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02767",
+      "xpath": "/w:document/w:body/w:p[542]",
+      "text": "“THE” - Definido: O objeto é definido. Ex.: The movie was very good. O filme foi muito bom. Em inglês o artigo não varia entre singular ou plural. Ex.: The teacher. The teachers. Em inglês o artigo não varia entre masculino ou feminino. Ex.: The boy. The girl.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:THE"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02768",
+      "xpath": "/w:document/w:body/w:p[543]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02769",
+      "xpath": "/w:document/w:body/w:p[544]",
+      "text": "Importante:",
+      "style": "Ttulo3",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02770",
+      "xpath": "/w:document/w:body/w:p[545]",
+      "text": "Em português colocamos artigo antes de nomes próprios.Ex.: A Susan é minha professora.",
+      "style": "Ttulo6",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02771",
+      "xpath": "/w:document/w:body/w:p[546]",
+      "text": "Em inglês não existe artigo antes de nome próprio.Ex.: The Susan is my teacher.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:002"
+      ]
+    },
+    {
+      "source_id": "P02772",
+      "xpath": "/w:document/w:body/w:p[547]",
+      "text": "Em inglês não existe artigo antes de pronomes.Ex.: The my bag is blue.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:002"
+      ]
+    },
+    {
+      "source_id": "P02773",
+      "xpath": "/w:document/w:body/w:p[548]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02774",
+      "xpath": "/w:document/w:body/w:p[549]",
+      "text": "4 – PRONOMES DEMONSTRATIVOS:",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02775",
+      "xpath": "/w:document/w:body/w:p[550]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02776",
+      "xpath": "/w:document/w:body/w:p[551]",
+      "text": "Mostram o objeto ou a ideia (perto ou longe – singular ou plural).",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02777",
+      "xpath": "/w:document/w:body/w:p[552]",
+      "text": "Ex.: That is my car. Aquele é meu carro. That is not right. Isso não está certo.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02778",
+      "xpath": "/w:document/w:body/w:p[553]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02779",
+      "xpath": "/w:document/w:body/w:p[554]",
+      "text": "Fazem referência ao objeto/assunto mencionado. Ex.: That is a good idea. Essa é uma boa ideia.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02780",
+      "xpath": "/w:document/w:body/w:p[555]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02781",
+      "xpath": "/w:document/w:body/w:p[556]",
+      "text": "Não existe isto, isso ou aquilo em inglês. Ex.: That is terrible. Isso é terrível.",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:004"
+      ]
+    },
+    {
+      "source_id": "P02782",
+      "xpath": "/w:document/w:body/w:p[557]",
+      "text": "NounsSlide: Singular and Plural ArticlesDemonstrativesNounsSlide: Singular and Plural ArticlesDemonstratives",
+      "style": "(default)",
+      "drawing_count": 2,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02782",
+        "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097"
+      ],
+      "editorial_issue_ids": [
+        "MVP:REVIEW:HAND-HELPERS:005"
+      ]
+    },
+    {
+      "source_id": "P02783",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[1]/wps:txbx/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02784",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02785",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[2]",
+      "text": "Nouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02786",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[3]",
+      "text": "Slide: Singular and Plural Articles",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02787",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/wps:wsp[2]/wps:txbx/w:txbxContent/w:p[4]",
+      "text": "Demonstratives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02788",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[1]/v:textbox/w:txbxContent/w:p",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02789",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[1]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02790",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[2]",
+      "text": "Nouns",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02791",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[3]",
+      "text": "Slide: Singular and Plural Articles",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02792",
+      "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Fallback/w:pict/v:group/v:group/v:rect[2]/v:textbox/w:txbxContent/w:p[4]",
+      "text": "Demonstratives",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "LINKED_TO_UNIT",
+      "unit_ids": [
+        "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES"
+      ],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02793",
+      "xpath": "/w:document/w:body/w:p[558]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
+    },
+    {
+      "source_id": "P02794",
+      "xpath": "/w:document/w:body/w:p[559]",
+      "text": "",
+      "style": "(default)",
+      "drawing_count": 0,
+      "disposition": "BLANK_LAYOUT",
+      "unit_ids": [],
+      "editorial_issue_ids": []
     }
   ],
   "tables": [
@@ -2685,6 +3459,18 @@
         ]
       ],
       "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"aa\"/><w:tblW w:w=\"9983\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:left w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:bottom w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:right w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:insideH w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/><w:insideV w:val=\"single\" w:sz=\"18\" w:space=\"0\" w:color=\"000000\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
+    },
+    {
+      "id": "T0018",
+      "xpath": "/w:document/w:body/w:tbl[18]",
+      "rows": 1,
+      "grid_columns": 1,
+      "cells": [
+        [
+          "Nome comum no singular nunca estará sozinho. Ex.:The star A Star This star That star These stars Those starsMy star Carol’s star Some stars Any star No star One star Two starsNome comum no singular nunca terá dois acompanhantes. Ex.:The my car is there.Nome próprio no singular sempre estará sozinho.Ex.: The Brazil."
+        ]
+      ],
+      "properties_xml": "<w:tblPr xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:wpc=\"http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas\" xmlns:cx=\"http://schemas.microsoft.com/office/drawing/2014/chartex\" xmlns:cx1=\"http://schemas.microsoft.com/office/drawing/2015/9/8/chartex\" xmlns:cx2=\"http://schemas.microsoft.com/office/drawing/2015/10/21/chartex\" xmlns:cx3=\"http://schemas.microsoft.com/office/drawing/2016/5/9/chartex\" xmlns:cx4=\"http://schemas.microsoft.com/office/drawing/2016/5/10/chartex\" xmlns:cx5=\"http://schemas.microsoft.com/office/drawing/2016/5/11/chartex\" xmlns:cx6=\"http://schemas.microsoft.com/office/drawing/2016/5/12/chartex\" xmlns:cx7=\"http://schemas.microsoft.com/office/drawing/2016/5/13/chartex\" xmlns:cx8=\"http://schemas.microsoft.com/office/drawing/2016/5/14/chartex\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:aink=\"http://schemas.microsoft.com/office/drawing/2016/ink\" xmlns:am3d=\"http://schemas.microsoft.com/office/drawing/2017/model3d\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:oel=\"http://schemas.microsoft.com/office/2019/extlst\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:wp14=\"http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing\" xmlns:wp=\"http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing\" xmlns:w10=\"urn:schemas-microsoft-com:office:word\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cex=\"http://schemas.microsoft.com/office/word/2018/wordml/cex\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16=\"http://schemas.microsoft.com/office/word/2018/wordml\" xmlns:w16du=\"http://schemas.microsoft.com/office/word/2023/wordml/word16du\" xmlns:w16sdtdh=\"http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash\" xmlns:w16sdtfl=\"http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" xmlns:wpg=\"http://schemas.microsoft.com/office/word/2010/wordprocessingGroup\" xmlns:wpi=\"http://schemas.microsoft.com/office/word/2010/wordprocessingInk\" xmlns:wne=\"http://schemas.microsoft.com/office/word/2006/wordml\" xmlns:wps=\"http://schemas.microsoft.com/office/word/2010/wordprocessingShape\"><w:tblStyle w:val=\"af0\"/><w:tblW w:w=\"9925\" w:type=\"dxa\"/><w:tblInd w:w=\"932\" w:type=\"dxa\"/><w:tblBorders><w:top w:val=\"single\" w:sz=\"2\" w:space=\"0\" w:color=\"000080\"/><w:left w:val=\"single\" w:sz=\"2\" w:space=\"0\" w:color=\"000080\"/><w:bottom w:val=\"single\" w:sz=\"2\" w:space=\"0\" w:color=\"000080\"/><w:right w:val=\"single\" w:sz=\"2\" w:space=\"0\" w:color=\"000080\"/><w:insideH w:val=\"single\" w:sz=\"2\" w:space=\"0\" w:color=\"000080\"/><w:insideV w:val=\"single\" w:sz=\"2\" w:space=\"0\" w:color=\"000080\"/></w:tblBorders><w:tblLayout w:type=\"fixed\"/><w:tblLook w:val=\"0000\" w:firstRow=\"0\" w:lastRow=\"0\" w:firstColumn=\"0\" w:lastColumn=\"0\" w:noHBand=\"0\" w:noVBand=\"0\"/></w:tblPr>"
     }
   ],
   "assets": [
@@ -3527,6 +4313,420 @@
         }
       ],
       "reading_rotation": 0
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0089",
+        "src": "assets/master-hand-helpers-image880.png",
+        "source_filename": "image880.png",
+        "width": 1,
+        "height": 1,
+        "format": "PNG",
+        "color_mode": "COLOR",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "93a7509fccefc030676a5e5f3c549e04559ab7be404486fc554ae1ab5ab8df22",
+        "original_width_mm": 2.06,
+        "original_height_mm": 9.79,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": true,
+        "presentation_matte": "spectral",
+        "alt": {
+          "en": "Technical transparent pixel.",
+          "es": "Píxel transparente técnico.",
+          "pt": "Imagem didática original: Pixel transparente técnico"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0089",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0089",
+        "source_use": {
+          "id": "I0089",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[2]/mc:AlternateContent/mc:Fallback/w:drawing/wp:anchor/a:graphic/a:graphicData/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId166",
+          "target": "media/image880.png",
+          "width_mm": 2.06,
+          "height_mm": 9.79,
+          "effective_ppi_x": 12.3,
+          "description": {
+            "id": "88",
+            "name": "image88.png"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0090",
+        "src": "assets/master-hand-helpers-image162.png",
+        "source_filename": "image162.png",
+        "width": 418,
+        "height": 52,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "878e54492f33f56fce8540ba23ed6e74c7a139392a511620020ff444b01007ac",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: this, that, these, those.",
+          "es": "Capa textual: this, that, these, those.",
+          "pt": "Imagem didática original: This / that / these / those"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0090",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0090",
+        "source_use": {
+          "id": "I0090",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[1]/pic:blipFill/a:blip",
+          "relationship": "rId167",
+          "target": "media/image162.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 82.1,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0091",
+        "src": "assets/master-hand-helpers-image163.png",
+        "source_filename": "image163.png",
+        "width": 242,
+        "height": 74,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "5c898613aab86bf0565e06061c1a2cd59e0f9634701e511cb38ec06cf724928d",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: some, any, no.",
+          "es": "Capa textual: some, any, no.",
+          "pt": "Imagem didática original: Some / any / no"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0091",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0091",
+        "source_use": {
+          "id": "I0091",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[2]/pic:blipFill/a:blip",
+          "relationship": "rId168",
+          "target": "media/image163.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 47.5,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0092",
+        "src": "assets/master-hand-helpers-image164.png",
+        "source_filename": "image164.png",
+        "width": 75,
+        "height": 51,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "a1e7e7ba239d07c10339a337b65956f0225ac6d361a03608e6dcf225ba641ba6",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Text layer: my.",
+          "es": "Capa textual: my.",
+          "pt": "Imagem didática original: My · camada tipográfica"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0092",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0092",
+        "source_use": {
+          "id": "I0092",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[3]/pic:blipFill/a:blip",
+          "relationship": "rId169",
+          "target": "media/image164.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 14.7,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0093",
+        "src": "assets/master-hand-helpers-image165.png",
+        "source_filename": "image165.png",
+        "width": 31,
+        "height": 40,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "6f2bc1b24f7446fec7b5e36c5e1669281510cb5d7b9f45ae78c710d39f637285",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Numeral one layer.",
+          "es": "Capa del numeral uno.",
+          "pt": "Imagem didática original: Numeral 1 · camada"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0093",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0093",
+        "source_use": {
+          "id": "I0093",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[4]/pic:blipFill/a:blip",
+          "relationship": "rId170",
+          "target": "media/image165.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 6.1,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0094",
+        "src": "assets/master-hand-helpers-image166.png",
+        "source_filename": "image166.png",
+        "width": 16,
+        "height": 22,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "bed9a44cf6b9f476638c465990156673718981aaf68598b4a8ef965def257bb2",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Small apostrophe layer.",
+          "es": "Capa pequeña de apóstrofo.",
+          "pt": "Imagem didática original: Apóstrofo · camada pequena"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0094",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0094",
+        "source_use": {
+          "id": "I0094",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[5]/pic:blipFill/a:blip",
+          "relationship": "rId171",
+          "target": "media/image166.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 3.1,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0095",
+        "src": "assets/master-hand-helpers-image167.png",
+        "source_filename": "image167.png",
+        "width": 17,
+        "height": 22,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "68aff4c4474b4949d9e2ce86e792641616d67509dcffdf717f0631c0ac8ebbd6",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Apostrophe layer.",
+          "es": "Capa de apóstrofo.",
+          "pt": "Imagem didática original: Apóstrofo · camada"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0095",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0095",
+        "source_use": {
+          "id": "I0095",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[6]/pic:blipFill/a:blip",
+          "relationship": "rId172",
+          "target": "media/image167.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 3.3,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0096",
+        "src": "assets/master-hand-helpers-image168.png",
+        "source_filename": "image168.png",
+        "width": 42,
+        "height": 40,
+        "format": "PNG",
+        "color_mode": "GRAYSCALE_CHANNELS",
+        "alpha": true,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "8b8c8478c1b10bbfabebce7cbbd6e6cf6722753e28d9e401e2d768aa7c456aec",
+        "original_width_mm": 129.38,
+        "original_height_mm": 95.43,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Numeral three layer.",
+          "es": "Capa del numeral tres.",
+          "pt": "Imagem didática original: Numeral 3 · camada"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0096",
+        "paragraph_id": "P02730",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0096",
+        "source_use": {
+          "id": "I0096",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[522]/w:r[4]/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic[7]/pic:blipFill/a:blip",
+          "relationship": "rId173",
+          "target": "media/image168.png",
+          "width_mm": 129.38,
+          "height_mm": 95.43,
+          "effective_ppi_x": 8.2,
+          "description": {
+            "id": "129",
+            "name": "Group 129"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
+    },
+    {
+      "asset": {
+        "id": "MVP:ASSET:HAND-HELPERS:I0097",
+        "src": "assets/master-existence-original.jpg",
+        "source_filename": "image138.jpg",
+        "width": 376,
+        "height": 188,
+        "format": "JPEG",
+        "color_mode": "COLOR",
+        "alpha": false,
+        "origin": "MASTER_ORIGINAL",
+        "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+        "original_width_mm": 107.23,
+        "original_height_mm": 27.6,
+        "geometry_status": "DRAWING_EXTENT_RECORDED_PHYSICAL_PRINT_PENDING",
+        "technical_placeholder": false,
+        "presentation_matte": "light",
+        "alt": {
+          "en": "Pointing hand with GO TO label.",
+          "es": "Mano indicadora con rótulo GO TO.",
+          "pt": "Imagem didática original: Remissão GO TO · mão indicadora"
+        }
+      },
+      "occurrence": {
+        "id": "MVP:OCCURRENCE:HAND-HELPERS:I0097",
+        "paragraph_id": "P02782",
+        "asset_id": "MVP:ASSET:HAND-HELPERS:I0097",
+        "source_use": {
+          "id": "I0097",
+          "part": "word/document.xml",
+          "xpath": "/w:document/w:body/w:p[557]/w:r/mc:AlternateContent/mc:Choice/w:drawing/wp:anchor/a:graphic/a:graphicData/wpg:wgp/wpg:grpSp/pic:pic/pic:blipFill/a:blip",
+          "relationship": "rId142",
+          "target": "media/image138.jpg",
+          "width_mm": 107.23,
+          "height_mm": 27.6,
+          "effective_ppi_x": 89.1,
+          "description": {
+            "id": "211",
+            "name": "Group 211"
+          },
+          "crop": [
+            {}
+          ]
+        }
+      }
     }
   ],
   "image_references": [
@@ -4572,6 +5772,57 @@
       ],
       "observation": "Grupo contém imagens e glifos de fonte especial; a extração em camadas não comprova fidelidade da montagem integral.",
       "status": "VISUAL_RECONSTRUCTION_PENDING"
+    },
+    {
+      "id": "MVP:REVIEW:HAND-HELPERS:001",
+      "source_ids": [
+        "P02740",
+        "P02744",
+        "P02747"
+      ],
+      "observation": "Rever o alcance de nunca/sempre: distinguir substantivo comum contável singular, usos incontáveis e nomes próprios. Não generalizar como regra sem exceções.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:HAND-HELPERS:002",
+      "source_ids": [
+        "P02745",
+        "P02748",
+        "P02771",
+        "P02772"
+      ],
+      "observation": "Sinalizar exemplos inadequados para evitar que The my car, The Brazil, The Susan e The my bag sejam aprendidos como modelos corretos. Rever exceções de artigo com nomes próprios.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:HAND-HELPERS:003",
+      "source_ids": [
+        "P02761",
+        "P02765"
+      ],
+      "observation": "A/an dependem do som inicial, não só da letra: propor revisão com university/hour no momento editorial, sem substituir a fonte.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:HAND-HELPERS:004",
+      "source_ids": [
+        "P02781"
+      ],
+      "observation": "Rever Não existe isto, isso ou aquilo em inglês: equivalência de this/that depende de contexto e distância discursiva, não ausência de recurso no idioma.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
+    },
+    {
+      "id": "MVP:REVIEW:HAND-HELPERS:005",
+      "source_ids": [
+        "P02687",
+        "P02694",
+        "P02719",
+        "P02730",
+        "P02761",
+        "P02782"
+      ],
+      "observation": "Camadas e alternativas XML preservadas; composição integral não reconstruída. Pixel transparente não é figura pedagógica; referências GO TO não geram destino inventado.",
+      "status": "EDITORIAL_REVIEW_NOT_SOURCE_CORRECTION"
     }
   ],
   "source_units": [
@@ -4609,7 +5860,263 @@
     "MVP:UNIT:TOOLS:SOURCE:FIGURE:112",
     "MVP:UNIT:TOOLS:SOURCE:FIGURE:113",
     "MVP:UNIT:TOOLS:SOURCE:FIGURE:114",
-    "MVP:UNIT:TOOLS:SOURCE:FIGURE:138"
+    "MVP:UNIT:TOOLS:SOURCE:FIGURE:138",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02730",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:TECHNICAL:I0089",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02761",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02782",
+    "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097"
   ],
-  "status": "STRUCTURAL_EXTRACTION_NOT_FULL_VISUAL_RECONSTRUCTION"
+  "status": "STRUCTURAL_EXTRACTION_NOT_FULL_VISUAL_RECONSTRUCTION",
+  "vector_compositions": [
+    {
+      "id": "MVP:VISUAL:HAND-HELPERS:P02730",
+      "paragraph_id": "P02730",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "5e7f37c5965279705946d9d7e7920b2b6d2d6f1347303bec2d85a4c2440773a6",
+      "xml_src": "assets/source-xml/hand-helpers-P02730.xml",
+      "object_names": [
+        "Group 367",
+        "Rectangle 368",
+        "Freeform 369",
+        "Freeform 370",
+        "Freeform 371",
+        "Freeform 372",
+        "image88.png",
+        "Group 375",
+        "Rectangle 376",
+        "Freeform 377",
+        "Freeform 381",
+        "Group 130",
+        "Rectangle 131",
+        "Shape 487",
+        "Shape 488",
+        "Shape 489",
+        "Freeform 137",
+        "Freeform 138",
+        "Freeform 139",
+        "Freeform 140",
+        "Freeform 141",
+        "Freeform 142",
+        "Freeform 143",
+        "Freeform 144",
+        "Freeform 145",
+        "Freeform 146",
+        "Freeform 147",
+        "Freeform 183",
+        "Freeform 187",
+        "Freeform 188",
+        "Freeform 189",
+        "Freeform 190",
+        "Freeform 191",
+        "Shape 507",
+        "Shape 508",
+        "Freeform 194",
+        "Shape 510",
+        "Shape 511",
+        "Freeform 197",
+        "Freeform 198",
+        "Freeform 199",
+        "Freeform 200",
+        "Freeform 201",
+        "Freeform 202",
+        "Freeform 203",
+        "Freeform 206"
+      ],
+      "container_extents": [
+        {
+          "cx": "403225",
+          "cy": "346710"
+        },
+        {
+          "cx": "74295",
+          "cy": "352425"
+        },
+        {
+          "cx": "74295",
+          "cy": "352425"
+        },
+        {
+          "cx": "146685",
+          "cy": "260350"
+        },
+        {
+          "cx": "4657725",
+          "cy": "3435350"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId166",
+          "path": "word/media/image880.png",
+          "sha256": "93a7509fccefc030676a5e5f3c549e04559ab7be404486fc554ae1ab5ab8df22",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId167",
+          "path": "word/media/image162.png",
+          "sha256": "878e54492f33f56fce8540ba23ed6e74c7a139392a511620020ff444b01007ac",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId168",
+          "path": "word/media/image163.png",
+          "sha256": "5c898613aab86bf0565e06061c1a2cd59e0f9634701e511cb38ec06cf724928d",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId169",
+          "path": "word/media/image164.png",
+          "sha256": "a1e7e7ba239d07c10339a337b65956f0225ac6d361a03608e6dcf225ba641ba6",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId170",
+          "path": "word/media/image165.png",
+          "sha256": "6f2bc1b24f7446fec7b5e36c5e1669281510cb5d7b9f45ae78c710d39f637285",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId171",
+          "path": "word/media/image166.png",
+          "sha256": "bed9a44cf6b9f476638c465990156673718981aaf68598b4a8ef965def257bb2",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId172",
+          "path": "word/media/image167.png",
+          "sha256": "68aff4c4474b4949d9e2ce86e792641616d67509dcffdf717f0631c0ac8ebbd6",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId173",
+          "path": "word/media/image168.png",
+          "sha256": "8b8c8478c1b10bbfabebce7cbbd6e6cf6722753e28d9e401e2d768aa7c456aec",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId174",
+          "path": "word/media/image169.png",
+          "sha256": "878e54492f33f56fce8540ba23ed6e74c7a139392a511620020ff444b01007ac",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId175",
+          "path": "word/media/image170.png",
+          "sha256": "5c898613aab86bf0565e06061c1a2cd59e0f9634701e511cb38ec06cf724928d",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId176",
+          "path": "word/media/image171.png",
+          "sha256": "a1e7e7ba239d07c10339a337b65956f0225ac6d361a03608e6dcf225ba641ba6",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId177",
+          "path": "word/media/image172.png",
+          "sha256": "6f2bc1b24f7446fec7b5e36c5e1669281510cb5d7b9f45ae78c710d39f637285",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId178",
+          "path": "word/media/image173.png",
+          "sha256": "bed9a44cf6b9f476638c465990156673718981aaf68598b4a8ef965def257bb2",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId179",
+          "path": "word/media/image174.png",
+          "sha256": "68aff4c4474b4949d9e2ce86e792641616d67509dcffdf717f0631c0ac8ebbd6",
+          "representation": "imagedata"
+        },
+        {
+          "relationship": "rId180",
+          "path": "word/media/image175.png",
+          "sha256": "8b8c8478c1b10bbfabebce7cbbd6e6cf6722753e28d9e401e2d768aa7c456aec",
+          "representation": "imagedata"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:HAND-HELPERS:P02761",
+      "paragraph_id": "P02761",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "d833e467b97d20a46ec159437aa0080db1d58e3532446c1f6363faed72212e7c",
+      "xml_src": "assets/source-xml/hand-helpers-P02761.xml",
+      "object_names": [],
+      "container_extents": [
+        {
+          "cx": "50165",
+          "cy": "12700"
+        }
+      ],
+      "media_dependencies": [],
+      "reproduction_status": "PENDING_COMPOSITION"
+    },
+    {
+      "id": "MVP:VISUAL:HAND-HELPERS:P02782",
+      "paragraph_id": "P02782",
+      "representation": "ORIGINAL_WORD_XML",
+      "sha256": "f79bcc2b0ab551ece5b53c630d046cdedfcea0b0615ff90a411840bbe63fcf05",
+      "xml_src": "assets/source-xml/hand-helpers-P02782.xml",
+      "object_names": [
+        "Group 213",
+        "Rectangle 214",
+        "Shape 607",
+        "Rectangle 218"
+      ],
+      "container_extents": [
+        {
+          "cx": "3860165",
+          "cy": "993775"
+        }
+      ],
+      "media_dependencies": [
+        {
+          "relationship": "rId142",
+          "path": "word/media/image138.jpg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+          "representation": "blip"
+        },
+        {
+          "relationship": "rId143",
+          "path": "word/media/image139.jpeg",
+          "sha256": "1842be7d013635afdedff3b841477d3f025ca8d4b973a8f14ca38cf36b03707c",
+          "representation": "imagedata"
+        }
+      ],
+      "reproduction_status": "PENDING_COMPOSITION"
+    }
+  ],
+  "covered_ranges": [
+    [
+      "P01130",
+      "P01404"
+    ],
+    [
+      "P02728",
+      "P02794"
+    ]
+  ]
 }

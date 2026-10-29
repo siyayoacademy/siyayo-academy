@@ -1,5 +1,5 @@
 {
-  "id": "JAGUAR-MVP-12-QUALITY-STATE",
+  "id": "JAGUAR-MVP-13-IN-HAND-HELPERS",
   "date": "2026-10-29",
   "timezone": "America/Sao_Paulo",
   "repository": "siyayoacademy/siyayo-academy",
@@ -8,7 +8,7 @@
     "cfb3e696ea3a3f23c4db02fb4d0c89c797b85af7",
     "4f585b014502700984f211ee70345b4440a4898e"
   ],
-  "authorization_evidence": "Professor: OK EXCELENTE GO NEXT ELO GO",
+  "authorization_evidence": "Professor: OK GO NEXT ELO",
   "states": {
     "implemented": true,
     "tested_locally": true,
@@ -17,15 +17,15 @@
     "physical_a4_homologated": false,
     "integrated_into_explorer": false
   },
-  "catalog_version": "0.10.0",
-  "units": 399,
-  "speech_targets": 1691,
-  "source_text_coverage_percent": 10.684105551837709,
+  "catalog_version": "0.11.0",
+  "units": 438,
+  "speech_targets": 1820,
+  "source_text_coverage_percent": 11.392355233633824,
   "next_go": {
-    "elo": "MVP13",
-    "source_start": "P02683",
-    "topic": "To be in your hand",
-    "action": "Delimitar e importar próximo bloco na arquitetura homologada, atualizar mapas e cobertura."
+    "elo": "MVP14",
+    "source_start": "P02795",
+    "topic": "TO BE – SUBSTITUTION DRILLS – Speaking",
+    "action": "Delimitar e importar exercícios no circuito homologado, preservar dados históricos e separação de respostas."
   },
   "known_limits": [
     {
@@ -60,19 +60,36 @@
     "xpr_handoff": "master-vip-xpr-handoff.json"
   },
   "previous_checkpoint": {
-    "id": "JAGUAR-MVP-11.2-HOMOLOGATED",
-    "record_commit": "f22f975e1f9e8649aa39bae3d5935969b1e83063"
+    "id": "JAGUAR-MVP-12-QUALITY-STATE",
+    "record_commit": "0a404defa9878b636e443abdd130435f7ee9e2bb"
   },
-  "implementation_base_commit": "f22f975e1f9e8649aa39bae3d5935969b1e83063",
+  "implementation_base_commit": "0a404defa9878b636e443abdd130435f7ee9e2bb",
   "completed_elo": {
-    "elo": "MVP12",
+    "elo": "MVP13",
     "bounds": [
-      "P02430",
-      "P02682"
+      "P02683",
+      "P02794"
     ],
-    "source_units": 25,
-    "evidence": "MASTER-VIP-MVP12-QUALITY-STATE.md",
+    "source_units": 39,
+    "evidence": "MASTER-VIP-MVP13-IN-HAND-HELPERS.md",
     "source_review": "PENDING",
     "visual_composition": "PENDING"
-  }
+  },
+  "history": [
+    {
+      "id": "JAGUAR-MVP-12-QUALITY-STATE",
+      "commit": "0a404defa9878b636e443abdd130435f7ee9e2bb",
+      "completed_elo": {
+        "elo": "MVP12",
+        "bounds": [
+          "P02430",
+          "P02682"
+        ],
+        "source_units": 25,
+        "evidence": "MASTER-VIP-MVP12-QUALITY-STATE.md",
+        "source_review": "PENDING",
+        "visual_composition": "PENDING"
+      }
+    }
+  ]
 }

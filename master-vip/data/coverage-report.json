@@ -1,32 +1,32 @@
 {
   "id": "MVP:COVERAGE",
   "date": "2026-10-29",
-  "catalog_version": "0.10.0",
+  "catalog_version": "0.11.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "scope": "Development branch only; partial modular source coverage; not main or full editorial/print approval",
   "method": "Unique original paragraph IDs linked to units; character count uses those full source paragraphs once. Whitespace-only paragraphs excluded from textual paragraph metric. Includes repeated source text present in DOCX XML; not page coverage or a quality score.",
   "text_characters": {
-    "integrated": 32569,
+    "integrated": 34728,
     "total": 304836,
-    "percent": 10.684105551837709
+    "percent": 11.392355233633824
   },
   "text_paragraphs": {
-    "integrated": 1094,
+    "integrated": 1131,
     "total": 11072,
-    "percent": 9.88078034682081
+    "percent": 10.214956647398845
   },
   "classified_xml_paragraphs": {
-    "mapped": 2094,
+    "mapped": 2206,
     "total": 20649,
-    "percent": 10.140926921400553
+    "percent": 10.683326069059035
   },
   "source_tables": {
-    "integrated": 19,
+    "integrated": 20,
     "total": 168,
-    "percent": 11.30952380952381
+    "percent": 11.904761904761905
   },
   "raster_unique_files": {
-    "preserved": 35,
+    "preserved": 51,
     "total": 237,
     "visual_reconstruction": "PENDING"
   },
@@ -42,7 +42,7 @@
     "text_characters": 22667,
     "text_character_percent": 7.4358015457491895
   },
-  "units": 399,
+  "units": 438,
   "chapters": [
     {
       "id": "MVP:CH:ORIENTATION",
@@ -60,13 +60,13 @@
       "id": "MVP:CH:TOOLS",
       "title": "Ferramentas da língua",
       "state": "PARTIAL_AVAILABLE",
-      "linked_text_paragraphs": 110
+      "linked_text_paragraphs": 143
     },
     {
       "id": "MVP:CH:TO-BE",
       "title": "To Be",
       "state": "PARTIAL_AVAILABLE",
-      "linked_text_paragraphs": 589
+      "linked_text_paragraphs": 593
     },
     {
       "id": "MVP:CH:QUESTIONS",

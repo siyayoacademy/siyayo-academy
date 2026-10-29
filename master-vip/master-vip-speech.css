@@ -31,3 +31,7 @@
 }
 .source-ornament{white-space:pre-wrap;overflow-wrap:anywhere;color:inherit}
 .slide-meta,.source-id,.source-notice{overflow-wrap:anywhere}
+
+/* Local contrast backing for original transparent dark labels; bytes unchanged. */
+.source-image-matte img{background:#f5f4ef;border-radius:8px;padding:10px}
+@media print{.source-image-matte img{background:#fff}}

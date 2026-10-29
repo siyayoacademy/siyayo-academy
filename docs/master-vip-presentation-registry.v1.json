@@ -1,7 +1,7 @@
 {
   "id": "MVP:PRESENTATION:REGISTRY",
   "version": "1.1.0",
-  "catalog_version": "0.10.0",
+  "catalog_version": "0.11.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "contract": "whole-card-click; decorative gold speaker left; no repeat/stop buttons",
   "normalization": "Decorative glyphs and whitespace only; original text unchanged",
@@ -17,9 +17,9 @@
     "homologation_scope": "Inherited card pattern approved; full current corpus and physical A4 pending",
     "integrated_into_explorer": false
   },
-  "unit_count": 399,
-  "textual_unit_count": 392,
-  "target_count": 1691,
+  "unit_count": 438,
+  "textual_unit_count": 424,
+  "target_count": 1820,
   "units": [
     {
       "id": "MVP:UNIT:EXISTENCE:CONCEPT:001",
@@ -17626,6 +17626,1442 @@
           "lang": "pt",
           "role": "figure",
           "text_sha256": "b2fd52fee680f990dfd82ddfaf8b79312a9ac310fbc7e6eb4ae476ac8c82eff9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02683",
+          "start": 0,
+          "end": 18,
+          "text_sha256": "900db076089d7735b3c12af40c8900091cfe68023fbe35d85a4cb8517196b689"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02719",
+          "start": 0,
+          "end": 24,
+          "text_sha256": "8060ec3c759674407fdd1500da43b8c4e9035c62310e7f0b40b79ed82bc6e749"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02719",
+          "start": 24,
+          "end": 48,
+          "text_sha256": "8060ec3c759674407fdd1500da43b8c4e9035c62310e7f0b40b79ed82bc6e749"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02722",
+          "start": 0,
+          "end": 24,
+          "text_sha256": "8060ec3c759674407fdd1500da43b8c4e9035c62310e7f0b40b79ed82bc6e749"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:PRONOUNS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02725",
+          "start": 0,
+          "end": 24,
+          "text_sha256": "8060ec3c759674407fdd1500da43b8c4e9035c62310e7f0b40b79ed82bc6e749"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02728",
+          "start": 0,
+          "end": 27,
+          "text_sha256": "c3199ccff3a17b161eec3fbbddde024fdc86bbe2b6fef98a33f3d704cccb8e4b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:instructions:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "instructions",
+          "lang": "en",
+          "role": "explanation",
+          "text_sha256": "b88cda680d211441d1aae99a66ed34b740b1ad28ea4508e0dbf507c4d952e16e"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:instructions:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "instructions",
+          "lang": "es",
+          "role": "explanation",
+          "text_sha256": "de7a4253a3e284663f754a305c8086d5f8ab8274871ac67cf9a73f08500e1cce"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:instructions:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "instructions",
+          "lang": "pt",
+          "role": "explanation",
+          "text_sha256": "dc6f430da30b5ebeb19f892a522607d9678882b0be6f33a04926fac9c1f038af"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02740",
+          "start": 0,
+          "end": 49,
+          "text_sha256": "31340ce15c2e605c6b6c232ac2497f8193a8fe15c1e2807c5967e018471b4097"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02741",
+          "start": 0,
+          "end": 59,
+          "text_sha256": "6ef85ae9748c636a1cb7fe512c70ad80a06af6c6abdf99b895869d5fbd3a540e"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02742",
+          "start": 0,
+          "end": 67,
+          "text_sha256": "b592d6986c02aeccb57848f371e99f958b05ca31a03a5822e80eadd1e50bd707"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:3:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:3:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02744",
+          "start": 0,
+          "end": 58,
+          "text_sha256": "e3126c5376508eabae2bc4c72c9617e73e5aa925be97c7d9d99ae2d10355a9ec"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02745",
+          "start": 0,
+          "end": 20,
+          "text_sha256": "ae3a9a1ae08679a39888d30d1aa585375c18bbfb4ea14c00ad40da7b2bf4468a"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:5:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:5:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02747",
+          "start": 0,
+          "end": 47,
+          "text_sha256": "9d21e5ffff8c7b269e6365d711eab173258f221f092cfd1a25b144f966e1d0f8"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:6:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:6:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02748",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "e5ae3349b30a6d2bdeed2df799006ce9d62998be784c799eb15371836353d963"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS:BLOCK:source:6:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:NOUN-HELPERS",
+          "key": "source:6:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02748",
+          "start": 5,
+          "end": 16,
+          "text_sha256": "e71758a4d98afbaf60828d88d362a8a18f9a8a6ecd3e2e534a5c75af01c27862"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:USEFUL",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02751",
+          "start": 0,
+          "end": 12,
+          "text_sha256": "c99a884071c1c98e373acfedeae514374c9b450873c0355ff3d8acfc69ad1870"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02753",
+          "start": 0,
+          "end": 45,
+          "text_sha256": "91be1b7d7b39199565d600dcc6d4aa78eb6ad114ed258875094bc23003898dce"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER:BLOCK:source:1:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+          "key": "source:1:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02754",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "e5ae3349b30a6d2bdeed2df799006ce9d62998be784c799eb15371836353d963"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER:BLOCK:source:1:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+          "key": "source:1:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02754",
+          "start": 5,
+          "end": 25,
+          "text_sha256": "38e86eccdf24cf32bdde1335b610dcbb09e1ff3021d005c42d67a8e95d623b43"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER:BLOCK:source:1:2:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:PROPER",
+          "key": "source:1:2",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02754",
+          "start": 25,
+          "end": 51,
+          "text_sha256": "93f5f09f93d32a9e5220e318c36a722065bbbe29e8edce775f78a504f0809ef0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02756",
+          "start": 0,
+          "end": 190,
+          "text_sha256": "4f728cb6d8f16d86b470fc8407f6ee0421555c6e0c6b8cfac0ec79e22679844b"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:COMMON",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02756",
+          "start": 190,
+          "end": 210,
+          "text_sha256": "38e86eccdf24cf32bdde1335b610dcbb09e1ff3021d005c42d67a8e95d623b43"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:ARTICLES",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02758",
+          "start": 0,
+          "end": 46,
+          "text_sha256": "dffc67f699bbd9428d6e2ae5a97097636948bebdea915f89df1d44e765e116f6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02760",
+          "start": 1,
+          "end": 7,
+          "text_sha256": "7dad1a9913eb7162eb1f91d99c8c8c5f153de529280be3047285f36aefbce371"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:0:2:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:0:2",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02760",
+          "start": 7,
+          "end": 56,
+          "text_sha256": "96439f0a9beb72c5ae88d702b552bf664e1b72c32935fc49909c7ec1e3289684"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:0:3:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:0:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02760",
+          "start": 56,
+          "end": 74,
+          "text_sha256": "e45875333f30388ba5d9d6dc193540c0ea71fd869775266c3b51c96274ece9fc"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:0:4:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:0:4",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02760",
+          "start": 74,
+          "end": 97,
+          "text_sha256": "2f57064722b2abcd57bb3337b9fbca6ee5eb5f1ae61d528455359055ce886ded"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02761",
+          "start": 0,
+          "end": 3,
+          "text_sha256": "215d8f946b672815cb39e3d62a2332a9a892dcc17f8df510dfb594b191f72e12"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:1:1:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:1:1",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02761",
+          "start": 3,
+          "end": 15,
+          "text_sha256": "4b55923755fdfdadff6808e5e1b84e6daddf98e3ebe78a1431fbf2a3bce94025"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:A:BLOCK:source:1:2:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:A",
+          "key": "source:1:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02761",
+          "start": 15,
+          "end": 87,
+          "text_sha256": "faa2e2850197c436dbfeff24f669456dd6bf0d1f22f1100d94326b97ff121504"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02765",
+          "start": 0,
+          "end": 4,
+          "text_sha256": "0ebf0f885c44e7ae7e705f06fccd591d83d64373a97248d8e141de7d77c1ee3a"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN:BLOCK:source:0:1:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+          "key": "source:0:1",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02765",
+          "start": 4,
+          "end": 12,
+          "text_sha256": "35a7ae8335ad2f495b13614f5c8ccb8894d6ba6369fcf7f03749102cda99e2af"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:AN",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02765",
+          "start": 12,
+          "end": 82,
+          "text_sha256": "efc0cea66fd153d213c455fe170bbe5b8bd8a8052474133aa08c47e4d142fb92"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 1,
+          "end": 4,
+          "text_sha256": "a3e5514bcfd79e7649e30fbf98826208f3da47833b4223b68cff2db23beb3801"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:2:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:2",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 4,
+          "end": 44,
+          "text_sha256": "7516de427e53d5f9606301651dfb786229980ac477e77d1e9e3937d2d3b61809"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:3:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 44,
+          "end": 68,
+          "text_sha256": "3eca195017d036b50d5393ddf59bf4a291310e6ec2115c61eb90b2daf2ab880a"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:4:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:4",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 68,
+          "end": 152,
+          "text_sha256": "125382205226031fdbbf51e746f34c2895f0708dac21e317a98b425f0c2157a7"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:5:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:5",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 152,
+          "end": 164,
+          "text_sha256": "10362361ce3e2268048d3bc6fefb8249ae9259a85b0a68997d04f5abbd5c2a1f"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:7:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:7",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 165,
+          "end": 178,
+          "text_sha256": "7dd290f2477304e6c139b49674beff50cdd316b139cc34a8b8693591c92f2e97"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:8:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:8",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 178,
+          "end": 242,
+          "text_sha256": "25bc9e4d24069f99027772b37be9f9dc78992ea54b59077205923124c365f7cf"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:9:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:9",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 242,
+          "end": 250,
+          "text_sha256": "25533d88824e5410d8715418eae807563de677e60bee3a81719ace78f360be20"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE:BLOCK:source:0:11:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:THE",
+          "key": "source:0:11",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02767",
+          "start": 251,
+          "end": 260,
+          "text_sha256": "c54b22fb97e90a26089dc80ad7517b8cb7cfb218bee7dfb621d426518c14e151"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02769",
+          "start": 0,
+          "end": 11,
+          "text_sha256": "fc8eec7e318dd7f36b3ebe0cce2ae85c4884e1ac1a434afa974650f7fe3013fe"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT:BLOCK:source:1:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+          "key": "source:1:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02770",
+          "start": 0,
+          "end": 86,
+          "text_sha256": "2f52b417db7f3641cdb97d77b0042f7c5809441ddfea1beff2b5a42369fd85ce"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT:BLOCK:source:2:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+          "key": "source:2:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02771",
+          "start": 0,
+          "end": 55,
+          "text_sha256": "6fac49f3c20db20c06ca22a291b4cf9f2e288bb02d488320124ba67f94903757"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT:BLOCK:source:2:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+          "key": "source:2:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02771",
+          "start": 55,
+          "end": 79,
+          "text_sha256": "863c64a9b68f70c8bcb1cf817b819890e4d6e6221ad4bf8cd25fe33d6ccc9aff"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT:BLOCK:source:3:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+          "key": "source:3:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02772",
+          "start": 0,
+          "end": 51,
+          "text_sha256": "ab288770829c2c5d1814d52bd4ae26d70dcabd33a47b16eff3b8019dc0c73014"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT:BLOCK:source:3:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:IMPORTANT",
+          "key": "source:3:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02772",
+          "start": 51,
+          "end": 70,
+          "text_sha256": "88021d61b766cdd29be609a17a115fb5447f0edbadbf7766ce07eaa0ff1efebc"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:0:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:0:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02774",
+          "start": 0,
+          "end": 28,
+          "text_sha256": "f6e92f4b0baf5c3212eda7836d69275f72c4abd18767209d7aaa7848af700d3f"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:1:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:1:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02776",
+          "start": 0,
+          "end": 66,
+          "text_sha256": "62b96592e3a2808671a2a936591b11355fa718da7c0d20ebdcbc3a0cd8bdc6fe"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:2:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:2:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02777",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "e5ae3349b30a6d2bdeed2df799006ce9d62998be784c799eb15371836353d963"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:2:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:2:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02777",
+          "start": 5,
+          "end": 20,
+          "text_sha256": "72329dce98d833f81b43ef67ef47c49f04c039519d20ff26db9f02eb8ca61d94"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:2:2:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:2:2",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02777",
+          "start": 20,
+          "end": 41,
+          "text_sha256": "04637de1e3afbfe32cd840fa23d3d5799dfffc22798bc8491646b7ba350f9515"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:2:3:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:2:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02777",
+          "start": 41,
+          "end": 59,
+          "text_sha256": "f43ea83c58e84fd713c24e5dec960da3d6575c20c44fd36b68dbcc7114747d47"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:2:4:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:2:4",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02777",
+          "start": 59,
+          "end": 80,
+          "text_sha256": "e49349f0612649018ff73f8ff3224c39506e5681585681f50b350ef0ba2a1027"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:3:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:3:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02779",
+          "start": 0,
+          "end": 52,
+          "text_sha256": "a19e4563acef982a2be1a8d76e400489ba168a4259fdf6eb5764561baebb5668"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:3:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:3:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02779",
+          "start": 52,
+          "end": 72,
+          "text_sha256": "3398abb9e4474f9b121a0c917462fa3845be9a219638cf3d2d2cb4abf833e5da"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:3:2:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:3:2",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02779",
+          "start": 72,
+          "end": 94,
+          "text_sha256": "19a96c471cca4972c8e4e3b358eeb99118679f3445475cf2da26127cf9539ea4"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:4:0:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:4:0",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02781",
+          "start": 0,
+          "end": 48,
+          "text_sha256": "324f824341c23683b60c7f23f4ebcfa5868677e7d875d8c61273435b3c601471"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:4:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:4:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02781",
+          "start": 48,
+          "end": 65,
+          "text_sha256": "26c0f2ff5f4be30022e5e90938c12cd42cc8fbdf12ef6514b29d1d607b46d585"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES:BLOCK:source:4:2:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:DEMONSTRATIVES",
+          "key": "source:4:2",
+          "lang": "pt",
+          "role": "explanation",
+          "source_id": "P02781",
+          "start": 65,
+          "end": 82,
+          "text_sha256": "f6c7d160c455978104d0bfd4c1a736920f23a8d73ca22048028243ada4129e40"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02782",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02782",
+          "start": 5,
+          "end": 40,
+          "text_sha256": "fb82e86c7c9a58593a5601e54c7a6610b3c4927113fd9cd1f6aed770c6d24072"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02782",
+          "start": 40,
+          "end": 54,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:0:3:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:0:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02782",
+          "start": 54,
+          "end": 59,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:0:4:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:0:4",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02782",
+          "start": 59,
+          "end": 94,
+          "text_sha256": "fb82e86c7c9a58593a5601e54c7a6610b3c4927113fd9cd1f6aed770c6d24072"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:0:5:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:0:5",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02782",
+          "start": 94,
+          "end": 108,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02785",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02786",
+          "start": 0,
+          "end": 35,
+          "text_sha256": "fb82e86c7c9a58593a5601e54c7a6610b3c4927113fd9cd1f6aed770c6d24072"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:3:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:3:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02787",
+          "start": 0,
+          "end": 14,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:4:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:4:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02790",
+          "start": 0,
+          "end": 5,
+          "text_sha256": "888b2617c1beaee9b2829d371f7247fb1a348b1c4ea1347c4e0f82b9fef92a03"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:5:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:5:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02791",
+          "start": 0,
+          "end": 35,
+          "text_sha256": "fb82e86c7c9a58593a5601e54c7a6610b3c4927113fd9cd1f6aed770c6d24072"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES:BLOCK:source:6:0:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:SLIDES",
+          "key": "source:6:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02792",
+          "start": 0,
+          "end": 14,
+          "text_sha256": "c190a5ef3668ce2d803d5931375309f74972d210813cf95c1b6614e67ae01eeb"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02687",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "4b8c61db1e76004b2e687ba6ca94f8e8176e956b54aeb25743e85bab38a379b3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "0f8495af3a10ef7be036db90f6f9de9aae159e3d3c956a7d9a9a84d41fdd331c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0079",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "9b291db78d1a6c0771eb139aea8b96968532c6a885926853eb963d2946ffccdf"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "ba2b706b1b58a048b526af0e511ba23f4ec39f653f1d8655fdaf76f215d9867c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "280df67064479c8b824bb7fd1d292988ec675ae93aea614c88a544e8caa1d4ec"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0080",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "3d61125aa854f70dfcfafca2c45c95f094196731daed85638eb7db0ac749acf5"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "8859090cd6447fe827425db790b06ec87c54a14c98d0a94cc732fe78940e563f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "84bc1c49848806bf4ff5dbb299a0873b5c74b9c2c13bbbb3316613951ff19264"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0081",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "7556987a1d171c08dc43df61463ede13cdb674353eca5e1444a1f2b8cea5e5df"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02694",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "e69743353f312318e186ec87be0af842cbe6d8ac8f5be16c32917ce54ee8ad9a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "76be614bc037d82326094642e9bca6ca862ebe526461d3846eb097b889c78fc6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0082",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "8c5fafeedc28526b6bd5136e6da9e288aed7c2f1e9eadcba48abb1faf2c9a67c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "eed7cbe1afc808628a1c710fa1eb8c14653de68082e2698fe10f2e353bb3cfb2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "b7d0989d46f14af6a926017fad900dbdd6fb0fd90ed35df82e4cb2700b047aa4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0083",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "2e79b4e6ad11a847097cff6ee2d77935fe228d8f08145a8506004f482ea55fbe"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "40d0388d9e2c05f2e8143fb41f7385a43945bbc91d842e600808ce4a07e57344"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "086d0814b902ecbd84592a3b65e534476e6ff089b820beeb815fd4907cbb32f5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0084",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "5f6f3c1a6520d8c5356a1c2e38a6b37c1014af763feda7a65781014e9ec69619"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "af371b096a9b6df2bfca8d6358bd8837da476a3827a391e0126e1747fcb6b3fa"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "839c0aa81bc3d16676ff811e2e83570c6de96e4761acea65f5e78995ec1e9174"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0085",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "3bac49675eee789a1d05065fd3092a3ea2a72fdbb0dce013e22b8db8b75caec9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "a694b2cd489ac4285d82bffda3e8c529aad593d803b1164328e7bd8be1f3aba3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "79c339ea3561a64232f3d149326b9623628f0542a1a9125677eec518c325f513"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0086",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "fc11fffebc5978a104af2ed5d2e3773eaef431d1d71511b2506c9d4d7701a85e"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "78b078900ed75865a761e40721fc37e3f0ec22d42427fd92db01acfb64a082e4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "03bb9df95a4a8f0e72b0ab08c7cabcf3fd90c99ddf2a4e909fa60b70259f249f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0087",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "7f7a7ee0ea2320d6b67a1c42a77f9bc709eba09af7278eb049da5911a0e5cbf6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "9bdf6c931cf2ccaff7ae53eb8df838acdd2cf38c7f9221ec2f48fd978f16ce25"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "a20ac914d6e8dc8b342a5a7b7f3484ccca46a18a47ab9a7d19c313f5d06ee44e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "455dfd0284588e391ae0924a7855ddc9c3f97ce469cb8a823feafeecb7165873"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02730",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:TECHNICAL:I0089",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "31ccdb9f33b27b32680a64eba08fc21c8d9829d45236e34b7866ae284e7cd9c6"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "1a834bdb0e86c38528f9c8f18dec1598242c98eea366b0897f707e828f96304f"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0090",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "22e8625ada44e7125dea9715b7e9e82c3adc7954fa9a0cd4b847cee13993b44c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "1c55da4298921134166b2ef780e66a3d27fab79f44ad14eb45e32ae1a6eed8db"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "318c61f92e31f073930dae16704f3dc0761ac1501866c3ea7379bdd55e627094"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0091",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "c83de468aebfd3daada9ca05a243885b621d807b28fc2e913d49910f88919b8c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "2fdb07695531f5416ac5bf9196509dd8207564c5671edb0e0227ce3453d74f94"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "45668e8a8ce256549dc0d4ead6b5dc037ca4c6a95e8dc1ff43c3ca7e6ddd6929"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0092",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "d6f4f45bfea34db541b9a783a793efc31e2d7f81bf8cd4dd89b36838a66f06a1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "e718155069ff157eab28eaea25372491d8cda07f7d1906012add7e4aca44f38a"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "98c91ffca49b18a9542fab956caa238463eac17a2a60a9e85b530a14f82fd173"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0093",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "47d1b4fa3e765211c49b48956688cfc38eab8d2f27496036b2da211d838279d6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "5d165781bd2344bf2f3b4fb3177a4287806d484435be294dc6bc3a24be0b1493"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "dd6a57f96dad26854f35163e165204868c47ad26ad96dc6e48d3937a1ed76294"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0094",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "b85b79e4a387102f4f37799e49562a39b6c4957e32ab8be6f6a0ffe4f68cabdf"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "4866f79d6b8d0eb7982a3fb838d93c31a1fec0e960fca10bf576b839c9863c84"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "58051b6f4c87b0edb7e2663b3091d74ebfd84a872ce86c4a8f9f7cbdb2ef8c1e"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0095",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "9c89d5bfe1d8b1a0d612b06e3e23128a9e205c3fa655deed9810d959b1a0b9ca"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "3b518072cafb30b317effb58839587e02deafd49cd4342864734c2f2c745d457"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "84685d25ae26f6c0e639e983a48ceea09a620ce961eedd567cd0f4ee2af9df1a"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0096",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "9154f324fc011e15a4ba471bb09d3b891ce94b2b79509e0ba1eeb50d7722336a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02761",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:VISUAL:P02782",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "9bdf6c931cf2ccaff7ae53eb8df838acdd2cf38c7f9221ec2f48fd978f16ce25"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "a20ac914d6e8dc8b342a5a7b7f3484ccca46a18a47ab9a7d19c313f5d06ee44e"
+        },
+        {
+          "id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TOOLS:HAND-HELPERS:FIGURE:I0097",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "455dfd0284588e391ae0924a7855ddc9c3f97ce469cb8a823feafeecb7165873"
         }
       ]
     }
