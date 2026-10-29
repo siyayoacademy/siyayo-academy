@@ -78,3 +78,8 @@ Estado: ESPECIFICADO. Implementação: PENDENTE. Testes: PENDENTES. Homologaçã
 ## Estado atualizado — MVP11
 
 IMPLEMENTADO na branch Master VIP: subcontêineres identificados, corpo explicativo 21px desktop/20px portrait, cartões speech em 372 das 374 unidades, 1.540 alvos. TESTADO LOCALMENTE: preservação textual, idiomas, cancelamento, renderização DOM de tela/print e ausência de controles de áudio impressos. HOMOLOGAÇÃO humana de visual, áudio e A4 físico: PENDENTE. INTEGRADO AO EXPLORER: NÃO. O navegador de teste não disponibilizou vozes e retornou synthesis-failed; o teste do controlador com vozes simuladas passou.
+
+
+## JAGUAR-MVP-11.2 — homologação e continuidade
+
+29/10/2026: professor homologou o padrão visual e confirmou áudio funcional nos cartões revisados, incluindo classe com inicial maiúscula e quebra de linha antes do exemplo. Este registro atualiza os estados históricos de pendência acima somente nesse escopo; conteúdo integral e A4 físico não estão homologados. Guia vigente HOW TO DO/RECORD/SHOW/CHECK/SPEAK: [Work Map](SIYAYO-WORK-MAP.md). [Checkpoint](master-vip-jaguar-checkpoint.json) e [referência XPR](master-vip-xpr-handoff.json). Prioridade primária: importar o restante da apostila com o componente aprovado. NEXT GO: MVP12, P02430 QUALITY & STATE; não repetir auditorias concluídas ou abrir arquitetura paralela.

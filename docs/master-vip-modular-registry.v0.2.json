@@ -944,6 +944,12 @@
     "contract": "whole-card-click; decorative gold speaker left; no extra repeat/stop buttons",
     "implemented": true,
     "tested_locally": true,
-    "homologated": false
+    "homologated": true,
+    "homologation_scope": "Visual/card pattern and reviewed audio; not entire corpus or physical A4"
+  },
+  "continuity": {
+    "work_map": "SIYAYO-WORK-MAP.md",
+    "checkpoint": "master-vip-jaguar-checkpoint.json",
+    "xpr": "master-vip-xpr-handoff.json"
   }
 }

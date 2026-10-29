@@ -1,0 +1,39 @@
+{
+  "id": "MVP:XPR:HANDOFF",
+  "status": "LOCAL_REFERENCE_AND_CENTRAL_ENROLLMENT_PROPOSAL",
+  "project": "MVP",
+  "registry": "master-vip-modular-registry.v0.2.json",
+  "checkpoint": "master-vip-jaguar-checkpoint.json",
+  "governance_branch": "jaguar/cross-project-registry-xpr03-h14-supervision-20261025",
+  "references": [
+    "docs/SIYAYO-CROSS-PROJECT-REGISTRY.md",
+    "docs/siyayo-cross-project-registry.json",
+    "docs/siyayo-cross-project-watchlist.json",
+    "docs/siyayo-module-registry.json"
+  ],
+  "relationship": "Adapted presentation pattern from SIA LINES/Possible Responses; independent speech controller; no assessment hooks",
+  "watch_candidate": {
+    "id": "MVP:implementation",
+    "project_id": "MVP",
+    "role": "implementation",
+    "repository": "siyayoacademy/siyayo-academy",
+    "branch": "jaguar/master-vip-modular-site-print-20261026",
+    "expected_sha": "4f585b014502700984f211ee70345b4440a4898e"
+  },
+  "central_watchlist_modified": false,
+  "continuous_supervision_installed": false,
+  "consumers": {
+    "current": [
+      "Five available Master VIP chapter destinations"
+    ],
+    "future_not_integrated": [
+      "Remaining chapters",
+      "GEAR",
+      "Multiverse 360°",
+      "New experiences"
+    ]
+  },
+  "reg_01": "Existing Master VIP module identities and presentation registry",
+  "reg_02": "Catalog → renderer → text-card speech / independent print; navigation cancels speech; no persistence or evaluative events",
+  "reg_03": "Docs-only checkpoint update; no runtime/content delta; future imports validate changed source spans and references"
+}

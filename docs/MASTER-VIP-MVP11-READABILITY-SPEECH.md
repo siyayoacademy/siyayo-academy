@@ -25,3 +25,8 @@ PENDENTE: confirmação audível no navegador do usuário. O navegador deste lab
 HOMOLOGADO: não. INTEGRADO AO EXPLORER: não. Catálogo permanece 0.9.0, 374 unidades e 10,2245% dos caracteres textuais da fonte; este lote não importa novos trechos da apostila. Próximas importações adotam o componente e exigem revisão de idioma/origem.
 
 Main, PR #3, contratos avaliativos, PATITA/NICK, D1 e produção não foram alterados. Supervisão contínua não foi instalada.
+
+
+## JAGUAR-MVP-11.2 — homologação e continuidade
+
+29/10/2026: professor homologou o padrão visual e confirmou áudio funcional nos cartões revisados, incluindo classe com inicial maiúscula e quebra de linha antes do exemplo. Este registro atualiza os estados históricos de pendência acima somente nesse escopo; conteúdo integral e A4 físico não estão homologados. Guia vigente HOW TO DO/RECORD/SHOW/CHECK/SPEAK: [Work Map](SIYAYO-WORK-MAP.md). [Checkpoint](master-vip-jaguar-checkpoint.json) e [referência XPR](master-vip-xpr-handoff.json). Prioridade primária: importar o restante da apostila com o componente aprovado. NEXT GO: MVP12, P02430 QUALITY & STATE; não repetir auditorias concluídas ou abrir arquitetura paralela.

@@ -159,3 +159,8 @@ Execução autorizada com a ressalva do cartão inteiro clicável, speaker doura
 ## ELO MVP11.1 — tipos de palavras em duas linhas
 
 29/10/2026: professor confirmou áudio funcional nos cartões revisados. Confirmação humana parcial; não presume revisão integral de todas as vozes/blocos. Ajuste solicitado no WORD_TYPE_MAP: nome da classe com inicial maiúscula e demais letras minúsculas em EN/ES/PT, negrito e dois-pontos, quebra de linha explícita antes do exemplo. Aplicado pelo renderizador em tela e impressão; catálogo, IDs, alvos e comportamento speech preservados. Exemplo: Substantivo: / cenoura. Sem novos botões de áudio.
+
+
+## JAGUAR-MVP-11.2 — homologação e continuidade
+
+29/10/2026: professor homologou o padrão visual e confirmou áudio funcional nos cartões revisados, incluindo classe com inicial maiúscula e quebra de linha antes do exemplo. Este registro atualiza os estados históricos de pendência acima somente nesse escopo; conteúdo integral e A4 físico não estão homologados. Guia vigente HOW TO DO/RECORD/SHOW/CHECK/SPEAK: [Work Map](SIYAYO-WORK-MAP.md). [Checkpoint](master-vip-jaguar-checkpoint.json) e [referência XPR](master-vip-xpr-handoff.json). Prioridade primária: importar o restante da apostila com o componente aprovado. NEXT GO: MVP12, P02430 QUALITY & STATE; não repetir auditorias concluídas ou abrir arquitetura paralela.
