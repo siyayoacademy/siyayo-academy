@@ -56,7 +56,10 @@ function mountExploration(doc,el,experience,language,skills,catalog,source){
     var subtitle=doc.createElement('h4');subtitle.className='why-probe-step';
     subtitle.textContent=(i+1)+' · '+labels[2];section.appendChild(subtitle);
     var q=doc.createElement('button');q.type='button';q.className='why-probe-question why-probe-question-card';
-    q.textContent=spec.question;q.addEventListener('click',function(){if(!el.hidden&&isExploringWhy())root.SIYAYOVerbExplorerExperienceRuntime?.speak?.(spec.question,language);});section.appendChild(q);
+    var speaker=doc.createElement('span');speaker.className='siyayo-speaker';speaker.setAttribute('aria-hidden','true');
+    var questionText=doc.createElement('span');questionText.className='why-probe-question-text';questionText.textContent=spec.question;
+    q.appendChild(speaker);q.appendChild(questionText);
+    q.addEventListener('click',function(){if(!el.hidden&&isExploringWhy())root.SIYAYOVerbExplorerExperienceRuntime?.speak?.(spec.question,language);});section.appendChild(q);
     var options=doc.createElement('div');options.className='why-probe-options';
     spec.alternatives.forEach(function(a){
       var b=doc.createElement('button');b.type='button';b.className='why-probe-option';b.textContent=a.label;
