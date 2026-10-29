@@ -22,5 +22,5 @@ jobs:
         run: node scripts/test-s3-why-canonical-green-cycle.js
       - name: Check human-review safeguards S1 S2
         run: node scripts/test-why-production-review-preview.cjs
-      - name: Check release remains blocked
-        run: node scripts/test-jaguar-why-production-safety-gate.cjs
+      - name: Confirm isolated HTML drift is rejected by production safety gate
+        run: node scripts/test-why-isolated-production-stop.cjs
