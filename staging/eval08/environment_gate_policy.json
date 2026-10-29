@@ -1,0 +1,23 @@
+{
+  "id": "SIYAYO-EVAL08-GITHUB-ENV-02",
+  "environment": "eval08-staging-d1",
+  "workflow": ".github/workflows/jaguar-eval08-wrangler-gate.yml",
+  "workflow_branch": "jaguar/eval08-wrangler-gate-20261028",
+  "database_name": "siyayo-academy-staging",
+  "database_id": "cc48dd16-ac40-4af1-a206-f2d72ed4e7f0",
+  "migration_filename": "0001_eval08_initial.sql",
+  "migration_git_blob": "9ec9e52f471abf7218bfeb11f82bdb9591050ae2",
+  "environment_secrets": [
+    "SIYAYO_EVAL08_CF_D1_TOKEN",
+    "SIYAYO_EVAL08_CF_ACCOUNT_ID"
+  ],
+  "required_environment_branch": "jaguar/eval08-wrangler-gate-20261028",
+  "approval_requirement": "required_reviewers",
+  "external_environment_config": "NOT_VERIFIED",
+  "environment_secret_presence": "NOT_VERIFIED",
+  "real_d1_permissions": "NOT_VERIFIED",
+  "cloudflare_staging_state": "USER_REPORTED_READ_ONLY",
+  "cloudflare_last_bookmark": "00000004-00000000-00005112-2cb78f48d31a57a2d2b26ac43bf9ec3e",
+  "migration_remote_execution": "NOT_AUTHORIZED_AND_NOT_EXECUTED",
+  "main_workflow_enablement": "NOT_AUTHORIZED_AND_NOT_EXECUTED"
+}

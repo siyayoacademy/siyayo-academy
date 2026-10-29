@@ -1,0 +1,29 @@
+name: JAGUAR EVAL-08 · GitHub environment policy & local D1 audit
+on:
+  push:
+    branches: [jaguar/eval08-github-environment-gate-20261029]
+permissions:
+  contents: read
+jobs:
+  isolated-policy-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: EVAL-08 environment policy is fail-closed
+        run: python3 staging/eval08/test_github_env_gate.py
+      - name: Review exact migration and SQL guards offline
+        run: |
+          python3 staging/eval08/test_wrangler_preflight.py
+          python3 staging/eval08/test_initial_schema.py
+          python3 staging/eval08/test_premigration_gates.py
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Wrangler CLI
+        run: npm install --global --ignore-scripts wrangler@4.49.0
+      - name: Apply 0001 to an ephemeral D1 database LOCAL ONLY
+        run: wrangler d1 migrations apply siyayo-academy-staging --local --config staging/eval08/wrangler.jsonc --persist-to .wrangler/state
+      - name: Re-run migrations locally to check idempotent journal
+        run: wrangler d1 migrations list siyayo-academy-staging --local --config staging/eval08/wrangler.jsonc --persist-to .wrangler/state
