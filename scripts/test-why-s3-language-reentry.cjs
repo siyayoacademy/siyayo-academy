@@ -16,3 +16,11 @@ const catalog=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','
 assert.equal(catalog.filter(x=>x.thinkingMind.some(q=>q.questionWord==='why'&&q.assessmentTarget?.skill==='why.use.contextual-reason')).length,1);
 assert.equal(catalog.find(x=>x.id==='having-dinner').thinkingMind.find(q=>q.questionWord==='why').assessmentTarget.skill,'why.use.contextual-reason');
 console.log('PASS: S3 NICK language switch can start authorized WHY target; S1/S2/S4 stay without fresh target (static gate)');
+
+const whyPresentation=fs.readFileSync('js/verb-explorer-why-assessment-live.js','utf8');
+assert.match(whyPresentation,/function mountExploration\(/);
+assert.match(whyPresentation,/source:'why-exploration'/);
+assert.match(whyPresentation,/mountExploration\(doc,el,experience,language,skills,catalog,source\)/);
+assert.match(whyPresentation,/assessmentScope\.language!==language/);
+assert.ok(!whyPresentation.slice(whyPresentation.indexOf('function mountExploration('),whyPresentation.indexOf('function mount(input)')).includes('submitObservedAttempt'));
+console.log('PASS: WHY contextual presentation fallback does not submit assessment attempts');
