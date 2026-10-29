@@ -1,6 +1,6 @@
 # SIYAYO Work Map — Master VIP
 
-Checkpoint ativo desta branch: **JAGUAR-MVP-13-IN-HAND-HELPERS**, 29/10/2026.
+Checkpoint ativo desta branch: **JAGUAR-MVP-14-SUBSTITUTION-DRILLS**, 29/10/2026.
 
 Este mapa acompanha exclusivamente a branch `jaguar/master-vip-modular-site-print-20261026`. O Work Map geral permanece na branch do Explorer; não substituímos seu checkpoint nem copiamos sua arquitetura.
 
@@ -25,7 +25,7 @@ O registro de apresentação v1.1 distingue pattern_homologated=true (padrão ap
 
 **Prioridade primária: integrar a apostila inteira ao site com rapidez e rastreabilidade, usando o padrão homologado.** Novos refinamentos visuais ficam para seu momento, salvo defeitos que bloqueiem leitura, integridade ou navegação.
 
-Próximo ELO executável: **MVP14 — P02795 TO BE · Substitution Drills · Speaking**. Delimitar o próximo bloco da fonte já auditada, importar seus textos em módulos e registrar relações, lacunas e cobertura. Não iniciar outra arquitetura para realizar essa importação. Catálogo atual 0.11.0: 438 unidades; cobertura textual 11,3924%, não confundir arquitetura pronta com corpus completo.
+Próximo ELO executável: **MVP15 — P03524 Possessive Pronouns**. Delimitar o próximo bloco da fonte já auditada, importar seus textos em módulos e registrar relações, lacunas e cobertura. Não iniciar outra arquitetura para realizar essa importação. Catálogo atual 0.12.0: 543 unidades; cobertura textual 12,7095%, não confundir arquitetura pronta com corpus completo.
 
 Circuito de cada lote: Corpus Master VIP → Site interativo → HOW TO DO → HOW TO RECORD → HOW TO SHOW → conferência/homologação. Entrega deve fechar origem, exibição, navegação, speech aplicável e seleção print; pendências editoriais são explícitas. GEAR, Multiverse 360° e novas experiences são consumidores futuros desse circuito, não integrações já realizadas.
 
@@ -48,3 +48,13 @@ Sem alterações em main, PR #3, contratos avaliativos, D1 ou produção. Impres
 ## Resultado MVP13
 
 39 módulos novos: P02683–P02794, To be in your hand e Noun Helpers. 129 alvos speech adicionais. Fonte preservada, 18 ocorrências pedagógicas de imagens e pixel técnico separado; seis composições XML registradas, revisão contextual/visual pendente. [Evidências e limites](MASTER-VIP-MVP13-IN-HAND-HELPERS.md). NEXT GO P02795 Substitution Drills. Padrão homologado reutilizado; nenhuma nova arquitetura ou auditoria de infraestrutura.
+
+
+## Resultado MVP14
+
+105 unidades de Substitution Drills / Build Sentences incorporadas; fonte P02795–P03523, T0019/T0020. 50 fichas históricas, dois modelos resolvidos e 48 exercícios sem gabarito fabricado. 323 novos alvos speech. [Evidências e limites](MASTER-VIP-MVP14-SUBSTITUTION-DRILLS.md). NEXT GO MVP15: P03524 Possessive Pronouns.
+
+
+## Continuidade de publicação — incidente resolvido no MVP14
+
+Arquivos temporários de empacotamento em /tmp desapareceram durante o envio; o corpus, os testes e os mapas em workspace permaneceram intactos. Retomada aplicada: refazer somente o pacote em qa/upload-m14 dentro do workspace, excluído do envio, preservando a importação e as verificações concluídas. Usar esse estágio de trabalho para novos lotes em vez de depender de /tmp; publicar arquivos pequenos por conteúdo na árvore e grandes por blob, com atualização de branch protegida por expected_sha. Isso é procedimento de publicação, sem mudança de arquitetura ou de autoridade pedagógica.

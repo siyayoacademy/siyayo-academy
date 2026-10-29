@@ -1,5 +1,5 @@
 {
-  "id": "JAGUAR-MVP-13-IN-HAND-HELPERS",
+  "id": "JAGUAR-MVP-14-SUBSTITUTION-DRILLS",
   "date": "2026-10-29",
   "timezone": "America/Sao_Paulo",
   "repository": "siyayoacademy/siyayo-academy",
@@ -8,7 +8,7 @@
     "cfb3e696ea3a3f23c4db02fb4d0c89c797b85af7",
     "4f585b014502700984f211ee70345b4440a4898e"
   ],
-  "authorization_evidence": "Professor: OK GO NEXT ELO",
+  "authorization_evidence": "Professor: OK GO NEXT GO",
   "states": {
     "implemented": true,
     "tested_locally": true,
@@ -17,15 +17,15 @@
     "physical_a4_homologated": false,
     "integrated_into_explorer": false
   },
-  "catalog_version": "0.11.0",
-  "units": 438,
-  "speech_targets": 1820,
-  "source_text_coverage_percent": 11.392355233633824,
+  "catalog_version": "0.12.0",
+  "units": 543,
+  "speech_targets": 2143,
+  "source_text_coverage_percent": 12.709456888294033,
   "next_go": {
-    "elo": "MVP14",
-    "source_start": "P02795",
-    "topic": "TO BE – SUBSTITUTION DRILLS – Speaking",
-    "action": "Delimitar e importar exercícios no circuito homologado, preservar dados históricos e separação de respostas."
+    "elo": "MVP15",
+    "source_start": "P03524",
+    "topic": "Possessive Pronouns",
+    "action": "Delimitar e importar o próximo bloco de possessivos na arquitetura homologada, preservando origem, exemplos, exercícios e lacunas."
   },
   "known_limits": [
     {
@@ -60,18 +60,18 @@
     "xpr_handoff": "master-vip-xpr-handoff.json"
   },
   "previous_checkpoint": {
-    "id": "JAGUAR-MVP-12-QUALITY-STATE",
-    "record_commit": "0a404defa9878b636e443abdd130435f7ee9e2bb"
+    "id": "JAGUAR-MVP-13-IN-HAND-HELPERS",
+    "record_commit": "87127d4dc9bc399d56b8d1e21d8447137bb1af9f"
   },
-  "implementation_base_commit": "0a404defa9878b636e443abdd130435f7ee9e2bb",
+  "implementation_base_commit": "87127d4dc9bc399d56b8d1e21d8447137bb1af9f",
   "completed_elo": {
-    "elo": "MVP13",
+    "elo": "MVP14",
     "bounds": [
-      "P02683",
-      "P02794"
+      "P02795",
+      "P03523"
     ],
-    "source_units": 39,
-    "evidence": "MASTER-VIP-MVP13-IN-HAND-HELPERS.md",
+    "source_units": 105,
+    "evidence": "MASTER-VIP-MVP14-SUBSTITUTION-DRILLS.md",
     "source_review": "PENDING",
     "visual_composition": "PENDING"
   },
@@ -87,6 +87,21 @@
         ],
         "source_units": 25,
         "evidence": "MASTER-VIP-MVP12-QUALITY-STATE.md",
+        "source_review": "PENDING",
+        "visual_composition": "PENDING"
+      }
+    },
+    {
+      "id": "JAGUAR-MVP-13-IN-HAND-HELPERS",
+      "commit": "87127d4dc9bc399d56b8d1e21d8447137bb1af9f",
+      "completed_elo": {
+        "elo": "MVP13",
+        "bounds": [
+          "P02683",
+          "P02794"
+        ],
+        "source_units": 39,
+        "evidence": "MASTER-VIP-MVP13-IN-HAND-HELPERS.md",
         "source_review": "PENDING",
         "visual_composition": "PENDING"
       }

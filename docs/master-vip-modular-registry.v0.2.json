@@ -1,7 +1,7 @@
 {
   "id": "MVP:REGISTRY",
   "schema_version": "0.2.0",
-  "catalog_version": "0.11.0",
+  "catalog_version": "0.12.0",
   "status": "IMPLEMENTED_SOURCE_AND_PILOT_HOMOLOGATION_PENDING",
   "route": "/master-vip/",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
@@ -609,6 +609,195 @@
             "MVP:UNIT:TO-BE:HAND-HELPERS:VISUAL:P02719",
             "MVP:UNIT:TO-BE:HAND-HELPERS:FIGURE:I0088"
           ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:SPEAKING-INTRO",
+          "title": "Original · Substitution Drills · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:BUILD-INTRO",
+          "title": "Original · Build Sentences · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:SPEAKING-01",
+          "title": "Original · Speaking · fichas 1–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:SPEAKING-11",
+          "title": "Original · Speaking · fichas 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:SPEAKING-21",
+          "title": "Original · Speaking · fichas 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:SPEAKING-31",
+          "title": "Original · Speaking · fichas 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:SPEAKING-41",
+          "title": "Original · Speaking · fichas 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+            "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:MODELS",
+          "title": "Original · Modelos resolvidos",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:01",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:02"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:BUILD-01",
+          "title": "Original · Construir frases · itens 3–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:03",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:04",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:05",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:06",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:07",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:08",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:09",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:BUILD-11",
+          "title": "Original · Construir frases · itens 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:11",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:12",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:13",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:14",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:15",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:16",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:17",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:18",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:19",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:BUILD-21",
+          "title": "Original · Construir frases · itens 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:21",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:22",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:23",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:24",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:25",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:26",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:27",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:28",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:29",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:BUILD-31",
+          "title": "Original · Construir frases · itens 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:31",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:32",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:33",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:34",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:35",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:36",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:37",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:38",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:39",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:BUILD-41",
+          "title": "Original · Construir frases · itens 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:41",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:42",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:43",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:44",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:45",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:46",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:47",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:48",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:49",
+            "MVP:UNIT:TO-BE:DRILLS:BUILD:50"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:DRILLS:REMISSIONS",
+          "title": "Original · Remissões Maradona / Jobs",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+            "MVP:UNIT:TO-BE:DRILLS:VISUAL",
+            "MVP:UNIT:TO-BE:DRILLS:FIGURE"
+          ]
         }
       ]
     },
@@ -1139,6 +1328,29 @@
     "next_pending": "P02795 Substitution Drills",
     "chapter_completeness": "PARTIAL",
     "evidence": "MASTER-VIP-MVP13-IN-HAND-HELPERS.md",
+    "states": {
+      "implemented": true,
+      "tested_locally": true,
+      "human_content_homologated": false
+    }
+  },
+  "substitution_drills": {
+    "bounds": [
+      "P02795",
+      "P03523"
+    ],
+    "paragraphs_classified": 729,
+    "source_units": 105,
+    "tables": 2,
+    "speaking_records": 50,
+    "build_items": 50,
+    "solved_models": 2,
+    "unsolved_exercises": 48,
+    "vector_compositions": 1,
+    "figure_occurrences": 1,
+    "next_pending": "P03524 Possessive Pronouns",
+    "chapter_completeness": "PARTIAL",
+    "evidence": "MASTER-VIP-MVP14-SUBSTITUTION-DRILLS.md",
     "states": {
       "implemented": true,
       "tested_locally": true,

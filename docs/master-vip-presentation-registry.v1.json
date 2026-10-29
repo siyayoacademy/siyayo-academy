@@ -1,7 +1,7 @@
 {
   "id": "MVP:PRESENTATION:REGISTRY",
   "version": "1.1.0",
-  "catalog_version": "0.11.0",
+  "catalog_version": "0.12.0",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "contract": "whole-card-click; decorative gold speaker left; no repeat/stop buttons",
   "normalization": "Decorative glyphs and whitespace only; original text unchanged",
@@ -17,9 +17,9 @@
     "homologation_scope": "Inherited card pattern approved; full current corpus and physical A4 pending",
     "integrated_into_explorer": false
   },
-  "unit_count": 438,
-  "textual_unit_count": 424,
-  "target_count": 1820,
+  "unit_count": 543,
+  "textual_unit_count": 528,
+  "target_count": 2143,
   "units": [
     {
       "id": "MVP:UNIT:EXISTENCE:CONCEPT:001",
@@ -19062,6 +19062,3444 @@
           "lang": "pt",
           "role": "figure",
           "text_sha256": "455dfd0284588e391ae0924a7855ddc9c3f97ce469cb8a823feafeecb7165873"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO:BLOCK:instructions:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO",
+          "key": "instructions",
+          "lang": "en",
+          "role": "explanation",
+          "text_sha256": "3f2f535ebb5878c7ee8accf2f9f13c07a78c951886cc3412880224d82c7cc73d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO:BLOCK:instructions:es",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO",
+          "key": "instructions",
+          "lang": "es",
+          "role": "explanation",
+          "text_sha256": "79798d27b5b14bfe6b93e14706ed3f37bf3bc8d4cc4fbebb45eb4ff6157ac063"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO:BLOCK:instructions:pt",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO",
+          "key": "instructions",
+          "lang": "pt",
+          "role": "explanation",
+          "text_sha256": "625051dc8b23a7c5610c8398909b4817bb62aba673dfde73a9983412dbddace4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING-INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P02795",
+          "start": 0,
+          "end": 38,
+          "text_sha256": "e08b45c4b037e6fca0c42a1b13f78aba24edb40c375557ae778d03f1ae619132"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO:BLOCK:instructions:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO",
+          "key": "instructions",
+          "lang": "en",
+          "role": "explanation",
+          "text_sha256": "c222c5d92faea4116ecf6fca72a1f6f4e34269015de39acf5e09a3a2fa65e44c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO:BLOCK:instructions:es",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO",
+          "key": "instructions",
+          "lang": "es",
+          "role": "explanation",
+          "text_sha256": "c40fa1f12082e7990548f7b33be141d97d63fe08bd8c7a7d86216147a14a8184"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO:BLOCK:instructions:pt",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO",
+          "key": "instructions",
+          "lang": "pt",
+          "role": "explanation",
+          "text_sha256": "ec4e75295b186b83792b92353c3aa87a37ee185e80ee6a994eb8d6046d3d7f64"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD-INTRO",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03115",
+          "start": 0,
+          "end": 28,
+          "text_sha256": "65affb515103113edff44504ed7d43b5d7e4bf0f57f729534da27d565a12b2c7"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ec336b99e3857bcacbb0ed55656ddd6ce5f2ace3ab15cb5836c3b76e93084fbe"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6138bd497569745cfbf71dab4fbb9d3c0177607ecf7a9ef50dc6497a94524120"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ea0b937ea317101ee2c26b03a4843a19ceced8a2b9673c3cf409a726ca2b0fd8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "89d3584fcc9b58c370b4d35dda305ec51c289a9197344a3d7c0adb0d3ab622ad"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:01",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "31489056e0916d59fe3add79e63f095af3ffb81604691f21cad442a85c7be617"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e243b04a8666642772d44bac534df9a407d549fe2044d712a0f02e1ea56b44a6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "fb06918ff788337ec17774443279550fc5b9966f07707967d0248db6a3cc37c8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "93cae46bd3d23ab317dfe9f171aca5bc57ce71e9c6ca90a6a838906550e0acef"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:02",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "b0caddc9173f7c722900ec48adbada1a2ae592d145c8f635f235e76db1492ca5"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e6bbde5164328ae91da96dfc3e4651cc3bef595f998f0d6a9e8211a3362fc892"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0bd9cec57e506e1cc25c774209b0ae2fd8900f103971d110876bccf093b20d3c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "02bf1dfa9a0365a86223f0e4ac9eaa0517b06b2e9273790f719feda656a247ae"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d65819e43e55a7c231ee323379e2eb9817d9a08e719ef8cef31caec3b0d04ea8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:03",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "4861a725aa2a4997375d20d5deaa871f93c8f24e42ef21cc9b8c4543d417d477"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2626074b682db0c94b98c71380685cf176487b69592cf4464c89ddbdde3a2bbd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c0ea960b065c6aa6dd567a1a741fa21aee3972692096e158cebb4309a3b2a716"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:04",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2858dcd1057d3eae7f7d5f782167e24b61153c01551450a628cee722509f6529"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "49efa8c98be47f8aead80799a453db2693be2839f3ce41a96c8af6ec141ed6bb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0e3c5fe00f66cc415be9a7b7c02cfb5939929ad13182177bfdf8d37bfa6b048e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0f5d983d203189bbffc5f686d01f6680bc6a83718a515fe42639347efc92478e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:05",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "cd70bea023f752a0564abb6ed08d42c1440f2e33e29914e55e0be1595e24f45a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "4aeb08d7e0f9fcd40767a347bd8683e7eb2c230972973abc1860eb77b3455263"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0bd9cec57e506e1cc25c774209b0ae2fd8900f103971d110876bccf093b20d3c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6a5ed83658ef85afc77709cc16ede854ad98e3c2ad8b076e10dcbcd6e5096271"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:06",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "031b4af5197ec30a926f48cf40e11a7dbc470048a21e4003b7a3c07c5dab1baa"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7f697566dcf3bf1f2ea729589b3854f3369909af20f68440958ccc69b02f510e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ab63c0d0657040400f5a49dadd7c211d9d502e8f71de3ace7736b5ac29d1e816"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "be55ef3f4c4e6c2d9c2afe2a33ac90ad0f50d4de7f9163999877e2a9ca5a54f8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9511c99a248c1a2bdb9a48a2889f8df500ea7bd9a48c03d5e241af19decabb4d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:07",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "35135aaa6cc23891b40cb3f378c53a17a1127210ce60e125ccf03efcfdaec458"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "21af78519ead837893473e78222f05bd5e5a831cb966e05082b4316872d9592b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "74a906c52a06aa9e5272231e2b60ae7ab595c9a6e678c05f4be64c0318936fbb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "80db4ccdca106d37b920206331fcfe3e9e50a9e763d89b54ce3ad5ac8cf30f03"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "a659b60d246dce8d4865d45673963de83d0e49a57e8559da98581c2bc5d7d97f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:08",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7befc485034a913446d7fa44588f24f2959d54c741b2d311d00ae2f63a5246d4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f7fb9001d9139243fbe001472744fe3fb08693d8d0c2a2b76ef1964278505ca5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c1ef40ce0484c698eb4bd27fe56c1e7b68d74f9780ed674210d0e5013dae45e9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "8931785d7fdf29b3b3c96b2b3af8cd0bf2386b734463bb80b8e03c3786af4f7a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:09",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0bae947805fc68ad63c2c57869bdd52ca9976dbfb74ffdbb14c0cf0cee724860"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "cacc4a11512af9caf1a83c88cddd61d0dfca64c9f1f3f03f29af36a7e8de97ad"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7a1ca4ef7515f7276bae7230545829c27810c9d9e98ab2c06066bee6270d5153"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7458199fe97a184002bfd3c42bae81371f0ae2229b5c0a257a9bae77e4f4eda8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:10",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2dadc1dd79b75505874a4d61da2ef70d0a21410a16b4cd3df141559ce82978c8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "224684695a499ca35e35ec3c077c0d51ebbe5f5aefe5b5aede49a36abbf6a7d7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "92cbcc417dfce3e5b6cc961c86236c3f698ef295964e3ab93b3a4d92dfee6b7a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f1dcb5f09dcc6b155a5ef55d4141934b7c2428e2ed1c4b55a51d63912ee19bfb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "45f16144c18cb09894ec3e2410e50711f7edcd915b80bf7c7151701dda0ee98a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:11",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5a8af75c0be311b0fbdcc0ef79c073ef4fba3b23ac9aa29925c658e60ede7a68"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "13fcfc5b67c673142e103966cd2013a66bd5f58750705bce3062740965586e2a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3e049d78d958038ac6bd5dcf038075cc73362b4956aaf7308c3a69c8eca76297"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ca45b0515c3b486b6c712943fcf0b6c7207efb4d2b1fd1627db8574acd26dd19"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:12",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c057809c9e857e23dcc449fef638ecfee0205f4ce44e030882bee400ec0c0791"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3bf2e5b3cb8152007a273f61d221a6931eee972a8af38be0e331478cbef1b6ac"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3a672bd3a4bc7f1ff22c237b4220f7c024d5d5d320741d0f917c822e04ffc23a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "508731a3c5d375cb49d07a2b83439abf84a501d75f428c8838ff01b69d21b412"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d7a085d7ddad8e9a3775171559ff4101db991a3bf6229344413d8b50d59474e5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:13",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "12e2c6fee79bf7290452340e6865f6425bb00da0ed8be0efb07f621c8d6fbe6a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7de3e38e730386663a9c2d2364b5c4e9ccb9b9a4b108cbbb71479ef3806fa7a2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "07f62b021771d3cf67e2e1faf18769cc5e5c119ad7d4d1847a11e11d6d5a7ecb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ab5e99c1fe23cdd2c534faf3971a62454a84ccb83fc4ec589e5dc341627403d1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:14",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "1a6562590ef19d1045d06c4055742d38288e9e6dcd71ccde5cee80f1d5a774eb"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "abee0a04bf597ff15c50bc1d5b845dba2d4a8c92c1891b47cdbc52b970d7457f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ea540ffea2e0d7a53de55e5daeeeabd01c8b012c1c7a7972b1229f31ea9d8e6a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "a7d355b26bda6bf1196ccffead0b2cf2b81f0a9de5b4876b44407f1dc07e51e6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d108dfd1df5cac1e2e2e5657c534507ae54a13987f057634370f37777661afcb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:15",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9f14025af0065b30e47e23ebb3b491d39ae8ed17d33739e5ff3827ffb3634953"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "8242ce3b175bfd9a1b39c0ebac66c7a3cbf9cde7e2bf3681f4bd069adf26cc90"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "17d7520049ad78089116c72e3fb1be859aec6bfc2889881196047b4e0101bad8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2e5e81066a29cd66b1d941286656b7b28db1b542ec3de23eabde2c45f38a1248"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "93cf52d12b63fa7d41decc560baf872f5ecdc487348401a088aa3fdd6f8a3500"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:16",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "61d889ee43a2f7def6b17880a7a00c15758dcbcb28d675a47005339421c6d71c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "92041adc2f1d22f0b68e9b5ac7848878a29f8a7ac708106558bfb8517f736bee"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "56478b912775126e87217e02008d775eb1dfb6b902e33f340923c12ab8ad5b11"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "8ef41e6f4b07432a0cb4eb7a8774e7a3878fd3e385f49aa09b406768467db228"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3411059cb8e0660e29dd7a3737e65a28b08eb01524a8ebc3d4168932649f23e6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:17",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "eb1e33e8a81b697b75855af6bfcdbcbf7cbbde9f94962ceaec1ed8af21f5a50f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "01d2a9f2fb81a5fc84d692353d1e709681e86462c67c7dbc7453b379581e7b31"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0dcf5d7bdb5836338adf157e4f098a0d1bedf2c381bc5dedc212da7d2a19a8a7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d9aa43ead5f13974c86492cec6a4fd132cf312eb93c2255c4feb11e278485bc0"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "75aec184783729c3b5ec98fb2eb77f57c31ac1633c92cff68831521087bbda21"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:18",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "031b4af5197ec30a926f48cf40e11a7dbc470048a21e4003b7a3c07c5dab1baa"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "166443c2039058054a9d0901d2b853f2425123e1de52cc47e8617ab5fdce54dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "249c0aa7018786bc9c24c5ce8b70b2c59371dd90001e480f9afea76268f158b7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f5273e236d498c359c7a91edb712e28728d902bf6dd4f60984dfbc9501a9bf4c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f37ca4d68c8fb26a81f507c7b92be5576ff28df24b525c8026087b96f67fcea7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:19",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7e21f474dbaba88525086d4f76445820645d4b9d1b7e9f4cb81039c184acce22"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ec7eb06511967d594ae161a0e21fbe6b5b53be2e62de92344f51a6c9c1cdf6c3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "090940e7325896cc06b13348b51fbaba86a5d9d1937fc37a4e3a3f02f00401db"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ed9ad13611d7164839dd3feaf9a7f6a75a4138f389e0d45f8e07fa38da1116a2"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f7b6f0c3d036b7b422680461afdffd7bd1479aaaf7489d8233482b88c6769c99"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:20",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "71ee45a3c0db9a9865f7313dd3372cf60dca6479d46261f3542eb9346e4a04d6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d854c5fe06c508b1062d8279c7c1a478e624f1d0a8cf5815abdfaf9d8d7d10d1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "addb8394e9ecb296ca2c7617edfc5f1c5c819500bd17112bd502f4db14b362b8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "853637136575897a73cba3c5fb085e8c8a2627df22983d2bbe9ff158d11351b4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "a89a9329d3d41ad2a7a622a7018bb94175d5e9003ada3a903b124e859c27c9bd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:21",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "53f781296277b97f83f4e8ffd3267281e85ad5dfce359297fbbaa25ee81db62a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3066acdb6463497e820dd1e56830fc8f297e3d631faa1b4e822ee24620723a77"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c945cb4898a1005df5b587eca2c4d4abf72662bc552ce90f823f8cb6de905c4a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "74e1891dc615b22fac103c74ab7133742dd1d95a604f6d4edb1a9403b7156506"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e544c247e13f024d0a29be345a90479a121afdcaca7ec3d2550b99583414e993"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:22",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2a944c22516ecd886980ad5f113e215d2d5777b563a2e6801bf77caff0594925"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "1395996a1068d26dcb8486df1e1db89b97a66f2ecf98d655defe059fcec4bd97"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "33a3d8ed92b0709ba525369922e5138756c43abbf7e05edfcf02d3e0fd645c02"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5bcc40adf6e0a2a9c9317f9ac01481271b45ffdd5850d96b562752eee8167b85"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:23",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c837649cce43f2729138e72cc315207057ac82599a59be72765a477f22d14a54"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7f697566dcf3bf1f2ea729589b3854f3369909af20f68440958ccc69b02f510e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "61e536aea081cbcfce13ce9f9b98e437c5e1a214e0035e63e63ac5258dc709c8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "07f62b021771d3cf67e2e1faf18769cc5e5c119ad7d4d1847a11e11d6d5a7ecb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ab5e99c1fe23cdd2c534faf3971a62454a84ccb83fc4ec589e5dc341627403d1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:24",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "785f3ec7eb32f30b90cd0fcf3657d388b5ff4297f2f9716ff66e9b69c05ddd09"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "fa1d862c283650bafc2eb982534bb6932494614fd06a62b9a94bd37562e60eea"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f7fb9001d9139243fbe001472744fe3fb08693d8d0c2a2b76ef1964278505ca5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "647294383b2cbc24b18f629498fc7c6f61d3819fb42a2287e93305aaa01b74e7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "be4ee906d3efecfc34a94a6cd378633a67f7f35d5abbc3f498715ac5dcbee54f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:25",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "734900c65956c5f86af630a918e536583a3708bc596456516fdf1783b108549b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7076a8eeb739248be3e9ac23525bb7855e50c97218b9d311d4db5839fbd9779b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "8ce269194975bccea34b12a22981ba0d9320ab4a98954ca411315990d0f59876"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7a227b2d8eb116567035883954a6ddb404a69ef5f874a172ae18d901c5304f99"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:26",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c7b69de6627d05f1a839b77ed8098956d1da0c7ff5c4ffa386ee6c676cf1de15"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f1f1745c72a830d9054d07332523480a9ec4e5af7e6f5d3f329e4ea655fa5bbe"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7328d3f829b7b3405e87f3041aa984b8844c4155ea865d5be3b2036bd5264898"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ed7a68eb53ebc5da8e316b172d51f00a324cda44d54bc7c42bc64cfcdc8bfb74"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:27",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "65235f5394a00779ea6ae10fbce895f020027696b208016f2c1002e2b71e5a3a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7eb7bab5aa50b02facc169e2819f30043ab55c1cd5292c9071461192e5d94cca"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "4097c79366f2f2de3b25678d3bea457ba6913292e96bc456e9e3181d8c19344c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c527097577600a6726de99bd6f555fbfaf214da9b7d127d7dd4a807927422b98"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "fe4338ad620c8d7c4905e0b4b350ca7d8b9d84cc9fc9055574f2d16362fdbc6a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:28",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0b918943df0962bc7a1824c0555a389347b4febdc7cf9d1254406d80ce44e3f9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c82307d6f9f74ffe4476c1f87a2b5f8a23ec4f68a02e5b257c8ac8ca2de4b7a3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "82e438a03f107c735392fb4163967457ea9d2ea3a05605988a24d25b68bca7f9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "020e438bafc3a7861aea8d79117d2c05b80f2cba2ae5aeb740b3a0f71379ba36"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "8488c849f98eedac6e658865c7614a7fdce29578b0a4a6a3ddcddc7da2742b0c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:29",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c2356069e9d1e79ca924378153cfbbfb4d4416b1f99d41a2940bfdb66c5319db"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "926e0a476b8c1a6873455143d410632b40f0ccae36602a20fe718382218dfb99"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "4888a274bef9a8d9d0db872b60a1cb4c1488e6c29a8ef36c56d3f7605530ebbd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c3668f581289444ea84763daf6c7b76d7bf6b48ffed85aaee68b7662f504f6a5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3a1278e9c2bb3baf3d9cc0c1f0f32bda02ebbf7dc0e11088e95ceb4ecaf17ab8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:30",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "4ec9599fc203d176a301536c2e091a19bc852759b255bd6818810a42c5fed14a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "687d3e33f35bf0102d88617c424566c667c5c880074883618da1ad05ed28af93"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7f4a1e5bff2d56e523ee2a34e1c389956986008e506ca77fadf7047d71c6a63f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "348841ef53dbd5a64008a86be432973db790774fb28b59b0d99702a3188b3705"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "afcfce63826c6353688441a06beaf120d5a8b1743e788ff791844f8643b07b31"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:31",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "25fc0e7096fc653718202dc30b0c580b8ab87eac11a700cba03a7c021bc35b0c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6b80ce845beee41c1a6c8759be41c348e8386a222fd0d263c0f97bcd9e821080"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5a17709e2ddbdc27610b6eafc4551883fa70ab96d9978df7dfd0378eb048cde1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9c93ad439373b4ee35e70ba1318055a14d2ed222f69f9e2d069689e83829833d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5c74e5b8100c2f2ee2cd244394b8ffc6eedaa88d852f1e8b37b1f0297c02da3a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:32",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "f213f9f1310358e7dd777cd9964e9efcfe9c2e0c9b13767cccd01a89e188f9e8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3ef3e9812b99a7bf7a8e2a52948cfac996d8030e5b6f49edefbf5b65bd77ab9c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "be93c38bca879c693f9d8be43bb2a4591f33ff1a1999edea3aded4554232f130"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "17a2bfe78e03b1c13c01e0784feb75332b964d0ea79209c4842a541e88a54423"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "04656c6fe003c7ae32e5e1e82f22fb0e41d765a383ffb95f17934281dfeb7285"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:33",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "811786ad1ae74adfdd20dd0372abaaebc6246e343aebd01da0bfc4c02bf0106c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "45baf55505283af411b9db413c9843cbd6948dca4f071601b94d1b67b71b6cda"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "373a7598b12d30efeeadaec1b00a41fb938e93ab5263f33fb945b37abe1f70bb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5a9cf672c8be6b5ab9546a2fb49b06dd81a4e364c86ed023898c49d9bb0605dc"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "fe1d9c7db3762da63c17852f7652e3d4a73154f90bcd90474550c7a552d3d0bf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:34",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2e78dd65840e0d8aab64fd4d7b28f6249ccab79c45a3804fa283cb081dea7b44"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c3571b2835d687939d68d32a5eeb1d7ccd0949a0195c2e715a54d3fe145158f3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "861eea32ae9990e1fda0eed4a52552c330f0d17043b515a0cce1792aa0ba4e49"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "07f62b021771d3cf67e2e1faf18769cc5e5c119ad7d4d1847a11e11d6d5a7ecb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ab5e99c1fe23cdd2c534faf3971a62454a84ccb83fc4ec589e5dc341627403d1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:35",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "916e14880e42aeeb1ef26e7d69c753f5ca6d306e767db572f2117a21e08fbd72"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "a104dc5ab2025fcd5a33bf1c10a5bf052976de4c26a995f9bb9256c2c92f9b83"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "07f62b021771d3cf67e2e1faf18769cc5e5c119ad7d4d1847a11e11d6d5a7ecb"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ab5e99c1fe23cdd2c534faf3971a62454a84ccb83fc4ec589e5dc341627403d1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:36",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e88caef1c740be568d2d56a5e16549a16839a435f36fba1227f85fca6b5e91d1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d85eb74fd75da1bc566c5999caf5e328023b6ade367ce98626d91a7601c745ec"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "fe2403f25e8f398ea308d20d8cc98e63aecbb42218b1bf1805da008c0daea537"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9f8d90aa5539c02a168275b0344a203c91de465358beb824ac84f76560b2ff97"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:37",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3e1e967e9b793e908f8eae83c74dba9bcccce6a5535b4b462bd9994537bfe15c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9c1b06a1007328f269ebb3db8bc83a046a24331d8de51db225d0c95284b7e75a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "b7b9be5f87ca2f50371bf93bc14e2fde2212a69dba5fbbc48d46f9d26c9b9c3e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "364e5f6525c75b813171e128c9475e7dd4679989e4e865e0a14db87a9771da2c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "56976011cdbf3fd4c0659c66cc26d9624b750b04b1e33a9363f340effe02f45c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:38",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9c937b451f072fa1ebb8e7e911f12012708b57dc2aac3dfe8150d11cd35ab1a3"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6bcf14399ce79c73c7bc9e884aefc568ede7b9e6444f199fcdf5b820cb4220a6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "93cae46bd3d23ab317dfe9f171aca5bc57ce71e9c6ca90a6a838906550e0acef"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:39",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7b1936475e9d93bfb48927ac1e5ed0c28e5883fa528de97d0d2cb31f76b154f4"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "10b9086629a356e8111d08cbfedbb1005a6abdc9381e5e16064dae0fa8f95f43"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "dc01da548cb3a5f7fd6792e758f25ade4e9ff2b1e1f3d12e3a282a57cc69bb9a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "33a3d8ed92b0709ba525369922e5138756c43abbf7e05edfcf02d3e0fd645c02"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5bcc40adf6e0a2a9c9317f9ac01481271b45ffdd5850d96b562752eee8167b85"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:40",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ff5a1ae012afa5d4c889c50ad427aaf545d31a4fac04ffc1c4d03d403ba4250a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d4aa50e34ef708ad1267720df41460bd933f878eccfc12e5e2044f402852d1a0"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "33c512c6eec15be4ada588c8bc60c21b51565cebea3723b1f6232d7384cad37d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6b615adb1300c1161bcb58c11141164e9b762987607e7cccdcd0178f3bb13d0b"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "3c3837ad96590fc3fccfb8bcfb0814f0ec86a28416dd34bfb32cfa5454a25fbf"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:41",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "25d0a18cf6817623c1ef2db0c4fc0dfbe045e6d52cfe6d39c6adc9d717e5ecc0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e2ffc329223bc9a3712b375b4c17f846e3ccd8984cbba57203880cc6896eb6fd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "afc19f1734c1d195bd8ba741b795a57120beb0a837ceddc2654ed7c486a6ea72"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "abd149214539d9f222d25de6358735b9fa0efd3956f66102b2c119ae2d9f6348"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "67081fb2a08a41f6e8e8b79e6319f9bb5de5d30a84a681ca22fbea019b75114d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:42",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "a46e37632fa6ca51a13fe39a567b3c23b28c2f47d8af6be9bd63e030e214ba38"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "6499a17abd6b4d3cb423ba1e4ad4f981f81c64c36107a90f637d9e5a269bae8e"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7f1595f81e9d8fadead9bbd3454e2b3d9a2f384795152cd8e62dbd2e6aff9793"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "aed8f531aa7e785be255bc435e2582e74c58defedebcb629eeabf365b809bd6f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "5710b435f90ac7fc54b5bdae5af3d6b989f7fd78d1ef095048d01d1edd89db12"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:43",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e24d313bca31cb3388cf62fc33765507838ae3f80c42a511d0b63d0476afa364"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "7befc485034a913446d7fa44588f24f2959d54c741b2d311d00ae2f63a5246d4"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "e4a9e10d0a7049f2aebda4c581e6c2cb011c79ac2d5ba4343e03251238cba6dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "aa5ab35a9174c2062b7f7697b33fafe5ce404cf5fecf6bfbbf0dc96ba0d90046"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:44",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "41cfc0d1f2d127b04555b7246d84019b4d27710a3f3aff6e7764375b1e06e05d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "14c1c3ce3af72a9db3d2213d3334cdf72113af588fa5f3d76ab0d727e28632ec"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d3d4d03a81f9dc9aa4f6e258dc7c99985b836a02b43ac5dbf216856b1840b650"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c0ea960b065c6aa6dd567a1a741fa21aee3972692096e158cebb4309a3b2a716"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:45",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "2ef816ff080e50a32d4f02a87c065f48e4fdeef9d27f3a93598cb4ca4380a9ba"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "fdc47eff131f5a9557af4a6133d4e463fc87016793fa45db7a7b4b06c64a3bf1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "497f0320f420803425bae6b288fc58ae42b6ed080743664f9985506e91ab09e5"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "a246670dbf76f29a5a21311589135cff74c9d8c4b777b20d33a6f193505429db"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d7dae554a681fbb211c38c17ef70a0ba8256a640f9e2a2680d5c35598c5614fe"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:46",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0213fc119c877843c0282ed50ae60d05504928afdc4cfa127dac4aac6f525865"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "92cc07102146394bc3ec2d6fd3c7ab15010bc4d33db76b143ee2f450b194aeea"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "837a35ac11533006c7e4bc36c9927ba102b94142fbe86cf7c015973f3a8d2c45"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "647294383b2cbc24b18f629498fc7c6f61d3819fb42a2287e93305aaa01b74e7"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "be4ee906d3efecfc34a94a6cd378633a67f7f35d5abbc3f498715ac5dcbee54f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:47",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9400f1b21cb527d7fa3d3eabba93557a18ebe7a2ca4e471cfe5e4c5b4ca7f767"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "53a6a40604ca6bde331c17897da3c14ffae4253411b55e302a622fba88fdfb05"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "bf833d88d03589295f1f8158dd13c36b03145e9ac508bcc4f7bd86cb7cef45bd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "aa5ab35a9174c2062b7f7697b33fafe5ce404cf5fecf6bfbbf0dc96ba0d90046"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "0baaf6f25d1c5da82d9e4a3229cd45bd99e151c41dce518d7c7e526d86283f24"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:48",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "d2507fbb8867293a26f0caee8cc3119582d787784f0c2772e8c5171a53140d39"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "1bfc00dcf1e3f17d692444a020bf908858f5cc548da8e86dc36623e617d4961c"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "57d04c6969ddd7503f0e3224feb68e69f70e9dc5f5145645a5b4f85ef61e4f61"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c1ef40ce0484c698eb4bd27fe56c1e7b68d74f9780ed674210d0e5013dae45e9"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "064a3a7f68d78b98e9e42ce22e2e167b4f449419d82d5f0ec5aebb0ed935c0c6"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:49",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "c2356069e9d1e79ca924378153cfbbfb4d4416b1f99d41a2940bfdb66c5319db"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50:BLOCK:cell:1:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50",
+          "key": "cell:1:1:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "1ce56a3051157af1a8d3ee86cf34b47229b411b010bb4767446e278e12fa1e6a"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "98e2141408b00d7be4c80020c6ca1d6fc1e2ed4c4a95c79ae5496fb6f125bd86"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50:BLOCK:cell:1:3:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50",
+          "key": "cell:1:3:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "be55ef3f4c4e6c2d9c2afe2a33ac90ad0f50d4de7f9163999877e2a9ca5a54f8"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "9511c99a248c1a2bdb9a48a2889f8df500ea7bd9a48c03d5e241af19decabb4d"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:SPEAKING:50",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0019",
+          "text_sha256": "bdea717a322b5fa16224d28bb7f82befaaa9a73292d8c847adda0dd59879d14c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "c371b26c585891c3faa333fcb51744ae4080e1dc14b75e494f2438ef958d2c55"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01:BLOCK:cell:1:4:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01",
+          "key": "cell:1:4:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "f5985de1fd3a3b132253735956dd97b505ae8f069dda41617c079dc4a540f457"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "372f7e2fd2d01ce2a1d71dc072acbba4c6fd25a1087cd7f153f4ec0ce37e1ede"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01:BLOCK:cell:1:7:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:01",
+          "key": "cell:1:7:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "8f33195da864724d03f066df684fdbd8082a6405a21ec9814c8146e5eb69bc9f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "7926b8c2c3afaaa2ae64db9cae81dec2dbf7d557e7b08f230b67d084e9970280"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02:BLOCK:cell:1:5:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02",
+          "key": "cell:1:5:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "08b041935798fbf6fd6ff51099ffedb140a475889986d14f5559ff8e7fc571dd"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02:BLOCK:cell:1:6:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02",
+          "key": "cell:1:6:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "cffd521056ee3d5778c2813935890f0e467b9785645dab6daffd8017ed38dc53"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02:BLOCK:cell:1:7:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:02",
+          "key": "cell:1:7:0",
+          "lang": "en",
+          "role": "example",
+          "source_table_id": "T0020",
+          "text_sha256": "3f150df13d9f76d85bf057d437795b321f7e1d68ef9d5e0a2e45c48fb5191833"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:03",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:03:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:03",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "96dab178ee73ba47333dec7f830eeeb155fd4d87464210d4fead1be8a9d4bfc3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:04",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:04:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:04",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "9a5dc3f474cc7d2ad6c6cfc99fcb5ab34d0eb15d7f809bf190ad584651d3840a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:05",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:05:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:05",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "878a75a618db7699af9668a5dcf63a6be147c6bd2970948d1055e84c12bc8139"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:06",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:06:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:06",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "9119a1f2167c855fad86dbedbd5b135b26eae10548cc720ca389b22649f84b7a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:07",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:07:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:07",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "7eae5ccb42f0c70da293c123103811f64c70aaeb90fe17e6c733e649aa1a7f0d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:08",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:08:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:08",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "934b5894627bc420cf289f011605e32a8bc1343f4340f0568a0912abab771fda"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:09",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:09:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:09",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "c54f36cc187da200a3395c2929c1abb814dce041b396eaa1396a2607ecde8fc1"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:10",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:10:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:10",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "b058135ad22c98d5c114fd4be47c14a2cf285bb9afd5dfd8785a745ebb39ea47"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:11",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:11:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:11",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "40d569932625a50d05f638c7b56db249aa52a77b522556cb162186afd8d64fed"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:12",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:12:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:12",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "f6aaf30ff10a10c1dc692841192bedb26acd5306907f8822865a3483c6082850"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:13",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:13:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:13",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "a446d190265ec8c99b4643246609efc6648f833958c75713556eb3e37784ea4d"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:14",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:14:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:14",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "a7a292684c3a040dda9104018ec1ea0cc7735ac379c79c082a748993563be6ef"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:15",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:15:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:15",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "66db6ead153f70c99dc7e486397509fc13173f3987607856792cf1dbd63c48b3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:16",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:16:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:16",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "595b68bd03802e191b686460fb70600be30c5e25ff79a930f99d8f4c43d5f341"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:17",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:17:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:17",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "c72d5098d191d0d4cb03ec10d533107aef8059d5bf7736f291788514cecb39d4"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:18",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:18:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:18",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "0248d6949b58e864c23a9eb71af4bf4ce595bc68af94a3b3fe613c43c64bed9e"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:19",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:19:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:19",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "0596fb21663c1a91d346d72a22d03d924b557ae96b1bf056b98493a888f8f7a8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:20",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:20:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:20",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "049c87a89c8c153457384884bb2d4c0bf57913a2da3c3e0bed19180c8a87ec00"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:21",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:21:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:21",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "7e1e87af0cd5d80ef90fba87145032fdead4fd5cadd27bbed8b451bf2429c3f6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:22",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:22:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:22",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "d02fe5dbcfa6f69b371c505129efcc3903796e7cad82d3b75494e40c7e6cc183"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:23",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:23:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:23",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "657023fd8000dbc7981e3d7499bc1c9bb95a8790ac40a48adb37a020d89f841e"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:24",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:24:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:24",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "23c7cf65f0ae7091066ba28ed9d5f89c4bbbd0bc22e9ae07b7b1848970424bdd"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:25",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:25:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:25",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "8ebf79afc163092398e6ff4555771cbab5aa733f7f6c44fb625c6469c80ef40a"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:26",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:26:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:26",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "80e6fb5b7fea753c6e9d29d37075d871a3545b7379b951aeedada8f1d1e4f442"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:27",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:27:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:27",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "db400de90d0e5ffe58e2443713e3e0e8f81f6106da57d8c1d2c66acce9ce998f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:28",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:28:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:28",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "f57e49208ac1476d1daa7c1982d85148fcc22c99b62e4918be75d7adf89195bc"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:29",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:29:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:29",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "bac6e585f8e15443b8c7217e3b4d28e240a1b3e3eb51f5095b0770ca01a4364c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:30",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:30:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:30",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "aa9b77489dc2962d7e8e5f469fe847dff4b356222e0b6f56b6803738e69b6076"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:31",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:31:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:31",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "1b77169ea5ba40e1013f43ef8b1f178a93bee124bad14b460e206aea4f3a8ac8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:32",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:32:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:32",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "c45fa54ebc4012d37c946fb6e82b842c6aaa7faa9ee16873f4c2eee2e625c388"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:33",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:33:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:33",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "c72428d21c0fcbcd0ea8977f0ac260d9bbfd1c17102a19764881033d066530a9"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:34",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:34:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:34",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "4d53b38f0393502eebd204fc0e9a3bb699882db40a177ae4a3d47dca2238057c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:35",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:35:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:35",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "9aadfc6d71e8b9e4b9404641c5c48ef5828752e965c2aadb8930bb217a568ff6"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:36",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:36:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:36",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "34e46ccc54ea488c70b2306a305d15ed97f8a5c33c49459ddb6a4edc62211d5c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:37",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:37:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:37",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "1e84ea849acef07800d8c14de2a52c9239a9c9f27c4b831e474f7ebdb8087e17"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:38",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:38:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:38",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "23e1154beacf5bc17b6fbadb01e05071abd8fe2ade3f1d79cdeb017dfcce1f74"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:39",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:39:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:39",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "00e80299b695d4c044db01dbdd00d2a3e071eb8c737628495ef323fdc0e14f13"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:40",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:40:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:40",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "504f82d1aa4ba4f4355df225d159534b71f398cdc53c5e331858baa6145cfe3f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:41",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:41:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:41",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "6dbb110a4277415eb0836c28c924194528db5d4f00edc897466150688e0a1cb3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:42",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:42:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:42",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "1997f94583f95328a06a2ecf3bad831f1519b63dfc23e1826884d0a2b8bdfb29"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:43",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:43:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:43",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "c80525139a6186f170cad0d60d0fbc47768bde08bf38b6c347c639ef2ed032d3"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:44",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:44:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:44",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "bf5d48852e67f60f443dd1b470cedb0b46bde252307e4317fa7bf4782846ffd0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:45",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:45:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:45",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "3a7dd3b4582e142e9902a19a3b47adee6018bd99356090fbde00f088f338eef8"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:46",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:46:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:46",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "a6a3968e35bee9c59c6760ff39b70e8a296aa3c8d70e1f4711803413a54971b2"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:47",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:47:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:47",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "8626dc690dc3726a868889e28ca04c00e38507ad2e91c626e87b9067b696adf0"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:48",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:48:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:48",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "c0d7ad6460f8618d9340f803d7479218998755d6f05483ec893f652384ec524c"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:49",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:49:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:49",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "79835c44e8d57a9e7b489449c459faab2d65ac56ad36022d4d0bdeac31f43505"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:50",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:BUILD:50:BLOCK:cell:1:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:BUILD:50",
+          "key": "cell:1:2:0",
+          "lang": "en",
+          "role": "exercise",
+          "source_table_id": "T0020",
+          "text_sha256": "b03e9421fa55ad5bf11693b0b7520c25ada4f7c8a5cdbd9957b0b88ff18bf847"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS:BLOCK:source:0:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+          "key": "source:0:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03108",
+          "start": 0,
+          "end": 16,
+          "text_sha256": "578f8fc676a002987a13ddae67309d37eac51594534688c448c77424342cdc23"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS:BLOCK:source:0:1:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+          "key": "source:0:1",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03108",
+          "start": 16,
+          "end": 27,
+          "text_sha256": "57f3594287b2123d56178798999eb9d589d43b645c9c02e8fdabf1ec0739e01f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS:BLOCK:source:0:2:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+          "key": "source:0:2",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03108",
+          "start": 27,
+          "end": 43,
+          "text_sha256": "578f8fc676a002987a13ddae67309d37eac51594534688c448c77424342cdc23"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS:BLOCK:source:0:3:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+          "key": "source:0:3",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03108",
+          "start": 43,
+          "end": 54,
+          "text_sha256": "57f3594287b2123d56178798999eb9d589d43b645c9c02e8fdabf1ec0739e01f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS:BLOCK:source:1:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+          "key": "source:1:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03110",
+          "start": 0,
+          "end": 27,
+          "text_sha256": "bd8be31b5f497f2b6271b48977ee940469a186b5b3ff80eff73550ca3f55a81f"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS:BLOCK:source:2:0:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:REMISSIONS",
+          "key": "source:2:0",
+          "lang": "en",
+          "role": "explanation",
+          "source_id": "P03112",
+          "start": 0,
+          "end": 27,
+          "text_sha256": "bd8be31b5f497f2b6271b48977ee940469a186b5b3ff80eff73550ca3f55a81f"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:VISUAL",
+      "targets": []
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:DRILLS:FIGURE",
+      "targets": [
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:FIGURE:BLOCK:figure-description:en",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:FIGURE",
+          "key": "figure-description",
+          "lang": "en",
+          "role": "figure",
+          "text_sha256": "3017934e57176a384720685682316cb4eb1478cbc2efe745b384b030a76d0490"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:FIGURE:BLOCK:figure-description:es",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:FIGURE",
+          "key": "figure-description",
+          "lang": "es",
+          "role": "figure",
+          "text_sha256": "444915f977caf164be52f906cdeae6db18fb922ac81e477adf5f3e91594db0f1"
+        },
+        {
+          "id": "MVP:UNIT:TO-BE:DRILLS:FIGURE:BLOCK:figure-description:pt",
+          "unit_id": "MVP:UNIT:TO-BE:DRILLS:FIGURE",
+          "key": "figure-description",
+          "lang": "pt",
+          "role": "figure",
+          "text_sha256": "5ba905b31719799c9b73258d0fa4e7f5b330ac24d135fa7907d4c321e8dcb37b"
         }
       ]
     }
