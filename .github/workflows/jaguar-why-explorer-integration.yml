@@ -1,0 +1,24 @@
+name: JAGUAR WHY Explorer isolated integration checks
+on:
+  push:
+    branches: [jaguar/why-explorer-live-wire-20261029]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  why-explorer-local-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check browser dependency wiring (static)
+        run: node scripts/test-why-explorer-wiring.cjs
+      - name: Check existing WHY canonical S3 cycle
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Check human-review safeguards S1 S2
+        run: node scripts/test-why-production-review-preview.cjs
+      - name: Check release remains blocked
+        run: node scripts/test-jaguar-why-production-safety-gate.cjs
