@@ -59,3 +59,10 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Added check to the integration branch workflow (`641c600`). Source completeness, dynamic browser behavior and CI GREEN are **not yet certified**.
 - Keep M1 feature wiring BLOCKED until complete source dependencies and DOM/CSS structure are reconciled. The `main` branch remains unchanged; separate D1, worker and staging checks untouched.
 - Next M1.6: review actual gate output, repair the gate if its assumptions are wrong, and implement a coherent integration candidate only after the structural parity baseline passes.
+
+## M1.6 recovery — authored WHY dependency corpus
+- Copied unchanged six authored S3/S4 dependency corpus files (having-why and after-dinner-why, EN/ES/PT) from WHY source into integration branch; source JSON parsed successfully before copy.
+- Files: `data/learning/dependencies/{having,after-dinner}-why-{en,es,pt}.json`.
+- Commits: `0f083132`, `ce8073a5`, `803b37bb`, `dcbb074c`, `440669ae`, `4fa1a99a`.
+- S1/S2 WHY pedagogy is **not** inferred from S3/S4; confirm authored shopping/preparing corpus and runtime references separately.
+- No WHAT/WHICH/WHERE or learner/assessment control modified. HTML wiring still pending. CI conclusions not verified due to tool limitations; do not claim GREEN. MAIN and D1 unchanged.
