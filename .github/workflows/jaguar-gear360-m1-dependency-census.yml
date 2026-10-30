@@ -26,3 +26,5 @@ jobs:
           node-version: '22'
       - name: Assert source files and report missing target dependencies
         run: node integration/scripts/jaguar-gear360-m1-dependency-census.cjs baseline why-source
+      - name: Verify recovered WHY modules integrity and source script order
+        run: node integration/scripts/jaguar-gear360-m14-why-integrity.cjs why-source integration
