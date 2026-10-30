@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "having-why-pt",
+  "language": "pt",
+  "sentence": "Por que este jantar é especial?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Por que",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO INTERROGATIVO"
+        },
+        "role": {
+          "pt": "Razão sobre a qual se pergunta"
+        }
+      }
+    },
+    {
+      "id": "this",
+      "index": 2,
+      "form": "este",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determina jantar"
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 3,
+      "form": "jantar",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Sujeito da descrição"
+        }
+      }
+    },
+    {
+      "id": "is",
+      "index": 4,
+      "form": "é",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO COPULATIVO"
+        },
+        "role": {
+          "pt": "Ligação copulativa"
+        }
+      }
+    },
+    {
+      "id": "special",
+      "index": 5,
+      "form": "especial",
+      "wordClass": "ADJ",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADJETIVO"
+        },
+        "role": {
+          "pt": "Qualidade predicativa à qual POR QUE se liga"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "special",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "special",
+      "dependent": "is",
+      "relation": "cop"
+    },
+    {
+      "head": "special",
+      "dependent": "dinner",
+      "relation": "nsubj"
+    },
+    {
+      "head": "dinner",
+      "dependent": "this",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical pt WHY question",
+    "experienceId": "having-dinner",
+    "questionWord": "why",
+    "field": "thinkingMind.question",
+    "notes": "Referência explícita do corpus. POR QUE é modelado como modificador de razão do adjetivo predicativo ESPECIAL; sem afirmação avaliativa."
+  }
+}
