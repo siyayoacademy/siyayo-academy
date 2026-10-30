@@ -66,3 +66,10 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Commits: `0f083132`, `ce8073a5`, `803b37bb`, `dcbb074c`, `440669ae`, `4fa1a99a`.
 - S1/S2 WHY pedagogy is **not** inferred from S3/S4; confirm authored shopping/preparing corpus and runtime references separately.
 - No WHAT/WHICH/WHERE or learner/assessment control modified. HTML wiring still pending. CI conclusions not verified due to tool limitations; do not claim GREEN. MAIN and D1 unchanged.
+
+## M1.7 WHY S1/S2 corpus recovery — 2026-10-30
+- Recovered six complete, already-authored Dependency Focus JSON files (S1 shopping / S2 preparing × EN/ES/PT) from WHY experimental source **unchanged**.
+- Source SHA checkpoints: shopping EN `4f6e377`, ES `77ade1d`, PT `a054278`; preparing EN `18a4da3`, ES `ddaba77`, PT `afe8a9e`.
+- Integration commits: `bcf87be5`, `3fa895e4`, `bdaf75e9`, `57154e68`, `6f7288aa`, `4a3ba66e`.
+- All **12** WHY Dependency Focus corpus files are now present for S1–S4 EN/ES/PT, as source recovery; this does not assert that S1/S2 have independent assessment contracts or that anything is rendered in the integration HTML.
+- Runtime GEAR/HTML/CSS wiring and browser regression remain the blocking M1.8 gate. No MAIN/D1/Worker modifications.
