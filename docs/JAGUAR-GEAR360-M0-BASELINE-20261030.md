@@ -86,3 +86,9 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Wired into CI at `d75e6ed`. CI completion/green not independently verified at this checkpoint; no release approval implied.
 - Current integration remains on `jaguar/gear360-main-integration-20261030`; MAIN/D1/Worker unchanged.
 - Next: inspect CI results, repair actual failures, test delayed fetch and back-navigation, then confirm browser preview before promoting to MAIN.
+
+## M1.10 asynchronous navigation guard (2026-10-30)
+- Updated the M1.9 simulated DOM lookup to discover dynamically appended elements consistently with browser `getElementById`.
+- Added out-of-order fetch regression: navigate S1 EN WHY → S2 PT WHY, resolve the newer response before the older one; assert only S2 content renders. Added WHY → WHAT while pending request, assert no stale content and no duplicate study host.
+- Commit `f5f4d53`. Workflow references the test via the M1.9 step. This is **test code**, not a newly validated browser release.
+- CI status could not be confirmed through the available lookup; do not report GREEN. Main, D1 and workers unchanged.
