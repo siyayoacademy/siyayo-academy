@@ -151,5 +151,15 @@
     "human_homologated": true,
     "approval_evidence": "Professor: OK Entendo sim ficou melhor agora; ok perfeito!",
     "published_commit": "9a6595474676eac9092357e96391316a848d7708"
-  }
+  },
+  "future_reuse_audits": [
+    {
+      "id": "MASTER-VIP-DEPENDENCY-BRIDGE-20261030",
+      "status": "AUDITED_FUTURE_ONLY_NOT_IMPLEMENTED",
+      "document": "MASTER-VIP-DEPENDENCY-BRIDGE-FUTURE-AUDIT-20261030.md",
+      "scope": "QW/AUX/SUBJECT/VERB/THE REST × Thinking Mind/QWs × Dependency Focus SVG × Head Probe",
+      "limits": "No assessment authority, Explorer integration, D1, main merge or cloud deployment",
+      "editorial_continuation": "MVP18 P04432 Use Interrogative Form"
+    }
+  ]
 }
