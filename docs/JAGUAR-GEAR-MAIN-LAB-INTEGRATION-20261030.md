@@ -43,3 +43,10 @@ Date: 2026-10-30. Decision: owner requests that the primary `main` site function
 
 ## Continuity contract
 This document is the single checkpoint for the main-laboratory transition and links back to `docs/SIYAYO-WORK-MAP.md`. Continue from the last verified ELO and commit rather than proposing a fresh audit or restarting WHY. Check active heads and the newest homologation before any follow-up work.
+
+## M1.14 — visual homologation blocker (2026-10-30)
+- User screenshots of pinned WHY preview `b1ec9025` show the full Explorer with Learning Trail, Word Path, PATITA, dependency diagrams and preserved WHY evidence: EN 3/3, ES 2/3; these observations are screenshot-specific, not full release certification.
+- Confirmed severe PT WHY exploratory-question vertical fragmentation. CSS fix `7f74f36` stretches the question-grid to full available width and restores normal word wrapping in `#whyAssessmentPanel`.
+- **Next actual gate:** verify Cloudflare deployment for `7f74f36` and screenshot at EN/ES/PT with no NICK and NICK. The old pinned `b1ec9025` preview will NOT update when refreshed.
+- Main-derived integration branch `jaguar/gear360-main-integration-20261030` still has only the minimal no-NICK study bridge and MUST NOT replace the mature 48-script WHY source; reconcile by selective integration without discarding existing UI.
+- No main/D1/Worker promotion yet; green CI and browser behavior remain unconfirmed, and full WHY deployment is NOT marked complete.
