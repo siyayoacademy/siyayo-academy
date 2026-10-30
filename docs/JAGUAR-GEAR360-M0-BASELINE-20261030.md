@@ -73,3 +73,10 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Integration commits: `bcf87be5`, `3fa895e4`, `bdaf75e9`, `57154e68`, `6f7288aa`, `4a3ba66e`.
 - All **12** WHY Dependency Focus corpus files are now present for S1–S4 EN/ES/PT, as source recovery; this does not assert that S1/S2 have independent assessment contracts or that anything is rendered in the integration HTML.
 - Runtime GEAR/HTML/CSS wiring and browser regression remain the blocking M1.8 gate. No MAIN/D1/Worker modifications.
+
+## M1.8 first executable pedagogical slice (2026-10-30)
+- Main-derived integration branch only: GEAR controller retains selected QW on Experience transition (`c383be7`), and invokes an optional pedagogical bridge on each render.
+- New independent `js/gear360-why-pedagogical-bridge.js` (`6f05288`) reads 12 recovered WHY Dependency Focus JSON corpora via fetch, displays localized contextual question and word-type token study, never accesses learner identity, evaluator or credits.
+- Wired into `verb-explorer.html` before existing driver (`b5ba329`); responsive study layout in `css/verb-explorer.css` (`4598b85`).
+- Static regression `scripts/jaguar-gear360-m18-pedagogical-bridge.cjs` (`f26d0cc`), CI workflow inclusion (`d2bbad7`). CI completion and browser behavior not yet verified; no production promotion.
+- This initial slice is READ-ONLY teaching. Dependency Focus/Head Probe interaction, canonical WHY evaluation, PATITA and Learning Trail integration need follow-up gates. It is not the complete 48-script Explorer migration.
