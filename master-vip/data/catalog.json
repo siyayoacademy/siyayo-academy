@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -1372,6 +1372,109 @@
             "MVP:UNIT:TO-BE:MAKING-QUESTIONS:48",
             "MVP:UNIT:TO-BE:MAKING-QUESTIONS:49",
             "MVP:UNIT:TO-BE:MAKING-QUESTIONS:50"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:INTRO",
+          "title": "Original · Use Interrogative Form · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+          "title": "Original · Use Interrogative Form · 1–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:01",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:02",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:03",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:04",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:05",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:06",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:07",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:08",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:09",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+          "title": "Original · Use Interrogative Form · 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:11",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:12",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:13",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:14",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:15",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:16",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:17",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:18",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:19",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+          "title": "Original · Use Interrogative Form · 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:21",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:22",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:23",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:24",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:25",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:26",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:27",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:28",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:29",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+          "title": "Original · Use Interrogative Form · 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:31",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:32",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:33",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:34",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:35",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:36",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:37",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:38",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:39",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+          "title": "Original · Use Interrogative Form · 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:41",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:42",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:43",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:44",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:45",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:46",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:47",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:48",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:49",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:50"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+          "title": "Original · Use Interrogative Form · 51–60",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:51",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:52",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:53",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:54",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:55",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:56",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:57",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:58",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:59",
+            "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:60"
           ]
         }
       ],
@@ -46318,6 +46421,1894 @@
       ],
       "instructions": {
         "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "To Be · Use Interrogative Form",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:HEADING",
+          "text": "VERB TO BE – USE INTERROGATIVE FORM"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:01",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 1",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2008; prompt: You/a student."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:1",
+          "text": "2008 · You/a student."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:02",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 2",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: Now; prompt: Paul and Mary/doctors."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:2",
+          "text": "Now · Paul and Mary/doctors."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:03",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 3",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2017; prompt: Cyntia/a secretary."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:3",
+          "text": "2017 · Cyntia/a secretary."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:04",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 4",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2005; prompt: You/a teacher."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:4",
+          "text": "2005 · You/a teacher."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:05",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 5",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2022; prompt: Richard & Louise/married."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:5",
+          "text": "2022 · Richard & Louise/married."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:06",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 6",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: nowadays; prompt: Charles /an engineer."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:6",
+          "text": "nowadays · Charles /an engineer."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:07",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 7",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next week; prompt: I/an artist."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:7",
+          "text": "next week · I/an artist."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:08",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 8",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2009; prompt: He/an actor."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:8",
+          "text": "2009 · He/an actor."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:09",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 9",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2025; prompt: We/in the USA."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:9",
+          "text": "2025 · We/in the USA."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:10",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 10",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2008; prompt: The table/in my room."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:10",
+          "text": "2008 · The table/in my room."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:11",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 11",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next month; prompt: The shelf & the chair/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:11",
+          "text": "next month · The shelf & the chair/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:12",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 12",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last year; prompt: That woman/a teacher."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:12",
+          "text": "last year · That woman/a teacher."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:13",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 13",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: in the future; prompt: This man/director."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:13",
+          "text": "in the future · This man/director."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:14",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 14",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last week; prompt: Santos & Guaruja/hot."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:14",
+          "text": "last week · Santos & Guaruja/hot."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:15",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 15",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: now; prompt: Marcos and I/engaged."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:15",
+          "text": "now · Marcos and I/engaged."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:16",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 16",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: yesterday; prompt: You, Carlos & I/there."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:16",
+          "text": "yesterday · You, Carlos & I/there."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:17",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 17",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next year; prompt: Didi/a comedian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:17",
+          "text": "next year · Didi/a comedian."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:18",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 18",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 1990; prompt: Patrick & David/actors."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:18",
+          "text": "1990 · Patrick & David/actors."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:19",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 19",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2025; prompt: Sandra/a cook."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:19",
+          "text": "2025 · Sandra/a cook."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:20",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 20",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 1991; prompt: You and Carla/students."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:20",
+          "text": "1991 · You and Carla/students."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:21",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 21",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: in 2 months; prompt: I/a student."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:21",
+          "text": "in 2 months · I/a student."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:22",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 22",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last month; prompt: Paul and Mary/engaged."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:22",
+          "text": "last month · Paul and Mary/engaged."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:23",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 23",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: at the moment; prompt: Cyntia/a secretary."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:23",
+          "text": "at the moment · Cyntia/a secretary."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:24",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 24",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last week; prompt: You/worried."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:24",
+          "text": "last week · You/worried."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:25",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 25",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: two years from now; prompt: Richard & Louise/married."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:25",
+          "text": "two years from now · Richard & Louise/married."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:26",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 26",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: currently; prompt: Charles/an engineer."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:26",
+          "text": "currently · Charles/an engineer."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:27",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 27",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next week; prompt: I/married."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:27",
+          "text": "next week · I/married."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:28",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 28",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2008; prompt: He/an actor."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:28",
+          "text": "2008 · He/an actor."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:29",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 29",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last time; prompt: We/in the USA."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:29",
+          "text": "last time · We/in the USA."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:30",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 30",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next time; prompt: The table/in my room."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:30",
+          "text": "next time · The table/in my room."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:31",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 31",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: at the present; prompt: The shelf & the chair/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:31",
+          "text": "at the present · The shelf & the chair/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:32",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 32",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last time; prompt: That woman/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:32",
+          "text": "last time · That woman/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:33",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 33",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: tomorrow; prompt: This man/director."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:33",
+          "text": "tomorrow · This man/director."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:34",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 34",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: in the current year; prompt: These men/directors."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:34",
+          "text": "in the current year · These men/directors."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:35",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 35",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last year; prompt: Marcos and I/engaged"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:35",
+          "text": "last year · Marcos and I/engaged"
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:36",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 36",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2 days ago; prompt: You, Carlos & I/there."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:36",
+          "text": "2 days ago · You, Carlos & I/there."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:37",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 37",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next month; prompt: Didi/a comedian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:37",
+          "text": "next month · Didi/a comedian."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:38",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 38",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: yesterday; prompt: Patrick & David/actors."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:38",
+          "text": "yesterday · Patrick & David/actors."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:39",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 39",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: today; prompt: Sandra/a cook"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:39",
+          "text": "today · Sandra/a cook"
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:40",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 40",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last night; prompt: You and Carla/students."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:40",
+          "text": "last night · You and Carla/students."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:41",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 41",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next decade; prompt: I/a student."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:41",
+          "text": "next decade · I/a student."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:42",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 42",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last summer; prompt: Paul and Mary/there."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:42",
+          "text": "last summer · Paul and Mary/there."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:43",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 43",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: this week; prompt: Cyntia/a secretary."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:43",
+          "text": "this week · Cyntia/a secretary."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:44",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 44",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last winter; prompt: You/a teacher."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:44",
+          "text": "last winter · You/a teacher."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:45",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 45",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: next time; prompt: Richard & Louise/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:45",
+          "text": "next time · Richard & Louise/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:46",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 46",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: Presently; prompt: Charles/an engineer."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:46",
+          "text": "Presently · Charles/an engineer."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:47",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 47",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: yesterday; prompt: I/an artist."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:47",
+          "text": "yesterday · I/an artist."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:48",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 48",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2 days ago; prompt: He/an actor."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:48",
+          "text": "2 days ago · He/an actor."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:49",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 49",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: right now; prompt: We/in the USA."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:49",
+          "text": "right now · We/in the USA."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:50",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 50",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last semester; prompt: The table/in my room."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:50",
+          "text": "last semester · The table/in my room."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:51",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 51",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2021; prompt: The shelf & the chair/here"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:51",
+          "text": "2021 · The shelf & the chair/here"
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:52",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 52",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: this year; prompt: That woman/a teacher."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:52",
+          "text": "this year · That woman/a teacher."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:53",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 53",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last autumn; prompt: This man/director."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:53",
+          "text": "last autumn · This man/director."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:54",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 54",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2011; prompt: Marcos and I/engaged."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:54",
+          "text": "2011 · Marcos and I/engaged."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:55",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 55",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: last night; prompt: Marcos and I/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:55",
+          "text": "last night · Marcos and I/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:56",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 56",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: today; prompt: You, Carlos & I/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:56",
+          "text": "today · You, Carlos & I/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:57",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 57",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: in the past; prompt: Didi/a comedian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:57",
+          "text": "in the past · Didi/a comedian."
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:58",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 58",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: 2020; prompt: Patrick & David/actors"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:58",
+          "text": "2020 · Patrick & David/actors"
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:59",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 59",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: in the present; prompt: Sandra/a cook"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:59",
+          "text": "in the present · Sandra/a cook"
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:60",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:INTERROGATIVE-FORM:GROUP-6",
+      "type": "SOURCE_EXERCISE",
+      "title": "Use Interrogative Form · 60",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "Canonical table extracted from source DOCX. Granular XML IDs and table mapping pending; time expressions and text kept verbatim. Source time: at that time; prompt: You and Carla/students"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP18:EX:60",
+          "text": "at that time · You and Carla/students"
+        }
+      ],
+      "instructions": {
+        "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
       }
     }
   ],
