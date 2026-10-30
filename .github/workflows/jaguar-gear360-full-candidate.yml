@@ -1,0 +1,24 @@
+name: JAGUAR GEAR360 full Explorer candidate guard
+on:
+  push:
+    branches: [jaguar/gear360-full-explorer-candidate-20261030]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  full-explorer-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Guard the complete Explorer modules and WHY pedagogy
+        run: node scripts/jaguar-gear360-full-candidate-gate.cjs
+      - name: Exercise canonical WHY S3 assessment
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Guard S3 language re-entry
+        run: node scripts/test-why-s3-language-reentry.cjs
+      - name: Guard S1-S4 WHY presentation
+        run: node scripts/test-why-explorer-s1-s4-presentation.cjs
