@@ -21,3 +21,9 @@ Date: 2026-10-30. Branch created **from main**, not from the diverged WHY branch
 4. Only after CI and manually inspected preview may changes be promoted to main in small recoverable commits.
 
 Authoritative plan and gates: `docs/JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md` on the WHY branch, linked from `docs/SIYAYO-WORK-MAP.md`. No blanket merge of 1,827 commits.
+
+## M1 dependency-gate implementation (2026-10-30)
+- Main HTML loads 6 external scripts; WHY HTML loads 48. Main controller 36,243 chars; WHY controller 70,376 chars. This is not a single-module drop-in.
+- Committed `scripts/jaguar-gear360-m1-dependency-census.cjs` (commit `e6eed2c`) to scan actual referenced HTML scripts/styles and controller JSON direct literals, report source/target gaps and stop for broken source references.
+- Committed `.github/workflows/jaguar-gear360-m1-dependency-census.yml` (commit `9c3f5d0`) to check out main and WHY as independent read-only trees and run the scanner.
+- CI outcome not yet confirmed at documentation time. No runtime assets transported to main; next step is inspect CI, reconcile failures and explicitly scope the minimal portable feature.
