@@ -50,3 +50,10 @@ This document is the single checkpoint for the main-laboratory transition and li
 - **Next actual gate:** verify Cloudflare deployment for `7f74f36` and screenshot at EN/ES/PT with no NICK and NICK. The old pinned `b1ec9025` preview will NOT update when refreshed.
 - Main-derived integration branch `jaguar/gear360-main-integration-20261030` still has only the minimal no-NICK study bridge and MUST NOT replace the mature 48-script WHY source; reconcile by selective integration without discarding existing UI.
 - No main/D1/Worker promotion yet; green CI and browser behavior remain unconfirmed, and full WHY deployment is NOT marked complete.
+
+## ELO M1.15 — full Explorer candidate protected (2026-10-30)
+- Full candidate branch: `jaguar/gear360-full-explorer-candidate-20261030`, forked from mature WHY source; preserves 48 script references. This is a release candidate, not production.
+- Integrity gate `scripts/jaguar-gear360-full-candidate-gate.cjs` (commit `d1088f1`) enforces core modules, 12 trilingual WHY corpora, no-NICK exploration fallback and PT wrap CSS fix.
+- CI `.github/workflows/jaguar-gear360-full-candidate.yml` (commit `42fff32`) runs integrity and selected existing WHY tests.
+- Stop rule: never replace the complete candidate with the 7-script `jaguar/gear360-main-integration-20261030` slice. That branch remains a controlled recovery record, not the full product.
+- Next gate: obtain actual CI outcomes, reconcile the single main-only divergence, run true browser EN/ES/PT/no-NICK/NICK regression and then prepare a rollback-ready explicit main promotion. No main or D1 change here.
