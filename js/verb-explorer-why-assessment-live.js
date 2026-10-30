@@ -88,10 +88,15 @@ function mount(input){
   var evidenceBridge=root.AdaptiveWhyContextualReasonProbeEvidenceBridge;
   var boundary=root.AdaptiveWhyContextualReasonProbeAttemptBoundary;
   var events=root.SIYAYOVerbExplorerLearnerEvent;
-  if(!experience||!['en','es','pt'].includes(language)||!coordinator||!catalog||!skills||
-    !source||!results||!evidenceBridge||!boundary||!events)return false;
-  if(typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'||
+  if(!experience||!['en','es','pt'].includes(language)||!catalog||!skills||!source||
     typeof catalog.getExperience!=='function'||typeof source.resolve!=='function')return false;
+  // Pedagogical display is independent of evaluator services and learner identity.
+  // A missing assessment service must never suppress an authored WHY practice.
+  if(!coordinator||!results||!evidenceBridge||!boundary||!events||
+    typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'){
+    return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
+      mountExploration(doc,el,experience,language,skills,catalog,source);
+  }
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
   var feedbackKey=decision&&decision.assessmentScope?decision.assessmentScope.key+'|'+text(experience.id):'';
   var definition=skills.getDefinition&&skills.getDefinition();
