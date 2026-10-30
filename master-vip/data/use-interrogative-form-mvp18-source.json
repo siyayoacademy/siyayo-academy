@@ -1,0 +1,568 @@
+{
+  "schema_version": "1.0.0",
+  "id": "MVP18-USE-INTERROGATIVE-FORM-SOURCE",
+  "status": "CANONICAL_TABLE_EXTRACTED_PENDING_SITE_INTEGRATION",
+  "source": {
+    "document": "STRUCTURE-KIND OF WORDS.docx",
+    "library_file_id": "libfile_aa3a9cd10ef88191ba4dd2b11dfc2e4a",
+    "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+    "heading": "VERB TO BE – USE INTERROGATIVE FORM",
+    "table_number": "PENDING_XML_CONFIRMATION",
+    "first_paragraph": "P04432",
+    "next_heading": "TO BE – OTHER FORMS"
+  },
+  "headers": [
+    "time expression",
+    "source prompt",
+    "VERB",
+    "THE REST"
+  ],
+  "total": 60,
+  "rows": [
+    {
+      "item": 1,
+      "time_expression": "2008",
+      "source_prompt": "You/a student.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 2,
+      "time_expression": "Now",
+      "source_prompt": "Paul and Mary/doctors.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 3,
+      "time_expression": "2017",
+      "source_prompt": "Cyntia/a secretary.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 4,
+      "time_expression": "2005",
+      "source_prompt": "You/a teacher.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 5,
+      "time_expression": "2022",
+      "source_prompt": "Richard & Louise/married.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 6,
+      "time_expression": "nowadays",
+      "source_prompt": "Charles /an engineer.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 7,
+      "time_expression": "next week",
+      "source_prompt": "I/an artist.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 8,
+      "time_expression": "2009",
+      "source_prompt": "He/an actor.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 9,
+      "time_expression": "2025",
+      "source_prompt": "We/in the USA.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 10,
+      "time_expression": "2008",
+      "source_prompt": "The table/in my room.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 11,
+      "time_expression": "next month",
+      "source_prompt": "The shelf & the chair/here.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 12,
+      "time_expression": "last year",
+      "source_prompt": "That woman/a teacher.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 13,
+      "time_expression": "in the future",
+      "source_prompt": "This man/director.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 14,
+      "time_expression": "last week",
+      "source_prompt": "Santos & Guaruja/hot.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 15,
+      "time_expression": "now",
+      "source_prompt": "Marcos and I/engaged.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 16,
+      "time_expression": "yesterday",
+      "source_prompt": "You, Carlos & I/there.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 17,
+      "time_expression": "next year",
+      "source_prompt": "Didi/a comedian.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 18,
+      "time_expression": "1990",
+      "source_prompt": "Patrick & David/actors.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 19,
+      "time_expression": "2025",
+      "source_prompt": "Sandra/a cook.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 20,
+      "time_expression": "1991",
+      "source_prompt": "You and Carla/students.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 21,
+      "time_expression": "in 2 months",
+      "source_prompt": "I/a student.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 22,
+      "time_expression": "last month",
+      "source_prompt": "Paul and Mary/engaged.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 23,
+      "time_expression": "at the moment",
+      "source_prompt": "Cyntia/a secretary.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 24,
+      "time_expression": "last week",
+      "source_prompt": "You/worried.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 25,
+      "time_expression": "two years from now",
+      "source_prompt": "Richard & Louise/married.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 26,
+      "time_expression": "currently",
+      "source_prompt": "Charles/an engineer.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 27,
+      "time_expression": "next week",
+      "source_prompt": "I/married.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 28,
+      "time_expression": "2008",
+      "source_prompt": "He/an actor.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 29,
+      "time_expression": "last time",
+      "source_prompt": "We/in the USA.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 30,
+      "time_expression": "next time",
+      "source_prompt": "The table/in my room.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 31,
+      "time_expression": "at the present",
+      "source_prompt": "The shelf & the chair/here.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 32,
+      "time_expression": "last time",
+      "source_prompt": "That woman/here.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 33,
+      "time_expression": "tomorrow",
+      "source_prompt": "This man/director.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 34,
+      "time_expression": "in the current year",
+      "source_prompt": "These men/directors.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 35,
+      "time_expression": "last year",
+      "source_prompt": "Marcos and I/engaged",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 36,
+      "time_expression": "2 days ago",
+      "source_prompt": "You, Carlos & I/there.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 37,
+      "time_expression": "next month",
+      "source_prompt": "Didi/a comedian.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 38,
+      "time_expression": "yesterday",
+      "source_prompt": "Patrick & David/actors.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 39,
+      "time_expression": "today",
+      "source_prompt": "Sandra/a cook",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 40,
+      "time_expression": "last night",
+      "source_prompt": "You and Carla/students.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 41,
+      "time_expression": "next decade",
+      "source_prompt": "I/a student.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 42,
+      "time_expression": "last summer",
+      "source_prompt": "Paul and Mary/there.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 43,
+      "time_expression": "this week",
+      "source_prompt": "Cyntia/a secretary.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 44,
+      "time_expression": "last winter",
+      "source_prompt": "You/a teacher.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 45,
+      "time_expression": "next time",
+      "source_prompt": "Richard & Louise/here.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 46,
+      "time_expression": "Presently",
+      "source_prompt": "Charles/an engineer.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 47,
+      "time_expression": "yesterday",
+      "source_prompt": "I/an artist.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 48,
+      "time_expression": "2 days ago",
+      "source_prompt": "He/an actor.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 49,
+      "time_expression": "right now",
+      "source_prompt": "We/in the USA.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 50,
+      "time_expression": "last semester",
+      "source_prompt": "The table/in my room.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 51,
+      "time_expression": "2021",
+      "source_prompt": "The shelf & the chair/here",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 52,
+      "time_expression": "this year",
+      "source_prompt": "That woman/a teacher.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 53,
+      "time_expression": "last autumn",
+      "source_prompt": "This man/director.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 54,
+      "time_expression": "2011",
+      "source_prompt": "Marcos and I/engaged.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 55,
+      "time_expression": "last night",
+      "source_prompt": "Marcos and I/here.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 56,
+      "time_expression": "today",
+      "source_prompt": "You, Carlos & I/here.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 57,
+      "time_expression": "in the past",
+      "source_prompt": "Didi/a comedian.",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 58,
+      "time_expression": "2020",
+      "source_prompt": "Patrick & David/actors",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 59,
+      "time_expression": "in the present",
+      "source_prompt": "Sandra/a cook",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 60,
+      "time_expression": "at that time",
+      "source_prompt": "You and Carla/students",
+      "fields": {
+        "verb": "",
+        "the_rest": ""
+      }
+    }
+  ],
+  "notes": [
+    "Preserve original names, dates and source spellings.",
+    "No answer key is generated.",
+    "Final XML P-id range and table number pending explicit canonical indexing."
+  ]
+}
