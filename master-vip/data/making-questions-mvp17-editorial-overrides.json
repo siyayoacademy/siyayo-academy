@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "id": "MVP17-MAKING-QUESTIONS-EDITORIAL-OVERRIDES",
+  "status": "EDITORIAL_APPROVED_PENDING_CATALOG_INTEGRATION",
+  "date": "2026-10-30",
+  "source": {
+    "document": "STRUCTURE-KIND OF WORDS.docx",
+    "section": "VERB TO BE – MAKING QUESTIONS",
+    "range": [
+      "P04022",
+      "P04431"
+    ],
+    "policy": "Preserve original source; overrides apply only to editorial rendering. No silent alteration of source provenance."
+  },
+  "entries": [
+    {
+      "item": 2,
+      "mode": "?",
+      "source": "Bill Clinton/a politician.",
+      "editorial": "Nikola Tesla/an inventor.",
+      "changes": [
+        {
+          "from": "Bill Clinton",
+          "to": "Nikola Tesla"
+        },
+        {
+          "from": "a politician",
+          "to": "an inventor"
+        }
+      ]
+    },
+    {
+      "item": 3,
+      "mode": "+",
+      "source": "Lula and Marta/politicians.",
+      "editorial": "Jair and Bia/politicians.",
+      "changes": [
+        {
+          "from": "Lula",
+          "to": "Jair"
+        },
+        {
+          "from": "Marta",
+          "to": "Bia"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "exercise_items_changed": 2,
+    "name_substitutions": 3,
+    "profession_substitutions": 1
+  },
+  "limitations": [
+    "This file does not create 50 production exercises or alter catalog statistics.",
+    "MVP17 publication and deployment remain pending full canonical-source mapping, tests, and review."
+  ]
+}
