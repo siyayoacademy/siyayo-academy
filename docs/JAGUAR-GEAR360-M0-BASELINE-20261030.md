@@ -52,3 +52,10 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Added `scripts/jaguar-gear360-m14-why-integrity.cjs` (`cad52f4`), comparing recovered module bytes to the WHY source and asserting loader order and 3-dimension canonical contract.
 - Added the integrity check to CI workflow (`2d0ff96`). The check reports `BLOCKED_UNWIRED` while source files are present but not loaded by the integration HTML. This is intentional, not a working browser pass.
 - Next: close complete GEAR bootstrap/DOM/CSS dependencies before activation. No default-branch changes, no D1 or worker changes.
+
+## M1.5 DOM/CSS/runtime dependency gate (2026-10-30)
+- Source HTML: main = 6 scripts, 2 CSS, 57 explicit HTML IDs; WHY = 48 scripts, 6 CSS, 99 explicit IDs. Counts derive from current file contents, not CI output.
+- Added `scripts/jaguar-gear360-m15-dom-css-gate.cjs` (`64edd5f`), a read-only, three-tree comparison of loader scripts, CSS references, HTML IDs, source driver DOM lookups and recovered WHY module presence.
+- Added check to the integration branch workflow (`641c600`). Source completeness, dynamic browser behavior and CI GREEN are **not yet certified**.
+- Keep M1 feature wiring BLOCKED until complete source dependencies and DOM/CSS structure are reconciled. The `main` branch remains unchanged; separate D1, worker and staging checks untouched.
+- Next M1.6: review actual gate output, repair the gate if its assumptions are wrong, and implement a coherent integration candidate only after the structural parity baseline passes.
