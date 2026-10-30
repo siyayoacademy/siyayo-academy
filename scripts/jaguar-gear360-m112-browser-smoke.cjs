@@ -9,7 +9,11 @@ const assert=require('node:assert/strict');
   await page.goto('http://127.0.0.1:8765/verb-explorer.html',{waitUntil:'networkidle'});
   await page.locator('[data-mode="experience"]').click();
   for(const exp of ['shopping','preparing','having-dinner','after-dinner-conversation']){
-   if(exp!=='shopping')await page.locator('#nextExperience').click();
+   if(exp!=='shopping'){
+    await page.locator('#nextExperience').click();
+    const retained=page.locator('#questionGear .gear-option.active');
+    assert.match((await retained.textContent()).trim(),/^(WHY|POR QUÉ|POR QUÊ)$/i,'WHY must remain selected across Experience transition');
+   }
    const title=await page.locator('#experienceTitle').textContent();
    for(const lang of ['en','es','pt']){
     await page.locator('[data-experience-language="'+lang+'"]').click();
