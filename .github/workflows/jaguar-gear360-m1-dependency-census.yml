@@ -1,0 +1,28 @@
+name: JAGUAR M1 selective integration dependency census
+on:
+  push:
+    branches: [jaguar/gear360-main-integration-20261030]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare-source-to-main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: integration
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: baseline
+      - uses: actions/checkout@v4
+        with:
+          ref: jaguar/why-explorer-live-wire-20261029
+          path: why-source
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Assert source files and report missing target dependencies
+        run: node integration/scripts/jaguar-gear360-m1-dependency-census.cjs baseline why-source
