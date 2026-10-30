@@ -1,0 +1,523 @@
+{
+  "id": "MVP19-OTHER-FORMS-SOURCE",
+  "status": "SOURCE_EXTRACTED_CANONICAL_XML_MAPPING_PENDING",
+  "source": {
+    "document": "STRUCTURE-KIND OF WORDS.docx",
+    "library_file_id": "libfile_aa3a9cd10ef88191ba4dd2b11dfc2e4a",
+    "section": "TO BE – OTHER FORMS",
+    "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c"
+  },
+  "columns": [
+    "AUX.",
+    "VERBS",
+    "THE REST"
+  ],
+  "count": 50,
+  "rows": [
+    {
+      "item": 1,
+      "mode": "+",
+      "original": "Mark and I/there/last time.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 2,
+      "mode": "?",
+      "original": "You/in the next meeting?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 3,
+      "mode": "+",
+      "original": "Those children/very naughty.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 4,
+      "mode": "?",
+      "original": "You/tired?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 5,
+      "mode": "-",
+      "original": "I/hungry.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 6,
+      "mode": "+",
+      "original": "David/thirsty.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 7,
+      "mode": "-",
+      "original": "Paul/at home/last night.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 8,
+      "mode": "?",
+      "original": "Regina/there?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 9,
+      "mode": "+",
+      "original": "Cigarrette/bad for you.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 10,
+      "mode": "+",
+      "original": "Regina/there/that day?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 11,
+      "mode": "?",
+      "original": "Regina/there/that day.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 12,
+      "mode": "+",
+      "original": "Apples/fruits.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 13,
+      "mode": "?",
+      "original": "Your mother/Brazilian?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 14,
+      "mode": "-",
+      "original": "My mother/Brazilian.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 15,
+      "mode": "+",
+      "original": "My mother Brazilian.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 16,
+      "mode": "-",
+      "original": "My family/Braziliam.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 17,
+      "mode": "?",
+      "original": "Your family/Brazilian?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 18,
+      "mode": "+",
+      "original": "My family/Brazilian.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 19,
+      "mode": "+",
+      "original": "Nobody/happy.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 20,
+      "mode": "?",
+      "original": "Everybody/happy?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 21,
+      "mode": "+",
+      "original": "Everybody/happy.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 22,
+      "mode": "?",
+      "original": "Anybody/there?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 23,
+      "mode": "-",
+      "original": "Nobody/there.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 24,
+      "mode": "+",
+      "original": "Somebody/there.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 25,
+      "mode": "-",
+      "original": "Nobody/invited/to that party.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 26,
+      "mode": "?",
+      "original": "The USA/big country?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 27,
+      "mode": "+",
+      "original": "The USA/big country.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 28,
+      "mode": "+",
+      "original": "Faustão/a little fat.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 29,
+      "mode": "?",
+      "original": "Anybody/outside?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 30,
+      "mode": "+",
+      "original": "Xuxa/blond.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 31,
+      "mode": "?",
+      "original": "Your group/good?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 32,
+      "mode": "-",
+      "original": "My group/wonderful.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 33,
+      "mode": "+",
+      "original": "My team/very good.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 34,
+      "mode": "-",
+      "original": "My team/very good.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 35,
+      "mode": "?",
+      "original": "Your team/motivated?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 36,
+      "mode": "+",
+      "original": "My day/great/yesterday.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 37,
+      "mode": "+",
+      "original": "My bank/in Paulista Avenue.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 38,
+      "mode": "?",
+      "original": "Your friends/loyal?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 39,
+      "mode": "+",
+      "original": "My girlfriend/very kind.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 40,
+      "mode": "?",
+      "original": "The superheroes/famous?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 41,
+      "mode": "-",
+      "original": "The cake/delicious.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 42,
+      "mode": "+",
+      "original": "The Beatles/a band.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 43,
+      "mode": "-",
+      "original": "Cyntia/so beautiful/that day.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 44,
+      "mode": "?",
+      "original": "Anybody/hungry?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 45,
+      "mode": "+",
+      "original": "Cyntia/so beautiful.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 46,
+      "mode": "+",
+      "original": "Mathemathic/difficult.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 47,
+      "mode": "?",
+      "original": "Everybody/ready?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 48,
+      "mode": "+",
+      "original": "I/there/yesterday.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 49,
+      "mode": "?",
+      "original": "Everyday/new day?",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 50,
+      "mode": "-",
+      "original": "I/there/anymore.",
+      "answer_fields": {
+        "aux": "",
+        "verbs": "",
+        "the_rest": ""
+      }
+    }
+  ],
+  "limits": [
+    "Preserve all names and source spellings, including Cigarrette, Braziliam and Mathemathic.",
+    "No supplied answers or inferred translation.",
+    "Source XML paragraph IDs pending granular review."
+  ]
+}
