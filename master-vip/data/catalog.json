@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -1475,6 +1475,93 @@
             "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:58",
             "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:59",
             "MVP:UNIT:TO-BE:INTERROGATIVE-FORM:60"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:INTRO",
+          "title": "Original · To Be Other Forms · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+          "title": "Original · Other Forms · exercícios 1–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:01",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:02",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:03",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:04",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:05",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:06",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:07",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:08",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:09",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+          "title": "Original · Other Forms · exercícios 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:11",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:12",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:13",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:14",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:15",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:16",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:17",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:18",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:19",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+          "title": "Original · Other Forms · exercícios 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:21",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:22",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:23",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:24",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:25",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:26",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:27",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:28",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:29",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+          "title": "Original · Other Forms · exercícios 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:31",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:32",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:33",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:34",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:35",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:36",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:37",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:38",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:39",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+          "title": "Original · Other Forms · exercícios 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:41",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:42",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:43",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:44",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:45",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:46",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:47",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:48",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:49",
+            "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:50"
           ]
         }
       ],
@@ -48309,6 +48396,1584 @@
       ],
       "instructions": {
         "pt": "Utilize a forma interrogativa do verbo To Be conforme a referência temporal. Respostas não fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "To Be — Other Forms · Exercises",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:HEADING",
+          "text": "TO BE – OTHER FORMS"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:01",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 1 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Mark and I/there/last time."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:1",
+          "text": "+ Mark and I/there/last time."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:02",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 2 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: You/in the next meeting?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:2",
+          "text": "? You/in the next meeting?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:03",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 3 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Those children/very naughty."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:3",
+          "text": "+ Those children/very naughty."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:04",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 4 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: You/tired?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:4",
+          "text": "? You/tired?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:05",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 5 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: I/hungry."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:5",
+          "text": "- I/hungry."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:06",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 6 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: David/thirsty."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:6",
+          "text": "+ David/thirsty."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:07",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 7 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Paul/at home/last night."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:7",
+          "text": "- Paul/at home/last night."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:08",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 8 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Regina/there?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:8",
+          "text": "? Regina/there?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:09",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 9 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Cigarrette/bad for you."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:9",
+          "text": "+ Cigarrette/bad for you."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:10",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 10 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Regina/there/that day?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:10",
+          "text": "+ Regina/there/that day?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:11",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 11 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Regina/there/that day."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:11",
+          "text": "? Regina/there/that day."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:12",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 12 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Apples/fruits."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:12",
+          "text": "+ Apples/fruits."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:13",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 13 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Your mother/Brazilian?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:13",
+          "text": "? Your mother/Brazilian?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:14",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 14 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My mother/Brazilian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:14",
+          "text": "- My mother/Brazilian."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:15",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 15 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My mother Brazilian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:15",
+          "text": "+ My mother Brazilian."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:16",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 16 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My family/Braziliam."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:16",
+          "text": "- My family/Braziliam."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:17",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 17 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Your family/Brazilian?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:17",
+          "text": "? Your family/Brazilian?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:18",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 18 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My family/Brazilian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:18",
+          "text": "+ My family/Brazilian."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:19",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 19 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Nobody/happy."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:19",
+          "text": "+ Nobody/happy."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:20",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 20 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Everybody/happy?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:20",
+          "text": "? Everybody/happy?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:21",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 21 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Everybody/happy."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:21",
+          "text": "+ Everybody/happy."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:22",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 22 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Anybody/there?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:22",
+          "text": "? Anybody/there?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:23",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 23 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Nobody/there."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:23",
+          "text": "- Nobody/there."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:24",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 24 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Somebody/there."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:24",
+          "text": "+ Somebody/there."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:25",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 25 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Nobody/invited/to that party."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:25",
+          "text": "- Nobody/invited/to that party."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:26",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 26 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: The USA/big country?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:26",
+          "text": "? The USA/big country?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:27",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 27 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: The USA/big country."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:27",
+          "text": "+ The USA/big country."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:28",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 28 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Faustão/a little fat."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:28",
+          "text": "+ Faustão/a little fat."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:29",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 29 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Anybody/outside?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:29",
+          "text": "? Anybody/outside?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:30",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 30 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Xuxa/blond."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:30",
+          "text": "+ Xuxa/blond."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:31",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 31 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Your group/good?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:31",
+          "text": "? Your group/good?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:32",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 32 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My group/wonderful."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:32",
+          "text": "- My group/wonderful."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:33",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 33 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My team/very good."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:33",
+          "text": "+ My team/very good."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:34",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 34 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My team/very good."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:34",
+          "text": "- My team/very good."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:35",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 35 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Your team/motivated?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:35",
+          "text": "? Your team/motivated?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:36",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 36 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My day/great/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:36",
+          "text": "+ My day/great/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:37",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 37 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My bank/in Paulista Avenue."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:37",
+          "text": "+ My bank/in Paulista Avenue."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:38",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 38 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Your friends/loyal?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:38",
+          "text": "? Your friends/loyal?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:39",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 39 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: My girlfriend/very kind."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:39",
+          "text": "+ My girlfriend/very kind."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:40",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 40 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: The superheroes/famous?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:40",
+          "text": "? The superheroes/famous?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:41",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 41 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: The cake/delicious."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:41",
+          "text": "- The cake/delicious."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:42",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 42 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: The Beatles/a band."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:42",
+          "text": "+ The Beatles/a band."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:43",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 43 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Cyntia/so beautiful/that day."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:43",
+          "text": "- Cyntia/so beautiful/that day."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:44",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 44 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Anybody/hungry?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:44",
+          "text": "? Anybody/hungry?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:45",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 45 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Cyntia/so beautiful."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:45",
+          "text": "+ Cyntia/so beautiful."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:46",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 46 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Mathemathic/difficult."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:46",
+          "text": "+ Mathemathic/difficult."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:47",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 47 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Everybody/ready?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:47",
+          "text": "? Everybody/ready?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:48",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 48 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: I/there/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:48",
+          "text": "+ I/there/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:49",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 49 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: Everyday/new day?"
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:49",
+          "text": "? Everyday/new day?"
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:OTHER-FORMS-MVP19:50",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:OTHER-FORMS-MVP19:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "To Be · Other Forms · 50 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_PRESERVED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP19 source extraction; granular XML provenance pending, original string held in source JSON. Original: I/there/anymore."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP19:EX:50",
+          "text": "- I/there/anymore."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração conforme o sinal (+, − ou ?). Não foram fornecidas respostas."
       }
     }
   ],
