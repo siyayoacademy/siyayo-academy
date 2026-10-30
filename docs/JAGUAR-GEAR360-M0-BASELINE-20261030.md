@@ -97,3 +97,9 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Workflow status could not be independently confirmed through available pull-request-limited run lookup. Do NOT mark CI GREEN.
 - Corrected M1.5 false-blocking logic: dynamically constructed DOM elements are diagnostics, not guaranteed HTML errors; runtime activation is a signal to run behavioral tests, not a structural failure. Commit `b2e574e`.
 - The integration branch still requires CI and browser validation. No production merge, D1 or Worker action.
+
+## M1.12 browser smoke added — 2026-10-30
+- GitHub public workflow status could not be obtained through available read actions; pull-request-only run lookup was empty. No GREEN claimed.
+- Added `scripts/jaguar-gear360-m112-browser-smoke.cjs` (`d160487`), using headless Chromium and local HTTP server, covering WHY S1–S4 × EN/ES/PT without NICK, visible token surfaces, single host, and JS errors.
+- Wired test into workflow with Playwright Chromium setup (`7173357`); results remain to be checked.
+- MAIN, D1, Worker and production unchanged. Next gate: confirm browser run and fix any real failure prior to promotion.
