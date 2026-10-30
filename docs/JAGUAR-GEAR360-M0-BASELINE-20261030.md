@@ -80,3 +80,9 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Wired into `verb-explorer.html` before existing driver (`b5ba329`); responsive study layout in `css/verb-explorer.css` (`4598b85`).
 - Static regression `scripts/jaguar-gear360-m18-pedagogical-bridge.cjs` (`f26d0cc`), CI workflow inclusion (`d2bbad7`). CI completion and browser behavior not yet verified; no production promotion.
 - This initial slice is READ-ONLY teaching. Dependency Focus/Head Probe interaction, canonical WHY evaluation, PATITA and Learning Trail integration need follow-up gates. It is not the complete 48-script Explorer migration.
+
+## M1.9 executable presentation regression
+- Added `scripts/jaguar-gear360-m19-runtime-render.cjs` at `b56ee76` to execute WHY pedagogical bridge in an isolated Node VM with simulated DOM and corpus fetch, covering S1–S4 × EN/ES/PT, with no learner/NICK or evaluator; verifies QW switch to WHAT hides WHY. This is not a real-browser visual regression.
+- Wired into CI at `d75e6ed`. CI completion/green not independently verified at this checkpoint; no release approval implied.
+- Current integration remains on `jaguar/gear360-main-integration-20261030`; MAIN/D1/Worker unchanged.
+- Next: inspect CI results, repair actual failures, test delayed fetch and back-navigation, then confirm browser preview before promoting to MAIN.
