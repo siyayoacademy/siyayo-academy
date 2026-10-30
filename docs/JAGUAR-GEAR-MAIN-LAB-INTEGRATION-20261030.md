@@ -57,3 +57,9 @@ This document is the single checkpoint for the main-laboratory transition and li
 - CI `.github/workflows/jaguar-gear360-full-candidate.yml` (commit `42fff32`) runs integrity and selected existing WHY tests.
 - Stop rule: never replace the complete candidate with the 7-script `jaguar/gear360-main-integration-20261030` slice. That branch remains a controlled recovery record, not the full product.
 - Next gate: obtain actual CI outcomes, reconcile the single main-only divergence, run true browser EN/ES/PT/no-NICK/NICK regression and then prepare a rollback-ready explicit main promotion. No main or D1 change here.
+
+## M1.16 candidate asset closure gate (2026-10-30)
+- Compared candidate against `main`: 1,832 commits ahead, one behind at comparison; no blanket merge allowed.
+- Enhanced full-candidate integrity script to verify referenced static runtime files, duplicate script avoidance and required specialized GEAR mount identifiers. Commits `615801e`, `6a83bf8`.
+- Corrected false assumption that learner identity/trail surface modules require individual script tags; existing driver references are checked instead. Corrected CSS regex.
+- Actual CI conclusion and browser homologation unverified; **do not promote**. Next must be real CI logs + no-NICK/with-NICK browser regression, followed by reconciled single-main-only commit and rollback plan.
