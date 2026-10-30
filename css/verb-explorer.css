@@ -1257,3 +1257,10 @@ body{
 
 /* 90C.5: factual narrative tense label; never a Pass Contract signal */
 #livingLines .living-line-narrative-scope{display:block;text-align:center;white-space:normal;color:#f2d88a;font:600 .72rem/1.4 var(--font-body);margin:3px 8px 0;letter-spacing:.03em}
+
+/* JAGUAR M1.14 — preserve readable WHY exploratory questions on narrow layouts.
+   Grid children must occupy full width; never let a button shrink to min-content. */
+#whyAssessmentPanel .why-contextual-reason-probe{width:100%;min-width:0;justify-items:stretch}
+#whyAssessmentPanel .why-probe-question-card{box-sizing:border-box;width:100%;min-width:0;max-width:100%;grid-template-columns:20px minmax(0,1fr);white-space:normal;word-break:normal;overflow-wrap:break-word}
+#whyAssessmentPanel .why-probe-question-text{display:block;width:100%;min-width:0;white-space:normal;word-break:normal;overflow-wrap:break-word;text-align:center}
+#whyAssessmentPanel .why-probe-options{width:100%;min-width:0}
