@@ -27,3 +27,10 @@ Authoritative plan and gates: `docs/JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md
 - Committed `scripts/jaguar-gear360-m1-dependency-census.cjs` (commit `e6eed2c`) to scan actual referenced HTML scripts/styles and controller JSON direct literals, report source/target gaps and stop for broken source references.
 - Committed `.github/workflows/jaguar-gear360-m1-dependency-census.yml` (commit `9c3f5d0`) to check out main and WHY as independent read-only trees and run the scanner.
 - CI outcome not yet confirmed at documentation time. No runtime assets transported to main; next step is inspect CI, reconcile failures and explicitly scope the minimal portable feature.
+
+## M1.2 selective recovery (2026-10-30)
+- Source WHY canonical contract `data/learning/skills/why.json`, blob `cf16e1e879bd236e5199240e350c0c623a2bc3ed`, copied unchanged to **integration branch only**, commit `fbf0001`.
+- This is source recovery, not runtime enablement: no WHY evaluator script, HTML wiring or production deployment was performed.
+- Main still untouched; contract is not automatically assessable without its authorized evaluator and run-time scope.
+- The dependency census now explicitly checks all 12 S1–S4 × EN/ES/PT WHY dependency paths, including dynamically assembled paths.
+- Follow-up: close module import graph and demonstrate a no-NICK pedagogical render with controlled regression; only then transport the coherent runtime set.
