@@ -103,3 +103,8 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Added `scripts/jaguar-gear360-m112-browser-smoke.cjs` (`d160487`), using headless Chromium and local HTTP server, covering WHY S1–S4 × EN/ES/PT without NICK, visible token surfaces, single host, and JS errors.
 - Wired test into workflow with Playwright Chromium setup (`7173357`); results remain to be checked.
 - MAIN, D1, Worker and production unchanged. Next gate: confirm browser run and fix any real failure prior to promotion.
+
+## M1.13 toroidal continuity browser assertion
+- Browser smoke now asserts active WHY persists automatically on each S1→S2→S3→S4 transition before a redundant click; commit `14cf503`.
+- The available GitHub commit-run lookup returns no pull-request-linked runs; this is not evidence of workflow success or failure. A trustworthy run conclusion is still required before promotion.
+- Main remains unchanged. Next action: inspect Actions run output in GitHub, correct failing test or application, then homologate actual Cloudflare preview.
