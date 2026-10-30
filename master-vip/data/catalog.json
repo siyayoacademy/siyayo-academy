@@ -1,6 +1,6 @@
 {
   "id": "MVP:CATALOG",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "status": "EDITORIAL_PILOT",
   "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
   "chapters": [
@@ -1285,6 +1285,93 @@
             "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04014",
             "MVP:UNIT:TO-BE:OTHER-FORMS:FIGURE:I0113",
             "MVP:UNIT:TO-BE:OTHER-FORMS:VISUAL:P04016"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:INTRO",
+          "title": "Original · Making Questions · orientação",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:INTRO"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+          "title": "Original · Making Questions · exercícios 1–10",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:01",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:02",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:03",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:04",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:05",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:06",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:07",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:08",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:09",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:10"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+          "title": "Original · Making Questions · exercícios 11–20",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:11",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:12",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:13",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:14",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:15",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:16",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:17",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:18",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:19",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:20"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+          "title": "Original · Making Questions · exercícios 21–30",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:21",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:22",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:23",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:24",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:25",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:26",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:27",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:28",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:29",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:30"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+          "title": "Original · Making Questions · exercícios 31–40",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:31",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:32",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:33",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:34",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:35",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:36",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:37",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:38",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:39",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:40"
+          ]
+        },
+        {
+          "id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+          "title": "Original · Making Questions · exercícios 41–50",
+          "unit_ids": [
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:41",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:42",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:43",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:44",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:45",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:46",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:47",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:48",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:49",
+            "MVP:UNIT:TO-BE:MAKING-QUESTIONS:50"
           ]
         }
       ],
@@ -44649,6 +44736,1588 @@
         ],
         "media_dependencies": [],
         "reproduction_status": "PENDING_COMPOSITION"
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:INTRO",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:INTRO",
+      "type": "SOURCE_TEXT",
+      "title": "Verb To Be — Making Questions",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:HEADING",
+          "text": "VERB TO BE – MAKING QUESTIONS"
+        },
+        {
+          "source_id": "MVP17:HEADERS",
+          "text": "QW | AUX. | SUBJECT | VERB | THE REST"
+        }
+      ]
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:01",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 1 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 1; original text: Superman/a hero."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:1",
+          "text": "+  Superman/a hero."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:02",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 2 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 2; original text: Bill Clinton/a politician."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:2",
+          "text": "?  Nikola Tesla/an inventor."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:03",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 3 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 3; original text: Lula and Marta/politicians."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:3",
+          "text": "+  Jair and Bia/politicians."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:04",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 4 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 4; original text: Coke/a brand."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:4",
+          "text": "?  Coke/a brand."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:05",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 5 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 5; original text: Jack/a policeman."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:5",
+          "text": "-  Jack/a policeman."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:06",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 6 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 6; original text: Katherine/a nurse."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:6",
+          "text": "+  Katherine/a nurse."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:07",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 7 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 7; original text: David and Vincent/cousins."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:7",
+          "text": "-  David and Vincent/cousins."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:08",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 8 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 8; original text: Ice cream/very cold."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:8",
+          "text": "?  Ice cream/very cold."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:09",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 9 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 9; original text: Movies/entertainment."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:9",
+          "text": "+  Movies/entertainment."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:10",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-1",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 10 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 10; original text: Walter and Liza/married."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:10",
+          "text": "+  Walter and Liza/married."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:11",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 11 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 11; original text: Tomato/a vegetable."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:11",
+          "text": "?  Tomato/a vegetable."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:12",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 12 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 12; original text: Elephant/an animal."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:12",
+          "text": "+  Elephant/an animal."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:13",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 13 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 13; original text: Banana and Kaki/fruits."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:13",
+          "text": "?  Banana and Kaki/fruits."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:14",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 14 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 14; original text: Carol/at home/last night."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:14",
+          "text": "-  Carol/at home/last night."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:15",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 15 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 15; original text: I/there/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:15",
+          "text": "+  I/there/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:16",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 16 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 16; original text: I/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:16",
+          "text": "-  I/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:17",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 17 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 17; original text: Margaret/here/tomorrow."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:17",
+          "text": "?  Margaret/here/tomorrow."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:18",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 18 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 18; original text: My family/Brazilian."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:18",
+          "text": "+  My family/Brazilian."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:19",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 19 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 19; original text: Everybody/there/last week."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:19",
+          "text": "+  Everybody/there/last week."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:20",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-2",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 20 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 20; original text: Everybody/there/next week."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:20",
+          "text": "?  Everybody/there/next week."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:21",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 21 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 21; original text: Everybody/there/right now."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:21",
+          "text": "+  Everybody/there/right now."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:22",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 22 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 22; original text: Bears/mammals."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:22",
+          "text": "?  Bears/mammals."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:23",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 23 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 23; original text: Peter/a teacher/in the past."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:23",
+          "text": "-  Peter/a teacher/in the past."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:24",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 24 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 24; original text: She/29."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:24",
+          "text": "+  She/29."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:25",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 25 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 25; original text: She/born/in November."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:25",
+          "text": "-  She/born/in November."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:26",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 26 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 26; original text: They/born/in summer."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:26",
+          "text": "?  They/born/in summer."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:27",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 27 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 27; original text: Nobody/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:27",
+          "text": "+  Nobody/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:28",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 28 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 28; original text: Ant/an insect."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:28",
+          "text": "+  Ant/an insect."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:29",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 29 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 29; original text: Paul/in hospital/last week."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:29",
+          "text": "?  Paul/in hospital/last week."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:30",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-3",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 30 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 30; original text: Mary/at the party/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:30",
+          "text": "+  Mary/at the party/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:31",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 31 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 31; original text: All the teachers/there/tomorrow."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:31",
+          "text": "?  All the teachers/there/tomorrow."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:32",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 32 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 32; original text: I/born/in winter."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:32",
+          "text": "-  I/born/in winter."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:33",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 33 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 33; original text: It/hot/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:33",
+          "text": "+  It/hot/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:34",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 34 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 34; original text: It/cold/today."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:34",
+          "text": "-  It/cold/today."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:35",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 35 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 35; original text: It/at 9 o’clock/tomorrow."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:35",
+          "text": "?  It/at 9 o’clock/tomorrow."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:36",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 36 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 36; original text: Paul and Peter/my friends."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:36",
+          "text": "+  Paul and Peter/my friends."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:37",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 37 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 37; original text: We/born/in spring."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:37",
+          "text": "+  We/born/in spring."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:38",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 38 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 38; original text: Kate/married."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:38",
+          "text": "?  Kate/married."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:39",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 39 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 39; original text: Douglas/a doctor."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:39",
+          "text": "+  Douglas/a doctor."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:40",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-4",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 40 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 40; original text: I/in Paris/2 days ago."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:40",
+          "text": "?  I/in Paris/2 days ago."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:41",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 41 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 41; original text: They/there/right now."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:41",
+          "text": "-  They/there/right now."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:42",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 42 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 42; original text: We/there/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:42",
+          "text": "+  We/there/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:43",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 43 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 43; original text: The last concert/boring."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:43",
+          "text": "-  The last concert/boring."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:44",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 44 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 44; original text: The next one/better."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:44",
+          "text": "?  The next one/better."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:45",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 45 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 45; original text: I/sick/2 weeks ago."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:45",
+          "text": "+  I/sick/2 weeks ago."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:46",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 46 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 46; original text: They/here/2 minutes ago."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:46",
+          "text": "+  They/here/2 minutes ago."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:47",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 47 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 47; original text: They/here/in 2 minutes."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:47",
+          "text": "?  They/here/in 2 minutes."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:48",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 48 · +",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 48; original text: Nobody/there/yesterday."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:48",
+          "text": "+  Nobody/there/yesterday."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:49",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 49 · ?",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 49; original text: Nobody/here."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:49",
+          "text": "?  Nobody/here."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
+      }
+    },
+    {
+      "id": "MVP:UNIT:TO-BE:MAKING-QUESTIONS:50",
+      "chapter_id": "MVP:CH:TO-BE",
+      "section_id": "MVP:SEC:TO-BE:MAKING-QUESTIONS:GROUP-5",
+      "type": "SOURCE_EXERCISE",
+      "title": "Making Questions · 50 · -",
+      "revision": 1,
+      "source_layer": "ORIGINAL",
+      "review_status": "SOURCE_RECOVERED_EDITORIAL_REVIEW_PENDING",
+      "source_languages": [
+        "en"
+      ],
+      "provenance": {
+        "kind": "MASTER_ORIGINAL",
+        "source_sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+        "paragraph_ids": [],
+        "note": "MVP17 content recovered from original 50-row exercise table. Canonical paragraph P04022–P04431 and table mapping still require per-cell provenance review; original prompt separately stored. Exercise 50; original text: Nobody/in the aiport/tomorrow."
+      },
+      "related_unit_ids": [],
+      "term_annotations": [],
+      "asset_occurrence_ids": [],
+      "source_lines": [
+        {
+          "source_id": "MVP17:EX:50",
+          "text": "-  Nobody/in the aiport/tomorrow."
+        }
+      ],
+      "instructions": {
+        "pt": "Construa a oração indicada (+, − ou ?). Campos QW, AUX., SUBJECT, VERB e THE REST permanecem sem respostas fornecidas."
       }
     }
   ],
