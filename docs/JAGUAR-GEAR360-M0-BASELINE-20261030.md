@@ -34,3 +34,15 @@ Authoritative plan and gates: `docs/JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md
 - Main still untouched; contract is not automatically assessable without its authorized evaluator and run-time scope.
 - The dependency census now explicitly checks all 12 S1–S4 × EN/ES/PT WHY dependency paths, including dynamically assembled paths.
 - Follow-up: close module import graph and demonstrate a no-NICK pedagogical render with controlled regression; only then transport the coherent runtime set.
+
+## M1.3 canonical component recovery (2026-10-30)
+The following WHY source files were copied unchanged from `jaguar/why-explorer-live-wire-20261029` into the main-derived integration branch:
+- `js/adaptive-why-contextual-reason-probe-specification-source.js` — `7551979`
+- `js/adaptive-why-contextual-reason-probe-result.js` — `8fb7f53`
+- `js/adaptive-why-contextual-reason-probe-evidence-bridge.js` — `e429abc`
+- `js/adaptive-why-contextual-reason-probe-attempt-boundary.js` — `21929ac`
+- `js/verb-explorer-why-assessment-live.js` — `fc3c89b`
+
+**Import is preservation only.** HTML script order, `js/verb-explorer.js`, current CSS, learner/coordinator/cycle/Green Pass dependencies and actual runtime compatibility are still unresolved. No assessment can be claimed operational until these dependencies and cross-Experience UI regression pass. None of the imported scripts is loaded by main's current HTML.
+
+Next M1.4: reconcile dependency provider exports and script ordering, then test no-NICK S3/S4 pedagogical rendering, identity separation, and contractual evidence without overriding the default branch.
