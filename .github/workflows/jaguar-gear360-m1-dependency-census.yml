@@ -28,3 +28,5 @@ jobs:
         run: node integration/scripts/jaguar-gear360-m1-dependency-census.cjs baseline why-source
       - name: Verify recovered WHY modules integrity and source script order
         run: node integration/scripts/jaguar-gear360-m14-why-integrity.cjs why-source integration
+      - name: Audit GEAR DOM CSS and source-loader integration gap
+        run: node integration/scripts/jaguar-gear360-m15-dom-css-gate.cjs baseline why-source integration
