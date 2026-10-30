@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · GEAR 360 MAIN-LAB · 2026-10-30
+
+**Plano operacional homologável:** [JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md](JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md). Decisão: `main` será laboratório integrado, por promoção seletiva após testes e reversão preparada; nunca merge geral de branches divergentes. ELOs M0–M6: baseline, integração GEAR/WHY, alternâncias TORO, separação PATITA/avaliador, regressão visual EN→ES→PT, publicação controlada, expansão por famílias. Preservar toda a autoridade anterior e não tocar D1/Worker/PR #3 incidentalmente. **Registro inicial:** branch WHY; `main` ainda intacta; gates pendentes.
+
 ## SEEK × TORO — registro setorial e completude dos discos (2026-10-13)
 
 **Herdar em novos ELOs:** [Mapa de lacunas, variações e espaços de interface](siyayo-seek-toro-sector-register.md) e [Inventário JSON de planejamento](siyayo-seek-toro-sector-register.v0.2.json). Auditorias históricas são snapshots; comparar com HEAD antes de assumir pendência. SEEK revisa Experience × QW × EN/ES/PT × The Ten Kinds × TENSE/MODE × modais relevantes × Perspectives, áudio, módulos, escopo/contratos, Evidence, efeitos TORO e espaço pedagógico. Não implementa nova autoridade ou progresso; nenhum painel novo sem seu elo e autorização.
