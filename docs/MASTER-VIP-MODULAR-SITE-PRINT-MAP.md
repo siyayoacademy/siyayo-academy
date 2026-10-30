@@ -196,3 +196,7 @@ P03524–P03915: 173 unidades, 392 parágrafos classificados, três tabelas, oit
 
 ### JAGUAR-MVP-16-OTHER-FORMS · 2026-10-29
 P03916–P04021 incorporado: 30 unidades, T0024, seis rótulos raster e 12 composições XML. Total 746 unidades / 2453 alvos de leitura; 45.307 caracteres (14,86%). HOW TO DO / RECORD / SHOW / CHECK / SPEAK em MASTER-VIP-MVP16-OTHER-FORMS.md. Refinamento 9a65954 homologado pelo professor: manter mapa expansível, detalhes técnicos recolhidos e âncora slideSurface. Próximo checkpoint MVP17 · P04022 Making Questions. Revisão integral, recomposição e impressão física pendentes; nenhuma integração ao Explorer ou alteração da watchlist central.
+
+
+### JAGUAR · 2026-10-30 · Dependency Bridge — referência futura
+Auditoria cruzada do quadro **QW | AUX. | SUBJECT | VERB | THE REST** com Thinking Mind/QWs, Dependency Focus (relações head/dependent, linhas SVG) e Head Probe registrada em [MASTER-VIP-DEPENDENCY-BRIDGE-FUTURE-AUDIT-20261030.md](MASTER-VIP-DEPENDENCY-BRIDGE-FUTURE-AUDIT-20261030.md). **Somente especificação de reutilização futura**: HOW TO DO/RECORD/SHOW/CHECK/SPEAK/INTEGRATE, fronteiras de autoridade, responsividade e medição SVG diferida. Não acoplar o Explorer nem atrasar o próximo ELO MVP18 · P04432.
