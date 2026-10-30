@@ -33,3 +33,6 @@ jobs:
       - name: Verify no-NICK WHY pedagogical bridge M1.8
         working-directory: integration
         run: node scripts/jaguar-gear360-m18-pedagogical-bridge.cjs
+      - name: Execute no-NICK WHY render over twelve combinations
+        working-directory: integration
+        run: node scripts/jaguar-gear360-m19-runtime-render.cjs
