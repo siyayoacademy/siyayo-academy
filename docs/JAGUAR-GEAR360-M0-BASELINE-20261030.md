@@ -46,3 +46,9 @@ The following WHY source files were copied unchanged from `jaguar/why-explorer-l
 **Import is preservation only.** HTML script order, `js/verb-explorer.js`, current CSS, learner/coordinator/cycle/Green Pass dependencies and actual runtime compatibility are still unresolved. No assessment can be claimed operational until these dependencies and cross-Experience UI regression pass. None of the imported scripts is loaded by main's current HTML.
 
 Next M1.4: reconcile dependency provider exports and script ordering, then test no-NICK S3/S4 pedagogical rendering, identity separation, and contractual evidence without overriding the default branch.
+
+## M1.4 verified loader ordering and reusable integrity gate
+- WHY source HTML sequence: specification source → result → evidence bridge → attempt boundary → WHY contextual module → main Explorer driver.
+- Added `scripts/jaguar-gear360-m14-why-integrity.cjs` (`cad52f4`), comparing recovered module bytes to the WHY source and asserting loader order and 3-dimension canonical contract.
+- Added the integrity check to CI workflow (`2d0ff96`). The check reports `BLOCKED_UNWIRED` while source files are present but not loaded by the integration HTML. This is intentional, not a working browser pass.
+- Next: close complete GEAR bootstrap/DOM/CSS dependencies before activation. No default-branch changes, no D1 or worker changes.
