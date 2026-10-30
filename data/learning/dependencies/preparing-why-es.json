@@ -1,0 +1,137 @@
+{
+  "version": "90C.7H.1",
+  "id": "preparing-why-es",
+  "language": "es",
+  "sentence": "¿Por qué estamos preparando esta cena juntos?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Por qué",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO INTERROGATIVO"
+        },
+        "role": {
+          "es": "Reason question"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "estamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "preparing",
+      "index": 3,
+      "form": "preparando",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Main action WHY asks a reason for"
+        }
+      }
+    },
+    {
+      "id": "this",
+      "index": 4,
+      "form": "esta",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 5,
+      "form": "cena",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    },
+    {
+      "id": "together",
+      "index": 6,
+      "form": "juntos",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": ""
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "preparing",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "preparing",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "preparing",
+      "dependent": "dinner",
+      "relation": "obj"
+    },
+    {
+      "head": "dinner",
+      "dependent": "this",
+      "relation": "det"
+    },
+    {
+      "head": "preparing",
+      "dependent": "together",
+      "relation": "advmod"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "assessmentAuthority": false,
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO WHY S2 exploratory question",
+    "experienceId": "preparing-dinner",
+    "questionWord": "why",
+    "field": "thinkingMind.question",
+    "notes": "Contextual syntax only. No new WHY assessment origin."
+  }
+}
