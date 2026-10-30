@@ -1,0 +1,688 @@
+{
+  "schema_version": "1.0.0",
+  "id": "MVP17-MAKING-QUESTIONS-RECOVERED",
+  "status": "RECOVERED_STAGING_NOT_SITE_INTEGRATED",
+  "source": {
+    "name": "STRUCTURE- KIND OF WORDS.docx",
+    "library_file_id": "libfile_3714a526f5b48191898a30fac160fe1e",
+    "requested_canonical_edition": "STRUCTURE-KIND OF WORDS.docx (2026-10-25)",
+    "canonical_comparison": "PENDING",
+    "source_bounds": [
+      "P04022",
+      "P04431"
+    ],
+    "next_checkpoint": "P04432"
+  },
+  "editorial_overrides_file": "making-questions-mvp17-editorial-overrides.json",
+  "headings": [
+    "QW",
+    "AUX.",
+    "SUBJECT",
+    "VERB",
+    "THE REST"
+  ],
+  "group_size": 10,
+  "counts": {
+    "+": 22,
+    "-": 11,
+    "?": 17
+  },
+  "rows": [
+    {
+      "item": 1,
+      "modality": "+",
+      "source_prompt": "Superman/a hero.",
+      "display_prompt": "Superman/a hero.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 2,
+      "modality": "?",
+      "source_prompt": "Bill Clinton/a politician.",
+      "display_prompt": "Nikola Tesla/an inventor.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 3,
+      "modality": "+",
+      "source_prompt": "Lula and Marta/politicians.",
+      "display_prompt": "Jair and Bia/politicians.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 4,
+      "modality": "?",
+      "source_prompt": "Coke/a brand.",
+      "display_prompt": "Coke/a brand.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 5,
+      "modality": "-",
+      "source_prompt": "Jack/a policeman.",
+      "display_prompt": "Jack/a policeman.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 6,
+      "modality": "+",
+      "source_prompt": "Katherine/a nurse.",
+      "display_prompt": "Katherine/a nurse.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 7,
+      "modality": "-",
+      "source_prompt": "David and Vincent/cousins.",
+      "display_prompt": "David and Vincent/cousins.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 8,
+      "modality": "?",
+      "source_prompt": "Ice cream/very cold.",
+      "display_prompt": "Ice cream/very cold.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 9,
+      "modality": "+",
+      "source_prompt": "Movies/entertainment.",
+      "display_prompt": "Movies/entertainment.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 10,
+      "modality": "+",
+      "source_prompt": "Walter and Liza/married.",
+      "display_prompt": "Walter and Liza/married.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 11,
+      "modality": "?",
+      "source_prompt": "Tomato/a vegetable.",
+      "display_prompt": "Tomato/a vegetable.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 12,
+      "modality": "+",
+      "source_prompt": "Elephant/an animal.",
+      "display_prompt": "Elephant/an animal.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 13,
+      "modality": "?",
+      "source_prompt": "Banana and Kaki/fruits.",
+      "display_prompt": "Banana and Kaki/fruits.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 14,
+      "modality": "-",
+      "source_prompt": "Carol/at home/last night.",
+      "display_prompt": "Carol/at home/last night.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 15,
+      "modality": "+",
+      "source_prompt": "I/there/yesterday.",
+      "display_prompt": "I/there/yesterday.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 16,
+      "modality": "-",
+      "source_prompt": "I/here.",
+      "display_prompt": "I/here.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 17,
+      "modality": "?",
+      "source_prompt": "Margaret/here/tomorrow.",
+      "display_prompt": "Margaret/here/tomorrow.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 18,
+      "modality": "+",
+      "source_prompt": "My family/Brazilian.",
+      "display_prompt": "My family/Brazilian.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 19,
+      "modality": "+",
+      "source_prompt": "Everybody/there/last week.",
+      "display_prompt": "Everybody/there/last week.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 20,
+      "modality": "?",
+      "source_prompt": "Everybody/there/next week.",
+      "display_prompt": "Everybody/there/next week.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 21,
+      "modality": "+",
+      "source_prompt": "Everybody/there/right now.",
+      "display_prompt": "Everybody/there/right now.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 22,
+      "modality": "?",
+      "source_prompt": "Bears/mammals.",
+      "display_prompt": "Bears/mammals.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 23,
+      "modality": "-",
+      "source_prompt": "Peter/a teacher/in the past.",
+      "display_prompt": "Peter/a teacher/in the past.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 24,
+      "modality": "+",
+      "source_prompt": "She/29.",
+      "display_prompt": "She/29.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 25,
+      "modality": "-",
+      "source_prompt": "She/born/in November.",
+      "display_prompt": "She/born/in November.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 26,
+      "modality": "?",
+      "source_prompt": "They/born/in summer.",
+      "display_prompt": "They/born/in summer.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 27,
+      "modality": "+",
+      "source_prompt": "Nobody/here.",
+      "display_prompt": "Nobody/here.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 28,
+      "modality": "+",
+      "source_prompt": "Ant/an insect.",
+      "display_prompt": "Ant/an insect.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 29,
+      "modality": "?",
+      "source_prompt": "Paul/in hospital/last week.",
+      "display_prompt": "Paul/in hospital/last week.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 30,
+      "modality": "+",
+      "source_prompt": "Mary/at the party/yesterday.",
+      "display_prompt": "Mary/at the party/yesterday.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 31,
+      "modality": "?",
+      "source_prompt": "All the teachers/there/tomorrow.",
+      "display_prompt": "All the teachers/there/tomorrow.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 32,
+      "modality": "-",
+      "source_prompt": "I/born/in winter.",
+      "display_prompt": "I/born/in winter.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 33,
+      "modality": "+",
+      "source_prompt": "It/hot/yesterday.",
+      "display_prompt": "It/hot/yesterday.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 34,
+      "modality": "-",
+      "source_prompt": "It/cold/today.",
+      "display_prompt": "It/cold/today.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 35,
+      "modality": "?",
+      "source_prompt": "It/at 9 o’clock/tomorrow.",
+      "display_prompt": "It/at 9 o’clock/tomorrow.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 36,
+      "modality": "+",
+      "source_prompt": "Paul and Peter/my friends.",
+      "display_prompt": "Paul and Peter/my friends.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 37,
+      "modality": "+",
+      "source_prompt": "We/born/in spring.",
+      "display_prompt": "We/born/in spring.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 38,
+      "modality": "?",
+      "source_prompt": "Kate/married.",
+      "display_prompt": "Kate/married.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 39,
+      "modality": "+",
+      "source_prompt": "Douglas/a doctor.",
+      "display_prompt": "Douglas/a doctor.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 40,
+      "modality": "?",
+      "source_prompt": "I/in Paris/2 days ago.",
+      "display_prompt": "I/in Paris/2 days ago.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 41,
+      "modality": "-",
+      "source_prompt": "They/there/right now.",
+      "display_prompt": "They/there/right now.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 42,
+      "modality": "+",
+      "source_prompt": "We/there/yesterday.",
+      "display_prompt": "We/there/yesterday.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 43,
+      "modality": "-",
+      "source_prompt": "The last concert/boring.",
+      "display_prompt": "The last concert/boring.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 44,
+      "modality": "?",
+      "source_prompt": "The next one/better.",
+      "display_prompt": "The next one/better.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 45,
+      "modality": "+",
+      "source_prompt": "I/sick/2 weeks ago.",
+      "display_prompt": "I/sick/2 weeks ago.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 46,
+      "modality": "+",
+      "source_prompt": "They/here/2 minutes ago.",
+      "display_prompt": "They/here/2 minutes ago.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 47,
+      "modality": "?",
+      "source_prompt": "They/here/in 2 minutes.",
+      "display_prompt": "They/here/in 2 minutes.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 48,
+      "modality": "+",
+      "source_prompt": "Nobody/there/yesterday.",
+      "display_prompt": "Nobody/there/yesterday.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 49,
+      "modality": "?",
+      "source_prompt": "Nobody/here.",
+      "display_prompt": "Nobody/here.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    },
+    {
+      "item": 50,
+      "modality": "-",
+      "source_prompt": "Nobody/in the aiport/tomorrow.",
+      "display_prompt": "Nobody/in the aiport/tomorrow.",
+      "fields": {
+        "qw": "",
+        "aux": "",
+        "subject": "",
+        "verb": "",
+        "the_rest": ""
+      }
+    }
+  ],
+  "notes": [
+    "Original spelling and slashes preserved in source_prompt.",
+    "Two approved editorial replacements applied only in display_prompt.",
+    "No answer key is generated.",
+    "Source XML paragraph IDs need canonical validation before catalog publication."
+  ]
+}
