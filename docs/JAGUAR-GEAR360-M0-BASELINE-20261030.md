@@ -92,3 +92,8 @@ Next M1.4: reconcile dependency provider exports and script ordering, then test 
 - Added out-of-order fetch regression: navigate S1 EN WHY → S2 PT WHY, resolve the newer response before the older one; assert only S2 content renders. Added WHY → WHAT while pending request, assert no stale content and no duplicate study host.
 - Commit `f5f4d53`. Workflow references the test via the M1.9 step. This is **test code**, not a newly validated browser release.
 - CI status could not be confirmed through the available lookup; do not report GREEN. Main, D1 and workers unchanged.
+
+## M1.11 CI triage / structural gate correction
+- Workflow status could not be independently confirmed through available pull-request-limited run lookup. Do NOT mark CI GREEN.
+- Corrected M1.5 false-blocking logic: dynamically constructed DOM elements are diagnostics, not guaranteed HTML errors; runtime activation is a signal to run behavioral tests, not a structural failure. Commit `b2e574e`.
+- The integration branch still requires CI and browser validation. No production merge, D1 or Worker action.
