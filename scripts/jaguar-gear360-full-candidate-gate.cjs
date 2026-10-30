@@ -10,3 +10,18 @@ for(const exp of ['shopping','preparing','having','after-dinner'])for(const lang
 const why=fs.readFileSync('js/verb-explorer-why-assessment-live.js','utf8');assert.ok(why.includes('function mountExploration('),'STOP: no-NICK study fallback missing');
 const css=fs.readFileSync('css/verb-explorer.css','utf8');assert.ok(css.includes('#whyAssessmentPanel .why-contextual-reason-probe{width:100%'),'STOP: PT wrapping fix missing');
 console.log('PASS full Explorer candidate integrity: '+scripts.length+' scripts; S1-S4 x EN/ES/PT; no-NICK fallback; PT wrapping fix');
+
+// A full candidate cannot silently lose one of its declared runtime assets.
+const styles=[...html.matchAll(/<link[^>]*href="([^"]+\\.css)"/g)].map(m=>m[1]);
+for(const file of [...scripts,...styles]){
+ assert.ok(fs.existsSync(file),'STOP: HTML runtime asset missing '+file);
+}
+assert.equal(new Set(scripts).size,scripts.length,'STOP: duplicate runtime script');
+for(const file of ['js/verb-explorer-learner-identity-surface.js','js/verb-explorer-learner-trail-surface.js']){
+ assert.ok(scripts.includes(file),'STOP: learner identity/trail surface disconnected '+file);
+}
+const mainDriver=fs.readFileSync('js/verb-explorer.js','utf8');
+for(const marker of ['SIYAYOVerbExplorerWhyAssessmentLive','SIYAYOVerbExplorerLearnerTrailSurface','SIYAYOVerbExplorerDependencyHeadProbeLive']){
+ assert.ok(mainDriver.includes(marker),'STOP: full GEAR driver missing specialized mount '+marker);
+}
+console.log('PASS full candidate asset closure: '+scripts.length+' scripts, '+styles.length+' styles');
