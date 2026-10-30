@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-why-es",
+  "language": "es",
+  "sentence": "¿Por qué disfrutas esta conversación?",
+  "tokens": [
+    {
+      "id": "why",
+      "index": 1,
+      "form": "Por qué",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO INTERROGATIVO"
+        },
+        "role": {
+          "es": "Razón por la que se pregunta"
+        }
+      }
+    },
+    {
+      "id": "enjoy",
+      "index": 2,
+      "form": "disfrutas",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción principal con la que se vincula POR QUÉ"
+        }
+      }
+    },
+    {
+      "id": "this",
+      "index": 3,
+      "form": "esta",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determina conversación"
+        }
+      }
+    },
+    {
+      "id": "conversation",
+      "index": 4,
+      "form": "conversación",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Elemento disfrutado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "enjoy",
+      "dependent": "why",
+      "relation": "advmod"
+    },
+    {
+      "head": "enjoy",
+      "dependent": "conversation",
+      "relation": "obj"
+    },
+    {
+      "head": "conversation",
+      "dependent": "this",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO canonical es WHY transfer question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "why",
+    "field": "thinkingMind.question",
+    "notes": "Referencia explícita del corpus. POR QUÉ se modela como modificador de razón de DISFRUTAS; sin afirmación de evaluación."
+  }
+}
