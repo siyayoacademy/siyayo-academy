@@ -69,3 +69,8 @@ This document is the single checkpoint for the main-laboratory transition and li
 - Added real Chromium smoke `scripts/jaguar-gear360-full-browser-smoke.cjs` at `296cb93` for S3/S4 × EN/ES/PT without NICK and readable question width.
 - Added browser smoke to full-candidate workflow at `630ce3a`. Current run result pending; do not label new browser gate GREEN until verified.
 - MAIN and D1 unchanged. Promotion still blocked on current CI + candidate browser verification + divergence reconciliation.
+
+## M1.18 — CI blocker diagnosed and fixed (2026-11-02)
+- GitHub Actions run #9 (41508517609) failed ONLY at browser installation, while the first four substantive integrity/WHY tests passed. Logs confirmed Playwright 1.56.1 cannot install Chromium dependencies on ubuntu26.04-x64 in this runner.
+- Removed duplicate install/browser-smoke steps; changed workflow to supported official container `mcr.microsoft.com/playwright:v1.56.1-noble` and one browser-run sequence. Commit `03c73cd`.
+- New run #10 (41513666956) was observed in progress initializing container; no final PASS was yet established. Do not promote to main until browser test passes and full version is visually checked.
