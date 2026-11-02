@@ -1,0 +1,424 @@
+/* SIYAYO Environment Library v0.1
+   Reusable atmosphere layer. No pedagogical authority. */
+
+.siyayo-environment-host{
+  --env-sky-1:#102c55;
+  --env-sky-2:#06152d;
+  --env-sky-3:#020918;
+  --env-glow:rgba(215,179,90,.18);
+  --env-haze:rgba(95,125,180,.12);
+  position:relative;
+  isolation:isolate;
+  background:
+    radial-gradient(circle at 50% 18%,var(--env-sky-1) 0,var(--env-sky-2) 38%,var(--env-sky-3) 78%);
+  transition:background 800ms cubic-bezier(.25,.8,.25,1);
+}
+
+.siyayo-environment-host::before,
+.siyayo-environment-host::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.9;
+  transition:opacity 800ms cubic-bezier(.25,.8,.25,1),background 800ms cubic-bezier(.25,.8,.25,1);
+}
+
+.siyayo-environment-host::before{
+  background:
+    radial-gradient(circle at 24% 18%,rgba(255,255,255,.52) 0 1px,transparent 1.6px),
+    radial-gradient(circle at 76% 30%,rgba(255,255,255,.40) 0 1px,transparent 1.5px),
+    radial-gradient(circle at 46% 9%,rgba(242,216,138,.34) 0 1px,transparent 1.8px),
+    radial-gradient(ellipse at 50% 72%,var(--env-haze),transparent 56%);
+  background-size:120px 120px,160px 160px,210px 210px,100% 100%;
+}
+
+.siyayo-environment-host::after{
+  background:
+    radial-gradient(circle at 50% 42%,var(--env-glow),transparent 34%),
+    linear-gradient(180deg,transparent 58%,rgba(0,0,0,.20));
+}
+
+.siyayo-environment-host > .stage-viewport{position:relative;z-index:1}
+
+.siyayo-environment-host[data-environment="forest-day"]{
+  --env-sky-1:#cce4df;
+  --env-sky-2:#8fba9a;
+  --env-sky-3:#315f49;
+  --env-glow:rgba(255,222,139,.28);
+  --env-haze:rgba(213,239,200,.24);
+}
+.siyayo-environment-host[data-environment="forest-day"]::before{
+  background:
+    radial-gradient(ellipse at 15% 22%,rgba(35,91,58,.48),transparent 28%),
+    radial-gradient(ellipse at 86% 18%,rgba(29,77,49,.42),transparent 30%),
+    radial-gradient(circle at 50% 16%,rgba(255,239,177,.58),transparent 18%),
+    linear-gradient(180deg,rgba(210,236,220,.12),rgba(26,72,48,.20));
+}
+
+.siyayo-environment-host[data-environment="forest-night"]{
+  --env-sky-1:#16334a;
+  --env-sky-2:#0b2530;
+  --env-sky-3:#031318;
+  --env-glow:rgba(184,214,255,.16);
+  --env-haze:rgba(102,154,143,.16);
+}
+.siyayo-environment-host[data-environment="forest-night"]::before{
+  background:
+    radial-gradient(circle at 70% 12%,rgba(214,228,255,.52),transparent 10%),
+    radial-gradient(ellipse at 10% 25%,rgba(18,73,53,.62),transparent 32%),
+    radial-gradient(ellipse at 92% 30%,rgba(16,65,48,.58),transparent 34%),
+    radial-gradient(ellipse at 50% 78%,rgba(92,139,132,.15),transparent 50%);
+}
+
+.siyayo-environment-host[data-environment="river-dawn"]{
+  --env-sky-1:#cbdfea;
+  --env-sky-2:#8caac6;
+  --env-sky-3:#3c6078;
+  --env-glow:rgba(255,190,132,.32);
+  --env-haze:rgba(237,223,214,.22);
+}
+.siyayo-environment-host[data-environment="river-dawn"]::before{
+  background:
+    radial-gradient(circle at 50% 28%,rgba(255,214,153,.52),transparent 15%),
+    linear-gradient(180deg,transparent 54%,rgba(178,207,217,.20) 55%,rgba(32,79,99,.24) 100%),
+    repeating-linear-gradient(0deg,transparent 0 18px,rgba(255,255,255,.035) 18px 19px);
+}
+
+.siyayo-environment-host[data-environment="nice-party-evening"]{
+  --env-sky-1:#25345e;
+  --env-sky-2:#152341;
+  --env-sky-3:#081224;
+  --env-glow:rgba(255,193,92,.30);
+  --env-haze:rgba(176,89,102,.14);
+}
+.siyayo-environment-host[data-environment="nice-party-evening"]::before{
+  background:
+    radial-gradient(circle at 16% 18%,rgba(255,213,132,.42) 0 4px,transparent 7px),
+    radial-gradient(circle at 34% 12%,rgba(255,185,102,.34) 0 3px,transparent 6px),
+    radial-gradient(circle at 66% 16%,rgba(255,223,151,.40) 0 4px,transparent 7px),
+    radial-gradient(circle at 84% 11%,rgba(255,188,102,.30) 0 3px,transparent 6px),
+    linear-gradient(180deg,rgba(90,48,83,.10),rgba(8,18,36,.20));
+}
+
+.environment-dev-toolbar{
+  position:fixed;
+  left:14px;
+  bottom:14px;
+  z-index:1999;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+  max-width:min(760px,calc(100vw - 28px));
+  padding:6px;
+  border:1px solid rgba(242,216,138,.30);
+  border-radius:18px;
+  background:rgba(2,9,24,.88);
+  backdrop-filter:blur(10px);
+}
+.environment-dev-toolbar .environment-label{
+  padding:0 6px;
+  color:#f2d88a;
+  font-size:.68rem;
+  letter-spacing:.09em;
+}
+.environment-button{
+  min-height:32px;
+  padding:0 9px;
+  border:1px solid rgba(242,216,138,.20);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#fff;
+  font:inherit;
+  font-size:.68rem;
+  cursor:pointer;
+}
+.environment-button.is-active{
+  background:#d7b35a;
+  border-color:#f2d88a;
+  color:#171006;
+  font-weight:700;
+}
+@media (hover:none) and (pointer:coarse){
+  .environment-dev-toolbar{display:none!important}
+}
+@media (prefers-reduced-motion:reduce){
+  .siyayo-environment-host,
+  .siyayo-environment-host::before,
+  .siyayo-environment-host::after{transition:none!important}
+  .siyayo-environment-host[data-weather="mist"]::after,
+  .siyayo-environment-host[data-weather="rain"]::after{
+    animation:none!important;
+  }
+}
+
+
+/* SIYAYO Weather Overlay v0.1
+   Presentation only. Weather never produces pedagogical state or Evidence. */
+
+.siyayo-environment-host{
+  --weather-overlay:none;
+  --weather-overlay-opacity:0;
+}
+
+.siyayo-environment-host::after{
+  background:
+    var(--weather-overlay),
+    radial-gradient(circle at 50% 42%,var(--env-glow),transparent 34%),
+    linear-gradient(180deg,transparent 58%,rgba(0,0,0,.20));
+  opacity:calc(.9 + var(--weather-overlay-opacity));
+}
+
+.siyayo-environment-host[data-weather="clear"]{
+  --weather-overlay:none;
+  --weather-overlay-opacity:0;
+}
+
+.siyayo-environment-host[data-weather="cloudy"]{
+  --weather-overlay:
+    linear-gradient(180deg,rgba(210,220,230,.16),rgba(70,82,98,.18));
+  --weather-overlay-opacity:.02;
+}
+
+.siyayo-environment-host[data-weather="mist"]{
+  --weather-overlay:
+    radial-gradient(ellipse at 18% 28%,rgba(238,244,245,.18) 0 12%,transparent 38%),
+    radial-gradient(ellipse at 72% 42%,rgba(226,236,239,.14) 0 10%,transparent 36%),
+    radial-gradient(ellipse at 44% 72%,rgba(240,244,242,.12) 0 14%,transparent 42%),
+    linear-gradient(180deg,rgba(222,232,235,.05),rgba(230,238,239,.11) 48%,rgba(205,220,223,.04));
+  --weather-overlay-opacity:.03;
+}
+
+.siyayo-environment-host[data-weather="mist"]::after{
+  background-size:135% 82%,145% 96%,130% 90%,100% 100%;
+  background-position:-8% 8%,106% 28%,35% 88%,0 0;
+  animation:siyayo-mist-drift 18s ease-in-out infinite alternate;
+}
+
+.siyayo-environment-host[data-weather="rain"]{
+  --weather-overlay:
+    repeating-linear-gradient(
+      102deg,
+      transparent 0 18px,
+      rgba(220,235,255,.13) 18px 20px,
+      transparent 20px 42px
+    ),
+    repeating-linear-gradient(
+      102deg,
+      transparent 0 31px,
+      rgba(190,215,245,.07) 31px 32px,
+      transparent 32px 63px
+    ),
+    linear-gradient(180deg,rgba(74,92,116,.12),rgba(10,18,30,.12));
+  --weather-overlay-opacity:.05;
+}
+
+.siyayo-environment-host[data-weather="rain"]::after{
+  background-size:100% 220px,100% 340px,100% 100%;
+  background-position:0 -220px,18px -340px,0 0;
+  animation:siyayo-rain-fall 1.15s linear infinite;
+}
+
+@keyframes siyayo-mist-drift{
+  0%{
+    background-position:-8% 8%,106% 28%,35% 88%,0 0;
+  }
+  50%{
+    background-position:12% 16%,88% 34%,48% 78%,0 0;
+  }
+  100%{
+    background-position:24% 10%,74% 24%,58% 84%,0 0;
+  }
+}
+
+@keyframes siyayo-rain-fall{
+  from{
+    background-position:0 -220px,18px -340px,0 0;
+  }
+  to{
+    background-position:-54px 220px,-30px 340px,0 0;
+  }
+}
+
+.weather-dev-toolbar{
+  position:fixed;
+  right:14px;
+  bottom:14px;
+  z-index:1999;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+  max-width:min(560px,calc(100vw - 28px));
+  padding:6px;
+  border:1px solid rgba(242,216,138,.30);
+  border-radius:18px;
+  background:rgba(2,9,24,.88);
+  backdrop-filter:blur(10px);
+}
+.weather-dev-toolbar .weather-label{
+  padding:0 6px;
+  color:#f2d88a;
+  font-size:.68rem;
+  letter-spacing:.09em;
+}
+.weather-button{
+  min-height:32px;
+  padding:0 9px;
+  border:1px solid rgba(242,216,138,.20);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#fff;
+  font:inherit;
+  font-size:.68rem;
+  cursor:pointer;
+}
+.weather-button.is-active{
+  background:#d7b35a;
+  border-color:#f2d88a;
+  color:#171006;
+  font-weight:700;
+}
+@media (hover:none) and (pointer:coarse){
+  .weather-dev-toolbar{display:none!important}
+}
+
+
+/* SIYAYO Piano Symbolic Background v0.1
+   Global atmosphere only. Decorative layers never receive pointer events. */
+
+.stage-symbolic-background{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+  isolation:isolate;
+}
+
+.stage-symbolic-background > *{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+.symbolic-spectrum{
+  background:
+    radial-gradient(circle at 50% 22%,rgba(53,101,174,.18),transparent 26%),
+    radial-gradient(circle at 50% 55%,rgba(18,50,110,.18),transparent 42%),
+    linear-gradient(180deg,rgba(5,20,50,.10),rgba(1,7,24,.24));
+  opacity:.94;
+}
+
+.symbolic-gold-aura{
+  inset:-12%;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(247,207,93,.20) 0 7%,rgba(215,179,90,.11) 16%,transparent 40%),
+    radial-gradient(circle at 50% 45%,transparent 0 32%,rgba(242,216,138,.11) 32.35% 32.85%,transparent 33.3%),
+    radial-gradient(circle at 50% 45%,transparent 0 44%,rgba(215,179,90,.085) 44.3% 44.8%,transparent 45.2%);
+  filter:blur(.2px);
+  opacity:.94;
+}
+
+.symbolic-seed-field{
+  background:
+    radial-gradient(circle at 18% 18%,rgba(255,222,122,.86) 0 1.6px,transparent 2.8px),
+    radial-gradient(circle at 31% 32%,rgba(255,229,143,.68) 0 1.4px,transparent 2.5px),
+    radial-gradient(circle at 47% 16%,rgba(255,209,87,.82) 0 1.7px,transparent 2.9px),
+    radial-gradient(circle at 62% 28%,rgba(255,226,134,.72) 0 1.5px,transparent 2.6px),
+    radial-gradient(circle at 79% 18%,rgba(255,211,91,.82) 0 1.7px,transparent 2.9px),
+    radial-gradient(circle at 88% 42%,rgba(255,228,145,.60) 0 1.4px,transparent 2.5px),
+    radial-gradient(circle at 72% 66%,rgba(255,210,90,.68) 0 1.6px,transparent 2.8px),
+    radial-gradient(circle at 52% 78%,rgba(255,231,153,.60) 0 1.4px,transparent 2.5px),
+    radial-gradient(circle at 28% 70%,rgba(255,211,88,.70) 0 1.6px,transparent 2.8px),
+    radial-gradient(circle at 12% 52%,rgba(255,229,144,.56) 0 1.4px,transparent 2.5px);
+  background-size:100% 100%;
+  opacity:.76;
+  animation:siyayo-symbolic-seed-breathe 9s ease-in-out infinite alternate;
+}
+
+.symbolic-seed-field::before,
+.symbolic-seed-field::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-repeat:no-repeat;
+}
+
+.symbolic-seed-field::before{
+  background:
+    radial-gradient(circle at 24% 40%,rgba(255,237,169,.80) 0 1.2px,rgba(255,213,91,.28) 2px,transparent 4px),
+    radial-gradient(circle at 38% 62%,rgba(255,221,112,.72) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 58% 38%,rgba(255,238,173,.76) 0 1.2px,rgba(255,213,91,.24) 2px,transparent 4px),
+    radial-gradient(circle at 67% 56%,rgba(255,218,103,.74) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 82% 72%,rgba(255,235,162,.70) 0 1.1px,rgba(255,213,91,.20) 2px,transparent 4px);
+  animation:siyayo-symbolic-seed-twinkle-a 5.6s ease-in-out infinite alternate;
+}
+
+.symbolic-seed-field::after{
+  background:
+    radial-gradient(circle at 16% 76%,rgba(255,229,143,.70) 0 1px,rgba(255,213,91,.20) 2px,transparent 4px),
+    radial-gradient(circle at 43% 28%,rgba(255,238,173,.76) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 55% 66%,rgba(255,221,112,.72) 0 1px,rgba(255,213,91,.20) 2px,transparent 4px),
+    radial-gradient(circle at 75% 34%,rgba(255,235,162,.74) 0 1.1px,rgba(255,213,91,.22) 2px,transparent 4px),
+    radial-gradient(circle at 91% 58%,rgba(255,226,128,.68) 0 1px,rgba(255,213,91,.18) 2px,transparent 4px);
+  animation:siyayo-symbolic-seed-twinkle-b 7.4s ease-in-out infinite alternate;
+}
+
+.symbolic-art-slot{
+  opacity:0;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  transition:opacity 600ms cubic-bezier(.25,.8,.25,1);
+}
+
+/* Asset-ready slots:
+   .symbolic-eagle-slot   -> isolated transparent eagle
+   .symbolic-frondosa-slot -> isolated transparent golden Frondosa
+   .symbolic-seed-slot    -> isolated transparent golden seed
+   Keep pointer-events:none; bind images only after each asset is homologated. */
+
+@keyframes siyayo-symbolic-seed-breathe{
+  from{opacity:.58;transform:scale(1)}
+  to{opacity:.82;transform:scale(1.012)}
+}
+
+@keyframes siyayo-symbolic-seed-twinkle-a{
+  from{opacity:.28;transform:translate3d(-3px,2px,0) scale(.99)}
+  to{opacity:.92;transform:translate3d(4px,-3px,0) scale(1.015)}
+}
+
+@keyframes siyayo-symbolic-seed-twinkle-b{
+  from{opacity:.70;transform:translate3d(3px,-2px,0) scale(1.01)}
+  to{opacity:.22;transform:translate3d(-4px,3px,0) scale(.995)}
+}
+
+.siyayo-environment-host > .stage-symbolic-background{
+  z-index:0;
+}
+
+/* Only the functional stage is lifted above the symbolic background.
+   Developer HUD/toolbars keep their own fixed positioning and z-index. */
+.siyayo-environment-host > .stage-viewport{
+  position:relative;
+  z-index:1;
+}
+
+.dev-preview-toolbar,
+.environment-dev-toolbar,
+.weather-dev-toolbar{
+  position:fixed;
+  z-index:1999;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .symbolic-seed-field,
+  .symbolic-seed-field::before,
+  .symbolic-seed-field::after{
+    animation:none!important;
+  }
+}

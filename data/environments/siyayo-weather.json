@@ -1,0 +1,51 @@
+{
+  "id": "siyayo-weather-library",
+  "version": "0.1.0",
+  "status": "shared-contract-no-external-provider",
+  "principle": "Weather modifies atmosphere only. It never creates pedagogical state, Evidence, GREEN, Session authority, or learner evaluation.",
+  "defaultWeather": "clear",
+  "weatherStates": [
+    {
+      "id": "clear",
+      "label": {"en":"Clear","es":"Despejado","pt":"Céu limpo"},
+      "visualIntent": "preserve the base Environment with maximum visibility",
+      "intensity": "none"
+    },
+    {
+      "id": "cloudy",
+      "label": {"en":"Cloudy","es":"Nublado","pt":"Nublado"},
+      "visualIntent": "soft cloud cover and reduced atmospheric contrast",
+      "intensity": "soft"
+    },
+    {
+      "id": "mist",
+      "label": {"en":"Mist","es":"Neblina","pt":"Neblina"},
+      "visualIntent": "low translucent haze without obscuring learner controls",
+      "intensity": "soft"
+    },
+    {
+      "id": "rain",
+      "label": {"en":"Rain","es":"Lluvia","pt":"Chuva"},
+      "visualIntent": "subtle rain texture over the Environment while content remains readable",
+      "intensity": "soft"
+    }
+  ],
+  "runtime": {
+    "event": "siyayo:set-weather",
+    "externalProvider": {
+      "status": "not-connected",
+      "adapterBoundary": "future-open"
+    },
+    "composition": "environment + daypart + weather",
+    "fallback": "clear"
+  },
+  "boundaries": {
+    "weatherDoesNotChangePedagogy": true,
+    "weatherDoesNotChangeLanguage": true,
+    "weatherDoesNotChangeAssessmentTarget": true,
+    "weatherDoesNotProduceEvidence": true,
+    "weatherDoesNotProduceGreen": true,
+    "weatherDoesNotNavigate": true,
+    "experienceMayBindWeatherExplicitly": true
+  }
+}

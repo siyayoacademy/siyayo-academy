@@ -1,0 +1,2799 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Quicksand:wght@500;600;700&display=swap');
+
+:root {
+  --blue-deep:#020918;
+  --blue:#061b3d;
+  --blue-light:#0b3b78;
+  --gold:#d7b35a;
+  --gold-light:#f2d88a;
+  --text:#ffffff;
+  --muted:rgba(255,255,255,.72);
+  --panel:rgba(3,14,34,.72);
+  --key-border:#1a2230;
+
+  /* SIYAYO GLOBAL TYPOGRAPHY — homologated */
+  --font-display:"Quicksand","Trebuchet MS",Arial,sans-serif;
+  --font-body:"Nunito Sans","Segoe UI",Arial,sans-serif;
+
+  /* SIYAYO SHARED MOTION DNA */
+  --motion-fast:180ms;
+  --motion-key:520ms;
+  --motion-resonance:660ms;
+  --motion-reveal:900ms;
+  --motion-ease:cubic-bezier(0.25,0.8,0.25,1);
+}
+
+* { box-sizing:border-box; }
+
+html,body {
+  margin:0;
+  min-height:100%;
+  background:#000;
+  color:var(--text);
+  font-family:var(--font-body);
+}
+
+body {
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:18px;
+  background:
+    radial-gradient(circle at 50% 5%, rgba(11,59,120,.52), transparent 36%),
+    linear-gradient(#020918,#000);
+}
+
+.piano-stage {
+  width:min(100%,980px);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.stage-header {
+  display:grid;
+  grid-template-columns:52px 1fr 52px;
+  align-items:center;
+  text-align:center;
+}
+
+.home-link {
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  text-decoration:none;
+  border:1px solid rgba(242,216,138,.55);
+  border-radius:50%;
+  background:rgba(2,9,24,.72);
+  font-size:1.35rem;
+}
+
+.eyebrow {
+  font-family:var(--font-display);
+  margin:0 0 4px;
+  color:var(--gold-light);
+  letter-spacing:.22em;
+  font-size:.72rem;
+  font-weight:700;
+}
+
+h1 {
+  font-family:var(--font-display);
+  margin:0;
+  font-size:clamp(1.4rem,4vw,2.3rem);
+}
+
+.subtitle {
+  font-family:var(--font-body);
+  margin:5px 0 0;
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.avatar-stage {
+  min-height:92px;
+  display:grid;
+  place-items:center;
+  border:1px dashed rgba(215,179,90,.38);
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 50% 100%, rgba(215,179,90,.12), transparent 52%),
+    rgba(2,9,24,.38);
+}
+
+.avatar-reserve {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:rgba(242,216,138,.72);
+  font-size:.82rem;
+  letter-spacing:.05em;
+}
+
+.avatar-note {
+  font-size:1.6rem;
+  color:var(--gold);
+}
+
+.mode-panel {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+}
+
+.mode-button {
+  font-family:var(--font-display);
+  min-height:44px;
+  padding:0 16px;
+  border-radius:999px;
+  border:1px solid rgba(242,216,138,.28);
+  background:rgba(6,27,61,.66);
+  color:white;
+  font:inherit;
+  cursor:pointer;
+}
+
+.mode-button.is-active {
+  background:var(--gold);
+  color:#171006;
+  border-color:var(--gold-light);
+  font-weight:700;
+}
+
+.status-panel {
+  min-height:68px;
+  padding:10px 14px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:12px;
+  align-items:center;
+  text-align:center;
+  border-radius:16px;
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+#modeStatus {
+  font-family:var(--font-display);
+  justify-self:start;
+  color:var(--gold-light);
+  font-size:.76rem;
+  letter-spacing:.16em;
+}
+
+#wordStatus {
+  justify-self:end;
+  color:var(--muted);
+  font-size:.86rem;
+}
+
+#noteStatus {
+  font-family:var(--font-display);
+  font-size:1.05rem;
+}
+
+.keyboard-shell {
+  border:2px solid var(--gold);
+  border-radius:20px;
+  padding:14px;
+  background:
+    linear-gradient(180deg,rgba(6,27,61,.92),rgba(1,5,14,.98));
+  box-shadow:
+    0 0 0 1px rgba(242,216,138,.16),
+    0 18px 50px rgba(0,0,0,.45);
+}
+
+.keyboard-scroll {
+  width:100%;
+  overflow-x:auto;
+  padding-bottom:4px;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(215,179,90,.5) transparent;
+}
+
+.keyboard {
+  position:relative;
+  min-width:560px;
+  height:clamp(230px,38vw,330px);
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  border-radius:10px;
+  overflow:hidden;
+  background:#0a0d13;
+}
+
+.piano-key {
+  position:relative;
+  min-width:0;
+  border:0;
+  border-right:1px solid var(--key-border);
+  background:
+    linear-gradient(180deg,#ffffff 0%,#f3f5f8 74%,#d9dee8 100%);
+  color:#08101d;
+  cursor:pointer;
+  overflow:hidden;
+  isolation:isolate;
+  touch-action:manipulation;
+}
+
+.piano-key:last-child { border-right:0; }
+
+/* Reserved per-key animation stack.
+   Base key -> tint -> glow -> ripple -> memory -> labels */
+.key-tint-layer,
+.key-glow-layer,
+.key-ripple-layer,
+.key-memory-layer,
+.key-label-layer {
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+.key-tint-layer {
+  z-index:1;
+  opacity:0;
+  background:linear-gradient(180deg,rgba(11,59,120,.1),rgba(6,27,61,.36));
+  transition:opacity var(--motion-fast) var(--motion-ease);
+}
+
+.key-glow-layer {
+  z-index:2;
+  opacity:0;
+  background:
+    radial-gradient(circle at 50% 72%, rgba(242,216,138,.92), rgba(215,179,90,.22) 28%, transparent 62%);
+}
+
+.key-ripple-layer {
+  z-index:3;
+  inset:auto 50% 22%;
+  width:12px;
+  height:12px;
+  border:2px solid rgba(255,255,255,.9);
+  border-radius:50%;
+  transform:translate(50%,50%) scale(.2);
+  opacity:0;
+}
+
+.key-memory-layer {
+  z-index:4;
+  inset:10px 10px auto auto;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--gold);
+  opacity:0;
+  box-shadow:0 0 10px rgba(215,179,90,.9);
+}
+
+.key-label-layer {
+  z-index:5;
+  inset:auto 6px 14px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+}
+
+.key-word {
+  font-family:var(--font-display);
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:clamp(.65rem,1.7vw,.9rem);
+  font-weight:700;
+}
+
+.key-note {
+  font-family:var(--font-body);
+  font-size:.72rem;
+  color:rgba(8,16,29,.64);
+}
+
+.piano-key.is-active .key-tint-layer { opacity:1; }
+
+.piano-key.is-active .key-glow-layer {
+  animation:keyGlow var(--motion-key) var(--motion-ease);
+}
+
+.piano-key.is-active .key-ripple-layer {
+  animation:keyRipple var(--motion-key) var(--motion-ease);
+}
+
+.piano-key.has-memory .key-memory-layer { opacity:.9; }
+
+.piano-key:focus-visible {
+  outline:4px solid var(--gold-light);
+  outline-offset:-4px;
+  z-index:10;
+}
+
+@keyframes keyGlow {
+  0% { opacity:0; transform:scale(.82); }
+  24% { opacity:1; }
+  100% { opacity:0; transform:scale(1.08); }
+}
+
+@keyframes keyRipple {
+  0% { opacity:.9; transform:translate(50%,50%) scale(.2); }
+  100% { opacity:0; transform:translate(50%,50%) scale(7.5); }
+}
+
+.stage-footer {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  color:rgba(255,255,255,.58);
+  font-size:.76rem;
+}
+
+.piano-stage[data-theme="pt"] .keyboard-shell {
+  box-shadow:0 0 0 1px rgba(242,216,138,.18),0 18px 50px rgba(0,0,0,.45),inset 0 0 42px rgba(27,102,46,.16);
+}
+
+.piano-stage[data-theme="en"] .keyboard-shell {
+  box-shadow:0 0 0 1px rgba(242,216,138,.18),0 18px 50px rgba(0,0,0,.45),inset 0 0 42px rgba(39,74,143,.18);
+}
+
+.piano-stage[data-theme="es"] .keyboard-shell {
+  box-shadow:0 0 0 1px rgba(242,216,138,.18),0 18px 50px rgba(0,0,0,.45),inset 0 0 42px rgba(143,42,29,.17);
+}
+
+@media (max-width:600px) {
+  body { padding:10px; }
+  .stage-header { grid-template-columns:46px 1fr 46px; }
+  .avatar-stage { min-height:72px; }
+  .status-panel {
+    grid-template-columns:1fr;
+    gap:4px;
+  }
+  #modeStatus,#wordStatus { justify-self:center; }
+  .keyboard-shell { padding:9px; }
+  .keyboard { min-width:480px; height:260px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+}
+
+
+/* =========================================================
+   FRONDOSA DUET — shared musical event visualization
+   ========================================================= */
+.duet-stage {
+  position:relative;
+  min-height:250px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid rgba(215,179,90,.24);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(11,59,120,.48), transparent 42%),
+    linear-gradient(180deg, rgba(2,9,24,.7), rgba(2,9,24,.28));
+}
+
+.frondosa {
+  position:relative;
+  width:min(100%,520px);
+  height:230px;
+}
+
+.tree-crown {
+  position:absolute;
+  left:50%;
+  top:6px;
+  width:320px;
+  height:155px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at center, rgba(24,95,46,.33), rgba(4,35,23,.12) 65%, transparent 72%);
+}
+
+.tree-trunk {
+  position:absolute;
+  left:50%;
+  top:118px;
+  width:44px;
+  height:92px;
+  transform:translateX(-50%);
+  border-radius:50% 50% 16px 16px;
+  background:linear-gradient(90deg,#59361f,#8a5a32 52%,#4b2d1b);
+  box-shadow:inset 0 0 10px rgba(0,0,0,.4);
+}
+
+.tree-ground {
+  position:absolute;
+  left:50%;
+  bottom:12px;
+  width:240px;
+  height:28px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(ellipse at center,#7c3527,rgba(124,53,39,.15) 72%,transparent);
+}
+
+.branch {
+  position:absolute;
+  left:50%;
+  top:98px;
+  height:8px;
+  transform-origin:left center;
+  border-radius:999px;
+  background:linear-gradient(90deg,#6f4729,#8b6038);
+  z-index:1;
+}
+
+.branch-a { width:118px; transform:rotate(-26deg); }
+.branch-b { width:118px; transform:rotate(206deg); }
+.branch-c { width:92px; transform:rotate(-63deg); }
+
+.leaf {
+  position:absolute;
+  width:66px;
+  min-height:42px;
+  padding:4px 6px;
+  border:1px solid rgba(242,216,138,.22);
+  border-radius:70% 25% 70% 25%;
+  background:linear-gradient(145deg,#2f8a47,#105127);
+  color:white;
+  display:grid;
+  place-items:center;
+  z-index:3;
+  cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,.28);
+  transition:
+    transform var(--motion-fast) var(--motion-ease),
+    filter var(--motion-fast) var(--motion-ease),
+    box-shadow var(--motion-fast) var(--motion-ease),
+    background var(--motion-fast) var(--motion-ease);
+}
+
+.leaf span {
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:.68rem;
+  font-weight:700;
+  text-shadow:0 1px 3px rgba(0,0,0,.75);
+}
+
+.leaf-1 { left:24px;  top:72px;  transform:rotate(-20deg); }
+.leaf-2 { left:74px;  top:20px;  transform:rotate(12deg); }
+.leaf-3 { left:132px; top:57px;  transform:rotate(-8deg); }
+.leaf-4 { left:188px; top:14px;  transform:rotate(16deg); }
+.leaf-5 { left:238px; top:64px;  transform:rotate(22deg); }
+.leaf-6 { left:44px;  top:116px; transform:rotate(10deg); }
+.leaf-7 { left:186px; top:108px; transform:rotate(-16deg); }
+.leaf-8 { left:222px; top:112px; transform:rotate(12deg); }
+
+.leaf.is-resonating {
+  background:linear-gradient(145deg,#88b93c,#d7b35a);
+  filter:brightness(1.22);
+  box-shadow:0 0 12px rgba(242,216,138,.85),0 0 30px rgba(66,165,90,.55);
+  animation:leafBloom var(--motion-resonance) var(--motion-ease);
+}
+
+.frondosa.is-resonating .tree-trunk {
+  box-shadow:inset 0 0 10px rgba(0,0,0,.38),0 0 18px rgba(215,179,90,.33);
+}
+
+.duet-caption {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin:0;
+  text-align:center;
+  color:rgba(255,255,255,.62);
+  font-size:.76rem;
+}
+
+@keyframes leafBloom {
+  0% { transform:scale(.92) rotate(var(--leaf-rotation,0deg)); }
+  45% { transform:scale(1.16) rotate(var(--leaf-rotation,0deg)); }
+  100% { transform:scale(1) rotate(var(--leaf-rotation,0deg)); }
+}
+
+@media (max-width:600px) {
+  .duet-stage { min-height:220px; }
+  .frondosa { transform:scale(.88); transform-origin:center center; }
+}
+
+
+/* =========================================================
+   FRONDOSA VISUAL LAYER v1
+   Real visual actor + independent interaction hotspots.
+   Background remains transparent by contract.
+   ========================================================= */
+.duet-stage {
+  min-height:360px;
+  background:
+    radial-gradient(circle at 50% 18%,rgba(11,59,120,.50),transparent 38%),
+    radial-gradient(circle at 50% 72%,rgba(215,179,90,.08),transparent 42%),
+    linear-gradient(180deg,rgba(2,9,24,.78),rgba(2,9,24,.30));
+}
+
+.frondosa {
+  width:min(100%,980px);
+  height:330px;
+}
+
+.frondosa-visual {
+  position:absolute;
+  inset:0 1% 22px;
+  width:98%;
+  height:calc(100% - 22px);
+  object-fit:contain;
+  object-position:center bottom;
+  pointer-events:none;
+  user-select:none;
+  filter:drop-shadow(0 18px 24px rgba(0,0,0,.42));
+  transform-origin:50% 78%;
+  transition:
+    filter var(--motion-fast) var(--motion-ease),
+    transform var(--motion-resonance) var(--motion-ease);
+}
+
+.frondosa.is-resonating .frondosa-visual {
+  filter:
+    drop-shadow(0 18px 24px rgba(0,0,0,.42))
+    drop-shadow(0 0 13px rgba(242,216,138,.34));
+  transform:scale(1.008);
+}
+
+.frondosa-hotspots {
+  position:absolute;
+  inset:0 4% 28px;
+  z-index:4;
+}
+
+.frondosa-hotspots .leaf {
+  width:76px;
+  min-height:45px;
+  background:rgba(17,81,42,.74);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+
+.frondosa-hotspots .leaf-1 { left:10%; top:49%; transform:rotate(-18deg); }
+.frondosa-hotspots .leaf-2 { left:23%; top:25%; transform:rotate(10deg); }
+.frondosa-hotspots .leaf-3 { left:38%; top:37%; transform:rotate(-7deg); }
+.frondosa-hotspots .leaf-4 { left:48%; top:15%; transform:rotate(10deg); }
+.frondosa-hotspots .leaf-5 { left:62%; top:37%; transform:rotate(16deg); }
+.frondosa-hotspots .leaf-6 { left:24%; top:58%; transform:rotate(9deg); }
+.frondosa-hotspots .leaf-7 { left:72%; top:56%; transform:rotate(-12deg); }
+.frondosa-hotspots .leaf-8 { left:82%; top:45%; transform:rotate(11deg); }
+
+.frondosa-hotspots .leaf.is-resonating {
+  background:linear-gradient(145deg,rgba(136,185,60,.95),rgba(215,179,90,.96));
+}
+
+@media (max-width:600px) {
+  .duet-stage { min-height:280px; }
+  .frondosa { width:100%; height:270px; transform:none; }
+  .frondosa-hotspots .leaf {
+    width:58px;
+    min-height:38px;
+    padding:3px 4px;
+  }
+  .frondosa-hotspots .leaf span { font-size:.58rem; }
+}
+
+
+/* =========================================================
+   RESPONSIVE BOX SYSTEM + DEV PREVIEW
+   ========================================================= */
+.tree-box,
+.controls-box,
+.keyboard-box {
+  border-radius:22px;
+}
+
+.controls-box {
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.keyboard-box {
+  min-width:0;
+}
+
+/* Portrait-fit contract: no forced horizontal keyboard scroll. */
+@media (max-width:600px) {
+  body {
+    padding:0;
+    display:block;
+  }
+
+  .piano-stage {
+    width:100%;
+    gap:12px;
+    padding:10px;
+  }
+
+  .stage-header {
+    grid-template-columns:46px 1fr 12px;
+  }
+
+  h1 {
+    font-size:clamp(1.45rem,7vw,2rem);
+  }
+
+  .subtitle {
+    font-size:.82rem;
+  }
+
+  .avatar-stage {
+    min-height:84px;
+  }
+
+  .duet-stage {
+    min-height:320px;
+  }
+
+  .frondosa {
+    height:310px;
+  }
+
+  .mode-panel {
+    gap:7px;
+  }
+
+  .mode-button {
+    min-height:46px;
+    padding:0 14px;
+    flex:0 1 auto;
+  }
+
+  .status-panel {
+    min-height:92px;
+    padding:12px 10px;
+  }
+
+  .keyboard-shell {
+    width:100%;
+    padding:8px;
+    border-radius:18px;
+  }
+
+  .keyboard-scroll {
+    overflow-x:hidden;
+    padding-bottom:0;
+  }
+
+  .keyboard {
+    min-width:0;
+    width:100%;
+    height:clamp(255px,66vw,330px);
+    grid-template-columns:repeat(8,minmax(0,1fr));
+  }
+
+  .key-label-layer {
+    inset:auto 2px 11px;
+    gap:3px;
+  }
+
+  .key-word {
+    width:100%;
+    padding:0 1px;
+    overflow:visible;
+    text-overflow:clip;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    text-align:center;
+    font-size:clamp(.50rem,2.2vw,.72rem);
+    line-height:1.08;
+  }
+
+  .key-note {
+    font-size:clamp(.58rem,2vw,.68rem);
+  }
+
+  .key-memory-layer {
+    inset:8px 50% auto auto;
+    transform:translateX(50%);
+    width:7px;
+    height:7px;
+  }
+
+  .stage-footer {
+    padding-bottom:8px;
+  }
+}
+
+/* Desktop simulation of portrait rules. */
+.stage-viewport[data-preview="portrait"] .piano-stage {
+  gap:12px;
+  padding:10px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage-header {
+  grid-template-columns:46px 1fr 12px;
+}
+
+.stage-viewport[data-preview="portrait"] .duet-stage {
+  min-height:320px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa {
+  height:310px;
+}
+
+.stage-viewport[data-preview="portrait"] .status-panel {
+  grid-template-columns:1fr;
+  gap:4px;
+  min-height:92px;
+}
+
+.stage-viewport[data-preview="portrait"] #modeStatus,
+.stage-viewport[data-preview="portrait"] #wordStatus {
+  justify-self:center;
+}
+
+.stage-viewport[data-preview="portrait"] .keyboard-scroll {
+  overflow-x:hidden;
+}
+
+.stage-viewport[data-preview="portrait"] .keyboard {
+  min-width:0;
+  width:100%;
+  height:300px;
+  grid-template-columns:repeat(8,minmax(0,1fr));
+}
+
+.stage-viewport[data-preview="portrait"] .key-label-layer {
+  inset:auto 2px 11px;
+}
+
+.stage-viewport[data-preview="portrait"] .key-word {
+  white-space:normal;
+  overflow:visible;
+  text-overflow:clip;
+  overflow-wrap:anywhere;
+  text-align:center;
+  font-size:.62rem;
+  line-height:1.08;
+}
+
+.stage-viewport[data-preview="portrait"] .key-note {
+  font-size:.64rem;
+}
+
+/* Landscape simulation keeps a compact wide instrument. */
+.stage-viewport[data-preview="landscape"] .duet-stage {
+  min-height:300px;
+}
+
+.stage-viewport[data-preview="landscape"] .frondosa {
+  height:280px;
+}
+
+.stage-viewport[data-preview="landscape"] .keyboard {
+  min-width:0;
+  width:100%;
+  height:260px;
+}
+
+/* Fine hotspot alignment v1.1 */
+.frondosa-hotspots .leaf-1 { left:12%; top:47%; }
+.frondosa-hotspots .leaf-2 { left:24%; top:24%; }
+.frondosa-hotspots .leaf-3 { left:39%; top:39%; }
+.frondosa-hotspots .leaf-4 { left:49%; top:15%; }
+.frondosa-hotspots .leaf-5 { left:63%; top:38%; }
+.frondosa-hotspots .leaf-6 { left:25%; top:59%; }
+.frondosa-hotspots .leaf-7 { left:72%; top:57%; }
+.frondosa-hotspots .leaf-8 { left:81%; top:46%; }
+
+
+/* =========================================================
+   REAL DEVICE PASS v1.2
+   Keep development preview tools on desktop, never over real
+   touch-first smartphone/tablet views.
+   ========================================================= */
+/* Portrait hotspot calibration against the real Frondosa canopy. */
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa-hotspots .leaf-1 { left:13%; top:48%; }
+  .frondosa-hotspots .leaf-2 { left:25%; top:33%; }
+  .frondosa-hotspots .leaf-3 { left:40%; top:43%; }
+  .frondosa-hotspots .leaf-4 { left:50%; top:29%; }
+  .frondosa-hotspots .leaf-5 { left:63%; top:43%; }
+  .frondosa-hotspots .leaf-6 { left:27%; top:57%; }
+  .frondosa-hotspots .leaf-7 { left:71%; top:55%; }
+  .frondosa-hotspots .leaf-8 { left:80%; top:46%; }
+}
+
+/* Physical-phone landscape: compact vertical rhythm while preserving
+   the full-width instrument and continuous downward navigation. */
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  body { padding:0; }
+  .piano-stage {
+    width:100%;
+    gap:10px;
+    padding:8px 12px 14px;
+  }
+  .stage-header {
+    grid-template-columns:44px 1fr 44px;
+  }
+  .home-link {
+    width:42px;
+    height:42px;
+  }
+  .eyebrow { font-size:.62rem; }
+  h1 { font-size:clamp(1.35rem,4.2vw,2rem); }
+  .subtitle { font-size:.76rem; }
+  .avatar-stage {
+    min-height:62px;
+  }
+  .avatar-reserve {
+    font-size:.72rem;
+  }
+  .duet-stage {
+    min-height:270px;
+  }
+  .frondosa {
+    height:255px;
+  }
+  .mode-panel {
+    gap:6px;
+  }
+  .mode-button {
+    min-height:40px;
+    padding:0 13px;
+  }
+  .status-panel {
+    min-height:60px;
+    padding:8px 12px;
+  }
+  .keyboard-shell {
+    padding:8px;
+  }
+  .keyboard {
+    min-width:0;
+    width:100%;
+    height:230px;
+  }
+}
+
+
+/* =========================================================
+   PIANINHO MÁGICO — THIRD ACTOR
+   ========================================================= */
+.avatar-stage { min-height:240px; padding:10px; overflow:hidden; }
+.pianinho { position:relative; width:min(100%,560px); height:220px; margin:auto; }
+.pianinho-visual { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; pointer-events:none; user-select:none; filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)); transition:transform var(--motion-resonance) var(--motion-ease),filter var(--motion-fast) var(--motion-ease); }
+.pianinho-hotspots { position:absolute; inset:0; z-index:4; }
+.pianinho-hotspot { position:absolute; width:54px; height:54px; border-radius:50%; border:1px solid rgba(242,216,138,.44); background:rgba(46,24,14,.72); color:#ffe98d; font-family:var(--font-display); font-size:.68rem; font-weight:700; cursor:pointer; display:grid; place-items:center; box-shadow:0 0 0 1px rgba(215,179,90,.14); transition:transform var(--motion-fast) var(--motion-ease),background var(--motion-fast) var(--motion-ease),box-shadow var(--motion-fast) var(--motion-ease); }
+.pianinho-hotspot span { pointer-events:none; }
+.hotspot-do { left:7%; top:14%; }
+.hotspot-mi { left:8%; bottom:6%; }
+.hotspot-sol { right:8%; bottom:17%; }
+.hotspot-do-high { right:7%; top:14%; }
+.pianinho-hotspot.is-resonating { background:linear-gradient(145deg,#8f6417,#e2b94c); color:#171006; box-shadow:0 0 18px rgba(242,216,138,.88),0 0 36px rgba(215,179,90,.34); transform:scale(1.12); }
+.pianinho.is-resonating .pianinho-visual { transform:scale(1.025); filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)) drop-shadow(0 0 14px rgba(242,216,138,.32)); }
+.avatar-caption { position:absolute; left:0; right:0; bottom:0; margin:0; text-align:center; color:rgba(242,216,138,.72); font-size:.72rem; }
+
+@media (max-width:600px) {
+  .avatar-stage { min-height:205px; }
+  .pianinho { height:188px; }
+  .pianinho-hotspot { width:46px; height:46px; font-size:.60rem; }
+}
+.stage-viewport[data-preview="portrait"] .avatar-stage { min-height:205px; }
+.stage-viewport[data-preview="portrait"] .pianinho { height:188px; }
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  .avatar-stage { min-height:175px; }
+  .pianinho { height:158px; }
+  .pianinho-hotspot { width:42px; height:42px; font-size:.56rem; }
+}
+
+
+/* =========================================================
+   FINE PASS v1.3 — FRONDOSA + PIANINHO HOTSPOTS
+   ========================================================= */
+
+/* Better canopy integration on wide layouts */
+.frondosa-hotspots .leaf-1 { left:14%; top:50%; }
+.frondosa-hotspots .leaf-2 { left:25%; top:29%; }
+.frondosa-hotspots .leaf-3 { left:40%; top:41%; }
+.frondosa-hotspots .leaf-4 { left:50%; top:19%; }
+.frondosa-hotspots .leaf-5 { left:64%; top:40%; }
+.frondosa-hotspots .leaf-6 { left:28%; top:60%; }
+.frondosa-hotspots .leaf-7 { left:72%; top:59%; }
+.frondosa-hotspots .leaf-8 { left:80%; top:50%; }
+
+/* Align Pianinho interactive zones to the circles drawn in the SVG. */
+.pianinho {
+  width:min(100%,520px);
+  aspect-ratio:5/3;
+  height:auto;
+}
+
+.pianinho-hotspot {
+  transform:translate(-50%,-50%);
+}
+
+.hotspot-do {
+  left:16.3%;
+  top:25%;
+}
+.hotspot-mi {
+  left:17%;
+  top:82.2%;
+  bottom:auto;
+}
+.hotspot-sol {
+  left:83%;
+  top:72.2%;
+  right:auto;
+  bottom:auto;
+}
+.hotspot-do-high {
+  left:83.7%;
+  top:25%;
+  right:auto;
+}
+
+.pianinho-hotspot.is-resonating {
+  transform:translate(-50%,-50%) scale(1.12);
+}
+
+.sequence-status {
+  display:inline-grid;
+  min-width:34px;
+  height:22px;
+  padding:0 7px;
+  margin-left:7px;
+  place-items:center;
+  border:1px solid rgba(242,216,138,.32);
+  border-radius:999px;
+  background:rgba(6,27,61,.62);
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-size:.64rem;
+  vertical-align:middle;
+}
+
+.pianinho.is-chord-complete .pianinho-visual {
+  animation:pianinhoChord 920ms var(--motion-ease);
+}
+
+.frondosa.is-chord-complete .frondosa-visual {
+  animation:frondosaChord 920ms var(--motion-ease);
+}
+
+@keyframes pianinhoChord {
+  0% { transform:scale(1); filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)); }
+  38% { transform:scale(1.055) rotate(-1deg); filter:drop-shadow(0 0 24px rgba(242,216,138,.78)); }
+  68% { transform:scale(1.045) rotate(1deg); filter:drop-shadow(0 0 30px rgba(242,216,138,.68)); }
+  100% { transform:scale(1); filter:drop-shadow(0 12px 18px rgba(0,0,0,.35)); }
+}
+
+@keyframes frondosaChord {
+  0% { transform:scale(1); }
+  45% { transform:scale(1.018); filter:drop-shadow(0 0 22px rgba(242,216,138,.52)); }
+  100% { transform:scale(1); }
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa-hotspots .leaf-1 { left:15%; top:52%; }
+  .frondosa-hotspots .leaf-2 { left:27%; top:38%; }
+  .frondosa-hotspots .leaf-3 { left:41%; top:46%; }
+  .frondosa-hotspots .leaf-4 { left:51%; top:34%; }
+  .frondosa-hotspots .leaf-5 { left:64%; top:46%; }
+  .frondosa-hotspots .leaf-6 { left:29%; top:59%; }
+  .frondosa-hotspots .leaf-7 { left:72%; top:57%; }
+  .frondosa-hotspots .leaf-8 { left:80%; top:48%; }
+
+  .pianinho { width:min(100%,360px); }
+  .pianinho-hotspot {
+    width:44px;
+    height:44px;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho {
+  width:min(100%,360px);
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho-hotspot {
+  width:44px;
+  height:44px;
+}
+
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  .pianinho { width:min(100%,420px); }
+  .pianinho-hotspot { width:40px; height:40px; }
+}
+
+
+/* =========================================================
+   PIANINHO HOTSPOT GEOMETRY FIX v1.4
+   Keep the interaction plane on the exact same 5:3 geometry
+   as the SVG in every responsive mode.
+   ========================================================= */
+@media (max-width:600px) {
+  .pianinho {
+    width:min(100%,360px);
+    height:auto;
+    aspect-ratio:5/3;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho {
+  width:min(100%,360px);
+  height:auto;
+  aspect-ratio:5/3;
+}
+
+.stage-viewport[data-preview="landscape"] .pianinho {
+  height:auto;
+  aspect-ratio:5/3;
+}
+
+@media (orientation:landscape) and (hover:none) and (pointer:coarse) {
+  .pianinho {
+    width:min(100%,420px);
+    height:auto;
+    aspect-ratio:5/3;
+  }
+}
+
+
+/* =========================================================
+   POWER EXPANSION PASS v0.2
+   14 Question Words • 8 Pianinho hotspots • chromatic Piano
+   ========================================================= */
+
+.frondosa {
+  width:min(100%,620px);
+  height:300px;
+}
+
+.frondosa-hotspots .leaf {
+  width:72px;
+  min-height:40px;
+  padding:4px 7px;
+}
+
+.frondosa-hotspots .leaf span {
+  font-size:.64rem;
+  line-height:1.05;
+  white-space:normal;
+  text-align:center;
+}
+
+/* Fourteen question-word leaves distributed through the canopy. */
+.frondosa-hotspots .leaf-1  { left:9%;  top:49%; }
+.frondosa-hotspots .leaf-2  { left:18%; top:30%; }
+.frondosa-hotspots .leaf-3  { left:29%; top:42%; }
+.frondosa-hotspots .leaf-4  { left:39%; top:22%; }
+.frondosa-hotspots .leaf-5  { left:50%; top:37%; }
+.frondosa-hotspots .leaf-6  { left:61%; top:22%; }
+.frondosa-hotspots .leaf-7  { left:71%; top:40%; }
+.frondosa-hotspots .leaf-8  { left:82%; top:28%; }
+.frondosa-hotspots .leaf-9  { left:14%; top:61%; }
+.frondosa-hotspots .leaf-10 { left:28%; top:60%; }
+.frondosa-hotspots .leaf-11 { left:42%; top:59%; }
+.frondosa-hotspots .leaf-12 { left:57%; top:58%; }
+.frondosa-hotspots .leaf-13 { left:70%; top:60%; }
+.frondosa-hotspots .leaf-14 { left:82%; top:55%; }
+
+/* Additional Pianinho powers: the original four remain primary. */
+.pianinho-hotspot.is-secondary {
+  width:42px;
+  height:42px;
+  font-size:.58rem;
+  background:rgba(6,27,61,.76);
+  border-color:rgba(242,216,138,.26);
+}
+
+.hotspot-re { left:34%; top:17%; }
+.hotspot-fa { left:35%; top:72%; }
+.hotspot-la { left:66%; top:72%; }
+.hotspot-si { left:66%; top:17%; }
+
+/* Chromatic black-key layer. */
+.keyboard {
+  display:flex;
+  overflow:visible;
+}
+
+.piano-key {
+  flex:1 1 0;
+  z-index:1;
+}
+
+.piano-key.black-key {
+  position:absolute;
+  top:0;
+  width:8.5%;
+  height:62%;
+  min-width:28px;
+  max-width:68px;
+  z-index:8;
+  transform:translateX(-50%);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:0 0 8px 8px;
+  background:linear-gradient(180deg,#15171d 0%,#050608 76%,#1b1d23 100%);
+  color:#f7f1df;
+  box-shadow:0 8px 15px rgba(0,0,0,.52);
+}
+
+.piano-key.black-key .key-note {
+  color:rgba(255,255,255,.72);
+}
+
+.piano-key.black-key .key-label-layer {
+  inset:auto 3px 10px;
+}
+
+.piano-key.black-key .key-word {
+  font-size:.57rem;
+  color:#f8f4e8;
+}
+
+/* Black-key positions relative to 8 white keys. */
+.black-key[data-note="C#4"] { left:12.5%; }
+.black-key[data-note="D#4"] { left:25%; }
+.black-key[data-note="F#4"] { left:50%; }
+.black-key[data-note="G#4"] { left:62.5%; }
+.black-key[data-note="A#4"] { left:75%; }
+
+.piano-stage[data-theme="questions"] .tree-box {
+  box-shadow:inset 0 0 40px rgba(215,179,90,.08);
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa {
+    width:min(100%,430px);
+    height:330px;
+  }
+  .frondosa-hotspots .leaf {
+    width:62px;
+    min-height:38px;
+  }
+  .frondosa-hotspots .leaf span {
+    font-size:.57rem;
+  }
+
+  .frondosa-hotspots .leaf-1  { left:7%;  top:49%; }
+  .frondosa-hotspots .leaf-2  { left:17%; top:34%; }
+  .frondosa-hotspots .leaf-3  { left:30%; top:44%; }
+  .frondosa-hotspots .leaf-4  { left:42%; top:31%; }
+  .frondosa-hotspots .leaf-5  { left:54%; top:43%; }
+  .frondosa-hotspots .leaf-6  { left:66%; top:31%; }
+  .frondosa-hotspots .leaf-7  { left:77%; top:44%; }
+  .frondosa-hotspots .leaf-8  { left:83%; top:34%; }
+  .frondosa-hotspots .leaf-9  { left:10%; top:62%; }
+  .frondosa-hotspots .leaf-10 { left:24%; top:61%; }
+  .frondosa-hotspots .leaf-11 { left:38%; top:60%; }
+  .frondosa-hotspots .leaf-12 { left:53%; top:60%; }
+  .frondosa-hotspots .leaf-13 { left:67%; top:61%; }
+  .frondosa-hotspots .leaf-14 { left:79%; top:58%; }
+
+  .pianinho-hotspot.is-secondary {
+    width:36px;
+    height:36px;
+    font-size:.50rem;
+  }
+
+  .keyboard {
+    min-width:0;
+    width:100%;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa {
+  width:min(100%,430px);
+  height:330px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf {
+  width:62px;
+  min-height:38px;
+}
+
+.stage-viewport[data-preview="portrait"] .pianinho-hotspot.is-secondary {
+  width:36px;
+  height:36px;
+  font-size:.50rem;
+}
+
+
+/* =========================================================
+   FRONDOSA SEMANTIC SEQUENCE v0.1
+   Perceptual Question → WAIT → Response surface.
+   This surface never manufactures learner evidence.
+   ========================================================= */
+.semantic-sequence-box {
+  padding:10px 12px;
+}
+
+.semantic-sequence {
+  min-height:72px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:12px;
+  align-items:center;
+  padding:12px 14px;
+  border:1px solid rgba(242,216,138,.18);
+  border-radius:16px;
+  background:rgba(6,27,61,.58);
+}
+
+.semantic-phase {
+  font-family:var(--font-display);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  color:var(--gold-light);
+}
+
+.semantic-cue {
+  text-align:center;
+  font-family:var(--font-display);
+  font-size:.96rem;
+}
+
+.semantic-answer {
+  color:var(--muted);
+  font-size:.76rem;
+  text-align:right;
+}
+
+.semantic-sequence[data-phase="question"] {
+  box-shadow:inset 0 0 24px rgba(39,74,143,.14);
+}
+
+.semantic-sequence[data-phase="wait"] {
+  box-shadow:inset 0 0 26px rgba(215,179,90,.14);
+}
+
+.semantic-sequence[data-phase="response"] {
+  box-shadow:inset 0 0 26px rgba(27,102,46,.14);
+}
+
+@media (max-width:600px) {
+  .semantic-sequence {
+    grid-template-columns:1fr;
+    gap:5px;
+    text-align:center;
+  }
+  .semantic-answer {
+    text-align:center;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .semantic-sequence {
+  grid-template-columns:1fr;
+  gap:5px;
+  text-align:center;
+}
+
+.stage-viewport[data-preview="portrait"] .semantic-answer {
+  text-align:center;
+}
+
+
+/* =========================================================
+   FRONDOSA PORTRAIT BREATHING PASS v0.3
+   Spread 14 semantic leaves into clearer rows without changing
+   their canonical/question identities.
+   ========================================================= */
+@media (max-width:600px) and (orientation:portrait) {
+  .frondosa {
+    width:min(100%,430px);
+    height:350px;
+  }
+
+  .frondosa-hotspots .leaf {
+    width:58px;
+    min-height:38px;
+    padding:4px 5px;
+  }
+
+  .frondosa-hotspots .leaf-1  { left:9%;  top:50%; }  /* What */
+  .frondosa-hotspots .leaf-2  { left:16%; top:31%; }  /* Where */
+  .frondosa-hotspots .leaf-3  { left:35%; top:39%; }  /* When */
+  .frondosa-hotspots .leaf-4  { left:40%; top:18%; }  /* Who */
+  .frondosa-hotspots .leaf-5  { left:53%; top:31%; }  /* Which */
+  .frondosa-hotspots .leaf-6  { left:61%; top:18%; }  /* Why */
+  .frondosa-hotspots .leaf-7  { left:73%; top:39%; }  /* How */
+  .frondosa-hotspots .leaf-8  { left:81%; top:27%; }  /* How much */
+  .frondosa-hotspots .leaf-9  { left:15%; top:64%; }  /* How many */
+  .frondosa-hotspots .leaf-10 { left:33%; top:58%; }  /* Whose */
+  .frondosa-hotspots .leaf-11 { left:49%; top:61%; }  /* Whom */
+  .frondosa-hotspots .leaf-12 { left:64%; top:58%; }  /* How long */
+  .frondosa-hotspots .leaf-13 { left:79%; top:64%; }  /* How far */
+  .frondosa-hotspots .leaf-14 { left:82%; top:49%; }  /* How often */
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa {
+  width:min(100%,430px);
+  height:350px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf {
+  width:58px;
+  min-height:38px;
+  padding:4px 5px;
+}
+
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-1  { left:9%;  top:50%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-2  { left:16%; top:31%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-3  { left:35%; top:39%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-4  { left:40%; top:18%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-5  { left:53%; top:31%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-6  { left:61%; top:18%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-7  { left:73%; top:39%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-8  { left:81%; top:27%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-9  { left:15%; top:64%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-10 { left:33%; top:58%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-11 { left:49%; top:61%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-12 { left:64%; top:58%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-13 { left:79%; top:64%; }
+.stage-viewport[data-preview="portrait"] .frondosa-hotspots .leaf-14 { left:82%; top:49%; }
+
+
+/* =========================================================
+   LEARNER RESPONSE BOUNDARY v0.1
+   Captures an explicit learner action without evaluating it.
+   ========================================================= */
+.learner-response-form {
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px;
+  margin-top:4px;
+}
+
+.learner-response-form[hidden] {
+  display:none;
+}
+
+.learner-response-form input {
+  min-width:0;
+  min-height:42px;
+  border:1px solid rgba(242,216,138,.28);
+  border-radius:12px;
+  background:rgba(0,10,28,.74);
+  color:#fff;
+  font-family:var(--font-body);
+  padding:0 12px;
+  outline:none;
+}
+
+.learner-response-form input:focus {
+  border-color:rgba(242,216,138,.68);
+  box-shadow:0 0 0 3px rgba(242,216,138,.08);
+}
+
+.learner-response-form button {
+  min-height:42px;
+  padding:0 14px;
+  border:1px solid rgba(242,216,138,.34);
+  border-radius:12px;
+  background:rgba(215,179,90,.14);
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.semantic-sequence[data-phase="observed"] {
+  box-shadow:inset 0 0 28px rgba(39,108,63,.18);
+}
+
+@media (max-width:600px) {
+  .learner-response-form {
+    grid-template-columns:1fr;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form {
+  grid-template-columns:1fr;
+}
+
+
+/* =========================================================
+   WAIT ARCHETYPE STATE v0.1
+   Perceptual only: thinking / confused / insufficient-context.
+   Never evidence, never GREEN.
+   ========================================================= */
+.wait-archetype-indicator {
+  grid-column:1 / -1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  min-height:34px;
+  margin-top:2px;
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.02em;
+}
+
+.wait-archetype-indicator[hidden] {
+  display:none;
+}
+
+.wait-face {
+  font-size:1.15rem;
+  line-height:1;
+}
+
+.pianinho.wait-thinking .pianinho-visual {
+  animation:waitThinking 1200ms var(--motion-ease) infinite alternate;
+}
+
+.pianinho.wait-confused .pianinho-visual {
+  animation:waitConfused 900ms var(--motion-ease) infinite alternate;
+}
+
+.pianinho.wait-context-gap .pianinho-visual {
+  animation:waitContextGap 1500ms var(--motion-ease) infinite alternate;
+}
+
+.frondosa.wait-thinking .frondosa-visual,
+.frondosa.wait-confused .frondosa-visual,
+.frondosa.wait-context-gap .frondosa-visual {
+  filter:drop-shadow(0 0 14px rgba(242,216,138,.22));
+}
+
+@keyframes waitThinking {
+  from { transform:translateY(0) rotate(-.4deg); }
+  to   { transform:translateY(-2px) rotate(.4deg); }
+}
+
+@keyframes waitConfused {
+  from { transform:rotate(-1.4deg) scale(.998); }
+  to   { transform:rotate(1.4deg) scale(1.004); }
+}
+
+@keyframes waitContextGap {
+  0%   { transform:scale(1); }
+  55%  { transform:scale(1.018); }
+  100% { transform:scale(1); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.wait-thinking .pianinho-visual,
+  .pianinho.wait-confused .pianinho-visual,
+  .pianinho.wait-context-gap .pianinho-visual {
+    animation:none;
+  }
+}
+
+
+/* =========================================================
+   LEARNER-DECLARED WAIT REASONS v0.1
+   Agency first: the learner may explicitly request more time,
+   clarification, or more context. These are NOT evaluations.
+   ========================================================= */
+.learner-wait-actions {
+  grid-column:1 / -1;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+}
+
+.learner-wait-actions button {
+  min-height:34px;
+  padding:0 10px;
+  border:1px solid rgba(242,216,138,.22);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:var(--muted);
+  font-family:var(--font-body);
+  font-size:.68rem;
+  font-weight:600;
+}
+
+.learner-wait-actions button:hover,
+.learner-wait-actions button:focus-visible {
+  color:var(--gold-light);
+  border-color:rgba(242,216,138,.52);
+}
+
+@media (max-width:600px) {
+  .learner-wait-actions {
+    display:grid;
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* =========================================================
+   NEUTRAL FEEDBACK ACKNOWLEDGEMENT v0.1
+   Confirms receipt of learner action without judging it.
+   ========================================================= */
+.pianinho.is-neutral-feedback .pianinho-visual {
+  animation:neutralFeedbackPulse 620ms var(--motion-ease);
+}
+
+.frondosa.is-neutral-feedback .frondosa-visual {
+  animation:neutralFeedbackGlow 620ms var(--motion-ease);
+}
+
+@keyframes neutralFeedbackPulse {
+  0%   { transform:scale(1); }
+  45%  { transform:scale(1.025); }
+  100% { transform:scale(1); }
+}
+
+@keyframes neutralFeedbackGlow {
+  0%   { filter:drop-shadow(0 0 0 rgba(242,216,138,0)); }
+  50%  { filter:drop-shadow(0 0 18px rgba(242,216,138,.32)); }
+  100% { filter:drop-shadow(0 0 0 rgba(242,216,138,0)); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.is-neutral-feedback .pianinho-visual,
+  .frondosa.is-neutral-feedback .frondosa-visual {
+    animation:none;
+  }
+}
+
+
+/* =========================================================
+   EXTERNAL EVALUATION RESONANCE BRIDGE v0.1
+   The stage can request evaluation from the canonical/adaptive
+   authority, but never evaluates locally.
+   ========================================================= */
+.semantic-sequence[data-phase="external-evaluation"] {
+  box-shadow:inset 0 0 30px rgba(82,122,198,.18);
+}
+
+.pianinho.is-external-evaluation .pianinho-visual {
+  animation:externalEvaluationPulse 880ms var(--motion-ease) infinite alternate;
+}
+
+.frondosa.is-external-evaluation .frondosa-visual {
+  animation:externalEvaluationGlow 880ms var(--motion-ease) infinite alternate;
+}
+
+@keyframes externalEvaluationPulse {
+  from { transform:scale(1); filter:drop-shadow(0 0 8px rgba(104,150,235,.18)); }
+  to   { transform:scale(1.018); filter:drop-shadow(0 0 22px rgba(104,150,235,.34)); }
+}
+
+@keyframes externalEvaluationGlow {
+  from { filter:drop-shadow(0 0 8px rgba(104,150,235,.14)); }
+  to   { filter:drop-shadow(0 0 24px rgba(104,150,235,.32)); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.is-external-evaluation .pianinho-visual,
+  .frondosa.is-external-evaluation .frondosa-visual {
+    animation:none;
+  }
+}
+
+
+/* =========================================================
+   CANONICAL RESULT RESONANCE v0.1
+   Pure presentation of externally supplied adaptive status.
+   No local evaluation or routing authority.
+   ========================================================= */
+.semantic-sequence[data-canonical-state="waiting"] {
+  box-shadow:inset 0 0 30px rgba(215,179,90,.16);
+}
+
+.semantic-sequence[data-canonical-state="eligible"] {
+  box-shadow:inset 0 0 30px rgba(72,150,91,.18);
+}
+
+.semantic-sequence[data-canonical-state="resume"] {
+  box-shadow:inset 0 0 30px rgba(88,128,205,.18);
+}
+
+.semantic-sequence[data-canonical-state="neutral"] {
+  box-shadow:inset 0 0 24px rgba(160,160,160,.10);
+}
+
+.pianinho.canonical-wait .pianinho-visual {
+  filter:drop-shadow(0 0 18px rgba(215,179,90,.28));
+}
+
+.pianinho.canonical-eligible .pianinho-visual {
+  filter:drop-shadow(0 0 20px rgba(72,150,91,.30));
+}
+
+.frondosa.canonical-wait .frondosa-visual {
+  filter:drop-shadow(0 0 18px rgba(215,179,90,.22));
+}
+
+.frondosa.canonical-eligible .frondosa-visual {
+  filter:drop-shadow(0 0 22px rgba(72,150,91,.26));
+}
+
+
+/* =========================================================
+   MINIMUM SUPPORT OPPORTUNITY v0.1
+   Contextual help appears only after learner-declared need.
+   These actions are presentation support, never Evidence.
+   ========================================================= */
+.micro-support-actions {
+  grid-column:1 / -1;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px;
+  margin-top:2px;
+}
+
+.micro-support-actions[hidden] {
+  display:none;
+}
+
+.micro-support-actions button {
+  min-height:34px;
+  padding:0 10px;
+  border:1px solid rgba(104,150,235,.30);
+  border-radius:999px;
+  background:rgba(20,42,78,.66);
+  color:#dce8ff;
+  font-family:var(--font-body);
+  font-size:.68rem;
+  font-weight:600;
+}
+
+.micro-support-actions button:hover,
+.micro-support-actions button:focus-visible {
+  border-color:rgba(134,174,246,.64);
+  color:#fff;
+}
+
+@media (max-width:600px) {
+  .micro-support-actions {
+    display:grid;
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* =========================================================
+   SUPPORT PROVENANCE v0.1
+   The UI keeps no score here; support use only travels as
+   provenance for the external canonical evaluator.
+   ========================================================= */
+.semantic-sequence[data-support-used="true"] .semantic-answer {
+  text-decoration-thickness:1px;
+}
+
+
+/* =========================================================
+   CANONICAL RESONANCE PROJECTION v0.1
+   External route resonance may illuminate matching semantic
+   actors. The stage never calculates the match locally.
+   ========================================================= */
+.frondosa-hotspots .leaf.is-canonical-resonance {
+  box-shadow:
+    0 0 0 2px rgba(116,166,255,.38),
+    0 0 24px rgba(116,166,255,.34);
+  transform:translate(-50%,-50%) scale(1.06);
+}
+
+.frondosa-hotspots .leaf.is-canonical-resonance::after {
+  content:"";
+  position:absolute;
+  inset:-5px;
+  border:1px solid rgba(116,166,255,.30);
+  border-radius:inherit;
+  pointer-events:none;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .frondosa-hotspots .leaf.is-canonical-resonance {
+    transform:translate(-50%,-50%);
+  }
+}
+
+
+/* =========================================================
+   CANONICAL NAVIGATION OPPORTUNITY v0.1
+   External authority may expose a destination or resume action.
+   The stage never routes on its own; learner confirms first.
+   ========================================================= */
+.canonical-navigation-opportunity {
+  grid-column:1 / -1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:4px;
+  padding:8px 10px;
+  border:1px solid rgba(72,150,91,.28);
+  border-radius:14px;
+  background:rgba(18,66,40,.18);
+  color:#d9f3df;
+  font-family:var(--font-display);
+  font-size:.72rem;
+}
+
+.canonical-navigation-opportunity[hidden] {
+  display:none;
+}
+
+.canonical-navigation-opportunity button {
+  min-height:36px;
+  padding:0 14px;
+  border:1px solid rgba(98,178,116,.42);
+  border-radius:999px;
+  background:rgba(72,150,91,.16);
+  color:#e7f8eb;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+@media (max-width:600px) {
+  .canonical-navigation-opportunity {
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+
+/* =========================================================
+   SEMANTIC MUSICAL CADENCE v0.1
+   Four musical pulses + four semantic speech cells.
+   Experience-provided content; presentation only.
+   ========================================================= */
+.cadence-test-button {
+  justify-self:center;
+  min-height:38px;
+  margin-top:6px;
+  padding:0 14px;
+  border:1px solid rgba(242,216,138,.34);
+  border-radius:999px;
+  background:rgba(215,179,90,.12);
+  color:var(--gold-light);
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.cadence-test-button:disabled {
+  opacity:.52;
+  cursor:wait;
+}
+
+.piano-key.is-cadence-pulse {
+  box-shadow:inset 0 0 28px rgba(242,216,138,.28), 0 0 18px rgba(242,216,138,.20);
+}
+
+.pianinho-hotspot.is-cadence-pulse {
+  background:linear-gradient(145deg,#8f6417,#e2b94c);
+  color:#171006;
+  box-shadow:0 0 20px rgba(242,216,138,.86);
+  transform:translate(-50%,-50%) scale(1.10);
+}
+
+.frondosa.is-semantic-cadence .frondosa-visual {
+  animation:semanticCadenceBreath 520ms var(--motion-ease);
+}
+
+@keyframes semanticCadenceBreath {
+  0% { transform:scale(1); }
+  50% { transform:scale(1.018); filter:drop-shadow(0 0 18px rgba(242,216,138,.30)); }
+  100% { transform:scale(1); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .frondosa.is-semantic-cadence .frondosa-visual {
+    animation:none;
+  }
+}
+
+
+/* Enharmonic identity: keep dual black-key names readable in Solfege. */
+.piano-key.black-key .key-word {
+  max-width:100%;
+  line-height:1.05;
+  text-align:center;
+  white-space:normal;
+}
+
+
+/* =========================================================
+   CHROMATIC RESONANCE PASS
+   Black-key notes are perceived globally by the partner actors
+   without pretending that a chromatic pitch is a semantic leaf.
+   ========================================================= */
+.pianinho.is-chromatic-resonance .pianinho-visual {
+  animation:chromaticActorPulse 720ms var(--motion-ease);
+  filter:drop-shadow(0 0 14px rgba(226,233,244,.46))
+         drop-shadow(0 0 24px rgba(242,216,138,.18));
+}
+
+.frondosa.is-chromatic-resonance .frondosa-visual {
+  animation:chromaticActorPulse 720ms var(--motion-ease);
+  filter:drop-shadow(0 0 16px rgba(226,233,244,.38))
+         drop-shadow(0 0 28px rgba(242,216,138,.16));
+}
+
+@keyframes chromaticActorPulse {
+  0% { transform:scale(1); opacity:1; }
+  45% { transform:scale(1.018); opacity:.92; }
+  100% { transform:scale(1); opacity:1; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .pianinho.is-chromatic-resonance .pianinho-visual,
+  .frondosa.is-chromatic-resonance .frondosa-visual {
+    animation:none;
+  }
+}
+
+
+/* =========================================================
+   CONTENT COLLECTION SURFACE v0.1
+   Keeps collection choice separate from sound/language modes.
+   ========================================================= */
+.collection-panel {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+}
+
+.collection-label {
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+}
+
+.collection-button {
+  min-height:36px;
+  padding:0 14px;
+  border:1px solid rgba(215,179,90,.30);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#f7f1df;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.collection-button.is-active {
+  background:linear-gradient(145deg,#d7b35a,#f2d88a);
+  color:#161006;
+  box-shadow:0 0 14px rgba(215,179,90,.18);
+}
+
+.mode-button:disabled {
+  opacity:.38;
+  cursor:not-allowed;
+}
+
+
+/* =========================================================
+   CONTEXT SUPPORT v0.1
+   Gives the learner enough situation to think without giving
+   away an answer. Frondosa may speak the context.
+   ========================================================= */
+.context-support-panel {
+  display:grid;
+  gap:4px;
+  margin-top:10px;
+  padding:10px 12px;
+  border:1px solid rgba(242,216,138,.26);
+  border-radius:12px;
+  background:rgba(6,27,61,.68);
+  text-align:left;
+}
+
+.context-support-panel[hidden] {
+  display:none;
+}
+
+.context-support-title {
+  font-family:var(--font-display);
+  font-size:.66rem;
+  font-weight:800;
+  letter-spacing:.10em;
+  color:var(--gold-light);
+}
+
+.context-support-text {
+  font-size:.82rem;
+  line-height:1.35;
+  color:rgba(255,255,255,.84);
+}
+
+
+/* =========================================================
+   CONTEXT SUPPORT v0.2 — centered toroidal reading axis
+   ========================================================= */
+.context-support-panel {
+  justify-items:center;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:min(100%, 760px);
+}
+
+.context-support-title,
+.context-support-text {
+  width:100%;
+  text-align:center;
+}
+
+.context-support-title {
+  font-size:.72rem;
+}
+
+.context-support-text {
+  max-width:68ch;
+}
+
+.micro-support-actions {
+  margin-top:10px;
+}
+
+
+/* =========================================================
+   LEARNER RESPONSE ALIGNMENT v0.2
+   Keep the submit action visually inside the same response row.
+   ========================================================= */
+.learner-response-form {
+  grid-template-columns:minmax(0, 1fr) minmax(132px, auto);
+  align-items:stretch;
+}
+
+.learner-response-form > button[type="submit"] {
+  align-self:stretch;
+  justify-self:stretch;
+  white-space:nowrap;
+}
+
+@media (max-width:760px) {
+  .learner-response-form {
+    grid-template-columns:1fr;
+  }
+
+  .learner-response-form > button[type="submit"] {
+    width:100%;
+  }
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form {
+  grid-template-columns:1fr;
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form > button[type="submit"] {
+  width:100%;
+}
+
+
+/* =========================================================
+   CONTEXT SUPPORT v0.3 — full-row centered card
+   ========================================================= */
+.learner-response-form .context-support-panel {
+  grid-column:1 / -1;
+  justify-self:center;
+  box-sizing:border-box;
+  width:min(100%, 760px);
+}
+
+.stage-viewport[data-preview="portrait"] .learner-response-form .context-support-panel {
+  width:100%;
+}
+
+
+/* =========================================================
+   STAGE ROUTING v0.1 — Collection → Activity → Listen/Language
+   ========================================================= */
+.activity-panel,
+.mode-panel {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.activity-panel {
+  margin-bottom:10px;
+}
+
+.activity-label,
+.mode-label {
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+}
+
+.activity-button {
+  min-height:36px;
+  padding:0 14px;
+  border:1px solid rgba(215,179,90,.30);
+  border-radius:999px;
+  background:rgba(6,27,61,.72);
+  color:#f7f1df;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.activity-button.is-active {
+  background:linear-gradient(145deg,#d7b35a,#f2d88a);
+  color:#161006;
+  box-shadow:0 0 14px rgba(215,179,90,.18);
+}
+
+.activity-button:disabled {
+  opacity:.38;
+  cursor:not-allowed;
+}
+
+
+/* =========================================================
+   CANONICAL NOUN LAYERS v0.1
+   Concrete / Abstract / Proper from the canonical Nouns chapter.
+   ========================================================= */
+.noun-layer-panel {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+}
+
+.noun-layer-panel[hidden] {
+  display:none;
+}
+
+.noun-layer-label {
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.62);
+}
+
+.noun-layer-button {
+  min-height:34px;
+  padding:0 12px;
+  border:1px solid rgba(116,166,255,.30);
+  border-radius:999px;
+  background:rgba(20,42,78,.66);
+  color:#dce8ff;
+  font-family:var(--font-display);
+  font-weight:700;
+  cursor:pointer;
+}
+
+.noun-layer-button.is-active {
+  border-color:rgba(242,216,138,.58);
+  color:var(--gold-light);
+  box-shadow:0 0 12px rgba(242,216,138,.12);
+}
+
+.frondosa-hotspots .leaf[hidden] {
+  display:none;
+}
+
+
+/* =========================================================
+   NOUN CLASSIFY ACTIVITY v0.1
+   Learner choice is captured without local evaluation.
+   ========================================================= */
+.noun-classify-panel {
+  display:grid;
+  justify-items:center;
+  gap:10px;
+  margin:0 auto 10px;
+  padding:12px 14px;
+  width:min(100%,760px);
+  border:1px solid rgba(116,166,255,.24);
+  border-radius:14px;
+  background:rgba(11,30,64,.56);
+  text-align:center;
+}
+
+.noun-classify-panel[hidden] {
+  display:none;
+}
+
+.noun-classify-label {
+  font-family:var(--font-display);
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.noun-classify-word {
+  font-family:var(--font-display);
+  font-size:1.08rem;
+  color:var(--gold-light);
+}
+
+.noun-classify-choices,
+.noun-classify-support {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+}
+
+.noun-classify-choices button,
+.noun-classify-support button {
+  min-height:34px;
+  padding:0 12px;
+  border:1px solid rgba(116,166,255,.30);
+  border-radius:999px;
+  background:rgba(20,42,78,.66);
+  color:#dce8ff;
+  font-family:var(--font-body);
+  font-weight:700;
+}
+
+.noun-classify-choices button.is-selected {
+  border-color:rgba(242,216,138,.70);
+  color:var(--gold-light);
+  box-shadow:0 0 12px rgba(242,216,138,.16);
+}
+
+.noun-classify-support button {
+  border-color:rgba(242,216,138,.24);
+  color:var(--muted);
+}
+
+
+/* =========================================================
+   NOUN CLASSIFY COHERENCE v0.2
+   Separate learner choice from canonical source classification.
+   ========================================================= */
+.noun-classify-state {
+  display:grid;
+  gap:6px;
+  width:100%;
+  justify-items:center;
+}
+
+.noun-classify-state span {
+  width:min(100%,560px);
+  padding:7px 10px;
+  border-radius:10px;
+  font-family:var(--font-display);
+  font-size:.72rem;
+  text-align:center;
+}
+
+#nounClassifyChoiceState {
+  border:1px solid rgba(116,166,255,.34);
+  background:rgba(20,42,78,.50);
+  color:#dce8ff;
+}
+
+#nounClassifySourceState {
+  border:1px solid rgba(242,216,138,.34);
+  background:rgba(215,179,90,.10);
+  color:var(--gold-light);
+}
+
+.noun-classify-choices button.is-selected {
+  outline:2px solid rgba(116,166,255,.52);
+  outline-offset:2px;
+}
+
+.noun-classify-choices button.is-source {
+  box-shadow:
+    inset 0 0 0 2px rgba(242,216,138,.58),
+    0 0 14px rgba(242,216,138,.14);
+}
+
+.noun-classify-choices button.is-selected.is-source {
+  outline-color:rgba(116,166,255,.72);
+}
+
+.frondosa-hotspots .leaf.is-classify-focus {
+  box-shadow:
+    0 0 0 2px rgba(242,216,138,.54),
+    0 0 22px rgba(242,216,138,.30);
+  animation:nounClassifyFocusPulse 1200ms var(--motion-ease) infinite alternate;
+}
+
+@keyframes nounClassifyFocusPulse {
+  from { transform:translate(-50%,-50%) scale(1.02); }
+  to   { transform:translate(-50%,-50%) scale(1.08); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .frondosa-hotspots .leaf.is-classify-focus {
+    animation:none;
+    transform:translate(-50%,-50%) scale(1.04);
+  }
+}
+
+
+/* =========================================================
+   FRONDOSA CLASSIFY BRANCHES v0.1
+   Current noun + three permanent classifier branches.
+   ========================================================= */
+.frondosa-hotspots .leaf.is-classify-word {
+  left:50% !important;
+  top:26% !important;
+  width:92px;
+  min-height:48px;
+  transform:translate(-50%,-50%) !important;
+  background:linear-gradient(145deg,rgba(136,185,60,.94),rgba(215,179,90,.92));
+  color:#10150d;
+  font-weight:800;
+  z-index:6;
+}
+
+.frondosa-hotspots .leaf.is-classify-branch {
+  width:96px;
+  min-height:44px;
+  transform:translate(-50%,-50%) !important;
+  background:rgba(17,81,42,.82);
+  border-color:rgba(242,216,138,.24);
+  z-index:5;
+}
+
+.frondosa-hotspots .leaf.classify-branch-concrete {
+  left:27% !important;
+  top:59% !important;
+}
+
+.frondosa-hotspots .leaf.classify-branch-abstract {
+  left:50% !important;
+  top:67% !important;
+}
+
+.frondosa-hotspots .leaf.classify-branch-proper {
+  left:73% !important;
+  top:59% !important;
+}
+
+.frondosa-hotspots .leaf.is-classify-choice {
+  outline:2px solid rgba(116,166,255,.78);
+  outline-offset:3px;
+  box-shadow:0 0 18px rgba(116,166,255,.34);
+}
+
+.frondosa-hotspots .leaf.is-classify-source {
+  background:linear-gradient(145deg,rgba(136,185,60,.92),rgba(215,179,90,.94));
+  color:#11150d;
+  box-shadow:0 0 22px rgba(242,216,138,.38);
+}
+
+.frondosa-hotspots .leaf.is-classify-choice.is-classify-source {
+  outline-color:rgba(116,166,255,.85);
+  box-shadow:
+    0 0 0 3px rgba(116,166,255,.20),
+    0 0 24px rgba(242,216,138,.40);
+}
+
+@media (max-width:600px) {
+  .frondosa-hotspots .leaf.is-classify-word {
+    width:78px;
+    min-height:42px;
+  }
+
+  .frondosa-hotspots .leaf.is-classify-branch {
+    width:78px;
+    min-height:40px;
+    font-size:.58rem;
+  }
+
+  .frondosa-hotspots .leaf.classify-branch-concrete {
+    left:23% !important;
+  }
+
+  .frondosa-hotspots .leaf.classify-branch-proper {
+    left:77% !important;
+  }
+}
+
+
+/* =========================================================
+   NOUN CLASSIFY SPEECH + FOCUS v0.3
+   Choice is prominent; canonical source remains a distinct state.
+   ========================================================= */
+.noun-classify-choices button.is-selected {
+  border-color:rgba(242,216,138,.88);
+  color:var(--gold-light);
+  background:rgba(215,179,90,.12);
+  outline:2px solid rgba(242,216,138,.72);
+  outline-offset:3px;
+  box-shadow:0 0 14px rgba(242,216,138,.18);
+}
+
+.noun-classify-choices button.is-source {
+  box-shadow:
+    inset 0 0 0 2px rgba(98,178,116,.62),
+    0 0 14px rgba(98,178,116,.16);
+}
+
+.noun-classify-choices button.is-selected.is-source {
+  outline-color:rgba(242,216,138,.88);
+  box-shadow:
+    inset 0 0 0 2px rgba(98,178,116,.68),
+    0 0 18px rgba(242,216,138,.20);
+}
+
+
+/* =========================================================
+   STAGE CONTROL HIERARCHY v0.2
+   Collection → Activity → contextual surface → Listen/Language
+   ========================================================= */
+.collection-panel,
+.activity-panel,
+.mode-panel,
+.noun-layer-panel {
+  width:min(100%,820px);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.collection-panel,
+.activity-panel,
+.mode-panel,
+.noun-layer-panel {
+  display:grid;
+  grid-template-columns:132px minmax(0,1fr);
+  align-items:center;
+  justify-content:stretch;
+  column-gap:12px;
+  row-gap:8px;
+}
+
+.collection-label,
+.activity-label,
+.mode-label,
+.noun-layer-label {
+  justify-self:end;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.collection-panel > button,
+.activity-panel > button,
+.mode-panel > button,
+.noun-layer-panel > button {
+  justify-self:start;
+}
+
+/* Keep sibling controls on one centered visual track. */
+.collection-panel,
+.activity-panel,
+.mode-panel,
+.noun-layer-panel {
+  grid-auto-flow:column;
+  grid-auto-columns:max-content;
+}
+
+/* Contextual activity surfaces sit after the chosen Activity. */
+.noun-classify-panel,
+.noun-layer-panel {
+  margin-top:2px;
+  margin-bottom:4px;
+}
+
+.mode-panel {
+  margin-top:4px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+
+@media (max-width:760px) {
+  .collection-panel,
+  .activity-panel,
+  .mode-panel,
+  .noun-layer-panel,
+  .stage-viewport[data-preview="portrait"] .collection-panel,
+  .stage-viewport[data-preview="portrait"] .activity-panel,
+  .stage-viewport[data-preview="portrait"] .mode-panel,
+  .stage-viewport[data-preview="portrait"] .noun-layer-panel {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  .collection-label,
+  .activity-label,
+  .mode-label,
+  .noun-layer-label {
+    width:100%;
+    justify-self:center;
+    text-align:center;
+    margin-bottom:1px;
+  }
+}
+
+
+/* =========================================================
+   PORTRAIT CONTROL FLOW v0.3
+   Prevent overlap by letting control groups wrap on their own rows.
+   ========================================================= */
+.stage-viewport[data-preview="portrait"] .collection-panel,
+.stage-viewport[data-preview="portrait"] .activity-panel,
+.stage-viewport[data-preview="portrait"] .mode-panel,
+.stage-viewport[data-preview="portrait"] .noun-layer-panel {
+  display:flex;
+  width:100%;
+  max-width:100%;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  flex-wrap:wrap;
+  gap:10px 8px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.stage-viewport[data-preview="portrait"] .collection-label,
+.stage-viewport[data-preview="portrait"] .activity-label,
+.stage-viewport[data-preview="portrait"] .mode-label,
+.stage-viewport[data-preview="portrait"] .noun-layer-label {
+  flex:0 0 100%;
+  width:100%;
+  text-align:center;
+  margin:0 0 2px;
+}
+
+.stage-viewport[data-preview="portrait"] .collection-button,
+.stage-viewport[data-preview="portrait"] .activity-button,
+.stage-viewport[data-preview="portrait"] .mode-button,
+.stage-viewport[data-preview="portrait"] .noun-layer-button {
+  flex:0 0 auto;
+  min-width:max-content;
+  max-width:100%;
+  margin:0;
+}
+
+.stage-viewport[data-preview="portrait"] .activity-panel {
+  padding-inline:8px;
+}
+
+.stage-viewport[data-preview="portrait"] .mode-panel {
+  padding:10px 8px 0;
+}
+
+@media (max-width:600px) {
+  .collection-panel,
+  .activity-panel,
+  .mode-panel,
+  .noun-layer-panel {
+    width:100%;
+    max-width:100%;
+  }
+
+  .collection-button,
+  .activity-button,
+  .mode-button,
+  .noun-layer-button {
+    flex:0 0 auto;
+    min-width:max-content;
+  }
+
+  .activity-panel,
+  .mode-panel {
+    gap:10px 8px;
+  }
+}
+
+
+/* =========================================================
+   CONTENT GROUP NAVIGATOR v0.1
+   Reusable queue/window control for large word collections.
+   ========================================================= */
+.content-group-panel {
+  width:min(100%,820px);
+  margin:0 auto 4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.content-group-panel[hidden] {
+  display:none;
+}
+
+.content-group-label {
+  font-family:var(--font-display);
+  font-size:.68rem;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.52);
+}
+
+.content-group-button {
+  min-height:30px;
+  padding:0 10px;
+  border:1px solid rgba(116,166,255,.26);
+  border-radius:999px;
+  background:rgba(20,42,78,.46);
+  color:rgba(220,232,255,.76);
+  font-family:var(--font-display);
+  font-size:.70rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.content-group-button.is-active {
+  border-color:rgba(242,216,138,.60);
+  color:var(--gold-light);
+  background:rgba(215,179,90,.10);
+  box-shadow:0 0 10px rgba(242,216,138,.10);
+}
+
+.stage-viewport[data-preview="portrait"] .content-group-panel {
+  width:100%;
+  justify-content:center;
+}
+
+/* Verb labels need a little more breathing room than Question Words. */
+.stage[data-collection="verbs"] .frondosa-hotspots .leaf span {
+  line-height:1.02;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"] .frondosa-hotspots .leaf {
+  width:66px;
+  min-height:40px;
+  padding:4px 5px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"] .frondosa-hotspots .leaf span {
+  font-size:.55rem;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  text-overflow:clip;
+}
+
+@media (max-width:600px) and (orientation:portrait) {
+  .stage[data-collection="verbs"] .frondosa-hotspots .leaf {
+    width:66px;
+    min-height:40px;
+  }
+
+  .stage[data-collection="verbs"] .frondosa-hotspots .leaf span {
+    font-size:.55rem;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+}
+
+
+/* =========================================================
+   VERB MORPHOLOGY · EN v0.1
+   English-only Regular / Irregular visual layer.
+   Color is paired with explicit text + contour treatment.
+   ========================================================= */
+.stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+  border-radius:28px;
+  transition:
+    background var(--motion-fast) var(--motion-ease),
+    box-shadow var(--motion-fast) var(--motion-ease),
+    outline-color var(--motion-fast) var(--motion-ease);
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="regular"] .frondosa {
+  background:
+    radial-gradient(ellipse at 50% 48%, rgba(70,150,105,.18), rgba(20,68,45,.06) 58%, transparent 74%);
+  box-shadow:inset 0 0 0 1px rgba(154,221,180,.22);
+  outline:1px solid rgba(154,221,180,.18);
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="irregular"] .frondosa {
+  background:
+    repeating-radial-gradient(ellipse at 50% 48%, rgba(119,102,188,.15) 0 12px, rgba(54,45,102,.06) 12px 24px, transparent 24px 38px);
+  box-shadow:inset 0 0 0 2px rgba(190,174,255,.20);
+  outline:2px dashed rgba(190,174,255,.22);
+  outline-offset:-5px;
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="regular"] .frondosa-visual {
+  filter:
+    drop-shadow(0 18px 24px rgba(0,0,0,.42))
+    drop-shadow(0 0 16px rgba(154,221,180,.26));
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"][data-verb-regularity="irregular"] .frondosa-visual {
+  filter:
+    drop-shadow(0 18px 24px rgba(0,0,0,.42))
+    drop-shadow(0 0 18px rgba(190,174,255,.30));
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"] .leaf.is-morphology-focus {
+  outline-offset:3px;
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"] .leaf.is-regular-verb.is-morphology-focus {
+  outline:2px solid rgba(154,221,180,.86);
+}
+
+.stage[data-collection="verbs"][data-activity="morphology"] .leaf.is-irregular-verb.is-morphology-focus {
+  outline:2px dashed rgba(220,210,255,.92);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+    transition:none;
+  }
+}
+
+
+/* =========================================================
+   VERB MORPHOLOGY PORTRAIT FINE PASS v0.2
+   Preserve logic; improve canopy balance and control rhythm.
+   ========================================================= */
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .activity-panel {
+  gap:10px 8px;
+  padding-inline:14px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .activity-button[data-activity="morphology"] {
+  flex-basis:auto;
+  margin-inline:28%;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .content-group-panel {
+  margin-top:2px;
+  margin-bottom:8px;
+  gap:8px;
+}
+
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+  height:360px;
+}
+
+/* Group 1: 14-item canopy — slightly wider rows for scanability. */
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-1  { left:8%;  top:50%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-2  { left:18%; top:31%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-3  { left:36%; top:40%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-4  { left:40%; top:17%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-5  { left:55%; top:31%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-6  { left:62%; top:17%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-7  { left:74%; top:40%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-8  { left:82%; top:27%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-9  { left:14%; top:64%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-10 { left:32%; top:58%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-11 { left:48%; top:62%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-12 { left:63%; top:58%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-13 { left:78%; top:64%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="1"] .frondosa-hotspots .leaf-14 { left:83%; top:49%; }
+
+/* Group 2: 14-item canopy — same visual capacity as Group 1. */
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-1  { left:8%;  top:50%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-2  { left:18%; top:31%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-3  { left:36%; top:40%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-4  { left:40%; top:17%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-5  { left:55%; top:31%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-6  { left:62%; top:17%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-7  { left:74%; top:40%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-8  { left:82%; top:27%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-9  { left:14%; top:64%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-10 { left:32%; top:58%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-11 { left:48%; top:62%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-12 { left:63%; top:58%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-13 { left:78%; top:64%; }
+.stage-viewport[data-preview="portrait"] .stage[data-collection="verbs"][data-activity="morphology"][data-verb-group="2"] .frondosa-hotspots .leaf-14 { left:83%; top:49%; }
+
+@media (max-width:600px) and (orientation:portrait) {
+  .stage[data-collection="verbs"][data-activity="morphology"] .frondosa {
+    height:360px;
+  }
+
+  .stage[data-collection="verbs"][data-activity="morphology"] .content-group-panel {
+    margin-bottom:8px;
+  }
+
+  .stage[data-collection="verbs"][data-activity="morphology"] .activity-button[data-activity="morphology"] {
+    margin-inline:28%;
+  }
+}
+
+
+/* =========================================================
+   VERB FUNCTION v0.1
+   Canonical semantic function; independent from morphology.
+   ========================================================= */
+.stage[data-collection="verbs"][data-activity="function"] .frondosa {
+  border-radius:28px;
+  background:radial-gradient(ellipse at 50% 48%, rgba(87,128,205,.10), rgba(12,35,69,.04) 62%, transparent 76%);
+}
+
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus {
+  transform:scale(1.08);
+  z-index:8;
+}
+
+/* ACTION = solid lexical-doing frame. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-action {
+  outline:2px solid rgba(242,216,138,.88);
+  outline-offset:3px;
+}
+
+/* MOVEMENT = directional side echoes, not color alone. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-movement {
+  box-shadow:
+    -10px 0 0 -7px rgba(135,198,255,.88),
+    10px 0 0 -7px rgba(135,198,255,.88),
+    0 0 18px rgba(135,198,255,.30);
+}
+
+/* STATE = calm double frame. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-state {
+  border-style:double;
+  border-width:3px;
+  box-shadow:0 0 0 3px rgba(189,174,255,.24), 0 0 18px rgba(189,174,255,.20);
+}
+
+/* Reserved visual contracts for future corpus members. */
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-quality {
+  border-radius:50%;
+}
+
+.stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus.has-function-existence {
+  outline:3px dotted rgba(190,236,196,.88);
+  outline-offset:4px;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .stage[data-collection="verbs"][data-activity="function"] .leaf.is-function-focus {
+    transform:none;
+  }
+}
+
+
+/* =========================================================
+   GOLDEN FRONDOSA COMPACT LOCAL TEST v0.1
+   Diagnostic local backdrop only. 80% visibility on purpose.
+   Never receives pointer events or pedagogical authority.
+   ========================================================= */
+.frondosa::before{
+  content:"";
+  position:absolute;
+  inset:0 1% 22px;
+  z-index:0;
+  pointer-events:none;
+  background-image:url("./assets/golden-frondosa-compact-test.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:120% auto;
+  opacity:.38;
+}
+
+.frondosa-visual{
+  z-index:1;
+}
+
+.frondosa-hotspots{
+  z-index:4;
+}
+
+
+/* =========================================================
+   FRONDOSA FUNCTIONAL TRANSLUCENCY TEST v0.1
+   Keeps pedagogical hotspots fully visible while reducing
+   only the real functional-tree artwork.
+   ========================================================= */
+.frondosa-visual{
+  opacity:.12;
+}

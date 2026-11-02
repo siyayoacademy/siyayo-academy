@@ -1,0 +1,126 @@
+{
+  "id": "piano-plano-siyayo-v0.2",
+  "status": "experimental-permanent-stage",
+  "mapping": "chromatic-octave",
+  "range": {
+    "from": "C4",
+    "to": "C5"
+  },
+  "white_key_count": 8,
+  "black_key_count": 5,
+  "semantic_boundary": {
+    "rule": "musical-note-identity-is-independent-from-semantic-identity",
+    "evidence": "none"
+  },
+  "animation_layers": [
+    "key-tint-layer",
+    "key-glow-layer",
+    "key-ripple-layer",
+    "key-memory-layer",
+    "key-label-layer"
+  ],
+  "keys": [
+    {
+      "id": "C4",
+      "solfege": "DÓ",
+      "frequency_hz": 261.63,
+      "kind": "white",
+      "slot": 1
+    },
+    {
+      "id": "C#4",
+      "solfege": "DÓ♯",
+      "frequency_hz": 277.18,
+      "kind": "black",
+      "slot": 1.5
+    },
+    {
+      "id": "D4",
+      "solfege": "RÉ",
+      "frequency_hz": 293.66,
+      "kind": "white",
+      "slot": 2
+    },
+    {
+      "id": "D#4",
+      "solfege": "RÉ♯",
+      "frequency_hz": 311.13,
+      "kind": "black",
+      "slot": 2.5
+    },
+    {
+      "id": "E4",
+      "solfege": "MI",
+      "frequency_hz": 329.63,
+      "kind": "white",
+      "slot": 3
+    },
+    {
+      "id": "F4",
+      "solfege": "FÁ",
+      "frequency_hz": 349.23,
+      "kind": "white",
+      "slot": 4
+    },
+    {
+      "id": "F#4",
+      "solfege": "FÁ♯",
+      "frequency_hz": 369.99,
+      "kind": "black",
+      "slot": 4.5
+    },
+    {
+      "id": "G4",
+      "solfege": "SOL",
+      "frequency_hz": 392,
+      "kind": "white",
+      "slot": 5
+    },
+    {
+      "id": "G#4",
+      "solfege": "SOL♯",
+      "frequency_hz": 415.3,
+      "kind": "black",
+      "slot": 5.5
+    },
+    {
+      "id": "A4",
+      "solfege": "LÁ",
+      "frequency_hz": 440,
+      "kind": "white",
+      "slot": 6
+    },
+    {
+      "id": "A#4",
+      "solfege": "LÁ♯",
+      "frequency_hz": 466.16,
+      "kind": "black",
+      "slot": 6.5
+    },
+    {
+      "id": "B4",
+      "solfege": "SI",
+      "frequency_hz": 493.88,
+      "kind": "white",
+      "slot": 7
+    },
+    {
+      "id": "C5",
+      "solfege": "DÓ↑",
+      "frequency_hz": 523.25,
+      "kind": "white",
+      "slot": 8
+    }
+  ],
+  "active_capabilities": {
+    "chromatic_black_keys": true,
+    "magic_pianinho_avatar": true,
+    "body_hotspots": true,
+    "shared_musical_event_bus": true,
+    "semantic_event_boundary": true
+  },
+  "reserved_future_layers": {
+    "score_reader": true,
+    "canonical_lexicon_binding": true
+  }
+}

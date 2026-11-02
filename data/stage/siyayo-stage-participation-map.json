@@ -1,0 +1,882 @@
+{
+  "version": "1.0.0",
+  "id": "siyayo-stage-participation-map",
+  "purpose": "Define which existing SIYAYO semantic and linguistic assets may participate in the Piano Stage, why they belong, how they are presented, and whether they are exploration-only or may later feed canonical evidence.",
+  "principles": [
+    "The stage presents and orchestrates; canonical adaptive authority evaluates.",
+    "A content item enters the stage only when its source, learner action, actor roles, language coverage and evidence boundary are known.",
+    "Semantic identity has precedence over shared musical-note identity whenever an exact content item is known.",
+    "Language is a lens; collection and activity are independent dimensions.",
+    "Roles are tendencies, not prisons; Experience bindings select active capabilities.",
+    "Homologated branches are protected historical behavior: future implementations extend them or explicitly supersede them through a documented migration."
+  ],
+  "admissionContract": {
+    "requiredQuestions": [
+      "whatIsIt",
+      "source",
+      "learnerAction",
+      "actorOrchestration",
+      "languageCoverage",
+      "evidenceRole",
+      "destinationOrPurpose"
+    ],
+    "evidenceRoles": [
+      "exploration-only",
+      "opportunity-only",
+      "candidate-evidence-after-explicit-learner-action",
+      "canonical-only"
+    ],
+    "rejectWhen": [
+      "source is unclear",
+      "activity has no learner-facing purpose",
+      "presentation would manufacture evidence",
+      "language coverage is implied but not present",
+      "navigation authority would be duplicated locally"
+    ]
+  },
+  "dimensions": {
+    "content": [
+      "question-words",
+      "nouns",
+      "pronouns",
+      "verbs",
+      "adjectives",
+      "adverbs",
+      "articles",
+      "prepositions",
+      "conjunctions",
+      "interjections",
+      "numerals",
+      "experience-vocabulary",
+      "perspectives",
+      "social-identity"
+    ],
+    "activities": [
+      "explore",
+      "listen",
+      "compare",
+      "classify",
+      "choose",
+      "answer",
+      "build",
+      "transform",
+      "tripiano-echo",
+      "semantic-cadence",
+      "context-hunt",
+      "perspective-shift"
+    ],
+    "actors": {
+      "piano-flat": [
+        "instrument",
+        "accompaniment",
+        "chord-or-note-anchor",
+        "visual-resonance"
+      ],
+      "pianinho-magico": [
+        "melody",
+        "interactive-agent",
+        "call-response",
+        "visual-resonance"
+      ],
+      "frondosa": [
+        "perceptual-guide",
+        "semantic-surface",
+        "speak-note",
+        "speak-chord",
+        "speak-word",
+        "speak-example",
+        "mark-pulse",
+        "semantic-hint",
+        "visual-resonance",
+        "silent-resonance",
+        "language-sequence"
+      ]
+    },
+    "languages": [
+      "en",
+      "es",
+      "pt",
+      "tripiano-sequence"
+    ]
+  },
+  "sources": [
+    {
+      "id": "academy-manifest",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/academy.json",
+      "use": "Ten Kinds of Words and trilingual chapter manifest"
+    },
+    {
+      "id": "noun-chapter",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "chapters/01-nouns/chapter.json",
+      "use": "Noun definitions, grammar, classifications, examples and conversations"
+    },
+    {
+      "id": "verb-examples",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/lexicon/verbs/action-examples.json",
+      "use": "Trilingual verb examples and target words"
+    },
+    {
+      "id": "verb-grid",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/grammar/verb-grid.json",
+      "use": "Auxiliaries, modals, lexical verb families, time/aspect and rules"
+    },
+    {
+      "id": "nice-party-experiences",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/learning/experience-seeds.json",
+      "use": "Nice Party situations, vocabulary, Question Words, perspectives and toroidal continuation"
+    },
+    {
+      "id": "nice-party-accessories",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/learning/nice-party-accessories.json",
+      "use": "Contextual collections such as table setting, decoration, music, drinks and social identity"
+    },
+    {
+      "id": "college-experiences",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/learning/college-experience-seeds.json",
+      "use": "Second trilingual narrative universe"
+    },
+    {
+      "id": "question-word-capabilities",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "data/learning/question-word-capabilities.json",
+      "use": "Canonical QW intention, skill and evidence boundary"
+    },
+    {
+      "id": "social-identity-bridge",
+      "branch": "jaguar/verb-explorer-resume-live-wire",
+      "path": "js/social-identity-bridge.js",
+      "use": "Country, nationality, profession and workplace semantic routing"
+    }
+  ],
+  "participation": [
+    {
+      "id": "question-words",
+      "status": "active",
+      "whatIsIt": "14 semantic information-gap identities presented as Frondosa leaves.",
+      "source": [
+        "question-word-capabilities",
+        "nice-party-experiences"
+      ],
+      "learnerAction": [
+        "touch",
+        "listen",
+        "request-support",
+        "answer"
+      ],
+      "activities": [
+        "explore",
+        "answer",
+        "tripiano-echo"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "semantic-surface",
+          "speech",
+          "wait-surface",
+          "micro-support"
+        ],
+        "pianinho": [
+          "note-resonance",
+          "wait-archetype"
+        ],
+        "piano": [
+          "musical-anchor",
+          "visual-resonance"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "evidenceRole": "candidate-evidence-after-explicit-learner-action",
+      "destinationOrPurpose": "Question-gap diagnosis and adaptive evaluation request.",
+      "nextRefinement": "Localize the full 14 Questions pedagogical flow, not only labels and simple speech."
+    },
+    {
+      "id": "nouns-core",
+      "status": "canonical-layered-prototype",
+      "whatIsIt": "Canonical trilingual Noun classifications presented as selectable Frondosa layers.",
+      "source": [
+        "noun-chapter"
+      ],
+      "learnerAction": [
+        "touch",
+        "listen",
+        "compare"
+      ],
+      "activities": [
+        "explore",
+        "tripiano-echo"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "speak-word",
+          "exact-semantic-resonance"
+        ],
+        "pianinho": [
+          "musical-resonance"
+        ],
+        "piano": [
+          "musical-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "evidenceRole": "exploration-only",
+      "destinationOrPurpose": "Prove reusable collection switching without QW-specific logic.",
+      "nextRefinement": "Add a learner-facing Classify activity after Explore is homologated."
+    },
+    {
+      "id": "noun-classifications",
+      "status": "active-classify-prototype",
+      "whatIsIt": "Concrete, Abstract and Proper noun classifications with examples and related vocabulary.",
+      "source": [
+        "noun-chapter"
+      ],
+      "learnerAction": [
+        "classify",
+        "compare",
+        "choose-example"
+      ],
+      "activities": [
+        "explore",
+        "classify",
+        "context-hunt",
+        "tripiano-echo"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "collection-surface",
+          "speak-word",
+          "speak-example",
+          "semantic-hint"
+        ],
+        "pianinho": [
+          "choice-response"
+        ],
+        "piano": [
+          "category-pulse"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "evidenceRole": "opportunity-only",
+      "destinationOrPurpose": "Learner can now choose Concrete / Abstract / Proper; the stage records the choice without local evaluation and may reveal the canonical source classification on request."
+    },
+    {
+      "id": "verb-actions",
+      "status": "canonical-28-active-grouped-explore-plus-en-morphology",
+      "whatIsIt": "Trilingual lexical verbs with example sentences and target words.",
+      "source": [
+        "verb-examples"
+      ],
+      "learnerAction": [
+        "touch",
+        "listen",
+        "identify-target",
+        "compare"
+      ],
+      "activities": [
+        "explore",
+        "tripiano-echo",
+        "semantic-cadence",
+        "context-hunt"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "speak-word",
+          "speak-example",
+          "target-highlight"
+        ],
+        "pianinho": [
+          "melodic-target"
+        ],
+        "piano": [
+          "sentence-pulse",
+          "musical-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "evidenceRole": "opportunity-only",
+      "destinationOrPurpose": "All 28 canonical trilingual Verb Actions are available through two equal Frondosa windows (1–14, 15–28), with Explore and EN-only Morphology.",
+      "nextRefinement": "Homologate Group 2 items 15–28 in Explore and EN Morphology; then audit ES/PT morphology sources."
+    },
+    {
+      "id": "verb-systems",
+      "status": "ready-candidate",
+      "whatIsIt": "Auxiliary DO/BE/HAVE, modal core and lexical-verb structural families.",
+      "source": [
+        "verb-grid"
+      ],
+      "learnerAction": [
+        "identify-function",
+        "choose-carrier",
+        "transform-form"
+      ],
+      "activities": [
+        "classify",
+        "choose",
+        "transform",
+        "build"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "speak-word",
+          "semantic-hint",
+          "structure-label"
+        ],
+        "pianinho": [
+          "melody-or-choice"
+        ],
+        "piano": [
+          "structural-anchor",
+          "chord-or-pulse"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt-contextual-explanations"
+      ],
+      "evidenceRole": "opportunity-only",
+      "destinationOrPurpose": "Support Xespirito-style verb diagnostics and later tense/form/mode play."
+    },
+    {
+      "id": "nice-party-vocabulary",
+      "status": "ready-candidate",
+      "whatIsIt": "Vocabulary already linked to Shopping, Preparing and Having Dinner experiences.",
+      "source": [
+        "nice-party-experiences"
+      ],
+      "learnerAction": [
+        "explore",
+        "choose",
+        "context-hunt"
+      ],
+      "activities": [
+        "explore",
+        "choose",
+        "context-hunt",
+        "tripiano-echo"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "contextual-leaves",
+          "speak-word",
+          "semantic-hint"
+        ],
+        "pianinho": [
+          "choice-response"
+        ],
+        "piano": [
+          "scene-or-pulse-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "context-dependent; verify lexical translations before presentation"
+      ],
+      "evidenceRole": "exploration-only",
+      "destinationOrPurpose": "Let the stage participate in the canonical Nice Party context without inventing a separate vocabulary universe."
+    },
+    {
+      "id": "nice-party-accessories",
+      "status": "ready-candidate",
+      "whatIsIt": "Table setting, decoration, music, clothing/accessories, invitation/gifts and drinks.",
+      "source": [
+        "nice-party-accessories"
+      ],
+      "learnerAction": [
+        "explore",
+        "choose",
+        "match-to-stage"
+      ],
+      "activities": [
+        "context-hunt",
+        "choose",
+        "tripiano-echo"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "category-surface",
+          "speak-word"
+        ],
+        "pianinho": [
+          "choice-response"
+        ],
+        "piano": [
+          "stage-marker"
+        ]
+      },
+      "languageCoverage": [
+        "verify per item before activation"
+      ],
+      "evidenceRole": "exploration-only",
+      "destinationOrPurpose": "Add scene-specific playable collections to the four-stage Nice Party arc."
+    },
+    {
+      "id": "nice-party-perspectives",
+      "status": "ready-candidate",
+      "whatIsIt": "Describing, narrating, debating and concluding lines with trilingual examples.",
+      "source": [
+        "nice-party-experiences"
+      ],
+      "learnerAction": [
+        "listen",
+        "compare",
+        "choose-perspective",
+        "produce-response"
+      ],
+      "activities": [
+        "perspective-shift",
+        "compare",
+        "semantic-cadence"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "speak-example",
+          "perspective-label"
+        ],
+        "pianinho": [
+          "prosodic-or-melodic-response"
+        ],
+        "piano": [
+          "spectral-line-or-harmonic-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "evidenceRole": "opportunity-only",
+      "destinationOrPurpose": "Let one situation be experienced through four discourse perspectives."
+    },
+    {
+      "id": "social-identity",
+      "status": "ready-candidate",
+      "whatIsIt": "Country, nationality, profession and workplace prompts already routed to QW, kinds of words and verb functions.",
+      "source": [
+        "nice-party-accessories",
+        "social-identity-bridge"
+      ],
+      "learnerAction": [
+        "answer",
+        "compare",
+        "contextualize"
+      ],
+      "activities": [
+        "question-gap",
+        "context-hunt",
+        "build"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "prompt",
+          "semantic-hint"
+        ],
+        "pianinho": [
+          "learner-agent-response"
+        ],
+        "piano": [
+          "structural-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "experience-dependent; bridge is semantic, presentation must supply language lens"
+      ],
+      "evidenceRole": "candidate-evidence-after-explicit-learner-action",
+      "destinationOrPurpose": "Connect personal-context prompts to noun/adjective/preposition and verb-function learning without duplicating routing."
+    },
+    {
+      "id": "college-universe",
+      "status": "ready-candidate",
+      "whatIsIt": "Going to College, Studying, Reading, Writing and Talking experiences.",
+      "source": [
+        "college-experiences"
+      ],
+      "learnerAction": [
+        "explore-context",
+        "answer",
+        "follow-toroidal-sequence"
+      ],
+      "activities": [
+        "question-gap",
+        "context-hunt",
+        "perspective-shift"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "experience-surface",
+          "question-surface"
+        ],
+        "pianinho": [
+          "interactive-agent"
+        ],
+        "piano": [
+          "scene-or-musical-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "en",
+        "es",
+        "pt"
+      ],
+      "evidenceRole": "canonical-only",
+      "destinationOrPurpose": "Second narrative world proving that the stage is reusable beyond Nice Party."
+    },
+    {
+      "id": "remaining-ten-kinds",
+      "status": "registered-not-yet-admitted",
+      "whatIsIt": "Pronouns, adjectives, adverbs, articles, prepositions, conjunctions, interjections and numerals.",
+      "source": [
+        "academy-manifest"
+      ],
+      "learnerAction": [
+        "to-be-defined-from-chapter-contracts"
+      ],
+      "activities": [
+        "to-be-audited"
+      ],
+      "actorOrchestration": {
+        "frondosa": [
+          "candidate-semantic-surface"
+        ],
+        "pianinho": [
+          "candidate-interactive-agent"
+        ],
+        "piano": [
+          "candidate-structural-anchor"
+        ]
+      },
+      "languageCoverage": [
+        "manifest-trilingual; item-level coverage requires audit"
+      ],
+      "evidenceRole": "exploration-only",
+      "destinationOrPurpose": "Do not activate merely because the chapter exists; audit each chapter for playable items and explicit learner actions first."
+    }
+  ],
+  "recommendedJaguarOrder": [
+    "homologate Verbs → Function across groups 1–14 and 15–28 in EN / ES / PT / Tripiano",
+    "audit independent Spanish and Portuguese morphology sources",
+    "map Time/Tense as a separate timeline/orbit dimension",
+    "map Sentence Form separately",
+    "map Xespirito auxiliary/modal orchestration",
+    "continue canonical Verb expansion in 14-item windows toward at least 200 verbs"
+  ],
+  "stageRouting": {
+    "version": "1.0",
+    "order": [
+      "collection",
+      "activity",
+      "language-lens",
+      "actors",
+      "learner-action",
+      "pedagogical-result"
+    ],
+    "rules": [
+      "Activities are contextual capabilities, not permanent stage buttons.",
+      "14 Questions belongs to the Question Words collection.",
+      "Semantic Cadence remains a reusable capability and is invoked only by an Experience/activity binding.",
+      "Language lens never changes pedagogical authority.",
+      "Presentation remains non-evaluative unless an explicit learner action is forwarded to canonical authority."
+    ],
+    "currentBindings": {
+      "question-words": [
+        "explore",
+        "questions"
+      ],
+      "nouns": [
+        "explore",
+        "classify"
+      ],
+      "semantic-cadence": "contextual-only",
+      "verbs": [
+        "explore",
+        "morphology-en"
+      ]
+    },
+    "visualHierarchy": {
+      "status": "implemented-awaiting-homologation",
+      "order": [
+        "collection",
+        "activity",
+        "contextual-activity-surface",
+        "listen-language",
+        "status",
+        "instrument"
+      ],
+      "note": "Control order was clarified without changing pedagogical authority or activity contracts."
+    },
+    "groupingContract": {
+      "status": "prototype",
+      "purpose": "Large collections are presented in Frondosa-sized windows rather than overcrowding the canopy.",
+      "currentExample": {
+        "collection": "verbs",
+        "windowSize": 14,
+        "groups": [
+          "1-14",
+          "15-28"
+        ]
+      },
+      "reusableFor": [
+        "adjectives",
+        "alphabet",
+        "other-large-word-collections"
+      ],
+      "rule": "Changing group changes only the visible collection window; it does not create Evidence, GREEN, or assessment."
+    },
+    "futureOrthogonalDimensions": {
+      "verbs": {
+        "morphology": [
+          "regular",
+          "irregular"
+        ],
+        "function": [
+          "quality",
+          "state",
+          "movement",
+          "existential",
+          "routine",
+          "modal",
+          "conditional"
+        ],
+        "time": [
+          "present",
+          "past",
+          "future",
+          "present-period",
+          "past-period",
+          "future-period"
+        ],
+        "sentenceForm": [
+          "affirmative",
+          "negative",
+          "interrogative"
+        ],
+        "auxiliaryModal": [
+          "do",
+          "be",
+          "have",
+          "can",
+          "could",
+          "may",
+          "might",
+          "must",
+          "shall",
+          "should",
+          "will",
+          "would"
+        ],
+        "rule": "These dimensions must remain distinct and be revealed contextually rather than accumulated as permanent simultaneous controls."
+      },
+      "adjectives": {
+        "semanticValence": [
+          "positive",
+          "neutral",
+          "negative"
+        ],
+        "degree": [
+          "positive/base",
+          "comparative",
+          "superlative"
+        ],
+        "rule": "Semantic valence and grammatical degree are separate dimensions and must not share one visual meaning."
+      }
+    },
+    "accessibilityRules": [
+      "Color is never the sole carrier of meaning.",
+      "Portrait may have independent wrapping/layout treatment without breaking Auto/Landscape.",
+      "Avoid overlap, overflow and unnecessary truncation.",
+      "Choice, canonical source, WAIT, Evidence and GREEN must remain visually distinguishable."
+    ],
+    "historicalCheckpoint": {
+      "id": "PIANO-STAGE-CONTRACT-01",
+      "status": "active",
+      "note": "Contract introduced after Question Words, Nouns Explore/Classify, Stage visual hierarchy and grouped Verb Actions had established multiple homologated branches."
+    }
+  },
+  "developmentContract": {
+    "id": "siyayo-stage-development-contract",
+    "path": "docs/SIYAYO-STAGE-DEVELOPMENT-CONTRACT.md",
+    "status": "active",
+    "purpose": "Preserve homologated Stage branches, historical implementation logic, forward architectural rules, and feature lifecycle so future work extends rather than silently replaces validated behavior.",
+    "requiredBeforeImplementation": [
+      "read development contract",
+      "read stage participation map",
+      "identify affected homologated invariants",
+      "map new routine before implementation",
+      "update feature state after testing/homologation"
+    ],
+    "lifecycle": [
+      "registered",
+      "mapped",
+      "implemented",
+      "tested",
+      "homologated"
+    ],
+    "protectionRule": "A homologated branch must not be silently removed, merged, renamed, or semantically repurposed. Any superseding change requires an explicit migration rationale and GO."
+  },
+  "verbSystemsDevelopmentMap": {
+    "path": "docs/SIYAYO-VERB-SYSTEMS-DEVELOPMENT-MAP.md",
+    "checkpoint": "PIANO-STAGE-VERB-MAP-01",
+    "status": "verb-function-implemented-awaiting-homologation",
+    "criticalRule": "Current regularity is English-specific and must not be inferred for Spanish or Portuguese.",
+    "next": [
+      "homologate grouped Verb Actions Explore",
+      "implement EN-only Regular/Irregular morphology view",
+      "audit independent ES/PT morphology sources",
+      "map Verb Function separately",
+      "map Time/Tense separately",
+      "map Sentence Form separately",
+      "map Xespirito auxiliary/modal layer"
+    ],
+    "currentImplementation": {
+      "activity": "morphology",
+      "scope": "en-only",
+      "source": "data/lexicon/verbs/actions.json",
+      "dimensions": [
+        "regularity",
+        "lemma",
+        "stored English forms"
+      ],
+      "visualChannels": [
+        "Frondosa aura/background",
+        "solid-vs-dashed contour",
+        "semantic status text"
+      ],
+      "speech": "English lemma + regular/irregular relation + past form",
+      "evidence": "none",
+      "waits": [
+        "Spanish morphology",
+        "Portuguese morphology",
+        "Tripiano regularity comparison"
+      ]
+    },
+    "visualPass": {
+      "scope": "Portrait only",
+      "preserved": [
+        "Auto",
+        "Landscape",
+        "exact semantic resonance",
+        "grouping",
+        "speech",
+        "evidence boundary"
+      ],
+      "refinements": [
+        "balanced Group 1 canopy spacing",
+        "expanded Group 2 seven-item canopy distribution",
+        "clearer Morphology activity vertical rhythm",
+        "group navigator spacing"
+      ]
+    },
+    "homologatedCheckpoint": "PIANO-STAGE-VERB-MORPH-EN-02",
+    "morphologyStatus": "28-item-en-morphology-homologated",
+    "functionImplementation": {
+      "activity": "function",
+      "source": "data/lexicon/verbs/actions.json#verbFunction",
+      "canonicalAxis": [
+        "quality",
+        "state",
+        "movement",
+        "action",
+        "existence"
+      ],
+      "current28Coverage": [
+        "action",
+        "movement",
+        "state"
+      ],
+      "overlapAllowed": true,
+      "languages": [
+        "en",
+        "es",
+        "pt",
+        "tripiano"
+      ],
+      "evidence": "none"
+    }
+  },
+  "verbExpansion28": {
+    "status": "canonical-admitted-piano-implemented-awaiting-homologation",
+    "sourceBranch": "jaguar/verb-explorer-resume-live-wire",
+    "canonicalValidation": "Corpus Integrity PASS on PR #3 head 9d6dc6b9c1c43cb38faa97cdec5082b79b6b79b1",
+    "targetWindowing": [
+      "1-14",
+      "15-28"
+    ],
+    "admitted": [
+      "find",
+      "need",
+      "serve",
+      "arrive",
+      "begin",
+      "understand",
+      "share"
+    ],
+    "stageContract": "Two equal 14-item Frondosa windows; grouping remains pagination only."
+  },
+  "sharedResponsiveContract": {
+    "id": "siyayo-stage-container-responsive-contract",
+    "path": "docs/SIYAYO-STAGE-CONTAINER-RESPONSIVE-CONTRACT.md",
+    "status": "R-02-homologated",
+    "commonFiles": [
+      "css/siyayo-responsive-stage.css",
+      "js/siyayo-responsive-preview.js"
+    ],
+    "origin": "Piano Stage",
+    "reusableFor": [
+      "Piano",
+      "Verb DNA",
+      "Tri-Language Verb Explorer",
+      "Experience pages",
+      "future SIYAYO modules"
+    ],
+    "invariants": [
+      "development preview controller is distinct from real-device responsive runtime",
+      "touch-first real devices use Auto and do not require the preview toolbar",
+      "pages consume the shared controller instead of recreating Auto/Portrait/Landscape",
+      "page-specific responsive overrides are allowed without forking the shared controller",
+      "cross-branch adoption requires explicit GO in the target branch"
+    ],
+    "workMap": {
+      "canonicalPath": "docs/SIYAYO-WORK-MAP.md",
+      "currentLocation": "jaguar/verb-explorer-resume-live-wire",
+      "status": "not-mutated-from-piano-branch",
+      "next": "register reference there only after explicit target-branch authorization"
+    },
+    "latestFix": {
+      "issue": "Migration inserted a literal backslash-n in the stylesheet line and failed to include the shared responsive preview script.",
+      "fix": [
+        "replace literal backslash-n with a real HTML newline",
+        "load js/siyayo-responsive-preview.js before piano/piano.js"
+      ],
+      "effect": "Restores developer Auto / Portrait / Landscape controller without changing responsive runtime or pedagogy."
+    }
+  },
+  "verbScaleRoadmap": {
+    "minimumTarget": 200,
+    "currentCanonicalCount": 28,
+    "windowSize": 14,
+    "naturalFullWindowMilestone": 210,
+    "windows": "1–14, 15–28, then successive 14-item groups",
+    "rule": "Never fill a window by inventing Stage-only verbs; canonical corpus admission and validation come first."
+  }
+}
