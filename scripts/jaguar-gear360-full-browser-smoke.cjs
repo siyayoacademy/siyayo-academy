@@ -10,13 +10,13 @@ const assert=require('node:assert/strict');
    await page.goto('http://127.0.0.1:8765/verb-explorer.html?mode=experience&experience='+id,{waitUntil:'networkidle'});
    for(const language of ['en','es','pt']){
     await page.locator('[data-experience-language="'+language+'"]').click();
-    const btn=page.locator('#questionGear [data-question-index]').filter({hasText:/^(WHY|POR QUÉ|POR QUÊ)$/i}).first();
+    const btn=page.locator('#questionGear [data-question-index]').filter({hasText:/^(WHY|POR QUÉ|POR QUÊ|POR QUE)$/i}).first();
     assert.ok(await btn.count(),'Missing WHY selection: '+id+' '+language);
     await btn.click();
     const panel=page.locator('#whyAssessmentPanel');
     await panel.waitFor({state:'visible',timeout:10000});
     const heading=await panel.locator('h3').first().textContent();
-    assert.ok(heading&&/WHY|POR QUÉ|POR QUÊ/i.test(heading),'Wrong no-NICK practice '+id+' '+language);
+    assert.ok(heading&&/WHY|POR QUÉ|POR QUÊ|POR QUE/i.test(heading),'Wrong no-NICK practice '+id+' '+language);
     const question=panel.locator('.why-probe-question-text').first();
     await question.waitFor({state:'visible'});
     const shape=await question.boundingBox();
