@@ -63,3 +63,9 @@ This document is the single checkpoint for the main-laboratory transition and li
 - Enhanced full-candidate integrity script to verify referenced static runtime files, duplicate script avoidance and required specialized GEAR mount identifiers. Commits `615801e`, `6a83bf8`.
 - Corrected false assumption that learner identity/trail surface modules require individual script tags; existing driver references are checked instead. Corrected CSS regex.
 - Actual CI conclusion and browser homologation unverified; **do not promote**. Next must be real CI logs + no-NICK/with-NICK browser regression, followed by reconciled single-main-only commit and rollback plan.
+
+## M1.17 — verified historical CI, browser gate added (2026-11-02)
+- Actual GitHub Actions workflow listing showed candidate run #5 at `a093041` succeeded on 2026-10-30; run #4 at `6a83bf8` succeeded; #3 at `615801e` failed. Historical CI green is a real result but NOT current code's browser certification.
+- Added real Chromium smoke `scripts/jaguar-gear360-full-browser-smoke.cjs` at `296cb93` for S3/S4 × EN/ES/PT without NICK and readable question width.
+- Added browser smoke to full-candidate workflow at `630ce3a`. Current run result pending; do not label new browser gate GREEN until verified.
+- MAIN and D1 unchanged. Promotion still blocked on current CI + candidate browser verification + divergence reconciliation.
