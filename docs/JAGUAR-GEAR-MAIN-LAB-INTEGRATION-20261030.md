@@ -74,3 +74,9 @@ This document is the single checkpoint for the main-laboratory transition and li
 - GitHub Actions run #9 (41508517609) failed ONLY at browser installation, while the first four substantive integrity/WHY tests passed. Logs confirmed Playwright 1.56.1 cannot install Chromium dependencies on ubuntu26.04-x64 in this runner.
 - Removed duplicate install/browser-smoke steps; changed workflow to supported official container `mcr.microsoft.com/playwright:v1.56.1-noble` and one browser-run sequence. Commit `03c73cd`.
 - New run #10 (41513666956) was observed in progress initializing container; no final PASS was yet established. Do not promote to main until browser test passes and full version is visually checked.
+
+## M1.19 — browser reproduced missing no-NICK pedagogy (2026-11-02)
+- TinyFish wallet check: USD 8 available. GitHub Actions run #10 `41513666956`: source integrity and all 3 WHY checks PASS, browser launch PASS, **functional browser test failed**: `#whyAssessmentPanel` remained hidden at S3 WHY without NICK.
+- Root guard: `mount()` previously required canonical catalog/skill/specification providers before pedagogical rendering. These services may not be initialized without learner identity; display must not rely on them.
+- Commit `4377d0a`: stand-alone S3/S4 WHY display from Experience canonical `thinkingMind` data, without coordinator/skill/evaluation service. It never submits evidence or issues credit. Attempts original authored source when available and falls back to independent display.
+- NEXT GATE: obtain real browser CI PASS on this commit; audit any failures and preserve canonical with-NICK paths. No MAIN/D1/Worker modifications until gates pass.
