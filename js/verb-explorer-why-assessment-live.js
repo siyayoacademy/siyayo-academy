@@ -72,6 +72,43 @@ function mountExploration(doc,el,experience,language,skills,catalog,source){
   });
   el.hidden=false;return true;
 }
+// Canonical presentation-only fallback. No learner, coordinator or skill service needed.
+function mountStandaloneStudy(doc,el,experience,language){
+  if(!experience||!['having-dinner','after-dinner-conversation'].includes(text(experience.id)))return false;
+  var q=(experience.thinkingMind||[]).find(function(item){return item.questionWord==='why';});
+  if(!q)return false;
+  var label={en:'WHY · CONTEXTUAL PRACTICE',es:'POR QUÉ · PRÁCTICA CONTEXTUAL',pt:'POR QUÊ · PRÁTICA CONTEXTUAL'}[language];
+  var title=doc.createElement('h3');title.textContent=label;el.appendChild(title);
+  var questions=[q.question&&q.question[language]].filter(Boolean);
+  var grounding=q.reasonGrounding;
+  var alternatives=Array.isArray(grounding&&grounding.alternatives)?grounding.alternatives:[];
+  questions.forEach(function(question){
+    var block=doc.createElement('div');block.className='why-contextual-reason-probe';
+    var btn=doc.createElement('button');btn.type='button';btn.className='why-probe-question why-probe-question-card';
+    var speaker=doc.createElement('span');speaker.className='siyayo-speaker';speaker.setAttribute('aria-hidden','true');
+    var phrase=doc.createElement('span');phrase.className='why-probe-question-text';phrase.textContent=question;
+    btn.appendChild(speaker);btn.appendChild(phrase);
+    btn.addEventListener('click',function(){if(!el.hidden&&isExploringWhy())root.SIYAYOVerbExplorerExperienceRuntime?.speak?.(question,language);});
+    block.appendChild(btn);
+    var choices=doc.createElement('div');choices.className='why-probe-options';
+    alternatives.forEach(function(alt){
+      var response=alt.response&&alt.response[language];if(!response)return;
+      var option=doc.createElement('button');option.type='button';option.className='why-probe-option';option.textContent=response;
+      option.addEventListener('click',function(){
+        if(el.hidden||!isExploringWhy())return;
+        Array.prototype.forEach.call(choices.querySelectorAll('.why-probe-option'),function(item){item.setAttribute('aria-pressed',String(item===option));});
+        root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'why-exploration',phase:'exploratory-choice',selected:alt.id,experienceId:experience.id,language:language,questionWord:'why'});
+      });choices.appendChild(option);
+    });
+    block.appendChild(choices);el.appendChild(block);
+  });
+  var note=doc.createElement('p');note.textContent={
+    en:'Exploratory study · no assessment credit',
+    es:'Estudio exploratorio · sin crédito de evaluación',
+    pt:'Estudo exploratório · sem crédito de avaliação'
+  }[language];el.appendChild(note);
+  el.hidden=false;return true;
+}
 function mount(input){
   input=input||{};
   var doc=input.document||root.document,el=panel(doc);
@@ -88,14 +125,18 @@ function mount(input){
   var evidenceBridge=root.AdaptiveWhyContextualReasonProbeEvidenceBridge;
   var boundary=root.AdaptiveWhyContextualReasonProbeAttemptBoundary;
   var events=root.SIYAYOVerbExplorerLearnerEvent;
-  if(!experience||!['en','es','pt'].includes(language)||!catalog||!skills||!source||
-    typeof catalog.getExperience!=='function'||typeof source.resolve!=='function')return false;
+  if(!experience||!['en','es','pt'].includes(language))return false;
+  // Presentation is independent of whether a NICK has initialized the
+  // canonical skill/catalog/evaluation services.
+  if(!catalog||!skills||!source||
+    typeof catalog.getExperience!=='function'||typeof source.resolve!=='function')
+    return mountStandaloneStudy(doc,el,experience,language);
   // Pedagogical display is independent of evaluator services and learner identity.
   // A missing assessment service must never suppress an authored WHY practice.
   if(!coordinator||!results||!evidenceBridge||!boundary||!events||
     typeof coordinator.snapshot!=='function'||typeof coordinator.submitObservedAttempt!=='function'){
     return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
-      mountExploration(doc,el,experience,language,skills,catalog,source);
+      (mountExploration(doc,el,experience,language,skills,catalog,source)||mountStandaloneStudy(doc,el,experience,language));
   }
   var active=coordinator.snapshot(),decision=active&&active.session&&active.session.decision;
   var feedbackKey=decision&&decision.assessmentScope?decision.assessmentScope.key+'|'+text(experience.id):'';
@@ -103,11 +144,11 @@ function mount(input){
   if(!decision||text(decision.skill)!=='why.use.contextual-reason'||
     text(definition&&definition.id)!==text(decision.skill)){
     return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
-      mountExploration(doc,el,experience,language,skills,catalog,source);
+      (mountExploration(doc,el,experience,language,skills,catalog,source)||mountStandaloneStudy(doc,el,experience,language));
   }
   if(decision.assessmentScope&&decision.assessmentScope.language!==language){
     return ['having-dinner','after-dinner-conversation'].includes(text(experience.id))&&
-      mountExploration(doc,el,experience,language,skills,catalog,source);
+      (mountExploration(doc,el,experience,language,skills,catalog,source)||mountStandaloneStudy(doc,el,experience,language));
   }
   var origin=catalog.getExperience(text(decision.experienceId));
   if(!origin)return false;
