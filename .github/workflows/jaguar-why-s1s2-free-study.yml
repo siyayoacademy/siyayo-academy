@@ -8,6 +8,8 @@ permissions:
 jobs:
   s1-s2-free-pedagogy:
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,3 +21,9 @@ jobs:
         run: node scripts/test-s3-why-canonical-green-cycle.js
       - name: Preserve S3 language re-entry
         run: node scripts/test-why-s3-language-reentry.cjs
+      - name: Install Playwright test runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Chromium S1 S2 EN ES PT without NICK
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/siyayo-why-s1s2.log 2>&1 &
+          node scripts/jaguar-why-s1s2-browser-smoke.cjs
