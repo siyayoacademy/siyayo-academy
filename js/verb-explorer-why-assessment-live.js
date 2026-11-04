@@ -72,6 +72,54 @@ function mountExploration(doc,el,experience,language,skills,catalog,source){
   });
   el.hidden=false;return true;
 }
+// S1/S2 WHY: already-authored 90C.6 study, never an evaluation.
+// It is intentionally available without learner identity, coordinator or assessmentTarget.
+function mountEarlyWhyStudy(doc,el,experience,language){
+  if(!experience||!['shopping-for-dinner','preparing-dinner'].includes(text(experience.id)))return false;
+  var question=(experience.thinkingMind||[]).find(function(q){return q.questionWord==='why';});
+  var grounding=question&&question.presentationGrounding;
+  if(!grounding||grounding.assessmentAuthority!==false||grounding.assessmentEvidence!==false||
+    grounding.tense!=='present'||grounding.form!=='affirmative'||!Array.isArray(grounding.alternatives))return false;
+  var labels={
+    en:{title:'WHY · CONTEXTUAL STUDY',notice:'FREE EXPLORATION · PRESENT / AFFIRMATIVE reference · no assessment credit',instruction:'Choose a contextual answer to explore'},
+    es:{title:'POR QUÉ · ESTUDIO CONTEXTUAL',notice:'EXPLORACIÓN LIBRE · referencia PRESENTE / AFIRMATIVO · sin crédito evaluativo',instruction:'Elige una respuesta contextual para explorar'},
+    pt:{title:'POR QUE · ESTUDO CONTEXTUAL',notice:'EXPLORAÇÃO LIVRE · referência PRESENTE / AFIRMATIVO · sem crédito avaliativo',instruction:'Escolha uma resposta contextual para explorar'}
+  }[language];
+  if(!labels)return false;
+  var questionText=grounding.questionOverride?.[language]||question.question?.[language];
+  if(!text(questionText))return false;
+  var heading=doc.createElement('h3');heading.textContent=labels.title;el.appendChild(heading);
+  var note=doc.createElement('p');note.className='why-contract-progress';note.textContent=labels.notice;el.appendChild(note);
+  var section=doc.createElement('div');section.className='why-contextual-reason-probe';
+  var instruction=doc.createElement('h4');instruction.className='why-probe-step';instruction.textContent=labels.instruction;section.appendChild(instruction);
+  var questionButton=doc.createElement('button');questionButton.type='button';questionButton.className='why-probe-question why-probe-question-card';
+  var speaker=doc.createElement('span');speaker.className='siyayo-speaker';speaker.setAttribute('aria-hidden','true');
+  var phrase=doc.createElement('span');phrase.className='why-probe-question-text';phrase.textContent=questionText;
+  questionButton.appendChild(speaker);questionButton.appendChild(phrase);
+  questionButton.addEventListener('click',function(){
+    if(!el.hidden&&isExploringWhy())root.SIYAYOVerbExplorerExperienceRuntime?.speak?.(questionText,language);
+  });
+  section.appendChild(questionButton);
+  var options=doc.createElement('div');options.className='why-probe-options';
+  grounding.alternatives.forEach(function(alternative){
+    var response=text(alternative.response?.[language]);if(!response)return;
+    var button=doc.createElement('button');button.type='button';button.className='why-probe-option';
+    button.textContent=response;button.setAttribute('aria-pressed','false');
+    button.addEventListener('click',function(){
+      if(el.hidden||!isExploringWhy())return;
+      options.querySelectorAll('.why-probe-option').forEach(function(item){
+        item.setAttribute('aria-pressed',String(item===button));
+      });
+      // PATITA may observe; no evidence, credits, or assessment calls.
+      root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({
+        source:'why-exploration',phase:'exploratory-choice',
+        selected:alternative.id,experienceId:experience.id,language:language,questionWord:'why'
+      });
+    });options.appendChild(button);
+  });
+  if(!options.children.length)return false;
+  section.appendChild(options);el.appendChild(section);el.hidden=false;return true;
+}
 // Canonical presentation-only fallback. No learner, coordinator or skill service needed.
 function mountStandaloneStudy(doc,el,experience,language){
   if(!experience||!['having-dinner','after-dinner-conversation'].includes(text(experience.id)))return false;
@@ -126,6 +174,9 @@ function mount(input){
   var boundary=root.AdaptiveWhyContextualReasonProbeAttemptBoundary;
   var events=root.SIYAYOVerbExplorerLearnerEvent;
   if(!experience||!['en','es','pt'].includes(language))return false;
+  // S1/S2 WHY is approved for authored free study, not contract assessment.
+  if(['shopping-for-dinner','preparing-dinner'].includes(text(experience.id)))
+    return mountEarlyWhyStudy(doc,el,experience,language);
   // Presentation is independent of whether a NICK has initialized the
   // canonical skill/catalog/evaluation services.
   if(!catalog||!skills||!source||
