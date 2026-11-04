@@ -16,7 +16,7 @@ assert.deepEqual(map.keys.map(k=>k.id),ids,"Map key order changed");
 assert.equal(parsed.filter(k=>k.kind==="white").length,8);
 assert.equal(parsed.filter(k=>k.kind==="black").length,5);
 for(const k of parsed){const m=map.keys.find(x=>x.id===k.id);assert.equal(k.kind,m.kind,k.id+" kind");assert.ok(Math.abs(k.frequency-m.frequency_hz)<0.011,k.id+" frequency mismatch");}
-const hotspots=(html.match(/class="pianinho-hotspot"/g)||[]).length;
+const hotspots=(html.match(/<button[^>]*class="pianinho-hotspot(?: [^"]*)?"[^>]*data-note="[^"]+"/g)||[]).length;
 const leaves=(html.match(/class="leaf leaf-/g)||[]).length;
 assert.equal(hotspots,8,"M1 hotspots changed");
 assert.equal(leaves,14,"M2 leaf count changed");
