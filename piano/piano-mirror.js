@@ -14,7 +14,7 @@ const anchor=new Set(notes.slice(4,17).map(n=>n[0]));
 const map=new Map(notes.map(n=>[n[0],n]));
 const white=notes.filter(n=>n[3]==="white");
 const nodes=new Map(),minis=new Map(),extensions=new Map();
-const coords=[[34,28],[27,39],[22,52],[26,67],[37,79],[49,84],[62,79],[74,67],[78,52],[73,39],[66,28],[60,18],[49,14]];
+const coords=[[24,34],[16,43],[11,53],[13,65],[22,77],[36,86],[50,89],[64,86],[78,77],[87,65],[89,53],[84,43],[76,34]];
 const colors=["#f6cb5c","#47ceff","#d97bff","#f4dc3c","#ff9a39","#eec958","#3bd4ff","#f1c75e","#f9a04e","#f1c75e","#dd6cff","#f5e36c","#ffd25a"];
 const ring=document.createElement("div");ring.className="mirror-ring mirror-smile-grid";ring.setAttribute("role","group");ring.setAttribute("aria-label","Aro musical de 13 notas");
 notes.filter(n=>anchor.has(n[0])).forEach((n,i)=>{
@@ -23,9 +23,9 @@ b.style.setProperty("--x",coords[i][0]+"%");b.style.setProperty("--y",coords[i][
 b.textContent=n[1];b.setAttribute("aria-label",n[1]+" "+n[0]);b.addEventListener("click",()=>play(n[0],true));ring.appendChild(b);nodes.set(n[0],b);
 });
 const mini=document.createElement("div");mini.className="mirror-mini";mini.setAttribute("aria-label","Tecladinho de 21 notas G sustenido 3 a Mi 5");
-white.forEach(n=>{const b=document.createElement("button");b.type="button";b.className="mirror-mini-white";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b)});
+white.forEach((n,i)=>{const b=document.createElement("button");b.style.setProperty("--arc-i",String(i));b.type="button";b.className="mirror-mini-white";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b)});
 notes.filter(n=>n[3]==="black").forEach(n=>{
-const idx=white.findIndex(w=>notes.indexOf(w)>notes.indexOf(n));
+const idx=white.findIndex(w=>notes.indexOf(w)>notes.indexOf(n));b.style.setProperty("--arc-i",String(idx-.5));
 const b=document.createElement("button");b.type="button";b.className="mirror-mini-black";b.style.left=(idx/12*100)+"%";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b);
 });
 avatar.dataset.mirror21="true";avatar.classList.add("mirror-hybrid");avatar.append(mini,ring);
