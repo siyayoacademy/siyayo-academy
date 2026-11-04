@@ -3,11 +3,13 @@ const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const source=fs.readFileSync('js/verb-explorer-why-assessment-live.js','utf8');
 const experiences=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','utf8')).items;
 function node(tag){
- return {tag,children:[],attributes:{},hidden:false,textContent:'',appendChild(child){this.children.push(child);return child},
+ const el={tag,children:[],attributes:{},hidden:false,textContent:'',appendChild(child){this.children.push(child);return child},
  setAttribute(k,v){this.attributes[k]=v},insertBefore(child){this.children.push(child)},
  querySelector(){return null},
  querySelectorAll(selector){let out=[];const scan=n=>{for(const c of n.children){if(selector==='.why-probe-option'&&c.className==='why-probe-option')out.push(c);scan(c)}};scan(this);return out},
  addEventListener(k,fn){(this.handlers||(this.handlers={}))[k]=fn}};
+ Object.defineProperty(el,'innerHTML',{get(){return ''},set(){this.children=[]}});
+ return el;
 }
 function makeDom(){
  const view=node('section');view.id='experienceView';const doc={createElement:node,getElementById(id){if(id==='experienceView')return view;return view.children.find(c=>c.id===id)||null}};return doc;
@@ -27,7 +29,7 @@ for(const exp of experiences.filter(e=>['shopping-for-dinner','preparing-dinner'
   const panel=document.getElementById('whyAssessmentPanel');
   assert.equal(panel.hidden,false);
   const names=panel.children.flatMap(c=>c.children||[]);
-  assert.ok(names.some(n=>n.className==='why-probe-question'),'Missing free WHY question '+exp.id+' '+lang);
+  assert.ok(names.some(n=>n.className?.split(' ').includes('why-probe-question')),'Missing free WHY question '+exp.id+' '+lang);
   const answers=panel.querySelectorAll('.why-probe-option');
   assert.equal(answers.length,2);
   assert.ok(panel.children.some(n=>/FREE|LIBRE|LIVRE/.test(n.textContent)),'No free-only disclosure');
