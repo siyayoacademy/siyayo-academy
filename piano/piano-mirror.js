@@ -25,8 +25,8 @@ b.textContent=n[1];b.setAttribute("aria-label",n[1]+" "+n[0]);b.addEventListener
 const mini=document.createElement("div");mini.className="mirror-mini";mini.setAttribute("aria-label","Tecladinho de 21 notas G sustenido 3 a Mi 5");
 white.forEach((n,i)=>{const b=document.createElement("button");b.style.setProperty("--arc-i",String(i));b.type="button";b.className="mirror-mini-white";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b)});
 notes.filter(n=>n[3]==="black").forEach(n=>{
-const idx=white.findIndex(w=>notes.indexOf(w)>notes.indexOf(n));b.style.setProperty("--arc-i",String(idx-.5));
-const b=document.createElement("button");b.type="button";b.className="mirror-mini-black";b.style.left=(idx/12*100)+"%";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b);
+const idx=white.findIndex(w=>notes.indexOf(w)>notes.indexOf(n));
+const b=document.createElement("button");b.style.setProperty("--arc-i",String(idx-.5));b.type="button";b.className="mirror-mini-black";b.style.left=(idx/12*100)+"%";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b);
 });
 avatar.dataset.mirror21="true";avatar.classList.add("mirror-hybrid");avatar.append(mini,ring);
 const firstWhite=keyboard.querySelector('.piano-key:not(.black-key)');
