@@ -1,0 +1,193 @@
+{
+  "schema": "siyayo.m1-m4-mirror.v0",
+  "status": "homologated-layout-proposal-runtime-off",
+  "range": {
+    "from": "G#3",
+    "to": "E5",
+    "total": 21,
+    "white": 12,
+    "black": 9
+  },
+  "anchor": {
+    "from": "C4",
+    "to": "C5",
+    "count": 13,
+    "ringClockwiseFromLeft": [
+      "C4",
+      "C#4",
+      "D4",
+      "D#4",
+      "E4",
+      "F4",
+      "F#4",
+      "G4",
+      "G#4",
+      "A4",
+      "A#4",
+      "B4",
+      "C5"
+    ],
+    "ciSequence": [
+      "C4",
+      "E4",
+      "G4",
+      "C5"
+    ]
+  },
+  "scope": {
+    "outerNotes": "sound-solfege-only",
+    "semantic": null,
+    "evaluation": false,
+    "evidence": false,
+    "legacyChordPreserved": true
+  },
+  "notes": [
+    {
+      "id": "G#3",
+      "solfege": "SOL♯",
+      "frequency_hz": 207.65,
+      "kind": "black",
+      "scope": "extension"
+    },
+    {
+      "id": "A3",
+      "solfege": "LÁ",
+      "frequency_hz": 220,
+      "kind": "white",
+      "scope": "extension"
+    },
+    {
+      "id": "A#3",
+      "solfege": "LÁ♯",
+      "frequency_hz": 233.08,
+      "kind": "black",
+      "scope": "extension"
+    },
+    {
+      "id": "B3",
+      "solfege": "SI",
+      "frequency_hz": 246.94,
+      "kind": "white",
+      "scope": "extension"
+    },
+    {
+      "id": "C4",
+      "solfege": "DÓ",
+      "frequency_hz": 261.63,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "C#4",
+      "solfege": "DÓ♯",
+      "frequency_hz": 277.18,
+      "kind": "black",
+      "scope": "anchor"
+    },
+    {
+      "id": "D4",
+      "solfege": "RÉ",
+      "frequency_hz": 293.66,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "D#4",
+      "solfege": "RÉ♯",
+      "frequency_hz": 311.13,
+      "kind": "black",
+      "scope": "anchor"
+    },
+    {
+      "id": "E4",
+      "solfege": "MI",
+      "frequency_hz": 329.63,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "F4",
+      "solfege": "FÁ",
+      "frequency_hz": 349.23,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "F#4",
+      "solfege": "FÁ♯",
+      "frequency_hz": 369.99,
+      "kind": "black",
+      "scope": "anchor"
+    },
+    {
+      "id": "G4",
+      "solfege": "SOL",
+      "frequency_hz": 392,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "G#4",
+      "solfege": "SOL♯",
+      "frequency_hz": 415.3,
+      "kind": "black",
+      "scope": "anchor"
+    },
+    {
+      "id": "A4",
+      "solfege": "LÁ",
+      "frequency_hz": 440,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "A#4",
+      "solfege": "LÁ♯",
+      "frequency_hz": 466.16,
+      "kind": "black",
+      "scope": "anchor"
+    },
+    {
+      "id": "B4",
+      "solfege": "SI",
+      "frequency_hz": 493.88,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "C5",
+      "solfege": "DÓ↑",
+      "frequency_hz": 523.25,
+      "kind": "white",
+      "scope": "anchor"
+    },
+    {
+      "id": "C#5",
+      "solfege": "DÓ♯",
+      "frequency_hz": 554.37,
+      "kind": "black",
+      "scope": "extension"
+    },
+    {
+      "id": "D5",
+      "solfege": "RÉ",
+      "frequency_hz": 587.33,
+      "kind": "white",
+      "scope": "extension"
+    },
+    {
+      "id": "D#5",
+      "solfege": "RÉ♯",
+      "frequency_hz": 622.25,
+      "kind": "black",
+      "scope": "extension"
+    },
+    {
+      "id": "E5",
+      "solfege": "MI",
+      "frequency_hz": 659.25,
+      "kind": "white",
+      "scope": "extension"
+    }
+  ]
+}
