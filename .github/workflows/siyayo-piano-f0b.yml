@@ -1,0 +1,23 @@
+name: SIYAYO Piano F0b compatibility
+on:
+  push:
+    branches:
+      - jaguar/piano-stage-v0.1
+    paths:
+      - 'piano/**'
+      - 'scripts/test-siyayo-piano-f0b-contracts.cjs'
+      - '.github/workflows/siyayo-piano-f0b.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  f0b-static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout current specialized branch
+        uses: actions/checkout@v4
+      - name: Show Node runtime
+        run: node --version
+      - name: Validate original 4+1 static contracts
+        run: node scripts/test-siyayo-piano-f0b-contracts.cjs
