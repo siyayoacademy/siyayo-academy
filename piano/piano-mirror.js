@@ -14,9 +14,9 @@ const anchor=new Set(notes.slice(4,17).map(n=>n[0]));
 const map=new Map(notes.map(n=>[n[0],n]));
 const white=notes.filter(n=>n[3]==="white");
 const nodes=new Map(),minis=new Map(),extensions=new Map();
-const coords=[[22,24],[12,39],[8,56],[14,72],[26,86],[48,94],[69,86],[85,74],[92,58],[91,41],[82,24],[68,12],[50,5]];
+const coords=[[34,28],[27,39],[22,52],[26,67],[37,79],[49,84],[62,79],[74,67],[78,52],[73,39],[66,28],[60,18],[49,14]];
 const colors=["#f6cb5c","#47ceff","#d97bff","#f4dc3c","#ff9a39","#eec958","#3bd4ff","#f1c75e","#f9a04e","#f1c75e","#dd6cff","#f5e36c","#ffd25a"];
-const ring=document.createElement("div");ring.className="mirror-ring";ring.setAttribute("role","group");ring.setAttribute("aria-label","Aro musical de 13 notas");
+const ring=document.createElement("div");ring.className="mirror-ring mirror-smile-grid";ring.setAttribute("role","group");ring.setAttribute("aria-label","Aro musical de 13 notas");
 notes.filter(n=>anchor.has(n[0])).forEach((n,i)=>{
 const b=document.createElement("button");b.type="button";b.className="mirror-node";b.dataset.note=n[0];b.dataset.chromatic=String(n[3]==="black");
 b.style.setProperty("--x",coords[i][0]+"%");b.style.setProperty("--y",coords[i][1]+"%");b.style.setProperty("--tone",colors[i]);
@@ -41,6 +41,8 @@ else keyboard.appendChild(b);
 extensions.set(n[0],b);
 }
 keyboard.classList.add("mirror-keyboard-21");
+// White-key order is explicit; black keys are positioned over white-key boundaries.
+white.forEach((n,index)=>{const b=keyboard.querySelector('[data-note="'+n[0]+'"]');if(b)b.style.setProperty("--mirror-white-index",String(index));});
 const switches=document.createElement("div");switches.className="mirror-switch";
 switches.innerHTML='<small>ESPELHO MUSICAL · 13 NO ARO / 21 NO TECLADO</small>';
 const original=document.createElement("button"),hybrid=document.createElement("button");
@@ -49,19 +51,20 @@ function setView(on){avatar.classList.toggle("mirror-hybrid",on);keyboard.classL
 original.addEventListener("click",()=>setView(false));hybrid.addEventListener("click",()=>setView(true));
 switches.append(original,hybrid);avatar.parentElement.insertAdjacentElement("afterend",switches);setView(true);
 let audio=null;
-function extensionSound(n){
+function extensionSound(n,octaveMultiplier=1){
 try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;if(!audio)audio=new C();if(audio.state==="suspended")audio.resume();
-const osc=audio.createOscillator(),gain=audio.createGain(),now=audio.currentTime;osc.type="sine";osc.frequency.value=n[2];gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(.18,now+.025);gain.gain.exponentialRampToValueAtTime(.0001,now+.5);osc.connect(gain);gain.connect(audio.destination);osc.start(now);osc.stop(now+.52);}catch(e){console.warn("Mirror extension audio unavailable",e)}
+const osc=audio.createOscillator(),gain=audio.createGain(),now=audio.currentTime;osc.type="sine";osc.frequency.value=n[2]*octaveMultiplier;gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(.18,now+.025);gain.gain.exponentialRampToValueAtTime(.0001,now+.5);osc.connect(gain);gain.connect(audio.destination);osc.start(now);osc.stop(now+.52);}catch(e){console.warn("Mirror extension audio unavailable",e)}
 }
 function play(id,fromAvatar){
 const n=map.get(id);if(!n)return;
 if(anchor.has(id)){
+if(fromAvatar&&n[3]==="black"){extensionSound(n,2);light(id);return;}
 if(fromAvatar&&n[3]==="white"){const hotspot=avatar.querySelector('.pianinho-hotspot[data-note="'+id+'"]');if(hotspot){hotspot.click();return}}
 const key=keyboard.querySelector('.piano-key[data-note="'+id+'"]');
 if(key)key.dispatchEvent(new PointerEvent("pointerdown",{bubbles:true,cancelable:true,pointerType:"touch"}));
 return;
 }
-extensionSound(n);
+extensionSound(n,fromAvatar?2:1);
 const noteStatus=document.getElementById("noteStatus"),wordStatus=document.getElementById("wordStatus");
 if(noteStatus)noteStatus.textContent=n[1]+" · "+id;
 if(wordStatus)wordStatus.textContent="SOLFEGE · extensão musical";
