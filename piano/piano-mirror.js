@@ -36,7 +36,7 @@ const b=document.createElement("button");b.type="button";b.className="mirror-ext
 b.dataset.note=n[0];b.setAttribute("aria-label",n[1]+" "+n[0]+" — solfejo musical");b.innerHTML='<span class="mirror-extension-label">'+n[1]+'<small>'+n[0]+'</small></span>';
 b.addEventListener("pointerdown",e=>{e.preventDefault();play(n[0],false)});
 if(n[3]==="white"&&notes.indexOf(n)<4)keyboard.insertBefore(b,firstWhite);
-else if(n[3]==="white")keyboard.insertBefore(b,lastWhite.nextSibling);
+else if(n[3]==="white")keyboard.appendChild(b);
 else keyboard.appendChild(b);
 extensions.set(n[0],b);
 }
