@@ -89,6 +89,16 @@ function mountEarlyWhyStudy(doc,el,experience,language){
   var questionText=grounding.questionOverride?.[language]||question.question?.[language];
   if(!text(questionText))return false;
   var heading=doc.createElement('h3');heading.textContent=labels.title;el.appendChild(heading);
+  var state=root.SIYAYOVerbExplorerAdaptiveStateBridge?.getState?.();
+  if(state&&(state.experienceTense!=='present'||state.experienceForm!=='affirmative')){
+    var pending=doc.createElement('p');pending.className='why-contract-progress';
+    pending.textContent={
+      en:'Contextual WHY practice is authored for PRESENT / AFFIRMATIVE only. This GEAR selection remains free study; no assessment is available.',
+      es:'La práctica contextual POR QUÉ está redactada solo para PRESENTE / AFIRMATIVO. Esta selección GEAR permanece como estudio libre, sin evaluación.',
+      pt:'A prática contextual POR QUE está redigida apenas para PRESENTE / AFIRMATIVO. Esta seleção GEAR permanece em estudo livre, sem avaliação.'
+    }[language];
+    el.appendChild(pending);el.hidden=false;return true;
+  }
   var note=doc.createElement('p');note.className='why-contract-progress';note.textContent=labels.notice;el.appendChild(note);
   var section=doc.createElement('div');section.className='why-contextual-reason-probe';
   var instruction=doc.createElement('h4');instruction.className='why-probe-step';instruction.textContent=labels.instruction;section.appendChild(instruction);
