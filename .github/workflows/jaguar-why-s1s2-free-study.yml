@@ -1,0 +1,21 @@
+name: JAGUAR WHY S1 S2 free study regression
+on:
+  push:
+    branches: [jaguar/why-s1s2-free-study-20261104]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  s1-s2-free-pedagogy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: No-NICK S1 S2 WHY multilingual study
+        run: node scripts/test-why-s1s2-free-study.cjs
+      - name: Preserve canonical S3-S4 WHY assessment
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Preserve S3 language re-entry
+        run: node scripts/test-why-s3-language-reentry.cjs
