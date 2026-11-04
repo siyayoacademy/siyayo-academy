@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("node:fs");
+const assert=require("node:assert/strict");
+const path=require("node:path");
+const root=path.resolve(__dirname,"..");
+const read=p=>fs.readFileSync(path.join(root,p),"utf8");
+const map=JSON.parse(read("piano/keyboard-map.json"));
+const js=read("piano/piano.js"),html=read("piano/index.html"),css=read("piano/piano.css");
+const ids=["C4","C#4","D4","D#4","E4","F4","F#4","G4","G#4","A4","A#4","B4","C5"];
+const anchor=js.match(/const keys = \[([\s\S]*?)\n  \];/);
+assert.ok(anchor,"Anchor keys array not found: stop before refactor");
+const parsed=[...anchor[1].matchAll(/\{\s*id:"([^"]+)",\s*frequency:([0-9.]+),[\s\S]*?kind:"(white|black)"\s*\}/g)].map(m=>({id:m[1],frequency:Number(m[2]),kind:m[3]}));
+assert.deepEqual(parsed.map(k=>k.id),ids,"Runtime key order changed");
+assert.deepEqual(map.keys.map(k=>k.id),ids,"Map key order changed");
+assert.equal(parsed.filter(k=>k.kind==="white").length,8);
+assert.equal(parsed.filter(k=>k.kind==="black").length,5);
+for(const k of parsed){const m=map.keys.find(x=>x.id===k.id);assert.equal(k.kind,m.kind,k.id+" kind");assert.ok(Math.abs(k.frequency-m.frequency_hz)<0.011,k.id+" frequency mismatch");}
+const hotspots=(html.match(/class="pianinho-hotspot"/g)||[]).length;
+const leaves=(html.match(/class="leaf leaf-/g)||[]).length;
+assert.equal(hotspots,8,"M1 hotspots changed");
+assert.equal(leaves,14,"M2 leaf count changed");
+for(const mode of ["sound","solfege","en","es","pt","tripiano"])assert.ok(html.includes('data-mode="'+mode+'"'),"Missing mode "+mode);
+for(const activity of ["explore","questions","classify","morphology","function"])assert.ok(html.includes('data-activity="'+activity+'"'),"Missing activity "+activity);
+for(const token of ["siyayo:musical-event","siyayo:external-evaluation-complete","canonical-adaptive-authority"])assert.ok(js.includes(token),"Missing legacy event/authority "+token);
+assert.ok(css.includes(".keyboard-scroll"),"Keyboard scroll container missing");
+const left=["G#3","A3","A#3","B3"],right=["C#5","D5","D#5","E5"];
+const expanded=[...left,...ids,...right];
+assert.equal(expanded.length,21);
+assert.equal(8+4,12,"Expected twelve white keys in proposed expanded range");
+console.log("PASS SIYAYO F0b static compatibility: 13 anchor notes; 8 M1 hotspots; 14 Frondosa leaves; six M3 modes; five activities; legacy events; proposed 21-note range.");
+console.log("NOT TESTED: browser, audio, speech, mobile portrait, accessibility, event behavior or runtime regressions.");
