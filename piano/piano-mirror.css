@@ -176,3 +176,15 @@
 }
 .stage-viewport[data-preview="portrait"] .mirror-keyboard-21{width:100%!important;min-width:0!important}
 .stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden!important}
+
+/* ELO 21.5 — compact Piano Plano; fix extension black keys, preserve musical events. */
+.mirror-keyboard-21{height:clamp(145px,19vw,225px)!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="A#3"]{left:8.333333%!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="G#3"]{left:0%!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="C#5"]{left:83.333333%!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="D#5"]{left:91.666667%!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key{background:linear-gradient(#191a20,#050608)!important;color:#fff!important;border:1px solid #292b32!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key .mirror-extension-label{color:#fff!important}
+.mirror-keyboard-21>.mirror-extension-key.black-key.is-mirror-lit{background:#1689c5!important}
+@media(max-width:600px){.mirror-keyboard-21{height:clamp(135px,37vw,195px)!important}}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-21{height:clamp(135px,37vw,195px)!important}
