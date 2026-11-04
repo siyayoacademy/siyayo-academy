@@ -30,7 +30,7 @@ const b=document.createElement("button");b.style.setProperty("--arc-i",String(id
 });
 avatar.dataset.mirror21="true";avatar.classList.add("mirror-hybrid");avatar.append(mini,ring);
 const firstWhite=keyboard.querySelector('.piano-key:not(.black-key)');
-const lastWhite=keyboard.querySelector('.piano-key[data-note="C5"]');
+
 for(const n of notes.filter(n=>!anchor.has(n[0]))){
 const b=document.createElement("button");b.type="button";b.className="mirror-extension-key "+(n[3]==="black"?"black-key":"white-key");
 b.dataset.note=n[0];b.setAttribute("aria-label",n[1]+" "+n[0]+" — solfejo musical");b.innerHTML='<span class="mirror-extension-label">'+n[1]+'<small>'+n[0]+'</small></span>';
@@ -41,6 +41,7 @@ else keyboard.appendChild(b);
 extensions.set(n[0],b);
 }
 keyboard.classList.add("mirror-keyboard-21");
+// Explicit left-to-right musical ordering; CSS grid does not rely on append order.
 // White-key order is explicit; black keys are positioned over white-key boundaries.
 white.forEach((n,index)=>{const b=keyboard.querySelector('[data-note="'+n[0]+'"]');if(b)b.style.setProperty("--mirror-white-index",String(index));});
 const switches=document.createElement("div");switches.className="mirror-switch";
