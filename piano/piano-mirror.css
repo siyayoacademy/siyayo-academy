@@ -33,15 +33,15 @@
 .pianinho.mirror-hybrid .mirror-ring[hidden],.pianinho.mirror-hybrid .mirror-mini[hidden]{display:none}
 .mirror-keyboard-21{grid-template-columns:repeat(12,minmax(0,1fr));min-width:720px}
 .mirror-keyboard-21 .piano-key.black-key{width:5.6%;min-width:22px;max-width:none}
-.mirror-keyboard-21 .black-key[data-note="C#4"]{left:33.333%}
-.mirror-keyboard-21 .black-key[data-note="D#4"]{left:41.667%}
-.mirror-keyboard-21 .black-key[data-note="F#4"]{left:58.333%}
-.mirror-keyboard-21 .black-key[data-note="G#4"]{left:66.667%}
-.mirror-keyboard-21 .black-key[data-note="A#4"]{left:75%}
+.mirror-keyboard-21 .black-key[data-note="C#4"]{left:25%}
+.mirror-keyboard-21 .black-key[data-note="D#4"]{left:33.333%}
+.mirror-keyboard-21 .black-key[data-note="F#4"]{left:50%}
+.mirror-keyboard-21 .black-key[data-note="G#4"]{left:58.333%}
+.mirror-keyboard-21 .black-key[data-note="A#4"]{left:66.667%}
 .mirror-extension-key{min-width:0;cursor:pointer;touch-action:manipulation}
 .mirror-extension-key.white-key{position:relative;border:0;border-right:1px solid #2c3646;background:linear-gradient(#fff,#e2e6f1);color:#182333}
 .mirror-extension-key.black-key{width:5.6%;min-width:22px;max-width:none}
-.mirror-extension-key.black-key[data-note="G#3"]{left:8.333%}
+.mirror-extension-key.black-key[data-note="G#3"]{left:0%}
 .mirror-extension-key.black-key[data-note="A#3"]{left:16.667%}
 .mirror-extension-key.black-key[data-note="C#5"]{left:83.333%}
 .mirror-extension-key.black-key[data-note="D#5"]{left:91.667%}
