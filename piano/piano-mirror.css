@@ -62,3 +62,36 @@
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid{height:330px}
 .stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-21){overflow-x:auto}
 .stage-viewport[data-preview="portrait"] .mirror-keyboard-21{width:720px;min-width:720px;grid-template-columns:repeat(12,minmax(0,1fr))}
+
+/* ELO PORTRAIT SMILE GRID — visual grid is invisible; note IDs are unchanged. */
+.pianinho.mirror-hybrid{width:min(100%,690px);height:440px;max-width:100%;overflow:visible}
+.pianinho.mirror-hybrid .mirror-ring{inset:0;overflow:visible}
+.pianinho.mirror-hybrid .pianinho-visual{inset:24% 22% 22%;width:56%;height:54%}
+.pianinho.mirror-hybrid .mirror-mini{left:24%;width:52%;top:57%;height:19%;border-radius:5px 5px 24px 24px}
+.pianinho.mirror-hybrid .mirror-node[data-note="C4"],
+.pianinho.mirror-hybrid .mirror-node[data-note="C5"]{border:3px solid #f33b3b;box-shadow:0 0 13px #fa4848,inset 0 0 0 3px rgba(255,255,255,.09)}
+.pianinho.mirror-hybrid .mirror-ring::after{content:"";position:absolute;left:24%;top:68%;width:52%;height:16%;border-bottom:2px solid rgba(247,204,73,.32);border-radius:0 0 50% 50%;pointer-events:none}
+.pianinho.mirror-hybrid .mirror-node{z-index:2}
+.pianinho.mirror-hybrid .mirror-mini{z-index:4}
+/* Grid items cannot be placed reliably by DOM append alone: explicit musical order. */
+.mirror-keyboard-21>.piano-key:not(.black-key),
+.mirror-keyboard-21>.mirror-extension-key.white-key{grid-column:calc(var(--mirror-white-index) + 1);grid-row:1}
+.mirror-keyboard-21>.mirror-extension-key.white-key{min-height:100%}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="G#3"]{left:0%}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="A#3"]{left:16.667%}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="C#5"]{left:83.333%}
+.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="D#5"]{left:91.667%}
+.mirror-keyboard-21>.piano-key.black-key[data-note="C#4"]{left:25%}
+.mirror-keyboard-21>.piano-key.black-key[data-note="D#4"]{left:33.333%}
+.mirror-keyboard-21>.piano-key.black-key[data-note="F#4"]{left:50%}
+.mirror-keyboard-21>.piano-key.black-key[data-note="G#4"]{left:58.333%}
+.mirror-keyboard-21>.piano-key.black-key[data-note="A#4"]{left:66.667%}
+@media(max-width:600px){
+.pianinho.mirror-hybrid{height:310px;width:100%}
+.pianinho.mirror-hybrid .mirror-node{width:clamp(27px,8vw,36px);height:clamp(27px,8vw,36px);font-size:clamp(.47rem,2vw,.63rem)}
+.pianinho.mirror-hybrid .pianinho-visual{inset:24% 20% 22%;width:60%;height:54%}
+.pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%;top:57%;height:18%}
+}
+.stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid{height:310px;width:100%}
+.stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .mirror-node{width:clamp(27px,8vw,36px);height:clamp(27px,8vw,36px);font-size:.55rem}
+.stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%}
