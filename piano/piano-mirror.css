@@ -95,3 +95,29 @@
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid{height:310px;width:100%}
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .mirror-node{width:clamp(27px,8vw,36px);height:clamp(27px,8vw,36px);font-size:.55rem}
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%}
+
+/* ELO 21.3: portrait-first geometry, no changes to semantic/evaluation contracts. */
+.pianinho.mirror-hybrid{height:440px;max-width:100%;overflow:visible}
+.pianinho.mirror-hybrid .pianinho-visual{inset:15% 20% 20%;width:60%;height:65%;object-fit:contain}
+.pianinho.mirror-hybrid .mirror-ring{inset:0;overflow:visible}
+.pianinho.mirror-hybrid .mirror-node{width:clamp(34px,5vw,54px);height:clamp(34px,5vw,54px)}
+.pianinho.mirror-hybrid .mirror-mini{left:23%;top:60%;width:54%;height:18%;border-radius:4px 4px 42% 42%;transform:perspective(550px) rotateX(8deg);overflow:hidden}
+.pianinho.mirror-hybrid .mirror-ring::after{left:11%;width:78%;top:52%;height:39%;border-bottom:2px solid rgba(245,205,75,.4);border-radius:0 0 50% 50%}
+.mirror-keyboard-21{width:100%;min-width:0;grid-template-columns:repeat(12,minmax(0,1fr));height:clamp(155px,25vw,330px)}
+.mirror-keyboard-21>.piano-key:not(.black-key),.mirror-keyboard-21>.mirror-extension-key.white-key{grid-column:calc(var(--mirror-white-index) + 1);grid-row:1}
+.mirror-keyboard-21>.piano-key.black-key,.mirror-keyboard-21>.mirror-extension-key.black-key{width:5.5%;min-width:0;max-width:none}
+.keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden}
+@media(max-width:600px){
+.pianinho.mirror-hybrid{height:300px}
+.pianinho.mirror-hybrid .mirror-node{width:clamp(27px,8vw,37px);height:clamp(27px,8vw,37px)}
+.pianinho.mirror-hybrid .pianinho-visual{inset:17% 18% 20%;width:64%;height:63%}
+.pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%;top:60%}
+.mirror-keyboard-21{width:100%;min-width:0;height:clamp(155px,43vw,260px)}
+.mirror-keyboard-21 .key-word,.mirror-keyboard-21 .mirror-extension-label{font-size:.55rem}
+.mirror-keyboard-21 .key-note,.mirror-keyboard-21 .mirror-extension-label small{font-size:.48rem}
+}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-21{width:100%;min-width:0;grid-template-columns:repeat(12,minmax(0,1fr));height:clamp(155px,43vw,260px)}
+.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden}
+.stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid{height:300px}
+.stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .pianinho-visual{inset:17% 18% 20%;width:64%;height:63%}
+.stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%;top:60%}
