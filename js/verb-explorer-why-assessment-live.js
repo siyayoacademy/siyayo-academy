@@ -125,7 +125,26 @@ function mountEarlyWhyStudy(doc,el,experience,language){
         source:'why-exploration',phase:'exploratory-choice',
         selected:alternative.id,experienceId:experience.id,language:language,questionWord:'why'
       });
-    });options.appendChild(button);
+    });
+    // HOW TO SHOW: restore the independent mini-speaker present in S3/S4.
+    // Listening is presentation-only: never select an answer or submit evidence.
+    var audio=doc.createElement('button');audio.type='button';
+    audio.className='why-probe-audio';
+    audio.setAttribute('aria-label',({
+      en:'Listen to response: ',es:'Escuchar respuesta: ',pt:'Ouvir resposta: '
+    }[language])+response);
+    var icon=doc.createElement('span');icon.className='siyayo-speaker';
+    icon.setAttribute('aria-hidden','true');audio.appendChild(icon);
+    audio.addEventListener('click',function(){
+      if(el.hidden||!isExploringWhy())return;
+      var current=root.SIYAYOVerbExplorerAdaptiveStateBridge?.getState?.();
+      if(current&&(current.currentExperienceId!==experience.id||
+        current.experienceLanguage!==language))return;
+      root.SIYAYOVerbExplorerExperienceRuntime?.speak?.(response,language);
+    });
+    var answerRow=doc.createElement('div');answerRow.className='why-probe-response-row';
+    answerRow.appendChild(audio);answerRow.appendChild(button);
+    options.appendChild(answerRow);
   });
   if(!options.children.length)return false;
   section.appendChild(options);el.appendChild(section);el.hidden=false;return true;
