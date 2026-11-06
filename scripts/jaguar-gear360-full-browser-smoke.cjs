@@ -26,9 +26,9 @@ const assert=require('node:assert/strict');
     assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0);
     await audio.first().click();
     assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0,'Listening must not mark an assessment choice');
-    await page.locator('#learningTrailWordPathModule > summary').click();
+    if(!(await page.locator('#learningTrailWordPathModule').evaluate(el=>el.open)))
+      await page.locator('#learningTrailWordPathModule > summary').click();
     const trail=page.locator('#learnerTrailSurface');
-    const state=await trail.evaluate(el=>({hidden:el.hidden,html:el.innerHTML.slice(0,350),display:getComputedStyle(el).display,parentHidden:el.parentElement?.hidden,detailsOpen:document.getElementById('learningTrailWordPathModule').open,outer:el.outerHTML.slice(0,430)}));console.log('TRAIL_DEBUG',id,language,JSON.stringify(state));
     await trail.waitFor({state:'visible',timeout:5000});
     assert.match(await trail.textContent(),/LEARNING TRAIL|RUTA DE APRENDIZAJE|TRILHA DE APRENDIZAGEM/i);
     assert.match(await trail.textContent(),/WHY|POR QUÉ|POR QUÊ|POR QUE/i);
