@@ -53,6 +53,24 @@
       keys.appendChild(b);
     });
     avatar.appendChild(keys);
+    // RESUME-03.5: one authoritative, ordinal 13-note grid.
+    // Apply coordinates directly with important priority to avoid legacy CSS
+    // overrides and ensure the seventh note F#4 is bottom-center.
+    const ringPositions=[
+      ["C4",6,48],["C#4",8,60],["D4",14,71],
+      ["D#4",24,81],["E4",36,88],["F4",43,81],
+      ["F#4",50,91],["G4",76,81],["G#4",86,71],
+      ["A4",92,81],["A#4",94,71],["B4",94,60],["C5",92,48]
+    ];
+    const ring=avatar.querySelector(".mirror-ring");
+    for(const [note,x,y] of ringPositions){
+      const node=Array.from(ring?.querySelectorAll(".mirror-node")||[])
+        .find(el=>el.dataset.note===note);
+      if(!node)continue;
+      node.style.setProperty("left",x+"%","important");
+      node.style.setProperty("top",y+"%","important");
+    }
+    avatar.dataset.resume03Version="03.5";
     // Existing mirror ring retains all 13 note IDs and handlers; only styling changes.
   };
   probe.src=asset;
