@@ -1,0 +1,69 @@
+name: JAGUAR EVAL-08 · D1 Wrangler gate (staging only)
+on:
+  push:
+    branches: [jaguar/eval08-wrangler-gate-20261028]
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: "Select dry_run unless the remote migration is explicitly approved"
+        required: true
+        type: choice
+        options: [dry_run, apply_0001]
+        default: dry_run
+      database_confirmation:
+        description: "For apply_0001, type siyayo-academy-staging"
+        required: false
+        type: string
+      migration_confirmation:
+        description: "For apply_0001, type APPLY-0001-STAGING"
+        required: false
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: eval08-d1-staging-migrations
+  cancel-in-progress: false
+jobs:
+  verify-offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify target, exact SQL and disabled public deployment
+        run: python3 staging/eval08/test_wrangler_preflight.py
+      - name: Verify local SQLite migration and fail-closed tests
+        run: |
+          python3 staging/eval08/test_initial_schema.py
+          python3 staging/eval08/test_premigration_gates.py
+  apply-remotely:
+    needs: verify-offline
+    if: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/jaguar/eval08-wrangler-gate-20261028' && inputs.operation == 'apply_0001' && inputs.database_confirmation == 'siyayo-academy-staging' && inputs.migration_confirmation == 'APPLY-0001-STAGING' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment: eval08-staging-d1
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.SIYAYO_EVAL08_CF_D1_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.SIYAYO_EVAL08_CF_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recheck pinned D1 identity and SQL
+        run: python3 staging/eval08/test_wrangler_preflight.py
+      - name: Verify configured secrets are present
+        shell: bash
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN"
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Wrangler CLI
+        run: npm install --global --ignore-scripts wrangler@4.49.0
+      - name: Read current database identity without SQL
+        run: wrangler d1 info siyayo-academy-staging --config staging/eval08/wrangler.jsonc
+      - name: Apply exactly the official D1 migration
+        run: wrangler d1 migrations apply siyayo-academy-staging --remote --config staging/eval08/wrangler.jsonc
+      - name: List remaining unapplied migrations (read-only)
+        run: wrangler d1 migrations list siyayo-academy-staging --remote --config staging/eval08/wrangler.jsonc
+# To expose Run workflow UI, this workflow must also exist on the default
+# branch. The candidate is intentionally isolated; DO NOT merge without GO.
