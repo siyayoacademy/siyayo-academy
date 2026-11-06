@@ -180,14 +180,36 @@
     var markerAuthority=options.markerAuthority||root.AdaptiveLearnerProgressMarker;
     var stateBridge=options.stateBridge||root.SIYAYOVerbExplorerAdaptiveStateBridge;
 
-    if(!profileSource||typeof profileSource.getProfile!=='function')return false;
-    if(!skillSource||typeof skillSource.getSkill!=='function'||typeof skillSource.getDefinition!=='function')return false;
-    if(!labelView||typeof labelView.project!=='function')return false;
-    if(!trailView||typeof trailView.project!=='function')return false;
-    if(!sequenceView||typeof sequenceView.project!=='function')return false;
-    if(!positionView||typeof positionView.resolve!=='function')return false;
-    if(!markerAuthority||typeof markerAuthority.resolve!=='function')return false;
-    if(!stateBridge||typeof stateBridge.getState!=='function')return false;
+    // Presentation cannot disappear merely because a learner has no active
+    // assessment. Expose an honest read-only empty Trail in that case.
+    function emptyTrail(){
+      var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+      var currentWord=runtime?.activeQuestionWord?.()||'';
+      var currentExperience=runtime?.activeExperienceId?.()||'';
+      var currentLanguage=text(options.language)||runtime?.activeLanguage?.()||'en';
+      var copy=surfaceLabels(currentLanguage);
+      var noRecord={
+        en:'FREE EXPLORATION · no active assessment record for this learner',
+        es:'EXPLORACIÓN LIBRE · sin registro evaluativo activo para este estudiante',
+        pt:'EXPLORAÇÃO LIVRE · sem registro avaliativo ativo para este aluno'
+      }[currentLanguage]||'FREE EXPLORATION · no active assessment record';
+      surface.dataset.marker='EMPTY_DOT';
+      surface.dataset.state='UNOBSERVED';
+      surface.hidden=false;
+      surface.innerHTML='<div class="learner-trail-copy"><span class="learner-trail-label">'+
+        escapeHtml(copy.title)+'</span><strong>'+escapeHtml(currentWord.toUpperCase()||'—')+
+        '</strong><small>'+escapeHtml(currentExperience)+'</small><small>'+
+        escapeHtml(noRecord)+'</small></div>';
+      return true;
+    }
+    if(!profileSource||typeof profileSource.getProfile!=='function')return emptyTrail();
+    if(!skillSource||typeof skillSource.getSkill!=='function'||typeof skillSource.getDefinition!=='function')return emptyTrail();
+    if(!labelView||typeof labelView.project!=='function')return emptyTrail();
+    if(!trailView||typeof trailView.project!=='function')return emptyTrail();
+    if(!sequenceView||typeof sequenceView.project!=='function')return emptyTrail();
+    if(!positionView||typeof positionView.resolve!=='function')return emptyTrail();
+    if(!markerAuthority||typeof markerAuthority.resolve!=='function')return emptyTrail();
+    if(!stateBridge||typeof stateBridge.getState!=='function')return emptyTrail();
 
     var experienceRuntime=root.SIYAYOVerbExplorerExperienceRuntime;
     var liveLanguage=experienceRuntime&&typeof experienceRuntime.activeLanguage==='function'?experienceRuntime.activeLanguage():'';
@@ -204,7 +226,7 @@
     var patitaHtml=latestPatita?'<small class="learner-trail-observation" data-observation-kind="patita-contextual">'+escapeHtml(patitaLabel)+' · '+escapeHtml(latestPatita.answer)+'</small>':'';
     var observationHtml=(observations.length?'<small class="learner-trail-observation" data-observation-kind="free-diagnostic">'+escapeHtml(freeDiagnosticLabel(language))+'</small>':'')+patitaHtml;
     function observationOnly(){
-      if(!observations.length&&!latestPatita)return false;
+      if(!observations.length&&!latestPatita)return emptyTrail();
       var latest=observations[observations.length-1]||{questionWordLabel:text(root.SIYAYOVerbExplorerExperienceRuntime&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord())};
       surface.dataset.marker='EMPTY_DOT';surface.dataset.state='UNOBSERVED';surface.dataset.observationState='OBSERVED';surface.hidden=false;
       surface.innerHTML='<div class="learner-trail-copy"><span class="learner-trail-label">'+escapeHtml(copy.title)+'</span><strong>'+escapeHtml(latest.questionWordLabel)+'</strong>'+observationHtml+'</div>';
@@ -224,13 +246,13 @@
     if(identity&&(!learnerId||profile.id!==learnerId))return observationOnly();
 
     var trail=trailView.project(profile,skill,root.AdaptiveAssessmentScope?{language:assessmentLanguage}:null);
-    if(!trail)return false;
+    if(!trail)return observationOnly();
     var marker=markerAuthority.resolve(trail);
     var sequence=sequenceView.project(trail);
     var liveState=stateBridge.getState();
-    if(!marker||!sequence||!liveState)return false;
+    if(!marker||!sequence||!liveState)return observationOnly();
     var position=positionView.resolve(sequence,liveState.currentExperienceId);
-    if(!position)return false;
+    if(!position)return observationOnly();
 
     var confirmed=Number(marker.confirmedExperiences)||0;
     var contexts=confirmed===1?'1 '+copy.context:confirmed+' '+copy.contexts;
