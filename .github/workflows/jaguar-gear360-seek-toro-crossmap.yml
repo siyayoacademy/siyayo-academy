@@ -1,0 +1,24 @@
+name: JAGUAR SEEK TORO runtime crossmap
+on:
+  push:
+    branches: [jaguar/gear360-seek-toro-crossmap-20261106, main]
+    paths:
+      - 'data/learning/experience-seeds.json'
+      - 'data/learning/dependencies/**'
+      - 'scripts/jaguar-gear360-seek-toro-crossmap.cjs'
+      - '.github/workflows/jaguar-gear360-seek-toro-crossmap.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  crossmap-current-head:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Cross-check current corpus with historical SEEK/TORO maps
+        run: node scripts/jaguar-gear360-seek-toro-crossmap.cjs
+      - name: Existing house integrity baseline
+        run: node scripts/jaguar-gear360-house-integrity.cjs
