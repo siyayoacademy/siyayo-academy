@@ -26,6 +26,7 @@ const assert=require('node:assert/strict');
     assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0);
     await audio.first().click();
     assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0,'Listening must not mark an assessment choice');
+    await page.locator('#learningTrailWordPathModule > summary').click();
     const trail=page.locator('#learnerTrailSurface');
     await trail.waitFor({state:'visible',timeout:10000});
     assert.match(await trail.textContent(),/LEARNING TRAIL|RUTA DE APRENDIZAJE|TRILHA DE APRENDIZAGEM/i);
