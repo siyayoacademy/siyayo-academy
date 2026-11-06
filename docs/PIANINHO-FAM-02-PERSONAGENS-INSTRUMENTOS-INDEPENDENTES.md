@@ -19,3 +19,8 @@ Jaguar/percussão; Águia/violino; Leão/trompete; Semente de Ouro/flauta; Beija
 
 ## Limites desta entrega
 Somente documentação. Nenhuma imagem final, animação, integração no site, alteração de áudio ou deploy foi realizado. Não modificar main, Explorer ou Master VIP.
+
+## Pausa e retomada — 2026-11-06
+Por decisão do autor, a proposta FAM-02/Orquestra Viva SIYAYO fica **em espera para retomada futura**. A direção homologada permanece: personagens e instrumentos independentes. Não iniciar novos personagens, imagens ou integração orquestral agora.
+
+**Foco retomado:** M1 Pianinho Mágico e M4 Piano Plano, com M2 Árvore Frondosa, M3 Study Deck e MX preservados. O Piano Plano teve layout responsivo visualmente homologado pelo autor; não redesenhar sem nova solicitação. O teclado vetorial experimental de 22 notas (G3–E5, 13 brancas + 9 pretas) ainda requer validação de geometria e integração visual ao personagem homologado. Preservar arte, áudio, luzes, conexões e contratos existentes. Próximo trabalho: auditoria do estado real antes de qualquer alteração, depois integração cirúrgica do Pianinho. Sem merge na main nem alterações a outros projetos.
