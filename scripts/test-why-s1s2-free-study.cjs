@@ -6,7 +6,7 @@ function node(tag){
  const el={tag,children:[],attributes:{},hidden:false,textContent:'',appendChild(child){this.children.push(child);return child},
  setAttribute(k,v){this.attributes[k]=v},insertBefore(child){this.children.push(child)},
  querySelector(){return null},
- querySelectorAll(selector){let out=[];const scan=n=>{for(const c of n.children){if(selector==='.why-probe-option'&&c.className==='why-probe-option')out.push(c);scan(c)}};scan(this);return out},
+ querySelectorAll(selector){let out=[];const scan=n=>{for(const c of n.children){if(c.className===selector.slice(1))out.push(c);scan(c)}};scan(this);return out},
  addEventListener(k,fn){(this.handlers||(this.handlers={}))[k]=fn}};
  Object.defineProperty(el,'innerHTML',{get(){return ''},set(){this.children=[]}});
  return el;
@@ -14,9 +14,9 @@ function node(tag){
 function makeDom(){
  const view=node('section');view.id='experienceView';const doc={createElement:node,getElementById(id){if(id==='experienceView')return view;return view.children.find(c=>c.id===id)||null}};return doc;
 }
-const calls=[],root={};root.globalThis=root;
+const calls=[],speech=[],root={};root.globalThis=root;
 let selected='why',state={experienceTense:'present',experienceForm:'affirmative'};
-root.SIYAYOVerbExplorerExperienceRuntime={activeQuestionWord(){return selected},speak(){}};
+root.SIYAYOVerbExplorerExperienceRuntime={activeQuestionWord(){return selected},speak(phrase,lang){speech.push({phrase,lang})}};
 root.SIYAYOVerbExplorerAdaptiveStateBridge={getState(){return state}};
 root.SIYAYOPatitaInteractionTrail={recordOutcome(x){calls.push(x)}};
 const context=vm.createContext(root);
@@ -24,7 +24,7 @@ vm.runInContext(source,context,{filename:'why-assessment-live.js'});
 const live=root.SIYAYOVerbExplorerWhyAssessmentLive;
 for(const exp of experiences.filter(e=>['shopping-for-dinner','preparing-dinner'].includes(e.id))){
  for(const lang of ['en','es','pt']){
-  state={experienceTense:'present',experienceForm:'affirmative'};selected='why';
+  state={currentExperienceId:exp.id,experienceLanguage:lang,experienceTense:'present',experienceForm:'affirmative'};selected='why';
   const document=makeDom();assert.equal(live.mount({document,experience:exp,language:lang}),true);
   const panel=document.getElementById('whyAssessmentPanel');
   assert.equal(panel.hidden,false);
@@ -32,6 +32,14 @@ for(const exp of experiences.filter(e=>['shopping-for-dinner','preparing-dinner'
   assert.ok(names.some(n=>n.className?.split(' ').includes('why-probe-question')),'Missing free WHY question '+exp.id+' '+lang);
   const answers=panel.querySelectorAll('.why-probe-option');
   assert.equal(answers.length,2);
+  const audios=panel.querySelectorAll('.why-probe-audio');
+  assert.equal(audios.length,2,'Each choice needs its own mini-speaker');
+  assert.equal(calls.length,0);const spokenBefore=speech.length;
+  audios[0].handlers.click();
+  assert.equal(speech.length,spokenBefore+1,'Speaker must trigger speech');
+  assert.equal(speech.at(-1).lang,lang);
+  assert.equal(speech.at(-1).phrase,answers[0].textContent);
+  assert.equal(calls.length,0,'Speaker must not record evidence');
   assert.ok(panel.children.some(n=>/FREE|LIBRE|LIVRE/.test(n.textContent)),'No free-only disclosure');
   assert.equal(calls.length,0);
   answers[0].handlers.click();assert.equal(calls.length,1);
