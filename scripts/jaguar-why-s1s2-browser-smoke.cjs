@@ -17,6 +17,12 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
     assert.match(notice,/FREE|LIBRE|LIVRE/i,'Missing no-assessment disclosure');
     let box=await panel.locator('.why-probe-question-text').first().boundingBox();
     assert.ok(box&&box.width>180,'WHY question illegible '+exp+' '+lang+' '+JSON.stringify(box));
+    assert.equal(await panel.locator('.why-probe-audio').count(),2,'Both response mini-speakers must remain visible');
+    const audioLabels=await panel.locator('.why-probe-audio').allTextContents();
+    // Audio clicks must not select a contextual choice or record an evaluation.
+    await panel.locator('.why-probe-audio').first().click();
+    assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0,
+      'Listening must not select or assess the answer');
     await panel.locator('.why-probe-option').first().click();
     assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),1);
    }
