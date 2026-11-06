@@ -175,3 +175,32 @@
     font-size:clamp(.4rem,1.7vw,.56rem)!important;
   }
 }
+
+/* RESUME-03.3 — author's calibration, opt-in only.
+   60% = sharp circle diameter relative to natural circle.
+   Explicit Y values take precedence over mathematically inferred symmetry. */
+.pianinho.resume03 .mirror-ring .mirror-node[data-chromatic="true"]{
+  width:calc(var(--ring-size) * .6)!important;
+  height:calc(var(--ring-size) * .6)!important;
+  font-size:clamp(.36rem,.8vw,.55rem)!important;
+}
+.pianinho.resume03 .mirror-node[data-note="C4"] {--grid-y:48%}
+.pianinho.resume03 .mirror-node[data-note="C#4"]{--grid-y:60%}
+.pianinho.resume03 .mirror-node[data-note="D4"] {--grid-y:71%}
+.pianinho.resume03 .mirror-node[data-note="D#4"]{--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="E4"] {--grid-y:88%}
+.pianinho.resume03 .mirror-node[data-note="F4"] {--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="F#4"]{--grid-y:91%}
+.pianinho.resume03 .mirror-node[data-note="G4"] {--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="G#4"]{--grid-y:71%}
+.pianinho.resume03 .mirror-node[data-note="A4"] {--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="A#4"]{--grid-y:71%}
+.pianinho.resume03 .mirror-node[data-note="B4"] {--grid-y:60%}
+.pianinho.resume03 .mirror-node[data-note="C5"] {--grid-y:48%}
+@media(max-width:600px){
+  .pianinho.resume03 .mirror-ring .mirror-node[data-chromatic="true"]{
+    width:calc(var(--ring-size) * .6)!important;
+    height:calc(var(--ring-size) * .6)!important;
+    font-size:clamp(.34rem,1.3vw,.48rem)!important;
+  }
+}
