@@ -75,3 +75,103 @@
   .pianinho.resume03 .mirror-ring{overflow:visible!important}
   .pianinho.resume03 .mirror-node{width:clamp(23px,7vw,35px)!important;height:clamp(23px,7vw,35px)!important}
 }
+
+/* RESUME-03.2 — specialized responsive coordinate grid.
+   Three independent layers: approved art, 13-note ring, keyboard hit matrix.
+   Positions are semantic by note, not nth-child order. All coordinates refer
+   to the same 3:2 character stage; no change to M4 or original mode. */
+.pianinho.resume03.mirror-hybrid{
+  --ring-size:clamp(22px,3.4vw,37px);
+  position:relative;
+  width:min(100%,690px)!important;
+  max-width:100%!important;
+  height:auto!important;
+  aspect-ratio:3/2!important;
+  overflow:visible!important;
+  isolation:isolate;
+}
+.pianinho.resume03 .pianinho-visual{
+  position:absolute!important;
+  inset:4% 8% 8%!important;
+  width:84%!important;
+  height:88%!important;
+  object-fit:contain!important;
+  z-index:1;
+}
+.pianinho.resume03 .mirror-ring{
+  position:absolute!important;
+  inset:0!important;
+  width:100%;height:100%;
+  overflow:visible!important;
+  pointer-events:none;
+  z-index:5;
+}
+.pianinho.resume03 .mirror-ring::after{
+  left:7%!important;top:49%!important;width:86%!important;height:43%!important;
+}
+.pianinho.resume03 .mirror-ring .mirror-node{
+  position:absolute!important;
+  width:var(--ring-size)!important;
+  height:var(--ring-size)!important;
+  min-width:0!important;
+  padding:0!important;
+  font-size:clamp(.45rem,1.1vw,.68rem)!important;
+  line-height:1.05;
+  left:var(--grid-x)!important;
+  top:var(--grid-y)!important;
+  transform:translate(-50%,-50%)!important;
+  z-index:6;
+  pointer-events:auto;
+}
+/* Symmetrical lower arc: note labels match the original 13-note order. */
+.pianinho.resume03 .mirror-node[data-note="C4"] {--grid-x:6%;--grid-y:48%}
+.pianinho.resume03 .mirror-node[data-note="C#4"]{--grid-x:8%;--grid-y:60%}
+.pianinho.resume03 .mirror-node[data-note="D4"] {--grid-x:14%;--grid-y:71%}
+.pianinho.resume03 .mirror-node[data-note="D#4"]{--grid-x:24%;--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="E4"] {--grid-x:36%;--grid-y:88%}
+.pianinho.resume03 .mirror-node[data-note="F4"] {--grid-x:50%;--grid-y:91%}
+.pianinho.resume03 .mirror-node[data-note="F#4"]{--grid-x:64%;--grid-y:88%}
+.pianinho.resume03 .mirror-node[data-note="G4"] {--grid-x:76%;--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="G#4"]{--grid-x:86%;--grid-y:71%}
+.pianinho.resume03 .mirror-node[data-note="A4"] {--grid-x:92%;--grid-y:60%}
+.pianinho.resume03 .mirror-node[data-note="A#4"]{--grid-x:94%;--grid-y:48%}
+.pianinho.resume03 .mirror-node[data-note="B4"] {--grid-x:94%;--grid-y:37%}
+.pianinho.resume03 .mirror-node[data-note="C5"] {--grid-x:92%;--grid-y:27%}
+/* The separate keyboard interaction matrix follows the scaled artwork. */
+.pianinho.resume03 .resume03-keys{
+  position:absolute!important;
+  inset:4% 8% 8%!important;
+  width:84%!important;
+  height:88%!important;
+  z-index:4!important;
+}
+.pianinho.resume03 .mirror-node[data-chromatic="true"]{
+  background:#112c52!important;
+  color:#9cecff!important;
+  border-color:#37caff!important;
+  box-shadow:0 0 9px #35caff!important;
+}
+.pianinho.resume03 .mirror-node[data-chromatic="false"]{
+  background:#101c30!important;
+  color:#ffe27b!important;
+  border-color:#f5ce62!important;
+}
+.pianinho.resume03 .mirror-node.is-mirror-lit{filter:brightness(1.5)}
+.stage-viewport[data-preview="portrait"] .pianinho.resume03.mirror-hybrid{
+  --ring-size:clamp(22px,3.1vw,31px);
+  width:min(100%,560px)!important;
+  margin-inline:auto;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume03 .mirror-node{
+  font-size:clamp(.43rem,1vw,.58rem)!important;
+}
+@media(max-width:600px){
+  .pianinho.resume03.mirror-hybrid{
+    --ring-size:clamp(20px,6.1vw,30px);
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .pianinho.resume03 .mirror-ring .mirror-node{
+    font-size:clamp(.4rem,1.7vw,.56rem)!important;
+  }
+}
