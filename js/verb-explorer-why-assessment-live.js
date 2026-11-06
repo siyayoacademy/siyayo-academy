@@ -34,6 +34,23 @@ function speakOnly(spec,language,doc,ownerGeneration,host){
   if(!runtime||typeof runtime.speak!=='function')return false;
   return runtime;
 }
+// One reusable presentation-only response speaker for the fallback S3/S4 paths.
+// Never submit an Attempt, select a choice, or award a credit on listening.
+function appendExploratoryResponse(doc,options,answer,response,experience,language,host){
+  var row=doc.createElement('div');row.className='why-probe-response-row';
+  var audio=doc.createElement('button');audio.type='button';audio.className='why-probe-audio';
+  audio.setAttribute('aria-label',({en:'Listen to response: ',es:'Escuchar respuesta: ',pt:'Ouvir resposta: '}[language]||'Listen: ')+response);
+  var speaker=doc.createElement('span');speaker.className='siyayo-speaker';
+  speaker.setAttribute('aria-hidden','true');audio.appendChild(speaker);
+  audio.addEventListener('click',function(){
+    if(host.hidden||!isExploringWhy())return;
+    var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
+    if(typeof runtime?.activeExperienceId==='function'&&runtime.activeExperienceId()!==experience.id)return;
+    if(typeof runtime?.activeLanguage==='function'&&runtime.activeLanguage()!==language)return;
+    runtime?.speak?.(response,language);
+  });
+  row.appendChild(audio);row.appendChild(answer);options.appendChild(row);
+}
 // Presentation is not owned by the evaluator. Keep a read-only practice surface
 // visible in S3/S4 whenever WHY is selected, even without NICK or adopted scope.
 function mountExploration(doc,el,experience,language,skills,catalog,source){
@@ -67,7 +84,7 @@ function mountExploration(doc,el,experience,language,skills,catalog,source){
         if(el.hidden||!isExploringWhy())return;
         options.querySelectorAll('.why-probe-option').forEach(function(other){other.setAttribute('aria-pressed',String(other===b));});
         root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'why-exploration',phase:'exploratory-choice',selected:a.id,experienceId:experience.id,language:language,questionWord:'why'});
-      });options.appendChild(b);
+      });appendExploratoryResponse(doc,options,b,a.label,experience,language,el);
     });section.appendChild(options);el.appendChild(section);
   });
   el.hidden=false;return true;
@@ -175,7 +192,7 @@ function mountStandaloneStudy(doc,el,experience,language){
         if(el.hidden||!isExploringWhy())return;
         Array.prototype.forEach.call(choices.querySelectorAll('.why-probe-option'),function(item){item.setAttribute('aria-pressed',String(item===option));});
         root.SIYAYOPatitaInteractionTrail?.recordOutcome?.({source:'why-exploration',phase:'exploratory-choice',selected:alt.id,experienceId:experience.id,language:language,questionWord:'why'});
-      });choices.appendChild(option);
+      });appendExploratoryResponse(doc,choices,option,response,experience,language,el);
     });
     block.appendChild(choices);el.appendChild(block);
   });
