@@ -47,8 +47,8 @@
       b.className="resume03-key"+(sharp?" is-sharp":"");
       b.dataset.note=note;b.setAttribute("aria-label",note);
       b.style.left=(23.5+53*i/12)+"%";
-      b.style.top=((sharp?65.5:72.8)-(sharp?13:14.5)*u*u)+"%";
-      b.style.setProperty("--angle",(u*35)+"deg");
+      b.style.top=((sharp?72.7:80)-(sharp?13:14.5)*u*u)+"%";
+      b.style.setProperty("--angle",(-u*35)+"deg");
       b.addEventListener("click",()=>{sound(note);b.classList.add("is-lit");setTimeout(()=>b.classList.remove("is-lit"),350)});
       keys.appendChild(b);
     });
