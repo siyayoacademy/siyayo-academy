@@ -21,6 +21,16 @@ const assert=require('node:assert/strict');
     await question.waitFor({state:'visible'});
     const shape=await question.boundingBox();
     assert.ok(shape&&shape.width>180,'Fragmented exploratory question width '+id+' '+language+': '+JSON.stringify(shape));
+    const audio=panel.locator('.why-probe-audio');
+    assert.ok(await audio.count()>=2,'Missing free-exploration response mini-speakers '+id+' '+language);
+    assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0);
+    await audio.first().click();
+    assert.equal(await panel.locator('.why-probe-option[aria-pressed="true"]').count(),0,'Listening must not mark an assessment choice');
+    const trail=page.locator('#learnerTrailSurface');
+    await trail.waitFor({state:'visible',timeout:10000});
+    assert.match(await trail.textContent(),/LEARNING TRAIL|RUTA DE APRENDIZAJE|TRILHA DE APRENDIZAGEM/i);
+    assert.match(await trail.textContent(),/WHY|POR QUÉ|POR QUÊ|POR QUE/i);
+
    }
   }
   assert.deepEqual(errors,[],'Browser JavaScript exceptions');
