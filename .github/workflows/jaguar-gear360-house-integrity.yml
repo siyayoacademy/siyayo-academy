@@ -1,0 +1,27 @@
+name: JAGUAR GEAR360 house integrity
+on:
+  push:
+    branches: [jaguar/gear360-house-integrity-20261106, main]
+    paths:
+      - 'data/learning/experience-seeds.json'
+      - 'js/verb-explorer.js'
+      - 'verb-explorer.html'
+      - 'scripts/jaguar-gear360-house-integrity.cjs'
+      - '.github/workflows/jaguar-gear360-house-integrity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guard-existing-house:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Preserve S1-S4 QWs and specialization coverage
+        run: node scripts/jaguar-gear360-house-integrity.cjs
+      - name: Preserve expanded loader and existing WHY evidence gate
+        run: node scripts/jaguar-gear360-full-candidate-gate.cjs
+      - name: Preserve canonical WHY contract
+        run: node scripts/test-s3-why-canonical-green-cycle.js
