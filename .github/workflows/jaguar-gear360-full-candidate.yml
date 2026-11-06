@@ -1,7 +1,7 @@
 name: JAGUAR GEAR360 full Explorer candidate guard
 on:
   push:
-    branches: [jaguar/gear360-full-explorer-candidate-20261030, jaguar/gear360-main-reconciled-20261102]
+    branches: [jaguar/gear360-full-explorer-candidate-20261030, jaguar/gear360-main-reconciled-20261102, jaguar/why-s4-speaker-trail-visibility-20261106]
   workflow_dispatch:
 permissions:
   contents: read
