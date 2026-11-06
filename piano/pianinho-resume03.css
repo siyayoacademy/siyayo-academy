@@ -204,3 +204,7 @@
     font-size:clamp(.34rem,1.3vw,.48rem)!important;
   }
 }
+
+/* RESUME-03.4 — seventh note F#4 is the bottom center of the 13-note arc. */
+.pianinho.resume03 .mirror-node[data-note="F4"] {--grid-x:43%;--grid-y:81%}
+.pianinho.resume03 .mirror-node[data-note="F#4"]{--grid-x:50%;--grid-y:91%}
