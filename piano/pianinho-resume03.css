@@ -27,3 +27,51 @@
 .pianinho.resume03 .resume03-key.is-sharp:hover,.pianinho.resume03 .resume03-key.is-sharp.is-lit{background:rgba(34,174,255,.65)}
 .pianinho.resume03 .avatar-caption{bottom:-1.5rem}
 @media(max-width:600px){.pianinho.resume03.mirror-hybrid{width:100%;height:auto;aspect-ratio:3/2}.pianinho.resume03 .mirror-node{width:clamp(24px,7vw,35px);height:clamp(24px,7vw,35px);font-size:.55rem}}
+
+/* RESUME-03.1 — portrait containment, 13-node ring, no clipped notes.
+   Scoped to opt-in only; leave M4 and the legacy mode untouched. */
+.stage-viewport[data-preview="portrait"] .pianinho.resume03.mirror-hybrid{
+  width:min(100%,560px)!important;
+  max-width:100%!important;
+  height:auto!important;
+  aspect-ratio:3/2!important;
+  margin-inline:auto;
+  overflow:visible!important;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume03 .pianinho-visual{
+  inset:0!important;width:100%!important;height:100%!important;
+  object-fit:contain!important;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume03 .mirror-ring{
+  overflow:visible!important;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume03 .mirror-node{
+  width:clamp(25px,4.8vw,38px)!important;
+  height:clamp(25px,4.8vw,38px)!important;
+  font-size:clamp(.48rem,1.4vw,.7rem)!important;
+}
+.pianinho.resume03 .mirror-node[data-note="C4"],
+.pianinho.resume03 .mirror-node[data-note="C5"]{
+  border-color:#ff4141;box-shadow:0 0 13px #ff4141;
+}
+/* Correct the arc: the 13th note must finish at the right shoulder,
+   not above the head. Positions match the approved local preview. */
+.pianinho.resume03 .mirror-node:nth-child(1){--resume03-x:6%;--resume03-y:49%}
+.pianinho.resume03 .mirror-node:nth-child(2){--resume03-x:9%;--resume03-y:61%}
+.pianinho.resume03 .mirror-node:nth-child(3){--resume03-x:16%;--resume03-y:73%}
+.pianinho.resume03 .mirror-node:nth-child(4){--resume03-x:26%;--resume03-y:83%}
+.pianinho.resume03 .mirror-node:nth-child(5){--resume03-x:38%;--resume03-y:90%}
+.pianinho.resume03 .mirror-node:nth-child(6){--resume03-x:50%;--resume03-y:93%}
+.pianinho.resume03 .mirror-node:nth-child(7){--resume03-x:62%;--resume03-y:90%}
+.pianinho.resume03 .mirror-node:nth-child(8){--resume03-x:74%;--resume03-y:83%}
+.pianinho.resume03 .mirror-node:nth-child(9){--resume03-x:84%;--resume03-y:73%}
+.pianinho.resume03 .mirror-node:nth-child(10){--resume03-x:91%;--resume03-y:61%}
+.pianinho.resume03 .mirror-node:nth-child(11){--resume03-x:94%;--resume03-y:49%}
+.pianinho.resume03 .mirror-node:nth-child(12){--resume03-x:94%;--resume03-y:39%}
+.pianinho.resume03 .mirror-node:nth-child(13){--resume03-x:91%;--resume03-y:29%}
+@media(max-width:600px){
+  .pianinho.resume03.mirror-hybrid{width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:3/2!important;overflow:visible!important}
+  .pianinho.resume03 .pianinho-visual{inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important}
+  .pianinho.resume03 .mirror-ring{overflow:visible!important}
+  .pianinho.resume03 .mirror-node{width:clamp(23px,7vw,35px)!important;height:clamp(23px,7vw,35px)!important}
+}
