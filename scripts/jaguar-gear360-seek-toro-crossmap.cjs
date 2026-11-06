@@ -52,11 +52,11 @@ const counts={experiences:stages.length,placements:slots.length,distinctQWs:qws.
   dependencyHeadProbe:slots.filter(s=>s.specialization.headProbe).length,
   validDependencyStructures:slots.filter(s=>s.specialization.focusStructuresPresent).length,
   assessmentTargetDeclared:slots.filter(s=>s.assessment.status==='runtime_target_declared').length};
-assert.equal(counts.experiences,4,'Unexpected Experience count');
-assert.equal(counts.placements,21,'Unexpected 21-slot SEEK × TORO baseline');
-assert.equal(counts.distinctQWs,8,'Unexpected eight QW baseline');
-assert.equal(counts.trilingual,21,'Previously authored language lost');
-assert.equal(counts.completeDialogueGrids,5,'Existing complete tense/mode grid lost');
+assert.ok(counts.experiences>=4,'An existing Experience disappeared');
+assert.ok(counts.placements>=21,'Existing Experience/QW slots were lost');
+assert.ok(counts.distinctQWs>=8,'Existing QW family was lost');
+assert.equal(counts.trilingual,counts.placements,'An Experience/QW lost required EN/ES/PT coverage');
+assert.ok(counts.completeDialogueGrids>=5,'Existing complete tense/mode grids were lost');
 for(const slot of slots){
  if(slot.specialization.focus)assert.ok(slot.specialization.focusStructuresPresent,
   'Dependency Focus points to missing structure '+slot.slot);
