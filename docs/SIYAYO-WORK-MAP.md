@@ -1,5 +1,25 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · SEEK × TORO crossmap — current GEAR360 coverage (2026-11-06)
+
+**Current-source-of-truth audit:** `node scripts/jaguar-gear360-seek-toro-crossmap.cjs` (use `--json` for a machine-readable per-slot inventory), alongside `scripts/jaguar-gear360-house-integrity.cjs`. Read **live** `data/learning/experience-seeds.json` and compare with historical `docs/siyayo-seek-toro-sector-register.md`, H14.54 integration catalog, H14.67 WHY closure and this Work Map. Historic entries are snapshots and may be stale; do not reimplement archived work without checking current files.
+
+**Verified 2026-11-06 baseline:** 4 Experiences; 21 Experience × QW slots across 8 distinct QWs, all with EN/ES/PT questions and labels. 5 complete 3-tense × 3-mode × 3-language dialogue grids; 11 authored Dependency Focus and 11 Head Probe placements, all Focus structure references resolved in the current corpus. 5 explicit assessment targets **declared** (not a claim that all contracts are live/homologated).
+
+**Current placement grid, no inflated completeness claims:**
+
+| Experience | Present QWs | Focus + Head Probe | Full 3×3×3 grid | Explicit assessment target |
+|---|---|---|---|---|
+| S1 Shopping | WHAT WHERE HOW MUCH WHICH WHY WHO | WHAT WHERE WHICH WHY | WHAT WHERE WHY | WHAT WHERE WHICH |
+| S2 Preparing | WHAT WHERE WHEN HOW WHICH WHY WHO | WHAT WHERE WHICH WHY | WHERE WHICH | WHAT |
+| S3 Having | WHAT WHO HOW WHY | WHAT WHY | none | WHY |
+| S4 After dinner | WHAT WHO WHY HOW | WHY | none | none |
+
+**Next decisions:** reuse source-backed authored modules before creating any new DF/Head Probe or response; prioritize missing S4 WHAT/WHO/HOW and S3 WHO/HOW only after tracing their actual semantic source; a question present without authored dependency analysis is a known gap, *not* proof of regression. S1/S2 WHY free HOW TO SHOW is already in MAIN, but H14.63–67 assessment plans remain **not authorized** for credits. Preserve S3→S4 contract, PATITA observation/credit separation, and independent EN/ES/PT/QW navigation. Never infer a missing contract from a present dialogue grid. Canonical catalog = 14 QWs; current runtime = 8 distinct QWs, 21 placements; missing six canonical families require contextual authoring.
+
+**CI principle:** protection of previous coverage must not block increases. The crossmap uses minimum baseline floors; the older house-integrity gate separately prevents disappearance of already-present slots or DF/Head Probe. No automatic deployment or new assessment authority from an inventory audit.
+
+
 ## JAGUAR · GEAR 360 MAIN-LAB · 2026-10-30
 
 **Plano operacional homologável:** [JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md](JAGUAR-GEAR-MAIN-LAB-INTEGRATION-20261030.md). Decisão: `main` será laboratório integrado, por promoção seletiva após testes e reversão preparada; nunca merge geral de branches divergentes. ELOs M0–M6: baseline, integração GEAR/WHY, alternâncias TORO, separação PATITA/avaliador, regressão visual EN→ES→PT, publicação controlada, expansão por famílias. Preservar toda a autoridade anterior e não tocar D1/Worker/PR #3 incidentalmente. **Registro inicial:** branch WHY; `main` ainda intacta; gates pendentes.
