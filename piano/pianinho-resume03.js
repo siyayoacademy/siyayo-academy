@@ -53,23 +53,26 @@
       keys.appendChild(b);
     });
     avatar.appendChild(keys);
-    // RESUME-04.1: left side is authoritative; right side is its exact
-    // geometric reflection across the F#4 vertical center axis (X=50%).
-    // No independently tuned right-side coordinates.
+    // RESUME-04.3: all 13 note centers lie on ONE lower semi-ellipse.
+    // The 690x460 reference matrix scales as a unit in Portrait.
+    // Endpoints: (6%,48%) and (94%,48%); lowest point F#4: (50%,91%).
+    // Y = 48 + 43 * sqrt(1 - ((X-50)/44)^2).
+    const arc={cx:50,cy:48,rx:44,ry:43};
+    const arcY=x=>arc.cy+arc.ry*Math.sqrt(Math.max(0,1-((x-arc.cx)/arc.rx)**2));
     const leftRing=[
-      ["C4",6,48,"C5"],["C#4",8,60,"B4"],
-      ["D4",14,71,"A#4"],["D#4",24,81,"A4"],
-      ["E4",36,88,"G#4"],["F4",43,89,"G4"]
+      ["C4",6,"C5"],["C#4",8,"B4"],
+      ["D4",14,"A#4"],["D#4",24,"A4"],
+      ["E4",36,"G#4"],["F4",43,"G4"]
     ];
     const ringPositions=[
-      ...leftRing.flatMap(([left,x,y,right])=>[
-        [left,x,y],[right,100-x,y]
+      ...leftRing.flatMap(([left,x,right])=>[
+        [left,x,arcY(x)],[right,2*arc.cx-x,arcY(x)]
       ]),
-      ["F#4",50,91]
+      ["F#4",arc.cx,arcY(arc.cx)]
     ];
     if(ringPositions.length!==13 ||
        ringPositions.some(([note,x,y])=>!note||x<0||x>100||y<0||y>100))
-      throw new Error("RESUME-04.1 invalid musical ring grid");
+      throw new Error("RESUME-04.3 invalid musical ellipse");
     const ring=avatar.querySelector(".mirror-ring");
     for(const [note,x,y] of ringPositions){
       const node=Array.from(ring?.querySelectorAll(".mirror-node")||[])
@@ -78,7 +81,7 @@
       node.style.setProperty("left",x+"%","important");
       node.style.setProperty("top",y+"%","important");
     }
-    avatar.dataset.resume03Version="04.2-mirrored-smile";
+    avatar.dataset.resume03Version="04.3-algebraic-semiellipse";
     // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
     // the scale of the complete actor (art, ring, keys, visual feedback).
     // Auto and Landscape retain their existing layout and DOM placement.
