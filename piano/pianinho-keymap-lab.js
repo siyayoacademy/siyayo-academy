@@ -12,6 +12,16 @@
     const list=[...keys.querySelectorAll(".resume03-key")];
     const initial=list.map(k=>({note:k.dataset.note,x:parseFloat(k.style.left),y:parseFloat(k.style.top),angle:parseFloat(k.style.getPropertyValue("--angle"))||0,width:null,height:null}));
     const values=initial.map(v=>({...v}));
+    // KEY MAP LAB 01.1 — calibrated from the author's visual reference.
+    // All offsets are percentages of the existing 84% x 88% keyboard map.
+    // F4: move left by half its 5.3%-wide hit area and up by half its 17%-high area;
+    // shrink its width by 10%. F#4: align X with former F4 center and move
+    // upward by half its 10.5%-high area. No audio/MIDI changes.
+    const f4=values.find(v=>v.note==="F4");
+    const fs4=values.find(v=>v.note==="F#4");
+    if(f4){f4.x-=2.65;f4.y-=8.5;f4.width=4.77;}
+    if(fs4){fs4.x=50;fs4.y-=5.25;}
+
     const css=document.createElement("style");
     css.textContent=`
       .keymap-lab-grid{position:absolute;inset:4% 8% 8%;z-index:3;pointer-events:none;
@@ -44,6 +54,8 @@
       k.style.setProperty("--angle",v.angle+"deg");
       k.style.width=(v.width??d.width)+"%";k.style.height=(v.height??d.height)+"%";
     };
+    // Apply the two opt-in calibrations immediately, before selecting a key.
+    list.forEach((_,i)=>{if(values[i].note==="F4"||values[i].note==="F#4")apply(i);});
     const render=()=>{
       list.forEach((k,i)=>k.classList.toggle("keymap-selected",i===selected));
       select.value=String(selected);
