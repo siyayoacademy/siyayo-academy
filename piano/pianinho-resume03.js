@@ -100,44 +100,31 @@
       node.style.setProperty("top",y+"%","important");
     }
     avatar.dataset.resume03Version="04.5-inverse-y-equal-arc-length";
-    // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
-    // the scale of the complete actor (art, ring, keys, visual feedback).
-    // Auto and Landscape retain their existing layout and DOM placement.
+    // RESUME-05: one immutable 690x460 coordinate space for ALL preview modes.
+    // Only the outer viewport scales. No note coordinate or MIDI changes.
     const originalParent=avatar.parentElement;
     const originalNext=avatar.nextSibling;
     const matrix=document.createElement("div");
     matrix.className="resume04-matrix-viewport";
     const stage=document.getElementById("stageViewport");
-    let observer;
+    originalParent.insertBefore(matrix,originalNext);
+    matrix.appendChild(avatar);
+    avatar.classList.add("resume04-matrix");
     function updateMatrix(){
-      const portrait=stage?.dataset.preview==="portrait";
-      if(!portrait){
-        if(matrix.contains(avatar)){
-          originalParent.insertBefore(avatar,originalNext);
-          matrix.remove();
-        }
-        avatar.classList.remove("resume04-matrix");
-        avatar.style.removeProperty("--resume04-scale");
-        return;
-      }
-      if(!matrix.contains(avatar)){
-        originalParent.insertBefore(matrix,originalNext);
-        matrix.appendChild(avatar);
-      }
       const available=Math.max(1,originalParent.clientWidth-12);
-      const factor=Math.min(1,available/690);
+      const portrait=stage?.dataset.preview==="portrait";
+      const factor=Math.min(portrait?1:1.35,available/690);
       matrix.style.width=(690*factor)+"px";
       matrix.style.height=(460*factor)+"px";
       avatar.style.setProperty("--resume04-scale",String(factor));
-      avatar.classList.add("resume04-matrix");
     }
+    const observer=new ResizeObserver(updateMatrix);
+    observer.observe(originalParent);
     if(stage){
-      observer=new ResizeObserver(updateMatrix);
-      observer.observe(originalParent);
       const changes=new MutationObserver(updateMatrix);
       changes.observe(stage,{attributes:true,attributeFilter:["data-preview"]});
-      updateMatrix();
     }
+    updateMatrix();
     // Existing mirror ring retains all 13 note IDs and handlers; only styling changes.
   };
   probe.src=asset;
