@@ -12,15 +12,190 @@
     const list=[...keys.querySelectorAll(".resume03-key")];
     const initial=list.map(k=>({note:k.dataset.note,x:parseFloat(k.style.left),y:parseFloat(k.style.top),angle:parseFloat(k.style.getPropertyValue("--angle"))||0,width:null,height:null}));
     const values=initial.map(v=>({...v}));
-    // KEY MAP LAB 01.1 — calibrated from the author's visual reference.
-    // All offsets are percentages of the existing 84% x 88% keyboard map.
-    // F4: move left by half its 5.3%-wide hit area and up by half its 17%-high area;
-    // shrink its width by 10%. F#4: align X with former F4 center and move
-    // upward by half its 10.5%-high area. No audio/MIDI changes.
-    const f4=values.find(v=>v.note==="F4");
-    const fs4=values.find(v=>v.note==="F#4");
-    if(f4){f4.x-=2.65;f4.y-=8.5;f4.width=4.77;}
-    if(fs4){fs4.x=50;fs4.y-=5.25;}
+    // KEY MAP LAB 01.2 — user-supplied 690x460 calibration, 22 chromatic keys.
+    // Null dimensions intentionally inherit defaults. Opt-in lab only.
+    const approvedCalibration=[
+  {
+    "note": "G3",
+    "x": 20.85,
+    "y": 73.85,
+    "angle": 35,
+    "width": 3.1,
+    "height": 11.1
+  },
+  {
+    "note": "G#3",
+    "x": 26.05,
+    "y": 66.8,
+    "angle": 38,
+    "width": 1,
+    "height": 7.1
+  },
+  {
+    "note": "A3",
+    "x": 24.9,
+    "y": 76,
+    "angle": 31.5,
+    "width": 3.1,
+    "height": 10.8
+  },
+  {
+    "note": "A#3",
+    "x": 30.25,
+    "y": 68.7,
+    "angle": 27,
+    "width": 1.7,
+    "height": 8.1
+  },
+  {
+    "note": "B3",
+    "x": 28.35,
+    "y": 79.25,
+    "angle": 27.5,
+    "width": 3.2,
+    "height": 12.7
+  },
+  {
+    "note": "C4",
+    "x": 32.55,
+    "y": 81.7,
+    "angle": 20.5,
+    "width": 3.6,
+    "height": 13
+  },
+  {
+    "note": "C#4",
+    "x": 37.15,
+    "y": 71,
+    "angle": 19.5,
+    "width": null,
+    "height": 9.1
+  },
+  {
+    "note": "D4",
+    "x": 37.35,
+    "y": 82.1,
+    "angle": 17.5,
+    "width": 4.1,
+    "height": 12.7
+  },
+  {
+    "note": "D#4",
+    "x": 41.55,
+    "y": 71.8875,
+    "angle": 15.5,
+    "width": null,
+    "height": 10.1
+  },
+  {
+    "note": "E4",
+    "x": 42.15,
+    "y": 83.25,
+    "angle": 8.5,
+    "width": 3.6,
+    "height": 12.2
+  },
+  {
+    "note": "F4",
+    "x": 46.95,
+    "y": 83.05,
+    "angle": 6.5,
+    "width": 4.2,
+    "height": 11.5
+  },
+  {
+    "note": "F#4",
+    "x": 49.2,
+    "y": 72.9,
+    "angle": 3.5,
+    "width": null,
+    "height": 8.9
+  },
+  {
+    "note": "G4",
+    "x": 51.9,
+    "y": 83.65,
+    "angle": 0.5,
+    "width": 4.2,
+    "height": 13.8
+  },
+  {
+    "note": "G#4",
+    "x": 53.45,
+    "y": 72.7,
+    "angle": -8.75,
+    "width": null,
+    "height": 9.2
+  },
+  {
+    "note": "A4",
+    "x": 57.05,
+    "y": 83.45,
+    "angle": -9.5,
+    "width": 3.7,
+    "height": 13.2
+  },
+  {
+    "note": "A#4",
+    "x": 57.85,
+    "y": 71.2,
+    "angle": -14.583333333333334,
+    "width": null,
+    "height": null
+  },
+  {
+    "note": "B4",
+    "x": 62.25,
+    "y": 81.9,
+    "angle": -17.5,
+    "width": 3.9,
+    "height": 12.6
+  },
+  {
+    "note": "C5",
+    "x": 66.65,
+    "y": 81.15,
+    "angle": -23.333333333333332,
+    "width": 4.1,
+    "height": 13.3
+  },
+  {
+    "note": "C#5",
+    "x": 65.7,
+    "y": 70.05,
+    "angle": -26.25,
+    "width": null,
+    "height": null
+  },
+  {
+    "note": "D5",
+    "x": 71.05,
+    "y": 79.25,
+    "angle": -29.166666666666668,
+    "width": 3.6,
+    "height": 12.5
+  },
+  {
+    "note": "D#5",
+    "x": 69.7,
+    "y": 68.3,
+    "angle": -28.5,
+    "width": null,
+    "height": 10
+  },
+  {
+    "note": "E5",
+    "x": 75.1,
+    "y": 76.35,
+    "angle": -30,
+    "width": 3.9,
+    "height": 10.6
+  }
+];
+    for(const target of values){
+      const source=approvedCalibration.find(v=>v.note===target.note);
+      if(source)Object.assign(target,source);
+    }
 
     const css=document.createElement("style");
     css.textContent=`
@@ -54,8 +229,8 @@
       k.style.setProperty("--angle",v.angle+"deg");
       k.style.width=(v.width??d.width)+"%";k.style.height=(v.height??d.height)+"%";
     };
-    // Apply the two opt-in calibrations immediately, before selecting a key.
-    list.forEach((_,i)=>{if(values[i].note==="F4"||values[i].note==="F#4")apply(i);});
+    // Apply all 22 author-calibrated hit areas, without touching audio/MIDI.
+    list.forEach((_,i)=>apply(i));
     const render=()=>{
       list.forEach((k,i)=>k.classList.toggle("keymap-selected",i===selected));
       select.value=String(selected);
