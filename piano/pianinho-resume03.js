@@ -53,16 +53,16 @@
       keys.appendChild(b);
     });
     avatar.appendChild(keys);
-    // RESUME-04.3: all 13 note centers lie on ONE lower semi-ellipse.
+    // RESUME-04.4: all 13 note centers lie on ONE lower semi-ellipse.
     // The 690x460 reference matrix scales as a unit in Portrait.
     // Endpoints: (6%,48%) and (94%,48%); lowest point F#4: (50%,91%).
     // Y = 48 + 43 * sqrt(1 - ((X-50)/44)^2).
     const arc={cx:50,cy:48,rx:44,ry:43};
     const arcY=x=>arc.cy+arc.ry*Math.sqrt(Math.max(0,1-((x-arc.cx)/arc.rx)**2));
     const leftRing=[
-      ["C4",6,"C5"],["C#4",8,"B4"],
-      ["D4",14,"A#4"],["D#4",24,"A4"],
-      ["E4",36,"G#4"],["F4",43,"G4"]
+      ["C4",6,"C5"],["C#4",9,"B4"],
+      ["D4",14,"A#4"],["D#4",21,"A4"],
+      ["E4",30,"G#4"],["F4",40,"G4"]
     ];
     const ringPositions=[
       ...leftRing.flatMap(([left,x,right])=>[
@@ -81,7 +81,7 @@
       node.style.setProperty("left",x+"%","important");
       node.style.setProperty("top",y+"%","important");
     }
-    avatar.dataset.resume03Version="04.3-algebraic-semiellipse";
+    avatar.dataset.resume03Version="04.4-spaced-algebraic-semiellipse";
     // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
     // the scale of the complete actor (art, ring, keys, visual feedback).
     // Auto and Landscape retain their existing layout and DOM placement.
