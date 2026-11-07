@@ -208,3 +208,34 @@
 /* RESUME-03.4 — seventh note F#4 is the bottom center of the 13-note arc. */
 .pianinho.resume03 .mirror-node[data-note="F4"] {--grid-x:43%;--grid-y:81%}
 .pianinho.resume03 .mirror-node[data-note="F#4"]{--grid-x:50%;--grid-y:91%}
+
+/* RESUME-04: portrait-only fixed design coordinate system.
+   Every child scales with the same transform; no viewport-based circle sizes.
+   Auto/Landscape remain on existing rules. */
+.resume04-matrix-viewport{
+  position:relative;
+  flex:none;
+  justify-self:center;
+  align-self:center;
+  overflow:visible;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume03.resume04-matrix.mirror-hybrid{
+  position:absolute!important;
+  left:0!important;top:0!important;
+  margin:0!important;
+  width:690px!important;min-width:690px!important;max-width:none!important;
+  height:460px!important;min-height:460px!important;
+  aspect-ratio:auto!important;
+  transform:scale(var(--resume04-scale,1))!important;
+  transform-origin:top left!important;
+  overflow:visible!important;
+  --ring-size:37px;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume04-matrix .mirror-ring .mirror-node{
+  width:37px!important;height:37px!important;
+  font-size:11px!important;
+}
+.stage-viewport[data-preview="portrait"] .pianinho.resume04-matrix .mirror-ring .mirror-node[data-chromatic="true"]{
+  width:22.2px!important;height:22.2px!important;
+  font-size:8px!important;
+}
