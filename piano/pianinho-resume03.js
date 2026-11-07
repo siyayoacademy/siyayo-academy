@@ -53,26 +53,44 @@
       keys.appendChild(b);
     });
     avatar.appendChild(keys);
-    // RESUME-04.4: all 13 note centers lie on ONE lower semi-ellipse.
-    // The 690x460 reference matrix scales as a unit in Portrait.
-    // Endpoints: (6%,48%) and (94%,48%); lowest point F#4: (50%,91%).
-    // Y = 48 + 43 * sqrt(1 - ((X-50)/44)^2).
+    // RESUME-04.5: use Y as the input and solve the ellipse for X.
+    // Sample the lower-left quarter ellipse in physical 690x460 matrix pixels,
+    // then space the 7 left-to-center centers at equal ARC LENGTH (not equal X).
+    // The right half is a reflection; F#4 is the unique center point.
     const arc={cx:50,cy:48,rx:44,ry:43};
-    const arcY=x=>arc.cy+arc.ry*Math.sqrt(Math.max(0,1-((x-arc.cx)/arc.rx)**2));
-    const leftRing=[
-      ["C4",6,"C5"],["C#4",9,"B4"],
-      ["D4",14,"A#4"],["D#4",21,"A4"],
-      ["E4",30,"G#4"],["F4",40,"G4"]
+    const steps=2048, samples=[{theta:-Math.PI/2,length:0}];
+    let total=0, prevX=arc.rx*690/100*Math.cos(-Math.PI/2);
+    let prevY=arc.ry*460/100*Math.sin(-Math.PI/2);
+    for(let i=1;i<=steps;i++){
+      const theta=-Math.PI/2+(Math.PI/2)*i/steps;
+      const px=arc.rx*690/100*Math.cos(theta);
+      const py=arc.ry*460/100*Math.sin(theta);
+      total+=Math.hypot(px-prevX,py-prevY);
+      samples.push({theta,length:total});prevX=px;prevY=py;
+    }
+    const leftNotes=[
+      ["C4","C5"],["C#4","B4"],["D4","A#4"],
+      ["D#4","A4"],["E4","G#4"],["F4","G4"]
     ];
-    const ringPositions=[
-      ...leftRing.flatMap(([left,x,right])=>[
-        [left,x,arcY(x)],[right,2*arc.cx-x,arcY(x)]
-      ]),
-      ["F#4",arc.cx,arcY(arc.cx)]
-    ];
+    const ringPositions=[];
+    for(let i=0;i<leftNotes.length;i++){
+      const target=total*i/6;
+      let lo=0,hi=steps;
+      while(lo<hi){const mid=(lo+hi)>>1;if(samples[mid].length<target)lo=mid+1;else hi=mid;}
+      const after=samples[lo],before=samples[Math.max(0,lo-1)];
+      const fraction=after.length===before.length?0:(target-before.length)/(after.length-before.length);
+      const theta=before.theta+(after.theta-before.theta)*fraction;
+      const y=arc.cy+arc.ry*Math.cos(theta);
+      // Inverse of lower ellipse: X_left = cx - rx*sqrt(1-((Y-cy)/ry)^2)
+      const normalized=(y-arc.cy)/arc.ry;
+      const x=arc.cx-arc.rx*Math.sqrt(Math.max(0,1-normalized*normalized));
+      const [left,right]=leftNotes[i];
+      ringPositions.push([left,x,y],[right,2*arc.cx-x,y]);
+    }
+    ringPositions.push(["F#4",arc.cx,arc.cy+arc.ry]);
     if(ringPositions.length!==13 ||
        ringPositions.some(([note,x,y])=>!note||x<0||x>100||y<0||y>100))
-      throw new Error("RESUME-04.3 invalid musical ellipse");
+      throw new Error("RESUME-04.5 invalid inverse-ellipse ring");
     const ring=avatar.querySelector(".mirror-ring");
     for(const [note,x,y] of ringPositions){
       const node=Array.from(ring?.querySelectorAll(".mirror-node")||[])
@@ -81,7 +99,7 @@
       node.style.setProperty("left",x+"%","important");
       node.style.setProperty("top",y+"%","important");
     }
-    avatar.dataset.resume03Version="04.4-spaced-algebraic-semiellipse";
+    avatar.dataset.resume03Version="04.5-inverse-y-equal-arc-length";
     // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
     // the scale of the complete actor (art, ring, keys, visual feedback).
     // Auto and Landscape retain their existing layout and DOM placement.
