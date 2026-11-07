@@ -59,7 +59,7 @@
     const leftRing=[
       ["C4",6,48,"C5"],["C#4",8,60,"B4"],
       ["D4",14,71,"A#4"],["D#4",24,81,"A4"],
-      ["E4",36,88,"G#4"],["F4",43,81,"G4"]
+      ["E4",36,88,"G#4"],["F4",43,89,"G4"]
     ];
     const ringPositions=[
       ...leftRing.flatMap(([left,x,y,right])=>[
@@ -78,7 +78,7 @@
       node.style.setProperty("left",x+"%","important");
       node.style.setProperty("top",y+"%","important");
     }
-    avatar.dataset.resume03Version="04.1-mirrored-ring";
+    avatar.dataset.resume03Version="04.2-mirrored-smile";
     // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
     // the scale of the complete actor (art, ring, keys, visual feedback).
     // Auto and Landscape retain their existing layout and DOM placement.
