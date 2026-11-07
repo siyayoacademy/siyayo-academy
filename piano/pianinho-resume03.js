@@ -70,7 +70,45 @@
       node.style.setProperty("left",x+"%","important");
       node.style.setProperty("top",y+"%","important");
     }
-    avatar.dataset.resume03Version="03.5";
+    avatar.dataset.resume03Version="04-portrait-matrix";
+    // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
+    // the scale of the complete actor (art, ring, keys, visual feedback).
+    // Auto and Landscape retain their existing layout and DOM placement.
+    const originalParent=avatar.parentElement;
+    const originalNext=avatar.nextSibling;
+    const matrix=document.createElement("div");
+    matrix.className="resume04-matrix-viewport";
+    const stage=document.getElementById("stageViewport");
+    let observer;
+    function updateMatrix(){
+      const portrait=stage?.dataset.preview==="portrait";
+      if(!portrait){
+        if(matrix.contains(avatar)){
+          originalParent.insertBefore(avatar,originalNext);
+          matrix.remove();
+        }
+        avatar.classList.remove("resume04-matrix");
+        avatar.style.removeProperty("--resume04-scale");
+        return;
+      }
+      if(!matrix.contains(avatar)){
+        originalParent.insertBefore(matrix,originalNext);
+        matrix.appendChild(avatar);
+      }
+      const available=Math.max(1,originalParent.clientWidth-12);
+      const factor=Math.min(1,available/690);
+      matrix.style.width=(690*factor)+"px";
+      matrix.style.height=(460*factor)+"px";
+      avatar.style.setProperty("--resume04-scale",String(factor));
+      avatar.classList.add("resume04-matrix");
+    }
+    if(stage){
+      observer=new ResizeObserver(updateMatrix);
+      observer.observe(originalParent);
+      const changes=new MutationObserver(updateMatrix);
+      changes.observe(stage,{attributes:true,attributeFilter:["data-preview"]});
+      updateMatrix();
+    }
     // Existing mirror ring retains all 13 note IDs and handlers; only styling changes.
   };
   probe.src=asset;
