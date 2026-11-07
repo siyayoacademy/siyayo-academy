@@ -53,15 +53,23 @@
       keys.appendChild(b);
     });
     avatar.appendChild(keys);
-    // RESUME-03.5: one authoritative, ordinal 13-note grid.
-    // Apply coordinates directly with important priority to avoid legacy CSS
-    // overrides and ensure the seventh note F#4 is bottom-center.
-    const ringPositions=[
-      ["C4",6,48],["C#4",8,60],["D4",14,71],
-      ["D#4",24,81],["E4",36,88],["F4",43,81],
-      ["F#4",50,91],["G4",76,81],["G#4",86,71],
-      ["A4",92,81],["A#4",94,71],["B4",94,60],["C5",92,48]
+    // RESUME-04.1: left side is authoritative; right side is its exact
+    // geometric reflection across the F#4 vertical center axis (X=50%).
+    // No independently tuned right-side coordinates.
+    const leftRing=[
+      ["C4",6,48,"C5"],["C#4",8,60,"B4"],
+      ["D4",14,71,"A#4"],["D#4",24,81,"A4"],
+      ["E4",36,88,"G#4"],["F4",43,81,"G4"]
     ];
+    const ringPositions=[
+      ...leftRing.flatMap(([left,x,y,right])=>[
+        [left,x,y],[right,100-x,y]
+      ]),
+      ["F#4",50,91]
+    ];
+    if(ringPositions.length!==13 ||
+       ringPositions.some(([note,x,y])=>!note||x<0||x>100||y<0||y>100))
+      throw new Error("RESUME-04.1 invalid musical ring grid");
     const ring=avatar.querySelector(".mirror-ring");
     for(const [note,x,y] of ringPositions){
       const node=Array.from(ring?.querySelectorAll(".mirror-node")||[])
@@ -70,7 +78,7 @@
       node.style.setProperty("left",x+"%","important");
       node.style.setProperty("top",y+"%","important");
     }
-    avatar.dataset.resume03Version="04-portrait-matrix";
+    avatar.dataset.resume03Version="04.1-mirrored-ring";
     // RESUME-04: fixed 690x460 reference matrix; portrait changes ONLY
     // the scale of the complete actor (art, ring, keys, visual feedback).
     // Auto and Landscape retain their existing layout and DOM placement.
