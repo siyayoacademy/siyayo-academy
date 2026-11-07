@@ -219,7 +219,7 @@
   align-self:center;
   overflow:visible;
 }
-.stage-viewport[data-preview="portrait"] .pianinho.resume03.resume04-matrix.mirror-hybrid{
+.pianinho.resume03.resume04-matrix.mirror-hybrid{
   position:absolute!important;
   left:0!important;top:0!important;
   margin:0!important;
@@ -231,11 +231,14 @@
   overflow:visible!important;
   --ring-size:37px;
 }
-.stage-viewport[data-preview="portrait"] .pianinho.resume04-matrix .mirror-ring .mirror-node{
+.pianinho.resume04-matrix .mirror-ring .mirror-node{
   width:37px!important;height:37px!important;
   font-size:11px!important;
 }
-.stage-viewport[data-preview="portrait"] .pianinho.resume04-matrix .mirror-ring .mirror-node[data-chromatic="true"]{
+.pianinho.resume04-matrix .mirror-ring .mirror-node[data-chromatic="true"]{
   width:22.2px!important;height:22.2px!important;
   font-size:8px!important;
 }
+
+/* RESUME-05: matrix wrapper is identical in Auto, Portrait and Landscape. */
+.resume04-matrix-viewport{margin-inline:auto;max-width:none;isolation:isolate}
