@@ -19,12 +19,13 @@
     const notes=["G3","G#3","A3","A#3","B3","C4","C#4","D4","D#4","E4","F4","F#4","G4","G#4","A4","A#4","B4","C5","C#5","D5","D#5","E5"];
     const whites=notes.filter(n=>!n.includes("#"));
     // SOUND CALIBRATION 01: single authoritative right-hand voice in piano.js.
-    // A4=440 Hz, equal temperament; the existing Pianinho voice raises one octave.
+    // A4=432 Hz, equal temperament; the existing Pianinho voice raises one octave.
     // No synthetic clicks on the Piano Plano: no duplicate notes or assessment.
     function sound(note){
       const semitone={C:0,D:2,E:4,F:5,G:7,A:9,B:11}[note[0]]+(note.includes("#")?1:0);
       const midi=(Number(note.match(/\d/)[0])+1)*12+semitone;
-      const frequency=440*Math.pow(2,(midi-69)/12);
+      const frequency=window.SIYAYO_PIANO_TUNING?.frequencyFromMidi(midi);
+      if(!Number.isFinite(frequency))throw Error("SOUND-02 shared tuning unavailable");
       window.dispatchEvent(new CustomEvent("siyayo:pianinho-fine-art-note",{
         detail:{note,midi,frequency,outputFrequency:frequency*2,
           scope:"musical.fine-art",semantic:null,evaluation:false,evidence:false}
