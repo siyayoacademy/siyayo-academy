@@ -49,21 +49,25 @@
     ? learnerResponseForm.querySelector('button[type="submit"]')
     : null;
 
+  const sharedTuning=window.SIYAYO_PIANO_TUNING;
+  if(!sharedTuning)throw Error("SOUND-02 shared tuning unavailable");
   const keys = [
-    { id:"C4",  frequency:261.63, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
-    { id:"C#4", frequency:277.18, solfege:"DÓ♯", solfegeSharp:"DÓ♯", solfegeFlat:"RÉ♭", speechSharp:"Dó sustenido", speechFlat:"Ré bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
-    { id:"D4",  frequency:293.66, solfege:"RÉ",  en:"blue",   es:"azul",     pt:"azul",     kind:"white" },
-    { id:"D#4", frequency:311.13, solfege:"RÉ♯", solfegeSharp:"RÉ♯", solfegeFlat:"MI♭", speechSharp:"Ré sustenido", speechFlat:"Mi bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
-    { id:"E4",  frequency:329.63, solfege:"MI",  en:"white",  es:"blanco",   pt:"branco",   kind:"white" },
-    { id:"F4",  frequency:349.23, solfege:"FÁ",  en:"yellow", es:"amarillo", pt:"amarelo",  kind:"white" },
-    { id:"F#4", frequency:369.99, solfege:"FÁ♯", solfegeSharp:"FÁ♯", solfegeFlat:"SOL♭", speechSharp:"Fá sustenido", speechFlat:"Sol bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
-    { id:"G4",  frequency:392.00, solfege:"SOL", en:"brown",  es:"marrón",   pt:"marrom",   kind:"white" },
-    { id:"G#4", frequency:415.30, solfege:"SOL♯",solfegeSharp:"SOL♯",solfegeFlat:"LÁ♭", speechSharp:"Sol sustenido", speechFlat:"Lá bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
-    { id:"A4",  frequency:440.00, solfege:"LÁ",  en:"red",    es:"rojo",     pt:"vermelho", kind:"white" },
-    { id:"A#4", frequency:466.16, solfege:"LÁ♯", solfegeSharp:"LÁ♯", solfegeFlat:"SI♭", speechSharp:"Lá sustenido", speechFlat:"Si bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
-    { id:"B4",  frequency:493.88, solfege:"SI",  en:"gold",   es:"dorado",   pt:"dourado",  kind:"white" },
-    { id:"C5",  frequency:523.25, solfege:"DÓ↑", en:"black",  es:"negro",    pt:"preto",    kind:"white" }
+    { id:"C4",  frequency:0, solfege:"DÓ",  en:"green",  es:"verde",    pt:"verde",    kind:"white" },
+    { id:"C#4", frequency:0, solfege:"DÓ♯", solfegeSharp:"DÓ♯", solfegeFlat:"RÉ♭", speechSharp:"Dó sustenido", speechFlat:"Ré bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"D4",  frequency:0, solfege:"RÉ",  en:"blue",   es:"azul",     pt:"azul",     kind:"white" },
+    { id:"D#4", frequency:0, solfege:"RÉ♯", solfegeSharp:"RÉ♯", solfegeFlat:"MI♭", speechSharp:"Ré sustenido", speechFlat:"Mi bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"E4",  frequency:0, solfege:"MI",  en:"white",  es:"blanco",   pt:"branco",   kind:"white" },
+    { id:"F4",  frequency:0, solfege:"FÁ",  en:"yellow", es:"amarillo", pt:"amarelo",  kind:"white" },
+    { id:"F#4", frequency:0, solfege:"FÁ♯", solfegeSharp:"FÁ♯", solfegeFlat:"SOL♭", speechSharp:"Fá sustenido", speechFlat:"Sol bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"G4",  frequency:0, solfege:"SOL", en:"brown",  es:"marrón",   pt:"marrom",   kind:"white" },
+    { id:"G#4", frequency:0, solfege:"SOL♯",solfegeSharp:"SOL♯",solfegeFlat:"LÁ♭", speechSharp:"Sol sustenido", speechFlat:"Lá bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"A4",  frequency:0, solfege:"LÁ",  en:"red",    es:"rojo",     pt:"vermelho", kind:"white" },
+    { id:"A#4", frequency:0, solfege:"LÁ♯", solfegeSharp:"LÁ♯", solfegeFlat:"SI♭", speechSharp:"Lá sustenido", speechFlat:"Si bemol", en:"sharp", es:"sostenido",pt:"sustenido",kind:"black" },
+    { id:"B4",  frequency:0, solfege:"SI",  en:"gold",   es:"dorado",   pt:"dourado",  kind:"white" },
+    { id:"C5",  frequency:0, solfege:"DÓ↑", en:"black",  es:"negro",    pt:"preto",    kind:"white" }
   ];
+  for(const key of keys){const frequency=sharedTuning.frequencyForNote(key.id);if(frequency===null)throw Error("SOUND-02 unmapped note: "+key.id);key.frequency=frequency;}
+
 
   const whiteKeys = keys.filter(key => key.kind === "white");
   const blackKeys = keys.filter(key => key.kind === "black");
@@ -3619,13 +3623,13 @@
       // WAIT Performance Layer: learner agency gets an audible response,
       // but still produces no evaluation, GREEN or Evidence.
       if (requestedState === "thinking") {
-        playPianinhoHigh(523.25);
+        playPianinhoHigh(sharedTuning.frequencyForNote("C5"));
         speak(copy.speakMoreTime, copy.locale);
       } else if (requestedState === "confused") {
-        playPianinhoHigh(392.00);
+        playPianinhoHigh(sharedTuning.frequencyForNote("G4"));
         speak(copy.speakClarification, copy.locale);
       } else if (requestedState === "insufficient-context") {
-        playPianinhoHigh(329.63);
+        playPianinhoHigh(sharedTuning.frequencyForNote("E4"));
         const context = currentQuestionContext(activeQuestionWord);
         if (context) {
           speakSequence([
