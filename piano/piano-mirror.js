@@ -1,16 +1,19 @@
-/* SIYAYO M1-M4 mirror 21: additive, non-evaluative musical layer. */
+/* SIYAYO M1-M4 mirror 22: additive, non-evaluative musical layer. */
 (() => {
 "use strict";
 const avatar=document.getElementById("pianinho"), keyboard=document.getElementById("keyboard");
-if(!avatar||!keyboard||avatar.dataset.mirror21)return;
+if(!avatar||!keyboard||avatar.dataset.mirror22)return;
 const notes=[
-["G#3","SOL♯",207.65,"black"],["A3","LÁ",220,"white"],["A#3","LÁ♯",233.08,"black"],["B3","SI",246.94,"white"],
+["G3","SOL",192.43,"white"],["G#3","SOL♯",203.88,"black"],["A3","LÁ",220,"white"],["A#3","LÁ♯",233.08,"black"],["B3","SI",246.94,"white"],
 ["C4","DÓ",261.63,"white"],["C#4","DÓ♯",277.18,"black"],["D4","RÉ",293.66,"white"],["D#4","RÉ♯",311.13,"black"],
 ["E4","MI",329.63,"white"],["F4","FÁ",349.23,"white"],["F#4","FÁ♯",369.99,"black"],["G4","SOL",392,"white"],
 ["G#4","SOL♯",415.30,"black"],["A4","LÁ",440,"white"],["A#4","LÁ♯",466.16,"black"],["B4","SI",493.88,"white"],
 ["C5","DÓ↑",523.25,"white"],["C#5","DÓ♯",554.37,"black"],["D5","RÉ",587.33,"white"],["D#5","RÉ♯",622.25,"black"],["E5","MI",659.25,"white"]
 ];
-const anchor=new Set(notes.slice(4,17).map(n=>n[0]));
+const anchor=new Set(notes.filter(n=>{const midi=window.SIYAYO_PIANO_TUNING?.midiFromNote(n[0]);return midi>=60&&midi<=72;}).map(n=>n[0]));
+const tuning=window.SIYAYO_PIANO_TUNING;
+if(!tuning)throw Error("SOUND-02 tuning required for mirror");
+for(const n of notes){n[2]=tuning.frequencyForNote(n[0]);if(!Number.isFinite(n[2]))throw Error("Unmapped mirror note: "+n[0]);}
 const map=new Map(notes.map(n=>[n[0],n]));
 const white=notes.filter(n=>n[3]==="white");
 const nodes=new Map(),minis=new Map(),extensions=new Map();
@@ -22,11 +25,11 @@ const b=document.createElement("button");b.type="button";b.className="mirror-nod
 b.style.setProperty("--x",coords[i][0]+"%");b.style.setProperty("--y",coords[i][1]+"%");b.style.setProperty("--tone",colors[i]);
 b.textContent=n[1];b.setAttribute("aria-label",n[1]+" "+n[0]);b.addEventListener("click",()=>play(n[0],true));ring.appendChild(b);nodes.set(n[0],b);
 });
-const mini=document.createElement("div");mini.className="mirror-mini";mini.setAttribute("aria-label","Tecladinho de 21 notas G sustenido 3 a Mi 5");
+const mini=document.createElement("div");mini.className="mirror-mini";mini.setAttribute("aria-label","Tecladinho de 22 notas SOL3 a MI5");
 white.forEach((n,i)=>{const b=document.createElement("button");b.style.setProperty("--arc-i",String(i));b.type="button";b.className="mirror-mini-white";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b)});
 notes.filter(n=>n[3]==="black").forEach(n=>{
 const idx=white.findIndex(w=>notes.indexOf(w)>notes.indexOf(n));
-const b=document.createElement("button");b.style.setProperty("--arc-i",String(idx-.5));b.type="button";b.className="mirror-mini-black";b.style.left=(idx/12*100)+"%";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b);
+const b=document.createElement("button");b.style.setProperty("--arc-i",String(idx-.5));b.type="button";b.className="mirror-mini-black";b.style.left=(idx/13*100)+"%";b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b);
 });
 avatar.dataset.mirror21="true";avatar.classList.add("mirror-hybrid");avatar.append(mini,ring);
 const firstWhite=keyboard.querySelector('.piano-key:not(.black-key)');
@@ -35,20 +38,20 @@ for(const n of notes.filter(n=>!anchor.has(n[0]))){
 const b=document.createElement("button");b.type="button";b.className="mirror-extension-key "+(n[3]==="black"?"black-key":"white-key");
 b.dataset.note=n[0];b.setAttribute("aria-label",n[1]+" "+n[0]+" — solfejo musical");b.innerHTML='<span class="mirror-extension-label">'+n[1]+'<small>'+n[0]+'</small></span>';
 b.addEventListener("pointerdown",e=>{e.preventDefault();play(n[0],false)});
-if(n[3]==="white"&&notes.indexOf(n)<4)keyboard.insertBefore(b,firstWhite);
+if(n[3]==="white"&&notes.indexOf(n)<5)keyboard.insertBefore(b,firstWhite);
 else if(n[3]==="white")keyboard.appendChild(b);
 else keyboard.appendChild(b);
 extensions.set(n[0],b);
 }
-keyboard.classList.add("mirror-keyboard-21");
+keyboard.classList.add("mirror-keyboard-22");
 // Explicit left-to-right musical ordering; CSS grid does not rely on append order.
 // White-key order is explicit; black keys are positioned over white-key boundaries.
 white.forEach((n,index)=>{const b=keyboard.querySelector('[data-note="'+n[0]+'"]');if(b)b.style.setProperty("--mirror-white-index",String(index));});
 const switches=document.createElement("div");switches.className="mirror-switch";
-switches.innerHTML='<small>ESPELHO MUSICAL · 13 NO ARO / 21 NO TECLADO</small>';
+switches.innerHTML='<small>ESPELHO MUSICAL · 13 NO ARO / 22 NO TECLADO</small>';
 const original=document.createElement("button"),hybrid=document.createElement("button");
-original.type=hybrid.type="button";original.textContent="8 original";hybrid.textContent="13 + 21";
-function setView(on){avatar.classList.toggle("mirror-hybrid",on);keyboard.classList.toggle("mirror-keyboard-21",on);ring.hidden=mini.hidden=!on;extensions.forEach(b=>b.hidden=!on);original.setAttribute("aria-pressed",String(!on));hybrid.setAttribute("aria-pressed",String(on));}
+original.type=hybrid.type="button";original.textContent="8 original";hybrid.textContent="13 + 22";
+function setView(on){avatar.classList.toggle("mirror-hybrid",on);keyboard.classList.toggle("mirror-keyboard-22",on);ring.hidden=mini.hidden=!on;extensions.forEach(b=>b.hidden=!on);original.setAttribute("aria-pressed",String(!on));hybrid.setAttribute("aria-pressed",String(on));}
 original.addEventListener("click",()=>setView(false));hybrid.addEventListener("click",()=>setView(true));
 switches.append(original,hybrid);avatar.parentElement.insertAdjacentElement("afterend",switches);setView(true);
 let audio=null;
