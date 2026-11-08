@@ -1644,6 +1644,16 @@
     sparkle.stop(now + 0.36);
   }
 
+  // SOUND CALIBRATION 01: reuse the homologated Pianinho right-hand voice.
+  // The Fine Art keyboard sends a base MIDI frequency; this voice handles its octave.
+  // Musical-only: never creates assessment evidence or advances a lesson.
+  window.addEventListener("siyayo:pianinho-fine-art-note", event => {
+    const detail = event.detail || {};
+    if (detail.scope !== "musical.fine-art" || !Number.isFinite(detail.frequency) ||
+        detail.frequency < 20 || detail.frequency > 2000) return;
+    playPianinhoHigh(detail.frequency);
+  });
+
   function playFrondosaHarp(frequency, when = 0) {
     const ctx = ensureAudio();
     const now = ctx.currentTime + when;
