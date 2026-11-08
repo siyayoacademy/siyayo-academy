@@ -74,4 +74,8 @@ light(id);
 }
 function light(id){for(const el of [nodes.get(id),minis.get(id),extensions.get(id)]){if(!el)continue;el.classList.remove("is-mirror-lit");void el.offsetWidth;el.classList.add("is-mirror-lit");window.setTimeout(()=>el.classList.remove("is-mirror-lit"),550)}}
 window.addEventListener("siyayo:musical-event",e=>{const d=e.detail||{};if(d.type==="note"&&map.has(d.note))light(d.note)});
+window.addEventListener("siyayo:pianinho-fine-art-note",e=>{
+  const d=e.detail||{};
+  if(d.scope==="musical.fine-art" && typeof d.note==="string") light(d.note);
+});
 })();
