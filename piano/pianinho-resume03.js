@@ -18,26 +18,17 @@
     keys.setAttribute("role","group");keys.setAttribute("aria-label","Teclado semicircular interativo, 22 notas");
     const notes=["G3","G#3","A3","A#3","B3","C4","C#4","D4","D#4","E4","F4","F#4","G4","G#4","A4","A#4","B4","C5","C#5","D5","D#5","E5"];
     const whites=notes.filter(n=>!n.includes("#"));
-    let audio;
+    // SOUND CALIBRATION 01: single authoritative right-hand voice in piano.js.
+    // A4=440 Hz, equal temperament; the existing Pianinho voice raises one octave.
+    // No synthetic clicks on the Piano Plano: no duplicate notes or assessment.
     function sound(note){
-      const existing=avatar.querySelector('.mirror-mini [data-note="'+note+'"]');
-      if(existing){existing.click();return;}
-      const piano=document.querySelector('#keyboard [data-note="'+note+'"]');
-      if(piano){piano.dispatchEvent(new PointerEvent("pointerdown",{bubbles:true,cancelable:true,pointerType:"touch"}));return;}
       const semitone={C:0,D:2,E:4,F:5,G:7,A:9,B:11}[note[0]]+(note.includes("#")?1:0);
       const midi=(Number(note.match(/\d/)[0])+1)*12+semitone;
-      const freq=440*Math.pow(2,(midi-69)/12);
-      try{
-        const C=window.AudioContext||window.webkitAudioContext;
-        if(!C)return;
-        audio??=new C();if(audio.state==="suspended")audio.resume();
-        const o=audio.createOscillator(),g=audio.createGain(),t=audio.currentTime;
-        o.frequency.value=freq;o.type="sine";g.gain.setValueAtTime(.0001,t);
-        g.gain.exponentialRampToValueAtTime(.14,t+.02);
-        g.gain.exponentialRampToValueAtTime(.0001,t+.45);
-        o.connect(g).connect(audio.destination);o.start(t);o.stop(t+.46);
-      }catch(e){console.warn("RESUME-03 audio unavailable",e)}
-      window.dispatchEvent(new CustomEvent("siyayo:mirror-extension-note",{detail:{note,scope:"musical.extension",semantic:null,evaluation:false,evidence:false}}));
+      const frequency=440*Math.pow(2,(midi-69)/12);
+      window.dispatchEvent(new CustomEvent("siyayo:pianinho-fine-art-note",{
+        detail:{note,midi,frequency,outputFrequency:frequency*2,
+          scope:"musical.fine-art",semantic:null,evaluation:false,evidence:false}
+      }));
     }
     notes.forEach(note=>{
       const sharp=note.includes("#");
