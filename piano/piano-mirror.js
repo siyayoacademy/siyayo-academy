@@ -34,7 +34,7 @@ notes.filter(n=>n[3]==="black").forEach(n=>{
 const idx=white.findIndex(w=>notes.indexOf(w)>notes.indexOf(n));
 const b=document.createElement("button");b.style.setProperty("--arc-i",String(idx-.5));b.type="button";b.className="mirror-mini-black";b.style.setProperty("--mirror-black-x",(idx/white.length*100)+"%");b.dataset.note=n[0];b.title=n[1]+" "+n[0];b.setAttribute("aria-label",b.title);b.addEventListener("click",()=>play(n[0],true));mini.appendChild(b);minis.set(n[0],b);
 });
-avatar.dataset.mirror21="true";avatar.classList.add("mirror-hybrid");avatar.append(mini,ring);
+avatar.dataset.mirror22="true";avatar.classList.add("mirror-hybrid");avatar.append(mini,ring);
 const firstWhite=keyboard.querySelector('.piano-key:not(.black-key)');
 
 for(const n of notes.filter(n=>!anchor.has(n[0]))){
@@ -64,10 +64,12 @@ original.type=hybrid.type="button";original.textContent="8 original";hybrid.text
 function setView(on){avatar.classList.toggle("mirror-hybrid",on);keyboard.classList.toggle("mirror-keyboard-22",on);ring.hidden=mini.hidden=!on;extensions.forEach(b=>b.hidden=!on);original.setAttribute("aria-pressed",String(!on));hybrid.setAttribute("aria-pressed",String(on));}
 original.addEventListener("click",()=>setView(false));hybrid.addEventListener("click",()=>setView(true));
 switches.append(original,hybrid);avatar.parentElement.insertAdjacentElement("afterend",switches);setView(true);
-let audio=null;
+// SOUND-05: no separate sine oscillator for extended notes.
 function extensionSound(n,octaveMultiplier=1){
-try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;if(!audio)audio=new C();if(audio.state==="suspended")audio.resume();
-const osc=audio.createOscillator(),gain=audio.createGain(),now=audio.currentTime;osc.type="sine";osc.frequency.value=n[2]*octaveMultiplier;gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(.18,now+.025);gain.gain.exponentialRampToValueAtTime(.0001,now+.5);osc.connect(gain);gain.connect(audio.destination);osc.start(now);osc.stop(now+.52);}catch(e){console.warn("Mirror extension audio unavailable",e)}
+  window.dispatchEvent(new CustomEvent("siyayo:piano-classic-extension",{
+    detail:{note:n[0],frequency:n[2]*octaveMultiplier,scope:"musical.extension",
+      semantic:null,evaluation:false,evidence:false}
+  }));
 }
 function play(id,fromAvatar){
 const n=map.get(id);if(!n)return;
