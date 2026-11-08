@@ -202,3 +202,24 @@
 .mirror-keyboard-22>.black-key[data-note="A#4"]{left:69.230769%!important}
 .mirror-keyboard-22>.black-key[data-note="C#5"]{left:84.615385%!important}
 .mirror-keyboard-22>.black-key[data-note="D#5"]{left:92.307692%!important}
+
+/* SOUND-04: data-driven responsive keyboard. The number of white keys is
+   computed in piano-mirror.js; no manual grid-column or black-key offsets.
+   Existing semantic keyboard, labels and musical events remain unchanged. */
+.mirror-keyboard-22,
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-22{
+  display:grid;
+  grid-template-columns:repeat(var(--mirror-white-count,13),minmax(0,1fr))!important;
+  min-width:0!important;
+  width:100%!important;
+}
+.pianinho.mirror-hybrid .mirror-mini{
+  grid-template-columns:repeat(var(--mirror-white-count,13),minmax(0,1fr))!important;
+}
+.mirror-keyboard-22>.black-key[data-note],
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note]{
+  left:var(--mirror-black-x)!important;
+}
+.pianinho.mirror-hybrid .mirror-mini-black[data-note]{
+  left:var(--mirror-black-x)!important;
+}
