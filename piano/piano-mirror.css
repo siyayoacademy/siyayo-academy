@@ -31,13 +31,13 @@
 .mirror-mini-black:hover,.mirror-mini-white:hover{filter:brightness(1.2)}
 .pianinho.mirror-hybrid .avatar-caption{bottom:0}
 .pianinho.mirror-hybrid .mirror-ring[hidden],.pianinho.mirror-hybrid .mirror-mini[hidden]{display:none}
-.mirror-keyboard-21{grid-template-columns:repeat(12,minmax(0,1fr));min-width:720px}
-.mirror-keyboard-21 .piano-key.black-key{width:5.6%;min-width:22px;max-width:none}
-.mirror-keyboard-21 .black-key[data-note="C#4"]{left:25%}
-.mirror-keyboard-21 .black-key[data-note="D#4"]{left:33.333%}
-.mirror-keyboard-21 .black-key[data-note="F#4"]{left:50%}
-.mirror-keyboard-21 .black-key[data-note="G#4"]{left:58.333%}
-.mirror-keyboard-21 .black-key[data-note="A#4"]{left:66.667%}
+.mirror-keyboard-22{grid-template-columns:repeat(12,minmax(0,1fr));min-width:720px}
+.mirror-keyboard-22 .piano-key.black-key{width:5.6%;min-width:22px;max-width:none}
+.mirror-keyboard-22 .black-key[data-note="C#4"]{left:25%}
+.mirror-keyboard-22 .black-key[data-note="D#4"]{left:33.333%}
+.mirror-keyboard-22 .black-key[data-note="F#4"]{left:50%}
+.mirror-keyboard-22 .black-key[data-note="G#4"]{left:58.333%}
+.mirror-keyboard-22 .black-key[data-note="A#4"]{left:66.667%}
 .mirror-extension-key{min-width:0;cursor:pointer;touch-action:manipulation}
 .mirror-extension-key.white-key{position:relative;border:0;border-right:1px solid #2c3646;background:linear-gradient(#fff,#e2e6f1);color:#182333}
 .mirror-extension-key.black-key{width:5.6%;min-width:22px;max-width:none}
@@ -51,17 +51,17 @@
 .mirror-extension-key.is-mirror-lit{background:#ffe078;box-shadow:inset 0 0 28px #ffb200}
 .mirror-extension-key.black-key.is-mirror-lit{background:#1689c5}
 .mirror-extension-key[hidden]{display:none!important}
-.keyboard-scroll:has(.mirror-keyboard-21){overflow-x:auto;overscroll-behavior-x:contain}
+.keyboard-scroll:has(.mirror-keyboard-22){overflow-x:auto;overscroll-behavior-x:contain}
 @media(max-width:600px){
 .pianinho.mirror-hybrid{height:330px}
 .pianinho.mirror-hybrid .mirror-mini{top:57%}
 .mirror-node{width:35px;height:35px;font-size:.58rem}
-.keyboard-scroll:has(.mirror-keyboard-21){overflow-x:auto}
-.mirror-keyboard-21{width:720px;min-width:720px;grid-template-columns:repeat(12,minmax(0,1fr))}
+.keyboard-scroll:has(.mirror-keyboard-22){overflow-x:auto}
+.mirror-keyboard-22{width:720px;min-width:720px;grid-template-columns:repeat(12,minmax(0,1fr))}
 }
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid{height:330px}
-.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-21){overflow-x:auto}
-.stage-viewport[data-preview="portrait"] .mirror-keyboard-21{width:720px;min-width:720px;grid-template-columns:repeat(12,minmax(0,1fr))}
+.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-22){overflow-x:auto}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-22{width:720px;min-width:720px;grid-template-columns:repeat(12,minmax(0,1fr))}
 
 /* ELO PORTRAIT SMILE GRID — visual grid is invisible; note IDs are unchanged. */
 .pianinho.mirror-hybrid{width:min(100%,690px);height:440px;max-width:100%;overflow:visible}
@@ -74,18 +74,18 @@
 .pianinho.mirror-hybrid .mirror-node{z-index:2}
 .pianinho.mirror-hybrid .mirror-mini{z-index:4}
 /* Grid items cannot be placed reliably by DOM append alone: explicit musical order. */
-.mirror-keyboard-21>.piano-key:not(.black-key),
-.mirror-keyboard-21>.mirror-extension-key.white-key{grid-column:calc(var(--mirror-white-index) + 1);grid-row:1}
-.mirror-keyboard-21>.mirror-extension-key.white-key{min-height:100%}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="G#3"]{left:0%}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="A#3"]{left:16.667%}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="C#5"]{left:83.333%}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="D#5"]{left:91.667%}
-.mirror-keyboard-21>.piano-key.black-key[data-note="C#4"]{left:25%}
-.mirror-keyboard-21>.piano-key.black-key[data-note="D#4"]{left:33.333%}
-.mirror-keyboard-21>.piano-key.black-key[data-note="F#4"]{left:50%}
-.mirror-keyboard-21>.piano-key.black-key[data-note="G#4"]{left:58.333%}
-.mirror-keyboard-21>.piano-key.black-key[data-note="A#4"]{left:66.667%}
+.mirror-keyboard-22>.piano-key:not(.black-key),
+.mirror-keyboard-22>.mirror-extension-key.white-key{grid-column:calc(var(--mirror-white-index) + 1);grid-row:1}
+.mirror-keyboard-22>.mirror-extension-key.white-key{min-height:100%}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="G#3"]{left:0%}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="A#3"]{left:16.667%}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="C#5"]{left:83.333%}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="D#5"]{left:91.667%}
+.mirror-keyboard-22>.piano-key.black-key[data-note="C#4"]{left:25%}
+.mirror-keyboard-22>.piano-key.black-key[data-note="D#4"]{left:33.333%}
+.mirror-keyboard-22>.piano-key.black-key[data-note="F#4"]{left:50%}
+.mirror-keyboard-22>.piano-key.black-key[data-note="G#4"]{left:58.333%}
+.mirror-keyboard-22>.piano-key.black-key[data-note="A#4"]{left:66.667%}
 @media(max-width:600px){
 .pianinho.mirror-hybrid{height:310px;width:100%}
 .pianinho.mirror-hybrid .mirror-node{width:clamp(27px,8vw,36px);height:clamp(27px,8vw,36px);font-size:clamp(.47rem,2vw,.63rem)}
@@ -103,21 +103,21 @@
 .pianinho.mirror-hybrid .mirror-node{width:clamp(34px,5vw,54px);height:clamp(34px,5vw,54px)}
 .pianinho.mirror-hybrid .mirror-mini{left:23%;top:60%;width:54%;height:18%;border-radius:4px 4px 42% 42%;transform:perspective(550px) rotateX(8deg);overflow:hidden}
 .pianinho.mirror-hybrid .mirror-ring::after{left:11%;width:78%;top:52%;height:39%;border-bottom:2px solid rgba(245,205,75,.4);border-radius:0 0 50% 50%}
-.mirror-keyboard-21{width:100%;min-width:0;grid-template-columns:repeat(12,minmax(0,1fr));height:clamp(155px,25vw,330px)}
-.mirror-keyboard-21>.piano-key:not(.black-key),.mirror-keyboard-21>.mirror-extension-key.white-key{grid-column:calc(var(--mirror-white-index) + 1);grid-row:1}
-.mirror-keyboard-21>.piano-key.black-key,.mirror-keyboard-21>.mirror-extension-key.black-key{width:5.5%;min-width:0;max-width:none}
-.keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden}
+.mirror-keyboard-22{width:100%;min-width:0;grid-template-columns:repeat(12,minmax(0,1fr));height:clamp(155px,25vw,330px)}
+.mirror-keyboard-22>.piano-key:not(.black-key),.mirror-keyboard-22>.mirror-extension-key.white-key{grid-column:calc(var(--mirror-white-index) + 1);grid-row:1}
+.mirror-keyboard-22>.piano-key.black-key,.mirror-keyboard-22>.mirror-extension-key.black-key{width:5.5%;min-width:0;max-width:none}
+.keyboard-scroll:has(.mirror-keyboard-22){overflow-x:hidden}
 @media(max-width:600px){
 .pianinho.mirror-hybrid{height:300px}
 .pianinho.mirror-hybrid .mirror-node{width:clamp(27px,8vw,37px);height:clamp(27px,8vw,37px)}
 .pianinho.mirror-hybrid .pianinho-visual{inset:17% 18% 20%;width:64%;height:63%}
 .pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%;top:60%}
-.mirror-keyboard-21{width:100%;min-width:0;height:clamp(155px,43vw,260px)}
-.mirror-keyboard-21 .key-word,.mirror-keyboard-21 .mirror-extension-label{font-size:.55rem}
-.mirror-keyboard-21 .key-note,.mirror-keyboard-21 .mirror-extension-label small{font-size:.48rem}
+.mirror-keyboard-22{width:100%;min-width:0;height:clamp(155px,43vw,260px)}
+.mirror-keyboard-22 .key-word,.mirror-keyboard-22 .mirror-extension-label{font-size:.55rem}
+.mirror-keyboard-22 .key-note,.mirror-keyboard-22 .mirror-extension-label small{font-size:.48rem}
 }
-.stage-viewport[data-preview="portrait"] .mirror-keyboard-21{width:100%;min-width:0;grid-template-columns:repeat(12,minmax(0,1fr));height:clamp(155px,43vw,260px)}
-.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-22{width:100%;min-width:0;grid-template-columns:repeat(12,minmax(0,1fr));height:clamp(155px,43vw,260px)}
+.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-22){overflow-x:hidden}
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid{height:300px}
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .pianinho-visual{inset:17% 18% 20%;width:64%;height:63%}
 .stage-viewport[data-preview="portrait"] .pianinho.mirror-hybrid .mirror-mini{left:22%;width:56%;top:60%}
@@ -125,7 +125,7 @@
 /* ELO 21.4 — isolated geometry consolidation, musical IDs and events unchanged.
    Twelve white keys: A3 B3 C4 D4 E4 F4 G4 A4 B4 C5 D5 E5.
    Nine black keys: G#3 A#3 C#4 D#4 F#4 G#4 A#4 C#5 D#5. */
-.mirror-keyboard-21{
+.mirror-keyboard-22{
   display:grid;
   grid-template-columns:repeat(12,minmax(0,1fr))!important;
   grid-template-rows:1fr;
@@ -133,8 +133,8 @@
   min-width:0!important;
   overflow:hidden;
 }
-.mirror-keyboard-21>.piano-key:not(.black-key),
-.mirror-keyboard-21>.mirror-extension-key.white-key{
+.mirror-keyboard-22>.piano-key:not(.black-key),
+.mirror-keyboard-22>.mirror-extension-key.white-key{
   position:relative;
   grid-row:1;
   grid-column:calc(var(--mirror-white-index) + 1);
@@ -143,8 +143,8 @@
   height:100%;
   box-sizing:border-box;
 }
-.mirror-keyboard-21>.piano-key.black-key,
-.mirror-keyboard-21>.mirror-extension-key.black-key{
+.mirror-keyboard-22>.piano-key.black-key,
+.mirror-keyboard-22>.mirror-extension-key.black-key{
   position:absolute!important;
   top:0;
   height:59%;
@@ -155,36 +155,50 @@
   z-index:12;
   box-sizing:border-box;
 }
-.mirror-keyboard-21>.black-key[data-note="G#3"]{left:0%}
-.mirror-keyboard-21>.black-key[data-note="A#3"]{left:8.333333%}
-.mirror-keyboard-21>.black-key[data-note="C#4"]{left:25%}
-.mirror-keyboard-21>.black-key[data-note="D#4"]{left:33.333333%}
-.mirror-keyboard-21>.black-key[data-note="F#4"]{left:50%}
-.mirror-keyboard-21>.black-key[data-note="G#4"]{left:58.333333%}
-.mirror-keyboard-21>.black-key[data-note="A#4"]{left:66.666667%}
-.mirror-keyboard-21>.black-key[data-note="C#5"]{left:83.333333%}
-.mirror-keyboard-21>.black-key[data-note="D#5"]{left:91.666667%}
-.keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden!important}
+.mirror-keyboard-22>.black-key[data-note="G#3"]{left:0%}
+.mirror-keyboard-22>.black-key[data-note="A#3"]{left:8.333333%}
+.mirror-keyboard-22>.black-key[data-note="C#4"]{left:25%}
+.mirror-keyboard-22>.black-key[data-note="D#4"]{left:33.333333%}
+.mirror-keyboard-22>.black-key[data-note="F#4"]{left:50%}
+.mirror-keyboard-22>.black-key[data-note="G#4"]{left:58.333333%}
+.mirror-keyboard-22>.black-key[data-note="A#4"]{left:66.666667%}
+.mirror-keyboard-22>.black-key[data-note="C#5"]{left:83.333333%}
+.mirror-keyboard-22>.black-key[data-note="D#5"]{left:91.666667%}
+.keyboard-scroll:has(.mirror-keyboard-22){overflow-x:hidden!important}
 .pianinho.mirror-hybrid{box-sizing:border-box;max-width:100%;overflow:hidden}
 .pianinho.mirror-hybrid .mirror-ring{inset:0;overflow:hidden}
 .pianinho.mirror-hybrid .mirror-node{box-sizing:border-box}
 .pianinho.mirror-hybrid .mirror-mini{grid-template-columns:repeat(12,minmax(0,1fr));box-sizing:border-box}
 .pianinho.mirror-hybrid .mirror-mini-white{min-width:0;min-height:0}
 @media(max-width:600px){
- .mirror-keyboard-21{height:clamp(150px,44vw,245px)}
- .mirror-keyboard-21>.black-key{width:5.4%!important}
+ .mirror-keyboard-22{height:clamp(150px,44vw,245px)}
+ .mirror-keyboard-22>.black-key{width:5.4%!important}
 }
-.stage-viewport[data-preview="portrait"] .mirror-keyboard-21{width:100%!important;min-width:0!important}
-.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-21){overflow-x:hidden!important}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-22{width:100%!important;min-width:0!important}
+.stage-viewport[data-preview="portrait"] .keyboard-scroll:has(.mirror-keyboard-22){overflow-x:hidden!important}
 
 /* ELO 21.5 — compact Piano Plano; fix extension black keys, preserve musical events. */
-.mirror-keyboard-21{height:clamp(145px,19vw,225px)!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="A#3"]{left:8.333333%!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="G#3"]{left:0%!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="C#5"]{left:83.333333%!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key[data-note="D#5"]{left:91.666667%!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key{background:linear-gradient(#191a20,#050608)!important;color:#fff!important;border:1px solid #292b32!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key .mirror-extension-label{color:#fff!important}
-.mirror-keyboard-21>.mirror-extension-key.black-key.is-mirror-lit{background:#1689c5!important}
-@media(max-width:600px){.mirror-keyboard-21{height:clamp(135px,37vw,195px)!important}}
-.stage-viewport[data-preview="portrait"] .mirror-keyboard-21{height:clamp(135px,37vw,195px)!important}
+.mirror-keyboard-22{height:clamp(145px,19vw,225px)!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="A#3"]{left:8.333333%!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="G#3"]{left:0%!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="C#5"]{left:83.333333%!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key[data-note="D#5"]{left:91.666667%!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key{background:linear-gradient(#191a20,#050608)!important;color:#fff!important;border:1px solid #292b32!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key .mirror-extension-label{color:#fff!important}
+.mirror-keyboard-22>.mirror-extension-key.black-key.is-mirror-lit{background:#1689c5!important}
+@media(max-width:600px){.mirror-keyboard-22{height:clamp(135px,37vw,195px)!important}}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-22{height:clamp(135px,37vw,195px)!important}
+
+/* SOUND-03: 13 white + 9 black keys, G3 to E5, true chromatic geometry. */
+.mirror-keyboard-22{grid-template-columns:repeat(13,minmax(0,1fr))!important}
+.stage-viewport[data-preview="portrait"] .mirror-keyboard-22{grid-template-columns:repeat(13,minmax(0,1fr))!important}
+.pianinho.mirror-hybrid .mirror-mini{grid-template-columns:repeat(13,minmax(0,1fr))!important}
+.mirror-keyboard-22>.black-key[data-note="G#3"]{left:7.692308%!important}
+.mirror-keyboard-22>.black-key[data-note="A#3"]{left:15.384615%!important}
+.mirror-keyboard-22>.black-key[data-note="C#4"]{left:30.769231%!important}
+.mirror-keyboard-22>.black-key[data-note="D#4"]{left:38.461538%!important}
+.mirror-keyboard-22>.black-key[data-note="F#4"]{left:53.846154%!important}
+.mirror-keyboard-22>.black-key[data-note="G#4"]{left:61.538462%!important}
+.mirror-keyboard-22>.black-key[data-note="A#4"]{left:69.230769%!important}
+.mirror-keyboard-22>.black-key[data-note="C#5"]{left:84.615385%!important}
+.mirror-keyboard-22>.black-key[data-note="D#5"]{left:92.307692%!important}
