@@ -1648,6 +1648,16 @@
     sparkle.stop(now + 0.36);
   }
 
+  // SOUND-05: extensions use the SAME approved Piano Plano classic-piano voice.
+  // The 13 original C4-C5 keys retain their existing handler and timbre.
+  // Musical-only event: no assessment, evidence, speech or learning progression.
+  window.addEventListener("siyayo:piano-classic-extension", event => {
+    const detail=event.detail||{};
+    if(detail.scope!=="musical.extension" || !Number.isFinite(detail.frequency) ||
+       detail.frequency<20 || detail.frequency>2000) return;
+    playPianoLow(detail.frequency);
+  });
+
   // SOUND CALIBRATION 01: reuse the homologated Pianinho right-hand voice.
   // The Fine Art keyboard sends a base MIDI frequency; this voice handles its octave.
   // Musical-only: never creates assessment evidence or advances a lesson.
