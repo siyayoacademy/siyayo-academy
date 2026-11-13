@@ -1,5 +1,16 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · S1 HOW MUCH/WHO Dependency Focus + Head Probe — 2026-11-13
+
+**Implemented against current MAIN candidate:** six `data/learning/dependencies/shopping-{how-much,who}-{en,es,pt}.json` question-grounded dependency graphs, with per-language S1 `dependencyFocus` and `dependencyHeadProbe` configuration and registration in the shared `DEPENDENCY_FOCUS_URLS` loader. The canonical S1 questions and preexisting S1 WHAT/WHERE/WHICH/WHY remain unchanged; no assessmentTarget, new contract or automatic credit was added.
+
+**Linguistic distinction:** HOW MUCH quantifies *salmon/salmón/salmão* (interrogative determiner), unlike WHERE/WHY which modify a predicate. WHO is the subject of *coming/viene/vem*. Each language uses its own tokenization, question structure, and canonical head-probe alternatives, never the question token as its own head. Human visual and linguistic homologation remains open after automated validation.
+
+**Evidence:** run `43530208653` GREEN. Six new canonical Head Probes passed; browser Chromium S1 six QWs × EN/ES/PT = 18/18 displays of Dependency Focus, Head Probe, original Learning Trail and Word Path with PATITA excluded from pedagogy. Existing house-integrity, SEEK × TORO inventory, and canonical S3→S4 WHY contract passed.
+
+**Remaining structural gaps in the current 21-slot corpus:** S2 WHEN/HOW/WHO (3), assuming current source corpus stays unchanged. Additional HOW TO SHOW responses, audio, NICK persistence, evaluated contracts and 14-QW roadmap remain separate workstreams. Do not present the new structural specialty as authorized assessment or new Green Pass.
+
+
 ## JAGUAR · S3 WHO/HOW Dependency Focus + Head Probe — 2026-11-13
 
 **Implementation on actual Explorer candidate:** six separate source-grounded S3 `having-{who,how}-{en,es,pt}.json` dependency graphs, reused unchanged canonical S3 questions, connected S3 `thinkingMind[*].dependencyFocus` and `dependencyHeadProbe` and the existing `DEPENDENCY_FOCUS_URLS` loader in `js/verb-explorer.js`. The shared renderer and specialist Head Probe engine are reused. NO assessmentTarget was added. Language-specific anchors: WHO attaches as subject of EN *like*, ES *quiere*, PT *gostaria*; HOW links to EN *taste* and ES/PT *estar*; modal and object/nominal complements retain language-specific analyses.
