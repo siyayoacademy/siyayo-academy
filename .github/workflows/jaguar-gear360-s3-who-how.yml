@@ -1,0 +1,40 @@
+name: JAGUAR GEAR360 S3 WHO HOW
+on:
+  push:
+    branches: [jaguar/gear360-s3-who-how-20261113, main]
+    paths:
+      - 'data/learning/experience-seeds.json'
+      - 'data/learning/dependencies/having-who-*.json'
+      - 'data/learning/dependencies/having-how-*.json'
+      - 'js/verb-explorer.js'
+      - 'scripts/test-jaguar-gear360-s3-who-how.cjs'
+      - 'scripts/jaguar-gear360-s3-who-how-browser.cjs'
+      - '.github/workflows/jaguar-gear360-s3-who-how.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  s3-who-how:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: GEAR360 complete house regression
+        run: node scripts/jaguar-gear360-house-integrity.cjs
+      - name: SEEK TORO crossmap of current coverage
+        run: node scripts/jaguar-gear360-seek-toro-crossmap.cjs
+      - name: Canonical S3 WHY S4 transfer remains valid
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Six S3 structures and canonical Head Probes
+        run: node scripts/test-jaguar-gear360-s3-who-how.cjs
+      - name: Install Playwright runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Chromium S3 EN ES PT WHO HOW WHAT WHY and Trail Word Path
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/siyayo-s3.log 2>&1 &
+          node scripts/jaguar-gear360-s3-who-how-browser.cjs
