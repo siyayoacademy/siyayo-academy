@@ -1,5 +1,14 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · S3 WHO/HOW Dependency Focus + Head Probe — 2026-11-13
+
+**Implementation on actual Explorer candidate:** six separate source-grounded S3 `having-{who,how}-{en,es,pt}.json` dependency graphs, reused unchanged canonical S3 questions, connected S3 `thinkingMind[*].dependencyFocus` and `dependencyHeadProbe` and the existing `DEPENDENCY_FOCUS_URLS` loader in `js/verb-explorer.js`. The shared renderer and specialist Head Probe engine are reused. NO assessmentTarget was added. Language-specific anchors: WHO attaches as subject of EN *like*, ES *quiere*, PT *gostaria*; HOW links to EN *taste* and ES/PT *estar*; modal and object/nominal complements retain language-specific analyses.
+
+**Verification:** GitHub Actions run `43528242058` GREEN. Canonical Head Probe Definition validates the six graphs and choices. Real Chromium renders S3 WHO/HOW **plus pre-existing WHAT/WHY** × EN/ES/PT = 12/12 Focus + Head Probe + original Learning Trail/Word Path parity; no NICK and no PATITA text in the Word Path. GEAR360 house baseline, SEEK × TORO inventory and canonical WHY S3→S4 contract pass. Human visual/linguistic homologation remains pending; browser acceptance is not owner homologation.
+
+**Progressive scope:** S3 now has DF/Head Probe for all four current QWs. S4 retains four. Other known existing gaps continue S1 HOW MUCH/WHO and S2 WHEN/HOW/WHO. The full GEAR roadmap still distinguishes these authored modules from WHAT/WHO/HOW free answer authoring, audio, saved NICK, evaluated records and future 14-QW coverage.
+
+
 ## JAGUAR · MASTER PLAN GEAR 360 + HOW TO SHOW Trail reconciliation — 2026-11-13
 
 **Inherited execution roadmap:** (1) SEEK × TORO current/main and historical source reconciliation; (2) recover seven already-declared Experience/QW slots without DF/Head Probe, starting S3 WHO/HOW, then S1 HOW MUCH/WHO and S2 WHEN/HOW/WHO; (3) contextually author HOW TO SHOW question/answer/speaker/Lines without automatically authorizing evaluations; (4) restore canonical NICK/PATITA/Learning Trail/Word Path presentation across S1–S4 and EN→ES→PT, keeping exploration/assessment and their scopes distinct; (5) use already-documented authorized contracts and require actual human semantic approval for pending H14 WHY S1/S2; (6) expand the remaining context-relevant canonical QWs and Ten Word Classes through reusable GEAR capabilities. Prioritize working MAIN, not additional laboratories without integration.
