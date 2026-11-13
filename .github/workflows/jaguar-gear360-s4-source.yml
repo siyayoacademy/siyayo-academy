@@ -4,6 +4,7 @@ on:
     branches: [jaguar/gear360-s4-source-reconciliation-20261113, jaguar/gear360-s4-what-who-how-dependency-20261113, main]
     paths:
       - 'data/learning/experience-seeds.json'
+      - 'js/verb-explorer.js'
       - 'data/learning/dependencies/**'
       - 'scripts/test-jaguar-gear360-s4-what-who-how.cjs'
       - 'scripts/jaguar-gear360-s4-dependency-browser.cjs'
