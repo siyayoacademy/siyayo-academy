@@ -6,6 +6,14 @@ const {chromium}=require('playwright');
   try{
     const page=await browser.newPage({viewport:{width:1280,height:900}});
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
+    // Diagnostics are separate, closed by default; their existing IDs remain wired.
+    await page.goto('http://127.0.0.1:8765/verb-explorer.html?mode=experience&experience=shopping-for-dinner',{waitUntil:'networkidle'});
+    const technical=page.locator('#explorerTechnicalObservationModule');
+    assert.equal(await technical.count(),1,'Technical/Patita disclosure missing');
+    assert.equal(await technical.evaluate(el=>el.open),false,'Diagnostics must be closed by default');
+    assert.equal(await page.locator('#learningTrailWordPathModule #patitaInteractionLedger').count(),0,'PATITA ledger still inside HOW TO SHOW');
+    assert.equal(await technical.locator('#patitaInteractionLedger').count(),1,'PATITA ledger must stay reachable');
+    assert.equal(await technical.locator('#h1460ReferralReview').count(),1,'EVAL08 reference ID must be preserved');
     for(const context of [
       {experience:'shopping-for-dinner',word:'which'},
       {experience:'preparing-dinner',word:'which'},
