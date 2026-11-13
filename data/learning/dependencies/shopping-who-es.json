@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-who-es",
+  "language": "es",
+  "sentence": "¿Quién viene a cenar?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Quién",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "es": "PRONOMBRE"
+        },
+        "role": {
+          "es": "Persona preguntada, sujeto de viene"
+        }
+      }
+    },
+    {
+      "id": "come",
+      "index": 2,
+      "form": "viene",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Predicado de movimiento"
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 3,
+      "form": "a",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "es": "PREPOSICIÓN"
+        },
+        "role": {
+          "es": "Introduce la actividad final"
+        }
+      }
+    },
+    {
+      "id": "dine",
+      "index": 4,
+      "form": "cenar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Actividad final del movimiento"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "come",
+      "dependent": "who",
+      "relation": "nsubj"
+    },
+    {
+      "head": "come",
+      "dependent": "dine",
+      "relation": "xcomp"
+    },
+    {
+      "head": "dine",
+      "dependent": "to",
+      "relation": "mark"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S1 authored es WHO contextual question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Read-only pedagogical analysis sourced to the existing trilingual Shopping scene; no automatic credits. Await human visual/linguistic homologation."
+  }
+}
