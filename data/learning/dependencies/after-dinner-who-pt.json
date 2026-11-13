@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-who-pt",
+  "language": "pt",
+  "sentence": "Quem você gostaria de escutar?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Quem",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Pessoa que seria escutada"
+        }
+      }
+    },
+    {
+      "id": "you",
+      "index": 2,
+      "form": "você",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Sujeito de gostaria"
+        }
+      }
+    },
+    {
+      "id": "like",
+      "index": 3,
+      "form": "gostaria",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Verbo de preferência"
+        }
+      }
+    },
+    {
+      "id": "de",
+      "index": 4,
+      "form": "de",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PREPOSIÇÃO"
+        },
+        "role": {
+          "pt": "Marca o infinitivo"
+        }
+      }
+    },
+    {
+      "id": "listen",
+      "index": 5,
+      "form": "escutar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação de escutar: núcleo de QUEM"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "like",
+      "dependent": "you",
+      "relation": "nsubj"
+    },
+    {
+      "head": "like",
+      "dependent": "listen",
+      "relation": "xcomp"
+    },
+    {
+      "head": "listen",
+      "dependent": "de",
+      "relation": "mark"
+    },
+    {
+      "head": "listen",
+      "dependent": "who",
+      "relation": "obj"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S4 authored pt WHO contextual question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Context-specific analysis. Independent free study only; human visual/language review pending. Not an assessment target."
+  }
+}
