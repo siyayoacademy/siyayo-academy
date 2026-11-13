@@ -1,9 +1,11 @@
 name: JAGUAR GEAR360 S4 source provenance
 on:
   push:
-    branches: [jaguar/gear360-s4-source-reconciliation-20261113, main]
+    branches: [jaguar/gear360-s4-source-reconciliation-20261113, jaguar/gear360-s4-what-who-how-dependency-20261113, main]
     paths:
       - 'data/learning/experience-seeds.json'
+      - 'data/learning/dependencies/**'
+      - 'scripts/test-jaguar-gear360-s4-what-who-how.cjs'
       - 'data/learning/references/jaguar-gear360-s4-source-reconciliation-20261113.json'
       - 'scripts/jaguar-gear360-s4-source-gate.cjs'
       - '.github/workflows/jaguar-gear360-s4-source.yml'
@@ -24,3 +26,7 @@ jobs:
         run: node scripts/jaguar-gear360-house-integrity.cjs
       - name: Live SEEK TORO full placement crossmap
         run: node scripts/jaguar-gear360-seek-toro-crossmap.cjs
+      - name: Validate nine authored S4 graph structures and Head Probes
+        run: node scripts/test-jaguar-gear360-s4-what-who-how.cjs
+      - name: Preserve canonical S3 to S4 WHY assessment
+        run: node scripts/test-s3-why-canonical-green-cycle.js
