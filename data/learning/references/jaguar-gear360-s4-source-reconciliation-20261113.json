@@ -1,0 +1,113 @@
+{
+  "id": "SIYAYO-S4-SPECIALIZATION-SOURCE-RECONCILIATION",
+  "version": "1.0.0",
+  "date": "2026-11-13",
+  "target": {
+    "experienceId": "after-dinner-conversation",
+    "questionWords": [
+      "what",
+      "who",
+      "how"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "pt"
+    ]
+  },
+  "sources": [
+    {
+      "path": "data/learning/experience-seeds.json",
+      "kind": "current_runtime",
+      "trust": "runtime_authored_questions"
+    },
+    {
+      "path": "docs/siyayo-qword-experience-coverage-audit.md",
+      "kind": "historical_snapshot",
+      "trust": "review_only"
+    },
+    {
+      "path": "docs/siyayo-seek-toro-sector-register.v0.2.json",
+      "kind": "historical_snapshot",
+      "trust": "review_only"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-2-qw-opportunity-map-v0.1.json",
+      "kind": "historical_reference",
+      "trust": "review_only"
+    },
+    {
+      "path": "data/learning/references/jaguar-h14-7-five-functions-experience-matrix-v0.1.json",
+      "kind": "master_vip_candidate",
+      "trust": "PENDING_HOMOLOGATION"
+    },
+    {
+      "path": "data/learning/references/master-vip-existence-experience-candidates-v0.1.json",
+      "kind": "master_vip_candidate",
+      "trust": "PENDING_HOMOLOGATION"
+    }
+  ],
+  "slots": [
+    {
+      "qw": "what",
+      "question": {
+        "en": "What would you like to talk about?",
+        "es": "¿De qué te gustaría hablar?",
+        "pt": "Sobre o que você gostaria de conversar?"
+      },
+      "potentialSource": "master-vip existence candidate for S4: WHAT",
+      "pending": [
+        "canonical dependency tokenization EN/ES/PT",
+        "predicate and word-type mapping review",
+        "head-probe alternatives and target choice",
+        "visual/aural homologation"
+      ],
+      "state": "QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED"
+    },
+    {
+      "qw": "who",
+      "question": {
+        "en": "Who would you like to listen to?",
+        "es": "¿A quién te gustaría escuchar?",
+        "pt": "Quem você gostaria de escutar?"
+      },
+      "potentialSource": "master-vip existence candidate for S4: WHO",
+      "pending": [
+        "object/indirect-object and preposition analysis EN/ES/PT",
+        "scene-appropriate listening referent",
+        "head-probe authoring",
+        "human review"
+      ],
+      "state": "QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED"
+    },
+    {
+      "qw": "how",
+      "question": {
+        "en": "How can we keep the conversation pleasant?",
+        "es": "¿Cómo podemos mantener agradable la conversación?",
+        "pt": "Como podemos manter a conversa agradável?"
+      },
+      "potentialSource": "H14.7 S4 STATE candidate linked to HOW",
+      "pending": [
+        "modal CAN/PODER relation and adverbial function across EN/ES/PT",
+        "verb/predicate/complement analysis",
+        "head-probe alternatives",
+        "human review"
+      ],
+      "state": "QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED"
+    }
+  ],
+  "authority": {
+    "createAssessmentTarget": false,
+    "createGreenPass": false,
+    "patitaObserverOnly": true,
+    "existingWhyS3S4Protected": true
+  },
+  "decision": "NO_READY_DEPENDENCY_STRUCTURES_FOUND_IN_SCANNED_CURRENT_AND_HISTORICAL_SOURCES; AUTHOR_AND_REVIEW_BEFORE_CONNECTING",
+  "nextImplementation": [
+    "author independent grounded token graphs for S4 WHAT, WHO, HOW across three languages",
+    "validate each graph with an existing dependency schema and visual Head Probe tests",
+    "integrate selectively into existing experience-seeds only after reviewed source",
+    "rerun house-integrity and Chromium while retaining WHY S3/S4 contracts"
+  ]
+}
