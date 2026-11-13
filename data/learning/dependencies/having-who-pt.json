@@ -1,0 +1,155 @@
+{
+  "version": "0.1.0",
+  "id": "having-who-pt",
+  "language": "pt",
+  "sentence": "Quem gostaria de um pouco de salmão?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Quem",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Pessoa que gostaria de salmão"
+        }
+      }
+    },
+    {
+      "id": "like",
+      "index": 2,
+      "form": "gostaria",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Predicado de preferência"
+        }
+      }
+    },
+    {
+      "id": "of",
+      "index": 3,
+      "form": "de",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PREPOSIÇÃO"
+        },
+        "role": {
+          "pt": "Preposição exigida por gostar"
+        }
+      }
+    },
+    {
+      "id": "um",
+      "index": 4,
+      "form": "um",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determinante de pouco"
+        }
+      }
+    },
+    {
+      "id": "little",
+      "index": 5,
+      "form": "pouco",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Quantidade de salmão"
+        }
+      }
+    },
+    {
+      "id": "de",
+      "index": 6,
+      "form": "de",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PREPOSIÇÃO"
+        },
+        "role": {
+          "pt": "Preposição de especificação"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 7,
+      "form": "salmão",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Alimento que completa a quantidade"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "like",
+      "dependent": "who",
+      "relation": "nsubj"
+    },
+    {
+      "head": "like",
+      "dependent": "little",
+      "relation": "obl"
+    },
+    {
+      "head": "little",
+      "dependent": "of",
+      "relation": "case"
+    },
+    {
+      "head": "little",
+      "dependent": "um",
+      "relation": "det"
+    },
+    {
+      "head": "little",
+      "dependent": "salmon",
+      "relation": "nmod"
+    },
+    {
+      "head": "salmon",
+      "dependent": "de",
+      "relation": "case"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S3 authored pt WHO question",
+    "experienceId": "having-dinner",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Language-specific semantic syntax for free Dependency Focus / Head Probe; no assessment authorization. Human visual and linguistic review pending."
+  }
+}
