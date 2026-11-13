@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "having-who-en",
+  "language": "en",
+  "sentence": "Who would like some salmon?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Who",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Person who would like the salmon"
+        }
+      }
+    },
+    {
+      "id": "would",
+      "index": 2,
+      "form": "would",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Modal auxiliary of like"
+        }
+      }
+    },
+    {
+      "id": "like",
+      "index": 3,
+      "form": "like",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Main predicate of preference"
+        }
+      }
+    },
+    {
+      "id": "some",
+      "index": 4,
+      "form": "some",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Quantifier of salmon"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 5,
+      "form": "salmon",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Food being offered"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "like",
+      "dependent": "who",
+      "relation": "nsubj"
+    },
+    {
+      "head": "like",
+      "dependent": "would",
+      "relation": "aux"
+    },
+    {
+      "head": "like",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "some",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S3 authored en WHO question",
+    "experienceId": "having-dinner",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Language-specific semantic syntax for free Dependency Focus / Head Probe; no assessment authorization. Human visual and linguistic review pending."
+  }
+}
