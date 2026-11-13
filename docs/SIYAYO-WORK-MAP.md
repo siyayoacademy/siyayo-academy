@@ -1,5 +1,16 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · S4 WHAT/WHO/HOW dependencies integrated — 2026-11-13
+
+**Implemented on candidate derived from main:** nine trilingual graphs `data/learning/dependencies/after-dinner-{what,who,how}-{en,es,pt}.json`; S4 per-QW `dependencyFocus`/`dependencyHeadProbe` metadata in `data/learning/experience-seeds.json`; registered file loading in existing `js/verb-explorer.js`. No second rendering engine. No `assessmentTarget` or Evidence/Green authority added.
+
+**Automated evidence:** GitHub Actions run `43516050450` GREEN, with canonical graph/Head Probe tests and real Chromium rendering S4 WHAT/WHO/HOW/WHY × EN/ES/PT (12 live UI selections). S3→S4 WHY canonical cycle and existing SEEK×TORO/house guards passed. Earlier browser RED diagnosed missing dependency URL registration, corrected without altering other modules.
+
+**Provenance:** original S4 questions are reused unchanged. Master VIP references informed the lexical analysis but were marked PENDING_HOMOLOGATION. Read-only contextual graph rendering is source- and browser-verified; **human linguistic/visual homologation remains open**. In particular verify EN stranded prepositions, ES interrogative preposition/personal *a*, PT prepositional complements, and HOW modal/complement roles.
+
+**Boundary:** PATITA observes free study; no new assessment target, scored Attempt, Green Pass, D1 or Worker. The original S4 WHY dependency and S3→S4 evaluative transfer remain intact. Next work should continue other real gaps from the SEEK×TORO crossmap instead of rebuilding S4 modules.
+
+
 ## JAGUAR · ELO S4 source-reconciliation · 2026-11-13
 
 **Objective:** recover prior authored specializations before adding any new S4 Dependency Focus/Head Probe or evaluation contract. Grounded ledger: `data/learning/references/jaguar-gear360-s4-source-reconciliation-20261113.json`. Gate: `node scripts/jaguar-gear360-s4-source-gate.cjs`.
