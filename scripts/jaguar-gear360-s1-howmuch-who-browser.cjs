@@ -14,7 +14,7 @@ const assert=require('node:assert/strict'),{chromium}=require('playwright');
     await page.locator('#dependencyHeadProbePanel').waitFor({state:'visible',timeout:10000});
     assert.ok((await page.locator('#dependencyHeadProbePanel').textContent()).trim().length>30,'empty probe '+word+'/'+lang);
     const disclosure=page.locator('#learningTrailWordPathModule');
-    if(!(await disclosure.evaluate(el=>el.open)))await disclosure.locator('summary').click();
+    if(!(await disclosure.evaluate(el=>el.open)))await disclosure.locator(':scope > summary').click();
     const trail=page.locator('#learnerTrailSurface');
     await trail.waitFor({state:'visible',timeout:10000});
     assert.equal(await trail.locator('.wp-poly-table').count(),1,'missing original Word Path '+word+'/'+lang);
