@@ -1,0 +1,79 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-how-much-es",
+  "language": "es",
+  "sentence": "¿Cuánto salmón necesitamos?",
+  "tokens": [
+    {
+      "id": "howmuch",
+      "index": 1,
+      "form": "Cuánto",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante interrogativo de cantidad"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 2,
+      "form": "salmón",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Sustantivo cuya cantidad se solicita"
+        }
+      }
+    },
+    {
+      "id": "need",
+      "index": 3,
+      "form": "necesitamos",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Predicado de necesidad"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "salmon",
+      "dependent": "howmuch",
+      "relation": "det"
+    },
+    {
+      "head": "need",
+      "dependent": "salmon",
+      "relation": "obj"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S1 authored es HOW-MUCH contextual question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "how-much",
+    "field": "thinkingMind.question",
+    "notes": "Read-only pedagogical analysis sourced to the existing trilingual Shopping scene; no automatic credits. Await human visual/linguistic homologation."
+  }
+}
