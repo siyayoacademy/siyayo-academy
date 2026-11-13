@@ -1872,6 +1872,48 @@
             "en": "WHO",
             "es": "QUIÉN",
             "pt": "QUEM"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "having-who-en",
+              "es": "having-who-es",
+              "pt": "having-who-pt"
+            },
+            "defaultFocusByLanguage": {
+              "en": "like",
+              "es": "want",
+              "pt": "like"
+            }
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "having-who-en",
+              "es": "having-who-es",
+              "pt": "having-who-pt"
+            },
+            "targetTokenId": "who",
+            "prompt": {
+              "en": "In “Who would like some salmon?”, which verb is “Who” the subject of?",
+              "es": "En «¿Quién quiere un poco de salmón?», ¿de qué verbo es sujeto «Quién»?",
+              "pt": "Em “Quem gostaria de um pouco de salmão?”, de qual verbo “Quem” é sujeito?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "like",
+                "salmon",
+                "would"
+              ],
+              "es": [
+                "want",
+                "little",
+                "salmon"
+              ],
+              "pt": [
+                "like",
+                "little",
+                "salmon"
+              ]
+            }
           }
         },
         {
@@ -1886,6 +1928,48 @@
             "en": "HOW",
             "es": "CÓMO",
             "pt": "COMO"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "having-how-en",
+              "es": "having-how-es",
+              "pt": "having-how-pt"
+            },
+            "defaultFocusByLanguage": {
+              "en": "taste",
+              "es": "be",
+              "pt": "be"
+            }
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "having-how-en",
+              "es": "having-how-es",
+              "pt": "having-how-pt"
+            },
+            "targetTokenId": "how",
+            "prompt": {
+              "en": "In “How does the dinner taste?”, which verb does “How” modify?",
+              "es": "En «¿Cómo está la cena?», ¿a qué verbo modifica «Cómo»?",
+              "pt": "Em “Como está o jantar?”, qual verbo “Como” modifica?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "taste",
+                "does",
+                "dinner"
+              ],
+              "es": [
+                "be",
+                "dinner",
+                "the"
+              ],
+              "pt": [
+                "be",
+                "dinner",
+                "the"
+              ]
+            }
           }
         },
         {
