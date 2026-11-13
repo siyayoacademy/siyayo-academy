@@ -57,12 +57,16 @@
       },
       "potentialSource": "master-vip existence candidate for S4: WHAT",
       "pending": [
-        "canonical dependency tokenization EN/ES/PT",
-        "predicate and word-type mapping review",
-        "head-probe alternatives and target choice",
-        "visual/aural homologation"
+        "verify dependency graph and target head in Chromium EN ES PT",
+        "review linguistic functions and visual alignment with owner",
+        "do not activate new assessment contract"
       ],
-      "state": "QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED"
+      "state": "STRUCTURE_AUTHORED_RUNTIME_WIRED_PENDING_VISUAL_HUMAN_REVIEW",
+      "structureIds": {
+        "en": "after-dinner-what-en",
+        "es": "after-dinner-what-es",
+        "pt": "after-dinner-what-pt"
+      }
     },
     {
       "qw": "who",
@@ -73,12 +77,16 @@
       },
       "potentialSource": "master-vip existence candidate for S4: WHO",
       "pending": [
-        "object/indirect-object and preposition analysis EN/ES/PT",
-        "scene-appropriate listening referent",
-        "head-probe authoring",
-        "human review"
+        "verify dependency graph and target head in Chromium EN ES PT",
+        "review linguistic functions and visual alignment with owner",
+        "do not activate new assessment contract"
       ],
-      "state": "QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED"
+      "state": "STRUCTURE_AUTHORED_RUNTIME_WIRED_PENDING_VISUAL_HUMAN_REVIEW",
+      "structureIds": {
+        "en": "after-dinner-who-en",
+        "es": "after-dinner-who-es",
+        "pt": "after-dinner-who-pt"
+      }
     },
     {
       "qw": "how",
@@ -89,12 +97,16 @@
       },
       "potentialSource": "H14.7 S4 STATE candidate linked to HOW",
       "pending": [
-        "modal CAN/PODER relation and adverbial function across EN/ES/PT",
-        "verb/predicate/complement analysis",
-        "head-probe alternatives",
-        "human review"
+        "verify dependency graph and target head in Chromium EN ES PT",
+        "review linguistic functions and visual alignment with owner",
+        "do not activate new assessment contract"
       ],
-      "state": "QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED"
+      "state": "STRUCTURE_AUTHORED_RUNTIME_WIRED_PENDING_VISUAL_HUMAN_REVIEW",
+      "structureIds": {
+        "en": "after-dinner-how-en",
+        "es": "after-dinner-how-es",
+        "pt": "after-dinner-how-pt"
+      }
     }
   ],
   "authority": {
@@ -103,11 +115,10 @@
     "patitaObserverOnly": true,
     "existingWhyS3S4Protected": true
   },
-  "decision": "NO_READY_DEPENDENCY_STRUCTURES_FOUND_IN_SCANNED_CURRENT_AND_HISTORICAL_SOURCES; AUTHOR_AND_REVIEW_BEFORE_CONNECTING",
+  "decision": "SOURCE_GROUNDED_STRUCTURE_AUTHORED_AND_CONNECTED_WITH_READ_ONLY_FOCUS__AWAITING_TEST_AND_VISUAL_HOMOLOGATION",
   "nextImplementation": [
-    "author independent grounded token graphs for S4 WHAT, WHO, HOW across three languages",
-    "validate each graph with an existing dependency schema and visual Head Probe tests",
-    "integrate selectively into existing experience-seeds only after reviewed source",
-    "rerun house-integrity and Chromium while retaining WHY S3/S4 contracts"
+    "run structural and browser proof of WHAT WHO HOW Head Probe",
+    "review cross-lingual linguistic semantics with owner",
+    "retain no-new-contract guard and existing WHY transfer"
   ]
 }
