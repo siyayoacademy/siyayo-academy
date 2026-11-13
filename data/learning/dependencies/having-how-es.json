@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "having-how-es",
+  "language": "es",
+  "sentence": "¿Cómo está la cena?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "Cómo",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": "Pregunta por el estado o la cualidad de la cena"
+        }
+      }
+    },
+    {
+      "id": "be",
+      "index": 2,
+      "form": "está",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Predicado de estado que modifica CÓMO"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 3,
+      "form": "la",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante de cena"
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 4,
+      "form": "cena",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Sujeto del estado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "be",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "be",
+      "dependent": "dinner",
+      "relation": "nsubj"
+    },
+    {
+      "head": "dinner",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S3 authored es HOW question",
+    "experienceId": "having-dinner",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Language-specific semantic syntax for free Dependency Focus / Head Probe; no assessment authorization. Human visual and linguistic review pending."
+  }
+}
