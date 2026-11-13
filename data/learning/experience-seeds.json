@@ -457,6 +457,48 @@
             "en": "HOW MUCH",
             "es": "CUÁNTO",
             "pt": "QUANTO"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "shopping-how-much-en",
+              "es": "shopping-how-much-es",
+              "pt": "shopping-how-much-pt"
+            },
+            "defaultFocusByLanguage": {
+              "en": "salmon",
+              "es": "salmon",
+              "pt": "salmon"
+            }
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "shopping-how-much-en",
+              "es": "shopping-how-much-es",
+              "pt": "shopping-how-much-pt"
+            },
+            "targetTokenId": "howmuch",
+            "prompt": {
+              "en": "In “How much salmon do we need?”, which noun does “much” quantify?",
+              "es": "En «¿Cuánto salmón necesitamos?», ¿a qué sustantivo determina «Cuánto»?",
+              "pt": "Em “Quanto salmão precisamos?”, qual substantivo “Quanto” determina?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "salmon",
+                "need",
+                "do"
+              ],
+              "es": [
+                "salmon",
+                "need",
+                "howmuch"
+              ],
+              "pt": [
+                "salmon",
+                "need",
+                "howmuch"
+              ]
+            }
           }
         },
         {
@@ -877,6 +919,48 @@
             "en": "WHO",
             "es": "QUIÉN",
             "pt": "QUEM"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "shopping-who-en",
+              "es": "shopping-who-es",
+              "pt": "shopping-who-pt"
+            },
+            "defaultFocusByLanguage": {
+              "en": "come",
+              "es": "come",
+              "pt": "come"
+            }
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "shopping-who-en",
+              "es": "shopping-who-es",
+              "pt": "shopping-who-pt"
+            },
+            "targetTokenId": "who",
+            "prompt": {
+              "en": "In “Who is coming to dinner?”, which verb has “Who” as its subject?",
+              "es": "En «¿Quién viene a cenar?», ¿de qué verbo es sujeto «Quién»?",
+              "pt": "Em “Quem vem para o jantar?”, de qual verbo “Quem” é sujeito?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "come",
+                "is",
+                "dinner"
+              ],
+              "es": [
+                "come",
+                "dine",
+                "who"
+              ],
+              "pt": [
+                "come",
+                "dinner",
+                "who"
+              ]
+            }
           }
         }
       ],
