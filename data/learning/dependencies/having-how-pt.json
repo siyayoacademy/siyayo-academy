@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "id": "having-how-pt",
+  "language": "pt",
+  "sentence": "Como está o jantar?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "Como",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO"
+        },
+        "role": {
+          "pt": "Pergunta pelo estado ou qualidade do jantar"
+        }
+      }
+    },
+    {
+      "id": "be",
+      "index": 2,
+      "form": "está",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Predicado de estado modificado por COMO"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 3,
+      "form": "o",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determinante de jantar"
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 4,
+      "form": "jantar",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Sujeito do predicado de estado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "be",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "be",
+      "dependent": "dinner",
+      "relation": "nsubj"
+    },
+    {
+      "head": "dinner",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S3 authored pt HOW question",
+    "experienceId": "having-dinner",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Language-specific semantic syntax for free Dependency Focus / Head Probe; no assessment authorization. Human visual and linguistic review pending."
+  }
+}
