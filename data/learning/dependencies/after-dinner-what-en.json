@@ -1,0 +1,155 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-what-en",
+  "language": "en",
+  "sentence": "What would you like to talk about?",
+  "tokens": [
+    {
+      "id": "what",
+      "index": 1,
+      "form": "What",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Object of the preposition about"
+        }
+      }
+    },
+    {
+      "id": "would",
+      "index": 2,
+      "form": "would",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Modal auxiliary of like"
+        }
+      }
+    },
+    {
+      "id": "you",
+      "index": 3,
+      "form": "you",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject of like"
+        }
+      }
+    },
+    {
+      "id": "like",
+      "index": 4,
+      "form": "like",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Main finite verb"
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 5,
+      "form": "to",
+      "wordClass": "PART",
+      "pedagogy": {
+        "wordType": {
+          "en": "PARTICLE"
+        },
+        "role": {
+          "en": "Infinitive marker"
+        }
+      }
+    },
+    {
+      "id": "talk",
+      "index": 6,
+      "form": "talk",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Speech action: head of WHAT"
+        }
+      }
+    },
+    {
+      "id": "about",
+      "index": 7,
+      "form": "about",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "en": "PREPOSITION"
+        },
+        "role": {
+          "en": "Stranded preposition linked to WHAT"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "like",
+      "dependent": "would",
+      "relation": "aux"
+    },
+    {
+      "head": "like",
+      "dependent": "you",
+      "relation": "nsubj"
+    },
+    {
+      "head": "like",
+      "dependent": "talk",
+      "relation": "xcomp"
+    },
+    {
+      "head": "talk",
+      "dependent": "to",
+      "relation": "mark"
+    },
+    {
+      "head": "talk",
+      "dependent": "what",
+      "relation": "obl"
+    },
+    {
+      "head": "what",
+      "dependent": "about",
+      "relation": "case"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S4 authored en WHAT contextual question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Context-specific analysis. Independent free study only; human visual/language review pending. Not an assessment target."
+  }
+}
