@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-what-es",
+  "language": "es",
+  "sentence": "¿De qué te gustaría hablar?",
+  "tokens": [
+    {
+      "id": "de",
+      "index": 1,
+      "form": "De",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "es": "PREPOSICIÓN"
+        },
+        "role": {
+          "es": "Preposición de tema"
+        }
+      }
+    },
+    {
+      "id": "what",
+      "index": 2,
+      "form": "qué",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "es": "PRONOMBRE"
+        },
+        "role": {
+          "es": "Tema interrogativo de hablar"
+        }
+      }
+    },
+    {
+      "id": "te",
+      "index": 3,
+      "form": "te",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "es": "PRONOMBRE"
+        },
+        "role": {
+          "es": "Participante interesado"
+        }
+      }
+    },
+    {
+      "id": "like",
+      "index": 4,
+      "form": "gustaría",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Verbo modal de preferencia"
+        }
+      }
+    },
+    {
+      "id": "talk",
+      "index": 5,
+      "form": "hablar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción de conversación: núcleo de QUÉ"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "like",
+      "dependent": "te",
+      "relation": "obj"
+    },
+    {
+      "head": "like",
+      "dependent": "talk",
+      "relation": "xcomp"
+    },
+    {
+      "head": "talk",
+      "dependent": "what",
+      "relation": "obl"
+    },
+    {
+      "head": "what",
+      "dependent": "de",
+      "relation": "case"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S4 authored es WHAT contextual question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "what",
+    "field": "thinkingMind.question",
+    "notes": "Context-specific analysis. Independent free study only; human visual/language review pending. Not an assessment target."
+  }
+}
