@@ -18,9 +18,16 @@ for(const entry of ledger.slots){
  const df=!!q.dependencyFocus,head=!!q.dependencyHeadProbe;
  assert.equal(df,head,'S4 missing matching Dependency Focus/Head Probe: '+entry.qw);
  if(df){
-  // Once implemented, update handoff rather than silently maintaining stale pending status.
-  assert.notEqual(entry.state,'QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED',
-    'S4 '+entry.qw+' is implemented: update provenance and verification before claiming coverage');
+  // A connected specialty is still provisional until language and visual review.
+  assert.equal(entry.state,'STRUCTURE_AUTHORED_RUNTIME_WIRED_PENDING_VISUAL_HUMAN_REVIEW',
+    'S4 '+entry.qw+' status must show implemented-but-not-homologated');
+  for(const lang of ['en','es','pt']){
+    const id='after-dinner-'+entry.qw+'-'+lang;
+    assert.equal(q.dependencyFocus.structureIds?.[lang],id);
+    assert.equal(q.dependencyHeadProbe.structureIds?.[lang],id);
+    assert.equal(entry.structureIds?.[lang],id);
+    assert.ok(fs.existsSync('data/learning/dependencies/'+id+'.json'),'Missing structure '+id);
+  }
   integrated++;
  }else{
   assert.equal(entry.state,'QUESTION_AUTHORED_DEPENDENCY_NOT_AUTHORED',
