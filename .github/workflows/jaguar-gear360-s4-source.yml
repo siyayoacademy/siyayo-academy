@@ -1,0 +1,26 @@
+name: JAGUAR GEAR360 S4 source provenance
+on:
+  push:
+    branches: [jaguar/gear360-s4-source-reconciliation-20261113, main]
+    paths:
+      - 'data/learning/experience-seeds.json'
+      - 'data/learning/references/jaguar-gear360-s4-source-reconciliation-20261113.json'
+      - 'scripts/jaguar-gear360-s4-source-gate.cjs'
+      - '.github/workflows/jaguar-gear360-s4-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  s4-reconciliation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: S4 WHAT WHO HOW historical provenance and readiness
+        run: node scripts/jaguar-gear360-s4-source-gate.cjs
+      - name: Existing GEAR360 house integrity
+        run: node scripts/jaguar-gear360-house-integrity.cjs
+      - name: Live SEEK TORO full placement crossmap
+        run: node scripts/jaguar-gear360-seek-toro-crossmap.cjs
