@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-how-much-en",
+  "language": "en",
+  "sentence": "How much salmon do we need?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "How",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Degree modifier of much"
+        }
+      }
+    },
+    {
+      "id": "howmuch",
+      "index": 2,
+      "form": "much",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Interrogative quantity determining salmon"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 3,
+      "form": "salmon",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Thing whose quantity is requested"
+        }
+      }
+    },
+    {
+      "id": "do",
+      "index": 4,
+      "form": "do",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Question-form auxiliary"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 5,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject of need"
+        }
+      }
+    },
+    {
+      "id": "need",
+      "index": 6,
+      "form": "need",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Main verb of need"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "howmuch",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "salmon",
+      "dependent": "howmuch",
+      "relation": "det"
+    },
+    {
+      "head": "need",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "need",
+      "dependent": "do",
+      "relation": "aux"
+    },
+    {
+      "head": "need",
+      "dependent": "we",
+      "relation": "nsubj"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S1 authored en HOW-MUCH contextual question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "how-much",
+    "field": "thinkingMind.question",
+    "notes": "Read-only pedagogical analysis sourced to the existing trilingual Shopping scene; no automatic credits. Await human visual/linguistic homologation."
+  }
+}
