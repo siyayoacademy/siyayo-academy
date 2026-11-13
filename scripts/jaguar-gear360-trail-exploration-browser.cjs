@@ -52,6 +52,21 @@ const {chromium}=require('playwright');
         console.log('PASS Trail/Word Path original shell '+context.experience+' '+context.word+' '+lang);
       }
     }
+    // Explicit NICK is not authentication and cannot produce credits merely
+    // by joining. Both free and assessed views must keep the same Word Path.
+    await page.goto('http://127.0.0.1:8765/verb-explorer.html?mode=experience&experience=after-dinner-conversation',{waitUntil:'networkidle'});
+    await page.locator('#learnerIdentityInput').fill('JAGUAR TRAIL TEST');
+    await page.locator('#learnerIdentityConfirm').click();
+    await page.locator('#questionGear [data-question-index="0"]').click();
+    let details=page.locator('#learningTrailWordPathModule');
+    if(!(await details.evaluate(el=>el.open)))await details.locator('summary').first().click();
+    const tracked=page.locator('#learnerTrailSurface');
+    await tracked.waitFor({state:'visible',timeout:10000});
+    assert.equal(await tracked.locator('.wp-poly-table').count(),1,'NICK must retain canonical Word Path');
+    assert.equal(await tracked.locator('.wp-poly-table tbody tr').count(),4);
+    assert.equal(await page.locator('#explorerTechnicalObservationModule').evaluate(el=>el.open),false);
+    assert.equal(await tracked.locator('.wp-patita-observations').count(),0);
+    console.log('PASS NICK S4 WHAT canonical Trail/Word Path without synthetic credit');
     assert.deepEqual(errors,[],'browser errors');
   }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
