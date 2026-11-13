@@ -1,5 +1,17 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · ELO S4 source-reconciliation · 2026-11-13
+
+**Objective:** recover prior authored specializations before adding any new S4 Dependency Focus/Head Probe or evaluation contract. Grounded ledger: `data/learning/references/jaguar-gear360-s4-source-reconciliation-20261113.json`. Gate: `node scripts/jaguar-gear360-s4-source-gate.cjs`.
+
+- **Already in MAIN:** S4 WHAT, WHO, HOW questions EN→ES→PT, GEAR switching and presentation-only fallback; WHY has canonical DF/Head Probe and S3→S4 transfer behavior.
+- **Not found as ready-to-connect modules in consulted sources:** separate DF/Head Probe structures for S4 WHAT, WHO or HOW. Historical `docs/siyayo-qword-experience-coverage-audit.md`, `docs/siyayo-seek-toro-sector-register.v0.2.json`, and H14.2 classify their context as question-only. Do not confuse them with missing runtime regression.
+- **Historical Master VIP references:** H14.7 five-function S4 candidates and S4 existential study support potential semantic authoring but carry **PENDING_HOMOLOGATION**, not token-level structures or assessment authority. WHAT/WHO/HOW need their own contextual grammar + visual + speech review.
+- **No duplication:** reuse existing QW questions and shared graph renderer; create only missing grounded structures, then connect to S4 in a reviewed integration step. Preserve S4 WHY DF/Head, S3→S4 contract, PATITA, Word Path and learner records.
+- **Test scope:** compare current questions to this reconciliation ledger; fail if historical sources disappear or if a newly connected DF/Head remains misclassified as pending. House-integrity gate protects existing modules. No credits, NICK changes, D1/Worker or new assessments from this ELO.
+- **Next ELO:** author/review S4 WHAT/WHO/HOW structure triplets based on their distinct linguistic dependencies; only then make a selective, visually tested runtime connection.
+
+
 ## JAGUAR · SEEK × TORO crossmap — current GEAR360 coverage (2026-11-06)
 
 **Current-source-of-truth audit:** `node scripts/jaguar-gear360-seek-toro-crossmap.cjs` (use `--json` for a machine-readable per-slot inventory), alongside `scripts/jaguar-gear360-house-integrity.cjs`. Read **live** `data/learning/experience-seeds.json` and compare with historical `docs/siyayo-seek-toro-sector-register.md`, H14.54 integration catalog, H14.67 WHY closure and this Work Map. Historic entries are snapshots and may be stale; do not reimplement archived work without checking current files.
