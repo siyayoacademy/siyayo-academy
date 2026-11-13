@@ -180,26 +180,56 @@
     var markerAuthority=options.markerAuthority||root.AdaptiveLearnerProgressMarker;
     var stateBridge=options.stateBridge||root.SIYAYOVerbExplorerAdaptiveStateBridge;
 
-    // Presentation cannot disappear merely because a learner has no active
-    // assessment. Expose an honest read-only empty Trail in that case.
+    // The HOW TO SHOW face must match the original S1/S2 presentation
+    // regardless of whether a contract is active. PATITA observations stay in
+    // the dedicated ledger; exploratory records never become contract progress.
     function emptyTrail(){
       var runtime=root.SIYAYOVerbExplorerExperienceRuntime;
-      var currentWord=runtime?.activeQuestionWord?.()||'';
-      var currentExperience=runtime?.activeExperienceId?.()||'';
-      var currentLanguage=text(options.language)||runtime?.activeLanguage?.()||'en';
-      var copy=surfaceLabels(currentLanguage);
-      var noRecord={
-        en:'FREE EXPLORATION · no active assessment record for this learner',
-        es:'EXPLORACIÓN LIBRE · sin registro evaluativo activo para este estudiante',
-        pt:'EXPLORAÇÃO LIVRE · sem registro avaliativo ativo para este aluno'
-      }[currentLanguage]||'FREE EXPLORATION · no active assessment record';
+      var currentWord=text(runtime?.activeQuestionWord?.());
+      var currentExperience=text(runtime?.activeExperienceId?.());
+      var language=text(options.language)||text(runtime?.activeLanguage?.())||'en';
+      var copy=surfaceLabels(language);
+      var catalog=root.SIYAYOVerbExplorerExperienceNavigation;
+      var experience=catalog?.getExperience?.(currentExperience);
+      var q=experience?.thinkingMind?.find(function(item){return item.questionWord===currentWord;});
+      var label=text(q?.questionWordLabel?.[language])||currentWord.toUpperCase()||'—';
+      var note={
+        en:'FREE EXPLORATION · no accepted contract evidence for this selection',
+        es:'EXPLORACIÓN LIBRE · sin evidencia contractual aceptada para esta selección',
+        pt:'EXPLORAÇÃO LIVRE · sem evidência contratual aceita nesta seleção'
+      }[language];
+      var matrix='';
+      var view=root.SIYAYOVerbExplorerPolyglotWordPathView;
+      var profile=profileSource?.getProfile?.();
+      if(view&&typeof view.render==='function'){
+        try{matrix=view.render({
+          language:language,profile:profile,identity:identity,
+          selection:root.SIYAYOVerbExplorerThinkingMindAssessmentSelection,
+          snapshot:root.SIYAYOVerbExplorerAdaptiveCoordinator?.snapshot?.(),
+          trailView:root.AdaptiveLearnerTrailView,
+          markerAuthority:root.AdaptiveLearnerProgressMarker,
+          progressView:root.AdaptivePassContractProgressView,
+          evaluator:root.GreenPassProfile,
+          scopeApi:root.AdaptiveAssessmentScope,
+          catalog:catalog
+        });}catch(_error){matrix='';}
+      }
       surface.dataset.marker='EMPTY_DOT';
       surface.dataset.state='UNOBSERVED';
+      surface.dataset.currentQword=currentWord;
+      surface.dataset.displayLanguage=language;
+      delete surface.dataset.assessmentSkill;
+      delete surface.dataset.assessmentLanguage;
+      delete surface.dataset.observationState;
       surface.hidden=false;
-      surface.innerHTML='<div class="learner-trail-copy"><span class="learner-trail-label">'+
-        escapeHtml(copy.title)+'</span><strong>'+escapeHtml(currentWord.toUpperCase()||'—')+
-        '</strong><small>'+escapeHtml(currentExperience)+'</small><small>'+
-        escapeHtml(noRecord)+'</small></div>';
+      surface.innerHTML='<div class="learner-trail-mark" aria-hidden="true">○</div>'+
+        '<div class="learner-trail-copy"><span class="learner-trail-label">'+escapeHtml(copy.title)+'</span>'+
+        '<small class="learner-trail-experience">'+escapeHtml(experienceName(currentExperience,language))+'</small>'+
+        '<strong class="learner-trail-current-word">'+escapeHtml(label)+'</strong>'+
+        '<small class="learner-trail-exploration">'+escapeHtml(note)+'</small>'+
+        '<small class="learner-trail-meta">'+escapeHtml(stateLabel('UNOBSERVED',language))+'</small>'+
+        (matrix?'<div class="learner-journey" aria-label="Word Path">'+matrix+'</div>':'')+
+        markerHelp(language)+'</div>';
       return true;
     }
     if(!profileSource||typeof profileSource.getProfile!=='function')return emptyTrail();
@@ -226,11 +256,8 @@
     var patitaHtml=latestPatita?'<small class="learner-trail-observation" data-observation-kind="patita-contextual">'+escapeHtml(patitaLabel)+' · '+escapeHtml(latestPatita.answer)+'</small>':'';
     var observationHtml=(observations.length?'<small class="learner-trail-observation" data-observation-kind="free-diagnostic">'+escapeHtml(freeDiagnosticLabel(language))+'</small>':'')+patitaHtml;
     function observationOnly(){
-      if(!observations.length&&!latestPatita)return emptyTrail();
-      var latest=observations[observations.length-1]||{questionWordLabel:text(root.SIYAYOVerbExplorerExperienceRuntime&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord&&root.SIYAYOVerbExplorerExperienceRuntime.activeQuestionWord())};
-      surface.dataset.marker='EMPTY_DOT';surface.dataset.state='UNOBSERVED';surface.dataset.observationState='OBSERVED';surface.hidden=false;
-      surface.innerHTML='<div class="learner-trail-copy"><span class="learner-trail-label">'+escapeHtml(copy.title)+'</span><strong>'+escapeHtml(latest.questionWordLabel)+'</strong>'+observationHtml+'</div>';
-      return true;
+      // Observations remain with PATITA, not as a second Trail visual grammar.
+      return emptyTrail();
     }
     var profile=profileSource.getProfile();
     var definition=skillSource.getDefinition();
