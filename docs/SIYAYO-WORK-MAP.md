@@ -12,6 +12,9 @@
 
 **Validation:** comparison must include S1/S2 WHICH EN/ES/PT as the HOW TO SHOW reference and S3 WHO/HOW and S4 WHAT/WHY EN/ES/PT, without NICK and with recorded assessment where available. Human visual homologation remains separate from Chromium structural acceptance. Do not modify D1/Worker or evaluation contracts as part of visual presentation fix.
 
+**ELO result · 2026-11-13:** the no-profile `emptyTrail` and `observationOnly` now reuse the original milestone/Experience/QW HOW TO SHOW shell and call the existing read-only polyglot Word Path renderer. The renderer can draw its 4 canonical QW × EN/ES/PT table without a trusted learner profile (empty cells only). The old NICK/assessment-owned projection remains unchanged. PATITA and four EVAL-08 review IDs were preserved and relocated to a separate closed-by-default supervision disclosure outside `learningTrailWordPathModule`; the observation list is no longer embedded in Word Path. Chromium run `43522723438` GREEN: S1/S2 WHICH, S3 WHO/HOW, S4 WHAT/WHY × EN/ES/PT in free study, plus S4 WHAT with explicitly entered NICK, original shell/matrix visible, and PATITA excluded. The canonical S3→S4 WHY contract regression also passed. Human visual homologation and genuine assessed-history persistence across tabs remain separate pending checks.
+
+
 
 ## JAGUAR · S4 WHAT/WHO/HOW dependencies integrated — 2026-11-13
 
