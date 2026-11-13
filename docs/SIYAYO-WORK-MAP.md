@@ -1,5 +1,18 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · MASTER PLAN GEAR 360 + HOW TO SHOW Trail reconciliation — 2026-11-13
+
+**Inherited execution roadmap:** (1) SEEK × TORO current/main and historical source reconciliation; (2) recover seven already-declared Experience/QW slots without DF/Head Probe, starting S3 WHO/HOW, then S1 HOW MUCH/WHO and S2 WHEN/HOW/WHO; (3) contextually author HOW TO SHOW question/answer/speaker/Lines without automatically authorizing evaluations; (4) restore canonical NICK/PATITA/Learning Trail/Word Path presentation across S1–S4 and EN→ES→PT, keeping exploration/assessment and their scopes distinct; (5) use already-documented authorized contracts and require actual human semantic approval for pending H14 WHY S1/S2; (6) expand the remaining context-relevant canonical QWs and Ten Word Classes through reusable GEAR capabilities. Prioritize working MAIN, not additional laboratories without integration.
+
+**New mandatory cross-check per ELO:** existing runtime ↔ prior maps ↔ authored assets ↔ learner-facing HOW TO SHOW ↔ assessment authority ↔ browser behavior. Distinguish 1. present and homologated, 2. present but not integrated, 3. planned/reference-only, 4. truly not authored. Run existing house and SEEK×TORO gates; do not mark a future module complete merely because a JSON exists.
+
+**Visual regression discovered:** `js/verb-explorer-learner-trail-surface.js` had `emptyTrail()` and `observationOnly()` replacing the original canonical progress surface with ad hoc short observation text when no assessment Profile was available. It dropped the S1/S2-style trilingual Word Path matrix and milestone/Experience grammar in S3/S4. `js/verb-explorer-polyglot-word-path-view.js` gated its *read-only visual matrix* on NICK/profile, so its display disappeared in free study; PATITA observations were also embedded into the Word Path matrix.
+
+**HOW TO SHOW reconciliation target:** preserve the original `learner-trail-mark`, `learner-trail-copy`, Experience title, QW label, expandable help, and polyglot QW × EN/ES/PT table for every Experience; render empty/non-evaluative cells when no verified profile, preserve scoped accepted evidence when available, and leave PATITA observations in their separate ledger. No inferred counts, Evidence, Green, or attempt on audio/free practice. A no-NICK empty Word Path does not imply any learner was assessed or that history persisted across tabs.
+
+**Validation:** comparison must include S1/S2 WHICH EN/ES/PT as the HOW TO SHOW reference and S3 WHO/HOW and S4 WHAT/WHY EN/ES/PT, without NICK and with recorded assessment where available. Human visual homologation remains separate from Chromium structural acceptance. Do not modify D1/Worker or evaluation contracts as part of visual presentation fix.
+
+
 ## JAGUAR · S4 WHAT/WHO/HOW dependencies integrated — 2026-11-13
 
 **Implemented on candidate derived from main:** nine trilingual graphs `data/learning/dependencies/after-dinner-{what,who,how}-{en,es,pt}.json`; S4 per-QW `dependencyFocus`/`dependencyHeadProbe` metadata in `data/learning/experience-seeds.json`; registered file loading in existing `js/verb-explorer.js`. No second rendering engine. No `assessmentTarget` or Evidence/Green authority added.
