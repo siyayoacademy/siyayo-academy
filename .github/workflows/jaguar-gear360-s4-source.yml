@@ -6,6 +6,7 @@ on:
       - 'data/learning/experience-seeds.json'
       - 'data/learning/dependencies/**'
       - 'scripts/test-jaguar-gear360-s4-what-who-how.cjs'
+      - 'scripts/jaguar-gear360-s4-dependency-browser.cjs'
       - 'data/learning/references/jaguar-gear360-s4-source-reconciliation-20261113.json'
       - 'scripts/jaguar-gear360-s4-source-gate.cjs'
       - '.github/workflows/jaguar-gear360-s4-source.yml'
@@ -15,6 +16,8 @@ permissions:
 jobs:
   s4-reconciliation:
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -30,3 +33,9 @@ jobs:
         run: node scripts/test-jaguar-gear360-s4-what-who-how.cjs
       - name: Preserve canonical S3 to S4 WHY assessment
         run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Install Playwright runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: S4 WHAT WHO HOW WHY Chromium visual presence
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/s4-explorer.log 2>&1 &
+          node scripts/jaguar-gear360-s4-dependency-browser.cjs
