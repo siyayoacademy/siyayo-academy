@@ -2127,6 +2127,44 @@
             "en": "WHAT",
             "es": "QUÉ",
             "pt": "O QUE"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "after-dinner-what-en",
+              "es": "after-dinner-what-es",
+              "pt": "after-dinner-what-pt"
+            },
+            "defaultFocus": "talk"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "after-dinner-what-en",
+              "es": "after-dinner-what-es",
+              "pt": "after-dinner-what-pt"
+            },
+            "targetTokenId": "what",
+            "prompt": {
+              "en": "In “What would you like to talk about?”, which action does “What” depend on?",
+              "es": "En «¿De qué te gustaría hablar?», ¿a qué acción se vincula «qué»?",
+              "pt": "Em “Sobre o que você gostaria de conversar?”, a qual ação “que” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "talk",
+                "like",
+                "you"
+              ],
+              "es": [
+                "talk",
+                "like",
+                "te"
+              ],
+              "pt": [
+                "talk",
+                "like",
+                "you"
+              ]
+            }
           }
         },
         {
@@ -2141,6 +2179,44 @@
             "en": "WHO",
             "es": "QUIÉN",
             "pt": "QUEM"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "after-dinner-who-en",
+              "es": "after-dinner-who-es",
+              "pt": "after-dinner-who-pt"
+            },
+            "defaultFocus": "listen"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "after-dinner-who-en",
+              "es": "after-dinner-who-es",
+              "pt": "after-dinner-who-pt"
+            },
+            "targetTokenId": "who",
+            "prompt": {
+              "en": "In “Who would you like to listen to?”, which action does “Who” depend on?",
+              "es": "En «¿A quién te gustaría escuchar?», ¿a qué acción se vincula «quién»?",
+              "pt": "Em “Quem você gostaria de escutar?”, a qual ação “quem” se liga?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "listen",
+                "like",
+                "you"
+              ],
+              "es": [
+                "listen",
+                "like",
+                "te"
+              ],
+              "pt": [
+                "listen",
+                "like",
+                "you"
+              ]
+            }
           }
         },
         {
@@ -2228,6 +2304,44 @@
             "en": "HOW",
             "es": "CÓMO",
             "pt": "COMO"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "after-dinner-how-en",
+              "es": "after-dinner-how-es",
+              "pt": "after-dinner-how-pt"
+            },
+            "defaultFocus": "keep"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "after-dinner-how-en",
+              "es": "after-dinner-how-es",
+              "pt": "after-dinner-how-pt"
+            },
+            "targetTokenId": "how",
+            "prompt": {
+              "en": "In “How can we keep the conversation pleasant?”, which action does “How” modify?",
+              "es": "En «¿Cómo podemos mantener agradable la conversación?», ¿qué acción modifica «cómo»?",
+              "pt": "Em “Como podemos manter a conversa agradável?”, qual ação “como” modifica?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "keep",
+                "can",
+                "pleasant"
+              ],
+              "es": [
+                "keep",
+                "can",
+                "pleasant"
+              ],
+              "pt": [
+                "keep",
+                "can",
+                "pleasant"
+              ]
+            }
           }
         }
       ],
