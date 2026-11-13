@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "having-who-es",
+  "language": "es",
+  "sentence": "¿Quién quiere un poco de salmón?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Quién",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "es": "PRONOMBRE"
+        },
+        "role": {
+          "es": "Persona a la que se ofrece salmón"
+        }
+      }
+    },
+    {
+      "id": "want",
+      "index": 2,
+      "form": "quiere",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Predicado principal de deseo"
+        }
+      }
+    },
+    {
+      "id": "un",
+      "index": 3,
+      "form": "un",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante de poco"
+        }
+      }
+    },
+    {
+      "id": "little",
+      "index": 4,
+      "form": "poco",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Cantidad ofrecida"
+        }
+      }
+    },
+    {
+      "id": "de",
+      "index": 5,
+      "form": "de",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "es": "PREPOSICIÓN"
+        },
+        "role": {
+          "es": "Preposición que introduce el alimento"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 6,
+      "form": "salmón",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Alimento al que se refiere la cantidad"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "want",
+      "dependent": "who",
+      "relation": "nsubj"
+    },
+    {
+      "head": "want",
+      "dependent": "little",
+      "relation": "obj"
+    },
+    {
+      "head": "little",
+      "dependent": "un",
+      "relation": "det"
+    },
+    {
+      "head": "little",
+      "dependent": "salmon",
+      "relation": "nmod"
+    },
+    {
+      "head": "salmon",
+      "dependent": "de",
+      "relation": "case"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S3 authored es WHO question",
+    "experienceId": "having-dinner",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Language-specific semantic syntax for free Dependency Focus / Head Probe; no assessment authorization. Human visual and linguistic review pending."
+  }
+}
