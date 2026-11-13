@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "shopping-who-en",
+  "language": "en",
+  "sentence": "Who is coming to dinner?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Who",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Person asked about, subject of coming"
+        }
+      }
+    },
+    {
+      "id": "is",
+      "index": 2,
+      "form": "is",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Present progressive auxiliary"
+        }
+      }
+    },
+    {
+      "id": "come",
+      "index": 3,
+      "form": "coming",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Main event predicate"
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 4,
+      "form": "to",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "en": "PREPOSITION"
+        },
+        "role": {
+          "en": "Preposition of destination"
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 5,
+      "form": "dinner",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Destination event"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "come",
+      "dependent": "who",
+      "relation": "nsubj"
+    },
+    {
+      "head": "come",
+      "dependent": "is",
+      "relation": "aux"
+    },
+    {
+      "head": "come",
+      "dependent": "dinner",
+      "relation": "obl"
+    },
+    {
+      "head": "dinner",
+      "dependent": "to",
+      "relation": "case"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S1 authored en WHO contextual question",
+    "experienceId": "shopping-for-dinner",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Read-only pedagogical analysis sourced to the existing trilingual Shopping scene; no automatic credits. Await human visual/linguistic homologation."
+  }
+}
