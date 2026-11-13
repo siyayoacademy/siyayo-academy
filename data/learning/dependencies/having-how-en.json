@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "having-how-en",
+  "language": "en",
+  "sentence": "How does the dinner taste?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "How",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Interrogative manner or sensory quality"
+        }
+      }
+    },
+    {
+      "id": "does",
+      "index": 2,
+      "form": "does",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Auxiliary used to form the question"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 3,
+      "form": "the",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Determiner for dinner"
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "index": 4,
+      "form": "dinner",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Subject being tasted"
+        }
+      }
+    },
+    {
+      "id": "taste",
+      "index": 5,
+      "form": "taste",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Sensory predicate modified by HOW"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "taste",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "taste",
+      "dependent": "does",
+      "relation": "aux"
+    },
+    {
+      "head": "taste",
+      "dependent": "dinner",
+      "relation": "nsubj"
+    },
+    {
+      "head": "dinner",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S3 authored en HOW question",
+    "experienceId": "having-dinner",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Language-specific semantic syntax for free Dependency Focus / Head Probe; no assessment authorization. Human visual and linguistic review pending."
+  }
+}
