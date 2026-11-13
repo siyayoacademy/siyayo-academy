@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "after-dinner-how-pt",
+  "language": "pt",
+  "sentence": "Como podemos manter a conversa agradável?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "Como",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO"
+        },
+        "role": {
+          "pt": "Modo interrogado"
+        }
+      }
+    },
+    {
+      "id": "can",
+      "index": 2,
+      "form": "podemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": "Modal de possibilidade"
+        }
+      }
+    },
+    {
+      "id": "keep",
+      "index": 3,
+      "form": "manter",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação principal: núcleo de COMO"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "a",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determinante de conversa"
+        }
+      }
+    },
+    {
+      "id": "conversation",
+      "index": 5,
+      "form": "conversa",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Objeto de manter"
+        }
+      }
+    },
+    {
+      "id": "pleasant",
+      "index": 6,
+      "form": "agradável",
+      "wordClass": "ADJ",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADJETIVO"
+        },
+        "role": {
+          "pt": "Predicativo do objeto conversa"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "keep",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "keep",
+      "dependent": "can",
+      "relation": "aux"
+    },
+    {
+      "head": "keep",
+      "dependent": "conversation",
+      "relation": "obj"
+    },
+    {
+      "head": "conversation",
+      "dependent": "the",
+      "relation": "det"
+    },
+    {
+      "head": "keep",
+      "dependent": "pleasant",
+      "relation": "xcomp"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S4 authored pt HOW contextual question",
+    "experienceId": "after-dinner-conversation",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Context-specific analysis. Independent free study only; human visual/language review pending. Not an assessment target."
+  }
+}
