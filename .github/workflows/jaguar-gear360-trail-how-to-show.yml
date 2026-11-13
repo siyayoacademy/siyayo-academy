@@ -4,6 +4,7 @@ on:
     branches: [jaguar/gear360-trail-how-to-show-reconcile-20261113, main]
     paths:
       - 'js/verb-explorer-learner-trail-surface.js'
+      - 'verb-explorer.html'
       - 'js/verb-explorer-polyglot-word-path-view.js'
       - 'scripts/jaguar-gear360-trail-exploration-browser.cjs'
       - '.github/workflows/jaguar-gear360-trail-how-to-show.yml'
