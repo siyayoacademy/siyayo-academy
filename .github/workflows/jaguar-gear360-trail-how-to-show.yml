@@ -1,0 +1,33 @@
+name: JAGUAR GEAR360 Trail HOW TO SHOW
+on:
+  push:
+    branches: [jaguar/gear360-trail-how-to-show-reconcile-20261113, main]
+    paths:
+      - 'js/verb-explorer-learner-trail-surface.js'
+      - 'js/verb-explorer-polyglot-word-path-view.js'
+      - 'scripts/jaguar-gear360-trail-exploration-browser.cjs'
+      - '.github/workflows/jaguar-gear360-trail-how-to-show.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  canonical-trail-wordpath:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Existing GEAR360 house integrity
+        run: node scripts/jaguar-gear360-house-integrity.cjs
+      - name: WHY S3/S4 authorized contract unchanged
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Playwright runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Compare S1/S2 WHICH with S3/S4 EN ES PT no-NICK Trail
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/siyayo-trail.log 2>&1 &
+          node scripts/jaguar-gear360-trail-exploration-browser.cjs
