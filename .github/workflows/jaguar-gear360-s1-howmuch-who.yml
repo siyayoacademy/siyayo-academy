@@ -1,0 +1,40 @@
+name: JAGUAR GEAR360 S1 HOW MUCH WHO
+on:
+  push:
+    branches: [jaguar/gear360-s1-howmuch-who-20261113, main]
+    paths:
+      - 'data/learning/experience-seeds.json'
+      - 'data/learning/dependencies/shopping-how-much-*.json'
+      - 'data/learning/dependencies/shopping-who-*.json'
+      - 'js/verb-explorer.js'
+      - 'scripts/test-jaguar-gear360-s1-howmuch-who.cjs'
+      - 'scripts/jaguar-gear360-s1-howmuch-who-browser.cjs'
+      - '.github/workflows/jaguar-gear360-s1-howmuch-who.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  s1-howmuch-who:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: House integrity baseline
+        run: node scripts/jaguar-gear360-house-integrity.cjs
+      - name: SEEK TORO live inventory
+        run: node scripts/jaguar-gear360-seek-toro-crossmap.cjs
+      - name: WHY S3 to S4 contract preserved
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: S1 canonical graph and Head Probe validation
+        run: node scripts/test-jaguar-gear360-s1-howmuch-who.cjs
+      - name: Install Playwright
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Chromium S1 HOW MUCH WHO and prior four QWs in EN ES PT
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/siyayo-s1.log 2>&1 &
+          node scripts/jaguar-gear360-s1-howmuch-who-browser.cjs
