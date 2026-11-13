@@ -161,14 +161,21 @@ function view(input){
  var snapshot=input.snapshot,progressView=input.progressView,evaluator=input.evaluator,scopeApi=input.scopeApi;
  var identity=input.identity, catalog=input.catalog;
  function experienceName(id){var experience=catalog&&typeof catalog.getExperience==='function'&&catalog.getExperience(id);return text(experience&&experience.title&&experience.title[language])||text(id);}
- if(!profile||!text(profile.id)||!identity||typeof identity.getId!=='function'||text(identity.getId())!==text(profile.id)||
-    !selection||typeof selection.getRetainedProgress!=='function'||!trailView||typeof trailView.project!=='function'||
-    !markerAuthority||typeof markerAuthority.resolve!=='function'||!scopeApi||typeof scopeApi.valid!=='function')return '';
- var decision=snapshot&&snapshot.session&&snapshot.session.decision;
+ // A read-only pedagogical matrix remains visible even without NICK or an
+ // assessment session. A missing verified profile yields empty cells, never
+ // synthetic evidence or inferred credit.
+ var profileReady=!!(profile&&text(profile.id)&&identity&&typeof identity.getId==='function'&&
+   text(identity.getId())===text(profile.id)&&selection&&typeof selection.getRetainedProgress==='function'&&
+   trailView&&typeof trailView.project==='function'&&markerAuthority&&
+   typeof markerAuthority.resolve==='function'&&scopeApi&&typeof scopeApi.valid==='function');
+ var decision=profileReady&&snapshot&&snapshot.session&&snapshot.session.decision;
  var currentScope=decision&&decision.assessmentScope;
  var currentValid=!!(currentScope&&scopeApi.valid(currentScope)&&currentScope.learnerId===profile.id&&
    snapshot.context&&snapshot.context.assessmentScope&&scopeApi.same(currentScope,snapshot.context.assessmentScope));
  function one(word,lang){
+   if(!profileReady)return '<td class="wp-poly-cell" data-skill="'+escapeHtml(word.id)+
+     '" data-language="'+lang+'" data-state="empty"><strong class="wp-poly-value">—</strong>'+
+     '<span class="wp-poly-status">'+escapeHtml(copy.empty)+'</span></td>';
    var byKey=new Map();
    var saved;
    try{saved=selection.getRetainedProgress(word.id,lang);}catch(_error){saved=[];}
@@ -229,9 +236,10 @@ function view(input){
     columnOrder.map(function(lang){return '<th scope="col" data-language="'+lang+'"'+(lang===focusLanguage?' data-focused="true"':'')+'>'+columnNames[lang]+'</th>';}).join('')+'</tr></thead><tbody>'+rows+'</tbody></table></div>'+
   '<p class="wp-poly-footnote">'+escapeHtml(copy.scopeNote)+'</p>'+
   '<p class="wp-poly-footnote wp-poly-coverage">'+escapeHtml(copy.details)+'</p>'+
-  patitaHtml(input)+
+  // PATITA has its own observation ledger. It must not alter the canonical
+  // Word Path visual face or be interpreted as evaluated evidence.
   (root.SIYAYOVerbExplorerWordPathWitnessView&&typeof root.SIYAYOVerbExplorerWordPathWitnessView.render==='function'
-    ?root.SIYAYOVerbExplorerWordPathWitnessView.render(input):'')+'</section>';
+    ?root.SIYAYOVerbExplorerWordPathWitnessView.render(profileReady?input:{}):'')+'</section>';
 }
 var patitaKey='siyayo.patita.contextual-choices.v1';
 function readPatita(){
