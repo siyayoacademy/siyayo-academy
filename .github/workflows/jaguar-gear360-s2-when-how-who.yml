@@ -1,0 +1,41 @@
+name: JAGUAR GEAR360 S2 WHEN HOW WHO
+on:
+  push:
+    branches: [jaguar/gear360-s2-when-how-who-20261113, main]
+    paths:
+      - 'data/learning/experience-seeds.json'
+      - 'data/learning/dependencies/preparing-when-*.json'
+      - 'data/learning/dependencies/preparing-how-*.json'
+      - 'data/learning/dependencies/preparing-who-*.json'
+      - 'js/verb-explorer.js'
+      - 'scripts/test-jaguar-gear360-s2-when-how-who.cjs'
+      - 'scripts/jaguar-gear360-s2-when-how-who-browser.cjs'
+      - '.github/workflows/jaguar-gear360-s2-when-how-who.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  s2-when-how-who:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: GEAR360 house coverage regression
+        run: node scripts/jaguar-gear360-house-integrity.cjs
+      - name: SEEK TORO current coverage crossmap
+        run: node scripts/jaguar-gear360-seek-toro-crossmap.cjs
+      - name: Preserve canonical WHY S3 S4 assessment
+        run: node scripts/test-s3-why-canonical-green-cycle.js
+      - name: Validate nine S2 graphs and Head Probes
+        run: node scripts/test-jaguar-gear360-s2-when-how-who.cjs
+      - name: Install Playwright runtime
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Chromium S2 seven QWs times three languages including Trail and Word Path
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/siyayo-s2.log 2>&1 &
+          node scripts/jaguar-gear360-s2-when-how-who-browser.cjs
