@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-when-en",
+  "language": "en",
+  "sentence": "When should we cook the salmon?",
+  "tokens": [
+    {
+      "id": "when",
+      "index": 1,
+      "form": "When",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Time being asked about"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 2,
+      "form": "should",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Modal obligation"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject of cook"
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 4,
+      "form": "cook",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Cooking action modified by WHEN"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 5,
+      "form": "the",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Determiner of salmon"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 6,
+      "form": "salmon",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Food being cooked"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cook",
+      "dependent": "when",
+      "relation": "advmod"
+    },
+    {
+      "head": "cook",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "cook",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "cook",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 WHEN authored question en",
+    "experienceId": "preparing-dinner",
+    "questionWord": "when",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
