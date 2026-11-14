@@ -1513,6 +1513,29 @@
                 "salmon"
               ]
             }
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "When should we cook the salmon?",
+                  "es": "¿Cuándo debemos cocinar el salmón?",
+                  "pt": "Quando devemos cozinhar o salmão?"
+                },
+                "response": {
+                  "en": "We should cook the salmon before dinner.",
+                  "es": "Debemos cocinar el salmón antes de la cena.",
+                  "pt": "Devemos cozinhar o salmão antes do jantar."
+                }
+              }
+            }
+          },
+          "dialogueStatus": {
+            "kind": "illustrative-study-only",
+            "groundedIn": "S2 question and home dinner-preparation scenario",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "notes": "Newly authored model responses for open language study, not observed scene facts; WHO uses a first-person role-play answer, not a verified participant. Only PRESENT / AFFIRMATIVE is authored."
           }
         },
         {
@@ -1565,6 +1588,29 @@
                 "rice"
               ]
             }
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "How are we going to prepare the rice?",
+                  "es": "¿Cómo vamos a preparar el arroz?",
+                  "pt": "Como vamos preparar o arroz?"
+                },
+                "response": {
+                  "en": "We are going to cook the rice in water.",
+                  "es": "Vamos a cocinar el arroz en agua.",
+                  "pt": "Vamos cozinhar o arroz em água."
+                }
+              }
+            }
+          },
+          "dialogueStatus": {
+            "kind": "illustrative-study-only",
+            "groundedIn": "S2 question and home dinner-preparation scenario",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "notes": "Newly authored model responses for open language study, not observed scene facts; WHO uses a first-person role-play answer, not a verified participant. Only PRESENT / AFFIRMATIVE is authored."
           }
         },
         {
@@ -1857,6 +1903,29 @@
                 "salad"
               ]
             }
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "Who is preparing the salad?",
+                  "es": "¿Quién está preparando la ensalada?",
+                  "pt": "Quem está preparando a salada?"
+                },
+                "response": {
+                  "en": "I am preparing the salad.",
+                  "es": "Yo estoy preparando la ensalada.",
+                  "pt": "Eu estou preparando a salada."
+                }
+              }
+            }
+          },
+          "dialogueStatus": {
+            "kind": "illustrative-study-only",
+            "groundedIn": "S2 question and home dinner-preparation scenario",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "notes": "Newly authored model responses for open language study, not observed scene facts; WHO uses a first-person role-play answer, not a verified participant. Only PRESENT / AFFIRMATIVE is authored."
           }
         }
       ],
