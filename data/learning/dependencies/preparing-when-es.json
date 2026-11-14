@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-when-es",
+  "language": "es",
+  "sentence": "¿Cuándo debemos cocinar el salmón?",
+  "tokens": [
+    {
+      "id": "when",
+      "index": 1,
+      "form": "Cuándo",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": "Momento sobre el que se pregunta"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 2,
+      "form": "debemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": "Verbo modal de obligación"
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 3,
+      "form": "cocinar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción de cocinar modificada por CUÁNDO"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "el",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante de salmón"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 5,
+      "form": "salmón",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Alimento preparado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cook",
+      "dependent": "when",
+      "relation": "advmod"
+    },
+    {
+      "head": "cook",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "cook",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 WHEN authored question es",
+    "experienceId": "preparing-dinner",
+    "questionWord": "when",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
