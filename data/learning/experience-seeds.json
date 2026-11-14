@@ -1475,6 +1475,44 @@
             "en": "WHEN",
             "es": "CUÁNDO",
             "pt": "QUANDO"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-when-en",
+              "es": "preparing-when-es",
+              "pt": "preparing-when-pt"
+            },
+            "defaultFocus": "cook"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-when-en",
+              "es": "preparing-when-es",
+              "pt": "preparing-when-pt"
+            },
+            "targetTokenId": "when",
+            "prompt": {
+              "en": "In “When should we cook the salmon?”, which verb does “When” modify?",
+              "es": "En «¿Cuándo debemos cocinar el salmón?», ¿a qué verbo modifica «Cuándo»?",
+              "pt": "Em “Quando devemos cozinhar o salmão?”, qual verbo “Quando” modifica?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "cook",
+                "should",
+                "salmon"
+              ],
+              "es": [
+                "cook",
+                "should",
+                "salmon"
+              ],
+              "pt": [
+                "cook",
+                "should",
+                "salmon"
+              ]
+            }
           }
         },
         {
@@ -1489,6 +1527,44 @@
             "en": "HOW",
             "es": "CÓMO",
             "pt": "COMO"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-how-en",
+              "es": "preparing-how-es",
+              "pt": "preparing-how-pt"
+            },
+            "defaultFocus": "prepare"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-how-en",
+              "es": "preparing-how-es",
+              "pt": "preparing-how-pt"
+            },
+            "targetTokenId": "how",
+            "prompt": {
+              "en": "In “How are we going to prepare the rice?”, which verb does “How” modify?",
+              "es": "En «¿Cómo vamos a preparar el arroz?», ¿a qué verbo modifica «Cómo»?",
+              "pt": "Em “Como vamos preparar o arroz?”, qual verbo “Como” modifica?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "prepare",
+                "going",
+                "rice"
+              ],
+              "es": [
+                "prepare",
+                "going",
+                "rice"
+              ],
+              "pt": [
+                "prepare",
+                "going",
+                "rice"
+              ]
+            }
           }
         },
         {
@@ -1743,6 +1819,44 @@
             "en": "WHO",
             "es": "QUIÉN",
             "pt": "QUEM"
+          },
+          "dependencyFocus": {
+            "structureIds": {
+              "en": "preparing-who-en",
+              "es": "preparing-who-es",
+              "pt": "preparing-who-pt"
+            },
+            "defaultFocus": "prepare"
+          },
+          "dependencyHeadProbe": {
+            "structureIds": {
+              "en": "preparing-who-en",
+              "es": "preparing-who-es",
+              "pt": "preparing-who-pt"
+            },
+            "targetTokenId": "who",
+            "prompt": {
+              "en": "In “Who is preparing the salad?”, of which verb is “Who” the subject?",
+              "es": "En «¿Quién está preparando la ensalada?», ¿de qué verbo es sujeto «Quién»?",
+              "pt": "Em “Quem está preparando a salada?”, de qual verbo “Quem” é sujeito?"
+            },
+            "alternativeTokenIdsByLanguage": {
+              "en": [
+                "prepare",
+                "is",
+                "salad"
+              ],
+              "es": [
+                "prepare",
+                "is",
+                "salad"
+              ],
+              "pt": [
+                "prepare",
+                "is",
+                "salad"
+              ]
+            }
           }
         }
       ],
