@@ -1,5 +1,16 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · S2 WHEN/HOW/WHO integration — 2026-11-13
+
+**Scope:** nine read-only `data/learning/dependencies/preparing-{when,how,who}-{en,es,pt}.json` structures, mapped to the existing S2 canonical questions and registered in `js/verb-explorer.js` without introducing a second engine or changing assessment targets. WHEN modifies `cook` (temporal), HOW modifies `prepare` (manner of preparing rice), WHO is the subject of `preparing` (salad), with language-specific grammar for EN/ES/PT.
+
+**Mandatory regression:** `node scripts/test-jaguar-gear360-s2-when-how-who.cjs`, the S2 Chromium test for all seven QWs × three languages with Dependency Focus, Head Probe, original Learning Trail and Word Path, plus the canonical WHY S3→S4 test, house integrity and SEEK×TORO crossmap. The acceptance gate is the CI workflow `jaguar-gear360-s2-when-how-who.yml`. Do not claim browser GREEN until this gate actually succeeds.
+
+**Contract boundaries:** these new structural/observational modules are not assessment authority. PATITA logs remain separate from learner HOW TO SHOW, no Evidence/Green Pass invented, no Worker/D1 modified. Human visual and linguistic homologation remains separate from browser success.
+
+**Remaining work after successful implementation:** all 21 currently authored Experience × QW slots would have the structural DF/Head Probe pair, but this is not completion of the full 14-QW corpus, contextual answer/speech coverage, evidence authorization, cross-tab identity, or GEAR tense/mode combinations.
+
+
 ## JAGUAR · S1 HOW MUCH/WHO Dependency Focus + Head Probe — 2026-11-13
 
 **Implemented against current MAIN candidate:** six `data/learning/dependencies/shopping-{how-much,who}-{en,es,pt}.json` question-grounded dependency graphs, with per-language S1 `dependencyFocus` and `dependencyHeadProbe` configuration and registration in the shared `DEPENDENCY_FOCUS_URLS` loader. The canonical S1 questions and preexisting S1 WHAT/WHERE/WHICH/WHY remain unchanged; no assessmentTarget, new contract or automatic credit was added.
