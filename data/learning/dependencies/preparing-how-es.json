@@ -1,0 +1,136 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-how-es",
+  "language": "es",
+  "sentence": "¿Cómo vamos a preparar el arroz?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "Cómo",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "es": "ADVERBIO"
+        },
+        "role": {
+          "es": "Manera interrogada de preparar"
+        }
+      }
+    },
+    {
+      "id": "going",
+      "index": 2,
+      "form": "vamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO AUXILIAR"
+        },
+        "role": {
+          "es": "Perífrasis prospectiva ir a"
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 3,
+      "form": "a",
+      "wordClass": "ADP",
+      "pedagogy": {
+        "wordType": {
+          "es": "PREPOSICIÓN"
+        },
+        "role": {
+          "es": "Enlace de la perífrasis ir a"
+        }
+      }
+    },
+    {
+      "id": "prepare",
+      "index": 4,
+      "form": "preparar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "es": "VERBO"
+        },
+        "role": {
+          "es": "Acción modificada por CÓMO"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 5,
+      "form": "el",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "es": "DETERMINANTE"
+        },
+        "role": {
+          "es": "Determinante de arroz"
+        }
+      }
+    },
+    {
+      "id": "rice",
+      "index": 6,
+      "form": "arroz",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "es": "SUSTANTIVO"
+        },
+        "role": {
+          "es": "Alimento preparado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prepare",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "prepare",
+      "dependent": "going",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "to",
+      "relation": "mark"
+    },
+    {
+      "head": "prepare",
+      "dependent": "rice",
+      "relation": "obj"
+    },
+    {
+      "head": "rice",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 HOW authored question es",
+    "experienceId": "preparing-dinner",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
