@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-how-pt",
+  "language": "pt",
+  "sentence": "Como vamos preparar o arroz?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "Como",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO"
+        },
+        "role": {
+          "pt": "Modo interrogado de preparar"
+        }
+      }
+    },
+    {
+      "id": "going",
+      "index": 2,
+      "form": "vamos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": "Auxiliar prospectivo ir + infinitivo"
+        }
+      }
+    },
+    {
+      "id": "prepare",
+      "index": 3,
+      "form": "preparar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação modificada por COMO"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "o",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determinante de arroz"
+        }
+      }
+    },
+    {
+      "id": "rice",
+      "index": 5,
+      "form": "arroz",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Alimento preparado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prepare",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "prepare",
+      "dependent": "going",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "rice",
+      "relation": "obj"
+    },
+    {
+      "head": "rice",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 HOW authored question pt",
+    "experienceId": "preparing-dinner",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
