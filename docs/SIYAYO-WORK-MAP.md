@@ -1,5 +1,14 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · GEAR360 S2 HOW TO SHOW · Contextual free-study lines — 2026-11-14
+
+**Implemented on actual Explorer candidate:** S2 Preparing a Nice Dinner `WHEN`, `HOW`, `WHO` now include illustrative `dialogueForms.present.affirmative` questions and responses for EN→ES→PT (9 response texts). Existing questions and Dependency Focus/Head Probe are unchanged. `dialogueStatus.kind=illustrative-study-only` declares new model responses **not verified facts** about an actual participant, especially the first-person WHO role-play; `assessmentAuthority=false`, `assessmentEvidence=false`. The shared `experienceLines` renderer labels the answer explicitly **ILLUSTRATIVE RESPONSE · FREE STUDY** / ES / PT, with the existing button speaker; other tenses and modes display an honest non-speakable authoring notice instead of a generic answer or a blank pane.
+
+**Verification:** GitHub Actions run `43610031387` GREEN: canonical 3-QW×3-language corpus assertions, nine real Chromium responses and speech affordances, preserved DF/Head Probe and HOW TO SHOW Learning Trail/Word Path. The browser also verified that PAST remains an authoring gap. GEAR360 integrity, SEEK×TORO crossmap and the S3→S4 WHY evaluation contract passed. Browser detection of an audio control is not verification of audible output on the user's device.
+
+**Scope boundary:** no new NICK/assessment authorizations, Green Pass, Evidence, D1/Worker or changed learner history. Human visual and educational-context homologation is pending. This ELO is **not** completion of all 21 QW response combinations, alternate tenses or modes, or the 14-QW target. Next work should use the same grounded coverage audit for other authored questions before expanding to new response/assessment contracts.
+
+
 ## JAGUAR · S2 WHEN/HOW/WHO integration — 2026-11-13
 
 **Scope:** nine read-only `data/learning/dependencies/preparing-{when,how,who}-{en,es,pt}.json` structures, mapped to the existing S2 canonical questions and registered in `js/verb-explorer.js` without introducing a second engine or changing assessment targets. WHEN modifies `cook` (temporal), HOW modifies `prepare` (manner of preparing rice), WHO is the subject of `preparing` (salad), with language-specific grammar for EN/ES/PT.
