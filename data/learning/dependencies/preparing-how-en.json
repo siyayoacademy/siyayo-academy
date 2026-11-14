@@ -1,0 +1,174 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-how-en",
+  "language": "en",
+  "sentence": "How are we going to prepare the rice?",
+  "tokens": [
+    {
+      "id": "how",
+      "index": 1,
+      "form": "How",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "en": "ADVERB"
+        },
+        "role": {
+          "en": "Manner or method of preparing rice"
+        }
+      }
+    },
+    {
+      "id": "are",
+      "index": 2,
+      "form": "are",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Future construction auxiliary"
+        }
+      }
+    },
+    {
+      "id": "we",
+      "index": 3,
+      "form": "we",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "en": "PRONOUN"
+        },
+        "role": {
+          "en": "Subject of prepare"
+        }
+      }
+    },
+    {
+      "id": "going",
+      "index": 4,
+      "form": "going",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "en": "AUXILIARY VERB"
+        },
+        "role": {
+          "en": "Going-to future construction"
+        }
+      }
+    },
+    {
+      "id": "to",
+      "index": 5,
+      "form": "to",
+      "wordClass": "PART",
+      "pedagogy": {
+        "wordType": {
+          "en": "PARTICLE"
+        },
+        "role": {
+          "en": "Infinitive marker"
+        }
+      }
+    },
+    {
+      "id": "prepare",
+      "index": 6,
+      "form": "prepare",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "en": "VERB"
+        },
+        "role": {
+          "en": "Action modified by HOW"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 7,
+      "form": "the",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "en": "DETERMINER"
+        },
+        "role": {
+          "en": "Determiner of rice"
+        }
+      }
+    },
+    {
+      "id": "rice",
+      "index": 8,
+      "form": "rice",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "en": "NOUN"
+        },
+        "role": {
+          "en": "Food being prepared"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prepare",
+      "dependent": "how",
+      "relation": "advmod"
+    },
+    {
+      "head": "prepare",
+      "dependent": "are",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "we",
+      "relation": "nsubj"
+    },
+    {
+      "head": "prepare",
+      "dependent": "going",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "to",
+      "relation": "mark"
+    },
+    {
+      "head": "prepare",
+      "dependent": "rice",
+      "relation": "obj"
+    },
+    {
+      "head": "rice",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 HOW authored question en",
+    "experienceId": "preparing-dinner",
+    "questionWord": "how",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
