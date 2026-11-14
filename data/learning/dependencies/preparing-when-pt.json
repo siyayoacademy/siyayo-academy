@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-when-pt",
+  "language": "pt",
+  "sentence": "Quando devemos cozinhar o salmão?",
+  "tokens": [
+    {
+      "id": "when",
+      "index": 1,
+      "form": "Quando",
+      "wordClass": "ADV",
+      "pedagogy": {
+        "wordType": {
+          "pt": "ADVÉRBIO"
+        },
+        "role": {
+          "pt": "Momento interrogado"
+        }
+      }
+    },
+    {
+      "id": "should",
+      "index": 2,
+      "form": "devemos",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": "Verbo modal de obrigação"
+        }
+      }
+    },
+    {
+      "id": "cook",
+      "index": 3,
+      "form": "cozinhar",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação temporalmente questionada"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "o",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Artigo de salmão"
+        }
+      }
+    },
+    {
+      "id": "salmon",
+      "index": 5,
+      "form": "salmão",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Alimento a cozinhar"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "cook",
+      "dependent": "when",
+      "relation": "advmod"
+    },
+    {
+      "head": "cook",
+      "dependent": "should",
+      "relation": "aux"
+    },
+    {
+      "head": "cook",
+      "dependent": "salmon",
+      "relation": "obj"
+    },
+    {
+      "head": "salmon",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 WHEN authored question pt",
+    "experienceId": "preparing-dinner",
+    "questionWord": "when",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
