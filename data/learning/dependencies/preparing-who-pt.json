@@ -1,0 +1,117 @@
+{
+  "version": "0.1.0",
+  "id": "preparing-who-pt",
+  "language": "pt",
+  "sentence": "Quem está preparando a salada?",
+  "tokens": [
+    {
+      "id": "who",
+      "index": 1,
+      "form": "Quem",
+      "wordClass": "PRON",
+      "pedagogy": {
+        "wordType": {
+          "pt": "PRONOME"
+        },
+        "role": {
+          "pt": "Pessoa que prepara a salada"
+        }
+      }
+    },
+    {
+      "id": "is",
+      "index": 2,
+      "form": "está",
+      "wordClass": "AUX",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO AUXILIAR"
+        },
+        "role": {
+          "pt": "Auxiliar da locução progressiva"
+        }
+      }
+    },
+    {
+      "id": "prepare",
+      "index": 3,
+      "form": "preparando",
+      "wordClass": "VERB",
+      "pedagogy": {
+        "wordType": {
+          "pt": "VERBO"
+        },
+        "role": {
+          "pt": "Ação cujo sujeito é QUEM"
+        }
+      }
+    },
+    {
+      "id": "the",
+      "index": 4,
+      "form": "a",
+      "wordClass": "DET",
+      "pedagogy": {
+        "wordType": {
+          "pt": "DETERMINANTE"
+        },
+        "role": {
+          "pt": "Determinante de salada"
+        }
+      }
+    },
+    {
+      "id": "salad",
+      "index": 5,
+      "form": "salada",
+      "wordClass": "NOUN",
+      "pedagogy": {
+        "wordType": {
+          "pt": "SUBSTANTIVO"
+        },
+        "role": {
+          "pt": "Alimento preparado"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "head": "prepare",
+      "dependent": "who",
+      "relation": "nsubj"
+    },
+    {
+      "head": "prepare",
+      "dependent": "is",
+      "relation": "aux"
+    },
+    {
+      "head": "prepare",
+      "dependent": "salad",
+      "relation": "obj"
+    },
+    {
+      "head": "salad",
+      "dependent": "the",
+      "relation": "det"
+    }
+  ],
+  "pedagogy": {
+    "mode": "read-only-focus",
+    "doesNotClaim": [
+      "learner-evidence",
+      "green-pass",
+      "mastery",
+      "progression",
+      "route"
+    ]
+  },
+  "source": {
+    "name": "SIYAYO S2 WHO authored question pt",
+    "experienceId": "preparing-dinner",
+    "questionWord": "who",
+    "field": "thinkingMind.question",
+    "notes": "Free pedagogical dependency study. Browser/structural review planned; human linguistic homologation pending. No evaluation credits."
+  }
+}
