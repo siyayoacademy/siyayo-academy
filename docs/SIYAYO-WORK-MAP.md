@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · GEAR360 S3 HOW TO SHOW · WHO and HOW — 2026-11-15
+
+S3 Having a Nice Dinner now offers EN → ES → PT model dialogue for WHO and HOW in PRESENT / AFFIRMATIVE. WHO models accepting an offer of salmon at the table and HOW models describing the taste of the meal. Both use the canonical questions, the shared LINES renderer and its speaker, with free-study status and no assessment authority or evidence. The existing test gate now covers both experiences, including the authoring notice for PAST. S3 WHAT already has a grounded response, and S3 WHY uses its existing contextual and assessment contract.
+
 ## JAGUAR · GEAR360 S2 HOW TO SHOW · Contextual free-study lines — 2026-11-14
 
 **Implemented on actual Explorer candidate:** S2 Preparing a Nice Dinner `WHEN`, `HOW`, `WHO` now include illustrative `dialogueForms.present.affirmative` questions and responses for EN→ES→PT (9 response texts). Existing questions and Dependency Focus/Head Probe are unchanged. `dialogueStatus.kind=illustrative-study-only` declares new model responses **not verified facts** about an actual participant, especially the first-person WHO role-play; `assessmentAuthority=false`, `assessmentEvidence=false`. The shared `experienceLines` renderer labels the answer explicitly **ILLUSTRATIVE RESPONSE · FREE STUDY** / ES / PT, with the existing button speaker; other tenses and modes display an honest non-speakable authoring notice instead of a generic answer or a blank pane.

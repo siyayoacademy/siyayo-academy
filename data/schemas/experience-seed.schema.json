@@ -145,6 +145,68 @@
         "question"
       ],
       "additionalProperties": false,
+      "if": {
+        "required": [
+          "dialogueStatus"
+        ]
+      },
+      "then": {
+        "required": [
+          "dialogueForms"
+        ],
+        "properties": {
+          "dialogueForms": {
+            "type": "object",
+            "required": [
+              "present"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "present": {
+                "type": "object",
+                "required": [
+                  "affirmative"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "affirmative": {
+                    "$ref": "#/$defs/dialogueTurn"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "not": {
+          "required": [
+            "assessmentTarget"
+          ]
+        }
+      },
+      "else": {
+        "properties": {
+          "dialogueForms": {
+            "type": "object",
+            "required": [
+              "present",
+              "past",
+              "future"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "present": {
+                "$ref": "#/$defs/dialogueTense"
+              },
+              "past": {
+                "$ref": "#/$defs/dialogueTense"
+              },
+              "future": {
+                "$ref": "#/$defs/dialogueTense"
+              }
+            }
+          }
+        }
+      },
       "properties": {
         "intention": {
           "type": "string"
@@ -161,23 +223,32 @@
         "responses": {
           "$ref": "#/$defs/trilingual"
         },
-        "dialogueForms": {
+        "dialogueForms": true,
+        "dialogueStatus": {
           "type": "object",
           "required": [
-            "present",
-            "past",
-            "future"
+            "kind",
+            "groundedIn",
+            "assessmentAuthority",
+            "assessmentEvidence"
           ],
           "additionalProperties": false,
           "properties": {
-            "present": {
-              "$ref": "#/$defs/dialogueTense"
+            "kind": {
+              "const": "illustrative-study-only"
             },
-            "past": {
-              "$ref": "#/$defs/dialogueTense"
+            "groundedIn": {
+              "type": "string",
+              "minLength": 1
             },
-            "future": {
-              "$ref": "#/$defs/dialogueTense"
+            "assessmentAuthority": {
+              "const": false
+            },
+            "assessmentEvidence": {
+              "const": false
+            },
+            "notes": {
+              "type": "string"
             }
           }
         },

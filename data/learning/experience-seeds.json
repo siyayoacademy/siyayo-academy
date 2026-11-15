@@ -2133,6 +2133,29 @@
             "es": "¿Quién quiere un poco de salmón?",
             "pt": "Quem gostaria de um pouco de salmão?"
           },
+                    "dialogueStatus": {
+            "kind": "illustrative-study-only",
+            "groundedIn": "S3 question and dinner-table scenario",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "notes": "Model dialogue for open language study. Only PRESENT / AFFIRMATIVE is authored."
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "Who would like some salmon?",
+                  "es": "¿Quién quiere un poco de salmón?",
+                  "pt": "Quem gostaria de um pouco de salmão?"
+                },
+                "response": {
+                  "en": "I'd like some salmon, please.",
+                  "es": "Yo quiero un poco de salmón, por favor.",
+                  "pt": "Eu gostaria de um pouco de salmão, por favor."
+                }
+              }
+            }
+          },
           "questionWordLabel": {
             "en": "WHO",
             "es": "QUIÉN",
@@ -2188,6 +2211,29 @@
             "en": "How does the dinner taste?",
             "es": "¿Cómo está la cena?",
             "pt": "Como está o jantar?"
+          },
+                    "dialogueStatus": {
+            "kind": "illustrative-study-only",
+            "groundedIn": "S3 question and dinner-table scenario",
+            "assessmentAuthority": false,
+            "assessmentEvidence": false,
+            "notes": "Model dialogue for open language study. Only PRESENT / AFFIRMATIVE is authored."
+          },
+          "dialogueForms": {
+            "present": {
+              "affirmative": {
+                "question": {
+                  "en": "How does the dinner taste?",
+                  "es": "¿Cómo está la cena?",
+                  "pt": "Como está o jantar?"
+                },
+                "response": {
+                  "en": "The dinner tastes delicious.",
+                  "es": "La cena está deliciosa.",
+                  "pt": "O jantar está delicioso."
+                }
+              }
+            }
           },
           "questionWordLabel": {
             "en": "HOW",
