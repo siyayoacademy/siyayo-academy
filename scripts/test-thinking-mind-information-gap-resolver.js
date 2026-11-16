@@ -44,6 +44,6 @@ assert.equal(Resolver.resolve({questionWord:'whose',intention:'possession'},capa
 assert.equal(Resolver.resolve({questionWord:'whom',intention:'object-person'},capabilities).informationFocus,'object-person');
 assert.equal(Resolver.resolve({questionWord:'how-long',intention:'duration'},capabilities).informationFocus,'duration-length');
 assert.equal(Resolver.resolve({questionWord:'how-often',intention:'frequency'},capabilities).informationFocus,'frequency');
-assert.equal(Resolver.resolve({questionWord:'how-old',intention:'age'},capabilities),null,'practical extension is not part of the canonical 14 resolver input');
+assert.equal(Resolver.resolve({questionWord:'how-old',intention:'age'},capabilities).informationFocus,'age','Master fourteen include age; formal WHOM remains supported');
 
 console.log('Thinking Mind information gap resolver: PASS — Experience intention resolves canonical information focus without producing Evidence or inferring a new Question Word.');

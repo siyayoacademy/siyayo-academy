@@ -115,17 +115,6 @@
       }
     },
     {
-      "questionWord": "whom",
-      "intention": "object-person",
-      "skill": "whom.identify.object-person",
-      "focus": "formal object-person use",
-      "evidenceContract": {
-        "opportunitySignal": "Experience thinkingMind contains whom",
-        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
-        "presenceAloneIsEvidence": false
-      }
-    },
-    {
       "questionWord": "how-long",
       "intention": "duration-length",
       "skill": "how-long.identify.duration-length",
@@ -157,17 +146,38 @@
         "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
         "presenceAloneIsEvidence": false
       }
-    }
-  ],
-  "practicalExtensions": [
+    },
     {
       "questionWord": "how-old",
       "intention": "age",
       "skill": "how-old.identify.age",
       "focus": "age",
-      "status": "legacy-SIYAYO-practical-extension"
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains how-old",
+        "evidenceRequires": "explicit grounded learner action under an authorized assessment contract",
+        "presenceAloneIsEvidence": false
+      }
+    }
+  ],
+  "practicalExtensions": [
+    {
+      "questionWord": "whom",
+      "intention": "object-person",
+      "skill": "whom.identify.object-person",
+      "focus": "formal object-person use",
+      "evidenceContract": {
+        "opportunitySignal": "Experience thinkingMind contains whom",
+        "evidenceRequires": "explicit learner action that identifies, selects, forms or uses the requested information focus in context",
+        "presenceAloneIsEvidence": false
+      },
+      "status": "formal-object-person-extension"
     }
   ],
   "waitRule": "If the target skill has no grounded learner attempt, preserve WAIT/continue-assessment. Do not infer pass from question exposure.",
-  "greenRule": "GREEN remains owned by the existing adaptive evidence/pass contract; this map does not manufacture pass decisions."
+  "greenRule": "GREEN remains owned by the existing adaptive evidence/pass contract; this map does not manufacture pass decisions.",
+  "sourceReconciliation": {
+    "source": "STRUCTURE-KIND OF WORDS.docx",
+    "date": "2026-11-16",
+    "note": "Master fourteen include HOW OLD. WHOM is retained as a supported formal extension, not silently deleted."
+  }
 }

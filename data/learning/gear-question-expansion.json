@@ -1,0 +1,4226 @@
+{
+  "version": "0.1.0",
+  "id": "gear-master-question-expansion",
+  "provenance": {
+    "kind": "SIYAYO_ADAPTATION",
+    "source": "STRUCTURE-KIND OF WORDS.docx",
+    "sourceSha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c",
+    "sourceSections": [
+      "WHAT WHICH WHO WHOSE WHERE WHEN WHY HOW / HOW MANY HOW MUCH HOW FAR HOW LONG HOW OFTEN / HOW OLD",
+      "Question Word table: count, possession, duration, distance, frequency, age"
+    ],
+    "sceneFact": false,
+    "humanHomologation": "pending",
+    "assessmentAuthority": false
+  },
+  "items": [
+    {
+      "experienceId": "shopping-for-dinner",
+      "question": {
+        "questionWord": "how-many",
+        "intention": "count",
+        "questionWordLabel": {
+          "en": "HOW MANY",
+          "es": "CUÁNTAS",
+          "pt": "QUANTAS"
+        },
+        "question": {
+          "en": "How many carrots do we need?",
+          "es": "¿Cuántas zanahorias necesitamos?",
+          "pt": "De quantas cenouras precisamos?"
+        },
+        "dialogueForms": {
+          "present": {
+            "affirmative": {
+              "question": {
+                "en": "How many carrots do we need?",
+                "es": "¿Cuántas zanahorias necesitamos?",
+                "pt": "De quantas cenouras precisamos?"
+              },
+              "response": {
+                "en": "We need two carrots.",
+                "es": "Necesitamos dos zanahorias.",
+                "pt": "Precisamos de duas cenouras."
+              }
+            }
+          },
+          "past": {
+            "affirmative": {
+              "question": {
+                "en": "How many carrots did we need?",
+                "es": "¿Cuántas zanahorias necesitábamos?",
+                "pt": "De quantas cenouras precisávamos?"
+              },
+              "response": {
+                "en": "We needed two carrots.",
+                "es": "Necesitábamos dos zanahorias.",
+                "pt": "Precisávamos de duas cenouras."
+              }
+            }
+          },
+          "future": {
+            "affirmative": {
+              "question": {
+                "en": "How many carrots will we need?",
+                "es": "¿Cuántas zanahorias necesitaremos?",
+                "pt": "De quantas cenouras precisaremos?"
+              },
+              "response": {
+                "en": "We will need two carrots.",
+                "es": "Necesitaremos dos zanahorias.",
+                "pt": "Precisaremos de duas cenouras."
+              }
+            }
+          }
+        },
+        "dialogueStatus": {
+          "kind": "illustrative-study-only",
+          "source": "gear-master-question-expansion",
+          "groundedIn": "shopping-for-dinner pedagogical role-play",
+          "assessmentAuthority": false,
+          "assessmentEvidence": false,
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+        },
+        "dependencyFocus": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-shopping-for-dinner-how-many-present-en",
+              "es": "master-shopping-for-dinner-how-many-present-es",
+              "pt": "master-shopping-for-dinner-how-many-present-pt"
+            },
+            "past": {
+              "en": "master-shopping-for-dinner-how-many-past-en",
+              "es": "master-shopping-for-dinner-how-many-past-es",
+              "pt": "master-shopping-for-dinner-how-many-past-pt"
+            },
+            "future": {
+              "en": "master-shopping-for-dinner-how-many-future-en",
+              "es": "master-shopping-for-dinner-how-many-future-es",
+              "pt": "master-shopping-for-dinner-how-many-future-pt"
+            }
+          },
+          "defaultFocus": "head",
+          "structureIds": {
+            "en": "master-shopping-for-dinner-how-many-present-en",
+            "es": "master-shopping-for-dinner-how-many-present-es",
+            "pt": "master-shopping-for-dinner-how-many-present-pt"
+          }
+        },
+        "dependencyHeadProbe": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-shopping-for-dinner-how-many-present-en",
+              "es": "master-shopping-for-dinner-how-many-present-es",
+              "pt": "master-shopping-for-dinner-how-many-present-pt"
+            },
+            "past": {
+              "en": "master-shopping-for-dinner-how-many-past-en",
+              "es": "master-shopping-for-dinner-how-many-past-es",
+              "pt": "master-shopping-for-dinner-how-many-past-pt"
+            },
+            "future": {
+              "en": "master-shopping-for-dinner-how-many-future-en",
+              "es": "master-shopping-for-dinner-how-many-future-es",
+              "pt": "master-shopping-for-dinner-how-many-future-pt"
+            }
+          },
+          "targetTokenId": "target",
+          "alternativeTokenIds": [
+            "head",
+            "other"
+          ],
+          "structureIds": {
+            "en": "master-shopping-for-dinner-how-many-present-en",
+            "es": "master-shopping-for-dinner-how-many-present-es",
+            "pt": "master-shopping-for-dinner-how-many-present-pt"
+          }
+        }
+      }
+    },
+    {
+      "experienceId": "having-dinner",
+      "question": {
+        "questionWord": "whose",
+        "intention": "possession",
+        "questionWordLabel": {
+          "en": "WHOSE",
+          "es": "DE QUIÉN",
+          "pt": "DE QUEM"
+        },
+        "question": {
+          "en": "Whose plate is this?",
+          "es": "¿De quién es este plato?",
+          "pt": "De quem é este prato?"
+        },
+        "dialogueForms": {
+          "present": {
+            "affirmative": {
+              "question": {
+                "en": "Whose plate is this?",
+                "es": "¿De quién es este plato?",
+                "pt": "De quem é este prato?"
+              },
+              "response": {
+                "en": "This plate is mine.",
+                "es": "Este plato es mío.",
+                "pt": "Este prato é meu."
+              }
+            }
+          },
+          "past": {
+            "affirmative": {
+              "question": {
+                "en": "Whose plate was this?",
+                "es": "¿De quién era este plato?",
+                "pt": "De quem era este prato?"
+              },
+              "response": {
+                "en": "This plate was mine.",
+                "es": "Este plato era mío.",
+                "pt": "Este prato era meu."
+              }
+            }
+          },
+          "future": {
+            "affirmative": {
+              "question": {
+                "en": "Whose plate will this be?",
+                "es": "¿De quién será este plato?",
+                "pt": "De quem será este prato?"
+              },
+              "response": {
+                "en": "This plate will be mine.",
+                "es": "Este plato será mío.",
+                "pt": "Este prato será meu."
+              }
+            }
+          }
+        },
+        "dialogueStatus": {
+          "kind": "illustrative-study-only",
+          "source": "gear-master-question-expansion",
+          "groundedIn": "having-dinner pedagogical role-play",
+          "assessmentAuthority": false,
+          "assessmentEvidence": false,
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+        },
+        "dependencyFocus": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-having-dinner-whose-present-en",
+              "es": "master-having-dinner-whose-present-es",
+              "pt": "master-having-dinner-whose-present-pt"
+            },
+            "past": {
+              "en": "master-having-dinner-whose-past-en",
+              "es": "master-having-dinner-whose-past-es",
+              "pt": "master-having-dinner-whose-past-pt"
+            },
+            "future": {
+              "en": "master-having-dinner-whose-future-en",
+              "es": "master-having-dinner-whose-future-es",
+              "pt": "master-having-dinner-whose-future-pt"
+            }
+          },
+          "defaultFocus": "head",
+          "structureIds": {
+            "en": "master-having-dinner-whose-present-en",
+            "es": "master-having-dinner-whose-present-es",
+            "pt": "master-having-dinner-whose-present-pt"
+          }
+        },
+        "dependencyHeadProbe": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-having-dinner-whose-present-en",
+              "es": "master-having-dinner-whose-present-es",
+              "pt": "master-having-dinner-whose-present-pt"
+            },
+            "past": {
+              "en": "master-having-dinner-whose-past-en",
+              "es": "master-having-dinner-whose-past-es",
+              "pt": "master-having-dinner-whose-past-pt"
+            },
+            "future": {
+              "en": "master-having-dinner-whose-future-en",
+              "es": "master-having-dinner-whose-future-es",
+              "pt": "master-having-dinner-whose-future-pt"
+            }
+          },
+          "targetTokenId": "target",
+          "alternativeTokenIds": [
+            "head",
+            "other"
+          ],
+          "structureIds": {
+            "en": "master-having-dinner-whose-present-en",
+            "es": "master-having-dinner-whose-present-es",
+            "pt": "master-having-dinner-whose-present-pt"
+          }
+        }
+      }
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "question": {
+        "questionWord": "how-long",
+        "intention": "duration",
+        "questionWordLabel": {
+          "en": "HOW LONG",
+          "es": "CUÁNTO",
+          "pt": "QUANTO TEMPO"
+        },
+        "question": {
+          "en": "How long does dinner last?",
+          "es": "¿Cuánto dura la cena?",
+          "pt": "Quanto tempo dura o jantar?"
+        },
+        "dialogueForms": {
+          "present": {
+            "affirmative": {
+              "question": {
+                "en": "How long does dinner last?",
+                "es": "¿Cuánto dura la cena?",
+                "pt": "Quanto tempo dura o jantar?"
+              },
+              "response": {
+                "en": "Dinner lasts one hour.",
+                "es": "La cena dura una hora.",
+                "pt": "O jantar dura uma hora."
+              }
+            }
+          },
+          "past": {
+            "affirmative": {
+              "question": {
+                "en": "How long did dinner last?",
+                "es": "¿Cuánto duró la cena?",
+                "pt": "Quanto tempo durou o jantar?"
+              },
+              "response": {
+                "en": "Dinner lasted one hour.",
+                "es": "La cena duró una hora.",
+                "pt": "O jantar durou uma hora."
+              }
+            }
+          },
+          "future": {
+            "affirmative": {
+              "question": {
+                "en": "How long will dinner last?",
+                "es": "¿Cuánto durará la cena?",
+                "pt": "Quanto tempo durará o jantar?"
+              },
+              "response": {
+                "en": "Dinner will last one hour.",
+                "es": "La cena durará una hora.",
+                "pt": "O jantar durará uma hora."
+              }
+            }
+          }
+        },
+        "dialogueStatus": {
+          "kind": "illustrative-study-only",
+          "source": "gear-master-question-expansion",
+          "groundedIn": "after-dinner-conversation pedagogical role-play",
+          "assessmentAuthority": false,
+          "assessmentEvidence": false,
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+        },
+        "dependencyFocus": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-after-dinner-conversation-how-long-present-en",
+              "es": "master-after-dinner-conversation-how-long-present-es",
+              "pt": "master-after-dinner-conversation-how-long-present-pt"
+            },
+            "past": {
+              "en": "master-after-dinner-conversation-how-long-past-en",
+              "es": "master-after-dinner-conversation-how-long-past-es",
+              "pt": "master-after-dinner-conversation-how-long-past-pt"
+            },
+            "future": {
+              "en": "master-after-dinner-conversation-how-long-future-en",
+              "es": "master-after-dinner-conversation-how-long-future-es",
+              "pt": "master-after-dinner-conversation-how-long-future-pt"
+            }
+          },
+          "defaultFocus": "head",
+          "structureIds": {
+            "en": "master-after-dinner-conversation-how-long-present-en",
+            "es": "master-after-dinner-conversation-how-long-present-es",
+            "pt": "master-after-dinner-conversation-how-long-present-pt"
+          }
+        },
+        "dependencyHeadProbe": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-after-dinner-conversation-how-long-present-en",
+              "es": "master-after-dinner-conversation-how-long-present-es",
+              "pt": "master-after-dinner-conversation-how-long-present-pt"
+            },
+            "past": {
+              "en": "master-after-dinner-conversation-how-long-past-en",
+              "es": "master-after-dinner-conversation-how-long-past-es",
+              "pt": "master-after-dinner-conversation-how-long-past-pt"
+            },
+            "future": {
+              "en": "master-after-dinner-conversation-how-long-future-en",
+              "es": "master-after-dinner-conversation-how-long-future-es",
+              "pt": "master-after-dinner-conversation-how-long-future-pt"
+            }
+          },
+          "targetTokenId": "target",
+          "alternativeTokenIds": [
+            "head",
+            "other"
+          ],
+          "structureIds": {
+            "en": "master-after-dinner-conversation-how-long-present-en",
+            "es": "master-after-dinner-conversation-how-long-present-es",
+            "pt": "master-after-dinner-conversation-how-long-present-pt"
+          }
+        }
+      }
+    },
+    {
+      "experienceId": "shopping-for-dinner",
+      "question": {
+        "questionWord": "how-far",
+        "intention": "distance",
+        "questionWordLabel": {
+          "en": "HOW FAR",
+          "es": "QUÉ DISTANCIA",
+          "pt": "QUE DISTÂNCIA"
+        },
+        "question": {
+          "en": "How far do we walk to the supermarket?",
+          "es": "¿Qué distancia caminamos hasta el supermercado?",
+          "pt": "Que distância caminhamos até o supermercado?"
+        },
+        "dialogueForms": {
+          "present": {
+            "affirmative": {
+              "question": {
+                "en": "How far do we walk to the supermarket?",
+                "es": "¿Qué distancia caminamos hasta el supermercado?",
+                "pt": "Que distância caminhamos até o supermercado?"
+              },
+              "response": {
+                "en": "We walk one kilometre to the supermarket.",
+                "es": "Caminamos un kilómetro hasta el supermercado.",
+                "pt": "Caminhamos um quilômetro até o supermercado."
+              }
+            }
+          },
+          "past": {
+            "affirmative": {
+              "question": {
+                "en": "How far did we walk to the supermarket?",
+                "es": "¿Qué distancia caminábamos hasta el supermercado?",
+                "pt": "Que distância caminhávamos até o supermercado?"
+              },
+              "response": {
+                "en": "We walked one kilometre to the supermarket.",
+                "es": "Caminábamos un kilómetro hasta el supermercado.",
+                "pt": "Caminhávamos um quilômetro até o supermercado."
+              }
+            }
+          },
+          "future": {
+            "affirmative": {
+              "question": {
+                "en": "How far will we walk to the supermarket?",
+                "es": "¿Qué distancia caminaremos hasta el supermercado?",
+                "pt": "Que distância caminharemos até o supermercado?"
+              },
+              "response": {
+                "en": "We will walk one kilometre to the supermarket.",
+                "es": "Caminaremos un kilómetro hasta el supermercado.",
+                "pt": "Caminharemos um quilômetro até o supermercado."
+              }
+            }
+          }
+        },
+        "dialogueStatus": {
+          "kind": "illustrative-study-only",
+          "source": "gear-master-question-expansion",
+          "groundedIn": "shopping-for-dinner pedagogical role-play",
+          "assessmentAuthority": false,
+          "assessmentEvidence": false,
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+        },
+        "dependencyFocus": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-shopping-for-dinner-how-far-present-en",
+              "es": "master-shopping-for-dinner-how-far-present-es",
+              "pt": "master-shopping-for-dinner-how-far-present-pt"
+            },
+            "past": {
+              "en": "master-shopping-for-dinner-how-far-past-en",
+              "es": "master-shopping-for-dinner-how-far-past-es",
+              "pt": "master-shopping-for-dinner-how-far-past-pt"
+            },
+            "future": {
+              "en": "master-shopping-for-dinner-how-far-future-en",
+              "es": "master-shopping-for-dinner-how-far-future-es",
+              "pt": "master-shopping-for-dinner-how-far-future-pt"
+            }
+          },
+          "defaultFocus": "head",
+          "structureIds": {
+            "en": "master-shopping-for-dinner-how-far-present-en",
+            "es": "master-shopping-for-dinner-how-far-present-es",
+            "pt": "master-shopping-for-dinner-how-far-present-pt"
+          }
+        },
+        "dependencyHeadProbe": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-shopping-for-dinner-how-far-present-en",
+              "es": "master-shopping-for-dinner-how-far-present-es",
+              "pt": "master-shopping-for-dinner-how-far-present-pt"
+            },
+            "past": {
+              "en": "master-shopping-for-dinner-how-far-past-en",
+              "es": "master-shopping-for-dinner-how-far-past-es",
+              "pt": "master-shopping-for-dinner-how-far-past-pt"
+            },
+            "future": {
+              "en": "master-shopping-for-dinner-how-far-future-en",
+              "es": "master-shopping-for-dinner-how-far-future-es",
+              "pt": "master-shopping-for-dinner-how-far-future-pt"
+            }
+          },
+          "targetTokenId": "target",
+          "alternativeTokenIds": [
+            "head",
+            "other"
+          ],
+          "structureIds": {
+            "en": "master-shopping-for-dinner-how-far-present-en",
+            "es": "master-shopping-for-dinner-how-far-present-es",
+            "pt": "master-shopping-for-dinner-how-far-present-pt"
+          }
+        }
+      }
+    },
+    {
+      "experienceId": "preparing-dinner",
+      "question": {
+        "questionWord": "how-often",
+        "intention": "frequency",
+        "questionWordLabel": {
+          "en": "HOW OFTEN",
+          "es": "CON QUÉ FRECUENCIA",
+          "pt": "COM QUE FREQUÊNCIA"
+        },
+        "question": {
+          "en": "How often do we cook dinner together?",
+          "es": "¿Con qué frecuencia preparamos la cena juntos?",
+          "pt": "Com que frequência preparamos o jantar juntos?"
+        },
+        "dialogueForms": {
+          "present": {
+            "affirmative": {
+              "question": {
+                "en": "How often do we cook dinner together?",
+                "es": "¿Con qué frecuencia preparamos la cena juntos?",
+                "pt": "Com que frequência preparamos o jantar juntos?"
+              },
+              "response": {
+                "en": "We cook dinner together twice a week.",
+                "es": "Preparamos la cena juntos dos veces por semana.",
+                "pt": "Preparamos o jantar juntos duas vezes por semana."
+              }
+            }
+          },
+          "past": {
+            "affirmative": {
+              "question": {
+                "en": "How often did we cook dinner together?",
+                "es": "¿Con qué frecuencia preparábamos la cena juntos?",
+                "pt": "Com que frequência preparávamos o jantar juntos?"
+              },
+              "response": {
+                "en": "We cooked dinner together twice a week.",
+                "es": "Preparábamos la cena juntos dos veces por semana.",
+                "pt": "Preparávamos o jantar juntos duas vezes por semana."
+              }
+            }
+          },
+          "future": {
+            "affirmative": {
+              "question": {
+                "en": "How often will we cook dinner together?",
+                "es": "¿Con qué frecuencia prepararemos la cena juntos?",
+                "pt": "Com que frequência prepararemos o jantar juntos?"
+              },
+              "response": {
+                "en": "We will cook dinner together twice a week.",
+                "es": "Prepararemos la cena juntos dos veces por semana.",
+                "pt": "Prepararemos o jantar juntos duas vezes por semana."
+              }
+            }
+          }
+        },
+        "dialogueStatus": {
+          "kind": "illustrative-study-only",
+          "source": "gear-master-question-expansion",
+          "groundedIn": "preparing-dinner pedagogical role-play",
+          "assessmentAuthority": false,
+          "assessmentEvidence": false,
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+        },
+        "dependencyFocus": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-preparing-dinner-how-often-present-en",
+              "es": "master-preparing-dinner-how-often-present-es",
+              "pt": "master-preparing-dinner-how-often-present-pt"
+            },
+            "past": {
+              "en": "master-preparing-dinner-how-often-past-en",
+              "es": "master-preparing-dinner-how-often-past-es",
+              "pt": "master-preparing-dinner-how-often-past-pt"
+            },
+            "future": {
+              "en": "master-preparing-dinner-how-often-future-en",
+              "es": "master-preparing-dinner-how-often-future-es",
+              "pt": "master-preparing-dinner-how-often-future-pt"
+            }
+          },
+          "defaultFocus": "head",
+          "structureIds": {
+            "en": "master-preparing-dinner-how-often-present-en",
+            "es": "master-preparing-dinner-how-often-present-es",
+            "pt": "master-preparing-dinner-how-often-present-pt"
+          }
+        },
+        "dependencyHeadProbe": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-preparing-dinner-how-often-present-en",
+              "es": "master-preparing-dinner-how-often-present-es",
+              "pt": "master-preparing-dinner-how-often-present-pt"
+            },
+            "past": {
+              "en": "master-preparing-dinner-how-often-past-en",
+              "es": "master-preparing-dinner-how-often-past-es",
+              "pt": "master-preparing-dinner-how-often-past-pt"
+            },
+            "future": {
+              "en": "master-preparing-dinner-how-often-future-en",
+              "es": "master-preparing-dinner-how-often-future-es",
+              "pt": "master-preparing-dinner-how-often-future-pt"
+            }
+          },
+          "targetTokenId": "target",
+          "alternativeTokenIds": [
+            "head",
+            "other"
+          ],
+          "structureIds": {
+            "en": "master-preparing-dinner-how-often-present-en",
+            "es": "master-preparing-dinner-how-often-present-es",
+            "pt": "master-preparing-dinner-how-often-present-pt"
+          }
+        }
+      }
+    },
+    {
+      "experienceId": "after-dinner-conversation",
+      "question": {
+        "questionWord": "how-old",
+        "intention": "age",
+        "questionWordLabel": {
+          "en": "HOW OLD",
+          "es": "CUÁNTOS AÑOS",
+          "pt": "QUANTOS ANOS"
+        },
+        "question": {
+          "en": "How old is the guest?",
+          "es": "¿Cuántos años tiene la persona invitada?",
+          "pt": "Quantos anos tem a pessoa convidada?"
+        },
+        "dialogueForms": {
+          "present": {
+            "affirmative": {
+              "question": {
+                "en": "How old is the guest?",
+                "es": "¿Cuántos años tiene la persona invitada?",
+                "pt": "Quantos anos tem a pessoa convidada?"
+              },
+              "response": {
+                "en": "The guest is thirty years old.",
+                "es": "La persona invitada tiene treinta años.",
+                "pt": "A pessoa convidada tem trinta anos."
+              }
+            }
+          },
+          "past": {
+            "affirmative": {
+              "question": {
+                "en": "How old was the guest?",
+                "es": "¿Cuántos años tenía la persona invitada?",
+                "pt": "Quantos anos tinha a pessoa convidada?"
+              },
+              "response": {
+                "en": "The guest was thirty years old.",
+                "es": "La persona invitada tenía treinta años.",
+                "pt": "A pessoa convidada tinha trinta anos."
+              }
+            }
+          },
+          "future": {
+            "affirmative": {
+              "question": {
+                "en": "How old will the guest be?",
+                "es": "¿Cuántos años tendrá la persona invitada?",
+                "pt": "Quantos anos terá a pessoa convidada?"
+              },
+              "response": {
+                "en": "The guest will be thirty years old.",
+                "es": "La persona invitada tendrá treinta años.",
+                "pt": "A pessoa convidada terá trinta anos."
+              }
+            }
+          }
+        },
+        "dialogueStatus": {
+          "kind": "illustrative-study-only",
+          "source": "gear-master-question-expansion",
+          "groundedIn": "after-dinner-conversation pedagogical role-play",
+          "assessmentAuthority": false,
+          "assessmentEvidence": false,
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+        },
+        "dependencyFocus": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-after-dinner-conversation-how-old-present-en",
+              "es": "master-after-dinner-conversation-how-old-present-es",
+              "pt": "master-after-dinner-conversation-how-old-present-pt"
+            },
+            "past": {
+              "en": "master-after-dinner-conversation-how-old-past-en",
+              "es": "master-after-dinner-conversation-how-old-past-es",
+              "pt": "master-after-dinner-conversation-how-old-past-pt"
+            },
+            "future": {
+              "en": "master-after-dinner-conversation-how-old-future-en",
+              "es": "master-after-dinner-conversation-how-old-future-es",
+              "pt": "master-after-dinner-conversation-how-old-future-pt"
+            }
+          },
+          "defaultFocus": "head",
+          "structureIds": {
+            "en": "master-after-dinner-conversation-how-old-present-en",
+            "es": "master-after-dinner-conversation-how-old-present-es",
+            "pt": "master-after-dinner-conversation-how-old-present-pt"
+          }
+        },
+        "dependencyHeadProbe": {
+          "structureIdsByTense": {
+            "present": {
+              "en": "master-after-dinner-conversation-how-old-present-en",
+              "es": "master-after-dinner-conversation-how-old-present-es",
+              "pt": "master-after-dinner-conversation-how-old-present-pt"
+            },
+            "past": {
+              "en": "master-after-dinner-conversation-how-old-past-en",
+              "es": "master-after-dinner-conversation-how-old-past-es",
+              "pt": "master-after-dinner-conversation-how-old-past-pt"
+            },
+            "future": {
+              "en": "master-after-dinner-conversation-how-old-future-en",
+              "es": "master-after-dinner-conversation-how-old-future-es",
+              "pt": "master-after-dinner-conversation-how-old-future-pt"
+            }
+          },
+          "targetTokenId": "target",
+          "alternativeTokenIds": [
+            "head",
+            "other"
+          ],
+          "structureIds": {
+            "en": "master-after-dinner-conversation-how-old-present-en",
+            "es": "master-after-dinner-conversation-how-old-present-es",
+            "pt": "master-after-dinner-conversation-how-old-present-pt"
+          }
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-present-en",
+      "language": "en",
+      "sentence": "How many carrots do we need?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "many",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "carrots",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "do",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "need",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-present-es",
+      "language": "es",
+      "sentence": "¿Cuántas zanahorias necesitamos?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuántas",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "zanahorias",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "necesitamos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-present-pt",
+      "language": "pt",
+      "sentence": "De quantas cenouras precisamos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quantas",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "cenouras",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "precisamos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-past-en",
+      "language": "en",
+      "sentence": "How many carrots did we need?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "many",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "carrots",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "did",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "need",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-past-es",
+      "language": "es",
+      "sentence": "¿Cuántas zanahorias necesitábamos?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuántas",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "zanahorias",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "necesitábamos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-past-pt",
+      "language": "pt",
+      "sentence": "De quantas cenouras precisávamos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quantas",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "cenouras",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "precisávamos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-future-en",
+      "language": "en",
+      "sentence": "How many carrots will we need?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "many",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "carrots",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "will",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "need",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-future-es",
+      "language": "es",
+      "sentence": "¿Cuántas zanahorias necesitaremos?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuántas",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "zanahorias",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "necesitaremos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-many-future-pt",
+      "language": "pt",
+      "sentence": "De quantas cenouras precisaremos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quantas",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "cenouras",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "precisaremos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-many",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-present-en",
+      "language": "en",
+      "sentence": "Whose plate is this?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Whose",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "plate",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "is",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "this",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-present-es",
+      "language": "es",
+      "sentence": "¿De quién es este plato?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quién",
+          "wordClass": "PRON"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "es",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "este",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "plato",
+          "wordClass": "NOUN"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "nmod:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-present-pt",
+      "language": "pt",
+      "sentence": "De quem é este prato?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quem",
+          "wordClass": "PRON"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "é",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "este",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "prato",
+          "wordClass": "NOUN"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "nmod:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-past-en",
+      "language": "en",
+      "sentence": "Whose plate was this?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Whose",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "plate",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "was",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "this",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-past-es",
+      "language": "es",
+      "sentence": "¿De quién era este plato?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quién",
+          "wordClass": "PRON"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "era",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "este",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "plato",
+          "wordClass": "NOUN"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "nmod:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-past-pt",
+      "language": "pt",
+      "sentence": "De quem era este prato?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quem",
+          "wordClass": "PRON"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "era",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "este",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "prato",
+          "wordClass": "NOUN"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "nmod:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-future-en",
+      "language": "en",
+      "sentence": "Whose plate will this be?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Whose",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "plate",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "will",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "this",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "be",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-future-es",
+      "language": "es",
+      "sentence": "¿De quién será este plato?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quién",
+          "wordClass": "PRON"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "será",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "este",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "plato",
+          "wordClass": "NOUN"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "nmod:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-having-dinner-whose-future-pt",
+      "language": "pt",
+      "sentence": "De quem será este prato?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "De",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "quem",
+          "wordClass": "PRON"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "será",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "este",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "prato",
+          "wordClass": "NOUN"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "nmod:poss"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "having-dinner",
+        "questionWord": "whose",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-present-en",
+      "language": "en",
+      "sentence": "How long does dinner last?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "long",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "does",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "dinner",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "last",
+          "wordClass": "VERB"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-present-es",
+      "language": "es",
+      "sentence": "¿Cuánto dura la cena?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuánto",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "dura",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "cena",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-present-pt",
+      "language": "pt",
+      "sentence": "Quanto tempo dura o jantar?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Quanto",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "tempo",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "dura",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "jantar",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-past-en",
+      "language": "en",
+      "sentence": "How long did dinner last?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "long",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "did",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "dinner",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "last",
+          "wordClass": "VERB"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-past-es",
+      "language": "es",
+      "sentence": "¿Cuánto duró la cena?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuánto",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "duró",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "cena",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-past-pt",
+      "language": "pt",
+      "sentence": "Quanto tempo durou o jantar?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Quanto",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "tempo",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "durou",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "jantar",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-future-en",
+      "language": "en",
+      "sentence": "How long will dinner last?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "long",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "will",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "dinner",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "last",
+          "wordClass": "VERB"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-future-es",
+      "language": "es",
+      "sentence": "¿Cuánto durará la cena?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuánto",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "durará",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "cena",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-long-future-pt",
+      "language": "pt",
+      "sentence": "Quanto tempo durará o jantar?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Quanto",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "tempo",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "durará",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "jantar",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-long",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-present-en",
+      "language": "en",
+      "sentence": "How far do we walk to the supermarket?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "far",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "do",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "walk",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "to",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "the",
+          "wordClass": "X"
+        },
+        {
+          "id": "w7",
+          "index": 8,
+          "form": "supermarket",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-present-es",
+      "language": "es",
+      "sentence": "¿Qué distancia caminamos hasta el supermercado?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Qué",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "distancia",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "caminamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "hasta",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "el",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "supermercado",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-present-pt",
+      "language": "pt",
+      "sentence": "Que distância caminhamos até o supermercado?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Que",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "distância",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "caminhamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "até",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "supermercado",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-past-en",
+      "language": "en",
+      "sentence": "How far did we walk to the supermarket?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "far",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "did",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "walk",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "to",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "the",
+          "wordClass": "X"
+        },
+        {
+          "id": "w7",
+          "index": 8,
+          "form": "supermarket",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-past-es",
+      "language": "es",
+      "sentence": "¿Qué distancia caminábamos hasta el supermercado?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Qué",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "distancia",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "caminábamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "hasta",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "el",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "supermercado",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-past-pt",
+      "language": "pt",
+      "sentence": "Que distância caminhávamos até o supermercado?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Que",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "distância",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "caminhávamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "até",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "supermercado",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-future-en",
+      "language": "en",
+      "sentence": "How far will we walk to the supermarket?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "far",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "will",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "walk",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "to",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "the",
+          "wordClass": "X"
+        },
+        {
+          "id": "w7",
+          "index": 8,
+          "form": "supermarket",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-future-es",
+      "language": "es",
+      "sentence": "¿Qué distancia caminaremos hasta el supermercado?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Qué",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "distancia",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "caminaremos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "hasta",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "el",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "supermercado",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-shopping-for-dinner-how-far-future-pt",
+      "language": "pt",
+      "sentence": "Que distância caminharemos até o supermercado?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Que",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "distância",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "caminharemos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "até",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "supermercado",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "shopping-for-dinner",
+        "questionWord": "how-far",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-present-en",
+      "language": "en",
+      "sentence": "How often do we cook dinner together?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "often",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "do",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "cook",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "dinner",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "together",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-present-es",
+      "language": "es",
+      "sentence": "¿Con qué frecuencia preparamos la cena juntos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "Con",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "qué",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "frecuencia",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "preparamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "cena",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "juntos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-present-pt",
+      "language": "pt",
+      "sentence": "Com que frequência preparamos o jantar juntos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "Com",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "que",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "frequência",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "preparamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "jantar",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "juntos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-past-en",
+      "language": "en",
+      "sentence": "How often did we cook dinner together?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "often",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "did",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "cook",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "dinner",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "together",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-past-es",
+      "language": "es",
+      "sentence": "¿Con qué frecuencia preparábamos la cena juntos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "Con",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "qué",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "frecuencia",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "preparábamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "cena",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "juntos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-past-pt",
+      "language": "pt",
+      "sentence": "Com que frequência preparávamos o jantar juntos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "Com",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "que",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "frequência",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "preparávamos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "jantar",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "juntos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-future-en",
+      "language": "en",
+      "sentence": "How often will we cook dinner together?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "How",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "often",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "w2",
+          "index": 3,
+          "form": "will",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "we",
+          "wordClass": "X"
+        },
+        {
+          "id": "head",
+          "index": 5,
+          "form": "cook",
+          "wordClass": "VERB"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "dinner",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "together",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-future-es",
+      "language": "es",
+      "sentence": "¿Con qué frecuencia prepararemos la cena juntos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "Con",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "qué",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "frecuencia",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "prepararemos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "cena",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "juntos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-preparing-dinner-how-often-future-pt",
+      "language": "pt",
+      "sentence": "Com que frequência prepararemos o jantar juntos?",
+      "tokens": [
+        {
+          "id": "other",
+          "index": 1,
+          "form": "Com",
+          "wordClass": "X"
+        },
+        {
+          "id": "target",
+          "index": 2,
+          "form": "que",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 3,
+          "form": "frequência",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "prepararemos",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "o",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "jantar",
+          "wordClass": "X"
+        },
+        {
+          "id": "w6",
+          "index": 7,
+          "form": "juntos",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "preparing-dinner",
+        "questionWord": "how-often",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-present-en",
+      "language": "en",
+      "sentence": "How old is the guest?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "How",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "old",
+          "wordClass": "ADJ"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "is",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "the",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "guest",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-present-es",
+      "language": "es",
+      "sentence": "¿Cuántos años tiene la persona invitada?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuántos",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "años",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "tiene",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "persona",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "invitada",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-present-pt",
+      "language": "pt",
+      "sentence": "Quantos anos tem a pessoa convidada?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Quantos",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "anos",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "tem",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "a",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "pessoa",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "convidada",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-past-en",
+      "language": "en",
+      "sentence": "How old was the guest?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "How",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "old",
+          "wordClass": "ADJ"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "was",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "the",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "guest",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-past-es",
+      "language": "es",
+      "sentence": "¿Cuántos años tenía la persona invitada?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuántos",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "años",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "tenía",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "persona",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "invitada",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-past-pt",
+      "language": "pt",
+      "sentence": "Quantos anos tinha a pessoa convidada?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Quantos",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "anos",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "tinha",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "a",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "pessoa",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "convidada",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-future-en",
+      "language": "en",
+      "sentence": "How old will the guest be?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "How",
+          "wordClass": "ADV"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "old",
+          "wordClass": "ADJ"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "will",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "the",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "guest",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "be",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "advmod"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-future-es",
+      "language": "es",
+      "sentence": "¿Cuántos años tendrá la persona invitada?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Cuántos",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "años",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "tendrá",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "la",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "persona",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "invitada",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    },
+    {
+      "version": "0.1.0",
+      "id": "master-after-dinner-conversation-how-old-future-pt",
+      "language": "pt",
+      "sentence": "Quantos anos terá a pessoa convidada?",
+      "tokens": [
+        {
+          "id": "target",
+          "index": 1,
+          "form": "Quantos",
+          "wordClass": "DET"
+        },
+        {
+          "id": "head",
+          "index": 2,
+          "form": "anos",
+          "wordClass": "NOUN"
+        },
+        {
+          "id": "other",
+          "index": 3,
+          "form": "terá",
+          "wordClass": "X"
+        },
+        {
+          "id": "w3",
+          "index": 4,
+          "form": "a",
+          "wordClass": "X"
+        },
+        {
+          "id": "w4",
+          "index": 5,
+          "form": "pessoa",
+          "wordClass": "X"
+        },
+        {
+          "id": "w5",
+          "index": 6,
+          "form": "convidada",
+          "wordClass": "X"
+        }
+      ],
+      "relations": [
+        {
+          "head": "head",
+          "dependent": "target",
+          "relation": "det"
+        }
+      ],
+      "pedagogy": {
+        "mode": "read-only-focus",
+        "doesNotClaim": [
+          "complete-parse",
+          "learner-evidence",
+          "green-pass"
+        ]
+      },
+      "source": {
+        "name": "SIYAYO Master QW illustrative model",
+        "experienceId": "after-dinner-conversation",
+        "questionWord": "how-old",
+        "field": "question-expansion",
+        "illustrative": true,
+        "notes": "Only the selected target/head relation is authored. X means outside this partial analysis, not a word class claim."
+      }
+    }
+  ]
+}

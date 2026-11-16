@@ -1,0 +1,2 @@
+# Browser verification artifacts are uploaded by CI, not source corpus.
+test-results/

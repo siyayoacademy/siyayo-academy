@@ -7,6 +7,9 @@ on:
       - 'css/verb-explorer.css'
       - 'verb-explorer.html'
       - 'data/learning/gear-study-corpus.json'
+      - 'data/learning/gear-question-expansion.json'
+      - 'data/learning/question-word-capabilities.json'
+      - 'js/thinking-mind-information-gap-resolver.js'
       - 'scripts/*gear*'
       - '.github/workflows/jaguar-gear-ten-kinds.yml'
   workflow_dispatch:
@@ -29,6 +32,11 @@ jobs:
           node scripts/build-gear-study-corpus.cjs
           cmp /tmp/gear-study-corpus.expected.json data/learning/gear-study-corpus.json
           node scripts/test-gear-study-corpus.cjs
+          cp data/learning/gear-question-expansion.json /tmp/gear-question-expansion.expected.json
+          node scripts/build-gear-question-expansion.cjs
+          cmp /tmp/gear-question-expansion.expected.json data/learning/gear-question-expansion.json
+          node scripts/test-gear-question-expansion.cjs
+          node scripts/test-thinking-mind-information-gap-resolver.js
       - name: Existing house, contracts, audio targets and presentation memory
         run: |
           node scripts/jaguar-gear360-house-integrity.cjs
@@ -49,6 +57,7 @@ jobs:
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/siyayo-gear.log 2>&1 &
           node scripts/gear-study-browser.cjs
+          node scripts/gear-question-browser.cjs
           node scripts/jaguar-gear360-full-browser-smoke.cjs
           node scripts/jaguar-gear360-s2-contextual-lines-browser.cjs
           node scripts/jaguar-gear360-trail-exploration-browser.cjs
@@ -56,4 +65,4 @@ jobs:
         if: always()
         with:
           name: gear-study-screenshots
-          path: test-results/gear-study
+          path: test-results/gear-*

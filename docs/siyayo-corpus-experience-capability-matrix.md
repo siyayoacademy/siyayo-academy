@@ -1,3 +1,5 @@
+> 2026-11-16 next ELO: runtime now merges experience-seeds.json with gear-question-expansion.json: 27 trilingual placements, fourteen Master QW families, 54 new three-tense affirmative-response dialogues and partial graphs. HOW OLD is canonical per the supplied Master; WHOM remains a formal extension. This is family coverage across four Experiences, not every family/mode in every scene. See JAGUAR-MASTER-QW-NEXT-ELO-20261116.md. Earlier tables below are historical.
+
 # SIYAYO CORPUS ↔ EXPERIENCE CAPABILITY MATRIX
 
 > Update 2026-11-16: the table below is a historical audit, not current runtime absence evidence. `data/lexicon/adverbs/adverbs.json` now exists. The actual Explorer upgrade adds the seven remaining class selectors and five verbal-function study entry points using `data/learning/gear-study-corpus.json`; it preserves existing noun/adjective/verb axes. These are illustrative study capabilities with partial authored dependencies, not new assessment skills. See `docs/JAGUAR-GEAR-UPGRADE-EXECUTION-20261116.md` for verified coverage, limits and promotion status.

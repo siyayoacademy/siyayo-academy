@@ -1,5 +1,10 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Master fourteen QWs — next ELO, 2026-11-16
+
+Owner authorized the next pedagogical review and missing-family implementation. Source reconciliation restores HOW OLD to the Master fourteen while preserving WHOM as a formal extension. Six supplementary families add 54 illustrative EN/ES/PT dialogues across three tenses, bringing runtime coverage to 27 placements and fourteen distinct families. Dynamic partial DF/Head follows the actual question; unavailable response modes fail closed. Execution and release checkpoint: [Master QW next ELO](JAGUAR-MASTER-QW-NEXT-ELO-20261116.md). No new evaluator authority or claim of human homologation.
+
+
 ## JAGUAR · Ten Kinds GEAR upgrade — 2026-11-16
 
 Owner authorized sequential integration into the actual main/production laboratory. Durable execution/recovery guide: [GEAR upgrade](JAGUAR-GEAR-UPGRADE-EXECUTION-20261116.md). Baseline `ad0dc061`; candidate branch `jaguar/gear-ten-kinds-20261116`. Ten class selectors, five verbal functions, EXISTENCE number, 648 illustrative EN/ES/PT tense/mode forms, partial authored DF/Head Probe, retained QW context, speech/targets, presentation memory and PATITA observations are implemented and locally browser-verified. Existing WHY contract and GEAR coverage retained. Published to main at `95796757`; candidate browser CI passed, Cloudflare production deployment `0b8be49d` succeeded, and production assets and EN/ES/PT interactions were verified. Full release evidence and the pre-existing unrelated corpus-schema CI failure are recorded in the execution guide. Sources: locally supplied Master original and editorial proof PDF; provenance hashes recorded, originals not republished. This is not all 14 QWs, arbitrary sentence generation, new assessment authority or human homologation.

@@ -1,7 +1,7 @@
 // GEAR presentation adapter. Study never submits evidence or changes an assessment session.
 (function(root){
 'use strict';
-let corpus=null,selection={functionId:null,number:'singular',target:null},lastKey='';
+let corpus=null,questionExpansion=null,questionStructures=new Map(),allExperiences=[],selection={functionId:null,number:'singular',target:null},lastKey='';
 const extraKinds=['pronoun','adverb','article','preposition','conjunction','interjection','numeral'];
 const copy={
  en:{functions:'VERB FUNCTION',dialogue:'QUESTION CONTEXT',study:'ILLUSTRATIVE STUDY · not a verified scene fact',back:'Return to question and response',keywords:'TARGET WORDS',number:'NUMBER',singular:'SINGULAR',plural:'PLURAL',related:'QUESTION CONTEXT · retained independently',dependency:'DEPENDENCY · selected study sentence · partial authored relations',canonical:'DEPENDENCY · original question',missing:'Dependency analysis for this construction is not yet authored. The original question remains in the context cards.',noHead:'No head relation is authored for this target. Explore another word.',gap:'This study form is not available in the authored corpus.',sequence:'STUDY · TARGET · CONTEXT',catalog:'14 QUESTION WORDS · coverage',unavailable:'not authored in this Experience',composition:'LEXICAL STUDY · does not answer the selected question',build:'BUILD SENTENCE requires a contextual WHICH candidate.',interjection:'Reaction example; intonation and context matter. It has no tense of its own.'},
@@ -19,7 +19,12 @@ function lines(s){const c=current(s);if(!active(s))return null;const labels=copy
  const details=s.wordType==='verb'?corpus.functions.find(f=>f.id===c.kind)?.meaning[s.language]:s.wordType==='interjection'?labels.interjection:null;
  return [{role:labels.study,text,html:highlight(text,target(s)),hideVisibleRole:true},...(details?[{role:labels.keywords,text:details,noSpeech:true}]:[])];
 }
-function dependency(s){if(!active(s))return null;const c=current(s),structure=s.wordType==='interjection'?null:c?.cell?.dependency;
+function dependency(s){if(!active(s)){
+ if(s.question?.dialogueStatus?.source!=='gear-master-question-expansion')return null;
+ const turn=s.question.dialogueForms?.[s.tense]?.[s.form],id=s.question.dependencyFocus.structureIdsByTense?.[s.tense]?.[s.language],structure=turn&&questionStructures.get(id);
+ if(!structure)return{active:true,structure:null};
+ const token=structure.tokens.find(t=>t.id==='target');return{active:true,structure,focusId:'head',meta:{...s.question.dependencyHeadProbe,structureIds:{[s.language]:structure.id},prompt:{[s.language]:{en:`In “${structure.sentence}”, which word is the head of “${token.form}”?`,es:`En «${structure.sentence}», ¿cuál es el núcleo de «${token.form}»?`,pt:`Em “${structure.sentence}”, qual palavra é o núcleo de “${token.form}”?`}[s.language]}}};
+ }const c=current(s),structure=s.wordType==='interjection'?null:c?.cell?.dependency;
  if(!structure)return{active:true,structure:null};
  const chosen=target(s),token=structure.tokens.find(t=>t.form.toLocaleLowerCase()===chosen?.toLocaleLowerCase()),relation=token&&structure.relations.find(r=>r.dependent===token.id);
  // For VERB study, use an authored subject→verb relation as the head exercise.
@@ -43,22 +48,23 @@ function render(s){if(!corpus)return;const focused=document.activeElement,focusA
  const dialogue=s.dialogue.length?s.dialogue:[{role:l.dialogue,text:s.question?.question?.[s.language]||''},{role:l.dialogue,text:l.gap,noSpeech:true}];
  context.innerHTML=exploring?`<h3>${l.related}</h3>${dialogue.filter(x=>x.action!=='what-practice').slice(0,3).map(line=>audioCard(line,s)).join('')}<button type="button" class="gear-option" data-return-dialogue>${l.back}</button>`:'';
  context.onclick=e=>{const b=e.target.closest('[data-context-text]');if(b)s.speak(b.dataset.contextText,s.language);};
- const notice=ensure('gearStudyScope','p',anchor.parentNode);anchor.before(notice);notice.className='gear-study-notice';notice.hidden=!exploring;notice.textContent=active(s)?`${l.study} · ${s.tense.toUpperCase()} / ${s.form.toUpperCase()}`:l.composition;
+ const notice=ensure('gearStudyScope','p',anchor.parentNode);anchor.before(notice);notice.className='gear-study-notice';notice.hidden=!exploring&&s.question?.dialogueStatus?.source!=='gear-master-question-expansion';notice.textContent=(active(s)||s.question?.dialogueStatus?.source==='gear-master-question-expansion')?`${l.study} · ${({en:{present:"PRESENT",past:"PAST",future:"FUTURE",affirmative:"AFFIRMATIVE",negative:"NEGATIVE",interrogative:"INTERROGATIVE"},es:{present:"PRESENTE",past:"PASADO",future:"FUTURO",affirmative:"AFIRMATIVO",negative:"NEGATIVO",interrogative:"INTERROGATIVO"},pt:{present:"PRESENTE",past:"PASSADO",future:"FUTURO",affirmative:"AFIRMATIVO",negative:"NEGATIVO",interrogative:"INTERROGATIVO"}}[s.language])[s.tense]} / ${({en:{affirmative:"AFFIRMATIVE",negative:"NEGATIVE",interrogative:"INTERROGATIVE"},es:{affirmative:"AFIRMATIVO",negative:"NEGATIVO",interrogative:"INTERROGATIVO"},pt:{affirmative:"AFIRMATIVO",negative:"NEGATIVO",interrogative:"INTERROGATIVO"}}[s.language])[s.form]}`:l.composition;
  if(exploring)document.getElementById('lineSequenceLabel').textContent=l.sequence;
  const build=document.getElementById('buildSentence');if(build.disabled)build.title=l.build;
  const dep=dependency(s),depNotice=ensure('gearDependencyScope','p',document.getElementById('dependencyFocusSurface').parentNode);document.getElementById('dependencyFocusSurface').before(depNotice);depNotice.className='gear-study-notice';
  depNotice.textContent=dep?(dep.structure?l.dependency+(dep.meta?'':' · '+l.noHead):l.missing):l.canonical;
  if(dep?.structure){const reference=document.querySelector('#dependencyFocusSurface .dependency-focus-reference-label');if(reference)reference.textContent=l.study+':';}
  // A study function is independent from QW assessment, including retained identified sessions.
- document.getElementById('experienceView').dataset.gearStudy=String(active(s));
- if(active(s)){for(const id of ['determinerUseAssessmentPanel','whatAssessmentPanel','whereAssessmentPanel','whyAssessmentPanel','choiceResolverPanel','livingLineAuthorityNote']){const el=document.getElementById(id);if(el)el.hidden=true;}}
+ document.getElementById('experienceView').dataset.gearStudy=String(active(s)||s.question?.dialogueStatus?.source==='gear-master-question-expansion');
+ if(active(s)||s.question?.dialogueStatus?.source==='gear-master-question-expansion'){for(const id of ['determinerUseAssessmentPanel','whatAssessmentPanel','whereAssessmentPanel','whyAssessmentPanel','choiceResolverPanel','livingLineAuthorityNote']){const el=document.getElementById(id);if(el)el.hidden=true;}}
  const catalog=ensure('questionWordCoverage','details',document.getElementById('questionGear').parentNode);const wasOpen=catalog.open;catalog.className='gear-qw-coverage';
- const available=new Set(s.experience.thinkingMind.map(q=>q.questionWord));catalog.innerHTML=`<summary>${l.catalog}</summary><ul>${(s.capabilities?.canonical||[]).map(q=>`<li>${esc(q.questionWord.toUpperCase())} · ${available.has(q.questionWord)?'✓':esc(l.unavailable)}</li>`).join('')}</ul>`;catalog.open=wasOpen;
+ const available=new Set(s.experience.thinkingMind.map(q=>q.questionWord));catalog.innerHTML=`<summary>${l.catalog}</summary><ul>${(s.capabilities?.canonical||[]).map(q=>{const destination=allExperiences.find(x=>x.thinkingMind.some(item=>item.questionWord===q.questionWord)),label=q.questionWord.toUpperCase().replaceAll('-',' ');return `<li>${esc(label)} · ${available.has(q.questionWord)?'✓':destination?`<button type="button" class="gear-option" data-qw-destination="${esc(destination.id)}" data-qw-word="${esc(q.questionWord)}">→ ${esc(destination.title?.[s.language]||destination.id)}</button>`:esc(l.unavailable)}</li>`;}).join('')}</ul>`;catalog.open=wasOpen;
  if(focusAxis)document.querySelector(`[${focusAxis}="${CSS.escape(focusValue)}"]`)?.focus({preventScroll:true});
 }
-async function load(){const r=await fetch('data/learning/gear-study-corpus.json');if(!r.ok)throw Error('GEAR study corpus unavailable');corpus=await r.json();}
+async function load(){const responses=await Promise.all(['gear-study-corpus','gear-question-expansion'].map(id=>fetch('data/learning/'+id+'.json')));if(responses.some(r=>!r.ok))throw Error('GEAR study corpus unavailable');[corpus,questionExpansion]=await Promise.all(responses.map(r=>r.json()));questionStructures=new Map(questionExpansion.structures.map(s=>[s.id,s]));}
+function extend(experiences,structures){allExperiences=experiences;for(const item of questionExpansion?.items||[]){const x=experiences.find(x=>x.id===item.experienceId);if(x&&!x.thinkingMind.some(q=>q.questionWord===item.question.questionWord))x.thinkingMind.push(item.question);}for(const [id,structure]of questionStructures)structures.set(id,structure);}
 function snapshot(){return{...selection};}
 function restore(value){selection={functionId:corpus?.functions.some(f=>f.id===value?.functionId)?value.functionId:null,number:value?.number==='plural'?'plural':'singular',target:typeof value?.target==='string'?value.target:null};}
 function select(axis,value){if(axis==='functionId'){selection.functionId=corpus?.functions.some(f=>f.id===value)?value:null;selection.target=null;}if(axis==='number'&&['singular','plural'].includes(value))selection.number=value;if(axis==='target')selection.target=value;}
-root.SIYAYOGearStudy=Object.freeze({load,active,current,lines,dependency,render,snapshot,restore,select});
+root.SIYAYOGearStudy=Object.freeze({load,extend,active,current,lines,dependency,render,snapshot,restore,select});
 })(typeof globalThis!=='undefined'?globalThis:this);

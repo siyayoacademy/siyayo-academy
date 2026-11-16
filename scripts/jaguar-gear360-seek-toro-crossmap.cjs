@@ -5,6 +5,7 @@ const fs=require('node:fs'),assert=require('node:assert/strict');
 const path=require('node:path');
 const raw=JSON.parse(fs.readFileSync('data/learning/experience-seeds.json','utf8'));
 const stages=raw.items||[];
+for(const item of JSON.parse(fs.readFileSync("data/learning/gear-question-expansion.json","utf8")).items){stages.find(x=>x.id===item.experienceId).thinkingMind.push(item.question);}
 const languages=['en','es','pt'],tenses=['present','past','future'],modes=['affirmative','negative','interrogative'];
 const historical={
   seekToro:'docs/siyayo-seek-toro-sector-register.md',
@@ -24,7 +25,7 @@ const slots=stages.flatMap((exp,i)=>(exp.thinkingMind||[]).map(q=>{
   const focus=q.dependencyFocus,head=q.dependencyHeadProbe;
   const validStructures=focus?.structureIds&&languages.every(lang=>{
     const filename='data/learning/dependencies/'+focus.structureIds[lang]+'.json';
-    return fs.existsSync(filename);
+    return fs.existsSync(filename)||JSON.parse(fs.readFileSync("data/learning/gear-question-expansion.json","utf8")).structures.some(s=>s.id===focus.structureIds[lang]&&s.language===lang);
   });
   const specialization={
     focus:!!focus,headProbe:!!head,focusStructuresPresent:!!validStructures,
@@ -63,8 +64,8 @@ for(const slot of slots){
  if(slot.specialization.headProbe)assert.ok(slot.specialization.focus,'Head Probe detached from Focus '+slot.slot);
 }
 const report={id:'SIYAYO-SEEK-TORO-RUNTIME-CROSSMAP',version:'1.0',authority:'inventory_only_no_credit',
- source:'data/learning/experience-seeds.json',historicalSources:historical,counts,slots,
- missingCanonicalQWs:['how-many','whose','whom','how-long','how-far','how-often'].filter(q=>!qws.includes(q)),
+ source:'experience-seeds.json + gear-question-expansion.json',historicalSources:historical,counts,slots,
+ missingCanonicalQWs:['how-many','whose','how-old','how-long','how-far','how-often'].filter(q=>!qws.includes(q)),
  notes:['Historical documents are dated snapshots. Live corpus always wins when statuses disagree.',
  'Not authored does not mean regression: the baseline integrity gate separately detects removals.',
  'A declared assessmentTarget is NOT proof of a completed or homologated evaluation.',

@@ -37,7 +37,7 @@ function normalize(value){
 
 function capabilityList(source){
   if(Array.isArray(source))return source;
-  if(source&&Array.isArray(source.canonical))return source.canonical;
+  if(source&&Array.isArray(source.canonical))return source.canonical.concat(source.practicalExtensions||[]);
   return [];
 }
 
