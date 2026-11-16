@@ -9,6 +9,7 @@ function clone(value){
   if(!value||typeof value!=='object')return null;
   return {
     questionWord:id(value.questionWord),
+    ...(value.gearStudy?{gearStudy:{functionId:id(value.gearStudy.functionId),number:id(value.gearStudy.number),target:id(value.gearStudy.target)}}:{}),
     perspective:id(value.perspective),
     choiceCandidate:id(value.choiceCandidate),
     wordType:id(value.wordType),

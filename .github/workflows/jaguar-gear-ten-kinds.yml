@@ -1,0 +1,58 @@
+name: JAGUAR GEAR ten kinds and five functions
+on:
+  push:
+    branches: [main, jaguar/gear-ten-kinds-20261116]
+    paths:
+      - 'js/verb-explorer*'
+      - 'css/verb-explorer.css'
+      - 'verb-explorer.html'
+      - 'data/learning/gear-study-corpus.json'
+      - 'scripts/*gear*'
+      - '.github/workflows/jaguar-gear-ten-kinds.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  study-and-regression:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Corpus reproducibility and semantic structure
+        run: |
+          node scripts/build-gear-study-corpus.cjs
+          git diff --exit-code -- data/learning/gear-study-corpus.json
+          node scripts/test-gear-study-corpus.cjs
+      - name: Existing house, contracts, audio targets and presentation memory
+        run: |
+          node scripts/jaguar-gear360-house-integrity.cjs
+          node scripts/jaguar-gear360-full-candidate-gate.cjs
+          node scripts/jaguar-gear360-seek-toro-crossmap.cjs
+          node scripts/test-s3-why-canonical-green-cycle.js
+          node scripts/test-verb-explorer-dependency-head-probe-live.js
+          node scripts/test-verb-explorer-dependency-focus-surface.js
+          node scripts/test-study-target-presentation.js
+          node scripts/test-lexical-composition-ui.js
+          node scripts/test-verb-explorer-toro-presentation-memory.js
+          node scripts/test-verb-explorer-learner-switch-isolation.js
+          node scripts/test-verb-explorer-session-state-boundary.js
+          node scripts/test-verb-explorer-thinking-mind-assessment-selection.js
+      - name: Install browser harness
+        run: npm install --no-save --package-lock=false playwright@1.56.1
+      - name: Actual Explorer cross-axis browser and existing pedagogical flows
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/siyayo-gear.log 2>&1 &
+          node scripts/gear-study-browser.cjs
+          node scripts/jaguar-gear360-full-browser-smoke.cjs
+          node scripts/jaguar-gear360-s2-contextual-lines-browser.cjs
+          node scripts/jaguar-gear360-trail-exploration-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gear-study-screenshots
+          path: test-results/gear-study

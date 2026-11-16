@@ -1,0 +1,64 @@
+// GEAR presentation adapter. Study never submits evidence or changes an assessment session.
+(function(root){
+'use strict';
+let corpus=null,selection={functionId:null,number:'singular',target:null},lastKey='';
+const extraKinds=['pronoun','adverb','article','preposition','conjunction','interjection','numeral'];
+const copy={
+ en:{functions:'VERB FUNCTION',dialogue:'QUESTION CONTEXT',study:'ILLUSTRATIVE STUDY · not a verified scene fact',back:'Return to question and response',keywords:'TARGET WORDS',number:'NUMBER',singular:'SINGULAR',plural:'PLURAL',related:'QUESTION CONTEXT · retained independently',dependency:'DEPENDENCY · selected study sentence · partial authored relations',canonical:'DEPENDENCY · original question',missing:'Dependency analysis for this construction is not yet authored. The original question remains in the context cards.',noHead:'No head relation is authored for this target. Explore another word.',gap:'This study form is not available in the authored corpus.',sequence:'STUDY · TARGET · CONTEXT',catalog:'14 QUESTION WORDS · coverage',unavailable:'not authored in this Experience',composition:'LEXICAL STUDY · does not answer the selected question',build:'BUILD SENTENCE requires a contextual WHICH candidate.',interjection:'Reaction example; intonation and context matter. It has no tense of its own.'},
+ es:{functions:'FUNCIÓN VERBAL',dialogue:'CONTEXTO DE LA PREGUNTA',study:'ESTUDIO ILUSTRATIVO · no es un hecho verificado de la escena',back:'Volver a pregunta y respuesta',keywords:'PALABRAS OBJETIVO',number:'NÚMERO',singular:'SINGULAR',plural:'PLURAL',related:'CONTEXTO DE LA PREGUNTA · conservado por separado',dependency:'DEPENDENCIA · oración de estudio seleccionada · relaciones parciales',canonical:'DEPENDENCIA · pregunta original',missing:'El análisis de esta construcción aún no está redactado. La pregunta original permanece en las tarjetas de contexto.',noHead:'No hay relación de núcleo redactada para este objetivo. Explora otra palabra.',gap:'Esta forma no está disponible en el corpus de estudio.',sequence:'ESTUDIO · OBJETIVO · CONTEXTO',catalog:'14 PALABRAS INTERROGATIVAS · cobertura',unavailable:'sin contexto redactado en esta Experience',composition:'ESTUDIO LÉXICO · no responde a la pregunta seleccionada',build:'CONSTRUIR ORACIÓN requiere un candidato contextual de WHICH.',interjection:'Ejemplo de reacción; importan la entonación y el contexto. No tiene tiempo verbal propio.'},
+ pt:{functions:'FUNÇÃO VERBAL',dialogue:'CONTEXTO DA PERGUNTA',study:'ESTUDO ILUSTRATIVO · não é fato verificado da cena',back:'Voltar à pergunta e resposta',keywords:'PALAVRAS ALVO',number:'NÚMERO',singular:'SINGULAR',plural:'PLURAL',related:'CONTEXTO DA PERGUNTA · preservado separadamente',dependency:'DEPENDÊNCIA · oração de estudo selecionada · relações parciais',canonical:'DEPENDÊNCIA · pergunta original',missing:'A análise desta construção ainda não foi elaborada. A pergunta original permanece nos cartões de contexto.',noHead:'Não há relação de núcleo elaborada para este alvo. Explore outra palavra.',gap:'Esta forma não está disponível no corpus de estudo.',sequence:'ESTUDO · ALVO · CONTEXTO',catalog:'14 PALAVRAS INTERROGATIVAS · cobertura',unavailable:'sem contexto elaborado nesta Experience',composition:'ESTUDO LEXICAL · não responde à pergunta selecionada',build:'CONSTRUIR ORAÇÃO requer um candidato contextual de WHICH.',interjection:'Exemplo de reação; entonação e contexto importam. Não possui tempo verbal próprio.'}
+};
+function esc(s){return String(s||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
+function active(s){return !!(corpus&&(extraKinds.includes(s.wordType)||(s.wordType==='verb'&&selection.functionId)));}
+function current(s){if(!active(s))return null;const entry=corpus.items.find(i=>i.experienceId===s.experience.id),kind=s.wordType==='verb'?selection.functionId:'action',number=kind==='existence'?selection.number:'default';return {entry,kind,cell:entry?.forms?.[kind]?.[number]?.[s.tense]?.[s.form]?.[s.language]};}
+function targets(s){const c=current(s);if(!c?.cell)return[];return s.wordType==='interjection'?[c.entry.interjection[s.language]]:c.cell.targets[s.wordType]||[];}
+function target(s){const options=targets(s);return options.includes(selection.target)?selection.target:options[0]||null;}
+function highlight(text,word){return root.SIYAYOStudyTargetPresentation?.highlight(text,word)||esc(text);}
+function lines(s){const c=current(s);if(!active(s))return null;const labels=copy[s.language];if(!c?.cell)return[{role:labels.study,text:labels.gap,noSpeech:true}];
+ const text=s.wordType==='interjection'?c.entry.interjection[s.language]:c.cell.text;
+ const details=s.wordType==='verb'?corpus.functions.find(f=>f.id===c.kind)?.meaning[s.language]:s.wordType==='interjection'?labels.interjection:null;
+ return [{role:labels.study,text,html:highlight(text,target(s)),hideVisibleRole:true},...(details?[{role:labels.keywords,text:details,noSpeech:true}]:[])];
+}
+function dependency(s){if(!active(s))return null;const c=current(s),structure=s.wordType==='interjection'?null:c?.cell?.dependency;
+ if(!structure)return{active:true,structure:null};
+ const chosen=target(s),token=structure.tokens.find(t=>t.form.toLocaleLowerCase()===chosen?.toLocaleLowerCase()),relation=token&&structure.relations.find(r=>r.dependent===token.id);
+ // For VERB study, use an authored subject→verb relation as the head exercise.
+ const probeRelation=relation||(s.wordType==='verb'?structure.relations.find(r=>['nsubj','obj'].includes(r.relation)):null);
+ const probeToken=probeRelation&&structure.tokens.find(t=>t.id===probeRelation.dependent);
+ const alternatives=probeRelation?[probeRelation.head,...structure.tokens.filter(t=>t.id!==probeRelation.head&&t.id!==probeRelation.dependent).slice(0,2).map(t=>t.id)]:[];
+ return{active:true,structure,focusId:token?.id||structure.defaultFocus,meta:probeToken?{structureIds:{[s.language]:structure.id},targetTokenId:probeToken.id,alternativeTokenIds:alternatives,prompt:{[s.language]:{en:`In “${structure.sentence}”, which word is the head of “${probeToken.form}”?`,es:`En «${structure.sentence}», ¿cuál es el núcleo de «${probeToken.form}»?`,pt:`Em “${structure.sentence}”, qual palavra é o núcleo de “${probeToken.form}”?`}[s.language]}}:null};
+}
+function ensure(id,tag,parent){let el=document.getElementById(id);if(!el){el=document.createElement(tag);el.id=id;parent.appendChild(el);}return el;}
+function audioCard(line,s){if(line.noSpeech)return `<p class="gear-study-notice">${esc(line.text)}</p>`;return `<button type="button" class="living-line gear-context-audio" data-context-text="${esc(line.text)}" aria-label="${esc(line.role+': '+line.text)}"><p>${highlight(line.text,s.question?.questionWordLabel?.[s.language])}</p><b><span class="siyayo-speaker" aria-hidden="true"></span></b></button>`;}
+function render(s){if(!corpus)return;const focused=document.activeElement,focusAxis=['data-verb-function','data-study-number','data-study-target'].find(a=>focused?.hasAttribute(a)),focusValue=focusAxis?focused.getAttribute(focusAxis):null;const l=copy[s.language],key=s.experience.id+'|'+s.wordType+'|'+s.language+'|'+s.tense+'|'+s.form;
+ if(key!==lastKey){if(!targets(s).includes(selection.target))selection.target=null;lastKey=key;}
+ const wordGear=document.getElementById('wordTypeGear');
+ for(const [index,kind] of corpus.wordTypes.entries()){let b=wordGear.querySelector(`[data-word-type="${kind.id}"]`);if(!b){b=document.createElement('button');b.type='button';b.className='gear-option';b.dataset.wordType=kind.id;}if(wordGear.children[index]!==b)wordGear.insertBefore(b,wordGear.children[index]||null);b.textContent=kind.label[s.language];b.classList.toggle('active',s.wordType===kind.id);b.setAttribute('aria-pressed',String(s.wordType===kind.id));}
+ const specialized=ensure('verbFunctionGear','div',wordGear.parentNode);specialized.className='gear-study-specialization';specialized.hidden=s.wordType!=='verb';
+ specialized.innerHTML=`<span class="gear-label">${l.functions}</span><div class="gear-options">${[{id:'',label:{[s.language]:l.dialogue}},...corpus.functions].map(f=>`<button class="gear-option${(selection.functionId||'')===f.id?' active':''}" data-verb-function="${f.id}" aria-pressed="${(selection.functionId||'')===f.id}" type="button">${esc(f.label[s.language])}</button>`).join('')}</div>`;
+ if(s.wordType==='verb'&&selection.functionId==='existence')specialized.innerHTML+=`<span class="gear-label">${l.number}</span><div class="gear-options">${['singular','plural'].map(n=>`<button type="button" class="gear-option${selection.number===n?' active':''}" data-study-number="${n}" aria-pressed="${selection.number===n}">${l[n]}</button>`).join('')}</div>`;
+ const keywordGear=ensure('studyKeywordGear','div',wordGear.parentNode);keywordGear.hidden=!active(s);keywordGear.className='gear-study-specialization';keywordGear.innerHTML=`<span class="gear-label">${l.keywords}</span><div class="gear-options">${targets(s).map(w=>`<button type="button" class="gear-option${target(s)===w?' active':''}" data-study-target="${esc(w)}" aria-pressed="${target(s)===w}">${esc(w)}</button>`).join('')}</div>`;
+ const exploring=active(s)||s.wordType!=='verb'||!!s.perspective;
+ const anchor=document.getElementById('livingLines'),context=ensure('gearQuestionContext','section',anchor.parentNode);anchor.before(context);context.hidden=!exploring;context.className='gear-question-context';
+ const dialogue=s.dialogue.length?s.dialogue:[{role:l.dialogue,text:s.question?.question?.[s.language]||''},{role:l.dialogue,text:l.gap,noSpeech:true}];
+ context.innerHTML=exploring?`<h3>${l.related}</h3>${dialogue.filter(x=>x.action!=='what-practice').slice(0,3).map(line=>audioCard(line,s)).join('')}<button type="button" class="gear-option" data-return-dialogue>${l.back}</button>`:'';
+ context.onclick=e=>{const b=e.target.closest('[data-context-text]');if(b)s.speak(b.dataset.contextText,s.language);};
+ const notice=ensure('gearStudyScope','p',anchor.parentNode);anchor.before(notice);notice.className='gear-study-notice';notice.hidden=!exploring;notice.textContent=active(s)?`${l.study} · ${s.tense.toUpperCase()} / ${s.form.toUpperCase()}`:l.composition;
+ if(exploring)document.getElementById('lineSequenceLabel').textContent=l.sequence;
+ const build=document.getElementById('buildSentence');if(build.disabled)build.title=l.build;
+ const dep=dependency(s),depNotice=ensure('gearDependencyScope','p',document.getElementById('dependencyFocusSurface').parentNode);document.getElementById('dependencyFocusSurface').before(depNotice);depNotice.className='gear-study-notice';
+ depNotice.textContent=dep?(dep.structure?l.dependency+(dep.meta?'':' · '+l.noHead):l.missing):l.canonical;
+ if(dep?.structure){const reference=document.querySelector('#dependencyFocusSurface .dependency-focus-reference-label');if(reference)reference.textContent=l.study+':';}
+ // A study function is independent from QW assessment, including retained identified sessions.
+ document.getElementById('experienceView').dataset.gearStudy=String(active(s));
+ if(active(s)){for(const id of ['determinerUseAssessmentPanel','whatAssessmentPanel','whereAssessmentPanel','whyAssessmentPanel','choiceResolverPanel','livingLineAuthorityNote']){const el=document.getElementById(id);if(el)el.hidden=true;}}
+ const catalog=ensure('questionWordCoverage','details',document.getElementById('questionGear').parentNode);const wasOpen=catalog.open;catalog.className='gear-qw-coverage';
+ const available=new Set(s.experience.thinkingMind.map(q=>q.questionWord));catalog.innerHTML=`<summary>${l.catalog}</summary><ul>${(s.capabilities?.canonical||[]).map(q=>`<li>${esc(q.questionWord.toUpperCase())} · ${available.has(q.questionWord)?'✓':esc(l.unavailable)}</li>`).join('')}</ul>`;catalog.open=wasOpen;
+ if(focusAxis)document.querySelector(`[${focusAxis}="${CSS.escape(focusValue)}"]`)?.focus({preventScroll:true});
+}
+async function load(){const r=await fetch('data/learning/gear-study-corpus.json');if(!r.ok)throw Error('GEAR study corpus unavailable');corpus=await r.json();}
+function snapshot(){return{...selection};}
+function restore(value){selection={functionId:corpus?.functions.some(f=>f.id===value?.functionId)?value.functionId:null,number:value?.number==='plural'?'plural':'singular',target:typeof value?.target==='string'?value.target:null};}
+function select(axis,value){if(axis==='functionId'){selection.functionId=corpus?.functions.some(f=>f.id===value)?value:null;selection.target=null;}if(axis==='number'&&['singular','plural'].includes(value))selection.number=value;if(axis==='target')selection.target=value;}
+root.SIYAYOGearStudy=Object.freeze({load,active,current,lines,dependency,render,snapshot,restore,select});
+})(typeof globalThis!=='undefined'?globalThis:this);

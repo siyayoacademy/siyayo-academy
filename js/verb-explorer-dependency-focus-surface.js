@@ -135,7 +135,7 @@
       '<div class="dependency-focus-heading">'+
         '<span>DEPENDENCY FOCUS</span>'+
         '<small class="dependency-focus-reference">'+
-          '<span class="dependency-focus-reference-label">'+escapeHtml(({en:'Canonical reference example',es:'Ejemplo canónico de referencia',pt:'Exemplo canônico de referência'})[language])+':</span>'+
+          '<span class="dependency-focus-reference-label">'+escapeHtml((structure.source?.illustrative===true?{en:'Illustrative study example · partial relations',es:'Ejemplo ilustrativo · relaciones parciales',pt:'Exemplo ilustrativo · relações parciais'}:{en:'Canonical reference example',es:'Ejemplo canónico de referencia',pt:'Exemplo canônico de referência'})[language])+':</span>'+
           '<span class="dependency-focus-reference-sentence">'+escapeHtml(structure.sentence||'')+'</span>'+
         '</small>'+
         '<strong>'+escapeHtml(resolved.focus.form)+' / '+escapeHtml(focusType)+'</strong>'+

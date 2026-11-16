@@ -1,0 +1,20 @@
+{
+  "id": "gear-upgrade-source-review-20261116",
+  "reviewDate": "2026-11-16",
+  "sources": [
+    {"name": "STRUCTURE-KIND OF WORDS.docx", "sha256": "99c63e41b4bb3ad74133dbf8a272993494fcef1cd4cd398b8f0ed2256aaf553c", "reviewedSections": ["The ten kinds of words", "As cinco funções do verbo", "EXISTENCE", "VERB - Existence"], "fullTextPublished": false},
+    {"name": "MASTER_VIP_PROVAS_A4_TRES_EDICOES.pdf", "sha256": "0b2341ff41caf7e85170cc21b813b4f5b36cebea46e8a3ea4e0253d28f224680", "pages": 15, "reviewedContent": "EXISTENCE singular/plural, affirmative/negative/interrogative; source and proposed editorial changes distinguished; study does not grant Green Pass", "editorialStatus": "pending-homologation", "fullTextPublished": false}
+  ],
+  "preservedPrinciples": [
+    "QUALITY, STATE, MOVEMENT, ACTION, EXISTENCE retain the Master introductory didactic meanings",
+    "MOVEMENT is progressive activity, not a synonym of lexical displacement",
+    "THERE + BE is distinct from possession HAVE",
+    "Spanish hay/había/habrá and Portuguese há/havia/haverá remain impersonal",
+    "New examples are SIYAYO_ADAPTATION and illustrative, not MASTER_ORIGINAL quotations or verified scene facts",
+    "Partial authored dependency graphs are not a general parser or new assessment contracts"
+  ],
+  "runtimeCorpus": "data/learning/gear-study-corpus.json",
+  "humanVisualAndLinguisticReview": "pending",
+  "assessmentAuthority": false,
+  "assessmentEvidence": false
+}

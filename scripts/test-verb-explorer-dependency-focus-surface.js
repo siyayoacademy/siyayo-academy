@@ -340,7 +340,8 @@ assert.equal(retained.scroll().scrollLeft, 0, 'a hidden or cleared surface must 
 // Exercise the actual preview controller and redraw listeners, without another
 // render or assessment event. Geometry is a controlled DOM fixture, not browser QA.
 const runtime = fs.readFileSync('js/verb-explorer.js', 'utf8');
-const paths = [...runtime.match(/DEPENDENCY_FOCUS_URLS=\[([^\]]+)\]/)[1].matchAll(/"([^"]+)"/g)].map(match => match[1]);
+// Evaluate the constant declaration so spread-generated trilingual paths are covered too.
+const paths = require('node:vm').runInNewContext(runtime.split('\n')[0] + '; DEPENDENCY_FOCUS_URLS');
 const Focus = require('../js/adaptive-dependency-focus-view.js');
 const Connectors = require('../js/adaptive-dependency-connector-view.js');
 const initiallyHidden = retentionFixture();

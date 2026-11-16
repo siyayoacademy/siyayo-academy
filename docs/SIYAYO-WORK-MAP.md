@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Ten Kinds GEAR upgrade — 2026-11-16
+
+Owner authorized sequential integration into the actual main/production laboratory. Durable execution/recovery guide: [GEAR upgrade](JAGUAR-GEAR-UPGRADE-EXECUTION-20261116.md). Baseline `ad0dc061`; candidate branch `jaguar/gear-ten-kinds-20261116`. Ten class selectors, five verbal functions, EXISTENCE number, 648 illustrative EN/ES/PT tense/mode forms, partial authored DF/Head Probe, retained QW context, speech/targets, presentation memory and PATITA observations are implemented and locally browser-verified. Existing WHY contract and GEAR coverage retained. Remote CI and deployment must be recorded separately. Sources: locally supplied Master original and editorial proof PDF; provenance hashes recorded, originals not republished. This is not all 14 QWs, arbitrary sentence generation, new assessment authority or human homologation.
+
 ## JAGUAR · GEAR360 S3 HOW TO SHOW · WHO and HOW — 2026-11-15
 
 S3 Having a Nice Dinner now offers EN → ES → PT model dialogue for WHO and HOW in PRESENT / AFFIRMATIVE. WHO models accepting an offer of salmon at the table and HOW models describing the taste of the meal. Both use the canonical questions, the shared LINES renderer and its speaker, with free-study status and no assessment authority or evidence. The existing test gate now covers both experiences, including the authoring notice for PAST. S3 WHAT already has a grounded response, and S3 WHY uses its existing contextual and assessment contract.

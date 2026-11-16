@@ -41,6 +41,9 @@ function snapshot(){
     tense:activeValue('#experienceTenseGear .active[data-experience-tense]','data-experience-tense'),
     mode:activeValue('#experienceModeGear .active[data-experience-form]','data-experience-form'),
     wordType:activeValue('#wordTypeGear .active[data-word-type]','data-word-type'),
+    verbFunction:activeValue('#verbFunctionGear .active[data-verb-function]','data-verb-function'),
+    studyNumber:activeValue('#verbFunctionGear .active[data-study-number]','data-study-number'),
+    studyTarget:activeValue('#studyKeywordGear .active[data-study-target]','data-study-target'),
     perspective:activeValue('#perspectiveGear .active[data-perspective]','data-perspective'),
     view:doc?.getElementById('experienceView')?.hidden?'dna':'experience'
   };
@@ -51,6 +54,11 @@ var controls=[
   ['[data-experience-tense]','tense','experienceTense'],
   ['[data-experience-form]','mode','experienceForm'],
   ['[data-word-type]','word-type','wordType'],
+  ['[data-verb-function]','verb-function','verbFunction'],
+  ['[data-study-number]','study-number','studyNumber'],
+  ['[data-study-target]','study-target','studyTarget'],
+  ['[data-return-dialogue]','return-dialogue','id'],
+  ['#gearQuestionContext [data-context-text]','context-audio-request','id'],
   ['#nounOptions [data-noun-id]','noun','nounId'],
   ['#adjectiveOptions [data-adjective-id]','adjective','adjectiveId'],
   ['[data-perspective]','perspective','perspective'],

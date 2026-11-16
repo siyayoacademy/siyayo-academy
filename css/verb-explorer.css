@@ -1264,3 +1264,20 @@ body{
 #whyAssessmentPanel .why-probe-question-card{box-sizing:border-box;width:100%;min-width:0;max-width:100%;grid-template-columns:20px minmax(0,1fr);white-space:normal;word-break:normal;overflow-wrap:break-word}
 #whyAssessmentPanel .why-probe-question-text{display:block;width:100%;min-width:0;white-space:normal;word-break:normal;overflow-wrap:break-word;text-align:center}
 #whyAssessmentPanel .why-probe-options{width:100%;min-width:0}
+
+/* GEAR 2026-11-16: all ten classes remain visible, study is never accepted green. */
+#wordTypeGear,#questionGear,#experienceTenseGear,#experienceModeGear,#verbFunctionGear .gear-options,#studyKeywordGear .gear-options,.perspective-options{flex-wrap:wrap;overflow-x:visible}
+#wordTypeGear .gear-option,#questionGear .gear-option,#verbFunctionGear .gear-option,#studyKeywordGear .gear-option{min-height:40px;white-space:normal}
+.gear-study-specialization{margin-top:14px}.gear-study-specialization[hidden],.gear-question-context[hidden],.gear-study-notice[hidden]{display:none}
+.gear-study-specialization .gear-label{margin-top:12px}
+.gear-question-context{border-bottom:1px solid rgba(242,216,138,.3);padding-bottom:14px;margin:14px 0;display:grid;gap:8px;min-width:0}
+.gear-question-context h3{color:var(--siyayo-gold-primary);font-size:.72rem;letter-spacing:.05em;margin:0 0 6px}
+.gear-question-context .living-line{display:block;text-align:center;padding:16px 42px;min-height:70px}
+.gear-question-context .living-line b{left:14px;right:auto}.gear-question-context .living-line p{margin:0;overflow-wrap:normal;word-break:normal}
+.gear-study-notice{font-size:.8rem;line-height:1.5;color:#b9cde1;overflow-wrap:anywhere}
+.gear-question-context .study-target-word,#livingLines .study-target-word{font-style:italic}
+.gear-qw-coverage{font-size:.76rem;line-height:1.6;margin-top:10px;color:#b9cde1}.gear-qw-coverage summary{cursor:pointer;color:var(--siyayo-gold-primary)}
+.gear-qw-coverage ul{padding-left:18px;margin:8px 0}
+#gearDependencyScope{margin:12px 0}
+.experience-grid{align-items:start}
+#experienceView[data-gear-study="true"] :is(#determinerUseAssessmentPanel,#whatAssessmentPanel,#whereAssessmentPanel,#whyAssessmentPanel,#choiceResolverPanel,#livingLineAuthorityNote){display:none}
