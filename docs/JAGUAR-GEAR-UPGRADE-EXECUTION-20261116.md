@@ -41,7 +41,7 @@ The original DOCX and proof PDF supplied locally are reference sources, not inst
 
 ## Checkpoint
 
-IMPLEMENTED AND LOCALLY VERIFIED — ready for remote CI/promotion. Local branch: `jaguar/gear-ten-kinds-20261116`. No deployment claim at this checkpoint.
+PUBLISHED AND PRODUCTION VERIFIED — main promoted to `95796757706f7d3871ec68e89f10995cadc40a54`. Branch: `jaguar/gear-ten-kinds-20261116`. Browser CI and the actual Cloudflare deployment are verified; human homologation remains open.
 
 ### Delivered in this lot
 
@@ -67,7 +67,18 @@ Human linguistic/visual homologation remains open. Automated speech validation o
 
 ### Next action after interruption
 
-1. Inspect remote branch and CI before repeating publication. Use `.github/workflows/jaguar-gear-ten-kinds.yml` and the existing GEAR gates.
-2. On successful relevant checks, advance main from the recorded baseline without overwriting concurrent work.
-3. Read the Cloudflare `siyayo-academy` check for the exact new SHA, verify deployed Explorer assets and a live browser smoke, then append the deployment checkpoint here and in Work Map.
+1. Publication is complete. Inspect main and this record before making further changes; do not repeat the upgrade.
+2. Continue with human linguistic/visual homologation and the remaining authored QW coverage, preserving the limits above.
+3. For any subsequent release, use `.github/workflows/jaguar-gear-ten-kinds.yml` plus the existing GEAR gates and verify the exact Cloudflare commit.
 4. Roll back only this lot if necessary; baseline `ad0dc061` is the recovery point. Do not remove later unrelated commits.
+
+### Publication evidence — 2026-11-16
+
+- Implementation `13dcaf02`, CI-container reproducibility fix `0804e415`, repository LF normalization `95796757`. Main advanced with an expected-SHA lease from `ad0dc061`, without force.
+- Remote candidate CI PASS: https://github.com/siyayoacademy/siyayo-academy/actions/runs/43962262407 . Byte-for-byte corpus reproducibility, all configured semantic/regression tests, actual browser suite and screenshots passed. Initial run failed because Git did not recognize the container checkout; direct before/after file comparison fixed this without weakening reproducibility.
+- Actual preview browser PASS: all 648 forms, added classes, graph/probe, speech arguments, return navigation, NICK isolation and nine viewport/language screenshots at https://631eb3fe.siyayo-academy.pages.dev .
+- Main Cloudflare deployment SUCCESS: https://0b8be49d.siyayo-academy.pages.dev . Production: https://siyayo-academy.pages.dev/verb-explorer.html?mode=experience .
+- Production smoke PASS: fetched HTML, core JS, study adapter, CSS and JSON match the verified commit; real Chrome exercised ten classes and EN/ES/PT EXISTENCE plural/past/negative with matching sentence, context, DF and Head Probe. No page errors. Screenshot retained with the local Portuguese recovery guide.
+- Existing main gates PASS: guard-existing-house, canonical-trail-wordpath, s1-howmuch-who, s2-when-how-who, s2-contextual-free-study, s3-who-how and s4-reconciliation.
+- Full new study-and-regression suite also PASS on main: https://github.com/siyayoacademy/siyayo-academy/actions/runs/43963079459 .
+- Unrelated existing `Validate Built-in Actions corpus` failure remains: Ajv `strictRequired` rejects `dialogueStatus` in `experience-seed.schema.json#/if`. Logs are identical at baseline job `132936979875` and release job `133635330054`. Do not describe every repository workflow as green.
