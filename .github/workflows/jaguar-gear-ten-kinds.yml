@@ -25,8 +25,9 @@ jobs:
           node-version: '22'
       - name: Corpus reproducibility and semantic structure
         run: |
+          cp data/learning/gear-study-corpus.json /tmp/gear-study-corpus.expected.json
           node scripts/build-gear-study-corpus.cjs
-          git diff --exit-code -- data/learning/gear-study-corpus.json
+          cmp /tmp/gear-study-corpus.expected.json data/learning/gear-study-corpus.json
           node scripts/test-gear-study-corpus.cjs
       - name: Existing house, contracts, audio targets and presentation memory
         run: |
