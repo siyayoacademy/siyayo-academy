@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Class sentence context — 2026-11-17
+
+Explicit ACTION/MOVEMENT selection extends five added word classes using existing corpus cells. Lines, targets and dependency modules follow the effective frame; adverbs explain missing MOVEMENT targets and retain ACTION, interjections keep their separate reaction example. Presentation memory/PATITA remain without assessment authority. [Execution and recovery](JAGUAR-CLASS-FRAMES-20261117.md).
+
 ## JAGUAR · Multiword preposition anchors — 2026-11-17
 
 Next authorized ELO connects ES después de / PT depois do to the authored cena/jantar head in the after-dinner ACTION/MOVEMENT frames. 36 partial graphs gain explicit phrase anchors; PREPOSITION exposes 18 tense/mode/language combinations. Full phrase highlight and speech preserved; internal contraction analysis and assessment remain outside scope. [Execution and recovery](JAGUAR-MULTIWORD-PREPOSITIONS-20261117.md).
