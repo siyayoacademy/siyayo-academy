@@ -9,7 +9,7 @@ function clone(value){
   if(!value||typeof value!=='object')return null;
   return {
     questionWord:id(value.questionWord),
-    ...(value.gearStudy?{gearStudy:{functionId:id(value.gearStudy.functionId),number:id(value.gearStudy.number),target:id(value.gearStudy.target)}}:{}),
+    ...(value.gearStudy?{gearStudy:{functionId:id(value.gearStudy.functionId),number:id(value.gearStudy.number),target:id(value.gearStudy.target),...(value.gearStudy.analysisTurn?{analysisTurn:id(value.gearStudy.analysisTurn)}:{}),...(value.gearStudy.responsePart?{responsePart:id(value.gearStudy.responsePart)}:{})}}:{}),
     perspective:id(value.perspective),
     choiceCandidate:id(value.choiceCandidate),
     wordType:id(value.wordType),

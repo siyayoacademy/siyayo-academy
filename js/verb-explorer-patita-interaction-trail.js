@@ -44,6 +44,8 @@ function snapshot(){
     verbFunction:activeValue('#verbFunctionGear .active[data-verb-function]','data-verb-function'),
     studyNumber:activeValue('#verbFunctionGear .active[data-study-number]','data-study-number'),
     studyTarget:activeValue('#studyKeywordGear .active[data-study-target]','data-study-target'),
+    analysisTurn:activeValue('#gearAnalysisControls .active[data-analysis-turn]','data-analysis-turn'),
+    responsePart:activeValue('#gearAnalysisControls .active[data-response-part]','data-response-part'),
     perspective:activeValue('#perspectiveGear .active[data-perspective]','data-perspective'),
     view:doc?.getElementById('experienceView')?.hidden?'dna':'experience'
   };
@@ -57,6 +59,8 @@ var controls=[
   ['[data-verb-function]','verb-function','verbFunction'],
   ['[data-study-number]','study-number','studyNumber'],
   ['[data-study-target]','study-target','studyTarget'],
+  ['[data-analysis-turn]','analysis-turn','analysisTurn'],
+  ['[data-response-part]','response-part','responsePart'],
   ['[data-return-dialogue]','return-dialogue','id'],
   ['#gearQuestionContext [data-context-text]','context-audio-request','id'],
   ['#nounOptions [data-noun-id]','noun','nounId'],

@@ -1,5 +1,10 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Second-turn dependency exploration — 2026-11-17
+
+Next authorized ELO adds an explicit question/second-turn analysis selector, 162 response/confirmation partial graphs and 216 clause-scoped targets, including negative corrections. Prior 162 dialogue configurations and 54 question graphs remain unchanged. Literal target highlighting, TORO presentation memory and PATITA observation remain separate from evidence. Guide and release checkpoint: [Second-turn dependencies](JAGUAR-SECOND-TURN-DEPENDENCIES-20261117.md).
+
+
 ## JAGUAR · QW response modes — 2026-11-17
 
 Next ELO authorized: six added Master families now have 162 EN/ES/PT tense/mode configurations: 54 unchanged affirmative pairs, 54 corrective negatives, 54 explicitly labelled confirmation questions. The 54 partial graphs analyse the contextual QW question, never silently the second line. No new evidence/assessment authority. Durable record: [QW response modes](JAGUAR-QW-RESPONSE-MODES-20261117.md). Earlier capability counts below describe their historical lots.

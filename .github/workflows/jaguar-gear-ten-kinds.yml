@@ -8,6 +8,7 @@ on:
       - 'verb-explorer.html'
       - 'data/learning/gear-study-corpus.json'
       - 'data/learning/gear-question-expansion.json'
+      - 'data/learning/gear-response-dependencies.json'
       - 'data/learning/question-word-capabilities.json'
       - 'js/thinking-mind-information-gap-resolver.js'
       - 'scripts/*gear*'
@@ -36,6 +37,10 @@ jobs:
           node scripts/build-gear-question-expansion.cjs
           cmp /tmp/gear-question-expansion.expected.json data/learning/gear-question-expansion.json
           node scripts/test-gear-question-expansion.cjs
+          cp data/learning/gear-response-dependencies.json /tmp/gear-response-dependencies.expected.json
+          node scripts/build-gear-response-dependencies.cjs
+          cmp /tmp/gear-response-dependencies.expected.json data/learning/gear-response-dependencies.json
+          node scripts/test-gear-response-dependencies.cjs
           node scripts/test-thinking-mind-information-gap-resolver.js
       - name: Existing house, contracts, audio targets and presentation memory
         run: |
