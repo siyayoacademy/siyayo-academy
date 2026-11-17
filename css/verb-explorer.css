@@ -1283,4 +1283,4 @@ body{
 #experienceView[data-gear-study="true"] :is(#determinerUseAssessmentPanel,#whatAssessmentPanel,#whereAssessmentPanel,#whyAssessmentPanel,#choiceResolverPanel,#livingLineAuthorityNote){display:none}
 
 /* Explicit question/second-turn analysis scope; neutral selection does not assert credit. */
-.gear-analysis-controls{padding:12px 0;display:grid;gap:10px}.gear-analysis-controls[hidden]{display:none}.gear-analysis-controls .gear-options{display:flex;flex-wrap:wrap;gap:8px}.gear-analysis-controls .gear-option{min-height:44px;white-space:normal;overflow-wrap:break-word;max-width:100%}.gear-analysis-controls .gear-option.active{background:#12304a;color:#f2d88a;border-color:#f2d88a}
+.gear-analysis-controls{padding:12px 0;display:grid;gap:10px}.gear-analysis-controls[hidden]{display:none}.gear-analysis-controls .gear-options{display:flex;flex-wrap:wrap;gap:8px}.gear-analysis-controls .gear-option{min-height:44px;white-space:normal;overflow-wrap:break-word;max-width:100%}#gearAnalysisControls .gear-option.active{background:#12304a;color:#f2d88a;border-color:#f2d88a;box-shadow:0 0 13px rgba(242,216,138,.2)}
