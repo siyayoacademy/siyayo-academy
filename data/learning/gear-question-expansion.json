@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "id": "gear-master-question-expansion",
   "provenance": {
     "kind": "SIYAYO_ADAPTATION",
@@ -42,6 +42,32 @@
                 "es": "Necesitamos dos zanahorias.",
                 "pt": "Precisamos de duas cenouras."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How many carrots do we need?",
+                "es": "¿Cuántas zanahorias necesitamos?",
+                "pt": "De quantas cenouras precisamos?"
+              },
+              "response": {
+                "en": "We do not need two carrots; we need three.",
+                "es": "No necesitamos dos zanahorias; necesitamos tres.",
+                "pt": "Não precisamos de duas cenouras; precisamos de três."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How many carrots do we need?",
+                "es": "¿Cuántas zanahorias necesitamos?",
+                "pt": "De quantas cenouras precisamos?"
+              },
+              "response": {
+                "en": "Do we need two carrots?",
+                "es": "¿Necesitamos dos zanahorias?",
+                "pt": "Precisamos de duas cenouras?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "past": {
@@ -56,6 +82,32 @@
                 "es": "Necesitábamos dos zanahorias.",
                 "pt": "Precisávamos de duas cenouras."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How many carrots did we need?",
+                "es": "¿Cuántas zanahorias necesitábamos?",
+                "pt": "De quantas cenouras precisávamos?"
+              },
+              "response": {
+                "en": "We did not need two carrots; we needed three.",
+                "es": "No necesitábamos dos zanahorias; necesitábamos tres.",
+                "pt": "Não precisávamos de duas cenouras; precisávamos de três."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How many carrots did we need?",
+                "es": "¿Cuántas zanahorias necesitábamos?",
+                "pt": "De quantas cenouras precisávamos?"
+              },
+              "response": {
+                "en": "Did we need two carrots?",
+                "es": "¿Necesitábamos dos zanahorias?",
+                "pt": "Precisávamos de duas cenouras?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "future": {
@@ -70,6 +122,32 @@
                 "es": "Necesitaremos dos zanahorias.",
                 "pt": "Precisaremos de duas cenouras."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How many carrots will we need?",
+                "es": "¿Cuántas zanahorias necesitaremos?",
+                "pt": "De quantas cenouras precisaremos?"
+              },
+              "response": {
+                "en": "We will not need two carrots; we will need three.",
+                "es": "No necesitaremos dos zanahorias; necesitaremos tres.",
+                "pt": "Não precisaremos de duas cenouras; precisaremos de três."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How many carrots will we need?",
+                "es": "¿Cuántas zanahorias necesitaremos?",
+                "pt": "De quantas cenouras precisaremos?"
+              },
+              "response": {
+                "en": "Will we need two carrots?",
+                "es": "¿Necesitaremos dos zanahorias?",
+                "pt": "Precisaremos de duas cenouras?"
+              },
+              "responseKind": "confirmation-question"
             }
           }
         },
@@ -79,7 +157,7 @@
           "groundedIn": "shopping-for-dinner pedagogical role-play",
           "assessmentAuthority": false,
           "assessmentEvidence": false,
-          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses and response modes. Negative gives a corrective alternative; interrogative is a confirmation question, not a completed answer. Question remains interrogative."
         },
         "dependencyFocus": {
           "structureIdsByTense": {
@@ -165,6 +243,32 @@
                 "es": "Este plato es mío.",
                 "pt": "Este prato é meu."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "Whose plate is this?",
+                "es": "¿De quién es este plato?",
+                "pt": "De quem é este prato?"
+              },
+              "response": {
+                "en": "This plate is not mine; it is yours.",
+                "es": "Este plato no es mío; es tuyo.",
+                "pt": "Este prato não é meu; é seu."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "Whose plate is this?",
+                "es": "¿De quién es este plato?",
+                "pt": "De quem é este prato?"
+              },
+              "response": {
+                "en": "Is this plate mine?",
+                "es": "¿Este plato es mío?",
+                "pt": "Este prato é meu?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "past": {
@@ -179,6 +283,32 @@
                 "es": "Este plato era mío.",
                 "pt": "Este prato era meu."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "Whose plate was this?",
+                "es": "¿De quién era este plato?",
+                "pt": "De quem era este prato?"
+              },
+              "response": {
+                "en": "This plate was not mine; it was yours.",
+                "es": "Este plato no era mío; era tuyo.",
+                "pt": "Este prato não era meu; era seu."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "Whose plate was this?",
+                "es": "¿De quién era este plato?",
+                "pt": "De quem era este prato?"
+              },
+              "response": {
+                "en": "Was this plate mine?",
+                "es": "¿Este plato era mío?",
+                "pt": "Este prato era meu?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "future": {
@@ -193,6 +323,32 @@
                 "es": "Este plato será mío.",
                 "pt": "Este prato será meu."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "Whose plate will this be?",
+                "es": "¿De quién será este plato?",
+                "pt": "De quem será este prato?"
+              },
+              "response": {
+                "en": "This plate will not be mine; it will be yours.",
+                "es": "Este plato no será mío; será tuyo.",
+                "pt": "Este prato não será meu; será seu."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "Whose plate will this be?",
+                "es": "¿De quién será este plato?",
+                "pt": "De quem será este prato?"
+              },
+              "response": {
+                "en": "Will this plate be mine?",
+                "es": "¿Este plato será mío?",
+                "pt": "Este prato será meu?"
+              },
+              "responseKind": "confirmation-question"
             }
           }
         },
@@ -202,7 +358,7 @@
           "groundedIn": "having-dinner pedagogical role-play",
           "assessmentAuthority": false,
           "assessmentEvidence": false,
-          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses and response modes. Negative gives a corrective alternative; interrogative is a confirmation question, not a completed answer. Question remains interrogative."
         },
         "dependencyFocus": {
           "structureIdsByTense": {
@@ -288,6 +444,32 @@
                 "es": "La cena dura una hora.",
                 "pt": "O jantar dura uma hora."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How long does dinner last?",
+                "es": "¿Cuánto dura la cena?",
+                "pt": "Quanto tempo dura o jantar?"
+              },
+              "response": {
+                "en": "Dinner does not last one hour; it lasts two hours.",
+                "es": "La cena no dura una hora; dura dos horas.",
+                "pt": "O jantar não dura uma hora; dura duas horas."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How long does dinner last?",
+                "es": "¿Cuánto dura la cena?",
+                "pt": "Quanto tempo dura o jantar?"
+              },
+              "response": {
+                "en": "Does dinner last one hour?",
+                "es": "¿La cena dura una hora?",
+                "pt": "O jantar dura uma hora?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "past": {
@@ -302,6 +484,32 @@
                 "es": "La cena duró una hora.",
                 "pt": "O jantar durou uma hora."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How long did dinner last?",
+                "es": "¿Cuánto duró la cena?",
+                "pt": "Quanto tempo durou o jantar?"
+              },
+              "response": {
+                "en": "Dinner did not last one hour; it lasted two hours.",
+                "es": "La cena no duró una hora; duró dos horas.",
+                "pt": "O jantar não durou uma hora; durou duas horas."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How long did dinner last?",
+                "es": "¿Cuánto duró la cena?",
+                "pt": "Quanto tempo durou o jantar?"
+              },
+              "response": {
+                "en": "Did dinner last one hour?",
+                "es": "¿La cena duró una hora?",
+                "pt": "O jantar durou uma hora?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "future": {
@@ -316,6 +524,32 @@
                 "es": "La cena durará una hora.",
                 "pt": "O jantar durará uma hora."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How long will dinner last?",
+                "es": "¿Cuánto durará la cena?",
+                "pt": "Quanto tempo durará o jantar?"
+              },
+              "response": {
+                "en": "Dinner will not last one hour; it will last two hours.",
+                "es": "La cena no durará una hora; durará dos horas.",
+                "pt": "O jantar não durará uma hora; durará duas horas."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How long will dinner last?",
+                "es": "¿Cuánto durará la cena?",
+                "pt": "Quanto tempo durará o jantar?"
+              },
+              "response": {
+                "en": "Will dinner last one hour?",
+                "es": "¿La cena durará una hora?",
+                "pt": "O jantar durará uma hora?"
+              },
+              "responseKind": "confirmation-question"
             }
           }
         },
@@ -325,7 +559,7 @@
           "groundedIn": "after-dinner-conversation pedagogical role-play",
           "assessmentAuthority": false,
           "assessmentEvidence": false,
-          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses and response modes. Negative gives a corrective alternative; interrogative is a confirmation question, not a completed answer. Question remains interrogative."
         },
         "dependencyFocus": {
           "structureIdsByTense": {
@@ -411,6 +645,32 @@
                 "es": "Caminamos un kilómetro hasta el supermercado.",
                 "pt": "Caminhamos um quilômetro até o supermercado."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How far do we walk to the supermarket?",
+                "es": "¿Qué distancia caminamos hasta el supermercado?",
+                "pt": "Que distância caminhamos até o supermercado?"
+              },
+              "response": {
+                "en": "We do not walk one kilometre to the supermarket; we walk two kilometres.",
+                "es": "No caminamos un kilómetro hasta el supermercado; caminamos dos kilómetros.",
+                "pt": "Não caminhamos um quilômetro até o supermercado; caminhamos dois quilômetros."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How far do we walk to the supermarket?",
+                "es": "¿Qué distancia caminamos hasta el supermercado?",
+                "pt": "Que distância caminhamos até o supermercado?"
+              },
+              "response": {
+                "en": "Do we walk one kilometre to the supermarket?",
+                "es": "¿Caminamos un kilómetro hasta el supermercado?",
+                "pt": "Caminhamos um quilômetro até o supermercado?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "past": {
@@ -425,6 +685,32 @@
                 "es": "Caminábamos un kilómetro hasta el supermercado.",
                 "pt": "Caminhávamos um quilômetro até o supermercado."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How far did we walk to the supermarket?",
+                "es": "¿Qué distancia caminábamos hasta el supermercado?",
+                "pt": "Que distância caminhávamos até o supermercado?"
+              },
+              "response": {
+                "en": "We did not walk one kilometre to the supermarket; we walked two kilometres.",
+                "es": "No caminábamos un kilómetro hasta el supermercado; caminábamos dos kilómetros.",
+                "pt": "Não caminhávamos um quilômetro até o supermercado; caminhávamos dois quilômetros."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How far did we walk to the supermarket?",
+                "es": "¿Qué distancia caminábamos hasta el supermercado?",
+                "pt": "Que distância caminhávamos até o supermercado?"
+              },
+              "response": {
+                "en": "Did we walk one kilometre to the supermarket?",
+                "es": "¿Caminábamos un kilómetro hasta el supermercado?",
+                "pt": "Caminhávamos um quilômetro até o supermercado?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "future": {
@@ -439,6 +725,32 @@
                 "es": "Caminaremos un kilómetro hasta el supermercado.",
                 "pt": "Caminharemos um quilômetro até o supermercado."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How far will we walk to the supermarket?",
+                "es": "¿Qué distancia caminaremos hasta el supermercado?",
+                "pt": "Que distância caminharemos até o supermercado?"
+              },
+              "response": {
+                "en": "We will not walk one kilometre to the supermarket; we will walk two kilometres.",
+                "es": "No caminaremos un kilómetro hasta el supermercado; caminaremos dos kilómetros.",
+                "pt": "Não caminharemos um quilômetro até o supermercado; caminharemos dois quilômetros."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How far will we walk to the supermarket?",
+                "es": "¿Qué distancia caminaremos hasta el supermercado?",
+                "pt": "Que distância caminharemos até o supermercado?"
+              },
+              "response": {
+                "en": "Will we walk one kilometre to the supermarket?",
+                "es": "¿Caminaremos un kilómetro hasta el supermercado?",
+                "pt": "Caminharemos um quilômetro até o supermercado?"
+              },
+              "responseKind": "confirmation-question"
             }
           }
         },
@@ -448,7 +760,7 @@
           "groundedIn": "shopping-for-dinner pedagogical role-play",
           "assessmentAuthority": false,
           "assessmentEvidence": false,
-          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses and response modes. Negative gives a corrective alternative; interrogative is a confirmation question, not a completed answer. Question remains interrogative."
         },
         "dependencyFocus": {
           "structureIdsByTense": {
@@ -534,6 +846,32 @@
                 "es": "Preparamos la cena juntos dos veces por semana.",
                 "pt": "Preparamos o jantar juntos duas vezes por semana."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How often do we cook dinner together?",
+                "es": "¿Con qué frecuencia preparamos la cena juntos?",
+                "pt": "Com que frequência preparamos o jantar juntos?"
+              },
+              "response": {
+                "en": "We do not cook dinner together twice a week; we cook together once a week.",
+                "es": "No preparamos la cena juntos dos veces por semana; la preparamos una vez por semana.",
+                "pt": "Não preparamos o jantar juntos duas vezes por semana; preparamos juntos uma vez por semana."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How often do we cook dinner together?",
+                "es": "¿Con qué frecuencia preparamos la cena juntos?",
+                "pt": "Com que frequência preparamos o jantar juntos?"
+              },
+              "response": {
+                "en": "Do we cook dinner together twice a week?",
+                "es": "¿Preparamos la cena juntos dos veces por semana?",
+                "pt": "Preparamos o jantar juntos duas vezes por semana?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "past": {
@@ -548,6 +886,32 @@
                 "es": "Preparábamos la cena juntos dos veces por semana.",
                 "pt": "Preparávamos o jantar juntos duas vezes por semana."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How often did we cook dinner together?",
+                "es": "¿Con qué frecuencia preparábamos la cena juntos?",
+                "pt": "Com que frequência preparávamos o jantar juntos?"
+              },
+              "response": {
+                "en": "We did not cook dinner together twice a week; we cooked together once a week.",
+                "es": "No preparábamos la cena juntos dos veces por semana; la preparábamos una vez por semana.",
+                "pt": "Não preparávamos o jantar juntos duas vezes por semana; preparávamos juntos uma vez por semana."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How often did we cook dinner together?",
+                "es": "¿Con qué frecuencia preparábamos la cena juntos?",
+                "pt": "Com que frequência preparávamos o jantar juntos?"
+              },
+              "response": {
+                "en": "Did we cook dinner together twice a week?",
+                "es": "¿Preparábamos la cena juntos dos veces por semana?",
+                "pt": "Preparávamos o jantar juntos duas vezes por semana?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "future": {
@@ -562,6 +926,32 @@
                 "es": "Prepararemos la cena juntos dos veces por semana.",
                 "pt": "Prepararemos o jantar juntos duas vezes por semana."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How often will we cook dinner together?",
+                "es": "¿Con qué frecuencia prepararemos la cena juntos?",
+                "pt": "Com que frequência prepararemos o jantar juntos?"
+              },
+              "response": {
+                "en": "We will not cook dinner together twice a week; we will cook together once a week.",
+                "es": "No prepararemos la cena juntos dos veces por semana; la prepararemos una vez por semana.",
+                "pt": "Não prepararemos o jantar juntos duas vezes por semana; prepararemos juntos uma vez por semana."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How often will we cook dinner together?",
+                "es": "¿Con qué frecuencia prepararemos la cena juntos?",
+                "pt": "Com que frequência prepararemos o jantar juntos?"
+              },
+              "response": {
+                "en": "Will we cook dinner together twice a week?",
+                "es": "¿Prepararemos la cena juntos dos veces por semana?",
+                "pt": "Prepararemos o jantar juntos duas vezes por semana?"
+              },
+              "responseKind": "confirmation-question"
             }
           }
         },
@@ -571,7 +961,7 @@
           "groundedIn": "preparing-dinner pedagogical role-play",
           "assessmentAuthority": false,
           "assessmentEvidence": false,
-          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses and response modes. Negative gives a corrective alternative; interrogative is a confirmation question, not a completed answer. Question remains interrogative."
         },
         "dependencyFocus": {
           "structureIdsByTense": {
@@ -657,6 +1047,32 @@
                 "es": "La persona invitada tiene treinta años.",
                 "pt": "A pessoa convidada tem trinta anos."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How old is the guest?",
+                "es": "¿Cuántos años tiene la persona invitada?",
+                "pt": "Quantos anos tem a pessoa convidada?"
+              },
+              "response": {
+                "en": "The guest is not thirty years old; the guest is forty.",
+                "es": "La persona invitada no tiene treinta años; tiene cuarenta.",
+                "pt": "A pessoa convidada não tem trinta anos; tem quarenta."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How old is the guest?",
+                "es": "¿Cuántos años tiene la persona invitada?",
+                "pt": "Quantos anos tem a pessoa convidada?"
+              },
+              "response": {
+                "en": "Is the guest thirty years old?",
+                "es": "¿La persona invitada tiene treinta años?",
+                "pt": "A pessoa convidada tem trinta anos?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "past": {
@@ -671,6 +1087,32 @@
                 "es": "La persona invitada tenía treinta años.",
                 "pt": "A pessoa convidada tinha trinta anos."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How old was the guest?",
+                "es": "¿Cuántos años tenía la persona invitada?",
+                "pt": "Quantos anos tinha a pessoa convidada?"
+              },
+              "response": {
+                "en": "The guest was not thirty years old; the guest was forty.",
+                "es": "La persona invitada no tenía treinta años; tenía cuarenta.",
+                "pt": "A pessoa convidada não tinha trinta anos; tinha quarenta."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How old was the guest?",
+                "es": "¿Cuántos años tenía la persona invitada?",
+                "pt": "Quantos anos tinha a pessoa convidada?"
+              },
+              "response": {
+                "en": "Was the guest thirty years old?",
+                "es": "¿La persona invitada tenía treinta años?",
+                "pt": "A pessoa convidada tinha trinta anos?"
+              },
+              "responseKind": "confirmation-question"
             }
           },
           "future": {
@@ -685,6 +1127,32 @@
                 "es": "La persona invitada tendrá treinta años.",
                 "pt": "A pessoa convidada terá trinta anos."
               }
+            },
+            "negative": {
+              "question": {
+                "en": "How old will the guest be?",
+                "es": "¿Cuántos años tendrá la persona invitada?",
+                "pt": "Quantos anos terá a pessoa convidada?"
+              },
+              "response": {
+                "en": "The guest will not be thirty years old; the guest will be forty.",
+                "es": "La persona invitada no tendrá treinta años; tendrá cuarenta.",
+                "pt": "A pessoa convidada não terá trinta anos; terá quarenta."
+              },
+              "responseKind": "corrective-response"
+            },
+            "interrogative": {
+              "question": {
+                "en": "How old will the guest be?",
+                "es": "¿Cuántos años tendrá la persona invitada?",
+                "pt": "Quantos anos terá a pessoa convidada?"
+              },
+              "response": {
+                "en": "Will the guest be thirty years old?",
+                "es": "¿La persona invitada tendrá treinta años?",
+                "pt": "A pessoa convidada terá trinta anos?"
+              },
+              "responseKind": "confirmation-question"
             }
           }
         },
@@ -694,7 +1162,7 @@
           "groundedIn": "after-dinner-conversation pedagogical role-play",
           "assessmentAuthority": false,
           "assessmentEvidence": false,
-          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses; affirmative response only. Question remains interrogative."
+          "notes": "Authored model question and answer; numbers, duration, age and ownership are role-play examples, not verified scene facts. Three tenses and response modes. Negative gives a corrective alternative; interrogative is a confirmation question, not a completed answer. Question remains interrogative."
         },
         "dependencyFocus": {
           "structureIdsByTense": {

@@ -1,3 +1,5 @@
+> 2026-11-17 response-mode ELO: the six supplementary Master families now cover three tenses × three response modes × EN/ES/PT = 162 configurations. INTERROGATIVE is explicitly a confirmation question, not a completed answer. 54 unchanged question graphs; no new evaluation authority. See JAGUAR-QW-RESPONSE-MODES-20261117.md.
+
 > 2026-11-16 next ELO: runtime now merges experience-seeds.json with gear-question-expansion.json: 27 trilingual placements, fourteen Master QW families, 54 new three-tense affirmative-response dialogues and partial graphs. HOW OLD is canonical per the supplied Master; WHOM remains a formal extension. This is family coverage across four Experiences, not every family/mode in every scene. See JAGUAR-MASTER-QW-NEXT-ELO-20261116.md. Earlier tables below are historical.
 
 # SIYAYO CORPUS ↔ EXPERIENCE CAPABILITY MATRIX

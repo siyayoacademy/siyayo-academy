@@ -1,5 +1,10 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · QW response modes — 2026-11-17
+
+Next ELO authorized: six added Master families now have 162 EN/ES/PT tense/mode configurations: 54 unchanged affirmative pairs, 54 corrective negatives, 54 explicitly labelled confirmation questions. The 54 partial graphs analyse the contextual QW question, never silently the second line. No new evidence/assessment authority. Durable record: [QW response modes](JAGUAR-QW-RESPONSE-MODES-20261117.md). Earlier capability counts below describe their historical lots.
+
+
 ## JAGUAR · Master fourteen QWs — next ELO, 2026-11-16
 
 Owner authorized the next pedagogical review and missing-family implementation. Source reconciliation restores HOW OLD to the Master fourteen while preserving WHOM as a formal extension. Six supplementary families add 54 illustrative EN/ES/PT dialogues across three tenses, bringing runtime coverage to 27 placements and fourteen distinct families. Dynamic partial DF/Head follows the actual question; unavailable response modes fail closed. Execution and release checkpoint: [Master QW next ELO](JAGUAR-MASTER-QW-NEXT-ELO-20261116.md). No new evaluator authority or claim of human homologation.
