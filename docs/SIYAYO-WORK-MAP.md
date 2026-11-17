@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Multiword preposition anchors — 2026-11-17
+
+Next authorized ELO connects ES después de / PT depois do to the authored cena/jantar head in the after-dinner ACTION/MOVEMENT frames. 36 partial graphs gain explicit phrase anchors; PREPOSITION exposes 18 tense/mode/language combinations. Full phrase highlight and speech preserved; internal contraction analysis and assessment remain outside scope. [Execution and recovery](JAGUAR-MULTIWORD-PREPOSITIONS-20261117.md).
+
 ## JAGUAR · Second-turn dependency exploration — 2026-11-17
 
 Next authorized ELO adds an explicit question/second-turn analysis selector, 162 response/confirmation partial graphs and 216 clause-scoped targets, including negative corrections. Prior 162 dialogue configurations and 54 question graphs remain unchanged. Literal target highlighting, TORO presentation memory and PATITA observation remain separate from evidence. Guide and release checkpoint: [Second-turn dependencies](JAGUAR-SECOND-TURN-DEPENDENCIES-20261117.md).

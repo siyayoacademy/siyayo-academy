@@ -58,8 +58,15 @@ function graph(f,l,t,m,item,kind){
  for(const a of f.targets[l].numeral)add(a,noun1,'nummod','NUM');
  for(const a of f.targets[l].conjunction)add(a,noun2,'cc','CCONJ');
  for(const a of f.targets[l].article)add(a,['a','un','una','um','uma'].includes(a)?noun2:location,'det','DET');
- // Multiword prepositions remain unanalysed here; the UI says so, rather than inventing token edges.
- for(const a of f.targets[l].preposition)if(!a.includes(' '))add(a,location,'case',l==='pt'&&['no','na','à'].includes(a)?'ADP+DET':'ADP');
+ // Closed authored expressions only: preserve orthographic tokens and expose the external case relation.
+ // Internal de / do structure remains outside this partial graph (do is not split into de + o).
+ for(const a of f.targets[l].preposition){
+  if(!a.includes(' '))add(a,location,'case',l==='pt'&&['no','na','à'].includes(a)?'ADP+DET':'ADP');
+  else if(f.id==='after-dinner-conversation'&&((l==='es'&&a==='después de')||(l==='pt'&&a==='depois do'))){
+   const anchor=find(a.split(' ')[0]),tail=find(a.split(' ')[1]);add(anchor.form,location,'case','ADV');tail.wordClass=l==='pt'?'ADP+DET':'ADP';
+   item.targetAnchors={[a]:{targetTokenId:anchor.id,headTokenId:location.id,phrase:a,internalAnalysis:false}};
+  }
+ }
  for(const token of tokens)if(token.wordClass==='X'&&['are','were','will','be','do','did','estamos','estábamos','estaremos','estávamos'].includes(token.form.toLowerCase()))add(token.form,root,'aux','AUX');
  for(const token of tokens)if(token.form.toLowerCase()===tri('not','no','não')[l])add(token.form,root,'advmod','PART');
  return {version:'0.1.0',id:`gear-${f.id}-${kind}-${l}-${t}-${m}`,language:l,sentence:item.text,tokens,relations,pedagogy:{mode:'read-only-focus',doesNotClaim:['learner-evidence','green-pass','mastery','complete-parse']},source:{name:'SIYAYO authored illustrative frame',experienceId:f.id,field:'gear-study-corpus',notes:'Partial authored relations; X tokens and multiword contractions are not fully analysed.'},defaultFocus:root.id};

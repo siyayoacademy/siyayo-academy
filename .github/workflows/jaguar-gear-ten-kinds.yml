@@ -33,6 +33,7 @@ jobs:
           node scripts/build-gear-study-corpus.cjs
           cmp /tmp/gear-study-corpus.expected.json data/learning/gear-study-corpus.json
           node scripts/test-gear-study-corpus.cjs
+          node scripts/test-gear-multiword-prepositions.cjs
           cp data/learning/gear-question-expansion.json /tmp/gear-question-expansion.expected.json
           node scripts/build-gear-question-expansion.cjs
           cmp /tmp/gear-question-expansion.expected.json data/learning/gear-question-expansion.json
@@ -62,6 +63,7 @@ jobs:
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/siyayo-gear.log 2>&1 &
           node scripts/gear-study-browser.cjs
+          node scripts/gear-multiword-browser.cjs
           node scripts/gear-question-browser.cjs
           node scripts/jaguar-gear360-full-browser-smoke.cjs
           node scripts/jaguar-gear360-s2-contextual-lines-browser.cjs
