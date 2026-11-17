@@ -23,8 +23,17 @@ Reviewed the new pairs for question/answer information focus, EN past/future aux
 
 ## Verification and publication checkpoint
 
-Implementation in progress. Required: new semantic and real-browser matrix; old 648-form suite and existing canonical GEAR contracts; EN/ES/PT desktop/portrait/landscape geometry, speech/no credit, NICK isolation, gap hiding, coverage navigation; exact-commit Cloudflare verification. Record final commit, CI and deployment evidence here before closing. Known baseline general corpus-schema CI failure remains separate.
+PUBLISHED AND PRODUCTION VERIFIED on 2026-11-17. Implementation commit: `bb3e24df3569b6eda1b39b81cc36649401f5a62e`. Main advanced from `56148bc5` with an expected-SHA lease and no force.
+
+- Candidate CI PASS: https://github.com/siyayoacademy/siyayo-academy/actions/runs/43967529512 . Both corpus reproducibility checks, semantic tests, Master/WHOM resolver, original contracts, the 648-form browser regression and the new 54-dialogue browser matrix passed.
+- Actual Cloudflare preview PASS at https://19d15393.siyayo-academy.pages.dev : all 54 pairs, language/tense graph and probe matching, speech arguments/no credit, NICK isolation, unavailable-mode hiding, coverage navigation and nine viewport/language geometry cases. Captures inspected; agent review is not owner homologation.
+- Production Cloudflare deployment SUCCESS: https://d07f6cba.siyayo-academy.pages.dev . Public Explorer: https://siyayo-academy.pages.dev/verb-explorer.html?mode=experience .
+- Production smoke PASS: core JS, study adapter, resolver and both new/updated JSON assets match the verified commit exactly. Runtime exposes 27 placements and fourteen families. EN/ES/PT future HOW OLD matches its DF/Head graph and localized scope. No browser page errors.
+- One local concurrent browser regression initially timed out while loading. Four-Experience diagnostics loaded successfully; the isolated full 648-form rerun passed. The remote full suite also passed. The timeout was not counted as a successful run.
+- Known baseline general corpus-schema CI failure remains separate: Ajv strictRequired / dialogueStatus in experience-seed.schema.json#/if. No claim that every repository workflow is green.
+- Main full suite PASS: https://github.com/siyayoacademy/siyayo-academy/actions/runs/44008102376 . Existing house, crossmap, S1, S2, S3 and S4 gates also passed. Baseline schema failure reconfirmed in job `133788214387` with the same strictRequired diagnostic.
+- Human linguistic/visual homologation, additional response modes and wider per-Experience QW coverage remain open. The six missing Master families are now represented; not every family is authored in every scene.
 
 ## Resume
 
-Read this file, previous GEAR execution guide, Work Map and git status. Do not restart the previous lot. Builder: `scripts/build-gear-question-expansion.cjs`; unit gate: `scripts/test-gear-question-expansion.cjs`; supplement: `data/learning/gear-question-expansion.json`. Check main before promotion; use an expected-SHA lease. Roll back only this lot and preserve later concurrent changes.
+Publication is complete; do not repeat it. Read this file, previous GEAR execution guide, Work Map and git status before the next lot. Builder: `scripts/build-gear-question-expansion.cjs`; unit gate: `scripts/test-gear-question-expansion.cjs`; browser gate: `scripts/gear-question-browser.cjs`; supplement: `data/learning/gear-question-expansion.json`. Next: owner pedagogical review of the 54 model dialogues, then separately authored response modes/context coverage. Roll back only this lot and preserve later concurrent changes.
