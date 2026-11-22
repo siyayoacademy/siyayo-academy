@@ -1,5 +1,9 @@
 > 2026-11-17 second-turn ELO: explicit contextual-question/response analysis selection; 162 second-turn partial graphs and 216 clause-scoped probe targets. Negative correction is independently selectable. Existing dialogues and question graphs preserved; no evaluation authority. See JAGUAR-SECOND-TURN-DEPENDENCIES-20261117.md. Earlier entries below are historical.
 
+## JAGUAR · Noun/adjective sentence study — 2026-11-17
+
+Explicit LEXICAL STUDY / IN A SENTENCE choice opens existing ACTION/MOVEMENT examples to noun/adjective exploration, with coherent targets, DF/Head and grammar axes. Legacy lexical/composition behavior remains the default and is restored on return. No corpus or assessment changes. [Execution and recovery](JAGUAR-NOUN-ADJECTIVE-SENTENCE-20261117.md).
+
 ## JAGUAR · Class sentence context — 2026-11-17
 
 Explicit ACTION/MOVEMENT selection extends five added word classes using existing corpus cells. Lines, targets and dependency modules follow the effective frame; adverbs explain missing MOVEMENT targets and retain ACTION, interjections keep their separate reaction example. Presentation memory/PATITA remain without assessment authority. [Execution and recovery](JAGUAR-CLASS-FRAMES-20261117.md).

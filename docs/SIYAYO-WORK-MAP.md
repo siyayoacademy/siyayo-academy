@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Noun/adjective sentence study — 2026-11-17
+
+Explicit LEXICAL STUDY / IN A SENTENCE choice opens existing ACTION/MOVEMENT examples to noun/adjective exploration, with coherent targets, DF/Head and grammar axes. Legacy lexical/composition behavior remains the default and is restored on return. No corpus or assessment changes. [Execution and recovery](JAGUAR-NOUN-ADJECTIVE-SENTENCE-20261117.md).
+
 ## JAGUAR · Class sentence context — 2026-11-17
 
 Explicit ACTION/MOVEMENT selection extends five added word classes using existing corpus cells. Lines, targets and dependency modules follow the effective frame; adverbs explain missing MOVEMENT targets and retain ACTION, interjections keep their separate reaction example. Presentation memory/PATITA remain without assessment authority. [Execution and recovery](JAGUAR-CLASS-FRAMES-20261117.md).
