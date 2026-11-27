@@ -9,6 +9,7 @@ on:
       - 'data/learning/gear-study-corpus.json'
       - 'data/learning/gear-question-expansion.json'
       - 'data/learning/gear-response-dependencies.json'
+      - 'data/learning/lexical-agreement.json'
       - 'data/learning/question-word-capabilities.json'
       - 'js/thinking-mind-information-gap-resolver.js'
       - 'scripts/*gear*'
@@ -36,6 +37,7 @@ jobs:
           node scripts/test-gear-multiword-prepositions.cjs
           node scripts/test-gear-class-frames.cjs
           node scripts/test-gear-lexical-sentence.cjs
+          node scripts/test-gear-lexical-agreement.cjs
           cp data/learning/gear-question-expansion.json /tmp/gear-question-expansion.expected.json
           node scripts/build-gear-question-expansion.cjs
           cmp /tmp/gear-question-expansion.expected.json data/learning/gear-question-expansion.json
@@ -68,6 +70,7 @@ jobs:
           node scripts/gear-multiword-browser.cjs
           node scripts/gear-class-frames-browser.cjs
           node scripts/gear-lexical-sentence-browser.cjs
+          node scripts/gear-lexical-agreement-browser.cjs
           node scripts/gear-question-browser.cjs
           node scripts/jaguar-gear360-full-browser-smoke.cjs
           node scripts/jaguar-gear360-s2-contextual-lines-browser.cjs

@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "status": "authored-lexical-agreement",
+  "assessmentAuthority": false,
+  "assessmentEvidence": false,
+  "sourceRefs": [
+    "data/lexicon/nouns/nouns.json",
+    "data/lexicon/adjectives/adjectives.json"
+  ],
+  "notes": [
+    "Closed inventory: six adjectives currently linked to Experiences; not a general inflector.",
+    "Gender belongs to each language, e.g. ES fresas feminine / PT morangos masculine.",
+    "PT lemon pepper is authored as masculine in the seasoning context; human homologation remains pending.",
+    "Agreement does not establish semantic suitability, scene truth or assessment credit."
+  ],
+  "nouns": {
+    "salmon": {
+      "es": "ms",
+      "pt": "ms"
+    },
+    "tomatoes": {
+      "es": "mp",
+      "pt": "mp"
+    },
+    "red-onion": {
+      "es": "fs",
+      "pt": "fs"
+    },
+    "parsley": {
+      "es": "ms",
+      "pt": "fs"
+    },
+    "cilantro": {
+      "es": "ms",
+      "pt": "ms"
+    },
+    "leek": {
+      "es": "ms",
+      "pt": "ms"
+    },
+    "lemon-pepper": {
+      "es": "fs",
+      "pt": "ms"
+    },
+    "olive-oil": {
+      "es": "ms",
+      "pt": "ms"
+    },
+    "brown-rice": {
+      "es": "ms",
+      "pt": "ms"
+    },
+    "carrots": {
+      "es": "fp",
+      "pt": "fp"
+    },
+    "sweet-potatoes": {
+      "es": "fp",
+      "pt": "fp"
+    },
+    "cassava": {
+      "es": "fs",
+      "pt": "fs"
+    },
+    "green-beans": {
+      "es": "fp",
+      "pt": "fp"
+    },
+    "cheese": {
+      "es": "ms",
+      "pt": "ms"
+    },
+    "strawberries": {
+      "es": "fp",
+      "pt": "mp"
+    },
+    "grapes": {
+      "es": "fp",
+      "pt": "fp"
+    }
+  },
+  "adjectives": {
+    "fresh": {
+      "en": "fresh",
+      "es": {
+        "ms": "fresco",
+        "fs": "fresca",
+        "mp": "frescos",
+        "fp": "frescas"
+      },
+      "pt": {
+        "ms": "fresco",
+        "fs": "fresca",
+        "mp": "frescos",
+        "fp": "frescas"
+      }
+    },
+    "delicious": {
+      "en": "delicious",
+      "es": {
+        "ms": "delicioso",
+        "fs": "deliciosa",
+        "mp": "deliciosos",
+        "fp": "deliciosas"
+      },
+      "pt": {
+        "ms": "delicioso",
+        "fs": "deliciosa",
+        "mp": "deliciosos",
+        "fp": "deliciosas"
+      }
+    },
+    "beautiful": {
+      "en": "beautiful",
+      "es": {
+        "ms": "hermoso",
+        "fs": "hermosa",
+        "mp": "hermosos",
+        "fp": "hermosas"
+      },
+      "pt": {
+        "ms": "bonito",
+        "fs": "bonita",
+        "mp": "bonitos",
+        "fp": "bonitas"
+      }
+    },
+    "pleasant": {
+      "en": "pleasant",
+      "es": {
+        "ms": "agradable",
+        "fs": "agradable",
+        "mp": "agradables",
+        "fp": "agradables"
+      },
+      "pt": {
+        "ms": "agradável",
+        "fs": "agradável",
+        "mp": "agradáveis",
+        "fp": "agradáveis"
+      }
+    },
+    "excellent": {
+      "en": "excellent",
+      "es": {
+        "ms": "excelente",
+        "fs": "excelente",
+        "mp": "excelentes",
+        "fp": "excelentes"
+      },
+      "pt": {
+        "ms": "excelente",
+        "fs": "excelente",
+        "mp": "excelentes",
+        "fp": "excelentes"
+      }
+    },
+    "wonderful": {
+      "en": "wonderful",
+      "es": {
+        "ms": "maravilloso",
+        "fs": "maravillosa",
+        "mp": "maravillosos",
+        "fp": "maravillosas"
+      },
+      "pt": {
+        "ms": "maravilhoso",
+        "fs": "maravilhosa",
+        "mp": "maravilhosos",
+        "fp": "maravilhosas"
+      }
+    }
+  }
+}

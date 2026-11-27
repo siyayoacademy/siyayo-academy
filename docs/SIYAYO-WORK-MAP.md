@@ -1,5 +1,9 @@
 # SIYAYO ACADEMY — WORK MAP
 
+## JAGUAR · Lexical composition agreement — 2026-11-27
+
+Closed authored agreement for 16 nouns × 6 Experience adjectives × EN/ES/PT: 288 pairs, language-specific gender/number, invariant English adjective, inflected target/speech and unavailable-data guard. Base lexicons, prior study corpora and contextual authority unchanged. [Execution and recovery](JAGUAR-LEXICAL-AGREEMENT-20261127.md).
+
 ## JAGUAR · Noun/adjective sentence study — 2026-11-17
 
 Explicit LEXICAL STUDY / IN A SENTENCE choice opens existing ACTION/MOVEMENT examples to noun/adjective exploration, with coherent targets, DF/Head and grammar axes. Legacy lexical/composition behavior remains the default and is restored on return. No corpus or assessment changes. [Execution and recovery](JAGUAR-NOUN-ADJECTIVE-SENTENCE-20261117.md).

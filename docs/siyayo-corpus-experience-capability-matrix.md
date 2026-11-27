@@ -1,5 +1,9 @@
 > 2026-11-17 second-turn ELO: explicit contextual-question/response analysis selection; 162 second-turn partial graphs and 216 clause-scoped probe targets. Negative correction is independently selectable. Existing dialogues and question graphs preserved; no evaluation authority. See JAGUAR-SECOND-TURN-DEPENDENCIES-20261117.md. Earlier entries below are historical.
 
+## JAGUAR · Lexical composition agreement — 2026-11-27
+
+Closed authored agreement for 16 nouns × 6 Experience adjectives × EN/ES/PT: 288 pairs, language-specific gender/number, invariant English adjective, inflected target/speech and unavailable-data guard. Base lexicons, prior study corpora and contextual authority unchanged. [Execution and recovery](JAGUAR-LEXICAL-AGREEMENT-20261127.md).
+
 ## JAGUAR · Noun/adjective sentence study — 2026-11-17
 
 Explicit LEXICAL STUDY / IN A SENTENCE choice opens existing ACTION/MOVEMENT examples to noun/adjective exploration, with coherent targets, DF/Head and grammar axes. Legacy lexical/composition behavior remains the default and is restored on return. No corpus or assessment changes. [Execution and recovery](JAGUAR-NOUN-ADJECTIVE-SENTENCE-20261117.md).
